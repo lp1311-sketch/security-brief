@@ -786,12 +786,13 @@ SHORT_NAV = {"threats": "Threats", "vulnerabilities": "Vulnerabilities", "ai": "
              "cloud": "Cloud & Identity", "microsoft": "Microsoft"}
 
 
-def _layout(cfg: dict, title: str, desc: str, body: str, base: str) -> str:
+def _layout(cfg: dict, title: str, desc: str, body: str, base: str, image: str | None = None) -> str:
     site = esc(cfg["site_name"])
     links = [f'<a href="{base}index.html#{cid}">{esc(SHORT_NAV[cid])}</a>'
              for cid in CATEGORY_ORDER if cid != "general"]
     links.append(f'<a href="{base}briefings/index.html">Briefings</a>')
     links.append(f'<a href="{base}patch-tuesday/index.html">Patch Tuesday</a>')
+    links.insert(0, f'<a href="{base}today/index.html">Today</a>')
     nav = "".join(links)
     return f"""<!doctype html>
 <html lang="en">
@@ -800,6 +801,7 @@ def _layout(cfg: dict, title: str, desc: str, body: str, base: str) -> str:
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(title)} | {site}</title>
 <meta name="description" content="{esc(desc)}">
+{_og_tags(cfg, title, desc, image)}
 <script>{THEME_JS}</script>
 <link rel="stylesheet" href="{base}style.css">
 <link rel="alternate" type="application/rss+xml" title="{site}" href="{esc(cfg['site_url'])}/feed.xml">
@@ -862,6 +864,16 @@ EXTRA_CSS = """
 .visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .analysis-links{margin:14px 0 0}
 [hidden]{display:none!important}
+.todo-list{display:grid;gap:14px}
+.todo{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--std);border-radius:var(--r);padding:18px 20px}
+.todo.kind-patch{border-left-color:var(--crit)}
+.todo.kind-investigate{border-left-color:var(--high)}
+.todo.kind-review{border-left-color:var(--accent)}
+.todo h2{font-size:1.1rem;line-height:1.3;margin:8px 0 8px;font-weight:700;letter-spacing:-.01em}
+.todo h2 a{color:var(--ink);text-decoration:none}
+.todo h2 a:hover,.todo h2 a:focus-visible{text-decoration:underline;text-underline-offset:3px}
+.todo-action{margin:0 0 8px;font-size:.95rem}
+.todo-kind{display:inline-block;font-size:.7rem;font-weight:760;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin-right:6px}
 """
 
 
@@ -1001,6 +1013,87 @@ apply('all');
 })();"""
 
 
+ACTION_RANK = {"patch": 0, "investigate": 1, "review": 2, "monitor": 3}
+ACTION_LABEL = {"patch": "Patch now", "investigate": "Investigate", "review": "Review", "monitor": "Monitor"}
+
+
+def affected(s: dict) -> tuple[str, str]:
+    """(label, target phrase for the suggestion, whether a named product was found)."""
+    if s.get("vendors"):
+        return s["vendors"][0], s["vendors"][0] + " products", True
+    tags = set(s["tags"])
+    for tag, name in (("m365", "Microsoft 365"), ("entra", "Entra ID"), ("defender", "Microsoft Defender")):
+        if tag in tags:
+            return name, name, True
+    return CATEGORIES[s["category"]][0], "your environment", False
+
+
+def suggest_action(s: dict) -> dict:
+    """Rule-based suggestion. Each rule reads a visible signal (KEV list, exploitation wording, product tags).
+    The text is a starting point for the reader, not a verified recommendation."""
+    tags = set(s["tags"])
+    label, target, named = affected(s)
+    check = f"Check whether {target} is affected."
+    if s.get("kev"):
+        kind, text = "patch", (f"This CVE is in CISA's Known Exploited Vulnerabilities catalog. {check} "
+                               "Apply the vendor fix from the original advisory.")
+    elif "patch-now" in tags:
+        kind, text = "patch", (f"Exploitation is reported and a CVE is named. {check} "
+                               "Apply the vendor fix from the original advisory.")
+    elif "exploited" in tags:
+        kind, text = "investigate", (f"Attacks are reported. {check} "
+                                     "Compare your logs and detections with the indicators in the original report.")
+    elif tags & {"m365", "entra", "defender"}:
+        kind, text = "review", f"{check} Use the original report as the reference for configuration and logs."
+    else:
+        kind, text = "monitor", "No immediate action identified in the source reports. Keep for awareness."
+    return {"kind": kind, "label": ACTION_LABEL[kind], "text": text, "product": label, "named": named}
+
+
+def today_page(stories: list[dict], cfg: dict, now: datetime, limit: int = 5) -> str:
+    ranked = sorted(stories, key=lambda s: (ACTION_RANK[suggest_action(s)["kind"]], -s["score"]))[:limit]
+    rows = []
+    for s in ranked:
+        a = suggest_action(s)
+        src = s["sources"][0]
+        prio = esc(s["priority"])
+        rows.append(
+            f'<article class="todo kind-{a["kind"]}">'
+            f'<p class="kicker"><span class="badge {prio}">{prio}</span><span class="cat">{esc(CATEGORIES[s["category"]][0])}</span></p>'
+            f'<h2><a href="../story/{esc(s["id"])}.html">{esc(s["title"])}</a></h2>'
+            f'<p class="todo-action"><span class="todo-kind">{esc(a["label"])}</span> {esc(a["text"])}</p>'
+            f'<p class="meta">{"Affected" if a["named"] else "Area"}: {esc(a["product"])} &middot; Source: '
+            f'<a href="{esc(src["url"])}" rel="nofollow noopener noreferrer" target="_blank">{esc(src["name"])}</a>'
+            f' &middot; {esc(fmt_date(src["published"]))}</p>'
+            "</article>"
+        )
+    body = (
+        '<section class="intro"><h1>Today: what to do</h1>'
+        f'<p class="meta">Last content update: {esc(now.strftime("%d %b %Y, %H:%M UTC"))}. '
+        "The top five stories by action need, then by score. Suggestions come from simple rules on the headline and "
+        "source text, not from a person. Check the original advisory before you act.</p></section>"
+        + ('<div class="todo-list">' + "".join(rows) + "</div>" if rows else
+           '<div class="empty">No stories in the current window.</div>')
+    )
+    return _layout(cfg, "Today: what to do", "The five stories that need action today, with sources.", body, "../")
+
+
+def _og_tags(cfg: dict, title: str, desc: str, image: str | None) -> str:
+    site = esc(cfg["site_name"])
+    tags = [
+        f'<meta property="og:site_name" content="{site}">',
+        '<meta property="og:type" content="website">',
+        f'<meta property="og:title" content="{esc(title)}">',
+        f'<meta property="og:description" content="{esc(desc)}">',
+    ]
+    if image and image.startswith("https://"):
+        tags.append(f'<meta property="og:image" content="{esc(image)}">')
+        tags.append('<meta name="twitter:card" content="summary_large_image">')
+    else:
+        tags.append('<meta name="twitter:card" content="summary">')
+    return "\n".join(tags)
+
+
 def index_page(stories: list[dict], cfg: dict, now: datetime, status: dict,
                articles: list[dict] | None = None, site_cfg: dict | None = None) -> str:
     articles = articles or []
@@ -1010,7 +1103,8 @@ def index_page(stories: list[dict], cfg: dict, now: datetime, status: dict,
     parts = [
         '<section class="intro"><h1>Security news, ranked</h1>'
         f'<p class="meta">Last content update: {esc(now.strftime("%d %b %Y, %H:%M UTC"))} &middot; '
-        "Checked automatically every 20 minutes. Every story links to its original source.</p></section>",
+        "Checked automatically every 20 minutes. Every story links to its original source.</p>"
+        '<p><a class="btn" href="today/index.html">Today: what to do &rarr;</a></p></section>',
         '<div class="stats" aria-label="Summary">'
         f'<div class="stat"><b>{len(stories)}</b><span>stories in the current window</span></div>'
         f'<div class="stat crit"><b>{crit}</b><span>critical</span></div>'
@@ -1092,7 +1186,7 @@ def story_page(s: dict, cfg: dict) -> str:
 <ul>{srcs}</ul>
 <p class="note">Automated page. Verify facts in the original articles before acting on them.</p>"""
     desc = _short(s["summary"] or s["title"], 150)
-    return _layout(cfg, s["title"], desc, f'<article class="prose">{body}</article>', "../")
+    return _layout(cfg, s["title"], desc, f'<article class="prose">{body}</article>', "../", image=s["image"])
 
 
 def feed_xml(stories: list[dict], cfg: dict, now: datetime, articles: list[dict] | None = None) -> str:
@@ -1141,6 +1235,8 @@ def write_site(out: Path, stories: list[dict], cfg: dict, now: datetime, status:
             f.unlink()
     (out / "style.css").write_text(CSS.strip() + "\n" + EXTRA_CSS, encoding="utf-8")
     (out / "index.html").write_text(index_page(stories, cfg, now, status, articles, site_cfg), encoding="utf-8")
+    (out / "today").mkdir(parents=True, exist_ok=True)
+    (out / "today" / "index.html").write_text(today_page(stories, cfg, now), encoding="utf-8")
     for s in stories:
         (out / "story" / f"{s['id']}.html").write_text(story_page(s, cfg), encoding="utf-8")
     for sec in SECTIONS:
@@ -1224,7 +1320,7 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
                      s["score"], s["image"], [x["url"] for x in s["sources"]]] for s in stories],
         "articles": [[a["section"], a["slug"], a["title"], a["date"], a["summary"], a["_md"]] for a in articles],
         "site": site_cfg,
-        "render": "5.3",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
+        "render": "5.4",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
     }, ensure_ascii=False, sort_keys=True)
     digest = hashlib.sha1(digest_src.encode("utf-8")).hexdigest()
     digest_file = data_file.parent / "digest.txt"
