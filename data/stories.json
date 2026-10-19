@@ -37,7 +37,12 @@
    "summary": "OpenAI said internal models hacked two more websites, bypassed company-imposed browsing restrictions, and used exposed credentials to draw cryptocurrency from a wallet it couldn’t otherwise access, in the latest installment of disclosures of its agents performing unethical and likely illegal acts. The company on…",
    "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/ai-agents-1152x648.jpg",
    "cves": [],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00"
+   "first_seen": "2026-10-19T10:28:22.123062+00:00",
+   "instructions": [
+    "They come after the company revealed in July that internal test agents exploited a zero-day vulnerability in a tool designed to restrict their access to the Internet.",
+    "In a third report , the company said a model prompted to update a cryptocurrency trading application used funds from a locked wallet on a test network."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "048b26c65907",
@@ -95,7 +100,9 @@
     "CVE-2026-103572"
    ],
    "first_seen": "2026-10-19T10:28:22.123062+00:00",
-   "image_checked": true
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "1e38aeabbac4",
@@ -616,7 +623,14 @@
    "summary": "Attackers repeatedly changed the files that AOMEI Backupper fetches from the vendor's own update servers, in windows of five to ten minutes at a time between May and July 2026, so that any copy of the Windows backup program that checked for an update during one of those windows would download and run a backdoor…",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhuPumyjeBRpQZo5_3mvqZ2_kXuPiOK02cH-ARofYrny0mQ2-rv55w7yBxMTBe3ymCW7c77quZ4xlkdDG9FcEhBYFr7GWmbyPE_1K1xqU0mvT-h51Z8hLg-LnWl32MeOy-aumsGO9-j8VSOSOfVUDB2k1vWOpEdyGEWV9ipF4kf3HVP1Au2ClbkYtAJrc/s1600/backup-hacked.jpg",
    "cves": [],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00"
+   "first_seen": "2026-10-19T10:28:22.123062+00:00",
+   "instructions": [
+    "Attackers repeatedly changed the files that AOMEI Backupper fetches from the vendor's own update servers, in windows of five to ten minutes at a time between May and July 2026, so that any copy of the Windows backup program that checked for an update during one of those windows would download and run a backdoor.",
+    "Google Threat Intelligence Group, Mandiant , and ManageEngine's Threat Analysis Lab , which disclosed the campaign this week, say AOMEI has reported fixing its servers, but that fix does not remove the backdoor from machines that were already hit.",
+    "One, down_html.ini, names the update package to download and the checksum the program uses to verify it.",
+    "On the machines the lab examined, that was enough to install software across the whole system, though it said the elevation depended on how the AOMEI service was running."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "f909b9dee009",
@@ -683,7 +697,14 @@
    "summary": "ConnectWise on Saturday said it has disabled seven ConnectWise application identities as it continues its investigation into an incident in which unknown threat actors obtained unauthorized access to the application identities and compromised Microsoft 365 tenants. The disabled identities are listed below -…",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxTJ5xsWsmrBmF1q18Gi5uaokNeC6-M0VbSf0T5X3KMQH7QGMhC7mz4XB6TUJuE7P9tjknMAqaGQ-Iz_7UuQ-NdKKXJTgqLhHMipRcd57VUOpwfJ2xxO8Hq_PX8hotdp_KZddNDzfQFw3bLHbYYLasThNbqGlidzhZ485ApBIKh2KUgn4g6PeBbhMwhc0T/s1600/ms-connect.jpg",
    "cves": [],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00"
+   "first_seen": "2026-10-19T10:28:22.123062+00:00",
+   "instructions": [
+    "\"Since implementing these mitigations, we have not observed successful threat activity in the environments we monitor,\" it said.",
+    "\"ConnectWise has said access to Cloud Backup is shut off, and if so, activity through that service should have stopped.",
+    "\"Since implementing mitigations, we have not observed successful threat activity in the environments we monitor,\" ConnectWise said.",
+    "Depending on the permissions assigned to the application, this could enable the attacker to potentially access other Microsoft services, including mailboxes, SharePoint documents, Teams messages, and directory information."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "222e66a51003",
@@ -737,7 +758,11 @@
    "summary": "A fake Web3 accelerator has been observed pushing information stealers and backdoors to Windows and macOS systems using malicious npm packages under the pretext of offering free artificial intelligence (AI) credits for Anthropic Claude and Google Gemini, coding tools, and security audits. \"The tools delivered…",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAw5A6yrE0NkMreq5lBZaS4ndrFrorAZaVrjJ218aS1RcJoQVYOJOVejIn8rBH5RHIIZ_cpvtzHnQMwMMWVOFbpfcs01tolLCmlYAY3qy-onWaOUQhzB6H2VjlWaUgBCL_0vAjRB7VmumClnaiIxDds6j9wD3lt9vD-kptWl6bUft29O6Z0cTNgBQV6t76/s1600/npm-apex.jpg",
    "cves": [],
-   "first_seen": "2026-10-19T11:45:02.901788+00:00"
+   "first_seen": "2026-10-19T11:45:02.901788+00:00",
+   "instructions": [
+    "@apexacc/cli (Apex Copilot CLI — AI advisor for Web3 founders) -"
+   ],
+   "instructions_checked": true
   },
   {
    "id": "1d72630baefb",
@@ -776,7 +801,14 @@
    "summary": "Cybersecurity researchers are sounding the alarm related to an active campaign in which unknown threat actors are abusing a compromised Microsoft 365 (M365) credential belonging to ConnectWise Cloud Backup (formerly SkyKick) to gain unauthorized access to customers' M365 environments. ConnectWise Cloud Backup is a…",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgel6whr7-1_Lf62w6AJwYfEyic0x1lJ0c-qOfOprMUdm83xpM7rqXbJzplx7BPBUBDD4yUcLWoPvFBhF6HIDORPNNXYj7NfDOTf7YN5lT7p80jxtN6VrTxMjWT0OplFNx0BdjoMmFzk3ssVlbapm7Qfl0Z9_1T7jA_zwz2tbjrxzRircL28mr0zcsci98x/s1600/connectwise.jpg",
    "cves": [],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00"
+   "first_seen": "2026-10-19T10:28:22.123062+00:00",
+   "instructions": [
+    "Users are recommended to disable the application until ConnectWise confirms all credentials have been reset, enable Microsoft Graph activity logs, audit for any new credentials added since October 13, 2026, and check Entra audit logs for ConnectWise or SkyKick applications adding themselves to a directory role.",
+    "Microsoft is recommending that security teams review service principal sign-ins from unrecognized IP addresses, app credential changes, and OAuth grant activity associated with the aforementioned OAuth AppId.",
+    "ConnectWise, in a separate advisory , confirmed it has identified unauthorized access to application identities within the ConnectWise Cloud Backup environment.",
+    "\"Although all tenants should be scrutinized, this pattern is worth sharing for prioritization.\""
+   ],
+   "instructions_checked": true
   },
   {
    "id": "ba5ef20dc7e9",
@@ -830,7 +862,12 @@
    "summary": "Cybersecurity researchers have discovered a malicious npm package that's part of a recently disclosed software supply chain attack campaign dubbed MALFEX. The package, named \"imgdecode,\" was uploaded to the package registry on September 30, 2026, by a user named \"malfexteste8.\" It has been downloaded 979 times as of…",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8fNb_yEvP6C_CENfQMUx3EDGofY1ejEHusnumTjCLnX3s8pevEbl_cgrtFHhzeEUhyphenhyphenyKe_X41OzQOGL5zlXeLLBnj_ZrLqH1IUag1QWm4QS9V2hgc5ucEzEZKjhstvtde8CFs8anPSZv9w3op67F8Q_MHVC_demESnH8lpAYLLpIRizCyvF5gsi5PDKzm/s1600/npm-dll.jpg",
    "cves": [],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00"
+   "first_seen": "2026-10-19T10:28:22.123062+00:00",
+   "instructions": [
+    "Developers who have installed any of the aforementioned packages should treat their Windows systems as potentially compromised, isolate them, check for persistence entries, rotate credentials, and transfer funds to new wallets if seed phrases were stored in them.",
+    "The Node.js stealer chain is notable for the fact that none of the packages featured an install hook."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "e7e058293387",
@@ -869,7 +906,12 @@
    "summary": "OpenAI has disclosed seven new incidents in which its artificial intelligence (AI) models exhibited misaligned behavior, including one case where its research model, after not having funds on an Ethereum test network, spent test cryptocurrency from a third-party's wallet without authorization to complete a coding…",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhkqmj8WR1EBIXlf0-PIfEmv-3uEk-0FU-SrKAaQyn33syLPFRar-jwks7o70PVBvmNd05CwdNSVPXRq3bN6ED0jREr__oFnSFjS1emRZoEfvsfw8UlSspGcSWLLKJcgUhDuzV814VaFSecnEzNhvhTbemuVizjA46o3g-d7hZj1F-Fmn6sqssQyMeayXC/s1600/openai-smart.jpg",
    "cves": [],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00"
+   "first_seen": "2026-10-19T10:28:22.123062+00:00",
+   "instructions": [
+    "\"An internal research model asked to update a cryptocurrency trading application used funds from a wallet that the task had not supplied to pay for a deployment on Sepolia, an Ethereum test network,\" OpenAI said .",
+    "After this also resulted in failure, the model took the step of damaging its task environment in hopes of triggering a reset."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "1de1c48ce23b",
@@ -882,7 +924,13 @@
    "summary": "An intruder reached a legacy system at OpenCode on the night of October 16 and may have exposed the third-party AI provider keys that users had saved in OpenCode Console, the company said. Console is OpenCode's optional hosted service: a workspace saves its own OpenAI, Anthropic, or Google key there, and Console uses…",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzRSuvywT7bfHRl45krYywOIqL__Cw1hXchChbx5ylDNZaHxVDEf8O1pmzajCnItG1rwxKq0k2GHdMeDW_DvQP8Wk5MEiwlE2dZXn9grvDpAOpViWonNWsFMkTXoKpcFj8lk0UuMrGx-xVHRU_KufidsDcY7e0RUSG62aapDC9y9opt8V_rmgxkCG9v6A/s1600/opencode.jpg",
    "cves": [],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00"
+   "first_seen": "2026-10-19T10:28:22.123062+00:00",
+   "instructions": [
+    "The affected group is 1.4% of Console users, all of whom have an outside provider linked, and OpenCode has told them via email to revoke those keys with each provider and replace them.",
+    "Deleting the key from Console does not revoke it, and a Console budget cannot cap that use either, because Console only sees requests that pass through its own gateway .",
+    "Revoke the key in the provider's own dashboard and create a new one, following the instructions from OpenAI , Anthropic , or Google ."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "fc3053d7e094",
@@ -910,7 +958,9 @@
    "summary": "A local privilege escalation exploit published today gains root on OpenBSD 7.9 by chaining a roughly 37-year-old integer overflow with a separate kernel flaw, bypassing OpenBSD's KARL kernel-address randomization and its SMAP and SMEP hardware protections.Security firm Calif, which found and reported the flaws…",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqmitTMm5t8BBKfynqzFAKqJSzh_s7fQczmMm5u95RLUUzuWMubd5DeM8e8EH6YOpP-_gvbYwn8Cd3flsL-nGIupBw5HOo49Orr7J2rqhI99J7U4LcXW6shlxd3w0zFAng1mLw5xGb-F9GRmpDK82GC1-Dcb1gPcvkgl4wVi0-QTEGalDwPmelGE0TtNU/s1600/openbsd.jpg",
    "cves": [],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00"
+   "first_seen": "2026-10-19T10:28:22.123062+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "6ab9bdcb522c",
@@ -949,7 +999,9 @@
    "summary": "Cybersecurity researchers have disclosed details of an advanced persistent threat (APT) spear-phishing campaign that has targeted individuals affiliated with Taiwan research organizations to direct victims to an adversary-in-the-middle (AitM) phishing framework designed to harvest their Google account credentials and…",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPclyw7bJ19im5Qmzj9jgFlsM4XJqPK6hyphenhyphenRDCcQ0bnpWrteeTWgPNlip5T0P_oj_AC6V3osZ2xIpYipKjXWQw3BfFEQ1n28dleNCLRi7difLnPLY8Yc-oJ6BCVZ1V0VBpF_ZNu36qM_yCvyvbgBsSfh2AXq-IBIk7QjnBSR_T7s8ajMCOkIEhA5YGeYWg4/s1600/google-phish.jpg",
    "cves": [],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00"
+   "first_seen": "2026-10-19T10:28:22.123062+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "f519e0b522d7",
@@ -962,7 +1014,11 @@
    "summary": "A flaw in Broadcom's Wi-Fi setup software lets an attacker within radio range run code as root on Broadcom-based routers, without the network password or any pairing step, security researcher Quentin Kaiser disclosed on October 16. He showed the attack working against home gateways supplied by three Belgian internet…",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKR22_EY_V4kc68OQN7vGigoOrsBiy_aMnJVifzUg15itznrR-KdvcSdcaVSGnA6A2kAgMCSUNbIoqzh10gy8wQzkpK55LJPTjPPoV73VzoJlNCtZOn0LltkE7gq8PwH29hLNlUn41qQV8A7fTGkCwHu2LQ0OtvvTFtNRHll7xY0_PUfQ5K08JtCWriXg/s1600/wifi.gif",
    "cves": [],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00"
+   "first_seen": "2026-10-19T10:28:22.123062+00:00",
+   "instructions": [
+    "There is no patch to install, and no setting Kaiser points to that blocks the attack over the air."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "9bedf93cf19d",
@@ -992,6 +1048,27 @@
    "image_checked": true
   },
   {
+   "id": "1f63abf1d8df",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "title": "Microsoft fixes classic Outlook bug that hid Copilot buttons",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-bug-that-hid-copilot-buttons-in-classic-outlook/",
+   "published": "2026-10-19T12:44:44+00:00",
+   "summary": "Microsoft has fixed a known issue that removed the Copilot Chat and Copilot buttons in the classic Outlook desktop mail client for some Windows users.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/19/Microsoft-Copilot.jpg",
+   "cves": [],
+   "first_seen": "2026-10-19T12:52:49.203347+00:00",
+   "image_checked": true,
+   "instructions": [
+    "The Copilot button might be missing for several different reasons, including licensing, Microsoft 365 app configuration, update channel, privacy settings, or other environmental factors,\" an update to the original support document reads .",
+    "\"Because the missing button is a symptom that can have multiple underlying causes, we recommend following the guidance in Copilot troubleshooters and How to find and enable missing Copilot button in Microsoft 365 apps to identify and resolve the issue.\"",
+    "Microsoft also shared a temporary workaround for those still affected by this known issue, which requires enabling the \"Show Apps in Outlook\" option in classic Outlook settings by selecting the File tab, then going to Options > Advanced and checking the \"Show Apps in Outlook\" box under \"Outlook panes.\"",
+    "Microsoft: October Windows update may break Smart App Control"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "15156651e221",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -1003,7 +1080,14 @@
    "image": "https://www.bleepstatic.com/content/hl-images/2026/10/19/Microsoft-Exchange-Server.jpg",
    "cves": [],
    "first_seen": "2026-10-19T10:28:22.123062+00:00",
-   "image_checked": true
+   "image_checked": true,
+   "instructions": [
+    "While it works on a fix, Microsoft also shared a temporary workaround that should resolve these issues by modifying a registry key on affected Exchange Server systems.",
+    "After the system restarts, customers should monitor the Exchange environment and raise the Endpoint Mapper memory limit if it reoccurs.",
+    "In a new Windows release health dashboard update over the weekend, Microsoft said users may have trouble accessing email or signing in to Outlook after installing the latest updates on systems running Windows Server 2019 and later.",
+    "\"After installing the October 2026 Windows security update [..], some on-premises Exchange servers might experience issues accessing or sending email."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "6c8051f534fe",
@@ -1075,7 +1159,14 @@
     "CVE-2026-103849"
    ],
    "first_seen": "2026-10-19T10:28:22.123062+00:00",
-   "image_checked": true
+   "image_checked": true,
+   "instructions": [
+    "Sansec says that a plain Composer install isn’t enough to address the risk, and website administrators must apply the 2026-oct release or Adobe’s isolated patch.",
+    "“The attack path is complex, but anyone with an AI agent can reverse-engineer the patch into working exploits in a relatively short time,” stated Sansec states .",
+    "“That is why we question Adobe's priority 2 rating (patch within 30 days).",
+    "Sansec explains that BlockStrap is a second-pass template engine directive injection that allows attacker-controlled content in a child email template to be signed and processed again at the root level, executing a smuggled {{block}} directive."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "43fc56afbb27",
@@ -1089,7 +1180,14 @@
    "image": "https://www.bleepstatic.com/content/hl-images/2026/10/15/Drupal.jpg",
    "cves": [],
    "first_seen": "2026-10-19T10:28:22.123062+00:00",
-   "image_checked": true
+   "image_checked": true,
+   "instructions": [
+    "Administrators who cannot upgrade to a secure version are advised to uninstall Drupal’s core Field UI module (field_ui) as an effective mitigation measure.",
+    "Drupal issued an advance warning at the beginning of the week, urging administrators to apply updates promptly because attackers could develop exploits shortly after the vulnerabilities’ disclosure.",
+    "“We recommend updating to the latest supported patch (bugfix) release for your site's version of Drupal before October 14, so that you can address any other upgrade issues before the security window.”",
+    "The security advisory for CVE-2026-108097 notes that the flaw cannot be exploited using Drupal core alone, but contributed modules can provide multiple exploitation paths, including at least one that requires no authentication."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "d269ee990910",
@@ -1131,7 +1229,14 @@
    "image": "https://www.bleepstatic.com/content/hl-images/2026/09/07/ConnectWise.jpg",
    "cves": [],
    "first_seen": "2026-10-19T10:28:22.123062+00:00",
-   "image_checked": true
+   "image_checked": true,
+   "instructions": [
+    "In a security advisory , ConnectWise said that it “recently identified unauthorized access to application identities within the ConnectWise Cloud Backup environment” and shut down application access for its partners and clients.",
+    "It should be noted that all three cybersecurity companies tracked the malicious company to the same 144.172.64[.]128 IP address.",
+    "ConnectWise recommends that administrators check the service principal sign-ins in Entra, filter by the Cloud Backup application ID, and examine unexpected source addresses.",
+    "Huntress advises administrators to disable the implicated ConnectWise applications, as well as check application credentials for unauthorized additions and review other Cloud Management integrations."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "a094aa58c0da",
@@ -1161,7 +1266,14 @@
    "image": "https://www.bleepstatic.com/content/hl-images/2026/05/05/hacker.jpg",
    "cves": [],
    "first_seen": "2026-10-19T10:28:22.123062+00:00",
-   "image_checked": true
+   "image_checked": true,
+   "instructions": [
+    "The attacker’s identity, the victims, the scale of the attacks, and the methods used remain unclear, as neither security advisory provides these details.",
+    "The vendor warns that remediation may erase attack traces, and recommends that administrators preserve evidence before updating or patching.",
+    "SiteGuard Server Edition for Apache httpd, Nginx, and IIS (excluding FreeBSD) versions 2.20 and later, before 8.00 Update 5.",
+    "SiteGuard Server Edition for Apache httpd and Nginx on FreeBSD versions 2.20 and later, before 7.00 Update 6."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "b14fd868476b",
@@ -1189,7 +1301,9 @@
    "image": "https://www.bleepstatic.com/content/hl-images/2026/10/16/spywareads.jpg",
    "cves": [],
    "first_seen": "2026-10-19T10:28:22.123062+00:00",
-   "image_checked": true
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "b2dbdf4e9e45",
@@ -1216,7 +1330,14 @@
    "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/10/MSFT-NVIDIA-SCI.jpg",
    "cves": [],
    "first_seen": "2026-10-19T12:07:37.633241+00:00",
-   "image_checked": true
+   "image_checked": true,
+   "instructions": [
+    "It is not a policy or deployment checklist, but instead it should be used by enterprises to adapt it to their own systems, use cases, and risk criteria, then connect relevant risks to evaluations, mitigations, and accountable owners.",
+    "Evaluating a model alone does not establish the safety of an agent or application: teams must also assess its permissions, data access, tools, runtime, and operational controls.",
+    "Teams should validate control availability for their model and deployment, including preview status, and combine these capabilities with application-specific testing, monitoring, and human oversight.",
+    "Future work from Microsoft and NVIDIA is intended to extend this approach across the runtime, harness, and application layers, with additional technical guidance on evaluation and mitigation."
+   ],
+   "instructions_checked": true
   }
  ]
 }
