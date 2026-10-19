@@ -33,14 +33,16 @@ EXPLOITED_RE = re.compile(r"actively exploited|exploited in the wild|in the wild
 
 # Category id -> (label, first-match regex). Checked in CATEGORY_ORDER.
 CATEGORIES = {
-    "threats": ("Ransomware, Malware & Breaches", r"ransomware|malware|breach|phishing|stealer|botnet|extortion|data leak"),
-    "vulnerabilities": ("Vulnerabilities & Exploited CVEs", r"vulnerab|\bcve-|patch|exploit"),
-    "ai": ("AI Security & Emerging Threats", r"\bai\b|llm|copilot|deepfake|generative"),
-    "microsoft": ("Microsoft & Enterprise", r"microsoft|windows|entra|azure|m365|office 365|exchange|sharepoint|teams"),
-    "cloud": ("Cloud & Identity", r"cloud|identity|\bmfa\b|okta|\bsso\b|aws|oauth|sign-in"),
+    "threats": ("Ransomware, Malware & Breaches", r"ransomware|malware|breach|phishing|stealer|botnet|extortion|data leak|spyware|hijack|backdoor|scam|theft|cyberattack|cyber attack|shellcode|loader|supply[- ]chain|tampered|money laundering|sanction|proxyjack|attackers|hackers"),
+    "vulnerabilities": ("Vulnerabilities & Exploited CVEs", r"vulnerab|\bcve-|patch|exploit|flaw|\brce\b|zero-day|0-day|security update"),
+    "ai": ("AI Security & Emerging Threats", r"\bai\b|\bllm|copilot|chatgpt|openai|anthropic|gemini|deepfake|generative|ai agent|ai model"),
+    "microsoft": ("Microsoft & Enterprise", r"microsoft|windows|exchange|sharepoint|teams|office 365|m365|outlook|defender|azure"),
+    "cloud": ("Cloud & Identity", r"cloud|identity|\bmfa\b|okta|\bsso\b|oauth|sign-in|entra|conditional access|tenant"),
     "general": ("Security News", r"$^"),  # fallback, never matches
 }
-CATEGORY_ORDER = ["threats", "vulnerabilities", "ai", "cloud", "microsoft", "general"]  # cloud before microsoft: Entra = identity
+CATEGORY_ORDER = ["threats", "vulnerabilities", "ai", "cloud", "microsoft", "general"]  # rendering order
+# Scoring order: ties go to the first entry (AI before vulnerabilities before threats).
+SCORE_ORDER = ["ai", "vulnerabilities", "threats", "cloud", "microsoft"]
 
 # Score signals: (regex, points, label). Documented in README.md.
 SIGNALS = [
@@ -107,6 +109,12 @@ def _clean(raw: str) -> str:
     return re.sub(r"\s+", " ", html.unescape(TAG_RE.sub(" ", raw or ""))).strip()
 
 
+def clean_excerpt(text: str) -> str:
+    t = text.replace("\\[...\\]", " ").replace("[...]", " ").replace("[…]", " ").replace("\\[…\\]", " ")
+    t = re.sub(r"\s+([,.;:!?])", r"\1", t)  # "Cryptomus ," -> "Cryptomus,"
+    return re.sub(r"\s+", " ", t).strip()
+
+
 def _short(text: str, limit: int) -> str:
     if len(text) <= limit:
         return text
@@ -157,6 +165,144 @@ def cover_svg(label: str) -> str:
         "</svg>"
     )
     return "data:image/svg+xml;charset=utf-8," + quote(svg)
+
+
+# ---------- original analysis (Markdown content) ----------
+
+CONTENT_DIR = ROOT / "content"
+SITE_CONFIG = ROOT / "site.json"
+SECTIONS = {
+    "briefings": "Weekly M365 & Entra Briefing",
+    "patch-tuesday": "Patch Tuesday Notes",
+}
+
+
+def fmt_day(iso: str | None) -> str:
+    d = _date(iso)
+    return d.strftime("%d %b %Y") if d else ""
+
+
+def parse_front_matter(text: str) -> tuple[dict, str]:
+    lines = text.splitlines()
+    if not lines or lines[0].strip() != "---":
+        return {}, text
+    end = next((i for i in range(1, len(lines)) if lines[i].strip() == "---"), None)
+    if end is None:
+        return {}, text
+    meta: dict = {}
+    for line in lines[1:end]:
+        if ":" in line:
+            k, v = line.split(":", 1)
+            meta[k.strip().lower()] = v.strip().strip('"').strip("'")
+    return meta, "\n".join(lines[end + 1:])
+
+
+def inline_md(text: str) -> str:
+    t = html.escape(text, quote=True)
+    t = re.sub(r"`([^`]+)`", r"<code>\1</code>", t)
+    t = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", t)
+    t = re.sub(r"(?<![*\w])\*([^*]+)\*(?![*\w])", r"<em>\1</em>", t)
+
+    def link(m: re.Match) -> str:
+        label, url = m.group(1), m.group(2)
+        pu = urlparse(url)
+        if pu.scheme not in ("http", "https") or not pu.netloc:
+            return label  # unsafe or relative links are shown as plain text
+        return f'<a href="{url}" rel="nofollow noopener noreferrer" target="_blank">{label}</a>'
+
+    return re.sub(r"\[([^\]]+)\]\(([^)\s]+)\)", link, t)
+
+
+def md_to_html(md: str) -> str:
+    out: list[str] = []
+    para: list[str] = []
+    items: list[str] = []
+    code: list[str] = []
+    in_code = False
+
+    def flush() -> None:
+        if para:
+            out.append("<p>" + inline_md(" ".join(para)) + "</p>")
+            para.clear()
+        if items:
+            out.append("<ul>" + "".join(f"<li>{inline_md(i)}</li>" for i in items) + "</ul>")
+            items.clear()
+
+    for raw in md.splitlines():
+        line = raw.rstrip()
+        if line.lstrip().startswith("```"):
+            if in_code:
+                out.append("<pre><code>" + html.escape("\n".join(code)) + "</code></pre>")
+                code.clear()
+                in_code = False
+            else:
+                flush()
+                in_code = True
+            continue
+        if in_code:
+            code.append(raw)
+            continue
+        if not line.strip():
+            flush()
+            continue
+        if re.match(r"^\s*<!--.*-->\s*$", line):
+            continue  # HTML comments (for example, publishing notes in templates) are never shown
+        m = re.match(r"^(#{1,3})\s+(.*)$", line)
+        if m:
+            flush()
+            level = min(len(m.group(1)) + 1, 4)
+            out.append(f"<h{level}>{inline_md(m.group(2))}</h{level}>")
+            continue
+        if re.match(r"^\s*[-*]\s+", line):
+            if para:
+                out.append("<p>" + inline_md(" ".join(para)) + "</p>")
+                para.clear()
+            items.append(re.sub(r"^\s*[-*]\s+", "", line))
+            continue
+        if line.startswith(">"):
+            flush()
+            out.append(f"<blockquote>{inline_md(line[1:].strip())}</blockquote>")
+            continue
+        if items:
+            flush()
+        para.append(line.strip())
+    flush()
+    if in_code:
+        out.append("<pre><code>" + html.escape("\n".join(code)) + "</code></pre>")
+    return "\n".join(out)
+
+
+def load_articles(content_dir: Path, warnings: list[str]) -> list[dict]:
+    arts: list[dict] = []
+    for sec in SECTIONS:
+        d = content_dir / sec
+        if not d.is_dir():
+            continue
+        for f in sorted(d.glob("*.md")):
+            if f.name.startswith("_"):
+                continue  # templates
+            meta, body = parse_front_matter(f.read_text(encoding="utf-8"))
+            if str(meta.get("draft", "true")).lower() != "false":
+                continue  # drafts are never published; set draft: false to publish
+            if not re.fullmatch(r"[a-z0-9][a-z0-9-]*", f.stem):
+                warnings.append(f"{sec}/{f.name}: file name must use lowercase letters, digits and hyphens")
+                continue
+            date = _date(meta.get("date"))
+            if not meta.get("title") or not date:
+                warnings.append(f"{sec}/{f.name}: title and date are required, article skipped")
+                continue
+            arts.append({
+                "section": sec, "slug": f.stem, "title": meta["title"], "date": date.date().isoformat(),
+                "summary": meta.get("summary", ""), "body": md_to_html(body), "_md": body,
+            })
+    arts.sort(key=lambda a: a["date"], reverse=True)
+    return arts
+
+
+def load_site_config(path: Path) -> dict:
+    if not path.exists():
+        return {"publisher": {}, "newsletter_form_action": ""}
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
 # ---------- fetching & parsing ----------
@@ -232,7 +378,7 @@ def parse_feed(data: bytes, src: dict) -> list[dict]:
                 image = https_image(m.group(1))
 
         date = _date(raw("pubdate") or raw("published") or raw("updated") or raw("date"))
-        summary = _short(_clean(body_raw), 320)
+        summary = _short(clean_excerpt(_clean(body_raw)), 320)
         cves = sorted({c.upper() for c in CVE_RE.findall(f"{title} {body_raw}")})
 
         out.append({
@@ -296,14 +442,16 @@ def cluster(items: list[dict]) -> list[list[dict]]:
     return [g["items"] for g in groups]
 
 
-def categorize(text: str) -> str:
-    t = text.lower()
-    for key in CATEGORY_ORDER:
-        if key == "general":
-            return key
-        if re.search(CATEGORIES[key][1], t):
-            return key
-    return "general"
+def categorize(title: str, summary: str = "", cves=()) -> str:
+    t, sm = (title or "").lower(), (summary or "").lower()
+    scores = {}
+    for key in SCORE_ORDER:
+        rx = CATEGORIES[key][1]
+        scores[key] = 3 * len(set(re.findall(rx, t))) + len(set(re.findall(rx, sm)))
+    if cves:
+        scores["vulnerabilities"] += 2
+    best = max(SCORE_ORDER, key=lambda k: scores[k])
+    return best if scores[best] > 0 else "general"
 
 
 def score_story(items: list[dict], kev: set[str], kev_checked: bool, now: datetime) -> tuple[int, str, list[str]]:
@@ -350,18 +498,47 @@ def score_story(items: list[dict], kev: set[str], kev_checked: bool, now: dateti
     return score, prio, reasons
 
 
+M365_RE = re.compile(r"microsoft 365|m365|office 365|exchange online|sharepoint|onedrive|microsoft teams|outlook", re.I)
+ENTRA_RE = re.compile(r"entra|azure ad|conditional access|sign-in|oauth|consent|\bmfa\b|identity|token", re.I)
+DEFENDER_RE = re.compile(r"defender|\bedr\b|\bxdr\b|sentinel", re.I)
+
+
+def story_tags(text: str, prio: str, category: str, kev_hit: bool, exploited: bool, has_cve: bool) -> list[str]:
+    tags = []
+    if prio == "Critical":
+        tags.append("critical")
+    if exploited or kev_hit:
+        tags.append("exploited")
+    if kev_hit or (exploited and has_cve):
+        tags.append("patch-now")
+    if M365_RE.search(text):
+        tags.append("m365")
+    if ENTRA_RE.search(text):
+        tags.append("entra")
+    if DEFENDER_RE.search(text):
+        tags.append("defender")
+    if category == "ai":
+        tags.append("ai")
+    return tags
+
+
 def build_story(items: list[dict], kev: set[str], kev_checked: bool, now: datetime) -> dict:
     head = items[0]
-    text = f"{head['title']} {head['summary']} {' '.join(c for i in items for c in i['cves'])}"
+    text = " ".join(f"{i['title']} {i['summary']}" for i in items)
     score, prio, reasons = score_story(items, kev, kev_checked, now)
     with_img = next((i for i in items if i["image"]), None)
     cves = sorted({c for i in items for c in i["cves"]})
+    category = categorize(head["title"], head["summary"], cves)
+    kev_hit = bool(set(cves) & kev) if kev_checked else False
+    exploited = bool(EXPLOITED_RE.search(text))
+    tags = story_tags(text, prio, category, kev_hit, exploited, bool(cves))
     return {
         "id": head["id"],
         "title": head["title"],
         "summary": head["summary"],
         "published": head["published"],
-        "category": categorize(text),
+        "category": category,
+        "tags": tags,
         "priority": prio,
         "score": score,
         "reasons": reasons,
@@ -475,10 +652,11 @@ SHORT_NAV = {"threats": "Threats", "vulnerabilities": "Vulnerabilities", "ai": "
 
 def _layout(cfg: dict, title: str, desc: str, body: str, base: str) -> str:
     site = esc(cfg["site_name"])
-    nav = "".join(
-        f'<a href="{base}index.html#{cid}">{esc(SHORT_NAV[cid])}</a>'
-        for cid in CATEGORY_ORDER if cid != "general"
-    )
+    links = [f'<a href="{base}index.html#{cid}">{esc(SHORT_NAV[cid])}</a>'
+             for cid in CATEGORY_ORDER if cid != "general"]
+    links.append(f'<a href="{base}briefings/index.html">Briefings</a>')
+    links.append(f'<a href="{base}patch-tuesday/index.html">Patch Tuesday</a>')
+    nav = "".join(links)
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -500,7 +678,7 @@ def _layout(cfg: dict, title: str, desc: str, body: str, base: str) -> str:
 <main id="main" class="wrap">
 {body}
 </main>
-<footer class="site-footer"><div class="wrap">Automated briefing. Headlines and short excerpts come from public RSS feeds, and every story links to the original publisher. Not affiliated with any source. &middot; <a href="{base}feed.xml">RSS</a> &middot; <a href="{base}status.json">Run status</a></div></footer>
+<footer class="site-footer"><div class="wrap">Automated briefing. Headlines and short excerpts come from public RSS feeds, and every story links to the original publisher. Not affiliated with any source. &middot; <a href="{base}impressum.html">Impressum</a> &middot; <a href="{base}datenschutz.html">Privacy</a> &middot; <a href="{base}feed.xml">RSS</a> &middot; <a href="{base}status.json">Run status</a></div></footer>
 </body>
 </html>
 """
@@ -509,7 +687,7 @@ def _layout(cfg: dict, title: str, desc: str, body: str, base: str) -> str:
 def _card(s: dict) -> str:
     img = s["image"] or cover_svg(CATEGORIES[s["category"]][0])
     names = ", ".join(dict.fromkeys(x["name"] for x in s["sources"]))
-    return f"""<article class="card">
+    return f"""<article class="card" data-tags="{esc(' '.join(s['tags']))}">
 <img src="{esc(img)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
 <div class="card-body">
 <p class="kicker"><span class="badge {esc(s['priority'])}">{esc(s['priority'])}</span>{esc(CATEGORIES[s['category']][0])}</p>
@@ -523,7 +701,7 @@ def _card(s: dict) -> str:
 def _hero(s: dict) -> str:
     img = s["image"] or cover_svg(CATEGORIES[s["category"]][0])
     names = ", ".join(dict.fromkeys(x["name"] for x in s["sources"]))
-    return f"""<section class="hero" aria-labelledby="hero-title">
+    return f"""<section class="hero" aria-labelledby="hero-title" data-tags="{esc(' '.join(s['tags']))}">
 <a class="hero-media" href="story/{esc(s['id'])}.html" tabindex="-1" aria-hidden="true"><img src="{esc(img)}" alt="" loading="eager" referrerpolicy="no-referrer" width="640" height="360"></a>
 <div class="hero-body">
 <p class="kicker"><span class="badge {esc(s['priority'])}">{esc(s['priority'])}</span>{esc(CATEGORIES[s['category']][0])}</p>
@@ -534,28 +712,196 @@ def _hero(s: dict) -> str:
 </section>"""
 
 
-def index_page(stories: list[dict], cfg: dict, now: datetime, status: dict) -> str:
+EXTRA_CSS = """
+:root{--btn-bg:#1d4ed8;--btn-ink:#ffffff}
+[data-theme="dark"]{--btn-bg:#7cb3ff;--btn-ink:#06101f}
+.lede{font-size:1.15rem;color:var(--muted);margin:0 0 1.2rem}
+.subscribe{margin:40px 0 0;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px}
+.subscribe h2{font-family:var(--serif);font-size:1.3rem;margin:0 0 6px}
+.subscribe-form{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 8px}
+.subscribe-form input{flex:1 1 220px;min-width:0;padding:10px 12px;border:1px solid var(--line);border-radius:8px;font:inherit;background:var(--bg);color:var(--ink)}
+.subscribe-form button{padding:10px 18px;border:0;border-radius:8px;background:var(--btn-bg);color:var(--btn-ink);font:inherit;font-weight:600;cursor:pointer}
+.subscribe-form button:hover{filter:brightness(1.08)}
+.visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.analysis-links{margin:12px 0 0}
+.card-kicker{margin:0;font-size:.8rem;color:var(--muted)}
+[hidden]{display:none!important}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 4px}
+.filters button{font:inherit;font-size:.88rem;padding:6px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.filters button:hover{border-color:var(--accent)}
+.filters button[aria-pressed="true"]{background:var(--btn-bg);color:var(--btn-ink);border-color:var(--btn-bg)}
+"""
+
+
+def _newsletter(site_cfg: dict, base: str) -> str:
+    action = (site_cfg.get("newsletter_form_action") or "").strip()
+    if not action.startswith("https://"):
+        return ""  # no provider configured: no form is shown
+    return f"""<section class="subscribe" aria-labelledby="subscribe-title">
+<h2 id="subscribe-title">Get the analysis by email</h2>
+<p class="summary">The weekly M365 and Entra briefing and the Patch Tuesday notes, written by the author.</p>
+<form action="{esc(action)}" method="post" class="subscribe-form">
+<label for="nl-email" class="visually-hidden">Email address</label>
+<input id="nl-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com">
+<button type="submit">Subscribe</button>
+</form>
+<p class="meta">You can unsubscribe at any time. <a href="{base}datenschutz.html">Privacy notice</a></p>
+</section>"""
+
+
+def _article_card(a: dict, href: str) -> str:
+    label = SECTIONS[a["section"]]
+    return f"""<article class="card">
+<div class="card-body">
+<p class="card-kicker">{esc(label)}</p>
+<h3><a href="{esc(href)}">{esc(a['title'])}</a></h3>
+<p class="summary">{esc(_short(a['summary'], 180))}</p>
+<p class="meta">{esc(fmt_day(a['date']))}</p>
+</div>
+</article>"""
+
+
+def article_page(a: dict, cfg: dict, site_cfg: dict) -> str:
+    base = "../../"
+    label = SECTIONS[a["section"]]
+    lede = f'<p class="lede">{esc(a["summary"])}</p>' if a["summary"] else ""
+    body = (
+        '<article class="prose">'
+        f'<p class="kicker">{esc(label)} &middot; {esc(fmt_day(a["date"]))}</p>'
+        f'<h1>{esc(a["title"])}</h1>{lede}{a["body"]}'
+        f'<p class="meta"><a href="index.html">&larr; All {esc(label)}</a> &middot; <a href="../../index.html">Home</a></p>'
+        "</article>"
+    )
+    body += _newsletter(site_cfg, base)
+    return _layout(cfg, a["title"], _short(a["summary"] or a["title"], 150), body, base)
+
+
+def section_page(sec: str, arts: list[dict], cfg: dict, site_cfg: dict) -> str:
+    base = "../"
+    label = SECTIONS[sec]
+    cards = "".join(_article_card(a, f"{a['slug']}.html") for a in arts) or '<div class="empty">No published articles yet.</div>'
+    body = (
+        f'<section class="intro"><h1>{esc(label)}</h1><p class="meta">Original analysis, newest first.</p></section>'
+        f'<div class="grid">{cards}</div>'
+    ) + _newsletter(site_cfg, base)
+    return _layout(cfg, label, f"{label}: original analysis.", body, base)
+
+
+def legal_pages(site_cfg: dict, cfg: dict) -> dict[str, str]:
+    p = site_cfg.get("publisher") or {}
+    name = (p.get("name") or "").strip()
+    addr = (p.get("address") or "").strip()
+    mail = (p.get("email") or "").strip()
+    addr_html = "<br>".join(esc(x) for x in addr.splitlines() if x.strip())
+    if name and addr and mail:
+        imp = (
+            f"<p>Angaben gemäß § 5 DDG:</p>"
+            f"<p>{esc(name)}<br>{addr_html}<br>E-Mail: {esc(mail)}</p>"
+            f"<p>Verantwortlich für den Inhalt gemäß § 18 Abs. 2 MStV: {esc(name)}, {addr_html}</p>"
+        )
+        controller = f"{esc(name)}, {addr_html}, E-Mail: {esc(mail)}"
+    else:
+        imp = "<p>Impressum: Angaben werden ergänzt.</p>"
+        controller = "siehe Impressum"
+    impressum = (
+        '<article class="prose"><h1>Impressum</h1>' + imp + "</article>"
+    )
+    privacy = (
+        '<article class="prose"><h1>Datenschutzerklärung</h1>'
+        "<h2>Verantwortlicher</h2>"
+        f"<p>{controller}</p>"
+        "<h2>Hosting und Server-Logs</h2>"
+        "<p>Diese Seite wird über GitHub Pages bereitgestellt. Beim Aufruf verarbeitet der Hosting-Anbieter "
+        "technisch notwendige Verbindungsdaten, zum Beispiel die IP-Adresse, in Server-Logs.</p>"
+        "<h2>Vorschaubilder</h2>"
+        "<p>Vorschaubilder einzelner Meldungen werden direkt von den Servern der jeweiligen Nachrichtenseiten geladen. "
+        "Dabei erhalten diese Server Ihre IP-Adresse.</p>"
+        "<h2>Cookies und Analyse</h2>"
+        "<p>Diese Seite setzt keine Tracking-Cookies und verwendet kein Web-Analyse-Werkzeug.</p>"
+        "<h2>Newsletter</h2>"
+        "<p>Wenn Sie den Newsletter abonnieren, verarbeiten wir Ihre E-Mail-Adresse, um Ihnen den Newsletter zu senden. "
+        "Die Anmeldung läuft über einen externen Newsletter-Anbieter, dessen Datenschutzhinweise ebenfalls gelten. "
+        "Sie können sich jederzeit über den Link in jeder E-Mail abmelden.</p>"
+        "<h2>Ihre Rechte</h2>"
+        "<p>Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Widerspruch "
+        "und Datenübertragbarkeit.</p>"
+        "</article>"
+    )
+    return {
+        "impressum.html": _layout(cfg, "Impressum", "Impressum", impressum, ""),
+        "datenschutz.html": _layout(cfg, "Datenschutzerklärung", "Datenschutzerklärung", privacy, ""),
+    }
+
+
+FILTERS = [
+    ("all", "All"), ("critical", "Critical"), ("exploited", "Actively exploited"), ("patch-now", "Patch now"),
+    ("m365", "Microsoft 365"), ("entra", "Entra ID"), ("defender", "Defender"), ("ai", "AI security"),
+]
+FILTER_BAR = (
+    '<div class="filters" id="filters" role="group" aria-label="Filter stories by topic">'
+    + "".join(f'<button type="button" data-filter="{k}" aria-pressed="{"true" if k == "all" else "false"}">{esc(v)}</button>'
+              for k, v in FILTERS)
+    + '</div><p id="filter-empty" class="empty" hidden>No stories match this filter in the current window.</p>'
+)
+FILTER_JS = """(function(){
+var bar=document.getElementById('filters');if(!bar)return;
+var buttons=bar.querySelectorAll('button[data-filter]');
+var items=document.querySelectorAll('[data-tags]');
+var sections=document.querySelectorAll('[data-section]');
+var empty=document.getElementById('filter-empty');
+function apply(f){
+  buttons.forEach(function(b){b.setAttribute('aria-pressed',String(b.getAttribute('data-filter')===f));});
+  var shown=0;
+  items.forEach(function(el){
+    var tags=' '+(el.getAttribute('data-tags')||'')+' ';
+    var ok=(f==='all')||tags.indexOf(' '+f+' ')>-1;
+    el.hidden=!ok; if(ok){shown++;}
+  });
+  sections.forEach(function(sec){sec.hidden=!sec.querySelector('[data-tags]:not([hidden])');});
+  if(empty){empty.hidden=shown>0;}
+}
+buttons.forEach(function(b){b.addEventListener('click',function(){apply(b.getAttribute('data-filter'));});});
+apply('all');
+})();"""
+
+
+def index_page(stories: list[dict], cfg: dict, now: datetime, status: dict,
+               articles: list[dict] | None = None, site_cfg: dict | None = None) -> str:
+    articles = articles or []
+    site_cfg = site_cfg or {}
     parts = [
         '<section class="intro"><h1>Security news, ranked</h1>'
         f'<p class="meta">Last content update: {esc(now.strftime("%d %b %Y, %H:%M UTC"))} &middot; '
         f'Feed status: {status["sources_ok"]} of {status["sources_total"]} sources reachable &middot; '
         "Checked automatically, updated when new stories arrive.</p></section>"
     ]
+    if articles:
+        parts.append(
+            '<section class="section" id="analysis"><h2>From the analysis desk</h2><div class="grid">'
+            + "".join(_article_card(a, f"{a['section']}/{a['slug']}.html") for a in articles[:3])
+            + '</div><p class="analysis-links meta"><a href="briefings/index.html">All briefings</a> &middot; '
+            '<a href="patch-tuesday/index.html">All Patch Tuesday notes</a></p></section>'
+        )
+    newsletter = _newsletter(site_cfg, "")
+    if newsletter:
+        parts.append(newsletter)
     if not stories:
-        parts.append('<div class="empty">No stories yet. The next automated check will fill this page.</div>')
+        parts.append('<div class="empty">No news stories yet. The next automated check will fill this page.</div>')
     else:
+        parts.append(FILTER_BAR)
         featured = stories[:4]
-        parts.append(_hero(featured[0]))
+        parts.append('<section class="section" aria-label="Top news" data-section>' + _hero(featured[0]) + "</section>")
         if len(featured) > 1:
-            parts.append('<section class="section" aria-label="More top stories"><h2>Also in focus</h2><div class="grid">'
+            parts.append('<section class="section" aria-label="More top stories" data-section><h2>Also in focus</h2><div class="grid">'
                          + "".join(_card(s) for s in featured[1:]) + "</div></section>")
         featured_ids = {s["id"] for s in featured}
         for cid in CATEGORY_ORDER:
             items = [s for s in stories if s["category"] == cid and s["id"] not in featured_ids][:6]
             if not items:
                 continue
-            parts.append(f'<section class="section" id="{cid}"><h2>{esc(CATEGORIES[cid][0])}</h2>'
+            parts.append(f'<section class="section" id="{cid}" data-section><h2>{esc(CATEGORIES[cid][0])}</h2>'
                          '<div class="grid">' + "".join(_card(s) for s in items) + "</div></section>")
+        parts.append("<script>" + FILTER_JS + "</script>")
     return _layout(cfg, "Home", "Ranked cybersecurity news with links to original sources.", "\n".join(parts), "")
 
 
@@ -606,50 +952,69 @@ def story_page(s: dict, cfg: dict) -> str:
     return _layout(cfg, s["title"], desc, f'<article class="prose">{body}</article>', "../")
 
 
-def feed_xml(stories: list[dict], cfg: dict, now: datetime) -> str:
+def feed_xml(stories: list[dict], cfg: dict, now: datetime, articles: list[dict] | None = None) -> str:
     site = cfg["site_url"].rstrip("/")
-    items = []
+    entries = []
+    for a in (articles or [])[:20]:
+        link = f"{site}/{a['section']}/{a['slug']}.html"
+        entries.append((a["title"], link, a["summary"] or a["title"], _date(a["date"]) or now, SECTIONS[a["section"]]))
     for s in stories[:40]:
         link = f"{site}/story/{s['id']}.html"
-        pub = _date(s["published"]) or now
-        items.append(
-            "<item>"
-            f"<title>{esc(s['title'])}</title>"
-            f"<link>{esc(link)}</link>"
-            f"<guid isPermaLink='true'>{esc(link)}</guid>"
-            f"<pubDate>{format_datetime(pub)}</pubDate>"
-            f"<category>{esc(CATEGORIES[s['category']][0])}</category>"
-            f"<description>{esc(s['summary'])}</description>"
-            "</item>"
-        )
+        entries.append((s["title"], link, s["summary"], _date(s["published"]) or now, CATEGORIES[s["category"]][0]))
+    items = "".join(
+        "<item>"
+        f"<title>{esc(t)}</title><link>{esc(l)}</link><guid isPermaLink='true'>{esc(l)}</guid>"
+        f"<pubDate>{format_datetime(p)}</pubDate><category>{esc(c)}</category><description>{esc(d)}</description>"
+        "</item>"
+        for t, l, d, p, c in entries
+    )
     return (
         '<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel>'
         f"<title>{esc(cfg['site_name'])}</title><link>{esc(site)}/</link>"
-        f"<description>Ranked cybersecurity news with links to original sources</description>"
+        "<description>Original analysis and ranked cybersecurity news with links to original sources</description>"
         f"<lastBuildDate>{format_datetime(now)}</lastBuildDate>"
-        + "".join(items) + "</channel></rss>\n"
+        + items + "</channel></rss>\n"
     )
 
 
-def sitemap_xml(stories: list[dict], cfg: dict) -> str:
+def sitemap_xml(stories: list[dict], cfg: dict, articles: list[dict] | None = None) -> str:
     site = cfg["site_url"].rstrip("/")
-    urls = [f"{site}/"] + [f"{site}/story/{s['id']}.html" for s in stories]
+    urls = [f"{site}/", f"{site}/briefings/index.html", f"{site}/patch-tuesday/index.html",
+            f"{site}/impressum.html", f"{site}/datenschutz.html"]
+    urls += [f"{site}/{a['section']}/{a['slug']}.html" for a in (articles or [])]
+    urls += [f"{site}/story/{s['id']}.html" for s in stories]
     return ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
             + "".join(f"<url><loc>{esc(u)}</loc></url>" for u in urls) + "</urlset>\n")
 
 
-def write_site(out: Path, stories: list[dict], cfg: dict, now: datetime, status: dict) -> None:
+def write_site(out: Path, stories: list[dict], cfg: dict, now: datetime, status: dict,
+               articles: list[dict] | None = None, site_cfg: dict | None = None) -> None:
+    articles = articles or []
+    site_cfg = site_cfg or {}
     (out / "story").mkdir(parents=True, exist_ok=True)
     keep = {f"{s['id']}.html" for s in stories}
     for f in (out / "story").glob("*.html"):
         if f.name not in keep:
             f.unlink()
-    (out / "style.css").write_text(CSS.strip() + "\n", encoding="utf-8")
-    (out / "index.html").write_text(index_page(stories, cfg, now, status), encoding="utf-8")
+    (out / "style.css").write_text(CSS.strip() + "\n" + EXTRA_CSS, encoding="utf-8")
+    (out / "index.html").write_text(index_page(stories, cfg, now, status, articles, site_cfg), encoding="utf-8")
     for s in stories:
         (out / "story" / f"{s['id']}.html").write_text(story_page(s, cfg), encoding="utf-8")
-    (out / "feed.xml").write_text(feed_xml(stories, cfg, now), encoding="utf-8")
-    (out / "sitemap.xml").write_text(sitemap_xml(stories, cfg), encoding="utf-8")
+    for sec in SECTIONS:
+        sec_articles = [a for a in articles if a["section"] == sec]
+        d = out / sec
+        d.mkdir(parents=True, exist_ok=True)
+        wanted = {f"{a['slug']}.html" for a in sec_articles} | {"index.html"}
+        for f in d.glob("*.html"):
+            if f.name not in wanted:
+                f.unlink()
+        (d / "index.html").write_text(section_page(sec, sec_articles, cfg, site_cfg), encoding="utf-8")
+        for a in sec_articles:
+            (d / f"{a['slug']}.html").write_text(article_page(a, cfg, site_cfg), encoding="utf-8")
+    for name, page in legal_pages(site_cfg, cfg).items():
+        (out / name).write_text(page, encoding="utf-8")
+    (out / "feed.xml").write_text(feed_xml(stories, cfg, now, articles), encoding="utf-8")
+    (out / "sitemap.xml").write_text(sitemap_xml(stories, cfg, articles), encoding="utf-8")
     (out / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {cfg['site_url'].rstrip('/')}/sitemap.xml\n", encoding="utf-8")
     (out / "status.json").write_text(json.dumps(status, indent=2, ensure_ascii=False), encoding="utf-8")
     (out / ".nojekyll").write_text("", encoding="utf-8")
@@ -657,7 +1022,10 @@ def write_site(out: Path, stories: list[dict], cfg: dict, now: datetime, status:
 
 # ---------- main ----------
 
-def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datetime) -> dict:
+def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datetime,
+        site_cfg: dict | None = None, content_dir: Path | None = None) -> dict:
+    site_cfg = site_cfg or {}
+    content_dir = content_dir or CONTENT_DIR
     fresh: list[dict] = []
     src_status: list[dict] = []
     for src in cfg["sources"]:
@@ -682,6 +1050,10 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
     stories.sort(key=lambda s: (s["score"], s["published"] or ""), reverse=True)
 
     warnings = quality_warnings(stories)
+    articles = load_articles(content_dir, warnings)
+    publisher = site_cfg.get("publisher") or {}
+    if not all((publisher.get(k) or "").strip() for k in ("name", "address", "email")):
+        warnings.append("site.json publisher details incomplete: Impressum page is a placeholder")
     if kev_err:
         warnings.append(kev_err)
     if "YOUR-GITHUB-USER" in cfg["site_url"]:
@@ -693,19 +1065,22 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
         "sources_total": len(src_status),
         "sources": src_status,
         "stories": len(stories),
+        "analysis_articles": len(articles),
         "critical": sum(1 for s in stories if s["priority"] == "Critical"),
         "high": sum(1 for s in stories if s["priority"] == "High"),
         "kev_loaded": kev_checked,
         "warnings": warnings,
     }
 
-    # Only touch tracked files when the published content changes, so the
-    # repo does not get a commit on every 20-minute run.
-    digest_src = json.dumps(
-        [[s["id"], s["title"], s["summary"], s["published"], s["category"], s["priority"],
-          s["score"], s["image"], [x["url"] for x in s["sources"]]] for s in stories],
-        ensure_ascii=False,
-    )
+    # Only touch tracked files when published content changes, so the repo
+    # does not get a commit on every scheduled run.
+    digest_src = json.dumps({
+        "stories": [[s["id"], s["title"], s["summary"], s["published"], s["category"], s["priority"],
+                     s["score"], s["image"], [x["url"] for x in s["sources"]]] for s in stories],
+        "articles": [[a["section"], a["slug"], a["title"], a["date"], a["summary"], a["_md"]] for a in articles],
+        "site": site_cfg,
+        "render": "5.1",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
+    }, ensure_ascii=False, sort_keys=True)
     digest = hashlib.sha1(digest_src.encode("utf-8")).hexdigest()
     digest_file = data_file.parent / "digest.txt"
     prev_digest = digest_file.read_text(encoding="utf-8").strip() if digest_file.exists() else ""
@@ -715,7 +1090,7 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
         data_file.parent.mkdir(parents=True, exist_ok=True)
         data_file.write_text(items_text, encoding="utf-8")
         digest_file.write_text(digest + "\n", encoding="utf-8")
-        write_site(out, stories, cfg, now, status)
+        write_site(out, stories, cfg, now, status, articles, site_cfg)
     elif not data_file.exists() or data_file.read_text(encoding="utf-8") != items_text:
         data_file.write_text(items_text, encoding="utf-8")
     return status
@@ -729,7 +1104,8 @@ def main() -> None:
     args = ap.parse_args()
     cfg = json.loads(CONFIG.read_text(encoding="utf-8"))
     now = datetime.now(timezone.utc)
-    status = run(cfg, args.out, args.data, args.fixtures, now)
+    site_cfg = load_site_config(SITE_CONFIG)
+    status = run(cfg, args.out, args.data, args.fixtures, now, site_cfg)
     print(json.dumps({k: status[k] for k in ("generated", "sources_ok", "sources_total", "stories", "critical", "high", "warnings")}, indent=2))
 
 
