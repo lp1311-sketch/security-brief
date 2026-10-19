@@ -56,6 +56,26 @@
    "instructions_checked": true
   },
   {
+   "id": "de7b0df69eea",
+   "source": "ars",
+   "source_name": "Ars Technica Security",
+   "official": false,
+   "title": "PSA: Patch your Plex media server before someone hacks it",
+   "link": "https://arstechnica.com/security/2026/10/recently-fixed-plex-media-vulnerabilities-are-being-exploited-to-install-malware/",
+   "published": "2026-10-19T19:39:19+00:00",
+   "summary": "Recently fixed vulnerabilities in the Plex Media Server are under active exploitation in attacks that, when successful, install malware, including cryptominers and residential proxy apps, a researcher said. Plex fixed four vulnerabilities at the start of last month. Three weeks later, published CVE designations…",
+   "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/plex-media-server-1152x648.webp",
+   "cves": [],
+   "first_seen": "2026-10-19T20:13:51.544212+00:00",
+   "instructions": [
+    "Anyone using Plex should ensure it’s running version 1.43.3.",
+    "Given the active exploitation, outdated versions should be updated immediately.",
+    "Beyond that, users should devote care to properly securing the media servers.",
+    "Recently fixed vulnerabilities in the Plex Media Server are under active exploitation in attacks that, when successful, install malware, including cryptominers and residential proxy apps, a researcher said."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "048b26c65907",
    "source": "ars",
    "source_name": "Ars Technica Security",
@@ -1711,6 +1731,27 @@
     "The vendor warns that remediation may erase attack traces, and recommends that administrators preserve evidence before updating or patching.",
     "SiteGuard Server Edition for Apache httpd, Nginx, and IIS (excluding FreeBSD) versions 2.20 and later, before 8.00 Update 5.",
     "SiteGuard Server Edition for Apache httpd and Nginx on FreeBSD versions 2.20 and later, before 7.00 Update 6."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "ff25b976bdfa",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "title": "Hackers hijack AOMEI update servers to secretly spread malware",
+   "link": "https://www.bleepingcomputer.com/news/security/hackers-hijack-aomei-update-servers-to-secretly-spread-malware/",
+   "published": "2026-10-19T19:40:58+00:00",
+   "summary": "Hackers reportedly compromised AOMEI's servers to distribute malware through a built-in promotional feature in its backup software, briefly tampering with configuration files before restoring them to their original state to hide the attacks.a",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/19/backupper-supply-chain-attack.jpg",
+   "cves": [],
+   "first_seen": "2026-10-19T20:13:51.544212+00:00",
+   "image_checked": true,
+   "instructions": [
+    "ManageEngine told BleepingComputer it advised AOMEI to preserve existing evidence before making those changes and to bring in incident-response specialists, connecting the company with Mandiant to assist with the investigation.",
+    "Organizations using AOMEI Backupper are advised to review the indicators of compromise published by Google and ManageEngine, including suspicious scheduled tasks, unexpected executable files in AOMEI installation directories, and connections to attacker-controlled infrastructure.",
+    "Hackers hijack AOMEI update servers to secretly spread malware",
+    "The supply chain attacks took place between April and July 2026 and targeted the update and notification systems used by AOMEI Backupper, a Windows application for backing up data, cloning disks, and restoring systems."
    ],
    "instructions_checked": true
   },
