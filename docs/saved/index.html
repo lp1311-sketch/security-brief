@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saved stories | Security Brief</title>
+<meta name="description" content="Stories you saved in this browser.">
+<meta property="og:site_name" content="Security Brief">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Saved stories">
+<meta property="og:description" content="Stories you saved in this browser.">
+<meta name="twitter:card" content="summary">
+<script>(function(){
+var root=document.documentElement,dark=false,saved=null;
+try{saved=localStorage.getItem('sb-theme')}catch(e){}
+dark=saved?saved==='dark':(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches);
+function apply(){root.setAttribute('data-theme',dark?'dark':'light');
+var b=document.getElementById('theme-toggle');
+if(b){b.textContent=dark?'Light mode':'Dark mode';b.setAttribute('aria-pressed',String(dark));}}
+apply();
+document.addEventListener('DOMContentLoaded',function(){
+var b=document.getElementById('theme-toggle');
+if(b){b.addEventListener('click',function(){dark=!dark;try{localStorage.setItem('sb-theme',dark?'dark':'light')}catch(e){}apply();});}
+apply();});
+})();</script>
+<link rel="stylesheet" href="../style.css">
+<link rel="alternate" type="application/rss+xml" title="Security Brief" href="https://lp1311-sketch.github.io/security-brief/feed.xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap bar">
+<a class="brand" href="../index.html"><span class="mark" aria-hidden="true"></span>Security Brief</a>
+<nav class="nav" aria-label="Categories"><a href="../today/index.html">Today</a><a href="../saved/index.html">Saved</a><a href="../index.html#threats">Threats</a><a href="../index.html#vulnerabilities">Vulnerabilities</a><a href="../index.html#ai">AI</a><a href="../index.html#cloud">Cloud &amp; Identity</a><a href="../index.html#microsoft">Microsoft</a><a href="../briefings/index.html">Briefings</a><a href="../patch-tuesday/index.html">Patch Tuesday</a></nav>
+<button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false">Dark mode</button>
+</div></header>
+<main id="main" class="wrap">
+<section class="intro"><h1>Saved stories</h1><p class="meta">Saved in this browser only. Nothing is sent to us. Stories leave the current window after about a week, and then they are no longer listed here.</p></section><p id="saved-note" class="note" hidden></p><div class="grid" id="saved-list"></div><p id="saved-empty" class="empty" hidden>Nothing saved yet. Use <strong>Save</strong> on a story to keep it here.</p><script>(function(){
+var KEY='sb-saved';
+var list=document.getElementById('saved-list');
+var empty=document.getElementById('saved-empty');
+var note=document.getElementById('saved-note');
+var saved=[];
+try{saved=JSON.parse(localStorage.getItem(KEY)||'[]');}catch(e){saved=[];}
+function save(a){try{localStorage.setItem(KEY,JSON.stringify(a));}catch(e){}}
+function el(tag,cls,text){var n=document.createElement(tag);if(cls){n.className=cls;}if(text!==undefined){n.textContent=text;}return n;}
+fetch('../stories.json',{cache:'no-store'}).then(function(r){return r.json();}).then(function(data){
+  var byId={};(data.stories||[]).forEach(function(s){byId[s.id]=s;});
+  var found=saved.filter(function(id){return !!byId[id];});
+  var missing=saved.length-found.length;
+  if(!found.length){empty.hidden=false;}
+  found.forEach(function(id){
+    var s=byId[id];
+    var card=el('article','card prio-'+s.priority);
+    var body=el('div','card-body');
+    var kick=el('p','kicker');kick.appendChild(el('span','badge '+s.priority,s.priority));kick.appendChild(el('span','cat',s.category));
+    var h=el('h3');var a=el('a','',s.title);a.href='../'+s.url;h.appendChild(a);
+    var sum=el('p','summary',s.summary);
+    var meta=el('p','meta',s.sources+' · '+s.date);
+    var rm=el('button','save','Remove');rm.type='button';rm.setAttribute('aria-pressed','true');
+    rm.addEventListener('click',function(){
+      saved=saved.filter(function(x){return x!==id;});save(saved);card.remove();
+      if(!list.children.length){empty.hidden=false;}
+    });
+    body.appendChild(kick);body.appendChild(h);body.appendChild(sum);body.appendChild(meta);body.appendChild(rm);
+    card.appendChild(body);list.appendChild(card);
+  });
+  if(missing>0){note.hidden=false;note.textContent=missing+(missing===1?' saved story is':' saved stories are')+' no longer in the current window, so they are not shown. Saved items are kept in this browser only.';}
+}).catch(function(){
+  note.hidden=false;note.textContent='The story index could not be loaded. Please try again later.';
+});
+})();</script>
+</main>
+<footer class="site-footer"><div class="wrap">Automated briefing. Headlines and short excerpts come from public RSS feeds, and every story links to the original publisher. Not affiliated with any source. &middot; <a href="../impressum.html">Impressum</a> &middot; <a href="../datenschutz.html">Privacy</a> &middot; <a href="../feed.xml">RSS</a> &middot; <a href="../status.json">Run status</a></div></footer>
+</body>
+</html>

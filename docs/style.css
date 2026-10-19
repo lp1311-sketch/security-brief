@@ -97,6 +97,14 @@ figcaption{font-size:.8rem;color:var(--muted);margin-top:8px}
 .visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .analysis-links{margin:14px 0 0}
 [hidden]{display:none!important}
+.toolbar{margin:0 0 12px}
+.search{width:100%;font:inherit;font-size:.95rem;padding:11px 14px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
+.search:focus{border-color:var(--accent)}
+.actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:4px}
+.save{align-self:flex-start;font:inherit;font-size:.8rem;font-weight:600;background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:999px;padding:5px 12px;cursor:pointer}
+.save:hover{color:var(--ink);border-color:var(--ink)}
+.save[aria-pressed="true"]{color:var(--accent);border-color:var(--accent)}
+.card-body .save{margin-top:4px}
 .todo-list{display:grid;gap:14px}
 .todo{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--std);border-radius:var(--r);padding:18px 20px}
 .todo.kind-patch{border-left-color:var(--crit)}
