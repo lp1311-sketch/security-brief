@@ -1190,6 +1190,26 @@
    "instructions_checked": true
   },
   {
+   "id": "4ad529ab6216",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "title": "Popular WordPress SEO Plugin Rank Math PRO Hijacked to Deliver Self-Restoring Backdoor",
+   "link": "https://thehackernews.com/2026/10/popular-wordpress-seo-plugin-rank-math.html",
+   "published": "2026-10-19T16:28:47+00:00",
+   "summary": "Copies of Rank Math PRO, the paid version of the Rank Math SEO plugin for WordPress, that were downloaded from rankmath.com or delivered as updates between 20:02 UTC on October 15 and 07:12 UTC on October 16 contained malware, Rank Math said in a security notice published on October 16. Any site that installed and…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEja-6AhEjL8YvRsoNjXIIDEnsVd8gMMW_cUqMvLNcRukJXjatSuo-phLfYxt2A76gSCk-uZFmo4EbJjQuMr8_k8Pxl2ho1TnUL_50Q_VknkR8JqnTiVOqZ48i5W6Mv6HB0cQfJoAjs8xHUu6urkucsPClURVP3aWM0aivfngCFZLykMYzJITwenYfSb9Sk/s1600/wordpress-rank.jpg",
+   "cves": [],
+   "first_seen": "2026-10-19T17:33:12.615608+00:00",
+   "instructions": [
+    "Any site that installed and activated one of those copies should be treated as compromised, and the malware can recreate its hidden backdoor whenever someone visits the site.",
+    "Installing it replaces the plugin but does not remove files, administrator accounts, or scheduled tasks the malware may already have placed elsewhere on the server, Wordfence said in an advisory on October 17.",
+    "Neither it nor Wordfence's advisory includes an analysis of the code, and neither names who is behind it.",
+    "The attacker may also have left PHP backdoor files in other plugins' folders, in theme folders, and in the must-use plugins directory, created administrator accounts, added a fake WordPress core file, changed .htaccess so that .cache files run as PHP, and added scheduled tasks and SSH keys."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "2f67e7ff74fc",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1675,6 +1695,22 @@
     "Its alert recommends examining the complete application because differences between the applicant’s identity information, supporting records, facial images, and account activity may reveal that several elements were prepared by different people or tools.",
     "NIST recommends collecting identity documents and facial images directly during the verification session, checking whether they have been altered, and detecting software that replaces the footage from a physical camera."
    ],
+   "instructions_checked": true
+  },
+  {
+   "id": "c8f4e94200b3",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "title": "OpenCode hack exposes API keys amid AI distillation attacks",
+   "link": "https://www.bleepingcomputer.com/news/security/opencode-hack-exposes-api-keys-amid-ai-distillation-attacks/",
+   "published": "2026-10-19T17:27:15+00:00",
+   "summary": "The open-source AI coding project OpenCode has notified a small number of users that API keys they used with external providers were exposed in a security breach.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/19/key.jpg",
+   "cves": [],
+   "first_seen": "2026-10-19T17:33:12.615608+00:00",
+   "image_checked": true,
+   "instructions": [],
    "instructions_checked": true
   },
   {
