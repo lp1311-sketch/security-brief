@@ -912,6 +912,15 @@ EXTRA_CSS = """
 .cve-table th{font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700;background:var(--surface-2);white-space:nowrap}
 .cve-table tr:last-child td{border-bottom:0}
 .cve-table td a{color:var(--ink);text-decoration:none}
+.cve-table td a.cve-id{text-decoration:underline;font-weight:650}
+.cve-title{font-weight:650;margin-bottom:4px}
+.cve-blurb{margin:0}
+.cve-legend ul{margin:8px 0 8px 18px}
+.cve-legend li{margin:4px 0}
+.cve-counts{margin:14px 0 10px}
+.badge.KEV{color:var(--crit)}
+.badge.Exploited{color:var(--high)}
+.badge.None{color:var(--muted)}
 .cve-table td a:hover{text-decoration:underline}
 .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.85rem;white-space:nowrap}
 .todo-list{display:grid;gap:14px}
@@ -977,31 +986,79 @@ def msrc_cve_rows(stories: list[dict]) -> list[dict]:
     return sorted(rows, key=lambda s: (not s["kev"], -s["score"]))
 
 
-def cve_table(rows: list[dict]) -> str:
-    head = ('<section class="section" id="cve-table"><h2>Microsoft CVEs in the current window</h2>'
-            '<p class="meta">From the Microsoft Security Response Center feed. <strong>KEV</strong> means listed in CISA\'s '
-            "Known Exploited Vulnerabilities catalog at the time of the run. This is not the complete Patch Tuesday list: "
-            "use the Security Update Guide for that.</p>")
-    if not rows:
-        return head + '<div class="empty">No Microsoft CVE entries in the current window.</div></section>'
-    trs = []
+SUG_URL = "https://msrc.microsoft.com/update-guide/vulnerability/{cve}"
+
+
+def _cve_status(s: dict) -> tuple[str, str, str]:
+    """(badge text, css class, plain meaning) for the exploitation signal in this run."""
+    if s["kev"]:
+        return ("KEV", "KEV", "Listed in CISA's Known Exploited Vulnerabilities catalog at the time of this run. Patch first.")
+    if "exploited" in s["tags"]:
+        return ("Exploited", "Exploited", "A source in this run reports exploitation, but the CVE is not in the KEV catalog.")
+    return ("Not reported", "None", "No exploitation signal in this run. This does not mean the flaw is safe.")
+
+
+def _cve_order(priority: str) -> str:
+    return {"Critical": "1 · Patch first", "High": "2 · This cycle"}.get(priority, "3 · Normal cycle")
+
+
+def _cve_blurb(s: dict) -> str:
+    text = " ".join((s.get("summary") or "").split())
+    if not text or text.rstrip(".").lower() == s["title"].rstrip(".").lower():
+        return "The feed gives no description. Open the Security Update Guide entry for details."
+    return _short(text, 220)
+
+
+def cve_entries(rows: list[dict]) -> list[tuple[str, dict]]:
+    """One entry per CVE, in the order of the input rows (KEV first). The first story naming a CVE wins."""
+    seen: dict[str, dict] = {}
     for s in rows:
-        exploitation = "KEV" if s["kev"] else ("Exploited" if "exploited" in s["tags"] else "Not reported")
+        for cve in s["cves"]:
+            seen.setdefault(cve, s)
+    return list(seen.items())
+
+
+def cve_table(rows: list[dict]) -> str:
+    legend = (
+        '<section class="section" id="cve-table"><h2>Microsoft CVEs in the current window</h2>'
+        '<div class="box cve-legend"><p><strong>How to read this table</strong></p><ul>'
+        "<li><strong>CVE</strong> links to the Microsoft Security Update Guide entry. That page is the authority for "
+        "affected products, severity (CVSS) and fixes. The feed used here does not include CVSS scores.</li>"
+        "<li><strong>KEV</strong>: listed in CISA's Known Exploited Vulnerabilities catalog at the time of this run. "
+        "Treat it as patch first.</li>"
+        "<li><strong>Exploited</strong>: a source in this run reports exploitation, but the CVE is not in KEV.</li>"
+        "<li><strong>Not reported</strong>: no exploitation signal in this run. This does not mean the flaw is safe.</li>"
+        "<li><strong>Priority</strong>: Critical = KEV, or exploitation reported by an official source. "
+        "High = score 6 or more. Standard = everything else. The suggested order follows the priority.</li>"
+        "</ul><p class=\"meta\">This is the Microsoft Security Response Center feed only, not the complete Patch Tuesday "
+        "list. Use the Security Update Guide for the full list.</p></div>"
+    )
+    entries = cve_entries(rows)
+    if not entries:
+        return legend + '<div class="empty">No Microsoft CVE entries in the current window.</div></section>'
+    n_kev = sum(1 for _, s in entries if s["kev"])
+    n_crit = sum(1 for _, s in entries if s["priority"] == "Critical")
+    n_high = sum(1 for _, s in entries if s["priority"] == "High")
+    counts = (f'<p class="meta cve-counts">{len(entries)} CVE{"s" if len(entries) != 1 else ""} · {n_kev} KEV · {n_crit} Critical · {n_high} High</p>')
+    trs = []
+    for cve, s in entries:
+        label, cls, meaning = _cve_status(s)
         prio = esc(s["priority"])
         trs.append(
             "<tr>"
-            f'<td class="mono">{esc(", ".join(s["cves"]))}</td>'
-            f'<td><a href="../story/{esc(s["id"])}.html">{esc(s["title"])}</a></td>'
-            f'<td><span class="badge {prio}">{prio}</span></td>'
-            f"<td>{esc(exploitation)}</td>"
+            f'<td class="mono"><a class="cve-id" href="{SUG_URL.format(cve=esc(cve))}" target="_blank" '
+            f'rel="noopener noreferrer">{esc(cve)}</a></td>'
+            f'<td><div class="cve-title">{esc(s["title"])}</div><p class="meta cve-blurb">{esc(_cve_blurb(s))}</p></td>'
+            f'<td><span class="badge {cls}" title="{esc(meaning)}">{esc(label)}</span></td>'
+            f'<td><span class="badge {prio}">{prio}</span><div class="meta">{esc(_cve_order(s["priority"]))}</div></td>'
             f'<td class="meta">{esc(fmt_date(s["published"]))}</td>'
+            f'<td><a href="../story/{esc(s["id"])}.html">Story</a></td>'
             "</tr>"
         )
-    return (head + '<div class="table-wrap"><table class="cve-table"><thead><tr>'
-            '<th scope="col">CVE</th><th scope="col">Entry</th><th scope="col">Priority</th>'
-            '<th scope="col">Exploitation</th><th scope="col">Date</th></tr></thead><tbody>'
+    return (legend + counts + '<div class="table-wrap"><table class="cve-table"><thead><tr>'
+            '<th scope="col">CVE</th><th scope="col">What it is</th><th scope="col">Exploitation</th>'
+            '<th scope="col">Priority</th><th scope="col">Date</th><th scope="col">Details</th></tr></thead><tbody>'
             + "".join(trs) + "</tbody></table></div></section>")
-
 
 def section_page(sec: str, arts: list[dict], cfg: dict, site_cfg: dict,
                  cve_rows: list[dict] | None = None) -> str:
@@ -1501,7 +1558,7 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
                      s["score"], s["image"], [x["url"] for x in s["sources"]]] for s in stories],
         "articles": [[a["section"], a["slug"], a["title"], a["date"], a["summary"], a["_md"]] for a in articles],
         "site": site_cfg,
-        "render": "5.9",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
+        "render": "5.10",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
     }, ensure_ascii=False, sort_keys=True)
     digest = hashlib.sha1(digest_src.encode("utf-8")).hexdigest()
     digest_file = data_file.parent / "digest.txt"
