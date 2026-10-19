@@ -11,7 +11,14 @@
    "summary": "AI company Anthropic is warning that advances in small AI models could soon usher in a new era of self-replicating malware that’s capable of infecting smart fridges, vacuum cleaners, and a wide range of other Internet of Things devices and is more resistant to takedown. By next year, smaller AI models may be able to…",
    "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/ai-caution-threat-1152x648.jpg",
    "cves": [],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00"
+   "first_seen": "2026-10-19T10:28:22.123062+00:00",
+   "instructions": [
+    "Unlike traditional malware, which must be written to run on specific hardware or software, the model was able to use its weights to make configurations on the fly that were specific to the devices it was tested against.",
+    "This tool is used during development and debugging but should never be used in production settings, because it gives attackers access to the entire device stack.",
+    "Eventually, the capability could enable computer worms, which propagate without requiring human interaction and are capable of infecting unfamiliar IoT devices.",
+    "The Qwen3.5-9B was able to configure other LLMs to run on eight of nine hardware types."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "e0c7d4aa37e1",
@@ -24,7 +31,11 @@
    "summary": "Earlier this week, a mass hack of refrigeration systems at an estimated 700 supermarkets throughout France caused them to suddenly malfunction, causing spoilage of untold tons of perishables and, in some cases, fires. As is now the norm, basic cybersecurity would have prevented it. French authorities say the systems…",
    "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/mass-fridge-hack-1024x648.jpg",
    "cves": [],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00"
+   "first_seen": "2026-10-19T10:28:22.123062+00:00",
+   "instructions": [
+    "A hacker who takes the time to analyze the code can do the same thing on any device that hasn’t received a recent update."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "b140e0bf691c",
@@ -34,7 +45,7 @@
    "title": "OpenAI models hacked a crypto wallet and breached more websites",
    "link": "https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/",
    "published": "2026-10-16T20:59:01+00:00",
-   "summary": "OpenAI said internal models hacked two more websites, bypassed company-imposed browsing restrictions, and used exposed credentials to draw cryptocurrency from a wallet it couldn’t otherwise access, in the latest installment of disclosures of its agents performing unethical and likely illegal acts. The company on…",
+   "summary": "OpenAI said internal models hacked two more websites, bypassed company-imposed browsing restrictions, and used exposed credentials to draw cryptocurrency from a wallet it couldn’t otherwise access, in the latest installment of disclosures of the unethical and likely illegal acts its agents are performing. The company…",
    "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/ai-agents-1152x648.jpg",
    "cves": [],
    "first_seen": "2026-10-19T10:28:22.123062+00:00",
@@ -95,7 +106,14 @@
     "CVE-2026-108398",
     "CVE-2026-96951"
    ],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00"
+   "first_seen": "2026-10-19T10:28:22.123062+00:00",
+   "instructions": [
+    "Why did Microsoft need to patch more than 1,400 security flaws, and what steps should organizations and individual users take to apply updates and reduce cybersecurity risks?",
+    "“Security leaders should focus on exploitable risk, and ask whether their teams have the clarity, capacity and support to act,” Reguly said.",
+    "What HAS changed is the potential for the update to break things since more code is being modified with each update.",
+    "Should we call it a vulnerability if no attacker has any interest in it?"
+   ],
+   "instructions_checked": true
   },
   {
    "id": "78394b2e6b36",
@@ -108,7 +126,9 @@
    "summary": "The United Kingdom has issued economic sanctions against Cryptomus, a chameleonic cryptocurrency platform that experts say serves as a major conduit for payments related to ransomware, narcotics, darknet markets, fraud and cybercrime services that are helping Russia circumvent existing financial restrictions…",
    "image": "https://krebsonsecurity.com/wp-content/uploads/2026/10/heleketsupportbot.png",
    "cves": [],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00"
+   "first_seen": "2026-10-19T10:28:22.123062+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "113ed8d030c8",
@@ -664,7 +684,12 @@
     "CVE-2026-105133",
     "CVE-2026-105134"
    ],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00"
+   "first_seen": "2026-10-19T10:28:22.123062+00:00",
+   "instructions": [
+    "Cybersecurity and Infrastructure Security Agency (CISA) to add them to the Known Exploited Vulnerabilities ( KEV ) catalog, requiring federal agencies to apply the patches by October 17, 2026.",
+    "In an update, Huntress said it has \"independently verified that the AhsayCBS 10.3.4.45 hotfix mitigates the initial entry point of this attack chain, which was still susceptible on previous v10 versions.\""
+   ],
+   "instructions_checked": true
   },
   {
    "id": "61ac6bfaa7c9",
@@ -779,7 +804,14 @@
    "summary": "Attackers are exploiting a critical flaw in Cisco Secure Email Gateway that lets a sender with no login write files to the appliance's operating system, Cisco said in an advisory on Wednesday. The attacker sends an email with a crafted attachment through the gateway and, if it succeeds, could then run commands as…",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhh__fSqm3p4u0HNpmeikU6Mo4abprP417Zb3pPW3-6IGrTHwqkbz1CqiuqxL2D0O1PH8J4Ho3_ZpNdJ5VFluIj_KHX6qT0WqZYfHQzyu0cVzGee9EmAZ9pNzsZJZx40UxuKjuz9eNHvuzlMANKOkDr6aRdKWxs8SpJqSi6vDBQTP5ZFgpgqn3Yj2TYNJU/s1600/cisco-0day.jpg",
    "cves": [],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00"
+   "first_seen": "2026-10-19T10:28:22.123062+00:00",
+   "instructions": [
+    "The File Reputation service, part of the Advanced Malware Protection (AMP) feature that handles attachments, must be enabled and assigned to a mail policy, and the Content Scanner Tools version must be earlier than 25.3.0.5525.",
+    "Attackers are exploiting a critical flaw in Cisco Secure Email Gateway that lets a sender with no login write files to the appliance's operating system, Cisco said in an advisory on Wednesday.",
+    "It also arrives as a Content Scanner Tools update, version 25.3.0.5525 or later, which installs without a software upgrade or a restart.",
+    "The advisory does not say how many devices were attacked, who is behind the attacks, or whether the attackers obtained root on any of them."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "cdc576e64c59",
@@ -945,7 +977,9 @@
    "summary": "The credential-theft campaign known as GhostAction has ramped up, targeting more than 30,000 repositories across 3,000 users and organizations. The spike, according to GitGuardian, was observed on October 8 and 9, 2026. \"This resulted from compromising the GitHub accounts of about 1,900 users. It attempted to extract…",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiddFchlm_nV3vywI0BM2-8IaZb-wHXwE8DplGqZYkRmcYkeXiSLfVmnVAU-jM4yikWW7SWokanh_S4hq88cVHjAnaWDGkl3VVAtPdv9SHWp0MNb0CIOAA-I73EuwwUSE-wNMnXEzbIdDYorJn2hIuBZQ5Jh_5I2IntiXuUYZz3sKax-wfRoaxy_pD9kGx0/s1600/ghost-git.jpg",
    "cves": [],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00"
+   "first_seen": "2026-10-19T10:28:22.123062+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "639d0d6e00a7",
@@ -958,7 +992,14 @@
    "summary": "Attackers exploited a flaw in an optional Nextcloud app, Collabora Online - Built-in CODE Server, to plant web shells on Nextcloud servers. Three administrators reported the issue on GitHub, with the first logged attack on September 10. A web shell is a small file that executes any command an attacker sends via a web…",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkZLcjmZtzt6NpWa8x4Wz7EdcOQEW6xYv6DA_mBnwy1ctZZeRAyeSYLES-H_mkr1QOBv72WNuGKwKQ-NN179Rw8BRTcYO38sYwxcbDkg1ISW_qWrCRJ9JfUXh3102OmwrF0HQq6dbSc58VXACXoi_EoI8ysPuSlzB_nBcHuFl9r3QakOsGG9GUm6UVOU8/s1600/nextcloud.jpg",
    "cves": [],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00"
+   "first_seen": "2026-10-19T10:28:22.123062+00:00",
+   "instructions": [
+    "Collabora fixed it in version 26.4.303 on September 11 and on October 14 published an advisory with the identifier CVE-2026-110447 , warning that turning off the app does not help: it must be updated or removed.",
+    "\"It is not sufficient to disable the app to avoid the problem; it must be upgraded to >= 26.4.303 or removed,\" Collabora said in the advisory.",
+    "Version 26.4.402, released September 24, rewrote the start command to pass each option as a separate argument, but administrators report that it fails to start or fails to open documents on some setups and have gone back to 26.4.303, the version the advisory names as the fix.",
+    "The repository's commit record shows the change was written on August 20 by Caolán McNamara, who also published the advisory, under the title \"tidy up how the coolwsd launch command is built.\" It was not in version 26.4.302, released on August 31, and was committed on September 9."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "b3dabcb4d0c0",
@@ -1011,7 +1052,9 @@
    "summary": "The Indian government has directed telecom service providers (TSPs) in the country to mandatorily display callers' registered names along with their numbers for incoming calls starting November 1, 2026, in an effort to help people identify calls from unknown numbers and tackle spam or fraudulent calls. To that end…",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyJOEj0MfpVvrP-qAXhuoM2BBSjZ6TwPYR-nMG_g-tBvu7Er2cMlvMoVkJOUP1qE2sleu3a21YjvdCQ9u80FSBTx7NNP3cZNfradprnGu-EnIURCxZK4sA0cXbROZpdW8CJxZcxRfhJyhbIXa_Au_sha3mh5pFe-7k5EIimZQlUGIs_mGGKHGKArej6il7/s1600/4g.jpg",
    "cves": [],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00"
+   "first_seen": "2026-10-19T10:28:22.123062+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "50367ee6ae87",
@@ -1026,7 +1069,13 @@
    "cves": [
     "CVE-2026-105740"
    ],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00"
+   "first_seen": "2026-10-19T10:28:22.123062+00:00",
+   "instructions": [
+    "\"Any authenticated Langflow user can achieve Remote Code Execution (RCE) on the server by adding an MCP server with the 'stdio' transport,\" reads an advisory released last month.",
+    "\"We recommend upgrading Langflow to a patched version, disabling auto-login, enforcing strong and unique passwords, and reviewing authentication logs and requests to /api/v2/mcp/servers/ for suspicious activity,\" Dewhurst said.",
+    "If immediate patching is not an option, it's advised to set LANGFLOW_AUTO_LOGIN=false, avoid exposing Langflow directly to untrusted networks, and grant Langflow accounts to trusted users."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "1fae9cde44bf",
@@ -1136,7 +1185,9 @@
    "cves": [
     "CVE-2026-0322"
    ],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00"
+   "first_seen": "2026-10-19T10:28:22.123062+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "2f67e7ff74fc",
@@ -1251,7 +1302,12 @@
    "summary": "AI is already part of digital forensics and incident response work, with or without a policy in place to govern it. The issue is that these tools are growing more confident in their own output faster than practitioners are developing reliable ways to verify it. Without governance models and validation standards in…",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoMcD8RJr4YbArE7ir74w0wFobrcZI94oJ41w_VwSIFPeQMqG4Ofa6xgtcUqD9op38axL3iAMYu-Y0zv0CEc7LrZAmj7lWLdzZ29ZbL5TD6Up2nGRqJkHGoUF6Hs_QA-A8TVz8f1dfuCcnB4kvzzYrZOu1JqVUE2s2JEkP4E0WjvKptVmvsbyfl4uBwas/s1600/sans-ai.jpg",
    "cves": [],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00"
+   "first_seen": "2026-10-19T10:28:22.123062+00:00",
+   "instructions": [
+    "If a team built and validated the AI making containment or triage recommendations, then a human in the loop, monitoring and intervening rather than approving every step, is workable.",
+    "Forensic examiners operate under the opposite pressure, since every source file requires validation, which is why many expect AI to add work rather than remove it."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "7e8ace9d42e7",
@@ -1648,7 +1704,14 @@
    "summary": "Over the past year, Microsoft uncovered a Chinese-language cybercriminal ecosystem, an interconnected network of phishing kit operators, developers, and an illicit marketplace selling tools and infrastructure for large-scale phishing, enabling cybercriminal operations worldwide. Threat actors purchased and used these…",
    "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/10/Fig1-heat-map-1024x495.webp",
    "cves": [],
-   "first_seen": "2026-10-19T12:07:37.633241+00:00"
+   "first_seen": "2026-10-19T12:07:37.633241+00:00",
+   "instructions": [
+    "Users should verify with the purported sender of the message or email, even when the task involves signing in to a known, secure account not provided by the link or calling the purported organization or company directly.",
+    "Sign-in prompts should clearly identify the application being authenticated to.",
+    "Review our recommended settings for Exchange Online Protection and Microsoft Defender for Office 365 to ensure your organization has established essential defenses and knows how to monitor and respond to threat activity.",
+    "Configure the Microsoft Defender for Office 365 Safe Links policy to apply to internal recipients."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "c094ac3382c9",
