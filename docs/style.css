@@ -121,6 +121,15 @@ figcaption{font-size:.8rem;color:var(--muted);margin-top:8px}
 .cve-table th{font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700;background:var(--surface-2);white-space:nowrap}
 .cve-table tr:last-child td{border-bottom:0}
 .cve-table td a{color:var(--ink);text-decoration:none}
+.cve-table td a.cve-id{text-decoration:underline;font-weight:650}
+.cve-title{font-weight:650;margin-bottom:4px}
+.cve-blurb{margin:0}
+.cve-legend ul{margin:8px 0 8px 18px}
+.cve-legend li{margin:4px 0}
+.cve-counts{margin:14px 0 10px}
+.badge.KEV{color:var(--crit)}
+.badge.Exploited{color:var(--high)}
+.badge.None{color:var(--muted)}
 .cve-table td a:hover{text-decoration:underline}
 .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.85rem;white-space:nowrap}
 .todo-list{display:grid;gap:14px}
