@@ -793,6 +793,7 @@ def _layout(cfg: dict, title: str, desc: str, body: str, base: str, image: str |
     links.append(f'<a href="{base}briefings/index.html">Briefings</a>')
     links.append(f'<a href="{base}patch-tuesday/index.html">Patch Tuesday</a>')
     links.insert(0, f'<a href="{base}today/index.html">Today</a>')
+    links.insert(1, f'<a href="{base}saved/index.html">Saved</a>')
     nav = "".join(links)
     return f"""<!doctype html>
 <html lang="en">
@@ -822,17 +823,26 @@ def _layout(cfg: dict, title: str, desc: str, body: str, base: str, image: str |
 """
 
 
+def search_text(s: dict) -> str:
+    return " ".join([s["title"], s["summary"], " ".join(s.get("vendors", [])), CATEGORIES[s["category"]][0]]).lower()
+
+
+def _save_button(s: dict) -> str:
+    return f'<button type="button" class="save" data-save="{esc(s["id"])}" aria-pressed="false">Save</button>'
+
+
 def _card(s: dict) -> str:
     img = s["image"] or fallback_cover(s)
     names = ", ".join(dict.fromkeys(x["name"] for x in s["sources"]))
     prio = esc(s["priority"])
-    return f"""<article class="card prio-{prio}" data-tags="{esc(' '.join(s['tags']))}">
+    return f"""<article class="card prio-{prio}" data-tags="{esc(' '.join(s['tags']))}" data-search="{esc(search_text(s))}">
 <a class="card-media" href="story/{esc(s['id'])}.html" tabindex="-1" aria-hidden="true"><img src="{esc(img)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360"><span class="badge {prio}">{prio}</span></a>
 <div class="card-body">
 <p class="kicker"><span class="cat">{esc(CATEGORIES[s['category']][0])}</span></p>
 <h3><a href="story/{esc(s['id'])}.html">{esc(s['title'])}</a></h3>
 <p class="summary">{esc(_short(s['summary'], 170))}</p>
 <p class="meta">{esc(names)} &middot; {esc(fmt_date(s['published']))}</p>
+{_save_button(s)}
 </div>
 </article>"""
 
@@ -841,14 +851,14 @@ def _hero(s: dict) -> str:
     img = s["image"] or fallback_cover(s)
     names = ", ".join(dict.fromkeys(x["name"] for x in s["sources"]))
     prio = esc(s["priority"])
-    return f"""<section class="hero" aria-labelledby="hero-title" data-tags="{esc(' '.join(s['tags']))}">
+    return f"""<section class="hero" aria-labelledby="hero-title" data-tags="{esc(' '.join(s['tags']))}" data-search="{esc(search_text(s))}">
 <a class="hero-media" href="story/{esc(s['id'])}.html" tabindex="-1" aria-hidden="true"><img src="{esc(img)}" alt="" loading="eager" referrerpolicy="no-referrer" width="640" height="360"></a>
 <div class="hero-body">
 <p class="kicker"><span class="badge {prio}">{prio}</span><span class="cat">{esc(CATEGORIES[s['category']][0])}</span></p>
 <h2 id="hero-title"><a href="story/{esc(s['id'])}.html">{esc(s['title'])}</a></h2>
 <p class="summary">{esc(_short(s['summary'], 240))}</p>
 <p class="meta">{esc(names)} &middot; {esc(fmt_date(s['published']))}</p>
-<a class="btn" href="story/{esc(s['id'])}.html">Read the brief &rarr;</a>
+<div class="actions"><a class="btn" href="story/{esc(s['id'])}.html">Read the brief &rarr;</a>{_save_button(s)}</div>
 </div>
 </section>"""
 
@@ -864,6 +874,14 @@ EXTRA_CSS = """
 .visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .analysis-links{margin:14px 0 0}
 [hidden]{display:none!important}
+.toolbar{margin:0 0 12px}
+.search{width:100%;font:inherit;font-size:.95rem;padding:11px 14px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
+.search:focus{border-color:var(--accent)}
+.actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:4px}
+.save{align-self:flex-start;font:inherit;font-size:.8rem;font-weight:600;background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:999px;padding:5px 12px;cursor:pointer}
+.save:hover{color:var(--ink);border-color:var(--ink)}
+.save[aria-pressed="true"]{color:var(--accent);border-color:var(--accent)}
+.card-body .save{margin-top:4px}
 .todo-list{display:grid;gap:14px}
 .todo{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--std);border-radius:var(--r);padding:18px 20px}
 .todo.kind-patch{border-left-color:var(--crit)}
@@ -962,6 +980,9 @@ def legal_pages(site_cfg: dict, cfg: dict) -> dict[str, str]:
         "Dabei erhalten diese Server Ihre IP-Adresse.</p>"
         "<h2>Cookies und Analyse</h2>"
         "<p>Diese Seite setzt keine Tracking-Cookies und verwendet kein Web-Analyse-Werkzeug.</p>"
+        "<h2>Merkliste</h2>"
+        "<p>Gespeicherte Meldungen (Merkliste) werden nur lokal in Ihrem Browser gespeichert (Local Storage). "
+        "Sie werden nicht an uns oder einen Dienst übertragen. Das Löschen der Browserdaten entfernt die Liste.</p>"
         "<h2>Newsletter</h2>"
         "<p>Wenn Sie den Newsletter abonnieren, verarbeiten wir Ihre E-Mail-Adresse, um Ihnen den Newsletter zu senden. "
         "Die Anmeldung läuft über einen externen Newsletter-Anbieter, dessen Datenschutzhinweise ebenfalls gelten. "
@@ -987,29 +1008,52 @@ def filter_bar(stories: list[dict]) -> str:
         n = len(stories) if key == "all" else sum(1 for s in stories if key in s["tags"])
         pressed = "true" if key == "all" else "false"
         buttons.append(f'<button type="button" data-filter="{key}" aria-pressed="{pressed}">{esc(label)} <span class="count">{n}</span></button>')
-    return ('<div class="filters" id="filters" role="group" aria-label="Filter stories by topic">'
+    search = ('<div class="toolbar"><label class="visually-hidden" for="story-search">Search stories</label>'
+              '<input id="story-search" class="search" type="search" placeholder="Search title, vendor or topic" autocomplete="off"></div>')
+    return (search + '<div class="filters" id="filters" role="group" aria-label="Filter stories by topic">'
             + "".join(buttons) + '</div><p id="filter-empty" class="empty" hidden>No stories match this filter in the current window.</p>')
 
 
 FILTER_JS = """(function(){
-var bar=document.getElementById('filters');if(!bar)return;
-var buttons=bar.querySelectorAll('button[data-filter]');
+var bar=document.getElementById('filters');
+var search=document.getElementById('story-search');
+var buttons=bar?bar.querySelectorAll('button[data-filter]'):[];
 var items=document.querySelectorAll('[data-tags]');
 var sections=document.querySelectorAll('[data-section]');
 var empty=document.getElementById('filter-empty');
-function apply(f){
-  buttons.forEach(function(b){b.setAttribute('aria-pressed',String(b.getAttribute('data-filter')===f));});
+var current='all';
+function apply(){
+  var q=(search?search.value:'').trim().toLowerCase();
   var shown=0;
   items.forEach(function(el){
     var tags=' '+(el.getAttribute('data-tags')||'')+' ';
-    var ok=(f==='all')||tags.indexOf(' '+f+' ')>-1;
+    var text=el.getAttribute('data-search')||'';
+    var ok=(current==='all'||tags.indexOf(' '+current+' ')>-1)&&(!q||text.indexOf(q)>-1);
     el.hidden=!ok; if(ok){shown++;}
   });
   sections.forEach(function(sec){sec.hidden=!sec.querySelector('[data-tags]:not([hidden])');});
   if(empty){empty.hidden=shown>0;}
 }
-buttons.forEach(function(b){b.addEventListener('click',function(){apply(b.getAttribute('data-filter'));});});
-apply('all');
+buttons.forEach(function(b){b.addEventListener('click',function(){
+  current=b.getAttribute('data-filter');
+  buttons.forEach(function(x){x.setAttribute('aria-pressed',String(x===b));});
+  apply();
+});});
+if(search){search.addEventListener('input',apply);}
+var KEY='sb-saved';
+function readSaved(){try{return JSON.parse(localStorage.getItem(KEY)||'[]');}catch(e){return [];}}
+function writeSaved(a){try{localStorage.setItem(KEY,JSON.stringify(a));}catch(e){}}
+var saves=document.querySelectorAll('button[data-save]');
+function paint(){var saved=readSaved();saves.forEach(function(b){
+  var on=saved.indexOf(b.getAttribute('data-save'))>-1;
+  b.setAttribute('aria-pressed',String(on));b.textContent=on?'Saved':'Save';});}
+saves.forEach(function(b){b.addEventListener('click',function(){
+  var id=b.getAttribute('data-save');var a=readSaved();var i=a.indexOf(id);
+  if(i>-1){a.splice(i,1);}else{a.push(id);}
+  writeSaved(a);paint();
+});});
+paint();
+apply();
 })();"""
 
 
@@ -1092,6 +1136,65 @@ def _og_tags(cfg: dict, title: str, desc: str, image: str | None) -> str:
     else:
         tags.append('<meta name="twitter:card" content="summary">')
     return "\n".join(tags)
+
+
+SAVED_JS = """(function(){
+var KEY='sb-saved';
+var list=document.getElementById('saved-list');
+var empty=document.getElementById('saved-empty');
+var note=document.getElementById('saved-note');
+var saved=[];
+try{saved=JSON.parse(localStorage.getItem(KEY)||'[]');}catch(e){saved=[];}
+function save(a){try{localStorage.setItem(KEY,JSON.stringify(a));}catch(e){}}
+function el(tag,cls,text){var n=document.createElement(tag);if(cls){n.className=cls;}if(text!==undefined){n.textContent=text;}return n;}
+fetch('../stories.json',{cache:'no-store'}).then(function(r){return r.json();}).then(function(data){
+  var byId={};(data.stories||[]).forEach(function(s){byId[s.id]=s;});
+  var found=saved.filter(function(id){return !!byId[id];});
+  var missing=saved.length-found.length;
+  if(!found.length){empty.hidden=false;}
+  found.forEach(function(id){
+    var s=byId[id];
+    var card=el('article','card prio-'+s.priority);
+    var body=el('div','card-body');
+    var kick=el('p','kicker');kick.appendChild(el('span','badge '+s.priority,s.priority));kick.appendChild(el('span','cat',s.category));
+    var h=el('h3');var a=el('a','',s.title);a.href='../'+s.url;h.appendChild(a);
+    var sum=el('p','summary',s.summary);
+    var meta=el('p','meta',s.sources+' \u00b7 '+s.date);
+    var rm=el('button','save','Remove');rm.type='button';rm.setAttribute('aria-pressed','true');
+    rm.addEventListener('click',function(){
+      saved=saved.filter(function(x){return x!==id;});save(saved);card.remove();
+      if(!list.children.length){empty.hidden=false;}
+    });
+    body.appendChild(kick);body.appendChild(h);body.appendChild(sum);body.appendChild(meta);body.appendChild(rm);
+    card.appendChild(body);list.appendChild(card);
+  });
+  if(missing>0){note.hidden=false;note.textContent=missing+(missing===1?' saved story is':' saved stories are')+' no longer in the current window, so they are not shown. Saved items are kept in this browser only.';}
+}).catch(function(){
+  note.hidden=false;note.textContent='The story index could not be loaded. Please try again later.';
+});
+})();"""
+
+
+def saved_page(cfg: dict) -> str:
+    body = (
+        '<section class="intro"><h1>Saved stories</h1>'
+        '<p class="meta">Saved in this browser only. Nothing is sent to us. '
+        "Stories leave the current window after about a week, and then they are no longer listed here.</p></section>"
+        '<p id="saved-note" class="note" hidden></p>'
+        '<div class="grid" id="saved-list"></div>'
+        '<p id="saved-empty" class="empty" hidden>Nothing saved yet. Use <strong>Save</strong> on a story to keep it here.</p>'
+        f"<script>{SAVED_JS}</script>"
+    )
+    return _layout(cfg, "Saved stories", "Stories you saved in this browser.", body, "../")
+
+
+def stories_index(stories: list[dict]) -> str:
+    rows = [{
+        "id": s["id"], "title": s["title"], "summary": _short(s["summary"], 170), "priority": s["priority"],
+        "category": CATEGORIES[s["category"]][0], "date": fmt_date(s["published"]),
+        "sources": ", ".join(dict.fromkeys(x["name"] for x in s["sources"])), "url": f"story/{s['id']}.html",
+    } for s in stories]
+    return json.dumps({"stories": rows}, ensure_ascii=False, indent=1)
 
 
 def index_page(stories: list[dict], cfg: dict, now: datetime, status: dict,
@@ -1237,6 +1340,9 @@ def write_site(out: Path, stories: list[dict], cfg: dict, now: datetime, status:
     (out / "index.html").write_text(index_page(stories, cfg, now, status, articles, site_cfg), encoding="utf-8")
     (out / "today").mkdir(parents=True, exist_ok=True)
     (out / "today" / "index.html").write_text(today_page(stories, cfg, now), encoding="utf-8")
+    (out / "saved").mkdir(parents=True, exist_ok=True)
+    (out / "saved" / "index.html").write_text(saved_page(cfg), encoding="utf-8")
+    (out / "stories.json").write_text(stories_index(stories), encoding="utf-8")
     for s in stories:
         (out / "story" / f"{s['id']}.html").write_text(story_page(s, cfg), encoding="utf-8")
     for sec in SECTIONS:
@@ -1320,7 +1426,7 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
                      s["score"], s["image"], [x["url"] for x in s["sources"]]] for s in stories],
         "articles": [[a["section"], a["slug"], a["title"], a["date"], a["summary"], a["_md"]] for a in articles],
         "site": site_cfg,
-        "render": "5.4",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
+        "render": "5.5",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
     }, ensure_ascii=False, sort_keys=True)
     digest = hashlib.sha1(digest_src.encode("utf-8")).hexdigest()
     digest_file = data_file.parent / "digest.txt"
