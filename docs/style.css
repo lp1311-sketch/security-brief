@@ -97,14 +97,32 @@ figcaption{font-size:.8rem;color:var(--muted);margin-top:8px}
 .visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .analysis-links{margin:14px 0 0}
 [hidden]{display:none!important}
-.toolbar{margin:0 0 12px}
-.search{width:100%;font:inherit;font-size:.95rem;padding:11px 14px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
-.search:focus{border-color:var(--accent)}
+.toolbar{position:relative;margin:0 0 14px}
+.toolbar>svg{position:absolute;left:18px;top:50%;transform:translateY(-50%);color:var(--muted);pointer-events:none}
+.search{display:block;width:100%;height:52px;font:inherit;font-size:1rem;padding:0 20px 0 48px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);box-shadow:var(--shadow);transition:border-color .15s,box-shadow .15s}
+.search::placeholder{color:var(--muted);opacity:1}
+.search:hover{border-color:color-mix(in srgb,var(--accent) 45%,var(--line))}
+.search:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 4px color-mix(in srgb,var(--accent) 22%,transparent)}
+.search::-webkit-search-cancel-button{cursor:pointer}
 .actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:4px}
-.save{align-self:flex-start;font:inherit;font-size:.8rem;font-weight:600;background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:999px;padding:5px 12px;cursor:pointer}
-.save:hover{color:var(--ink);border-color:var(--ink)}
-.save[aria-pressed="true"]{color:var(--accent);border-color:var(--accent)}
-.card-body .save{margin-top:4px}
+.save{display:inline-flex;align-items:center;gap:7px;align-self:flex-start;font:inherit;font-size:.82rem;font-weight:600;line-height:1;background:var(--surface);border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:8px 14px 8px 12px;cursor:pointer;transition:background .15s,border-color .15s,color .15s}
+.save svg{flex:none}
+.save path{transition:fill .15s}
+.save:hover{border-color:var(--accent);color:var(--accent)}
+.save:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.save[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.save[aria-pressed="true"] path{fill:currentColor}
+.save.remove{color:var(--muted)}
+.save.remove:hover{color:var(--crit);border-color:var(--crit)}
+.card-body .save{margin-top:6px}
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
+.cve-table{width:100%;border-collapse:collapse;font-size:.9rem}
+.cve-table th,.cve-table td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+.cve-table th{font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700;background:var(--surface-2);white-space:nowrap}
+.cve-table tr:last-child td{border-bottom:0}
+.cve-table td a{color:var(--ink);text-decoration:none}
+.cve-table td a:hover{text-decoration:underline}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.85rem;white-space:nowrap}
 .todo-list{display:grid;gap:14px}
 .todo{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--std);border-radius:var(--r);padding:18px 20px}
 .todo.kind-patch{border-left-color:var(--crit)}
