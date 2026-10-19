@@ -1002,6 +1002,25 @@
    "instructions_checked": true
   },
   {
+   "id": "143bfdf19e2b",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "title": "Hackers Exploit Plex2Shell Flaws to Install Crypto Miners and Linux Proxy Backdoor",
+   "link": "https://thehackernews.com/2026/10/hackers-exploit-plex2shell-flaws-to.html",
+   "published": "2026-10-19T17:32:13+00:00",
+   "summary": "Threat actors have begun to exploit a chain of vulnerabilities in Plex Media Server to deploy cryptocurrency miners and reverse proxy software, a day after a proof-of-concept (PoC) went public. According to a researcher who goes by the online alias boredhackerblog, the exploitation activity involves chaining four…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjF_Xo8mH5AxIDYx4hFrS1_uhblD0IoGUTo6bioM38mwy-whZAbcq1aaGeH1iZrS8nmk5Ow25NfX67HRXKiWFfzLc8C1A2zs2n948DwyW_NSSkowFDnEzxUofGxhNV72vTEWkgPmbO6XJyDUPwBR-lzSekj5_m8tY3JHjozUXETGEBg6GrLZrekhilW9W_R/s1600/plex-hack.jpg",
+   "cves": [],
+   "first_seen": "2026-10-19T19:06:52.526154+00:00",
+   "instructions": [
+    "In light of active exploitation, users are advised to keep their Plex installations up-to-date for optimal protection.",
+    "The development comes more than a month after Plex urged users to update their instances to the latest version following the release of an update that addressed multiple unspecified security flaws.",
+    "The Hacker News has contacted Plex for comment and we will update the story if we hear back."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "b3dabcb4d0c0",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1465,6 +1484,27 @@
     "\"Any appliance that was reachable from the internet on a vulnerable version during the exploitation window should be treated as potentially compromised until it has been reviewed.\"",
     "BeyondTrust warned customers on Thursday to patch a critical flaw in its Remote Support (RS) that has been exploited in zero-day attacks since late August.",
     "This gave them access to every credential the appliance stored or brokered and the ability to modify files that survive reboot and configuration reset,\" Mandiant said ."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "06accfcb31a1",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "title": "Bullhorn takes staffing platform offline to contain cyberattack",
+   "link": "https://www.bleepingcomputer.com/news/security/bullhorn-takes-staffing-platform-offline-to-contain-cyberattack/",
+   "published": "2026-10-19T18:51:13+00:00",
+   "summary": "Staffing software company Bullhorn has disabled access to its platform to contain a cyberattack that caused a system-wide outage.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/19/bullhorn.jpg",
+   "cves": [],
+   "first_seen": "2026-10-19T19:06:52.526154+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Customers should check the company’s service status page for the latest updates.",
+    "We have temporarily disabled access to our systems in order to contain the activity while we investigate further,\" the company said in an update.",
+    "Also, the latest update mentions that all non-SSO users will be required to reset their passwords on their next login.",
+    "BleepingComputer has contacted Bullhorn to request more information about the attack, and we will update this post with their response when received."
    ],
    "instructions_checked": true
   },
