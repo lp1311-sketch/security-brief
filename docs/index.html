@@ -25,12 +25,13 @@ apply();});
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header"><div class="wrap">
 <a class="brand" href="index.html">Security Brief</a>
-<nav class="nav" aria-label="Categories"><a href="index.html#threats">Threats</a><a href="index.html#vulnerabilities">Vulnerabilities</a><a href="index.html#ai">AI</a><a href="index.html#cloud">Cloud &amp; Identity</a><a href="index.html#microsoft">Microsoft</a></nav>
+<nav class="nav" aria-label="Categories"><a href="index.html#threats">Threats</a><a href="index.html#vulnerabilities">Vulnerabilities</a><a href="index.html#ai">AI</a><a href="index.html#cloud">Cloud &amp; Identity</a><a href="index.html#microsoft">Microsoft</a><a href="briefings/index.html">Briefings</a><a href="patch-tuesday/index.html">Patch Tuesday</a></nav>
 <button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false">Dark mode</button>
 </div></header>
 <main id="main" class="wrap">
-<section class="intro"><h1>Security news, ranked</h1><p class="meta">Last content update: 19 Oct 2026, 11:13 UTC &middot; Feed status: 6 of 7 sources reachable &middot; Checked automatically, updated when new stories arrive.</p></section>
-<section class="hero" aria-labelledby="hero-title">
+<section class="intro"><h1>Security news, ranked</h1><p class="meta">Last content update: 19 Oct 2026, 11:30 UTC &middot; Feed status: 6 of 7 sources reachable &middot; Checked automatically, updated when new stories arrive.</p></section>
+<div class="filters" id="filters" role="group" aria-label="Filter stories by topic"><button type="button" data-filter="all" aria-pressed="true">All</button><button type="button" data-filter="critical" aria-pressed="false">Critical</button><button type="button" data-filter="exploited" aria-pressed="false">Actively exploited</button><button type="button" data-filter="patch-now" aria-pressed="false">Patch now</button><button type="button" data-filter="m365" aria-pressed="false">Microsoft 365</button><button type="button" data-filter="entra" aria-pressed="false">Entra ID</button><button type="button" data-filter="defender" aria-pressed="false">Defender</button><button type="button" data-filter="ai" aria-pressed="false">AI security</button></div><p id="filter-empty" class="empty" hidden>No stories match this filter in the current window.</p>
+<section class="section" aria-label="Top news" data-section><section class="hero" aria-labelledby="hero-title" data-tags="critical exploited patch-now">
 <a class="hero-media" href="story/1fd194e19c3d.html" tabindex="-1" aria-hidden="true"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEic5zD5GBvYxe93igsDOMdwS6eyfDORIWio42Z9UY0enK0XKWYcQlLB9RLx3iO_V1xm8vqBxMVZ_R8Lt-xxOumO5_RIFN3hgB-yZyGGlVMypRx5lm2GJq-1c9cbzfRcjrMAIfBI67L4QUI-MwjjQjKL1RcgPnzFdYuAF3k1y2Ev-ppSmiG8sdQ5dbJkbjKR/s1600/beyond.jpg" alt="" loading="eager" referrerpolicy="no-referrer" width="640" height="360"></a>
 <div class="hero-body">
 <p class="kicker"><span class="badge Critical">Critical</span>Vulnerabilities &amp; Exploited CVEs</p>
@@ -38,8 +39,8 @@ apply();});
 <p class="summary">The China-nexus cyber espionage group tracked as Armory Castle (previously UNC5221 or Warp Panda) exploited a newly disclosed security flaw in BeyondTrust Remote Support (formerly Bomgar) as a zero-day in late August 2026. The vulnerability, tracked as…</p>
 <p class="meta">The Hacker News &middot; 16 Oct 2026, 06:55 UTC</p>
 </div>
-</section>
-<section class="section" aria-label="More top stories"><h2>Also in focus</h2><div class="grid"><article class="card">
+</section></section>
+<section class="section" aria-label="More top stories" data-section><h2>Also in focus</h2><div class="grid"><article class="card" data-tags="critical exploited patch-now">
 <img src="https://krebsonsecurity.com/wp-content/uploads/2020/08/windowsec.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
 <div class="card-body">
 <p class="kicker"><span class="badge Critical">Critical</span>Vulnerabilities &amp; Exploited CVEs</p>
@@ -47,7 +48,7 @@ apply();});
 <p class="summary">Microsoft today issued updates to fix more than 1,400 security vulnerabilities in its Windows operating systems and other software. Today’s epic…</p>
 <p class="meta">KrebsOnSecurity &middot; 13 Oct 2026, 23:24 UTC</p>
 </div>
-</article><article class="card">
+</article><article class="card" data-tags="m365">
 <img src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22360%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20fill%3D%22%230b1a33%22/%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22560%22%20height%3D%22280%22%20fill%3D%22none%22%20stroke%3D%22%233b82f6%22%20stroke-width%3D%222%22/%3E%3Ctext%20x%3D%2264%22%20y%3D%22186%22%20fill%3D%22%23ffffff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2230%22%20font-weight%3D%22700%22%3ERansomware%2C%20Malware%20%26amp%3B%20Breaches%3C/text%3E%3C/svg%3E" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
 <div class="card-body">
 <p class="kicker"><span class="badge High">High</span>Ransomware, Malware &amp; Breaches</p>
@@ -55,7 +56,7 @@ apply();});
 <p class="summary">ConnectWise has shut down customer access to its Cloud Backup service (formerly SkyKick Cloud Backup) after hackers accessed application identities…</p>
 <p class="meta">BleepingComputer &middot; 17 Oct 2026, 15:18 UTC</p>
 </div>
-</article><article class="card">
+</article><article class="card" data-tags="exploited">
 <img src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22360%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20fill%3D%22%230b1a33%22/%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22560%22%20height%3D%22280%22%20fill%3D%22none%22%20stroke%3D%22%233b82f6%22%20stroke-width%3D%222%22/%3E%3Ctext%20x%3D%2264%22%20y%3D%22186%22%20fill%3D%22%23ffffff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2230%22%20font-weight%3D%22700%22%3EVulnerabilities%20%26amp%3B%20Exploited%20CVEs%3C/text%3E%3C/svg%3E" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
 <div class="card-body">
 <p class="kicker"><span class="badge High">High</span>Vulnerabilities &amp; Exploited CVEs</p>
@@ -64,31 +65,31 @@ apply();});
 <p class="meta">BleepingComputer &middot; 16 Oct 2026, 06:18 UTC</p>
 </div>
 </article></div></section>
-<section class="section" id="threats"><h2>Ransomware, Malware &amp; Breaches</h2><div class="grid"><article class="card">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzRSuvywT7bfHRl45krYywOIqL__Cw1hXchChbx5ylDNZaHxVDEf8O1pmzajCnItG1rwxKq0k2GHdMeDW_DvQP8Wk5MEiwlE2dZXn9grvDpAOpViWonNWsFMkTXoKpcFj8lk0UuMrGx-xVHRU_KufidsDcY7e0RUSG62aapDC9y9opt8V_rmgxkCG9v6A/s1600/opencode.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
+<section class="section" id="threats" data-section><h2>Ransomware, Malware &amp; Breaches</h2><div class="grid"><article class="card" data-tags="">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkZLcjmZtzt6NpWa8x4Wz7EdcOQEW6xYv6DA_mBnwy1ctZZeRAyeSYLES-H_mkr1QOBv72WNuGKwKQ-NN179Rw8BRTcYO38sYwxcbDkg1ISW_qWrCRJ9JfUXh3102OmwrF0HQq6dbSc58VXACXoi_EoI8ysPuSlzB_nBcHuFl9r3QakOsGG9GUm6UVOU8/s1600/nextcloud.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
 <div class="card-body">
 <p class="kicker"><span class="badge Standard">Standard</span>Ransomware, Malware &amp; Breaches</p>
-<h3><a href="story/1de1c48ce23b.html">OpenCode Console Breach May Have Exposed OpenAI, Anthropic, and Google API Keys</a></h3>
-<p class="summary">An intruder reached a legacy system at OpenCode on the night of October 16 and may have exposed the third-party AI provider keys that users had saved…</p>
-<p class="meta">The Hacker News &middot; 19 Oct 2026, 06:07 UTC</p>
+<h3><a href="story/639d0d6e00a7.html">Hackers Backdoor Nextcloud Servers Through Critical Flaw in Collabora’s Built-in CODE App</a></h3>
+<p class="summary">Attackers exploited a flaw in an optional Nextcloud app, Collabora Online - Built-in CODE Server, to plant web shells on Nextcloud servers. Three…</p>
+<p class="meta">The Hacker News &middot; 14 Oct 2026, 17:38 UTC</p>
 </div>
-</article><article class="card">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMvdc6m999SfUEEWC89wHnBiUX9WAMCSdWtbFP_lrH4DuREHfOJL7G29LkM4uAvittg3XsHxnq6dq_VEX1zB_jCGi5RJDbQZlrq37gHSCXpRrn11FEN-hezQn0Dt4Xcw4DcanklKW_8iLEnQN6JpzkQ7JHBOS1_dMzDAs2h_jJcWDqOGjbkMoeabOCkSFK/s1600/f.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
-<div class="card-body">
-<p class="kicker"><span class="badge Critical">Critical</span>Ransomware, Malware &amp; Breaches</p>
-<h3><a href="story/5fc8c6dd8c54.html">PEERSTITCH Malware Deployed via FortiOS Flaw Bypasses Checks on Tagged VPN Sessions</a></h3>
-<p class="summary">A suspected advanced threat actor has been observed exploiting a security flaw in Fortinet FortiOS to deliver a previously unreported memory-resident…</p>
-<p class="meta">The Hacker News &middot; 16 Oct 2026, 04:59 UTC</p>
-</div>
-</article><article class="card">
-<img src="https://cdn.arstechnica.net/wp-content/uploads/2026/10/ai-agents-1152x648.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
+</article><article class="card" data-tags="">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8fNb_yEvP6C_CENfQMUx3EDGofY1ejEHusnumTjCLnX3s8pevEbl_cgrtFHhzeEUhyphenhyphenyKe_X41OzQOGL5zlXeLLBnj_ZrLqH1IUag1QWm4QS9V2hgc5ucEzEZKjhstvtde8CFs8anPSZv9w3op67F8Q_MHVC_demESnH8lpAYLLpIRizCyvF5gsi5PDKzm/s1600/npm-dll.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
 <div class="card-body">
 <p class="kicker"><span class="badge Standard">Standard</span>Ransomware, Malware &amp; Breaches</p>
-<h3><a href="story/b140e0bf691c.html">OpenAI models hacked a crypto wallet and breached more websites</a></h3>
-<p class="summary">OpenAI said internal models hacked two more websites, bypassed company-imposed browsing restrictions, and used exposed credentials to draw…</p>
-<p class="meta">Ars Technica Security &middot; 16 Oct 2026, 20:59 UTC</p>
+<h3><a href="story/1fae9cde44bf.html">MALFEX npm Package &#x27;imgdecode&#x27; Hides Shellcode Loader in Windows Native Addon</a></h3>
+<p class="summary">Cybersecurity researchers have discovered a malicious npm package that&#x27;s part of a recently disclosed software supply chain attack campaign dubbed…</p>
+<p class="meta">The Hacker News &middot; 17 Oct 2026, 11:11 UTC</p>
 </div>
-</article><article class="card">
+</article><article class="card" data-tags="">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhuPumyjeBRpQZo5_3mvqZ2_kXuPiOK02cH-ARofYrny0mQ2-rv55w7yBxMTBe3ymCW7c77quZ4xlkdDG9FcEhBYFr7GWmbyPE_1K1xqU0mvT-h51Z8hLg-LnWl32MeOy-aumsGO9-j8VSOSOfVUDB2k1vWOpEdyGEWV9ipF4kf3HVP1Au2ClbkYtAJrc/s1600/backup-hacked.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
+<div class="card-body">
+<p class="kicker"><span class="badge Standard">Standard</span>Ransomware, Malware &amp; Breaches</p>
+<h3><a href="story/2f6312b7767d.html">Attackers Tampered with AOMEI Backupper&#x27;s Update Servers for Minutes to Deliver a Backdoor</a></h3>
+<p class="summary">Attackers repeatedly changed the files that AOMEI Backupper fetches from the vendor&#x27;s own update servers, in windows of five to ten minutes at a time…</p>
+<p class="meta">The Hacker News &middot; 16 Oct 2026, 16:43 UTC</p>
+</div>
+</article><article class="card" data-tags="">
 <img src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22360%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20fill%3D%22%230b1a33%22/%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22560%22%20height%3D%22280%22%20fill%3D%22none%22%20stroke%3D%22%233b82f6%22%20stroke-width%3D%222%22/%3E%3Ctext%20x%3D%2264%22%20y%3D%22186%22%20fill%3D%22%23ffffff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2230%22%20font-weight%3D%22700%22%3ERansomware%2C%20Malware%20%26amp%3B%20Breaches%3C/text%3E%3C/svg%3E" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
 <div class="card-body">
 <p class="kicker"><span class="badge Standard">Standard</span>Ransomware, Malware &amp; Breaches</p>
@@ -96,24 +97,32 @@ apply();});
 <p class="summary">Burger King Japan, the Japanese subsidiary of global fast-food giant Burger King, disclosed a major data breach after attackers accessed a server…</p>
 <p class="meta">BleepingComputer &middot; 16 Oct 2026, 12:01 UTC</p>
 </div>
-</article><article class="card">
+</article><article class="card" data-tags="">
 <img src="https://krebsonsecurity.com/wp-content/uploads/2026/10/heleketsupportbot.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
 <div class="card-body">
 <p class="kicker"><span class="badge Standard">Standard</span>Ransomware, Malware &amp; Breaches</p>
 <h3><a href="story/78394b2e6b36.html">U.K. Sanctions Cryptomus for RU Money Laundering</a></h3>
-<p class="summary">The United Kingdom has issued economic sanctions against Cryptomus , a chameleonic cryptocurrency platform that experts say serves as a major conduit…</p>
+<p class="summary">The United Kingdom has issued economic sanctions against Cryptomus, a chameleonic cryptocurrency platform that experts say serves as a major conduit…</p>
 <p class="meta">KrebsOnSecurity &middot; 14 Oct 2026, 14:22 UTC</p>
 </div>
-</article><article class="card">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvF5TcwT7nwh6xcCiXS3I0m6qmvF6EorwitA-7ETGlXzpc89JG-rPZye0FkJfFwunfKHXMTkGyg_pBRkBdJv_qaGX32cUdiqoTAA-sjGmsSlKJsL5LUFpyZLiho955h3EtKUCWvtnHyIJgzG1INTIwkqKsCmv3-vsxGXQq8QH-ue0Vl358XyE33wUhxWs/s1600/fake.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
+</article><article class="card" data-tags="">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgp2enQeK-5xZuEo_rLQje9W_odynVLALJCEvTyaMSolIfwVonZGMceQWA8yq9xPMD-C_RkIp-V03EqEBVTM5yMq9IHWRRfSHxWWDS6kCJVcVAsmlFXt5wD2pK7Bk-A6iBIDFS2o811n8e48B1Psni_qvrkJ0HMXtJlhaLwx7jkxEG-e0XDgtcAMUMLiNFV/s1600/hot.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
 <div class="card-body">
 <p class="kicker"><span class="badge Standard">Standard</span>Ransomware, Malware &amp; Breaches</p>
-<h3><a href="story/999e9923be39.html">Fake AI Attacks Spread Across US Companies: How MSSPs Can Stop Incidents Early</a></h3>
-<p class="summary">Attackers are impersonating popular AI products to distribute malware, steal browser sessions, and compromise business accounts. ANY.RUN linked 1,258…</p>
-<p class="meta">The Hacker News &middot; 15 Oct 2026, 11:46 UTC</p>
+<h3><a href="story/ba5ef20dc7e9.html">Help TDS Linked to Hotejka as 20,000+ Cloudflare Pages Domains Host Tech Support Scams</a></h3>
+<p class="summary">A long-running Traffic Distribution System (TDS) known as Help TDS to a Russian-language affiliate program called Hotejka, which appears to be a…</p>
+<p class="meta">The Hacker News &middot; 15 Oct 2026, 14:11 UTC</p>
 </div>
 </article></div></section>
-<section class="section" id="vulnerabilities"><h2>Vulnerabilities &amp; Exploited CVEs</h2><div class="grid"><article class="card">
+<section class="section" id="vulnerabilities" data-section><h2>Vulnerabilities &amp; Exploited CVEs</h2><div class="grid"><article class="card" data-tags="critical exploited patch-now">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMvdc6m999SfUEEWC89wHnBiUX9WAMCSdWtbFP_lrH4DuREHfOJL7G29LkM4uAvittg3XsHxnq6dq_VEX1zB_jCGi5RJDbQZlrq37gHSCXpRrn11FEN-hezQn0Dt4Xcw4DcanklKW_8iLEnQN6JpzkQ7JHBOS1_dMzDAs2h_jJcWDqOGjbkMoeabOCkSFK/s1600/f.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
+<div class="card-body">
+<p class="kicker"><span class="badge Critical">Critical</span>Vulnerabilities &amp; Exploited CVEs</p>
+<h3><a href="story/5fc8c6dd8c54.html">PEERSTITCH Malware Deployed via FortiOS Flaw Bypasses Checks on Tagged VPN Sessions</a></h3>
+<p class="summary">A suspected advanced threat actor has been observed exploiting a security flaw in Fortinet FortiOS to deliver a previously unreported memory-resident…</p>
+<p class="meta">The Hacker News &middot; 16 Oct 2026, 04:59 UTC</p>
+</div>
+</article><article class="card" data-tags="critical exploited patch-now">
 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4G5JAIF-hCnKf9QyWLzWIWxTrUIjqshujDHf0-_9m84O9f4S0Z-IQ4Jg-T11Ph_rwZvzsFU8Z-pI3uRsnvPSE-FK_VtrUx0pNZgHKf3PuMJCQmwopiE5hyMRSObeV7_VSrF7WC_iiG9T8wMNivOOBC12F7bLK8WI-MNjCffolAJnnhk-X-v1ecxwYtrQz/s1600/palo.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
 <div class="card-body">
 <p class="kicker"><span class="badge Critical">Critical</span>Vulnerabilities &amp; Exploited CVEs</p>
@@ -121,7 +130,7 @@ apply();});
 <p class="summary">Palo Alto Networks on Wednesday issued security updates for a high-severity flaw in PAN-OS software that has come under active exploitation. The…</p>
 <p class="meta">The Hacker News &middot; 15 Oct 2026, 11:46 UTC</p>
 </div>
-</article><article class="card">
+</article><article class="card" data-tags="critical exploited patch-now">
 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhH_5A4EPZ4VVdF4dve5fMe4BwreUmtWCJQrgMiBdiZyoFInoZK_nO6ouOwLMCyyQPrXWE4_n3NE39b4C2UQi-G4uE3ufyv7A9IEYEp9O3ggTu7AyDRzOqwVqhLjISLvOTasPiAcdFafFtL7B5uoKtm8GPeFFxrKDupGCoqZJ2o88sUmaGbjKk6E3sJgIKD/s1600/backup.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
 <div class="card-body">
 <p class="kicker"><span class="badge Critical">Critical</span>Vulnerabilities &amp; Exploited CVEs</p>
@@ -129,7 +138,7 @@ apply();});
 <p class="summary">Singapore-based Ahsay Backup has released security updates to address two security flaws in AhsayCBS that have been exploited by bad actors to drop…</p>
 <p class="meta">The Hacker News &middot; 15 Oct 2026, 06:43 UTC</p>
 </div>
-</article><article class="card">
+</article><article class="card" data-tags="">
 <img src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22360%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20fill%3D%22%230b1a33%22/%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22560%22%20height%3D%22280%22%20fill%3D%22none%22%20stroke%3D%22%233b82f6%22%20stroke-width%3D%222%22/%3E%3Ctext%20x%3D%2264%22%20y%3D%22186%22%20fill%3D%22%23ffffff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2230%22%20font-weight%3D%22700%22%3EVulnerabilities%20%26amp%3B%20Exploited%20CVEs%3C/text%3E%3C/svg%3E" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
 <div class="card-body">
 <p class="kicker"><span class="badge Standard">Standard</span>Vulnerabilities &amp; Exploited CVEs</p>
@@ -137,7 +146,7 @@ apply();});
 <p class="summary">Drupal has patched two critical vulnerabilities that could allow attackers to execute code remotely on websites running any supported version of the…</p>
 <p class="meta">BleepingComputer &middot; 17 Oct 2026, 14:32 UTC</p>
 </div>
-</article><article class="card">
+</article><article class="card" data-tags="">
 <img src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22360%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20fill%3D%22%230b1a33%22/%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22560%22%20height%3D%22280%22%20fill%3D%22none%22%20stroke%3D%22%233b82f6%22%20stroke-width%3D%222%22/%3E%3Ctext%20x%3D%2264%22%20y%3D%22186%22%20fill%3D%22%23ffffff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2230%22%20font-weight%3D%22700%22%3EVulnerabilities%20%26amp%3B%20Exploited%20CVEs%3C/text%3E%3C/svg%3E" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
 <div class="card-body">
 <p class="kicker"><span class="badge Standard">Standard</span>Vulnerabilities &amp; Exploited CVEs</p>
@@ -145,7 +154,7 @@ apply();});
 <p class="summary">Updated the Security Updates table to add download and KB article links for Microsoft Visual Studio. This is an informational change only; the fixed…</p>
 <p class="meta">Microsoft Security Response Center &middot; 16 Oct 2026, 14:00 UTC</p>
 </div>
-</article><article class="card">
+</article><article class="card" data-tags="">
 <img src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22360%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20fill%3D%22%230b1a33%22/%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22560%22%20height%3D%22280%22%20fill%3D%22none%22%20stroke%3D%22%233b82f6%22%20stroke-width%3D%222%22/%3E%3Ctext%20x%3D%2264%22%20y%3D%22186%22%20fill%3D%22%23ffffff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2230%22%20font-weight%3D%22700%22%3EVulnerabilities%20%26amp%3B%20Exploited%20CVEs%3C/text%3E%3C/svg%3E" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
 <div class="card-body">
 <p class="kicker"><span class="badge Standard">Standard</span>Vulnerabilities &amp; Exploited CVEs</p>
@@ -153,16 +162,24 @@ apply();});
 <p class="summary">This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome…</p>
 <p class="meta">Microsoft Security Response Center &middot; 16 Oct 2026, 14:00 UTC</p>
 </div>
-</article><article class="card">
-<img src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22360%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20fill%3D%22%230b1a33%22/%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22560%22%20height%3D%22280%22%20fill%3D%22none%22%20stroke%3D%22%233b82f6%22%20stroke-width%3D%222%22/%3E%3Ctext%20x%3D%2264%22%20y%3D%22186%22%20fill%3D%22%23ffffff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2230%22%20font-weight%3D%22700%22%3EVulnerabilities%20%26amp%3B%20Exploited%20CVEs%3C/text%3E%3C/svg%3E" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
-<div class="card-body">
-<p class="kicker"><span class="badge Standard">Standard</span>Vulnerabilities &amp; Exploited CVEs</p>
-<h3><a href="story/82d9832434fa.html">Chromium CVE-2026-106263: Improper input validation</a></h3>
-<p class="summary">This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome…</p>
-<p class="meta">Microsoft Security Response Center &middot; 16 Oct 2026, 14:00 UTC</p>
-</div>
 </article></div></section>
-<section class="section" id="ai"><h2>AI Security &amp; Emerging Threats</h2><div class="grid"><article class="card">
+<section class="section" id="ai" data-section><h2>AI Security &amp; Emerging Threats</h2><div class="grid"><article class="card" data-tags="ai">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzRSuvywT7bfHRl45krYywOIqL__Cw1hXchChbx5ylDNZaHxVDEf8O1pmzajCnItG1rwxKq0k2GHdMeDW_DvQP8Wk5MEiwlE2dZXn9grvDpAOpViWonNWsFMkTXoKpcFj8lk0UuMrGx-xVHRU_KufidsDcY7e0RUSG62aapDC9y9opt8V_rmgxkCG9v6A/s1600/opencode.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
+<div class="card-body">
+<p class="kicker"><span class="badge Standard">Standard</span>AI Security &amp; Emerging Threats</p>
+<h3><a href="story/1de1c48ce23b.html">OpenCode Console Breach May Have Exposed OpenAI, Anthropic, and Google API Keys</a></h3>
+<p class="summary">An intruder reached a legacy system at OpenCode on the night of October 16 and may have exposed the third-party AI provider keys that users had saved…</p>
+<p class="meta">The Hacker News &middot; 19 Oct 2026, 06:07 UTC</p>
+</div>
+</article><article class="card" data-tags="ai">
+<img src="https://cdn.arstechnica.net/wp-content/uploads/2026/10/ai-agents-1152x648.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
+<div class="card-body">
+<p class="kicker"><span class="badge Standard">Standard</span>AI Security &amp; Emerging Threats</p>
+<h3><a href="story/b140e0bf691c.html">OpenAI models hacked a crypto wallet and breached more websites</a></h3>
+<p class="summary">OpenAI said internal models hacked two more websites, bypassed company-imposed browsing restrictions, and used exposed credentials to draw…</p>
+<p class="meta">Ars Technica Security &middot; 16 Oct 2026, 20:59 UTC</p>
+</div>
+</article><article class="card" data-tags="ai">
 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhkqmj8WR1EBIXlf0-PIfEmv-3uEk-0FU-SrKAaQyn33syLPFRar-jwks7o70PVBvmNd05CwdNSVPXRq3bN6ED0jREr__oFnSFjS1emRZoEfvsfw8UlSspGcSWLLKJcgUhDuzV814VaFSecnEzNhvhTbemuVizjA46o3g-d7hZj1F-Fmn6sqssQyMeayXC/s1600/openai-smart.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
 <div class="card-body">
 <p class="kicker"><span class="badge Standard">Standard</span>AI Security &amp; Emerging Threats</p>
@@ -170,7 +187,7 @@ apply();});
 <p class="summary">OpenAI has disclosed seven new incidents in which its artificial intelligence (AI) models exhibited misaligned behavior, including one case where its…</p>
 <p class="meta">The Hacker News &middot; 16 Oct 2026, 14:03 UTC</p>
 </div>
-</article><article class="card">
+</article><article class="card" data-tags="ai">
 <img src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22360%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20fill%3D%22%230b1a33%22/%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22560%22%20height%3D%22280%22%20fill%3D%22none%22%20stroke%3D%22%233b82f6%22%20stroke-width%3D%222%22/%3E%3Ctext%20x%3D%2264%22%20y%3D%22186%22%20fill%3D%22%23ffffff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2230%22%20font-weight%3D%22700%22%3EAI%20Security%20%26amp%3B%20Emerging%20Threats%3C/text%3E%3C/svg%3E" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
 <div class="card-body">
 <p class="kicker"><span class="badge Standard">Standard</span>AI Security &amp; Emerging Threats</p>
@@ -178,7 +195,7 @@ apply();});
 <p class="summary">Employees using personal ChatGPT accounts at work can expose sensitive company data, even when their organization provides an approved Enterprise…</p>
 <p class="meta">BleepingComputer &middot; 16 Oct 2026, 13:50 UTC</p>
 </div>
-</article><article class="card">
+</article><article class="card" data-tags="ai">
 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVccQyMWKH3TTGpMGwsFUkVETAsZFTWBlOZyCPr3ZlMJfVPTN09xHFKk94-6OWpwhpE68JRImlVGgma5xaM66ohDwD5XvlOu1FjQPllSMNRvuDUMPB0PNUJEK3u2MaELBNvDP0GNThHj3IGreaWQe6UpzfZ55Ei6HeOpmbcWzo6Mach5g3-9OJPBuA1wY/s1600/modal.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
 <div class="card-body">
 <p class="kicker"><span class="badge Standard">Standard</span>AI Security &amp; Emerging Threats</p>
@@ -186,7 +203,7 @@ apply();});
 <p class="summary">In the space of a month, a new category of AI model went from nonexistent to everywhere. TypeSafe AI released Jev on September 15 and called it a…</p>
 <p class="meta">The Hacker News &middot; 16 Oct 2026, 11:30 UTC</p>
 </div>
-</article><article class="card">
+</article><article class="card" data-tags="ai">
 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyMnLMgZNuoh6c41MPT17IsrvbfocknmRb8sxaolFmTpU9h0b-jyJAe9Ods3iCWligbpcd1a1IThvmpUts5llDkKkScffnItGGrGcneDJ8oUJjuc76syHF8g31ZeTWMunD7LDJjviCRFMf8Zugkg8Z4kgXyhDW4bfrCHtV8Xkt-wJlnUd78z-ab28LrfV5/s1600/certin.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
 <div class="card-body">
 <p class="kicker"><span class="badge Standard">Standard</span>AI Security &amp; Emerging Threats</p>
@@ -194,32 +211,8 @@ apply();});
 <p class="summary">AI agents being tested online reached the live systems of Indian organizations and read business records, including personal data and confidential…</p>
 <p class="meta">The Hacker News &middot; 16 Oct 2026, 06:53 UTC</p>
 </div>
-</article><article class="card">
-<img src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22360%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20fill%3D%22%230b1a33%22/%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22560%22%20height%3D%22280%22%20fill%3D%22none%22%20stroke%3D%22%233b82f6%22%20stroke-width%3D%222%22/%3E%3Ctext%20x%3D%2264%22%20y%3D%22186%22%20fill%3D%22%23ffffff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2230%22%20font-weight%3D%22700%22%3EAI%20Security%20%26amp%3B%20Emerging%20Threats%3C/text%3E%3C/svg%3E" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
-<div class="card-body">
-<p class="kicker"><span class="badge Standard">Standard</span>AI Security &amp; Emerging Threats</p>
-<h3><a href="story/6c8051f534fe.html">Android gets AI defenses against messaging scams, fake calls</a></h3>
-<p class="summary">Google announced new AI-powered defenses against scam messages and call-forwarding abuse on Android, currently rolling out to eligible devices. [...]</p>
-<p class="meta">BleepingComputer &middot; 15 Oct 2026, 19:48 UTC</p>
-</div>
-</article><article class="card">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoMcD8RJr4YbArE7ir74w0wFobrcZI94oJ41w_VwSIFPeQMqG4Ofa6xgtcUqD9op38axL3iAMYu-Y0zv0CEc7LrZAmj7lWLdzZ29ZbL5TD6Up2nGRqJkHGoUF6Hs_QA-A8TVz8f1dfuCcnB4kvzzYrZOu1JqVUE2s2JEkP4E0WjvKptVmvsbyfl4uBwas/s1600/sans-ai.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
-<div class="card-body">
-<p class="kicker"><span class="badge Standard">Standard</span>AI Security &amp; Emerging Threats</p>
-<h3><a href="story/9bedf93cf19d.html">Why AI Confidence Is Not Validation</a></h3>
-<p class="summary">AI is already part of digital forensics and incident response work, with or without a policy in place to govern it. The issue is that these tools are…</p>
-<p class="meta">The Hacker News &middot; 15 Oct 2026, 11:04 UTC</p>
-</div>
 </article></div></section>
-<section class="section" id="cloud"><h2>Cloud &amp; Identity</h2><div class="grid"><article class="card">
-<img src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22360%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20fill%3D%22%230b1a33%22/%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22560%22%20height%3D%22280%22%20fill%3D%22none%22%20stroke%3D%22%233b82f6%22%20stroke-width%3D%222%22/%3E%3Ctext%20x%3D%2264%22%20y%3D%22186%22%20fill%3D%22%23ffffff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2230%22%20font-weight%3D%22700%22%3ECloud%20%26amp%3B%20Identity%3C/text%3E%3C/svg%3E" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
-<div class="card-body">
-<p class="kicker"><span class="badge Standard">Standard</span>Cloud &amp; Identity</p>
-<h3><a href="story/15156651e221.html">Microsoft: October Windows Server updates break Exchange sign-in, mail flow</a></h3>
-<p class="summary">Microsoft has confirmed that this month&#x27;s Windows Server security updates are causing OWA sign-in and mail delivery issues on some Exchange Server…</p>
-<p class="meta">BleepingComputer &middot; 19 Oct 2026, 08:58 UTC</p>
-</div>
-</article><article class="card">
+<section class="section" id="cloud" data-section><h2>Cloud &amp; Identity</h2><div class="grid"><article class="card" data-tags="m365">
 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxTJ5xsWsmrBmF1q18Gi5uaokNeC6-M0VbSf0T5X3KMQH7QGMhC7mz4XB6TUJuE7P9tjknMAqaGQ-Iz_7UuQ-NdKKXJTgqLhHMipRcd57VUOpwfJ2xxO8Hq_PX8hotdp_KZddNDzfQFw3bLHbYYLasThNbqGlidzhZ485ApBIKh2KUgn4g6PeBbhMwhc0T/s1600/ms-connect.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
 <div class="card-body">
 <p class="kicker"><span class="badge Standard">Standard</span>Cloud &amp; Identity</p>
@@ -227,89 +220,33 @@ apply();});
 <p class="summary">ConnectWise on Saturday said it has disabled seven ConnectWise application identities as it continues its investigation into an incident in which…</p>
 <p class="meta">The Hacker News &middot; 18 Oct 2026, 08:23 UTC</p>
 </div>
-</article><article class="card">
+</article></div></section>
+<section class="section" id="microsoft" data-section><h2>Microsoft &amp; Enterprise</h2><div class="grid"><article class="card" data-tags="entra">
+<img src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22360%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20fill%3D%22%230b1a33%22/%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22560%22%20height%3D%22280%22%20fill%3D%22none%22%20stroke%3D%22%233b82f6%22%20stroke-width%3D%222%22/%3E%3Ctext%20x%3D%2264%22%20y%3D%22186%22%20fill%3D%22%23ffffff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2230%22%20font-weight%3D%22700%22%3EMicrosoft%20%26amp%3B%20Enterprise%3C/text%3E%3C/svg%3E" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
+<div class="card-body">
+<p class="kicker"><span class="badge Standard">Standard</span>Microsoft &amp; Enterprise</p>
+<h3><a href="story/15156651e221.html">Microsoft: October Windows Server updates break Exchange sign-in, mail flow</a></h3>
+<p class="summary">Microsoft has confirmed that this month&#x27;s Windows Server security updates are causing OWA sign-in and mail delivery issues on some Exchange Server…</p>
+<p class="meta">BleepingComputer &middot; 19 Oct 2026, 08:58 UTC</p>
+</div>
+</article><article class="card" data-tags="m365">
 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgel6whr7-1_Lf62w6AJwYfEyic0x1lJ0c-qOfOprMUdm83xpM7rqXbJzplx7BPBUBDD4yUcLWoPvFBhF6HIDORPNNXYj7NfDOTf7YN5lT7p80jxtN6VrTxMjWT0OplFNx0BdjoMmFzk3ssVlbapm7Qfl0Z9_1T7jA_zwz2tbjrxzRircL28mr0zcsci98x/s1600/connectwise.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
 <div class="card-body">
-<p class="kicker"><span class="badge Standard">Standard</span>Cloud &amp; Identity</p>
+<p class="kicker"><span class="badge Standard">Standard</span>Microsoft &amp; Enterprise</p>
 <h3><a href="story/b3dabcb4d0c0.html">Hackers Use Compromised ConnectWise Credential to Sign In to 173 Microsoft 365 Tenants</a></h3>
 <p class="summary">Cybersecurity researchers are sounding the alarm related to an active campaign in which unknown threat actors are abusing a compromised Microsoft 365…</p>
 <p class="meta">The Hacker News &middot; 17 Oct 2026, 06:16 UTC</p>
 </div>
-</article><article class="card">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgp2enQeK-5xZuEo_rLQje9W_odynVLALJCEvTyaMSolIfwVonZGMceQWA8yq9xPMD-C_RkIp-V03EqEBVTM5yMq9IHWRRfSHxWWDS6kCJVcVAsmlFXt5wD2pK7Bk-A6iBIDFS2o811n8e48B1Psni_qvrkJ0HMXtJlhaLwx7jkxEG-e0XDgtcAMUMLiNFV/s1600/hot.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
-<div class="card-body">
-<p class="kicker"><span class="badge Standard">Standard</span>Cloud &amp; Identity</p>
-<h3><a href="story/ba5ef20dc7e9.html">Help TDS Linked to Hotejka as 20,000+ Cloudflare Pages Domains Host Tech Support Scams</a></h3>
-<p class="summary">A long-running Traffic Distribution System (TDS) known as Help TDS to a Russian-language affiliate program called Hotejka, which appears to be a…</p>
-<p class="meta">The Hacker News &middot; 15 Oct 2026, 14:11 UTC</p>
-</div>
-</article></div></section>
-<section class="section" id="microsoft"><h2>Microsoft &amp; Enterprise</h2><div class="grid"><article class="card">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8fNb_yEvP6C_CENfQMUx3EDGofY1ejEHusnumTjCLnX3s8pevEbl_cgrtFHhzeEUhyphenhyphenyKe_X41OzQOGL5zlXeLLBnj_ZrLqH1IUag1QWm4QS9V2hgc5ucEzEZKjhstvtde8CFs8anPSZv9w3op67F8Q_MHVC_demESnH8lpAYLLpIRizCyvF5gsi5PDKzm/s1600/npm-dll.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
-<div class="card-body">
-<p class="kicker"><span class="badge Standard">Standard</span>Microsoft &amp; Enterprise</p>
-<h3><a href="story/1fae9cde44bf.html">MALFEX npm Package &#x27;imgdecode&#x27; Hides Shellcode Loader in Windows Native Addon</a></h3>
-<p class="summary">Cybersecurity researchers have discovered a malicious npm package that&#x27;s part of a recently disclosed software supply chain attack campaign dubbed…</p>
-<p class="meta">The Hacker News &middot; 17 Oct 2026, 11:11 UTC</p>
-</div>
-</article><article class="card">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhuPumyjeBRpQZo5_3mvqZ2_kXuPiOK02cH-ARofYrny0mQ2-rv55w7yBxMTBe3ymCW7c77quZ4xlkdDG9FcEhBYFr7GWmbyPE_1K1xqU0mvT-h51Z8hLg-LnWl32MeOy-aumsGO9-j8VSOSOfVUDB2k1vWOpEdyGEWV9ipF4kf3HVP1Au2ClbkYtAJrc/s1600/backup-hacked.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
-<div class="card-body">
-<p class="kicker"><span class="badge Standard">Standard</span>Microsoft &amp; Enterprise</p>
-<h3><a href="story/2f6312b7767d.html">Attackers Tampered with AOMEI Backupper&#x27;s Update Servers for Minutes to Deliver a Backdoor</a></h3>
-<p class="summary">Attackers repeatedly changed the files that AOMEI Backupper fetches from the vendor&#x27;s own update servers, in windows of five to ten minutes at a time…</p>
-<p class="meta">The Hacker News &middot; 16 Oct 2026, 16:43 UTC</p>
-</div>
-</article><article class="card">
+</article><article class="card" data-tags="">
 <img src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22360%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20fill%3D%22%230b1a33%22/%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22560%22%20height%3D%22280%22%20fill%3D%22none%22%20stroke%3D%22%233b82f6%22%20stroke-width%3D%222%22/%3E%3Ctext%20x%3D%2264%22%20y%3D%22186%22%20fill%3D%22%23ffffff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2230%22%20font-weight%3D%22700%22%3EMicrosoft%20%26amp%3B%20Enterprise%3C/text%3E%3C/svg%3E" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
 <div class="card-body">
 <p class="kicker"><span class="badge Standard">Standard</span>Microsoft &amp; Enterprise</p>
 <h3><a href="story/7e8ace9d42e7.html">Microsoft: October Windows update may break Smart App Control</a></h3>
-<p class="summary">Microsoft says some users may have trouble turning on Smart App Control after installing this month&#x27;s KB5127648 Windows 11 security update. [...]</p>
+<p class="summary">Microsoft says some users may have trouble turning on Smart App Control after installing this month&#x27;s KB5127648 Windows 11 security update.</p>
 <p class="meta">BleepingComputer &middot; 16 Oct 2026, 08:44 UTC</p>
 </div>
 </article></div></section>
-<section class="section" id="general"><h2>Security News</h2><div class="grid"><article class="card">
-<img src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22360%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20fill%3D%22%230b1a33%22/%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22560%22%20height%3D%22280%22%20fill%3D%22none%22%20stroke%3D%22%233b82f6%22%20stroke-width%3D%222%22/%3E%3Ctext%20x%3D%2264%22%20y%3D%22186%22%20fill%3D%22%23ffffff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2230%22%20font-weight%3D%22700%22%3ESecurity%20News%3C/text%3E%3C/svg%3E" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
-<div class="card-body">
-<p class="kicker"><span class="badge Standard">Standard</span>Security News</p>
-<h3><a href="story/50880c900177.html">Targeted ads installed Candiru spyware in zero-click attacks</a></h3>
-<p class="summary">Candiru spyware was delivered to devices at Al Jazeera Media Network via targeted online advertisements in a zero-click attack that required only…</p>
-<p class="meta">BleepingComputer &middot; 16 Oct 2026, 17:20 UTC</p>
-</div>
-</article><article class="card">
-<img src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22360%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20fill%3D%22%230b1a33%22/%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22560%22%20height%3D%22280%22%20fill%3D%22none%22%20stroke%3D%22%233b82f6%22%20stroke-width%3D%222%22/%3E%3Ctext%20x%3D%2264%22%20y%3D%22186%22%20fill%3D%22%23ffffff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2230%22%20font-weight%3D%22700%22%3ESecurity%20News%3C/text%3E%3C/svg%3E" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
-<div class="card-body">
-<p class="kicker"><span class="badge Standard">Standard</span>Security News</p>
-<h3><a href="story/d342f7137dd6.html">BAE Systems cyberattack disrupts US federal court operations</a></h3>
-<p class="summary">The Administrative Office of the US Courts says a cyberattack on government contractor BAE Systems has taken down the notice system used by federal…</p>
-<p class="meta">BleepingComputer &middot; 16 Oct 2026, 07:37 UTC</p>
-</div>
-</article><article class="card">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8jHVMYXIjddaTrqHbBuPm3mQ6G_g8qlALwitmiIRM9OplZpPxLPDFet7ySOV0OVxPj6cW1oz0K6rydDvGYQGalR1jSt10bz8kti4dWnM0d3NnUBjuymD77_cReujy6AXmFgJgQQvl2qeICur3VHf5vYyOrxz8OFM-bEunzmK9PGDzCzzTVFVEdQyswYho/s1600/threatsday-oct.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
-<div class="card-body">
-<p class="kicker"><span class="badge Standard">Standard</span>Security News</p>
-<h3><a href="story/986cc714fb42.html">ThreatsDay: Adobe RCE, DNS Wallet Theft, NVIDIA Container Escape, Self-Healing Backdoor + 23 More</a></h3>
-<p class="summary">Someone built a tool to steal data, then decided it should scare the victim for fun. Yes, that’s an actual feature. And somehow, it fits right in…</p>
-<p class="meta">The Hacker News &middot; 15 Oct 2026, 18:49 UTC</p>
-</div>
-</article><article class="card">
-<img src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22360%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20fill%3D%22%230b1a33%22/%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22560%22%20height%3D%22280%22%20fill%3D%22none%22%20stroke%3D%22%233b82f6%22%20stroke-width%3D%222%22/%3E%3Ctext%20x%3D%2264%22%20y%3D%22186%22%20fill%3D%22%23ffffff%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2230%22%20font-weight%3D%22700%22%3ESecurity%20News%3C/text%3E%3C/svg%3E" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
-<div class="card-body">
-<p class="kicker"><span class="badge Standard">Standard</span>Security News</p>
-<h3><a href="story/b14fd868476b.html">Hackers hijack D-Link, Ubiquiti devices to resell your stolen bandwidth</a></h3>
-<p class="summary">A proxyjacking campaign has impacted devices in 34 countries, monetizing victims&#x27; internet connections through a commercial residential proxy…</p>
-<p class="meta">BleepingComputer &middot; 15 Oct 2026, 18:20 UTC</p>
-</div>
-</article><article class="card">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgE0PuxlZklu67SsXNfh_vZefiytkMx159npHL_6Ln3dNT0yxzyYE55zZU5SMOFGk39ZqhfWzXpYQfXdoZB0gGYdkoPu3cNactAPL9ZuCWdb_v4Hp4ZkoBLtEnzBovntpudGiQZvIwTucBgDRwNzfVR5SNybyZvTANvdqsDPjHVoUQcV3hrBNm0-YMvZK0/s1600/spyware-ads.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
-<div class="card-body">
-<p class="kicker"><span class="badge Standard">Standard</span>Security News</p>
-<h3><a href="story/cdc576e64c59.html">Citizen Lab Traces Zero-Click Candiru Spyware Infections at Al Jazeera to Targeted Online Ads</a></h3>
-<p class="summary">Candiru, an Israeli maker of spyware sold to governments, infected devices at the news network Al Jazeera through ordinary online ads, in attacks…</p>
-<p class="meta">The Hacker News &middot; 15 Oct 2026, 16:01 UTC</p>
-</div>
-</article><article class="card">
+<section class="section" id="general" data-section><h2>Security News</h2><div class="grid"><article class="card" data-tags="">
 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyJOEj0MfpVvrP-qAXhuoM2BBSjZ6TwPYR-nMG_g-tBvu7Er2cMlvMoVkJOUP1qE2sleu3a21YjvdCQ9u80FSBTx7NNP3cZNfradprnGu-EnIURCxZK4sA0cXbROZpdW8CJxZcxRfhJyhbIXa_Au_sha3mh5pFe-7k5EIimZQlUGIs_mGGKHGKArej6il7/s1600/4g.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
 <div class="card-body">
 <p class="kicker"><span class="badge Standard">Standard</span>Security News</p>
@@ -317,8 +254,36 @@ apply();});
 <p class="summary">The Indian government has directed telecom service providers (TSPs) in the country to mandatorily display callers&#x27; registered names along with their…</p>
 <p class="meta">The Hacker News &middot; 15 Oct 2026, 10:42 UTC</p>
 </div>
+</article><article class="card" data-tags="">
+<img src="https://cdn.arstechnica.net/wp-content/uploads/2026/10/mass-fridge-hack-1024x648.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
+<div class="card-body">
+<p class="kicker"><span class="badge Standard">Standard</span>Security News</p>
+<h3><a href="story/e0c7d4aa37e1.html">Fridge hack costing millions and sparking fires stemmed from poor security</a></h3>
+<p class="summary">Earlier this week, a mass hack of refrigeration systems at an estimated 700 supermarkets throughout France caused them to suddenly malfunction…</p>
+<p class="meta">Ars Technica Security &middot; 14 Oct 2026, 21:35 UTC</p>
+</div>
 </article></div></section>
+<script>(function(){
+var bar=document.getElementById('filters');if(!bar)return;
+var buttons=bar.querySelectorAll('button[data-filter]');
+var items=document.querySelectorAll('[data-tags]');
+var sections=document.querySelectorAll('[data-section]');
+var empty=document.getElementById('filter-empty');
+function apply(f){
+  buttons.forEach(function(b){b.setAttribute('aria-pressed',String(b.getAttribute('data-filter')===f));});
+  var shown=0;
+  items.forEach(function(el){
+    var tags=' '+(el.getAttribute('data-tags')||'')+' ';
+    var ok=(f==='all')||tags.indexOf(' '+f+' ')>-1;
+    el.hidden=!ok; if(ok){shown++;}
+  });
+  sections.forEach(function(sec){sec.hidden=!sec.querySelector('[data-tags]:not([hidden])');});
+  if(empty){empty.hidden=shown>0;}
+}
+buttons.forEach(function(b){b.addEventListener('click',function(){apply(b.getAttribute('data-filter'));});});
+apply('all');
+})();</script>
 </main>
-<footer class="site-footer"><div class="wrap">Automated briefing. Headlines and short excerpts come from public RSS feeds, and every story links to the original publisher. Not affiliated with any source. &middot; <a href="feed.xml">RSS</a> &middot; <a href="status.json">Run status</a></div></footer>
+<footer class="site-footer"><div class="wrap">Automated briefing. Headlines and short excerpts come from public RSS feeds, and every story links to the original publisher. Not affiliated with any source. &middot; <a href="impressum.html">Impressum</a> &middot; <a href="datenschutz.html">Privacy</a> &middot; <a href="feed.xml">RSS</a> &middot; <a href="status.json">Run status</a></div></footer>
 </body>
 </html>

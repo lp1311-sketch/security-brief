@@ -59,3 +59,21 @@ figcaption{font-size:.8rem;color:var(--muted);margin-top:6px}
   .theme-toggle{margin-left:0}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+:root{--btn-bg:#1d4ed8;--btn-ink:#ffffff}
+[data-theme="dark"]{--btn-bg:#7cb3ff;--btn-ink:#06101f}
+.lede{font-size:1.15rem;color:var(--muted);margin:0 0 1.2rem}
+.subscribe{margin:40px 0 0;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px}
+.subscribe h2{font-family:var(--serif);font-size:1.3rem;margin:0 0 6px}
+.subscribe-form{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 8px}
+.subscribe-form input{flex:1 1 220px;min-width:0;padding:10px 12px;border:1px solid var(--line);border-radius:8px;font:inherit;background:var(--bg);color:var(--ink)}
+.subscribe-form button{padding:10px 18px;border:0;border-radius:8px;background:var(--btn-bg);color:var(--btn-ink);font:inherit;font-weight:600;cursor:pointer}
+.subscribe-form button:hover{filter:brightness(1.08)}
+.visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.analysis-links{margin:12px 0 0}
+.card-kicker{margin:0;font-size:.8rem;color:var(--muted)}
+[hidden]{display:none!important}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 4px}
+.filters button{font:inherit;font-size:.88rem;padding:6px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.filters button:hover{border-color:var(--accent)}
+.filters button[aria-pressed="true"]{background:var(--btn-bg);color:var(--btn-ink);border-color:var(--btn-bg)}
