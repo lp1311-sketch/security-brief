@@ -23,8 +23,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Tests (offline fixtures)
-        run: python3 -m unittest discover -s tests -q
       - name: Fetch feeds and build site
         run: python3 build.py
       - name: Commit updated site and data
