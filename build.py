@@ -36,13 +36,12 @@ CATEGORIES = {
     "threats": ("Ransomware, Malware & Breaches", r"ransomware|malware|breach|phishing|stealer|botnet|extortion|data leak|spyware|hijack|backdoor|scam|theft|cyberattack|cyber attack|shellcode|loader|supply[- ]chain|tampered|money laundering|sanction|proxyjack|attackers|hackers"),
     "vulnerabilities": ("Vulnerabilities & Exploited CVEs", r"vulnerab|\bcve-|patch|exploit|flaw|\brce\b|zero-day|0-day|security update"),
     "ai": ("AI Security & Emerging Threats", r"\bai\b|\bllm|copilot|chatgpt|openai|anthropic|gemini|deepfake|generative|ai agent|ai model"),
-    "microsoft": ("Microsoft & Enterprise", r"microsoft|windows|exchange|sharepoint|teams|office 365|m365|outlook|defender|azure"),
-    "cloud": ("Cloud & Identity", r"cloud|identity|\bmfa\b|okta|\bsso\b|oauth|sign-in|entra|conditional access|tenant"),
+    "microsoft": ("Microsoft", r"microsoft|windows|exchange|sharepoint|teams|office 365|m365|outlook|defender|azure|entra|azure ad|conditional access|\bmfa\b|tenant|identity|sign-in|oauth"),
     "general": ("Security News", r"$^"),  # fallback, never matches
 }
-CATEGORY_ORDER = ["threats", "vulnerabilities", "ai", "cloud", "microsoft", "general"]  # rendering order
+CATEGORY_ORDER = ["threats", "vulnerabilities", "ai", "microsoft", "general"]  # rendering order
 # Scoring order: ties go to the first entry (AI before vulnerabilities before threats).
-SCORE_ORDER = ["ai", "vulnerabilities", "threats", "cloud", "microsoft"]
+SCORE_ORDER = ["ai", "vulnerabilities", "threats", "microsoft"]
 
 # Score signals: (regex, points, label). Documented in README.md.
 SIGNALS = [
@@ -783,7 +782,7 @@ apply();});
 })();"""
 
 SHORT_NAV = {"threats": "Threats", "vulnerabilities": "Vulnerabilities", "ai": "AI",
-             "cloud": "Cloud & Identity", "microsoft": "Microsoft"}
+             "microsoft": "Microsoft"}
 
 
 def _layout(cfg: dict, title: str, desc: str, body: str, base: str, image: str | None = None) -> str:
@@ -828,7 +827,10 @@ def search_text(s: dict) -> str:
 
 
 def _save_button(s: dict) -> str:
-    return f'<button type="button" class="save" data-save="{esc(s["id"])}" aria-pressed="false">Save</button>'
+    icon = ('<svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" focusable="false">'
+            '<path d="M6 3h12v18l-6-4-6 4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>')
+    return (f'<button type="button" class="save" data-save="{esc(s["id"])}" aria-pressed="false">'
+            f'{icon}<span>Save</span></button>')
 
 
 def _card(s: dict) -> str:
@@ -874,14 +876,32 @@ EXTRA_CSS = """
 .visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .analysis-links{margin:14px 0 0}
 [hidden]{display:none!important}
-.toolbar{margin:0 0 12px}
-.search{width:100%;font:inherit;font-size:.95rem;padding:11px 14px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
-.search:focus{border-color:var(--accent)}
+.toolbar{position:relative;margin:0 0 14px}
+.toolbar>svg{position:absolute;left:18px;top:50%;transform:translateY(-50%);color:var(--muted);pointer-events:none}
+.search{display:block;width:100%;height:52px;font:inherit;font-size:1rem;padding:0 20px 0 48px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);box-shadow:var(--shadow);transition:border-color .15s,box-shadow .15s}
+.search::placeholder{color:var(--muted);opacity:1}
+.search:hover{border-color:color-mix(in srgb,var(--accent) 45%,var(--line))}
+.search:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 4px color-mix(in srgb,var(--accent) 22%,transparent)}
+.search::-webkit-search-cancel-button{cursor:pointer}
 .actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:4px}
-.save{align-self:flex-start;font:inherit;font-size:.8rem;font-weight:600;background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:999px;padding:5px 12px;cursor:pointer}
-.save:hover{color:var(--ink);border-color:var(--ink)}
-.save[aria-pressed="true"]{color:var(--accent);border-color:var(--accent)}
-.card-body .save{margin-top:4px}
+.save{display:inline-flex;align-items:center;gap:7px;align-self:flex-start;font:inherit;font-size:.82rem;font-weight:600;line-height:1;background:var(--surface);border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:8px 14px 8px 12px;cursor:pointer;transition:background .15s,border-color .15s,color .15s}
+.save svg{flex:none}
+.save path{transition:fill .15s}
+.save:hover{border-color:var(--accent);color:var(--accent)}
+.save:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.save[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.save[aria-pressed="true"] path{fill:currentColor}
+.save.remove{color:var(--muted)}
+.save.remove:hover{color:var(--crit);border-color:var(--crit)}
+.card-body .save{margin-top:6px}
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
+.cve-table{width:100%;border-collapse:collapse;font-size:.9rem}
+.cve-table th,.cve-table td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+.cve-table th{font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700;background:var(--surface-2);white-space:nowrap}
+.cve-table tr:last-child td{border-bottom:0}
+.cve-table td a{color:var(--ink);text-decoration:none}
+.cve-table td a:hover{text-decoration:underline}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.85rem;white-space:nowrap}
 .todo-list{display:grid;gap:14px}
 .todo{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--std);border-radius:var(--r);padding:18px 20px}
 .todo.kind-patch{border-left-color:var(--crit)}
@@ -938,13 +958,49 @@ def article_page(a: dict, cfg: dict, site_cfg: dict) -> str:
     return _layout(cfg, a["title"], _short(a["summary"] or a["title"], 150), body, base)
 
 
-def section_page(sec: str, arts: list[dict], cfg: dict, site_cfg: dict) -> str:
+def msrc_cve_rows(stories: list[dict]) -> list[dict]:
+    """Stories from the Microsoft Security Response Center feed that name at least one CVE. KEV first, then score."""
+    rows = [s for s in stories
+            if s["cves"] and any(x["name"].startswith("Microsoft Security") for x in s["sources"])]
+    return sorted(rows, key=lambda s: (not s["kev"], -s["score"]))
+
+
+def cve_table(rows: list[dict]) -> str:
+    head = ('<section class="section" id="cve-table"><h2>Microsoft CVEs in the current window</h2>'
+            '<p class="meta">From the Microsoft Security Response Center feed. <strong>KEV</strong> means listed in CISA\'s '
+            "Known Exploited Vulnerabilities catalog at the time of the run. This is not the complete Patch Tuesday list: "
+            "use the Security Update Guide for that.</p>")
+    if not rows:
+        return head + '<div class="empty">No Microsoft CVE entries in the current window.</div></section>'
+    trs = []
+    for s in rows:
+        exploitation = "KEV" if s["kev"] else ("Exploited" if "exploited" in s["tags"] else "Not reported")
+        prio = esc(s["priority"])
+        trs.append(
+            "<tr>"
+            f'<td class="mono">{esc(", ".join(s["cves"]))}</td>'
+            f'<td><a href="../story/{esc(s["id"])}.html">{esc(s["title"])}</a></td>'
+            f'<td><span class="badge {prio}">{prio}</span></td>'
+            f"<td>{esc(exploitation)}</td>"
+            f'<td class="meta">{esc(fmt_date(s["published"]))}</td>'
+            "</tr>"
+        )
+    return (head + '<div class="table-wrap"><table class="cve-table"><thead><tr>'
+            '<th scope="col">CVE</th><th scope="col">Entry</th><th scope="col">Priority</th>'
+            '<th scope="col">Exploitation</th><th scope="col">Date</th></tr></thead><tbody>'
+            + "".join(trs) + "</tbody></table></div></section>")
+
+
+def section_page(sec: str, arts: list[dict], cfg: dict, site_cfg: dict,
+                 cve_rows: list[dict] | None = None) -> str:
     base = "../"
     label = SECTIONS[sec]
     cards = "".join(_article_card(a, f"{a['slug']}.html") for a in arts) or '<div class="empty">No published articles yet.</div>'
+    cve_block = cve_table(cve_rows) if cve_rows is not None else ""
     body = (
         f'<section class="intro"><h1>{esc(label)}</h1><p class="meta">Original analysis, newest first.</p></section>'
-        f'<div class="grid">{cards}</div>'
+        + cve_block
+        + f'<section class="section"><h2>Notes</h2><div class="grid">{cards}</div></section>'
     ) + _newsletter(site_cfg, base)
     return _layout(cfg, label, f"{label}: original analysis.", body, base)
 
@@ -1009,7 +1065,10 @@ def filter_bar(stories: list[dict]) -> str:
         pressed = "true" if key == "all" else "false"
         buttons.append(f'<button type="button" data-filter="{key}" aria-pressed="{pressed}">{esc(label)} <span class="count">{n}</span></button>')
     search = ('<div class="toolbar"><label class="visually-hidden" for="story-search">Search stories</label>'
-              '<input id="story-search" class="search" type="search" placeholder="Search title, vendor or topic" autocomplete="off"></div>')
+              '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" '
+              'stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>'
+              '<input id="story-search" class="search" type="search" placeholder="Search stories, vendors or topics" '
+              'autocomplete="off" spellcheck="false"></div>')
     return (search + '<div class="filters" id="filters" role="group" aria-label="Filter stories by topic">'
             + "".join(buttons) + '</div><p id="filter-empty" class="empty" hidden>No stories match this filter in the current window.</p>')
 
@@ -1046,7 +1105,8 @@ function writeSaved(a){try{localStorage.setItem(KEY,JSON.stringify(a));}catch(e)
 var saves=document.querySelectorAll('button[data-save]');
 function paint(){var saved=readSaved();saves.forEach(function(b){
   var on=saved.indexOf(b.getAttribute('data-save'))>-1;
-  b.setAttribute('aria-pressed',String(on));b.textContent=on?'Saved':'Save';});}
+  var label=b.querySelector('span');
+  b.setAttribute('aria-pressed',String(on));if(label){label.textContent=on?'Saved':'Save';}});}
 saves.forEach(function(b){b.addEventListener('click',function(){
   var id=b.getAttribute('data-save');var a=readSaved();var i=a.indexOf(id);
   if(i>-1){a.splice(i,1);}else{a.push(id);}
@@ -1160,7 +1220,7 @@ fetch('../stories.json',{cache:'no-store'}).then(function(r){return r.json();}).
     var h=el('h3');var a=el('a','',s.title);a.href='../'+s.url;h.appendChild(a);
     var sum=el('p','summary',s.summary);
     var meta=el('p','meta',s.sources+' \u00b7 '+s.date);
-    var rm=el('button','save','Remove');rm.type='button';rm.setAttribute('aria-pressed','true');
+    var rm=el('button','save remove','Remove');rm.type='button';
     rm.addEventListener('click',function(){
       saved=saved.filter(function(x){return x!==id;});save(saved);card.remove();
       if(!list.children.length){empty.hidden=false;}
@@ -1353,7 +1413,10 @@ def write_site(out: Path, stories: list[dict], cfg: dict, now: datetime, status:
         for f in d.glob("*.html"):
             if f.name not in wanted:
                 f.unlink()
-        (d / "index.html").write_text(section_page(sec, sec_articles, cfg, site_cfg), encoding="utf-8")
+        (d / "index.html").write_text(
+            section_page(sec, sec_articles, cfg, site_cfg,
+                         cve_rows=msrc_cve_rows(stories) if sec == "patch-tuesday" else None),
+            encoding="utf-8")
         for a in sec_articles:
             (d / f"{a['slug']}.html").write_text(article_page(a, cfg, site_cfg), encoding="utf-8")
     for name, page in legal_pages(site_cfg, cfg).items():
@@ -1426,7 +1489,7 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
                      s["score"], s["image"], [x["url"] for x in s["sources"]]] for s in stories],
         "articles": [[a["section"], a["slug"], a["title"], a["date"], a["summary"], a["_md"]] for a in articles],
         "site": site_cfg,
-        "render": "5.5",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
+        "render": "5.6",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
     }, ensure_ascii=False, sort_keys=True)
     digest = hashlib.sha1(digest_src.encode("utf-8")).hexdigest()
     digest_file = data_file.parent / "digest.txt"
