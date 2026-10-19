@@ -1,9 +1,10 @@
 name: autoblog
 
-# Runs twice a day (UTC). GitHub may delay scheduled runs under load.
+# Runs every 20 minutes (UTC minutes 07, 27, 47). GitHub may delay scheduled runs under load.
+# Commits happen only when published content changes (see build.py).
 on:
   schedule:
-   - cron: "7,27,47 * * * *"
+    - cron: "7,27,47 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -22,6 +23,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Tests (offline fixtures)
+        run: python3 -m unittest discover -s tests -q
       - name: Fetch feeds and build site
         run: python3 build.py
       - name: Commit updated site and data
