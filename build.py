@@ -61,37 +61,6 @@ WHY = {
     "cloud": "Identity and cloud weaknesses often lead to account takeover, so they matter even when no endpoint is affected.",
     "general": "General security development. Whether it matters depends on the products and processes in your own environment.",
 }
-CHECKS = {
-    "threats": [
-        "Check EDR/Defender alerts and mail flow for indicators mentioned in the original report.",
-        "Confirm backups are current and that a restore has been tested recently.",
-        "Review MFA and privileged-access coverage for the affected user groups.",
-    ],
-    "vulnerabilities": [
-        "Check whether the affected products or versions exist in your environment.",
-        "Compare with the vendor advisory and current patch status.",
-        "If a CVE is listed in the CISA KEV catalog, treat it as a priority under your change process.",
-    ],
-    "ai": [
-        "Confirm which AI tools are approved and how their access is logged.",
-        "Review the vendor guidance for the affected feature.",
-        "Check whether sensitive data can reach the tool through connectors or plugins.",
-    ],
-    "microsoft": [
-        "Check the Microsoft Security Update Guide or Message Center for the affected products.",
-        "Confirm patch deployment status for affected devices and servers.",
-        "Review related sign-in and audit logs if the issue involves identity or mail.",
-    ],
-    "cloud": [
-        "Review sign-in logs and risky-user signals for anomalies.",
-        "Verify MFA and Conditional Access coverage for the affected apps.",
-        "Check app consents, service principals and admin roles if OAuth or tokens are involved.",
-    ],
-    "general": [
-        "Read the original report and decide whether your environment is affected.",
-        "Involve the relevant team only if the affected products are in use.",
-    ],
-}
 
 
 # ---------- helpers ----------
@@ -368,6 +337,69 @@ def enrich_images(items: list[dict], budget: int = IMAGE_BUDGET) -> None:
             continue
         it["image"] = fetch_preview_image(it["link"])
         it["image_checked"] = True
+        budget -= 1
+
+
+PAGE_BUDGET = 20  # article pages read per run for instructions (each item once)
+SCRIPT_RE = re.compile(r"<(script|style|nav|footer|header|form)\b.*?</\1\s*>", re.I | re.S)
+BLOCK_RE = re.compile(r"<(p|li)\b[^>]*>(.*?)</\1\s*>", re.I | re.S)
+INSTR_ACTION_RE = re.compile(
+    r"\b(update|upgrade|patch|apply|install|disable|enable|block|restrict|rotate|reset|revoke|mitigat\w*|"
+    r"workaround|recommend\w*|advis\w*|should|must|turn off|remove|enforce|configure|migrate|uninstall)\b", re.I)
+INSTR_STRONG_RE = re.compile(
+    r"\b(recommend\w*|advis\w*|must|should|apply|workaround|mitigation|upgrade to|update to|KB\d{6,7}|version \d)", re.I)
+INSTR_SKIP_RE = re.compile(
+    r"subscribe|newsletter|cookie|sign up|follow us|advertis|sponsor|read more|related|share this|copyright|"
+    r"all rights reserved|click here", re.I)
+
+
+def fetch_page(url: str, timeout: int = 10) -> str:
+    """Article HTML for instruction extraction. A failed page is simply empty, never an error."""
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "text/html"})
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            return r.read(300_000).decode("utf-8", "replace")
+    except Exception:  # noqa: BLE001
+        return ""
+
+
+def extract_instructions(page: str, limit: int = 4) -> list[str]:
+    """Sentences from the article body that tell the reader what to do. Quoted verbatim, rule-based.
+    Sentences with more strong signals (recommend, must, KB numbers, versions) come first."""
+    body = _strip_aside(SCRIPT_RE.sub(" ", page or ""))
+    found: list[tuple[int, int, str]] = []
+    order = 0
+    for m in BLOCK_RE.finditer(body):
+        for sent in re.split(r"(?<=[.!?])\s+(?=[A-Z0-9\"'(])", _clean(m.group(2))):
+            sent = sent.strip()
+            if not 60 <= len(sent) <= 320:
+                continue
+            if not INSTR_ACTION_RE.search(sent) or INSTR_SKIP_RE.search(sent):
+                continue
+            found.append((len(INSTR_STRONG_RE.findall(sent)), order, sent))
+            order += 1
+    found.sort(key=lambda f: (-f[0], f[1]))
+    out: list[str] = []
+    seen: set[str] = set()
+    for _, _, sent in found:
+        if sent.lower() in seen:
+            continue
+        seen.add(sent.lower())
+        out.append(sent)
+        if len(out) == limit:
+            break
+    return out
+
+
+def enrich_instructions(items: list[dict], budget: int = PAGE_BUDGET) -> None:
+    """Read each new article once and keep its real instructions. Newest first."""
+    for it in sorted(items, key=lambda i: i.get("published") or "", reverse=True):
+        if budget <= 0:
+            break
+        if it.get("instructions_checked"):
+            continue
+        it["instructions"] = extract_instructions(fetch_page(it["link"]))
+        it["instructions_checked"] = True
         budget -= 1
 
 
@@ -667,11 +699,19 @@ def build_story(items: list[dict], kev: set[str], kev_checked: bool, now: dateti
         "kev_checked": kev_checked,
         "image": with_img["image"] if with_img else None,
         "image_source": with_img["source_name"] if with_img else None,
+        "instructions": _story_instructions(items),
         "sources": [
             {"name": i["source_name"], "title": i["title"], "url": i["link"], "published": i["published"]}
             for i in items
         ],
     }
+
+
+def _story_instructions(items: list[dict]) -> list[dict]:
+    src = next((i for i in items if i.get("instructions")), None)
+    if not src:
+        return []
+    return [{"text": t, "source": src["source_name"], "url": src["link"]} for t in src["instructions"]]
 
 
 def quality_warnings(stories: list[dict]) -> list[str]:
@@ -989,6 +1029,20 @@ def msrc_cve_rows(stories: list[dict]) -> list[dict]:
 
 
 SUG_URL = "https://msrc.microsoft.com/update-guide/vulnerability/{cve}"
+REVISION_RE = re.compile(r"informational change|^\s*(updated|revised)\b", re.I)
+MD_LINK_RE = re.compile(r"\[([^\]]+)\]\([^)]*\)")
+MSRC_NAME = "Microsoft Security Response Center"
+
+
+def is_revision(s: dict) -> bool:
+    """Microsoft re-posts an existing entry to change links or acknowledgements. That is not a new fix."""
+    return bool(REVISION_RE.search(s.get("summary") or ""))
+
+
+def primary_cves(s: dict) -> list[str]:
+    """CVE IDs named in the entry title. Other IDs in the body are shown as 'also named', not as rows."""
+    named = sorted({c.upper() for c in CVE_RE.findall(s["title"])})
+    return named or sorted(s["cves"])[:1]
 
 
 def _cve_status(s: dict) -> tuple[str, str, str]:
@@ -1000,24 +1054,23 @@ def _cve_status(s: dict) -> tuple[str, str, str]:
     return ("Not reported", "None", "No exploitation signal in this run. This does not mean the flaw is safe.")
 
 
-def _cve_order(priority: str) -> str:
-    return {"Critical": "1 · Patch first", "High": "2 · This cycle"}.get(priority, "3 · Normal cycle")
-
-
 def _cve_blurb(s: dict) -> str:
     text = " ".join((s.get("summary") or "").split())
+    text = MD_LINK_RE.sub(r"\1", text)  # feed text contains markdown links; show the link text only
     if not text or text.rstrip(".").lower() == s["title"].rstrip(".").lower():
         return "The feed gives no description. Open the Security Update Guide entry for details."
     return _short(text, 220)
 
 
 def cve_entries(rows: list[dict]) -> list[tuple[str, dict]]:
-    """One entry per CVE, in the order of the input rows (KEV first). The first story naming a CVE wins."""
+    """One (CVE, entry) pair per CVE. Newest entry wins for duplicates. New CVEs first (KEV, then score), revisions last."""
     seen: dict[str, dict] = {}
-    for s in rows:
-        for cve in s["cves"]:
+    for s in sorted(rows, key=lambda x: x.get("published") or "", reverse=True):
+        for cve in primary_cves(s):
             seen.setdefault(cve, s)
-    return list(seen.items())
+    entries = list(seen.items())
+    entries.sort(key=lambda e: (is_revision(e[1]), not e[1]["kev"], -e[1]["score"]))
+    return entries
 
 
 def cve_table(rows: list[dict]) -> str:
@@ -1032,34 +1085,55 @@ def cve_table(rows: list[dict]) -> str:
         "<li><strong>Not reported</strong>: no exploitation signal in this run. This does not mean the flaw is safe.</li>"
         "<li><strong>Priority</strong>: Critical = KEV, or exploitation reported by an official source. "
         "High = score 6 or more. Standard = everything else. The suggested order follows the priority.</li>"
+        "<li><strong>Also named</strong>: other CVE IDs in the same entry. They are listed there, not as separate rows.</li>"
+        "<li><strong>Revision</strong>: Microsoft changed an existing entry, for example links or acknowledgements. "
+        "No new fix is implied.</li>"
+        "<li><strong>Feed date</strong>: the feed gives one time per entry. CVEs in the same entry share it.</li>"
         "</ul><p class=\"meta\">This is the Microsoft Security Response Center feed only, not the complete Patch Tuesday "
         "list. Use the Security Update Guide for the full list.</p></div>"
     )
     entries = cve_entries(rows)
     if not entries:
         return legend + '<div class="empty">No Microsoft CVE entries in the current window.</div></section>'
-    n_kev = sum(1 for _, s in entries if s["kev"])
-    n_crit = sum(1 for _, s in entries if s["priority"] == "Critical")
-    n_high = sum(1 for _, s in entries if s["priority"] == "High")
-    counts = (f'<p class="meta cve-counts">{len(entries)} CVE{"s" if len(entries) != 1 else ""} · {n_kev} KEV · {n_crit} Critical · {n_high} High</p>')
+    new = [(c, s) for c, s in entries if not is_revision(s)]
+    n_rev = len(entries) - len(new)
+    n_kev = sum(1 for _, s in new if s["kev"])
+    n_crit = sum(1 for _, s in new if s["priority"] == "Critical")
+    n_high = sum(1 for _, s in new if s["priority"] == "High")
+    counts = (f'<p class="meta cve-counts">{len(new)} new CVE{"s" if len(new) != 1 else ""} · '
+              f"{n_kev} KEV · {n_crit} Critical · {n_high} High")
+    if n_rev:
+        counts += f" · {n_rev} revision{'s' if n_rev != 1 else ''} (no new fix)"
+    counts += "</p>"
     trs = []
     for cve, s in entries:
         label, cls, meaning = _cve_status(s)
-        prio = esc(s["priority"])
+        others = [c for c in s["cves"] if c not in primary_cves(s)]
+        also = ""
+        if others:
+            shown = ", ".join(others[:8]) + (f" and {len(others) - 8} more" if len(others) > 8 else "")
+            also = f'<p class="meta cve-also">Also named in this entry: {esc(shown)}</p>'
+        if is_revision(s):
+            prio_cell = ('<span class="badge None">Revision</span>'
+                         '<div class="meta">Check only if you already track this product</div>')
+        else:
+            prio = esc(s["priority"])
+            order = {"Critical": "1 · Patch first", "High": "2 · This cycle"}.get(s["priority"], "3 · Normal cycle")
+            prio_cell = f'<span class="badge {prio}">{prio}</span><div class="meta">{esc(order)}</div>'
         trs.append(
             "<tr>"
             f'<td class="mono"><a class="cve-id" href="{SUG_URL.format(cve=esc(cve))}" target="_blank" '
             f'rel="noopener noreferrer">{esc(cve)}</a></td>'
-            f'<td><div class="cve-title">{esc(s["title"])}</div><p class="meta cve-blurb">{esc(_cve_blurb(s))}</p></td>'
+            f'<td><div class="cve-title">{esc(s["title"])}</div><p class="meta cve-blurb">{esc(_cve_blurb(s))}</p>{also}</td>'
             f'<td><span class="badge {cls}" title="{esc(meaning)}">{esc(label)}</span></td>'
-            f'<td><span class="badge {prio}">{prio}</span><div class="meta">{esc(_cve_order(s["priority"]))}</div></td>'
+            f"<td>{prio_cell}</td>"
             f'<td class="meta">{esc(fmt_date(s["published"]))}</td>'
             f'<td><a href="../story/{esc(s["id"])}.html">Story</a></td>'
             "</tr>"
         )
     return (legend + counts + '<div class="table-wrap"><table class="cve-table"><thead><tr>'
             '<th scope="col">CVE</th><th scope="col">What it is</th><th scope="col">Exploitation</th>'
-            '<th scope="col">Priority</th><th scope="col">Date</th><th scope="col">Details</th></tr></thead><tbody>'
+            '<th scope="col">Priority</th><th scope="col">Feed date</th><th scope="col">Details</th></tr></thead><tbody>'
             + "".join(trs) + "</tbody></table></div></section>")
 
 def section_page(sec: str, arts: list[dict], cfg: dict, site_cfg: dict,
@@ -1219,6 +1293,9 @@ def suggest_action(s: dict) -> dict:
     elif "exploited" in tags:
         kind, text = "investigate", (f"Attacks are reported. {check} "
                                      "Compare your logs and detections with the indicators in the original report.")
+    elif s.get("cves") and any(x.get("name") == "Microsoft Security Response Center" for x in s["sources"]) and is_revision(s):
+        kind, text = "monitor", ("Microsoft revised this entry without a new fix. "
+                                 "Check the Security Update Guide only if you already track this product.")
     elif s.get("cves") and any(x.get("name") == "Microsoft Security Response Center" for x in s["sources"]):
         # Microsoft's own security update list: a fix exists, so it is never "no action".
         kind, text = "patch-normal", (f"Microsoft lists this CVE in its security update list. {check} "
@@ -1403,7 +1480,26 @@ def story_page(s: dict, cfg: dict) -> str:
         kev_line = f"CVE(s) mentioned: {esc(', '.join(s['cves']))}. KEV check unavailable in this run."
     else:
         kev_line = "No CVE identifier found in the feed text."
-    checks = "".join(f"<li>{esc(c)}</li>" for c in CHECKS[s["category"]])
+    instr = s.get("instructions") or []
+    if instr:
+        items_html = "".join(
+            f'<li>&ldquo;{esc(x["text"])}&rdquo; <span class="meta">— <a href="{esc(x["url"])}" '
+            f'rel="nofollow noopener noreferrer" target="_blank">{esc(x["source"])}</a></span></li>'
+            for x in instr)
+        instr_block = ("<h2>Instructions from the source</h2>"
+                       "<p class=\"note\">Sentences quoted word for word from the original article. "
+                       "Check each one against the article before you act.</p>"
+                       f"<ul>{items_html}</ul>")
+    else:
+        instr_block = ("<h2>Instructions from the source</h2>"
+                       "<p class=\"note\">We found no specific instructions in the source article. "
+                       "Open the original and look for a recommendation or a fix.</p>")
+    if any(x.get("name") == MSRC_NAME for x in s["sources"]) and s["cves"]:
+        sug = "".join(
+            f'<li><a href="{SUG_URL.format(cve=esc(c))}" rel="noopener noreferrer" target="_blank">{esc(c)}</a>'
+            f" — affected products, fixes and KB links</li>" for c in s["cves"])
+        instr_block += ("<p>Microsoft's official fix details for this entry are on the Security Update Guide:</p>"
+                        f"<ul>{sug}</ul>")
     body = f"""<p class="meta"><a href="../index.html">← Back to home</a></p>
 <p class="meta"><span class="badge {esc(s['priority'])}">{esc(s['priority'])}</span>{esc(cat_label)}</p>
 <h1>{esc(s['title'])}</h1>
@@ -1414,9 +1510,7 @@ def story_page(s: dict, cfg: dict) -> str:
 <p class="meta">Summary is the feed's excerpt, shortened. It is not a full article.</p>
 <h2>Why it matters</h2>
 <p>{esc(WHY[s['category']])}</p>
-<h2>Generic checks</h2>
-<p class="note">These are general checks for this category, not verified recommendations for this specific incident.</p>
-<ul>{checks}</ul>
+{instr_block}
 <h2>Why this priority</h2>
 <div class="box"><p><strong>{esc(s['priority'])}</strong>. Criteria: Critical = CVE listed in CISA KEV, or exploitation reported by an official source. High = score 6 or more. Otherwise Standard.</p>
 <ul>{reasons}</ul>
@@ -1530,6 +1624,7 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
     items = merge(stored, fresh, now, cfg.get("retention_days", 7))
     if fixtures is None:  # live runs only; offline tests never touch the network
         enrich_images(items)
+        enrich_instructions(items)
     items_text = json.dumps({"items": sorted(items, key=lambda i: i["link"])}, indent=1, ensure_ascii=False)
 
     stories = [build_story(g, kev, kev_checked, now) for g in cluster(items)]
@@ -1565,7 +1660,7 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
                      s["score"], s["image"], [x["url"] for x in s["sources"]]] for s in stories],
         "articles": [[a["section"], a["slug"], a["title"], a["date"], a["summary"], a["_md"]] for a in articles],
         "site": site_cfg,
-        "render": "5.11",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
+        "render": "5.13",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
     }, ensure_ascii=False, sort_keys=True)
     digest = hashlib.sha1(digest_src.encode("utf-8")).hexdigest()
     digest_file = data_file.parent / "digest.txt"
