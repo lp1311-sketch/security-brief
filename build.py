@@ -386,6 +386,14 @@ def load_kev(fixtures: Path | None) -> tuple[set[str], str | None]:
         return set(), f"KEV unavailable: {e}"
 
 
+ASIDE_RE = re.compile(r"<aside\b[^>]*>.*?</aside>", re.I | re.S)
+
+
+def _strip_aside(raw_html: str) -> str:
+    """Drop table-of-contents <aside> blocks that some feeds put inside the article body."""
+    return ASIDE_RE.sub(" ", raw_html or "")
+
+
 def parse_feed(data: bytes, src: dict) -> list[dict]:
     root = ET.fromstring(data)
     out: list[dict] = []
@@ -408,7 +416,11 @@ def parse_feed(data: bytes, src: dict) -> list[dict]:
         if not title or not link:
             continue
 
-        body_raw = next((r for r in (raw("encoded"), raw("description"), raw("summary"), raw("content")) if r.strip()), "")
+        # Microsoft Security Blog starts content:encoded with a table-of-contents <aside>.
+        # Remove those blocks before choosing the summary, image and CVE ids.
+        cleaned = {n: _strip_aside(raw(n)) for n in ("encoded", "description", "summary", "content")}
+        body_raw = next((cleaned[n] for n in ("encoded", "description", "summary", "content") if cleaned[n].strip()), "")
+        all_raw = " ".join(cleaned.values())
 
         image = None
         for c in entry:
@@ -422,13 +434,13 @@ def parse_feed(data: bytes, src: dict) -> list[dict]:
             if image:
                 break
         if not image:
-            m = IMG_RE.search(body_raw)
+            m = IMG_RE.search(all_raw)
             if m:
                 image = https_image(m.group(1))
 
         date = _date(raw("pubdate") or raw("published") or raw("updated") or raw("date"))
         summary = _short(clean_excerpt(_clean(body_raw)), 320)
-        cves = sorted({c.upper() for c in CVE_RE.findall(f"{title} {body_raw}")})
+        cves = sorted({c.upper() for c in CVE_RE.findall(f"{title} {all_raw}")})
 
         out.append({
             "id": hashlib.sha1(link.encode()).hexdigest()[:12],
@@ -961,7 +973,7 @@ def article_page(a: dict, cfg: dict, site_cfg: dict) -> str:
 def msrc_cve_rows(stories: list[dict]) -> list[dict]:
     """Stories from the Microsoft Security Response Center feed that name at least one CVE. KEV first, then score."""
     rows = [s for s in stories
-            if s["cves"] and any(x["name"].startswith("Microsoft Security") for x in s["sources"])]
+            if s["cves"] and any(x["name"] == "Microsoft Security Response Center" for x in s["sources"])]
     return sorted(rows, key=lambda s: (not s["kev"], -s["score"]))
 
 
@@ -1489,7 +1501,7 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
                      s["score"], s["image"], [x["url"] for x in s["sources"]]] for s in stories],
         "articles": [[a["section"], a["slug"], a["title"], a["date"], a["summary"], a["_md"]] for a in articles],
         "site": site_cfg,
-        "render": "5.6",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
+        "render": "5.9",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
     }, ensure_ascii=False, sort_keys=True)
     digest = hashlib.sha1(digest_src.encode("utf-8")).hexdigest()
     digest_file = data_file.parent / "digest.txt"
