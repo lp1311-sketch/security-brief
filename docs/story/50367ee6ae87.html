@@ -5,16 +5,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Langflow&#x27;s Critical Authenticated RCE Flaw Targeted in 1,423 Honeypot Exploit Attempts | Security Brief</title>
 <meta name="description" content="Threat actors are exploiting a critical security flaw in Langflow, according to an alert from Previdian. Langflow is an open-source platform that…">
+<script>(function(){
+var root=document.documentElement,dark=false,saved=null;
+try{saved=localStorage.getItem('sb-theme')}catch(e){}
+dark=saved?saved==='dark':(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches);
+function apply(){root.setAttribute('data-theme',dark?'dark':'light');
+var b=document.getElementById('theme-toggle');
+if(b){b.textContent=dark?'Light mode':'Dark mode';b.setAttribute('aria-pressed',String(dark));}}
+apply();
+document.addEventListener('DOMContentLoaded',function(){
+var b=document.getElementById('theme-toggle');
+if(b){b.addEventListener('click',function(){dark=!dark;try{localStorage.setItem('sb-theme',dark?'dark':'light')}catch(e){}apply();});}
+apply();});
+})();</script>
 <link rel="stylesheet" href="../style.css">
 <link rel="alternate" type="application/rss+xml" title="Security Brief" href="https://lp1311-sketch.github.io/security-brief/feed.xml">
 </head>
 <body>
-<header><div class="wrap">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap">
 <a class="brand" href="../index.html">Security Brief</a>
-<nav aria-label="Categories"><a href="../index.html#threats">Ransomware</a><a href="../index.html#vulnerabilities">Vulnerabilities</a><a href="../index.html#ai">AI Security</a><a href="../index.html#cloud">Cloud</a><a href="../index.html#microsoft">Microsoft</a></nav>
+<nav class="nav" aria-label="Categories"><a href="../index.html#threats">Threats</a><a href="../index.html#vulnerabilities">Vulnerabilities</a><a href="../index.html#ai">AI</a><a href="../index.html#cloud">Cloud &amp; Identity</a><a href="../index.html#microsoft">Microsoft</a></nav>
+<button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false">Dark mode</button>
 </div></header>
-<main>
-<p class="meta"><a href="../index.html">← Back to home</a></p>
+<main id="main" class="wrap">
+<article class="prose"><p class="meta"><a href="../index.html">← Back to home</a></p>
 <p class="meta"><span class="badge Standard">Standard</span>Vulnerabilities &amp; Exploited CVEs</p>
 <h1>Langflow&#x27;s Critical Authenticated RCE Flaw Targeted in 1,423 Honeypot Exploit Attempts</h1>
 <p class="meta">Published: 15 Oct 2026, 07:07 UTC · Priority score 3</p>
@@ -33,8 +48,8 @@
 <p>CVE(s) mentioned: CVE-2026-105740. Not in the CISA KEV catalog at the time of this run.</p></div>
 <h2>Sources</h2>
 <ul><li><a href="https://thehackernews.com/2026/10/langflows-critical-authenticated-rce.html" rel="nofollow noopener noreferrer" target="_blank">Langflow&#x27;s Critical Authenticated RCE Flaw Targeted in 1,423 Honeypot Exploit Attempts</a> — The Hacker News, 15 Oct 2026, 07:07 UTC</li></ul>
-<p class="note">Automated page. Verify facts in the original articles before acting on them.</p>
+<p class="note">Automated page. Verify facts in the original articles before acting on them.</p></article>
 </main>
-<footer>Automated briefing. Headlines and short excerpts come from public RSS feeds, and every story links to the original publisher. Not affiliated with any source. <a href="../feed.xml">RSS</a> · <a href="../status.json">Run status</a></footer>
+<footer class="site-footer"><div class="wrap">Automated briefing. Headlines and short excerpts come from public RSS feeds, and every story links to the original publisher. Not affiliated with any source. &middot; <a href="../feed.xml">RSS</a> &middot; <a href="../status.json">Run status</a></div></footer>
 </body>
 </html>
