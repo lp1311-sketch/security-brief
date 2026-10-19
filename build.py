@@ -392,46 +392,91 @@ def quality_warnings(stories: list[dict]) -> list[str]:
 # ---------- rendering ----------
 
 CSS = """
-:root{--navy:#0b1a33;--ink:#14213d;--muted:#4b5563;--line:#e5e7eb;--blue:#1d4ed8;--bg:#f7f8fb;--crit:#b91c1c}
+:root{--bg:#f5f6f8;--surface:#ffffff;--ink:#0f172a;--muted:#475569;--line:#e2e8f0;--accent:#1d4ed8;--brand:#0b1a33;--crit:#b91c1c;--high:#fde68a;--high-ink:#78350f;--chip:#e0e7ff;--chip-ink:#1e3a8a;--serif:Georgia,"Iowan Old Style","Times New Roman",serif;--sans:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color-scheme:light}
+[data-theme="dark"]{--bg:#0a1120;--surface:#111a2d;--ink:#e6edf7;--muted:#a3b3c9;--line:#243452;--accent:#7cb3ff;--brand:#060b16;--chip:#1e2d4d;--chip-ink:#bcd3ff;--high:#7c4a03;--high-ink:#fde68a;color-scheme:dark}
 *{box-sizing:border-box}
-body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
-a{color:var(--blue)}
-header{background:var(--navy);color:#fff;padding:18px 20px}
-header .wrap{max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;justify-content:space-between}
-header a{color:#fff;text-decoration:none}
-.brand{font-weight:800;font-size:1.3rem;letter-spacing:.02em}
-nav a{margin-right:14px;font-size:.92rem;opacity:.92}
-nav a:hover,nav a:focus{opacity:1;text-decoration:underline}
-main{max-width:1100px;margin:0 auto;padding:28px 20px 60px}
-h1{font-size:1.9rem;line-height:1.2;margin:.3em 0 .4em}
-h2{font-size:1.25rem;margin:2rem 0 .8rem;border-bottom:2px solid var(--line);padding-bottom:.3rem}
-.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
-.card{background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
-.card img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block;background:var(--navy)}
-.card .body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
-.card h3{font-size:1.05rem;margin:0;line-height:1.3}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:12px;top:12px;background:var(--surface);color:var(--ink);padding:8px 12px;z-index:10}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+.site-header{position:sticky;top:0;z-index:5;background:var(--brand);color:#fff}
+.site-header .wrap{display:flex;align-items:center;gap:16px;min-height:60px}
+.brand{font-family:var(--serif);font-weight:700;font-size:1.25rem;color:#fff;text-decoration:none;white-space:nowrap}
+.nav{display:flex;gap:4px;overflow-x:auto;flex:1 1 0;min-width:0;scrollbar-width:none}
+.nav a{color:#cbd5e1;text-decoration:none;font-size:.9rem;padding:6px 10px;border-radius:6px;white-space:nowrap}
+.nav a:hover,.nav a:focus-visible{color:#fff;background:rgba(255,255,255,.08)}
+.theme-toggle{flex:none;margin-left:auto;background:transparent;color:#fff;border:1px solid #64748b;border-radius:999px;padding:6px 14px;font:inherit;font-size:.85rem;cursor:pointer;white-space:nowrap}
+.theme-toggle:hover{background:rgba(255,255,255,.08)}
+main.wrap{padding-top:32px;padding-bottom:64px}
+.intro{margin-bottom:24px}
+.intro h1,.prose h1{font-family:var(--serif);font-size:clamp(1.8rem,3.2vw,2.5rem);line-height:1.15;margin:.2em 0 .3em;letter-spacing:-.01em}
+.section{margin-top:44px}
+.section h2{font-family:var(--serif);font-size:1.35rem;margin:0 0 14px;padding-left:12px;border-left:4px solid var(--accent)}
+.hero{display:grid;grid-template-columns:1.25fr 1fr;background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.hero-media img{width:100%;height:100%;min-height:260px;object-fit:cover;display:block;background:var(--brand)}
+.hero-body{padding:28px;display:flex;flex-direction:column;gap:10px;justify-content:center}
+.hero-body h2{font-family:var(--serif);font-size:clamp(1.5rem,2.6vw,2rem);line-height:1.2;margin:0}
+.hero-body h2 a{color:var(--ink);text-decoration:none}
+.hero-body h2 a:hover,.hero-body h2 a:focus-visible{text-decoration:underline}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column;transition:border-color .15s}
+.card:hover{border-color:var(--accent)}
+.card img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;background:var(--brand)}
+.card-body{padding:16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card h3{font-family:var(--serif);font-size:1.12rem;line-height:1.3;margin:0}
 .card h3 a{color:var(--ink);text-decoration:none}
-.card h3 a:hover,.card h3 a:focus{text-decoration:underline}
-.meta{font-size:.84rem;color:var(--muted);margin:0}
-.badge{display:inline-block;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:2px 8px;border-radius:4px;background:#e0e7ff;color:#1e3a8a;margin-right:6px}
+.card h3 a:hover,.card h3 a:focus-visible{text-decoration:underline}
+.summary{margin:0;color:var(--muted);font-size:.95rem}
+.meta{margin:0;color:var(--muted);font-size:.84rem}
+.kicker{margin:0;font-size:.8rem;color:var(--muted);display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.badge{display:inline-block;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:3px 8px;border-radius:4px;background:var(--chip);color:var(--chip-ink)}
 .badge.Critical{background:var(--crit);color:#fff}
-.badge.High{background:#fde68a;color:#78350f}
-figure{margin:18px 0}
-figure img{width:100%;height:auto;border-radius:8px;aspect-ratio:16/9;object-fit:cover;background:var(--navy)}
-figcaption{font-size:.8rem;color:var(--muted);margin-top:4px}
-.box{background:#fff;border:1px solid var(--line);border-radius:10px;padding:16px 20px;margin:16px 0}
-.note{background:#eef2ff;border-radius:8px;padding:12px 16px;font-size:.92rem}
-.empty{background:#fff;border:1px dashed #9ca3af;border-radius:10px;padding:24px;color:var(--muted)}
-footer{max-width:1100px;margin:0 auto;padding:20px;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
+.badge.High{background:var(--high);color:var(--high-ink)}
+.note{background:var(--chip);color:var(--chip-ink);border-radius:8px;padding:12px 16px;font-size:.92rem}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 20px}
+.empty{background:var(--surface);border:1px dashed var(--muted);border-radius:12px;padding:24px;color:var(--muted)}
+.prose{max-width:760px;margin:0 auto}
+.prose h2{font-family:var(--serif);font-size:1.3rem;margin:2rem 0 .6rem}
+.prose figure{margin:24px 0}
+.prose figure img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;background:var(--brand);display:block}
+figcaption{font-size:.8rem;color:var(--muted);margin-top:6px}
+.prose ul{padding-left:1.2rem}
+.site-footer{border-top:1px solid var(--line);color:var(--muted);font-size:.85rem;padding:24px 0}
 :focus-visible{outline:3px solid #f59e0b;outline-offset:2px}
-@media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
+@media (max-width:760px){
+  .hero{grid-template-columns:1fr}
+  .hero-media img{min-height:0;aspect-ratio:16/9}
+  .hero-body{padding:20px}
+  .site-header .wrap{flex-wrap:wrap;padding-top:10px;padding-bottom:10px}
+  .theme-toggle{margin-left:0}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 """
+
+THEME_JS = """(function(){
+var root=document.documentElement,dark=false,saved=null;
+try{saved=localStorage.getItem('sb-theme')}catch(e){}
+dark=saved?saved==='dark':(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches);
+function apply(){root.setAttribute('data-theme',dark?'dark':'light');
+var b=document.getElementById('theme-toggle');
+if(b){b.textContent=dark?'Light mode':'Dark mode';b.setAttribute('aria-pressed',String(dark));}}
+apply();
+document.addEventListener('DOMContentLoaded',function(){
+var b=document.getElementById('theme-toggle');
+if(b){b.addEventListener('click',function(){dark=!dark;try{localStorage.setItem('sb-theme',dark?'dark':'light')}catch(e){}apply();});}
+apply();});
+})();"""
+
+SHORT_NAV = {"threats": "Threats", "vulnerabilities": "Vulnerabilities", "ai": "AI",
+             "cloud": "Cloud & Identity", "microsoft": "Microsoft"}
 
 
 def _layout(cfg: dict, title: str, desc: str, body: str, base: str) -> str:
     site = esc(cfg["site_name"])
     nav = "".join(
-        f'<a href="{base}index.html#{cid}">{esc(CATEGORIES[cid][0].split(" & ")[0].split(",")[0])}</a>'
+        f'<a href="{base}index.html#{cid}">{esc(SHORT_NAV[cid])}</a>'
         for cid in CATEGORY_ORDER if cid != "general"
     )
     return f"""<!doctype html>
@@ -441,18 +486,21 @@ def _layout(cfg: dict, title: str, desc: str, body: str, base: str) -> str:
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(title)} | {site}</title>
 <meta name="description" content="{esc(desc)}">
+<script>{THEME_JS}</script>
 <link rel="stylesheet" href="{base}style.css">
 <link rel="alternate" type="application/rss+xml" title="{site}" href="{esc(cfg['site_url'])}/feed.xml">
 </head>
 <body>
-<header><div class="wrap">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap">
 <a class="brand" href="{base}index.html">{site}</a>
-<nav aria-label="Categories">{nav}</nav>
+<nav class="nav" aria-label="Categories">{nav}</nav>
+<button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false">Dark mode</button>
 </div></header>
-<main>
+<main id="main" class="wrap">
 {body}
 </main>
-<footer>Automated briefing. Headlines and short excerpts come from public RSS feeds, and every story links to the original publisher. Not affiliated with any source. <a href="{base}feed.xml">RSS</a> · <a href="{base}status.json">Run status</a></footer>
+<footer class="site-footer"><div class="wrap">Automated briefing. Headlines and short excerpts come from public RSS feeds, and every story links to the original publisher. Not affiliated with any source. &middot; <a href="{base}feed.xml">RSS</a> &middot; <a href="{base}status.json">Run status</a></div></footer>
 </body>
 </html>
 """
@@ -463,32 +511,51 @@ def _card(s: dict) -> str:
     names = ", ".join(dict.fromkeys(x["name"] for x in s["sources"]))
     return f"""<article class="card">
 <img src="{esc(img)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360">
-<div class="body">
-<p class="meta"><span class="badge {esc(s['priority'])}">{esc(s['priority'])}</span>{esc(CATEGORIES[s['category']][0])}</p>
+<div class="card-body">
+<p class="kicker"><span class="badge {esc(s['priority'])}">{esc(s['priority'])}</span>{esc(CATEGORIES[s['category']][0])}</p>
 <h3><a href="story/{esc(s['id'])}.html">{esc(s['title'])}</a></h3>
-<p class="meta">{esc(_short(s['summary'], 160))}</p>
-<p class="meta">{esc(names)} · {esc(fmt_date(s['published']))}</p>
+<p class="summary">{esc(_short(s['summary'], 150))}</p>
+<p class="meta">{esc(names)} &middot; {esc(fmt_date(s['published']))}</p>
 </div>
 </article>"""
 
 
+def _hero(s: dict) -> str:
+    img = s["image"] or cover_svg(CATEGORIES[s["category"]][0])
+    names = ", ".join(dict.fromkeys(x["name"] for x in s["sources"]))
+    return f"""<section class="hero" aria-labelledby="hero-title">
+<a class="hero-media" href="story/{esc(s['id'])}.html" tabindex="-1" aria-hidden="true"><img src="{esc(img)}" alt="" loading="eager" referrerpolicy="no-referrer" width="640" height="360"></a>
+<div class="hero-body">
+<p class="kicker"><span class="badge {esc(s['priority'])}">{esc(s['priority'])}</span>{esc(CATEGORIES[s['category']][0])}</p>
+<h2 id="hero-title"><a href="story/{esc(s['id'])}.html">{esc(s['title'])}</a></h2>
+<p class="summary">{esc(_short(s['summary'], 260))}</p>
+<p class="meta">{esc(names)} &middot; {esc(fmt_date(s['published']))}</p>
+</div>
+</section>"""
+
+
 def index_page(stories: list[dict], cfg: dict, now: datetime, status: dict) -> str:
-    top = stories[:3]
-    parts = ['<h1>Security news, ranked and linked to the original sources</h1>',
-             f'<p class="meta">Last automated update: {esc(now.strftime("%d %b %Y, %H:%M UTC"))}. '
-             f'Feed status: {status["sources_ok"]} of {status["sources_total"]} sources reachable.</p>']
+    parts = [
+        '<section class="intro"><h1>Security news, ranked</h1>'
+        f'<p class="meta">Last content update: {esc(now.strftime("%d %b %Y, %H:%M UTC"))} &middot; '
+        f'Feed status: {status["sources_ok"]} of {status["sources_total"]} sources reachable &middot; '
+        "Checked automatically, updated when new stories arrive.</p></section>"
+    ]
     if not stories:
-        parts.append('<div class="empty">No stories yet. The next automated run will fill this page, or check the run status.</div>')
+        parts.append('<div class="empty">No stories yet. The next automated check will fill this page.</div>')
     else:
-        parts.append('<h2 id="top">Top stories</h2><div class="grid">' + "".join(_card(s) for s in top) + "</div>")
+        featured = stories[:4]
+        parts.append(_hero(featured[0]))
+        if len(featured) > 1:
+            parts.append('<section class="section" aria-label="More top stories"><h2>Also in focus</h2><div class="grid">'
+                         + "".join(_card(s) for s in featured[1:]) + "</div></section>")
+        featured_ids = {s["id"] for s in featured}
         for cid in CATEGORY_ORDER:
-            label = CATEGORIES[cid][0]
-            items = [s for s in stories if s["category"] == cid][:6]
-            parts.append(f'<h2 id="{cid}">{esc(label)}</h2>')
-            if items:
-                parts.append('<div class="grid">' + "".join(_card(s) for s in items) + "</div>")
-            else:
-                parts.append('<p class="meta">No stories in this category in the current window.</p>')
+            items = [s for s in stories if s["category"] == cid and s["id"] not in featured_ids][:6]
+            if not items:
+                continue
+            parts.append(f'<section class="section" id="{cid}"><h2>{esc(CATEGORIES[cid][0])}</h2>'
+                         '<div class="grid">' + "".join(_card(s) for s in items) + "</div></section>")
     return _layout(cfg, "Home", "Ranked cybersecurity news with links to original sources.", "\n".join(parts), "")
 
 
@@ -536,7 +603,7 @@ def story_page(s: dict, cfg: dict) -> str:
 <ul>{srcs}</ul>
 <p class="note">Automated page. Verify facts in the original articles before acting on them.</p>"""
     desc = _short(s["summary"] or s["title"], 150)
-    return _layout(cfg, s["title"], desc, body, "../")
+    return _layout(cfg, s["title"], desc, f'<article class="prose">{body}</article>', "../")
 
 
 def feed_xml(stories: list[dict], cfg: dict, now: datetime) -> str:
@@ -609,8 +676,7 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
 
     stored = json.loads(data_file.read_text(encoding="utf-8"))["items"] if data_file.exists() else []
     items = merge(stored, fresh, now, cfg.get("retention_days", 7))
-    data_file.parent.mkdir(parents=True, exist_ok=True)
-    data_file.write_text(json.dumps({"items": items}, indent=1, ensure_ascii=False), encoding="utf-8")
+    items_text = json.dumps({"items": sorted(items, key=lambda i: i["link"])}, indent=1, ensure_ascii=False)
 
     stories = [build_story(g, kev, kev_checked, now) for g in cluster(items)]
     stories.sort(key=lambda s: (s["score"], s["published"] or ""), reverse=True)
@@ -632,7 +698,26 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
         "kev_loaded": kev_checked,
         "warnings": warnings,
     }
-    write_site(out, stories, cfg, now, status)
+
+    # Only touch tracked files when the published content changes, so the
+    # repo does not get a commit on every 20-minute run.
+    digest_src = json.dumps(
+        [[s["id"], s["title"], s["summary"], s["published"], s["category"], s["priority"],
+          s["score"], s["image"], [x["url"] for x in s["sources"]]] for s in stories],
+        ensure_ascii=False,
+    )
+    digest = hashlib.sha1(digest_src.encode("utf-8")).hexdigest()
+    digest_file = data_file.parent / "digest.txt"
+    prev_digest = digest_file.read_text(encoding="utf-8").strip() if digest_file.exists() else ""
+    site_missing = not (out / "index.html").exists()
+    status["changed"] = digest != prev_digest or site_missing
+    if status["changed"]:
+        data_file.parent.mkdir(parents=True, exist_ok=True)
+        data_file.write_text(items_text, encoding="utf-8")
+        digest_file.write_text(digest + "\n", encoding="utf-8")
+        write_site(out, stories, cfg, now, status)
+    elif not data_file.exists() or data_file.read_text(encoding="utf-8") != items_text:
+        data_file.write_text(items_text, encoding="utf-8")
     return status
 
 
