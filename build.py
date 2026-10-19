@@ -775,6 +775,7 @@ figcaption{font-size:.8rem;color:var(--muted);margin-top:8px}
   .bar{flex-wrap:wrap;padding:10px 0;row-gap:8px}
   .nav{order:3;flex-basis:100%}
   .grid{grid-template-columns:1fr}
+  .cve-table th:nth-child(5),.cve-table td:nth-child(5),.cve-table th:nth-child(6),.cve-table td:nth-child(6){display:none}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.card:hover{transform:none}}
 """
@@ -928,6 +929,7 @@ EXTRA_CSS = """
 .todo.kind-patch{border-left-color:var(--crit)}
 .todo.kind-investigate{border-left-color:var(--high)}
 .todo.kind-review{border-left-color:var(--accent)}
+.todo.kind-patch-normal{border-left-color:var(--high)}
 .todo h2{font-size:1.1rem;line-height:1.3;margin:8px 0 8px;font-weight:700;letter-spacing:-.01em}
 .todo h2 a{color:var(--ink);text-decoration:none}
 .todo h2 a:hover,.todo h2 a:focus-visible{text-decoration:underline;text-underline-offset:3px}
@@ -1186,8 +1188,9 @@ apply();
 })();"""
 
 
-ACTION_RANK = {"patch": 0, "investigate": 1, "review": 2, "monitor": 3}
-ACTION_LABEL = {"patch": "Patch now", "investigate": "Investigate", "review": "Review", "monitor": "Monitor"}
+ACTION_RANK = {"patch": 0, "investigate": 1, "patch-normal": 2, "review": 3, "monitor": 4}
+ACTION_LABEL = {"patch": "Patch now", "investigate": "Investigate", "patch-normal": "Patch in normal cycle",
+                "review": "Review", "monitor": "Monitor"}
 
 
 def affected(s: dict) -> tuple[str, str]:
@@ -1216,6 +1219,10 @@ def suggest_action(s: dict) -> dict:
     elif "exploited" in tags:
         kind, text = "investigate", (f"Attacks are reported. {check} "
                                      "Compare your logs and detections with the indicators in the original report.")
+    elif s.get("cves") and any(x.get("name") == "Microsoft Security Response Center" for x in s["sources"]):
+        # Microsoft's own security update list: a fix exists, so it is never "no action".
+        kind, text = "patch-normal", (f"Microsoft lists this CVE in its security update list. {check} "
+                                      "Plan the fix for your next regular update window.")
     elif tags & {"m365", "entra", "defender"}:
         kind, text = "review", f"{check} Use the original report as the reference for configuration and logs."
     else:
@@ -1558,7 +1565,7 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
                      s["score"], s["image"], [x["url"] for x in s["sources"]]] for s in stories],
         "articles": [[a["section"], a["slug"], a["title"], a["date"], a["summary"], a["_md"]] for a in articles],
         "site": site_cfg,
-        "render": "5.10",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
+        "render": "5.11",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
     }, ensure_ascii=False, sort_keys=True)
     digest = hashlib.sha1(digest_src.encode("utf-8")).hexdigest()
     digest_file = data_file.parent / "digest.txt"
