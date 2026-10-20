@@ -123,11 +123,12 @@
    "link": "https://grahamcluley.com/smashing-security-podcast-488/",
    "published": "2026-10-14T23:06:42+00:00",
    "summary": "A ransomware negotiator attended a cybersecurity conference, only to be arrested by the FBI in connection with its investigation into the ShinyHunters gang. Meanwhile, hackers get the keys to ASOS's app and the chance to message every single customer. What did they say? And how did the company respond? We have…",
-   "image": null,
+   "image": "https://grahamcluley.com/wp-content/uploads/2026/10/ss-episode-488.webp",
    "cves": [],
    "first_seen": "2026-10-20T09:53:14.101641+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "5f2037864b2f",
@@ -1821,6 +1822,47 @@
    "first_seen": "2026-10-20T09:53:14.101641+00:00",
    "image_checked": true,
    "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "ba5b9e5d876d",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Anti-Putin messages disrupt nationwide school assessments in Russia",
+   "link": "https://therecord.media/anti-putin-messages-disrupt-russian-education-platform",
+   "published": "2026-10-20T14:05:00+00:00",
+   "summary": "A pro-Ukraine group that says it operates within Russia took responsibility for anti-Putin messages appearing on an education assessment platform. Authorities said they had restored systems.",
+   "image": "https://cms.therecord.media/uploads/putin_55362835827_4a1a1c1cc9_o_43c1d7475b.jpg",
+   "cves": [],
+   "first_seen": "2026-10-20T14:40:25.978409+00:00",
+   "image_checked": true,
+   "instructions": [
+    "They also evaluate students' ability to apply their knowledge in areas such as mathematics, science, reading and financial literacy."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "314dad77bf51",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "AOMEI yet to notify customers after hackers hijacked its software updates",
+   "link": "https://therecord.media/aomei-yet-to-notify-customers-hijack-software",
+   "published": "2026-10-20T14:11:00+00:00",
+   "summary": "In an email, the Hong Kong-registered company confirmed to Recorded Future News that hackers repeatedly altered configuration files on its update servers between April and July, redirecting the software to download malware for minutes at a time.",
+   "image": "https://cms.therecord.media/uploads/cloud_backup_e577ae7321.jpg",
+   "cves": [],
+   "first_seen": "2026-10-20T14:40:25.978409+00:00",
+   "image_checked": true,
+   "instructions": [
+    "AOMEI, the maker of a standalone Windows backup tool, said Tuesday it has not yet identified or notified customers who were infected with malware after hackers hijacked its update server in a monthslong supply-chain attack.",
+    "In an email, the Hong Kong-registered company confirmed to Recorded Future News that hackers repeatedly altered configuration files on its update servers between April and July, redirecting the software to download malware for minutes at a time.",
+    "According to ManageEngine, AOMEI initially blamed malicious actors intercepting and modifying its update in transit rather than any issue on its own end.",
+    "The company has released a free detection tool and is urging anyone who used Backupper during the exposure windows to update and scan their systems."
+   ],
    "instructions_checked": true
   },
   {
@@ -3593,6 +3635,27 @@
    "source_type": "news"
   },
   {
+   "id": "4162cca6289c",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "DHS bans DeepSeek products across US federal civilian agencies",
+   "link": "https://www.bleepingcomputer.com/news/security/dhs-bans-deepseek-products-across-us-federal-civilian-agencies/",
+   "published": "2026-10-20T14:19:05+00:00",
+   "summary": "The U.S. Department of Homeland Security (DHS) is ordering federal civilian agencies to stop using DeepSeek products and remove them from government systems.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/20/robot-china.jpg",
+   "cves": [],
+   "first_seen": "2026-10-20T14:40:25.978409+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Submit any exception requests within 60 days of the order’s issuance, explaining the justification and proposed risk mitigations.",
+    "Department of Homeland Security (DHS) is ordering federal civilian agencies to stop using DeepSeek products and remove them from government systems.",
+    "Immediately remove covered products from agency IT systems, or seek an exception."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "43fc56afbb27",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4352,11 +4415,12 @@
    "link": "https://www.fortra.com/blog/krybit-ransomware-what-you-need-know",
    "published": "2026-10-16T10:25:12+00:00",
    "summary": "Krybit is a fast-growing ransomware gang that was hacked by a rival, hit back, and is still extorting victims. Find out how it works, who it has targeted, and what organisations can do to protect themselves. Read more in my article on the Fortra blog.",
-   "image": null,
+   "image": "https://www.fortra.com/sites/default/files/styles/og_image/public/2026-10/krybit.jpeg?itok=LM0ZzrsM",
    "cves": [],
    "first_seen": "2026-10-20T09:53:14.101641+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "b2dbdf4e9e45",
@@ -4441,7 +4505,8 @@
     "The end user must be able to fully veriy, at least in principle, that the model tey have is built only from the training data set.",
     "Thus “mitigation by segregation”, which is usually the best form of security."
    ],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "7bf6f5bbc65c",
@@ -4461,7 +4526,8 @@
     "Organizations should also avoid exposing management interfaces directly to the Internet and ensure that access to administrative services is restricted to trusted management networks or secured through VPNs and other appropriate network segmentation controls.”",
     "Claroty said it identified thousands of publicly accessible AK-SM 800A management interfaces, urging customers to upgrade their systems to firmware version R4.3.1, which contains the necessary patches.”"
    ],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "fd577205a9ba",
@@ -4499,7 +4565,8 @@
    "instructions": [
     "Thus errant / unexpected behaviour should be expected as a matter of normal usage."
    ],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "59dff61018ea",
@@ -4537,7 +4604,8 @@
     "Whilst not an issue for those with nefarious intent, it is a major financial road block for academic publication.",
     "In practical terms block ciphers are seen as no different to simple substitution ciphers that can in effect be broken by incredibly simple means (see the DES encrypted Linux Penguin image)."
    ],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "570936749f04",
@@ -4575,7 +4643,8 @@
    "cves": [],
    "first_seen": "2026-10-20T09:53:14.101641+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "ebff93066b7e",
