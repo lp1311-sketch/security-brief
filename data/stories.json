@@ -1160,6 +1160,24 @@
    "source_type": "news"
   },
   {
+   "id": "53ddecf9f5b1",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Critical FortiSIEM Flaw Gets Public Exploit PoC for Unauthenticated Remote Code Execution",
+   "link": "https://thehackernews.com/2026/10/critical-fortisiem-flaw-gets-public.html",
+   "published": "2026-10-20T15:38:52+00:00",
+   "summary": "Cybersecurity researchers have released a proof-of-concept (PoC) exploit for a recently patched critical security flaw impacting Fortinet FortiSIEM that could result in arbitrary code execution. The vulnerability, tracked as CVE-2026-106173 (CVSS score: 9.4), is a critical path traversal flaw that could allow an…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3BuJLxcpzxzxwpUcwsPb7L-gNCeXeyuPtNysOMHtf06VmANCx2DR3O52Puw9AQwUu0C8ccQ77MF_l0bAf4zL-hrvYO8jSHs6Km0Xz6-Q4yYm1thRvJ-y59qLRX9Qni0zD161qJ53oCgzEIo3NjOLKtgOrIAbOMsAhITOhL9qoy2v9D6tRU26m0fBoMDhJ/s1600/fort-poc.jpg",
+   "cves": [
+    "CVE-2026-106173"
+   ],
+   "first_seen": "2026-10-20T16:35:07.068000+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "222e66a51003",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1643,6 +1661,27 @@
    ],
    "instructions_checked": true,
    "source_type": "news"
+  },
+  {
+   "id": "0d304799e621",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Qilin and INC Ransomware Groups Exploit Palo Alto Networks Flaw to Bypass MFA",
+   "link": "https://thehackernews.com/2026/10/qilin-and-inc-ransomware-groups-exploit.html",
+   "published": "2026-10-20T15:32:27+00:00",
+   "summary": "Palo Alto Networks has disclosed that it's continuing to observe exploitation of a now-patched security flaw impacting PAN-OS and Prisma Access by ransomware actors. The activity relates to CVE-2026-0257 (CVSS score: 7.8), an authentication bypass flaw that could be exploited by bad actors to set up unauthorized VPN…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgd71tvun8MRT5muo9ZiruSzkyqhGkeh-_5dP4QardwiC54o4wW3PtC7I1jtP_vVX1rPujN_YdrmILFSZw_Ikl6v8Gn2w75v-90aSHpnngi2WE-Ezv6OAO37YY4pJpNwe_DcGWRMgIOUxAEPyVisI3SxXnV30HejoGfGtlXDfAgGkdqrdFJjAI7x6jjFFj-/s1600/palo-ransomware.jpg",
+   "cves": [
+    "CVE-2026-0257"
+   ],
+   "first_seen": "2026-10-20T16:35:07.068000+00:00",
+   "instructions": [
+    "Besides applying the latest fixes, Palo Alto Networks is recommending that organizations proactively hunt for indicators of compromise and initiate appropriate incident response protocols if successful gateway-connected events are detected.",
+    "\"Ransomware operators exploiting CVE-2026-0257 include Spikey Scorpius (aka Qilin) and Tarnished Scorpius (aka INC),\" Unit 42 researchers said in an update shared on Monday."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "2f67e7ff74fc",
@@ -4063,6 +4102,22 @@
    "instructions": [],
    "instructions_checked": true,
    "source_type": "news"
+  },
+  {
+   "id": "dff178c340ad",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "Close Identity Gaps in Software Development Before Unleashing AI",
+   "link": "https://www.darkreading.com/application-security/close-identity-gaps-sdlc-before-ai",
+   "published": "2026-10-20T15:35:45+00:00",
+   "summary": "Artificial Intelligence is complicating security in the software development lifecycle, but a Dark Reading roundtable found collaboration, better identity visibility, and reduced testing costs offer CISOs a way ahead.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt44a0332eb39140fa/679be79d9bc2cd9f0b986638/TippaPatt-software-developer-shutterstock.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-10-20T16:35:07.068000+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "8e2b4b8581aa",
