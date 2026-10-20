@@ -126,12 +126,30 @@
       "type": "vendor_blog"
     },
     {
-      "id": "cert-bund",
-      "name": "CERT-Bund (BSI) Warnungen",
-      "url": "https://wid.cert-bund.de/content/public/securityAdvisory/rss",
-      "site": "https://wid.cert-bund.de",
-      "official": true,
-      "type": "advisory"
+      "id": "m365-blog",
+      "name": "Microsoft 365 Blog",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/blog/feed/",
+      "site": "https://www.microsoft.com/en-us/microsoft-365/blog/",
+      "official": false,
+      "type": "vendor_blog",
+      "require_security": true
+    },
+    {
+      "id": "windows-blog",
+      "name": "Windows Experience Blog",
+      "url": "https://blogs.windows.com/feed/",
+      "site": "https://blogs.windows.com/",
+      "official": false,
+      "type": "vendor_blog",
+      "require_security": true
+    },
+    {
+      "id": "google-threat-intel",
+      "name": "Google Threat Intelligence",
+      "url": "https://cloud.google.com/blog/topics/threat-intelligence/rss/",
+      "site": "https://cloud.google.com/blog/topics/threat-intelligence",
+      "official": false,
+      "type": "vendor_blog"
     }
   ]
 }

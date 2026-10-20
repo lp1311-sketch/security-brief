@@ -472,6 +472,13 @@ def _strip_aside(raw_html: str) -> str:
     return ASIDE_RE.sub(" ", raw_html or "")
 
 
+SECURITY_RE = re.compile(r"secur|vulnerab|patch|exploit|malware|phish|attack|breach|threat|ransom|identity|\\bmfa\\b|cve|zero-day|attacker|incident|compromis|defen[cs]e|token|credential|botnet|backdoor", re.I)
+
+
+def is_security_item(item: dict) -> bool:
+    return bool(SECURITY_RE.search(f"{item.get('title', '')} {item.get('summary', '')}"))
+
+
 def parse_feed(data: bytes, src: dict) -> list[dict]:
     root = ET.fromstring(data)
     out: list[dict] = []
@@ -913,6 +920,7 @@ SHORT_NAV = {"threats": "Threats", "vulnerabilities": "Vulnerabilities", "ai": "
 
 def _layout(cfg: dict, title: str, desc: str, body: str, base: str, image: str | None = None) -> str:
     site = esc(cfg["site_name"])
+    year = datetime.now(timezone.utc).year
     links = [f'<a href="{base}index.html#{cid}">{esc(SHORT_NAV[cid])}</a>'
              for cid in CATEGORY_ORDER if cid != "general"]
     links.append(f'<a href="{base}briefings/index.html">Briefings</a>')
@@ -930,6 +938,7 @@ def _layout(cfg: dict, title: str, desc: str, body: str, base: str, image: str |
 {_og_tags(cfg, title, desc, image)}
 <script>{THEME_JS}</script>
 <link rel="stylesheet" href="{base}style.css">
+<link rel="icon" href="{base}favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" title="{site}" href="{esc(cfg['site_url'])}/feed.xml">
 </head>
 <body>
@@ -942,7 +951,7 @@ def _layout(cfg: dict, title: str, desc: str, body: str, base: str, image: str |
 <main id="main" class="wrap">
 {body}
 </main>
-<footer class="site-footer"><div class="wrap">Automated briefing. Headlines and short excerpts come from public RSS feeds, and every story links to the original publisher. Not affiliated with any source. &middot; <a href="{base}impressum.html">Impressum</a> &middot; <a href="{base}datenschutz.html">Privacy</a> &middot; <a href="{base}corrections.html">Corrections</a> &middot; <a href="{base}feed.xml">RSS</a> &middot; <a href="{base}status.json">Run status</a></div></footer>
+<footer class="site-footer"><div class="wrap"><p>&copy; {year} Leon Pavesic. Design, analysis and texts on this site are protected by copyright. Headlines, short excerpts and images belong to their original publishers and are linked to the source. Not affiliated with any source.</p><p><a href="{base}impressum.html">Impressum</a> &middot; <a href="{base}datenschutz.html">Privacy</a> &middot; <a href="{base}corrections.html">Corrections</a> &middot; <a href="{base}feed.xml">RSS</a> &middot; <a href="mailto:leon.pavesic@gmx.de">Contact</a> &middot; <a href="https://www.linkedin.com/in/leon-pavesic/" rel="me noopener noreferrer" target="_blank">LinkedIn</a> &middot; <a href="https://www.xing.com/profile/Leon_Pavesic" rel="me noopener noreferrer" target="_blank">XING</a></p></div></footer>
 </body>
 </html>
 """
@@ -1240,7 +1249,19 @@ def legal_pages(site_cfg: dict, cfg: dict) -> dict[str, str]:
         imp = "<p>Impressum: Angaben werden ergänzt.</p>"
         controller = "siehe Impressum"
     impressum = (
-        '<article class="prose"><h1>Impressum</h1>' + imp + "</article>"
+        '<article class="prose"><h1>Impressum</h1>' + imp
+        + "<h2>Urheberrecht</h2>"
+        "<p>Die Gestaltung, die Auswahl sowie die eigenen Analysen und Texte dieser Website sind urheberrechtlich geschützt. "
+        "Jede Verwertung außerhalb der Grenzen des Urheberrechts bedarf der schriftlichen Zustimmung des Verantwortlichen.</p>"
+        "<p>Schlagzeilen, Textauszüge, Vorschaubilder und Logos stammen von den jeweiligen Quellen und bleiben deren Eigentum. "
+        "Jede Meldung verlinkt auf den Originalartikel. Zitate sind kurz gehalten und als solche gekennzeichnet.</p>"
+        "<h2>Haftung für Inhalte</h2>"
+        "<p>Die Inhalte werden automatisch aus öffentlichen RSS-Feeds übernommen und gekürzt. Für Richtigkeit, Vollständigkeit "
+        "und Aktualität der Inhalte, insbesondere der Originalquellen, wird keine Gewähr übernommen. "
+        "Die Angaben ersetzen keine individuelle Sicherheitsberatung.</p>"
+        "<h2>Haftung für Links</h2>"
+        "<p>Für die Inhalte verlinkter externer Seiten sind ausschließlich deren Betreiber verantwortlich.</p>"
+        "</article>"
     )
     privacy = (
         '<article class="prose"><h1>Datenschutzerklärung</h1>'
@@ -1287,6 +1308,10 @@ def legal_pages(site_cfg: dict, cfg: dict) -> dict[str, str]:
     }
 
 
+FAVICON_SVG = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#0b1d3a"/><path d="M32 12 L48 18 V31 C48 42 41 50 32 54 C23 50 16 42 16 31 V18 Z" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linejoin="round"/><path d="M24 31 L30 37 L41 25" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>"""
+LOGO_SVG = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 80" role="img" aria-label="Security Brief"><rect x="0" y="8" width="64" height="64" rx="14" fill="#0b1d3a"/><path d="M32 20 L48 26 V39 C48 50 41 58 32 62 C23 58 16 50 16 39 V26 Z" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linejoin="round"/><path d="M24 39 L30 45 L41 33" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><text x="80" y="38" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#0b1d3a">Security Brief</text><text x="80" y="58" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="2.4" fill="#475569">THREATS · ACTIONS · EVIDENCE</text></svg>"""
+
+
 FILTERS = [
     ("all", "All"), ("critical", "Critical"), ("exploited", "Actively exploited"), ("patch-now", "Patch now"),
     ("m365", "Microsoft 365"), ("entra", "Entra ID"), ("defender", "Defender"), ("ai", "AI security"),
@@ -1295,6 +1320,8 @@ def filter_bar(stories: list[dict]) -> str:
     buttons = []
     for key, label in FILTERS:
         n = len(stories) if key == "all" else sum(1 for s in stories if key in s["tags"])
+        if key != "all" and n == 0:
+            continue  # no empty filter chips
         pressed = "true" if key == "all" else "false"
         buttons.append(f'<button type="button" data-filter="{key}" aria-pressed="{pressed}">{esc(label)} <span class="count">{n}</span></button>')
     search = ('<div class="toolbar"><label class="visually-hidden" for="story-search">Search stories</label>'
@@ -1513,8 +1540,18 @@ def index_page(stories: list[dict], cfg: dict, now: datetime, status: dict,
         f'<div class="stat"><b>{len(stories)}</b><span>stories in the current window</span></div>'
         f'<div class="stat crit"><b>{crit}</b><span>critical</span></div>'
         f'<div class="stat"><b>{exploited}</b><span>actively exploited</span></div>'
+        f'<div class="stat"><b>{status.get("sources_total", 0)}</b><span>sources monitored</span></div>'
         "</div>",
     ]
+    donations = [d for d in (site_cfg.get("donations") or []) if str(d.get("url", "")).startswith("https://")]
+    if donations:
+        links = " &middot; ".join(
+            f'<a href="{esc(d["url"])}" rel="noopener noreferrer" target="_blank">{esc(d.get("label", "Donate"))}</a>'
+            for d in donations)
+        parts.append('<section class="support" aria-labelledby="support-title"><h2 id="support-title">Support this site</h2>'
+                     '<p class="summary">Security Brief is free to read. Voluntary support helps cover running costs. '
+                     'Donations do not buy coverage, and every briefing stays free.</p>'
+                     f'<p>{links}</p></section>')
     if articles:
         parts.append(
             '<section class="section" id="analysis"><h2>From the analysis desk</h2><div class="grid">'
@@ -1654,6 +1691,8 @@ def write_site(out: Path, stories: list[dict], cfg: dict, now: datetime, status:
         if f.name not in keep:
             f.unlink()
     (out / "style.css").write_text(CSS.strip() + "\n" + EXTRA_CSS, encoding="utf-8")
+    (out / "favicon.svg").write_text(FAVICON_SVG, encoding="utf-8")
+    (out / "logo.svg").write_text(LOGO_SVG, encoding="utf-8")
     (out / "index.html").write_text(index_page(stories, cfg, now, status, articles, site_cfg), encoding="utf-8")
     (out / "today").mkdir(parents=True, exist_ok=True)
     (out / "today" / "index.html").write_text(today_page(stories, cfg, now), encoding="utf-8")
@@ -1698,7 +1737,10 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
             data = (fixtures / f"{src['id']}.xml").read_bytes() if fixtures else fetch(src["url"])
             if not re.search(rb"<(rss|feed|rdf)", data[:2000], re.I):
                 raise RuntimeError("response is not an RSS/Atom feed")
-            items = parse_feed(data, src)[: cfg.get("max_items_per_feed", 30)]
+            items = parse_feed(data, src)
+            if src.get("require_security"):  # broad vendor blogs: keep security posts only
+                items = [i for i in items if is_security_item(i)]
+            items = items[: cfg.get("max_items_per_feed", 30)]
             fresh += items
             src_status.append({"id": src["id"], "name": src["name"], "ok": True, "count": len(items)})
         except Exception as e:  # noqa: BLE001 - one bad feed must not stop the run
