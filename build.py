@@ -66,6 +66,49 @@ WHY = {
 }
 
 
+WHY_RULES = [
+    # (regex on title+summary, sentence). Each sentence is tied to a concrete signal in the feed text.
+    (r"\b(personal|customer|employee|patient)\b.*\b(data|information|records?)\b|\brecords\b.*\b(exposed|stolen|leak)",
+     "Personal data is involved. If you hold data from this organization, or a supplier of yours is affected, "
+     "check whether a GDPR breach notification (Art. 33, within 72 hours of becoming aware) could apply, and involve your DPO."),
+    (r"\b(ransom\w*|extort\w*)\b",
+     "Ransomware intrusions commonly start with stolen credentials, exposed remote-access services or phishing. "
+     "Look for new admin accounts, unusual logons and mass file changes in the affected period."),
+    (r"\b(npm|pypi|package|plugin|extension|download|supply[- ]chain|backdoor)\w*",
+     "A compromised package or download runs with the rights of whoever installs it. "
+     "Check whether you use the named package or version, and review installation and endpoint logs."),
+    (r"\b(oauth|consent|token|session cookie|app registration|service principal)\b",
+     "Token and consent abuse can work without any malware. In Entra ID, review sign-in logs and enterprise applications "
+     "for unexpected consent grants, new app registrations or new credentials."),
+    (r"\b(api keys?|secrets?|credentials?|passwords?)\b",
+     "Exposed keys or passwords stay valid until rotated. Rotate the affected keys and check their usage logs for unexpected calls."),
+    (r"\b(web ?shells?|remote code execution|rce)\b",
+     "A web shell or code-execution flaw gives an attacker control of the server. "
+     "Check web server logs and the server for unknown files or processes."),
+]
+
+
+def why_it_matters(s: dict) -> str:
+    """Story-specific reasoning, built only from signals in the feed text and the rule tags.
+    Falls back to the category sentence when no signal matches."""
+    text = f"{s.get('title', '')} {s.get('summary', '')}".lower()
+    sentences = []
+    if s.get("kev"):
+        sentences.append("The CVE is listed in CISA's Known Exploited Vulnerabilities catalog, so exploitation is confirmed.")
+    elif "exploited" in s.get("tags", []):
+        sentences.append("The report describes active exploitation, so waiting for the next regular cycle carries risk.")
+    if s.get("cves"):
+        sentences.append(f"It concerns {', '.join(s['cves'][:3])}: compare the affected versions in the advisory with your inventory.")
+    for pattern, sentence in WHY_RULES:
+        if re.search(pattern, text):
+            sentences.append(sentence)
+        if len(sentences) >= 3:
+            break
+    if not sentences:
+        return WHY[s.get("category", "general")]
+    return " ".join(sentences[:3])
+
+
 # ---------- helpers ----------
 
 def esc(s) -> str:
@@ -1553,7 +1596,7 @@ def story_page(s: dict, cfg: dict) -> str:
 <p>{esc(s['summary']) or 'No excerpt available. Please read the original article.'}</p>
 <p class="meta">Summary is the feed's excerpt, shortened. It is not a full article.</p>
 <h2>Why it matters</h2>
-<p>{esc(WHY[s['category']])}</p>
+<p>{esc(why_it_matters(s))}</p>
 {instr_block}
 <h2>Why this priority</h2>
 <div class="box"><p><strong>{esc(s['priority'])}</strong>. Criteria: Critical = CVE listed in CISA KEV, or exploitation reported by an official source. High = score 6 or more. Otherwise Standard.</p>
