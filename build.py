@@ -680,6 +680,26 @@ def story_tags(text: str, prio: str, category: str, kev_hit: bool, exploited: bo
     return tags
 
 
+def content_type_of(items: list[dict]) -> str:
+    """Label for a story: Advisory if any advisory source, Vendor blog if only vendor blogs, else News."""
+    types = {i.get("source_type", "news") for i in items}
+    if "advisory" in types:
+        return "Advisory"
+    if types == {"vendor_blog"}:
+        return "Vendor blog"
+    return "News"
+
+
+def source_health_note(status: dict) -> str:
+    """Plain-language line for the homepage. Empty when every source worked."""
+    failed = [s["name"] for s in status.get("sources", []) if not s.get("ok")]
+    if not failed:
+        return ""
+    names = ", ".join(failed)
+    return (f"{len(failed)} source(s) did not update in the last run: {names}. "
+            "Stories from them may be missing. See status.json for details.")
+
+
 def build_story(items: list[dict], kev: set[str], kev_checked: bool, now: datetime) -> dict:
     head = items[0]
     text = " ".join(f"{i['title']} {i['summary']}" for i in items)
@@ -696,6 +716,7 @@ def build_story(items: list[dict], kev: set[str], kev_checked: bool, now: dateti
         "summary": head["summary"],
         "published": head["published"],
         "category": category,
+        "content_type": content_type_of(items),
         "tags": tags,
         "priority": prio,
         "score": score,
@@ -805,6 +826,8 @@ main.wrap{padding-top:32px;padding-bottom:72px}
 .badge.High{color:var(--high)}
 .note{background:var(--surface-2);color:var(--muted);border-radius:12px;padding:12px 16px;font-size:.9rem}
 .box{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px 20px}
+.notice{border-left:3px solid var(--high);padding:10px 14px;margin:0 0 24px;background:var(--surface);border-radius:var(--r)}
+.type{color:var(--muted);font-weight:550}
 .empty{background:var(--surface);border:1px dashed var(--line);border-radius:var(--r);padding:24px;color:var(--muted)}
 .prose{max-width:780px;margin:0 auto}
 .prose h2{font-size:1.12rem;letter-spacing:-.01em;margin:2.2rem 0 .7rem}
@@ -876,7 +899,7 @@ def _layout(cfg: dict, title: str, desc: str, body: str, base: str, image: str |
 <main id="main" class="wrap">
 {body}
 </main>
-<footer class="site-footer"><div class="wrap">Automated briefing. Headlines and short excerpts come from public RSS feeds, and every story links to the original publisher. Not affiliated with any source. &middot; <a href="{base}impressum.html">Impressum</a> &middot; <a href="{base}datenschutz.html">Privacy</a> &middot; <a href="{base}feed.xml">RSS</a> &middot; <a href="{base}status.json">Run status</a></div></footer>
+<footer class="site-footer"><div class="wrap">Automated briefing. Headlines and short excerpts come from public RSS feeds, and every story links to the original publisher. Not affiliated with any source. &middot; <a href="{base}impressum.html">Impressum</a> &middot; <a href="{base}datenschutz.html">Privacy</a> &middot; <a href="{base}corrections.html">Corrections</a> &middot; <a href="{base}feed.xml">RSS</a> &middot; <a href="{base}status.json">Run status</a></div></footer>
 </body>
 </html>
 """
@@ -900,7 +923,7 @@ def _card(s: dict) -> str:
     return f"""<article class="card prio-{prio}" data-tags="{esc(' '.join(s['tags']))}" data-search="{esc(search_text(s))}">
 <a class="card-media" href="story/{esc(s['id'])}.html" tabindex="-1" aria-hidden="true"><img src="{esc(img)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360"><span class="badge {prio}">{prio}</span></a>
 <div class="card-body">
-<p class="kicker"><span class="cat">{esc(CATEGORIES[s['category']][0])}</span></p>
+<p class="kicker"><span class="cat">{esc(CATEGORIES[s['category']][0])}</span> <span class="type">{esc(s.get('content_type', 'News'))}</span></p>
 <h3><a href="story/{esc(s['id'])}.html">{esc(s['title'])}</a></h3>
 <p class="summary">{esc(_short(s['summary'], 170))}</p>
 <p class="meta">{esc(names)} &middot; {esc(fmt_date(s['published']))}</p>
@@ -1200,7 +1223,22 @@ def legal_pages(site_cfg: dict, cfg: dict) -> dict[str, str]:
         "und Datenübertragbarkeit.</p>"
         "</article>"
     )
+    entries = site_cfg.get("corrections") or []
+    if entries:
+        items = "".join(
+            "<li><strong>" + esc(str(e.get("date", ""))) + "</strong> – " + esc(str(e.get("note", ""))) + "</li>"
+            for e in entries
+        )
+        corr_body = "<ul>" + items + "</ul>"
+    else:
+        corr_body = "<p>Bisher keine Korrekturen.</p>"
+    corrections = (
+        '<article class="prose"><h1>Korrekturen</h1>'
+        "<p>Wir korrigieren Fehler, sobald wir sie bemerken. Jede Korrektur wird hier mit Datum und Hinweis festgehalten.</p>"
+        + corr_body + "</article>"
+    )
     return {
+        "corrections.html": _layout(cfg, "Korrekturen", "Korrekturen", corrections, ""),
         "impressum.html": _layout(cfg, "Impressum", "Impressum", impressum, ""),
         "datenschutz.html": _layout(cfg, "Datenschutzerklärung", "Datenschutzerklärung", privacy, ""),
     }
@@ -1435,6 +1473,9 @@ def index_page(stories: list[dict], cfg: dict, now: datetime, status: dict,
         f'<div class="stat"><b>{status["sources_ok"]}/{status["sources_total"]}</b><span>sources reachable</span></div>'
         "</div>",
     ]
+    note = source_health_note(status)
+    if note:
+        parts.append(f'<p class="notice" role="status">{esc(note)}</p>')
     if articles:
         parts.append(
             '<section class="section" id="analysis"><h2>From the analysis desk</h2><div class="grid">'
@@ -1557,7 +1598,7 @@ def feed_xml(stories: list[dict], cfg: dict, now: datetime, articles: list[dict]
 def sitemap_xml(stories: list[dict], cfg: dict, articles: list[dict] | None = None) -> str:
     site = cfg["site_url"].rstrip("/")
     urls = [f"{site}/", f"{site}/briefings/index.html", f"{site}/patch-tuesday/index.html",
-            f"{site}/impressum.html", f"{site}/datenschutz.html"]
+            f"{site}/impressum.html", f"{site}/datenschutz.html", f"{site}/corrections.html"]
     urls += [f"{site}/{a['section']}/{a['slug']}.html" for a in (articles or [])]
     urls += [f"{site}/story/{s['id']}.html" for s in stories]
     return ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
