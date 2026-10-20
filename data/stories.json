@@ -888,6 +888,25 @@
    "instructions_checked": true
   },
   {
+   "id": "4fd8d5a31fd8",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "title": "ClickFix Attackers Exploit Siemens Software Center Flaw to Deploy Remote Access Trojan",
+   "link": "https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html",
+   "published": "2026-10-20T07:11:45+00:00",
+   "summary": "Siemens has addressed a DLL sideloading vulnerability impacting Siemens Software Center that it said has been exploited in ClickFix attacks. The high-severity vulnerability, tracked as CVE-2026-110936 (CVSS v4 score: 8.4), could allow an attacker to place a specially-crafted DLL in a directory the application…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUJqb8f_ibR_O_dPoJqAVHZOVmgi23TsxhFzv19_3uzAbEqH6L6QMJUWdelmEKmDe6U9wj6KKyDpPKi_1a93IK1KJa-Ql0kFRtfqVe9sKQpVFj0dA65dCfRKCN7H0LQYgMdzqdJoLgSb6rRFBA4bfmf4oUqItqe6pVCsyxmEzCnHx02h_m1WsK6sJu7jy2/s1600/siemens.jpg",
+   "cves": [
+    "CVE-2026-110936"
+   ],
+   "first_seen": "2026-10-20T08:00:41.954505+00:00",
+   "instructions": [
+    "\"The affected application loads dynamic-link libraries (DLLs) from an uncontrolled search path,\" Siemens said in an advisory."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "952b3a6c7b9c",
    "source": "thehackernews",
    "source_name": "The Hacker News",
