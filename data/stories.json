@@ -109,7 +109,9 @@
    "summary": "A ransomware negotiator attended a cybersecurity conference, only to be arrested by the FBI in connection with its investigation into the ShinyHunters gang. Meanwhile, hackers get the keys to ASOS's app and the chance to message every single customer. What did they say? And how did the company respond? We have…",
    "image": null,
    "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00"
+   "first_seen": "2026-10-20T09:53:14.101641+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "5f2037864b2f",
@@ -1178,6 +1180,27 @@
    "source_type": "news"
   },
   {
+   "id": "92e407676578",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Hackers Hijack Five OVHcloud CLI Releases to Distribute Secret-Stealing Malware",
+   "link": "https://thehackernews.com/2026/10/hackers-hijack-five-ovhcloud-cli.html",
+   "published": "2026-10-20T08:21:29+00:00",
+   "summary": "An attacker used a contributor's GitHub account to replace the download archives on five existing releases of OVHcloud's command-line tool on Monday, October 19. The account had been hijacked, and the new files were a build designed to steal secrets stored on the disk of any machine that runs it, the cloud provider…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSRX5Jjz6vqh8EcVVYoXU8S9qh0rFzQ3DDnjNIlkRrBq97brmk6hUw0u2pbLqyTAG1_mYfG9bGHCnMkgSMEPFu6fIR67F1jZMmS7G7-DFe6i7PtG_LzdTgHLCTXSwE5hCa2EApQeAIYGIMYATwbLEp-2FcPmV9aAHVqrRRBYk_wY7ZTuES0frFAPGjhnU/s1600/ovhcloud.jpg",
+   "cves": [],
+   "first_seen": "2026-10-20T10:33:14.842541+00:00",
+   "instructions": [
+    "A build without the version flag would report its version as undefined, but running a suspect binary to find out is not advisable.",
+    "OVHcloud founder Octave Klaba wrote on X on Monday evening that anyone affected should change every secret stored on the disk. =",
+    "Ran the official install script (curl -fsSL https://raw.githubusercontent.com/ovh/ovhcloud-cli/main/install.sh | sh).",
+    "Ran the CLI's own upgrade command from a v0.12.0, v0.13.0, or v0.14.0 install on a macOS or Linux machine where the tool was installed by the script or by hand."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "b3dabcb4d0c0",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1574,6 +1597,25 @@
    "instructions_checked": true
   },
   {
+   "id": "87e932b60df1",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Defense contractors in two NATO allies hacked in recent Russia-linked campaign",
+   "link": "https://therecord.media/european-defense-contractors-fancy-bear-espionage",
+   "published": "2026-10-20T10:00:00+00:00",
+   "summary": "The Russian group known as APT28 and Fancy Bear used a recently documented backdoor to dwell in the networks of two defense contractors and a law enforcement agency in two NATO allies, researchers said.",
+   "image": "https://cms.therecord.media/uploads/nato_flag_4bb3aadd53.jpg",
+   "cves": [],
+   "first_seen": "2026-10-20T10:33:14.842541+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Last year, more than 20 Western intelligence and cybersecurity agencies issued a joint advisory accusing APT28 of targeting logistics providers and technology companies involved in delivering foreign assistance to Ukraine."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "f650fcc751bf",
    "source": "therecord",
    "source_name": "The Record",
@@ -1655,7 +1697,8 @@
    "cves": [],
    "first_seen": "2026-10-20T09:53:14.101641+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "829e378a85b1",
@@ -1671,7 +1714,8 @@
    "cves": [],
    "first_seen": "2026-10-20T09:53:14.101641+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "d8811d26023a",
@@ -1687,7 +1731,8 @@
    "cves": [],
    "first_seen": "2026-10-20T09:53:14.101641+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "346abd3ca876",
@@ -1975,7 +2020,8 @@
    "cves": [],
    "first_seen": "2026-10-20T09:53:14.101641+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "eed07957449b",
@@ -1991,7 +2037,8 @@
    "cves": [],
    "first_seen": "2026-10-20T09:53:14.101641+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "1e6e166bc6de",
@@ -2130,6 +2177,40 @@
    "instructions_checked": true
   },
   {
+   "id": "40af1b6980a8",
+   "source": "cert-bund",
+   "source_name": "CERT-Bund (BSI) Warnungen",
+   "official": true,
+   "source_type": "advisory",
+   "title": "[UPDATE] [hoch] Apache Camel: Schwachstelle ermöglicht Codeausführung",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4010",
+   "published": "2026-10-20T10:15:51+00:00",
+   "summary": "Ein Angreifer aus einem angrenzenden Netzwerk kann eine Schwachstelle in Apache Camel ausnutzen, um beliebigen Programmcode auszuführen.",
+   "image": null,
+   "cves": [],
+   "first_seen": "2026-10-20T10:33:14.842541+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "586feaef19cd",
+   "source": "cert-bund",
+   "source_name": "CERT-Bund (BSI) Warnungen",
+   "official": true,
+   "source_type": "advisory",
+   "title": "[UPDATE] [hoch] MariaDB: Mehrere Schwachstellen",
+   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4018",
+   "published": "2026-10-20T10:15:51+00:00",
+   "summary": "Ein entfernter, authentisierter Angreifer kann mehrere Schwachstellen in MariaDB ausnutzen, um beliebigen Programmcode auszuführen, SQL-Injection durchzuführen, Sicherheitsmaßnahmen zu umgehen, Daten zu manipulieren oder offenzulegen oder einen Denial-of-Service-Zustand auszulösen.",
+   "image": null,
+   "cves": [],
+   "first_seen": "2026-10-20T10:33:14.842541+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "d2f9766f074c",
    "source": "cert-bund",
    "source_name": "CERT-Bund (BSI) Warnungen",
@@ -2162,6 +2243,23 @@
    "instructions": [
     "There must have been red faces in the social media department of Ireland's police headquarters after two of its accounts were hijacked this week."
    ],
+   "instructions_checked": true
+  },
+  {
+   "id": "ce48c7fb2641",
+   "source": "grahamcluley",
+   "source_name": "Graham Cluley",
+   "official": false,
+   "source_type": "news",
+   "title": "Police arrest Qilin ransomware suspect on holiday, as links made to Synnovis hack that contributed to patient’s death",
+   "link": "https://www.bitdefender.com/en-us/blog/hotforsecurity/qilin-ransomware-arrested-synnovis-patient-death",
+   "published": "2026-10-20T09:41:49+00:00",
+   "summary": "A 28-year-old Russian man has been arrested by German police, suspected of being a key member of the Qilin ransomware gang. Detectives have linked the man to the attack against blood-testing firm Synnovis, that disrupted London hospitals, and resulted in the death of a patient. Read more in my article on the Hot for…",
+   "image": "https://blogapp.bitdefender.com/hotforsecurity/content/images/2026/10/qilin-death.jpeg",
+   "cves": [],
+   "first_seen": "2026-10-20T10:33:14.842541+00:00",
+   "image_checked": true,
+   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -2721,7 +2819,9 @@
    "summary": "The shocking arrest of a well-known ransomware negotiator reveals the critical need for vendor program oversight.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt6c22b787d3880a22/6a469e8782b5bc23f1d3a21e/ransomware-Just_Super-Getty-1399980046.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00"
+   "first_seen": "2026-10-20T09:53:14.101641+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "c237a5931a63",
@@ -2763,7 +2863,9 @@
    "summary": "A sprawling cybercrime marketplace supplied cloud infrastructure and phishing kits that helped fuel more than 1 billion phishing messages worldwide.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt9dea48f154a2fb24/6acfd2ceaf9e572367afea5c/fishing_hooks-MicroStockHub-GettyImages-2193660035.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00"
+   "first_seen": "2026-10-20T09:53:14.101641+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "144f472a1e64",
@@ -2791,7 +2893,9 @@
    "summary": "The event closed in Toronto last week, with experts sharing critical perspectives on emerging risks, drawing record attendance and marking 22% growth.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt850556f866500627/654a5a8e05eb4d040a046894/325351_DR23_Graphics_General_Large_Text_v1.png?width=720&quality=80&disable=upscale",
    "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00"
+   "first_seen": "2026-10-20T09:53:14.101641+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "295b94e919e7",
@@ -2805,7 +2909,9 @@
    "summary": "Organizations need to move away from vendor-assigned, theoretical scores toward real exploit data specific to their environments.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt3fef1a5b52640035/6ad2596ea7e47a611834201e/Software_patch_Zoonar_GmbH_Alamy_REVISED_FOR_16_BY_9.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00"
+   "first_seen": "2026-10-20T09:53:14.101641+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "553c25ef7794",
@@ -2883,7 +2989,9 @@
    "summary": "Hundreds of stores lost millions of euros because they hired third parties to manage the outdated OT firmware running their cooling systems.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltdcfc831a57f67689/6acfbd4be9c311a2c0cf7674/Melted_ice_cream-cagkansayin-Getty.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00"
+   "first_seen": "2026-10-20T09:53:14.101641+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "3e1278093e93",
@@ -2913,7 +3021,9 @@
    "summary": "As agents escape containment and access external systems, responsibility remains human. Accountability, however, is much less settled.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt57714ec5c1148817/6ad10d43b8f30368a29f5d16/robot_peeking_through_blinds-Moor_Studio-GettyImages-1746666469.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00"
+   "first_seen": "2026-10-20T09:53:14.101641+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "a240599f4fed",
@@ -2941,7 +3051,9 @@
    "summary": "Don't buy the hype! AI has been dumbing down cyberattacks, and serious threat actors are barely touching it.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt11c8852e00d576cc/6ad12b33703094ce8966a380/Robot-Chris_Wright-Getty.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00"
+   "first_seen": "2026-10-20T09:53:14.101641+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "5921092180eb",
@@ -2955,7 +3067,9 @@
    "summary": "Built from decades of threat intelligence research, the new resource explains scams from the victims' perspective and tracks emerging forms of cyber crime.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt850556f866500627/654a5a8e05eb4d040a046894/325351_DR23_Graphics_General_Large_Text_v1.png?width=720&quality=80&disable=upscale",
    "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00"
+   "first_seen": "2026-10-20T09:53:14.101641+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "cd2448e33b82",
@@ -2985,7 +3099,9 @@
    "summary": "A bug in Claude Code Desktop's preview pane can allow adversaries to quietly steal credentials from developers, including SSH private keys, AWS credentials, and Claude 0Auth tokens.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltebc5737d9330c848/6acfd08de9c3113a94cf7694/cat_peek_Seregaff_Getty.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00"
+   "first_seen": "2026-10-20T09:53:14.101641+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "6e8696034a92",
@@ -3017,7 +3133,9 @@
    "cves": [
     "CVE-2026-104935"
    ],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00"
+   "first_seen": "2026-10-20T09:53:14.101641+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "e4ddb72db383",
@@ -3061,7 +3179,9 @@
    "summary": "Krybit is a fast-growing ransomware gang that was hacked by a rival, hit back, and is still extorting victims. Find out how it works, who it has targeted, and what organisations can do to protect themselves. Read more in my article on the Fortra blog.",
    "image": null,
    "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00"
+   "first_seen": "2026-10-20T09:53:14.101641+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "b2dbdf4e9e45",
@@ -3139,7 +3259,14 @@
    "summary": "This is a problem: Any open model whose weights have been edited can carry a backdoor, whether it’s a task-specific fine-tune, a merged adapter or an abliterated build. We have abliterated models in the title because it’s the most popular reason people download modified weights without verifying what’s inside…",
    "image": null,
    "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00"
+   "first_seen": "2026-10-20T09:53:14.101641+00:00",
+   "instructions": [
+    "What is the supply chain issue that does not already apply to regular procedural software?",
+    "In theory this should give the equivalent of a fingerprint by which the comparison between an original set of weights and a modified set of weights reveals the intent of the changes.",
+    "The end user must be able to fully veriy, at least in principle, that the model tey have is built only from the training data set.",
+    "Thus “mitigation by segregation”, which is usually the best form of security."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "7bf6f5bbc65c",
@@ -3186,7 +3313,11 @@
    "summary": "Matthew Green has a new site that tries to estimate the number of cryptanalyst-hours that have been spent analyzing different public-key algorithms: Abstract: We estimate how much public cryptanalysis each public-key assumption has received, using the literature itself as the instrument. From roughly sixteen thousand…",
    "image": null,
    "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00"
+   "first_seen": "2026-10-20T09:53:14.101641+00:00",
+   "instructions": [
+    "Thus errant / unexpected behaviour should be expected as a matter of normal usage."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "6bb19fd6562c",
@@ -3235,7 +3366,9 @@
    "summary": "This is a current list of where and when I am scheduled to speak: I’m speaking at ATTENTION: Democracy, Rebuilt in Montreal, Quebec, Canada. The event runs October 21–23, 2026, and my talk is on Wednesday, October 21. I’m speaking at the University of Toronto in Toronto, Ontario, Canada, at 5 PM ET on October 22…",
    "image": null,
    "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00"
+   "first_seen": "2026-10-20T09:53:14.101641+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "ebff93066b7e",
@@ -3328,14 +3461,15 @@
    "link": "https://www.securityweek.com/exploited-fortinet-bug-linked-to-stealthy-fortigate-implant-in-telecom-hack/",
    "published": "2026-10-19T11:13:23+00:00",
    "summary": "The persistent, stealthy FortiGate implant was deployed against a telecommunications organization. The post Exploited Fortinet Bug Linked to Stealthy FortiGate Implant in Telecom Hack appeared first on SecurityWeek.",
-   "image": null,
+   "image": "https://www.securityweek.com/wp-content/uploads/2024/06/fortinet.jpg",
    "cves": [],
    "first_seen": "2026-10-20T09:53:14.101641+00:00",
    "instructions": [
     "Preparing for disruption must become part of day-to-day operations.",
     "On Friday, the US cybersecurity agency CISA added CVE-2025-61624 to its Known Exploited Vulnerabilities ( KEV ) list, urging federal agencies to patch it immediately."
    ],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "82c7537f544b",
@@ -3367,14 +3501,15 @@
    "link": "https://www.securityweek.com/one-compromised-login-exposed-millions-of-california-students-records/",
    "published": "2026-10-19T11:55:50+00:00",
    "summary": "Intruders used compromised credentials to access an ETS SFTP server, copying records of California students back to 2006. The post One Compromised Login Exposed Millions of California Students’ Records appeared first on SecurityWeek.",
-   "image": null,
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/03/school-education.jpeg",
    "cves": [],
    "first_seen": "2026-10-20T09:53:14.101641+00:00",
    "instructions": [
     "ICS Patch Tuesday: Siemens Issues 17 Advisories, Rockwell Fixes ArmorBlock Takeover Flaw",
     "Preparing for disruption must become part of day-to-day operations."
    ],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "bcca2fd24d4b",
@@ -3386,7 +3521,7 @@
    "link": "https://www.securityweek.com/plex2shell-exploit-chain-weaponized-against-plex-servers-hours-after-disclosure/",
    "published": "2026-10-19T12:44:39+00:00",
    "summary": "Threat actors have been observed delivering cryptocurrency miners and proxy software. The post Plex2Shell Exploit Chain Weaponized Against Plex Servers Hours After Disclosure appeared first on SecurityWeek.",
-   "image": null,
+   "image": "https://www.securityweek.com/wp-content/uploads/2024/04/streaming-services.jpeg",
    "cves": [],
    "first_seen": "2026-10-20T09:53:14.101641+00:00",
    "instructions": [
@@ -3395,7 +3530,8 @@
     "Preparing for disruption must become part of day-to-day operations.",
     "On September 1, Plex announced it had already shipped fixes and asked server owners to upgrade."
    ],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "c513afb9763b",
