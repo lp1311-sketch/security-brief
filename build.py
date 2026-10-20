@@ -29,7 +29,10 @@ KEV_URL = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulner
 CVE_RE = re.compile(r"CVE-\d{4}-\d{4,7}", re.I)
 TAG_RE = re.compile(r"<[^>]+>")
 IMG_RE = re.compile(r"""<img[^>]+src=["']([^"']+)["']""", re.I)
-EXPLOITED_RE = re.compile(r"actively exploited|exploited in the wild|in the wild|zero-day|0-day", re.I)
+# Exploitation CLAIMS only. Generic words like "zero-day" or "in the wild" describe disclosure or context,
+# not proof of exploitation, so they no longer trigger this signal on their own.
+EXPLOITED_RE = re.compile(r"actively exploited|exploited in the wild|exploited in attacks|in active exploitation|"
+                          r"exploitation (?:in the wild|detected|observed|reported|attempts)|being exploited|under active attack", re.I)
 
 # Category id -> (label, first-match regex). Checked in CATEGORY_ORDER.
 CATEGORIES = {
@@ -611,6 +614,8 @@ def score_story(items: list[dict], kev: set[str], kev_checked: bool, now: dateti
     kev_hit = sorted(cves & kev) if kev_checked else []
     exploited = bool(EXPLOITED_RE.search(text))
     official = any(i["official"] for i in items)
+    # Critical via exploitation needs the claim in an OFFICIAL item itself, not anywhere in a clustered story.
+    official_exploit = any(i["official"] and EXPLOITED_RE.search(f"{i['title']} {i['summary']}") for i in items)
     score, reasons = 0, []
     if kev_hit:
         score += 5
@@ -640,7 +645,7 @@ def score_story(items: list[dict], kev: set[str], kev_checked: bool, now: dateti
         score += 1
         reasons.append("official source (+1)")
     # Documented Critical criteria: KEV-listed CVE, or exploitation reported by an official source.
-    if kev_hit or (exploited and official):
+    if kev_hit or official_exploit:
         prio = "Critical"
     elif score >= 6:
         prio = "High"
