@@ -1,19 +1,19 @@
 {
   "site_name": "Security Brief",
-"site_url": "https://lp1311-sketch.github.io/security-brief",
+  "site_url": "https://lp1311-sketch.github.io/security-brief",
   "retention_days": 7,
   "max_items_per_feed": 30,
   "sources": [
-    {"id": "bleepingcomputer", "name": "BleepingComputer", "url": "https://www.bleepingcomputer.com/feed/", "site": "https://www.bleepingcomputer.com", "official": false},
-    {"id": "thehackernews", "name": "The Hacker News", "url": "https://feeds.feedburner.com/TheHackersNews", "site": "https://thehackernews.com", "official": false},
-    {"id": "defender-blog", "name": "Microsoft Defender XDR Blog", "url": "https://techcommunity.microsoft.com/gxcuf89792/rss/board?board.id=MicrosoftThreatProtectionBlog", "site": "https://techcommunity.microsoft.com/category/microsoft-defender-xdr/blog/microsoftthreatprotectionblog", "official": false},
-{"id": "entra-blog", "name": "Microsoft Entra Blog", "url": "https://techcommunity.microsoft.com/gxcuf89792/rss/board?board.id=Identity", "site": "https://techcommunity.microsoft.com/t5/microsoft-entra-blog/bg-p/Identity", "official": false},
-{"id": "msrc-blog", "name": "MSRC Blog", "url": "https://msrc.microsoft.com/blog/feed", "site": "https://msrc.microsoft.com/blog/", "official": false},
-    {"id": "msrc", "name": "Microsoft Security Response Center", "url": "https://api.msrc.microsoft.com/update-guide/rss", "site": "https://msrc.microsoft.com", "official": true},
-    {"id": "cisa", "name": "CISA Cybersecurity Advisories", "url": "https://www.cisa.gov/cybersecurity-advisories/all.xml", "site": "https://www.cisa.gov", "official": true},
-    {"id": "google-security", "name": "Google Security Blog", "url": "https://security.googleblog.com/feeds/posts/default", "site": "https://security.googleblog.com", "official": true},
-    {"id": "krebs", "name": "KrebsOnSecurity", "url": "https://krebsonsecurity.com/feed/", "site": "https://krebsonsecurity.com", "official": false},
-    {"id": "ars", "name": "Ars Technica Security", "url": "https://arstechnica.com/security/feed/", "site": "https://arstechnica.com/security/", "official": false},
-    {"id": "msblog", "name": "Microsoft Security Blog", "url": "https://www.microsoft.com/en-us/security/blog/feed/", "site": "https://www.microsoft.com/en-us/security/blog/", "official": false}
+    {"id": "bleepingcomputer", "name": "BleepingComputer", "url": "https://www.bleepingcomputer.com/feed/", "site": "https://www.bleepingcomputer.com", "official": false, "type": "news"},
+    {"id": "thehackernews", "name": "The Hacker News", "url": "https://feeds.feedburner.com/TheHackersNews", "site": "https://thehackernews.com", "official": false, "type": "news"},
+    {"id": "defender-blog", "name": "Microsoft Defender XDR Blog", "url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=MicrosoftThreatProtectionBlog", "site": "https://techcommunity.microsoft.com/category/microsoft-defender-xdr/blog/microsoftthreatprotectionblog", "official": false, "type": "vendor_blog", "note": "URL corrected to the /t5/s/ form; still verify it returns RSS"},
+    {"id": "entra-blog", "name": "Microsoft Entra Blog", "url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=Identity", "site": "https://techcommunity.microsoft.com/t5/microsoft-entra-blog/bg-p/Identity", "official": false, "type": "vendor_blog", "note": "URL corrected to the /t5/s/ form; still verify it returns RSS"},
+    {"id": "msrc-blog", "name": "MSRC Blog", "url": "https://msrc.microsoft.com/blog/feed", "site": "https://msrc.microsoft.com/blog/", "official": false, "type": "vendor_blog", "note": "BROKEN: this URL returns an HTML page, not RSS. Find the real feed URL or remove the source"},
+    {"id": "msrc", "name": "Microsoft Security Response Center", "url": "https://api.msrc.microsoft.com/update-guide/rss", "site": "https://msrc.microsoft.com", "official": true, "type": "advisory"},
+    {"id": "cisa", "name": "CISA Cybersecurity Advisories", "url": "https://www.cisa.gov/cybersecurity-advisories/all.xml", "site": "https://www.cisa.gov", "official": true, "type": "advisory"},
+    {"id": "google-security", "name": "Google Security Blog", "url": "https://security.googleblog.com/feeds/posts/default", "site": "https://security.googleblog.com", "official": false, "type": "vendor_blog", "note": "Changed from official true: a vendor research blog, not an advisory"},
+    {"id": "krebs", "name": "KrebsOnSecurity", "url": "https://krebsonsecurity.com/feed/", "site": "https://krebsonsecurity.com", "official": false, "type": "news"},
+    {"id": "ars", "name": "Ars Technica Security", "url": "https://arstechnica.com/security/feed/", "site": "https://arstechnica.com/security/", "official": false, "type": "news"},
+    {"id": "msblog", "name": "Microsoft Security Blog", "url": "https://www.microsoft.com/en-us/security/blog/feed/", "site": "https://www.microsoft.com/en-us/security/blog/", "official": false, "type": "vendor_blog"}
   ]
 }

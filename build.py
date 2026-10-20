@@ -482,6 +482,7 @@ def parse_feed(data: bytes, src: dict) -> list[dict]:
             "source": src["id"],
             "source_name": src["name"],
             "official": bool(src.get("official")),
+            "source_type": src.get("type", "advisory" if src.get("official") else "news"),
             "title": title,
             "link": link,
             "published": date.isoformat() if date else None,
@@ -613,9 +614,10 @@ def score_story(items: list[dict], kev: set[str], kev_checked: bool, now: dateti
     cves = {c for i in items for c in i["cves"]}
     kev_hit = sorted(cves & kev) if kev_checked else []
     exploited = bool(EXPLOITED_RE.search(text))
-    official = any(i["official"] for i in items)
+    # Vendor blogs are never treated as official advisories, even if flagged, so they cannot trigger Critical by themselves.
+    official = any(i["official"] and i.get("source_type") != "vendor_blog" for i in items)
     # Critical via exploitation needs the claim in an OFFICIAL item itself, not anywhere in a clustered story.
-    official_exploit = any(i["official"] and EXPLOITED_RE.search(f"{i['title']} {i['summary']}") for i in items)
+    official_exploit = official and any(i["official"] and i.get("source_type") != "vendor_blog" and EXPLOITED_RE.search(f"{i['title']} {i['summary']}") for i in items)
     score, reasons = 0, []
     if kev_hit:
         score += 5
