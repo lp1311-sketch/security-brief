@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Go Issues Emergency Update Blocking Eight CA Keys Over Undisclosed Security Concerns | Security Brief</title>
+<meta name="description" content="Go 1.27.3 and Go 1.26.10, released on October 20, make Go&#x27;s certificate verifier reject any certificate chain that passes through one of eight…">
+<meta property="og:site_name" content="Security Brief">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Go Issues Emergency Update Blocking Eight CA Keys Over Undisclosed Security Concerns">
+<meta property="og:description" content="Go 1.27.3 and Go 1.26.10, released on October 20, make Go&#x27;s certificate verifier reject any certificate chain that passes through one of eight…">
+<meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgh12Jum-ReZMOyqaMubiLlMwx4-uDVxEJkD6-CJabWhHfCKV-Csw7P4MoeRX85Ag-3rxZMftHE6KGcdh059DoOPvF1Mirv05BQsflmg8RroWBt_t00BGTHsdhqkmVWVuRHKAs56AhNfdsq_YH0QWrMJ1z4dFT3I3xOK7Dwqu7aPp_P7tFSxQ-bzqyz8e4/s1600/go-certs.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script>(function(){
+var root=document.documentElement,dark=false,saved=null;
+try{saved=localStorage.getItem('sb-theme')}catch(e){}
+dark=saved?saved==='dark':(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches);
+function apply(){root.setAttribute('data-theme',dark?'dark':'light');
+var b=document.getElementById('theme-toggle');
+if(b){b.textContent=dark?'Light mode':'Dark mode';b.setAttribute('aria-pressed',String(dark));}}
+apply();
+document.addEventListener('DOMContentLoaded',function(){
+var b=document.getElementById('theme-toggle');
+if(b){b.addEventListener('click',function(){dark=!dark;try{localStorage.setItem('sb-theme',dark?'dark':'light')}catch(e){}apply();});}
+apply();});
+})();</script>
+<link rel="stylesheet" href="../style.css">
+<link rel="alternate" type="application/rss+xml" title="Security Brief" href="https://lp1311-sketch.github.io/security-brief/feed.xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap bar">
+<a class="brand" href="../index.html"><span class="mark" aria-hidden="true"></span>Security Brief</a>
+<nav class="nav" aria-label="Categories"><a href="../today/index.html">Today</a><a href="../saved/index.html">Saved</a><a href="../index.html#threats">Threats</a><a href="../index.html#vulnerabilities">Vulnerabilities</a><a href="../index.html#ai">AI</a><a href="../index.html#microsoft">Microsoft</a><a href="../briefings/index.html">Briefings</a><a href="../patch-tuesday/index.html">Patch Tuesday</a></nav>
+<button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false">Dark mode</button>
+</div></header>
+<main id="main" class="wrap">
+<article class="prose"><p class="meta"><a href="../index.html">← Back to home</a></p>
+<p class="meta"><span class="badge Standard">Standard</span>Security News</p>
+<h1>Go Issues Emergency Update Blocking Eight CA Keys Over Undisclosed Security Concerns</h1>
+<p class="meta">Published: 20 Oct 2026, 11:32 UTC · Priority score 2</p>
+<figure><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgh12Jum-ReZMOyqaMubiLlMwx4-uDVxEJkD6-CJabWhHfCKV-Csw7P4MoeRX85Ag-3rxZMftHE6KGcdh059DoOPvF1Mirv05BQsflmg8RroWBt_t00BGTHsdhqkmVWVuRHKAs56AhNfdsq_YH0QWrMJ1z4dFT3I3xOK7Dwqu7aPp_P7tFSxQ-bzqyz8e4/s1600/go-certs.jpg" alt="" referrerpolicy="no-referrer" width="640" height="360"><figcaption>Image: The Hacker News. Credit remains with the original publisher.</figcaption></figure>
+<h2>Summary</h2>
+<p>Go 1.27.3 and Go 1.26.10, released on October 20, make Go&#x27;s certificate verifier reject any certificate chain that passes through one of eight intermediate certificate authority keys. Programs built on the new release will refuse connections to sites and services whose certificates were issued under those keys. The Go…</p>
+<p class="meta">Summary is the feed's excerpt, shortened. It is not a full article.</p>
+<h2>Why it matters</h2>
+<p>General security development. Whether it matters depends on the products and processes in your own environment.</p>
+<h2>Instructions from the source</h2><p class="note">Sentences quoted word for word from the original article. Check each one against the article before you act.</p><ul><li>&ldquo;It handled the fix on its URGENT track , the one reserved for its most serious issues, and recommends upgrading immediately.&rdquo; <span class="meta">— <a href="https://thehackernews.com/2026/10/go-issues-emergency-update-blocking.html" rel="nofollow noopener noreferrer" target="_blank">The Hacker News</a></span></li><li>&ldquo;No temporary workaround exists in any source, and the filter cannot be disabled.&rdquo; <span class="meta">— <a href="https://thehackernews.com/2026/10/go-issues-emergency-update-blocking.html" rel="nofollow noopener noreferrer" target="_blank">The Hacker News</a></span></li><li>&ldquo;Two days earlier, on October 17, Mozilla added six intermediate certificates issued by eMudhra&#x27;s emSign Root TLS CA - G3 to OneCRL , the list Firefox uses to block certificates.&rdquo; <span class="meta">— <a href="https://thehackernews.com/2026/10/go-issues-emergency-update-blocking.html" rel="nofollow noopener noreferrer" target="_blank">The Hacker News</a></span></li><li>&ldquo;It also does not read the block lists browsers use, such as the CRLSets Chrome used against rogue Google certificates this month.&rdquo; <span class="meta">— <a href="https://thehackernews.com/2026/10/go-issues-emergency-update-blocking.html" rel="nofollow noopener noreferrer" target="_blank">The Hacker News</a></span></li></ul>
+<h2>Why this priority</h2>
+<div class="box"><p><strong>Standard</strong>. Criteria: Critical = CVE listed in CISA KEV, or exploitation reported by an official source. High = score 6 or more. Otherwise Standard.</p>
+<ul><li>published in the last 24 h (+2)</li></ul>
+<p>No CVE identifier found in the feed text.</p></div>
+<h2>Sources</h2>
+<ul><li><a href="https://thehackernews.com/2026/10/go-issues-emergency-update-blocking.html" rel="nofollow noopener noreferrer" target="_blank">Go Issues Emergency Update Blocking Eight CA Keys Over Undisclosed Security Concerns</a> — The Hacker News, 20 Oct 2026, 11:32 UTC</li></ul>
+<p class="note">Automated page. Verify facts in the original articles before acting on them.</p></article>
+</main>
+<footer class="site-footer"><div class="wrap">Automated briefing. Headlines and short excerpts come from public RSS feeds, and every story links to the original publisher. Not affiliated with any source. &middot; <a href="../impressum.html">Impressum</a> &middot; <a href="../datenschutz.html">Privacy</a> &middot; <a href="../corrections.html">Corrections</a> &middot; <a href="../feed.xml">RSS</a> &middot; <a href="../status.json">Run status</a></div></footer>
+</body>
+</html>

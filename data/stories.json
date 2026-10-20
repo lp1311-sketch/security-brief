@@ -40,6 +40,22 @@
    "source_type": "news"
   },
   {
+   "id": "fb9936745ef9",
+   "source": "ars",
+   "source_name": "Ars Technica Security",
+   "official": false,
+   "source_type": "news",
+   "title": "Meta Muse exposes users' personal and business secrets when they share conversations",
+   "link": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/",
+   "published": "2026-10-20T12:33:13+00:00",
+   "summary": "Muse, the new general-purpose AI agent from Meta, can expose sensitive information when users share conversations through Web links, researchers reported Monday. Like many online services, Muse allows users to share searches, conversations, images, and similar content with other people. Such share features usually…",
+   "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/ai-robot-hand-caution-1152x648.jpg",
+   "cves": [],
+   "first_seen": "2026-10-20T12:41:56.425637+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "b140e0bf691c",
    "source": "ars",
    "source_name": "Ars Technica Security",
@@ -968,6 +984,25 @@
    "source_type": "news"
   },
   {
+   "id": "13881c9b4329",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "ConnectWise Resets Credentials as Cloud Backup Remains Offline After Security Incident",
+   "link": "https://thehackernews.com/2026/10/connectwise-resets-credentials-as-cloud.html",
+   "published": "2026-10-20T10:56:08+00:00",
+   "summary": "ConnectWise on Monday said it has taken remediation measures, including strengthening administrative-access protections and resetting accounts and replacing application credentials, as it continues to respond to a security incident that led to unauthorized access to application identities associated with Cloud Backup…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgN8mboHojdAmthr-jUWvIgg5BgmRsrAFJRQFz-nEuPEAIGTqwVKwnf9c7E8jGzdpHfWZuDENURbDFFADIJ76Tf7h5lamLTOUoY5ui438ugfOJYw-2vkAuITMBMxt-0CWFxj43bdgDY19exYceRvJEScmPpWoYXBjkIHLOilUSF1wWmSta5o9ocPpLywQn/s1600/connect.jpg",
+   "cves": [],
+   "first_seen": "2026-10-20T12:41:56.425637+00:00",
+   "instructions": [
+    "The company said it has completed the following actions since it began rolling out mitigations on October 17 at 5:00 a.m.",
+    "\"In a review of application sign-ins across more than 10,000 tenants with ConnectWise applications (where we can see those logs), 144.172.64[.]128 and Microsoft-internal ranges are the only addresses that produced application sign-in activity,\" Huntress researchers said in an update."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "952b3a6c7b9c",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1137,6 +1172,27 @@
    "cves": [],
    "first_seen": "2026-10-19T10:28:22.123062+00:00",
    "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "f0509be43eab",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Go Issues Emergency Update Blocking Eight CA Keys Over Undisclosed Security Concerns",
+   "link": "https://thehackernews.com/2026/10/go-issues-emergency-update-blocking.html",
+   "published": "2026-10-20T11:32:59+00:00",
+   "summary": "Go 1.27.3 and Go 1.26.10, released on October 20, make Go's certificate verifier reject any certificate chain that passes through one of eight intermediate certificate authority keys. Programs built on the new release will refuse connections to sites and services whose certificates were issued under those keys. The Go…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgh12Jum-ReZMOyqaMubiLlMwx4-uDVxEJkD6-CJabWhHfCKV-Csw7P4MoeRX85Ag-3rxZMftHE6KGcdh059DoOPvF1Mirv05BQsflmg8RroWBt_t00BGTHsdhqkmVWVuRHKAs56AhNfdsq_YH0QWrMJ1z4dFT3I3xOK7Dwqu7aPp_P7tFSxQ-bzqyz8e4/s1600/go-certs.jpg",
+   "cves": [],
+   "first_seen": "2026-10-20T12:41:56.425637+00:00",
+   "instructions": [
+    "It handled the fix on its URGENT track , the one reserved for its most serious issues, and recommends upgrading immediately.",
+    "No temporary workaround exists in any source, and the filter cannot be disabled.",
+    "Two days earlier, on October 17, Mozilla added six intermediate certificates issued by eMudhra's emSign Root TLS CA - G3 to OneCRL , the list Firefox uses to block certificates.",
+    "It also does not read the block lists browsers use, such as the CRLSets Chrome used against rogue Google certificates this month."
+   ],
    "instructions_checked": true
   },
   {
@@ -1451,6 +1507,22 @@
    "source_type": "news"
   },
   {
+   "id": "41525c1156ae",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Russian APT28 Breaches NATO Naval Shipbuilder in NATO Country, Deploys New Reflective Loader",
+   "link": "https://thehackernews.com/2026/10/russian-apt28-breaches-nato-naval.html",
+   "published": "2026-10-20T11:06:25+00:00",
+   "summary": "The Russia-linked state-sponsored threat actor tracked as APT28 (aka BlueDelta, Fancy Bear, and Forest Blizzard) has been attributed to attacks targeting two member states of the North Atlantic Treaty Organization (NATO). The Symantec Threat Hunter Team, which is tracking the activity cluster under the moniker…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNLZ-1vEmoCyztDVMziqJlhZPTZfW4mOe-qDn6OxDQ-K2LVZTvqhoOe3MIip5bDJfiJd7e3HLcq4S-0xb2SlfWbEqp4vlvbOnQDSP5edsQIxHFtYSCt1qM7XZksq0NPZ9AGesx0YzqHsTeWUuPUTysC5dbuDOvKIjQW0DJvkg1UG9KLH2Doglq7WtgyiRM/s1600/russia-nato.jpg",
+   "cves": [],
+   "first_seen": "2026-10-20T12:41:56.425637+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "6ab9bdcb522c",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1541,6 +1613,48 @@
    ],
    "instructions_checked": true,
    "source_type": "news"
+  },
+  {
+   "id": "df48f73ea919",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "What Security Teams Can Do To Tame Wild Code",
+   "link": "https://thehackernews.com/2026/10/what-security-teams-can-do-to-tame-wild.html",
+   "published": "2026-10-20T11:33:04+00:00",
+   "summary": "A sales manager builds an AI-assisted workflow to route leads. It connects to customer records, summarizes inbound requests, and posts updates to a shared channel. The workflow saves time, reduces manual work, and soon becomes part of the team’s daily routine. Across the same organization, employees are building…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7Q3156iY5WJRnphGSZ5PuIiMopF0sG7ku3FR-WROda9fE4jCSIOQpClG1HOBRCvbuqDyLHgsC0N3UFjowgnXzZN4T1mDpkQbTz2gX7z4NRZsfoEpimVlZ7hevcXmeTfpOt1iFrHqvLXubegNIRz15gjlQNHIBBYzQVAmy8MNAGiZs6OXIEuWNntLwTlI/s1600/tines-main.jpg",
+   "cves": [],
+   "first_seen": "2026-10-20T12:41:56.425637+00:00",
+   "instructions": [
+    "A successful test doesn’t establish which data the production workflow should access or which actions it should be allowed to take.",
+    "Policies can set expectations, but employees also need practical guidance and built-in safeguards to apply them in everyday work.",
+    "Rather than asking everyone to independently assemble a secure operating model, security teams define shared boundaries with IT and system owners, apply them consistently throughout the lifecycle, and update them as business needs and risks change.",
+    "Permissions should reflect what a workflow needs to do, not everything its creator can access."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "467c211f344f",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "WhatsApp Hid Instructions in Help Pages Telling Its AI Chatbot Not to Recommend Privacy Regulators",
+   "link": "https://thehackernews.com/2026/10/whatsapp-hid-instructions-in-help-pages.html",
+   "published": "2026-10-20T11:41:06+00:00",
+   "summary": "WhatsApp's help pages carried hidden instructions for its support chatbot that told it not to recommend a data protection authority or regulator to users who could no longer delete their accounts, even though WhatsApp's own privacy policy for Europe tells users they can complain to one. The text sat in the pages'…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTtrA7WSHbxSgTUKrOz8Swz6vdK1sarnVj8fCSEjFPdIMyLbOCOIytF60D82szAQpXLHR0mXI3j4zcIobCRS2g8ZI6GkbuLTHkoM4OmkUAWD0P1D1KyYuYrSxWvbq7Yy6zJ-B03VGWxy49q1BUF4owk5gUAVBBd6g2v7xl28TT_ax7Il5ixELfwcBawpA/s1600/whatsapp-chatbot.jpg",
+   "cves": [],
+   "first_seen": "2026-10-20T12:41:56.425637+00:00",
+   "instructions": [
+    "WhatsApp's help pages carried hidden instructions for its support chatbot that told it not to recommend a data protection authority or regulator to users who could no longer delete their accounts, even though WhatsApp's own privacy policy for Europe tells users they can complain to one.",
+    "A second block of hidden text on the page about reporting and blocking told the chatbot that once a user mentioned a lawyer, a lawsuit, or a court, it should not cite privacy laws such as the GDPR, even when the user raised them.",
+    "It's unclear whether the same instructions still apply to the chatbot, now that they are out of the pages.",
+    "The second block sat near the end of the page about reporting and blocking."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "9bedf93cf19d",
@@ -2118,7 +2232,9 @@
    "summary": "Ein Angreifer kann mehrere Schwachstellen in Apache Camel ausnutzen, um beliebigen Programmcode auszuführen, Daten zu manipulieren oder vertrauliche Informationen offenzulegen.",
    "image": null,
    "cves": [],
-   "first_seen": "2026-10-20T11:12:55.030681+00:00"
+   "first_seen": "2026-10-20T11:12:55.030681+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "5ab3b94302fd",
@@ -2132,7 +2248,9 @@
    "summary": "Ein Angreifer kann mehrere Schwachstellen im Linux Kernel ausnutzen, um nicht näher spezifizierte Angriffe durchzuführen, welche zu einem Denial-of-Service-Zustand, einer Rechteausweitung, der Ausführung von Code oder einer Speicherbeschädigung führen könnten.",
    "image": null,
    "cves": [],
-   "first_seen": "2026-10-20T11:12:55.030681+00:00"
+   "first_seen": "2026-10-20T11:12:55.030681+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "b07403e6b506",
@@ -2146,7 +2264,9 @@
    "summary": "Ein lokaler Angreifer kann eine Schwachstelle in expat ausnutzen, um einen Denial of Service Angriff durchzuführen.",
    "image": null,
    "cves": [],
-   "first_seen": "2026-10-20T11:12:55.030681+00:00"
+   "first_seen": "2026-10-20T11:12:55.030681+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "ebede1cac6cf",
@@ -2160,7 +2280,9 @@
    "summary": "Ein Angreifer kann mehrere Schwachstellen im Linux Kernel ausnutzen, um einen nicht näher spezifizierten Angriff durchzuführen, möglicherweise Sicherheitsmaßnahmen zu umgehen, Daten zu manipulieren oder offenzulegen oder einen Denial-of-Service-Zustand zu verursachen.",
    "image": null,
    "cves": [],
-   "first_seen": "2026-10-20T11:12:55.030681+00:00"
+   "first_seen": "2026-10-20T11:12:55.030681+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "3aeed35a7608",
@@ -2695,7 +2817,9 @@
    "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in ffmpeg ausnutzen, um einen Denial of Service Angriff durchzuführen.",
    "image": null,
    "cves": [],
-   "first_seen": "2026-10-20T11:12:55.030681+00:00"
+   "first_seen": "2026-10-20T11:12:55.030681+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "1009af96f600",
@@ -2709,7 +2833,9 @@
    "summary": "Ein Angreifer kann mehrere Schwachstellen in Checkmk ausnutzen, um Informationen offenzulegen, und um Dateien zu manipulieren.",
    "image": null,
    "cves": [],
-   "first_seen": "2026-10-20T11:12:55.030681+00:00"
+   "first_seen": "2026-10-20T11:12:55.030681+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "5feccfa1e412",
@@ -2723,7 +2849,9 @@
    "summary": "Ein entfernter, authentisierter Angreifer kann mehrere Schwachstellen in MISP ausnutzen, um Sicherheitsvorkehrungen zu umgehen, Cross-Site-Scripting-Angriffe durchzuführen, Daten zu manipulieren oder offenzulegen oder einen Denial-of-Service-Zustand auszulösen.",
    "image": null,
    "cves": [],
-   "first_seen": "2026-10-20T11:12:55.030681+00:00"
+   "first_seen": "2026-10-20T11:12:55.030681+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "1f57c5c0193f",
@@ -2737,7 +2865,9 @@
    "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in QT ausnutzen, um einen Denial of Service Angriff durchzuführen.",
    "image": null,
    "cves": [],
-   "first_seen": "2026-10-20T11:12:55.030681+00:00"
+   "first_seen": "2026-10-20T11:12:55.030681+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "0e755e31bc6b",
@@ -2751,7 +2881,9 @@
    "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in PostgreSQL ausnutzen, um einen Denial of Service Angriff durchzuführen.",
    "image": null,
    "cves": [],
-   "first_seen": "2026-10-20T11:12:55.030681+00:00"
+   "first_seen": "2026-10-20T11:12:55.030681+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "1d28e93514dc",
@@ -2816,7 +2948,10 @@
    "summary": "Ein entfernter, authentisierter Angreifer kann eine Schwachstelle in MikroTik RouterOS ausnutzen, um einen Denial of Service Angriff durchzuführen.",
    "image": null,
    "cves": [],
-   "first_seen": "2026-10-20T11:56:01.637626+00:00"
+   "first_seen": "2026-10-20T11:56:01.637626+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "493d96635326",
@@ -2830,7 +2965,10 @@
    "summary": "Ein Angreifer kann mehrere Schwachstellen in Roundcube Webmail ausnutzen, um Sicherheitsvorkehrungen zu umgehen, Daten zu manipulieren, Cross-Site-Scripting-Angriffe durchzuführen, vertrauliche Informationen offenzulegen, einen Denial-of-Service-Zustand auszulösen oder andere, nicht näher spezifizierte Auswirkungen zu…",
    "image": null,
    "cves": [],
-   "first_seen": "2026-10-20T11:56:01.637626+00:00"
+   "first_seen": "2026-10-20T11:56:01.637626+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "3020393e15ad",
@@ -2846,7 +2984,8 @@
    "cves": [],
    "first_seen": "2026-10-20T11:56:01.637626+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "6e0b0abd6694",
@@ -2862,7 +3001,8 @@
    "cves": [],
    "first_seen": "2026-10-20T11:56:01.637626+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "d2ee2ef714e0",
@@ -2878,7 +3018,8 @@
    "cves": [],
    "first_seen": "2026-10-20T11:56:01.637626+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "3b05c1dcef51",
@@ -2894,7 +3035,8 @@
    "cves": [],
    "first_seen": "2026-10-20T11:56:01.637626+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "ca99fade5711",
@@ -2910,7 +3052,8 @@
    "cves": [],
    "first_seen": "2026-10-20T11:56:01.637626+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "badeab1ac46b",
@@ -2926,7 +3069,8 @@
    "cves": [],
    "first_seen": "2026-10-20T11:56:01.637626+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "ab33cb248bc7",
@@ -2942,7 +3086,8 @@
    "cves": [],
    "first_seen": "2026-10-20T11:56:01.637626+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "64d911ecdc6d",
@@ -2958,7 +3103,8 @@
    "cves": [],
    "first_seen": "2026-10-20T11:56:01.637626+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "933f818034a9",
@@ -3115,6 +3261,28 @@
    ],
    "instructions_checked": true,
    "source_type": "news"
+  },
+  {
+   "id": "4f28949e9098",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Windows Server 2025 gets support for quick machine recovery",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/windows-server-2025-gets-support-for-quick-machine-recovery/",
+   "published": "2026-10-20T11:21:42+00:00",
+   "summary": "Microsoft announced that IT administrators can now use quick machine recovery on Windows Server 2025 after installing the October 2026 security update.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/20/0_Windows_Server.jpg",
+   "cves": [],
+   "first_seen": "2026-10-20T12:41:56.425637+00:00",
+   "image_checked": true,
+   "instructions": [
+    "On Windows Server 2025, cloud remediation is disabled by default, but admins can enable it via Group Policy under Computer Configuration > Administrative Templates > System > Quick Machine Recovery to retrieve and apply cloud-sourced remediation.",
+    "For local configuration, admins must sign in to the target server with administrator permissions and use the Local Group Policy Editor.",
+    "Open Enable Cloud Remediation , select Disabled , and select Apply , then OK .",
+    "Open Enable Auto Remediation , select Disabled , and select Apply , then OK ."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "9f686724487e",
@@ -4139,7 +4307,9 @@
    "summary": "Justin.sh is reporting on a confidential Cellebrite document that has been leaked to him: Cellebrite calls it Advanced Unlocks (AU from here on), not to be confused with the “advanced unlocking services” they’ve marketed for years. A press release from earlier this year confirms AU is a new product for 2026. According…",
    "image": null,
    "cves": [],
-   "first_seen": "2026-10-20T11:12:55.030681+00:00"
+   "first_seen": "2026-10-20T11:12:55.030681+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "6bb19fd6562c",
@@ -4269,6 +4439,25 @@
     "To address them, users are advised to update to Entity List version 3.0.10 and to Drupal versions 11.4.10, 11.3.19, or 10.6.19.",
     "As a mitigation, users can uninstall the core Field UI module.",
     "On October 12, however, it urged users to reserve time for core updates, warning that “exploits might be developed within hours or days.” Additional information can be found on Drupal’s security advisories page.",
+    "Preparing for disruption must become part of day-to-day operations."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "b44079bd0a64",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Ex-OpenAI Worker Accused of Bugging Conference Room Planned to Fly to Saudi Arabia, Prosecutors Say",
+   "link": "https://www.securityweek.com/ex-openai-worker-accused-of-bugging-conference-room-planned-to-fly-to-saudi-arabia-prosecutors-say/",
+   "published": "2026-10-20T12:33:12+00:00",
+   "summary": "Abdulrahman Alfozan’s wife and young son also left the country the day after the 35-year-old Saudi national’s arrest. The post Ex-OpenAI Worker Accused of Bugging Conference Room Planned to Fly to Saudi Arabia, Prosecutors Say appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/11/OpenAI.jpeg",
+   "cves": [],
+   "first_seen": "2026-10-20T12:41:56.425637+00:00",
+   "image_checked": true,
+   "instructions": [
     "Preparing for disruption must become part of day-to-day operations."
    ],
    "instructions_checked": true
