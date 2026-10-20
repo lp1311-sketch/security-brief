@@ -1,7 +1,7 @@
 {
-  "generated": "2026-10-20T09:48:00+00:00",
-  "sources_ok": 9,
-  "sources_total": 11,
+  "generated": "2026-10-20T09:53:14+00:00",
+  "sources_ok": 14,
+  "sources_total": 16,
   "sources": [
     {
       "id": "bleepingcomputer",
@@ -14,25 +14,6 @@
       "name": "The Hacker News",
       "ok": true,
       "count": 30
-    },
-    {
-      "id": "defender-blog",
-      "name": "Microsoft Defender XDR Blog",
-      "ok": true,
-      "count": 20
-    },
-    {
-      "id": "entra-blog",
-      "name": "Microsoft Entra Blog",
-      "ok": true,
-      "count": 0
-    },
-    {
-      "id": "msrc-blog",
-      "name": "MSRC Blog",
-      "ok": false,
-      "count": 0,
-      "error": "response is not an RSS/Atom feed"
     },
     {
       "id": "msrc",
@@ -70,15 +51,62 @@
       "name": "Microsoft Security Blog",
       "ok": true,
       "count": 10
+    },
+    {
+      "id": "schneier",
+      "name": "Schneier on Security",
+      "ok": true,
+      "count": 10
+    },
+    {
+      "id": "therecord",
+      "name": "The Record",
+      "ok": true,
+      "count": 5
+    },
+    {
+      "id": "troyhunt",
+      "name": "Troy Hunt",
+      "ok": true,
+      "count": 15
+    },
+    {
+      "id": "securityweek",
+      "name": "SecurityWeek",
+      "ok": true,
+      "count": 10
+    },
+    {
+      "id": "grahamcluley",
+      "name": "Graham Cluley",
+      "ok": true,
+      "count": 20
+    },
+    {
+      "id": "darkreading",
+      "name": "Dark Reading",
+      "ok": true,
+      "count": 30
+    },
+    {
+      "id": "sophos",
+      "name": "Sophos News",
+      "ok": false,
+      "count": 0,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "cert-bund",
+      "name": "CERT-Bund (BSI) Warnungen",
+      "ok": true,
+      "count": 30
     }
   ],
-  "stories": 77,
+  "stories": 140,
   "analysis_articles": 0,
-  "critical": 5,
+  "critical": 6,
   "high": 2,
   "kev_loaded": true,
-  "warnings": [
-    "site.json publisher details incomplete: Impressum page is a placeholder"
-  ],
+  "warnings": [],
   "changed": true
 }

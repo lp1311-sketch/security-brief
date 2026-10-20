@@ -1,14 +1,24 @@
 {
  "stories": [
   {
-   "id": "1fd194e19c3d",
-   "title": "China-Linked Hackers Exploited BeyondTrust Zero-Day to Take Over Remote Support Servers",
-   "summary": "The China-nexus cyber espionage group tracked as Armory Castle (previously UNC5221 or Warp Panda) exploited a newly disclosed security flaw in BeyondTrust Remote Support…",
+   "id": "15367a3259ff",
+   "title": "BeyondTrust Remote Support Zero-Day Continues Trend of Exploited Edge Bugs",
+   "summary": "Ivanti, Cisco, and Palo Alto Networks all had vulnerabilities in edge devices come under fire this week. Now BeyondTrust joins the group.",
    "priority": "Critical",
    "category": "Vulnerabilities & Exploited CVEs",
-   "date": "16 Oct 2026, 06:55 UTC",
-   "sources": "The Hacker News, BleepingComputer",
-   "url": "story/1fd194e19c3d.html"
+   "date": "16 Oct 2026, 20:34 UTC",
+   "sources": "Dark Reading, The Hacker News, BleepingComputer",
+   "url": "story/15367a3259ff.html"
+  },
+  {
+   "id": "dc9813bc2d42",
+   "title": "ConnectWise suspends Cloud Backup service after supply chain attack",
+   "summary": "ConnectWise initially said on Friday that it was investigating “attempts of unauthorized access associated with the ConnectWise Cloud Backup environment,” and confirmed…",
+   "priority": "High",
+   "category": "Ransomware, Malware & Breaches",
+   "date": "19 Oct 2026, 19:45 UTC",
+   "sources": "The Record, SecurityWeek, The Hacker News, BleepingComputer",
+   "url": "story/dc9813bc2d42.html"
   },
   {
    "id": "83d130e7ba9f",
@@ -31,14 +41,24 @@
    "url": "story/b1e34d264127.html"
   },
   {
-   "id": "952b3a6c7b9c",
-   "title": "ConnectWise Suspends Cloud Backup After Attackers Compromise Microsoft 365 Tenants",
-   "summary": "ConnectWise on Saturday said it has disabled seven ConnectWise application identities as it continues its investigation into an incident in which unknown threat actors…",
-   "priority": "High",
+   "id": "cd2448e33b82",
+   "title": "Researchers Infiltrate Microsoft Tech Support Scam Operation",
+   "summary": "A large-scale scam operation impersonating Microsoft uses a malicious traffic distribution system (TDS) run by a Russian organization and abuses thousands of Cloudflare…",
+   "priority": "Standard",
+   "category": "Ransomware, Malware & Breaches",
+   "date": "19 Oct 2026, 21:13 UTC",
+   "sources": "Dark Reading",
+   "url": "story/cd2448e33b82.html"
+  },
+  {
+   "id": "3e1278093e93",
+   "title": "ConnectWise Disables Cloud Backups Amid Concerns for Downstream MSPs",
+   "summary": "Researchers say attackers authenticated into Microsoft 365 tenants using ConnectWise credentials; ConnectWise says customer impact remains unconfirmed.",
+   "priority": "Standard",
    "category": "Microsoft",
-   "date": "18 Oct 2026, 08:23 UTC",
-   "sources": "The Hacker News, BleepingComputer",
-   "url": "story/952b3a6c7b9c.html"
+   "date": "19 Oct 2026, 19:19 UTC",
+   "sources": "Dark Reading",
+   "url": "story/3e1278093e93.html"
   },
   {
    "id": "c8f4e94200b3",
@@ -111,6 +131,26 @@
    "url": "story/a713f2422da2.html"
   },
   {
+   "id": "e1c5b3e9fc3c",
+   "title": "Ivanti ICS Zero-Day Attacks Highlight Vendor Patching Hurdles",
+   "summary": "CVE-2026-104935, a high-severity authentication bypass + RCE vulnerability, was only partially discovered and patched in July, leaving an opening for threat actors to…",
+   "priority": "Critical",
+   "category": "Vulnerabilities & Exploited CVEs",
+   "date": "14 Oct 2026, 21:20 UTC",
+   "sources": "Dark Reading",
+   "url": "story/e1c5b3e9fc3c.html"
+  },
+  {
+   "id": "ebff93066b7e",
+   "title": "970,000 Medi-Cal Members Affected by Paradigm Healthcare Data Breach",
+   "summary": "Paradigm Healthcare Services detected an intrusion in October 2025, but it took nearly a year to start notifying affected individuals. The post 970,000 Medi-Cal Members…",
+   "priority": "Standard",
+   "category": "Ransomware, Malware & Breaches",
+   "date": "20 Oct 2026, 09:33 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/ebff93066b7e.html"
+  },
+  {
    "id": "5a8d0413be6f",
    "title": "Nikkei discloses third data breach in a month, 1.8M records exposed",
    "summary": "Nikkei Inc. disclosed a new data breach, the third in about a month, that exposed 1.83 million personal information records.",
@@ -119,6 +159,26 @@
    "date": "19 Oct 2026, 21:49 UTC",
    "sources": "BleepingComputer",
    "url": "story/5a8d0413be6f.html"
+  },
+  {
+   "id": "561dd3f2eda5",
+   "title": "Siemens Software Center Vulnerability Exploited in ClickFix Malware Attacks",
+   "summary": "Attackers paired a genuine, signed copy of Siemens Software Center with malicious DLLs to infect Windows PCs via ClickFix lures. The post Siemens Software Center…",
+   "priority": "Standard",
+   "category": "Vulnerabilities & Exploited CVEs",
+   "date": "19 Oct 2026, 18:15 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/561dd3f2eda5.html"
+  },
+  {
+   "id": "c2afa7723501",
+   "title": "Drupal Warns of Fast Exploitation Risk for Critical Core RCE Flaw",
+   "summary": "Critical flaws impact the Entity List and Field UI modules, and exploit paths exist with contributed modules. The post Drupal Warns of Fast Exploitation Risk for…",
+   "priority": "Standard",
+   "category": "Vulnerabilities & Exploited CVEs",
+   "date": "19 Oct 2026, 15:47 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/c2afa7723501.html"
   },
   {
    "id": "6e689f58716d",
@@ -161,6 +221,86 @@
    "url": "story/1de1c48ce23b.html"
   },
   {
+   "id": "834a248937df",
+   "title": "When Your Ransomware Negotiator Works for the Other Side",
+   "summary": "The shocking arrest of a well-known ransomware negotiator reveals the critical need for vendor program oversight.",
+   "priority": "Standard",
+   "category": "Ransomware, Malware & Breaches",
+   "date": "16 Oct 2026, 14:00 UTC",
+   "sources": "Dark Reading",
+   "url": "story/834a248937df.html"
+  },
+  {
+   "id": "d2f9766f074c",
+   "title": "[NEU] [mittel] IBM App Connect Enterprise: Schwachstelle ermöglicht Manipulation von Dateien",
+   "summary": "Ein lokaler Angreifer kann eine Schwachstelle in IBM App Connect Enterprise ausnutzen, um Dateien zu manipulieren.",
+   "priority": "Standard",
+   "category": "Security News",
+   "date": "19 Oct 2026, 15:15 UTC",
+   "sources": "CERT-Bund (BSI) Warnungen",
+   "url": "story/d2f9766f074c.html"
+  },
+  {
+   "id": "d80c710accb8",
+   "title": "[UPDATE] [mittel] RabbitMQ: Schwachstelle ermöglicht Denial of Service",
+   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in RabbitMQ ausnutzen, um einen Denial of Service Angriff durchzuführen.",
+   "priority": "Standard",
+   "category": "Security News",
+   "date": "19 Oct 2026, 15:15 UTC",
+   "sources": "CERT-Bund (BSI) Warnungen",
+   "url": "story/d80c710accb8.html"
+  },
+  {
+   "id": "70d02c573a35",
+   "title": "[UPDATE] [mittel] PCRE (Perl Compatible Regular Expressions): Schwachstelle ermöglicht Codeausführung",
+   "summary": "Ein entfernter, authentisierter Angreifer kann eine Schwachstelle in PCRE (Perl Compatible Regular Expressions) ausnutzen, um möglicherweise beliebigen Code auszuführen…",
+   "priority": "Standard",
+   "category": "Security News",
+   "date": "19 Oct 2026, 15:15 UTC",
+   "sources": "CERT-Bund (BSI) Warnungen",
+   "url": "story/70d02c573a35.html"
+  },
+  {
+   "id": "e9a70d0c54b4",
+   "title": "[UPDATE] [hoch] GIMP: Schwachstelle ermöglicht Codeausführung und Denial of Service",
+   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in GIMP ausnutzen, um beliebigen Programmcode auszuführen und um einen Denial of Service Angriff durchzuführen.",
+   "priority": "Standard",
+   "category": "Security News",
+   "date": "19 Oct 2026, 15:15 UTC",
+   "sources": "CERT-Bund (BSI) Warnungen",
+   "url": "story/e9a70d0c54b4.html"
+  },
+  {
+   "id": "ea1e5dd8b620",
+   "title": "[UPDATE] [hoch] GIMP Plugins: Mehrere Schwachstellen ermöglichen Codeausführung und DoS",
+   "summary": "Ein lokaler Angreifer kann mehrere Schwachstellen in GIMP ausnutzen, um beliebigen Programmcode auszuführen oder einen Denial-of-Service-Zustand herbeizuführen.",
+   "priority": "Standard",
+   "category": "Security News",
+   "date": "19 Oct 2026, 15:15 UTC",
+   "sources": "CERT-Bund (BSI) Warnungen",
+   "url": "story/ea1e5dd8b620.html"
+  },
+  {
+   "id": "2b7f0ec04193",
+   "title": "[UPDATE] [hoch] PCRE2 (Perl Compatible Regular Expressions): Mehrere Schwachstellen",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in PCRE2 (Perl Compatible Regular Expressions) ausnutzen, um Sicherheitsvorkehrungen zu umgehen, Speicher zu beschädigen…",
+   "priority": "Standard",
+   "category": "Security News",
+   "date": "19 Oct 2026, 15:15 UTC",
+   "sources": "CERT-Bund (BSI) Warnungen",
+   "url": "story/2b7f0ec04193.html"
+  },
+  {
+   "id": "1e6e166bc6de",
+   "title": "[UPDATE] [mittel] Oracle Java SE: Mehrere Schwachstellen",
+   "summary": "Ein entfernter, anonymer oder authentisierter Angreifer kann mehrere Schwachstellen in Oracle Java SE ausnutzen, um die Vertraulichkeit, Integrität und Verfügbarkeit zu…",
+   "priority": "Standard",
+   "category": "Security News",
+   "date": "19 Oct 2026, 15:15 UTC",
+   "sources": "CERT-Bund (BSI) Warnungen",
+   "url": "story/1e6e166bc6de.html"
+  },
+  {
    "id": "03d3ba9d36cc",
    "title": "⚡ Weekly Recap: 98 Zero-Days, Rogue AI Agents, $100M Crypto Theft, 700 Supermarkets Hit and More",
    "summary": "The worst problems don't always come with a warning. Sometimes they arrive through a service everyone trusts, a device someone bought, or a system nobody thought to…",
@@ -181,6 +321,76 @@
    "url": "story/10c7257940cc.html"
   },
   {
+   "id": "b0eb12c36f65",
+   "title": "[UPDATE] [hoch] Linux Kernel: Mehrere Schwachstellen",
+   "summary": "Ein lokaler Angreifer kann mehrere Schwachstellen im Linux Kernel ausnutzen, um einen Denial of Service Angriff durchzuführen, seine Privilegien eskalieren oder einen…",
+   "priority": "Standard",
+   "category": "Security News",
+   "date": "19 Oct 2026, 13:12 UTC",
+   "sources": "CERT-Bund (BSI) Warnungen",
+   "url": "story/b0eb12c36f65.html"
+  },
+  {
+   "id": "ed37e3352cf4",
+   "title": "[UPDATE] [mittel] Linux Kernel: Mehrere Schwachstellen ermöglichen Denial of Service",
+   "summary": "Ein lokaler Angreifer kann mehrere Schwachstellen im Linux-Kernel ausnutzen, um einen Denial-of-Service-Zustand zu erzeugen und weitere nicht spezifizierte Angriffe zu…",
+   "priority": "Standard",
+   "category": "Security News",
+   "date": "19 Oct 2026, 13:12 UTC",
+   "sources": "CERT-Bund (BSI) Warnungen",
+   "url": "story/ed37e3352cf4.html"
+  },
+  {
+   "id": "e55376075ac8",
+   "title": "[UPDATE] [mittel] GNU Emacs und Red Hat Enterprise Linux: Schwachstelle ermöglicht Codeausführung",
+   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in GNU Emacs und Red Hat Enterprise Linux ausnutzen, um beliebigen Programmcode auszuführen.",
+   "priority": "Standard",
+   "category": "Security News",
+   "date": "19 Oct 2026, 13:12 UTC",
+   "sources": "CERT-Bund (BSI) Warnungen",
+   "url": "story/e55376075ac8.html"
+  },
+  {
+   "id": "6cc4f7ad5d84",
+   "title": "[UPDATE] [mittel] Red Hat OpenStack Platform: Mehrere Schwachstellen",
+   "summary": "Ein entfernter, authentisierter Angreifer kann mehrere Schwachstellen in Red Hat OpenStack Platform ausnutzen, um Sicherheitsvorkehrungen zu umgehen, Informationen…",
+   "priority": "Standard",
+   "category": "Security News",
+   "date": "19 Oct 2026, 13:12 UTC",
+   "sources": "CERT-Bund (BSI) Warnungen",
+   "url": "story/6cc4f7ad5d84.html"
+  },
+  {
+   "id": "d8811d26023a",
+   "title": "[UPDATE] [niedrig] Red Hat Enterprise Linux: Schwachstelle ermöglicht Offenlegung von Informationen",
+   "summary": "Ein entfernter, authentisierter Angreifer kann eine Schwachstelle in Red Hat Enterprise Linux und Red Hat Ansible Automation Platform ausnutzen, um Informationen…",
+   "priority": "Standard",
+   "category": "Security News",
+   "date": "19 Oct 2026, 13:12 UTC",
+   "sources": "CERT-Bund (BSI) Warnungen",
+   "url": "story/d8811d26023a.html"
+  },
+  {
+   "id": "f434df02611b",
+   "title": "[UPDATE] [niedrig] HAProxy: Schwachstelle ermöglicht Manipulation von Dateien",
+   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in HAProxy ausnutzen, um Dateien zu manipulieren.",
+   "priority": "Standard",
+   "category": "Security News",
+   "date": "19 Oct 2026, 13:12 UTC",
+   "sources": "CERT-Bund (BSI) Warnungen",
+   "url": "story/f434df02611b.html"
+  },
+  {
+   "id": "82c7537f544b",
+   "title": "MITRE ATT&CK v20 Catalogs AI Abuse, MFA Bypass, Water Utility Attacks",
+   "summary": "Defenders get 15 new detection strategies, six for Enterprise and nine for ICS, backed by 38 analytics. The post MITRE ATT&CK v20 Catalogs AI Abuse, MFA Bypass, Water…",
+   "priority": "Standard",
+   "category": "Microsoft",
+   "date": "19 Oct 2026, 09:37 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/82c7537f544b.html"
+  },
+  {
    "id": "15156651e221",
    "title": "Microsoft: October Windows Server updates break Exchange sign-in, mail flow",
    "summary": "Microsoft has confirmed that this month's Windows Server security updates are causing OWA sign-in and mail delivery issues on some Exchange Server systems.",
@@ -189,6 +399,16 @@
    "date": "19 Oct 2026, 08:58 UTC",
    "sources": "BleepingComputer",
    "url": "story/15156651e221.html"
+  },
+  {
+   "id": "b3dabcb4d0c0",
+   "title": "Hackers Use Compromised ConnectWise Credential to Sign In to 173 Microsoft 365 Tenants",
+   "summary": "Cybersecurity researchers are sounding the alarm related to an active campaign in which unknown threat actors are abusing a compromised Microsoft 365 (M365) credential…",
+   "priority": "Standard",
+   "category": "Microsoft",
+   "date": "17 Oct 2026, 06:16 UTC",
+   "sources": "The Hacker News",
+   "url": "story/b3dabcb4d0c0.html"
   },
   {
    "id": "b140e0bf691c",
@@ -231,6 +451,16 @@
    "url": "story/87815837778b.html"
   },
   {
+   "id": "48b9aea0ee83",
+   "title": "When AI Agents Commit Breaches, Humans May Not Be Held Liable",
+   "summary": "As agents escape containment and access external systems, responsibility remains human. Accountability, however, is much less settled.",
+   "priority": "Standard",
+   "category": "AI Security & Emerging Threats",
+   "date": "16 Oct 2026, 13:00 UTC",
+   "sources": "Dark Reading",
+   "url": "story/48b9aea0ee83.html"
+  },
+  {
    "id": "a094aa58c0da",
    "title": "Hackers exploit Collabora RCE flaw to backdoor Nextcloud servers",
    "summary": "Threat actors are exploiting a critical command execution flaw, now tracked as CVE-2026-110447, in the Collabora Online - Built-in CODE Server app (richdocumentscode)…",
@@ -269,6 +499,16 @@
    "date": "14 Oct 2026, 17:38 UTC",
    "sources": "The Hacker News",
    "url": "story/639d0d6e00a7.html"
+  },
+  {
+   "id": "21c7aa05bbeb",
+   "title": "Weekly Update 525: AI Data Breach Hyperbole",
+   "summary": "I remember the name of that AI doco now - The AI Doc: Or How I Became an Apocaloptimist. I was watching it on the long-haul flight home the other day, and what I found…",
+   "priority": "Standard",
+   "category": "AI Security & Emerging Threats",
+   "date": "13 Oct 2026, 10:47 UTC",
+   "sources": "Troy Hunt",
+   "url": "story/21c7aa05bbeb.html"
   },
   {
    "id": "4b4f09e00694",
@@ -321,6 +561,26 @@
    "url": "story/a4cd23325612.html"
   },
   {
+   "id": "553c25ef7794",
+   "title": "'AdFection' Turns Ad Impressions Into Zero-Click Spyware Delivery",
+   "summary": "Spyware vendors are exploiting targeted ad bidding in the digital ecosystem to identify and track individuals and organizations of interest.",
+   "priority": "Standard",
+   "category": "Ransomware, Malware & Breaches",
+   "date": "19 Oct 2026, 19:55 UTC",
+   "sources": "Dark Reading",
+   "url": "story/553c25ef7794.html"
+  },
+  {
+   "id": "d781dbabb694",
+   "title": "Judge denies WhatsApp’s bid to hold spyware maker in contempt for allegedly targeting users",
+   "summary": "WhatsApp argued that NSO Group violated a 2025 injunction against using the messaging app to spread spyware. A federal judge said WhatsApp hurt its case by not revealing…",
+   "priority": "Standard",
+   "category": "Ransomware, Malware & Breaches",
+   "date": "19 Oct 2026, 19:49 UTC",
+   "sources": "The Record",
+   "url": "story/d781dbabb694.html"
+  },
+  {
    "id": "ff25b976bdfa",
    "title": "Hackers hijack AOMEI update servers to secretly spread malware",
    "summary": "Hackers reportedly compromised AOMEI's servers to distribute malware through a built-in promotional feature in its backup software, briefly tampering with configuration…",
@@ -351,6 +611,16 @@
    "url": "story/06accfcb31a1.html"
   },
   {
+   "id": "5a936d0dc13b",
+   "title": "Two more Serbian opposition figures targeted with spyware, researchers say",
+   "summary": "A phone belonging to the rector of the University of Belgrade was discovered to have been infected with Pegasus spyware, the latest in a series of such discoveries in…",
+   "priority": "Standard",
+   "category": "Ransomware, Malware & Breaches",
+   "date": "19 Oct 2026, 18:45 UTC",
+   "sources": "The Record",
+   "url": "story/5a936d0dc13b.html"
+  },
+  {
    "id": "143bfdf19e2b",
    "title": "Hackers Exploit Plex2Shell Flaws to Install Crypto Miners and Linux Proxy Backdoor",
    "summary": "Threat actors have begun to exploit a chain of vulnerabilities in Plex Media Server to deploy cryptocurrency miners and reverse proxy software, a day after a…",
@@ -361,6 +631,16 @@
    "url": "story/143bfdf19e2b.html"
   },
   {
+   "id": "425846ce9398",
+   "title": "Ahold Delhaize confirms 'malicious actions' behind cyber outages affecting grocery brands",
+   "summary": "Ahold Delhaize, the Dutch multinational grocery retailer, said Monday that a cyberattack forced it to take systems offline across most of its U.S. and European brands…",
+   "priority": "Standard",
+   "category": "Ransomware, Malware & Breaches",
+   "date": "19 Oct 2026, 16:45 UTC",
+   "sources": "The Record",
+   "url": "story/425846ce9398.html"
+  },
+  {
    "id": "4ad529ab6216",
    "title": "Popular WordPress SEO Plugin Rank Math PRO Hijacked to Deliver Self-Restoring Backdoor",
    "summary": "Copies of Rank Math PRO, the paid version of the Rank Math SEO plugin for WordPress, that were downloaded from rankmath.com or delivered as updates between 20:02 UTC on…",
@@ -369,6 +649,46 @@
    "date": "19 Oct 2026, 16:28 UTC",
    "sources": "The Hacker News",
    "url": "story/4ad529ab6216.html"
+  },
+  {
+   "id": "f650fcc751bf",
+   "title": "Russian social media giant VK faces disruptions after data center drone strike",
+   "summary": "The disruptions began Sunday, when users complained of difficulties loading news feeds, playing music and accessing other features of VK's platforms.",
+   "priority": "Standard",
+   "category": "Security News",
+   "date": "19 Oct 2026, 15:55 UTC",
+   "sources": "The Record",
+   "url": "story/f650fcc751bf.html"
+  },
+  {
+   "id": "c513afb9763b",
+   "title": "Rank Math PRO WordPress Plugin Compromised in Supply Chain Attack",
+   "summary": "Hackers injected malware into Rank Math PRO version 3.0.123 packages distributed between October 15 and October 16. The post Rank Math PRO WordPress Plugin Compromised…",
+   "priority": "Standard",
+   "category": "Ransomware, Malware & Breaches",
+   "date": "19 Oct 2026, 15:20 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/c513afb9763b.html"
+  },
+  {
+   "id": "e4ddb72db383",
+   "title": "OnlyFans Copyright Takedowns Expose Compromised Websites",
+   "summary": "Copyright takedown requests tied to OnlyFans and other adult content creators are revealing how attackers exploit vulnerable university and government websites to…",
+   "priority": "Standard",
+   "category": "Vulnerabilities & Exploited CVEs",
+   "date": "19 Oct 2026, 14:28 UTC",
+   "sources": "Dark Reading",
+   "url": "story/e4ddb72db383.html"
+  },
+  {
+   "id": "6e8696034a92",
+   "title": "The Evolving Cybersecurity Lexicon: Vulnerability Discovery to Resilience",
+   "summary": "An industry-wide laser focus on vulnerabilities has left cybersecurity teams without enough room to strategize for resilience.",
+   "priority": "Standard",
+   "category": "Vulnerabilities & Exploited CVEs",
+   "date": "19 Oct 2026, 14:00 UTC",
+   "sources": "Dark Reading",
+   "url": "story/6e8696034a92.html"
   },
   {
    "id": "47f4fcfb349a",
@@ -391,6 +711,26 @@
    "url": "story/cd30eb68866b.html"
   },
   {
+   "id": "bcca2fd24d4b",
+   "title": "Plex2Shell Exploit Chain Weaponized Against Plex Servers Hours After Disclosure",
+   "summary": "Threat actors have been observed delivering cryptocurrency miners and proxy software. The post Plex2Shell Exploit Chain Weaponized Against Plex Servers Hours After…",
+   "priority": "Standard",
+   "category": "Vulnerabilities & Exploited CVEs",
+   "date": "19 Oct 2026, 12:44 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/bcca2fd24d4b.html"
+  },
+  {
+   "id": "6e3176643ea9",
+   "title": "One Compromised Login Exposed Millions of California Students’ Records",
+   "summary": "Intruders used compromised credentials to access an ETS SFTP server, copying records of California students back to 2006. The post One Compromised Login Exposed Millions…",
+   "priority": "Standard",
+   "category": "Security News",
+   "date": "19 Oct 2026, 11:55 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/6e3176643ea9.html"
+  },
+  {
    "id": "5ae38a63e473",
    "title": "From Email-to-Case to the Boardroom: How Inherited Agents Break Governance Built for Software",
    "summary": "In Salesforce Agentforce, the recommended way to make an agent respond to events is a Flow: a record is created or a case is updated, and the Flow passes data into the…",
@@ -399,6 +739,46 @@
    "date": "19 Oct 2026, 11:50 UTC",
    "sources": "The Hacker News",
    "url": "story/5ae38a63e473.html"
+  },
+  {
+   "id": "3e1eacecc51d",
+   "title": "Exploited Fortinet Bug Linked to Stealthy FortiGate Implant in Telecom Hack",
+   "summary": "The persistent, stealthy FortiGate implant was deployed against a telecommunications organization. The post Exploited Fortinet Bug Linked to Stealthy FortiGate Implant…",
+   "priority": "Standard",
+   "category": "Vulnerabilities & Exploited CVEs",
+   "date": "19 Oct 2026, 11:13 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/3e1eacecc51d.html"
+  },
+  {
+   "id": "570936749f04",
+   "title": "Training AIs to Solve CAPTCHAs",
+   "summary": "Interesting research: Abstract: Vision-language models (VLMs) can solve visual CAPTCHAs without task-specific training, but the agents built on them approach every…",
+   "priority": "Standard",
+   "category": "Security News",
+   "date": "19 Oct 2026, 11:07 UTC",
+   "sources": "Schneier on Security",
+   "url": "story/570936749f04.html"
+  },
+  {
+   "id": "5c0bebf27f10",
+   "title": "Anthropic Acquires Confidential AI Startup Opaque Systems",
+   "summary": "Opaque Systems has developed technology that lets AI systems use sensitive data while keeping it protected by the underlying hardware. The post Anthropic Acquires…",
+   "priority": "Standard",
+   "category": "AI Security & Emerging Threats",
+   "date": "19 Oct 2026, 07:45 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/5c0bebf27f10.html"
+  },
+  {
+   "id": "07986418197e",
+   "title": "Weekly Update 526: Building HIBP AI/SI First",
+   "summary": "I have this sense that we've passed the point where \"vibe coding\" is a derogatory term. I have no empirical evidence for this; it's more a feeling that those weaponising…",
+   "priority": "Standard",
+   "category": "AI Security & Emerging Threats",
+   "date": "19 Oct 2026, 06:47 UTC",
+   "sources": "Troy Hunt",
+   "url": "story/07986418197e.html"
   },
   {
    "id": "43fc56afbb27",
@@ -451,6 +831,16 @@
    "url": "story/862e2db1b4e0.html"
   },
   {
+   "id": "e16fac9bbbbd",
+   "title": "Krybit ransomware: what you need to know",
+   "summary": "Krybit is a fast-growing ransomware gang that was hacked by a rival, hit back, and is still extorting victims. Find out how it works, who it has targeted, and what…",
+   "priority": "Standard",
+   "category": "Ransomware, Malware & Breaches",
+   "date": "16 Oct 2026, 10:25 UTC",
+   "sources": "Graham Cluley",
+   "url": "story/e16fac9bbbbd.html"
+  },
+  {
    "id": "7e8ace9d42e7",
    "title": "Microsoft: October Windows update may break Smart App Control",
    "summary": "Microsoft says some users may have trouble turning on Smart App Control after installing this month's KB5127648 Windows 11 security update.",
@@ -459,6 +849,16 @@
    "date": "16 Oct 2026, 08:44 UTC",
    "sources": "BleepingComputer",
    "url": "story/7e8ace9d42e7.html"
+  },
+  {
+   "id": "3f1030ed0e26",
+   "title": "SecTor 2026 Reveals a Rapidly Shifting Cybersecurity Landscape",
+   "summary": "The event closed in Toronto last week, with experts sharing critical perspectives on emerging risks, drawing record attendance and marking 22% growth.",
+   "priority": "Standard",
+   "category": "Security News",
+   "date": "15 Oct 2026, 22:10 UTC",
+   "sources": "Dark Reading",
+   "url": "story/3f1030ed0e26.html"
   },
   {
    "id": "e7e058293387",
@@ -479,6 +879,16 @@
    "date": "15 Oct 2026, 12:07 UTC",
    "sources": "The Hacker News",
    "url": "story/ce862b886d1b.html"
+  },
+  {
+   "id": "4f678ae19779",
+   "title": "Smashing Security podcast #488: How a ransomware negotiator ended up arrested at his own conference",
+   "summary": "A ransomware negotiator attended a cybersecurity conference, only to be arrested by the FBI in connection with its investigation into the ShinyHunters gang. Meanwhile…",
+   "priority": "Standard",
+   "category": "Ransomware, Malware & Breaches",
+   "date": "14 Oct 2026, 23:06 UTC",
+   "sources": "Graham Cluley",
+   "url": "story/4f678ae19779.html"
   },
   {
    "id": "976f4f5fb239",
@@ -511,6 +921,26 @@
    "url": "story/b2dbdf4e9e45.html"
   },
   {
+   "id": "144f472a1e64",
+   "title": "Ransomware Gangs Embrace Physical Threats, Family Stalking?",
+   "summary": "Organizations are reporting that employees face threats of stalking, physical violence, and abduction. But these alarming claims are hard to verify.",
+   "priority": "Standard",
+   "category": "Ransomware, Malware & Breaches",
+   "date": "14 Oct 2026, 05:00 UTC",
+   "sources": "Dark Reading",
+   "url": "story/144f472a1e64.html"
+  },
+  {
+   "id": "841edbc362ab",
+   "title": "Zero-Days Lurk in Microsoft's Overgrown October Patch Tuesday",
+   "summary": "The scary surprises in the largest security update ever include defense bypasses and unauthenticated RCEs.",
+   "priority": "Standard",
+   "category": "Vulnerabilities & Exploited CVEs",
+   "date": "13 Oct 2026, 22:29 UTC",
+   "sources": "Dark Reading",
+   "url": "story/841edbc362ab.html"
+  },
+  {
    "id": "f519e0b522d7",
    "title": "Unpatched Broadcom Wi-Fi Flaw Lets Attackers in Range Run Code as Root on Routers",
    "summary": "A flaw in Broadcom's Wi-Fi setup software lets an attacker within radio range run code as root on Broadcom-based routers, without the network password or any pairing…",
@@ -529,6 +959,36 @@
    "date": "18 Oct 2026, 14:23 UTC",
    "sources": "BleepingComputer",
    "url": "story/74ff0a30f9fe.html"
+  },
+  {
+   "id": "8e2b4b8581aa",
+   "title": "Fake Claude, ChatGPT Attacks Surge, Putting Developers at Risk",
+   "summary": "Campaigns that impersonate popular AI brands are on the rise, and they typically use ClickFix-like tactics to target unsuspecting enterprise employees.",
+   "priority": "Standard",
+   "category": "AI Security & Emerging Threats",
+   "date": "16 Oct 2026, 19:49 UTC",
+   "sources": "Dark Reading",
+   "url": "story/8e2b4b8581aa.html"
+  },
+  {
+   "id": "714d202db596",
+   "title": "Enterprise AI Enters Risk Management Phase as Security Concerns Rise",
+   "summary": "Companies are increasingly discovering that the challenge with AI is no longer adoption, but execution.",
+   "priority": "Standard",
+   "category": "AI Security & Emerging Threats",
+   "date": "16 Oct 2026, 19:13 UTC",
+   "sources": "Dark Reading",
+   "url": "story/714d202db596.html"
+  },
+  {
+   "id": "0a0234023332",
+   "title": "AI Takes Control of Robotic Arm in 16 Minutes Flat",
+   "summary": "Most OT devices at utilities, factories, and elsewhere have been deployed for a decade or more, but operators need to get agile and deploy new cyber defenses.",
+   "priority": "Standard",
+   "category": "AI Security & Emerging Threats",
+   "date": "16 Oct 2026, 18:37 UTC",
+   "sources": "Dark Reading",
+   "url": "story/0a0234023332.html"
   },
   {
    "id": "c094ac3382c9",
@@ -571,6 +1031,16 @@
    "url": "story/61ac6bfaa7c9.html"
   },
   {
+   "id": "c425a649aa9d",
+   "title": "Backdooring Open-Weight AI Models",
+   "summary": "This is a problem: Any open model whose weights have been edited can carry a backdoor, whether it’s a task-specific fine-tune, a merged adapter or an abliterated build…",
+   "priority": "Standard",
+   "category": "Ransomware, Malware & Breaches",
+   "date": "16 Oct 2026, 11:04 UTC",
+   "sources": "Schneier on Security",
+   "url": "story/c425a649aa9d.html"
+  },
+  {
    "id": "f909b9dee009",
    "title": "CERT-In Warns AI Agents Accessed Sensitive Data at Indian Organizations During Testing",
    "summary": "AI agents being tested online reached the live systems of Indian organizations and read business records, including personal data and confidential material, CERT-In said…",
@@ -579,6 +1049,16 @@
    "date": "16 Oct 2026, 06:53 UTC",
    "sources": "The Hacker News",
    "url": "story/f909b9dee009.html"
+  },
+  {
+   "id": "c7adc8194c58",
+   "title": "AI Slop Isn't Just for Social Media; It's Ruining Cyberattacks, Too",
+   "summary": "Don't buy the hype! AI has been dumbing down cyberattacks, and serious threat actors are barely touching it.",
+   "priority": "Standard",
+   "category": "AI Security & Emerging Threats",
+   "date": "15 Oct 2026, 20:43 UTC",
+   "sources": "Dark Reading",
+   "url": "story/c7adc8194c58.html"
   },
   {
    "id": "6c8051f534fe",
@@ -621,6 +1101,36 @@
    "url": "story/9bedf93cf19d.html"
   },
   {
+   "id": "b0a791a97e86",
+   "title": "Yam Store: The Phishing Network Behind a Billion Messages",
+   "summary": "A sprawling cybercrime marketplace supplied cloud infrastructure and phishing kits that helped fuel more than 1 billion phishing messages worldwide.",
+   "priority": "Standard",
+   "category": "Ransomware, Malware & Breaches",
+   "date": "14 Oct 2026, 20:57 UTC",
+   "sources": "Dark Reading",
+   "url": "story/b0a791a97e86.html"
+  },
+  {
+   "id": "6bb19fd6562c",
+   "title": "The Future of AI Cryptanalysis",
+   "summary": "Matthew Green has been writing a rather pessimistic series of posts about the potential for AI systems to vastly outperform humans in cryptanalysis of both symmetric and…",
+   "priority": "Standard",
+   "category": "AI Security & Emerging Threats",
+   "date": "14 Oct 2026, 14:24 UTC",
+   "sources": "Schneier on Security",
+   "url": "story/6bb19fd6562c.html"
+  },
+  {
+   "id": "319aa986d3e5",
+   "title": "Russian Influence Operation Widely Targets Latin America",
+   "summary": "The AI-enabled operation used spoofed emails, fake government documents, and the creation of a local organization to target schools in Peru and Ecuador, among other…",
+   "priority": "Standard",
+   "category": "AI Security & Emerging Threats",
+   "date": "14 Oct 2026, 13:00 UTC",
+   "sources": "Dark Reading",
+   "url": "story/319aa986d3e5.html"
+  },
+  {
    "id": "7923e9fedadd",
    "title": "Anthropic warns small AI models could self-replicate through IoT devices",
    "summary": "AI company Anthropic is warning that advances in small AI models could soon usher in a new era of self-replicating malware that’s capable of infecting smart fridges…",
@@ -629,6 +1139,46 @@
    "date": "14 Oct 2026, 12:55 UTC",
    "sources": "Ars Technica Security",
    "url": "story/7923e9fedadd.html"
+  },
+  {
+   "id": "a240599f4fed",
+   "title": "Anthropic Finds Ingredients for Future AI Worms",
+   "summary": "Anthropic's latest study combines IoT and network tests to explore AI self-replication, which researchers said would be \"challenging\" to shut down.",
+   "priority": "Standard",
+   "category": "AI Security & Emerging Threats",
+   "date": "13 Oct 2026, 20:35 UTC",
+   "sources": "Dark Reading",
+   "url": "story/a240599f4fed.html"
+  },
+  {
+   "id": "fd577205a9ba",
+   "title": "Friday Squid Blogging: Squid Before the Chicxulub Meteor Impact",
+   "summary": "New research shows that squid lived all around the globe even before the Cretaceous-Paleogene mass extinction event. As usual, you can also use this squid post to talk…",
+   "priority": "Standard",
+   "category": "Security News",
+   "date": "16 Oct 2026, 21:06 UTC",
+   "sources": "Schneier on Security",
+   "url": "story/fd577205a9ba.html"
+  },
+  {
+   "id": "b8b7cb7d4b49",
+   "title": "Biomemory Launches DNA Shield, First Commercial Product Built on Its Molecular IT Platform",
+   "summary": "The launch follows the acquisition of catalog's assets and the appointment of Laurent Guengant as CEO earlier this year.",
+   "priority": "Standard",
+   "category": "Security News",
+   "date": "16 Oct 2026, 19:22 UTC",
+   "sources": "Dark Reading",
+   "url": "story/b8b7cb7d4b49.html"
+  },
+  {
+   "id": "3b8939cd6e35",
+   "title": "Irish police force has its Twitter hacked in cryptocurrency scam",
+   "summary": "There must have been red faces in the social media department of Ireland's police headquarters after two of its accounts were hijacked this week. Read more in my article…",
+   "priority": "Standard",
+   "category": "Ransomware, Malware & Breaches",
+   "date": "16 Oct 2026, 18:00 UTC",
+   "sources": "Graham Cluley",
+   "url": "story/3b8939cd6e35.html"
   },
   {
    "id": "2f67e7ff74fc",
@@ -671,6 +1221,16 @@
    "url": "story/d342f7137dd6.html"
   },
   {
+   "id": "5921092180eb",
+   "title": "F-Secure Launches Victim-First Scam Encyclopedia Covering 50+ Types of Consumer Fraud",
+   "summary": "Built from decades of threat intelligence research, the new resource explains scams from the victims' perspective and tracks emerging forms of cyber crime.",
+   "priority": "Standard",
+   "category": "Ransomware, Malware & Breaches",
+   "date": "15 Oct 2026, 21:55 UTC",
+   "sources": "Dark Reading",
+   "url": "story/5921092180eb.html"
+  },
+  {
    "id": "048b26c65907",
    "title": "Targeted ads delivered 0-click exploits to install mercenary malware",
    "summary": "Researchers say that mercenary hackers laced ads with zero-click exploits that installed sophisticated malware on the devices of targeted individuals when they did…",
@@ -711,6 +1271,16 @@
    "url": "story/20dc09b781c4.html"
   },
   {
+   "id": "b199b73eb8c2",
+   "title": "Measuring Human Cryptanalysis Effort",
+   "summary": "Matthew Green has a new site that tries to estimate the number of cryptanalyst-hours that have been spent analyzing different public-key algorithms: Abstract: We…",
+   "priority": "Standard",
+   "category": "Security News",
+   "date": "15 Oct 2026, 16:24 UTC",
+   "sources": "Schneier on Security",
+   "url": "story/b199b73eb8c2.html"
+  },
+  {
    "id": "cdc576e64c59",
    "title": "Citizen Lab Traces Zero-Click Candiru Spyware Infections at Al Jazeera to Targeted Online Ads",
    "summary": "Candiru, an Israeli maker of spyware sold to governments, infected devices at the news network Al Jazeera through ordinary online ads, in attacks that needed no click or…",
@@ -729,6 +1299,16 @@
    "date": "15 Oct 2026, 16:00 UTC",
    "sources": "The Hacker News",
    "url": "story/6ab9bdcb522c.html"
+  },
+  {
+   "id": "295b94e919e7",
+   "title": "Vulnerability Management Isn't About the Score — It's About How It Applies to You",
+   "summary": "Organizations need to move away from vendor-assigned, theoretical scores toward real exploit data specific to their environments.",
+   "priority": "Standard",
+   "category": "Vulnerabilities & Exploited CVEs",
+   "date": "15 Oct 2026, 15:17 UTC",
+   "sources": "Dark Reading",
+   "url": "story/295b94e919e7.html"
   },
   {
    "id": "12b5084185c2",
@@ -761,6 +1341,16 @@
    "url": "story/1d72630baefb.html"
   },
   {
+   "id": "c86f8dee64ea",
+   "title": "EU Grocers Pay a Steep Price for Unpatched Fridge Firmware",
+   "summary": "Hundreds of stores lost millions of euros because they hired third parties to manage the outdated OT firmware running their cooling systems.",
+   "priority": "Standard",
+   "category": "Vulnerabilities & Exploited CVEs",
+   "date": "15 Oct 2026, 07:00 UTC",
+   "sources": "Dark Reading",
+   "url": "story/c86f8dee64ea.html"
+  },
+  {
    "id": "e0c7d4aa37e1",
    "title": "Fridge hack costing millions and sparking fires stemmed from poor security",
    "summary": "Earlier this week, a mass hack of refrigeration systems at an estimated 700 supermarkets throughout France caused them to suddenly malfunction, causing spoilage of…",
@@ -769,6 +1359,46 @@
    "date": "14 Oct 2026, 21:35 UTC",
    "sources": "Ars Technica Security",
    "url": "story/e0c7d4aa37e1.html"
+  },
+  {
+   "id": "7f55a7a9001e",
+   "title": "Anthropic 'SneakPeek' Flaw Is a Silent Zero-Click Threat",
+   "summary": "A bug in Claude Code Desktop's preview pane can allow adversaries to quietly steal credentials from developers, including SSH private keys, AWS credentials, and Claude…",
+   "priority": "Standard",
+   "category": "AI Security & Emerging Threats",
+   "date": "14 Oct 2026, 20:09 UTC",
+   "sources": "Dark Reading",
+   "url": "story/7f55a7a9001e.html"
+  },
+  {
+   "id": "4d5b36d13b30",
+   "title": "Upcoming Speaking Engagements",
+   "summary": "This is a current list of where and when I am scheduled to speak: I’m speaking at ATTENTION: Democracy, Rebuilt in Montreal, Quebec, Canada. The event runs October…",
+   "priority": "Standard",
+   "category": "Security News",
+   "date": "14 Oct 2026, 16:02 UTC",
+   "sources": "Schneier on Security",
+   "url": "story/4d5b36d13b30.html"
+  },
+  {
+   "id": "7bf6f5bbc65c",
+   "title": "Cyberattack on Connected Fridges in France",
+   "summary": "Another IoT cyberattack, this one in France: Hackers gained control of the software that regulates the temperatures of the refrigeration units, forcing some to warm to…",
+   "priority": "Standard",
+   "category": "Ransomware, Malware & Breaches",
+   "date": "14 Oct 2026, 14:10 UTC",
+   "sources": "Schneier on Security",
+   "url": "story/7bf6f5bbc65c.html"
+  },
+  {
+   "id": "c237a5931a63",
+   "title": "North Korea Phishes Ukrainians for War Intel",
+   "summary": "The Democratic People's Republic of Korea (DPRK) is trying to get insight into its own war effort in Ukraine, through simple reply-baiting phishing attacks.",
+   "priority": "Standard",
+   "category": "Ransomware, Malware & Breaches",
+   "date": "13 Oct 2026, 21:24 UTC",
+   "sources": "Dark Reading",
+   "url": "story/c237a5931a63.html"
   }
  ]
 }
