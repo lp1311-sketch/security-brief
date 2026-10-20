@@ -1470,12 +1470,8 @@ def index_page(stories: list[dict], cfg: dict, now: datetime, status: dict,
         f'<div class="stat"><b>{len(stories)}</b><span>stories in the current window</span></div>'
         f'<div class="stat crit"><b>{crit}</b><span>critical</span></div>'
         f'<div class="stat"><b>{exploited}</b><span>actively exploited</span></div>'
-        f'<div class="stat"><b>{status["sources_ok"]}/{status["sources_total"]}</b><span>sources reachable</span></div>'
         "</div>",
     ]
-    note = source_health_note(status)
-    if note:
-        parts.append(f'<p class="notice" role="status">{esc(note)}</p>')
     if articles:
         parts.append(
             '<section class="section" id="analysis"><h2>From the analysis desk</h2><div class="grid">'
