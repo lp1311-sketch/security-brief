@@ -213,6 +213,25 @@
    "source_type": "news"
   },
   {
+   "id": "a3bcf22c3d6c",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-102204 Windows Subsystem for Linux Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102204",
+   "published": "2026-10-20T14:00:00+00:00",
+   "summary": "Updated CVE to relect that this vulnerability is in the Windows Subsystem for Linux product. Microsoft recommends that customer using this product should install the latest version to be protected.",
+   "image": null,
+   "cves": [
+    "CVE-2026-102204"
+   ],
+   "first_seen": "2026-10-20T18:37:43.612967+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "113ed8d030c8",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -1219,6 +1238,27 @@
    ],
    "instructions_checked": true,
    "source_type": "news"
+  },
+  {
+   "id": "1530955429aa",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Eight eMudhra CA Keys Compromised, Triggering Emergency Fixes Across Browsers and Software",
+   "link": "https://thehackernews.com/2026/10/eight-emudhra-ca-keys-compromised.html",
+   "published": "2026-10-20T17:09:53+00:00",
+   "summary": "The private keys of eight eMudhra intermediate certificate authority (CA) certificates are compromised, Mozilla and Google's Chrome Root Program confirms on October 20. An intermediate CA signs the certificates that websites present, so anyone holding one of these keys could issue a certificate for any website that a…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJOWLzgriXXM626bAOaX_LEoNH97Ab_XV4oQ0GxBeY3-PqkdXdcae52-wrl8r0LipTFBsvl4R7Y5j6jFsiG_9V8ZAwHOkAlsZaRcOAswStHhAG1FYm9W6kjA4FmOz0bXgVXO6LyEs9Fv75UrRFphZEzhXodKdTlYzfPK8sqW3DpxKBnD7OFQfqJJ_ay2c/s1600/ecert.jpg",
+   "cves": [],
+   "first_seen": "2026-10-20T18:37:43.612967+00:00",
+   "instructions": [
+    "Chrome will remove the same root in version 43 of its root store and is reviewing the status of eMudhra's other root in its store, emSign Root CA - G1, the Chrome Root Program said, citing the seriousness of the incident.",
+    "No TLS certificate chaining to the six intermediates used for websites had been logged to Certificate Transparency (CT) before Chrome's block, so none could have been trusted by default in Chrome or any other browser that requires CT logging, the Chrome Root Program said.",
+    "Chrome did not need to block the two code-signing certificates, because its TLS verifier will not build a path through an intermediate restricted to code signing, the Chrome Root Program said.",
+    "The Chrome Root Program received the report at 18:05 UTC on October 17 and had a CRLSet update blocking the six TLS intermediates in place by 19:45 UTC."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "50e342417287",
@@ -3482,6 +3522,25 @@
    "first_seen": "2026-10-20T10:33:14.842541+00:00",
    "image_checked": true,
    "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "2bcaf37a740b",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "OpenAI says GPT-6.1 Sol is dramatically better at migrating legacy code",
+   "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-gpt-61-sol-is-dramatically-better-at-migrating-legacy-code/",
+   "published": "2026-10-20T18:11:03+00:00",
+   "summary": "OpenAI confirmed that its newer models are much better at writing and migrating software in older programming languages.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/13/openai-listening-device.jpg",
+   "cves": [],
+   "first_seen": "2026-10-20T18:37:43.612967+00:00",
+   "image_checked": true,
+   "instructions": [
+    "OpenAI also tested whether its models could migrate COBOL programs to C++, Java, Kotlin, Python, or Rust without changing their behaviour."
+   ],
    "instructions_checked": true
   },
   {
