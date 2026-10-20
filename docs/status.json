@@ -1,7 +1,7 @@
 {
-  "generated": "2026-10-20T15:17:12+00:00",
-  "sources_ok": 14,
-  "sources_total": 16,
+  "generated": "2026-10-20T15:30:45+00:00",
+  "sources_ok": 15,
+  "sources_total": 18,
   "sources": [
     {
       "id": "bleepingcomputer",
@@ -96,13 +96,26 @@
       "error": "HTTP Error 404: Not Found"
     },
     {
-      "id": "cert-bund",
-      "name": "CERT-Bund (BSI) Warnungen",
+      "id": "m365-blog",
+      "name": "Microsoft 365 Blog",
       "ok": true,
-      "count": 30
+      "count": 1
+    },
+    {
+      "id": "windows-blog",
+      "name": "Windows Experience Blog",
+      "ok": true,
+      "count": 3
+    },
+    {
+      "id": "google-threat-intel",
+      "name": "Google Threat Intelligence",
+      "ok": false,
+      "count": 0,
+      "error": "response is not an RSS/Atom feed"
     }
   ],
-  "stories": 180,
+  "stories": 181,
   "analysis_articles": 0,
   "critical": 6,
   "high": 2,
