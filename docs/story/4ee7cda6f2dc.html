@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OVHcloud CLI releases backdoored on GitHub to steal developer secrets | Security Brief</title>
+<meta name="description" content="French cloud and hosting provider OVHcloud is warning users that attackers compromised its open-source command-line interface (CLI) tool to…">
+<meta property="og:site_name" content="Security Brief">
+<meta property="og:type" content="website">
+<meta property="og:title" content="OVHcloud CLI releases backdoored on GitHub to steal developer secrets">
+<meta property="og:description" content="French cloud and hosting provider OVHcloud is warning users that attackers compromised its open-source command-line interface (CLI) tool to…">
+<meta property="og:image" content="https://www.bleepstatic.com/content/hl-images/2026/10/20/ovhcloud.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script>(function(){
+var root=document.documentElement,dark=false,saved=null;
+try{saved=localStorage.getItem('sb-theme')}catch(e){}
+dark=saved?saved==='dark':(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches);
+function apply(){root.setAttribute('data-theme',dark?'dark':'light');
+var b=document.getElementById('theme-toggle');
+if(b){b.textContent=dark?'Light mode':'Dark mode';b.setAttribute('aria-pressed',String(dark));}}
+apply();
+document.addEventListener('DOMContentLoaded',function(){
+var b=document.getElementById('theme-toggle');
+if(b){b.addEventListener('click',function(){dark=!dark;try{localStorage.setItem('sb-theme',dark?'dark':'light')}catch(e){}apply();});}
+apply();});
+})();</script>
+<link rel="stylesheet" href="../style.css">
+<link rel="alternate" type="application/rss+xml" title="Security Brief" href="https://lp1311-sketch.github.io/security-brief/feed.xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap bar">
+<a class="brand" href="../index.html"><span class="mark" aria-hidden="true"></span>Security Brief</a>
+<nav class="nav" aria-label="Categories"><a href="../today/index.html">Today</a><a href="../saved/index.html">Saved</a><a href="../index.html#threats">Threats</a><a href="../index.html#vulnerabilities">Vulnerabilities</a><a href="../index.html#ai">AI</a><a href="../index.html#microsoft">Microsoft</a><a href="../briefings/index.html">Briefings</a><a href="../patch-tuesday/index.html">Patch Tuesday</a></nav>
+<button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false">Dark mode</button>
+</div></header>
+<main id="main" class="wrap">
+<article class="prose"><p class="meta"><a href="../index.html">← Back to home</a></p>
+<p class="meta"><span class="badge Standard">Standard</span>Ransomware, Malware &amp; Breaches</p>
+<h1>OVHcloud CLI releases backdoored on GitHub to steal developer secrets</h1>
+<p class="meta">Published: 20 Oct 2026, 11:31 UTC · Priority score 3</p>
+<figure><img src="https://www.bleepstatic.com/content/hl-images/2026/10/20/ovhcloud.jpg" alt="" referrerpolicy="no-referrer" width="640" height="360"><figcaption>Image: BleepingComputer. Credit remains with the original publisher.</figcaption></figure>
+<h2>Summary</h2>
+<p>French cloud and hosting provider OVHcloud is warning users that attackers compromised its open-source command-line interface (CLI) tool to distribute information-stealing malware.</p>
+<p class="meta">Summary is the feed's excerpt, shortened. It is not a full article.</p>
+<h2>Why it matters</h2>
+<p>A compromised package or download runs with the rights of whoever installs it. Check whether you use the named package or version, and review installation and endpoint logs. Exposed keys or passwords stay valid until rotated. Rotate the affected keys and check their usage logs for unexpected calls.</p>
+<h2>Instructions from the source</h2><p class="note">Sentences quoted word for word from the original article. Check each one against the article before you act.</p><ul><li>&ldquo;Anyone who ran an affected binary should treat all secrets on the machine as compromised.&rdquo; <span class="meta">— <a href="https://www.bleepingcomputer.com/news/security/ovhcloud-cli-releases-backdoored-on-github-to-steal-developer-secrets/" rel="nofollow noopener noreferrer" target="_blank">BleepingComputer</a></span></li><li>&ldquo;OVHcloud CEO Octave Klaba disclosed that the company’s CLI repository on GitHub had been compromised, urging users who downloaded the latest version yesterday to update or remove the tool.&rdquo; <span class="meta">— <a href="https://www.bleepingcomputer.com/news/security/ovhcloud-cli-releases-backdoored-on-github-to-steal-developer-secrets/" rel="nofollow noopener noreferrer" target="_blank">BleepingComputer</a></span></li><li>&ldquo;In a later update, Klaba shared that GitHub’s release immutability setting was disabled, allowing a sufficiently privileged account to modify existing releases without passing CI/CD checks.&rdquo; <span class="meta">— <a href="https://www.bleepingcomputer.com/news/security/ovhcloud-cli-releases-backdoored-on-github-to-steal-developer-secrets/" rel="nofollow noopener noreferrer" target="_blank">BleepingComputer</a></span></li><li>&ldquo;However, Klaba urges users who downloaded a compromised CLI package to perform a system cleanup and revoke all secrets.&rdquo; <span class="meta">— <a href="https://www.bleepingcomputer.com/news/security/ovhcloud-cli-releases-backdoored-on-github-to-steal-developer-secrets/" rel="nofollow noopener noreferrer" target="_blank">BleepingComputer</a></span></li></ul>
+<h2>Why this priority</h2>
+<div class="box"><p><strong>Standard</strong>. Criteria: Critical = CVE listed in CISA KEV, or exploitation reported by an official source. High = score 6 or more. Otherwise Standard.</p>
+<ul><li>cloud/identity relevance (+1)</li><li>published in the last 24 h (+2)</li></ul>
+<p>No CVE identifier found in the feed text.</p></div>
+<h2>Sources</h2>
+<ul><li><a href="https://www.bleepingcomputer.com/news/security/ovhcloud-cli-releases-backdoored-on-github-to-steal-developer-secrets/" rel="nofollow noopener noreferrer" target="_blank">OVHcloud CLI releases backdoored on GitHub to steal developer secrets</a> — BleepingComputer, 20 Oct 2026, 11:31 UTC</li></ul>
+<p class="note">Automated page. Verify facts in the original articles before acting on them.</p></article>
+</main>
+<footer class="site-footer"><div class="wrap">Automated briefing. Headlines and short excerpts come from public RSS feeds, and every story links to the original publisher. Not affiliated with any source. &middot; <a href="../impressum.html">Impressum</a> &middot; <a href="../datenschutz.html">Privacy</a> &middot; <a href="../corrections.html">Corrections</a> &middot; <a href="../feed.xml">RSS</a> &middot; <a href="../status.json">Run status</a></div></footer>
+</body>
+</html>
