@@ -1,24 +1,6 @@
 {
  "items": [
   {
-   "id": "e0c7d4aa37e1",
-   "source": "ars",
-   "source_name": "Ars Technica Security",
-   "official": false,
-   "title": "Fridge hack costing millions and sparking fires stemmed from poor security",
-   "link": "https://arstechnica.com/security/2026/10/fridge-hack-costing-millions-and-sparking-fires-stemmed-from-poor-security/",
-   "published": "2026-10-14T21:35:09+00:00",
-   "summary": "Earlier this week, a mass hack of refrigeration systems at an estimated 700 supermarkets throughout France caused them to suddenly malfunction, causing spoilage of untold tons of perishables and, in some cases, fires. As is now the norm, basic cybersecurity would have prevented it. French authorities say the systems…",
-   "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/mass-fridge-hack-1024x648.jpg",
-   "cves": [],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00",
-   "instructions": [
-    "A hacker who takes the time to analyze the code can do the same thing on any device that hasn’t received a recent update."
-   ],
-   "instructions_checked": true,
-   "source_type": "news"
-  },
-  {
    "id": "fb9936745ef9",
    "source": "ars",
    "source_name": "Ars Technica Security",
@@ -4701,6 +4683,26 @@
    "source_type": "news"
   },
   {
+   "id": "e9fd60a700e2",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Japan's Onamae Desktop Cloud hacked, up to 27,000 servers affected",
+   "link": "https://www.bleepingcomputer.com/news/security/japans-onamae-desktop-cloud-hacked-up-to-27-000-servers-affected/",
+   "published": "2026-10-21T21:43:27+00:00",
+   "summary": "Hackers compromised the infrastructure of Onamae Desktop Cloud, a popular provider of VPS services in Japan, and installed malware on up to 26,739 customers' servers.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/21/cloud-servers.jpg",
+   "cves": [],
+   "first_seen": "2026-10-21T21:57:32.507121+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Customers who stored secrets, such as passwords, on their servers are advised to rotate them as soon as possible, as they may have been compromised.",
+    "Mozilla, Google, Apple block compromised eMudhra CA certificates"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "3371acd3dcb3",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -5044,6 +5046,22 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt850556f866500627/654a5a8e05eb4d040a046894/325351_DR23_Graphics_General_Large_Text_v1.png?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-10-21T21:13:15.063700+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "7bcbd743c3f7",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "TiDB Breach Exposes Flawed Cloud Security Assumptions",
+   "link": "https://www.darkreading.com/cloud-security/tidb-breach-flawed-cloud-security",
+   "published": "2026-10-21T21:15:39+00:00",
+   "summary": "Cloud providers may be storing sensitive customer data, without either party knowing it. But when a provider is breached, the data comes home to roost.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt9561c8122fa8def8/6ad9188c009b36a4ff009e9b/Fulcrum-MicroStockHub-Getty.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-10-21T21:57:32.507121+00:00",
    "instructions": [],
    "instructions_checked": true
   },
@@ -5395,24 +5413,6 @@
    "summary": "An industry-wide laser focus on vulnerabilities has left cybersecurity teams without enough room to strategize for resilience.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt65c173c2226bc353/6ad26aaeed74a561440a7b76/dictionary-boonchai_wedmakawand-Getty-1321495582.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "e1c5b3e9fc3c",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "Ivanti ICS Zero-Day Attacks Highlight Vendor Patching Hurdles",
-   "link": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching",
-   "published": "2026-10-14T21:20:13+00:00",
-   "summary": "CVE-2026-104935, a high-severity authentication bypass + RCE vulnerability, was only partially discovered and patched in July, leaving an opening for threat actors to capitalize on.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt5c7ce56f98018528/6acfd608b8750c62d9a7bd46/patching-Florencio_Horcajo_Alvarez-Getty-2270656800.jpg?width=720&quality=80&disable=upscale",
-   "cves": [
-    "CVE-2026-104935"
-   ],
    "first_seen": "2026-10-20T09:53:14.101641+00:00",
    "instructions": [],
    "instructions_checked": true

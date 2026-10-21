@@ -111,6 +111,16 @@
    "url": "story/74a44f824ba0.html"
   },
   {
+   "id": "7bcbd743c3f7",
+   "title": "TiDB Breach Exposes Flawed Cloud Security Assumptions",
+   "summary": "Cloud providers may be storing sensitive customer data, without either party knowing it. But when a provider is breached, the data comes home to roost.",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "21 Oct 2026, 21:15 UTC",
+   "sources": "Dark Reading",
+   "url": "story/7bcbd743c3f7.html"
+  },
+  {
    "id": "f6f763b9dab2",
    "title": "Marvell, Microsoft & Oracle Work to Standardize Data Center Hardware Security",
    "summary": "The effort is aimed at standardizing a NIST FIPS 140-3 Level 3 integrated HSM for cloud and hyperscale data center infrastructure.",
@@ -141,16 +151,6 @@
    "url": "story/67c1ab51681c.html"
   },
   {
-   "id": "5a4ecf9699d2",
-   "title": "CVE-2026-97783 Microsoft Office SharePoint Spoofing Vulnerability",
-   "summary": "The vulnerability associated with this CVE was fixed in July, however was inadvertently not included with that release. Microsoft recommends updating to the most current…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "21 Oct 2026, 14:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/5a4ecf9699d2.html"
-  },
-  {
    "id": "6e4d169a998c",
    "title": "CVE-2026-61359 Windows Storage Elevation of Privilege Vulnerability",
    "summary": "Updated an acknowledgement. This is an informational change only.",
@@ -179,6 +179,16 @@
    "date": "21 Oct 2026, 14:00 UTC",
    "sources": "Microsoft Security Response Center",
    "url": "story/905472152d32.html"
+  },
+  {
+   "id": "5a4ecf9699d2",
+   "title": "CVE-2026-97783 Microsoft Office SharePoint Spoofing Vulnerability",
+   "summary": "The vulnerability associated with this CVE was fixed in July, however was inadvertently not included with that release. Microsoft recommends updating to the most current…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "21 Oct 2026, 14:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/5a4ecf9699d2.html"
   },
   {
    "id": "a92bc795de6c",
@@ -229,16 +239,6 @@
    "date": "15 Oct 2026, 06:43 UTC",
    "sources": "The Hacker News",
    "url": "story/a713f2422da2.html"
-  },
-  {
-   "id": "e1c5b3e9fc3c",
-   "title": "Ivanti ICS Zero-Day Attacks Highlight Vendor Patching Hurdles",
-   "summary": "CVE-2026-104935, a high-severity authentication bypass + RCE vulnerability, was only partially discovered and patched in July, leaving an opening for threat actors to…",
-   "priority": "Critical",
-   "category": "Patch Radar",
-   "date": "14 Oct 2026, 21:20 UTC",
-   "sources": "Dark Reading",
-   "url": "story/e1c5b3e9fc3c.html"
   },
   {
    "id": "a9726704f0fa",
@@ -371,16 +371,6 @@
    "url": "story/b63933cb56fa.html"
   },
   {
-   "id": "cd2448e33b82",
-   "title": "Researchers Infiltrate Microsoft Tech Support Scam Operation",
-   "summary": "A large-scale scam operation impersonating Microsoft uses a malicious traffic distribution system (TDS) run by a Russian organization and abuses thousands of Cloudflare…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "19 Oct 2026, 21:13 UTC",
-   "sources": "Dark Reading",
-   "url": "story/cd2448e33b82.html"
-  },
-  {
    "id": "b1e34d264127",
    "title": "CVE-2026-80092 Microsoft Identity Web Elevation of Privilege Vulnerability",
    "summary": "Updated the Security Updates table to list Microsoft Identity Web v3 and v4 separately and clarify the affected version ranges. The existing security updates are…",
@@ -399,6 +389,16 @@
    "date": "16 Oct 2026, 14:00 UTC",
    "sources": "Dark Reading",
    "url": "story/834a248937df.html"
+  },
+  {
+   "id": "e9fd60a700e2",
+   "title": "Japan's Onamae Desktop Cloud hacked, up to 27,000 servers affected",
+   "summary": "Hackers compromised the infrastructure of Onamae Desktop Cloud, a popular provider of VPS services in Japan, and installed malware on up to 26,739 customers' servers.",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "21 Oct 2026, 21:43 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/e9fd60a700e2.html"
   },
   {
    "id": "04b5c5ae9150",
@@ -661,14 +661,14 @@
    "url": "story/ebff93066b7e.html"
   },
   {
-   "id": "5a8d0413be6f",
-   "title": "Nikkei discloses third data breach in a month, 1.8M records exposed",
-   "summary": "Nikkei Inc. disclosed a new data breach, the third in about a month, that exposed 1.83 million personal information records.",
+   "id": "cd2448e33b82",
+   "title": "Researchers Infiltrate Microsoft Tech Support Scam Operation",
+   "summary": "A large-scale scam operation impersonating Microsoft uses a malicious traffic distribution system (TDS) run by a Russian organization and abuses thousands of Cloudflare…",
    "priority": "Standard",
    "category": "Attacks & Breaches",
-   "date": "19 Oct 2026, 21:49 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/5a8d0413be6f.html"
+   "date": "19 Oct 2026, 21:13 UTC",
+   "sources": "Dark Reading",
+   "url": "story/cd2448e33b82.html"
   },
   {
    "id": "3e1278093e93",
@@ -1241,6 +1241,16 @@
    "url": "story/92e407676578.html"
   },
   {
+   "id": "5a8d0413be6f",
+   "title": "Nikkei discloses third data breach in a month, 1.8M records exposed",
+   "summary": "Nikkei Inc. disclosed a new data breach, the third in about a month, that exposed 1.83 million personal information records.",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "19 Oct 2026, 21:49 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/5a8d0413be6f.html"
+  },
+  {
    "id": "561dd3f2eda5",
    "title": "Siemens Software Center Vulnerability Exploited in ClickFix Malware Attacks",
    "summary": "Attackers paired a genuine, signed copy of Siemens Software Center with malicious DLLs to infect Windows PCs via ClickFix lures. The post Siemens Software Center…",
@@ -1641,16 +1651,6 @@
    "url": "story/6c494d43a845.html"
   },
   {
-   "id": "a4cd23325612",
-   "title": "WordPress SEO plugin Rank Math compromised to backdoor websites",
-   "summary": "Some downloads of the Rank Math PRO WordPress plugin from the vendor's official website carried malware that planted hidden backdoors in a supply-chain attack last week.",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "19 Oct 2026, 21:24 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/a4cd23325612.html"
-  },
-  {
    "id": "70d02c573a35",
    "title": "[UPDATE] [mittel] PCRE (Perl Compatible Regular Expressions): Schwachstelle ermöglicht Codeausführung",
    "summary": "Ein entfernter, authentisierter Angreifer kann eine Schwachstelle in PCRE (Perl Compatible Regular Expressions) ausnutzen, um möglicherweise beliebigen Code auszuführen…",
@@ -1899,6 +1899,16 @@
    "date": "15 Oct 2026, 11:04 UTC",
    "sources": "The Hacker News",
    "url": "story/9bedf93cf19d.html"
+  },
+  {
+   "id": "a4cd23325612",
+   "title": "WordPress SEO plugin Rank Math compromised to backdoor websites",
+   "summary": "Some downloads of the Rank Math PRO WordPress plugin from the vendor's official website carried malware that planted hidden backdoors in a supply-chain attack last week.",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "19 Oct 2026, 21:24 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/a4cd23325612.html"
   },
   {
    "id": "553c25ef7794",
@@ -2319,16 +2329,6 @@
    "date": "15 Oct 2026, 07:00 UTC",
    "sources": "Dark Reading",
    "url": "story/c86f8dee64ea.html"
-  },
-  {
-   "id": "e0c7d4aa37e1",
-   "title": "Fridge hack costing millions and sparking fires stemmed from poor security",
-   "summary": "Earlier this week, a mass hack of refrigeration systems at an estimated 700 supermarkets throughout France caused them to suddenly malfunction, causing spoilage of…",
-   "priority": "Standard",
-   "category": "Germany & BSI",
-   "date": "14 Oct 2026, 21:35 UTC",
-   "sources": "Ars Technica Security",
-   "url": "story/e0c7d4aa37e1.html"
   }
  ]
 }
