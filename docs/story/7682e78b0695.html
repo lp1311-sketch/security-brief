@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smashing Security podcast #489: How a brand new crypto wallet came with a spy inside | Security Brief</title>
+<meta name="description" content="Imagine buying a brand new hardware wallet for your cryptocurrency with the shrink-wrap still on... what could possibly be hiding inside? We break…">
+<meta property="og:site_name" content="Security Brief">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Smashing Security podcast #489: How a brand new crypto wallet came with a spy inside">
+<meta property="og:description" content="Imagine buying a brand new hardware wallet for your cryptocurrency with the shrink-wrap still on... what could possibly be hiding inside? We break…">
+<meta property="og:image" content="https://grahamcluley.com/wp-content/uploads/2026/10/ss-episode-489.webp">
+<meta name="twitter:card" content="summary_large_image">
+<script>(function(){
+var root=document.documentElement,dark=false,saved=null;
+try{saved=localStorage.getItem('sb-theme')}catch(e){}
+dark=saved?saved==='dark':(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches);
+function apply(){root.setAttribute('data-theme',dark?'dark':'light');
+var b=document.getElementById('theme-toggle');
+if(b){b.textContent=dark?'Light mode':'Dark mode';b.setAttribute('aria-pressed',String(dark));}}
+apply();
+document.addEventListener('DOMContentLoaded',function(){
+var b=document.getElementById('theme-toggle');
+if(b){b.addEventListener('click',function(){dark=!dark;try{localStorage.setItem('sb-theme',dark?'dark':'light')}catch(e){}apply();});}
+apply();});
+})();</script>
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="Security Brief" href="https://lp1311-sketch.github.io/security-brief/feed.xml">
+</head>
+<body>
+<div class="fx" aria-hidden="true"><i class="orb o1"></i><i class="orb o2"></i><i class="orb o3"></i><i class="fly f1"></i><i class="fly f2"></i><i class="fly f3"></i><svg class="fx-circuit" viewBox="0 0 1000 600" preserveAspectRatio="none" aria-hidden="true"><path class="g" d="M0 120 H260 L300 160 H520 L560 120 H1000"/><path class="r" d="M0 430 H180 L220 390 H430 L470 430 H760 L800 470 H1000" style="animation-delay:-6s"/><path class="b" d="M120 600 V470 L160 430 V260 L200 220 V0" style="animation-delay:-11s"/><path class="g" d="M1000 300 H820 L780 340 H640 L600 300 H380" style="animation-delay:-3s"/><circle cx="300" cy="160" r="4" fill="#22c55e"/><circle cx="470" cy="430" r="4" fill="#ef4444"/><circle cx="200" cy="220" r="4" fill="#38bdf8"/><circle cx="600" cy="300" r="4" fill="#22c55e"/></svg></div>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap bar">
+<a class="brand" href="../index.html"><img class="logo-img" src="../favicon.svg" width="30" height="30" alt="" aria-hidden="true">Security Brief</a>
+<nav class="nav" aria-label="Categories"><a href="../today/index.html">Today</a><a href="../saved/index.html">Saved</a><a href="../category/threats/index.html">Threats</a><a href="../category/vulnerabilities/index.html">Vulnerabilities</a><a href="../category/ai/index.html">AI</a><a href="../category/microsoft/index.html">Microsoft</a><a href="../stories/index.html">All stories</a><a href="../briefings/index.html">Analysis</a><a href="../patch-tuesday/index.html">Patch Tuesday</a></nav>
+<button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false">Dark mode</button>
+</div></header>
+<div class="banner" role="region" aria-label="Site highlights"><div class="wrap banner-in"><span class="banner-tag"><i class="led g" aria-hidden="true"></i>Live feed</span><p class="banner-text" id="banner-text" aria-live="off">Feeds are checked every 20 minutes.</p><a class="banner-action" href="../today/index.html"><i class="led r" aria-hidden="true"></i>Action today</a><button type="button" class="banner-pause" id="banner-pause" aria-pressed="false" aria-label="Pause banner">Pause</button></div></div>
+<main id="main" class="wrap">
+<article class="prose"><p class="meta"><a href="../index.html">← Back to home</a></p>
+<p class="meta"><span class="badge Standard">Standard</span>AI Risk Lab</p>
+<h1>Smashing Security podcast #489: How a brand new crypto wallet came with a spy inside</h1>
+<p class="meta">Published: 21 Oct 2026, 23:12 UTC · Priority score 3</p>
+<figure><img src="https://grahamcluley.com/wp-content/uploads/2026/10/ss-episode-489.webp" data-fallback="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22360%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20fill%3D%22%230b0f14%22/%3E%3Cg%20stroke%3D%22%2318202b%22%20stroke-width%3D%221%22%3E%3Cline%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%22360%22/%3E%3Cline%20x1%3D%2264%22%20y1%3D%220%22%20x2%3D%2264%22%20y2%3D%22360%22/%3E%3Cline%20x1%3D%22128%22%20y1%3D%220%22%20x2%3D%22128%22%20y2%3D%22360%22/%3E%3Cline%20x1%3D%22192%22%20y1%3D%220%22%20x2%3D%22192%22%20y2%3D%22360%22/%3E%3Cline%20x1%3D%22256%22%20y1%3D%220%22%20x2%3D%22256%22%20y2%3D%22360%22/%3E%3Cline%20x1%3D%22320%22%20y1%3D%220%22%20x2%3D%22320%22%20y2%3D%22360%22/%3E%3Cline%20x1%3D%22384%22%20y1%3D%220%22%20x2%3D%22384%22%20y2%3D%22360%22/%3E%3Cline%20x1%3D%22448%22%20y1%3D%220%22%20x2%3D%22448%22%20y2%3D%22360%22/%3E%3Cline%20x1%3D%22512%22%20y1%3D%220%22%20x2%3D%22512%22%20y2%3D%22360%22/%3E%3Cline%20x1%3D%22576%22%20y1%3D%220%22%20x2%3D%22576%22%20y2%3D%22360%22/%3E%3Cline%20x1%3D%22640%22%20y1%3D%220%22%20x2%3D%22640%22%20y2%3D%22360%22/%3E%3Cline%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%22640%22%20y2%3D%220%22/%3E%3Cline%20x1%3D%220%22%20y1%3D%2260%22%20x2%3D%22640%22%20y2%3D%2260%22/%3E%3Cline%20x1%3D%220%22%20y1%3D%22120%22%20x2%3D%22640%22%20y2%3D%22120%22/%3E%3Cline%20x1%3D%220%22%20y1%3D%22180%22%20x2%3D%22640%22%20y2%3D%22180%22/%3E%3Cline%20x1%3D%220%22%20y1%3D%22240%22%20x2%3D%22640%22%20y2%3D%22240%22/%3E%3Cline%20x1%3D%220%22%20y1%3D%22300%22%20x2%3D%22640%22%20y2%3D%22300%22/%3E%3Cline%20x1%3D%220%22%20y1%3D%22360%22%20x2%3D%22640%22%20y2%3D%22360%22/%3E%3C/g%3E%3Crect%20width%3D%228%22%20height%3D%22360%22%20fill%3D%22%235eead4%22/%3E%3Ctext%20x%3D%2248%22%20y%3D%22112%22%20fill%3D%22%235eead4%22%20font-family%3D%22Arial%2CHelvetica%2Csans-serif%22%20font-size%3D%2216%22%20font-weight%3D%22700%22%20letter-spacing%3D%223%22%3EAI%20RISK%20LAB%3C/text%3E%3Ctext%20x%3D%2248%22%20y%3D%22196%22%20fill%3D%22%23f1f5f9%22%20font-family%3D%22Arial%2CHelvetica%2Csans-serif%22%20font-size%3D%2246%22%20font-weight%3D%22700%22%3ESmashing%3C/text%3E%3Ctext%20x%3D%2248%22%20y%3D%22318%22%20fill%3D%22%2364748b%22%20font-family%3D%22Arial%2CHelvetica%2Csans-serif%22%20font-size%3D%2213%22%20letter-spacing%3D%222%22%3ESECURITY%20BRIEF%3C/text%3E%3C/svg%3E" onerror="this.onerror=null;this.src=this.dataset.fallback" alt="" referrerpolicy="no-referrer" width="640" height="360"><figcaption>Image: Graham Cluley. Credit remains with the original publisher.</figcaption></figure>
+<h2>Summary</h2>
+<p>Imagine buying a brand new hardware wallet for your cryptocurrency with the shrink-wrap still on... what could possibly be hiding inside? We break out a Geiger counter and a cat to find out. Meanwhile, malicious ads are targeting journalists with zero-click attacks. Plus, Origin’s Spencer Thompson reveals what AI…</p>
+<p class="meta">Summary is the feed's excerpt, shortened. It is not a full article.</p>
+<h2>Why it matters</h2>
+<p>AI tools are becoming part of normal business workflows, so weaknesses in them can expose data or access quickly.</p>
+<h2>Instructions from the source</h2><p class="note">We found no specific instructions in the source article. Open the original and look for a recommendation or a fix.</p>
+<h2>Why this priority</h2>
+<div class="box"><p><strong>Standard</strong>. Criteria: Critical = CVE listed in CISA KEV, or exploitation reported by an official source. High = score 6 or more. Otherwise Standard.</p>
+<ul><li>AI relevance (+1)</li><li>published in the last 24 h (+2)</li></ul>
+<p>No CVE identifier found in the feed text.</p></div>
+<h2>Sources</h2>
+<ul><li><a href="https://grahamcluley.com/smashing-security-podcast-489/" rel="nofollow noopener noreferrer" target="_blank">Smashing Security podcast #489: How a brand new crypto wallet came with a spy inside</a> — Graham Cluley, 21 Oct 2026, 23:12 UTC</li></ul>
+<p class="note">Automated page. Verify facts in the original articles before acting on them.</p></article>
+</main>
+<script>(function(){
+var msgs=["Feeds are checked every 20 minutes.","Every story links to its original source.","Patch Tuesday notes and weekly analysis are written by hand, not by AI.","Read the Today page for what needs action now.","Corrections are published openly."];
+var el=document.getElementById('banner-text'),btn=document.getElementById('banner-pause');
+if(!el||!btn)return;
+var i=0,paused=false,reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+function show(){el.style.opacity=0;setTimeout(function(){el.textContent=msgs[i];el.style.opacity=1;},250);}
+var t=setInterval(function(){if(paused)return;i=(i+1)%msgs.length;show();},6000);
+btn.addEventListener('click',function(){paused=!paused;btn.setAttribute('aria-pressed',String(paused));btn.textContent=paused?'Play':'Pause';btn.setAttribute('aria-label',paused?'Play banner':'Pause banner');});
+if(reduce){paused=true;btn.setAttribute('aria-pressed','true');btn.textContent='Play';}
+})();</script>
+<footer class="site-footer"><div class="wrap"><p>&copy; 2026 Leon Pavesic. Design, analysis and texts on this site are protected by copyright. Headlines, short excerpts and images belong to their original publishers and are linked to the source. Not affiliated with any source.</p><p><a href="../impressum.html">Impressum</a> &middot; <a href="../datenschutz.html">Privacy</a> &middot; <a href="../corrections.html">Corrections</a> &middot; <a href="../feed.xml">RSS</a> &middot; <a href="mailto:leon.pavesic@gmx.de">Contact</a> &middot; <a href="https://www.linkedin.com/in/leon-pavesic/" rel="me noopener noreferrer" target="_blank">LinkedIn</a> &middot; <a href="https://www.xing.com/profile/Leon_Pavesic" rel="me noopener noreferrer" target="_blank">XING</a></p></div></footer>
+</body>
+</html>
