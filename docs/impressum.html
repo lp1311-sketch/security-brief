@@ -28,15 +28,27 @@ apply();});
 <link rel="alternate" type="application/rss+xml" title="Security Brief" href="https://lp1311-sketch.github.io/security-brief/feed.xml">
 </head>
 <body>
+<div class="fx" aria-hidden="true"><i class="orb o1"></i><i class="orb o2"></i><i class="orb o3"></i><i class="fly f1"></i><i class="fly f2"></i><i class="fly f3"></i></div>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header"><div class="wrap bar">
 <a class="brand" href="index.html"><img class="logo-img" src="favicon.svg" width="30" height="30" alt="" aria-hidden="true">Security Brief</a>
 <nav class="nav" aria-label="Categories"><a href="today/index.html">Today</a><a href="saved/index.html">Saved</a><a href="category/threats/index.html">Threats</a><a href="category/vulnerabilities/index.html">Vulnerabilities</a><a href="category/ai/index.html">AI</a><a href="category/microsoft/index.html">Microsoft</a><a href="stories/index.html">All stories</a><a href="briefings/index.html">Analysis</a><a href="patch-tuesday/index.html">Patch Tuesday</a></nav>
-<button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false">Dark mode</button>
+<a class="live" href="today/index.html"><i class="led r" aria-hidden="true"></i>Action today</a><span class="live" role="status"><i class="led g" aria-hidden="true"></i>Live feed</span><button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false">Dark mode</button>
 </div></header>
+<div class="banner" role="region" aria-label="Site highlights"><div class="wrap banner-in"><span class="banner-tag"><i class="led g" aria-hidden="true"></i>Security Brief</span><p class="banner-text" id="banner-text" aria-live="off">Feeds are checked every 20 minutes.</p><button type="button" class="banner-pause" id="banner-pause" aria-pressed="false" aria-label="Pause banner">Pause</button></div></div>
 <main id="main" class="wrap">
 <article class="prose"><h1>Impressum</h1><p>Angaben gemäß § 5 DDG:</p><p>Leon Pavesic<br>Kellerstr. 8<br>83022 Rosenheim<br>Deutschland<br>E-Mail: leon.pavesic@gmx.de</p><p>Verantwortlich für den Inhalt gemäß § 18 Abs. 2 MStV: Leon Pavesic, Kellerstr. 8<br>83022 Rosenheim<br>Deutschland</p><h2>Urheberrecht</h2><p>Die Gestaltung, die Auswahl sowie die eigenen Analysen und Texte dieser Website sind urheberrechtlich geschützt. Jede Verwertung außerhalb der Grenzen des Urheberrechts bedarf der schriftlichen Zustimmung des Verantwortlichen.</p><p>Schlagzeilen, Textauszüge, Vorschaubilder und Logos stammen von den jeweiligen Quellen und bleiben deren Eigentum. Jede Meldung verlinkt auf den Originalartikel. Zitate sind kurz gehalten und als solche gekennzeichnet.</p><h2>Haftung für Inhalte</h2><p>Die Inhalte werden automatisch aus öffentlichen RSS-Feeds übernommen und gekürzt. Für Richtigkeit, Vollständigkeit und Aktualität der Inhalte, insbesondere der Originalquellen, wird keine Gewähr übernommen. Die Angaben ersetzen keine individuelle Sicherheitsberatung.</p><h2>Haftung für Links</h2><p>Für die Inhalte verlinkter externer Seiten sind ausschließlich deren Betreiber verantwortlich.</p></article>
 </main>
+<script>(function(){
+var msgs=["Feeds are checked every 20 minutes.","Every story links to its original source.","Patch Tuesday notes and weekly analysis are written by hand, not by AI.","Read the Today page for what needs action now.","Corrections are published openly."];
+var el=document.getElementById('banner-text'),btn=document.getElementById('banner-pause');
+if(!el||!btn)return;
+var i=0,paused=false,reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+function show(){el.style.opacity=0;setTimeout(function(){el.textContent=msgs[i];el.style.opacity=1;},250);}
+var t=setInterval(function(){if(paused)return;i=(i+1)%msgs.length;show();},6000);
+btn.addEventListener('click',function(){paused=!paused;btn.setAttribute('aria-pressed',String(paused));btn.textContent=paused?'Play':'Pause';btn.setAttribute('aria-label',paused?'Play banner':'Pause banner');});
+if(reduce){paused=true;btn.setAttribute('aria-pressed','true');btn.textContent='Play';}
+})();</script>
 <footer class="site-footer"><div class="wrap"><p>&copy; 2026 Leon Pavesic. Design, analysis and texts on this site are protected by copyright. Headlines, short excerpts and images belong to their original publishers and are linked to the source. Not affiliated with any source.</p><p><a href="impressum.html">Impressum</a> &middot; <a href="datenschutz.html">Privacy</a> &middot; <a href="corrections.html">Corrections</a> &middot; <a href="feed.xml">RSS</a> &middot; <a href="mailto:leon.pavesic@gmx.de">Contact</a> &middot; <a href="https://www.linkedin.com/in/leon-pavesic/" rel="me noopener noreferrer" target="_blank">LinkedIn</a> &middot; <a href="https://www.xing.com/profile/Leon_Pavesic" rel="me noopener noreferrer" target="_blank">XING</a></p></div></footer>
 </body>
 </html>
