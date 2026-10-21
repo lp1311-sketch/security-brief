@@ -299,16 +299,34 @@ def md_to_html(md: str) -> str:
     return "\n".join(out)
 
 
-def load_articles(content_dir: Path, warnings: list[str]) -> list[dict]:
-    arts: list[dict] = []
+def _article_candidates(content_dir: Path):
+    """Yield (section_hint, path). Folder files use their folder as the section.
+    Flat files in the repository root (uploaded without folders) use the front matter
+    'section:' key, and default to briefings when that key is missing."""
     for sec in SECTIONS:
         d = content_dir / sec
-        if not d.is_dir():
+        if d.is_dir():
+            for f in sorted(d.glob("*.md")):
+                yield sec, f
+    for f in sorted(content_dir.parent.glob("*.md")):
+        if f.name.startswith("_") or f.name.lower().startswith("readme"):
             continue
-        for f in sorted(d.glob("*.md")):
+        yield None, f
+
+
+def load_articles(content_dir: Path, warnings: list[str]) -> list[dict]:
+    arts: list[dict] = []
+    for sec_hint, f in _article_candidates(content_dir):
+        if True:
             if f.name.startswith("_"):
                 continue  # templates
             meta, body = parse_front_matter(f.read_text(encoding="utf-8"))
+            sec = sec_hint or str(meta.get("section", "")).strip()
+            if not sec:
+                sec = "patch-tuesday" if "patch-tuesday" in f.stem else "briefings"
+            if sec not in SECTIONS:
+                warnings.append(f"{f.name}: unknown section '{sec}', article skipped")
+                continue
             if str(meta.get("draft", "true")).lower() != "false":
                 continue  # drafts are never published; set draft: false to publish
             if not re.fullmatch(r"[a-z0-9][a-z0-9-]*", f.stem):
@@ -1838,7 +1856,7 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
                      s["score"], s["image"], [x["url"] for x in s["sources"]]] for s in stories],
         "articles": [[a["section"], a["slug"], a["title"], a["date"], a["summary"], a["_md"]] for a in articles],
         "site": site_cfg,
-        "render": "5.20",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
+        "render": "5.21",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
     }, ensure_ascii=False, sort_keys=True)
     digest = hashlib.sha1(digest_src.encode("utf-8")).hexdigest()
     digest_file = data_file.parent / "digest.txt"
