@@ -1785,6 +1785,27 @@
    "source_type": "news"
   },
   {
+   "id": "2cd8b2bd53ed",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "OpenAI's GPT-6 Agent Removed Safety Monitoring, Then Falsely Denied Doing So",
+   "link": "https://thehackernews.com/2026/10/openais-gpt-6-agent-removed-safety.html",
+   "published": "2026-10-21T16:33:47+00:00",
+   "summary": "OpenAI has revealed that two artificial intelligence (AI) agents powered by GPT-6.1 Sol and one GPT-6 Astra weakened misalignment monitoring while making requested software changes during two internal coding tasks. The AI company said the incident took place on October 3 and 6, 2026, for Sol and Astra, respectively…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLjuo6QB0kLx2z3u5thyphenhyphenjrULwTFigmtHb1U1y6141FNvIITM2nytdxcKmShZMElSSZdMFbnGfiwjTIpqOYtNzK3gAeSGkEVr8XnsPB9RF1GOh-6qqkXPmX8SY2COyV0eyA6khfN3QYzF-Ydbsz8Mw8jBmFDouame4hTt0ulaNxq0pPTR4FKFuVyQ2Ln6WC/s1600/openai-bot.jpg",
+   "cves": [],
+   "first_seen": "2026-10-21T17:15:46.718174+00:00",
+   "instructions": [
+    "OpenAI said, in both cases, the AI agents considered whether monitoring safeguards should be retained, but ultimately chose not to do so after interpreting routine coding instructions as \"permission to weaken them.\"",
+    "\"Its identity, runtime, access paths, and task-scoped authority should be explicit from the start,\" Microsoft said .",
+    "\"If it later encounters a prompt injection or attempts an action outside that task, the system should respond proportionately: preserve safe reads while blocking writes, narrow the resources it can reach, require provable human approval for a consequential step, or isolate and stop the agent when the risk warrants it.\"",
+    "\"No [...] I did not remove an enabled monitor from it,\" the final response from the agent reads."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "1de1c48ce23b",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -4863,6 +4884,22 @@
    "instructions_checked": true
   },
   {
+   "id": "a124b567afcf",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "OVHcloud GitHub Compromise Tied to GlassWorm Threat Actors",
+   "link": "https://www.darkreading.com/cyberattacks-data-breaches/ovhcloud-github-compromise-glassworm-threat-actors",
+   "published": "2026-10-21T16:50:15+00:00",
+   "summary": "A developer's GitHub account that was compromised several months earlier was used to push malicious code to unsuspecting users.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blte501832a54d78d89/6ad8ee8ba10b5733db901071/worms-Tatiana_Maksimova-Getty-2162542629.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-10-21T17:15:46.718174+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "b0a791a97e86",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -5665,6 +5702,28 @@
    "image_checked": true
   },
   {
+   "id": "6397dd9bb23f",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Google Hardens Chrome Against ClickFix Attacks, Insecure HTTP Connections",
+   "link": "https://www.securityweek.com/google-hardens-chrome-against-clickfix-attacks-insecure-http-connections/",
+   "published": "2026-10-21T17:00:00+00:00",
+   "summary": "Protections have been added against scams and social engineering, including new site warnings and server-side Gemini analysis. The post Google Hardens Chrome Against ClickFix Attacks, Insecure HTTP Connections appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2023/04/Chrome-Zero-Day-exploits.jpg",
+   "cves": [],
+   "first_seen": "2026-10-21T17:15:46.718174+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Jon Steinbach has been appointed strategic technical advisor to the Pentagon’s CIO.",
+    "Preparing for disruption must become part of day-to-day operations.",
+    "It also targets additional threats, such as fake antivirus and fake browser update pages.",
+    "Browsers Block eMudhra Intermediate CAs Over Recoverable Private Keys"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "3493ad24d01d",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -5853,6 +5912,28 @@
     "It also warned that the fixes may be rolled out earlier, should technical details on the security defects be published or evidence of their in-the-wild exploitation emerges.",
     "Preparing for disruption must become part of day-to-day operations.",
     "According to Sansec , however, mass exploitation will likely start within 15 minutes of the patch release."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "661e0d2a54c9",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "PHP2Shell Patches Land as First Exploitation Attempts Hit Sensors",
+   "link": "https://www.securityweek.com/php2shell-patches-land-as-first-exploitation-attempts-hit-sensors/",
+   "published": "2026-10-21T16:50:40+00:00",
+   "summary": "The two RCE bugs can be exploited against WordPress, Drupal, Joomla, and other popular applications. The post PHP2Shell Patches Land as First Exploitation Attempts Hit Sensors appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/10/php-exploit-code.webp",
+   "cves": [],
+   "first_seen": "2026-10-21T17:15:46.718174+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Mitigation advice the PHP Foundation provided to critical infrastructure organizations may have leaked as well.",
+    "Before a patch is released, teams should already know where PHP is running, who can authorize urgent changes, and how they will confirm the update worked.",
+    "Jon Steinbach has been appointed strategic technical advisor to the Pentagon’s CIO.",
+    "Preparing for disruption must become part of day-to-day operations."
    ],
    "instructions_checked": true
   },
