@@ -1012,6 +1012,27 @@
    "source_type": "news"
   },
   {
+   "id": "7f88afbf76a3",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Attackers Abuse UpdraftCentral Keys to Plant Backdoors on WordPress Sites",
+   "link": "https://thehackernews.com/2026/10/attackers-abuse-updraftcentral-keys-to.html",
+   "published": "2026-10-21T09:01:12+00:00",
+   "summary": "Unknown threat actors breached TeamUpdraft's website and potentially gained unauthorized access to customers' connection keys for UpdraftCentral, UpdraftVault, and UpdraftClone, using them to backdoor WordPress sites. TeamUpdraft is the developer behind UpdraftPlus, a popular WordPress backup plugin with over four…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdsSYB_dpfRL3wD0MeCT_VyPyFJS8HjQAW0VuBHSTviFY4WBOQfa8MCP79qyJR3zYyMBesIXiCtL8XwwtjjLGm9Stxdv_qoIkf3_Rpc7YGFwZuzVS974TbuDfF5GkLRJX2DxFaDudlMlXSDyiZ8fvoVGaKaA-tpCr_eAvvEsfQr1uyfdBk-8KyK4aisYgC/s1600/wp-backdoor.jpg",
+   "cves": [],
+   "first_seen": "2026-10-21T10:16:37.379533+00:00",
+   "instructions": [
+    "Users who have a teamupdraft.com account are advised to change their password with immediate effect (and elsewhere, if the same password has been reused), reset 2FA settings, and exercise caution when receiving unexpected emails claiming to be from TeamUpdraft.",
+    "TeamUpdraft is also recommending that cloud customers of UpdraftCentral follow the steps below as soon as possible, since the connection keys can send commands to the connected sites -",
+    "Update UpdraftPlus to version 1.26.12 (free) or 2.26.12 (Premium) or later.",
+    "Go to Plugins, including the Must-Use tab if you can see it, and check for anything you don’t recognise."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "5fc8c6dd8c54",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1107,7 +1128,7 @@
    "link": "https://thehackernews.com/2026/10/cisa-orders-federal-agencies-to-patch.html",
    "published": "2026-10-21T07:26:49+00:00",
    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added four vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog, including four vulnerabilities impacting Plex Media Server that's collectively called Plex2Shell. The vulnerabilities are listed below - CVE-2026-96652 (CVSS…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgapIqeQMbr_LE1w3R_9O2UbIwesvzyPR_UWTUoKYkB2jgABW3niGBwgaOJ7LBOYWKvDsgbIefX65OiSLAHYf17Sj4dUoyC24PvFEhUCp1viMXbbC5Oy8miOWysLszPuM-XYIC1rP4wd1s4WTdHKyVEuuDNFtq8ZYPqrlnCVNmDE1siT3tOMWsKQmpmYFow/s1600/plex-cisa.jpg",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNWLuogjq0EVRQo6oTMUucF21anDW9Jpvs5w98qm-I6hOqH4fU1ZeHA1DqNilI_drxE548BnZD4vkXfB3KmWXAm4xfU3KU3j38LI-ZXhB03kZy4rWc9qiQqSED6vVjxihA1-uM_46qlXjjDchlvKmtgFG-ym3oosqXFEED6w2mG_Zb-yHjq4IIPcFDeX13/s1600/cisa-patch.jpg",
    "cves": [
     "CVE-2026-96652"
    ],
@@ -1745,7 +1766,7 @@
    "source_type": "news",
    "title": "PHP2Shell: Two Unpatched Critical PHP RCE Flaws (CVSS 9.2) Trigger Emergency Security Alert",
    "link": "https://thehackernews.com/2026/10/php2shell-two-unpatched-critical-php.html",
-   "published": "2026-10-21T04:57:50+00:00",
+   "published": "2026-10-21T09:05:17+00:00",
    "summary": "This story is developing and was written before PHP's scheduled 14:00 UTC release on October 21. Once the release is out, the affected and fixed versions below are confirmed by the official advisory. PHP will ship an out-of-cycle security release at 14:00 UTC today, October 21, for two critical vulnerabilities that…",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcxq1wmaSTaMiFJnrulXjwGrIIkIHBR3Q9Yv6Lky3rAie6XPOnFmXOVckMgVzGn9yvodrbkt6kV623Ofg8Iw-1MTDRoCVzXPiikivnZ5R7OynIF5-QC0DAiwXq8q2MRS3PZaz9NpjhJUqa-QWi1AQJ2XnJ-nvUNEvG3f1E0UpU5slUwzguAI-cESkZ5Xc/s1600/php2shell.jpg",
    "cves": [],
@@ -1936,6 +1957,26 @@
    ],
    "instructions_checked": true,
    "source_type": "news"
+  },
+  {
+   "id": "0c6fe061465a",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "U.S. Orders DeepSeek Removed From Federal Civilian Systems, Bans New Purchases",
+   "link": "https://thehackernews.com/2026/10/us-orders-deepseek-removed-from-federal.html",
+   "published": "2026-10-21T08:04:17+00:00",
+   "summary": "U.S. federal civilian agencies must remove DeepSeek products from their information technology systems, along with any third-party products or services \"developed using DeepSeek implementations,\" under a Department of Homeland Security order. They may also no longer buy information technology products or services from…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjAZGBcWVyeZELPmEq7fujTJPeDgQoEZQpt7sD2rB1EO9fXByN2kmezefmvfihwR7fDE-77o-JVKB8bASzvKamkZB9kx9SstR2PA529wjrAWiSr1IBHEfrShRbiOd3PG2OP3iqygUb_ZeXYBSzrTN86MY5pjngL6WsqwoqJYYzUXSSVCJNKihe8F7FKsA/s1600/deepseek-dhs.jpg",
+   "cves": [],
+   "first_seen": "2026-10-21T10:16:37.379533+00:00",
+   "instructions": [
+    "U.S. federal civilian agencies must remove DeepSeek products from their information technology systems, along with any third-party products or services \"developed using DeepSeek implementations,\" under a Department of Homeland Security order.",
+    "An agency can ask the official who issued an order for an exception, and under the council's regulations the request must be in writing and give a compelling justification.",
+    "Send further information on mitigation within 10 business days of that report"
+   ],
+   "instructions_checked": true
   },
   {
    "id": "03d3ba9d36cc",
@@ -3714,6 +3755,28 @@
    "instructions_checked": true
   },
   {
+   "id": "73d154fe3b9b",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Microsoft says October updates didn’t actually fix VPN issues",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-didnt-actually-fix-vpn-issues-caused-by-windows-updates/",
+   "published": "2026-10-21T10:14:53+00:00",
+   "summary": "Microsoft says it mistakenly flagged a bug causing Always On VPN connection issues as fixed in the October 2026 Windows 11 cumulative updates.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/21/Windows_headpic.jpg",
+   "cves": [],
+   "first_seen": "2026-10-21T10:16:37.379533+00:00",
+   "image_checked": true,
+   "instructions": [
+    "\"A resolution for this issue is planned to be included in an update to be released in the coming weeks.",
+    "\"Organizations should select the protocol based on their environment, security, and deployment requirements.\"",
+    "It also shared a temporary workaround for an issue that blocked some Windows 11 users from logging in with valid domain credentials and announced that it is working to address another bug that broke the Windows built-in File History backup feature.",
+    "Microsoft: Windows KB5124010 update crashes some games and apps"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "1f63abf1d8df",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -5192,6 +5255,26 @@
    "instructions": [
     "Preparing for disruption must become part of day-to-day operations.",
     "During the very short attack windows, the threat actor, tracked as UNC7017, tampered with the update server’s update settings file to redirect to a malicious ZIP archive and modified the server’s automatic notification service to force systems into automatically executing the malware."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "724c2add33ae",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Chinese AI Model Writes More Hackable Code When Told It’s for US Contractor",
+   "link": "https://www.securityweek.com/chinese-ai-model-writes-more-hackable-code-when-told-its-for-us-contractor/",
+   "published": "2026-10-21T10:03:24+00:00",
+   "summary": "Tasked with writing an application for a US defense contractor, the model made the code 19% more likely to be hackable. The post Chinese AI Model Writes More Hackable Code When Told It’s for US Contractor appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/11/China-APT-AI-artificial-intelligence.jpeg",
+   "cves": [],
+   "first_seen": "2026-10-21T10:16:37.379533+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Any defense, government or advocacy organization using a Chinese-origin coding model should test it under its own name, and fix it before it writes production code,” Hirundo says.",
+    "Preparing for disruption must become part of day-to-day operations."
    ],
    "instructions_checked": true
   },
