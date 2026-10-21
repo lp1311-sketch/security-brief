@@ -179,5 +179,30 @@ class OfflineBuild(unittest.TestCase):
         self.assertRegex((ROOT / "build.py").read_text(encoding="utf-8"), r'"render": "5\.\d+"')
 
 
+class Design(unittest.TestCase):
+    def test_article_cover_is_branded_svg(self):
+        a = {"title": "Weekly M365 and Entra briefing with a long title that wraps across lines", "section": "briefings", "summary": "", "slug": "x", "date": "2026-10-20"}
+        cover = build.article_cover(a)
+        self.assertTrue(cover.startswith("data:image/svg+xml"))
+        self.assertIn("ANALYSIS", cover.upper())
+
+    def test_donations_only_show_configured_https_links(self):
+        self.assertEqual(build.donation_links({"donations": []}), [])
+        self.assertEqual(build.donation_links({"donations": [{"label": "X", "url": "http://insecure.example"}]}), [])
+        self.assertEqual(build.donation_links({"donations": [{"provider": "kofi", "url": "https://ko-fi.com/example"}]}),
+                         [("Ko-fi", "https://ko-fi.com/example")])
+        self.assertEqual(build._donate({"donations": []}), "")
+
+    def test_motion_layer_respects_reduced_motion(self):
+        self.assertIn("prefers-reduced-motion", build.DESIGN_CSS)
+        cfg = {"site_name": "Security Brief", "site_url": "https://example.com/sb", "description": "d"}
+        html = build._layout(cfg, "Test", "Desc", "<p>body</p>", "")
+        self.assertIn('class="fx"', html)
+        self.assertIn('class="led g"', html)
+        self.assertIn('class="led r"', html)
+        self.assertIn('id="banner-text"', html)
+        self.assertIn("Every story links", build.BANNER_JS)
+
+
 if __name__ == "__main__":
     unittest.main()

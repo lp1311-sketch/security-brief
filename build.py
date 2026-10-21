@@ -12,6 +12,7 @@ import hashlib
 import html
 import json
 import re
+import textwrap
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
@@ -961,15 +962,18 @@ def _layout(cfg: dict, title: str, desc: str, body: str, base: str, image: str |
 <link rel="alternate" type="application/rss+xml" title="{site}" href="{esc(cfg['site_url'])}/feed.xml">
 </head>
 <body>
+<div class="fx" aria-hidden="true"><i class="orb o1"></i><i class="orb o2"></i><i class="orb o3"></i><i class="fly f1"></i><i class="fly f2"></i><i class="fly f3"></i></div>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header"><div class="wrap bar">
 <a class="brand" href="{base}index.html"><img class="logo-img" src="{base}favicon.svg" width="30" height="30" alt="" aria-hidden="true">{site}</a>
 <nav class="nav" aria-label="Categories">{nav}</nav>
-<button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false">Dark mode</button>
+<a class="live" href="{base}today/index.html"><i class="led r" aria-hidden="true"></i>Action today</a><span class="live" role="status"><i class="led g" aria-hidden="true"></i>Live feed</span><button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false">Dark mode</button>
 </div></header>
+<div class="banner" role="region" aria-label="Site highlights"><div class="wrap banner-in"><span class="banner-tag"><i class="led g" aria-hidden="true"></i>Security Brief</span><p class="banner-text" id="banner-text" aria-live="off">Feeds are checked every 20 minutes.</p><button type="button" class="banner-pause" id="banner-pause" aria-pressed="false" aria-label="Pause banner">Pause</button></div></div>
 <main id="main" class="wrap">
 {body}
 </main>
+<script>{BANNER_JS}</script>
 <footer class="site-footer"><div class="wrap"><p>&copy; {year} Leon Pavesic. Design, analysis and texts on this site are protected by copyright. Headlines, short excerpts and images belong to their original publishers and are linked to the source. Not affiliated with any source.</p><p><a href="{base}impressum.html">Impressum</a> &middot; <a href="{base}datenschutz.html">Privacy</a> &middot; <a href="{base}corrections.html">Corrections</a> &middot; <a href="{base}feed.xml">RSS</a> &middot; <a href="mailto:leon.pavesic@gmx.de">Contact</a> &middot; <a href="https://www.linkedin.com/in/leon-pavesic/" rel="me noopener noreferrer" target="_blank">LinkedIn</a> &middot; <a href="https://www.xing.com/profile/Leon_Pavesic" rel="me noopener noreferrer" target="_blank">XING</a></p></div></footer>
 </body>
 </html>
@@ -1095,9 +1099,74 @@ def _newsletter(site_cfg: dict, base: str) -> str:
 </section>"""
 
 
+DONATE_LABELS = {"paypal": "PayPal", "buymeacoffee": "Buy me a coffee", "kofi": "Ko-fi",
+                 "github": "GitHub Sponsors", "other": "Donate"}
+
+
+def donation_links(site_cfg: dict) -> list[tuple[str, str]]:
+    """Only https links the owner configured in site.json are shown. Nothing is shown by default."""
+    out = []
+    for d in site_cfg.get("donations") or []:
+        url = str(d.get("url", "")).strip()
+        if not url.startswith("https://"):
+            continue
+        label = str(d.get("label") or DONATE_LABELS.get(str(d.get("provider", "other")).lower(), "Donate"))
+        out.append((label, url))
+    return out
+
+
+def _donate(site_cfg: dict) -> str:
+    links = donation_links(site_cfg)
+    if not links:
+        return ""
+    items = "".join(f'<li><a class="donate-btn" href="{esc(url)}" rel="noopener noreferrer" target="_blank">'
+                    f'{esc(label)} &rarr;</a></li>' for label, url in links)
+    return ('<section class="support" aria-labelledby="support-title"><h2 id="support-title">Support this site</h2>'
+            '<p class="summary">Security Brief is free to read. Voluntary support helps cover hosting and tools. '
+            'Donations do not buy coverage, and every briefing stays free.</p>'
+            f'<ul class="donate-grid">{items}</ul></section>')
+
+
+# ---------- article covers (branded, generated from the article's own title) ----------
+SECTION_COLORS = {"patch-tuesday": "#38bdf8", "briefings": "#22c55e"}
+
+
+def article_cover(a: dict) -> str:
+    accent = SECTION_COLORS.get(a.get("section"), "#5eead4")
+    label = SECTIONS.get(a.get("section"), "Analysis")
+    title = a.get("title") or label
+    lines = textwrap.wrap(title, 26) or [title]
+    if len(lines) > 3:
+        lines = lines[:3]
+        lines[2] = lines[2][:23].rstrip() + "..."
+    text = "".join(
+        f'<text x="48" y="{170 + i * 44}" fill="#f1f5f9" font-family="Arial,Helvetica,sans-serif" '
+        f'font-size="32" font-weight="700">{esc(t)}</text>' for i, t in enumerate(lines))
+    grid = "".join(f'<line x1="{x}" y1="0" x2="{x}" y2="360"/>' for x in range(0, 641, 64))
+    grid += "".join(f'<line x1="0" y1="{y}" x2="640" y2="{y}"/>' for y in range(0, 361, 60))
+    svg = (
+        '<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">'
+        '<rect width="640" height="360" fill="#0b0f14"/>'
+        f'<g stroke="#18202b" stroke-width="1">{grid}</g>'
+        f'<path d="M 360 320 Q 470 40 612 110" fill="none" stroke="{accent}" stroke-width="1.5" '
+        'stroke-dasharray="4 6" opacity=".75"/>'
+        f'<circle cx="612" cy="110" r="5" fill="{accent}"/>'
+        '<circle cx="596" cy="36" r="6" fill="#22c55e"/><circle cx="618" cy="36" r="6" fill="#ef4444" opacity=".85"/>'
+        f'<rect width="8" height="360" fill="{accent}"/>'
+        f'<text x="48" y="112" fill="{accent}" font-family="Arial,Helvetica,sans-serif" font-size="16" '
+        f'font-weight="700" letter-spacing="3">{esc(label.upper())}</text>'
+        f'{text}'
+        '<text x="48" y="318" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="13" '
+        'letter-spacing="2">SECURITY BRIEF &middot; ANALYSIS</text>'
+        "</svg>"
+    )
+    return "data:image/svg+xml;charset=utf-8," + quote(svg)
+
+
 def _article_card(a: dict, href: str) -> str:
     label = SECTIONS[a["section"]]
     return f"""<article class="card">
+<a class="card-media" href="{esc(href)}" tabindex="-1" aria-hidden="true"><img src="{esc(article_cover(a))}" alt="" loading="lazy" decoding="async" width="640" height="360"></a>
 <div class="card-body">
 <p class="card-kicker">{esc(label)}</p>
 <h3><a href="{esc(href)}">{esc(a['title'])}</a></h3>
@@ -1114,11 +1183,12 @@ def article_page(a: dict, cfg: dict, site_cfg: dict) -> str:
     body = (
         '<article class="prose">'
         f'<p class="kicker">{esc(label)} &middot; {esc(fmt_day(a["date"]))}</p>'
-        f'<h1>{esc(a["title"])}</h1>{lede}{a["body"]}'
+        f'<h1>{esc(a["title"])}</h1>{lede}'
+        f'<figure><img src="{esc(article_cover(a))}" alt="" width="640" height="360"></figure>{a["body"]}'
         f'<p class="meta"><a href="index.html">&larr; All {esc(label)}</a> &middot; <a href="../../index.html">Home</a></p>'
         "</article>"
     )
-    body += _newsletter(site_cfg, base)
+    body += _donate(site_cfg) + _newsletter(site_cfg, base)
     return _layout(cfg, a["title"], _short(a["summary"] or a["title"], 150), body, base)
 
 
@@ -1582,15 +1652,7 @@ def index_page(stories: list[dict], cfg: dict, now: datetime, status: dict,
         f'<div class="stat"><b>{status.get("sources_total", 0)}</b><span>sources monitored</span></div>'
         "</div>",
     ]
-    donations = [d for d in (site_cfg.get("donations") or []) if str(d.get("url", "")).startswith("https://")]
-    if donations:
-        links = " &middot; ".join(
-            f'<a href="{esc(d["url"])}" rel="noopener noreferrer" target="_blank">{esc(d.get("label", "Donate"))}</a>'
-            for d in donations)
-        parts.append('<section class="support" aria-labelledby="support-title"><h2 id="support-title">Support this site</h2>'
-                     '<p class="summary">Security Brief is free to read. Voluntary support helps cover running costs. '
-                     'Donations do not buy coverage, and every briefing stays free.</p>'
-                     f'<p>{links}</p></section>')
+    parts.append(_donate(site_cfg))
     if articles:
         parts.append(
             '<section class="section" id="analysis"><h2>From the analysis desk</h2><div class="grid">'
@@ -1735,6 +1797,61 @@ def sitemap_xml(stories: list[dict], cfg: dict, articles: list[dict] | None = No
             + "".join(f"<url><loc>{esc(u)}</loc></url>" for u in urls) + "</urlset>\n")
 
 
+FX_CSS = """
+main,.site-footer{position:relative;z-index:1}
+body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.55;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:radial-gradient(ellipse at 50% 0%,#000 25%,transparent 72%);mask-image:radial-gradient(ellipse at 50% 0%,#000 25%,transparent 72%)}
+.fx{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.orb{position:absolute;border-radius:50%;filter:blur(72px);opacity:.3;animation:orbit 26s ease-in-out infinite}
+.orb.o1{width:420px;height:420px;background:#22c55e;left:-130px;top:8vh}
+.orb.o2{width:380px;height:380px;background:#ef4444;right:-150px;top:42vh;opacity:.18;animation-duration:32s;animation-delay:-8s}
+.orb.o3{width:300px;height:300px;background:#38bdf8;left:42%;bottom:-130px;opacity:.16;animation-duration:38s;animation-delay:-14s}
+@keyframes orbit{0%,100%{transform:translate3d(0,0,0)}50%{transform:translate3d(40px,-30px,0)}}
+.fly{position:absolute;left:-12%;width:110px;height:2px;border-radius:2px;opacity:0;animation:fly 16s linear infinite}
+.fly::after{content:"";position:absolute;right:-4px;top:-3px;width:8px;height:8px;border-radius:50%;box-shadow:0 0 12px 2px currentColor;background:currentColor}
+.fly.f1{top:24vh;color:#22c55e;background:linear-gradient(90deg,transparent,#22c55e)}
+.fly.f2{top:60vh;color:#ef4444;background:linear-gradient(90deg,transparent,#ef4444);animation-delay:-6s;animation-duration:20s}
+.fly.f3{top:82vh;color:#38bdf8;background:linear-gradient(90deg,transparent,#38bdf8);animation-delay:-10s;animation-duration:24s}
+@keyframes fly{0%{transform:translateX(0);opacity:0}8%{opacity:.85}92%{opacity:.85}100%{transform:translateX(130vw);opacity:0}}
+.live{display:inline-flex;align-items:center;gap:7px;font-size:.78rem;font-weight:650;color:var(--muted);text-decoration:none;white-space:nowrap;padding:6px 11px;border:1px solid var(--line);border-radius:999px;background:var(--surface)}
+a.live:hover{color:var(--ink);border-color:var(--crit)}
+.led{display:inline-block;width:8px;height:8px;border-radius:50%;flex:none;animation:blink 2.4s ease-in-out infinite}
+.led.g{background:#22c55e;box-shadow:0 0 10px #22c55e}
+.led.r{background:#ef4444;box-shadow:0 0 10px #ef4444;animation-name:alarm}
+@keyframes blink{50%{opacity:.35}}
+@keyframes alarm{0%,100%{opacity:1}50%{opacity:.35}}
+@media (max-width:900px){.live{display:none}}
+.intro h1,.prose h1{background:linear-gradient(90deg,var(--ink) 40%,#38bdf8 75%,#22c55e);-webkit-background-clip:text;background-clip:text;color:transparent}
+.card{position:relative;overflow:hidden}
+.card::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(115deg,transparent 35%,rgba(56,189,248,.14) 50%,transparent 65%);transform:translateX(-100%);transition:transform .7s ease}
+.card:hover::after{transform:translateX(100%)}
+.support{position:relative;margin:40px 0 0;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:24px;overflow:hidden}
+.support h2{margin:0 0 6px;font-size:1.2rem}
+.donate-grid{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 0;padding:0;list-style:none}
+.donate-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;border:1px solid var(--line);background:var(--surface-2);color:var(--ink);text-decoration:none;font-weight:650;font-size:.92rem}
+.donate-btn:hover{border-color:#22c55e;box-shadow:0 0 18px rgba(34,197,94,.28)}
+.banner{position:relative;z-index:1;border-bottom:1px solid var(--line);background:color-mix(in srgb,var(--surface) 80%,transparent)}
+.banner-in{display:flex;align-items:center;gap:14px;min-height:40px;padding-top:6px;padding-bottom:6px}
+.banner-tag{display:inline-flex;align-items:center;gap:8px;font-size:.72rem;font-weight:760;text-transform:uppercase;letter-spacing:.08em;color:var(--ink);white-space:nowrap}
+.banner-text{margin:0;flex:1;min-width:0;font-size:.88rem;color:var(--muted);transition:opacity .25s ease;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.banner-pause{font:inherit;font-size:.74rem;font-weight:650;color:var(--muted);background:none;border:1px solid var(--line);border-radius:999px;padding:4px 10px;cursor:pointer;white-space:nowrap}
+.banner-pause:hover{color:var(--ink);border-color:var(--accent)}
+@media (max-width:640px){.banner-tag{display:none}}
+@media (prefers-reduced-motion:reduce){body::before,.orb,.fly,.led,.card::after{animation:none!important;transition:none!important}.fly,.card::after{display:none}}
+"""
+BANNER_JS = """(function(){
+var msgs=["Feeds are checked every 20 minutes.","Every story links to its original source.","Patch Tuesday notes and weekly analysis are written by hand, not by AI.","Read the Today page for what needs action now.","Corrections are published openly."];
+var el=document.getElementById('banner-text'),btn=document.getElementById('banner-pause');
+if(!el||!btn)return;
+var i=0,paused=false,reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+function show(){el.style.opacity=0;setTimeout(function(){el.textContent=msgs[i];el.style.opacity=1;},250);}
+var t=setInterval(function(){if(paused)return;i=(i+1)%msgs.length;show();},6000);
+btn.addEventListener('click',function(){paused=!paused;btn.setAttribute('aria-pressed',String(paused));btn.textContent=paused?'Play':'Pause';btn.setAttribute('aria-label',paused?'Play banner':'Pause banner');});
+if(reduce){paused=true;btn.setAttribute('aria-pressed','true');btn.textContent='Play';}
+})();"""
+
+DESIGN_CSS += FX_CSS
+
+
 def write_site(out: Path, stories: list[dict], cfg: dict, now: datetime, status: dict,
                articles: list[dict] | None = None, site_cfg: dict | None = None) -> None:
     articles = articles or []
@@ -1856,7 +1973,7 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
                      s["score"], s["image"], [x["url"] for x in s["sources"]]] for s in stories],
         "articles": [[a["section"], a["slug"], a["title"], a["date"], a["summary"], a["_md"]] for a in articles],
         "site": site_cfg,
-        "render": "5.21",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
+        "render": "5.23",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
     }, ensure_ascii=False, sort_keys=True)
     digest = hashlib.sha1(digest_src.encode("utf-8")).hexdigest()
     digest_file = data_file.parent / "digest.txt"
