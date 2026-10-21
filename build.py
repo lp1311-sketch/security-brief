@@ -36,11 +36,11 @@ EXPLOITED_RE = re.compile(r"actively exploited|exploited in the wild|exploited i
 
 # Category id -> (label, first-match regex). Checked in CATEGORY_ORDER.
 CATEGORIES = {
-    "threats": ("Ransomware, Malware & Breaches", r"ransomware|malware|breach|phishing|stealer|botnet|extortion|data leak|spyware|hijack|backdoor|scam|theft|cyberattack|cyber attack|shellcode|loader|supply[- ]chain|tampered|money laundering|sanction|proxyjack|attackers|hackers"),
-    "vulnerabilities": ("Vulnerabilities & Exploited CVEs", r"vulnerab|\bcve-|patch|exploit|flaw|\brce\b|zero-day|0-day|security update"),
-    "ai": ("AI Security & Emerging Threats", r"\bai\b|\bllm|copilot|chatgpt|openai|anthropic|gemini|deepfake|generative|ai agent|ai model"),
-    "microsoft": ("Microsoft", r"microsoft|windows|exchange|sharepoint|teams|office 365|m365|outlook|defender|azure|entra|azure ad|conditional access|\bmfa\b|tenant|identity|sign-in|oauth"),
-    "general": ("Security News", r"$^"),  # fallback, never matches
+    "threats": ("Attacks & Breaches", r"ransomware|malware|breach|phishing|stealer|botnet|extortion|data leak|spyware|hijack|backdoor|scam|theft|cyberattack|cyber attack|shellcode|loader|supply[- ]chain|tampered|money laundering|sanction|proxyjack|attackers|hackers"),
+    "vulnerabilities": ("Patch Radar", r"vulnerab|\bcve-|patch|exploit|flaw|\brce\b|zero-day|0-day|security update"),
+    "ai": ("AI Risk Lab", r"\bai\b|\bllm|copilot|chatgpt|openai|anthropic|gemini|deepfake|generative|ai agent|ai model"),
+    "microsoft": ("Microsoft 365 & Entra", r"microsoft|windows|exchange|sharepoint|teams|office 365|m365|outlook|defender|azure|entra|azure ad|conditional access|\bmfa\b|tenant|identity|sign-in|oauth"),
+    "general": ("Germany & BSI", r"$^"),  # fallback, never matches
 }
 CATEGORY_ORDER = ["threats", "vulnerabilities", "ai", "microsoft", "general"]  # rendering order
 # Scoring order: ties go to the first entry (AI before vulnerabilities before threats).
@@ -199,7 +199,7 @@ def fallback_cover(s: dict) -> str:
 CONTENT_DIR = ROOT / "content"
 SITE_CONFIG = ROOT / "site.json"
 SECTIONS = {
-    "briefings": "Weekly M365 & Entra Briefing",
+    "briefings": "Security Analysis",
     "patch-tuesday": "Patch Tuesday Notes",
 }
 
@@ -924,7 +924,7 @@ def _layout(cfg: dict, title: str, desc: str, body: str, base: str, image: str |
     links = [f'<a href="{base}category/{cid}/index.html">{esc(SHORT_NAV[cid])}</a>'
              for cid in CATEGORY_ORDER if cid != "general"]
     links.append(f'<a href="{base}stories/index.html">All stories</a>')
-    links.append(f'<a href="{base}briefings/index.html">Briefings</a>')
+    links.append(f'<a href="{base}briefings/index.html">Analysis</a>')
     links.append(f'<a href="{base}patch-tuesday/index.html">Patch Tuesday</a>')
     links.insert(0, f'<a href="{base}today/index.html">Today</a>')
     links.insert(1, f'<a href="{base}saved/index.html">Saved</a>')
@@ -1319,7 +1319,15 @@ DESIGN_CSS = """
 .section-more a:hover{text-decoration:underline}
 .nav a[aria-current="page"]{color:var(--accent)}
 :focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-@media (prefers-reduced-motion:reduce){.card,.card:hover{transition:none;transform:none}}
+.hero{position:relative;overflow:hidden;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:-40%;z-index:-1;pointer-events:none;background:radial-gradient(circle at 28% 32%,rgba(56,189,248,.22),transparent 42%),radial-gradient(circle at 72% 64%,rgba(94,234,212,.16),transparent 40%);animation:drift 18s ease-in-out infinite alternate}
+@keyframes drift{to{transform:translate3d(-4%,3%,0) scale(1.06)}}
+.logo-img{animation:float 6s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-4px)}}
+.card{backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.stats .stat{animation:float 7s ease-in-out infinite}
+.stats .stat:nth-child(2){animation-delay:-2s}.stats .stat:nth-child(3){animation-delay:-4s}.stats .stat:nth-child(4){animation-delay:-6s}
+@media (prefers-reduced-motion:reduce){.card,.card:hover,.hero::before,.logo-img,.stats .stat{transition:none;transform:none;animation:none}}
 """
 FAVICON_SVG = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#0b1d3a"/><path d="M32 12 L48 18 V31 C48 42 41 50 32 54 C23 50 16 42 16 31 V18 Z" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linejoin="round"/><path d="M24 31 L30 37 L41 25" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>"""
 LOGO_SVG = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 80" role="img" aria-label="Security Brief"><rect x="0" y="8" width="64" height="64" rx="14" fill="#0b1d3a"/><path d="M32 20 L48 26 V39 C48 50 41 58 32 62 C23 58 16 50 16 39 V26 Z" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linejoin="round"/><path d="M24 39 L30 45 L41 33" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><text x="80" y="38" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#0b1d3a">Security Brief</text><text x="80" y="58" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="2.4" fill="#475569">THREATS · ACTIONS · EVIDENCE</text></svg>"""
@@ -1569,7 +1577,7 @@ def index_page(stories: list[dict], cfg: dict, now: datetime, status: dict,
         parts.append(
             '<section class="section" id="analysis"><h2>From the analysis desk</h2><div class="grid">'
             + "".join(_article_card(a, f"{a['section']}/{a['slug']}.html") for a in articles[:3])
-            + '</div><p class="analysis-links meta"><a href="briefings/index.html">All briefings</a> &middot; '
+            + '</div><p class="analysis-links meta"><a href="briefings/index.html">All analysis</a> &middot; '
             '<a href="patch-tuesday/index.html">All Patch Tuesday notes</a></p></section>'
         )
     newsletter = _newsletter(site_cfg, "")
@@ -1830,7 +1838,7 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
                      s["score"], s["image"], [x["url"] for x in s["sources"]]] for s in stories],
         "articles": [[a["section"], a["slug"], a["title"], a["date"], a["summary"], a["_md"]] for a in articles],
         "site": site_cfg,
-        "render": "5.17",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
+        "render": "5.20",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
     }, ensure_ascii=False, sort_keys=True)
     digest = hashlib.sha1(digest_src.encode("utf-8")).hexdigest()
     digest_file = data_file.parent / "digest.txt"
