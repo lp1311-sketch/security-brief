@@ -921,8 +921,9 @@ SHORT_NAV = {"threats": "Threats", "vulnerabilities": "Vulnerabilities", "ai": "
 def _layout(cfg: dict, title: str, desc: str, body: str, base: str, image: str | None = None) -> str:
     site = esc(cfg["site_name"])
     year = datetime.now(timezone.utc).year
-    links = [f'<a href="{base}index.html#{cid}">{esc(SHORT_NAV[cid])}</a>'
+    links = [f'<a href="{base}category/{cid}/index.html">{esc(SHORT_NAV[cid])}</a>'
              for cid in CATEGORY_ORDER if cid != "general"]
+    links.append(f'<a href="{base}stories/index.html">All stories</a>')
     links.append(f'<a href="{base}briefings/index.html">Briefings</a>')
     links.append(f'<a href="{base}patch-tuesday/index.html">Patch Tuesday</a>')
     links.insert(0, f'<a href="{base}today/index.html">Today</a>')
@@ -944,7 +945,7 @@ def _layout(cfg: dict, title: str, desc: str, body: str, base: str, image: str |
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header"><div class="wrap bar">
-<a class="brand" href="{base}index.html"><span class="mark" aria-hidden="true"></span>{site}</a>
+<a class="brand" href="{base}index.html"><img class="logo-img" src="{base}favicon.svg" width="30" height="30" alt="" aria-hidden="true">{site}</a>
 <nav class="nav" aria-label="Categories">{nav}</nav>
 <button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false">Dark mode</button>
 </div></header>
@@ -1308,6 +1309,18 @@ def legal_pages(site_cfg: dict, cfg: dict) -> dict[str, str]:
     }
 
 
+DESIGN_CSS = """
+.logo-img{width:30px;height:30px;flex:none;border-radius:8px}
+.brand{gap:10px;font-weight:760;letter-spacing:-.01em}
+.card{transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(2,8,23,.18);border-color:var(--accent)}
+.section-more{margin:14px 0 0;font-size:.92rem}
+.section-more a{font-weight:650;text-decoration:none}
+.section-more a:hover{text-decoration:underline}
+.nav a[aria-current="page"]{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){.card,.card:hover{transition:none;transform:none}}
+"""
 FAVICON_SVG = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#0b1d3a"/><path d="M32 12 L48 18 V31 C48 42 41 50 32 54 C23 50 16 42 16 31 V18 Z" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linejoin="round"/><path d="M24 31 L30 37 L41 25" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>"""
 LOGO_SVG = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 80" role="img" aria-label="Security Brief"><rect x="0" y="8" width="64" height="64" rx="14" fill="#0b1d3a"/><path d="M32 20 L48 26 V39 C48 50 41 58 32 62 C23 58 16 50 16 39 V26 Z" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linejoin="round"/><path d="M24 39 L30 45 L41 33" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><text x="80" y="38" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#0b1d3a">Security Brief</text><text x="80" y="58" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="2.4" fill="#475569">THREATS · ACTIONS · EVIDENCE</text></svg>"""
 
@@ -1576,10 +1589,24 @@ def index_page(stories: list[dict], cfg: dict, now: datetime, status: dict,
             items = [s for s in stories if s["category"] == cid and s["id"] not in featured_ids][:6]
             if not items:
                 continue
+            total = sum(1 for s in stories if s["category"] == cid)
             parts.append(f'<section class="section" id="{cid}" data-section><h2>{esc(CATEGORIES[cid][0])}</h2>'
-                         '<div class="grid">' + "".join(_card(s) for s in items) + "</div></section>")
+                         '<div class="grid">' + "".join(_card(s) for s in items) + "</div>"
+                         f'<p class="section-more"><a href="category/{cid}/index.html">All {total} {esc(CATEGORIES[cid][0])} stories &rarr;</a></p></section>')
         parts.append("<script>" + FILTER_JS + "</script>")
     return _layout(cfg, "Home", "Ranked cybersecurity news with links to original sources.", "\n".join(parts), "")
+
+
+def listing_page(stories: list[dict], cfg: dict, base: str, title: str, intro: str) -> str:
+    parts = [f'<section class="intro"><h1>{esc(title)}</h1><p class="meta">{esc(intro)}</p></section>']
+    if not stories:
+        parts.append('<div class="empty">No stories in this section in the current window.</div>')
+    else:
+        parts.append(filter_bar(stories))
+        parts.append('<section class="section" data-section aria-label="Stories"><div class="grid">'
+                     + "".join(_card(s) for s in stories) + "</div></section>")
+        parts.append("<script>" + FILTER_JS + "</script>")
+    return _layout(cfg, title, intro, "\n".join(parts), base)
 
 
 def story_page(s: dict, cfg: dict) -> str:
@@ -1677,6 +1704,7 @@ def sitemap_xml(stories: list[dict], cfg: dict, articles: list[dict] | None = No
             f"{site}/impressum.html", f"{site}/datenschutz.html", f"{site}/corrections.html"]
     urls += [f"{site}/{a['section']}/{a['slug']}.html" for a in (articles or [])]
     urls += [f"{site}/story/{s['id']}.html" for s in stories]
+    urls += [f"{site}/stories/index.html"] + [f"{site}/category/{c}/index.html" for c in CATEGORY_ORDER]
     return ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
             + "".join(f"<url><loc>{esc(u)}</loc></url>" for u in urls) + "</urlset>\n")
 
@@ -1690,7 +1718,7 @@ def write_site(out: Path, stories: list[dict], cfg: dict, now: datetime, status:
     for f in (out / "story").glob("*.html"):
         if f.name not in keep:
             f.unlink()
-    (out / "style.css").write_text(CSS.strip() + "\n" + EXTRA_CSS, encoding="utf-8")
+    (out / "style.css").write_text(CSS.strip() + "\n" + EXTRA_CSS + "\n" + DESIGN_CSS, encoding="utf-8")
     (out / "favicon.svg").write_text(FAVICON_SVG, encoding="utf-8")
     (out / "logo.svg").write_text(LOGO_SVG, encoding="utf-8")
     (out / "index.html").write_text(index_page(stories, cfg, now, status, articles, site_cfg), encoding="utf-8")
@@ -1701,6 +1729,19 @@ def write_site(out: Path, stories: list[dict], cfg: dict, now: datetime, status:
     (out / "stories.json").write_text(stories_index(stories), encoding="utf-8")
     for s in stories:
         (out / "story" / f"{s['id']}.html").write_text(story_page(s, cfg), encoding="utf-8")
+    (out / "stories").mkdir(parents=True, exist_ok=True)
+    (out / "stories" / "index.html").write_text(
+        listing_page(stories, cfg, "../", "All stories",
+                     f"{len(stories)} stories in the current window, ranked by priority. Every story links to its original source."),
+        encoding="utf-8")
+    for cid in CATEGORY_ORDER:
+        subset = [s for s in stories if s["category"] == cid]
+        d = out / "category" / cid
+        d.mkdir(parents=True, exist_ok=True)
+        (d / "index.html").write_text(
+            listing_page(subset, cfg, "../../", CATEGORIES[cid][0],
+                         f"{len(subset)} stories in this category. Use the chips to narrow by topic."),
+            encoding="utf-8")
     for sec in SECTIONS:
         sec_articles = [a for a in articles if a["section"] == sec]
         d = out / sec
@@ -1789,7 +1830,7 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
                      s["score"], s["image"], [x["url"] for x in s["sources"]]] for s in stories],
         "articles": [[a["section"], a["slug"], a["title"], a["date"], a["summary"], a["_md"]] for a in articles],
         "site": site_cfg,
-        "render": "5.13",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
+        "render": "5.17",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
     }, ensure_ascii=False, sort_keys=True)
     digest = hashlib.sha1(digest_src.encode("utf-8")).hexdigest()
     digest_file = data_file.parent / "digest.txt"
