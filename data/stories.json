@@ -1530,26 +1530,6 @@
    "instructions_checked": true
   },
   {
-   "id": "639d0d6e00a7",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "title": "Hackers Backdoor Nextcloud Servers Through Critical Flaw in Collabora’s Built-in CODE App",
-   "link": "https://thehackernews.com/2026/10/hackers-backdoor-nextcloud-servers.html",
-   "published": "2026-10-14T17:38:31+00:00",
-   "summary": "Attackers exploited a flaw in an optional Nextcloud app, Collabora Online - Built-in CODE Server, to plant web shells on Nextcloud servers. Three administrators reported the issue on GitHub, with the first logged attack on September 10. A web shell is a small file that executes any command an attacker sends via a web…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkZLcjmZtzt6NpWa8x4Wz7EdcOQEW6xYv6DA_mBnwy1ctZZeRAyeSYLES-H_mkr1QOBv72WNuGKwKQ-NN179Rw8BRTcYO38sYwxcbDkg1ISW_qWrCRJ9JfUXh3102OmwrF0HQq6dbSc58VXACXoi_EoI8ysPuSlzB_nBcHuFl9r3QakOsGG9GUm6UVOU8/s1600/nextcloud.jpg",
-   "cves": [],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00",
-   "instructions": [
-    "Collabora fixed it in version 26.4.303 on September 11 and on October 14 published an advisory with the identifier CVE-2026-110447 , warning that turning off the app does not help: it must be updated or removed.",
-    "\"It is not sufficient to disable the app to avoid the problem; it must be upgraded to >= 26.4.303 or removed,\" Collabora said in the advisory.",
-    "Version 26.4.402, released September 24, rewrote the start command to pass each option as a separate argument, but administrators report that it fails to start or fails to open documents on some setups and have gone back to 26.4.303, the version the advisory names as the fix.",
-    "The repository's commit record shows the change was written on August 20 by Caolán McNamara, who also published the advisory, under the title \"tidy up how the coolwsd launch command is built.\" It was not in version 26.4.302, released on August 31, and was committed on September 9."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "143bfdf19e2b",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2410,6 +2390,26 @@
    "first_seen": "2026-10-20T17:54:10.534126+00:00",
    "image_checked": true,
    "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "bf2645506057",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "PHP says AI review of critical bugs first sparked alarm in August, but signs surfaced in 2024",
+   "link": "https://therecord.media/php-foundation-statement-critical-vulnerabilities",
+   "published": "2026-10-21T17:30:00+00:00",
+   "summary": "In a lengthy statement about two critical vulnerabilities, the PHP Foundation explained how one dated to 2024, how a recent third-party review by AI companies heightened attention on both, why it scrambled to post information earlier than planned.",
+   "image": "https://cms.therecord.media/uploads/php_logo_pexels_steve_a_johnson_132b80cbee.jpg",
+   "cves": [],
+   "first_seen": "2026-10-21T17:54:56.990186+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Cisco Talos’ released estimates suggesting roughly 50% of vulnerable PHP systems may not receive a patch.",
+    "“Like other distributors, Chainguard had received the patch in advance so its users could update the moment the vulnerabilities were disclosed,” the foundation said."
+   ],
    "instructions_checked": true
   },
   {
@@ -5924,9 +5924,12 @@
    "title": "PHP2Shell Patches Land as First Exploitation Attempts Hit Sensors",
    "link": "https://www.securityweek.com/php2shell-patches-land-as-first-exploitation-attempts-hit-sensors/",
    "published": "2026-10-21T16:50:40+00:00",
-   "summary": "The two RCE bugs can be exploited against WordPress, Drupal, Joomla, and other popular applications. The post PHP2Shell Patches Land as First Exploitation Attempts Hit Sensors appeared first on SecurityWeek.",
+   "summary": "Several cybersecurity companies saw exploitation attempts of CVE-2026-109618 and CVE-2026-109619 before PHP released the patches. The post PHP2Shell Patches Land as First Exploitation Attempts Hit Sensors appeared first on SecurityWeek.",
    "image": "https://www.securityweek.com/wp-content/uploads/2026/10/php-exploit-code.webp",
-   "cves": [],
+   "cves": [
+    "CVE-2026-109618",
+    "CVE-2026-109619"
+   ],
    "first_seen": "2026-10-21T17:15:46.718174+00:00",
    "image_checked": true,
    "instructions": [

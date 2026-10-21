@@ -11,6 +11,16 @@
    "url": "story/15367a3259ff.html"
   },
   {
+   "id": "661e0d2a54c9",
+   "title": "PHP2Shell Patches Land as First Exploitation Attempts Hit Sensors",
+   "summary": "Several cybersecurity companies saw exploitation attempts of CVE-2026-109618 and CVE-2026-109619 before PHP released the patches. The post PHP2Shell Patches Land as…",
+   "priority": "High",
+   "category": "Patch Radar",
+   "date": "21 Oct 2026, 16:50 UTC",
+   "sources": "SecurityWeek, KrebsOnSecurity, BleepingComputer",
+   "url": "story/661e0d2a54c9.html"
+  },
+  {
    "id": "0d304799e621",
    "title": "Qilin and INC Ransomware Groups Exploit Palo Alto Networks Flaw to Bypass MFA",
    "summary": "Palo Alto Networks has disclosed that it's continuing to observe exploitation of a now-patched security flaw impacting PAN-OS and Prisma Access by ransomware actors. The…",
@@ -39,26 +49,6 @@
    "date": "21 Oct 2026, 07:26 UTC",
    "sources": "The Hacker News",
    "url": "story/f6fe2f9557b7.html"
-  },
-  {
-   "id": "661e0d2a54c9",
-   "title": "PHP2Shell Patches Land as First Exploitation Attempts Hit Sensors",
-   "summary": "The two RCE bugs can be exploited against WordPress, Drupal, Joomla, and other popular applications. The post PHP2Shell Patches Land as First Exploitation Attempts Hit…",
-   "priority": "High",
-   "category": "Patch Radar",
-   "date": "21 Oct 2026, 16:50 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/661e0d2a54c9.html"
-  },
-  {
-   "id": "24755a352d3d",
-   "title": "Widespread PHP Flaw May Cause Many Site Outages Today",
-   "summary": "Expect to see quite a few websites serving error pages today: Nearly 70 percent of websites need to update their core software to fix a pair of vulnerabilities that…",
-   "priority": "High",
-   "category": "Patch Radar",
-   "date": "21 Oct 2026, 15:26 UTC",
-   "sources": "KrebsOnSecurity, BleepingComputer, SecurityWeek",
-   "url": "story/24755a352d3d.html"
   },
   {
    "id": "7f88afbf76a3",
@@ -119,6 +109,16 @@
    "date": "17 Oct 2026, 15:18 UTC",
    "sources": "BleepingComputer, The Hacker News",
    "url": "story/74a44f824ba0.html"
+  },
+  {
+   "id": "bf2645506057",
+   "title": "PHP says AI review of critical bugs first sparked alarm in August, but signs surfaced in 2024",
+   "summary": "In a lengthy statement about two critical vulnerabilities, the PHP Foundation explained how one dated to 2024, how a recent third-party review by AI companies heightened…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "21 Oct 2026, 17:30 UTC",
+   "sources": "The Record",
+   "url": "story/bf2645506057.html"
   },
   {
    "id": "67c1ab51681c",
@@ -381,16 +381,6 @@
    "url": "story/3e1278093e93.html"
   },
   {
-   "id": "c8f4e94200b3",
-   "title": "OpenCode hack exposes API keys amid AI distillation attacks",
-   "summary": "The open-source AI coding project OpenCode has notified a small number of users that API keys they used with external providers were exposed in a security breach.",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "19 Oct 2026, 17:27 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/c8f4e94200b3.html"
-  },
-  {
    "id": "b1e34d264127",
    "title": "CVE-2026-80092 Microsoft Identity Web Elevation of Privilege Vulnerability",
    "summary": "Updated the Security Updates table to list Microsoft Identity Web v3 and v4 separately and clarify the affected version ranges. The existing security updates are…",
@@ -621,6 +611,16 @@
    "url": "story/561dd3f2eda5.html"
   },
   {
+   "id": "c8f4e94200b3",
+   "title": "OpenCode hack exposes API keys amid AI distillation attacks",
+   "summary": "The open-source AI coding project OpenCode has notified a small number of users that API keys they used with external providers were exposed in a security breach.",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "19 Oct 2026, 17:27 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/c8f4e94200b3.html"
+  },
+  {
    "id": "1f63abf1d8df",
    "title": "Microsoft fixes classic Outlook bug that hid Copilot buttons",
    "summary": "Microsoft has fixed a known issue that removed the Copilot Chat and Copilot buttons in the classic Outlook desktop mail client for some Windows users.",
@@ -729,16 +729,6 @@
    "date": "15 Oct 2026, 07:07 UTC",
    "sources": "The Hacker News",
    "url": "story/50367ee6ae87.html"
-  },
-  {
-   "id": "639d0d6e00a7",
-   "title": "Hackers Backdoor Nextcloud Servers Through Critical Flaw in Collabora’s Built-in CODE App",
-   "summary": "Attackers exploited a flaw in an optional Nextcloud app, Collabora Online - Built-in CODE Server, to plant web shells on Nextcloud servers. Three administrators reported…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "14 Oct 2026, 17:38 UTC",
-   "sources": "The Hacker News",
-   "url": "story/639d0d6e00a7.html"
   },
   {
    "id": "6397dd9bb23f",
@@ -1621,16 +1611,6 @@
    "url": "story/5a936d0dc13b.html"
   },
   {
-   "id": "143bfdf19e2b",
-   "title": "Hackers Exploit Plex2Shell Flaws to Install Crypto Miners and Linux Proxy Backdoor",
-   "summary": "Threat actors have begun to exploit a chain of vulnerabilities in Plex Media Server to deploy cryptocurrency miners and reverse proxy software, a day after a…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "19 Oct 2026, 17:32 UTC",
-   "sources": "The Hacker News",
-   "url": "story/143bfdf19e2b.html"
-  },
-  {
    "id": "70d02c573a35",
    "title": "[UPDATE] [mittel] PCRE (Perl Compatible Regular Expressions): Schwachstelle ermöglicht Codeausführung",
    "summary": "Ein entfernter, authentisierter Angreifer kann eine Schwachstelle in PCRE (Perl Compatible Regular Expressions) ausnutzen, um möglicherweise beliebigen Code auszuführen…",
@@ -1889,6 +1869,16 @@
    "date": "14 Oct 2026, 20:57 UTC",
    "sources": "Dark Reading",
    "url": "story/b0a791a97e86.html"
+  },
+  {
+   "id": "143bfdf19e2b",
+   "title": "Hackers Exploit Plex2Shell Flaws to Install Crypto Miners and Linux Proxy Backdoor",
+   "summary": "Threat actors have begun to exploit a chain of vulnerabilities in Plex Media Server to deploy cryptocurrency miners and reverse proxy software, a day after a…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "19 Oct 2026, 17:32 UTC",
+   "sources": "The Hacker News",
+   "url": "story/143bfdf19e2b.html"
   },
   {
    "id": "425846ce9398",
