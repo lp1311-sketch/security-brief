@@ -36,5 +36,25 @@ class PriorityRules(unittest.TestCase):
         self.assertEqual(build.score_story(items, {"CVE-2026-1"}, True, NOW)[1], "Critical")
 
 
+class LabelsAndHealth(unittest.TestCase):
+    def test_content_type_advisory_wins(self):
+        self.assertEqual(build.content_type_of([it("A", False, "t", "s", "vendor_blog"), it("CISA", True, "t", "s", "advisory")]), "Advisory")
+
+    def test_vendor_blog_only(self):
+        self.assertEqual(build.content_type_of([it("MS", False, "t", "s", "vendor_blog")]), "Vendor blog")
+
+    def test_news_default_and_legacy_items(self):
+        legacy = {"source": "x", "official": False, "title": "t", "summary": "s", "cves": [], "published": None, "link": "y"}
+        self.assertEqual(build.content_type_of([legacy]), "News")
+
+    def test_health_note_empty_when_all_ok(self):
+        self.assertEqual(build.source_health_note({"sources": [{"name": "A", "ok": True}]}), "")
+
+    def test_health_note_lists_failures(self):
+        note = build.source_health_note({"sources": [{"name": "MSRC Blog", "ok": False}, {"name": "A", "ok": True}]})
+        self.assertIn("MSRC Blog", note)
+        self.assertIn("1 source(s)", note)
+
+
 if __name__ == "__main__":
     unittest.main()

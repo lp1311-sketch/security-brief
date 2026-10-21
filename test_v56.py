@@ -22,7 +22,7 @@ class Categories(unittest.TestCase):
     def test_cloud_category_is_gone(self):
         self.assertNotIn("cloud", build.CATEGORIES)
         self.assertNotIn("cloud", build.CATEGORY_ORDER)
-        self.assertEqual(build.CATEGORIES["microsoft"][0], "Microsoft")
+        self.assertEqual(build.CATEGORIES["microsoft"][0], "Microsoft 365 & Entra")
 
     def test_identity_and_entra_stories_go_to_microsoft(self):
         for title in ["Entra ID sign-in anomalies", "Conditional Access bypass found",

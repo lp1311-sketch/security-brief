@@ -75,7 +75,7 @@ class RankTests(unittest.TestCase):
 
     def test_categories(self):
         self.assertEqual(build.categorize("Ransomware gang breaches hospital"), "threats")
-        self.assertEqual(build.categorize("Entra ID sign-in anomalies"), "cloud")
+        self.assertEqual(build.categorize("Entra ID sign-in anomalies"), "microsoft")
         self.assertEqual(build.categorize("Copilot prompt injection flaw"), "ai")
         self.assertEqual(build.categorize("Weather in Berlin"), "general")
 
@@ -99,9 +99,9 @@ class EndToEndTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             tmp = Path(tmp)
             status = build.run(cfg, tmp / "site", tmp / "stories.json", FIX, NOW)
-            self.assertEqual(status["sources_ok"], 3)
+            self.assertEqual(status["sources_ok"], 4)  # fixtures: bleepingcomputer, thehackernews, cisa, msblog
             index = (tmp / "site" / "index.html").read_text(encoding="utf-8")
-            self.assertIn("Top stories", index)
+            self.assertIn('class="hero"', index)
             self.assertIn("Microsoft Windows zero-day", index)
             story_files = list((tmp / "site" / "story").glob("*.html"))
             self.assertGreaterEqual(len(story_files), 3)
@@ -114,7 +114,8 @@ class EndToEndTests(unittest.TestCase):
             self.assertEqual(status["stories"], status2["stories"])
             self.assertIn("Critical", (tmp / "site" / "index.html").read_text(encoding="utf-8"))
             # XSS: no raw script tag from feed text
-            self.assertNotIn("<script", index)
+            # only our own scripts may appear; feed text must not add scripts
+            self.assertEqual(index.count("<script"), 2)  # theme toggle + topic filters
 
 
 if __name__ == "__main__":
