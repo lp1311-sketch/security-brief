@@ -194,6 +194,30 @@
    "source_type": "news"
   },
   {
+   "id": "24755a352d3d",
+   "source": "krebs",
+   "source_name": "KrebsOnSecurity",
+   "official": false,
+   "source_type": "news",
+   "title": "Widespread PHP Flaw May Cause Many Site Outages Today",
+   "link": "https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/",
+   "published": "2026-10-21T15:26:07+00:00",
+   "summary": "Expect to see quite a few websites serving error pages today: Nearly 70 percent of websites need to update their core software to fix a pair of vulnerabilities that allow an attacker to seize full control over affected servers. Experts say there are working exploits for the flaws, and that these critical bugs are…",
+   "image": "https://krebsonsecurity.com/wp-content/uploads/2026/10/shutterstock-codeonscreenphp.png",
+   "cves": [
+    "CVE-2026-109618",
+    "CVE-2026-109619"
+   ],
+   "first_seen": "2026-10-21T16:01:05.916150+00:00",
+   "instructions": [
+    "Earlier today, PHP released an emergency security update to fix two critical bugs that can allow an attacker to execute code of their choosing on a vulnerable server.",
+    "Expect to see quite a few websites serving error pages today: Nearly 70 percent of websites need to update their core software to fix a pair of vulnerabilities that allow an attacker to seize full control over affected servers.",
+    "The Wiz researchers say it is likely the PHP vulnerabilities will be mass-exploited to install web-based backdoors or “web shells,” which give attackers a web-based panel that allows them to remotely control infected sites.",
+    "Wiz said that prior to the PHP bugs being publicly disclosed, the company worked with the PHP team, Calif and OpenAI to measure the size of the problem and coordinate patch verification and disclosure."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "a3bcf22c3d6c",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -1793,6 +1817,27 @@
    "first_seen": "2026-10-20T14:06:19.835154+00:00",
    "instructions": [
     "The note does not name the flaw used against Đokić's phone or say whether current iOS releases block it, so there is no case-specific fix to install."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "6478f5844cef",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "PHP Issues Emergency Patches for Two Critical PHP2Shell RCE Flaws as Exploit Attempts Emerge",
+   "link": "https://thehackernews.com/2026/10/php-issues-emergency-patches-for-two.html",
+   "published": "2026-10-21T14:00:00+00:00",
+   "summary": "PHP has released emergency updates that fix two critical flaws in the language itself, letting an attacker without an account run code on a web server. The fixes are in PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35, and the PHP team says only updating fully protects a server. The flaws, together called PHP2Shell, sit in the…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhz8MKP95jyzesxy1eZd6zQDCb3dr-9m-bRE9W0PYnomN3z8lodXmM_0Oo4AAiP_nt2QMNpLxsUNPKueH4TW6FnvXl7ijDGDwxnXcfiyAII6sUDd8cfKoB7Z3MgLOvcAWDeplnUdixy-zfpgVqCuAVZmqH-Orn4S-QhYREVcY1ew7_6kIG8LBsdLZC8Ofs/s1600/PHP2SHELL.gif",
+   "cves": [],
+   "first_seen": "2026-10-21T16:01:05.916150+00:00",
+   "instructions": [
+    "Every PHP installation that serves web requests is at risk, including PHP-FPM, Apache mod_php, php-cgi, FrankenPHP and LiteSpeed, according to the PHP security advisory .",
+    "The advisory singles out mod_php as the highest risk, with a demonstrated exploit in which a single unauthenticated request triggers the attack before any application code runs.",
+    "Linux distributions and long-term-support vendors received the patches in advance, so a distribution package can carry the fix under an old-looking version number; check the package changelog for the CVE, as Debian advises , not the version string.",
+    "The measures below reduce exposure to specific attack paths and do not make a server safe, according to the advisory."
    ],
    "instructions_checked": true
   },
@@ -4790,6 +4835,38 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt9dea48f154a2fb24/6acfd2ceaf9e572367afea5c/fishing_hooks-MicroStockHub-GettyImages-2193660035.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-10-20T09:53:14.101641+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "ce8b3bbcd62b",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "Survey Finds High-Profile Executives Feel Untouchable as Digital Exposure Turns Into Physical Risk",
+   "link": "https://www.darkreading.com/cybersecurity-operations/360-privacy-survey-high-profile-executives-feel-untouchable",
+   "published": "2026-10-21T15:29:09+00:00",
+   "summary": "360 Privacy finds more than 8 in 10 security and wealth professionals say cybersecurity and physical security can no longer be separated.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt850556f866500627/654a5a8e05eb4d040a046894/325351_DR23_Graphics_General_Large_Text_v1.png?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-10-21T16:01:05.916150+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "b716aa6739b4",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "Optiv Launches CyberBOT Cybersecurity Awareness Training Program",
+   "link": "https://www.darkreading.com/cybersecurity-operations/optiv-launches-cyberbot-cybersecurity-awareness-training-program",
+   "published": "2026-10-21T15:44:48+00:00",
+   "summary": "Hands-on sessions provide educators, nonprofits, and community leaders with an accessible resource to foster year-round cyber awareness and build more resilient communities.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt850556f866500627/654a5a8e05eb4d040a046894/325351_DR23_Graphics_General_Large_Text_v1.png?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-10-21T16:01:05.916150+00:00",
    "instructions": [],
    "instructions_checked": true
   },
