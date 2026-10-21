@@ -194,22 +194,6 @@
    "source_type": "news"
   },
   {
-   "id": "78394b2e6b36",
-   "source": "krebs",
-   "source_name": "KrebsOnSecurity",
-   "official": false,
-   "title": "U.K. Sanctions Cryptomus for RU Money Laundering",
-   "link": "https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/",
-   "published": "2026-10-14T14:22:49+00:00",
-   "summary": "The United Kingdom has issued economic sanctions against Cryptomus, a chameleonic cryptocurrency platform that experts say serves as a major conduit for payments related to ransomware, narcotics, darknet markets, fraud and cybercrime services that are helping Russia circumvent existing financial restrictions…",
-   "image": "https://krebsonsecurity.com/wp-content/uploads/2026/10/heleketsupportbot.png",
-   "cves": [],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "source_type": "news"
-  },
-  {
    "id": "a3bcf22c3d6c",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -2344,6 +2328,28 @@
    "instructions_checked": true
   },
   {
+   "id": "39edcc9fa917",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Hundreds of websites taken offline as concern grows over two PHP vulnerabilities",
+   "link": "https://therecord.media/php-script-vulnerabilities-warnings",
+   "published": "2026-10-21T14:17:00+00:00",
+   "summary": "The maintainers of the globally used PHP scripting language released patches for two vulnerabilities after alerting users that the bugs were severe.",
+   "image": "https://cms.therecord.media/uploads/pexels_pixabay_270557_b1a99bb16a.jpg",
+   "cves": [],
+   "first_seen": "2026-10-21T14:36:54.050749+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Dane Knecht, the CTO of Cloudflare, said the tech giant is already seeing attacks emerging, and it released stopgap mitigations to help protect some customers.",
+    "“All PHP users are encouraged to prepare now so they can upgrade as soon as the release is available,” PHP’s security team said. “PHP 8.1 and older no longer receive updates from the PHP project.”",
+    "Dozens of government agencies released urgent warnings throughout the evening and early on Wednesday morning telling website maintainers to stay alert and patch now that fixes have been released .",
+    "The European Union , Germany , Japan , Australia , the U.K. , the Netherlands all released warnings locally about the vulnerabilities and several governments even took some websites offline in advance of the patch being released."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "f650fcc751bf",
    "source": "therecord",
    "source_name": "The Record",
@@ -4134,6 +4140,28 @@
    "instructions_checked": true
   },
   {
+   "id": "bc6b0429e7ca",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "ClickFix has never been bigger, and AI tools are its most convincing lure yet",
+   "link": "https://www.bleepingcomputer.com/news/security/clickfix-has-never-been-bigger-and-ai-tools-are-its-most-convincing-lure-yet/",
+   "published": "2026-10-21T14:00:10+00:00",
+   "summary": "ClickFix attacks are surging as cybercriminals use fake AI installers, malicious search results, and trusted chatbot platforms to trick users into executing malware. Push Security examines how these attacks evade traditional defenses and why AI tools have become increasingly effective lures.",
+   "image": "https://www.bleepstatic.com/content/posts/2026/10/20/push-clickfix-header.jpg",
+   "cves": [],
+   "first_seen": "2026-10-21T14:36:54.050749+00:00",
+   "image_checked": true,
+   "instructions": [
+    "At least 45% came from campaigns that told the victim to paste a command, through fake CLI install pages or fake download pages with ClickFix, and another quarter started on a shared AI chat or artifact.",
+    "Claude Code and similar tools ship as a one-line terminal install, so people who would never previously have opened a command line now paste commands from web pages as a normal part of trying a new tool.",
+    "Push first documented InstallFix in March 2026: cloned install pages for tools like Claude Code, Codex, and NotebookLM (which doesn't even have a desktop installer), promoted through search ads.",
+    "The attacker copies the legitimate page and replaces the install command with one that delivers malware."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "8dfac5c34b84",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4489,6 +4517,31 @@
     "OVHcloud CEO Octave Klaba disclosed that the company’s CLI repository on GitHub had been compromised, urging users who downloaded the latest version yesterday to update or remove the tool.",
     "In a later update, Klaba shared that GitHub’s release immutability setting was disabled, allowing a sufficiently privileged account to modify existing releases without passing CI/CD checks.",
     "However, Klaba urges users who downloaded a compromised CLI package to perform a system cleanup and revoke all secrets."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "a5afc0aef898",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "PHP ships emergency patches for critical PHP2Shell flaws",
+   "link": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/",
+   "published": "2026-10-21T14:07:05+00:00",
+   "summary": "The PHP security team released emergency security patches for two critical remote code execution (RCE) vulnerabilities (CVE-2026-109618 and CVE-2026-109619) tracked collectively as PHP2Shell.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/21/PHP.jpg",
+   "cves": [
+    "CVE-2026-109618",
+    "CVE-2026-109619"
+   ],
+   "first_seen": "2026-10-21T14:36:54.050749+00:00",
+   "image_checked": true,
+   "instructions": [
+    "\"We reserve the right to release earlier should details of either vulnerability become public, or should evidence of active exploitation appear in the wild.\"",
+    "PHP core developer Gina Peter Banyard warned that no PHP2Shell mitigations would fully block potential attacks and that applying the official security patches is the only permanent defense.",
+    "However, the PHP security team did share a number of mitigation measures that should reduce exposure to some attack paths for those who can't immediately patch their servers, although they don't fully protect against exploitation (detailed information is available in PHP's blog post ):",
+    "Admins should install PHP 8.5.12, 8.4.27, 8.3.36, or 8.2.35 as soon as possible on servers running PHP 8.x and migrate to a fixed release if they're running PHP 7 or earlier."
    ],
    "instructions_checked": true
   },
@@ -5097,27 +5150,6 @@
    "image_checked": true
   },
   {
-   "id": "7bf6f5bbc65c",
-   "source": "schneier",
-   "source_name": "Schneier on Security",
-   "official": false,
-   "source_type": "news",
-   "title": "Cyberattack on Connected Fridges in France",
-   "link": "https://www.schneier.com/blog/archives/2026/10/cyberattack-on-connected-fridges-in-france.html",
-   "published": "2026-10-14T14:10:22+00:00",
-   "summary": "Another IoT cyberattack, this one in France: Hackers gained control of the software that regulates the temperatures of the refrigeration units, forcing some to warm to 50C (120F) overnight, according to one supermarket chain affected. Normally, supermarket freezers go through a short period of defrosting overnight, in…",
-   "image": null,
-   "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00",
-   "instructions": [
-    "“Customers using affected AK-SM 800A controllers should upgrade to firmware version R4.3.1 or later as soon as possible.",
-    "Organizations should also avoid exposing management interfaces directly to the Internet and ensure that access to administrative services is restricted to trusted management networks or secured through VPNs and other appropriate network segmentation controls.”",
-    "Claroty said it identified thousands of publicly accessible AK-SM 800A management interfaces, urging customers to upgrade their systems to firmware version R4.3.1, which contains the necessary patches.”"
-   ],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
    "id": "fd577205a9ba",
    "source": "schneier",
    "source_name": "Schneier on Security",
@@ -5170,28 +5202,6 @@
    "cves": [],
    "first_seen": "2026-10-20T11:12:55.030681+00:00",
    "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "6bb19fd6562c",
-   "source": "schneier",
-   "source_name": "Schneier on Security",
-   "official": false,
-   "source_type": "news",
-   "title": "The Future of AI Cryptanalysis",
-   "link": "https://www.schneier.com/blog/archives/2026/10/the-future-of-ai-cryptanalysis.html",
-   "published": "2026-10-14T14:24:18+00:00",
-   "summary": "Matthew Green has been writing a rather pessimistic series of posts about the potential for AI systems to vastly outperform humans in cryptanalysis of both symmetric and public-key ciphers. I am more optimistic than he is. That is, I have stronger faith in the over-engineering cryptographers tend to do. I am trying to…",
-   "image": null,
-   "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00",
-   "instructions": [
-    "The mechanism they used was to apply a Spread Spectrum jitter to the key press timing,",
-    "2, Reduce complexity in each functional block to the minimum needed to do a required function.",
-    "Whilst not an issue for those with nefarious intent, it is a major financial road block for academic publication.",
-    "In practical terms block ciphers are seen as no different to simple substitution ciphers that can in effect be broken by incredibly simple means (see the DES encrypted Linux Penguin image)."
-   ],
    "instructions_checked": true,
    "image_checked": true
   },
