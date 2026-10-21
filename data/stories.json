@@ -1685,6 +1685,26 @@
    "instructions_checked": true
   },
   {
+   "id": "f5335e20393b",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "LiteLLM Compromised in Supply Chain Attack Delivering Credential Stealer and Backdoor",
+   "link": "https://thehackernews.com/2026/10/litellm-compromised-in-supply-chain.html",
+   "published": "2026-10-21T18:01:57+00:00",
+   "summary": "The popular LiteLLM Python package has been compromised as part of a software supply chain attack that delivered a credential stealer and a backdoor, according to reports from SafeDep, Socket, StepSecurity, and Upwind. The compromise affects LiteLLM 1.107.0, distributed through PyPI wheels and Docker images. The…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-f1TsJE93kcT5Cp1wvKlnR-bCWFP9ZUZofd0PXryxRBt0B1q0-t0BaHnEJcNhy3IhRZq2fBU9fmILshSvlY-qk28TOO-f1JoBcGSRtwiC3MIV4gDxdXYzTS_ZMirtPka7UaG9Shie7kgWKzauZOwKgPvk8hHXUTFly2YXpzBuxUD20MdxBfKeXrRsIG-W/s1600/litellm-hack.jpg",
+   "cves": [],
+   "first_seen": "2026-10-21T18:37:57.118186+00:00",
+   "instructions": [
+    "Users who have downloaded the malicious version are advised to revoke and replace exposed credentials from a clean environment and pin version 1.106.2 by digest.",
+    "As a temporary mitigation, we have removed all but one (unaffected) user from our GitHub organization.\"",
+    "Separately, LiteLLM said it has updated the public registries to remove any trusted links to its GitHub organization so as to prevent further publication of malicious packages."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "1fae9cde44bf",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2309,6 +2329,25 @@
    "image_checked": true,
    "instructions": [
     "The current service interruptions apply to the cloud backup system as well as the SaaS Security and Cloud Management platforms."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "14b2da242e2e",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Democrat lawmakers say Russia is aiming to undermine party ahead of midterms",
+   "link": "https://therecord.media/democrat-lawmakers-say-russia-is-aiming-to-undermine-party",
+   "published": "2026-10-21T18:28:00+00:00",
+   "summary": "The pair stressed the latest update showed no country is pursuing the technically challenging effort to interfere with or hack into the country’s election infrastructure or tamper directly with votes.",
+   "image": "https://cms.therecord.media/uploads/Vote_Here_sign_87792ed841.jpg",
+   "cves": [],
+   "first_seen": "2026-10-21T18:37:57.118186+00:00",
+   "image_checked": true,
+   "instructions": [
+    "The pair stressed the latest update showed no country is pursuing the technically challenging effort to interfere with or hack into the country’s election infrastructure or tamper directly with votes."
    ],
    "instructions_checked": true
   },
@@ -4203,6 +4242,28 @@
    "instructions_checked": true
   },
   {
+   "id": "71f0485320c6",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "CISA: Hackers chain Plex flaws in Plex2Shell attacks to breach servers",
+   "link": "https://www.bleepingcomputer.com/news/security/cisa-hackers-chain-plex-flaws-in-plex2shell-attacks-to-breach-servers/",
+   "published": "2026-10-21T18:34:42+00:00",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) is warning that attackers are actively exploiting four vulnerabilities in Plex Media Server.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/21/CISA.jpg",
+   "cves": [],
+   "first_seen": "2026-10-21T18:37:57.118186+00:00",
+   "image_checked": true,
+   "instructions": [
+    "The vendor urged users to upgrade to SiteGuard Server Edition for Apache httpd, Nginx, and IIS version 8.00 Update 5, and SiteGuard Server Edition for Apache httpd and Nginx on FreeBSD version 7.00 Update 6 and later.",
+    "CISA has directed federal agencies to prioritize patching systems affected by Plex2Shell vulnerabilities or apply mitigations by October 23.",
+    "Siemens's alert on CVE-2026-110936 shares indicators of compromise (IoCs) and advice on identifying compromised systems, urging administrators to update Siemens Software Center to version 4.0.9.8 or later.",
+    "Plex warns users to patch security vulnerabilities immediately"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "54e589c7063e",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4860,7 +4921,7 @@
    "title": "Decades-Old Windows Utility Powers Modern ClickFix Attack",
    "link": "https://www.darkreading.com/cyberattacks-data-breaches/decades-old-windows-utility-modern-clickfix-attack",
    "published": "2026-10-21T13:00:00+00:00",
-   "summary": "The attack uses malicious Google search results related to Amazon and leverages the 'finger' utility to launch a CAPTCHA that installs malware, including the Lumma stealer.",
+   "summary": "The attack uses malicious Google search results related to Amazon and leverages the \"finger\" utility to launch a CAPTCHA that installs malware, including the Lumma stealer.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltfaf93bd096fd735c/6a45559d327edd13ed6ac140/clickfix-tumsasedgars-Getty-2234293893.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-10-21T13:13:04.358300+00:00",
@@ -5280,6 +5341,27 @@
    ],
    "instructions_checked": true,
    "source_type": "vendor_blog"
+  },
+  {
+   "id": "80aac9868cd3",
+   "source": "msblog",
+   "source_name": "Microsoft Security Blog",
+   "official": false,
+   "source_type": "vendor_blog",
+   "title": "AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/",
+   "published": "2026-10-21T18:23:55+00:00",
+   "summary": "As early as September 2026, Storm-0940, a China-state aligned actor, used the agentic AI penetration testing framework ARTEX to automate attacks targeting hundreds of organizations globally across a broad range of industries. Several of these Storm-0940 ARTEX-driven attacks have resulted in the actor obtaining…",
+   "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/10/image-6.webp",
+   "cves": [],
+   "first_seen": "2026-10-21T18:37:57.118186+00:00",
+   "instructions": [
+    "Microsoft recommends the following mitigations to reduce the impact of this threat.",
+    "Check the recommendations card for the deployment status of monitored mitigations.",
+    "Importantly, the absence of results should not be treated as confirmation that no access occurred; Graph API telemetry should be considered alongside the application permissions and service principal authentication activity identified in the previous hunting steps.",
+    "Customers should review service principal sign-ins, investigate unexpected application credential or privilege changes, and follow ConnectWise’s published containment guidance while preserving relevant evidence for investigation."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "c425a649aa9d",
