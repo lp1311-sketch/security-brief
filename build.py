@@ -40,7 +40,7 @@ CATEGORIES = {
     "threats": ("Attacks & Breaches", r"ransomware|malware|breach|phishing|stealer|botnet|extortion|data leak|spyware|hijack|backdoor|scam|theft|cyberattack|cyber attack|shellcode|loader|supply[- ]chain|tampered|money laundering|sanction|proxyjack|attackers|hackers"),
     "vulnerabilities": ("Patch Radar", r"vulnerab|\bcve-|patch|exploit|flaw|\brce\b|zero-day|0-day|security update"),
     "ai": ("AI Risk Lab", r"\bai\b|\bllm|copilot|chatgpt|openai|anthropic|gemini|deepfake|generative|ai agent|ai model"),
-    "microsoft": ("Microsoft 365 & Entra", r"microsoft|windows|exchange|sharepoint|teams|office 365|m365|outlook|defender|azure|entra|azure ad|conditional access|\bmfa\b|tenant|identity|sign-in|oauth"),
+    "microsoft": ("Microsoft", r"microsoft|windows|exchange|sharepoint|teams|office 365|m365|outlook|defender|azure|entra|azure ad|conditional access|\bmfa\b|tenant|identity|sign-in|oauth"),
     "general": ("Germany & BSI", r"$^"),  # fallback, never matches
 }
 CATEGORY_ORDER = ["threats", "vulnerabilities", "ai", "microsoft", "general"]  # rendering order
@@ -171,14 +171,28 @@ def https_image(u: str | None) -> str | None:
     return p.geturl() if p.scheme == "https" and p.netloc else None
 
 
+STOP_WORDS = {"the", "and", "for", "with", "from", "that", "this", "new", "after", "over", "into", "using",
+              "how", "why", "what", "your", "their", "are", "was", "has", "have", "exploit", "attack", "attacks",
+              "flaw", "flaws", "bug", "bugs", "hackers", "hacker", "security", "update", "updates"}
+
+
+def cover_keyword(s: dict) -> str:
+    """Pick the most useful short label for a cover: CVE ID, vendor, or the most specific title word."""
+    cve = re.search(r"CVE-\d{4}-\d{4,7}", s.get("title", ""), re.I)
+    if cve:
+        return cve.group(0).upper()
+    if s.get("vendors"):
+        return s["vendors"][0]
+    words = [w for w in re.findall(r"[A-Za-z][A-Za-z0-9+-]{3,}", s.get("title", ""))
+             if w.lower() not in STOP_WORDS]
+    return max(words, key=len) if words else CATEGORIES[s["category"]][0]
+
+
 def fallback_cover(s: dict) -> str:
     """Branded placeholder for stories without a usable preview image. Built from the story's own data."""
     cat = CATEGORIES[s["category"]][0]
     accent = {"Critical": "#ff5c5c", "High": "#fbbf24"}.get(s["priority"], "#5eead4")
-    if s.get("vendors"):
-        top, main = cat.upper(), s["vendors"][0]
-    else:
-        top, main = "SECURITY BRIEF", cat
+    top, main = cat.upper(), cover_keyword(s)
     size = 46 if len(main) <= 14 else 34 if len(main) <= 24 else 26
     grid = "".join(f'<line x1="{x}" y1="0" x2="{x}" y2="360"/>' for x in range(0, 641, 64))
     grid += "".join(f'<line x1="0" y1="{y}" x2="640" y2="{y}"/>' for y in range(0, 361, 60))
@@ -738,10 +752,8 @@ def story_tags(text: str, prio: str, category: str, kev_hit: bool, exploited: bo
         tags.append("exploited")
     if kev_hit or (exploited and has_cve):
         tags.append("patch-now")
-    if M365_RE.search(text):
-        tags.append("m365")
-    if ENTRA_RE.search(text):
-        tags.append("entra")
+    if category == "microsoft" or re.search(CATEGORIES["microsoft"][1], text, re.I):
+        tags.append("microsoft")
     if DEFENDER_RE.search(text):
         tags.append("defender")
     if category == "ai":
@@ -962,14 +974,14 @@ def _layout(cfg: dict, title: str, desc: str, body: str, base: str, image: str |
 <link rel="alternate" type="application/rss+xml" title="{site}" href="{esc(cfg['site_url'])}/feed.xml">
 </head>
 <body>
-<div class="fx" aria-hidden="true"><i class="orb o1"></i><i class="orb o2"></i><i class="orb o3"></i><i class="fly f1"></i><i class="fly f2"></i><i class="fly f3"></i></div>
+<div class="fx" aria-hidden="true"><i class="orb o1"></i><i class="orb o2"></i><i class="orb o3"></i><i class="fly f1"></i><i class="fly f2"></i><i class="fly f3"></i><svg class="fx-circuit" viewBox="0 0 1000 600" preserveAspectRatio="none" aria-hidden="true"><path class="g" d="M0 120 H260 L300 160 H520 L560 120 H1000"/><path class="r" d="M0 430 H180 L220 390 H430 L470 430 H760 L800 470 H1000" style="animation-delay:-6s"/><path class="b" d="M120 600 V470 L160 430 V260 L200 220 V0" style="animation-delay:-11s"/><path class="g" d="M1000 300 H820 L780 340 H640 L600 300 H380" style="animation-delay:-3s"/><circle cx="300" cy="160" r="4" fill="#22c55e"/><circle cx="470" cy="430" r="4" fill="#ef4444"/><circle cx="200" cy="220" r="4" fill="#38bdf8"/><circle cx="600" cy="300" r="4" fill="#22c55e"/></svg></div>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header"><div class="wrap bar">
 <a class="brand" href="{base}index.html"><img class="logo-img" src="{base}favicon.svg" width="30" height="30" alt="" aria-hidden="true">{site}</a>
 <nav class="nav" aria-label="Categories">{nav}</nav>
-<a class="live" href="{base}today/index.html"><i class="led r" aria-hidden="true"></i>Action today</a><span class="live" role="status"><i class="led g" aria-hidden="true"></i>Live feed</span><button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false">Dark mode</button>
+<button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false">Dark mode</button>
 </div></header>
-<div class="banner" role="region" aria-label="Site highlights"><div class="wrap banner-in"><span class="banner-tag"><i class="led g" aria-hidden="true"></i>Security Brief</span><p class="banner-text" id="banner-text" aria-live="off">Feeds are checked every 20 minutes.</p><button type="button" class="banner-pause" id="banner-pause" aria-pressed="false" aria-label="Pause banner">Pause</button></div></div>
+<div class="banner" role="region" aria-label="Site highlights"><div class="wrap banner-in"><span class="banner-tag"><i class="led g" aria-hidden="true"></i>Live feed</span><p class="banner-text" id="banner-text" aria-live="off">Feeds are checked every 20 minutes.</p><a class="banner-action" href="{base}today/index.html"><i class="led r" aria-hidden="true"></i>Action today</a><button type="button" class="banner-pause" id="banner-pause" aria-pressed="false" aria-label="Pause banner">Pause</button></div></div>
 <main id="main" class="wrap">
 {body}
 </main>
@@ -995,8 +1007,9 @@ def _card(s: dict) -> str:
     img = s["image"] or fallback_cover(s)
     names = ", ".join(dict.fromkeys(x["name"] for x in s["sources"]))
     prio = esc(s["priority"])
+    fb = f''' data-fallback="{esc(fallback_cover(s))}" onerror="this.onerror=null;this.src=this.dataset.fallback"'''
     return f"""<article class="card prio-{prio}" data-tags="{esc(' '.join(s['tags']))}" data-search="{esc(search_text(s))}">
-<a class="card-media" href="story/{esc(s['id'])}.html" tabindex="-1" aria-hidden="true"><img src="{esc(img)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360"><span class="badge {prio}">{prio}</span></a>
+<a class="card-media" href="story/{esc(s['id'])}.html" tabindex="-1" aria-hidden="true"><img src="{esc(img)}"{fb} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360"><span class="badge {prio}">{prio}</span></a>
 <div class="card-body">
 <p class="kicker"><span class="cat">{esc(CATEGORIES[s['category']][0])}</span> <span class="type">{esc(s.get('content_type', 'News'))}</span></p>
 <h3><a href="story/{esc(s['id'])}.html">{esc(s['title'])}</a></h3>
@@ -1011,8 +1024,9 @@ def _hero(s: dict) -> str:
     img = s["image"] or fallback_cover(s)
     names = ", ".join(dict.fromkeys(x["name"] for x in s["sources"]))
     prio = esc(s["priority"])
+    fb = f''' data-fallback="{esc(fallback_cover(s))}" onerror="this.onerror=null;this.src=this.dataset.fallback"'''
     return f"""<section class="hero" aria-labelledby="hero-title" data-tags="{esc(' '.join(s['tags']))}" data-search="{esc(search_text(s))}">
-<a class="hero-media" href="story/{esc(s['id'])}.html" tabindex="-1" aria-hidden="true"><img src="{esc(img)}" alt="" loading="eager" referrerpolicy="no-referrer" width="640" height="360"></a>
+<a class="hero-media" href="story/{esc(s['id'])}.html" tabindex="-1" aria-hidden="true"><img src="{esc(img)}"{fb} alt="" loading="eager" referrerpolicy="no-referrer" width="640" height="360"></a>
 <div class="hero-body">
 <p class="kicker"><span class="badge {prio}">{prio}</span><span class="cat">{esc(CATEGORIES[s['category']][0])}</span></p>
 <h2 id="hero-title"><a href="story/{esc(s['id'])}.html">{esc(s['title'])}</a></h2>
@@ -1157,7 +1171,7 @@ def article_cover(a: dict) -> str:
         f'font-weight="700" letter-spacing="3">{esc(label.upper())}</text>'
         f'{text}'
         '<text x="48" y="318" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="13" '
-        'letter-spacing="2">SECURITY BRIEF &middot; ANALYSIS</text>'
+        'letter-spacing="2">SECURITY BRIEF  |  ANALYSIS</text>'
         "</svg>"
     )
     return "data:image/svg+xml;charset=utf-8," + quote(svg)
@@ -1423,7 +1437,7 @@ LOGO_SVG = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 80" role=
 
 FILTERS = [
     ("all", "All"), ("critical", "Critical"), ("exploited", "Actively exploited"), ("patch-now", "Patch now"),
-    ("m365", "Microsoft 365"), ("entra", "Entra ID"), ("defender", "Defender"), ("ai", "AI security"),
+    ("microsoft", "Microsoft"), ("defender", "Defender"), ("ai", "AI security"),
 ]
 def filter_bar(stories: list[dict]) -> str:
     buttons = []
@@ -1496,7 +1510,7 @@ def affected(s: dict) -> tuple[str, str]:
     if s.get("vendors"):
         return s["vendors"][0], s["vendors"][0] + " products", True
     tags = set(s["tags"])
-    for tag, name in (("m365", "Microsoft 365"), ("entra", "Entra ID"), ("defender", "Microsoft Defender")):
+    for tag, name in (("microsoft", "Microsoft"), ("defender", "Microsoft Defender")):
         if tag in tags:
             return name, name, True
     return CATEGORIES[s["category"]][0], "your environment", False
@@ -1702,8 +1716,10 @@ def story_page(s: dict, cfg: dict) -> str:
     if s["image"]:
         img = s["image"]
         credit = f"Image: {s['image_source']}. Credit remains with the original publisher."
+        fb_attr = f' data-fallback="{esc(fallback_cover(s))}" onerror="this.onerror=null;this.src=this.dataset.fallback"'
     else:
         img = fallback_cover(s)
+        fb_attr = ""
         credit = "Illustration: no preview image was available for this story."
     reasons = "".join(f"<li>{esc(r)}</li>" for r in s["reasons"]) or "<li>No scoring signals matched.</li>"
     srcs = "".join(
@@ -1743,7 +1759,7 @@ def story_page(s: dict, cfg: dict) -> str:
 <p class="meta"><span class="badge {esc(s['priority'])}">{esc(s['priority'])}</span>{esc(cat_label)}</p>
 <h1>{esc(s['title'])}</h1>
 <p class="meta">Published: {esc(fmt_date(s['published']))} · Priority score {s['score']}</p>
-<figure><img src="{esc(img)}" alt="" referrerpolicy="no-referrer" width="640" height="360"><figcaption>{esc(credit)}</figcaption></figure>
+<figure><img src="{esc(img)}"{fb_attr} alt="" referrerpolicy="no-referrer" width="640" height="360"><figcaption>{esc(credit)}</figcaption></figure>
 <h2>Summary</h2>
 <p>{esc(s['summary']) or 'No excerpt available. Please read the original article.'}</p>
 <p class="meta">Summary is the feed's excerpt, shortened. It is not a full article.</p>
@@ -1836,6 +1852,23 @@ a.live:hover{color:var(--ink);border-color:var(--crit)}
 .banner-pause{font:inherit;font-size:.74rem;font-weight:650;color:var(--muted);background:none;border:1px solid var(--line);border-radius:999px;padding:4px 10px;cursor:pointer;white-space:nowrap}
 .banner-pause:hover{color:var(--ink);border-color:var(--accent)}
 @media (max-width:640px){.banner-tag{display:none}}
+.nav{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);mask-image:linear-gradient(90deg,#000 88%,transparent);padding-right:28px}
+.banner-action{display:inline-flex;align-items:center;gap:7px;font-size:.76rem;font-weight:700;color:var(--ink);text-decoration:none;border:1px solid color-mix(in srgb,#ef4444 50%,var(--line));border-radius:999px;padding:4px 11px;white-space:nowrap;background:color-mix(in srgb,#ef4444 10%,var(--surface))}
+.banner-action:hover{box-shadow:0 0 16px rgba(239,68,68,.35)}
+.fx-circuit{position:fixed;inset:0;width:100%;height:100%;z-index:0;opacity:.5}
+.fx-circuit path{fill:none;stroke-width:1.2;stroke-dasharray:4 16;animation:flow 22s linear infinite}
+.fx-circuit path.g{stroke:#22c55e}.fx-circuit path.r{stroke:#ef4444}.fx-circuit path.b{stroke:#38bdf8}
+.fx-circuit circle{animation:node 3.2s ease-in-out infinite}
+@keyframes flow{to{stroke-dashoffset:-400}}
+@keyframes node{50%{opacity:.25}}
+.hero{position:relative}
+.hero::after{content:"";position:absolute;left:0;right:0;top:-120px;height:120px;pointer-events:none;background:linear-gradient(180deg,transparent,rgba(94,234,212,.10),transparent);animation:scan 7s linear infinite}
+@keyframes scan{to{transform:translateY(calc(100% + 240px))}}
+.card:hover{box-shadow:0 0 0 1px rgba(34,197,94,.35),0 16px 40px -14px rgba(56,189,248,.45)}
+.card-media img{transition:transform .5s ease}
+.card:hover .card-media img{transform:scale(1.04)}
+.card-media{overflow:hidden}
+@media (prefers-reduced-motion:reduce){.fx-circuit path,.fx-circuit circle,.hero::after{animation:none!important}.fx-circuit path{stroke-dasharray:none}.card-media img{transition:none}.card:hover .card-media img{transform:none}}
 @media (prefers-reduced-motion:reduce){body::before,.orb,.fly,.led,.card::after{animation:none!important;transition:none!important}.fly,.card::after{display:none}}
 """
 BANNER_JS = """(function(){
@@ -1973,7 +2006,7 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
                      s["score"], s["image"], [x["url"] for x in s["sources"]]] for s in stories],
         "articles": [[a["section"], a["slug"], a["title"], a["date"], a["summary"], a["_md"]] for a in articles],
         "site": site_cfg,
-        "render": "5.23",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
+        "render": "5.24",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
     }, ensure_ascii=False, sort_keys=True)
     digest = hashlib.sha1(digest_src.encode("utf-8")).hexdigest()
     digest_file = data_file.parent / "digest.txt"
