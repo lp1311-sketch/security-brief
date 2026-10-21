@@ -157,4 +157,12 @@ figcaption{font-size:.8rem;color:var(--muted);margin-top:8px}
 .section-more a:hover{text-decoration:underline}
 .nav a[aria-current="page"]{color:var(--accent)}
 :focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-@media (prefers-reduced-motion:reduce){.card,.card:hover{transition:none;transform:none}}
+.hero{position:relative;overflow:hidden;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:-40%;z-index:-1;pointer-events:none;background:radial-gradient(circle at 28% 32%,rgba(56,189,248,.22),transparent 42%),radial-gradient(circle at 72% 64%,rgba(94,234,212,.16),transparent 40%);animation:drift 18s ease-in-out infinite alternate}
+@keyframes drift{to{transform:translate3d(-4%,3%,0) scale(1.06)}}
+.logo-img{animation:float 6s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-4px)}}
+.card{backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.stats .stat{animation:float 7s ease-in-out infinite}
+.stats .stat:nth-child(2){animation-delay:-2s}.stats .stat:nth-child(3){animation-delay:-4s}.stats .stat:nth-child(4){animation-delay:-6s}
+@media (prefers-reduced-motion:reduce){.card,.card:hover,.hero::before,.logo-img,.stats .stat{transition:none;transform:none;animation:none}}
