@@ -1054,6 +1054,24 @@
    "source_type": "news"
   },
   {
+   "id": "00d9c6c07315",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Attackers Hijacked Over 300 Tor Exit Relays to Intercept SSH Connections",
+   "link": "https://thehackernews.com/2026/10/attackers-hijacked-over-300-tor-exit.html",
+   "published": "2026-10-21T10:30:27+00:00",
+   "summary": "Attackers took control of more than 300 Tor exit relays in early October and used them to redirect SSH connections to servers that stole login passwords, a researcher found. Exit relays are the last hop in a Tor circuit, where traffic leaves the network for its destination. Only a password login to an SSH server made…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-PokIxnQKc5RkxwrgRCR7Aaw8sjbkT1F4TQWCIG2V_rhQVKp8CJgtivgF5Zns45rObi0Tf-e9FDBXdX0L7OUshol00GvpiQhAi3SUAa72DV-bjeDu2oNzET9uV_cIQV2U9jSXGC2qiWWOr00M1ZYPAtcaWJNSn2_IH_BwPWVaUEqqjpmUSgfhIvRUdbY/s1600/tor-ssh.jpg",
+   "cves": [],
+   "first_seen": "2026-10-21T11:35:30.299586+00:00",
+   "instructions": [
+    "Report to bad-relays@lists.torproject.org, and if your IP address was blocked during the incident, write to the same address once your host is clean to have the block lifted, Georg Koppen of the Tor Project said in a follow-up ."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "2f6312b7767d",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1780,6 +1798,27 @@
    "instructions_checked": true
   },
   {
+   "id": "ec0fd993c8b5",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "PHP2Shell: What Actually Protects You Before the 14:00 UTC PHP RCE Patch, and What Doesn't",
+   "link": "https://thehackernews.com/2026/10/php2shell-what-actually-protects-you.html",
+   "published": "2026-10-21T10:36:53+00:00",
+   "summary": "You cannot fully block the two critical PHP flaws called PHP2Shell before today's fix, and the one setting being passed around as a workaround is not enough on its own, the security firm that suggested it now says. PHP will release the fix at 14:00 UTC on October 21 for two flaws it rates 9.2 out of 10, and has given…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipzsA5sBIvBsTGT1YIrSeK_4YH5ISqTd40ZG1tV8YN1VkjjZuiY6CfQojYR-TIoYKM0EgZM4fYrmdtD25XjeTtgBkTFCQGny4DLL0fTKT5SEFpOFBcxNjLgif_FrX-1d-IX9DE58tQX6ELzGk4cWNpUpU5Eaig8pqdLL2h6qqVCC95ZmHFN6m7tD6m7BY/s1600/php-rce-patch.jpg",
+   "cves": [],
+   "first_seen": "2026-10-21T11:35:30.299586+00:00",
+   "instructions": [
+    "One vendor, Upwind, still lists the setting as an immediate mitigation , passing along another researcher's analysis rather than its own tests. watchTowr, which reproduced one of the flaws, says there is \"no confirmed patch or workaround at this time.\"",
+    "The fixed versions and the advisory will appear on php.net and through PHP's GitHub security advisories , where the project assigns its own identifiers.",
+    "You cannot fully block the two critical PHP flaws called PHP2Shell before today's fix, and the one setting being passed around as a workaround is not enough on its own, the security firm that suggested it now says.",
+    "PHP will release the fix at 14:00 UTC on October 21 for two flaws it rates 9.2 out of 10, and has given no workaround of its own."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "4ad529ab6216",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1901,6 +1940,24 @@
    "cves": [],
    "first_seen": "2026-10-21T08:19:02.839724+00:00",
    "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "f31f85df952c",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "The Harness Is the Hard Part of Agentic Pentesting",
+   "link": "https://thehackernews.com/2026/10/the-harness-is-hard-part-of-agentic.html",
+   "published": "2026-10-21T10:32:40+00:00",
+   "summary": "An AppSec team can point an AI agent running on a general-purpose model at its own web apps with little setup. Sure, the model writes the attacks. But everything that makes those attacks safe to run against production and worth acting on afterward lives in the harness around the model. The harness is where the…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTdLja8gnPl92G1mhffmAZ3Dy5Q8gX9wpjY22n1J2xerzpx0Eab4VMj2fzt3XAe_TjT8hlDkjdzW8DdBwWCvAPa9o5SKnFN4MSo5H0MnXylWX36NwFiwcI19f3MR0QDPT2uKXtXH4RAj5_rU3aBnmAVxsczeL2sfBj7G1r878XbJ6rAyEFgIg0XeuBNKk/s1600/pentera-main.jpg",
+   "cves": [],
+   "first_seen": "2026-10-21T11:35:30.299586+00:00",
+   "instructions": [
+    "Every model upgrade can change how the agent behaves, and every release changes the app whose security it tests."
+   ],
    "instructions_checked": true
   },
   {
@@ -5141,6 +5198,23 @@
    "image_checked": true
   },
   {
+   "id": "8e7d8bc5cf31",
+   "source": "schneier",
+   "source_name": "Schneier on Security",
+   "official": false,
+   "source_type": "news",
+   "title": "Workshop on Economics and Information Security (WEIS) Archive",
+   "link": "https://www.schneier.com/blog/archives/2026/10/workshop-on-economics-and-information-security-weis-archive.html",
+   "published": "2026-10-21T11:02:22+00:00",
+   "summary": "There’s a new archive of all the papers from twenty-five years of the Workshop on Economics and Information Security (WEIS). Really nice resource. It’s fun to reread my 2002 essay on the economics of information security.",
+   "image": null,
+   "cves": [],
+   "first_seen": "2026-10-21T11:35:30.299586+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "ebff93066b7e",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -5255,6 +5329,47 @@
    "instructions": [
     "Preparing for disruption must become part of day-to-day operations.",
     "During the very short attack windows, the threat actor, tracked as UNC7017, tampered with the update server’s update settings file to redirect to a malicious ZIP archive and modified the server’s automatic notification service to force systems into automatically executing the malware."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "9b477066ea3b",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Browsers Block eMudhra Intermediate CAs Over Recoverable Private Keys",
+   "link": "https://www.securityweek.com/browsers-block-emudhra-intermediate-cas-over-recoverable-private-keys/",
+   "published": "2026-10-21T11:22:05+00:00",
+   "summary": "The private keys associated with eight certificates were compromised, and root programs and trust stores are blocking them. The post Browsers Block eMudhra Intermediate CAs Over Recoverable Private Keys appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2024/09/internet-routing-bgp.jpeg",
+   "cves": [],
+   "first_seen": "2026-10-21T11:35:30.299586+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Preparing for disruption must become part of day-to-day operations.",
+    "There appears to be no evidence in Certificate Transparency (CT) logs that the keys were used maliciously before revocation, but not all clients enforce CT, and threat actors may have used them to impersonate those clients."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "a9327fc12a2b",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "China Defends DeepSeek After US Ban of Its AI From Government Systems",
+   "link": "https://www.securityweek.com/china-defends-deepseek-after-us-ban-of-its-ai-from-government-systems/",
+   "published": "2026-10-21T10:54:49+00:00",
+   "summary": "The DHS said agencies should remove DeepSeek products as well as third-party products and services developed using DeepSeek from their IT systems. The post China Defends DeepSeek After US Ban of Its AI From Government Systems appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/02/DeepSeek-AI.jpeg",
+   "cves": [],
+   "first_seen": "2026-10-21T11:35:30.299586+00:00",
+   "image_checked": true,
+   "instructions": [
+    "The Department of Homeland Security said the agencies should remove DeepSeek products as well as third-party products and services developed using DeepSeek from their IT systems, according to a notice made public on Monday.",
+    "Preparing for disruption must become part of day-to-day operations.",
+    "And last week, Beijing rolled out its own proposals to restrict exports of certain advanced AI models."
    ],
    "instructions_checked": true
   },
