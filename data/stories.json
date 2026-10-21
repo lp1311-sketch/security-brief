@@ -957,6 +957,25 @@
    "instructions_checked": true
   },
   {
+   "id": "5a4ecf9699d2",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-97783 Microsoft Office SharePoint Spoofing Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97783",
+   "published": "2026-10-21T14:00:00+00:00",
+   "summary": "The vulnerability associated with this CVE was fixed in July, however was inadvertently not included with that release. Microsoft recommends updating to the most current release of the SharePoint server.",
+   "image": null,
+   "cves": [
+    "CVE-2026-97783"
+   ],
+   "first_seen": "2026-10-21T16:35:12.521985+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "a713f2422da2",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -4527,6 +4546,27 @@
    "source_type": "news"
   },
   {
+   "id": "288893f63679",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "OpenAI agents disabled safety monitoring, one lied about it",
+   "link": "https://www.bleepingcomputer.com/news/security/openai-agents-disabled-safety-monitoring-one-lied-about-it/",
+   "published": "2026-10-21T16:26:53+00:00",
+   "summary": "OpenAI agents powered by the GPT-6.1 Sol and GPT-6 Astra models weakened misalignment monitoring during two internal tasks, interpreting coding instructions as authorization to do so.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/21/robot.jpg",
+   "cves": [],
+   "first_seen": "2026-10-21T16:35:12.521985+00:00",
+   "image_checked": true,
+   "instructions": [
+    "OpenAI says this happened even though the agent earlier reasoned that alerts should remain enabled.",
+    "The AI firm says it has updated its internal Auto-Review system to now detect and block attempts to disable misalignment monitoring.",
+    "Mozilla, Google, Apple block compromised eMudhra CA certificates"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "c8f4e94200b3",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -5301,23 +5341,6 @@
     "In that a chain of Current AI systems that communicate as happens with agentic use would be able to “access and pass back” age restricted content (this can already be seen by the way Search Engines have been used to bypass “great firewalls” designed to block access to “prn” via URL examination).",
     "The end result of AI being able to instantly solve CAPTCHA, RECAPTCHA, FUTURECAPTCHA, IMPOSSIBLECAPTCHA, ad nauseum is that ip addresses will end up on block lists never to be removed."
    ],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "4d5b36d13b30",
-   "source": "schneier",
-   "source_name": "Schneier on Security",
-   "official": false,
-   "source_type": "news",
-   "title": "Upcoming Speaking Engagements",
-   "link": "https://www.schneier.com/blog/archives/2026/10/upcoming-speaking-engagements-61.html",
-   "published": "2026-10-14T16:02:17+00:00",
-   "summary": "This is a current list of where and when I am scheduled to speak: I’m speaking at ATTENTION: Democracy, Rebuilt in Montreal, Quebec, Canada. The event runs October 21–23, 2026, and my talk is on Wednesday, October 21. I’m speaking at the University of Toronto in Toronto, Ontario, Canada, at 5 PM ET on October 22…",
-   "image": null,
-   "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00",
-   "instructions": [],
    "instructions_checked": true,
    "image_checked": true
   },
