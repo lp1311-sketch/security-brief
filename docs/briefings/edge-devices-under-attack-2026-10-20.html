@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The edge is where attackers get in: this week&#x27;s firewall, VPN and remote-access exploits | Security Brief</title>
+<meta name="description" content="Five exploited flaws in firewalls, VPNs, remote-support software and file-sharing servers show one pattern. The systems that sit at the edge of your…">
+<meta property="og:site_name" content="Security Brief">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The edge is where attackers get in: this week&#x27;s firewall, VPN and remote-access exploits">
+<meta property="og:description" content="Five exploited flaws in firewalls, VPNs, remote-support software and file-sharing servers show one pattern. The systems that sit at the edge of your…">
+<meta name="twitter:card" content="summary">
+<script>(function(){
+var root=document.documentElement,dark=false,saved=null;
+try{saved=localStorage.getItem('sb-theme')}catch(e){}
+dark=saved?saved==='dark':(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches);
+function apply(){root.setAttribute('data-theme',dark?'dark':'light');
+var b=document.getElementById('theme-toggle');
+if(b){b.textContent=dark?'Light mode':'Dark mode';b.setAttribute('aria-pressed',String(dark));}}
+apply();
+document.addEventListener('DOMContentLoaded',function(){
+var b=document.getElementById('theme-toggle');
+if(b){b.addEventListener('click',function(){dark=!dark;try{localStorage.setItem('sb-theme',dark?'dark':'light')}catch(e){}apply();});}
+apply();});
+})();</script>
+<link rel="stylesheet" href="../../style.css">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="Security Brief" href="https://lp1311-sketch.github.io/security-brief/feed.xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap bar">
+<a class="brand" href="../../index.html"><img class="logo-img" src="../../favicon.svg" width="30" height="30" alt="" aria-hidden="true">Security Brief</a>
+<nav class="nav" aria-label="Categories"><a href="../../today/index.html">Today</a><a href="../../saved/index.html">Saved</a><a href="../../category/threats/index.html">Threats</a><a href="../../category/vulnerabilities/index.html">Vulnerabilities</a><a href="../../category/ai/index.html">AI</a><a href="../../category/microsoft/index.html">Microsoft</a><a href="../../stories/index.html">All stories</a><a href="../../briefings/index.html">Analysis</a><a href="../../patch-tuesday/index.html">Patch Tuesday</a></nav>
+<button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false">Dark mode</button>
+</div></header>
+<main id="main" class="wrap">
+<article class="prose"><p class="kicker">Security Analysis &middot; 20 Oct 2026</p><h1>The edge is where attackers get in: this week&#x27;s firewall, VPN and remote-access exploits</h1><p class="lede">Five exploited flaws in firewalls, VPNs, remote-support software and file-sharing servers show one pattern. The systems that sit at the edge of your network, and that administrators manage remotely, are the weakest link. Here is what to check first.</p><h3>Short answer</h3>
+<p>Between 14 and 19 October 2026, several internet-facing systems were reported as exploited: Palo Alto PAN-OS, Fortinet FortiOS, BeyondTrust Remote Support, Nextcloud with the Collabora CODE app, and AhsayCBS. These are not desktop bugs. They are the systems that let people in from outside your network. The first question to answer is not &quot;did we patch?&quot; but <strong>&quot;can anyone reach these management interfaces from the internet, and would we notice if they had?&quot;</strong></p>
+<h3>What happened</h3>
+<ul><li><strong>Palo Alto Networks PAN-OS (CVE-2026-0322, CVSS 8.6).</strong> A remote code execution flaw in the management interface, patched while under active exploitation. CISA lists it in its Known Exploited Vulnerabilities (KEV) catalog. Source: <a href="https://thehackernews.com/2026/10/palo-alto-networks-patches-pan-os.html" rel="nofollow noopener noreferrer" target="_blank">Palo Alto Networks Patches PAN-OS Authenticated RCE Flaw Amid Active Exploitation (The Hacker News, 15 Oct 2026)</a>.</li><li><strong>Fortinet FortiOS (CVE-2025-61624).</strong> A suspected advanced threat actor used this flaw to deliver a new memory-resident ARM64 malware, PEERSTITCH. The reported actor, CL-STA-0954, removes forensic traces: it stops syslog generation, clears crash logs, disrupts logging telemetry, and deletes rogue administrator accounts after use. CISA added the flaw to KEV on 16 October with a federal deadline of 19 October. Source: <a href="https://thehackernews.com/2026/10/attackers-exploit-fortios-flaw-to.html" rel="nofollow noopener noreferrer" target="_blank">PEERSTITCH Malware Deployed via FortiOS Flaw (The Hacker News, 16 Oct 2026)</a>.</li><li><strong>BeyondTrust Remote Support.</strong> Reporting on 16 October says a China-nexus group, tracked as Armory Castle, exploited a newly disclosed flaw as a zero-day in late August 2026 to take over remote-support servers. Source: The Hacker News and BleepingComputer, 16 Oct 2026. <em>(Original link to add after review.)</em></li><li><strong>Nextcloud with Collabora CODE (CVE-2026-110447).</strong> Attackers planted web shells on Nextcloud servers through an optional app. Three administrators reported the problem, and the first logged attack was on 10 September. The vendor says that disabling the app does not help: you must upgrade to version 26.4.303 or later, or remove it. Source: <a href="https://thehackernews.com/2026/10/hackers-backdoor-nextcloud-servers.html" rel="nofollow noopener noreferrer" target="_blank">Hackers Backdoor Nextcloud Servers (The Hacker News, 14 Oct 2026)</a>.</li><li><strong>AhsayCBS.</strong> Two flaws were exploited to deploy web shells and cryptominers. The vendor&#x27;s first fixes were incomplete, and new fixes followed on 15 October. Source: The Hacker News, 15 Oct 2026. <em>(Original link to add after review.)</em></li></ul>
+<h3>Why this is a pattern, not a coincidence</h3>
+<p>Each of these products is designed to be reached from outside: a firewall management interface, a VPN gateway, a remote-support server, a file-sharing server, a backup console. Attackers want exactly these systems because they combine three things: they often run with high privileges, they are hard to monitor with normal endpoint tools, and patching them means a service interruption, so they are often patched late.</p>
+<p>The FortiOS case shows why the usual &quot;check for malware on the endpoint&quot; approach is not enough. The reported actor deletes the administrator accounts it creates and clears the logs it leaves behind. If you only look for files, you can miss the compromise.</p>
+<h3>Confidence</h3>
+<ul><li><strong>Confirmed by the sources:</strong> the KEV listings for PAN-OS and FortiOS; the Nextcloud advisory that disabling the app is not a fix.</li><li><strong>Likely:</strong> the BeyondTrust and AhsayCBS campaigns affect more organisations than the reports name. The reports do not give victim counts.</li><li><strong>Unclear:</strong> how many organisations are compromised. No evidence in these sources says that your organisation is affected.</li></ul>
+<h3>What I would check this week</h3>
+<p>1. <strong>Exposure first.</strong> List every firewall management interface, VPN gateway, remote-support server and file-sharing app that answers from the internet. On PAN-OS, check the permitted IP addresses for the management interface (Device → Setup → Management in the web interface, paths can differ by version). Anything reachable from the internet that does not need to be should be restricted or removed. 2. <strong>FortiOS administrators.</strong> In the FortiOS web interface, go to <strong>System → Administrators</strong> and compare the list with your records. Look for accounts you did not create, and check when each one was last used. Also check whether syslog forwarding to your SIEM has gaps around the dates in the report. 3. <strong>Nextcloud and Collabora.</strong> Confirm the Collabora Online / CODE app version. If it is older than 26.4.303, upgrade it or remove it. Disabling the app is not enough according to the vendor. Look for unknown PHP or script files in the Nextcloud web directories. 4. <strong>Remote-support sessions.</strong> For BeyondTrust or any remote-support tool, review session logs and administrator logins for the last 60 days. Look for logins at unusual hours, from unfamiliar IP addresses, or for sessions you did not schedule. 5. <strong>Patch timing for edge devices.</strong> Agree with your team that KEV-listed edge flaws are patched within days, not in the next maintenance window. Document the exception process if you cannot.</p>
+<p>What to leave alone: do not reboot or reconfigure production firewalls during business hours without a rollback plan. Change the exposure rules in a maintenance window, and test them first.</p>
+<h3>Lesson from this week</h3>
+<p>Remove what you do not need on the internet. The fastest protection is to make an edge system unreachable, not to patch it faster. Patching still matters, but a management interface that is not reachable from outside cannot be exploited from outside.</p>
+<h3>Sources</h3>
+<ul><li>The Hacker News, 15 Oct 2026: <a href="https://thehackernews.com/2026/10/palo-alto-networks-patches-pan-os.html" rel="nofollow noopener noreferrer" target="_blank">Palo Alto Networks Patches PAN-OS Authenticated RCE Flaw Amid Active Exploitation</a></li><li>The Hacker News, 16 Oct 2026: <a href="https://thehackernews.com/2026/10/attackers-exploit-fortios-flaw-to.html" rel="nofollow noopener noreferrer" target="_blank">Attackers Exploit FortiOS Flaw to Deploy PEERSTITCH</a></li><li>The Hacker News, 14 Oct 2026: <a href="https://thehackernews.com/2026/10/hackers-backdoor-nextcloud-servers.html" rel="nofollow noopener noreferrer" target="_blank">Hackers Backdoor Nextcloud Servers Through Critical Flaw in Collabora&#x27;s Built-in CODE App</a></li><li>The Hacker News and BleepingComputer, 16 Oct 2026: BeyondTrust Remote Support zero-day (original link to add)</li><li>The Hacker News, 15 Oct 2026: AhsayCBS flaws (original link to add)</li></ul><p class="meta"><a href="index.html">&larr; All Security Analysis</a> &middot; <a href="../../index.html">Home</a></p></article>
+</main>
+<footer class="site-footer"><div class="wrap"><p>&copy; 2026 Leon Pavesic. Design, analysis and texts on this site are protected by copyright. Headlines, short excerpts and images belong to their original publishers and are linked to the source. Not affiliated with any source.</p><p><a href="../../impressum.html">Impressum</a> &middot; <a href="../../datenschutz.html">Privacy</a> &middot; <a href="../../corrections.html">Corrections</a> &middot; <a href="../../feed.xml">RSS</a> &middot; <a href="mailto:leon.pavesic@gmx.de">Contact</a> &middot; <a href="https://www.linkedin.com/in/leon-pavesic/" rel="me noopener noreferrer" target="_blank">LinkedIn</a> &middot; <a href="https://www.xing.com/profile/Leon_Pavesic" rel="me noopener noreferrer" target="_blank">XING</a></p></div></footer>
+</body>
+</html>

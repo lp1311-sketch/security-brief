@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Weekly M365 &amp; Entra Briefing: 13 to 19 October 2026 | Security Brief</title>
+<meta name="description" content="Exchange sign-in problems after October Windows Server updates, an identity-based incident at ConnectWise that affected Microsoft 365 tenants, and…">
+<meta property="og:site_name" content="Security Brief">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Weekly M365 &amp; Entra Briefing: 13 to 19 October 2026">
+<meta property="og:description" content="Exchange sign-in problems after October Windows Server updates, an identity-based incident at ConnectWise that affected Microsoft 365 tenants, and…">
+<meta name="twitter:card" content="summary">
+<script>(function(){
+var root=document.documentElement,dark=false,saved=null;
+try{saved=localStorage.getItem('sb-theme')}catch(e){}
+dark=saved?saved==='dark':(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches);
+function apply(){root.setAttribute('data-theme',dark?'dark':'light');
+var b=document.getElementById('theme-toggle');
+if(b){b.textContent=dark?'Light mode':'Dark mode';b.setAttribute('aria-pressed',String(dark));}}
+apply();
+document.addEventListener('DOMContentLoaded',function(){
+var b=document.getElementById('theme-toggle');
+if(b){b.addEventListener('click',function(){dark=!dark;try{localStorage.setItem('sb-theme',dark?'dark':'light')}catch(e){}apply();});}
+apply();});
+})();</script>
+<link rel="stylesheet" href="../../style.css">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="Security Brief" href="https://lp1311-sketch.github.io/security-brief/feed.xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap bar">
+<a class="brand" href="../../index.html"><img class="logo-img" src="../../favicon.svg" width="30" height="30" alt="" aria-hidden="true">Security Brief</a>
+<nav class="nav" aria-label="Categories"><a href="../../today/index.html">Today</a><a href="../../saved/index.html">Saved</a><a href="../../category/threats/index.html">Threats</a><a href="../../category/vulnerabilities/index.html">Vulnerabilities</a><a href="../../category/ai/index.html">AI</a><a href="../../category/microsoft/index.html">Microsoft</a><a href="../../stories/index.html">All stories</a><a href="../../briefings/index.html">Analysis</a><a href="../../patch-tuesday/index.html">Patch Tuesday</a></nav>
+<button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false">Dark mode</button>
+</div></header>
+<main id="main" class="wrap">
+<article class="prose"><p class="kicker">Security Analysis &middot; 20 Oct 2026</p><h1>Weekly M365 &amp; Entra Briefing: 13 to 19 October 2026</h1><p class="lede">Exchange sign-in problems after October Windows Server updates, an identity-based incident at ConnectWise that affected Microsoft 365 tenants, and why device-code abuse is still worth a Conditional Access check.</p><h3>What happened</h3>
+<ul><li><strong>Exchange Server after October Windows Server updates.</strong> Microsoft has confirmed that the October Windows Server security updates can break OWA sign-in and mail delivery on some on-premises Exchange Server systems. Microsoft has shared a temporary registry-key workaround while it works on a fix. Source: <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-october-windows-server-updates-cause-exchange-issues/" rel="nofollow noopener noreferrer" target="_blank">Microsoft: October Windows Server updates break Exchange sign-in, mail flow (BleepingComputer, 19 Oct 2026)</a>.</li><li><strong>ConnectWise and Microsoft 365 tenants.</strong> According to The Hacker News and BleepingComputer (18 Oct 2026), unknown threat actors compromised Microsoft 365 tenants in an incident involving ConnectWise. ConnectWise says it has disabled seven of its application identities while the investigation continues. The full scope is not yet public.</li><li><strong>Microsoft on AI agents.</strong> On 19 Oct 2026, the Microsoft Security Blog framed agents as &quot;your newest insiders&quot; whose security has to keep pace with how fast they work. The excerpt is high-level, so treat it as direction rather than a control.</li><li><strong>Device-code phishing remains active as a technique.</strong> Microsoft&#x27;s September 2026 research on device-code phishing (&quot;EvilTokens&quot;) shows how attackers obtain tokens without stealing passwords. Source: <a href="https://www.microsoft.com/en-us/security/blog/2026/09/22/unmasking-eviltokens-getting-to-the-root-of-device-code-phishing/" rel="nofollow noopener noreferrer" target="_blank">Unmasking EvilTokens: getting to the root of device code phishing (Microsoft Security Blog, 22 Sep 2026)</a>.</li></ul>
+<h3>Impact on Microsoft 365 and Entra</h3>
+<ul><li><strong>Confirmed:</strong> the reports describe on-premises Exchange Server systems that installed the October 2026 Windows security updates. They do not describe Exchange Online.</li><li><strong>Likely relevant, not yet confirmed for you:</strong> the ConnectWise incident matters if your tenant has third-party applications or service principals from ConnectWise or similar management tools.</li><li><strong>Unclear:</strong> how the ConnectWise attackers got access, and whether any Microsoft 365 data was accessed. Do not treat either point as known until the vendor or Microsoft confirms it.</li></ul>
+<h3>What I would check this week</h3>
+<p>1. <strong>Exchange on-premises:</strong> send and receive a test message and sign in to OWA with a test account on one server first. Read Microsoft&#x27;s notice before you apply any registry change. Do not change the registry on every server without a test. 2. <strong>Third-party app identities:</strong> in the Entra admin center, go to <strong>Identity → Applications → Enterprise applications</strong>, filter by the vendor name, and review <strong>Sign-in logs</strong> for the application ID. Check <strong>Monitoring &amp; health → Audit logs</strong> for new credentials or consent grants in the last 30 days. 3. <strong>Device-code flow:</strong> in <strong>Protection → Conditional Access → Policies</strong>, check whether a policy blocks the <em>Device code flow</em> authentication flow for users who do not need it. Review the sign-in logs for device-code sign-ins before you block anything, because some legacy tools depend on this flow. 4. <strong>Smart App Control and Outlook Copilot buttons:</strong> only check these if your users are affected. They do not need action on a normal tenant.</p>
+<p>What to leave alone: do not revoke all app consents or all sessions unless you have evidence of misuse. Mass revocation breaks business applications.</p>
+<h3>Confidence</h3>
+<p>Confirmed by the source reports: the Exchange issue and the ConnectWise account action. Likely: the ConnectWise incident has wider impact than the excerpt shows. Speculation: none in this briefing.</p>
+<h3>Sources</h3>
+<ul><li>BleepingComputer, 19 Oct 2026: <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-october-windows-server-updates-cause-exchange-issues/" rel="nofollow noopener noreferrer" target="_blank">Microsoft: October Windows Server updates break Exchange sign-in, mail flow</a></li><li>The Hacker News / BleepingComputer, 18 Oct 2026: ConnectWise suspends cloud backup after attackers compromise Microsoft 365 tenants (original link to be added after review)</li><li>Microsoft Security Blog, 19 Oct 2026: Agents are your newest insiders (original link to be added after review)</li><li>Microsoft Security Blog, 22 Sep 2026: <a href="https://www.microsoft.com/en-us/security/blog/2026/09/22/unmasking-eviltokens-getting-to-the-root-of-device-code-phishing/" rel="nofollow noopener noreferrer" target="_blank">Unmasking EvilTokens</a></li></ul><p class="meta"><a href="index.html">&larr; All Security Analysis</a> &middot; <a href="../../index.html">Home</a></p></article>
+</main>
+<footer class="site-footer"><div class="wrap"><p>&copy; 2026 Leon Pavesic. Design, analysis and texts on this site are protected by copyright. Headlines, short excerpts and images belong to their original publishers and are linked to the source. Not affiliated with any source.</p><p><a href="../../impressum.html">Impressum</a> &middot; <a href="../../datenschutz.html">Privacy</a> &middot; <a href="../../corrections.html">Corrections</a> &middot; <a href="../../feed.xml">RSS</a> &middot; <a href="mailto:leon.pavesic@gmx.de">Contact</a> &middot; <a href="https://www.linkedin.com/in/leon-pavesic/" rel="me noopener noreferrer" target="_blank">LinkedIn</a> &middot; <a href="https://www.xing.com/profile/Leon_Pavesic" rel="me noopener noreferrer" target="_blank">XING</a></p></div></footer>
+</body>
+</html>
