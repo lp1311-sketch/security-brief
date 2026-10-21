@@ -146,3 +146,15 @@ figcaption{font-size:.8rem;color:var(--muted);margin-top:8px}
 .todo h2 a:hover,.todo h2 a:focus-visible{text-decoration:underline;text-underline-offset:3px}
 .todo-action{margin:0 0 8px;font-size:.95rem}
 .todo-kind{display:inline-block;font-size:.7rem;font-weight:760;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin-right:6px}
+
+
+.logo-img{width:30px;height:30px;flex:none;border-radius:8px}
+.brand{gap:10px;font-weight:760;letter-spacing:-.01em}
+.card{transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(2,8,23,.18);border-color:var(--accent)}
+.section-more{margin:14px 0 0;font-size:.92rem}
+.section-more a{font-weight:650;text-decoration:none}
+.section-more a:hover{text-decoration:underline}
+.nav a[aria-current="page"]{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){.card,.card:hover{transition:none;transform:none}}
