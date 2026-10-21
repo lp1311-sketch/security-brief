@@ -1700,6 +1700,27 @@
    "instructions_checked": true
   },
   {
+   "id": "705a2aee0bf3",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "PHP2Shell: Two Unpatched Critical PHP RCE Flaws (CVSS 9.2) Trigger Emergency Security Alert",
+   "link": "https://thehackernews.com/2026/10/php2shell-two-unpatched-critical-php.html",
+   "published": "2026-10-21T04:57:50+00:00",
+   "summary": "PHP will ship an out-of-cycle security release at 14:00 UTC today, October 21, for two critical vulnerabilities that its security team has rated 9.2 on the CVSS v4.0 scale but has not described. Security researchers at watchTowr say the two flaws allow remote code execution. Only the four supported PHP branches, 8.2…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcxq1wmaSTaMiFJnrulXjwGrIIkIHBR3Q9Yv6Lky3rAie6XPOnFmXOVckMgVzGn9yvodrbkt6kV623Ofg8Iw-1MTDRoCVzXPiikivnZ5R7OynIF5-QC0DAiwXq8q2MRS3PZaz9NpjhJUqa-QWi1AQJ2XnJ-nvUNEvG3f1E0UpU5slUwzguAI-cESkZ5Xc/s1600/php2shell.jpg",
+   "cves": [],
+   "first_seen": "2026-10-21T05:56:23.985466+00:00",
+   "instructions": [
+    "The notice says PHP may release earlier \"should details of either vulnerability become public, or should evidence of active exploitation appear in the wild.\"",
+    "The claim that every version since PHP 5 is affected is unconfirmed too: watchTowr's own FAQ on the flaws says that scope \"has not been confirmed by an official vendor advisory\" and that no configuration or feature requirement has been described.",
+    "Where patching cannot be done at once, CERT-EU advises that you \"consider isolating internet-facing applications from public networks until a fix is available.\"",
+    "The release should clarify what the notice withheld: which versions are affected, which part of PHP is involved, whether an attack requires a particular way of running PHP, a configuration, or a login, and how PHP itself describes the flaws."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "4ad529ab6216",
    "source": "thehackernews",
    "source_name": "The Hacker News",
