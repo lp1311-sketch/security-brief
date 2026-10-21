@@ -205,4 +205,21 @@ a.live:hover{color:var(--ink);border-color:var(--crit)}
 .banner-pause{font:inherit;font-size:.74rem;font-weight:650;color:var(--muted);background:none;border:1px solid var(--line);border-radius:999px;padding:4px 10px;cursor:pointer;white-space:nowrap}
 .banner-pause:hover{color:var(--ink);border-color:var(--accent)}
 @media (max-width:640px){.banner-tag{display:none}}
+.nav{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);mask-image:linear-gradient(90deg,#000 88%,transparent);padding-right:28px}
+.banner-action{display:inline-flex;align-items:center;gap:7px;font-size:.76rem;font-weight:700;color:var(--ink);text-decoration:none;border:1px solid color-mix(in srgb,#ef4444 50%,var(--line));border-radius:999px;padding:4px 11px;white-space:nowrap;background:color-mix(in srgb,#ef4444 10%,var(--surface))}
+.banner-action:hover{box-shadow:0 0 16px rgba(239,68,68,.35)}
+.fx-circuit{position:fixed;inset:0;width:100%;height:100%;z-index:0;opacity:.5}
+.fx-circuit path{fill:none;stroke-width:1.2;stroke-dasharray:4 16;animation:flow 22s linear infinite}
+.fx-circuit path.g{stroke:#22c55e}.fx-circuit path.r{stroke:#ef4444}.fx-circuit path.b{stroke:#38bdf8}
+.fx-circuit circle{animation:node 3.2s ease-in-out infinite}
+@keyframes flow{to{stroke-dashoffset:-400}}
+@keyframes node{50%{opacity:.25}}
+.hero{position:relative}
+.hero::after{content:"";position:absolute;left:0;right:0;top:-120px;height:120px;pointer-events:none;background:linear-gradient(180deg,transparent,rgba(94,234,212,.10),transparent);animation:scan 7s linear infinite}
+@keyframes scan{to{transform:translateY(calc(100% + 240px))}}
+.card:hover{box-shadow:0 0 0 1px rgba(34,197,94,.35),0 16px 40px -14px rgba(56,189,248,.45)}
+.card-media img{transition:transform .5s ease}
+.card:hover .card-media img{transform:scale(1.04)}
+.card-media{overflow:hidden}
+@media (prefers-reduced-motion:reduce){.fx-circuit path,.fx-circuit circle,.hero::after{animation:none!important}.fx-circuit path{stroke-dasharray:none}.card-media img{transition:none}.card:hover .card-media img{transform:none}}
 @media (prefers-reduced-motion:reduce){body::before,.orb,.fly,.led,.card::after{animation:none!important;transition:none!important}.fly,.card::after{display:none}}
