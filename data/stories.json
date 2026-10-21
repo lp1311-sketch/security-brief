@@ -1181,26 +1181,6 @@
    "instructions_checked": true
   },
   {
-   "id": "976f4f5fb239",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "title": "Cisco Warns of Active Attacks Exploiting New Critical Secure Email Gateway Vulnerability",
-   "link": "https://thehackernews.com/2026/10/cisco-warns-of-active-attacks.html",
-   "published": "2026-10-14T18:38:56+00:00",
-   "summary": "Attackers are exploiting a critical flaw in Cisco Secure Email Gateway that lets a sender with no login write files to the appliance's operating system, Cisco said in an advisory on Wednesday. The attacker sends an email with a crafted attachment through the gateway and, if it succeeds, could then run commands as…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhh__fSqm3p4u0HNpmeikU6Mo4abprP417Zb3pPW3-6IGrTHwqkbz1CqiuqxL2D0O1PH8J4Ho3_ZpNdJ5VFluIj_KHX6qT0WqZYfHQzyu0cVzGee9EmAZ9pNzsZJZx40UxuKjuz9eNHvuzlMANKOkDr6aRdKWxs8SpJqSi6vDBQTP5ZFgpgqn3Yj2TYNJU/s1600/cisco-0day.jpg",
-   "cves": [],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00",
-   "instructions": [
-    "The File Reputation service, part of the Advanced Malware Protection (AMP) feature that handles attachments, must be enabled and assigned to a mail policy, and the Content Scanner Tools version must be earlier than 25.3.0.5525.",
-    "Attackers are exploiting a critical flaw in Cisco Secure Email Gateway that lets a sender with no login write files to the appliance's operating system, Cisco said in an advisory on Wednesday.",
-    "It also arrives as a Content Scanner Tools update, version 25.3.0.5525 or later, which installs without a software upgrade or a restart.",
-    "The advisory does not say how many devices were attacked, who is behind the attacks, or whether the attackers obtained root on any of them."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "cdc576e64c59",
    "source": "thehackernews",
    "source_name": "The Hacker News",
