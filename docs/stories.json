@@ -156,7 +156,7 @@
   {
    "id": "3d29fe5d9f89",
    "title": "Someone Tried to Exploit PHP2Shell 4 Days Before the Vulnerabilities Were Publicly Disclosed",
-   "summary": "Amazon's Threat Intelligence team on Wednesday said it detected an attempt to exploit the newly disclosed PHP2Shell vulnerabilities on October 17, 2026, against its…",
+   "summary": "Amazon's Threat Intelligence team on Wednesday said it detected an attempt to exploit the newly disclosed PHP2Shell vulnerabilities dating back to October 17, 2026…",
    "priority": "High",
    "category": "Patch Radar",
    "date": "22 Oct 2026, 06:34 UTC",
@@ -192,6 +192,22 @@
    ],
    "sources": "The Hacker News",
    "url": "story/f6fe2f9557b7.html"
+  },
+  {
+   "id": "a45e553ca30b",
+   "title": "ThreatsDay: AI Secrets Leak, PingCAP Source Theft, Signal Hang-Up Flaw, Laravel Auth Bypass + 21 More",
+   "summary": "This week has already been rough for cybersecurity. Critical PHP and GitLab RCE flaws, serious Linux security bugs, compromised eMudhra certificates, a Node.js RCE flaw…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "22 Oct 2026, 17:45 UTC",
+   "priority_score": 5,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "The Hacker News",
+   "url": "story/a45e553ca30b.html"
   },
   {
    "id": "2a5b06ac5090",
@@ -528,22 +544,6 @@
    "url": "story/a9726704f0fa.html"
   },
   {
-   "id": "71f0485320c6",
-   "title": "CISA: Hackers chain Plex flaws in Plex2Shell attacks to breach servers",
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) is warning that attackers are actively exploiting four vulnerabilities in Plex Media Server.",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "21 Oct 2026, 18:34 UTC",
-   "priority_score": 4,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "BleepingComputer",
-   "url": "story/71f0485320c6.html"
-  },
-  {
    "id": "bf2645506057",
    "title": "PHP says AI review of critical bugs first sparked alarm in August, but signs surfaced in 2024",
    "summary": "In a lengthy statement about two critical vulnerabilities, the PHP Foundation explained how one dated to 2024, how a recent third-party review by AI companies heightened…",
@@ -820,38 +820,20 @@
    "url": "story/04b5c5ae9150.html"
   },
   {
-   "id": "80aac9868cd3",
-   "title": "AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise",
-   "summary": "As early as September 2026, Storm-0940, a China-state aligned actor, used the agentic AI penetration testing framework ARTEX to automate attacks targeting hundreds of…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "21 Oct 2026, 18:23 UTC",
-   "priority_score": 3,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "ai"
-   ],
-   "kev": [],
-   "sources": "Microsoft Security Blog",
-   "url": "story/80aac9868cd3.html"
-  },
-  {
-   "id": "f5335e20393b",
-   "title": "LiteLLM Compromised in Supply Chain Attack Delivering Credential Stealer and Backdoor",
-   "summary": "The popular LiteLLM Python package has been compromised as part of a software supply chain attack that delivered a credential stealer and a backdoor, according to…",
+   "id": "71f0485320c6",
+   "title": "CISA: Hackers chain Plex flaws in Plex2Shell attacks to breach servers",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) is warning that attackers are actively exploiting four vulnerabilities in Plex Media Server.",
    "priority": "Standard",
    "category": "Attacks & Breaches",
-   "date": "21 Oct 2026, 18:01 UTC",
+   "date": "21 Oct 2026, 18:34 UTC",
    "priority_score": 3,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
    "tags": [],
    "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/f5335e20393b.html"
+   "sources": "BleepingComputer",
+   "url": "story/71f0485320c6.html"
   },
   {
    "id": "6478f5844cef",
@@ -1002,22 +984,6 @@
    "kev": [],
    "sources": "The Record",
    "url": "story/6203e915296a.html"
-  },
-  {
-   "id": "29ac1c4b3b83",
-   "title": "23andMe successor settles with California for $6 million over cybersecurity failings",
-   "summary": "California Attorney General Rob Bonta announced a settlement under which 23andMe's successor will pay $6 million to resolve allegations that the company did not properly…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "20 Oct 2026, 18:32 UTC",
-   "priority_score": 3,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "The Record",
-   "url": "story/29ac1c4b3b83.html"
   },
   {
    "id": "0dfa738d1635",
@@ -1341,6 +1307,38 @@
    "url": "story/a094aa58c0da.html"
   },
   {
+   "id": "f74ce17a74d9",
+   "title": "eMudhra to Exit Global SSL/TLS Business After 8 Intermediate CA Keys Found Easily Guessable",
+   "summary": "eMudhra, an Indian certificate authority (CA), will withdraw from its global SSL/TLS certificate business, its board decided on Thursday. The decision came five days…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "22 Oct 2026, 18:12 UTC",
+   "priority_score": 2,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "The Hacker News",
+   "url": "story/f74ce17a74d9.html"
+  },
+  {
+   "id": "eebdb3f4f6ae",
+   "title": "Two CVSS 9.0 Linux KSMBD RCE Flaws Disclosed on Public Mailing Lists Before Kernel Fixes",
+   "summary": "Linux servers running KSMBD, the kernel's built-in SMB server, are exposed to two publicly reported remote code execution flaws rated 9.0 by Trend Micro's Zero Day…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "22 Oct 2026, 17:01 UTC",
+   "priority_score": 2,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "The Hacker News",
+   "url": "story/eebdb3f4f6ae.html"
+  },
+  {
    "id": "6b7369ef168a",
    "title": "Meta Ordered to Pay $25 Billion After Court Finds 43 Million Privacy Violations",
    "summary": "Social media giant Meta was ordered to pay 25 billion in penalties by a New Mexico court on Wednesday as part of a data privacy lawsuit that sprang from the company's…",
@@ -1645,20 +1643,38 @@
    "url": "story/548b69cacce8.html"
   },
   {
-   "id": "14b2da242e2e",
-   "title": "Democrat lawmakers say Russia is aiming to undermine party ahead of midterms",
-   "summary": "The pair stressed the latest update showed no country is pursuing the technically challenging effort to interfere with or hack into the country’s election infrastructure…",
+   "id": "80aac9868cd3",
+   "title": "AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise",
+   "summary": "As early as September 2026, Storm-0940, a China-state aligned actor, used the agentic AI penetration testing framework ARTEX to automate attacks targeting hundreds of…",
    "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "21 Oct 2026, 18:28 UTC",
+   "category": "AI Risk Lab",
+   "date": "21 Oct 2026, 18:23 UTC",
+   "priority_score": 2,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "ai"
+   ],
+   "kev": [],
+   "sources": "Microsoft Security Blog",
+   "url": "story/80aac9868cd3.html"
+  },
+  {
+   "id": "f5335e20393b",
+   "title": "LiteLLM Compromised in Supply Chain Attack Delivering Credential Stealer and Backdoor",
+   "summary": "The popular LiteLLM Python package has been compromised as part of a software supply chain attack that delivered a credential stealer and a backdoor, according to…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "21 Oct 2026, 18:01 UTC",
    "priority_score": 2,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
    "tags": [],
    "kev": [],
-   "sources": "The Record",
-   "url": "story/14b2da242e2e.html"
+   "sources": "The Hacker News",
+   "url": "story/f5335e20393b.html"
   },
   {
    "id": "a124b567afcf",
@@ -1851,6 +1867,22 @@
    "kev": [],
    "sources": "BleepingComputer, Dark Reading",
    "url": "story/7a020fdc3830.html"
+  },
+  {
+   "id": "29ac1c4b3b83",
+   "title": "23andMe successor settles with California for $6 million over cybersecurity failings",
+   "summary": "California Attorney General Rob Bonta announced a settlement under which 23andMe's successor will pay $6 million to resolve allegations that the company did not properly…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "20 Oct 2026, 18:32 UTC",
+   "priority_score": 2,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "The Record",
+   "url": "story/29ac1c4b3b83.html"
   },
   {
    "id": "53ddecf9f5b1",
@@ -2258,6 +2290,22 @@
    "url": "story/3f1030ed0e26.html"
   },
   {
+   "id": "14b2da242e2e",
+   "title": "Democrat lawmakers say Russia is aiming to undermine party ahead of midterms",
+   "summary": "The pair stressed the latest update showed no country is pursuing the technically challenging effort to interfere with or hack into the country’s election infrastructure…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "21 Oct 2026, 18:28 UTC",
+   "priority_score": 1,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "The Record",
+   "url": "story/14b2da242e2e.html"
+  },
+  {
    "id": "288893f63679",
    "title": "OpenAI agents disabled safety monitoring, one lied about it",
    "summary": "OpenAI agents powered by the GPT-6.1 Sol and GPT-6 Astra models weakened misalignment monitoring during two internal tasks, interpreting coding instructions as…",
@@ -2534,24 +2582,6 @@
    "kev": [],
    "sources": "Dark Reading",
    "url": "story/2364e99b6bb5.html"
-  },
-  {
-   "id": "2bcaf37a740b",
-   "title": "OpenAI says GPT-6.1 Sol is dramatically better at migrating legacy code",
-   "summary": "OpenAI confirmed that its newer models are much better at writing and migrating software in older programming languages.",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "20 Oct 2026, 18:11 UTC",
-   "priority_score": 1,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "ai"
-   ],
-   "kev": [],
-   "sources": "BleepingComputer",
-   "url": "story/2bcaf37a740b.html"
   },
   {
    "id": "f7a865abe770",
@@ -3350,6 +3380,24 @@
    "kev": [],
    "sources": "BleepingComputer",
    "url": "story/6c8051f534fe.html"
+  },
+  {
+   "id": "2bcaf37a740b",
+   "title": "OpenAI says GPT-6.1 Sol is dramatically better at migrating legacy code",
+   "summary": "OpenAI confirmed that its newer models are much better at writing and migrating software in older programming languages.",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "20 Oct 2026, 18:11 UTC",
+   "priority_score": 0,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "ai"
+   ],
+   "kev": [],
+   "sources": "BleepingComputer",
+   "url": "story/2bcaf37a740b.html"
   },
   {
    "id": "1b377ec74e5f",
@@ -4206,22 +4254,6 @@
    "kev": [],
    "sources": "The Hacker News",
    "url": "story/986cc714fb42.html"
-  },
-  {
-   "id": "b14fd868476b",
-   "title": "Hackers hijack D-Link, Ubiquiti devices to resell your stolen bandwidth",
-   "summary": "A proxyjacking campaign has impacted devices in 34 countries, monetizing victims' internet connections through a commercial residential proxy network.",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "15 Oct 2026, 18:20 UTC",
-   "priority_score": 0,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "BleepingComputer",
-   "url": "story/b14fd868476b.html"
   }
  ]
 }
