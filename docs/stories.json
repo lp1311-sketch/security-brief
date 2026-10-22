@@ -60,29 +60,6 @@
    "url": "story/9b69347cfd29.html"
   },
   {
-   "id": "0d304799e621",
-   "title": "Qilin and INC Ransomware Groups Exploit Palo Alto Networks Flaw to Bypass MFA",
-   "summary": "Palo Alto Networks has disclosed that it's continuing to observe exploitation of a now-patched security flaw impacting PAN-OS and Prisma Access by ransomware actors. The…",
-   "priority": "Critical",
-   "category": "Patch Radar",
-   "date": "20 Oct 2026, 15:32 UTC",
-   "priority_score": 9,
-   "priority_basis": [
-    "CISA KEV listing: CVE-2026-0257"
-   ],
-   "tags": [
-    "critical",
-    "exploited",
-    "patch-now",
-    "microsoft"
-   ],
-   "kev": [
-    "CVE-2026-0257"
-   ],
-   "sources": "The Hacker News",
-   "url": "story/0d304799e621.html"
-  },
-  {
    "id": "5f2ddb413304",
    "title": "'PHP2Shell' Bugs Signal Red Alert for Security Industry",
    "summary": "Security teams are scrambling to remediate two critical PHP vulnerabilities following leaked details and reports of exploitation attempts.",
@@ -100,6 +77,29 @@
    "kev": [],
    "sources": "Dark Reading",
    "url": "story/5f2ddb413304.html"
+  },
+  {
+   "id": "0d304799e621",
+   "title": "Qilin and INC Ransomware Groups Exploit Palo Alto Networks Flaw to Bypass MFA",
+   "summary": "Palo Alto Networks has disclosed that it's continuing to observe exploitation of a now-patched security flaw impacting PAN-OS and Prisma Access by ransomware actors. The…",
+   "priority": "Critical",
+   "category": "Patch Radar",
+   "date": "20 Oct 2026, 15:32 UTC",
+   "priority_score": 8,
+   "priority_basis": [
+    "CISA KEV listing: CVE-2026-0257"
+   ],
+   "tags": [
+    "critical",
+    "exploited",
+    "patch-now",
+    "microsoft"
+   ],
+   "kev": [
+    "CVE-2026-0257"
+   ],
+   "sources": "The Hacker News",
+   "url": "story/0d304799e621.html"
   },
   {
    "id": "190252fca79a",
@@ -358,6 +358,40 @@
    ],
    "sources": "The Hacker News",
    "url": "story/5fc8c6dd8c54.html"
+  },
+  {
+   "id": "0563a66ccd63",
+   "title": "Microsoft shares how to fix broken Exchange Online EWS apps",
+   "summary": "Microsoft says IT admins can re-enable the retired Exchange Web Services (EWS) API in Exchange Online to fix EWS apps that have stopped working.",
+   "priority": "Standard",
+   "category": "Microsoft",
+   "date": "22 Oct 2026, 15:49 UTC",
+   "priority_score": 4,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "microsoft"
+   ],
+   "kev": [],
+   "sources": "BleepingComputer",
+   "url": "story/0563a66ccd63.html"
+  },
+  {
+   "id": "c625905b3719",
+   "title": "Hackers got a four-day head start on epic PHP2Shell vulnerability",
+   "summary": "Amazon has warned that vulnerabilities in a programming language that underpins much of the Internet, discovered using AI tools, are being “broadly exploited” as…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "22 Oct 2026, 15:25 UTC",
+   "priority_score": 4,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "Ars Technica Security",
+   "url": "story/c625905b3719.html"
   },
   {
    "id": "14aa600d7f56",
@@ -964,40 +998,6 @@
    "kev": [],
    "sources": "The Record",
    "url": "story/29ac1c4b3b83.html"
-  },
-  {
-   "id": "53ddecf9f5b1",
-   "title": "Critical FortiSIEM Flaw Gets Public Exploit PoC for Unauthenticated Remote Code Execution",
-   "summary": "Cybersecurity researchers have released a proof-of-concept (PoC) exploit for a recently patched critical security flaw impacting Fortinet FortiSIEM that could result in…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "20 Oct 2026, 15:38 UTC",
-   "priority_score": 3,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/53ddecf9f5b1.html"
-  },
-  {
-   "id": "dff178c340ad",
-   "title": "Close Identity Gaps in Software Development Before Unleashing AI",
-   "summary": "Artificial intelligence is complicating security in the software development life cycle, but a Dark Reading roundtable found collaboration, better identity visibility…",
-   "priority": "Standard",
-   "category": "Microsoft",
-   "date": "20 Oct 2026, 15:35 UTC",
-   "priority_score": 3,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "microsoft"
-   ],
-   "kev": [],
-   "sources": "Dark Reading",
-   "url": "story/dff178c340ad.html"
   },
   {
    "id": "0dfa738d1635",
@@ -1643,38 +1643,6 @@
    "url": "story/288893f63679.html"
   },
   {
-   "id": "b716aa6739b4",
-   "title": "Optiv Launches CyberBOT Cybersecurity Awareness Training Program",
-   "summary": "Hands-on sessions provide educators, nonprofits, and community leaders with an accessible resource to foster year-round cyber awareness and build more resilient…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "21 Oct 2026, 15:44 UTC",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "Dark Reading",
-   "url": "story/b716aa6739b4.html"
-  },
-  {
-   "id": "ce8b3bbcd62b",
-   "title": "Survey Finds High-Profile Executives Feel Untouchable as Digital Exposure Turns Into Physical Risk",
-   "summary": "360 Privacy finds more than 8 in 10 security and wealth professionals say cybersecurity and physical security can no longer be separated.",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "21 Oct 2026, 15:29 UTC",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "Dark Reading",
-   "url": "story/ce8b3bbcd62b.html"
-  },
-  {
    "id": "a45dacf80c10",
    "title": "‘Context Bombs’ Cut AI Attack Success by Misleading Agents With Fake Targets",
    "summary": "Deceptive prompts lure AI agents into decoys and dead ends, cutting attack success by up to 91% in tests and raising the cost of a successful attack 23-fold. The post…",
@@ -1833,22 +1801,38 @@
    "url": "story/7a020fdc3830.html"
   },
   {
-   "id": "f7a865abe770",
-   "title": "US Agencies Detail Incident Response Practices for Rogue AI Agents",
-   "summary": "NIST, CISA and NSA share ten voluntary practices for preparing for, detecting, responding to, recovering from, and reporting rogue AI agent incidents. The post US…",
+   "id": "53ddecf9f5b1",
+   "title": "Critical FortiSIEM Flaw Gets Public Exploit PoC for Unauthenticated Remote Code Execution",
+   "summary": "Cybersecurity researchers have released a proof-of-concept (PoC) exploit for a recently patched critical security flaw impacting Fortinet FortiSIEM that could result in…",
    "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "20 Oct 2026, 15:45 UTC",
+   "category": "Patch Radar",
+   "date": "20 Oct 2026, 15:38 UTC",
+   "priority_score": 2,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "The Hacker News",
+   "url": "story/53ddecf9f5b1.html"
+  },
+  {
+   "id": "dff178c340ad",
+   "title": "Close Identity Gaps in Software Development Before Unleashing AI",
+   "summary": "Artificial intelligence is complicating security in the software development life cycle, but a Dark Reading roundtable found collaboration, better identity visibility…",
+   "priority": "Standard",
+   "category": "Microsoft",
+   "date": "20 Oct 2026, 15:35 UTC",
    "priority_score": 2,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
    "tags": [
-    "ai"
+    "microsoft"
    ],
    "kev": [],
-   "sources": "SecurityWeek",
-   "url": "story/f7a865abe770.html"
+   "sources": "Dark Reading",
+   "url": "story/dff178c340ad.html"
   },
   {
    "id": "0db72c8bc263",
@@ -2240,6 +2224,38 @@
    "url": "story/bd81f57064bf.html"
   },
   {
+   "id": "b716aa6739b4",
+   "title": "Optiv Launches CyberBOT Cybersecurity Awareness Training Program",
+   "summary": "Hands-on sessions provide educators, nonprofits, and community leaders with an accessible resource to foster year-round cyber awareness and build more resilient…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "21 Oct 2026, 15:44 UTC",
+   "priority_score": 1,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "Dark Reading",
+   "url": "story/b716aa6739b4.html"
+  },
+  {
+   "id": "ce8b3bbcd62b",
+   "title": "Survey Finds High-Profile Executives Feel Untouchable as Digital Exposure Turns Into Physical Risk",
+   "summary": "360 Privacy finds more than 8 in 10 security and wealth professionals say cybersecurity and physical security can no longer be separated.",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "21 Oct 2026, 15:29 UTC",
+   "priority_score": 1,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "Dark Reading",
+   "url": "story/ce8b3bbcd62b.html"
+  },
+  {
    "id": "2ee4d03f1bea",
    "title": "Russian hackers teamed up to wipe data at Ukrainian grain firm",
    "summary": "The Russian state-linked hacking group Sandworm collaborated with another threat actor to carry out a destructive cyberattack against a Ukrainian grain logistics company…",
@@ -2518,20 +2534,22 @@
    "url": "story/1530955429aa.html"
   },
   {
-   "id": "37743d55fc6d",
-   "title": "WordPress Plugins Updraft und Rank Math PRO kompromittiert",
-   "summary": "Zwei Meldungen zu kompromittierten Plugins für WordPress, die mich die Tage erreicht haben. Ein Leser hat mich informiert, dass das Plugin Updraft kompromittiert sei…",
+   "id": "f7a865abe770",
+   "title": "US Agencies Detail Incident Response Practices for Rogue AI Agents",
+   "summary": "NIST, CISA and NSA share ten voluntary practices for preparing for, detecting, responding to, recovering from, and reporting rogue AI agent incidents. The post US…",
    "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "20 Oct 2026, 15:53 UTC",
+   "category": "AI Risk Lab",
+   "date": "20 Oct 2026, 15:45 UTC",
    "priority_score": 1,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
-   "tags": [],
+   "tags": [
+    "ai"
+   ],
    "kev": [],
-   "sources": "Born's IT and Windows Blog",
-   "url": "story/37743d55fc6d.html"
+   "sources": "SecurityWeek",
+   "url": "story/f7a865abe770.html"
   },
   {
    "id": "91169d021095",
@@ -3312,6 +3330,22 @@
    "kev": [],
    "sources": "BleepingComputer",
    "url": "story/6c8051f534fe.html"
+  },
+  {
+   "id": "37743d55fc6d",
+   "title": "WordPress Plugins Updraft und Rank Math PRO kompromittiert",
+   "summary": "Zwei Meldungen zu kompromittierten Plugins für WordPress, die mich die Tage erreicht haben. Ein Leser hat mich informiert, dass das Plugin Updraft kompromittiert sei…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "20 Oct 2026, 15:53 UTC",
+   "priority_score": 0,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "Born's IT and Windows Blog",
+   "url": "story/37743d55fc6d.html"
   },
   {
    "id": "4cce5b0679d6",
