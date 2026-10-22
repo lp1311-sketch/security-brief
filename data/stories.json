@@ -338,6 +338,28 @@
    "instructions_checked": true
   },
   {
+   "id": "222dfd34d31c",
+   "source": "borncity",
+   "source_name": "Born's IT and Windows Blog",
+   "official": false,
+   "source_type": "news",
+   "title": "Windows Server 2025 unterstützt nun Quick Machine Recovery",
+   "link": "https://borncity.com/blog/2026/10/23/windows-server-2025-unterstuetzt-nun-quick-machine-recovery/",
+   "published": "2026-10-22T22:01:30+00:00",
+   "summary": "Kurzer Nachtrag vom Oktober 2026-Patchday bei Microsoft. Redmond hat zum 13. Oktober 2026 mit den Sicherheitsupdates auch eine Funktion namens \"Quick Machine Recovery\" für Windows Server 2025 ausgeliefert. Damit soll eine schnelle Systemwiederherstellung beim Bootproblemen möglich werden. Windows Server 2025 Update ……",
+   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Windows-klein.jpg",
+   "cves": [],
+   "first_seen": "2026-10-22T23:50:47.814045+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Oktober 2026 (zweiter Dienstag im Monat, Patchday bei Microsoft) wurde für Windows Server 2025 das kumulative Update KB5126646 freigegeben, welches Sicherheitspatches und diverse Fixes beinhaltet.",
+    "During outages, Quick machine recovery helps recover devices from critical boot failures by using Windows Recovery Environment (WinRE) to find and apply targeted remediations from Windows Update.",
+    "Administrators can enable the feature through Group Policy to support streamlined recovery during widespread outages and reduce the need for manual intervention.",
+    "Dazu bootet die Maschine in die Windows-Wiederherstellungsumgebung (WinRE) und versucht von dort aus gezielte Korrekturmaßnahmen aus Windows Update zu suchen und anzuwenden."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "7682e78b0695",
    "source": "grahamcluley",
    "source_name": "Graham Cluley",
