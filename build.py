@@ -41,7 +41,7 @@ CATEGORIES = {
     "vulnerabilities": ("Patch Radar", r"vulnerab|\bcve-|patch|exploit|flaw|\brce\b|zero-day|0-day|security update"),
     "ai": ("AI Risk Lab", r"\bai\b|\bllm|copilot|chatgpt|openai|anthropic|gemini|deepfake|generative|ai agent|ai model"),
     "microsoft": ("Microsoft", r"microsoft|windows|exchange|sharepoint|teams|office 365|m365|outlook|defender|azure|entra|azure ad|conditional access|\bmfa\b|tenant|identity|sign-in|oauth"),
-    "general": ("Germany & BSI", r"$^"),  # fallback, never matches
+    "general": ("Industry & Research", r"$^"),  # fallback for stories without a clear category
 }
 CATEGORY_ORDER = ["threats", "vulnerabilities", "ai", "microsoft", "general"]  # rendering order
 # Scoring order: ties go to the first entry (AI before vulnerabilities before threats).
@@ -1137,9 +1137,10 @@ def _donate(site_cfg: dict) -> str:
         return ""
     items = "".join(f'<li><a class="donate-btn" href="{esc(url)}" rel="noopener noreferrer" target="_blank">'
                     f'{esc(label)} &rarr;</a></li>' for label, url in links)
+    text = str(site_cfg.get("donation_text") or
+               "Security Brief is free to read. Donations are voluntary and do not change what is covered.")
     return ('<section class="support" aria-labelledby="support-title"><h2 id="support-title">Support this site</h2>'
-            '<p class="summary">Security Brief is free to read. Voluntary support helps cover hosting and tools. '
-            'Donations do not buy coverage, and every briefing stays free.</p>'
+            f'<p class="summary">{esc(text)}</p>'
             f'<ul class="donate-grid">{items}</ul></section>')
 
 
@@ -2089,7 +2090,7 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
                      s["score"], s["image"], [x["url"] for x in s["sources"]]] for s in stories],
         "articles": [[a["section"], a["slug"], a["title"], a["date"], a["summary"], a["_md"]] for a in articles],
         "site": site_cfg,
-        "render": "5.25",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
+        "render": "5.26",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
     }, ensure_ascii=False, sort_keys=True)
     if fixtures is None:
         check_source_links(stories, data_file.parent / "linkcheck.json", now)
