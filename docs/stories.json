@@ -42,6 +42,24 @@
    "url": "story/23872cb1986e.html"
   },
   {
+   "id": "778da97616c1",
+   "title": "Microsoft Links Storm-0940 to ConnectWise Supply Chain Attack",
+   "summary": "The China-linked actor used an AI-enabled penetration-testing tool to automate and accelerate its attack on more than 2,200 tenants.",
+   "priority": "High",
+   "category": "Microsoft",
+   "date": "22 Oct 2026, 20:42 UTC",
+   "priority_score": 11,
+   "priority_basis": [
+    "Editorial attention score 11 reached the High threshold (not CVSS)"
+   ],
+   "tags": [
+    "microsoft"
+   ],
+   "kev": [],
+   "sources": "Dark Reading, The Hacker News, The Record, BleepingComputer",
+   "url": "story/778da97616c1.html"
+  },
+  {
    "id": "ab875104cf16",
    "title": "New Serious PHP Vulnerabilities Released and Patched",
    "summary": "PHP maintainers have released fixes for two critical vulnerabilities: PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35 fix two critical vulnerabilities that can allow…",
@@ -59,24 +77,6 @@
    "kev": [],
    "sources": "Schneier on Security, Born's IT and Windows Blog, SecurityWeek, KrebsOnSecurity, BleepingComputer",
    "url": "story/ab875104cf16.html"
-  },
-  {
-   "id": "9b69347cfd29",
-   "title": "China-Linked Hackers Use ARTEX AI Agents in ConnectWise Supply Chain Attack",
-   "summary": "Microsoft on Wednesday disclosed that a China state-aligned actor dubbed Storm-0940 was behind the recent supply chain compromise of the ConnectWise Cloud Backup…",
-   "priority": "High",
-   "category": "Attacks & Breaches",
-   "date": "22 Oct 2026, 04:21 UTC",
-   "priority_score": 10,
-   "priority_basis": [
-    "Editorial attention score 10 reached the High threshold (not CVSS)"
-   ],
-   "tags": [
-    "microsoft"
-   ],
-   "kev": [],
-   "sources": "The Hacker News, The Record, BleepingComputer",
-   "url": "story/9b69347cfd29.html"
   },
   {
    "id": "d078ae182673",
@@ -297,6 +297,24 @@
    "kev": [],
    "sources": "Microsoft Security Response Center",
    "url": "story/4dbd6628d42d.html"
+  },
+  {
+   "id": "a9a8f75e73bb",
+   "title": "CVE-2026-96303 Microsoft PowerShell Security Feature Bypass Vulnerability",
+   "summary": "Corrected Fixed Build Number and Download links in the Security Updates table. This is an informational change only.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "22 Oct 2026, 14:00 UTC",
+   "priority_score": 5,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "microsoft"
+   ],
+   "kev": [],
+   "sources": "Microsoft Security Response Center",
+   "url": "story/a9a8f75e73bb.html"
   },
   {
    "id": "1d3516a0d0a6",
@@ -561,24 +579,6 @@
    "kev": [],
    "sources": "SecurityWeek",
    "url": "story/a5298e0f95bc.html"
-  },
-  {
-   "id": "832124389031",
-   "title": "Google Chrome adds Gemini-powered scam detection, warns users of ClickFix attacks",
-   "summary": "Chrome is getting new scam protections that use Gemini to detect deceptive websites and warn users when they copy suspicious commands from ClickFix attacks.",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "21 Oct 2026, 22:16 UTC",
-   "priority_score": 4,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "ai"
-   ],
-   "kev": [],
-   "sources": "BleepingComputer, SecurityWeek, The Hacker News",
-   "url": "story/832124389031.html"
   },
   {
    "id": "7bcbd743c3f7",
@@ -871,6 +871,24 @@
    "kev": [],
    "sources": "Graham Cluley",
    "url": "story/7682e78b0695.html"
+  },
+  {
+   "id": "832124389031",
+   "title": "Google Chrome adds Gemini-powered scam detection, warns users of ClickFix attacks",
+   "summary": "Chrome is getting new scam protections that use Gemini to detect deceptive websites and warn users when they copy suspicious commands from ClickFix attacks.",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "21 Oct 2026, 22:16 UTC",
+   "priority_score": 3,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "ai"
+   ],
+   "kev": [],
+   "sources": "BleepingComputer, SecurityWeek, The Hacker News",
+   "url": "story/832124389031.html"
   },
   {
    "id": "a9726704f0fa",
@@ -1312,7 +1330,7 @@
   {
    "id": "49672d89136f",
    "title": "Disgraced eMudhra drops out of TLS business after using cert private key of 4",
-   "summary": "eMudra, the certificate authority that issued eight intermediate TLS credentials so weak that anyone could mint certificates for any website or mail server—one had a…",
+   "summary": "eMudhra, the certificate authority that issued eight intermediate TLS credentials so weak that anyone could mint certificates for any website or mail server—one had a…",
    "priority": "Standard",
    "category": "Industry & Research",
    "date": "22 Oct 2026, 20:17 UTC",
@@ -1628,22 +1646,6 @@
    "kev": [],
    "sources": "The Hacker News",
    "url": "story/eff3ebf7d52f.html"
-  },
-  {
-   "id": "ca191a78820b",
-   "title": "Kompromittierte AOMEI Update-Server lieferten von Mai bis Juni 2026 Malware",
-   "summary": "Noch ein Nachtrag von Montag, zu dem ich erst jetzt komme. Es gibt Berichte, dass die Update-Server des Backup-Anbieters AOMEI durch Angreifer kompromittiert waren. Den…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "21 Oct 2026, 22:01 UTC",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "Born's IT and Windows Blog",
-   "url": "story/ca191a78820b.html"
   },
   {
    "id": "e9fd60a700e2",
@@ -2357,20 +2359,20 @@
    "url": "story/7e8ace9d42e7.html"
   },
   {
-   "id": "3f1030ed0e26",
-   "title": "SecTor 2026 Reveals a Rapidly Shifting Cybersecurity Landscape",
-   "summary": "The event closed in Toronto last week, with experts sharing critical perspectives on emerging risks, drawing record attendance and marking 22% growth.",
+   "id": "ca191a78820b",
+   "title": "Kompromittierte AOMEI Update-Server lieferten von Mai bis Juni 2026 Malware",
+   "summary": "Noch ein Nachtrag von Montag, zu dem ich erst jetzt komme. Es gibt Berichte, dass die Update-Server des Backup-Anbieters AOMEI durch Angreifer kompromittiert waren. Den…",
    "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "15 Oct 2026, 22:10 UTC",
-   "priority_score": 2,
+   "category": "Attacks & Breaches",
+   "date": "21 Oct 2026, 22:01 UTC",
+   "priority_score": 1,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
    "tags": [],
    "kev": [],
-   "sources": "Dark Reading",
-   "url": "story/3f1030ed0e26.html"
+   "sources": "Born's IT and Windows Blog",
+   "url": "story/ca191a78820b.html"
   },
   {
    "id": "3371acd3dcb3",
