@@ -1969,6 +1969,10 @@ def write_site(out: Path, stories: list[dict], cfg: dict, now: datetime, status:
     resource_pdf = ROOT / "m365-identity-incident-triage-checklist.pdf"
     if resource_pdf.is_file():
         shutil.copyfile(resource_pdf, out / resource_pdf.name)
+    # Google Search Console HTML-file verification must be present at the public site root.
+    verification_file = ROOT / "google06dce61680795c6c.html"
+    if verification_file.is_file():
+        shutil.copyfile(verification_file, out / verification_file.name)
     (out / "logo.svg").write_text(LOGO_SVG, encoding="utf-8")
     (out / "index.html").write_text(index_page(stories, cfg, now, status, articles, site_cfg), encoding="utf-8")
     (out / "today").mkdir(parents=True, exist_ok=True)
