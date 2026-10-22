@@ -1908,24 +1908,8 @@ def index_page(stories: list[dict], cfg: dict, now: datetime, status: dict,
         f'<div class="stat"><b>{status.get("sources_total", 0)}</b><span>sources monitored</span></div>'
         "</div>",
     ]
-    if articles:
-        parts.append(
-            '<section class="section" id="analysis"><h2>From the analysis desk</h2><div class="grid">'
-            + "".join(_article_card(a, f"{a['section']}/{a['slug']}.html") for a in articles[:3])
-            + '</div><p class="analysis-links meta"><a href="briefings/index.html">All analysis</a> &middot; '
-            '<a href="patch-tuesday/index.html">All Patch Tuesday notes</a></p></section>'
-        )
-    parts.append(
-        '<section class="section" id="free-downloads" aria-labelledby="free-download-title">'
-        '<h2 id="free-download-title">Free field guide</h2>'
-        '<article class="card resource-card"><div class="card-body">'
-        '<p class="card-kicker">PRINTABLE WORKSHEET &middot; VERSION 1.0</p>'
-        '<h3>Microsoft 365 Identity Incident Triage</h3>'
-        '<p class="summary">Evidence-first checks for suspicious sign-ins, Entra audit activity, app access, mailbox persistence, containment and verification.</p>'
-        '<p class="meta">3 pages &middot; Updated 22 October 2026 &middot; Includes Microsoft Learn references</p>'
-        '<a class="btn" href="m365-identity-incident-triage-checklist.pdf" download>Download the free PDF &rarr;</a>'
-        '</div></article></section>'
-    )
+    # Keep a single Buy Me a Coffee block after the overview; retain its configured QR code.
+    parts.append(_donate(site_cfg))
     if not stories:
         parts.append('<div class="empty">No news stories yet. The next automated check will fill this page.</div>')
     else:
@@ -1944,11 +1928,27 @@ def index_page(stories: list[dict], cfg: dict, now: datetime, status: dict,
             parts.append(f'<section class="section" id="{cid}" data-section><h2>{esc(CATEGORIES[cid][0])}</h2>'
                          '<div class="grid">' + "".join(_card(s) for s in items) + "</div>"
                          f'<p class="section-more"><a href="category/{cid}/index.html">All {total} {esc(CATEGORIES[cid][0])} stories &rarr;</a></p></section>')
-    # Editorial modules intentionally sit after the live news feed, before the footer.
-    if articles:
-        pass
-    parts.append(_donate(site_cfg))
+    # Editorial modules sit after the live feed and directly before the footer area.
+    parts.append(
+        '<section class="section" id="free-downloads" aria-labelledby="free-download-title">'
+        '<h2 id="free-download-title">Free field guide</h2>'
+        '<article class="card resource-card"><div class="card-body">'
+        '<p class="card-kicker">PRINTABLE WORKSHEET &middot; VERSION 1.0</p>'
+        '<h3>Microsoft 365 Identity Incident Triage</h3>'
+        '<p class="summary">Evidence-first checks for suspicious sign-ins, Entra audit activity, app access, mailbox persistence, containment and verification.</p>'
+        '<p class="meta">3 pages &middot; Updated 22 October 2026 &middot; Includes Microsoft Learn references</p>'
+        '<a class="btn" href="m365-identity-incident-triage-checklist.pdf" download>Download the free PDF &rarr;</a>'
+        '</div></article></section>'
+    )
+    # Newsletter and original analysis follow the full news feed; analysis is the final module before the footer.
     parts.append(_newsletter(site_cfg, ""))
+    if articles:
+        parts.append(
+            '<section class="section" id="analysis"><h2>From the analysis desk</h2><div class="grid">'
+            + "".join(_article_card(a, f"{a['section']}/{a['slug']}.html") for a in articles[:3])
+            + '</div><p class="analysis-links meta"><a href="briefings/index.html">All analysis</a> &middot; '
+            '<a href="patch-tuesday/index.html">All Patch Tuesday notes</a></p></section>'
+        )
     parts.append("<script>" + FEED_STATUS_JS + "</script>")
     return _layout(cfg, "Home", "Ranked cybersecurity news with links to original sources.", "\n".join(parts), "")
 
@@ -2348,7 +2348,7 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
                      s["score"], s["image"], [x["url"] for x in s["sources"]]] for s in stories],
         "articles": [[a["section"], a["slug"], a["title"], a["date"], a["summary"], a["_md"]] for a in articles],
         "site": site_cfg,
-        "render": "5.29",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
+        "render": "5.32",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
     }, ensure_ascii=False, sort_keys=True)
     if fixtures is None:
         check_source_links(stories, data_file.parent / "linkcheck.json", now)
@@ -2487,6 +2487,36 @@ DESIGN_CSS += """
 .subscribe-form button{min-height:48px;border-radius:14px;background:var(--accent);color:var(--accent-ink)}
 @media(max-width:700px){.subscribe{grid-template-columns:1fr;gap:18px}.subscribe-action{padding:17px 0 0;border-left:0;border-top:1px solid var(--line)}.subscribe h2{max-width:30ch}}
 @media(prefers-reduced-motion:reduce){.subscribe-btn{transition:none}.subscribe-btn:hover{transform:none}}
+"""
+
+DESIGN_CSS += """
+/* High-visibility intelligence filter console: open by default, with a clear signal hierarchy. */
+.filter-panel{position:relative;isolation:isolate;overflow:hidden;border:1px solid color-mix(in srgb,var(--accent) 38%,var(--line));background:radial-gradient(ellipse at 100% 0%,color-mix(in srgb,#38bdf8 14%,transparent),transparent 35%),radial-gradient(ellipse at 0% 100%,color-mix(in srgb,#22c55e 10%,transparent),transparent 42%),var(--surface);box-shadow:0 16px 45px -28px color-mix(in srgb,var(--accent) 45%,transparent),var(--shadow)}
+.filter-panel:before{content:"";position:absolute;inset:0 0 auto;height:3px;background:linear-gradient(90deg,#22c55e 0%,#38bdf8 52%,transparent 100%);z-index:-1}
+.filter-panel:after{content:"";position:absolute;right:24px;top:23px;width:64px;height:64px;border:1px solid color-mix(in srgb,var(--accent) 18%,transparent);border-radius:50%;box-shadow:0 0 0 10px color-mix(in srgb,var(--accent) 3%,transparent),0 0 32px color-mix(in srgb,var(--accent) 13%,transparent);pointer-events:none;z-index:-1}
+.filter-panel-head{position:relative;padding:5px 0 15px;border-bottom:1px solid color-mix(in srgb,var(--accent) 20%,var(--line))}
+.filter-eyebrow{display:flex;align-items:center;gap:8px;color:var(--accent);font-size:.68rem;font-weight:800;letter-spacing:.14em}
+.filter-eyebrow:before{content:"";width:7px;height:7px;border-radius:50%;background:#22c55e;box-shadow:0 0 12px #22c55e}
+.filter-panel-head h2{font-size:clamp(1.35rem,2.4vw,1.8rem);letter-spacing:-.04em}
+.filter-count{padding:7px 11px;border:1px solid var(--line);border-radius:999px;background:color-mix(in srgb,var(--surface) 86%,transparent);font-weight:700}
+.filter-reset{border-color:color-mix(in srgb,var(--accent) 35%,var(--line));color:var(--ink)}
+.filter-panel .toolbar{position:relative;margin:16px 0 18px}
+.filter-panel .search{height:56px;padding-left:44px;border:1px solid color-mix(in srgb,var(--accent) 36%,var(--line));background:color-mix(in srgb,var(--surface) 92%,transparent);font-size:1rem;box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--accent) 5%,transparent),0 8px 22px -18px var(--accent)}
+.filter-panel .toolbar>svg{position:absolute;left:15px;top:50%;z-index:1;transform:translateY(-50%);color:var(--accent)}
+.filter-panel .search:focus{border-color:var(--accent);box-shadow:0 0 0 4px color-mix(in srgb,var(--accent) 15%,transparent)}
+.filter-group-label{display:flex;align-items:center;gap:10px;margin:0 0 10px;font-size:.68rem;letter-spacing:.13em}
+.filter-group-label:after{content:"";height:1px;flex:1;background:var(--line)}
+.filter-panel .filters{gap:9px}
+.filter-panel .filters button{min-height:42px;padding:8px 12px;border-color:color-mix(in srgb,var(--accent) 20%,var(--line));background:color-mix(in srgb,var(--surface) 92%,transparent);font-weight:650}
+.filter-panel .filters button[aria-pressed="true"]{border-color:var(--accent);background:linear-gradient(120deg,color-mix(in srgb,var(--accent) 22%,var(--surface)),color-mix(in srgb,#38bdf8 14%,var(--surface)));color:var(--ink);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--accent) 18%,transparent),0 5px 16px -12px var(--accent)}
+.filter-panel .filters button[aria-pressed="true"] .count{background:var(--accent);color:var(--accent-ink)}
+.filter-panel .filter-tools{margin-top:18px;padding-top:16px;border-top:1px solid color-mix(in srgb,var(--accent) 19%,var(--line))}
+.filter-panel .filter-tools select,.filter-panel .filter-tools .important-only{border-color:color-mix(in srgb,var(--accent) 20%,var(--line));background:color-mix(in srgb,var(--surface) 94%,transparent)}
+.filter-panel .filter-tools select:focus-visible,.filter-panel .filter-tools .important-only:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 13%,transparent)}
+.donate-qr{margin:14px 0 0}
+.donate-qr img{width:160px;height:160px;object-fit:contain;border-radius:12px;background:#fff;padding:5px}
+@media(max-width:640px){.filter-panel:after{right:15px;top:15px;width:42px;height:42px}.filter-count{white-space:normal}}
+@media(prefers-reduced-motion:reduce){.filter-panel,.filter-panel *{scroll-behavior:auto}}
 """
 
 

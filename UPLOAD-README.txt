@@ -1,25 +1,19 @@
-Security Brief editorial shell update
+Security Brief update - QR restored, homepage sections repositioned, filters refreshed
 
-Upload/replace these files in the repository:
+Upload/replace these files at the repository root:
 - build.py
-- .github/workflows/autoblog.yml
-- content/briefings/*
-- content/patch-tuesday/*
-- tests/*
+- test_autoblog.py
+- buymeacoffee-qr.png
 
-The update is designed to work with the existing site.json and data files.
-Do not overwrite site.json unless you intentionally preserve your private publisher settings.
+This update:
+- Restores the Buy Me a Coffee QR code beside the single donation section.
+- Keeps the donation section below the homepage overview, as requested.
+- Moves the Free field guide and From the analysis desk below the news feed; From the analysis desk is the last homepage content section before the footer.
+- Gives the All stories/category filter panel a more prominent futuristic visual hierarchy. Controls remain visible immediately; no accordion is introduced.
+- Adds regression tests for QR presence and homepage section order.
 
-Changes:
-- Analysis and Patch Tuesday pages use the same modern editorial shell as the homepage.
-- Story detail pages use the same card, surface, typography and image treatment.
-- Homepage analysis desk and free field guide remain below the live news feed.
-- Feed status no longer exposes a public Details link.
-- Header logo/brand is larger and more visible, with responsive mobile behavior.
-- Offline regression suite: 42 tests passed.
+Do not replace site.json. It contains your private site settings and the donation link/text.
 
-After uploading:
-1. Commit the files to the default branch.
-2. Run the autoblog workflow manually.
-3. Wait for the Pages deployment to finish.
-4. Hard-refresh the site (Ctrl+F5) or use a private browser window.
+Validation: all 44 offline regression tests passed; offline build confirmed one donation section, one Buy Me a Coffee button, the QR image, and the new homepage order.
+
+After upload, commit/push the files, run the GitHub Actions workflow, wait for Pages deployment, then hard-refresh the live site.

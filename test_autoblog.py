@@ -164,6 +164,16 @@ class OfflineBuild(unittest.TestCase):
         self.assertIn("Browse and filter all", page)
         self.assertNotIn('id="story-search"', page)
 
+    def test_homepage_analysis_and_free_guide_follow_news_before_footer(self):
+        page = self.read("index.html")
+        news = page.index("Browse and filter all")
+        guide = page.index('id="free-downloads"')
+        analysis = page.index('id="analysis"')
+        footer = page.index('<footer')
+        self.assertLess(news, guide)
+        self.assertLess(guide, analysis)
+        self.assertLess(analysis, footer)
+
     def test_full_story_list_has_date_sort_and_important_filters(self):
         page = self.read("stories/index.html")
         self.assertIn('id="date-filter"', page)
@@ -256,6 +266,21 @@ class OfflineBuild(unittest.TestCase):
 
     def test_no_donation_section_without_configured_links(self):
         self.assertNotIn("Support this site", self.read("index.html"))
+
+    def test_single_buy_me_a_coffee_block_retains_qr_and_sits_before_editorial_sections(self):
+        cfg = {"site_name": "Security Brief", "site_url": "https://example.org", "description": "d"}
+        status = {"sources_total": 1, "content_published_at": NOW.isoformat()}
+        article = {"section": "briefings", "slug": "sample", "title": "Sample analysis",
+                   "summary": "A sample analysis.", "date": "2026-10-20"}
+        site_cfg = {"donations": [{"provider": "buymeacoffee", "label": "Buy me a coffee",
+                                   "url": "https://buymeacoffee.com/leonpavesic"}],
+                    "donation_text": "If Security Brief saves you time, you can buy me a coffee.",
+                    "donation_qr": "buymeacoffee-qr.png"}
+        page = build.index_page([], cfg, NOW, status, [article], site_cfg)
+        self.assertEqual(page.count('class="support"'), 1)
+        self.assertEqual(page.count(">Buy me a coffee &rarr;</a>"), 1)  # one visible button label
+        self.assertEqual(page.count("QR code linking to the Buy me a coffee page"), 1)
+        self.assertLess(page.index('class="support"'), page.index('id="analysis"'))
 
     def test_feed_and_sitemap_use_site_url(self):
         self.assertIn("https://test.example.org/brief/", self.read("feed.xml"))
