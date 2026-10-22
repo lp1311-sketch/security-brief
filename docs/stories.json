@@ -546,42 +546,6 @@
    "url": "story/6478f5844cef.html"
   },
   {
-   "id": "13820dacd5f3",
-   "title": "Decades-Old Windows Utility Powers Modern ClickFix Attack",
-   "summary": "The attack uses malicious Google search results related to Amazon and leverages the \"finger\" utility to launch a CAPTCHA that installs malware, including the Lumma…",
-   "priority": "Standard",
-   "category": "Microsoft",
-   "date": "21 Oct 2026, 13:00 UTC",
-   "priority_score": 4,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "microsoft"
-   ],
-   "kev": [],
-   "sources": "Dark Reading",
-   "url": "story/13820dacd5f3.html"
-  },
-  {
-   "id": "ba8deb36fe9d",
-   "title": "Microsoft PowerToys adds CursorHide, Button Lock mouse tools",
-   "summary": "Microsoft has released PowerToys 0.102, with two new mouse utilities, new command-line tools, and Command Palette improvements.",
-   "priority": "Standard",
-   "category": "Microsoft",
-   "date": "21 Oct 2026, 12:20 UTC",
-   "priority_score": 4,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "microsoft"
-   ],
-   "kev": [],
-   "sources": "BleepingComputer",
-   "url": "story/ba8deb36fe9d.html"
-  },
-  {
    "id": "0dfa738d1635",
    "title": "Hackers Use Autonomous AI Agents to Breach Company Websites, Target Over 1,200 Sites",
    "summary": "A Chinese-speaking criminal pointed autonomous AI agents at company websites and let them break in with almost no help, and a security researcher watched it happen…",
@@ -682,6 +646,22 @@
    "kev": [],
    "sources": "Dark Reading",
    "url": "story/834a248937df.html"
+  },
+  {
+   "id": "c78f9791369d",
+   "title": "Amazon says PHP2Shell exploitation began 4 days before patches",
+   "summary": "Security researchers at Amazon Threat Intelligence say attackers began targeting the PHP2Shell flaws four days before security patches were released on Wednesday.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "22 Oct 2026, 13:09 UTC",
+   "priority_score": 3,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "BleepingComputer, SecurityWeek",
+   "url": "story/c78f9791369d.html"
   },
   {
    "id": "a9227db3dd33",
@@ -892,6 +872,42 @@
    "url": "story/71ae2abe1296.html"
   },
   {
+   "id": "13820dacd5f3",
+   "title": "Decades-Old Windows Utility Powers Modern ClickFix Attack",
+   "summary": "The attack uses malicious Google search results related to Amazon and leverages the \"finger\" utility to launch a CAPTCHA that installs malware, including the Lumma…",
+   "priority": "Standard",
+   "category": "Microsoft",
+   "date": "21 Oct 2026, 13:00 UTC",
+   "priority_score": 3,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "microsoft"
+   ],
+   "kev": [],
+   "sources": "Dark Reading",
+   "url": "story/13820dacd5f3.html"
+  },
+  {
+   "id": "ba8deb36fe9d",
+   "title": "Microsoft PowerToys adds CursorHide, Button Lock mouse tools",
+   "summary": "Microsoft has released PowerToys 0.102, with two new mouse utilities, new command-line tools, and Command Palette improvements.",
+   "priority": "Standard",
+   "category": "Microsoft",
+   "date": "21 Oct 2026, 12:20 UTC",
+   "priority_score": 3,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "microsoft"
+   ],
+   "kev": [],
+   "sources": "BleepingComputer",
+   "url": "story/ba8deb36fe9d.html"
+  },
+  {
    "id": "ec0fd993c8b5",
    "title": "PHP2Shell: What Actually Protects You Before the 14:00 UTC PHP RCE Patch, and What Doesn't",
    "summary": "You cannot fully block the two critical PHP flaws called PHP2Shell before today's fix, and the one setting being passed around as a workaround is not enough on its own…",
@@ -1056,24 +1072,6 @@
    "kev": [],
    "sources": "SecurityWeek",
    "url": "story/0db72c8bc263.html"
-  },
-  {
-   "id": "4f28949e9098",
-   "title": "Windows Server 2025 gets support for quick machine recovery",
-   "summary": "Microsoft announced that IT administrators can now use quick machine recovery on Windows Server 2025 after installing the October 2026 security update.",
-   "priority": "Standard",
-   "category": "Microsoft",
-   "date": "20 Oct 2026, 12:16 UTC",
-   "priority_score": 3,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "microsoft"
-   ],
-   "kev": [],
-   "sources": "BleepingComputer",
-   "url": "story/4f28949e9098.html"
   },
   {
    "id": "382400392fa0",
@@ -1345,6 +1343,54 @@
    "url": "story/a094aa58c0da.html"
   },
   {
+   "id": "2bd447638fb1",
+   "title": "Signal Vulnerability Lets Malicious Callers Block Hang-Ups",
+   "summary": "Affecting the open source calling library RingRTC, the bug prevented calls from ending properly. The post Signal Vulnerability Lets Malicious Callers Block Hang-Ups…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "22 Oct 2026, 12:34 UTC",
+   "priority_score": 2,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "SecurityWeek",
+   "url": "story/2bd447638fb1.html"
+  },
+  {
+   "id": "ec99b1cdf496",
+   "title": "Tech and Security Companies Respond to PHP2Shell Vulnerabilities",
+   "summary": "Vendors are checking their products for PHP2Shell, security firms are shipping detections, and governments are urging immediate patching. The post Tech and Security…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "22 Oct 2026, 12:20 UTC",
+   "priority_score": 2,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "SecurityWeek",
+   "url": "story/ec99b1cdf496.html"
+  },
+  {
+   "id": "189c380ca726",
+   "title": "South Carolina officials offer assistance after state capital hit with cyberattack",
+   "summary": "The systems impacted by the attack include the MyColaSC platform that citizens use to pay utility bills, report non-emergency issues and access other city services.",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "22 Oct 2026, 12:14 UTC",
+   "priority_score": 2,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "The Record",
+   "url": "story/189c380ca726.html"
+  },
+  {
    "id": "d11e69527239",
    "title": "php2shell: Lücke seit 2024 bekannt, Angriffe laufen, Hosting gefährdet?",
    "summary": "Am gestrigen Abend wurden zwar Patches für neuere PHP-Versionen veröffentlicht. Aber das Ganze wird noch ziemlich durchschlagen, weil es lange dauern wird, bis alles…",
@@ -1423,22 +1469,6 @@
    "kev": [],
    "sources": "SecurityWeek",
    "url": "story/eb08dcb4a958.html"
-  },
-  {
-   "id": "01e27be4feb4",
-   "title": "PHP2Shell Exploitation Started Days Before Patches",
-   "summary": "Initial attempts were observed on October 17, and mass activity began shortly after patches were released. The post PHP2Shell Exploitation Started Days Before Patches…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "22 Oct 2026, 09:48 UTC",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "SecurityWeek",
-   "url": "story/01e27be4feb4.html"
   },
   {
    "id": "29143f2ae20d",
@@ -1651,40 +1681,6 @@
    "url": "story/39edcc9fa917.html"
   },
   {
-   "id": "9fa3f970853e",
-   "title": "Memory Bugs Account for Most of Chrome’s 353 New Security Fixes",
-   "summary": "The update fixes 353 flaws, including 163 memory corruption and 125 use-after-free vulnerabilities. The post Memory Bugs Account for Most of Chrome’s 353 New Security…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "21 Oct 2026, 12:57 UTC",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "SecurityWeek",
-   "url": "story/9fa3f970853e.html"
-  },
-  {
-   "id": "2616dfa7252a",
-   "title": "OpenAI Agents Silenced Security Team Alerts, Removed Misalignment Monitor",
-   "summary": "In two internal incidents, agents read routine coding instructions as permission to weaken monitoring, and one gave a false answer about it. The post OpenAI Agents…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "21 Oct 2026, 12:34 UTC",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "ai"
-   ],
-   "kev": [],
-   "sources": "SecurityWeek",
-   "url": "story/2616dfa7252a.html"
-  },
-  {
    "id": "b81260804ad3",
    "title": "Generative AI Is Erasing Behavioral Tells, Weakening Behavior-Only Detection, Proofpoint Reports",
    "summary": "Generative AI has changed what a malicious email looks like. Messages that once gave themselves away through clumsy wording, generic pretexts, and reused templates now…",
@@ -1861,40 +1857,22 @@
    "url": "story/4791d60cd7f6.html"
   },
   {
-   "id": "d02f2b9b0912",
-   "title": "AI Platform Cairn Abused to Hack Over 100 Organizations",
-   "summary": "At least three threat actors have been abusing Cairn for persistent access and financial theft. The post AI Platform Cairn Abused to Hack Over 100 Organizations appeared…",
+   "id": "4f28949e9098",
+   "title": "Windows Server 2025 gets support for quick machine recovery",
+   "summary": "Microsoft announced that IT administrators can now use quick machine recovery on Windows Server 2025 after installing the October 2026 security update.",
    "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "20 Oct 2026, 12:47 UTC",
+   "category": "Microsoft",
+   "date": "20 Oct 2026, 12:16 UTC",
    "priority_score": 2,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
    "tags": [
-    "ai"
+    "microsoft"
    ],
    "kev": [],
-   "sources": "SecurityWeek",
-   "url": "story/d02f2b9b0912.html"
-  },
-  {
-   "id": "fb9936745ef9",
-   "title": "Meta Muse exposes users' personal and business secrets when they share conversations",
-   "summary": "Muse, the new general-purpose AI agent from Meta, can expose sensitive information when users share conversations through web links, researchers reported Monday. In…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "20 Oct 2026, 12:33 UTC",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "ai"
-   ],
-   "kev": [],
-   "sources": "Ars Technica Security",
-   "url": "story/fb9936745ef9.html"
+   "sources": "BleepingComputer",
+   "url": "story/4f28949e9098.html"
   },
   {
    "id": "3b05c1dcef51",
@@ -2250,20 +2228,38 @@
    "url": "story/bd81f57064bf.html"
   },
   {
-   "id": "e7e058293387",
-   "title": "Next.js Ships Out-of-Band Patch for Two Critical RCE Flaws in Caching and SVG Processing",
-   "summary": "Next.js released an out-of-band security update on October 14 that fixes two critical flaws allowing unauthenticated remote code execution, along with a high-severity…",
+   "id": "9fa3f970853e",
+   "title": "Memory Bugs Account for Most of Chrome’s 353 New Security Fixes",
+   "summary": "The update fixes 353 flaws, including 163 memory corruption and 125 use-after-free vulnerabilities. The post Memory Bugs Account for Most of Chrome’s 353 New Security…",
    "priority": "Standard",
    "category": "Patch Radar",
-   "date": "15 Oct 2026, 12:28 UTC",
-   "priority_score": 2,
+   "date": "21 Oct 2026, 12:57 UTC",
+   "priority_score": 1,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
    "tags": [],
    "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/e7e058293387.html"
+   "sources": "SecurityWeek",
+   "url": "story/9fa3f970853e.html"
+  },
+  {
+   "id": "2616dfa7252a",
+   "title": "OpenAI Agents Silenced Security Team Alerts, Removed Misalignment Monitor",
+   "summary": "In two internal incidents, agents read routine coding instructions as permission to weaken monitoring, and one gave a false answer about it. The post OpenAI Agents…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "21 Oct 2026, 12:34 UTC",
+   "priority_score": 1,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "ai"
+   ],
+   "kev": [],
+   "sources": "SecurityWeek",
+   "url": "story/2616dfa7252a.html"
   },
   {
    "id": "c7a020f274e0",
@@ -2574,41 +2570,27 @@
    "url": "story/b8cb67bf0a57.html"
   },
   {
-   "id": "cf21e83d251e",
-   "title": "Ahold Delhaize Restoring Services Disrupted by Cyberattack",
-   "summary": "The company has restored many websites and apps in Europe and expects e-commerce brands in the US to be restored in days. The post Ahold Delhaize Restoring Services…",
+   "id": "d02f2b9b0912",
+   "title": "AI Platform Cairn Abused to Hack Over 100 Organizations",
+   "summary": "At least three threat actors have been abusing Cairn for persistent access and financial theft. The post AI Platform Cairn Abused to Hack Over 100 Organizations appeared…",
    "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "20 Oct 2026, 13:02 UTC",
+   "category": "AI Risk Lab",
+   "date": "20 Oct 2026, 12:47 UTC",
    "priority_score": 1,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
-   "tags": [],
+   "tags": [
+    "ai"
+   ],
    "kev": [],
    "sources": "SecurityWeek",
-   "url": "story/cf21e83d251e.html"
+   "url": "story/d02f2b9b0912.html"
   },
   {
-   "id": "2f7a0f9a2ffb",
-   "title": "Pegasus Spyware Infection Confirmed on Serbian University Rector's iPhone Days Before Election",
-   "summary": "The iPhone of Vladan Đokić, rector of the University of Belgrade and a prominent supporter of Serbia's student protest movement, was infected with NSO Group's Pegasus…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "20 Oct 2026, 12:59 UTC",
-   "priority_score": 1,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/2f7a0f9a2ffb.html"
-  },
-  {
-   "id": "b44079bd0a64",
-   "title": "Ex-OpenAI Worker Accused of Bugging Conference Room Planned to Fly to Saudi Arabia, Prosecutors Say",
-   "summary": "Abdulrahman Alfozan’s wife and young son also left the country the day after the 35-year-old Saudi national’s arrest. The post Ex-OpenAI Worker Accused of Bugging…",
+   "id": "fb9936745ef9",
+   "title": "Meta Muse exposes users' personal and business secrets when they share conversations",
+   "summary": "Muse, the new general-purpose AI agent from Meta, can expose sensitive information when users share conversations through web links, researchers reported Monday. In…",
    "priority": "Standard",
    "category": "AI Risk Lab",
    "date": "20 Oct 2026, 12:33 UTC",
@@ -2620,8 +2602,8 @@
     "ai"
    ],
    "kev": [],
-   "sources": "SecurityWeek",
-   "url": "story/b44079bd0a64.html"
+   "sources": "Ars Technica Security",
+   "url": "story/fb9936745ef9.html"
   },
   {
    "id": "467c211f344f",
@@ -3328,6 +3310,56 @@
    "kev": [],
    "sources": "The Hacker News",
    "url": "story/ba5ef20dc7e9.html"
+  },
+  {
+   "id": "cf21e83d251e",
+   "title": "Ahold Delhaize Restoring Services Disrupted by Cyberattack",
+   "summary": "The company has restored many websites and apps in Europe and expects e-commerce brands in the US to be restored in days. The post Ahold Delhaize Restoring Services…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "20 Oct 2026, 13:02 UTC",
+   "priority_score": 0,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "SecurityWeek",
+   "url": "story/cf21e83d251e.html"
+  },
+  {
+   "id": "2f7a0f9a2ffb",
+   "title": "Pegasus Spyware Infection Confirmed on Serbian University Rector's iPhone Days Before Election",
+   "summary": "The iPhone of Vladan Đokić, rector of the University of Belgrade and a prominent supporter of Serbia's student protest movement, was infected with NSO Group's Pegasus…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "20 Oct 2026, 12:59 UTC",
+   "priority_score": 0,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "The Hacker News",
+   "url": "story/2f7a0f9a2ffb.html"
+  },
+  {
+   "id": "b44079bd0a64",
+   "title": "Ex-OpenAI Worker Accused of Bugging Conference Room Planned to Fly to Saudi Arabia, Prosecutors Say",
+   "summary": "Abdulrahman Alfozan’s wife and young son also left the country the day after the 35-year-old Saudi national’s arrest. The post Ex-OpenAI Worker Accused of Bugging…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "20 Oct 2026, 12:33 UTC",
+   "priority_score": 0,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "ai"
+   ],
+   "kev": [],
+   "sources": "SecurityWeek",
+   "url": "story/b44079bd0a64.html"
   },
   {
    "id": "f0509be43eab",
@@ -4102,22 +4134,6 @@
    "kev": [],
    "sources": "Dark Reading",
    "url": "story/295b94e919e7.html"
-  },
-  {
-   "id": "12b5084185c2",
-   "title": "NGINX Fixes 5 Flaws, Including Possible RCE and a TLS Bug That May Skip Client-Cert Checks",
-   "summary": "NGINX released versions 1.30.6 and 1.31.7 on October 14 to fix five vulnerabilities, one of them present in every release since May 2005. There are three memory bugs…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "15 Oct 2026, 12:58 UTC",
-   "priority_score": 0,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/12b5084185c2.html"
   }
  ]
 }

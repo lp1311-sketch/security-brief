@@ -1937,48 +1937,6 @@
    "instructions_checked": true
   },
   {
-   "id": "e7e058293387",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "title": "Next.js Ships Out-of-Band Patch for Two Critical RCE Flaws in Caching and SVG Processing",
-   "link": "https://thehackernews.com/2026/10/nextjs-ships-out-of-band-patch-for-two.html",
-   "published": "2026-10-15T12:28:13+00:00",
-   "summary": "Next.js released an out-of-band security update on October 14 that fixes two critical flaws allowing unauthenticated remote code execution, along with a high-severity denial-of-service flaw. One code-execution flaw is in React Server Components, and the other in librsvg, the open-source library Next.js uses through…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9mXutJ2QPpC1NUCUZWdHjUDUGPSD3DaDY4b-T1EXbg07sNWADsV43EvUacKzn4Ohp2bRbD93t8kXBpv513XdMZEnMh8eNkY1bBaSuGICWbituq_jgWNCjQa_Cq6Ur0jInsfEwsHfdInKq4Tcp2kmfuYoCIMrgWcWwtzFlRPePDpW9gwemIkQpJXEVaHU/s1600/nextjs-rce.jpg",
-   "cves": [],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00",
-   "instructions": [
-    "Upgrade to Next.js 16.4.1 if you run version 16, or 15.5.28 if you run version 15, then rebuild and redeploy.",
-    "As of October 15, the use cache and Server Actions advisories had no CVE and did not appear in the npm advisory feed that npm audit uses, so dependency scanners may not warn you about them.",
-    "React's advisory covers three packages, react-server-dom-webpack, react-server-dom-parcel, and react-server-dom-turbopack, in versions 19.0.0 through 19.3.0.",
-    "In a Next.js app, the trigger is a use cache function that returns more than one typed array, so only version 16 apps that enable Cache Components, the feature behind use cache , are exposed."
-   ],
-   "instructions_checked": true,
-   "source_type": "news"
-  },
-  {
-   "id": "12b5084185c2",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "title": "NGINX Fixes 5 Flaws, Including Possible RCE and a TLS Bug That May Skip Client-Cert Checks",
-   "link": "https://thehackernews.com/2026/10/nginx-fixes-5-flaws-including-possible.html",
-   "published": "2026-10-15T12:58:05+00:00",
-   "summary": "NGINX released versions 1.30.6 and 1.31.7 on October 14 to fix five vulnerabilities, one of them present in every release since May 2005. There are three memory bugs that F5, the company behind NGINX, says could crash a worker process or possibly let an attacker run code, and each requires a specific configuration to…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEionuV8CAd7SP0bgEbHyb-0hp7JWNkWpPjYtkNH9p86nRQrxDN1T97D1cragnVVzAwCEFCuqrwuysgwzxJLfvTXrYhMSGj5rbBzrpjW-VPvAmrc2-9EAR_hBmPigJUOjynvkm0ArpyasyzCOAWUWFYdCqzsbCJVOsxC09LnYwH2dcV4j4Vm9S9VDelXUlc/s1600/tls.jpg",
-   "cves": [],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00",
-   "instructions": [
-    "F5's advisory and NGINX's advisories page list 1.30.0 and 1.31.2 as the earliest affected versions, which come before the July change.",
-    "NGINX Plus customers, and users of F5's Ingress Controller, Gateway Fabric, Instance Manager and WAF products, should check F5's advisories, which list affected builds and, for several products, no fixed build as of October 15.",
-    "NGINX's own documentation recommends the shared session cache and request buffering; the other condition for the HTTP/3 flaw is on by default.",
-    "Session tickets let a client resume a TLS session without a full handshake, and since version 1.23.2, from October 2022, a shared session cache makes NGINX generate and rotate the ticket keys itself unless you load keys from a file."
-   ],
-   "instructions_checked": true,
-   "source_type": "news"
-  },
-  {
    "id": "29143f2ae20d",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2785,6 +2743,23 @@
    "image": "https://cms.therecord.media/uploads/Vladan_Dokic_PP_413d939ccc.jpg",
    "cves": [],
    "first_seen": "2026-10-20T09:53:14.101641+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "189c380ca726",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "South Carolina officials offer assistance after state capital hit with cyberattack",
+   "link": "https://therecord.media/south-carolina-officials-offer-assistance-cyber-incident",
+   "published": "2026-10-22T12:14:00+00:00",
+   "summary": "The systems impacted by the attack include the MyColaSC platform that citizens use to pay utility bills, report non-emergency issues and access other city services.",
+   "image": "https://cms.therecord.media/uploads/South_Carolina_State_House_1_1d9c7d092d.jpg",
+   "cves": [],
+   "first_seen": "2026-10-22T13:13:37.507920+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -4460,6 +4435,28 @@
    "image_checked": true,
    "instructions": [
     "In a Monday update, Ahold Delhaize said the cybersecurity incident announced last week forced it to take some systems offline, including its brands' websites and apps, causing service issues, although stores remained open to serve customers."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "c78f9791369d",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Amazon says PHP2Shell exploitation began 4 days before patches",
+   "link": "https://www.bleepingcomputer.com/news/security/amazon-says-php2shell-exploitation-began-4-days-before-patches/",
+   "published": "2026-10-22T13:09:12+00:00",
+   "summary": "Security researchers at Amazon Threat Intelligence say attackers began targeting the PHP2Shell flaws four days before security patches were released on Wednesday.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/22/PHP-attack.jpg",
+   "cves": [],
+   "first_seen": "2026-10-22T13:13:37.507920+00:00",
+   "image_checked": true,
+   "instructions": [
+    "PHP core developer Gina Peter Banyard warned before disclosure that applying the official security patches is the only permanent defense, while the UK National Cyber Security Centre (NCSC) asked UK organizations to immediately update PHP servers or take them offline until they can be patched.",
+    "Moses also said that the PHP2Shell vulnerabilities are \"now being broadly exploited in the wild\" and warned that \"defenders should not assume the public disclosure date is the earliest date of exploitation.\"",
+    "The PHP security team patched them on October 21 after urging admins one day earlier to prepare to install the updates as soon as they became available.",
+    "Mozilla, Google, Apple block compromised eMudhra CA certificates"
    ],
    "instructions_checked": true
   },
@@ -6608,6 +6605,28 @@
    "instructions_checked": true
   },
   {
+   "id": "2bd447638fb1",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Signal Vulnerability Lets Malicious Callers Block Hang-Ups",
+   "link": "https://www.securityweek.com/signal-vulnerability-lets-malicious-callers-block-hang-ups/",
+   "published": "2026-10-22T12:34:31+00:00",
+   "summary": "Affecting the open source calling library RingRTC, the bug prevented calls from ending properly. The post Signal Vulnerability Lets Malicious Callers Block Hang-Ups appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/10/Signal-telegram-messaging.jpeg",
+   "cves": [],
+   "first_seen": "2026-10-22T13:13:37.507920+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Users should update their Signal applications as soon as possible.",
+    "Otherwise, they should check the call indicator to make sure the call indeed ended.",
+    "Jon Steinbach has been appointed strategic technical advisor to the Pentagon’s CIO.",
+    "Preparing for disruption must become part of day-to-day operations."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "eb08dcb4a958",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -6626,6 +6645,28 @@
     "Jon Steinbach has been appointed strategic technical advisor to the Pentagon’s CIO.",
     "Preparing for disruption must become part of day-to-day operations.",
     "The update also resolves high-severity information disclosure, improper neutralization, improper resource control, and protection defects."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "ec99b1cdf496",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Tech and Security Companies Respond to PHP2Shell Vulnerabilities",
+   "link": "https://www.securityweek.com/tech-and-security-companies-respond-to-php2shell-vulnerabilities/",
+   "published": "2026-10-22T12:20:23+00:00",
+   "summary": "Vendors are checking their products for PHP2Shell, security firms are shipping detections, and governments are urging immediate patching. The post Tech and Security Companies Respond to PHP2Shell Vulnerabilities appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/05/firewall.jpeg",
+   "cves": [],
+   "first_seen": "2026-10-22T13:13:37.507920+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Security firms roll out detections and mitigations Palo Alto Networks says upcoming PAN-OS releases will address the issue, and it has shared workarounds and mitigations for customers to apply in the meantime.",
+    "Tech vendors, cybersecurity companies and government agencies have published advisories, detections and mitigations for the PHP2Shell vulnerabilities, while many software makers are still checking whether their own products are exposed.",
+    "The UK’s NCSC says discovery efforts should cover every PHP installation, not just outdated ones, and that organizations should keep an eye out for updates from vendors of appliances and services that may ship with PHP.",
+    "It also recommends hunting for backdoors that attackers may have planted before patches or mitigations were applied."
    ],
    "instructions_checked": true
   },
