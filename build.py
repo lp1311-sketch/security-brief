@@ -259,16 +259,33 @@ def md_to_html(md: str) -> str:
     out: list[str] = []
     para: list[str] = []
     items: list[str] = []
+    list_kind: str | None = None
     code: list[str] = []
     in_code = False
+    heading_index = 0
 
     def flush() -> None:
+        nonlocal list_kind
         if para:
             out.append("<p>" + inline_md(" ".join(para)) + "</p>")
             para.clear()
         if items:
-            out.append("<ul>" + "".join(f"<li>{inline_md(i)}</li>" for i in items) + "</ul>")
+            tag = list_kind or "ul"
+            cls = ' class="action-list"' if tag == "ol" else ""
+            out.append("<" + tag + cls + ">" + "".join(
+                f"<li>{inline_md(i)}</li>" for i in items) + f"</{tag}>")
             items.clear()
+            list_kind = None
+
+    def add_item(kind: str, text: str) -> None:
+        nonlocal list_kind
+        if para:
+            out.append("<p>" + inline_md(" ".join(para)) + "</p>")
+            para.clear()
+        if items and list_kind != kind:
+            flush()
+        list_kind = kind
+        items.append(text)
 
     for raw in md.splitlines():
         line = raw.rstrip()
@@ -292,14 +309,17 @@ def md_to_html(md: str) -> str:
         m = re.match(r"^(#{1,3})\s+(.*)$", line)
         if m:
             flush()
+            heading_index += 1
             level = min(len(m.group(1)) + 1, 4)
-            out.append(f"<h{level}>{inline_md(m.group(2))}</h{level}>")
+            slug = re.sub(r"[^a-z0-9]+", "-", m.group(2).lower()).strip("-")[:42] or "section"
+            heading_id = f"section-{heading_index}-{slug}"
+            out.append(f'<h{level} id="{heading_id}">{inline_md(m.group(2))}</h{level}>')
             continue
         if re.match(r"^\s*[-*]\s+", line):
-            if para:
-                out.append("<p>" + inline_md(" ".join(para)) + "</p>")
-                para.clear()
-            items.append(re.sub(r"^\s*[-*]\s+", "", line))
+            add_item("ul", re.sub(r"^\s*[-*]\s+", "", line))
+            continue
+        if re.match(r"^\s*\d+[.)]\s+", line):
+            add_item("ol", re.sub(r"^\s*\d+[.)]\s+", "", line))
             continue
         if line.startswith(">"):
             flush()
@@ -312,6 +332,19 @@ def md_to_html(md: str) -> str:
     if in_code:
         out.append("<pre><code>" + html.escape("\n".join(code)) + "</code></pre>")
     return "\n".join(out)
+
+
+def article_toc(body: str) -> str:
+    headings = re.findall(r'<h[34] id="([^"]+)">(.*?)</h[34]>', body)
+    if len(headings) < 2:
+        return ""
+    links = []
+    for hid, label in headings:
+        text = html.unescape(re.sub(r"<[^>]+>", "", label))
+        links.append(f'<a href="#{esc(hid)}">{esc(text)}</a>')
+    return ('<nav class="article-toc" aria-label="On this page">'
+            '<span class="article-toc-label">On this page</span><div class="article-toc-links">'
+            + "".join(links) + '</div></nav>')
 
 
 def _article_candidates(content_dir: Path):
@@ -1150,18 +1183,29 @@ EXTRA_CSS = """
 
 
 def _newsletter(site_cfg: dict, base: str) -> str:
+    signup_url = (site_cfg.get("newsletter_signup_url") or "").strip()
+    parsed = urlparse(signup_url)
+    if parsed.scheme == "https" and parsed.netloc:
+        return f"""<section class="subscribe" aria-labelledby="subscribe-title">
+<div class="subscribe-copy"><p class="subscribe-eyebrow"><span class="subscribe-pulse" aria-hidden="true"></span> THE WEEKLY SIGNAL</p>
+<h2 id="subscribe-title">A clearer view of the week in security.</h2>
+<p>One concise briefing with the stories that matter, why they matter, and practical checks for defenders. No feed-dump, no daily noise.</p>
+<div class="subscribe-points"><span>Free to join</span><span>One useful email a week</span><span>Unsubscribe anytime</span></div></div>
+<div class="subscribe-action"><a class="subscribe-btn" href="{esc(signup_url)}" target="_blank" rel="noopener noreferrer">Get the weekly briefing <span aria-hidden="true">&rarr;</span></a>
+<p>Signup is handled securely by Mailchimp. See the <a href="{base}datenschutz.html">privacy notice</a>.</p></div>
+</section>"""
     action = (site_cfg.get("newsletter_form_action") or "").strip()
     if not action.startswith("https://"):
-        return ""  # no provider configured: no form is shown
+        return ""
     return f"""<section class="subscribe" aria-labelledby="subscribe-title">
-<h2 id="subscribe-title">Get the analysis by email</h2>
-<p class="summary">The weekly M365 and Entra briefing and the Patch Tuesday notes, written by the author.</p>
-<form action="{esc(action)}" method="post" class="subscribe-form">
-<label for="nl-email" class="visually-hidden">Email address</label>
-<input id="nl-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com">
-<button type="submit">Subscribe</button>
-</form>
-<p class="meta">You can unsubscribe at any time. <a href="{base}datenschutz.html">Privacy notice</a></p>
+<div class="subscribe-copy"><p class="subscribe-eyebrow"><span class="subscribe-pulse" aria-hidden="true"></span> THE WEEKLY SIGNAL</p>
+<h2 id="subscribe-title">A clearer view of the week in security.</h2>
+<p>One concise briefing with the stories that matter, why they matter, and practical checks for defenders. No feed-dump, no daily noise.</p>
+<div class="subscribe-points"><span>Free to join</span><span>One useful email a week</span><span>Unsubscribe anytime</span></div></div>
+<div class="subscribe-action"><form action="{esc(action)}" method="post" class="subscribe-form">
+<label for="nl-email" class="visually-hidden">Email address</label><input id="nl-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com">
+<button type="submit">Join the briefing <span aria-hidden="true">&rarr;</span></button></form>
+<p>Signup is handled securely by the newsletter provider. See the <a href="{base}datenschutz.html">privacy notice</a>.</p></div>
 </section>"""
 
 
@@ -1207,30 +1251,43 @@ def article_cover(a: dict) -> str:
     accent = SECTION_COLORS.get(a.get("section"), "#5eead4")
     label = SECTIONS.get(a.get("section"), "Analysis")
     title = a.get("title") or label
-    lines = textwrap.wrap(title, 26) or [title]
-    if len(lines) > 3:
-        lines = lines[:3]
-        lines[2] = lines[2][:23].rstrip() + "..."
-    text = "".join(
-        f'<text x="48" y="{170 + i * 44}" fill="#f1f5f9" font-family="Arial,Helvetica,sans-serif" '
-        f'font-size="32" font-weight="700">{esc(t)}</text>' for i, t in enumerate(lines))
-    grid = "".join(f'<line x1="{x}" y1="0" x2="{x}" y2="360"/>' for x in range(0, 641, 64))
-    grid += "".join(f'<line x1="0" y1="{y}" x2="640" y2="{y}"/>' for y in range(0, 361, 60))
+    stop = {"this", "that", "with", "from", "what", "where", "when", "your", "into", "over", "under", "after", "before", "the", "and", "for", "are", "how", "week", "weeks"}
+    words = [w for w in re.findall(r"[A-Za-z0-9-]+", title) if len(w) > 3 and w.lower() not in stop]
+    keywords = "  /  ".join(w.upper() for w in words[:3]) or label.upper()
+    digest = int(hashlib.sha256(title.encode("utf-8")).hexdigest()[:12], 16)
+    cx, cy = 430 + digest % 95, 158 + (digest >> 7) % 74
+    nodes = []
+    for i in range(5):
+        x = 310 + ((digest >> (i * 7)) % 275)
+        y = 65 + ((digest >> (i * 5 + 3)) % 225)
+        nodes.append((x, y))
+    paths = "".join(
+        f'<path d="M {nodes[i][0]} {nodes[i][1]} L {nodes[(i+1)%5][0]} {nodes[(i+1)%5][1]}" '
+        f'fill="none" stroke="{accent if i%2==0 else "#38bdf8"}" stroke-width="1.4" opacity=".56"/>'
+        for i in range(5))
+    dots = "".join(
+        f'<circle cx="{x}" cy="{y}" r="{4 if i==0 else 2.7}" fill="{accent if i%2==0 else "#38bdf8"}"/>'
+        for i, (x,y) in enumerate(nodes))
+    grid = "".join(f'<path d="M{x} 0V360"/>' for x in range(0,641,64))
+    grid += "".join(f'<path d="M0 {y}H640"/>' for y in range(0,361,60))
     svg = (
         '<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">'
-        '<rect width="640" height="360" fill="#0b0f14"/>'
-        f'<g stroke="#18202b" stroke-width="1">{grid}</g>'
-        f'<path d="M 360 320 Q 470 40 612 110" fill="none" stroke="{accent}" stroke-width="1.5" '
-        'stroke-dasharray="4 6" opacity=".75"/>'
-        f'<circle cx="612" cy="110" r="5" fill="{accent}"/>'
-        '<circle cx="596" cy="36" r="6" fill="#22c55e"/><circle cx="618" cy="36" r="6" fill="#ef4444" opacity=".85"/>'
-        f'<rect width="8" height="360" fill="{accent}"/>'
-        f'<text x="48" y="112" fill="{accent}" font-family="Arial,Helvetica,sans-serif" font-size="16" '
-        f'font-weight="700" letter-spacing="3">{esc(label.upper())}</text>'
-        f'{text}'
-        '<text x="48" y="318" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="13" '
-        'letter-spacing="2">SECURITY BRIEF  |  ANALYSIS</text>'
-        "</svg>"
+        '<defs><radialGradient id="glow" cx="78%" cy="46%" r="75%"><stop offset="0" stop-color="#123d42"/><stop offset="1" stop-color="#080d16"/></radialGradient>'
+        '<linearGradient id="edge" x1="0" x2="1"><stop stop-color="' + accent + '"/><stop offset="1" stop-color="#38bdf8"/></linearGradient></defs>'
+        '<rect width="640" height="360" fill="url(#glow)"/>'
+        f'<g stroke="#ffffff" stroke-width=".55" opacity=".065">{grid}</g>'
+        '<path d="M0 276H198L235 239H322" fill="none" stroke="url(#edge)" stroke-width="2" opacity=".76"/>'
+        '<path d="M640 88H528L494 122H405" fill="none" stroke="url(#edge)" stroke-width="2" opacity=".72"/>'
+        f'{paths}{dots}'
+        f'<circle cx="{cx}" cy="{cy}" r="62" fill="none" stroke="{accent}" stroke-width="1" opacity=".22"/>'
+        f'<circle cx="{cx}" cy="{cy}" r="43" fill="none" stroke="#38bdf8" stroke-width="1" opacity=".34"/>'
+        f'<circle cx="{cx}" cy="{cy}" r="24" fill="{accent}" opacity=".12"/>'
+        f'<rect x="35" y="42" width="5" height="33" rx="2.5" fill="{accent}"/>'
+        f'<text x="54" y="57" fill="{accent}" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" letter-spacing="2.5">SECURITY BRIEF  /  {esc(label.upper())}</text>'
+        f'<text x="54" y="113" fill="#f1f5f9" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="600" letter-spacing="1.5">{esc(keywords[:49])}</text>'
+        '<text x="54" y="319" fill="#8b9aab" font-family="Arial,Helvetica,sans-serif" font-size="11" letter-spacing="2.1">FIELD SIGNAL  ·  VERIFIED SOURCES  ·  DEFENSIVE ACTION</text>'
+        '<path d="M552 286h42m-21-21v42" stroke="#ffffff" stroke-width="1" opacity=".24"/>'
+        '</svg>'
     )
     return "data:image/svg+xml;charset=utf-8," + quote(svg)
 
@@ -1251,19 +1308,30 @@ def _article_card(a: dict, href: str) -> str:
 def article_page(a: dict, cfg: dict, site_cfg: dict) -> str:
     base = "../../"
     label = SECTIONS[a["section"]]
-    lede = f'<p class="lede">{esc(a["summary"])}</p>' if a["summary"] else ""
+    lede = f'<p class="analysis-lede">{esc(a["summary"])}</p>' if a["summary"] else ""
+    plain_body = re.sub(r"<[^>]+>", " ", a["body"])
+    word_count = len(re.findall(r"[\w’'-]+", html.unescape(plain_body)))
+    read_minutes = max(1, round(word_count / 220))
     header = (
-        '<section class="hero article-hero" aria-labelledby="article-title">'
-        f'<div class="hero-media"><img src="{esc(article_cover(a))}" alt="" width="640" height="360"></div>'
-        f'<div class="hero-body"><p class="kicker"><span class="cat">{esc(label)}</span>'
-        f'<span class="type">{esc(fmt_day(a["date"]))}</span></p>'
-        f'<h1 id="article-title" class="article-title">{esc(a["title"])}</h1>{lede}</div></section>'
+        '<header class="analysis-hero" aria-labelledby="article-title">'
+        f'<div class="analysis-visual"><img src="{esc(article_cover(a))}" alt="" width="640" height="360">'
+        '<span class="visual-corner visual-corner-a" aria-hidden="true"></span>'
+        '<span class="visual-corner visual-corner-b" aria-hidden="true"></span>'
+        '<span class="visual-caption">SIGNAL / ANALYSIS / DEFENSE</span></div>'
+        '<div class="analysis-heading">'
+        f'<p class="analysis-eyebrow"><span class="analysis-live-dot" aria-hidden="true"></span> ORIGINAL SECURITY ANALYSIS'
+        f'<span class="analysis-separator">/</span>{esc(label.upper())}</p>'
+        f'<h1 id="article-title" class="article-title">{esc(a["title"])}</h1>{lede}'
+        f'<div class="analysis-meta"><span>{esc(fmt_day(a["date"]))}</span><span>{read_minutes} min read</span>'
+        '<span>Sources linked below</span></div></div></header>'
     )
+    toc = article_toc(a["body"])
     body = (
-        header
-        + '<article class="prose">' + a["body"]
-        + f'<p class="meta"><a href="index.html">&larr; All {esc(label)}</a> &middot; <a href="../../index.html">Home</a></p>'
-        + "</article>"
+        '<article class="analysis-article">' + header + toc
+        + '<div class="prose analysis-prose">' + a["body"]
+        + f'<p class="analysis-back"><a class="btn" href="index.html">&larr; All {esc(label)}</a> '
+        '<a class="text-link" href="../../index.html">Back to home</a></p>'
+        + '</div></article>'
     )
     body += _donate(site_cfg, base) + _newsletter(site_cfg, base)
     return _layout(cfg, a["title"], _short(a["summary"] or a["title"], 150), body, base)
@@ -1544,16 +1612,23 @@ def filter_bar(stories: list[dict]) -> str:
     search = ('<div class="toolbar"><label class="visually-hidden" for="story-search">Search stories</label>'
               '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" '
               'stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>'
-              '<input id="story-search" class="search" type="search" placeholder="Search stories, vendors or topics" '
+              f'<input id="story-search" class="search" type="search" placeholder="Search {len(stories)} stories, products or CVEs" '
               'autocomplete="off" spellcheck="false"></div>')
     controls = """<div class="filter-tools" aria-label="Additional story filters">
 <label>Time range <select id="date-filter"><option value="168">Last 7 days</option><option value="72">Last 72 hours</option><option value="24">Last 24 hours</option><option value="0">All in current feed</option></select></label>
 <label>Sort by <select id="sort-filter"><option value="priority">Priority, then newest</option><option value="date">Newest first</option></select></label>
-<label class="important-only"><input id="important-only" type="checkbox"> Important only <span class="hint">Critical, High, or exploitation / patch signal</span></label>
-</div><p id="filter-count" class="filter-count" aria-live="polite"></p>"""
-    return (search + '<div class="filters" id="filters" role="group" aria-label="Filter stories by topic">'
-            + "".join(buttons) + '</div>' + controls
-            + '<p id="filter-empty" class="empty" hidden>No stories match these filters in the current window.</p>')
+<label class="important-only"><input id="important-only" type="checkbox"><span><strong>Important only</strong><span class="hint">Critical, High, exploitation or patch signal</span></span></label>
+</div>"""
+    panel = ('<section class="filter-panel" aria-label="Story filters">'
+             '<div class="filter-panel-head"><div><p class="filter-eyebrow">INTELLIGENCE DESK / LIVE WINDOW</p>'
+             '<h2>Find your signal</h2></div>'
+             f'<p id="filter-count" class="filter-count" aria-live="polite">Showing {len(stories)} of {len(stories)} stories</p>'
+             '<button type="button" id="reset-filters" class="filter-reset">Reset</button></div>'
+             + search + '<p class="filter-group-label">Quick filters</p>'
+             + '<div class="filters" id="filters" role="group" aria-label="Filter stories by topic">'
+             + "".join(buttons) + '</div>' + controls + '</section>'
+             + '<p id="filter-empty" class="empty" hidden>No stories match these filters in the current window.</p>')
+    return panel
 
 
 FILTER_JS = """(function(){
@@ -1567,6 +1642,8 @@ var items=Array.prototype.slice.call(document.querySelectorAll('[data-tags]'));
 var sections=document.querySelectorAll('[data-section]');
 var empty=document.getElementById('filter-empty');
 var count=document.getElementById('filter-count');
+var reset=document.getElementById('reset-filters');
+var total=items.length;
 var current='all';
 function timestamp(el){var value=el.getAttribute('data-published');return value?Date.parse(value):NaN;}
 function compare(a,b){
@@ -1600,7 +1677,7 @@ function apply(){
   });
   sections.forEach(function(sec){sec.hidden=!sec.querySelector('[data-tags]:not([hidden])');});
   if(empty)empty.hidden=shown>0;
-  if(count)count.textContent=shown+' stories shown';
+  if(count)count.textContent='Showing '+shown+' of '+total+' stories';
 }
 buttons.forEach(function(b){b.addEventListener('click',function(){
   current=b.getAttribute('data-filter');
@@ -1611,6 +1688,11 @@ if(search)search.addEventListener('input',apply);
 if(range)range.addEventListener('change',apply);
 if(important)important.addEventListener('change',apply);
 if(sort)sort.addEventListener('change',function(){reorder();apply();});
+if(reset)reset.addEventListener('click',function(){
+  current='all';if(search)search.value='';if(range)range.value='168';if(sort)sort.value='priority';if(important)important.checked=false;
+  buttons.forEach(function(x){x.setAttribute('aria-pressed',String(x.getAttribute('data-filter')==='all'));});
+  reorder();apply();if(search)search.focus();
+});
 var KEY='sb-saved';
 function readSaved(){try{return JSON.parse(localStorage.getItem(KEY)||'[]');}catch(e){return [];}}
 function writeSaved(a){try{localStorage.setItem(KEY,JSON.stringify(a));}catch(e){}}
@@ -2290,6 +2372,101 @@ def main() -> None:
     site_cfg = load_site_config(SITE_CONFIG)
     status = run(cfg, args.out, args.data, args.fixtures, now, site_cfg)
     print(json.dumps({k: status[k] for k in ("generated", "sources_ok", "sources_total", "stories", "critical", "high", "warnings")}, indent=2))
+
+
+DESIGN_CSS += """
+
+/* Editorial analysis layout: strong cover art, readable hierarchy, real action lists. */
+.analysis-hero{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);min-height:340px;margin:0 0 24px;border:1px solid var(--line);border-radius:26px;overflow:hidden;background:var(--surface);box-shadow:var(--shadow)}
+.analysis-visual{position:relative;min-height:340px;background:#080d16;overflow:hidden}
+.analysis-visual img{width:100%;height:100%;min-height:340px;object-fit:cover;transition:transform .65s cubic-bezier(.2,.7,.2,1)}
+.analysis-hero:hover .analysis-visual img{transform:scale(1.035)}
+.analysis-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 60%,var(--surface) 100%);pointer-events:none}
+.visual-corner{position:absolute;width:42px;height:42px;border-color:#5eead4;z-index:1;opacity:.8}
+.visual-corner-a{left:18px;top:18px;border-left:1px solid;border-top:1px solid}
+.visual-corner-b{right:18px;bottom:18px;border-right:1px solid;border-bottom:1px solid}
+.visual-caption{position:absolute;left:28px;bottom:24px;z-index:1;color:#d7e2ec;font:700 .65rem/1 var(--sans);letter-spacing:.2em}
+.analysis-heading{display:flex;flex-direction:column;justify-content:center;gap:15px;padding:clamp(24px,4vw,52px)}
+.analysis-eyebrow,.subscribe-eyebrow,.filter-eyebrow{margin:0;color:var(--accent);font-size:.68rem;font-weight:800;letter-spacing:.15em}
+.analysis-live-dot,.subscribe-pulse{display:inline-block;width:8px;height:8px;margin-right:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 4px rgba(34,197,94,.12),0 0 14px rgba(34,197,94,.55);vertical-align:1px}
+.analysis-separator{margin:0 9px;color:var(--muted);opacity:.6}
+.article-title{font-size:clamp(2rem,3.8vw,3.35rem);line-height:1.02;letter-spacing:-.045em;margin:0;font-weight:800;background:none;-webkit-text-fill-color:var(--ink);text-wrap:balance}
+.analysis-lede{max-width:56ch;margin:0;color:var(--muted);font-size:1.04rem;line-height:1.65}
+.analysis-meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:3px}
+.analysis-meta span{padding:6px 10px;border:1px solid var(--line);border-radius:999px;color:var(--muted);background:var(--surface-2);font-size:.76rem;font-weight:600}
+.article-toc{display:flex;align-items:flex-start;gap:16px;max-width:940px;margin:0 auto 30px;padding:16px 18px;border:1px solid var(--line);border-radius:18px;background:var(--surface);box-shadow:0 8px 24px rgba(0,0,0,.06)}
+.article-toc-label{flex:none;padding:5px 9px;border-radius:999px;background:color-mix(in srgb,var(--accent) 14%,var(--surface));color:var(--accent);font-size:.7rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.article-toc-links{display:flex;flex-wrap:wrap;gap:7px}
+.article-toc-links a{display:inline-flex;padding:5px 9px;border-radius:999px;background:var(--surface-2);color:var(--ink);font-size:.79rem;text-decoration:none;transition:background .15s,color .15s}
+.article-toc-links a:hover{background:var(--accent);color:var(--accent-ink)}
+.analysis-prose{max-width:820px;margin:0 auto;padding:8px clamp(0px,2vw,16px)}
+.analysis-prose h3{position:relative;margin:2.8rem 0 .85rem;padding:0 0 12px;border-bottom:1px solid var(--line);font-size:clamp(1.25rem,2vw,1.55rem);line-height:1.2;letter-spacing:-.025em;font-weight:780}
+.analysis-prose h3:before{content:"";display:inline-block;width:7px;height:1em;margin-right:11px;border-radius:8px;background:var(--accent);vertical-align:-.12em;box-shadow:0 0 12px color-mix(in srgb,var(--accent) 60%,transparent)}
+.analysis-prose h3:first-of-type{margin-top:0;padding:18px 20px;border:1px solid color-mix(in srgb,var(--accent) 30%,var(--line));border-left:4px solid var(--accent);border-radius:16px;background:color-mix(in srgb,var(--accent) 7%,var(--surface))}
+.analysis-prose h3:first-of-type:before{display:none}
+.analysis-prose p{max-width:76ch;margin:0 0 1.05rem;line-height:1.78}
+.analysis-prose strong{color:var(--ink)}
+.analysis-prose a:not(.btn){text-decoration-thickness:1px;text-underline-offset:3px}
+.analysis-prose ul{padding-left:1.25rem;margin:1rem 0 1.45rem}
+.analysis-prose ul li{padding-left:.25rem;margin:.65rem 0;line-height:1.7}
+.analysis-prose ol.action-list{list-style:none;counter-reset:action;margin:1.1rem 0 1.6rem;padding:0;display:grid;gap:10px}
+.analysis-prose ol.action-list li{counter-increment:action;position:relative;margin:0;padding:17px 18px 17px 58px;border:1px solid var(--line);border-radius:15px;background:var(--surface);box-shadow:0 4px 14px rgba(0,0,0,.045);line-height:1.7}
+.analysis-prose ol.action-list li:before{content:counter(action,decimal-leading-zero);position:absolute;left:16px;top:17px;display:grid;place-items:center;width:28px;height:28px;border-radius:9px;background:color-mix(in srgb,var(--accent) 17%,var(--surface));color:var(--accent);font-size:.68rem;font-weight:850}
+.analysis-prose blockquote{margin:1.5rem 0;padding:16px 20px;border-left:3px solid var(--accent);border-radius:0 14px 14px 0;background:var(--surface);color:var(--muted)}
+.analysis-prose code{padding:.12em .4em;border:1px solid var(--line);border-radius:5px;background:var(--surface-2);font-size:.9em}
+.analysis-back{display:flex;align-items:center;gap:15px;flex-wrap:wrap;margin-top:3rem!important;padding-top:20px;border-top:1px solid var(--line)}
+.analysis-back .btn{margin-right:2px}
+.text-link{font-size:.9rem;font-weight:650}
+
+/* All story filters stay open and visible immediately; no hidden accordion. */
+.filter-panel{margin:20px 0 30px;padding:clamp(16px,2.2vw,24px);border:1px solid var(--line);border-radius:22px;background:linear-gradient(145deg,var(--surface),color-mix(in srgb,var(--surface-2) 48%,var(--surface)));box-shadow:var(--shadow)}
+.filter-panel-head{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.filter-panel-head>div{margin-right:auto}
+.filter-eyebrow{margin:0 0 3px;font-size:.63rem}
+.filter-panel-head h2{margin:0;font-size:1.22rem;line-height:1.2;letter-spacing:-.025em}
+.filter-count{margin:0;color:var(--muted);font-size:.83rem;font-variant-numeric:tabular-nums;white-space:nowrap}
+.filter-reset{flex:none;padding:7px 11px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--muted);font:inherit;font-size:.78rem;font-weight:650;cursor:pointer}
+.filter-reset:hover{border-color:var(--accent);color:var(--accent)}
+.filter-panel .toolbar{margin:0 0 13px}
+.filter-panel .search{height:48px;box-shadow:none;border-radius:13px}
+.filter-group-label{margin:0 0 8px;color:var(--muted);font-size:.7rem;font-weight:750;letter-spacing:.1em;text-transform:uppercase}
+.filter-panel .filters{gap:8px;margin:0}
+.filter-panel .filters button{padding:8px 10px 8px 13px;font-size:.82rem;transition:transform .15s,border-color .15s,background .15s}
+.filter-panel .filters button:hover{transform:translateY(-1px)}
+.filter-panel .filter-tools{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:16px 0 0;padding-top:14px;border-top:1px solid var(--line)}
+.filter-panel .filter-tools label{font-size:.72rem}
+.filter-panel .filter-tools select{min-height:46px;border-radius:12px}
+.filter-panel .filter-tools .important-only{min-height:46px;padding:8px 12px;cursor:pointer}
+.filter-panel .important-only span span{display:block}
+.filter-panel .important-only .hint{margin-top:1px;font-size:.68rem}
+.filter-panel .filter-tools .important-only strong{color:var(--ink)}
+@media(max-width:760px){.analysis-hero{grid-template-columns:1fr}.analysis-visual{min-height:210px;max-height:280px}.analysis-visual img{min-height:210px}.analysis-visual:after{background:linear-gradient(0deg,var(--surface) 0%,transparent 45%)}.analysis-heading{padding:24px}.filter-panel .filter-tools{grid-template-columns:1fr 1fr}.filter-panel .filter-tools .important-only{grid-column:1/-1}.article-toc{display:block}.article-toc-label{display:inline-flex;margin-bottom:9px}}
+@media(max-width:480px){.filter-panel-head{gap:9px;flex-wrap:wrap}.filter-panel-head>div{width:100%}.filter-count{margin-right:auto}.filter-panel .filter-tools{grid-template-columns:1fr}.filter-panel .filter-tools .important-only{grid-column:auto}.analysis-prose ol.action-list li{padding:15px 14px 15px 52px}.analysis-prose ol.action-list li:before{left:13px;top:15px}}
+@media(prefers-reduced-motion:reduce){.analysis-visual img,.article-toc-links a,.filter-panel .filters button{transition:none}.analysis-hero:hover .analysis-visual img{transform:none}}
+
+"""
+
+DESIGN_CSS += """
+/* Newsletter signup: visually distinct, but only rendered when an owner-approved HTTPS URL exists. */
+.subscribe{position:relative;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(230px,.65fr);gap:28px;align-items:center;overflow:hidden;margin:44px 0 0;padding:clamp(22px,3vw,34px);border-radius:24px;background:radial-gradient(ellipse at 95% 10%,color-mix(in srgb,var(--accent) 17%,transparent),transparent 42%),var(--surface);box-shadow:var(--shadow)}
+.subscribe:after{content:"";position:absolute;right:-70px;bottom:-105px;width:220px;height:220px;border:1px solid color-mix(in srgb,var(--accent) 22%,transparent);border-radius:50%;box-shadow:0 0 0 24px color-mix(in srgb,var(--accent) 4%,transparent),0 0 0 48px color-mix(in srgb,var(--accent) 3%,transparent);pointer-events:none}
+.subscribe-copy,.subscribe-action{position:relative;z-index:1}
+.subscribe h2{max-width:22ch;margin:5px 0 9px;font-size:clamp(1.55rem,3vw,2.1rem);line-height:1.08;letter-spacing:-.035em}
+.subscribe-copy>p:not(.subscribe-eyebrow){max-width:58ch;margin:0;color:var(--muted);line-height:1.65}
+.subscribe-points{display:flex;flex-wrap:wrap;gap:7px;margin-top:17px}
+.subscribe-points span{padding:5px 9px;border:1px solid var(--line);border-radius:999px;background:color-mix(in srgb,var(--surface) 84%,transparent);color:var(--muted);font-size:.72rem;font-weight:650}
+.subscribe-action{padding-left:24px;border-left:1px solid var(--line)}
+.subscribe-btn{display:flex;align-items:center;justify-content:space-between;gap:18px;width:100%;min-height:52px;padding:12px 16px;border:1px solid var(--accent);border-radius:14px;background:var(--accent);color:var(--accent-ink);font-weight:760;text-decoration:none;box-shadow:0 10px 24px color-mix(in srgb,var(--accent) 20%,transparent);transition:transform .16s,box-shadow .16s}
+.subscribe-btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px color-mix(in srgb,var(--accent) 27%,transparent)}
+.subscribe-btn span{font-size:1.2rem}
+.subscribe-action>p{margin:10px 0 0;color:var(--muted);font-size:.75rem;line-height:1.55}
+.subscribe-action>p a{color:var(--ink)}
+.subscribe-form{display:flex;flex-direction:column}
+.subscribe-form input{width:100%;min-height:48px}
+.subscribe-form button{min-height:48px;border-radius:14px;background:var(--accent);color:var(--accent-ink)}
+@media(max-width:700px){.subscribe{grid-template-columns:1fr;gap:18px}.subscribe-action{padding:17px 0 0;border-left:0;border-top:1px solid var(--line)}.subscribe h2{max-width:30ch}}
+@media(prefers-reduced-motion:reduce){.subscribe-btn{transition:none}.subscribe-btn:hover{transform:none}}
+"""
 
 
 if __name__ == "__main__":

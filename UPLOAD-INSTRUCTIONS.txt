@@ -1,31 +1,41 @@
-SECURITY BRIEF - PHASE 1 UPDATE
+SECURITY BRIEF - DESIGN AND UX UPDATE
 
-This is an update bundle for the existing GitHub repository. Do not upload this ZIP file as-is and do not replace the whole repository with it.
+This is a patch for the existing repository. It is not a replacement repository.
 
-Contents to merge into the repository root (overwriting matching files):
+What this update changes:
+- Reworks original-analysis article pages into a clear editorial layout with cover art, reading time, section navigation and readable typography.
+- Fixes Markdown rendering of numbered lists. The article's five defensive checks now render as separate numbered action cards rather than one long paragraph.
+- Makes all story filters visible immediately in a grouped control panel; adds a Reset control and a live shown/total count.
+- Prepares a modern Mailchimp newsletter CTA. It is intentionally not rendered until a real public signup URL is configured, so the live site will not show a dead button.
+- Updates the edge-device analysis with verified links to the BeyondTrust and AhsayCBS source articles; removes unresolved source placeholders.
+- Keeps the existing Phase 1 feed freshness changes and Google verification-file handling.
+
+Files to merge into the repository root (overwrite matching files):
 - build.py
 - feeds.json
 - test_autoblog.py
 - google06dce61680795c6c.html
 - .github/workflows/autoblog.yml
+- content/briefings/edge-devices-under-attack-2026-10-20.md
 - tests/fixtures/*
 
-Recommended installation (preserves folders reliably):
+Recommended install:
 1. Download and extract this ZIP on your computer.
-2. Open your existing repository with GitHub Desktop (or clone it if it is not already local).
-3. Copy the extracted contents into the existing repository folder. Allow the four root files and workflow file to be replaced. Merge tests/fixtures into the existing tests/fixtures folder; do not delete other tests.
-4. In GitHub Desktop, review the changed files, commit, and Push origin.
-5. In GitHub: Actions > autoblog > Run workflow. Wait for the run to finish, then confirm the Pages deployment succeeded.
-6. Open the site and status.json. The feed-check timestamp should advance even when no new stories are found. The content-publication timestamp should only change when content changes.
+2. Open or clone the existing repo with GitHub Desktop.
+3. Copy the extracted files into the existing repo folder, preserving the paths above. Merge tests/fixtures; do not delete other tests or content files.
+4. Commit and Push origin in GitHub Desktop.
+5. In GitHub, open Actions > autoblog > Run workflow. Wait for the workflow and Pages deployment to succeed.
+6. Reload the site. Hard-refresh if an older page is cached.
 
-The workflow runs 37 offline regression tests before fetching feeds. They pass in the included version.
+Do not upload the ZIP itself expecting GitHub to unpack it. Do not replace the existing repository with this patch.
 
-Feed updates:
-- Google Threat Intelligence now uses the RSS URL linked from its own topic page.
-- Sophos uses the RSS URL linked from the Sophos Blog.
-- CISA's official cybersecurity-advisories feed URL is retained. The earlier GitHub Actions run returned HTTP 403, which indicates access was denied in that run; it does not prove the official feed URL is dead. Recheck after deployment.
+Mailchimp:
+- The only information needed to activate the button is the public hosted signup-form URL (or, if you want an embedded email field instead, Mailchimp's embed-form code).
+- Do not send an API key, password, or private audience credentials.
+- site.json is deliberately excluded because it contains private publisher/contact details. The signup URL will be added to that existing config after it is provided.
+- The signup card describes a concise weekly security briefing. The actual newsletter still needs to be prepared and sent from Mailchimp; no automatic sending is configured by this website update.
 
-Important:
-- The included files do not contain site.json or your private address/contact configuration.
-- The build/test run in this offline sandbox cannot verify live RSS retrieval from GitHub Actions.
-- Nothing in this ZIP has been pushed to GitHub or deployed. Deployment happens only after you commit and push these files.
+Validation:
+- 42 offline regression tests pass.
+- An offline fixture build passed; generated article, filters, responsive CSS and inline JavaScript were checked.
+- This patch has not been pushed to GitHub or deployed.

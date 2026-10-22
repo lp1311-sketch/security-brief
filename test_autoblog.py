@@ -305,5 +305,52 @@ class FeedEndpoints(unittest.TestCase):
                          "https://www.cisa.gov/cybersecurity-advisories/all.xml")
 
 
+class EditorialPresentation(unittest.TestCase):
+    def test_ordered_markdown_becomes_action_cards(self):
+        rendered = build.md_to_html("1. **Check exposure.** Restrict public management access.\n2. Review logs.")
+        self.assertIn('<ol class="action-list">', rendered)
+        self.assertIn("<li><strong>Check exposure.</strong> Restrict public management access.</li>", rendered)
+        self.assertIn("<li>Review logs.</li>", rendered)
+        self.assertEqual(rendered.count("<li>"), 2)
+
+    def test_article_headings_get_navigation_anchors(self):
+        rendered = build.md_to_html("## Short answer\n\nBrief.\n\n## What to check\n\nSteps.")
+        toc = build.article_toc(rendered)
+        self.assertIn('id="section-1-short-answer"', rendered)
+        self.assertIn('href="#section-2-what-to-check"', toc)
+        self.assertIn("On this page", toc)
+
+    def test_filter_panel_is_visible_and_has_reset(self):
+        page = build.filter_bar([item("Important CVE", tags=["critical"])])
+        self.assertIn('class="filter-panel"', page)
+        self.assertIn('id="reset-filters"', page)
+        self.assertIn('id="date-filter"', page)
+        self.assertIn('id="sort-filter"', page)
+        self.assertIn('id="important-only"', page)
+        self.assertNotIn("<details", page)
+
+    def test_mailchimp_signup_cta_uses_only_public_https_link(self):
+        cfg = {"newsletter_signup_url": "https://example.us1.list-manage.com/subscribe?u=public"}
+        html_out = build._newsletter(cfg, "")
+        self.assertIn("THE WEEKLY SIGNAL", html_out)
+        self.assertIn("Get the weekly briefing", html_out)
+        self.assertIn('href="https://example.us1.list-manage.com/subscribe?u=public"', html_out)
+        self.assertNotIn("api_key", html_out.lower())
+        self.assertEqual(build._newsletter({"newsletter_signup_url": "http://example.com"}, ""), "")
+
+    def test_analysis_page_uses_new_layout_and_reading_controls(self):
+        arts = build.load_articles(ROOT / "content", [])
+        self.assertTrue(arts)
+        cfg = {"site_name": "Security Brief", "site_url": "https://test.example.org/brief", "description": "test"}
+        page = build.article_page(arts[0], cfg, {"donations": []})
+        self.assertIn('class="analysis-hero"', page)
+        self.assertIn('class="article-toc"', page)
+        self.assertIn("min read", page)
+        self.assertIn('<ol class="action-list">', page)
+        self.assertNotIn("Original link to add after review", page)
+        self.assertIn("china-linked-hackers-exploited.html", page)
+        self.assertIn("ahsaycbs-flaws-exploited-to-deploy-web.html", page)
+
+
 if __name__ == "__main__":
     unittest.main()
