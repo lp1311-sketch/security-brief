@@ -1868,6 +1868,27 @@
    "instructions_checked": true
   },
   {
+   "id": "a9227db3dd33",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "LiteLLM Suspects GitHub Token Leak in AI Gateway Logs Behind Malicious Package Release",
+   "link": "https://thehackernews.com/2026/10/litellm-suspects-github-token-leak-in.html",
+   "published": "2026-10-22T08:28:48+00:00",
+   "summary": "LiteLLM on Wednesday disclosed that threat actors compromised \"multiple independent security controls\" to push a malicious version of the Python package containing a credential stealer and a backdoor. On October 21, 2026, LiteLLM's release pipeline was compromised to push 1.107.0 to the Docker Hub registry and the…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgiEKKMESHBCMBHXA8Yf_clmAeFQXSdaKTEz0t_6RDzj1zXcwiPxA4gy2MPmftM6vyCkoG7OsCZJ2a8t7xJe1qbn3tEWRZfVgStzQVJy0ZfwEkjhg6-A34iT3XnQG7nYku04cWbIaHwkQmuDVghCeJBx5xJcbtozsyD3Genw4wyxFtgWIVD-rRGRLMBKoq2/s1600/litellm-breach.jpg",
+   "cves": [],
+   "first_seen": "2026-10-22T09:09:57.209664+00:00",
+   "instructions": [
+    "Should this file return a valid response, the malware proceeds to download a second-stage Python script from \"<domain>/codepy\" and execute it.",
+    "In an advisory published Wednesday, LiteLLM said it had hardened its release pipeline following a similar incident that took place earlier this March.",
+    "Developers are advised to remove LiteLLM 1.107.0 from their machines, isolate hosts on which the malicious version was installed, hunt for the malicious Python artifacts, block access to the exfiltration domain, rotate all credentials, and investigate the execution of \"/codepy.\"",
+    "The attacker used a token belonging to one of its GitHub organization owners to disable branch protections and force-push the malicious changes."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "1fae9cde44bf",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1885,6 +1906,26 @@
    ],
    "instructions_checked": true,
    "source_type": "news"
+  },
+  {
+   "id": "eff3ebf7d52f",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "New QPACK Flaws Can Crash HTTP/3 Servers, Trigger Up to 4,000-Fold Memory Amplification",
+   "link": "https://thehackernews.com/2026/10/new-qpack-flaws-can-crash-http3-servers.html",
+   "published": "2026-10-22T06:38:31+00:00",
+   "summary": "A remote attacker who has not logged in can crash many HTTP/3 web servers with a single connection, security firm FoxIO disclosed, releasing working proof-of-concept code. By sending a small batch of compressed HTTP headers that expands in memory to a much larger set, the attacker can force the server to use thousands…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidksxeLP_h5vpqmr62J_72yOAmQIRsZDLE6bpclFaHY1yQX6Dv-omiTvu_j49FuvXUOwxQT8levg89_AGRMiPNidANkEn1PSGSaNFoCVnY_VQ2Ny9D7FhLwtd9VDboOjxPi6Ssg78CdLFUzShhEt8oK6x0obKcHCZbbIMWBylnQCVCbQGUqjfbBJAKCew/s1600/http3.jpg",
+   "cves": [],
+   "first_seen": "2026-10-22T09:09:57.209664+00:00",
+   "instructions": [
+    "The affected stacks cap the compressed batch that arrives on the wire, but not the unpacked result, or they apply the cap too late, so a single request can expand into hundreds of thousands of header entries that the server holds in memory.",
+    "On quic-go, a 1 MB compressed batch unpacked into about 160,000 header fields and left roughly 15 MB held in the request, about 17 times the bytes sent; quic-go's own advisory puts the possible expansion at around 50 times.",
+    "For the stacks with no fix, FoxIO gives interim steps: on Bun, do not expose an HTTP/3 server; on mitmproxy, turn off HTTP/3 by passing --set http3=false; and for the h3 Rust library, set a sensible limit with max_field_section_size."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "e7e058293387",
@@ -1927,6 +1968,27 @@
    ],
    "instructions_checked": true,
    "source_type": "news"
+  },
+  {
+   "id": "29143f2ae20d",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Node.js Brotli Decoder Bug Could Allow Remote Code Execution in All Supported Versions",
+   "link": "https://thehackernews.com/2026/10/nodejs-brotli-decoder-bug-could-allow.html",
+   "published": "2026-10-22T07:47:22+00:00",
+   "summary": "Node.js released security updates on October 21 for its three supported release lines, 22.x, 24.x and 26.x, fixing 10 flaws. The most serious is a bug in the Brotli decompression code that Node.js bundles, which the project says can allow remote code execution, meaning an attacker could run code of their choosing on…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFwR_FE94PTthun36oXfrSIiYx7N-Hb3Ww1w2gFs6x6qs0mML2v_TmYZmgqYKxB6VlMBzmIQksNdHldgX-UxykDBNwnszmBuB7IZWyWJhxei65NJlOImUWde5tYzB7D94dmieFBGhFNVAt3bL4qlhXkl4o3uw362QKgJpk37xutyRmM5bB3sHR8XMC3bc/s1600/nodejs-rce.jpg",
+   "cves": [],
+   "first_seen": "2026-10-22T09:09:57.209664+00:00",
+   "instructions": [
+    "The advisory offers no temporary workaround for the Brotli flaw, so an application that cannot upgrade immediately has no fallback within Node.js itself.",
+    "Node.js 20.x and earlier have reached end of life and will not receive the fix, so they should be moved to a supported line.",
+    "Two are TLS certificate checks an attacker could bypass by writing a server's IP address in an unusual form, so a certificate matches a host it should not (CVE-2026-106069 and CVE-2026-105483).",
+    "The copy of undici, the HTTP client behind fetch(), moves to a version that fixes three moderate advisories: one in its Subresource Integrity check and two memory-exhaustion flaws, one of them in the WebSocket client built into Node.js."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "82bd71e8965d",
@@ -2193,6 +2255,27 @@
    "instructions": [],
    "instructions_checked": true,
    "source_type": "news"
+  },
+  {
+   "id": "3d29fe5d9f89",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Someone Tried to Exploit PHP2Shell 4 Days Before the Vulnerabilities Were Publicly Disclosed",
+   "link": "https://thehackernews.com/2026/10/someone-tried-to-exploit-php2shell-4.html",
+   "published": "2026-10-22T06:34:10+00:00",
+   "summary": "Amazon's Threat Intelligence team on Wednesday said it detected an attempt to exploit the newly disclosed PHP2Shell vulnerabilities on October 17, 2026, against its MadPot honeypot service, as the flaws come under broad exploitation in the wild following the release of the patches. \"The exploit attempt originated from…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZXm1gLzaKPP-QW888zIx_tXRCirkgZBsOOn0icTEOrFBf7w28955jH1zY8jxw2Cf-g2Qp9mPHgrBe7E5dux_L2XUzdaVZfvRgj_utCT-nTiU7haAkAr_F6eEeW5YJmtwbtJoIuumhnv5F9tFG_2BcLwnaqwkFGWEvFnWsUDHHuobMhZ_letCSD6I56Lw_/s1600/php-hacks.jpg",
+   "cves": [],
+   "first_seen": "2026-10-22T09:09:57.209664+00:00",
+   "instructions": [
+    "Cybersecurity and Infrastructure Security Agency ( CISA ), urging organizations to apply the fixes as soon as possible or consider taking them offline.",
+    "\"It is likely there is a long tail of environments needing to apply this patch as PHP is bundled into many other operating system distributions, as well as is found in many historic environments.\"",
+    "AI-assisted analysis makes it cheaper to turn a patch diff or advisory into a working exploit.",
+    "\"Chainguard had received the patch in advance so its users could update the moment the vulnerabilities were disclosed,\" the PHP Foundation said."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "17efaa05bd14",

@@ -48,6 +48,9 @@ main.wrap{padding-top:32px;padding-bottom:72px}
 .grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(270px,1fr))}
 .card{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
 .card:hover{transform:translateY(-2px);border-color:color-mix(in srgb,var(--accent) 45%,var(--line));box-shadow:var(--shadow)}
+.resource-card{max-width:780px;border-left:3px solid var(--accent)}
+.resource-card .card-body{padding:22px}
+.resource-card .summary{-webkit-line-clamp:unset;max-width:680px}
 .card.prio-Critical{border-top:3px solid var(--crit)}
 .card.prio-High{border-top:3px solid var(--high)}
 .card-media{position:relative;display:block;background:var(--surface-2)}
