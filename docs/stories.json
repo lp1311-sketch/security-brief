@@ -23,6 +23,25 @@
    "url": "story/15367a3259ff.html"
   },
   {
+   "id": "23872cb1986e",
+   "title": "Arista Warns of Critical VeloCloud SQL Injection Zero-Day Exploited in Attacks",
+   "summary": "Attackers are exploiting a zero-day SQL injection flaw in Arista's VeloCloud Orchestrator (VCO), the central management system for VeloCloud SD-WAN networks, the company…",
+   "priority": "High",
+   "category": "Patch Radar",
+   "date": "22 Oct 2026, 19:05 UTC",
+   "priority_score": 12,
+   "priority_basis": [
+    "Editorial attention score 12 reached the High threshold (not CVSS)"
+   ],
+   "tags": [
+    "exploited",
+    "microsoft"
+   ],
+   "kev": [],
+   "sources": "The Hacker News, BleepingComputer",
+   "url": "story/23872cb1986e.html"
+  },
+  {
    "id": "ab875104cf16",
    "title": "New Serious PHP Vulnerabilities Released and Patched",
    "summary": "PHP maintainers have released fixes for two critical vulnerabilities: PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35 fix two critical vulnerabilities that can allow…",
@@ -81,24 +100,6 @@
    ],
    "sources": "The Hacker News",
    "url": "story/0d304799e621.html"
-  },
-  {
-   "id": "5d4f96d6acc6",
-   "title": "Arista patches new VeloCloud Orchestrator zero-day exploited in attacks",
-   "summary": "Arista Networks released security updates to patch an actively exploited zero-day vulnerability affecting VeloCloud Orchestrator (VCO) On-Prem deployments.",
-   "priority": "High",
-   "category": "Patch Radar",
-   "date": "22 Oct 2026, 17:18 UTC",
-   "priority_score": 7,
-   "priority_basis": [
-    "Editorial attention score 7 reached the High threshold (not CVSS)"
-   ],
-   "tags": [
-    "exploited"
-   ],
-   "kev": [],
-   "sources": "BleepingComputer",
-   "url": "story/5d4f96d6acc6.html"
   },
   {
    "id": "5f2ddb413304",
@@ -262,24 +263,6 @@
    "url": "story/7bcbd743c3f7.html"
   },
   {
-   "id": "f6f763b9dab2",
-   "title": "Marvell, Microsoft & Oracle Work to Standardize Data Center Hardware Security",
-   "summary": "The effort is aimed at standardizing a NIST FIPS 140-3 Level 3 integrated HSM for cloud and hyperscale data center infrastructure.",
-   "priority": "Standard",
-   "category": "Microsoft",
-   "date": "21 Oct 2026, 20:14 UTC",
-   "priority_score": 5,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "microsoft"
-   ],
-   "kev": [],
-   "sources": "Dark Reading",
-   "url": "story/f6f763b9dab2.html"
-  },
-  {
    "id": "7f88afbf76a3",
    "title": "Attackers Abuse UpdraftCentral Keys to Plant Backdoors on WordPress Sites",
    "summary": "Unknown threat actors breached TeamUpdraft's website and potentially gained unauthorized access to customers' connection keys for UpdraftCentral, UpdraftVault, and…",
@@ -334,22 +317,6 @@
    "url": "story/0f04a6f0fbac.html"
   },
   {
-   "id": "a92bc795de6c",
-   "title": "FBI says SafePay ransomware gang ‘among most active’ with more than 600 victims since 2024",
-   "summary": "The FBI and cyber agencies in the UK and Germany said SafePay is targeting businesses and critical infrastructure by guessing passwords, exploiting vulnerabilities and…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "20 Oct 2026, 20:27 UTC",
-   "priority_score": 5,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "The Record",
-   "url": "story/a92bc795de6c.html"
-  },
-  {
    "id": "4fd8d5a31fd8",
    "title": "ClickFix Attackers Exploit Siemens Software Center Flaw to Deploy Remote Access Trojan",
    "summary": "Siemens has addressed a DLL sideloading vulnerability impacting Siemens Software Center that it said has been exploited in ClickFix attacks. The high-severity…",
@@ -392,6 +359,22 @@
    ],
    "sources": "The Hacker News",
    "url": "story/5fc8c6dd8c54.html"
+  },
+  {
+   "id": "177124c993da",
+   "title": "Capcom confirms data breach affecting 11.7 million accounts",
+   "summary": "Japanese gaming giant Capcom has confirmed that hackers breached its membership service, CAPCOM ID, exposing more than 11.7 million customer email addresses and…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "22 Oct 2026, 20:22 UTC",
+   "priority_score": 4,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "BleepingComputer",
+   "url": "story/177124c993da.html"
   },
   {
    "id": "244621daeb8f",
@@ -528,6 +511,24 @@
    "url": "story/832124389031.html"
   },
   {
+   "id": "f6f763b9dab2",
+   "title": "Marvell, Microsoft & Oracle Work to Standardize Data Center Hardware Security",
+   "summary": "The effort is aimed at standardizing a NIST FIPS 140-3 Level 3 integrated HSM for cloud and hyperscale data center infrastructure.",
+   "priority": "Standard",
+   "category": "Microsoft",
+   "date": "21 Oct 2026, 20:14 UTC",
+   "priority_score": 4,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "microsoft"
+   ],
+   "kev": [],
+   "sources": "Dark Reading",
+   "url": "story/f6f763b9dab2.html"
+  },
+  {
    "id": "bf2645506057",
    "title": "PHP says AI review of critical bugs first sparked alarm in August, but signs surfaced in 2024",
    "summary": "In a lengthy statement about two critical vulnerabilities, the PHP Foundation explained how one dated to 2024, how a recent third-party review by AI companies heightened…",
@@ -634,20 +635,20 @@
    "url": "story/5a4ecf9699d2.html"
   },
   {
-   "id": "6df7533cf52d",
-   "title": "Linux: KVM-Schwachstelle PwnEscape (CVE-2026-99999) erlaubt Ausbruch",
-   "summary": "Ein Sicherheitsforscher hatte bereits Anfang August 2026 eine 0-Day-Schwachstelle aufgedeckt, die einen Ausbruch aus der unter Linux zur Virtualisierung verwendeten KVM…",
+   "id": "a92bc795de6c",
+   "title": "FBI says SafePay ransomware gang ‘among most active’ with more than 600 victims since 2024",
+   "summary": "The FBI and cyber agencies in the UK and Germany said SafePay is targeting businesses and critical infrastructure by guessing passwords, exploiting vulnerabilities and…",
    "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "19 Oct 2026, 22:53 UTC",
+   "category": "Attacks & Breaches",
+   "date": "20 Oct 2026, 20:27 UTC",
    "priority_score": 4,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
    "tags": [],
    "kev": [],
-   "sources": "Born's IT and Windows Blog, The Hacker News",
-   "url": "story/6df7533cf52d.html"
+   "sources": "The Record",
+   "url": "story/a92bc795de6c.html"
   },
   {
    "id": "b1e34d264127",
@@ -700,6 +701,24 @@
    "url": "story/0151e8522bf7.html"
   },
   {
+   "id": "d76b50dba162",
+   "title": "The AI Agent Nobody Owns: Watch Expert Webinar On Your Newest Insider Threat",
+   "summary": "Right now, there is probably an AI agent running on a laptop somewhere in your network. It stores API keys and database passwords, can access your internal systems, and…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "22 Oct 2026, 19:05 UTC",
+   "priority_score": 3,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "ai"
+   ],
+   "kev": [],
+   "sources": "The Hacker News",
+   "url": "story/d76b50dba162.html"
+  },
+  {
    "id": "c78f9791369d",
    "title": "Amazon says PHP2Shell exploitation began 4 days before patches",
    "summary": "Security researchers at Amazon Threat Intelligence say attackers began targeting the PHP2Shell flaws four days before security patches were released on Wednesday.",
@@ -714,24 +733,6 @@
    "kev": [],
    "sources": "BleepingComputer, SecurityWeek",
    "url": "story/c78f9791369d.html"
-  },
-  {
-   "id": "d76b50dba162",
-   "title": "The AI Agent Nobody Owns: Watch Expert Webinar On Your Newest Insider Threat",
-   "summary": "Right now, there is probably an AI agent running on a laptop somewhere in your network. It stores API keys and database passwords, can access your internal systems, and…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "22 Oct 2026, 11:45 UTC",
-   "priority_score": 3,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "ai"
-   ],
-   "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/d76b50dba162.html"
   },
   {
    "id": "a9227db3dd33",
@@ -802,22 +803,6 @@
    "kev": [],
    "sources": "BleepingComputer",
    "url": "story/e9fd60a700e2.html"
-  },
-  {
-   "id": "04b5c5ae9150",
-   "title": "Cloud Security Alliance Survey Finds Data Loss Prevention Often Detects Data Loss Only After It Happens",
-   "summary": "Research finds that, among respondents experiencing data loss, only 16% said DLP blocked their most significant incidents before data left the organization.",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "21 Oct 2026, 20:03 UTC",
-   "priority_score": 3,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "Dark Reading",
-   "url": "story/04b5c5ae9150.html"
   },
   {
    "id": "a9726704f0fa",
@@ -1275,20 +1260,20 @@
    "url": "story/48b9aea0ee83.html"
   },
   {
-   "id": "a094aa58c0da",
-   "title": "Hackers exploit Collabora RCE flaw to backdoor Nextcloud servers",
-   "summary": "Threat actors are exploiting a critical command execution flaw, now tracked as CVE-2026-110447, in the Collabora Online - Built-in CODE Server app (richdocumentscode)…",
+   "id": "49672d89136f",
+   "title": "Disgraced eMudhra drops out of TLS business after using cert private key of 4",
+   "summary": "eMudra, the certificate authority that issued eight intermediate TLS credentials so weak that anyone could mint certificates for any website or mail server—one had a…",
    "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "15 Oct 2026, 20:25 UTC",
-   "priority_score": 3,
+   "category": "Industry & Research",
+   "date": "22 Oct 2026, 20:17 UTC",
+   "priority_score": 2,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
    "tags": [],
    "kev": [],
-   "sources": "BleepingComputer",
-   "url": "story/a094aa58c0da.html"
+   "sources": "Ars Technica Security",
+   "url": "story/49672d89136f.html"
   },
   {
    "id": "afb644b2382c",
@@ -1595,36 +1580,20 @@
    "url": "story/ca191a78820b.html"
   },
   {
-   "id": "3371acd3dcb3",
-   "title": "Lazarus hackers use post-quantum cryptography for malware delivery",
-   "summary": "North Korean hackers are using a post-quantum cryptographic mechanism to secure malicious payload delivery in new operations that combine old and new malware.",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "21 Oct 2026, 20:31 UTC",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "BleepingComputer",
-   "url": "story/3371acd3dcb3.html"
-  },
-  {
-   "id": "565842927b14",
-   "title": "Meta on the spot for $25 billion under New Mexico privacy ruling",
-   "summary": "The Cambridge Analytica data privacy scandal from a decade ago is still weighing on Meta's finances.",
+   "id": "04b5c5ae9150",
+   "title": "Cloud Security Alliance Survey Finds Data Loss Prevention Often Detects Data Loss Only After It Happens",
+   "summary": "Research finds that, among respondents experiencing data loss, only 16% said DLP blocked their most significant incidents before data left the organization.",
    "priority": "Standard",
    "category": "Industry & Research",
-   "date": "21 Oct 2026, 20:25 UTC",
+   "date": "21 Oct 2026, 20:03 UTC",
    "priority_score": 2,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
    "tags": [],
    "kev": [],
-   "sources": "The Record",
-   "url": "story/565842927b14.html"
+   "sources": "Dark Reading",
+   "url": "story/04b5c5ae9150.html"
   },
   {
    "id": "80aac9868cd3",
@@ -2304,6 +2273,38 @@
    "kev": [],
    "sources": "Dark Reading",
    "url": "story/3f1030ed0e26.html"
+  },
+  {
+   "id": "3371acd3dcb3",
+   "title": "Lazarus hackers use post-quantum cryptography for malware delivery",
+   "summary": "North Korean hackers are using a post-quantum cryptographic mechanism to secure malicious payload delivery in new operations that combine old and new malware.",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "21 Oct 2026, 20:31 UTC",
+   "priority_score": 1,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "BleepingComputer",
+   "url": "story/3371acd3dcb3.html"
+  },
+  {
+   "id": "565842927b14",
+   "title": "Meta on the spot for $25 billion under New Mexico privacy ruling",
+   "summary": "The Cambridge Analytica data privacy scandal from a decade ago is still weighing on Meta's finances.",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "21 Oct 2026, 20:25 UTC",
+   "priority_score": 1,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "The Record",
+   "url": "story/565842927b14.html"
   },
   {
    "id": "548b69cacce8",
@@ -3722,6 +3723,22 @@
    "url": "story/6c494d43a845.html"
   },
   {
+   "id": "6df7533cf52d",
+   "title": "Linux: KVM-Schwachstelle PwnEscape (CVE-2026-99999) erlaubt Ausbruch",
+   "summary": "Ein Sicherheitsforscher hatte bereits Anfang August 2026 eine 0-Day-Schwachstelle aufgedeckt, die einen Ausbruch aus der unter Linux zur Virtualisierung verwendeten KVM…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "19 Oct 2026, 22:53 UTC",
+   "priority_score": 0,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "Born's IT and Windows Blog",
+   "url": "story/6df7533cf52d.html"
+  },
+  {
    "id": "300b140b7b13",
    "title": "Schwachstelle CVE-2026-109390 (CVSS v3.1 9.8) im AnyDesk-Client für Linux",
    "summary": "Ich stelle mal eine Information hier ein, auf die ich nun von zwei Blog-Lesern hingewiesen wurde. Im AnyDesk-Client für Linux gibt es eine kritischen Schwachstelle…",
@@ -4236,22 +4253,6 @@
    "kev": [],
    "sources": "Dark Reading",
    "url": "story/5921092180eb.html"
-  },
-  {
-   "id": "048b26c65907",
-   "title": "Targeted ads delivered 0-click exploits to install mercenary malware",
-   "summary": "Researchers say that mercenary hackers laced ads with zero-click exploits that installed sophisticated malware on the devices of targeted individuals when they did…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "15 Oct 2026, 20:32 UTC",
-   "priority_score": 0,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "Ars Technica Security",
-   "url": "story/048b26c65907.html"
   }
  ]
 }

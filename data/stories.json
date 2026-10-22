@@ -21,6 +21,24 @@
    "instructions_checked": true
   },
   {
+   "id": "49672d89136f",
+   "source": "ars",
+   "source_name": "Ars Technica Security",
+   "official": false,
+   "source_type": "news",
+   "title": "Disgraced eMudhra drops out of TLS business after using cert private key of 4",
+   "link": "https://arstechnica.com/security/2026/10/disgraced-emudhra-drops-out-of-tls-business-following-certificate-debacle/",
+   "published": "2026-10-22T20:17:52+00:00",
+   "summary": "eMudra, the certificate authority that issued eight intermediate TLS credentials so weak that anyone could mint certificates for any website or mail server—one had a private encryption key of just 4—said it’s getting out of the business. V. Srinivasan, chairman of India-based eMudhra Limited, cited increasing costs…",
+   "image": "https://cdn.arstechnica.net/wp-content/uploads/2025/02/GettyImages-1778229942-1152x648.jpg",
+   "cves": [],
+   "first_seen": "2026-10-22T20:32:46.420366+00:00",
+   "instructions": [
+    "Still other devices, such as embedded devices, may never be able to block them."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "c625905b3719",
    "source": "ars",
    "source_name": "Ars Technica Security",
@@ -113,24 +131,6 @@
     "Given the active exploitation, outdated versions should be updated immediately.",
     "Beyond that, users should devote care to properly securing the media servers.",
     "Recently fixed vulnerabilities in the Plex Media Server are under active exploitation in attacks that, when successful, install malware, including cryptominers and residential proxy apps, a researcher said."
-   ],
-   "instructions_checked": true,
-   "source_type": "news"
-  },
-  {
-   "id": "048b26c65907",
-   "source": "ars",
-   "source_name": "Ars Technica Security",
-   "official": false,
-   "title": "Targeted ads delivered 0-click exploits to install mercenary malware",
-   "link": "https://arstechnica.com/security/2026/10/targeted-ads-delivered-0-click-exploits-to-install-mercenary-malware/",
-   "published": "2026-10-15T20:32:41+00:00",
-   "summary": "Researchers say that mercenary hackers laced ads with zero-click exploits that installed sophisticated malware on the devices of targeted individuals when they did nothing other than load a website or open an installed app. The finding, published Thursday by the University of Toronto’s Citizen Lab, said the incident…",
-   "image": "https://cdn.arstechnica.net/wp-content/uploads/2023/07/exploit-vulnerability-security-1.jpg",
-   "cves": [],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00",
-   "instructions": [
-    "As always, installing updates in a timely manner is also a must."
    ],
    "instructions_checked": true,
    "source_type": "news"
@@ -1255,6 +1255,27 @@
    "source_type": "news"
   },
   {
+   "id": "23872cb1986e",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Arista Warns of Critical VeloCloud SQL Injection Zero-Day Exploited in Attacks",
+   "link": "https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html",
+   "published": "2026-10-22T19:05:17+00:00",
+   "summary": "Attackers are exploiting a zero-day SQL injection flaw in Arista's VeloCloud Orchestrator (VCO), the central management system for VeloCloud SD-WAN networks, the company said in an advisory on October 22. The flaw lets anyone who can log in to the orchestrator, even with a read-only customer account, gain operator…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEio5jLAiZnSHOwYGjf-F6s4HR4ileDOwAkHiX9NyW30mGUqSzgdwGVdTzCTYkgmeoGtTRaSVm-h2IBwvJ9xd84OU2t3YXd8hf5PwlGdjh6VlcYZoCNkx6Yt0FY_JlVcM3AtXI4LQyidnOE86NMVwOGcztaFtV2Qq21X1pRQi6jxiITnQIoO14XLiOWaufI/s1600/velo.jpg",
+   "cves": [],
+   "first_seen": "2026-10-22T20:32:46.420366+00:00",
+   "instructions": [
+    "Attackers are exploiting a zero-day SQL injection flaw in Arista's VeloCloud Orchestrator (VCO), the central management system for VeloCloud SD-WAN networks, the company said in an advisory on October 22.",
+    "The advisory does not say when the attacks began, which orchestrators were hit, or what the attackers did after exploiting the flaw.",
+    "Neither advisory says whether 6.1.3.10 also fixes the September flaw.",
+    "Until the fixed release is installed, Arista recommends these steps:"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "7f88afbf76a3",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1534,28 +1555,6 @@
     "The 19.4.3 and 19.3.6 releases include database changes that run during the upgrade, and on a single-node server that means downtime while they finish."
    ],
    "instructions_checked": true
-  },
-  {
-   "id": "222e66a51003",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "title": "Critical PwnEscape Linux Kernel Vulnerability Lets Guest VMs Read Host Memory",
-   "link": "https://thehackernews.com/2026/10/critical-pwnescape-linux-kernel.html",
-   "published": "2026-10-15T20:24:36+00:00",
-   "summary": "A newly disclosed critical flaw in the Linux kernel allows code inside a virtual machine to read memory on the host computer it runs on. A researcher demonstrated the leak against Vercel's live cloud sandboxes, and Vercel confirmed it. The flaw, now tracked as CVE-2026-99999 and nicknamed PwnEscape, is in the Linux…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0Y0ZP5acV4vjjJV9at7yMnz0frJTAeLd3nGmqMIcifTwGoe2NsB7pDInUjGa6aocyqoM3o-NyXKpsfyy1LRdkH5UG67UVYC_lNZDYArvg-hkmtifcalWo67Mkl3A4_2qwXomi7iJURUjoiSlBdEWtJL5N63jfuMDjI7ewZHLlTZBXlkc4zqwyxKox7eE/s1600/pwnescape-main.jpg",
-   "cves": [
-    "CVE-2026-99999"
-   ],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00",
-   "instructions": [
-    "Linux distributions ship their own kernels and often add this kind of fix without changing the version number, so check your distribution's advisory and whether the fix is in the kernel the host is actually running, not only the number from uname.",
-    "The sources give no separate workaround for this flaw if you cannot update yet.",
-    "Update the host kernel to one of the fixed versions above, or to the vendor build that includes the fix, and reboot into it."
-   ],
-   "instructions_checked": true,
-   "source_type": "news"
   },
   {
    "id": "1530955429aa",
@@ -2285,7 +2284,7 @@
    "source_type": "news",
    "title": "The AI Agent Nobody Owns: Watch Expert Webinar On Your Newest Insider Threat",
    "link": "https://thehackernews.com/2026/10/the-ai-agent-nobody-owns-watch-expert.html",
-   "published": "2026-10-22T11:45:00+00:00",
+   "published": "2026-10-22T19:05:35+00:00",
    "summary": "Right now, there is probably an AI agent running on a laptop somewhere in your network. It stores API keys and database passwords, can access your internal systems, and works without anyone watching. Nobody reviewed its access. Nobody owns it. If an employee had that much reach with that little oversight, you would…",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyT7lik0MCxUa_ALE00qK-x8qCQiM7doEPBK3sl90Y0J4N6zpBNzLI5ixKwtXItAzgHOIz9t-YerpeISJ7WcT7VJLyfWphEU4cHrm3CHpIwnsIcKT64fwNVkACsm7GxDnXqzqR4M5QXkLuUkUWxPEI5PhAI65_sXtcb2jW-0OhuVHC3n5vQnPVBrT_D5g/s1600/bit.jpg",
    "cves": [],
@@ -4685,6 +4684,26 @@
    "instructions_checked": true
   },
   {
+   "id": "177124c993da",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Capcom confirms data breach affecting 11.7 million accounts",
+   "link": "https://www.bleepingcomputer.com/news/security/capcom-confirms-data-breach-affecting-117-million-accounts/",
+   "published": "2026-10-22T20:22:45+00:00",
+   "summary": "Japanese gaming giant Capcom has confirmed that hackers breached its membership service, CAPCOM ID, exposing more than 11.7 million customer email addresses and associated information.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/22/capcom.jpg",
+   "cves": [],
+   "first_seen": "2026-10-22T20:32:46.420366+00:00",
+   "image_checked": true,
+   "instructions": [
+    "For another subset of 196 accounts, the hackers changed the CAPCOM ID login passwords in an attempt to lock the owners out, but the company took action and reset them.",
+    "Mozilla, Google, Apple block compromised eMudhra CA certificates"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "190252fca79a",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4939,29 +4958,6 @@
    ],
    "instructions_checked": true,
    "source_type": "news"
-  },
-  {
-   "id": "a094aa58c0da",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "title": "Hackers exploit Collabora RCE flaw to backdoor Nextcloud servers",
-   "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-collabora-rce-flaw-to-backdoor-nextcloud-servers/",
-   "published": "2026-10-15T20:25:04+00:00",
-   "summary": "Threat actors are exploiting a critical command execution flaw, now tracked as CVE-2026-110447, in the Collabora Online - Built-in CODE Server app (richdocumentscode) for Nextcloud.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/15/nextcloud.jpg",
-   "cves": [
-    "CVE-2026-110447"
-   ],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00",
-   "image_checked": true,
-   "instructions": [
-    "System administrators are recommended to upgrade to version 26.4.303 or later, or remove the server app if not needed.",
-    "Multiple administrator reports indicate that attacks began in mid-September, roughly a month before the formal security bulletin , the GitHub advisory , and CVE publication .",
-    "A key prerequisite for successful exploitation is that the built-in CODE server must be stopped (e.g., after a restart, upgrade, crash).",
-    "The advisory and CVE were published on October 14, a gap of more than four weeks."
-   ],
-   "instructions_checked": true
   },
   {
    "id": "74ff0a30f9fe",
