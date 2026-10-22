@@ -79,6 +79,24 @@
    "url": "story/9b69347cfd29.html"
   },
   {
+   "id": "d078ae182673",
+   "title": "CVE-2026-108456 Azure AI Foundry Elevation of Privilege Vulnerability",
+   "summary": "Server-side request forgery (ssrf) in Azure AI Foundry allows an authorized attacker to elevate privileges over a network.",
+   "priority": "High",
+   "category": "Patch Radar",
+   "date": "22 Oct 2026, 14:00 UTC",
+   "priority_score": 8,
+   "priority_basis": [
+    "Editorial attention score 8 reached the High threshold (not CVSS)"
+   ],
+   "tags": [
+    "microsoft"
+   ],
+   "kev": [],
+   "sources": "Microsoft Security Response Center",
+   "url": "story/d078ae182673.html"
+  },
+  {
    "id": "0d304799e621",
    "title": "Qilin and INC Ransomware Groups Exploit Palo Alto Networks Flaw to Bypass MFA",
    "summary": "Palo Alto Networks has disclosed that it's continuing to observe exploitation of a now-patched security flaw impacting PAN-OS and Prisma Access by ransomware actors. The…",
@@ -195,6 +213,22 @@
    "url": "story/f6fe2f9557b7.html"
   },
   {
+   "id": "6af5f5a84e31",
+   "title": "Railway warns devs to rotate secrets after potential breach",
+   "summary": "Cloud platform Railway published an urgent warning to users after detecting suspicious activity on its systems that store customer environment variables earlier this…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "22 Oct 2026, 21:25 UTC",
+   "priority_score": 5,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "BleepingComputer",
+   "url": "story/6af5f5a84e31.html"
+  },
+  {
    "id": "a45e553ca30b",
    "title": "ThreatsDay: AI Secrets Leak, PingCAP Source Theft, Signal Hang-Up Flaw, Laravel Auth Bypass + 21 More",
    "summary": "This week has already been rough for cybersecurity. Critical PHP and GitLab RCE flaws, serious Linux security bugs, compromised eMudhra certificates, a Node.js RCE flaw…",
@@ -229,6 +263,42 @@
    "url": "story/2a5b06ac5090.html"
   },
   {
+   "id": "7c1ce9da91a8",
+   "title": "CVE-2026-105014 Azure Pipelines Remote Code Execution Vulnerability",
+   "summary": "Improper neutralization of special elements used in a command ('command injection') in Azure Pipelines allows an unauthorized attacker to execute code over a network.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "22 Oct 2026, 14:00 UTC",
+   "priority_score": 5,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "microsoft"
+   ],
+   "kev": [],
+   "sources": "Microsoft Security Response Center",
+   "url": "story/7c1ce9da91a8.html"
+  },
+  {
+   "id": "4dbd6628d42d",
+   "title": "CVE-2026-96185 Microsoft Exchange Online Remote Code Execution Vulnerability",
+   "summary": "Stack-based buffer overflow in Microsoft Exchange Online allows an authorized attacker to execute code over a network.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "22 Oct 2026, 14:00 UTC",
+   "priority_score": 5,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "microsoft"
+   ],
+   "kev": [],
+   "sources": "Microsoft Security Response Center",
+   "url": "story/4dbd6628d42d.html"
+  },
+  {
    "id": "1d3516a0d0a6",
    "title": "OpenCode Flaw Lets Malicious MCP Servers Execute Code During Sign-In on Windows and WSL",
    "summary": "A flaw in the OpenCode AI coding agent allowed a malicious or hijacked MCP server to run code on a developer's Windows or WSL machine when the developer signed in…",
@@ -245,22 +315,6 @@
    "kev": [],
    "sources": "The Hacker News",
    "url": "story/1d3516a0d0a6.html"
-  },
-  {
-   "id": "7bcbd743c3f7",
-   "title": "TiDB Breach Exposes Flawed Cloud Security Assumptions",
-   "summary": "Cloud providers may be storing sensitive customer data, without either party knowing it. But when a provider is breached, the data comes home to roost.",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "21 Oct 2026, 21:15 UTC",
-   "priority_score": 5,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "Dark Reading",
-   "url": "story/7bcbd743c3f7.html"
   },
   {
    "id": "7f88afbf76a3",
@@ -527,6 +581,22 @@
    "url": "story/832124389031.html"
   },
   {
+   "id": "7bcbd743c3f7",
+   "title": "TiDB Breach Exposes Flawed Cloud Security Assumptions",
+   "summary": "Cloud providers may be storing sensitive customer data, without either party knowing it. But when a provider is breached, the data comes home to roost.",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "21 Oct 2026, 21:15 UTC",
+   "priority_score": 4,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "Dark Reading",
+   "url": "story/7bcbd743c3f7.html"
+  },
+  {
    "id": "f6f763b9dab2",
    "title": "Marvell, Microsoft & Oracle Work to Standardize Data Center Hardware Security",
    "summary": "The effort is aimed at standardizing a NIST FIPS 140-3 Level 3 integrated HSM for cloud and hyperscale data center infrastructure.",
@@ -595,24 +665,6 @@
    "kev": [],
    "sources": "Microsoft Security Response Center",
    "url": "story/6e4d169a998c.html"
-  },
-  {
-   "id": "b78341cec335",
-   "title": "CVE-2026-69902 Windows NTFS Remote Code Execution Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "21 Oct 2026, 14:00 UTC",
-   "priority_score": 4,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "microsoft"
-   ],
-   "kev": [],
-   "sources": "Microsoft Security Response Center",
-   "url": "story/b78341cec335.html"
   },
   {
    "id": "905472152d32",
@@ -735,6 +787,22 @@
    "url": "story/d76b50dba162.html"
   },
   {
+   "id": "6b9aa0664452",
+   "title": "CVE-2026-97785 AAD App Proxy Elevation of Privilege Vulnerability",
+   "summary": "Improper authentication in AAD App Proxy allows an unauthorized attacker to elevate privileges over a network.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "22 Oct 2026, 14:00 UTC",
+   "priority_score": 3,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "Microsoft Security Response Center",
+   "url": "story/6b9aa0664452.html"
+  },
+  {
    "id": "c78f9791369d",
    "title": "Amazon says PHP2Shell exploitation began 4 days before patches",
    "summary": "Security researchers at Amazon Threat Intelligence say attackers began targeting the PHP2Shell flaws four days before security patches were released on Wednesday.",
@@ -803,22 +871,6 @@
    "kev": [],
    "sources": "Graham Cluley",
    "url": "story/7682e78b0695.html"
-  },
-  {
-   "id": "e9fd60a700e2",
-   "title": "Japan's Onamae Desktop Cloud hacked, up to 27,000 servers affected",
-   "summary": "Hackers compromised the infrastructure of Onamae Desktop Cloud, a popular provider of VPS services in Japan, and installed malware on up to 26,739 customers' servers.",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "21 Oct 2026, 21:43 UTC",
-   "priority_score": 3,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "BleepingComputer",
-   "url": "story/e9fd60a700e2.html"
   },
   {
    "id": "a9726704f0fa",
@@ -969,24 +1021,6 @@
    "kev": [],
    "sources": "The Hacker News",
    "url": "story/0dfa738d1635.html"
-  },
-  {
-   "id": "9cd1aed286a1",
-   "title": "CVE-2026-62913 Microsoft Exchange Server Remote Code Execution Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "20 Oct 2026, 14:00 UTC",
-   "priority_score": 3,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "microsoft"
-   ],
-   "kev": [],
-   "sources": "Microsoft Security Response Center",
-   "url": "story/9cd1aed286a1.html"
   },
   {
    "id": "7003b4db8f4a",
@@ -1610,6 +1644,22 @@
    "kev": [],
    "sources": "Born's IT and Windows Blog",
    "url": "story/ca191a78820b.html"
+  },
+  {
+   "id": "e9fd60a700e2",
+   "title": "Japan's Onamae Desktop Cloud hacked, up to 27,000 servers affected",
+   "summary": "Hackers compromised the infrastructure of Onamae Desktop Cloud, a popular provider of VPS services in Japan, and installed malware on up to 26,739 customers' servers.",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "21 Oct 2026, 21:43 UTC",
+   "priority_score": 2,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "BleepingComputer",
+   "url": "story/e9fd60a700e2.html"
   },
   {
    "id": "04b5c5ae9150",
@@ -4267,22 +4317,6 @@
    "kev": [],
    "sources": "BleepingComputer",
    "url": "story/d342f7137dd6.html"
-  },
-  {
-   "id": "5921092180eb",
-   "title": "F-Secure Launches Victim-First Scam Encyclopedia Covering 50+ Types of Consumer Fraud",
-   "summary": "Built from decades of threat intelligence research, the new resource explains scams from the victims' perspective and tracks emerging forms of cyber crime.",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "15 Oct 2026, 21:55 UTC",
-   "priority_score": 0,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "Dark Reading",
-   "url": "story/5921092180eb.html"
   }
  ]
 }
