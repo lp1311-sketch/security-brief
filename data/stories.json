@@ -280,6 +280,31 @@
    "instructions_checked": true
   },
   {
+   "id": "0b4a4cb8af55",
+   "source": "google-threat-intel",
+   "source_name": "Google Threat Intelligence",
+   "official": false,
+   "source_type": "vendor_blog",
+   "title": "ARMORY CASTLE Exploits BeyondTrust",
+   "link": "https://cloud.google.com/blog/topics/threat-intelligence/armory-castle-exploits-beyondtrust/",
+   "published": "2026-10-15T14:00:00+00:00",
+   "summary": "Written by: Jayson Frost, Bryce Greathouse, Brian Meyer, John Palmisano, Rajesh Rajeshirke, Steve Rasch, John Wolfram Introduction On October 15, BeyondTrust disclosed a vulnerability, CVE-2026-102764, impacting BeyondTrust Remote Support (formerly Bomgar) appliances. BeyondTrust Remote Support is an enterprise secure…",
+   "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/Figure_1_ARMORY_CASTLE_BeyondTrust_comprom.max-1000x1000.jpg",
+   "cves": [
+    "CVE-2023-46805",
+    "CVE-2024-21887",
+    "CVE-2026-102764"
+   ],
+   "first_seen": "2026-10-22T11:02:51.911634+00:00",
+   "instructions": [
+    "We strongly recommend that affected organizations immediately apply the security patches provided by BeyondTrust to remediate the vulnerability, and review additional guidance in their blog .",
+    "Self-hosted, older than 24.3.1 : Upgrade to a supported version, then apply the patch.",
+    "Organizations should prepare for potential widespread exploitation following this disclosure, as ARMORY CASTLE and other threat actors have historically conducted broad, opportunistic exploitation once the vulnerability becomes public.",
+    "Defenders should also prepare for the possibility that following disclosure of CVE-2026-102764, ARMORY CASTLE may conduct widespread exploitation similar to what GTIG observed in 2024 following the disclosure of CVE-2023-46805 and CVE-2024-21887."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "7682e78b0695",
    "source": "grahamcluley",
    "source_name": "Graham Cluley",
