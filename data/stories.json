@@ -263,7 +263,7 @@
    "title": "php2shell: PHP-Updates und Nachlese",
    "link": "https://borncity.com/blog/2026/10/22/php2shell-php-updates-und-nachlese/",
    "published": "2026-10-22T05:33:38+00:00",
-   "summary": "Die PHP-Maintainer haben zum 21. Oktober 2026 am späten Nachmittag Details und Patches zu zwei kritischen Schwachstellen CVE-2026-109618 und CVE-2026-109619 veröffentlicht. Im Vorfeld haben zahlreiche Nutzer ihre Web-Instanzen offline genommen und das Patchen hat begonnen. Hier eine kurze Nachlese…",
+   "summary": "Die PHP-Maintainer haben zum 21. Oktober 2026 am späten Nachmittag Details und Patches (für aktuelle PHP versionen) zu zwei kritischen Schwachstellen CVE-2026-109618 und CVE-2026-109619 veröffentlicht. Im Vorfeld haben zahlreiche Nutzer ihre Web-Instanzen offline genommen und das Patchen hat begonnen. Hier ……",
    "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
    "cves": [
     "CVE-2026-109618",
@@ -1673,21 +1673,6 @@
    "source_type": "news"
   },
   {
-   "id": "1d72630baefb",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "title": "GhostAction Compromises About 1,900 GitHub Accounts, Targets Over 30,000 Repositories",
-   "link": "https://thehackernews.com/2026/10/ghostaction-compromises-about-1900.html",
-   "published": "2026-10-15T08:45:10+00:00",
-   "summary": "The credential-theft campaign known as GhostAction has ramped up, targeting more than 30,000 repositories across 3,000 users and organizations. The spike, according to GitGuardian, was observed on October 8 and 9, 2026. \"This resulted from compromising the GitHub accounts of about 1,900 users. It attempted to extract…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiddFchlm_nV3vywI0BM2-8IaZb-wHXwE8DplGqZYkRmcYkeXiSLfVmnVAU-jM4yikWW7SWokanh_S4hq88cVHjAnaWDGkl3VVAtPdv9SHWp0MNb0CIOAA-I73EuwwUSE-wNMnXEzbIdDYorJn2hIuBZQ5Jh_5I2IntiXuUYZz3sKax-wfRoaxy_pD9kGx0/s1600/ghost-git.jpg",
-   "cves": [],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "f0509be43eab",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2701,6 +2686,23 @@
    "image": "https://cms.therecord.media/uploads/Vladan_Dokic_PP_413d939ccc.jpg",
    "cves": [],
    "first_seen": "2026-10-20T09:53:14.101641+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "2ee4d03f1bea",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Russian hackers teamed up to wipe data at Ukrainian grain firm",
+   "link": "https://therecord.media/ukraine-hackers-russia-grain-sandworm",
+   "published": "2026-10-21T14:45:00+00:00",
+   "summary": "The Russian state-linked hacking group Sandworm collaborated with another threat actor to carry out a destructive cyberattack against a Ukrainian grain logistics company last year, researchers said Thursday.",
+   "image": "https://cms.therecord.media/uploads/Grain_wilting_f75cfaf4d4.jpg",
+   "cves": [],
+   "first_seen": "2026-10-22T09:04:13.773821+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -4376,6 +4378,26 @@
    "first_seen": "2026-10-19T10:28:22.123062+00:00",
    "image_checked": true,
    "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "df0211e45e19",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Authorities disrupt nearly 11,000 cybercrime networks in Africa",
+   "link": "https://www.bleepingcomputer.com/news/security/authorities-disrupt-nearly-11-000-cybercrime-networks-in-africa/",
+   "published": "2026-10-22T08:27:11+00:00",
+   "summary": "Law enforcement agencies have disrupted nearly 11,000 cybercriminal networks and arrested more than 1,400 people in Operation Serengeti III, which targeted business email compromise, ransomware, and online scams.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/05/18/INTERPOL.jpg",
+   "cves": [],
+   "first_seen": "2026-10-22T09:04:13.773821+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Instead of waiting for an attack and then investigating the damage, we can help expose the networks behind criminal operations and can enable defensive actions,\" said Jacomo Piccolini , Team Cymru's VP of Global Data Partnerships.",
+    "Mozilla, Google, Apple block compromised eMudhra CA certificates"
+   ],
    "instructions_checked": true
   },
   {
