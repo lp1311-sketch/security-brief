@@ -142,6 +142,13 @@ class OfflineBuild(unittest.TestCase):
         for cid in ("threats", "vulnerabilities", "ai", "microsoft", "general"):
             self.assertTrue((self.site / "category" / cid / "index.html").exists(), cid)
 
+    def test_free_download_is_copied_linked_and_sitemap_listed(self):
+        filename = "m365-identity-incident-triage-checklist.pdf"
+        self.assertTrue((self.site / filename).is_file(), filename)
+        self.assertIn("Free field guide", self.read("index.html"))
+        self.assertIn(f'href="{filename}" download', self.read("index.html"))
+        self.assertIn(f"https://test.example.org/brief/{filename}", self.read("sitemap.xml"))
+
     def test_logo_in_header(self):
         self.assertIn("logo-img", self.read("index.html"))
 

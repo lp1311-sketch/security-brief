@@ -888,6 +888,9 @@ main.wrap{padding-top:32px;padding-bottom:72px}
 .grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(270px,1fr))}
 .card{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
 .card:hover{transform:translateY(-2px);border-color:color-mix(in srgb,var(--accent) 45%,var(--line));box-shadow:var(--shadow)}
+.resource-card{max-width:780px;border-left:3px solid var(--accent)}
+.resource-card .card-body{padding:22px}
+.resource-card .summary{-webkit-line-clamp:unset;max-width:680px}
 .card.prio-Critical{border-top:3px solid var(--crit)}
 .card.prio-High{border-top:3px solid var(--high)}
 .card-media{position:relative;display:block;background:var(--surface-2)}
@@ -1703,6 +1706,17 @@ def index_page(stories: list[dict], cfg: dict, now: datetime, status: dict,
             + '</div><p class="analysis-links meta"><a href="briefings/index.html">All analysis</a> &middot; '
             '<a href="patch-tuesday/index.html">All Patch Tuesday notes</a></p></section>'
         )
+    parts.append(
+        '<section class="section" id="free-downloads" aria-labelledby="free-download-title">'
+        '<h2 id="free-download-title">Free field guide</h2>'
+        '<article class="card resource-card"><div class="card-body">'
+        '<p class="card-kicker">PRINTABLE WORKSHEET &middot; VERSION 1.0</p>'
+        '<h3>Microsoft 365 Identity Incident Triage</h3>'
+        '<p class="summary">Evidence-first checks for suspicious sign-ins, Entra audit activity, app access, mailbox persistence, containment and verification.</p>'
+        '<p class="meta">3 pages &middot; Updated 22 October 2026 &middot; Includes Microsoft Learn references</p>'
+        '<a class="btn" href="m365-identity-incident-triage-checklist.pdf" download>Download the free PDF &rarr;</a>'
+        '</div></article></section>'
+    )
     newsletter = _newsletter(site_cfg, "")
     if newsletter:
         parts.append(newsletter)
@@ -1836,7 +1850,8 @@ def feed_xml(stories: list[dict], cfg: dict, now: datetime, articles: list[dict]
 def sitemap_xml(stories: list[dict], cfg: dict, articles: list[dict] | None = None) -> str:
     site = cfg["site_url"].rstrip("/")
     urls = [f"{site}/", f"{site}/briefings/index.html", f"{site}/patch-tuesday/index.html",
-            f"{site}/impressum.html", f"{site}/datenschutz.html", f"{site}/corrections.html"]
+            f"{site}/impressum.html", f"{site}/datenschutz.html", f"{site}/corrections.html",
+            f"{site}/m365-identity-incident-triage-checklist.pdf"]
     urls += [f"{site}/{a['section']}/{a['slug']}.html" for a in (articles or [])]
     urls += [f"{site}/story/{s['id']}.html" for s in stories]
     urls += [f"{site}/stories/index.html"] + [f"{site}/category/{c}/index.html" for c in CATEGORY_ORDER]
@@ -1946,11 +1961,14 @@ def write_site(out: Path, stories: list[dict], cfg: dict, now: datetime, status:
     # Story pages are kept even after a story leaves the 7-day window, so old links never 404.
     (out / "style.css").write_text(CSS.strip() + "\n" + EXTRA_CSS + "\n" + DESIGN_CSS, encoding="utf-8")
     (out / "favicon.svg").write_text(FAVICON_SVG, encoding="utf-8")
-    # Static images referenced from site.json (e.g. the donation QR code) are copied as they are.
+    # Optional root-level QR image: keep deployment simple for repository web uploads.
     import shutil
-    for asset in (ROOT / "assets").glob("*.png") if (ROOT / "assets").is_dir() else []:
-        (out / "assets").mkdir(parents=True, exist_ok=True)
-        shutil.copyfile(asset, out / "assets" / asset.name)
+    qr_asset = ROOT / "buymeacoffee-qr.png"
+    if qr_asset.is_file():
+        shutil.copyfile(qr_asset, out / qr_asset.name)
+    resource_pdf = ROOT / "m365-identity-incident-triage-checklist.pdf"
+    if resource_pdf.is_file():
+        shutil.copyfile(resource_pdf, out / resource_pdf.name)
     (out / "logo.svg").write_text(LOGO_SVG, encoding="utf-8")
     (out / "index.html").write_text(index_page(stories, cfg, now, status, articles, site_cfg), encoding="utf-8")
     (out / "today").mkdir(parents=True, exist_ok=True)
@@ -2100,7 +2118,7 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
                      s["score"], s["image"], [x["url"] for x in s["sources"]]] for s in stories],
         "articles": [[a["section"], a["slug"], a["title"], a["date"], a["summary"], a["_md"]] for a in articles],
         "site": site_cfg,
-        "render": "5.27",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
+        "render": "5.28",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
     }, ensure_ascii=False, sort_keys=True)
     if fixtures is None:
         check_source_links(stories, data_file.parent / "linkcheck.json", now)
