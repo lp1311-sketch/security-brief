@@ -138,6 +138,148 @@
    "instructions_checked": true
   },
   {
+   "id": "6df7533cf52d",
+   "source": "borncity",
+   "source_name": "Born's IT and Windows Blog",
+   "official": false,
+   "source_type": "news",
+   "title": "Linux: KVM-Schwachstelle PwnEscape (CVE-2026-99999) erlaubt Ausbruch",
+   "link": "https://borncity.com/blog/2026/10/20/linux-kvm-schwachstelle-pwnescape-cve-2026-99999-erlaubt-ausbruch/",
+   "published": "2026-10-19T22:53:07+00:00",
+   "summary": "Ein Sicherheitsforscher hatte bereits Anfang August 2026 eine 0-Day-Schwachstelle aufgedeckt, die einen Ausbruch aus der unter Linux zur Virtualisierung verwendeten KVM auf den Host ermöglicht. Nun hat diese als kritisch und mit einem CVSS Score-Index von 9.8 als kritisch eingestufte … Weiterlesen → Quelle",
+   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
+   "cves": [
+    "CVE-2026-99999"
+   ],
+   "first_seen": "2026-10-22T07:00:06.512888+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Administratoren, die KVM verwenden, sollten prüfen, ob ein Kernel-Patch verfügbar ist und diesen zeitnah installieren.",
+    "In dem speziellen Fall konnte ich mich zurücklehnen und es einfach im normalen Patch Tag ausführen.",
+    "Friedhelm zu Kompromittierte AOMEI Update-Server lieferten von Mai bis Juni 2026 Malware",
+    "User007 zu Kompromittierte AOMEI Update-Server lieferten von Mai bis Juni 2026 Malware"
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "300b140b7b13",
+   "source": "borncity",
+   "source_name": "Born's IT and Windows Blog",
+   "official": false,
+   "source_type": "news",
+   "title": "Schwachstelle CVE-2026-109390 (CVSS v3.1 9.8) im AnyDesk-Client für Linux",
+   "link": "https://borncity.com/blog/2026/10/20/schwachstelle-cve-2026-109390-cvss-v3-1-9-8-im-anydesk-client-fuer-linux/",
+   "published": "2026-10-19T22:01:11+00:00",
+   "summary": "Ich stelle mal eine Information hier ein, auf die ich nun von zwei Blog-Lesern hingewiesen wurde. Im AnyDesk-Client für Linux gibt es eine kritischen Schwachstelle CVE-2026-109390, die mit einem CVSS 3.1 Base Score von 9.8 bewertet wurde. Keine Ahnung, wie … Weiterlesen → Quelle",
+   "image": "https://borncity.com/blog/wp-content/uploads/2015/11/Linux.jpg",
+   "cves": [
+    "CVE-2026-109390"
+   ],
+   "first_seen": "2026-10-22T07:00:06.512888+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Friedhelm zu Kompromittierte AOMEI Update-Server lieferten von Mai bis Juni 2026 Malware",
+    "User007 zu Kompromittierte AOMEI Update-Server lieferten von Mai bis Juni 2026 Malware",
+    "Luzifer zu Kompromittierte AOMEI Update-Server lieferten von Mai bis Juni 2026 Malware",
+    "ibbsy zu Kompromittierte AOMEI Update-Server lieferten von Mai bis Juni 2026 Malware"
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "37743d55fc6d",
+   "source": "borncity",
+   "source_name": "Born's IT and Windows Blog",
+   "official": false,
+   "source_type": "news",
+   "title": "WordPress Plugins Updraft und Rank Math PRO kompromittiert",
+   "link": "https://borncity.com/blog/2026/10/20/wordpress-plugins-updraft-und-rank-math-pro-kompromittiert/",
+   "published": "2026-10-20T15:53:23+00:00",
+   "summary": "Zwei Meldungen zu kompromittierten Plugins für WordPress, die mich die Tage erreicht haben. Ein Leser hat mich informiert, dass das Plugin Updraft kompromittiert sei. Weiterhin wurde bekannt, dass das WordPress Plugin Rank Math PRO eine Backdoor aufwies. WordPress Plugin Rank … Weiterlesen → Quelle",
+   "image": "https://borncity.com/blog/wp-content/uploads/2014/07/wp_thumb.jpg",
+   "cves": [],
+   "first_seen": "2026-10-22T07:00:06.512888+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Oktober 2026 um 07:12 Uhr UTC heruntergeladen oder über ein Update installiert.",
+    "Ein einfaches Update des Plugins reicht nicht aus, da die Malware möglicherweise zusätzliche Dateien, Administratorkonten oder geplante Aufgaben an anderer Stelle auf dem Server abgelegt hat.",
+    "Oktober 2026 den Blog-Beitrag PSA: UpdraftCentral Connection Key Compromise Used to Install Malicious Plugins on WordPress Sites veröffentlicht.",
+    "Der Zugangsweg scheint mit den Maßnahmen bei Teamupdraft und dem Update mittlerweile geschlossen zu sein, aber weil alle Schlüssel entwertet und getrennt wurden, sollte man ein neues Passwort vergeben und muss Websites neu verbinden."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "ad5d32a1bbf2",
+   "source": "borncity",
+   "source_name": "Born's IT and Windows Blog",
+   "official": false,
+   "source_type": "news",
+   "title": "php2shell: PHP-Schwachstellen CVE-2026-109618 und CVE-2026-109619",
+   "link": "https://borncity.com/blog/2026/10/21/php2shell-php-schwachstellen-cve-2026-109618-und-cve-2026-109619/",
+   "published": "2026-10-21T13:20:52+00:00",
+   "summary": "Im, von vielen Software-Produkten genutzten, PHP-Interpreter sind zwei kritische Schwachstellen CVE-2026-109618 und CVE-2026-109619 öffentlich geworden. Die PHP-Maintainer haben zum 20. Oktober 2026 angekündigt, am heutigen 21. Oktober 2026 Details und Patches zu veröffentlichen. Es sind aber wohl bereits…",
+   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
+   "cves": [
+    "CVE-2026-109618",
+    "CVE-2026-109619"
+   ],
+   "first_seen": "2026-10-22T07:00:06.512888+00:00",
+   "image_checked": true,
+   "instructions": [
+    "We reserve the right to release earlier should details of either vulnerability become public, or should evidence of active exploitation appear in the wild.",
+    "Oktober 2026 um 17:04 Uhr Es gibt bereits ein paar Mitigations: https://ma.ttias.be/php-cve-2026-109618-early-mitigation/ Antworten",
+    "Die PHP-Entwickler haben sich die Möglichkeit eingeräumt, die Updates früher zu veröffentlichen, falls die Schwachstellen bereits ausgenutzt wurden (\"We reserve the right to release earlier should details of either vulnerability become public, or should evidence of active exploitation appear in the wild.\").",
+    "In der aktuellen Version 7.4.1-90080 Update 1 kommt PHP in der Version 8.1.32 zum Einsatz."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "ca191a78820b",
+   "source": "borncity",
+   "source_name": "Born's IT and Windows Blog",
+   "official": false,
+   "source_type": "news",
+   "title": "Kompromittierte AOMEI Update-Server lieferten von Mai bis Juni 2026 Malware",
+   "link": "https://borncity.com/blog/2026/10/22/kompromittierte-aomei-update-server-lieferten-von-mai-bis-juni-2026-malware/",
+   "published": "2026-10-21T22:01:04+00:00",
+   "summary": "Noch ein Nachtrag von Montag, zu dem ich erst jetzt komme. Es gibt Berichte, dass die Update-Server des Backup-Anbieters AOMEI durch Angreifer kompromittiert waren. Den Angreifern gelang es dann, für kurze Zeit Malware über eine integrierte Werbefunktion in der Backup-Software … Weiterlesen → Quelle",
+   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
+   "cves": [],
+   "first_seen": "2026-10-22T07:00:06.512888+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Es gibt Berichte, dass die Update-Server des Backup-Anbieters AOMEI durch Angreifer kompromittiert waren.",
+    "Angreifer manipulierten die Update-Server von AOMEI Backupper in Intervallen von 5 bis 10 Minuten und schleusten so eine Hintertür auf PCs, die nach Updates suchten, schreibt The Hacker News in obigem Tweet.",
+    "Dazu änderten Angreifer zwischen Mai und Juli 2026 wiederholt die Dateien, die AOMEI Backupper von den hauseigenen Update-Servern des Anbieters abruft.",
+    "Aber jede Version des Windows-Sicherungsprogramms, die während eines dieser Zeitfenster nach einem Update suchte, lud dann eine Hintertür herunter und führte die Malware auch aus."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "9fdb4830b1cb",
+   "source": "borncity",
+   "source_name": "Born's IT and Windows Blog",
+   "official": false,
+   "source_type": "news",
+   "title": "php2shell: PHP-Updates und Nachlese",
+   "link": "https://borncity.com/blog/2026/10/22/php2shell-php-updates-und-nachlese/",
+   "published": "2026-10-22T05:33:38+00:00",
+   "summary": "Die PHP-Maintainer haben zum 21. Oktober 2026 am späten Nachmittag Details und Patches zu zwei kritischen Schwachstellen CVE-2026-109618 und CVE-2026-109619 veröffentlicht. Im Vorfeld haben zahlreiche Nutzer ihre Web-Instanzen offline genommen und das Patchen hat begonnen. Hier eine kurze Nachlese…",
+   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
+   "cves": [
+    "CVE-2026-109618",
+    "CVE-2026-109619"
+   ],
+   "first_seen": "2026-10-22T07:00:06.512888+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Das Security Advisory 21 Oct 2026 Security advisory: Critical remote code execution vulnerabilities, update now nennt die folgenden PHP-Versionen:",
+    "Hier kann man versuchen, die Hinweise aus diesem Beitrag sowie die Hinweise im Security Advisory 21 Oct 2026 Security advisory: Critical remote code execution vulnerabilities, update now umzusetzen oder das Projekt vorübergehend still zu legen, bis klar ist, wie es weiter geht.",
+    "Im Security Advisory finden sich Hinweise, wie die betreffenden PHP-Versionen gepatcht werden können.",
+    "Oktober 2026 um 08:04 Uhr Es gibt erste Meldungen, dass das Patch für die Version 8.5.12 möglicherweise unvollständig ist und umgangen werden kann."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "7682e78b0695",
    "source": "grahamcluley",
    "source_name": "Graham Cluley",
@@ -1031,27 +1173,6 @@
    "first_seen": "2026-10-21T16:35:12.521985+00:00",
    "image_checked": true,
    "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "a713f2422da2",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "title": "AhsayCBS Flaws Exploited to Deploy Web Shells Get New Fixes After Incomplete Patches",
-   "link": "https://thehackernews.com/2026/10/ahsaycbs-flaws-exploited-to-deploy-web.html",
-   "published": "2026-10-15T06:43:08+00:00",
-   "summary": "Singapore-based Ahsay Backup has released security updates to address two security flaws in AhsayCBS that have been exploited by bad actors to drop web shells and XMRig cryptocurrency miners. The vulnerabilities in question are CVE-2026-105133 and CVE-2026-105134, which could be chained to sidestep authentication and…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhH_5A4EPZ4VVdF4dve5fMe4BwreUmtWCJQrgMiBdiZyoFInoZK_nO6ouOwLMCyyQPrXWE4_n3NE39b4C2UQi-G4uE3ufyv7A9IEYEp9O3ggTu7AyDRzOqwVqhLjISLvOTasPiAcdFafFtL7B5uoKtm8GPeFFxrKDupGCoqZJ2o88sUmaGbjKk6E3sJgIKD/s1600/backup.jpg",
-   "cves": [
-    "CVE-2026-105133",
-    "CVE-2026-105134"
-   ],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00",
-   "instructions": [
-    "Cybersecurity and Infrastructure Security Agency (CISA) to add them to the Known Exploited Vulnerabilities ( KEV ) catalog, requiring federal agencies to apply the patches by October 17, 2026.",
-    "In an update, Huntress said it has \"independently verified that the AhsayCBS 10.3.4.45 hotfix mitigates the initial entry point of this attack chain, which was still susceptible on previous v10 versions.\""
-   ],
    "instructions_checked": true
   },
   {
@@ -5338,22 +5459,6 @@
    "published": "2026-10-16T18:37:50+00:00",
    "summary": "Most OT devices at utilities, factories, and elsewhere have been deployed for a decade or more, but operators need to get agile and deploy new cyber defenses.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt6937d5b3760a530f/6ad14589831f9d6076cdd58b/robotic-arms-grid-overlay-greenbutterfly-shutterstock.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "c86f8dee64ea",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "EU Grocers Pay a Steep Price for Unpatched Fridge Firmware",
-   "link": "https://www.darkreading.com/ics-ot-security/eu-grocers-unpatched-fridge-firmware",
-   "published": "2026-10-15T07:00:00+00:00",
-   "summary": "Hundreds of stores lost millions of euros because they hired third parties to manage the outdated OT firmware running their cooling systems.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltdcfc831a57f67689/6acfbd4be9c311a2c0cf7674/Melted_ice_cream-cagkansayin-Getty.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-10-20T09:53:14.101641+00:00",
    "instructions": [],

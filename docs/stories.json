@@ -11,6 +11,16 @@
    "url": "story/15367a3259ff.html"
   },
   {
+   "id": "9fdb4830b1cb",
+   "title": "php2shell: PHP-Updates und Nachlese",
+   "summary": "Die PHP-Maintainer haben zum 21. Oktober 2026 am späten Nachmittag Details und Patches zu zwei kritischen Schwachstellen CVE-2026-109618 und CVE-2026-109619…",
+   "priority": "High",
+   "category": "Patch Radar",
+   "date": "22 Oct 2026, 05:33 UTC",
+   "sources": "Born's IT and Windows Blog, SecurityWeek, KrebsOnSecurity, BleepingComputer",
+   "url": "story/9fdb4830b1cb.html"
+  },
+  {
    "id": "9b69347cfd29",
    "title": "China-Linked Hackers Use ARTEX AI Agents in ConnectWise Supply Chain Attack",
    "summary": "Microsoft on Wednesday disclosed that a China state-aligned actor dubbed Storm-0940 was behind the recent supply chain compromise of the ConnectWise Cloud Backup…",
@@ -19,16 +29,6 @@
    "date": "22 Oct 2026, 04:21 UTC",
    "sources": "The Hacker News, The Record, BleepingComputer",
    "url": "story/9b69347cfd29.html"
-  },
-  {
-   "id": "661e0d2a54c9",
-   "title": "PHP2Shell Patches Land as First Exploitation Attempts Hit Sensors",
-   "summary": "Several cybersecurity companies saw exploitation attempts of CVE-2026-109618 and CVE-2026-109619 before PHP released the patches. The post PHP2Shell Patches Land as…",
-   "priority": "High",
-   "category": "Patch Radar",
-   "date": "21 Oct 2026, 16:50 UTC",
-   "sources": "SecurityWeek, KrebsOnSecurity, BleepingComputer",
-   "url": "story/661e0d2a54c9.html"
   },
   {
    "id": "0d304799e621",
@@ -221,16 +221,6 @@
    "url": "story/fc3053d7e094.html"
   },
   {
-   "id": "a713f2422da2",
-   "title": "AhsayCBS Flaws Exploited to Deploy Web Shells Get New Fixes After Incomplete Patches",
-   "summary": "Singapore-based Ahsay Backup has released security updates to address two security flaws in AhsayCBS that have been exploited by bad actors to drop web shells and XMRig…",
-   "priority": "Critical",
-   "category": "Patch Radar",
-   "date": "15 Oct 2026, 06:43 UTC",
-   "sources": "The Hacker News",
-   "url": "story/a713f2422da2.html"
-  },
-  {
    "id": "832124389031",
    "title": "Google Chrome adds Gemini-powered scam detection, warns users of ClickFix attacks",
    "summary": "Chrome is getting new scam protections that use Gemini to detect deceptive websites and warn users when they copy suspicious commands from ClickFix attacks.",
@@ -375,10 +365,20 @@
    "title": "ConnectWise Resets Credentials as Cloud Backup Remains Offline After Security Incident",
    "summary": "ConnectWise on Monday said it has taken remediation measures, including strengthening administrative-access protections and resetting accounts and replacing application…",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "20 Oct 2026, 10:56 UTC",
    "sources": "The Hacker News",
    "url": "story/13881c9b4329.html"
+  },
+  {
+   "id": "6df7533cf52d",
+   "title": "Linux: KVM-Schwachstelle PwnEscape (CVE-2026-99999) erlaubt Ausbruch",
+   "summary": "Ein Sicherheitsforscher hatte bereits Anfang August 2026 eine 0-Day-Schwachstelle aufgedeckt, die einen Ausbruch aus der unter Linux zur Virtualisierung verwendeten KVM…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "19 Oct 2026, 22:53 UTC",
+   "sources": "Born's IT and Windows Blog, The Hacker News",
+   "url": "story/6df7533cf52d.html"
   },
   {
    "id": "b1e34d264127",
@@ -435,7 +435,7 @@
    "title": "Cloud Security Alliance Survey Finds Data Loss Prevention Often Detects Data Loss Only After It Happens",
    "summary": "Research finds that, among respondents experiencing data loss, only 16% said DLP blocked their most significant incidents before data left the organization.",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "21 Oct 2026, 20:03 UTC",
    "sources": "Dark Reading",
    "url": "story/04b5c5ae9150.html"
@@ -465,7 +465,7 @@
    "title": "OVHcloud GitHub Compromise Tied to GlassWorm Threat Actors",
    "summary": "A developer's GitHub account that was compromised several months earlier was used to push malicious code to unsuspecting users.",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "21 Oct 2026, 16:50 UTC",
    "sources": "Dark Reading",
    "url": "story/a124b567afcf.html"
@@ -635,7 +635,7 @@
    "title": "[NEU] [hoch] Snipe-IT: Mehrere Schwachstellen",
    "summary": "Ein Angreifer kann mehrere Schwachstellen in Snipe-IT ausnutzen, um beliebigen Code auszuführen, erweiterte Berechtigungen zu erlangen, SQL-Injection durchzuführen…",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "20 Oct 2026, 11:15 UTC",
    "sources": "CERT-Bund (BSI) Warnungen",
    "url": "story/3b05c1dcef51.html"
@@ -791,16 +791,6 @@
    "url": "story/a094aa58c0da.html"
   },
   {
-   "id": "222e66a51003",
-   "title": "Critical PwnEscape Linux Kernel Vulnerability Lets Guest VMs Read Host Memory",
-   "summary": "A newly disclosed critical flaw in the Linux kernel allows code inside a virtual machine to read memory on the host computer it runs on. A researcher demonstrated the…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "15 Oct 2026, 20:24 UTC",
-   "sources": "The Hacker News",
-   "url": "story/222e66a51003.html"
-  },
-  {
    "id": "50367ee6ae87",
    "title": "Langflow's Critical Authenticated RCE Flaw Targeted in 1,423 Honeypot Exploit Attempts",
    "summary": "Threat actors are exploiting a critical security flaw in Langflow, according to an alert from Previdian. Langflow is an open-source platform that allows developers to…",
@@ -809,6 +799,16 @@
    "date": "15 Oct 2026, 07:07 UTC",
    "sources": "The Hacker News",
    "url": "story/50367ee6ae87.html"
+  },
+  {
+   "id": "ca191a78820b",
+   "title": "Kompromittierte AOMEI Update-Server lieferten von Mai bis Juni 2026 Malware",
+   "summary": "Noch ein Nachtrag von Montag, zu dem ich erst jetzt komme. Es gibt Berichte, dass die Update-Server des Backup-Anbieters AOMEI durch Angreifer kompromittiert waren. Den…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "21 Oct 2026, 22:01 UTC",
+   "sources": "Born's IT and Windows Blog",
+   "url": "story/ca191a78820b.html"
   },
   {
    "id": "3371acd3dcb3",
@@ -825,7 +825,7 @@
    "title": "Meta on the spot for $25 billion under New Mexico privacy ruling",
    "summary": "The Cambridge Analytica data privacy scandal from a decade ago is still weighing on Meta's finances.",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "21 Oct 2026, 20:25 UTC",
    "sources": "The Record",
    "url": "story/565842927b14.html"
@@ -835,7 +835,7 @@
    "title": "Tech trio launches $10 million initiative to help under-resourced utilities bolster cybersecurity",
    "summary": "Up to 500 under-resourced utilities will receive support in order to bolster their cybersecurity through a private sector initiative launched this week.",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "21 Oct 2026, 19:45 UTC",
    "sources": "The Record",
    "url": "story/548b69cacce8.html"
@@ -845,7 +845,7 @@
    "title": "Democrat lawmakers say Russia is aiming to undermine party ahead of midterms",
    "summary": "The pair stressed the latest update showed no country is pursuing the technically challenging effort to interfere with or hack into the country’s election infrastructure…",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "21 Oct 2026, 18:28 UTC",
    "sources": "The Record",
    "url": "story/14b2da242e2e.html"
@@ -865,7 +865,7 @@
    "title": "Optiv Launches CyberBOT Cybersecurity Awareness Training Program",
    "summary": "Hands-on sessions provide educators, nonprofits, and community leaders with an accessible resource to foster year-round cyber awareness and build more resilient…",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "21 Oct 2026, 15:44 UTC",
    "sources": "Dark Reading",
    "url": "story/b716aa6739b4.html"
@@ -875,7 +875,7 @@
    "title": "Survey Finds High-Profile Executives Feel Untouchable as Digital Exposure Turns Into Physical Risk",
    "summary": "360 Privacy finds more than 8 in 10 security and wealth professionals say cybersecurity and physical security can no longer be separated.",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "21 Oct 2026, 15:29 UTC",
    "sources": "Dark Reading",
    "url": "story/ce8b3bbcd62b.html"
@@ -925,7 +925,7 @@
    "title": "Browsers Block eMudhra Intermediate CAs Over Recoverable Private Keys",
    "summary": "The private keys associated with eight certificates were compromised, and root programs and trust stores are blocking them. The post Browsers Block eMudhra Intermediate…",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "21 Oct 2026, 11:22 UTC",
    "sources": "SecurityWeek",
    "url": "story/9b477066ea3b.html"
@@ -935,7 +935,7 @@
    "title": "Workshop on Economics and Information Security (WEIS) Archive",
    "summary": "There’s a new archive of all the papers from twenty-five years of the Workshop on Economics and Information Security (WEIS). Really nice resource. It’s fun to reread my…",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "21 Oct 2026, 11:02 UTC",
    "sources": "Schneier on Security",
    "url": "story/8e7d8bc5cf31.html"
@@ -955,7 +955,7 @@
    "title": "U.S. Orders DeepSeek Removed From Federal Civilian Systems, Bans New Purchases",
    "summary": "U.S. federal civilian agencies must remove DeepSeek products from their information technology systems, along with any third-party products or services \"developed using…",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "21 Oct 2026, 08:04 UTC",
    "sources": "The Hacker News",
    "url": "story/0c6fe061465a.html"
@@ -975,7 +975,7 @@
    "title": "Mozilla, Google, Apple block compromised eMudhra CA certificates",
    "summary": "Certificate authority eMudhra revoked eight compromised intermediate certificates after researchers found their private keys were so weak that anyone could recover them…",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "21 Oct 2026, 00:46 UTC",
    "sources": "BleepingComputer, Dark Reading",
    "url": "story/7a020fdc3830.html"
@@ -1055,7 +1055,7 @@
    "title": "[UPDATE] [mittel] Red Hat Enterprise Linux (sequoia-openpgp, perl-DBI): Mehrere Schwachstellen",
    "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Red Hat Enterprise Linux ausnutzen, um Sicherheitsvorkehrungen zu umgehen, Daten zu manipulieren und…",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "20 Oct 2026, 11:40 UTC",
    "sources": "CERT-Bund (BSI) Warnungen",
    "url": "story/b8c7c0a1a728.html"
@@ -1065,7 +1065,7 @@
    "title": "[NEU] [mittel] TYPO3 Extensions: Mehrere Schwachstellen",
    "summary": "Ein Angreifer kann mehrere Schwachstellen in TYPO3 Extension ausnutzen, um Dateien zu manipulieren, um Informationen offenzulegen, um einen SQL-Injection Angriff…",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "20 Oct 2026, 11:40 UTC",
    "sources": "CERT-Bund (BSI) Warnungen",
    "url": "story/b70f2835d787.html"
@@ -1075,7 +1075,7 @@
    "title": "[UPDATE] [hoch] Linux Kernel: Schwachstelle ermöglicht Privilegieneskalation",
    "summary": "Ein Angreifer kann eine Schwachstelle im Linux Kernel ausnutzen, um erweiterte Rechte zu erlangen.",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "20 Oct 2026, 11:35 UTC",
    "sources": "CERT-Bund (BSI) Warnungen",
    "url": "story/b01dd7a21971.html"
@@ -1085,7 +1085,7 @@
    "title": "[UPDATE] [hoch] Linux Kernel: Mehrere Schwachstellen",
    "summary": "Ein Angreifer kann mehrere Schwachstellen in Linux Kernel ausnutzen, um einen Denial of Service Angriff durchzuführen oder Root-Rechte zu erlangen.",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "20 Oct 2026, 11:35 UTC",
    "sources": "CERT-Bund (BSI) Warnungen",
    "url": "story/e18434727b01.html"
@@ -1115,7 +1115,7 @@
    "title": "[NEU] [mittel] Apache Airflow: Mehrere Schwachstellen ermöglichen Umgehen von Sicherheitsvorkehrungen",
    "summary": "Ein entfernter, authentisierter Angreifer kann mehrere Schwachstellen in Apache Airflow ausnutzen, um Sicherheitsvorkehrungen zu umgehen und Informationen offenzulegen.",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "20 Oct 2026, 11:20 UTC",
    "sources": "CERT-Bund (BSI) Warnungen",
    "url": "story/933f818034a9.html"
@@ -1125,7 +1125,7 @@
    "title": "[NEU] [mittel] QT: Schwachstelle ermöglicht Denial of Service",
    "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in QT ausnutzen, um einen Denial of Service Angriff durchzuführen.",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "20 Oct 2026, 11:15 UTC",
    "sources": "CERT-Bund (BSI) Warnungen",
    "url": "story/ca99fade5711.html"
@@ -1135,7 +1135,7 @@
    "title": "[NEU] [hoch] Golang Go: Schwachstelle ermöglicht Umgehen von Sicherheitsvorkehrungen",
    "summary": "Ein Angreifer kann eine Schwachstelle in Golang Go ausnutzen, um Sicherheitsvorkehrungen zu umgehen.",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "20 Oct 2026, 11:15 UTC",
    "sources": "CERT-Bund (BSI) Warnungen",
    "url": "story/badeab1ac46b.html"
@@ -1145,7 +1145,7 @@
    "title": "[UPDATE] [mittel] OpenSSH: Mehrere Schwachstellen",
    "summary": "Ein Angreifer kann mehrere Schwachstellen in OpenSSH ausnutzen, um einen nicht näher spezifizierten Angriff durchzuführen, um einen Denial of Service Angriff…",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "20 Oct 2026, 11:06 UTC",
    "sources": "CERT-Bund (BSI) Warnungen",
    "url": "story/805f44c82e23.html"
@@ -1155,7 +1155,7 @@
    "title": "[UPDATE] [kritisch] WSO2 API Manager: Mehrere Schwachstellen",
    "summary": "Ein Angreifer kann mehrere Schwachstellen in WSO2 API Manager ausnutzen, um Sicherheitsvorkehrungen zu umgehen, um einen Denial of Service Angriff durchzuführen, um…",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "20 Oct 2026, 11:06 UTC",
    "sources": "CERT-Bund (BSI) Warnungen",
    "url": "story/e526a34d88fb.html"
@@ -1165,7 +1165,7 @@
    "title": "[UPDATE] [mittel] libexpat: Mehrere Schwachstellen ermöglichen nicht spezifizierten Angriff",
    "summary": "Ein lokaler Angreifer kann mehrere Schwachstellen in libexpat ausnutzen, um einen nicht näher spezifizierten Angriff durchzuführen, darunter möglicherweise die…",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "20 Oct 2026, 11:06 UTC",
    "sources": "CERT-Bund (BSI) Warnungen",
    "url": "story/05cabaa70681.html"
@@ -1175,7 +1175,7 @@
    "title": "[UPDATE] [niedrig] Linux Kernel: Mehrere Schwachstellen ermöglichen Denial of Service",
    "summary": "Ein lokaler Angreifer kann mehrere Schwachstellen im Linux Kernel ausnutzen, um einen Denial of Service Angriff durchzuführen.",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "20 Oct 2026, 11:06 UTC",
    "sources": "CERT-Bund (BSI) Warnungen",
    "url": "story/d1d4187af2f0.html"
@@ -1185,7 +1185,7 @@
    "title": "[UPDATE] [mittel] CPython: Schwachstelle ermöglicht Manipulation von Dateien",
    "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in CPython ausnutzen, um Dateien zu manipulieren.",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "20 Oct 2026, 11:06 UTC",
    "sources": "CERT-Bund (BSI) Warnungen",
    "url": "story/3a25a236c352.html"
@@ -1195,7 +1195,7 @@
    "title": "[NEU] [mittel] MISP und MISP Modules: Mehrere Schwachstellen",
    "summary": "Ein entfernter, authentisierter Angreifer kann mehrere Schwachstellen in MISP ausnutzen, um Sicherheitsvorkehrungen zu umgehen, Cross-Site-Scripting-Angriffe…",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "20 Oct 2026, 11:06 UTC",
    "sources": "CERT-Bund (BSI) Warnungen",
    "url": "story/5feccfa1e412.html"
@@ -1205,7 +1205,7 @@
    "title": "[UPDATE] [hoch] Apache Camel: Schwachstelle ermöglicht Codeausführung",
    "summary": "Ein Angreifer aus einem angrenzenden Netzwerk kann eine Schwachstelle in Apache Camel ausnutzen, um beliebigen Programmcode auszuführen.",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "20 Oct 2026, 10:15 UTC",
    "sources": "CERT-Bund (BSI) Warnungen",
    "url": "story/40af1b6980a8.html"
@@ -1215,7 +1215,7 @@
    "title": "[UPDATE] [hoch] Drupal Core, Gin Admin Theme und Entity List: Mehrere Schwachstellen",
    "summary": "Ein Angreifer kann mehrere Schwachstellen in Drupal ausnutzen, um beliebigen Programmcode auszuführen oder Cross-Site-Scripting-Angriffe durchzuführen.",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "20 Oct 2026, 09:55 UTC",
    "sources": "CERT-Bund (BSI) Warnungen",
    "url": "story/e896aaaf9e69.html"
@@ -1385,7 +1385,7 @@
    "title": "SecTor 2026 Reveals a Rapidly Shifting Cybersecurity Landscape",
    "summary": "The event closed in Toronto last week, with experts sharing critical perspectives on emerging risks, drawing record attendance and marking 22% growth.",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "15 Oct 2026, 22:10 UTC",
    "sources": "Dark Reading",
    "url": "story/3f1030ed0e26.html"
@@ -1435,7 +1435,7 @@
    "title": "Accenture, Dragos, SANS Launch $10M Initiative to Defend Small US Utilities",
    "summary": "The first phase will cover up to 500 utilities, which will get free security tools, equipment, deployment help and training. The post Accenture, Dragos, SANS Launch $10M…",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "21 Oct 2026, 04:22 UTC",
    "sources": "SecurityWeek",
    "url": "story/b374ef599927.html"
@@ -1455,7 +1455,7 @@
    "title": "The Internet goes on high alert after discovery of 8 compromised TLS certs",
    "summary": "Security personnel around the world are on high alert Tuesday following the discovery of eight TLS certificates with private keys so weak they could allow anyone to mint…",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "20 Oct 2026, 19:47 UTC",
    "sources": "Ars Technica Security",
    "url": "story/cd17d628776a.html"
@@ -1485,7 +1485,7 @@
    "title": "Nigerian national given 8-year sentence for tax business hacks",
    "summary": "A Nigerian national who worked with a group to hack tax prep businesses and conduct millions of dollars in fraud using customer data was sentenced this week.",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "20 Oct 2026, 17:14 UTC",
    "sources": "The Record",
    "url": "story/1b377ec74e5f.html"
@@ -1495,10 +1495,20 @@
    "title": "Eight eMudhra CA Keys Compromised, Triggering Emergency Fixes Across Browsers and Software",
    "summary": "The private keys of eight eMudhra intermediate certificate authority (CA) certificates are compromised, Mozilla and Google's Chrome Root Program confirms on October 20…",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "20 Oct 2026, 17:09 UTC",
    "sources": "The Hacker News",
    "url": "story/1530955429aa.html"
+  },
+  {
+   "id": "37743d55fc6d",
+   "title": "WordPress Plugins Updraft und Rank Math PRO kompromittiert",
+   "summary": "Zwei Meldungen zu kompromittierten Plugins für WordPress, die mich die Tage erreicht haben. Ein Leser hat mich informiert, dass das Plugin Updraft kompromittiert sei…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "20 Oct 2026, 15:53 UTC",
+   "sources": "Born's IT and Windows Blog",
+   "url": "story/37743d55fc6d.html"
   },
   {
    "id": "4cce5b0679d6",
@@ -1515,7 +1525,7 @@
    "title": "DHS bans DeepSeek products across US federal civilian agencies",
    "summary": "The U.S. Department of Homeland Security (DHS) is ordering federal civilian agencies to stop using DeepSeek products and remove them from government systems.",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "20 Oct 2026, 14:19 UTC",
    "sources": "BleepingComputer",
    "url": "story/4162cca6289c.html"
@@ -1535,7 +1545,7 @@
    "title": "Anti-Putin messages disrupt nationwide school assessments in Russia",
    "summary": "A pro-Ukraine group that says it operates within Russia took responsibility for anti-Putin messages appearing on an education assessment platform. Authorities said they…",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "20 Oct 2026, 14:05 UTC",
    "sources": "The Record",
    "url": "story/ba5b9e5d876d.html"
@@ -1585,7 +1595,7 @@
    "title": "Go Issues Emergency Update Blocking Eight CA Keys Over Undisclosed Security Concerns",
    "summary": "Go 1.27.3 and Go 1.26.10, released on October 20, make Go's certificate verifier reject any certificate chain that passes through one of eight intermediate certificate…",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "20 Oct 2026, 11:32 UTC",
    "sources": "The Hacker News",
    "url": "story/f0509be43eab.html"
@@ -1635,7 +1645,7 @@
    "title": "Revolut outage disrupts online banking operations worldwide",
    "summary": "Fintech company Revolut is working to resolve a massive outage that disrupted most of its services worldwide earlier today.",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "20 Oct 2026, 09:46 UTC",
    "sources": "BleepingComputer",
    "url": "story/4b4f09e00694.html"
@@ -1645,7 +1655,7 @@
    "title": "[UPDATE] [mittel] PCRE (Perl Compatible Regular Expressions): Schwachstelle ermöglicht Codeausführung",
    "summary": "Ein entfernter, authentisierter Angreifer kann eine Schwachstelle in PCRE (Perl Compatible Regular Expressions) ausnutzen, um möglicherweise beliebigen Code auszuführen…",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "19 Oct 2026, 15:15 UTC",
    "sources": "CERT-Bund (BSI) Warnungen",
    "url": "story/70d02c573a35.html"
@@ -1655,7 +1665,7 @@
    "title": "[UPDATE] [hoch] PCRE2 (Perl Compatible Regular Expressions): Mehrere Schwachstellen",
    "summary": "Ein Angreifer kann mehrere Schwachstellen in PCRE2 (Perl Compatible Regular Expressions) ausnutzen, um Sicherheitsvorkehrungen zu umgehen, Speicher zu beschädigen…",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "19 Oct 2026, 15:15 UTC",
    "sources": "CERT-Bund (BSI) Warnungen",
    "url": "story/2b7f0ec04193.html"
@@ -1665,7 +1675,7 @@
    "title": "[UPDATE] [hoch] GIMP Plugins: Mehrere Schwachstellen ermöglichen Codeausführung und DoS",
    "summary": "Ein lokaler Angreifer kann mehrere Schwachstellen in GIMP ausnutzen, um beliebigen Programmcode auszuführen oder einen Denial-of-Service-Zustand herbeizuführen.",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "19 Oct 2026, 15:15 UTC",
    "sources": "CERT-Bund (BSI) Warnungen",
    "url": "story/ea1e5dd8b620.html"
@@ -1705,7 +1715,7 @@
    "title": "[UPDATE] [mittel] GNU Emacs und Red Hat Enterprise Linux: Schwachstelle ermöglicht Codeausführung",
    "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in GNU Emacs und Red Hat Enterprise Linux ausnutzen, um beliebigen Programmcode auszuführen.",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "19 Oct 2026, 13:12 UTC",
    "sources": "CERT-Bund (BSI) Warnungen",
    "url": "story/e55376075ac8.html"
@@ -1715,7 +1725,7 @@
    "title": "[UPDATE] [mittel] Red Hat OpenShift Container Platform: Mehrere Schwachstellen",
    "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Red Hat OpenShift Container Platform ausnutzen, um Sicherheitsvorkehrungen zu umgehen oder einen Denial…",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "19 Oct 2026, 13:12 UTC",
    "sources": "CERT-Bund (BSI) Warnungen",
    "url": "story/6c4a212ac074.html"
@@ -1725,7 +1735,7 @@
    "title": "[UPDATE] [niedrig] Red Hat Enterprise Linux: Schwachstelle ermöglicht Offenlegung von Informationen",
    "summary": "Ein entfernter, authentisierter Angreifer kann eine Schwachstelle in Red Hat Enterprise Linux und Red Hat Ansible Automation Platform ausnutzen, um Informationen…",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "19 Oct 2026, 13:12 UTC",
    "sources": "CERT-Bund (BSI) Warnungen",
    "url": "story/d8811d26023a.html"
@@ -1911,6 +1921,16 @@
    "url": "story/6c494d43a845.html"
   },
   {
+   "id": "300b140b7b13",
+   "title": "Schwachstelle CVE-2026-109390 (CVSS v3.1 9.8) im AnyDesk-Client für Linux",
+   "summary": "Ich stelle mal eine Information hier ein, auf die ich nun von zwei Blog-Lesern hingewiesen wurde. Im AnyDesk-Client für Linux gibt es eine kritischen Schwachstelle…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "19 Oct 2026, 22:01 UTC",
+   "sources": "Born's IT and Windows Blog",
+   "url": "story/300b140b7b13.html"
+  },
+  {
    "id": "a4cd23325612",
    "title": "WordPress SEO plugin Rank Math compromised to backdoor websites",
    "summary": "Some downloads of the Rank Math PRO WordPress plugin from the vendor's official website carried malware that planted hidden backdoors in a supply-chain attack last week.",
@@ -2015,7 +2035,7 @@
    "title": "Russian social media giant VK faces disruptions after data center drone strike",
    "summary": "The disruptions began Sunday, when users complained of difficulties loading news feeds, playing music and accessing other features of VK's platforms.",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "19 Oct 2026, 15:55 UTC",
    "sources": "The Record",
    "url": "story/f650fcc751bf.html"
@@ -2065,7 +2085,7 @@
    "title": "Agents are your newest insiders. Security must move at their speed.",
    "summary": "Agents are rapidly becoming part of how work gets done. They can support a range of activities from writing code and researching products to analyzing revenue…",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "19 Oct 2026, 13:00 UTC",
    "sources": "Microsoft Security Blog",
    "url": "story/cd30eb68866b.html"
@@ -2085,7 +2105,7 @@
    "title": "One Compromised Login Exposed Millions of California Students’ Records",
    "summary": "Intruders used compromised credentials to access an ETS SFTP server, copying records of California students back to 2006. The post One Compromised Login Exposed Millions…",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "19 Oct 2026, 11:55 UTC",
    "sources": "SecurityWeek",
    "url": "story/6e3176643ea9.html"
@@ -2095,7 +2115,7 @@
    "title": "From Email-to-Case to the Boardroom: How Inherited Agents Break Governance Built for Software",
    "summary": "In Salesforce Agentforce, the recommended way to make an agent respond to events is a Flow: a record is created or a case is updated, and the Flow passes data into the…",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "19 Oct 2026, 11:50 UTC",
    "sources": "The Hacker News",
    "url": "story/5ae38a63e473.html"
@@ -2115,7 +2135,7 @@
    "title": "Training AIs to Solve CAPTCHAs",
    "summary": "Interesting research: Abstract: Vision-language models (VLMs) can solve visual CAPTCHAs without task-specific training, but the agents built on them approach every…",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "19 Oct 2026, 11:07 UTC",
    "sources": "Schneier on Security",
    "url": "story/570936749f04.html"
@@ -2145,7 +2165,7 @@
    "title": "Friday Squid Blogging: Squid Before the Chicxulub Meteor Impact",
    "summary": "New research shows that squid lived all around the globe even before the Cretaceous-Paleogene mass extinction event. As usual, you can also use this squid post to talk…",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "16 Oct 2026, 21:06 UTC",
    "sources": "Schneier on Security",
    "url": "story/fd577205a9ba.html"
@@ -2155,7 +2175,7 @@
    "title": "Biomemory Launches DNA Shield, First Commercial Product Built on Its Molecular IT Platform",
    "summary": "The launch follows the acquisition of catalog's assets and the appointment of Laurent Guengant as CEO earlier this year.",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "16 Oct 2026, 19:22 UTC",
    "sources": "Dark Reading",
    "url": "story/b8b7cb7d4b49.html"
@@ -2265,7 +2285,7 @@
    "title": "Measuring Human Cryptanalysis Effort",
    "summary": "Matthew Green has a new site that tries to estimate the number of cryptanalyst-hours that have been spent analyzing different public-key algorithms: Abstract: We…",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "15 Oct 2026, 16:24 UTC",
    "sources": "Schneier on Security",
    "url": "story/b199b73eb8c2.html"
@@ -2315,7 +2335,7 @@
    "title": "India Mandates Registered Caller Name Display on 4G and Newer Networks From November 1",
    "summary": "The Indian government has directed telecom service providers (TSPs) in the country to mandatorily display callers' registered names along with their numbers for incoming…",
    "priority": "Standard",
-   "category": "Germany & BSI",
+   "category": "Industry & Research",
    "date": "15 Oct 2026, 10:42 UTC",
    "sources": "The Hacker News",
    "url": "story/b5878f01eb58.html"
@@ -2329,16 +2349,6 @@
    "date": "15 Oct 2026, 08:45 UTC",
    "sources": "The Hacker News",
    "url": "story/1d72630baefb.html"
-  },
-  {
-   "id": "c86f8dee64ea",
-   "title": "EU Grocers Pay a Steep Price for Unpatched Fridge Firmware",
-   "summary": "Hundreds of stores lost millions of euros because they hired third parties to manage the outdated OT firmware running their cooling systems.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "15 Oct 2026, 07:00 UTC",
-   "sources": "Dark Reading",
-   "url": "story/c86f8dee64ea.html"
   }
  ]
 }
