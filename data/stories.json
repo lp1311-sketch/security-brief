@@ -1863,27 +1863,6 @@
    "instructions_checked": true
   },
   {
-   "id": "50367ee6ae87",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "title": "Langflow's Critical Authenticated RCE Flaw Targeted in 1,423 Honeypot Exploit Attempts",
-   "link": "https://thehackernews.com/2026/10/langflows-critical-authenticated-rce.html",
-   "published": "2026-10-15T07:07:05+00:00",
-   "summary": "Threat actors are exploiting a critical security flaw in Langflow, according to an alert from Previdian. Langflow is an open-source platform that allows developers to build artificial intelligence (AI) applications and agentic workflows. In February 2025, DataStax, the parent company of Langflow, was acquired by IBM…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1tlAL_zc7Hg-gD5PRFa08hoOp2KRDu9kNSJk8nhZ91us8q-K7qGfnoasa6gONBjZoEtGJqPEZY3rKMy4Uqozk89X-L7IQBV8IrDqnJYdtAsCC4d08mmQUI4r_zACmvDVdey82w7FC4lTIoYfqdwYYu2Bp_Ql0AwOB54KRYrHk9ixjo27rKLWEK0dwsfw3/s1600/langflow.jpg",
-   "cves": [
-    "CVE-2026-105740"
-   ],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00",
-   "instructions": [
-    "\"Any authenticated Langflow user can achieve Remote Code Execution (RCE) on the server by adding an MCP server with the 'stdio' transport,\" reads an advisory released last month.",
-    "\"We recommend upgrading Langflow to a patched version, disabling auto-login, enforcing strong and unique passwords, and reviewing authentication logs and requests to /api/v2/mcp/servers/ for suspicious activity,\" Dewhurst said.",
-    "If immediate patching is not an option, it's advised to set LANGFLOW_AUTO_LOGIN=false, avoid exposing Langflow directly to untrusted networks, and grant Langflow accounts to trusted users."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "f5335e20393b",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -6195,6 +6174,28 @@
     "Per the internet giant’s advisory , no bug bounty reward will be paid for 285 vulnerabilities.",
     "Preparing for disruption must become part of day-to-day operations.",
     "Browsers Block eMudhra Intermediate CAs Over Recoverable Private Keys"
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "dd2c177462a4",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Meta Ordered to Pay New Mexico $25 Billion for Deceiving Users About Privacy on Facebook",
+   "link": "https://www.securityweek.com/meta-ordered-to-pay-new-mexico-25-billion-for-deceiving-users-about-privacy-on-facebook/",
+   "published": "2026-10-22T07:26:54+00:00",
+   "summary": "The $25 billion award far exceeds a $5 billion fine the Federal Trade Commission levied against Facebook in 2019. The post Meta Ordered to Pay New Mexico $25 Billion for Deceiving Users About Privacy on Facebook appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/01/instagram-facebook-meta-threads-social-media.jpeg",
+   "cves": [],
+   "first_seen": "2026-10-22T07:29:08.158313+00:00",
+   "image_checked": true,
+   "instructions": [
+    "The award will serve as a warning to tech companies that New Mexico will hold them accountable, state Attorney General Raúl Torrez said at a news conference. “This judgment should be a signal, an unambiguous message, to Silicon Valley,” he said.",
+    "Jon Steinbach has been appointed strategic technical advisor to the Pentagon’s CIO.",
+    "Preparing for disruption must become part of day-to-day operations.",
+    "Meta said the ruling and Torrez’s office’s approach to enforcement “makes it all but impossible to do business in the state of New Mexico.” “At its core, this lawsuit seeks to impose a tax on speech to enforce new rules for what people can say online."
    ],
    "instructions_checked": true
   },
