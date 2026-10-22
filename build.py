@@ -968,6 +968,7 @@ def _layout(cfg: dict, title: str, desc: str, body: str, base: str, image: str |
 <title>{esc(title)} | {site}</title>
 <meta name="description" content="{esc(desc)}">
 {_og_tags(cfg, title, desc, image)}
+<script>document.documentElement.classList.add("js");</script>
 <script>{THEME_JS}</script>
 <link rel="stylesheet" href="{base}style.css">
 <link rel="icon" href="{base}favicon.svg" type="image/svg+xml">
@@ -986,6 +987,7 @@ def _layout(cfg: dict, title: str, desc: str, body: str, base: str, image: str |
 {body}
 </main>
 <script>{BANNER_JS}</script>
+<script>{FX_JS}</script>
 <footer class="site-footer"><div class="wrap"><p>&copy; {year} Leon Pavesic. Design, analysis and texts on this site are protected by copyright. Headlines, short excerpts and images belong to their original publishers and are linked to the source. Not affiliated with any source.</p><p><a href="{base}impressum.html">Impressum</a> &middot; <a href="{base}datenschutz.html">Privacy</a> &middot; <a href="{base}corrections.html">Corrections</a> &middot; <a href="{base}feed.xml">RSS</a> &middot; <a href="mailto:leon.pavesic@gmx.de">Contact</a> &middot; <a href="https://www.linkedin.com/in/leon-pavesic/" rel="me noopener noreferrer" target="_blank">LinkedIn</a> &middot; <a href="https://www.xing.com/profile/Leon_Pavesic" rel="me noopener noreferrer" target="_blank">XING</a></p></div></footer>
 </body>
 </html>
@@ -1194,13 +1196,18 @@ def article_page(a: dict, cfg: dict, site_cfg: dict) -> str:
     base = "../../"
     label = SECTIONS[a["section"]]
     lede = f'<p class="lede">{esc(a["summary"])}</p>' if a["summary"] else ""
+    header = (
+        '<section class="hero article-hero" aria-labelledby="article-title">'
+        f'<div class="hero-media"><img src="{esc(article_cover(a))}" alt="" width="640" height="360"></div>'
+        f'<div class="hero-body"><p class="kicker"><span class="cat">{esc(label)}</span>'
+        f'<span class="type">{esc(fmt_day(a["date"]))}</span></p>'
+        f'<h1 id="article-title" class="article-title">{esc(a["title"])}</h1>{lede}</div></section>'
+    )
     body = (
-        '<article class="prose">'
-        f'<p class="kicker">{esc(label)} &middot; {esc(fmt_day(a["date"]))}</p>'
-        f'<h1>{esc(a["title"])}</h1>{lede}'
-        f'<figure><img src="{esc(article_cover(a))}" alt="" width="640" height="360"></figure>{a["body"]}'
-        f'<p class="meta"><a href="index.html">&larr; All {esc(label)}</a> &middot; <a href="../../index.html">Home</a></p>'
-        "</article>"
+        header
+        + '<article class="prose">' + a["body"]
+        + f'<p class="meta"><a href="index.html">&larr; All {esc(label)}</a> &middot; <a href="../../index.html">Home</a></p>'
+        + "</article>"
     )
     body += _donate(site_cfg) + _newsletter(site_cfg, base)
     return _layout(cfg, a["title"], _short(a["summary"] or a["title"], 150), body, base)
@@ -1321,16 +1328,32 @@ def cve_table(rows: list[dict]) -> str:
             '<th scope="col">Priority</th><th scope="col">Feed date</th><th scope="col">Details</th></tr></thead><tbody>'
             + "".join(trs) + "</tbody></table></div></section>")
 
+def _article_hero(a: dict, href: str) -> str:
+    return (f'<section class="hero" aria-labelledby="hero-title"><a class="hero-media" href="{esc(href)}" tabindex="-1" aria-hidden="true">'
+            f'<img src="{esc(article_cover(a))}" alt="" loading="eager" width="640" height="360"></a>'
+            f'<div class="hero-body"><p class="kicker"><span class="cat">{esc(SECTIONS[a["section"]])}</span></p>'
+            f'<h2 id="hero-title"><a href="{esc(href)}">{esc(a["title"])}</a></h2>'
+            f'<p class="summary">{esc(_short(a["summary"] or "", 240))}</p>'
+            f'<p class="meta">{esc(fmt_day(a["date"]))}</p>'
+            f'<div class="actions"><a class="btn" href="{esc(href)}">Read the analysis &rarr;</a></div></div></section>')
+
+
 def section_page(sec: str, arts: list[dict], cfg: dict, site_cfg: dict,
                  cve_rows: list[dict] | None = None) -> str:
     base = "../"
     label = SECTIONS[sec]
-    cards = "".join(_article_card(a, f"{a['slug']}.html") for a in arts) or '<div class="empty">No published articles yet.</div>'
+    if arts:
+        listing = _article_hero(arts[0], f"{arts[0]['slug']}.html")
+        if len(arts) > 1:
+            cards = "".join(_article_card(a, f"{a['slug']}.html") for a in arts[1:])
+            listing += f'<section class="section"><h2>More analysis</h2><div class="grid">{cards}</div></section>'
+    else:
+        listing = '<div class="empty">No published articles yet.</div>'
     cve_block = cve_table(cve_rows) if cve_rows is not None else ""
     body = (
-        f'<section class="intro"><h1>{esc(label)}</h1><p class="meta">Original analysis, newest first.</p></section>'
-        + cve_block
-        + f'<section class="section"><h2>Notes</h2><div class="grid">{cards}</div></section>'
+        f'<section class="intro"><p class="kicker">Analysis desk</p><h1>{esc(label)}</h1>'
+        f'<p class="lede">Original analysis, newest first.</p></section>'
+        + listing + cve_block
     ) + _newsletter(site_cfg, base)
     return _layout(cfg, label, f"{label}: original analysis.", body, base)
 
@@ -1724,7 +1747,9 @@ def story_page(s: dict, cfg: dict) -> str:
     reasons = "".join(f"<li>{esc(r)}</li>" for r in s["reasons"]) or "<li>No scoring signals matched.</li>"
     srcs = "".join(
         f'<li><a href="{esc(x["url"])}" rel="nofollow noopener noreferrer" target="_blank">{esc(x["title"])}</a>'
-        f' — {esc(x["name"])}, {esc(fmt_date(x["published"]))}</li>'
+        f' — {esc(x["name"])}, {esc(fmt_date(x["published"]))}'
+        + (' <span class="dead">(link not found at last check)</span>' if x.get("link_status") == "dead" else "")
+        + "</li>"
         for x in s["sources"]
     )
     if s["kev"]:
@@ -1813,6 +1838,17 @@ def sitemap_xml(stories: list[dict], cfg: dict, articles: list[dict] | None = No
             + "".join(f"<url><loc>{esc(u)}</loc></url>" for u in urls) + "</urlset>\n")
 
 
+FX_JS = """(function(){
+var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+var bar=document.createElement('div');bar.className='progress';bar.setAttribute('aria-hidden','true');document.body.appendChild(bar);
+function prog(){var h=document.documentElement,max=h.scrollHeight-h.clientHeight;bar.style.transform='scaleX('+(max>0?Math.min(1,h.scrollTop/max):0)+')';}
+window.addEventListener('scroll',prog,{passive:true});prog();
+if(!reduce&&'IntersectionObserver' in window){
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.1});
+document.querySelectorAll('.card,.hero,.stat').forEach(function(el){el.classList.add('reveal');io.observe(el);});}
+if(!reduce){document.querySelectorAll('.card').forEach(function(c){c.addEventListener('pointermove',function(ev){var r=c.getBoundingClientRect();c.style.setProperty('--mx',(ev.clientX-r.left)+'px');c.style.setProperty('--my',(ev.clientY-r.top)+'px');});});}
+})();"""
+
 FX_CSS = """
 main,.site-footer{position:relative;z-index:1}
 body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.55;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:radial-gradient(ellipse at 50% 0%,#000 25%,transparent 72%);mask-image:radial-gradient(ellipse at 50% 0%,#000 25%,transparent 72%)}
@@ -1869,6 +1905,17 @@ a.live:hover{color:var(--ink);border-color:var(--crit)}
 .card:hover .card-media img{transform:scale(1.04)}
 .card-media{overflow:hidden}
 @media (prefers-reduced-motion:reduce){.fx-circuit path,.fx-circuit circle,.hero::after{animation:none!important}.fx-circuit path{stroke-dasharray:none}.card-media img{transition:none}.card:hover .card-media img{transform:none}}
+.progress{position:fixed;left:0;top:0;height:3px;width:100%;z-index:40;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,#22c55e,#38bdf8,#ef4444);box-shadow:0 0 12px rgba(56,189,248,.6);pointer-events:none}
+.js .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+.js .reveal.in{opacity:1;transform:none}
+.card::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .3s ease;background:radial-gradient(260px circle at var(--mx,50%) var(--my,50%),rgba(94,234,212,.14),transparent 60%)}
+.card:hover::before{opacity:1}
+.dead{color:var(--crit);font-size:.85rem;font-weight:600}
+.article-title{font-size:clamp(1.7rem,3.2vw,2.5rem);line-height:1.1;letter-spacing:-.025em;margin:0;font-weight:760;background:none;-webkit-text-fill-color:var(--ink)}
+.article-hero .hero-body{justify-content:center}
+.article-hero .hero-media img{aspect-ratio:16/9}
+.intro .kicker{margin-bottom:6px}
+@media (prefers-reduced-motion:reduce){.js .reveal{opacity:1;transform:none;transition:none}.progress{display:none}}
 @media (prefers-reduced-motion:reduce){body::before,.orb,.fly,.led,.card::after{animation:none!important;transition:none!important}.fly,.card::after{display:none}}
 """
 BANNER_JS = """(function(){
@@ -1890,10 +1937,7 @@ def write_site(out: Path, stories: list[dict], cfg: dict, now: datetime, status:
     articles = articles or []
     site_cfg = site_cfg or {}
     (out / "story").mkdir(parents=True, exist_ok=True)
-    keep = {f"{s['id']}.html" for s in stories}
-    for f in (out / "story").glob("*.html"):
-        if f.name not in keep:
-            f.unlink()
+    # Story pages are kept even after a story leaves the 7-day window, so old links never 404.
     (out / "style.css").write_text(CSS.strip() + "\n" + EXTRA_CSS + "\n" + DESIGN_CSS, encoding="utf-8")
     (out / "favicon.svg").write_text(FAVICON_SVG, encoding="utf-8")
     (out / "logo.svg").write_text(LOGO_SVG, encoding="utf-8")
@@ -1942,6 +1986,45 @@ def write_site(out: Path, stories: list[dict], cfg: dict, now: datetime, status:
 
 
 # ---------- main ----------
+
+LINK_CACHE_DAYS = 7
+DEAD_CODES = {404, 410}
+
+
+def _probe(url: str, timeout: int = 8) -> str:
+    """'ok', 'dead' (404/410 from the publisher) or 'unverified' (blocked, slow or unreachable)."""
+    for method in ("HEAD", "GET"):
+        try:
+            req = urllib.request.Request(url, method=method, headers={"User-Agent": UA})
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                return "ok" if r.status < 400 else "unverified"
+        except urllib.error.HTTPError as e:
+            if e.code in DEAD_CODES:
+                return "dead"
+            if e.code in (403, 405, 429):
+                continue
+            return "unverified"
+        except Exception:
+            return "unverified"
+    return "unverified"
+
+
+def check_source_links(stories: list[dict], cache_path: Path, now: datetime, budget: int = 40) -> None:
+    """Checks each original source link at most once a week, a few per run, and stores the result."""
+    cache = json.loads(cache_path.read_text(encoding="utf-8")) if cache_path.exists() else {}
+    checked = 0
+    for s in stories:
+        for x in s.get("sources", []):
+            url = x.get("url", "")
+            entry = cache.get(url)
+            fresh = bool(entry) and (now - datetime.fromisoformat(entry["at"])).days < LINK_CACHE_DAYS
+            if not fresh and checked < budget:
+                cache[url] = {"status": _probe(url), "at": now.isoformat()}
+                checked += 1
+            x["link_status"] = (cache.get(url) or {}).get("status", "unchecked")
+    cache_path.parent.mkdir(parents=True, exist_ok=True)
+    cache_path.write_text(json.dumps(cache, indent=1, sort_keys=True), encoding="utf-8")
+
 
 def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datetime,
         site_cfg: dict | None = None, content_dir: Path | None = None) -> dict:
@@ -2006,8 +2089,10 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
                      s["score"], s["image"], [x["url"] for x in s["sources"]]] for s in stories],
         "articles": [[a["section"], a["slug"], a["title"], a["date"], a["summary"], a["_md"]] for a in articles],
         "site": site_cfg,
-        "render": "5.24",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
+        "render": "5.25",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
     }, ensure_ascii=False, sort_keys=True)
+    if fixtures is None:
+        check_source_links(stories, data_file.parent / "linkcheck.json", now)
     digest = hashlib.sha1(digest_src.encode("utf-8")).hexdigest()
     digest_file = data_file.parent / "digest.txt"
     prev_digest = digest_file.read_text(encoding="utf-8").strip() if digest_file.exists() else ""
