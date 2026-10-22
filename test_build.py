@@ -5,11 +5,11 @@ import unittest
 from datetime import datetime, timezone
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[0]
+ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 import build  # noqa: E402
 
-FIX = Path(__file__).resolve().parent
+FIX = Path(__file__).resolve().parent / "fixtures"
 NOW = datetime(2026, 10, 19, 12, 0, tzinfo=timezone.utc)
 SRC_BC = {"id": "bleepingcomputer", "name": "BleepingComputer", "official": False}
 SRC_THN = {"id": "thehackernews", "name": "The Hacker News", "official": False}

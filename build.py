@@ -985,6 +985,27 @@ figcaption{font-size:.8rem;color:var(--muted);margin-top:8px}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.card:hover{transform:none}}
 """
 
+EDITORIAL_CSS = """
+/* Consistent editorial shell for every page type. */
+.site-header .brand{font-size:1.16rem;letter-spacing:-.025em;text-shadow:0 0 22px color-mix(in srgb,var(--accent) 28%,transparent)}
+.logo-img{width:38px;height:38px;border-radius:11px;filter:drop-shadow(0 0 8px color-mix(in srgb,var(--accent) 55%,transparent))}
+.analysis-article,.story-page{background:color-mix(in srgb,var(--surface) 72%,transparent);border:1px solid var(--line);border-radius:24px;padding:clamp(16px,3vw,34px);box-shadow:var(--shadow)}
+.analysis-article{max-width:1080px;margin:0 auto}
+.story-page{max-width:900px;margin:0 auto}
+.story-page>h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.04;margin-top:12px}
+.story-page>figure{margin:28px 0 34px;padding:10px;background:var(--surface-2);border:1px solid var(--line);border-radius:20px}
+.story-page>figure img{border-radius:14px;width:100%;max-height:520px;object-fit:cover}
+.story-page>h2{font-size:1.25rem;padding-top:8px}
+.analysis-heading .article-title{max-width:780px}
+.analysis-prose{max-width:780px}
+.analysis-prose blockquote,.analysis-prose .notice{border-left:3px solid var(--accent);background:var(--surface-2);padding:14px 18px;border-radius:0 12px 12px 0}
+.analysis-prose a,.story-page a{text-underline-offset:3px}
+.page-surface .analysis-back{border-top:1px solid var(--line);padding-top:20px;margin-top:38px}
+.freshness{display:inline-flex;align-items:center;min-height:28px;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 11px}
+@media(max-width:640px){.site-header .brand{font-size:1.02rem}.logo-img{width:34px;height:34px}.analysis-article,.story-page{padding:14px;border-radius:18px}.freshness{border-radius:12px;display:block}}
+
+"""
+
 THEME_JS = """(function(){
 var root=document.documentElement,dark=false,saved=null;
 try{saved=localStorage.getItem('sb-theme')}catch(e){}
@@ -1327,7 +1348,7 @@ def article_page(a: dict, cfg: dict, site_cfg: dict) -> str:
     )
     toc = article_toc(a["body"])
     body = (
-        '<article class="analysis-article">' + header + toc
+        '<article class="analysis-article page-surface">' + header + toc
         + '<div class="prose analysis-prose">' + a["body"]
         + f'<p class="analysis-back"><a class="btn" href="index.html">&larr; All {esc(label)}</a> '
         '<a class="text-link" href="../../index.html">Back to home</a></p>'
@@ -1714,7 +1735,6 @@ function stamp(value){var d=new Date(value);return isNaN(d.getTime())?'time unav
 fetch('status.json?fresh='+Date.now(),{cache:'no-store'}).then(function(r){if(!r.ok)throw Error('status unavailable');return r.json();}).then(function(s){
   var ok=Number(s.sources_ok||0),total=Number(s.sources_total||0);
   el.textContent='Last feed check: '+stamp(s.last_check_at||s.generated)+' · '+ok+'/'+total+' sources succeeded in that run. ';
-  var a=document.createElement('a');a.href='status.json';a.textContent='Details';el.appendChild(a);
 }).catch(function(){el.textContent='Latest feed-check status is unavailable; displayed stories remain accessible.';});
 })();"""
 
@@ -1888,7 +1908,6 @@ def index_page(stories: list[dict], cfg: dict, now: datetime, status: dict,
         f'<div class="stat"><b>{status.get("sources_total", 0)}</b><span>sources monitored</span></div>'
         "</div>",
     ]
-    parts.append(_donate(site_cfg))
     if articles:
         parts.append(
             '<section class="section" id="analysis"><h2>From the analysis desk</h2><div class="grid">'
@@ -1907,9 +1926,6 @@ def index_page(stories: list[dict], cfg: dict, now: datetime, status: dict,
         '<a class="btn" href="m365-identity-incident-triage-checklist.pdf" download>Download the free PDF &rarr;</a>'
         '</div></article></section>'
     )
-    newsletter = _newsletter(site_cfg, "")
-    if newsletter:
-        parts.append(newsletter)
     if not stories:
         parts.append('<div class="empty">No news stories yet. The next automated check will fill this page.</div>')
     else:
@@ -1928,6 +1944,11 @@ def index_page(stories: list[dict], cfg: dict, now: datetime, status: dict,
             parts.append(f'<section class="section" id="{cid}" data-section><h2>{esc(CATEGORIES[cid][0])}</h2>'
                          '<div class="grid">' + "".join(_card(s) for s in items) + "</div>"
                          f'<p class="section-more"><a href="category/{cid}/index.html">All {total} {esc(CATEGORIES[cid][0])} stories &rarr;</a></p></section>')
+    # Editorial modules intentionally sit after the live news feed, before the footer.
+    if articles:
+        pass
+    parts.append(_donate(site_cfg))
+    parts.append(_newsletter(site_cfg, ""))
     parts.append("<script>" + FEED_STATUS_JS + "</script>")
     return _layout(cfg, "Home", "Ranked cybersecurity news with links to original sources.", "\n".join(parts), "")
 
@@ -2011,7 +2032,7 @@ def story_page(s: dict, cfg: dict) -> str:
 <ul>{srcs}</ul>
 <p class="note">Automated page. Verify facts in the original articles before acting on them.</p>"""
     desc = _short(s["summary"] or s["title"], 150)
-    return _layout(cfg, s["title"], desc, f'<article class="prose">{body}</article>', "../", image=s["image"])
+    return _layout(cfg, s["title"], desc, f'<article class="story-page prose">{body}</article>', "../", image=s["image"])
 
 
 def feed_xml(stories: list[dict], cfg: dict, now: datetime, articles: list[dict] | None = None) -> str:
@@ -2151,7 +2172,7 @@ def write_site(out: Path, stories: list[dict], cfg: dict, now: datetime, status:
     site_cfg = site_cfg or {}
     (out / "story").mkdir(parents=True, exist_ok=True)
     # Story pages are kept even after a story leaves the 7-day window, so old links never 404.
-    (out / "style.css").write_text(CSS.strip() + "\n" + EXTRA_CSS + "\n" + DESIGN_CSS, encoding="utf-8")
+    (out / "style.css").write_text(CSS.strip() + "\n" + EXTRA_CSS + "\n" + EDITORIAL_CSS + "\n" + DESIGN_CSS, encoding="utf-8")
     (out / "favicon.svg").write_text(FAVICON_SVG, encoding="utf-8")
     # Optional root-level QR image: keep deployment simple for repository web uploads.
     import shutil

@@ -1,18 +1,25 @@
-SECURITY BRIEF - CHECKLIST UPDATE
+Security Brief editorial shell update
 
-These files belong in the ROOT of your existing GitHub repository (same level as feeds.json and autoblog.yml). The ZIP intentionally has no enclosing folder.
-
-Replace:
+Upload/replace these files in the repository:
 - build.py
-- site.json
-- test_autoblog.py
+- .github/workflows/autoblog.yml
+- content/briefings/*
+- content/patch-tuesday/*
+- tests/*
 
-Add or replace:
-- m365-identity-incident-triage-checklist.pdf
-- buymeacoffee-qr.png
+The update is designed to work with the existing site.json and data files.
+Do not overwrite site.json unless you intentionally preserve your private publisher settings.
 
-Then run the repository workflow. The generator copies the PDF and coffee QR into the generated site output, links the PDF from the homepage, and adds the PDF URL to sitemap.xml.
+Changes:
+- Analysis and Patch Tuesday pages use the same modern editorial shell as the homepage.
+- Story detail pages use the same card, surface, typography and image treatment.
+- Homepage analysis desk and free field guide remain below the live news feed.
+- Feed status no longer exposes a public Details link.
+- Header logo/brand is larger and more visible, with responsive mobile behavior.
+- Offline regression suite: 42 tests passed.
 
-Privacy: site.json contains the postal address and email configured for the public Impressum. Check that you want these details published before committing it.
-
-The PDF is an educational triage aid, not incident-specific advice. Verify current Microsoft portal labels, feature availability and your tenant's procedures before acting.
+After uploading:
+1. Commit the files to the default branch.
+2. Run the autoblog workflow manually.
+3. Wait for the Pages deployment to finish.
+4. Hard-refresh the site (Ctrl+F5) or use a private browser window.
