@@ -1131,17 +1131,22 @@ def donation_links(site_cfg: dict) -> list[tuple[str, str]]:
     return out
 
 
-def _donate(site_cfg: dict) -> str:
+def _donate(site_cfg: dict, base: str = "") -> str:
     links = donation_links(site_cfg)
     if not links:
         return ""
+    qr = str(site_cfg.get("donation_qr") or "").strip()
+    qr_html = ""
+    if qr and not qr.startswith(("/", "..")) and (ROOT / qr).is_file():
+        qr_html = (f'<figure class="donate-qr"><img src="{base}{esc(qr)}" width="160" height="160" '
+                   f'alt="QR code linking to the Buy me a coffee page" loading="lazy"></figure>')
     items = "".join(f'<li><a class="donate-btn" href="{esc(url)}" rel="noopener noreferrer" target="_blank">'
                     f'{esc(label)} &rarr;</a></li>' for label, url in links)
     text = str(site_cfg.get("donation_text") or
                "Security Brief is free to read. Donations are voluntary and do not change what is covered.")
     return ('<section class="support" aria-labelledby="support-title"><h2 id="support-title">Support this site</h2>'
             f'<p class="summary">{esc(text)}</p>'
-            f'<ul class="donate-grid">{items}</ul></section>')
+            f'<ul class="donate-grid">{items}</ul>{qr_html}</section>')
 
 
 # ---------- article covers (branded, generated from the article's own title) ----------
@@ -1210,7 +1215,7 @@ def article_page(a: dict, cfg: dict, site_cfg: dict) -> str:
         + f'<p class="meta"><a href="index.html">&larr; All {esc(label)}</a> &middot; <a href="../../index.html">Home</a></p>'
         + "</article>"
     )
-    body += _donate(site_cfg) + _newsletter(site_cfg, base)
+    body += _donate(site_cfg, base) + _newsletter(site_cfg, base)
     return _layout(cfg, a["title"], _short(a["summary"] or a["title"], 150), body, base)
 
 
@@ -1941,6 +1946,11 @@ def write_site(out: Path, stories: list[dict], cfg: dict, now: datetime, status:
     # Story pages are kept even after a story leaves the 7-day window, so old links never 404.
     (out / "style.css").write_text(CSS.strip() + "\n" + EXTRA_CSS + "\n" + DESIGN_CSS, encoding="utf-8")
     (out / "favicon.svg").write_text(FAVICON_SVG, encoding="utf-8")
+    # Static images referenced from site.json (e.g. the donation QR code) are copied as they are.
+    import shutil
+    for asset in (ROOT / "assets").glob("*.png") if (ROOT / "assets").is_dir() else []:
+        (out / "assets").mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(asset, out / "assets" / asset.name)
     (out / "logo.svg").write_text(LOGO_SVG, encoding="utf-8")
     (out / "index.html").write_text(index_page(stories, cfg, now, status, articles, site_cfg), encoding="utf-8")
     (out / "today").mkdir(parents=True, exist_ok=True)
@@ -2090,7 +2100,7 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
                      s["score"], s["image"], [x["url"] for x in s["sources"]]] for s in stories],
         "articles": [[a["section"], a["slug"], a["title"], a["date"], a["summary"], a["_md"]] for a in articles],
         "site": site_cfg,
-        "render": "5.26",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
+        "render": "5.27",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
     }, ensure_ascii=False, sort_keys=True)
     if fixtures is None:
         check_source_links(stories, data_file.parent / "linkcheck.json", now)
