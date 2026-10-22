@@ -1,6 +1,26 @@
 {
  "items": [
   {
+   "id": "2f1ed42ebe24",
+   "source": "ars",
+   "source_name": "Ars Technica Security",
+   "official": false,
+   "source_type": "news",
+   "title": "333 Tor exit nodes hijacked to intercept SSH traffic and retrieve plaintext email",
+   "link": "https://arstechnica.com/information-technology/2026/10/300-tor-exit-nodes-hijacked-to-intercept-ssh-traffic-and-retrieve-plaintext-email/",
+   "published": "2026-10-22T11:30:33+00:00",
+   "summary": "Unknown hackers hijacked more than 300 Tor exit nodes and reconfigured them to favor unencrypted email traffic and redirect SSH connections through servers they controlled, a researcher reported Tuesday. The hijacking began in late August, when according to Tor volunteers, the attacker used a valid password that had…",
+   "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-1237260150-1152x648.jpg",
+   "cves": [],
+   "first_seen": "2026-10-22T11:35:28.484063+00:00",
+   "instructions": [
+    "A second set of changes caused the exit nodes to block ports 25, 465, 587, 993 and 995—used to accept various forms of encrypted email—while continuing to allow ports for receiving unencrypted email.",
+    "The volunteer further set up a honeypot to observe the interception software attempting to log in and install Ebury.",
+    "Another is to disable password authentication in favor of SSH keys."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "fb9936745ef9",
    "source": "ars",
    "source_name": "Ars Technica Security",
@@ -2061,6 +2081,27 @@
    "source_type": "news"
   },
   {
+   "id": "1d3516a0d0a6",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "OpenCode Flaw Lets Malicious MCP Servers Execute Code During Sign-In on Windows and WSL",
+   "link": "https://thehackernews.com/2026/10/opencode-flaw-lets-malicious-mcp.html",
+   "published": "2026-10-22T10:44:05+00:00",
+   "summary": "A flaw in the OpenCode AI coding agent allowed a malicious or hijacked MCP server to run code on a developer's Windows or WSL machine when the developer signed in. OpenCode connects to MCP (Model Context Protocol) servers to add outside tools, and such code would run with the developer's own access. Anomaly, the…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUmn80CiQx35trhXNaAwJka_Z3T-PKQrz__dlAW1GDDVwfrk2WHit1W6GZBaaAT-a9SrmqqauUhw0raYLEOS3Vv-LNxdu0a2bmJebJWVj5mBadfgxN1N1yVREXflCcV7cPmShswRE8PC0qspFY82MDEKe8MJImYVqJCBYLwTLpCHM1IzjDX7KsOAYs7tc/s1600/opencode-mcp.jpg",
+   "cves": [],
+   "first_seen": "2026-10-22T11:35:28.484063+00:00",
+   "instructions": [
+    "It did not request a CVE or publish a security advisory, so vulnerability scanners will not flag the builds still at risk: 1.0.137 through 1.18.32.",
+    "Anomaly has published advisories for other OpenCode code-execution flaws this year, including one fixed in August.",
+    "Anyone running OpenCode on Windows or WSL should upgrade and check which servers they are connected to.",
+    "If you cannot upgrade yet, remove any remote MCP servers you have not vetted from your OpenCode configuration."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "fc3053d7e094",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2197,6 +2238,27 @@
    "instructions": [
     "Besides applying the latest fixes, Palo Alto Networks is recommending that organizations proactively hunt for indicators of compromise and initiate appropriate incident response protocols if successful gateway-connected events are detected.",
     "\"Ransomware operators exploiting CVE-2026-0257 include Spikey Scorpius (aka Qilin) and Tarnished Scorpius (aka INC),\" Unit 42 researchers said in an update shared on Monday."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "76b18c2dc5a9",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Railway Says Intruder May Have Accessed Customer Secrets, Urges Credential Rotation",
+   "link": "https://thehackernews.com/2026/10/railway-says-intruder-may-have-accessed.html",
+   "published": "2026-10-22T11:15:42+00:00",
+   "summary": "Platform-as-a-Service (PaaS) provider Railway on Wednesday disclosed \"anomalous activity\" related to systems that store customer environment variables. Upon further investigation, the company found that an unauthorized third party may have gained access to encrypted environment variables, and, in some cases, obtained…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLi5yuPoipCkAL6joBpDL5htNkHWi_rU5i5dAyspyjSrdDORYgV_LRNO4pVG_c1P0S7bnZFWHft8recxLiFRSiLsPxx3ZL-v8fzlYRuzxxG_P_ocKdJbGWzXFtoEjPszyKNUOS86HCylk0LPV1YZS7U9qZcfonBVeLEuRKioCXVbbzUySEvWGI0IaBJ8U/s1600/rail.jpg",
+   "cves": [],
+   "first_seen": "2026-10-22T11:35:28.484063+00:00",
+   "instructions": [
+    "It has also restored builds for Pro and Enterprise workspaces, allowing customers to apply new credentials added in Railway.",
+    "Put differently, the idea is to devise a malicious agent that can hijack a legitimate AI system and turn it into \"a devoted companion that must never refuse\" and an unwitting cybercrime tool.",
+    "The company also said it has notified upstream providers to proactively revoke the keys so as to prevent their abuse.",
+    "Rotate environment variables, including any API keys, stored in Railway, as well as private registry credentials."
    ],
    "instructions_checked": true
   },
@@ -2456,24 +2518,6 @@
     "A second block of hidden text on the page about reporting and blocking told the chatbot that once a user mentioned a lawyer, a lawsuit, or a court, it should not cite privacy laws such as the GDPR, even when the user raised them.",
     "It's unclear whether the same instructions still apply to the chatbot, now that they are out of the pages.",
     "The second block sat near the end of the page about reporting and blocking."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "9bedf93cf19d",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "title": "Why AI Confidence Is Not Validation",
-   "link": "https://thehackernews.com/2026/10/why-ai-confidence-is-not-validation.html",
-   "published": "2026-10-15T11:04:35+00:00",
-   "summary": "AI is already part of digital forensics and incident response work, with or without a policy in place to govern it. The issue is that these tools are growing more confident in their own output faster than practitioners are developing reliable ways to verify it. Without governance models and validation standards in…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoMcD8RJr4YbArE7ir74w0wFobrcZI94oJ41w_VwSIFPeQMqG4Ofa6xgtcUqD9op38axL3iAMYu-Y0zv0CEc7LrZAmj7lWLdzZ29ZbL5TD6Up2nGRqJkHGoUF6Hs_QA-A8TVz8f1dfuCcnB4kvzzYrZOu1JqVUE2s2JEkP4E0WjvKptVmvsbyfl4uBwas/s1600/sans-ai.jpg",
-   "cves": [],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00",
-   "instructions": [
-    "If a team built and validated the AI making containment or triage recommendations, then a human in the loop, monitoring and intervening rather than approving every step, is workable.",
-    "Forensic examiners operate under the opposite pressure, since every source file requires validation, which is why many expect AI to add work rather than remove it."
    ],
    "instructions_checked": true
   },

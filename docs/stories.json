@@ -160,6 +160,24 @@
    "url": "story/f6fe2f9557b7.html"
   },
   {
+   "id": "1d3516a0d0a6",
+   "title": "OpenCode Flaw Lets Malicious MCP Servers Execute Code During Sign-In on Windows and WSL",
+   "summary": "A flaw in the OpenCode AI coding agent allowed a malicious or hijacked MCP server to run code on a developer's Windows or WSL machine when the developer signed in…",
+   "priority": "Standard",
+   "category": "Microsoft",
+   "date": "22 Oct 2026, 10:44 UTC",
+   "priority_score": 5,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "microsoft"
+   ],
+   "kev": [],
+   "sources": "The Hacker News",
+   "url": "story/1d3516a0d0a6.html"
+  },
+  {
    "id": "7bcbd743c3f7",
    "title": "TiDB Breach Exposes Flawed Cloud Security Assumptions",
    "summary": "Cloud providers may be storing sensitive customer data, without either party knowing it. But when a provider is breached, the data comes home to roost.",
@@ -638,43 +656,6 @@
    "url": "story/7003b4db8f4a.html"
   },
   {
-   "id": "382400392fa0",
-   "title": "Microsoft Targets Rogue AI Agents With Dynamic Permissions, Risk Scoring",
-   "summary": "Microsoft says companies should treat AI agents as insiders, and is adding controls that grant access per task and tighten it as an agent’s risk rises. The post…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "20 Oct 2026, 11:30 UTC",
-   "priority_score": 4,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "microsoft",
-    "ai"
-   ],
-   "kev": [],
-   "sources": "SecurityWeek",
-   "url": "story/382400392fa0.html"
-  },
-  {
-   "id": "b63933cb56fa",
-   "title": "[NEU] [hoch] Microsoft Edge: Mehrere Schwachstellen ermöglichen Codeausführung",
-   "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Microsoft Edge ausnutzen, um beliebigen Programmcode auszuführen.",
-   "priority": "Standard",
-   "category": "Microsoft",
-   "date": "20 Oct 2026, 11:10 UTC",
-   "priority_score": 4,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "microsoft"
-   ],
-   "kev": [],
-   "sources": "CERT-Bund (BSI) Warnungen",
-   "url": "story/b63933cb56fa.html"
-  },
-  {
    "id": "6df7533cf52d",
    "title": "Linux: KVM-Schwachstelle PwnEscape (CVE-2026-99999) erlaubt Ausbruch",
    "summary": "Ein Sicherheitsforscher hatte bereits Anfang August 2026 eine 0-Day-Schwachstelle aufgedeckt, die einen Ausbruch aus der unter Linux zur Virtualisierung verwendeten KVM…",
@@ -1135,36 +1116,41 @@
    "url": "story/4f28949e9098.html"
   },
   {
-   "id": "3b05c1dcef51",
-   "title": "[NEU] [hoch] Snipe-IT: Mehrere Schwachstellen",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in Snipe-IT ausnutzen, um beliebigen Code auszuführen, erweiterte Berechtigungen zu erlangen, SQL-Injection durchzuführen…",
+   "id": "382400392fa0",
+   "title": "Microsoft Targets Rogue AI Agents With Dynamic Permissions, Risk Scoring",
+   "summary": "Microsoft says companies should treat AI agents as insiders, and is adding controls that grant access per task and tighten it as an agent’s risk rises. The post…",
    "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "20 Oct 2026, 11:15 UTC",
+   "category": "AI Risk Lab",
+   "date": "20 Oct 2026, 11:30 UTC",
    "priority_score": 3,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
-   "tags": [],
+   "tags": [
+    "microsoft",
+    "ai"
+   ],
    "kev": [],
-   "sources": "CERT-Bund (BSI) Warnungen",
-   "url": "story/3b05c1dcef51.html"
+   "sources": "SecurityWeek",
+   "url": "story/382400392fa0.html"
   },
   {
-   "id": "41525c1156ae",
-   "title": "Russian APT28 Breaches NATO Naval Shipbuilder in NATO Country, Deploys New Reflective Loader",
-   "summary": "The Russia-linked state-sponsored threat actor tracked as APT28 (aka BlueDelta, Fancy Bear, and Forest Blizzard) has been attributed to attacks targeting two member…",
+   "id": "b63933cb56fa",
+   "title": "[NEU] [hoch] Microsoft Edge: Mehrere Schwachstellen ermöglichen Codeausführung",
+   "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Microsoft Edge ausnutzen, um beliebigen Programmcode auszuführen.",
    "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "20 Oct 2026, 11:06 UTC",
+   "category": "Microsoft",
+   "date": "20 Oct 2026, 11:10 UTC",
    "priority_score": 3,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
-   "tags": [],
+   "tags": [
+    "microsoft"
+   ],
    "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/41525c1156ae.html"
+   "sources": "CERT-Bund (BSI) Warnungen",
+   "url": "story/b63933cb56fa.html"
   },
   {
    "id": "13881c9b4329",
@@ -1397,6 +1383,38 @@
    "kev": [],
    "sources": "BleepingComputer",
    "url": "story/a094aa58c0da.html"
+  },
+  {
+   "id": "2f1ed42ebe24",
+   "title": "333 Tor exit nodes hijacked to intercept SSH traffic and retrieve plaintext email",
+   "summary": "Unknown hackers hijacked more than 300 Tor exit nodes and reconfigured them to favor unencrypted email traffic and redirect SSH connections through servers they…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "22 Oct 2026, 11:30 UTC",
+   "priority_score": 2,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "Ars Technica Security",
+   "url": "story/2f1ed42ebe24.html"
+  },
+  {
+   "id": "76b18c2dc5a9",
+   "title": "Railway Says Intruder May Have Accessed Customer Secrets, Urges Credential Rotation",
+   "summary": "Platform-as-a-Service (PaaS) provider Railway on Wednesday disclosed \"anomalous activity\" related to systems that store customer environment variables. Upon further…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "22 Oct 2026, 11:15 UTC",
+   "priority_score": 2,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "The Hacker News",
+   "url": "story/76b18c2dc5a9.html"
   },
   {
    "id": "eb08dcb4a958",
@@ -1691,22 +1709,6 @@
    "url": "story/c7a020f274e0.html"
   },
   {
-   "id": "9b477066ea3b",
-   "title": "Browsers Block eMudhra Intermediate CAs Over Recoverable Private Keys",
-   "summary": "The private keys associated with eight certificates were compromised, and root programs and trust stores are blocking them. The post Browsers Block eMudhra Intermediate…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "21 Oct 2026, 11:22 UTC",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "SecurityWeek",
-   "url": "story/9b477066ea3b.html"
-  },
-  {
    "id": "a9327fc12a2b",
    "title": "China Defends DeepSeek After US Ban of Its AI From Government Systems",
    "summary": "The DHS said agencies should remove DeepSeek products as well as third-party products and services developed using DeepSeek from their IT systems. The post China Defends…",
@@ -1983,93 +1985,27 @@
    "url": "story/e18434727b01.html"
   },
   {
-   "id": "df48f73ea919",
-   "title": "What Security Teams Can Do To Tame Wild Code",
-   "summary": "A sales manager builds an AI-assisted workflow to route leads. It connects to customer records, summarizes inbound requests, and posts updates to a shared channel. The…",
+   "id": "3b05c1dcef51",
+   "title": "[NEU] [hoch] Snipe-IT: Mehrere Schwachstellen",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Snipe-IT ausnutzen, um beliebigen Code auszuführen, erweiterte Berechtigungen zu erlangen, SQL-Injection durchzuführen…",
    "priority": "Standard",
-   "category": "Microsoft",
-   "date": "20 Oct 2026, 11:33 UTC",
+   "category": "Industry & Research",
+   "date": "20 Oct 2026, 11:15 UTC",
    "priority_score": 2,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
-   "tags": [
-    "microsoft"
-   ],
+   "tags": [],
    "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/df48f73ea919.html"
+   "sources": "CERT-Bund (BSI) Warnungen",
+   "url": "story/3b05c1dcef51.html"
   },
   {
-   "id": "4ee7cda6f2dc",
-   "title": "OVHcloud CLI releases backdoored on GitHub to steal developer secrets",
-   "summary": "French cloud and hosting provider OVHcloud is warning users that attackers compromised its open-source command-line interface (CLI) tool to distribute…",
+   "id": "41525c1156ae",
+   "title": "Russian APT28 Breaches NATO Naval Shipbuilder in NATO Country, Deploys New Reflective Loader",
+   "summary": "The Russia-linked state-sponsored threat actor tracked as APT28 (aka BlueDelta, Fancy Bear, and Forest Blizzard) has been attributed to attacks targeting two member…",
    "priority": "Standard",
    "category": "Attacks & Breaches",
-   "date": "20 Oct 2026, 11:31 UTC",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "BleepingComputer",
-   "url": "story/4ee7cda6f2dc.html"
-  },
-  {
-   "id": "933f818034a9",
-   "title": "[NEU] [mittel] Apache Airflow: Mehrere Schwachstellen ermöglichen Umgehen von Sicherheitsvorkehrungen",
-   "summary": "Ein entfernter, authentisierter Angreifer kann mehrere Schwachstellen in Apache Airflow ausnutzen, um Sicherheitsvorkehrungen zu umgehen und Informationen offenzulegen.",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "20 Oct 2026, 11:20 UTC",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "CERT-Bund (BSI) Warnungen",
-   "url": "story/933f818034a9.html"
-  },
-  {
-   "id": "ca99fade5711",
-   "title": "[NEU] [mittel] QT: Schwachstelle ermöglicht Denial of Service",
-   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in QT ausnutzen, um einen Denial of Service Angriff durchzuführen.",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "20 Oct 2026, 11:15 UTC",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "CERT-Bund (BSI) Warnungen",
-   "url": "story/ca99fade5711.html"
-  },
-  {
-   "id": "badeab1ac46b",
-   "title": "[NEU] [hoch] Golang Go: Schwachstelle ermöglicht Umgehen von Sicherheitsvorkehrungen",
-   "summary": "Ein Angreifer kann eine Schwachstelle in Golang Go ausnutzen, um Sicherheitsvorkehrungen zu umgehen.",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "20 Oct 2026, 11:15 UTC",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "CERT-Bund (BSI) Warnungen",
-   "url": "story/badeab1ac46b.html"
-  },
-  {
-   "id": "805f44c82e23",
-   "title": "[UPDATE] [mittel] OpenSSH: Mehrere Schwachstellen",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in OpenSSH ausnutzen, um einen nicht näher spezifizierten Angriff durchzuführen, um einen Denial of Service Angriff…",
-   "priority": "Standard",
-   "category": "Industry & Research",
    "date": "20 Oct 2026, 11:06 UTC",
    "priority_score": 2,
    "priority_basis": [
@@ -2077,88 +2013,8 @@
    ],
    "tags": [],
    "kev": [],
-   "sources": "CERT-Bund (BSI) Warnungen",
-   "url": "story/805f44c82e23.html"
-  },
-  {
-   "id": "e526a34d88fb",
-   "title": "[UPDATE] [kritisch] WSO2 API Manager: Mehrere Schwachstellen",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in WSO2 API Manager ausnutzen, um Sicherheitsvorkehrungen zu umgehen, um einen Denial of Service Angriff durchzuführen, um…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "20 Oct 2026, 11:06 UTC",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "CERT-Bund (BSI) Warnungen",
-   "url": "story/e526a34d88fb.html"
-  },
-  {
-   "id": "05cabaa70681",
-   "title": "[UPDATE] [mittel] libexpat: Mehrere Schwachstellen ermöglichen nicht spezifizierten Angriff",
-   "summary": "Ein lokaler Angreifer kann mehrere Schwachstellen in libexpat ausnutzen, um einen nicht näher spezifizierten Angriff durchzuführen, darunter möglicherweise die…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "20 Oct 2026, 11:06 UTC",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "CERT-Bund (BSI) Warnungen",
-   "url": "story/05cabaa70681.html"
-  },
-  {
-   "id": "d1d4187af2f0",
-   "title": "[UPDATE] [niedrig] Linux Kernel: Mehrere Schwachstellen ermöglichen Denial of Service",
-   "summary": "Ein lokaler Angreifer kann mehrere Schwachstellen im Linux Kernel ausnutzen, um einen Denial of Service Angriff durchzuführen.",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "20 Oct 2026, 11:06 UTC",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "CERT-Bund (BSI) Warnungen",
-   "url": "story/d1d4187af2f0.html"
-  },
-  {
-   "id": "3a25a236c352",
-   "title": "[UPDATE] [mittel] CPython: Schwachstelle ermöglicht Manipulation von Dateien",
-   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in CPython ausnutzen, um Dateien zu manipulieren.",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "20 Oct 2026, 11:06 UTC",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "CERT-Bund (BSI) Warnungen",
-   "url": "story/3a25a236c352.html"
-  },
-  {
-   "id": "5feccfa1e412",
-   "title": "[NEU] [mittel] MISP und MISP Modules: Mehrere Schwachstellen",
-   "summary": "Ein entfernter, authentisierter Angreifer kann mehrere Schwachstellen in MISP ausnutzen, um Sicherheitsvorkehrungen zu umgehen, Cross-Site-Scripting-Angriffe…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "20 Oct 2026, 11:06 UTC",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "CERT-Bund (BSI) Warnungen",
-   "url": "story/5feccfa1e412.html"
+   "sources": "The Hacker News",
+   "url": "story/41525c1156ae.html"
   },
   {
    "id": "ce48c7fb2641",
@@ -2514,6 +2370,22 @@
    "url": "story/ce862b886d1b.html"
   },
   {
+   "id": "9b477066ea3b",
+   "title": "Browsers Block eMudhra Intermediate CAs Over Recoverable Private Keys",
+   "summary": "The private keys associated with eight certificates were compromised, and root programs and trust stores are blocking them. The post Browsers Block eMudhra Intermediate…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "21 Oct 2026, 11:22 UTC",
+   "priority_score": 1,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "SecurityWeek",
+   "url": "story/9b477066ea3b.html"
+  },
+  {
    "id": "8e7d8bc5cf31",
    "title": "Workshop on Economics and Information Security (WEIS) Archive",
    "summary": "There’s a new archive of all the papers from twenty-five years of the Workshop on Economics and Information Security (WEIS). Really nice resource. It’s fun to reread my…",
@@ -2840,28 +2712,30 @@
    "url": "story/b44079bd0a64.html"
   },
   {
-   "id": "f0509be43eab",
-   "title": "Go Issues Emergency Update Blocking Eight CA Keys Over Undisclosed Security Concerns",
-   "summary": "Go 1.27.3 and Go 1.26.10, released on October 20, make Go's certificate verifier reject any certificate chain that passes through one of eight intermediate certificate…",
+   "id": "df48f73ea919",
+   "title": "What Security Teams Can Do To Tame Wild Code",
+   "summary": "A sales manager builds an AI-assisted workflow to route leads. It connects to customer records, summarizes inbound requests, and posts updates to a shared channel. The…",
    "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "20 Oct 2026, 11:32 UTC",
+   "category": "Microsoft",
+   "date": "20 Oct 2026, 11:33 UTC",
    "priority_score": 1,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
-   "tags": [],
+   "tags": [
+    "microsoft"
+   ],
    "kev": [],
    "sources": "The Hacker News",
-   "url": "story/f0509be43eab.html"
+   "url": "story/df48f73ea919.html"
   },
   {
-   "id": "9f686724487e",
-   "title": "Ahold Delhaize: Cyberattack affects services across US and Europe",
-   "summary": "Ahold Delhaize, one of the world's largest food retail chains, confirmed that last week's cyberattack disrupted services at stores across Europe and the United States.",
+   "id": "4ee7cda6f2dc",
+   "title": "OVHcloud CLI releases backdoored on GitHub to steal developer secrets",
+   "summary": "French cloud and hosting provider OVHcloud is warning users that attackers compromised its open-source command-line interface (CLI) tool to distribute…",
    "priority": "Standard",
    "category": "Attacks & Breaches",
-   "date": "20 Oct 2026, 11:18 UTC",
+   "date": "20 Oct 2026, 11:31 UTC",
    "priority_score": 1,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
@@ -2869,23 +2743,151 @@
    "tags": [],
    "kev": [],
    "sources": "BleepingComputer",
-   "url": "story/9f686724487e.html"
+   "url": "story/4ee7cda6f2dc.html"
   },
   {
-   "id": "59dff61018ea",
-   "title": "Possible new Cellebrite iPhone Radio Zero-Day",
-   "summary": "Justin.sh is reporting on a confidential Cellebrite document that has been leaked to him: Cellebrite calls it Advanced Unlocks (AU from here on), not to be confused with…",
+   "id": "933f818034a9",
+   "title": "[NEU] [mittel] Apache Airflow: Mehrere Schwachstellen ermöglichen Umgehen von Sicherheitsvorkehrungen",
+   "summary": "Ein entfernter, authentisierter Angreifer kann mehrere Schwachstellen in Apache Airflow ausnutzen, um Sicherheitsvorkehrungen zu umgehen und Informationen offenzulegen.",
    "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "20 Oct 2026, 11:03 UTC",
+   "category": "Industry & Research",
+   "date": "20 Oct 2026, 11:20 UTC",
    "priority_score": 1,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
    "tags": [],
    "kev": [],
-   "sources": "Schneier on Security",
-   "url": "story/59dff61018ea.html"
+   "sources": "CERT-Bund (BSI) Warnungen",
+   "url": "story/933f818034a9.html"
+  },
+  {
+   "id": "ca99fade5711",
+   "title": "[NEU] [mittel] QT: Schwachstelle ermöglicht Denial of Service",
+   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in QT ausnutzen, um einen Denial of Service Angriff durchzuführen.",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "20 Oct 2026, 11:15 UTC",
+   "priority_score": 1,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "CERT-Bund (BSI) Warnungen",
+   "url": "story/ca99fade5711.html"
+  },
+  {
+   "id": "badeab1ac46b",
+   "title": "[NEU] [hoch] Golang Go: Schwachstelle ermöglicht Umgehen von Sicherheitsvorkehrungen",
+   "summary": "Ein Angreifer kann eine Schwachstelle in Golang Go ausnutzen, um Sicherheitsvorkehrungen zu umgehen.",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "20 Oct 2026, 11:15 UTC",
+   "priority_score": 1,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "CERT-Bund (BSI) Warnungen",
+   "url": "story/badeab1ac46b.html"
+  },
+  {
+   "id": "805f44c82e23",
+   "title": "[UPDATE] [mittel] OpenSSH: Mehrere Schwachstellen",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in OpenSSH ausnutzen, um einen nicht näher spezifizierten Angriff durchzuführen, um einen Denial of Service Angriff…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "20 Oct 2026, 11:06 UTC",
+   "priority_score": 1,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "CERT-Bund (BSI) Warnungen",
+   "url": "story/805f44c82e23.html"
+  },
+  {
+   "id": "e526a34d88fb",
+   "title": "[UPDATE] [kritisch] WSO2 API Manager: Mehrere Schwachstellen",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in WSO2 API Manager ausnutzen, um Sicherheitsvorkehrungen zu umgehen, um einen Denial of Service Angriff durchzuführen, um…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "20 Oct 2026, 11:06 UTC",
+   "priority_score": 1,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "CERT-Bund (BSI) Warnungen",
+   "url": "story/e526a34d88fb.html"
+  },
+  {
+   "id": "05cabaa70681",
+   "title": "[UPDATE] [mittel] libexpat: Mehrere Schwachstellen ermöglichen nicht spezifizierten Angriff",
+   "summary": "Ein lokaler Angreifer kann mehrere Schwachstellen in libexpat ausnutzen, um einen nicht näher spezifizierten Angriff durchzuführen, darunter möglicherweise die…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "20 Oct 2026, 11:06 UTC",
+   "priority_score": 1,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "CERT-Bund (BSI) Warnungen",
+   "url": "story/05cabaa70681.html"
+  },
+  {
+   "id": "d1d4187af2f0",
+   "title": "[UPDATE] [niedrig] Linux Kernel: Mehrere Schwachstellen ermöglichen Denial of Service",
+   "summary": "Ein lokaler Angreifer kann mehrere Schwachstellen im Linux Kernel ausnutzen, um einen Denial of Service Angriff durchzuführen.",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "20 Oct 2026, 11:06 UTC",
+   "priority_score": 1,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "CERT-Bund (BSI) Warnungen",
+   "url": "story/d1d4187af2f0.html"
+  },
+  {
+   "id": "3a25a236c352",
+   "title": "[UPDATE] [mittel] CPython: Schwachstelle ermöglicht Manipulation von Dateien",
+   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in CPython ausnutzen, um Dateien zu manipulieren.",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "20 Oct 2026, 11:06 UTC",
+   "priority_score": 1,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "CERT-Bund (BSI) Warnungen",
+   "url": "story/3a25a236c352.html"
+  },
+  {
+   "id": "5feccfa1e412",
+   "title": "[NEU] [mittel] MISP und MISP Modules: Mehrere Schwachstellen",
+   "summary": "Ein entfernter, authentisierter Angreifer kann mehrere Schwachstellen in MISP ausnutzen, um Sicherheitsvorkehrungen zu umgehen, Cross-Site-Scripting-Angriffe…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "20 Oct 2026, 11:06 UTC",
+   "priority_score": 1,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "CERT-Bund (BSI) Warnungen",
+   "url": "story/5feccfa1e412.html"
   },
   {
    "id": "40af1b6980a8",
@@ -3352,22 +3354,52 @@
    "url": "story/999e9923be39.html"
   },
   {
-   "id": "9bedf93cf19d",
-   "title": "Why AI Confidence Is Not Validation",
-   "summary": "AI is already part of digital forensics and incident response work, with or without a policy in place to govern it. The issue is that these tools are growing more…",
+   "id": "f0509be43eab",
+   "title": "Go Issues Emergency Update Blocking Eight CA Keys Over Undisclosed Security Concerns",
+   "summary": "Go 1.27.3 and Go 1.26.10, released on October 20, make Go's certificate verifier reject any certificate chain that passes through one of eight intermediate certificate…",
    "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "15 Oct 2026, 11:04 UTC",
-   "priority_score": 1,
+   "category": "Industry & Research",
+   "date": "20 Oct 2026, 11:32 UTC",
+   "priority_score": 0,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
-   "tags": [
-    "ai"
-   ],
+   "tags": [],
    "kev": [],
    "sources": "The Hacker News",
-   "url": "story/9bedf93cf19d.html"
+   "url": "story/f0509be43eab.html"
+  },
+  {
+   "id": "9f686724487e",
+   "title": "Ahold Delhaize: Cyberattack affects services across US and Europe",
+   "summary": "Ahold Delhaize, one of the world's largest food retail chains, confirmed that last week's cyberattack disrupted services at stores across Europe and the United States.",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "20 Oct 2026, 11:18 UTC",
+   "priority_score": 0,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "BleepingComputer",
+   "url": "story/9f686724487e.html"
+  },
+  {
+   "id": "59dff61018ea",
+   "title": "Possible new Cellebrite iPhone Radio Zero-Day",
+   "summary": "Justin.sh is reporting on a confidential Cellebrite document that has been leaked to him: Cellebrite calls it Advanced Unlocks (AU from here on), not to be confused with…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "20 Oct 2026, 11:03 UTC",
+   "priority_score": 0,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "Schneier on Security",
+   "url": "story/59dff61018ea.html"
   },
   {
    "id": "3493ad24d01d",
