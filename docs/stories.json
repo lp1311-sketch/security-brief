@@ -432,28 +432,6 @@
    "url": "story/5fc8c6dd8c54.html"
   },
   {
-   "id": "fc3053d7e094",
-   "title": "Palo Alto Networks Patches PAN-OS Authenticated RCE Flaw Amid Active Exploitation",
-   "summary": "Palo Alto Networks on Wednesday issued security updates for a high-severity flaw in PAN-OS software that has come under active exploitation. The vulnerability, tracked…",
-   "priority": "Critical",
-   "category": "Patch Radar",
-   "date": "15 Oct 2026, 11:46 UTC",
-   "priority_score": 5,
-   "priority_basis": [
-    "CISA KEV listing: CVE-2026-0322"
-   ],
-   "tags": [
-    "critical",
-    "exploited",
-    "patch-now"
-   ],
-   "kev": [
-    "CVE-2026-0322"
-   ],
-   "sources": "The Hacker News",
-   "url": "story/fc3053d7e094.html"
-  },
-  {
    "id": "34f12a1f7c34",
    "title": "Cisco Patches 34 Vulnerabilities Across Multiple Products",
    "summary": "Critical-severity security defects could lead to command execution, authentication bypass, and XSS attacks. The post Cisco Patches 34 Vulnerabilities Across Multiple…",
@@ -914,24 +892,6 @@
    "url": "story/71ae2abe1296.html"
   },
   {
-   "id": "b81260804ad3",
-   "title": "Generative AI Is Erasing Behavioral Tells, Weakening Behavior-Only Detection, Proofpoint Reports",
-   "summary": "Generative AI has changed what a malicious email looks like. Messages that once gave themselves away through clumsy wording, generic pretexts, and reused templates now…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "21 Oct 2026, 11:53 UTC",
-   "priority_score": 3,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "ai"
-   ],
-   "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/b81260804ad3.html"
-  },
-  {
    "id": "ec0fd993c8b5",
    "title": "PHP2Shell: What Actually Protects You Before the 14:00 UTC PHP RCE Patch, and What Doesn't",
    "summary": "You cannot fully block the two critical PHP flaws called PHP2Shell before today's fix, and the one setting being passed around as a workaround is not enough on its own…",
@@ -1385,6 +1345,38 @@
    "url": "story/a094aa58c0da.html"
   },
   {
+   "id": "d11e69527239",
+   "title": "php2shell: Lücke seit 2024 bekannt, Angriffe laufen, Hosting gefährdet?",
+   "summary": "Am gestrigen Abend wurden zwar Patches für neuere PHP-Versionen veröffentlicht. Aber das Ganze wird noch ziemlich durchschlagen, weil es lange dauern wird, bis alles…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "22 Oct 2026, 11:45 UTC",
+   "priority_score": 2,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "Born's IT and Windows Blog",
+   "url": "story/d11e69527239.html"
+  },
+  {
+   "id": "0f812922fb34",
+   "title": "GitLab warns of new max severity code execution vulnerability",
+   "summary": "GitLab has released security patches for a maximum-severity Regular Expression Compiler flaw that can let remote attackers run arbitrary code on vulnerable servers.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "22 Oct 2026, 11:41 UTC",
+   "priority_score": 2,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "BleepingComputer",
+   "url": "story/0f812922fb34.html"
+  },
+  {
    "id": "2f1ed42ebe24",
    "title": "333 Tor exit nodes hijacked to intercept SSH traffic and retrieve plaintext email",
    "summary": "Unknown hackers hijacked more than 300 Tor exit nodes and reconfigured them to favor unencrypted email traffic and redirect SSH connections through servers they…",
@@ -1693,20 +1685,22 @@
    "url": "story/2616dfa7252a.html"
   },
   {
-   "id": "c7a020f274e0",
-   "title": "China-Aligned Bronze Sandcastle Abuses Sandboxie DLL Sideloading to Deploy Backdoors",
-   "summary": "Cybersecurity researchers have disclosed details of a previously undocumented China-aligned threat cluster known as Bronze Sandcastle that has been observed targeting…",
+   "id": "b81260804ad3",
+   "title": "Generative AI Is Erasing Behavioral Tells, Weakening Behavior-Only Detection, Proofpoint Reports",
+   "summary": "Generative AI has changed what a malicious email looks like. Messages that once gave themselves away through clumsy wording, generic pretexts, and reused templates now…",
    "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "21 Oct 2026, 12:05 UTC",
+   "category": "AI Risk Lab",
+   "date": "21 Oct 2026, 11:53 UTC",
    "priority_score": 2,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
-   "tags": [],
+   "tags": [
+    "ai"
+   ],
    "kev": [],
    "sources": "The Hacker News",
-   "url": "story/c7a020f274e0.html"
+   "url": "story/b81260804ad3.html"
   },
   {
    "id": "a9327fc12a2b",
@@ -1901,88 +1895,6 @@
    "kev": [],
    "sources": "Ars Technica Security",
    "url": "story/fb9936745ef9.html"
-  },
-  {
-   "id": "467c211f344f",
-   "title": "WhatsApp Hid Instructions in Help Pages Telling Its AI Chatbot Not to Recommend Privacy Regulators",
-   "summary": "WhatsApp's help pages carried hidden instructions for its support chatbot that told it not to recommend a data protection authority or regulator to users who could no…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "20 Oct 2026, 11:41 UTC",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "ai"
-   ],
-   "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/467c211f344f.html"
-  },
-  {
-   "id": "b8c7c0a1a728",
-   "title": "[UPDATE] [mittel] Red Hat Enterprise Linux (sequoia-openpgp, perl-DBI): Mehrere Schwachstellen",
-   "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Red Hat Enterprise Linux ausnutzen, um Sicherheitsvorkehrungen zu umgehen, Daten zu manipulieren und…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "20 Oct 2026, 11:40 UTC",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "CERT-Bund (BSI) Warnungen",
-   "url": "story/b8c7c0a1a728.html"
-  },
-  {
-   "id": "b70f2835d787",
-   "title": "[NEU] [mittel] TYPO3 Extensions: Mehrere Schwachstellen",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in TYPO3 Extension ausnutzen, um Dateien zu manipulieren, um Informationen offenzulegen, um einen SQL-Injection Angriff…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "20 Oct 2026, 11:40 UTC",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "CERT-Bund (BSI) Warnungen",
-   "url": "story/b70f2835d787.html"
-  },
-  {
-   "id": "b01dd7a21971",
-   "title": "[UPDATE] [hoch] Linux Kernel: Schwachstelle ermöglicht Privilegieneskalation",
-   "summary": "Ein Angreifer kann eine Schwachstelle im Linux Kernel ausnutzen, um erweiterte Rechte zu erlangen.",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "20 Oct 2026, 11:35 UTC",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "CERT-Bund (BSI) Warnungen",
-   "url": "story/b01dd7a21971.html"
-  },
-  {
-   "id": "e18434727b01",
-   "title": "[UPDATE] [hoch] Linux Kernel: Mehrere Schwachstellen",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in Linux Kernel ausnutzen, um einen Denial of Service Angriff durchzuführen oder Root-Rechte zu erlangen.",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "20 Oct 2026, 11:35 UTC",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "CERT-Bund (BSI) Warnungen",
-   "url": "story/e18434727b01.html"
   },
   {
    "id": "3b05c1dcef51",
@@ -2354,20 +2266,20 @@
    "url": "story/e7e058293387.html"
   },
   {
-   "id": "ce862b886d1b",
-   "title": "Drupal Patches Critical Field UI Flaw With Unauthenticated RCE Path via Contributed Modules",
-   "summary": "Drupal core has a critical flaw in its Field UI module that could let an attacker run code on the site's server, and fixes were shipped on October 14 in Drupal 11.4.10…",
+   "id": "c7a020f274e0",
+   "title": "China-Aligned Bronze Sandcastle Abuses Sandboxie DLL Sideloading to Deploy Backdoors",
+   "summary": "Cybersecurity researchers have disclosed details of a previously undocumented China-aligned threat cluster known as Bronze Sandcastle that has been observed targeting…",
    "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "15 Oct 2026, 12:07 UTC",
-   "priority_score": 2,
+   "category": "Attacks & Breaches",
+   "date": "21 Oct 2026, 12:05 UTC",
+   "priority_score": 1,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
    "tags": [],
    "kev": [],
    "sources": "The Hacker News",
-   "url": "story/ce862b886d1b.html"
+   "url": "story/c7a020f274e0.html"
   },
   {
    "id": "9b477066ea3b",
@@ -2710,6 +2622,88 @@
    "kev": [],
    "sources": "SecurityWeek",
    "url": "story/b44079bd0a64.html"
+  },
+  {
+   "id": "467c211f344f",
+   "title": "WhatsApp Hid Instructions in Help Pages Telling Its AI Chatbot Not to Recommend Privacy Regulators",
+   "summary": "WhatsApp's help pages carried hidden instructions for its support chatbot that told it not to recommend a data protection authority or regulator to users who could no…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "20 Oct 2026, 11:41 UTC",
+   "priority_score": 1,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "ai"
+   ],
+   "kev": [],
+   "sources": "The Hacker News",
+   "url": "story/467c211f344f.html"
+  },
+  {
+   "id": "b8c7c0a1a728",
+   "title": "[UPDATE] [mittel] Red Hat Enterprise Linux (sequoia-openpgp, perl-DBI): Mehrere Schwachstellen",
+   "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Red Hat Enterprise Linux ausnutzen, um Sicherheitsvorkehrungen zu umgehen, Daten zu manipulieren und…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "20 Oct 2026, 11:40 UTC",
+   "priority_score": 1,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "CERT-Bund (BSI) Warnungen",
+   "url": "story/b8c7c0a1a728.html"
+  },
+  {
+   "id": "b70f2835d787",
+   "title": "[NEU] [mittel] TYPO3 Extensions: Mehrere Schwachstellen",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in TYPO3 Extension ausnutzen, um Dateien zu manipulieren, um Informationen offenzulegen, um einen SQL-Injection Angriff…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "20 Oct 2026, 11:40 UTC",
+   "priority_score": 1,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "CERT-Bund (BSI) Warnungen",
+   "url": "story/b70f2835d787.html"
+  },
+  {
+   "id": "b01dd7a21971",
+   "title": "[UPDATE] [hoch] Linux Kernel: Schwachstelle ermöglicht Privilegieneskalation",
+   "summary": "Ein Angreifer kann eine Schwachstelle im Linux Kernel ausnutzen, um erweiterte Rechte zu erlangen.",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "20 Oct 2026, 11:35 UTC",
+   "priority_score": 1,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "CERT-Bund (BSI) Warnungen",
+   "url": "story/b01dd7a21971.html"
+  },
+  {
+   "id": "e18434727b01",
+   "title": "[UPDATE] [hoch] Linux Kernel: Mehrere Schwachstellen",
+   "summary": "Ein Angreifer kann mehrere Schwachstellen in Linux Kernel ausnutzen, um einen Denial of Service Angriff durchzuführen oder Root-Rechte zu erlangen.",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "20 Oct 2026, 11:35 UTC",
+   "priority_score": 1,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "CERT-Bund (BSI) Warnungen",
+   "url": "story/e18434727b01.html"
   },
   {
    "id": "df48f73ea919",
@@ -3334,24 +3328,6 @@
    "kev": [],
    "sources": "The Hacker News",
    "url": "story/ba5ef20dc7e9.html"
-  },
-  {
-   "id": "999e9923be39",
-   "title": "Fake AI Attacks Spread Across US Companies: How MSSPs Can Stop Incidents Early",
-   "summary": "Attackers are impersonating popular AI products to distribute malware, steal browser sessions, and compromise business accounts. ANY.RUN linked 1,258 public sandbox…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "15 Oct 2026, 11:46 UTC",
-   "priority_score": 1,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "ai"
-   ],
-   "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/999e9923be39.html"
   },
   {
    "id": "f0509be43eab",
