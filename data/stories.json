@@ -1811,25 +1811,22 @@
    "source_type": "news"
   },
   {
-   "id": "ba5ef20dc7e9",
+   "id": "c145f24074c2",
    "source": "thehackernews",
    "source_name": "The Hacker News",
    "official": false,
-   "title": "Help TDS Linked to Hotejka as 20,000+ Cloudflare Pages Domains Host Tech Support Scams",
-   "link": "https://thehackernews.com/2026/10/help-tds-linked-to-hotejka-as-20000.html",
-   "published": "2026-10-15T14:11:36+00:00",
-   "summary": "A long-running Traffic Distribution System (TDS) known as Help TDS to a Russian-language affiliate program called Hotejka, which appears to be a rebrand of a traffic monetization operation dubbed ROI777. Help TDS is assessed to be active since at least 2017, offering PHP code templates to partners and affiliates that…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgp2enQeK-5xZuEo_rLQje9W_odynVLALJCEvTyaMSolIfwVonZGMceQWA8yq9xPMD-C_RkIp-V03EqEBVTM5yMq9IHWRRfSHxWWDS6kCJVcVAsmlFXt5wD2pK7Bk-A6iBIDFS2o811n8e48B1Psni_qvrkJ0HMXtJlhaLwx7jkxEG-e0XDgtcAMUMLiNFV/s1600/hot.jpg",
+   "source_type": "news",
+   "title": "INTERPOL Arrests 1,462 Suspects, Disrupts 10,909 Cybercrime Networks in Global Crackdown",
+   "link": "https://thehackernews.com/2026/10/interpol-arrests-1462-suspects-disrupts.html",
+   "published": "2026-10-22T13:38:22+00:00",
+   "summary": "INTERPOL on Thursday announced that a coordinated law enforcement action has disrupted 10,909 malicious networks and recovered more than $105 million in illicit funds. In tandem, the effort saw law enforcement agencies from 21 countries arrest 1,462 suspects. Codenamed Operation Serengeti III, the cybercrime crackdown…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgztarCkWkHIW3EBCYV1Uaoz1pLURW3sA5E381ALhft79JhEp71NrhOngLJTWtoT1EL-mI7G6sz0geVq0clphhNqFhyphenhyphen6zPdTK1KYcNAPR43HvdicTavSv5eFTsMTVh36gi570aIN265ZJnbfwvMcWSIriWeU_28JWsofVj-9k1qQdKddXoDeh6dNeWy2ViE/s1600/interpol-1.jpg",
    "cves": [],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00",
+   "first_seen": "2026-10-22T14:13:52.529451+00:00",
    "instructions": [
-    "Should the victim make the phone call, the threat actor on the other end instructs them to download and install a free remote desktop tool like Ultraviewer to gain complete control of the infected machine.",
-    "\"Help TDS delivers tech support scams (TSSs) that direct users to call centers, where social engineering is used to convince them to install remote desktop tools,\" Infoblox said in a report shared with The Hacker News.",
-    "The plugin, or alternatively a custom HTML block, is injected into the sites by Hotejka's affiliates.",
-    "Historical tracking of malicious redirect chains has also uncovered that Help TDS has routinely handed off traffic directly to VexTrio Viper , a cybercrime operator that runs an affiliate program to enable scams, riskware, spyware, adware, and pornographic content."
+    "\"Instead of waiting for an attack and then investigating the damage, we can help expose the networks behind criminal operations and enable defensive actions."
    ],
-   "instructions_checked": true,
-   "source_type": "news"
+   "instructions_checked": true
   },
   {
    "id": "f5335e20393b",
@@ -5006,6 +5003,28 @@
    "instructions": [
     "Hackers hijack AOMEI update servers to secretly spread malware",
     "Mozilla, Google, Apple block compromised eMudhra CA certificates"
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "92b876190d73",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Machine speed attacks require machine speed detection and response",
+   "link": "https://www.bleepingcomputer.com/news/security/machine-speed-attacks-require-machine-speed-detection-and-response/",
+   "published": "2026-10-22T14:02:12+00:00",
+   "summary": "Attackers can steal credentials and begin exfiltrating data within minutes, often before security teams can respond. Exaforce examines real-world attacks involving stolen GitHub tokens, malicious AI installers, and MFA phishing, explaining why faster detection and automated containment are critical.",
+   "image": "https://www.bleepstatic.com/content/posts/2026/10/20/exaforce-header-iamge.jpg",
+   "cves": [],
+   "first_seen": "2026-10-22T14:13:52.529451+00:00",
+   "image_checked": true,
+   "instructions": [
+    "TL;DR: Our analysis shows attackers are now enumerating or pulling data within 15 minutes of getting into an environment, and the tools that should have caught them were not effective.",
+    "Assessing the scope of the impact should involve a comprehensive analysis of all tokens/credentials minted by the user.",
+    "Password resets, account disablement, permanent deletions, and anything a production service depends on should require human approval.",
+    "We recommend starting with services that hold your most critical data."
    ],
    "instructions_checked": true
   },
