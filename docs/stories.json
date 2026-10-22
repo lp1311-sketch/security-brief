@@ -7,9 +7,9 @@
    "priority": "Critical",
    "category": "Patch Radar",
    "date": "16 Oct 2026, 20:34 UTC",
-   "priority_score": 14,
+   "priority_score": 13,
    "priority_basis": [
-    "CISA KEV listing: CVE-2023-46805, CVE-2024-21887, CVE-2026-102764"
+    "CISA KEV listing: CVE-2026-102764"
    ],
    "tags": [
     "critical",
@@ -17,20 +17,18 @@
     "patch-now"
    ],
    "kev": [
-    "CVE-2023-46805",
-    "CVE-2024-21887",
     "CVE-2026-102764"
    ],
-   "sources": "Dark Reading, The Hacker News, BleepingComputer, Google Threat Intelligence",
+   "sources": "Dark Reading, The Hacker News, BleepingComputer",
    "url": "story/15367a3259ff.html"
   },
   {
-   "id": "9fdb4830b1cb",
-   "title": "php2shell: PHP-Updates und Nachlese",
-   "summary": "Die PHP-Maintainer haben zum 21. Oktober 2026 am späten Nachmittag Details und Patches (für aktuelle PHP versionen) zu zwei kritischen Schwachstellen CVE-2026-109618 und…",
+   "id": "ab875104cf16",
+   "title": "New Serious PHP Vulnerabilities Released and Patched",
+   "summary": "PHP maintainers have released two critical vulnerabilities: PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35 fix two critical vulnerabilities that can allow unauthenticated remote…",
    "priority": "High",
    "category": "Patch Radar",
-   "date": "22 Oct 2026, 05:33 UTC",
+   "date": "22 Oct 2026, 13:26 UTC",
    "priority_score": 11,
    "priority_basis": [
     "Editorial attention score 11 reached the High threshold (not CVSS)"
@@ -40,8 +38,8 @@
     "patch-now"
    ],
    "kev": [],
-   "sources": "Born's IT and Windows Blog, SecurityWeek, KrebsOnSecurity, BleepingComputer",
-   "url": "story/9fdb4830b1cb.html"
+   "sources": "Schneier on Security, Born's IT and Windows Blog, SecurityWeek, KrebsOnSecurity, BleepingComputer",
+   "url": "story/ab875104cf16.html"
   },
   {
    "id": "9b69347cfd29",
@@ -246,78 +244,6 @@
    "url": "story/67c1ab51681c.html"
   },
   {
-   "id": "6e4d169a998c",
-   "title": "CVE-2026-61359 Windows Storage Elevation of Privilege Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "21 Oct 2026, 14:00 UTC",
-   "priority_score": 5,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "microsoft"
-   ],
-   "kev": [],
-   "sources": "Microsoft Security Response Center",
-   "url": "story/6e4d169a998c.html"
-  },
-  {
-   "id": "b78341cec335",
-   "title": "CVE-2026-69902 Windows NTFS Remote Code Execution Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "21 Oct 2026, 14:00 UTC",
-   "priority_score": 5,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "microsoft"
-   ],
-   "kev": [],
-   "sources": "Microsoft Security Response Center",
-   "url": "story/b78341cec335.html"
-  },
-  {
-   "id": "905472152d32",
-   "title": "CVE-2026-85868 Windows Common Log File System Driver Elevation of Privilege Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "21 Oct 2026, 14:00 UTC",
-   "priority_score": 5,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "microsoft"
-   ],
-   "kev": [],
-   "sources": "Microsoft Security Response Center",
-   "url": "story/905472152d32.html"
-  },
-  {
-   "id": "5a4ecf9699d2",
-   "title": "CVE-2026-97783 Microsoft Office SharePoint Spoofing Vulnerability",
-   "summary": "The vulnerability associated with this CVE was fixed in July, however was inadvertently not included with that release. Microsoft recommends updating to the most current…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "21 Oct 2026, 14:00 UTC",
-   "priority_score": 5,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "microsoft"
-   ],
-   "kev": [],
-   "sources": "Microsoft Security Response Center",
-   "url": "story/5a4ecf9699d2.html"
-  },
-  {
    "id": "7f88afbf76a3",
    "title": "Attackers Abuse UpdraftCentral Keys to Plant Backdoors on WordPress Sites",
    "summary": "Unknown threat actors breached TeamUpdraft's website and potentially gained unauthorized access to customers' connection keys for UpdraftCentral, UpdraftVault, and…",
@@ -432,6 +358,22 @@
    "url": "story/5fc8c6dd8c54.html"
   },
   {
+   "id": "14aa600d7f56",
+   "title": "Cybercrime crackdown across Africa leads to 1,462 arrests, $105 million seized",
+   "summary": "More than 1,400 suspected cybercriminals were arrested across Africa this summer as part of a crackdown on the gangs perpetrating online fraud, ransomware and business…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "22 Oct 2026, 13:30 UTC",
+   "priority_score": 4,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "The Record",
+   "url": "story/14aa600d7f56.html"
+  },
+  {
    "id": "34f12a1f7c34",
    "title": "Cisco Patches 34 Vulnerabilities Across Multiple Products",
    "summary": "Critical-severity security defects could lead to command execution, authentication bypass, and XSS attacks. The post Cisco Patches 34 Vulnerabilities Across Multiple…",
@@ -530,9 +472,9 @@
    "url": "story/71f0485320c6.html"
   },
   {
-   "id": "6478f5844cef",
-   "title": "PHP Issues Emergency Patches for Two Critical PHP2Shell RCE Flaws as Exploit Attempts Emerge",
-   "summary": "PHP has released emergency updates that fix two critical flaws in the language itself, letting an attacker without an account run code on a web server. The fixes are in…",
+   "id": "6e4d169a998c",
+   "title": "CVE-2026-61359 Windows Storage Elevation of Privilege Vulnerability",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
    "priority": "Standard",
    "category": "Patch Radar",
    "date": "21 Oct 2026, 14:00 UTC",
@@ -540,10 +482,66 @@
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
-   "tags": [],
+   "tags": [
+    "microsoft"
+   ],
    "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/6478f5844cef.html"
+   "sources": "Microsoft Security Response Center",
+   "url": "story/6e4d169a998c.html"
+  },
+  {
+   "id": "b78341cec335",
+   "title": "CVE-2026-69902 Windows NTFS Remote Code Execution Vulnerability",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "21 Oct 2026, 14:00 UTC",
+   "priority_score": 4,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "microsoft"
+   ],
+   "kev": [],
+   "sources": "Microsoft Security Response Center",
+   "url": "story/b78341cec335.html"
+  },
+  {
+   "id": "905472152d32",
+   "title": "CVE-2026-85868 Windows Common Log File System Driver Elevation of Privilege Vulnerability",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "21 Oct 2026, 14:00 UTC",
+   "priority_score": 4,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "microsoft"
+   ],
+   "kev": [],
+   "sources": "Microsoft Security Response Center",
+   "url": "story/905472152d32.html"
+  },
+  {
+   "id": "5a4ecf9699d2",
+   "title": "CVE-2026-97783 Microsoft Office SharePoint Spoofing Vulnerability",
+   "summary": "The vulnerability associated with this CVE was fixed in July, however was inadvertently not included with that release. Microsoft recommends updating to the most current…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "21 Oct 2026, 14:00 UTC",
+   "priority_score": 4,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "microsoft"
+   ],
+   "kev": [],
+   "sources": "Microsoft Security Response Center",
+   "url": "story/5a4ecf9699d2.html"
   },
   {
    "id": "0dfa738d1635",
@@ -560,42 +558,6 @@
    "kev": [],
    "sources": "The Hacker News",
    "url": "story/0dfa738d1635.html"
-  },
-  {
-   "id": "9cd1aed286a1",
-   "title": "CVE-2026-62913 Microsoft Exchange Server Remote Code Execution Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "20 Oct 2026, 14:00 UTC",
-   "priority_score": 4,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "microsoft"
-   ],
-   "kev": [],
-   "sources": "Microsoft Security Response Center",
-   "url": "story/9cd1aed286a1.html"
-  },
-  {
-   "id": "7003b4db8f4a",
-   "title": "CVE-2026-70074 Windows DNS Information Disclosure Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "20 Oct 2026, 14:00 UTC",
-   "priority_score": 4,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "microsoft"
-   ],
-   "kev": [],
-   "sources": "Microsoft Security Response Center",
-   "url": "story/7003b4db8f4a.html"
   },
   {
    "id": "6df7533cf52d",
@@ -662,6 +624,24 @@
    "kev": [],
    "sources": "BleepingComputer, SecurityWeek",
    "url": "story/c78f9791369d.html"
+  },
+  {
+   "id": "d76b50dba162",
+   "title": "The AI Agent Nobody Owns: Watch Expert Webinar On Your Newest Insider Threat",
+   "summary": "Right now, there is probably an AI agent running on a laptop somewhere in your network. It stores API keys and database passwords, can access your internal systems, and…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "22 Oct 2026, 11:45 UTC",
+   "priority_score": 3,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "ai"
+   ],
+   "kev": [],
+   "sources": "The Hacker News",
+   "url": "story/d76b50dba162.html"
   },
   {
    "id": "a9227db3dd33",
@@ -836,40 +816,20 @@
    "url": "story/a45dacf80c10.html"
   },
   {
-   "id": "bc6b0429e7ca",
-   "title": "ClickFix has never been bigger, and AI tools are its most convincing lure yet",
-   "summary": "ClickFix attacks are surging as cybercriminals use fake AI installers, malicious search results, and trusted chatbot platforms to trick users into executing malware…",
+   "id": "6478f5844cef",
+   "title": "PHP Issues Emergency Patches for Two Critical PHP2Shell RCE Flaws as Exploit Attempts Emerge",
+   "summary": "PHP has released emergency updates that fix two critical flaws in the language itself, letting an attacker without an account run code on a web server. The fixes are in…",
    "priority": "Standard",
-   "category": "AI Risk Lab",
+   "category": "Patch Radar",
    "date": "21 Oct 2026, 14:00 UTC",
    "priority_score": 3,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
-   "tags": [
-    "ai"
-   ],
+   "tags": [],
    "kev": [],
-   "sources": "BleepingComputer",
-   "url": "story/bc6b0429e7ca.html"
-  },
-  {
-   "id": "71ae2abe1296",
-   "title": "Asymptote Labs Lands $5.5 Million Seed for AI Agent Runtime Security",
-   "summary": "Asymptote Labs raises $5.5M seed led by Tower Research Ventures to commercialize its Beacon AI agent runtime security platform. The post Asymptote Labs Lands $5.5…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "21 Oct 2026, 13:17 UTC",
-   "priority_score": 3,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "ai"
-   ],
-   "kev": [],
-   "sources": "SecurityWeek",
-   "url": "story/71ae2abe1296.html"
+   "sources": "The Hacker News",
+   "url": "story/6478f5844cef.html"
   },
   {
    "id": "13820dacd5f3",
@@ -1056,12 +1016,12 @@
    "url": "story/dff178c340ad.html"
   },
   {
-   "id": "0db72c8bc263",
-   "title": "AOMEI Backupper Compromised in Short-Burst Supply Chain Campaign",
-   "summary": "Across multiple short compromise windows, users were served a downloader for the ShinyRoad modular backdoor framework. The post AOMEI Backupper Compromised in…",
+   "id": "9cd1aed286a1",
+   "title": "CVE-2026-62913 Microsoft Exchange Server Remote Code Execution Vulnerability",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
    "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "20 Oct 2026, 13:51 UTC",
+   "category": "Patch Radar",
+   "date": "20 Oct 2026, 14:00 UTC",
    "priority_score": 3,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
@@ -1070,8 +1030,26 @@
     "microsoft"
    ],
    "kev": [],
-   "sources": "SecurityWeek",
-   "url": "story/0db72c8bc263.html"
+   "sources": "Microsoft Security Response Center",
+   "url": "story/9cd1aed286a1.html"
+  },
+  {
+   "id": "7003b4db8f4a",
+   "title": "CVE-2026-70074 Windows DNS Information Disclosure Vulnerability",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "20 Oct 2026, 14:00 UTC",
+   "priority_score": 3,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "microsoft"
+   ],
+   "kev": [],
+   "sources": "Microsoft Security Response Center",
+   "url": "story/7003b4db8f4a.html"
   },
   {
    "id": "382400392fa0",
@@ -1341,6 +1319,22 @@
    "kev": [],
    "sources": "BleepingComputer",
    "url": "story/a094aa58c0da.html"
+  },
+  {
+   "id": "6a8ba679d4e1",
+   "title": "Indurex Raises $8 Million to Expand Industrial Cybersecurity Platform",
+   "summary": "The Amsterdam-based company plans to use the funding for research and development and commercial expansion in Europe and the Middle East. The post Indurex Raises $8…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "22 Oct 2026, 13:00 UTC",
+   "priority_score": 2,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "SecurityWeek",
+   "url": "story/6a8ba679d4e1.html"
   },
   {
    "id": "2bd447638fb1",
@@ -1681,6 +1675,42 @@
    "url": "story/39edcc9fa917.html"
   },
   {
+   "id": "bc6b0429e7ca",
+   "title": "ClickFix has never been bigger, and AI tools are its most convincing lure yet",
+   "summary": "ClickFix attacks are surging as cybercriminals use fake AI installers, malicious search results, and trusted chatbot platforms to trick users into executing malware…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "21 Oct 2026, 14:00 UTC",
+   "priority_score": 2,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "ai"
+   ],
+   "kev": [],
+   "sources": "BleepingComputer",
+   "url": "story/bc6b0429e7ca.html"
+  },
+  {
+   "id": "71ae2abe1296",
+   "title": "Asymptote Labs Lands $5.5 Million Seed for AI Agent Runtime Security",
+   "summary": "Asymptote Labs raises $5.5M seed led by Tower Research Ventures to commercialize its Beacon AI agent runtime security platform. The post Asymptote Labs Lands $5.5…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "21 Oct 2026, 13:17 UTC",
+   "priority_score": 2,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "ai"
+   ],
+   "kev": [],
+   "sources": "SecurityWeek",
+   "url": "story/71ae2abe1296.html"
+  },
+  {
    "id": "b81260804ad3",
    "title": "Generative AI Is Erasing Behavioral Tells, Weakening Behavior-Only Detection, Proofpoint Reports",
    "summary": "Generative AI has changed what a malicious email looks like. Messages that once gave themselves away through clumsy wording, generic pretexts, and reused templates now…",
@@ -1821,11 +1851,11 @@
    "url": "story/91169d021095.html"
   },
   {
-   "id": "54e589c7063e",
-   "title": "CJIS v6.1 Compliance: 5 Practical Priorities for Agencies",
-   "summary": "CJIS v6.1 requires agencies to maintain strong authentication, account security, and audit controls while demonstrating ongoing compliance. Specops outlines five…",
+   "id": "0db72c8bc263",
+   "title": "AOMEI Backupper Compromised in Short-Burst Supply Chain Campaign",
+   "summary": "Across multiple short compromise windows, users were served a downloader for the ShinyRoad modular backdoor framework. The post AOMEI Backupper Compromised in…",
    "priority": "Standard",
-   "category": "Microsoft",
+   "category": "Attacks & Breaches",
    "date": "20 Oct 2026, 13:51 UTC",
    "priority_score": 2,
    "priority_basis": [
@@ -1835,26 +1865,8 @@
     "microsoft"
    ],
    "kev": [],
-   "sources": "BleepingComputer",
-   "url": "story/54e589c7063e.html"
-  },
-  {
-   "id": "4791d60cd7f6",
-   "title": "The Key to AI Software Security Isn’t Speed, It’s Maturity",
-   "summary": "Where your developers sit on the AI adoption scale has a real impact on how you are addressing security risk. The post The Key to AI Software Security Isn’t Speed, It’s…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "20 Oct 2026, 13:34 UTC",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "ai"
-   ],
-   "kev": [],
    "sources": "SecurityWeek",
-   "url": "story/4791d60cd7f6.html"
+   "url": "story/0db72c8bc263.html"
   },
   {
    "id": "4f28949e9098",
@@ -2554,20 +2566,40 @@
    "url": "story/ba5b9e5d876d.html"
   },
   {
-   "id": "b8cb67bf0a57",
-   "title": "Hacker gets 8 years for stealing $3.3 million from taxpayers",
-   "summary": "A Nigerian national was sentenced to eight years in prison for his involvement in a series of spearphishing attacks targeting US tax preparation businesses since 2019.",
+   "id": "54e589c7063e",
+   "title": "CJIS v6.1 Compliance: 5 Practical Priorities for Agencies",
+   "summary": "CJIS v6.1 requires agencies to maintain strong authentication, account security, and audit controls while demonstrating ongoing compliance. Specops outlines five…",
    "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "20 Oct 2026, 13:18 UTC",
+   "category": "Microsoft",
+   "date": "20 Oct 2026, 13:51 UTC",
    "priority_score": 1,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
-   "tags": [],
+   "tags": [
+    "microsoft"
+   ],
    "kev": [],
    "sources": "BleepingComputer",
-   "url": "story/b8cb67bf0a57.html"
+   "url": "story/54e589c7063e.html"
+  },
+  {
+   "id": "4791d60cd7f6",
+   "title": "The Key to AI Software Security Isn’t Speed, It’s Maturity",
+   "summary": "Where your developers sit on the AI adoption scale has a real impact on how you are addressing security risk. The post The Key to AI Software Security Isn’t Speed, It’s…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "20 Oct 2026, 13:34 UTC",
+   "priority_score": 1,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "ai"
+   ],
+   "kev": [],
+   "sources": "SecurityWeek",
+   "url": "story/4791d60cd7f6.html"
   },
   {
    "id": "d02f2b9b0912",
@@ -3310,6 +3342,22 @@
    "kev": [],
    "sources": "The Hacker News",
    "url": "story/ba5ef20dc7e9.html"
+  },
+  {
+   "id": "b8cb67bf0a57",
+   "title": "Hacker gets 8 years for stealing $3.3 million from taxpayers",
+   "summary": "A Nigerian national was sentenced to eight years in prison for his involvement in a series of spearphishing attacks targeting US tax preparation businesses since 2019.",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "20 Oct 2026, 13:18 UTC",
+   "priority_score": 0,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "BleepingComputer",
+   "url": "story/b8cb67bf0a57.html"
   },
   {
    "id": "cf21e83d251e",

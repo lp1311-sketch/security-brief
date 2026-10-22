@@ -320,31 +320,6 @@
    "instructions_checked": true
   },
   {
-   "id": "0b4a4cb8af55",
-   "source": "google-threat-intel",
-   "source_name": "Google Threat Intelligence",
-   "official": false,
-   "source_type": "vendor_blog",
-   "title": "ARMORY CASTLE Exploits BeyondTrust",
-   "link": "https://cloud.google.com/blog/topics/threat-intelligence/armory-castle-exploits-beyondtrust/",
-   "published": "2026-10-15T14:00:00+00:00",
-   "summary": "Written by: Jayson Frost, Bryce Greathouse, Brian Meyer, John Palmisano, Rajesh Rajeshirke, Steve Rasch, John Wolfram Introduction On October 15, BeyondTrust disclosed a vulnerability, CVE-2026-102764, impacting BeyondTrust Remote Support (formerly Bomgar) appliances. BeyondTrust Remote Support is an enterprise secure…",
-   "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/Figure_1_ARMORY_CASTLE_BeyondTrust_comprom.max-1000x1000.jpg",
-   "cves": [
-    "CVE-2023-46805",
-    "CVE-2024-21887",
-    "CVE-2026-102764"
-   ],
-   "first_seen": "2026-10-22T11:02:51.911634+00:00",
-   "instructions": [
-    "We strongly recommend that affected organizations immediately apply the security patches provided by BeyondTrust to remediate the vulnerability, and review additional guidance in their blog .",
-    "Self-hosted, older than 24.3.1 : Upgrade to a supported version, then apply the patch.",
-    "Organizations should prepare for potential widespread exploitation following this disclosure, as ARMORY CASTLE and other threat actors have historically conducted broad, opportunistic exploitation once the vulnerability becomes public.",
-    "Defenders should also prepare for the possibility that following disclosure of CVE-2026-102764, ARMORY CASTLE may conduct widespread exploitation similar to what GTIG observed in 2024 following the disclosure of CVE-2023-46805 and CVE-2024-21887."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "7682e78b0695",
    "source": "grahamcluley",
    "source_name": "Graham Cluley",
@@ -2286,6 +2261,22 @@
    "instructions_checked": true
   },
   {
+   "id": "d76b50dba162",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "The AI Agent Nobody Owns: Watch Expert Webinar On Your Newest Insider Threat",
+   "link": "https://thehackernews.com/2026/10/the-ai-agent-nobody-owns-watch-expert.html",
+   "published": "2026-10-22T11:45:00+00:00",
+   "summary": "Right now, there is probably an AI agent running on a laptop somewhere in your network. It stores API keys and database passwords, can access your internal systems, and works without anyone watching. Nobody reviewed its access. Nobody owns it. If an employee had that much reach with that little oversight, you would…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyT7lik0MCxUa_ALE00qK-x8qCQiM7doEPBK3sl90Y0J4N6zpBNzLI5ixKwtXItAzgHOIz9t-YerpeISJ7WcT7VJLyfWphEU4cHrm3CHpIwnsIcKT64fwNVkACsm7GxDnXqzqR4M5QXkLuUkUWxPEI5PhAI65_sXtcb2jW-0OhuVHC3n5vQnPVBrT_D5g/s1600/bit.jpg",
+   "cves": [],
+   "first_seen": "2026-10-22T14:02:27.695450+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "f31f85df952c",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2456,6 +2447,25 @@
    "first_seen": "2026-10-20T19:19:25.651156+00:00",
    "image_checked": true,
    "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "14aa600d7f56",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Cybercrime crackdown across Africa leads to 1,462 arrests, $105 million seized",
+   "link": "https://therecord.media/africa-cybercrime-interpol-arrests",
+   "published": "2026-10-22T13:30:00+00:00",
+   "summary": "More than 1,400 suspected cybercriminals were arrested across Africa this summer as part of a crackdown on the gangs perpetrating online fraud, ransomware and business email compromise attacks, Interpol said.",
+   "image": "https://cms.therecord.media/uploads/scam_compound_Interpol_f24bead420.jpg",
+   "cves": [],
+   "first_seen": "2026-10-22T14:02:27.695450+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Simon Mundeyi, a spokesman for the Ugandan Ministry of Internal Affairs, said the majority were from South and East Asia and were operating from an apartment complex that appeared to restrict their ability to exit."
+   ],
    "instructions_checked": true
   },
   {
@@ -5853,6 +5863,28 @@
    "image_checked": true
   },
   {
+   "id": "ab875104cf16",
+   "source": "schneier",
+   "source_name": "Schneier on Security",
+   "official": false,
+   "source_type": "news",
+   "title": "New Serious PHP Vulnerabilities Released and Patched",
+   "link": "https://www.schneier.com/blog/archives/2026/10/new-serious-php-vulnerabilities-released-and-patched.html",
+   "published": "2026-10-22T13:26:51+00:00",
+   "summary": "PHP maintainers have released two critical vulnerabilities: PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35 fix two critical vulnerabilities that can allow unauthenticated remote code execution. All PHP users are strongly encouraged to update immediately. Who is at risk: all PHP installations serving web requests, including…",
+   "image": null,
+   "cves": [
+    "CVE-2026-109618",
+    "CVE-2026-109619"
+   ],
+   "first_seen": "2026-10-22T14:02:27.695450+00:00",
+   "image_checked": true,
+   "instructions": [
+    "All PHP users are strongly encouraged to update immediately."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "59dff61018ea",
    "source": "schneier",
    "source_name": "Schneier on Security",
@@ -6314,6 +6346,27 @@
     "Preparing for disruption must become part of day-to-day operations.",
     "Users who installed or updated the CLI on macOS, 64-bit Linux, or Windows x86_64 via the official install script, Homebrew, or a direct GitHub download during the roughly 94-minute window are affected.",
     "Those who built from source, used Go’s install command, or pulled the official Docker image are not."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "6a8ba679d4e1",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Indurex Raises $8 Million to Expand Industrial Cybersecurity Platform",
+   "link": "https://www.securityweek.com/indurex-raises-8-million-to-expand-industrial-cybersecurity-platform/",
+   "published": "2026-10-22T13:00:00+00:00",
+   "summary": "The Amsterdam-based company plans to use the funding for research and development and commercial expansion in Europe and the Middle East. The post Indurex Raises $8 Million to Expand Industrial Cybersecurity Platform appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2023/01/Cybersecurity_News-SecurityWeek.jpg",
+   "cves": [],
+   "first_seen": "2026-10-22T14:02:27.695450+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Former NSA Director Paul Nakasone Launches National Security Advisory Firm",
+    "Jon Steinbach has been appointed strategic technical advisor to the Pentagon’s CIO.",
+    "Preparing for disruption must become part of day-to-day operations."
    ],
    "instructions_checked": true
   },
