@@ -16,6 +16,7 @@ sys.path.insert(0, str(ROOT))
 import build  # noqa: E402
 
 NOW = datetime(2026, 10, 20, 12, 0, tzinfo=timezone.utc)
+FIXTURES = ROOT / "tests" / "fixtures"
 
 
 def item(title, summary="", **kw):
@@ -122,7 +123,7 @@ class OfflineBuild(unittest.TestCase):
         cls.tmp = Path(tempfile.mkdtemp())
         cfg = json.loads((ROOT / "feeds.json").read_text(encoding="utf-8"))
         cfg["site_url"] = "https://test.example.org/brief"
-        cls.status = build.run(cfg, cls.tmp / "site", cls.tmp / "stories.json", ROOT, NOW)
+        cls.status = build.run(cfg, cls.tmp / "site", cls.tmp / "stories.json", FIXTURES, NOW)
         cls.site = cls.tmp / "site"
 
     @classmethod
@@ -148,6 +149,87 @@ class OfflineBuild(unittest.TestCase):
         self.assertIn("Free field guide", self.read("index.html"))
         self.assertIn(f'href="{filename}" download', self.read("index.html"))
         self.assertIn(f"https://test.example.org/brief/{filename}", self.read("sitemap.xml"))
+
+    def test_google_search_console_verification_file_is_copied_to_site_root(self):
+        filename = "google06dce61680795c6c.html"
+        expected = "google-site-verification: google06dce61680795c6c.html"
+        self.assertTrue((self.site / filename).is_file(), filename)
+        self.assertEqual((self.site / filename).read_text(encoding="utf-8").strip(), expected)
+
+    def test_homepage_separates_content_publication_from_feed_check(self):
+        page = self.read("index.html")
+        self.assertIn("Last content publication:", page)
+        self.assertIn('id="feed-freshness"', page)
+        self.assertIn("status.json?fresh=", page)
+        self.assertIn("Browse and filter all", page)
+        self.assertNotIn('id="story-search"', page)
+
+    def test_full_story_list_has_date_sort_and_important_filters(self):
+        page = self.read("stories/index.html")
+        self.assertIn('id="date-filter"', page)
+        self.assertIn('value="24"', page)
+        self.assertIn('value="72"', page)
+        self.assertIn('value="168"', page)
+        self.assertIn('id="sort-filter"', page)
+        self.assertIn('id="important-only"', page)
+        self.assertIn('data-published=', page)
+        self.assertIn('data-priority-rank=', page)
+
+    def test_priority_explanation_separates_editorial_score_from_cvss(self):
+        data = json.loads(self.read("stories.json"))
+        self.assertIn("priority_basis", data["stories"][0])
+        first_story = self.site / data["stories"][0]["url"]
+        page = first_story.read_text(encoding="utf-8")
+        self.assertIn("Editorial triage priority", page)
+        self.assertIn("not a CVSS severity score", page)
+        self.assertIn("Scoring signals", page)
+
+    def test_status_refreshes_without_content_change(self):
+        tmp = Path(tempfile.mkdtemp())
+        try:
+            cfg = json.loads((ROOT / "feeds.json").read_text(encoding="utf-8"))
+            cfg["site_url"] = "https://test.example.org/brief"
+            out, data_file = tmp / "site", tmp / "data" / "stories.json"
+            first_time = NOW
+            first = build.run(cfg, out, data_file, FIXTURES, first_time)
+            first_status = json.loads((out / "status.json").read_text(encoding="utf-8"))
+            stale = dict(first_status)
+            stale["last_check_at"] = "2000-01-01T00:00:00+00:00"
+            (out / "status.json").write_text(json.dumps(stale), encoding="utf-8")
+            second = build.run(cfg, out, data_file, FIXTURES, first_time)
+            second_status = json.loads((out / "status.json").read_text(encoding="utf-8"))
+            self.assertFalse(second["changed"])
+            self.assertEqual(second_status["last_check_at"], first_status["last_check_at"])
+            self.assertEqual(first_status["content_published_at"], second_status["content_published_at"])
+            successful = next(x for x in second_status["sources"] if x["ok"])
+            self.assertEqual(successful["last_success_at"], second_status["last_check_at"])
+            self.assertGreater(second_status["sources_ok"], 0)
+            self.assertLessEqual(second_status["sources_ok"], second_status["sources_total"])
+            self.assertTrue(first["changed"])
+        finally:
+            shutil.rmtree(tmp, ignore_errors=True)
+
+    def test_failed_feed_retains_last_success_timestamp(self):
+        tmp = Path(tempfile.mkdtemp())
+        try:
+            fixture_copy = tmp / "fixtures"
+            shutil.copytree(FIXTURES, fixture_copy)
+            cfg = json.loads((ROOT / "feeds.json").read_text(encoding="utf-8"))
+            cfg["site_url"] = "https://test.example.org/brief"
+            out, data_file = tmp / "site", tmp / "data" / "stories.json"
+            build.run(cfg, out, data_file, fixture_copy, NOW)
+            before = json.loads((out / "status.json").read_text(encoding="utf-8"))
+            source_before = next(x for x in before["sources"] if x["id"] == "bleepingcomputer")
+            (fixture_copy / "bleepingcomputer.xml").unlink()
+            build.run(cfg, out, data_file, fixture_copy, NOW)
+            after = json.loads((out / "status.json").read_text(encoding="utf-8"))
+            source_after = next(x for x in after["sources"] if x["id"] == "bleepingcomputer")
+            self.assertTrue(source_before["ok"])
+            self.assertFalse(source_after["ok"])
+            self.assertEqual(source_after["last_success_at"], source_before["last_success_at"])
+            self.assertIn("last_attempt_at", source_after)
+        finally:
+            shutil.rmtree(tmp, ignore_errors=True)
 
     def test_logo_in_header(self):
         self.assertIn("logo-img", self.read("index.html"))
@@ -209,6 +291,18 @@ class Design(unittest.TestCase):
         self.assertIn('class="led r"', html)
         self.assertIn('id="banner-text"', html)
         self.assertIn("Every story links", build.BANNER_JS)
+
+
+class FeedEndpoints(unittest.TestCase):
+    def test_confirmed_publisher_rss_links_are_configured(self):
+        cfg = json.loads((ROOT / "feeds.json").read_text(encoding="utf-8"))
+        sources = {source["id"]: source for source in cfg["sources"]}
+        self.assertEqual(sources["google-threat-intel"]["url"],
+                         "https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v")
+        self.assertEqual(sources["sophos"]["url"],
+                         "https://news.sophos.com/en-us/blog/feed?id=blt6f15f4f7deaf4242")
+        self.assertEqual(sources["cisa"]["url"],
+                         "https://www.cisa.gov/cybersecurity-advisories/all.xml")
 
 
 if __name__ == "__main__":

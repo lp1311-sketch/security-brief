@@ -1,0 +1,31 @@
+SECURITY BRIEF - PHASE 1 UPDATE
+
+This is an update bundle for the existing GitHub repository. Do not upload this ZIP file as-is and do not replace the whole repository with it.
+
+Contents to merge into the repository root (overwriting matching files):
+- build.py
+- feeds.json
+- test_autoblog.py
+- google06dce61680795c6c.html
+- .github/workflows/autoblog.yml
+- tests/fixtures/*
+
+Recommended installation (preserves folders reliably):
+1. Download and extract this ZIP on your computer.
+2. Open your existing repository with GitHub Desktop (or clone it if it is not already local).
+3. Copy the extracted contents into the existing repository folder. Allow the four root files and workflow file to be replaced. Merge tests/fixtures into the existing tests/fixtures folder; do not delete other tests.
+4. In GitHub Desktop, review the changed files, commit, and Push origin.
+5. In GitHub: Actions > autoblog > Run workflow. Wait for the run to finish, then confirm the Pages deployment succeeded.
+6. Open the site and status.json. The feed-check timestamp should advance even when no new stories are found. The content-publication timestamp should only change when content changes.
+
+The workflow runs 37 offline regression tests before fetching feeds. They pass in the included version.
+
+Feed updates:
+- Google Threat Intelligence now uses the RSS URL linked from its own topic page.
+- Sophos uses the RSS URL linked from the Sophos Blog.
+- CISA's official cybersecurity-advisories feed URL is retained. The earlier GitHub Actions run returned HTTP 403, which indicates access was denied in that run; it does not prove the official feed URL is dead. Recheck after deployment.
+
+Important:
+- The included files do not contain site.json or your private address/contact configuration.
+- The build/test run in this offline sandbox cannot verify live RSS retrieval from GitHub Actions.
+- Nothing in this ZIP has been pushed to GitHub or deployed. Deployment happens only after you commit and push these files.

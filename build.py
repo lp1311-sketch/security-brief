@@ -791,6 +791,23 @@ def build_story(items: list[dict], kev: set[str], kev_checked: bool, now: dateti
     kev_hit = bool(set(cves) & kev) if kev_checked else False
     exploited = bool(EXPLOITED_RE.search(text))
     tags = story_tags(text, prio, category, kev_hit, exploited, bool(cves))
+    official_exploit_sources = sorted({
+        i["source_name"] for i in items
+        if i.get("official") and i.get("source_type") != "vendor_blog"
+        and EXPLOITED_RE.search(f"{i['title']} {i['summary']}")
+    })
+    priority_basis = []
+    if kev_hit:
+        priority_basis.append("CISA KEV listing: " + ", ".join(sorted(set(cves) & kev)))
+    if official_exploit_sources:
+        priority_basis.append("Official source reports exploitation: " + ", ".join(official_exploit_sources))
+    if prio == "High":
+        priority_basis.append(f"Editorial attention score {score} reached the High threshold (not CVSS)")
+    if prio == "Standard":
+        if kev_checked:
+            priority_basis.append("No KEV or official-exploitation trigger; editorial score below High threshold")
+        else:
+            priority_basis.append("No official-exploitation trigger; KEV lookup unavailable, so this label is provisional")
     return {
         "id": head["id"],
         "title": head["title"],
@@ -802,6 +819,7 @@ def build_story(items: list[dict], kev: set[str], kev_checked: bool, now: dateti
         "priority": prio,
         "score": score,
         "reasons": reasons,
+        "priority_basis": priority_basis,
         "cves": cves,
         "vendors": sorted(set().union(*(vendors_in(f"{i['title']} {i['summary']}") for i in items))),
         "kev": sorted(set(cves) & kev) if kev_checked else [],
@@ -1008,17 +1026,44 @@ def _save_button(s: dict) -> str:
             f'{icon}<span>Save</span></button>')
 
 
+def _filter_data(s: dict) -> str:
+    d = _date(s.get("published"))
+    published = d.isoformat() if d else ""
+    rank = {"Critical": 0, "High": 1, "Standard": 2}.get(s.get("priority"), 3)
+    important = s.get("priority") in {"Critical", "High"} or bool(set(s.get("tags", [])) & {"exploited", "patch-now"})
+    return (f'data-tags="{esc(" ".join(s.get("tags", [])))}" data-search="{esc(search_text(s))}" '
+            f'data-published="{esc(published)}" data-priority="{esc(s.get("priority", "Standard"))}" '
+            f'data-priority-rank="{rank}" data-score="{int(s.get("score", 0))}" '
+            f'data-important="{str(important).lower()}"')
+
+
+def priority_summary(s: dict) -> str:
+    basis = s.get("priority_basis", [])
+    if s.get("kev"):
+        return "KEV-listed: " + ", ".join(s["kev"])
+    official = next((x for x in basis if x.startswith("Official source reports exploitation:")), None)
+    if official:
+        return official
+    if s.get("priority") == "High":
+        return f"Editorial attention score {s.get('score', 0)}; not CVSS"
+    if not s.get("kev_checked", False):
+        return "No trigger found in available data; KEV check unavailable"
+    return "No elevated-priority trigger identified in feed data"
+
+
 def _card(s: dict) -> str:
     img = s["image"] or fallback_cover(s)
     names = ", ".join(dict.fromkeys(x["name"] for x in s["sources"]))
     prio = esc(s["priority"])
-    fb = f''' data-fallback="{esc(fallback_cover(s))}" onerror="this.onerror=null;this.src=this.dataset.fallback"'''
-    return f"""<article class="card prio-{prio}" data-tags="{esc(' '.join(s['tags']))}" data-search="{esc(search_text(s))}">
+    fb = f' data-fallback="{esc(fallback_cover(s))}" onerror="this.onerror=null;this.src=this.dataset.fallback"'
+    attrs = _filter_data(s)
+    return f"""<article class="card prio-{prio}" {attrs}>
 <a class="card-media" href="story/{esc(s['id'])}.html" tabindex="-1" aria-hidden="true"><img src="{esc(img)}"{fb} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360"><span class="badge {prio}">{prio}</span></a>
 <div class="card-body">
 <p class="kicker"><span class="cat">{esc(CATEGORIES[s['category']][0])}</span> <span class="type">{esc(s.get('content_type', 'News'))}</span></p>
 <h3><a href="story/{esc(s['id'])}.html">{esc(s['title'])}</a></h3>
 <p class="summary">{esc(_short(s['summary'], 170))}</p>
+<p class="priority-note"><strong>Editorial priority:</strong> {esc(priority_summary(s))}</p>
 <p class="meta">{esc(names)} &middot; {esc(fmt_date(s['published']))}</p>
 {_save_button(s)}
 </div>
@@ -1029,13 +1074,15 @@ def _hero(s: dict) -> str:
     img = s["image"] or fallback_cover(s)
     names = ", ".join(dict.fromkeys(x["name"] for x in s["sources"]))
     prio = esc(s["priority"])
-    fb = f''' data-fallback="{esc(fallback_cover(s))}" onerror="this.onerror=null;this.src=this.dataset.fallback"'''
-    return f"""<section class="hero" aria-labelledby="hero-title" data-tags="{esc(' '.join(s['tags']))}" data-search="{esc(search_text(s))}">
+    fb = f' data-fallback="{esc(fallback_cover(s))}" onerror="this.onerror=null;this.src=this.dataset.fallback"'
+    attrs = _filter_data(s)
+    return f"""<section class="hero" aria-labelledby="hero-title" {attrs}>
 <a class="hero-media" href="story/{esc(s['id'])}.html" tabindex="-1" aria-hidden="true"><img src="{esc(img)}"{fb} alt="" loading="eager" referrerpolicy="no-referrer" width="640" height="360"></a>
 <div class="hero-body">
 <p class="kicker"><span class="badge {prio}">{prio}</span><span class="cat">{esc(CATEGORIES[s['category']][0])}</span></p>
 <h2 id="hero-title"><a href="story/{esc(s['id'])}.html">{esc(s['title'])}</a></h2>
 <p class="summary">{esc(_short(s['summary'], 240))}</p>
+<p class="priority-note"><strong>Editorial priority:</strong> {esc(priority_summary(s))}</p>
 <p class="meta">{esc(names)} &middot; {esc(fmt_date(s['published']))}</p>
 <div class="actions"><a class="btn" href="story/{esc(s['id'])}.html">Read the brief &rarr;</a>{_save_button(s)}</div>
 </div>
@@ -1463,20 +1510,35 @@ DESIGN_CSS = """
 .stats .stat:nth-child(2){animation-delay:-2s}.stats .stat:nth-child(3){animation-delay:-4s}.stats .stat:nth-child(4){animation-delay:-6s}
 @media (prefers-reduced-motion:reduce){.card,.card:hover,.hero::before,.logo-img,.stats .stat{transition:none;transform:none;animation:none}}
 """
+EXTRA_CSS += """
+.filter-tools{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:-18px 0 12px}
+.filter-tools label{display:flex;flex-direction:column;gap:6px;color:var(--muted);font-size:.78rem;font-weight:650}
+.filter-tools select{min-height:42px;width:100%;padding:8px 11px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);font:inherit;font-size:.88rem}
+.filter-tools select:focus-visible,.important-only input:focus-visible{outline:3px solid color-mix(in srgb,var(--accent) 55%,transparent);outline-offset:2px}
+.filter-tools .important-only{display:flex;flex-direction:row;align-items:center;gap:9px;padding:9px 12px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);font-size:.88rem}
+.important-only input{width:18px;height:18px;accent-color:var(--accent)}
+.important-only .hint{color:var(--muted);font-size:.74rem;font-weight:450}
+.filter-count{margin:-4px 0 18px;color:var(--muted);font-size:.82rem;font-variant-numeric:tabular-nums}
+.priority-note{margin:0 0 8px;color:var(--muted);font-size:.78rem;line-height:1.4}
+.freshness{display:flex;gap:4px;flex-wrap:wrap;align-items:baseline}
+@media(max-width:760px){.filter-tools{grid-template-columns:1fr 1fr}.filter-tools .important-only{grid-column:1/-1;flex-wrap:wrap}.card .meta{overflow-wrap:anywhere}.save{min-height:40px}}
+@media(max-width:460px){.filter-tools{grid-template-columns:1fr}.filter-tools .important-only{grid-column:auto}}
+"""
+
 FAVICON_SVG = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#0b1d3a"/><path d="M32 12 L48 18 V31 C48 42 41 50 32 54 C23 50 16 42 16 31 V18 Z" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linejoin="round"/><path d="M24 31 L30 37 L41 25" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>"""
 LOGO_SVG = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 80" role="img" aria-label="Security Brief"><rect x="0" y="8" width="64" height="64" rx="14" fill="#0b1d3a"/><path d="M32 20 L48 26 V39 C48 50 41 58 32 62 C23 58 16 50 16 39 V26 Z" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linejoin="round"/><path d="M24 39 L30 45 L41 33" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><text x="80" y="38" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#0b1d3a">Security Brief</text><text x="80" y="58" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="2.4" fill="#475569">THREATS · ACTIONS · EVIDENCE</text></svg>"""
 
 
 FILTERS = [
-    ("all", "All"), ("critical", "Critical"), ("exploited", "Actively exploited"), ("patch-now", "Patch now"),
+    ("all", "All"), ("critical", "Critical (editorial)"), ("exploited", "Exploitation reported"), ("patch-now", "Patch now"),
     ("microsoft", "Microsoft"), ("defender", "Defender"), ("ai", "AI security"),
 ]
 def filter_bar(stories: list[dict]) -> str:
     buttons = []
     for key, label in FILTERS:
-        n = len(stories) if key == "all" else sum(1 for s in stories if key in s["tags"])
+        n = len(stories) if key == "all" else sum(1 for story in stories if key in story["tags"])
         if key != "all" and n == 0:
-            continue  # no empty filter chips
+            continue
         pressed = "true" if key == "all" else "false"
         buttons.append(f'<button type="button" data-filter="{key}" aria-pressed="{pressed}">{esc(label)} <span class="count">{n}</span></button>')
     search = ('<div class="toolbar"><label class="visually-hidden" for="story-search">Search stories</label>'
@@ -1484,51 +1546,94 @@ def filter_bar(stories: list[dict]) -> str:
               'stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>'
               '<input id="story-search" class="search" type="search" placeholder="Search stories, vendors or topics" '
               'autocomplete="off" spellcheck="false"></div>')
+    controls = """<div class="filter-tools" aria-label="Additional story filters">
+<label>Time range <select id="date-filter"><option value="168">Last 7 days</option><option value="72">Last 72 hours</option><option value="24">Last 24 hours</option><option value="0">All in current feed</option></select></label>
+<label>Sort by <select id="sort-filter"><option value="priority">Priority, then newest</option><option value="date">Newest first</option></select></label>
+<label class="important-only"><input id="important-only" type="checkbox"> Important only <span class="hint">Critical, High, or exploitation / patch signal</span></label>
+</div><p id="filter-count" class="filter-count" aria-live="polite"></p>"""
     return (search + '<div class="filters" id="filters" role="group" aria-label="Filter stories by topic">'
-            + "".join(buttons) + '</div><p id="filter-empty" class="empty" hidden>No stories match this filter in the current window.</p>')
+            + "".join(buttons) + '</div>' + controls
+            + '<p id="filter-empty" class="empty" hidden>No stories match these filters in the current window.</p>')
 
 
 FILTER_JS = """(function(){
 var bar=document.getElementById('filters');
 var search=document.getElementById('story-search');
+var range=document.getElementById('date-filter');
+var sort=document.getElementById('sort-filter');
+var important=document.getElementById('important-only');
 var buttons=bar?bar.querySelectorAll('button[data-filter]'):[];
-var items=document.querySelectorAll('[data-tags]');
+var items=Array.prototype.slice.call(document.querySelectorAll('[data-tags]'));
 var sections=document.querySelectorAll('[data-section]');
 var empty=document.getElementById('filter-empty');
+var count=document.getElementById('filter-count');
 var current='all';
+function timestamp(el){var value=el.getAttribute('data-published');return value?Date.parse(value):NaN;}
+function compare(a,b){
+  if(sort&&sort.value==='priority'){
+    var rankA=Number(a.getAttribute('data-priority-rank')||9),rankB=Number(b.getAttribute('data-priority-rank')||9);
+    if(rankA!==rankB)return rankA-rankB;
+    var scoreA=Number(a.getAttribute('data-score')||0),scoreB=Number(b.getAttribute('data-score')||0);
+    if(scoreA!==scoreB)return scoreB-scoreA;
+  }
+  return (timestamp(b)||0)-(timestamp(a)||0);
+}
+function reorder(){
+  document.querySelectorAll('.grid').forEach(function(grid){
+    var cards=Array.prototype.filter.call(grid.children,function(el){return el.hasAttribute('data-tags');});
+    cards.sort(compare).forEach(function(card){grid.appendChild(card);});
+  });
+}
 function apply(){
   var q=(search?search.value:'').trim().toLowerCase();
+  var hours=range?Number(range.value):168;
+  var cutoff=hours>0?Date.now()-hours*3600000:0;
   var shown=0;
   items.forEach(function(el){
     var tags=' '+(el.getAttribute('data-tags')||'')+' ';
     var text=el.getAttribute('data-search')||'';
-    var ok=(current==='all'||tags.indexOf(' '+current+' ')>-1)&&(!q||text.indexOf(q)>-1);
-    el.hidden=!ok; if(ok){shown++;}
+    var date=timestamp(el);
+    var inRange=!cutoff||(Number.isFinite(date)&&date>=cutoff);
+    var isImportant=el.getAttribute('data-important')==='true';
+    var ok=(current==='all'||tags.indexOf(' '+current+' ')>-1)&&(!q||text.indexOf(q)>-1)&&inRange&&(!important||!important.checked||isImportant);
+    el.hidden=!ok;if(ok)shown++;
   });
   sections.forEach(function(sec){sec.hidden=!sec.querySelector('[data-tags]:not([hidden])');});
-  if(empty){empty.hidden=shown>0;}
+  if(empty)empty.hidden=shown>0;
+  if(count)count.textContent=shown+' stories shown';
 }
 buttons.forEach(function(b){b.addEventListener('click',function(){
   current=b.getAttribute('data-filter');
   buttons.forEach(function(x){x.setAttribute('aria-pressed',String(x===b));});
   apply();
 });});
-if(search){search.addEventListener('input',apply);}
+if(search)search.addEventListener('input',apply);
+if(range)range.addEventListener('change',apply);
+if(important)important.addEventListener('change',apply);
+if(sort)sort.addEventListener('change',function(){reorder();apply();});
 var KEY='sb-saved';
 function readSaved(){try{return JSON.parse(localStorage.getItem(KEY)||'[]');}catch(e){return [];}}
 function writeSaved(a){try{localStorage.setItem(KEY,JSON.stringify(a));}catch(e){}}
 var saves=document.querySelectorAll('button[data-save]');
 function paint(){var saved=readSaved();saves.forEach(function(b){
   var on=saved.indexOf(b.getAttribute('data-save'))>-1;
-  var label=b.querySelector('span');
-  b.setAttribute('aria-pressed',String(on));if(label){label.textContent=on?'Saved':'Save';}});}
+  var label=b.querySelector('span');b.setAttribute('aria-pressed',String(on));if(label)label.textContent=on?'Saved':'Save';});}
 saves.forEach(function(b){b.addEventListener('click',function(){
   var id=b.getAttribute('data-save');var a=readSaved();var i=a.indexOf(id);
-  if(i>-1){a.splice(i,1);}else{a.push(id);}
-  writeSaved(a);paint();
+  if(i>-1)a.splice(i,1);else a.push(id);writeSaved(a);paint();
 });});
-paint();
-apply();
+reorder();paint();apply();
+})();"""
+
+
+FEED_STATUS_JS = """(function(){
+var el=document.getElementById('feed-freshness');if(!el)return;
+function stamp(value){var d=new Date(value);return isNaN(d.getTime())?'time unavailable':new Intl.DateTimeFormat(undefined,{day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit',timeZone:'UTC',timeZoneName:'short'}).format(d);}
+fetch('status.json?fresh='+Date.now(),{cache:'no-store'}).then(function(r){if(!r.ok)throw Error('status unavailable');return r.json();}).then(function(s){
+  var ok=Number(s.sources_ok||0),total=Number(s.sources_total||0);
+  el.textContent='Last feed check: '+stamp(s.last_check_at||s.generated)+' · '+ok+'/'+total+' sources succeeded in that run. ';
+  var a=document.createElement('a');a.href='status.json';a.textContent='Details';el.appendChild(a);
+}).catch(function(){el.textContent='Latest feed-check status is unavailable; displayed stories remain accessible.';});
 })();"""
 
 
@@ -1675,6 +1780,8 @@ def stories_index(stories: list[dict]) -> str:
     rows = [{
         "id": s["id"], "title": s["title"], "summary": _short(s["summary"], 170), "priority": s["priority"],
         "category": CATEGORIES[s["category"]][0], "date": fmt_date(s["published"]),
+        "priority_score": s["score"], "priority_basis": s.get("priority_basis", []),
+        "tags": s["tags"], "kev": s.get("kev", []),
         "sources": ", ".join(dict.fromkeys(x["name"] for x in s["sources"])), "url": f"story/{s['id']}.html",
     } for s in stories]
     return json.dumps({"stories": rows}, ensure_ascii=False, indent=1)
@@ -1688,13 +1795,14 @@ def index_page(stories: list[dict], cfg: dict, now: datetime, status: dict,
     exploited = sum(1 for s in stories if "exploited" in s["tags"])
     parts = [
         '<section class="intro"><h1>Security news, ranked</h1>'
-        f'<p class="meta">Last content update: {esc(now.strftime("%d %b %Y, %H:%M UTC"))} &middot; '
-        "Checked automatically every 20 minutes. Every story links to its original source.</p>"
+        f'<p class="meta">Last content publication: {esc(fmt_date(status.get("content_published_at") or now.isoformat()))}. '
+        "Feed checks run every 20 minutes; this timestamp changes only when published story or analysis content changes. Editorial priority is not CVSS or tenant-specific risk.</p>"
+        '<p class="meta freshness" id="feed-freshness" role="status">Loading the latest feed-check result&hellip;</p>'
         '<p><a class="btn" href="today/index.html">Today: what to do &rarr;</a></p></section>',
         '<div class="stats" aria-label="Summary">'
         f'<div class="stat"><b>{len(stories)}</b><span>stories in the current window</span></div>'
-        f'<div class="stat crit"><b>{crit}</b><span>critical</span></div>'
-        f'<div class="stat"><b>{exploited}</b><span>actively exploited</span></div>'
+        f'<div class="stat crit"><b>{crit}</b><span>critical (editorial)</span></div>'
+        f'<div class="stat"><b>{exploited}</b><span>exploitation reported</span></div>'
         f'<div class="stat"><b>{status.get("sources_total", 0)}</b><span>sources monitored</span></div>'
         "</div>",
     ]
@@ -1723,7 +1831,7 @@ def index_page(stories: list[dict], cfg: dict, now: datetime, status: dict,
     if not stories:
         parts.append('<div class="empty">No news stories yet. The next automated check will fill this page.</div>')
     else:
-        parts.append(filter_bar(stories))
+        parts.append(f'<p class="meta browse-all"><a class="btn" href="stories/index.html">Browse and filter all {len(stories)} stories &rarr;</a></p>')
         featured = stories[:4]
         parts.append('<section class="section" aria-label="Top story" data-section>' + _hero(featured[0]) + "</section>")
         if len(featured) > 1:
@@ -1738,12 +1846,13 @@ def index_page(stories: list[dict], cfg: dict, now: datetime, status: dict,
             parts.append(f'<section class="section" id="{cid}" data-section><h2>{esc(CATEGORIES[cid][0])}</h2>'
                          '<div class="grid">' + "".join(_card(s) for s in items) + "</div>"
                          f'<p class="section-more"><a href="category/{cid}/index.html">All {total} {esc(CATEGORIES[cid][0])} stories &rarr;</a></p></section>')
-        parts.append("<script>" + FILTER_JS + "</script>")
+    parts.append("<script>" + FEED_STATUS_JS + "</script>")
     return _layout(cfg, "Home", "Ranked cybersecurity news with links to original sources.", "\n".join(parts), "")
 
 
 def listing_page(stories: list[dict], cfg: dict, base: str, title: str, intro: str) -> str:
-    parts = [f'<section class="intro"><h1>{esc(title)}</h1><p class="meta">{esc(intro)}</p></section>']
+    parts = [f'<section class="intro"><h1>{esc(title)}</h1><p class="meta">{esc(intro)}</p>'
+             '<p class="meta">Filters apply to every story shown in this listing. Editorial priority is not CVSS or environment-specific risk.</p></section>']
     if not stories:
         parts.append('<div class="empty">No stories in this section in the current window.</div>')
     else:
@@ -1812,9 +1921,10 @@ def story_page(s: dict, cfg: dict) -> str:
 <p>{esc(why_it_matters(s))}</p>
 {instr_block}
 <h2>Why this priority</h2>
-<div class="box"><p><strong>{esc(s['priority'])}</strong>. Criteria: Critical = CVE listed in CISA KEV, or exploitation reported by an official source. High = score 6 or more. Otherwise Standard.</p>
-<ul>{reasons}</ul>
-<p>{kev_line}</p></div>
+<div class="box"><p><strong>Editorial triage priority: {esc(s['priority'])}.</strong> This is not a CVSS severity score and does not establish risk to your environment. Critical requires a CISA KEV listing or exploitation reported by an official source; High uses the site's editorial attention score threshold (6), which includes context such as recency and enterprise relevance.</p>
+<ul>{''.join(f'<li>{esc(x)}</li>' for x in s.get('priority_basis', []))}</ul>
+<p><strong>Scoring signals:</strong></p><ul>{reasons}</ul>
+<p>{kev_line}</p><p>CVSS and vendor fix status are not inferred when the feed does not provide them; verify affected versions and remediation in the linked primary advisory.</p></div>
 <h2>Sources</h2>
 <ul>{srcs}</ul>
 <p class="note">Automated page. Verify facts in the original articles before acting on them.</p>"""
@@ -2065,6 +2175,13 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
     content_dir = content_dir or CONTENT_DIR
     fresh: list[dict] = []
     src_status: list[dict] = []
+    previous_status_file = out / "status.json"
+    try:
+        previous_status = json.loads(previous_status_file.read_text(encoding="utf-8")) if previous_status_file.exists() else {}
+        source_health = {entry.get("id"): entry.get("last_success_at")
+                         for entry in previous_status.get("sources", []) if entry.get("id") and entry.get("last_success_at")}
+    except (OSError, json.JSONDecodeError):
+        source_health = {}
     for src in cfg["sources"]:
         try:
             data = (fixtures / f"{src['id']}.xml").read_bytes() if fixtures else fetch(src["url"])
@@ -2075,9 +2192,14 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
                 items = [i for i in items if is_security_item(i)]
             items = items[: cfg.get("max_items_per_feed", 30)]
             fresh += items
-            src_status.append({"id": src["id"], "name": src["name"], "ok": True, "count": len(items)})
+            last_success = now.isoformat(timespec="seconds")
+            source_health[src["id"]] = last_success
+            src_status.append({"id": src["id"], "name": src["name"], "ok": True, "count": len(items),
+                               "last_attempt_at": now.isoformat(timespec="seconds"), "last_success_at": last_success})
         except Exception as e:  # noqa: BLE001 - one bad feed must not stop the run
-            src_status.append({"id": src["id"], "name": src["name"], "ok": False, "count": 0, "error": str(e)[:200]})
+            src_status.append({"id": src["id"], "name": src["name"], "ok": False, "count": 0,
+                               "error": str(e)[:200], "last_attempt_at": now.isoformat(timespec="seconds"),
+                               "last_success_at": source_health.get(src["id"])})
 
     kev, kev_err = load_kev(fixtures)
     kev_checked = kev_err is None
@@ -2104,6 +2226,7 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
     ok_count = sum(1 for s in src_status if s["ok"])
     status = {
         "generated": now.isoformat(timespec="seconds"),
+        "last_check_at": now.isoformat(timespec="seconds"),
         "sources_ok": ok_count,
         "sources_total": len(src_status),
         "sources": src_status,
@@ -2115,14 +2238,14 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
         "warnings": warnings,
     }
 
-    # Only touch tracked files when published content changes, so the repo
-    # does not get a commit on every scheduled run.
+    # Static story pages change only when content changes. status.json is
+    # refreshed every run below so the feed-check timestamp never goes stale.
     digest_src = json.dumps({
         "stories": [[s["id"], s["title"], s["summary"], s["published"], s["category"], s["priority"],
                      s["score"], s["image"], [x["url"] for x in s["sources"]]] for s in stories],
         "articles": [[a["section"], a["slug"], a["title"], a["date"], a["summary"], a["_md"]] for a in articles],
         "site": site_cfg,
-        "render": "5.28",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
+        "render": "5.29",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
     }, ensure_ascii=False, sort_keys=True)
     if fixtures is None:
         check_source_links(stories, data_file.parent / "linkcheck.json", now)
@@ -2131,13 +2254,28 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
     prev_digest = digest_file.read_text(encoding="utf-8").strip() if digest_file.exists() else ""
     site_missing = not (out / "index.html").exists()
     status["changed"] = digest != prev_digest or site_missing
-    if status["changed"]:
+    publication_file = data_file.parent / "content-publication.json"
+    try:
+        publication_state = json.loads(publication_file.read_text(encoding="utf-8")) if publication_file.exists() else {}
+    except (OSError, json.JSONDecodeError):
+        publication_state = {}
+    content_published_at = publication_state.get("content_published_at")
+    if status["changed"] or not content_published_at:
+        content_published_at = now.isoformat(timespec="seconds")
+        publication_state = {"digest": digest, "content_published_at": content_published_at}
         data_file.parent.mkdir(parents=True, exist_ok=True)
+        publication_file.write_text(json.dumps(publication_state, indent=2) + "\n", encoding="utf-8")
+    status["content_published_at"] = content_published_at
+    data_file.parent.mkdir(parents=True, exist_ok=True)
+    if status["changed"]:
         data_file.write_text(items_text, encoding="utf-8")
         digest_file.write_text(digest + "\n", encoding="utf-8")
         write_site(out, stories, cfg, now, status, articles, site_cfg)
     elif not data_file.exists() or data_file.read_text(encoding="utf-8") != items_text:
         data_file.write_text(items_text, encoding="utf-8")
+    # Keep feed status fresh even when the story/content digest did not change.
+    out.mkdir(parents=True, exist_ok=True)
+    (out / "status.json").write_text(json.dumps(status, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     return status
 
 
