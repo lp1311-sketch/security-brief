@@ -2312,27 +2312,6 @@
    "instructions_checked": true
   },
   {
-   "id": "986cc714fb42",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "title": "ThreatsDay: Adobe RCE, DNS Wallet Theft, NVIDIA Container Escape, Self-Healing Backdoor + 23 More",
-   "link": "https://thehackernews.com/2026/10/threatsday-adobe-rce-dns-wallet-theft.html",
-   "published": "2026-10-15T18:49:33+00:00",
-   "summary": "Someone built a tool to steal data, then decided it should scare the victim for fun. Yes, that’s an actual feature. And somehow, it fits right in with this week's security stories. The rest gets interesting in different ways. A small permission can lead to a big theft. A trusted login can hide the wrong person. Old…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8jHVMYXIjddaTrqHbBuPm3mQ6G_g8qlALwitmiIRM9OplZpPxLPDFet7ySOV0OVxPj6cW1oz0K6rydDvGYQGalR1jSt10bz8kti4dWnM0d3NnUBjuymD77_cReujy6AXmFgJgQQvl2qeICur3VHf5vYyOrxz8OFM-bEunzmK9PGDzCzzTVFVEdQyswYho/s1600/threatsday-oct.jpg",
-   "cves": [],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00",
-   "instructions": [
-    "Self-healing WordPress backdoor A Stealthy WordPress Must-Use Plugin Wordfence has detailed an unusual malware that's installed as a must-use WordPress plugin and makes use of \"several self-healing mechanisms in place in order to survive removal.",
-    "As mitigation, it's advised to use the \"gnttab=max-ver:1\" hypervisor command line option or the \"max_grant_version=1\" guest configuration option for guests.",
-    "Someone built a tool to steal data, then decided it should scare the victim for fun.",
-    "\"Organizations should begin now by inventorying certificate dependencies, assessing vendor roadmaps, identifying long-lived infrastructure, and creating non-production test environments,\" Microsoft said ."
-   ],
-   "instructions_checked": true,
-   "source_type": "news"
-  },
-  {
    "id": "a45e553ca30b",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2714,6 +2693,27 @@
     "The advisory was created based on numerous FBI and German law enforcement investigations involving SafePay, with the most recent incident occurring in August.",
     "The advisory lists multiple vulnerabilities the group has used in attacks, including CVE-2020-3259, CVE-2023-20269, CVE-2023-27532 , CVE-2024-40711 , CVE-2024-40766 and others.",
     "The advisory said SafePay typically holds encrypted data for ransom and demands “a subset of company revenue in cryptocurrency” in exchange for the decryption key."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "afb644b2382c",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Indian tech company eMudhra announces withdrawal from certificate business after security incident",
+   "link": "https://therecord.media/indian-tech-company-announces-withdrawal-certificate-business-incident",
+   "published": "2026-10-22T18:46:00+00:00",
+   "summary": "The issue was publicized by cybersecurity researcher Scott Helme, who published a blog saying that instead of a random 384-bit number, one of the company's private keys was just the number four.",
+   "image": "https://cms.therecord.media/uploads/vulnerability_digital_64411ae86a.jpg",
+   "cves": [],
+   "first_seen": "2026-10-22T19:20:11.648133+00:00",
+   "image_checked": true,
+   "instructions": [
+    "The company, eMudhra, said it was voluntarily withdrawing from the global SSL/TLS certificate business after the private keys of eight of its intermediate certificates were found to be weak, prompting browsers like Firefox , Apple and Chrome to block the certificates.",
+    "They added that the ability to issue fraudulent certificates would also enable malicious software to appear to be digitally signed by a trusted publisher.",
+    "Each may require its own update, rebuild or release, and most organizations don’t have an inventory of where they live, he said."
    ],
    "instructions_checked": true
   },
@@ -5081,6 +5081,28 @@
    "image_checked": true,
    "instructions": [
     "Hackers hijack AOMEI update servers to secretly spread malware",
+    "Mozilla, Google, Apple block compromised eMudhra CA certificates"
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "0151e8522bf7",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "LiteLLM release pipeline hacked to distribute info-stealer malware",
+   "link": "https://www.bleepingcomputer.com/news/security/litellm-release-pipeline-hacked-to-distribute-info-stealer-malware/",
+   "published": "2026-10-22T19:12:51+00:00",
+   "summary": "Hackers compromised the LiteLLM project's PyPI package and published malicious Docker images with a payload that steals credentials, secrets, and environment variables.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/22/LiteLLM.jpg",
+   "cves": [],
+   "first_seen": "2026-10-22T19:20:11.648133+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Infected systems should be isolated and rebuilt from clean backups, and all exposed secrets should be rotated immediately.",
+    "The malicious packages have been removed, but potentially impacted users should stop affected deployments and inspect environments without launching the Python interpreter.",
+    "Currently, the recommended recovery version is LiteLLM 1.106.2, which is the latest clean release before the attack.",
     "Mozilla, Google, Apple block compromised eMudhra CA certificates"
    ],
    "instructions_checked": true

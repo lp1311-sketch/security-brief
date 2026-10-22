@@ -60,25 +60,6 @@
    "url": "story/9b69347cfd29.html"
   },
   {
-   "id": "5f2ddb413304",
-   "title": "'PHP2Shell' Bugs Signal Red Alert for Security Industry",
-   "summary": "Security teams are scrambling to remediate two critical PHP vulnerabilities following leaked details and reports of exploitation attempts.",
-   "priority": "High",
-   "category": "Patch Radar",
-   "date": "21 Oct 2026, 19:19 UTC",
-   "priority_score": 8,
-   "priority_basis": [
-    "Editorial attention score 8 reached the High threshold (not CVSS)"
-   ],
-   "tags": [
-    "exploited",
-    "microsoft"
-   ],
-   "kev": [],
-   "sources": "Dark Reading",
-   "url": "story/5f2ddb413304.html"
-  },
-  {
    "id": "0d304799e621",
    "title": "Qilin and INC Ransomware Groups Exploit Palo Alto Networks Flaw to Bypass MFA",
    "summary": "Palo Alto Networks has disclosed that it's continuing to observe exploitation of a now-patched security flaw impacting PAN-OS and Prisma Access by ransomware actors. The…",
@@ -118,6 +99,25 @@
    "kev": [],
    "sources": "BleepingComputer",
    "url": "story/5d4f96d6acc6.html"
+  },
+  {
+   "id": "5f2ddb413304",
+   "title": "'PHP2Shell' Bugs Signal Red Alert for Security Industry",
+   "summary": "Security teams are scrambling to remediate two critical PHP vulnerabilities following leaked details and reports of exploitation attempts.",
+   "priority": "High",
+   "category": "Patch Radar",
+   "date": "21 Oct 2026, 19:19 UTC",
+   "priority_score": 7,
+   "priority_basis": [
+    "Editorial attention score 7 reached the High threshold (not CVSS)"
+   ],
+   "tags": [
+    "exploited",
+    "microsoft"
+   ],
+   "kev": [],
+   "sources": "Dark Reading",
+   "url": "story/5f2ddb413304.html"
   },
   {
    "id": "190252fca79a",
@@ -528,22 +528,6 @@
    "url": "story/832124389031.html"
   },
   {
-   "id": "a9726704f0fa",
-   "title": "Critical GitLab Flaw (CVSS 10.0) Could Allow Unauthenticated RCE Across 12 Years of Releases",
-   "summary": "GitLab released fixes on October 21 for a flaw that lets an attacker run code on a self-managed server without logging in, and it affects every version of the software…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "21 Oct 2026, 18:57 UTC",
-   "priority_score": 4,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/a9726704f0fa.html"
-  },
-  {
    "id": "bf2645506057",
    "title": "PHP says AI review of critical bugs first sparked alarm in August, but signs surfaced in 2024",
    "summary": "In a lengthy statement about two critical vulnerabilities, the PHP Foundation explained how one dated to 2024, how a recent third-party review by AI companies heightened…",
@@ -700,6 +684,22 @@
    "url": "story/834a248937df.html"
   },
   {
+   "id": "0151e8522bf7",
+   "title": "LiteLLM release pipeline hacked to distribute info-stealer malware",
+   "summary": "Hackers compromised the LiteLLM project's PyPI package and published malicious Docker images with a payload that steals credentials, secrets, and environment variables.",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "22 Oct 2026, 19:12 UTC",
+   "priority_score": 3,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "BleepingComputer",
+   "url": "story/0151e8522bf7.html"
+  },
+  {
    "id": "c78f9791369d",
    "title": "Amazon says PHP2Shell exploitation began 4 days before patches",
    "summary": "Security researchers at Amazon Threat Intelligence say attackers began targeting the PHP2Shell flaws four days before security patches were released on Wednesday.",
@@ -818,6 +818,22 @@
    "kev": [],
    "sources": "Dark Reading",
    "url": "story/04b5c5ae9150.html"
+  },
+  {
+   "id": "a9726704f0fa",
+   "title": "Critical GitLab Flaw (CVSS 10.0) Could Allow Unauthenticated RCE Across 12 Years of Releases",
+   "summary": "GitLab released fixes on October 21 for a flaw that lets an attacker run code on a self-managed server without logging in, and it affects every version of the software…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "21 Oct 2026, 18:57 UTC",
+   "priority_score": 3,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "The Hacker News",
+   "url": "story/a9726704f0fa.html"
   },
   {
    "id": "71f0485320c6",
@@ -968,22 +984,6 @@
    "kev": [],
    "sources": "BleepingComputer",
    "url": "story/aa2f36ffa3be.html"
-  },
-  {
-   "id": "6203e915296a",
-   "title": "California warns all public school students of data stolen in contractor breach",
-   "summary": "The CDE released multiple statements over the last week warning the state’s students that assessment contractor Educational Testing Service (ETS) suffered a months-long…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "20 Oct 2026, 19:20 UTC",
-   "priority_score": 3,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "The Record",
-   "url": "story/6203e915296a.html"
   },
   {
    "id": "0dfa738d1635",
@@ -1305,6 +1305,22 @@
    "kev": [],
    "sources": "BleepingComputer",
    "url": "story/a094aa58c0da.html"
+  },
+  {
+   "id": "afb644b2382c",
+   "title": "Indian tech company eMudhra announces withdrawal from certificate business after security incident",
+   "summary": "The issue was publicized by cybersecurity researcher Scott Helme, who published a blog saying that instead of a random 384-bit number, one of the company's private keys…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "22 Oct 2026, 18:46 UTC",
+   "priority_score": 2,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "The Record",
+   "url": "story/afb644b2382c.html"
   },
   {
    "id": "f74ce17a74d9",
@@ -1867,6 +1883,22 @@
    "kev": [],
    "sources": "BleepingComputer, Dark Reading",
    "url": "story/7a020fdc3830.html"
+  },
+  {
+   "id": "6203e915296a",
+   "title": "California warns all public school students of data stolen in contractor breach",
+   "summary": "The CDE released multiple statements over the last week warning the state’s students that assessment contractor Educational Testing Service (ETS) suffered a months-long…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "20 Oct 2026, 19:20 UTC",
+   "priority_score": 2,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "The Record",
+   "url": "story/6203e915296a.html"
   },
   {
    "id": "29ac1c4b3b83",
@@ -2564,24 +2596,6 @@
    "kev": [],
    "sources": "Ars Technica Security",
    "url": "story/cd17d628776a.html"
-  },
-  {
-   "id": "2364e99b6bb5",
-   "title": "Ex-OpenAI Engineer Detained After Planting Secret Recorder at HQ",
-   "summary": "The perp, who has Saudi ties, was arrested for allegedly bugging an OpenAI conference room, highlighting a preventable insider threat vector.",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "20 Oct 2026, 19:16 UTC",
-   "priority_score": 1,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "ai"
-   ],
-   "kev": [],
-   "sources": "Dark Reading",
-   "url": "story/2364e99b6bb5.html"
   },
   {
    "id": "f7a865abe770",
@@ -3380,6 +3394,24 @@
    "kev": [],
    "sources": "BleepingComputer",
    "url": "story/6c8051f534fe.html"
+  },
+  {
+   "id": "2364e99b6bb5",
+   "title": "Ex-OpenAI Engineer Detained After Planting Secret Recorder at HQ",
+   "summary": "The perp, who has Saudi ties, was arrested for allegedly bugging an OpenAI conference room, highlighting a preventable insider threat vector.",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "20 Oct 2026, 19:16 UTC",
+   "priority_score": 0,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "ai"
+   ],
+   "kev": [],
+   "sources": "Dark Reading",
+   "url": "story/2364e99b6bb5.html"
   },
   {
    "id": "2bcaf37a740b",
@@ -4238,22 +4270,6 @@
    "kev": [],
    "sources": "Ars Technica Security",
    "url": "story/048b26c65907.html"
-  },
-  {
-   "id": "986cc714fb42",
-   "title": "ThreatsDay: Adobe RCE, DNS Wallet Theft, NVIDIA Container Escape, Self-Healing Backdoor + 23 More",
-   "summary": "Someone built a tool to steal data, then decided it should scare the victim for fun. Yes, that’s an actual feature. And somehow, it fits right in with this week's…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "15 Oct 2026, 18:49 UTC",
-   "priority_score": 0,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/986cc714fb42.html"
   }
  ]
 }
