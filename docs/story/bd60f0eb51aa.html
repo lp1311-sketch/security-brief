@@ -11,6 +11,7 @@
 <meta property="og:description" content="A Belarus-aligned hacktivist group spent nearly two years within the network of a Russian healthcare organization. According to a report published by…">
 <meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwNHgVe_6hmXG-V6Nx8pk56jDEW1WRCKtvvG9RHugoj65LqTTVGLvgl1Eh1E7ClmyMDn9k4RrF7Yp1kteZvZ_r7v9IxQPG_Eif3nk_13gz_MSddPcBtJdLKFwYAPa4BKMN5FdZLvvTIjahr4aTdiiLeQMuVzrj8Ff9wvgmUCW_6_OyfXPSGIEEIxZgdtQ-/s1600/vmware-healthcare.jpg">
 <meta name="twitter:card" content="summary_large_image">
+<script>document.documentElement.classList.add("js");</script>
 <script>(function(){
 var root=document.documentElement,dark=false,saved=null;
 try{saved=localStorage.getItem('sb-theme')}catch(e){}
@@ -41,7 +42,7 @@ apply();});
 <article class="prose"><p class="meta"><a href="../index.html">← Back to home</a></p>
 <p class="meta"><span class="badge Standard">Standard</span>Attacks &amp; Breaches</p>
 <h1>Hackers Hid Vasilek Backdoor in VMware Tools During 2-Year Russian Healthcare Intrusion</h1>
-<p class="meta">Published: 21 Oct 2026, 06:05 UTC · Priority score 2</p>
+<p class="meta">Published: 21 Oct 2026, 06:05 UTC · Priority score 1</p>
 <figure><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwNHgVe_6hmXG-V6Nx8pk56jDEW1WRCKtvvG9RHugoj65LqTTVGLvgl1Eh1E7ClmyMDn9k4RrF7Yp1kteZvZ_r7v9IxQPG_Eif3nk_13gz_MSddPcBtJdLKFwYAPa4BKMN5FdZLvvTIjahr4aTdiiLeQMuVzrj8Ff9wvgmUCW_6_OyfXPSGIEEIxZgdtQ-/s1600/vmware-healthcare.jpg" data-fallback="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22640%22%20height%3D%22360%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20fill%3D%22%230b0f14%22/%3E%3Cg%20stroke%3D%22%2318202b%22%20stroke-width%3D%221%22%3E%3Cline%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%22360%22/%3E%3Cline%20x1%3D%2264%22%20y1%3D%220%22%20x2%3D%2264%22%20y2%3D%22360%22/%3E%3Cline%20x1%3D%22128%22%20y1%3D%220%22%20x2%3D%22128%22%20y2%3D%22360%22/%3E%3Cline%20x1%3D%22192%22%20y1%3D%220%22%20x2%3D%22192%22%20y2%3D%22360%22/%3E%3Cline%20x1%3D%22256%22%20y1%3D%220%22%20x2%3D%22256%22%20y2%3D%22360%22/%3E%3Cline%20x1%3D%22320%22%20y1%3D%220%22%20x2%3D%22320%22%20y2%3D%22360%22/%3E%3Cline%20x1%3D%22384%22%20y1%3D%220%22%20x2%3D%22384%22%20y2%3D%22360%22/%3E%3Cline%20x1%3D%22448%22%20y1%3D%220%22%20x2%3D%22448%22%20y2%3D%22360%22/%3E%3Cline%20x1%3D%22512%22%20y1%3D%220%22%20x2%3D%22512%22%20y2%3D%22360%22/%3E%3Cline%20x1%3D%22576%22%20y1%3D%220%22%20x2%3D%22576%22%20y2%3D%22360%22/%3E%3Cline%20x1%3D%22640%22%20y1%3D%220%22%20x2%3D%22640%22%20y2%3D%22360%22/%3E%3Cline%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%22640%22%20y2%3D%220%22/%3E%3Cline%20x1%3D%220%22%20y1%3D%2260%22%20x2%3D%22640%22%20y2%3D%2260%22/%3E%3Cline%20x1%3D%220%22%20y1%3D%22120%22%20x2%3D%22640%22%20y2%3D%22120%22/%3E%3Cline%20x1%3D%220%22%20y1%3D%22180%22%20x2%3D%22640%22%20y2%3D%22180%22/%3E%3Cline%20x1%3D%220%22%20y1%3D%22240%22%20x2%3D%22640%22%20y2%3D%22240%22/%3E%3Cline%20x1%3D%220%22%20y1%3D%22300%22%20x2%3D%22640%22%20y2%3D%22300%22/%3E%3Cline%20x1%3D%220%22%20y1%3D%22360%22%20x2%3D%22640%22%20y2%3D%22360%22/%3E%3C/g%3E%3Crect%20width%3D%228%22%20height%3D%22360%22%20fill%3D%22%235eead4%22/%3E%3Ctext%20x%3D%2248%22%20y%3D%22112%22%20fill%3D%22%235eead4%22%20font-family%3D%22Arial%2CHelvetica%2Csans-serif%22%20font-size%3D%2216%22%20font-weight%3D%22700%22%20letter-spacing%3D%223%22%3EATTACKS%20%26amp%3B%20BREACHES%3C/text%3E%3Ctext%20x%3D%2248%22%20y%3D%22196%22%20fill%3D%22%23f1f5f9%22%20font-family%3D%22Arial%2CHelvetica%2Csans-serif%22%20font-size%3D%2246%22%20font-weight%3D%22700%22%3EVMware%3C/text%3E%3Ctext%20x%3D%2248%22%20y%3D%22318%22%20fill%3D%22%2364748b%22%20font-family%3D%22Arial%2CHelvetica%2Csans-serif%22%20font-size%3D%2213%22%20letter-spacing%3D%222%22%3ESECURITY%20BRIEF%3C/text%3E%3C/svg%3E" onerror="this.onerror=null;this.src=this.dataset.fallback" alt="" referrerpolicy="no-referrer" width="640" height="360"><figcaption>Image: The Hacker News. Credit remains with the original publisher.</figcaption></figure>
 <h2>Summary</h2>
 <p>A Belarus-aligned hacktivist group spent nearly two years within the network of a Russian healthcare organization. According to a report published by Russian cybersecurity firm Solar, the activity has been attributed to a threat cluster dubbed Partisan Zmiy, which is also known as the Cyber Partisans. Known to be…</p>
@@ -51,7 +52,7 @@ apply();});
 <h2>Instructions from the source</h2><p class="note">Sentences quoted word for word from the original article. Check each one against the article before you act.</p><ul><li>&ldquo;It can also prevent the machine from going into sleep mode, and update or remove itself.&rdquo; <span class="meta">— <a href="https://thehackernews.com/2026/10/hackers-hid-vasilek-backdoor-in-vmware.html" rel="nofollow noopener noreferrer" target="_blank">The Hacker News</a></span></li></ul>
 <h2>Why this priority</h2>
 <div class="box"><p><strong>Standard</strong>. Criteria: Critical = CVE listed in CISA KEV, or exploitation reported by an official source. High = score 6 or more. Otherwise Standard.</p>
-<ul><li>published in the last 24 h (+2)</li></ul>
+<ul><li>published in the last 48 h (+1)</li></ul>
 <p>No CVE identifier found in the feed text.</p></div>
 <h2>Sources</h2>
 <ul><li><a href="https://thehackernews.com/2026/10/hackers-hid-vasilek-backdoor-in-vmware.html" rel="nofollow noopener noreferrer" target="_blank">Hackers Hid Vasilek Backdoor in VMware Tools During 2-Year Russian Healthcare Intrusion</a> — The Hacker News, 21 Oct 2026, 06:05 UTC</li></ul>
@@ -66,6 +67,16 @@ function show(){el.style.opacity=0;setTimeout(function(){el.textContent=msgs[i];
 var t=setInterval(function(){if(paused)return;i=(i+1)%msgs.length;show();},6000);
 btn.addEventListener('click',function(){paused=!paused;btn.setAttribute('aria-pressed',String(paused));btn.textContent=paused?'Play':'Pause';btn.setAttribute('aria-label',paused?'Play banner':'Pause banner');});
 if(reduce){paused=true;btn.setAttribute('aria-pressed','true');btn.textContent='Play';}
+})();</script>
+<script>(function(){
+var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+var bar=document.createElement('div');bar.className='progress';bar.setAttribute('aria-hidden','true');document.body.appendChild(bar);
+function prog(){var h=document.documentElement,max=h.scrollHeight-h.clientHeight;bar.style.transform='scaleX('+(max>0?Math.min(1,h.scrollTop/max):0)+')';}
+window.addEventListener('scroll',prog,{passive:true});prog();
+if(!reduce&&'IntersectionObserver' in window){
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.1});
+document.querySelectorAll('.card,.hero,.stat').forEach(function(el){el.classList.add('reveal');io.observe(el);});}
+if(!reduce){document.querySelectorAll('.card').forEach(function(c){c.addEventListener('pointermove',function(ev){var r=c.getBoundingClientRect();c.style.setProperty('--mx',(ev.clientX-r.left)+'px');c.style.setProperty('--my',(ev.clientY-r.top)+'px');});});}
 })();</script>
 <footer class="site-footer"><div class="wrap"><p>&copy; 2026 Leon Pavesic. Design, analysis and texts on this site are protected by copyright. Headlines, short excerpts and images belong to their original publishers and are linked to the source. Not affiliated with any source.</p><p><a href="../impressum.html">Impressum</a> &middot; <a href="../datenschutz.html">Privacy</a> &middot; <a href="../corrections.html">Corrections</a> &middot; <a href="../feed.xml">RSS</a> &middot; <a href="mailto:leon.pavesic@gmx.de">Contact</a> &middot; <a href="https://www.linkedin.com/in/leon-pavesic/" rel="me noopener noreferrer" target="_blank">LinkedIn</a> &middot; <a href="https://www.xing.com/profile/Leon_Pavesic" rel="me noopener noreferrer" target="_blank">XING</a></p></div></footer>
 </body>
