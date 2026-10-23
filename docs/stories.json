@@ -407,6 +407,23 @@
    "url": "story/4fd8d5a31fd8.html"
   },
   {
+   "id": "3bc9a46d2904",
+   "title": "URGENT - PHP Warns of Another Unpatched RCE Two Days After Emergency PHP2Shell Patches",
+   "summary": "PHP has warned of another way an attacker could run code on a web server, two days after it shipped emergency fixes for the critical PHP2Shell flaws. The new issue…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "23 Oct 2026, 11:25 UTC",
+   "published": "2026-10-23T11:25:43+00:00",
+   "priority_score": 4,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "The Hacker News",
+   "url": "story/3bc9a46d2904.html"
+  },
+  {
    "id": "3a89e69463ce",
    "title": "Critical Flaw in Python’s Popular Pillow Image Library Allows Code Execution via a Crafted Image",
    "summary": "Pillow, the most widely used image library for Python, can be made to run operating system commands on a server by specifying the name of a file it is told to open. The…",
@@ -604,7 +621,7 @@
   {
    "id": "7bcbd743c3f7",
    "title": "TiDB Breach Exposes Flawed Cloud Security Assumptions",
-   "summary": "Cloud providers may be storing sensitive customer data, without either party knowing it. But when a provider is breached, the data comes home to roost.",
+   "summary": "Cloud providers may be storing sensitive customer data, without either party knowing it. But when a provider is breached, the unseen information comes to light.",
    "priority": "Standard",
    "category": "Attacks & Breaches",
    "date": "21 Oct 2026, 21:15 UTC",
@@ -1373,6 +1390,40 @@
    "url": "story/48b9aea0ee83.html"
   },
   {
+   "id": "80697809b26e",
+   "title": "Russian-Linked Hackers Used New Mesh Network Backdoor in Destructive Ukraine Attack",
+   "summary": "The Russian state-sponsored hacking group Sandworm teamed up with another threat actor to carry out a destructive wiping attack targeting a Ukrainian logistics company…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "23 Oct 2026, 11:11 UTC",
+   "published": "2026-10-23T11:11:23+00:00",
+   "priority_score": 2,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "The Hacker News",
+   "url": "story/80697809b26e.html"
+  },
+  {
+   "id": "2ce43354cd03",
+   "title": "Compromised TLS Certificates",
+   "summary": "The Indian CA eMudhra Limited has eight TLS certificates with laughably weak private keys: The compromised eMudhra keys were defective at a level that’s challenging the…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "23 Oct 2026, 11:04 UTC",
+   "published": "2026-10-23T11:04:22+00:00",
+   "priority_score": 2,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "Schneier on Security",
+   "url": "story/2ce43354cd03.html"
+  },
+  {
    "id": "a2a9e372db7b",
    "title": "Researchers Demonstrate Node2Shell RCE Exploit on Node.js Build Using Crafted Brotli Data",
    "summary": "Malicious Brotli data can make an application on an official build of Node.js run attacker-supplied code, security researchers at Imperva have demonstrated. Their…",
@@ -1662,40 +1713,6 @@
    "url": "story/0f812922fb34.html"
   },
   {
-   "id": "2f1ed42ebe24",
-   "title": "333 Tor exit nodes hijacked to intercept SSH traffic and retrieve plaintext email",
-   "summary": "Unknown hackers hijacked more than 300 Tor exit nodes and reconfigured them to favor unencrypted email traffic and redirect SSH connections through servers they…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "22 Oct 2026, 11:30 UTC",
-   "published": "2026-10-22T11:30:33+00:00",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "Ars Technica Security",
-   "url": "story/2f1ed42ebe24.html"
-  },
-  {
-   "id": "76b18c2dc5a9",
-   "title": "Railway Says Intruder May Have Accessed Customer Secrets, Urges Credential Rotation",
-   "summary": "Platform-as-a-Service (PaaS) provider Railway on Wednesday disclosed \"anomalous activity\" related to systems that store customer environment variables. Upon further…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "22 Oct 2026, 11:15 UTC",
-   "published": "2026-10-22T11:15:42+00:00",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/76b18c2dc5a9.html"
-  },
-  {
    "id": "a9227db3dd33",
    "title": "LiteLLM Suspects GitHub Token Leak in AI Gateway Logs Behind Malicious Package Release",
    "summary": "LiteLLM on Wednesday disclosed that threat actors compromised \"multiple independent security controls\" to push a malicious version of the Python package containing a…",
@@ -1716,7 +1733,7 @@
   },
   {
    "id": "a734856ab1ed",
-   "title": "UAE Transitions 50% of Gov't Services to Agentic AI",
+   "title": "UAE Transitions 50% of Government Services to Agentic AI",
    "summary": "The United Arab Emirates says it's creating a foundation of security and safety as it transforms its public service footprint.",
    "priority": "Standard",
    "category": "AI Risk Lab",
@@ -2396,6 +2413,40 @@
    "url": "story/862e2db1b4e0.html"
   },
   {
+   "id": "2f1ed42ebe24",
+   "title": "333 Tor exit nodes hijacked to intercept SSH traffic and retrieve plaintext email",
+   "summary": "Unknown hackers hijacked more than 300 Tor exit nodes and reconfigured them to favor unencrypted email traffic and redirect SSH connections through servers they…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "22 Oct 2026, 11:30 UTC",
+   "published": "2026-10-22T11:30:33+00:00",
+   "priority_score": 1,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "Ars Technica Security",
+   "url": "story/2f1ed42ebe24.html"
+  },
+  {
+   "id": "76b18c2dc5a9",
+   "title": "Railway Says Intruder May Have Accessed Customer Secrets, Urges Credential Rotation",
+   "summary": "Platform-as-a-Service (PaaS) provider Railway on Wednesday disclosed \"anomalous activity\" related to systems that store customer environment variables. Upon further…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "22 Oct 2026, 11:15 UTC",
+   "published": "2026-10-22T11:15:42+00:00",
+   "priority_score": 1,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "The Hacker News",
+   "url": "story/76b18c2dc5a9.html"
+  },
+  {
    "id": "eb08dcb4a958",
    "title": "Splunk, SolarWinds Release Fresh Security Updates",
    "summary": "Patched vulnerabilities could allow attackers to execute code, elevate privileges, and leak sensitive information. The post Splunk, SolarWinds Release Fresh Security…",
@@ -2687,40 +2738,6 @@
    "kev": [],
    "sources": "The Hacker News",
    "url": "story/c7a020f274e0.html"
-  },
-  {
-   "id": "9b477066ea3b",
-   "title": "Browsers Block eMudhra Intermediate CAs Over Recoverable Private Keys",
-   "summary": "The private keys associated with eight certificates were compromised, and root programs and trust stores are blocking them. The post Browsers Block eMudhra Intermediate…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "21 Oct 2026, 11:22 UTC",
-   "published": "2026-10-21T11:22:05+00:00",
-   "priority_score": 1,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "SecurityWeek",
-   "url": "story/9b477066ea3b.html"
-  },
-  {
-   "id": "8e7d8bc5cf31",
-   "title": "Workshop on Economics and Information Security (WEIS) Archive",
-   "summary": "There’s a new archive of all the papers from twenty-five years of the Workshop on Economics and Information Security (WEIS). Really nice resource. It’s fun to reread my…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "21 Oct 2026, 11:02 UTC",
-   "published": "2026-10-21T11:02:22+00:00",
-   "priority_score": 1,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "Schneier on Security",
-   "url": "story/8e7d8bc5cf31.html"
   },
   {
    "id": "a9327fc12a2b",
@@ -3566,40 +3583,38 @@
    "url": "story/d269ee990910.html"
   },
   {
-   "id": "61ac6bfaa7c9",
-   "title": "AI Decision Models and Their Impact on AI SOC Platforms",
-   "summary": "In the space of a month, a new category of AI model went from nonexistent to everywhere. TypeSafe AI released Jev on September 15 and called it a System One model, a nod…",
+   "id": "9b477066ea3b",
+   "title": "Browsers Block eMudhra Intermediate CAs Over Recoverable Private Keys",
+   "summary": "The private keys associated with eight certificates were compromised, and root programs and trust stores are blocking them. The post Browsers Block eMudhra Intermediate…",
    "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "16 Oct 2026, 11:30 UTC",
-   "published": "2026-10-16T11:30:00+00:00",
-   "priority_score": 1,
+   "category": "Industry & Research",
+   "date": "21 Oct 2026, 11:22 UTC",
+   "published": "2026-10-21T11:22:05+00:00",
+   "priority_score": 0,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
-   "tags": [
-    "ai"
-   ],
+   "tags": [],
    "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/61ac6bfaa7c9.html"
+   "sources": "SecurityWeek",
+   "url": "story/9b477066ea3b.html"
   },
   {
-   "id": "c425a649aa9d",
-   "title": "Backdooring Open-Weight AI Models",
-   "summary": "This is a problem: Any open model whose weights have been edited can carry a backdoor, whether it’s a task-specific fine-tune, a merged adapter or an abliterated build…",
+   "id": "8e7d8bc5cf31",
+   "title": "Workshop on Economics and Information Security (WEIS) Archive",
+   "summary": "There’s a new archive of all the papers from twenty-five years of the Workshop on Economics and Information Security (WEIS). Really nice resource. It’s fun to reread my…",
    "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "16 Oct 2026, 11:04 UTC",
-   "published": "2026-10-16T11:04:53+00:00",
-   "priority_score": 1,
+   "category": "Industry & Research",
+   "date": "21 Oct 2026, 11:02 UTC",
+   "published": "2026-10-21T11:02:22+00:00",
+   "priority_score": 0,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
    "tags": [],
    "kev": [],
    "sources": "Schneier on Security",
-   "url": "story/c425a649aa9d.html"
+   "url": "story/8e7d8bc5cf31.html"
   },
   {
    "id": "00d9c6c07315",
@@ -4328,7 +4343,7 @@
   {
    "id": "6e8696034a92",
    "title": "The Evolving Cybersecurity Lexicon: Vulnerability Discovery to Resilience",
-   "summary": "An industry-wide laser focus on vulnerabilities has left cybersecurity teams without enough room to strategize for resilience.",
+   "summary": "An industry-wide, laser focus on vulnerabilities has left cybersecurity teams without enough room to strategize for resilience.",
    "priority": "Standard",
    "category": "Patch Radar",
    "date": "19 Oct 2026, 14:00 UTC",

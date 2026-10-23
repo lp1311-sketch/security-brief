@@ -1408,27 +1408,6 @@
    "instructions_checked": true
   },
   {
-   "id": "61ac6bfaa7c9",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "title": "AI Decision Models and Their Impact on AI SOC Platforms",
-   "link": "https://thehackernews.com/2026/10/ai-decision-models-and-their-impact-on.html",
-   "published": "2026-10-16T11:30:00+00:00",
-   "summary": "In the space of a month, a new category of AI model went from nonexistent to everywhere. TypeSafe AI released Jev on September 15 and called it a System One model, a nod to Kahneman's fast, intuitive thinking. OpenAI announced its own Decisions API at DevDay and opened a public beta on October 6. Cribl published…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVccQyMWKH3TTGpMGwsFUkVETAsZFTWBlOZyCPr3ZlMJfVPTN09xHFKk94-6OWpwhpE68JRImlVGgma5xaM66ohDwD5XvlOu1FjQPllSMNRvuDUMPB0PNUJEK3u2MaELBNvDP0GNThHj3IGreaWQe6UpzfZ55Ei6HeOpmbcWzo6Mach5g3-9OJPBuA1wY/s1600/modal.jpg",
-   "cves": [],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00",
-   "instructions": [
-    "A perfectly calibrated model should close it with high confidence, because most alerts that look like that really are fine.",
-    "TypeSafe even suggests stricter thresholds for irreversible actions, which maps neatly onto “disable an account” versus “add a comment to the ticket.”",
-    "And 51% of the infected machines had already been reported as mitigated by the EDR.",
-    "That's how we found the infected machines marked as mitigated."
-   ],
-   "instructions_checked": true,
-   "source_type": "news"
-  },
-  {
    "id": "23872cb1986e",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2440,6 +2419,22 @@
    "instructions_checked": true
   },
   {
+   "id": "80697809b26e",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Russian-Linked Hackers Used New Mesh Network Backdoor in Destructive Ukraine Attack",
+   "link": "https://thehackernews.com/2026/10/russian-linked-hackers-used-new-mesh.html",
+   "published": "2026-10-23T11:11:23+00:00",
+   "summary": "The Russian state-sponsored hacking group Sandworm teamed up with another threat actor to carry out a destructive wiping attack targeting a Ukrainian logistics company last year. According to ESET, the attack involved UAC-0099 (aka Earth Sirrush) obtaining initial access to the target on July 16, 2025, via a…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxH9YdfH7FHfSBJt7wrnd1P2hTQG6_2rpkp3YBqp2Yd49nYy4-a0zmvk5mqKlXH4DWfRO4Q4MmzLG4_t19me5rErcvoEpGJ5Q8LYty_GXXys63QC8HlO3G2jRC9f5vJd1BDiOp4APzxV4rSbFOZY80zIUmxvJ8V6isB-eDy9e9tVWaLR53fpPO80mzn_BH/s1600/uk-russia.jpg",
+   "cves": [],
+   "first_seen": "2026-10-23T11:35:08.913608+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "3d29fe5d9f89",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2582,6 +2577,29 @@
    ],
    "instructions_checked": true,
    "source_type": "news"
+  },
+  {
+   "id": "3bc9a46d2904",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "URGENT - PHP Warns of Another Unpatched RCE Two Days After Emergency PHP2Shell Patches",
+   "link": "https://thehackernews.com/2026/10/urgent-php-warns-of-another-unpatched.html",
+   "published": "2026-10-23T11:25:43+00:00",
+   "summary": "PHP has warned of another way an attacker could run code on a web server, two days after it shipped emergency fixes for the critical PHP2Shell flaws. The new issue, assigned CVE-2026-115560, affects only web applications configured in an unusual way, and PHP considers it an unlikely risk. The project is not issuing an…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSXE1XecomGt7TSLi_DCDVL8oQjsLEtppNNGjkuW1cbVl-cXZkMG-rqTr-oSVz_6XfoU8aoScw3rjGxsnTpV3JaV5eWfj431lg09Rnrrk1UjwNq1ZEofkwR4FaM2qatC_FD9ZNBZk-T9_9ddu8n-BtUkhwVgWzc2ZvaWAHP8eMxlLU19qxIjlXeHOJYHs/s1600/php2.jpg",
+   "cves": [
+    "CVE-2026-115560"
+   ],
+   "first_seen": "2026-10-23T11:35:08.913608+00:00",
+   "instructions": [
+    "This is the same setting it already listed as a mitigation in the October 21 advisory for CVE-2026-109619.",
+    "Instead, it recommends turning off a feature called session upload progress until a fix is available in the next routine release.",
+    "The warning came in a short informational advisory published on October 23.",
+    "PHP recommends setting session.upload_progress.enabled=0 until the next routine bugfix release."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "0c6fe061465a",
@@ -5624,7 +5642,7 @@
    "title": "TiDB Breach Exposes Flawed Cloud Security Assumptions",
    "link": "https://www.darkreading.com/cloud-security/tidb-breach-flawed-cloud-security",
    "published": "2026-10-21T21:15:39+00:00",
-   "summary": "Cloud providers may be storing sensitive customer data, without either party knowing it. But when a provider is breached, the data comes home to roost.",
+   "summary": "Cloud providers may be storing sensitive customer data, without either party knowing it. But when a provider is breached, the unseen information comes to light.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt9561c8122fa8def8/6ad9188c009b36a4ff009e9b/Fulcrum-MicroStockHub-Getty.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-10-21T21:57:32.507121+00:00",
@@ -5797,7 +5815,7 @@
    "source_name": "Dark Reading",
    "official": false,
    "source_type": "news",
-   "title": "UAE Transitions 50% of Gov't Services to Agentic AI",
+   "title": "UAE Transitions 50% of Government Services to Agentic AI",
    "link": "https://www.darkreading.com/cybersecurity-operations/uae-transitions-50-government-services-agentic-ai",
    "published": "2026-10-22T05:00:00+00:00",
    "summary": "The United Arab Emirates says it's creating a foundation of security and safety as it transforms its public service footprint.",
@@ -5976,7 +5994,7 @@
    "title": "The Evolving Cybersecurity Lexicon: Vulnerability Discovery to Resilience",
    "link": "https://www.darkreading.com/vulnerabilities-threats/cybersecurity-lexicon-vulnerability-discovery-resilience",
    "published": "2026-10-19T14:00:00+00:00",
-   "summary": "An industry-wide laser focus on vulnerabilities has left cybersecurity teams without enough room to strategize for resilience.",
+   "summary": "An industry-wide, laser focus on vulnerabilities has left cybersecurity teams without enough room to strategize for resilience.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt65c173c2226bc353/6ad26aaeed74a561440a7b76/dictionary-boonchai_wedmakawand-Getty-1321495582.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-10-20T09:53:14.101641+00:00",
@@ -6064,26 +6082,24 @@
    "instructions_checked": true
   },
   {
-   "id": "c425a649aa9d",
+   "id": "2ce43354cd03",
    "source": "schneier",
    "source_name": "Schneier on Security",
    "official": false,
    "source_type": "news",
-   "title": "Backdooring Open-Weight AI Models",
-   "link": "https://www.schneier.com/blog/archives/2026/10/backdooring-open-weight-ai-models.html",
-   "published": "2026-10-16T11:04:53+00:00",
-   "summary": "This is a problem: Any open model whose weights have been edited can carry a backdoor, whether it’s a task-specific fine-tune, a merged adapter or an abliterated build. We have abliterated models in the title because it’s the most popular reason people download modified weights without verifying what’s inside…",
+   "title": "Compromised TLS Certificates",
+   "link": "https://www.schneier.com/blog/archives/2026/10/compromised-tls-certificates.html",
+   "published": "2026-10-23T11:04:22+00:00",
+   "summary": "The Indian CA eMudhra Limited has eight TLS certificates with laughably weak private keys: The compromised eMudhra keys were defective at a level that’s challenging the imagination of many of the engineers studying the incident. A normal size for a NIST P-384 elliptic curve cryptography private key contains roughly…",
    "image": null,
    "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00",
+   "first_seen": "2026-10-23T11:35:08.913608+00:00",
+   "image_checked": true,
    "instructions": [
-    "What is the supply chain issue that does not already apply to regular procedural software?",
-    "In theory this should give the equivalent of a fingerprint by which the comparison between an original set of weights and a modified set of weights reveals the intent of the changes.",
-    "The end user must be able to fully veriy, at least in principle, that the model tey have is built only from the training data set.",
-    "Thus “mitigation by segregation”, which is usually the best form of security."
+    "“That is extremely in the ‘this should not be possible’ category,” Valdorda said. “Maybe some horribly dangerous key generation interface has a ‘size’ parameter and they set it to 1 by mistake???”",
+    "One caveat: exploiting compromised certificates requires an active adversary-in-the-middle attack, meaning the attacker must act as a proxy between two TLS parties and receive encrypted traffic, decrypt it, reencrypt it, and send it to the other party."
    ],
-   "instructions_checked": true,
-   "image_checked": true
+   "instructions_checked": true
   },
   {
    "id": "fd577205a9ba",
