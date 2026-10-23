@@ -414,3 +414,27 @@ a.live:hover{color:var(--ink);border-color:var(--crit)}
 .radar-home-icon{font-size:1.6rem;color:var(--accent)}.radar-home div{flex:1;min-width:190px;color:var(--muted);font-size:.88rem}.radar-home div strong{display:block;color:var(--ink);font-size:.98rem}.radar-home a{color:var(--accent);font-weight:770;text-decoration:none;white-space:nowrap}.radar-home a:hover{text-decoration:underline}
 .card-evidence{margin:5px 0 10px;padding:7px 9px;border-left:2px solid var(--accent);background:color-mix(in srgb,var(--accent) 7%,var(--surface));border-radius:0 6px 6px 0;color:var(--muted);font-size:.73rem;line-height:1.45}
 @media(max-width:560px){.radar-home a{width:100%}}
+
+/* Decision desk: practical wayfinding, no made-up claims or third-party tracking. */
+.home-intro{position:relative;isolation:isolate;margin-top:22px;padding:clamp(23px,4vw,45px);border:1px solid color-mix(in srgb,var(--accent) 30%,var(--line));border-radius:26px;background:radial-gradient(ellipse at 100% 0%,color-mix(in srgb,#38bdf8 15%,transparent),transparent 48%),radial-gradient(ellipse at 0% 100%,color-mix(in srgb,#22c55e 10%,transparent),transparent 55%),var(--surface);overflow:hidden;box-shadow:var(--shadow)}
+.home-intro:after{content:"";position:absolute;right:6%;top:12%;z-index:-1;width:160px;height:160px;border:1px solid color-mix(in srgb,var(--accent) 20%,transparent);border-radius:50%;box-shadow:0 0 0 25px color-mix(in srgb,var(--accent) 4%,transparent),0 0 0 55px color-mix(in srgb,var(--accent) 2%,transparent);pointer-events:none}
+.home-intro-kicker{display:inline-flex;align-items:center;gap:9px;font-size:.68rem;letter-spacing:.16em;font-weight:800;color:var(--accent)}
+.home-intro-dot{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 14px #22c55e}
+.home-intro h1{margin:13px 0 15px;font-size:clamp(2.35rem,5.5vw,4.3rem);line-height:1.05;letter-spacing:-.055em;text-wrap:balance}
+.home-intro h1 em{font-style:normal;color:var(--accent)}
+.home-intro .meta{max-width:80ch;line-height:1.6}.home-intro-actions{display:flex;align-items:center;gap:11px;flex-wrap:wrap;margin-top:18px}
+.home-intro-secondary{display:inline-flex;align-items:center;min-height:43px;padding:9px 15px;border:1px solid color-mix(in srgb,var(--accent) 35%,var(--line));border-radius:12px;color:var(--ink);font-weight:720;text-decoration:none;background:var(--surface)}
+.home-intro-secondary:hover{border-color:var(--accent);color:var(--accent)}
+.signal-rail{margin:25px 0 0}.signal-rail-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:11px}.signal-rail-head>span{color:var(--accent);font-size:.69rem;font-weight:800;letter-spacing:.16em}.signal-rail-head p{margin:0;color:var(--muted);font-size:.78rem}
+.signal-rail-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}
+.signal-tile{position:relative;display:flex;flex-direction:column;gap:9px;min-width:0;min-height:159px;padding:17px 18px;border:1px solid var(--line);border-top:2px solid var(--accent);border-radius:15px;background:var(--surface);color:var(--ink);text-decoration:none;transition:transform .18s,border-color .18s,box-shadow .18s}
+.signal-tile:hover{transform:translateY(-3px);border-color:var(--accent);box-shadow:var(--shadow)}.signal-tile:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.signal-tile-watch{border-top-color:var(--crit)}.signal-tile-latest{border-top-color:#38bdf8}.signal-tile-personal{border-top-color:#22c55e}
+.signal-tile-kicker{color:var(--muted);font-size:.68rem;font-weight:820;letter-spacing:.14em}.signal-tile strong{font-size:.97rem;line-height:1.35;padding-right:12px;overflow-wrap:anywhere}.signal-tile-desc{max-width:31ch;margin-top:auto;color:var(--muted);font-size:.75rem;line-height:1.48}.signal-tile-arrow{position:absolute;right:17px;top:15px;color:var(--accent);font-size:1.1rem}
+.hero-evidence{margin:2px 0 10px;padding:7px 10px;border-left:2px solid var(--accent);background:color-mix(in srgb,var(--accent) 9%,var(--surface));font-size:.78rem;color:var(--muted)}
+/* The full Mailchimp card is a visually distinct destination, not a popup. */
+.subscribe#newsletter{border:1px solid color-mix(in srgb,var(--accent) 38%,var(--line));box-shadow:var(--shadow),0 0 50px -35px var(--accent)}
+.subscribe#newsletter:before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#22c55e,#38bdf8,transparent)}
+@media(max-width:760px){.signal-rail-grid{grid-template-columns:1fr}.signal-tile{min-height:115px}.home-intro:after{opacity:.3}}
+@media(max-width:500px){.home-intro{padding:21px}.home-intro-actions .btn,.home-intro-secondary{width:100%;justify-content:center}}
+@media(prefers-reduced-motion:reduce){.signal-tile{transition:none}.signal-tile:hover{transform:none}}
