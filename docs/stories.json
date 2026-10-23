@@ -194,6 +194,25 @@
    "url": "story/52d3232953e2.html"
   },
   {
+   "id": "a32efdd2fc59",
+   "title": "CVE-2026-83862 Windows Network Load Balancing Remote Code Execution Vulnerability",
+   "summary": "Corrected the CVSS Attack Vector metric from Network (AV:N) to Adjacent (AV:A) to reflect the requirement for Layer 2 network adjacency. The CVSS base score has…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "23 Oct 2026, 14:00 UTC",
+   "published": "2026-10-23T14:00:00+00:00",
+   "priority_score": 5,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "microsoft"
+   ],
+   "kev": [],
+   "sources": "Microsoft Security Response Center",
+   "url": "story/a32efdd2fc59.html"
+  },
+  {
    "id": "af157714ac71",
    "title": "Hacker leaks 281 GB of data from Germany’s far-right AfD party",
    "summary": "The AfD has confirmed that hackers breached its hosting provider. A leak site now claims to offer 421,179 of the party’s internal emails, and shows AI-written summaries…",
@@ -301,23 +320,6 @@
    "kev": [],
    "sources": "BleepingComputer",
    "url": "story/6af5f5a84e31.html"
-  },
-  {
-   "id": "a45e553ca30b",
-   "title": "ThreatsDay: AI Secrets Leak, PingCAP Source Theft, Signal Hang-Up Flaw, Laravel Auth Bypass + 21 More",
-   "summary": "This week has already been rough for cybersecurity. Critical PHP and GitLab RCE flaws, serious Linux security bugs, compromised eMudhra certificates, a Node.js RCE flaw…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "22 Oct 2026, 17:45 UTC",
-   "published": "2026-10-22T17:45:44+00:00",
-   "priority_score": 5,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/a45e553ca30b.html"
   },
   {
    "id": "92b876190d73",
@@ -597,6 +599,23 @@
    "url": "story/0589859b680b.html"
   },
   {
+   "id": "a45e553ca30b",
+   "title": "ThreatsDay: AI Secrets Leak, PingCAP Source Theft, Signal Hang-Up Flaw, Laravel Auth Bypass + 21 More",
+   "summary": "This week has already been rough for cybersecurity. Critical PHP and GitLab RCE flaws, serious Linux security bugs, compromised eMudhra certificates, a Node.js RCE flaw…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "22 Oct 2026, 17:45 UTC",
+   "published": "2026-10-22T17:45:44+00:00",
+   "priority_score": 4,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "The Hacker News",
+   "url": "story/a45e553ca30b.html"
+  },
+  {
    "id": "7c1ce9da91a8",
    "title": "CVE-2026-105014 Azure Pipelines Remote Code Execution Vulnerability",
    "summary": "Improper neutralization of special elements used in a command ('command injection') in Azure Pipelines allows an unauthorized attacker to execute code over a network.",
@@ -709,25 +728,6 @@
    "url": "story/f6f763b9dab2.html"
   },
   {
-   "id": "bf2645506057",
-   "title": "PHP says AI review of critical bugs first sparked alarm in August, but signs surfaced in 2024",
-   "summary": "In a lengthy statement about two critical vulnerabilities, the PHP Foundation explained how one dated to 2024, how a recent third-party review by AI companies heightened…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "21 Oct 2026, 17:30 UTC",
-   "published": "2026-10-21T17:30:00+00:00",
-   "priority_score": 4,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "ai"
-   ],
-   "kev": [],
-   "sources": "The Record",
-   "url": "story/bf2645506057.html"
-  },
-  {
    "id": "7f88afbf76a3",
    "title": "Attackers Abuse UpdraftCentral Keys to Plant Backdoors on WordPress Sites",
    "summary": "Unknown threat actors breached TeamUpdraft's website and potentially gained unauthorized access to customers' connection keys for UpdraftCentral, UpdraftVault, and…",
@@ -819,6 +819,25 @@
    "kev": [],
    "sources": "Microsoft Security Response Center",
    "url": "story/b1e34d264127.html"
+  },
+  {
+   "id": "b95d5610d154",
+   "title": "AI Tools Are Generating Massive Attacks for Little Cost",
+   "summary": "One campaign targets 105 sites using open-weight models; in another, public models gained full domain control for $12. Cyber-defense will have to change.",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "23 Oct 2026, 17:26 UTC",
+   "published": "2026-10-23T17:26:59+00:00",
+   "priority_score": 3,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "ai"
+   ],
+   "kev": [],
+   "sources": "Dark Reading",
+   "url": "story/b95d5610d154.html"
   },
   {
    "id": "4eed9c7e0436",
@@ -1050,6 +1069,25 @@
    "kev": [],
    "sources": "BleepingComputer",
    "url": "story/71f0485320c6.html"
+  },
+  {
+   "id": "bf2645506057",
+   "title": "PHP says AI review of critical bugs first sparked alarm in August, but signs surfaced in 2024",
+   "summary": "In a lengthy statement about two critical vulnerabilities, the PHP Foundation explained how one dated to 2024, how a recent third-party review by AI companies heightened…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "21 Oct 2026, 17:30 UTC",
+   "published": "2026-10-21T17:30:00+00:00",
+   "priority_score": 3,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "ai"
+   ],
+   "kev": [],
+   "sources": "The Record",
+   "url": "story/bf2645506057.html"
   },
   {
    "id": "67c1ab51681c",
@@ -1370,6 +1408,23 @@
    "kev": [],
    "sources": "Ars Technica Security",
    "url": "story/b140e0bf691c.html"
+  },
+  {
+   "id": "90f70db29589",
+   "title": "FCC bans two devices with surveillance chips linked to Huawei",
+   "summary": "The banned items — a wireless video transmitter and dashboard camera — are made with chips manufactured by Huawei subsidiary HiSilicon, which markets its products as…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "23 Oct 2026, 17:28 UTC",
+   "published": "2026-10-23T17:28:00+00:00",
+   "priority_score": 2,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "The Record",
+   "url": "story/90f70db29589.html"
   },
   {
    "id": "9311c26cfe2c",
@@ -4677,40 +4732,6 @@
    "kev": [],
    "sources": "Graham Cluley",
    "url": "story/3b8939cd6e35.html"
-  },
-  {
-   "id": "2f67e7ff74fc",
-   "title": "Researchers Demonstrate OpenBSD Root Exploit Chaining 37-Year-Old Shared-Memory Bug",
-   "summary": "A local privilege escalation exploit published today gains root on OpenBSD 7.9 by chaining a roughly 37-year-old integer overflow with a separate kernel flaw, bypassing…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "16 Oct 2026, 17:48 UTC",
-   "published": "2026-10-16T17:48:45+00:00",
-   "priority_score": 0,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/2f67e7ff74fc.html"
-  },
-  {
-   "id": "50880c900177",
-   "title": "Targeted ads installed Candiru spyware in zero-click attacks",
-   "summary": "Candiru spyware was delivered to devices at Al Jazeera Media Network via targeted online advertisements in a zero-click attack that required only rendering the malicious…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "16 Oct 2026, 17:20 UTC",
-   "published": "2026-10-16T17:20:03+00:00",
-   "priority_score": 0,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "BleepingComputer",
-   "url": "story/50880c900177.html"
   }
  ]
 }

@@ -706,6 +706,25 @@
    "instructions_checked": true
   },
   {
+   "id": "a32efdd2fc59",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-83862 Windows Network Load Balancing Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83862",
+   "published": "2026-10-23T14:00:00+00:00",
+   "summary": "Corrected the CVSS Attack Vector metric from Network (AV:N) to Adjacent (AV:A) to reflect the requirement for Layer 2 network adjacency. The CVSS base score has decreased from 9.8 to 8.8. This is an informational change only. Customers who have successfully installed the update do not need to take any further action.",
+   "image": null,
+   "cves": [
+    "CVE-2026-83862"
+   ],
+   "first_seen": "2026-10-23T17:54:14.622043+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "4273c05ff1b7",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -1797,22 +1816,6 @@
    "instructions_checked": true
   },
   {
-   "id": "2f67e7ff74fc",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "title": "Researchers Demonstrate OpenBSD Root Exploit Chaining 37-Year-Old Shared-Memory Bug",
-   "link": "https://thehackernews.com/2026/10/researchers-demonstrate-openbsd-root.html",
-   "published": "2026-10-16T17:48:45+00:00",
-   "summary": "A local privilege escalation exploit published today gains root on OpenBSD 7.9 by chaining a roughly 37-year-old integer overflow with a separate kernel flaw, bypassing OpenBSD's KARL kernel-address randomization and its SMAP and SMEP hardware protections.Security firm Calif, which found and reported the flaws…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqmitTMm5t8BBKfynqzFAKqJSzh_s7fQczmMm5u95RLUUzuWMubd5DeM8e8EH6YOpP-_gvbYwn8Cd3flsL-nGIupBw5HOo49Orr7J2rqhI99J7U4LcXW6shlxd3w0zFAng1mLw5xGb-F9GRmpDK82GC1-Dcb1gPcvkgl4wVi0-QTEGalDwPmelGE0TtNU/s1600/openbsd.jpg",
-   "cves": [],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "source_type": "news"
-  },
-  {
    "id": "6c494d43a845",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2323,6 +2326,23 @@
     "The advisory lists multiple vulnerabilities the group has used in attacks, including CVE-2020-3259, CVE-2023-20269, CVE-2023-27532 , CVE-2024-40711 , CVE-2024-40766 and others.",
     "The advisory said SafePay typically holds encrypted data for ransom and demands “a subset of company revenue in cryptocurrency” in exchange for the decryption key."
    ],
+   "instructions_checked": true
+  },
+  {
+   "id": "90f70db29589",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "FCC bans two devices with surveillance chips linked to Huawei",
+   "link": "https://therecord.media/fcc-bans-devices-huawei-surveillance-chips",
+   "published": "2026-10-23T17:28:00+00:00",
+   "summary": "The banned items — a wireless video transmitter and dashboard camera — are made with chips manufactured by Huawei subsidiary HiSilicon, which markets its products as “designed for the surveillance market.”",
+   "image": "https://cms.therecord.media/uploads/fcc_f0096cadc5.jpg",
+   "cves": [],
+   "first_seen": "2026-10-23T17:54:14.622043+00:00",
+   "image_checked": true,
+   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -5074,23 +5094,6 @@
    "instructions_checked": true
   },
   {
-   "id": "50880c900177",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "title": "Targeted ads installed Candiru spyware in zero-click attacks",
-   "link": "https://www.bleepingcomputer.com/news/security/zero-click-attacks-used-targeted-ads-to-deliver-candiru-spyware/",
-   "published": "2026-10-16T17:20:03+00:00",
-   "summary": "Candiru spyware was delivered to devices at Al Jazeera Media Network via targeted online advertisements in a zero-click attack that required only rendering the malicious ads on the victim's device.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/16/spywareads.jpg",
-   "cves": [],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true,
-   "source_type": "news"
-  },
-  {
    "id": "dff178c340ad",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -5376,6 +5379,22 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt521637665481bcc9/65dfe9cfea879b040a14fbb9/policerobot-Agencja_Fotograficzna_Caro-alamy.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-10-23T12:10:35.110900+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "b95d5610d154",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "AI Tools Are Generating Massive Attacks for Little Cost",
+   "link": "https://www.darkreading.com/cybersecurity-operations/ai-tools-massive-attacks-little-cost",
+   "published": "2026-10-23T17:26:59+00:00",
+   "summary": "One campaign targets 105 sites using open-weight models; in another, public models gained full domain control for $12. Cyber-defense will have to change.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blte7023e63db2b06bb/6adb780c560f54c5dbf647e8/economics-cybersecurity-Ton_Wanniwat-shutterstock.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-10-23T17:54:14.622043+00:00",
    "instructions": [],
    "instructions_checked": true
   },
