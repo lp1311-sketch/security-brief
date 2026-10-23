@@ -441,7 +441,7 @@
   },
   {
    "id": "3bc9a46d2904",
-   "title": "PHP Warns of Another Unpatched RCE Two Days After Emergency PHP2Shell Patches",
+   "title": "PHP Warns of Another Unpatched RCE Risk Two Days After Emergency PHP2Shell Patches",
    "summary": "PHP has warned of another way an attacker could run code on a web server, two days after it shipped emergency fixes for the critical PHP2Shell flaws. The new issue…",
    "priority": "Standard",
    "category": "Patch Radar",
@@ -595,42 +595,6 @@
    "kev": [],
    "sources": "Born's IT and Windows Blog",
    "url": "story/244621daeb8f.html"
-  },
-  {
-   "id": "0563a66ccd63",
-   "title": "Microsoft shares how to fix broken Exchange Online EWS apps",
-   "summary": "Microsoft says IT admins can re-enable the retired Exchange Web Services (EWS) API in Exchange Online to fix EWS apps that have stopped working.",
-   "priority": "Standard",
-   "category": "Microsoft",
-   "date": "22 Oct 2026, 15:49 UTC",
-   "published": "2026-10-22T15:49:32+00:00",
-   "priority_score": 4,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "microsoft"
-   ],
-   "kev": [],
-   "sources": "BleepingComputer",
-   "url": "story/0563a66ccd63.html"
-  },
-  {
-   "id": "c625905b3719",
-   "title": "Hackers got a four-day head start on epic PHP2Shell vulnerability",
-   "summary": "Amazon has warned that vulnerabilities in a programming language that underpins much of the Internet, discovered using AI tools, are being “broadly exploited” as…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "22 Oct 2026, 15:25 UTC",
-   "published": "2026-10-22T15:25:02+00:00",
-   "priority_score": 4,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "Ars Technica Security",
-   "url": "story/c625905b3719.html"
   },
   {
    "id": "7c1ce9da91a8",
@@ -910,6 +874,42 @@
    "kev": [],
    "sources": "The Hacker News",
    "url": "story/d76b50dba162.html"
+  },
+  {
+   "id": "0563a66ccd63",
+   "title": "Microsoft shares how to fix broken Exchange Online EWS apps",
+   "summary": "Microsoft says IT admins can re-enable the retired Exchange Web Services (EWS) API in Exchange Online to fix EWS apps that have stopped working.",
+   "priority": "Standard",
+   "category": "Microsoft",
+   "date": "22 Oct 2026, 15:49 UTC",
+   "published": "2026-10-22T15:49:32+00:00",
+   "priority_score": 3,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "microsoft"
+   ],
+   "kev": [],
+   "sources": "BleepingComputer",
+   "url": "story/0563a66ccd63.html"
+  },
+  {
+   "id": "c625905b3719",
+   "title": "Hackers got a four-day head start on epic PHP2Shell vulnerability",
+   "summary": "Amazon has warned that vulnerabilities in a programming language that underpins much of the Internet, discovered using AI tools, are being “broadly exploited” as…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "22 Oct 2026, 15:25 UTC",
+   "published": "2026-10-22T15:25:02+00:00",
+   "priority_score": 3,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "Ars Technica Security",
+   "url": "story/c625905b3719.html"
   },
   {
    "id": "14aa600d7f56",
@@ -1351,6 +1351,23 @@
    "kev": [],
    "sources": "Ars Technica Security",
    "url": "story/b140e0bf691c.html"
+  },
+  {
+   "id": "5d4b1321ac5e",
+   "title": "PHP shares mitigation for new RCE vulnerability with no patch",
+   "summary": "The PHP security team has shared mitigation measures for a new remote code execution vulnerability that affects systems with non-default configurations and has no patch.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "23 Oct 2026, 15:38 UTC",
+   "published": "2026-10-23T15:38:05+00:00",
+   "priority_score": 2,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "BleepingComputer",
+   "url": "story/5d4b1321ac5e.html"
   },
   {
    "id": "bd43f4cf3245",
@@ -2665,40 +2682,6 @@
    "url": "story/288893f63679.html"
   },
   {
-   "id": "b716aa6739b4",
-   "title": "Optiv Launches CyberBOT Cybersecurity Awareness Training Program",
-   "summary": "Hands-on sessions provide educators, nonprofits, and community leaders with an accessible resource to foster year-round cyber awareness and build more resilient…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "21 Oct 2026, 15:44 UTC",
-   "published": "2026-10-21T15:44:48+00:00",
-   "priority_score": 1,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "Dark Reading",
-   "url": "story/b716aa6739b4.html"
-  },
-  {
-   "id": "ce8b3bbcd62b",
-   "title": "Survey Finds High-Profile Executives Feel Untouchable as Digital Exposure Turns Into Physical Risk",
-   "summary": "360 Privacy finds more than 8 in 10 security and wealth professionals say cybersecurity and physical security can no longer be separated.",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "21 Oct 2026, 15:29 UTC",
-   "published": "2026-10-21T15:29:09+00:00",
-   "priority_score": 1,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "Dark Reading",
-   "url": "story/ce8b3bbcd62b.html"
-  },
-  {
    "id": "a45dacf80c10",
    "title": "‘Context Bombs’ Cut AI Attack Success by Misleading Agents With Fake Targets",
    "summary": "Deceptive prompts lure AI agents into decoys and dead ends, cutting attack success by up to 91% in tests and raising the cost of a successful attack 23-fold. The post…",
@@ -3560,23 +3543,38 @@
    "url": "story/0a0234023332.html"
   },
   {
-   "id": "c094ac3382c9",
-   "title": "Managing open-weight model risk in enterprise deployments",
-   "summary": "The growing AI landscape is giving enterprises more choice in how they build, customize, and deploy increasingly capable models. Open-weight models are an important part…",
+   "id": "b716aa6739b4",
+   "title": "Optiv Launches CyberBOT Cybersecurity Awareness Training Program",
+   "summary": "Hands-on sessions provide educators, nonprofits, and community leaders with an accessible resource to foster year-round cyber awareness and build more resilient…",
    "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "16 Oct 2026, 16:00 UTC",
-   "published": "2026-10-16T16:00:00+00:00",
-   "priority_score": 1,
+   "category": "Industry & Research",
+   "date": "21 Oct 2026, 15:44 UTC",
+   "published": "2026-10-21T15:44:48+00:00",
+   "priority_score": 0,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
-   "tags": [
-    "ai"
-   ],
+   "tags": [],
    "kev": [],
-   "sources": "Microsoft Security Blog",
-   "url": "story/c094ac3382c9.html"
+   "sources": "Dark Reading",
+   "url": "story/b716aa6739b4.html"
+  },
+  {
+   "id": "ce8b3bbcd62b",
+   "title": "Survey Finds High-Profile Executives Feel Untouchable as Digital Exposure Turns Into Physical Risk",
+   "summary": "360 Privacy finds more than 8 in 10 security and wealth professionals say cybersecurity and physical security can no longer be separated.",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "21 Oct 2026, 15:29 UTC",
+   "published": "2026-10-21T15:29:09+00:00",
+   "priority_score": 0,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "Dark Reading",
+   "url": "story/ce8b3bbcd62b.html"
   },
   {
    "id": "2ee4d03f1bea",

@@ -2015,7 +2015,7 @@
    "source_name": "The Hacker News",
    "official": false,
    "source_type": "news",
-   "title": "PHP Warns of Another Unpatched RCE Two Days After Emergency PHP2Shell Patches",
+   "title": "PHP Warns of Another Unpatched RCE Risk Two Days After Emergency PHP2Shell Patches",
    "link": "https://thehackernews.com/2026/10/urgent-php-warns-of-another-unpatched.html",
    "published": "2026-10-23T11:25:43+00:00",
    "summary": "PHP has warned of another way an attacker could run code on a web server, two days after it shipped emergency fixes for the critical PHP2Shell flaws. The new issue, assigned CVE-2026-115560, affects only web applications configured in an unusual way, and PHP considers it an unlikely risk.The project is not issuing an…",
@@ -4857,6 +4857,28 @@
    "instructions_checked": true
   },
   {
+   "id": "5d4b1321ac5e",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "PHP shares mitigation for new RCE vulnerability with no patch",
+   "link": "https://www.bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability/",
+   "published": "2026-10-23T15:38:05+00:00",
+   "summary": "The PHP security team has shared mitigation measures for a new remote code execution vulnerability that affects systems with non-default configurations and has no patch.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/21/PHP_headpic.jpg",
+   "cves": [],
+   "first_seen": "2026-10-23T16:01:45.116447+00:00",
+   "image_checked": true,
+   "instructions": [
+    "This mitigation should have already been applied on Wednesday, before patching two other critical RCE vulnerabilities (CVE-2026-109618 and CVE-2026-109619) tracked collectively as PHP2Shell .",
+    "PHP shares mitigation for new RCE vulnerability with no patch",
+    "The PHP security team has shared mitigation measures for a new remote code execution vulnerability that affects systems with non-default configurations and has no patch.",
+    "According to a Friday advisory, this security flaw (tracked as CVE-2026-115560) can only be exploited when targeting systems \"with an unusual combination of configuration and application code.\""
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "a5afc0aef898",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -5541,28 +5563,6 @@
    "first_seen": "2026-10-20T09:53:14.101641+00:00",
    "instructions": [],
    "instructions_checked": true
-  },
-  {
-   "id": "c094ac3382c9",
-   "source": "msblog",
-   "source_name": "Microsoft Security Blog",
-   "official": false,
-   "title": "Managing open-weight model risk in enterprise deployments",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/10/16/managing-open-weight-model-risk-in-enterprise-deployments/",
-   "published": "2026-10-16T16:00:00+00:00",
-   "summary": "The growing AI landscape is giving enterprises more choice in how they build, customize, and deploy increasingly capable models. Open-weight models are an important part of that landscape. They give enterprises access to model weights and greater flexibility to inspect, evaluate, modify, and run models within their…",
-   "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/10/MSFT-NVIDIA-SCI.jpg",
-   "cves": [],
-   "first_seen": "2026-10-19T12:07:37.633241+00:00",
-   "image_checked": true,
-   "instructions": [
-    "It is not a policy or deployment checklist, but instead it should be used by enterprises to adapt it to their own systems, use cases, and risk criteria, then connect relevant risks to evaluations, mitigations, and accountable owners.",
-    "Evaluating a model alone does not establish the safety of an agent or application: teams must also assess its permissions, data access, tools, runtime, and operational controls.",
-    "Teams should validate control availability for their model and deployment, including preview status, and combine these capabilities with application-specific testing, monitoring, and human oversight.",
-    "Future work from Microsoft and NVIDIA is intended to extend this approach across the runtime, harness, and application layers, with additional technical guidance on evaluation and mitigation."
-   ],
-   "instructions_checked": true,
-   "source_type": "vendor_blog"
   },
   {
    "id": "cd30eb68866b",
