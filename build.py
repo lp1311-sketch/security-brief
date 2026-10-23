@@ -1203,6 +1203,24 @@ EXTRA_CSS = """
 """
 
 
+def _newsletter_teaser(site_cfg: dict) -> str:
+    """Homepage-only signal card: nothing is rendered without a configured HTTPS signup link."""
+    signup_url = str(site_cfg.get("newsletter_signup_url") or "").strip()
+    parsed = urlparse(signup_url)
+    if parsed.scheme != "https" or not parsed.netloc:
+        return ""
+    return (
+        '<aside class="signal-teaser" aria-label="Weekly Security Brief newsletter">'
+        '<span class="signal-teaser-mark" aria-hidden="true">SB<span class="signal-teaser-dot"></span></span>'
+        '<span class="signal-teaser-copy"><strong>The Weekly Signal</strong>'
+        '<small>One sharp security briefing. No daily noise.</small></span>'
+        f'<a class="signal-teaser-link" href="{esc(signup_url)}" target="_blank" '
+        'rel="noopener noreferrer" aria-label="Join The Weekly Signal newsletter on Mailchimp">'
+        'Join the briefing <span aria-hidden="true">&rarr;</span></a>'
+        '</aside>'
+    )
+
+
 def _newsletter(site_cfg: dict, base: str) -> str:
     signup_url = (site_cfg.get("newsletter_signup_url") or "").strip()
     parsed = urlparse(signup_url)
@@ -1210,8 +1228,8 @@ def _newsletter(site_cfg: dict, base: str) -> str:
         return f"""<section class="subscribe" aria-labelledby="subscribe-title">
 <div class="subscribe-copy"><p class="subscribe-eyebrow"><span class="subscribe-pulse" aria-hidden="true"></span> THE WEEKLY SIGNAL</p>
 <h2 id="subscribe-title">A clearer view of the week in security.</h2>
-<p>One concise briefing with the stories that matter, why they matter, and practical checks for defenders. No feed-dump, no daily noise.</p>
-<div class="subscribe-points"><span>Free to join</span><span>One useful email a week</span><span>Unsubscribe anytime</span></div></div>
+<p>A concise security briefing with the stories that matter, why they matter, and practical checks for defenders. No feed-dump, no daily noise.</p>
+<div class="subscribe-points"><span>Free to join</span><span>Thoughtful updates, not daily noise</span><span>Unsubscribe anytime</span></div></div>
 <div class="subscribe-action"><a class="subscribe-btn" href="{esc(signup_url)}" target="_blank" rel="noopener noreferrer">Get the weekly briefing <span aria-hidden="true">&rarr;</span></a>
 <p>Signup is handled securely by Mailchimp. See the <a href="{base}datenschutz.html">privacy notice</a>.</p></div>
 </section>"""
@@ -1221,8 +1239,8 @@ def _newsletter(site_cfg: dict, base: str) -> str:
     return f"""<section class="subscribe" aria-labelledby="subscribe-title">
 <div class="subscribe-copy"><p class="subscribe-eyebrow"><span class="subscribe-pulse" aria-hidden="true"></span> THE WEEKLY SIGNAL</p>
 <h2 id="subscribe-title">A clearer view of the week in security.</h2>
-<p>One concise briefing with the stories that matter, why they matter, and practical checks for defenders. No feed-dump, no daily noise.</p>
-<div class="subscribe-points"><span>Free to join</span><span>One useful email a week</span><span>Unsubscribe anytime</span></div></div>
+<p>A concise security briefing with the stories that matter, why they matter, and practical checks for defenders. No feed-dump, no daily noise.</p>
+<div class="subscribe-points"><span>Free to join</span><span>Thoughtful updates, not daily noise</span><span>Unsubscribe anytime</span></div></div>
 <div class="subscribe-action"><form action="{esc(action)}" method="post" class="subscribe-form">
 <label for="nl-email" class="visually-hidden">Email address</label><input id="nl-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com">
 <button type="submit">Join the briefing <span aria-hidden="true">&rarr;</span></button></form>
@@ -1910,6 +1928,7 @@ def index_page(stories: list[dict], cfg: dict, now: datetime, status: dict,
     ]
     # Keep a single Buy Me a Coffee block after the overview; retain its configured QR code.
     parts.append(_donate(site_cfg))
+    parts.append(_newsletter_teaser(site_cfg))
     if not stories:
         parts.append('<div class="empty">No news stories yet. The next automated check will fill this page.</div>')
     else:
@@ -2350,7 +2369,7 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
                      s["score"], s["image"], [x["url"] for x in s["sources"]]] for s in stories],
         "articles": [[a["section"], a["slug"], a["title"], a["date"], a["summary"], a["_md"]] for a in articles],
         "site": site_cfg,
-        "render": "5.33-link-repair",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
+        "render": "5.34-weekly-signal",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
     }, ensure_ascii=False, sort_keys=True)
     if fixtures is None:
         check_source_links(stories, data_file.parent / "linkcheck.json", now)
@@ -2523,6 +2542,23 @@ DESIGN_CSS += """
 @media(prefers-reduced-motion:reduce){.filter-panel,.filter-panel *{scroll-behavior:auto}}
 """
 
+
+DESIGN_CSS += """
+/* Compact signal beacon after overview; full newsletter card stays below news. */
+.signal-teaser{position:relative;isolation:isolate;display:flex;align-items:center;gap:16px;margin:18px 0 26px;padding:15px 18px;border:1px solid color-mix(in srgb,var(--accent) 39%,var(--line));border-radius:18px;background:linear-gradient(120deg,color-mix(in srgb,var(--accent) 10%,var(--surface)) 0%,var(--surface) 62%,color-mix(in srgb,#38bdf8 7%,var(--surface)) 100%);box-shadow:0 14px 40px -30px var(--accent);overflow:hidden}
+.signal-teaser:before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,transparent 0%,color-mix(in srgb,var(--accent) 9%,transparent) 55%,transparent 100%);transform:translateX(-100%);animation:signal-sweep 9s ease-in-out infinite}
+@keyframes signal-sweep{0%,70%,100%{transform:translateX(-100%)}85%{transform:translateX(100%)}}
+.signal-teaser-mark{position:relative;display:grid;place-items:center;flex:none;width:43px;height:43px;border:1px solid color-mix(in srgb,var(--accent) 56%,var(--line));border-radius:12px;background:var(--surface);color:var(--accent);font-size:.84rem;font-weight:850;letter-spacing:.06em;box-shadow:inset 0 0 16px color-mix(in srgb,var(--accent) 10%,transparent)}
+.signal-teaser-dot{position:absolute;top:-3px;right:-3px;width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 11px #22c55e}
+.signal-teaser-copy{display:flex;flex:1;flex-direction:column;gap:2px;min-width:0}
+.signal-teaser-copy strong{font-size:.94rem;color:var(--ink);letter-spacing:-.015em}
+.signal-teaser-copy small{font-size:.8rem;color:var(--muted);line-height:1.45}
+.signal-teaser-link{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:43px;padding:9px 16px;border:1px solid var(--accent);border-radius:11px;background:var(--accent);color:var(--accent-ink);font-size:.85rem;font-weight:760;text-decoration:none;white-space:nowrap;transition:transform .2s,box-shadow .2s}
+.signal-teaser-link:hover{transform:translateY(-2px);box-shadow:0 10px 22px color-mix(in srgb,var(--accent) 22%,transparent)}
+.signal-teaser-link:focus-visible,.subscribe-btn:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media(max-width:570px){.signal-teaser{flex-wrap:wrap;gap:10px}.signal-teaser-link{width:100%;margin-top:4px}.signal-teaser-copy small{font-size:.75rem}}
+@media(prefers-reduced-motion:reduce){.signal-teaser:before{animation:none}.signal-teaser-link{transition:none}.signal-teaser-link:hover{transform:none}}
+"""
 
 if __name__ == "__main__":
     main()
