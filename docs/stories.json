@@ -80,25 +80,6 @@
    "url": "story/713a68aa818f.html"
   },
   {
-   "id": "d078ae182673",
-   "title": "CVE-2026-108456 Azure AI Foundry Elevation of Privilege Vulnerability",
-   "summary": "Server-side request forgery (ssrf) in Azure AI Foundry allows an authorized attacker to elevate privileges over a network.",
-   "priority": "High",
-   "category": "Patch Radar",
-   "date": "22 Oct 2026, 14:00 UTC",
-   "published": "2026-10-22T14:00:00+00:00",
-   "priority_score": 8,
-   "priority_basis": [
-    "Editorial attention score 8 reached the High threshold (not CVSS)"
-   ],
-   "tags": [
-    "microsoft"
-   ],
-   "kev": [],
-   "sources": "Microsoft Security Response Center",
-   "url": "story/d078ae182673.html"
-  },
-  {
    "id": "0d304799e621",
    "title": "Qilin and INC Ransomware Groups Exploit Palo Alto Networks Flaw to Bypass MFA",
    "summary": "Palo Alto Networks has disclosed that it's continuing to observe exploitation of a now-patched security flaw impacting PAN-OS and Prisma Access by ransomware actors. The…",
@@ -123,6 +104,25 @@
    "url": "story/0d304799e621.html"
   },
   {
+   "id": "d078ae182673",
+   "title": "CVE-2026-108456 Azure AI Foundry Elevation of Privilege Vulnerability",
+   "summary": "Server-side request forgery (ssrf) in Azure AI Foundry allows an authorized attacker to elevate privileges over a network.",
+   "priority": "High",
+   "category": "Patch Radar",
+   "date": "22 Oct 2026, 14:00 UTC",
+   "published": "2026-10-22T14:00:00+00:00",
+   "priority_score": 7,
+   "priority_basis": [
+    "Editorial attention score 7 reached the High threshold (not CVSS)"
+   ],
+   "tags": [
+    "microsoft"
+   ],
+   "kev": [],
+   "sources": "Microsoft Security Response Center",
+   "url": "story/d078ae182673.html"
+  },
+  {
    "id": "5f2ddb413304",
    "title": "'PHP2Shell' Bugs Signal Red Alert for Security Industry",
    "summary": "Security teams are scrambling to remediate two critical PHP vulnerabilities following leaked details and reports of exploitation attempts.",
@@ -143,25 +143,6 @@
    "url": "story/5f2ddb413304.html"
   },
   {
-   "id": "92b876190d73",
-   "title": "Machine speed attacks require machine speed detection and response",
-   "summary": "Attackers can steal credentials and begin exfiltrating data within minutes, often before security teams can respond. Exaforce examines real-world attacks involving…",
-   "priority": "High",
-   "category": "Attacks & Breaches",
-   "date": "22 Oct 2026, 14:02 UTC",
-   "published": "2026-10-22T14:02:12+00:00",
-   "priority_score": 6,
-   "priority_basis": [
-    "Editorial attention score 6 reached the High threshold (not CVSS)"
-   ],
-   "tags": [
-    "microsoft"
-   ],
-   "kev": [],
-   "sources": "BleepingComputer",
-   "url": "story/92b876190d73.html"
-  },
-  {
    "id": "190252fca79a",
    "title": "CISA: SafePay ransomware hit over 600 critical infrastructure orgs",
    "summary": "The Cybersecurity and Infrastructure Security Agency (CISA) says the SafePay ransomware gang has breached over 600 critical infrastructure organizations worldwide since…",
@@ -177,6 +158,23 @@
    "kev": [],
    "sources": "BleepingComputer",
    "url": "story/190252fca79a.html"
+  },
+  {
+   "id": "af157714ac71",
+   "title": "Hacker leaks 281 GB of data from Germany’s far-right AfD party",
+   "summary": "The AfD has confirmed that hackers breached its hosting provider. A leak site now claims to offer 421,179 of the party’s internal emails, and shows AI-written summaries…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "23 Oct 2026, 12:29 UTC",
+   "published": "2026-10-23T12:29:16+00:00",
+   "priority_score": 5,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "Graham Cluley",
+   "url": "story/af157714ac71.html"
   },
   {
    "id": "ba1a1addd0c2",
@@ -305,13 +303,13 @@
    "url": "story/a45e553ca30b.html"
   },
   {
-   "id": "7c1ce9da91a8",
-   "title": "CVE-2026-105014 Azure Pipelines Remote Code Execution Vulnerability",
-   "summary": "Improper neutralization of special elements used in a command ('command injection') in Azure Pipelines allows an unauthorized attacker to execute code over a network.",
+   "id": "92b876190d73",
+   "title": "Machine speed attacks require machine speed detection and response",
+   "summary": "Attackers can steal credentials and begin exfiltrating data within minutes, often before security teams can respond. Exaforce examines real-world attacks involving…",
    "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "22 Oct 2026, 14:00 UTC",
-   "published": "2026-10-22T14:00:00+00:00",
+   "category": "Attacks & Breaches",
+   "date": "22 Oct 2026, 14:02 UTC",
+   "published": "2026-10-22T14:02:12+00:00",
    "priority_score": 5,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
@@ -320,46 +318,8 @@
     "microsoft"
    ],
    "kev": [],
-   "sources": "Microsoft Security Response Center",
-   "url": "story/7c1ce9da91a8.html"
-  },
-  {
-   "id": "4dbd6628d42d",
-   "title": "CVE-2026-96185 Microsoft Exchange Online Remote Code Execution Vulnerability",
-   "summary": "Stack-based buffer overflow in Microsoft Exchange Online allows an authorized attacker to execute code over a network.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "22 Oct 2026, 14:00 UTC",
-   "published": "2026-10-22T14:00:00+00:00",
-   "priority_score": 5,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "microsoft"
-   ],
-   "kev": [],
-   "sources": "Microsoft Security Response Center",
-   "url": "story/4dbd6628d42d.html"
-  },
-  {
-   "id": "a9a8f75e73bb",
-   "title": "CVE-2026-96303 Microsoft PowerShell Security Feature Bypass Vulnerability",
-   "summary": "Corrected Fixed Build Number and Download links in the Security Updates table. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "22 Oct 2026, 14:00 UTC",
-   "published": "2026-10-22T14:00:00+00:00",
-   "priority_score": 5,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "microsoft"
-   ],
-   "kev": [],
-   "sources": "Microsoft Security Response Center",
-   "url": "story/a9a8f75e73bb.html"
+   "sources": "BleepingComputer",
+   "url": "story/92b876190d73.html"
   },
   {
    "id": "3d29fe5d9f89",
@@ -427,6 +387,25 @@
    "url": "story/4fd8d5a31fd8.html"
   },
   {
+   "id": "ff1522ac28cb",
+   "title": "Cyber Insurance's New Reality: Underwriting Isn't Enough",
+   "summary": "Rising AI, social engineering, and cloud risks are pushing carriers beyond risk transfer and deeper into cybersecurity itself.",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "23 Oct 2026, 13:30 UTC",
+   "published": "2026-10-23T13:30:00+00:00",
+   "priority_score": 4,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "ai"
+   ],
+   "kev": [],
+   "sources": "Dark Reading",
+   "url": "story/ff1522ac28cb.html"
+  },
+  {
    "id": "8bb708370d7a",
    "title": "Quest Diagnostics warns of potential data theft after attack on lab service system",
    "summary": "Nationwide lab test company Quest Diagnostics said one of its key systems may have experienced a breach of patient data.",
@@ -479,7 +458,7 @@
   },
   {
    "id": "0515431e7464",
-   "title": "Quest Diagnostics Reports Cyber Breach Affecting ‘Certain Patient Records’",
+   "title": "Quest Diagnostics Data Breach Exposed ‘Certain Patient Records’",
    "summary": "In a regulatory filing, Quest Diagnostics reported unauthorized access to its Quanum Lab Services Manager, a platform where certain clients can place test orders. The…",
    "priority": "Standard",
    "category": "Attacks & Breaches",
@@ -620,21 +599,61 @@
    "url": "story/c625905b3719.html"
   },
   {
-   "id": "14aa600d7f56",
-   "title": "Cybercrime crackdown across Africa leads to 1,462 arrests, $105 million seized",
-   "summary": "More than 1,400 suspected cybercriminals were arrested across Africa this summer as part of a crackdown on the gangs perpetrating online fraud, ransomware and business…",
+   "id": "7c1ce9da91a8",
+   "title": "CVE-2026-105014 Azure Pipelines Remote Code Execution Vulnerability",
+   "summary": "Improper neutralization of special elements used in a command ('command injection') in Azure Pipelines allows an unauthorized attacker to execute code over a network.",
    "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "22 Oct 2026, 13:30 UTC",
-   "published": "2026-10-22T13:30:00+00:00",
+   "category": "Patch Radar",
+   "date": "22 Oct 2026, 14:00 UTC",
+   "published": "2026-10-22T14:00:00+00:00",
    "priority_score": 4,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
-   "tags": [],
+   "tags": [
+    "microsoft"
+   ],
    "kev": [],
-   "sources": "The Record",
-   "url": "story/14aa600d7f56.html"
+   "sources": "Microsoft Security Response Center",
+   "url": "story/7c1ce9da91a8.html"
+  },
+  {
+   "id": "4dbd6628d42d",
+   "title": "CVE-2026-96185 Microsoft Exchange Online Remote Code Execution Vulnerability",
+   "summary": "Stack-based buffer overflow in Microsoft Exchange Online allows an authorized attacker to execute code over a network.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "22 Oct 2026, 14:00 UTC",
+   "published": "2026-10-22T14:00:00+00:00",
+   "priority_score": 4,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "microsoft"
+   ],
+   "kev": [],
+   "sources": "Microsoft Security Response Center",
+   "url": "story/4dbd6628d42d.html"
+  },
+  {
+   "id": "a9a8f75e73bb",
+   "title": "CVE-2026-96303 Microsoft PowerShell Security Feature Bypass Vulnerability",
+   "summary": "Corrected Fixed Build Number and Download links in the Security Updates table. This is an informational change only.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "22 Oct 2026, 14:00 UTC",
+   "published": "2026-10-22T14:00:00+00:00",
+   "priority_score": 4,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "microsoft"
+   ],
+   "kev": [],
+   "sources": "Microsoft Security Response Center",
+   "url": "story/a9a8f75e73bb.html"
   },
   {
    "id": "1d3516a0d0a6",
@@ -726,63 +745,6 @@
    "kev": [],
    "sources": "SecurityWeek",
    "url": "story/67c1ab51681c.html"
-  },
-  {
-   "id": "6e4d169a998c",
-   "title": "CVE-2026-61359 Windows Storage Elevation of Privilege Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "21 Oct 2026, 14:00 UTC",
-   "published": "2026-10-21T14:00:00+00:00",
-   "priority_score": 4,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "microsoft"
-   ],
-   "kev": [],
-   "sources": "Microsoft Security Response Center",
-   "url": "story/6e4d169a998c.html"
-  },
-  {
-   "id": "905472152d32",
-   "title": "CVE-2026-85868 Windows Common Log File System Driver Elevation of Privilege Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "21 Oct 2026, 14:00 UTC",
-   "published": "2026-10-21T14:00:00+00:00",
-   "priority_score": 4,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "microsoft"
-   ],
-   "kev": [],
-   "sources": "Microsoft Security Response Center",
-   "url": "story/905472152d32.html"
-  },
-  {
-   "id": "5a4ecf9699d2",
-   "title": "CVE-2026-97783 Microsoft Office SharePoint Spoofing Vulnerability",
-   "summary": "The vulnerability associated with this CVE was fixed in July, however was inadvertently not included with that release. Microsoft recommends updating to the most current…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "21 Oct 2026, 14:00 UTC",
-   "published": "2026-10-21T14:00:00+00:00",
-   "priority_score": 4,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "microsoft"
-   ],
-   "kev": [],
-   "sources": "Microsoft Security Response Center",
-   "url": "story/5a4ecf9699d2.html"
   },
   {
    "id": "7f88afbf76a3",
@@ -878,23 +840,6 @@
    "url": "story/b1e34d264127.html"
   },
   {
-   "id": "834a248937df",
-   "title": "When Your Ransomware Negotiator Works for the Other Side",
-   "summary": "The shocking arrest of a well-known ransomware negotiator reveals the critical need for vendor program oversight.",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "16 Oct 2026, 14:00 UTC",
-   "published": "2026-10-16T14:00:00+00:00",
-   "priority_score": 4,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "Dark Reading",
-   "url": "story/834a248937df.html"
-  },
-  {
    "id": "0151e8522bf7",
    "title": "LiteLLM release pipeline hacked to distribute info-stealer malware",
    "summary": "Hackers compromised the LiteLLM project's PyPI package and published malicious Docker images with a payload that steals credentials, secrets, and environment variables.",
@@ -950,38 +895,21 @@
    "url": "story/3c321f073d20.html"
   },
   {
-   "id": "6b9aa0664452",
-   "title": "CVE-2026-97785 AAD App Proxy Elevation of Privilege Vulnerability",
-   "summary": "Improper authentication in AAD App Proxy allows an unauthorized attacker to elevate privileges over a network.",
+   "id": "14aa600d7f56",
+   "title": "Cybercrime crackdown across Africa leads to 1,462 arrests, $105 million seized",
+   "summary": "More than 1,400 suspected cybercriminals were arrested across Africa this summer as part of a crackdown on the gangs perpetrating online fraud, ransomware and business…",
    "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "22 Oct 2026, 14:00 UTC",
-   "published": "2026-10-22T14:00:00+00:00",
+   "category": "Attacks & Breaches",
+   "date": "22 Oct 2026, 13:30 UTC",
+   "published": "2026-10-22T13:30:00+00:00",
    "priority_score": 3,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
    "tags": [],
    "kev": [],
-   "sources": "Microsoft Security Response Center",
-   "url": "story/6b9aa0664452.html"
-  },
-  {
-   "id": "c78f9791369d",
-   "title": "Amazon says PHP2Shell exploitation began 4 days before patches",
-   "summary": "Security researchers at Amazon Threat Intelligence say attackers began targeting the PHP2Shell flaws four days before security patches were released on Wednesday.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "22 Oct 2026, 13:09 UTC",
-   "published": "2026-10-22T13:09:12+00:00",
-   "priority_score": 3,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "BleepingComputer, SecurityWeek",
-   "url": "story/c78f9791369d.html"
+   "sources": "The Record",
+   "url": "story/14aa600d7f56.html"
   },
   {
    "id": "34f12a1f7c34",
@@ -1088,9 +1016,9 @@
    "url": "story/71f0485320c6.html"
   },
   {
-   "id": "6478f5844cef",
-   "title": "PHP Issues Emergency Patches for Two Critical PHP2Shell RCE Flaws as Exploit Attempts Emerge",
-   "summary": "PHP has released emergency updates that fix two critical flaws in the language itself, letting an attacker without an account run code on a web server. The fixes are in…",
+   "id": "6e4d169a998c",
+   "title": "CVE-2026-61359 Windows Storage Elevation of Privilege Vulnerability",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
    "priority": "Standard",
    "category": "Patch Radar",
    "date": "21 Oct 2026, 14:00 UTC",
@@ -1099,10 +1027,50 @@
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
-   "tags": [],
+   "tags": [
+    "microsoft"
+   ],
    "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/6478f5844cef.html"
+   "sources": "Microsoft Security Response Center",
+   "url": "story/6e4d169a998c.html"
+  },
+  {
+   "id": "905472152d32",
+   "title": "CVE-2026-85868 Windows Common Log File System Driver Elevation of Privilege Vulnerability",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "21 Oct 2026, 14:00 UTC",
+   "published": "2026-10-21T14:00:00+00:00",
+   "priority_score": 3,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "microsoft"
+   ],
+   "kev": [],
+   "sources": "Microsoft Security Response Center",
+   "url": "story/905472152d32.html"
+  },
+  {
+   "id": "5a4ecf9699d2",
+   "title": "CVE-2026-97783 Microsoft Office SharePoint Spoofing Vulnerability",
+   "summary": "The vulnerability associated with this CVE was fixed in July, however was inadvertently not included with that release. Microsoft recommends updating to the most current…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "21 Oct 2026, 14:00 UTC",
+   "published": "2026-10-21T14:00:00+00:00",
+   "priority_score": 3,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "microsoft"
+   ],
+   "kev": [],
+   "sources": "Microsoft Security Response Center",
+   "url": "story/5a4ecf9699d2.html"
   },
   {
    "id": "0dfa738d1635",
@@ -1351,42 +1319,38 @@
    "url": "story/b140e0bf691c.html"
   },
   {
-   "id": "113ed8d030c8",
-   "title": "CVE-2026-103572 Visual Studio Tools for Applications and SQL Server Management Studio Remote Code Execution Vulnerability",
-   "summary": "Updated the Security Updates table to add download and KB article links for Microsoft Visual Studio. This is an informational change only; the fixed builds are unchanged.",
+   "id": "bd43f4cf3245",
+   "title": "Why Caribbean Threats Cascade Into Global Cyber-Risk",
+   "summary": "The region is demonstrating what happens when exploits accelerate but assurance does not.",
    "priority": "Standard",
    "category": "Patch Radar",
-   "date": "16 Oct 2026, 14:00 UTC",
-   "published": "2026-10-16T14:00:00+00:00",
-   "priority_score": 3,
+   "date": "23 Oct 2026, 14:00 UTC",
+   "published": "2026-10-23T14:00:00+00:00",
+   "priority_score": 2,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
-   "tags": [
-    "microsoft"
-   ],
+   "tags": [],
    "kev": [],
-   "sources": "Microsoft Security Response Center",
-   "url": "story/113ed8d030c8.html"
+   "sources": "Dark Reading",
+   "url": "story/bd43f4cf3245.html"
   },
   {
-   "id": "1e38aeabbac4",
-   "title": "Chromium CVE-2026-106258: Uninitialized resource",
-   "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome…",
+   "id": "b49db17578fd",
+   "title": "UK proposes 14-year prison terms for undersea cable sabotage",
+   "summary": "In an era of hybrid threats, the British government wants to update the Submarine Telegraph Act 1885, which carries a maximum fine of £1,000 and five years’ imprisonment…",
    "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "16 Oct 2026, 14:00 UTC",
-   "published": "2026-10-16T14:00:00+00:00",
-   "priority_score": 3,
+   "category": "Industry & Research",
+   "date": "23 Oct 2026, 13:26 UTC",
+   "published": "2026-10-23T13:26:00+00:00",
+   "priority_score": 2,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
-   "tags": [
-    "microsoft"
-   ],
+   "tags": [],
    "kev": [],
-   "sources": "Microsoft Security Response Center",
-   "url": "story/1e38aeabbac4.html"
+   "sources": "The Record",
+   "url": "story/b49db17578fd.html"
   },
   {
    "id": "eb477469ff02",
@@ -1627,21 +1591,38 @@
    "url": "story/dcda11bca225.html"
   },
   {
-   "id": "c145f24074c2",
-   "title": "INTERPOL Arrests 1,462 Suspects, Disrupts 10,909 Cybercrime Networks in Global Crackdown",
-   "summary": "INTERPOL on Thursday announced that a coordinated law enforcement action has disrupted 10,909 malicious networks and recovered more than $105 million in illicit funds…",
+   "id": "6b9aa0664452",
+   "title": "CVE-2026-97785 AAD App Proxy Elevation of Privilege Vulnerability",
+   "summary": "Improper authentication in AAD App Proxy allows an unauthorized attacker to elevate privileges over a network.",
    "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "22 Oct 2026, 13:38 UTC",
-   "published": "2026-10-22T13:38:22+00:00",
+   "category": "Patch Radar",
+   "date": "22 Oct 2026, 14:00 UTC",
+   "published": "2026-10-22T14:00:00+00:00",
    "priority_score": 2,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
    "tags": [],
    "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/c145f24074c2.html"
+   "sources": "Microsoft Security Response Center",
+   "url": "story/6b9aa0664452.html"
+  },
+  {
+   "id": "c78f9791369d",
+   "title": "Amazon says PHP2Shell exploitation began 4 days before patches",
+   "summary": "Security researchers at Amazon Threat Intelligence say attackers began targeting the PHP2Shell flaws four days before security patches were released on Wednesday.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "22 Oct 2026, 13:09 UTC",
+   "published": "2026-10-22T13:09:12+00:00",
+   "priority_score": 2,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "BleepingComputer, SecurityWeek",
+   "url": "story/c78f9791369d.html"
   },
   {
    "id": "a9227db3dd33",
@@ -1809,42 +1790,21 @@
    "url": "story/a45dacf80c10.html"
   },
   {
-   "id": "bc6b0429e7ca",
-   "title": "ClickFix has never been bigger, and AI tools are its most convincing lure yet",
-   "summary": "ClickFix attacks are surging as cybercriminals use fake AI installers, malicious search results, and trusted chatbot platforms to trick users into executing malware…",
+   "id": "6478f5844cef",
+   "title": "PHP Issues Emergency Patches for Two Critical PHP2Shell RCE Flaws as Exploit Attempts Emerge",
+   "summary": "PHP has released emergency updates that fix two critical flaws in the language itself, letting an attacker without an account run code on a web server. The fixes are in…",
    "priority": "Standard",
-   "category": "AI Risk Lab",
+   "category": "Patch Radar",
    "date": "21 Oct 2026, 14:00 UTC",
-   "published": "2026-10-21T14:00:10+00:00",
+   "published": "2026-10-21T14:00:00+00:00",
    "priority_score": 2,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
-   "tags": [
-    "ai"
-   ],
+   "tags": [],
    "kev": [],
-   "sources": "BleepingComputer",
-   "url": "story/bc6b0429e7ca.html"
-  },
-  {
-   "id": "71ae2abe1296",
-   "title": "Asymptote Labs Lands $5.5 Million Seed for AI Agent Runtime Security",
-   "summary": "Asymptote Labs raises $5.5M seed led by Tower Research Ventures to commercialize its Beacon AI agent runtime security platform. The post Asymptote Labs Lands $5.5…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "21 Oct 2026, 13:17 UTC",
-   "published": "2026-10-21T13:17:35+00:00",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "ai"
-   ],
-   "kev": [],
-   "sources": "SecurityWeek",
-   "url": "story/71ae2abe1296.html"
+   "sources": "The Hacker News",
+   "url": "story/6478f5844cef.html"
   },
   {
    "id": "13820dacd5f3",
@@ -2346,6 +2306,23 @@
    "url": "story/2f6312b7767d.html"
   },
   {
+   "id": "c145f24074c2",
+   "title": "INTERPOL Arrests 1,462 Suspects, Disrupts 10,909 Cybercrime Networks in Global Crackdown",
+   "summary": "INTERPOL on Thursday announced that a coordinated law enforcement action has disrupted 10,909 malicious networks and recovered more than $105 million in illicit funds…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "22 Oct 2026, 13:38 UTC",
+   "published": "2026-10-22T13:38:22+00:00",
+   "priority_score": 1,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "The Hacker News",
+   "url": "story/c145f24074c2.html"
+  },
+  {
    "id": "6a8ba679d4e1",
    "title": "Indurex Raises $8 Million to Expand Industrial Cybersecurity Platform",
    "summary": "The Amsterdam-based company plans to use the funding for research and development and commercial expansion in Europe and the Middle East. The post Indurex Raises $8…",
@@ -2720,6 +2697,44 @@
    "kev": [],
    "sources": "The Record",
    "url": "story/39edcc9fa917.html"
+  },
+  {
+   "id": "bc6b0429e7ca",
+   "title": "ClickFix has never been bigger, and AI tools are its most convincing lure yet",
+   "summary": "ClickFix attacks are surging as cybercriminals use fake AI installers, malicious search results, and trusted chatbot platforms to trick users into executing malware…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "21 Oct 2026, 14:00 UTC",
+   "published": "2026-10-21T14:00:10+00:00",
+   "priority_score": 1,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "ai"
+   ],
+   "kev": [],
+   "sources": "BleepingComputer",
+   "url": "story/bc6b0429e7ca.html"
+  },
+  {
+   "id": "71ae2abe1296",
+   "title": "Asymptote Labs Lands $5.5 Million Seed for AI Agent Runtime Security",
+   "summary": "Asymptote Labs raises $5.5M seed led by Tower Research Ventures to commercialize its Beacon AI agent runtime security platform. The post Asymptote Labs Lands $5.5…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "21 Oct 2026, 13:17 UTC",
+   "published": "2026-10-21T13:17:35+00:00",
+   "priority_score": 1,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "ai"
+   ],
+   "kev": [],
+   "sources": "SecurityWeek",
+   "url": "story/71ae2abe1296.html"
   },
   {
    "id": "b81260804ad3",
@@ -3543,45 +3558,6 @@
    "kev": [],
    "sources": "Microsoft Security Blog",
    "url": "story/c094ac3382c9.html"
-  },
-  {
-   "id": "82bd71e8965d",
-   "title": "OpenAI Research Model Spent 3rd-Party Test ETH Without Permission to Deploy Smart Contract",
-   "summary": "OpenAI has disclosed seven new incidents in which its artificial intelligence (AI) models exhibited misaligned behavior, including one case where its research model…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "16 Oct 2026, 14:03 UTC",
-   "published": "2026-10-16T14:03:04+00:00",
-   "priority_score": 1,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "ai"
-   ],
-   "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/82bd71e8965d.html"
-  },
-  {
-   "id": "d269ee990910",
-   "title": "Employees using personal ChatGPT at work? Here's what IT admins need to do",
-   "summary": "Employees using personal ChatGPT accounts at work can expose sensitive company data, even when their organization provides an approved Enterprise workspace. NordLayer…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "16 Oct 2026, 13:50 UTC",
-   "published": "2026-10-16T13:50:59+00:00",
-   "priority_score": 1,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "microsoft",
-    "ai"
-   ],
-   "kev": [],
-   "sources": "BleepingComputer",
-   "url": "story/d269ee990910.html"
   },
   {
    "id": "9fa3f970853e",
