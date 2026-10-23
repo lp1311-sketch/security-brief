@@ -1,28 +1,6 @@
 {
  "stories": [
   {
-   "id": "15367a3259ff",
-   "title": "BeyondTrust Remote Support Zero-Day Continues Trend of Exploited Edge Bugs",
-   "summary": "Ivanti, Cisco, and Palo Alto Networks all had vulnerabilities in edge devices come under fire this week. Now BeyondTrust joins the group.",
-   "priority": "Critical",
-   "category": "Patch Radar",
-   "date": "16 Oct 2026, 20:34 UTC",
-   "priority_score": 13,
-   "priority_basis": [
-    "CISA KEV listing: CVE-2026-102764"
-   ],
-   "tags": [
-    "critical",
-    "exploited",
-    "patch-now"
-   ],
-   "kev": [
-    "CVE-2026-102764"
-   ],
-   "sources": "Dark Reading, The Hacker News, BleepingComputer",
-   "url": "story/15367a3259ff.html"
-  },
-  {
    "id": "23872cb1986e",
    "title": "Arista Warns of Critical VeloCloud SQL Injection Zero-Day Exploited in Attacks",
    "summary": "Attackers are exploiting a zero-day SQL injection flaw in Arista's VeloCloud Orchestrator (VCO), the central management system for VeloCloud SD-WAN networks, the company…",
@@ -173,24 +151,6 @@
    "url": "story/92b876190d73.html"
   },
   {
-   "id": "3d29fe5d9f89",
-   "title": "Someone Tried to Exploit PHP2Shell 4 Days Before the Vulnerabilities Were Publicly Disclosed",
-   "summary": "Amazon's Threat Intelligence team on Wednesday said it detected an attempt to exploit the newly disclosed PHP2Shell vulnerabilities dating back to October 17, 2026…",
-   "priority": "High",
-   "category": "Patch Radar",
-   "date": "22 Oct 2026, 06:34 UTC",
-   "priority_score": 6,
-   "priority_basis": [
-    "Editorial attention score 6 reached the High threshold (not CVSS)"
-   ],
-   "tags": [
-    "exploited"
-   ],
-   "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/3d29fe5d9f89.html"
-  },
-  {
    "id": "f6fe2f9557b7",
    "title": "CISA Orders Federal Agencies to Patch Exploited Plex2Shell, Siemens, and SiteGuard Flaws",
    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added four vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog, including…",
@@ -211,6 +171,28 @@
    ],
    "sources": "The Hacker News",
    "url": "story/f6fe2f9557b7.html"
+  },
+  {
+   "id": "15367a3259ff",
+   "title": "BeyondTrust Remote Support Zero-Day Continues Trend of Exploited Edge Bugs",
+   "summary": "Ivanti, Cisco, and Palo Alto Networks all had vulnerabilities in edge devices come under fire this week. Now BeyondTrust joins the group.",
+   "priority": "Critical",
+   "category": "Patch Radar",
+   "date": "16 Oct 2026, 20:34 UTC",
+   "priority_score": 6,
+   "priority_basis": [
+    "CISA KEV listing: CVE-2026-102764"
+   ],
+   "tags": [
+    "critical",
+    "exploited",
+    "patch-now"
+   ],
+   "kev": [
+    "CVE-2026-102764"
+   ],
+   "sources": "Dark Reading, The Hacker News",
+   "url": "story/15367a3259ff.html"
   },
   {
    "id": "222dfd34d31c",
@@ -351,6 +333,24 @@
    "kev": [],
    "sources": "The Hacker News",
    "url": "story/1d3516a0d0a6.html"
+  },
+  {
+   "id": "3d29fe5d9f89",
+   "title": "Someone Tried to Exploit PHP2Shell 4 Days Before the Vulnerabilities Were Publicly Disclosed",
+   "summary": "Amazon's Threat Intelligence team on Wednesday said it detected an attempt to exploit the newly disclosed PHP2Shell vulnerabilities dating back to October 17, 2026…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "22 Oct 2026, 06:34 UTC",
+   "priority_score": 5,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "exploited"
+   ],
+   "kev": [],
+   "sources": "The Hacker News",
+   "url": "story/3d29fe5d9f89.html"
   },
   {
    "id": "7f88afbf76a3",
@@ -1608,22 +1608,6 @@
    "url": "story/dd2c177462a4.html"
   },
   {
-   "id": "eff3ebf7d52f",
-   "title": "New QPACK Flaws Can Crash HTTP/3 Servers, Trigger Up to 4,000-Fold Memory Amplification",
-   "summary": "A remote attacker who has not logged in can crash many HTTP/3 web servers with a single connection, security firm FoxIO disclosed, releasing working proof-of-concept…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "22 Oct 2026, 06:38 UTC",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/eff3ebf7d52f.html"
-  },
-  {
    "id": "a734856ab1ed",
    "title": "UAE Transitions 50% of Gov't Services to Agentic AI",
    "summary": "The United Arab Emirates says it's creating a foundation of security and safety as it transforms its public service footprint.",
@@ -1884,22 +1868,6 @@
    "kev": [],
    "sources": "SecurityWeek",
    "url": "story/724c2add33ae.html"
-  },
-  {
-   "id": "f543d8c6a881",
-   "title": "Hijacked Developer Account Used to Plant Stealer in OVHcloud CLI",
-   "summary": "Researchers say the developer’s account was compromised in March with a GlassWorm-linked loader. The post Hijacked Developer Account Used to Plant Stealer in OVHcloud…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "21 Oct 2026, 06:02 UTC",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "SecurityWeek",
-   "url": "story/f543d8c6a881.html"
   },
   {
    "id": "05dd90fd0f45",
@@ -2337,6 +2305,22 @@
    "url": "story/7e8ace9d42e7.html"
   },
   {
+   "id": "eff3ebf7d52f",
+   "title": "New QPACK Flaws Can Crash HTTP/3 Servers, Trigger Up to 4,000-Fold Memory Amplification",
+   "summary": "A remote attacker who has not logged in can crash many HTTP/3 web servers with a single connection, security firm FoxIO disclosed, releasing working proof-of-concept…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "22 Oct 2026, 06:38 UTC",
+   "priority_score": 1,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "The Hacker News",
+   "url": "story/eff3ebf7d52f.html"
+  },
+  {
    "id": "ca191a78820b",
    "title": "Kompromittierte AOMEI Update-Server lieferten von Mai bis Juni 2026 Malware",
    "summary": "Noch ein Nachtrag von Montag, zu dem ich erst jetzt komme. Es gibt Berichte, dass die Update-Server des Backup-Anbieters AOMEI durch Angreifer kompromittiert waren. Den…",
@@ -2613,20 +2597,20 @@
    "url": "story/0c6fe061465a.html"
   },
   {
-   "id": "bd60f0eb51aa",
-   "title": "Hackers Hid Vasilek Backdoor in VMware Tools During 2-Year Russian Healthcare Intrusion",
-   "summary": "A Belarus-aligned hacktivist group spent nearly two years within the network of a Russian healthcare organization. According to a report published by Russian…",
+   "id": "f543d8c6a881",
+   "title": "Hijacked Developer Account Used to Plant Stealer in OVHcloud CLI",
+   "summary": "Researchers say the developer’s account was compromised in March with a GlassWorm-linked loader. The post Hijacked Developer Account Used to Plant Stealer in OVHcloud…",
    "priority": "Standard",
    "category": "Attacks & Breaches",
-   "date": "21 Oct 2026, 06:05 UTC",
+   "date": "21 Oct 2026, 06:02 UTC",
    "priority_score": 1,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
    "tags": [],
    "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/bd60f0eb51aa.html"
+   "sources": "SecurityWeek",
+   "url": "story/f543d8c6a881.html"
   },
   {
    "id": "7a020fdc3830",
@@ -3405,6 +3389,22 @@
    "kev": [],
    "sources": "The Hacker News",
    "url": "story/f909b9dee009.html"
+  },
+  {
+   "id": "bd60f0eb51aa",
+   "title": "Hackers Hid Vasilek Backdoor in VMware Tools During 2-Year Russian Healthcare Intrusion",
+   "summary": "A Belarus-aligned hacktivist group spent nearly two years within the network of a Russian healthcare organization. According to a report published by Russian…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "21 Oct 2026, 06:05 UTC",
+   "priority_score": 0,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "The Hacker News",
+   "url": "story/bd60f0eb51aa.html"
   },
   {
    "id": "b374ef599927",
