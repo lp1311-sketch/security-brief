@@ -2584,10 +2584,10 @@
    "source_name": "The Hacker News",
    "official": false,
    "source_type": "news",
-   "title": "URGENT - PHP Warns of Another Unpatched RCE Two Days After Emergency PHP2Shell Patches",
+   "title": "PHP Warns of Another Unpatched RCE Two Days After Emergency PHP2Shell Patches",
    "link": "https://thehackernews.com/2026/10/urgent-php-warns-of-another-unpatched.html",
    "published": "2026-10-23T11:25:43+00:00",
-   "summary": "PHP has warned of another way an attacker could run code on a web server, two days after it shipped emergency fixes for the critical PHP2Shell flaws. The new issue, assigned CVE-2026-115560, affects only web applications configured in an unusual way, and PHP considers it an unlikely risk. The project is not issuing an…",
+   "summary": "PHP has warned of another way an attacker could run code on a web server, two days after it shipped emergency fixes for the critical PHP2Shell flaws. The new issue, assigned CVE-2026-115560, affects only web applications configured in an unusual way, and PHP considers it an unlikely risk.The project is not issuing an…",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSXE1XecomGt7TSLi_DCDVL8oQjsLEtppNNGjkuW1cbVl-cXZkMG-rqTr-oSVz_6XfoU8aoScw3rjGxsnTpV3JaV5eWfj431lg09Rnrrk1UjwNq1ZEofkwR4FaM2qatC_FD9ZNBZk-T9_9ddu8n-BtUkhwVgWzc2ZvaWAHP8eMxlLU19qxIjlXeHOJYHs/s1600/php2.jpg",
    "cves": [
     "CVE-2026-115560"
@@ -3011,6 +3011,23 @@
     "Dozens of government agencies released urgent warnings throughout the evening and early on Wednesday morning telling website maintainers to stay alert and patch now that fixes have been released .",
     "The European Union , Germany , Japan , Australia , the U.K. , the Netherlands all released warnings locally about the vulnerabilities and several governments even took some websites offline in advance of the patch being released."
    ],
+   "instructions_checked": true
+  },
+  {
+   "id": "8bb708370d7a",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Quest Diagnostics warns of potential data theft after attack on lab service system",
+   "link": "https://therecord.media/quest-diagnostics-network-intrusion",
+   "published": "2026-10-23T12:52:00+00:00",
+   "summary": "Nationwide lab test company Quest Diagnostics said one of its key systems may have experienced a breach of patient data.",
+   "image": "https://cms.therecord.media/uploads/DSC_05112_bf00638451.jpg",
+   "cves": [],
+   "first_seen": "2026-10-23T13:08:23.991777+00:00",
+   "image_checked": true,
+   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -5163,6 +5180,28 @@
    "source_type": "news"
   },
   {
+   "id": "eb477469ff02",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "HPE patches eight max severity RCE and auth bypass AOS flaws",
+   "link": "https://www.bleepingcomputer.com/news/security/hpe-patches-eight-max-severity-rce-and-auth-bypass-aos-flaws/",
+   "published": "2026-10-23T12:48:00+00:00",
+   "summary": "Hewlett Packard Enterprise (HPE) released security updates to patch 72 vulnerabilities in the Aruba Operating System (ArubaOS), including eight maximum-severity authentication bypass and code execution issues.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/23/0_Hewlett_Packard_Enterprise_HPE.jpg",
+   "cves": [],
+   "first_seen": "2026-10-23T13:08:23.991777+00:00",
+   "image_checked": true,
+   "instructions": [
+    "HPE warned customers to patch these security issues as soon as possible and provided mitigation measures, including restricting access to AOS management interfaces.",
+    "\"Customers are strongly urged to patch their instances due to the complexity, breadth, and impact of these vulnerabilities,\" the company warned in a Thursday security advisory.",
+    "\"HPE Networking is not aware of any public discussion or exploit code that targets the listed vulnerabilities as of the release date of this advisory,\" it said.",
+    "Hewlett Packard Enterprise (HPE) released security updates to patch 72 vulnerabilities in the Aruba Operating System (ArubaOS), including eight maximum-severity authentication bypass and code execution issues."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "10c7257940cc",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -5932,22 +5971,6 @@
    "published": "2026-10-19T19:19:33+00:00",
    "summary": "Researchers say attackers authenticated into Microsoft 365 tenants using ConnectWise credentials; ConnectWise says customer impact remains unconfirmed.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt8bed2421e7501183/6ad6650c7e69bd1337538960/Cloud_Backup-TU_IS-GettyImages-1399936043_(1).jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "48b9aea0ee83",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "When AI Agents Commit Breaches, Humans May Not Be Held Liable",
-   "link": "https://www.darkreading.com/insider-threats/ai-agents-breaches-humans-liable",
-   "published": "2026-10-16T13:00:00+00:00",
-   "summary": "As agents escape containment and access external systems, responsibility remains human. Accountability, however, is much less settled.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt57714ec5c1148817/6ad10d43b8f30368a29f5d16/robot_peeking_through_blinds-Moor_Studio-GettyImages-1746666469.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-10-20T09:53:14.101641+00:00",
    "instructions": [],
@@ -6859,6 +6882,28 @@
     "Humans establish the rules and approval limits, Playbooks specify what the security response should achieve, and Guardian Agents execute it, looking into why an agent’s risk shifted and suggesting or enforcing containment.",
     "ICS Patch Tuesday: Siemens Issues 17 Advisories, Rockwell Fixes ArmorBlock Takeover Flaw",
     "Preparing for disruption must become part of day-to-day operations."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "ceaaccb7c738",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Mirai Botnet Operators Join PHP2Shell Attacks as ASLR Bypass Exploits Emerge",
+   "link": "https://www.securityweek.com/mirai-botnet-operators-join-php2shell-attacks-as-aslr-bypass-exploits-emerge/",
+   "published": "2026-10-23T12:45:52+00:00",
+   "summary": "Researchers tie PHP2Shell attempts to a Mirai botnet and show an ASLR bypass, but no successful compromise has been confirmed yet. The post Mirai Botnet Operators Join PHP2Shell Attacks as ASLR Bypass Exploits Emerge appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2024/06/PHP.jpeg",
+   "cves": [],
+   "first_seen": "2026-10-23T13:08:23.991777+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Vendors, security firms and government agencies have since issued advisories, detection rules and patching guidance.",
+    "The company’s exploit for CVE-2026-109618 relies on a memory leak to reach code execution on x86-64 systems with ASLR enabled and PHP error display turned off, which is the recommended setup for production.",
+    "Preparing for disruption must become part of day-to-day operations.",
+    "Mirai botnet linked to exploitation attempts Sophos says threat actors have tried to leverage PHP2Shell to install Potassium , which it believes is a variant of the Mirai botnet."
    ],
    "instructions_checked": true
   },
