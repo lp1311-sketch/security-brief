@@ -1033,7 +1033,8 @@ def _layout(cfg: dict, title: str, desc: str, body: str, base: str, image: str |
     links.append(f'<a href="{base}briefings/index.html">Analysis</a>')
     links.append(f'<a href="{base}patch-tuesday/index.html">Patch Tuesday</a>')
     links.insert(0, f'<a href="{base}today/index.html">Today</a>')
-    links.insert(1, f'<a href="{base}saved/index.html">Saved</a>')
+    links.insert(1, f'<a href="{base}radar/index.html">My Radar</a>')
+    links.insert(2, f'<a href="{base}saved/index.html">Saved</a>')
     nav = "".join(links)
     return f"""<!doctype html>
 <html lang="en">
@@ -1105,6 +1106,18 @@ def priority_summary(s: dict) -> str:
     return "No elevated-priority trigger identified in feed data"
 
 
+def evidence_label(s: dict) -> str:
+    if s.get("kev"):
+        return "Evidence: CISA KEV listing · verify affected versions"
+    if any(x.startswith("Official source reports exploitation:") for x in s.get("priority_basis", [])):
+        return "Evidence: exploitation reported by an official source"
+    if "exploited" in s.get("tags", []):
+        return "Signal: exploitation reported in a source · verify independently"
+    if s.get("cves"):
+        return "Signal: CVE named · check vendor advisory for fixes"
+    return "Context: editorial attention score, not confirmed exposure"
+
+
 def _card(s: dict, base: str = "") -> str:
     img = s["image"] or fallback_cover(s)
     names = ", ".join(dict.fromkeys(x["name"] for x in s["sources"]))
@@ -1116,6 +1129,7 @@ def _card(s: dict, base: str = "") -> str:
 <div class="card-body">
 <p class="kicker"><span class="cat">{esc(CATEGORIES[s['category']][0])}</span> <span class="type">{esc(s.get('content_type', 'News'))}</span></p>
 <h3><a href="{base}story/{esc(s['id'])}.html">{esc(s['title'])}</a></h3>
+<p class="card-evidence">{esc(evidence_label(s))}</p>
 <p class="summary">{esc(_short(s['summary'], 170))}</p>
 <p class="priority-note"><strong>Editorial priority:</strong> {esc(priority_summary(s))}</p>
 <p class="meta">{esc(names)} &middot; {esc(fmt_date(s['published']))}</p>
@@ -1883,6 +1897,35 @@ fetch('../stories.json',{cache:'no-store'}).then(function(r){return r.json();}).
 })();"""
 
 
+RADAR_JS = "(function(){\n'use strict';\nvar KEY='sb-radar-v1',SAVED='sb-saved';\nvar PRESETS=['Microsoft 365','Entra','Defender','Fortinet','Palo Alto Networks','Ivanti','Cisco','Other'];\nvar selected=[];try{var old=JSON.parse(localStorage.getItem(KEY)||'[]');if(Array.isArray(old))selected=old.filter(function(v){return PRESETS.indexOf(v)>-1;});}catch(e){}\nselected=Array.from(new Set(selected));\nvar choices=document.getElementById('radar-choices'),results=document.getElementById('radar-results'),summary=document.getElementById('radar-summary'),empty=document.getElementById('radar-empty'),count=document.getElementById('radar-count'),notice=document.getElementById('radar-notice');\nvar sort=document.getElementById('radar-sort'),limit=60,stories=[];\nvar patterns={\n 'Microsoft 365':/\\bmicrosoft 365\\b|\\bm365\\b|\\boffice 365\\b|\\bexchange\\b|\\bsharepoint\\b|\\bonedrive\\b|\\boutlook\\b|\\bteams\\b/i,\n 'Entra':/\\bentra\\b|\\bazure ad\\b|\\bconditional access\\b|\\bidentity\\b|\\boauth\\b|\\bsign.in\\b/i,\n 'Defender':/\\bdefender\\b|\\bsentinel\\b|\\bxdr\\b/i,\n 'Fortinet':/\\bfortinet\\b|\\bfortigate\\b|\\bfortios\\b|\\bfortiweb\\b/i,\n 'Palo Alto Networks':/\\bpalo alto\\b|\\bpan.os\\b|\\bprisma access\\b|\\bglobalprotect\\b/i,\n 'Ivanti':/\\bivanti\\b/i,\n 'Cisco':/\\bcisco\\b|\\bios xe\\b/i\n};\nfunction matches(s,label){\n var text=[s.title,s.summary,s.category].join(' ');\n if(label==='Other')return !PRESETS.slice(0,-1).some(function(p){return patterns[p].test(text)});\n return patterns[label].test(text);\n}\nfunction safeSaved(){try{var v=JSON.parse(localStorage.getItem(SAVED)||'[]');return Array.isArray(v)?v:[];}catch(e){return [];}}\nfunction toggleSaved(id){var v=safeSaved(),pos=v.indexOf(id);if(pos<0)v.push(id);else v.splice(pos,1);try{localStorage.setItem(SAVED,JSON.stringify(v));}catch(e){notice.textContent='Browser storage unavailable; saved stories are not retained.';}paint();}\nfunction el(name,cls,text){var n=document.createElement(name);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n;}\nfunction paint(){\n choices.replaceChildren();\n PRESETS.forEach(function(label){var btn=el('button','radar-chip',label);btn.type='button';btn.setAttribute('aria-pressed',String(selected.includes(label)));btn.addEventListener('click',function(){if(selected.includes(label))selected=selected.filter(function(v){return v!==label;});else selected.push(label);try{localStorage.setItem(KEY,JSON.stringify(selected));}catch(e){notice.textContent='Browser storage unavailable; selections will reset after reload.';}paint();});choices.appendChild(btn);});\n results.replaceChildren();\n if(!stories.length){count.textContent='No feed stories loaded';empty.hidden=false;return;}\n if(!selected.length){count.textContent='Choose at least one technology';empty.hidden=false;empty.textContent='Choose the technologies you use to build your Radar.';summary.textContent='Your choices stay in this browser. No account or server-side tracking.';return;}\n var filtered=stories.filter(function(s){return selected.some(function(label){return matches(s,label);});});\n filtered.sort(function(a,b){if(sort.value==='priority'){var ranks={Critical:0,High:1,Standard:2};var d=(ranks[a.priority]??3)-(ranks[b.priority]??3);if(d)return d;d=(Number(b.priority_score)||0)-(Number(a.priority_score)||0);if(d)return d;}return (Date.parse(b.published)||0)-(Date.parse(a.published)||0);});\n count.textContent=filtered.length+' matching '+(filtered.length===1?'story':'stories')+' in the current feed';\n summary.textContent='Following '+selected.join(', ')+'. Matches are keyword-based, not a confirmed inventory or exposure assessment.';\n empty.hidden=filtered.length>0;if(!filtered.length)empty.textContent='No matches in the current feed. Try another technology or check All stories.';\n var fragment=document.createDocumentFragment(),saved=safeSaved();\n filtered.slice(0,limit).forEach(function(s){\n   var card=el('article','radar-result');\n   var line=el('div','radar-result-head');\n   line.appendChild(el('span','badge '+s.priority,s.priority));\n   var action=s.kev&&s.kev.length?'CISA KEV listed':s.tags&&s.tags.includes('exploited')?'Exploitation reported':'Editorial priority, not CVSS';\n   line.appendChild(el('span','radar-evidence',action));card.appendChild(line);\n   var title=el('h3'),link=el('a','',s.title);link.href='../'+s.url;title.appendChild(link);card.appendChild(title);\n   card.appendChild(el('p','radar-excerpt',s.summary||'Read the source brief for details.'));\n   card.appendChild(el('p','radar-facts',(s.sources||'Source not specified')+' · '+(s.date||'Date unavailable')));\n   var foot=el('div','radar-result-foot');var why=el('span','',s.priority_basis&&s.priority_basis[0]||'Verify the underlying report before acting.');foot.appendChild(why);\n   var save=el('button','radar-save',saved.includes(s.id)?'Saved':'Save');save.type='button';save.setAttribute('aria-pressed',String(saved.includes(s.id)));save.addEventListener('click',function(){toggleSaved(s.id);});foot.appendChild(save);card.appendChild(foot);\n   fragment.appendChild(card);\n });results.appendChild(fragment);\n if(filtered.length>limit)notice.textContent='Showing the first '+limit+' matches. Use All stories to browse the full feed.';\n else if(!notice.textContent.startsWith('Browser storage'))notice.textContent='';\n}\nsort.addEventListener('change',paint);\nfetch('../stories.json',{cache:'no-store'}).then(function(response){if(!response.ok)throw Error('Feed index not available');return response.json();}).then(function(data){\n stories=(Array.isArray(data.stories)?data.stories:[]).filter(function(s){return /^[0-9a-f]{12}$/.test(s.id||'') && /^story\\/[0-9a-f]{12}\\.html$/.test(s.url||'');});paint();\n}).catch(function(){count.textContent='Feed unavailable';empty.hidden=false;empty.textContent='Radar could not load the story index right now. The rest of the site is still available.';});\npaint();\n})();"
+RADAR_CSS = '/* My Radar — privacy-first client-side personalization; all data from existing stories.json. */\n.radar-intro{position:relative;overflow:hidden;border:1px solid color-mix(in srgb,var(--accent) 26%,var(--line));border-radius:24px;padding:clamp(20px,4vw,36px);margin:25px 0;background:radial-gradient(circle at 85% 5%,color-mix(in srgb,#38bdf8 12%,transparent),transparent 50%),var(--surface)}\n.radar-eyebrow{font-size:.7rem;font-weight:800;letter-spacing:.17em;color:var(--accent);text-transform:uppercase}.radar-intro h1{font-size:clamp(2rem,4vw,3.35rem);line-height:1.04;margin:10px 0 13px;letter-spacing:-.045em}.radar-intro p{max-width:72ch;color:var(--muted);line-height:1.65}.radar-intro .radar-proof{font-size:.82rem}\n.radar-controls{border:1px solid var(--line);border-radius:20px;padding:clamp(18px,3vw,28px);background:var(--surface);box-shadow:var(--shadow)}.radar-controls h2{font-size:1.25rem;margin:0 0 7px}.radar-controls p{color:var(--muted);margin:0 0 16px}.radar-choices{display:flex;gap:10px;flex-wrap:wrap}.radar-chip{border:1px solid color-mix(in srgb,var(--accent) 24%,var(--line));border-radius:999px;padding:10px 15px;background:var(--surface-2);color:var(--ink);font:inherit;font-size:.87rem;font-weight:700;cursor:pointer;transition:transform .18s,box-shadow .18s}.radar-chip[aria-pressed=true]{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 22%,var(--surface));box-shadow:0 0 0 2px color-mix(in srgb,var(--accent) 15%,transparent)}.radar-chip:hover{transform:translateY(-2px)}.radar-chip:focus-visible,.radar-save:focus-visible{outline:3px solid var(--accent);outline-offset:3px}\n.radar-toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin:30px 0 14px}.radar-toolbar h2{margin:0;font-size:1.35rem}.radar-toolbar select{font:inherit;border:1px solid var(--line);border-radius:11px;background:var(--surface);color:var(--ink);padding:10px 12px}.radar-summary{font-size:.84rem;color:var(--muted);margin:0 0 16px}.radar-results{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,315px),1fr));gap:14px}.radar-result{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:17px;background:var(--surface);padding:19px;min-width:0;transition:transform .18s,border-color .18s}.radar-result:hover{border-color:var(--accent);transform:translateY(-2px)}.radar-result-head{display:flex;align-items:center;gap:9px;flex-wrap:wrap}.radar-evidence{font-size:.73rem;color:var(--muted)}.radar-result h3{margin:14px 0 9px;font-size:1.05rem;line-height:1.36}.radar-result h3 a{color:var(--ink);text-decoration:none}.radar-result h3 a:hover{text-decoration:underline}.radar-excerpt{color:var(--muted);font-size:.88rem;line-height:1.55;margin:0 0 13px}.radar-facts{color:var(--muted);font-size:.76rem;margin:auto 0 0}.radar-result-foot{display:flex;justify-content:space-between;align-items:center;gap:12px;border-top:1px solid var(--line);margin-top:14px;padding-top:12px;color:var(--muted);font-size:.77rem}.radar-save{border:1px solid var(--line);border-radius:9px;padding:7px 11px;font:inherit;font-weight:700;cursor:pointer;background:var(--surface-2);color:var(--ink)}.radar-save[aria-pressed=true]{background:var(--accent);color:var(--accent-ink)}.radar-empty{padding:25px;border:1px dashed var(--line);border-radius:14px;color:var(--muted)}.radar-feature{margin:22px 0 30px;padding:19px 23px;border:1px solid var(--line);border-radius:18px;background:var(--surface)}.radar-feature h2{margin:0 0 5px;font-size:1.1rem}.radar-feature p{margin:0;color:var(--muted);font-size:.88rem}.radar-feature a{color:var(--accent);font-weight:700}\n@media(max-width:600px){.radar-controls{padding:17px}.radar-result{padding:16px}.radar-toolbar select{width:100%}}@media(prefers-reduced-motion:reduce){.radar-chip,.radar-result{transition:none}.radar-chip:hover,.radar-result:hover{transform:none}}\n'
+
+def radar_page(cfg: dict) -> str:
+    """Personal technology Radar using only the existing public story index."""
+    body = (
+        '<section class="radar-intro"><p class="radar-eyebrow">PERSONAL SIGNAL / LOCAL MODE</p>'
+        '<h1>My Radar</h1><p>See the security stories that mention the technology you follow. '
+        'Choose your stack below. No account, no profile sent to the site.</p>'
+        '<p class="radar-proof">Keyword matches are leads to investigate — not proof that your environment is affected. '
+        'Always check the original publisher or vendor advisory before taking action.</p></section>'
+        '<section class="radar-controls" aria-labelledby="radar-controls-title"><h2 id="radar-controls-title">Follow your stack</h2>'
+        '<p>Selections stay in this browser only. Select more than one.</p>'
+        '<div class="radar-choices" id="radar-choices" role="group" aria-label="Followed technologies"></div></section>'
+        '<div class="radar-toolbar"><div><h2>Your signals</h2><span id="radar-count" role="status" aria-live="polite">Loading stories…</span></div>'
+        '<label>Sort by <select id="radar-sort"><option value="priority">Priority, then newest</option>'
+        '<option value="newest">Newest first</option></select></label></div>'
+        '<p class="radar-summary" id="radar-summary">Your choices stay in this browser.</p>'
+        '<p class="radar-empty" id="radar-empty" hidden></p>'
+        '<div class="radar-results" id="radar-results" aria-label="Matching stories"></div>'
+        '<p id="radar-notice" class="meta" role="status"></p>'
+        '<section class="radar-feature"><h2>Put a finding into practice</h2>'
+        '<p>Use the free <a href="../m365-identity-incident-triage-checklist.pdf">M365 Identity Incident Triage Checklist</a> '
+        'for evidence-first checks, or visit <a href="../today/index.html">Today</a> for a broader daily view.</p></section>'
+        '<script>' + RADAR_JS + '</script>'
+    )
+    return _layout(cfg, "My Radar", "A browser-local technology watchlist for current Security Brief stories.", body, "../")
+
+
 def saved_page(cfg: dict) -> str:
     body = (
         '<section class="intro"><h1>Saved stories</h1>'
@@ -1899,7 +1942,7 @@ def saved_page(cfg: dict) -> str:
 def stories_index(stories: list[dict]) -> str:
     rows = [{
         "id": s["id"], "title": s["title"], "summary": _short(s["summary"], 170), "priority": s["priority"],
-        "category": CATEGORIES[s["category"]][0], "date": fmt_date(s["published"]),
+        "category": CATEGORIES[s["category"]][0], "date": fmt_date(s["published"]), "published": s["published"],
         "priority_score": s["score"], "priority_basis": s.get("priority_basis", []),
         "tags": s["tags"], "kev": s.get("kev", []),
         "sources": ", ".join(dict.fromkeys(x["name"] for x in s["sources"])), "url": f"story/{s['id']}.html",
@@ -1947,6 +1990,9 @@ def index_page(stories: list[dict], cfg: dict, now: datetime, status: dict,
             parts.append(f'<section class="section" id="{cid}" data-section><h2>{esc(CATEGORIES[cid][0])}</h2>'
                          '<div class="grid">' + "".join(_card(s) for s in items) + "</div>"
                          f'<p class="section-more"><a href="category/{cid}/index.html">All {total} {esc(CATEGORIES[cid][0])} stories &rarr;</a></p></section>')
+    parts.append('<section class="radar-home" aria-label="Personal Radar"><span aria-hidden="true" class="radar-home-icon">◈</span>'
+                 '<div><strong>Only the signals that match your stack.</strong><span> Follow technologies in your private, browser-local Radar.</span></div>'
+                 '<a href="radar/index.html">Open My Radar &rarr;</a></section>')
     # Editorial modules sit after the live feed and directly before the footer area.
     parts.append(
         '<section class="section" id="free-downloads" aria-labelledby="free-download-title">'
@@ -2086,7 +2132,7 @@ def sitemap_xml(stories: list[dict], cfg: dict, articles: list[dict] | None = No
             f"{site}/m365-identity-incident-triage-checklist.pdf"]
     urls += [f"{site}/{a['section']}/{a['slug']}.html" for a in (articles or [])]
     urls += [f"{site}/story/{s['id']}.html" for s in stories]
-    urls += [f"{site}/stories/index.html"] + [f"{site}/category/{c}/index.html" for c in CATEGORY_ORDER]
+    urls += [f"{site}/radar/index.html", f"{site}/stories/index.html"] + [f"{site}/category/{c}/index.html" for c in CATEGORY_ORDER]
     return ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
             + "".join(f"<url><loc>{esc(u)}</loc></url>" for u in urls) + "</urlset>\n")
 
@@ -2209,6 +2255,8 @@ def write_site(out: Path, stories: list[dict], cfg: dict, now: datetime, status:
     (out / "index.html").write_text(index_page(stories, cfg, now, status, articles, site_cfg), encoding="utf-8")
     (out / "today").mkdir(parents=True, exist_ok=True)
     (out / "today" / "index.html").write_text(today_page(stories, cfg, now), encoding="utf-8")
+    (out / "radar").mkdir(parents=True, exist_ok=True)
+    (out / "radar" / "index.html").write_text(radar_page(cfg), encoding="utf-8")
     (out / "saved").mkdir(parents=True, exist_ok=True)
     (out / "saved" / "index.html").write_text(saved_page(cfg), encoding="utf-8")
     (out / "stories.json").write_text(stories_index(stories), encoding="utf-8")
@@ -2369,7 +2417,7 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
                      s["score"], s["image"], [x["url"] for x in s["sources"]]] for s in stories],
         "articles": [[a["section"], a["slug"], a["title"], a["date"], a["summary"], a["_md"]] for a in articles],
         "site": site_cfg,
-        "render": "5.34-weekly-signal",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
+        "render": "5.35-local-radar",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
     }, ensure_ascii=False, sort_keys=True)
     if fixtures is None:
         check_source_links(stories, data_file.parent / "linkcheck.json", now)
@@ -2558,6 +2606,13 @@ DESIGN_CSS += """
 .signal-teaser-link:focus-visible,.subscribe-btn:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 @media(max-width:570px){.signal-teaser{flex-wrap:wrap;gap:10px}.signal-teaser-link{width:100%;margin-top:4px}.signal-teaser-copy small{font-size:.75rem}}
 @media(prefers-reduced-motion:reduce){.signal-teaser:before{animation:none}.signal-teaser-link{transition:none}.signal-teaser-link:hover{transform:none}}
+"""
+
+DESIGN_CSS += RADAR_CSS + """
+.radar-home{display:flex;align-items:center;gap:15px;flex-wrap:wrap;margin:36px 0 0;border:1px solid color-mix(in srgb,var(--accent) 30%,var(--line));border-radius:17px;padding:16px 19px;background:linear-gradient(115deg,color-mix(in srgb,var(--accent) 10%,var(--surface)),var(--surface))}
+.radar-home-icon{font-size:1.6rem;color:var(--accent)}.radar-home div{flex:1;min-width:190px;color:var(--muted);font-size:.88rem}.radar-home div strong{display:block;color:var(--ink);font-size:.98rem}.radar-home a{color:var(--accent);font-weight:770;text-decoration:none;white-space:nowrap}.radar-home a:hover{text-decoration:underline}
+.card-evidence{margin:5px 0 10px;padding:7px 9px;border-left:2px solid var(--accent);background:color-mix(in srgb,var(--accent) 7%,var(--surface));border-radius:0 6px 6px 0;color:var(--muted);font-size:.73rem;line-height:1.45}
+@media(max-width:560px){.radar-home a{width:100%}}
 """
 
 if __name__ == "__main__":
