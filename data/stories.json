@@ -1510,27 +1510,6 @@
    "source_type": "news"
   },
   {
-   "id": "f909b9dee009",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "title": "CERT-In Warns AI Agents Accessed Sensitive Data at Indian Organizations During Testing",
-   "link": "https://thehackernews.com/2026/10/cert-in-warns-ai-agents-accessed.html",
-   "published": "2026-10-16T06:53:09+00:00",
-   "summary": "AI agents being tested online reached the live systems of Indian organizations and read business records, including personal data and confidential material, CERT-In said in an advisory on October 15. The agents went beyond their assigned tasks, and none of the organizations detected the unauthorized access. After…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyMnLMgZNuoh6c41MPT17IsrvbfocknmRb8sxaolFmTpU9h0b-jyJAe9Ods3iCWligbpcd1a1IThvmpUts5llDkKkScffnItGGrGcneDJ8oUJjuc76syHF8g31ZeTWMunD7LDJjviCRFMf8Zugkg8Z4kgXyhDW4bfrCHtV8Xkt-wJlnUd78z-ab28LrfV5/s1600/certin.jpg",
-   "cves": [],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00",
-   "instructions": [
-    "Banks, insurers, other financial firms, and fintech companies should also apply the payment and disbursement API measures outlined in the October 9 advisory.",
-    "Organizations should apply the baseline in CERT-In's May blueprint and take these steps:",
-    "AI agents being tested online reached the live systems of Indian organizations and read business records, including personal data and confidential material, CERT-In said in an advisory on October 15.",
-    "Apply least privilege to cloud and backend-as-a-service roles, keep privileged keys out of client-side code, and test what an anonymous user can read and write."
-   ],
-   "instructions_checked": true,
-   "source_type": "news"
-  },
-  {
    "id": "c7a020f274e0",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1547,29 +1526,6 @@
     "\"Organizations should instead focus on behavioral indicators such as DLLs reading local files followed by immediate in-memory execution, which may indicate decoding and staging activity.\""
    ],
    "instructions_checked": true
-  },
-  {
-   "id": "1fd194e19c3d",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "title": "China-Linked Hackers Exploited BeyondTrust Zero-Day to Take Over Remote Support Servers",
-   "link": "https://thehackernews.com/2026/10/china-linked-hackers-exploited.html",
-   "published": "2026-10-16T06:55:55+00:00",
-   "summary": "The China-nexus cyber espionage group tracked as Armory Castle (previously UNC5221 or Warp Panda) exploited a newly disclosed security flaw in BeyondTrust Remote Support (formerly Bomgar) as a zero-day in late August 2026. The vulnerability, tracked as CVE-2026-102764 (CVSS score: 9.3), is a case of improper origin…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEic5zD5GBvYxe93igsDOMdwS6eyfDORIWio42Z9UY0enK0XKWYcQlLB9RLx3iO_V1xm8vqBxMVZ_R8Lt-xxOumO5_RIFN3hgB-yZyGGlVMypRx5lm2GJq-1c9cbzfRcjrMAIfBI67L4QUI-MwjjQjKL1RcgPnzFdYuAF3k1y2Ev-ppSmiG8sdQ5dbJkbjKR/s1600/beyond.jpg",
-   "cves": [
-    "CVE-2026-102764"
-   ],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00",
-   "instructions": [
-    "Self-hosted customers of Remote Support running versions from 24.3.1 through 26.2.3 are advised to manually update to BT26-05-RS patch.",
-    "Customers running a version older than 24.3.1 will be required to upgrade to a newer version to apply the fix.",
-    "\"Any appliance that was reachable from the internet on a vulnerable version during the exploitation window should be treated as potentially compromised until it has been reviewed.\"",
-    "Cybersecurity and Infrastructure Security Agency (CISA), on October 16, 2026, released an advisory , urging organizations with affected BeyondTrust Remote Support to immediately take the following actions -"
-   ],
-   "instructions_checked": true,
-   "source_type": "news"
   },
   {
    "id": "9b69347cfd29",
@@ -6639,6 +6595,27 @@
    "image_checked": true,
    "instructions": [
     "Former NSA Director Paul Nakasone Launches National Security Advisory Firm",
+    "Jon Steinbach has been appointed strategic technical advisor to the Pentagon’s CIO.",
+    "Preparing for disruption must become part of day-to-day operations."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "fcaeed9175fd",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Iran’s Prince of Persia APT Hosts C&C in US for First Time Since 2016",
+   "link": "https://www.securityweek.com/irans-prince-of-persia-apt-hosts-cc-in-us-for-first-time-since-2016/",
+   "published": "2026-10-23T06:39:29+00:00",
+   "summary": "After a three-month lull, Prince of Persia hid a Tornado C&C server on US shared hosting, its first US-based server since 2016. The post Iran’s Prince of Persia APT Hosts C&C in US for First Time Since 2016 appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/03/Irianian-cyberattacks-hacks.jpg",
+   "cves": [],
+   "first_seen": "2026-10-23T07:28:09.227466+00:00",
+   "image_checked": true,
+   "instructions": [
+    "It advises organizations to add them to their security tools and watch for suspicious Telegram traffic.",
     "Jon Steinbach has been appointed strategic technical advisor to the Pentagon’s CIO.",
     "Preparing for disruption must become part of day-to-day operations."
    ],
