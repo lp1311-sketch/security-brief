@@ -1149,6 +1149,7 @@ def _hero(s: dict) -> str:
 <div class="hero-body">
 <p class="kicker"><span class="badge {prio}">{prio}</span><span class="cat">{esc(CATEGORIES[s['category']][0])}</span></p>
 <h2 id="hero-title"><a href="story/{esc(s['id'])}.html">{esc(s['title'])}</a></h2>
+<p class="hero-evidence">{esc(evidence_label(s))}</p>
 <p class="summary">{esc(_short(s['summary'], 240))}</p>
 <p class="priority-note"><strong>Editorial priority:</strong> {esc(priority_summary(s))}</p>
 <p class="meta">{esc(names)} &middot; {esc(fmt_date(s['published']))}</p>
@@ -1227,10 +1228,10 @@ def _newsletter_teaser(site_cfg: dict) -> str:
         '<aside class="signal-teaser" aria-label="Weekly Security Brief newsletter">'
         '<span class="signal-teaser-mark" aria-hidden="true">SB<span class="signal-teaser-dot"></span></span>'
         '<span class="signal-teaser-copy"><strong>The Weekly Signal</strong>'
-        '<small>One sharp security briefing. No daily noise.</small></span>'
+        '<small>Source-led insight, practical checks and less noise.</small></span>'
         f'<a class="signal-teaser-link" href="{esc(signup_url)}" target="_blank" '
         'rel="noopener noreferrer" aria-label="Join The Weekly Signal newsletter on Mailchimp">'
-        'Join the briefing <span aria-hidden="true">&rarr;</span></a>'
+        'Get the signal <span aria-hidden="true">&rarr;</span></a>'
         '</aside>'
     )
 
@@ -1239,22 +1240,22 @@ def _newsletter(site_cfg: dict, base: str) -> str:
     signup_url = (site_cfg.get("newsletter_signup_url") or "").strip()
     parsed = urlparse(signup_url)
     if parsed.scheme == "https" and parsed.netloc:
-        return f"""<section class="subscribe" aria-labelledby="subscribe-title">
+        return f"""<section class="subscribe" id="newsletter" aria-labelledby="subscribe-title">
 <div class="subscribe-copy"><p class="subscribe-eyebrow"><span class="subscribe-pulse" aria-hidden="true"></span> THE WEEKLY SIGNAL</p>
-<h2 id="subscribe-title">A clearer view of the week in security.</h2>
-<p>A concise security briefing with the stories that matter, why they matter, and practical checks for defenders. No feed-dump, no daily noise.</p>
-<div class="subscribe-points"><span>Free to join</span><span>Thoughtful updates, not daily noise</span><span>Unsubscribe anytime</span></div></div>
-<div class="subscribe-action"><a class="subscribe-btn" href="{esc(signup_url)}" target="_blank" rel="noopener noreferrer">Get the weekly briefing <span aria-hidden="true">&rarr;</span></a>
+<h2 id="subscribe-title">The signal behind the headlines.</h2>
+<p>Security stories with context, original analysis, and practical checks. Join the list on Mailchimp; new editions are sent when ready.</p>
+<div class="subscribe-points"><span>Free to join</span><span>No automatic feed-dump</span><span>Unsubscribe anytime</span></div></div>
+<div class="subscribe-action"><a class="subscribe-btn" href="{esc(signup_url)}" target="_blank" rel="noopener noreferrer">Join The Weekly Signal <span aria-hidden="true">&rarr;</span></a>
 <p>Signup is handled securely by Mailchimp. See the <a href="{base}datenschutz.html">privacy notice</a>.</p></div>
 </section>"""
     action = (site_cfg.get("newsletter_form_action") or "").strip()
     if not action.startswith("https://"):
         return ""
-    return f"""<section class="subscribe" aria-labelledby="subscribe-title">
+    return f"""<section class="subscribe" id="newsletter" aria-labelledby="subscribe-title">
 <div class="subscribe-copy"><p class="subscribe-eyebrow"><span class="subscribe-pulse" aria-hidden="true"></span> THE WEEKLY SIGNAL</p>
-<h2 id="subscribe-title">A clearer view of the week in security.</h2>
-<p>A concise security briefing with the stories that matter, why they matter, and practical checks for defenders. No feed-dump, no daily noise.</p>
-<div class="subscribe-points"><span>Free to join</span><span>Thoughtful updates, not daily noise</span><span>Unsubscribe anytime</span></div></div>
+<h2 id="subscribe-title">The signal behind the headlines.</h2>
+<p>Security stories with context, original analysis, and practical checks. Join the list on Mailchimp; new editions are sent when ready.</p>
+<div class="subscribe-points"><span>Free to join</span><span>No automatic feed-dump</span><span>Unsubscribe anytime</span></div></div>
 <div class="subscribe-action"><form action="{esc(action)}" method="post" class="subscribe-form">
 <label for="nl-email" class="visually-hidden">Email address</label><input id="nl-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com">
 <button type="submit">Join the briefing <span aria-hidden="true">&rarr;</span></button></form>
@@ -1950,6 +1951,42 @@ def stories_index(stories: list[dict]) -> str:
     return json.dumps({"stories": rows}, ensure_ascii=False, indent=1)
 
 
+def _signal_rail(stories: list[dict], now: datetime) -> str:
+    """Short, source-led paths through existing news; not synthetic editorial claims."""
+    if not stories:
+        return ""
+    actions = [x for x in stories if x.get("kev") or "exploited" in x.get("tags", [])]
+    action = actions[0] if actions else None
+    latest = max((x for x in stories if _date(x.get("published")) is not None),
+                 key=lambda x: _date(x["published"]), default=None)
+    def tile(kicker: str, title: str, desc: str, href: str, style: str) -> str:
+        return (f'<a class="signal-tile signal-tile-{style}" href="{esc(href)}">'
+                f'<span class="signal-tile-kicker">{esc(kicker)}</span>'
+                f'<strong>{esc(title)}</strong><span class="signal-tile-desc">{esc(desc)}</span>'
+                '<span class="signal-tile-arrow" aria-hidden="true">&nearr;</span></a>')
+    cards = []
+    if action:
+        cards.append(tile("01 / WATCH", _short(action["title"], 88),
+                          "KEV-listed or exploitation reported in feed data · verify the source",
+                          f'story/{action["id"]}.html', "watch"))
+    else:
+        cards.append(tile("01 / WATCH", "The action desk", "Browse rule-based actions and verify original sources.",
+                          "today/index.html", "watch"))
+    if latest and latest["id"] != (action or {}).get("id"):
+        cards.append(tile("02 / LATEST", _short(latest["title"], 88),
+                          "Most recently published item in the current feed",
+                          f'story/{latest["id"]}.html', "latest"))
+    else:
+        cards.append(tile("02 / LATEST", "Browse the feed", "Search and filter every current story.",
+                          "stories/index.html", "latest"))
+    cards.append(tile("03 / YOUR STACK", "Make the signal yours",
+                      "Follow technologies locally in your browser; no account needed.",
+                      "radar/index.html", "personal"))
+    return ('<section class="signal-rail" aria-label="Start here">'
+            '<div class="signal-rail-head"><span>THE DECISION DESK</span><p>Three useful paths through today’s signal</p></div>'
+            '<div class="signal-rail-grid">' + "".join(cards) + '</div></section>')
+
+
 def index_page(stories: list[dict], cfg: dict, now: datetime, status: dict,
                articles: list[dict] | None = None, site_cfg: dict | None = None) -> str:
     articles = articles or []
@@ -1957,11 +1994,11 @@ def index_page(stories: list[dict], cfg: dict, now: datetime, status: dict,
     crit = sum(1 for s in stories if s["priority"] == "Critical")
     exploited = sum(1 for s in stories if "exploited" in s["tags"])
     parts = [
-        '<section class="intro"><h1>Security news, ranked</h1>'
+        '<section class="intro home-intro"><span class="home-intro-kicker"><span aria-hidden="true" class="home-intro-dot"></span> SECURITY BRIEF / INTELLIGENCE DESK</span><h1>Security news, <em>ranked.</em></h1>'
         f'<p class="meta">Last content publication: {esc(fmt_date(status.get("content_published_at") or now.isoformat()))}. '
         "Feed checks run every 20 minutes; this timestamp changes only when published story or analysis content changes. Editorial priority is not CVSS or tenant-specific risk.</p>"
         '<p class="meta freshness" id="feed-freshness" role="status">Loading the latest feed-check result&hellip;</p>'
-        '<p><a class="btn" href="today/index.html">Today: what to do &rarr;</a></p></section>',
+        '<div class="home-intro-actions"><a class="btn" href="today/index.html">Today: what to do &rarr;</a><a class="home-intro-secondary" href="radar/index.html">Open My Radar &rarr;</a></div></section>',
         '<div class="stats" aria-label="Summary">'
         f'<div class="stat"><b>{len(stories)}</b><span>stories in the current window</span></div>'
         f'<div class="stat crit"><b>{crit}</b><span>critical (editorial)</span></div>'
@@ -1970,6 +2007,7 @@ def index_page(stories: list[dict], cfg: dict, now: datetime, status: dict,
         "</div>",
     ]
     # Keep a single Buy Me a Coffee block after the overview; retain its configured QR code.
+    parts.append(_signal_rail(stories, now))
     parts.append(_donate(site_cfg))
     parts.append(_newsletter_teaser(site_cfg))
     if not stories:
@@ -2417,7 +2455,7 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
                      s["score"], s["image"], [x["url"] for x in s["sources"]]] for s in stories],
         "articles": [[a["section"], a["slug"], a["title"], a["date"], a["summary"], a["_md"]] for a in articles],
         "site": site_cfg,
-        "render": "5.35-local-radar",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
+        "render": "5.36-decision-desk",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
     }, ensure_ascii=False, sort_keys=True)
     if fixtures is None:
         check_source_links(stories, data_file.parent / "linkcheck.json", now)
@@ -2613,6 +2651,32 @@ DESIGN_CSS += RADAR_CSS + """
 .radar-home-icon{font-size:1.6rem;color:var(--accent)}.radar-home div{flex:1;min-width:190px;color:var(--muted);font-size:.88rem}.radar-home div strong{display:block;color:var(--ink);font-size:.98rem}.radar-home a{color:var(--accent);font-weight:770;text-decoration:none;white-space:nowrap}.radar-home a:hover{text-decoration:underline}
 .card-evidence{margin:5px 0 10px;padding:7px 9px;border-left:2px solid var(--accent);background:color-mix(in srgb,var(--accent) 7%,var(--surface));border-radius:0 6px 6px 0;color:var(--muted);font-size:.73rem;line-height:1.45}
 @media(max-width:560px){.radar-home a{width:100%}}
+"""
+
+DESIGN_CSS += """
+/* Decision desk: practical wayfinding, no made-up claims or third-party tracking. */
+.home-intro{position:relative;isolation:isolate;margin-top:22px;padding:clamp(23px,4vw,45px);border:1px solid color-mix(in srgb,var(--accent) 30%,var(--line));border-radius:26px;background:radial-gradient(ellipse at 100% 0%,color-mix(in srgb,#38bdf8 15%,transparent),transparent 48%),radial-gradient(ellipse at 0% 100%,color-mix(in srgb,#22c55e 10%,transparent),transparent 55%),var(--surface);overflow:hidden;box-shadow:var(--shadow)}
+.home-intro:after{content:"";position:absolute;right:6%;top:12%;z-index:-1;width:160px;height:160px;border:1px solid color-mix(in srgb,var(--accent) 20%,transparent);border-radius:50%;box-shadow:0 0 0 25px color-mix(in srgb,var(--accent) 4%,transparent),0 0 0 55px color-mix(in srgb,var(--accent) 2%,transparent);pointer-events:none}
+.home-intro-kicker{display:inline-flex;align-items:center;gap:9px;font-size:.68rem;letter-spacing:.16em;font-weight:800;color:var(--accent)}
+.home-intro-dot{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 14px #22c55e}
+.home-intro h1{margin:13px 0 15px;font-size:clamp(2.35rem,5.5vw,4.3rem);line-height:1.05;letter-spacing:-.055em;text-wrap:balance}
+.home-intro h1 em{font-style:normal;color:var(--accent)}
+.home-intro .meta{max-width:80ch;line-height:1.6}.home-intro-actions{display:flex;align-items:center;gap:11px;flex-wrap:wrap;margin-top:18px}
+.home-intro-secondary{display:inline-flex;align-items:center;min-height:43px;padding:9px 15px;border:1px solid color-mix(in srgb,var(--accent) 35%,var(--line));border-radius:12px;color:var(--ink);font-weight:720;text-decoration:none;background:var(--surface)}
+.home-intro-secondary:hover{border-color:var(--accent);color:var(--accent)}
+.signal-rail{margin:25px 0 0}.signal-rail-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:11px}.signal-rail-head>span{color:var(--accent);font-size:.69rem;font-weight:800;letter-spacing:.16em}.signal-rail-head p{margin:0;color:var(--muted);font-size:.78rem}
+.signal-rail-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}
+.signal-tile{position:relative;display:flex;flex-direction:column;gap:9px;min-width:0;min-height:159px;padding:17px 18px;border:1px solid var(--line);border-top:2px solid var(--accent);border-radius:15px;background:var(--surface);color:var(--ink);text-decoration:none;transition:transform .18s,border-color .18s,box-shadow .18s}
+.signal-tile:hover{transform:translateY(-3px);border-color:var(--accent);box-shadow:var(--shadow)}.signal-tile:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.signal-tile-watch{border-top-color:var(--crit)}.signal-tile-latest{border-top-color:#38bdf8}.signal-tile-personal{border-top-color:#22c55e}
+.signal-tile-kicker{color:var(--muted);font-size:.68rem;font-weight:820;letter-spacing:.14em}.signal-tile strong{font-size:.97rem;line-height:1.35;padding-right:12px;overflow-wrap:anywhere}.signal-tile-desc{max-width:31ch;margin-top:auto;color:var(--muted);font-size:.75rem;line-height:1.48}.signal-tile-arrow{position:absolute;right:17px;top:15px;color:var(--accent);font-size:1.1rem}
+.hero-evidence{margin:2px 0 10px;padding:7px 10px;border-left:2px solid var(--accent);background:color-mix(in srgb,var(--accent) 9%,var(--surface));font-size:.78rem;color:var(--muted)}
+/* The full Mailchimp card is a visually distinct destination, not a popup. */
+.subscribe#newsletter{border:1px solid color-mix(in srgb,var(--accent) 38%,var(--line));box-shadow:var(--shadow),0 0 50px -35px var(--accent)}
+.subscribe#newsletter:before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#22c55e,#38bdf8,transparent)}
+@media(max-width:760px){.signal-rail-grid{grid-template-columns:1fr}.signal-tile{min-height:115px}.home-intro:after{opacity:.3}}
+@media(max-width:500px){.home-intro{padding:21px}.home-intro-actions .btn,.home-intro-secondary{width:100%;justify-content:center}}
+@media(prefers-reduced-motion:reduce){.signal-tile{transition:none}.signal-tile:hover{transform:none}}
 """
 
 if __name__ == "__main__":
