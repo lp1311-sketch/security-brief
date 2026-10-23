@@ -143,26 +143,6 @@
    "url": "story/d078ae182673.html"
   },
   {
-   "id": "5f2ddb413304",
-   "title": "'PHP2Shell' Bugs Signal Red Alert for Security Industry",
-   "summary": "Security teams are scrambling to remediate two critical PHP vulnerabilities following leaked details and reports of exploitation attempts.",
-   "priority": "High",
-   "category": "Patch Radar",
-   "date": "21 Oct 2026, 19:19 UTC",
-   "published": "2026-10-21T19:19:17+00:00",
-   "priority_score": 7,
-   "priority_basis": [
-    "Editorial attention score 7 reached the High threshold (not CVSS)"
-   ],
-   "tags": [
-    "exploited",
-    "microsoft"
-   ],
-   "kev": [],
-   "sources": "Dark Reading",
-   "url": "story/5f2ddb413304.html"
-  },
-  {
    "id": "b65cad206f50",
    "title": "Reports of PHP bug exploitation attempts grow as experts downplay viability of exploits",
    "summary": "The headline-grabbing bugs known colloquially as PHP2Shell are giving cyber analysts a lot to track — and a lot to debunk.",
@@ -180,6 +160,26 @@
    "kev": [],
    "sources": "The Record",
    "url": "story/b65cad206f50.html"
+  },
+  {
+   "id": "5f2ddb413304",
+   "title": "'PHP2Shell' Bugs Signal Red Alert for Security Industry",
+   "summary": "Security teams are scrambling to remediate two critical PHP vulnerabilities following leaked details and reports of exploitation attempts.",
+   "priority": "High",
+   "category": "Patch Radar",
+   "date": "21 Oct 2026, 19:19 UTC",
+   "published": "2026-10-21T19:19:17+00:00",
+   "priority_score": 6,
+   "priority_basis": [
+    "Editorial attention score 6 reached the High threshold (not CVSS)"
+   ],
+   "tags": [
+    "exploited",
+    "microsoft"
+   ],
+   "kev": [],
+   "sources": "Dark Reading",
+   "url": "story/5f2ddb413304.html"
   },
   {
    "id": "190252fca79a",
@@ -1672,23 +1672,6 @@
    "url": "story/49672d89136f.html"
   },
   {
-   "id": "a0b44de98d51",
-   "title": "Les supermarchés de l'UE paient d'un firmware de réfrigérateur non mis à jour",
-   "summary": "Des centaines de magasins ont subi des pertes se chiffrant en millions d'euros parce qu'ils avaient fait appel à des tiers pour gérer le micrologiciel OT obsolète qui…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "22 Oct 2026, 19:30 UTC",
-   "published": "2026-10-22T19:30:20+00:00",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "Dark Reading",
-   "url": "story/a0b44de98d51.html"
-  },
-  {
    "id": "0151e8522bf7",
    "title": "LiteLLM release pipeline hacked to distribute info-stealer malware",
    "summary": "Hackers compromised the LiteLLM project's PyPI package and published malicious Docker images with a payload that steals credentials, secrets, and environment variables.",
@@ -1727,7 +1710,7 @@
   {
    "id": "3c321f073d20",
    "title": "As AI Risks Grow, Insurers Split on Covering the Damage",
-   "summary": "Insurers are split on AI risk: some build specialized agentic AI coverage, while major carriers quietly exclude it — leaving enterprises exposed without their knowledge.",
+   "summary": "Some build specialized agentic AI coverage, while major carriers quietly exclude it — leaving enterprises exposed without their knowledge.",
    "priority": "Standard",
    "category": "AI Risk Lab",
    "date": "22 Oct 2026, 14:21 UTC",
@@ -2400,6 +2383,23 @@
    "url": "story/8dfac5c34b84.html"
   },
   {
+   "id": "a0b44de98d51",
+   "title": "Les supermarchés de l'UE paient d'un firmware de réfrigérateur non mis à jour",
+   "summary": "Des centaines de magasins ont subi des pertes se chiffrant en millions d'euros parce qu'ils avaient fait appel à des tiers pour gérer le micrologiciel OT obsolète qui…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "22 Oct 2026, 19:30 UTC",
+   "published": "2026-10-22T19:30:20+00:00",
+   "priority_score": 1,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "Dark Reading",
+   "url": "story/a0b44de98d51.html"
+  },
+  {
    "id": "afb644b2382c",
    "title": "Indian tech company eMudhra announces withdrawal from certificate business after security incident",
    "summary": "The issue was publicized by cybersecurity researcher Scott Helme, who published a blog saying that instead of a random 384-bit number, one of the company's private keys…",
@@ -2755,23 +2755,6 @@
    "kev": [],
    "sources": "The Record",
    "url": "story/565842927b14.html"
-  },
-  {
-   "id": "548b69cacce8",
-   "title": "Tech trio launches $10 million initiative to help under-resourced utilities bolster cybersecurity",
-   "summary": "Up to 500 under-resourced utilities will receive support in order to bolster their cybersecurity through a private sector initiative launched this week.",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "21 Oct 2026, 19:45 UTC",
-   "published": "2026-10-21T19:45:00+00:00",
-   "priority_score": 1,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "The Record",
-   "url": "story/548b69cacce8.html"
   },
   {
    "id": "80aac9868cd3",
@@ -3633,23 +3616,21 @@
    "url": "story/07986418197e.html"
   },
   {
-   "id": "8e2b4b8581aa",
-   "title": "Fake Claude, ChatGPT Attacks Surge, Putting Developers at Risk",
-   "summary": "Campaigns that impersonate popular AI brands are on the rise, and they typically use ClickFix-like tactics to target unsuspecting enterprise employees.",
+   "id": "548b69cacce8",
+   "title": "Tech trio launches $10 million initiative to help under-resourced utilities bolster cybersecurity",
+   "summary": "Up to 500 under-resourced utilities will receive support in order to bolster their cybersecurity through a private sector initiative launched this week.",
    "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "16 Oct 2026, 19:49 UTC",
-   "published": "2026-10-16T19:49:30+00:00",
-   "priority_score": 1,
+   "category": "Industry & Research",
+   "date": "21 Oct 2026, 19:45 UTC",
+   "published": "2026-10-21T19:45:00+00:00",
+   "priority_score": 0,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
-   "tags": [
-    "ai"
-   ],
+   "tags": [],
    "kev": [],
-   "sources": "Dark Reading",
-   "url": "story/8e2b4b8581aa.html"
+   "sources": "The Record",
+   "url": "story/548b69cacce8.html"
   },
   {
    "id": "14b2da242e2e",
@@ -4771,23 +4752,6 @@
    "kev": [],
    "sources": "Dark Reading",
    "url": "story/15367a3259ff.html"
-  },
-  {
-   "id": "b8b7cb7d4b49",
-   "title": "Biomemory Launches DNA Shield, First Commercial Product Built on Its Molecular IT Platform",
-   "summary": "The launch follows the acquisition of catalog's assets and the appointment of Laurent Guengant as CEO earlier this year.",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "16 Oct 2026, 19:22 UTC",
-   "published": "2026-10-16T19:22:12+00:00",
-   "priority_score": 0,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "Dark Reading",
-   "url": "story/b8b7cb7d4b49.html"
   }
  ]
 }
