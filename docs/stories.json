@@ -48,16 +48,36 @@
    "category": "Microsoft",
    "date": "22 Oct 2026, 20:42 UTC",
    "published": "2026-10-22T20:42:17+00:00",
-   "priority_score": 11,
+   "priority_score": 10,
    "priority_basis": [
-    "Editorial attention score 11 reached the High threshold (not CVSS)"
+    "Editorial attention score 10 reached the High threshold (not CVSS)"
    ],
    "tags": [
     "microsoft"
    ],
    "kev": [],
-   "sources": "Dark Reading, The Hacker News, The Record, BleepingComputer",
+   "sources": "Dark Reading, The Record, BleepingComputer",
    "url": "story/778da97616c1.html"
+  },
+  {
+   "id": "713a68aa818f",
+   "title": "China APT Uses AI Pentest Tool Artex in ConnectWise Attacks",
+   "summary": "The state-sponsored hackers targeted hundreds of organizations and gained privileged access to some environments. The post China APT Uses AI Pentest Tool Artex in…",
+   "priority": "High",
+   "category": "AI Risk Lab",
+   "date": "23 Oct 2026, 10:31 UTC",
+   "published": "2026-10-23T10:31:16+00:00",
+   "priority_score": 8,
+   "priority_basis": [
+    "Editorial attention score 8 reached the High threshold (not CVSS)"
+   ],
+   "tags": [
+    "microsoft",
+    "ai"
+   ],
+   "kev": [],
+   "sources": "SecurityWeek, The Record, The Hacker News",
+   "url": "story/713a68aa818f.html"
   },
   {
    "id": "d078ae182673",
@@ -265,25 +285,6 @@
    "url": "story/a45e553ca30b.html"
   },
   {
-   "id": "2a5b06ac5090",
-   "title": "Microsoft blames ConnectWise attacks on Chinese state hacker using ARTEX AI agents",
-   "summary": "A Chinese government-aligned hacking group used automated tools to carry out the recent supply chain attack on IT management software company ConnectWise and is using…",
-   "priority": "Standard",
-   "category": "Microsoft",
-   "date": "22 Oct 2026, 16:30 UTC",
-   "published": "2026-10-22T16:30:00+00:00",
-   "priority_score": 5,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "microsoft"
-   ],
-   "kev": [],
-   "sources": "The Record",
-   "url": "story/2a5b06ac5090.html"
-  },
-  {
    "id": "7c1ce9da91a8",
    "title": "CVE-2026-105014 Azure Pipelines Remote Code Execution Vulnerability",
    "summary": "Improper neutralization of special elements used in a command ('command injection') in Azure Pipelines allows an unauthorized attacker to execute code over a network.",
@@ -339,25 +340,6 @@
    "kev": [],
    "sources": "Microsoft Security Response Center",
    "url": "story/a9a8f75e73bb.html"
-  },
-  {
-   "id": "1d3516a0d0a6",
-   "title": "OpenCode Flaw Lets Malicious MCP Servers Execute Code During Sign-In on Windows and WSL",
-   "summary": "A flaw in the OpenCode AI coding agent allowed a malicious or hijacked MCP server to run code on a developer's Windows or WSL machine when the developer signed in…",
-   "priority": "Standard",
-   "category": "Microsoft",
-   "date": "22 Oct 2026, 10:44 UTC",
-   "published": "2026-10-22T10:44:05+00:00",
-   "priority_score": 5,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "microsoft"
-   ],
-   "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/1d3516a0d0a6.html"
   },
   {
    "id": "3d29fe5d9f89",
@@ -423,6 +405,23 @@
    ],
    "sources": "The Hacker News",
    "url": "story/4fd8d5a31fd8.html"
+  },
+  {
+   "id": "3a89e69463ce",
+   "title": "Critical Flaw in Python’s Popular Pillow Image Library Allows Code Execution via a Crafted Image",
+   "summary": "Pillow, the most widely used image library for Python, can be made to run operating system commands on a server by specifying the name of a file it is told to open. The…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "23 Oct 2026, 09:36 UTC",
+   "published": "2026-10-23T09:36:00+00:00",
+   "priority_score": 4,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "The Hacker News",
+   "url": "story/3a89e69463ce.html"
   },
   {
    "id": "0515431e7464",
@@ -582,6 +581,25 @@
    "kev": [],
    "sources": "The Record",
    "url": "story/14aa600d7f56.html"
+  },
+  {
+   "id": "1d3516a0d0a6",
+   "title": "OpenCode Flaw Lets Malicious MCP Servers Execute Code During Sign-In on Windows and WSL",
+   "summary": "A flaw in the OpenCode AI coding agent allowed a malicious or hijacked MCP server to run code on a developer's Windows or WSL machine when the developer signed in…",
+   "priority": "Standard",
+   "category": "Microsoft",
+   "date": "22 Oct 2026, 10:44 UTC",
+   "published": "2026-10-22T10:44:05+00:00",
+   "priority_score": 4,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "microsoft"
+   ],
+   "kev": [],
+   "sources": "The Hacker News",
+   "url": "story/1d3516a0d0a6.html"
   },
   {
    "id": "7bcbd743c3f7",
@@ -1050,23 +1068,6 @@
    "kev": [],
    "sources": "BleepingComputer",
    "url": "story/ba8deb36fe9d.html"
-  },
-  {
-   "id": "ec0fd993c8b5",
-   "title": "PHP2Shell: What Actually Protects You Before the 14:00 UTC PHP RCE Patch, and What Doesn't",
-   "summary": "You cannot fully block the two critical PHP flaws called PHP2Shell before today's fix, and the one setting being passed around as a workaround is not enough on its own…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "21 Oct 2026, 10:36 UTC",
-   "published": "2026-10-21T10:36:53+00:00",
-   "priority_score": 3,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/ec0fd993c8b5.html"
   },
   {
    "id": "0dfa738d1635",
@@ -1695,23 +1696,6 @@
    "url": "story/76b18c2dc5a9.html"
   },
   {
-   "id": "eb08dcb4a958",
-   "title": "Splunk, SolarWinds Release Fresh Security Updates",
-   "summary": "Patched vulnerabilities could allow attackers to execute code, elevate privileges, and leak sensitive information. The post Splunk, SolarWinds Release Fresh Security…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "22 Oct 2026, 10:45 UTC",
-   "published": "2026-10-22T10:45:24+00:00",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "SecurityWeek",
-   "url": "story/eb08dcb4a958.html"
-  },
-  {
    "id": "a9227db3dd33",
    "title": "LiteLLM Suspects GitHub Token Leak in AI Gateway Logs Behind Malicious Package Release",
    "summary": "LiteLLM on Wednesday disclosed that threat actors compromised \"multiple independent security controls\" to push a malicious version of the Python package containing a…",
@@ -1934,42 +1918,21 @@
    "url": "story/b81260804ad3.html"
   },
   {
-   "id": "a9327fc12a2b",
-   "title": "China Defends DeepSeek After US Ban of Its AI From Government Systems",
-   "summary": "The DHS said agencies should remove DeepSeek products as well as third-party products and services developed using DeepSeek from their IT systems. The post China Defends…",
+   "id": "ec0fd993c8b5",
+   "title": "PHP2Shell: What Actually Protects You Before the 14:00 UTC PHP RCE Patch, and What Doesn't",
+   "summary": "You cannot fully block the two critical PHP flaws called PHP2Shell before today's fix, and the one setting being passed around as a workaround is not enough on its own…",
    "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "21 Oct 2026, 10:54 UTC",
-   "published": "2026-10-21T10:54:49+00:00",
+   "category": "Patch Radar",
+   "date": "21 Oct 2026, 10:36 UTC",
+   "published": "2026-10-21T10:36:53+00:00",
    "priority_score": 2,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
-   "tags": [
-    "ai"
-   ],
-   "kev": [],
-   "sources": "SecurityWeek",
-   "url": "story/a9327fc12a2b.html"
-  },
-  {
-   "id": "f31f85df952c",
-   "title": "The Harness Is the Hard Part of Agentic Pentesting",
-   "summary": "An AppSec team can point an AI agent running on a general-purpose model at its own web apps with little setup. Sure, the model writes the attacks. But everything that…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "21 Oct 2026, 10:32 UTC",
-   "published": "2026-10-21T10:32:40+00:00",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "ai"
-   ],
+   "tags": [],
    "kev": [],
    "sources": "The Hacker News",
-   "url": "story/f31f85df952c.html"
+   "url": "story/ec0fd993c8b5.html"
   },
   {
    "id": "73d154fe3b9b",
@@ -2433,21 +2396,21 @@
    "url": "story/862e2db1b4e0.html"
   },
   {
-   "id": "e16fac9bbbbd",
-   "title": "Krybit ransomware: what you need to know",
-   "summary": "Krybit is a fast-growing ransomware gang that was hacked by a rival, hit back, and is still extorting victims. Find out how it works, who it has targeted, and what…",
+   "id": "eb08dcb4a958",
+   "title": "Splunk, SolarWinds Release Fresh Security Updates",
+   "summary": "Patched vulnerabilities could allow attackers to execute code, elevate privileges, and leak sensitive information. The post Splunk, SolarWinds Release Fresh Security…",
    "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "16 Oct 2026, 10:25 UTC",
-   "published": "2026-10-16T10:25:12+00:00",
-   "priority_score": 2,
+   "category": "Patch Radar",
+   "date": "22 Oct 2026, 10:45 UTC",
+   "published": "2026-10-22T10:45:24+00:00",
+   "priority_score": 1,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
    "tags": [],
    "kev": [],
-   "sources": "Graham Cluley",
-   "url": "story/e16fac9bbbbd.html"
+   "sources": "SecurityWeek",
+   "url": "story/eb08dcb4a958.html"
   },
   {
    "id": "29143f2ae20d",
@@ -2760,21 +2723,42 @@
    "url": "story/8e7d8bc5cf31.html"
   },
   {
-   "id": "00d9c6c07315",
-   "title": "Attackers Hijacked Over 300 Tor Exit Relays to Intercept SSH Connections",
-   "summary": "Attackers took control of more than 300 Tor exit relays in early October and used them to redirect SSH connections to servers that stole login passwords, a researcher…",
+   "id": "a9327fc12a2b",
+   "title": "China Defends DeepSeek After US Ban of Its AI From Government Systems",
+   "summary": "The DHS said agencies should remove DeepSeek products as well as third-party products and services developed using DeepSeek from their IT systems. The post China Defends…",
    "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "21 Oct 2026, 10:30 UTC",
-   "published": "2026-10-21T10:30:27+00:00",
+   "category": "AI Risk Lab",
+   "date": "21 Oct 2026, 10:54 UTC",
+   "published": "2026-10-21T10:54:49+00:00",
    "priority_score": 1,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
-   "tags": [],
+   "tags": [
+    "ai"
+   ],
+   "kev": [],
+   "sources": "SecurityWeek",
+   "url": "story/a9327fc12a2b.html"
+  },
+  {
+   "id": "f31f85df952c",
+   "title": "The Harness Is the Hard Part of Agentic Pentesting",
+   "summary": "An AppSec team can point an AI agent running on a general-purpose model at its own web apps with little setup. Sure, the model writes the attacks. But everything that…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "21 Oct 2026, 10:32 UTC",
+   "published": "2026-10-21T10:32:40+00:00",
+   "priority_score": 1,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "ai"
+   ],
    "kev": [],
    "sources": "The Hacker News",
-   "url": "story/00d9c6c07315.html"
+   "url": "story/f31f85df952c.html"
   },
   {
    "id": "724c2add33ae",
@@ -3616,6 +3600,23 @@
    "kev": [],
    "sources": "Schneier on Security",
    "url": "story/c425a649aa9d.html"
+  },
+  {
+   "id": "00d9c6c07315",
+   "title": "Attackers Hijacked Over 300 Tor Exit Relays to Intercept SSH Connections",
+   "summary": "Attackers took control of more than 300 Tor exit relays in early October and used them to redirect SSH connections to servers that stole login passwords, a researcher…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "21 Oct 2026, 10:30 UTC",
+   "published": "2026-10-21T10:30:27+00:00",
+   "priority_score": 0,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "The Hacker News",
+   "url": "story/00d9c6c07315.html"
   },
   {
    "id": "0c6fe061465a",

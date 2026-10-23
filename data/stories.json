@@ -1627,6 +1627,29 @@
    "source_type": "news"
   },
   {
+   "id": "3a89e69463ce",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Critical Flaw in Python’s Popular Pillow Image Library Allows Code Execution via a Crafted Image",
+   "link": "https://thehackernews.com/2026/10/critical-flaw-in-pythons-popular-pillow.html",
+   "published": "2026-10-23T09:36:00+00:00",
+   "summary": "Pillow, the most widely used image library for Python, can be made to run operating system commands on a server by specifying the name of a file it is told to open. The flaw, CVE-2026-112900, is in the way Pillow handles EPS images, which it opens by passing the file's name to Ghostscript, a separate program it runs…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGp9s38cCmrESabSZezAPkJaYoavpBM8Ehckei0ZrhKfBSoSXMyrWkzooakGExz1GBYVgi0izvW8wyKH2CEX7vpzLExRkK7uNW8wDdMzJ_k7NR8u6q-WA9e8Aoc19LNfJbFKgB6GkbAKbXW69_lOdM4sz4t5fmpKsLxHWKJPOugq5g_45Q5_WmCm_vA6U/s1600/python-image.jpg",
+   "cves": [
+    "CVE-2026-112900"
+   ],
+   "first_seen": "2026-10-23T10:56:19.601353+00:00",
+   "instructions": [
+    "\"The flaw is triggered by the filename, not by anything in the PostScript document,\" the advisory says, meaning a harmless EPS file can still cause damage when an attacker sets its name.",
+    "The bug was \"found by Anthropic using Claude to study the security of open-source software, validated manually by Ada Logics,\" the advisory says, part of a wider effort by the company that has turned up hundreds of flaws in open-source libraries .",
+    "The advisory says the reporters crashed the process with it, and turned it into code execution only with the help of a second, separate flaw that leaked memory addresses.",
+    "Upgrade to Pillow 13.0.0 , which fixes all of these, and rebuild any containers, wheels, or base images that bundle an older copy."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "53ddecf9f5b1",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -5977,23 +6000,6 @@
    "instructions_checked": true
   },
   {
-   "id": "e16fac9bbbbd",
-   "source": "grahamcluley",
-   "source_name": "Graham Cluley",
-   "official": false,
-   "source_type": "news",
-   "title": "Krybit ransomware: what you need to know",
-   "link": "https://www.fortra.com/blog/krybit-ransomware-what-you-need-know",
-   "published": "2026-10-16T10:25:12+00:00",
-   "summary": "Krybit is a fast-growing ransomware gang that was hacked by a rival, hit back, and is still extorting victims. Find out how it works, who it has targeted, and what organisations can do to protect themselves. Read more in my article on the Fortra blog.",
-   "image": "https://www.fortra.com/sites/default/files/styles/og_image/public/2026-10/krybit.jpeg?itok=LM0ZzrsM",
-   "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
    "id": "c094ac3382c9",
    "source": "msblog",
    "source_name": "Microsoft Security Blog",
@@ -6399,6 +6405,27 @@
    "instructions": [
     "Preparing for disruption must become part of day-to-day operations.",
     "There appears to be no evidence in Certificate Transparency (CT) logs that the keys were used maliciously before revocation, but not all clients enforce CT, and threat actors may have used them to impersonate those clients."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "713a68aa818f",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "China APT Uses AI Pentest Tool Artex in ConnectWise Attacks",
+   "link": "https://www.securityweek.com/china-apt-uses-ai-pentest-tool-artex-in-connectwise-attacks/",
+   "published": "2026-10-23T10:31:16+00:00",
+   "summary": "The state-sponsored hackers targeted hundreds of organizations and gained privileged access to some environments. The post China APT Uses AI Pentest Tool Artex in ConnectWise Attacks appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2023/02/China-Surveillence-Threat.jpg",
+   "cves": [],
+   "first_seen": "2026-10-23T10:56:19.601353+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Jon Steinbach has been appointed strategic technical advisor to the Pentagon’s CIO.",
+    "Preparing for disruption must become part of day-to-day operations.",
+    "Browsers Block eMudhra Intermediate CAs Over Recoverable Private Keys"
    ],
    "instructions_checked": true
   },
