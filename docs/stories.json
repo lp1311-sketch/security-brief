@@ -104,6 +104,26 @@
    "url": "story/0d304799e621.html"
   },
   {
+   "id": "015a882ee274",
+   "title": "Exposed Infrastructure Reveals How Ransomware Affiliates Used AI Agents to Execute Intrusions",
+   "summary": "Cybersecurity researchers have discovered an artificial intelligence (AI)-driven intrusion ecosystem run by affiliates of the INC and The Gentlemen ransomware groups…",
+   "priority": "High",
+   "category": "AI Risk Lab",
+   "date": "23 Oct 2026, 17:50 UTC",
+   "published": "2026-10-23T17:50:47+00:00",
+   "priority_score": 7,
+   "priority_basis": [
+    "Editorial attention score 7 reached the High threshold (not CVSS)"
+   ],
+   "tags": [
+    "microsoft",
+    "ai"
+   ],
+   "kev": [],
+   "sources": "The Hacker News",
+   "url": "story/015a882ee274.html"
+  },
+  {
    "id": "d078ae182673",
    "title": "CVE-2026-108456 Azure AI Foundry Elevation of Privilege Vulnerability",
    "summary": "Server-side request forgery (ssrf) in Azure AI Foundry allows an authorized attacker to elevate privileges over a network.",
@@ -141,6 +161,25 @@
    "kev": [],
    "sources": "Dark Reading",
    "url": "story/5f2ddb413304.html"
+  },
+  {
+   "id": "b65cad206f50",
+   "title": "Reports of PHP bug exploitation attempts grow as experts downplay viability of exploits",
+   "summary": "The headline-grabbing bugs known colloquially as PHP2Shell are giving cyber analysts a lot to track — and a lot to debunk.",
+   "priority": "High",
+   "category": "Patch Radar",
+   "date": "23 Oct 2026, 04:00 UTC",
+   "published": "2026-10-23T04:00:00+00:00",
+   "priority_score": 6,
+   "priority_basis": [
+    "Editorial attention score 6 reached the High threshold (not CVSS)"
+   ],
+   "tags": [
+    "exploited"
+   ],
+   "kev": [],
+   "sources": "The Record",
+   "url": "story/b65cad206f50.html"
   },
   {
    "id": "190252fca79a",
@@ -404,6 +443,23 @@
    ],
    "sources": "The Hacker News",
    "url": "story/4fd8d5a31fd8.html"
+  },
+  {
+   "id": "4645fb818a8e",
+   "title": "Ruby Fixes Three Regex Engine Bugs Responsible for Four Critical GitLab RCE Flaws",
+   "summary": "Ruby has released versions 4.0.9, 3.4.12, and 3.3.13 to fix three bugs in Onigmo, the regular expression engine built into the language. The bugs lie behind four…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "23 Oct 2026, 17:54 UTC",
+   "published": "2026-10-23T17:54:08+00:00",
+   "priority_score": 4,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "The Hacker News",
+   "url": "story/4645fb818a8e.html"
   },
   {
    "id": "27be26c6f177",
@@ -821,6 +877,23 @@
    "url": "story/b1e34d264127.html"
   },
   {
+   "id": "abfff6ba3917",
+   "title": "Inside the LiteLLM 1.107.0 supply chain compromise: Credential theft through Python startup hooks",
+   "summary": "On October 21, 2026, a compromised LiteLLM 1.107.0 release was published to the Python Package Index (PyPI) and distributed through official container images. The…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "23 Oct 2026, 18:12 UTC",
+   "published": "2026-10-23T18:12:19+00:00",
+   "priority_score": 3,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "Microsoft Security Blog",
+   "url": "story/abfff6ba3917.html"
+  },
+  {
    "id": "b95d5610d154",
    "title": "AI Tools Are Generating Massive Attacks for Little Cost",
    "summary": "One campaign targets 105 sites using open-weight models; in another, public models gained full domain control for $12. Cyber-defense will have to change.",
@@ -1052,23 +1125,6 @@
    "kev": [],
    "sources": "The Hacker News",
    "url": "story/a9726704f0fa.html"
-  },
-  {
-   "id": "71f0485320c6",
-   "title": "CISA: Hackers chain Plex flaws in Plex2Shell attacks to breach servers",
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) is warning that attackers are actively exploiting four vulnerabilities in Plex Media Server.",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "21 Oct 2026, 18:34 UTC",
-   "published": "2026-10-21T18:34:42+00:00",
-   "priority_score": 3,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "BleepingComputer",
-   "url": "story/71f0485320c6.html"
   },
   {
    "id": "bf2645506057",
@@ -1530,7 +1586,7 @@
   },
   {
    "id": "80697809b26e",
-   "title": "Russian-Linked Hackers Used New Mesh Network Backdoor in Destructive Ukraine Attack",
+   "title": "Russia-Linked Hackers Used New Mesh Network Backdoor in Destructive Ukraine Attack",
    "summary": "The Russian state-sponsored hacking group Sandworm teamed up with another threat actor to carry out a destructive wiping attack targeting a Ukrainian logistics company…",
    "priority": "Standard",
    "category": "Attacks & Breaches",
@@ -1663,23 +1719,6 @@
    "kev": [],
    "sources": "The Record",
    "url": "story/afb644b2382c.html"
-  },
-  {
-   "id": "f74ce17a74d9",
-   "title": "eMudhra to Exit Global SSL/TLS Business After 8 Intermediate CA Keys Found Easily Guessable",
-   "summary": "eMudhra, an Indian certificate authority (CA), will withdraw from its global SSL/TLS certificate business, its board decided on Thursday. The decision came five days…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "22 Oct 2026, 18:12 UTC",
-   "published": "2026-10-22T18:12:43+00:00",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/f74ce17a74d9.html"
   },
   {
    "id": "3c321f073d20",
@@ -1826,23 +1865,21 @@
    "url": "story/04b5c5ae9150.html"
   },
   {
-   "id": "80aac9868cd3",
-   "title": "AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise",
-   "summary": "As early as September 2026, Storm-0940, a China-state aligned actor, used the agentic AI penetration testing framework ARTEX to automate attacks targeting hundreds of…",
+   "id": "71f0485320c6",
+   "title": "CISA: Hackers chain Plex flaws in Plex2Shell attacks to breach servers",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) is warning that attackers are actively exploiting four vulnerabilities in Plex Media Server.",
    "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "21 Oct 2026, 18:23 UTC",
-   "published": "2026-10-21T18:23:55+00:00",
+   "category": "Attacks & Breaches",
+   "date": "21 Oct 2026, 18:34 UTC",
+   "published": "2026-10-21T18:34:42+00:00",
    "priority_score": 2,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
-   "tags": [
-    "ai"
-   ],
+   "tags": [],
    "kev": [],
-   "sources": "Microsoft Security Blog",
-   "url": "story/80aac9868cd3.html"
+   "sources": "BleepingComputer",
+   "url": "story/71f0485320c6.html"
   },
   {
    "id": "6478f5844cef",
@@ -2342,6 +2379,23 @@
    "url": "story/8dfac5c34b84.html"
   },
   {
+   "id": "f74ce17a74d9",
+   "title": "eMudhra to Exit Global SSL/TLS Business After 8 Intermediate CA Keys Found Easily Guessable",
+   "summary": "eMudhra, an Indian certificate authority (CA), will withdraw from its global SSL/TLS certificate business, its board decided on Thursday. The decision came five days…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "22 Oct 2026, 18:12 UTC",
+   "published": "2026-10-22T18:12:43+00:00",
+   "priority_score": 1,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "The Hacker News",
+   "url": "story/f74ce17a74d9.html"
+  },
+  {
    "id": "eebdb3f4f6ae",
    "title": "Two CVSS 9.0 Linux KSMBD RCE Flaws Disclosed on Public Mailing Lists Before Kernel Fixes",
    "summary": "Linux servers running KSMBD, the kernel's built-in SMB server, are exposed to two publicly reported remote code execution flaws rated 9.0 by Trend Micro's Zero Day…",
@@ -2682,21 +2736,23 @@
    "url": "story/548b69cacce8.html"
   },
   {
-   "id": "14b2da242e2e",
-   "title": "Democrat lawmakers say Russia is aiming to undermine party ahead of midterms",
-   "summary": "The pair stressed the latest update showed no country is pursuing the technically challenging effort to interfere with or hack into the country’s election infrastructure…",
+   "id": "80aac9868cd3",
+   "title": "AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise",
+   "summary": "As early as September 2026, Storm-0940, a China-state aligned actor, used the agentic AI penetration testing framework ARTEX to automate attacks targeting hundreds of…",
    "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "21 Oct 2026, 18:28 UTC",
-   "published": "2026-10-21T18:28:00+00:00",
+   "category": "AI Risk Lab",
+   "date": "21 Oct 2026, 18:23 UTC",
+   "published": "2026-10-21T18:23:55+00:00",
    "priority_score": 1,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
-   "tags": [],
+   "tags": [
+    "ai"
+   ],
    "kev": [],
-   "sources": "The Record",
-   "url": "story/14b2da242e2e.html"
+   "sources": "Microsoft Security Blog",
+   "url": "story/80aac9868cd3.html"
   },
   {
    "id": "a124b567afcf",
@@ -3577,23 +3633,21 @@
    "url": "story/714d202db596.html"
   },
   {
-   "id": "0a0234023332",
-   "title": "AI Takes Control of Robotic Arm in 16 Minutes Flat",
-   "summary": "Most OT devices at utilities, factories, and elsewhere have been deployed for a decade or more, but operators need to get agile and deploy new cyber defenses.",
+   "id": "14b2da242e2e",
+   "title": "Democrat lawmakers say Russia is aiming to undermine party ahead of midterms",
+   "summary": "The pair stressed the latest update showed no country is pursuing the technically challenging effort to interfere with or hack into the country’s election infrastructure…",
    "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "16 Oct 2026, 18:37 UTC",
-   "published": "2026-10-16T18:37:50+00:00",
-   "priority_score": 1,
+   "category": "Industry & Research",
+   "date": "21 Oct 2026, 18:28 UTC",
+   "published": "2026-10-21T18:28:00+00:00",
+   "priority_score": 0,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
-   "tags": [
-    "ai"
-   ],
+   "tags": [],
    "kev": [],
-   "sources": "Dark Reading",
-   "url": "story/0a0234023332.html"
+   "sources": "The Record",
+   "url": "story/14b2da242e2e.html"
   },
   {
    "id": "288893f63679",
@@ -4715,23 +4769,6 @@
    "kev": [],
    "sources": "Dark Reading",
    "url": "story/b8b7cb7d4b49.html"
-  },
-  {
-   "id": "3b8939cd6e35",
-   "title": "Irish police force has its Twitter hacked in cryptocurrency scam",
-   "summary": "There must have been red faces in the social media department of Ireland's police headquarters after two of its accounts were hijacked this week. Read more in my article…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "16 Oct 2026, 18:00 UTC",
-   "published": "2026-10-16T18:00:50+00:00",
-   "priority_score": 0,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "Graham Cluley",
-   "url": "story/3b8939cd6e35.html"
   }
  ]
 }
