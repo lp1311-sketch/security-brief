@@ -75,25 +75,6 @@
    "instructions_checked": true
   },
   {
-   "id": "b140e0bf691c",
-   "source": "ars",
-   "source_name": "Ars Technica Security",
-   "official": false,
-   "title": "OpenAI models hacked a crypto wallet and breached more websites",
-   "link": "https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/",
-   "published": "2026-10-16T20:59:01+00:00",
-   "summary": "OpenAI said internal models hacked two more websites, bypassed company-imposed browsing restrictions, and used exposed credentials to draw cryptocurrency from a wallet it couldn’t otherwise access, in the latest installment of disclosures of the unethical and likely illegal acts its agents are performing. The company…",
-   "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/ai-agents-1152x648.jpg",
-   "cves": [],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00",
-   "instructions": [
-    "They come after the company revealed in July that internal test agents exploited a zero-day vulnerability in a tool designed to restrict their access to the Internet.",
-    "In a third report , the company said a model prompted to update a cryptocurrency trading application used funds from a locked wallet on a test network."
-   ],
-   "instructions_checked": true,
-   "source_type": "news"
-  },
-  {
    "id": "cd066e93db9f",
    "source": "ars",
    "source_name": "Ars Technica Security",
@@ -4330,6 +4311,28 @@
    "instructions_checked": true
   },
   {
+   "id": "201a6bfc4c9c",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Abandoned Popcorn Time app exposed millions of device to RCE attacks",
+   "link": "https://www.bleepingcomputer.com/news/security/abandoned-popcorn-time-app-exposed-millions-of-device-to-rce-attacks/",
+   "published": "2026-10-23T20:55:05+00:00",
+   "summary": "Researchers remotely disabled a vulnerable updater in the abandoned Time4Popcorn app, a fork of the Popcorn Time BitTorrent client, closing a security flaw that could have allowed attackers to execute malicious code with elevated privileges on millions of computers.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/23/popcorn.jpg",
+   "cves": [],
+   "first_seen": "2026-10-23T21:13:12.466432+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Anyone controlling the update domain could manipulate HTTP traffic and execute code as SYSTEM on Windows and as root on macOS.",
+    "“If we were able to send an update, we could potentially get code execution on millions of systems,” Eye Securit notes , adding that “the impact would be severe if this were to fall into the wrong hands.”",
+    "Between November 2025 and March 2026, Eye used the vulnerable update mechanism to deliver remediation code that stopped and disabled the updater.",
+    "After deploying the remediation, Eye recorded 2 million update downloads, and by March 1 this year, requests to its update domain dropped by 98%."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "9f686724487e",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -5298,6 +5301,22 @@
    "instructions_checked": true
   },
   {
+   "id": "78e6b44f5a3d",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "Trust Is Not What It Seems — And Fraudsters Are Counting on It",
+   "link": "https://www.darkreading.com/cyber-risk/trust-is-not-what-it-seems-and-fraudsters-are-counting-on-it",
+   "published": "2026-10-23T20:57:56+00:00",
+   "summary": "Threat actors don't need to rely on malware to breach organizations anymore. They're simply calling help desks and politely asking for access, with a little help from artificial intelligence.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt34579512de050396/6a5a6336b09056633bee9fe7/trust_dial-NicoElNino-getty-2079838824.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-10-23T21:13:12.466432+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "bd43f4cf3245",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -5484,22 +5503,6 @@
    "published": "2026-10-19T19:55:01+00:00",
    "summary": "Spyware vendors are exploiting targeted ad bidding in the digital ecosystem to identify and track individuals and organizations of interest.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blta9877a78be2c957c/6ad66b90a54e05edb3fb8747/surveillance_Lightspring_shutterstock.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "15367a3259ff",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "BeyondTrust Remote Support Zero-Day Continues Trend of Exploited Edge Bugs",
-   "link": "https://www.darkreading.com/endpoint-security/beyondtrust-remote-support-exploited-edge-bugs",
-   "published": "2026-10-16T20:34:37+00:00",
-   "summary": "Ivanti, Cisco, and Palo Alto Networks all had vulnerabilities in edge devices come under fire this week. Now BeyondTrust joins the group.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt4a126b2e0eae913e/6ad27ebc7cb22e18dd04a52b/Locusts-ZU_09-Getty.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-10-20T09:53:14.101641+00:00",
    "instructions": [],
@@ -5701,24 +5704,21 @@
    "instructions_checked": true
   },
   {
-   "id": "fd577205a9ba",
+   "id": "9d407c505c1e",
    "source": "schneier",
    "source_name": "Schneier on Security",
    "official": false,
    "source_type": "news",
-   "title": "Friday Squid Blogging: Squid Before the Chicxulub Meteor Impact",
-   "link": "https://www.schneier.com/blog/archives/2026/10/friday-squid-blogging-squid-before-the-chicxulub-meteor-impact.html",
-   "published": "2026-10-16T21:06:47+00:00",
-   "summary": "New research shows that squid lived all around the globe even before the Cretaceous-Paleogene mass extinction event. As usual, you can also use this squid post to talk about the security stories in the news that I haven’t covered. Blog moderation policy.",
+   "title": "Friday Squid Blogging: Increasing Squid Populations",
+   "link": "https://www.schneier.com/blog/archives/2026/10/friday-squid-blogging-increasing-squid-populations.html",
+   "published": "2026-10-23T21:00:09+00:00",
+   "summary": "This article in Nature argues that it’s due to an overfishing of predators and warming sea temperatures. As usual, you can also use this squid post to talk about the security stories in the news that I haven’t covered. Blog moderation policy.",
    "image": null,
    "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00",
-   "instructions": [
-    "And the companies as they are still private are hiding it behind bogus reporting like the faux ARR that is as Ed Zitron notes, fraud or it should be…",
-    "The vulnerabilities date back to 2010, and an incomplete patch later released by Broadcom for its implementation of 802.11, did not resolve the issue."
-   ],
-   "instructions_checked": true,
-   "image_checked": true
+   "first_seen": "2026-10-23T21:13:12.466432+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "ab875104cf16",

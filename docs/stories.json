@@ -48,9 +48,9 @@
    "category": "Microsoft",
    "date": "22 Oct 2026, 20:42 UTC",
    "published": "2026-10-22T20:42:17+00:00",
-   "priority_score": 10,
+   "priority_score": 9,
    "priority_basis": [
-    "Editorial attention score 10 reached the High threshold (not CVSS)"
+    "Editorial attention score 9 reached the High threshold (not CVSS)"
    ],
    "tags": [
     "microsoft"
@@ -464,6 +464,23 @@
    "url": "story/4fd8d5a31fd8.html"
   },
   {
+   "id": "78e6b44f5a3d",
+   "title": "Trust Is Not What It Seems — And Fraudsters Are Counting on It",
+   "summary": "Threat actors don't need to rely on malware to breach organizations anymore. They're simply calling help desks and politely asking for access, with a little help from…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "23 Oct 2026, 20:57 UTC",
+   "published": "2026-10-23T20:57:56+00:00",
+   "priority_score": 4,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "Dark Reading",
+   "url": "story/78e6b44f5a3d.html"
+  },
+  {
    "id": "f1cc9ef1de56",
    "title": "Exposed to PHP2Shell? Cyber Experts Weigh in With Advice",
    "summary": "Fixing the critical PHP flaws is not as simple as clicking \"Update.\" Here's how to assess your risk, and what you can do to protect yourself.",
@@ -691,23 +708,6 @@
    "kev": [],
    "sources": "Dark Reading",
    "url": "story/fdce8a7d1bd7.html"
-  },
-  {
-   "id": "0589859b680b",
-   "title": "Toronto crime tips org freezes operations after details of data breach come to light",
-   "summary": "Late Wednesday night the Toronto chapter of Crime Stoppers broke ranks with the national association, revealing a timeline showing what it knew and when along with an…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "22 Oct 2026, 20:52 UTC",
-   "published": "2026-10-22T20:52:00+00:00",
-   "priority_score": 4,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "The Record",
-   "url": "story/0589859b680b.html"
   },
   {
    "id": "a45e553ca30b",
@@ -966,6 +966,23 @@
    "kev": [],
    "sources": "BleepingComputer",
    "url": "story/4eed9c7e0436.html"
+  },
+  {
+   "id": "0589859b680b",
+   "title": "Toronto crime tips org freezes operations after details of data breach come to light",
+   "summary": "Late Wednesday night the Toronto chapter of Crime Stoppers broke ranks with the national association, revealing a timeline showing what it knew and when along with an…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "22 Oct 2026, 20:52 UTC",
+   "published": "2026-10-22T20:52:00+00:00",
+   "priority_score": 3,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "The Record",
+   "url": "story/0589859b680b.html"
   },
   {
    "id": "244621daeb8f",
@@ -1449,23 +1466,38 @@
    "url": "story/b3dabcb4d0c0.html"
   },
   {
-   "id": "b140e0bf691c",
-   "title": "OpenAI models hacked a crypto wallet and breached more websites",
-   "summary": "OpenAI said internal models hacked two more websites, bypassed company-imposed browsing restrictions, and used exposed credentials to draw cryptocurrency from a wallet…",
+   "id": "9d407c505c1e",
+   "title": "Friday Squid Blogging: Increasing Squid Populations",
+   "summary": "This article in Nature argues that it’s due to an overfishing of predators and warming sea temperatures. As usual, you can also use this squid post to talk about the…",
    "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "16 Oct 2026, 20:59 UTC",
-   "published": "2026-10-16T20:59:01+00:00",
-   "priority_score": 3,
+   "category": "Industry & Research",
+   "date": "23 Oct 2026, 21:00 UTC",
+   "published": "2026-10-23T21:00:09+00:00",
+   "priority_score": 2,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
-   "tags": [
-    "ai"
-   ],
+   "tags": [],
    "kev": [],
-   "sources": "Ars Technica Security",
-   "url": "story/b140e0bf691c.html"
+   "sources": "Schneier on Security",
+   "url": "story/9d407c505c1e.html"
+  },
+  {
+   "id": "201a6bfc4c9c",
+   "title": "Abandoned Popcorn Time app exposed millions of device to RCE attacks",
+   "summary": "Researchers remotely disabled a vulnerable updater in the abandoned Time4Popcorn app, a fork of the Popcorn Time BitTorrent client, closing a security flaw that could…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "23 Oct 2026, 20:55 UTC",
+   "published": "2026-10-23T20:55:05+00:00",
+   "priority_score": 2,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "BleepingComputer",
+   "url": "story/201a6bfc4c9c.html"
   },
   {
    "id": "90f70db29589",
@@ -4718,40 +4750,6 @@
    "kev": [],
    "sources": "BleepingComputer",
    "url": "story/74ff0a30f9fe.html"
-  },
-  {
-   "id": "fd577205a9ba",
-   "title": "Friday Squid Blogging: Squid Before the Chicxulub Meteor Impact",
-   "summary": "New research shows that squid lived all around the globe even before the Cretaceous-Paleogene mass extinction event. As usual, you can also use this squid post to talk…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "16 Oct 2026, 21:06 UTC",
-   "published": "2026-10-16T21:06:47+00:00",
-   "priority_score": 0,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "Schneier on Security",
-   "url": "story/fd577205a9ba.html"
-  },
-  {
-   "id": "15367a3259ff",
-   "title": "BeyondTrust Remote Support Zero-Day Continues Trend of Exploited Edge Bugs",
-   "summary": "Ivanti, Cisco, and Palo Alto Networks all had vulnerabilities in edge devices come under fire this week. Now BeyondTrust joins the group.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "16 Oct 2026, 20:34 UTC",
-   "published": "2026-10-16T20:34:37+00:00",
-   "priority_score": 0,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "Dark Reading",
-   "url": "story/15367a3259ff.html"
   }
  ]
 }
