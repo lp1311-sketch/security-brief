@@ -387,6 +387,7 @@ def load_articles(content_dir: Path, warnings: list[str]) -> list[dict]:
             arts.append({
                 "section": sec, "slug": f.stem, "title": meta["title"], "date": date.date().isoformat(),
                 "summary": meta.get("summary", ""), "body": md_to_html(body), "_md": body,
+                "ai_assisted": str(meta.get("ai_assisted", "false")).lower() == "true",
             })
     arts.sort(key=lambda a: a["date"], reverse=True)
     return arts
@@ -1373,7 +1374,8 @@ def article_page(a: dict, cfg: dict, site_cfg: dict) -> str:
         '<span class="visual-corner visual-corner-b" aria-hidden="true"></span>'
         '<span class="visual-caption">SIGNAL / ANALYSIS / DEFENSE</span></div>'
         '<div class="analysis-heading">'
-        f'<p class="analysis-eyebrow"><span class="analysis-live-dot" aria-hidden="true"></span> ORIGINAL SECURITY ANALYSIS'
+        f'<p class="analysis-eyebrow"><span class="analysis-live-dot" aria-hidden="true"></span>'
+        f'{"AI-ASSISTED · EDITOR-REVIEWED ANALYSIS" if a.get("ai_assisted") else "ORIGINAL SECURITY ANALYSIS"}'
         f'<span class="analysis-separator">/</span>{esc(label.upper())}</p>'
         f'<h1 id="article-title" class="article-title">{esc(a["title"])}</h1>{lede}'
         f'<div class="analysis-meta"><span>{esc(fmt_day(a["date"]))}</span><span>{read_minutes} min read</span>'
@@ -1509,7 +1511,7 @@ def cve_table(rows: list[dict]) -> str:
 def _article_hero(a: dict, href: str) -> str:
     return (f'<section class="hero" aria-labelledby="hero-title"><a class="hero-media" href="{esc(href)}" tabindex="-1" aria-hidden="true">'
             f'<img src="{esc(article_cover(a))}" alt="" loading="eager" width="640" height="360"></a>'
-            f'<div class="hero-body"><p class="kicker"><span class="cat">{esc(SECTIONS[a["section"]])}</span></p>'
+            f'<div class="hero-body"><p class="kicker"><span class="cat">{esc('AI-assisted · reviewed' if a.get('ai_assisted') else SECTIONS[a["section"]])}</span></p>'
             f'<h2 id="hero-title"><a href="{esc(href)}">{esc(a["title"])}</a></h2>'
             f'<p class="summary">{esc(_short(a["summary"] or "", 240))}</p>'
             f'<p class="meta">{esc(fmt_day(a["date"]))}</p>'
@@ -2256,7 +2258,7 @@ a.live:hover{color:var(--ink);border-color:var(--crit)}
 @media (prefers-reduced-motion:reduce){body::before,.orb,.fly,.led,.card::after{animation:none!important;transition:none!important}.fly,.card::after{display:none}}
 """
 BANNER_JS = """(function(){
-var msgs=["Feeds are checked every 20 minutes.","Every story links to its original source.","Patch Tuesday notes and weekly analysis are written by hand, not by AI.","Read the Today page for what needs action now.","Corrections are published openly."];
+var msgs=["Feeds are checked every 20 minutes.","Every story links to its original source.","Analysis is labelled by its actual production method and reviewed before publication.","Read the Today page for what needs action now.","Corrections are published openly."];
 var el=document.getElementById('banner-text'),btn=document.getElementById('banner-pause');
 if(!el||!btn)return;
 var i=0,paused=false,reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -2453,9 +2455,9 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
     digest_src = json.dumps({
         "stories": [[s["id"], s["title"], s["summary"], s["published"], s["category"], s["priority"],
                      s["score"], s["image"], [x["url"] for x in s["sources"]]] for s in stories],
-        "articles": [[a["section"], a["slug"], a["title"], a["date"], a["summary"], a["_md"]] for a in articles],
+        "articles": [[a["section"], a["slug"], a["title"], a["date"], a["summary"], a["_md"], a.get("ai_assisted", False)] for a in articles],
         "site": site_cfg,
-        "render": "5.36-decision-desk",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
+        "render": "5.37-weekly-review-label",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
     }, ensure_ascii=False, sort_keys=True)
     if fixtures is None:
         check_source_links(stories, data_file.parent / "linkcheck.json", now)

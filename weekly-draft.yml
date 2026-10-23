@@ -1,0 +1,41 @@
+name: Weekly Signal draft (review required)
+
+on:
+  schedule:
+    - cron: '37 8 * * 1'
+  workflow_dispatch:
+
+# A separate workflow from the 20-minute autoblog. No website publication here.
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-signal-draft
+  cancel-in-progress: false
+
+jobs:
+  prepare-draft:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Prepare review draft (no auto-publication)
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          WEEKLY_AI_MODEL: gpt-4o-mini
+        run: python3 weekly_draft.py
+      - name: Commit draft only, never docs or content
+        run: |
+          if [ -z "$(git status --porcelain -- drafts/weekly/)" ]; then
+            echo 'No draft created; no commit.'
+            exit 0
+          fi
+          git config user.name 'weekly-draft-bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add drafts/weekly/
+          git commit -m "draft: weekly signal $(date -u +%F) [review required]"
+          git pull --rebase origin "${GITHUB_REF_NAME}" # autoblog may have pushed since checkout
+          git push origin "HEAD:${GITHUB_REF_NAME}"
