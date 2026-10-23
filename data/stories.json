@@ -1296,6 +1296,24 @@
    "instructions_checked": true
   },
   {
+   "id": "f059789b2437",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Hackers Breach Enterprise Firewalls and VPNs, Exposing Over 70,000 Credentials",
+   "link": "https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html",
+   "published": "2026-10-23T13:50:56+00:00",
+   "summary": "Cybersecurity researchers have disclosed details of a large-scale campaign that has targeted exposed network edge devices such as Fortinet FortiGate and Palo Alto Networks GlobalProtect firewalls. \"Artifacts from this investigation also indicate that operators in this campaign have obtained access to numerous…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSk-Q06Dd5YyYmXWMt9b860DzGRKbTae_QwvoZDKNICaEznAj2AUurJmv6vPnpcH7qqDjauFZWWx7GX1RN93BLaU9Rqgiqe9j1iQRg2Vqcz3HpSqgesA6oS-GrMTyx4CTzwOD7C_z205k57ZpT70Gv4RXi-65X-nyI04wpA3raJ5nh46pN5ox42cyLnHjv/s1600/1000117358.jpg",
+   "cves": [],
+   "first_seen": "2026-10-23T14:41:37.073708+00:00",
+   "instructions": [
+    "\"Organisations are advised to act on ensuring that any vulnerabilities mentioned in this report are appropriately remedied.\""
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "143bfdf19e2b",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -4969,6 +4987,28 @@
    "source_type": "news"
   },
   {
+   "id": "4eed9c7e0436",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "You gave your AI agent access, but who is giving it orders?",
+   "link": "https://www.bleepingcomputer.com/news/security/you-gave-your-ai-agent-access-but-who-is-giving-it-orders/",
+   "published": "2026-10-23T14:00:10+00:00",
+   "summary": "AI agents can be manipulated through malicious emails, websites, and plugins into executing commands, stealing data, or deleting files using their legitimate permissions. Gen Digital explains how its Agent Trust Hub helps protect agents through skill verification, secure connectivity, and runtime controls that…",
+   "image": "https://www.bleepstatic.com/content/posts/2026/10/21/ai-email.jpg",
+   "cves": [],
+   "first_seen": "2026-10-23T14:41:37.073708+00:00",
+   "image_checked": true,
+   "instructions": [
+    "We’ve framed the question around agents: “Should they know anything about us,” when we should be asking whether users can understand and control what they share.",
+    "When someone asks an agent to read their inbox, an email sender should have no authority over what it does next.",
+    "Gen’s partnership with Vercel also brings verification and visible risk ratings into the skills.sh ecosystem, where developers discover and install new capabilities.",
+    "AI agents can install skills and take action on your behalf, which makes a single compromised skill a security risk."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "aa2f36ffa3be",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -5873,10 +5913,10 @@
    "source_name": "SecurityWeek",
    "official": false,
    "source_type": "news",
-   "title": "Attackers Exploit Third VeloCloud Orchestrator Zero-Day in Four Months",
+   "title": "Attackers Exploit Third Arista VCO Zero-Day in Four Months",
    "link": "https://www.securityweek.com/attackers-exploit-third-velocloud-orchestrator-zero-day-in-four-months/",
    "published": "2026-10-23T09:58:34+00:00",
-   "summary": "The critical-severity SQL injection flaw allows attackers to access privileged internal functionality and gain operator privileges. The post Attackers Exploit Third VeloCloud Orchestrator Zero-Day in Four Months appeared first on SecurityWeek.",
+   "summary": "The critical-severity SQL injection flaw allows attackers to access privileged internal functionality and gain operator privileges. The post Attackers Exploit Third Arista VCO Zero-Day in Four Months appeared first on SecurityWeek.",
    "image": "https://www.securityweek.com/wp-content/uploads/2026/09/arista.jpeg",
    "cves": [],
    "first_seen": "2026-10-23T10:15:21.294716+00:00",
@@ -6199,6 +6239,28 @@
     "Preparing for disruption must become part of day-to-day operations.",
     "Users who installed or updated the CLI on macOS, 64-bit Linux, or Windows x86_64 via the official install script, Homebrew, or a direct GitHub download during the roughly 94-minute window are affected.",
     "Those who built from source, used Go’s install command, or pulled the official Docker image are not."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "52d3232953e2",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "In Other News: Tor Exit Relays Hijacked, Banks Spot Rogue AI Agents, Self-Rebuilding macOS Ransomware",
+   "link": "https://www.securityweek.com/in-other-news-tor-exit-relays-hijacked-banks-spot-rogue-ai-agents-self-rebuilding-macos-ransomware/",
+   "published": "2026-10-23T14:23:37+00:00",
+   "summary": "Noteworthy stories that might have slipped under the radar: Russia’s APT28 hit NATO defense firms, PingCAP source code stolen, ShinyHunters negotiator probe. The post In Other News: Tor Exit Relays Hijacked, Banks Spot Rogue AI Agents, Self-Rebuilding macOS Ransomware appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2023/10/cybersecurity-news.jpg",
+   "cves": [],
+   "first_seen": "2026-10-23T14:41:37.073708+00:00",
+   "image_checked": true,
+   "instructions": [
+    "As systems come back online, non-SSO users must reset their passwords and API users must rotate their API passwords.",
+    "Preparing for disruption must become part of day-to-day operations.",
+    "It then tries to change its hash by taking its own embedded source code, randomizing identifiers and adding junk functions, and recompiling itself (even trying to install Rust if it’s missing).",
+    "ISO/IEC standard targets AI data poisoning, model theft ISO and IEC have published ISO/IEC 27090 , guidance for detecting and mitigating threats specific to AI systems (including data poisoning and model theft) across their life cycle."
    ],
    "instructions_checked": true
   },
