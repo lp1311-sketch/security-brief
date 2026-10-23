@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Radar | Security Brief</title>
+<meta name="description" content="A browser-local technology watchlist for current Security Brief stories.">
+<meta property="og:site_name" content="Security Brief">
+<meta property="og:type" content="website">
+<meta property="og:title" content="My Radar">
+<meta property="og:description" content="A browser-local technology watchlist for current Security Brief stories.">
+<meta name="twitter:card" content="summary">
+<script>document.documentElement.classList.add("js");</script>
+<script>(function(){
+var root=document.documentElement,dark=false,saved=null;
+try{saved=localStorage.getItem('sb-theme')}catch(e){}
+dark=saved?saved==='dark':(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches);
+function apply(){root.setAttribute('data-theme',dark?'dark':'light');
+var b=document.getElementById('theme-toggle');
+if(b){b.textContent=dark?'Light mode':'Dark mode';b.setAttribute('aria-pressed',String(dark));}}
+apply();
+document.addEventListener('DOMContentLoaded',function(){
+var b=document.getElementById('theme-toggle');
+if(b){b.addEventListener('click',function(){dark=!dark;try{localStorage.setItem('sb-theme',dark?'dark':'light')}catch(e){}apply();});}
+apply();});
+})();</script>
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="Security Brief" href="https://lp1311-sketch.github.io/security-brief/feed.xml">
+</head>
+<body>
+<div class="fx" aria-hidden="true"><i class="orb o1"></i><i class="orb o2"></i><i class="orb o3"></i><i class="fly f1"></i><i class="fly f2"></i><i class="fly f3"></i><svg class="fx-circuit" viewBox="0 0 1000 600" preserveAspectRatio="none" aria-hidden="true"><path class="g" d="M0 120 H260 L300 160 H520 L560 120 H1000"/><path class="r" d="M0 430 H180 L220 390 H430 L470 430 H760 L800 470 H1000" style="animation-delay:-6s"/><path class="b" d="M120 600 V470 L160 430 V260 L200 220 V0" style="animation-delay:-11s"/><path class="g" d="M1000 300 H820 L780 340 H640 L600 300 H380" style="animation-delay:-3s"/><circle cx="300" cy="160" r="4" fill="#22c55e"/><circle cx="470" cy="430" r="4" fill="#ef4444"/><circle cx="200" cy="220" r="4" fill="#38bdf8"/><circle cx="600" cy="300" r="4" fill="#22c55e"/></svg></div>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap bar">
+<a class="brand" href="../index.html"><img class="logo-img" src="../favicon.svg" width="30" height="30" alt="" aria-hidden="true">Security Brief</a>
+<nav class="nav" aria-label="Categories"><a href="../today/index.html">Today</a><a href="../radar/index.html">My Radar</a><a href="../saved/index.html">Saved</a><a href="../category/threats/index.html">Threats</a><a href="../category/vulnerabilities/index.html">Vulnerabilities</a><a href="../category/ai/index.html">AI</a><a href="../category/microsoft/index.html">Microsoft</a><a href="../stories/index.html">All stories</a><a href="../briefings/index.html">Analysis</a><a href="../patch-tuesday/index.html">Patch Tuesday</a></nav>
+<button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false">Dark mode</button>
+</div></header>
+<div class="banner" role="region" aria-label="Site highlights"><div class="wrap banner-in"><span class="banner-tag"><i class="led g" aria-hidden="true"></i>Live feed</span><p class="banner-text" id="banner-text" aria-live="off">Feeds are checked every 20 minutes.</p><a class="banner-action" href="../today/index.html"><i class="led r" aria-hidden="true"></i>Action today</a><button type="button" class="banner-pause" id="banner-pause" aria-pressed="false" aria-label="Pause banner">Pause</button></div></div>
+<main id="main" class="wrap">
+<section class="radar-intro"><p class="radar-eyebrow">PERSONAL SIGNAL / LOCAL MODE</p><h1>My Radar</h1><p>See the security stories that mention the technology you follow. Choose your stack below. No account, no profile sent to the site.</p><p class="radar-proof">Keyword matches are leads to investigate — not proof that your environment is affected. Always check the original publisher or vendor advisory before taking action.</p></section><section class="radar-controls" aria-labelledby="radar-controls-title"><h2 id="radar-controls-title">Follow your stack</h2><p>Selections stay in this browser only. Select more than one.</p><div class="radar-choices" id="radar-choices" role="group" aria-label="Followed technologies"></div></section><div class="radar-toolbar"><div><h2>Your signals</h2><span id="radar-count" role="status" aria-live="polite">Loading stories…</span></div><label>Sort by <select id="radar-sort"><option value="priority">Priority, then newest</option><option value="newest">Newest first</option></select></label></div><p class="radar-summary" id="radar-summary">Your choices stay in this browser.</p><p class="radar-empty" id="radar-empty" hidden></p><div class="radar-results" id="radar-results" aria-label="Matching stories"></div><p id="radar-notice" class="meta" role="status"></p><section class="radar-feature"><h2>Put a finding into practice</h2><p>Use the free <a href="../m365-identity-incident-triage-checklist.pdf">M365 Identity Incident Triage Checklist</a> for evidence-first checks, or visit <a href="../today/index.html">Today</a> for a broader daily view.</p></section><script>(function(){
+'use strict';
+var KEY='sb-radar-v1',SAVED='sb-saved';
+var PRESETS=['Microsoft 365','Entra','Defender','Fortinet','Palo Alto Networks','Ivanti','Cisco','Other'];
+var selected=[];try{var old=JSON.parse(localStorage.getItem(KEY)||'[]');if(Array.isArray(old))selected=old.filter(function(v){return PRESETS.indexOf(v)>-1;});}catch(e){}
+selected=Array.from(new Set(selected));
+var choices=document.getElementById('radar-choices'),results=document.getElementById('radar-results'),summary=document.getElementById('radar-summary'),empty=document.getElementById('radar-empty'),count=document.getElementById('radar-count'),notice=document.getElementById('radar-notice');
+var sort=document.getElementById('radar-sort'),limit=60,stories=[];
+var patterns={
+ 'Microsoft 365':/\bmicrosoft 365\b|\bm365\b|\boffice 365\b|\bexchange\b|\bsharepoint\b|\bonedrive\b|\boutlook\b|\bteams\b/i,
+ 'Entra':/\bentra\b|\bazure ad\b|\bconditional access\b|\bidentity\b|\boauth\b|\bsign.in\b/i,
+ 'Defender':/\bdefender\b|\bsentinel\b|\bxdr\b/i,
+ 'Fortinet':/\bfortinet\b|\bfortigate\b|\bfortios\b|\bfortiweb\b/i,
+ 'Palo Alto Networks':/\bpalo alto\b|\bpan.os\b|\bprisma access\b|\bglobalprotect\b/i,
+ 'Ivanti':/\bivanti\b/i,
+ 'Cisco':/\bcisco\b|\bios xe\b/i
+};
+function matches(s,label){
+ var text=[s.title,s.summary,s.category].join(' ');
+ if(label==='Other')return !PRESETS.slice(0,-1).some(function(p){return patterns[p].test(text)});
+ return patterns[label].test(text);
+}
+function safeSaved(){try{var v=JSON.parse(localStorage.getItem(SAVED)||'[]');return Array.isArray(v)?v:[];}catch(e){return [];}}
+function toggleSaved(id){var v=safeSaved(),pos=v.indexOf(id);if(pos<0)v.push(id);else v.splice(pos,1);try{localStorage.setItem(SAVED,JSON.stringify(v));}catch(e){notice.textContent='Browser storage unavailable; saved stories are not retained.';}paint();}
+function el(name,cls,text){var n=document.createElement(name);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n;}
+function paint(){
+ choices.replaceChildren();
+ PRESETS.forEach(function(label){var btn=el('button','radar-chip',label);btn.type='button';btn.setAttribute('aria-pressed',String(selected.includes(label)));btn.addEventListener('click',function(){if(selected.includes(label))selected=selected.filter(function(v){return v!==label;});else selected.push(label);try{localStorage.setItem(KEY,JSON.stringify(selected));}catch(e){notice.textContent='Browser storage unavailable; selections will reset after reload.';}paint();});choices.appendChild(btn);});
+ results.replaceChildren();
+ if(!stories.length){count.textContent='No feed stories loaded';empty.hidden=false;return;}
+ if(!selected.length){count.textContent='Choose at least one technology';empty.hidden=false;empty.textContent='Choose the technologies you use to build your Radar.';summary.textContent='Your choices stay in this browser. No account or server-side tracking.';return;}
+ var filtered=stories.filter(function(s){return selected.some(function(label){return matches(s,label);});});
+ filtered.sort(function(a,b){if(sort.value==='priority'){var ranks={Critical:0,High:1,Standard:2};var d=(ranks[a.priority]??3)-(ranks[b.priority]??3);if(d)return d;d=(Number(b.priority_score)||0)-(Number(a.priority_score)||0);if(d)return d;}return (Date.parse(b.published)||0)-(Date.parse(a.published)||0);});
+ count.textContent=filtered.length+' matching '+(filtered.length===1?'story':'stories')+' in the current feed';
+ summary.textContent='Following '+selected.join(', ')+'. Matches are keyword-based, not a confirmed inventory or exposure assessment.';
+ empty.hidden=filtered.length>0;if(!filtered.length)empty.textContent='No matches in the current feed. Try another technology or check All stories.';
+ var fragment=document.createDocumentFragment(),saved=safeSaved();
+ filtered.slice(0,limit).forEach(function(s){
+   var card=el('article','radar-result');
+   var line=el('div','radar-result-head');
+   line.appendChild(el('span','badge '+s.priority,s.priority));
+   var action=s.kev&&s.kev.length?'CISA KEV listed':s.tags&&s.tags.includes('exploited')?'Exploitation reported':'Editorial priority, not CVSS';
+   line.appendChild(el('span','radar-evidence',action));card.appendChild(line);
+   var title=el('h3'),link=el('a','',s.title);link.href='../'+s.url;title.appendChild(link);card.appendChild(title);
+   card.appendChild(el('p','radar-excerpt',s.summary||'Read the source brief for details.'));
+   card.appendChild(el('p','radar-facts',(s.sources||'Source not specified')+' · '+(s.date||'Date unavailable')));
+   var foot=el('div','radar-result-foot');var why=el('span','',s.priority_basis&&s.priority_basis[0]||'Verify the underlying report before acting.');foot.appendChild(why);
+   var save=el('button','radar-save',saved.includes(s.id)?'Saved':'Save');save.type='button';save.setAttribute('aria-pressed',String(saved.includes(s.id)));save.addEventListener('click',function(){toggleSaved(s.id);});foot.appendChild(save);card.appendChild(foot);
+   fragment.appendChild(card);
+ });results.appendChild(fragment);
+ if(filtered.length>limit)notice.textContent='Showing the first '+limit+' matches. Use All stories to browse the full feed.';
+ else if(!notice.textContent.startsWith('Browser storage'))notice.textContent='';
+}
+sort.addEventListener('change',paint);
+fetch('../stories.json',{cache:'no-store'}).then(function(response){if(!response.ok)throw Error('Feed index not available');return response.json();}).then(function(data){
+ stories=(Array.isArray(data.stories)?data.stories:[]).filter(function(s){return /^[0-9a-f]{12}$/.test(s.id||'') && /^story\/[0-9a-f]{12}\.html$/.test(s.url||'');});paint();
+}).catch(function(){count.textContent='Feed unavailable';empty.hidden=false;empty.textContent='Radar could not load the story index right now. The rest of the site is still available.';});
+paint();
+})();</script>
+</main>
+<script>(function(){
+var msgs=["Feeds are checked every 20 minutes.","Every story links to its original source.","Patch Tuesday notes and weekly analysis are written by hand, not by AI.","Read the Today page for what needs action now.","Corrections are published openly."];
+var el=document.getElementById('banner-text'),btn=document.getElementById('banner-pause');
+if(!el||!btn)return;
+var i=0,paused=false,reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+function show(){el.style.opacity=0;setTimeout(function(){el.textContent=msgs[i];el.style.opacity=1;},250);}
+var t=setInterval(function(){if(paused)return;i=(i+1)%msgs.length;show();},6000);
+btn.addEventListener('click',function(){paused=!paused;btn.setAttribute('aria-pressed',String(paused));btn.textContent=paused?'Play':'Pause';btn.setAttribute('aria-label',paused?'Play banner':'Pause banner');});
+if(reduce){paused=true;btn.setAttribute('aria-pressed','true');btn.textContent='Play';}
+})();</script>
+<script>(function(){
+var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+var bar=document.createElement('div');bar.className='progress';bar.setAttribute('aria-hidden','true');document.body.appendChild(bar);
+function prog(){var h=document.documentElement,max=h.scrollHeight-h.clientHeight;bar.style.transform='scaleX('+(max>0?Math.min(1,h.scrollTop/max):0)+')';}
+window.addEventListener('scroll',prog,{passive:true});prog();
+if(!reduce&&'IntersectionObserver' in window){
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.1});
+document.querySelectorAll('.card,.hero,.stat').forEach(function(el){el.classList.add('reveal');io.observe(el);});}
+if(!reduce){document.querySelectorAll('.card').forEach(function(c){c.addEventListener('pointermove',function(ev){var r=c.getBoundingClientRect();c.style.setProperty('--mx',(ev.clientX-r.left)+'px');c.style.setProperty('--my',(ev.clientY-r.top)+'px');});});}
+})();</script>
+<footer class="site-footer"><div class="wrap"><p>&copy; 2026 Leon Pavesic. Design, analysis and texts on this site are protected by copyright. Headlines, short excerpts and images belong to their original publishers and are linked to the source. Not affiliated with any source.</p><p><a href="../impressum.html">Impressum</a> &middot; <a href="../datenschutz.html">Privacy</a> &middot; <a href="../corrections.html">Corrections</a> &middot; <a href="../feed.xml">RSS</a> &middot; <a href="mailto:leon.pavesic@gmx.de">Contact</a> &middot; <a href="https://www.linkedin.com/in/leon-pavesic/" rel="me noopener noreferrer" target="_blank">LinkedIn</a> &middot; <a href="https://www.xing.com/profile/Leon_Pavesic" rel="me noopener noreferrer" target="_blank">XING</a></p></div></footer>
+</body>
+</html>

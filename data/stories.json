@@ -2194,6 +2194,30 @@
    "instructions_checked": true
   },
   {
+   "id": "199bd0864fa3",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "PHP2Shell Exploit Attempts Hit Millions as Attackers Try to Deploy Mirai Malware",
+   "link": "https://thehackernews.com/2026/10/php2shell-exploit-attempts-hit-millions.html",
+   "published": "2026-10-23T07:40:45+00:00",
+   "summary": "Threat actors have been observed unsuccessfully attempting to exploit the newly disclosed PHP2Shell vulnerabilities to rope infected systems into a Mirai botnet variant called Potassium, as it emerges that weaponizing the flaws may be harder than previously thought. The attacks aim to exploit CVE-2026-109618 and…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3SkRCDhjMsUS2FZ9ES40x39o7u2jdwMQDcq4NC75CsC2Xjji94ZZt_0Jgzdxmbf92n3razC07QvKJ-VT65axzIbXWoYrHytaQhNRBdYEMgmb1Fki-gR2NKY1TXuhpb9lcCemaPSqu8E0Q6KVczRNa97_7tj5Vyt0wngICj6GnWEHphW8fpaSybzKAa-pV/s1600/phpshell.jpg",
+   "cves": [
+    "CVE-2026-109618",
+    "CVE-2026-109619"
+   ],
+   "first_seen": "2026-10-23T08:18:17.776990+00:00",
+   "instructions": [
+    "The disclosure also coincides with the development of a PHP2Shell exploit that can achieve remote code execution on ASLR-enabled x86-64 systems with PHP's recommended production configuration.",
+    "\"Our team developed a novel technique [...] that chains the two vulnerabilities together, using a memory leak to bypass ASLR and achieve remote code execution on x86-64 systems, even with PHP's recommended production error-display setting.\"ir",
+    "The U.K. government has confirmed that 32 digital services are unavailable and four are partially unavailable, largely stemming from the precautionary shutdowns while security updates and mitigations were applied.",
+    "According to estimates from Google-owned VirusTotal, about 272,000 hosts run a supported PHP branch (8.2 to 8.5), Organizations on PHP 7.4, 8.0, or 8.1 are advised to move to a supported branch, or use a distribution backport."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "705a2aee0bf3",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2295,6 +2319,29 @@
     "Put differently, the idea is to devise a malicious agent that can hijack a legitimate AI system and turn it into \"a devoted companion that must never refuse\" and an unwitting cybercrime tool.",
     "The company also said it has notified upstream providers to proactively revoke the keys so as to prevent their abuse.",
     "Rotate environment variables, including any API keys, stored in Railway, as well as private registry credentials."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "a2a9e372db7b",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Researchers Demonstrate Node2Shell RCE Exploit on Node.js Build Using Crafted Brotli Data",
+   "link": "https://thehackernews.com/2026/10/researchers-demonstrate-node2shell-rce.html",
+   "published": "2026-10-23T07:50:01+00:00",
+   "summary": "Malicious Brotli data can make an application on an official build of Node.js run attacker-supplied code, security researchers at Imperva have demonstrated. Their \"Node2Shell\" proof of concept ran code on the official Node.js 24.22.0 image for Linux arm64, with no debugger or custom build, by feeding crafted data to…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDudJHAM27KiE-F4E5vX1WOgITTdawUaZrFoXUIrf7lscEHIl7fgGQY5Qo60bRxr-o7UKloYK1sp23i5cvWPpc6XXttZa8GFvYxqSV7pp0B6vdBTp0sIBCX8r8oC5CAXO1mdJfshaIpLFyrFDCm9HPiYyBZMECEcSHKzbVzOk_VpGL2kEQDjB1rNk21Y8/s1600/node2shell.gif",
+   "cves": [
+    "CVE-2026-111497"
+   ],
+   "first_seen": "2026-10-23T08:18:17.776990+00:00",
+   "instructions": [
+    "The advisory lists no workaround inside Node.js, so an application that cannot update at once has no fallback in the runtime.",
+    "Node.js disclosed the flaw and released fixes on October 21 , and applications that decode untrusted Brotli data should update.",
+    "The update should reach container images and other artifacts that bundle a Node binary, which a package inventory can miss.",
+    "End-of-life lines 20.x and earlier do not receive the fix and should be moved to a supported line."
    ],
    "instructions_checked": true
   },
@@ -6270,6 +6317,28 @@
    "instructions_checked": true
   },
   {
+   "id": "76ce6885fc14",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Atlassian Patches 75 Flaws in Data Center and Server Products",
+   "link": "https://www.securityweek.com/atlassian-patches-75-third-party-flaws-in-data-center-and-server-products/",
+   "published": "2026-10-23T07:54:47+00:00",
+   "summary": "Atlassian’s October bulletin lists 176 vulnerability entries, including 14 critical-severity issues, all in third-party components. The post Atlassian Patches 75 Flaws in Data Center and Server Products appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/12/Atlassian.jpg",
+   "cves": [],
+   "first_seen": "2026-10-23T08:18:17.776990+00:00",
+   "image_checked": true,
+   "instructions": [
+    "It recommends updating to the latest product versions or to the fixed releases listed in the bulletin .",
+    "Organizations should keep their Atlassian products up to date, as threat actors often quickly exploit vulnerabilities.",
+    "Jon Steinbach has been appointed strategic technical advisor to the Pentagon’s CIO.",
+    "Preparing for disruption must become part of day-to-day operations."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "9b477066ea3b",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -6600,6 +6669,28 @@
     "It advises organizations to add them to their security tools and watch for suspicious Telegram traffic.",
     "Jon Steinbach has been appointed strategic technical advisor to the Pentagon’s CIO.",
     "Preparing for disruption must become part of day-to-day operations."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "8d39c401e746",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "LiteLLM Compromised in Fresh Supply Chain Attack",
+   "link": "https://www.securityweek.com/litellm-compromised-in-fresh-supply-chain-attack/",
+   "published": "2026-10-23T08:10:46+00:00",
+   "summary": "Hackers used compromised GitHub CLI OAuth tokens to push and approve malicious packages on PyPI and Docker. The post LiteLLM Compromised in Fresh Supply Chain Attack appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/10/supply-chain-attack.jpeg",
+   "cves": [],
+   "first_seen": "2026-10-23T08:18:17.776990+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Users who installed LiteLLM version 1.107.0 should immediately remove it, rotate their credentials, and sweep their systems for malware.",
+    "Jon Steinbach has been appointed strategic technical advisor to the Pentagon’s CIO.",
+    "Preparing for disruption must become part of day-to-day operations.",
+    "The attackers used the compromised credentials to disable branch protections, merge a change that pointed the releaser to a different source repository, and run a compromised GitHub workflow that pointed to a lookalike repository, then signed and published the poisoned artifacts."
    ],
    "instructions_checked": true
   },
