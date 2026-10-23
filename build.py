@@ -1105,17 +1105,17 @@ def priority_summary(s: dict) -> str:
     return "No elevated-priority trigger identified in feed data"
 
 
-def _card(s: dict) -> str:
+def _card(s: dict, base: str = "") -> str:
     img = s["image"] or fallback_cover(s)
     names = ", ".join(dict.fromkeys(x["name"] for x in s["sources"]))
     prio = esc(s["priority"])
     fb = f' data-fallback="{esc(fallback_cover(s))}" onerror="this.onerror=null;this.src=this.dataset.fallback"'
     attrs = _filter_data(s)
     return f"""<article class="card prio-{prio}" {attrs}>
-<a class="card-media" href="story/{esc(s['id'])}.html" tabindex="-1" aria-hidden="true"><img src="{esc(img)}"{fb} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360"><span class="badge {prio}">{prio}</span></a>
+<a class="card-media" href="{base}story/{esc(s['id'])}.html" tabindex="-1" aria-hidden="true"><img src="{esc(img)}"{fb} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360"><span class="badge {prio}">{prio}</span></a>
 <div class="card-body">
 <p class="kicker"><span class="cat">{esc(CATEGORIES[s['category']][0])}</span> <span class="type">{esc(s.get('content_type', 'News'))}</span></p>
-<h3><a href="story/{esc(s['id'])}.html">{esc(s['title'])}</a></h3>
+<h3><a href="{base}story/{esc(s['id'])}.html">{esc(s['title'])}</a></h3>
 <p class="summary">{esc(_short(s['summary'], 170))}</p>
 <p class="priority-note"><strong>Editorial priority:</strong> {esc(priority_summary(s))}</p>
 <p class="meta">{esc(names)} &middot; {esc(fmt_date(s['published']))}</p>
@@ -1327,7 +1327,7 @@ def _article_card(a: dict, href: str) -> str:
 
 
 def article_page(a: dict, cfg: dict, site_cfg: dict) -> str:
-    base = "../../"
+    base = "../"  # Article is directly inside docs/<section>/.
     label = SECTIONS[a["section"]]
     lede = f'<p class="analysis-lede">{esc(a["summary"])}</p>' if a["summary"] else ""
     plain_body = re.sub(r"<[^>]+>", " ", a["body"])
@@ -1351,7 +1351,7 @@ def article_page(a: dict, cfg: dict, site_cfg: dict) -> str:
         '<article class="analysis-article page-surface">' + header + toc
         + '<div class="prose analysis-prose">' + a["body"]
         + f'<p class="analysis-back"><a class="btn" href="index.html">&larr; All {esc(label)}</a> '
-        '<a class="text-link" href="../../index.html">Back to home</a></p>'
+        '<a class="text-link" href="../index.html">Back to home</a></p>'
         + '</div></article>'
     )
     body += _donate(site_cfg, base) + _newsletter(site_cfg, base)
@@ -1961,7 +1961,7 @@ def listing_page(stories: list[dict], cfg: dict, base: str, title: str, intro: s
     else:
         parts.append(filter_bar(stories))
         parts.append('<section class="section" data-section aria-label="Stories"><div class="grid">'
-                     + "".join(_card(s) for s in stories) + "</div></section>")
+                     + "".join(_card(s, base) for s in stories) + "</div></section>")
         parts.append("<script>" + FILTER_JS + "</script>")
     return _layout(cfg, title, intro, "\n".join(parts), base)
 
@@ -1978,10 +1978,10 @@ def story_page(s: dict, cfg: dict) -> str:
         credit = "Illustration: no preview image was available for this story."
     reasons = "".join(f"<li>{esc(r)}</li>" for r in s["reasons"]) or "<li>No scoring signals matched.</li>"
     srcs = "".join(
-        f'<li><a href="{esc(x["url"])}" rel="nofollow noopener noreferrer" target="_blank">{esc(x["title"])}</a>'
-        f' — {esc(x["name"])}, {esc(fmt_date(x["published"]))}'
-        + (' <span class="dead">(link not found at last check)</span>' if x.get("link_status") == "dead" else "")
-        + "</li>"
+        '<li>' + (esc(x["title"]) + ' <span class="dead">(source unavailable at last check)</span>'
+                 if x.get("link_status") == "dead" else
+                 f'<a href="{esc(x["url"])}" rel="nofollow noopener noreferrer" target="_blank">{esc(x["title"])}</a>')
+        + f' — {esc(x["name"])}, {esc(fmt_date(x["published"]))}</li>'
         for x in s["sources"]
     )
     if s["kev"]:
@@ -2246,6 +2246,8 @@ def _probe(url: str, timeout: int = 8) -> str:
                 return "ok" if r.status < 400 else "unverified"
         except urllib.error.HTTPError as e:
             if e.code in DEAD_CODES:
+                if method == "HEAD":
+                    continue  # HEAD can be blocked while the actual article GET works.
                 return "dead"
             if e.code in (403, 405, 429):
                 continue
@@ -2348,10 +2350,12 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
                      s["score"], s["image"], [x["url"] for x in s["sources"]]] for s in stories],
         "articles": [[a["section"], a["slug"], a["title"], a["date"], a["summary"], a["_md"]] for a in articles],
         "site": site_cfg,
-        "render": "5.32",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
+        "render": "5.33-link-repair",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
     }, ensure_ascii=False, sort_keys=True)
     if fixtures is None:
         check_source_links(stories, data_file.parent / "linkcheck.json", now)
+    digest_src += json.dumps([[source["url"], source.get("link_status", "unchecked")]
+                              for story in stories for source in story["sources"]], sort_keys=True)
     digest = hashlib.sha1(digest_src.encode("utf-8")).hexdigest()
     digest_file = data_file.parent / "digest.txt"
     prev_digest = digest_file.read_text(encoding="utf-8").strip() if digest_file.exists() else ""
