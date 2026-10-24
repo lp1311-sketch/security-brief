@@ -1,24 +1,27 @@
 {
  "stories": [
   {
-   "id": "199bd0864fa3",
-   "title": "PHP2Shell Exploit Attempts Hit Millions as Attackers Try to Deploy Mirai Malware",
-   "summary": "Threat actors have been observed unsuccessfully attempting to exploit the newly disclosed PHP2Shell vulnerabilities to rope infected systems into a Mirai botnet variant…",
-   "priority": "High",
+   "id": "838b4b1ce253",
+   "title": "CISA Flags Two Actively Exploited Critical Flaws in Collabora Online and Arista VeloCloud",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added two vulnerabilities impacting Collabora Online Built-in CODE Server and Arista VeloCloud…",
+   "priority": "Critical",
    "category": "Patch Radar",
-   "date": "23 Oct 2026, 07:40 UTC",
-   "published": "2026-10-23T07:40:45+00:00",
-   "priority_score": 11,
+   "date": "24 Oct 2026, 06:25 UTC",
+   "published": "2026-10-24T06:25:57+00:00",
+   "priority_score": 14,
    "priority_basis": [
-    "Editorial attention score 11 reached the High threshold (not CVSS)"
+    "CISA KEV listing: CVE-2026-110447"
    ],
    "tags": [
+    "critical",
     "exploited",
     "patch-now"
    ],
-   "kev": [],
-   "sources": "The Hacker News, Schneier on Security, Born's IT and Windows Blog, SecurityWeek, KrebsOnSecurity, BleepingComputer",
-   "url": "story/199bd0864fa3.html"
+   "kev": [
+    "CVE-2026-110447"
+   ],
+   "sources": "The Hacker News",
+   "url": "story/838b4b1ce253.html"
   },
   {
    "id": "23872cb1986e",
@@ -39,6 +42,26 @@
    "kev": [],
    "sources": "The Hacker News, BleepingComputer",
    "url": "story/23872cb1986e.html"
+  },
+  {
+   "id": "199bd0864fa3",
+   "title": "PHP2Shell Exploit Attempts Hit Millions as Attackers Try to Deploy Mirai Malware",
+   "summary": "Threat actors have been observed unsuccessfully attempting to exploit the newly disclosed PHP2Shell vulnerabilities to rope infected systems into a Mirai botnet variant…",
+   "priority": "High",
+   "category": "Patch Radar",
+   "date": "23 Oct 2026, 07:40 UTC",
+   "published": "2026-10-23T07:40:45+00:00",
+   "priority_score": 10,
+   "priority_basis": [
+    "Editorial attention score 10 reached the High threshold (not CVSS)"
+   ],
+   "tags": [
+    "exploited",
+    "patch-now"
+   ],
+   "kev": [],
+   "sources": "The Hacker News, Schneier on Security, Born's IT and Windows Blog, SecurityWeek, KrebsOnSecurity, BleepingComputer",
+   "url": "story/199bd0864fa3.html"
   },
   {
    "id": "778da97616c1",
@@ -640,23 +663,6 @@
    "url": "story/8d39c401e746.html"
   },
   {
-   "id": "76ce6885fc14",
-   "title": "Atlassian Patches 75 Flaws in Data Center and Server Products",
-   "summary": "Atlassian’s October bulletin lists 176 vulnerability entries, including 14 critical-severity issues, all in third-party components. The post Atlassian Patches 75 Flaws…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "23 Oct 2026, 07:54 UTC",
-   "published": "2026-10-23T07:54:47+00:00",
-   "priority_score": 4,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "SecurityWeek",
-   "url": "story/76ce6885fc14.html"
-  },
-  {
    "id": "222dfd34d31c",
    "title": "Windows Server 2025 unterstützt nun Quick Machine Recovery",
    "summary": "Kurzer Nachtrag vom Oktober 2026-Patchday bei Microsoft. Redmond hat zum 13. Oktober 2026 mit den Sicherheitsupdates auch eine Funktion namens \"Quick Machine Recovery\"…",
@@ -953,6 +959,23 @@
    "url": "story/4eed9c7e0436.html"
   },
   {
+   "id": "76ce6885fc14",
+   "title": "Atlassian Patches 75 Flaws in Data Center and Server Products",
+   "summary": "Atlassian’s October bulletin lists 176 vulnerability entries, including 14 critical-severity issues, all in third-party components. The post Atlassian Patches 75 Flaws…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "23 Oct 2026, 07:54 UTC",
+   "published": "2026-10-23T07:54:47+00:00",
+   "priority_score": 3,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "SecurityWeek",
+   "url": "story/76ce6885fc14.html"
+  },
+  {
    "id": "fdce8a7d1bd7",
    "title": "State Bank of India Suffers a Customer PII Data Leak",
    "summary": "Relatively small data breaches in India can turn quite serious, thanks to a sophisticated underground market for trading PII.",
@@ -1091,23 +1114,6 @@
    "kev": [],
    "sources": "BleepingComputer",
    "url": "story/df0211e45e19.html"
-  },
-  {
-   "id": "a5298e0f95bc",
-   "title": "Oracle Patches Over 1,200 Vulnerabilities With October 2026 CPU",
-   "summary": "Nearly 100 vulnerabilities have been assigned a critical severity rating and Fusion Middleware received the most patches. The post Oracle Patches Over 1,200…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "22 Oct 2026, 07:38 UTC",
-   "published": "2026-10-22T07:38:14+00:00",
-   "priority_score": 3,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "SecurityWeek",
-   "url": "story/a5298e0f95bc.html"
   },
   {
    "id": "7bcbd743c3f7",
@@ -1772,6 +1778,23 @@
    "kev": [],
    "sources": "The Hacker News",
    "url": "story/a9227db3dd33.html"
+  },
+  {
+   "id": "a5298e0f95bc",
+   "title": "Oracle Patches Over 1,200 Vulnerabilities With October 2026 CPU",
+   "summary": "Nearly 100 vulnerabilities have been assigned a critical severity rating and Fusion Middleware received the most patches. The post Oracle Patches Over 1,200…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "22 Oct 2026, 07:38 UTC",
+   "published": "2026-10-22T07:38:14+00:00",
+   "priority_score": 2,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "SecurityWeek",
+   "url": "story/a5298e0f95bc.html"
   },
   {
    "id": "832124389031",
@@ -2628,40 +2651,6 @@
    "kev": [],
    "sources": "SecurityWeek",
    "url": "story/eb08dcb4a958.html"
-  },
-  {
-   "id": "29143f2ae20d",
-   "title": "Node.js Brotli Decoder Bug Could Allow Remote Code Execution in All Supported Versions",
-   "summary": "Node.js released security updates on October 21 for its three supported release lines, 22.x, 24.x and 26.x, fixing 10 flaws. The most serious is a bug in the Brotli…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "22 Oct 2026, 07:47 UTC",
-   "published": "2026-10-22T07:47:22+00:00",
-   "priority_score": 1,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/29143f2ae20d.html"
-  },
-  {
-   "id": "dd2c177462a4",
-   "title": "Meta Ordered to Pay New Mexico $25 Billion for Deceiving Users About Privacy on Facebook",
-   "summary": "The $25 billion award far exceeds a $5 billion fine the Federal Trade Commission levied against Facebook in 2019. The post Meta Ordered to Pay New Mexico $25 Billion for…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "22 Oct 2026, 07:26 UTC",
-   "published": "2026-10-22T07:26:54+00:00",
-   "priority_score": 1,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "SecurityWeek",
-   "url": "story/dd2c177462a4.html"
   },
   {
    "id": "a734856ab1ed",
@@ -3593,6 +3582,40 @@
    "kev": [],
    "sources": "Troy Hunt",
    "url": "story/07986418197e.html"
+  },
+  {
+   "id": "29143f2ae20d",
+   "title": "Node.js Brotli Decoder Bug Could Allow Remote Code Execution in All Supported Versions",
+   "summary": "Node.js released security updates on October 21 for its three supported release lines, 22.x, 24.x and 26.x, fixing 10 flaws. The most serious is a bug in the Brotli…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "22 Oct 2026, 07:47 UTC",
+   "published": "2026-10-22T07:47:22+00:00",
+   "priority_score": 0,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "The Hacker News",
+   "url": "story/29143f2ae20d.html"
+  },
+  {
+   "id": "dd2c177462a4",
+   "title": "Meta Ordered to Pay New Mexico $25 Billion for Deceiving Users About Privacy on Facebook",
+   "summary": "The $25 billion award far exceeds a $5 billion fine the Federal Trade Commission levied against Facebook in 2019. The post Meta Ordered to Pay New Mexico $25 Billion for…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "22 Oct 2026, 07:26 UTC",
+   "published": "2026-10-22T07:26:54+00:00",
+   "priority_score": 0,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "SecurityWeek",
+   "url": "story/dd2c177462a4.html"
   },
   {
    "id": "eff3ebf7d52f",
