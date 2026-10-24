@@ -503,23 +503,6 @@
    "url": "story/ff1522ac28cb.html"
   },
   {
-   "id": "8bb708370d7a",
-   "title": "Quest Diagnostics warns of potential data theft after attack on lab service system",
-   "summary": "Nationwide lab test company Quest Diagnostics said one of its key systems may have experienced a breach of patient data.",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "23 Oct 2026, 12:52 UTC",
-   "published": "2026-10-23T12:52:00+00:00",
-   "priority_score": 4,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "The Record",
-   "url": "story/8bb708370d7a.html"
-  },
-  {
    "id": "af157714ac71",
    "title": "Hacker leaks 281 GB of data from Germany’s far-right AfD party",
    "summary": "The AfD has confirmed that hackers breached its hosting provider. A leak site now claims to offer 421,179 of the party’s internal emails, and shows AI-written summaries…",
@@ -904,6 +887,23 @@
    "kev": [],
    "sources": "BleepingComputer",
    "url": "story/4eed9c7e0436.html"
+  },
+  {
+   "id": "8bb708370d7a",
+   "title": "Quest Diagnostics warns of potential data theft after attack on lab service system",
+   "summary": "Nationwide lab test company Quest Diagnostics said one of its key systems may have experienced a breach of patient data.",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "23 Oct 2026, 12:52 UTC",
+   "published": "2026-10-23T12:52:00+00:00",
+   "priority_score": 3,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "The Record",
+   "url": "story/8bb708370d7a.html"
   },
   {
    "id": "3bc9a46d2904",
@@ -1640,40 +1640,6 @@
    "url": "story/b49db17578fd.html"
   },
   {
-   "id": "eb477469ff02",
-   "title": "HPE patches eight max severity RCE and auth bypass AOS flaws",
-   "summary": "Hewlett Packard Enterprise (HPE) released security updates to patch 72 vulnerabilities in the Aruba Operating System (ArubaOS), including eight maximum-severity…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "23 Oct 2026, 12:48 UTC",
-   "published": "2026-10-23T12:48:00+00:00",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "BleepingComputer",
-   "url": "story/eb477469ff02.html"
-  },
-  {
-   "id": "ceaaccb7c738",
-   "title": "Mirai Botnet Operators Join PHP2Shell Attacks as ASLR Bypass Exploits Emerge",
-   "summary": "Researchers tie PHP2Shell attempts to a Mirai botnet and show an ASLR bypass, but no successful compromise has been confirmed yet. The post Mirai Botnet Operators Join…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "23 Oct 2026, 12:45 UTC",
-   "published": "2026-10-23T12:45:52+00:00",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "SecurityWeek",
-   "url": "story/ceaaccb7c738.html"
-  },
-  {
    "id": "0151e8522bf7",
    "title": "LiteLLM release pipeline hacked to distribute info-stealer malware",
    "summary": "Hackers compromised the LiteLLM project's PyPI package and published malicious Docker images with a payload that steals credentials, secrets, and environment variables.",
@@ -1744,23 +1710,6 @@
    "kev": [],
    "sources": "Microsoft Security Response Center",
    "url": "story/6b9aa0664452.html"
-  },
-  {
-   "id": "c78f9791369d",
-   "title": "Amazon says PHP2Shell exploitation began 4 days before patches",
-   "summary": "Security researchers at Amazon Threat Intelligence say attackers began targeting the PHP2Shell flaws four days before security patches were released on Wednesday.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "22 Oct 2026, 13:09 UTC",
-   "published": "2026-10-22T13:09:12+00:00",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "BleepingComputer, SecurityWeek",
-   "url": "story/c78f9791369d.html"
   },
   {
    "id": "34f12a1f7c34",
@@ -2328,6 +2277,40 @@
    "url": "story/43fc56afbb27.html"
   },
   {
+   "id": "eb477469ff02",
+   "title": "HPE patches eight max severity RCE and auth bypass AOS flaws",
+   "summary": "Hewlett Packard Enterprise (HPE) released security updates to patch 72 vulnerabilities in the Aruba Operating System (ArubaOS), including eight maximum-severity…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "23 Oct 2026, 12:48 UTC",
+   "published": "2026-10-23T12:48:00+00:00",
+   "priority_score": 1,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "BleepingComputer",
+   "url": "story/eb477469ff02.html"
+  },
+  {
+   "id": "ceaaccb7c738",
+   "title": "Mirai Botnet Operators Join PHP2Shell Attacks as ASLR Bypass Exploits Emerge",
+   "summary": "Researchers tie PHP2Shell attempts to a Mirai botnet and show an ASLR bypass, but no successful compromise has been confirmed yet. The post Mirai Botnet Operators Join…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "23 Oct 2026, 12:45 UTC",
+   "published": "2026-10-23T12:45:52+00:00",
+   "priority_score": 1,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "SecurityWeek",
+   "url": "story/ceaaccb7c738.html"
+  },
+  {
    "id": "80697809b26e",
    "title": "Russia-Linked Hackers Used New Mesh Network Backdoor in Destructive Ukraine Attack",
    "summary": "The Russian state-sponsored hacking group Sandworm teamed up with another threat actor to carry out a destructive wiping attack targeting a Ukrainian logistics company…",
@@ -2532,21 +2515,21 @@
    "url": "story/c145f24074c2.html"
   },
   {
-   "id": "6a8ba679d4e1",
-   "title": "Indurex Raises $8 Million to Expand Industrial Cybersecurity Platform",
-   "summary": "The Amsterdam-based company plans to use the funding for research and development and commercial expansion in Europe and the Middle East. The post Indurex Raises $8…",
+   "id": "c78f9791369d",
+   "title": "Amazon says PHP2Shell exploitation began 4 days before patches",
+   "summary": "Security researchers at Amazon Threat Intelligence say attackers began targeting the PHP2Shell flaws four days before security patches were released on Wednesday.",
    "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "22 Oct 2026, 13:00 UTC",
-   "published": "2026-10-22T13:00:00+00:00",
+   "category": "Patch Radar",
+   "date": "22 Oct 2026, 13:09 UTC",
+   "published": "2026-10-22T13:09:12+00:00",
    "priority_score": 1,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
    "tags": [],
    "kev": [],
-   "sources": "SecurityWeek",
-   "url": "story/6a8ba679d4e1.html"
+   "sources": "BleepingComputer, SecurityWeek",
+   "url": "story/c78f9791369d.html"
   },
   {
    "id": "a9227db3dd33",
@@ -3497,6 +3480,23 @@
    "kev": [],
    "sources": "Troy Hunt",
    "url": "story/07986418197e.html"
+  },
+  {
+   "id": "6a8ba679d4e1",
+   "title": "Indurex Raises $8 Million to Expand Industrial Cybersecurity Platform",
+   "summary": "The Amsterdam-based company plans to use the funding for research and development and commercial expansion in Europe and the Middle East. The post Indurex Raises $8…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "22 Oct 2026, 13:00 UTC",
+   "published": "2026-10-22T13:00:00+00:00",
+   "priority_score": 0,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "SecurityWeek",
+   "url": "story/6a8ba679d4e1.html"
   },
   {
    "id": "2bd447638fb1",
