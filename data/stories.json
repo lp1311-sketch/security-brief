@@ -1017,6 +1017,29 @@
    "instructions_checked": true
   },
   {
+   "id": "a0a9e49aec28",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software",
+   "link": "https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html",
+   "published": "2026-10-24T08:45:56+00:00",
+   "summary": "A memory-corruption flaw in Google's Brotli decoder sits in many programs that unpack Brotli-compressed data, among them Bun, the Python Brotli and brotlicffi packages, and Envoy proxies set up to decompress Brotli. Tracked as CVE-2026-111497, the flaw allows crafted compressed data to overwrite past the end of a…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxIIerJT3LOMCGn3nXAnmhaHzJlJnVJCso1COluq8t3WuF4IpNARa_Asl5nEhRUDTEcR89kwzo5vGmP5IyNbj1ncdaCpkhqcHUODHAd3khanaE-7N8Vb0NyEJkmPmNkhSpJtLCLgi9srDRhZLtM5n8UDI58F797ZJaVzC7JzjPLfca4NpxZr_7tCX8RIk/s1600/br-nodejs.jpg",
+   "cves": [
+    "CVE-2026-111497"
+   ],
+   "first_seen": "2026-10-24T10:30:29.487176+00:00",
+   "instructions": [
+    "Update to a fixed version from the table above, then restart the service and rebuild any container image, because a running process keeps the old decoder until it restarts.",
+    "OpenAI's disclosure page and the security firm Aikido both recommend:",
+    "For Node.js, no workaround has been published, so updating the runtime is the only fix.",
+    "The CVE record names Google's Brotli repository, not the PyPI packages, and GitHub's advisory still lists no affected package, which is what Dependabot reads."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "c7a020f274e0",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1909,6 +1932,27 @@
     "Node.js disclosed the flaw and released fixes on October 21 , and applications that decode untrusted Brotli data should update.",
     "The update should reach container images and other artifacts that bundle a Node binary, which a package inventory can miss.",
     "End-of-life lines 20.x and earlier do not receive the fix and should be moved to a supported line."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "94d51fe2d204",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Researchers Push Over 2 Million Updates to Remotely Disable Popcorn Time Updater That Could Fuel a Botnet",
+   "link": "https://thehackernews.com/2026/10/researchers-push-over-2-million-updates.html",
+   "published": "2026-10-24T09:04:24+00:00",
+   "summary": "Between November 2025 and March 2026, the Dutch security firm Eye Security pushed more than 2 million updates to computers it did not own to switch off a background updater that it said could have allowed an outsider to take over the machine. The updater belongs to Time4Popcorn, an abandoned copy of Popcorn Time, a…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjuy-T7iQPeiRqkJd7yhxd2WVQzxURRnLyHG9yz5fUXxIhjUW-bv_yAAt13dnTE1ecuh1w6cRjenRXL3In2b55rL22lXnBhpKrVvS9c5Qb6Bv0TeQPLeAXYoafNYnqYxYQwWnZBCO3e8ZW-HS8Y2GMbQuGz58-_wG7gT6Pcok3j53J4iiZ7jw6kLoGGtWU/s1600/popcorn.jpg",
+   "cves": [],
+   "first_seen": "2026-10-24T10:30:29.487176+00:00",
+   "instructions": [
+    "Eye compared the step to Operation Ladybird in 2021, when Dutch police pushed an update to computers infected with the Emotet botnet to disable the malware on them.",
+    "Soon after the updates began, someone uploaded Eye's update to VirusTotal, and antivirus engines started flagging it as malware, a fair description of a program that disables a Windows service.",
+    "On a machine with that access, an attacker could install ransomware, steal saved passwords, or pull the computer into a botnet, Eye said.",
+    "With no company left to fix the software and no patch coming, Eye decided to use the updater against itself."
    ],
    "instructions_checked": true
   },
