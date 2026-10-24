@@ -311,26 +311,6 @@
    "url": "story/af157714ac71.html"
   },
   {
-   "id": "ba1a1addd0c2",
-   "title": "AI Agents as Insider Threats: Inside Microsoft's Bet on a Unified Security Stack",
-   "summary": "Microsoft's Project Perception adds Guardian Agents to monitor and contain anomalous AI agents, but experts warn that policing unpredictable agents with other agents may…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "23 Oct 2026, 11:38 UTC",
-   "published": "2026-10-23T11:38:28+00:00",
-   "priority_score": 5,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "microsoft",
-    "ai"
-   ],
-   "kev": [],
-   "sources": "Dark Reading",
-   "url": "story/ba1a1addd0c2.html"
-  },
-  {
    "id": "b65cad206f50",
    "title": "Reports of PHP bug exploitation attempts grow as experts downplay viability of exploits",
    "summary": "The headline-grabbing bugs known colloquially as PHP2Shell are giving cyber analysts a lot to track — and a lot to debunk.",
@@ -557,21 +537,24 @@
    "url": "story/8bb708370d7a.html"
   },
   {
-   "id": "3bc9a46d2904",
-   "title": "PHP Warns of Another Unpatched RCE Risk Two Days After Emergency PHP2Shell Patches",
-   "summary": "PHP has warned of another way an attacker could run code on a web server, two days after it shipped emergency fixes for the critical PHP2Shell flaws. The new issue…",
+   "id": "ba1a1addd0c2",
+   "title": "AI Agents as Insider Threats: Inside Microsoft's Bet on a Unified Security Stack",
+   "summary": "Microsoft's Project Perception adds Guardian Agents to monitor and contain anomalous AI agents, but experts warn that policing unpredictable agents with other agents may…",
    "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "23 Oct 2026, 11:25 UTC",
-   "published": "2026-10-23T11:25:43+00:00",
+   "category": "AI Risk Lab",
+   "date": "23 Oct 2026, 11:38 UTC",
+   "published": "2026-10-23T11:38:28+00:00",
    "priority_score": 4,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
-   "tags": [],
+   "tags": [
+    "microsoft",
+    "ai"
+   ],
    "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/3bc9a46d2904.html"
+   "sources": "Dark Reading",
+   "url": "story/ba1a1addd0c2.html"
   },
   {
    "id": "6f084559d703",
@@ -832,6 +815,42 @@
    "url": "story/b1e34d264127.html"
   },
   {
+   "id": "3a1a036ef73a",
+   "title": "Leaked LiteLLM Master Key Let Attackers Steal GitHub Tokens and Hijack Release Pipeline",
+   "summary": "LiteLLM on Friday revealed that an Agent Platform master key accidentally published to a public GitHub repository in late May 2026 ultimately allowed the threat actor to…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "24 Oct 2026, 11:03 UTC",
+   "published": "2026-10-24T11:03:33+00:00",
+   "priority_score": 3,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "The Hacker News",
+   "url": "story/3a1a036ef73a.html"
+  },
+  {
+   "id": "afec56c7243a",
+   "title": "Google Says Gmail and Photos Data Shared With AI Search Could Be Used for Targeted Ads",
+   "summary": "Google has updated its privacy policy to spell out that using personalized artificial intelligence (AI) features in Search or Gemini could allow the company to serve…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "24 Oct 2026, 10:36 UTC",
+   "published": "2026-10-24T10:36:33+00:00",
+   "priority_score": 3,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "ai"
+   ],
+   "kev": [],
+   "sources": "The Hacker News",
+   "url": "story/afec56c7243a.html"
+  },
+  {
    "id": "abfff6ba3917",
    "title": "Inside the LiteLLM 1.107.0 supply chain compromise: Credential theft through Python startup hooks",
    "summary": "On October 21, 2026, a compromised LiteLLM 1.107.0 release was published to the Python Package Index (PyPI) and distributed through official container images. The…",
@@ -885,6 +904,23 @@
    "kev": [],
    "sources": "BleepingComputer",
    "url": "story/4eed9c7e0436.html"
+  },
+  {
+   "id": "3bc9a46d2904",
+   "title": "PHP Warns of Another Unpatched RCE Risk Two Days After Emergency PHP2Shell Patches",
+   "summary": "PHP has warned of another way an attacker could run code on a web server, two days after it shipped emergency fixes for the critical PHP2Shell flaws. The new issue…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "23 Oct 2026, 11:25 UTC",
+   "published": "2026-10-23T11:25:43+00:00",
+   "priority_score": 3,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "The Hacker News",
+   "url": "story/3bc9a46d2904.html"
   },
   {
    "id": "948084576510",
@@ -1400,6 +1436,23 @@
    "url": "story/1de1c48ce23b.html"
   },
   {
+   "id": "a0a9e49aec28",
+   "title": "Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software",
+   "summary": "A memory-corruption flaw in Google's Brotli decoder sits in many programs that unpack Brotli-compressed data, among them Bun, the Python Brotli and brotlicffi packages…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "24 Oct 2026, 11:09 UTC",
+   "published": "2026-10-24T11:09:29+00:00",
+   "priority_score": 2,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "The Hacker News",
+   "url": "story/a0a9e49aec28.html"
+  },
+  {
    "id": "3ba9184e67f7",
    "title": "php2Shell: Webseiten, die das Thema monitoren",
    "summary": "Das PHP-Projekt hat die Woche ja die schweren Sicherheitslücken, php2shell, in den aktuellen Versionen des PHP-Interpreters gepatcht. Aber sind alle Produkte, in denen…",
@@ -1432,23 +1485,6 @@
    "kev": [],
    "sources": "The Hacker News",
    "url": "story/94d51fe2d204.html"
-  },
-  {
-   "id": "a0a9e49aec28",
-   "title": "Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software",
-   "summary": "A memory-corruption flaw in Google's Brotli decoder sits in many programs that unpack Brotli-compressed data, among them Bun, the Python Brotli and brotlicffi packages…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "24 Oct 2026, 08:45 UTC",
-   "published": "2026-10-24T08:45:56+00:00",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/a0a9e49aec28.html"
   },
   {
    "id": "cc05f605fbbb",
@@ -1636,23 +1672,6 @@
    "kev": [],
    "sources": "SecurityWeek",
    "url": "story/ceaaccb7c738.html"
-  },
-  {
-   "id": "80697809b26e",
-   "title": "Russia-Linked Hackers Used New Mesh Network Backdoor in Destructive Ukraine Attack",
-   "summary": "The Russian state-sponsored hacking group Sandworm teamed up with another threat actor to carry out a destructive wiping attack targeting a Ukrainian logistics company…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "23 Oct 2026, 11:11 UTC",
-   "published": "2026-10-23T11:11:23+00:00",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/80697809b26e.html"
   },
   {
    "id": "0151e8522bf7",
@@ -2309,23 +2328,21 @@
    "url": "story/43fc56afbb27.html"
   },
   {
-   "id": "1fae9cde44bf",
-   "title": "MALFEX npm Package 'imgdecode' Hides Shellcode Loader in Windows Native Addon",
-   "summary": "Cybersecurity researchers have discovered a malicious npm package that's part of a recently disclosed software supply chain attack campaign dubbed MALFEX. The package…",
+   "id": "80697809b26e",
+   "title": "Russia-Linked Hackers Used New Mesh Network Backdoor in Destructive Ukraine Attack",
+   "summary": "The Russian state-sponsored hacking group Sandworm teamed up with another threat actor to carry out a destructive wiping attack targeting a Ukrainian logistics company…",
    "priority": "Standard",
    "category": "Attacks & Breaches",
-   "date": "17 Oct 2026, 11:11 UTC",
-   "published": "2026-10-17T11:11:56+00:00",
-   "priority_score": 2,
+   "date": "23 Oct 2026, 11:11 UTC",
+   "published": "2026-10-23T11:11:23+00:00",
+   "priority_score": 1,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
-   "tags": [
-    "microsoft"
-   ],
+   "tags": [],
    "kev": [],
    "sources": "The Hacker News",
-   "url": "story/1fae9cde44bf.html"
+   "url": "story/80697809b26e.html"
   },
   {
    "id": "2ce43354cd03",
@@ -2581,74 +2598,6 @@
    "kev": [],
    "sources": "The Record",
    "url": "story/189c380ca726.html"
-  },
-  {
-   "id": "d11e69527239",
-   "title": "php2shell: Lücke seit 2024 bekannt, Angriffe laufen, Hosting gefährdet?",
-   "summary": "Am gestrigen Abend wurden zwar Patches für neuere PHP-Versionen veröffentlicht. Aber das Ganze wird noch ziemlich durchschlagen, weil es lange dauern wird, bis alles…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "22 Oct 2026, 11:45 UTC",
-   "published": "2026-10-22T11:45:19+00:00",
-   "priority_score": 1,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "Born's IT and Windows Blog",
-   "url": "story/d11e69527239.html"
-  },
-  {
-   "id": "0f812922fb34",
-   "title": "GitLab warns of new max severity code execution vulnerability",
-   "summary": "GitLab has released security patches for a maximum-severity Regular Expression Compiler flaw that can let remote attackers run arbitrary code on vulnerable servers.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "22 Oct 2026, 11:41 UTC",
-   "published": "2026-10-22T11:41:48+00:00",
-   "priority_score": 1,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "BleepingComputer",
-   "url": "story/0f812922fb34.html"
-  },
-  {
-   "id": "2f1ed42ebe24",
-   "title": "333 Tor exit nodes hijacked to intercept SSH traffic and retrieve plaintext email",
-   "summary": "Unknown hackers hijacked more than 300 Tor exit nodes and reconfigured them to favor unencrypted email traffic and redirect SSH connections through servers they…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "22 Oct 2026, 11:30 UTC",
-   "published": "2026-10-22T11:30:33+00:00",
-   "priority_score": 1,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "Ars Technica Security",
-   "url": "story/2f1ed42ebe24.html"
-  },
-  {
-   "id": "76b18c2dc5a9",
-   "title": "Railway Says Intruder May Have Accessed Customer Secrets, Urges Credential Rotation",
-   "summary": "Platform-as-a-Service (PaaS) provider Railway on Wednesday disclosed \"anomalous activity\" related to systems that store customer environment variables. Upon further…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "22 Oct 2026, 11:15 UTC",
-   "published": "2026-10-22T11:15:42+00:00",
-   "priority_score": 1,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/76b18c2dc5a9.html"
   },
   {
    "id": "a9227db3dd33",
@@ -3599,6 +3548,74 @@
    "kev": [],
    "sources": "Troy Hunt",
    "url": "story/07986418197e.html"
+  },
+  {
+   "id": "d11e69527239",
+   "title": "php2shell: Lücke seit 2024 bekannt, Angriffe laufen, Hosting gefährdet?",
+   "summary": "Am gestrigen Abend wurden zwar Patches für neuere PHP-Versionen veröffentlicht. Aber das Ganze wird noch ziemlich durchschlagen, weil es lange dauern wird, bis alles…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "22 Oct 2026, 11:45 UTC",
+   "published": "2026-10-22T11:45:19+00:00",
+   "priority_score": 0,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "Born's IT and Windows Blog",
+   "url": "story/d11e69527239.html"
+  },
+  {
+   "id": "0f812922fb34",
+   "title": "GitLab warns of new max severity code execution vulnerability",
+   "summary": "GitLab has released security patches for a maximum-severity Regular Expression Compiler flaw that can let remote attackers run arbitrary code on vulnerable servers.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "22 Oct 2026, 11:41 UTC",
+   "published": "2026-10-22T11:41:48+00:00",
+   "priority_score": 0,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "BleepingComputer",
+   "url": "story/0f812922fb34.html"
+  },
+  {
+   "id": "2f1ed42ebe24",
+   "title": "333 Tor exit nodes hijacked to intercept SSH traffic and retrieve plaintext email",
+   "summary": "Unknown hackers hijacked more than 300 Tor exit nodes and reconfigured them to favor unencrypted email traffic and redirect SSH connections through servers they…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "22 Oct 2026, 11:30 UTC",
+   "published": "2026-10-22T11:30:33+00:00",
+   "priority_score": 0,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "Ars Technica Security",
+   "url": "story/2f1ed42ebe24.html"
+  },
+  {
+   "id": "76b18c2dc5a9",
+   "title": "Railway Says Intruder May Have Accessed Customer Secrets, Urges Credential Rotation",
+   "summary": "Platform-as-a-Service (PaaS) provider Railway on Wednesday disclosed \"anomalous activity\" related to systems that store customer environment variables. Upon further…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "22 Oct 2026, 11:15 UTC",
+   "published": "2026-10-22T11:15:42+00:00",
+   "priority_score": 0,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "The Hacker News",
+   "url": "story/76b18c2dc5a9.html"
   },
   {
    "id": "eb08dcb4a958",

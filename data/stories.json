@@ -1024,7 +1024,7 @@
    "source_type": "news",
    "title": "Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software",
    "link": "https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html",
-   "published": "2026-10-24T08:45:56+00:00",
+   "published": "2026-10-24T11:09:29+00:00",
    "summary": "A memory-corruption flaw in Google's Brotli decoder sits in many programs that unpack Brotli-compressed data, among them Bun, the Python Brotli and brotlicffi packages, and Envoy proxies set up to decompress Brotli. Tracked as CVE-2026-111497, the flaw allows crafted compressed data to overwrite past the end of a…",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxIIerJT3LOMCGn3nXAnmhaHzJlJnVJCso1COluq8t3WuF4IpNARa_Asl5nEhRUDTEcR89kwzo5vGmP5IyNbj1ncdaCpkhqcHUODHAd3khanaE-7N8Vb0NyEJkmPmNkhSpJtLCLgi9srDRhZLtM5n8UDI58F797ZJaVzC7JzjPLfca4NpxZr_7tCX8RIk/s1600/br-nodejs.jpg",
    "cves": [
@@ -1453,6 +1453,27 @@
    "instructions_checked": true
   },
   {
+   "id": "afec56c7243a",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Google Says Gmail and Photos Data Shared With AI Search Could Be Used for Targeted Ads",
+   "link": "https://thehackernews.com/2026/10/google-says-gmail-and-photos-data.html",
+   "published": "2026-10-24T10:36:33+00:00",
+   "summary": "Google has updated its privacy policy to spell out that using personalized artificial intelligence (AI) features in Search or Gemini could allow the company to serve targeted ads to users based on their activity on other connected Google services. \"You may choose to allow certain Google services, including services…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhROXFilBwGnS1Jb3AQ6nIinoxB1mh-7gsbdRfToYn8VReagY7IMb3CCVyZkzPFEfOHIkwnRxmOSeM30Gxp7e9uRzvuvEqQTmIMPilPM_IfujygTv6OfExi8kWoEhF42lBKok_gzwD4Md_daCMvVOtlf2pQT7mgtYuJA0TzJnhkM4PCycgKpf0XxIBQmI57/s1600/google-ai.jpg",
+   "cves": [],
+   "first_seen": "2026-10-24T11:52:52.119319+00:00",
+   "instructions": [
+    "However, that changes should users opt to share photos or emails with AI Mode and other Search tools via the Personal Intelligence feature.",
+    "Users should be mindful of the privacy trade-off when connecting their apps to enable AI features.",
+    "Those who prefer to opt out can do so by selecting the apps they want to disconnect from Personal Intelligence or disable Personalized Recommendations entirely via the Search Services Personalization settings (\"www.google[.]com/search-personalization\").",
+    "News of the policy update was first reported by Android Authority."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "f059789b2437",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1566,6 +1587,24 @@
    "instructions_checked": true
   },
   {
+   "id": "3a1a036ef73a",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Leaked LiteLLM Master Key Let Attackers Steal GitHub Tokens and Hijack Release Pipeline",
+   "link": "https://thehackernews.com/2026/10/leaked-litellm-master-key-let-attackers.html",
+   "published": "2026-10-24T11:03:33+00:00",
+   "summary": "LiteLLM on Friday revealed that an Agent Platform master key accidentally published to a public GitHub repository in late May 2026 ultimately allowed the threat actor to push a malicious version of the popular Python package. \"On May 27, 2026, a configuration file was committed to the public LiteLLM-Labs/lite-harness…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipiDo2Yur6TXZHLped9EQgORAH65rC4APGTaq_EZzlDnspAaULTQCKblBC0FeIah7nOCKTiQa2Oi8cyx-bbxHj042Km9oYAf2s78XmStFxzPBTSQ_oqv4ZcWGEkUP1wo5JfJ1UDrWQpAtz8ZHd9i3ZbGWWe8s6CMeUU_nObp5tCEywMWGovqFh9NA1H8Sv/s1600/lite.jpg",
+   "cves": [],
+   "first_seen": "2026-10-24T11:52:52.119319+00:00",
+   "instructions": [
+    "In response to the incident, the company said it's working to revoke each and every token associated with every internal system and vendor platform."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "f5335e20393b",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1605,25 +1644,6 @@
     "The attacker used a token belonging to one of its GitHub organization owners to disable branch protections and force-push the malicious changes."
    ],
    "instructions_checked": true
-  },
-  {
-   "id": "1fae9cde44bf",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "title": "MALFEX npm Package 'imgdecode' Hides Shellcode Loader in Windows Native Addon",
-   "link": "https://thehackernews.com/2026/10/malfex-npm-package-imgdecode-hides.html",
-   "published": "2026-10-17T11:11:56+00:00",
-   "summary": "Cybersecurity researchers have discovered a malicious npm package that's part of a recently disclosed software supply chain attack campaign dubbed MALFEX. The package, named \"imgdecode,\" was uploaded to the package registry on September 30, 2026, by a user named \"malfexteste8.\" It has been downloaded 979 times as of…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8fNb_yEvP6C_CENfQMUx3EDGofY1ejEHusnumTjCLnX3s8pevEbl_cgrtFHhzeEUhyphenhyphenyKe_X41OzQOGL5zlXeLLBnj_ZrLqH1IUag1QWm4QS9V2hgc5ucEzEZKjhstvtde8CFs8anPSZv9w3op67F8Q_MHVC_demESnH8lpAYLLpIRizCyvF5gsi5PDKzm/s1600/npm-dll.jpg",
-   "cves": [],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00",
-   "instructions": [
-    "Developers who have installed any of the aforementioned packages should treat their Windows systems as potentially compromised, isolate them, check for persistence entries, rotate credentials, and transfer funds to new wallets if seed phrases were stored in them.",
-    "The Node.js stealer chain is notable for the fact that none of the packages featured an install hook."
-   ],
-   "instructions_checked": true,
-   "source_type": "news"
   },
   {
    "id": "6b7369ef168a",
