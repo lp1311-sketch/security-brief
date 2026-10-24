@@ -64,25 +64,6 @@
    "url": "story/199bd0864fa3.html"
   },
   {
-   "id": "778da97616c1",
-   "title": "Microsoft Links Storm-0940 to ConnectWise Supply Chain Attack",
-   "summary": "The China-linked actor used an AI-enabled penetration-testing tool to automate and accelerate its attack on more than 2,200 tenants.",
-   "priority": "High",
-   "category": "Microsoft",
-   "date": "22 Oct 2026, 20:42 UTC",
-   "published": "2026-10-22T20:42:17+00:00",
-   "priority_score": 9,
-   "priority_basis": [
-    "Editorial attention score 9 reached the High threshold (not CVSS)"
-   ],
-   "tags": [
-    "microsoft"
-   ],
-   "kev": [],
-   "sources": "Dark Reading, The Record, BleepingComputer",
-   "url": "story/778da97616c1.html"
-  },
-  {
    "id": "0d304799e621",
    "title": "Qilin and INC Ransomware Groups Exploit Palo Alto Networks Flaw to Bypass MFA",
    "summary": "Palo Alto Networks has disclosed that it's continuing to observe exploitation of a now-patched security flaw impacting PAN-OS and Prisma Access by ransomware actors. The…",
@@ -145,6 +126,25 @@
    "kev": [],
    "sources": "SecurityWeek, The Record, The Hacker News",
    "url": "story/713a68aa818f.html"
+  },
+  {
+   "id": "778da97616c1",
+   "title": "Microsoft Links Storm-0940 to ConnectWise Supply Chain Attack",
+   "summary": "The China-linked actor used an AI-enabled penetration-testing tool to automate and accelerate its attack on more than 2,200 tenants.",
+   "priority": "High",
+   "category": "Microsoft",
+   "date": "22 Oct 2026, 20:42 UTC",
+   "published": "2026-10-22T20:42:17+00:00",
+   "priority_score": 6,
+   "priority_basis": [
+    "Editorial attention score 6 reached the High threshold (not CVSS)"
+   ],
+   "tags": [
+    "microsoft"
+   ],
+   "kev": [],
+   "sources": "Dark Reading, The Record",
+   "url": "story/778da97616c1.html"
   },
   {
    "id": "d078ae182673",
@@ -970,42 +970,6 @@
    "url": "story/244621daeb8f.html"
   },
   {
-   "id": "0563a66ccd63",
-   "title": "Microsoft shares how to fix broken Exchange Online EWS apps",
-   "summary": "Microsoft says IT admins can re-enable the retired Exchange Web Services (EWS) API in Exchange Online to fix EWS apps that have stopped working.",
-   "priority": "Standard",
-   "category": "Microsoft",
-   "date": "22 Oct 2026, 15:49 UTC",
-   "published": "2026-10-22T15:49:32+00:00",
-   "priority_score": 3,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "microsoft"
-   ],
-   "kev": [],
-   "sources": "BleepingComputer",
-   "url": "story/0563a66ccd63.html"
-  },
-  {
-   "id": "c625905b3719",
-   "title": "Hackers got a four-day head start on epic PHP2Shell vulnerability",
-   "summary": "Amazon has warned that vulnerabilities in a programming language that underpins much of the Internet, discovered using AI tools, are being “broadly exploited” as…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "22 Oct 2026, 15:25 UTC",
-   "published": "2026-10-22T15:25:02+00:00",
-   "priority_score": 3,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "Ars Technica Security",
-   "url": "story/c625905b3719.html"
-  },
-  {
    "id": "7c1ce9da91a8",
    "title": "CVE-2026-105014 Azure Pipelines Remote Code Execution Vulnerability",
    "summary": "Improper neutralization of special elements used in a command ('command injection') in Azure Pipelines allows an unauthorized attacker to execute code over a network.",
@@ -1570,23 +1534,6 @@
    "url": "story/9311c26cfe2c.html"
   },
   {
-   "id": "5d4b1321ac5e",
-   "title": "PHP shares mitigation for new RCE vulnerability with no patch",
-   "summary": "The PHP security team has shared mitigation measures for a new remote code execution vulnerability that affects systems with non-default configurations and has no patch.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "23 Oct 2026, 15:38 UTC",
-   "published": "2026-10-23T15:38:05+00:00",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "BleepingComputer",
-   "url": "story/5d4b1321ac5e.html"
-  },
-  {
    "id": "4eed9c7e0436",
    "title": "You gave your AI agent access, but who is giving it orders?",
    "summary": "AI agents can be manipulated through malicious emails, websites, and plugins into executing commands, stealing data, or deleting files using their legitimate…",
@@ -1640,6 +1587,42 @@
    "kev": [],
    "sources": "The Hacker News",
    "url": "story/d76b50dba162.html"
+  },
+  {
+   "id": "0563a66ccd63",
+   "title": "Microsoft shares how to fix broken Exchange Online EWS apps",
+   "summary": "Microsoft says IT admins can re-enable the retired Exchange Web Services (EWS) API in Exchange Online to fix EWS apps that have stopped working.",
+   "priority": "Standard",
+   "category": "Microsoft",
+   "date": "22 Oct 2026, 15:49 UTC",
+   "published": "2026-10-22T15:49:32+00:00",
+   "priority_score": 2,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "microsoft"
+   ],
+   "kev": [],
+   "sources": "BleepingComputer",
+   "url": "story/0563a66ccd63.html"
+  },
+  {
+   "id": "c625905b3719",
+   "title": "Hackers got a four-day head start on epic PHP2Shell vulnerability",
+   "summary": "Amazon has warned that vulnerabilities in a programming language that underpins much of the Internet, discovered using AI tools, are being “broadly exploited” as…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "22 Oct 2026, 15:25 UTC",
+   "published": "2026-10-22T15:25:02+00:00",
+   "priority_score": 2,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "Ars Technica Security",
+   "url": "story/c625905b3719.html"
   },
   {
    "id": "14aa600d7f56",
@@ -2205,6 +2188,23 @@
    "kev": [],
    "sources": "BleepingComputer",
    "url": "story/15156651e221.html"
+  },
+  {
+   "id": "5d4b1321ac5e",
+   "title": "PHP shares mitigation for new RCE vulnerability with no patch",
+   "summary": "The PHP security team has shared mitigation measures for a new remote code execution vulnerability that affects systems with non-default configurations and has no patch.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "23 Oct 2026, 15:38 UTC",
+   "published": "2026-10-23T15:38:05+00:00",
+   "priority_score": 1,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "BleepingComputer",
+   "url": "story/5d4b1321ac5e.html"
   },
   {
    "id": "bd43f4cf3245",

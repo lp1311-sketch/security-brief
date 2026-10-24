@@ -4788,28 +4788,6 @@
    "instructions_checked": true
   },
   {
-   "id": "74a44f824ba0",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "title": "Hackers breach Microsoft 365 tenants via ConnectWise supply-chain attack",
-   "link": "https://www.bleepingcomputer.com/news/security/hackers-breach-microsoft-365-tenants-via-connectwise-supply-chain-attack/",
-   "published": "2026-10-17T15:18:51+00:00",
-   "summary": "ConnectWise has shut down customer access to its Cloud Backup service (formerly SkyKick Cloud Backup) after hackers accessed application identities and compromised Microsoft 365 tenants.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/09/07/ConnectWise.jpg",
-   "cves": [],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00",
-   "image_checked": true,
-   "instructions": [
-    "In a security advisory , ConnectWise said that it “recently identified unauthorized access to application identities within the ConnectWise Cloud Backup environment” and shut down application access for its partners and clients.",
-    "It should be noted that all three cybersecurity companies tracked the malicious company to the same 144.172.64[.]128 IP address.",
-    "ConnectWise recommends that administrators check the service principal sign-ins in Entra, filter by the Cloud Backup application ID, and examine unexpected source addresses.",
-    "Huntress advises administrators to disable the implicated ConnectWise applications, as well as check application credentials for unauthorized additions and review other Cloud Management integrations."
-   ],
-   "instructions_checked": true,
-   "source_type": "news"
-  },
-  {
    "id": "74ff0a30f9fe",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
