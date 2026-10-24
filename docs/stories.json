@@ -382,25 +382,6 @@
    "url": "story/92b876190d73.html"
   },
   {
-   "id": "3d29fe5d9f89",
-   "title": "Someone Tried to Exploit PHP2Shell 4 Days Before the Vulnerabilities Were Publicly Disclosed",
-   "summary": "Amazon's Threat Intelligence team on Wednesday said it detected an attempt to exploit the newly disclosed PHP2Shell vulnerabilities dating back to October 17, 2026…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "22 Oct 2026, 06:34 UTC",
-   "published": "2026-10-22T06:34:10+00:00",
-   "priority_score": 5,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "exploited"
-   ],
-   "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/3d29fe5d9f89.html"
-  },
-  {
    "id": "f6fe2f9557b7",
    "title": "CISA Orders Federal Agencies to Patch Exploited Plex2Shell, Siemens, and SiteGuard Flaws",
    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added four vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog, including…",
@@ -803,6 +784,25 @@
    "kev": [],
    "sources": "The Hacker News",
    "url": "story/1d3516a0d0a6.html"
+  },
+  {
+   "id": "3d29fe5d9f89",
+   "title": "Someone Tried to Exploit PHP2Shell 4 Days Before the Vulnerabilities Were Publicly Disclosed",
+   "summary": "Amazon's Threat Intelligence team on Wednesday said it detected an attempt to exploit the newly disclosed PHP2Shell vulnerabilities dating back to October 17, 2026…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "22 Oct 2026, 06:34 UTC",
+   "published": "2026-10-22T06:34:10+00:00",
+   "priority_score": 4,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "exploited"
+   ],
+   "kev": [],
+   "sources": "The Hacker News",
+   "url": "story/3d29fe5d9f89.html"
   },
   {
    "id": "7f88afbf76a3",
@@ -1428,25 +1428,6 @@
    "url": "story/1de1c48ce23b.html"
   },
   {
-   "id": "b3dabcb4d0c0",
-   "title": "Hackers Use Compromised ConnectWise Credential to Sign In to 173 Microsoft 365 Tenants",
-   "summary": "Cybersecurity researchers are sounding the alarm related to an active campaign in which unknown threat actors are abusing a compromised Microsoft 365 (M365) credential…",
-   "priority": "Standard",
-   "category": "Microsoft",
-   "date": "17 Oct 2026, 06:16 UTC",
-   "published": "2026-10-17T06:16:46+00:00",
-   "priority_score": 3,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "microsoft"
-   ],
-   "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/b3dabcb4d0c0.html"
-  },
-  {
    "id": "cc05f605fbbb",
    "title": "Black October Teil 3: Neue Katastrophen; HPE, Rufus, Linux, Phyton usw.",
    "summary": "Der Reigen der Sicherheitsvorfälle und aufgetauchter Sicherheitslücken geht weiter. HPE hat gerade einen Schwung an Patches für kritische Schwachstellen in seinen…",
@@ -1683,23 +1664,6 @@
    "kev": [],
    "sources": "The Hacker News",
    "url": "story/a2a9e372db7b.html"
-  },
-  {
-   "id": "fcaeed9175fd",
-   "title": "Iran’s Prince of Persia APT Hosts C&C in US for First Time Since 2016",
-   "summary": "After a three-month lull, Prince of Persia hid a Tornado C&C server on US shared hosting, its first US-based server since 2016. The post Iran’s Prince of Persia APT…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "23 Oct 2026, 06:39 UTC",
-   "published": "2026-10-23T06:39:29+00:00",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "SecurityWeek",
-   "url": "story/fcaeed9175fd.html"
   },
   {
    "id": "0151e8522bf7",
@@ -2343,6 +2307,23 @@
    "url": "story/1fae9cde44bf.html"
   },
   {
+   "id": "fcaeed9175fd",
+   "title": "Iran’s Prince of Persia APT Hosts C&C in US for First Time Since 2016",
+   "summary": "After a three-month lull, Prince of Persia hid a Tornado C&C server on US shared hosting, its first US-based server since 2016. The post Iran’s Prince of Persia APT…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "23 Oct 2026, 06:39 UTC",
+   "published": "2026-10-23T06:39:29+00:00",
+   "priority_score": 1,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "SecurityWeek",
+   "url": "story/fcaeed9175fd.html"
+  },
+  {
    "id": "0a62902654ce",
    "title": "What We Missed: Feds Lasso Texas Laptop Farms",
    "summary": "In this video, Dark Reading editors discuss some of the news they didn't get a chance to cover, from busting up North Korea's stateside infrastructure in \"Operation…",
@@ -2681,23 +2662,6 @@
    "kev": [],
    "sources": "SecurityWeek",
    "url": "story/dd2c177462a4.html"
-  },
-  {
-   "id": "eff3ebf7d52f",
-   "title": "New QPACK Flaws Can Crash HTTP/3 Servers, Trigger Up to 4,000-Fold Memory Amplification",
-   "summary": "A remote attacker who has not logged in can crash many HTTP/3 web servers with a single connection, security firm FoxIO disclosed, releasing working proof-of-concept…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "22 Oct 2026, 06:38 UTC",
-   "published": "2026-10-22T06:38:31+00:00",
-   "priority_score": 1,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/eff3ebf7d52f.html"
   },
   {
    "id": "a734856ab1ed",
@@ -3629,6 +3593,23 @@
    "kev": [],
    "sources": "Troy Hunt",
    "url": "story/07986418197e.html"
+  },
+  {
+   "id": "eff3ebf7d52f",
+   "title": "New QPACK Flaws Can Crash HTTP/3 Servers, Trigger Up to 4,000-Fold Memory Amplification",
+   "summary": "A remote attacker who has not logged in can crash many HTTP/3 web servers with a single connection, security firm FoxIO disclosed, releasing working proof-of-concept…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "22 Oct 2026, 06:38 UTC",
+   "published": "2026-10-22T06:38:31+00:00",
+   "priority_score": 0,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "The Hacker News",
+   "url": "story/eff3ebf7d52f.html"
   },
   {
    "id": "ca191a78820b",

@@ -1483,27 +1483,6 @@
    "instructions_checked": true
   },
   {
-   "id": "b3dabcb4d0c0",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "title": "Hackers Use Compromised ConnectWise Credential to Sign In to 173 Microsoft 365 Tenants",
-   "link": "https://thehackernews.com/2026/10/hackers-use-compromised-connectwise.html",
-   "published": "2026-10-17T06:16:46+00:00",
-   "summary": "Cybersecurity researchers are sounding the alarm related to an active campaign in which unknown threat actors are abusing a compromised Microsoft 365 (M365) credential belonging to ConnectWise Cloud Backup (formerly SkyKick) to gain unauthorized access to customers' M365 environments. ConnectWise Cloud Backup is a…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgel6whr7-1_Lf62w6AJwYfEyic0x1lJ0c-qOfOprMUdm83xpM7rqXbJzplx7BPBUBDD4yUcLWoPvFBhF6HIDORPNNXYj7NfDOTf7YN5lT7p80jxtN6VrTxMjWT0OplFNx0BdjoMmFzk3ssVlbapm7Qfl0Z9_1T7jA_zwz2tbjrxzRircL28mr0zcsci98x/s1600/connectwise.jpg",
-   "cves": [],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00",
-   "instructions": [
-    "Users are recommended to disable the application until ConnectWise confirms all credentials have been reset, enable Microsoft Graph activity logs, audit for any new credentials added since October 13, 2026, and check Entra audit logs for ConnectWise or SkyKick applications adding themselves to a directory role.",
-    "Microsoft is recommending that security teams review service principal sign-ins from unrecognized IP addresses, app credential changes, and OAuth grant activity associated with the aforementioned OAuth AppId.",
-    "ConnectWise, in a separate advisory , confirmed it has identified unauthorized access to application identities within the ConnectWise Cloud Backup environment.",
-    "\"Although all tenants should be scrutinized, this pattern is worth sharing for prioritization.\""
-   ],
-   "instructions_checked": true,
-   "source_type": "news"
-  },
-  {
    "id": "c145f24074c2",
    "source": "thehackernews",
    "source_name": "The Hacker News",
