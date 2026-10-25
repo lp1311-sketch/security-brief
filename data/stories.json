@@ -1945,6 +1945,30 @@
    "instructions_checked": true
   },
   {
+   "id": "3eda0d6ae7e3",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "PHP2Shell Exploitation Hits Government Entity Amid Global Scanning and Signs of AI-Assisted Hacking",
+   "link": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html",
+   "published": "2026-10-25T17:19:46+00:00",
+   "summary": "Threat actors have been observed using agentic artificial intelligence (AI) platforms for post-exploitation activity following the abuse of the PHP2Shell vulnerabilities tracked as CVE-2026-109618 and CVE-2026-109619. \"In one case, the attackers targeted a government entity in Europe and within two hours of the…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzK2qokKedMIUzd876s0EWaLDb7qw-DMzlFWKvmfgCzMKZ2KVvdpZ-298SoEm1_PP6aoEBc6q1LAydnANGur1FbFNmXmhlo6zHtRFvgRcbx-LOoDoM_-JI-_7XkkM4r5q3LQH1SdfirarXTGeiu16d5YMDSeYs8tfJn5ITfRQ4DThbqkq66b4WdDQcOJqf/s1600/php2shell-exploit.jpg",
+   "cves": [
+    "CVE-2026-109618",
+    "CVE-2026-109619"
+   ],
+   "first_seen": "2026-10-25T18:32:04.619434+00:00",
+   "instructions": [
+    "\"An attacker faces two main constraints: they must size a request to fail allocation at the right moment, and they must defeat ASLR to find valid memory addresses,\" Datadog said .",
+    "\"Organizations in the prioritised sectors and geographies should assume they are in scope for deliberate targeting.\"",
+    "\"Defenders should focus on the sequence: a POST request returns a 500 error, PHP reports memory exhaustion and heap corruption, and the Apache worker handling the request crashes.\"",
+    "\"An application must set session.serialize_handler to php_binary or php_serialize in its configuration and then switch it to php at runtime with ini_set() before calling session_start(),\" the Foundation said."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "705a2aee0bf3",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2291,6 +2315,27 @@
    ],
    "instructions_checked": true,
    "source_type": "news"
+  },
+  {
+   "id": "4a8154151413",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Unpatched Tailscale SSH Flaws Could Let a Hacked Device Reach Root on Other Servers",
+   "link": "https://thehackernews.com/2026/10/unpatched-tailscale-ssh-flaws-could-let.html",
+   "published": "2026-10-25T17:44:09+00:00",
+   "summary": "A single hacked device on a Tailscale network can be used to gain root access to other servers it can reach, according to a security researcher who published the findings this week. The attack requires two things: Tailscale SSH set up to allow port forwarding, and an attacker who already controls one device that the…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbGR63RmXInXPwCVFZlGJSiGv5WQfLTWymToOPIYbKXfXniB7X4YDbTVK-28G4r3WfdelCr_2TRzhoYrIogcG_C9WjXEHaLhURIh_v5RyO5sBY8UKwQWbKUBrv_H5n5K7N4mz2WG3d5dldw_re-M5CgDDbVi_EhTqvB9P87fZJlODojj8ivvj-RwLUhpg/s1600/tailscale.jpg",
+   "cves": [],
+   "first_seen": "2026-10-25T18:32:04.619434+00:00",
+   "instructions": [
+    "Shaver said the company is still working out which setups are affected, and that it is \"not recommending that everyone disable Tailscale SSH.\"",
+    "The report says every SSH grant there should therefore be treated as giving root on the target.",
+    "Using standard SSH port forwarding, an ordinary session caused the root-level Tailscale process to connect to a system socket that only root should access, and the test gained root and read the system password file almost immediately, without administrator rights.",
+    "She said she had also raised concerns about Tailscale's architecture with the company's chief executive earlier, and had publicly posted a file hash and advised users to disable Tailscale SSH."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "3bc9a46d2904",

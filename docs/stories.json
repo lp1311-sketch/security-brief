@@ -24,6 +24,26 @@
    "url": "story/838b4b1ce253.html"
   },
   {
+   "id": "3eda0d6ae7e3",
+   "title": "PHP2Shell Exploitation Hits Government Entity Amid Global Scanning and Signs of AI-Assisted Hacking",
+   "summary": "Threat actors have been observed using agentic artificial intelligence (AI) platforms for post-exploitation activity following the abuse of the PHP2Shell vulnerabilities…",
+   "priority": "High",
+   "category": "Patch Radar",
+   "date": "25 Oct 2026, 17:19 UTC",
+   "published": "2026-10-25T17:19:46+00:00",
+   "priority_score": 12,
+   "priority_basis": [
+    "Editorial attention score 12 reached the High threshold (not CVSS)"
+   ],
+   "tags": [
+    "exploited",
+    "patch-now"
+   ],
+   "kev": [],
+   "sources": "The Hacker News, Schneier on Security, Born's IT and Windows Blog, SecurityWeek, KrebsOnSecurity, BleepingComputer",
+   "url": "story/3eda0d6ae7e3.html"
+  },
+  {
    "id": "23872cb1986e",
    "title": "Arista Warns of Critical VeloCloud SQL Injection Zero-Day Exploited in Attacks",
    "summary": "Attackers are exploiting a zero-day SQL injection flaw in Arista's VeloCloud Orchestrator (VCO), the central management system for VeloCloud SD-WAN networks, the company…",
@@ -42,26 +62,6 @@
    "kev": [],
    "sources": "The Hacker News, BleepingComputer",
    "url": "story/23872cb1986e.html"
-  },
-  {
-   "id": "199bd0864fa3",
-   "title": "PHP2Shell Exploit Attempts Hit Millions as Attackers Try to Deploy Mirai Malware",
-   "summary": "Threat actors have been observed unsuccessfully attempting to exploit the newly disclosed PHP2Shell vulnerabilities to rope infected systems into a Mirai botnet variant…",
-   "priority": "High",
-   "category": "Patch Radar",
-   "date": "23 Oct 2026, 07:40 UTC",
-   "published": "2026-10-23T07:40:45+00:00",
-   "priority_score": 9,
-   "priority_basis": [
-    "Editorial attention score 9 reached the High threshold (not CVSS)"
-   ],
-   "tags": [
-    "exploited",
-    "patch-now"
-   ],
-   "kev": [],
-   "sources": "The Hacker News, Schneier on Security, Born's IT and Windows Blog, SecurityWeek, KrebsOnSecurity, BleepingComputer",
-   "url": "story/199bd0864fa3.html"
   },
   {
    "id": "0d304799e621",
@@ -86,26 +86,6 @@
    ],
    "sources": "The Hacker News",
    "url": "story/0d304799e621.html"
-  },
-  {
-   "id": "015a882ee274",
-   "title": "Exposed Infrastructure Reveals How Ransomware Affiliates Used AI Agents to Execute Intrusions",
-   "summary": "Cybersecurity researchers have discovered an artificial intelligence (AI)-driven intrusion ecosystem run by affiliates of the INC and The Gentlemen ransomware groups…",
-   "priority": "High",
-   "category": "AI Risk Lab",
-   "date": "23 Oct 2026, 17:50 UTC",
-   "published": "2026-10-23T17:50:47+00:00",
-   "priority_score": 6,
-   "priority_basis": [
-    "Editorial attention score 6 reached the High threshold (not CVSS)"
-   ],
-   "tags": [
-    "microsoft",
-    "ai"
-   ],
-   "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/015a882ee274.html"
   },
   {
    "id": "713a68aa818f",
@@ -201,6 +181,26 @@
    "kev": [],
    "sources": "Microsoft Security Response Center",
    "url": "story/7b2759881bbd.html"
+  },
+  {
+   "id": "015a882ee274",
+   "title": "Exposed Infrastructure Reveals How Ransomware Affiliates Used AI Agents to Execute Intrusions",
+   "summary": "Cybersecurity researchers have discovered an artificial intelligence (AI)-driven intrusion ecosystem run by affiliates of the INC and The Gentlemen ransomware groups…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "23 Oct 2026, 17:50 UTC",
+   "published": "2026-10-23T17:50:47+00:00",
+   "priority_score": 5,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "microsoft",
+    "ai"
+   ],
+   "kev": [],
+   "sources": "The Hacker News",
+   "url": "story/015a882ee274.html"
   },
   {
    "id": "778da97616c1",
@@ -598,23 +598,6 @@
    "kev": [],
    "sources": "The Hacker News",
    "url": "story/077ef200d3e0.html"
-  },
-  {
-   "id": "4645fb818a8e",
-   "title": "Ruby Fixes Three Regex Engine Bugs Responsible for Four Critical GitLab RCE Flaws",
-   "summary": "Ruby has released versions 4.0.9, 3.4.12, and 3.3.13 to fix three bugs in Onigmo, the regular expression engine built into the language. The bugs lie behind four…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "23 Oct 2026, 17:54 UTC",
-   "published": "2026-10-23T17:54:08+00:00",
-   "priority_score": 3,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/4645fb818a8e.html"
   },
   {
    "id": "f582252343af",
@@ -1190,6 +1173,23 @@
    "url": "story/1de1c48ce23b.html"
   },
   {
+   "id": "4a8154151413",
+   "title": "Unpatched Tailscale SSH Flaws Could Let a Hacked Device Reach Root on Other Servers",
+   "summary": "A single hacked device on a Tailscale network can be used to gain root access to other servers it can reach, according to a security researcher who published the…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "25 Oct 2026, 17:44 UTC",
+   "published": "2026-10-25T17:44:09+00:00",
+   "priority_score": 2,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "The Hacker News",
+   "url": "story/4a8154151413.html"
+  },
+  {
    "id": "20c90494904a",
    "title": "Ach so: Wir haben Cybersecurity Awareness Month",
    "summary": "Wir haben nach php2shell nicht nur eine heiße Woche in Sachen Cybersicherheit hinter uns, sondern eigentlich den ganzen Monat \"die Hütte der Cybersicherheit am Brennen\"…",
@@ -1260,21 +1260,21 @@
    "url": "story/afec56c7243a.html"
   },
   {
-   "id": "abfff6ba3917",
-   "title": "Inside the LiteLLM 1.107.0 supply chain compromise: Credential theft through Python startup hooks",
-   "summary": "On October 21, 2026, a compromised LiteLLM 1.107.0 release was published to the Python Package Index (PyPI) and distributed through official container images. The…",
+   "id": "4645fb818a8e",
+   "title": "Ruby Fixes Three Regex Engine Bugs Responsible for Four Critical GitLab RCE Flaws",
+   "summary": "Ruby has released versions 4.0.9, 3.4.12, and 3.3.13 to fix three bugs in Onigmo, the regular expression engine built into the language. The bugs lie behind four…",
    "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "23 Oct 2026, 18:12 UTC",
-   "published": "2026-10-23T18:12:19+00:00",
+   "category": "Patch Radar",
+   "date": "23 Oct 2026, 17:54 UTC",
+   "published": "2026-10-23T17:54:08+00:00",
    "priority_score": 2,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
    "tags": [],
    "kev": [],
-   "sources": "Microsoft Security Blog",
-   "url": "story/abfff6ba3917.html"
+   "sources": "The Hacker News",
+   "url": "story/4645fb818a8e.html"
   },
   {
    "id": "27be26c6f177",
@@ -2207,6 +2207,23 @@
    "kev": [],
    "sources": "BleepingComputer",
    "url": "story/201a6bfc4c9c.html"
+  },
+  {
+   "id": "abfff6ba3917",
+   "title": "Inside the LiteLLM 1.107.0 supply chain compromise: Credential theft through Python startup hooks",
+   "summary": "On October 21, 2026, a compromised LiteLLM 1.107.0 release was published to the Python Package Index (PyPI) and distributed through official container images. The…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "23 Oct 2026, 18:12 UTC",
+   "published": "2026-10-23T18:12:19+00:00",
+   "priority_score": 1,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "Microsoft Security Blog",
+   "url": "story/abfff6ba3917.html"
   },
   {
    "id": "b95d5610d154",
