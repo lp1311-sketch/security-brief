@@ -184,6 +184,25 @@
    "url": "story/190252fca79a.html"
   },
   {
+   "id": "7b2759881bbd",
+   "title": "CVE-2026-102870 ASP.NET Core Remote Code Execution Vulnerability",
+   "summary": "Updated product information in the Software Update table. This is an informational change only.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "25 Oct 2026, 14:00 UTC",
+   "published": "2026-10-25T14:00:00+00:00",
+   "priority_score": 5,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "microsoft"
+   ],
+   "kev": [],
+   "sources": "Microsoft Security Response Center",
+   "url": "story/7b2759881bbd.html"
+  },
+  {
    "id": "778da97616c1",
    "title": "Microsoft Links Storm-0940 to ConnectWise Supply Chain Attack",
    "summary": "The China-linked actor used an AI-enabled penetration-testing tool to automate and accelerate its attack on more than 2,200 tenants.",
@@ -249,6 +268,23 @@
    "url": "story/4fd8d5a31fd8.html"
   },
   {
+   "id": "c84faf9461ad",
+   "title": "CVE-2026-111497 Google: CVE-2026-111497 Buffer overflow vulnerability in the Brotli decoder",
+   "summary": "Out-of-bounds write in.NET allows an unauthorized attacker to elevate privileges over a network.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "25 Oct 2026, 14:00 UTC",
+   "published": "2026-10-25T14:00:00+00:00",
+   "priority_score": 4,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "Microsoft Security Response Center, The Hacker News",
+   "url": "story/c84faf9461ad.html"
+  },
+  {
    "id": "7b8597c6eff6",
    "title": "Windows 11-Probleme: Kantenglättung, Tastatursprache, Datentransfer über Edge, Benutzerwarnung",
    "summary": "Ich stelle mal einige Beobachtungen zu neuen Problemen mit Windows 11 hier im Beitrag ein, die mich seit dem Patchday im Oktober 2026 erreicht haben (danke dafür). Es…",
@@ -285,23 +321,6 @@
    "kev": [],
    "sources": "BleepingComputer",
    "url": "story/e62f85ca100b.html"
-  },
-  {
-   "id": "f582252343af",
-   "title": "Quest Diagnostics confirms data breach exposed patient records",
-   "summary": "American clinical laboratory company Quest Diagnostics disclosed that patient records have been exposed after a threat actor gained unauthorized access to its Quanum LSM…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "23 Oct 2026, 16:40 UTC",
-   "published": "2026-10-23T16:40:07+00:00",
-   "priority_score": 4,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "BleepingComputer, SecurityWeek",
-   "url": "story/f582252343af.html"
   },
   {
    "id": "b65cad206f50",
@@ -473,6 +492,23 @@
    "url": "story/9e8f060397f4.html"
   },
   {
+   "id": "b257a642b3d8",
+   "title": "CVE-2026-114148 ASP.NET Core Elevation of Privilege Vulnerability",
+   "summary": "Incorrect default permissions in ASP.NET Core allows an authorized attacker to elevate privileges locally.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "25 Oct 2026, 14:00 UTC",
+   "published": "2026-10-25T14:00:00+00:00",
+   "priority_score": 3,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "Microsoft Security Response Center",
+   "url": "story/b257a642b3d8.html"
+  },
+  {
    "id": "e85723a0f677",
    "title": "Former Unit 8200 Officers Raise $34 Million for Agentic SecOps Startup Mave",
    "summary": "Founded in 2025 by Unit 8200 alumni, Tel Aviv-based Mave uses AI agents to investigate alerts across existing security stacks. The post Former Unit 8200 Officers Raise…",
@@ -581,23 +617,21 @@
    "url": "story/4645fb818a8e.html"
   },
   {
-   "id": "27be26c6f177",
-   "title": "Microsoft: Windows Server 2016 reaches end of support in January",
-   "summary": "Microsoft says Windows Server 2016 will stop receiving security updates after it reaches the end of support in January 2027.",
+   "id": "f582252343af",
+   "title": "Quest Diagnostics confirms data breach exposed patient records",
+   "summary": "American clinical laboratory company Quest Diagnostics disclosed that patient records have been exposed after a threat actor gained unauthorized access to its Quanum LSM…",
    "priority": "Standard",
-   "category": "Microsoft",
-   "date": "23 Oct 2026, 17:05 UTC",
-   "published": "2026-10-23T17:05:07+00:00",
+   "category": "Attacks & Breaches",
+   "date": "23 Oct 2026, 16:40 UTC",
+   "published": "2026-10-23T16:40:07+00:00",
    "priority_score": 3,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
-   "tags": [
-    "microsoft"
-   ],
+   "tags": [],
    "kev": [],
-   "sources": "BleepingComputer",
-   "url": "story/27be26c6f177.html"
+   "sources": "BleepingComputer, SecurityWeek",
+   "url": "story/f582252343af.html"
   },
   {
    "id": "52d3232953e2",
@@ -1260,6 +1294,25 @@
    "kev": [],
    "sources": "Dark Reading",
    "url": "story/b95d5610d154.html"
+  },
+  {
+   "id": "27be26c6f177",
+   "title": "Microsoft: Windows Server 2016 reaches end of support in January",
+   "summary": "Microsoft says Windows Server 2016 will stop receiving security updates after it reaches the end of support in January 2027.",
+   "priority": "Standard",
+   "category": "Microsoft",
+   "date": "23 Oct 2026, 17:05 UTC",
+   "published": "2026-10-23T17:05:07+00:00",
+   "priority_score": 2,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "microsoft"
+   ],
+   "kev": [],
+   "sources": "BleepingComputer",
+   "url": "story/27be26c6f177.html"
   },
   {
    "id": "f059789b2437",
@@ -2073,23 +2126,6 @@
    "url": "story/a6ce31709924.html"
   },
   {
-   "id": "a0a9e49aec28",
-   "title": "Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software",
-   "summary": "A memory-corruption flaw in Google's Brotli decoder sits in many programs that unpack Brotli-compressed data, among them Bun, the Python Brotli and brotlicffi packages…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "24 Oct 2026, 11:09 UTC",
-   "published": "2026-10-24T11:09:29+00:00",
-   "priority_score": 1,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/a0a9e49aec28.html"
-  },
-  {
    "id": "3ba9184e67f7",
    "title": "php2Shell: Webseiten, die das Thema monitoren",
    "summary": "Das PHP-Projekt hat die Woche ja die schweren Sicherheitslücken, php2shell, in den aktuellen Versionen des PHP-Interpreters gepatcht. Aber sind alle Produkte, in denen…",
@@ -2207,23 +2243,6 @@
    "kev": [],
    "sources": "The Record",
    "url": "story/90f70db29589.html"
-  },
-  {
-   "id": "9311c26cfe2c",
-   "title": "Knicks sent employees fake offer of championship rings in phishing test: Report",
-   "summary": "The New York Knicks organization sent employees a phishing email promising free championship rings in a test of its staff's ability to detect scams, The New York Times…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "23 Oct 2026, 16:51 UTC",
-   "published": "2026-10-23T16:51:59+00:00",
-   "priority_score": 1,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "Ars Technica Security",
-   "url": "story/9311c26cfe2c.html"
   },
   {
    "id": "4eed9c7e0436",
@@ -3299,6 +3318,23 @@
    "kev": [],
    "sources": "Troy Hunt",
    "url": "story/07986418197e.html"
+  },
+  {
+   "id": "9311c26cfe2c",
+   "title": "Knicks sent employees fake offer of championship rings in phishing test: Report",
+   "summary": "The New York Knicks organization sent employees a phishing email promising free championship rings in a test of its staff's ability to detect scams, The New York Times…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "23 Oct 2026, 16:51 UTC",
+   "published": "2026-10-23T16:51:59+00:00",
+   "priority_score": 0,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "Ars Technica Security",
+   "url": "story/9311c26cfe2c.html"
   },
   {
    "id": "5d4b1321ac5e",
