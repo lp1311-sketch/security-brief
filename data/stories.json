@@ -4553,6 +4553,28 @@
    "instructions_checked": true
   },
   {
+   "id": "9e8f060397f4",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "AI coding agents hijacked using AGENTS.md file in Downloads folder",
+   "link": "https://www.bleepingcomputer.com/news/security/ai-coding-agents-hijacked-using-agentsmd-file-in-downloads-folder/",
+   "published": "2026-10-25T15:49:38+00:00",
+   "summary": "Researchers found a malicious AGENTS markdown instruction file in a customer's Downloads folder that tricked an AI coding agent into installing a rogue npm package.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/23/robot.jpg",
+   "cves": [],
+   "first_seen": "2026-10-25T15:52:43.599546+00:00",
+   "image_checked": true,
+   "instructions": [
+    "The common recommendation from OpenAI and Anthropic is to start an AI coding agent in the root of the specific project it should work on, rather than in your home directory or a broad parent directory.",
+    "BleepingComputer’s tests in other browsers, such as Brave, prompted the user to approve the download, which should be enough to alert the user that a file was downloaded.",
+    "Users should avoid setting ~/Downloads as an AI coding agent's working directory because the location may contain untrusted files that the agent could interpret as instructions.",
+    "OpenAI and Anthropic recommend running their AI coding agents from the project directory they are intended to work on."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "c78f9791369d",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
