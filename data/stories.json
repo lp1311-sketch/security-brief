@@ -1957,27 +1957,6 @@
    "instructions_checked": true
   },
   {
-   "id": "4ad529ab6216",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "title": "Popular WordPress SEO Plugin Rank Math PRO Hijacked to Deliver Self-Restoring Backdoor",
-   "link": "https://thehackernews.com/2026/10/popular-wordpress-seo-plugin-rank-math.html",
-   "published": "2026-10-19T16:28:47+00:00",
-   "summary": "Copies of Rank Math PRO, the paid version of the Rank Math SEO plugin for WordPress, that were downloaded from rankmath.com or delivered as updates between 20:02 UTC on October 15 and 07:12 UTC on October 16 contained malware, Rank Math said in a security notice published on October 16. Any site that installed and…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEja-6AhEjL8YvRsoNjXIIDEnsVd8gMMW_cUqMvLNcRukJXjatSuo-phLfYxt2A76gSCk-uZFmo4EbJjQuMr8_k8Pxl2ho1TnUL_50Q_VknkR8JqnTiVOqZ48i5W6Mv6HB0cQfJoAjs8xHUu6urkucsPClURVP3aWM0aivfngCFZLykMYzJITwenYfSb9Sk/s1600/wordpress-rank.jpg",
-   "cves": [],
-   "first_seen": "2026-10-19T17:33:12.615608+00:00",
-   "instructions": [
-    "Any site that installed and activated one of those copies should be treated as compromised, and the malware can recreate its hidden backdoor whenever someone visits the site.",
-    "Installing it replaces the plugin but does not remove files, administrator accounts, or scheduled tasks the malware may already have placed elsewhere on the server, Wordfence said in an advisory on October 17.",
-    "Neither it nor Wordfence's advisory includes an analysis of the code, and neither names who is behind it.",
-    "The attacker may also have left PHP backdoor files in other plugins' folders, in theme folders, and in the must-use plugins directory, created administrator accounts, added a fake WordPress core file, changed .htaccess so that .cache files run as PHP, and added scheduled tasks and SSH keys."
-   ],
-   "instructions_checked": true,
-   "source_type": "news"
-  },
-  {
    "id": "0d304799e621",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2448,23 +2427,6 @@
    "instructions_checked": true
   },
   {
-   "id": "425846ce9398",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Ahold Delhaize confirms 'malicious actions' behind cyber outages affecting grocery brands",
-   "link": "https://therecord.media/ahold-delhaize-cyberattack-grocery",
-   "published": "2026-10-19T16:45:00+00:00",
-   "summary": "Ahold Delhaize, the Dutch multinational grocery retailer, said Monday that a cyberattack forced it to take systems offline across most of its U.S. and European brands, impacting shoppers on both sides of the Atlantic.",
-   "image": "https://cms.therecord.media/uploads/Albert_Heijn_2b91114780.jpg",
-   "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "ba5b9e5d876d",
    "source": "therecord",
    "source_name": "The Record",
@@ -2575,6 +2537,23 @@
    "instructions": [
     "The pair stressed the latest update showed no country is pursuing the technically challenging effort to interfere with or hack into the country’s election infrastructure or tamper directly with votes."
    ],
+   "instructions_checked": true
+  },
+  {
+   "id": "3e53d355cefd",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Dutch police extradite Chinese national accused of laundering Cambodian investment scam funds",
+   "link": "https://therecord.media/dutch-police-extradite-chinese-national-money-laundering-scams",
+   "published": "2026-10-26T16:37:00+00:00",
+   "summary": "44-year-old Zheng Zhao was allegedly a key money-launderer working with a group of scammers who called U.S.-based victims and urged them to invest in fictitious businesses.",
+   "image": "https://cms.therecord.media/uploads/debt_money_wallet_09a534460e.png",
+   "cves": [],
+   "first_seen": "2026-10-26T16:46:28.332887+00:00",
+   "image_checked": true,
+   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -2816,23 +2795,6 @@
    "instructions_checked": true
   },
   {
-   "id": "f650fcc751bf",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Russian social media giant VK faces disruptions after data center drone strike",
-   "link": "https://therecord.media/russian-social-media-giant-vk-faces-disruptions-drone-strike-data-center",
-   "published": "2026-10-19T15:55:00+00:00",
-   "summary": "The disruptions began Sunday, when users complained of difficulties loading news feeds, playing music and accessing other features of VK's platforms.",
-   "image": "https://cms.therecord.media/uploads/vkonkate_1_f20f84f5e3.jpg",
-   "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "5a936d0dc13b",
    "source": "therecord",
    "source_name": "The Record",
@@ -2915,6 +2877,27 @@
    "first_seen": "2026-10-26T15:48:52.190996+00:00",
    "image_checked": true,
    "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "5d6b2a0bb6b0",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Ukraine disputes Musk's claims of Starlink misuse as military connectivity restored",
+   "link": "https://therecord.media/ukraine-disputes-musk-claims-of-starlink-misuse",
+   "published": "2026-10-26T16:40:00+00:00",
+   "summary": "Ukrainian Defense Minister Yevhen Khmara said Saturday that Starlink and Starshield connectivity had been restored.",
+   "image": "https://cms.therecord.media/uploads/starlink_1_e61cf45fb4.jpg",
+   "cves": [],
+   "first_seen": "2026-10-26T16:46:28.332887+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Ukrainian officials and military advisers disputed his claim, arguing that technical restrictions made it impossible to use commercial Starlink terminals for the drone missions Musk described.",
+    "Serhii Sternenko, a Ukrainian activist who previously advised the country's defense minister, said a registration system introduced in February required all satellite terminals operating on moving platforms to be connected to the military Starshield service.",
+    "Ukrainian presidential adviser Serhii Beskrestnov, known as \"Flash,\" also rejected Musk's allegations, saying commercial Starlink terminals operating in Ukraine were limited to speeds of 70 to 90 kilometers per hour and did not work on Russian territory."
+   ],
    "instructions_checked": true
   },
   {
@@ -4397,6 +4380,28 @@
     "Claude Code and similar tools ship as a one-line terminal install, so people who would never previously have opened a command line now paste commands from web pages as a normal part of trying a new tool.",
     "Push first documented InstallFix in March 2026: cloned install pages for tools like Claude Code, Codex, and NotebookLM (which doesn't even have a desktop installer), promoted through search ads.",
     "The attacker copies the legitimate page and replaces the install command with one that delivers malware."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "5e34561ea984",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Critical 'HTTP2Shell' Brotli vulnerability triggers emergency patches",
+   "link": "https://www.bleepingcomputer.com/news/security/critical-http2shell-brotli-vulnerability-triggers-emergency-patches/",
+   "published": "2026-10-26T16:27:57+00:00",
+   "summary": "A critical flaw dubbed 'HTTP2Shell' in Brotli, the C decoder library built into Node.js, could allow attackers to corrupt memory and access sensitive data.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/26/broccoli.jpg",
+   "cves": [],
+   "first_seen": "2026-10-26T16:46:28.332887+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Nevertheless, users should prioritize applying the available security updates.",
+    "After updating, administrators must restart affected processes, and affected container images must be rebuilt and redeployed.",
+    "On Sunday, Microsoft pushed an emergency security update to address the issue in .NET, warning that successful exploitation allows privilege escalation on systems with a vulnerable .NET version.",
+    "“An invalid block switch was reported as a temporary need for more input instead of a permanent format error, so the streaming decoder kept appending input bytes to an eight-byte internal buffer,” Node.js explains in an advisory."
    ],
    "instructions_checked": true
   },
