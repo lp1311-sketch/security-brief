@@ -88,25 +88,6 @@
    "url": "story/0d304799e621.html"
   },
   {
-   "id": "c84faf9461ad",
-   "title": "CVE-2026-111497 Google: CVE-2026-111497 Buffer overflow vulnerability in the Brotli decoder",
-   "summary": "Out-of-bounds write in.NET allows an unauthorized attacker to elevate privileges over a network.",
-   "priority": "High",
-   "category": "Patch Radar",
-   "date": "25 Oct 2026, 14:00 UTC",
-   "published": "2026-10-25T14:00:00+00:00",
-   "priority_score": 6,
-   "priority_basis": [
-    "Editorial attention score 6 reached the High threshold (not CVSS)"
-   ],
-   "tags": [
-    "microsoft"
-   ],
-   "kev": [],
-   "sources": "Microsoft Security Response Center, The Hacker News",
-   "url": "story/c84faf9461ad.html"
-  },
-  {
    "id": "713a68aa818f",
    "title": "China APT Uses AI Pentest Tool Artex in ConnectWise Attacks",
    "summary": "The state-sponsored hackers targeted hundreds of organizations and gained privileged access to some environments. The post China APT Uses AI Pentest Tool Artex in…",
@@ -183,9 +164,9 @@
    "url": "story/190252fca79a.html"
   },
   {
-   "id": "7b2759881bbd",
-   "title": "CVE-2026-102870 ASP.NET Core Remote Code Execution Vulnerability",
-   "summary": "Updated product information in the Software Update table. This is an informational change only.",
+   "id": "c84faf9461ad",
+   "title": "CVE-2026-111497 Google: CVE-2026-111497 Buffer overflow vulnerability in the Brotli decoder",
+   "summary": "Out-of-bounds write in.NET allows an unauthorized attacker to elevate privileges over a network.",
    "priority": "Standard",
    "category": "Patch Radar",
    "date": "25 Oct 2026, 14:00 UTC",
@@ -198,8 +179,8 @@
     "microsoft"
    ],
    "kev": [],
-   "sources": "Microsoft Security Response Center",
-   "url": "story/7b2759881bbd.html"
+   "sources": "Microsoft Security Response Center, The Hacker News",
+   "url": "story/c84faf9461ad.html"
   },
   {
    "id": "015a882ee274",
@@ -285,6 +266,43 @@
    ],
    "sources": "The Hacker News",
    "url": "story/4fd8d5a31fd8.html"
+  },
+  {
+   "id": "3c0f1fb39eea",
+   "title": "When an AI Agent Is the Incident, the Identity Record Is the Evidence",
+   "summary": "A new NIST, CISA, and NSA guide treats runaway agents as incidents to be rehearsed. The hard part of the response is answering whose authority the agent used, and that…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "26 Oct 2026, 14:00 UTC",
+   "published": "2026-10-26T14:00:10+00:00",
+   "priority_score": 4,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "microsoft",
+    "ai"
+   ],
+   "kev": [],
+   "sources": "BleepingComputer",
+   "url": "story/3c0f1fb39eea.html"
+  },
+  {
+   "id": "a5411bb33d7f",
+   "title": "Two Critical Wasmtime Flaws Could Let Malicious WebAssembly Modules Escape Sandboxes",
+   "summary": "Two critical flaws in Wasmtime, a WebAssembly runtime that can be built into other software, could allow a malicious WebAssembly module to escape the sandbox intended to…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "26 Oct 2026, 11:52 UTC",
+   "published": "2026-10-26T11:52:41+00:00",
+   "priority_score": 4,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "The Hacker News",
+   "url": "story/a5411bb33d7f.html"
   },
   {
    "id": "2a948c7de7f5",
@@ -456,23 +474,21 @@
    "url": "story/a92bc795de6c.html"
   },
   {
-   "id": "b1e34d264127",
-   "title": "CVE-2026-80092 Microsoft Identity Web Elevation of Privilege Vulnerability",
-   "summary": "Updated the Security Updates table to list Microsoft Identity Web v3 and v4 separately and clarify the affected version ranges. The existing security updates are…",
+   "id": "680a1bdeb105",
+   "title": "Popular AI tool LiteLLM says unrevoked key allowed hackers to target users",
+   "summary": "LiteLLM, an open-source tool widely used by artificial intelligence developers, said a key accidentally exposed in May was behind a supply-chain attack that is believed…",
    "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "19 Oct 2026, 14:00 UTC",
-   "published": "2026-10-19T14:00:00+00:00",
-   "priority_score": 4,
+   "category": "Attacks & Breaches",
+   "date": "26 Oct 2026, 12:00 UTC",
+   "published": "2026-10-26T12:00:00+00:00",
+   "priority_score": 3,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
-   "tags": [
-    "microsoft"
-   ],
+   "tags": [],
    "kev": [],
-   "sources": "Microsoft Security Response Center",
-   "url": "story/b1e34d264127.html"
+   "sources": "The Record",
+   "url": "story/680a1bdeb105.html"
   },
   {
    "id": "217d727d090a",
@@ -547,23 +563,6 @@
    "kev": [],
    "sources": "BleepingComputer",
    "url": "story/9e8f060397f4.html"
-  },
-  {
-   "id": "b257a642b3d8",
-   "title": "CVE-2026-114148 ASP.NET Core Elevation of Privilege Vulnerability",
-   "summary": "Incorrect default permissions in ASP.NET Core allows an authorized attacker to elevate privileges locally.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "25 Oct 2026, 14:00 UTC",
-   "published": "2026-10-25T14:00:00+00:00",
-   "priority_score": 3,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "Microsoft Security Response Center",
-   "url": "story/b257a642b3d8.html"
   },
   {
    "id": "7b8597c6eff6",
@@ -1120,23 +1119,89 @@
    "url": "story/c8f4e94200b3.html"
   },
   {
-   "id": "1f63abf1d8df",
-   "title": "Microsoft fixes classic Outlook bug that hid Copilot buttons",
-   "summary": "Microsoft has fixed a known issue that removed the Copilot Chat and Copilot buttons in the classic Outlook desktop mail client for some Windows users.",
+   "id": "0d99ee2b2828",
+   "title": "10 Software Security Practices Built for the Next 250 Years",
+   "summary": "This Cybersecurity Awareness Month's theme, \"Securing the Next 250,\" asks us to look beyond vulnerabilities and consider what will make our digital systems resilient for…",
    "priority": "Standard",
-   "category": "Microsoft",
-   "date": "19 Oct 2026, 12:44 UTC",
-   "published": "2026-10-19T12:44:44+00:00",
-   "priority_score": 3,
+   "category": "Patch Radar",
+   "date": "26 Oct 2026, 14:00 UTC",
+   "published": "2026-10-26T14:00:00+00:00",
+   "priority_score": 2,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
-   "tags": [
-    "microsoft"
+   "tags": [],
+   "kev": [],
+   "sources": "Dark Reading",
+   "url": "story/0d99ee2b2828.html"
+  },
+  {
+   "id": "9cb042202f4d",
+   "title": "Chinese man extradited for role in $36 million cryptocurrency scam",
+   "summary": "A Chinese national was arraigned in California after being extradited from the Netherlands for his alleged involvement in a cryptocurrency investment scam that stole…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "26 Oct 2026, 13:56 UTC",
+   "published": "2026-10-26T13:56:44+00:00",
+   "priority_score": 2,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
+   "tags": [],
    "kev": [],
    "sources": "BleepingComputer",
-   "url": "story/1f63abf1d8df.html"
+   "url": "story/9cb042202f4d.html"
+  },
+  {
+   "id": "104d63029234",
+   "title": "PHP2Shell Exploitation Moves From Probes to Working Shells",
+   "summary": "Attackers successfully exploited the PHP2Shell flaws against honeypots, launching 35 shells from two IP addresses on October 24. The post PHP2Shell Exploitation Moves…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "26 Oct 2026, 13:30 UTC",
+   "published": "2026-10-26T13:30:10+00:00",
+   "priority_score": 2,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "SecurityWeek",
+   "url": "story/104d63029234.html"
+  },
+  {
+   "id": "23a9892afebf",
+   "title": "953 Online Stores Infected in Long-Lasting Malware Campaign",
+   "summary": "Small loader code injected into the stores served a payload to visitors or did nothing to avoid detection. The post 953 Online Stores Infected in Long-Lasting Malware…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "26 Oct 2026, 12:46 UTC",
+   "published": "2026-10-26T12:46:44+00:00",
+   "priority_score": 2,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "SecurityWeek",
+   "url": "story/23a9892afebf.html"
+  },
+  {
+   "id": "f5fa96b28818",
+   "title": "Dutch Police Arrest Two Over NFC Relay Attacks That Drained $400,000+ From Bank Accounts",
+   "summary": "The individuals called victims and persuaded them to install an app and scan their credit cards to loot their bank accounts. The post Dutch Police Arrest Two Over NFC…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "26 Oct 2026, 11:47 UTC",
+   "published": "2026-10-26T11:47:52+00:00",
+   "priority_score": 2,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "SecurityWeek",
+   "url": "story/f5fa96b28818.html"
   },
   {
    "id": "49aedb62ce7d",
@@ -1224,6 +1289,40 @@
    "url": "story/4a8154151413.html"
   },
   {
+   "id": "7b2759881bbd",
+   "title": "CVE-2026-102870 ASP.NET Core Remote Code Execution Vulnerability",
+   "summary": "Updated product information in the Software Update table. This is an informational change only.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "25 Oct 2026, 14:00 UTC",
+   "published": "2026-10-25T14:00:00+00:00",
+   "priority_score": 2,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "Microsoft Security Response Center",
+   "url": "story/7b2759881bbd.html"
+  },
+  {
+   "id": "b257a642b3d8",
+   "title": "CVE-2026-114148 ASP.NET Core Elevation of Privilege Vulnerability",
+   "summary": "Incorrect default permissions in ASP.NET Core allows an authorized attacker to elevate privileges locally.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "25 Oct 2026, 14:00 UTC",
+   "published": "2026-10-25T14:00:00+00:00",
+   "priority_score": 2,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "Microsoft Security Response Center",
+   "url": "story/b257a642b3d8.html"
+  },
+  {
    "id": "e85723a0f677",
    "title": "Former Unit 8200 Officers Raise $34 Million for Agentic SecOps Startup Mave",
    "summary": "Founded in 2025 by Unit 8200 alumni, Tel Aviv-based Mave uses AI agents to investigate alerts across existing security stacks. The post Former Unit 8200 Officers Raise…",
@@ -1263,7 +1362,7 @@
   },
   {
    "id": "78e6b44f5a3d",
-   "title": "Trust Is Not What It Seems — And Fraudsters Are Counting on It",
+   "title": "Trust Is Not What It Seems — and Fraudsters Are Counting on It",
    "summary": "Threat actors don't need to rely on malware to breach organizations anymore. They're simply calling help desks and politely asking for access, with a little help from…",
    "priority": "Standard",
    "category": "Attacks & Breaches",
@@ -2070,40 +2169,6 @@
    "kev": [],
    "sources": "BleepingComputer",
    "url": "story/6e689f58716d.html"
-  },
-  {
-   "id": "59b0e474cfa7",
-   "title": "F5 releases out-of-band patches for critical NGINX vulnerabilities",
-   "summary": "F5 has released out-of-band security patches to address multiple NGINX web server flaws, including three critical-severity vulnerabilities that can let attackers execute…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "19 Oct 2026, 13:49 UTC",
-   "published": "2026-10-19T13:49:24+00:00",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "BleepingComputer",
-   "url": "story/59b0e474cfa7.html"
-  },
-  {
-   "id": "5f2037864b2f",
-   "title": "Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site",
-   "summary": "U.S. federal investigators pursuing the ShinyHunters hacking group that recently stole highly sensitive data from the FBI have identified executives at two different…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "19 Oct 2026, 13:48 UTC",
-   "published": "2026-10-19T13:48:56+00:00",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "KrebsOnSecurity",
-   "url": "story/5f2037864b2f.html"
   },
   {
    "id": "20c90494904a",
@@ -3176,94 +3241,6 @@
    "kev": [],
    "sources": "The Hacker News",
    "url": "story/03d3ba9d36cc.html"
-  },
-  {
-   "id": "10c7257940cc",
-   "title": "Inside the Underground Market for Know Your Client Services",
-   "summary": "Cybercriminals are selling forged identity documents, deepfake videos, and live verification services to help buyers bypass Know Your Client (KYC) checks. Flare examines…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "19 Oct 2026, 14:00 UTC",
-   "published": "2026-10-19T14:00:10+00:00",
-   "priority_score": 1,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "microsoft",
-    "ai"
-   ],
-   "kev": [],
-   "sources": "BleepingComputer",
-   "url": "story/10c7257940cc.html"
-  },
-  {
-   "id": "acf12ad31aac",
-   "title": "ConnectWise Suspends Cloud Services in Response to Cyberattack",
-   "summary": "The services remain unavailable as the company continues remediation and security validation. The post ConnectWise Suspends Cloud Services in Response to Cyberattack…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "19 Oct 2026, 13:16 UTC",
-   "published": "2026-10-19T13:16:20+00:00",
-   "priority_score": 1,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "SecurityWeek",
-   "url": "story/acf12ad31aac.html"
-  },
-  {
-   "id": "e55376075ac8",
-   "title": "[UPDATE] [mittel] GNU Emacs und Red Hat Enterprise Linux: Schwachstelle ermöglicht Codeausführung",
-   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in GNU Emacs und Red Hat Enterprise Linux ausnutzen, um beliebigen Programmcode auszuführen.",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "19 Oct 2026, 13:12 UTC",
-   "published": "2026-10-19T13:12:28+00:00",
-   "priority_score": 1,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "CERT-Bund (BSI) Warnungen",
-   "url": "story/e55376075ac8.html"
-  },
-  {
-   "id": "6c4a212ac074",
-   "title": "[UPDATE] [mittel] Red Hat OpenShift Container Platform: Mehrere Schwachstellen",
-   "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Red Hat OpenShift Container Platform ausnutzen, um Sicherheitsvorkehrungen zu umgehen oder einen Denial…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "19 Oct 2026, 13:12 UTC",
-   "published": "2026-10-19T13:12:27+00:00",
-   "priority_score": 1,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "CERT-Bund (BSI) Warnungen",
-   "url": "story/6c4a212ac074.html"
-  },
-  {
-   "id": "d8811d26023a",
-   "title": "[UPDATE] [niedrig] Red Hat Enterprise Linux: Schwachstelle ermöglicht Offenlegung von Informationen",
-   "summary": "Ein entfernter, authentisierter Angreifer kann eine Schwachstelle in Red Hat Enterprise Linux und Red Hat Ansible Automation Platform ausnutzen, um Informationen…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "19 Oct 2026, 13:12 UTC",
-   "published": "2026-10-19T13:12:04+00:00",
-   "priority_score": 1,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "CERT-Bund (BSI) Warnungen",
-   "url": "story/d8811d26023a.html"
   },
   {
    "id": "3ba9184e67f7",
@@ -4876,110 +4853,6 @@
    "kev": [],
    "sources": "Dark Reading",
    "url": "story/e4ddb72db383.html"
-  },
-  {
-   "id": "6e8696034a92",
-   "title": "The Evolving Cybersecurity Lexicon: Vulnerability Discovery to Resilience",
-   "summary": "An industry-wide, laser focus on vulnerabilities has left cybersecurity teams without enough room to strategize for resilience.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "19 Oct 2026, 14:00 UTC",
-   "published": "2026-10-19T14:00:00+00:00",
-   "priority_score": 0,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "microsoft"
-   ],
-   "kev": [],
-   "sources": "Dark Reading",
-   "url": "story/6e8696034a92.html"
-  },
-  {
-   "id": "47f4fcfb349a",
-   "title": "GhostAction Attackers Plant Credential Stealer Disguised as Font in 94 GitHub Repositories",
-   "summary": "The threat actor behind the GhostAction supply chain attack has expanded beyond injecting malicious GitHub Actions workflows into compromised projects to phish…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "19 Oct 2026, 13:05 UTC",
-   "published": "2026-10-19T13:05:45+00:00",
-   "priority_score": 0,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/47f4fcfb349a.html"
-  },
-  {
-   "id": "cd30eb68866b",
-   "title": "Agents are your newest insiders. Security must move at their speed.",
-   "summary": "Agents are rapidly becoming part of how work gets done. They can support a range of activities from writing code and researching products to analyzing revenue…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "19 Oct 2026, 13:00 UTC",
-   "published": "2026-10-19T13:00:00+00:00",
-   "priority_score": 0,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "Microsoft Security Blog",
-   "url": "story/cd30eb68866b.html"
-  },
-  {
-   "id": "bcca2fd24d4b",
-   "title": "Plex2Shell Exploit Chain Weaponized Against Plex Servers Hours After Disclosure",
-   "summary": "Threat actors have been observed delivering cryptocurrency miners and proxy software. The post Plex2Shell Exploit Chain Weaponized Against Plex Servers Hours After…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "19 Oct 2026, 12:44 UTC",
-   "published": "2026-10-19T12:44:39+00:00",
-   "priority_score": 0,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "SecurityWeek",
-   "url": "story/bcca2fd24d4b.html"
-  },
-  {
-   "id": "6e3176643ea9",
-   "title": "One Compromised Login Exposed Millions of California Students’ Records",
-   "summary": "Intruders used compromised credentials to access an ETS SFTP server, copying records of California students back to 2006. The post One Compromised Login Exposed Millions…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "19 Oct 2026, 11:55 UTC",
-   "published": "2026-10-19T11:55:50+00:00",
-   "priority_score": 0,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "SecurityWeek",
-   "url": "story/6e3176643ea9.html"
-  },
-  {
-   "id": "5ae38a63e473",
-   "title": "From Email-to-Case to the Boardroom: How Inherited Agents Break Governance Built for Software",
-   "summary": "In Salesforce Agentforce, the recommended way to make an agent respond to events is a Flow: a record is created or a case is updated, and the Flow passes data into the…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "19 Oct 2026, 11:50 UTC",
-   "published": "2026-10-19T11:50:00+00:00",
-   "priority_score": 0,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/5ae38a63e473.html"
   }
  ]
 }
