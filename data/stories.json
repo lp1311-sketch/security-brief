@@ -2349,25 +2349,25 @@
    "instructions_checked": true
   },
   {
-   "id": "03d3ba9d36cc",
+   "id": "3576934612fc",
    "source": "thehackernews",
    "source_name": "The Hacker News",
    "official": false,
-   "title": "⚡ Weekly Recap: 98 Zero-Days, Rogue AI Agents, $100M Crypto Theft, 700 Supermarkets Hit and More",
-   "link": "https://thehackernews.com/2026/10/weekly-recap-98-zero-days-rogue-ai.html",
-   "published": "2026-10-19T14:14:07+00:00",
-   "summary": "The worst problems don't always come with a warning. Sometimes they arrive through a service everyone trusts, a device someone bought, or a system nobody thought to check. By the time something looks wrong, the damage may already be done. This week had plenty of that. Trusted connections became a problem. Hardware…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhTvDNJzlrpPvCifQ9zNcdkc0vjmmRwGCap_kODFlX5W_IimpUgTyObjSefO7gHjXKUMhEkIlmgnH1GbbbWna6eZWa8xcRDLXeRmYX0oSrhAgS8YXth6_T2CPXMMnZvgsf1Psq_DUB9JkjeELLHjnB2xFl9-8bM5BW19fJ1aHcOruzwKErZJkjwRBSRedBq/s1600/recap-1.jpg",
+   "source_type": "news",
+   "title": "⚡ Weekly Recap: This2Shell, That2Shell, Everything's an RCE? Rogue AI, Supply Chain Chaos and More",
+   "link": "https://thehackernews.com/2026/10/weekly-recap-this2shell-that2shell.html",
+   "published": "2026-10-26T14:06:13+00:00",
+   "summary": "This2Shell, That2Shell, Everything2Shell. That's pretty much how the last week went. Critical bugs that let attackers run code remotely are showing up everywhere. Hackers are scanning for targets, some flaws are already being used in attacks, and security teams have more urgent patches than they can keep up with. And…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjztmxBbaYZEAd_HSv1heMQm8UuLym1h7XcN8NrgWjJmaoghOIR2O1rHwQzunUd9jlQn4R_8ft4Y0K9xLQOhs2xM8vVh1eHoEsZIFonHd7K6TA1cd0aIJ6jK-K2RNVBCwMfQwq7WWpuFtB8inWvubRjIEw_9fetsRFllw-fsAAnjCnpMCqFIL28ovMhJwbd/s1600/recap2monday.jpg",
    "cves": [],
-   "first_seen": "2026-10-19T15:04:08.296093+00:00",
+   "first_seen": "2026-10-26T15:48:52.190996+00:00",
    "instructions": [
-    "\"Vulnerable servers in the wild sent tokens to the domain, users are advised to update to the patched version of the skill.\"",
-    "French cybersecurity authorities advised supermarkets to disconnect them from the internet.",
-    "Vendors are expected to patch the zero-days disclosed during the competition within 90 days before the details are publicly disclosed.",
-    "Bugs drop weekly, and the gap between a patch and an exploit is shrinking fast."
+    "The developer of the MeshCentral remote access software is urging users to update to version 1.3.1.",
+    "\"Updates to certificate configuration data are sent to devices automatically and as needed, so you don't need to install a software update to get this change.",
+    "\"Affected organizations should immediately restrict unprivileged user namespaces and enforce RuntimeDefault seccomp where they can, find out whether ksmbd is running anywhere in their estate, and patch ZDI-CAN-33367 the day their distribution ships the fix,\" Sysdig said.",
+    "Apple is making additional updates to this block, which will also be delivered automatically."
    ],
-   "instructions_checked": true,
-   "source_type": "news"
+   "instructions_checked": true
   },
   {
    "id": "df48f73ea919",
@@ -2901,6 +2901,23 @@
    "instructions_checked": true
   },
   {
+   "id": "d72684f804b8",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Ukraine warns hackers are exploiting Chinese-made Dahua surveillance cameras",
+   "link": "https://therecord.media/ukraine-cert-ua-warning-chinese-dahua-cameras-hacked",
+   "published": "2026-10-26T14:21:00+00:00",
+   "summary": "CERT-UA says it has identified cases in which hackers compromised Dahua internet-connected cameras and video recorders, changed their settings and created unauthorized user accounts.",
+   "image": "https://cms.therecord.media/uploads/dahua_camera_pexels_thomas_veillon_34628c9764.jpg",
+   "cves": [],
+   "first_seen": "2026-10-26T15:48:52.190996+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "2ee4d03f1bea",
    "source": "therecord",
    "source_name": "The Record",
@@ -3326,23 +3343,6 @@
    "instructions_checked": true
   },
   {
-   "id": "1e6e166bc6de",
-   "source": "cert-bund",
-   "source_name": "CERT-Bund (BSI) Warnungen",
-   "official": true,
-   "source_type": "advisory",
-   "title": "[UPDATE] [mittel] Oracle Java SE: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2897",
-   "published": "2026-10-19T15:15:53+00:00",
-   "summary": "Ein entfernter, anonymer oder authentisierter Angreifer kann mehrere Schwachstellen in Oracle Java SE ausnutzen, um die Vertraulichkeit, Integrität und Verfügbarkeit zu gefährden.",
-   "image": null,
-   "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
    "id": "91a10d02b45b",
    "source": "cert-bund",
    "source_name": "CERT-Bund (BSI) Warnungen",
@@ -3377,74 +3377,6 @@
    "instructions_checked": true
   },
   {
-   "id": "2b7f0ec04193",
-   "source": "cert-bund",
-   "source_name": "CERT-Bund (BSI) Warnungen",
-   "official": true,
-   "source_type": "advisory",
-   "title": "[UPDATE] [hoch] PCRE2 (Perl Compatible Regular Expressions): Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3334",
-   "published": "2026-10-19T15:15:54+00:00",
-   "summary": "Ein Angreifer kann mehrere Schwachstellen in PCRE2 (Perl Compatible Regular Expressions) ausnutzen, um Sicherheitsvorkehrungen zu umgehen, Speicher zu beschädigen, Informationen offenzulegen oder Denial-of-Service-Zustände herbeizuführen.",
-   "image": null,
-   "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "ea1e5dd8b620",
-   "source": "cert-bund",
-   "source_name": "CERT-Bund (BSI) Warnungen",
-   "official": true,
-   "source_type": "advisory",
-   "title": "[UPDATE] [hoch] GIMP Plugins: Mehrere Schwachstellen ermöglichen Codeausführung und DoS",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3358",
-   "published": "2026-10-19T15:15:54+00:00",
-   "summary": "Ein lokaler Angreifer kann mehrere Schwachstellen in GIMP ausnutzen, um beliebigen Programmcode auszuführen oder einen Denial-of-Service-Zustand herbeizuführen.",
-   "image": null,
-   "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "e9a70d0c54b4",
-   "source": "cert-bund",
-   "source_name": "CERT-Bund (BSI) Warnungen",
-   "official": true,
-   "source_type": "advisory",
-   "title": "[UPDATE] [hoch] GIMP: Schwachstelle ermöglicht Codeausführung und Denial of Service",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3406",
-   "published": "2026-10-19T15:15:54+00:00",
-   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in GIMP ausnutzen, um beliebigen Programmcode auszuführen und um einen Denial of Service Angriff durchzuführen.",
-   "image": null,
-   "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "a9e39a27050d",
-   "source": "cert-bund",
-   "source_name": "CERT-Bund (BSI) Warnungen",
-   "official": true,
-   "source_type": "advisory",
-   "title": "[UPDATE] [mittel] GIMP: Schwachstelle ermöglicht Codeausführung und Denial of Service",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3570",
-   "published": "2026-10-19T15:15:55+00:00",
-   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in GIMP ausnutzen, um beliebigen Programmcode auszuführen und um einen Denial of Service Angriff durchzuführen.",
-   "image": null,
-   "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
    "id": "d464c4b3c30d",
    "source": "cert-bund",
    "source_name": "CERT-Bund (BSI) Warnungen",
@@ -3457,40 +3389,6 @@
    "image": null,
    "cves": [],
    "first_seen": "2026-10-20T11:56:01.637626+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "70d02c573a35",
-   "source": "cert-bund",
-   "source_name": "CERT-Bund (BSI) Warnungen",
-   "official": true,
-   "source_type": "advisory",
-   "title": "[UPDATE] [mittel] PCRE (Perl Compatible Regular Expressions): Schwachstelle ermöglicht Codeausführung",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3622",
-   "published": "2026-10-19T15:15:55+00:00",
-   "summary": "Ein entfernter, authentisierter Angreifer kann eine Schwachstelle in PCRE (Perl Compatible Regular Expressions) ausnutzen, um möglicherweise beliebigen Code auszuführen, angrenzenden Speicher zu beschädigen oder einen Denial-of-Service-Zustand herbeizuführen.",
-   "image": null,
-   "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "d80c710accb8",
-   "source": "cert-bund",
-   "source_name": "CERT-Bund (BSI) Warnungen",
-   "official": true,
-   "source_type": "advisory",
-   "title": "[UPDATE] [mittel] RabbitMQ: Schwachstelle ermöglicht Denial of Service",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3736",
-   "published": "2026-10-19T15:15:55+00:00",
-   "summary": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in RabbitMQ ausnutzen, um einen Denial of Service Angriff durchzuführen.",
-   "image": null,
-   "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -3610,23 +3508,6 @@
    "image": null,
    "cves": [],
    "first_seen": "2026-10-20T10:33:14.842541+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "d2f9766f074c",
-   "source": "cert-bund",
-   "source_name": "CERT-Bund (BSI) Warnungen",
-   "official": true,
-   "source_type": "advisory",
-   "title": "[NEU] [mittel] IBM App Connect Enterprise: Schwachstelle ermöglicht Manipulation von Dateien",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4027",
-   "published": "2026-10-19T15:15:55+00:00",
-   "summary": "Ein lokaler Angreifer kann eine Schwachstelle in IBM App Connect Enterprise ausnutzen, um Dateien zu manipulieren.",
-   "image": null,
-   "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -4092,28 +3973,6 @@
    "instructions_checked": true
   },
   {
-   "id": "6e689f58716d",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "title": "Microsoft fixes game, app crashes caused by recent Windows update",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-game-app-crashes-caused-by-windows-kb5124010-preview-update/",
-   "published": "2026-10-19T14:55:23+00:00",
-   "summary": "Microsoft has resolved a bug that caused games and apps using AC-3 (Dolby Digital) audio decoding to crash after installing the September 2026 Windows 11 preview update (KB5124010).",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/15/Windows.jpg",
-   "cves": [],
-   "first_seen": "2026-10-19T15:04:08.296093+00:00",
-   "image_checked": true,
-   "instructions": [
-    "In a new update to the Windows release health dashboard, Microsoft said the KB5127648 October 2026 Patch Tuesday update addresses this known issue and advised affected users to install it on affected systems running Windows 11 24H2 and later.",
-    "Microsoft has fixed a known issue that caused games and Windows 11 apps using AC-3 (Dolby Digital) audio decoding to crash after installing the September 2026 preview update (KB5124010).",
-    "While KB5124010 is an optional update that requires clicking a \"Download and install\" link (reducing the number of potentially affected Windows users), it installs automatically on devices where the \"Get the latest updates as soon as they're available\" option is toggled on.",
-    "\"We recommend you install the latest security update for your device as it contains important improvements and issue resolutions, including this one,\" it said ."
-   ],
-   "instructions_checked": true,
-   "source_type": "news"
-  },
-  {
    "id": "ba8deb36fe9d",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4132,6 +3991,28 @@
     "Microsoft says Windows 11 KB5120998 update resets mouse settings",
     "You can enable the quick-access shelf under Settings > Appearance > Compact mode, then press Alt+1 through Alt+9 to run any of them, or Alt+Shift+number to select one without running it.",
     "Microsoft fixes game, app crashes caused by recent Windows update"
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "cf08225efb6b",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Microsoft releases emergency .NET patches for critical Brotli flaw",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-emergency-net-patches-for-critical-brotli-flaw/",
+   "published": "2026-10-26T15:38:24+00:00",
+   "summary": "Microsoft released emergency.NET security updates to patch a critical vulnerability known as Broccoli2Shell, also tracked as Node2Shell and HTTP2Shell.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/26/Microsoft-NET.jpg",
+   "cves": [],
+   "first_seen": "2026-10-26T15:48:52.190996+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Those who can't apply the updates immediately should block incoming Brotli-compressed requests using a proxy or firewall, or disable Brotli decoding until they can apply a patch.",
+    "Applications must manually opt in to ASP.NET Core request decompression or HttpClient response decompression, or they must manually invoke the Brotli decompression APIs provided by .NET.\"",
+    "According to a Microsoft advisory published Sunday, attackers can also exploit this flaw to remotely escalate privileges on systems with unpatched .NET installations that use non-default configurations.",
+    "To address this flaw, Microsoft has released out-of-band (OOB) security updates for .NET 8, .NET 9, and .NET 10, along with .NET 11 Release Candidate 3, and advised \"updating as soon as possible.\""
    ],
    "instructions_checked": true
   },
@@ -5518,22 +5399,6 @@
    "instructions_checked": true
   },
   {
-   "id": "e4ddb72db383",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "OnlyFans Copyright Takedowns Expose Compromised Websites",
-   "link": "https://www.darkreading.com/vulnerabilities-threats/onlyfans-copyright-takedowns-expose-compromised-websites",
-   "published": "2026-10-19T14:28:11+00:00",
-   "summary": "Copyright takedown requests tied to OnlyFans and other adult content creators are revealing how attackers exploit vulnerable university and government websites to manipulate search results. UpGuard's Greg Pollock explains what universities, government websites, and security teams need to think about next.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltef729e5049e61b8c/6ad290a4ed74a528c20a7b92/copyright1800_wakila_GettyImages-157508105.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "80aac9868cd3",
    "source": "msblog",
    "source_name": "Microsoft Security Blog",
@@ -6018,28 +5883,6 @@
    "instructions_checked": true
   },
   {
-   "id": "c2afa7723501",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Drupal Warns of Fast Exploitation Risk for Critical Core RCE Flaw",
-   "link": "https://www.securityweek.com/drupal-warns-of-fast-exploitation-risk-for-critical-core-rce-flaw/",
-   "published": "2026-10-19T15:47:50+00:00",
-   "summary": "Critical flaws impact the Entity List and Field UI modules, and exploit paths exist with contributed modules. The post Drupal Warns of Fast Exploitation Risk for Critical Core RCE Flaw appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/05/Drupal.jpg",
-   "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00",
-   "image_checked": true,
-   "instructions": [
-    "To address them, users are advised to update to Entity List version 3.0.10 and to Drupal versions 11.4.10, 11.3.19, or 10.6.19.",
-    "As a mitigation, users can uninstall the core Field UI module.",
-    "On October 12, however, it urged users to reserve time for core updates, warning that “exploits might be developed within hours or days.” Additional information can be found on Drupal’s security advisories page.",
-    "Preparing for disruption must become part of day-to-day operations."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "f5fa96b28818",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -6090,6 +5933,25 @@
    "image": "https://www.securityweek.com/wp-content/uploads/2025/11/funding-investment-market-3.jpeg",
    "cves": [],
    "first_seen": "2026-10-25T11:08:34.023341+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Preparing for disruption must become part of day-to-day operations."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "0894723045c0",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Genesys Hack Exposes Customer Data From Internal Systems",
+   "link": "https://www.securityweek.com/genesys-hack-exposes-customer-data-from-internal-systems/",
+   "published": "2026-10-26T14:40:48+00:00",
+   "summary": "The Genesys Cloud, Genesys Engage, and Genesys Engage Cloud platforms were not affected. The post Genesys Hack Exposes Customer Data From Internal Systems appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/10/bank-finance-lender-credit-union-hack.jpeg",
+   "cves": [],
+   "first_seen": "2026-10-26T15:48:52.190996+00:00",
    "image_checked": true,
    "instructions": [
     "Preparing for disruption must become part of day-to-day operations."
@@ -6242,6 +6104,28 @@
     "Former NSA Director Paul Nakasone Launches National Security Advisory Firm",
     "Jon Steinbach has been appointed strategic technical advisor to the Pentagon’s CIO.",
     "Preparing for disruption must become part of day-to-day operations."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "d7e589c62a2d",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Industrial Vendors Check Products for PHP2Shell Vulnerabilities",
+   "link": "https://www.securityweek.com/industrial-vendors-check-products-for-php2shell-vulnerabilities/",
+   "published": "2026-10-26T14:52:14+00:00",
+   "summary": "Siemens, Schneider Electric, ABB and others have confirmed that some of their products are affected by the PHP2Shell vulnerabilities. The post Industrial Vendors Check Products for PHP2Shell Vulnerabilities appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2024/06/PLC-HMI-SCADA-ICS-industrial.jpeg",
+   "cves": [],
+   "first_seen": "2026-10-26T15:48:52.190996+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Customers have been told to contact Siemens support for patch information and to apply the workarounds provided by Palo Alto Networks .",
+    "Industrial giants such as Siemens, Schneider Electric, ABB, Rockwell Automation and Johnson Controls have published advisories to inform customers about the impact of the recently disclosed PHP2Shell vulnerabilities on their products.",
+    "EcoStruxure Control Engineering users can only rely on mitigations for the time being.",
+    "In a separate advisory , Siemens shared a list of products confirmed as unaffected, including CADRA, DFMExpress, HyperLynx, Opcenter, PADS, Polarion, QuadView, Simcenter, Teamcenter, and Xpedition products."
    ],
    "instructions_checked": true
   },
@@ -6571,28 +6455,6 @@
    "instructions_checked": true
   },
   {
-   "id": "c513afb9763b",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Rank Math PRO WordPress Plugin Compromised in Supply Chain Attack",
-   "link": "https://www.securityweek.com/rank-math-pro-wordpress-plugin-compromised-in-supply-chain-attack/",
-   "published": "2026-10-19T15:20:53+00:00",
-   "summary": "Hackers injected malware into Rank Math PRO version 3.0.123 packages distributed between October 15 and October 16. The post Rank Math PRO WordPress Plugin Compromised in Supply Chain Attack appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2024/08/WordPress.jpeg",
-   "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00",
-   "image_checked": true,
-   "instructions": [
-    "All users who installed and activated version 3.0.123 of the plugin during the affected window should treat their websites as compromised and should restore them from a clean backup created before the incident.",
-    "Users who cannot restore the site from a backup should delete the Rank Math PRO plugin folder, remove a malicious database entry, block the attacker’s domain rank1cdn[.]com, and find and remove suspicious PHP files and unknown administrator accounts.",
-    "Additionally, the attackers could make changes outside the WordPress installation, and site admins should also look for SSH authorized_keys files, crontabs from other system users, suspicious processes, and other locations the web server user has write access to.",
-    "After verifying the website is clean, users should change all their passwords and install a clean version of Rank Math PRO."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "561dd3f2eda5",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -6655,6 +6517,27 @@
     "Jon Steinbach has been appointed strategic technical advisor to the Pentagon’s CIO.",
     "Preparing for disruption must become part of day-to-day operations.",
     "The update also resolves high-severity information disclosure, improper neutralization, improper resource control, and protection defects."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "38ba7bc24d68",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Stolen AI Reasoning Could Help China Build Cheaper Rivals",
+   "link": "https://www.securityweek.com/stolen-ai-reasoning-could-help-china-build-cheaper-rivals/",
+   "published": "2026-10-26T14:30:09+00:00",
+   "summary": "Xint says a flaw in OpenAI’s compaction process let researchers move reasoning traces between models, potentially making it cheaper to distill a rival AI. The post Stolen AI Reasoning Could Help China Build Cheaper Rivals appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/11/China-APT-AI-artificial-intelligence.jpeg",
+   "cves": [],
+   "first_seen": "2026-10-26T15:48:52.190996+00:00",
+   "image_checked": true,
+   "instructions": [
+    "For example, OpenAI rapidly deployed mitigations to this threat, and Xint has subsequently discovered a way (which it calls Compaction Smuggling ) to bypass these mitigations – which OpenAI has now also mitigated.",
+    "While OpenAI’s first mitigations reduced the threat of PII exposure and model poisoning, knowledge of a model’s reasoning process can still be stolen (compaction smuggling) and used to cheaply build a new rival AI model (distillation).",
+    "Preparing for disruption must become part of day-to-day operations."
    ],
    "instructions_checked": true
   },
