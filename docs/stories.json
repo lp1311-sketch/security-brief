@@ -287,6 +287,25 @@
    "url": "story/4fd8d5a31fd8.html"
   },
   {
+   "id": "2a948c7de7f5",
+   "title": "Node2Shell: Brotli Flaw Triggers Patching Across Microsoft, Node.js, Python Packages",
+   "summary": "An out-of-bounds write in Google’s Brotli decoder affects Node.js,.NET, PowerShell, and Python packages, and can lead to code execution. The post Node2Shell: Brotli Flaw…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "26 Oct 2026, 10:21 UTC",
+   "published": "2026-10-26T10:21:57+00:00",
+   "priority_score": 4,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "microsoft"
+   ],
+   "kev": [],
+   "sources": "SecurityWeek",
+   "url": "story/2a948c7de7f5.html"
+  },
+  {
    "id": "35a2887f8653",
    "title": "Microsoft 365 Token-Replay Attacks Compromise 97 Accounts at 79 Organizations",
    "summary": "Cybersecurity researchers have disclosed a Microsoft 365 campaign that has been observed leveraging an adversary-in-the-middle (AitM) relay to capture sign-in sessions…",
@@ -526,25 +545,6 @@
    "kev": [],
    "sources": "Microsoft Security Response Center",
    "url": "story/b257a642b3d8.html"
-  },
-  {
-   "id": "e85723a0f677",
-   "title": "Former Unit 8200 Officers Raise $34 Million for Agentic SecOps Startup Mave",
-   "summary": "Founded in 2025 by Unit 8200 alumni, Tel Aviv-based Mave uses AI agents to investigate alerts across existing security stacks. The post Former Unit 8200 Officers Raise…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "25 Oct 2026, 11:00 UTC",
-   "published": "2026-10-25T11:00:00+00:00",
-   "priority_score": 3,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "ai"
-   ],
-   "kev": [],
-   "sources": "SecurityWeek",
-   "url": "story/e85723a0f677.html"
   },
   {
    "id": "7b8597c6eff6",
@@ -1120,6 +1120,40 @@
    "url": "story/1f63abf1d8df.html"
   },
   {
+   "id": "4dd6d369bedf",
+   "title": "Kali Linux 2026.3 released with 6 new tools, desktop updates",
+   "summary": "Kali Linux has released version 2026.3, its third release this year, featuring six new hacking tools, desktop environment improvements, refreshed build scripts, and more.",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "26 Oct 2026, 10:26 UTC",
+   "published": "2026-10-26T10:26:52+00:00",
+   "priority_score": 2,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "BleepingComputer",
+   "url": "story/4dd6d369bedf.html"
+  },
+  {
+   "id": "275e6f3b55af",
+   "title": "uCreator Android Spyware Can Steal Telegram 2FA Passwords and Clone WeChat Accounts",
+   "summary": "A rentable Android spyware kit called uCreator takes over Telegram and WeChat accounts by hiding its code inside working copies of the two apps, researcher Ovi found. It…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "26 Oct 2026, 09:54 UTC",
+   "published": "2026-10-26T09:54:02+00:00",
+   "priority_score": 2,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "The Hacker News",
+   "url": "story/275e6f3b55af.html"
+  },
+  {
    "id": "4c6c7b2ea9da",
    "title": "Mythos 5 Ignored Real-World Harm in July Attack",
    "summary": "The model engaged in severe overreach and dishonesty, creating fake identities and submitting malicious code on GitHub. The post Mythos 5 Ignored Real-World Harm in July…",
@@ -1154,21 +1188,23 @@
    "url": "story/4a8154151413.html"
   },
   {
-   "id": "20c90494904a",
-   "title": "Ach so: Wir haben Cybersecurity Awareness Month",
-   "summary": "Wir haben nach php2shell nicht nur eine heiße Woche in Sachen Cybersicherheit hinter uns, sondern eigentlich den ganzen Monat \"die Hütte der Cybersicherheit am Brennen\"…",
+   "id": "e85723a0f677",
+   "title": "Former Unit 8200 Officers Raise $34 Million for Agentic SecOps Startup Mave",
+   "summary": "Founded in 2025 by Unit 8200 alumni, Tel Aviv-based Mave uses AI agents to investigate alerts across existing security stacks. The post Former Unit 8200 Officers Raise…",
    "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "25 Oct 2026, 10:57 UTC",
-   "published": "2026-10-25T10:57:28+00:00",
+   "category": "AI Risk Lab",
+   "date": "25 Oct 2026, 11:00 UTC",
+   "published": "2026-10-25T11:00:00+00:00",
    "priority_score": 2,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
-   "tags": [],
+   "tags": [
+    "ai"
+   ],
    "kev": [],
-   "sources": "Born's IT and Windows Blog",
-   "url": "story/20c90494904a.html"
+   "sources": "SecurityWeek",
+   "url": "story/e85723a0f677.html"
   },
   {
    "id": "5d0e99bc982d",
@@ -1188,42 +1224,6 @@
    "kev": [],
    "sources": "The Hacker News",
    "url": "story/5d0e99bc982d.html"
-  },
-  {
-   "id": "3a1a036ef73a",
-   "title": "Leaked LiteLLM Master Key Let Attackers Steal GitHub Tokens and Hijack Release Pipeline",
-   "summary": "LiteLLM on Friday revealed that an Agent Platform master key accidentally published to a public GitHub repository in late May 2026 ultimately allowed the threat actor to…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "24 Oct 2026, 11:03 UTC",
-   "published": "2026-10-24T11:03:33+00:00",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/3a1a036ef73a.html"
-  },
-  {
-   "id": "afec56c7243a",
-   "title": "Google Says Gmail and Photos Data Shared With AI Search Could Be Used for Targeted Ads",
-   "summary": "Google has updated its privacy policy to spell out that using personalized artificial intelligence (AI) features in Search or Gemini could allow the company to serve…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "24 Oct 2026, 10:36 UTC",
-   "published": "2026-10-24T10:36:33+00:00",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "ai"
-   ],
-   "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/afec56c7243a.html"
   },
   {
    "id": "78e6b44f5a3d",
@@ -2070,6 +2070,23 @@
    "url": "story/5f2037864b2f.html"
   },
   {
+   "id": "20c90494904a",
+   "title": "Ach so: Wir haben Cybersecurity Awareness Month",
+   "summary": "Wir haben nach php2shell nicht nur eine heiße Woche in Sachen Cybersicherheit hinter uns, sondern eigentlich den ganzen Monat \"die Hütte der Cybersicherheit am Brennen\"…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "25 Oct 2026, 10:57 UTC",
+   "published": "2026-10-25T10:57:28+00:00",
+   "priority_score": 1,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "Born's IT and Windows Blog",
+   "url": "story/20c90494904a.html"
+  },
+  {
    "id": "3e3b100a3427",
    "title": "php2shell: Erste Phishing-Nachrichten; all-inkl.com informiert",
    "summary": "Die Woche hat sicherlich die php2shell-Thematik die Leserschaft in Atem gehalten. Nun wurde ich von Lesern informiert, dass erste Phisher das Thema für sich…",
@@ -2102,6 +2119,42 @@
    "kev": [],
    "sources": "BleepingComputer",
    "url": "story/a6ce31709924.html"
+  },
+  {
+   "id": "3a1a036ef73a",
+   "title": "Leaked LiteLLM Master Key Let Attackers Steal GitHub Tokens and Hijack Release Pipeline",
+   "summary": "LiteLLM on Friday revealed that an Agent Platform master key accidentally published to a public GitHub repository in late May 2026 ultimately allowed the threat actor to…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "24 Oct 2026, 11:03 UTC",
+   "published": "2026-10-24T11:03:33+00:00",
+   "priority_score": 1,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "The Hacker News",
+   "url": "story/3a1a036ef73a.html"
+  },
+  {
+   "id": "afec56c7243a",
+   "title": "Google Says Gmail and Photos Data Shared With AI Search Could Be Used for Targeted Ads",
+   "summary": "Google has updated its privacy policy to spell out that using personalized artificial intelligence (AI) features in Search or Gemini could allow the company to serve…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "24 Oct 2026, 10:36 UTC",
+   "published": "2026-10-24T10:36:33+00:00",
+   "priority_score": 1,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "ai"
+   ],
+   "kev": [],
+   "sources": "The Hacker News",
+   "url": "story/afec56c7243a.html"
   },
   {
    "id": "abfff6ba3917",

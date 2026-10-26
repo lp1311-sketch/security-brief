@@ -2322,6 +2322,25 @@
    "instructions_checked": true
   },
   {
+   "id": "275e6f3b55af",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "uCreator Android Spyware Can Steal Telegram 2FA Passwords and Clone WeChat Accounts",
+   "link": "https://thehackernews.com/2026/10/ucreator-android-spyware-can-steal.html",
+   "published": "2026-10-26T09:54:02+00:00",
+   "summary": "A rentable Android spyware kit called uCreator takes over Telegram and WeChat accounts by hiding its code inside working copies of the two apps, researcher Ovi found. It only reaches people who install one of these tampered copies, spread outside the official app stores, or who run WeChat inside the kit makers' own…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdBBtFdo2KmBzapUDlLWoS0hh17lYfWUw0kOLWTfbgeNOTP5F5pEJPmWSzBHkjSv4HR-vwfJ-Ba38Tg_su11Zi4CDKXJ29BnlQdCrU-oU84jl7TAET_aPyWV2fRazSLy0hBz8sBP3EhFubGETPdPwpnAFAX0CSbEQfsA65JqQMob9R_4cPbbJRi91KAkY/s1600/telegram-wechat.jpg",
+   "cves": [],
+   "first_seen": "2026-10-26T11:04:04.941269+00:00",
+   "instructions": [
+    "It only reaches people who install one of these tampered copies, spread outside the official app stores, or who run WeChat inside the kit makers' own container app.",
+    "With the password, the code can reset the account's logged-in sessions, change the linked phone number, or delete the account."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "4a8154151413",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -4417,6 +4436,28 @@
    "image_checked": true,
    "instructions": [
     "Mozilla, Google, Apple block compromised eMudhra CA certificates"
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "4dd6d369bedf",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Kali Linux 2026.3 released with 6 new tools, desktop updates",
+   "link": "https://www.bleepingcomputer.com/news/linux/kali-linux-20263-released-with-6-new-tools-desktop-updates/",
+   "published": "2026-10-26T10:26:52+00:00",
+   "summary": "Kali Linux has released version 2026.3, its third release this year, featuring six new hacking tools, desktop environment improvements, refreshed build scripts, and more.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2025/09/24/Kali-Linux.jpg",
+   "cves": [],
+   "first_seen": "2026-10-26T11:04:04.941269+00:00",
+   "image_checked": true,
+   "instructions": [
+    "If you're using Kali on Windows Subsystem for Linux, you should upgrade to WSL 2 for better support of graphical applications.",
+    "To switch, you can use the following commands to upgrade to the latest version:",
+    "PHP shares mitigation for new RCE vulnerability with no patch",
+    "To start using Kali Linux 2026.3, you can upgrade your existing installation, select a platform , or directly download ISO images for new installs and live distributions."
    ],
    "instructions_checked": true
   },
@@ -6794,6 +6835,26 @@
    "instructions": [
     "Preparing for disruption must become part of day-to-day operations.",
     "Browsers Block eMudhra Intermediate CAs Over Recoverable Private Keys"
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "2a948c7de7f5",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Node2Shell: Brotli Flaw Triggers Patching Across Microsoft, Node.js, Python Packages",
+   "link": "https://www.securityweek.com/node2shell-brotli-flaw-triggers-patching-across-microsoft-node-js-python-packages/",
+   "published": "2026-10-26T10:21:57+00:00",
+   "summary": "An out-of-bounds write in Google’s Brotli decoder affects Node.js,.NET, PowerShell, and Python packages, and can lead to code execution. The post Node2Shell: Brotli Flaw Triggers Patching Across Microsoft, Node.js, Python Packages appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/01/application-security-vulnerabilities.jpeg",
+   "cves": [],
+   "first_seen": "2026-10-26T11:04:04.941269+00:00",
+   "image_checked": true,
+   "instructions": [
+    "This includes compressed HTTP request bodies, responses fetched from untrusted servers, and compressed files,” OpenAI’s Patch the Planet initiative said in its advisory .",
+    "Preparing for disruption must become part of day-to-day operations."
    ],
    "instructions_checked": true
   },
