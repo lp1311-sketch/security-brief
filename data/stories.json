@@ -1841,26 +1841,6 @@
    "instructions_checked": true
   },
   {
-   "id": "1de1c48ce23b",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "title": "OpenCode Console Breach May Have Exposed OpenAI, Anthropic, and Google API Keys",
-   "link": "https://thehackernews.com/2026/10/opencode-console-breach-may-have.html",
-   "published": "2026-10-19T06:07:08+00:00",
-   "summary": "An intruder reached a legacy system at OpenCode on the night of October 16 and may have exposed the third-party AI provider keys that users had saved in OpenCode Console, the company said. Console is OpenCode's optional hosted service: a workspace saves its own OpenAI, Anthropic, or Google key there, and Console uses…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzRSuvywT7bfHRl45krYywOIqL__Cw1hXchChbx5ylDNZaHxVDEf8O1pmzajCnItG1rwxKq0k2GHdMeDW_DvQP8Wk5MEiwlE2dZXn9grvDpAOpViWonNWsFMkTXoKpcFj8lk0UuMrGx-xVHRU_KufidsDcY7e0RUSG62aapDC9y9opt8V_rmgxkCG9v6A/s1600/opencode.jpg",
-   "cves": [],
-   "first_seen": "2026-10-19T10:28:22.123062+00:00",
-   "instructions": [
-    "The affected group is 1.4% of Console users, all of whom have an outside provider linked, and OpenCode has told them via email to revoke those keys with each provider and replace them.",
-    "Deleting the key from Console does not revoke it, and a Console budget cannot cap that use either, because Console only sees requests that pass through its own gateway .",
-    "Revoke the key in the provider's own dashboard and create a new one, following the instructions from OpenAI , Anthropic , or Google ."
-   ],
-   "instructions_checked": true,
-   "source_type": "news"
-  },
-  {
    "id": "1d3516a0d0a6",
    "source": "thehackernews",
    "source_name": "The Hacker News",
