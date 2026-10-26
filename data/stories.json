@@ -1435,24 +1435,6 @@
    "instructions_checked": true
   },
   {
-   "id": "0534f1906337",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "title": "Fake Web3 Accelerator Uses npm Packages to Spread Malware and Hijack AI Agent Traffic",
-   "link": "https://thehackernews.com/2026/10/fake-web3-accelerator-uses-npm-packages.html",
-   "published": "2026-10-19T10:06:40+00:00",
-   "summary": "A fake Web3 accelerator has been observed pushing information stealers and backdoors to Windows and macOS systems using malicious npm packages under the pretext of offering free artificial intelligence (AI) credits for Anthropic Claude and Google Gemini, coding tools, and security audits. \"The tools delivered…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAw5A6yrE0NkMreq5lBZaS4ndrFrorAZaVrjJ218aS1RcJoQVYOJOVejIn8rBH5RHIIZ_cpvtzHnQMwMMWVOFbpfcs01tolLCmlYAY3qy-onWaOUQhzB6H2VjlWaUgBCL_0vAjRB7VmumClnaiIxDds6j9wD3lt9vD-kptWl6bUft29O6Z0cTNgBQV6t76/s1600/npm-apex.jpg",
-   "cves": [],
-   "first_seen": "2026-10-19T11:45:02.901788+00:00",
-   "instructions": [
-    "@apexacc/cli (Apex Copilot CLI — AI advisor for Web3 founders) -"
-   ],
-   "instructions_checked": true,
-   "source_type": "news"
-  },
-  {
    "id": "5ae38a63e473",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1488,6 +1470,27 @@
    "instructions": [
     "But the intent must match the attacker’s path to success, whether that’s the user clicking a link, entering credentials or joining a meeting.",
     "Four higher-consequence actions, including a credential reset and 14 days of outbound inspection, were held for human approval."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "8e95a20d61e4",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Gheist Uses Stolen GitHub Tokens to Steal Private Repository Secrets via Actions Logs",
+   "link": "https://thehackernews.com/2026/10/gheist-uses-stolen-github-tokens-to.html",
+   "published": "2026-10-26T07:49:46+00:00",
+   "summary": "An automated campaign is using stolen GitHub tokens to plant workflows that print a repository's secrets into its GitHub Actions logs, which the attackers then download before deleting the runs. The attacks have succeeded in private repositories and GitHub Enterprise environments, according to an analysis by cloud…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipCbP2hnS9ddXqMz9cNIAMEQZWy2qX45MZnYfIuO_Zszamhl_FS7ViRp4CZcjHS6uu6A4jR_S4vBzHzoMNtAb0CbaGxHxj2F07wuKWHfSbsFUov-4dsQWUNJZwfGbnfThW1sAQZ61y5ibqyhlW1iBmbWeSwE1gKHsigRRXaql9P96aFANb3al6vno7fuA/s1600/github-secrets.jpg",
+   "cves": [],
+   "first_seen": "2026-10-26T10:08:32.198476+00:00",
+   "instructions": [
+    "Every secret the repository could read should be rotated, and the token that pushed the branch revoked.",
+    "To make a stolen token less useful, Wiz also recommends these steps:",
+    "Because the secrets leave through GitHub itself, there is no attacker server or outbound connection to block.",
+    "Rotate every repository, organization, and environment secret the repository could use."
    ],
    "instructions_checked": true
   },
@@ -1779,6 +1782,25 @@
    "cves": [],
    "first_seen": "2026-10-22T16:37:22.387322+00:00",
    "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "35a2887f8653",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Microsoft 365 Token-Replay Attacks Compromise 97 Accounts at 79 Organizations",
+   "link": "https://thehackernews.com/2026/10/microsoft-365-token-replay-attacks.html",
+   "published": "2026-10-26T08:35:51+00:00",
+   "summary": "Cybersecurity researchers have disclosed a Microsoft 365 campaign that has been observed leveraging an adversary-in-the-middle (AitM) relay to capture sign-in sessions and then replay the stolen tokens to break into email accounts at 79 organizations. Huntress, which observed the activity between July 14 and September…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKwJ8hpTcgaV_VMCyzQDPQQOPlZmmE3Fg-XAOrUfFazMKgVGEoT7OHQgWhyJLhCpHO6Hvp35u_YZGBfyGXAuJfpwP4BriicsNfvhPXjq4BzNyULVQPzNCWzmSIGnDLN7P2RNW2sfm15qZxLrVzpDg8FvOcGTZBhMsBFPH3IhiV1k3NdGAHFRC7kkKaOMMn/s1600/contoso.jpg",
+   "cves": [],
+   "first_seen": "2026-10-26T10:08:32.198476+00:00",
+   "instructions": [
+    "Organizations who suspect a token replay compromise are recommended to revoke sessions and reset the password, audit Entra devices, review MFA methods, check for unexpected inbox rules or new enterprise applications, and restrict device-code workflow with Conditional Access policies.",
+    "\"Businesses setting up CAPs should require MFA (or block) for All Users, All Cloud Apps, and All Client App types, unconditionally.\""
+   ],
    "instructions_checked": true
   },
   {
@@ -5253,6 +5275,31 @@
    "instructions_checked": true
   },
   {
+   "id": "fbd9cb2b4455",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "PHP2Shell security flaws now sucessfully exploited in the wild",
+   "link": "https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/",
+   "published": "2026-10-26T09:19:57+00:00",
+   "summary": "Two critical RCE vulnerabilities (CVE-2026-109618 and CVE-2026-109619), collectively tracked as PHP2Shell, have been successfully exploited in the wild.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/26/PHP-headpic.jpg",
+   "cves": [
+    "CVE-2026-109618",
+    "CVE-2026-109619"
+   ],
+   "first_seen": "2026-10-26T10:08:32.198476+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Until a security patch is released, the PHP devs advised admins to set session.upload_progress.enabled=0 to block potential attacks, a mitigation already recommended before patches for the PHP2Shell security updates were released.",
+    "While details on the PHP2Shell security flaws (including the CVE IDs and mitigation advice provided to some critical infrastructure providers) leaked online and some proof-of-concept (PoC) exploits were published before the patches went live, the PHP security team said that none were functional.",
+    "On Friday, the PHP security team also shared mitigation measures for a new RCE vulnerability (tracked as CVE-2026-115560) that has no patch and can only be exploited when targeting systems \"with an unusual combination of configuration and application code.\"",
+    "PHP shares mitigation for new RCE vulnerability with no patch"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "f582252343af",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -6731,25 +6778,24 @@
    "instructions_checked": true
   },
   {
-   "id": "82c7537f544b",
+   "id": "4c6c7b2ea9da",
    "source": "securityweek",
    "source_name": "SecurityWeek",
    "official": false,
    "source_type": "news",
-   "title": "MITRE ATT&CK v20 Catalogs AI Abuse, MFA Bypass, Water Utility Attacks",
-   "link": "https://www.securityweek.com/mitre-attck-v20-catalogs-ai-abuse-mfa-bypass-water-utility-attacks/",
-   "published": "2026-10-19T09:37:04+00:00",
-   "summary": "Defenders get 15 new detection strategies, six for Enterprise and nine for ICS, backed by 38 analytics. The post MITRE ATT&CK v20 Catalogs AI Abuse, MFA Bypass, Water Utility Attacks appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2025/10/ATTCK.jpg",
+   "title": "Mythos 5 Ignored Real-World Harm in July Attack",
+   "link": "https://www.securityweek.com/mythos-5-ignored-real-world-harm-in-july-attack/",
+   "published": "2026-10-26T09:10:03+00:00",
+   "summary": "The model engaged in severe overreach and dishonesty, creating fake identities and submitting malicious code on GitHub. The post Mythos 5 Ignored Real-World Harm in July Attack appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/05/Claude-Mythos.jpeg",
    "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00",
+   "first_seen": "2026-10-26T10:08:32.198476+00:00",
+   "image_checked": true,
    "instructions": [
-    "Sub-techniques also cover poisoning web content to sway AI search and assistant recommendations, and disrupting LLM-assisted analysis of malware.",
-    "ICS Patch Tuesday: Siemens Issues 17 Advisories, Rockwell Fixes ArmorBlock Takeover Flaw",
-    "Preparing for disruption must become part of day-to-day operations."
+    "Preparing for disruption must become part of day-to-day operations.",
+    "Browsers Block eMudhra Intermediate CAs Over Recoverable Private Keys"
    ],
-   "instructions_checked": true,
-   "image_checked": true
+   "instructions_checked": true
   },
   {
    "id": "6e3176643ea9",

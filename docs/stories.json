@@ -24,13 +24,13 @@
    "url": "story/838b4b1ce253.html"
   },
   {
-   "id": "3eda0d6ae7e3",
-   "title": "PHP2Shell Exploitation Attempts Continue Amid Suspected N. Korea Global Scanning Activity",
-   "summary": "In an update, Palo Alto Networks Unit 42 said it's retracting its earlier assessment that the post-compromise activity targeting the European government agency involved…",
+   "id": "fbd9cb2b4455",
+   "title": "PHP2Shell security flaws now sucessfully exploited in the wild",
+   "summary": "Two critical RCE vulnerabilities (CVE-2026-109618 and CVE-2026-109619), collectively tracked as PHP2Shell, have been successfully exploited in the wild.",
    "priority": "High",
    "category": "Patch Radar",
-   "date": "25 Oct 2026, 17:19 UTC",
-   "published": "2026-10-25T17:19:46+00:00",
+   "date": "26 Oct 2026, 09:19 UTC",
+   "published": "2026-10-26T09:19:57+00:00",
    "priority_score": 11,
    "priority_basis": [
     "Editorial attention score 11 reached the High threshold (not CVSS)"
@@ -40,8 +40,8 @@
     "patch-now"
    ],
    "kev": [],
-   "sources": "The Hacker News, Schneier on Security, Born's IT and Windows Blog, SecurityWeek, KrebsOnSecurity, BleepingComputer",
-   "url": "story/3eda0d6ae7e3.html"
+   "sources": "BleepingComputer, The Hacker News, Schneier on Security, Born's IT and Windows Blog, SecurityWeek, KrebsOnSecurity",
+   "url": "story/fbd9cb2b4455.html"
   },
   {
    "id": "23872cb1986e",
@@ -287,6 +287,25 @@
    "url": "story/4fd8d5a31fd8.html"
   },
   {
+   "id": "35a2887f8653",
+   "title": "Microsoft 365 Token-Replay Attacks Compromise 97 Accounts at 79 Organizations",
+   "summary": "Cybersecurity researchers have disclosed a Microsoft 365 campaign that has been observed leveraging an adversary-in-the-middle (AitM) relay to capture sign-in sessions…",
+   "priority": "Standard",
+   "category": "Microsoft",
+   "date": "26 Oct 2026, 08:35 UTC",
+   "published": "2026-10-26T08:35:51+00:00",
+   "priority_score": 4,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "microsoft"
+   ],
+   "kev": [],
+   "sources": "The Hacker News",
+   "url": "story/35a2887f8653.html"
+  },
+  {
    "id": "b65cad206f50",
    "title": "Reports of PHP bug exploitation attempts grow as experts downplay viability of exploits",
    "summary": "The headline-grabbing bugs known colloquially as PHP2Shell are giving cyber analysts a lot to track — and a lot to debunk.",
@@ -435,6 +454,23 @@
    "kev": [],
    "sources": "Microsoft Security Response Center",
    "url": "story/b1e34d264127.html"
+  },
+  {
+   "id": "8e95a20d61e4",
+   "title": "Gheist Uses Stolen GitHub Tokens to Steal Private Repository Secrets via Actions Logs",
+   "summary": "An automated campaign is using stolen GitHub tokens to plant workflows that print a repository's secrets into its GitHub Actions logs, which the attackers then download…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "26 Oct 2026, 07:49 UTC",
+   "published": "2026-10-26T07:49:46+00:00",
+   "priority_score": 3,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "The Hacker News",
+   "url": "story/8e95a20d61e4.html"
   },
   {
    "id": "8239096a100a",
@@ -1084,23 +1120,21 @@
    "url": "story/1f63abf1d8df.html"
   },
   {
-   "id": "0534f1906337",
-   "title": "Fake Web3 Accelerator Uses npm Packages to Spread Malware and Hijack AI Agent Traffic",
-   "summary": "A fake Web3 accelerator has been observed pushing information stealers and backdoors to Windows and macOS systems using malicious npm packages under the pretext of…",
+   "id": "4c6c7b2ea9da",
+   "title": "Mythos 5 Ignored Real-World Harm in July Attack",
+   "summary": "The model engaged in severe overreach and dishonesty, creating fake identities and submitting malicious code on GitHub. The post Mythos 5 Ignored Real-World Harm in July…",
    "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "19 Oct 2026, 10:06 UTC",
-   "published": "2026-10-19T10:06:40+00:00",
-   "priority_score": 3,
+   "category": "Industry & Research",
+   "date": "26 Oct 2026, 09:10 UTC",
+   "published": "2026-10-26T09:10:03+00:00",
+   "priority_score": 2,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
    ],
-   "tags": [
-    "microsoft"
-   ],
+   "tags": [],
    "kev": [],
-   "sources": "The Hacker News",
-   "url": "story/0534f1906337.html"
+   "sources": "SecurityWeek",
+   "url": "story/4c6c7b2ea9da.html"
   },
   {
    "id": "4a8154151413",
@@ -2036,26 +2070,6 @@
    "url": "story/5f2037864b2f.html"
   },
   {
-   "id": "82c7537f544b",
-   "title": "MITRE ATT&CK v20 Catalogs AI Abuse, MFA Bypass, Water Utility Attacks",
-   "summary": "Defenders get 15 new detection strategies, six for Enterprise and nine for ICS, backed by 38 analytics. The post MITRE ATT&CK v20 Catalogs AI Abuse, MFA Bypass, Water…",
-   "priority": "Standard",
-   "category": "Microsoft",
-   "date": "19 Oct 2026, 09:37 UTC",
-   "published": "2026-10-19T09:37:04+00:00",
-   "priority_score": 2,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [
-    "microsoft",
-    "defender"
-   ],
-   "kev": [],
-   "sources": "SecurityWeek",
-   "url": "story/82c7537f544b.html"
-  },
-  {
    "id": "3e3b100a3427",
    "title": "php2shell: Erste Phishing-Nachrichten; all-inkl.com informiert",
    "summary": "Die Woche hat sicherlich die php2shell-Thematik die Leserschaft in Atem gehalten. Nun wurde ich von Lesern informiert, dass erste Phisher das Thema für sich…",
@@ -2088,23 +2102,6 @@
    "kev": [],
    "sources": "BleepingComputer",
    "url": "story/a6ce31709924.html"
-  },
-  {
-   "id": "3ba9184e67f7",
-   "title": "php2Shell: Webseiten, die das Thema monitoren",
-   "summary": "Das PHP-Projekt hat die Woche ja die schweren Sicherheitslücken, php2shell, in den aktuellen Versionen des PHP-Interpreters gepatcht. Aber sind alle Produkte, in denen…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "24 Oct 2026, 09:11 UTC",
-   "published": "2026-10-24T09:11:32+00:00",
-   "priority_score": 1,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "Born's IT and Windows Blog",
-   "url": "story/3ba9184e67f7.html"
   },
   {
    "id": "abfff6ba3917",
@@ -3178,6 +3175,23 @@
    "kev": [],
    "sources": "CERT-Bund (BSI) Warnungen",
    "url": "story/d8811d26023a.html"
+  },
+  {
+   "id": "3ba9184e67f7",
+   "title": "php2Shell: Webseiten, die das Thema monitoren",
+   "summary": "Das PHP-Projekt hat die Woche ja die schweren Sicherheitslücken, php2shell, in den aktuellen Versionen des PHP-Interpreters gepatcht. Aber sind alle Produkte, in denen…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "24 Oct 2026, 09:11 UTC",
+   "published": "2026-10-24T09:11:32+00:00",
+   "priority_score": 0,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [],
+   "kev": [],
+   "sources": "Born's IT and Windows Blog",
+   "url": "story/3ba9184e67f7.html"
   },
   {
    "id": "94d51fe2d204",
