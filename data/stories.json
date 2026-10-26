@@ -135,30 +135,6 @@
    "instructions_checked": true
   },
   {
-   "id": "6df7533cf52d",
-   "source": "borncity",
-   "source_name": "Born's IT and Windows Blog",
-   "official": false,
-   "source_type": "news",
-   "title": "Linux: KVM-Schwachstelle PwnEscape (CVE-2026-99999) erlaubt Ausbruch",
-   "link": "https://borncity.com/blog/2026/10/20/linux-kvm-schwachstelle-pwnescape-cve-2026-99999-erlaubt-ausbruch/",
-   "published": "2026-10-19T22:53:07+00:00",
-   "summary": "Ein Sicherheitsforscher hatte bereits Anfang August 2026 eine 0-Day-Schwachstelle aufgedeckt, die einen Ausbruch aus der unter Linux zur Virtualisierung verwendeten KVM auf den Host ermöglicht. Nun hat diese als kritisch und mit einem CVSS Score-Index von 9.8 als kritisch eingestufte … Weiterlesen → Quelle",
-   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
-   "cves": [
-    "CVE-2026-99999"
-   ],
-   "first_seen": "2026-10-22T07:00:06.512888+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Administratoren, die KVM verwenden, sollten prüfen, ob ein Kernel-Patch verfügbar ist und diesen zeitnah installieren.",
-    "In dem speziellen Fall konnte ich mich zurücklehnen und es einfach im normalen Patch Tag ausführen.",
-    "Friedhelm zu Kompromittierte AOMEI Update-Server lieferten von Mai bis Juni 2026 Malware",
-    "User007 zu Kompromittierte AOMEI Update-Server lieferten von Mai bis Juni 2026 Malware"
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "37743d55fc6d",
    "source": "borncity",
    "source_name": "Born's IT and Windows Blog",
@@ -4999,6 +4975,27 @@
     "Even if backups in customers' own remote storage are unaffected, the company recommends that users rotate storage credentials and reauthorize connections if they accessed their site through UpdraftCentral.",
     "Users are recommended to update UpdraftPlus to 1.26.13 (free) / 2.26.13 (Premium) or later.",
     "After updating, it is recommended to log into each WordPress site and delete the UpdraftCentral connection keys from Settings → UpdraftPlus Backups → Advanced Tools → UpdraftCentral → Manage existing keys."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "627cc70bbf65",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "University of Copenhagen data breach exposes data of 525,000 people",
+   "link": "https://www.bleepingcomputer.com/news/security/university-of-copenhagen-data-breach-exposes-data-of-525-000-people/",
+   "published": "2026-10-26T22:20:36+00:00",
+   "summary": "The University of Copenhagen in Denmark confirmed that hackers accessed one of its test environments containing personal data belonging to 525,000 people.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/26/copenhagen.jpg",
+   "cves": [],
+   "first_seen": "2026-10-26T22:59:16.034427+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Students and staff whose data may have been exposed in this incident should be cautious of unsolicited communications and independently verify requests.",
+    "PHP shares mitigation for new RCE vulnerability with no patch",
+    "In an update yesterday, the university added another 20,000 staff and students whose PIN codes were exposed."
    ],
    "instructions_checked": true
   },
