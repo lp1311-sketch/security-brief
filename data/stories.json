@@ -2872,23 +2872,6 @@
    "instructions_checked": true
   },
   {
-   "id": "5a936d0dc13b",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Two more Serbian opposition figures targeted with spyware, researchers say",
-   "link": "https://therecord.media/serbia-spyware-pegasus-elections",
-   "published": "2026-10-19T18:45:00+00:00",
-   "summary": "A phone belonging to the rector of the University of Belgrade was discovered to have been infected with Pegasus spyware, the latest in a series of such discoveries in the lead-up to Serbia's national elections.",
-   "image": "https://cms.therecord.media/uploads/Vladan_Dokic_PP_413d939ccc.jpg",
-   "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "189c380ca726",
    "source": "therecord",
    "source_name": "The Record",
@@ -4314,28 +4297,6 @@
    "instructions_checked": true
   },
   {
-   "id": "06accfcb31a1",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "title": "Bullhorn takes staffing platform offline to contain cyberattack",
-   "link": "https://www.bleepingcomputer.com/news/security/bullhorn-takes-staffing-platform-offline-to-contain-cyberattack/",
-   "published": "2026-10-19T18:51:13+00:00",
-   "summary": "Staffing software company Bullhorn has disabled access to its platform to contain a cyberattack that caused a system-wide outage.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/19/bullhorn.jpg",
-   "cves": [],
-   "first_seen": "2026-10-19T19:06:52.526154+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Customers should check the company’s service status page for the latest updates.",
-    "We have temporarily disabled access to our systems in order to contain the activity while we investigate further,\" the company said in an update.",
-    "Also, the latest update mentions that all non-SSO users will be required to reset their passwords on their next login.",
-    "BleepingComputer has contacted Bullhorn to request more information about the attack, and we will update this post with their response when received."
-   ],
-   "instructions_checked": true,
-   "source_type": "news"
-  },
-  {
    "id": "177124c993da",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -5220,6 +5181,22 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltfaf93bd096fd735c/6a45559d327edd13ed6ac140/clickfix-tumsasedgars-Getty-2234293893.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-10-21T13:13:04.358300+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "e6cb24183d2e",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "'Gheist' Weaponizes GitHub Tokens to Steal Cloud Secrets",
+   "link": "https://www.darkreading.com/cyberattacks-data-breaches/gheist-stolen-github-tokens-cloud-secrets",
+   "published": "2026-10-26T18:01:40+00:00",
+   "summary": "An ongoing supply chain attack is harvesting credentials and sensitive data from thousands of developer repositories.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blta53885fb79cd03e3/6706dccd5ae89acdc961cf2d/github_Tada_Images_shutterstock.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-10-26T18:51:23.813916+00:00",
    "instructions": [],
    "instructions_checked": true
   },
@@ -6516,28 +6493,6 @@
     "Jon Steinbach has been appointed strategic technical advisor to the Pentagon’s CIO.",
     "Preparing for disruption must become part of day-to-day operations.",
     "Outages and limited service have continued for many as firms rush to patch those risks."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "561dd3f2eda5",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Siemens Software Center Vulnerability Exploited in ClickFix Malware Attacks",
-   "link": "https://www.securityweek.com/siemens-software-center-vulnerability-exploited-in-clickfix-malware-attacks/",
-   "published": "2026-10-19T18:15:39+00:00",
-   "summary": "Attackers paired a genuine, signed copy of Siemens Software Center with malicious DLLs to infect Windows PCs via ClickFix lures. The post Siemens Software Center Vulnerability Exploited in ClickFix Malware Attacks appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2024/04/Siemens.jpeg",
-   "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Two days later, the company updated the advisory to tell customers that version 4.0.9.8 resolves the issue.",
-    "Siemens disclosed the flaw on October 15 in an advisory that assigned it a CVSS v4 score of 8.4.",
-    "The advisory didn’t mention in-the-wild exploitation until Monday, when Siemens added a link to a new blog post describing the attacks .",
-    "Because the Siemens file used in the attacks is legitimate, the company recommends that defenders focus on suspicious behavior and the folders associated with the malware instead of relying on file hashes."
    ],
    "instructions_checked": true
   },
