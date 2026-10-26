@@ -96,27 +96,6 @@
    "instructions_checked": true
   },
   {
-   "id": "de7b0df69eea",
-   "source": "ars",
-   "source_name": "Ars Technica Security",
-   "official": false,
-   "title": "PSA: Patch your Plex media server before someone hacks it",
-   "link": "https://arstechnica.com/security/2026/10/recently-fixed-plex-media-vulnerabilities-are-being-exploited-to-install-malware/",
-   "published": "2026-10-19T19:39:19+00:00",
-   "summary": "Recently fixed vulnerabilities in the Plex Media Server are under active exploitation in attacks that, when successful, install malware, including cryptominers and residential proxy apps, a researcher said. Plex fixed four vulnerabilities at the start of last month. Three weeks later, published CVE designations…",
-   "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/plex-media-server-1152x648.webp",
-   "cves": [],
-   "first_seen": "2026-10-19T20:13:51.544212+00:00",
-   "instructions": [
-    "Anyone using Plex should ensure it’s running version 1.43.3.",
-    "Given the active exploitation, outdated versions should be updated immediately.",
-    "Beyond that, users should devote care to properly securing the media servers.",
-    "Recently fixed vulnerabilities in the Plex Media Server are under active exploitation in attacks that, when successful, install malware, including cryptominers and residential proxy apps, a researcher said."
-   ],
-   "instructions_checked": true,
-   "source_type": "news"
-  },
-  {
    "id": "cd17d628776a",
    "source": "ars",
    "source_name": "Ars Technica Security",
@@ -731,6 +710,25 @@
    "instructions_checked": true
   },
   {
+   "id": "ff44e47a9df1",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-69923 Windows AI Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69923",
+   "published": "2026-10-26T14:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-69923"
+   ],
+   "first_seen": "2026-10-26T19:42:22.695987+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "d7a45987a920",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -764,6 +762,25 @@
     "CVE-2026-70074"
    ],
    "first_seen": "2026-10-20T14:06:19.835154+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "e72d5c760107",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-70197 .NET and Visual Studio Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70197",
+   "published": "2026-10-25T14:00:00+00:00",
+   "summary": "Updated product information in the Software Update table. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-70197"
+   ],
+   "first_seen": "2026-10-26T19:42:22.695987+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -1606,6 +1623,27 @@
     "OVHcloud founder Octave Klaba wrote on X on Monday evening that anyone affected should change every secret stored on the disk. =",
     "Ran the official install script (curl -fsSL https://raw.githubusercontent.com/ovh/ovhcloud-cli/main/install.sh | sh).",
     "Ran the CLI's own upgrade command from a v0.12.0, v0.13.0, or v0.14.0 install on a macOS or Linux machine where the tool was installed by the script or by hand."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "961277245249",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Hackers Infect 953 Online Stores With Scanner-Evading JavaScript, Mostly on Magento",
+   "link": "https://thehackernews.com/2026/10/hackers-infect-953-online-stores-with.html",
+   "published": "2026-10-26T18:12:22+00:00",
+   "summary": "An unknown threat actor has infected 953 online stores, most of them running Magento, as part of a long-running campaign active since July 2025. According to Dutch e-commerce security company Sansec, the activity is designed to add a small piece of code to the store's pages that, when visited by unsuspecting users…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdh3aURB79okzf_mo3sPzJy6vKRiWdPc4gyrE93xmMW-MRgYHrOuJ5yya0TpovJvi-2ol3GubNo5ir76ui-2jBo1jUvOd45Z8f98YeGVAECGcwgpRetuyxFxGWY8bBOB4a0G1H5YiYoYJ3Kd8YauFJGUIVTKYVHsLrvDElRe8sOuD4Y8CKMrAtCA6eJazr/s1600/m-code.jpg",
+   "cves": [],
+   "first_seen": "2026-10-26T19:42:22.695987+00:00",
+   "instructions": [
+    "Site owners are advised to audit their sites for suspicious accounts and unexpected CMS blocks in the cms_block and cms_page tables.",
+    "It's also advised to keep the sites up-to-date and enforce strong passwords.",
+    "The ultimate objective of the attack is to launch the attack-controlled code when the CMS block is rendered after a shopper opens the compromised website.",
+    "While Sansec does not disclose whether the threat actor modifies an existing CMS block (such as header, footer, or promotional banner) or creates a new block, the attacker can adopt either of the approaches to run the loader."
    ],
    "instructions_checked": true
   },
@@ -4465,6 +4503,28 @@
    "instructions_checked": true
   },
   {
+   "id": "d84dc99ca60f",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "DreamHost forces password resets in ongoing \"incident\"",
+   "link": "https://www.bleepingcomputer.com/news/security/dreamhost-forces-email-ftp-sftp-password-resets-in-ongoing-incident/",
+   "published": "2026-10-26T19:26:20+00:00",
+   "summary": "DreamHost has forced password resets for email and FTP/SFTP users following an incident that disrupted connections to the File Manager interface.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/26/dreamhost.jpg",
+   "cves": [],
+   "first_seen": "2026-10-26T19:42:22.695987+00:00",
+   "image_checked": true,
+   "instructions": [
+    "In notifications to impacted account holders , the company advises users to also review each email address for forwarding rules and remove any forwarding destination they do not recognize.",
+    "Users are also recommended to change reused passwords elsewhere if their old DreamHost password was reused on other platforms/services.",
+    "PHP shares mitigation for new RCE vulnerability with no patch",
+    "The latest update from the web hosting provider notes that all affected account owners have received recovery instructions."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "0f812922fb34",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4501,28 +4561,6 @@
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
-  },
-  {
-   "id": "ff25b976bdfa",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "title": "Hackers hijack AOMEI update servers to secretly spread malware",
-   "link": "https://www.bleepingcomputer.com/news/security/hackers-hijack-aomei-update-servers-to-secretly-spread-malware/",
-   "published": "2026-10-19T19:40:58+00:00",
-   "summary": "Hackers reportedly compromised AOMEI's servers to distribute malware through a built-in promotional feature in its backup software, briefly tampering with configuration files before restoring them to their original state to hide the attacks.a",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/19/backupper-supply-chain-attack.jpg",
-   "cves": [],
-   "first_seen": "2026-10-19T20:13:51.544212+00:00",
-   "image_checked": true,
-   "instructions": [
-    "ManageEngine told BleepingComputer it advised AOMEI to preserve existing evidence before making those changes and to bring in incident-response specialists, connecting the company with Mandiant to assist with the investigation.",
-    "Organizations using AOMEI Backupper are advised to review the indicators of compromise published by Google and ManageEngine, including suspicious scheduled tasks, unexpected executable files in AOMEI installation directories, and connections to attacker-controlled infrastructure.",
-    "Hackers hijack AOMEI update servers to secretly spread malware",
-    "The supply chain attacks took place between April and July 2026 and targeted the update and notification systems used by AOMEI Backupper, a Windows application for backing up data, cloning disks, and restoring systems."
-   ],
-   "instructions_checked": true,
-   "source_type": "news"
   },
   {
    "id": "eb477469ff02",
@@ -5373,22 +5411,6 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltdcfc831a57f67689/6acfbd4be9c311a2c0cf7674/Melted_ice_cream-cagkansayin-Getty.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-10-22T21:14:33.364375+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "3e1278093e93",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "ConnectWise Disables Cloud Backups Amid Concerns for Downstream MSPs",
-   "link": "https://www.darkreading.com/identity-access-management-security/connectwise-disables-cloud-backups-downstream-msps",
-   "published": "2026-10-19T19:19:33+00:00",
-   "summary": "Researchers say attackers authenticated into Microsoft 365 tenants using ConnectWise credentials; ConnectWise says customer impact remains unconfirmed.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt8bed2421e7501183/6ad6650c7e69bd1337538960/Cloud_Backup-TU_IS-GettyImages-1399936043_(1).jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00",
    "instructions": [],
    "instructions_checked": true
   },
