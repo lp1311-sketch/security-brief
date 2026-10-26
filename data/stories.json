@@ -1116,6 +1116,27 @@
    "instructions_checked": true
   },
   {
+   "id": "49aedb62ce7d",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Between alerts: What Attackers Do in the Spaces Ordinary Detection Misses",
+   "link": "https://thehackernews.com/2026/10/between-alerts-what-attackers-do-in.html",
+   "published": "2026-10-26T11:23:56+00:00",
+   "summary": "Every SOC struggles with a pile of alerts. Very few of those alerts explain how an attack started or how it progressed. Network data, like that from a network detection and response (NDR) platform, connects individual alerts into one timeline, and it feeds the defensive systems that can tie all events together into…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhH3sLtMeyrqaZo1e2DoGlQohJtAM96DKv9JxQVxynJVNyJ_76dwQQAvkcN2xeos8NtStnH6A3B4bOwtFvdsNSxdBkR6so5s66iBb0ApIhIJ2cs3hVCYdh6oOnO4K_kwKOJsDSqL4wsPrOJ48x3VmSXiQwpcxm_ULL7En-Xw_9Rc1sEFQvCdb9Sr0NwUH0/s1600/Misses.jpg",
+   "cves": [],
+   "first_seen": "2026-10-26T11:45:45.534032+00:00",
+   "instructions": [
+    "Defenders need to apply AI to the same problem, but it needs detailed network evidence from an NDR to search.",
+    "The ability to apply context across disparate communications and sequences is what allows SOC teams to find the riskiest activity.",
+    "Attackers have already identified the opportunity; now it’s time for defenders to apply the same principles and keep up.",
+    "Corelight network detection and response (NDR) delivers data that’s open, transparent, and explainable—helping detect evasive threats, reduce triage time, and enable agentic AI throughout the SOC."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "077ef200d3e0",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -6014,6 +6035,23 @@
    "instructions_checked": true
   },
   {
+   "id": "217d727d090a",
+   "source": "schneier",
+   "source_name": "Schneier on Security",
+   "official": false,
+   "source_type": "news",
+   "title": "Bias in Qwen3-Coder Model",
+   "link": "https://www.schneier.com/blog/archives/2026/10/bias-in-qwen3-coder-model.html",
+   "published": "2026-10-26T11:03:31+00:00",
+   "summary": "Interesting research: TL;DR: Chinese AI models now sit inside Western products, and some carry geopolitical triggers: tell the model who the code is for, and the security of what it writes changes. For the first time, we showed that this vulnerability lives in the model’s weights, and that removing the model’s CCP…",
+   "image": null,
+   "cves": [],
+   "first_seen": "2026-10-26T11:45:45.534032+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "2ce43354cd03",
    "source": "schneier",
    "source_name": "Schneier on Security",
@@ -6086,28 +6124,6 @@
    "cves": [],
    "first_seen": "2026-10-20T11:12:55.030681+00:00",
    "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "570936749f04",
-   "source": "schneier",
-   "source_name": "Schneier on Security",
-   "official": false,
-   "source_type": "news",
-   "title": "Training AIs to Solve CAPTCHAs",
-   "link": "https://www.schneier.com/blog/archives/2026/10/training-ais-to-solve-captchas.html",
-   "published": "2026-10-19T11:07:43+00:00",
-   "summary": "Interesting research: Abstract: Vision-language models (VLMs) can solve visual CAPTCHAs without task-specific training, but the agents built on them approach every challenge from scratch. For such an agent, the hundredth instance of a familiar puzzle costs as much time and compute as the first. Specialized detectors…",
-   "image": null,
-   "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00",
-   "instructions": [
-    "Training a Current LLM AI to solve a CAPTCHA should be well within it’s capabilities…",
-    "Firstly , will the increasingly legally required “age verification checks” remove the need for CAPTCHAs entirely?",
-    "In that a chain of Current AI systems that communicate as happens with agentic use would be able to “access and pass back” age restricted content (this can already be seen by the way Search Engines have been used to bypass “great firewalls” designed to block access to “prn” via URL examination).",
-    "The end result of AI being able to instantly solve CAPTCHA, RECAPTCHA, FUTURECAPTCHA, IMPOSSIBLECAPTCHA, ad nauseum is that ip addresses will end up on block lists never to be removed."
-   ],
    "instructions_checked": true,
    "image_checked": true
   },
@@ -6499,26 +6515,6 @@
     "Preparing for disruption must become part of day-to-day operations."
    ],
    "instructions_checked": true
-  },
-  {
-   "id": "3e1eacecc51d",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Exploited Fortinet Bug Linked to Stealthy FortiGate Implant in Telecom Hack",
-   "link": "https://www.securityweek.com/exploited-fortinet-bug-linked-to-stealthy-fortigate-implant-in-telecom-hack/",
-   "published": "2026-10-19T11:13:23+00:00",
-   "summary": "The persistent, stealthy FortiGate implant was deployed against a telecommunications organization. The post Exploited Fortinet Bug Linked to Stealthy FortiGate Implant in Telecom Hack appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2024/06/fortinet.jpg",
-   "cves": [],
-   "first_seen": "2026-10-20T09:53:14.101641+00:00",
-   "instructions": [
-    "Preparing for disruption must become part of day-to-day operations.",
-    "On Friday, the US cybersecurity agency CISA added CVE-2025-61624 to its Known Exploited Vulnerabilities ( KEV ) list, urging federal agencies to patch it immediately."
-   ],
-   "instructions_checked": true,
-   "image_checked": true
   },
   {
    "id": "e85723a0f677",
