@@ -145,8 +145,8 @@
    "url": "story/cf08225efb6b.html"
   },
   {
-   "id": "d7a45987a920",
-   "title": "CVE-2026-70054 Windows NetBIOS Elevation of Privilege Vulnerability",
+   "id": "ff44e47a9df1",
+   "title": "CVE-2026-69923 Windows AI Elevation of Privilege Vulnerability",
    "summary": "Updated an acknowledgement. This is an informational change only.",
    "priority": "High",
    "category": "Patch Radar",
@@ -161,7 +161,7 @@
    ],
    "kev": [],
    "sources": "Microsoft Security Response Center",
-   "url": "story/d7a45987a920.html"
+   "url": "story/ff44e47a9df1.html"
   },
   {
    "id": "713a68aa818f",
@@ -182,25 +182,6 @@
    "kev": [],
    "sources": "SecurityWeek, The Record, The Hacker News",
    "url": "story/713a68aa818f.html"
-  },
-  {
-   "id": "d078ae182673",
-   "title": "CVE-2026-108456 Azure AI Foundry Elevation of Privilege Vulnerability",
-   "summary": "Server-side request forgery (ssrf) in Azure AI Foundry allows an authorized attacker to elevate privileges over a network.",
-   "priority": "High",
-   "category": "Patch Radar",
-   "date": "22 Oct 2026, 14:00 UTC",
-   "published": "2026-10-22T14:00:00+00:00",
-   "priority_score": 6,
-   "priority_basis": [
-    "Editorial attention score 6 reached the High threshold (not CVSS)"
-   ],
-   "tags": [
-    "microsoft"
-   ],
-   "kev": [],
-   "sources": "Microsoft Security Response Center",
-   "url": "story/d078ae182673.html"
   },
   {
    "id": "5f2ddb413304",
@@ -298,13 +279,13 @@
    "url": "story/015a882ee274.html"
   },
   {
-   "id": "778da97616c1",
-   "title": "Microsoft Links Storm-0940 to ConnectWise Supply Chain Attack",
-   "summary": "The China-linked actor used an AI-enabled penetration-testing tool to automate and accelerate its attack on more than 2,200 tenants.",
+   "id": "4273c05ff1b7",
+   "title": "CVE-2026-83938 Azure Kubernetes Configuration Service Elevation of Privilege Vulnerability",
+   "summary": "Missing authentication for critical function in Azure Kubernetes Configuration Service allows an unauthorized attacker to elevate privileges over a network.",
    "priority": "Standard",
-   "category": "Microsoft",
-   "date": "22 Oct 2026, 20:42 UTC",
-   "published": "2026-10-22T20:42:17+00:00",
+   "category": "Patch Radar",
+   "date": "22 Oct 2026, 14:00 UTC",
+   "published": "2026-10-22T14:00:00+00:00",
    "priority_score": 5,
    "priority_basis": [
     "No KEV or official-exploitation trigger; editorial score below High threshold"
@@ -313,8 +294,8 @@
     "microsoft"
    ],
    "kev": [],
-   "sources": "Dark Reading, The Record",
-   "url": "story/778da97616c1.html"
+   "sources": "Microsoft Security Response Center",
+   "url": "story/4273c05ff1b7.html"
   },
   {
    "id": "f6fe2f9557b7",
@@ -892,6 +873,25 @@
    "url": "story/6af5f5a84e31.html"
   },
   {
+   "id": "778da97616c1",
+   "title": "Microsoft Links Storm-0940 to ConnectWise Supply Chain Attack",
+   "summary": "The China-linked actor used an AI-enabled penetration-testing tool to automate and accelerate its attack on more than 2,200 tenants.",
+   "priority": "Standard",
+   "category": "Microsoft",
+   "date": "22 Oct 2026, 20:42 UTC",
+   "published": "2026-10-22T20:42:17+00:00",
+   "priority_score": 3,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "microsoft"
+   ],
+   "kev": [],
+   "sources": "Dark Reading",
+   "url": "story/778da97616c1.html"
+  },
+  {
    "id": "a45e553ca30b",
    "title": "ThreatsDay: AI Secrets Leak, PingCAP Source Theft, Signal Hang-Up Flaw, Laravel Auth Bypass + 21 More",
    "summary": "This week has already been rough for cybersecurity. Critical PHP and GitLab RCE flaws, serious Linux security bugs, compromised eMudhra certificates, a Node.js RCE flaw…",
@@ -926,6 +926,25 @@
    "kev": [],
    "sources": "Microsoft Security Response Center",
    "url": "story/7c1ce9da91a8.html"
+  },
+  {
+   "id": "e29c8705d959",
+   "title": "CVE-2026-110063 VM Inspector for Azure Virtual Machines Elevation of Privilege Vulnerability",
+   "summary": "Improper link resolution before file access ('link following') in VM Inspector for Azure Virtual Machines allows an unauthorized attacker to elevate privileges over a…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "22 Oct 2026, 14:00 UTC",
+   "published": "2026-10-22T14:00:00+00:00",
+   "priority_score": 3,
+   "priority_basis": [
+    "No KEV or official-exploitation trigger; editorial score below High threshold"
+   ],
+   "tags": [
+    "microsoft"
+   ],
+   "kev": [],
+   "sources": "Microsoft Security Response Center",
+   "url": "story/e29c8705d959.html"
   },
   {
    "id": "4dbd6628d42d",
@@ -4730,40 +4749,6 @@
    "kev": [],
    "sources": "BleepingComputer",
    "url": "story/a4cd23325612.html"
-  },
-  {
-   "id": "553c25ef7794",
-   "title": "'AdFection' Turns Ad Impressions Into Zero-Click Spyware Delivery",
-   "summary": "Spyware vendors are exploiting targeted ad bidding in the digital ecosystem to identify and track individuals and organizations of interest.",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "19 Oct 2026, 19:55 UTC",
-   "published": "2026-10-19T19:55:01+00:00",
-   "priority_score": 0,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "Dark Reading",
-   "url": "story/553c25ef7794.html"
-  },
-  {
-   "id": "d781dbabb694",
-   "title": "Judge denies WhatsApp’s bid to hold spyware maker in contempt for allegedly targeting users",
-   "summary": "WhatsApp argued that NSO Group violated a 2025 injunction against using the messaging app to spread spyware. A federal judge said WhatsApp hurt its case by not revealing…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "19 Oct 2026, 19:49 UTC",
-   "published": "2026-10-19T19:49:00+00:00",
-   "priority_score": 0,
-   "priority_basis": [
-    "No KEV or official-exploitation trigger; editorial score below High threshold"
-   ],
-   "tags": [],
-   "kev": [],
-   "sources": "The Record",
-   "url": "story/d781dbabb694.html"
   }
  ]
 }
