@@ -731,6 +731,25 @@
    "instructions_checked": true
   },
   {
+   "id": "d7a45987a920",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-70054 Windows NetBIOS Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70054",
+   "published": "2026-10-26T14:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-70054"
+   ],
+   "first_seen": "2026-10-26T18:06:48.441633+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "7003b4db8f4a",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -764,6 +783,25 @@
     "CVE-2026-70337"
    ],
    "first_seen": "2026-10-20T14:06:19.835154+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "d51fb19b6bbd",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-83519 Windows Error Reporting Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83519",
+   "published": "2026-10-26T14:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-83519"
+   ],
+   "first_seen": "2026-10-26T18:06:48.441633+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -1054,6 +1092,22 @@
    "instructions": [
     "Report to bad-relays@lists.torproject.org, and if your IP address was blocked during the incident, write to the same address once your host is clean to have the block lifted, Georg Koppen of the Tor Project said in a follow-up ."
    ],
+   "instructions_checked": true
+  },
+  {
+   "id": "03f54c74f6fe",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Attackers Use Microsoft Teams IT Support Scams to Deploy Malware and Ransomware",
+   "link": "https://thehackernews.com/2026/10/attackers-use-microsoft-teams-it.html",
+   "published": "2026-10-26T15:52:40+00:00",
+   "summary": "Cybersecurity researchers are calling attention to what they say is a \"recurring social engineering pattern\" across hundreds of cases in which threat actors use Microsoft Teams' external chat creation feature to conduct impersonation scams or to deliver malware. \"A consistent pattern of attacker behavior has emerged…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGj3R5UeJnb_pAG2XH5cEGUzKbzeRHLNAES48EgHC8ssOnuDbDOqJA9ydPHJqmxYONu2lCeu42YOv_e_XA2RtX5jVGsMkQY0QAGrzoqmY4qU6NnWrPTfX0V-U68B9Z80KHLJvZDtUeSm4dvkp06oJ9JmgJvr7CDYZ-48fwAOENt31Lrcpr4M6O_4x6ovLZ/s1600/support.jpg",
+   "cves": [],
+   "first_seen": "2026-10-26T18:06:48.441633+00:00",
+   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -1517,26 +1571,6 @@
    "instructions_checked": true
   },
   {
-   "id": "143bfdf19e2b",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "title": "Hackers Exploit Plex2Shell Flaws to Install Crypto Miners and Linux Proxy Backdoor",
-   "link": "https://thehackernews.com/2026/10/hackers-exploit-plex2shell-flaws-to.html",
-   "published": "2026-10-19T17:32:13+00:00",
-   "summary": "Threat actors have begun to exploit a chain of vulnerabilities in Plex Media Server to deploy cryptocurrency miners and reverse proxy software, a day after a proof-of-concept (PoC) went public. According to a researcher who goes by the online alias boredhackerblog, the exploitation activity involves chaining four…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjF_Xo8mH5AxIDYx4hFrS1_uhblD0IoGUTo6bioM38mwy-whZAbcq1aaGeH1iZrS8nmk5Ow25NfX67HRXKiWFfzLc8C1A2zs2n948DwyW_NSSkowFDnEzxUofGxhNV72vTEWkgPmbO6XJyDUPwBR-lzSekj5_m8tY3JHjozUXETGEBg6GrLZrekhilW9W_R/s1600/plex-hack.jpg",
-   "cves": [],
-   "first_seen": "2026-10-19T19:06:52.526154+00:00",
-   "instructions": [
-    "In light of active exploitation, users are advised to keep their Plex installations up-to-date for optimal protection.",
-    "The development comes more than a month after Plex urged users to update their instances to the latest version following the release of an update that addressed multiple unspecified security flaws.",
-    "The Hacker News has contacted Plex for comment and we will update the story if we hear back."
-   ],
-   "instructions_checked": true,
-   "source_type": "news"
-  },
-  {
    "id": "bd60f0eb51aa",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1863,6 +1897,29 @@
     "The advisory singles out mod_php as the highest risk, with a demonstrated exploit in which a single unauthenticated request triggers the attack before any application code runs.",
     "Linux distributions and long-term-support vendors received the patches in advance, so a distribution package can carry the fix under an old-looking version number; check the package changelog for the CVE, as Debian advises , not the version string.",
     "The measures below reduce exposure to specific attack paths and do not make a server safe, according to the advisory."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "fd2c8a91369a",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "PHP Issues Second Windows Security Update in Five Days to Fix Brotli Code Execution Flaw",
+   "link": "https://thehackernews.com/2026/10/php-issues-second-windows-security.html",
+   "published": "2026-10-26T17:45:57+00:00",
+   "summary": "PHP has rebuilt its official Windows packages for PHP 8.2 through 8.5 to fix CVE-2026-111497, a flaw in the Brotli compression library that the packages include. The flaw can let an attacker corrupt memory and potentially run code. PHP says the flaw can be reached through the cURL extension when the extension…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWGYEqFaRxRywsWzBt-2T2G_Jpdp4zy3iV7qI1alNGRaBf_8TMdzRQQb335GhASkVoXD3q9mGkiLjAog4ez9d7DHhl88lkNVvuhI74KiKZP0zZpb2O8yyqyDw12WoYTiGaq1AVfG9TfGcdNhP-DmRwuKJ4Pj4mr9rEo-TVLYxYSpmUogJUSFZFL_VaduQ/s1600/php-windows.jpg",
+   "cves": [
+    "CVE-2026-111497"
+   ],
+   "first_seen": "2026-10-26T18:06:48.441633+00:00",
+   "instructions": [
+    "PHP advises Windows users to install the new builds from its downloads page .",
+    "PHP's notice offers no workaround for systems that cannot be updated yet.",
+    "OpenAI advises turning off automatic Brotli decompression in HTTP clients until the update is installed, and warns that removing br, Brotli's name in the Accept-Encoding header, \"alone does not stop a server from sending it.\"",
+    "CISA's assessment of October 23 recorded no exploitation, and the flaw was not in its Known Exploited Vulnerabilities catalog as of that day's update."
    ],
    "instructions_checked": true
   },
@@ -2792,6 +2849,26 @@
    "first_seen": "2026-10-23T13:08:23.991777+00:00",
    "image_checked": true,
    "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "f722b9fc379b",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Serbian autocrat loses election following widespread reports of digital repression",
+   "link": "https://therecord.media/serbia-election-spyware-vucic",
+   "published": "2026-10-26T17:30:00+00:00",
+   "summary": "Serbian strongman leader Aleksandar Vučić on Sunday admitted defeat in his race for prime minister, a loss that follows a series of incidents of digital repression that galvanized the opposition.",
+   "image": "https://cms.therecord.media/uploads/Vucic_ee8282393e.jpg",
+   "cves": [],
+   "first_seen": "2026-10-26T18:06:48.441633+00:00",
+   "image_checked": true,
+   "instructions": [
+    "The regime has repeatedly deployed Cellebrite surveillance software to secretly extract data from opponents’ devices — and in some cases install spyware — during bogus interrogations and arrests, researchers from Amnesty International have said.",
+    "In February 2025, Cellebrite said it cut ties with the Serbian government after Amnesty International found that authorities there had “systematically deployed” the surveillance technology to penetrate civilians’ phones and install spyware."
+   ],
    "instructions_checked": true
   },
   {
@@ -4653,23 +4730,6 @@
     "Mozilla, Google, Apple block compromised eMudhra CA certificates"
    ],
    "instructions_checked": true
-  },
-  {
-   "id": "c8f4e94200b3",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "title": "OpenCode hack exposes API keys amid AI distillation attacks",
-   "link": "https://www.bleepingcomputer.com/news/security/opencode-hack-exposes-api-keys-amid-ai-distillation-attacks/",
-   "published": "2026-10-19T17:27:15+00:00",
-   "summary": "The open-source AI coding project OpenCode has notified a small number of users that API keys they used with external providers were exposed in a security breach.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/19/key.jpg",
-   "cves": [],
-   "first_seen": "2026-10-19T17:33:12.615608+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true,
-   "source_type": "news"
   },
   {
    "id": "4ee7cda6f2dc",
