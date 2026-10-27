@@ -2458,28 +2458,6 @@
    "instructions_checked": true
   },
   {
-   "id": "4cce5b0679d6",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "EU cyber law won’t force fixes for fridge controllers hit in French attack",
-   "link": "https://therecord.media/eu-cyber-law-wont-force-fixes-for-fridges-in-french-attack",
-   "published": "2026-10-20T14:55:00+00:00",
-   "summary": "The EU’s Cyber Resilience Act that took effect last month only requires companies to fix vulnerabilities and issue free updates during a product's support period, which manufacturers define.",
-   "image": "https://cms.therecord.media/uploads/grocery_dbc6758a29.jpg",
-   "cves": [],
-   "first_seen": "2026-10-20T15:17:12.126908+00:00",
-   "image_checked": true,
-   "instructions": [
-    "The company said it would “continue to support customers in strengthening cybersecurity through supported products, current software and industry-recommended practices.” It did not say how many customers were affected.",
-    "ENISA — the European Union Agency for Cybersecurity — told Recorded Future News that the obligation covers end-of-life products “no longer sold in the EU, but which remain in use,” and that “the reporting obligations continue to apply after a product with digital elements is no longer supported.”",
-    "However the law’s separate obligations to handle vulnerabilities, including fixing them and issuing free security updates, apply only during a product’s support period, which manufacturers define.",
-    "In a statement, Copeland acknowledged “the vulnerability identified in a discontinued, end-of-life generation of controllers,” adding it was “currently working with impacted customers to mitigate the risk.”"
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "a92bc795de6c",
    "source": "therecord",
    "source_name": "The Record",
@@ -2808,6 +2786,23 @@
    "instructions_checked": true
   },
   {
+   "id": "37ead5afc462",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Hackers repeatedly breached suppliers holding UK police data, watchdog finds",
+   "link": "https://therecord.media/uk-police-data-breached-from-suppliers-watchdog-report",
+   "published": "2026-10-27T15:07:00+00:00",
+   "summary": "His Majesty’s Inspectorate of Constabulary and Fire & Rescue Services says British police data has been breach several times this decade through third-party IT suppliers.",
+   "image": "https://cms.therecord.media/uploads/clovis_wood_q_Y_Xum_Q_Gmwa4_unsplash_519aedc326.jpg",
+   "cves": [],
+   "first_seen": "2026-10-27T15:29:29.929217+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "b49db17578fd",
    "source": "therecord",
    "source_name": "The Record",
@@ -2877,6 +2872,25 @@
    "first_seen": "2026-10-22T09:04:13.773821+00:00",
    "image_checked": true,
    "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "319765385a55",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "University of New Mexico hospital diverts ambulances after cyberattack",
+   "link": "https://therecord.media/university-of-new-mexico-hospital-diverts-cyber-incident",
+   "published": "2026-10-27T14:57:00+00:00",
+   "summary": "For about two hours on Monday, the organization diverted ambulances to health systems in Albuquerque and Santa Fe. They were forced to suspend outpatient surgeries and appointments for the remainder of the day.",
+   "image": "https://cms.therecord.media/uploads/Richardson_Pavilion_University_of_New_Mexico_1_775c9b82cd.jpg",
+   "cves": [],
+   "first_seen": "2026-10-27T15:29:29.929217+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Local news outlets reported that employees got an alert on their phones notifying them of the cyberattack and instructing them to turn off and unplug all desktops."
+   ],
    "instructions_checked": true
   },
   {
@@ -4178,22 +4192,6 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blta53885fb79cd03e3/6706dccd5ae89acdc961cf2d/github_Tada_Images_shutterstock.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-10-26T18:51:23.813916+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "91169d021095",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "Hackers Abuse AI Pen-Test Tool Cairn to Automate Massive Attack Spree",
-   "link": "https://www.darkreading.com/cyberattacks-data-breaches/hackers-abuse-ai-pen-test-tool-cairn",
-   "published": "2026-10-20T14:36:05+00:00",
-   "summary": "A Chinese-speaking attacker has compromised hundreds of websites across the globe, looting from big fish like John Deere, SharkNinja, and engine manufacturer Cummins.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltcbe1b408854966e2/6ad73d5767600f57689ea49a/AI_agent_concept_Brain_light_Alamy.png?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-10-20T15:17:12.126908+00:00",
    "instructions": [],
    "instructions_checked": true
   },
@@ -5532,6 +5530,28 @@
     "For example, OpenAI rapidly deployed mitigations to this threat, and Xint has subsequently discovered a way (which it calls Compaction Smuggling ) to bypass these mitigations – which OpenAI has now also mitigated.",
     "While OpenAI’s first mitigations reduced the threat of PII exposure and model poisoning, knowledge of a model’s reasoning process can still be stolen (compaction smuggling) and used to cheaply build a new rival AI model (distillation).",
     "Preparing for disruption must become part of day-to-day operations."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "820476dc1929",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Tailscale Rushes Patches After Uncoordinated Disclosure of ‘Tailworm’ Flaws",
+   "link": "https://www.securityweek.com/tailscale-rushes-patches-after-uncoordinated-disclosure-of-tailworm-flaws/",
+   "published": "2026-10-27T15:26:12+00:00",
+   "summary": "Tailscale is preparing a patch for Tailscale SSH flaws whose details went public over the weekend, before any fixes had been released. The post Tailscale Rushes Patches After Uncoordinated Disclosure of ‘Tailworm’ Flaws appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2024/04/vulnerability.jpeg",
+   "cves": [],
+   "first_seen": "2026-10-27T15:29:29.929217+00:00",
+   "image_checked": true,
+   "instructions": [
+    "In some cases, a session may be able to do more than the configured local user should be allowed to do,” Shaver said. “While it’s a serious concern, it isn’t the same as an unauthenticated attacker being able to connect to arbitrary machines, but the potential impact depends on how SSH access is configured,” he added.",
+    "A security advisory and a technical write-up will follow once the update is out.",
+    "None had made it into a numbered release at that point. “Based on our current assessment, we’re not recommending that everyone disable Tailscale SSH,” the vendor said.",
+    "Until the patch arrives, Tailscale advises organizations to review their SSH access policies and disable SSH forwarding where it isn’t needed, which it says mitigates several of the more serious findings."
    ],
    "instructions_checked": true
   },
