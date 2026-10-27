@@ -1141,6 +1141,25 @@
    "instructions_checked": true
   },
   {
+   "id": "ad8783319617",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Attackers Hijack Dahua IP Cameras in Ukraine Using P2P Access and Auth Weaknesses",
+   "link": "https://thehackernews.com/2026/10/attackers-hijack-dahua-ip-cameras-in.html",
+   "published": "2026-10-27T06:34:47+00:00",
+   "summary": "The Computer Emergency Response Team of Ukraine (CERT-UA) has issued an alert warning of unauthorized remote access to video surveillance systems manufactured by Dahua. \"Cases of compromising IP cameras and DVRs with access to the video stream, changing the device configuration and creating third-party accounts have…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjISG9SXb2aeE6Zy-bIbnuaqwUNmGof7xU8RQl0vGZIcxcgNE3YXpuvG7rJKSTn_q9J8d_2DEv6rU2zxoX615DIYePz9rMA2TiLT6Fo1q2leGoyH85hJuIUta8j8FEN2mY5AGaO6zH5o6MkCHZ9Sv7OpjrZ6LE1yZygl9R4hUgt7xWJMMeGXRI4UJziuPCW/s1600/hackers-camera.jpg",
+   "cves": [],
+   "first_seen": "2026-10-27T07:31:26.061414+00:00",
+   "instructions": [
+    "To counter the threat, it's advised to disable the P2P feature if not required, avoid exposing them directly to the internet, and keep the software up-to-date.",
+    "\"It is stored independently of the admin password and survives a password change and, on most firmware, a factory reset."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "00d9c6c07315",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1337,26 +1356,6 @@
     "CISA is urging Federal Civilian Executive Branch (FCEB) agencies to apply fixes for CVE-2026-106931, CVE-2026-96656, and CVE-2026-96654 by October 23, 2026, and the rest by November 3, 2026."
    ],
    "instructions_checked": true
-  },
-  {
-   "id": "4fd8d5a31fd8",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "title": "ClickFix Attackers Exploit Siemens Software Center Flaw to Deploy Remote Access Trojan",
-   "link": "https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html",
-   "published": "2026-10-20T07:11:45+00:00",
-   "summary": "Siemens has addressed a DLL sideloading vulnerability impacting Siemens Software Center that it said has been exploited in ClickFix attacks. The high-severity vulnerability, tracked as CVE-2026-110936 (CVSS v4 score: 8.4), could allow an attacker to place a specially-crafted DLL in a directory the application…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUJqb8f_ibR_O_dPoJqAVHZOVmgi23TsxhFzv19_3uzAbEqH6L6QMJUWdelmEKmDe6U9wj6KKyDpPKi_1a93IK1KJa-Ql0kFRtfqVe9sKQpVFj0dA65dCfRKCN7H0LQYgMdzqdJoLgSb6rRFBA4bfmf4oUqItqe6pVCsyxmEzCnHx02h_m1WsK6sJu7jy2/s1600/siemens.jpg",
-   "cves": [
-    "CVE-2026-110936"
-   ],
-   "first_seen": "2026-10-20T08:00:41.954505+00:00",
-   "instructions": [
-    "\"The affected application loads dynamic-link libraries (DLLs) from an uncontrolled search path,\" Siemens said in an advisory."
-   ],
-   "instructions_checked": true,
-   "source_type": "news"
   },
   {
    "id": "13881c9b4329",
@@ -6327,6 +6326,26 @@
     "Jon Steinbach has been appointed strategic technical advisor to the Pentagon’s CIO.",
     "Preparing for disruption must become part of day-to-day operations.",
     "The attackers used the compromised credentials to disable branch protections, merge a change that pointed the releaser to a different source repository, and run a compromised GitHub workflow that pointed to a lookalike repository, then signed and published the poisoned artifacts."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "46ee8b886dbe",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Maritime Coalition Launches Free Vulnerability Database for Ship and Port Systems",
+   "link": "https://www.securityweek.com/maritime-coalition-launches-free-vulnerability-database-for-ship-and-port-systems/",
+   "published": "2026-10-27T07:14:27+00:00",
+   "summary": "Blue Initiative indexes nearly 30,000 IT and OT vulnerabilities relevant to ships and ports, 37 of them in maritime-specific products. The post Maritime Coalition Launches Free Vulnerability Database for Ship and Port Systems appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/02/Maritime-cybersecurity.jpg",
+   "cves": [],
+   "first_seen": "2026-10-27T07:31:26.061414+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Most entries are pulled automatically from CISA’s ICS advisories and KEV catalog and mapped to maritime systems, while a smaller number include hand-written analyst notes.",
+    "Preparing for disruption must become part of day-to-day operations."
    ],
    "instructions_checked": true
   },
