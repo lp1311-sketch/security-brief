@@ -2038,9 +2038,33 @@ RADAR_CSS = """
 .radar-item .summary{margin:6px 0;color:var(--muted)}
 .radar-tag{display:inline-block;font-size:.72rem;font-weight:650;letter-spacing:.04em;text-transform:uppercase;padding:2px 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted);margin:0 6px 4px 0}
 .radar-tag.stage{color:#38bdf8;border-color:#38bdf8}
-.radar-home{list-style:none;padding:0;margin:14px 0 0}
-.radar-home li{padding:8px 0;border-bottom:1px solid var(--line)}
-.radar-home .meta{margin-left:6px}
+.rh{position:relative;overflow:hidden;margin:56px 0 0;padding:28px;border-radius:var(--r);border:1px solid transparent;background:linear-gradient(var(--surface),var(--surface)) padding-box,linear-gradient(120deg,#38bdf8,#22c55e 45%,#ef4444) border-box;box-shadow:0 0 0 1px rgba(56,189,248,.08),0 24px 60px -30px rgba(56,189,248,.45)}
+.rh::before{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(56,189,248,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(56,189,248,.06) 1px,transparent 1px);background-size:34px 34px;-webkit-mask-image:radial-gradient(ellipse at 100% 0%,#000 10%,transparent 70%);mask-image:radial-gradient(ellipse at 100% 0%,#000 10%,transparent 70%)}
+.rh-scan{position:absolute;left:0;right:0;top:0;height:90px;pointer-events:none;background:linear-gradient(180deg,transparent,rgba(56,189,248,.12),transparent);animation:rh-scan 6s linear infinite}
+@keyframes rh-scan{from{transform:translateY(-100%)}to{transform:translateY(calc(100% + 420px))}}
+.rh>*{position:relative}
+.rh-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:24px}
+.rh-eyebrow{display:inline-flex;align-items:center;gap:8px;margin:0 0 10px;font-family:var(--font-mono,ui-monospace,monospace);font-size:.72rem;font-weight:650;letter-spacing:.14em;text-transform:uppercase;color:#22c55e}
+.rh-led{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 10px #22c55e;animation:blink 2.4s ease-in-out infinite}
+.rh-head h2{margin:0;font-size:clamp(1.9rem,4vw,2.7rem);line-height:1.05;letter-spacing:-.025em;font-weight:760;color:var(--ink)}
+.rh-head h2 span{background:linear-gradient(90deg,#38bdf8,#22c55e);-webkit-background-clip:text;background-clip:text;color:transparent}
+.rh-sub{margin:12px 0 0;max-width:620px;color:var(--muted);line-height:1.6}
+.rh-cta{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:999px;font-weight:700;font-size:.92rem;text-decoration:none;color:#06121f;background:linear-gradient(90deg,#38bdf8,#22c55e);box-shadow:0 0 22px rgba(56,189,248,.35);transition:transform .2s ease,box-shadow .2s ease}
+.rh-cta:hover,.rh-cta:focus-visible{transform:translateY(-2px);box-shadow:0 0 34px rgba(34,197,94,.5);outline:none}
+.rh-cta:focus-visible{outline:2px solid #38bdf8;outline-offset:3px}
+.rh-grid{list-style:none;margin:0;padding:0;display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.rh-card{position:relative;display:flex;flex-direction:column;gap:10px;min-height:170px;padding:18px;border-radius:var(--r);border:1px solid var(--line);background:color-mix(in srgb,var(--surface-2) 75%,transparent);overflow:hidden;transition:border-color .25s ease,transform .25s ease,box-shadow .25s ease}
+.rh-card::before{content:"";position:absolute;left:0;right:0;top:0;height:2px;background:linear-gradient(90deg,#38bdf8,#22c55e);opacity:.7}
+.rh-card:hover{border-color:rgba(56,189,248,.6);transform:translateY(-3px);box-shadow:0 14px 36px -18px rgba(56,189,248,.6)}
+.rh-idx{font-family:var(--font-mono,ui-monospace,monospace);font-size:.8rem;color:var(--muted);letter-spacing:.1em}
+.rh-stage{align-self:flex-start;font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:3px 9px;border-radius:999px;color:#22c55e;border:1px solid rgba(34,197,94,.55);background:rgba(34,197,94,.08)}
+.rh-stage-none{color:#38bdf8;border-color:rgba(56,189,248,.55);background:rgba(56,189,248,.08)}
+.rh-title{font-size:1.02rem;font-weight:650;line-height:1.4;color:var(--ink);text-decoration:none;flex:1}
+.rh-title:hover,.rh-title:focus-visible{color:#38bdf8;text-decoration:underline;text-underline-offset:3px;outline:none}
+.rh-meta{font-size:.8rem;color:var(--muted)}
+.rh-empty{justify-content:center}
+.rh-foot{margin:18px 0 0;font-size:.82rem;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){.rh-scan,.rh-led{animation:none!important}.rh-card,.rh-cta{transition:none!important}.rh-card:hover,.rh-cta:hover{transform:none}}
 """
 
 RADAR_JS = """(function(){var chips=document.querySelectorAll('[data-radar-filter]');var rows=document.querySelectorAll('.radar-item');
@@ -2096,20 +2120,31 @@ def radar_page(radar: dict, cfg: dict, site_cfg: dict) -> str:
 
 
 def _radar_home(radar: dict) -> str:
-    rows = []
-    for it in radar["items"][:3]:
-        stage = f" &middot; {esc(it['stage'])}" if it["stage"] else ""
-        rows.append(f'<li><a href="{esc(it["link"])}" target="_blank" rel="noopener noreferrer">{esc(it["title"])}</a>'
-                    f'<span class="meta">{esc(fmt_day(it["published"]))}{stage}</span></li>')
-    if not rows:
-        note = "The public roadmap feed is unavailable right now." if not radar["ok"] else "No public roadmap entries in the latest check."
-        rows.append(f'<li class="meta">{note}</li>')
-    return ('<section class="section" id="change-radar" aria-labelledby="radar-title">'
-            '<p class="kicker">Separate from security news</p>'
-            '<h2 id="radar-title">Microsoft 365 Change Radar</h2>'
-            '<p class="summary">Recent public roadmap entries for Microsoft 365. These are product plans, not confirmed changes in your tenant.</p>'
-            f'<ul class="radar-home">{"".join(rows)}</ul>'
-            '<p class="section-more"><a href="change-radar/index.html">Open the Change Radar &rarr;</a></p></section>')
+    cards = []
+    for n, it in enumerate(radar["items"][:3], start=1):
+        stage = f'<span class="rh-stage">{esc(it["stage"])}</span>' if it["stage"] else '<span class="rh-stage rh-stage-none">Roadmap</span>'
+        product = esc(it["products"][0]) if it["products"] else "Microsoft 365"
+        cards.append(
+            f'<li class="rh-card"><span class="rh-idx" aria-hidden="true">0{n}</span>{stage}'
+            f'<a class="rh-title" href="{esc(it["link"])}" target="_blank" rel="noopener noreferrer">{esc(it["title"])}</a>'
+            f'<span class="rh-meta">{esc(fmt_day(it["published"]) or "date not provided")} &middot; {product}</span></li>')
+    if not cards:
+        note = ("The public roadmap feed is unavailable right now. Open the radar for the latest status."
+                if not radar["ok"] else "No public roadmap entries in the latest check.")
+        cards.append(f'<li class="rh-card rh-empty"><span class="rh-meta">{note}</span></li>')
+    status = '<span class="rh-led" aria-hidden="true"></span>' + ("Feed live" if radar["ok"] else "Feed offline · showing saved entries")
+    return (
+        '<section class="rh" id="change-radar" aria-labelledby="radar-title">'
+        '<div class="rh-scan" aria-hidden="true"></div>'
+        '<div class="rh-head"><div>'
+        f'<p class="rh-eyebrow">{status}</p>'
+        '<h2 id="radar-title">Microsoft 365 <span>Change Radar</span></h2>'
+        '<p class="rh-sub">Upcoming Microsoft 365 changes from the public roadmap. Separate from security news. '
+        'These are product plans, not confirmed changes in your tenant.</p></div>'
+        '<a class="rh-cta" href="change-radar/index.html">Open the radar <span aria-hidden="true">&rarr;</span></a></div>'
+        f'<ol class="rh-grid">{"".join(cards)}</ol>'
+        '<p class="rh-foot">Message Center posts and service health are tenant-specific and are not shown here.</p>'
+        '</section>')
 
 
 def write_site(out: Path, stories: list[dict], cfg: dict, now: datetime, status: dict,
