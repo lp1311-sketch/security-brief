@@ -2024,96 +2024,297 @@ def load_radar(fixtures: Path | None, data_file: Path) -> dict:
 
 
 RADAR_CSS = """
-.radar-notice{border:1px solid var(--line);border-left:4px solid #38bdf8;background:var(--surface);border-radius:var(--r);padding:16px 20px;margin:24px 0}
-.radar-notice p{margin:6px 0;color:var(--muted)}
-.radar-notice strong{color:var(--ink)}
-.radar-chips{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
-.radar-chip{font:inherit;font-size:.82rem;font-weight:650;color:var(--muted);background:var(--surface-2);border:1px solid var(--line);border-radius:999px;padding:5px 12px;cursor:pointer}
-.radar-chip:hover,.radar-chip:focus-visible{color:var(--ink);border-color:var(--accent)}
-.radar-chip[aria-pressed="true"]{color:var(--ink);border-color:#38bdf8}
-.radar-list{list-style:none;padding:0;margin:0}
-.radar-item{border-bottom:1px solid var(--line);padding:18px 0}
-.radar-item h3{margin:8px 0 4px;font-size:1.25rem}
-.radar-item h3 a{color:var(--ink)}
-.radar-item .summary{margin:6px 0;color:var(--muted)}
-.radar-tag{display:inline-block;font-size:.72rem;font-weight:650;letter-spacing:.04em;text-transform:uppercase;padding:2px 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted);margin:0 6px 4px 0}
-.radar-tag.stage{color:#38bdf8;border-color:#38bdf8}
-.rh{position:relative;overflow:hidden;margin:56px 0 0;padding:28px;border-radius:var(--r);border:1px solid transparent;background:linear-gradient(var(--surface),var(--surface)) padding-box,linear-gradient(120deg,#38bdf8,#22c55e 45%,#ef4444) border-box;box-shadow:0 0 0 1px rgba(56,189,248,.08),0 24px 60px -30px rgba(56,189,248,.45)}
-.rh::before{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(56,189,248,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(56,189,248,.06) 1px,transparent 1px);background-size:34px 34px;-webkit-mask-image:radial-gradient(ellipse at 100% 0%,#000 10%,transparent 70%);mask-image:radial-gradient(ellipse at 100% 0%,#000 10%,transparent 70%)}
-.rh-scan{position:absolute;left:0;right:0;top:0;height:90px;pointer-events:none;background:linear-gradient(180deg,transparent,rgba(56,189,248,.12),transparent);animation:rh-scan 6s linear infinite}
+:root{--rv-cyan:#38bdf8;--rv-green:#22c55e;--rv-amber:#fbbf24;--rv-violet:#a78bfa;--rv-red:#ef4444;--rv-mint:#86efac}
+.rv-scan{position:absolute;left:0;right:0;top:0;height:90px;pointer-events:none;background:linear-gradient(180deg,transparent,rgba(56,189,248,.12),transparent);animation:rh-scan 6s linear infinite}
 @keyframes rh-scan{from{transform:translateY(-100%)}to{transform:translateY(calc(100% + 420px))}}
+.rh-led{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--rv-green);box-shadow:0 0 10px var(--rv-green);animation:blink 2.4s ease-in-out infinite}
+.rv-kicker{display:inline-flex;align-items:center;gap:8px;margin:0 0 12px;font-family:var(--font-mono,ui-monospace,monospace);font-size:.72rem;font-weight:650;letter-spacing:.14em;text-transform:uppercase;color:var(--rv-green)}
+.rv-gradient{background:linear-gradient(90deg,var(--rv-cyan),var(--rv-green));-webkit-background-clip:text;background-clip:text;color:transparent}
+.rv-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 17px;border-radius:999px;font:inherit;font-weight:700;font-size:.9rem;text-decoration:none;border:1px solid var(--line);color:var(--ink);background:var(--surface-2);cursor:pointer;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease,color .2s ease}
+.rv-btn:hover{transform:translateY(-2px)}
+.rv-btn:focus-visible,.rv-chip:focus-visible,.rv-item a:focus-visible{outline:2px solid var(--rv-cyan);outline-offset:3px}
+.rv-btn-primary{color:#06121f;border-color:transparent;background:linear-gradient(90deg,var(--rv-cyan),var(--rv-green));box-shadow:0 0 22px rgba(56,189,248,.35)}
+.rv-btn-primary:hover{box-shadow:0 0 34px rgba(34,197,94,.5)}
+.rv-btn-ghost:hover{border-color:var(--rv-cyan);color:var(--rv-cyan)}
+.rv-btn-sm{padding:6px 12px;font-size:.8rem}
+.rv-tag{display:inline-flex;align-items:center;gap:6px;font-size:.66rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:3px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap;line-height:1.5}
+.rv-tag.product{color:var(--ink);background:var(--surface-2);text-transform:none;letter-spacing:.02em;font-size:.74rem}
+.rv-tag.s-rollout{color:var(--rv-green);border-color:rgba(34,197,94,.55);background:rgba(34,197,94,.09)}
+.rv-tag.s-dev{color:var(--rv-violet);border-color:rgba(167,139,250,.55);background:rgba(167,139,250,.09)}
+.rv-tag.s-preview{color:var(--rv-cyan);border-color:rgba(56,189,248,.55);background:rgba(56,189,248,.09)}
+.rv-tag.s-launched{color:var(--rv-mint);border-color:rgba(134,239,172,.5);background:rgba(134,239,172,.08)}
+.rv-tag.a-admin{color:var(--rv-amber);border-color:rgba(251,191,36,.6);background:rgba(251,191,36,.09)}
+.rv-tag.a-user{color:var(--rv-cyan);border-color:rgba(56,189,248,.5);background:rgba(56,189,248,.07)}
+.rv-tag.a-action{color:#fff;border-color:var(--rv-red);background:var(--rv-red);box-shadow:0 0 14px rgba(239,68,68,.35)}
+.rv-tag.sev{color:var(--rv-red);border-color:rgba(239,68,68,.55);background:rgba(239,68,68,.08)}
+.rv-hero{position:relative;overflow:hidden;padding:36px 32px 30px;margin:8px 0 26px;border-radius:var(--r);border:1px solid transparent;background:linear-gradient(var(--surface),var(--surface)) padding-box,linear-gradient(120deg,var(--rv-cyan),var(--rv-green) 50%,var(--rv-red)) border-box;box-shadow:0 24px 60px -32px rgba(56,189,248,.5)}
+.rv-hero::before{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(56,189,248,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(56,189,248,.07) 1px,transparent 1px);background-size:36px 36px;-webkit-mask-image:radial-gradient(ellipse at 100% 0%,#000 8%,transparent 70%);mask-image:radial-gradient(ellipse at 100% 0%,#000 8%,transparent 70%)}
+.rv-hero>*{position:relative}
+.rv-hero h1{margin:0;font-size:clamp(2.2rem,6vw,3.6rem);line-height:1;letter-spacing:-.03em;font-weight:760;color:var(--ink);background:none;-webkit-text-fill-color:initial}
+.rv-lede{margin:14px 0 0;max-width:680px;font-size:1.08rem;line-height:1.6;color:var(--muted)}
+.rv-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.rv-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:26px}
+.rv-stat{padding:14px 16px;border-radius:var(--r);border:1px solid var(--line);background:color-mix(in srgb,var(--surface-2) 70%,transparent);border-left:3px solid var(--line)}
+.rv-stat b{display:block;font-family:var(--font-display);font-size:2rem;line-height:1;color:var(--ink)}
+.rv-stat span{display:block;margin-top:6px;font-size:.7rem;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.rv-stat.c-cyan{border-left-color:var(--rv-cyan)}.rv-stat.c-green{border-left-color:var(--rv-green)}.rv-stat.c-violet{border-left-color:var(--rv-violet)}.rv-stat.c-amber{border-left-color:var(--rv-amber)}
+.rv-notice{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:0 0 30px}
+.rv-notice>div{display:flex;gap:12px;padding:16px;border-radius:var(--r);border:1px solid var(--line);background:var(--surface)}
+.rv-ico{flex:none;display:grid;place-items:center;width:28px;height:28px;border-radius:50%;font-weight:800;font-size:.85rem;color:#06121f;background:linear-gradient(135deg,var(--rv-cyan),var(--rv-green))}
+.rv-notice strong{display:block;color:var(--ink);font-size:.95rem}
+.rv-notice p{margin:4px 0 0;font-size:.86rem;line-height:1.5;color:var(--muted)}
+.rv-section{margin:34px 0 0}
+.rv-section h2{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:0;font-size:1.6rem}
+.rv-sub{margin:6px 0 16px;color:var(--muted);font-size:.93rem;line-height:1.55;max-width:760px}
+.rv-connect{padding:18px 20px;border:1px dashed rgba(56,189,248,.45);border-radius:var(--r);color:var(--muted);background:rgba(56,189,248,.04);font-size:.92rem;line-height:1.6}
+.rv-connect strong{color:var(--ink)}
+.rv-controls{margin:34px 0 18px;display:grid;gap:14px;padding:18px;border-radius:var(--r);border:1px solid var(--line);background:var(--surface)}
+.rv-search input{width:100%;padding:12px 16px;border-radius:999px;border:1px solid var(--line);background:var(--surface-2);color:var(--ink);font:inherit;font-size:.95rem}
+.rv-search input::placeholder{color:var(--muted)}
+.rv-search input:focus{outline:none;border-color:var(--rv-cyan);box-shadow:0 0 0 3px rgba(56,189,248,.2)}
+.rv-chiprow{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.rv-chiprow-label{min-width:76px;font-family:var(--font-mono,ui-monospace,monospace);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.rv-chip{font:inherit;font-size:.8rem;font-weight:650;color:var(--muted);background:var(--surface-2);border:1px solid var(--line);border-radius:999px;padding:6px 13px;cursor:pointer;transition:border-color .2s ease,color .2s ease}
+.rv-chip:hover{border-color:var(--rv-cyan);color:var(--ink)}
+.rv-chip[aria-pressed="true"]{color:#06121f;border-color:transparent;background:linear-gradient(90deg,var(--rv-cyan),var(--rv-green));font-weight:750}
+.rv-count{margin:0 0 12px;font-family:var(--font-mono,ui-monospace,monospace);font-size:.75rem;letter-spacing:.06em;color:var(--muted)}
+.rv-list{list-style:none;margin:0;padding:0}
+.rv-item{position:relative;padding:18px 20px 16px 26px;margin-bottom:12px;border-radius:var(--r);border:1px solid var(--line);background:color-mix(in srgb,var(--surface) 94%,transparent);transition:border-color .25s ease,transform .25s ease,box-shadow .25s ease;--stripe:var(--line)}
+.rv-item::before{content:"";position:absolute;left:0;top:14px;bottom:14px;width:3px;border-radius:3px;background:var(--stripe)}
+.rv-item[data-stage="Rolling out"]{--stripe:var(--rv-green)}
+.rv-item[data-stage="In development"]{--stripe:var(--rv-violet)}
+.rv-item[data-stage="Preview"]{--stripe:var(--rv-cyan)}
+.rv-item[data-stage="Launched"],.rv-item[data-stage="Generally available"]{--stripe:var(--rv-mint)}
+.rv-item.is-action{--stripe:var(--rv-red)}
+.rv-item.is-admin{--stripe:var(--rv-amber)}
+.rv-item:hover{border-color:rgba(56,189,248,.5);transform:translateX(3px);box-shadow:0 12px 30px -20px rgba(56,189,248,.7)}
+.rv-tags{display:flex;flex-wrap:wrap;gap:6px}
+.rv-item h3{margin:12px 0 6px;font-size:1.12rem;line-height:1.35;font-weight:650}
+.rv-item h3 a{color:var(--ink);text-decoration:none}
+.rv-item h3 a:hover{color:var(--rv-cyan);text-decoration:underline;text-underline-offset:3px}
+.rv-item p.rv-desc{margin:0 0 12px;color:var(--muted);font-size:.93rem;line-height:1.6}
+.rv-foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;font-family:var(--font-mono,ui-monospace,monospace);font-size:.74rem;color:var(--muted)}
+.rv-foot b{color:var(--ink);font-weight:600}
+.rv-legend{margin:20px 0 0;font-size:.82rem;color:var(--muted);line-height:1.6}
+.rh{position:relative;overflow:hidden;margin:56px 0 0;padding:28px;border-radius:var(--r);border:1px solid transparent;background:linear-gradient(var(--surface),var(--surface)) padding-box,linear-gradient(120deg,var(--rv-cyan),var(--rv-green) 45%,var(--rv-red)) border-box;box-shadow:0 24px 60px -30px rgba(56,189,248,.45)}
+.rh::before{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(56,189,248,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(56,189,248,.06) 1px,transparent 1px);background-size:34px 34px;-webkit-mask-image:radial-gradient(ellipse at 100% 0%,#000 10%,transparent 70%);mask-image:radial-gradient(ellipse at 100% 0%,#000 10%,transparent 70%)}
 .rh>*{position:relative}
-.rh-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:24px}
-.rh-eyebrow{display:inline-flex;align-items:center;gap:8px;margin:0 0 10px;font-family:var(--font-mono,ui-monospace,monospace);font-size:.72rem;font-weight:650;letter-spacing:.14em;text-transform:uppercase;color:#22c55e}
-.rh-led{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 10px #22c55e;animation:blink 2.4s ease-in-out infinite}
+.rh-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:22px}
+.rh-eyebrow{display:inline-flex;align-items:center;gap:8px;margin:0 0 10px;font-family:var(--font-mono,ui-monospace,monospace);font-size:.72rem;font-weight:650;letter-spacing:.14em;text-transform:uppercase;color:var(--rv-green)}
 .rh-head h2{margin:0;font-size:clamp(1.9rem,4vw,2.7rem);line-height:1.05;letter-spacing:-.025em;font-weight:760;color:var(--ink)}
-.rh-head h2 span{background:linear-gradient(90deg,#38bdf8,#22c55e);-webkit-background-clip:text;background-clip:text;color:transparent}
+.rh-head h2 span{background:linear-gradient(90deg,var(--rv-cyan),var(--rv-green));-webkit-background-clip:text;background-clip:text;color:transparent}
 .rh-sub{margin:12px 0 0;max-width:620px;color:var(--muted);line-height:1.6}
-.rh-cta{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:999px;font-weight:700;font-size:.92rem;text-decoration:none;color:#06121f;background:linear-gradient(90deg,#38bdf8,#22c55e);box-shadow:0 0 22px rgba(56,189,248,.35);transition:transform .2s ease,box-shadow .2s ease}
-.rh-cta:hover,.rh-cta:focus-visible{transform:translateY(-2px);box-shadow:0 0 34px rgba(34,197,94,.5);outline:none}
-.rh-cta:focus-visible{outline:2px solid #38bdf8;outline-offset:3px}
 .rh-grid{list-style:none;margin:0;padding:0;display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
 .rh-card{position:relative;display:flex;flex-direction:column;gap:10px;min-height:170px;padding:18px;border-radius:var(--r);border:1px solid var(--line);background:color-mix(in srgb,var(--surface-2) 75%,transparent);overflow:hidden;transition:border-color .25s ease,transform .25s ease,box-shadow .25s ease}
-.rh-card::before{content:"";position:absolute;left:0;right:0;top:0;height:2px;background:linear-gradient(90deg,#38bdf8,#22c55e);opacity:.7}
+.rh-card::before{content:"";position:absolute;left:0;right:0;top:0;height:2px;background:linear-gradient(90deg,var(--rv-cyan),var(--rv-green));opacity:.8}
 .rh-card:hover{border-color:rgba(56,189,248,.6);transform:translateY(-3px);box-shadow:0 14px 36px -18px rgba(56,189,248,.6)}
-.rh-idx{font-family:var(--font-mono,ui-monospace,monospace);font-size:.8rem;color:var(--muted);letter-spacing:.1em}
-.rh-stage{align-self:flex-start;font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:3px 9px;border-radius:999px;color:#22c55e;border:1px solid rgba(34,197,94,.55);background:rgba(34,197,94,.08)}
-.rh-stage-none{color:#38bdf8;border-color:rgba(56,189,248,.55);background:rgba(56,189,248,.08)}
+.rh-idx{font-family:var(--font-mono,ui-monospace,monospace);font-size:.78rem;color:var(--muted);letter-spacing:.1em}
 .rh-title{font-size:1.02rem;font-weight:650;line-height:1.4;color:var(--ink);text-decoration:none;flex:1}
-.rh-title:hover,.rh-title:focus-visible{color:#38bdf8;text-decoration:underline;text-underline-offset:3px;outline:none}
+.rh-title:hover,.rh-title:focus-visible{color:var(--rv-cyan);text-decoration:underline;text-underline-offset:3px;outline:none}
 .rh-meta{font-size:.8rem;color:var(--muted)}
 .rh-empty{justify-content:center}
 .rh-foot{margin:18px 0 0;font-size:.82rem;color:var(--muted)}
-@media (prefers-reduced-motion:reduce){.rh-scan,.rh-led{animation:none!important}.rh-card,.rh-cta{transition:none!important}.rh-card:hover,.rh-cta:hover{transform:none}}
+.rh-cta-row{margin-top:18px}
+@media (max-width:640px){.rv-hero{padding:26px 20px}.rv-item{padding:16px 16px 14px 22px}.rh{padding:22px 18px}.rv-chiprow-label{width:100%}}
+@media (prefers-reduced-motion:reduce){.rv-scan,.rh-led{animation:none!important}.rv-item,.rv-btn,.rh-card{transition:none!important}.rv-item:hover,.rv-btn:hover,.rh-card:hover{transform:none}}
 """
 
-RADAR_JS = """(function(){var chips=document.querySelectorAll('[data-radar-filter]');var rows=document.querySelectorAll('.radar-item');
-chips.forEach(function(c){c.addEventListener('click',function(){var f=c.getAttribute('data-radar-filter');
-chips.forEach(function(x){x.setAttribute('aria-pressed',String(x===c));});
-rows.forEach(function(r){var p='|'+r.getAttribute('data-products')+'|';r.hidden=!(f==='all'||p.indexOf('|'+f+'|')>-1);});});});})();"""
+RADAR_JS = """(function(){
+var state={product:'all',stage:'all',audience:'all',q:''};
+var items=[].slice.call(document.querySelectorAll('.rv-item[data-filterable]'));
+var count=document.getElementById('rv-count');
+function inList(attr,val){return val==='all'||('|'+attr+'|').indexOf('|'+val+'|')>-1;}
+function apply(){var shown=0;
+items.forEach(function(el){
+var ok=inList(el.getAttribute('data-products'),state.product)&&inList(el.getAttribute('data-audience'),state.audience)
+&&(state.stage==='all'||el.getAttribute('data-stage')===state.stage)
+&&(!state.q||el.getAttribute('data-search').indexOf(state.q)>-1);
+el.hidden=!ok;if(ok)shown++;});
+if(count)count.textContent=shown+' of '+items.length+' entries shown';
+var empty=document.getElementById('rv-empty');if(empty)empty.hidden=shown>0;}
+document.querySelectorAll('[data-filter-group]').forEach(function(group){
+var key=group.getAttribute('data-filter-group');
+group.querySelectorAll('button').forEach(function(b){
+b.addEventListener('click',function(){state[key]=b.getAttribute('data-value');
+group.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',String(x===b));});apply();});});});
+var q=document.getElementById('rv-search');
+if(q){q.addEventListener('input',function(){state.q=q.value.trim().toLowerCase();apply();});}
+apply();})();"""
+
+STAGE_CLASS = {"Rolling out": "s-rollout", "In development": "s-dev", "Preview": "s-preview",
+               "Launched": "s-launched", "Generally available": "s-launched"}
+ADMIN_RE = re.compile(r"\badmins?\b|administrators?|\bit teams?\b", re.I)
+USER_RE = re.compile(r"\bend users?\b|\busers?\b", re.I)
+ACTION_RE = re.compile(r"what you need to do|action (?:is )?required|action needed|you need to", re.I)
+
+
+def audience_of(text: str) -> list[str]:
+    out = []
+    if ADMIN_RE.search(text):
+        out.append("Admin")
+    if USER_RE.search(text):
+        out.append("User")
+    return out
+
+
+def _tag_stage(stage: str | None) -> str:
+    if not stage:
+        return '<span class="rv-tag">Roadmap</span>'
+    return f'<span class="rv-tag {STAGE_CLASS.get(stage, "")}">{esc(stage)}</span>'
+
+
+def _tag_audience(aud: list[str]) -> str:
+    out = []
+    if "Admin" in aud:
+        out.append('<span class="rv-tag a-admin">Admin relevant</span>')
+    if "User" in aud:
+        out.append('<span class="rv-tag a-user">User relevant</span>')
+    return "".join(out)
 
 
 def _radar_item_html(it: dict) -> str:
-    stage = f'<span class="radar-tag stage">{esc(it["stage"])}</span>' if it["stage"] else ""
-    tags = "".join(f'<span class="radar-tag">{esc(p)}</span>' for p in it["products"][:3])
-    summary = f'<p class="summary">{esc(_short(it["summary"], 260))}</p>' if it["summary"] else ""
-    feature = f" &middot; Feature ID {esc(it['feature_id'])}" if it["feature_id"] else ""
+    text = f"{it['title']} {it['summary']}"
+    aud = audience_of(text)
+    stage = it["stage"] or "Roadmap"
+    products = it["products"][:2]
+    tags = _tag_stage(it["stage"]) + "".join(f'<span class="rv-tag product">{esc(p)}</span>' for p in products) + _tag_audience(aud)
+    summary = f'<p class="rv-desc">{esc(_short(it["summary"], 240))}</p>' if it["summary"] else ""
+    feature = f"Feature {esc(it['feature_id'])}" if it["feature_id"] else "Roadmap entry"
     date = fmt_day(it["published"]) or "date not provided"
-    products = esc("|".join(it["products"]))
-    return (f'<li class="radar-item" data-products="{products}"><div>{stage}{tags}</div>'
-            f'<h3><a href="{esc(it["link"])}" target="_blank" rel="noopener noreferrer">{esc(it["title"])}</a></h3>'
-            f'{summary}<p class="meta">Microsoft roadmap entry &middot; {esc(date)}{feature}</p></li>')
+    search = esc(f"{it['title']} {it['summary']} {' '.join(it['products'])} {stage} {' '.join(aud)} {it['feature_id'] or ''}".lower())
+    return (
+        f'<li class="rv-item" data-filterable="1" data-stage="{esc(stage)}" '
+        f'data-products="{esc("|".join(it["products"]))}" data-audience="{esc("|".join(aud))}" data-search="{search}">'
+        f'<div class="rv-tags">{tags}</div>'
+        f'<h3><a href="{esc(it["link"])}" target="_blank" rel="noopener noreferrer">{esc(it["title"])}</a></h3>'
+        f'{summary}'
+        f'<div class="rv-foot"><span>{esc(date)} &middot; <b>{feature}</b></span>'
+        f'<a class="rv-btn rv-btn-ghost rv-btn-sm" href="{esc(it["link"])}" target="_blank" rel="noopener noreferrer">Open entry &nearr;</a></div>'
+        '</li>')
+
+
+def _svc_item_html(m: dict) -> str:
+    text = str(m.get("body") or "")
+    action = bool(m.get("actionRequiredByDateTime")) or ACTION_RE.search(text) is not None
+    aud = audience_of(text)
+    tags = []
+    if action:
+        tags.append('<span class="rv-tag a-action">Action required</span>')
+    if "Admin" in aud:
+        tags.append('<span class="rv-tag a-admin">Admin impact</span>')
+    if "User" in aud:
+        tags.append('<span class="rv-tag a-user">User impact</span>')
+    if str(m.get("severity") or "").lower() in ("high", "critical"):
+        tags.append(f'<span class="rv-tag sev">{esc(str(m.get("severity")).title())} severity</span>')
+    if m.get("isMajorChange"):
+        tags.append('<span class="rv-tag">Major change</span>')
+    tags += [f'<span class="rv-tag product">{esc(s)}</span>' for s in (m.get("services") or [])[:3]]
+    kind = "Incident" if m.get("type") == "incident" else str(m.get("category") or "Message center")
+    when = fmt_day(m.get("lastModifiedDateTime") or m.get("startDateTime")) or "date not provided"
+    cls = "rv-item svc" + (" is-action" if action else (" is-admin" if "Admin" in aud else ""))
+    return (f'<li class="{cls}" data-filterable="1" data-stage="svc" data-products="" data-audience="{esc("|".join(aud))}" '
+            f'data-search="{esc((str(m.get("title")) + " " + text[:400]).lower())}">'
+            f'<div class="rv-tags">{"".join(tags)}</div>'
+            f'<h3>{esc(m.get("title"))}</h3>'
+            f'<p class="rv-desc">{esc(_short(text, 300))}</p>'
+            f'<div class="rv-foot"><span>{esc(when)} &middot; <b>{esc(kind)}</b></span><span>{esc(m.get("id"))}</span></div></li>')
+
+
+def load_services(data_file: Path) -> list[dict] | None:
+    """Optional tenant data produced by scripts/fetch_service_messages.py. None means not connected."""
+    f = data_file.parent / "service-messages.json"
+    if not f.exists():
+        return None
+    try:
+        data = json.loads(f.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return None
+    msgs = data.get("messages", []) if isinstance(data, dict) else []
+    return [m for m in msgs if isinstance(m, dict) and m.get("id") and m.get("title")][:60]
+
+
+def _chips(group: str, label: str, values: list[tuple[str, str]]) -> str:
+    buttons = "".join(
+        f'<button type="button" class="rv-chip" aria-pressed="{"true" if i == 0 else "false"}" data-value="{esc(v)}">{esc(t)}</button>'
+        for i, (v, t) in enumerate(values))
+    return (f'<div class="rv-chiprow" role="group" aria-label="{esc(label)}" data-filter-group="{group}">'
+            f'<span class="rv-chiprow-label">{esc(label)}</span>{buttons}</div>')
 
 
 def radar_page(radar: dict, cfg: dict, site_cfg: dict) -> str:
     base = "../"
     items = radar["items"]
-    products = sorted({p for it in items for p in it["products"] if p != "Microsoft 365"})
-    chips = ['<button type="button" class="radar-chip" aria-pressed="true" data-radar-filter="all">All</button>']
-    chips += [f'<button type="button" class="radar-chip" aria-pressed="false" data-radar-filter="{esc(p)}">{esc(p)}</button>'
-              for p in products]
-    if radar["ok"]:
-        newest = fmt_day(items[0]["published"]) if items and items[0]["published"] else None
-        status = "Public roadmap feed available." + (f" Newest entry: {newest}." if newest else "")
+    services = radar.get("services")
+    stages = [s for s in ["Rolling out", "In development", "Preview", "Launched", "Generally available"]
+              if any(i["stage"] == s for i in items)]
+    prods = sorted({p for i in items for p in i["products"] if p != "Microsoft 365"})
+    audiences = [i for i in items if audience_of(f"{i['title']} {i['summary']}")]
+    rolling = sum(1 for i in items if i["stage"] == "Rolling out")
+    dev = sum(1 for i in items if i["stage"] == "In development")
+    admin_n = sum(1 for i in items if "Admin" in audience_of(f"{i['title']} {i['summary']}"))
+    live = "Feed live" if radar["ok"] else "Feed offline · saved entries"
+    newest = fmt_day(items[0]["published"]) if items and items[0]["published"] else None
+
+    hero = (
+        '<section class="rv-hero" aria-labelledby="rv-title"><div class="rv-scan" aria-hidden="true"></div>'
+        f'<p class="rv-kicker"><span class="rh-led" aria-hidden="true"></span>Microsoft 365 &middot; {esc(live)}</p>'
+        '<h1 id="rv-title">Change <span class="rv-gradient">Radar</span></h1>'
+        '<p class="rv-lede">Planned, rolling-out and recently launched Microsoft 365 changes from the public roadmap. '
+        'Product plans are kept apart from tenant-specific service messages.</p>'
+        '<div class="rv-actions">'
+        f'<a class="rv-btn rv-btn-primary" href="{RADAR_PAGE}" target="_blank" rel="noopener noreferrer">Official roadmap &nearr;</a>'
+        f'<a class="rv-btn rv-btn-ghost" href="{MESSAGE_CENTER_URL}" target="_blank" rel="noopener noreferrer">About Message center &nearr;</a>'
+        '</div>'
+        '<div class="rv-stats">'
+        f'<div class="rv-stat c-cyan"><b>{len(items)}</b><span>Roadmap entries</span></div>'
+        f'<div class="rv-stat c-green"><b>{rolling}</b><span>Rolling out</span></div>'
+        f'<div class="rv-stat c-violet"><b>{dev}</b><span>In development</span></div>'
+        f'<div class="rv-stat c-amber"><b>{admin_n}</b><span>Admin relevant</span></div>'
+        '</div></section>')
+
+    notice = (
+        '<div class="rv-notice">'
+        '<div><span class="rv-ico" aria-hidden="true">1</span><div><strong>Roadmap is not your tenant</strong>'
+        '<p>Entries describe product plans. Timing depends on licences, cloud and rollout settings.</p></div></div>'
+        '<div><span class="rv-ico" aria-hidden="true">2</span><div><strong>Tenant data stays private</strong>'
+        '<p>Message Center posts and service incidents need Microsoft Graph with admin consent. They are not part of this public page.</p></div></div>'
+        '<div><span class="rv-ico" aria-hidden="true">3</span><div><strong>Relevance tags are inferred</strong>'
+        '<p>Admin and user tags come from the wording of each entry, not from an official Microsoft field.</p></div></div>'
+        '</div>')
+
+    if services is None:
+        svc_block = (
+            '<section class="rv-section" aria-labelledby="svc-title"><h2 id="svc-title">Service issues <span class="rv-tag">Not connected</span></h2>'
+            '<p class="rv-sub">Tenant service messages and incidents are only available through Microsoft Graph with an authorised, read-only app. '
+            'This page shows them once the fetch script has produced its data file.</p>'
+            '<div class="rv-connect"><strong>Setup:</strong> create a read-only Entra app with ServiceMessage.Read.All and ServiceHealth.Read.All, '
+            'then run <code>scripts/fetch_service_messages.py</code>. The script header lists each step.</div></section>')
     else:
-        status = f"The feed could not be loaded on the last check ({esc(radar['error'] or 'unknown error')}). Showing the last saved entries."
-    listing = (f'<ul class="radar-list" id="radar-list">{"".join(_radar_item_html(i) for i in items)}</ul>'
-               if items else '<div class="empty">No public roadmap entries are available right now.</div>')
-    body = (
-        '<section class="intro"><p class="kicker">Microsoft 365 &middot; separate section</p>'
-        '<h1>Change Radar</h1>'
-        '<p class="lede">Microsoft 365 features that are planned, rolling out or recently launched, based on the public roadmap.</p></section>'
-        '<aside class="radar-notice" aria-label="How to read this section">'
-        '<p><strong>Public roadmap is not a change in your tenant.</strong> Roadmap entries describe product plans. '
-        'Timing and availability depend on your licences, cloud and rollout settings, and can change.</p>'
-        f'<p>Tenant-specific messages (Message Center posts and service health incidents) are <strong>not</strong> shown here. '
-        f'Check them in the <a href="{MESSAGE_CENTER_URL}" target="_blank" rel="noopener noreferrer">Microsoft 365 Message center</a>. '
-        f'Automated access requires Microsoft Graph permissions: <a href="{GRAPH_COMM_URL}" target="_blank" rel="noopener noreferrer">service communications API</a>.</p></aside>'
-        f'<p class="meta">{status} &middot; <a href="{RADAR_PAGE}" target="_blank" rel="noopener noreferrer">Official Microsoft roadmap</a></p>'
-        f'<div class="radar-chips" role="group" aria-label="Filter by product">{"".join(chips)}</div>'
-        + listing
-        + "<script>" + RADAR_JS + "</script>"
-    )
+        svc_items = "".join(_svc_item_html(m) for m in services)
+        svc_block = (
+            '<section class="rv-section" aria-labelledby="svc-title"><h2 id="svc-title">Service issues <span class="rv-tag s-preview">Tenant feed</span></h2>'
+            f'<p class="rv-sub">{len(services)} messages and incidents from the connected tenant. Impact tags are inferred from the text, so check the admin center before acting.</p>'
+            f'<ul class="rv-list">{svc_items}</ul></section>')
+
+    controls = (
+        '<div class="rv-controls">'
+        '<div class="rv-search"><label class="sr-only" for="rv-search">Search roadmap entries</label>'
+        '<input id="rv-search" type="search" placeholder="Search title, product, feature ID or wording…"></div>'
+        + _chips("product", "Product", [("all", "All")] + [(p, p) for p in prods])
+        + _chips("stage", "Stage", [("all", "All")] + [(s, s) for s in stages])
+        + _chips("audience", "Audience", [("all", "All"), ("Admin", "Admin relevant"), ("User", "User relevant")])
+        + '</div>')
+
+    listing = (
+        f'<p class="rv-count" id="rv-count" aria-live="polite">{len(items)} of {len(items)} entries shown'
+        + (f' &middot; newest {esc(newest)}' if newest else '') + '</p>'
+        + (f'<ul class="rv-list" id="rv-list">{"".join(_radar_item_html(i) for i in items)}</ul>' if items
+           else '<div class="empty">No public roadmap entries are available right now.</div>')
+        + '<div class="empty" id="rv-empty" hidden>No entries match these filters.</div>'
+        + '<p class="rv-legend">Stage colour: green = rolling out, violet = in development, cyan = preview, mint = launched. '
+          'Amber marks entries whose wording mentions admins. Tags are inferred, not official Microsoft classifications.</p>')
+
+    body = hero + notice + svc_block + '<section class="rv-section" aria-labelledby="road-title"><h2 id="road-title">Roadmap entries</h2>' + controls + listing + '</section>' + "<script>" + RADAR_JS + "</script>"
     return _layout(cfg, "Microsoft 365 Change Radar",
                    "Public Microsoft 365 roadmap entries, kept separate from security news and tenant-specific Message Center data.",
                    body, base)
@@ -2122,29 +2323,32 @@ def radar_page(radar: dict, cfg: dict, site_cfg: dict) -> str:
 def _radar_home(radar: dict) -> str:
     cards = []
     for n, it in enumerate(radar["items"][:3], start=1):
-        stage = f'<span class="rh-stage">{esc(it["stage"])}</span>' if it["stage"] else '<span class="rh-stage rh-stage-none">Roadmap</span>'
+        aud = audience_of(f"{it['title']} {it['summary']}")
         product = esc(it["products"][0]) if it["products"] else "Microsoft 365"
         cards.append(
-            f'<li class="rh-card"><span class="rh-idx" aria-hidden="true">0{n}</span>{stage}'
+            f'<li class="rh-card"><div class="rv-tags"><span class="rh-idx">0{n}</span>{_tag_stage(it["stage"])}{_tag_audience(aud)}</div>'
             f'<a class="rh-title" href="{esc(it["link"])}" target="_blank" rel="noopener noreferrer">{esc(it["title"])}</a>'
             f'<span class="rh-meta">{esc(fmt_day(it["published"]) or "date not provided")} &middot; {product}</span></li>')
     if not cards:
-        note = ("The public roadmap feed is unavailable right now. Open the radar for the latest status."
-                if not radar["ok"] else "No public roadmap entries in the latest check.")
+        note = ("The public roadmap feed is unavailable right now." if not radar["ok"]
+                else "No public roadmap entries in the latest check.")
         cards.append(f'<li class="rh-card rh-empty"><span class="rh-meta">{note}</span></li>')
-    status = '<span class="rh-led" aria-hidden="true"></span>' + ("Feed live" if radar["ok"] else "Feed offline · showing saved entries")
+    status = '<span class="rh-led" aria-hidden="true"></span>' + ("Feed live" if radar["ok"] else "Feed offline · saved entries")
+    svc = radar.get("services")
+    svc_note = f'<span class="rv-tag s-preview">{len(svc)} tenant messages</span>' if svc else '<span class="rv-tag">Tenant feed not connected</span>'
     return (
-        '<section class="rh" id="change-radar" aria-labelledby="radar-title">'
-        '<div class="rh-scan" aria-hidden="true"></div>'
+        '<section class="rh" id="change-radar" aria-labelledby="radar-title"><div class="rv-scan" aria-hidden="true"></div>'
         '<div class="rh-head"><div>'
         f'<p class="rh-eyebrow">{status}</p>'
         '<h2 id="radar-title">Microsoft 365 <span>Change Radar</span></h2>'
-        '<p class="rh-sub">Upcoming Microsoft 365 changes from the public roadmap. Separate from security news. '
-        'These are product plans, not confirmed changes in your tenant.</p></div>'
-        '<a class="rh-cta" href="change-radar/index.html">Open the radar <span aria-hidden="true">&rarr;</span></a></div>'
+        '<p class="rh-sub">Upcoming Microsoft 365 changes from the public roadmap, kept separate from security news. '
+        'These are product plans, not confirmed changes in your tenant.</p>'
+        f'<div class="rv-tags" style="margin-top:12px">{svc_note}</div></div>'
+        '<a class="rv-btn rv-btn-primary" href="change-radar/index.html">Open the radar <span aria-hidden="true">&rarr;</span></a></div>'
         f'<ol class="rh-grid">{"".join(cards)}</ol>'
-        '<p class="rh-foot">Message Center posts and service health are tenant-specific and are not shown here.</p>'
+        '<p class="rh-foot">Message Center posts and service incidents are tenant-specific and are not shown on this public page.</p>'
         '</section>')
+
 
 
 def write_site(out: Path, stories: list[dict], cfg: dict, now: datetime, status: dict,
@@ -2293,6 +2497,7 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
     warnings = quality_warnings(stories)
     articles = load_articles(content_dir, warnings)
     radar = load_radar(fixtures, data_file)
+    radar["services"] = load_services(data_file)
     publisher = site_cfg.get("publisher") or {}
     if not all((publisher.get(k) or "").strip() for k in ("name", "address", "email")):
         warnings.append("site.json publisher details incomplete: Impressum page is a placeholder")
@@ -2319,11 +2524,12 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
     digest_src = json.dumps({
         "radar": [[i["id"], i["title"], i["link"], i["published"], i["stage"], i["products"], i["summary"]] for i in radar["items"]],
         "radar_ok": radar["ok"],
+        "services": radar.get("services"),
         "stories": [[s["id"], s["title"], s["summary"], s["published"], s["category"], s["priority"],
                      s["score"], s["image"], [x["url"] for x in s["sources"]]] for s in stories],
         "articles": [[a["section"], a["slug"], a["title"], a["date"], a["summary"], a["_md"]] for a in articles],
         "site": site_cfg,
-        "render": "5.29",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
+        "render": "5.30",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
     }, ensure_ascii=False, sort_keys=True)
     if fixtures is None:
         check_source_links(stories, data_file.parent / "linkcheck.json", now)
