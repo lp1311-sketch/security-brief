@@ -1,0 +1,94 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-display: "Newsreader", Georgia, serif;
+  --font-sans: "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 2px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-critical: var(--critical);
+  --color-high: var(--high);
+  --color-border: var(--border);
+  --color-rule: var(--rule);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+}
+
+:root {
+  --radius: 0.25rem;
+  --background: oklch(0.17 0.035 260);
+  --foreground: oklch(0.97 0.005 250);
+  --card: oklch(0.21 0.04 260);
+  --card-foreground: oklch(0.97 0.005 250);
+  --popover: oklch(0.21 0.04 260);
+  --popover-foreground: oklch(0.97 0.005 250);
+  --primary: oklch(0.72 0.17 245);
+  --primary-foreground: oklch(0.15 0.03 260);
+  --secondary: oklch(0.25 0.04 260);
+  --secondary-foreground: oklch(0.95 0.01 250);
+  --muted: oklch(0.24 0.035 260);
+  --muted-foreground: oklch(0.74 0.025 255);
+  --accent: oklch(0.27 0.06 255);
+  --accent-foreground: oklch(0.97 0.005 250);
+  --destructive: oklch(0.65 0.2 25);
+  --destructive-foreground: oklch(0.98 0 0);
+  --critical: oklch(0.7 0.19 28);
+  --high: oklch(0.8 0.14 75);
+  --border: oklch(0.3 0.04 258);
+  --rule: oklch(0.97 0.005 250 / 85%);
+  --input: oklch(0.3 0.04 258);
+  --ring: oklch(0.72 0.17 245);
+}
+
+@layer base {
+  * { border-color: var(--color-border); }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3 { font-family: var(--font-display); letter-spacing: -0.01em; }
+  ::selection { background: var(--color-primary); color: var(--color-primary-foreground); }
+}
+
+@utility kicker {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+@utility section-rule {
+  border-top: 2px solid var(--color-rule);
+  padding-top: 0.75rem;
+}
+
+@utility prose-brief {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  & p { margin-bottom: 1rem; }
+  & h2 { font-size: 1.5rem; margin: 2.25rem 0 0.75rem; }
+  & a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 3px; }
+}
