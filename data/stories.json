@@ -1060,6 +1060,26 @@
    "instructions_checked": true
   },
   {
+   "id": "0afa3606f14e",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Apple Backports Fix for Exploited CoreGraphics Flaw to Older iPhones and iPads",
+   "link": "https://thehackernews.com/2026/10/apple-backports-fix-for-exploited.html",
+   "published": "2026-10-27T13:59:09+00:00",
+   "summary": "Apple on Monday backported fixes for a high-severity security flaw that was exploited in real-world cyber attacks to older devices. The vulnerability, tracked as CVE-2026-86950 (CVSS score: 8.8), is an out-of-bounds write affecting CoreGraphics that could result in arbitrary code execution when processing a…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqZx9ghfLBFufN5Q4s1dq2U1rXwenlfzU7UsqQfLWn3AEUe5CX3krGuvC6DM4mF2T9MmscvntBNxmgU7UjNOnfJQteKvuAs-4Nq0vJ3TnTkuFy1TRO3ibdh2Ekqi_WqiInvPkXjYlnvrCuYb5mb8neOOqBbmf_034wh8MPOLPKW2Nvvezpb2LFNXPbeUa6/s1600/apple-patch.jpg",
+   "cves": [
+    "CVE-2026-86950"
+   ],
+   "first_seen": "2026-10-27T17:30:04.642910+00:00",
+   "instructions": [
+    "Although Apple makes no mention of any of these flaws being exploited in the wild, it's always a good practice to update the devices to the latest version for optimal protection."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "23872cb1986e",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1402,27 +1422,6 @@
    "instructions_checked": true
   },
   {
-   "id": "1530955429aa",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Eight eMudhra CA Keys Compromised, Triggering Emergency Fixes Across Browsers and Software",
-   "link": "https://thehackernews.com/2026/10/eight-emudhra-ca-keys-compromised.html",
-   "published": "2026-10-20T17:09:53+00:00",
-   "summary": "The private keys of eight eMudhra intermediate certificate authority (CA) certificates are compromised, Mozilla and Google's Chrome Root Program confirms on October 20. An intermediate CA signs the certificates that websites present, so anyone holding one of these keys could issue a certificate for any website that a…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJOWLzgriXXM626bAOaX_LEoNH97Ab_XV4oQ0GxBeY3-PqkdXdcae52-wrl8r0LipTFBsvl4R7Y5j6jFsiG_9V8ZAwHOkAlsZaRcOAswStHhAG1FYm9W6kjA4FmOz0bXgVXO6LyEs9Fv75UrRFphZEzhXodKdTlYzfPK8sqW3DpxKBnD7OFQfqJJ_ay2c/s1600/ecert.jpg",
-   "cves": [],
-   "first_seen": "2026-10-20T18:37:43.612967+00:00",
-   "instructions": [
-    "Chrome will remove the same root in version 43 of its root store and is reviewing the status of eMudhra's other root in its store, emSign Root CA - G1, the Chrome Root Program said, citing the seriousness of the incident.",
-    "No TLS certificate chaining to the six intermediates used for websites had been logged to Certificate Transparency (CT) before Chrome's block, so none could have been trusted by default in Chrome or any other browser that requires CT logging, the Chrome Root Program said.",
-    "Chrome did not need to block the two code-signing certificates, because its TLS verifier will not build a path through an intermediate restricted to code signing, the Chrome Root Program said.",
-    "The Chrome Root Program received the report at 18:05 UTC on October 17 and had a CRLSet update blocking the six TLS intermediates in place by 19:45 UTC."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "f74ce17a74d9",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1498,6 +1497,27 @@
     "To make a stolen token less useful, Wiz also recommends these steps:",
     "Because the secrets leave through GitHub itself, there is no attacker server or outbound connection to block.",
     "Rotate every repository, organization, and environment secret the repository could use."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "ae042a0b53b2",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "GoAhead TLS Flaws Allow Revoked Client Certificates and Enable Session Decryption",
+   "link": "https://thehackernews.com/2026/10/goahead-tls-flaws-allow-revoked-client.html",
+   "published": "2026-10-27T13:59:48+00:00",
+   "summary": "The GoAhead embedded web server loaded a certificate revocation list into its default TLS backend but never turned revocation checking on, so a revoked client certificate could still pass login on affected setups. The flaw is in builds that use the OpenSSL backend with mutual-TLS, where the server checks a client…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6ae8TupuVJ4B0uHZJxwQnaqstuuA42Jwt_Zh7m9RwCBp_IrCYuChUaac6fUphOhpalVEC8tfhGsYGxt1lmswBobM-r-ds6t0uEMSV9HZKT_dYcigHPxGJQo7dcJte96ymjxwSREmiGulG6xPIX4Hx3visDSuyaX2DJ3HRcctAz0Jw1T9ALkCEwZUlMsQ/s1600/goahead.jpg",
+   "cves": [],
+   "first_seen": "2026-10-27T17:30:04.642910+00:00",
+   "instructions": [
+    "To be exploited, the build must use the OpenSSL backend with client certificates required, a trusted certificate authority bundle and issuer checking enabled, and a revocation list configured; the attacker must hold a certificate signed by a trusted authority and listed as revoked.",
+    "The OpenSSL advisory describes revoked client certificates as silently accepted .",
+    "The identifier on the advisory is CVE-2026-115881, rated 9.1 by EmbedThis.",
+    "Which backend and settings a build uses are chosen when the firmware is compiled, so a device owner cannot tell from the outside which apply."
    ],
    "instructions_checked": true
   },
@@ -2643,23 +2663,6 @@
    "image": "https://cms.therecord.media/uploads/nikita_ermilov_xl1_B6_L_Lf_Zys_unsplash_f585d91e5a.jpg",
    "cves": [],
    "first_seen": "2026-10-27T13:35:17.004620+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "1b377ec74e5f",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Nigerian national given 8-year sentence for tax business hacks",
-   "link": "https://therecord.media/nigerian-given-8-year-sentenc-tax-hacks",
-   "published": "2026-10-20T17:14:00+00:00",
-   "summary": "A Nigerian national who worked with a group to hack tax prep businesses and conduct millions of dollars in fraud using customer data was sentenced this week.",
-   "image": "https://cms.therecord.media/uploads/taxes_1_8419a0fb66.jpg",
-   "cves": [],
-   "first_seen": "2026-10-20T17:54:10.534126+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -4409,6 +4412,22 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltc928e4fa76e21bf1/6ad7e1eca34f770597a25359/uae-on-map-with-pin-Zarko_Prusac-shutterstock.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-10-22T05:16:19.244775+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "c64d4188c21b",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "'Aokigahara' Stealer Targets 'Developer Keyrings' & AI Assistants",
+   "link": "https://www.darkreading.com/endpoint-security/aokigahara-stealer-developer-keyrings-ai-assistants",
+   "published": "2026-10-27T16:47:20+00:00",
+   "summary": "The malware's focus on AI tools expands the traditional infostealer playbook to expose a forest of AI sessions, sensitive business data, and developer infrastructure from a single compromised endpoint.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt951105ce06efe522/6ae0c30979732c23e08f3f0c/aokigahara-Carl_Court-GettyImages-931736204jpg..jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-10-27T17:30:04.642910+00:00",
    "instructions": [],
    "instructions_checked": true
   },

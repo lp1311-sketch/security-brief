@@ -31,6 +31,26 @@
    "url": "story/23872cb1986e.html"
   },
   {
+   "id": "0afa3606f14e",
+   "title": "Apple Backports Fix for Exploited CoreGraphics Flaw to Older iPhones and iPads",
+   "summary": "Apple on Monday backported fixes for a high-severity security flaw that was exploited in real-world cyber attacks to older devices. The vulnerability, tracked as…",
+   "priority": "Critical",
+   "category": "Patch Radar",
+   "date": "27 Oct 2026, 13:59 UTC",
+   "sources": "The Hacker News, SecurityWeek, BleepingComputer",
+   "url": "story/0afa3606f14e.html"
+  },
+  {
+   "id": "e20da1a748c1",
+   "title": "CVE-2026-69284 Windows DCOM Server Elevation of Privilege Vulnerability",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "priority": "High",
+   "category": "Patch Radar",
+   "date": "27 Oct 2026, 14:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/e20da1a748c1.html"
+  },
+  {
    "id": "e3a6d8a4cec7",
    "title": "CVE-2026-70161 .NET Elevation of Privilege Vulnerability",
    "summary": "Updated an acknowledgement. This is an informational change only.",
@@ -111,16 +131,6 @@
    "url": "story/db852607b136.html"
   },
   {
-   "id": "bca87c74a608",
-   "title": "CVE-2026-70277 Windows Fast FAT File System Driver Information Disclosure Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "27 Oct 2026, 14:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/bca87c74a608.html"
-  },
-  {
    "id": "308133db32ac",
    "title": "CVE-2026-70007 .NET Framework Remote Code Execution Vulnerability",
    "summary": "Updated an acknowledgement. This is an informational change only.",
@@ -131,14 +141,14 @@
    "url": "story/308133db32ac.html"
   },
   {
-   "id": "e20da1a748c1",
-   "title": "CVE-2026-69284 Windows DCOM Server Elevation of Privilege Vulnerability",
+   "id": "bca87c74a608",
+   "title": "CVE-2026-70277 Windows Fast FAT File System Driver Information Disclosure Vulnerability",
    "summary": "Updated an acknowledgement. This is an informational change only.",
    "priority": "Standard",
    "category": "Patch Radar",
    "date": "27 Oct 2026, 14:00 UTC",
    "sources": "Microsoft Security Response Center",
-   "url": "story/e20da1a748c1.html"
+   "url": "story/bca87c74a608.html"
   },
   {
    "id": "9b6153963ef5",
@@ -389,6 +399,16 @@
    "date": "20 Oct 2026, 20:27 UTC",
    "sources": "The Record",
    "url": "story/a92bc795de6c.html"
+  },
+  {
+   "id": "c64d4188c21b",
+   "title": "'Aokigahara' Stealer Targets 'Developer Keyrings' & AI Assistants",
+   "summary": "The malware's focus on AI tools expands the traditional infostealer playbook to expose a forest of AI sessions, sensitive business data, and developer infrastructure…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "27 Oct 2026, 16:47 UTC",
+   "sources": "Dark Reading",
+   "url": "story/c64d4188c21b.html"
   },
   {
    "id": "1ce9ccf10a03",
@@ -761,6 +781,16 @@
    "url": "story/eeae20ed2a5a.html"
   },
   {
+   "id": "ae042a0b53b2",
+   "title": "GoAhead TLS Flaws Allow Revoked Client Certificates and Enable Session Decryption",
+   "summary": "The GoAhead embedded web server loaded a certificate revocation list into its default TLS backend but never turned revocation checking on, so a revoked client…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "27 Oct 2026, 13:59 UTC",
+   "sources": "The Hacker News",
+   "url": "story/ae042a0b53b2.html"
+  },
+  {
    "id": "37d79b832298",
    "title": "Malicious apps prey on Russians’ anxiety about fuel prices, drone strikes",
    "summary": "Cybercriminals are stuffing infostealer malware into bogus apps aimed at tracking gas prices, police activity, drone strikes and other information of concern to average…",
@@ -811,16 +841,6 @@
    "url": "story/928eba252ebe.html"
   },
   {
-   "id": "c99aa3fd55df",
-   "title": "iOS, macOS 27.2 Patch 286 Bugs; Fix for Exploited Flaw Backported to iOS 18",
-   "summary": "Apple patched 286 vulnerabilities in iOS and macOS 27.2 and brought the fix for an exploited CoreGraphics zero-day to older iPhones. The post iOS, macOS 27.2 Patch 286…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "27 Oct 2026, 11:49 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/c99aa3fd55df.html"
-  },
-  {
    "id": "3fba9192c925",
    "title": "Keystone to Destroy 18,835 Hardware Wallets After Hackers Steal Device Verification Key",
    "summary": "An attacker who gained access to Keystone's website obtained the key that its hardware wallets use to prove they are genuine, the company said in a statement on October…",
@@ -839,16 +859,6 @@
    "date": "27 Oct 2026, 11:32 UTC",
    "sources": "The Hacker News",
    "url": "story/cf5c346fcefd.html"
-  },
-  {
-   "id": "181378638961",
-   "title": "Apple backports CoreGraphics zero-day patches to older iPhones",
-   "summary": "​Apple has backported security patches released last month to older iPhones and iPads, addressing a zero-day bug exploited in \"extremely sophisticated\" targeted attacks…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "27 Oct 2026, 10:36 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/181378638961.html"
   },
   {
    "id": "177d2de823fd",
@@ -949,36 +959,6 @@
    "date": "26 Oct 2026, 18:12 UTC",
    "sources": "The Hacker News",
    "url": "story/961277245249.html"
-  },
-  {
-   "id": "f722b9fc379b",
-   "title": "Serbian autocrat loses election following widespread reports of digital repression",
-   "summary": "Serbian strongman leader Aleksandar Vučić on Sunday admitted defeat in his race for prime minister, a loss that follows a series of incidents of digital repression that…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "26 Oct 2026, 17:30 UTC",
-   "sources": "The Record",
-   "url": "story/f722b9fc379b.html"
-  },
-  {
-   "id": "5d6b2a0bb6b0",
-   "title": "Ukraine disputes Musk's claims of Starlink misuse as military connectivity restored",
-   "summary": "Ukrainian Defense Minister Yevhen Khmara said Saturday that Starlink and Starshield connectivity had been restored.",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "26 Oct 2026, 16:40 UTC",
-   "sources": "The Record",
-   "url": "story/5d6b2a0bb6b0.html"
-  },
-  {
-   "id": "3e53d355cefd",
-   "title": "Dutch police extradite Chinese national accused of laundering Cambodian investment scam funds",
-   "summary": "44-year-old Zheng Zhao was allegedly a key money-launderer working with a group of scammers who called U.S.-based victims and urged them to invest in fictitious…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "26 Oct 2026, 16:37 UTC",
-   "sources": "The Record",
-   "url": "story/3e53d355cefd.html"
   },
   {
    "id": "0894723045c0",
@@ -1429,6 +1409,36 @@
    "date": "20 Oct 2026, 18:32 UTC",
    "sources": "The Record",
    "url": "story/29ac1c4b3b83.html"
+  },
+  {
+   "id": "f722b9fc379b",
+   "title": "Serbian autocrat loses election following widespread reports of digital repression",
+   "summary": "Serbian strongman leader Aleksandar Vučić on Sunday admitted defeat in his race for prime minister, a loss that follows a series of incidents of digital repression that…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "26 Oct 2026, 17:30 UTC",
+   "sources": "The Record",
+   "url": "story/f722b9fc379b.html"
+  },
+  {
+   "id": "5d6b2a0bb6b0",
+   "title": "Ukraine disputes Musk's claims of Starlink misuse as military connectivity restored",
+   "summary": "Ukrainian Defense Minister Yevhen Khmara said Saturday that Starlink and Starshield connectivity had been restored.",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "26 Oct 2026, 16:40 UTC",
+   "sources": "The Record",
+   "url": "story/5d6b2a0bb6b0.html"
+  },
+  {
+   "id": "3e53d355cefd",
+   "title": "Dutch police extradite Chinese national accused of laundering Cambodian investment scam funds",
+   "summary": "44-year-old Zheng Zhao was allegedly a key money-launderer working with a group of scammers who called U.S.-based victims and urged them to invest in fictitious…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "26 Oct 2026, 16:37 UTC",
+   "sources": "The Record",
+   "url": "story/3e53d355cefd.html"
   },
   {
    "id": "d7e589c62a2d",
@@ -2479,26 +2489,6 @@
    "date": "20 Oct 2026, 18:11 UTC",
    "sources": "BleepingComputer",
    "url": "story/2bcaf37a740b.html"
-  },
-  {
-   "id": "1b377ec74e5f",
-   "title": "Nigerian national given 8-year sentence for tax business hacks",
-   "summary": "A Nigerian national who worked with a group to hack tax prep businesses and conduct millions of dollars in fraud using customer data was sentenced this week.",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "20 Oct 2026, 17:14 UTC",
-   "sources": "The Record",
-   "url": "story/1b377ec74e5f.html"
-  },
-  {
-   "id": "1530955429aa",
-   "title": "Eight eMudhra CA Keys Compromised, Triggering Emergency Fixes Across Browsers and Software",
-   "summary": "The private keys of eight eMudhra intermediate certificate authority (CA) certificates are compromised, Mozilla and Google's Chrome Root Program confirms on October 20…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "20 Oct 2026, 17:09 UTC",
-   "sources": "The Hacker News",
-   "url": "story/1530955429aa.html"
   }
  ]
 }
