@@ -259,33 +259,16 @@ def md_to_html(md: str) -> str:
     out: list[str] = []
     para: list[str] = []
     items: list[str] = []
-    list_kind: str | None = None
     code: list[str] = []
     in_code = False
-    heading_index = 0
 
     def flush() -> None:
-        nonlocal list_kind
         if para:
             out.append("<p>" + inline_md(" ".join(para)) + "</p>")
             para.clear()
         if items:
-            tag = list_kind or "ul"
-            cls = ' class="action-list"' if tag == "ol" else ""
-            out.append("<" + tag + cls + ">" + "".join(
-                f"<li>{inline_md(i)}</li>" for i in items) + f"</{tag}>")
+            out.append("<ul>" + "".join(f"<li>{inline_md(i)}</li>" for i in items) + "</ul>")
             items.clear()
-            list_kind = None
-
-    def add_item(kind: str, text: str) -> None:
-        nonlocal list_kind
-        if para:
-            out.append("<p>" + inline_md(" ".join(para)) + "</p>")
-            para.clear()
-        if items and list_kind != kind:
-            flush()
-        list_kind = kind
-        items.append(text)
 
     for raw in md.splitlines():
         line = raw.rstrip()
@@ -309,17 +292,14 @@ def md_to_html(md: str) -> str:
         m = re.match(r"^(#{1,3})\s+(.*)$", line)
         if m:
             flush()
-            heading_index += 1
             level = min(len(m.group(1)) + 1, 4)
-            slug = re.sub(r"[^a-z0-9]+", "-", m.group(2).lower()).strip("-")[:42] or "section"
-            heading_id = f"section-{heading_index}-{slug}"
-            out.append(f'<h{level} id="{heading_id}">{inline_md(m.group(2))}</h{level}>')
+            out.append(f"<h{level}>{inline_md(m.group(2))}</h{level}>")
             continue
         if re.match(r"^\s*[-*]\s+", line):
-            add_item("ul", re.sub(r"^\s*[-*]\s+", "", line))
-            continue
-        if re.match(r"^\s*\d+[.)]\s+", line):
-            add_item("ol", re.sub(r"^\s*\d+[.)]\s+", "", line))
+            if para:
+                out.append("<p>" + inline_md(" ".join(para)) + "</p>")
+                para.clear()
+            items.append(re.sub(r"^\s*[-*]\s+", "", line))
             continue
         if line.startswith(">"):
             flush()
@@ -332,19 +312,6 @@ def md_to_html(md: str) -> str:
     if in_code:
         out.append("<pre><code>" + html.escape("\n".join(code)) + "</code></pre>")
     return "\n".join(out)
-
-
-def article_toc(body: str) -> str:
-    headings = re.findall(r'<h[34] id="([^"]+)">(.*?)</h[34]>', body)
-    if len(headings) < 2:
-        return ""
-    links = []
-    for hid, label in headings:
-        text = html.unescape(re.sub(r"<[^>]+>", "", label))
-        links.append(f'<a href="#{esc(hid)}">{esc(text)}</a>')
-    return ('<nav class="article-toc" aria-label="On this page">'
-            '<span class="article-toc-label">On this page</span><div class="article-toc-links">'
-            + "".join(links) + '</div></nav>')
 
 
 def _article_candidates(content_dir: Path):
@@ -387,7 +354,6 @@ def load_articles(content_dir: Path, warnings: list[str]) -> list[dict]:
             arts.append({
                 "section": sec, "slug": f.stem, "title": meta["title"], "date": date.date().isoformat(),
                 "summary": meta.get("summary", ""), "body": md_to_html(body), "_md": body,
-                "ai_assisted": str(meta.get("ai_assisted", "false")).lower() == "true",
             })
     arts.sort(key=lambda a: a["date"], reverse=True)
     return arts
@@ -825,23 +791,6 @@ def build_story(items: list[dict], kev: set[str], kev_checked: bool, now: dateti
     kev_hit = bool(set(cves) & kev) if kev_checked else False
     exploited = bool(EXPLOITED_RE.search(text))
     tags = story_tags(text, prio, category, kev_hit, exploited, bool(cves))
-    official_exploit_sources = sorted({
-        i["source_name"] for i in items
-        if i.get("official") and i.get("source_type") != "vendor_blog"
-        and EXPLOITED_RE.search(f"{i['title']} {i['summary']}")
-    })
-    priority_basis = []
-    if kev_hit:
-        priority_basis.append("CISA KEV listing: " + ", ".join(sorted(set(cves) & kev)))
-    if official_exploit_sources:
-        priority_basis.append("Official source reports exploitation: " + ", ".join(official_exploit_sources))
-    if prio == "High":
-        priority_basis.append(f"Editorial attention score {score} reached the High threshold (not CVSS)")
-    if prio == "Standard":
-        if kev_checked:
-            priority_basis.append("No KEV or official-exploitation trigger; editorial score below High threshold")
-        else:
-            priority_basis.append("No official-exploitation trigger; KEV lookup unavailable, so this label is provisional")
     return {
         "id": head["id"],
         "title": head["title"],
@@ -853,7 +802,6 @@ def build_story(items: list[dict], kev: set[str], kev_checked: bool, now: dateti
         "priority": prio,
         "score": score,
         "reasons": reasons,
-        "priority_basis": priority_basis,
         "cves": cves,
         "vendors": sorted(set().union(*(vendors_in(f"{i['title']} {i['summary']}") for i in items))),
         "kev": sorted(set(cves) & kev) if kev_checked else [],
@@ -986,27 +934,6 @@ figcaption{font-size:.8rem;color:var(--muted);margin-top:8px}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.card:hover{transform:none}}
 """
 
-EDITORIAL_CSS = """
-/* Consistent editorial shell for every page type. */
-.site-header .brand{font-size:1.16rem;letter-spacing:-.025em;text-shadow:0 0 22px color-mix(in srgb,var(--accent) 28%,transparent)}
-.logo-img{width:38px;height:38px;border-radius:11px;filter:drop-shadow(0 0 8px color-mix(in srgb,var(--accent) 55%,transparent))}
-.analysis-article,.story-page{background:color-mix(in srgb,var(--surface) 72%,transparent);border:1px solid var(--line);border-radius:24px;padding:clamp(16px,3vw,34px);box-shadow:var(--shadow)}
-.analysis-article{max-width:1080px;margin:0 auto}
-.story-page{max-width:900px;margin:0 auto}
-.story-page>h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.04;margin-top:12px}
-.story-page>figure{margin:28px 0 34px;padding:10px;background:var(--surface-2);border:1px solid var(--line);border-radius:20px}
-.story-page>figure img{border-radius:14px;width:100%;max-height:520px;object-fit:cover}
-.story-page>h2{font-size:1.25rem;padding-top:8px}
-.analysis-heading .article-title{max-width:780px}
-.analysis-prose{max-width:780px}
-.analysis-prose blockquote,.analysis-prose .notice{border-left:3px solid var(--accent);background:var(--surface-2);padding:14px 18px;border-radius:0 12px 12px 0}
-.analysis-prose a,.story-page a{text-underline-offset:3px}
-.page-surface .analysis-back{border-top:1px solid var(--line);padding-top:20px;margin-top:38px}
-.freshness{display:inline-flex;align-items:center;min-height:28px;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 11px}
-@media(max-width:640px){.site-header .brand{font-size:1.02rem}.logo-img{width:34px;height:34px}.analysis-article,.story-page{padding:14px;border-radius:18px}.freshness{border-radius:12px;display:block}}
-
-"""
-
 THEME_JS = """(function(){
 var root=document.documentElement,dark=false,saved=null;
 try{saved=localStorage.getItem('sb-theme')}catch(e){}
@@ -1033,9 +960,9 @@ def _layout(cfg: dict, title: str, desc: str, body: str, base: str, image: str |
     links.append(f'<a href="{base}stories/index.html">All stories</a>')
     links.append(f'<a href="{base}briefings/index.html">Analysis</a>')
     links.append(f'<a href="{base}patch-tuesday/index.html">Patch Tuesday</a>')
+    links.append(f'<a href="{base}change-radar/index.html">Change Radar</a>')
     links.insert(0, f'<a href="{base}today/index.html">Today</a>')
-    links.insert(1, f'<a href="{base}radar/index.html">My Radar</a>')
-    links.insert(2, f'<a href="{base}saved/index.html">Saved</a>')
+    links.insert(1, f'<a href="{base}saved/index.html">Saved</a>')
     nav = "".join(links)
     return f"""<!doctype html>
 <html lang="en">
@@ -1082,57 +1009,17 @@ def _save_button(s: dict) -> str:
             f'{icon}<span>Save</span></button>')
 
 
-def _filter_data(s: dict) -> str:
-    d = _date(s.get("published"))
-    published = d.isoformat() if d else ""
-    rank = {"Critical": 0, "High": 1, "Standard": 2}.get(s.get("priority"), 3)
-    important = s.get("priority") in {"Critical", "High"} or bool(set(s.get("tags", [])) & {"exploited", "patch-now"})
-    return (f'data-tags="{esc(" ".join(s.get("tags", [])))}" data-search="{esc(search_text(s))}" '
-            f'data-published="{esc(published)}" data-priority="{esc(s.get("priority", "Standard"))}" '
-            f'data-priority-rank="{rank}" data-score="{int(s.get("score", 0))}" '
-            f'data-important="{str(important).lower()}"')
-
-
-def priority_summary(s: dict) -> str:
-    basis = s.get("priority_basis", [])
-    if s.get("kev"):
-        return "KEV-listed: " + ", ".join(s["kev"])
-    official = next((x for x in basis if x.startswith("Official source reports exploitation:")), None)
-    if official:
-        return official
-    if s.get("priority") == "High":
-        return f"Editorial attention score {s.get('score', 0)}; not CVSS"
-    if not s.get("kev_checked", False):
-        return "No trigger found in available data; KEV check unavailable"
-    return "No elevated-priority trigger identified in feed data"
-
-
-def evidence_label(s: dict) -> str:
-    if s.get("kev"):
-        return "Evidence: CISA KEV listing · verify affected versions"
-    if any(x.startswith("Official source reports exploitation:") for x in s.get("priority_basis", [])):
-        return "Evidence: exploitation reported by an official source"
-    if "exploited" in s.get("tags", []):
-        return "Signal: exploitation reported in a source · verify independently"
-    if s.get("cves"):
-        return "Signal: CVE named · check vendor advisory for fixes"
-    return "Context: editorial attention score, not confirmed exposure"
-
-
-def _card(s: dict, base: str = "") -> str:
+def _card(s: dict) -> str:
     img = s["image"] or fallback_cover(s)
     names = ", ".join(dict.fromkeys(x["name"] for x in s["sources"]))
     prio = esc(s["priority"])
-    fb = f' data-fallback="{esc(fallback_cover(s))}" onerror="this.onerror=null;this.src=this.dataset.fallback"'
-    attrs = _filter_data(s)
-    return f"""<article class="card prio-{prio}" {attrs}>
-<a class="card-media" href="{base}story/{esc(s['id'])}.html" tabindex="-1" aria-hidden="true"><img src="{esc(img)}"{fb} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360"><span class="badge {prio}">{prio}</span></a>
+    fb = f''' data-fallback="{esc(fallback_cover(s))}" onerror="this.onerror=null;this.src=this.dataset.fallback"'''
+    return f"""<article class="card prio-{prio}" data-tags="{esc(' '.join(s['tags']))}" data-search="{esc(search_text(s))}">
+<a class="card-media" href="story/{esc(s['id'])}.html" tabindex="-1" aria-hidden="true"><img src="{esc(img)}"{fb} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360"><span class="badge {prio}">{prio}</span></a>
 <div class="card-body">
 <p class="kicker"><span class="cat">{esc(CATEGORIES[s['category']][0])}</span> <span class="type">{esc(s.get('content_type', 'News'))}</span></p>
-<h3><a href="{base}story/{esc(s['id'])}.html">{esc(s['title'])}</a></h3>
-<p class="card-evidence">{esc(evidence_label(s))}</p>
+<h3><a href="story/{esc(s['id'])}.html">{esc(s['title'])}</a></h3>
 <p class="summary">{esc(_short(s['summary'], 170))}</p>
-<p class="priority-note"><strong>Editorial priority:</strong> {esc(priority_summary(s))}</p>
 <p class="meta">{esc(names)} &middot; {esc(fmt_date(s['published']))}</p>
 {_save_button(s)}
 </div>
@@ -1143,16 +1030,13 @@ def _hero(s: dict) -> str:
     img = s["image"] or fallback_cover(s)
     names = ", ".join(dict.fromkeys(x["name"] for x in s["sources"]))
     prio = esc(s["priority"])
-    fb = f' data-fallback="{esc(fallback_cover(s))}" onerror="this.onerror=null;this.src=this.dataset.fallback"'
-    attrs = _filter_data(s)
-    return f"""<section class="hero" aria-labelledby="hero-title" {attrs}>
+    fb = f''' data-fallback="{esc(fallback_cover(s))}" onerror="this.onerror=null;this.src=this.dataset.fallback"'''
+    return f"""<section class="hero" aria-labelledby="hero-title" data-tags="{esc(' '.join(s['tags']))}" data-search="{esc(search_text(s))}">
 <a class="hero-media" href="story/{esc(s['id'])}.html" tabindex="-1" aria-hidden="true"><img src="{esc(img)}"{fb} alt="" loading="eager" referrerpolicy="no-referrer" width="640" height="360"></a>
 <div class="hero-body">
 <p class="kicker"><span class="badge {prio}">{prio}</span><span class="cat">{esc(CATEGORIES[s['category']][0])}</span></p>
 <h2 id="hero-title"><a href="story/{esc(s['id'])}.html">{esc(s['title'])}</a></h2>
-<p class="hero-evidence">{esc(evidence_label(s))}</p>
 <p class="summary">{esc(_short(s['summary'], 240))}</p>
-<p class="priority-note"><strong>Editorial priority:</strong> {esc(priority_summary(s))}</p>
 <p class="meta">{esc(names)} &middot; {esc(fmt_date(s['published']))}</p>
 <div class="actions"><a class="btn" href="story/{esc(s['id'])}.html">Read the brief &rarr;</a>{_save_button(s)}</div>
 </div>
@@ -1219,48 +1103,19 @@ EXTRA_CSS = """
 """
 
 
-def _newsletter_teaser(site_cfg: dict) -> str:
-    """Homepage-only signal card: nothing is rendered without a configured HTTPS signup link."""
-    signup_url = str(site_cfg.get("newsletter_signup_url") or "").strip()
-    parsed = urlparse(signup_url)
-    if parsed.scheme != "https" or not parsed.netloc:
-        return ""
-    return (
-        '<aside class="signal-teaser" aria-label="Weekly Security Brief newsletter">'
-        '<span class="signal-teaser-mark" aria-hidden="true">SB<span class="signal-teaser-dot"></span></span>'
-        '<span class="signal-teaser-copy"><strong>The Weekly Signal</strong>'
-        '<small>Source-led insight, practical checks and less noise.</small></span>'
-        f'<a class="signal-teaser-link" href="{esc(signup_url)}" target="_blank" '
-        'rel="noopener noreferrer" aria-label="Join The Weekly Signal newsletter on Mailchimp">'
-        'Get the signal <span aria-hidden="true">&rarr;</span></a>'
-        '</aside>'
-    )
-
-
 def _newsletter(site_cfg: dict, base: str) -> str:
-    signup_url = (site_cfg.get("newsletter_signup_url") or "").strip()
-    parsed = urlparse(signup_url)
-    if parsed.scheme == "https" and parsed.netloc:
-        return f"""<section class="subscribe" id="newsletter" aria-labelledby="subscribe-title">
-<div class="subscribe-copy"><p class="subscribe-eyebrow"><span class="subscribe-pulse" aria-hidden="true"></span> THE WEEKLY SIGNAL</p>
-<h2 id="subscribe-title">The signal behind the headlines.</h2>
-<p>Security stories with context, original analysis, and practical checks. Join the list on Mailchimp; new editions are sent when ready.</p>
-<div class="subscribe-points"><span>Free to join</span><span>No automatic feed-dump</span><span>Unsubscribe anytime</span></div></div>
-<div class="subscribe-action"><a class="subscribe-btn" href="{esc(signup_url)}" target="_blank" rel="noopener noreferrer">Join The Weekly Signal <span aria-hidden="true">&rarr;</span></a>
-<p>Signup is handled securely by Mailchimp. See the <a href="{base}datenschutz.html">privacy notice</a>.</p></div>
-</section>"""
     action = (site_cfg.get("newsletter_form_action") or "").strip()
     if not action.startswith("https://"):
-        return ""
-    return f"""<section class="subscribe" id="newsletter" aria-labelledby="subscribe-title">
-<div class="subscribe-copy"><p class="subscribe-eyebrow"><span class="subscribe-pulse" aria-hidden="true"></span> THE WEEKLY SIGNAL</p>
-<h2 id="subscribe-title">The signal behind the headlines.</h2>
-<p>Security stories with context, original analysis, and practical checks. Join the list on Mailchimp; new editions are sent when ready.</p>
-<div class="subscribe-points"><span>Free to join</span><span>No automatic feed-dump</span><span>Unsubscribe anytime</span></div></div>
-<div class="subscribe-action"><form action="{esc(action)}" method="post" class="subscribe-form">
-<label for="nl-email" class="visually-hidden">Email address</label><input id="nl-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com">
-<button type="submit">Join the briefing <span aria-hidden="true">&rarr;</span></button></form>
-<p>Signup is handled securely by the newsletter provider. See the <a href="{base}datenschutz.html">privacy notice</a>.</p></div>
+        return ""  # no provider configured: no form is shown
+    return f"""<section class="subscribe" aria-labelledby="subscribe-title">
+<h2 id="subscribe-title">Get the analysis by email</h2>
+<p class="summary">The weekly M365 and Entra briefing and the Patch Tuesday notes, written by the author.</p>
+<form action="{esc(action)}" method="post" class="subscribe-form">
+<label for="nl-email" class="visually-hidden">Email address</label>
+<input id="nl-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com">
+<button type="submit">Subscribe</button>
+</form>
+<p class="meta">You can unsubscribe at any time. <a href="{base}datenschutz.html">Privacy notice</a></p>
 </section>"""
 
 
@@ -1306,43 +1161,30 @@ def article_cover(a: dict) -> str:
     accent = SECTION_COLORS.get(a.get("section"), "#5eead4")
     label = SECTIONS.get(a.get("section"), "Analysis")
     title = a.get("title") or label
-    stop = {"this", "that", "with", "from", "what", "where", "when", "your", "into", "over", "under", "after", "before", "the", "and", "for", "are", "how", "week", "weeks"}
-    words = [w for w in re.findall(r"[A-Za-z0-9-]+", title) if len(w) > 3 and w.lower() not in stop]
-    keywords = "  /  ".join(w.upper() for w in words[:3]) or label.upper()
-    digest = int(hashlib.sha256(title.encode("utf-8")).hexdigest()[:12], 16)
-    cx, cy = 430 + digest % 95, 158 + (digest >> 7) % 74
-    nodes = []
-    for i in range(5):
-        x = 310 + ((digest >> (i * 7)) % 275)
-        y = 65 + ((digest >> (i * 5 + 3)) % 225)
-        nodes.append((x, y))
-    paths = "".join(
-        f'<path d="M {nodes[i][0]} {nodes[i][1]} L {nodes[(i+1)%5][0]} {nodes[(i+1)%5][1]}" '
-        f'fill="none" stroke="{accent if i%2==0 else "#38bdf8"}" stroke-width="1.4" opacity=".56"/>'
-        for i in range(5))
-    dots = "".join(
-        f'<circle cx="{x}" cy="{y}" r="{4 if i==0 else 2.7}" fill="{accent if i%2==0 else "#38bdf8"}"/>'
-        for i, (x,y) in enumerate(nodes))
-    grid = "".join(f'<path d="M{x} 0V360"/>' for x in range(0,641,64))
-    grid += "".join(f'<path d="M0 {y}H640"/>' for y in range(0,361,60))
+    lines = textwrap.wrap(title, 26) or [title]
+    if len(lines) > 3:
+        lines = lines[:3]
+        lines[2] = lines[2][:23].rstrip() + "..."
+    text = "".join(
+        f'<text x="48" y="{170 + i * 44}" fill="#f1f5f9" font-family="Arial,Helvetica,sans-serif" '
+        f'font-size="32" font-weight="700">{esc(t)}</text>' for i, t in enumerate(lines))
+    grid = "".join(f'<line x1="{x}" y1="0" x2="{x}" y2="360"/>' for x in range(0, 641, 64))
+    grid += "".join(f'<line x1="0" y1="{y}" x2="640" y2="{y}"/>' for y in range(0, 361, 60))
     svg = (
         '<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">'
-        '<defs><radialGradient id="glow" cx="78%" cy="46%" r="75%"><stop offset="0" stop-color="#123d42"/><stop offset="1" stop-color="#080d16"/></radialGradient>'
-        '<linearGradient id="edge" x1="0" x2="1"><stop stop-color="' + accent + '"/><stop offset="1" stop-color="#38bdf8"/></linearGradient></defs>'
-        '<rect width="640" height="360" fill="url(#glow)"/>'
-        f'<g stroke="#ffffff" stroke-width=".55" opacity=".065">{grid}</g>'
-        '<path d="M0 276H198L235 239H322" fill="none" stroke="url(#edge)" stroke-width="2" opacity=".76"/>'
-        '<path d="M640 88H528L494 122H405" fill="none" stroke="url(#edge)" stroke-width="2" opacity=".72"/>'
-        f'{paths}{dots}'
-        f'<circle cx="{cx}" cy="{cy}" r="62" fill="none" stroke="{accent}" stroke-width="1" opacity=".22"/>'
-        f'<circle cx="{cx}" cy="{cy}" r="43" fill="none" stroke="#38bdf8" stroke-width="1" opacity=".34"/>'
-        f'<circle cx="{cx}" cy="{cy}" r="24" fill="{accent}" opacity=".12"/>'
-        f'<rect x="35" y="42" width="5" height="33" rx="2.5" fill="{accent}"/>'
-        f'<text x="54" y="57" fill="{accent}" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" letter-spacing="2.5">SECURITY BRIEF  /  {esc(label.upper())}</text>'
-        f'<text x="54" y="113" fill="#f1f5f9" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="600" letter-spacing="1.5">{esc(keywords[:49])}</text>'
-        '<text x="54" y="319" fill="#8b9aab" font-family="Arial,Helvetica,sans-serif" font-size="11" letter-spacing="2.1">FIELD SIGNAL  ·  VERIFIED SOURCES  ·  DEFENSIVE ACTION</text>'
-        '<path d="M552 286h42m-21-21v42" stroke="#ffffff" stroke-width="1" opacity=".24"/>'
-        '</svg>'
+        '<rect width="640" height="360" fill="#0b0f14"/>'
+        f'<g stroke="#18202b" stroke-width="1">{grid}</g>'
+        f'<path d="M 360 320 Q 470 40 612 110" fill="none" stroke="{accent}" stroke-width="1.5" '
+        'stroke-dasharray="4 6" opacity=".75"/>'
+        f'<circle cx="612" cy="110" r="5" fill="{accent}"/>'
+        '<circle cx="596" cy="36" r="6" fill="#22c55e"/><circle cx="618" cy="36" r="6" fill="#ef4444" opacity=".85"/>'
+        f'<rect width="8" height="360" fill="{accent}"/>'
+        f'<text x="48" y="112" fill="{accent}" font-family="Arial,Helvetica,sans-serif" font-size="16" '
+        f'font-weight="700" letter-spacing="3">{esc(label.upper())}</text>'
+        f'{text}'
+        '<text x="48" y="318" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="13" '
+        'letter-spacing="2">SECURITY BRIEF  |  ANALYSIS</text>'
+        "</svg>"
     )
     return "data:image/svg+xml;charset=utf-8," + quote(svg)
 
@@ -1361,33 +1203,21 @@ def _article_card(a: dict, href: str) -> str:
 
 
 def article_page(a: dict, cfg: dict, site_cfg: dict) -> str:
-    base = "../"  # Article is directly inside docs/<section>/.
+    base = "../../"
     label = SECTIONS[a["section"]]
-    lede = f'<p class="analysis-lede">{esc(a["summary"])}</p>' if a["summary"] else ""
-    plain_body = re.sub(r"<[^>]+>", " ", a["body"])
-    word_count = len(re.findall(r"[\w’'-]+", html.unescape(plain_body)))
-    read_minutes = max(1, round(word_count / 220))
+    lede = f'<p class="lede">{esc(a["summary"])}</p>' if a["summary"] else ""
     header = (
-        '<header class="analysis-hero" aria-labelledby="article-title">'
-        f'<div class="analysis-visual"><img src="{esc(article_cover(a))}" alt="" width="640" height="360">'
-        '<span class="visual-corner visual-corner-a" aria-hidden="true"></span>'
-        '<span class="visual-corner visual-corner-b" aria-hidden="true"></span>'
-        '<span class="visual-caption">SIGNAL / ANALYSIS / DEFENSE</span></div>'
-        '<div class="analysis-heading">'
-        f'<p class="analysis-eyebrow"><span class="analysis-live-dot" aria-hidden="true"></span>'
-        f'{"AI-ASSISTED · EDITOR-REVIEWED ANALYSIS" if a.get("ai_assisted") else "ORIGINAL SECURITY ANALYSIS"}'
-        f'<span class="analysis-separator">/</span>{esc(label.upper())}</p>'
-        f'<h1 id="article-title" class="article-title">{esc(a["title"])}</h1>{lede}'
-        f'<div class="analysis-meta"><span>{esc(fmt_day(a["date"]))}</span><span>{read_minutes} min read</span>'
-        '<span>Sources linked below</span></div></div></header>'
+        '<section class="hero article-hero" aria-labelledby="article-title">'
+        f'<div class="hero-media"><img src="{esc(article_cover(a))}" alt="" width="640" height="360"></div>'
+        f'<div class="hero-body"><p class="kicker"><span class="cat">{esc(label)}</span>'
+        f'<span class="type">{esc(fmt_day(a["date"]))}</span></p>'
+        f'<h1 id="article-title" class="article-title">{esc(a["title"])}</h1>{lede}</div></section>'
     )
-    toc = article_toc(a["body"])
     body = (
-        '<article class="analysis-article page-surface">' + header + toc
-        + '<div class="prose analysis-prose">' + a["body"]
-        + f'<p class="analysis-back"><a class="btn" href="index.html">&larr; All {esc(label)}</a> '
-        '<a class="text-link" href="../index.html">Back to home</a></p>'
-        + '</div></article>'
+        header
+        + '<article class="prose">' + a["body"]
+        + f'<p class="meta"><a href="index.html">&larr; All {esc(label)}</a> &middot; <a href="../../index.html">Home</a></p>'
+        + "</article>"
     )
     body += _donate(site_cfg, base) + _newsletter(site_cfg, base)
     return _layout(cfg, a["title"], _short(a["summary"] or a["title"], 150), body, base)
@@ -1511,7 +1341,7 @@ def cve_table(rows: list[dict]) -> str:
 def _article_hero(a: dict, href: str) -> str:
     return (f'<section class="hero" aria-labelledby="hero-title"><a class="hero-media" href="{esc(href)}" tabindex="-1" aria-hidden="true">'
             f'<img src="{esc(article_cover(a))}" alt="" loading="eager" width="640" height="360"></a>'
-            f'<div class="hero-body"><p class="kicker"><span class="cat">{esc('AI-assisted · reviewed' if a.get('ai_assisted') else SECTIONS[a["section"]])}</span></p>'
+            f'<div class="hero-body"><p class="kicker"><span class="cat">{esc(SECTIONS[a["section"]])}</span></p>'
             f'<h2 id="hero-title"><a href="{esc(href)}">{esc(a["title"])}</a></h2>'
             f'<p class="summary">{esc(_short(a["summary"] or "", 240))}</p>'
             f'<p class="meta">{esc(fmt_day(a["date"]))}</p>'
@@ -1634,143 +1464,72 @@ DESIGN_CSS = """
 .stats .stat:nth-child(2){animation-delay:-2s}.stats .stat:nth-child(3){animation-delay:-4s}.stats .stat:nth-child(4){animation-delay:-6s}
 @media (prefers-reduced-motion:reduce){.card,.card:hover,.hero::before,.logo-img,.stats .stat{transition:none;transform:none;animation:none}}
 """
-EXTRA_CSS += """
-.filter-tools{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:-18px 0 12px}
-.filter-tools label{display:flex;flex-direction:column;gap:6px;color:var(--muted);font-size:.78rem;font-weight:650}
-.filter-tools select{min-height:42px;width:100%;padding:8px 11px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);font:inherit;font-size:.88rem}
-.filter-tools select:focus-visible,.important-only input:focus-visible{outline:3px solid color-mix(in srgb,var(--accent) 55%,transparent);outline-offset:2px}
-.filter-tools .important-only{display:flex;flex-direction:row;align-items:center;gap:9px;padding:9px 12px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);font-size:.88rem}
-.important-only input{width:18px;height:18px;accent-color:var(--accent)}
-.important-only .hint{color:var(--muted);font-size:.74rem;font-weight:450}
-.filter-count{margin:-4px 0 18px;color:var(--muted);font-size:.82rem;font-variant-numeric:tabular-nums}
-.priority-note{margin:0 0 8px;color:var(--muted);font-size:.78rem;line-height:1.4}
-.freshness{display:flex;gap:4px;flex-wrap:wrap;align-items:baseline}
-@media(max-width:760px){.filter-tools{grid-template-columns:1fr 1fr}.filter-tools .important-only{grid-column:1/-1;flex-wrap:wrap}.card .meta{overflow-wrap:anywhere}.save{min-height:40px}}
-@media(max-width:460px){.filter-tools{grid-template-columns:1fr}.filter-tools .important-only{grid-column:auto}}
-"""
-
 FAVICON_SVG = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#0b1d3a"/><path d="M32 12 L48 18 V31 C48 42 41 50 32 54 C23 50 16 42 16 31 V18 Z" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linejoin="round"/><path d="M24 31 L30 37 L41 25" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>"""
 LOGO_SVG = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 80" role="img" aria-label="Security Brief"><rect x="0" y="8" width="64" height="64" rx="14" fill="#0b1d3a"/><path d="M32 20 L48 26 V39 C48 50 41 58 32 62 C23 58 16 50 16 39 V26 Z" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linejoin="round"/><path d="M24 39 L30 45 L41 33" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><text x="80" y="38" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#0b1d3a">Security Brief</text><text x="80" y="58" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="2.4" fill="#475569">THREATS · ACTIONS · EVIDENCE</text></svg>"""
 
 
 FILTERS = [
-    ("all", "All"), ("critical", "Critical (editorial)"), ("exploited", "Exploitation reported"), ("patch-now", "Patch now"),
+    ("all", "All"), ("critical", "Critical"), ("exploited", "Actively exploited"), ("patch-now", "Patch now"),
     ("microsoft", "Microsoft"), ("defender", "Defender"), ("ai", "AI security"),
 ]
 def filter_bar(stories: list[dict]) -> str:
     buttons = []
     for key, label in FILTERS:
-        n = len(stories) if key == "all" else sum(1 for story in stories if key in story["tags"])
+        n = len(stories) if key == "all" else sum(1 for s in stories if key in s["tags"])
         if key != "all" and n == 0:
-            continue
+            continue  # no empty filter chips
         pressed = "true" if key == "all" else "false"
         buttons.append(f'<button type="button" data-filter="{key}" aria-pressed="{pressed}">{esc(label)} <span class="count">{n}</span></button>')
     search = ('<div class="toolbar"><label class="visually-hidden" for="story-search">Search stories</label>'
               '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" '
               'stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>'
-              f'<input id="story-search" class="search" type="search" placeholder="Search {len(stories)} stories, products or CVEs" '
+              '<input id="story-search" class="search" type="search" placeholder="Search stories, vendors or topics" '
               'autocomplete="off" spellcheck="false"></div>')
-    controls = """<div class="filter-tools" aria-label="Additional story filters">
-<label>Time range <select id="date-filter"><option value="168">Last 7 days</option><option value="72">Last 72 hours</option><option value="24">Last 24 hours</option><option value="0">All in current feed</option></select></label>
-<label>Sort by <select id="sort-filter"><option value="priority">Priority, then newest</option><option value="date">Newest first</option></select></label>
-<label class="important-only"><input id="important-only" type="checkbox"><span><strong>Important only</strong><span class="hint">Critical, High, exploitation or patch signal</span></span></label>
-</div>"""
-    panel = ('<section class="filter-panel" aria-label="Story filters">'
-             '<div class="filter-panel-head"><div><p class="filter-eyebrow">INTELLIGENCE DESK / LIVE WINDOW</p>'
-             '<h2>Find your signal</h2></div>'
-             f'<p id="filter-count" class="filter-count" aria-live="polite">Showing {len(stories)} of {len(stories)} stories</p>'
-             '<button type="button" id="reset-filters" class="filter-reset">Reset</button></div>'
-             + search + '<p class="filter-group-label">Quick filters</p>'
-             + '<div class="filters" id="filters" role="group" aria-label="Filter stories by topic">'
-             + "".join(buttons) + '</div>' + controls + '</section>'
-             + '<p id="filter-empty" class="empty" hidden>No stories match these filters in the current window.</p>')
-    return panel
+    return (search + '<div class="filters" id="filters" role="group" aria-label="Filter stories by topic">'
+            + "".join(buttons) + '</div><p id="filter-empty" class="empty" hidden>No stories match this filter in the current window.</p>')
 
 
 FILTER_JS = """(function(){
 var bar=document.getElementById('filters');
 var search=document.getElementById('story-search');
-var range=document.getElementById('date-filter');
-var sort=document.getElementById('sort-filter');
-var important=document.getElementById('important-only');
 var buttons=bar?bar.querySelectorAll('button[data-filter]'):[];
-var items=Array.prototype.slice.call(document.querySelectorAll('[data-tags]'));
+var items=document.querySelectorAll('[data-tags]');
 var sections=document.querySelectorAll('[data-section]');
 var empty=document.getElementById('filter-empty');
-var count=document.getElementById('filter-count');
-var reset=document.getElementById('reset-filters');
-var total=items.length;
 var current='all';
-function timestamp(el){var value=el.getAttribute('data-published');return value?Date.parse(value):NaN;}
-function compare(a,b){
-  if(sort&&sort.value==='priority'){
-    var rankA=Number(a.getAttribute('data-priority-rank')||9),rankB=Number(b.getAttribute('data-priority-rank')||9);
-    if(rankA!==rankB)return rankA-rankB;
-    var scoreA=Number(a.getAttribute('data-score')||0),scoreB=Number(b.getAttribute('data-score')||0);
-    if(scoreA!==scoreB)return scoreB-scoreA;
-  }
-  return (timestamp(b)||0)-(timestamp(a)||0);
-}
-function reorder(){
-  document.querySelectorAll('.grid').forEach(function(grid){
-    var cards=Array.prototype.filter.call(grid.children,function(el){return el.hasAttribute('data-tags');});
-    cards.sort(compare).forEach(function(card){grid.appendChild(card);});
-  });
-}
 function apply(){
   var q=(search?search.value:'').trim().toLowerCase();
-  var hours=range?Number(range.value):168;
-  var cutoff=hours>0?Date.now()-hours*3600000:0;
   var shown=0;
   items.forEach(function(el){
     var tags=' '+(el.getAttribute('data-tags')||'')+' ';
     var text=el.getAttribute('data-search')||'';
-    var date=timestamp(el);
-    var inRange=!cutoff||(Number.isFinite(date)&&date>=cutoff);
-    var isImportant=el.getAttribute('data-important')==='true';
-    var ok=(current==='all'||tags.indexOf(' '+current+' ')>-1)&&(!q||text.indexOf(q)>-1)&&inRange&&(!important||!important.checked||isImportant);
-    el.hidden=!ok;if(ok)shown++;
+    var ok=(current==='all'||tags.indexOf(' '+current+' ')>-1)&&(!q||text.indexOf(q)>-1);
+    el.hidden=!ok; if(ok){shown++;}
   });
   sections.forEach(function(sec){sec.hidden=!sec.querySelector('[data-tags]:not([hidden])');});
-  if(empty)empty.hidden=shown>0;
-  if(count)count.textContent='Showing '+shown+' of '+total+' stories';
+  if(empty){empty.hidden=shown>0;}
 }
 buttons.forEach(function(b){b.addEventListener('click',function(){
   current=b.getAttribute('data-filter');
   buttons.forEach(function(x){x.setAttribute('aria-pressed',String(x===b));});
   apply();
 });});
-if(search)search.addEventListener('input',apply);
-if(range)range.addEventListener('change',apply);
-if(important)important.addEventListener('change',apply);
-if(sort)sort.addEventListener('change',function(){reorder();apply();});
-if(reset)reset.addEventListener('click',function(){
-  current='all';if(search)search.value='';if(range)range.value='168';if(sort)sort.value='priority';if(important)important.checked=false;
-  buttons.forEach(function(x){x.setAttribute('aria-pressed',String(x.getAttribute('data-filter')==='all'));});
-  reorder();apply();if(search)search.focus();
-});
+if(search){search.addEventListener('input',apply);}
 var KEY='sb-saved';
 function readSaved(){try{return JSON.parse(localStorage.getItem(KEY)||'[]');}catch(e){return [];}}
 function writeSaved(a){try{localStorage.setItem(KEY,JSON.stringify(a));}catch(e){}}
 var saves=document.querySelectorAll('button[data-save]');
 function paint(){var saved=readSaved();saves.forEach(function(b){
   var on=saved.indexOf(b.getAttribute('data-save'))>-1;
-  var label=b.querySelector('span');b.setAttribute('aria-pressed',String(on));if(label)label.textContent=on?'Saved':'Save';});}
+  var label=b.querySelector('span');
+  b.setAttribute('aria-pressed',String(on));if(label){label.textContent=on?'Saved':'Save';}});}
 saves.forEach(function(b){b.addEventListener('click',function(){
   var id=b.getAttribute('data-save');var a=readSaved();var i=a.indexOf(id);
-  if(i>-1)a.splice(i,1);else a.push(id);writeSaved(a);paint();
+  if(i>-1){a.splice(i,1);}else{a.push(id);}
+  writeSaved(a);paint();
 });});
-reorder();paint();apply();
-})();"""
-
-
-FEED_STATUS_JS = """(function(){
-var el=document.getElementById('feed-freshness');if(!el)return;
-function stamp(value){var d=new Date(value);return isNaN(d.getTime())?'time unavailable':new Intl.DateTimeFormat(undefined,{day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit',timeZone:'UTC',timeZoneName:'short'}).format(d);}
-fetch('status.json?fresh='+Date.now(),{cache:'no-store'}).then(function(r){if(!r.ok)throw Error('status unavailable');return r.json();}).then(function(s){
-  var ok=Number(s.sources_ok||0),total=Number(s.sources_total||0);
-  el.textContent='Last feed check: '+stamp(s.last_check_at||s.generated)+' · '+ok+'/'+total+' sources succeeded in that run. ';
-}).catch(function(){el.textContent='Latest feed-check status is unavailable; displayed stories remain accessible.';});
+paint();
+apply();
 })();"""
 
 
@@ -1900,35 +1659,6 @@ fetch('../stories.json',{cache:'no-store'}).then(function(r){return r.json();}).
 })();"""
 
 
-RADAR_JS = "(function(){\n'use strict';\nvar KEY='sb-radar-v1',SAVED='sb-saved';\nvar PRESETS=['Microsoft 365','Entra','Defender','Fortinet','Palo Alto Networks','Ivanti','Cisco','Other'];\nvar selected=[];try{var old=JSON.parse(localStorage.getItem(KEY)||'[]');if(Array.isArray(old))selected=old.filter(function(v){return PRESETS.indexOf(v)>-1;});}catch(e){}\nselected=Array.from(new Set(selected));\nvar choices=document.getElementById('radar-choices'),results=document.getElementById('radar-results'),summary=document.getElementById('radar-summary'),empty=document.getElementById('radar-empty'),count=document.getElementById('radar-count'),notice=document.getElementById('radar-notice');\nvar sort=document.getElementById('radar-sort'),limit=60,stories=[];\nvar patterns={\n 'Microsoft 365':/\\bmicrosoft 365\\b|\\bm365\\b|\\boffice 365\\b|\\bexchange\\b|\\bsharepoint\\b|\\bonedrive\\b|\\boutlook\\b|\\bteams\\b/i,\n 'Entra':/\\bentra\\b|\\bazure ad\\b|\\bconditional access\\b|\\bidentity\\b|\\boauth\\b|\\bsign.in\\b/i,\n 'Defender':/\\bdefender\\b|\\bsentinel\\b|\\bxdr\\b/i,\n 'Fortinet':/\\bfortinet\\b|\\bfortigate\\b|\\bfortios\\b|\\bfortiweb\\b/i,\n 'Palo Alto Networks':/\\bpalo alto\\b|\\bpan.os\\b|\\bprisma access\\b|\\bglobalprotect\\b/i,\n 'Ivanti':/\\bivanti\\b/i,\n 'Cisco':/\\bcisco\\b|\\bios xe\\b/i\n};\nfunction matches(s,label){\n var text=[s.title,s.summary,s.category].join(' ');\n if(label==='Other')return !PRESETS.slice(0,-1).some(function(p){return patterns[p].test(text)});\n return patterns[label].test(text);\n}\nfunction safeSaved(){try{var v=JSON.parse(localStorage.getItem(SAVED)||'[]');return Array.isArray(v)?v:[];}catch(e){return [];}}\nfunction toggleSaved(id){var v=safeSaved(),pos=v.indexOf(id);if(pos<0)v.push(id);else v.splice(pos,1);try{localStorage.setItem(SAVED,JSON.stringify(v));}catch(e){notice.textContent='Browser storage unavailable; saved stories are not retained.';}paint();}\nfunction el(name,cls,text){var n=document.createElement(name);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n;}\nfunction paint(){\n choices.replaceChildren();\n PRESETS.forEach(function(label){var btn=el('button','radar-chip',label);btn.type='button';btn.setAttribute('aria-pressed',String(selected.includes(label)));btn.addEventListener('click',function(){if(selected.includes(label))selected=selected.filter(function(v){return v!==label;});else selected.push(label);try{localStorage.setItem(KEY,JSON.stringify(selected));}catch(e){notice.textContent='Browser storage unavailable; selections will reset after reload.';}paint();});choices.appendChild(btn);});\n results.replaceChildren();\n if(!stories.length){count.textContent='No feed stories loaded';empty.hidden=false;return;}\n if(!selected.length){count.textContent='Choose at least one technology';empty.hidden=false;empty.textContent='Choose the technologies you use to build your Radar.';summary.textContent='Your choices stay in this browser. No account or server-side tracking.';return;}\n var filtered=stories.filter(function(s){return selected.some(function(label){return matches(s,label);});});\n filtered.sort(function(a,b){if(sort.value==='priority'){var ranks={Critical:0,High:1,Standard:2};var d=(ranks[a.priority]??3)-(ranks[b.priority]??3);if(d)return d;d=(Number(b.priority_score)||0)-(Number(a.priority_score)||0);if(d)return d;}return (Date.parse(b.published)||0)-(Date.parse(a.published)||0);});\n count.textContent=filtered.length+' matching '+(filtered.length===1?'story':'stories')+' in the current feed';\n summary.textContent='Following '+selected.join(', ')+'. Matches are keyword-based, not a confirmed inventory or exposure assessment.';\n empty.hidden=filtered.length>0;if(!filtered.length)empty.textContent='No matches in the current feed. Try another technology or check All stories.';\n var fragment=document.createDocumentFragment(),saved=safeSaved();\n filtered.slice(0,limit).forEach(function(s){\n   var card=el('article','radar-result');\n   var line=el('div','radar-result-head');\n   line.appendChild(el('span','badge '+s.priority,s.priority));\n   var action=s.kev&&s.kev.length?'CISA KEV listed':s.tags&&s.tags.includes('exploited')?'Exploitation reported':'Editorial priority, not CVSS';\n   line.appendChild(el('span','radar-evidence',action));card.appendChild(line);\n   var title=el('h3'),link=el('a','',s.title);link.href='../'+s.url;title.appendChild(link);card.appendChild(title);\n   card.appendChild(el('p','radar-excerpt',s.summary||'Read the source brief for details.'));\n   card.appendChild(el('p','radar-facts',(s.sources||'Source not specified')+' · '+(s.date||'Date unavailable')));\n   var foot=el('div','radar-result-foot');var why=el('span','',s.priority_basis&&s.priority_basis[0]||'Verify the underlying report before acting.');foot.appendChild(why);\n   var save=el('button','radar-save',saved.includes(s.id)?'Saved':'Save');save.type='button';save.setAttribute('aria-pressed',String(saved.includes(s.id)));save.addEventListener('click',function(){toggleSaved(s.id);});foot.appendChild(save);card.appendChild(foot);\n   fragment.appendChild(card);\n });results.appendChild(fragment);\n if(filtered.length>limit)notice.textContent='Showing the first '+limit+' matches. Use All stories to browse the full feed.';\n else if(!notice.textContent.startsWith('Browser storage'))notice.textContent='';\n}\nsort.addEventListener('change',paint);\nfetch('../stories.json',{cache:'no-store'}).then(function(response){if(!response.ok)throw Error('Feed index not available');return response.json();}).then(function(data){\n stories=(Array.isArray(data.stories)?data.stories:[]).filter(function(s){return /^[0-9a-f]{12}$/.test(s.id||'') && /^story\\/[0-9a-f]{12}\\.html$/.test(s.url||'');});paint();\n}).catch(function(){count.textContent='Feed unavailable';empty.hidden=false;empty.textContent='Radar could not load the story index right now. The rest of the site is still available.';});\npaint();\n})();"
-RADAR_CSS = '/* My Radar — privacy-first client-side personalization; all data from existing stories.json. */\n.radar-intro{position:relative;overflow:hidden;border:1px solid color-mix(in srgb,var(--accent) 26%,var(--line));border-radius:24px;padding:clamp(20px,4vw,36px);margin:25px 0;background:radial-gradient(circle at 85% 5%,color-mix(in srgb,#38bdf8 12%,transparent),transparent 50%),var(--surface)}\n.radar-eyebrow{font-size:.7rem;font-weight:800;letter-spacing:.17em;color:var(--accent);text-transform:uppercase}.radar-intro h1{font-size:clamp(2rem,4vw,3.35rem);line-height:1.04;margin:10px 0 13px;letter-spacing:-.045em}.radar-intro p{max-width:72ch;color:var(--muted);line-height:1.65}.radar-intro .radar-proof{font-size:.82rem}\n.radar-controls{border:1px solid var(--line);border-radius:20px;padding:clamp(18px,3vw,28px);background:var(--surface);box-shadow:var(--shadow)}.radar-controls h2{font-size:1.25rem;margin:0 0 7px}.radar-controls p{color:var(--muted);margin:0 0 16px}.radar-choices{display:flex;gap:10px;flex-wrap:wrap}.radar-chip{border:1px solid color-mix(in srgb,var(--accent) 24%,var(--line));border-radius:999px;padding:10px 15px;background:var(--surface-2);color:var(--ink);font:inherit;font-size:.87rem;font-weight:700;cursor:pointer;transition:transform .18s,box-shadow .18s}.radar-chip[aria-pressed=true]{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 22%,var(--surface));box-shadow:0 0 0 2px color-mix(in srgb,var(--accent) 15%,transparent)}.radar-chip:hover{transform:translateY(-2px)}.radar-chip:focus-visible,.radar-save:focus-visible{outline:3px solid var(--accent);outline-offset:3px}\n.radar-toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin:30px 0 14px}.radar-toolbar h2{margin:0;font-size:1.35rem}.radar-toolbar select{font:inherit;border:1px solid var(--line);border-radius:11px;background:var(--surface);color:var(--ink);padding:10px 12px}.radar-summary{font-size:.84rem;color:var(--muted);margin:0 0 16px}.radar-results{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,315px),1fr));gap:14px}.radar-result{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:17px;background:var(--surface);padding:19px;min-width:0;transition:transform .18s,border-color .18s}.radar-result:hover{border-color:var(--accent);transform:translateY(-2px)}.radar-result-head{display:flex;align-items:center;gap:9px;flex-wrap:wrap}.radar-evidence{font-size:.73rem;color:var(--muted)}.radar-result h3{margin:14px 0 9px;font-size:1.05rem;line-height:1.36}.radar-result h3 a{color:var(--ink);text-decoration:none}.radar-result h3 a:hover{text-decoration:underline}.radar-excerpt{color:var(--muted);font-size:.88rem;line-height:1.55;margin:0 0 13px}.radar-facts{color:var(--muted);font-size:.76rem;margin:auto 0 0}.radar-result-foot{display:flex;justify-content:space-between;align-items:center;gap:12px;border-top:1px solid var(--line);margin-top:14px;padding-top:12px;color:var(--muted);font-size:.77rem}.radar-save{border:1px solid var(--line);border-radius:9px;padding:7px 11px;font:inherit;font-weight:700;cursor:pointer;background:var(--surface-2);color:var(--ink)}.radar-save[aria-pressed=true]{background:var(--accent);color:var(--accent-ink)}.radar-empty{padding:25px;border:1px dashed var(--line);border-radius:14px;color:var(--muted)}.radar-feature{margin:22px 0 30px;padding:19px 23px;border:1px solid var(--line);border-radius:18px;background:var(--surface)}.radar-feature h2{margin:0 0 5px;font-size:1.1rem}.radar-feature p{margin:0;color:var(--muted);font-size:.88rem}.radar-feature a{color:var(--accent);font-weight:700}\n@media(max-width:600px){.radar-controls{padding:17px}.radar-result{padding:16px}.radar-toolbar select{width:100%}}@media(prefers-reduced-motion:reduce){.radar-chip,.radar-result{transition:none}.radar-chip:hover,.radar-result:hover{transform:none}}\n'
-
-def radar_page(cfg: dict) -> str:
-    """Personal technology Radar using only the existing public story index."""
-    body = (
-        '<section class="radar-intro"><p class="radar-eyebrow">PERSONAL SIGNAL / LOCAL MODE</p>'
-        '<h1>My Radar</h1><p>See the security stories that mention the technology you follow. '
-        'Choose your stack below. No account, no profile sent to the site.</p>'
-        '<p class="radar-proof">Keyword matches are leads to investigate — not proof that your environment is affected. '
-        'Always check the original publisher or vendor advisory before taking action.</p></section>'
-        '<section class="radar-controls" aria-labelledby="radar-controls-title"><h2 id="radar-controls-title">Follow your stack</h2>'
-        '<p>Selections stay in this browser only. Select more than one.</p>'
-        '<div class="radar-choices" id="radar-choices" role="group" aria-label="Followed technologies"></div></section>'
-        '<div class="radar-toolbar"><div><h2>Your signals</h2><span id="radar-count" role="status" aria-live="polite">Loading stories…</span></div>'
-        '<label>Sort by <select id="radar-sort"><option value="priority">Priority, then newest</option>'
-        '<option value="newest">Newest first</option></select></label></div>'
-        '<p class="radar-summary" id="radar-summary">Your choices stay in this browser.</p>'
-        '<p class="radar-empty" id="radar-empty" hidden></p>'
-        '<div class="radar-results" id="radar-results" aria-label="Matching stories"></div>'
-        '<p id="radar-notice" class="meta" role="status"></p>'
-        '<section class="radar-feature"><h2>Put a finding into practice</h2>'
-        '<p>Use the free <a href="../m365-identity-incident-triage-checklist.pdf">M365 Identity Incident Triage Checklist</a> '
-        'for evidence-first checks, or visit <a href="../today/index.html">Today</a> for a broader daily view.</p></section>'
-        '<script>' + RADAR_JS + '</script>'
-    )
-    return _layout(cfg, "My Radar", "A browser-local technology watchlist for current Security Brief stories.", body, "../")
-
-
 def saved_page(cfg: dict) -> str:
     body = (
         '<section class="intro"><h1>Saved stories</h1>'
@@ -1945,77 +1675,59 @@ def saved_page(cfg: dict) -> str:
 def stories_index(stories: list[dict]) -> str:
     rows = [{
         "id": s["id"], "title": s["title"], "summary": _short(s["summary"], 170), "priority": s["priority"],
-        "category": CATEGORIES[s["category"]][0], "date": fmt_date(s["published"]), "published": s["published"],
-        "priority_score": s["score"], "priority_basis": s.get("priority_basis", []),
-        "tags": s["tags"], "kev": s.get("kev", []),
+        "category": CATEGORIES[s["category"]][0], "date": fmt_date(s["published"]),
         "sources": ", ".join(dict.fromkeys(x["name"] for x in s["sources"])), "url": f"story/{s['id']}.html",
     } for s in stories]
     return json.dumps({"stories": rows}, ensure_ascii=False, indent=1)
 
 
-def _signal_rail(stories: list[dict], now: datetime) -> str:
-    """Short, source-led paths through existing news; not synthetic editorial claims."""
-    if not stories:
-        return ""
-    actions = [x for x in stories if x.get("kev") or "exploited" in x.get("tags", [])]
-    action = actions[0] if actions else None
-    latest = max((x for x in stories if _date(x.get("published")) is not None),
-                 key=lambda x: _date(x["published"]), default=None)
-    def tile(kicker: str, title: str, desc: str, href: str, style: str) -> str:
-        return (f'<a class="signal-tile signal-tile-{style}" href="{esc(href)}">'
-                f'<span class="signal-tile-kicker">{esc(kicker)}</span>'
-                f'<strong>{esc(title)}</strong><span class="signal-tile-desc">{esc(desc)}</span>'
-                '<span class="signal-tile-arrow" aria-hidden="true">&nearr;</span></a>')
-    cards = []
-    if action:
-        cards.append(tile("01 / WATCH", _short(action["title"], 88),
-                          "KEV-listed or exploitation reported in feed data · verify the source",
-                          f'story/{action["id"]}.html', "watch"))
-    else:
-        cards.append(tile("01 / WATCH", "The action desk", "Browse rule-based actions and verify original sources.",
-                          "today/index.html", "watch"))
-    if latest and latest["id"] != (action or {}).get("id"):
-        cards.append(tile("02 / LATEST", _short(latest["title"], 88),
-                          "Most recently published item in the current feed",
-                          f'story/{latest["id"]}.html', "latest"))
-    else:
-        cards.append(tile("02 / LATEST", "Browse the feed", "Search and filter every current story.",
-                          "stories/index.html", "latest"))
-    cards.append(tile("03 / YOUR STACK", "Make the signal yours",
-                      "Follow technologies locally in your browser; no account needed.",
-                      "radar/index.html", "personal"))
-    return ('<section class="signal-rail" aria-label="Start here">'
-            '<div class="signal-rail-head"><span>THE DECISION DESK</span><p>Three useful paths through today’s signal</p></div>'
-            '<div class="signal-rail-grid">' + "".join(cards) + '</div></section>')
-
-
 def index_page(stories: list[dict], cfg: dict, now: datetime, status: dict,
-               articles: list[dict] | None = None, site_cfg: dict | None = None) -> str:
+               articles: list[dict] | None = None, site_cfg: dict | None = None,
+               radar: dict | None = None) -> str:
     articles = articles or []
+    radar = radar or {"ok": False, "error": "not loaded", "items": []}
     site_cfg = site_cfg or {}
     crit = sum(1 for s in stories if s["priority"] == "Critical")
     exploited = sum(1 for s in stories if "exploited" in s["tags"])
     parts = [
-        '<section class="intro home-intro"><span class="home-intro-kicker"><span aria-hidden="true" class="home-intro-dot"></span> SECURITY BRIEF / INTELLIGENCE DESK</span><h1>Security news, <em>ranked.</em></h1>'
-        f'<p class="meta">Last content publication: {esc(fmt_date(status.get("content_published_at") or now.isoformat()))}. '
-        "Feed checks run every 20 minutes; this timestamp changes only when published story or analysis content changes. Editorial priority is not CVSS or tenant-specific risk.</p>"
-        '<p class="meta freshness" id="feed-freshness" role="status">Loading the latest feed-check result&hellip;</p>'
-        '<div class="home-intro-actions"><a class="btn" href="today/index.html">Today: what to do &rarr;</a><a class="home-intro-secondary" href="radar/index.html">Open My Radar &rarr;</a></div></section>',
+        '<section class="intro"><h1>Security news, ranked</h1>'
+        f'<p class="meta">Last content update: {esc(now.strftime("%d %b %Y, %H:%M UTC"))} &middot; '
+        "Checked automatically every 20 minutes. Every story links to its original source.</p>"
+        '<p><a class="btn" href="today/index.html">Today: what to do &rarr;</a></p></section>',
         '<div class="stats" aria-label="Summary">'
         f'<div class="stat"><b>{len(stories)}</b><span>stories in the current window</span></div>'
-        f'<div class="stat crit"><b>{crit}</b><span>critical (editorial)</span></div>'
-        f'<div class="stat"><b>{exploited}</b><span>exploitation reported</span></div>'
+        f'<div class="stat crit"><b>{crit}</b><span>critical</span></div>'
+        f'<div class="stat"><b>{exploited}</b><span>actively exploited</span></div>'
         f'<div class="stat"><b>{status.get("sources_total", 0)}</b><span>sources monitored</span></div>'
         "</div>",
     ]
-    # Keep a single Buy Me a Coffee block after the overview; retain its configured QR code.
-    parts.append(_signal_rail(stories, now))
     parts.append(_donate(site_cfg))
-    parts.append(_newsletter_teaser(site_cfg))
+    if articles:
+        parts.append(
+            '<section class="section" id="analysis"><h2>From the analysis desk</h2><div class="grid">'
+            + "".join(_article_card(a, f"{a['section']}/{a['slug']}.html") for a in articles[:3])
+            + '</div><p class="analysis-links meta"><a href="briefings/index.html">All analysis</a> &middot; '
+            '<a href="patch-tuesday/index.html">All Patch Tuesday notes</a></p></section>'
+        )
+    parts.append(_radar_home(radar))
+    parts.append(
+        '<section class="section" id="free-downloads" aria-labelledby="free-download-title">'
+        '<h2 id="free-download-title">Free field guide</h2>'
+        '<article class="card resource-card"><div class="card-body">'
+        '<p class="card-kicker">PRINTABLE WORKSHEET &middot; VERSION 1.0</p>'
+        '<h3>Microsoft 365 Identity Incident Triage</h3>'
+        '<p class="summary">Evidence-first checks for suspicious sign-ins, Entra audit activity, app access, mailbox persistence, containment and verification.</p>'
+        '<p class="meta">3 pages &middot; Updated 22 October 2026 &middot; Includes Microsoft Learn references</p>'
+        '<a class="btn" href="m365-identity-incident-triage-checklist.pdf" download>Download the free PDF &rarr;</a>'
+        '</div></article></section>'
+    )
+    newsletter = _newsletter(site_cfg, "")
+    if newsletter:
+        parts.append(newsletter)
     if not stories:
         parts.append('<div class="empty">No news stories yet. The next automated check will fill this page.</div>')
     else:
-        parts.append(f'<p class="meta browse-all"><a class="btn" href="stories/index.html">Browse and filter all {len(stories)} stories &rarr;</a></p>')
+        parts.append(filter_bar(stories))
         featured = stories[:4]
         parts.append('<section class="section" aria-label="Top story" data-section>' + _hero(featured[0]) + "</section>")
         if len(featured) > 1:
@@ -2030,43 +1742,18 @@ def index_page(stories: list[dict], cfg: dict, now: datetime, status: dict,
             parts.append(f'<section class="section" id="{cid}" data-section><h2>{esc(CATEGORIES[cid][0])}</h2>'
                          '<div class="grid">' + "".join(_card(s) for s in items) + "</div>"
                          f'<p class="section-more"><a href="category/{cid}/index.html">All {total} {esc(CATEGORIES[cid][0])} stories &rarr;</a></p></section>')
-    parts.append('<section class="radar-home" aria-label="Personal Radar"><span aria-hidden="true" class="radar-home-icon">◈</span>'
-                 '<div><strong>Only the signals that match your stack.</strong><span> Follow technologies in your private, browser-local Radar.</span></div>'
-                 '<a href="radar/index.html">Open My Radar &rarr;</a></section>')
-    # Editorial modules sit after the live feed and directly before the footer area.
-    parts.append(
-        '<section class="section" id="free-downloads" aria-labelledby="free-download-title">'
-        '<h2 id="free-download-title">Free field guide</h2>'
-        '<article class="card resource-card"><div class="card-body">'
-        '<p class="card-kicker">PRINTABLE WORKSHEET &middot; VERSION 1.0</p>'
-        '<h3>Microsoft 365 Identity Incident Triage</h3>'
-        '<p class="summary">Evidence-first checks for suspicious sign-ins, Entra audit activity, app access, mailbox persistence, containment and verification.</p>'
-        '<p class="meta">3 pages &middot; Updated 22 October 2026 &middot; Includes Microsoft Learn references</p>'
-        '<a class="btn" href="m365-identity-incident-triage-checklist.pdf" download>Download the free PDF &rarr;</a>'
-        '</div></article></section>'
-    )
-    # Newsletter and original analysis follow the full news feed; analysis is the final module before the footer.
-    parts.append(_newsletter(site_cfg, ""))
-    if articles:
-        parts.append(
-            '<section class="section" id="analysis"><h2>From the analysis desk</h2><div class="grid">'
-            + "".join(_article_card(a, f"{a['section']}/{a['slug']}.html") for a in articles[:3])
-            + '</div><p class="analysis-links meta"><a href="briefings/index.html">All analysis</a> &middot; '
-            '<a href="patch-tuesday/index.html">All Patch Tuesday notes</a></p></section>'
-        )
-    parts.append("<script>" + FEED_STATUS_JS + "</script>")
+        parts.append("<script>" + FILTER_JS + "</script>")
     return _layout(cfg, "Home", "Ranked cybersecurity news with links to original sources.", "\n".join(parts), "")
 
 
 def listing_page(stories: list[dict], cfg: dict, base: str, title: str, intro: str) -> str:
-    parts = [f'<section class="intro"><h1>{esc(title)}</h1><p class="meta">{esc(intro)}</p>'
-             '<p class="meta">Filters apply to every story shown in this listing. Editorial priority is not CVSS or environment-specific risk.</p></section>']
+    parts = [f'<section class="intro"><h1>{esc(title)}</h1><p class="meta">{esc(intro)}</p></section>']
     if not stories:
         parts.append('<div class="empty">No stories in this section in the current window.</div>')
     else:
         parts.append(filter_bar(stories))
         parts.append('<section class="section" data-section aria-label="Stories"><div class="grid">'
-                     + "".join(_card(s, base) for s in stories) + "</div></section>")
+                     + "".join(_card(s) for s in stories) + "</div></section>")
         parts.append("<script>" + FILTER_JS + "</script>")
     return _layout(cfg, title, intro, "\n".join(parts), base)
 
@@ -2083,10 +1770,10 @@ def story_page(s: dict, cfg: dict) -> str:
         credit = "Illustration: no preview image was available for this story."
     reasons = "".join(f"<li>{esc(r)}</li>" for r in s["reasons"]) or "<li>No scoring signals matched.</li>"
     srcs = "".join(
-        '<li>' + (esc(x["title"]) + ' <span class="dead">(source unavailable at last check)</span>'
-                 if x.get("link_status") == "dead" else
-                 f'<a href="{esc(x["url"])}" rel="nofollow noopener noreferrer" target="_blank">{esc(x["title"])}</a>')
-        + f' — {esc(x["name"])}, {esc(fmt_date(x["published"]))}</li>'
+        f'<li><a href="{esc(x["url"])}" rel="nofollow noopener noreferrer" target="_blank">{esc(x["title"])}</a>'
+        f' — {esc(x["name"])}, {esc(fmt_date(x["published"]))}'
+        + (' <span class="dead">(link not found at last check)</span>' if x.get("link_status") == "dead" else "")
+        + "</li>"
         for x in s["sources"]
     )
     if s["kev"]:
@@ -2129,15 +1816,14 @@ def story_page(s: dict, cfg: dict) -> str:
 <p>{esc(why_it_matters(s))}</p>
 {instr_block}
 <h2>Why this priority</h2>
-<div class="box"><p><strong>Editorial triage priority: {esc(s['priority'])}.</strong> This is not a CVSS severity score and does not establish risk to your environment. Critical requires a CISA KEV listing or exploitation reported by an official source; High uses the site's editorial attention score threshold (6), which includes context such as recency and enterprise relevance.</p>
-<ul>{''.join(f'<li>{esc(x)}</li>' for x in s.get('priority_basis', []))}</ul>
-<p><strong>Scoring signals:</strong></p><ul>{reasons}</ul>
-<p>{kev_line}</p><p>CVSS and vendor fix status are not inferred when the feed does not provide them; verify affected versions and remediation in the linked primary advisory.</p></div>
+<div class="box"><p><strong>{esc(s['priority'])}</strong>. Criteria: Critical = CVE listed in CISA KEV, or exploitation reported by an official source. High = score 6 or more. Otherwise Standard.</p>
+<ul>{reasons}</ul>
+<p>{kev_line}</p></div>
 <h2>Sources</h2>
 <ul>{srcs}</ul>
 <p class="note">Automated page. Verify facts in the original articles before acting on them.</p>"""
     desc = _short(s["summary"] or s["title"], 150)
-    return _layout(cfg, s["title"], desc, f'<article class="story-page prose">{body}</article>', "../", image=s["image"])
+    return _layout(cfg, s["title"], desc, f'<article class="prose">{body}</article>', "../", image=s["image"])
 
 
 def feed_xml(stories: list[dict], cfg: dict, now: datetime, articles: list[dict] | None = None) -> str:
@@ -2167,12 +1853,12 @@ def feed_xml(stories: list[dict], cfg: dict, now: datetime, articles: list[dict]
 
 def sitemap_xml(stories: list[dict], cfg: dict, articles: list[dict] | None = None) -> str:
     site = cfg["site_url"].rstrip("/")
-    urls = [f"{site}/", f"{site}/briefings/index.html", f"{site}/patch-tuesday/index.html",
+    urls = [f"{site}/", f"{site}/briefings/index.html", f"{site}/patch-tuesday/index.html", f"{site}/change-radar/index.html",
             f"{site}/impressum.html", f"{site}/datenschutz.html", f"{site}/corrections.html",
             f"{site}/m365-identity-incident-triage-checklist.pdf"]
     urls += [f"{site}/{a['section']}/{a['slug']}.html" for a in (articles or [])]
     urls += [f"{site}/story/{s['id']}.html" for s in stories]
-    urls += [f"{site}/radar/index.html", f"{site}/stories/index.html"] + [f"{site}/category/{c}/index.html" for c in CATEGORY_ORDER]
+    urls += [f"{site}/stories/index.html"] + [f"{site}/category/{c}/index.html" for c in CATEGORY_ORDER]
     return ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
             + "".join(f"<url><loc>{esc(u)}</loc></url>" for u in urls) + "</urlset>\n")
 
@@ -2258,7 +1944,7 @@ a.live:hover{color:var(--ink);border-color:var(--crit)}
 @media (prefers-reduced-motion:reduce){body::before,.orb,.fly,.led,.card::after{animation:none!important;transition:none!important}.fly,.card::after{display:none}}
 """
 BANNER_JS = """(function(){
-var msgs=["Feeds are checked every 20 minutes.","Every story links to its original source.","Analysis is labelled by its actual production method and reviewed before publication.","Read the Today page for what needs action now.","Corrections are published openly."];
+var msgs=["Feeds are checked every 20 minutes.","Every story links to its original source.","Patch Tuesday notes and weekly analysis are written by hand, not by AI.","Read the Today page for what needs action now.","Corrections are published openly."];
 var el=document.getElementById('banner-text'),btn=document.getElementById('banner-pause');
 if(!el||!btn)return;
 var i=0,paused=false,reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -2271,13 +1957,170 @@ if(reduce){paused=true;btn.setAttribute('aria-pressed','true');btn.textContent='
 DESIGN_CSS += FX_CSS
 
 
+# ---------- Microsoft 365 Change Radar (separate section, public roadmap only) ----------
+# Public roadmap RSS only. Tenant-specific Message Center posts and service health need
+# authenticated Microsoft Graph access and are deliberately NOT fetched here.
+RADAR_URL = "https://www.microsoft.com/releasecommunications/api/v2/M365/rss"
+RADAR_PAGE = "https://www.microsoft.com/microsoft-365/roadmap"
+MESSAGE_CENTER_URL = "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/message-center?view=o365-worldwide"
+GRAPH_COMM_URL = "https://learn.microsoft.com/en-us/graph/service-communications-concept-overview"
+RADAR_MAX = 40
+RADAR_SRC = {"id": "m365-roadmap", "name": "Microsoft 365 Roadmap", "official": True, "type": "advisory"}
+RADAR_PRODUCTS = [
+    ("Teams", re.compile(r"\bteams\b", re.I)),
+    ("Exchange", re.compile(r"\bexchange\b", re.I)),
+    ("SharePoint", re.compile(r"sharepoint", re.I)),
+    ("OneDrive", re.compile(r"onedrive", re.I)),
+    ("Entra", re.compile(r"\bentra\b|azure ad|azure active directory", re.I)),
+    ("Intune", re.compile(r"\bintune\b", re.I)),
+    ("Defender", re.compile(r"defender", re.I)),
+    ("Purview", re.compile(r"purview", re.I)),
+    ("Copilot", re.compile(r"copilot", re.I)),
+    ("Outlook", re.compile(r"outlook", re.I)),
+    ("Microsoft 365 Apps", re.compile(r"microsoft 365 apps|office apps|\bword\b|\bexcel\b|powerpoint", re.I)),
+]
+# Only label a stage when the feed text states one explicitly.
+RADAR_STAGES = [
+    (re.compile(r"rolling out|rollout (?:has )?started", re.I), "Rolling out"),
+    (re.compile(r"in development|under development", re.I), "In development"),
+    (re.compile(r"generally available|general availability", re.I), "Generally available"),
+    (re.compile(r"\blaunched\b|available to all customers", re.I), "Launched"),
+    (re.compile(r"public preview|preview available|in preview", re.I), "Preview"),
+]
+
+
+def radar_item(entry: dict) -> dict:
+    text = f"{entry['title']} {entry['summary']}"
+    products = [name for name, rx in RADAR_PRODUCTS if rx.search(text)] or ["Microsoft 365"]
+    stage = next((label for rx, label in RADAR_STAGES if rx.search(text)), None)
+    m = re.search(r"[?&]featureid=(\d{4,8})", entry["link"], re.I) or \
+        re.search(r"feature\s*(?:id|#)\s*[:#]?\s*(\d{4,8})\b", text, re.I)
+    return {"id": entry["id"], "title": entry["title"], "link": entry["link"], "summary": entry["summary"],
+            "published": entry["published"], "products": products, "stage": stage,
+            "feature_id": m.group(1) if m else None}
+
+
+def load_radar(fixtures: Path | None, data_file: Path) -> dict:
+    """Load the public roadmap feed. Falls back to the last saved entries if the feed is unavailable."""
+    saved_file = data_file.parent / "change-radar.json"
+    try:
+        data = (fixtures / "m365-roadmap.xml").read_bytes() if fixtures else fetch(RADAR_URL)
+        if not re.search(rb"<(rss|feed|rdf)", data[:2000], re.I):
+            raise RuntimeError("response is not an RSS/Atom feed")
+        items = [radar_item(e) for e in parse_feed(data, RADAR_SRC)][:RADAR_MAX]
+        items.sort(key=lambda i: i["published"] or "", reverse=True)
+        if fixtures is None:  # saved without timestamps, so unchanged feeds do not cause commits
+            saved_file.parent.mkdir(parents=True, exist_ok=True)
+            saved_file.write_text(json.dumps({"items": items}, ensure_ascii=False, indent=1), encoding="utf-8")
+        return {"ok": True, "error": None, "items": items}
+    except Exception as e:  # noqa: BLE001 - the radar must never break the news build
+        saved: list[dict] = []
+        try:
+            if saved_file.exists():
+                saved = json.loads(saved_file.read_text(encoding="utf-8")).get("items", [])
+        except (OSError, ValueError):
+            saved = []
+        return {"ok": False, "error": str(e)[:200], "items": saved}
+
+
+RADAR_CSS = """
+.radar-notice{border:1px solid var(--line);border-left:4px solid #38bdf8;background:var(--surface);border-radius:var(--r);padding:16px 20px;margin:24px 0}
+.radar-notice p{margin:6px 0;color:var(--muted)}
+.radar-notice strong{color:var(--ink)}
+.radar-chips{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+.radar-chip{font:inherit;font-size:.82rem;font-weight:650;color:var(--muted);background:var(--surface-2);border:1px solid var(--line);border-radius:999px;padding:5px 12px;cursor:pointer}
+.radar-chip:hover,.radar-chip:focus-visible{color:var(--ink);border-color:var(--accent)}
+.radar-chip[aria-pressed="true"]{color:var(--ink);border-color:#38bdf8}
+.radar-list{list-style:none;padding:0;margin:0}
+.radar-item{border-bottom:1px solid var(--line);padding:18px 0}
+.radar-item h3{margin:8px 0 4px;font-size:1.25rem}
+.radar-item h3 a{color:var(--ink)}
+.radar-item .summary{margin:6px 0;color:var(--muted)}
+.radar-tag{display:inline-block;font-size:.72rem;font-weight:650;letter-spacing:.04em;text-transform:uppercase;padding:2px 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted);margin:0 6px 4px 0}
+.radar-tag.stage{color:#38bdf8;border-color:#38bdf8}
+.radar-home{list-style:none;padding:0;margin:14px 0 0}
+.radar-home li{padding:8px 0;border-bottom:1px solid var(--line)}
+.radar-home .meta{margin-left:6px}
+"""
+
+RADAR_JS = """(function(){var chips=document.querySelectorAll('[data-radar-filter]');var rows=document.querySelectorAll('.radar-item');
+chips.forEach(function(c){c.addEventListener('click',function(){var f=c.getAttribute('data-radar-filter');
+chips.forEach(function(x){x.setAttribute('aria-pressed',String(x===c));});
+rows.forEach(function(r){var p='|'+r.getAttribute('data-products')+'|';r.hidden=!(f==='all'||p.indexOf('|'+f+'|')>-1);});});});})();"""
+
+
+def _radar_item_html(it: dict) -> str:
+    stage = f'<span class="radar-tag stage">{esc(it["stage"])}</span>' if it["stage"] else ""
+    tags = "".join(f'<span class="radar-tag">{esc(p)}</span>' for p in it["products"][:3])
+    summary = f'<p class="summary">{esc(_short(it["summary"], 260))}</p>' if it["summary"] else ""
+    feature = f" &middot; Feature ID {esc(it['feature_id'])}" if it["feature_id"] else ""
+    date = fmt_day(it["published"]) or "date not provided"
+    products = esc("|".join(it["products"]))
+    return (f'<li class="radar-item" data-products="{products}"><div>{stage}{tags}</div>'
+            f'<h3><a href="{esc(it["link"])}" target="_blank" rel="noopener noreferrer">{esc(it["title"])}</a></h3>'
+            f'{summary}<p class="meta">Microsoft roadmap entry &middot; {esc(date)}{feature}</p></li>')
+
+
+def radar_page(radar: dict, cfg: dict, site_cfg: dict) -> str:
+    base = "../"
+    items = radar["items"]
+    products = sorted({p for it in items for p in it["products"] if p != "Microsoft 365"})
+    chips = ['<button type="button" class="radar-chip" aria-pressed="true" data-radar-filter="all">All</button>']
+    chips += [f'<button type="button" class="radar-chip" aria-pressed="false" data-radar-filter="{esc(p)}">{esc(p)}</button>'
+              for p in products]
+    if radar["ok"]:
+        newest = fmt_day(items[0]["published"]) if items and items[0]["published"] else None
+        status = "Public roadmap feed available." + (f" Newest entry: {newest}." if newest else "")
+    else:
+        status = f"The feed could not be loaded on the last check ({esc(radar['error'] or 'unknown error')}). Showing the last saved entries."
+    listing = (f'<ul class="radar-list" id="radar-list">{"".join(_radar_item_html(i) for i in items)}</ul>'
+               if items else '<div class="empty">No public roadmap entries are available right now.</div>')
+    body = (
+        '<section class="intro"><p class="kicker">Microsoft 365 &middot; separate section</p>'
+        '<h1>Change Radar</h1>'
+        '<p class="lede">Microsoft 365 features that are planned, rolling out or recently launched, based on the public roadmap.</p></section>'
+        '<aside class="radar-notice" aria-label="How to read this section">'
+        '<p><strong>Public roadmap is not a change in your tenant.</strong> Roadmap entries describe product plans. '
+        'Timing and availability depend on your licences, cloud and rollout settings, and can change.</p>'
+        f'<p>Tenant-specific messages (Message Center posts and service health incidents) are <strong>not</strong> shown here. '
+        f'Check them in the <a href="{MESSAGE_CENTER_URL}" target="_blank" rel="noopener noreferrer">Microsoft 365 Message center</a>. '
+        f'Automated access requires Microsoft Graph permissions: <a href="{GRAPH_COMM_URL}" target="_blank" rel="noopener noreferrer">service communications API</a>.</p></aside>'
+        f'<p class="meta">{status} &middot; <a href="{RADAR_PAGE}" target="_blank" rel="noopener noreferrer">Official Microsoft roadmap</a></p>'
+        f'<div class="radar-chips" role="group" aria-label="Filter by product">{"".join(chips)}</div>'
+        + listing
+        + "<script>" + RADAR_JS + "</script>"
+    )
+    return _layout(cfg, "Microsoft 365 Change Radar",
+                   "Public Microsoft 365 roadmap entries, kept separate from security news and tenant-specific Message Center data.",
+                   body, base)
+
+
+def _radar_home(radar: dict) -> str:
+    rows = []
+    for it in radar["items"][:3]:
+        stage = f" &middot; {esc(it['stage'])}" if it["stage"] else ""
+        rows.append(f'<li><a href="{esc(it["link"])}" target="_blank" rel="noopener noreferrer">{esc(it["title"])}</a>'
+                    f'<span class="meta">{esc(fmt_day(it["published"]))}{stage}</span></li>')
+    if not rows:
+        note = "The public roadmap feed is unavailable right now." if not radar["ok"] else "No public roadmap entries in the latest check."
+        rows.append(f'<li class="meta">{note}</li>')
+    return ('<section class="section" id="change-radar" aria-labelledby="radar-title">'
+            '<p class="kicker">Separate from security news</p>'
+            '<h2 id="radar-title">Microsoft 365 Change Radar</h2>'
+            '<p class="summary">Recent public roadmap entries for Microsoft 365. These are product plans, not confirmed changes in your tenant.</p>'
+            f'<ul class="radar-home">{"".join(rows)}</ul>'
+            '<p class="section-more"><a href="change-radar/index.html">Open the Change Radar &rarr;</a></p></section>')
+
+
 def write_site(out: Path, stories: list[dict], cfg: dict, now: datetime, status: dict,
-               articles: list[dict] | None = None, site_cfg: dict | None = None) -> None:
+               articles: list[dict] | None = None, site_cfg: dict | None = None,
+               radar: dict | None = None) -> None:
     articles = articles or []
+    radar = radar or {"ok": False, "error": "not loaded", "items": []}
     site_cfg = site_cfg or {}
     (out / "story").mkdir(parents=True, exist_ok=True)
     # Story pages are kept even after a story leaves the 7-day window, so old links never 404.
-    (out / "style.css").write_text(CSS.strip() + "\n" + EXTRA_CSS + "\n" + EDITORIAL_CSS + "\n" + DESIGN_CSS, encoding="utf-8")
+    (out / "style.css").write_text(CSS.strip() + "\n" + EXTRA_CSS + "\n" + DESIGN_CSS + "\n" + RADAR_CSS, encoding="utf-8")
     (out / "favicon.svg").write_text(FAVICON_SVG, encoding="utf-8")
     # Optional root-level QR image: keep deployment simple for repository web uploads.
     import shutil
@@ -2292,11 +2135,11 @@ def write_site(out: Path, stories: list[dict], cfg: dict, now: datetime, status:
     if verification_file.is_file():
         shutil.copyfile(verification_file, out / verification_file.name)
     (out / "logo.svg").write_text(LOGO_SVG, encoding="utf-8")
-    (out / "index.html").write_text(index_page(stories, cfg, now, status, articles, site_cfg), encoding="utf-8")
+    (out / "index.html").write_text(index_page(stories, cfg, now, status, articles, site_cfg, radar), encoding="utf-8")
+    (out / "change-radar").mkdir(parents=True, exist_ok=True)
+    (out / "change-radar" / "index.html").write_text(radar_page(radar, cfg, site_cfg), encoding="utf-8")
     (out / "today").mkdir(parents=True, exist_ok=True)
     (out / "today" / "index.html").write_text(today_page(stories, cfg, now), encoding="utf-8")
-    (out / "radar").mkdir(parents=True, exist_ok=True)
-    (out / "radar" / "index.html").write_text(radar_page(cfg), encoding="utf-8")
     (out / "saved").mkdir(parents=True, exist_ok=True)
     (out / "saved" / "index.html").write_text(saved_page(cfg), encoding="utf-8")
     (out / "stories.json").write_text(stories_index(stories), encoding="utf-8")
@@ -2353,8 +2196,6 @@ def _probe(url: str, timeout: int = 8) -> str:
                 return "ok" if r.status < 400 else "unverified"
         except urllib.error.HTTPError as e:
             if e.code in DEAD_CODES:
-                if method == "HEAD":
-                    continue  # HEAD can be blocked while the actual article GET works.
                 return "dead"
             if e.code in (403, 405, 429):
                 continue
@@ -2387,13 +2228,6 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
     content_dir = content_dir or CONTENT_DIR
     fresh: list[dict] = []
     src_status: list[dict] = []
-    previous_status_file = out / "status.json"
-    try:
-        previous_status = json.loads(previous_status_file.read_text(encoding="utf-8")) if previous_status_file.exists() else {}
-        source_health = {entry.get("id"): entry.get("last_success_at")
-                         for entry in previous_status.get("sources", []) if entry.get("id") and entry.get("last_success_at")}
-    except (OSError, json.JSONDecodeError):
-        source_health = {}
     for src in cfg["sources"]:
         try:
             data = (fixtures / f"{src['id']}.xml").read_bytes() if fixtures else fetch(src["url"])
@@ -2404,14 +2238,9 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
                 items = [i for i in items if is_security_item(i)]
             items = items[: cfg.get("max_items_per_feed", 30)]
             fresh += items
-            last_success = now.isoformat(timespec="seconds")
-            source_health[src["id"]] = last_success
-            src_status.append({"id": src["id"], "name": src["name"], "ok": True, "count": len(items),
-                               "last_attempt_at": now.isoformat(timespec="seconds"), "last_success_at": last_success})
+            src_status.append({"id": src["id"], "name": src["name"], "ok": True, "count": len(items)})
         except Exception as e:  # noqa: BLE001 - one bad feed must not stop the run
-            src_status.append({"id": src["id"], "name": src["name"], "ok": False, "count": 0,
-                               "error": str(e)[:200], "last_attempt_at": now.isoformat(timespec="seconds"),
-                               "last_success_at": source_health.get(src["id"])})
+            src_status.append({"id": src["id"], "name": src["name"], "ok": False, "count": 0, "error": str(e)[:200]})
 
     kev, kev_err = load_kev(fixtures)
     kev_checked = kev_err is None
@@ -2428,6 +2257,7 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
 
     warnings = quality_warnings(stories)
     articles = load_articles(content_dir, warnings)
+    radar = load_radar(fixtures, data_file)
     publisher = site_cfg.get("publisher") or {}
     if not all((publisher.get(k) or "").strip() for k in ("name", "address", "email")):
         warnings.append("site.json publisher details incomplete: Impressum page is a placeholder")
@@ -2438,7 +2268,6 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
     ok_count = sum(1 for s in src_status if s["ok"])
     status = {
         "generated": now.isoformat(timespec="seconds"),
-        "last_check_at": now.isoformat(timespec="seconds"),
         "sources_ok": ok_count,
         "sources_total": len(src_status),
         "sources": src_status,
@@ -2450,46 +2279,34 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
         "warnings": warnings,
     }
 
-    # Static story pages change only when content changes. status.json is
-    # refreshed every run below so the feed-check timestamp never goes stale.
+    # Only touch tracked files when published content changes, so the repo
+    # does not get a commit on every scheduled run.
     digest_src = json.dumps({
+        "radar": [[i["id"], i["title"], i["link"], i["published"], i["stage"], i["products"], i["summary"]] for i in radar["items"]],
+        "radar_ok": radar["ok"],
         "stories": [[s["id"], s["title"], s["summary"], s["published"], s["category"], s["priority"],
                      s["score"], s["image"], [x["url"] for x in s["sources"]]] for s in stories],
-        "articles": [[a["section"], a["slug"], a["title"], a["date"], a["summary"], a["_md"], a.get("ai_assisted", False)] for a in articles],
+        "articles": [[a["section"], a["slug"], a["title"], a["date"], a["summary"], a["_md"]] for a in articles],
         "site": site_cfg,
-        "render": "5.37-weekly-review-label",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
+        "render": "5.29",  # bump when the HTML/CSS/JS output changes, so the site rebuilds
     }, ensure_ascii=False, sort_keys=True)
     if fixtures is None:
         check_source_links(stories, data_file.parent / "linkcheck.json", now)
-    digest_src += json.dumps([[source["url"], source.get("link_status", "unchecked")]
-                              for story in stories for source in story["sources"]], sort_keys=True)
     digest = hashlib.sha1(digest_src.encode("utf-8")).hexdigest()
     digest_file = data_file.parent / "digest.txt"
     prev_digest = digest_file.read_text(encoding="utf-8").strip() if digest_file.exists() else ""
     site_missing = not (out / "index.html").exists()
     status["changed"] = digest != prev_digest or site_missing
-    publication_file = data_file.parent / "content-publication.json"
-    try:
-        publication_state = json.loads(publication_file.read_text(encoding="utf-8")) if publication_file.exists() else {}
-    except (OSError, json.JSONDecodeError):
-        publication_state = {}
-    content_published_at = publication_state.get("content_published_at")
-    if status["changed"] or not content_published_at:
-        content_published_at = now.isoformat(timespec="seconds")
-        publication_state = {"digest": digest, "content_published_at": content_published_at}
-        data_file.parent.mkdir(parents=True, exist_ok=True)
-        publication_file.write_text(json.dumps(publication_state, indent=2) + "\n", encoding="utf-8")
-    status["content_published_at"] = content_published_at
-    data_file.parent.mkdir(parents=True, exist_ok=True)
+    status["change_radar"] = {"ok": radar["ok"], "entries": len(radar["items"]), "error": radar["error"]}
+    if not radar["ok"]:
+        warnings.append(f"Microsoft 365 roadmap feed unavailable: {radar['error']}")
     if status["changed"]:
+        data_file.parent.mkdir(parents=True, exist_ok=True)
         data_file.write_text(items_text, encoding="utf-8")
         digest_file.write_text(digest + "\n", encoding="utf-8")
-        write_site(out, stories, cfg, now, status, articles, site_cfg)
+        write_site(out, stories, cfg, now, status, articles, site_cfg, radar=radar)
     elif not data_file.exists() or data_file.read_text(encoding="utf-8") != items_text:
         data_file.write_text(items_text, encoding="utf-8")
-    # Keep feed status fresh even when the story/content digest did not change.
-    out.mkdir(parents=True, exist_ok=True)
-    (out / "status.json").write_text(json.dumps(status, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     return status
 
 
@@ -2505,181 +2322,6 @@ def main() -> None:
     status = run(cfg, args.out, args.data, args.fixtures, now, site_cfg)
     print(json.dumps({k: status[k] for k in ("generated", "sources_ok", "sources_total", "stories", "critical", "high", "warnings")}, indent=2))
 
-
-DESIGN_CSS += """
-
-/* Editorial analysis layout: strong cover art, readable hierarchy, real action lists. */
-.analysis-hero{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);min-height:340px;margin:0 0 24px;border:1px solid var(--line);border-radius:26px;overflow:hidden;background:var(--surface);box-shadow:var(--shadow)}
-.analysis-visual{position:relative;min-height:340px;background:#080d16;overflow:hidden}
-.analysis-visual img{width:100%;height:100%;min-height:340px;object-fit:cover;transition:transform .65s cubic-bezier(.2,.7,.2,1)}
-.analysis-hero:hover .analysis-visual img{transform:scale(1.035)}
-.analysis-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 60%,var(--surface) 100%);pointer-events:none}
-.visual-corner{position:absolute;width:42px;height:42px;border-color:#5eead4;z-index:1;opacity:.8}
-.visual-corner-a{left:18px;top:18px;border-left:1px solid;border-top:1px solid}
-.visual-corner-b{right:18px;bottom:18px;border-right:1px solid;border-bottom:1px solid}
-.visual-caption{position:absolute;left:28px;bottom:24px;z-index:1;color:#d7e2ec;font:700 .65rem/1 var(--sans);letter-spacing:.2em}
-.analysis-heading{display:flex;flex-direction:column;justify-content:center;gap:15px;padding:clamp(24px,4vw,52px)}
-.analysis-eyebrow,.subscribe-eyebrow,.filter-eyebrow{margin:0;color:var(--accent);font-size:.68rem;font-weight:800;letter-spacing:.15em}
-.analysis-live-dot,.subscribe-pulse{display:inline-block;width:8px;height:8px;margin-right:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 4px rgba(34,197,94,.12),0 0 14px rgba(34,197,94,.55);vertical-align:1px}
-.analysis-separator{margin:0 9px;color:var(--muted);opacity:.6}
-.article-title{font-size:clamp(2rem,3.8vw,3.35rem);line-height:1.02;letter-spacing:-.045em;margin:0;font-weight:800;background:none;-webkit-text-fill-color:var(--ink);text-wrap:balance}
-.analysis-lede{max-width:56ch;margin:0;color:var(--muted);font-size:1.04rem;line-height:1.65}
-.analysis-meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:3px}
-.analysis-meta span{padding:6px 10px;border:1px solid var(--line);border-radius:999px;color:var(--muted);background:var(--surface-2);font-size:.76rem;font-weight:600}
-.article-toc{display:flex;align-items:flex-start;gap:16px;max-width:940px;margin:0 auto 30px;padding:16px 18px;border:1px solid var(--line);border-radius:18px;background:var(--surface);box-shadow:0 8px 24px rgba(0,0,0,.06)}
-.article-toc-label{flex:none;padding:5px 9px;border-radius:999px;background:color-mix(in srgb,var(--accent) 14%,var(--surface));color:var(--accent);font-size:.7rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
-.article-toc-links{display:flex;flex-wrap:wrap;gap:7px}
-.article-toc-links a{display:inline-flex;padding:5px 9px;border-radius:999px;background:var(--surface-2);color:var(--ink);font-size:.79rem;text-decoration:none;transition:background .15s,color .15s}
-.article-toc-links a:hover{background:var(--accent);color:var(--accent-ink)}
-.analysis-prose{max-width:820px;margin:0 auto;padding:8px clamp(0px,2vw,16px)}
-.analysis-prose h3{position:relative;margin:2.8rem 0 .85rem;padding:0 0 12px;border-bottom:1px solid var(--line);font-size:clamp(1.25rem,2vw,1.55rem);line-height:1.2;letter-spacing:-.025em;font-weight:780}
-.analysis-prose h3:before{content:"";display:inline-block;width:7px;height:1em;margin-right:11px;border-radius:8px;background:var(--accent);vertical-align:-.12em;box-shadow:0 0 12px color-mix(in srgb,var(--accent) 60%,transparent)}
-.analysis-prose h3:first-of-type{margin-top:0;padding:18px 20px;border:1px solid color-mix(in srgb,var(--accent) 30%,var(--line));border-left:4px solid var(--accent);border-radius:16px;background:color-mix(in srgb,var(--accent) 7%,var(--surface))}
-.analysis-prose h3:first-of-type:before{display:none}
-.analysis-prose p{max-width:76ch;margin:0 0 1.05rem;line-height:1.78}
-.analysis-prose strong{color:var(--ink)}
-.analysis-prose a:not(.btn){text-decoration-thickness:1px;text-underline-offset:3px}
-.analysis-prose ul{padding-left:1.25rem;margin:1rem 0 1.45rem}
-.analysis-prose ul li{padding-left:.25rem;margin:.65rem 0;line-height:1.7}
-.analysis-prose ol.action-list{list-style:none;counter-reset:action;margin:1.1rem 0 1.6rem;padding:0;display:grid;gap:10px}
-.analysis-prose ol.action-list li{counter-increment:action;position:relative;margin:0;padding:17px 18px 17px 58px;border:1px solid var(--line);border-radius:15px;background:var(--surface);box-shadow:0 4px 14px rgba(0,0,0,.045);line-height:1.7}
-.analysis-prose ol.action-list li:before{content:counter(action,decimal-leading-zero);position:absolute;left:16px;top:17px;display:grid;place-items:center;width:28px;height:28px;border-radius:9px;background:color-mix(in srgb,var(--accent) 17%,var(--surface));color:var(--accent);font-size:.68rem;font-weight:850}
-.analysis-prose blockquote{margin:1.5rem 0;padding:16px 20px;border-left:3px solid var(--accent);border-radius:0 14px 14px 0;background:var(--surface);color:var(--muted)}
-.analysis-prose code{padding:.12em .4em;border:1px solid var(--line);border-radius:5px;background:var(--surface-2);font-size:.9em}
-.analysis-back{display:flex;align-items:center;gap:15px;flex-wrap:wrap;margin-top:3rem!important;padding-top:20px;border-top:1px solid var(--line)}
-.analysis-back .btn{margin-right:2px}
-.text-link{font-size:.9rem;font-weight:650}
-
-/* All story filters stay open and visible immediately; no hidden accordion. */
-.filter-panel{margin:20px 0 30px;padding:clamp(16px,2.2vw,24px);border:1px solid var(--line);border-radius:22px;background:linear-gradient(145deg,var(--surface),color-mix(in srgb,var(--surface-2) 48%,var(--surface)));box-shadow:var(--shadow)}
-.filter-panel-head{display:flex;align-items:center;gap:14px;margin-bottom:14px}
-.filter-panel-head>div{margin-right:auto}
-.filter-eyebrow{margin:0 0 3px;font-size:.63rem}
-.filter-panel-head h2{margin:0;font-size:1.22rem;line-height:1.2;letter-spacing:-.025em}
-.filter-count{margin:0;color:var(--muted);font-size:.83rem;font-variant-numeric:tabular-nums;white-space:nowrap}
-.filter-reset{flex:none;padding:7px 11px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--muted);font:inherit;font-size:.78rem;font-weight:650;cursor:pointer}
-.filter-reset:hover{border-color:var(--accent);color:var(--accent)}
-.filter-panel .toolbar{margin:0 0 13px}
-.filter-panel .search{height:48px;box-shadow:none;border-radius:13px}
-.filter-group-label{margin:0 0 8px;color:var(--muted);font-size:.7rem;font-weight:750;letter-spacing:.1em;text-transform:uppercase}
-.filter-panel .filters{gap:8px;margin:0}
-.filter-panel .filters button{padding:8px 10px 8px 13px;font-size:.82rem;transition:transform .15s,border-color .15s,background .15s}
-.filter-panel .filters button:hover{transform:translateY(-1px)}
-.filter-panel .filter-tools{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:16px 0 0;padding-top:14px;border-top:1px solid var(--line)}
-.filter-panel .filter-tools label{font-size:.72rem}
-.filter-panel .filter-tools select{min-height:46px;border-radius:12px}
-.filter-panel .filter-tools .important-only{min-height:46px;padding:8px 12px;cursor:pointer}
-.filter-panel .important-only span span{display:block}
-.filter-panel .important-only .hint{margin-top:1px;font-size:.68rem}
-.filter-panel .filter-tools .important-only strong{color:var(--ink)}
-@media(max-width:760px){.analysis-hero{grid-template-columns:1fr}.analysis-visual{min-height:210px;max-height:280px}.analysis-visual img{min-height:210px}.analysis-visual:after{background:linear-gradient(0deg,var(--surface) 0%,transparent 45%)}.analysis-heading{padding:24px}.filter-panel .filter-tools{grid-template-columns:1fr 1fr}.filter-panel .filter-tools .important-only{grid-column:1/-1}.article-toc{display:block}.article-toc-label{display:inline-flex;margin-bottom:9px}}
-@media(max-width:480px){.filter-panel-head{gap:9px;flex-wrap:wrap}.filter-panel-head>div{width:100%}.filter-count{margin-right:auto}.filter-panel .filter-tools{grid-template-columns:1fr}.filter-panel .filter-tools .important-only{grid-column:auto}.analysis-prose ol.action-list li{padding:15px 14px 15px 52px}.analysis-prose ol.action-list li:before{left:13px;top:15px}}
-@media(prefers-reduced-motion:reduce){.analysis-visual img,.article-toc-links a,.filter-panel .filters button{transition:none}.analysis-hero:hover .analysis-visual img{transform:none}}
-
-"""
-
-DESIGN_CSS += """
-/* Newsletter signup: visually distinct, but only rendered when an owner-approved HTTPS URL exists. */
-.subscribe{position:relative;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(230px,.65fr);gap:28px;align-items:center;overflow:hidden;margin:44px 0 0;padding:clamp(22px,3vw,34px);border-radius:24px;background:radial-gradient(ellipse at 95% 10%,color-mix(in srgb,var(--accent) 17%,transparent),transparent 42%),var(--surface);box-shadow:var(--shadow)}
-.subscribe:after{content:"";position:absolute;right:-70px;bottom:-105px;width:220px;height:220px;border:1px solid color-mix(in srgb,var(--accent) 22%,transparent);border-radius:50%;box-shadow:0 0 0 24px color-mix(in srgb,var(--accent) 4%,transparent),0 0 0 48px color-mix(in srgb,var(--accent) 3%,transparent);pointer-events:none}
-.subscribe-copy,.subscribe-action{position:relative;z-index:1}
-.subscribe h2{max-width:22ch;margin:5px 0 9px;font-size:clamp(1.55rem,3vw,2.1rem);line-height:1.08;letter-spacing:-.035em}
-.subscribe-copy>p:not(.subscribe-eyebrow){max-width:58ch;margin:0;color:var(--muted);line-height:1.65}
-.subscribe-points{display:flex;flex-wrap:wrap;gap:7px;margin-top:17px}
-.subscribe-points span{padding:5px 9px;border:1px solid var(--line);border-radius:999px;background:color-mix(in srgb,var(--surface) 84%,transparent);color:var(--muted);font-size:.72rem;font-weight:650}
-.subscribe-action{padding-left:24px;border-left:1px solid var(--line)}
-.subscribe-btn{display:flex;align-items:center;justify-content:space-between;gap:18px;width:100%;min-height:52px;padding:12px 16px;border:1px solid var(--accent);border-radius:14px;background:var(--accent);color:var(--accent-ink);font-weight:760;text-decoration:none;box-shadow:0 10px 24px color-mix(in srgb,var(--accent) 20%,transparent);transition:transform .16s,box-shadow .16s}
-.subscribe-btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px color-mix(in srgb,var(--accent) 27%,transparent)}
-.subscribe-btn span{font-size:1.2rem}
-.subscribe-action>p{margin:10px 0 0;color:var(--muted);font-size:.75rem;line-height:1.55}
-.subscribe-action>p a{color:var(--ink)}
-.subscribe-form{display:flex;flex-direction:column}
-.subscribe-form input{width:100%;min-height:48px}
-.subscribe-form button{min-height:48px;border-radius:14px;background:var(--accent);color:var(--accent-ink)}
-@media(max-width:700px){.subscribe{grid-template-columns:1fr;gap:18px}.subscribe-action{padding:17px 0 0;border-left:0;border-top:1px solid var(--line)}.subscribe h2{max-width:30ch}}
-@media(prefers-reduced-motion:reduce){.subscribe-btn{transition:none}.subscribe-btn:hover{transform:none}}
-"""
-
-DESIGN_CSS += """
-/* High-visibility intelligence filter console: open by default, with a clear signal hierarchy. */
-.filter-panel{position:relative;isolation:isolate;overflow:hidden;border:1px solid color-mix(in srgb,var(--accent) 38%,var(--line));background:radial-gradient(ellipse at 100% 0%,color-mix(in srgb,#38bdf8 14%,transparent),transparent 35%),radial-gradient(ellipse at 0% 100%,color-mix(in srgb,#22c55e 10%,transparent),transparent 42%),var(--surface);box-shadow:0 16px 45px -28px color-mix(in srgb,var(--accent) 45%,transparent),var(--shadow)}
-.filter-panel:before{content:"";position:absolute;inset:0 0 auto;height:3px;background:linear-gradient(90deg,#22c55e 0%,#38bdf8 52%,transparent 100%);z-index:-1}
-.filter-panel:after{content:"";position:absolute;right:24px;top:23px;width:64px;height:64px;border:1px solid color-mix(in srgb,var(--accent) 18%,transparent);border-radius:50%;box-shadow:0 0 0 10px color-mix(in srgb,var(--accent) 3%,transparent),0 0 32px color-mix(in srgb,var(--accent) 13%,transparent);pointer-events:none;z-index:-1}
-.filter-panel-head{position:relative;padding:5px 0 15px;border-bottom:1px solid color-mix(in srgb,var(--accent) 20%,var(--line))}
-.filter-eyebrow{display:flex;align-items:center;gap:8px;color:var(--accent);font-size:.68rem;font-weight:800;letter-spacing:.14em}
-.filter-eyebrow:before{content:"";width:7px;height:7px;border-radius:50%;background:#22c55e;box-shadow:0 0 12px #22c55e}
-.filter-panel-head h2{font-size:clamp(1.35rem,2.4vw,1.8rem);letter-spacing:-.04em}
-.filter-count{padding:7px 11px;border:1px solid var(--line);border-radius:999px;background:color-mix(in srgb,var(--surface) 86%,transparent);font-weight:700}
-.filter-reset{border-color:color-mix(in srgb,var(--accent) 35%,var(--line));color:var(--ink)}
-.filter-panel .toolbar{position:relative;margin:16px 0 18px}
-.filter-panel .search{height:56px;padding-left:44px;border:1px solid color-mix(in srgb,var(--accent) 36%,var(--line));background:color-mix(in srgb,var(--surface) 92%,transparent);font-size:1rem;box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--accent) 5%,transparent),0 8px 22px -18px var(--accent)}
-.filter-panel .toolbar>svg{position:absolute;left:15px;top:50%;z-index:1;transform:translateY(-50%);color:var(--accent)}
-.filter-panel .search:focus{border-color:var(--accent);box-shadow:0 0 0 4px color-mix(in srgb,var(--accent) 15%,transparent)}
-.filter-group-label{display:flex;align-items:center;gap:10px;margin:0 0 10px;font-size:.68rem;letter-spacing:.13em}
-.filter-group-label:after{content:"";height:1px;flex:1;background:var(--line)}
-.filter-panel .filters{gap:9px}
-.filter-panel .filters button{min-height:42px;padding:8px 12px;border-color:color-mix(in srgb,var(--accent) 20%,var(--line));background:color-mix(in srgb,var(--surface) 92%,transparent);font-weight:650}
-.filter-panel .filters button[aria-pressed="true"]{border-color:var(--accent);background:linear-gradient(120deg,color-mix(in srgb,var(--accent) 22%,var(--surface)),color-mix(in srgb,#38bdf8 14%,var(--surface)));color:var(--ink);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--accent) 18%,transparent),0 5px 16px -12px var(--accent)}
-.filter-panel .filters button[aria-pressed="true"] .count{background:var(--accent);color:var(--accent-ink)}
-.filter-panel .filter-tools{margin-top:18px;padding-top:16px;border-top:1px solid color-mix(in srgb,var(--accent) 19%,var(--line))}
-.filter-panel .filter-tools select,.filter-panel .filter-tools .important-only{border-color:color-mix(in srgb,var(--accent) 20%,var(--line));background:color-mix(in srgb,var(--surface) 94%,transparent)}
-.filter-panel .filter-tools select:focus-visible,.filter-panel .filter-tools .important-only:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 13%,transparent)}
-.donate-qr{margin:14px 0 0}
-.donate-qr img{width:160px;height:160px;object-fit:contain;border-radius:12px;background:#fff;padding:5px}
-@media(max-width:640px){.filter-panel:after{right:15px;top:15px;width:42px;height:42px}.filter-count{white-space:normal}}
-@media(prefers-reduced-motion:reduce){.filter-panel,.filter-panel *{scroll-behavior:auto}}
-"""
-
-
-DESIGN_CSS += """
-/* Compact signal beacon after overview; full newsletter card stays below news. */
-.signal-teaser{position:relative;isolation:isolate;display:flex;align-items:center;gap:16px;margin:18px 0 26px;padding:15px 18px;border:1px solid color-mix(in srgb,var(--accent) 39%,var(--line));border-radius:18px;background:linear-gradient(120deg,color-mix(in srgb,var(--accent) 10%,var(--surface)) 0%,var(--surface) 62%,color-mix(in srgb,#38bdf8 7%,var(--surface)) 100%);box-shadow:0 14px 40px -30px var(--accent);overflow:hidden}
-.signal-teaser:before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,transparent 0%,color-mix(in srgb,var(--accent) 9%,transparent) 55%,transparent 100%);transform:translateX(-100%);animation:signal-sweep 9s ease-in-out infinite}
-@keyframes signal-sweep{0%,70%,100%{transform:translateX(-100%)}85%{transform:translateX(100%)}}
-.signal-teaser-mark{position:relative;display:grid;place-items:center;flex:none;width:43px;height:43px;border:1px solid color-mix(in srgb,var(--accent) 56%,var(--line));border-radius:12px;background:var(--surface);color:var(--accent);font-size:.84rem;font-weight:850;letter-spacing:.06em;box-shadow:inset 0 0 16px color-mix(in srgb,var(--accent) 10%,transparent)}
-.signal-teaser-dot{position:absolute;top:-3px;right:-3px;width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 11px #22c55e}
-.signal-teaser-copy{display:flex;flex:1;flex-direction:column;gap:2px;min-width:0}
-.signal-teaser-copy strong{font-size:.94rem;color:var(--ink);letter-spacing:-.015em}
-.signal-teaser-copy small{font-size:.8rem;color:var(--muted);line-height:1.45}
-.signal-teaser-link{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:43px;padding:9px 16px;border:1px solid var(--accent);border-radius:11px;background:var(--accent);color:var(--accent-ink);font-size:.85rem;font-weight:760;text-decoration:none;white-space:nowrap;transition:transform .2s,box-shadow .2s}
-.signal-teaser-link:hover{transform:translateY(-2px);box-shadow:0 10px 22px color-mix(in srgb,var(--accent) 22%,transparent)}
-.signal-teaser-link:focus-visible,.subscribe-btn:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-@media(max-width:570px){.signal-teaser{flex-wrap:wrap;gap:10px}.signal-teaser-link{width:100%;margin-top:4px}.signal-teaser-copy small{font-size:.75rem}}
-@media(prefers-reduced-motion:reduce){.signal-teaser:before{animation:none}.signal-teaser-link{transition:none}.signal-teaser-link:hover{transform:none}}
-"""
-
-DESIGN_CSS += RADAR_CSS + """
-.radar-home{display:flex;align-items:center;gap:15px;flex-wrap:wrap;margin:36px 0 0;border:1px solid color-mix(in srgb,var(--accent) 30%,var(--line));border-radius:17px;padding:16px 19px;background:linear-gradient(115deg,color-mix(in srgb,var(--accent) 10%,var(--surface)),var(--surface))}
-.radar-home-icon{font-size:1.6rem;color:var(--accent)}.radar-home div{flex:1;min-width:190px;color:var(--muted);font-size:.88rem}.radar-home div strong{display:block;color:var(--ink);font-size:.98rem}.radar-home a{color:var(--accent);font-weight:770;text-decoration:none;white-space:nowrap}.radar-home a:hover{text-decoration:underline}
-.card-evidence{margin:5px 0 10px;padding:7px 9px;border-left:2px solid var(--accent);background:color-mix(in srgb,var(--accent) 7%,var(--surface));border-radius:0 6px 6px 0;color:var(--muted);font-size:.73rem;line-height:1.45}
-@media(max-width:560px){.radar-home a{width:100%}}
-"""
-
-DESIGN_CSS += """
-/* Decision desk: practical wayfinding, no made-up claims or third-party tracking. */
-.home-intro{position:relative;isolation:isolate;margin-top:22px;padding:clamp(23px,4vw,45px);border:1px solid color-mix(in srgb,var(--accent) 30%,var(--line));border-radius:26px;background:radial-gradient(ellipse at 100% 0%,color-mix(in srgb,#38bdf8 15%,transparent),transparent 48%),radial-gradient(ellipse at 0% 100%,color-mix(in srgb,#22c55e 10%,transparent),transparent 55%),var(--surface);overflow:hidden;box-shadow:var(--shadow)}
-.home-intro:after{content:"";position:absolute;right:6%;top:12%;z-index:-1;width:160px;height:160px;border:1px solid color-mix(in srgb,var(--accent) 20%,transparent);border-radius:50%;box-shadow:0 0 0 25px color-mix(in srgb,var(--accent) 4%,transparent),0 0 0 55px color-mix(in srgb,var(--accent) 2%,transparent);pointer-events:none}
-.home-intro-kicker{display:inline-flex;align-items:center;gap:9px;font-size:.68rem;letter-spacing:.16em;font-weight:800;color:var(--accent)}
-.home-intro-dot{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 14px #22c55e}
-.home-intro h1{margin:13px 0 15px;font-size:clamp(2.35rem,5.5vw,4.3rem);line-height:1.05;letter-spacing:-.055em;text-wrap:balance}
-.home-intro h1 em{font-style:normal;color:var(--accent)}
-.home-intro .meta{max-width:80ch;line-height:1.6}.home-intro-actions{display:flex;align-items:center;gap:11px;flex-wrap:wrap;margin-top:18px}
-.home-intro-secondary{display:inline-flex;align-items:center;min-height:43px;padding:9px 15px;border:1px solid color-mix(in srgb,var(--accent) 35%,var(--line));border-radius:12px;color:var(--ink);font-weight:720;text-decoration:none;background:var(--surface)}
-.home-intro-secondary:hover{border-color:var(--accent);color:var(--accent)}
-.signal-rail{margin:25px 0 0}.signal-rail-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:11px}.signal-rail-head>span{color:var(--accent);font-size:.69rem;font-weight:800;letter-spacing:.16em}.signal-rail-head p{margin:0;color:var(--muted);font-size:.78rem}
-.signal-rail-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}
-.signal-tile{position:relative;display:flex;flex-direction:column;gap:9px;min-width:0;min-height:159px;padding:17px 18px;border:1px solid var(--line);border-top:2px solid var(--accent);border-radius:15px;background:var(--surface);color:var(--ink);text-decoration:none;transition:transform .18s,border-color .18s,box-shadow .18s}
-.signal-tile:hover{transform:translateY(-3px);border-color:var(--accent);box-shadow:var(--shadow)}.signal-tile:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-.signal-tile-watch{border-top-color:var(--crit)}.signal-tile-latest{border-top-color:#38bdf8}.signal-tile-personal{border-top-color:#22c55e}
-.signal-tile-kicker{color:var(--muted);font-size:.68rem;font-weight:820;letter-spacing:.14em}.signal-tile strong{font-size:.97rem;line-height:1.35;padding-right:12px;overflow-wrap:anywhere}.signal-tile-desc{max-width:31ch;margin-top:auto;color:var(--muted);font-size:.75rem;line-height:1.48}.signal-tile-arrow{position:absolute;right:17px;top:15px;color:var(--accent);font-size:1.1rem}
-.hero-evidence{margin:2px 0 10px;padding:7px 10px;border-left:2px solid var(--accent);background:color-mix(in srgb,var(--accent) 9%,var(--surface));font-size:.78rem;color:var(--muted)}
-/* The full Mailchimp card is a visually distinct destination, not a popup. */
-.subscribe#newsletter{border:1px solid color-mix(in srgb,var(--accent) 38%,var(--line));box-shadow:var(--shadow),0 0 50px -35px var(--accent)}
-.subscribe#newsletter:before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#22c55e,#38bdf8,transparent)}
-@media(max-width:760px){.signal-rail-grid{grid-template-columns:1fr}.signal-tile{min-height:115px}.home-intro:after{opacity:.3}}
-@media(max-width:500px){.home-intro{padding:21px}.home-intro-actions .btn,.home-intro-secondary{width:100%;justify-content:center}}
-@media(prefers-reduced-motion:reduce){.signal-tile{transition:none}.signal-tile:hover{transform:none}}
-"""
 
 if __name__ == "__main__":
     main()
