@@ -29,7 +29,7 @@
    "title": "Code-execution flaw in UEFI firmware threatens most servers on planet Earth",
    "link": "https://arstechnica.com/security/2026/10/code-execution-flaw-in-uefi-firmware-threatens-most-servers-on-planet-earth/",
    "published": "2026-10-27T20:25:55+00:00",
-   "summary": "Defenders across the world face the burden of responding to yet another botched code-execution vulnerability, this time in boot-time firmware used by most of the world’s server vendors and data centers. The vulnerability, with a severity rating of 9.5 out of a possible 10, resides in the TianoCore EDK II, an open…",
+   "summary": "Defenders across the world face the burden of responding to yet another botched code-execution vulnerability, this time in boot-time firmware used by most of the world’s server vendors and data centers. The vulnerability, with a severity rating of 9.5 out of 10, resides in the TianoCore EDK II, an open source codebase…",
    "image": "https://cdn.arstechnica.net/wp-content/uploads/2024/04/malware.jpg",
    "cves": [
     "CVE-2026-97631"
@@ -2704,6 +2704,23 @@
    "instructions_checked": true
   },
   {
+   "id": "2f6663d0ce96",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Nefilim, Hive ransomware operator given five-year-plus sentence after guilty plea",
+   "link": "https://therecord.media/nefilim-hive-ransomware-operator-70-months-prison",
+   "published": "2026-10-27T20:40:00+00:00",
+   "summary": "Ukrainian national Artem Stryzhak, 36, had pleaded guilty last year to charges related to participating in at least two well-known ransomware groups.",
+   "image": "https://cms.therecord.media/uploads/pexels_kevin_ku_577585_4e8f7d9fdf.jpg",
+   "cves": [],
+   "first_seen": "2026-10-27T21:16:50.047660+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "bf2645506057",
    "source": "therecord",
    "source_name": "The Record",
@@ -3615,6 +3632,27 @@
    "instructions_checked": true
   },
   {
+   "id": "7477a331e67f",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Hackers hijack Convertr analytics script to steal payment card data",
+   "link": "https://www.bleepingcomputer.com/news/security/hackers-hijack-convertr-analytics-script-to-steal-payment-card-data/",
+   "published": "2026-10-27T20:57:25+00:00",
+   "summary": "A credit card skimming group reportedly compromised a shared analytics script used by e-commerce platform Convertr to steal shoppers' payment data during checkout.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/27/cart.jpg",
+   "cves": [],
+   "first_seen": "2026-10-27T21:16:50.047660+00:00",
+   "image_checked": true,
+   "instructions": [
+    "The researchers suggest that those who paid by card on a Brazilian store that contained the ‘checkout.convertr’ string in the checkout address page since October 24 should contact their bank immediately and ask to block their card.",
+    "In an update today, Sansec confirmed that Convertr \"removed the skimmer and upgraded Plausible to a patched version,\" noting that the company announced it was notifying affected merchants and payment providers.",
+    "Sansec researchers warned that browser caching could keep the malicious script active on impacted sites for up to 24 hours after cleanup, so customers should clear their cache before placing new orders, even after the threat has been eliminated."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "eb477469ff02",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -3807,28 +3845,6 @@
     "PHP core developer Gina Peter Banyard warned that no PHP2Shell mitigations would fully block potential attacks and that applying the official security patches is the only permanent defense.",
     "However, the PHP security team did share a number of mitigation measures that should reduce exposure to some attack paths for those who can't immediately patch their servers, although they don't fully protect against exploitation (detailed information is available in PHP's blog post ):",
     "Admins should install PHP 8.5.12, 8.4.27, 8.3.36, or 8.2.35 as soon as possible on servers running PHP 8.x and migrate to a fixed release if they're running PHP 7 or earlier."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "05dd90fd0f45",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "PHP warns admins of two critical flaws, emergency patches coming tomorrow",
-   "link": "https://www.bleepingcomputer.com/news/security/php-warns-admins-of-two-critical-flaws-emergency-patches-coming-tomorrow/",
-   "published": "2026-10-20T20:56:43+00:00",
-   "summary": "The PHP security team is warning administrators to prepare for emergency security updates tomorrow to address two critical vulnerabilities, as information about the flaws has reportedly leaked ahead of their scheduled disclosure.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2021/03/29/PHP-headpic.jpg",
-   "cves": [],
-   "first_seen": "2026-10-20T21:13:18.807183+00:00",
-   "image_checked": true,
-   "instructions": [
-    "\"We reserve the right to release earlier should details of either vulnerability become public, or should evidence of active exploitation appear in the wild,\" the PHP security team warned.",
-    "In an advisory published Tuesday , the PHP development team announced that it plans to release security updates on Wednesday, October 21, at 14:00 UTC (10:00 AM Eastern), to address two vulnerabilities, each rated 9.2 under CVSS v4.0.",
-    "The PHP security team also sent a notice to its ANNOUNCE mailing list, urging administrators to prepare to install the security updates as soon as they become available.",
-    "Dell asks admins to patch max severity CSM flaws as soon as possible"
    ],
    "instructions_checked": true
   },
@@ -4111,6 +4127,22 @@
    "cves": [],
    "first_seen": "2026-10-21T20:33:29.956934+00:00",
    "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "e77674105596",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "Email Bombing, External Teams Chats Form Repeatable Access Path",
+   "link": "https://www.darkreading.com/cloud-security/email-bombing-external-teams-chats-repeatable-access-path",
+   "published": "2026-10-27T20:42:40+00:00",
+   "summary": "A common mix of impersonation, domain infrastructure, and trusted software is helping attackers scale Microsoft Teams intrusions across organizations.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt634b295db59f5c55/6ae0fd3853ec236cfd97d242/Email_flood-juststock-GettyImages-2156140935.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-10-27T21:16:50.047660+00:00",
    "instructions": [],
    "instructions_checked": true
   },
