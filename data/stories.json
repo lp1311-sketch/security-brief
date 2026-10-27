@@ -1658,27 +1658,6 @@
    "instructions_checked": true
   },
   {
-   "id": "92e407676578",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Hackers Hijack Five OVHcloud CLI Releases to Distribute Secret-Stealing Malware",
-   "link": "https://thehackernews.com/2026/10/hackers-hijack-five-ovhcloud-cli.html",
-   "published": "2026-10-20T08:21:29+00:00",
-   "summary": "An attacker used a contributor's GitHub account to replace the download archives on five existing releases of OVHcloud's command-line tool on Monday, October 19. The account had been hijacked, and the new files were a build designed to steal secrets stored on the disk of any machine that runs it, the cloud provider…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSRX5Jjz6vqh8EcVVYoXU8S9qh0rFzQ3DDnjNIlkRrBq97brmk6hUw0u2pbLqyTAG1_mYfG9bGHCnMkgSMEPFu6fIR67F1jZMmS7G7-DFe6i7PtG_LzdTgHLCTXSwE5hCa2EApQeAIYGIMYATwbLEp-2FcPmV9aAHVqrRRBYk_wY7ZTuES0frFAPGjhnU/s1600/ovhcloud.jpg",
-   "cves": [],
-   "first_seen": "2026-10-20T10:33:14.842541+00:00",
-   "instructions": [
-    "A build without the version flag would report its version as undefined, but running a suspect binary to find out is not advisable.",
-    "OVHcloud founder Octave Klaba wrote on X on Monday evening that anyone affected should change every secret stored on the disk. =",
-    "Ran the official install script (curl -fsSL https://raw.githubusercontent.com/ovh/ovhcloud-cli/main/install.sh | sh).",
-    "Ran the CLI's own upgrade command from a v0.12.0, v0.13.0, or v0.14.0 install on a macOS or Linux machine where the tool was installed by the script or by hand."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "961277245249",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -4428,6 +4407,27 @@
    "instructions": [
     "Security teams should also keep systems updated, focusing on flaws affecting VPNs, firewalls, and other edge devices added to CISA's catalog of actively exploited vulnerabilities because they're often targeted in SafePay attacks for initial access to victims' networks.",
     "The advisory also includes indicators of compromise (IOCs) and tactics, techniques, and procedures (TTPs) to previous SafePay ransomware activity observed between November 2024 and August 2026 during FBI, USSS, and Landeskriminalamt Rheinland-Pfalz investigations."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "77d8f32442c0",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "CISA confirms PHP2Shell vulnerabilities now exploited in attacks",
+   "link": "https://www.bleepingcomputer.com/news/security/cisa-confirms-php2shell-vulnerabilities-now-exploited-in-attacks/",
+   "published": "2026-10-27T08:20:54+00:00",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added the PHP2Shell vulnerabilities to its catalog of actively exploited security flaws and ordered federal agencies to patch their systems by Thursday.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/26/PHP.jpg",
+   "cves": [],
+   "first_seen": "2026-10-27T08:23:39.364927+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Although details on the PHP2Shell security flaws (including the CVE IDs and mitigation measures shared with critical infrastructure providers) leaked and some proof-of-concept (PoC) exploits were published online before patches went live, the PHP security team said that none were functional.",
+    "On Friday, the PHP security team also shared mitigation for a new RCE flaw (CVE-2026-115560) with no patch, exploitable when targeting systems \"with an unusual combination of configuration and application code.\"",
+    "​ The PHP security team patched the two flaws on Wednesday, October 21, one day after urging security teams to install the security updates as soon as they became available."
    ],
    "instructions_checked": true
   },
