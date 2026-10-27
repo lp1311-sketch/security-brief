@@ -3558,40 +3558,6 @@
    "instructions_checked": true
   },
   {
-   "id": "40af1b6980a8",
-   "source": "cert-bund",
-   "source_name": "CERT-Bund (BSI) Warnungen",
-   "official": true,
-   "source_type": "advisory",
-   "title": "[UPDATE] [hoch] Apache Camel: Schwachstelle ermöglicht Codeausführung",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4010",
-   "published": "2026-10-20T10:15:51+00:00",
-   "summary": "Ein Angreifer aus einem angrenzenden Netzwerk kann eine Schwachstelle in Apache Camel ausnutzen, um beliebigen Programmcode auszuführen.",
-   "image": null,
-   "cves": [],
-   "first_seen": "2026-10-20T10:33:14.842541+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "586feaef19cd",
-   "source": "cert-bund",
-   "source_name": "CERT-Bund (BSI) Warnungen",
-   "official": true,
-   "source_type": "advisory",
-   "title": "[UPDATE] [hoch] MariaDB: Mehrere Schwachstellen",
-   "link": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4018",
-   "published": "2026-10-20T10:15:51+00:00",
-   "summary": "Ein entfernter, authentisierter Angreifer kann mehrere Schwachstellen in MariaDB ausnutzen, um beliebigen Programmcode auszuführen, SQL-Injection durchzuführen, Sicherheitsmaßnahmen zu umgehen, Daten zu manipulieren oder offenzulegen oder einen Denial-of-Service-Zustand auszulösen.",
-   "image": null,
-   "cves": [],
-   "first_seen": "2026-10-20T10:33:14.842541+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "bc902c3a7abe",
    "source": "cert-bund",
    "source_name": "CERT-Bund (BSI) Warnungen",
@@ -3949,6 +3915,25 @@
     "Of course, everyone should be wary of trusting AI-generated summaries, as artificial intelligence has a history of making sometimes large mistakes with great confidence.",
     "Should you be tempted to download the torrent and explore the contents of the messages yourself?",
     "Furthermore, whether you are an individual or an organisation, you should be aware that an email account can be a treasure trove of sensitive information."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "181378638961",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Apple backports CoreGraphics zero-day patches to older iPhones",
+   "link": "https://www.bleepingcomputer.com/news/apple/apple-backports-coregraphics-zero-day-patches-to-older-iphones/",
+   "published": "2026-10-27T10:36:12+00:00",
+   "summary": "​Apple has backported security patches released last month to older iPhones and iPads, addressing a zero-day bug exploited in \"extremely sophisticated\" targeted attacks on iOS devices.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2023/09/11/apple_triangle.jpg",
+   "cves": [],
+   "first_seen": "2026-10-27T10:41:55.087140+00:00",
+   "image_checked": true,
+   "instructions": [
+    "While Apple said CVE-2026-86950 is exploited only in highly targeted attacks, it is strongly advised to install these backported patches to block potential attacks."
    ],
    "instructions_checked": true
   },
@@ -6148,25 +6133,6 @@
    "instructions_checked": true
   },
   {
-   "id": "3493ad24d01d",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Hackers Steal 1.8 Million Records From Nikkei",
-   "link": "https://www.securityweek.com/hackers-steal-1-8-million-records-from-nikkei/",
-   "published": "2026-10-20T10:35:18+00:00",
-   "summary": "The compromised information includes names, addresses, email addresses, phone numbers, and dates of birth. The post Hackers Steal 1.8 Million Records From Nikkei appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2025/02/news-newspaper-cyberattack.jpeg",
-   "cves": [],
-   "first_seen": "2026-10-20T11:12:55.030681+00:00",
-   "instructions": [
-    "Preparing for disruption must become part of day-to-day operations."
-   ],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
    "id": "67c1ab51681c",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -6725,6 +6691,28 @@
     "Developer education should cover policy enforcement, the use of application risk scorecards, and the ability to track commits for audit purposes.",
     "Year of the Twin Dragons: Developers Must Slay the Complexity and Security Issues of AI Coding Tools",
     "Preparing for disruption must become part of day-to-day operations."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "177d2de823fd",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "This is Fine: What NetScaler Zero-Days Tell Us About the New Normal",
+   "link": "https://www.securityweek.com/this-is-fine-what-netscaler-zero-days-tell-us-about-the-new-normal/",
+   "published": "2026-10-27T10:02:24+00:00",
+   "summary": "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon. The post This is Fine: What NetScaler Zero-Days Tell Us About the New Normal appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2023/07/Citrix-zero-day.jpg",
+   "cves": [],
+   "first_seen": "2026-10-27T10:41:55.087140+00:00",
+   "image_checked": true,
+   "instructions": [
+    "If you’ve been paying attention to enterprise edge security lately, the September 2026 Citrix NetScaler zero-day advisories probably gave you a familiar case of heartburn.",
+    "Over the weekend of September 26, resellers and security advisories urged admins to restrict or disconnect edge-facing deployments.",
+    "While it’s not fun to ship or apply emergency patches over a weekend, several factors demonstrate why this quick, after-hours response pattern reflects a stronger defensive posture.",
+    "Government advisory bodies like CISA are keeping pace with this shift as well."
    ],
    "instructions_checked": true
   },
