@@ -59,22 +59,6 @@
    "instructions_checked": true
   },
   {
-   "id": "fb9936745ef9",
-   "source": "ars",
-   "source_name": "Ars Technica Security",
-   "official": false,
-   "source_type": "news",
-   "title": "Meta Muse exposes users' personal and business secrets when they share conversations",
-   "link": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/",
-   "published": "2026-10-20T12:33:13+00:00",
-   "summary": "Muse, the new general-purpose AI agent from Meta, can expose sensitive information when users share conversations through web links, researchers reported Monday. In response to questions from Ars about the behavior, Meta said it's suspending the sharing feature while the company reviews it and considers making…",
-   "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/ai-robot-hand-caution-1152x648.jpg",
-   "cves": [],
-   "first_seen": "2026-10-20T12:41:56.425637+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "cd066e93db9f",
    "source": "ars",
    "source_name": "Ars Technica Security",
@@ -1099,6 +1083,24 @@
    "instructions_checked": true
   },
   {
+   "id": "1ce9ccf10a03",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "AI-Generated Fake Login Pages Are Making Account Takeovers Easier",
+   "link": "https://thehackernews.com/2026/10/ai-generated-fake-login-pages-are.html",
+   "published": "2026-10-27T11:32:46+00:00",
+   "summary": "Fake login pages are nothing new, but generative AI is making them easier to build and more convincing. Attackers can recreate familiar login screens, impersonate trusted brands and tailor phishing attempts to specific employees or organizations. Some fake login pages go beyond stealing passwords. They can also…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCX1RKz1isf0HwbYOFkKneC7maFNTVr0q0LTVHBsoGhEN5w7ZOfSLYqfq_6-oKzf51Vb3FJTVla21T-RrWus7Dxadw81UmqDBbw8rIWxfbBhPdI5tyAUQZSYwYaq9JetgW4_4yl1qbWU7ScrdxYjoTCot6v9gXMIyjsk4W66Z531z5oHaHHEguj6_EISU/s1600/keeper-password.jpg",
+   "cves": [],
+   "first_seen": "2026-10-27T12:44:30.927471+00:00",
+   "instructions": [
+    "Establish phishing response procedures: Organizations should have clear processes for reporting suspected phishing attempts, revoking compromised sessions, resetting credentials and investigating unauthorized access."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "23872cb1986e",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1693,6 +1695,44 @@
    "instructions_checked": true
   },
   {
+   "id": "3fba9192c925",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Keystone to Destroy 18,835 Hardware Wallets After Hackers Steal Device Verification Key",
+   "link": "https://thehackernews.com/2026/10/keystone-to-destroy-18835-hardware.html",
+   "published": "2026-10-27T11:46:00+00:00",
+   "summary": "An attacker who gained access to Keystone's website obtained the key that its hardware wallets use to prove they are genuine, the company said in a statement on October 26. Someone with that key could build counterfeit devices that pass the online check owners use to verify a Keystone. A buyer who trusted a…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkvGXPUhZZjWBsYYBAx8KeJ8WilsBMLE-JhqfNAEyCOPuxs6-4VIF1e77IHR5zVdGfRsjJkSOfUVE1JaEmKe0mSAVM-ha4SeROxEGAdkLY5n5rBqx1LBSm6UVxA167sJYZEJTRra7BSipFtdlw2S-kFCUOSa9n70NbfSka3zRNVHd0D69qbVpSGIOnuAU/s1600/keystone.jpg",
+   "cves": [],
+   "first_seen": "2026-10-27T12:44:30.927471+00:00",
+   "instructions": [
+    "Owners of such a device should contact Keystone support and use it only after the company confirms it is genuine.",
+    "Keystone has not said how to tell which key a device carries, or what owners who have already sent crypto to such a device should do.",
+    "Those with a device received after October 20 with the old key should still follow the steps above."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "cf5c346fcefd",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Lazarus Abuses South Korean Security Software to Deploy Malware Using Post-Quantum Encryption",
+   "link": "https://thehackernews.com/2026/10/lazarus-abuses-south-korean-security.html",
+   "published": "2026-10-27T11:32:31+00:00",
+   "summary": "The North Korea-linked Lazarus Group has been attributed to a cyber espionage campaign dubbed Operation FlashHole targeting at least three organizations in South Korea spanning the construction, software, and wire-communication equipment manufacturing sectors. According to Russian cybersecurity company Kaspersky, the…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwoWz3Ex4w0TebsrzDSdna5WAjqoQx5EHWC1kY3db9VgMg6FrGK6VbncVA9b3tKdPnqlR6qmdwsq7CT1f-Cp57WpH6lpfoF-5zb_Xg-ahdsNxO4OUTsdDVeO_8s7SQFLp54SrsWlWrZn-37sAcqv1ZeG_7Yc62vQ5X9Tq-MlIEm6EOQOiTkQVlcy9F4VG4/s1600/korean-malware.jpg",
+   "cves": [],
+   "first_seen": "2026-10-27T12:44:30.927471+00:00",
+   "instructions": [
+    "\"The attackers induced targets to access malicious URLs through various methods, including watering hole and spear-phishing attacks, and then exploited the vulnerabilities to ultimately install backdoor malware,\" AhnLab said , calling the campaign Operation Double Barrel."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "3a1a036ef73a",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1804,6 +1844,29 @@
    "instructions": [
     "Organizations who suspect a token replay compromise are recommended to revoke sessions and reset the password, audit Entra devices, review MFA methods, check for unexpected inbox rules or new enterprise applications, and restrict device-code workflow with Conditional Access policies.",
     "\"Businesses setting up CAPs should require MFA (or block) for All Users, All Cloud Apps, and All Client App types, unconditionally.\""
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "a6006728be28",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Microsoft Authenticator Flaw Let Permissionless Android Apps Steal Work Account Tokens",
+   "link": "https://thehackernews.com/2026/10/microsoft-authenticator-flaw-let.html",
+   "published": "2026-10-27T12:09:50+00:00",
+   "summary": "Microsoft has fixed a flaw in its Authenticator app for Android that let a malicious app with no permissions pose as a trusted Microsoft app, such as Teams, and collect sign-in tokens for a victim's work account. Microsoft tracks the flaw as CVE-2026-80097 and fixed it in Authenticator for Android version 6.2606.4246…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqk63DF3MJCMgQqpg91UsWY7mjACbBgPl50GfKwDPi7v3md6sP5l8a2BUqHABjgMN_6BzgcMx4vVKW4hR9B9pz8_XHqp5ctKqQQLw-RJwuKmVWm2MaSzEMkHIsV-Yi0V6Mq_gUYYuzTpi-BzV2-8dRVYBjtuW4nb9TbobkPwvOGTkIFTpr334JB_LZIkw/s1600/msms.jpg",
+   "cves": [
+    "CVE-2026-80097"
+   ],
+   "first_seen": "2026-10-27T12:44:30.927471+00:00",
+   "instructions": [
+    "Microsoft tracks the flaw as CVE-2026-80097 and fixed it in Authenticator for Android version 6.2606.4246, so anyone using the app should update.",
+    "The fix is to update Microsoft Authenticator for Android to version 6.2606.4246 or later, as linked in Microsoft's advisory.",
+    "Because the broker controls access to the entire account, it should be careful about which app it grants a token to.",
+    "The tokens apply to the work account signed into Authenticator on that device, not to other accounts."
    ],
    "instructions_checked": true
   },
@@ -3215,28 +3278,6 @@
     "Earlier this month, Microsoft also announced that systems running Windows 11 24H2 Home and Pro editions stopped receiving security and non-security preview updates and advised customers to upgrade to Windows 11 26H2 (also known as the Windows 11 2026 Update).",
     "\"To help keep your environment protected and supported, plan to upgrade to Windows Server 2025,\" the company added.",
     "\"The January 2027 Windows security update will be the last update available for this version."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "4f28949e9098",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Windows Server 2025 gets support for quick machine recovery",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/windows-server-2025-gets-support-for-quick-machine-recovery/",
-   "published": "2026-10-20T12:16:32+00:00",
-   "summary": "Microsoft announced that IT administrators can now use quick machine recovery on Windows Server 2025 after installing the October 2026 security update.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/20/0_Windows_Server.jpg",
-   "cves": [],
-   "first_seen": "2026-10-20T12:41:56.425637+00:00",
-   "image_checked": true,
-   "instructions": [
-    "On Windows Server 2025, cloud remediation is disabled by default, but admins can enable it via Group Policy under Computer Configuration > Administrative Templates > System > Quick Machine Recovery to retrieve and apply cloud-sourced remediation.",
-    "For local configuration, admins must sign in to the target server with administrator permissions and use the Local Group Policy Editor.",
-    "Open Enable Cloud Remediation , select Disabled , and select Apply , then OK .",
-    "Open Enable Auto Remediation , select Disabled , and select Apply , then OK ."
    ],
    "instructions_checked": true
   },
@@ -5060,25 +5101,6 @@
    "instructions_checked": true
   },
   {
-   "id": "b44079bd0a64",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Ex-OpenAI Worker Accused of Bugging Conference Room Planned to Fly to Saudi Arabia, Prosecutors Say",
-   "link": "https://www.securityweek.com/ex-openai-worker-accused-of-bugging-conference-room-planned-to-fly-to-saudi-arabia-prosecutors-say/",
-   "published": "2026-10-20T12:33:12+00:00",
-   "summary": "Abdulrahman Alfozan’s wife and young son also left the country the day after the 35-year-old Saudi national’s arrest. The post Ex-OpenAI Worker Accused of Bugging Conference Room Planned to Fly to Saudi Arabia, Prosecutors Say appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2025/11/OpenAI.jpeg",
-   "cves": [],
-   "first_seen": "2026-10-20T12:41:56.425637+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Preparing for disruption must become part of day-to-day operations."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "e85723a0f677",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -5762,6 +5784,28 @@
     "Over the weekend of September 26, resellers and security advisories urged admins to restrict or disconnect edge-facing deployments.",
     "While it’s not fun to ship or apply emergency patches over a weekend, several factors demonstrate why this quick, after-hours response pattern reflects a stronger defensive posture.",
     "Government advisory bodies like CISA are keeping pace with this shift as well."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "928eba252ebe",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Unexplained DreamHost Incident Prompts Email, FTP Password Resets",
+   "link": "https://www.securityweek.com/unexplained-dreamhost-incident-prompts-email-ftp-password-resets/",
+   "published": "2026-10-27T12:02:06+00:00",
+   "summary": "The company says it reacted to an issue affecting some of its systems, including DreamHost webmail. The post Unexplained DreamHost Incident Prompts Email, FTP Password Resets appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/08/password-manager.jpeg",
+   "cves": [],
+   "first_seen": "2026-10-27T12:44:30.927471+00:00",
+   "image_checked": true,
+   "instructions": [
+    "DreamHost is unable to contact individual mailbox or FTP users directly, so they may not know about this until you tell them,” the company said. “If they used the old password anywhere else, they should change it there too,” DreamHost told account owners.",
+    "Preparing for disruption must become part of day-to-day operations.",
+    "Over the weekend, web hosting provider DreamHost suspended its File Manager service and reset some user passwords.",
+    "SecurityWeek has emailed DreamHost for information on the number of affected users and the root cause of the incident and will update this article if the company responds."
    ],
    "instructions_checked": true
   },
