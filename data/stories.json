@@ -1991,24 +1991,6 @@
    "instructions_checked": true
   },
   {
-   "id": "2f7a0f9a2ffb",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Pegasus Spyware Infection Confirmed on Serbian University Rector's iPhone Days Before Election",
-   "link": "https://thehackernews.com/2026/10/pegasus-spyware-infection-confirmed-on.html",
-   "published": "2026-10-20T12:59:44+00:00",
-   "summary": "The iPhone of Vladan Đokić, rector of the University of Belgrade and a prominent supporter of Serbia's student protest movement, was infected with NSO Group's Pegasus spyware in 2026, the Citizen Lab said on October 19. The finding came six days before Serbia's October 25 snap parliamentary election. The infection…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_cQrX8zsqCvWd9Pl1mfmh8oQBwRAG_IcrKQB-EpiVEn2GXf5UJBh0UrLXCKzAmJo2Z-Di9G7-16n5hV-gmtfMi-JtB9sOd9neC-b1-6CpErVOYE7CUjBmZhunV45nzsFcDr03rK5RA8q7gFZXIuJZ4c6ND0VSQHYuppDkdTqq04MI7nVCz-10-K-xmc0/s1600/iphone-spyware.jpg",
-   "cves": [],
-   "first_seen": "2026-10-20T14:06:19.835154+00:00",
-   "instructions": [
-    "The note does not name the flaw used against Đokić's phone or say whether current iOS releases block it, so there is no case-specific fix to install."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "6478f5844cef",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2578,6 +2560,26 @@
    "instructions_checked": true
   },
   {
+   "id": "372f6f54af20",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Australia’s spies are sharing intelligence with hacking targets — and want them to share back",
+   "link": "https://therecord.media/australia-spies-share-intel-and-want-victims-to-share-back",
+   "published": "2026-10-27T13:13:00+00:00",
+   "summary": "More than half of the individual warnings from the Australian Signals Directorate (ASD) drew on previously secret material that had been cleared for disclosure, underscoring the growing role of intelligence sharing to prevent attacks.",
+   "image": "https://cms.therecord.media/uploads/asd_95b84d1ee0.jpg",
+   "cves": [],
+   "first_seen": "2026-10-27T13:35:17.004620+00:00",
+   "image_checked": true,
+   "instructions": [
+    "The directorate appears to be encountering a similar challenge to its counterparts in the United Kingdom, with the report advising anyone “concerned about the legitimacy of a call” to ring the agency’s hotline and quote their reference number to confirm the warning is genuine.",
+    "The report said that “in the past, defenders had months to patch, now they have days, sometimes only hours,” although it provided no data directly linking AI to faster exploitation, and acknowledged that the technology has “not introduced new cyber threats.”"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "6203e915296a",
    "source": "therecord",
    "source_name": "The Record",
@@ -2771,6 +2773,23 @@
    "instructions_checked": true
   },
   {
+   "id": "933843ff30ab",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Moscow faces internet disruptions as foreign leaders gather for summits",
+   "link": "https://therecord.media/moscow-faces-internet-disruptions-as-foreign-leaders-gather",
+   "published": "2026-10-27T13:20:00+00:00",
+   "summary": "The restrictions will be in place from October 27 to 29, coinciding with the Gas Exporting Countries Forum summit and the Russia-Africa summit, Russia's Ministry of Digital Development said Monday.",
+   "image": "https://cms.therecord.media/uploads/nikita_ermilov_xl1_B6_L_Lf_Zys_unsplash_f585d91e5a.jpg",
+   "cves": [],
+   "first_seen": "2026-10-27T13:35:17.004620+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "1b377ec74e5f",
    "source": "therecord",
    "source_name": "The Record",
@@ -2846,6 +2865,27 @@
     "“All PHP users are encouraged to prepare now so they can upgrade as soon as the release is available,” PHP’s security team said. “PHP 8.1 and older no longer receive updates from the PHP project.”",
     "Dozens of government agencies released urgent warnings throughout the evening and early on Wednesday morning telling website maintainers to stay alert and patch now that fixes have been released .",
     "The European Union , Germany , Japan , Australia , the U.K. , the Netherlands all released warnings locally about the vulnerabilities and several governments even took some websites offline in advance of the patch being released."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "4e5f0d814761",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "CISA warns of PHP bug exploitation attempts, gives federal agencies days to patch",
+   "link": "https://therecord.media/php-vulnerabilities-cisa-kev",
+   "published": "2026-10-27T13:16:00+00:00",
+   "summary": "CISA added the widely publicized PHP vulnerabilities to the KEV, but didn't specify what kind of exploitation it was observing.",
+   "image": "https://cms.therecord.media/uploads/2021_11_CISA_6e0fea829e.png",
+   "cves": [],
+   "first_seen": "2026-10-27T13:35:17.004620+00:00",
+   "image_checked": true,
+   "instructions": [
+    "In an updated advisory about the vulnerabilities, CISA urged organizations to identify and inventory systems running any version of PHP, apply the patch or take PHP-based systems offline if they cannot be updated immediately.",
+    "The advisory links to guidance from PHP as well as government cybersecurity agencies in Australia, Canada, New Zealand, the U.K. and others.",
+    "The federal cybersecurity agency confirmed that two PHP vulnerabilities are being targeted, and ordered all civilian agencies to patch them by Thursday."
    ],
    "instructions_checked": true
   },
@@ -3682,23 +3722,6 @@
    "instructions_checked": true
   },
   {
-   "id": "b8cb67bf0a57",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Hacker gets 8 years for stealing $3.3 million from taxpayers",
-   "link": "https://www.bleepingcomputer.com/news/security/hacker-gets-8-years-for-stealing-33-million-from-taxpayers/",
-   "published": "2026-10-20T13:18:36+00:00",
-   "summary": "A Nigerian national was sentenced to eight years in prison for his involvement in a series of spearphishing attacks targeting US tax preparation businesses since 2019.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/08/Hacker_prison.jpg",
-   "cves": [],
-   "first_seen": "2026-10-20T13:24:43.937812+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "eb477469ff02",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4404,7 +4427,7 @@
    "title": "So Many AI Security Benchmarks, But None Tell the Whole Story",
    "link": "https://www.darkreading.com/cybersecurity-analytics/benchmarking-security-of-ai-models-poses-challenges",
    "published": "2026-10-27T00:26:50+00:00",
-   "summary": "Measuring AI model security gets complex fast — a growing patchwork of benchmarks targets different variables in the equation, but none replace testing against your own code and workflows.",
+   "summary": "Measuring AI model security gets complex, fast, thanks to a growing patchwork of benchmarks targeting different variables in the equation. But none replace testing against your own code and workflows.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltdc3474b6e8cd660f/6ada510270603f3265a5b817/measuring-tape-on-table-k1tyara-shutterstock.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-10-27T01:14:16.444927+00:00",
@@ -4766,44 +4789,6 @@
    "image_checked": true,
    "instructions": [
     "To qualify, a water, wastewater, electric or natural gas utility must be based in the US and bring in under $100 million a year.",
-    "Preparing for disruption must become part of day-to-day operations."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "cf21e83d251e",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Ahold Delhaize Restoring Services Disrupted by Cyberattack",
-   "link": "https://www.securityweek.com/ahold-delhaize-restoring-services-disrupted-by-cyberattack/",
-   "published": "2026-10-20T13:02:18+00:00",
-   "summary": "The company has restored many websites and apps in Europe and expects e-commerce brands in the US to be restored in days. The post Ahold Delhaize Restoring Services Disrupted by Cyberattack appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2024/11/Ahold-Delhaize-cyberattack.jpeg",
-   "cves": [],
-   "first_seen": "2026-10-20T13:24:43.937812+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Preparing for disruption must become part of day-to-day operations."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "d02f2b9b0912",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "AI Platform Cairn Abused to Hack Over 100 Organizations",
-   "link": "https://www.securityweek.com/ai-platform-cairn-abused-to-hack-over-100-organizations/",
-   "published": "2026-10-20T12:47:22+00:00",
-   "summary": "At least three threat actors have been abusing Cairn for persistent access and financial theft. The post AI Platform Cairn Abused to Hack Over 100 Organizations appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2025/08/AI-assistant-chatbot-artificial-intelligence.jpg",
-   "cves": [],
-   "first_seen": "2026-10-20T13:24:43.937812+00:00",
-   "image_checked": true,
-   "instructions": [
     "Preparing for disruption must become part of day-to-day operations."
    ],
    "instructions_checked": true
@@ -5222,6 +5207,28 @@
     "Preparing for disruption must become part of day-to-day operations.",
     "Users who installed or updated the CLI on macOS, 64-bit Linux, or Windows x86_64 via the official install script, Homebrew, or a direct GitHub download during the roughly 94-minute window are affected.",
     "Those who built from source, used Go’s install command, or pulled the official Docker image are not."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "243406f675bd",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "HPE Patches Dozens of Critical Flaws in Networking Products",
+   "link": "https://www.securityweek.com/hpe-patches-dozens-of-critical-flaws-in-networking-products/",
+   "published": "2026-10-27T13:13:58+00:00",
+   "summary": "Eight max-severity security defects could lead to remote code execution and authentication bypass. The post HPE Patches Dozens of Critical Flaws in Networking Products appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/10/HPE-Aruba.jpeg",
+   "cves": [],
+   "first_seen": "2026-10-27T13:35:17.004620+00:00",
+   "image_checked": true,
+   "instructions": [
+    "The remaining critical-severity issues resolved with the updates could lead to unauthenticated RCE, command execution, information disclosure, authentication bypass, file tampering, administrative access, and complete system compromise, HPE notes in its advisory .",
+    "The company says it is not aware of any of these vulnerabilities being exploited in the wild, but urges customers to apply the patches as soon as possible.",
+    "Preparing for disruption must become part of day-to-day operations.",
+    "iOS, macOS 27.2 Patch 286 Bugs; Fix for Exploited Flaw Backported to iOS 18"
    ],
    "instructions_checked": true
   },
@@ -5744,28 +5751,6 @@
    "instructions_checked": true
   },
   {
-   "id": "4791d60cd7f6",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "The Key to AI Software Security Isn’t Speed, It’s Maturity",
-   "link": "https://www.securityweek.com/the-key-to-ai-software-security-isnt-speed-its-maturity/",
-   "published": "2026-10-20T13:34:23+00:00",
-   "summary": "Where your developers sit on the AI adoption scale has a real impact on how you are addressing security risk. The post The Key to AI Software Security Isn’t Speed, It’s Maturity appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/09/AI-artificial-intelligence-training.jpeg",
-   "cves": [],
-   "first_seen": "2026-10-20T14:06:19.835154+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Developers, meanwhile, should receive upskilling on topics ranging from secure coding to code review, and these skills should be verifiable using a tool to establish baselines and track developer performance.",
-    "Developer education should cover policy enforcement, the use of application risk scorecards, and the ability to track commits for audit purposes.",
-    "Year of the Twin Dragons: Developers Must Slay the Complexity and Security Issues of AI Coding Tools",
-    "Preparing for disruption must become part of day-to-day operations."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "177d2de823fd",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -5826,6 +5811,28 @@
    "instructions": [
     "Instead, the five stages should be treated as a single target.",
     "Preparing for disruption must become part of day-to-day operations."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "41ce8592d3fb",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Vendor Key Leak Puts Data of 238,000 Denver Health Plan Members at Risk",
+   "link": "https://www.securityweek.com/vendor-key-leak-puts-data-of-238000-denver-health-plan-members-at-risk/",
+   "published": "2026-10-27T13:30:28+00:00",
+   "summary": "A leaked SquareML access key could have been used to access a database containing personal and health information. The post Vendor Key Leak Puts Data of 238,000 Denver Health Plan Members at Risk appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/10/bank-finance-lender-credit-union-hack.jpeg",
+   "cves": [],
+   "first_seen": "2026-10-27T13:35:17.004620+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Preparing for disruption must become part of day-to-day operations.",
+    "In response to the incident, the passwords for all accounts that had access to the database were reset, and DHMP and SquareML are pursuing additional remedial actions.",
+    "iOS, macOS 27.2 Patch 286 Bugs; Fix for Exploited Flaw Backported to iOS 18",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
   },
