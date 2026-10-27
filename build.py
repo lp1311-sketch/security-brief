@@ -2023,6 +2023,90 @@ def load_radar(fixtures: Path | None, data_file: Path) -> dict:
         return {"ok": False, "error": str(e)[:200], "items": saved}
 
 
+AZ_STATUS_URL = "https://azure.status.microsoft/en-us/status/feed/"
+AZ_SRC = {"id": "azure-status", "name": "Azure status", "official": True, "type": "advisory"}
+
+
+def az_state(text: str) -> str:
+    """State taken only from explicit wording in the post; anything else stays 'Update'."""
+    t = text.lower()
+    if re.search(r"has been resolved|is resolved|now resolved|resolved", t):
+        return "Resolved"
+    if re.search(r"mitigat", t):
+        return "Mitigated"
+    if re.search(r"investigat", t):
+        return "Investigating"
+    return "Update"
+
+
+def load_azure_status(fixtures: Path | None, data_file: Path) -> dict:
+    """Public Azure status feed (no sign-in). Falls back to the last saved posts on failure."""
+    saved_file = data_file.parent / "azure-status.json"
+    try:
+        data = (fixtures / "azure-status.xml").read_bytes() if fixtures else fetch(AZ_STATUS_URL)
+        if not re.search(rb"<(rss|feed|rdf)", data[:2000], re.I):
+            raise RuntimeError("response is not an RSS/Atom feed")
+        items = []
+        for e in parse_feed(data, AZ_SRC)[:12]:
+            items.append({"id": e["id"], "title": e["title"], "link": e["link"], "summary": e["summary"],
+                          "published": e["published"], "state": az_state(f"{e['title']} {e['summary']}")})
+        items.sort(key=lambda i: i["published"] or "", reverse=True)
+        if fixtures is None:
+            saved_file.parent.mkdir(parents=True, exist_ok=True)
+            saved_file.write_text(json.dumps({"items": items}, ensure_ascii=False, indent=1), encoding="utf-8")
+        return {"ok": True, "error": None, "items": items}
+    except Exception as e:  # noqa: BLE001 - status panel must never break the news build
+        saved: list[dict] = []
+        try:
+            if saved_file.exists():
+                saved = json.loads(saved_file.read_text(encoding="utf-8")).get("items", [])
+        except (OSError, ValueError):
+            saved = []
+        return {"ok": False, "error": str(e)[:200], "items": saved}
+
+
+AZ_STATE_CLASS = {"Resolved": "s-launched", "Mitigated": "s-preview", "Investigating": "a-action", "Update": "s-dev"}
+
+
+def _az_signal_html(it: dict) -> str:
+    cls = AZ_STATE_CLASS.get(it["state"], "")
+    date = fmt_day(it["published"]) or "date not provided"
+    desc = f'<p class="rv-desc">{esc(_short(it["summary"], 200))}</p>' if it["summary"] else ""
+    return (f'<li class="rv-item az-sig" data-state="{esc(it["state"])}">'
+            f'<div class="rv-tags"><span class="rv-tag {cls}">{esc(it["state"])}</span><span class="rv-tag product">Azure</span></div>'
+            f'<h3><a href="{esc(it["link"])}" target="_blank" rel="noopener noreferrer">{esc(it["title"])}</a></h3>'
+            f'{desc}<div class="rv-foot"><span>{esc(date)}</span>'
+            f'<a class="rv-btn rv-btn-ghost rv-btn-sm" href="{esc(it["link"])}" target="_blank" rel="noopener noreferrer">Read post &nearr;</a></div></li>')
+
+
+def _az_panel(az: dict) -> str:
+    items = az["items"]
+    live = "Live" if az["ok"] else "Offline · saved posts"
+    if not items:
+        body = '<div class="empty">No recent posts in the public Azure status feed.</div>' if az["ok"] \
+            else '<div class="empty">The public Azure status feed could not be reached. Saved posts will show here after the first successful run.</div>'
+        return ('<div class="az-head"><span class="rh-led" aria-hidden="true"></span>'
+                f'<span class="rv-tag s-preview">Public · {esc(live)}</span></div>{body}')
+    order = ["Investigating", "Mitigated", "Update", "Resolved"]
+    counts = {k: sum(1 for i in items if i["state"] == k) for k in order}
+    total = len(items)
+    seg = "".join(f'<i class="az-seg {AZ_STATE_CLASS.get(k, "")}" style="flex:{counts[k]}" title="{k}: {counts[k]}"></i>'
+                  for k in order if counts[k])
+    legend = "".join(f'<span><b>{counts[k]}</b> {esc(k)}</span>' for k in order if counts[k])
+    meter = (f'<div class="az-meter" role="img" aria-label="{total} posts: '
+             + ", ".join(f"{counts[k]} {k}" for k in order if counts[k]) + f'">'
+             f'<div class="az-bar">{seg}</div><div class="az-legend">{legend}</div></div>')
+    tick = "".join(f'<span class="az-tick"><i class="az-dot-{AZ_STATE_CLASS.get(i["state"], "")}"></i>{esc(i["title"])}</span>' for i in items)
+    return (
+        '<div class="az-head"><span class="rh-led" aria-hidden="true"></span>'
+        f'<span class="rv-tag s-preview">Public · {esc(live)}</span>'
+        '<span class="rv-tag">No sign-in</span></div>'
+        + meter + 
+        f'<div class="az-ticker" role="region" aria-label="Latest public Azure status posts">'
+        f'<div class="az-track"><div>{tick}</div><div aria-hidden="true">{tick}</div></div></div>'
+        f'<ul class="rv-list az-list">{"".join(_az_signal_html(i) for i in items)}</ul>')
+
+
 RADAR_CSS = """
 :root{--rv-cyan:#38bdf8;--rv-green:#22c55e;--rv-amber:#fbbf24;--rv-violet:#a78bfa;--rv-red:#ef4444;--rv-mint:#86efac}
 .rv-scan{position:absolute;left:0;right:0;top:0;height:90px;pointer-events:none;background:linear-gradient(180deg,transparent,rgba(56,189,248,.12),transparent);animation:rh-scan 6s linear infinite}
@@ -2115,6 +2199,26 @@ RADAR_CSS = """
 .rh-empty{justify-content:center}
 .rh-foot{margin:18px 0 0;font-size:.82rem;color:var(--muted)}
 .rh-cta-row{margin-top:18px}
+.az-meter{margin:0 0 14px}.az-bar{display:flex;gap:4px;height:10px;border-radius:999px;overflow:hidden;background:var(--surface-2);border:1px solid var(--line)}.az-seg{display:block;min-width:6px;background:var(--muted)}.az-seg.s-dev{background:var(--rv-violet)}.az-seg.a-action{background:var(--rv-red)}.az-seg.s-preview{background:var(--rv-cyan)}.az-seg.s-launched{background:var(--rv-green)}.az-legend{display:flex;flex-wrap:wrap;gap:14px;margin-top:8px;font-family:var(--font-mono,ui-monospace,monospace);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}.az-legend b{color:var(--ink);font-weight:700}
+.az-head{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-bottom:12px}
+.az-ticker{overflow:hidden;border-radius:999px;border:1px solid var(--line);background:var(--surface-2);margin:0 0 16px;mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.az-track{display:flex;width:max-content;animation:az-scroll 60s linear infinite}
+.az-track>div{display:flex;flex:none}
+.az-track:hover{animation-play-state:paused}
+@keyframes az-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.az-tick{display:inline-flex;align-items:center;gap:8px;padding:9px 18px;font-size:.84rem;color:var(--muted);white-space:nowrap;border-right:1px solid var(--line)}
+.az-tick i{width:7px;height:7px;border-radius:50%;background:var(--rv-violet)}
+.az-tick i.az-dot-s-launched{background:var(--rv-mint)}.az-tick i.az-dot-s-preview{background:var(--rv-cyan)}.az-tick i.az-dot-a-action{background:var(--rv-red);box-shadow:0 0 8px var(--rv-red)}
+.az-sig{--stripe:var(--rv-violet)}
+.az-sig[data-state="Resolved"]{--stripe:var(--rv-mint)}
+.az-sig[data-state="Mitigated"]{--stripe:var(--rv-cyan)}
+.az-sig[data-state="Investigating"]{--stripe:var(--rv-red)}
+.az-tag-live{color:var(--rv-red)!important}
+.tn-box{margin-top:26px;padding:16px 18px;border-radius:var(--r);border:1px dashed var(--line);background:rgba(148,163,184,.04)}
+.tn-box summary{cursor:pointer;font-weight:650;color:var(--ink)}
+.tn-box p{margin:10px 0 0;color:var(--muted);font-size:.9rem;line-height:1.6}
+.rh-azline{margin:14px 0 0;font-size:.84rem;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){.az-track{animation:none}.az-ticker{overflow-x:auto}}
 @media (max-width:640px){.rv-hero{padding:26px 20px}.rv-item{padding:16px 16px 14px 22px}.rh{padding:22px 18px}.rv-chiprow-label{width:100%}}
 @media (prefers-reduced-motion:reduce){.rv-scan,.rh-led{animation:none!important}.rv-item,.rv-btn,.rh-card{transition:none!important}.rv-item:hover,.rv-btn:hover,.rh-card:hover{transform:none}}
 """
@@ -2282,19 +2386,27 @@ def radar_page(radar: dict, cfg: dict, site_cfg: dict) -> str:
         '<p>Admin and user tags come from the wording of each entry, not from an official Microsoft field.</p></div></div>'
         '</div>')
 
-    if services is None:
-        svc_block = (
-            '<section class="rv-section" aria-labelledby="svc-title"><h2 id="svc-title">Service issues <span class="rv-tag">Not connected</span></h2>'
-            '<p class="rv-sub">Tenant service messages and incidents are only available through Microsoft Graph with an authorised, read-only app. '
-            'This page shows them once the fetch script has produced its data file.</p>'
-            '<div class="rv-connect"><strong>Setup:</strong> create a read-only Entra app with ServiceMessage.Read.All and ServiceHealth.Read.All, '
-            'then run <code>scripts/fetch_service_messages.py</code>. The script header lists each step.</div></section>')
-    else:
+    az = radar.get("azure") or {"ok": False, "items": []}
+    tenant = (
+        '<details class="tn-box"><summary>Microsoft 365 tenant incidents &amp; Message Center '
+        + ('<span class="rv-tag s-preview">Connected</span>' if services is not None else '<span class="rv-tag">Not connected</span>')
+        + '</summary>'
+        + ('<p>' + str(len(services)) + ' tenant messages loaded from the fetch script. Impact tags are inferred from the text; confirm in the admin center.</p>'
+           if services is not None else
+           '<p>Microsoft 365 incidents and Message Center posts are tenant-specific. Microsoft no longer offers a free public M365 service-health RSS feed, '
+           'so they need Microsoft Graph with an authorised read-only app (ServiceHealth.Read.All and ServiceMessage.Read.All, admin consent). '
+           'Run <code>scripts/fetch_service_messages.py</code> to produce the data file; the script header lists each step.</p>')
+        + '</details>')
+    svc_block = (
+        '<section class="rv-section" aria-labelledby="svc-title"><h2 id="svc-title">Service signal '
+        '<span class="rv-tag s-preview">Azure · public</span></h2>'
+        '<p class="rv-sub">Live posts from the public Azure status feed, no sign-in needed. Each state tag is read from the post wording. '
+        'This shows Azure only, not Microsoft 365 tenant health.</p>'
+        + _az_panel(az) + tenant + '</section>')
+    if services is not None:
         svc_items = "".join(_svc_item_html(m) for m in services)
-        svc_block = (
-            '<section class="rv-section" aria-labelledby="svc-title"><h2 id="svc-title">Service issues <span class="rv-tag s-preview">Tenant feed</span></h2>'
-            f'<p class="rv-sub">{len(services)} messages and incidents from the connected tenant. Impact tags are inferred from the text, so check the admin center before acting.</p>'
-            f'<ul class="rv-list">{svc_items}</ul></section>')
+        svc_block = svc_block.replace('</section>', '<h3 style="margin-top:22px">Tenant service messages</h3>'
+                                      f'<ul class="rv-list">{svc_items}</ul></section>')
 
     controls = (
         '<div class="rv-controls">'
@@ -2336,6 +2448,9 @@ def _radar_home(radar: dict) -> str:
     status = '<span class="rh-led" aria-hidden="true"></span>' + ("Feed live" if radar["ok"] else "Feed offline · saved entries")
     svc = radar.get("services")
     svc_note = f'<span class="rv-tag s-preview">{len(svc)} tenant messages</span>' if svc else '<span class="rv-tag">Tenant feed not connected</span>'
+    az = radar.get("azure") or {"ok": False, "items": []}
+    az_note = f'<span class="rv-tag s-launched">Azure: {len(az["items"])} public posts</span>' if az["items"] else '<span class="rv-tag">Azure feed quiet or offline</span>'
+    svc_note = az_note + " " + svc_note
     return (
         '<section class="rh" id="change-radar" aria-labelledby="radar-title"><div class="rv-scan" aria-hidden="true"></div>'
         '<div class="rh-head"><div>'
@@ -2498,6 +2613,7 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
     articles = load_articles(content_dir, warnings)
     radar = load_radar(fixtures, data_file)
     radar["services"] = load_services(data_file)
+    radar["azure"] = load_azure_status(fixtures, data_file)
     publisher = site_cfg.get("publisher") or {}
     if not all((publisher.get(k) or "").strip() for k in ("name", "address", "email")):
         warnings.append("site.json publisher details incomplete: Impressum page is a placeholder")
