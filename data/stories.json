@@ -21,6 +21,29 @@
    "instructions_checked": true
   },
   {
+   "id": "71d9cb2bf3e5",
+   "source": "ars",
+   "source_name": "Ars Technica Security",
+   "official": false,
+   "source_type": "news",
+   "title": "Code-execution flaw in UEFI firmware threatens most servers on planet Earth",
+   "link": "https://arstechnica.com/security/2026/10/code-execution-flaw-in-uefi-firmware-threatens-most-servers-on-planet-earth/",
+   "published": "2026-10-27T20:25:55+00:00",
+   "summary": "Defenders across the world face the burden of responding to yet another botched code-execution vulnerability, this time in boot-time firmware used by most of the world’s server vendors and data centers. The vulnerability, with a severity rating of 9.5 out of a possible 10, resides in the TianoCore EDK II, an open…",
+   "image": "https://cdn.arstechnica.net/wp-content/uploads/2024/04/malware.jpg",
+   "cves": [
+    "CVE-2026-97631"
+   ],
+   "first_seen": "2026-10-27T20:38:35.028966+00:00",
+   "instructions": [
+    "Once the post came to the attention of the discovering parties, TianoCore Project members published a public advisory last week.",
+    "Even then, the targeted firmware must rely on EDK2, as opposed to a different reference implementation, and use the PXE functionality (which is turned on by default).",
+    "It advised customers to check with their system manufacturer for specific guidance.",
+    "Without concrete answers to questions about the use of EDK2 by organizations like these, it’s impossible to say what or how devices are affected and what actions, if any, these organizations, or their users, should take."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "49672d89136f",
    "source": "ars",
    "source_name": "Ars Technica Security",
@@ -546,6 +569,25 @@
    "instructions_checked": true
   },
   {
+   "id": "1af31e19a3ea",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-20942 Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20942",
+   "published": "2026-10-27T14:00:00+00:00",
+   "summary": "Improper restriction of rendered ui layers or frames in Microsoft Edge (Chromium-based) allows an unauthorized attacker to perform spoofing over a network.",
+   "image": null,
+   "cves": [
+    "CVE-2026-20942"
+   ],
+   "first_seen": "2026-10-27T20:38:35.028966+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "6e4d169a998c",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -869,6 +911,25 @@
    "instructions_checked": true
   },
   {
+   "id": "c39c60375371",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-88078 Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88078",
+   "published": "2026-10-27T14:00:00+00:00",
+   "summary": "Information published.",
+   "image": null,
+   "cves": [
+    "CVE-2026-88078"
+   ],
+   "first_seen": "2026-10-27T20:38:35.028966+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "4dbd6628d42d",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -883,6 +944,25 @@
     "CVE-2026-96185"
    ],
    "first_seen": "2026-10-22T21:56:00.161553+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "70695a34417f",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-96196 Microsoft Edge (Chromium-based) Security Feature Bypass Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96196",
+   "published": "2026-10-27T14:00:00+00:00",
+   "summary": "Incomplete list of disallowed inputs in Microsoft Edge (Chromium-based) allows an unauthorized attacker to bypass a security feature over a network.",
+   "image": null,
+   "cves": [
+    "CVE-2026-96196"
+   ],
+   "first_seen": "2026-10-27T20:38:35.028966+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -2489,28 +2569,6 @@
    "first_seen": "2026-10-26T16:46:28.332887+00:00",
    "image_checked": true,
    "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "a92bc795de6c",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "FBI says SafePay ransomware gang ‘among most active’ with more than 600 victims since 2024",
-   "link": "https://therecord.media/fbi-says-safepay-ransomware-gang-among-most-active-600-victims",
-   "published": "2026-10-20T20:27:00+00:00",
-   "summary": "The FBI and cyber agencies in the UK and Germany said SafePay is targeting businesses and critical infrastructure by guessing passwords, exploiting vulnerabilities and using phishing attacks.",
-   "image": "https://cms.therecord.media/uploads/cryptocurrency_da3a5bc326.png",
-   "cves": [],
-   "first_seen": "2026-10-20T20:34:09.474111+00:00",
-   "image_checked": true,
-   "instructions": [
-    "At least 600 organizations across the U.S. and Europe have been breached by the SafePay ransomware gang since August 2024, according to a new advisory from international law enforcement agencies.",
-    "The advisory was created based on numerous FBI and German law enforcement investigations involving SafePay, with the most recent incident occurring in August.",
-    "The advisory lists multiple vulnerabilities the group has used in attacks, including CVE-2020-3259, CVE-2023-20269, CVE-2023-27532 , CVE-2024-40711 , CVE-2024-40766 and others.",
-    "The advisory said SafePay typically holds encrypted data for ransom and demands “a subset of company revenue in cryptocurrency” in exchange for the decryption key."
-   ],
    "instructions_checked": true
   },
   {
