@@ -119,28 +119,6 @@
    "instructions_checked": true
   },
   {
-   "id": "37743d55fc6d",
-   "source": "borncity",
-   "source_name": "Born's IT and Windows Blog",
-   "official": false,
-   "source_type": "news",
-   "title": "WordPress Plugins Updraft und Rank Math PRO kompromittiert",
-   "link": "https://borncity.com/blog/2026/10/20/wordpress-plugins-updraft-und-rank-math-pro-kompromittiert/",
-   "published": "2026-10-20T15:53:23+00:00",
-   "summary": "Zwei Meldungen zu kompromittierten Plugins für WordPress, die mich die Tage erreicht haben. Ein Leser hat mich informiert, dass das Plugin Updraft kompromittiert sei. Weiterhin wurde bekannt, dass das WordPress Plugin Rank Math PRO eine Backdoor aufwies. WordPress Plugin Rank … Weiterlesen → Quelle",
-   "image": "https://borncity.com/blog/wp-content/uploads/2014/07/wp_thumb.jpg",
-   "cves": [],
-   "first_seen": "2026-10-22T07:00:06.512888+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Oktober 2026 um 07:12 Uhr UTC heruntergeladen oder über ein Update installiert.",
-    "Ein einfaches Update des Plugins reicht nicht aus, da die Malware möglicherweise zusätzliche Dateien, Administratorkonten oder geplante Aufgaben an anderer Stelle auf dem Server abgelegt hat.",
-    "Oktober 2026 den Blog-Beitrag PSA: UpdraftCentral Connection Key Compromise Used to Install Malicious Plugins on WordPress Sites veröffentlicht.",
-    "Der Zugangsweg scheint mit den Maßnahmen bei Teamupdraft und dem Update mittlerweile geschlossen zu sein, aber weil alle Schlüssel entwertet und getrennt wurden, sollte man ein neues Passwort vergeben und muss Websites neu verbinden."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "ad5d32a1bbf2",
    "source": "borncity",
    "source_name": "Born's IT and Windows Blog",
@@ -608,6 +586,44 @@
    "instructions_checked": true
   },
   {
+   "id": "e20da1a748c1",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-69284 Windows DCOM Server Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69284",
+   "published": "2026-10-27T14:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-69284"
+   ],
+   "first_seen": "2026-10-27T16:29:08.596210+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "cab4e60ebb96",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-69473 Windows Kernel Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69473",
+   "published": "2026-10-27T14:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-69473"
+   ],
+   "first_seen": "2026-10-27T16:29:08.596210+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "b78341cec335",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -665,6 +681,25 @@
    "instructions_checked": true
   },
   {
+   "id": "308133db32ac",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-70007 .NET Framework Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70007",
+   "published": "2026-10-27T14:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-70007"
+   ],
+   "first_seen": "2026-10-27T16:29:08.596210+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "d7a45987a920",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -684,6 +719,25 @@
    "instructions_checked": true
   },
   {
+   "id": "e3a6d8a4cec7",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-70161 .NET Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70161",
+   "published": "2026-10-27T14:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-70161"
+   ],
+   "first_seen": "2026-10-27T16:29:08.596210+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "e72d5c760107",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -698,6 +752,25 @@
     "CVE-2026-70197"
    ],
    "first_seen": "2026-10-26T19:42:22.695987+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "bca87c74a608",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-70277 Windows Fast FAT File System Driver Information Disclosure Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70277",
+   "published": "2026-10-27T14:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-70277"
+   ],
+   "first_seen": "2026-10-27T16:29:08.596210+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -831,6 +904,25 @@
     "CVE-2026-96185"
    ],
    "first_seen": "2026-10-22T21:56:00.161553+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "8f4a9c3b9ca9",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-96225 .NET Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96225",
+   "published": "2026-10-27T14:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-96225"
+   ],
+   "first_seen": "2026-10-27T16:29:08.596210+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -1265,24 +1357,6 @@
     "The advisory says the reporters crashed the process with it, and turned it into code execution only with the help of a second, separate flaw that leaked memory addresses.",
     "Upgrade to Pillow 13.0.0 , which fixes all of these, and rebuild any containers, wheels, or base images that bundle an older copy."
    ],
-   "instructions_checked": true
-  },
-  {
-   "id": "53ddecf9f5b1",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Critical FortiSIEM Flaw Gets Public Exploit PoC for Unauthenticated Remote Code Execution",
-   "link": "https://thehackernews.com/2026/10/critical-fortisiem-flaw-gets-public.html",
-   "published": "2026-10-20T15:38:52+00:00",
-   "summary": "Cybersecurity researchers have released a proof-of-concept (PoC) exploit for a recently patched critical security flaw impacting Fortinet FortiSIEM that could result in arbitrary code execution. The vulnerability, tracked as CVE-2026-106173 (CVSS score: 9.4), is a critical path traversal flaw that could allow an…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3BuJLxcpzxzxwpUcwsPb7L-gNCeXeyuPtNysOMHtf06VmANCx2DR3O52Puw9AQwUu0C8ccQ77MF_l0bAf4zL-hrvYO8jSHs6Km0Xz6-Q4yYm1thRvJ-y59qLRX9Qni0zD161qJ53oCgzEIo3NjOLKtgOrIAbOMsAhITOhL9qoy2v9D6tRU26m0fBoMDhJ/s1600/fort-poc.jpg",
-   "cves": [
-    "CVE-2026-106173"
-   ],
-   "first_seen": "2026-10-20T16:35:07.068000+00:00",
-   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -1970,27 +2044,6 @@
     "The fixed versions and the advisory will appear on php.net and through PHP's GitHub security advisories , where the project assigns its own identifiers.",
     "You cannot fully block the two critical PHP flaws called PHP2Shell before today's fix, and the one setting being passed around as a workaround is not enough on its own, the security firm that suggested it now says.",
     "PHP will release the fix at 14:00 UTC on October 21 for two flaws it rates 9.2 out of 10, and has given no workaround of its own."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "0d304799e621",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Qilin and INC Ransomware Groups Exploit Palo Alto Networks Flaw to Bypass MFA",
-   "link": "https://thehackernews.com/2026/10/qilin-and-inc-ransomware-groups-exploit.html",
-   "published": "2026-10-20T15:32:27+00:00",
-   "summary": "Palo Alto Networks has disclosed that it's continuing to observe exploitation of a now-patched security flaw impacting PAN-OS and Prisma Access by ransomware actors. The activity relates to CVE-2026-0257 (CVSS score: 7.8), an authentication bypass flaw that could be exploited by bad actors to set up unauthorized VPN…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgd71tvun8MRT5muo9ZiruSzkyqhGkeh-_5dP4QardwiC54o4wW3PtC7I1jtP_vVX1rPujN_YdrmILFSZw_Ikl6v8Gn2w75v-90aSHpnngi2WE-Ezv6OAO37YY4pJpNwe_DcGWRMgIOUxAEPyVisI3SxXnV30HejoGfGtlXDfAgGkdqrdFJjAI7x6jjFFj-/s1600/palo-ransomware.jpg",
-   "cves": [
-    "CVE-2026-0257"
-   ],
-   "first_seen": "2026-10-20T16:35:07.068000+00:00",
-   "instructions": [
-    "Besides applying the latest fixes, Palo Alto Networks is recommending that organizations proactively hunt for indicators of compromise and initiate appropriate incident response protocols if successful gateway-connected events are detected.",
-    "\"Ransomware operators exploiting CVE-2026-0257 include Spikey Scorpius (aka Qilin) and Tarnished Scorpius (aka INC),\" Unit 42 researchers said in an update shared on Monday."
    ],
    "instructions_checked": true
   },
@@ -3891,6 +3944,26 @@
    "instructions_checked": true
   },
   {
+   "id": "db852607b136",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Warp discloses breach exposing AI agent logs, user telemetry data",
+   "link": "https://www.bleepingcomputer.com/news/security/warp-discloses-breach-exposing-ai-agent-logs-user-telemetry-data/",
+   "published": "2026-10-27T16:15:39+00:00",
+   "summary": "Agent decision logs and telemetry data belonging to Warp agentic development environment users were exposed in an attack on a third-party vendor in the project's infrastructure.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/27/warp.jpg",
+   "cves": [],
+   "first_seen": "2026-10-27T16:29:08.596210+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Warp users are advised to remain vigilant, monitor account activity, and treat unsolicited communications with increased caution.",
+    "“We detected the operation within hours and were able to remediate and mitigate the impact,” the CEO added."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "3c0f1fb39eea",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -3952,22 +4025,6 @@
     "Beyond failing to store credentials in encrypted form, Zeabur also failed to rotate all administrator account credentials since the August incident, while administrator portals remained accessible to the public internet.",
     "Users are urged to rotate exposed credentials and secrets immediately, revoke all active sessions, and rebuild compromised GCP servers."
    ],
-   "instructions_checked": true
-  },
-  {
-   "id": "dff178c340ad",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "Close Identity Gaps in Software Development Before Unleashing AI",
-   "link": "https://www.darkreading.com/application-security/close-identity-gaps-sdlc-before-ai",
-   "published": "2026-10-20T15:35:45+00:00",
-   "summary": "Artificial intelligence is complicating security in the software development life cycle, but a Dark Reading roundtable found collaboration, better identity visibility, and reduced testing costs offer CISOs a way ahead.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt44a0332eb39140fa/679be79d9bc2cd9f0b986638/TippaPatt-software-developer-shutterstock.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-10-20T16:35:07.068000+00:00",
-   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -5618,26 +5675,6 @@
     "Preparing for disruption must become part of day-to-day operations.",
     "Over the weekend, web hosting provider DreamHost suspended its File Manager service and reset some user passwords.",
     "SecurityWeek has emailed DreamHost for information on the number of affected users and the root cause of the incident and will update this article if the company responds."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "f7a865abe770",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "US Agencies Detail Incident Response Practices for Rogue AI Agents",
-   "link": "https://www.securityweek.com/us-agencies-detail-incident-response-practices-for-rogue-ai-agents/",
-   "published": "2026-10-20T15:45:00+00:00",
-   "summary": "NIST, CISA and NSA share ten voluntary practices for preparing for, detecting, responding to, recovering from, and reporting rogue AI agent incidents. The post US Agencies Detail Incident Response Practices for Rogue AI Agents appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/07/AI-artificial-intelligence-model-frontier.webp",
-   "cves": [],
-   "first_seen": "2026-10-20T15:58:37.068760+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Instead, the five stages should be treated as a single target.",
-    "Preparing for disruption must become part of day-to-day operations."
    ],
    "instructions_checked": true
   },
