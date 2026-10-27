@@ -26,7 +26,7 @@
    "source_name": "Ars Technica Security",
    "official": false,
    "source_type": "news",
-   "title": "Code-execution flaw in UEFI firmware threatens most servers on planet Earth",
+   "title": "Code-execution flaw in UEFI firmware affects most servers on planet Earth",
    "link": "https://arstechnica.com/security/2026/10/code-execution-flaw-in-uefi-firmware-threatens-most-servers-on-planet-earth/",
    "published": "2026-10-27T20:25:55+00:00",
    "summary": "Defenders across the world face the burden of responding to yet another botched code-execution vulnerability, this time in boot-time firmware used by most of the world’s server vendors and data centers. The vulnerability, with a severity rating of 9.5 out of 10, resides in the TianoCore EDK II, an open source codebase…",
@@ -602,6 +602,25 @@
     "CVE-2026-61359"
    ],
    "first_seen": "2026-10-21T21:13:15.063700+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "a801b48fbcd1",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-62765 Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62765",
+   "published": "2026-10-27T14:00:00+00:00",
+   "summary": "Access of resource using incompatible type ('type confusion') in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.",
+   "image": null,
+   "cves": [
+    "CVE-2026-62765"
+   ],
+   "first_seen": "2026-10-27T21:58:18.122129+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -4136,10 +4155,10 @@
    "source_name": "Dark Reading",
    "official": false,
    "source_type": "news",
-   "title": "Email Bombing, External Teams Chats Form Repeatable Access Path",
+   "title": "External Teams Chats Anchor 15-Minute Malware Delivery",
    "link": "https://www.darkreading.com/cloud-security/email-bombing-external-teams-chats-repeatable-access-path",
    "published": "2026-10-27T20:42:40+00:00",
-   "summary": "A common mix of impersonation, domain infrastructure, and trusted software is helping attackers scale Microsoft Teams intrusions across organizations.",
+   "summary": "Main bombing sis getting a new look with a wide-scale, ongoing social engineering campaign that might be tied to the Black Basta ransomware gang.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt634b295db59f5c55/6ae0fd3853ec236cfd97d242/Email_flood-juststock-GettyImages-2156140935.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-10-27T21:16:50.047660+00:00",
@@ -4179,6 +4198,22 @@
    "instructions_checked": true
   },
   {
+   "id": "2db299f6a190",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "3 Frameworks to Protect CISOs & Orgs Against AI Liability",
+   "link": "https://www.darkreading.com/cyber-risk/3-frameworks-cisos-ai-liability",
+   "published": "2026-10-27T21:15:03+00:00",
+   "summary": "Cyber leaders can get ahead of AI liability with rigorous documentation, transparency, and smart contract negotiations with AI vendors.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltbc201b7327a3221e/6ae0e1681ae793f19fb9e1de/Cyber_legal_Abu_Hanifa_Getty_Images.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-10-27T21:58:18.122129+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "3c321f073d20",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -4207,22 +4242,6 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt532ec4c95e5c91b7/6ada58e98f65b93d8e99c4a2/Insurance_policy-Mohamad_Faizal_Bin_Ramli-GettyImages-1295819436.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-10-23T14:03:39.527333+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "532771c4fc27",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "Tech Giants Block eMudhra Certificates Tied to 8 Compromised Keys",
-   "link": "https://www.darkreading.com/cyber-risk/tech-giants-emudhra-certificates-compromised-keys",
-   "published": "2026-10-20T21:45:47+00:00",
-   "summary": "Google, Mozilla, Apple, the Go project and others moved swiftly to block the affected certificates from the Indian CA, though it's unclear how the keys were compromised.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt9204db2f2ffca6fe/6ad7d457e5c2f8b0773c4a30/ca_Inkoly_shutterstock.jpf.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-10-20T22:32:22.349668+00:00",
    "instructions": [],
    "instructions_checked": true
   },
