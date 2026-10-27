@@ -1194,6 +1194,24 @@
    "instructions_checked": true
   },
   {
+   "id": "1da67faa3c4a",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Australia Gets Into Amadey Malware Backend, Cuts Off Access to 180,000 Infected Computers",
+   "link": "https://thehackernews.com/2026/10/australia-gets-into-amadey-malware.html",
+   "published": "2026-10-27T09:33:06+00:00",
+   "summary": "A criminal using the Amadey malware can no longer access or steal data from 180,000 infected computers around the world, including some in Australia, the Australian Signals Directorate (ASD) says. The agency's operators gained access to the criminal's operation's backend and cut it off from those computers. \"The next…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinCXm9nOGLf3YFKOH7D87d6Wau4yc3WG_4nSANlzh0oVcI9dUXg07hiHfBkDONqewGH90O6qN1cv9B1vPKGeXr7dhwAjpJ9pHCZKv2MOU9WYesukNBqS55LiPg0ytVl8JonI32qTVei_L25bCcUsPTl2PZsxYhvx0nDsxwqy3RgKE1_iRRuSbAoaH8OcY/s1600/aus.jpg",
+   "cves": [],
+   "first_seen": "2026-10-27T09:52:37.329500+00:00",
+   "instructions": [
+    "Amadey's main job is to install more malware, such as the StealC infostealer."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "49aedb62ce7d",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1885,6 +1903,25 @@
    "first_seen": "2026-10-25T07:57:02.874789+00:00",
    "instructions": [
     "The disclosure comes as concerns have been raised over the ability of AI agents to detect and exploit software flaws, even in the guardrails designed to restrict them."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "ea5496feaca5",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "OpenAI Compaction Flaw Let Researchers Bypass Hidden Reasoning Protections",
+   "link": "https://thehackernews.com/2026/10/openai-compaction-flaw-let-researchers.html",
+   "published": "2026-10-27T08:22:43+00:00",
+   "summary": "OpenAI's compaction feature, which shrinks a long conversation to save space, could be turned into a way to copy a model's hidden reasoning out in plain text, security firm Xint has shown. OpenAI's reasoning models work through a problem before answering, and the service normally returns only the raw reasoning as an…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNsIWTk2-hgeO3hAG2ohh1yrK20QoX_O0WDYRc83Q9qg-Igk4mEbzap014Pya2lSNiYEvbRIzilTYToybQVVtR3sQH84nJj-kd8tGWOqW3D-ylLpwcxOfvONGVSzjNuu5piwltyECtuezAw4Q8R7S3lvH_g2z3EpDT_EuOOEJg1-FRrChaADA4S6scQkU/s1600/chatgpt-compact.jpg",
+   "cves": [],
+   "first_seen": "2026-10-27T09:52:37.329500+00:00",
+   "instructions": [
+    "Anthropic and a joint U.S. government advisory have each reported China-based labs targeting the hidden reasoning of American models.",
+    "Compaction got past that block, Xint said, because the compaction step runs on the same model that made the reasoning, so it never triggers the cross-model check."
    ],
    "instructions_checked": true
   },
@@ -4929,23 +4966,6 @@
    "instructions_checked": true
   },
   {
-   "id": "4b4f09e00694",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Revolut outage disrupts online banking operations worldwide",
-   "link": "https://www.bleepingcomputer.com/news/security/revolut-outage-disrupts-online-banking-operations-worldwide/",
-   "published": "2026-10-20T09:46:44+00:00",
-   "summary": "Fintech company Revolut is working to resolve a massive outage that disrupted most of its services worldwide earlier today.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/20/Revolut.jpg",
-   "cves": [],
-   "first_seen": "2026-10-20T09:48:00.748759+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "0f04a6f0fbac",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -6018,6 +6038,28 @@
    "image_checked": true,
    "instructions": [
     "Preparing for disruption must become part of day-to-day operations."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "b7087025de0e",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Dead Popcorn Time Updater Put Millions of Computers at Risk of Takeover",
+   "link": "https://www.securityweek.com/dead-popcorn-time-updater-put-millions-of-computers-at-risk-of-takeover/",
+   "published": "2026-10-27T09:44:50+00:00",
+   "summary": "Running at system boot, it periodically polled the update domain to execute any code served, with full privileges. The post Dead Popcorn Time Updater Put Millions of Computers at Risk of Takeover appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/03/botnets.jpeg",
+   "cves": [],
+   "first_seen": "2026-10-27T09:52:37.329500+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Because the project had been abandoned, there was no vendor to patch the underlying flaw via an update, and Eye Security took matters into its own hands: the researchers registered 15 domains that were not owned by a third party and pushed an update to entirely disable the flawed mechanism.",
+    "However, the application is built on a 2014 version of Chrome with no sandbox and should be completely removed. “Our update only disabled the updater.",
+    "Preparing for disruption must become part of day-to-day operations.",
+    "Eye Security researchers have disabled the update mechanism of an abandoned Popcorn Time fork and sinkholed its domains."
    ],
    "instructions_checked": true
   },
