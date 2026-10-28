@@ -1122,6 +1122,27 @@
    "instructions_checked": true
   },
   {
+   "id": "42a9e60af11b",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Adobe Fixes 8 Critical Campaign Classic Flaws Allowing Code Execution and Security Bypass",
+   "link": "https://thehackernews.com/2026/10/adobe-fixes-8-critical-campaign-classic.html",
+   "published": "2026-10-28T11:15:51+00:00",
+   "summary": "Adobe has released patches to address multiple critical security flaws in Campaign Classic that, if successfully exploited, could result in arbitrary code execution, security feature bypass, and privilege escalation. The list of eight vulnerabilities is as follows - CVE-2026-104351 (CVSS score: 9.9) - A code injection…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3z7SDPF49VtrfeTS8qZD9-Rv1ne3ZUL2KLJZklOlASYXMnjBQXmmIYZ-wAC9PR248ntUBTyZLq2G6TPVYLZ-aEN7fDFc4pcEhSbt_vj36JTbujGJ2UHTbxFDUOiDvYDyKl7NpCvSMlySdqWjPhyphenhyphenFUNTkC38Ej0biyWHeF1u4kFHCe4tkJjgCW6RCHttx_/s1600/adobe-main.jpg",
+   "cves": [
+    "CVE-2026-104351"
+   ],
+   "first_seen": "2026-10-28T11:24:37.516064+00:00",
+   "instructions": [
+    "Users are advised to update to the latest version for optimal protection.",
+    "Adobe said it's not \"aware of any exploits in the wild for any of the issues\" addressed in the update."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "1ce9ccf10a03",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1136,6 +1157,24 @@
    "first_seen": "2026-10-27T12:44:30.927471+00:00",
    "instructions": [
     "Establish phishing response procedures: Organizations should have clear processes for reporting suspected phishing attempts, revoking compromised sessions, resetting credentials and investigating unauthorized access."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "169a3a02ba4a",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "American Organizations Under Attack: Skyw4lker Device Code Phishing Campaign Exposed",
+   "link": "https://thehackernews.com/2026/10/american-organizations-under-attack.html",
+   "published": "2026-10-28T10:30:00+00:00",
+   "summary": "Modern phishing campaigns can compromise American businesses without relying on traditional credential theft. Attackers can abuse legitimate cloud services, authentication mechanisms, and trusted business workflows to gain access to corporate accounts while leaving fewer obvious signs behind. ANY.RUN's analysis of…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgf2g4rsWnZ5eQP03cr-4e99MQStvJmuaTTi91WESG3ua1ddAW73T6X22gyaspj2SirqH-1bSAU9VkOg2F1Kh9TLmPc4jYsNAlD72S2XzCeTTRHSiN3B7is7roWwIMcIm__yRu8SkUBbyeWxAEBo5Fe-bbACZWRuoxZqv_pysQ9iMsZRHPCD_clJZsNIDs/s1600/anyrun-main.jpg",
+   "cves": [],
+   "first_seen": "2026-10-28T11:24:37.516064+00:00",
+   "instructions": [
+    "A successful investigation should improve an organization's ability to detect the next attack."
    ],
    "instructions_checked": true
   },
@@ -3429,6 +3468,28 @@
    "instructions_checked": true
   },
   {
+   "id": "aa5619127529",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "CISA warns of hackers now exploiting critical Node2Shell flaw",
+   "link": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-now-exploiting-critical-node2shell-flaw/",
+   "published": "2026-10-28T10:46:23+00:00",
+   "summary": "On Tuesday, the US Cybersecurity and Infrastructure Security Agency (CISA) confirmed that hackers have begun exploiting a critical Brotli vulnerability known as Node2Shell, Broccoli2Shell, and HTTP2Shell.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/28/CISA.jpg",
+   "cves": [],
+   "first_seen": "2026-10-28T11:24:37.516064+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Security teams that can't apply the updates immediately should block incoming Brotli-compressed requests at the proxy or firewall level, or disable the Brotli decoding feature until they can update.",
+    "After patching, administrators must also restart affected processes and rebuild and redeploy affected container images.",
+    "On Sunday, Microsoft also pushed an emergency .NET security update , warning that attackers could exploit it to escalate privileges on systems with a vulnerable .NET version.",
+    "CISA added the flaw to its Known Exploited Vulnerabilities (KEV) Catalog on Tuesday and ordered US government agencies to patch their systems within two weeks, by November 10, as mandated by its Binding Operational Directive (BOD) 26-04."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "bc6b0429e7ca",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4634,18 +4695,18 @@
    "instructions_checked": true
   },
   {
-   "id": "8e7d8bc5cf31",
+   "id": "5ad5314f8c50",
    "source": "schneier",
    "source_name": "Schneier on Security",
    "official": false,
    "source_type": "news",
-   "title": "Workshop on Economics and Information Security (WEIS) Archive",
-   "link": "https://www.schneier.com/blog/archives/2026/10/workshop-on-economics-and-information-security-weis-archive.html",
-   "published": "2026-10-21T11:02:22+00:00",
-   "summary": "There’s a new archive of all the papers from twenty-five years of the Workshop on Economics and Information Security (WEIS). Really nice resource. It’s fun to reread my 2002 essay on the economics of information security.",
+   "title": "Studying Fraudulent North Korean IT Workers",
+   "link": "https://www.schneier.com/blog/archives/2026/10/studying-fraudulent-north-korean-it-workers.html",
+   "published": "2026-10-28T11:05:00+00:00",
+   "summary": "Researchers set up a fake start-up company to study fraudulent North Korean IT workers.",
    "image": null,
    "cves": [],
-   "first_seen": "2026-10-21T11:35:30.299586+00:00",
+   "first_seen": "2026-10-28T11:24:37.516064+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -4780,26 +4841,6 @@
    "instructions_checked": true
   },
   {
-   "id": "9b477066ea3b",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Browsers Block eMudhra Intermediate CAs Over Recoverable Private Keys",
-   "link": "https://www.securityweek.com/browsers-block-emudhra-intermediate-cas-over-recoverable-private-keys/",
-   "published": "2026-10-21T11:22:05+00:00",
-   "summary": "The private keys associated with eight certificates were compromised, and root programs and trust stores are blocking them. The post Browsers Block eMudhra Intermediate CAs Over Recoverable Private Keys appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2024/09/internet-routing-bgp.jpeg",
-   "cves": [],
-   "first_seen": "2026-10-21T11:35:30.299586+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Preparing for disruption must become part of day-to-day operations.",
-    "There appears to be no evidence in Certificate Transparency (CT) logs that the keys were used maliciously before revocation, but not all clients enforce CT, and threat actors may have used them to impersonate those clients."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "713a68aa818f",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -4817,27 +4858,6 @@
     "Jon Steinbach has been appointed strategic technical advisor to the Pentagon’s CIO.",
     "Preparing for disruption must become part of day-to-day operations.",
     "Browsers Block eMudhra Intermediate CAs Over Recoverable Private Keys"
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "a9327fc12a2b",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "China Defends DeepSeek After US Ban of Its AI From Government Systems",
-   "link": "https://www.securityweek.com/china-defends-deepseek-after-us-ban-of-its-ai-from-government-systems/",
-   "published": "2026-10-21T10:54:49+00:00",
-   "summary": "The DHS said agencies should remove DeepSeek products as well as third-party products and services developed using DeepSeek from their IT systems. The post China Defends DeepSeek After US Ban of Its AI From Government Systems appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2025/02/DeepSeek-AI.jpeg",
-   "cves": [],
-   "first_seen": "2026-10-21T11:35:30.299586+00:00",
-   "image_checked": true,
-   "instructions": [
-    "The Department of Homeland Security said the agencies should remove DeepSeek products as well as third-party products and services developed using DeepSeek from their IT systems, according to a notice made public on Monday.",
-    "Preparing for disruption must become part of day-to-day operations.",
-    "And last week, Beijing rolled out its own proposals to restrict exports of certain advanced AI models."
    ],
    "instructions_checked": true
   },
@@ -5241,6 +5261,28 @@
     "Jon Steinbach has been appointed strategic technical advisor to the Pentagon’s CIO.",
     "Preparing for disruption must become part of day-to-day operations.",
     "The attackers used the compromised credentials to disable branch protections, merge a change that pointed the releaser to a different source repository, and run a compromised GitHub workflow that pointed to a lookalike repository, then signed and published the poisoned artifacts."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "9ebc7f16e54c",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Long-Hidden Flaws Patched in EPICS Research Facility Control Software",
+   "link": "https://www.securityweek.com/long-hidden-flaws-patched-in-epics-research-facility-control-software/",
+   "published": "2026-10-28T10:48:00+00:00",
+   "summary": "Four EPICS Base flaws found by an autonomous system could let attackers crash processes at particle accelerators and fusion labs. The post Long-Hidden Flaws Patched in EPICS Research Facility Control Software appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/10/research-laboratory-physics-laser.jpeg",
+   "cves": [],
+   "first_seen": "2026-10-28T11:24:37.516064+00:00",
+   "image_checked": true,
+   "instructions": [
+    "CISA disclosed the issues in an advisory published on Tuesday, saying they impact EPICS Base 7.0.10 and earlier.",
+    "According to CISA, it can lead to a wrongly sized memory allocation, and processing attacker-supplied data afterwards could corrupt memory, trigger DoS, or possibly enable remote code execution.",
+    "iOS, macOS 27.2 Patch 286 Bugs; Fix for Exploited Flaw Backported to iOS 18",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
   },
