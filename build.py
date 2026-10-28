@@ -912,6 +912,7 @@ main.wrap{padding-top:32px;padding-bottom:72px}
 .box{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px 20px}
 .notice{border-left:3px solid var(--high);padding:10px 14px;margin:0 0 24px;background:var(--surface);border-radius:var(--r)}
 .type{color:var(--muted);font-weight:550}
+[hidden]{display:none!important}
 .empty{background:var(--surface);border:1px dashed var(--line);border-radius:var(--r);padding:24px;color:var(--muted)}
 .prose{max-width:780px;margin:0 auto}
 .prose h2{font-size:1.12rem;letter-spacing:-.01em;margin:2.2rem 0 .7rem}
@@ -2081,9 +2082,10 @@ def _az_signal_html(it: dict) -> str:
 
 def _az_panel(az: dict) -> str:
     items = az["items"]
-    live = "Live" if az["ok"] else "Offline · saved posts"
+    live = "Feed reachable" if az["ok"] else "Offline · saved posts"
     if not items:
-        body = '<div class="empty">No recent posts in the public Azure status feed.</div>' if az["ok"] \
+        body = ('<div class="empty">No active Azure posts. The status feed lists current events only, so an empty feed means no open Azure incident in the feed right now.'
+                f' <a href="{AZ_HISTORY_URL}" target="_blank" rel="noopener noreferrer">Check Azure status history &nearr;</a></div>') if az["ok"] \
             else '<div class="empty">The public Azure status feed could not be reached. Saved posts will show here after the first successful run.</div>'
         return ('<div class="az-head"><span class="rh-led" aria-hidden="true"></span>'
                 f'<span class="rv-tag s-preview">Public · {esc(live)}</span></div>{body}')
@@ -2223,6 +2225,196 @@ RADAR_CSS = """
 @media (prefers-reduced-motion:reduce){.rv-scan,.rh-led{animation:none!important}.rv-item,.rv-btn,.rh-card{transition:none!important}.rv-item:hover,.rv-btn:hover,.rh-card:hover{transform:none}}
 """
 
+# ---------------------------------------------------------------- free sources (official, no sign-in)
+MSRC_URL = "https://api.msrc.microsoft.com/update-guide/rss"
+AZ_UPDATES_URL = "https://www.microsoft.com/releasecommunications/api/v2/azure/rss"
+AZ_HISTORY_URL = "https://azure.status.microsoft/en-us/status/history/"
+MSRC_SRC = {"id": "msrc", "name": "MSRC Security Update Guide", "official": True, "type": "advisory"}
+AZU_SRC = {"id": "azure-updates", "name": "Azure updates", "official": True, "type": "advisory"}
+CVE_RE = re.compile(r"CVE-\d{4}-\d{4,7}", re.I)
+CRIT_RE = re.compile(r"\bcritical\b", re.I)
+EXPL_RE = re.compile(r"actively exploited|exploitation detected|exploited in the wild|zero-day|0-day", re.I)
+RETIRE_RE = re.compile(r"retire|retirement|deprecat|end of support|will be removed|no longer supported", re.I)
+STAGE_ORDER = ["Rolling out", "In development", "Preview", "Launched", "Generally available", "Stage not stated"]
+
+
+def load_feed_source(fixtures: Path | None, data_file: Path, fixture_name: str, url: str,
+                     saved_name: str, parse_src: dict, limit: int = 25) -> dict:
+    """Generic official RSS/Atom loader with saved-entries fallback. Never raises."""
+    saved_file = data_file.parent / saved_name
+    try:
+        data = (fixtures / fixture_name).read_bytes() if fixtures else fetch(url)
+        if not re.search(rb"<(rss|feed|rdf)", data[:2000], re.I):
+            raise RuntimeError("response is not an RSS/Atom feed")
+        items = [{"id": e["id"], "title": e["title"], "link": e["link"], "summary": e["summary"],
+                  "published": e["published"]} for e in parse_feed(data, parse_src)[:limit]]
+        items.sort(key=lambda i: i["published"] or "", reverse=True)
+        if fixtures is None:
+            saved_file.parent.mkdir(parents=True, exist_ok=True)
+            saved_file.write_text(json.dumps({"items": items}, ensure_ascii=False, indent=1), encoding="utf-8")
+        return {"ok": True, "error": None, "items": items}
+    except Exception as e:  # noqa: BLE001 - optional sources must never break the build
+        saved: list[dict] = []
+        try:
+            if saved_file.exists():
+                saved = json.loads(saved_file.read_text(encoding="utf-8")).get("items", [])
+        except (OSError, ValueError):
+            saved = []
+        return {"ok": False, "error": str(e)[:200], "items": saved}
+
+
+def msrc_info(it: dict) -> dict:
+    text = f"{it['title']} {it['summary']}"
+    cves = sorted({c.upper() for c in CVE_RE.findall(text)})[:3]
+    return {"cves": cves, "critical": bool(CRIT_RE.search(text)), "exploited": bool(EXPL_RE.search(text))}
+
+
+def azu_info(it: dict) -> dict:
+    text = f"{it['title']} {it['summary']}"
+    stage = next((label for rx, label in RADAR_STAGES if rx.search(text)), None)
+    return {"stage": stage, "retire": bool(RETIRE_RE.search(text)), "products": [n for n, rx in RADAR_PRODUCTS if rx.search(text)][:2]}
+
+
+def _new_badge(published: str | None, now: datetime) -> str:
+    try:
+        d = datetime.fromisoformat((published or "").replace("Z", "+00:00"))
+    except ValueError:
+        return ""
+    if d.tzinfo is None:
+        d = d.replace(tzinfo=timezone.utc)
+    return '<span class="rv-tag s-launched">New · 7 days</span>' if (now - d).days <= 7 else ""
+
+
+def build_tasks(radar: dict) -> list[dict]:
+    """Derived to-do list. Only explicit wording or explicit tags create a task; nothing is invented."""
+    import hashlib
+    tasks: list[dict] = []
+
+    def add(kind: str, label: str, title: str, link: str) -> None:
+        tid = hashlib.sha1(f"{kind}|{link}|{title}".encode()).hexdigest()[:12]
+        tasks.append({"id": tid, "kind": kind, "label": label, "title": title, "link": link})
+
+    for it in (radar.get("msrc") or {}).get("items", []):
+        info = msrc_info(it)
+        if info["exploited"]:
+            add("crit", "Exploited", it["title"], it["link"])
+        elif info["critical"]:
+            add("crit", "Critical", it["title"], it["link"])
+    for m in radar.get("services") or []:
+        if m.get("actionRequiredByDateTime") or ACTION_RE.search(str(m.get("body") or "")):
+            due = fmt_day(m.get("actionRequiredByDateTime")) or "no date given"
+            add("action", f"Action · due {due}", str(m.get("title")), "service-messages")
+    for it in (radar.get("azure") or {}).get("items", []):
+        if it.get("state") in ("Investigating", "Mitigated"):
+            add("azure", f"Azure {it['state'].lower()}", it["title"], it["link"])
+    for it in (radar.get("azupd") or {}).get("items", []):
+        if azu_info(it)["retire"]:
+            add("retire", "Retirement", it["title"], it["link"])
+    for it in radar.get("items", []):
+        if it.get("stage") == "Rolling out" and "Admin" in audience_of(f"{it['title']} {it['summary']}"):
+            add("admin", "Admin change rolling out", it["title"], it["link"])
+    order = {"crit": 0, "action": 1, "azure": 2, "retire": 3, "admin": 4}
+    tasks.sort(key=lambda t: order[t["kind"]])
+    return tasks[:14]
+
+
+def _ops_board(radar: dict, now: datetime) -> str:
+    tasks = build_tasks(radar)
+    msrc_items = (radar.get("msrc") or {}).get("items", [])
+    azu_items = (radar.get("azupd") or {}).get("items", [])
+    az_items = (radar.get("azure") or {}).get("items", [])
+    n_crit = sum(1 for i in msrc_items if msrc_info(i)["critical"] or msrc_info(i)["exploited"])
+    n_expl = sum(1 for i in msrc_items if msrc_info(i)["exploited"])
+    n_retire = sum(1 for i in azu_items if azu_info(i)["retire"])
+    n_open = sum(1 for i in az_items if i.get("state") in ("Investigating", "Mitigated"))
+    stats = (
+        '<div class="rv-stats ops-stats">'
+        f'<div class="rv-stat c-amber"><b>{n_crit}</b><span>Critical CVEs</span></div>'
+        f'<div class="rv-stat c-red"><b>{n_expl}</b><span>Exploited</span></div>'
+        f'<div class="rv-stat c-cyan"><b>{n_open}</b><span>Open Azure posts</span></div>'
+        f'<div class="rv-stat c-violet"><b>{n_retire}</b><span>Retirements</span></div></div>')
+    kind_label = {"crit": "k-crit", "action": "k-action", "azure": "k-azure", "retire": "k-retire", "admin": "k-admin"}
+    task_html = "".join(
+        f'<li class="ops-task"><label><input type="checkbox" data-task-id="{t["id"]}">'
+        f'<span class="ops-kind {kind_label[t["kind"]]}">{esc(t["label"])}</span>'
+        + (f'<a href="{esc(t["link"])}" target="_blank" rel="noopener noreferrer">{esc(t["title"])}</a>' if t["link"].startswith("http")
+           else f'<span>{esc(t["title"])}</span>')
+        + '</label></li>' for t in tasks)
+    todo = (
+        '<div class="ops-card ops-todo"><div class="ops-cardhead"><h3>Do this week</h3>'
+        f'<span class="rv-tag" id="ops-progress">0 of {len(tasks)} done</span></div>'
+        + (f'<ul class="ops-tasks">{task_html}</ul>' if tasks else
+           '<p class="rv-sub">Nothing to do. No critical CVEs, open Azure posts, retirements or admin changes in the current feeds.</p>')
+        + '<p class="rv-legend">Built only from explicit wording and feed tags. Tick items off on this device; the list is not shared.</p></div>')
+
+    crit_rows = "".join(
+        f'<li class="ops-row"><div class="rv-tags">'
+        + ("".join(f'<span class="rv-tag product">{esc(c)}</span>' for c in msrc_info(i)["cves"]))
+        + ('<span class="rv-tag sev">Exploited</span>' if msrc_info(i)["exploited"] else
+           ('<span class="rv-tag sev">Critical</span>' if msrc_info(i)["critical"] else ""))
+        + _new_badge(i["published"], now)
+        + f'</div><a href="{esc(i["link"])}" target="_blank" rel="noopener noreferrer">{esc(i["title"])}</a>'
+        f'<span class="rh-meta">{esc(fmt_day(i["published"]) or "date not provided")}</span></li>'
+        for i in msrc_items[:6])
+    crit = (
+        '<div class="ops-card"><div class="ops-cardhead"><h3>Security updates</h3>'
+        '<span class="rv-tag s-preview">MSRC · official</span></div>'
+        + (f'<ul class="ops-list">{crit_rows}</ul>' if crit_rows else
+           '<p class="rv-sub">The MSRC feed is unreachable right now and no saved entries exist yet.</p>' if not (radar.get("msrc") or {}).get("ok")
+           else '<p class="rv-sub">No entries in the MSRC feed.</p>')
+        + '<p class="rv-legend">Critical and exploited tags are read from the title and summary wording.</p></div>')
+
+    upd_rows = "".join(
+        f'<li class="ops-row"><div class="rv-tags">{_tag_stage(azu_info(i)["stage"])}'
+        + ('<span class="rv-tag a-action">Retirement</span>' if azu_info(i)["retire"] else "")
+        + _new_badge(i["published"], now)
+        + f'</div><a href="{esc(i["link"])}" target="_blank" rel="noopener noreferrer">{esc(i["title"])}</a>'
+        f'<span class="rh-meta">{esc(fmt_day(i["published"]) or "date not provided")}</span></li>'
+        for i in azu_items[:6])
+    upd = (
+        '<div class="ops-card"><div class="ops-cardhead"><h3>Azure product updates</h3>'
+        '<span class="rv-tag s-preview">Microsoft · official</span></div>'
+        + (f'<ul class="ops-list">{upd_rows}</ul>' if upd_rows else
+           '<p class="rv-sub">No Azure product updates loaded yet.</p>')
+        + '<p class="rv-legend">Stage and retirement tags are read from the wording of each post.</p></div>')
+
+    return ('<section class="rv-section ops" aria-labelledby="ops-title"><h2 id="ops-title">Command board '
+            '<span class="rv-tag s-launched">Actionable</span></h2>'
+            '<p class="rv-sub">What to look at first, built from official feeds and your tenant data (when connected).</p>'
+            + stats + '<div class="ops-grid">' + todo + crit + upd + '</div></section>')
+
+
+OPS_CSS = """
+.ops-stats{margin-top:0}.rv-stat.c-red{border-left-color:var(--rv-red)}
+.ops-grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));margin-top:14px}
+.ops-card{padding:18px;border-radius:var(--r);border:1px solid var(--line);background:var(--surface)}
+.ops-todo{border-color:rgba(56,189,248,.35)}
+.ops-cardhead{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}
+.ops-cardhead h3{margin:0;font-size:1.02rem}
+.ops-tasks,.ops-list{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.ops-task label{display:flex;gap:10px;align-items:flex-start;flex-wrap:wrap;font-size:.9rem;line-height:1.45;cursor:pointer}
+.ops-task input{margin-top:4px;accent-color:var(--rv-green);width:16px;height:16px}
+.ops-task a{color:var(--ink)}
+.ops-task.is-done span,.ops-task.is-done a{text-decoration:line-through;opacity:.55}
+.ops-kind{display:inline-block;font-size:.66rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 8px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
+.k-crit{color:#fff;background:var(--rv-red);border-color:var(--rv-red)}
+.k-action{color:var(--rv-amber);border-color:rgba(251,191,36,.6)}
+.k-azure{color:var(--rv-cyan);border-color:rgba(56,189,248,.55)}
+.k-retire{color:var(--rv-violet);border-color:rgba(167,139,250,.6)}
+.k-admin{color:var(--rv-green);border-color:rgba(34,197,94,.55)}
+.ops-row{display:grid;gap:4px;padding:10px 0;border-top:1px solid var(--line)}
+.ops-row:first-child{border-top:0;padding-top:0}
+.ops-row a{color:var(--ink);text-decoration:none;font-weight:600;font-size:.92rem;line-height:1.4}
+.ops-row a:hover{color:var(--rv-cyan);text-decoration:underline}
+.rv-tag.s-unknown{color:var(--muted);border-style:dashed}
+.rv-chip .ct{opacity:.7;font-weight:600;margin-left:4px}
+.rv-chip[disabled]{opacity:.4;cursor:not-allowed}
+.az-status-note{margin-top:10px;font-size:.85rem;color:var(--muted)}
+.az-status-note a{color:var(--rv-cyan)}
+"""
+
+RADAR_CSS += OPS_CSS
+
 RADAR_JS = """(function(){
 var state={product:'all',stage:'all',audience:'all',q:''};
 var items=[].slice.call(document.querySelectorAll('.rv-item[data-filterable]'));
@@ -2245,6 +2437,15 @@ var q=document.getElementById('rv-search');
 if(q){q.addEventListener('input',function(){state.q=q.value.trim().toLowerCase();apply();});}
 apply();})();"""
 
+OPS_JS = """(function(){
+var K='sb-ops-done';var done={};try{done=JSON.parse(localStorage.getItem(K)||'{}')}catch(e){done={}}
+var boxes=[].slice.call(document.querySelectorAll('[data-task-id]'));
+function upd(){var n=0;boxes.forEach(function(b){var li=b.closest('li');if(li)li.classList.toggle('is-done',b.checked);if(b.checked)n++;});
+var p=document.getElementById('ops-progress');if(p)p.textContent=n+' of '+boxes.length+' done';}
+boxes.forEach(function(b){var id=b.getAttribute('data-task-id');b.checked=!!done[id];
+b.addEventListener('change',function(){done[id]=b.checked;try{localStorage.setItem(K,JSON.stringify(done))}catch(e){}upd();});});
+upd();})();"""
+
 STAGE_CLASS = {"Rolling out": "s-rollout", "In development": "s-dev", "Preview": "s-preview",
                "Launched": "s-launched", "Generally available": "s-launched"}
 ADMIN_RE = re.compile(r"\badmins?\b|administrators?|\bit teams?\b", re.I)
@@ -2263,7 +2464,7 @@ def audience_of(text: str) -> list[str]:
 
 def _tag_stage(stage: str | None) -> str:
     if not stage:
-        return '<span class="rv-tag">Roadmap</span>'
+        return '<span class="rv-tag s-unknown">Stage not stated</span>'
     return f'<span class="rv-tag {STAGE_CLASS.get(stage, "")}">{esc(stage)}</span>'
 
 
@@ -2279,7 +2480,7 @@ def _tag_audience(aud: list[str]) -> str:
 def _radar_item_html(it: dict) -> str:
     text = f"{it['title']} {it['summary']}"
     aud = audience_of(text)
-    stage = it["stage"] or "Roadmap"
+    stage = it["stage"] or "Stage not stated"
     products = it["products"][:2]
     tags = _tag_stage(it["stage"]) + "".join(f'<span class="rv-tag product">{esc(p)}</span>' for p in products) + _tag_audience(aud)
     summary = f'<p class="rv-desc">{esc(_short(it["summary"], 240))}</p>' if it["summary"] else ""
@@ -2349,8 +2550,9 @@ def radar_page(radar: dict, cfg: dict, site_cfg: dict) -> str:
     base = "../"
     items = radar["items"]
     services = radar.get("services")
-    stages = [s for s in ["Rolling out", "In development", "Preview", "Launched", "Generally available"]
-              if any(i["stage"] == s for i in items)]
+    def _stage_of(i: dict) -> str:
+        return i["stage"] or "Stage not stated"
+    stage_counts = {k: sum(1 for i in items if _stage_of(i) == k) for k in STAGE_ORDER}
     prods = sorted({p for i in items for p in i["products"] if p != "Microsoft 365"})
     audiences = [i for i in items if audience_of(f"{i['title']} {i['summary']}")]
     rolling = sum(1 for i in items if i["stage"] == "Rolling out")
@@ -2393,7 +2595,7 @@ def radar_page(radar: dict, cfg: dict, site_cfg: dict) -> str:
         + '</summary>'
         + ('<p>' + str(len(services)) + ' tenant messages loaded from the fetch script. Impact tags are inferred from the text; confirm in the admin center.</p>'
            if services is not None else
-           '<p>Microsoft 365 incidents and Message Center posts are tenant-specific. Microsoft no longer offers a free public M365 service-health RSS feed, '
+           '<p>Microsoft 365 incidents and Message Center posts are tenant-specific. I found no free public Microsoft 365 incident feed that is verified to work, so this needs your tenant. '
            'so they need Microsoft Graph with an authorised read-only app (ServiceHealth.Read.All and ServiceMessage.Read.All, admin consent). '
            'Run <code>scripts/fetch_service_messages.py</code> to produce the data file; the script header lists each step.</p>')
         + '</details>')
@@ -2413,7 +2615,8 @@ def radar_page(radar: dict, cfg: dict, site_cfg: dict) -> str:
         '<div class="rv-search"><label class="sr-only" for="rv-search">Search roadmap entries</label>'
         '<input id="rv-search" type="search" placeholder="Search title, product, feature ID or wording…"></div>'
         + _chips("product", "Product", [("all", "All")] + [(p, p) for p in prods])
-        + _chips("stage", "Stage", [("all", "All")] + [(s, s) for s in stages])
+        + _chips("stage", "Stage", [("all", f"All · {len(items)}")]
+                 + [(k, f"{k} · {stage_counts[k]}") for k in STAGE_ORDER])
         + _chips("audience", "Audience", [("all", "All"), ("Admin", "Admin relevant"), ("User", "User relevant")])
         + '</div>')
 
@@ -2426,7 +2629,7 @@ def radar_page(radar: dict, cfg: dict, site_cfg: dict) -> str:
         + '<p class="rv-legend">Stage colour: green = rolling out, violet = in development, cyan = preview, mint = launched. '
           'Amber marks entries whose wording mentions admins. Tags are inferred, not official Microsoft classifications.</p>')
 
-    body = hero + notice + svc_block + '<section class="rv-section" aria-labelledby="road-title"><h2 id="road-title">Roadmap entries</h2>' + controls + listing + '</section>' + "<script>" + RADAR_JS + "</script>"
+    body = hero + _ops_board(radar, datetime.now(timezone.utc)) + notice + svc_block + '<section class="rv-section" aria-labelledby="road-title"><h2 id="road-title">Roadmap entries</h2>' + controls + listing + '</section>' + "<script>" + RADAR_JS + OPS_JS + "</script>"
     return _layout(cfg, "Microsoft 365 Change Radar",
                    "Public Microsoft 365 roadmap entries, kept separate from security news and tenant-specific Message Center data.",
                    body, base)
@@ -2449,7 +2652,12 @@ def _radar_home(radar: dict) -> str:
     svc = radar.get("services")
     svc_note = f'<span class="rv-tag s-preview">{len(svc)} tenant messages</span>' if svc else '<span class="rv-tag">Tenant feed not connected</span>'
     az = radar.get("azure") or {"ok": False, "items": []}
-    az_note = f'<span class="rv-tag s-launched">Azure: {len(az["items"])} public posts</span>' if az["items"] else '<span class="rv-tag">Azure feed quiet or offline</span>'
+    if az.get("items"):
+        az_note = f'<span class="rv-tag s-launched">Azure: {len(az["items"])} public posts</span>'
+    elif az.get("ok"):
+        az_note = '<span class="rv-tag s-preview">Azure: no open posts</span>'
+    else:
+        az_note = '<span class="rv-tag">Azure feed unreachable</span>'
     svc_note = az_note + " " + svc_note
     return (
         '<section class="rh" id="change-radar" aria-labelledby="radar-title"><div class="rv-scan" aria-hidden="true"></div>'
@@ -2614,6 +2822,8 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
     radar = load_radar(fixtures, data_file)
     radar["services"] = load_services(data_file)
     radar["azure"] = load_azure_status(fixtures, data_file)
+    radar["msrc"] = load_feed_source(fixtures, data_file, "msrc.xml", MSRC_URL, "msrc.json", MSRC_SRC)
+    radar["azupd"] = load_feed_source(fixtures, data_file, "azure-updates.xml", AZ_UPDATES_URL, "azure-updates.json", AZU_SRC)
     publisher = site_cfg.get("publisher") or {}
     if not all((publisher.get(k) or "").strip() for k in ("name", "address", "email")):
         warnings.append("site.json publisher details incomplete: Impressum page is a placeholder")
