@@ -542,25 +542,6 @@
    "instructions_checked": true
   },
   {
-   "id": "6e4d169a998c",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-61359 Windows Storage Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-61359",
-   "published": "2026-10-21T14:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-61359"
-   ],
-   "first_seen": "2026-10-21T21:13:15.063700+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "a801b48fbcd1",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -613,25 +594,6 @@
     "CVE-2026-69473"
    ],
    "first_seen": "2026-10-27T16:29:08.596210+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "b78341cec335",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-69902 Windows NTFS Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69902",
-   "published": "2026-10-21T14:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-69902"
-   ],
-   "first_seen": "2026-10-21T21:13:15.063700+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -808,25 +770,6 @@
    "instructions_checked": true
   },
   {
-   "id": "bde8a8aaa835",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-83709 Windows NTLM Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83709",
-   "published": "2026-10-21T14:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-83709"
-   ],
-   "first_seen": "2026-10-21T21:13:15.063700+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "a32efdd2fc59",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -860,25 +803,6 @@
     "CVE-2026-83938"
    ],
    "first_seen": "2026-10-22T21:56:00.161553+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "905472152d32",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-85868 Windows Common Log File System Driver Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85868",
-   "published": "2026-10-21T14:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-85868"
-   ],
-   "first_seen": "2026-10-21T21:13:15.063700+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -1031,25 +955,6 @@
     "CVE-2026-96311"
    ],
    "first_seen": "2026-10-26T20:59:29.155748+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "5a4ecf9699d2",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-97783 Microsoft Office SharePoint Spoofing Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97783",
-   "published": "2026-10-21T14:00:00+00:00",
-   "summary": "The vulnerability associated with this CVE was fixed in July, however was inadvertently not included with that release. Microsoft recommends updating to the most current release of the SharePoint server.",
-   "image": null,
-   "cves": [
-    "CVE-2026-97783"
-   ],
-   "first_seen": "2026-10-21T16:35:12.521985+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -1393,6 +1298,27 @@
    "instructions_checked": true
   },
   {
+   "id": "eb93de238d98",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Critical 16-Year-Old UEFI Flaw Can Run Code Before Secure Boot on Network-Booting Servers",
+   "link": "https://thehackernews.com/2026/10/critical-16-year-old-uefi-flaw-can-run.html",
+   "published": "2026-10-28T11:50:00+00:00",
+   "summary": "A critical 16-year-old flaw in EDK II, the open-source code that most hardware makers use to build UEFI firmware, can allow an attacker to run code on a machine before its operating system loads, but only while the machine is booting over the network. UEFI firmware is the software that runs first when a computer is…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoVVx2e6mg8LPbhDYmtubHewVD_9BI7UcctCMSwwG-h4SuOyZJOvIyTre_g9Ggo6sLw6Bjrse_1FsqKKThyiIvc5CbuYqq4caYCtUciHGg33wReFQgOjJuTX5FrnSS3OZTd_yjXt03l_kxwIX-NshU9A8wpANSdQwOWkDKzy31QdXkCD6UP21dOpfbjhg/s1600/server-bios.jpg",
+   "cves": [],
+   "first_seen": "2026-10-28T14:34:38.042181+00:00",
+   "instructions": [
+    "Until that update arrives, the advisory lists no workaround.",
+    "TianoCore, the project behind EDK II, published an advisory on October 22 and rated the flaw, tracked as CVE-2026-97631 , 9.5 out of 10.",
+    "A code fix exists, but no stable release of EDK II contains it yet, and the advisory still lists no patched version, so most users have nothing to install today.",
+    "The advisory says that an attacker who knows the exact firmware build can plant a \"counterfeit event\" that causes the firmware to run the attacker's own code, so an exploit has to be built for a specific build."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "3a89e69463ce",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1629,6 +1555,29 @@
     "It's also advised to keep the sites up-to-date and enforce strong passwords.",
     "The ultimate objective of the attack is to launch the attack-controlled code when the CMS block is rendered after a shopper opens the compromised website.",
     "While Sansec does not disclose whether the threat actor modifies an existing CMS block (such as header, footer, or promotional banner) or creates a new block, the attacker can adopt either of the approaches to run the loader."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "29d08fa787d9",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Hackers Target Critical Oracle E-Business Suite RCE Flaw Days After Security Patch",
+   "link": "https://thehackernews.com/2026/10/hackers-target-critical-oracle-e.html",
+   "published": "2026-10-28T12:48:03+00:00",
+   "summary": "Threat actors are beginning to probe for a newly patched critical vulnerability in Oracle E-Business Suite (EBS), according to threat intelligence firm Defused Cyber. The vulnerability in question is CVE-2026-101767 (CVSS score: 9.8) in the Oracle Application Object Library of Oracle E-Business Suite. It was patched…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBB03AGS7veiAqQ7-xPeadzhhaRvDmhOlLgQcDN0y-r1na_us5yomWjBEXCbwbw8OW_o8SSGjjqk4VZFQ4ZxLiWKQPZxlcBkzJ5lv3OlEV0rOETUKyQzWoZ74LGpSjOjrScmk1rVf0OhRmDACHG3jwSDfBnnta75I_3s_nuoWGZmcfg7NZfHBp_PEIl8aj/s1600/oracle-hack.jpg",
+   "cves": [
+    "CVE-2026-101767"
+   ],
+   "first_seen": "2026-10-28T14:34:38.042181+00:00",
+   "instructions": [
+    "Users are advised to update to the latest version as soon as possible.",
+    "In an advisory for the vulnerability, Horizon3.ai described it as an unauthenticated SQL injection vulnerability that could be chained to achieve remote code execution.",
+    "It was patched by Oracle last week as part of its Critical Patch Update .",
+    "Specifically, an attacker can issue a crafted request to the vulnerable TCF servlet at \"/OA_HTML/AppsTCFServer\" to run SQL with the privileges of the APPS database user and ultimately enable system command execution with the privileges of the EBS application account."
    ],
    "instructions_checked": true
   },
@@ -1961,27 +1910,6 @@
     "Anomaly has published advisories for other OpenCode code-execution flaws this year, including one fixed in August.",
     "Anyone running OpenCode on Windows or WSL should upgrade and check which servers they are connected to.",
     "If you cannot upgrade yet, remove any remote MCP servers you have not vetted from your OpenCode configuration."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "6478f5844cef",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "PHP Issues Emergency Patches for Two Critical PHP2Shell RCE Flaws as Exploit Attempts Emerge",
-   "link": "https://thehackernews.com/2026/10/php-issues-emergency-patches-for-two.html",
-   "published": "2026-10-21T14:00:00+00:00",
-   "summary": "PHP has released emergency updates that fix two critical flaws in the language itself, letting an attacker without an account run code on a web server. The fixes are in PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35, and the PHP team says only updating fully protects a server. The flaws, together called PHP2Shell, sit in the…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhz8MKP95jyzesxy1eZd6zQDCb3dr-9m-bRE9W0PYnomN3z8lodXmM_0Oo4AAiP_nt2QMNpLxsUNPKueH4TW6FnvXl7ijDGDwxnXcfiyAII6sUDd8cfKoB7Z3MgLOvcAWDeplnUdixy-zfpgVqCuAVZmqH-Orn4S-QhYREVcY1ew7_6kIG8LBsdLZC8Ofs/s1600/PHP2SHELL.gif",
-   "cves": [],
-   "first_seen": "2026-10-21T16:01:05.916150+00:00",
-   "instructions": [
-    "Every PHP installation that serves web requests is at risk, including PHP-FPM, Apache mod_php, php-cgi, FrankenPHP and LiteSpeed, according to the PHP security advisory .",
-    "The advisory singles out mod_php as the highest risk, with a demonstrated exploit in which a single unauthenticated request triggers the attack before any application code runs.",
-    "Linux distributions and long-term-support vendors received the patches in advance, so a distribution package can carry the fix under an old-looking version number; check the package changelog for the CVE, as Debian advises , not the version string.",
-    "The measures below reduce exposure to specific attack paths and do not make a server safe, according to the advisory."
    ],
    "instructions_checked": true
   },
@@ -2363,6 +2291,26 @@
    "instructions_checked": true
   },
   {
+   "id": "ce5fe177d9da",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Wazuh and AI for Enhanced SOC Workflows",
+   "link": "https://thehackernews.com/2026/10/wazuh-and-ai-for-enhanced-soc-workflows.html",
+   "published": "2026-10-28T11:30:00+00:00",
+   "summary": "Artificial Intelligence (AI) has become one of this decade's defining technologies. From healthcare and finance to manufacturing and education, organizations increasingly rely on AI to automate repetitive tasks, uncover patterns hidden within large datasets, and support faster decision-making. Cybersecurity has…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo5_lgjV0zvHt5XW8CcCjQnBc_cvxOxrGxsrliXv3s9c6RD-Aw7eXOlNrp78QHxSnVO5yBgphx7KqCjkjje3YbwCFUtXUdLN4xA-sW_zVoFsK7au37XZxUPyoDRlhCIGsxc2at70I_FexwVKgdyub-XuuvwIZCy1o6hoCU50o7lhHWDSgktrcsrXkN9p8/s1600/wazuh.png",
+   "cves": [],
+   "first_seen": "2026-10-28T14:34:38.042181+00:00",
+   "instructions": [
+    "As with any AI output, the recommendations are advisory and should be validated against your own policies before you act.",
+    "AI offers a practical way to augment analysts by providing contextual explanations, summarizing findings, and recommending remediation actions, rather than replacing human expertise.",
+    "The assistant can provide useful guidance on many common tasks, including what to do about a finding and how to configure certain settings."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "3576934612fc",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2680,28 +2628,6 @@
    "instructions": [
     "“Attackers are refining their tooling in the open, so defenders should treat this quiet period as borrowed time,” he said, warning that attackers are fingerprinting servers to find the exact configurations their exploit needs.",
     "McIntyre and other experts warned that ASLR is not a permanent barrier to exploitation of the bugs and urged organizations to patch any vulnerable systems."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "39edcc9fa917",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Hundreds of websites taken offline as concern grows over two PHP vulnerabilities",
-   "link": "https://therecord.media/php-script-vulnerabilities-warnings",
-   "published": "2026-10-21T14:17:00+00:00",
-   "summary": "The maintainers of the globally used PHP scripting language released patches for two vulnerabilities after alerting users that the bugs were severe.",
-   "image": "https://cms.therecord.media/uploads/pexels_pixabay_270557_b1a99bb16a.jpg",
-   "cves": [],
-   "first_seen": "2026-10-21T14:36:54.050749+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Dane Knecht, the CTO of Cloudflare, said the tech giant is already seeing attacks emerging, and it released stopgap mitigations to help protect some customers.",
-    "“All PHP users are encouraged to prepare now so they can upgrade as soon as the release is available,” PHP’s security team said. “PHP 8.1 and older no longer receive updates from the PHP project.”",
-    "Dozens of government agencies released urgent warnings throughout the evening and early on Wednesday morning telling website maintainers to stay alert and patch now that fixes have been released .",
-    "The European Union , Germany , Japan , Australia , the U.K. , the Netherlands all released warnings locally about the vulnerabilities and several governments even took some websites offline in advance of the patch being released."
    ],
    "instructions_checked": true
   },
@@ -3405,28 +3331,6 @@
    "instructions_checked": true
   },
   {
-   "id": "bc6b0429e7ca",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "ClickFix has never been bigger, and AI tools are its most convincing lure yet",
-   "link": "https://www.bleepingcomputer.com/news/security/clickfix-has-never-been-bigger-and-ai-tools-are-its-most-convincing-lure-yet/",
-   "published": "2026-10-21T14:00:10+00:00",
-   "summary": "ClickFix attacks are surging as cybercriminals use fake AI installers, malicious search results, and trusted chatbot platforms to trick users into executing malware. Push Security examines how these attacks evade traditional defenses and why AI tools have become increasingly effective lures.",
-   "image": "https://www.bleepstatic.com/content/posts/2026/10/20/push-clickfix-header.jpg",
-   "cves": [],
-   "first_seen": "2026-10-21T14:36:54.050749+00:00",
-   "image_checked": true,
-   "instructions": [
-    "At least 45% came from campaigns that told the victim to paste a command, through fake CLI install pages or fake download pages with ClickFix, and another quarter started on a shared AI chat or artifact.",
-    "Claude Code and similar tools ship as a one-line terminal install, so people who would never previously have opened a command line now paste commands from web pages as a normal part of trying a new tool.",
-    "Push first documented InstallFix in March 2026: cloned install pages for tools like Claude Code, Codex, and NotebookLM (which doesn't even have a desktop installer), promoted through search ads.",
-    "The attacker copies the legitimate page and replaces the install command with one that delivers malware."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "5e34561ea984",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -3486,6 +3390,28 @@
    "image_checked": true,
    "instructions": [
     "\"In the interest of transparency, ENGIE individually informed each customer concerned and reminded them of the precautionary measures they should take to protect themselves against potential fraud or phishing attempts.\""
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "219f99ac76bf",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Even after PHP2Shell, blast radius matters more than a CVSS score",
+   "link": "https://www.bleepingcomputer.com/news/security/even-after-php2shell-blast-radius-matters-more-than-a-cvss-score/",
+   "published": "2026-10-28T13:50:59+00:00",
+   "summary": "PHP2Shell shows how quickly attackers can exploit critical vulnerabilities, often before organizations have time to patch. Token Security explains why limiting the access of service accounts, API keys, and AI agents is just as important as fixing vulnerabilities to reduce the damage from a breach.",
+   "image": "https://www.bleepstatic.com/content/posts/2026/10/27/green-pumpkin.jpg",
+   "cves": [],
+   "first_seen": "2026-10-28T14:34:38.042181+00:00",
+   "image_checked": true,
+   "instructions": [
+    "So with limited resources, it's tempting to stay vulnerability-first: catalog what the advisories and scanners found, triage it, work down from the top.",
+    "AI helped researchers find two remote code execution vulnerabilities in the language behind 69% of the web , attackers targeted it before the patch shipped, and the pitch writes itself: find more bugs and fix them faster.",
+    "Security teams cannot patch at machine speed, but they can reduce what an attacker can reach after exploitation by focusing on identity as the control plane.",
+    "PHP shipped the patch on October 21, and watchTowr saw exploitation attempts in the wild the same day."
    ],
    "instructions_checked": true
   },
@@ -3591,6 +3517,28 @@
     "\"Customers are strongly urged to patch their instances due to the complexity, breadth, and impact of these vulnerabilities,\" the company warned in a Thursday security advisory.",
     "\"HPE Networking is not aware of any public discussion or exploit code that targets the listed vulnerabilities as of the release date of this advisory,\" it said.",
     "Hewlett Packard Enterprise (HPE) released security updates to patch 72 vulnerabilities in the Aruba Operating System (ArubaOS), including eight maximum-severity authentication bypass and code execution issues."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "60ccb0bbd830",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "InfraTrust report warns of exploited flaws in critical network infrastructure",
+   "link": "https://www.bleepingcomputer.com/news/security/infratrust-report-warns-of-exploited-flaws-in-critical-network-infrastructure/",
+   "published": "2026-10-28T14:00:00+00:00",
+   "summary": "Attackers are actively exploiting vulnerabilities across critical network infrastructure, and PHP flaws known as \"PHP2Shell\" put the web management interfaces of firewalls, VPNs, application delivery controllers, and other appliances at risk.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/07/21/infratrust.jpg",
+   "cves": [],
+   "first_seen": "2026-10-28T14:34:38.042181+00:00",
+   "image_checked": true,
+   "instructions": [
+    "CVE-2026-31431, a Linux kernel privilege escalation flaw known as Copy Fail , has now appeared in 29 advisories across eight vendors, up from 19 advisories from six vendors last month.",
+    "The findings come from Eclypsium's October InfraTrust Pulse , a monthly report tracking security advisories affecting network devices, servers, firmware, chips, and other infrastructure.",
+    "Between September 18 and October 14, InfraTrust tracked 133 new security advisories across 18 vendors, covering 2,813 vulnerabilities.",
+    "Of those advisories, 37 were rated critical, five had a maximum CVSS score of 10.0, and 58 could be exploited remotely without authentication."
    ],
    "instructions_checked": true
   },
@@ -3755,31 +3703,6 @@
     "PHP shares mitigation for new RCE vulnerability with no patch",
     "The PHP security team has shared mitigation measures for a new remote code execution vulnerability that affects systems with non-default configurations and has no patch.",
     "According to a Friday advisory, this security flaw (tracked as CVE-2026-115560) can only be exploited when targeting systems \"with an unusual combination of configuration and application code.\""
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "a5afc0aef898",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "PHP ships emergency patches for critical PHP2Shell flaws",
-   "link": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/",
-   "published": "2026-10-21T14:07:05+00:00",
-   "summary": "The PHP security team released emergency security patches for two critical remote code execution (RCE) vulnerabilities (CVE-2026-109618 and CVE-2026-109619) tracked collectively as PHP2Shell.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/21/PHP.jpg",
-   "cves": [
-    "CVE-2026-109618",
-    "CVE-2026-109619"
-   ],
-   "first_seen": "2026-10-21T14:36:54.050749+00:00",
-   "image_checked": true,
-   "instructions": [
-    "\"We reserve the right to release earlier should details of either vulnerability become public, or should evidence of active exploitation appear in the wild.\"",
-    "PHP core developer Gina Peter Banyard warned that no PHP2Shell mitigations would fully block potential attacks and that applying the official security patches is the only permanent defense.",
-    "However, the PHP security team did share a number of mitigation measures that should reduce exposure to some attack paths for those who can't immediately patch their servers, although they don't fully protect against exploitation (detailed information is available in PHP's blog post ):",
-    "Admins should install PHP 8.5.12, 8.4.27, 8.3.36, or 8.2.35 as soon as possible on servers running PHP 8.x and migrate to a fixed release if they're running PHP 7 or earlier."
    ],
    "instructions_checked": true
   },
@@ -4781,6 +4704,27 @@
    "instructions_checked": true
   },
   {
+   "id": "04dad7bd605d",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Chrome and Firefox Updates Patch Over 200 Vulnerabilities",
+   "link": "https://www.securityweek.com/chrome-and-firefox-updates-patch-over-200-vulnerabilities/",
+   "published": "2026-10-28T13:39:35+00:00",
+   "summary": "The Chrome 156 update fixes 52 bugs, while Firefox 159 was rolled out with 167 security patches. The post Chrome and Firefox Updates Patch Over 200 Vulnerabilities appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/01/Chrome-Firefox.jpeg",
+   "cves": [],
+   "first_seen": "2026-10-28T14:34:38.042181+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Google and Mozilla make no mention of any of these security bugs being exploited in the wild, but users are advised to update their browsers as soon as possible.",
+    "The Chrome 156 update arrives with patches for 52 security defects, including four critical-severity flaws: memory corruption in FileSystem, improper input validation in FileAPI and Skia, and use-after-free in Layout.",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "21dec5f03b58",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -5655,6 +5599,26 @@
     "Preparing for disruption must become part of day-to-day operations.",
     "Over the weekend, web hosting provider DreamHost suspended its File Manager service and reset some user passwords.",
     "SecurityWeek has emailed DreamHost for information on the number of affected users and the root cause of the incident and will update this article if the company responds."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "943e231b105b",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Upwind Security Raises $400 Million at $3.8 Billion Valuation",
+   "link": "https://www.securityweek.com/upwind-security-raises-400-million-at-3-8-billion-valuation/",
+   "published": "2026-10-28T13:56:50+00:00",
+   "summary": "The massive funding round comes just days after reports emerged that Upwind had attracted acquisition interest from several companies, including Datadog The post Upwind Security Raises $400 Million at $3.8 Billion Valuation appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2023/01/Cybersecurity_News-SecurityWeek.jpg",
+   "cves": [],
+   "first_seen": "2026-10-28T14:34:38.042181+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Former NSA Director Paul Nakasone Launches National Security Advisory Firm",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
   },

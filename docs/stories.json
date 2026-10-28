@@ -61,6 +61,16 @@
    "url": "story/0afa3606f14e.html"
   },
   {
+   "id": "219f99ac76bf",
+   "title": "Even after PHP2Shell, blast radius matters more than a CVSS score",
+   "summary": "PHP2Shell shows how quickly attackers can exploit critical vulnerabilities, often before organizations have time to patch. Token Security explains why limiting the…",
+   "priority": "High",
+   "category": "Patch Radar",
+   "date": "28 Oct 2026, 13:50 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/219f99ac76bf.html"
+  },
+  {
    "id": "5246b1272668",
    "title": "Japan's GMO urges customers to shut down PCs amid ransomware threat",
    "summary": "The GMO Group has urged customers to disconnect their systems from the internet and shut down computers after a threat actor who breached the company's Onamae Desktop…",
@@ -69,26 +79,6 @@
    "date": "27 Oct 2026, 23:35 UTC",
    "sources": "BleepingComputer",
    "url": "story/5246b1272668.html"
-  },
-  {
-   "id": "e20da1a748c1",
-   "title": "CVE-2026-69284 Windows DCOM Server Elevation of Privilege Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "priority": "High",
-   "category": "Patch Radar",
-   "date": "27 Oct 2026, 14:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/e20da1a748c1.html"
-  },
-  {
-   "id": "e3a6d8a4cec7",
-   "title": "CVE-2026-70161 .NET Elevation of Privilege Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "priority": "High",
-   "category": "Patch Radar",
-   "date": "27 Oct 2026, 14:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/e3a6d8a4cec7.html"
   },
   {
    "id": "713a68aa818f",
@@ -109,6 +99,16 @@
    "date": "21 Oct 2026, 19:19 UTC",
    "sources": "Dark Reading",
    "url": "story/5f2ddb413304.html"
+  },
+  {
+   "id": "29d08fa787d9",
+   "title": "Hackers Target Critical Oracle E-Business Suite RCE Flaw Days After Security Patch",
+   "summary": "Threat actors are beginning to probe for a newly patched critical vulnerability in Oracle E-Business Suite (EBS), according to threat intelligence firm Defused Cyber…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "28 Oct 2026, 12:48 UTC",
+   "sources": "The Hacker News, SecurityWeek",
+   "url": "story/29d08fa787d9.html"
   },
   {
    "id": "d75560f4cad5",
@@ -141,34 +141,24 @@
    "url": "story/db852607b136.html"
   },
   {
-   "id": "1af31e19a3ea",
-   "title": "CVE-2026-20942 Microsoft Edge (Chromium-based) Spoofing Vulnerability",
-   "summary": "Improper restriction of rendered ui layers or frames in Microsoft Edge (Chromium-based) allows an unauthorized attacker to perform spoofing over a network.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "27 Oct 2026, 14:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/1af31e19a3ea.html"
-  },
-  {
-   "id": "308133db32ac",
-   "title": "CVE-2026-70007 .NET Framework Remote Code Execution Vulnerability",
+   "id": "e20da1a748c1",
+   "title": "CVE-2026-69284 Windows DCOM Server Elevation of Privilege Vulnerability",
    "summary": "Updated an acknowledgement. This is an informational change only.",
    "priority": "Standard",
    "category": "Patch Radar",
    "date": "27 Oct 2026, 14:00 UTC",
    "sources": "Microsoft Security Response Center",
-   "url": "story/308133db32ac.html"
+   "url": "story/e20da1a748c1.html"
   },
   {
-   "id": "bca87c74a608",
-   "title": "CVE-2026-70277 Windows Fast FAT File System Driver Information Disclosure Vulnerability",
+   "id": "e3a6d8a4cec7",
+   "title": "CVE-2026-70161 .NET Elevation of Privilege Vulnerability",
    "summary": "Updated an acknowledgement. This is an informational change only.",
    "priority": "Standard",
    "category": "Patch Radar",
    "date": "27 Oct 2026, 14:00 UTC",
    "sources": "Microsoft Security Response Center",
-   "url": "story/bca87c74a608.html"
+   "url": "story/e3a6d8a4cec7.html"
   },
   {
    "id": "4e5f0d814761",
@@ -231,6 +221,16 @@
    "url": "story/4273c05ff1b7.html"
   },
   {
+   "id": "60ccb0bbd830",
+   "title": "InfraTrust report warns of exploited flaws in critical network infrastructure",
+   "summary": "Attackers are actively exploiting vulnerabilities across critical network infrastructure, and PHP flaws known as \"PHP2Shell\" put the web management interfaces of…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "28 Oct 2026, 14:00 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/60ccb0bbd830.html"
+  },
+  {
    "id": "7c22489c81a5",
    "title": "Hackers now scanning systems for recently-patched Oracle flaw",
    "summary": "Attackers have begun probing the Internet for systems unpatched against a recently disclosed critical Oracle E-Business Suite (EBS) vulnerability.",
@@ -239,6 +239,16 @@
    "date": "28 Oct 2026, 12:19 UTC",
    "sources": "BleepingComputer",
    "url": "story/7c22489c81a5.html"
+  },
+  {
+   "id": "eb93de238d98",
+   "title": "Critical 16-Year-Old UEFI Flaw Can Run Code Before Secure Boot on Network-Booting Servers",
+   "summary": "A critical 16-year-old flaw in EDK II, the open-source code that most hardware makers use to build UEFI firmware, can allow an attacker to run code on a machine before…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "28 Oct 2026, 11:50 UTC",
+   "sources": "The Hacker News",
+   "url": "story/eb93de238d98.html"
   },
   {
    "id": "42a9e60af11b",
@@ -321,14 +331,34 @@
    "url": "story/37ead5afc462.html"
   },
   {
-   "id": "b611ff4c270c",
-   "title": "The Huntress Tragic Quadrant: Ranking Threats Hitting Businesses Hardest",
-   "summary": "Attackers are increasingly abusing legitimate IT tools, Microsoft 365 sessions, and everyday workflows to compromise businesses without triggering traditional defenses…",
+   "id": "1af31e19a3ea",
+   "title": "CVE-2026-20942 Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+   "summary": "Improper restriction of rendered ui layers or frames in Microsoft Edge (Chromium-based) allows an unauthorized attacker to perform spoofing over a network.",
    "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "27 Oct 2026, 14:01 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/b611ff4c270c.html"
+   "category": "Patch Radar",
+   "date": "27 Oct 2026, 14:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/1af31e19a3ea.html"
+  },
+  {
+   "id": "308133db32ac",
+   "title": "CVE-2026-70007 .NET Framework Remote Code Execution Vulnerability",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "27 Oct 2026, 14:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/308133db32ac.html"
+  },
+  {
+   "id": "bca87c74a608",
+   "title": "CVE-2026-70277 Windows Fast FAT File System Driver Information Disclosure Vulnerability",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "27 Oct 2026, 14:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/bca87c74a608.html"
   },
   {
    "id": "9b6153963ef5",
@@ -339,56 +369,6 @@
    "date": "26 Oct 2026, 21:08 UTC",
    "sources": "BleepingComputer",
    "url": "story/9b6153963ef5.html"
-  },
-  {
-   "id": "3576934612fc",
-   "title": "⚡ Weekly Recap: This2Shell, That2Shell, Everything's an RCE? Rogue AI, Supply Chain Chaos and More",
-   "summary": "This2Shell, That2Shell, Everything2Shell. That's pretty much how the last week went. Critical bugs that let attackers run code remotely are showing up everywhere…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "26 Oct 2026, 14:06 UTC",
-   "sources": "The Hacker News",
-   "url": "story/3576934612fc.html"
-  },
-  {
-   "id": "1683c2d21580",
-   "title": "CVE-2026-105728 Dynamics Business Central Information Disclosure Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "26 Oct 2026, 14:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/1683c2d21580.html"
-  },
-  {
-   "id": "e2d3975428a4",
-   "title": "CVE-2026-70338 Microsoft PowerShell Security Feature Bypass Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "26 Oct 2026, 14:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/e2d3975428a4.html"
-  },
-  {
-   "id": "d51fb19b6bbd",
-   "title": "CVE-2026-83519 Windows Error Reporting Remote Code Execution Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "26 Oct 2026, 14:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/d51fb19b6bbd.html"
-  },
-  {
-   "id": "173f37e989f0",
-   "title": "CVE-2026-96311 Windows Network List Service Tampering Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "26 Oct 2026, 14:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/173f37e989f0.html"
   },
   {
    "id": "b65cad206f50",
@@ -419,6 +399,16 @@
    "date": "22 Oct 2026, 06:34 UTC",
    "sources": "The Hacker News",
    "url": "story/3d29fe5d9f89.html"
+  },
+  {
+   "id": "ce5fe177d9da",
+   "title": "Wazuh and AI for Enhanced SOC Workflows",
+   "summary": "Artificial Intelligence (AI) has become one of this decade's defining technologies. From healthcare and finance to manufacturing and education, organizations…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "28 Oct 2026, 11:30 UTC",
+   "sources": "The Hacker News",
+   "url": "story/ce5fe177d9da.html"
   },
   {
    "id": "169a3a02ba4a",
@@ -481,6 +471,16 @@
    "url": "story/c64d4188c21b.html"
   },
   {
+   "id": "b611ff4c270c",
+   "title": "The Huntress Tragic Quadrant: Ranking Threats Hitting Businesses Hardest",
+   "summary": "Attackers are increasingly abusing legitimate IT tools, Microsoft 365 sessions, and everyday workflows to compromise businesses without triggering traditional defenses…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "27 Oct 2026, 14:01 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/b611ff4c270c.html"
+  },
+  {
    "id": "243406f675bd",
    "title": "HPE Patches Dozens of Critical Flaws in Networking Products",
    "summary": "Eight max-severity security defects could lead to remote code execution and authentication bypass. The post HPE Patches Dozens of Critical Flaws in Networking Products…",
@@ -541,14 +541,54 @@
    "url": "story/5e34561ea984.html"
   },
   {
-   "id": "3c0f1fb39eea",
-   "title": "When an AI Agent Is the Incident, the Identity Record Is the Evidence",
-   "summary": "A new NIST, CISA, and NSA guide treats runaway agents as incidents to be rehearsed. The hard part of the response is answering whose authority the agent used, and that…",
+   "id": "3576934612fc",
+   "title": "⚡ Weekly Recap: This2Shell, That2Shell, Everything's an RCE? Rogue AI, Supply Chain Chaos and More",
+   "summary": "This2Shell, That2Shell, Everything2Shell. That's pretty much how the last week went. Critical bugs that let attackers run code remotely are showing up everywhere…",
    "priority": "Standard",
-   "category": "AI Risk Lab",
+   "category": "Patch Radar",
+   "date": "26 Oct 2026, 14:06 UTC",
+   "sources": "The Hacker News",
+   "url": "story/3576934612fc.html"
+  },
+  {
+   "id": "1683c2d21580",
+   "title": "CVE-2026-105728 Dynamics Business Central Information Disclosure Vulnerability",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "priority": "Standard",
+   "category": "Patch Radar",
    "date": "26 Oct 2026, 14:00 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/3c0f1fb39eea.html"
+   "sources": "Microsoft Security Response Center",
+   "url": "story/1683c2d21580.html"
+  },
+  {
+   "id": "e2d3975428a4",
+   "title": "CVE-2026-70338 Microsoft PowerShell Security Feature Bypass Vulnerability",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "26 Oct 2026, 14:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/e2d3975428a4.html"
+  },
+  {
+   "id": "d51fb19b6bbd",
+   "title": "CVE-2026-83519 Windows Error Reporting Remote Code Execution Vulnerability",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "26 Oct 2026, 14:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/d51fb19b6bbd.html"
+  },
+  {
+   "id": "173f37e989f0",
+   "title": "CVE-2026-96311 Windows Network List Service Tampering Vulnerability",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "26 Oct 2026, 14:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/173f37e989f0.html"
   },
   {
    "id": "e62f85ca100b",
@@ -731,24 +771,24 @@
    "url": "story/67c1ab51681c.html"
   },
   {
-   "id": "905472152d32",
-   "title": "CVE-2026-85868 Windows Common Log File System Driver Elevation of Privilege Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "id": "943e231b105b",
+   "title": "Upwind Security Raises $400 Million at $3.8 Billion Valuation",
+   "summary": "The massive funding round comes just days after reports emerged that Upwind had attracted acquisition interest from several companies, including Datadog The post Upwind…",
    "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "21 Oct 2026, 14:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/905472152d32.html"
+   "category": "Industry & Research",
+   "date": "28 Oct 2026, 13:56 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/943e231b105b.html"
   },
   {
-   "id": "5a4ecf9699d2",
-   "title": "CVE-2026-97783 Microsoft Office SharePoint Spoofing Vulnerability",
-   "summary": "The vulnerability associated with this CVE was fixed in July, however was inadvertently not included with that release. Microsoft recommends updating to the most current…",
+   "id": "04dad7bd605d",
+   "title": "Chrome and Firefox Updates Patch Over 200 Vulnerabilities",
+   "summary": "The Chrome 156 update fixes 52 bugs, while Firefox 159 was rolled out with 167 security patches. The post Chrome and Firefox Updates Patch Over 200 Vulnerabilities…",
    "priority": "Standard",
    "category": "Patch Radar",
-   "date": "21 Oct 2026, 14:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/5a4ecf9699d2.html"
+   "date": "28 Oct 2026, 13:39 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/04dad7bd605d.html"
   },
   {
    "id": "84fd85017893",
@@ -809,16 +849,6 @@
    "date": "28 Oct 2026, 10:30 UTC",
    "sources": "SecurityWeek",
    "url": "story/085573e20d77.html"
-  },
-  {
-   "id": "3f9c6dce420c",
-   "title": "Hackers Start Probing Fresh Oracle EBS Vulnerability",
-   "summary": "CVE-2026-101767 is an unauthenticated SQL injection that can be exploited for remote code execution. The post Hackers Start Probing Fresh Oracle EBS Vulnerability…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "28 Oct 2026, 09:14 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/3f9c6dce420c.html"
   },
   {
    "id": "21dec5f03b58",
@@ -931,46 +961,6 @@
    "url": "story/319765385a55.html"
   },
   {
-   "id": "eeae20ed2a5a",
-   "title": "Tailscale warns of SSH flaws allowing root privilege escalation",
-   "summary": "The Tailscale security team is working to patch almost a dozen security vulnerabilities that could be exploited to steal credentials, crash servers, gain root…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "27 Oct 2026, 14:09 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/eeae20ed2a5a.html"
-  },
-  {
-   "id": "ae042a0b53b2",
-   "title": "GoAhead TLS Flaws Allow Revoked Client Certificates and Enable Session Decryption",
-   "summary": "The GoAhead embedded web server loaded a certificate revocation list into its default TLS backend but never turned revocation checking on, so a revoked client…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "27 Oct 2026, 13:59 UTC",
-   "sources": "The Hacker News",
-   "url": "story/ae042a0b53b2.html"
-  },
-  {
-   "id": "37d79b832298",
-   "title": "Malicious apps prey on Russians’ anxiety about fuel prices, drone strikes",
-   "summary": "Cybercriminals are stuffing infostealer malware into bogus apps aimed at tracking gas prices, police activity, drone strikes and other information of concern to average…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "27 Oct 2026, 13:36 UTC",
-   "sources": "The Record",
-   "url": "story/37d79b832298.html"
-  },
-  {
-   "id": "41ce8592d3fb",
-   "title": "Vendor Key Leak Puts Data of 238,000 Denver Health Plan Members at Risk",
-   "summary": "A leaked SquareML access key could have been used to access a database containing personal and health information. The post Vendor Key Leak Puts Data of 238,000 Denver…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "27 Oct 2026, 13:30 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/41ce8592d3fb.html"
-  },
-  {
    "id": "1ce9ccf10a03",
    "title": "AI-Generated Fake Login Pages Are Making Account Takeovers Easier",
    "summary": "Fake login pages are nothing new, but generative AI is making them easier to build and more convincing. Attackers can recreate familiar login screens, impersonate…",
@@ -1071,34 +1061,14 @@
    "url": "story/0894723045c0.html"
   },
   {
-   "id": "38ba7bc24d68",
-   "title": "Stolen AI Reasoning Could Help China Build Cheaper Rivals",
-   "summary": "Xint says a flaw in OpenAI’s compaction process let researchers move reasoning traces between models, potentially making it cheaper to distill a rival AI. The post…",
+   "id": "3c0f1fb39eea",
+   "title": "When an AI Agent Is the Incident, the Identity Record Is the Evidence",
+   "summary": "A new NIST, CISA, and NSA guide treats runaway agents as incidents to be rehearsed. The hard part of the response is answering whose authority the agent used, and that…",
    "priority": "Standard",
    "category": "AI Risk Lab",
-   "date": "26 Oct 2026, 14:30 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/38ba7bc24d68.html"
-  },
-  {
-   "id": "dfe48422ce7b",
-   "title": "CVE-2026-69926 Desktop Window Manager Elevation of Privilege Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
    "date": "26 Oct 2026, 14:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/dfe48422ce7b.html"
-  },
-  {
-   "id": "e109a1ae2383",
-   "title": "CVE-2026-96234 .NET Information Disclosure Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "26 Oct 2026, 14:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/e109a1ae2383.html"
+   "sources": "BleepingComputer",
+   "url": "story/3c0f1fb39eea.html"
   },
   {
    "id": "a5411bb33d7f",
@@ -1391,14 +1361,44 @@
    "url": "story/71f0485320c6.html"
   },
   {
-   "id": "6478f5844cef",
-   "title": "PHP Issues Emergency Patches for Two Critical PHP2Shell RCE Flaws as Exploit Attempts Emerge",
-   "summary": "PHP has released emergency updates that fix two critical flaws in the language itself, letting an attacker without an account run code on a web server. The fixes are in…",
+   "id": "eeae20ed2a5a",
+   "title": "Tailscale warns of SSH flaws allowing root privilege escalation",
+   "summary": "The Tailscale security team is working to patch almost a dozen security vulnerabilities that could be exploited to steal credentials, crash servers, gain root…",
    "priority": "Standard",
    "category": "Patch Radar",
-   "date": "21 Oct 2026, 14:00 UTC",
+   "date": "27 Oct 2026, 14:09 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/eeae20ed2a5a.html"
+  },
+  {
+   "id": "ae042a0b53b2",
+   "title": "GoAhead TLS Flaws Allow Revoked Client Certificates and Enable Session Decryption",
+   "summary": "The GoAhead embedded web server loaded a certificate revocation list into its default TLS backend but never turned revocation checking on, so a revoked client…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "27 Oct 2026, 13:59 UTC",
    "sources": "The Hacker News",
-   "url": "story/6478f5844cef.html"
+   "url": "story/ae042a0b53b2.html"
+  },
+  {
+   "id": "37d79b832298",
+   "title": "Malicious apps prey on Russians’ anxiety about fuel prices, drone strikes",
+   "summary": "Cybercriminals are stuffing infostealer malware into bogus apps aimed at tracking gas prices, police activity, drone strikes and other information of concern to average…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "27 Oct 2026, 13:36 UTC",
+   "sources": "The Record",
+   "url": "story/37d79b832298.html"
+  },
+  {
+   "id": "41ce8592d3fb",
+   "title": "Vendor Key Leak Puts Data of 238,000 Denver Health Plan Members at Risk",
+   "summary": "A leaked SquareML access key could have been used to access a database containing personal and health information. The post Vendor Key Leak Puts Data of 238,000 Denver…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "27 Oct 2026, 13:30 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/41ce8592d3fb.html"
   },
   {
    "id": "933843ff30ab",
@@ -1591,44 +1591,34 @@
    "url": "story/d7e589c62a2d.html"
   },
   {
-   "id": "d72684f804b8",
-   "title": "Ukraine warns hackers are exploiting Chinese-made Dahua surveillance cameras",
-   "summary": "CERT-UA says it has identified cases in which hackers compromised Dahua internet-connected cameras and video recorders, changed their settings and created unauthorized…",
+   "id": "38ba7bc24d68",
+   "title": "Stolen AI Reasoning Could Help China Build Cheaper Rivals",
+   "summary": "Xint says a flaw in OpenAI’s compaction process let researchers move reasoning traces between models, potentially making it cheaper to distill a rival AI. The post…",
    "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "26 Oct 2026, 14:21 UTC",
-   "sources": "The Record",
-   "url": "story/d72684f804b8.html"
+   "category": "AI Risk Lab",
+   "date": "26 Oct 2026, 14:30 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/38ba7bc24d68.html"
   },
   {
-   "id": "0d99ee2b2828",
-   "title": "10 Software Security Practices Built for the Next 250 Years",
-   "summary": "This Cybersecurity Awareness Month's theme, \"Securing the Next 250,\" asks us to look beyond vulnerabilities and consider what will make our digital systems resilient for…",
+   "id": "dfe48422ce7b",
+   "title": "CVE-2026-69926 Desktop Window Manager Elevation of Privilege Vulnerability",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
    "priority": "Standard",
    "category": "Patch Radar",
    "date": "26 Oct 2026, 14:00 UTC",
-   "sources": "Dark Reading",
-   "url": "story/0d99ee2b2828.html"
+   "sources": "Microsoft Security Response Center",
+   "url": "story/dfe48422ce7b.html"
   },
   {
-   "id": "9cb042202f4d",
-   "title": "Chinese man extradited for role in $36 million cryptocurrency scam",
-   "summary": "A Chinese national was arraigned in California after being extradited from the Netherlands for his alleged involvement in a cryptocurrency investment scam that stole…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "26 Oct 2026, 13:56 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/9cb042202f4d.html"
-  },
-  {
-   "id": "104d63029234",
-   "title": "PHP2Shell Exploitation Moves From Probes to Working Shells",
-   "summary": "Attackers successfully exploited the PHP2Shell flaws against honeypots, launching 35 shells from two IP addresses on October 24. The post PHP2Shell Exploitation Moves…",
+   "id": "e109a1ae2383",
+   "title": "CVE-2026-96234 .NET Information Disclosure Vulnerability",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
    "priority": "Standard",
    "category": "Patch Radar",
-   "date": "26 Oct 2026, 13:30 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/104d63029234.html"
+   "date": "26 Oct 2026, 14:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/e109a1ae2383.html"
   },
   {
    "id": "680a1bdeb105",
@@ -1901,14 +1891,44 @@
    "url": "story/a45dacf80c10.html"
   },
   {
-   "id": "bc6b0429e7ca",
-   "title": "ClickFix has never been bigger, and AI tools are its most convincing lure yet",
-   "summary": "ClickFix attacks are surging as cybercriminals use fake AI installers, malicious search results, and trusted chatbot platforms to trick users into executing malware…",
+   "id": "d72684f804b8",
+   "title": "Ukraine warns hackers are exploiting Chinese-made Dahua surveillance cameras",
+   "summary": "CERT-UA says it has identified cases in which hackers compromised Dahua internet-connected cameras and video recorders, changed their settings and created unauthorized…",
    "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "21 Oct 2026, 14:00 UTC",
+   "category": "Attacks & Breaches",
+   "date": "26 Oct 2026, 14:21 UTC",
+   "sources": "The Record",
+   "url": "story/d72684f804b8.html"
+  },
+  {
+   "id": "0d99ee2b2828",
+   "title": "10 Software Security Practices Built for the Next 250 Years",
+   "summary": "This Cybersecurity Awareness Month's theme, \"Securing the Next 250,\" asks us to look beyond vulnerabilities and consider what will make our digital systems resilient for…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "26 Oct 2026, 14:00 UTC",
+   "sources": "Dark Reading",
+   "url": "story/0d99ee2b2828.html"
+  },
+  {
+   "id": "9cb042202f4d",
+   "title": "Chinese man extradited for role in $36 million cryptocurrency scam",
+   "summary": "A Chinese national was arraigned in California after being extradited from the Netherlands for his alleged involvement in a cryptocurrency investment scam that stole…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "26 Oct 2026, 13:56 UTC",
    "sources": "BleepingComputer",
-   "url": "story/bc6b0429e7ca.html"
+   "url": "story/9cb042202f4d.html"
+  },
+  {
+   "id": "104d63029234",
+   "title": "PHP2Shell Exploitation Moves From Probes to Working Shells",
+   "summary": "Attackers successfully exploited the PHP2Shell flaws against honeypots, launching 35 shells from two IP addresses on October 24. The post PHP2Shell Exploitation Moves…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "26 Oct 2026, 13:30 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/104d63029234.html"
   },
   {
    "id": "23a9892afebf",
@@ -2459,16 +2479,6 @@
    "date": "21 Oct 2026, 14:45 UTC",
    "sources": "The Record",
    "url": "story/2ee4d03f1bea.html"
-  },
-  {
-   "id": "39edcc9fa917",
-   "title": "Hundreds of websites taken offline as concern grows over two PHP vulnerabilities",
-   "summary": "The maintainers of the globally used PHP scripting language released patches for two vulnerabilities after alerting users that the bugs were severe.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "21 Oct 2026, 14:17 UTC",
-   "sources": "The Record",
-   "url": "story/39edcc9fa917.html"
   }
  ]
 }
