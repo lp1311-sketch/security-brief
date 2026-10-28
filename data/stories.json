@@ -119,28 +119,6 @@
    "instructions_checked": true
   },
   {
-   "id": "ca191a78820b",
-   "source": "borncity",
-   "source_name": "Born's IT and Windows Blog",
-   "official": false,
-   "source_type": "news",
-   "title": "Kompromittierte AOMEI Update-Server lieferten von Mai bis Juni 2026 Malware",
-   "link": "https://borncity.com/blog/2026/10/22/kompromittierte-aomei-update-server-lieferten-von-mai-bis-juni-2026-malware/",
-   "published": "2026-10-21T22:01:04+00:00",
-   "summary": "Noch ein Nachtrag von Montag, zu dem ich erst jetzt komme. Es gibt Berichte, dass die Update-Server des Backup-Anbieters AOMEI durch Angreifer kompromittiert waren. Den Angreifern gelang es dann, für kurze Zeit Malware über eine integrierte Werbefunktion in der Backup-Software … Weiterlesen → Quelle",
-   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
-   "cves": [],
-   "first_seen": "2026-10-22T07:00:06.512888+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Es gibt Berichte, dass die Update-Server des Backup-Anbieters AOMEI durch Angreifer kompromittiert waren.",
-    "Angreifer manipulierten die Update-Server von AOMEI Backupper in Intervallen von 5 bis 10 Minuten und schleusten so eine Hintertür auf PCs, die nach Updates suchten, schreibt The Hacker News in obigem Tweet.",
-    "Dazu änderten Angreifer zwischen Mai und Juli 2026 wiederholt die Dateien, die AOMEI Backupper von den hauseigenen Update-Servern des Anbieters abruft.",
-    "Aber jede Version des Windows-Sicherungsprogramms, die während eines dieser Zeitfenster nach einem Update suchte, lud dann eine Hintertür herunter und führte die Malware auch aus."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "d11e69527239",
    "source": "borncity",
    "source_name": "Born's IT and Windows Blog",
@@ -3557,25 +3535,6 @@
    "instructions_checked": true
   },
   {
-   "id": "832124389031",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Google Chrome adds Gemini-powered scam detection, warns users of ClickFix attacks",
-   "link": "https://www.bleepingcomputer.com/news/google/google-chrome-adds-gemini-powered-scam-detection-warns-users-of-clickfix-attacks/",
-   "published": "2026-10-21T22:16:26+00:00",
-   "summary": "Chrome is getting new scam protections that use Gemini to detect deceptive websites and warn users when they copy suspicious commands from ClickFix attacks.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/07/chrome.jpg",
-   "cves": [],
-   "first_seen": "2026-10-21T22:33:19.649055+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Mozilla, Google, Apple block compromised eMudhra CA certificates"
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "4dd6d369bedf",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4564,6 +4523,22 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blte307a3bd1a7bcb35/6adb9c8d2d5b887cc408cb52/Globe_bandages-zennie-Getty.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-10-23T20:33:24.218016+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "89379326868d",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "GhostAction Hacking Wave Fizzles, But Attackers Lurk on in GitHub",
+   "link": "https://www.darkreading.com/application-security/ghostaction-hacking-wave-fizzles-attackers-github",
+   "published": "2026-10-28T19:39:00+00:00",
+   "summary": "The supply chain attack campaign's shift toward developer endpoints and cloud access signals what could be next for the cybercrime outfit.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltb1d9be3de2e89da6/6ae252ca6c2fe31e558a43e9/Ghosts-GrafikLab-GettyImages-2173220193.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-10-28T22:22:02.295638+00:00",
    "instructions": [],
    "instructions_checked": true
   },
