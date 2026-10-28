@@ -1010,16 +1010,16 @@ def _save_button(s: dict) -> str:
             f'{icon}<span>Save</span></button>')
 
 
-def _card(s: dict) -> str:
+def _card(s: dict, pre: str = "") -> str:
     img = s["image"] or fallback_cover(s)
     names = ", ".join(dict.fromkeys(x["name"] for x in s["sources"]))
     prio = esc(s["priority"])
     fb = f''' data-fallback="{esc(fallback_cover(s))}" onerror="this.onerror=null;this.src=this.dataset.fallback"'''
     return f"""<article class="card prio-{prio}" data-tags="{esc(' '.join(s['tags']))}" data-search="{esc(search_text(s))}">
-<a class="card-media" href="story/{esc(s['id'])}.html" tabindex="-1" aria-hidden="true"><img src="{esc(img)}"{fb} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360"><span class="badge {prio}">{prio}</span></a>
+<a class="card-media" href="{pre}story/{esc(s['id'])}.html" tabindex="-1" aria-hidden="true"><img src="{esc(img)}"{fb} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="640" height="360"><span class="badge {prio}">{prio}</span></a>
 <div class="card-body">
 <p class="kicker"><span class="cat">{esc(CATEGORIES[s['category']][0])}</span> <span class="type">{esc(s.get('content_type', 'News'))}</span></p>
-<h3><a href="story/{esc(s['id'])}.html">{esc(s['title'])}</a></h3>
+<h3><a href="{pre}story/{esc(s['id'])}.html">{esc(s['title'])}</a></h3>
 <p class="summary">{esc(_short(s['summary'], 170))}</p>
 <p class="meta">{esc(names)} &middot; {esc(fmt_date(s['published']))}</p>
 {_save_button(s)}
@@ -1027,19 +1027,19 @@ def _card(s: dict) -> str:
 </article>"""
 
 
-def _hero(s: dict) -> str:
+def _hero(s: dict, pre: str = "") -> str:
     img = s["image"] or fallback_cover(s)
     names = ", ".join(dict.fromkeys(x["name"] for x in s["sources"]))
     prio = esc(s["priority"])
     fb = f''' data-fallback="{esc(fallback_cover(s))}" onerror="this.onerror=null;this.src=this.dataset.fallback"'''
     return f"""<section class="hero" aria-labelledby="hero-title" data-tags="{esc(' '.join(s['tags']))}" data-search="{esc(search_text(s))}">
-<a class="hero-media" href="story/{esc(s['id'])}.html" tabindex="-1" aria-hidden="true"><img src="{esc(img)}"{fb} alt="" loading="eager" referrerpolicy="no-referrer" width="640" height="360"></a>
+<a class="hero-media" href="{pre}story/{esc(s['id'])}.html" tabindex="-1" aria-hidden="true"><img src="{esc(img)}"{fb} alt="" loading="eager" referrerpolicy="no-referrer" width="640" height="360"></a>
 <div class="hero-body">
 <p class="kicker"><span class="badge {prio}">{prio}</span><span class="cat">{esc(CATEGORIES[s['category']][0])}</span></p>
-<h2 id="hero-title"><a href="story/{esc(s['id'])}.html">{esc(s['title'])}</a></h2>
+<h2 id="hero-title"><a href="{pre}story/{esc(s['id'])}.html">{esc(s['title'])}</a></h2>
 <p class="summary">{esc(_short(s['summary'], 240))}</p>
 <p class="meta">{esc(names)} &middot; {esc(fmt_date(s['published']))}</p>
-<div class="actions"><a class="btn" href="story/{esc(s['id'])}.html">Read the brief &rarr;</a>{_save_button(s)}</div>
+<div class="actions"><a class="btn" href="{pre}story/{esc(s['id'])}.html">Read the brief &rarr;</a>{_save_button(s)}</div>
 </div>
 </section>"""
 
@@ -1204,7 +1204,7 @@ def _article_card(a: dict, href: str) -> str:
 
 
 def article_page(a: dict, cfg: dict, site_cfg: dict) -> str:
-    base = "../../"
+    base = "../"  # articles live at <section>/<slug>.html
     label = SECTIONS[a["section"]]
     lede = f'<p class="lede">{esc(a["summary"])}</p>' if a["summary"] else ""
     header = (
@@ -1217,7 +1217,7 @@ def article_page(a: dict, cfg: dict, site_cfg: dict) -> str:
     body = (
         header
         + '<article class="prose">' + a["body"]
-        + f'<p class="meta"><a href="index.html">&larr; All {esc(label)}</a> &middot; <a href="../../index.html">Home</a></p>'
+        + f'<p class="meta"><a href="index.html">&larr; All {esc(label)}</a> &middot; <a href="{base}index.html">Home</a></p>'
         + "</article>"
     )
     body += _donate(site_cfg, base) + _newsletter(site_cfg, base)
@@ -1682,6 +1682,32 @@ def stories_index(stories: list[dict]) -> str:
     return json.dumps({"stories": rows}, ensure_ascii=False, indent=1)
 
 
+GUIDES = [
+    {"file": "m365-identity-incident-triage-checklist.pdf", "title": "Microsoft 365 Identity Incident Triage",
+     "summary": "Evidence-first checks for suspicious sign-ins, Entra audit activity, app access, mailbox persistence, containment and verification.",
+     "meta": "3 pages · Updated 22 October 2026 · Includes Microsoft Learn references"},
+    {"file": "conditional-access-rollout-checklist.pdf", "title": "Conditional Access Rollout Checklist",
+     "summary": "Plan, report-only test, emergency-access exclusions, staged enablement, rollback and monitoring for a new policy.",
+     "meta": "2 pages · Updated 28 October 2026"},
+    {"file": "message-center-post-triage.pdf", "title": "Message Center Post Triage",
+     "summary": "Classify each Microsoft 365 Message Center post, set owner and deadline, test, communicate, and close with evidence.",
+     "meta": "2 pages · Updated 28 October 2026"},
+]
+
+
+def _guides_section() -> str:
+    cards = "".join(
+        f'<article class="card resource-card"><div class="card-body">'
+        f'<p class="card-kicker">PRINTABLE WORKSHEET &middot; VERSION 1.0</p>'
+        f'<h3>{esc(g["title"])}</h3>'
+        f'<p class="summary">{esc(g["summary"])}</p>'
+        f'<p class="meta">{esc(g["meta"])}</p>'
+        f'<a class="btn" href="{esc(g["file"])}" download>Download the free PDF &rarr;</a>'
+        f'</div></article>' for g in GUIDES)
+    return ('<section class="section" id="free-downloads" aria-labelledby="free-download-title">'
+            '<h2 id="free-download-title">Free field guides</h2><div class="grid">' + cards + '</div></section>')
+
+
 def index_page(stories: list[dict], cfg: dict, now: datetime, status: dict,
                articles: list[dict] | None = None, site_cfg: dict | None = None,
                radar: dict | None = None) -> str:
@@ -1711,17 +1737,7 @@ def index_page(stories: list[dict], cfg: dict, now: datetime, status: dict,
             '<a href="patch-tuesday/index.html">All Patch Tuesday notes</a></p></section>'
         )
     parts.append(_radar_home(radar))
-    parts.append(
-        '<section class="section" id="free-downloads" aria-labelledby="free-download-title">'
-        '<h2 id="free-download-title">Free field guide</h2>'
-        '<article class="card resource-card"><div class="card-body">'
-        '<p class="card-kicker">PRINTABLE WORKSHEET &middot; VERSION 1.0</p>'
-        '<h3>Microsoft 365 Identity Incident Triage</h3>'
-        '<p class="summary">Evidence-first checks for suspicious sign-ins, Entra audit activity, app access, mailbox persistence, containment and verification.</p>'
-        '<p class="meta">3 pages &middot; Updated 22 October 2026 &middot; Includes Microsoft Learn references</p>'
-        '<a class="btn" href="m365-identity-incident-triage-checklist.pdf" download>Download the free PDF &rarr;</a>'
-        '</div></article></section>'
-    )
+    parts.append(_guides_section())
     newsletter = _newsletter(site_cfg, "")
     if newsletter:
         parts.append(newsletter)
@@ -1754,7 +1770,7 @@ def listing_page(stories: list[dict], cfg: dict, base: str, title: str, intro: s
     else:
         parts.append(filter_bar(stories))
         parts.append('<section class="section" data-section aria-label="Stories"><div class="grid">'
-                     + "".join(_card(s) for s in stories) + "</div></section>")
+                     + "".join(_card(s, base) for s in stories) + "</div></section>")
         parts.append("<script>" + FILTER_JS + "</script>")
     return _layout(cfg, title, intro, "\n".join(parts), base)
 
@@ -2475,7 +2491,139 @@ M365_CSS = """
 @media (prefers-reduced-motion:reduce){.sm-cell{transition:none}}
 """
 
-RADAR_CSS += OPS_CSS + M365_CSS
+
+# ---------------------------------------------------------------- Message Center posts (public archives, not tenant data)
+MC_ARCHIVE_URL = "https://mc.merill.net/rss.xml"
+MC_FANATIC_URL = "https://www.365fanatic.com/feed/mc-digest/"
+MC_ARCHIVE_SRC = {"id": "mc-archive", "name": "Message Center archive (unofficial)", "official": False, "type": "advisory"}
+MC_FANATIC_SRC = {"id": "mc-fanatic", "name": "365Fanatic MC digest (reference tenant)", "official": False, "type": "advisory"}
+MC_ID_RE = re.compile(r"\bMC\d{6,8}\b", re.I)
+
+
+def _mc_norm(it: dict, origin: str) -> dict:
+    title = it["title"]
+    m = MC_ID_RE.search(title) or MC_ID_RE.search(it["link"]) or MC_ID_RE.search(it["summary"])
+    mc_id = m.group(0).upper() if m else ""
+    rest = MC_ID_RE.sub("", title).lstrip(" :-–")
+    product = rest.split(":", 1)[0].strip() if ":" in rest else ""
+    text = f"{title} {it['summary']}"
+    return {**it, "mc": mc_id, "product": product[:40], "origin": origin,
+            "retire": bool(RETIRE_RE.search(text)), "action": bool(ACTION_RE.search(text)),
+            "audience": audience_of(text)}
+
+
+def load_mc(fixtures: Path | None, data_file: Path) -> dict:
+    a = load_feed_source(fixtures, data_file, "mc-archive.xml", MC_ARCHIVE_URL, "mc-archive.json", MC_ARCHIVE_SRC, limit=60)
+    b = load_feed_source(fixtures, data_file, "mc-fanatic.xml", MC_FANATIC_URL, "mc-fanatic.json", MC_FANATIC_SRC, limit=60)
+    seen: set[str] = set()
+    items: list[dict] = []
+    for origin, src in (("archive", a), ("fanatic", b)):
+        for it in src["items"]:
+            n = _mc_norm(it, origin)
+            key = n["mc"] or n["link"]
+            if key in seen:
+                continue
+            seen.add(key)
+            items.append(n)
+    items.sort(key=lambda i: i["published"] or "", reverse=True)
+    return {"ok": a["ok"] or b["ok"], "archive_ok": a["ok"], "fanatic_ok": b["ok"], "items": items[:80]}
+
+
+def _mc_panel(mc: dict | None, now: datetime) -> str:
+    mc = mc or {"ok": False, "items": [], "archive_ok": False, "fanatic_ok": False}
+    rows = mc.get("items", [])
+    srcs = (f'<span class="rv-tag{" s-launched" if mc.get("archive_ok") else ""}">Archive {"live" if mc.get("archive_ok") else "offline"}</span>'
+            f'<span class="rv-tag{" s-launched" if mc.get("fanatic_ok") else ""}">365Fanatic {"live" if mc.get("fanatic_ok") else "offline"}</span>')
+    cards = "".join(
+        f'<li class="rv-item mc-item" data-search="{esc((r["mc"] + " " + r["title"] + " " + r["summary"]).lower())}" '
+        f'data-retire="{1 if r["retire"] else 0}" data-action="{1 if r["action"] else 0}" data-admin="{1 if "Admin" in r["audience"] else 0}">'
+        f'<div class="rv-tags">'
+        + (f'<span class="rv-tag product">{esc(r["mc"])}</span>' if r["mc"] else "")
+        + (f'<span class="rv-tag">{esc(r["product"])}</span>' if r["product"] else "")
+        + ('<span class="rv-tag a-action">Action</span>' if r["action"] else "")
+        + ('<span class="rv-tag a-action">Retirement</span>' if r["retire"] else "")
+        + _tag_audience(r["audience"]) + _new_badge(r["published"], now)
+        + f'<span class="rv-tag">{"Archive" if r["origin"] == "archive" else "365Fanatic"}</span></div>'
+        f'<h3><a href="{esc(r["link"])}" target="_blank" rel="noopener noreferrer">{esc(r["title"])}</a></h3>'
+        + (f'<p class="rv-desc">{esc(_short(r["summary"], 220))}</p>' if r["summary"] else "")
+        + f'<div class="rv-foot"><span>{esc(fmt_day(r["published"]) or "date not provided")}</span>'
+        f'<a class="rv-btn rv-btn-ghost rv-btn-sm" href="{esc(r["link"])}" target="_blank" rel="noopener noreferrer">Open post &nearr;</a></div></li>'
+        for r in rows[:30])
+    if not rows:
+        body = ('<div class="empty">No Message Center posts loaded yet.</div>' if mc.get("ok") else
+                '<div class="empty">Both public archives are unreachable right now and no saved posts exist yet.</div>')
+    else:
+        body = (f'<div class="mc-tools"><div class="rv-search"><label class="sr-only" for="mc-search">Search Message Center posts</label>'
+                '<input id="mc-search" type="search" placeholder="Search MC number, product or wording… (press /)"></div>'
+                '<div class="rv-chiprow" role="group" aria-label="Quick filters" data-mc-filters>'
+                '<button type="button" class="rv-chip" aria-pressed="true" data-mc="all">All</button>'
+                '<button type="button" class="rv-chip" aria-pressed="false" data-mc="action">Action</button>'
+                '<button type="button" class="rv-chip" aria-pressed="false" data-mc="retire">Retirement</button>'
+                '<button type="button" class="rv-chip" aria-pressed="false" data-mc="admin">Admin relevant</button></div></div>'
+                '<p class="rv-count" id="mc-count" aria-live="polite"></p>'
+                f'<ul class="rv-list" id="mc-list">{cards}</ul><div class="empty" id="mc-empty" hidden>No posts match this search.</div>')
+    return (
+        '<div class="m365-head"><span class="rh-led" aria-hidden="true"></span>' + srcs +
+        '<span class="rv-tag">Unofficial archives</span></div>' + body +
+        '<p class="rv-legend">These are public, unofficial copies of Microsoft Message Center posts. Message Center content varies by tenant, '
+        'so your own Message Center remains the source of truth. Tags are read from the post wording.</p>'
+        '<p class="rv-legend">Sources: <a href="https://mc.merill.net/" target="_blank" rel="noopener noreferrer">Merill Fernando\'s Message Center archive</a>'
+        ' and <a href="https://www.365fanatic.com/message-center-summary/" target="_blank" rel="noopener noreferrer">365Fanatic MC summary</a>.</p>')
+
+
+MC_JS = """(function(){
+var input=document.getElementById('mc-search');var list=document.getElementById('mc-list');
+if(!input||!list)return;var items=[].slice.call(list.querySelectorAll('.mc-item'));
+var count=document.getElementById('mc-count');var empty=document.getElementById('mc-empty');
+var mode='all';
+function apply(){var q=input.value.trim().toLowerCase();var shown=0;
+items.forEach(function(el){var ok=(!q||el.getAttribute('data-search').indexOf(q)>-1)&&
+(mode==='all'||el.getAttribute('data-'+mode)==='1');el.hidden=!ok;if(ok)shown++;});
+if(count)count.textContent=shown+' of '+items.length+' posts shown';if(empty)empty.hidden=shown>0;}
+input.addEventListener('input',apply);
+document.querySelectorAll('[data-mc]').forEach(function(b){b.addEventListener('click',function(){
+mode=b.getAttribute('data-mc');document.querySelectorAll('[data-mc]').forEach(function(x){x.setAttribute('aria-pressed',String(x===b));});apply();});});
+document.addEventListener('keydown',function(e){if(e.key==='/'&&!/input|textarea/i.test((document.activeElement||{}).tagName||'')){e.preventDefault();input.focus();}});
+apply();})();"""
+
+MC_CSS = """
+.mc-tools{display:grid;gap:12px;margin:6px 0 12px}
+.mc-item .rv-desc{margin-bottom:8px}
+"""
+
+RADAR_CSS += OPS_CSS + M365_CSS + MC_CSS
+
+MODERN_CSS = """
+.rv-hero{isolation:isolate}
+.rv-hero::after{content:"";position:absolute;inset:-40%;z-index:-1;pointer-events:none;filter:blur(22px);
+background:radial-gradient(closest-side,rgba(56,189,248,.30),transparent 70%) 18% 28%/55% 60% no-repeat,radial-gradient(closest-side,rgba(34,197,94,.22),transparent 70%) 82% 72%/50% 55% no-repeat,radial-gradient(closest-side,rgba(167,139,250,.22),transparent 70%) 62% 8%/42% 46% no-repeat;
+animation:rv-aurora 18s ease-in-out infinite alternate}
+@keyframes rv-aurora{0%{transform:translate3d(-3%,-2%,0) scale(1)}100%{transform:translate3d(3%,2%,0) scale(1.08)}}
+.rv-item,.ops-card,.sm-cell,.rv-stat,.rv-controls,.mc-item{background:color-mix(in srgb,var(--surface) 84%,transparent);-webkit-backdrop-filter:blur(12px) saturate(140%);backdrop-filter:blur(12px) saturate(140%)}
+.rv-stat b{background:linear-gradient(90deg,var(--ink),var(--rv-cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+.ops-grid{grid-template-columns:repeat(12,minmax(0,1fr))}
+.ops-grid>.ops-card{grid-column:span 6}
+.rv-section h2 .rv-tag{vertical-align:middle}
+.js .reveal{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media (max-width:760px){.ops-grid>.ops-card{grid-column:1/-1}}
+@media (prefers-reduced-motion:reduce){.rv-hero::after{animation:none}.js .reveal{opacity:1;transform:none;transition:none}}
+"""
+
+RADAR_CSS += MODERN_CSS + """
+.rv-jump{position:sticky;top:0;z-index:5;display:flex;gap:8px;flex-wrap:wrap;padding:10px 12px;margin:0 0 18px;border-radius:999px;border:1px solid var(--line);background:color-mix(in srgb,var(--surface) 88%,transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.rv-jump a{font-size:.82rem;font-weight:650;color:var(--muted);text-decoration:none;padding:6px 12px;border-radius:999px}
+.rv-jump a:hover,.rv-jump a:focus-visible{color:var(--ink);background:var(--surface-2);outline:none}
+.rv-more{margin:14px auto 0;display:flex}
+.rv-list .rv-item.pg-off{display:none}
+.rv-section{scroll-margin-top:70px}
+"""
+
+MODERN_JS = """(function(){document.documentElement.classList.add('js');
+var els=[].slice.call(document.querySelectorAll('.reveal'));
+if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in');});return;}
+var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.08});
+els.forEach(function(e){io.observe(e);});})();"""
 
 RADAR_JS = """(function(){
 var state={product:'all',stage:'all',audience:'all',q:''};
@@ -2526,7 +2674,7 @@ def audience_of(text: str) -> list[str]:
 
 def _tag_stage(stage: str | None) -> str:
     if not stage:
-        return '<span class="rv-tag s-unknown">Stage not stated</span>'
+        return ""
     return f'<span class="rv-tag {STAGE_CLASS.get(stage, "")}">{esc(stage)}</span>'
 
 
@@ -2608,94 +2756,130 @@ def _chips(group: str, label: str, values: list[tuple[str, str]]) -> str:
             f'<span class="rv-chiprow-label">{esc(label)}</span>{buttons}</div>')
 
 
+def _sec_html(msrc: dict, now: datetime) -> str:
+    rows = msrc.get("items", [])
+    if not rows:
+        return ('<div class="empty">No entries in the MSRC feed right now.</div>' if msrc.get("ok") else
+                '<div class="empty">The MSRC feed could not be reached and no saved entries exist yet.</div>')
+    out = []
+    for i in rows[:10]:
+        info = msrc_info(i)
+        tags = "".join(f'<span class="rv-tag product">{esc(c)}</span>' for c in info["cves"])
+        if info["exploited"]:
+            tags += '<span class="rv-tag sev">Exploited</span>'
+        elif info["critical"]:
+            tags += '<span class="rv-tag sev">Critical</span>'
+        out.append(
+            f'<li class="ops-row"><div class="rv-tags">{tags}{_new_badge(i["published"], now)}</div>'
+            f'<a href="{esc(i["link"])}" target="_blank" rel="noopener noreferrer">{esc(i["title"])}</a>'
+            f'<span class="rh-meta">{esc(fmt_day(i["published"]) or "date not provided")}</span></li>')
+    return '<ul class="ops-list">' + "".join(out) + '</ul>'
+
+
+def _upd_html(azu: dict, now: datetime) -> str:
+    rows = azu.get("items", [])
+    if not rows:
+        return ('<div class="empty">No Azure product updates in the feed right now.</div>' if azu.get("ok") else
+                '<div class="empty">The Azure updates feed could not be reached and no saved entries exist yet.</div>')
+    out = []
+    for i in rows[:10]:
+        info = azu_info(i)
+        tags = _tag_stage(info["stage"]) if info["stage"] else ""
+        if info["retire"]:
+            tags += '<span class="rv-tag a-action">Retirement</span>'
+        out.append(
+            f'<li class="ops-row"><div class="rv-tags">{tags}{_new_badge(i["published"], now)}</div>'
+            f'<a href="{esc(i["link"])}" target="_blank" rel="noopener noreferrer">{esc(i["title"])}</a>'
+            f'<span class="rh-meta">{esc(fmt_day(i["published"]) or "date not provided")}</span></li>')
+    return '<ul class="ops-list">' + "".join(out) + '</ul>'
+
+
 def radar_page(radar: dict, cfg: dict, site_cfg: dict) -> str:
     base = "../"
+    now = datetime.now(timezone.utc)
     items = radar["items"]
-    services = radar.get("services")
-    def _stage_of(i: dict) -> str:
-        return i["stage"] or "Stage not stated"
-    stage_counts = {k: sum(1 for i in items if _stage_of(i) == k) for k in STAGE_ORDER}
+    msrc = radar.get("msrc") or {"ok": False, "items": []}
+    azu = radar.get("azupd") or {"ok": False, "items": []}
+    mc = radar.get("mc") or {"ok": False, "items": []}
     prods = sorted({p for i in items for p in i["products"] if p != "Microsoft 365"})
-    audiences = [i for i in items if audience_of(f"{i['title']} {i['summary']}")]
-    rolling = sum(1 for i in items if i["stage"] == "Rolling out")
-    dev = sum(1 for i in items if i["stage"] == "In development")
     admin_n = sum(1 for i in items if "Admin" in audience_of(f"{i['title']} {i['summary']}"))
-    live = "Feed live" if radar["ok"] else "Feed offline · saved entries"
     newest = fmt_day(items[0]["published"]) if items and items[0]["published"] else None
+    live = "Feed live" if radar["ok"] else "Feed offline · saved entries"
 
     hero = (
         '<section class="rv-hero" aria-labelledby="rv-title"><div class="rv-scan" aria-hidden="true"></div>'
         f'<p class="rv-kicker"><span class="rh-led" aria-hidden="true"></span>Microsoft 365 &middot; {esc(live)}</p>'
         '<h1 id="rv-title">Change <span class="rv-gradient">Radar</span></h1>'
-        '<p class="rv-lede">Planned, rolling-out and recently launched Microsoft 365 changes from the public roadmap. '
-        'Product plans are kept apart from tenant-specific service messages.</p>'
-        '<div class="rv-actions">'
-        f'<a class="rv-btn rv-btn-primary" href="{RADAR_PAGE}" target="_blank" rel="noopener noreferrer">Official roadmap &nearr;</a>'
-        f'<a class="rv-btn rv-btn-ghost" href="{MESSAGE_CENTER_URL}" target="_blank" rel="noopener noreferrer">About Message center &nearr;</a>'
-        '</div>'
+        '<p class="rv-lede">Security updates, Azure changes, Microsoft 365 status and Message Center posts, in one place. '
+        'Public sources only; your own tenant is always the source of truth.</p>'
         '<div class="rv-stats">'
         f'<div class="rv-stat c-cyan"><b>{len(items)}</b><span>Roadmap entries</span></div>'
-        f'<div class="rv-stat c-green"><b>{rolling}</b><span>Rolling out</span></div>'
-        f'<div class="rv-stat c-violet"><b>{dev}</b><span>In development</span></div>'
         f'<div class="rv-stat c-amber"><b>{admin_n}</b><span>Admin relevant</span></div>'
+        f'<div class="rv-stat c-green"><b>{len(msrc.get("items", []))}</b><span>Security updates</span></div>'
+        f'<div class="rv-stat c-violet"><b>{len(mc.get("items", []))}</b><span>Message Center posts</span></div>'
         '</div></section>')
 
-    notice = (
-        '<div class="rv-notice">'
-        '<div><span class="rv-ico" aria-hidden="true">1</span><div><strong>Roadmap is not your tenant</strong>'
-        '<p>Entries describe product plans. Timing depends on licences, cloud and rollout settings.</p></div></div>'
-        '<div><span class="rv-ico" aria-hidden="true">2</span><div><strong>Tenant data stays private</strong>'
-        '<p>Message Center posts and service incidents need Microsoft Graph with admin consent. They are not part of this public page.</p></div></div>'
-        '<div><span class="rv-ico" aria-hidden="true">3</span><div><strong>Relevance tags are inferred</strong>'
-        '<p>Admin and user tags come from the wording of each entry, not from an official Microsoft field.</p></div></div>'
-        '</div>')
+    jump = (
+        '<nav class="rv-jump reveal" aria-label="On this page">'
+        '<a href="#security">Security updates</a><a href="#azure">Azure updates</a>'
+        '<a href="#m365">Microsoft 365 status</a><a href="#mc">Message Center</a><a href="#roadmap">Roadmap</a></nav>')
 
-    az = radar.get("azure") or {"ok": False, "items": []}
-    tenant = (
-        '<details class="tn-box"><summary>Microsoft 365 tenant incidents &amp; Message Center '
-        + ('<span class="rv-tag s-preview">Connected</span>' if services is not None else '<span class="rv-tag">Not connected</span>')
-        + '</summary>'
-        + ('<p>' + str(len(services)) + ' tenant messages loaded from the fetch script. Impact tags are inferred from the text; confirm in the admin center.</p>'
-           if services is not None else
-           '<p>Microsoft 365 incidents and Message Center posts are tenant-specific. I found no free public Microsoft 365 incident feed that is verified to work, so this needs your tenant. '
-           'so they need Microsoft Graph with an authorised read-only app (ServiceHealth.Read.All and ServiceMessage.Read.All, admin consent). '
-           'Run <code>scripts/fetch_service_messages.py</code> to produce the data file; the script header lists each step.</p>')
-        + '</details>')
-    svc_block = (
-        '<section class="rv-section" aria-labelledby="svc-title"><h2 id="svc-title">Service signal '
-        '<span class="rv-tag s-preview">Azure · public</span></h2>'
-        '<p class="rv-sub">Live posts from the public Azure status feed, no sign-in needed. Each state tag is read from the post wording. '
-        'This shows Azure only, not Microsoft 365 tenant health.</p>'
-        + _az_panel(az) + '<h3 style="margin-top:22px">Microsoft 365 public status (mirror)</h3>'
-        + _m365_panel(radar.get("m365"), datetime.now(timezone.utc)) + tenant + '</section>')
-    if services is not None:
-        svc_items = "".join(_svc_item_html(m) for m in services)
-        svc_block = svc_block.replace('</section>', '<h3 style="margin-top:22px">Tenant service messages</h3>'
-                                      f'<ul class="rv-list">{svc_items}</ul></section>')
+    security = ('<section class="rv-section reveal" id="security" aria-labelledby="sec-title">'
+                '<h2 id="sec-title">Security updates <span class="rv-tag s-preview">MSRC · official</span></h2>'
+                '<p class="rv-sub">Latest entries from the Microsoft Security Response Center. Tags come from the title and summary wording.</p>'
+                + _sec_html(msrc, now) + '</section>')
+
+    azure = ('<section class="rv-section reveal" id="azure" aria-labelledby="az-title">'
+             '<h2 id="az-title">Azure product updates <span class="rv-tag s-preview">Microsoft · official</span></h2>'
+             '<p class="rv-sub">New features, general availability and retirements announced for Azure.</p>'
+             + _upd_html(azu, now) + '</section>')
+
+    m365 = ('<section class="rv-section reveal" id="m365" aria-labelledby="m3-title">'
+            '<h2 id="m3-title">Microsoft 365 status <span class="rv-tag">Public mirror</span></h2>'
+            '<p class="rv-sub">Incidents and advisories from a public mirror of the Microsoft 365 status page. Not your tenant.</p>'
+            + _m365_panel(radar.get("m365"), now) + '</section>')
+
+    mcsec = ('<section class="rv-section reveal" id="mc" aria-labelledby="mc-title">'
+             '<h2 id="mc-title">Message Center posts <span class="rv-tag">Public archives</span></h2>'
+             '<p class="rv-sub">Copies of Microsoft 365 Message Center posts from two public archives. Your own Message Center is the source of truth.</p>'
+             + _mc_panel(mc, now) + '</section>')
 
     controls = (
         '<div class="rv-controls">'
         '<div class="rv-search"><label class="sr-only" for="rv-search">Search roadmap entries</label>'
-        '<input id="rv-search" type="search" placeholder="Search title, product, feature ID or wording…"></div>'
+        '<input id="rv-search" type="search" placeholder="Search title, product or feature ID…"></div>'
         + _chips("product", "Product", [("all", "All")] + [(p, p) for p in prods])
-        + _chips("stage", "Stage", [("all", f"All · {len(items)}")]
-                 + [(k, f"{k} · {stage_counts[k]}") for k in STAGE_ORDER])
         + _chips("audience", "Audience", [("all", "All"), ("Admin", "Admin relevant"), ("User", "User relevant")])
         + '</div>')
-
     listing = (
         f'<p class="rv-count" id="rv-count" aria-live="polite">{len(items)} of {len(items)} entries shown'
         + (f' &middot; newest {esc(newest)}' if newest else '') + '</p>'
         + (f'<ul class="rv-list" id="rv-list">{"".join(_radar_item_html(i) for i in items)}</ul>' if items
            else '<div class="empty">No public roadmap entries are available right now.</div>')
         + '<div class="empty" id="rv-empty" hidden>No entries match these filters.</div>'
-        + '<p class="rv-legend">Stage colour: green = rolling out, violet = in development, cyan = preview, mint = launched. '
-          'Amber marks entries whose wording mentions admins. Tags are inferred, not official Microsoft classifications.</p>')
+        + (f'<button type="button" class="rv-btn rv-btn-ghost rv-more" id="rv-more">Show all {len(items)} entries</button>' if len(items) > 12 else ''))
+    roadmap = ('<section class="rv-section reveal" id="roadmap" aria-labelledby="road-title">'
+               '<h2 id="road-title">Roadmap <span class="rv-tag">Product plans</span></h2>'
+               '<p class="rv-sub">Planned changes from the public Microsoft 365 roadmap. Plans are not confirmed for your tenant.</p>'
+               + controls + listing + '</section>')
 
-    body = hero + _ops_board(radar, datetime.now(timezone.utc)) + notice + svc_block + '<section class="rv-section" aria-labelledby="road-title"><h2 id="road-title">Roadmap entries</h2>' + controls + listing + '</section>' + "<script>" + RADAR_JS + "</script>"
+    footnote = ('<p class="rv-legend">Tags are inferred from wording, not official Microsoft classifications. '
+                'Message Center and incident data for your own tenant need Microsoft Graph with admin consent.</p>')
+
+    body = hero + jump + security + azure + m365 + mcsec + roadmap + footnote + "<script>" + MODERN_JS + RADAR_JS + MC_JS + MORE_JS + "</script>"
     return _layout(cfg, "Microsoft 365 Change Radar",
-                   "Public Microsoft 365 roadmap entries, kept separate from security news and tenant-specific Message Center data.",
+                   "Security updates, Azure changes, Microsoft 365 status and Message Center posts from public sources.",
                    body, base)
+
+
+MORE_JS = """(function(){
+var btn=document.getElementById('rv-more');var list=document.getElementById('rv-list');if(!btn||!list)return;
+var items=[].slice.call(list.querySelectorAll('.rv-item'));
+items.forEach(function(el,i){if(i>=12)el.classList.add('pg-off');});
+function showAll(){items.forEach(function(el){el.classList.remove('pg-off');});btn.hidden=true;}
+btn.addEventListener('click',showAll);
+var s=document.getElementById('rv-search');if(s)s.addEventListener('input',showAll);
+document.querySelectorAll('[data-filter-group] button').forEach(function(b){b.addEventListener('click',showAll);});})();"""
 
 
 def _radar_home(radar: dict) -> str:
@@ -2712,16 +2896,7 @@ def _radar_home(radar: dict) -> str:
                 else "No public roadmap entries in the latest check.")
         cards.append(f'<li class="rh-card rh-empty"><span class="rh-meta">{note}</span></li>')
     status = '<span class="rh-led" aria-hidden="true"></span>' + ("Feed live" if radar["ok"] else "Feed offline · saved entries")
-    svc = radar.get("services")
-    svc_note = f'<span class="rv-tag s-preview">{len(svc)} tenant messages</span>' if svc else '<span class="rv-tag">Tenant feed not connected</span>'
-    az = radar.get("azure") or {"ok": False, "items": []}
-    if az.get("items"):
-        az_note = f'<span class="rv-tag s-launched">Azure: {len(az["items"])} public posts</span>'
-    elif az.get("ok"):
-        az_note = '<span class="rv-tag s-preview">Azure: no open posts</span>'
-    else:
-        az_note = '<span class="rv-tag">Azure feed unreachable</span>'
-    svc_note = az_note + " " + svc_note
+
     return (
         '<section class="rh" id="change-radar" aria-labelledby="radar-title"><div class="rv-scan" aria-hidden="true"></div>'
         '<div class="rh-head"><div>'
@@ -2729,7 +2904,7 @@ def _radar_home(radar: dict) -> str:
         '<h2 id="radar-title">Microsoft 365 <span>Change Radar</span></h2>'
         '<p class="rh-sub">Upcoming Microsoft 365 changes from the public roadmap, kept separate from security news. '
         'These are product plans, not confirmed changes in your tenant.</p>'
-        f'<div class="rv-tags" style="margin-top:12px">{svc_note}</div></div>'
+        '</div>'
         '<a class="rv-btn rv-btn-primary" href="change-radar/index.html">Open the radar <span aria-hidden="true">&rarr;</span></a></div>'
         f'<ol class="rh-grid">{"".join(cards)}</ol>'
         '<p class="rh-foot">Message Center posts and service incidents are tenant-specific and are not shown on this public page.</p>'
@@ -2752,9 +2927,10 @@ def write_site(out: Path, stories: list[dict], cfg: dict, now: datetime, status:
     qr_asset = ROOT / "buymeacoffee-qr.png"
     if qr_asset.is_file():
         shutil.copyfile(qr_asset, out / qr_asset.name)
-    resource_pdf = ROOT / "m365-identity-incident-triage-checklist.pdf"
-    if resource_pdf.is_file():
-        shutil.copyfile(resource_pdf, out / resource_pdf.name)
+    for g in GUIDES:
+        resource_pdf = ROOT / g["file"]
+        if resource_pdf.is_file():
+            shutil.copyfile(resource_pdf, out / resource_pdf.name)
     # Google Search Console HTML-file verification must be present at the public site root.
     verification_file = ROOT / "google06dce61680795c6c.html"
     if verification_file.is_file():
@@ -2885,6 +3061,7 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
     radar = load_radar(fixtures, data_file)
     radar["services"] = load_services(data_file)
     radar["azure"] = load_azure_status(fixtures, data_file)
+    radar["mc"] = load_mc(fixtures, data_file)
     radar["m365"] = load_feed_source(fixtures, data_file, "m365-status.xml", M365_STATUS_URL, "m365-status.json", M365_STATUS_SRC)
     radar["msrc"] = load_feed_source(fixtures, data_file, "msrc.xml", MSRC_URL, "msrc.json", MSRC_SRC)
     radar["azupd"] = load_feed_source(fixtures, data_file, "azure-updates.xml", AZ_UPDATES_URL, "azure-updates.json", AZU_SRC)
