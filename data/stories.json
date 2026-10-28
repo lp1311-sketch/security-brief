@@ -3950,28 +3950,6 @@
    "instructions_checked": true
   },
   {
-   "id": "0f04a6f0fbac",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Stolen UpdraftCentral keys used to backdoor WordPress sites",
-   "link": "https://www.bleepingcomputer.com/news/security/stolen-updraftcentral-keys-used-to-backdoor-wordpress-sites/",
-   "published": "2026-10-21T01:01:50+00:00",
-   "summary": "A threat actor breached TeamUpdraft's website, a developer of popular WordPress backup and security plugins, potentially compromising UpdraftCentral connection keys that can send commands to connected websites.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/09/03/wordpress.jpg",
-   "cves": [],
-   "first_seen": "2026-10-21T01:20:51.358403+00:00",
-   "image_checked": true,
-   "instructions": [
-    "\"Over the weekend of 17-18 October we identified unauthorised access to the teamupdraft.com website,\" TeamUpdraft said in an advisory yesterday.",
-    "Even if backups in customers' own remote storage are unaffected, the company recommends that users rotate storage credentials and reauthorize connections if they accessed their site through UpdraftCentral.",
-    "Users are recommended to update UpdraftPlus to 1.26.13 (free) / 2.26.13 (Premium) or later.",
-    "After updating, it is recommended to log into each WordPress site and delete the UpdraftCentral connection keys from Settings → UpdraftPlus Backups → Advanced Tools → UpdraftCentral → Manage existing keys."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "eeae20ed2a5a",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
