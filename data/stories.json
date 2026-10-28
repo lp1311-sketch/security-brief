@@ -1200,27 +1200,6 @@
    "instructions_checked": true
   },
   {
-   "id": "7f88afbf76a3",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Attackers Abuse UpdraftCentral Keys to Plant Backdoors on WordPress Sites",
-   "link": "https://thehackernews.com/2026/10/attackers-abuse-updraftcentral-keys-to.html",
-   "published": "2026-10-21T09:01:12+00:00",
-   "summary": "Unknown threat actors breached TeamUpdraft's website and potentially gained unauthorized access to customers' connection keys for UpdraftCentral, UpdraftVault, and UpdraftClone, using them to backdoor WordPress sites. TeamUpdraft is the developer behind UpdraftPlus, a popular WordPress backup plugin with over four…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdsSYB_dpfRL3wD0MeCT_VyPyFJS8HjQAW0VuBHSTviFY4WBOQfa8MCP79qyJR3zYyMBesIXiCtL8XwwtjjLGm9Stxdv_qoIkf3_Rpc7YGFwZuzVS974TbuDfF5GkLRJX2DxFaDudlMlXSDyiZ8fvoVGaKaA-tpCr_eAvvEsfQr1uyfdBk-8KyK4aisYgC/s1600/wp-backdoor.jpg",
-   "cves": [],
-   "first_seen": "2026-10-21T10:16:37.379533+00:00",
-   "instructions": [
-    "Users who have a teamupdraft.com account are advised to change their password with immediate effect (and elsewhere, if the same password has been reused), reset 2FA settings, and exercise caution when receiving unexpected emails claiming to be from TeamUpdraft.",
-    "TeamUpdraft is also recommending that cloud customers of UpdraftCentral follow the steps below as soon as possible, since the connection keys can send commands to the connected sites -",
-    "Update UpdraftPlus to version 1.26.12 (free) or 2.26.12 (Premium) or later.",
-    "Go to Plugins, including the Must-Use tab if you can see it, and check for anything you don’t recognise."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "ad8783319617",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2135,27 +2114,6 @@
     "\"Organizations in the prioritised sectors and geographies should assume they are in scope for deliberate targeting.\"",
     "\"Defenders should focus on the sequence: a POST request returns a 500 error, PHP reports memory exhaustion and heap corruption, and the Apache worker handling the request crashes.\"",
     "\"An application must set session.serialize_handler to php_binary or php_serialize in its configuration and then switch it to php at runtime with ini_set() before calling session_start(),\" the Foundation said."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "705a2aee0bf3",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "PHP2Shell: Two Unpatched Critical PHP RCE Flaws (CVSS 9.2) Trigger Emergency Security Alert",
-   "link": "https://thehackernews.com/2026/10/php2shell-two-unpatched-critical-php.html",
-   "published": "2026-10-21T09:05:17+00:00",
-   "summary": "This story is developing and was written before PHP's scheduled 14:00 UTC release on October 21. Once the release is out, the affected and fixed versions below are confirmed by the official advisory. PHP will ship an out-of-cycle security release at 14:00 UTC today, October 21, for two critical vulnerabilities that…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcxq1wmaSTaMiFJnrulXjwGrIIkIHBR3Q9Yv6Lky3rAie6XPOnFmXOVckMgVzGn9yvodrbkt6kV623Ofg8Iw-1MTDRoCVzXPiikivnZ5R7OynIF5-QC0DAiwXq8q2MRS3PZaz9NpjhJUqa-QWi1AQJ2XnJ-nvUNEvG3f1E0UpU5slUwzguAI-cESkZ5Xc/s1600/php2shell.jpg",
-   "cves": [],
-   "first_seen": "2026-10-21T05:56:23.985466+00:00",
-   "instructions": [
-    "The notice says PHP may release earlier \"should details of either vulnerability become public, or should evidence of active exploitation appear in the wild.\"",
-    "The claim that every version since PHP 5 is affected is unconfirmed too: watchTowr's own FAQ on the flaws says that scope \"has not been confirmed by an official vendor advisory\" and that no configuration or feature requirement has been described.",
-    "Where patching cannot be done at once, CERT-EU advises that you \"consider isolating internet-facing applications from public networks until a fix is available.\"",
-    "The release should clarify what the notice withheld: which versions are affected, which part of PHP is involved, whether an attack requires a particular way of running PHP, a configuration, or a login, and how PHP itself describes the flaws."
    ],
    "instructions_checked": true
   },
@@ -5169,6 +5127,29 @@
     "The initial focus arose because that was INL’s focus, but he retained the interest because it was challenging and a bit different. “You’re doing protocol reverse engineering, including some custom protocols that you must dissect and do low-level network binary type things.",
     "Jon Steinbach has been appointed strategic technical advisor to the Pentagon’s CIO.",
     "Preparing for disruption must become part of day-to-day operations."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "3f9c6dce420c",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Hackers Start Probing Fresh Oracle EBS Vulnerability",
+   "link": "https://www.securityweek.com/hackers-start-probing-fresh-oracle-ebs-vulnerability/",
+   "published": "2026-10-28T09:14:23+00:00",
+   "summary": "CVE-2026-101767 is an unauthenticated SQL injection that can be exploited for remote code execution. The post Hackers Start Probing Fresh Oracle EBS Vulnerability appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/10/Oracle-E-Business-Suite.jpeg",
+   "cves": [
+    "CVE-2026-101767"
+   ],
+   "first_seen": "2026-10-28T09:42:23.763917+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Preparing for disruption must become part of day-to-day operations.",
+    "iOS, macOS 27.2 Patch 286 Bugs; Fix for Exploited Flaw Backported to iOS 18",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
   },
