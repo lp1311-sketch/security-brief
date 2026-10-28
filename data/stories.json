@@ -1318,27 +1318,6 @@
    "instructions_checked": true
   },
   {
-   "id": "a9726704f0fa",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Critical GitLab Flaw (CVSS 10.0) Could Allow Unauthenticated RCE Across 12 Years of Releases",
-   "link": "https://thehackernews.com/2026/10/critical-gitlab-flaw-cvss-100-could.html",
-   "published": "2026-10-21T18:57:34+00:00",
-   "summary": "GitLab released fixes on October 21 for a flaw that lets an attacker run code on a self-managed server without logging in, and it affects every version of the software going back to 7.0, released in 2014. The fix matters even for administrators who patched nine days earlier: the October 12 update covered only versions…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEig4Pkd5r0GeWGSaCoHaEsZVVoh5Y6xBkFvMTGYKvD5oONYnczQGAUqpjD6eCiA6sxiiel6Zs0kPiBEWOZJ21URkE59iJm-LDUFPYwPEf8o8d8lnyiMOR53H7IeXGKn3tTG9pusA-HKwYo0n04WQ1m8kg8dxIWEtxFGMDiBzrV-zzqAH2R2OVT2E1ViX_U/s1600/git-rce.jpg",
-   "cves": [],
-   "first_seen": "2026-10-21T19:55:50.639549+00:00",
-   "instructions": [
-    "GitLab has not said what preconditions an attacker needs to reach the compiler, so administrators cannot yet rule themselves out by configuration; the fix is the only certain protection, and GitLab's advisory offers no interim workaround.",
-    "GitLab says multi-node setups can apply the patch without downtime using its zero-downtime procedure.",
-    "The fix matters even for administrators who patched nine days earlier: the October 12 update covered only versions 19.2 and later, and the new fixed versions sit one patch above it, so an instance updated then is in range again.",
-    "The 19.4.3 and 19.3.6 releases include database changes that run during the upgrade, and on a single-node server that means downtime while they finish."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "6f084559d703",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1564,7 +1543,7 @@
    "title": "Hackers Target Critical Oracle E-Business Suite RCE Flaw Days After Security Patch",
    "link": "https://thehackernews.com/2026/10/hackers-target-critical-oracle-e.html",
    "published": "2026-10-28T12:48:03+00:00",
-   "summary": "Threat actors are beginning to probe for a newly patched critical vulnerability in Oracle E-Business Suite (EBS), according to threat intelligence firm Defused Cyber. The vulnerability in question is CVE-2026-101767 (CVSS score: 9.8) in the Oracle Application Object Library of Oracle E-Business Suite. It was patched…",
+   "summary": "Threat actors are beginning to probe for a newly patched critical vulnerability in Oracle E-Business Suite (EBS), according to threat intelligence firm Defused Cyber. The vulnerability in question is CVE-2026-101767 (CVSS score: 9.8), a case of improper authentication in the Oracle Application Object Library of Oracle…",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBB03AGS7veiAqQ7-xPeadzhhaRvDmhOlLgQcDN0y-r1na_us5yomWjBEXCbwbw8OW_o8SSGjjqk4VZFQ4ZxLiWKQPZxlcBkzJ5lv3OlEV0rOETUKyQzWoZ74LGpSjOjrScmk1rVf0OhRmDACHG3jwSDfBnnta75I_3s_nuoWGZmcfg7NZfHBp_PEIl8aj/s1600/oracle-hack.jpg",
    "cves": [
     "CVE-2026-101767"
@@ -2281,6 +2260,25 @@
    "instructions_checked": true
   },
   {
+   "id": "10e92bd49867",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Volt Typhoon Used Covert Silent Train Network in Four Zero-Day Exploitation Campaigns",
+   "link": "https://thehackernews.com/2026/10/volt-typhoon-used-covert-silent-train.html",
+   "published": "2026-10-28T18:08:33+00:00",
+   "summary": "The China-nexus cyber espionage group known as Volt Typhoon has been attributed to a now-disrupted covert access network dubbed Silent Train that has been put to use for zero-day exploitation and strategic access. \"First identified in late 2023, Silent Train uses rotating chains of compromised SOHO, IoT, and…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXuRyHXVM1n6S9Z49nYkM2dmJjKwuZx2RAre0CQSpB202GteLj8keMogqzR7ZVIv7YRc9udBHU7-oCpnpzL6nLaez3ypbVr9cVmiH9zFwJVApy5cev84W725y38auaUdkCQGN3zvngCivMUl-SYV1jnJu9eHduaYeBzro4cdmFHIQJfBQN4RvcC-fUTrs1/s1600/si.jpg",
+   "cves": [],
+   "first_seen": "2026-10-28T19:19:01.936957+00:00",
+   "instructions": [
+    "Known to be active since at least 2021, the threat actor was previously observed exploiting a file upload vulnerability in Versa Director as a zero-day (CVE-2024-39717) to deliver a bespoke web shell called VersaMem designed to harvest credentials and enable access to downstream customers.",
+    "\"To construct these sessions, its operators exploit exposed web interfaces on SOHO, IoT, and other relay devices, then deploy only the tooling needed to enable chained SSH access through the compromised node.\""
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "ce5fe177d9da",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2392,25 +2390,6 @@
    "first_seen": "2026-10-22T17:14:04.674572+00:00",
    "image_checked": true,
    "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "14b2da242e2e",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Democrat lawmakers say Russia is aiming to undermine party ahead of midterms",
-   "link": "https://therecord.media/democrat-lawmakers-say-russia-is-aiming-to-undermine-party",
-   "published": "2026-10-21T18:28:00+00:00",
-   "summary": "The pair stressed the latest update showed no country is pursuing the technically challenging effort to interfere with or hack into the country’s election infrastructure or tamper directly with votes.",
-   "image": "https://cms.therecord.media/uploads/Vote_Here_sign_87792ed841.jpg",
-   "cves": [],
-   "first_seen": "2026-10-21T18:37:57.118186+00:00",
-   "image_checked": true,
-   "instructions": [
-    "The pair stressed the latest update showed no country is pursuing the technically challenging effort to interfere with or hack into the country’s election infrastructure or tamper directly with votes."
-   ],
    "instructions_checked": true
   },
   {
@@ -3372,28 +3351,6 @@
    "instructions_checked": true
   },
   {
-   "id": "71f0485320c6",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "CISA: Hackers chain Plex flaws in Plex2Shell attacks to breach servers",
-   "link": "https://www.bleepingcomputer.com/news/security/cisa-hackers-chain-plex-flaws-in-plex2shell-attacks-to-breach-servers/",
-   "published": "2026-10-21T18:34:42+00:00",
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) is warning that attackers are actively exploiting four vulnerabilities in Plex Media Server.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/21/CISA.jpg",
-   "cves": [],
-   "first_seen": "2026-10-21T18:37:57.118186+00:00",
-   "image_checked": true,
-   "instructions": [
-    "The vendor urged users to upgrade to SiteGuard Server Edition for Apache httpd, Nginx, and IIS version 8.00 Update 5, and SiteGuard Server Edition for Apache httpd and Nginx on FreeBSD version 7.00 Update 6 and later.",
-    "CISA has directed federal agencies to prioritize patching systems affected by Plex2Shell vulnerabilities or apply mitigations by October 23.",
-    "Siemens's alert on CVE-2026-110936 shares indicators of compromise (IoCs) and advice on identifying compromised systems, urging administrators to update Siemens Software Center to version 4.0.9.8 or later.",
-    "Plex warns users to patch security vulnerabilities immediately"
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "aa5619127529",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -3434,6 +3391,27 @@
     "After updating, administrators must restart affected processes, and affected container images must be rebuilt and redeployed.",
     "On Sunday, Microsoft pushed an emergency security update to address the issue in .NET, warning that successful exploitation allows privilege escalation on systems with a vulnerable .NET version.",
     "“An invalid block switch was reported as a temporary need for more input instead of a permanent format error, so the streaming decoder kept appending input bytes to an eight-byte internal buffer,” Node.js explains in an advisory."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "d9b49b7f0de2",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Discord to let search engines index public server messages",
+   "link": "https://www.bleepingcomputer.com/news/security/discord-to-let-search-engines-index-public-server-messages/",
+   "published": "2026-10-28T18:44:16+00:00",
+   "summary": "Discord will allow search engines to index discussions in Discoverable Servers and make them accessible on the web to users outside the platform without an account or invitation.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/28/discord.jpg",
+   "cves": [],
+   "first_seen": "2026-10-28T19:19:01.936957+00:00",
+   "image_checked": true,
+   "instructions": [
+    "The changes apply only to Discoverable Servers, publicly listed communities with at least 1,000 members.",
+    "In those places, members must explicitly enable it in their privacy settings.",
+    "Channel administrators can choose to exclude individual channels or turn off all channel content sharing entirely using controls available under Server Settings > Web Presence ."
    ],
    "instructions_checked": true
   },
@@ -4472,27 +4450,6 @@
    "cves": [],
    "first_seen": "2026-10-22T21:14:33.364375+00:00",
    "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "80aac9868cd3",
-   "source": "msblog",
-   "source_name": "Microsoft Security Blog",
-   "official": false,
-   "source_type": "vendor_blog",
-   "title": "AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/",
-   "published": "2026-10-21T18:23:55+00:00",
-   "summary": "As early as September 2026, Storm-0940, a China-state aligned actor, used the agentic AI penetration testing framework ARTEX to automate attacks targeting hundreds of organizations globally across a broad range of industries. Several of these Storm-0940 ARTEX-driven attacks have resulted in the actor obtaining…",
-   "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/10/image-6.webp",
-   "cves": [],
-   "first_seen": "2026-10-21T18:37:57.118186+00:00",
-   "instructions": [
-    "Microsoft recommends the following mitigations to reduce the impact of this threat.",
-    "Check the recommendations card for the deployment status of monitored mitigations.",
-    "Importantly, the absence of results should not be treated as confirmation that no access occurred; Graph API telemetry should be considered alongside the application permissions and service principal authentication activity identified in the previous hunting steps.",
-    "Customers should review service principal sign-ins, investigate unexpected application credential or privilege changes, and follow ConnectWise’s published containment guidance while preserving relevant evidence for investigation."
-   ],
    "instructions_checked": true
   },
   {

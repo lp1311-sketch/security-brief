@@ -1,6 +1,69 @@
 {
  "items": [
   {
+   "id": "6c8789082701",
+   "title": "MC1069563: Microsoft 365 admin center: Usage reports to manage metered consumption costs for Microsoft 365 Copilot Chat (preview)",
+   "link": "https://mc.merill.net/message/MC1069563",
+   "summary": "Microsoft 365 admin center introduces a preview usage report for managing metered costs of Microsoft 365 Copilot Chat pay-as-you-go billing. It shows message consumption by tenant, user, and agent, with alerts for over 2000 messages. Rollout starts end of April 2027, no admin action needed.",
+   "published": "2026-10-28T18:20:34+00:00"
+  },
+  {
+   "id": "6222131fb044",
+   "title": "MC1384420: Microsoft Purview | Endpoint Data Loss Prevention - Ability to protect files stored in the excluded folders in Windows",
+   "link": "https://mc.merill.net/message/MC1384420",
+   "summary": "Microsoft Purview Endpoint DLP will protect sensitive files in previously excluded Windows folders (e.g., AppData) during egress actions starting late February 2027. Admins must update policies, deploy anti-malware client 4.18.26051+, and educate users. Audit mode logs actions; block mode enforces restrictions.",
+   "published": "2026-10-28T17:40:27+00:00"
+  },
+  {
+   "id": "30677aa5bc3c",
+   "title": "MC1529014: The October 2026 Windows non-security preview update is now available",
+   "link": "https://mc.merill.net/message/MC1529014",
+   "summary": "The October 2026 non-security preview update is now available for Windows 11, versions 26H2, 26H1, and 25H2. Information about the contents of this update is available in the release notes, which are accessible from the Windows 11 update history page. To learn more about the different types of monthly quality updates…",
+   "published": "2026-10-28T17:05:15+00:00"
+  },
+  {
+   "id": "5f1ebe53527f",
+   "title": "MC1446805: Microsoft Viva: Targeted audience surveys in the Copilot dashboard",
+   "link": "https://mc.merill.net/message/MC1446805",
+   "summary": "Microsoft Viva introduces targeted audience surveys in the Copilot dashboard, allowing authorized users (CxO or delegates) to send Viva Pulse surveys to predefined Copilot user groups based on dashboard data. The feature, enabled by default for eligible organizations, rolls out from mid-August to mid-December 2026…",
+   "published": "2026-10-28T16:48:47+00:00"
+  },
+  {
+   "id": "8c1c8869211f",
+   "title": "MC1465763: Microsoft Entra: Prepare for Microsoft to disable unused or unsuccessful SMS first-factor sign-in",
+   "link": "https://mc.merill.net/message/MC1465763",
+   "summary": "Microsoft will disable SMS first-factor sign-in in Microsoft Entra tenants with no successful or only unsuccessful SMS sign-ins in the past 30 days, starting mid-September to November 2026. SMS for MFA and password reset remains unaffected. Admins should review usage, notify users, and ensure alternate sign-in methods.",
+   "published": "2026-10-28T16:40:55+00:00"
+  },
+  {
+   "id": "d0fd9a674bf4",
+   "title": "MC1490906: Microsoft Teams: Analytics for desk utilization in Teams Pro Management portal",
+   "link": "https://mc.merill.net/message/MC1490906",
+   "summary": "Microsoft Teams Pro Management portal will add desk utilization analytics, showing usage, reservations, occupancy, and peak patterns. Requires desks with peripheral devices and Teams Shared Space licenses. Rollout starts early December 2026, completing by mid-January 2027, aiding workplace space planning without…",
+   "published": "2026-10-28T16:37:53+00:00"
+  },
+  {
+   "id": "85c276f42a30",
+   "title": "MC1481313: Microsoft Purview | DLM: Legacy Teams retention policies that cover Copilot will be treated as Teams-only",
+   "link": "https://mc.merill.net/message/MC1481313",
+   "summary": "Starting mid-January 2027, legacy Microsoft Teams retention policies will apply only to Teams data, excluding Microsoft 365 Copilot interactions. Organizations must create separate retention policies for Copilot to maintain compliance. Existing Teams retention behavior remains unchanged, but action is required to…",
+   "published": "2026-10-28T16:28:05+00:00"
+  },
+  {
+   "id": "c85447206794",
+   "title": "MC1523090: Microsoft Teams: Initiate side conversations within the meeting chat window",
+   "link": "https://mc.merill.net/message/MC1523090",
+   "summary": "Microsoft Teams will allow users to start or continue private side conversations within the meeting chat window, rolling out globally from January 2027. No admin action is needed, chat history is preserved, and users can disable the side-chat tab if desired. No compliance issues identified.",
+   "published": "2026-10-28T16:25:37+00:00"
+  },
+  {
+   "id": "81e017bf331a",
+   "title": "MC1528937: Dynamics 365 Contact Center – Boost contact center efficiency with Real Time Streaming Analytics",
+   "link": "https://mc.merill.net/message/MC1528937",
+   "summary": "We are introducing Real-Time Streaming Analytics in the new Contact Center supervisor workspace application, providing supervisors with near real-time visibility into Dynamics 365 Contact Center performance without requiring dashboard refreshes. This feature will be generally available starting Oct 30th with a phased…",
+   "published": "2026-10-28T15:31:45+00:00"
+  },
+  {
    "id": "70fb5053478b",
    "title": "MC1528014: Microsoft Teams: Two presenters can share their screens or windows simultaneously in meetings",
    "link": "https://mc.merill.net/message/MC1528014",
@@ -295,13 +358,6 @@
    "published": "2026-10-26T15:28:23+00:00"
   },
   {
-   "id": "c85447206794",
-   "title": "MC1523090: Microsoft Teams: Initiate side conversations within the meeting chat window",
-   "link": "https://mc.merill.net/message/MC1523090",
-   "summary": "Microsoft Teams will allow users to start or continue private side conversations within the meeting chat window, preserving chat history. This feature rolls out worldwide in January 2027, requires no admin action, and users can disable the side-chat tab if desired. No compliance issues identified.",
-   "published": "2026-10-23T23:10:40+00:00"
-  },
-  {
    "id": "5898eb86d0ea",
    "title": "MC1523087: Microsoft Teams Mobile: Ask Copilot from Search",
    "link": "https://mc.merill.net/message/MC1523087",
@@ -363,62 +419,6 @@
    "link": "https://mc.merill.net/message/MC1456780",
    "summary": "The new Intune device page will become the default view starting with the September (2609) release, replacing the legacy page. All device management features remain, but admins now need the Managed devices/Update permission plus specific action permissions. Update documentation and review permissions accordingly.",
    "published": "2026-10-23T19:43:51+00:00"
-  },
-  {
-   "id": "50f504551497",
-   "title": "MC1454973: Manage Copilot connectors (Global setting) from Agent 365 - SetFederatedConnectors CLI toggle is retiring",
-   "link": "https://mc.merill.net/message/MC1454973",
-   "summary": "The setFederatedConnectors CLI toggle for managing Microsoft 365 Copilot connectors is retiring by August 25, 2026. Connector governance will unify under the Allowed agent types setting in the Microsoft 365 admin center. Administrators should update workflows and review settings before October 30, 2026.",
-   "published": "2026-10-23T16:06:47+00:00"
-  },
-  {
-   "id": "4e8fc7986073",
-   "title": "MC1521791: Power Platform - Planned maintenance",
-   "link": "https://mc.merill.net/message/MC1521791",
-   "summary": "We have scheduled your Power Platform environment for planned service maintenance. This maintenance is intended to provide increased stability, reliability, and performance for your business-critical applications and environments. Maintenance downtime duration: Up to 10 minutes Maintenance window start: October 30…",
-   "published": "2026-10-23T03:17:56+00:00"
-  },
-  {
-   "id": "2633dbeee86e",
-   "title": "MC1521617: Microsoft OneDrive: Updated placement of the Create or upload button in OneDrive for the web",
-   "link": "https://mc.merill.net/message/MC1521617",
-   "summary": "The OneDrive web experience is updated by moving the Create or upload button from the left navigation pane to the right side, aligning with SharePoint. It won't appear in Libraries, Recycle Bin, Meetings, or Media. Rollout starts late October 2026, no admin action needed.",
-   "published": "2026-10-22T23:20:29+00:00"
-  },
-  {
-   "id": "2d833262bb32",
-   "title": "MC1521616: Microsoft Graph APIs for Copilot cost management",
-   "link": "https://mc.merill.net/message/MC1521616",
-   "summary": "Microsoft is introducing Microsoft Graph APIs for Copilot cost management, enabling programmatic control of credit spending policies, balance monitoring, and credit requests. Available in public preview from mid-October 2026 via the beta endpoint, these APIs integrate with existing admin and FinOps processes but…",
-   "published": "2026-10-22T23:19:46+00:00"
-  },
-  {
-   "id": "2597a86a74e1",
-   "title": "MC1521615: Microsoft Purview: Data Lifecycle Management increases the auto-expanding archive limit from 1.5 TB to 3 TB",
-   "link": "https://mc.merill.net/message/MC1521615",
-   "summary": "Microsoft Purview Data Lifecycle Management increases the auto-expanding archive limit for eligible Exchange Online mailboxes from 1.5 TB to 3 TB, starting mid-November 2026. No additional configuration or charges are required; organizations should review licenses and monitor mailbox growth accordingly.",
-   "published": "2026-10-22T23:18:39+00:00"
-  },
-  {
-   "id": "191fadf84649",
-   "title": "MC1521614: Microsoft Teams: Retirement of the Turn off IntelliFrame option for online participants",
-   "link": "https://mc.merill.net/message/MC1521614",
-   "summary": "Microsoft Teams will retire the \"Turn off IntelliFrame\" option for online participants in meetings with Teams Rooms using Cloud IntelliFrame. Starting late November 2026, all online users will see the room's IntelliFrame view. In-room users can still disable it. No admin action is needed.",
-   "published": "2026-10-22T23:18:36+00:00"
-  },
-  {
-   "id": "1e8cfe1f105b",
-   "title": "MC1521613: Microsoft Teams: Streaming switchboard for NDI sources in meetings and events",
-   "link": "https://mc.merill.net/message/MC1521613",
-   "summary": "Microsoft Teams will introduce a streaming switchboard allowing event producers to select and stream up to eight NDI sources during meetings and events, starting November 2026. Admins must enable NDI streaming via policy, and users must activate production capabilities to use the feature.",
-   "published": "2026-10-22T23:16:32+00:00"
-  },
-  {
-   "id": "10b950ea59d4",
-   "title": "MC1521609: Create sales pitches with Copilot in PowerPoint",
-   "link": "https://mc.merill.net/message/MC1521609",
-   "summary": "Copilot in PowerPoint will help users create structured sales pitch presentations for various customer scenarios. Rolling out worldwide from mid to late October 2026 on Win32, Mac, and Web, it reduces manual work for sales teams. No admin action is required; informing users is recommended.",
-   "published": "2026-10-22T23:14:55+00:00"
   }
  ]
 }

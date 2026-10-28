@@ -1,6 +1,13 @@
 {
  "items": [
   {
+   "id": "e0a4af8811e9",
+   "title": "Announcing: Migrate Azure Container Apps logging destination from Log Analytics to Azure Monitor",
+   "link": "https://azure.microsoft.com/updates?id=577689",
+   "summary": "The Log Analytics logging destination for Azure Container Apps is now a legacy logging option. Existing environments configured with the Log Analytics logging destination will continue to function normally. However, we recommend planning a migration to th",
+   "published": "2026-10-28T17:52:51+00:00"
+  },
+  {
    "id": "c95d49929726",
    "title": "[In preview] Public Preview: Cross Tenant Restore with Azure Backup",
    "link": "https://azure.microsoft.com/updates?id=577117",
@@ -167,13 +174,6 @@
    "link": "https://azure.microsoft.com/updates?id=570313",
    "summary": "The Azure Key Vault Secrets Provider Extension for Azure Arc-enabled Kubernetes will be retired on October 9, 2027.Customers currently using the extension should plan to migrate to the Azure Key Vault Secret Store Extension before the retirement date. The",
    "published": "2026-10-09T20:27:17+00:00"
-  },
-  {
-   "id": "0685b5ac10cf",
-   "title": "[Launched] Generally Available: Managed StandardV2 NAT Gateway for AKS",
-   "link": "https://azure.microsoft.com/updates?id=574430",
-   "summary": "AKS will now provision and manage a StandardV2 NAT Gateway for clusters using an AKS-managed virtual network.StandardV2 is now the default managed NAT Gateway SKU for new clusters in supported regions when using the managedNATGateway outbound type. Standa",
-   "published": "2026-10-08T22:51:01+00:00"
   }
  ]
 }
