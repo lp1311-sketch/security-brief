@@ -1211,7 +1211,7 @@ def article_page(a: dict, cfg: dict, site_cfg: dict) -> str:
         '<section class="hero article-hero" aria-labelledby="article-title">'
         f'<div class="hero-media"><img src="{esc(article_cover(a))}" alt="" width="640" height="360"></div>'
         f'<div class="hero-body"><p class="kicker"><span class="cat">{esc(label)}</span>'
-        f'<span class="type">{esc(fmt_day(a["date"]))}</span></p>'
+        f'<span class="type">{esc(fmt_day(a["date"]))} &middot; {_read_min(a)} min read</span></p>'
         f'<h1 id="article-title" class="article-title">{esc(a["title"])}</h1>{lede}</div></section>'
     )
     body = (
@@ -1349,22 +1349,48 @@ def _article_hero(a: dict, href: str) -> str:
             f'<div class="actions"><a class="btn" href="{esc(href)}">Read the analysis &rarr;</a></div></div></section>')
 
 
+def _an_row(i: int, a: dict) -> str:
+    href = f"{a['slug']}.html"
+    return (f'<li class="an-row"><span class="an-num" aria-hidden="true">{i:02d}</span>'
+            f'<div class="an-body"><p class="an-meta">{esc(fmt_day(a["date"]))} &middot; {esc(SECTIONS[a["section"]])}'
+            f' &middot; {_read_min(a)} min read</p>'
+            f'<h3><a href="{esc(href)}">{esc(a["title"])}</a></h3>'
+            f'<p class="summary">{esc(_short(a["summary"] or "", 200))}</p></div>'
+            f'<a class="an-go" href="{esc(href)}" aria-label="Read: {esc(a["title"])}">Read &rarr;</a></li>')
+
+
+def _read_min(a: dict) -> int:
+    words = len(re.findall(r"\w+", a.get("body") or ""))
+    return max(2, round(words / 220))
+
+
 def section_page(sec: str, arts: list[dict], cfg: dict, site_cfg: dict,
                  cve_rows: list[dict] | None = None) -> str:
     base = "../"
     label = SECTIONS[sec]
+    n = len(arts)
     if arts:
-        listing = _article_hero(arts[0], f"{arts[0]['slug']}.html")
-        if len(arts) > 1:
-            cards = "".join(_article_card(a, f"{a['slug']}.html") for a in arts[1:])
-            listing += f'<section class="section"><h2>More analysis</h2><div class="grid">{cards}</div></section>'
+        featured = _article_hero(arts[0], f"{arts[0]['slug']}.html")
+        rest = arts[1:]
+        more = ""
+        if rest:
+            more = ('<section class="an-more" aria-labelledby="an-more-title"><h2 id="an-more-title">More analysis</h2>'
+                    '<ol class="an-list">' + "".join(_an_row(i + 2, x) for i, x in enumerate(rest)) + '</ol></section>')
+        listing = f'<div class="an-feature">{featured}</div>' + more
     else:
         listing = '<div class="empty">No published articles yet.</div>'
+    legend = (
+        '<aside class="an-key" aria-labelledby="an-key-title"><h2 id="an-key-title">How we label claims</h2>'
+        '<dl>'
+        '<div><dt><span class="an-tag c-ok">Confirmed</span></dt><dd>Stated in the source report or by the vendor.</dd></div>'
+        '<div><dt><span class="an-tag c-warn">Likely</span></dt><dd>Our judgement from the evidence. Verify in your tenant.</dd></div>'
+        '<div><dt><span class="an-tag c-unk">Unclear</span></dt><dd>Not verified yet. Do not act on it as fact.</dd></div>'
+        '</dl></aside>')
     cve_block = cve_table(cve_rows) if cve_rows is not None else ""
     body = (
-        f'<section class="intro"><p class="kicker">Analysis desk</p><h1>{esc(label)}</h1>'
-        f'<p class="lede">Original analysis, newest first.</p></section>'
-        + listing + cve_block
+        f'<section class="intro an-intro"><p class="kicker">Analysis desk</p><h1>{esc(label)}</h1>'
+        f'<p class="lede">Original analysis for Microsoft 365, Entra and security operations. {n} published, newest first.</p></section>'
+        + '<div class="an-layout"><div class="an-main">' + listing + cve_block + '</div>' + legend + '</div>'
     ) + _newsletter(site_cfg, base)
     return _layout(cfg, label, f"{label}: original analysis.", body, base)
 
@@ -2430,7 +2456,12 @@ M365_ID_RE = re.compile(r"\b(MV\d{4,8}|MC\d{4,8})\b", re.I)
 
 def _m365_items(ms: dict) -> list[dict]:
     rows = []
+    seen = set()
     for it in ms.get("items", []):
+        key = re.sub(r"\s+", " ", it["title"]).strip().lower()
+        if key in seen:
+            continue  # the mirror repeats the same entry; show it once
+        seen.add(key)
         text = f"{it['title']} {it['summary']}"
         services = [name for name, rx in M365_MATRIX if re.search(rx, text, re.I)]
         ids = sorted({m.upper() for m in M365_ID_RE.findall(text)})[:2]
@@ -2442,38 +2473,56 @@ def _m365_panel(ms: dict | None, now: datetime) -> str:
     ms = ms or {"ok": False, "items": []}
     rows = _m365_items(ms)
     live = "Mirror reachable" if ms.get("ok") else "Mirror offline · saved entries"
-    open_state = {}
-    for r in rows:
-        if r["state"] == "Resolved":
-            continue
+    open_rows = [r for r in rows if r["state"] != "Resolved"]
+    counts: dict[str, int] = {}
+    for r in open_rows:
         for svc in r["services"]:
-            open_state[svc] = "Investigating" if (r["state"] == "Investigating" or open_state.get(svc) == "Investigating") else "Open"
+            counts[svc] = counts.get(svc, 0) + 1
     cells = "".join(
-        f'<div class="sm-cell sm-{"red" if open_state.get(name) == "Investigating" else ("amber" if open_state.get(name) else "clear")}">'
-        f'<b>{esc(name)}</b><span>{esc(open_state.get(name, "No open item in feed"))}</span></div>'
+        f'<button type="button" class="sm-cell {"sm-red" if counts.get(name) else "sm-clear"}" '
+        f'data-svc="{esc(name)}" aria-pressed="false">'
+        f'<b>{esc(name)}</b><span>{(str(counts[name]) + " open " + ("entry" if counts[name] == 1 else "entries")) if counts.get(name) else "No open item in feed"}</span></button>'
         for name, _ in M365_MATRIX)
     items = "".join(
-        f'<li class="rv-item svc"><div class="rv-tags">'
+        f'<li class="rv-item svc" data-services="{esc("|".join(r["services"]))}"><div class="rv-tags">'
         f'<span class="rv-tag {AZ_STATE_CLASS.get(r["state"], "")}">{esc(r["state"])}</span>'
-        + "".join(f'<span class="rv-tag product">{esc(s)}</span>' for s in r["services"][:3])
+        + "".join(f'<span class="rv-tag product">{esc(s)}</span>' for s in r["services"][:4])
         + "".join(f'<span class="rv-tag">{esc(i)}</span>' for i in r["ids"])
         + _new_badge(r["published"], now) + '</div>'
         f'<h3><a href="{esc(r["link"])}" target="_blank" rel="noopener noreferrer">{esc(r["title"])}</a></h3>'
         f'<div class="rv-foot"><span>{esc(fmt_day(r["published"]) or "date not provided")}</span>'
         f'<a class="rv-btn rv-btn-ghost rv-btn-sm" href="{esc(r["link"])}" target="_blank" rel="noopener noreferrer">Open entry &nearr;</a></div></li>'
-        for r in rows[:8])
+        for r in rows[:10])
     empty = ('<div class="empty">No entries in the mirror right now.</div>' if ms.get("ok") else
              '<div class="empty">The mirror could not be reached and no saved entries exist yet.</div>')
     return (
         '<div class="m365-head"><span class="rh-led" aria-hidden="true"></span>'
         f'<span class="rv-tag s-preview">{esc(live)}</span><span class="rv-tag">Third-party mirror</span>'
         f'<a class="rv-btn rv-btn-ghost rv-btn-sm" href="{M365_STATUS_PAGE}" target="_blank" rel="noopener noreferrer">Source page &nearr;</a></div>'
-        f'<div class="sm-grid" role="list" aria-label="Service matrix from public feed">{cells}</div>'
+        '<p class="sm-hint" id="sm-hint">Select a service to filter the entries below. Red means the public feed lists an open entry for it.</p>'
+        f'<div class="sm-grid" role="group" aria-label="Filter entries by service">{cells}</div>'
         '<p class="rv-legend">Matrix colours show only what the public feed says. "No open item in feed" does not mean the service is healthy. '
         'Services are matched by keywords in each entry.</p>'
-        + (f'<ul class="rv-list">{items}</ul>' if rows else empty)
+        f'<p class="sm-count" id="sm-count" aria-live="polite">{len(rows)} entries shown</p>'
+        + (f'<ul class="rv-list" id="sm-list">{items}</ul>' if rows else empty)
         + '<p class="rv-legend">Source: 365Fanatic, an independent site that mirrors Microsoft\'s public Microsoft 365 status page. '
-          'It is not an official Microsoft feed and does not show your tenant.</p>')
+          'It is not an official Microsoft feed and does not show your tenant.</p>'
+        + "<script>" + M365_JS + "</script>")
+
+
+M365_JS = """(function(){
+var btns=[].slice.call(document.querySelectorAll('.sm-cell[data-svc]'));
+var rows=[].slice.call(document.querySelectorAll('#sm-list .svc'));
+var count=document.getElementById('sm-count');var active=null;
+function apply(svc){
+  active=(active===svc)?null:svc;var shown=0;
+  rows.forEach(function(r){var list=(r.getAttribute('data-services')||'').split('|');
+    var ok=!active||list.indexOf(active)>=0;r.hidden=!ok;if(ok)shown++;});
+  btns.forEach(function(b){var on=b.getAttribute('data-svc')===active;b.setAttribute('aria-pressed',on?'true':'false');b.classList.toggle('is-on',on);});
+  if(count)count.textContent=shown+' of '+rows.length+' entries shown'+(active?' for '+active:'');
+}
+btns.forEach(function(b){b.addEventListener('click',function(){apply(b.getAttribute('data-svc'));});});
+})();"""
 
 
 M365_CSS = """
@@ -2488,6 +2537,12 @@ M365_CSS = """
 .sm-amber{border-color:rgba(251,191,36,.6)}.sm-amber::after{background:var(--rv-amber);box-shadow:0 0 8px var(--rv-amber)}
 .sm-red{border-color:var(--rv-red);box-shadow:0 0 18px -8px var(--rv-red)}.sm-red::after{background:var(--rv-red);box-shadow:0 0 10px var(--rv-red)}
 .sm-red span{color:var(--ink)}
+.sm-cell{cursor:pointer;text-align:left;font:inherit;color:inherit;width:100%}
+.sm-cell:focus-visible{outline:2px solid var(--rv-cyan,#38bdf8);outline-offset:2px}
+.sm-cell.is-on{outline:2px solid var(--ink);outline-offset:1px}
+.sm-clear{opacity:.85}
+.sm-hint,.sm-count{margin:0 0 10px;font-size:.84rem;color:var(--muted)}
+.rv-list .svc[hidden]{display:none}
 @media (prefers-reduced-motion:reduce){.sm-cell{transition:none}}
 """
 
@@ -2592,6 +2647,39 @@ MC_CSS = """
 """
 
 RADAR_CSS += OPS_CSS + M365_CSS + MC_CSS
+
+ANALYSIS_CSS = """
+.an-intro{max-width:none}
+.an-layout{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:32px;align-items:start}
+.an-main{min-width:0}
+.an-feature{margin-bottom:8px}
+.an-more h2{font-size:1.1rem;margin:28px 0 8px;letter-spacing:.01em}
+.an-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.an-row{display:grid;grid-template-columns:52px minmax(0,1fr) auto;gap:16px;align-items:start;padding:22px 0;border-bottom:1px solid var(--line)}
+.an-num{font-variant-numeric:tabular-nums;font-weight:700;color:var(--muted);font-size:1.05rem;padding-top:3px}
+.an-meta{margin:0 0 6px;font-size:.78rem;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.an-body h3{margin:0 0 6px;font-size:1.2rem;line-height:1.3}
+.an-body h3 a{color:var(--ink);text-decoration:none}
+.an-body h3 a:hover,.an-body h3 a:focus-visible{text-decoration:underline;outline:none}
+.an-body .summary{margin:0;color:var(--muted)}
+.an-go{font-weight:650;white-space:nowrap;padding:8px 14px;border-radius:999px;border:1px solid var(--line);color:var(--ink);text-decoration:none;font-size:.9rem}
+.an-go:hover,.an-go:focus-visible{background:var(--surface-2);outline:none}
+.an-key{position:sticky;top:90px;padding:20px;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+.an-key h2{font-size:.95rem;margin:0 0 12px}
+.an-key dl{margin:0;display:grid;gap:14px}
+.an-key dd{margin:4px 0 0;font-size:.9rem;color:var(--muted)}
+.an-key dt{margin:0}
+.an-tag{display:inline-block;font-size:.75rem;font-weight:700;padding:3px 10px;border-radius:999px;border:1px solid var(--line)}
+.an-tag.c-ok{color:#166534;border-color:#86efac}
+.an-tag.c-warn{color:#92400e;border-color:#fcd34d}
+.an-tag.c-unk{color:#475569;border-color:#cbd5e1}
+@media (max-width:860px){
+  .an-layout{grid-template-columns:1fr}
+  .an-key{position:static}
+  .an-row{grid-template-columns:36px minmax(0,1fr)}
+  .an-go{grid-column:2;justify-self:start}
+}
+"""
 
 MODERN_CSS = """
 .rv-hero{isolation:isolate}
@@ -2920,7 +3008,7 @@ def write_site(out: Path, stories: list[dict], cfg: dict, now: datetime, status:
     site_cfg = site_cfg or {}
     (out / "story").mkdir(parents=True, exist_ok=True)
     # Story pages are kept even after a story leaves the 7-day window, so old links never 404.
-    (out / "style.css").write_text(CSS.strip() + "\n" + EXTRA_CSS + "\n" + DESIGN_CSS + "\n" + RADAR_CSS, encoding="utf-8")
+    (out / "style.css").write_text(CSS.strip() + "\n" + EXTRA_CSS + "\n" + DESIGN_CSS + "\n" + RADAR_CSS + "\n" + ANALYSIS_CSS, encoding="utf-8")
     (out / "favicon.svg").write_text(FAVICON_SVG, encoding="utf-8")
     # Optional root-level QR image: keep deployment simple for repository web uploads.
     import shutil
