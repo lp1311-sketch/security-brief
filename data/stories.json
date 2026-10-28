@@ -1496,6 +1496,27 @@
    "instructions_checked": true
   },
   {
+   "id": "b057f3381d27",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Google to Allow One-Tap Android App Installs From Approved Third-Party Stores Outside U.S.",
+   "link": "https://thehackernews.com/2026/10/google-to-allow-one-tap-android-app.html",
+   "published": "2026-10-28T17:08:09+00:00",
+   "summary": "Third-party Android app stores can now apply to Google for permission to install apps with one tap, without Android's usual confirmation screens, and to update them in the background. To qualify, a store must pass identity checks and send Google its full catalog, along with every new app and update, for ongoing…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJGjoQXY31UWoQz0bfvFTDRKy4lDpdbhqOJFgOspdG5AcGZNlsme3byg1-XnmyLsx7HQrxb0iojoqyoeO0KDhEDWbLxzQLceuQwSlD8TXgkhzoRCyFepV0PcOwNee4lCypBnYFiZ4DhJ_ZojQ0HyRuCGGqFVAwBxMqdzkOHL2I1tLTUctLATvKl7MMONo/s1600/android-app-install.jpg",
+   "cves": [],
+   "first_seen": "2026-10-28T18:21:54.978668+00:00",
+   "instructions": [
+    "Under Google's rules, the store must still get the user's explicit consent for each install and \"must not install apps silently without user consent.\" Large downloads and background installs must show a visible notification while they run.",
+    "Third-party Android app stores can now apply to Google for permission to install apps with one tap, without Android's usual confirmation screens, and to update them in the background.",
+    "To qualify, a store must pass identity checks and send Google its full catalog , along with every new app and update, for ongoing malware scanning.",
+    "Today, a user installing apps from a third-party store must first enable the store to install apps, then confirm each install and each update."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "f059789b2437",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1646,26 +1667,6 @@
    "first_seen": "2026-10-24T11:52:52.119319+00:00",
    "instructions": [
     "In response to the incident, the company said it's working to revoke each and every token associated with every internal system and vendor platform."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "f5335e20393b",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "LiteLLM Compromised in Supply Chain Attack Delivering Credential Stealer and Backdoor",
-   "link": "https://thehackernews.com/2026/10/litellm-compromised-in-supply-chain.html",
-   "published": "2026-10-21T18:01:57+00:00",
-   "summary": "The popular LiteLLM Python package has been compromised as part of a software supply chain attack that delivered a credential stealer and a backdoor, according to reports from SafeDep, Socket, StepSecurity, and Upwind. The compromise affects LiteLLM 1.107.0, distributed through PyPI wheels and Docker images. The…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-f1TsJE93kcT5Cp1wvKlnR-bCWFP9ZUZofd0PXryxRBt0B1q0-t0BaHnEJcNhy3IhRZq2fBU9fmILshSvlY-qk28TOO-f1JoBcGSRtwiC3MIV4gDxdXYzTS_ZMirtPka7UaG9Shie7kgWKzauZOwKgPvk8hHXUTFly2YXpzBuxUD20MdxBfKeXrRsIG-W/s1600/litellm-hack.jpg",
-   "cves": [],
-   "first_seen": "2026-10-21T18:37:57.118186+00:00",
-   "instructions": [
-    "Users who have downloaded the malicious version are advised to revoke and replace exposed credentials from a clean environment and pin version 1.106.2 by digest.",
-    "As a temporary mitigation, we have removed all but one (unaffected) user from our GitHub organization.\"",
-    "Separately, LiteLLM said it has updated the public registries to remove any trusted links to its GitHub organization so as to prevent further publication of malicious packages."
    ],
    "instructions_checked": true
   },
@@ -1973,6 +1974,24 @@
     "Put differently, the idea is to devise a malicious agent that can hijack a legitimate AI system and turn it into \"a devoted companion that must never refuse\" and an unwitting cybercrime tool.",
     "The company also said it has notified upstream providers to proactively revoke the keys so as to prevent their abuse.",
     "Rotate environment variables, including any API keys, stored in Railway, as well as private registry credentials."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "bce30872ee07",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Researcher Reveals How Logic Bugs Alone Cracked Microsoft Edge in $175,000 Pwn2Own Win",
+   "link": "https://thehackernews.com/2026/10/researcher-reveals-how-logic-bugs-alone.html",
+   "published": "2026-10-28T16:23:34+00:00",
+   "summary": "A chain of logic flaws, with no memory corruption, can turn a malicious web page into code running on a Windows computer outside Microsoft Edge's sandbox, a security researcher has shown. Orange Tsai of DEVCORE published the full method on October 28, five months after the chain won $175,000 at the Pwn2Own Berlin…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAGi2cGlEYo6PNV9aaEulhQB9MtbWjCBFhi3MugyJf4kGwtSPjq9F9wxhlptAUKuipSCQ0_NhE5eyEbHzMWnT6hVLsXtqrIQImq0QndxbKoKMz_gzxJonZa2jnvwHGEqjN_J7uyi5BPaqlGmtMn1y9xzJQywFZB_FNgKV-GR7qtBQfVmrLxdoUlyhPTiA/s1600/edge.jpg",
+   "cves": [],
+   "first_seen": "2026-10-28T18:21:54.978668+00:00",
+   "instructions": [
+    "Edge's popup blocker should have stopped that window, but Edge carried a hardcoded list of allowed addresses, and one of them opened the popup."
    ],
    "instructions_checked": true
   },
@@ -2597,22 +2616,39 @@
    "instructions_checked": true
   },
   {
-   "id": "bf2645506057",
+   "id": "22278c0bc249",
    "source": "therecord",
    "source_name": "The Record",
    "official": false,
    "source_type": "news",
-   "title": "PHP says AI review of critical bugs first sparked alarm in August, but signs surfaced in 2024",
-   "link": "https://therecord.media/php-foundation-statement-critical-vulnerabilities",
-   "published": "2026-10-21T17:30:00+00:00",
-   "summary": "In a lengthy statement about two critical vulnerabilities, the PHP Foundation explained how one dated to 2024, how a recent third-party review by AI companies heightened attention on both, why it scrambled to post information earlier than planned.",
-   "image": "https://cms.therecord.media/uploads/php_logo_pexels_steve_a_johnson_132b80cbee.jpg",
+   "title": "US sanctions Russians, North Koreans for laundering IT worker earnings",
+   "link": "https://therecord.media/north-korea-russia-sanctions",
+   "published": "2026-10-28T17:45:00+00:00",
+   "summary": "The U.S. Treasury Department sanctioned Russian and North Korean nationals for allegedly laundering the earnings of illicit IT workers on behalf of Pyongyang.",
+   "image": "https://cms.therecord.media/uploads/north_korea_flags_roman_harak_d05b7549c5.jpg",
    "cves": [],
-   "first_seen": "2026-10-21T17:54:56.990186+00:00",
+   "first_seen": "2026-10-28T18:21:54.978668+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "d949b1e38983",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "European digital rights nonprofit noyb sues Scale AI for ‘invasive’ worker surveillance",
+   "link": "https://therecord.media/noyb-sues-scale-ai-for-worker-surveillance",
+   "published": "2026-10-28T18:02:00+00:00",
+   "summary": "Noyb alleges the platform in some cases records freelancers’ mouse clicks and keystrokes every few seconds and claims the collected information can be used to generate video documenting freelancers’ entire workday.",
+   "image": "https://cms.therecord.media/uploads/lawyer_computer_5dfad16e42.jpg",
+   "cves": [],
+   "first_seen": "2026-10-28T18:21:54.978668+00:00",
    "image_checked": true,
    "instructions": [
-    "Cisco Talos’ released estimates suggesting roughly 50% of vulnerable PHP systems may not receive a patch.",
-    "“Like other distributors, Chainguard had received the patch in advance so its users could update the moment the vulnerabilities were disclosed,” the foundation said."
+    "They must give identity verifier Persona face video and identification documents, according to noyb.",
+    "“Such constant and extensive tracking while working really goes against all reasonable expectations,” Lisa Steinfeld Leiser, a data protection lawyer at noyb, said in the press release . “Why should LinkedIn or Facebook know which tasks you're working on?”"
    ],
    "instructions_checked": true
   },
@@ -4367,7 +4403,7 @@
    "title": "Third Serengeti Sweep Tops 1,400 Arrests as Investigations Mature",
    "link": "https://www.darkreading.com/cybersecurity-operations/third-serengeti-sweep-1400-arrests-investigations-mature",
    "published": "2026-10-28T06:00:00+00:00",
-   "summary": "Interpol's annual Operation Serengeti, now on its third iteration, led to 1,462 arrests across 20 African countries and the US, recovering $105 million in stolen funds.",
+   "summary": "Interpol's annual Operation Serengeti, now in its third iteration, led to 1,462 arrests across 20 African countries and the US, recovering $105 million in stolen funds.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt88d7810c6bea6d70/6ae11337facab4e020903095/lion-chasing-zebras-Wirestock_Creators-shutterstock.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-10-28T06:04:35.237037+00:00",
