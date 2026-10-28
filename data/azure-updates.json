@@ -1,0 +1,179 @@
+{
+ "items": [
+  {
+   "id": "b653b8079710",
+   "title": "[Launched] Generally Available: Higher limit of Azure Blob Storage accounts per region per subscription",
+   "link": "https://azure.microsoft.com/updates?id=578358",
+   "summary": "Higher Azure Storage account resource quotas are now generally available, supporting up to 1,000 storage accounts with standard endpoints per region, per subscription, up from the default of 250. Manage more accounts in a single subscription, reducing the",
+   "published": "2026-10-27T21:16:52+00:00"
+  },
+  {
+   "id": "b0a001a96813",
+   "title": "[Launched] Generally Available: Cost management and tagging for Claude models in Microsoft Foundry",
+   "link": "https://azure.microsoft.com/updates?id=577260",
+   "summary": "Microsoft Foundry now brings Claude models into Azure Cost Management alongside the rest of your Foundry spend, generally available. Until now, Claude charges appeared under SaaS rather than under the Foundry resource used to deploy them, and Claude deplo",
+   "published": "2026-10-27T17:19:43+00:00"
+  },
+  {
+   "id": "3d040e9d17d1",
+   "title": "[Launched] Generally Available: Azure Front Door profile and route level WAF policies",
+   "link": "https://azure.microsoft.com/updates?id=578153",
+   "summary": "Announcing the general availability of profile and route level policies for Azure Web Application Firewall (WAF) on Azure Front Door Premium. WAF policies are no longer limited to individual domains: you can now apply broad baseline protection across an e",
+   "published": "2026-10-27T16:58:04+00:00"
+  },
+  {
+   "id": "d5902702dbe7",
+   "title": "[Launched] Generally Available: Network Watcher VNet flow logs filtering",
+   "link": "https://azure.microsoft.com/updates?id=577782",
+   "summary": "Azure Network Watcher VNet flow logs filtering is now generally available, enabling you to control which network traffic flows are logged based on specific criteria such as IP addresses, ports, protocols, encryption state, flow state, and traffic directio",
+   "published": "2026-10-26T16:02:05+00:00"
+  },
+  {
+   "id": "7d5ebbd3d28a",
+   "title": "[Launched] Generally Available: Item Level Recovery for Azure VMs with Premium SSDv2 and Ultra Disks in Azure Backup",
+   "link": "https://azure.microsoft.com/updates?id=577963",
+   "summary": "Azure Backup now supports Item-Level Recovery (ILR) for Azure virtual machines using Premium SSD v2 and Ultra disks with both 512 byte and 4KB logical sector sizes. You can now recover individual files and folders from your Azure VMs with Premium SSDv2 an",
+   "published": "2026-10-23T19:21:07+00:00"
+  },
+  {
+   "id": "636d43ecb476",
+   "title": "[Launched] Generally Available: ABFS Vectored Read for Azure Data Lake Storage",
+   "link": "https://azure.microsoft.com/updates?id=577618",
+   "summary": "ABFS Vectored Read helps compatible analytics engines reduce request overhead for selective reads in Azure Data Lake Storage. By combining nearby file ranges into fewer storage requests and executing reads asynchronously, it can reduce network round trips",
+   "published": "2026-10-22T18:01:00+00:00"
+  },
+  {
+   "id": "f8e40965b890",
+   "title": "Announcing: Choose Your Own Telephony (CYOT) for Microsoft Entra",
+   "link": "https://azure.microsoft.com/updates?id=577273",
+   "summary": "What and whyStarting October 30, 2026, Microsoft Entra ID will make the Choose Your Own Telephony Provider experience available. This feature enables organizations to use a supported third-party telecommunications provider for SMS and voice authentication",
+   "published": "2026-10-21T17:38:32+00:00"
+  },
+  {
+   "id": "ce730b587ecf",
+   "title": "[Launched] Generally Available: Azure Cosmos DB Safe Key Rotation",
+   "link": "https://azure.microsoft.com/updates?id=576716",
+   "summary": "Safe Key Rotation for Azure Cosmos DB is now generally available. You can view timestamp metadata showing when each account key was last used, helping you identify active keys before rotating or retiring credentials.This visibility helps reduce the risk o",
+   "published": "2026-10-21T17:13:16+00:00"
+  },
+  {
+   "id": "a1faefaaecca",
+   "title": "[In preview] Public Preview: Disable VNet peering route",
+   "link": "https://azure.microsoft.com/updates?id=576242",
+   "summary": "Announcing the public preview of disable VNet peering route, a route-table capability that gives you more control over traffic between peered virtual networks. DPR suppresses system-generated peering routes on subnets associated with the route table while",
+   "published": "2026-10-20T18:55:47+00:00"
+  },
+  {
+   "id": "f2cd9207df36",
+   "title": "[Launched] Generally Available: Service tag match condition for Azure Front Door Premium WAF",
+   "link": "https://azure.microsoft.com/updates?id=577156",
+   "summary": "Announcing the general availability of the service tag match condition for Azure Web Application Firewall (WAF) custom rules on Azure Front Door Premium. Service tags represent groups of IP address prefixes used by Azure services, and Microsoft updates th",
+   "published": "2026-10-20T16:57:35+00:00"
+  },
+  {
+   "id": "142a3161ee48",
+   "title": "[Launched] Generally Available: Keyless TLS on Application Gateway with Azure Key Vault Managed HSM",
+   "link": "https://azure.microsoft.com/updates?id=577130",
+   "summary": "Azure Application Gateway now supports keyless TLS termination using certificates whose private keys stay in Azure Key Vault Managed HSM. Each TLS handshake signature is performed inside the HSM, and the private key is never exported to the gateway. This",
+   "published": "2026-10-20T16:55:59+00:00"
+  },
+  {
+   "id": "8e0b36d5c93a",
+   "title": "[Launched] Generally Available: Advanced platform metrics for Azure Monitor",
+   "link": "https://azure.microsoft.com/updates?id=575329",
+   "summary": "Advanced platform metrics for Azure Monitor are now generally available. Advanced platform metrics provide finer-grained signals that help customers more quickly and accurately identify changes and trends within their resources.With this release, customer",
+   "published": "2026-10-20T16:54:24+00:00"
+  },
+  {
+   "id": "dcd7b36b87ad",
+   "title": "[Launched] Generally Available: Metrics usage insights for Azure Monitor workspace",
+   "link": "https://azure.microsoft.com/updates?id=577165",
+   "summary": "Metrics usage insights is now generally available, giving you greater visibility into what’s driving metrics usage across your Azure Monitor workspace. Monitor workspace utilization, identify unused metrics, understand usage trends, and investigate change",
+   "published": "2026-10-19T20:23:15+00:00"
+  },
+  {
+   "id": "5b8f98b95aef",
+   "title": "[Launched] Generally Available: Azure DNS enables DNS-based load balancing through Traffic Manager linked records",
+   "link": "https://azure.microsoft.com/updates?id=573917",
+   "summary": "Azure DNS now provides DNS based load balancing by seamless integration with Azure Traffic Manager. Customers can directly associate an Azure DNS record set with a Traffic Manager profile, eliminating the need to create a CNAME record pointing to the traf",
+   "published": "2026-10-19T17:55:40+00:00"
+  },
+  {
+   "id": "fb6729c777f4",
+   "title": "[In preview] Public Preview: Azure Databricks Private network gateway",
+   "link": "https://azure.microsoft.com/updates?id=576556",
+   "summary": "Private network gateway for Azure Databricks is now in Public Preview, enabling serverless compute to connect to resources in your virtual network (VNet) and transitively connected networks through a single managed gateway. Customers can use the gateway t",
+   "published": "2026-10-16T16:59:02+00:00"
+  },
+  {
+   "id": "7370bd4301cb",
+   "title": "[Launched] Generally Available: External key management for Azure Key Vault Managed HSM",
+   "link": "https://azure.microsoft.com/updates?id=574296",
+   "summary": "External key management for Azure Key Vault Managed HSM is now generally available in all Azure public regions. For organizations with regulatory or sovereignty requirements to retain physical control of key-encryption keys, it lets Azure services that su",
+   "published": "2026-10-16T16:50:27+00:00"
+  },
+  {
+   "id": "35c4d2ae4848",
+   "title": "[In preview] Public Preview: Azure Files cross-region data copy and synchronization with Azure Storage Mover",
+   "link": "https://azure.microsoft.com/updates?id=576542",
+   "summary": "Azure Files customers can now copy and synchronize file share data across storage accounts, Azure regions, and subscriptions within the same tenant using Azure Storage Mover. Schedule incremental transfers to maintain secondary copies that can support bus",
+   "published": "2026-10-15T19:05:18+00:00"
+  },
+  {
+   "id": "8b08240060d0",
+   "title": "[Launched] Generally Available: Standard service endpoint",
+   "link": "https://azure.microsoft.com/updates?id=571025",
+   "summary": "Standard service endpoint, a new capability in the Azure Private Link family, provides a scalable and secure approach for connecting Azure IaaS workloads to Azure PaaS services. Standard service endpoint addresses the manageability, and the scale limitati",
+   "published": "2026-10-15T17:39:51+00:00"
+  },
+  {
+   "id": "0c0f27cb2902",
+   "title": "[Launched] Generally Availabile: Automatic zone balance for Virtual Machine Scale Sets",
+   "link": "https://azure.microsoft.com/updates?id=576334",
+   "summary": "Automatic zone balance for Virtual Machine Scale Sets is now generally available. This feature continuously monitors scale sets deployed across availability zones and automatically redistributes VM instances when zonal imbalances occur. This helps reduce",
+   "published": "2026-10-15T16:54:20+00:00"
+  },
+  {
+   "id": "0a16e1b774ca",
+   "title": "[Launched] Generally Available: Azure Cloud HSM hardware audit logging",
+   "link": "https://azure.microsoft.com/updates?id=576377",
+   "summary": "Hardware Audit Logging for Azure Cloud HSM provides hardware-generated audit records for supported HSM management operations, helping organizations strengthen security monitoring, compliance reporting, governance, and forensic investigations. Customers ca",
+   "published": "2026-10-14T19:17:47+00:00"
+  },
+  {
+   "id": "eaee6c2d48e4",
+   "title": "[Launched] Generally Available: Azure Site Recovery Support for Azure ARC-enabled Windows VMWare/Physical servers",
+   "link": "https://azure.microsoft.com/updates?id=576214",
+   "summary": "Azure Site Recovery (ASR) now supports disaster recovery for Azure ARC-enabled Windows VMWare virtual machines and on-premise physical servers. Customers can protect ARC-managed machines with ASR while continuing to use Azure ARC for governance, inventory",
+   "published": "2026-10-14T19:13:31+00:00"
+  },
+  {
+   "id": "3a6eab11a406",
+   "title": "Retirement: Azure Key Vault Secrets Provider Extension for Azure Arc enabled Kubernetes clusters",
+   "link": "https://azure.microsoft.com/updates?id=570313",
+   "summary": "The Azure Key Vault Secrets Provider Extension for Azure Arc-enabled Kubernetes will be retired on October 9, 2027.Customers currently using the extension should plan to migrate to the Azure Key Vault Secret Store Extension before the retirement date. The",
+   "published": "2026-10-09T20:27:17+00:00"
+  },
+  {
+   "id": "0685b5ac10cf",
+   "title": "[Launched] Generally Available: Managed StandardV2 NAT Gateway for AKS",
+   "link": "https://azure.microsoft.com/updates?id=574430",
+   "summary": "AKS will now provision and manage a StandardV2 NAT Gateway for clusters using an AKS-managed virtual network.StandardV2 is now the default managed NAT Gateway SKU for new clusters in supported regions when using the managedNATGateway outbound type. Standa",
+   "published": "2026-10-08T22:51:01+00:00"
+  },
+  {
+   "id": "21b101183021",
+   "title": "[Launched] Generally Available: Azure Database for PostgreSQL flexible server in East US 3",
+   "link": "https://azure.microsoft.com/updates?id=573691",
+   "summary": "Now you can deploy Azure Database for PostgreSQL flexible server in the East US 3 Azure region. Learn more.",
+   "published": "2026-10-08T19:56:31+00:00"
+  },
+  {
+   "id": "aa94c396a355",
+   "title": "Retirement: Microsoft Dev Box will be retired on September 18, 2028",
+   "link": "https://azure.microsoft.com/updates?id=567933",
+   "summary": "Microsoft Dev Box will retire on September 18, 2028. Beginning on September 14, 2026, Microsoft Dev Box will begin the closing-down process. After retirement, Microsoft Dev Box will no longer be available. Microsoft Dev Box is currently in maintenance mod",
+   "published": "2026-10-08T18:23:25+00:00"
+  }
+ ]
+}
