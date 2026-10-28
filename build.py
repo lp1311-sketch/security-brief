@@ -987,7 +987,7 @@ def _layout(cfg: dict, title: str, desc: str, body: str, base: str, image: str |
 <nav class="nav" aria-label="Categories">{nav}</nav>
 <button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false">Dark mode</button>
 </div></header>
-<div class="banner" role="region" aria-label="Site highlights"><div class="wrap banner-in"><span class="banner-tag"><i class="led g" aria-hidden="true"></i>Live feed</span><p class="banner-text" id="banner-text" aria-live="off">Feeds are checked every 20 minutes.</p><a class="banner-action" href="{base}today/index.html"><i class="led r" aria-hidden="true"></i>Action today</a><button type="button" class="banner-pause" id="banner-pause" aria-pressed="false" aria-label="Pause banner">Pause</button></div></div>
+<div class="banner" role="region" aria-label="Site highlights"><div class="wrap banner-in"><span class="banner-tag"><i class="led g" aria-hidden="true"></i>Live feed</span><p class="banner-text" id="banner-text" aria-live="off">Feeds are checked every 15 minutes.</p><a class="banner-action" href="{base}today/index.html"><i class="led r" aria-hidden="true"></i>Action today</a><button type="button" class="banner-pause" id="banner-pause" aria-pressed="false" aria-label="Pause banner">Pause</button></div></div>
 <main id="main" class="wrap">
 {body}
 </main>
@@ -1693,7 +1693,7 @@ def index_page(stories: list[dict], cfg: dict, now: datetime, status: dict,
     parts = [
         '<section class="intro"><h1>Security news, ranked</h1>'
         f'<p class="meta">Last content update: {esc(now.strftime("%d %b %Y, %H:%M UTC"))} &middot; '
-        "Checked automatically every 20 minutes. Every story links to its original source.</p>"
+        "Checked automatically every 15 minutes. Every story links to its original source.</p>"
         '<p><a class="btn" href="today/index.html">Today: what to do &rarr;</a></p></section>',
         '<div class="stats" aria-label="Summary">'
         f'<div class="stat"><b>{len(stories)}</b><span>stories in the current window</span></div>'
@@ -1945,7 +1945,7 @@ a.live:hover{color:var(--ink);border-color:var(--crit)}
 @media (prefers-reduced-motion:reduce){body::before,.orb,.fly,.led,.card::after{animation:none!important;transition:none!important}.fly,.card::after{display:none}}
 """
 BANNER_JS = """(function(){
-var msgs=["Feeds are checked every 20 minutes.","Every story links to its original source.","Patch Tuesday notes and weekly analysis are written by hand, not by AI.","Read the Today page for what needs action now.","Corrections are published openly."];
+var msgs=["Feeds are checked every 15 minutes.","Every story links to its original source.","Patch Tuesday notes and weekly analysis are written by hand, not by AI.","Read the Today page for what needs action now.","Corrections are published openly."];
 var el=document.getElementById('banner-text'),btn=document.getElementById('banner-pause');
 if(!el||!btn)return;
 var i=0,paused=false,reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -2319,7 +2319,6 @@ def build_tasks(radar: dict) -> list[dict]:
 
 
 def _ops_board(radar: dict, now: datetime) -> str:
-    tasks = build_tasks(radar)
     msrc_items = (radar.get("msrc") or {}).get("items", [])
     azu_items = (radar.get("azupd") or {}).get("items", [])
     az_items = (radar.get("azure") or {}).get("items", [])
@@ -2333,19 +2332,6 @@ def _ops_board(radar: dict, now: datetime) -> str:
         f'<div class="rv-stat c-red"><b>{n_expl}</b><span>Exploited</span></div>'
         f'<div class="rv-stat c-cyan"><b>{n_open}</b><span>Open Azure posts</span></div>'
         f'<div class="rv-stat c-violet"><b>{n_retire}</b><span>Retirements</span></div></div>')
-    kind_label = {"crit": "k-crit", "action": "k-action", "azure": "k-azure", "retire": "k-retire", "admin": "k-admin"}
-    task_html = "".join(
-        f'<li class="ops-task"><label><input type="checkbox" data-task-id="{t["id"]}">'
-        f'<span class="ops-kind {kind_label[t["kind"]]}">{esc(t["label"])}</span>'
-        + (f'<a href="{esc(t["link"])}" target="_blank" rel="noopener noreferrer">{esc(t["title"])}</a>' if t["link"].startswith("http")
-           else f'<span>{esc(t["title"])}</span>')
-        + '</label></li>' for t in tasks)
-    todo = (
-        '<div class="ops-card ops-todo"><div class="ops-cardhead"><h3>Do this week</h3>'
-        f'<span class="rv-tag" id="ops-progress">0 of {len(tasks)} done</span></div>'
-        + (f'<ul class="ops-tasks">{task_html}</ul>' if tasks else
-           '<p class="rv-sub">Nothing to do. No critical CVEs, open Azure posts, retirements or admin changes in the current feeds.</p>')
-        + '<p class="rv-legend">Built only from explicit wording and feed tags. Tick items off on this device; the list is not shared.</p></div>')
 
     crit_rows = "".join(
         f'<li class="ops-row"><div class="rv-tags">'
@@ -2381,7 +2367,7 @@ def _ops_board(radar: dict, now: datetime) -> str:
     return ('<section class="rv-section ops" aria-labelledby="ops-title"><h2 id="ops-title">Command board '
             '<span class="rv-tag s-launched">Actionable</span></h2>'
             '<p class="rv-sub">What to look at first, built from official feeds and your tenant data (when connected).</p>'
-            + stats + '<div class="ops-grid">' + todo + crit + upd + '</div></section>')
+            + stats + '<div class="ops-grid">' + crit + upd + '</div></section>')
 
 
 OPS_CSS = """
@@ -2413,7 +2399,83 @@ OPS_CSS = """
 .az-status-note a{color:var(--rv-cyan)}
 """
 
-RADAR_CSS += OPS_CSS
+
+# ---------------------------------------------------------------- Microsoft 365 status (public mirror, not tenant data)
+M365_STATUS_URL = "https://www.365fanatic.com/feed/status-incidents/"
+M365_STATUS_PAGE = "https://www.365fanatic.com/m365-status/"
+M365_STATUS_SRC = {"id": "m365-status-mirror", "name": "365Fanatic M365 status (public mirror)", "official": False, "type": "advisory"}
+M365_MATRIX = [("Exchange Online", r"exchange"), ("Teams", r"\bteams\b"), ("SharePoint", r"sharepoint"),
+               ("OneDrive", r"onedrive"), ("Entra ID", r"entra|azure ad|sign-?in|authentication"),
+               ("Intune", r"intune"), ("Defender", r"defender"), ("Purview", r"purview"),
+               ("Viva Engage", r"viva engage|yammer"), ("Power Platform", r"power (?:platform|automate|apps|bi)"),
+               ("Copilot", r"copilot"), ("Outlook", r"outlook")]
+M365_ID_RE = re.compile(r"\b(MV\d{4,8}|MC\d{4,8})\b", re.I)
+
+
+def _m365_items(ms: dict) -> list[dict]:
+    rows = []
+    for it in ms.get("items", []):
+        text = f"{it['title']} {it['summary']}"
+        services = [name for name, rx in M365_MATRIX if re.search(rx, text, re.I)]
+        ids = sorted({m.upper() for m in M365_ID_RE.findall(text)})[:2]
+        rows.append({**it, "state": az_state(text), "services": services, "ids": ids})
+    return rows
+
+
+def _m365_panel(ms: dict | None, now: datetime) -> str:
+    ms = ms or {"ok": False, "items": []}
+    rows = _m365_items(ms)
+    live = "Mirror reachable" if ms.get("ok") else "Mirror offline · saved entries"
+    open_state = {}
+    for r in rows:
+        if r["state"] == "Resolved":
+            continue
+        for svc in r["services"]:
+            open_state[svc] = "Investigating" if (r["state"] == "Investigating" or open_state.get(svc) == "Investigating") else "Open"
+    cells = "".join(
+        f'<div class="sm-cell sm-{"red" if open_state.get(name) == "Investigating" else ("amber" if open_state.get(name) else "clear")}">'
+        f'<b>{esc(name)}</b><span>{esc(open_state.get(name, "No open item in feed"))}</span></div>'
+        for name, _ in M365_MATRIX)
+    items = "".join(
+        f'<li class="rv-item svc"><div class="rv-tags">'
+        f'<span class="rv-tag {AZ_STATE_CLASS.get(r["state"], "")}">{esc(r["state"])}</span>'
+        + "".join(f'<span class="rv-tag product">{esc(s)}</span>' for s in r["services"][:3])
+        + "".join(f'<span class="rv-tag">{esc(i)}</span>' for i in r["ids"])
+        + _new_badge(r["published"], now) + '</div>'
+        f'<h3><a href="{esc(r["link"])}" target="_blank" rel="noopener noreferrer">{esc(r["title"])}</a></h3>'
+        f'<div class="rv-foot"><span>{esc(fmt_day(r["published"]) or "date not provided")}</span>'
+        f'<a class="rv-btn rv-btn-ghost rv-btn-sm" href="{esc(r["link"])}" target="_blank" rel="noopener noreferrer">Open entry &nearr;</a></div></li>'
+        for r in rows[:8])
+    empty = ('<div class="empty">No entries in the mirror right now.</div>' if ms.get("ok") else
+             '<div class="empty">The mirror could not be reached and no saved entries exist yet.</div>')
+    return (
+        '<div class="m365-head"><span class="rh-led" aria-hidden="true"></span>'
+        f'<span class="rv-tag s-preview">{esc(live)}</span><span class="rv-tag">Third-party mirror</span>'
+        f'<a class="rv-btn rv-btn-ghost rv-btn-sm" href="{M365_STATUS_PAGE}" target="_blank" rel="noopener noreferrer">Source page &nearr;</a></div>'
+        f'<div class="sm-grid" role="list" aria-label="Service matrix from public feed">{cells}</div>'
+        '<p class="rv-legend">Matrix colours show only what the public feed says. "No open item in feed" does not mean the service is healthy. '
+        'Services are matched by keywords in each entry.</p>'
+        + (f'<ul class="rv-list">{items}</ul>' if rows else empty)
+        + '<p class="rv-legend">Source: 365Fanatic, an independent site that mirrors Microsoft\'s public Microsoft 365 status page. '
+          'It is not an official Microsoft feed and does not show your tenant.</p>')
+
+
+M365_CSS = """
+.m365-head{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-bottom:14px}
+.sm-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:14px}
+.sm-cell{position:relative;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:var(--surface-2);display:grid;gap:4px;transition:transform .2s ease,border-color .2s ease}
+.sm-cell:hover{transform:translateY(-2px)}
+.sm-cell b{font-size:.9rem;color:var(--ink)}
+.sm-cell span{font-size:.74rem;color:var(--muted);line-height:1.35}
+.sm-cell::after{content:"";position:absolute;top:12px;right:12px;width:8px;height:8px;border-radius:50%;background:var(--muted)}
+.sm-clear::after{background:var(--rv-green);box-shadow:0 0 8px var(--rv-green)}
+.sm-amber{border-color:rgba(251,191,36,.6)}.sm-amber::after{background:var(--rv-amber);box-shadow:0 0 8px var(--rv-amber)}
+.sm-red{border-color:var(--rv-red);box-shadow:0 0 18px -8px var(--rv-red)}.sm-red::after{background:var(--rv-red);box-shadow:0 0 10px var(--rv-red)}
+.sm-red span{color:var(--ink)}
+@media (prefers-reduced-motion:reduce){.sm-cell{transition:none}}
+"""
+
+RADAR_CSS += OPS_CSS + M365_CSS
 
 RADAR_JS = """(function(){
 var state={product:'all',stage:'all',audience:'all',q:''};
@@ -2604,7 +2666,8 @@ def radar_page(radar: dict, cfg: dict, site_cfg: dict) -> str:
         '<span class="rv-tag s-preview">Azure · public</span></h2>'
         '<p class="rv-sub">Live posts from the public Azure status feed, no sign-in needed. Each state tag is read from the post wording. '
         'This shows Azure only, not Microsoft 365 tenant health.</p>'
-        + _az_panel(az) + tenant + '</section>')
+        + _az_panel(az) + '<h3 style="margin-top:22px">Microsoft 365 public status (mirror)</h3>'
+        + _m365_panel(radar.get("m365"), datetime.now(timezone.utc)) + tenant + '</section>')
     if services is not None:
         svc_items = "".join(_svc_item_html(m) for m in services)
         svc_block = svc_block.replace('</section>', '<h3 style="margin-top:22px">Tenant service messages</h3>'
@@ -2629,7 +2692,7 @@ def radar_page(radar: dict, cfg: dict, site_cfg: dict) -> str:
         + '<p class="rv-legend">Stage colour: green = rolling out, violet = in development, cyan = preview, mint = launched. '
           'Amber marks entries whose wording mentions admins. Tags are inferred, not official Microsoft classifications.</p>')
 
-    body = hero + _ops_board(radar, datetime.now(timezone.utc)) + notice + svc_block + '<section class="rv-section" aria-labelledby="road-title"><h2 id="road-title">Roadmap entries</h2>' + controls + listing + '</section>' + "<script>" + RADAR_JS + OPS_JS + "</script>"
+    body = hero + _ops_board(radar, datetime.now(timezone.utc)) + notice + svc_block + '<section class="rv-section" aria-labelledby="road-title"><h2 id="road-title">Roadmap entries</h2>' + controls + listing + '</section>' + "<script>" + RADAR_JS + "</script>"
     return _layout(cfg, "Microsoft 365 Change Radar",
                    "Public Microsoft 365 roadmap entries, kept separate from security news and tenant-specific Message Center data.",
                    body, base)
@@ -2822,6 +2885,7 @@ def run(cfg: dict, out: Path, data_file: Path, fixtures: Path | None, now: datet
     radar = load_radar(fixtures, data_file)
     radar["services"] = load_services(data_file)
     radar["azure"] = load_azure_status(fixtures, data_file)
+    radar["m365"] = load_feed_source(fixtures, data_file, "m365-status.xml", M365_STATUS_URL, "m365-status.json", M365_STATUS_SRC)
     radar["msrc"] = load_feed_source(fixtures, data_file, "msrc.xml", MSRC_URL, "msrc.json", MSRC_SRC)
     radar["azupd"] = load_feed_source(fixtures, data_file, "azure-updates.xml", AZ_UPDATES_URL, "azure-updates.json", AZU_SRC)
     publisher = site_cfg.get("publisher") or {}

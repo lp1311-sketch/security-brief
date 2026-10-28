@@ -1,10 +1,9 @@
 name: autoblog
 
-# Checks feeds every 20 minutes (UTC minutes 07, 27, 47). The small status.json
-# is committed each run so the published site can show a fresh check timestamp.
+# Runs every 15 minutes (UTC minutes 03, 18, 33, 48). GitHub may delay scheduled runs under load.
 on:
   schedule:
-    - cron: "7,27,47 * * * *"
+    - cron: "3,18,33,48 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -23,14 +22,16 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Run offline regression tests
-        run: python3 -m unittest -v test_autoblog.py
+      # One test file in the repository root: test_autoblog.py
+      - name: Tests (offline)
+        run: |
+          if [ -f test_autoblog.py ]; then python3 -m unittest test_autoblog -q; else echo "No test file, skipping"; fi
       - name: Fetch feeds and build site
         run: python3 build.py
-      - name: Commit refreshed status and changed content
+      - name: Commit updated site and data
         run: |
           git config user.name "autoblog-bot"
           git config user.email "actions@users.noreply.github.com"
           git add docs data
-          git diff --cached --quiet || git commit -m "chore: feed check $(date -u +%FT%TZ)"
+          git diff --cached --quiet || git commit -m "chore: autoblog update $(date -u +%FT%TZ)"
           git push
