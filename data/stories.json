@@ -1357,24 +1357,6 @@
    "instructions_checked": true
   },
   {
-   "id": "c7a020f274e0",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "China-Aligned Bronze Sandcastle Abuses Sandboxie DLL Sideloading to Deploy Backdoors",
-   "link": "https://thehackernews.com/2026/10/china-aligned-bronze-sandcastle-abuses.html",
-   "published": "2026-10-21T12:05:00+00:00",
-   "summary": "Cybersecurity researchers have disclosed details of a previously undocumented China-aligned threat cluster known as Bronze Sandcastle that has been observed targeting organizations in Asia and Africa since mid-2025. \"The most distinctive technical marker for Bronze Sandcastle is its consistent use of Sandboxie DLL…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgq2iUs3zJHHrrskI-icX8x-nBeJxjr_O9uRE2lvcLQkaOhVUHFjTQYLItaZPVskt39VgI2ZYoMDuIhqkAAqEl1bYHLv5ctEfQvPe9UmLyzVEo46YS4xOEz7HcoYKSiNtT_g2bqfKLPFis98BVTTjSR9gafpKRceKKcj0rUf3pb89zBXVt_PequHoA-ta3t/s1600/sandboxie.png",
-   "cves": [],
-   "first_seen": "2026-10-21T13:13:04.358300+00:00",
-   "instructions": [
-    "\"Organizations should instead focus on behavioral indicators such as DLLs reading local files followed by immediate in-memory execution, which may indicate decoding and staging activity.\""
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "9b69347cfd29",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1570,25 +1552,6 @@
    "first_seen": "2026-10-28T08:52:03.360416+00:00",
    "instructions": [
     "\"The speed of acquiring a new ASN is a crucial part of the problem, and we believe the process for registering an ASN should be tougher.\""
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "b81260804ad3",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Generative AI Is Erasing Behavioral Tells, Weakening Behavior-Only Detection, Proofpoint Reports",
-   "link": "https://thehackernews.com/2026/10/generative-ai-is-erasing-behavioral.html",
-   "published": "2026-10-21T11:53:34+00:00",
-   "summary": "Generative AI has changed what a malicious email looks like. Messages that once gave themselves away through clumsy wording, generic pretexts, and reused templates now arrive fluent, personalized, and unique to each recipient, and the behavioral signals email filters have relied on for years are fading as a result…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiH7zuBEyUN7xB2yVXHoNSB6jWMLhxTtu9LqItz3TNMkY5P59w2MW5dRYcLBp1hakchf5442zpMwNG3nzombXfaoo7O5IzgNw61nsbKWAjaKGP8D9ITLy11wkHBUUAwksYEqTiH27t7FTgpa5fpJQ42t6lVqO8qcbI57oWnxc7o8SWLupLpIiiZW6eBqj4/s1600/proofpoint.jpg",
-   "cves": [],
-   "first_seen": "2026-10-21T13:13:04.358300+00:00",
-   "instructions": [
-    "But the intent must match the attacker’s path to success, whether that’s the user clicking a link, entering credentials or joining a meeting.",
-    "Four higher-consequence actions, including a credential reset and 14 days of outbound inspection, were held for human approval."
    ],
    "instructions_checked": true
   },
@@ -2555,6 +2518,25 @@
    "first_seen": "2026-10-26T16:46:28.332887+00:00",
    "image_checked": true,
    "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "12185b0bd2c8",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "FBI seizes ‘bulletproof’ hosting site accused of facilitating child abuse, money laundering",
+   "link": "https://therecord.media/fbi-seizure-csam-virtualine",
+   "published": "2026-10-28T12:00:00+00:00",
+   "summary": "The FBI seized the domain of a “bulletproof” hosting provider accused of facilitating a range of cybercrimes, including money laundering and the distribution of child sexual abuse material.",
+   "image": "https://cms.therecord.media/uploads/Virtualine_splash_page_810cc20a2e.jpg",
+   "cves": [],
+   "first_seen": "2026-10-28T12:09:10.082543+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Although the provider claimed to prohibit customers involved in terrorism or child abuse material, prosecutors allege it did not enforce those restrictions."
+   ],
    "instructions_checked": true
   },
   {
@@ -4136,7 +4118,7 @@
    "title": "External Teams Chats Anchor 15-Minute Malware Delivery",
    "link": "https://www.darkreading.com/cloud-security/email-bombing-external-teams-chats-repeatable-access-path",
    "published": "2026-10-27T20:42:40+00:00",
-   "summary": "Main bombing sis getting a new look with a wide-scale, ongoing social engineering campaign that might be tied to the Black Basta ransomware gang.",
+   "summary": "Mail bombing is getting a new look with a wide-scale, ongoing social engineering campaign that might be tied to the Black Basta ransomware gang.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt634b295db59f5c55/6ae0fd3853ec236cfd97d242/Email_flood-juststock-GettyImages-2156140935.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-10-27T21:16:50.047660+00:00",
@@ -4858,6 +4840,25 @@
     "Jon Steinbach has been appointed strategic technical advisor to the Pentagon’s CIO.",
     "Preparing for disruption must become part of day-to-day operations.",
     "Browsers Block eMudhra Intermediate CAs Over Recoverable Private Keys"
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "0d8d39d2f11b",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "China-Linked Hackers Exploit PHP2Shell to Root Firewalls",
+   "link": "https://www.securityweek.com/china-linked-hackers-exploit-php2shell-to-root-firewalls/",
+   "published": "2026-10-28T12:00:59+00:00",
+   "summary": "The attackers chained PHP2Shell and Fragnesia exploits and hacked two servers of a US government-affiliated organization. The post China-Linked Hackers Exploit PHP2Shell to Root Firewalls appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2023/01/Cybersecurity_News-SecurityWeek.jpg",
+   "cves": [],
+   "first_seen": "2026-10-28T12:09:10.082543+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
   },
