@@ -2100,27 +2100,6 @@
    "instructions_checked": true
   },
   {
-   "id": "ec0fd993c8b5",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "PHP2Shell: What Actually Protects You Before the 14:00 UTC PHP RCE Patch, and What Doesn't",
-   "link": "https://thehackernews.com/2026/10/php2shell-what-actually-protects-you.html",
-   "published": "2026-10-21T10:36:53+00:00",
-   "summary": "You cannot fully block the two critical PHP flaws called PHP2Shell before today's fix, and the one setting being passed around as a workaround is not enough on its own, the security firm that suggested it now says. PHP will release the fix at 14:00 UTC on October 21 for two flaws it rates 9.2 out of 10, and has given…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipzsA5sBIvBsTGT1YIrSeK_4YH5ISqTd40ZG1tV8YN1VkjjZuiY6CfQojYR-TIoYKM0EgZM4fYrmdtD25XjeTtgBkTFCQGny4DLL0fTKT5SEFpOFBcxNjLgif_FrX-1d-IX9DE58tQX6ELzGk4cWNpUpU5Eaig8pqdLL2h6qqVCC95ZmHFN6m7tD6m7BY/s1600/php-rce-patch.jpg",
-   "cves": [],
-   "first_seen": "2026-10-21T11:35:30.299586+00:00",
-   "instructions": [
-    "One vendor, Upwind, still lists the setting as an immediate mitigation , passing along another researcher's analysis rather than its own tests. watchTowr, which reproduced one of the flaws, says there is \"no confirmed patch or workaround at this time.\"",
-    "The fixed versions and the advisory will appear on php.net and through PHP's GitHub security advisories , where the project assigns its own identifiers.",
-    "You cannot fully block the two critical PHP flaws called PHP2Shell before today's fix, and the one setting being passed around as a workaround is not enough on its own, the security firm that suggested it now says.",
-    "PHP will release the fix at 14:00 UTC on October 21 for two flaws it rates 9.2 out of 10, and has given no workaround of its own."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "76b18c2dc5a9",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2301,24 +2280,6 @@
    "cves": [],
    "first_seen": "2026-10-22T14:02:27.695450+00:00",
    "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "f31f85df952c",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "The Harness Is the Hard Part of Agentic Pentesting",
-   "link": "https://thehackernews.com/2026/10/the-harness-is-hard-part-of-agentic.html",
-   "published": "2026-10-21T10:32:40+00:00",
-   "summary": "An AppSec team can point an AI agent running on a general-purpose model at its own web apps with little setup. Sure, the model writes the attacks. But everything that makes those attacks safe to run against production and worth acting on afterward lives in the harness around the model. The harness is where the…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTdLja8gnPl92G1mhffmAZ3Dy5Q8gX9wpjY22n1J2xerzpx0Eab4VMj2fzt3XAe_TjT8hlDkjdzW8DdBwWCvAPa9o5SKnFN4MSo5H0MnXylWX36NwFiwcI19f3MR0QDPT2uKXtXH4RAj5_rU3aBnmAVxsczeL2sfBj7G1r878XbJ6rAyEFgIg0XeuBNKk/s1600/pentera-main.jpg",
-   "cves": [],
-   "first_seen": "2026-10-21T11:35:30.299586+00:00",
-   "instructions": [
-    "Every model upgrade can change how the agent behaves, and every release changes the app whose security it tests."
-   ],
    "instructions_checked": true
   },
   {
@@ -5385,6 +5346,28 @@
    "instructions": [
     "Preparing for disruption must become part of day-to-day operations.",
     "Browsers Block eMudhra Intermediate CAs Over Recoverable Private Keys"
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "085573e20d77",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Nobody Trusts the Security Questionnaire. We Rely on It Anyway.",
+   "link": "https://www.securityweek.com/nobody-trusts-the-security-questionnaire-we-rely-on-it-anyway/",
+   "published": "2026-10-28T10:30:00+00:00",
+   "summary": "The process that gates nearly every B2B deal is a self-assessment the sender distrusts and the receiver accepts. There is finally a better basis for trust between companies. The post Nobody Trusts the Security Questionnaire. We Rely on It Anyway. appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/10/AI_Trust-Governance.jpg",
+   "cves": [],
+   "first_seen": "2026-10-28T10:45:56.141079+00:00",
+   "image_checked": true,
+   "instructions": [
+    "If this model were working, third-party breaches should be getting rarer.",
+    "What trust between two companies should rest on The questionnaire made sense when there was no other way to size up a vendor you couldn’t see inside.",
+    "Preparing for disruption must become part of day-to-day operations.",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
   },
