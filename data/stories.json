@@ -1140,6 +1140,25 @@
    "instructions_checked": true
   },
   {
+   "id": "d75560f4cad5",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Anthropic's Unreleased AI Model Chains Flaws Into Working Chrome, Safari, Windows and Linux Exploits",
+   "link": "https://thehackernews.com/2026/10/anthropics-unreleased-ai-model-chains.html",
+   "published": "2026-10-28T08:15:07+00:00",
+   "summary": "An unreleased Anthropic AI model found security flaws in Chrome, Safari, Android, Windows, and Linux and chained them into working proof-of-concept exploits, the company said in its latest report. The exploits were built in the lab after the model was prompted, not seen in any real attack, and Anthropic reported every…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSMl2C6S6mb-smamI35fLYotcPaercI_2PIgtuF78Q7PtQcFvFUKXkModTW4nRCh6FC7Xht2BltSGImRS2QNR4Lnc22S7UBU9V_0UDcZi2iDNXSlCJDqD4ApmJPqA_boFokj_9dTWKdzhjIgNt_Y47zumx_c5vrcJn5Vd-Xaowafv4HGCzCcqgDV4GGpo/s1600/hacker-chain.jpg",
+   "cves": [],
+   "first_seen": "2026-10-28T08:52:03.360416+00:00",
+   "instructions": [
+    "A race condition in a feature called CacheStorage then let that code read memory it should not reach and learn the layout of the more privileged browser process.",
+    "It chains flaws to obtain full read and write access to the browser's memory, then changes a single value to turn off the same-origin policy, the rule that prevents one website from reading another's data."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "0afa3606f14e",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1533,6 +1552,24 @@
    "first_seen": "2026-10-23T18:38:02.664864+00:00",
    "instructions": [
     "Should the models refuse to act on the prompts, the operator has been found to rewrite requests as an authorized red team assessment instead of simply switching models."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "6fcf621f852d",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "FBI Seizes Virtualine Domain Over Alleged Criminal Hosting and Bitcoin Money Laundering",
+   "link": "https://thehackernews.com/2026/10/fbi-seizes-virtualine-domain-over.html",
+   "published": "2026-10-28T07:37:50+00:00",
+   "summary": "The U.S. Department of Justice (DoJ) on Tuesday announced the seizure of a domain associated with a bulletproof hosting provider (BPH) named Virtualine. The move was in response to the service being used to commit and facilitate prolific criminal activity, including \"the advertisement of sexually explicit images of…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAdfKblTUCEDUoHzYpHPcEPzHO6qKTr01uG2-x7YyIT5t_-xeFc27zuZ3yOK76rkhz-J8y_Z4MqmydEQUtiCEvry_2H43qaSJXDrWRbM1gs8wDVTBgi_NzxIXsGBMoX8zlzISFlvcJ8NdNSyeMIZh8z-aHkXCyBDPJ2l195Ji1XgnVu_A0Yhh3H2QvEyiA/s1600/servers.jpg",
+   "cves": [],
+   "first_seen": "2026-10-28T08:52:03.360416+00:00",
+   "instructions": [
+    "\"The speed of acquiring a new ASN is a crucial part of the problem, and we believe the process for registering an ASN should be tougher.\""
    ],
    "instructions_checked": true
   },
@@ -2464,26 +2501,6 @@
     "Instead, it recommends turning off a feature called session upload progress until a fix is available in the next routine release.",
     "The warning came in a short informational advisory published on October 23.",
     "PHP recommends setting session.upload_progress.enabled=0 until the next routine bugfix release."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "0c6fe061465a",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "U.S. Orders DeepSeek Removed From Federal Civilian Systems, Bans New Purchases",
-   "link": "https://thehackernews.com/2026/10/us-orders-deepseek-removed-from-federal.html",
-   "published": "2026-10-21T08:04:17+00:00",
-   "summary": "U.S. federal civilian agencies must remove DeepSeek products from their information technology systems, along with any third-party products or services \"developed using DeepSeek implementations,\" under a Department of Homeland Security order. They may also no longer buy information technology products or services from…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjAZGBcWVyeZELPmEq7fujTJPeDgQoEZQpt7sD2rB1EO9fXByN2kmezefmvfihwR7fDE-77o-JVKB8bASzvKamkZB9kx9SstR2PA529wjrAWiSr1IBHEfrShRbiOd3PG2OP3iqygUb_ZeXYBSzrTN86MY5pjngL6WsqwoqJYYzUXSSVCJNKihe8F7FKsA/s1600/deepseek-dhs.jpg",
-   "cves": [],
-   "first_seen": "2026-10-21T10:16:37.379533+00:00",
-   "instructions": [
-    "U.S. federal civilian agencies must remove DeepSeek products from their information technology systems, along with any third-party products or services \"developed using DeepSeek implementations,\" under a Department of Homeland Security order.",
-    "An agency can ask the official who issued an order for an exception, and under the council's regulations the request must be in writing and give a compelling justification.",
-    "Send further information on mitigation within 10 business days of that report"
    ],
    "instructions_checked": true
   },
@@ -3486,26 +3503,6 @@
    "image_checked": true,
    "instructions": [
     "PHP shares mitigation for new RCE vulnerability with no patch"
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "190252fca79a",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "CISA: SafePay ransomware hit over 600 critical infrastructure orgs",
-   "link": "https://www.bleepingcomputer.com/news/security/cisa-and-fbi-safepay-ransomware-has-hit-over-600-critical-infrastructure-organizations/",
-   "published": "2026-10-21T08:36:24+00:00",
-   "summary": "The Cybersecurity and Infrastructure Security Agency (CISA) says the SafePay ransomware gang has breached over 600 critical infrastructure organizations worldwide since 2024.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/08/11/Hacker.jpg",
-   "cves": [],
-   "first_seen": "2026-10-21T09:02:42.358989+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Security teams should also keep systems updated, focusing on flaws affecting VPNs, firewalls, and other edge devices added to CISA's catalog of actively exploited vulnerabilities because they're often targeted in SafePay attacks for initial access to victims' networks.",
-    "The advisory also includes indicators of compromise (IOCs) and tactics, techniques, and procedures (TTPs) to previous SafePay ransomware activity observed between November 2024 and August 2026 during FBI, USSS, and Landeskriminalamt Rheinland-Pfalz investigations."
    ],
    "instructions_checked": true
   },
@@ -4965,6 +4962,27 @@
    "instructions": [
     "Any defense, government or advocacy organization using a Chinese-origin coding model should test it under its own name, and fix it before it writes production code,” Hirundo says.",
     "Preparing for disruption must become part of day-to-day operations."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "21dec5f03b58",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "CISA Warns of Node2Shell Exploitation as Honeypots Log Attack Attempts",
+   "link": "https://www.securityweek.com/cisa-warns-of-node2shell-exploitation-as-honeypots-log-attack-attempts/",
+   "published": "2026-10-28T08:37:24+00:00",
+   "summary": "CISA added the Brotli flaw to its KEV catalog, and two honeypot operators logged attempts, including one that used a broken exploit. The post CISA Warns of Node2Shell Exploitation as Honeypots Log Attack Attempts appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/10/cyberattack-vulnerability-exploited.jpeg",
+   "cves": [],
+   "first_seen": "2026-10-28T08:52:03.360416+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Preparing for disruption must become part of day-to-day operations.",
+    "iOS, macOS 27.2 Patch 286 Bugs; Fix for Exploited Flaw Backported to iOS 18",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
   },
