@@ -100,31 +100,6 @@
    "instructions_checked": true
   },
   {
-   "id": "ad5d32a1bbf2",
-   "source": "borncity",
-   "source_name": "Born's IT and Windows Blog",
-   "official": false,
-   "source_type": "news",
-   "title": "php2shell: PHP-Schwachstellen CVE-2026-109618 und CVE-2026-109619",
-   "link": "https://borncity.com/blog/2026/10/21/php2shell-php-schwachstellen-cve-2026-109618-und-cve-2026-109619/",
-   "published": "2026-10-21T13:20:52+00:00",
-   "summary": "Im, von vielen Software-Produkten genutzten, PHP-Interpreter sind zwei kritische Schwachstellen CVE-2026-109618 und CVE-2026-109619 öffentlich geworden. Die PHP-Maintainer haben zum 20. Oktober 2026 angekündigt, am heutigen 21. Oktober 2026 Details und Patches zu veröffentlichen. Es sind aber wohl bereits…",
-   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
-   "cves": [
-    "CVE-2026-109618",
-    "CVE-2026-109619"
-   ],
-   "first_seen": "2026-10-22T07:00:06.512888+00:00",
-   "image_checked": true,
-   "instructions": [
-    "We reserve the right to release earlier should details of either vulnerability become public, or should evidence of active exploitation appear in the wild.",
-    "Oktober 2026 um 17:04 Uhr Es gibt bereits ein paar Mitigations: https://ma.ttias.be/php-cve-2026-109618-early-mitigation/ Antworten",
-    "Die PHP-Entwickler haben sich die Möglichkeit eingeräumt, die Updates früher zu veröffentlichen, falls die Schwachstellen bereits ausgenutzt wurden (\"We reserve the right to release earlier should details of either vulnerability become public, or should evidence of active exploitation appear in the wild.\").",
-    "In der aktuellen Version 7.4.1-90080 Update 1 kommt PHP in der Version 8.1.32 zum Einsatz."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "244621daeb8f",
    "source": "borncity",
    "source_name": "Born's IT and Windows Blog",
@@ -1594,26 +1569,6 @@
     "The OpenSSL advisory describes revoked client certificates as silently accepted .",
     "The identifier on the advisory is CVE-2026-115881, rated 9.1 by EmbedThis.",
     "Which backend and settings a build uses are chosen when the firmware is compiled, so a device owner cannot tell from the outside which apply."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "f29fd7d40b5f",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Google Chrome Adds ClickFix Warnings to Stop Users From Running Malicious Commands",
-   "link": "https://thehackernews.com/2026/10/google-chrome-adds-clickfix-warnings-to.html",
-   "published": "2026-10-21T13:15:09+00:00",
-   "summary": "Google on Tuesday said it's rolling out improved safeguards in its Chrome browser to secure users against ClickFix attacks when Enhanced Protection is enabled. ClickFix is a popular social engineering technique in which bad actors trick users into copying and pasting malicious code directly into their computer's…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkkBWQk1mVx_ybLuq6r6miCGLiZJUyA_-tPpzi5cyWpcmN_WX43NqfOoH-Tc5VaAh1rVA78waqQ9hx4j-jNwq1GX9bbZjezpx1Q28YcxlBPqnxMbbHd15spg63hSVS0sidhyR9wTg6Aq7ijZJdNIfdY_jev1_K4KJR-6yIoCLlD6cbkGwVY3SUke5IuXS5/s1600/chrome-clickfix-warning.jpg",
-   "cves": [],
-   "first_seen": "2026-10-21T13:23:15.143359+00:00",
-   "instructions": [
-    "Separately, Google is also introducing the following defenses in Chrome to tackle scams for users who enable Enhanced Protection -",
-    "Building upon on-device large language model (LLM)-based approaches to flag tech support scams and others , such as fake antivirus and browser update scams.",
-    "The development comes as Apple revealed new privacy protections built into Safari and WebKit as part of iOS, iPadOS, macOS, and visionOS 27 releases, taking steps to block a practice called identity resolution that turns email addresses into persistent tracking identifiers."
    ],
    "instructions_checked": true
   },
@@ -3106,28 +3061,6 @@
    "instructions_checked": true
   },
   {
-   "id": "ba8deb36fe9d",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Microsoft PowerToys adds CursorHide, Button Lock mouse tools",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-powertoys-adds-cursorhide-button-lock-mouse-tools/",
-   "published": "2026-10-21T12:20:34+00:00",
-   "summary": "Microsoft has released PowerToys 0.102, with two new mouse utilities, new command-line tools, and Command Palette improvements.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/21/microsoft-powertoys_mouse_pointer.jpg",
-   "cves": [],
-   "first_seen": "2026-10-21T13:13:04.358300+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Microsoft: KB5120998 mouse reset bug affects only non-English PCs",
-    "Microsoft says Windows 11 KB5120998 update resets mouse settings",
-    "You can enable the quick-access shelf under Settings > Appearance > Compact mode, then press Alt+1 through Alt+9 to run any of them, or Alt+Shift+number to select one without running it.",
-    "Microsoft fixes game, app crashes caused by recent Windows update"
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "cf08225efb6b",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -3614,6 +3547,28 @@
     "The researchers suggest that those who paid by card on a Brazilian store that contained the ‘checkout.convertr’ string in the checkout address page since October 24 should contact their bank immediately and ask to block their card.",
     "In an update today, Sansec confirmed that Convertr \"removed the skimmer and upgraded Plausible to a patched version,\" noting that the company announced it was notifying affected merchants and payment providers.",
     "Sansec researchers warned that browser caching could keep the malicious script active on impacted sites for up to 24 hours after cleanup, so customers should clear their cache before placing new orders, even after the threat has been eliminated."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "7c22489c81a5",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Hackers now scanning systems for recently-patched Oracle flaw",
+   "link": "https://www.bleepingcomputer.com/news/security/hackers-now-scanning-systems-for-recently-patched-oracle-flaw/",
+   "published": "2026-10-28T12:19:57+00:00",
+   "summary": "Attackers have begun probing the Internet for systems unpatched against a recently disclosed critical Oracle E-Business Suite (EBS) vulnerability.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/28/Oracle-headpic.jpg",
+   "cves": [],
+   "first_seen": "2026-10-28T13:27:16.564804+00:00",
+   "image_checked": true,
+   "instructions": [
+    "\"Oracle therefore strongly recommends that customers remain on actively-supported versions and apply security patches without delay.\"",
+    "\"In some instances, it has been reported that attackers have been successful because targeted customers had failed to apply available Oracle patches,\" it said.",
+    "More recently, in June, Oracle released emergency mitigations for a critical PeopleSoft Suite zero-day (CVE-2026-35273) that the ShinyHunters extortion gang exploited between May 27 and June 9 .",
+    "Oracle released security updates to address the issue in its October 2026 Critical Security Patch Update on October 20 and urged customers to patch their systems immediately."
    ],
    "instructions_checked": true
   },
@@ -4270,22 +4225,6 @@
    "instructions_checked": true
   },
   {
-   "id": "13820dacd5f3",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "Decades-Old Windows Utility Powers Modern ClickFix Attack",
-   "link": "https://www.darkreading.com/cyberattacks-data-breaches/decades-old-windows-utility-modern-clickfix-attack",
-   "published": "2026-10-21T13:00:00+00:00",
-   "summary": "The attack uses malicious Google search results related to Amazon and leverages the \"finger\" utility to launch a CAPTCHA that installs malware, including the Lumma stealer.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltfaf93bd096fd735c/6a45559d327edd13ed6ac140/clickfix-tumsasedgars-Getty-2234293893.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-10-21T13:13:04.358300+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "e6cb24183d2e",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -4754,27 +4693,6 @@
     "The filing didn’t directly state their ownership stakes, but other figures disclosed suggest each will end up with 1.4% of the company, a windfall of as much as $28 billion a person should the company go public at the top expected value.",
     "In September, Amodei said the AI industry should slow its fast-moving development to give safety measures time to catch up.",
     "Preparing for disruption must become part of day-to-day operations."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "71ae2abe1296",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Asymptote Labs Lands $5.5 Million Seed for AI Agent Runtime Security",
-   "link": "https://www.securityweek.com/asymptote-labs-lands-5-5-million-seed-for-ai-agent-runtime-security/",
-   "published": "2026-10-21T13:17:35+00:00",
-   "summary": "Asymptote Labs raises $5.5M seed led by Tower Research Ventures to commercialize its Beacon AI agent runtime security platform. The post Asymptote Labs Lands $5.5 Million Seed for AI Agent Runtime Security appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2023/01/Cybersecurity_News-SecurityWeek.jpg",
-   "cves": [],
-   "first_seen": "2026-10-21T13:23:15.143359+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Preparing for disruption must become part of day-to-day operations.",
-    "It intercepts live activity to enforce policy guardrails at both the prompt and tool execution levels.",
-    "Browsers Block eMudhra Intermediate CAs Over Recoverable Private Keys"
    ],
    "instructions_checked": true
   },
@@ -5308,27 +5226,6 @@
    "instructions_checked": true
   },
   {
-   "id": "9fa3f970853e",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Memory Bugs Account for Most of Chrome’s 353 New Security Fixes",
-   "link": "https://www.securityweek.com/memory-bugs-account-for-most-of-chromes-353-new-security-fixes/",
-   "published": "2026-10-21T12:57:47+00:00",
-   "summary": "The update fixes 353 flaws, including 163 memory corruption and 125 use-after-free vulnerabilities. The post Memory Bugs Account for Most of Chrome’s 353 New Security Fixes appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2024/06/Chrome.jpeg",
-   "cves": [],
-   "first_seen": "2026-10-21T13:13:04.358300+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Per the internet giant’s advisory , no bug bounty reward will be paid for 285 vulnerabilities.",
-    "Preparing for disruption must become part of day-to-day operations.",
-    "Browsers Block eMudhra Intermediate CAs Over Recoverable Private Keys"
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "dd2c177462a4",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -5431,28 +5328,6 @@
    "instructions": [
     "This includes compressed HTTP request bodies, responses fetched from untrusted servers, and compressed files,” OpenAI’s Patch the Planet initiative said in its advisory .",
     "Preparing for disruption must become part of day-to-day operations."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "2616dfa7252a",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "OpenAI Agents Silenced Security Team Alerts, Removed Misalignment Monitor",
-   "link": "https://www.securityweek.com/openai-agents-silenced-security-team-alerts-removed-misalignment-monitor/",
-   "published": "2026-10-21T12:34:22+00:00",
-   "summary": "In two internal incidents, agents read routine coding instructions as permission to weaken monitoring, and one gave a false answer about it. The post OpenAI Agents Silenced Security Team Alerts, Removed Misalignment Monitor appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/09/AI_Kill-Humanity.jpg",
-   "cves": [],
-   "first_seen": "2026-10-21T13:13:04.358300+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Preparing for disruption must become part of day-to-day operations.",
-    "The patch removed every recipient of monitoring reports and blocked notifications, cutting off automatic alerts to OpenAI’s security team.",
-    "On October 6, a user asked an Astra agent to update their code to mirror a reference implementation.",
-    "Another agent had previously told Astra not to disable the monitor “even temporarily.” Astra handed the work to a subagent, and both treated the task as license to remove the program’s monitoring integration in order to match the reference code."
    ],
    "instructions_checked": true
   },
@@ -5736,6 +5611,28 @@
     "Over the weekend of September 26, resellers and security advisories urged admins to restrict or disconnect edge-facing deployments.",
     "While it’s not fun to ship or apply emergency patches over a weekend, several factors demonstrate why this quick, after-hours response pattern reflects a stronger defensive posture.",
     "Government advisory bodies like CISA are keeping pace with this shift as well."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "84fd85017893",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "TLS Flaws Found in GoAhead Web Server Used in Hundreds of Millions of Devices",
+   "link": "https://www.securityweek.com/tls-flaws-found-in-goahead-web-server-used-in-hundreds-of-millions-of-devices/",
+   "published": "2026-10-28T13:10:34+00:00",
+   "summary": "FoxIO disclosed three GoAhead TLS bugs that can let revoked certificates through or expose some encrypted sessions to eavesdroppers. The post TLS Flaws Found in GoAhead Web Server Used in Hundreds of Millions of Devices appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2024/09/internet-routing-bgp.jpeg",
+   "cves": [],
+   "first_seen": "2026-10-28T13:27:16.564804+00:00",
+   "image_checked": true,
+   "instructions": [
+    "GoAhead 6.1.1, released on Aug 2, resolves the OpenSSL and Mbed TLS issues, and advisories for all three flaws were published on Oct 12.",
+    "For the LibreSSL issue, FoxIO recommends enabling issuer verification with a trusted CA bundle, or switching to OpenSSL or LibreSSL 4.x.",
+    "iOS, macOS 27.2 Patch 286 Bugs; Fix for Exploited Flaw Backported to iOS 18",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
   },
