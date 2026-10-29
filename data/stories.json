@@ -1,26 +1,6 @@
 {
  "items": [
   {
-   "id": "2f1ed42ebe24",
-   "source": "ars",
-   "source_name": "Ars Technica Security",
-   "official": false,
-   "source_type": "news",
-   "title": "333 Tor exit nodes hijacked to intercept SSH traffic and retrieve plaintext email",
-   "link": "https://arstechnica.com/information-technology/2026/10/300-tor-exit-nodes-hijacked-to-intercept-ssh-traffic-and-retrieve-plaintext-email/",
-   "published": "2026-10-22T11:30:33+00:00",
-   "summary": "Unknown hackers hijacked more than 300 Tor exit nodes and reconfigured them to favor unencrypted email traffic and redirect SSH connections through servers they controlled, a researcher reported Tuesday. The hijacking began in late August, when, according to Tor volunteers, the attacker used a valid password that had…",
-   "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-1237260150-1152x648.jpg",
-   "cves": [],
-   "first_seen": "2026-10-22T11:35:28.484063+00:00",
-   "instructions": [
-    "A second set of changes caused the exit nodes to block ports 25, 465, 587, 993 and 995—used to accept various forms of encrypted email—while continuing to allow ports for receiving unencrypted email.",
-    "The volunteer further set up a honeypot to observe the interception software attempting to log in and install Ebury.",
-    "Another is to disable password authentication in favor of SSH keys."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "71d9cb2bf3e5",
    "source": "ars",
    "source_name": "Ars Technica Security",
@@ -1637,6 +1617,29 @@
    "instructions_checked": true
   },
   {
+   "id": "9ac8296dadd7",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Attacker Tried to Exploit Alpine Linux’s GitLab via CVSS 10.0 Flaw Its Ruby Left Open",
+   "link": "https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html",
+   "published": "2026-10-29T09:05:39+00:00",
+   "summary": "An attacker tried to exploit a critical GitLab vulnerability on the Alpine Linux project's own GitLab server a week after GitLab released a fix, Alpine Linux said on 28 October. The flaw, CVE-2026-97229 (CVSS score: 10.0), can let an attacker run code on a GitLab server through a crafted regular expression in a CI…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh65eroK1pQacKJwqeGmgp2sDta1mgCrPuNMXiwAgTi-FVZNc1V4D7qooFFc-V-XNOJzYpjYk28Y_kIkoHMNJfnQ5h2gI0-bOWlVOt9VJ9oZUpRsBzYLsSMe3oNRTfZe53dtpezOOq1MHmWhEhAigbyOMLx4jWAbcvvImY39jY1h4FMS4_OUqSDF-kZJvQ/s1600/linux-gitlab.jpg",
+   "cves": [
+    "CVE-2026-97229"
+   ],
+   "first_seen": "2026-10-29T11:43:24.190225+00:00",
+   "instructions": [
+    "On 26 October, Alpine found that the server was still vulnerable after its 22 October upgrade to 19.3.6.",
+    "GitLab's advisory says that, \"under certain conditions,\" the flaw could have allowed an unauthenticated user to run code on the server.",
+    "That exploit needs write access first: the attacker must commit a malicious .gitlab-ci.yml file and a file path with UTF-8 characters to a branch of a public project.",
+    "That requirement does not apply on servers where new users can register themselves and create projects."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "f4eff089be53",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1839,6 +1842,29 @@
    "instructions_checked": true
   },
   {
+   "id": "083a1ea7d205",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Cisco Patches Actively Exploited ASA and FTD VPN Flaw That Can Crash Firewalls",
+   "link": "https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html",
+   "published": "2026-10-29T10:44:46+00:00",
+   "summary": "Cisco has released patches to address a high-severity security flaw in Secure Firewall Adaptive Security Appliance (ASA) Software and Secure Firewall Threat Defense (FTD) Software that it said has been exploited in the wild. The vulnerability, tracked as CVE-2026-76418, is rated 8.6 on the CVSS scoring system…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKqTkl_DfXdrvaLinBOu5OU0NISVo_mPJfqRmnHL-m8efFXEijbxOVsFgrSPparCspKfoUtxDtfA7gu8myFTfvWCFJfse3BQakKGOZCA54pWh371KyXdluHyqjckIBFjZ36Ogv1EI42yDCO2dt02noigEyL2RKJ8lEivH3PCWJURryc1JtNO9djpeW88tJ/s1600/cisco-flaws.jpg",
+   "cves": [
+    "CVE-2026-76418"
+   ],
+   "first_seen": "2026-10-29T11:43:24.190225+00:00",
+   "instructions": [
+    "As a temporary mitigation, the company is recommending that customers turn off the tunnel group list if DefaultWEBVPNGroup does not use secondary authentication, or disable secondary authentication on any user-configured tunnel group list or on the default tunnel group, DefaultWEBVPNGroup.",
+    "\"This vulnerability is due to logic errors when secondary authentication is configured on a tunnel group,\" it said in a Wednesday advisory.",
+    "\"If tunnel-group-list enable is configured, check all tunnel groups, including the default tunnel group, DefaultWEBVPNGroup, for secondary-authentication-server-group,\" Cisco said.",
+    "\"If tunnel-group-list enable is absent or has been removed using the no tunnel-group-list enable command, check the default tunnel group, DefaultWEBVPNGroup, for secondary-authentication-server-group because disabling the group list does not remove exposure when that default group uses secondary authentication.\""
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "eb93de238d98",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1994,6 +2020,27 @@
     "To make a stolen token less useful, Wiz also recommends these steps:",
     "Because the secrets leave through GitHub itself, there is no attacker server or outbound connection to block.",
     "Rotate every repository, organization, and environment secret the repository could use."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "cf3544e85171",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "GitHub Launches npm Firewall to Block Malicious Packages Before Installation",
+   "link": "https://thehackernews.com/2026/10/github-launches-npm-firewall-to-block.html",
+   "published": "2026-10-29T10:26:33+00:00",
+   "summary": "GitHub has announced that it's introducing a new package firewall as a preview to block installation of suspicious npm packages during installation time. \"The firewall inspects both metadata requests and package downloads for signs of malicious activity, acting as an install-time policy gate,\" GitHub said. The…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJ7hXo0MoiQiXCSLnOj0h2YUqDhIHl13Le4XxOU3UxV7X2mm4_YGJKOT6akyW58uRaMhslGN6NY9B_1u7V-y_fy0kYJHKoVA-yBWVt53xqBk06_syRpASgWezvnVIZs9goRlwNrp_HMVj_Pu8rzXmIsfJBV1YzhJ8IAd-1g7FFVhFWqc9HegTk4Jok5kR9/s1600/github.gif",
+   "cves": [],
+   "first_seen": "2026-10-29T11:43:24.190225+00:00",
+   "instructions": [
+    "Block known malware by checking against the GitHub Advisory Database for active malware advisories",
+    "The firewall then checks package downloads against policy controls such as minimum package age and malware advisories, and blocks downloads that do not meet those policies.",
+    "Block packages based on the severity of vulnerabilities by checking the GitHub Advisory Database for flaws that affect the requested package version.",
+    "GitHub has announced that it's introducing a new package firewall as a preview to block installation of suspicious npm packages during installation time."
    ],
    "instructions_checked": true
   },
@@ -2435,27 +2482,6 @@
     "\"Organizations in the prioritised sectors and geographies should assume they are in scope for deliberate targeting.\"",
     "\"Defenders should focus on the sequence: a POST request returns a 500 error, PHP reports memory exhaustion and heap corruption, and the Apache worker handling the request crashes.\"",
     "\"An application must set session.serialize_handler to php_binary or php_serialize in its configuration and then switch it to php at runtime with ini_set() before calling session_start(),\" the Foundation said."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "76b18c2dc5a9",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Railway Says Intruder May Have Accessed Customer Secrets, Urges Credential Rotation",
-   "link": "https://thehackernews.com/2026/10/railway-says-intruder-may-have-accessed.html",
-   "published": "2026-10-22T11:15:42+00:00",
-   "summary": "Platform-as-a-Service (PaaS) provider Railway on Wednesday disclosed \"anomalous activity\" related to systems that store customer environment variables. Upon further investigation, the company found that an unauthorized third party may have gained access to encrypted environment variables, and, in some cases, obtained…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLi5yuPoipCkAL6joBpDL5htNkHWi_rU5i5dAyspyjSrdDORYgV_LRNO4pVG_c1P0S7bnZFWHft8recxLiFRSiLsPxx3ZL-v8fzlYRuzxxG_P_ocKdJbGWzXFtoEjPszyKNUOS86HCylk0LPV1YZS7U9qZcfonBVeLEuRKioCXVbbzUySEvWGI0IaBJ8U/s1600/rail.jpg",
-   "cves": [],
-   "first_seen": "2026-10-22T11:35:28.484063+00:00",
-   "instructions": [
-    "It has also restored builds for Pro and Enterprise workspaces, allowing customers to apply new credentials added in Railway.",
-    "Put differently, the idea is to devise a malicious agent that can hijack a legitimate AI system and turn it into \"a devoted companion that must never refuse\" and an unwitting cybercrime tool.",
-    "The company also said it has notified upstream providers to proactively revoke the keys so as to prevent their abuse.",
-    "Rotate environment variables, including any API keys, stored in Railway, as well as private registry credentials."
    ],
    "instructions_checked": true
   },
@@ -3815,6 +3841,28 @@
    "instructions_checked": true
   },
   {
+   "id": "409f0b0486b7",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "New Cisco firewall zero-day exploited to crash SSL VPN devices",
+   "link": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-firewall-zero-day-exploited-to-crash-ssl-vpn-devices/",
+   "published": "2026-10-29T11:10:13+00:00",
+   "summary": "Cisco released security updates to patch a denial-of-service zero-day in Adaptive Security Appliance (ASA) and Threat Defense (FTD) software that attackers are exploiting to remotely crash vulnerable firewall devices.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/29/Cisco-headpic.jpg",
+   "cves": [],
+   "first_seen": "2026-10-29T11:43:24.190225+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Cisco strongly recommends that customers upgrade to a fixed software release to remediate this vulnerability.\"",
+    "Cisco advised customers to patch vulnerable firewalls after its Product Security Incident Response Team (PSIRT) discovered evidence that the flaw was being exploited in the wild earlier this month.",
+    "While Cisco provided no workarounds that address this security issue, admins who can't immediately patch CVE-2026-76418 can mitigate it by disabling secondary authentication on the default DefaultWEBVPNGroup tunnel group or on any user-configured tunnel group list.",
+    "Cisco released security updates to patch a denial-of-service zero-day in Adaptive Security Appliance (ASA) and Threat Defense (FTD) software that attackers are exploiting to remotely crash vulnerable firewall devices."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "5e34561ea984",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -3936,27 +3984,6 @@
    "image_checked": true,
    "instructions": [
     "PHP shares mitigation for new RCE vulnerability with no patch"
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "0f812922fb34",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "GitLab warns of new max severity code execution vulnerability",
-   "link": "https://www.bleepingcomputer.com/news/security/gitlab-warns-of-new-max-severity-code-execution-vulnerability/",
-   "published": "2026-10-22T11:41:48+00:00",
-   "summary": "GitLab has released security patches for a maximum-severity Regular Expression Compiler flaw that can let remote attackers run arbitrary code on vulnerable servers.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/22/GitLab-headpic.jpg",
-   "cves": [],
-   "first_seen": "2026-10-22T12:15:43.249038+00:00",
-   "image_checked": true,
-   "instructions": [
-    "\"We strongly recommend that all installations running a version affected by the issues described below are upgraded to the latest version as soon as possible. [..] GitLab.com is already running the patched version.",
-    "GitLab has fixed the vulnerability in GitLab Community Edition (CE) and Enterprise Edition (EE) versions 19.5.1, 19.4.3, 19.3.6, 19.2.9, 19.1.9, 19.0.10, and 18.11.13, and warned users to patch their instances immediately.",
-    "Mozilla, Google, Apple block compromised eMudhra CA certificates"
    ],
    "instructions_checked": true
   },
@@ -5383,6 +5410,26 @@
    "image_checked": true,
    "instructions": [
     "Preparing for disruption must become part of day-to-day operations.",
+    "iOS, macOS 27.2 Patch 286 Bugs; Fix for Exploited Flaw Backported to iOS 18",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "dac38c362139",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Hackers Steal 2.6 Million Records From Sony’s Japanese ISP So-net",
+   "link": "https://www.securityweek.com/hackers-steal-2-6-million-records-from-sonys-japanese-isp-so-net/",
+   "published": "2026-10-29T11:00:00+00:00",
+   "summary": "The data of So-net and Plala customers in Japan was exposed, along with 54,401 email account passwords and 16 bank account records. The post Hackers Steal 2.6 Million Records From Sony’s Japanese ISP So-net appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/10/Sony-So-net.jpeg",
+   "cves": [],
+   "first_seen": "2026-10-29T11:43:24.190225+00:00",
+   "image_checked": true,
+   "instructions": [
     "iOS, macOS 27.2 Patch 286 Bugs; Fix for Exploited Flaw Backported to iOS 18",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
