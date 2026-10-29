@@ -42,26 +42,6 @@
    "instructions_checked": true
   },
   {
-   "id": "c625905b3719",
-   "source": "ars",
-   "source_name": "Ars Technica Security",
-   "official": false,
-   "source_type": "news",
-   "title": "Hackers got a four-day head start on epic PHP2Shell vulnerability",
-   "link": "https://arstechnica.com/security/2026/10/hackers-got-a-four-day-head-start-on-epic-php2shell-vulnerability/",
-   "published": "2026-10-22T15:25:02+00:00",
-   "summary": "Amazon has warned that vulnerabilities in a programming language that underpins much of the Internet, discovered using AI tools, are being “broadly exploited” as governments and companies rush to secure their systems. The world’s largest cloud computing provider on Wednesday said it had identified an attempt by…",
-   "image": "https://cdn.arstechnica.net/wp-content/uploads/2022/03/internet-routing-1000x648.jpeg",
-   "cves": [],
-   "first_seen": "2026-10-22T15:58:04.569837+00:00",
-   "instructions": [
-    "“These vulnerabilities often provide a direct path to the server’s file system or database,” the NSA said. “If an immediate update is not feasible, it is recommended that organizations take the system offline until it can be fully mitigated.”",
-    "The NSA on Wednesday warned all organizations using the programming language known as PHP to immediately update their systems or take them offline.",
-    "The developers responsible for maintaining PHP released software updates to patch the vulnerabilities earlier on Wednesday."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "ec59d102565d",
    "source": "ars",
    "source_name": "Ars Technica Security",
@@ -1236,8 +1216,8 @@
    "source_type": "advisory",
    "title": "CVE-2026-88078 Microsoft Edge (Chromium-based) Spoofing Vulnerability",
    "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88078",
-   "published": "2026-10-27T14:00:00+00:00",
-   "summary": "Information published.",
+   "published": "2026-10-29T14:00:00+00:00",
+   "summary": "CWE added. Informational change only.",
    "image": null,
    "cves": [
     "CVE-2026-88078"
@@ -4752,7 +4732,7 @@
    "title": "AI Takes Root in Hospital Corridors, Raises Security Stakes",
    "link": "https://www.darkreading.com/cybersecurity-operations/ai-root-hospital-corridors-raised-security-stakes",
    "published": "2026-10-28T15:29:06+00:00",
-   "summary": "Artificial intelligence (AI) is everywhere in healthcare, from doctors’ intake forms to cancer screenings. But, in some cases, life-and-death uses are outpacing cyber security.",
+   "summary": "Artificial intelligence (AI) is everywhere in healthcare, from doctors’ intake forms to cancer screenings. But in some cases, life-and-death uses are outpacing cybersecurity.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt27f5645084863935/6ae21761f2adb985c612d4c7/GettyImages-1415423396.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-10-29T14:36:14.704007+00:00",
@@ -5402,6 +5382,27 @@
    "instructions_checked": true
   },
   {
+   "id": "f5faf77d9641",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Google Touts Powerful Cybersecurity Capabilities in Gemini 4 Carbon Model",
+   "link": "https://www.securityweek.com/google-says-gemini-4-carbon-leads-in-finding-exploiting-and-fixing-vulnerabilities/",
+   "published": "2026-10-29T15:01:00+00:00",
+   "summary": "Google’s new frontier model scored 88.2% on SEC-bench Pro and is rolling out first to vetted cyber defenders via its Fairwind Program. The post Google Touts Powerful Cybersecurity Capabilities in Gemini 4 Carbon Model appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/04/Gemini.jpeg",
+   "cves": [],
+   "first_seen": "2026-10-29T15:35:15.764064+00:00",
+   "image_checked": true,
+   "instructions": [
+    "iOS, macOS 27.2 Patch 286 Bugs; Fix for Exploited Flaw Backported to iOS 18",
+    "Adobe, Veeam, Juniper Networks Patch Critical Vulnerabilities",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "3f9c6dce420c",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -5460,6 +5461,28 @@
    "image_checked": true,
    "instructions": [
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "fcadd0dd5cf0",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "How Secure Are US Elections? Voting Machine Risks and the Growing Threat of AI",
+   "link": "https://www.securityweek.com/how-secure-are-us-elections-voting-machine-risks-and-the-growing-threat-of-ai/",
+   "published": "2026-10-29T15:00:00+00:00",
+   "summary": "Unpatched voting machines, unverifiable QR-coded ballots, and AI-driven influence campaigns leave US elections short of secure. The post How Secure Are US Elections? Voting Machine Risks and the Growing Threat of AI appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/10/Election-Voting-Cybersecurity.jpg",
+   "cves": [],
+   "first_seen": "2026-10-29T15:35:15.764064+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Bargil has his own recommendations to improve security without radically changing the process.",
+    "I can use AI to speed the process, and confirm that the EAC and the vendor have done their job properly.” His second recommendation would ensure the validity of the vote count.",
+    "In the commercial world we patch our systems every month, but for elections we are trusting software that hasn’t been patched for two years or more.",
+    "Adobe, Veeam, Juniper Networks Patch Critical Vulnerabilities"
    ],
    "instructions_checked": true
   },
