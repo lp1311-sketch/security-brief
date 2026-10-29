@@ -62,6 +62,25 @@
    "instructions_checked": true
   },
   {
+   "id": "ec59d102565d",
+   "source": "ars",
+   "source_name": "Ars Technica Security",
+   "official": false,
+   "source_type": "news",
+   "title": "Massive leak exposes 41,000 DHS workers and undercover ICE agents",
+   "link": "https://arstechnica.com/security/2026/10/massive-leak-exposes-41000-dhs-workers-and-undercover-ice-agents/",
+   "published": "2026-10-29T12:58:34+00:00",
+   "summary": "An unprecedented leak of Department of Homeland Security records has exposed details of more than 41,000 employees or contractors who work for the department and its constituent agencies. The records include email addresses, phone numbers, and office addresses, but also references to internal systems and sensitive…",
+   "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/ice-agent-1024x648.jpg",
+   "cves": [],
+   "first_seen": "2026-10-29T13:29:42.893012+00:00",
+   "instructions": [
+    "The DHS records are searchable on a website crimew built. “I don’t think we should let them scare us into not looking into them,” she tells WIRED.",
+    "We will update the public when more information is available.”"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "9311c26cfe2c",
    "source": "ars",
    "source_name": "Ars Technica Security",
@@ -3759,28 +3778,6 @@
    "instructions_checked": true
   },
   {
-   "id": "c78f9791369d",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Amazon says PHP2Shell exploitation began 4 days before patches",
-   "link": "https://www.bleepingcomputer.com/news/security/amazon-says-php2shell-exploitation-began-4-days-before-patches/",
-   "published": "2026-10-22T13:09:12+00:00",
-   "summary": "Security researchers at Amazon Threat Intelligence say attackers began targeting the PHP2Shell flaws four days before security patches were released on Wednesday.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/22/PHP-attack.jpg",
-   "cves": [],
-   "first_seen": "2026-10-22T13:13:37.507920+00:00",
-   "image_checked": true,
-   "instructions": [
-    "PHP core developer Gina Peter Banyard warned before disclosure that applying the official security patches is the only permanent defense, while the UK National Cyber Security Centre (NCSC) asked UK organizations to immediately update PHP servers or take them offline until they can be patched.",
-    "Moses also said that the PHP2Shell vulnerabilities are \"now being broadly exploited in the wild\" and warned that \"defenders should not assume the public disclosure date is the earliest date of exploitation.\"",
-    "The PHP security team patched them on October 21 after urging admins one day earlier to prepare to install the updates as soon as they became available.",
-    "Mozilla, Google, Apple block compromised eMudhra CA certificates"
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "5d4f96d6acc6",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -5045,28 +5042,6 @@
    "instructions_checked": true
   },
   {
-   "id": "ab875104cf16",
-   "source": "schneier",
-   "source_name": "Schneier on Security",
-   "official": false,
-   "source_type": "news",
-   "title": "New Serious PHP Vulnerabilities Released and Patched",
-   "link": "https://www.schneier.com/blog/archives/2026/10/new-serious-php-vulnerabilities-released-and-patched.html",
-   "published": "2026-10-22T13:26:51+00:00",
-   "summary": "PHP maintainers have released fixes for two critical vulnerabilities: PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35 fix two critical vulnerabilities that can allow unauthenticated remote code execution. All PHP users are strongly encouraged to update immediately. Who is at risk: all PHP installations serving web requests…",
-   "image": null,
-   "cves": [
-    "CVE-2026-109618",
-    "CVE-2026-109619"
-   ],
-   "first_seen": "2026-10-22T14:02:27.695450+00:00",
-   "image_checked": true,
-   "instructions": [
-    "All PHP users are strongly encouraged to update immediately."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "5ad5314f8c50",
    "source": "schneier",
    "source_name": "Schneier on Security",
@@ -5565,27 +5540,6 @@
    "instructions_checked": true
   },
   {
-   "id": "6a8ba679d4e1",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Indurex Raises $8 Million to Expand Industrial Cybersecurity Platform",
-   "link": "https://www.securityweek.com/indurex-raises-8-million-to-expand-industrial-cybersecurity-platform/",
-   "published": "2026-10-22T13:00:00+00:00",
-   "summary": "The Amsterdam-based company plans to use the funding for research and development and commercial expansion in Europe and the Middle East. The post Indurex Raises $8 Million to Expand Industrial Cybersecurity Platform appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2023/01/Cybersecurity_News-SecurityWeek.jpg",
-   "cves": [],
-   "first_seen": "2026-10-22T14:02:27.695450+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Former NSA Director Paul Nakasone Launches National Security Advisory Firm",
-    "Jon Steinbach has been appointed strategic technical advisor to the Pentagon’s CIO.",
-    "Preparing for disruption must become part of day-to-day operations."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "d7e589c62a2d",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -5798,6 +5752,26 @@
    "instructions_checked": true
   },
   {
+   "id": "9ca4865974e2",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Over 41,000 DHS Employee Records Leaked Online",
+   "link": "https://www.securityweek.com/over-41000-dhs-employee-records-leaked-online/",
+   "published": "2026-10-29T12:54:14+00:00",
+   "summary": "The personal and work information was allegedly stolen from an Okta single sign-on system earlier this year. The post Over 41,000 DHS Employee Records Leaked Online appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2023/01/Cybersecurity_News-SecurityWeek.jpg",
+   "cves": [],
+   "first_seen": "2026-10-29T13:29:42.893012+00:00",
+   "image_checked": true,
+   "instructions": [
+    "SecurityWeek has emailed DHS for a statement on the data breach and will update this article if it responds.",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "104d63029234",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -5877,28 +5851,6 @@
     "Preparing for disruption must become part of day-to-day operations.",
     "iOS, macOS 27.2 Patch 286 Bugs; Fix for Exploited Flaw Backported to iOS 18",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "2bd447638fb1",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Signal Vulnerability Lets Malicious Callers Block Hang-Ups",
-   "link": "https://www.securityweek.com/signal-vulnerability-lets-malicious-callers-block-hang-ups/",
-   "published": "2026-10-22T12:34:31+00:00",
-   "summary": "Affecting the open source calling library RingRTC, the bug prevented calls from ending properly. The post Signal Vulnerability Lets Malicious Callers Block Hang-Ups appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/10/Signal-telegram-messaging.jpeg",
-   "cves": [],
-   "first_seen": "2026-10-22T13:13:37.507920+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Users should update their Signal applications as soon as possible.",
-    "Otherwise, they should check the call indicator to make sure the call indeed ended.",
-    "Jon Steinbach has been appointed strategic technical advisor to the Pentagon’s CIO.",
-    "Preparing for disruption must become part of day-to-day operations."
    ],
    "instructions_checked": true
   },
