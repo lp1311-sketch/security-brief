@@ -61,28 +61,6 @@
    "instructions_checked": true
   },
   {
-   "id": "222dfd34d31c",
-   "source": "borncity",
-   "source_name": "Born's IT and Windows Blog",
-   "official": false,
-   "source_type": "news",
-   "title": "Windows Server 2025 unterstützt nun Quick Machine Recovery",
-   "link": "https://borncity.com/blog/2026/10/23/windows-server-2025-unterstuetzt-nun-quick-machine-recovery/",
-   "published": "2026-10-22T22:01:30+00:00",
-   "summary": "Kurzer Nachtrag vom Oktober 2026-Patchday bei Microsoft. Redmond hat zum 13. Oktober 2026 mit den Sicherheitsupdates auch eine Funktion namens \"Quick Machine Recovery\" für Windows Server 2025 ausgeliefert. Damit soll eine schnelle Systemwiederherstellung beim Bootproblemen möglich werden. Windows Server 2025 Update ……",
-   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Windows-klein.jpg",
-   "cves": [],
-   "first_seen": "2026-10-22T23:50:47.814045+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Oktober 2026 (zweiter Dienstag im Monat, Patchday bei Microsoft) wurde für Windows Server 2025 das kumulative Update KB5126646 freigegeben, welches Sicherheitspatches und diverse Fixes beinhaltet.",
-    "During outages, Quick machine recovery helps recover devices from critical boot failures by using Windows Recovery Environment (WinRE) to find and apply targeted remediations from Windows Update.",
-    "Administrators can enable the feature through Group Policy to support streamlined recovery during widespread outages and reduce the need for manual intervention.",
-    "Dazu bootet die Maschine in die Windows-Wiederherstellungsumgebung (WinRE) und versucht von dort aus gezielte Korrekturmaßnahmen aus Windows Update zu suchen und anzuwenden."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "cc05f605fbbb",
    "source": "borncity",
    "source_name": "Born's IT and Windows Blog",
@@ -4098,6 +4076,28 @@
    "instructions_checked": true
   },
   {
+   "id": "fe7730fa4068",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Polymarket halts trading after crypto-draining script breach, $2.5M traced",
+   "link": "https://www.bleepingcomputer.com/news/security/polymarket-halts-trading-after-crypto-draining-script-breach-25m-traced/",
+   "published": "2026-10-29T21:47:25+00:00",
+   "summary": "Prediction market platform Polymarket temporarily suspended trading on Thursday after hackers compromised a third-party service to distribute cryptocurrency-draining JavaScript, with approximately $2.5 million in assets traced to a suspected attacker wallet.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/29/polymarket-crypto.jpg",
+   "cves": [],
+   "first_seen": "2026-10-29T22:05:28.323280+00:00",
+   "image_checked": true,
+   "instructions": [
+    "DebugBear has since confirmed that it is investigating an ongoing security incident and warned customers to remove its monitoring JavaScript from their websites.",
+    "\"If you use our RUM product, please remove the embed code from your website.\"",
+    "Hudson Rock's researchers also discovered Polymarket production build metadata containing the commit message, \" chore(polymarket): remove debugbear rum script (#15337) ,\" indicating that the platform had removed the DebugBear monitoring integration.",
+    "BleepingComputer has contacted Polymarket and DebugBear with questions about the incident and will update this article if we receive a response."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "f582252343af",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4114,28 +4114,6 @@
    "instructions": [
     "Currently, the Quanum LSM system has been stopped, and customers are recommended to use paper requisitions or Quanum eLabs to place orders and receive results.",
     "Mozilla, Google, Apple block compromised eMudhra CA certificates"
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "6af5f5a84e31",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Railway warns devs to rotate secrets after potential breach",
-   "link": "https://www.bleepingcomputer.com/news/security/railway-warns-devs-to-rotate-secrets-after-potential-breach/",
-   "published": "2026-10-22T21:25:31+00:00",
-   "summary": "Cloud platform Railway published an urgent warning to users after detecting suspicious activity on its systems that store customer environment variables earlier this week.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/22/railway.jpg",
-   "cves": [],
-   "first_seen": "2026-10-22T21:56:00.161553+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Railway says the incident was part of a series of attacks targeting AI inference providers, which were notified directly and advised to revoke all their keys as a precaution.",
-    "The company says its investigation indicates that, in some cases, an unauthorized third party may have obtained decrypted variables and urges all users to proactively rotate secrets and credentials.",
-    "Although initial analysis suggests only a subset of users may be affected, Railway urges all users to immediately rotate environment variables and secrets stored on the platform, including private registry credentials, and check associated service logs for unusual activity.",
-    "According to the latest status page update , as of October 22 at 08:44 UTC, Railway had restored builds for Pro and Enterprise workspaces, but deployments remained delayed, with many queued."
    ],
    "instructions_checked": true
   },
@@ -4456,6 +4434,22 @@
    "instructions_checked": true
   },
   {
+   "id": "68f0757a3373",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "Rethinking Cybersecurity Awareness in the AI Era",
+   "link": "https://www.darkreading.com/cyber-risk/rethinking-cybersecurity-awareness-ai-era",
+   "published": "2026-10-29T20:15:37+00:00",
+   "summary": "This installment of the Reporters' Notebook video series discusses some of the trends and topics from Cybersecurity Awareness Month, from using AI for better training to educating next-generation workforces on modern risks and emerging threats.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltcc4390b0f2e6c554/6ae3b02dfe80872ab5936fa3/cybersecuritytraining-_Maria_Vonotna-Getty-1351111419.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-10-29T22:05:28.323280+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "67aef7e7b7c4",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -4532,6 +4526,22 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt0de7e1fa7b975bb4/6a2830dd09a01a8cc3ee406e/bug-sankai-Getty-2192972249.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-10-26T14:08:48.087897+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "cbcc5cbaf6f6",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "Anthropic-Themed Phishing Emails Bypass Top Security Tools",
+   "link": "https://www.darkreading.com/cyberattacks-data-breaches/anthropic-phishing-emails-bypass-security-tools",
+   "published": "2026-10-29T21:21:56+00:00",
+   "summary": "Obvious phishing emails with numerous red flags are somehow getting past some of the industry-leading secure email gateway (SEG) products.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltfbdba6806da96431/6ae3993ee7e856faec896a9e/Mask-beast01-Getty.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-10-29T22:05:28.323280+00:00",
    "instructions": [],
    "instructions_checked": true
   },
