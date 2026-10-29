@@ -79,25 +79,6 @@
    "instructions_checked": true
   },
   {
-   "id": "244621daeb8f",
-   "source": "borncity",
-   "source_name": "Born's IT and Windows Blog",
-   "official": false,
-   "source_type": "news",
-   "title": "\"Black October\" 2026: IT-Katastrophen der letzten Tage",
-   "link": "https://borncity.com/blog/2026/10/22/black-october-2026-it-katastrophen-der-letzten-tage/",
-   "published": "2026-10-22T16:54:11+00:00",
-   "summary": "Der Oktober 2026 dürfte für IT-Mitarbeiter nicht als besonderer \"Wonne-Monat\" in die Geschichte eingehen. Ausfall der Exchange-Server nach dem Patchday, Angriff auf Banken oder Ausfall von deren IT, die ConnectWise Backup-Kompromittierung, der Angriff auf die Kühlanlagen in Frankreich, und so … Weiterlesen → Quelle",
-   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
-   "cves": [],
-   "first_seen": "2026-10-22T17:14:04.674572+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Visitator zu Kompromittierte AOMEI Update-Server lieferten von Mai bis Juni 2026 Malware"
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "222dfd34d31c",
    "source": "borncity",
    "source_name": "Born's IT and Windows Blog",
@@ -2163,6 +2144,29 @@
    "instructions_checked": true
   },
   {
+   "id": "649ecf4a57aa",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Linux Kernel TCP Flaw With 9.8 CVSS Score Affects Ubuntu, Red Hat and Other Distributions",
+   "link": "https://thehackernews.com/2026/10/linux-kernel-tcp-flaw-with-98-cvss.html",
+   "published": "2026-10-29T15:57:05+00:00",
+   "summary": "A flaw in the Linux kernel's TCP code, tracked as CVE-2026-98432, affects Ubuntu, Red Hat Enterprise Linux (RHEL), and other Linux distributions. The kernel's own CVE team rates it 9.8 out of 10 on the CVSS scale. Anthropic said on October 27 that its AI model wrote an exploit that uses the flaw to let a remote…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcSWXTg8eHlxb0m5-m8xCEly9KQO-0qKV9c7QD7fF51aCb4HUEucmb657vogvKmlA8ra_4kMI6i_w11eYPIVvPSEBnuKnPg9E_HpEw0H1czq883zm_NaUEzarlfXlLd2OKd4b2jbPmMDXvWloR9iNa748-3xhEjD5wNuIznKGTmNwIV3CSeoBkt61zN5o/s1600/linux-dos.png",
+   "cves": [
+    "CVE-2026-98432"
+   ],
+   "first_seen": "2026-10-29T17:31:13.060582+00:00",
+   "instructions": [
+    "On Linux, an application must request MPTCP when it opens a socket.",
+    "Red Hat's machine-readable advisory file, updated on October 29, lists the impact as Important and scores the flaw 8.1, with high confidentiality and integrity impact.",
+    "Oracle and SUSE also score the flaw 8.1, with the same CVSS vector as Red Hat's advisory file.",
+    "As of October 29, none of the vendor advisories, the CVE record, or Anthropic's post reports attacks using the flaw."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "8239096a100a",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2588,25 +2592,6 @@
     "The advisories do not name any affected services or specify what an attacker could access after escaping the sandbox.",
     "Update to the fixed release for your line: 36.0.19 , 48.0.7 , or 49.0.4 .",
     "As of October 26, GitHub's advisory database had a reviewed entry for CVE-2026-115889 but none for CVE-2026-115893."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "eebdb3f4f6ae",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Two CVSS 9.0 Linux KSMBD RCE Flaws Disclosed on Public Mailing Lists Before Kernel Fixes",
-   "link": "https://thehackernews.com/2026/10/two-cvss-90-linux-ksmbd-rce-flaws.html",
-   "published": "2026-10-22T17:01:53+00:00",
-   "summary": "Linux servers running KSMBD, the kernel's built-in SMB server, are exposed to two publicly reported remote code execution flaws rated 9.0 by Trend Micro's Zero Day Initiative, with no fix yet in the mainline kernel. One of them, ZDI-CAN-33774, can be triggered before any network authentication. The other…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdNNyKzD2udgIl0X434MI2ucEwGFB_B-QqyjMnMuvTfwZv7clEo3n0ASA_aEQtUmQ7wqPSREwq1Cvi3iQLtubfUkK7p017Q6SrliTkwHiJyhfDIzahdof71Mxs4LXqJWoLkAnwikxy2KmZ1pkMg5Qto-RwPnvQx71Ol4G7sO20eeVNr_pfstT2WbDg3Nk/s1600/linux-rce.jpg",
-   "cves": [],
-   "first_seen": "2026-10-22T18:37:06.674660+00:00",
-   "instructions": [
-    "The Linux kernel's security documentation , updated in May 2026 following guidance from Linus Torvalds , states that bugs found by AI tools are, by definition, already public and should be sent to subsystem developer lists.",
-    "To the report on the VMware GPU driver , he wrote: \"For some reason you sent this to public lists, and did not include a patch, so there's not much we can do with this.\" On the NVMe driver report , seventeen seconds later: \"Again, no patch, and sent to a public list?"
    ],
    "instructions_checked": true
   },
@@ -3662,28 +3647,6 @@
    "instructions_checked": true
   },
   {
-   "id": "5d4f96d6acc6",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Arista patches new VeloCloud Orchestrator zero-day exploited in attacks",
-   "link": "https://www.bleepingcomputer.com/news/security/arista-patches-new-velocloud-orchestrator-zero-day-exploited-in-attacks/",
-   "published": "2026-10-22T17:18:22+00:00",
-   "summary": "Arista Networks released security updates to patch an actively exploited zero-day vulnerability affecting VeloCloud Orchestrator (VCO) On-Prem deployments.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/22/Arista.jpg",
-   "cves": [],
-   "first_seen": "2026-10-22T17:54:18.191821+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Until the patches are deployed, Arista advised admins to monitor for connections from known malicious IP addresses, restrict access to the VCO web interface to administrative networks, and review recent administrator activity for unusual changes.",
-    "Admins are also recommended to review VCO web access logs for suspicious activity, such as requests with unusual URL-like path components, encoded characters, references to local or internal services, and high request rates.",
-    "Arista Networks released security updates to patch an actively exploited zero-day vulnerability affecting VeloCloud Orchestrator (VCO) On-Prem deployments.",
-    "VCO is a web-based management portal that helps administrators configure, monitor, and manage VeloCloud SD-WANs (Software-Defined Wide Area Networks) and associated edge devices."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "a6ce31709924",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4439,7 +4402,7 @@
    "source_name": "Dark Reading",
    "official": false,
    "source_type": "news",
-   "title": "GhostAction Hacking Wave Fizzles, But Attackers Lurk on in GitHub",
+   "title": "GhostAction Hacking Wave Fizzles, but Attackers Lurk on in GitHub",
    "link": "https://www.darkreading.com/application-security/ghostaction-hacking-wave-fizzles-attackers-github",
    "published": "2026-10-28T19:39:00+00:00",
    "summary": "The supply chain attack campaign's shift toward developer endpoints and cloud access signals what could be next for the cybercrime outfit.",
@@ -4663,7 +4626,7 @@
    "source_name": "Dark Reading",
    "official": false,
    "source_type": "news",
-   "title": "So Many AI Security Benchmarks, But None Tell the Whole Story",
+   "title": "So Many AI Security Benchmarks, but None Tell the Whole Story",
    "link": "https://www.darkreading.com/cybersecurity-analytics/benchmarking-security-of-ai-models-poses-challenges",
    "published": "2026-10-27T00:26:50+00:00",
    "summary": "Measuring AI model security gets complex, fast, thanks to a growing patchwork of benchmarks targeting different variables in the equation. But none replace testing against your own code and workflows.",
@@ -4682,7 +4645,7 @@
    "title": "Cyber Vulnerabilities Besiege Italy, Absent Clear Cause",
    "link": "https://www.darkreading.com/cybersecurity-analytics/cyber-vulnerabilities-besiege-italy",
    "published": "2026-10-29T08:00:00+00:00",
-   "summary": "Researchers can't quite explain why cyber threats look so different in Italy compared to everywhere else.",
+   "summary": "Researchers can't quite explain why cyber threats look so different in Italy compared with everywhere else.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt0dafcf0847efff9a/6ae24fff8ec8cff4371f87c5/rome-Sean_Gallup-GettyImages-623337092jpg.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-10-29T08:00:15.894189+00:00",
@@ -4850,6 +4813,27 @@
    "instructions_checked": true
   },
   {
+   "id": "63b84b48fd3c",
+   "source": "grahamcluley",
+   "source_name": "Graham Cluley",
+   "official": false,
+   "source_type": "news",
+   "title": "BYOD cyberattack diverts ambulances and cancels classes at University of New Mexico health center",
+   "link": "https://www.fortra.com/blog/byod-cyberattack-diverts-ambulances-and-cancels-classes-university-new-mexico-health-center",
+   "published": "2026-10-29T17:01:24+00:00",
+   "summary": "Ambulances were diverted, surgeries cancelled, and medical students sent home from classes after a ransomware group attacked the University of New Mexico's Health Sciences Center (HSC) this week. Read more in my article on the Fortra blog.",
+   "image": "https://www.fortra.com/sites/default/files/styles/og_image/public/2026-10/byod.jpeg?itok=sGhleHpf",
+   "cves": [],
+   "first_seen": "2026-10-29T17:31:13.060582+00:00",
+   "image_checked": true,
+   "instructions": [
+    "The lessons for other organizations should be all too familiar: minimize privileged accounts and enforce phishing-resistant multi-factor authentication wherever possible, segment your network, and monitor for unusual outbound transfers of data.",
+    "According to media reports , staff were told to turn off their desktop computers and disconnect their mobile devices from the hospital's Wi-Fi.",
+    "In its latest update on the incident, UNM said that it \"did not make concessions with any group behind the threat,\" and warned patients, students, employees and community members to not respond or engage with anyone claiming responsibility for the attack."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "abfff6ba3917",
    "source": "msblog",
    "source_name": "Microsoft Security Blog",
@@ -4886,6 +4870,46 @@
    "image_checked": true,
    "instructions": [
     "We need to enable innovation without introducing unmanaged risk, and we need to modernize defense without losing the security fundamentals that still matter."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "bd2cd3a550d6",
+   "source": "msblog",
+   "source_name": "Microsoft Security Blog",
+   "official": false,
+   "source_type": "vendor_blog",
+   "title": "IDC MarketScape names Microsoft a Leader in the 2026 Worldwide Modern Endpoint Security for Enterprises Vendor Assessment",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/10/29/idc-marketscape-names-microsoft-a-leader-in-the-2026-worldwide-modern-endpoint-security-for-enterprises-vendor-assessment/",
+   "published": "2026-10-29T16:00:00+00:00",
+   "summary": "Today, we’re proud to share thatMicrosoft has been named a Leader in the 2026 IDC MarketScape for Worldwide Modern Endpoint Security for Enterprises (Doc #US54123526, September 2026). The IDC Marketscape calls out three strengths that we believe matter most in endpoint security today: Autonomous attack disruption and…",
+   "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/10/IDC.webp",
+   "cves": [],
+   "first_seen": "2026-10-29T17:31:13.060582+00:00",
+   "instructions": [
+    "1 When an attacker can move from first foothold to encryption in minutes, protection on the endpoint must act at the same speed, without waiting for a person to connect the dots.",
+    "IDC advises buyers to ask how vendors secure AI on the endpoint, including visibility into local models and agent activity."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "2e0675284202",
+   "source": "msblog",
+   "source_name": "Microsoft Security Blog",
+   "official": false,
+   "source_type": "vendor_blog",
+   "title": "Tracking AI adoption in North Korean threat actor tradecraft",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/10/29/tracking-ai-adoption-in-north-korean-threat-actor-tradecraft/",
+   "published": "2026-10-29T16:00:00+00:00",
+   "summary": "As Microsoft Threat Intelligence continues to track how threat actors operationalize AI to increase the speed, efficiency, and complexity of attacks, we’ve identified North Korean threat actors expanding their use of AI with varying levels of adoption. Threat actors use AI as a force multiplier across their…",
+   "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/10/North-Korean-use-of-AI.webp",
+   "cves": [],
+   "first_seen": "2026-10-29T17:31:13.060582+00:00",
+   "instructions": [
+    "We also provide mitigation guidance and Microsoft Defender detections to help organizations defend against these threats.",
+    "If certain servers must be accessible on the public internet, position them behind a web application firewall (WAF) , reverse proxy , or perimeter network (also known as a DMZ), which can reduce the risk of vulnerability exploitation in some cases.",
+    "Windows Update client policies offer automated patching, which can greatly reduce the amount of time IT admins must spend identifying, configuring, and deploying updates.",
+    "Review the recommended settings for Exchange Online Protection and Microsoft Defender for Office 365 to ensure your organization has established essential defenses and knows how to monitor and respond to threat activity."
    ],
    "instructions_checked": true
   },
@@ -6026,6 +6050,28 @@
     "In response to the incident, the passwords for all accounts that had access to the database were reset, and DHMP and SquareML are pursuing additional remedial actions.",
     "iOS, macOS 27.2 Patch 286 Bugs; Fix for Exploited Flaw Backported to iOS 18",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "39a633755f1e",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "When Risk Becomes Personal: What Security Leaders Can Learn From a Cancer Diagnosis",
+   "link": "https://www.securityweek.com/when-risk-becomes-personal-what-security-leaders-can-learn-from-a-cancer-diagnosis/",
+   "published": "2026-10-29T16:30:00+00:00",
+   "summary": "Risk managers are trained to spot weak signals, plan for disruption and make hard decisions under uncertainty. But the discipline looks different when the risk is not a system or an enterprise, but you. The post When Risk Becomes Personal: What Security Leaders Can Learn From a Cancer Diagnosis appeared first on…",
+   "image": "https://www.securityweek.com/wp-content/uploads/2023/01/Cybersecurity_News-SecurityWeek.jpg",
+   "cves": [],
+   "first_seen": "2026-10-29T17:31:13.060582+00:00",
+   "image_checked": true,
+   "instructions": [
+    "A security leader should not accept at face value a supplier assurance statement, a default technology configuration, or management recommendations without formal review.",
+    "Risk management leaders educate people on measuring exposure, testing assumptions and advising on how best to prepare for incidents they hope won’t occur.",
+    "Risk management is more than recommending a set of analytical frameworks.",
+    "The parallel with cyber governance should be handled carefully, but it is useful."
    ],
    "instructions_checked": true
   },
