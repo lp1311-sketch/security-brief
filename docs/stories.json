@@ -41,6 +41,16 @@
    "url": "story/23872cb1986e.html"
   },
   {
+   "id": "ef44306c2f44",
+   "title": "Chinese Hackers Quietly Used Low-Severity ESXi Logging Flaw as Zero-Day",
+   "summary": "CVE-2026-41709 allows attackers with administrative privileges to perform operations without being logged. The post Chinese Hackers Quietly Used Low-Severity ESXi…",
+   "priority": "Critical",
+   "category": "Patch Radar",
+   "date": "29 Oct 2026, 08:01 UTC",
+   "sources": "SecurityWeek, The Hacker News",
+   "url": "story/ef44306c2f44.html"
+  },
+  {
    "id": "f01e6eed4371",
    "title": "ShinyHunters-Exploited Oracle PeopleSoft Zero-Day Turns Out to Be Three Chained Flaws",
    "summary": "The critical Oracle PeopleSoft bug that ShinyHunters has exploited since May is not one flaw but three chained together, the researchers who reported it said this week…",
@@ -59,16 +69,6 @@
    "date": "27 Oct 2026, 13:59 UTC",
    "sources": "The Hacker News, SecurityWeek, BleepingComputer",
    "url": "story/0afa3606f14e.html"
-  },
-  {
-   "id": "e91f33b06ca8",
-   "title": "China-Linked Hackers Exploited VMware ESX Zero-Day to Reduce Audit Trail Visibility",
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a security flaw impacting Broadcom VMware ESX to its Known Exploited Vulnerabilities…",
-   "priority": "Critical",
-   "category": "Patch Radar",
-   "date": "29 Oct 2026, 06:22 UTC",
-   "sources": "The Hacker News",
-   "url": "story/e91f33b06ca8.html"
   },
   {
    "id": "219f99ac76bf",
@@ -151,26 +151,6 @@
    "url": "story/29d08fa787d9.html"
   },
   {
-   "id": "87cc334f725d",
-   "title": "Chromium: CVE-2026-78939 Use after free in Chromecast",
-   "summary": "Information published.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "28 Oct 2026, 08:43 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/87cc334f725d.html"
-  },
-  {
-   "id": "d75560f4cad5",
-   "title": "Anthropic's Unreleased AI Model Chains Flaws Into Working Chrome, Safari, Windows and Linux Exploits",
-   "summary": "An unreleased Anthropic AI model found security flaws in Chrome, Safari, Android, Windows, and Linux and chained them into working proof-of-concept exploits, the company…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "28 Oct 2026, 08:15 UTC",
-   "sources": "The Hacker News",
-   "url": "story/d75560f4cad5.html"
-  },
-  {
    "id": "4e5f0d814761",
    "title": "CISA warns of PHP bug exploitation attempts, gives federal agencies days to patch",
    "summary": "CISA added the widely publicized PHP vulnerabilities to the KEV, but didn't specify what kind of exploitation it was observing.",
@@ -181,16 +161,6 @@
    "url": "story/4e5f0d814761.html"
   },
   {
-   "id": "77d8f32442c0",
-   "title": "CISA confirms PHP2Shell vulnerabilities now exploited in attacks",
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added the PHP2Shell vulnerabilities to its catalog of actively exploited security flaws and ordered…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "27 Oct 2026, 08:20 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/77d8f32442c0.html"
-  },
-  {
    "id": "015a882ee274",
    "title": "Exposed Infrastructure Reveals How Ransomware Affiliates Used AI Agents to Execute Intrusions",
    "summary": "Cybersecurity researchers have discovered an artificial intelligence (AI)-driven intrusion ecosystem run by affiliates of the INC and The Gentlemen ransomware groups…",
@@ -199,6 +169,26 @@
    "date": "23 Oct 2026, 17:50 UTC",
    "sources": "The Hacker News",
    "url": "story/015a882ee274.html"
+  },
+  {
+   "id": "b3306983de00",
+   "title": "HHS Filing Puts iRhythm Data Breach Toll at 8.2 Million",
+   "summary": "Hackers stole personal information and iRhythm account and device data from third-party-hosted business applications. The post HHS Filing Puts iRhythm Data Breach Toll…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "29 Oct 2026, 08:27 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/b3306983de00.html"
+  },
+  {
+   "id": "aabd8e14b270",
+   "title": "Hackers Exploited Cisco SD-WAN Flaw to Plant Malware Built to Steal Encryption Keys",
+   "summary": "Hackers exploited a critical Cisco Catalyst SD-WAN flaw, fixed in February, to plant custom malware inside the systems that control an organization's SD-WAN network. The…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "29 Oct 2026, 08:24 UTC",
+   "sources": "The Hacker News",
+   "url": "story/aabd8e14b270.html"
   },
   {
    "id": "6297f1390dfa",
@@ -311,6 +301,26 @@
    "url": "story/aa5619127529.html"
   },
   {
+   "id": "87cc334f725d",
+   "title": "Chromium: CVE-2026-78939 Use after free in Chromecast",
+   "summary": "Information published.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "28 Oct 2026, 08:43 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/87cc334f725d.html"
+  },
+  {
+   "id": "d75560f4cad5",
+   "title": "Anthropic's Unreleased AI Model Chains Flaws Into Working Chrome, Safari, Windows and Linux Exploits",
+   "summary": "An unreleased Anthropic AI model found security flaws in Chrome, Safari, Android, Windows, and Linux and chained them into working proof-of-concept exploits, the company…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "28 Oct 2026, 08:15 UTC",
+   "sources": "The Hacker News",
+   "url": "story/d75560f4cad5.html"
+  },
+  {
    "id": "697aeb2243e0",
    "title": "Japan's GMO Offers $1 Million Bounty to Catch Hackers Behind FX Trading Cloud Breach",
    "summary": "Japan's GMO Internet Group is offering up to $1 million in total for tips that help catch the attackers who breached its Onamae.com Desktop Cloud service, after refusing…",
@@ -349,6 +359,16 @@
    "date": "27 Oct 2026, 14:00 UTC",
    "sources": "Microsoft Security Response Center",
    "url": "story/bca87c74a608.html"
+  },
+  {
+   "id": "77d8f32442c0",
+   "title": "CISA confirms PHP2Shell vulnerabilities now exploited in attacks",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added the PHP2Shell vulnerabilities to its catalog of actively exploited security flaws and ordered…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "27 Oct 2026, 08:20 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/77d8f32442c0.html"
   },
   {
    "id": "03f54c74f6fe",
@@ -961,16 +981,6 @@
    "url": "story/085573e20d77.html"
   },
   {
-   "id": "21dec5f03b58",
-   "title": "CISA Warns of Node2Shell Exploitation as Honeypots Log Attack Attempts",
-   "summary": "CISA added the Brotli flaw to its KEV catalog, and two honeypot operators logged attempts, including one that used a broken exploit. The post CISA Warns of Node2Shell…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "28 Oct 2026, 08:37 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/21dec5f03b58.html"
-  },
-  {
    "id": "2db299f6a190",
    "title": "3 Frameworks to Protect CISOs & Orgs Against AI Liability",
    "summary": "Cyber leaders can get ahead of AI liability with rigorous documentation, transparency, and smart contract negotiations with AI vendors.",
@@ -1321,14 +1331,14 @@
    "url": "story/34f12a1f7c34.html"
   },
   {
-   "id": "df0211e45e19",
-   "title": "Authorities disrupt nearly 11,000 cybercrime networks in Africa",
-   "summary": "Law enforcement agencies have disrupted nearly 11,000 cybercriminal networks and arrested more than 1,400 people in Operation Serengeti III, which targeted business…",
+   "id": "21dec5f03b58",
+   "title": "CISA Warns of Node2Shell Exploitation as Honeypots Log Attack Attempts",
+   "summary": "CISA added the Brotli flaw to its KEV catalog, and two honeypot operators logged attempts, including one that used a broken exploit. The post CISA Warns of Node2Shell…",
    "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "22 Oct 2026, 08:27 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/df0211e45e19.html"
+   "category": "Patch Radar",
+   "date": "28 Oct 2026, 08:37 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/21dec5f03b58.html"
   },
   {
    "id": "6fcf621f852d",
@@ -1549,16 +1559,6 @@
    "date": "27 Oct 2026, 09:33 UTC",
    "sources": "The Hacker News",
    "url": "story/1da67faa3c4a.html"
-  },
-  {
-   "id": "ea5496feaca5",
-   "title": "OpenAI Compaction Flaw Let Researchers Bypass Hidden Reasoning Protections",
-   "summary": "OpenAI's compaction feature, which shrinks a long conversation to save space, could be turned into a way to copy a model's hidden reasoning out in plain text, security…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "27 Oct 2026, 08:22 UTC",
-   "sources": "The Hacker News",
-   "url": "story/ea5496feaca5.html"
   },
   {
    "id": "837fe1cef585",
@@ -1851,14 +1851,14 @@
    "url": "story/c78f9791369d.html"
   },
   {
-   "id": "a9227db3dd33",
-   "title": "LiteLLM Suspects GitHub Token Leak in AI Gateway Logs Behind Malicious Package Release",
-   "summary": "LiteLLM on Wednesday disclosed that threat actors compromised \"multiple independent security controls\" to push a malicious version of the Python package containing a…",
+   "id": "ea5496feaca5",
+   "title": "OpenAI Compaction Flaw Let Researchers Bypass Hidden Reasoning Protections",
+   "summary": "OpenAI's compaction feature, which shrinks a long conversation to save space, could be turned into a way to copy a model's hidden reasoning out in plain text, security…",
    "priority": "Standard",
    "category": "AI Risk Lab",
-   "date": "22 Oct 2026, 08:28 UTC",
+   "date": "27 Oct 2026, 08:22 UTC",
    "sources": "The Hacker News",
-   "url": "story/a9227db3dd33.html"
+   "url": "story/ea5496feaca5.html"
   },
   {
    "id": "46ee8b886dbe",

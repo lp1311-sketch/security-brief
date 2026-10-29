@@ -2079,6 +2079,27 @@
    "instructions_checked": true
   },
   {
+   "id": "aabd8e14b270",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Hackers Exploited Cisco SD-WAN Flaw to Plant Malware Built to Steal Encryption Keys",
+   "link": "https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html",
+   "published": "2026-10-29T08:24:22+00:00",
+   "summary": "Hackers exploited a critical Cisco Catalyst SD-WAN flaw, fixed in February, to plant custom malware inside the systems that control an organization's SD-WAN network. The malware, called KeyDrift, is designed to copy the keys that encrypt traffic between sites and store them for later use, Cisco Talos said on October…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDuVB5nQJHwAnAATDQxAqD8KtWk7IpNvBqXQq6RPkqJ72joLVDp5dUDDdYmRHlrbUhJQpaQQ59p245XjotvW2DNx_fKk7cPp0wJUsK0z5IQY2jXA1oP-YcYKLtSdBXnZJDNECWOzX9tP3-12cKXJm2A1KKoBsu9CEiOYKbgJDVqvQt7YRF8Fzd706YumA/s1600/cisco-sdwan.jpg",
+   "cves": [],
+   "first_seen": "2026-10-29T08:54:44.037695+00:00",
+   "instructions": [
+    "Cisco says this step worked in a test environment, but that customers should check how well it works in their own networks.",
+    "Talos advises organizations to install Cisco's fixes, follow Cisco's Catalyst SD-WAN hardening guide and watch for signs of post-compromise activity.",
+    "Anyone who finds such signs should start incident response and can ask Cisco's Technical Assistance Center (TAC) for help.",
+    "That advice does not say whether upgrading removes KeyDrift from a device that was already compromised, or whether any keys should be replaced."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "961277245249",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2211,27 +2232,6 @@
    "first_seen": "2026-10-24T11:52:52.119319+00:00",
    "instructions": [
     "In response to the incident, the company said it's working to revoke each and every token associated with every internal system and vendor platform."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "a9227db3dd33",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "LiteLLM Suspects GitHub Token Leak in AI Gateway Logs Behind Malicious Package Release",
-   "link": "https://thehackernews.com/2026/10/litellm-suspects-github-token-leak-in.html",
-   "published": "2026-10-22T08:28:48+00:00",
-   "summary": "LiteLLM on Wednesday disclosed that threat actors compromised \"multiple independent security controls\" to push a malicious version of the Python package containing a credential stealer and a backdoor. On October 21, 2026, LiteLLM's release pipeline was compromised to push 1.107.0 to the Docker Hub registry and the…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgiEKKMESHBCMBHXA8Yf_clmAeFQXSdaKTEz0t_6RDzj1zXcwiPxA4gy2MPmftM6vyCkoG7OsCZJ2a8t7xJe1qbn3tEWRZfVgStzQVJy0ZfwEkjhg6-A34iT3XnQG7nYku04cWbIaHwkQmuDVghCeJBx5xJcbtozsyD3Genw4wyxFtgWIVD-rRGRLMBKoq2/s1600/litellm-breach.jpg",
-   "cves": [],
-   "first_seen": "2026-10-22T09:09:57.209664+00:00",
-   "instructions": [
-    "Should this file return a valid response, the malware proceeds to download a second-stage Python script from \"<domain>/codepy\" and execute it.",
-    "In an advisory published Wednesday, LiteLLM said it had hardened its release pipeline following a similar incident that took place earlier this March.",
-    "Developers are advised to remove LiteLLM 1.107.0 from their machines, isolate hosts on which the malicious version was installed, hunt for the malicious Python artifacts, block access to the exfiltration domain, rotate all credentials, and investigate the execution of \"/codepy.\"",
-    "The attacker used a token belonging to one of its GitHub organization owners to disable branch protections and force-push the malicious changes."
    ],
    "instructions_checked": true
   },
@@ -3732,26 +3732,6 @@
    "instructions_checked": true
   },
   {
-   "id": "df0211e45e19",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Authorities disrupt nearly 11,000 cybercrime networks in Africa",
-   "link": "https://www.bleepingcomputer.com/news/security/authorities-disrupt-nearly-11-000-cybercrime-networks-in-africa/",
-   "published": "2026-10-22T08:27:11+00:00",
-   "summary": "Law enforcement agencies have disrupted nearly 11,000 cybercriminal networks and arrested more than 1,400 people in Operation Serengeti III, which targeted business email compromise, ransomware, and online scams.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/05/18/INTERPOL.jpg",
-   "cves": [],
-   "first_seen": "2026-10-22T09:04:13.773821+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Instead of waiting for an attack and then investigating the damage, we can help expose the networks behind criminal operations and can enable defensive actions,\" said Jacomo Piccolini , Team Cymru's VP of Global Data Partnerships.",
-    "Mozilla, Google, Apple block compromised eMudhra CA certificates"
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "a6ce31709924",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -5164,6 +5144,29 @@
    "instructions_checked": true
   },
   {
+   "id": "ef44306c2f44",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Chinese Hackers Quietly Used Low-Severity ESXi Logging Flaw as Zero-Day",
+   "link": "https://www.securityweek.com/chinese-hackers-quietly-used-low-severity-esxi-logging-flaw-as-zero-day/",
+   "published": "2026-10-29T08:01:05+00:00",
+   "summary": "CVE-2026-41709 allows attackers with administrative privileges to perform operations without being logged. The post Chinese Hackers Quietly Used Low-Severity ESXi Logging Flaw as Zero-Day appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2022/08/VMWare.jpg",
+   "cves": [
+    "CVE-2026-41709"
+   ],
+   "first_seen": "2026-10-29T08:54:44.037695+00:00",
+   "image_checked": true,
+   "instructions": [
+    "At least two other security defects described in Broadcom’s July 29 advisories have been targeted in the wild, namely CVE-2026-59309 (a critical-severity authentication bypass) and CVE-2026-59310 (a critical directory traversal issue leading to arbitrary code execution).",
+    "CISA added CVE-2026-41709 to its Known Exploited Vulnerabilities ( KEV ) catalog, urging federal agencies to patch it within the next two weeks.",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "04dad7bd605d",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -5366,6 +5369,25 @@
    "instructions": [
     "Preparing for disruption must become part of day-to-day operations.",
     "iOS, macOS 27.2 Patch 286 Bugs; Fix for Exploited Flaw Backported to iOS 18",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "b3306983de00",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "HHS Filing Puts iRhythm Data Breach Toll at 8.2 Million",
+   "link": "https://www.securityweek.com/hhs-filing-puts-irhythm-data-breach-toll-at-8-2-million/",
+   "published": "2026-10-29T08:27:16+00:00",
+   "summary": "Hackers stole personal information and iRhythm account and device data from third-party-hosted business applications. The post HHS Filing Puts iRhythm Data Breach Toll at 8.2 Million appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/06/iRhythm.jpeg",
+   "cves": [],
+   "first_seen": "2026-10-29T08:54:44.037695+00:00",
+   "image_checked": true,
+   "instructions": [
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
