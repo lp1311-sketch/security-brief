@@ -1793,27 +1793,6 @@
    "instructions_checked": true
   },
   {
-   "id": "f74ce17a74d9",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "eMudhra to Exit Global SSL/TLS Business After 8 Intermediate CA Keys Found Easily Guessable",
-   "link": "https://thehackernews.com/2026/10/emudhra-to-exit-global-ssltls-business.html",
-   "published": "2026-10-22T18:12:43+00:00",
-   "summary": "eMudhra, an Indian certificate authority (CA), will withdraw from its global SSL/TLS certificate business, its board decided on Thursday. The decision came five days after a researcher reported recovering the private keys of eight of its intermediate CA certificates. eMudhra said it will replace affected customers'…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5DGeZCzWnHOoA87UbpfzGUlpU9xBK1x5tJsYlWOoKtyEkTRjaN4cW_lMOKdtiSXVPhVMd6JhOMRhvFOxvn853LcLaCBSNK-_m4CDIDGt048SdHQQqu63ZSZ09Ymc3UhqD_TZoLaCM6eIJL6TSYbBVINceAi4paPvjxJ4i9uN3CKZQ2s5bT4Dc_jAcv8I/s1600/ssl.jpg",
-   "cves": [],
-   "first_seen": "2026-10-22T18:37:06.674660+00:00",
-   "instructions": [
-    "Google has told website operators with certificates under that root that they \"must immediately acquire and install a new TLS certificate from another PKI hierarchy included in the Chrome Root Store.\"",
-    "Each private key should have been a huge random number, but all eight were below 256, so anyone could work them out almost instantly.",
-    "Cornell has told its certificate holders to request RSA certificates instead of ECC ones, because \"RSA certificates use eMudhra's unaffected root and should work.\" The university counts more than 300 affected certificates of its own.",
-    "No website certificate from them had appeared in CT logs before Chrome's block, so none could have been used against Chrome or other software that requires CT logging, Google said."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "015a882ee274",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2551,26 +2530,6 @@
     "A Threat Operator must understand those dependencies and determine how the response should proceed, balancing containment requirements with operational risk.",
     "AI agents could assess the institution's exposure, hunt for relevant activity, identify gaps in existing detections, and recommend defensive actions.",
     "They must understand the organization's architecture, critical assets, operational dependencies, and relevant adversaries, and know how to communicate that context to AI agents."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "a45e553ca30b",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "ThreatsDay: AI Secrets Leak, PingCAP Source Theft, Signal Hang-Up Flaw, Laravel Auth Bypass + 21 More",
-   "link": "https://thehackernews.com/2026/10/threatsday-ai-secrets-leak-pingcap.html",
-   "published": "2026-10-22T17:45:44+00:00",
-   "summary": "This week has already been rough for cybersecurity. Critical PHP and GitLab RCE flaws, serious Linux security bugs, compromised eMudhra certificates, a Node.js RCE flaw, a hacked LiteLLM release, and hundreds of hijacked Tor relays. That's a lot to deal with in just a few days. And the week isn't even over yet. But…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjt9NuQgzmDAqircHtb2OEO9jXuNXIfpmc6cywt44gLVoKRSyrTtwqh2DaQkZ_BCrux5hLbZ9-uU9fR7Q6oFE7cjYOJB6aF1zqIJrrgT9A5RVRZguNYHZCk7-LBEAY7GxyR9KoCwwdPF9UowRvnZBvSN4X24RJXEQBRg3F1Mi5ktvXfNWWsUXlVnHLUmYd6/s1600/threatsday-oct-main.jpg",
-   "cves": [],
-   "first_seen": "2026-10-22T18:37:06.674660+00:00",
-   "instructions": [
-    "XWiki exploitation and botnet activity VulnCheck Finds XWiki Exploits, Botnet Activity Tied to IPs in Flax Typhoon Advisory Earlier this month, the U.S.",
-    "\"With regard to the genetic data or samples maintained by 23andMe Research Institute, consumers can request that the company delete their data, destroy their test sample, or revoke their permission for their genetic data to be used for research,\" the office of the California Attorney General said in a statement.",
-    "Critical call hang-up flaw Signal Flaw Lets Malicious Callers Block Hang-Ups A critical security flaw in the Signal messaging app (CVE-2026-113380, CVSS score: 9.3) can allow a malicious caller to keep audio and video tracks enabled even after the victim has hung up."
    ],
    "instructions_checked": true
   },
