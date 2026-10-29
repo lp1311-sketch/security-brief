@@ -99,26 +99,6 @@
    "instructions_checked": true
   },
   {
-   "id": "d11e69527239",
-   "source": "borncity",
-   "source_name": "Born's IT and Windows Blog",
-   "official": false,
-   "source_type": "news",
-   "title": "php2shell: Lücke seit 2024 bekannt, Angriffe laufen, Hosting gefährdet?",
-   "link": "https://borncity.com/blog/2026/10/22/php2shell-luecke-seit-2024-bekannt-angriffe-laufen-hosting-gefaehrdet/",
-   "published": "2026-10-22T11:45:19+00:00",
-   "summary": "Am gestrigen Abend wurden zwar Patches für neuere PHP-Versionen veröffentlicht. Aber das Ganze wird noch ziemlich durchschlagen, weil es lange dauern wird, bis alles gepatcht ist. Angriffe laufen bereits seit Tagen. Bekannt wurde, dass eine Schwachstelle seit 2024 bekannt war. … Weiterlesen → Quelle",
-   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
-   "cves": [],
-   "first_seen": "2026-10-22T12:15:43.249038+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Der Tweet zeigt die Shodan-Abfrage nach Webseiten, die eine PHP-Version unter 8.2 verwenden, also voraussichtlich keinen Patch bekommen, sowie die Ergebnisse.",
-    "Eddi zu Kompromittierte AOMEI Update-Server lieferten von Mai bis Juni 2026 Malware"
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "222dfd34d31c",
    "source": "borncity",
    "source_name": "Born's IT and Windows Blog",
@@ -268,10 +248,10 @@
    "source_name": "Born's IT and Windows Blog",
    "official": false,
    "source_type": "news",
-   "title": "Cybervorfall im Umfeld der Tiroler Plattform Feratel; WhatsApp-Phishing bei Reisebuchungen",
+   "title": "Cybervorfall? Warnung im Umfeld der Tiroler Plattform Feratel vor WhatsApp-Phishing bei Reisebuchungen",
    "link": "https://borncity.com/blog/2026/10/29/cybervorfall-im-umfeld-der-tiroler-plattform-feratel-whatsapp-phishing-bei-reisebuchungen/",
    "published": "2026-10-29T06:38:44+00:00",
-   "summary": "Der nächste Cybervorfall mit Zugriff auf Gästedaten im Hotel- und Übernachtungsgewerbe ist publik geworden. Die Plattform Feratel.com wird in Tirol (Österreich) als Buchungs- & Meldeplattform für Tourismus und Fremdenverkehr genutzt. Im Umfeld dieser Plattform hat es dort WhatsApp-Betrugsversuche gegeben, bei ……",
+   "summary": "Der nächste potentielle Cybervorfall mit Zugriff auf Gästedaten im Hotel- und Übernachtungsgewerbe ist publik geworden. Die Plattform Feratel.com wird in Tirol (Österreich) als Buchungs- & Meldeplattform für Tourismus und Fremdenverkehr genutzt. Im Umfeld dieser Plattform hat es dort WhatsApp-Betrugsversuche gegeben…",
    "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
    "cves": [],
    "first_seen": "2026-10-29T06:57:06.504565+00:00",
@@ -1477,6 +1457,45 @@
    "instructions_checked": true
   },
   {
+   "id": "5a570ea1e7c2",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Webinar: How to Build AI Threat Readiness Into Your Security Operations",
+   "link": "https://thehackernews.com/2026/08/learn-how-to-build-security-operations.html",
+   "published": "2026-10-29T11:39:41+00:00",
+   "summary": "Security teams have spent years trying to detect threats faster. AI is changing the harder part: how much time defenders have left to act. Advanced AI models can now help attackers discover vulnerabilities, generate exploit code, and move through weaknesses faster than traditional security processes were built to…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRqwLeHISYWaiVNUxkANuqw6ob8Exu7_9CIEt6uHbsNa7mcNUkSWZqNZHEL3_kqPPHXVq4RGTxqZZhMdybwcVVT28qCihLUi0I5ghW9Xk5sVDB2u2kJqULx-_FEcsEHuTCU5vIwReQZghbj8HjQD4zq8H1yiGSYNlmNC25YkViZxlqndOhIp1CD2s_sLlc/s1600/wiz-webinar.jpg",
+   "cves": [],
+   "first_seen": "2026-10-29T12:21:56.545939+00:00",
+   "instructions": [
+    "It is to remove delays caused by fragmented tools, repetitive investigation, and unclear ownership."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "c9e7c513e143",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "26,400 Valid Cloud and AI Credentials Found Exposed in Public Gitee Repositories",
+   "link": "https://thehackernews.com/2026/10/26400-valid-cloud-and-ai-credentials.html",
+   "published": "2026-10-29T11:33:15+00:00",
+   "summary": "26,400 credentials that developers left in public code on Gitee, a Chinese code-hosting service, still worked when a researcher tested them. Anyone who copied one from that code could have used it. Independent researcher Ben Zimmermann found them by scanning 7.25 million public Gitee repositories and reported the…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwVszv5076OudfiraNA4yh_XuzZZof-jYaklwUgiY700oPMvBHQfKHx-8yLNwhF9NVXahFRvWwU7c0mPCsIG-GUo45Fi_LT6ecZMsaRUfaLIL6eK16qeku1PO5aMTQRV0VKJh-pjKG4rC-RyajCGjL4R_A5W6YPsps4B4-GhEbstuAN7AnelVJPwIFK5W-/s1600/gite.jpg",
+   "cves": [],
+   "first_seen": "2026-10-29T12:21:56.545939+00:00",
+   "instructions": [
+    "OpenAI: rotate the key immediately from the API Keys page, as OpenAI advises , and set spend limits to help limit charges from a leaked key.",
+    "Teams that rely on a single scanner should verify its detectors against the services they use.",
+    "Treat any key that has ever been in a public Gitee repository as exposed, and revoke it at the provider.",
+    "Deleting a key from the code or rewriting the repository's history does not revoke it , as noted by TruffleHog's maker, Truffle Security."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "dc166c047f57",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2629,6 +2648,27 @@
    "instructions_checked": true
   },
   {
+   "id": "dd1c518d70f0",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Telegram Android Flaw Lets Attackers Run Code When Users Answer Voice Calls",
+   "link": "https://thehackernews.com/2026/10/telegram-android-flaw-lets-attackers.html",
+   "published": "2026-10-29T11:39:18+00:00",
+   "summary": "A flaw in Telegram for Android allowed an attacker to run code on a victim's phone via a voice call once the victim answered, according to security startup NebuSec. The attacker needed only an ordinary Telegram account. Telegram fixed the flaw in version 12.10.4 of the app, released in late September, and NebuSec…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEguzUg6G-A4KdRvBuhj9LZ93cFfXfvMNkg3dJO0H9sfNJ3MTlecsgLEMIk5TnIrdl2N6UGB8D9rlqLduGEZVm7X-XrWZr6Xh5ZrVp38x5uTd1vHyHGcjRR2N3gctNen-CBSz8JihnNL57galBoeOVKwG5w3qsOZnqmGYdkxzjurrI3QWolmS1Qfz_E_Wog/s1600/telegram.jpg",
+   "cves": [],
+   "first_seen": "2026-10-29T12:21:56.545939+00:00",
+   "instructions": [
+    "Anyone using Telegram for Android should make sure the app is on version 12.10.4 or later.",
+    "That code did not handle missing fields correctly and accessed memory it should not, according to NebuSec.",
+    "Separately, the Zero Day Initiative (ZDI) published an advisory on October 15 about an unpatched flaw in rlottie, the library Telegram apps have used to draw animated stickers.",
+    "Telegram had told ZDI in March that checks on its servers mitigated the flaw, and in April asked ZDI for a full remote code execution chain."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "d76b50dba162",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2642,6 +2682,27 @@
    "cves": [],
    "first_seen": "2026-10-22T14:02:27.695450+00:00",
    "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "e6aa25e9694d",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "The Rise of the Threat Operator: How AI Will Redefine Security Operations and Careers",
+   "link": "https://thehackernews.com/2026/10/the-rise-of-threat-operator-how-ai-will.html",
+   "published": "2026-10-29T11:33:41+00:00",
+   "summary": "AI is beginning to take over much of the work that has traditionally defined the security analyst's job. Investigating alerts, collecting evidence, correlating activity across tools, and executing response actions are becoming tasks that AI systems can perform on their own. As these capabilities mature, security…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDZvKBLpFrPhWNRvVvRjmTtgwdpGykJjCmzNWNaytIUO2C9VadEDZjeY35hq6H33jHDxV7kAOMTyOV7RO_YUG2caQ75nA_NstH_GxfRJo57n970u4ACXwZXoKl8mizESwgP9wulusqUmSnZwjFNHIJZ2hk_VzrlCJ5HBD9_8zs8Fj1WZULiZoZMD9G9D8/s1600/conf.jpg",
+   "cves": [],
+   "first_seen": "2026-10-29T12:21:56.545939+00:00",
+   "instructions": [
+    "They determine which risks deserve attention, what the defense should accomplish, how much autonomy AI should have, and when a decision requires human intervention.",
+    "A Threat Operator must understand those dependencies and determine how the response should proceed, balancing containment requirements with operational risk.",
+    "AI agents could assess the institution's exposure, hunt for relevant activity, identify gaps in existing detections, and recommend defensive actions.",
+    "They must understand the organization's architecture, critical assets, operational dependencies, and relevant adversaries, and know how to communicate that context to AI agents."
+   ],
    "instructions_checked": true
   },
   {
@@ -3217,23 +3278,6 @@
    "instructions_checked": true
   },
   {
-   "id": "189c380ca726",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "South Carolina officials offer assistance after state capital hit with cyberattack",
-   "link": "https://therecord.media/south-carolina-officials-offer-assistance-cyber-incident",
-   "published": "2026-10-22T12:14:00+00:00",
-   "summary": "The systems impacted by the attack include the MyColaSC platform that citizens use to pay utility bills, report non-emergency issues and access other city services.",
-   "image": "https://cms.therecord.media/uploads/South_Carolina_State_House_1_1d9c7d092d.jpg",
-   "cves": [],
-   "first_seen": "2026-10-22T13:13:37.507920+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "327318fb5def",
    "source": "therecord",
    "source_name": "The Record",
@@ -3645,6 +3689,28 @@
     "Earlier this month, Microsoft also announced that systems running Windows 11 24H2 Home and Pro editions stopped receiving security and non-security preview updates and advised customers to upgrade to Windows 11 26H2 (also known as the Windows 11 2026 Update).",
     "\"To help keep your environment protected and supported, plan to upgrade to Windows Server 2025,\" the company added.",
     "\"The January 2027 Windows security update will be the last update available for this version."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "15f712f3175d",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Windows 11 KB5127936 update released with 41 changes and fixes",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5127936-update-released-with-41-changes-and-fixes/",
+   "published": "2026-10-29T12:00:07+00:00",
+   "summary": "Microsoft released the KB5127936 preview cumulative update for Windows 11 versions 25H2 and 26H2, with 41 changes, including File Explorer and Cloud rebuild improvements.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/29/Windows-11-logo.jpg",
+   "cves": [],
+   "first_seen": "2026-10-29T12:21:56.545939+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Windows 11 KB5127936 update released with 41 changes and fixes",
+    "Microsoft released the KB5127936 preview cumulative update for Windows 11 versions 25H2 and 26H2, with 41 changes, including File Explorer and Cloud rebuild improvements.",
+    "KB5127936 is a preview update that adds new features and fixes at the end of each month, letting IT admins and users test them before they roll out to the entire user base during next month's Patch Tuesday.",
+    "After you install KB5127936, Cloud rebuild can also reinstall Windows without USB media or a custom image, using an image and drivers downloaded directly from Windows Update, even when Windows won't start."
    ],
    "instructions_checked": true
   },
@@ -5876,28 +5942,6 @@
     "A security advisory and a technical write-up will follow once the update is out.",
     "None had made it into a numbered release at that point. “Based on our current assessment, we’re not recommending that everyone disable Tailscale SSH,” the vendor said.",
     "Until the patch arrives, Tailscale advises organizations to review their SSH access policies and disable SSH forwarding where it isn’t needed, which it says mitigates several of the more serious findings."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "ec99b1cdf496",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Tech and Security Companies Respond to PHP2Shell Vulnerabilities",
-   "link": "https://www.securityweek.com/tech-and-security-companies-respond-to-php2shell-vulnerabilities/",
-   "published": "2026-10-22T12:20:23+00:00",
-   "summary": "Vendors are checking their products for PHP2Shell, security firms are shipping detections, and governments are urging immediate patching. The post Tech and Security Companies Respond to PHP2Shell Vulnerabilities appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2025/05/firewall.jpeg",
-   "cves": [],
-   "first_seen": "2026-10-22T13:13:37.507920+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Security firms roll out detections and mitigations Palo Alto Networks says upcoming PAN-OS releases will address the issue, and it has shared workarounds and mitigations for customers to apply in the meantime.",
-    "Tech vendors, cybersecurity companies and government agencies have published advisories, detections and mitigations for the PHP2Shell vulnerabilities, while many software makers are still checking whether their own products are exposed.",
-    "The UK’s NCSC says discovery efforts should cover every PHP installation, not just outdated ones, and that organizations should keep an eye out for updates from vendors of appliances and services that may ship with PHP.",
-    "It also recommends hunting for backdoors that attackers may have planted before patches or mitigations were applied."
    ],
    "instructions_checked": true
   },
