@@ -2315,27 +2315,6 @@
    "instructions_checked": true
   },
   {
-   "id": "29143f2ae20d",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Node.js Brotli Decoder Bug Could Allow Remote Code Execution in All Supported Versions",
-   "link": "https://thehackernews.com/2026/10/nodejs-brotli-decoder-bug-could-allow.html",
-   "published": "2026-10-22T07:47:22+00:00",
-   "summary": "Node.js released security updates on October 21 for its three supported release lines, 22.x, 24.x and 26.x, fixing 10 flaws. The most serious is a bug in the Brotli decompression code that Node.js bundles, which the project says can allow remote code execution, meaning an attacker could run code of their choosing on…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFwR_FE94PTthun36oXfrSIiYx7N-Hb3Ww1w2gFs6x6qs0mML2v_TmYZmgqYKxB6VlMBzmIQksNdHldgX-UxykDBNwnszmBuB7IZWyWJhxei65NJlOImUWde5tYzB7D94dmieFBGhFNVAt3bL4qlhXkl4o3uw362QKgJpk37xutyRmM5bB3sHR8XMC3bc/s1600/nodejs-rce.jpg",
-   "cves": [],
-   "first_seen": "2026-10-22T09:09:57.209664+00:00",
-   "instructions": [
-    "The advisory offers no temporary workaround for the Brotli flaw, so an application that cannot upgrade immediately has no fallback within Node.js itself.",
-    "Node.js 20.x and earlier have reached end of life and will not receive the fix, so they should be moved to a supported line.",
-    "Two are TLS certificate checks an attacker could bypass by writing a server's IP address in an unusual form, so a certificate matches a host it should not (CVE-2026-106069 and CVE-2026-105483).",
-    "The copy of undici, the HTTP client behind fetch(), moves to a version that fixes three moderate advisories: one in its Subresource Integrity check and two memory-exhaustion flaws, one of them in the WebSocket client built into Node.js."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "5d0e99bc982d",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -4743,6 +4722,22 @@
    "instructions_checked": true
   },
   {
+   "id": "75699bb6148a",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "Cyber Vulnerabilities Besiege Italy, Absent Clear Cause",
+   "link": "https://www.darkreading.com/cybersecurity-analytics/cyber-vulnerabilities-besiege-italy",
+   "published": "2026-10-29T08:00:00+00:00",
+   "summary": "Researchers can't quite explain why cyber threats look so different in Italy compared to everywhere else.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt0dafcf0847efff9a/6ae24fff8ec8cff4371f87c5/rome-Sean_Gallup-GettyImages-623337092jpg.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-10-29T08:00:15.894189+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "5d6c647af363",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -5569,28 +5564,6 @@
    "instructions_checked": true
   },
   {
-   "id": "dd2c177462a4",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Meta Ordered to Pay New Mexico $25 Billion for Deceiving Users About Privacy on Facebook",
-   "link": "https://www.securityweek.com/meta-ordered-to-pay-new-mexico-25-billion-for-deceiving-users-about-privacy-on-facebook/",
-   "published": "2026-10-22T07:26:54+00:00",
-   "summary": "The $25 billion award far exceeds a $5 billion fine the Federal Trade Commission levied against Facebook in 2019. The post Meta Ordered to Pay New Mexico $25 Billion for Deceiving Users About Privacy on Facebook appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/01/instagram-facebook-meta-threads-social-media.jpeg",
-   "cves": [],
-   "first_seen": "2026-10-22T07:29:08.158313+00:00",
-   "image_checked": true,
-   "instructions": [
-    "The award will serve as a warning to tech companies that New Mexico will hold them accountable, state Attorney General Raúl Torrez said at a news conference. “This judgment should be a signal, an unambiguous message, to Silicon Valley,” he said.",
-    "Jon Steinbach has been appointed strategic technical advisor to the Pentagon’s CIO.",
-    "Preparing for disruption must become part of day-to-day operations.",
-    "Meta said the ruling and Torrez’s office’s approach to enforcement “makes it all but impossible to do business in the state of New Mexico.” “At its core, this lawsuit seeks to impose a tax on speech to enforce new rules for what people can say online."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "ceaaccb7c738",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -5671,28 +5644,6 @@
    "instructions": [
     "This includes compressed HTTP request bodies, responses fetched from untrusted servers, and compressed files,” OpenAI’s Patch the Planet initiative said in its advisory .",
     "Preparing for disruption must become part of day-to-day operations."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "a5298e0f95bc",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Oracle Patches Over 1,200 Vulnerabilities With October 2026 CPU",
-   "link": "https://www.securityweek.com/oracle-patches-over-1200-vulnerabilities-with-october-2026-cpu/",
-   "published": "2026-10-22T07:38:14+00:00",
-   "summary": "Nearly 100 vulnerabilities have been assigned a critical severity rating and Fusion Middleware received the most patches. The post Oracle Patches Over 1,200 Vulnerabilities With October 2026 CPU appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/10/Oracle.jpeg",
-   "cves": [],
-   "first_seen": "2026-10-22T07:52:55.797163+00:00",
-   "image_checked": true,
-   "instructions": [
-    "On Wednesday, one day after announcing the CPU, Oracle published a separate advisory and security alert for CVE-2026-91403 , which is Java’s (and Oracle’s) response to the eMudhra weak-key incident .",
-    "Jon Steinbach has been appointed strategic technical advisor to the Pentagon’s CIO.",
-    "Preparing for disruption must become part of day-to-day operations.",
-    "Oracle has released its Critical Patch Update (CPU) for October 2026."
    ],
    "instructions_checked": true
   },
