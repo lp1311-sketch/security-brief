@@ -283,6 +283,23 @@
    "instructions_checked": true
   },
   {
+   "id": "17b24679c82e",
+   "source": "borncity",
+   "source_name": "Born's IT and Windows Blog",
+   "official": false,
+   "source_type": "news",
+   "title": "Cybervorfall im Umfeld der Tiroler Plattform Feratel; WhatsApp-Phishing bei Reisebuchungen",
+   "link": "https://borncity.com/blog/2026/10/29/cybervorfall-im-umfeld-der-tiroler-plattform-feratel-whatsapp-phishing-bei-reisebuchungen/",
+   "published": "2026-10-29T06:38:44+00:00",
+   "summary": "Der nächste Cybervorfall mit Zugriff auf Gästedaten im Hotel- und Übernachtungsgewerbe ist publik geworden. Die Plattform Feratel.com wird in Tirol (Österreich) als Buchungs- & Meldeplattform für Tourismus und Fremdenverkehr genutzt. Im Umfeld dieser Plattform hat es dort WhatsApp-Betrugsversuche gegeben, bei ……",
+   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
+   "cves": [],
+   "first_seen": "2026-10-29T06:57:06.504565+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "99e7d99b0dd3",
    "source": "grahamcluley",
    "source_name": "Graham Cluley",
@@ -1620,6 +1637,27 @@
    "instructions_checked": true
   },
   {
+   "id": "f4eff089be53",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Attackers Exploit PHP2Shell Flaws in Internet-Exposed Palo Alto Networks Management Interfaces",
+   "link": "https://thehackernews.com/2026/10/attackers-exploit-php2shell-flaws-in.html",
+   "published": "2026-10-29T05:50:17+00:00",
+   "summary": "Palo Alto Networks on Wednesday warned that threat actors are exploiting the recently patched PHP2Shell vulnerabilities against publicly-accessible management interfaces. \"Active exploitation has been observed targeting the Palo Alto Networks management interface exposed to the internet,\" the network security company…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9wRucatO6j8IYS9drMJNn_BtgvNwY739pg33a6-50h33cCXnqi4unW5RppMfzO6TLjMdDQ-XICWN6uKTU6ai_SyLBeD8k4SdO7Kx2-QJeMbz0LSEMZkuKZls2dMSNoJmkY5nSc2SOduiSkVpKY9uFjCG0gU73hMvSyyqMANymiqb012-Z_rVUUUJtQQ5C/s1600/php-palo.jpg",
+   "cves": [],
+   "first_seen": "2026-10-29T06:57:06.504565+00:00",
+   "instructions": [
+    "\"Active exploitation has been observed targeting the Palo Alto Networks management interface exposed to the internet,\" the network security company said in an update to its advisory.",
+    "For PAN-OS versions where fix versions are not yet available, Palo Alto Networks has recommended the following mitigations -",
+    "Cybersecurity and Infrastructure Security Agency (CISA) to add CVE-2026-46300 to its Known Exploited Vulnerabilities ( KEV ) catalog, requiring federal agencies to apply the fixes by October 31, 2026.",
+    "\"The security risk posed by this issue on PAN-OS and Panorama is minimized by restricting access to the management interface to only trusted internal IP addresses according to our recommended best practice deployment guidelines.\""
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "ad8783319617",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1734,6 +1772,27 @@
     "OpenAI's disclosure page and the security firm Aikido both recommend:",
     "For Node.js, no workaround has been published, so updating the runtime is the only fix.",
     "The CVE record names Google's Brotli repository, not the PyPI packages, and GitHub's advisory still lists no affected package, which is what Dependabot reads."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "e91f33b06ca8",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "China-Linked Hackers Exploited VMware ESX Zero-Day to Reduce Audit Trail Visibility",
+   "link": "https://thehackernews.com/2026/10/china-linked-hackers-exploited-vmware.html",
+   "published": "2026-10-29T06:22:33+00:00",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a security flaw impacting Broadcom VMware ESX to its Known Exploited Vulnerabilities (KEV) catalog, after CrowdStrike revealed that it had been weaponized by a China-nexus threat actor known as Warp Panda in attacks targeting the U.S…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcr5vMvEpNtC6AAPL85NwoZLwafJYuuIYKlofAez4dmACEH-0VI-icaKusP2b9HgxcJC2AMyZkdGNfVOyXQCWqjK-_vIvw1OjptUH_maUL82An7MRxEnZQ62JZqPqwuTp6QQ8TWq4y0SRqUb6KhdXLYRJMyUHg2cQBzez3g-0G8jh2ujIgx-6FqQdWBuFr/s1600/esx-audit.jpg",
+   "cves": [
+    "CVE-2026-41709"
+   ],
+   "first_seen": "2026-10-29T06:57:06.504565+00:00",
+   "instructions": [
+    "In light of active exploitation of CVE-2026-41709, Federal Civilian Executive Branch (FCEB) agencies are recommended to apply the fixes by November 11, 2026.",
+    "In an advisory released in July 2026, Broadcom revealed that the issue was addressed in the following versions -"
    ],
    "instructions_checked": true
   },
@@ -2256,26 +2315,6 @@
    "instructions_checked": true
   },
   {
-   "id": "eff3ebf7d52f",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "New QPACK Flaws Can Crash HTTP/3 Servers, Trigger Up to 4,000-Fold Memory Amplification",
-   "link": "https://thehackernews.com/2026/10/new-qpack-flaws-can-crash-http3-servers.html",
-   "published": "2026-10-22T06:38:31+00:00",
-   "summary": "A remote attacker who has not logged in can crash many HTTP/3 web servers with a single connection, security firm FoxIO disclosed, releasing working proof-of-concept code. By sending a small batch of compressed HTTP headers that expands in memory to a much larger set, the attacker can force the server to use thousands…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidksxeLP_h5vpqmr62J_72yOAmQIRsZDLE6bpclFaHY1yQX6Dv-omiTvu_j49FuvXUOwxQT8levg89_AGRMiPNidANkEn1PSGSaNFoCVnY_VQ2Ny9D7FhLwtd9VDboOjxPi6Ssg78CdLFUzShhEt8oK6x0obKcHCZbbIMWBylnQCVCbQGUqjfbBJAKCew/s1600/http3.jpg",
-   "cves": [],
-   "first_seen": "2026-10-22T09:09:57.209664+00:00",
-   "instructions": [
-    "The affected stacks cap the compressed batch that arrives on the wire, but not the unpacked result, or they apply the cap too late, so a single request can expand into hundreds of thousands of header entries that the server holds in memory.",
-    "On quic-go, a 1 MB compressed batch unpacked into about 160,000 header fields and left roughly 15 MB held in the request, about 17 times the bytes sent; quic-go's own advisory puts the possible expansion at around 50 times.",
-    "For the stacks with no fix, FoxIO gives interim steps: on Bun, do not expose an HTTP/3 server; on mitmproxy, turn off HTTP/3 by passing --set http3=false; and for the h3 Rust library, set a sensible limit with max_field_section_size."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "29143f2ae20d",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2581,27 +2620,6 @@
     "If you cannot patch yet, disable the Environment Management Hub service in multi-server setups, or remove the PSEMHUB application in single-server setups, as Oracle's alert advises.",
     "If you may already be hit, Mandiant recommends treating any host with a web shell as compromised, preserving evidence, and rotating every credential reachable from the PeopleSoft tier.",
     "ShinyHunters steals data and then demands payment, so affected organizations should prepare for extortion."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "3d29fe5d9f89",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Someone Tried to Exploit PHP2Shell 4 Days Before the Vulnerabilities Were Publicly Disclosed",
-   "link": "https://thehackernews.com/2026/10/someone-tried-to-exploit-php2shell-4.html",
-   "published": "2026-10-22T06:34:10+00:00",
-   "summary": "Amazon's Threat Intelligence team on Wednesday said it detected an attempt to exploit the newly disclosed PHP2Shell vulnerabilities dating back to October 17, 2026, against its MadPot honeypot service, as the flaws come under broad exploitation in the wild following the release of the patches. \"The exploit attempt…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZXm1gLzaKPP-QW888zIx_tXRCirkgZBsOOn0icTEOrFBf7w28955jH1zY8jxw2Cf-g2Qp9mPHgrBe7E5dux_L2XUzdaVZfvRgj_utCT-nTiU7haAkAr_F6eEeW5YJmtwbtJoIuumhnv5F9tFG_2BcLwnaqwkFGWEvFnWsUDHHuobMhZ_letCSD6I56Lw_/s1600/php-hacks.jpg",
-   "cves": [],
-   "first_seen": "2026-10-22T09:09:57.209664+00:00",
-   "instructions": [
-    "Cybersecurity and Infrastructure Security Agency ( CISA ), urging organizations to apply the fixes as soon as possible or consider taking them offline.",
-    "\"It is likely there is a long tail of environments needing to apply this patch as PHP is bundled into many other operating system distributions, as well as is found in many historic environments.\"",
-    "AI-assisted analysis makes it cheaper to turn a patch diff or advisory into a working exploit.",
-    "\"Chainguard had received the patch in advance so its users could update the moment the vulnerabilities were disclosed,\" the PHP Foundation said."
    ],
    "instructions_checked": true
   },
