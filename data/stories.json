@@ -2352,27 +2352,6 @@
    "instructions_checked": true
   },
   {
-   "id": "1d3516a0d0a6",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "OpenCode Flaw Lets Malicious MCP Servers Execute Code During Sign-In on Windows and WSL",
-   "link": "https://thehackernews.com/2026/10/opencode-flaw-lets-malicious-mcp.html",
-   "published": "2026-10-22T10:44:05+00:00",
-   "summary": "A flaw in the OpenCode AI coding agent allowed a malicious or hijacked MCP server to run code on a developer's Windows or WSL machine when the developer signed in. OpenCode connects to MCP (Model Context Protocol) servers to add outside tools, and such code would run with the developer's own access. Anomaly, the…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUmn80CiQx35trhXNaAwJka_Z3T-PKQrz__dlAW1GDDVwfrk2WHit1W6GZBaaAT-a9SrmqqauUhw0raYLEOS3Vv-LNxdu0a2bmJebJWVj5mBadfgxN1N1yVREXflCcV7cPmShswRE8PC0qspFY82MDEKe8MJImYVqJCBYLwTLpCHM1IzjDX7KsOAYs7tc/s1600/opencode-mcp.jpg",
-   "cves": [],
-   "first_seen": "2026-10-22T11:35:28.484063+00:00",
-   "instructions": [
-    "It did not request a CVE or publish a security advisory, so vulnerability scanners will not flag the builds still at risk: 1.0.137 through 1.18.32.",
-    "Anomaly has published advisories for other OpenCode code-execution flaws this year, including one fixed in August.",
-    "Anyone running OpenCode on Windows or WSL should upgrade and check which servers they are connected to.",
-    "If you cannot upgrade yet, remove any remote MCP servers you have not vetted from your OpenCode configuration."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "fd2c8a91369a",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -4846,6 +4825,22 @@
    "instructions_checked": true
   },
   {
+   "id": "196b1e60527b",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "Shadowy AI Relay Disables OpenAI Codex, Claude Code Sandboxes",
+   "link": "https://www.darkreading.com/threat-intelligence/ai-relay-service-openai-codex-claude-code-sandboxes",
+   "published": "2026-10-29T10:00:00+00:00",
+   "summary": "The enigmatic service is providing popular AI coding tools to mainland China and other regions where OpenAI and Anthropic products are not officially for sale — but with key security features turned off.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt036489a36358dea1/6a971529de036c92b216129d/aicoding-AreeSarak-Getty-2252848921.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-10-29T10:48:10.806652+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "abfff6ba3917",
    "source": "msblog",
    "source_name": "Microsoft Security Blog",
@@ -5082,6 +5077,28 @@
    "instructions_checked": true
   },
   {
+   "id": "77d976efa8e0",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Attackers Exploit Second Cisco Firewall VPN Zero-Day Since August",
+   "link": "https://www.securityweek.com/attackers-exploit-second-cisco-firewall-vpn-zero-day-since-august/",
+   "published": "2026-10-29T09:47:10+00:00",
+   "summary": "An exploited flaw in the Remote Access SSL VPN service lets unauthenticated attackers remotely force ASA and FTD firewalls to reload. The post Attackers Exploit Second Cisco Firewall VPN Zero-Day Since August appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2023/04/Cisco_router_hack-e1793267161770.jpg",
+   "cves": [],
+   "first_seen": "2026-10-29T10:48:10.806652+00:00",
+   "image_checked": true,
+   "instructions": [
+    "For an attack to work, the firewall must be running an unpatched release, have its SSL VPN login service reachable, and use secondary authentication in an affected tunnel group.",
+    "Cisco cautioned that dropping secondary authentication makes remote access VPN less secure, and it recommends upgrading instead.",
+    "iOS, macOS 27.2 Patch 286 Bugs; Fix for Exploited Flaw Backported to iOS 18",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "948084576510",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -5209,24 +5226,22 @@
    "instructions_checked": true
   },
   {
-   "id": "34f12a1f7c34",
+   "id": "13fcb9283069",
    "source": "securityweek",
    "source_name": "SecurityWeek",
    "official": false,
    "source_type": "news",
-   "title": "Cisco Patches 34 Vulnerabilities Across Multiple Products",
-   "link": "https://www.securityweek.com/cisco-patches-34-vulnerabilities-across-multiple-products/",
-   "published": "2026-10-22T10:05:21+00:00",
-   "summary": "Critical-severity security defects could lead to command execution, authentication bypass, and XSS attacks. The post Cisco Patches 34 Vulnerabilities Across Multiple Products appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2025/02/Cisco-company-logo.jpeg",
+   "title": "Cisco SD-WAN Zero-Day Exploitation Tied to Volt Typhoon’s ‘Silent Train’ Network",
+   "link": "https://www.securityweek.com/cisco-sd-wan-zero-day-exploitation-tied-to-volt-typhoons-silent-train-network/",
+   "published": "2026-10-29T10:29:25+00:00",
+   "summary": "Cisco Talos linked SD-WAN key-stealing malware to infrastructure overlapping Volt Typhoon’s Silent Train network, which Lumen detailed. The post Cisco SD-WAN Zero-Day Exploitation Tied to Volt Typhoon’s ‘Silent Train’ Network appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/06/Cisco-network-switch-exploit.webp",
    "cves": [],
-   "first_seen": "2026-10-22T10:18:32.086776+00:00",
+   "first_seen": "2026-10-29T10:48:10.806652+00:00",
    "image_checked": true,
    "instructions": [
-    "Additional information can be found on the company’s security advisories page and in its October 21 notification .",
-    "Jon Steinbach has been appointed strategic technical advisor to the Pentagon’s CIO.",
-    "Preparing for disruption must become part of day-to-day operations.",
-    "Browsers Block eMudhra Intermediate CAs Over Recoverable Private Keys"
+    "iOS, macOS 27.2 Patch 286 Bugs; Fix for Exploited Flaw Backported to iOS 18",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
   },
@@ -5771,28 +5786,6 @@
     "Otherwise, they should check the call indicator to make sure the call indeed ended.",
     "Jon Steinbach has been appointed strategic technical advisor to the Pentagon’s CIO.",
     "Preparing for disruption must become part of day-to-day operations."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "eb08dcb4a958",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Splunk, SolarWinds Release Fresh Security Updates",
-   "link": "https://www.securityweek.com/splunk-solarwinds-release-fresh-security-updates/",
-   "published": "2026-10-22T10:45:24+00:00",
-   "summary": "Patched vulnerabilities could allow attackers to execute code, elevate privileges, and leak sensitive information. The post Splunk, SolarWinds Release Fresh Security Updates appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2025/07/software-vulnerability-patch-update.jpg",
-   "cves": [],
-   "first_seen": "2026-10-22T10:57:52.639018+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Observability Self-Hosted version 2026.4 and Patch Manager version 2026.4 contain patches for these security defects.",
-    "Jon Steinbach has been appointed strategic technical advisor to the Pentagon’s CIO.",
-    "Preparing for disruption must become part of day-to-day operations.",
-    "The update also resolves high-severity information disclosure, improper neutralization, improper resource control, and protection defects."
    ],
    "instructions_checked": true
   },
