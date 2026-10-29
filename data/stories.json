@@ -336,25 +336,6 @@
    "instructions_checked": true
   },
   {
-   "id": "7c1ce9da91a8",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-105014 Azure Pipelines Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105014",
-   "published": "2026-10-22T14:00:00+00:00",
-   "summary": "Improper neutralization of special elements used in a command ('command injection') in Azure Pipelines allows an unauthorized attacker to execute code over a network.",
-   "image": null,
-   "cves": [
-    "CVE-2026-105014"
-   ],
-   "first_seen": "2026-10-22T21:56:00.161553+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "1683c2d21580",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -369,44 +350,6 @@
     "CVE-2026-105728"
    ],
    "first_seen": "2026-10-26T20:59:29.155748+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "d078ae182673",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-108456 Azure AI Foundry Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108456",
-   "published": "2026-10-22T14:00:00+00:00",
-   "summary": "Server-side request forgery (ssrf) in Azure AI Foundry allows an authorized attacker to elevate privileges over a network.",
-   "image": null,
-   "cves": [
-    "CVE-2026-108456"
-   ],
-   "first_seen": "2026-10-22T21:56:00.161553+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "e29c8705d959",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-110063 VM Inspector for Azure Virtual Machines Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-110063",
-   "published": "2026-10-22T14:00:00+00:00",
-   "summary": "Improper link resolution before file access ('link following') in VM Inspector for Azure Virtual Machines allows an unauthorized attacker to elevate privileges over a network.",
-   "image": null,
-   "cves": [
-    "CVE-2026-110063"
-   ],
-   "first_seen": "2026-10-22T21:56:00.161553+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -1286,25 +1229,6 @@
    "instructions_checked": true
   },
   {
-   "id": "4273c05ff1b7",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-83938 Azure Kubernetes Configuration Service Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83938",
-   "published": "2026-10-22T14:00:00+00:00",
-   "summary": "Missing authentication for critical function in Azure Kubernetes Configuration Service allows an unauthorized attacker to elevate privileges over a network.",
-   "image": null,
-   "cves": [
-    "CVE-2026-83938"
-   ],
-   "first_seen": "2026-10-22T21:56:00.161553+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "c39c60375371",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -1319,25 +1243,6 @@
     "CVE-2026-88078"
    ],
    "first_seen": "2026-10-27T20:38:35.028966+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "4dbd6628d42d",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-96185 Microsoft Exchange Online Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96185",
-   "published": "2026-10-22T14:00:00+00:00",
-   "summary": "Stack-based buffer overflow in Microsoft Exchange Online allows an authorized attacker to execute code over a network.",
-   "image": null,
-   "cves": [
-    "CVE-2026-96185"
-   ],
-   "first_seen": "2026-10-22T21:56:00.161553+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -1400,44 +1305,6 @@
    "instructions_checked": true
   },
   {
-   "id": "97009cc4e26d",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-96251 Microsoft PowerShell Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96251",
-   "published": "2026-10-22T14:00:00+00:00",
-   "summary": "Corrected Fixed Build Number and Download links in the Security Updates table. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-96251"
-   ],
-   "first_seen": "2026-10-22T22:31:49.117772+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "a9a8f75e73bb",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-96303 Microsoft PowerShell Security Feature Bypass Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96303",
-   "published": "2026-10-22T14:00:00+00:00",
-   "summary": "Corrected Fixed Build Number and Download links in the Security Updates table. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-96303"
-   ],
-   "first_seen": "2026-10-22T22:31:49.117772+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "173f37e989f0",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -1452,25 +1319,6 @@
     "CVE-2026-96311"
    ],
    "first_seen": "2026-10-26T20:59:29.155748+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "6b9aa0664452",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-97785 AAD App Proxy Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97785",
-   "published": "2026-10-22T14:00:00+00:00",
-   "summary": "Improper authentication in AAD App Proxy allows an unauthorized attacker to elevate privileges over a network.",
-   "image": null,
-   "cves": [
-    "CVE-2026-97785"
-   ],
-   "first_seen": "2026-10-22T21:56:00.161553+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -2146,6 +1994,22 @@
    "instructions_checked": true
   },
   {
+   "id": "005f2528861a",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Google's Gemini 4 Carbon Leads Benchmarks for Finding, Exploiting, and Patching Vulnerabilities",
+   "link": "https://thehackernews.com/2026/10/googles-gemini-4-carbon-leads.html",
+   "published": "2026-10-29T13:42:40+00:00",
+   "summary": "Google on Wednesday took the wraps off Gemini 4 Carbon, its latest frontier model with state-of-the-art cybersecurity and long-horizon capabilities. \"It shows significant gains across coding and agentic tasks as well as across key capabilities critical for cybersecurity defense, landing a firm lead in SEC-bench Pro…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBMb78BxIXnGaXFzCXPdswdQZsuh8rz63Y22pLX3cOkgRgaPv3KJgw6fRULDT3am1YO4eA1obnh0aOdxZy4KVZMww8sxNOtxzZXYcouotzbB25LVdJrCeDk0MQsgCmsYQBAaGdwyhmiMNa2Y90ujuXFXZPLTIrOo1PB6vtWqWAXygOvM72cEmXvHTN9Ktw/s1600/google-gemini.jpg",
+   "cves": [],
+   "first_seen": "2026-10-29T14:36:14.704007+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "f059789b2437",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2225,24 +2089,6 @@
     "In an advisory for the vulnerability, Horizon3.ai described it as an unauthenticated SQL injection vulnerability that could be chained to achieve remote code execution.",
     "It was patched by Oracle last week as part of its Critical Patch Update .",
     "Specifically, an attacker can issue a crafted request to the vulnerable TCF servlet at \"/OA_HTML/AppsTCFServer\" to run SQL with the privileges of the APPS database user and ultimately enable system command execution with the privileges of the EBS application account."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "c145f24074c2",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "INTERPOL Arrests 1,462 Suspects, Disrupts 10,909 Cybercrime Networks in Global Crackdown",
-   "link": "https://thehackernews.com/2026/10/interpol-arrests-1462-suspects-disrupts.html",
-   "published": "2026-10-22T13:38:22+00:00",
-   "summary": "INTERPOL on Thursday announced that a coordinated law enforcement action has disrupted 10,909 malicious networks and recovered more than $105 million in illicit funds. In tandem, the effort saw law enforcement agencies from 21 countries arrest 1,462 suspects. Codenamed Operation Serengeti III, the cybercrime crackdown…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgztarCkWkHIW3EBCYV1Uaoz1pLURW3sA5E381ALhft79JhEp71NrhOngLJTWtoT1EL-mI7G6sz0geVq0clphhNqFhyphenhyphen6zPdTK1KYcNAPR43HvdicTavSv5eFTsMTVh36gi570aIN265ZJnbfwvMcWSIriWeU_28JWsofVj-9k1qQdKddXoDeh6dNeWy2ViE/s1600/interpol-1.jpg",
-   "cves": [],
-   "first_seen": "2026-10-22T14:13:52.529451+00:00",
-   "instructions": [
-    "\"Instead of waiting for an attack and then investigating the damage, we can help expose the networks behind criminal operations and enable defensive actions."
    ],
    "instructions_checked": true
   },
@@ -2908,25 +2754,6 @@
    "instructions_checked": true
   },
   {
-   "id": "14aa600d7f56",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Cybercrime crackdown across Africa leads to 1,462 arrests, $105 million seized",
-   "link": "https://therecord.media/africa-cybercrime-interpol-arrests",
-   "published": "2026-10-22T13:30:00+00:00",
-   "summary": "More than 1,400 suspected cybercriminals were arrested across Africa this summer as part of a crackdown on the gangs perpetrating online fraud, ransomware and business email compromise attacks, Interpol said.",
-   "image": "https://cms.therecord.media/uploads/scam_compound_Interpol_f24bead420.jpg",
-   "cves": [],
-   "first_seen": "2026-10-22T14:02:27.695450+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Simon Mundeyi, a spokesman for the Ugandan Ministry of Internal Affairs, said the majority were from South and East Asia and were operating from an apartment complex that appeared to restrict their ability to exit."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "372f6f54af20",
    "source": "therecord",
    "source_name": "The Record",
@@ -2976,6 +2803,23 @@
    "image": "https://cms.therecord.media/uploads/AI_agents_1_e0b6353553.jpg",
    "cves": [],
    "first_seen": "2026-10-22T17:14:04.674572+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "342c74932bcc",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Cyberattack disrupts Belgian tax services before filing deadline",
+   "link": "https://therecord.media/cyberattack-disrupts-belgian-tax-services-before-deadline",
+   "published": "2026-10-29T13:31:00+00:00",
+   "summary": "The Federal Public Service Finance (FPS Finance), which oversees taxation and other financial administration, said Wednesday that it was investigating the extent of the attack and had temporarily suspended access to MyMinfin, the country's main online platform for managing tax and financial affairs.",
+   "image": "https://cms.therecord.media/uploads/scam_click_tax_season_76bf967efe.jpg",
+   "cves": [],
+   "first_seen": "2026-10-29T14:36:14.704007+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -3031,6 +2875,25 @@
    "first_seen": "2026-10-23T17:54:14.622043+00:00",
    "image_checked": true,
    "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "147d29214849",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "FTC to probe major companies over personalized pricing and pay",
+   "link": "https://therecord.media/ftc-rideshare-airlines-data",
+   "published": "2026-10-29T13:45:00+00:00",
+   "summary": "The Federal Trade Commission ordered nine food delivery, airline and ride-sharing companies to turn over detailed information on how they harness personal data to set individual consumer prices and employee compensation.",
+   "image": "https://cms.therecord.media/uploads/Delivery_driver_50e30e7e9a.jpg",
+   "cves": [],
+   "first_seen": "2026-10-29T14:36:14.704007+00:00",
+   "image_checked": true,
+   "instructions": [
+    "The companies employing gig workers also must give the agency the “inputs, tools and procedures” they deploy to tweak individual workers’ compensation and customer pricing based on personal data and unique characteristics, the agency said."
+   ],
    "instructions_checked": true
   },
   {
@@ -3179,6 +3042,26 @@
    "first_seen": "2026-10-27T21:16:50.047660+00:00",
    "image_checked": true,
    "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "56ef05760e8e",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "University of New Mexico restores hospital systems, urges no contact with hackers",
+   "link": "https://therecord.media/new-mexico-cyberattack-hospital",
+   "published": "2026-10-29T13:30:00+00:00",
+   "summary": "The University of New Mexico was able to restore systems used by its healthcare facilities after a cyberattack forced it to divert ambulances and cancel classes at its medical school.",
+   "image": "https://cms.therecord.media/uploads/UNM_cancer_center_241f2109ee.jpg",
+   "cves": [],
+   "first_seen": "2026-10-29T14:36:14.704007+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Patients, students, employees and community members should not respond to or otherwise engage with anyone claiming responsibility for this incident,” HSC said.",
+    "In addition to offering basic cyber guidance, HSC said anyone contacted by the hackers should keep the message and reach out to the FBI's Internet Crime Complaint Center."
+   ],
    "instructions_checked": true
   },
   {
@@ -3580,6 +3463,28 @@
    "instructions_checked": true
   },
   {
+   "id": "f34fb5d0be19",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Microsoft fixes Remote Desktop failures caused by recent Windows updates",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-remote-desktop-failures-caused-by-recent-windows-updates/",
+   "published": "2026-10-29T14:35:40+00:00",
+   "summary": "Microsoft has resolved a known issue that prevents non-admin users from connecting to devices via Remote Desktop when the \"Administrator protection\" security feature is enabled.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/29/Windows_headpic.jpg",
+   "cves": [],
+   "first_seen": "2026-10-29T14:36:14.704007+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Microsoft acknowledged on October 13 that Remote Desktop connections may fail with error 0xC000000D after installing the KB5124010 September 2026 non-security preview update (or Windows updates released since then) on systems running Windows 11 24H2 and later.",
+    "On Wednesday, Microsoft confirmed that this issue is fixed for users who installed this month's KB5127936 preview update .",
+    "\"We recommend you install the latest security update for your device as it contains important improvements and issue resolutions, including this one.\"",
+    "Microsoft: Windows KB5124010 update crashes some games and apps"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "cf08225efb6b",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -3734,6 +3639,27 @@
    "instructions_checked": true
   },
   {
+   "id": "d340597c608d",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "3 Ways AI Agents Already Operate in Your Browser",
+   "link": "https://www.bleepingcomputer.com/news/security/3-ways-ai-agents-already-operate-in-your-browser/",
+   "published": "2026-10-29T14:00:10+00:00",
+   "summary": "AI agents can control authenticated browsers, interact with corporate applications, and access sensitive data while appearing to act as legitimate employees. Keep Aware examines three ways agents operate inside browsers and why traditional security tools may struggle to distinguish their activity from human users.",
+   "image": "https://www.bleepstatic.com/content/posts/2026/10/27/ai-agents-header.jpg",
+   "cves": [],
+   "first_seen": "2026-10-29T14:36:14.704007+00:00",
+   "image_checked": true,
+   "instructions": [
+    "These capabilities aren't necessarily governed by extension permissions, so existing extension controls may not apply.",
+    "These permissions enable the functionality but also expand what the extension can access.",
+    "We help you discover AI-enabled browsers and extensions, monitor AI activity across your workforce, and enforce data protection policies before sensitive information leaves the tab."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "201a6bfc4c9c",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -3878,6 +3804,27 @@
     "Although details on the PHP2Shell security flaws (including the CVE IDs and mitigation measures shared with critical infrastructure providers) leaked and some proof-of-concept (PoC) exploits were published online before patches went live, the PHP security team said that none were functional.",
     "On Friday, the PHP security team also shared mitigation for a new RCE flaw (CVE-2026-115560) with no patch, exploitable when targeting systems \"with an unusual combination of configuration and application code.\"",
     "​ The PHP security team patched the two flaws on Wednesday, October 21, one day after urging security teams to install the security updates as soon as they became available."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "748d67ab1d92",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "CISA warns of Fragnesia Linux flaw chained in PHP2Shell attacks",
+   "link": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-fragnesia-linux-flaw-chained-in-php2shell-attacks/",
+   "published": "2026-10-29T13:59:48+00:00",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies to patch a high-severity Linux kernel privilege escalation bug that attackers are chaining with the PHP2Shell flaws in the wild.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/29/Linux_tux.jpg",
+   "cves": [],
+   "first_seen": "2026-10-29T14:36:14.704007+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies to patch a high-severity Linux kernel privilege escalation bug that attackers are chaining with the PHP2Shell flaws in the wild.",
+    "CISA added CVE-2026-46300 to its Known Exploited Vulnerabilities (KEV) Catalog on Wednesday and ordered federal agencies to patch their systems by Saturday 10, as mandated by its Binding Operational Directive (BOD) 26-04.",
+    "CISA warns feds to fully patch actively exploited Cisco flaws"
    ],
    "instructions_checked": true
   },
@@ -4176,28 +4123,6 @@
     "The malicious packages have been removed, but potentially impacted users should stop affected deployments and inspect environments without launching the Python interpreter.",
     "Currently, the recommended recovery version is LiteLLM 1.106.2, which is the latest clean release before the attack.",
     "Mozilla, Google, Apple block compromised eMudhra CA certificates"
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "92b876190d73",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Machine speed attacks require machine speed detection and response",
-   "link": "https://www.bleepingcomputer.com/news/security/machine-speed-attacks-require-machine-speed-detection-and-response/",
-   "published": "2026-10-22T14:02:12+00:00",
-   "summary": "Attackers can steal credentials and begin exfiltrating data within minutes, often before security teams can respond. Exaforce examines real-world attacks involving stolen GitHub tokens, malicious AI installers, and MFA phishing, explaining why faster detection and automated containment are critical.",
-   "image": "https://www.bleepstatic.com/content/posts/2026/10/20/exaforce-header-iamge.jpg",
-   "cves": [],
-   "first_seen": "2026-10-22T14:13:52.529451+00:00",
-   "image_checked": true,
-   "instructions": [
-    "TL;DR: Our analysis shows attackers are now enumerating or pulling data within 15 minutes of getting into an environment, and the tools that should have caught them were not effective.",
-    "Assessing the scope of the impact should involve a comprehensive analysis of all tokens/credentials minted by the user.",
-    "Password resets, account disablement, permanent deletions, and anything a production service depends on should require human approval.",
-    "We recommend starting with services that hold your most critical data."
    ],
    "instructions_checked": true
   },
@@ -4611,22 +4536,6 @@
    "instructions_checked": true
   },
   {
-   "id": "3c321f073d20",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "As AI Risks Grow, Insurers Split on Covering the Damage",
-   "link": "https://www.darkreading.com/cyber-risk/cyber-insurance-covering-ai-damage",
-   "published": "2026-10-22T14:21:22+00:00",
-   "summary": "Some build specialized agentic AI coverage, while major carriers quietly exclude it — leaving enterprises exposed without their knowledge.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltdb007aa0874801a0/66d0c3e50b3ca622a148bb6f/Mungkhood_Studio-cyber-insurance-shutterstock.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-10-23T12:10:35.110900+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "ff1522ac28cb",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -4831,6 +4740,22 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltc41ecdc8029e697f/6ae0df62008cb1fe5c9e9737/scream-Jesse_Grant-GettyImages-2261562479.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-10-27T18:21:24.372013+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "c5cb56f9b754",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "AI Takes Root in Hospital Corridors, Raises Security Stakes",
+   "link": "https://www.darkreading.com/cybersecurity-operations/ai-root-hospital-corridors-raised-security-stakes",
+   "published": "2026-10-28T15:29:06+00:00",
+   "summary": "Artificial intelligence (AI) is everywhere in healthcare, from doctors’ intake forms to cancer screenings. But, in some cases, life-and-death uses are outpacing cyber security.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt27f5645084863935/6ae21761f2adb985c612d4c7/GettyImages-1415423396.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-10-29T14:36:14.704007+00:00",
    "instructions": [],
    "instructions_checked": true
   },
@@ -5102,6 +5027,28 @@
    "instructions_checked": true
   },
   {
+   "id": "b326a55c6171",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Adobe, Veeam, Juniper Networks Patch Critical Vulnerabilities",
+   "link": "https://www.securityweek.com/adobe-veeam-juniper-networks-patch-critical-vulnerabilities/",
+   "published": "2026-10-29T13:42:52+00:00",
+   "summary": "The flaws could lead to arbitrary code execution, authorization bypasses, and privilege escalation. The post Adobe, Veeam, Juniper Networks Patch Critical Vulnerabilities appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/07/software-vulnerability-patch-update.jpg",
+   "cves": [],
+   "first_seen": "2026-10-29T14:36:14.704007+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Successful exploitation could lead to arbitrary code execution, security feature bypass, and privilege escalation, Adobe warns in a priority 2 advisory.",
+    "In a separate advisory covering the PHP2Shell vulnerabilities, the company noted that CVE-2026-109618 affects Junos OS, but not in an exploitable way.",
+    "The Campaign Classic update resolves eight critical-severity bugs, including code/command injection, incorrect authorization, and XSS issues.",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "89547e1892b3",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -5185,6 +5132,27 @@
     "Until the fixes are deployed, administrators should restrict access to the VCO interface, review recent admin activity, monitor for suspicious access, block outbound ports, and monitor for backdoor daemons and webshells.",
     "Jon Steinbach has been appointed strategic technical advisor to the Pentagon’s CIO.",
     "Preparing for disruption must become part of day-to-day operations."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "1b4f07400fac",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "BAE Says No Data Extracted in Incident Hitting Bankruptcy Courts",
+   "link": "https://www.securityweek.com/bae-says-no-data-extracted-in-incident-hitting-bankruptcy-courts/",
+   "published": "2026-10-29T13:26:49+00:00",
+   "summary": "BAE Systems says no data was extracted and no PII was breached in the incident that disrupted US bankruptcy court notices for weeks. The post BAE Says No Data Extracted in Incident Hitting Bankruptcy Courts appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2023/04/law-court-order-lawsuit-e1782819788980.jpg",
+   "cves": [],
+   "first_seen": "2026-10-29T14:36:14.704007+00:00",
+   "image_checked": true,
+   "instructions": [
+    "iOS, macOS 27.2 Patch 286 Bugs; Fix for Exploited Flaw Backported to iOS 18",
+    "Adobe, Veeam, Juniper Networks Patch Critical Vulnerabilities",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
   },
@@ -5289,6 +5257,28 @@
    "instructions": [
     "Preparing for disruption must become part of day-to-day operations.",
     "iOS, macOS 27.2 Patch 286 Bugs; Fix for Exploited Flaw Backported to iOS 18",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "67386231cf52",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Cisco Open Sources Quarry to Catch AI Agent Attacks Hidden in Harmless Steps",
+   "link": "https://www.securityweek.com/cisco-open-sources-quarry-to-catch-ai-agent-attacks-hidden-in-harmless-steps/",
+   "published": "2026-10-29T14:18:03+00:00",
+   "summary": "Cisco open sourced Project Quarry, a rule language for detecting AI agent attacks that only emerge across sequences of benign actions. The post Cisco Open Sources Quarry to Catch AI Agent Attacks Hidden in Harmless Steps appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/09/AI-artificial-intelligence-training.jpeg",
+   "cves": [],
+   "first_seen": "2026-10-29T14:36:14.704007+00:00",
+   "image_checked": true,
+   "instructions": [
+    "So, whenever a new attack technique is recognized, defenders must respond immediately by writing a new Quarry rule that can be used by all organizations everywhere.",
+    "A rule that passes in a coding agent should behave the same way at runtime.",
+    "Adobe, Veeam, Juniper Networks Patch Critical Vulnerabilities",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
@@ -5407,28 +5397,6 @@
    "first_seen": "2026-10-26T15:48:52.190996+00:00",
    "image_checked": true,
    "instructions": [
-    "Preparing for disruption must become part of day-to-day operations."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "dcda11bca225",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Hacker Conversations: Corey Thuen and the Evil Bit",
-   "link": "https://www.securityweek.com/hacker-conversations-corey-thuen-and-the-evil-bit/",
-   "published": "2026-10-22T14:31:34+00:00",
-   "summary": "Corey Thuen hires hackers for what he calls ‘the evil bit’ — an adversarial streak he believes is either there or it isn’t. The post Hacker Conversations: Corey Thuen and the Evil Bit appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/10/Hacker-Conversations-Corey-Thuen.jpeg",
-   "cves": [],
-   "first_seen": "2026-10-22T14:37:48.500962+00:00",
-   "image_checked": true,
-   "instructions": [
-    "The old school hacking ethos, which still lingers, is that all information should be free”.",
-    "The initial focus arose because that was INL’s focus, but he retained the interest because it was challenging and a bit different. “You’re doing protocol reverse engineering, including some custom protocols that you must dissect and do low-level network binary type things.",
-    "Jon Steinbach has been appointed strategic technical advisor to the Pentagon’s CIO.",
     "Preparing for disruption must become part of day-to-day operations."
    ],
    "instructions_checked": true
