@@ -24,24 +24,6 @@
    "instructions_checked": true
   },
   {
-   "id": "49672d89136f",
-   "source": "ars",
-   "source_name": "Ars Technica Security",
-   "official": false,
-   "source_type": "news",
-   "title": "Disgraced eMudhra drops out of TLS business after using cert private key of 4",
-   "link": "https://arstechnica.com/security/2026/10/disgraced-emudhra-drops-out-of-tls-business-following-certificate-debacle/",
-   "published": "2026-10-22T20:17:52+00:00",
-   "summary": "eMudhra, the certificate authority that issued eight intermediate TLS credentials so weak that anyone could mint certificates for any website or mail server—one had a private encryption key of just 4—said it’s getting out of the business. V. Srinivasan, chairman of India-based eMudhra Limited, cited increasing costs…",
-   "image": "https://cdn.arstechnica.net/wp-content/uploads/2025/02/GettyImages-1778229942-1152x648.jpg",
-   "cves": [],
-   "first_seen": "2026-10-22T20:32:46.420366+00:00",
-   "instructions": [
-    "Still other devices, such as embedded devices, may never be able to block them."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "ec59d102565d",
    "source": "ars",
    "source_name": "Ars Technica Security",
@@ -3054,6 +3036,26 @@
    "instructions_checked": true
   },
   {
+   "id": "6c129a8658fc",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Limited reports of PHP bug exploitation emerge",
+   "link": "https://therecord.media/php2shell-successful-exploitation-reports-emerge",
+   "published": "2026-10-29T20:01:25+00:00",
+   "summary": "One cyber firm listed a half-dozen exploitations of the PHP2Shell bugs, and another identified a well targeted, suspected Chinese campaign that breached U.S. \"government affiliated\" servers.",
+   "image": "https://cms.therecord.media/uploads/server_getty_images_unsplash_d927a0bf6f.jpg",
+   "cves": [],
+   "first_seen": "2026-10-29T21:09:08.734675+00:00",
+   "image_checked": true,
+   "instructions": [
+    "The Cybersecurity and Infrastructure Security Agency (CISA) declined to comment on the report, directing Recorded Future News to previous advisories about PHP2Shell.",
+    "Cybersecurity firm GreyNoise said it has seen at least six successful exploitations of CVE-2026-109618 and CVE-2026-109619, colloquially known as “PHP2Shell.” The bugs were added to a U.S. government catalog of exploited vulnerabilities this week, and federal agencies were given until Thursday to install patches."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "8bb708370d7a",
    "source": "therecord",
    "source_name": "The Record",
@@ -3108,23 +3110,6 @@
     "Governments have an important role to play in setting robust safety standards for AI, and we’re committed to working with Texas and other states on advancing pragmatic AI policies that apply to the entire AI industry - not just one company.\"",
     "A spokesperson for OpenAI said the company “works closely with experts to continually improve ChatGPT, mitigate risks and build additional safeguards."
    ],
-   "instructions_checked": true
-  },
-  {
-   "id": "0589859b680b",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Toronto crime tips org freezes operations after details of data breach come to light",
-   "link": "https://therecord.media/toronto-crime-tips-org-freezes-ops-after-breach",
-   "published": "2026-10-22T20:52:00+00:00",
-   "summary": "Late Wednesday night the Toronto chapter of Crime Stoppers broke ranks with the national association, revealing a timeline showing what it knew and when along with an announcement that it will pause operations.",
-   "image": "https://cms.therecord.media/uploads/Toronto_Police_PP_13cea6d12f.jpg",
-   "cves": [],
-   "first_seen": "2026-10-22T21:14:33.364375+00:00",
-   "image_checked": true,
-   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -3628,26 +3613,6 @@
     "They believe that the attacker used this mitigation gap to their advantage and \"decided to invest time in understanding how BlackLotus works and creating a copycat of this bootkit.\"",
     "“The patch for the Baton Drop vulnerability is designed to revoke the “Windows Production PCA 2011” certificate used to sign vulnerable UEFI components,” Kaspersky explains .",
     "“However, this revocation does not happen automatically upon patch installation - the user has to trigger it manually.”"
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "177124c993da",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Capcom confirms data breach affecting 11.7 million accounts",
-   "link": "https://www.bleepingcomputer.com/news/security/capcom-confirms-data-breach-affecting-117-million-accounts/",
-   "published": "2026-10-22T20:22:45+00:00",
-   "summary": "Japanese gaming giant Capcom has confirmed that hackers breached its membership service, CAPCOM ID, exposing more than 11.7 million customer email addresses and associated information.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/22/capcom.jpg",
-   "cves": [],
-   "first_seen": "2026-10-22T20:32:46.420366+00:00",
-   "image_checked": true,
-   "instructions": [
-    "For another subset of 196 accounts, the hackers changed the CAPCOM ID login passwords in an attempt to lock the owners out, but the company took action and reset them.",
-    "Mozilla, Google, Apple block compromised eMudhra CA certificates"
    ],
    "instructions_checked": true
   },
@@ -4587,22 +4552,6 @@
    "instructions_checked": true
   },
   {
-   "id": "778da97616c1",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "Microsoft Links Storm-0940 to ConnectWise Supply Chain Attack",
-   "link": "https://www.darkreading.com/cyberattacks-data-breaches/microsoft-storm-0940-connectwise-supply-chain-attack",
-   "published": "2026-10-22T20:42:17+00:00",
-   "summary": "The China-linked actor used an AI-enabled penetration-testing tool to automate and accelerate its attack on more than 2,200 tenants.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt481be0dcde6741d2/6ada753af919424ed83bcdaf/chinacyber_mageFlow_shutterstock.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-10-22T22:31:49.117772+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "fdce8a7d1bd7",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -4759,22 +4708,6 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt951105ce06efe522/6ae0c30979732c23e08f3f0c/aokigahara-Carl_Court-GettyImages-931736204jpg..jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-10-27T17:30:04.642910+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "0a62902654ce",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "What We Missed: Feds Lasso Texas Laptop Farms",
-   "link": "https://www.darkreading.com/insider-threats/texas-laptop-farms-north-korean-it-workers",
-   "published": "2026-10-22T20:33:10+00:00",
-   "summary": "In this video, Dark Reading editors discuss some of the news they didn't get a chance to cover, from busting up North Korea's stateside infrastructure in \"Operation Lonestar Justice\" to Staples' gift card bonanza.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blta02f4349610bfb87/6ada6ff8b8f9c97bdf15ea45/rodeo-Scott_Olsen-GettyImages-2284428107.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-10-22T21:14:33.364375+00:00",
    "instructions": [],
    "instructions_checked": true
   },
