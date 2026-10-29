@@ -1,6 +1,114 @@
 {
  "items": [
   {
+   "id": "993bf11c21bd",
+   "title": "Dynamics 365 Supply Chain Management: Enable fulfillment optimization in Dynamics 365 Supply Chain Management",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577894",
+   "summary": "Distributed order management (DOM) can now optimize fulfillment for standard sales orders in Dynamics 365 Supply Chain Management. Previously, DOM was available only for Dynamics 365 Commerce orders. Now you can use the same rules-based fulfillment engine to automatically choose the best site and warehouse for each…",
+   "published": "2026-10-29T23:01:00+00:00",
+   "products": [
+    "Microsoft 365"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "a47cce6e0f1d",
+   "title": "Dynamics 365 Supply Chain Management: Check margins when overriding prices in Unified pricing management",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577867",
+   "summary": "Price override allows sales representatives to adjust the preset price of a product during a transaction—typically for business purposes such as customer negotiations and retention. Previously, price override validation only enforced amount-based thresholds, without evaluating how the override would impact profit…",
+   "published": "2026-10-29T23:01:00+00:00",
+   "products": [
+    "Microsoft 365"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "30b75dc91275",
+   "title": "Dynamics 365 Finance: Enhance positive pay file generation through batch processing",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577858",
+   "summary": "This feature improves the scalability and performance of positive pay file generation by enabling the process to run as a background batch job. Organizations that generate large positive pay files can now offload processing from the interactive user session, reducing the risk of timeouts and improving the overall user…",
+   "published": "2026-10-29T23:01:00+00:00",
+   "products": [
+    "Microsoft 365"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "5abee80bdf4b",
+   "title": "Microsoft Copilot Studio: Copilot studio cost controls in MAC",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577834",
+   "summary": "We’re expanding cost management for Microsoft Copilot Studio into the Microsoft 365 admin center. This gives administrators a more centralized way to manage Copilot Credit spend across usage-based AI workloads while retaining Copilot Studio cost management capabilities in the Power Platform admin center. With this…",
+   "published": "2026-10-29T23:01:00+00:00",
+   "products": [
+    "Copilot"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "19f745845287",
+   "title": "Dynamics 365 Sustainability: Enhance external sustainability reporting",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577744",
+   "summary": "This feature delivers enhancements to the external reporting experience with an improved standards and assessments structure and enhanced search capabilities. Users can navigate standards, assessments, and concepts more efficiently, reducing time spent locating and managing reporting content across complex…",
+   "published": "2026-10-29T23:01:00+00:00",
+   "products": [
+    "Microsoft 365"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "b24ed5cb50f2",
+   "title": "Microsoft Viva: Network analytics enhancements",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=576274",
+   "summary": "Network analytics updates are rolling out in Microsoft Viva Engage, giving corporate communicators and network admins more flexibility to analyze activity and engagement across their organization. With this update, network analytics includes custom date ranges, faster activity data refreshes, updated dashboard and…",
+   "published": "2026-10-29T23:01:00+00:00",
+   "products": [
+    "Microsoft 365"
+   ],
+   "stage": "Rolling out",
+   "feature_id": null
+  },
+  {
+   "id": "80a7b1aea370",
+   "title": "Microsoft Contact Center Intelligence: Biometric authentication",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=575280",
+   "summary": "Voice biometric authentication delivers business value by reducing fraud and agent operating costs in contact centers. Voice-based verification improves identity assurance shortens call durations reduces customer service rep effort and enable secure self-service transactions. At the same time, it improves customer…",
+   "published": "2026-10-29T23:01:00+00:00",
+   "products": [
+    "Microsoft 365"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "c5aa3e789d78",
+   "title": "Dynamics 365 Customer Service: Shared analytics foundation for historical reporting",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=574114",
+   "summary": "Dynamics 365 Customer Service provides out-of-the-box historical reporting built on a shared analytics foundation: a scalable, open, and AI-ready data foundation for Customer Experience and AI analytics scenarios across Dynamics 365. It uses a lakehouse-based architecture that can scale with data volume, supports…",
+   "published": "2026-10-29T23:01:00+00:00",
+   "products": [
+    "Microsoft 365"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "30aaf9577f72",
+   "title": "Dynamics 365 Business Central: Expense Agent - Create expenses from credit card feeds",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=573256",
+   "summary": "Expense Agent now supports creating expenses from imported credit card transaction feeds or automatically reconcile with them if the expense was created earlier. Key capabilities include: Import credit card transaction data and review it in the web and mobile apps. Automatically create expenses from imported card…",
+   "published": "2026-10-29T23:01:00+00:00",
+   "products": [
+    "Microsoft 365"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
    "id": "4508933d603a",
    "title": "Dynamics 365 Project Operations: Analyze project plans with what-if scenarios",
    "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577864",
@@ -109,54 +217,6 @@
    "feature_id": null
   },
   {
-   "id": "0da53392a1e3",
-   "title": "Power Automate: AI-assisted UI Automation repair",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577869",
-   "summary": "A new agentic debug run feature will be available in the flow designer. The UI automation repair interface launches while the flow is running, validating each selector used in the flow. It then proposes a new selector in case an existing one does not work as expected, after the user captures the respective element for…",
-   "published": "2026-10-27T23:05:02+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "779e9bfbe3c0",
-   "title": "Power Pages: Track Power Pages performance and usage with monitor hub",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577859",
-   "summary": "Power Pages is integrated into the monitor hub. This integration empowers site owners, makers, and administrators to access performance and usage insights directly within the monitor hub of the Power Platform admin center. Metrics available The following metrics will be surfaced in monitor hub: • Session count: Tracks…",
-   "published": "2026-10-27T23:05:02+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "57626b1979d3",
-   "title": "Microsoft Copilot (Microsoft 365): Copilot app mode handoffs",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577841",
-   "summary": "The Chat experience in the Copilot app will suggest a better-fit mode based on the user's prompt, if applicable. For example, it will suggest Cowork or other supported modes as they become available. Users will see a suggestion card after they send a prompt in Chat, with an explanation of the better-fit mode and an…",
-   "published": "2026-10-27T23:05:02+00:00",
-   "products": [
-    "Copilot"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "c539874c5416",
-   "title": "Microsoft Edge: Allow users to translate PDF documents into their preferred language",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577180",
-   "summary": "Users will be able to translate full PDF documents directly within the native PDF viewer in Microsoft Edge. The translated document opens in a new tab, making it easier to access content in their preferred language. Admins can control availability to this feature using the TranslateEnabled policy. GA date: January…",
-   "published": "2026-10-27T23:05:02+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
    "id": "2b90cef8939c",
    "title": "Microsoft Teams: Decline a call with a message on Mobile",
    "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577176",
@@ -169,49 +229,13 @@
    "feature_id": null
   },
   {
-   "id": "27e8559e933c",
-   "title": "Microsoft Viva: Insights and Copilot Analytics in DoD",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=576277",
-   "summary": "Microsoft Viva Insights and Copilot Analytics are coming to the Microsoft 365 Department of Defense (DoD) environment, providing eligible organizations with privacy-protected, role-based analytics experiences to help them understand Microsoft 365 Copilot adoption, usage, and impact. Viva Insights also provides…",
-   "published": "2026-10-27T23:05:02+00:00",
-   "products": [
-    "Copilot"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "1652a7a23697",
-   "title": "Microsoft Contact Center Intelligence: Knowledge",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=575275",
-   "summary": "Knowledge sources ground your agent's responses in enterprise data. When you add knowledge sources, agents can use enterprise data from Power Platform, Dynamics 365 data, websites, and external systems. By using knowledge sources, your agents can provide relevant information and insights for your customers. You can…",
+   "id": "0da53392a1e3",
+   "title": "Power Automate: AI-assisted UI Automation repair",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577869",
+   "summary": "A new agentic debug run feature will be available in the flow designer. The UI automation repair interface launches while the flow is running, validating each selector used in the flow. It then proposes a new selector in case an existing one does not work as expected, after the user captures the respective element for…",
    "published": "2026-10-27T23:05:02+00:00",
    "products": [
     "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "bb94dd737241",
-   "title": "Dynamics 365 Supply Chain Management: Improve rental operations and fulfillment",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=571679",
-   "summary": "As organizations expand beyond one-time asset sales to rental, leasing, and servitization business models, new rental management capabilities help them manage and monetize the assets they build, own, and operate throughout the rental lifecycle. In Dynamics 365 Supply Chain Management, organizations can manage…",
-   "published": "2026-10-27T23:05:02+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "73348aa1de42",
-   "title": "Microsoft Teams: Workflow to automatically add tag members to relevant channels",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577174",
-   "summary": "Associate channels with a tag so members are automatically added to those channels when they join the tag. This helps teams keep channel membership in sync with evolving groups, reduces manual management, and ensures members have access to the conversations and content most relevant to their role. GA date: November…",
-   "published": "2026-10-26T23:15:50+00:00",
-   "products": [
-    "Teams"
    ],
    "stage": null,
    "feature_id": null
@@ -229,11 +253,11 @@
    "feature_id": null
   },
   {
-   "id": "3c2ffff3918b",
-   "title": "Microsoft Teams: Near-real-time detection of malicious QR codes in messages",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=576198",
-   "summary": "Microsoft Teams will introduce near-real-time detection of malicious QR codes shared in messages. By analyzing destinations embedded in QR codes, Teams can identify potential phishing and fraud threats and apply additional protections to malicious content, extending existing URL protection to QR-based attacks. GA…",
-   "published": "2026-10-14T23:01:02+00:00",
+   "id": "cf9fd1b920f4",
+   "title": "Microsoft Teams: External presenter support for event group chat",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=573706",
+   "summary": "Event group chat, the private chat for organizers, co-organizers, and presenters in an event or structured meeting, will support external presenters. GA date: December CY2026",
+   "published": "2026-10-08T23:04:12+00:00",
    "products": [
     "Teams"
    ],
@@ -292,13 +316,13 @@
    "feature_id": null
   },
   {
-   "id": "b81e7af0d5a2",
-   "title": "Microsoft Purview: Unified Classification Management Experience",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=570844",
-   "summary": "The Unified Classification Management Experience unifies every classifier in Microsoft Purview—Sensitive Information Types (SITs), Exact Data Match (EDM), fingerprint SITs, and trainable classifiers—into one place to discover, create, validate, and manage classifiers. GA date: January CY2027 Preview date: October…",
+   "id": "8dc6dd03f29a",
+   "title": "Microsoft Teams: Two presenters can share their screens or windows simultaneously in meetings",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=80239",
+   "summary": "Two presenters can share a screen or window at the same time in a Teams meeting. Participants can see both shared content streams simultaneously, making it easier to compare and discuss content from different presenters. GA date: December CY2026",
    "published": "2026-09-15T23:00:36+00:00",
    "products": [
-    "Purview"
+    "Teams"
    ],
    "stage": null,
    "feature_id": null
@@ -316,32 +340,6 @@
    "feature_id": null
   },
   {
-   "id": "3fb2081eb736",
-   "title": "SharePoint: Changes to the FAQ web part authoring experience",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=570647",
-   "summary": "The SharePoint FAQ web part will provide a standard, non-AI experience for manually creating, editing, and managing FAQs. The AI-assisted FAQ creation and import will move to the Copilot in SharePoint authoring experience, where authors can use natural-language prompts and selected grounding sources to generate FAQ…",
-   "published": "2026-09-09T22:36:54+00:00",
-   "products": [
-    "SharePoint",
-    "Copilot"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "10695419db7c",
-   "title": "Microsoft Teams: Copilot Chat for chats, channels, calls, and meetings in GCC, GCC High, and DoD",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=569214",
-   "summary": "Copilot Chat will soon be available across chats, channels, calls, and meetings, helping users stay informed and catch up quickly. GA date: October CY2026",
-   "published": "2026-09-01T22:59:38+00:00",
-   "products": [
-    "Teams",
-    "Copilot"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
    "id": "e82caecdee27",
    "title": "Microsoft Copilot Studio: Agent Sharing amongst makers",
    "link": "https://www.microsoft.com/microsoft-365/roadmap?id=569475",
@@ -354,91 +352,13 @@
    "feature_id": null
   },
   {
-   "id": "5d16bb81d5d0",
-   "title": "Outlook: Purview DLP Wait-on-Send Support for Mac",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=569719",
-   "summary": "Outlook for Mac will support Microsoft Purview Data Loss Prevention (DLP) wait-on-send policies. Organizations can require a DLP evaluation before an email is sent and configure how long users must wait for policy evaluation to complete. This helps ensure sensitive information is inspected against organizational…",
-   "published": "2026-08-24T22:41:12+00:00",
+   "id": "1f77b89970c4",
+   "title": "Outlook: All Day events to show up more clearly in the Mail module Calendar Preview",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=567888",
+   "summary": "We're making it easier to tell when receiving meeting invites that conflict with scheduled Out of Office time or Busy All Day events, on Outlook Web and Outlook for Windows. GA date: August CY2026",
+   "published": "2026-07-17T22:12:56+00:00",
    "products": [
-    "Purview",
     "Outlook"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "a0fc7112ca89",
-   "title": "Outlook: Purview DLP Wait-on-Send Support for Outlook mobile apps",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=569718",
-   "summary": "Outlook for iOS and Android will support Microsoft Purview Data Loss Prevention (DLP) wait-on-send policies. Organizations can require a DLP evaluation before an email is sent and configure how long users must wait for policy evaluation to complete. This helps ensure sensitive information is inspected against…",
-   "published": "2026-08-24T22:41:12+00:00",
-   "products": [
-    "Purview",
-    "Outlook"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "24ffe4e05d8b",
-   "title": "Outlook: Purview Data Loss Prevention support for Calendar Events in Outlook for Mac",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=569717",
-   "summary": "Outlook for Mac will support Microsoft Purview Data Loss Prevention (DLP) policies for calendar events. Organizations can detect and help prevent the sharing of sensitive information in meeting subjects, descriptions, and invite content through policy tips, user remediation, and policy enforcement. This provides…",
-   "published": "2026-08-20T22:38:45+00:00",
-   "products": [
-    "Purview",
-    "Outlook"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "7b3b82ea6abf",
-   "title": "Microsoft Teams: Collect information with list form in Workflows",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=568932",
-   "summary": "Starts a workflow with a form to collect the information you need to run the rest of your workflow. GA date: September CY2026",
-   "published": "2026-08-11T22:53:53+00:00",
-   "products": [
-    "Teams"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "795c4f910882",
-   "title": "Outlook: Microsoft Purview Label Inheritance from Email Attachments",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=569022",
-   "summary": "When composing an email in Outlook for Mac, Microsoft Purview sensitivity labels can be automatically applied or recommended based on the sensitivity labels of attached files. This helps users consistently protect sensitive information, reduces manual labeling effort, and supports organizational compliance…",
-   "published": "2026-08-07T21:45:15+00:00",
-   "products": [
-    "Purview",
-    "Outlook"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "b30432cfbcde",
-   "title": "Outlook: Purview Label Inheritance from Email Attachment for iOS and Android",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=569021",
-   "summary": "Outlook for iOS and Android will support Microsoft Purview sensitivity label inheritance from attachments. When users attach files with sensitivity labels, Outlook can automatically apply or recommend an email sensitivity label based on organizational policy settings. This helps organizations maintain consistent data…",
-   "published": "2026-08-07T21:45:15+00:00",
-   "products": [
-    "Purview",
-    "Outlook"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "68bfa7e8674b",
-   "title": "OneDrive: Manage access to the OneDrive Photos Desktop experience",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=568931",
-   "summary": "OneDrive is adding administrative controls for the Photos experience on Windows. Organizations can manage whether users sign in with personal Microsoft accounts. These controls help IT teams align OneDrive Photos with their access, data governance, and device-management requirements. GA date: August CY2026",
-   "published": "2026-08-07T21:45:15+00:00",
-   "products": [
-    "Teams",
-    "OneDrive"
    ],
    "stage": null,
    "feature_id": null
@@ -456,11 +376,84 @@
    "feature_id": null
   },
   {
+   "id": "2d5ab2f28a86",
+   "title": "Outlook: Sort improvements to the message list",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=564803",
+   "summary": "When sorting on Outlook for Web or Outlook for Windows, if the Sort By field is not one of From, Subject, or Date Received, we will now show an additional column for the Sort By value (e.g., Size). We will also support sorting by Flag Due Date. GA date: June CY2026",
+   "published": "2026-05-29T22:30:02+00:00",
+   "products": [
+    "Outlook"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "448993dfcf74",
+   "title": "Outlook: Variable number of message preview lines",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=564610",
+   "summary": "Outlook for Windows and Outlook for Web will now allow users to modify how the preview text for emails show in the message list. The preview text can now take up 2 lines, 1 whole line, or 0 additional lines. GA date: July CY2026",
+   "published": "2026-05-27T23:15:50+00:00",
+   "products": [
+    "Outlook"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "4e107c5cc3f4",
+   "title": "Outlook: All Accounts view (Unified Inbox) brings your email into a single inbox view",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=564609",
+   "summary": "The All-Accounts view, also known as Unified Inbox, lets you see emails from multiple accounts in a single inbox view in the new Outlook for Windows, without merging your mailboxes. Each account's inbox stays separate; the view brings them together so you can triage in one place. Users can read, delete, move, archive…",
+   "published": "2026-05-27T23:15:50+00:00",
+   "products": [
+    "Outlook"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
    "id": "4d7263cf8dbc",
    "title": "Microsoft Purview: Endpoint Data Loss Prevention – Ability to protect files stored in the excluded folders in Windows",
    "link": "https://www.microsoft.com/microsoft-365/roadmap?id=562992",
    "summary": "Endpoint DLP now extends protection to files stored in commonly excluded Windows folders, including Temp and AppData. This helps improve coverage by detecting and protecting sensitive data in these locations. GA date: February CY2027",
    "published": "2026-05-26T22:45:59+00:00",
+   "products": [
+    "Purview"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "705561f14f7f",
+   "title": "Microsoft Copilot (Microsoft 365): Copilot Chat in Outlook expands to reason over inbox, calendar, and enterprise data",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=554934",
+   "summary": "Copilot Chat in Outlook expanding to support reasoning over a user's entire inbox, calendar and other enterprise data for Microsoft 365 Copilot Chat users (without a Microsoft 365 Copilot license). GA date: October CY2026",
+   "published": "2026-02-05T00:15:27+00:00",
+   "products": [
+    "Copilot",
+    "Outlook"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "c4f5a8265bfe",
+   "title": "Microsoft Teams: New sharing panel in meetings - improved content discovery and ease of sharing",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=502520",
+   "summary": "The sharing panel in today’s meetings is the default place for content discoverability and sharing. New sharing panel UI is crafted with intent of modernising and simplifying default tasks such as window sharing, but also for easier discovery of sharing options and more discoverable file sharing. GA date: December…",
+   "published": "2025-10-29T23:00:59+00:00",
+   "products": [
+    "Teams"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "15453ab8d7bb",
+   "title": "Microsoft Purview compliance portal: Scanner data export for custom reporting",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=494839",
+   "summary": "Learn about the state of your scanned repositories and create custom reports with the information protection scanner. Labeling, classification and protection actions on scanned files are stored in SQL tables that form a foundation to feed into custom reports. GA date: January CY2027 Preview date: December CY2026",
+   "published": "2025-05-22T23:15:53+00:00",
    "products": [
     "Purview"
    ],
