@@ -2185,6 +2185,27 @@
    "instructions_checked": true
   },
   {
+   "id": "ad2cc061f552",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Official Claude Code VS Code Extension Compromised to Install Persistent SSH Backdoor",
+   "link": "https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html",
+   "published": "2026-10-30T08:55:47+00:00",
+   "summary": "Cybersecurity researchers have disclosed that the official Anthropic Claude Code extension was compromised on the Open VSX registry to install a persistent SSH backdoor on infected hosts. The issue has since been traced to the compromise of the Cursor Marketplace, prompting the AI coding platform Cursor to briefly…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggT2-bdx6q5Aa-HsOIuOeYTY1kFbPYIPIaA7N0Esdo4LHRscpkr3fMnRNiE_NqR71eURHrlqkC1stLKp2bKmT8cLHta8uYyGPtbWRwGm5ctnpMJC-8Q7pswyRP5hXMkIDjptIHDBdcQobfqaMEu9eXfPS9c_vvIi-jYmZBHVnKJb04CtcCyGOeBY709cdq/s1600/claude-vs.png",
+   "cves": [],
+   "first_seen": "2026-10-30T10:28:56.243259+00:00",
+   "instructions": [
+    "Users who have installed the compromised extension during the window are advised to isolate the hosts, remove the unauthorized SSH key and persistence mechanisms, and rotate credentials and sessions.",
+    "Cybersecurity researchers have disclosed that the official Anthropic Claude Code extension was compromised on the Open VSX registry to install a persistent SSH backdoor on infected hosts.",
+    "The issue has since been traced to the compromise of the Cursor Marketplace, prompting the AI coding platform Cursor to briefly take down the service to remove the malware.",
+    "\"It was pulled very quickly, but anyone who has their Claude Code instance set to auto-update could have consumed the malware,\" Gile said."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "5d0e99bc982d",
    "source": "thehackernews",
    "source_name": "The Hacker News",
