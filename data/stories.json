@@ -2392,6 +2392,27 @@
    "instructions_checked": true
   },
   {
+   "id": "bfec2004bdb1",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "TeamViewer Flaw Lets Remote Computers Attack Users Who Connect to Control Them",
+   "link": "https://thehackernews.com/2026/10/teamviewer-flaw-lets-remote-computers.html",
+   "published": "2026-10-30T15:17:28+00:00",
+   "summary": "TeamViewer has fixed a flaw that lets the machine being controlled in a remote session attack the computer that connected to control it. In a TeamViewer session, the computer that connects and takes control is the viewer, and the machine it controls is the host. A malicious or compromised host can exploit the flaw to…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEge-ZayNgwlu4fhpD2BSyGgkMYehkV0atRJINisISPLpiubkgyXopa4NWVnxOZs9gi-DEYTNEQ5G2pu-X5iSHyMp8pguzp-Q6g-1-mGwcy3so4AkeuYFuYoaotOcmF5A-2oVDvnxd0B_FaZ7JJt8W3zrNFot6kBlJp7WffHkb7m92C9bNQnwFLwnNgXpDk/s1600/teamviewer-flaw.jpg",
+   "cves": [],
+   "first_seen": "2026-10-30T16:48:15.418520+00:00",
+   "instructions": [
+    "The same 15.83 update fixes two other flaws in that bulletin that do affect the Host, so people running the Host should update as well.",
+    "The only fix TeamViewer offers is to update, and it lists no workaround.",
+    "The flaw affects all versions before 15.83, including 15.82, the security update TeamViewer released in September .",
+    "The same 15.83 update also fixes two other high-severity flaws in the same bulletin, including a separate code-execution flaw affecting Linux and macOS."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "dd1c518d70f0",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2616,6 +2637,27 @@
    "instructions_checked": true
   },
   {
+   "id": "6473fc7702e5",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "WordPress RCE Flaw Draws Nearly 63,000 Attack Attempts in Just 24 Hours",
+   "link": "https://thehackernews.com/2026/10/wordpress-rce-flaw-draws-nearly-63000.html",
+   "published": "2026-10-30T14:08:14+00:00",
+   "summary": "Threat actors have been observed attempting to exploit a high-severity security flaw in WordPress Core shortly after patches were released. The vulnerability, which does not have a CVE identifier, relates to a case of remote code execution impacting WordPress Core versions 4.7 through 7.1.3. It carries a CVSS score of…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhf-pzflJO9HQoCdvBvYNtS12gwwEjAbM4dQ30ak7UYaIPzsVPN9MlFwvIDEFkbe9cWg4wQRFPbGfJ0YXjzGcBS6mUTwttwkQ8IR7OoHyTz3owZkVzYQOAObyJUqfjsC-PqMw2pv41_m68hb6ZkwJb56kGx-Ypv7GWZBtDzjyTTQ8L8i9NxA8_MDVoJSEba/s1600/wp-hack.jpg",
+   "cves": [],
+   "first_seen": "2026-10-30T16:48:15.418520+00:00",
+   "instructions": [
+    "With active exploitation attempts already underway, WordPress site owners are advised to update to version 7.1.4 as soon as possible and look for suspicious requests to PHP files located under \"wp-content/upgrade,\" as well as unfamiliar administrator accounts, plugins, or PHP files.",
+    "\"This makes it possible for unauthenticated attackers to execute code on the server during the upgrade window.\"",
+    "The WordPress security company noted that successful exploitation requires an \"attacker to hit a very narrow window while WordPress is unpacking a complete Core update.\"",
+    "The issue boils down to the fact that affected versions unpack new files part of a full-package Core update into a predictable directory under \"wp-content/upgrade.\" This copy also includes the WordPress installer."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "372f6f54af20",
    "source": "therecord",
    "source_name": "The Record",
@@ -2737,6 +2779,23 @@
    "image": "https://cms.therecord.media/uploads/fcc_f0096cadc5.jpg",
    "cves": [],
    "first_seen": "2026-10-23T17:54:14.622043+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "4bf942696238",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Florida warns that 4.9 million people had Social Security numbers leaked in financial aid site breach",
+   "link": "https://therecord.media/florida-warns-5-million-affected-financial-aid-site-breach",
+   "published": "2026-10-30T15:54:00+00:00",
+   "summary": "The state’s Department of Education (FLDOE) said on Thursday it became aware of a data breach involving the Florida Student Financial Aid website on October 19.",
+   "image": "https://cms.therecord.media/uploads/fsu_campus_d3e68b7c9a.jpg",
+   "cves": [],
+   "first_seen": "2026-10-30T16:48:15.418520+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -4264,26 +4323,6 @@
    "instructions_checked": true
   },
   {
-   "id": "f582252343af",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Quest Diagnostics confirms data breach exposed patient records",
-   "link": "https://www.bleepingcomputer.com/news/security/quest-diagnostics-confirms-data-breach-exposed-patient-records/",
-   "published": "2026-10-23T16:40:07+00:00",
-   "summary": "American clinical laboratory company Quest Diagnostics disclosed that patient records have been exposed after a threat actor gained unauthorized access to its Quanum LSM system.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/23/quest.jpg",
-   "cves": [],
-   "first_seen": "2026-10-23T17:15:49.172949+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Currently, the Quanum LSM system has been stopped, and customers are recommended to use paper requisitions or Quanum eLabs to place orders and receive results.",
-    "Mozilla, Google, Apple block compromised eMudhra CA certificates"
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "516ab6192d20",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4362,6 +4401,27 @@
     "Defenders should be suspicious of unusual device code prompts and odd token activity.",
     "One rogue RMM install gives an attacker persistent access that looks like ordinary admin work.",
     "A convincing prompt nudges someone to enter a short code on a genuine Microsoft page, and the attacker walks away with an access token that can outlive a password reset."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "e645dafde1d4",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Trezor warns of suspected crypto-theft implant in hardware wallet",
+   "link": "https://www.bleepingcomputer.com/news/security/trezor-warns-of-suspected-crypto-theft-implant-in-hardware-wallet/",
+   "published": "2026-10-30T15:58:20+00:00",
+   "summary": "Hardware wallet device maker Trezor has received credible reports about a suspected hardware crypto-theft implant in a Trezor Safe 5 sold by its reseller CryptoBilis in Southeast Asia.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/08/13/Trezor.jpg",
+   "cves": [],
+   "first_seen": "2026-10-30T16:48:15.418520+00:00",
+   "image_checked": true,
+   "instructions": [
+    "For now, Trezor recommends not setting up or using any device bought via CryptoBilis from March 2026 onward.",
+    "Users who have already done so are advised to move their funds to a newly created wallet with a new recovery phrase.",
+    "Microsoft urges Entra ID admins to migrate users to passkeys"
    ],
    "instructions_checked": true
   },
@@ -5001,6 +5061,27 @@
     "If certain servers must be accessible on the public internet, position them behind a web application firewall (WAF) , reverse proxy , or perimeter network (also known as a DMZ), which can reduce the risk of vulnerability exploitation in some cases.",
     "Windows Update client policies offer automated patching, which can greatly reduce the amount of time IT admins must spend identifying, configuring, and deploying updates.",
     "Review the recommended settings for Exchange Online Protection and Microsoft Defender for Office 365 to ensure your organization has established essential defenses and knows how to monitor and respond to threat activity."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "ad4296e15ebc",
+   "source": "msblog",
+   "source_name": "Microsoft Security Blog",
+   "official": false,
+   "source_type": "vendor_blog",
+   "title": "From help desk impersonation to AD CS abuse: Investigating ESC1 and ESC8 intrusion paths",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/10/30/help-desk-impersonation-ad-cs-abuse-investigating-esc1-esc8-intrusion-paths/",
+   "published": "2026-10-30T16:11:44+00:00",
+   "summary": "Microsoft Threat Intelligence investigated two human-operated intrusions in which threat actors used Microsoft Teams messages and calls to impersonate IT or help desk personnel and socially engineer users into granting interactive remote access, primarily through Quick Assist. Once connected, the threat actors staged…",
+   "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/10/image-13.webp",
+   "cves": [],
+   "first_seen": "2026-10-30T16:48:15.418520+00:00",
+   "instructions": [
+    "We also provide investigation methods, mitigation recommendations, Microsoft Defender detection guidance, and advanced hunting queries to help defenders identify and interrupt this access path.",
+    "The AD CS behavior in each incident should be validated through the initiating process, account, device, and certificate records rather than assumed from the presence of Bun or Java alone.",
+    "One privileged account was excluded from automated response, so containment did not apply to that identity.",
+    "PKINIT success is the response threshold: responders should investigate the requesting device, authenticated account, issued certificate, active Kerberos sessions, and any service-ticket use."
    ],
    "instructions_checked": true
   },
