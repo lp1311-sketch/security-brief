@@ -1732,29 +1732,6 @@
    "instructions_checked": true
   },
   {
-   "id": "3a89e69463ce",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Critical Flaw in Python’s Popular Pillow Image Library Allows Code Execution via a Crafted Image",
-   "link": "https://thehackernews.com/2026/10/critical-flaw-in-pythons-popular-pillow.html",
-   "published": "2026-10-23T09:36:00+00:00",
-   "summary": "Pillow, the most widely used image library for Python, can be made to run operating system commands on a server by specifying the name of a file it is told to open. The flaw, CVE-2026-112900, is in the way Pillow handles EPS images, which it opens by passing the file's name to Ghostscript, a separate program it runs…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGp9s38cCmrESabSZezAPkJaYoavpBM8Ehckei0ZrhKfBSoSXMyrWkzooakGExz1GBYVgi0izvW8wyKH2CEX7vpzLExRkK7uNW8wDdMzJ_k7NR8u6q-WA9e8Aoc19LNfJbFKgB6GkbAKbXW69_lOdM4sz4t5fmpKsLxHWKJPOugq5g_45Q5_WmCm_vA6U/s1600/python-image.jpg",
-   "cves": [
-    "CVE-2026-112900"
-   ],
-   "first_seen": "2026-10-23T10:56:19.601353+00:00",
-   "instructions": [
-    "\"The flaw is triggered by the filename, not by anything in the PostScript document,\" the advisory says, meaning a harmless EPS file can still cause damage when an attacker sets its name.",
-    "The bug was \"found by Anthropic using Claude to study the security of open-source software, validated manually by Ada Logics,\" the advisory says, part of a wider effort by the company that has turned up hundreds of flaws in open-source libraries .",
-    "The advisory says the reporters crashed the process with it, and turned it into code execution only with the help of a second, separate flaw that leaked memory addresses.",
-    "Upgrade to Pillow 13.0.0 , which fixes all of these, and rebuild any containers, wheels, or base images that bundle an older copy."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "d09366a97fc8",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2669,6 +2646,25 @@
    "first_seen": "2026-10-28T15:33:38.447482+00:00",
    "image_checked": true,
    "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "2b8459f0048f",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Binance hit by record $6.3 billion crypto hack, scrambles to freeze funds",
+   "link": "https://therecord.media/binance-hit-by-record-6-billion-crypto-hack",
+   "published": "2026-10-30T00:00:00+00:00",
+   "summary": "Binance, the world's largest cryptocurrency exchange, confirmed Thursday that it had been hacked in a $6.3 billion cyber heist that blockchain investigators are blaming on North Korea.",
+   "image": "https://cms.therecord.media/uploads/vadim_artyukhin_92_Bit_C3_QEU_unsplash_c14e5f899e.jpg",
+   "cves": [],
+   "first_seen": "2026-10-30T10:20:24.097567+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Its most recent snapshot showed reserves of more than 100% across the listed assets, meaning customers should be fully backed."
+   ],
    "instructions_checked": true
   },
   {
@@ -3808,6 +3804,28 @@
     "Users are also recommended to change reused passwords elsewhere if their old DreamHost password was reused on other platforms/services.",
     "PHP shares mitigation for new RCE vulnerability with no patch",
     "The latest update from the web hosting provider notes that all affected account owners have received recovery instructions."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "eaaaa83e33fa",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Drupal warns of critical Commerce Core flaw exploited in attacks",
+   "link": "https://www.bleepingcomputer.com/news/security/drupal-warns-of-critical-commerce-core-flaw-exploited-in-attacks/",
+   "published": "2026-10-30T10:16:07+00:00",
+   "summary": "Drupal warned admins to patch a critical access bypass vulnerability in the Commerce Core module that attackers are exploiting in the wild.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/15/Drupal.jpg",
+   "cves": [],
+   "first_seen": "2026-10-30T10:20:24.097567+00:00",
+   "image_checked": true,
+   "instructions": [
+    "\"This module enables you to sell goods and services to customers through an included shopping cart and checkout form or through decoupled applications via APIs,\" Drupal said in a Wednesday advisory tagged as highly critical.",
+    "Two weeks ago, Drupal patched two more remote code execution security issues (CVE-2026-108097 and CVE-2026-108099) that could allow threat actors to execute code remotely, and urged admins to apply updates as soon as possible because attackers could develop exploits \"within hours or days.\"",
+    "Drupal warned admins to patch a critical access bypass vulnerability in the Commerce Core module that attackers are exploiting in the wild.",
+    "The Drupal security team asked admins on the 3.x branch to upgrade immediately to Commerce Core 3.3.13 (or Commerce Core 8.x-2.41 for earlier versions) and audit orders for inconsistencies, since threat actors are exploiting this vulnerability in attacks."
    ],
    "instructions_checked": true
   },
@@ -4991,6 +5009,26 @@
    "instructions_checked": true
   },
   {
+   "id": "aedf51642ecf",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "$2 Million+ Drained From Polymarket Traders in New Supply Chain Attack",
+   "link": "https://www.securityweek.com/2-million-drained-from-polymarket-traders-in-new-supply-chain-attack/",
+   "published": "2026-10-30T09:41:36+00:00",
+   "summary": "Malicious code linked to a website monitoring tool was designed to hijack logged-in Polymarket sessions and siphon user funds. The post $2 Million+ Drained From Polymarket Traders in New Supply Chain Attack appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/06/Polymarket.webp",
+   "cves": [],
+   "first_seen": "2026-10-30T10:20:24.097567+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Adobe, Veeam, Juniper Networks Patch Critical Vulnerabilities",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "3bb9ba7c2b0a",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -5094,28 +5132,6 @@
     "Cisco cautioned that dropping secondary authentication makes remote access VPN less secure, and it recommends upgrading instead.",
     "iOS, macOS 27.2 Patch 286 Bugs; Fix for Exploited Flaw Backported to iOS 18",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "948084576510",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Attackers Exploit Third Arista VCO Zero-Day in Four Months",
-   "link": "https://www.securityweek.com/attackers-exploit-third-velocloud-orchestrator-zero-day-in-four-months/",
-   "published": "2026-10-23T09:58:34+00:00",
-   "summary": "The critical-severity SQL injection flaw allows attackers to access privileged internal functionality and gain operator privileges. The post Attackers Exploit Third Arista VCO Zero-Day in Four Months appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/09/arista.jpeg",
-   "cves": [],
-   "first_seen": "2026-10-23T10:15:21.294716+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Updating to a fixed VCO release is the recommended remediation action.",
-    "Until the fixes are deployed, administrators should restrict access to the VCO interface, review recent admin activity, monitor for suspicious access, block outbound ports, and monitor for backdoor daemons and webshells.",
-    "Jon Steinbach has been appointed strategic technical advisor to the Pentagon’s CIO.",
-    "Preparing for disruption must become part of day-to-day operations."
    ],
    "instructions_checked": true
   },
@@ -5616,6 +5632,30 @@
    "instructions": [
     "Most entries are pulled automatically from CISA’s ICS advisories and KEV catalog and mapped to maritime systems, while a smaller number include hand-written analyst notes.",
     "Preparing for disruption must become part of day-to-day operations."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "4bea3ce24866",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Max-Severity GitLab Vulnerability Exploited Against Alpine Linux",
+   "link": "https://www.securityweek.com/max-severity-gitlab-vulnerability-exploited-against-alpine-linux/",
+   "published": "2026-10-30T09:32:27+00:00",
+   "summary": "Tracked as CVE-2026-97229, the bug allows unauthenticated attackers to execute arbitrary code on the server. The post Max-Severity GitLab Vulnerability Exploited Against Alpine Linux appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/06/GitLab.jpeg",
+   "cves": [
+    "CVE-2026-97229"
+   ],
+   "first_seen": "2026-10-30T10:20:24.097567+00:00",
+   "image_checked": true,
+   "instructions": [
+    "The bug “could have allowed an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regular expression in a CI/CD configuration,” GitLab noted in an October 12 advisory .",
+    "It is still testing the GitLab instance before public release, and has reset all passwords, warning of observed automated login attempts using passwords compromised in other leaks.",
+    "On Thursday, the US cybersecurity agency CISA added CVE-2026-97229 to its Known Exploited Vulnerabilities ( KEV ) catalog, urging federal agencies to patch it within three days, as mandated by BOD 26-04.",
+    "Adobe, Veeam, Juniper Networks Patch Critical Vulnerabilities"
    ],
    "instructions_checked": true
   },
