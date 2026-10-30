@@ -587,6 +587,25 @@
    "instructions_checked": true
   },
   {
+   "id": "48f1365d2800",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-70125 Microsoft Office Outlook Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70125",
+   "published": "2026-10-30T14:00:00+00:00",
+   "summary": "Updated one or more CVSS scores for the affected products. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-70125"
+   ],
+   "first_seen": "2026-10-30T21:58:38.759385+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "e3a6d8a4cec7",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -3861,6 +3880,28 @@
     "After updating, administrators must restart affected processes, and affected container images must be rebuilt and redeployed.",
     "On Sunday, Microsoft pushed an emergency security update to address the issue in .NET, warning that successful exploitation allows privilege escalation on systems with a vulnerable .NET version.",
     "“An invalid block switch was reported as a temporary need for more input instead of a permanent format error, so the streaming decoder kept appending input bytes to an eight-byte internal buffer,” Node.js explains in an advisory."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "f167e37bde6d",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Critical Linux kernel flaw allows remote root attacks on MPTCP servers",
+   "link": "https://www.bleepingcomputer.com/news/security/critical-linux-kernel-flaw-allows-remote-root-attacks-on-mptcp-servers/",
+   "published": "2026-10-30T21:09:46+00:00",
+   "summary": "Security researchers at Anthropic have developed an exploit for a critical Linux kernel vulnerability that allows unauthenticated attackers to remotely execute commands as root on servers running Multipath TCP (MPTCP) listeners.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/29/Linux.jpg",
+   "cves": [],
+   "first_seen": "2026-10-30T21:58:38.759385+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Administrators are advised to check their distribution's security advisories and install updated kernel packages as they become available.",
+    "According to the Linux kernel advisory , the vulnerability stems from a race condition in how the kernel handles TCP connection requests, potentially causing a use-after-free condition.",
+    "\"tcp_v4_syn_recv_sock() transfers ownership of ireq->ireq_opt to the child socket (newinet->inet_opt) without copying it,\" reads the advisory.",
+    "In mitigation guidance , Rocky Linux support provider CIQ confirms Rocky Linux 8, 9, and 10 are also affected and shared temporary firewall protections for affected systems."
    ],
    "instructions_checked": true
   },
