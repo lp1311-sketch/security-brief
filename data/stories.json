@@ -2366,22 +2366,6 @@
    "instructions_checked": true
   },
   {
-   "id": "80697809b26e",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Russia-Linked Hackers Used New Mesh Network Backdoor in Destructive Ukraine Attack",
-   "link": "https://thehackernews.com/2026/10/russian-linked-hackers-used-new-mesh.html",
-   "published": "2026-10-23T11:11:23+00:00",
-   "summary": "The Russian state-sponsored hacking group Sandworm teamed up with another threat actor to carry out a destructive wiping attack targeting a Ukrainian logistics company last year. According to ESET, the attack involved UAC-0099 (aka Earth Sirrush) obtaining initial access to the target on July 16, 2025, via a…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxH9YdfH7FHfSBJt7wrnd1P2hTQG6_2rpkp3YBqp2Yd49nYy4-a0zmvk5mqKlXH4DWfRO4Q4MmzLG4_t19me5rErcvoEpGJ5Q8LYty_GXXys63QC8HlO3G2jRC9f5vJd1BDiOp4APzxV4rSbFOZY80zIUmxvJ8V6isB-eDy9e9tVWaLR53fpPO80mzn_BH/s1600/uk-russia.jpg",
-   "cves": [],
-   "first_seen": "2026-10-23T11:35:08.913608+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "f01e6eed4371",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -3244,6 +3228,23 @@
     "Should you be tempted to download the torrent and explore the contents of the messages yourself?",
     "Furthermore, whether you are an individual or an organisation, you should be aware that an email account can be a treasure trove of sensitive information."
    ],
+   "instructions_checked": true
+  },
+  {
+   "id": "1f8f175397bf",
+   "source": "grahamcluley",
+   "source_name": "Graham Cluley",
+   "official": false,
+   "source_type": "news",
+   "title": "Hackers leak personnel data of 41,000+ Homeland Security staff, including ICE and border agents",
+   "link": "https://www.bitdefender.com/en-us/blog/hotforsecurity/hackers-leak-41-000-dhs-staff-data",
+   "published": "2026-10-30T10:33:50+00:00",
+   "summary": "The US Department of Homeland Security has had the details of more than 41,000 staff, including ICE and CBP agents, published online. Not ideal for an organisation with \"Security\" in its name. Read more in my article on the Hot for Security blog.",
+   "image": "https://blogapp.bitdefender.com/hotforsecurity/content/images/2026/10/dhs-leak.jpeg",
+   "cves": [],
+   "first_seen": "2026-10-30T11:19:00.626898+00:00",
+   "image_checked": true,
+   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -4959,26 +4960,6 @@
    "instructions_checked": true
   },
   {
-   "id": "2ce43354cd03",
-   "source": "schneier",
-   "source_name": "Schneier on Security",
-   "official": false,
-   "source_type": "news",
-   "title": "Compromised TLS Certificates",
-   "link": "https://www.schneier.com/blog/archives/2026/10/compromised-tls-certificates.html",
-   "published": "2026-10-23T11:04:22+00:00",
-   "summary": "The Indian CA eMudhra Limited has eight TLS certificates with laughably weak private keys: The compromised eMudhra keys were defective at a level that’s challenging the imagination of many of the engineers studying the incident. A normal size for a NIST P-384 elliptic curve cryptography private key contains roughly…",
-   "image": null,
-   "cves": [],
-   "first_seen": "2026-10-23T11:35:08.913608+00:00",
-   "image_checked": true,
-   "instructions": [
-    "“That is extremely in the ‘this should not be possible’ category,” Valdorda said. “Maybe some horribly dangerous key generation interface has a ‘size’ parameter and they set it to 1 by mistake???”",
-    "One caveat: exploiting compromised certificates requires an active adversary-in-the-middle attack, meaning the attacker must act as a proxy between two TLS parties and receive encrypted traffic, decrypt it, reencrypt it, and send it to the other party."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "9d407c505c1e",
    "source": "schneier",
    "source_name": "Schneier on Security",
@@ -5178,27 +5159,6 @@
    "instructions_checked": true
   },
   {
-   "id": "713a68aa818f",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "China APT Uses AI Pentest Tool Artex in ConnectWise Attacks",
-   "link": "https://www.securityweek.com/china-apt-uses-ai-pentest-tool-artex-in-connectwise-attacks/",
-   "published": "2026-10-23T10:31:16+00:00",
-   "summary": "The state-sponsored hackers targeted hundreds of organizations and gained privileged access to some environments. The post China APT Uses AI Pentest Tool Artex in ConnectWise Attacks appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2023/02/China-Surveillence-Threat.jpg",
-   "cves": [],
-   "first_seen": "2026-10-23T10:56:19.601353+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Jon Steinbach has been appointed strategic technical advisor to the Pentagon’s CIO.",
-    "Preparing for disruption must become part of day-to-day operations.",
-    "Browsers Block eMudhra Intermediate CAs Over Recoverable Private Keys"
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "0d8d39d2f11b",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -5362,6 +5322,28 @@
     "However, the application is built on a 2014 version of Chrome with no sandbox and should be completely removed. “Our update only disabled the updater.",
     "Preparing for disruption must become part of day-to-day operations.",
     "Eye Security researchers have disabled the update mechanism of an abandoned Popcorn Time fork and sinkholed its domains."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "35fc634a28d1",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Drupal Commerce Core Vulnerability Exploited Against Online Stores",
+   "link": "https://www.securityweek.com/drupal-commerce-core-vulnerability-exploited-against-online-stores/",
+   "published": "2026-10-30T11:07:11+00:00",
+   "summary": "Drupal says a highly critical Commerce Core access bypass is exploited in the wild and urges store owners to audit their orders. The post Drupal Commerce Core Vulnerability Exploited Against Online Stores appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/05/Drupal.jpg",
+   "cves": [],
+   "first_seen": "2026-10-30T11:19:00.626898+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Administrators should update to one of the two fixed versions and review their store orders.",
+    "Scroll to continue reading. “Sites should audit their orders for inconsistencies as this vulnerability is being actively exploited,” the advisory reads.",
+    "Drupal’s statistics show the module is used on more than 42,000 sites. “The module doesn’t sufficiently protect certain routes and entity fields, leading to an access bypass that may financially impact the vendor,” Drupal explains in its advisory.",
+    "The 38 other advisories Drupal published on October 28 address vulnerabilities in 21 contributed projects."
    ],
    "instructions_checked": true
   },
