@@ -171,16 +171,6 @@
    "url": "story/2e0675284202.html"
   },
   {
-   "id": "7aec2fb959c8",
-   "title": "Schwachstelle CVE-2026-80097 in MS Authenticator für Android",
-   "summary": "In der Microsoft Authenticator-App für Android gab es eine Schwachstelle CVE-2026-80097, über die Angreifer auf Inhalte und Geheimnisse zugreifen konnten. Die…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "29 Oct 2026, 15:25 UTC",
-   "sources": "Born's IT and Windows Blog, The Hacker News",
-   "url": "story/7aec2fb959c8.html"
-  },
-  {
    "id": "219f99ac76bf",
    "title": "Even after PHP2Shell, blast radius matters more than a CVSS score",
    "summary": "PHP2Shell shows how quickly attackers can exploit critical vulnerabilities, often before organizations have time to patch. Token Security explains why limiting the…",
@@ -209,6 +199,16 @@
    "date": "23 Oct 2026, 17:50 UTC",
    "sources": "The Hacker News",
    "url": "story/015a882ee274.html"
+  },
+  {
+   "id": "5ec9d44a0613",
+   "title": "PHP2Shell Attacks Root Palo Alto Firewalls but Fail Against WordPress",
+   "summary": "Over 22.6 million exposed instances are potentially affected by the critical PHP flaws that have been targeted for over a week. The post PHP2Shell Attacks Root Palo Alto…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "30 Oct 2026, 15:09 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/5ec9d44a0613.html"
   },
   {
    "id": "ff5ccffe8e2c",
@@ -351,6 +351,16 @@
    "url": "story/bd2cd3a550d6.html"
   },
   {
+   "id": "7aec2fb959c8",
+   "title": "Schwachstelle CVE-2026-80097 in MS Authenticator für Android",
+   "summary": "In der Microsoft Authenticator-App für Android gab es eine Schwachstelle CVE-2026-80097, über die Angreifer auf Inhalte und Geheimnisse zugreifen konnten. Die…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "29 Oct 2026, 15:25 UTC",
+   "sources": "Born's IT and Windows Blog, The Hacker News",
+   "url": "story/7aec2fb959c8.html"
+  },
+  {
    "id": "c39c60375371",
    "title": "CVE-2026-88078 Microsoft Edge (Chromium-based) Spoofing Vulnerability",
    "summary": "CWE added. Informational change only.",
@@ -379,16 +389,6 @@
    "date": "28 Oct 2026, 16:02 UTC",
    "sources": "The Hacker News",
    "url": "story/eb73651e36ee.html"
-  },
-  {
-   "id": "f424b83a0c00",
-   "title": "Ukrainian Hive and Nefilim Ransomware Affiliate Gets 70 Months in US Prison",
-   "summary": "Artem Stryzhak was sentenced to 70 months in prison after pleading guilty to using Nefilim ransomware in attacks. The post Ukrainian Hive and Nefilim Ransomware…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "28 Oct 2026, 15:05 UTC",
-   "sources": "SecurityWeek, BleepingComputer",
-   "url": "story/f424b83a0c00.html"
   },
   {
    "id": "911f226c7d66",
@@ -481,26 +481,6 @@
    "url": "story/649ecf4a57aa.html"
   },
   {
-   "id": "8cc04215eff5",
-   "title": "Fake ChatGPT and Claude Apps Abuse Signed Executables to Deploy Crypto Miners",
-   "summary": "Threat actors are delivering malicious loaders and cryptocurrency miners under the guise of artificial intelligence (AI) desktop applications for Anthropic Claude and…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "29 Oct 2026, 15:20 UTC",
-   "sources": "The Hacker News",
-   "url": "story/8cc04215eff5.html"
-  },
-  {
-   "id": "fcadd0dd5cf0",
-   "title": "How Secure Are US Elections? Voting Machine Risks and the Growing Threat of AI",
-   "summary": "Unpatched voting machines, unverifiable QR-coded ballots, and AI-driven influence campaigns leave US elections short of secure. The post How Secure Are US Elections?…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "29 Oct 2026, 15:00 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/fcadd0dd5cf0.html"
-  },
-  {
    "id": "f34fb5d0be19",
    "title": "Microsoft fixes Remote Desktop failures caused by recent Windows updates",
    "summary": "Microsoft has resolved a known issue that prevents non-admin users from connecting to devices via Remote Desktop when the \"Administrator protection\" security feature is…",
@@ -591,24 +571,14 @@
    "url": "story/bce30872ee07.html"
   },
   {
-   "id": "bfd6a8fefd0e",
-   "title": "UK to look at making software companies liable for cyber breaches",
-   "summary": "The new U.K. budget says the government will \"consider where liability for cyber breaches should sit,\" potentially a landmark shift for a country that has relied on…",
+   "id": "f424b83a0c00",
+   "title": "Ukrainian Hive and Nefilim Ransomware Affiliate Gets 70 Months in US Prison",
+   "summary": "Artem Stryzhak was sentenced to 70 months in prison after pleading guilty to using Nefilim ransomware in attacks. The post Ukrainian Hive and Nefilim Ransomware…",
    "priority": "Standard",
    "category": "Attacks & Breaches",
-   "date": "28 Oct 2026, 15:37 UTC",
-   "sources": "The Record",
-   "url": "story/bfd6a8fefd0e.html"
-  },
-  {
-   "id": "2f52955775c1",
-   "title": "Hive ransomware affiliate jailed, years after FBI infiltrated the gang’s systems",
-   "summary": "A Ukrainian man who carried out ransomware attacks for both the Nefilim and Hive gangs, including attacks on law firms and a healthcare provider during the COVID-19…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "28 Oct 2026, 15:27 UTC",
-   "sources": "Graham Cluley",
-   "url": "story/2f52955775c1.html"
+   "date": "28 Oct 2026, 15:05 UTC",
+   "sources": "SecurityWeek, BleepingComputer",
+   "url": "story/f424b83a0c00.html"
   },
   {
    "id": "a514565027a9",
@@ -739,6 +709,26 @@
    "date": "23 Oct 2026, 18:54 UTC",
    "sources": "BleepingComputer",
    "url": "story/e62f85ca100b.html"
+  },
+  {
+   "id": "47e04300a373",
+   "title": "L’Italia è afflitta da vulnerabilità informatiche, senza una causa chiara",
+   "summary": "I ricercatori non riescono a spiegare del tutto perché le minacce informatiche in Italia siano così diverse rispetto a quelle di qualsiasi altro Paese.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "30 Oct 2026, 15:39 UTC",
+   "sources": "Dark Reading",
+   "url": "story/47e04300a373.html"
+  },
+  {
+   "id": "7b310c119f82",
+   "title": "Bloatware in Aftermarket Auto Parts",
+   "summary": "This story is interesting: One Civic owner purchased a cheap aftermarket head unit off Amazon, and decided to have Claude work its magic on it, like it would a smart TV…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "30 Oct 2026, 15:20 UTC",
+   "sources": "Schneier on Security",
+   "url": "story/7b310c119f82.html"
   },
   {
    "id": "96a0f026f2e0",
@@ -981,24 +971,24 @@
    "url": "story/a556f2a13255.html"
   },
   {
-   "id": "efbb1c68eb20",
-   "title": "Threat Modeling With 4 Simple Questions on a White Board",
-   "summary": "A four-question exercise that CISOs can use to create a threat model that promises results, without a big spend.",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "29 Oct 2026, 15:44 UTC",
-   "sources": "Dark Reading",
-   "url": "story/efbb1c68eb20.html"
-  },
-  {
-   "id": "f5faf77d9641",
-   "title": "Google Touts Powerful Cybersecurity Capabilities in Gemini 4 Carbon Model",
-   "summary": "Google’s new frontier model scored 88.2% on SEC-bench Pro and is rolling out first to vetted cyber defenders via its Fairwind Program. The post Google Touts Powerful…",
+   "id": "8cc04215eff5",
+   "title": "Fake ChatGPT and Claude Apps Abuse Signed Executables to Deploy Crypto Miners",
+   "summary": "Threat actors are delivering malicious loaders and cryptocurrency miners under the guise of artificial intelligence (AI) desktop applications for Anthropic Claude and…",
    "priority": "Standard",
    "category": "AI Risk Lab",
-   "date": "29 Oct 2026, 15:01 UTC",
+   "date": "29 Oct 2026, 15:20 UTC",
+   "sources": "The Hacker News",
+   "url": "story/8cc04215eff5.html"
+  },
+  {
+   "id": "fcadd0dd5cf0",
+   "title": "How Secure Are US Elections? Voting Machine Risks and the Growing Threat of AI",
+   "summary": "Unpatched voting machines, unverifiable QR-coded ballots, and AI-driven influence campaigns leave US elections short of secure. The post How Secure Are US Elections?…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "29 Oct 2026, 15:00 UTC",
    "sources": "SecurityWeek",
-   "url": "story/f5faf77d9641.html"
+   "url": "story/fcadd0dd5cf0.html"
   },
   {
    "id": "67386231cf52",
@@ -1121,14 +1111,24 @@
    "url": "story/02f39348974c.html"
   },
   {
-   "id": "c5cb56f9b754",
-   "title": "AI Takes Root in Hospital Corridors, Raises Security Stakes",
-   "summary": "Artificial intelligence is everywhere in healthcare, from doctors' intake forms to cancer screenings. But in some cases, life-and-death uses are outpacing cybersecurity.",
+   "id": "bfd6a8fefd0e",
+   "title": "UK to look at making software companies liable for cyber breaches",
+   "summary": "The new U.K. budget says the government will \"consider where liability for cyber breaches should sit,\" potentially a landmark shift for a country that has relied on…",
    "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "28 Oct 2026, 15:29 UTC",
-   "sources": "Dark Reading",
-   "url": "story/c5cb56f9b754.html"
+   "category": "Attacks & Breaches",
+   "date": "28 Oct 2026, 15:37 UTC",
+   "sources": "The Record",
+   "url": "story/bfd6a8fefd0e.html"
+  },
+  {
+   "id": "2f52955775c1",
+   "title": "Hive ransomware affiliate jailed, years after FBI infiltrated the gang’s systems",
+   "summary": "A Ukrainian man who carried out ransomware attacks for both the Nefilim and Hive gangs, including attacks on law firms and a healthcare provider during the COVID-19…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "28 Oct 2026, 15:27 UTC",
+   "sources": "Graham Cluley",
+   "url": "story/2f52955775c1.html"
   },
   {
    "id": "7f47388e611d",
@@ -1411,6 +1411,26 @@
    "url": "story/f582252343af.html"
   },
   {
+   "id": "efbb1c68eb20",
+   "title": "Threat Modeling With 4 Simple Questions on a White Board",
+   "summary": "A four-question exercise that CISOs can use to create a threat model that promises results, without a big spend.",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "29 Oct 2026, 15:44 UTC",
+   "sources": "Dark Reading",
+   "url": "story/efbb1c68eb20.html"
+  },
+  {
+   "id": "f5faf77d9641",
+   "title": "Google Touts Powerful Cybersecurity Capabilities in Gemini 4 Carbon Model",
+   "summary": "Google’s new frontier model scored 88.2% on SEC-bench Pro and is rolling out first to vetted cyber defenders via its Fairwind Program. The post Google Touts Powerful…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "29 Oct 2026, 15:01 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/f5faf77d9641.html"
+  },
+  {
    "id": "748d67ab1d92",
    "title": "CISA warns of Fragnesia Linux flaw chained in PHP2Shell attacks",
    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies to patch a high-severity Linux kernel privilege escalation bug that attackers…",
@@ -1591,14 +1611,14 @@
    "url": "story/6e5b341998e9.html"
   },
   {
-   "id": "b96777239849",
-   "title": "Belarusian hackers increasingly acting as proxies for Russia amid war in Ukraine",
-   "summary": "Belarus-linked hackers are increasingly aligning their cyber operations with Russia's interests in Ukraine, researchers said Wednesday.",
+   "id": "c5cb56f9b754",
+   "title": "AI Takes Root in Hospital Corridors, Raises Security Stakes",
+   "summary": "Artificial intelligence is everywhere in healthcare, from doctors' intake forms to cancer screenings. But in some cases, life-and-death uses are outpacing cybersecurity.",
    "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "28 Oct 2026, 15:15 UTC",
-   "sources": "The Record",
-   "url": "story/b96777239849.html"
+   "category": "AI Risk Lab",
+   "date": "28 Oct 2026, 15:29 UTC",
+   "sources": "Dark Reading",
+   "url": "story/c5cb56f9b754.html"
   },
   {
    "id": "70a17c1d3a5b",
@@ -1939,6 +1959,16 @@
    "date": "23 Oct 2026, 17:26 UTC",
    "sources": "Dark Reading",
    "url": "story/b95d5610d154.html"
+  },
+  {
+   "id": "b96777239849",
+   "title": "Belarusian hackers increasingly acting as proxies for Russia amid war in Ukraine",
+   "summary": "Belarus-linked hackers are increasingly aligning their cyber operations with Russia's interests in Ukraine, researchers said Wednesday.",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "28 Oct 2026, 15:15 UTC",
+   "sources": "The Record",
+   "url": "story/b96777239849.html"
   },
   {
    "id": "943e231b105b",
@@ -2569,16 +2599,6 @@
    "date": "23 Oct 2026, 16:51 UTC",
    "sources": "Ars Technica Security",
    "url": "story/9311c26cfe2c.html"
-  },
-  {
-   "id": "5d4b1321ac5e",
-   "title": "PHP shares mitigation for new RCE vulnerability with no patch",
-   "summary": "The PHP security team has shared mitigation measures for a new remote code execution vulnerability that affects systems with non-default configurations and has no patch.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "23 Oct 2026, 15:38 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/5d4b1321ac5e.html"
   }
  ]
 }

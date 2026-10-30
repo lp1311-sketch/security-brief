@@ -4198,28 +4198,6 @@
    "instructions_checked": true
   },
   {
-   "id": "5d4b1321ac5e",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "PHP shares mitigation for new RCE vulnerability with no patch",
-   "link": "https://www.bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability/",
-   "published": "2026-10-23T15:38:05+00:00",
-   "summary": "The PHP security team has shared mitigation measures for a new remote code execution vulnerability that affects systems with non-default configurations and has no patch.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/21/PHP_headpic.jpg",
-   "cves": [],
-   "first_seen": "2026-10-23T16:01:45.116447+00:00",
-   "image_checked": true,
-   "instructions": [
-    "This mitigation should have already been applied on Wednesday, before patching two other critical RCE vulnerabilities (CVE-2026-109618 and CVE-2026-109619) tracked collectively as PHP2Shell .",
-    "PHP shares mitigation for new RCE vulnerability with no patch",
-    "The PHP security team has shared mitigation measures for a new remote code execution vulnerability that affects systems with non-default configurations and has no patch.",
-    "According to a Friday advisory, this security flaw (tracked as CVE-2026-115560) can only be exploited when targeting systems \"with an unusual combination of configuration and application code.\""
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "fbd9cb2b4455",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4766,6 +4744,22 @@
    "instructions_checked": true
   },
   {
+   "id": "47e04300a373",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "L’Italia è afflitta da vulnerabilità informatiche, senza una causa chiara",
+   "link": "https://www.darkreading.com/cybersecurity-analytics/cyber-vulnerabilities-besiege-italy-italian",
+   "published": "2026-10-30T15:39:54+00:00",
+   "summary": "I ricercatori non riescono a spiegare del tutto perché le minacce informatiche in Italia siano così diverse rispetto a quelle di qualsiasi altro Paese.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt0dafcf0847efff9a/6ae24fff8ec8cff4371f87c5/rome-Sean_Gallup-GettyImages-623337092jpg.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-10-30T15:50:54.232772+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "5d6c647af363",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -5023,6 +5017,23 @@
    "image": null,
    "cves": [],
    "first_seen": "2026-10-26T11:45:45.534032+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "7b310c119f82",
+   "source": "schneier",
+   "source_name": "Schneier on Security",
+   "official": false,
+   "source_type": "news",
+   "title": "Bloatware in Aftermarket Auto Parts",
+   "link": "https://www.schneier.com/blog/archives/2026/10/bloatware-in-aftermarket-auto-parts.html",
+   "published": "2026-10-30T15:20:02+00:00",
+   "summary": "This story is interesting: One Civic owner purchased a cheap aftermarket head unit off Amazon, and decided to have Claude work its magic on it, like it would a smart TV. What was reportedly discovered isn’t surprising, but is worth knowing about. Among the pre-installed bloatware—­or spyware, if you’re being less…",
+   "image": null,
+   "cves": [],
+   "first_seen": "2026-10-30T15:50:54.232772+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -5872,6 +5883,27 @@
     "A perfectly functioning authentication mechanism cannot compensate for an identity that should never have been trusted.",
     "The question cannot simply be, “Did this user authenticate successfully?” It must also be, “Do we still have sufficient evidence to trust this identity and its activity?” Layer Identity Threat Detection on Top This is where identity threat detection complements passkeys.",
     "The Future of Identity Security Must Go Beyond Authentication Passkeys and identity threat detection address distinct parts of the identity attack surface."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "5ec9d44a0613",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "PHP2Shell Attacks Root Palo Alto Firewalls but Fail Against WordPress",
+   "link": "https://www.securityweek.com/php2shell-attacks-root-palo-alto-firewalls-but-fail-against-wordpress/",
+   "published": "2026-10-30T15:09:25+00:00",
+   "summary": "Over 22.6 million exposed instances are potentially affected by the critical PHP flaws that have been targeted for over a week. The post PHP2Shell Attacks Root Palo Alto Firewalls but Fail Against WordPress appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/10/php-exploit-code.webp",
+   "cves": [],
+   "first_seen": "2026-10-30T15:50:54.232772+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Active exploitation has been observed targeting the Palo Alto Networks management interface exposed to the internet,” the company notes in its advisory .",
+    "Adobe, Veeam, Juniper Networks Patch Critical Vulnerabilities",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
   },
