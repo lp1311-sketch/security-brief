@@ -224,6 +224,28 @@
    "instructions_checked": true
   },
   {
+   "id": "f9042566e564",
+   "source": "google-threat-intel",
+   "source_name": "Google Threat Intelligence",
+   "official": false,
+   "source_type": "vendor_blog",
+   "title": "ShinyHunters Renewed Mass Exploitation Campaign Targeting Oracle PeopleSoft",
+   "link": "https://cloud.google.com/blog/topics/threat-intelligence/shinyhunters-renewed-mass-exploitation-campaign-targeting-oracle-peoplesoft/",
+   "published": null,
+   "summary": "",
+   "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/03_ThreatIntelligenceWebsiteBannerIdeas_BA.max-2600x2600.png",
+   "cves": [],
+   "first_seen": "2026-10-30T20:02:51.800741+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Defenders should assume that threat actors may use any percent-encoded, mixed-case, or otherwise non-normalized variant of /PSEMHUB/ , and should enforce blocking on the normalized path.",
+    "As an update to the June 2026 post, ShinyHunters Targets Education Sector with Oracle PeopleSoft Exploit , Mandiant and Google Threat Intelligence Group (GTIG) have identified renewed mass exploitation of CVE-2026-35273 by UNC6240 (ShinyHunters), along with expanded global targeting across multiple sectors.",
+    "Mandiant recommends that organizations running Oracle PeopleSoft take the following immediate actions.",
+    "Disable the Environment Management Hub (EMHub) service in multi-server configurations, or remove the PSEMHUB application entirely in single-server configurations, as advised in Oracle's security alert guidance ."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "99e7d99b0dd3",
    "source": "grahamcluley",
    "source_name": "Graham Cluley",
@@ -4478,22 +4500,6 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt626614753803fdf0/6ae260b6848b397b5d1859e3/anthropic_Algi_Febri_Sugita_shutterstock.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-10-29T19:22:47.775217+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "f1cc9ef1de56",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "Exposed to PHP2Shell? Cyber Experts Weigh in With Advice",
-   "link": "https://www.darkreading.com/application-security/exposed-php2shell-cyber-experts-advice",
-   "published": "2026-10-23T19:41:23+00:00",
-   "summary": "Fixing the critical PHP flaws is not as simple as clicking \"Update.\" Here's how to assess your risk, and what you can do to protect yourself.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blte307a3bd1a7bcb35/6adb9c8d2d5b887cc408cb52/Globe_bandages-zennie-Getty.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-10-23T20:33:24.218016+00:00",
    "instructions": [],
    "instructions_checked": true
   },
