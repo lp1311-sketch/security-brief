@@ -1,6 +1,27 @@
 {
  "items": [
   {
+   "id": "ce0cce9f3bc5",
+   "source": "ars",
+   "source_name": "Ars Technica Security",
+   "official": false,
+   "source_type": "news",
+   "title": "Anthropic VS code extension on Cursor backdoored for nearly 12 hours",
+   "link": "https://arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours/",
+   "published": "2026-10-30T21:09:54+00:00",
+   "summary": "An official extension for Anthropic’s Claude model was backdoored and threatened as many as 5,000 developers' machines, multiple sources reported Friday. Anthropic so far has yet to warn customers of the incident. The compromised package was a VS Code extension available in the marketplace of Cursor, a maker of…",
+   "image": "https://cdn.arstechnica.net/wp-content/uploads/2022/05/caution-tape-1000x648.jpeg",
+   "cves": [],
+   "first_seen": "2026-10-30T21:18:38.782659+00:00",
+   "instructions": [
+    "Anyone who installed or updated Anthropic’s VS Code extension from Cursor between 5:27 am ET and 4:35 pm on Thursday should consider themselves affected, although it may be wise for anyone who has recently done so to also consider themselves potentially infected.",
+    "Extensions auto-update in Cursor by default, but users can configure this in settings.” Phorian has more details here .",
+    "Cursor said that the malicious extension attempts to install a persistent SSH backdoor using an added attacker-controlled SSH key, enabling the local SSH service, and opening a reverse SSH tunnel.",
+    "Attempting to add an attacker-controlled SSH key to authorized_keys , enable the local SSH service, and open a reverse SSH tunnel."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "71d9cb2bf3e5",
    "source": "ars",
    "source_name": "Ars Technica Security",
@@ -220,28 +241,6 @@
    "instructions": [
     "Luzifer zu Windows 11 25H2 – 26H2: Preview Update KB5127936 (28.",
     "arno zu UniFi OS 5.1.34 Update sperrt eMudhra-Zertifikate; macOS 27.2-Nutzer müssen selbst eingreifen"
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "f9042566e564",
-   "source": "google-threat-intel",
-   "source_name": "Google Threat Intelligence",
-   "official": false,
-   "source_type": "vendor_blog",
-   "title": "ShinyHunters Renewed Mass Exploitation Campaign Targeting Oracle PeopleSoft",
-   "link": "https://cloud.google.com/blog/topics/threat-intelligence/shinyhunters-renewed-mass-exploitation-campaign-targeting-oracle-peoplesoft/",
-   "published": null,
-   "summary": "",
-   "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/03_ThreatIntelligenceWebsiteBannerIdeas_BA.max-2600x2600.png",
-   "cves": [],
-   "first_seen": "2026-10-30T20:02:51.800741+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Defenders should assume that threat actors may use any percent-encoded, mixed-case, or otherwise non-normalized variant of /PSEMHUB/ , and should enforce blocking on the normalized path.",
-    "As an update to the June 2026 post, ShinyHunters Targets Education Sector with Oracle PeopleSoft Exploit , Mandiant and Google Threat Intelligence Group (GTIG) have identified renewed mass exploitation of CVE-2026-35273 by UNC6240 (ShinyHunters), along with expanded global targeting across multiple sectors.",
-    "Mandiant recommends that organizations running Oracle PeopleSoft take the following immediate actions.",
-    "Disable the Environment Management Hub (EMHub) service in multi-server configurations, or remove the PSEMHUB application entirely in single-server configurations, as advised in Oracle's security alert guidance ."
    ],
    "instructions_checked": true
   },
@@ -2731,6 +2730,28 @@
    "instructions_checked": true
   },
   {
+   "id": "ce4d8aef3066",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "DOJ raises privacy concerns over potential sale of Character.AI chats",
+   "link": "https://therecord.media/doj-raises-privacy-concerns-over-character-ai-sale",
+   "published": "2026-10-30T20:45:00+00:00",
+   "summary": "The DOJ’s Executive Office for U.S. Trustees said a consumer privacy ombudsman is needed to advise the court on how to regulate what data from Character.AI can be sold and under what terms.",
+   "image": "https://cms.therecord.media/uploads/getty_images_Pb_U6_Gd8fp40_unsplash_af7822dfbc.jpg",
+   "cves": [],
+   "first_seen": "2026-10-30T21:18:38.782659+00:00",
+   "image_checked": true,
+   "instructions": [
+    "“Users agree to a privacy policy long before anyone contemplates a sale, and that agreement shouldn’t be the only protection for their most private conversations,” she said. “At the very least, customers of the seller should have to opt into the sale of their data to the buyer.”",
+    "Trustees said a consumer privacy ombudsman is needed to advise the court on how to regulate what data can be sold and under what terms.",
+    "The court has the power to restrict the sale of user data, which, in the case of conversations with Character’s chatbots, are often sensitive and sometimes involve minors.",
+    "The judge could block the sale of user data held by Character, which DOJ’s bankruptcy office notes has an “ambiguous” privacy policy suggesting it can sell at least some users’ chat histories."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "3e53d355cefd",
    "source": "therecord",
    "source_name": "The Record",
@@ -3614,28 +3635,6 @@
    "instructions_checked": true
   },
   {
-   "id": "201a6bfc4c9c",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Abandoned Popcorn Time app exposed millions of devices to RCE attacks",
-   "link": "https://www.bleepingcomputer.com/news/security/abandoned-popcorn-time-app-exposed-millions-of-device-to-rce-attacks/",
-   "published": "2026-10-23T20:55:05+00:00",
-   "summary": "Researchers remotely disabled a vulnerable updater in the abandoned Time4Popcorn app, a fork of the Popcorn Time BitTorrent client, closing a security flaw that could have allowed attackers to execute malicious code with elevated privileges on millions of computers.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/23/popcorn.jpg",
-   "cves": [],
-   "first_seen": "2026-10-23T21:13:12.466432+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Anyone controlling the update domain could manipulate HTTP traffic and execute code as SYSTEM on Windows and as root on macOS.",
-    "“If we were able to send an update, we could potentially get code execution on millions of systems,” Eye Securit notes , adding that “the impact would be severe if this were to fall into the wrong hands.”",
-    "Between November 2025 and March 2026, Eye used the vulnerable update mechanism to deliver remediation code that stopped and disabled the updater.",
-    "After deploying the remediation, Eye recorded 2 million update downloads, and by March 1 this year, requests to its update domain dropped by 98%."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "9e8f060397f4",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4174,6 +4173,28 @@
    "instructions_checked": true
   },
   {
+   "id": "204b171c6486",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Linux kernel exploit enables remote root attacks on MPTCP servers",
+   "link": "https://www.bleepingcomputer.com/news/security/linux-kernel-exploit-enables-remote-root-attacks-on-mptcp-servers/",
+   "published": "2026-10-30T21:09:46+00:00",
+   "summary": "Security researchers at Anthropic have developed an exploit for a critical Linux kernel vulnerability that allows unauthenticated attackers to remotely execute commands as root on servers running Multipath TCP (MPTCP) listeners.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/29/Linux.jpg",
+   "cves": [],
+   "first_seen": "2026-10-30T21:18:38.782659+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Administrators are advised to check their distribution's security advisories and install updated kernel packages as they become available.",
+    "According to the Linux kernel advisory , the vulnerability stems from a race condition in how the kernel handles TCP connection requests, potentially causing a use-after-free condition.",
+    "\"tcp_v4_syn_recv_sock() transfers ownership of ireq->ireq_opt to the child socket (newinet->inet_opt) without copying it,\" reads the advisory.",
+    "In mitigation guidance , Rocky Linux support provider CIQ confirms Rocky Linux 8, 9, and 10 are also affected and shared temporary firewall protections for affected systems."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "96a0f026f2e0",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4648,22 +4669,6 @@
    "instructions_checked": true
   },
   {
-   "id": "78e6b44f5a3d",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "Trust Is Not What It Seems — and Fraudsters Are Counting on It",
-   "link": "https://www.darkreading.com/cyber-risk/trust-is-not-what-it-seems-and-fraudsters-are-counting-on-it",
-   "published": "2026-10-23T20:57:56+00:00",
-   "summary": "Threat actors don't need to rely on malware to breach organizations anymore. They're simply calling help desks and politely asking for access, with a little help from artificial intelligence.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt34579512de050396/6a5a6336b09056633bee9fe7/trust_dial-NicoElNino-getty-2079838824.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-10-23T21:13:12.466432+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "0d99ee2b2828",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -5039,18 +5044,18 @@
    "instructions_checked": true
   },
   {
-   "id": "9d407c505c1e",
+   "id": "0a89691e7bed",
    "source": "schneier",
    "source_name": "Schneier on Security",
    "official": false,
    "source_type": "news",
-   "title": "Friday Squid Blogging: Increasing Squid Populations",
-   "link": "https://www.schneier.com/blog/archives/2026/10/friday-squid-blogging-increasing-squid-populations.html",
-   "published": "2026-10-23T21:00:09+00:00",
-   "summary": "This article in Nature argues that it’s due to an overfishing of predators and warming sea temperatures. As usual, you can also use this squid post to talk about the security stories in the news that I haven’t covered. Blog moderation policy.",
+   "title": "Friday Squid Blogging: Bigfin Squid Off California Coast",
+   "link": "https://www.schneier.com/blog/archives/2026/10/friday-squid-blogging-bigfin-squid-off-california-coast.html",
+   "published": "2026-10-30T21:04:36+00:00",
+   "summary": "Neat video: The sighting, announced September 2, marks the first time anyone has spotted a live bigfin squid, which belongs to the Magnapinna genus, in the northeastern Pacific Ocean. As usual, you can also use this squid post to talk about the security stories in the news that I haven’t covered. Blog moderation…",
    "image": null,
    "cves": [],
-   "first_seen": "2026-10-23T21:13:12.466432+00:00",
+   "first_seen": "2026-10-30T21:18:38.782659+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
