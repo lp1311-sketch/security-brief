@@ -319,6 +319,25 @@
    "instructions_checked": true
   },
   {
+   "id": "c01a972af817",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-118147 Visual Studio Spoofing Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118147",
+   "published": "2026-10-30T14:00:00+00:00",
+   "summary": "Improper certificate validation in Visual Studio allows an unauthorized attacker to perform spoofing over a network.",
+   "image": null,
+   "cves": [
+    "CVE-2026-118147"
+   ],
+   "first_seen": "2026-10-30T19:13:56.754027+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "80b10f6bb26e",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -1540,27 +1559,6 @@
    "first_seen": "2026-10-30T05:24:10.269168+00:00",
    "instructions": [
     "\"Initial investigation suggests that the security incident may involve a compromised DevOps engineer's laptop, which allowed an attacker to gain access to a service container and submit unauthorized withdrawal transactions,\" Binance said in an update."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "077ef200d3e0",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "BlackX UEFI Bootkit Bypasses Secure Boot on Patched Windows Systems Missing Revocations",
-   "link": "https://thehackernews.com/2026/10/blackx-uefi-bootkit-bypasses-secure.html",
-   "published": "2026-10-23T18:50:13+00:00",
-   "summary": "Diplomatic organizations in Central Asia have been targeted by a sophisticated new Unified Extensible Firmware Interface (UEFI) bootkit called BlackX. The activity, which singled out diplomatic entities in Tajikistan, Uzbekistan, and Turkmenistan in early 2026, is suspected to be orchestrated by a China-linked…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0cTK7D5hQFR-3qGTicTlfi6_CbnMIgCJWIojDeXmZr91hrIPqhhxZ72mAsnB6kBOcCdscZOL_VN8RhAdYIxq3d128rkaDweIApSaV5w3IzB1YGN3XNnlarG0IKN5VuDJy_RnPBxXZoKQ1Yh950YFNz-b_pbvEY_QlQa5Tr-BP4366UgkGIg968J-QEN1M/s1600/uefi.jpg",
-   "cves": [],
-   "first_seen": "2026-10-23T19:19:12.595519+00:00",
-   "instructions": [
-    "That said, completely addressing the threat requires additional actions beyond installing the latest update, including running manual steps to apply Microsoft's Secure Boot revocation mitigations, such as adding the \"Windows Production PCA 2011\" certificate to the Secure Boot UEFI Forbidden List (DBX).",
-    "The Russian cybersecurity company has found that attackers are capitalizing on the fact that organizations have not carried out these manual steps, enabling them to still use the Baton Drop vulnerability even on systems that have the \"patch\" applied.",
-    "\"It is likely that the threat actor behind this campaign took into account that few organizations realized the importance of manually activating the Baton Drop patch.",
-    "To install the bootkit, the threat actor drops the following files -"
    ],
    "instructions_checked": true
   },
@@ -3088,6 +3086,23 @@
    "instructions_checked": true
   },
   {
+   "id": "84a2c916c34c",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Fashion retailer Resolve says hackers stole payment card information",
+   "link": "https://therecord.media/resolve-fashion-retailer-data-breach-payment-cards",
+   "published": "2026-10-30T19:00:00+00:00",
+   "summary": "The company, billing itself as “the next-generation fashion retailer for Millennial and Generation Z consumers,” said a recent hack exposed customer payment card numbers.",
+   "image": "https://cms.therecord.media/uploads/CAM_25013_copy_8a567a6f3a.jpg",
+   "cves": [],
+   "first_seen": "2026-10-30T19:13:56.754027+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "8dd5d26e075a",
    "source": "therecord",
    "source_name": "The Record",
@@ -3530,28 +3545,6 @@
     "Microsoft recommends passkeys for stronger, phishing-resistant protection.",
     "Organizations that must use phone-based authentication have to configure third-party telecom providers through the Microsoft Security Store.",
     "Microsoft urges Entra ID admins to migrate users to passkeys"
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "e62f85ca100b",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Microsoft Teams to get AI-powered, context-aware phishing detection",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-teams-to-get-ai-powered-context-aware-phishing-detection/",
-   "published": "2026-10-23T18:54:41+00:00",
-   "summary": "Microsoft has announced plans to add AI-powered phishing detection to Teams messages starting in early November 2026.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/23/Microsoft-Teams-phishing.jpg",
-   "cves": [],
-   "first_seen": "2026-10-23T19:19:12.595519+00:00",
-   "image_checked": true,
-   "instructions": [
-    "\"Microsoft Teams is introducing AI-powered, context-aware phishing detection to help identify phishing, social engineering, impersonation attempts, and deceptive intent,\" the company said in a Microsoft 365 Message Center update on Wednesday.",
-    "Microsoft says IT admins won't need to take any action to enable this new security protection feature, which will focus on external first-contact chats for most users.",
-    "It also began rolling out a new Teams meeting protection policy in August that lets admins block all identified external bots automatically from joining meetings.",
-    "Last month, Microsoft also revealed that Teams will blur QR codes sent by external senders to better protect against fraud and phishing attempts, and that it will let users report suspicious guest invitations directly in Teams to help security teams block phishing attempts and other attacks abusing guest invitations."
    ],
    "instructions_checked": true
   },
