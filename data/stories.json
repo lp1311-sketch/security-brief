@@ -1755,27 +1755,6 @@
    "instructions_checked": true
   },
   {
-   "id": "6f084559d703",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Critical x402 SDK Flaw Could Let Malicious APIs Drain AI Agents’ Token Balances",
-   "link": "https://thehackernews.com/2026/10/critical-x402-sdk-flaw-could-let.html",
-   "published": "2026-10-23T08:35:45+00:00",
-   "summary": "AI agents paying for API calls with the x402 SDKs could sign a payment for their full balance of a supported token if a malicious API asked for it, security firm V12 said on October 22. The cause was the SDKs' default client, which set no spending limit until releases on August 18 added one. The risk was limited to…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1nl6HARmLzzb4BlklarhKxB1F2U6dwKebASj9-Ow-WI6otLzFoATEY-icF7OCAgwHqRzwNhs9jHY2S7e4ZGRHykrIzedvLxQlAyen6jQsOoY_L80gd0Lrjy3-3xzlHavaxahxsI1o13_r2MRRDwbQrtslkXfbITBGcp_736F1sPVq7dR8Rnq_JSVQP3A/s1600/ai-wallet.jpg",
-   "cves": [],
-   "first_seen": "2026-10-23T09:35:18.661629+00:00",
-   "instructions": [
-    "The foundation has published no security advisory for the three flaws, and its changelogs list the fixes without calling them security fixes.",
-    "As of October 23, npm audit returned no advisories for the last TypeScript releases before the fixes, and PyPI listed no vulnerabilities for the last Python release before them, The Hacker News found.",
-    "The project also changed the SIWx specification , which now says a client must refuse to sign when the two do not match.",
-    "TypeScript code that calls createSIWxPayload directly must now pass the URL of the 402 response, after any redirects."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "d09366a97fc8",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1962,6 +1941,27 @@
    "cves": [],
    "first_seen": "2026-10-29T14:36:14.704007+00:00",
    "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "6d2a0802c49f",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Hackers Actively Exploit Highly Critical Drupal Commerce Core Authorization Bypass Flaw",
+   "link": "https://thehackernews.com/2026/10/hackers-actively-exploit-highly.html",
+   "published": "2026-10-30T07:45:30+00:00",
+   "summary": "Drupal has warned that threat actors are exploiting a \"highly critical\" security flaw in its Commerce Core component. The vulnerability, tracked as CVE-2026-118539 (CVSS score: N/A), is a case of missing authorization affecting Commerce Core versions from 0.0.0 to 2.41 and from 3.0.0 to 3.3.13. \"This module enables…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitgPkf4uToEgXwcfmDEKipEveRL2l0PEz6WIegAc2uWyf5_khO7Scgu6MpWHRovED7S-4sKJb4o88JsJT8NI8zB8WCBo04Q9TrEVNJa-08EbxP_zdPkaA7wsBEPIjXbApW1StdY8JunSewAi9TNrAcMwYZjqSsVktddqQ0uIi8-rUzXq1LMMLBHBdccapz/s1600/drupal-rce.jpg",
+   "cves": [
+    "CVE-2026-118539"
+   ],
+   "first_seen": "2026-10-30T08:55:40.801665+00:00",
+   "instructions": [
+    "Users are being recommended to update to the latest version -",
+    "\"This module enables you to sell goods and services to customers through an included shopping cart and checkout form or through decoupled applications via APIs,\" Drupal said in an advisory."
+   ],
    "instructions_checked": true
   },
   {
@@ -2322,29 +2322,6 @@
    "first_seen": "2026-10-28T18:21:54.978668+00:00",
    "instructions": [
     "Edge's popup blocker should have stopped that window, but Edge carried a hardcoded list of allowed addresses, and one of them opened the popup."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "a2a9e372db7b",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Researchers Demonstrate Node2Shell RCE Exploit on Node.js Build Using Crafted Brotli Data",
-   "link": "https://thehackernews.com/2026/10/researchers-demonstrate-node2shell-rce.html",
-   "published": "2026-10-23T08:40:43+00:00",
-   "summary": "Malicious Brotli data can make an application on an official build of Node.js run attacker-supplied code, security researchers at Imperva have demonstrated. Their \"Node2Shell\" proof of concept ran code on the official Node.js 24.22.0 image for Linux arm64, with no debugger or custom build, by feeding crafted data to…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDudJHAM27KiE-F4E5vX1WOgITTdawUaZrFoXUIrf7lscEHIl7fgGQY5Qo60bRxr-o7UKloYK1sp23i5cvWPpc6XXttZa8GFvYxqSV7pp0B6vdBTp0sIBCX8r8oC5CAXO1mdJfshaIpLFyrFDCm9HPiYyBZMECEcSHKzbVzOk_VpGL2kEQDjB1rNk21Y8/s1600/node2shell.gif",
-   "cves": [
-    "CVE-2026-111497"
-   ],
-   "first_seen": "2026-10-23T08:18:17.776990+00:00",
-   "instructions": [
-    "The advisory lists no workaround inside Node.js, so an application that cannot update at once has no fallback in the runtime.",
-    "Node.js disclosed the flaw and released fixes on October 21 , and applications that decode untrusted Brotli data should update.",
-    "The update should reach container images and other artifacts that bundle a Node binary, which a package inventory can miss.",
-    "End-of-life lines 20.x and earlier do not receive the fix and should be moved to a supported line."
    ],
    "instructions_checked": true
   },
@@ -4995,28 +4972,6 @@
    "instructions_checked": true
   },
   {
-   "id": "962b531106f2",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "11 Million Impacted by Capcom Data Breach",
-   "link": "https://www.securityweek.com/11-million-impacted-by-capcom-data-breach/",
-   "published": "2026-10-23T08:34:14+00:00",
-   "summary": "The hackers stole 11 million email addresses from CAPCOM ID and changed the login passwords for 196 accounts. The post 11 Million Impacted by Capcom Data Breach appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/10/Capcom.jpeg",
-   "cves": [],
-   "first_seen": "2026-10-23T08:41:41.892558+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Jon Steinbach has been appointed strategic technical advisor to the Pentagon’s CIO.",
-    "Preparing for disruption must become part of day-to-day operations.",
-    "The company says that no user passwords were compromised and that it has already reset the passwords for the affected accounts.",
-    "Browsers Block eMudhra Intermediate CAs Over Recoverable Private Keys"
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "3bb9ba7c2b0a",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -5851,6 +5806,30 @@
     "A security advisory and a technical write-up will follow once the update is out.",
     "None had made it into a numbered release at that point. “Based on our current assessment, we’re not recommending that everyone disable Tailscale SSH,” the vendor said.",
     "Until the patch arrives, Tailscale advises organizations to review their SSH access policies and disable SSH forwarding where it isn’t needed, which it says mitigates several of the more serious findings."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "d0d43ed2d289",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "TeamViewer Flaw Could Let Malicious Hosts Take Over Support Technicians’ Machines",
+   "link": "https://www.securityweek.com/teamviewer-flaw-could-let-malicious-hosts-take-over-support-technicians-machines/",
+   "published": "2026-10-30T08:44:49+00:00",
+   "summary": "An integer overflow tracked as CVE-2026-111585 could be used to execute arbitrary code on the viewer’s system. The post TeamViewer Flaw Could Let Malicious Hosts Take Over Support Technicians’ Machines appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2024/06/Teamviewer.jpeg",
+   "cves": [
+    "CVE-2026-111585"
+   ],
+   "first_seen": "2026-10-30T08:55:40.801665+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Successful exploitation of the security defect could allow attackers to crash the viewer’s TeamViewer or execute arbitrary code on their system. “Exploitation requires a user to establish a remote-control session to an attacker-controlled or compromised host,” TeamViewer notes in its advisory .",
+    "On macOS, the updates also resolve CVE-2026-92374, a time-of-check-to-time-of-use (TOCTOU) race condition with improper symbolic link handling flaw that could allow a low-privileged local attacker to install a malicious package and gain root privileges.",
+    "Additionally, TeamViewer patched six high-severity local privilege escalation vulnerabilities in the TeamViewer Remote Management add-ons, urging users to update both the clients and the components to the latest versions.",
+    "Adobe, Veeam, Juniper Networks Patch Critical Vulnerabilities"
    ],
    "instructions_checked": true
   },

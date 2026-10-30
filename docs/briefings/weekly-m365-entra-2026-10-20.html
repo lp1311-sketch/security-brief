@@ -24,6 +24,7 @@ var b=document.getElementById('theme-toggle');
 if(b){b.addEventListener('click',function(){dark=!dark;try{localStorage.setItem('sb-theme',dark?'dark':'light')}catch(e){}apply();});}
 apply();});
 })();</script>
+
 <link rel="stylesheet" href="../style.css">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" title="Security Brief" href="https://lp1311-sketch.github.io/security-brief/feed.xml">
@@ -33,7 +34,7 @@ apply();});
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header"><div class="wrap bar">
 <a class="brand" href="../index.html"><img class="logo-img" src="../favicon.svg" width="30" height="30" alt="" aria-hidden="true">Security Brief</a>
-<nav class="nav" aria-label="Categories"><a href="../today/index.html">Today</a><a href="../saved/index.html">Saved</a><a href="../category/threats/index.html">Threats</a><a href="../category/vulnerabilities/index.html">Vulnerabilities</a><a href="../category/ai/index.html">AI</a><a href="../category/microsoft/index.html">Microsoft</a><a href="../stories/index.html">All stories</a><a href="../briefings/index.html">Analysis</a><a href="../patch-tuesday/index.html">Patch Tuesday</a><a href="../change-radar/index.html">Change Radar</a></nav>
+<nav class="nav" aria-label="Categories"><a href="../today/index.html">Today</a><a href="../saved/index.html">Saved</a><a href="../category/threats/index.html">Threats</a><a href="../category/vulnerabilities/index.html">Vulnerabilities</a><a href="../category/ai/index.html">AI</a><a href="../category/microsoft/index.html">Microsoft</a><a href="../stories/index.html">All stories</a><a href="../briefings/index.html">Analysis</a><a href="../patch-tuesday/index.html">Patch Tuesday</a><a href="../change-radar/index.html">Change Radar</a><a href="../contact.html">Contact</a></nav>
 <button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false">Dark mode</button>
 </div></header>
 <div class="banner" role="region" aria-label="Site highlights"><div class="wrap banner-in"><span class="banner-tag"><i class="led g" aria-hidden="true"></i>Live feed</span><p class="banner-text" id="banner-text" aria-live="off">Feeds are checked every 15 minutes.</p><a class="banner-action" href="../today/index.html"><i class="led r" aria-hidden="true"></i>Action today</a><button type="button" class="banner-pause" id="banner-pause" aria-pressed="false" aria-label="Pause banner">Pause</button></div></div>
@@ -70,6 +71,35 @@ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isInter
 document.querySelectorAll('.card,.hero,.stat').forEach(function(el){el.classList.add('reveal');io.observe(el);});}
 if(!reduce){document.querySelectorAll('.card').forEach(function(c){c.addEventListener('pointermove',function(ev){var r=c.getBoundingClientRect();c.style.setProperty('--mx',(ev.clientX-r.left)+'px');c.style.setProperty('--my',(ev.clientY-r.top)+'px');});});}
 })();</script>
-<footer class="site-footer"><div class="wrap"><p>&copy; 2026 Leon Pavesic. Design, analysis and texts on this site are protected by copyright. Headlines, short excerpts and images belong to their original publishers and are linked to the source. Not affiliated with any source.</p><p><a href="../impressum.html">Impressum</a> &middot; <a href="../datenschutz.html">Privacy</a> &middot; <a href="../corrections.html">Corrections</a> &middot; <a href="../feed.xml">RSS</a> &middot; <a href="mailto:leon.pavesic@gmx.de">Contact</a> &middot; <a href="https://www.linkedin.com/in/leon-pavesic/" rel="me noopener noreferrer" target="_blank">LinkedIn</a> &middot; <a href="https://www.xing.com/profile/Leon_Pavesic" rel="me noopener noreferrer" target="_blank">XING</a></p></div></footer>
+<footer class="site-footer"><div class="wrap"><p>&copy; 2026 Leon Pavesic. Design, analysis and texts on this site are protected by copyright. Headlines, short excerpts and images belong to their original publishers and are linked to the source. Not affiliated with any source.</p><nav class="foot-nav" aria-label="Footer"><a href="../impressum.html">Impressum</a><a href="../datenschutz.html">Privacy</a><a href="../cookies.html">Cookies</a><button type="button" class="foot-link" id="cookie-settings">Cookie settings</button><a href="../accessibility.html">Accessibility</a><a href="../responsible-disclosure.html">Responsible disclosure</a><a href="../corrections.html">Corrections</a><a href="../feed.xml">RSS</a><a href="../contact.html">Contact</a><button type="button" class="foot-link" id="motion-toggle" aria-pressed="false">Less motion</button></nav><p class="foot-social"><span>Connect:</span> <a href="https://www.linkedin.com/in/leon-pavesic/" rel="me noopener noreferrer" target="_blank">LinkedIn</a> &middot; <a href="https://www.xing.com/profile/Leon_Pavesic" rel="me noopener noreferrer" target="_blank">XING</a></p></div></footer>
+<section class="ck-banner" id="ck-banner" role="region" aria-label="Cookie notice" hidden><p>This site stores only what it needs to work: your theme choice, saved items and checklist progress, all in your browser. We set no analytics, advertising or tracking cookies. <a href="../cookies.html">Cookie policy</a></p><div class="ck-actions"><button type="button" class="ck-btn ck-primary" data-consent="ok">OK</button></div></section><script>(function(){
+var KEY='sb-consent';var GA=false;
+var banner=document.getElementById('ck-banner');
+function read(){try{return JSON.parse(localStorage.getItem(KEY)||'null');}catch(e){return null;}}
+function save(v){try{localStorage.setItem(KEY,JSON.stringify(v));}catch(e){}}
+function show(){if(banner)banner.hidden=false;}
+function hide(){if(banner)banner.hidden=true;}
+function choose(accept){
+  save({v:1,analytics:!!accept,t:Date.now()});
+  if(GA&&window.gtag){gtag('consent','update',{analytics_storage:accept?'granted':'denied'});}
+  if(GA&&accept&&window.sbLoadGA){window.sbLoadGA();}
+  hide();
+}
+if(banner){banner.querySelectorAll('[data-consent]').forEach(function(b){
+  b.addEventListener('click',function(){choose(b.getAttribute('data-consent')==='accept');});});}
+if(!read()){show();}
+var settings=document.getElementById('cookie-settings');
+if(settings){settings.addEventListener('click',function(){
+  try{localStorage.removeItem(KEY);}catch(e){}
+  show();if(banner){var first=banner.querySelector('button');if(first)first.focus();}
+});}
+})();</script><script>(function(){
+var KEY='sb-motion';var btn=document.getElementById('motion-toggle');
+function set(on){document.documentElement.classList.toggle('less-motion',on);
+  if(btn)btn.setAttribute('aria-pressed',on?'true':'false');
+  try{if(on)localStorage.setItem(KEY,'1');else localStorage.removeItem(KEY);}catch(e){}}
+try{set(localStorage.getItem(KEY)==='1');}catch(e){set(false);}
+if(btn){btn.addEventListener('click',function(){set(!document.documentElement.classList.contains('less-motion'));});}
+})();</script>
 </body>
 </html>
