@@ -63,24 +63,6 @@
    "instructions_checked": true
   },
   {
-   "id": "9311c26cfe2c",
-   "source": "ars",
-   "source_name": "Ars Technica Security",
-   "official": false,
-   "source_type": "news",
-   "title": "Knicks sent employees fake offer of championship rings in phishing test: Report",
-   "link": "https://arstechnica.com/tech-policy/2026/10/knicks-sent-employees-fake-offer-of-championship-rings-in-phishing-test-report/",
-   "published": "2026-10-23T16:51:59+00:00",
-   "summary": "The New York Knicks organization sent employees a phishing email promising free championship rings in a test of its staff's ability to detect scams, The New York Times reported yesterday. “Congratulations, your Employee Championship Ring is here,” the email sent in late September said, instructing employees to click a…",
-   "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/james-dolan-knicks-championship-1152x648-1792772606.jpg",
-   "cves": [],
-   "first_seen": "2026-10-23T17:15:49.172949+00:00",
-   "instructions": [
-    "We contacted the Madison Square Garden Sports organization with these questions and will update this article if we get a response."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "cc05f605fbbb",
    "source": "borncity",
    "source_name": "Born's IT and Windows Blog",
@@ -446,6 +428,25 @@
     "CVE-2026-69284"
    ],
    "first_seen": "2026-10-27T16:29:08.596210+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "6ea5871e5b09",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-69446 Microsoft Edge (Chromium-based) Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69446",
+   "published": "2026-10-30T14:00:00+00:00",
+   "summary": "Corrected CVE by adding the assigning CNA. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-69446"
+   ],
+   "first_seen": "2026-10-30T17:42:45.015148+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -2767,23 +2768,6 @@
    "instructions_checked": true
   },
   {
-   "id": "90f70db29589",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "FCC bans two devices with surveillance chips linked to Huawei",
-   "link": "https://therecord.media/fcc-bans-devices-huawei-surveillance-chips",
-   "published": "2026-10-23T17:28:00+00:00",
-   "summary": "The banned items — a wireless video transmitter and dashboard camera — are made with chips manufactured by Huawei subsidiary HiSilicon, which markets its products as “designed for the surveillance market.”",
-   "image": "https://cms.therecord.media/uploads/fcc_f0096cadc5.jpg",
-   "cves": [],
-   "first_seen": "2026-10-23T17:54:14.622043+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "4bf942696238",
    "source": "therecord",
    "source_name": "The Record",
@@ -3589,28 +3573,6 @@
     "Microsoft says IT admins won't need to take any action to enable this new security protection feature, which will focus on external first-contact chats for most users.",
     "It also began rolling out a new Teams meeting protection policy in August that lets admins block all identified external bots automatically from joining meetings.",
     "Last month, Microsoft also revealed that Teams will blur QR codes sent by external senders to better protect against fraud and phishing attempts, and that it will let users report suspicious guest invitations directly in Teams to help security teams block phishing attempts and other attacks abusing guest invitations."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "27be26c6f177",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Microsoft: Windows Server 2016 reaches end of support in January",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2016-reaches-end-of-support-in-january/",
-   "published": "2026-10-23T17:05:07+00:00",
-   "summary": "Microsoft says Windows Server 2016 will stop receiving security updates after it reaches the end of support in January 2027.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/15/Windows_Server_headpic.jpg",
-   "cves": [],
-   "first_seen": "2026-10-23T17:15:49.172949+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Before Windows Server 2016 reaches the end of support, Microsoft advised IT administrators to upgrade to Windows Server 2025 , which started rolling out to Windows Insiders in January 2024 and reached general availability in November 2024 .",
-    "Earlier this month, Microsoft also announced that systems running Windows 11 24H2 Home and Pro editions stopped receiving security and non-security preview updates and advised customers to upgrade to Windows 11 26H2 (also known as the Windows 11 2026 Update).",
-    "\"To help keep your environment protected and supported, plan to upgrade to Windows Server 2025,\" the company added.",
-    "\"The January 2027 Windows security update will be the last update available for this version."
    ],
    "instructions_checked": true
   },
@@ -4864,22 +4826,6 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt27f5645084863935/6ae21761f2adb985c612d4c7/GettyImages-1415423396.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-10-29T14:36:14.704007+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "b95d5610d154",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "AI Tools Are Generating Massive Attacks for Little Cost",
-   "link": "https://www.darkreading.com/cybersecurity-operations/ai-tools-massive-attacks-little-cost",
-   "published": "2026-10-23T17:26:59+00:00",
-   "summary": "One campaign targets 105 sites using open-weight models; in another, public models gained full domain control for $12. Cyber-defense will have to change.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blte7023e63db2b06bb/6adb780c560f54c5dbf647e8/economics-cybersecurity-Ton_Wanniwat-shutterstock.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-10-23T17:54:14.622043+00:00",
    "instructions": [],
    "instructions_checked": true
   },
