@@ -1051,6 +1051,7 @@ def _site_footer(base: str, year: int) -> str:
         f'<a href="{base}accessibility.html">Accessibility</a>'
         f'<a href="{base}responsible-disclosure.html">Responsible disclosure</a>'
         f'<a href="{base}corrections.html">Corrections</a>'
+        f'<a href="{base}saved/index.html">Saved</a>'
         f'<a href="{base}feed.xml">RSS</a>'
         f'<a href="{base}contact.html">Contact</a>'
         '<button type="button" class="foot-link" id="motion-toggle" aria-pressed="false">Less motion</button>'
@@ -1169,13 +1170,11 @@ def _layout(cfg: dict, title: str, desc: str, body: str, base: str, image: str |
     year = datetime.now(timezone.utc).year
     links = [f'<a href="{base}category/{cid}/index.html">{esc(SHORT_NAV[cid])}</a>'
              for cid in CATEGORY_ORDER if cid != "general"]
-    links.append(f'<a href="{base}stories/index.html">All stories</a>')
     links.append(f'<a href="{base}briefings/index.html">Analysis</a>')
     links.append(f'<a href="{base}patch-tuesday/index.html">Patch Tuesday</a>')
     links.append(f'<a href="{base}change-radar/index.html">Change Radar</a>')
-    links.append(f'<a href="{base}contact.html">Contact</a>')
+    links.append(f'<a class="nav-cta" href="{base}contact.html">Contact</a>')
     links.insert(0, f'<a href="{base}today/index.html">Today</a>')
-    links.insert(1, f'<a href="{base}saved/index.html">Saved</a>')
     nav = "".join(links)
     return f"""<!doctype html>
 <html lang="en">
@@ -2908,6 +2907,65 @@ LESS_MOTION_CSS = """
 .less-motion .sm-cell:hover{transform:none}
 """
 
+FUTURE_CSS = """
+:root{--display:"Space Grotesk","Segoe UI Variable Display","Segoe UI",system-ui,-apple-system,sans-serif;--r:20px}
+:root,[data-theme="light"]{--bg:#f3f6fb;--surface:rgba(255,255,255,.78);--surface-2:rgba(15,23,42,.04);--ink:#0b1220;--muted:#56607a;--line:rgba(15,23,42,.10);--accent:#0891b2;--accent-ink:#ffffff}
+[data-theme="dark"]{--bg:#05070c;--surface:rgba(15,20,30,.66);--surface-2:rgba(148,163,184,.07);--ink:#eef4ff;--muted:#8d99ad;--line:rgba(148,163,184,.14);--accent:#22d3ee;--accent-ink:#031017;--shadow:0 30px 80px -34px rgba(34,211,238,.28)}
+html{background:var(--bg)}
+body{background:radial-gradient(900px 520px at 88% -8%,color-mix(in srgb,var(--accent) 16%,transparent),transparent 62%),radial-gradient(760px 480px at -8% 12%,rgba(167,139,250,.12),transparent 60%),var(--bg);background-attachment:fixed;letter-spacing:-.008em}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(rgba(148,163,184,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(148,163,184,.06) 1px,transparent 1px);background-size:48px 48px;-webkit-mask-image:radial-gradient(ellipse 80% 60% at 50% 0%,#000 25%,transparent 80%);mask-image:radial-gradient(ellipse 80% 60% at 50% 0%,#000 25%,transparent 80%)}
+::selection{background:color-mix(in srgb,var(--accent) 35%,transparent);color:var(--ink)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+
+/* header */
+.site-header{background:color-mix(in srgb,var(--bg) 62%,transparent);border-bottom:1px solid var(--line);backdrop-filter:blur(18px) saturate(150%);-webkit-backdrop-filter:blur(18px) saturate(150%)}
+.bar{min-height:72px;align-items:center}
+.brand{font-family:var(--display);font-size:1.12rem;font-weight:700;letter-spacing:-.02em}
+.mark{box-shadow:0 0 0 1px var(--line),0 0 24px -4px var(--accent)}
+.nav{flex-wrap:wrap;overflow:visible;row-gap:6px;padding:10px 0;-webkit-mask-image:none;mask-image:none;padding-right:0}
+.nav a{font-size:.86rem;border:1px solid transparent;transition:background .2s ease,color .2s ease,border-color .2s ease}
+.nav a:hover{border-color:var(--line)}
+.nav a.nav-cta{background:var(--accent);color:var(--accent-ink);font-weight:650;box-shadow:0 0 24px -8px var(--accent)}
+.nav a.nav-cta:hover{color:var(--accent-ink);filter:brightness(1.08);border-color:transparent}
+.theme-toggle{border-radius:999px;background:var(--surface);backdrop-filter:blur(8px)}
+
+/* type */
+.intro{padding:34px 0 18px}
+.intro h1{font-family:var(--display);font-size:clamp(2.1rem,4.6vw,3.5rem);line-height:1.02;letter-spacing:-.035em;font-weight:700;background:linear-gradient(120deg,var(--ink) 35%,var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent}
+.kicker{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:650}
+.lede{font-size:1.08rem;color:var(--muted);max-width:62ch}
+h2,h3{font-family:var(--display);letter-spacing:-.02em}
+.section h2{display:flex;align-items:center;gap:14px;font-size:1.3rem}
+.section h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--line),transparent)}
+
+/* surfaces */
+.hero,.article-hero{border-radius:28px;border:1px solid var(--line);background:var(--surface);box-shadow:var(--shadow);overflow:hidden;backdrop-filter:blur(12px)}
+.card{border-radius:var(--r);background:var(--surface);border:1px solid var(--line);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);transition:transform .28s ease,border-color .28s ease,box-shadow .28s ease}
+.card:hover{transform:translateY(-4px);border-color:color-mix(in srgb,var(--accent) 50%,transparent);box-shadow:0 26px 60px -30px color-mix(in srgb,var(--accent) 60%,transparent)}
+.card h3 a{font-weight:650}
+.card-media{overflow:hidden}
+.card-media img{transition:transform .5s ease}
+.card:hover .card-media img{transform:scale(1.04)}
+
+/* buttons and chips */
+.btn,.rv-btn-primary{background:var(--accent);color:var(--accent-ink);border-radius:999px;font-weight:650;box-shadow:0 10px 30px -14px var(--accent);transition:transform .2s ease,filter .2s ease}
+.btn:hover,.rv-btn-primary:hover{filter:brightness(1.07);transform:translateY(-1px);color:var(--accent-ink)}
+.rv-chip[aria-pressed="true"],.filters button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:transparent}
+
+/* footer and banners */
+.site-footer{border-top:1px solid var(--line);background:color-mix(in srgb,var(--surface) 55%,transparent);margin-top:56px}
+.ck-banner{background:color-mix(in srgb,var(--surface) 88%,transparent);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-radius:18px;box-shadow:var(--shadow)}
+.ck-primary{background:var(--accent);color:var(--accent-ink);border-color:transparent}
+
+/* radar and analysis polish */
+.an-row{transition:background .2s ease}
+.an-row:hover{background:color-mix(in srgb,var(--accent) 5%,transparent)}
+.an-key{background:var(--surface);border-radius:18px;backdrop-filter:blur(10px)}
+
+@media (max-width:860px){.bar{min-height:0;padding-top:12px;padding-bottom:6px}.intro h1{font-size:2rem}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.card:hover,.card:hover .card-media img{transform:none}}
+"""
+
 MODERN_CSS = """
 .rv-hero{isolation:isolate}
 .rv-hero::after{content:"";position:absolute;inset:-40%;z-index:-1;pointer-events:none;filter:blur(22px);
@@ -3233,7 +3291,7 @@ def write_site(out: Path, stories: list[dict], cfg: dict, now: datetime, status:
     site_cfg = site_cfg or {}
     (out / "story").mkdir(parents=True, exist_ok=True)
     # Story pages are kept even after a story leaves the 7-day window, so old links never 404.
-    (out / "style.css").write_text(CSS.strip() + "\n" + EXTRA_CSS + "\n" + DESIGN_CSS + "\n" + RADAR_CSS + "\n" + ANALYSIS_CSS + "\n" + SITE_CSS + "\n" + LESS_MOTION_CSS, encoding="utf-8")
+    (out / "style.css").write_text(CSS.strip() + "\n" + EXTRA_CSS + "\n" + DESIGN_CSS + "\n" + RADAR_CSS + "\n" + ANALYSIS_CSS + "\n" + SITE_CSS + "\n" + LESS_MOTION_CSS + "\n" + FUTURE_CSS, encoding="utf-8")
     (out / "favicon.svg").write_text(FAVICON_SVG, encoding="utf-8")
     # Optional root-level QR image: keep deployment simple for repository web uploads.
     import shutil
