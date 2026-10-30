@@ -953,6 +953,217 @@ SHORT_NAV = {"threats": "Threats", "vulnerabilities": "Vulnerabilities", "ai": "
              "microsoft": "Microsoft"}
 
 
+# ---------------------------------------------------------------- cookies, consent and contact (EU)
+LINKEDIN_URL = "https://www.linkedin.com/in/leon-pavesic/"
+XING_URL = "https://www.xing.com/profile/Leon_Pavesic"
+CONTACT_MAIL = "leon.pavesic@gmx.de"
+ACTIVE_SITE: dict = {}  # filled from site.json in main()
+
+
+def _ga4_id() -> str:
+    """Optional Google Analytics 4 id from site.json. Empty means no analytics is loaded at all."""
+    raw = str((ACTIVE_SITE.get("analytics") or {}).get("ga4_id") or "").strip()
+    return raw if re.fullmatch(r"G-[A-Z0-9]{4,20}", raw) else ""
+
+
+def _consent_head() -> str:
+    ga = _ga4_id()
+    if not ga:
+        return ""
+    return ("<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}"
+            "gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});"
+            "window.sbLoadGA=function(){if(window.sbGALoaded)return;window.sbGALoaded=true;"
+            "var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=" + ga + "';"
+            "document.head.appendChild(s);gtag('js',new Date());gtag('config','" + ga + "');};"
+            "try{var c=JSON.parse(localStorage.getItem('sb-consent')||'null');"
+            "if(c&&c.analytics){gtag('consent','update',{analytics_storage:'granted'});window.sbLoadGA();}}catch(e){}</script>")
+
+
+def _cookie_banner(base: str) -> str:
+    if _ga4_id():
+        text = ("We use analytics cookies only if you agree. Storage for your theme, saved items and checklist progress "
+                "is always used, because the site needs it to work.")
+        buttons = ('<button type="button" class="ck-btn" data-consent="decline">Decline</button>'
+                   '<button type="button" class="ck-btn ck-primary" data-consent="accept">Accept analytics</button>')
+    else:
+        text = ("This site stores only what it needs to work: your theme choice, saved items and checklist progress, "
+                "all in your browser. We set no analytics, advertising or tracking cookies.")
+        buttons = '<button type="button" class="ck-btn ck-primary" data-consent="ok">OK</button>'
+    return ('<section class="ck-banner" id="ck-banner" role="region" aria-label="Cookie notice" hidden>'
+            f'<p>{esc(text)} <a href="{base}cookies.html">Cookie policy</a></p>'
+            f'<div class="ck-actions">{buttons}</div></section>')
+
+
+COOKIE_JS = """(function(){
+var KEY='sb-consent';var GA=__GA__;
+var banner=document.getElementById('ck-banner');
+function read(){try{return JSON.parse(localStorage.getItem(KEY)||'null');}catch(e){return null;}}
+function save(v){try{localStorage.setItem(KEY,JSON.stringify(v));}catch(e){}}
+function show(){if(banner)banner.hidden=false;}
+function hide(){if(banner)banner.hidden=true;}
+function choose(accept){
+  save({v:1,analytics:!!accept,t:Date.now()});
+  if(GA&&window.gtag){gtag('consent','update',{analytics_storage:accept?'granted':'denied'});}
+  if(GA&&accept&&window.sbLoadGA){window.sbLoadGA();}
+  hide();
+}
+if(banner){banner.querySelectorAll('[data-consent]').forEach(function(b){
+  b.addEventListener('click',function(){choose(b.getAttribute('data-consent')==='accept');});});}
+if(!read()){show();}
+var settings=document.getElementById('cookie-settings');
+if(settings){settings.addEventListener('click',function(){
+  try{localStorage.removeItem(KEY);}catch(e){}
+  show();if(banner){var first=banner.querySelector('button');if(first)first.focus();}
+});}
+})();"""
+
+
+MOTION_JS = """(function(){
+var KEY='sb-motion';var btn=document.getElementById('motion-toggle');
+function set(on){document.documentElement.classList.toggle('less-motion',on);
+  if(btn)btn.setAttribute('aria-pressed',on?'true':'false');
+  try{if(on)localStorage.setItem(KEY,'1');else localStorage.removeItem(KEY);}catch(e){}}
+try{set(localStorage.getItem(KEY)==='1');}catch(e){set(false);}
+if(btn){btn.addEventListener('click',function(){set(!document.documentElement.classList.contains('less-motion'));});}
+})();"""
+
+
+def _cookie_script(base: str) -> str:
+    return "<script>" + COOKIE_JS.replace("__GA__", "true" if _ga4_id() else "false") + "</script><script>" + MOTION_JS + "</script>"
+
+
+def _social_links() -> str:
+    return (f'<a href="{LINKEDIN_URL}" rel="me noopener noreferrer" target="_blank">LinkedIn</a> &middot; '
+            f'<a href="{XING_URL}" rel="me noopener noreferrer" target="_blank">XING</a>')
+
+
+def _site_footer(base: str, year: int) -> str:
+    return (
+        '<footer class="site-footer"><div class="wrap">'
+        f'<p>&copy; {year} Leon Pavesic. Design, analysis and texts on this site are protected by copyright. '
+        'Headlines, short excerpts and images belong to their original publishers and are linked to the source. '
+        'Not affiliated with any source.</p>'
+        '<nav class="foot-nav" aria-label="Footer">'
+        f'<a href="{base}impressum.html">Impressum</a>'
+        f'<a href="{base}datenschutz.html">Privacy</a>'
+        f'<a href="{base}cookies.html">Cookies</a>'
+        f'<button type="button" class="foot-link" id="cookie-settings">Cookie settings</button>'
+        f'<a href="{base}accessibility.html">Accessibility</a>'
+        f'<a href="{base}responsible-disclosure.html">Responsible disclosure</a>'
+        f'<a href="{base}corrections.html">Corrections</a>'
+        f'<a href="{base}feed.xml">RSS</a>'
+        f'<a href="{base}contact.html">Contact</a>'
+        '<button type="button" class="foot-link" id="motion-toggle" aria-pressed="false">Less motion</button>'
+        '</nav>'
+        f'<p class="foot-social"><span>Connect:</span> {_social_links()}</p>'
+        '</div></footer>')
+
+
+def _contact_page(cfg: dict) -> str:
+    body = (
+        '<section class="intro"><p class="kicker">Contact</p><h1>Let&#8217;s talk</h1>'
+        '<p class="lede">Questions about Microsoft 365, Entra, Defender or this site? Message me on LinkedIn or XING. '
+        'There is no contact form and no inbox queue.</p></section>'
+        '<div class="contact-grid">'
+        f'<a class="contact-btn" href="{LINKEDIN_URL}" target="_blank" rel="me noopener noreferrer"><b>LinkedIn</b><span>Send a direct message</span></a>'
+        f'<a class="contact-btn" href="{XING_URL}" target="_blank" rel="me noopener noreferrer"><b>XING</b><span>Send a direct message</span></a>'
+        f'<a class="contact-btn" href="mailto:{CONTACT_MAIL}"><b>Email</b><span>{esc(CONTACT_MAIL)}</span></a>'
+        '</div>'
+        '<article class="prose"><p>LinkedIn and XING process your messages under their own privacy notices. '
+        'Read our <a href="datenschutz.html">privacy notice</a> and <a href="cookies.html">cookie policy</a> for what this site stores.</p>'
+        '<p>Security issues in this site: see the <a href="responsible-disclosure.html">responsible disclosure</a> page.</p></article>')
+    return _layout(cfg, "Contact", "Contact the author on LinkedIn, XING or by email.", body, "")
+
+
+def _cookies_page(cfg: dict) -> str:
+    if _ga4_id():
+        analytics = ("<p>Analytics: if you accept, we use Google Analytics 4 with Google Consent Mode, so no analytics "
+                     "cookies are set before you agree. You can decline or withdraw at any time under <strong>Cookie settings</strong> in the footer.</p>")
+    else:
+        analytics = ("<p>Analytics and advertising: we currently use neither. If that changes, we will ask for your consent "
+                     "before any analytics or advertising storage is set.</p>")
+    body = (
+        '<article class="prose"><h1>Cookie policy</h1>'
+        '<p>This page explains which data this site stores in your browser and why. It applies to the whole site.</p>'
+        '<h2>Storage that the site needs</h2>'
+        '<p>These entries are kept in your browser (local storage). They never leave your device.</p>'
+        '<ul>'
+        '<li><code>sb-theme</code>: your light or dark mode choice.</li>'
+        '<li><code>sb-saved</code>: items you saved to your list.</li>'
+        '<li><code>sb-ops-done</code>: checklist progress you ticked.</li>'
+        '<li><code>sb-motion</code>: your “Less motion” choice from the footer.</li>'
+        '<li><code>sb-consent</code>: your answer to this notice, so it is not shown again.</li>'
+        '</ul>'
+        '<p>No cookies are set for these. Deleting browser data removes them.</p>'
+        '<h2>Analytics and advertising</h2>' + analytics +
+        '<h2>Your choice</h2>'
+        '<p>Use <strong>Cookie settings</strong> in the footer to show this notice again and change your answer.</p>'
+        '<p>Legal basis: storage that the site needs is based on section 25(2) TDDDG; analytics storage, if enabled, '
+        'needs your consent under section 25(1) TDDDG and Art. 6(1)(a) GDPR. Questions: <a href="contact.html">contact page</a>.</p>'
+        '</article>')
+    return _layout(cfg, "Cookie policy", "Which browser storage this site uses, and how to change your choice.", body, "")
+
+
+def _accessibility_page(cfg: dict) -> str:
+    body = (
+        '<article class="prose"><h1>Accessibility</h1>'
+        '<p>We aim to make this site usable for everyone, following the Web Content Accessibility Guidelines (WCAG) 2.1, level AA, as a target.</p>'
+        '<h2>What is in place</h2><ul>'
+        '<li>Keyboard navigation, a skip link to the main content, and visible focus states.</li>'
+        '<li>Dark and light mode.</li>'
+        '<li>Animations are reduced when your system asks for less motion.</li>'
+        '<li>Images that only decorate a page have empty alternative text.</li></ul>'
+        '<h2>Known limits</h2>'
+        '<p>Headlines and images come from other publishers, and their accessibility is outside our control. '
+        'We have not had an independent accessibility audit.</p>'
+        '<h2>Feedback</h2>'
+        '<p>If something is hard to use, <a href="contact.html">contact the author</a>. We will look at it and fix what we can.</p>'
+        '</article>')
+    return _layout(cfg, "Accessibility", "Accessibility statement for this site.", body, "")
+
+
+def _responsible_disclosure_page(cfg: dict) -> str:
+    body = (
+        '<article class="prose"><h1>Responsible disclosure</h1>'
+        '<p>Found a security issue on this site? Thank you for reporting it.</p>'
+        '<h2>How to report</h2>'
+        f'<p>Email <a href="mailto:{CONTACT_MAIL}">{esc(CONTACT_MAIL)}</a> with the steps to reproduce it. '
+        'Please do not include data about other people.</p>'
+        '<h2>What to expect</h2><ul>'
+        '<li>We aim to reply within five working days. This is a target, not a guarantee.</li>'
+        '<li>We will tell you when the issue is fixed, if you want us to.</li>'
+        '<li>We do not run a bug bounty programme.</li></ul>'
+        '<h2>Please do not</h2><ul>'
+        '<li>Test systems or accounts that are not yours.</li>'
+        '<li>Access, change or delete data beyond what is needed to show the problem.</li></ul>'
+        '<h2>Microsoft products</h2>'
+        '<p>Vulnerabilities in Microsoft products should be reported to Microsoft through the '
+        '<a href="https://msrc.microsoft.com/report/" target="_blank" rel="noopener noreferrer">Microsoft Security Response Center</a>.</p>'
+        '</article>')
+    return _layout(cfg, "Responsible disclosure", "How to report a security issue on this site.", body, "")
+
+
+SITE_CSS = """
+.ck-banner{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;max-width:760px;margin:0 auto;padding:16px 18px;border-radius:14px;border:1px solid var(--line);background:var(--surface);box-shadow:0 18px 40px -20px rgba(0,0,0,.5);display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+.ck-banner[hidden]{display:none}
+.ck-banner p{margin:0;font-size:.9rem;color:var(--ink);flex:1 1 320px}
+.ck-banner a{color:var(--ink)}
+.ck-actions{display:flex;gap:10px;flex-wrap:wrap}
+.ck-btn{font:inherit;font-weight:650;font-size:.9rem;padding:9px 16px;border-radius:999px;border:1px solid var(--line);background:var(--surface-2);color:var(--ink);cursor:pointer;min-width:120px}
+.ck-primary{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.ck-btn:focus-visible,.foot-link:focus-visible,.foot-nav a:focus-visible,.foot-social a:focus-visible,.contact-btn:focus-visible{outline:2px solid #38bdf8;outline-offset:2px}
+.foot-nav{display:flex;flex-wrap:wrap;gap:8px 16px;margin:10px 0 0;font-size:.88rem}
+.foot-nav a,.foot-link{color:var(--muted);text-decoration:underline;background:none;border:0;padding:0;font:inherit;cursor:pointer}
+.foot-social{margin-top:10px;font-size:.88rem}
+.foot-social a{color:var(--muted)}
+.contact-grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin:20px 0}
+.contact-btn{display:flex;flex-direction:column;gap:4px;padding:18px;border-radius:14px;border:1px solid var(--line);background:var(--surface-2);color:var(--ink);text-decoration:none}
+.contact-btn b{font-size:1.05rem}
+.contact-btn span{color:var(--muted);font-size:.88rem}
+.contact-btn:hover{border-color:#38bdf8}
+"""
+
+
 def _layout(cfg: dict, title: str, desc: str, body: str, base: str, image: str | None = None) -> str:
     site = esc(cfg["site_name"])
     year = datetime.now(timezone.utc).year
@@ -962,6 +1173,7 @@ def _layout(cfg: dict, title: str, desc: str, body: str, base: str, image: str |
     links.append(f'<a href="{base}briefings/index.html">Analysis</a>')
     links.append(f'<a href="{base}patch-tuesday/index.html">Patch Tuesday</a>')
     links.append(f'<a href="{base}change-radar/index.html">Change Radar</a>')
+    links.append(f'<a href="{base}contact.html">Contact</a>')
     links.insert(0, f'<a href="{base}today/index.html">Today</a>')
     links.insert(1, f'<a href="{base}saved/index.html">Saved</a>')
     nav = "".join(links)
@@ -975,6 +1187,7 @@ def _layout(cfg: dict, title: str, desc: str, body: str, base: str, image: str |
 {_og_tags(cfg, title, desc, image)}
 <script>document.documentElement.classList.add("js");</script>
 <script>{THEME_JS}</script>
+{_consent_head()}
 <link rel="stylesheet" href="{base}style.css">
 <link rel="icon" href="{base}favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" title="{site}" href="{esc(cfg['site_url'])}/feed.xml">
@@ -993,7 +1206,8 @@ def _layout(cfg: dict, title: str, desc: str, body: str, base: str, image: str |
 </main>
 <script>{BANNER_JS}</script>
 <script>{FX_JS}</script>
-<footer class="site-footer"><div class="wrap"><p>&copy; {year} Leon Pavesic. Design, analysis and texts on this site are protected by copyright. Headlines, short excerpts and images belong to their original publishers and are linked to the source. Not affiliated with any source.</p><p><a href="{base}impressum.html">Impressum</a> &middot; <a href="{base}datenschutz.html">Privacy</a> &middot; <a href="{base}corrections.html">Corrections</a> &middot; <a href="{base}feed.xml">RSS</a> &middot; <a href="mailto:leon.pavesic@gmx.de">Contact</a> &middot; <a href="https://www.linkedin.com/in/leon-pavesic/" rel="me noopener noreferrer" target="_blank">LinkedIn</a> &middot; <a href="https://www.xing.com/profile/Leon_Pavesic" rel="me noopener noreferrer" target="_blank">XING</a></p></div></footer>
+{_site_footer(base, year)}
+{_cookie_banner(base)}{_cookie_script(base)}
 </body>
 </html>
 """
@@ -1395,6 +1609,14 @@ def section_page(sec: str, arts: list[dict], cfg: dict, site_cfg: dict,
     return _layout(cfg, label, f"{label}: original analysis.", body, base)
 
 
+def _privacy_cookie_text() -> str:
+    if _ga4_id():
+        return ('Diese Seite setzt nur technisch notwendige Speicherung im Browser. Google Analytics wird nur nach Ihrer Zustimmung geladen. '
+                'Details in der <a href="cookies.html">Cookie-Richtlinie</a>.')
+    return ('Diese Seite setzt keine Tracking-Cookies und verwendet kein Web-Analyse-Werkzeug. '
+            'Details in der <a href="cookies.html">Cookie-Richtlinie</a>.')
+
+
 def legal_pages(site_cfg: dict, cfg: dict) -> dict[str, str]:
     p = site_cfg.get("publisher") or {}
     name = (p.get("name") or "").strip()
@@ -1437,7 +1659,7 @@ def legal_pages(site_cfg: dict, cfg: dict) -> dict[str, str]:
         "<p>Vorschaubilder einzelner Meldungen werden direkt von den Servern der jeweiligen Nachrichtenseiten geladen. "
         "Dabei erhalten diese Server Ihre IP-Adresse.</p>"
         "<h2>Cookies und Analyse</h2>"
-        "<p>Diese Seite setzt keine Tracking-Cookies und verwendet kein Web-Analyse-Werkzeug.</p>"
+        "<p>@@PRIV_COOKIES@@</p>"
         "<h2>Merkliste</h2>"
         "<p>Gespeicherte Meldungen (Merkliste) werden nur lokal in Ihrem Browser gespeichert (Local Storage). "
         "Sie werden nicht an uns oder einen Dienst übertragen. Das Löschen der Browserdaten entfernt die Liste.</p>"
@@ -1464,7 +1686,12 @@ def legal_pages(site_cfg: dict, cfg: dict) -> dict[str, str]:
         "<p>Wir korrigieren Fehler, sobald wir sie bemerken. Jede Korrektur wird hier mit Datum und Hinweis festgehalten.</p>"
         + corr_body + "</article>"
     )
+    privacy = privacy.replace("@@PRIV_COOKIES@@", _privacy_cookie_text())
     return {
+        "contact.html": _contact_page(cfg),
+        "cookies.html": _cookies_page(cfg),
+        "accessibility.html": _accessibility_page(cfg),
+        "responsible-disclosure.html": _responsible_disclosure_page(cfg),
         "corrections.html": _layout(cfg, "Korrekturen", "Korrekturen", corrections, ""),
         "impressum.html": _layout(cfg, "Impressum", "Impressum", impressum, ""),
         "datenschutz.html": _layout(cfg, "Datenschutzerklärung", "Datenschutzerklärung", privacy, ""),
@@ -2445,7 +2672,7 @@ OPS_CSS = """
 # ---------------------------------------------------------------- Microsoft 365 status (public mirror, not tenant data)
 M365_STATUS_URL = "https://www.365fanatic.com/feed/status-incidents/"
 M365_STATUS_PAGE = "https://www.365fanatic.com/m365-status/"
-M365_STATUS_SRC = {"id": "m365-status-mirror", "name": "365Fanatic M365 status (public mirror)", "official": False, "type": "advisory"}
+M365_STATUS_SRC = {"id": "m365-status-mirror", "name": "Public status mirror", "official": False, "type": "advisory"}
 M365_MATRIX = [("Exchange Online", r"exchange"), ("Teams", r"\bteams\b"), ("SharePoint", r"sharepoint"),
                ("OneDrive", r"onedrive"), ("Entra ID", r"entra|azure ad|sign-?in|authentication"),
                ("Intune", r"intune"), ("Defender", r"defender"), ("Purview", r"purview"),
@@ -2496,32 +2723,30 @@ def _m365_panel(ms: dict | None, now: datetime) -> str:
     empty = ('<div class="empty">No entries in the mirror right now.</div>' if ms.get("ok") else
              '<div class="empty">The mirror could not be reached and no saved entries exist yet.</div>')
     return (
-        '<div class="m365-head"><span class="rh-led" aria-hidden="true"></span>'
-        f'<span class="rv-tag s-preview">{esc(live)}</span><span class="rv-tag">Third-party mirror</span>'
-        f'<a class="rv-btn rv-btn-ghost rv-btn-sm" href="{M365_STATUS_PAGE}" target="_blank" rel="noopener noreferrer">Source page &nearr;</a></div>'
-        '<p class="sm-hint" id="sm-hint">Select a service to filter the entries below. Red means the public feed lists an open entry for it.</p>'
+        '<div class="m365-head"><span class="rh-led" aria-hidden="true"></span></div>'
+        '<p class="sm-hint" id="sm-hint">Click a service to filter the entries. Red means the public feed lists an open entry for it.''<button type="button" class="rv-btn rv-btn-ghost rv-btn-sm sm-reset" id="sm-reset" hidden>Show all services</button></p>'
         f'<div class="sm-grid" role="group" aria-label="Filter entries by service">{cells}</div>'
         '<p class="rv-legend">Matrix colours show only what the public feed says. "No open item in feed" does not mean the service is healthy. '
         'Services are matched by keywords in each entry.</p>'
         f'<p class="sm-count" id="sm-count" aria-live="polite">{len(rows)} entries shown</p>'
         + (f'<ul class="rv-list" id="sm-list">{items}</ul>' if rows else empty)
-        + '<p class="rv-legend">Source: 365Fanatic, an independent site that mirrors Microsoft\'s public Microsoft 365 status page. '
-          'It is not an official Microsoft feed and does not show your tenant.</p>'
         + "<script>" + M365_JS + "</script>")
 
 
 M365_JS = """(function(){
 var btns=[].slice.call(document.querySelectorAll('.sm-cell[data-svc]'));
 var rows=[].slice.call(document.querySelectorAll('#sm-list .svc'));
-var count=document.getElementById('sm-count');var active=null;
+var count=document.getElementById('sm-count');var reset=document.getElementById('sm-reset');var active=null;
 function apply(svc){
-  active=(active===svc)?null:svc;var shown=0;
+  active=(!svc||active===svc)?null:svc;var shown=0;
   rows.forEach(function(r){var list=(r.getAttribute('data-services')||'').split('|');
     var ok=!active||list.indexOf(active)>=0;r.hidden=!ok;if(ok)shown++;});
   btns.forEach(function(b){var on=b.getAttribute('data-svc')===active;b.setAttribute('aria-pressed',on?'true':'false');b.classList.toggle('is-on',on);});
   if(count)count.textContent=shown+' of '+rows.length+' entries shown'+(active?' for '+active:'');
+  if(reset)reset.hidden=!active;
 }
 btns.forEach(function(b){b.addEventListener('click',function(){apply(b.getAttribute('data-svc'));});});
+if(reset)reset.addEventListener('click',function(){apply(null);});
 })();"""
 
 
@@ -2535,7 +2760,8 @@ M365_CSS = """
 .sm-cell::after{content:"";position:absolute;top:12px;right:12px;width:8px;height:8px;border-radius:50%;background:var(--muted)}
 .sm-clear::after{background:var(--rv-green);box-shadow:0 0 8px var(--rv-green)}
 .sm-amber{border-color:rgba(251,191,36,.6)}.sm-amber::after{background:var(--rv-amber);box-shadow:0 0 8px var(--rv-amber)}
-.sm-red{border-color:var(--rv-red);box-shadow:0 0 18px -8px var(--rv-red)}.sm-red::after{background:var(--rv-red);box-shadow:0 0 10px var(--rv-red)}
+.sm-red{border-color:var(--rv-red);background:color-mix(in srgb,var(--rv-red) 16%,var(--surface-2));box-shadow:0 0 18px -8px var(--rv-red)}
+.sm-red b{color:#fecaca}.sm-red::after{background:var(--rv-red);box-shadow:0 0 10px var(--rv-red)}
 .sm-red span{color:var(--ink)}
 .sm-cell{cursor:pointer;text-align:left;font:inherit;color:inherit;width:100%}
 .sm-cell:focus-visible{outline:2px solid var(--rv-cyan,#38bdf8);outline-offset:2px}
@@ -2550,8 +2776,8 @@ M365_CSS = """
 # ---------------------------------------------------------------- Message Center posts (public archives, not tenant data)
 MC_ARCHIVE_URL = "https://mc.merill.net/rss.xml"
 MC_FANATIC_URL = "https://www.365fanatic.com/feed/mc-digest/"
-MC_ARCHIVE_SRC = {"id": "mc-archive", "name": "Message Center archive (unofficial)", "official": False, "type": "advisory"}
-MC_FANATIC_SRC = {"id": "mc-fanatic", "name": "365Fanatic MC digest (reference tenant)", "official": False, "type": "advisory"}
+MC_ARCHIVE_SRC = {"id": "mc-archive", "name": "Message Center archive", "official": False, "type": "advisory"}
+MC_FANATIC_SRC = {"id": "mc-fanatic", "name": "Message Center digest", "official": False, "type": "advisory"}
 MC_ID_RE = re.compile(r"\bMC\d{6,8}\b", re.I)
 
 
@@ -2587,8 +2813,7 @@ def load_mc(fixtures: Path | None, data_file: Path) -> dict:
 def _mc_panel(mc: dict | None, now: datetime) -> str:
     mc = mc or {"ok": False, "items": [], "archive_ok": False, "fanatic_ok": False}
     rows = mc.get("items", [])
-    srcs = (f'<span class="rv-tag{" s-launched" if mc.get("archive_ok") else ""}">Archive {"live" if mc.get("archive_ok") else "offline"}</span>'
-            f'<span class="rv-tag{" s-launched" if mc.get("fanatic_ok") else ""}">365Fanatic {"live" if mc.get("fanatic_ok") else "offline"}</span>')
+    srcs = ""
     cards = "".join(
         f'<li class="rv-item mc-item" data-search="{esc((r["mc"] + " " + r["title"] + " " + r["summary"]).lower())}" '
         f'data-retire="{1 if r["retire"] else 0}" data-action="{1 if r["action"] else 0}" data-admin="{1 if "Admin" in r["audience"] else 0}">'
@@ -2598,7 +2823,7 @@ def _mc_panel(mc: dict | None, now: datetime) -> str:
         + ('<span class="rv-tag a-action">Action</span>' if r["action"] else "")
         + ('<span class="rv-tag a-action">Retirement</span>' if r["retire"] else "")
         + _tag_audience(r["audience"]) + _new_badge(r["published"], now)
-        + f'<span class="rv-tag">{"Archive" if r["origin"] == "archive" else "365Fanatic"}</span></div>'
+        + '</div>'
         f'<h3><a href="{esc(r["link"])}" target="_blank" rel="noopener noreferrer">{esc(r["title"])}</a></h3>'
         + (f'<p class="rv-desc">{esc(_short(r["summary"], 220))}</p>' if r["summary"] else "")
         + f'<div class="rv-foot"><span>{esc(fmt_day(r["published"]) or "date not provided")}</span>'
@@ -2619,11 +2844,8 @@ def _mc_panel(mc: dict | None, now: datetime) -> str:
                 f'<ul class="rv-list" id="mc-list">{cards}</ul><div class="empty" id="mc-empty" hidden>No posts match this search.</div>')
     return (
         '<div class="m365-head"><span class="rh-led" aria-hidden="true"></span>' + srcs +
-        '<span class="rv-tag">Unofficial archives</span></div>' + body +
-        '<p class="rv-legend">These are public, unofficial copies of Microsoft Message Center posts. Message Center content varies by tenant, '
-        'so your own Message Center remains the source of truth. Tags are read from the post wording.</p>'
-        '<p class="rv-legend">Sources: <a href="https://mc.merill.net/" target="_blank" rel="noopener noreferrer">Merill Fernando\'s Message Center archive</a>'
-        ' and <a href="https://www.365fanatic.com/message-center-summary/" target="_blank" rel="noopener noreferrer">365Fanatic MC summary</a>.</p>')
+        '</div>' + body +
+        '<p class="rv-legend">Message Center content varies by tenant, so your own Message Center remains the source of truth. Tags are read from the post wording.</p>')
 
 
 MC_JS = """(function(){
@@ -2679,6 +2901,11 @@ ANALYSIS_CSS = """
   .an-row{grid-template-columns:36px minmax(0,1fr)}
   .an-go{grid-column:2;justify-self:start}
 }
+"""
+
+LESS_MOTION_CSS = """
+.less-motion *,.less-motion *::before,.less-motion *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+.less-motion .sm-cell:hover{transform:none}
 """
 
 MODERN_CSS = """
@@ -2898,18 +3125,16 @@ def radar_page(radar: dict, cfg: dict, site_cfg: dict) -> str:
         '<section class="rv-hero" aria-labelledby="rv-title"><div class="rv-scan" aria-hidden="true"></div>'
         f'<p class="rv-kicker"><span class="rh-led" aria-hidden="true"></span>Microsoft 365 &middot; {esc(live)}</p>'
         '<h1 id="rv-title">Change <span class="rv-gradient">Radar</span></h1>'
-        '<p class="rv-lede">Security updates, Azure changes, Microsoft 365 status and Message Center posts, in one place. '
+        '<p class="rv-lede">Microsoft 365 service status, Message Center posts and roadmap changes in one place. '
         'Public sources only; your own tenant is always the source of truth.</p>'
         '<div class="rv-stats">'
         f'<div class="rv-stat c-cyan"><b>{len(items)}</b><span>Roadmap entries</span></div>'
         f'<div class="rv-stat c-amber"><b>{admin_n}</b><span>Admin relevant</span></div>'
-        f'<div class="rv-stat c-green"><b>{len(msrc.get("items", []))}</b><span>Security updates</span></div>'
         f'<div class="rv-stat c-violet"><b>{len(mc.get("items", []))}</b><span>Message Center posts</span></div>'
         '</div></section>')
 
     jump = (
         '<nav class="rv-jump reveal" aria-label="On this page">'
-        '<a href="#security">Security updates</a><a href="#azure">Azure updates</a>'
         '<a href="#m365">Microsoft 365 status</a><a href="#mc">Message Center</a><a href="#roadmap">Roadmap</a></nav>')
 
     security = ('<section class="rv-section reveal" id="security" aria-labelledby="sec-title">'
@@ -2923,13 +3148,13 @@ def radar_page(radar: dict, cfg: dict, site_cfg: dict) -> str:
              + _upd_html(azu, now) + '</section>')
 
     m365 = ('<section class="rv-section reveal" id="m365" aria-labelledby="m3-title">'
-            '<h2 id="m3-title">Microsoft 365 status <span class="rv-tag">Public mirror</span></h2>'
-            '<p class="rv-sub">Incidents and advisories from a public mirror of the Microsoft 365 status page. Not your tenant.</p>'
+            '<h2 id="m3-title">Microsoft 365 service status</h2>'
+            '<p class="rv-sub">Public incident and advisory entries for Microsoft 365 services. Not your tenant.</p>'
             + _m365_panel(radar.get("m365"), now) + '</section>')
 
     mcsec = ('<section class="rv-section reveal" id="mc" aria-labelledby="mc-title">'
-             '<h2 id="mc-title">Message Center posts <span class="rv-tag">Public archives</span></h2>'
-             '<p class="rv-sub">Copies of Microsoft 365 Message Center posts from two public archives. Your own Message Center is the source of truth.</p>'
+             '<h2 id="mc-title">Message Center posts</h2>'
+             '<p class="rv-sub">Public copies of Microsoft 365 Message Center posts. Your own Message Center is the source of truth.</p>'
              + _mc_panel(mc, now) + '</section>')
 
     controls = (
@@ -2954,9 +3179,9 @@ def radar_page(radar: dict, cfg: dict, site_cfg: dict) -> str:
     footnote = ('<p class="rv-legend">Tags are inferred from wording, not official Microsoft classifications. '
                 'Message Center and incident data for your own tenant need Microsoft Graph with admin consent.</p>')
 
-    body = hero + jump + security + azure + m365 + mcsec + roadmap + footnote + "<script>" + MODERN_JS + RADAR_JS + MC_JS + MORE_JS + "</script>"
+    body = hero + jump + m365 + mcsec + roadmap + footnote + "<script>" + MODERN_JS + RADAR_JS + MC_JS + MORE_JS + "</script>"
     return _layout(cfg, "Microsoft 365 Change Radar",
-                   "Security updates, Azure changes, Microsoft 365 status and Message Center posts from public sources.",
+                   "Microsoft 365 service status, Message Center posts and roadmap changes from public sources.",
                    body, base)
 
 
@@ -3008,7 +3233,7 @@ def write_site(out: Path, stories: list[dict], cfg: dict, now: datetime, status:
     site_cfg = site_cfg or {}
     (out / "story").mkdir(parents=True, exist_ok=True)
     # Story pages are kept even after a story leaves the 7-day window, so old links never 404.
-    (out / "style.css").write_text(CSS.strip() + "\n" + EXTRA_CSS + "\n" + DESIGN_CSS + "\n" + RADAR_CSS + "\n" + ANALYSIS_CSS, encoding="utf-8")
+    (out / "style.css").write_text(CSS.strip() + "\n" + EXTRA_CSS + "\n" + DESIGN_CSS + "\n" + RADAR_CSS + "\n" + ANALYSIS_CSS + "\n" + SITE_CSS + "\n" + LESS_MOTION_CSS, encoding="utf-8")
     (out / "favicon.svg").write_text(FAVICON_SVG, encoding="utf-8")
     # Optional root-level QR image: keep deployment simple for repository web uploads.
     import shutil
@@ -3215,6 +3440,7 @@ def main() -> None:
     cfg = json.loads(CONFIG.read_text(encoding="utf-8"))
     now = datetime.now(timezone.utc)
     site_cfg = load_site_config(SITE_CONFIG)
+    ACTIVE_SITE.update(site_cfg)
     status = run(cfg, args.out, args.data, args.fixtures, now, site_cfg)
     print(json.dumps({k: status[k] for k in ("generated", "sources_ok", "sources_total", "stories", "critical", "high", "warnings")}, indent=2))
 
