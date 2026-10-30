@@ -1609,6 +1609,24 @@
    "instructions_checked": true
   },
   {
+   "id": "46d8d781bead",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Chinese Hackers Use AI-Powered ARTEX to Target Over 200 Organizations Worldwide",
+   "link": "https://thehackernews.com/2026/10/chinese-hackers-use-ai-powered-artex-to.html",
+   "published": "2026-10-30T16:58:44+00:00",
+   "summary": "Chinese state-sponsored threat actors have been observed using a Go-based artificial intelligence (AI)-powered penetration testing framework called ARTEX in attacks aimed at high-value targets simultaneously. The activity has been attributed by CrowdStrike to a China-based \"targeted intrusion adversary\" it tracks…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiP1M46Z4Xs0qNHz9xzhTea14XsqTHvNhAfnGb4Ni9goHQR2ypz3BLKRgu-WxWD8VSUNMB3YAP7UhcCAK1AweCc3lC-7VlJ-OqNniD4FvZdE_R-XJkkRadhl2tp3-PqbKPWmQTeJ3a3gvd1kHH_zaW06tCf9cH-7k5feNqHrqbChMAsc5K3hruiX9BDROAe/s1600/CS.jpg",
+   "cves": [],
+   "first_seen": "2026-10-30T18:20:54.181137+00:00",
+   "instructions": [
+    "This breadth likely enables a single operator to apply a wider range of techniques against more targets at once than would be feasible through manual operations.\""
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "5100bc6323f0",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1728,24 +1746,6 @@
    "cves": [],
    "first_seen": "2026-10-27T19:11:33.119574+00:00",
    "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "015a882ee274",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Exposed Infrastructure Reveals How Ransomware Affiliates Used AI Agents to Execute Intrusions",
-   "link": "https://thehackernews.com/2026/10/exposed-infrastructure-reveals-how.html",
-   "published": "2026-10-23T17:50:47+00:00",
-   "summary": "Cybersecurity researchers have discovered an artificial intelligence (AI)-driven intrusion ecosystem run by affiliates of the INC and The Gentlemen ransomware groups. Central to the operation is an \"Autonomous Red Team Kill Chain Framework\" referred to as Phantom. The threat actor is assessed to be Russian-speaking…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6gkXKzxUypnUKbTuo7Xq-8TSUpDD8TNF5XEG-bV6zcA7V3z_cO2pJeTiX1KIFi-rFNX5SOlMY93oGQpfQUuWOl0RJ35nM1XeIqu2ZV4aAIZXEd9RXQVQk0rMmeI67ysGsTJ1OXLIQg2LvGjMLHCQQ8dgqalHaBE9yCZKwIOVjHCD_lOTlsP1HdBziZ3Sb/s1600/ai-hacker-kimi.jpg",
-   "cves": [],
-   "first_seen": "2026-10-23T18:38:02.664864+00:00",
-   "instructions": [
-    "Should the models refuse to act on the prompts, the operator has been found to rewrite requests as an authorized red team assessment instead of simply switching models."
-   ],
    "instructions_checked": true
   },
   {
@@ -2306,27 +2306,6 @@
     "Soon after the updates began, someone uploaded Eye's update to VirusTotal, and antivirus engines started flagging it as malware, a fair description of a program that disables a Windows service.",
     "On a machine with that access, an attacker could install ransomware, steal saved passwords, or pull the computer into a botnet, Eye said.",
     "With no company left to fix the software and no patch coming, Eye decided to use the updater against itself."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "4645fb818a8e",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Ruby Fixes Three Regex Engine Bugs Responsible for Four Critical GitLab RCE Flaws",
-   "link": "https://thehackernews.com/2026/10/ruby-fixes-three-regex-engine-bugs.html",
-   "published": "2026-10-23T17:54:08+00:00",
-   "summary": "Ruby has released versions 4.0.9, 3.4.12, and 3.3.13 to fix three bugs in Onigmo, the regular expression engine built into the language. The bugs lie behind four critical security flaws that GitLab patched over the past month. GitLab found that a specially crafted pattern could corrupt memory while Ruby compiles it…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjA5n8ST_yuElQgTwbfq1oFnVAoiTvZCW_Ct1b8lT_OQ9dnyeXfocrqzTUJJ1t920YaEa-7Sonxl9KlthV4x7lXI3dmJxc9_S11NjWRJ6dcgfsX4UGhv0KFWZsZrzXKpjh92JPyDdHPlCPQh1AHd0YKM44sVcc9d-57r8_BdrIb3V06MWfk8bRAy4kDU6I/s1600/ruby-rce.jpg",
-   "cves": [],
-   "first_seen": "2026-10-23T18:38:02.664864+00:00",
-   "instructions": [
-    "In its advisory , Ruby said an application is affected only if it compiles a regular expression from a string an attacker controls.",
-    "An earlier release from the same week, 4.0.8, does not include the fix for one of the flaws, CVE-2026-110264 , so 4.0 users should install 4.0.9.",
-    "If you cannot upgrade yet, the advisory says to stop compiling regular expressions from untrusted input.",
-    "Ruby said it will update its advisory if it requests any CVE identifiers."
    ],
    "instructions_checked": true
   },
@@ -4927,27 +4906,6 @@
     "The lessons for other organizations should be all too familiar: minimize privileged accounts and enforce phishing-resistant multi-factor authentication wherever possible, segment your network, and monitor for unusual outbound transfers of data.",
     "According to media reports , staff were told to turn off their desktop computers and disconnect their mobile devices from the hospital's Wi-Fi.",
     "In its latest update on the incident, UNM said that it \"did not make concessions with any group behind the threat,\" and warned patients, students, employees and community members to not respond or engage with anyone claiming responsibility for the attack."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "abfff6ba3917",
-   "source": "msblog",
-   "source_name": "Microsoft Security Blog",
-   "official": false,
-   "source_type": "vendor_blog",
-   "title": "Inside the LiteLLM 1.107.0 supply chain compromise: Credential theft through Python startup hooks",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/10/23/inside-the-litellm-1-107-0-supply-chain-compromise-credential-theft-through-python-startup-hooks/",
-   "published": "2026-10-23T18:12:19+00:00",
-   "summary": "On October 21, 2026, a compromised LiteLLM 1.107.0 release was published to the Python Package Index (PyPI) and distributed through official container images. The malicious package added files that Python could execute during normal interpreter initialization. An application did not need to import LiteLLM for the…",
-   "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/10/image-7.webp",
-   "cves": [],
-   "first_seen": "2026-10-23T18:38:02.664864+00:00",
-   "instructions": [
-    "This distinction matters for response: investigators should not start Python or pip inside a suspect environment to determine whether the malicious package is present.",
-    "Organizations must address the affected Python environment, any surviving processes, and credentials accessible to the compromised identity.",
-    "Microsoft recommends the following actions for organizations that installed, mirrored, or built images with LiteLLM 1.107.0:",
-    "Developer workstations, build agents, test systems, containers, and AI gateway hosts should not have unrestricted outbound HTTP access unless required."
    ],
    "instructions_checked": true
   },
