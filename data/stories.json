@@ -5030,6 +5030,27 @@
    "instructions_checked": true
   },
   {
+   "id": "d6c636709375",
+   "source": "msblog",
+   "source_name": "Microsoft Security Blog",
+   "official": false,
+   "source_type": "vendor_blog",
+   "title": "Inside a malicious Claude Code-branded extension and its persistent SSH backdoor",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/10/30/inside-malicious-claude-code-branded-cursor-extension-persistent-ssh-backdoor/",
+   "published": "2026-10-31T01:02:57+00:00",
+   "summary": "On October 29, 2026, Cursor reported that a tampered copy of Claude Code extension (anthropic.claude-code, versions 2.1.313 and 2.1.312) was available and served in the Cursor extension marketplace for a few hours to attempt a supply-chain attack on Cursor users. Cursor reports that it was live from about 2:27 AM to…",
+   "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/10/image-23.webp",
+   "cves": [],
+   "first_seen": "2026-10-31T03:27:14.605184+00:00",
+   "instructions": [
+    "Organizations should identify systems that installed or automatically updated to this version from the Cursor marketplace, preserve evidence, remove confirmed malicious artifacts, review endpoint and network telemetry, and rotate credentials or revoke sessions when investigation indicates exposure.",
+    "Both the attacker’s server and the victim’s workstation must allow the connection, and server settings determine whether the tunnel is publicly reachable.",
+    "A missing marker alone should not replace review of the installation, process, network, and persistence evidence.",
+    "These reports provide intelligence, protection information, and recommended actions to prevent, mitigate, or respond to associated threats found in customer environments."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "217d727d090a",
    "source": "schneier",
    "source_name": "Schneier on Security",
