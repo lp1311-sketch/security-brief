@@ -1630,29 +1630,6 @@
    "instructions_checked": true
   },
   {
-   "id": "a0a9e49aec28",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software",
-   "link": "https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html",
-   "published": "2026-10-24T11:09:29+00:00",
-   "summary": "A memory-corruption flaw in Google's Brotli decoder sits in many programs that unpack Brotli-compressed data, among them Bun, Microsoft's.NET, the Python Brotli and brotlicffi packages, and Envoy proxies set up to decompress Brotli. Tracked as CVE-2026-111497, the flaw allows crafted compressed data to overwrite past…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxIIerJT3LOMCGn3nXAnmhaHzJlJnVJCso1COluq8t3WuF4IpNARa_Asl5nEhRUDTEcR89kwzo5vGmP5IyNbj1ncdaCpkhqcHUODHAd3khanaE-7N8Vb0NyEJkmPmNkhSpJtLCLgi9srDRhZLtM5n8UDI58F797ZJaVzC7JzjPLfca4NpxZr_7tCX8RIk/s1600/br-nodejs.jpg",
-   "cves": [
-    "CVE-2026-111497"
-   ],
-   "first_seen": "2026-10-24T10:30:29.487176+00:00",
-   "instructions": [
-    "Update to a fixed version from the table above, then restart the service and rebuild any container image, because a running process keeps the old decoder until it restarts.",
-    "OpenAI's disclosure page and the security firm Aikido both recommend:",
-    "For Node.js, no workaround has been published, so updating the runtime is the only fix.",
-    "The CVE record names Google's Brotli repository, not the PyPI packages, and GitHub's advisory still lists no affected package, which is what Dependabot reads."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "e91f33b06ca8",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2084,24 +2061,6 @@
    "first_seen": "2026-10-27T12:44:30.927471+00:00",
    "instructions": [
     "\"The attackers induced targets to access malicious URLs through various methods, including watering hole and spear-phishing attacks, and then exploited the vulnerabilities to ultimately install backdoor malware,\" AhnLab said , calling the campaign Operation Double Barrel."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "3a1a036ef73a",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Leaked LiteLLM Master Key Let Attackers Steal GitHub Tokens and Hijack Release Pipeline",
-   "link": "https://thehackernews.com/2026/10/leaked-litellm-master-key-let-attackers.html",
-   "published": "2026-10-24T11:03:33+00:00",
-   "summary": "LiteLLM on Friday revealed that an Agent Platform master key accidentally published to a public GitHub repository in late May 2026 ultimately allowed the threat actor to push a malicious version of the popular Python package. \"On May 27, 2026, a configuration file was committed to the public LiteLLM-Labs/lite-harness…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipiDo2Yur6TXZHLped9EQgORAH65rC4APGTaq_EZzlDnspAaULTQCKblBC0FeIah7nOCKTiQa2Oi8cyx-bbxHj042Km9oYAf2s78XmStFxzPBTSQ_oqv4ZcWGEkUP1wo5JfJ1UDrWQpAtz8ZHd9i3ZbGWWe8s6CMeUU_nObp5tCEywMWGovqFh9NA1H8Sv/s1600/lite.jpg",
-   "cves": [],
-   "first_seen": "2026-10-24T11:52:52.119319+00:00",
-   "instructions": [
-    "In response to the incident, the company said it's working to revoke each and every token associated with every internal system and vendor platform."
    ],
    "instructions_checked": true
   },
@@ -6053,6 +6012,25 @@
     "For example, OpenAI rapidly deployed mitigations to this threat, and Xint has subsequently discovered a way (which it calls Compaction Smuggling ) to bypass these mitigations – which OpenAI has now also mitigated.",
     "While OpenAI’s first mitigations reduced the threat of PII exposure and model poisoning, knowledge of a model’s reasoning process can still be stolen (compaction smuggling) and used to cheaply build a new rival AI model (distillation).",
     "Preparing for disruption must become part of day-to-day operations."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "f0c80b908a88",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Syrian Hacker Gets Prison Time in US After Over a Decade on the Run",
+   "link": "https://www.securityweek.com/syrian-hacker-gets-prison-time-in-us-after-over-a-decade-on-the-run/",
+   "published": "2026-10-31T11:00:00+00:00",
+   "summary": "A US court sentenced Syrian hacker Ahmad Umar Agha to 42 months for pro-Assad attacks on media, businesses, and government entities. The post Syrian Hacker Gets Prison Time in US After Over a Decade on the Run appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2024/03/hacker-sentenced-prison.jpeg",
+   "cves": [],
+   "first_seen": "2026-10-31T11:15:07.264183+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
   },
