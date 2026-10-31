@@ -1,6 +1,62 @@
 {
  "items": [
   {
+   "id": "c87a48df2962",
+   "title": "MC1282568: General Availability: Microsoft Entra passkeys on Windows",
+   "link": "https://mc.merill.net/message/MC1282568",
+   "summary": "Microsoft Entra passkeys on Windows will be generally available from late April 2026, enabling passwordless, phishing-resistant sign-in on Windows devices without requiring explicit admin allow-listing. It supports corporate, personal, and shared devices, with control via Authentication Methods policies and…",
+   "published": "2026-10-30T23:22:34+00:00"
+  },
+  {
+   "id": "7ee6fb9d9ab6",
+   "title": "MC1221452: (Update)Microsoft Entra ID: General Availability of passkey profiles and migration for existing Passkeys (FIDO2) tenants",
+   "link": "https://mc.merill.net/message/MC1221452",
+   "summary": "Starting March 2026, Microsoft Entra ID will GA passkey profiles and synced passkeys for tenants with Passkeys (FIDO2) enabled. Existing tenants will be auto-migrated to a default passkey profile with configurable passkeyType. Registration campaign settings and rollout timelines vary by cloud region.",
+   "published": "2026-10-30T23:17:03+00:00"
+  },
+  {
+   "id": "7bef78f61c82",
+   "title": "MC1532256: Microsoft Teams: Granular Conditional Access for Teams meetings",
+   "link": "https://mc.merill.net/message/MC1532256",
+   "summary": "Granular Conditional Access for Teams meetings lets admins enforce targeted security controls like multifactor authentication for specific meetings. Rolling out from November 2026 (preview) to January 2027 (general availability), admins must configure authentication contexts, Conditional Access policies, and Teams…",
+   "published": "2026-10-30T22:09:24+00:00"
+  },
+  {
+   "id": "abcde14921f4",
+   "title": "MC1532253: Enhanced Copilot and AI controls for meetings",
+   "link": "https://mc.merill.net/message/MC1532253",
+   "summary": "Microsoft Teams is replacing the Copilot meeting policy with two new policies—MeetingAI and TranscriptionWithMeetingAI—for clearer control over AI features and transcription in meetings. Organizers gain granular AI management options. Rollout begins mid-November 2026, with automatic migration of existing settings; no…",
+   "published": "2026-10-30T22:07:36+00:00"
+  },
+  {
+   "id": "376b278023e2",
+   "title": "MC1532248: Activity in other accounts and orgs panel improvements",
+   "link": "https://mc.merill.net/message/MC1532248",
+   "summary": "The 'Activity in Other Accounts and Orgs' panel in Teams will allow users to preview and open chats and channels from multiple accounts without tenant switching. Rolling out from November 2026 to February 2027, it enhances external collaboration with no security or compliance changes. No admin action required.",
+   "published": "2026-10-30T22:06:08+00:00"
+  },
+  {
+   "id": "ea709d97f680",
+   "title": "MC1532242: Microsoft Teams: Pinch to zoom in on shared screens",
+   "link": "https://mc.merill.net/message/MC1532242",
+   "summary": "Microsoft Teams will add pinch-to-zoom on shared screens using touchpads, enhancing visibility of small text and details. This feature rolls out worldwide in mid to late November 2026, enabled by default in all meetings. Organizations should update sharing policies and inform users; no compliance issues identified.",
+   "published": "2026-10-30T21:59:08+00:00"
+  },
+  {
+   "id": "d391f530ae65",
+   "title": "MC1532241: Microsoft Defender XDR: Investigate suspicious Microsoft Teams calls and meetings with advanced hunting",
+   "link": "https://mc.merill.net/message/MC1532241",
+   "summary": "Microsoft Defender XDR's CallActivityEvents table enables security teams with Defender for Office 365 Plan 2 to investigate suspicious Microsoft Teams calls and meetings by analyzing activities, initiators, organizers, and related messages. Available worldwide from November 2026, it integrates with advanced hunting…",
+   "published": "2026-10-30T21:58:16+00:00"
+  },
+  {
+   "id": "7f0eae5f3d20",
+   "title": "MC1449180: Microsoft Purview: Data Loss Prevention and auto-labeling support for non-Microsoft applications",
+   "link": "https://mc.merill.net/message/MC1449180",
+   "summary": "Microsoft Purview will support Data Loss Prevention and auto-labeling for non-Microsoft apps like Google Workspace, Box, and Salesforce via Microsoft Defender for Cloud Apps connectors. Administrators can create and manage policies starting late December 2026, expanding compliance controls and requiring Enterprise…",
+   "published": "2026-10-30T21:22:39+00:00"
+  },
+  {
    "id": "002adf030217",
    "title": "MC1532182: Power Apps - Information regarding the end of support for record-level copresence in model-driven apps",
    "link": "https://mc.merill.net/message/MC1532182",
@@ -363,62 +419,6 @@
    "link": "https://mc.merill.net/message/MC1529467",
    "summary": "Microsoft is updating Windows, Edge, and WebView2 to block eight compromised eMudhra certificate authority keys by late October 2026. Organizations must allow automatic updates, manage disconnected devices, and replace certificates chaining to these keys to maintain trust and security.",
    "published": "2026-10-28T22:53:51+00:00"
-  },
-  {
-   "id": "d4e4114fd045",
-   "title": "MC1529463: Microsoft Entra ID: Final reminder to replace MemberOf rule operator configurations by November 3, 2026",
-   "link": "https://mc.merill.net/message/MC1529463",
-   "summary": "Microsoft Entra ID will retire the MemberOf rule operator by November 3, 2026. Organizations using MemberOf in dynamic groups, administrative units, or entitlement policies must replace it to avoid outdated memberships, access, and licensing issues. Action is required before this date to maintain proper functionality.",
-   "published": "2026-10-28T22:49:54+00:00"
-  },
-  {
-   "id": "6077b445eef8",
-   "title": "MC1519871: Copilot Code is rolling out in Frontier",
-   "link": "https://mc.merill.net/message/MC1519871",
-   "summary": "Copilot Code, an AI-powered coding tool in Microsoft Copilot, is rolling out in the Frontier program starting late October 2026. It enables users with licenses and spending policies to build, refine, and publish apps using natural language, with admin-controlled usage-based billing and optional local coding on PC.",
-   "published": "2026-10-28T21:33:04+00:00"
-  },
-  {
-   "id": "6c8789082701",
-   "title": "MC1069563: Microsoft 365 admin center: Usage reports to manage metered consumption costs for Microsoft 365 Copilot Chat (preview)",
-   "link": "https://mc.merill.net/message/MC1069563",
-   "summary": "Microsoft 365 admin center introduces a preview usage report for managing metered costs of Microsoft 365 Copilot Chat pay-as-you-go billing. It shows message consumption by tenant, user, and agent, with alerts for over 2000 messages. Rollout starts end of April 2027, no admin action needed.",
-   "published": "2026-10-28T18:20:34+00:00"
-  },
-  {
-   "id": "6222131fb044",
-   "title": "MC1384420: Microsoft Purview | Endpoint Data Loss Prevention - Ability to protect files stored in the excluded folders in Windows",
-   "link": "https://mc.merill.net/message/MC1384420",
-   "summary": "Microsoft Purview Endpoint DLP will protect sensitive files in previously excluded Windows folders (e.g., AppData) during egress actions starting late February 2027. Admins must update policies, deploy anti-malware client 4.18.26051+, and educate users. Audit mode logs actions; block mode enforces restrictions.",
-   "published": "2026-10-28T17:40:27+00:00"
-  },
-  {
-   "id": "30677aa5bc3c",
-   "title": "MC1529014: The October 2026 Windows non-security preview update is now available",
-   "link": "https://mc.merill.net/message/MC1529014",
-   "summary": "The October 2026 non-security preview update is now available for Windows 11, versions 26H2, 26H1, and 25H2. Information about the contents of this update is available in the release notes, which are accessible from the Windows 11 update history page. To learn more about the different types of monthly quality updates…",
-   "published": "2026-10-28T17:05:15+00:00"
-  },
-  {
-   "id": "5f1ebe53527f",
-   "title": "MC1446805: Microsoft Viva: Targeted audience surveys in the Copilot dashboard",
-   "link": "https://mc.merill.net/message/MC1446805",
-   "summary": "Microsoft Viva introduces targeted audience surveys in the Copilot dashboard, allowing authorized users (CxO or delegates) to send Viva Pulse surveys to predefined Copilot user groups based on dashboard data. The feature, enabled by default for eligible organizations, rolls out from mid-August to mid-December 2026…",
-   "published": "2026-10-28T16:48:47+00:00"
-  },
-  {
-   "id": "8c1c8869211f",
-   "title": "MC1465763: Microsoft Entra: Prepare for Microsoft to disable unused or unsuccessful SMS first-factor sign-in",
-   "link": "https://mc.merill.net/message/MC1465763",
-   "summary": "Microsoft will disable SMS first-factor sign-in in Microsoft Entra tenants with no successful or only unsuccessful SMS sign-ins in the past 30 days, starting mid-September to November 2026. SMS for MFA and password reset remains unaffected. Admins should review usage, notify users, and ensure alternate sign-in methods.",
-   "published": "2026-10-28T16:40:55+00:00"
-  },
-  {
-   "id": "d0fd9a674bf4",
-   "title": "MC1490906: Microsoft Teams: Analytics for desk utilization in Teams Pro Management portal",
-   "link": "https://mc.merill.net/message/MC1490906",
-   "summary": "Microsoft Teams Pro Management portal will add desk utilization analytics, showing usage, reservations, occupancy, and peak patterns. Requires desks with peripheral devices and Teams Shared Space licenses. Rollout starts early December 2026, completing by mid-January 2027, aiding workplace space planning without…",
-   "published": "2026-10-28T16:37:53+00:00"
   }
  ]
 }
