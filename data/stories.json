@@ -3673,28 +3673,6 @@
    "instructions_checked": true
   },
   {
-   "id": "a6ce31709924",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "BlackX UEFI bootkit exploits Baton Drop flaw to bypass Secure Boot",
-   "link": "https://www.bleepingcomputer.com/news/security/blackx-uefi-bootkit-exploits-baton-drop-flaw-to-bypass-secure-boot/",
-   "published": "2026-10-24T14:17:32+00:00",
-   "summary": "A new UEFI bootkit named BlackX, deployed in an espionage campaign in early 2026, exploited the old Baton Drop vulnerability to bypass Secure Boot and load a malicious driver designed to interfere with security solutions from Kaspersky and Avast.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/23/blackX.jpg",
-   "cves": [],
-   "first_seen": "2026-10-24T14:29:47.112601+00:00",
-   "image_checked": true,
-   "instructions": [
-    "The researchers say this is a gap in the update process, since it’s extremely uncommon for administrators to take any manual action after applying a security update.",
-    "They believe that the attacker used this mitigation gap to their advantage and \"decided to invest time in understanding how BlackLotus works and creating a copycat of this bootkit.\"",
-    "“The patch for the Baton Drop vulnerability is designed to revoke the “Windows Production PCA 2011” certificate used to sign vulnerable UEFI components,” Kaspersky explains .",
-    "“However, this revocation does not happen automatically upon patch installation - the user has to trigger it manually.”"
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "a291b7051796",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4336,6 +4314,25 @@
     "\"If you use our RUM product, please remove the embed code from your website.\"",
     "Hudson Rock's researchers also discovered Polymarket production build metadata containing the commit message, \" chore(polymarket): remove debugbear rum script (#15337) ,\" indicating that the platform had removed the DebugBear monitoring integration.",
     "BleepingComputer has contacted Polymarket and DebugBear with questions about the incident and will update this article if we receive a response."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "b35f9e575d4b",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Reddit to lock content behind logins to fight scrapers",
+   "link": "https://www.bleepingcomputer.com/news/security/reddit-to-lock-content-behind-logins-to-fight-scrapers/",
+   "published": "2026-10-31T14:05:15+00:00",
+   "summary": "Reddit announced in a post by co-founder Steve Huffman that the site will gradually become a \"logged-in service,\" offering limited access to visitors without accounts.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/30/reddit.jpg",
+   "cves": [],
+   "first_seen": "2026-10-31T14:20:32.607441+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Microsoft urges Entra ID admins to migrate users to passkeys"
    ],
    "instructions_checked": true
   },
