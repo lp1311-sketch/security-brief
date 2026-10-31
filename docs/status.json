@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-31T12:46:28+00:00",
-  "sources_ok": 16,
+  "generated": "2026-10-31T13:32:46+00:00",
+  "sources_ok": 17,
   "sources_total": 19,
   "sources": [
     {
@@ -79,9 +79,8 @@
     {
       "id": "grahamcluley",
       "name": "Graham Cluley",
-      "ok": false,
-      "count": 0,
-      "error": "response is not an RSS/Atom feed"
+      "ok": true,
+      "count": 20
     },
     {
       "id": "darkreading",
@@ -121,12 +120,14 @@
       "count": 4
     }
   ],
-  "stories": 261,
+  "stories": 263,
   "analysis_articles": 3,
   "critical": 9,
-  "high": 4,
+  "high": 3,
   "kev_loaded": true,
-  "warnings": [],
+  "warnings": [
+    "story 4e3b797fd4a7: empty summary (page shows link only)"
+  ],
   "changed": true,
   "change_radar": {
     "ok": true,
