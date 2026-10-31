@@ -84,28 +84,6 @@
    "instructions_checked": true
   },
   {
-   "id": "3ba9184e67f7",
-   "source": "borncity",
-   "source_name": "Born's IT and Windows Blog",
-   "official": false,
-   "source_type": "news",
-   "title": "php2Shell: Webseiten, die das Thema monitoren",
-   "link": "https://borncity.com/blog/2026/10/24/php2shell-webseiten-die-das-thema-monitoren/",
-   "published": "2026-10-24T09:11:32+00:00",
-   "summary": "Das PHP-Projekt hat die Woche ja die schweren Sicherheitslücken, php2shell, in den aktuellen Versionen des PHP-Interpreters gepatcht. Aber sind alle Produkte, in denen PHP verwendet wird, auch gepatcht? In nachfolgendem Artikel gebe ich noch kurz einen Überblick zu Fundstellen, die das … Weiterlesen → Quelle",
-   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
-   "cves": [],
-   "first_seen": "2026-10-24T09:54:14.318975+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Im Beitrag php2shell: PHP-Updates und Nachlese sind die verfügbaren PHP-Updates genannt und ich verweise auf eine Mitigations-Lösung eines belgischen Hosters für ältere PHP-Versionen.",
-    "Bezüglich der Altversionen (PHP 5.4 bis 8.1) im letztgenannten Punkt verweise ich auf meinen Blog Beitrag php2shell: PHP-Updates und Nachlese , wo eine Mitigations-Lösung für diese Versionen erwähnt wird.",
-    "Neueste Kommentare ChristophH zu Windows 11 Update KB5127648: \"Gerät hinzufügen\" bei Druckern kaputt?",
-    "R.S. zu Windows 11 Update KB5127648: \"Gerät hinzufügen\" bei Druckern kaputt?"
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "20c90494904a",
    "source": "borncity",
    "source_name": "Born's IT and Windows Blog",
@@ -1519,6 +1497,26 @@
    "instructions_checked": true
   },
   {
+   "id": "4a3beb5aa5ff",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access",
+   "link": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html",
+   "published": "2026-10-31T08:27:43+00:00",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added two security flaws impacting Ivanti Connect Secure (ICS) to its Known Exploited Vulnerabilities (KEV) catalog, following active exploitation in the wild. The vulnerabilities are listed below - CVE-2026-111357 (CVSS score: 8.8) - A missing…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeqP4vPt6j2lLPFj77A_1OthmSKb8mItfBrX_q8sQCAUVgTry1FxKizDI2SCLS4CglfjgbVkaMDN8ainqoOZm2pdaF6xw7sU4STZhwIFPCLSz84YXQTVx2tquPo7YJsZhgOWcD3V_w5td9BA_vVuOu1cFcrgL3SXyLF4E24IyGotrzDcbJ-M1mA85biDuW/s1600/1000120841.jpg",
+   "cves": [
+    "CVE-2026-111357"
+   ],
+   "first_seen": "2026-10-31T09:23:00.117440+00:00",
+   "instructions": [
+    "Federal Civilian Executive Branch (FCEB) agencies are required to apply the fixes for CVE-2026-111357 by November 2, 2026, and CVE-2026-118527 by November 13, 2026."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "f4eff089be53",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2350,27 +2348,6 @@
    "first_seen": "2026-10-28T18:21:54.978668+00:00",
    "instructions": [
     "Edge's popup blocker should have stopped that window, but Edge carried a hardcoded list of allowed addresses, and one of them opened the popup."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "94d51fe2d204",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Researchers Push Over 2 Million Updates to Remotely Disable Popcorn Time Updater That Could Fuel a Botnet",
-   "link": "https://thehackernews.com/2026/10/researchers-push-over-2-million-updates.html",
-   "published": "2026-10-24T09:04:24+00:00",
-   "summary": "Between November 2025 and March 2026, the Dutch security firm Eye Security pushed more than 2 million updates to computers it did not own to switch off a background updater that it said could have allowed an outsider to take over the machine. The updater belongs to Time4Popcorn, an abandoned copy of Popcorn Time, a…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0sIO412EzdDtlngPmg_icDaIn3Mb1ODDcIEPLJMLpatt8TkMHFUFK63rBJVBb72s6uV_KvpRPfKISPfLtznJpsy7_HLaxigKAZP3hvqiGF-gkqKqYi-6tEvyPV_UhUpRGf1bREenTlzt7o9OIs4LfdXy9VekUesPsb5OWcVr7X-JlCeieU0V419GJ3rNY/s1600/popcorn-botnet.jpg",
-   "cves": [],
-   "first_seen": "2026-10-24T10:30:29.487176+00:00",
-   "instructions": [
-    "Eye compared the step to Operation Ladybird in 2021, when Dutch police pushed an update to computers infected with the Emotet botnet to disable the malware on them.",
-    "Soon after the updates began, someone uploaded Eye's update to VirusTotal, and antivirus engines started flagging it as malware, a fair description of a program that disables a Windows service.",
-    "On a machine with that access, an attacker could install ransomware, steal saved passwords, or pull the computer into a botnet, Eye said.",
-    "With no company left to fix the software and no patch coming, Eye decided to use the updater against itself."
    ],
    "instructions_checked": true
   },
