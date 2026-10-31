@@ -208,6 +208,27 @@
    "instructions_checked": true
   },
   {
+   "id": "9bedaf465845",
+   "source": "borncity",
+   "source_name": "Born's IT and Windows Blog",
+   "official": false,
+   "source_type": "news",
+   "title": "Securepoint zur Linux IPv4-TCP-Schwachstelle CVE-2026-98432",
+   "link": "https://borncity.com/blog/2026/10/31/securepoint-zur-ipv4-tcp-schwachstelle-cve-2026-98432-in-linux/",
+   "published": "2026-10-31T05:58:23+00:00",
+   "summary": "In Linux wurde gerade die Schwachstelle CVE-2026-98432 in der IPv4-TCP-Verarbeitung bekannt. Für einzelne Linux-Distributionen sind Patches erst in Arbeit, andere haben bereits Updates erhalten. Securepoint hat einige Informationen zur Absicherung seiner Systeme verteilt, da auch dort Updates noch in Vorbereitung ……",
+   "image": "https://borncity.com/blog/wp-content/uploads/2015/11/Linux.jpg",
+   "cves": [
+    "CVE-2026-98432"
+   ],
+   "first_seen": "2026-10-31T06:02:03.283555+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Zu Ubuntu gibt es diese Beschreibung , aber bisher keinen Patch dazu."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "99e7d99b0dd3",
    "source": "grahamcluley",
    "source_name": "Graham Cluley",
@@ -1311,6 +1332,27 @@
    "instructions_checked": true
   },
   {
+   "id": "e8eb82345a00",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "A Shared ChatGPT Link Could Run Attacker Code in Your Session and Read Private Chats",
+   "link": "https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html",
+   "published": "2026-10-31T05:33:41+00:00",
+   "summary": "A malicious ChatGPT share link could run an attacker's code in the logged-in session of anyone who opened it, allowing them to read their private conversations, researchers at the security firm Parameter showed. The researchers reported the flaw through OpenAI's bug bounty program on October 18, and OpenAI fixed it…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEplEzMjNIg5IBNIX4uz_WyVhtJqqbKICvvpW5LbwPEsQVd4ypSQC1ISnXoR0pMLlQEF4erNUIf-5-ELvBXIE8VH2Iv7dCPCuaZAFVeS9VIITs_5e_77DwtIvo3ExUcfJC_aT4x3FDD3AmTKeQFKnOrufXorlbiHOJNO-pUhwzBNwL98r-2JSW2CWiTBs/s1600/chatgpt.jpg",
+   "cves": [],
+   "first_seen": "2026-10-31T06:02:03.283555+00:00",
+   "instructions": [
+    "The YouTube step was only the final workaround, not the cause.",
+    "The victim did not have to install anything, join a workspace, or sign in through the attacker.",
+    "ChatGPT can turn a block of HTML in a chat into a small web page through a feature called Preview.",
+    "The fix is on OpenAI's side, with nothing to install or reset."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "dc166c047f57",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1709,6 +1751,24 @@
     "\"This vulnerability is due to logic errors when secondary authentication is configured on a tunnel group,\" it said in a Wednesday advisory.",
     "\"If tunnel-group-list enable is configured, check all tunnel groups, including the default tunnel group, DefaultWEBVPNGroup, for secondary-authentication-server-group,\" Cisco said.",
     "\"If tunnel-group-list enable is absent or has been removed using the no tunnel-group-list enable command, check the default tunnel group, DefaultWEBVPNGroup, for secondary-authentication-server-group because disabling the group list does not remove exposure when that default group uses secondary authentication.\""
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "21ad2182a136",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Cloudflare Reports 18.2 Million Network-Layer DDoS Attacks in Q3, Up 38%",
+   "link": "https://thehackernews.com/2026/10/cloudflare-reports-182-million-network.html",
+   "published": "2026-10-31T04:56:12+00:00",
+   "summary": "Threat actors are launching about 8,226 network-layer distributed denial-of-service (DDoS) attacks per hour, Cloudflare revealed Thursday. The web infrastructure and security company said it autonomously mitigated 18.2 million network-layer (L3) DDoS attacks and 14.4 trillion HTTP DDoS requests in the third quarter of…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9-PGmRcZy9OvjKNOWHrGVMpF2DhnvIrHU6mOwyroU7CeoEKMkrjCt8HxCKBzAOia6ZpDEvTuQcF2Xg_50vE_W8DdjmLJjxMXPUUm5Ryfym8GBhm74Z6jwZCeXSKgxuK6A57rVsM-Z1G8nfEF3Mn8QgoD77Nbqxakkj_ZxbBNDtp0ljvTKrXydLYm1BFZR/s1600/cf.jpg",
+   "cves": [],
+   "first_seen": "2026-10-31T06:02:03.283555+00:00",
+   "instructions": [
+    "The web infrastructure and security company said it autonomously mitigated 18.2 million network-layer (L3) DDoS attacks and 14.4 trillion HTTP DDoS requests in the third quarter of 2026."
    ],
    "instructions_checked": true
   },
