@@ -186,6 +186,28 @@
    "instructions_checked": true
   },
   {
+   "id": "4749795f0d08",
+   "source": "borncity",
+   "source_name": "Born's IT and Windows Blog",
+   "official": false,
+   "source_type": "news",
+   "title": "HTTP2Shell: Brotli-Sicherheitslücke CVE-2026-111497 über Node.js hinaus prüfen",
+   "link": "https://borncity.com/blog/2026/10/31/http2shell-brotli-sicherheitsluecke-ueber-node-js-hinaus-pruefen/",
+   "published": "2026-10-31T17:14:04+00:00",
+   "summary": "Seit einigen Tagen ist ja eine Schwachstelle (CVE-2026-111497) im Brotli-Decoder von Node.js bekannt geworden. Es gibt zwar Updates, aber inzwischen ist klar, dass die Brotli-Bibliotheken in mehr Software-Paketen als Node.js verwendet werden. Verantwortliche sollten also überprüfen, wo Brotli überall eingesetzt ……",
+   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
+   "cves": [
+    "CVE-2026-111497"
+   ],
+   "first_seen": "2026-10-31T19:11:53.129728+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Nach Anbieter und Komponente patchen: Sicherheitsverantwortliche sollten das entsprechende Hersteller-Update anwenden, die betroffenen Container-Images neu ein- und laufende Workloads erneut bereitstellen.",
+    "Von Microsoft gibt es den Supportbeitrag Patch now: PHP2Shell, Brotli, and eMudhra guidance for customers , der etwas breiter greift und Hinweise auf Windows-Umgebungen enthält."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "9bedaf465845",
    "source": "borncity",
    "source_name": "Born's IT and Windows Blog",
@@ -398,7 +420,8 @@
    ],
    "first_seen": "2026-10-31T18:14:53.884646+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "2885a4d92dfd",
@@ -416,7 +439,8 @@
    ],
    "first_seen": "2026-10-31T18:14:53.884646+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "4288da9b2550",
@@ -605,7 +629,8 @@
    ],
    "first_seen": "2026-10-31T18:14:53.884646+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "5cfaff4203c6",
@@ -623,7 +648,8 @@
    ],
    "first_seen": "2026-10-31T18:14:53.884646+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "cdddb223d62b",
@@ -641,7 +667,8 @@
    ],
    "first_seen": "2026-10-31T18:14:53.884646+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "a9d5910cc7bc",
@@ -659,7 +686,8 @@
    ],
    "first_seen": "2026-10-31T18:14:53.884646+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "a9f920f812f8",
@@ -677,7 +705,8 @@
    ],
    "first_seen": "2026-10-31T18:14:53.884646+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "fbd06fff4dcb",
@@ -693,7 +722,10 @@
    "cves": [
     "CVE-2026-118329"
    ],
-   "first_seen": "2026-10-31T18:14:53.884646+00:00"
+   "first_seen": "2026-10-31T18:14:53.884646+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "16bd9076b880",
@@ -709,7 +741,10 @@
    "cves": [
     "CVE-2026-118330"
    ],
-   "first_seen": "2026-10-31T18:14:53.884646+00:00"
+   "first_seen": "2026-10-31T18:14:53.884646+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "9b6fc766851d",
@@ -725,7 +760,10 @@
    "cves": [
     "CVE-2026-118331"
    ],
-   "first_seen": "2026-10-31T18:14:53.884646+00:00"
+   "first_seen": "2026-10-31T18:14:53.884646+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "c363410d1ef6",
@@ -743,7 +781,8 @@
    ],
    "first_seen": "2026-10-31T18:14:53.884646+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "5a8f2e538e95",
@@ -759,7 +798,9 @@
    "cves": [
     "CVE-2026-118333"
    ],
-   "first_seen": "2026-10-31T18:14:53.884646+00:00"
+   "first_seen": "2026-10-31T18:14:53.884646+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "5c44aaa0c359",
@@ -775,7 +816,9 @@
    "cves": [
     "CVE-2026-118334"
    ],
-   "first_seen": "2026-10-31T18:14:53.884646+00:00"
+   "first_seen": "2026-10-31T18:14:53.884646+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "9a6dfce2d690",
@@ -791,7 +834,9 @@
    "cves": [
     "CVE-2026-118335"
    ],
-   "first_seen": "2026-10-31T18:14:53.884646+00:00"
+   "first_seen": "2026-10-31T18:14:53.884646+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "cc96499bf548",
@@ -807,7 +852,9 @@
    "cves": [
     "CVE-2026-118336"
    ],
-   "first_seen": "2026-10-31T18:14:53.884646+00:00"
+   "first_seen": "2026-10-31T18:14:53.884646+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "7db9740b60f7",
@@ -823,7 +870,9 @@
    "cves": [
     "CVE-2026-118337"
    ],
-   "first_seen": "2026-10-31T18:14:53.884646+00:00"
+   "first_seen": "2026-10-31T18:14:53.884646+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "5c14ede6cbc6",
@@ -839,7 +888,9 @@
    "cves": [
     "CVE-2026-118338"
    ],
-   "first_seen": "2026-10-31T18:14:53.884646+00:00"
+   "first_seen": "2026-10-31T18:14:53.884646+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "076de2250be9",
@@ -855,7 +906,9 @@
    "cves": [
     "CVE-2026-118339"
    ],
-   "first_seen": "2026-10-31T18:14:53.884646+00:00"
+   "first_seen": "2026-10-31T18:14:53.884646+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "80b10f6bb26e",
