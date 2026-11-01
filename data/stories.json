@@ -3165,6 +3165,64 @@
    "instructions_checked": true
   },
   {
+   "id": "6e20a9798345",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "FBI Links North Korea's TraderTraitor to Record $6.43 Billion Binance Crypto Heist",
+   "link": "https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html",
+   "published": "2026-11-01T06:44:27+00:00",
+   "summary": "The U.S. Federal Bureau of Investigation (FBI) has officially attributed the theft of more than $6 billion in virtual assets to TraderTraitor, a North Korea-aligned elite hacking group also tracked as Jade Sleet, Pressure Chollima, PUKCHONG, Slow Pisces, and UNC4899. The FBI, along with the U.S. Secret Service (USSS)…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmb1j0HC3RkKxZ4bBQPaOa5GaLqC2EBtxXHOMnebPlgHGDJG7ryIuSBIR-9YBQuUm6HwD15-OJQgBvIkhbLIApM8XoU0DptSEF6DNhEpinxPA-06wQZhLhRiKmFGO5cVjONcaouGC3lqybhkeEsZj-xebX6u6hSR19mS7sVqOrpR02qNOlpHZJEUjf1HtB/s1600/binance-hack.png",
+   "cves": [],
+   "first_seen": "2026-11-01T08:28:19.563681+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "2a3e4a8e199c",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Hackers Steal About $2.7 Million From Polymarket Traders via Hijacked DebugBear Script",
+   "link": "https://thehackernews.com/2026/11/hackers-steal-about-27-million-from.html",
+   "published": "2026-11-01T07:25:40+00:00",
+   "summary": "Malicious code on the website of prediction market Polymarket sold some signed-in traders' positions and moved their funds to the hackers on October 29. The code had replaced a page-speed script that the site loaded from an outside company. Polymarket says it is refunding about $2.7 million to 726 affected wallets…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhe0B28qLAtUMfqN29_phxZJVJORICkj_98MZFwDiXAxFTABw8G9qbsVyD98pg7T_Rvgv83NXyR5tNGYH4dRwlxs3QFTUZxDPHQs2BgFsnmGcOuVW1HkFVCfiCR3Y05kPQrfFx4S7A8DiFXXAAgdc5SiEKx0-0xrW5rNlNSyN3jZJcyXasdpCr5AG7KM3s/s1600/Polymarket.jpg",
+   "cves": [],
+   "first_seen": "2026-11-01T08:28:19.563681+00:00",
+   "instructions": [
+    "The wallet provider may still ask the trader, refuse, or apply its own rules for the session.",
+    "Polymarket's status page links a form for anyone who thinks their amount is wrong or that they should have received a payment.",
+    "Polymarket posted its first status update about unauthorized activity in user wallets at 17:38 UTC.",
+    "The company said it removed the script \"within the hour.\" It also cleared every cache, reset all active login sessions and paused trading until the site was clean."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "be08e34bf976",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "NetamLoader Malware Targets Government Windows 10 Systems in Asia via .NET Injection",
+   "link": "https://thehackernews.com/2026/11/netamloader-malware-targets-government.html",
+   "published": "2026-11-01T07:02:58+00:00",
+   "summary": "Cybersecurity researchers have disclosed details of what has been described as a \"highly sophisticated infection chain\" targeting government organizations in Asia. The activity, detailed by Kaspersky this week, targeted a custom Windows 10 build used exclusively by government entities in Asia and involves the…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy0oLNj9TVg8ifLKdJSg4HH1EhN3m_OBldd7wEIeVoQSHtFXSmsiPdmf-njsPD-CbVHY8NckeW2N9rN8-CTnp81zaeFq-ISj04O7ihoj5HgnvJT_zY_0fdC8vCcd5LXL8Mx9ym1fPI5GMrEtjxZoEiernCr_CZwLocgtrJsKZzixEnYUe2WmkehWLNR2hx/s1600/windows-hacker.jpg",
+   "cves": [],
+   "first_seen": "2026-11-01T08:28:19.563681+00:00",
+   "instructions": [
+    "On the other hand, it also means that each country must protect this entire vast ecosystem on its own.",
+    "The Russian cybersecurity company said the artifact was detected in the first half of 2026, packaged inside a Windows cabinet archive (CAB) file placed in a directory that stores Windows operating system update packages.",
+    "According to Kaspersky, the CAB archive containing the .config file was placed in the path: \"C:\\Windows\\SoftwareDistribution\\Download\\e4537a1762fcafd2fd96bfc825bad34f9db9a24,\" with its contents extracted and dropped into \"C:\\Windows\\SoftwareDistribution\\Download\\Install\\.\"",
+    "Present in the archive are seven files, four of which are legitimate components of Patch My PC, an endpoint management software -"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "372f6f54af20",
    "source": "therecord",
    "source_name": "The Record",
@@ -6873,6 +6931,22 @@
    "image": "https://storage.ghost.io/c/fb/33/fb3391dc-723d-4e74-b95a-d641b5feb38e/content/images/2026/10/maxresdefault-1.jpg",
    "cves": [],
    "first_seen": "2026-10-27T08:19:45.663745+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "78371aadf257",
+   "source": "troyhunt",
+   "source_name": "Troy Hunt",
+   "official": false,
+   "source_type": "news",
+   "title": "Weekly Update 528: Reading AI-generated Code & the Economics of Solar",
+   "link": "https://www.troyhunt.com/weekly-update-528/",
+   "published": "2026-11-01T07:35:23+00:00",
+   "summary": "By pure timing coincidence, the Proton CEO's AI @ Proton, Engineering Manifesto made headlines around the same time as this week's video. The guy's management style and choice of language have really rubbed a lot of people up the wrong way, and deservedly so, IMHO. However... this section of his screed really…",
+   "image": "https://storage.ghost.io/c/fb/33/fb3391dc-723d-4e74-b95a-d641b5feb38e/content/images/2026/11/dK01FOVwq4A-HD--1-.jpg",
+   "cves": [],
+   "first_seen": "2026-11-01T08:28:19.563681+00:00",
    "instructions": [],
    "instructions_checked": true
   }
