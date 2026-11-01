@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-01T11:36:21+00:00",
-  "sources_ok": 16,
+  "generated": "2026-11-01T12:17:11+00:00",
+  "sources_ok": 17,
   "sources_total": 19,
   "sources": [
     {
@@ -18,9 +18,8 @@
     {
       "id": "msrc",
       "name": "Microsoft Security Response Center",
-      "ok": false,
-      "count": 0,
-      "error": "HTTP Error 403: Forbidden"
+      "ok": true,
+      "count": 30
     },
     {
       "id": "cisa",
@@ -126,13 +125,11 @@
   "critical": 9,
   "high": 3,
   "kev_loaded": true,
-  "warnings": [
-    "Microsoft 365 roadmap feed unavailable: HTTP Error 403: Forbidden"
-  ],
+  "warnings": [],
   "changed": true,
   "change_radar": {
-    "ok": false,
+    "ok": true,
     "entries": 40,
-    "error": "HTTP Error 403: Forbidden"
+    "error": null
   }
 }
