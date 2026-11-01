@@ -210,6 +210,28 @@
    "instructions_checked": true
   },
   {
+   "id": "6f421f1330c7",
+   "source": "google-threat-intel",
+   "source_name": "Google Threat Intelligence",
+   "official": false,
+   "source_type": "vendor_blog",
+   "title": "ARTEX and Friends: Enter Agentic Offensive Frameworks",
+   "link": "https://cloud.google.com/blog/topics/threat-intelligence/artex-and-friends-enter-agentic-offensive-frameworks/",
+   "published": "2026-10-30T14:00:00+00:00",
+   "summary": "Written by: Aurora Blum, David Mainor, Rohit Nambiar, Omar ElAhdan, Matthew McWhirt, Will Silverstone, Bhavesh Dhake, Chris Busse Introduction Recent intrusions in which threat actors have been observed weaponizing agentic frameworks to execute highly-automated intrusions has put a spotlight on evolving adversarial…",
+   "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/03_ThreatIntelligenceWebsiteBannerIdeas_BA.max-2600x2600.png",
+   "cves": [],
+   "first_seen": "2026-11-01T19:58:18.242629+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Unrestricted autonomous execution generates forensic traffic, relies on recognizable identifiers, and leaves behind distinct code-level traces, increasing the likelihood of detection and mitigation.",
+    "Mandiant recommends structuring enterprise defenses across five foundational layers designed to restrict lateral movement and limit the speed advantage of autonomous tooling:",
+    "Apply Similar Controls to Programmatic Administration : Where supported, restrict administrative service principals and automation identities to expected networks, workloads, or private connectivity.",
+    "Prioritize Workload and Programmatic Identities : Apply the same rigor used for privileged human identities to service principals, service accounts, API keys, cloud access keys, application credentials, deployment tokens, and Personal Access Tokens."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "99e7d99b0dd3",
    "source": "grahamcluley",
    "source_name": "Graham Cluley",
@@ -4492,6 +4514,27 @@
    "image_checked": true,
    "instructions": [
     "According to Iris, the two wallets held a combined 229.66 SOL, with no funds cashed out at the time of the researcher's update."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "8cfea8890b08",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "FBI links $6.3 billion Binance crypto heist to North Korean hackers",
+   "link": "https://www.bleepingcomputer.com/news/security/fbi-links-63-billion-binance-crypto-heist-to-north-korean-hackers/",
+   "published": "2026-11-01T19:57:53+00:00",
+   "summary": "The FBI has confirmed that North Korean state-sponsored hackers known as TraderTraitor were behind the $6.3 billion crypto-theft attack on Binance, making it the largest cryptocurrency heist on record.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2024/08/12/north-korean-hackers.jpg",
+   "cves": [],
+   "first_seen": "2026-11-01T19:58:18.242629+00:00",
+   "image_checked": true,
+   "instructions": [
+    "\"The Federal Bureau of Investigation (FBI) is releasing information advising the Democratic People's Republic of Korea (North Korea) was responsible for the theft of more than $6 billion USD in virtual assets from cryptocurrency exchange Binance, on or about October 29, 2026,\" the FBI said .",
+    "Secret Service, and IRS Criminal Investigation are now asking cryptocurrency exchanges, blockchain operators, and other virtual asset service providers to block transactions linked to addresses the hackers used to launder stolen funds.",
+    "The exchange says it has now covered approximately 95% of the impacted amount, up from 90% in its previous update."
    ],
    "instructions_checked": true
   },
