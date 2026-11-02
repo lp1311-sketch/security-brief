@@ -84,6 +84,27 @@
    "instructions_checked": true
   },
   {
+   "id": "865fa666afda",
+   "source": "windows-blog",
+   "source_name": "Windows Experience Blog",
+   "official": false,
+   "source_type": "vendor_blog",
+   "title": "Client-side threat detection: how Scareware blocker uncovered malicious notification abuse",
+   "link": "https://blogs.windows.com/msedgedev/2026/11/02/client-side-threat-detection-how-scareware-blocker-uncovered-malicious-notification-abuse/",
+   "published": "2026-11-02T22:05:53+00:00",
+   "summary": "Website notifications were designed to help us stay informed. They can alert you to a new message, remind you of an upcoming event, or share an important update from a service you trust. But scammers are turning this useful browser feature into a persistent channel for fake virus warnings, security alerts, and other…",
+   "image": "https://winblogs.thesourcemediaassets.com/sites/33/2026/11/Picture1.png",
+   "cves": [],
+   "first_seen": "2026-11-02T22:12:00.507525+00:00",
+   "instructions": [
+    "They can alert you to a new message, remind you of an upcoming event, or share an important update from a service you trust.",
+    "As of last month’s rollout of Edge 156, when Microsoft Defender SmartScreen or Scareware blocker detect a scam that was pushed through a notification, Edge will automatically disable notifications from the site that sent it.",
+    "Edge now includes a “Block and report” option for notification permission requests to disrupt the threat at its root.",
+    "Now from the notification permission prompt, you can open the menu next to “Block” and select “Block and report”."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "17b24679c82e",
    "source": "borncity",
    "source_name": "Born's IT and Windows Blog",
@@ -3330,6 +3351,23 @@
    "instructions_checked": true
   },
   {
+   "id": "d32892baf1f5",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Largest crypto exchange in Brazil confirms cyberattack as millions flow out of platform",
+   "link": "https://therecord.media/mercado-bitcoin-brazil-cryptocurrency-heist",
+   "published": "2026-11-02T21:42:00+00:00",
+   "summary": "Blockchain security companies said more than $46 million left the Mercado Bitcoin platform.",
+   "image": "https://cms.therecord.media/uploads/mercado_bitcoin_92ae590f6f.jpg",
+   "cves": [],
+   "first_seen": "2026-11-02T22:12:00.507525+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "18836a2757c3",
    "source": "therecord",
    "source_name": "The Record",
@@ -4059,6 +4097,25 @@
    "instructions": [
     "Customers are advised to enable two-factor authentication (2FA) and watch for unexpected password reset requests, authentication prompts, and scammers impersonating Chainalysis, particularly those offering fund recovery or recruiting services.",
     "Microsoft urges Entra ID admins to migrate users to passkeys"
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "f6edbcaffade",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Chinese hackers use ARTEX AI in automated attacks against 200 orgs",
+   "link": "https://www.bleepingcomputer.com/news/security/chinese-hackers-use-artex-ai-in-automated-attacks-against-200-orgs/",
+   "published": "2026-11-02T21:40:14+00:00",
+   "summary": "Chinese hackers used ARTEX, an open-source, multi-agent AI penetration-testing framework, in attacks against more than 200 organizations across 14 countries.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/02/pandabot.jpg",
+   "cves": [],
+   "first_seen": "2026-11-02T22:12:00.507525+00:00",
+   "image_checked": true,
+   "instructions": [
+    "According to its latest update, the tool used in the attack on its network was ARTEX AI, which acted autonomously."
    ],
    "instructions_checked": true
   },
@@ -5249,22 +5306,6 @@
    "instructions_checked": true
   },
   {
-   "id": "5d6c647af363",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "Risks & Rewards: How AI Is Redefining the CISO's Role",
-   "link": "https://www.darkreading.com/cybersecurity-careers/risks-rewards-ai-redefining-ciso-role",
-   "published": "2026-10-26T21:44:33+00:00",
-   "summary": "Nvidia security executive Mark Weatherford says CISOs must help business leaders weigh AI's pros and cons, and ensure those deploying it own the risks.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt739dd94533bc1a1c/6adfbdf0c68e80623ff507bb/ciso_Dave_Hoeek_shutterstock.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-10-26T22:13:51.142238+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "a8008ad652a3",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -5527,6 +5568,27 @@
     "Both the attacker’s server and the victim’s workstation must allow the connection, and server settings determine whether the tunnel is publicly reachable.",
     "A missing marker alone should not replace review of the installation, process, network, and persistence evidence.",
     "These reports provide intelligence, protection information, and recommended actions to prevent, mitigate, or respond to associated threats found in customer environments."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "73b73a473518",
+   "source": "msblog",
+   "source_name": "Microsoft Security Blog",
+   "official": false,
+   "source_type": "vendor_blog",
+   "title": "What exploited vulnerabilities have in common: A data-driven analysis of real-world attacks",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/02/exploited-vulnerabilities-common-data-driven-analysis-real-world-attacks/",
+   "published": "2026-11-02T20:20:59+00:00",
+   "summary": "The vulnerability landscape continues to expand. From 1999 through September 2026, approximately 383,000 software vulnerabilities had been disclosed across platforms and technologies, yet only about 2,000 CVEs (roughly 0.5%) have been linked to real-world exploitation. Those vulnerabilities follow clear patterns…",
+   "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/11/image.webp",
+   "cves": [],
+   "first_seen": "2026-11-02T22:12:00.507525+00:00",
+   "instructions": [
+    "Microsoft Defender Vulnerability Management addresses this challenge through Exposure Score and prioritized security recommendations .",
+    "Microsoft Defender Vulnerability Management security recommendations",
+    "Threat actors disproportionately target flaws that enable system takeover, particularly remote code execution, privilege escalation, and authentication bypass.",
+    "For example, when a vulnerability can bypass authentication and directly enable remote code execution (RCE), we classify it as RCE."
    ],
    "instructions_checked": true
   },
