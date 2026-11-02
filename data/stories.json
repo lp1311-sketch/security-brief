@@ -1921,22 +1921,6 @@
    "instructions_checked": true
   },
   {
-   "id": "03f54c74f6fe",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Attackers Use Microsoft Teams IT Support Scams to Deploy Malware and Ransomware",
-   "link": "https://thehackernews.com/2026/10/attackers-use-microsoft-teams-it.html",
-   "published": "2026-10-26T15:52:40+00:00",
-   "summary": "Cybersecurity researchers are calling attention to what they say is a \"recurring social engineering pattern\" across hundreds of cases in which threat actors use Microsoft Teams' external chat creation feature to conduct impersonation scams or to deliver malware. \"A consistent pattern of attacker behavior has emerged…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGj3R5UeJnb_pAG2XH5cEGUzKbzeRHLNAES48EgHC8ssOnuDbDOqJA9ydPHJqmxYONu2lCeu42YOv_e_XA2RtX5jVGsMkQY0QAGrzoqmY4qU6NnWrPTfX0V-U68B9Z80KHLJvZDtUeSm4dvkp06oJ9JmgJvr7CDYZ-48fwAOENt31Lrcpr4M6O_4x6ovLZ/s1600/support.jpg",
-   "cves": [],
-   "first_seen": "2026-10-26T18:06:48.441633+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "1da67faa3c4a",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -3912,28 +3896,6 @@
    "instructions_checked": true
   },
   {
-   "id": "cf08225efb6b",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Microsoft releases emergency .NET patches for critical Brotli flaw",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-emergency-net-patches-for-critical-brotli-flaw/",
-   "published": "2026-10-26T15:38:24+00:00",
-   "summary": "Microsoft released emergency.NET security updates to patch a critical vulnerability known as Broccoli2Shell, also tracked as Node2Shell and HTTP2Shell.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/26/Microsoft-NET.jpg",
-   "cves": [],
-   "first_seen": "2026-10-26T15:48:52.190996+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Those who can't apply the updates immediately should block incoming Brotli-compressed requests using a proxy or firewall, or disable Brotli decoding until they can apply a patch.",
-    "Applications must manually opt in to ASP.NET Core request decompression or HttpClient response decompression, or they must manually invoke the Brotli decompression APIs provided by .NET.\"",
-    "According to a Microsoft advisory published Sunday, attackers can also exploit this flaw to remotely escalate privileges on systems with unpatched .NET installations that use non-default configurations.",
-    "To address this flaw, Microsoft has released out-of-band (OOB) security updates for .NET 8, .NET 9, and .NET 10, along with .NET 11 Release Candidate 3, and advised \"updating as soon as possible.\""
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "9df47a48bc7e",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4077,6 +4039,28 @@
    "instructions": [
     "However, it should be noted that Arkham's $5.78 billion figure is the value of assets held across all tracked wallets, rather than a confirmed amount stolen from Binance.",
     "A later update claimed that a third Binance hot wallet transferred another 780 million USDC to the same Ethereum address , bringing the reported total to approximately $3.48 billion."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "be1d39eaf1aa",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "BTCPay Server warns of hot wallet thefts targeting outdated instances",
+   "link": "https://www.bleepingcomputer.com/news/security/btcpay-server-warns-of-hot-wallet-thefts-targeting-outdated-instances/",
+   "published": "2026-11-02T15:03:07+00:00",
+   "summary": "The maintainer of BTCPay Server, an open-source cryptocurrency payment processor, has urged users to install the latest version as hackers have been draining \"hot wallets\" on instances running older versions.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/08/Bitcoin-cryptocurrency.jpg",
+   "cves": [],
+   "first_seen": "2026-11-02T15:59:39.061522+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Early Monday, the maintainer said it had “identified an attack vector targeting instances running version 2.4.1 (July 23, 2026) or earlier” and strongly urged users to update to version 2.4.7.",
+    "Impacted users should update to version 2.4.7 through Server Settings → Maintenance → Update.",
+    "Operators were initially advised to shut down their servers pending a full investigation into the unauthorized payments.",
+    "On October 29, the company disclosed a critical vulnerability discovered via Anthropic’s Frontier OSS scanner, which prompted the release of version 2.4.7 as an emergency security update ."
    ],
    "instructions_checked": true
   },
@@ -5037,6 +5021,23 @@
    "instructions_checked": true
   },
   {
+   "id": "5ea1d647d005",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Your Mobile Carrier Stores Your Call Logs for Years",
+   "link": "https://www.bleepingcomputer.com/news/security/your-mobile-carrier-stores-your-call-logs-for-years/",
+   "published": "2026-11-02T15:01:11+00:00",
+   "summary": "Mobile carriers can retain years of call and text metadata, exposing sensitive details about customers' relationships, locations, and daily routines if breached. Cape examines the privacy risks of long-term telecom data retention and how its mobile service reduces exposure by automatically deleting call records.",
+   "image": "https://www.bleepstatic.com/content/posts/2026/10/30/cape-walking-across-street.jpg",
+   "cves": [],
+   "first_seen": "2026-11-02T15:59:39.061522+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "2c3bc9054593",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -5241,6 +5242,22 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blta53885fb79cd03e3/6706dccd5ae89acdc961cf2d/github_Tada_Images_shutterstock.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-10-26T18:51:23.813916+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "6c5cf422a94b",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "Microsoft's AI Risk Report Misses This Key Detail",
+   "link": "https://www.darkreading.com/cyberattacks-data-breaches/microsoft-ai-cyber-risk-report-miss",
+   "published": "2026-11-02T15:00:00+00:00",
+   "summary": "The latest \"Digital Defense Report\" identifies government agencies as prime targets for AI attacks but doesn't mention that they are broadly being targeted through Microsoft bugs.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt569484121108a889/6ae4e02ada596cc80722963c/AI-Saksit_Sangtong-Getty-2225595754.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-02T15:59:39.061522+00:00",
    "instructions": [],
    "instructions_checked": true
   },
@@ -5986,6 +6003,26 @@
    "image_checked": true,
    "instructions": [
     "Preparing for disruption must become part of day-to-day operations."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "c0b0ac944847",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Cybersecurity M&A Roundup: 37 Deals Announced in October 2026",
+   "link": "https://www.securityweek.com/cybersecurity-ma-roundup-37-deals-announced-in-october-2026/",
+   "published": "2026-11-02T15:01:11+00:00",
+   "summary": "Significant cybersecurity deals were announced by Absolute Security, Aikido, Anthropic, Cohere, Hex-Rays, and Proofpoint. The post Cybersecurity M&A Roundup: 37 Deals Announced in October 2026 appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/02/MA-mergers-and-acquisitions.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-02T15:59:39.061522+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Cohere to acquire AISLE Canadian AI developer Cohere has signed a letter of intent to acquire AISLE, a startup whose autonomous AI systems find and help patch vulnerabilities in critical software.",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
   },
