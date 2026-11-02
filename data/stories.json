@@ -232,6 +232,27 @@
    "instructions_checked": true
   },
   {
+   "id": "045ebd27a612",
+   "source": "google-threat-intel",
+   "source_name": "Google Threat Intelligence",
+   "official": false,
+   "source_type": "vendor_blog",
+   "title": "Shutting the Door on the XCPE Botnet",
+   "link": "https://cloud.google.com/blog/topics/threat-intelligence/shutting-the-door-on-the-xcpe-botnet/",
+   "published": "2026-11-02T14:00:00+00:00",
+   "summary": "Written by: Charley Snyder Introduction Last week, Google and industry partners dismantled the XCPE backdoor which enrolled more than 1.3 million set-top boxes into a botnet. We assess with high confidence that the backdoor and botnet were intentionally developed, deployed, and operated for financial gain by…",
+   "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/Figure_1_XCPE_malware_overview.max-1000x1000.png",
+   "cves": [],
+   "first_seen": "2026-11-02T13:52:43.666569+00:00",
+   "instructions": [
+    "Retailers and distributors should require independent security audits from Original Design Manufacturers (ODMs) and swiftly delist manufacturers implicated in supply-chain abuse.",
+    "While some providers may claim to behave ethically and only enroll devices with the clear consent of consumers, any claims of \"ethical sourcing\" must be backed by transparent, auditable proof of user consent.",
+    "Consumers should be extremely wary of applications that offer payment in exchange for \"unused bandwidth\" or \"sharing your internet.\" These applications are primary ways for illicit proxy networks to grow, and could open security vulnerabilities on the device’s home network.",
+    "Consumers should only purchase connected devices, such as set-top boxes, from reputable manufacturers."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "99e7d99b0dd3",
    "source": "grahamcluley",
    "source_name": "Graham Cluley",
@@ -2965,6 +2986,27 @@
    "instructions_checked": true
   },
   {
+   "id": "ad2df65419af",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Critical Langflow Flaws Could Let Unauthenticated Attackers Run Code on Servers",
+   "link": "https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html",
+   "published": "2026-11-02T11:50:00+00:00",
+   "summary": "Two critical flaws in Langflow could let a remote attacker with no account bypass authentication or run arbitrary code, IBM said last week. Langflow is an open-source tool for building AI agents and workflows, and its vulnerability reports go to IBM. Every release from 1.0.0 through 1.12.8 has the flaws, and the only…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_FF2_yXQrxnB1ymo-GsohY6t0INslV7mps2DVMnYa_dD_RpZu7uz9HwNrux1gxieMF4hnc_84KMpOyhroj0EDx0Vwv0QljdhTehvJINIsr-Sjyw4CaMiLO3fFWGl-8LhLWgOtC4DRU2X5e46s3Rxghu3KLUMsyHfpxFyKogIs34Q2fm2RYpAMI_Jt_9A/s1600/langflow-rce.jpg",
+   "cves": [],
+   "first_seen": "2026-11-02T13:52:43.666569+00:00",
+   "instructions": [
+    "Its code description warns that it \"bypasses authentication and should only be used in development environments.\"",
+    "IBM offers no workaround for servers that cannot upgrade yet.",
+    "Neither flaw is in CISA's Known Exploited Vulnerabilities catalog, as of the catalog's October 30 update.",
+    "If the server uses automatic login, prepare the existing account for password sign-in, as Langflow's upgrade guidance describes."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "c1c20131973a",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -3039,6 +3081,25 @@
     "Polymarket's status page links a form for anyone who thinks their amount is wrong or that they should have received a payment.",
     "Polymarket posted its first status update about unauthorized activity in user wallets at 17:38 UTC.",
     "The company said it removed the script \"within the hour.\" It also cleared every cache, reset all active login sessions and paused trading until the site was clean."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "c477f1812588",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Is Your SOC Ready for AI Agents? A Maturity Check Before You Deploy",
+   "link": "https://thehackernews.com/2026/11/is-your-soc-ready-for-ai-agents.html",
+   "published": "2026-11-02T11:30:00+00:00",
+   "summary": "Forty percent of security teams now use AI every day, and another 56% are testing it. Only 4% have no plans to adopt it, according to Prophet Security's State of AI in Security Operations 2026 survey of more than 250 CISOs, SOC leaders and practitioners. For the teams still testing, the next decision is whether their…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZbG_0dst_8ctvKrGx37rAninLXS6SIcKT4YjziNbu7bPmTPAsYvWo-Jkwj0UqT493VwmYVtvkthnEGLqTusFvJFo9fPth_VWjI2XNev9SKY-sePLY12rM5yWoQOzrvEXG0DWOWBb7N8GcdHNPqv6skeqGx2r2zGVlDeWkPnt5drMe_R2yh8TB8-kOCug/s1600/pro.jpg",
+   "cves": [],
+   "first_seen": "2026-11-02T13:52:43.666569+00:00",
+   "instructions": [
+    "On response, 44% have AI recommend actions that people carry out, 30% let it handle low-risk remediation on its own, and no respondent gives it full, unsupervised autonomy.",
+    "Agent findings should appear in the case management or ticketing tools analysts already use, so nobody has to watch another console."
    ],
    "instructions_checked": true
   },
@@ -3152,6 +3213,25 @@
    "first_seen": "2026-10-29T14:36:14.704007+00:00",
    "image_checked": true,
    "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "00a3b1e54d1b",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Second wave of suspected cyberattacks hits supermarket freezers across Europe",
+   "link": "https://therecord.media/cyberattack-grocery-freezers-europe",
+   "published": "2026-11-02T13:00:00+00:00",
+   "summary": "Supermarket and grocery store refrigerators across Europe appear to have been hacked early Monday — the second such incident in recent weeks where attackers have manipulated temperature controls and caused stock to spoil.",
+   "image": "https://cms.therecord.media/uploads/Shopping_carts_Netherlands_6df61cd499.jpg",
+   "cves": [],
+   "first_seen": "2026-11-02T13:52:43.666569+00:00",
+   "image_checked": true,
+   "instructions": [
+    "He said Sabcobel knew of around 20 affected refrigeration units out of the hundreds it manages across Belgium, adding that the affected units needed physical modifications and not just a software update to address the vulnerabilities."
+   ],
    "instructions_checked": true
   },
   {
@@ -4785,6 +4865,25 @@
    "instructions_checked": true
   },
   {
+   "id": "7398c8fe0a0b",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Over 1,000 GitLab servers vulnerable to ongoing RCE attacks",
+   "link": "https://www.bleepingcomputer.com/news/security/over-1-000-gitlab-servers-vulnerable-to-code-execution-attacks/",
+   "published": "2026-11-02T12:47:00+00:00",
+   "summary": "Over 1,000 Internet-exposed GitLab servers are still unpatched against a maximum-severity flaw actively exploited in remote code execution attacks.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/02/GitLab-headpic.jpg",
+   "cves": [],
+   "first_seen": "2026-11-02T13:52:43.666569+00:00",
+   "image_checked": true,
+   "instructions": [
+    "\"These versions contain important bug and security fixes, and we strongly recommend that all self-managed GitLab installations be upgraded to one of these versions immediately."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "6369b7f8877c",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -5740,27 +5839,6 @@
    "instructions_checked": true
   },
   {
-   "id": "23a9892afebf",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "953 Online Stores Infected in Long-Lasting Malware Campaign",
-   "link": "https://www.securityweek.com/953-online-stores-infected-in-long-lasting-malware-campaign/",
-   "published": "2026-10-26T12:46:44+00:00",
-   "summary": "Small loader code injected into the stores served a payload to visitors or did nothing to avoid detection. The post 953 Online Stores Infected in Long-Lasting Malware Campaign appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/06/Magento.jpeg",
-   "cves": [],
-   "first_seen": "2026-10-26T14:08:48.087897+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Online store owners should check their sites’ content management system (CMS) for the loader code and check the installation for vulnerabilities and backdoors the attackers could use.",
-    "They should also check for rogue administrator accounts, perform cleanup, change all passwords, and make sure their deployments run the latest available patches.",
-    "Preparing for disruption must become part of day-to-day operations."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "b326a55c6171",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -6134,6 +6212,27 @@
    "image_checked": true,
    "instructions": [
     "Preparing for disruption must become part of day-to-day operations."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "afbf72609830",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Google Introduces $250,000 Root-in-Cloud Bug Bounty Reward",
+   "link": "https://www.securityweek.com/google-introduces-250000-root-in-cloud-bug-bounty-reward/",
+   "published": "2026-11-02T13:25:11+00:00",
+   "summary": "The top payout is for high-impact architectural research demonstrating full administrative control. The post Google Introduces $250,000 Root-in-Cloud Bug Bounty Reward appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2024/07/Google.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-02T13:52:43.666569+00:00",
+   "image_checked": true,
+   "instructions": [
+    "According to the internet giant, to qualify for the reward, the exploit path should not depend on pre-existing access to a project, previously compromised credentials, or user interaction/social engineering.",
+    "Adobe, Veeam, Juniper Networks Patch Critical Vulnerabilities",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
   },
@@ -6545,25 +6644,6 @@
    "instructions_checked": true
   },
   {
-   "id": "104d63029234",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "PHP2Shell Exploitation Moves From Probes to Working Shells",
-   "link": "https://www.securityweek.com/php2shell-exploitation-moves-from-probes-to-working-shells/",
-   "published": "2026-10-26T13:30:10+00:00",
-   "summary": "Attackers successfully exploited the PHP2Shell flaws against honeypots, launching 35 shells from two IP addresses on October 24. The post PHP2Shell Exploitation Moves From Probes to Working Shells appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2023/01/Cybersecurity_News-SecurityWeek.jpg",
-   "cves": [],
-   "first_seen": "2026-10-26T14:08:48.087897+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Preparing for disruption must become part of day-to-day operations."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "ff9c9693b43d",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -6580,6 +6660,27 @@
    "instructions": [
     "In an October 30 update, Polymarket said 726 wallets were affected.",
     "DebugBear, whose real user monitoring (RUM) script lets websites measure page load performance for visitors, initially told customers to remove the embed code and has now shared its initial findings . “Our DNS server records were compromised through our domain registrar.",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "adcc13fa97b8",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Revolve Data Breach Impacts at Least 180,000 People",
+   "link": "https://www.securityweek.com/revolve-data-breach-impacts-at-least-180000-people/",
+   "published": "2026-11-02T13:35:21+00:00",
+   "summary": "Hackers accessed its online shopping platform and stole customers’ personal and payment card information. The post Revolve Data Breach Impacts at Least 180,000 People appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/02/data_breach.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-02T13:52:43.666569+00:00",
+   "image_checked": true,
+   "instructions": [
+    "SecurityWeek has emailed the company for additional information on the data breach and will update this article if it responds.",
+    "Adobe, Veeam, Juniper Networks Patch Critical Vulnerabilities",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
