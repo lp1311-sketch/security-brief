@@ -2496,29 +2496,6 @@
    "instructions_checked": true
   },
   {
-   "id": "fd2c8a91369a",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "PHP Issues Second Windows Security Update in Five Days to Fix Brotli Code Execution Flaw",
-   "link": "https://thehackernews.com/2026/10/php-issues-second-windows-security.html",
-   "published": "2026-10-26T17:45:57+00:00",
-   "summary": "PHP has rebuilt its official Windows packages for PHP 8.2 through 8.5 to fix CVE-2026-111497, a flaw in the Brotli compression library that the packages include. The flaw can let an attacker corrupt memory and potentially run code. PHP says the flaw can be reached through the cURL extension when the extension…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWGYEqFaRxRywsWzBt-2T2G_Jpdp4zy3iV7qI1alNGRaBf_8TMdzRQQb335GhASkVoXD3q9mGkiLjAog4ez9d7DHhl88lkNVvuhI74KiKZP0zZpb2O8yyqyDw12WoYTiGaq1AVfG9TfGcdNhP-DmRwuKJ4Pj4mr9rEo-TVLYxYSpmUogJUSFZFL_VaduQ/s1600/php-windows.jpg",
-   "cves": [
-    "CVE-2026-111497"
-   ],
-   "first_seen": "2026-10-26T18:06:48.441633+00:00",
-   "instructions": [
-    "PHP advises Windows users to install the new builds from its downloads page .",
-    "PHP's notice offers no workaround for systems that cannot be updated yet.",
-    "OpenAI advises turning off automatic Brotli decompression in HTTP clients until the update is installed, and warns that removing br, Brotli's name in the Accept-Encoding header, \"alone does not stop a server from sending it.\"",
-    "CISA's assessment of October 23 recorded no exploitation, and the flaw was not in its Known Exploited Vulnerabilities catalog as of that day's update."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "eb73651e36ee",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -3522,6 +3499,25 @@
    "instructions_checked": true
   },
   {
+   "id": "b22118a1e1e0",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Polymarket pledges to give $3.9 million back to victims after site compromise",
+   "link": "https://therecord.media/polymarket-returning-funds-to-customers-after-site-compromise",
+   "published": "2026-11-02T17:05:20+00:00",
+   "summary": "In a post-mortem on an October 29 incident, prediction market Polymarket said it will pay people back what they lost, as well as compensate them for the site's downtime.",
+   "image": "https://cms.therecord.media/uploads/polymarket_3d06dbe254.jpg",
+   "cves": [],
+   "first_seen": "2026-11-02T17:56:29.003759+00:00",
+   "image_checked": true,
+   "instructions": [
+    "The New York-based company said it removed the vendor’s compromised script, paused trading, and reset all active login sessions."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "84a2c916c34c",
    "source": "therecord",
    "source_name": "The Record",
@@ -3553,26 +3549,6 @@
    "first_seen": "2026-10-30T12:05:18.861225+00:00",
    "image_checked": true,
    "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "f722b9fc379b",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Serbian autocrat loses election following widespread reports of digital repression",
-   "link": "https://therecord.media/serbia-election-spyware-vucic",
-   "published": "2026-10-26T17:30:00+00:00",
-   "summary": "Serbian strongman leader Aleksandar Vučić on Sunday admitted defeat in his race for prime minister, a loss that follows a series of incidents of digital repression that galvanized the opposition.",
-   "image": "https://cms.therecord.media/uploads/Vucic_ee8282393e.jpg",
-   "cves": [],
-   "first_seen": "2026-10-26T18:06:48.441633+00:00",
-   "image_checked": true,
-   "instructions": [
-    "The regime has repeatedly deployed Cellebrite surveillance software to secretly extract data from opponents’ devices — and in some cases install spyware — during bogus interrogations and arrests, researchers from Amnesty International have said.",
-    "In February 2025, Cellebrite said it cut ties with the Serbian government after Amnesty International found that authorities there had “systematically deployed” the surveillance technology to penetrate civilians’ phones and install spyware."
-   ],
    "instructions_checked": true
   },
   {
