@@ -2086,27 +2086,6 @@
    "instructions_checked": true
   },
   {
-   "id": "49aedb62ce7d",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Between alerts: What Attackers Do in the Spaces Ordinary Detection Misses",
-   "link": "https://thehackernews.com/2026/10/between-alerts-what-attackers-do-in.html",
-   "published": "2026-10-26T11:23:56+00:00",
-   "summary": "Every SOC struggles with a pile of alerts. Very few of those alerts explain how an attack started or how it progressed. Network data, like that from a network detection and response (NDR) platform, connects individual alerts into one timeline, and it feeds the defensive systems that can tie all events together into…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhH3sLtMeyrqaZo1e2DoGlQohJtAM96DKv9JxQVxynJVNyJ_76dwQQAvkcN2xeos8NtStnH6A3B4bOwtFvdsNSxdBkR6so5s66iBb0ApIhIJ2cs3hVCYdh6oOnO4K_kwKOJsDSqL4wsPrOJ48x3VmSXiQwpcxm_ULL7En-Xw_9Rc1sEFQvCdb9Sr0NwUH0/s1600/Misses.jpg",
-   "cves": [],
-   "first_seen": "2026-10-26T11:45:45.534032+00:00",
-   "instructions": [
-    "Defenders need to apply AI to the same problem, but it needs detailed network evidence from an NDR to search.",
-    "The ability to apply context across disparate communications and sequences is what allows SOC teams to find the riskiest activity.",
-    "Attackers have already identified the opportunity; now it’s time for defenders to apply the same principles and keep up.",
-    "Corelight network detection and response (NDR) delivers data that’s open, transparent, and explainable—helping detect evasive threats, reduce triage time, and enable agentic AI throughout the SOC."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "1dad8889ea72",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2986,6 +2965,27 @@
    "instructions_checked": true
   },
   {
+   "id": "d596e3f2bace",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Attackers Pose as IT Support on Microsoft Teams, Abuse AD CS to Steal Company Data",
+   "link": "https://thehackernews.com/2026/11/attackers-pose-as-it-support-on.html",
+   "published": "2026-11-02T11:08:45+00:00",
+   "summary": "Attackers posing as IT support on Microsoft Teams talked employees into giving them remote control of their PCs. They then used insecure Active Directory Certificate Services (AD CS) settings to obtain login certificates for privileged accounts, including one for a domain controller. Microsoft said in a report that it…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLv88EM1ZSjaeI7bH9DVpg2mGdkwXWUuir0S_p9IfiWG49_TgRalFdK4oQ6e7UE_JYOnNH70Z6wcftnjhcYHRY-Xc0o8GYp9r1uNzxdC_1bnXZgvon74cXkWgKpHZtwJg3IKLsqGC2HS2tcMfQS8BZu7kfrW1vAaaIA316LRzgCOn8zeGZ1WvALgJmyM4/s1600/ms-ad.jpg",
+   "cves": [],
+   "first_seen": "2026-11-02T11:34:27.451640+00:00",
+   "instructions": [
+    "From there, the attacker dropped an archive into the Downloads folder, unpacked it into a new folder named to resemble a Windows update, and ran its contents with a portable Python, Bun, or Java runtime.",
+    "Microsoft said such a certificate continues to work even after the account's password is reset or the first machine is wiped, so neither step ends the attacker's access.",
+    "There is no patch, because nothing here was a software flaw.",
+    "Review sign-in certificate templates for ones that let the requester name the account, or that too many users can enroll in, and remove enrollment rights that are not needed."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "c1c20131973a",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -3020,6 +3020,26 @@
    "cves": [],
    "first_seen": "2026-11-01T08:28:19.563681+00:00",
    "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "87a25e1b557b",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Government Linux Servers Targeted With SysGoRAT and Suspected AI-Generated Scripts",
+   "link": "https://thehackernews.com/2026/11/government-linux-servers-targeted-with.html",
+   "published": "2026-11-02T10:49:59+00:00",
+   "summary": "Cybersecurity researchers have disclosed details of a cyber espionage campaign specifically targeting Linux infrastructure associated with government entities and state-affiliated infrastructure. The activity, observed by Palo Alto Networks Unit 42 between October 2025 and April 2026, has been tracked under the…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYHKbP_7yOsvpwAldBMCL3QkCJ9SbUVrJz1Tr_RB6m3O99Gj73H0fX20hIbzKujRWB-1qkBCWv1UEJEbrTe1NFYpPkTm0OoNqJe7OdJoZa1HcZDT2On3mUT0igQeCOsMnWw_ZfT-HsLx6B8R84XYHHg4mUI2hPzM15ggddQCFAAmzChzC5Of90LInW8RB8/s1600/artex.jpg",
+   "cves": [],
+   "first_seen": "2026-11-02T11:34:27.451640+00:00",
+   "instructions": [
+    "Unrestricted autonomous execution generates forensic traffic, relies on recognizable identifiers, and leaves behind distinct code-level traces, increasing the likelihood of detection and mitigation.\"",
+    "Another hallmark involves attempts to disable endpoint protections, wipe system logs, and plant deceptive red-team markers so as to disguise the activity as a legitimate security assessment.",
+    "control, to spawn via sub-commands an interactive shell (shell_start), screenshots (screenshot), exfiltrate files to the C2 server (download), and install persistence (persist)"
+   ],
    "instructions_checked": true
   },
   {
@@ -4906,6 +4926,28 @@
    "instructions_checked": true
   },
   {
+   "id": "e52f7534557d",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Synology warns of C3RB3R ransomware attacks targeting NAS devices",
+   "link": "https://www.bleepingcomputer.com/news/security/synology-warns-customers-of-ongoing-c3rb3r-ransomware-attacks/",
+   "published": "2026-11-02T11:28:42+00:00",
+   "summary": "Taiwanese network-attached storage (NAS) appliance maker Synology warned customers to update their devices immediately due to a surge in C3RB3r ransomware attacks.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/02/Synology_headpic.jpg",
+   "cves": [],
+   "first_seen": "2026-11-02T11:34:27.451640+00:00",
+   "image_checked": true,
+   "instructions": [
+    "These attacks aim to encrypt data and extort ransom,\" it said in a Thursday advisory .",
+    "Synology also recommends enabling automatic updates to keep DSM up to date at all times.\"",
+    "Synology users are advised to immediately block access to the management web interface from the Internet and update their DSM software to block attackers' attempts to hack and encrypt their devices.",
+    "Synology rarely issues security advisories warning of attacks targeting its customers' devices, with the last such alert published in August 2019 following large-scale brute-force attacks that led to eCh0raix ransomware infections ."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "eeae20ed2a5a",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -5611,23 +5653,6 @@
     "A missing marker alone should not replace review of the installation, process, network, and persistence evidence.",
     "These reports provide intelligence, protection information, and recommended actions to prevent, mitigate, or respond to associated threats found in customer environments."
    ],
-   "instructions_checked": true
-  },
-  {
-   "id": "217d727d090a",
-   "source": "schneier",
-   "source_name": "Schneier on Security",
-   "official": false,
-   "source_type": "news",
-   "title": "Bias in Qwen3-Coder Model",
-   "link": "https://www.schneier.com/blog/archives/2026/10/bias-in-qwen3-coder-model.html",
-   "published": "2026-10-26T11:03:31+00:00",
-   "summary": "Interesting research: TL;DR: Chinese AI models now sit inside Western products, and some carry geopolitical triggers: tell the model who the code is for, and the security of what it writes changes. For the first time, we showed that this vulnerability lives in the model’s weights, and that removing the model’s CCP…",
-   "image": null,
-   "cves": [],
-   "first_seen": "2026-10-26T11:45:45.534032+00:00",
-   "image_checked": true,
-   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -6390,6 +6415,28 @@
     "According to CISA, it can lead to a wrongly sized memory allocation, and processing attacker-supplied data afterwards could corrupt memory, trigger DoS, or possibly enable remote code execution.",
     "iOS, macOS 27.2 Patch 286 Bugs; Fix for Exploited Flaw Backported to iOS 18",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "fe787079c468",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Malicious Claude Code Extension Served in Cursor Supply Chain Attack",
+   "link": "https://www.securityweek.com/malicious-claude-code-extension-served-in-cursor-supply-chain-attack/",
+   "published": "2026-11-02T11:29:39+00:00",
+   "summary": "The extension performed host reconnaissance and attempted to create a reverse SSH tunnel. The post Malicious Claude Code Extension Served in Cursor Supply Chain Attack appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/10/supply-chain-attack.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-02T11:34:27.451640+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Users should remove the malicious extension versions as soon as possible.",
+    "Remove the unauthorized SSH key, persistence mechanisms, and running tunnel processes, and assess whether the host should be rebuilt.",
+    "It then attempts to install an SSH key, enable SSH, create a reverse tunnel, and configure persistence.",
+    "Adobe, Veeam, Juniper Networks Patch Critical Vulnerabilities"
    ],
    "instructions_checked": true
   },
