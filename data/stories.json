@@ -2599,27 +2599,6 @@
    "instructions_checked": true
   },
   {
-   "id": "8239096a100a",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Malicious File in Downloads Folder Tries to Trick AI Coding Agent Into Installing Malware",
-   "link": "https://thehackernews.com/2026/10/malicious-file-in-downloads-folder.html",
-   "published": "2026-10-26T06:03:48+00:00",
-   "summary": "A malicious instruction file sitting in a developer's Downloads folder tried to make their AI coding agent install a known-malicious npm package, security firm Forever Security said in a report published last week. The company caught the attempt on a real customer's machine and stopped the agent before any code ran…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6cUQufM8zcABLKEfGt5xpGX34mUnThXvptS6o1GfAv8Ak_FO__f-rsT0GPf1Nro1NSRQuUsEGJl1boXq5Rt-IMFOnHunESsqj4sfJ_ypu9qhRgva3V0OqPN04FAKvOw0Y0KeKUvgG_RzWvA7u6piuPvLIaTJG2mbeWRRgFJB2vziZdJbkU1dN2nfwBf8/s1600/codex.png",
-   "cves": [],
-   "first_seen": "2026-10-26T08:13:05.400238+00:00",
-   "instructions": [
-    "A malicious instruction file sitting in a developer's Downloads folder tried to make their AI coding agent install a known-malicious npm package, security firm Forever Security said in a report published last week.",
-    "One section told the agent to add a server to its own configuration and install a package called function-color from npm.",
-    "There is nothing for OpenAI or Anthropic to patch, in Forever's view, because an agent following the instructions file in its folder is doing what it was built to do.",
-    "\"There is nothing here for OpenAI or Anthropic to patch,\" Forever said."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "35a2887f8653",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -3095,7 +3074,7 @@
    "title": "FBI Links North Korea's TraderTraitor to Record $6.43 Billion Binance Crypto Heist",
    "link": "https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html",
    "published": "2026-11-01T07:03:00+00:00",
-   "summary": "The U.S. Federal Bureau of Investigation (FBI) has officially attributed the theft of more than $6 billion in virtual assets to TraderTraitor, a North Korea-aligned elite hacking group also tracked as Jade Sleet, Pressure Chollima, PUKCHONG, Slow Pisces, and UNC4899. The FBI, along with the U.S. Secret Service (USSS)…",
+   "summary": "The U.S. Federal Bureau of Investigation (FBI) has officially attributed the theft of more than $6 billion in virtual assets from Binance to TraderTraitor, a North Korea-aligned elite hacking group also tracked as Jade Sleet, Pressure Chollima, PUKCHONG, Slow Pisces, and UNC4899. The FBI, along with the U.S. Secret…",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmb1j0HC3RkKxZ4bBQPaOa5GaLqC2EBtxXHOMnebPlgHGDJG7ryIuSBIR-9YBQuUm6HwD15-OJQgBvIkhbLIApM8XoU0DptSEF6DNhEpinxPA-06wQZhLhRiKmFGO5cVjONcaouGC3lqybhkeEsZj-xebX6u6hSR19mS7sVqOrpR02qNOlpHZJEUjf1HtB/s1600/binance-hack.png",
    "cves": [],
    "first_seen": "2026-11-01T08:28:19.563681+00:00",
@@ -3141,6 +3120,24 @@
     "The Russian cybersecurity company said the artifact was detected in the first half of 2026, packaged inside a Windows cabinet archive (CAB) file placed in a directory that stores Windows operating system update packages.",
     "According to Kaspersky, the CAB archive containing the .config file was placed in the path: \"C:\\Windows\\SoftwareDistribution\\Download\\e4537a1762fcafd2fd96bfc825bad34f9db9a24,\" with its contents extracted and dropped into \"C:\\Windows\\SoftwareDistribution\\Download\\Install\\.\"",
     "Present in the archive are seven files, four of which are legitimate components of Patch My PC, an endpoint management software -"
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "9068a344a035",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "New VOLTA Infostealer Uses Claude, Gemini, and Kimi AI to Rank Victims by Financial Value",
+   "link": "https://thehackernews.com/2026/11/new-volta-infostealer-uses-claude.html",
+   "published": "2026-11-02T05:51:07+00:00",
+   "summary": "Cybersecurity researchers have discovered a new Windows infostealer malware called VOLTA-AUTODOXER (aka VOLTA) that makes use of a large language model (LLM) to rank a victim's stolen data by their monetization value. Like other typical stealer families, VOLTA is equipped to harvest passwords and cookies from…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhd5V8QVweKn56_SnTCKZkhmOip6paz9noBrJn7znyZqUtFbOEaLuALQUNlmjcSAb7RIUW8GDETB6J0kFpQQe6vq7wAjk3ogxKUeQ0-2rKeO6TveLdqHNs9KnTN6zC6rwPzWE2IBWMokqQOUzAA0XPM2BWHTUTE7_U7XDfUGKTDIC1PYttxHGnAq_Kr_hMq/s1600/hacker-ai.jpg",
+   "cves": [],
+   "first_seen": "2026-11-02T07:23:10.547789+00:00",
+   "instructions": [
+    "\"The bundle is the ONLY permissible source of facts; your training knowledge must never supply a fact about the subject,\" reads a line from the prompt."
    ],
    "instructions_checked": true
   },
