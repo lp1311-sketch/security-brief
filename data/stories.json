@@ -2334,27 +2334,6 @@
    "instructions_checked": true
   },
   {
-   "id": "8e95a20d61e4",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Gheist Uses Stolen GitHub Tokens to Steal Private Repository Secrets via Actions Logs",
-   "link": "https://thehackernews.com/2026/10/gheist-uses-stolen-github-tokens-to.html",
-   "published": "2026-10-26T07:49:46+00:00",
-   "summary": "An automated campaign is using stolen GitHub tokens to plant workflows that print a repository's secrets into its GitHub Actions logs, which the attackers then download before deleting the runs. The attacks have succeeded in private repositories and GitHub Enterprise environments, according to an analysis by cloud…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipCbP2hnS9ddXqMz9cNIAMEQZWy2qX45MZnYfIuO_Zszamhl_FS7ViRp4CZcjHS6uu6A4jR_S4vBzHzoMNtAb0CbaGxHxj2F07wuKWHfSbsFUov-4dsQWUNJZwfGbnfThW1sAQZ61y5ibqyhlW1iBmbWeSwE1gKHsigRRXaql9P96aFANb3al6vno7fuA/s1600/github-secrets.jpg",
-   "cves": [],
-   "first_seen": "2026-10-26T10:08:32.198476+00:00",
-   "instructions": [
-    "Every secret the repository could read should be rotated, and the token that pushed the branch revoked.",
-    "To make a stolen token less useful, Wiz also recommends these steps:",
-    "Because the secrets leave through GitHub itself, there is no attacker server or outbound connection to block.",
-    "Rotate every repository, organization, and environment secret the repository could use."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "cf3544e85171",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2595,25 +2574,6 @@
     "Red Hat's machine-readable advisory file, updated on October 29, lists the impact as Important and scores the flaw 8.1, with high confidentiality and integrity impact.",
     "Oracle and SUSE also score the flaw 8.1, with the same CVSS vector as Red Hat's advisory file.",
     "As of October 29, none of the vendor advisories, the CVE record, or Anthropic's post reports attacks using the flaw."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "35a2887f8653",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Microsoft 365 Token-Replay Attacks Compromise 97 Accounts at 79 Organizations",
-   "link": "https://thehackernews.com/2026/10/microsoft-365-token-replay-attacks.html",
-   "published": "2026-10-26T08:35:51+00:00",
-   "summary": "Cybersecurity researchers have disclosed a Microsoft 365 campaign that has been observed leveraging an adversary-in-the-middle (AitM) relay to capture sign-in sessions and then replay the stolen tokens to break into email accounts at 79 organizations. Huntress, which observed the activity between July 14 and September…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKwJ8hpTcgaV_VMCyzQDPQQOPlZmmE3Fg-XAOrUfFazMKgVGEoT7OHQgWhyJLhCpHO6Hvp35u_YZGBfyGXAuJfpwP4BriicsNfvhPXjq4BzNyULVQPzNCWzmSIGnDLN7P2RNW2sfm15qZxLrVzpDg8FvOcGTZBhMsBFPH3IhiV1k3NdGAHFRC7kkKaOMMn/s1600/contoso.jpg",
-   "cves": [],
-   "first_seen": "2026-10-26T10:08:32.198476+00:00",
-   "instructions": [
-    "Organizations who suspect a token replay compromise are recommended to revoke sessions and reset the password, audit Entra devices, review MFA methods, check for unexpected inbox rules or new enterprise applications, and restrict device-code workflow with Conditional Access policies.",
-    "\"Businesses setting up CAPs should require MFA (or block) for All Users, All Cloud Apps, and All Client App types, unconditionally.\""
    ],
    "instructions_checked": true
   },
@@ -6367,6 +6327,30 @@
    "instructions": [
     "Preparing for disruption must become part of day-to-day operations.",
     "The update also fixes numerous security holes in Screen Sharing, Remote Management and SMB that can be targeted remotely or from the local network, including a Remote Management bug that could allow a remote attacker to execute arbitrary code.",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "0bc09b42359c",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Ivanti Patches Two More Zero-Days Exploited in Connect Secure Attack Chain",
+   "link": "https://www.securityweek.com/ivanti-patches-two-more-zero-days-exploited-in-connect-secure-attack-chain/",
+   "published": "2026-11-02T07:57:49+00:00",
+   "summary": "CISA has added CVE-2026-111357 and CVE-2026-118527 to its KEV catalog after the Ivanti VPN flaws were chained in zero-day attacks. The post Ivanti Patches Two More Zero-Days Exploited in Connect Secure Attack Chain appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2024/02/Ivanti-Risks-Exploits.jpg",
+   "cves": [
+    "CVE-2026-111357",
+    "CVE-2026-118527"
+   ],
+   "first_seen": "2026-11-02T08:36:51.265712+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Ivanti added them on Thursday to its October 13 advisory describing CVE-2026-104935, an authentication bypass in the VPN product.",
+    "Organizations that installed them in response to the initial advisory will need to upgrade again. “The latest release addresses all vulnerabilities which were chained and exploited in the wild,” Ivanti said.",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
