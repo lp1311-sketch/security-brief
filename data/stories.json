@@ -3214,6 +3214,25 @@
    "instructions_checked": true
   },
   {
+   "id": "e9672a016fa4",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "FBI blames N. Korea’s TraderTraitor for Binance theft, urges crypto industry to block transactions",
+   "link": "https://therecord.media/fbi-blames-tradertraitor-for-binance-hack",
+   "published": "2026-11-02T00:00:00+00:00",
+   "summary": "The FBI and U.S. Secret Service alleged this weekend that North Korean hackers were responsible for stealing more than $6.3 billion from cryptocurrency platform Binance last week.",
+   "image": "https://cms.therecord.media/uploads/File_photo_of_North_Korean_flags_Image_John_Pavelka_via_Wikimedia_Commons_CC_BY_2_0_96fc9d25cb.png",
+   "cves": [],
+   "first_seen": "2026-11-02T09:40:04.459394+00:00",
+   "image_checked": true,
+   "instructions": [
+    "The FBI, Secret Service and IRS specifically called out exchanges, decentralized finance companies and several other technical operators within the cryptocurrency industry — urging them to “block transactions with or derived from addresses TraderTraitor actors are using to launder these stolen assets.”"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "12185b0bd2c8",
    "source": "therecord",
    "source_name": "The Record",
@@ -4663,6 +4682,28 @@
    "instructions_checked": true
   },
   {
+   "id": "357136bfe66d",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Ivanti patches two more Connect Secure zero-days chained in attacks",
+   "link": "https://www.bleepingcomputer.com/news/security/ivanti-patches-two-more-connect-secure-zero-days-chained-in-attacks/",
+   "published": "2026-11-02T09:33:26+00:00",
+   "summary": "Ivanti released security updates to patch two more Connect Secure (ICS) remote access gateway flaws that have been chained in zero-day attacks since at least October 1.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/02/Ivanti-headpic.jpg",
+   "cves": [],
+   "first_seen": "2026-11-02T09:40:04.459394+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Ivanti released security updates to patch two more Connect Secure (ICS) remote access gateway flaws that have been chained in zero-day attacks since at least October 1.",
+    "Threat actors exploited these two flaws (tracked as CVE-2026-111357 and CVE-2026-118527 ) alongside an authentication bypass vulnerability (CVE-2026-104935), which Ivanti patched last month to remove the main attack surface.",
+    "When it released patches for CVE-2026-104935 in October, Ivanti urged admins to upgrade as soon as possible since it was aware of \"limited exploitation in the wild.\"",
+    "On Tuesday, the US Cybersecurity and Infrastructure Security Agency (CISA) added CVE-2026-104935 to its catalog of actively exploited vulnerabilities and ordered federal agencies to patch their systems by Friday,"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "17e71a11c730",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4803,31 +4844,6 @@
     "Northflank continues to advise customers to rotate secrets stored in workloads, secret groups, and global secrets, and to disable public access to add-ons where enabled.",
     "Cloud application hosting platform Northflank is warning customers to rotate all credentials and secrets stored on its platform after a security breach led to unauthorized use of customers' AI API keys.",
     "The company disclosed a security incident on October 30, warning customers to immediately rotate their environment variables and API keys after receiving a threat alert from cloud security company Wiz."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "fbd9cb2b4455",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "PHP2Shell security flaws now sucessfully exploited in the wild",
-   "link": "https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/",
-   "published": "2026-10-26T09:19:57+00:00",
-   "summary": "Two critical RCE vulnerabilities (CVE-2026-109618 and CVE-2026-109619), collectively tracked as PHP2Shell, have been successfully exploited in the wild.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/26/PHP-headpic.jpg",
-   "cves": [
-    "CVE-2026-109618",
-    "CVE-2026-109619"
-   ],
-   "first_seen": "2026-10-26T10:08:32.198476+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Until a security patch is released, the PHP devs advised admins to set session.upload_progress.enabled=0 to block potential attacks, a mitigation already recommended before patches for the PHP2Shell security updates were released.",
-    "While details on the PHP2Shell security flaws (including the CVE IDs and mitigation advice provided to some critical infrastructure providers) leaked online and some proof-of-concept (PoC) exploits were published before the patches went live, the PHP security team said that none were functional.",
-    "On Friday, the PHP security team also shared mitigation measures for a new RCE vulnerability (tracked as CVE-2026-115560) that has no patch and can only be exploited when targeting systems \"with an unusual combination of configuration and application code.\"",
-    "PHP shares mitigation for new RCE vulnerability with no patch"
    ],
    "instructions_checked": true
   },
@@ -6100,6 +6116,25 @@
    "instructions_checked": true
   },
   {
+   "id": "1befc30403b6",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "FBI Flags Over 600 Addresses Tied to North Korea’s Binance Heist",
+   "link": "https://www.securityweek.com/fbi-flags-over-600-addresses-tied-to-north-koreas-binance-heist/",
+   "published": "2026-11-02T08:40:36+00:00",
+   "summary": "The FBI has officially pinned the $6 billion Binance hack on North Korea’s TraderTraitor as the attackers launder the stolen crypto. The post FBI Flags Over 600 Addresses Tied to North Korea’s Binance Heist appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/10/Binance-hacked.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-02T09:40:04.459394+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "3556a8b02424",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -6422,26 +6457,6 @@
    "instructions_checked": true
   },
   {
-   "id": "4c6c7b2ea9da",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Mythos 5 Ignored Real-World Harm in July Attack",
-   "link": "https://www.securityweek.com/mythos-5-ignored-real-world-harm-in-july-attack/",
-   "published": "2026-10-26T09:10:03+00:00",
-   "summary": "The model engaged in severe overreach and dishonesty, creating fake identities and submitting malicious code on GitHub. The post Mythos 5 Ignored Real-World Harm in July Attack appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/05/Claude-Mythos.jpeg",
-   "cves": [],
-   "first_seen": "2026-10-26T10:08:32.198476+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Preparing for disruption must become part of day-to-day operations.",
-    "Browsers Block eMudhra Intermediate CAs Over Recoverable Private Keys"
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "085573e20d77",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -6581,6 +6596,27 @@
    "image_checked": true,
    "instructions": [
     "Preparing for disruption must become part of day-to-day operations."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "ff9c9693b43d",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Polymarket Returns $3.9 Million to Traders as DebugBear Cites DNS Hijack",
+   "link": "https://www.securityweek.com/polymarket-returns-3-9-million-to-traders-as-debugbear-cites-dns-hijack/",
+   "published": "2026-11-02T09:33:15+00:00",
+   "summary": "DebugBear says its DNS records were compromised via its domain registrar, and early findings show a single customer was targeted. The post Polymarket Returns $3.9 Million to Traders as DebugBear Cites DNS Hijack appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/06/Polymarket.webp",
+   "cves": [],
+   "first_seen": "2026-11-02T09:40:04.459394+00:00",
+   "image_checked": true,
+   "instructions": [
+    "In an October 30 update, Polymarket said 726 wallets were affected.",
+    "DebugBear, whose real user monitoring (RUM) script lets websites measure page load performance for visitors, initially told customers to remove the embed code and has now shared its initial findings . “Our DNS server records were compromised through our domain registrar.",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
   },

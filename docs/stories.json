@@ -1,6 +1,16 @@
 {
  "stories": [
   {
+   "id": "357136bfe66d",
+   "title": "Ivanti patches two more Connect Secure zero-days chained in attacks",
+   "summary": "Ivanti released security updates to patch two more Connect Secure (ICS) remote access gateway flaws that have been chained in zero-day attacks since at least October 1.",
+   "priority": "Critical",
+   "category": "Patch Radar",
+   "date": "02 Nov 2026, 09:33 UTC",
+   "sources": "BleepingComputer, SecurityWeek, The Hacker News",
+   "url": "story/357136bfe66d.html"
+  },
+  {
    "id": "4749795f0d08",
    "title": "HTTP2Shell: Brotli-Sicherheitslücke CVE-2026-111497 über Node.js hinaus prüfen",
    "summary": "Seit einigen Tagen ist ja eine Schwachstelle (CVE-2026-111497) im Brotli-Decoder von Node.js bekannt geworden. Es gibt zwar Updates, aber inzwischen ist klar, dass die…",
@@ -11,16 +21,6 @@
    "url": "story/4749795f0d08.html"
   },
   {
-   "id": "0bc09b42359c",
-   "title": "Ivanti Patches Two More Zero-Days Exploited in Connect Secure Attack Chain",
-   "summary": "CISA has added CVE-2026-111357 and CVE-2026-118527 to its KEV catalog after the Ivanti VPN flaws were chained in zero-day attacks. The post Ivanti Patches Two More…",
-   "priority": "Critical",
-   "category": "Patch Radar",
-   "date": "02 Nov 2026, 07:57 UTC",
-   "sources": "SecurityWeek, The Hacker News",
-   "url": "story/0bc09b42359c.html"
-  },
-  {
    "id": "4bea3ce24866",
    "title": "Max-Severity GitLab Vulnerability Exploited Against Alpine Linux",
    "summary": "Tracked as CVE-2026-97229, the bug allows unauthenticated attackers to execute arbitrary code on the server. The post Max-Severity GitLab Vulnerability Exploited Against…",
@@ -29,16 +29,6 @@
    "date": "30 Oct 2026, 09:32 UTC",
    "sources": "SecurityWeek, The Hacker News",
    "url": "story/4bea3ce24866.html"
-  },
-  {
-   "id": "968629f0ead3",
-   "title": "CISA Confirms Active Exploitation of Two PHP2Shell Flaws Enabling Remote Code Execution",
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday confirmed active exploitation of the recently patched PHP2Shell flaws by adding them to its…",
-   "priority": "Critical",
-   "category": "Patch Radar",
-   "date": "27 Oct 2026, 04:37 UTC",
-   "sources": "The Hacker News, BleepingComputer",
-   "url": "story/968629f0ead3.html"
   },
   {
    "id": "409f0b0486b7",
@@ -121,16 +111,6 @@
    "url": "story/ef44306c2f44.html"
   },
   {
-   "id": "c1c20131973a",
-   "title": "CVSS 10.0 LXD, MicroCloud Flaw Lets Attackers Impersonate Trusted Clients Without a Private Key",
-   "summary": "A critical flaw in Canonical's LXD and MicroCloud let an attacker log in as a trusted client without holding that client's private key. To do it, the attacker had to…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "01 Nov 2026, 08:51 UTC",
-   "sources": "The Hacker News",
-   "url": "story/c1c20131973a.html"
-  },
-  {
    "id": "ba55b05e53ea",
    "title": "Northflank security breach leads to abuse of customers' AI API keys",
    "summary": "Cloud application hosting platform Northflank is warning customers to rotate all credentials and secrets stored on its platform after a security breach led to…",
@@ -161,6 +141,16 @@
    "url": "story/5246b1272668.html"
   },
   {
+   "id": "968629f0ead3",
+   "title": "CISA Confirms Active Exploitation of Two PHP2Shell Flaws Enabling Remote Code Execution",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday confirmed active exploitation of the recently patched PHP2Shell flaws by adding them to its…",
+   "priority": "Critical",
+   "category": "Patch Radar",
+   "date": "27 Oct 2026, 04:37 UTC",
+   "sources": "The Hacker News",
+   "url": "story/968629f0ead3.html"
+  },
+  {
    "id": "af6ffe74845e",
    "title": "Alpine Linux rebuilds GitLab after attempted RCE attack",
    "summary": "Hackers attempted to exploit a critical GitLab vulnerability in Alpine Linux's development infrastructure on October 20-21, prompting the open-source project to rebuild…",
@@ -169,6 +159,16 @@
    "date": "01 Nov 2026, 15:11 UTC",
    "sources": "BleepingComputer",
    "url": "story/af6ffe74845e.html"
+  },
+  {
+   "id": "c1c20131973a",
+   "title": "CVSS 10.0 LXD, MicroCloud Flaw Lets Attackers Impersonate Trusted Clients Without a Private Key",
+   "summary": "A critical flaw in Canonical's LXD and MicroCloud let an attacker log in as a trusted client without holding that client's private key. To do it, the attacker had to…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "01 Nov 2026, 08:51 UTC",
+   "sources": "The Hacker News",
+   "url": "story/c1c20131973a.html"
   },
   {
    "id": "9ef64861bf1d",
@@ -509,6 +509,36 @@
    "date": "26 Oct 2026, 14:00 UTC",
    "sources": "Microsoft Security Response Center",
    "url": "story/173f37e989f0.html"
+  },
+  {
+   "id": "ff9c9693b43d",
+   "title": "Polymarket Returns $3.9 Million to Traders as DebugBear Cites DNS Hijack",
+   "summary": "DebugBear says its DNS records were compromised via its domain registrar, and early findings show a single customer was targeted. The post Polymarket Returns $3.9…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "02 Nov 2026, 09:33 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/ff9c9693b43d.html"
+  },
+  {
+   "id": "1befc30403b6",
+   "title": "FBI Flags Over 600 Addresses Tied to North Korea’s Binance Heist",
+   "summary": "The FBI has officially pinned the $6 billion Binance hack on North Korea’s TraderTraitor as the attackers launder the stolen crypto. The post FBI Flags Over 600…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "02 Nov 2026, 08:40 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/1befc30403b6.html"
+  },
+  {
+   "id": "e9672a016fa4",
+   "title": "FBI blames N. Korea’s TraderTraitor for Binance theft, urges crypto industry to block transactions",
+   "summary": "The FBI and U.S. Secret Service alleged this weekend that North Korean hackers were responsible for stealing more than $6.3 billion from cryptocurrency platform Binance…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "02 Nov 2026, 00:00 UTC",
+   "sources": "The Record",
+   "url": "story/e9672a016fa4.html"
   },
   {
    "id": "d15dc155427a",
@@ -2649,16 +2679,6 @@
    "date": "26 Oct 2026, 09:54 UTC",
    "sources": "The Hacker News",
    "url": "story/275e6f3b55af.html"
-  },
-  {
-   "id": "4c6c7b2ea9da",
-   "title": "Mythos 5 Ignored Real-World Harm in July Attack",
-   "summary": "The model engaged in severe overreach and dishonesty, creating fake identities and submitting malicious code on GitHub. The post Mythos 5 Ignored Real-World Harm in July…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "26 Oct 2026, 09:10 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/4c6c7b2ea9da.html"
   }
  ]
 }
