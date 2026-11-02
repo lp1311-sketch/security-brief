@@ -3507,7 +3507,7 @@
    "title": "Polymarket pledges to give $3.9 million back to victims after site compromise",
    "link": "https://therecord.media/polymarket-returning-funds-to-customers-after-site-compromise",
    "published": "2026-11-02T17:05:20+00:00",
-   "summary": "In a post-mortem on an October 29 incident, prediction market Polymarket said it will pay people back what they lost, as well as compensate them for the site's downtime.",
+   "summary": "In a post-mortem about an October 29 incident, prediction market Polymarket said it will pay people back what they lost, as well as compensate them for the site's downtime.",
    "image": "https://cms.therecord.media/uploads/polymarket_3d06dbe254.jpg",
    "cves": [],
    "first_seen": "2026-11-02T17:56:29.003759+00:00",
@@ -4233,28 +4233,6 @@
    "instructions_checked": true
   },
   {
-   "id": "d84dc99ca60f",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "DreamHost forces password resets in ongoing \"incident\"",
-   "link": "https://www.bleepingcomputer.com/news/security/dreamhost-forces-email-ftp-sftp-password-resets-in-ongoing-incident/",
-   "published": "2026-10-26T19:26:20+00:00",
-   "summary": "DreamHost has forced password resets for email and FTP/SFTP users following an incident that disrupted connections to the File Manager interface.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/26/dreamhost.jpg",
-   "cves": [],
-   "first_seen": "2026-10-26T19:42:22.695987+00:00",
-   "image_checked": true,
-   "instructions": [
-    "In notifications to impacted account holders , the company advises users to also review each email address for forwarding rules and remove any forwarding destination they do not recognize.",
-    "Users are also recommended to change reused passwords elsewhere if their old DreamHost password was reused on other platforms/services.",
-    "PHP shares mitigation for new RCE vulnerability with no patch",
-    "The latest update from the web hosting provider notes that all affected account owners have received recovery instructions."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "eaaaa83e33fa",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4354,6 +4332,26 @@
     "\"The Federal Bureau of Investigation (FBI) is releasing information advising the Democratic People's Republic of Korea (North Korea) was responsible for the theft of more than $6 billion USD in virtual assets from cryptocurrency exchange Binance, on or about October 29, 2026,\" the FBI said .",
     "Secret Service, and IRS Criminal Investigation are now asking cryptocurrency exchanges, blockchain operators, and other virtual asset service providers to block transactions linked to addresses the hackers used to launder stolen funds.",
     "The exchange says it has now covered approximately 95% of the impacted amount, up from 90% in its previous update."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "b9a8fe94cb9b",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Fintech platform Sageworks taken offline after suspected cyberattack",
+   "link": "https://www.bleepingcomputer.com/news/security/fintech-platform-sageworks-taken-offline-after-suspected-cyberattack/",
+   "published": "2026-11-02T19:00:45+00:00",
+   "summary": "Financial technology company Abrigo has restored its Sageworks risk management application, except for borrower-facing capabilities, following an outage triggered by \"irregular activity\" in its environment.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/02/abrigo.jpg",
+   "cves": [],
+   "first_seen": "2026-11-02T19:53:08.309357+00:00",
+   "image_checked": true,
+   "instructions": [
+    "In its latest update today, the company said that most of the Sageworks functionality had been restored, with the exception of borrower-facing features.",
+    "Although a data breach has not been confirmed, some cybersecurity researchers advised banks and credit unions using Abrigo's solutions to rotate the API keys for the Sageworks platform."
    ],
    "instructions_checked": true
   },
