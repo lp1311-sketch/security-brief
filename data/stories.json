@@ -2310,27 +2310,6 @@
    "instructions_checked": true
   },
   {
-   "id": "961277245249",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Hackers Infect 953 Online Stores With Scanner-Evading JavaScript, Mostly on Magento",
-   "link": "https://thehackernews.com/2026/10/hackers-infect-953-online-stores-with.html",
-   "published": "2026-10-26T18:12:22+00:00",
-   "summary": "An unknown threat actor has infected 953 online stores, most of them running Magento, as part of a long-running campaign active since July 2025. According to Dutch e-commerce security company Sansec, the activity is designed to add a small piece of code to the store's pages that, when visited by unsuspecting users…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdh3aURB79okzf_mo3sPzJy6vKRiWdPc4gyrE93xmMW-MRgYHrOuJ5yya0TpovJvi-2ol3GubNo5ir76ui-2jBo1jUvOd45Z8f98YeGVAECGcwgpRetuyxFxGWY8bBOB4a0G1H5YiYoYJ3Kd8YauFJGUIVTKYVHsLrvDElRe8sOuD4Y8CKMrAtCA6eJazr/s1600/m-code.jpg",
-   "cves": [],
-   "first_seen": "2026-10-26T19:42:22.695987+00:00",
-   "instructions": [
-    "Site owners are advised to audit their sites for suspicious accounts and unexpected CMS blocks in the cms_block and cms_page tables.",
-    "It's also advised to keep the sites up-to-date and enforce strong passwords.",
-    "The ultimate objective of the attack is to launch the attack-controlled code when the CMS block is rendered after a shopper opens the compromised website.",
-    "While Sansec does not disclose whether the threat actor modifies an existing CMS block (such as header, footer, or promotional banner) or creates a new block, the attacker can adopt either of the approaches to run the loader."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "29d08fa787d9",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2987,6 +2966,27 @@
    "first_seen": "2026-11-02T07:23:10.547789+00:00",
    "instructions": [
     "\"The bundle is the ONLY permissible source of facts; your training knowledge must never supply a fact about the subject,\" reads a line from the prompt."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "65afadf0cbc2",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "⚡ Weekly Recap: Critical CVEs, Linux DDoS Botnet, Device-Code Phishing, Android Spyware and More",
+   "link": "https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html",
+   "published": "2026-11-02T16:57:56+00:00",
+   "summary": "Some attacks this week didn't need much of a trick. A fake support call, a trusted extension, a shared link, or a device with no password. Small things that people barely think about. Yet each was enough to cause serious trouble. Then there were the bigger messes. Billions stolen, hidden networks of hacked devices…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj03NmPVHpoxRjXKDh7s6v2Dav4D-MCSLBTLalEb9ScH_lLc4yQJWOW8QfTIBePp7Pcgo1qrq6MYuQvNeyb0LCvWO4E4e7BLQKEj-g3Z2LImj4CXV-UUGfVd-vVL0NGtxMMn50klhOLlyI3p6DXhIFf-LkMsST7LK4kh3gIjqlvBwOUgbKTq8-hRdvmfz46/s1600/rcap.jpg",
+   "cves": [],
+   "first_seen": "2026-11-02T18:55:26.470666+00:00",
+   "instructions": [
+    "For equipment already in the home, knowing whether updates are still available is part of knowing whether it should stay connected.",
+    "We are currently unable to receive emails sent to our domain,\" DebugBear said in an update shared on October 31, 2026.",
+    "Official Claude Code Extension on Cursor Marketplace with SSH Backdoor — Two versions of the Claude Code extension distributed through Cursor Marketplace were tampered with to install a persistent SSH backdoor on affected systems.",
+    "Victims install repackaged copies of legitimate applications disturbed through sideloading or social engineering flows."
    ],
    "instructions_checked": true
   },
@@ -4398,6 +4398,26 @@
    "instructions_checked": true
   },
   {
+   "id": "f8e64d371b0e",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Google disrupts million-device XCPE Android malware botnet, bans TV box maker",
+   "link": "https://www.bleepingcomputer.com/news/security/google-disrupts-million-device-xcpe-android-malware-botnet-bans-tv-box-maker/",
+   "published": "2026-11-02T18:16:34+00:00",
+   "summary": "Google and industry partners have dismantled the XCPE malware botnet consisting of more than 1.3 million Android TV streaming TV boxes that Google says its manufacturer intentionally infected with malware to generate revenue through cybercrime activities.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2024/09/12/android-tv-malware.jpg",
+   "cves": [],
+   "first_seen": "2026-11-02T18:55:26.470666+00:00",
+   "image_checked": true,
+   "instructions": [
+    "As a result, users would need to install clean firmware to remove the infection or disconnect the affected device from the internet to prevent further malicious activity.",
+    "BleepingComputer has contacted Google with additional questions about the botnet and will update the story if we get a response."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "cab04cab3c66",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -5207,22 +5227,6 @@
    "instructions_checked": true
   },
   {
-   "id": "e6cb24183d2e",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "'Gheist' Weaponizes GitHub Tokens to Steal Cloud Secrets",
-   "link": "https://www.darkreading.com/cyberattacks-data-breaches/gheist-stolen-github-tokens-cloud-secrets",
-   "published": "2026-10-26T18:01:40+00:00",
-   "summary": "An ongoing supply chain attack is harvesting credentials and sensitive data from thousands of developer repositories.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blta53885fb79cd03e3/6706dccd5ae89acdc961cf2d/github_Tada_Images_shutterstock.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-10-26T18:51:23.813916+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "6c5cf422a94b",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -5244,7 +5248,7 @@
    "source_name": "Dark Reading",
    "official": false,
    "source_type": "news",
-   "title": "PapRAT Cyber Espionage Campaign Leaves a 'Bitter' Taste in South Asia",
+   "title": "PapRAT Cyber-Espionage Campaign Leaves a 'Bitter' Taste in South Asia",
    "link": "https://www.darkreading.com/cyberattacks-data-breaches/paprat-cyberespionage-campaign-bitter-south-asia",
    "published": "2026-11-02T14:00:00+00:00",
    "summary": "Organizations in the region face growing cyberattacks from the known India-linked threat group, which leverages legitimate Windows functionality in three distinct attack chains.",
