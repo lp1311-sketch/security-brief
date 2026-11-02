@@ -232,6 +232,29 @@
    "instructions_checked": true
   },
   {
+   "id": "2e54985e0758",
+   "source": "google-threat-intel",
+   "source_name": "Google Threat Intelligence",
+   "official": false,
+   "source_type": "vendor_blog",
+   "title": "The Rise of LLMJacking: How Threat Actors Monetize Compromised Cloud and Model Resources",
+   "link": "https://cloud.google.com/blog/topics/threat-intelligence/llmjacking-monetizing-compromised-cloud-models/",
+   "published": "2026-11-02T14:00:00+00:00",
+   "summary": "Written by: Christopher Romano, Codi Starks, Garrett Mahoney, John Wolfram, Josh Murchie, K Singh, Mathew Potaczek, Mike Lombardi, Rik Dolfing Introduction Mandiant responded to multiple incidents in 2026 in which threat actors hijacked enterprise access to Large Language Models (LLMs), a tactic known as \"LLMJacking.\"…",
+   "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/Figure_1_Usage_chart_showing_LLMJacking_ge.max-1000x1000_IcanCpV.png",
+   "cves": [
+    "CVE-2026-40217"
+   ],
+   "first_seen": "2026-11-02T17:02:01.019874+00:00",
+   "instructions": [
+    "Defenders should prioritize detection of modifications to LLM accounts and services and treat any unauthorized enablement as a critical security event.",
+    "To prevent attackers from abusing Cloud LLM services, defenders should prioritize Identity and Access Management (IAM) and supply chain security, two of the most common pathways for gaining access to and abusing Cloud services.",
+    "Any calls to disable logging by non-IaC (Infrastructure as Code) principals should be treated as high severity.",
+    "You must manually configure your IAM audit policies to track these."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "045ebd27a612",
    "source": "google-threat-intel",
    "source_name": "Google Threat Intelligence",
@@ -2871,6 +2894,27 @@
    "instructions_checked": true
   },
   {
+   "id": "948be6f589a7",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Google Disrupts 1.3 Million-Device Android Botnet, Says TV Box Maker Sold Criminal Access",
+   "link": "https://thehackernews.com/2026/11/google-disrupts-13-million-device.html",
+   "published": "2026-11-02T15:50:26+00:00",
+   "summary": "A botnet of more than 1.3 million Android devices, mostly TV set-top boxes, lost control of its servers in late October in a takedown led by Google. Google says it is highly confident that device maker Videostrong intentionally put a backdoor in the boxes and sold access to criminals. They used the boxes for ad fraud…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkbU6vLZjF0nlz7vqN6UVf3kN1IcdUfIpAmVWlh2II4gGbMMmSuiE1S8HLzP4JV-ImeCa64hU-cEaa-yGXWqUO_XHOurKtEw61DFvjGOJhM7gHpRPpegBcCFYrXkd59wGX-PoV6zm7z7uq6PpXjc4GLhDRzcinR5IIjcOVZEVl8FMQ0v0Dt3CV9sRxZNk/s1600/android-tv-botnet.jpg",
+   "cves": [],
+   "first_seen": "2026-11-02T17:02:01.019874+00:00",
+   "instructions": [
+    "Plume recommends a full factory reset, because the modules may have installed more backdoors, but it does not say whether a reset removes x.cpe itself.",
+    "TrendAI advises companies with remote staff to treat unmanaged consumer devices on home networks as part of their attack surface, and to keep corporate access behind managed devices.",
+    "The backdoor is still on the boxes, and owners cannot remove it themselves.",
+    "To install software silently, it first turns off the app checks in Google Play Protect, Android's built-in security feature."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "87a25e1b557b",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -3103,23 +3147,6 @@
    "instructions_checked": true
   },
   {
-   "id": "3e53d355cefd",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Dutch police extradite Chinese national accused of laundering Cambodian investment scam funds",
-   "link": "https://therecord.media/dutch-police-extradite-chinese-national-money-laundering-scams",
-   "published": "2026-10-26T16:37:00+00:00",
-   "summary": "44-year-old Zheng Zhao was allegedly a key money-launderer working with a group of scammers who called U.S.-based victims and urged them to invest in fictitious businesses.",
-   "image": "https://cms.therecord.media/uploads/debt_money_wallet_09a534460e.png",
-   "cves": [],
-   "first_seen": "2026-10-26T16:46:28.332887+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "e9672a016fa4",
    "source": "therecord",
    "source_name": "The Record",
@@ -3251,6 +3278,23 @@
     "The package contained legitimate software components, including files belonging to the third-party update management tool Patch My PC and programs digitally signed by Microsoft.",
     "They also could not confirm how the malware reached the computer or whether the software update infrastructure itself had been compromised."
    ],
+   "instructions_checked": true
+  },
+  {
+   "id": "acbef9b6b6f9",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Russia's statistics agency confirms cyberattack claimed by Belarusian and Ukrainian hackers",
+   "link": "https://therecord.media/hackers-ukraine-belarus-russia",
+   "published": "2026-11-02T16:30:00+00:00",
+   "summary": "An alliance of Belarusian and pro-Ukrainian hackers claimed to have taken out Russia's federal statistics agency, Rosstat, and stolen vast amounts of sensitive government data in a cyberattack.",
+   "image": "https://cms.therecord.media/uploads/rosstat_cyber_partisans_9ce9dfb0f4.jpg",
+   "cves": [],
+   "first_seen": "2026-11-02T17:02:01.019874+00:00",
+   "image_checked": true,
+   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -3608,27 +3652,6 @@
    "first_seen": "2026-10-27T15:29:29.929217+00:00",
    "image_checked": true,
    "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "5d6b2a0bb6b0",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Ukraine disputes Musk's claims of Starlink misuse as military connectivity restored",
-   "link": "https://therecord.media/ukraine-disputes-musk-claims-of-starlink-misuse",
-   "published": "2026-10-26T16:40:00+00:00",
-   "summary": "Ukrainian Defense Minister Yevhen Khmara said Saturday that Starlink and Starshield connectivity had been restored.",
-   "image": "https://cms.therecord.media/uploads/starlink_1_e61cf45fb4.jpg",
-   "cves": [],
-   "first_seen": "2026-10-26T16:46:28.332887+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Ukrainian officials and military advisers disputed his claim, arguing that technical restrictions made it impossible to use commercial Starlink terminals for the drone missions Musk described.",
-    "Serhii Sternenko, a Ukrainian activist who previously advised the country's defense minister, said a registration system introduced in February required all satellite terminals operating on moving platforms to be connected to the military Starshield service.",
-    "Ukrainian presidential adviser Serhii Beskrestnov, known as \"Flash,\" also rejected Musk's allegations, saying commercial Starlink terminals operating in Ukraine were limited to speeds of 70 to 90 kilometers per hour and did not work on Russian territory."
-   ],
    "instructions_checked": true
   },
   {
@@ -4048,7 +4071,7 @@
    "source_name": "BleepingComputer",
    "official": false,
    "source_type": "news",
-   "title": "BTCPay Server warns of hot wallet thefts targeting outdated instances",
+   "title": "BTCPay Server warns of hot wallet crypto thefts on outdated instances",
    "link": "https://www.bleepingcomputer.com/news/security/btcpay-server-warns-of-hot-wallet-thefts-targeting-outdated-instances/",
    "published": "2026-11-02T15:03:07+00:00",
    "summary": "The maintainer of BTCPay Server, an open-source cryptocurrency payment processor, has urged users to install the latest version as hackers have been draining \"hot wallets\" on instances running older versions.",
@@ -4187,28 +4210,6 @@
     "Cisco advised customers to patch vulnerable firewalls after its Product Security Incident Response Team (PSIRT) discovered evidence that the flaw was being exploited in the wild earlier this month.",
     "While Cisco provided no workarounds that address this security issue, admins who can't immediately patch CVE-2026-76418 can mitigate it by disabling secondary authentication on the default DefaultWEBVPNGroup tunnel group or on any user-configured tunnel group list.",
     "Cisco released security updates to patch a denial-of-service zero-day in Adaptive Security Appliance (ASA) and Threat Defense (FTD) software that attackers are exploiting to remotely crash vulnerable firewall devices."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "5e34561ea984",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Critical 'HTTP2Shell' Brotli vulnerability triggers emergency patches",
-   "link": "https://www.bleepingcomputer.com/news/security/critical-http2shell-brotli-vulnerability-triggers-emergency-patches/",
-   "published": "2026-10-26T16:27:57+00:00",
-   "summary": "A critical flaw dubbed 'HTTP2Shell' in Brotli, the C decoder library built into Node.js, could allow attackers to corrupt memory and access sensitive data.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/26/broccoli.jpg",
-   "cves": [],
-   "first_seen": "2026-10-26T16:46:28.332887+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Nevertheless, users should prioritize applying the available security updates.",
-    "After updating, administrators must restart affected processes, and affected container images must be rebuilt and redeployed.",
-    "On Sunday, Microsoft pushed an emergency security update to address the issue in .NET, warning that successful exploitation allows privilege escalation on systems with a vulnerable .NET version.",
-    "“An invalid block switch was reported as a temporary need for more input instead of a permanent format error, so the streaming decoder kept appending input bytes to an eight-byte internal buffer,” Node.js explains in an advisory."
    ],
    "instructions_checked": true
   },
@@ -5267,10 +5268,10 @@
    "source_name": "Dark Reading",
    "official": false,
    "source_type": "news",
-   "title": "PapRAT Cyber Espionage Campaign Leaves a 'BITTER' Taste in South Asia",
+   "title": "PapRAT Cyber Espionage Campaign Leaves a 'Bitter' Taste in South Asia",
    "link": "https://www.darkreading.com/cyberattacks-data-breaches/paprat-cyberespionage-campaign-bitter-south-asia",
    "published": "2026-11-02T14:00:00+00:00",
-   "summary": "Organizations in the region face attacks from the known India-linked threat group, which leverages legitimate Windows functionality in three distinct attack chains.",
+   "summary": "Organizations in the region face growing cyberattacks from the known India-linked threat group, which leverages legitimate Windows functionality in three distinct attack chains.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt5084e1dd5e7db648/6ae882291b7efb363cec70fb/rat-David_Chapman-Alamy.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-02T14:57:52.156121+00:00",
