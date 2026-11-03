@@ -3499,23 +3499,6 @@
    "instructions_checked": true
   },
   {
-   "id": "37ead5afc462",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Hackers repeatedly breached suppliers holding UK police data, watchdog finds",
-   "link": "https://therecord.media/uk-police-data-breached-from-suppliers-watchdog-report",
-   "published": "2026-10-27T15:07:00+00:00",
-   "summary": "His Majesty’s Inspectorate of Constabulary and Fire & Rescue Services says British police data has been breach several times this decade through third-party IT suppliers.",
-   "image": "https://cms.therecord.media/uploads/clovis_wood_q_Y_Xum_Q_Gmwa4_unsplash_519aedc326.jpg",
-   "cves": [],
-   "first_seen": "2026-10-27T15:29:29.929217+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "7bca49cdf4ec",
    "source": "therecord",
    "source_name": "The Record",
@@ -3530,25 +3513,6 @@
    "first_seen": "2026-11-02T14:57:52.156121+00:00",
    "image_checked": true,
    "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "319765385a55",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "University of New Mexico hospital diverts ambulances after cyberattack",
-   "link": "https://therecord.media/university-of-new-mexico-hospital-diverts-cyber-incident",
-   "published": "2026-10-27T14:57:00+00:00",
-   "summary": "For about two hours on Monday, the organization diverted ambulances to health systems in Albuquerque and Santa Fe. They were forced to suspend outpatient surgeries and appointments for the remainder of the day.",
-   "image": "https://cms.therecord.media/uploads/Richardson_Pavilion_University_of_New_Mexico_1_775c9b82cd.jpg",
-   "cves": [],
-   "first_seen": "2026-10-27T15:29:29.929217+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Local news outlets reported that employees got an alert on their phones notifying them of the cyberattack and instructing them to turn off and unplug all desktops."
-   ],
    "instructions_checked": true
   },
   {
@@ -3865,6 +3829,27 @@
     "A later upgrade to 19.3.6 also failed to close the flaw because the fix required a patch to Ruby, which GitLab bundled with its official packages but Alpine’s custom container image did not include.",
     "Alpine advises users to reset their GitLab passwords and pull the alpinelinux/gitlab:19.3.6 image published on October 27, which contains Ruby 3.3.13 and addresses CVE-2026-97229.",
     "Hackers attempted to exploit a critical GitLab vulnerability in Alpine Linux's development infrastructure on October 20–21, prompting the open-source project to rebuild its GitLab server and reset all passwords over concerns of a possible compromise."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "36b3d0baf9aa",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Barracuda warns of critical flaws allowing root access to devices",
+   "link": "https://www.bleepingcomputer.com/news/security/barracuda-warns-of-critical-flaws-allowing-root-access-to-devices/",
+   "published": "2026-11-03T15:06:16+00:00",
+   "summary": "Cybersecurity company Barracuda Networks warned customers to patch two vulnerabilities that can let attackers run commands with root privileges.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/03/Barracuda.jpg",
+   "cves": [],
+   "first_seen": "2026-11-03T15:12:33.092029+00:00",
+   "image_checked": true,
+   "instructions": [
+    "However, Barracuda said successful exploitation also requires access to the administrative interfaces of targeted devices and advised customers to use appropriate network access controls and restrict access to trusted internal networks to limit exposure.",
+    "Customers should review the affected products and remediation guidance [..], ensure their systems are running the latest firmware version, and have all security patches applied.\"",
+    "Cybersecurity company Barracuda Networks warned customers to patch two vulnerabilities that can let attackers run commands with root privileges."
    ],
    "instructions_checked": true
   },
@@ -4218,6 +4203,28 @@
     "Developers must still review each submission, reproduce the issue and assess its impact.",
     "By the end, you should have a record of your reasoning and a report you can improve.",
     "Microsoft urges Entra ID admins to migrate users to passkeys"
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "f6282e8c323a",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Gartner Predicts SOCs Will Have 50% More Engineers Than Analysts by 2028",
+   "link": "https://www.bleepingcomputer.com/news/security/gartner-predicts-socs-will-have-50-percent-more-engineers-than-analysts-by-2028/",
+   "published": "2026-11-03T15:00:10+00:00",
+   "summary": "Gartner predicts that security operations centers will have 50% more engineers than analysts by 2028 as AI agents take over routine alert handling. Prophet Security examines how AI is reshaping SOC roles, from analyst responsibilities and detection engineering to threat hunting and exposure management.",
+   "image": "https://www.bleepstatic.com/content/posts/2026/10/28/future-soc-roles-header.jpg",
+   "cves": [],
+   "first_seen": "2026-11-03T15:12:33.092029+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Gartner's recommendation for analysts is direct: \"Human analysts must transition from alert triage roles to end-to-end case ownership and effective response option communication.\" In practice, the agent investigates the alert, and the analyst owns what happens next.",
+    "Gartner's report addresses how L1 and L2 roles change and the training and staffing changes SOC leaders should make now.",
+    "The report tells SOC leaders to \"redefine detection engineering role descriptions and hiring requirements.\" The new descriptions should go beyond rule writing to include prompt design, workflow testing, and AI output validation.",
+    "The report's recommendations translate into decisions that are easier to make before an AI SOC rollout than after it:"
    ],
    "instructions_checked": true
   },
@@ -5809,6 +5816,27 @@
    "instructions_checked": true
   },
   {
+   "id": "b981c2f988c9",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "CrowdStrike Reportedly Paying $495 Million for AI Security Firms Fiddler, Dreadnode",
+   "link": "https://www.securityweek.com/crowdstrike-reportedly-paying-495-million-for-ai-security-firms-fiddler-dreadnode/",
+   "published": "2026-11-03T14:12:44+00:00",
+   "summary": "The acquisitions will add AI agent observability and automated AI security testing capabilities to the CrowdStrike Falcon platform. The post CrowdStrike Reportedly Paying $495 Million for AI Security Firms Fiddler, Dreadnode appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/02/MA-merger-acquisition.webp",
+   "cves": [],
+   "first_seen": "2026-11-03T15:12:33.092029+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Findings are ranked by severity, mapped to frameworks such as the OWASP Top 10 for LLMs, MITRE ATLAS and the NIST AI RMF, and fed to CrowdStrike’s Falcon Guardian AI detection and response product as policy recommendations.",
+    "Android’s November 2026 Updates Patch Over 200 Vulnerabilities",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "c0b0ac944847",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -5907,6 +5935,27 @@
     "According to Defiant, it is a race condition in WordPress’s Core update process that can be exploited without authentication.",
     "While an attacker does not need an account on the site to exploit the flaw, they do need “to hit a very narrow window while WordPress is unpacking a complete Core update,” Defiant says.",
     "Adobe, Veeam, Juniper Networks Patch Critical Vulnerabilities"
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "ed61802f64c7",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Frontline Education Data Breach Impacts Over 1.3 Million",
+   "link": "https://www.securityweek.com/frontline-education-data-breach-impacts-over-1-3-million/",
+   "published": "2026-11-03T14:32:38+00:00",
+   "summary": "Hackers exploited a flaw in third-party software and stole the personal information of school district staff and students. The post Frontline Education Data Breach Impacts Over 1.3 Million appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2024/08/data-breach.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-03T15:12:33.092029+00:00",
+   "image_checked": true,
+   "instructions": [
+    "SecurityWeek has emailed Frontline for additional information on the data breach and will update this article if the company responds.",
+    "Android’s November 2026 Updates Patch Over 200 Vulnerabilities",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
   },
