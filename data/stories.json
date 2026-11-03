@@ -3083,6 +3083,26 @@
    "instructions_checked": true
   },
   {
+   "id": "c12f1b8dac80",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "British businesses caught in Europe-wide supermarket fridge attacks",
+   "link": "https://therecord.media/british-businesses-caught-in-europe-wide-supermarket-fridge-attacks",
+   "published": "2026-11-03T17:43:00+00:00",
+   "summary": "Supermarket and grocery store refrigerator controls across Europe were hacked in the early hours of Monday in the second such wave of attacks in recent weeks — following a first wave in France — with unidentified perpetrators defrosting fridges and causing stock to spoil.",
+   "image": "https://cms.therecord.media/uploads/meat_40e30a68b3.jpg",
+   "cves": [],
+   "first_seen": "2026-11-03T18:11:53.246220+00:00",
+   "image_checked": true,
+   "instructions": [
+    "None of the affected members lost meat, he said, but the incident “must act as a reminder to all in the food industry, at whatever point in the supply chain they are, that their businesses may be seen by some as targets.”",
+    "All of the British suppliers were reportedly using vulnerable temperature controllers for which a firmware update had been available since August."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "342c74932bcc",
    "source": "therecord",
    "source_name": "The Record",
@@ -5080,7 +5100,7 @@
    "source_name": "Dark Reading",
    "official": false,
    "source_type": "news",
-   "title": "9 Cyber Awareness Tips That Actually Match Today’s Maze of Threats",
+   "title": "9 Cyber Awareness Tips That Actually Match Today's Maze of Threats",
    "link": "https://www.darkreading.com/cyber-risk/9-cyber-awareness-tips-todays-maze-threats",
    "published": "2026-11-03T15:38:20+00:00",
    "summary": "Practical guidance on safer search, stronger login security, better executive protection, and other habits that help reduce enterprise risk.",
@@ -5263,22 +5283,6 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt0dafcf0847efff9a/6ae24fff8ec8cff4371f87c5/rome-Sean_Gallup-GettyImages-623337092jpg.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-10-30T15:50:54.232772+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "a8008ad652a3",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "Beware the Slasher: AI Could Kill Off Cybersecurity Pros' Skills",
-   "link": "https://www.darkreading.com/cybersecurity-operations/ai-kill-off-cybersecurity-pros-skills",
-   "published": "2026-10-27T17:43:07+00:00",
-   "summary": "Nathan Hamiel outlines potential SecOps horror in the AI midst, as core technical capabilities go the way of reading an atlas or remembering phone numbers.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltc41ecdc8029e697f/6ae0df62008cb1fe5c9e9737/scream-Jesse_Grant-GettyImages-2261562479.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-10-27T18:21:24.372013+00:00",
    "instructions": [],
    "instructions_checked": true
   },
@@ -5550,6 +5554,48 @@
     "Microsoft Defender Vulnerability Management security recommendations",
     "Threat actors disproportionately target flaws that enable system takeover, particularly remote code execution, privilege escalation, and authentication bypass.",
     "For example, when a vulnerability can bypass authentication and directly enable remote code execution (RCE), we classify it as RCE."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "86c38c1e82c9",
+   "source": "msblog",
+   "source_name": "Microsoft Security Blog",
+   "official": false,
+   "source_type": "vendor_blog",
+   "title": "Fake-download campaign uses trojanized installers to deliver monetization payloads",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/03/fake-download-campaign-uses-trojanized-installers-deliver-monetization-payloads/",
+   "published": "2026-11-03T17:32:47+00:00",
+   "summary": "Microsoft Threat Intelligence has identified an evolving fake-download campaign targeting users searching for cracked commercial software, free games, activators, plugins, and unofficial utilities. The campaign uses trojanized Inno Setup-style installers to distribute multiple monetized software payloads, referred to…",
+   "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/11/image-4.webp",
+   "cves": [],
+   "first_seen": "2026-11-03T18:11:53.246220+00:00",
+   "instructions": [
+    "WorldProxyPoolAgent configured sdk-agent.exe to run at system startup with highest privileges; WorldProxyPoolWatchdog configured a hidden, noninteractive PowerShell watchdog script to run every five minutes; and WorldProxyPoolUpdater configured sdk-agent.updater.exe update to run hourly.",
+    "It also provides investigation context, protection guidance, relevant indicators, and recommended response actions.",
+    "Configure reputation-based protection to help block known malicious and untrusted applications and downloads.",
+    "Evaluate ASR rules, including rules that block executable files unless they meet prevalence, age, or trusted-list criteria."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "263a6ac2e13a",
+   "source": "msblog",
+   "source_name": "Microsoft Security Blog",
+   "official": false,
+   "source_type": "vendor_blog",
+   "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for AI Agent Management Platforms",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/03/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-ai-agent-management-platforms/",
+   "published": "2026-11-03T17:00:00+00:00",
+   "summary": "Microsoft has been named a Leader in the inaugural 2026 Gartner® Magic Quadrant™ for AI Agent Management Platforms. We believe this recognition reflects Microsoft’s approach to helping organizations manage, secure, and scale their AI investments through Microsoft Agent 365. Figure 1: Gartner, Magic Quadrant for AI…",
+   "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/11/MQ-scaled.webp",
+   "cves": [],
+   "first_seen": "2026-11-03T18:11:53.246220+00:00",
+   "instructions": [
+    "When we introduced Agent 365, we started with a simple concept: agents should be managed with the same rigor you already apply to users, apps, and devices, using the infrastructure and protections that already run your business.",
+    "This enables organizations to apply established identity and access policies to both people and agents.",
+    "Gartner does not endorse any company, vendor, product or service depicted in its publications, and does not advise technology users to select only those vendors with the highest ratings or other designation.",
+    "Gartner publications consist of the opinions of Gartner’s business and technology insights organization and should not be construed as statements of fact."
    ],
    "instructions_checked": true
   },

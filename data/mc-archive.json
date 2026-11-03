@@ -1,6 +1,125 @@
 {
  "items": [
   {
+   "id": "4abca9069440",
+   "title": "MC1317836: Microsoft Teams: Unblock users to send message while file is uploading in the background",
+   "link": "https://mc.merill.net/message/MC1317836",
+   "summary": "Microsoft Teams will allow users to send messages while files upload asynchronously in the background, improving real-time collaboration. The rollout starts August 2026 and affects all platforms. No action is required, and existing compliance and security policies remain unchanged.",
+   "published": "2026-11-03T17:46:50+00:00"
+  },
+  {
+   "id": "434e50a2c2c7",
+   "title": "MC1330891: Microsoft Teams: Breakout rooms now supported in meetings with up to 1,000 attendees",
+   "link": "https://mc.merill.net/message/MC1330891",
+   "summary": "Microsoft Teams now supports breakout rooms in meetings with up to 1,000 attendees, allowing up to 100 breakout rooms per meeting. This feature, enabled by default, removes previous meeting size limits for breakout rooms. Rollout begins July 2026, completing by November 2026. No action is required.",
+   "published": "2026-11-03T17:45:38+00:00"
+  },
+  {
+   "id": "3dbe88a2ccdb",
+   "title": "MC1323270: Microsoft Teams: Secure Reliable Transport (SRT) support for Teams meetings and events",
+   "link": "https://mc.merill.net/message/MC1323270",
+   "summary": "Microsoft Teams will support Secure Reliable Transport (SRT) for town halls and live events starting June 2026, offering improved video streaming reliability and backup streams with automatic failover alongside existing RTMP. No user impact; admins must enable SRT via policy settings.",
+   "published": "2026-11-03T17:43:58+00:00"
+  },
+  {
+   "id": "74718284f0bf",
+   "title": "MC1266027: Microsoft Teams: New experience when users minimize the meeting window",
+   "link": "https://mc.merill.net/message/MC1266027",
+   "summary": "Microsoft Teams will introduce a new minimized meeting experience by late November 2026, allowing users to raise hands and send reactions without restoring the full window. Two minimized views—expanded (shows up to four videos) and compact (no videos)—are enabled by default, with no impact on screen sharing.",
+   "published": "2026-11-03T17:42:33+00:00"
+  },
+  {
+   "id": "1e8cfe1f105b",
+   "title": "MC1521613: Microsoft Teams: Streaming switchboard for NDI sources in meetings and events",
+   "link": "https://mc.merill.net/message/MC1521613",
+   "summary": "Microsoft Teams will introduce a streaming switchboard allowing event producers to select and stream up to eight NDI sources in meetings and events, available worldwide by mid-November 2026. Admins must enable NDI streaming via policy, and users must activate production capabilities in Teams to use this feature.",
+   "published": "2026-11-03T17:40:52+00:00"
+  },
+  {
+   "id": "70fb5053478b",
+   "title": "MC1528014: Microsoft Teams: Two presenters can share their screens or windows simultaneously in meetings",
+   "link": "https://mc.merill.net/message/MC1528014",
+   "summary": "Microsoft Teams will allow two presenters to share screens or windows simultaneously in meetings starting early December 2026. This feature, enabled by default, lets participants view both shared contents at once. Admins can control this setting at the tenant level and organizers can manage it per meeting.",
+   "published": "2026-11-03T17:39:13+00:00"
+  },
+  {
+   "id": "cb1f8b01eb5b",
+   "title": "MC1530615: Microsoft Teams: Report guest invitations for security concerns",
+   "link": "https://mc.merill.net/message/MC1530615",
+   "summary": "Microsoft Teams will let users report suspicious guest invitations for security concerns starting mid-November 2026. Reports go to IT admins via the Teams admin center. No action is needed if \"Report a security concern\" is already enabled in messaging policies, which control this feature.",
+   "published": "2026-11-03T17:37:27+00:00"
+  },
+  {
+   "id": "db4b6103171b",
+   "title": "MC1518033: Microsoft Teams: Onboarding workflow for new team members",
+   "link": "https://mc.merill.net/message/MC1518033",
+   "summary": "Microsoft Teams will introduce an onboarding workflow to automatically connect new members to relevant channels, improving engagement and onboarding speed. Rollout starts mid-November 2026 for Targeted Release and early December 2026 for General Availability. No admin action is required.",
+   "published": "2026-11-03T17:35:48+00:00"
+  },
+  {
+   "id": "69adda83cbb8",
+   "title": "MC1470887: Microsoft Teams: Personal message reminders for chat and channels",
+   "link": "https://mc.merill.net/message/MC1470887",
+   "summary": "Microsoft Teams will introduce personal message reminders for chat and channel messages starting mid-November 2026, enabling users to create, manage, and receive notifications for reminders privately. The feature is enabled by default, requires no admin action, and supports desktop and mobile platforms.",
+   "published": "2026-11-03T17:32:11+00:00"
+  },
+  {
+   "id": "e790c30c80d6",
+   "title": "MC1486293: Microsoft Defender for Office 365: Changes to Unified RBAC permission mapping for Microsoft Entra Security Operator role",
+   "link": "https://mc.merill.net/message/MC1486293",
+   "summary": "Microsoft is updating the Microsoft Defender for Office 365 Unified RBAC mapping for the Microsoft Entra Security Operator role, removing default access to email threat policies and Tenant Allow/Block List. Rollout starts December 2026. Organizations must manually assign permissions if continued access is needed.",
+   "published": "2026-11-03T17:23:50+00:00"
+  },
+  {
+   "id": "15cadee8efbf",
+   "title": "MC1529481: Microsoft PowerPoint: Prepare internal sales review Copilot skill",
+   "link": "https://mc.merill.net/message/MC1529481",
+   "summary": "Microsoft PowerPoint is introducing a new Copilot skill, Prepare internal sales review, to help users create executive sales summary presentations. The rollout began in late October 2026 and will complete by late November 2026, affecting PowerPoint on Windows, Mac, and web with no admin action required.",
+   "published": "2026-11-03T17:20:30+00:00"
+  },
+  {
+   "id": "05dc98743952",
+   "title": "MC1529477: Microsoft PowerPoint: Review sales pipeline Copilot skill",
+   "link": "https://mc.merill.net/message/MC1529477",
+   "summary": "Microsoft PowerPoint is introducing a new Copilot skill, Review sales pipeline, to help users create or update sales pipeline and forecast presentations. The feature is rolling out worldwide from late October to late November 2026 on Windows, Mac, and web, requiring no admin action or changes to data handling.",
+   "published": "2026-11-03T17:16:59+00:00"
+  },
+  {
+   "id": "90a32e91823a",
+   "title": "MC1529476: Microsoft PowerPoint: Draft proposal response Copilot skill",
+   "link": "https://mc.merill.net/message/MC1529476",
+   "summary": "Microsoft PowerPoint is introducing a new Copilot skill, Draft proposal response, to help users create customer-specific proposal drafts. The rollout began in late October 2026 and will complete by late November 2026. No admin action is needed, and it does not change data processing or AI interaction methods.",
+   "published": "2026-11-03T17:15:10+00:00"
+  },
+  {
+   "id": "7d1728b71655",
+   "title": "MC1529480: Microsoft PowerPoint: Prepare customer review deck Copilot skill",
+   "link": "https://mc.merill.net/message/MC1529480",
+   "summary": "Microsoft PowerPoint is introducing a new Copilot skill, Prepare customer review deck, to help users create QBR presentations focused on customer goals and outcomes. The rollout began in late October 2026 and will complete by late November 2026, with no admin action required or changes to data handling.",
+   "published": "2026-11-03T17:12:33+00:00"
+  },
+  {
+   "id": "95d41b5aec85",
+   "title": "MC1530595: Microsoft Copilot Feedback UX update",
+   "link": "https://mc.merill.net/message/MC1530595",
+   "summary": "Microsoft Copilot is updating the thumbs-down feedback to include selectable categories and optional comments for more actionable input. The rollout begins mid-November 2026 worldwide, affecting organizational, consumer, and education accounts on web, Windows, and macOS. No admin action is needed; data is stored per…",
+   "published": "2026-11-03T17:09:47+00:00"
+  },
+  {
+   "id": "f4b6a0bbe108",
+   "title": "MC1455014: Microsoft Teams: Teams Events Attendance and Engagement Report Policy",
+   "link": "https://mc.merill.net/message/MC1455014",
+   "summary": "Microsoft is introducing a new policy separating Teams Events attendance and engagement report controls from Teams Meetings, managed via CsTeamsEventsPolicy. Rollout starts mid-December 2026. Administrators can independently configure report access with multiple policy options. Review and update settings and…",
+   "published": "2026-11-03T17:05:43+00:00"
+  },
+  {
+   "id": "10b950ea59d4",
+   "title": "MC1521609: Create sales pitches with Copilot in PowerPoint",
+   "link": "https://mc.merill.net/message/MC1521609",
+   "summary": "A new Copilot skill in PowerPoint helps users create structured sales pitch presentations for various customer scenarios. It rolls out worldwide from late October to late November 2026 on Win32, Mac, and Web. No admin action or compliance concerns are required.",
+   "published": "2026-11-03T16:59:28+00:00"
+  },
+  {
    "id": "b2297b33aae8",
    "title": "MC1506318: Copilot Studio - Information regarding the end of support for selected AI models",
    "link": "https://mc.merill.net/message/MC1506318",
@@ -300,125 +419,6 @@
    "link": "https://mc.merill.net/message/MC1531932",
    "summary": "We are announcing the ability to create, save, manager, discover, and reuse custom grades from a central library in Copilot Studio. This feature will reach general availability on November 15, 2026. How does this affect me? This feature enables you to standardize how agent quality is measured by building and reusing a…",
    "published": "2026-10-30T17:12:56+00:00"
-  },
-  {
-   "id": "66998ef46079",
-   "title": "MC1531924: Copilot Studio - Generated custom grader",
-   "link": "https://mc.merill.net/message/MC1531924",
-   "summary": "We are announcing the ability to generate a custom grader in Copilot Studio. This feature reached general availability on October 15, 2026. How does this affect me? This feature enables you to create a custom grader tailored to a specific agent and evaluation scenario. This makes it easier to expand evaluation…",
-   "published": "2026-10-30T16:56:56+00:00"
-  },
-  {
-   "id": "499029d9ff08",
-   "title": "MC1302906: Microsoft 365 Copilot: Schedule prompts in Agent Builder",
-   "link": "https://mc.merill.net/message/MC1302906",
-   "summary": "Microsoft 365 Copilot's Agent Builder will enable users to create scheduled workflows that run prompts automatically on hourly, daily, weekly, monthly, or yearly cadences. This feature, rolling out mid-November to mid-December 2026, is user-specific, enabled by default, and requires no admin action.",
-   "published": "2026-10-30T16:26:45+00:00"
-  },
-  {
-   "id": "de44858e2a57",
-   "title": "MC1531903: Copilot Studio - Evaluation for automation flows",
-   "link": "https://mc.merill.net/message/MC1531903",
-   "summary": "We are announcing evaluation for automation flows in Copilot Studio. This feature reached general availability on October 15, 2026. How does this affect me? This feature enables you to evaluate automation quality with the same structured approach used for agent evaluations, reducing reliance on manual testing and…",
-   "published": "2026-10-30T16:23:52+00:00"
-  },
-  {
-   "id": "655a16158279",
-   "title": "MC1446796: Migrate Free/Busy, MailTips, and Calendar Sharing before EWS deprecation",
-   "link": "https://mc.merill.net/message/MC1446796",
-   "summary": "Exchange Web Services (EWS) deprecation starts October 1, 2026, affecting cross-tenant Free/Busy, MailTips, and Calendar Sharing. Microsoft 365 Cross-Tenant Access Policy will replace EWS by November 2026. Organizations must migrate to avoid service disruption; migration guidance and updates are provided.",
-   "published": "2026-10-30T16:13:46+00:00"
-  },
-  {
-   "id": "0a3cc5881a88",
-   "title": "MC1531085: Interim guidance for Cuba’s 2026 daylight saving time change",
-   "link": "https://mc.merill.net/message/MC1531085",
-   "summary": "What and whyOn October 27, 2026, the government of the Republic of Cuba announced that the country will remain on daylight saving time instead of ending it as scheduled on November 1, 2026. Clocks will not be set back one hour at 2:00 a.m. on November 1. Cuba will remain at UTC-04:00 without interruption until…",
-   "published": "2026-10-30T03:15:39+00:00"
-  },
-  {
-   "id": "f3a84fd1c99c",
-   "title": "MC1531060: An updated version of the October 2026 Scan Cab is available",
-   "link": "https://mc.merill.net/message/MC1531060",
-   "summary": "IMPORTANT: This notice is only relevant for environments where:Visual Studio 2026, Visual Studio 2022, Visual Studio 2019, or Visual Studio 2017 is installed.Excel 2016 is installed.Scan Cab is used to check for update complianceThe October 2026 Scan Cab was deployed before 7:00 PM PDT on October 29, 2026. What and…",
-   "published": "2026-10-30T02:01:30+00:00"
-  },
-  {
-   "id": "f9df86a1931e",
-   "title": "MC1530959: Microsoft 365 Copilot Chat: View memory sources used to personalize responses",
-   "link": "https://mc.merill.net/message/MC1530959",
-   "summary": "Microsoft 365 Copilot Chat will show users which memories and past chats influenced personalized responses, with inline citations linking to sources. This feature requires a Premium license, rolls out in late October 2026, respects memory settings, and allows users to review or delete saved memories. No action is…",
-   "published": "2026-10-29T23:12:21+00:00"
-  },
-  {
-   "id": "dd73a5b56cf7",
-   "title": "MC1530957: Microsoft Teams: Threads will become the default layout for new channels created with Microsoft Graph",
-   "link": "https://mc.merill.net/message/MC1530957",
-   "summary": "Starting late November 2026, new Microsoft Teams channels created via Microsoft Graph without a specified layoutType will default to the Threads layout (\"chat\"). Existing channels remain unchanged. Organizations should update automation to specify \"post\" if Posts layout is required or test workflows for compatibility…",
-   "published": "2026-10-29T23:11:49+00:00"
-  },
-  {
-   "id": "28d17807e8cb",
-   "title": "MC1187781: Viva Engage: Community feeds improvements",
-   "link": "https://mc.merill.net/message/MC1187781",
-   "summary": "Viva Engage communities will default to viewing conversations by recent posts instead of recent activity, with unread indicators in both \"new\" and \"all\" feeds. This change, rolling out November 2026, offers a sticky user preference for feed and sort order, improving content browsing without requiring action.",
-   "published": "2026-10-29T23:10:17+00:00"
-  },
-  {
-   "id": "9f549b335df5",
-   "title": "MC1530954: Microsoft 365 apps: Draft mode for official Brand Kits",
-   "link": "https://mc.merill.net/message/MC1530954",
-   "summary": "Draft Mode for official Brand Kits in Microsoft 365 apps allows Brand Managers to create and review changes without affecting the live kit until published. It rolls out worldwide from late October to early November 2026. No action is required, but informing Brand Managers is recommended.",
-   "published": "2026-10-29T23:10:15+00:00"
-  },
-  {
-   "id": "11b5a2a389a7",
-   "title": "MC1530951: Microsoft PowerPoint: Assess templates for use with Copilot in Brand Kits",
-   "link": "https://mc.merill.net/message/MC1530951",
-   "summary": "Microsoft PowerPoint's new Template Assessment in Brand Kits helps Brand Managers evaluate and improve templates for better Copilot compatibility, requiring a Microsoft 365 Copilot (Premium) license. It rolls out worldwide from mid to late October 2026. No action needed; organizations should inform Brand Managers.",
-   "published": "2026-10-29T23:09:48+00:00"
-  },
-  {
-   "id": "078f519821f9",
-   "title": "MC1530950: Microsoft Teams: Explicit consent for PSTN participants in one-to-one calls",
-   "link": "https://mc.merill.net/message/MC1530950",
-   "summary": "Microsoft Teams will require explicit consent via phone keypad for PSTN participants in one-to-one calls when recording or transcription starts, beginning early December 2026. Participants can consent or decline; those who decline remain muted. This uses existing calling policies with no new settings introduced.",
-   "published": "2026-10-29T23:09:21+00:00"
-  },
-  {
-   "id": "deb9cfe49fdf",
-   "title": "MC1530948: Microsoft Purview | Information Protection: Auto-labeling support for legacy Microsoft Office file formats",
-   "link": "https://mc.merill.net/message/MC1530948",
-   "summary": "Microsoft Purview auto-labeling will support legacy Office files (.doc,.xls,.ppt) in SharePoint and OneDrive starting November 2026. Existing policies need a minor edit and rerun to include these formats. New policies support them automatically. This affects organizations using Purview auto-labeling for these…",
-   "published": "2026-10-29T23:08:49+00:00"
-  },
-  {
-   "id": "a90a5aea535c",
-   "title": "MC1521604: Microsoft Authenticator: Usability improvements for iOS and Android",
-   "link": "https://mc.merill.net/message/MC1521604",
-   "summary": "Microsoft Authenticator for iOS and Android will receive usability updates starting November 2026, including a refreshed home experience, clearer account restoration guidance, improved sign-in flows, and platform-specific prompts. Android improvements for restoration and battery optimization prompts will follow in…",
-   "published": "2026-10-29T20:51:10+00:00"
-  },
-  {
-   "id": "c85447206794",
-   "title": "MC1523090: Microsoft Teams: Initiate side conversations within the meeting chat window",
-   "link": "https://mc.merill.net/message/MC1523090",
-   "summary": "Microsoft Teams will allow users to start one-to-one or small-group side conversations within the meeting chat window starting early December 2026. This feature keeps chats in context without leaving the meeting, preserves chat history, requires no admin action, and has no identified compliance issues.",
-   "published": "2026-10-29T20:40:50+00:00"
-  },
-  {
-   "id": "02791c773e48",
-   "title": "MC1530748: Copilot Studio - Tool accuracy grader",
-   "link": "https://mc.merill.net/message/MC1530748",
-   "summary": "We are announcing the tool accuracy grader in Copilot Studio. This feature reached general availability on October 15, 2026. How does this affect me? This feature enables you to evaluate whether your agents selected the correct tools or actions and used them with the expected inputs for a given user request. This…",
-   "published": "2026-10-29T20:36:23+00:00"
-  },
-  {
-   "id": "e9642e2788fa",
-   "title": "MC1530742: Copilot Studio - Task completion grader",
-   "link": "https://mc.merill.net/message/MC1530742",
-   "summary": "We are announcing the task completion grader in Copilot Studio. This feature reached general availability on October 15, 2026. How does this affect me? This feature enables you to evaluate whether your agents successfully accomplish their intended tasks, beyond simply generating a relevant or high-quality response…",
-   "published": "2026-10-29T20:29:53+00:00"
   }
  ]
 }
