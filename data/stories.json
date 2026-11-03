@@ -250,6 +250,26 @@
    "instructions_checked": true
   },
   {
+   "id": "3c40c26b85cd",
+   "source": "borncity",
+   "source_name": "Born's IT and Windows Blog",
+   "official": false,
+   "source_type": "news",
+   "title": "Datenleck bei notebooksbilliger.de und Phishing bei DIRS21 und topcamping.de",
+   "link": "https://borncity.com/blog/2026/11/03/datenleck-bei-notebooksbilliger-de-und-phishing-bei-dirs21-und-topcamping-de/",
+   "published": "2026-11-03T06:20:22+00:00",
+   "summary": "Der Hack bei notebooksbilliger.de scheint mehr Kunden als befürchtet zu betreffen. Zum 1. November 2026 gab es eine neue Welle Benachrichtigungen an Betroffene. Und es gab die Tage wieder zwei Phishing-Vorfälle mit abgezogenen Daten bei Reise-/Unterkunftsbuchungsportalen (DIRS21 und topcamping.de). Hier … Weiterlesen…",
+   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
+   "cves": [],
+   "first_seen": "2026-11-03T07:55:17.726879+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Matthew zu Windows 11 Update KB5127648: \"Gerät hinzufügen\" bei Druckern kaputt?",
+    "Smartphone nach Update heiß: Sony nennt bis zu zwei Tage Indexierung News 3."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "8333d33e3875",
    "source": "borncity",
    "source_name": "Born's IT and Windows Blog",
@@ -3046,6 +3066,48 @@
    "first_seen": "2026-11-02T07:23:10.547789+00:00",
    "instructions": [
     "\"The bundle is the ONLY permissible source of facts; your training knowledge must never supply a fact about the subject,\" reads a line from the prompt."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "36d509a3e525",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "New Wave of Refrigeration Cyberattacks Hits Supermarkets Across Europe, Forcing Stores to Pull Food",
+   "link": "https://thehackernews.com/2026/11/second-wave-of-cyberattacks-hits.html",
+   "published": "2026-11-03T07:27:07+00:00",
+   "summary": "Attackers remotely changed the settings on refrigeration controls at supermarkets in Belgium, Sweden, Estonia and other European countries overnight into Monday, November 2, warming fridges and freezers. No chain reported more than several dozen affected stores, and some had to throw away chilled and frozen food or…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjScxShEa3bsAhGLHlqkBcsyuRe6UeQwrOVXBFP3TwxzmXtd03vDeDRZHxxBLIKHDYgY5p5CsrFvBwuozg3UsRLtVMO758NhVwSju6D6WgO1J42wJd2NWR9aVzz-B_CWfiMFH2QANUrAnUXbgkKec2KtJjULvN3NTqrCPbLRNnxlnvBFIAkndClXJMIeXY/s1600/fridge-hack.jpg",
+   "cves": [],
+   "first_seen": "2026-11-03T07:55:17.726879+00:00",
+   "instructions": [
+    "Danfoss's security advisories page listed no advisory about the attacks when The Hacker News checked on November 3.",
+    "Sabcobel had advised stores to secure their internet connections, and many but not all had done so.",
+    "In an emergency, you can filter the contractors' IP addresses at a firewall, but this should not be a lasting fix.",
+    "Danfoss advised Dutch customers on October 13 to disconnect their systems from the internet and reconnect them only through a secure network."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "d108c8cad61e",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Synology NAS Devices Targeted in Ransomware Attacks Exploiting Patched DSM Flaw",
+   "link": "https://thehackernews.com/2026/11/synology-nas-devices-targeted-in.html",
+   "published": "2026-11-03T07:43:07+00:00",
+   "summary": "Synology is urging customers to update the DiskStation Manager (DSM) software powering its Network Attached Storage (NAS) devices following ransomware attacks. The Taiwanese vendor said it observed threat actors exploiting a vulnerability patched in December 2024 to target devices running outdated versions of DSM…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg18lSM19IJpBCuAofy8CZNsJ-05CtvqxdL8BcHUS65fn_Oph-FAXqpdDE9c11G78nq7I1pVtt4XAotc_hszgea-QpNDTt-RzstD3k7yfXHP3JUnBViplsRzL_4q_LM-jujcv6NbMUUYBMWtJKSdKcBYlbSkm7Mx9LaTbVRW88uFh723nDOGYYDxiwkfYFr/s1600/synology-ransomware.jpg",
+   "cves": [],
+   "first_seen": "2026-11-03T07:55:17.726879+00:00",
+   "instructions": [
+    "While Synology did not disclose the exact security flaw that's being exploited in these attacks, the company linked to a November 2024 security advisory that listed three vulnerabilities -",
+    "\"Synology also recommends enabling automatic updates to keep DSM up to date at all times.\"",
+    "Synology is urging customers to update the DiskStation Manager (DSM) software powering its Network Attached Storage (NAS) devices following ransomware attacks.",
+    "CVE-2024-10445 (CVSS score: 4.3) - An improper certificate validation vulnerability in the update functionality in DSM that could allow remote attackers to write limited files via unspecified vectors."
    ],
    "instructions_checked": true
   },
@@ -6391,26 +6453,6 @@
    "instructions_checked": true
   },
   {
-   "id": "46ee8b886dbe",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Maritime Coalition Launches Free Vulnerability Database for Ship and Port Systems",
-   "link": "https://www.securityweek.com/maritime-coalition-launches-free-vulnerability-database-for-ship-and-port-systems/",
-   "published": "2026-10-27T07:14:27+00:00",
-   "summary": "Blue Initiative indexes nearly 30,000 IT and OT vulnerabilities relevant to ships and ports, 37 of them in maritime-specific products. The post Maritime Coalition Launches Free Vulnerability Database for Ship and Port Systems appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2025/02/Maritime-cybersecurity.jpg",
-   "cves": [],
-   "first_seen": "2026-10-27T07:31:26.061414+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Most entries are pulled automatically from CISA’s ICS advisories and KEV catalog and mapped to maritime systems, while a smaller number include hand-written analyst notes.",
-    "Preparing for disruption must become part of day-to-day operations."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "4bea3ce24866",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -6471,6 +6513,27 @@
    "first_seen": "2026-11-01T11:36:21.984846+00:00",
    "image_checked": true,
    "instructions": [
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "f9c39fb133ac",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Over 100 European Stores Hit as Supermarket Fridge Attacks Return",
+   "link": "https://www.securityweek.com/over-100-european-stores-hit-as-supermarket-fridge-attacks-resume/",
+   "published": "2026-11-03T07:43:24+00:00",
+   "summary": "Attackers again tampered with internet-exposed refrigeration controllers, this time at stores in Belgium, Sweden, Ireland and beyond. The post Over 100 European Stores Hit as Supermarket Fridge Attacks Return appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/10/supermarket-refrigerators.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-03T07:55:17.726879+00:00",
+   "image_checked": true,
+   "instructions": [
+    "According to Moelans, a software update is not enough to fully resolve the weakness, and the affected equipment also needs to be physically modified.",
+    "According to Beaumont, many of the devices are end-of-life and have no available patch.",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
