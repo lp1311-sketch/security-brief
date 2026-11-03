@@ -311,6 +311,25 @@
    "instructions_checked": true
   },
   {
+   "id": "2c56f9351f70",
+   "source": "borncity",
+   "source_name": "Born's IT and Windows Blog",
+   "official": false,
+   "source_type": "news",
+   "title": "Ubuntu-Patch für IPv4-TCP-Schwachstelle CVE-2026-98432 kommt",
+   "link": "https://borncity.com/blog/2026/11/04/ubuntu-patch-fuer-ipv4-tcp-schwachstelle-cve-2026-98432/",
+   "published": "2026-11-03T23:01:54+00:00",
+   "summary": "In Linux wurde kürzlich die Schwachstelle CVE-2026-98432 in der IPv4-TCP-Verarbeitung öffentlich bekannt. Nun haben die Entwickler von Canonical entsprechende Sicherheitsupdates für Ubuntu zur Absicherung gegen diese Schwachstelle angekündigt. Die Fixes befinden sich bereits im Test. Die IPv4-TCP-Schwachstelle…",
+   "image": "https://borncity.com/blog/wp-content/uploads/2015/11/Linux.jpg",
+   "cves": [
+    "CVE-2026-98432"
+   ],
+   "first_seen": "2026-11-03T23:08:37.927300+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "6f421f1330c7",
    "source": "google-threat-intel",
    "source_name": "Google Threat Intelligence",
@@ -3788,23 +3807,6 @@
    "instructions_checked": true
   },
   {
-   "id": "dedf00d64727",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "OpenAI's GPT-6.1 Terra is safer overall, but shows more destructive-action flags in tests",
-   "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/openais-gpt-61-terra-is-safer-overall-but-shows-more-destructive-action-flags-in-tests/",
-   "published": "2026-10-27T22:43:27+00:00",
-   "summary": "OpenAI confirmed GPT-6.1 Terra is safer overall than some of its older models, but its safety testing also found other problems.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/13/openai-listening-device.jpg",
-   "cves": [],
-   "first_seen": "2026-10-27T23:13:55.612410+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "8ede56d402c1",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4471,6 +4473,28 @@
    "instructions": [
     "Cisco recommends that system administrators apply the available security updates for CVE-2026-20127 and also consult the vendor’s dedicated hardening guide for Catalyst SD-WAN deployments.",
     "CISA warns feds to fully patch actively exploited Cisco flaws"
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "b0a8ea5b6986",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Hackers hijack cPGuard autoupdate to deploy backdoor, steal data",
+   "link": "https://www.bleepingcomputer.com/news/security/hackers-hijack-cpguard-autoupdate-to-deploy-backdoor-steal-data/",
+   "published": "2026-11-03T22:18:50+00:00",
+   "summary": "Attackers have compromised the update infrastructure for the cPGuard web security suite to distribute a backdoor and a data-stealing script.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/09/hacker-box.jpg",
+   "cves": [],
+   "first_seen": "2026-11-03T23:08:37.927300+00:00",
+   "image_checked": true,
+   "instructions": [
+    "System administrators are advised to update every cPGuard server to version 5.88.25 or later, reset passwords, and rotate database credentials, cloud secrets, and SSH keys.",
+    "The company also advises customers to follow the instructions and update cPGuard to version 5.88.25 or later, and reset or rotate credentials that may have been exposed on potentially compromised servers.",
+    "OpsShield notes that updating to the latest cPGuard version removes the backdoor and staged files; however, stolen credentials must be invalidated as soon as possible.",
+    "The vendor also said that, as an extra precaution, it would release an update to remove previously installed OpsShield support-access keys."
    ],
    "instructions_checked": true
   },
@@ -5267,6 +5291,22 @@
    "instructions_checked": true
   },
   {
+   "id": "699d6dc9b64e",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "Germany Busts 'Crime-as-a-Service' Investment Fraud Outfit",
+   "link": "https://www.darkreading.com/cybersecurity-operations/germany-crime-service-investment-fraud",
+   "published": "2026-11-03T21:57:12+00:00",
+   "summary": "German police led a multinational probe that exposed an alleged crime-as-a-service provider supplying fraudulent trading platforms to investment scammers.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt2ae3fcc30ff2f999/6aea3f3225b8d120f9a7b718/investment_on_computer-ilkercelik-GettyImages-2239174783.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-03T23:08:37.927300+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "6e318dd1d1a3",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -5327,6 +5367,22 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blta280e1d9bd26c729/6ae8fcfdb20def7a8ae983ea/school_front-YinYang-GettyImages-157476686.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-03T14:13:04.962203+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "df7c4721e4f5",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "Fresh European Fridge Attacks Put Cold-Chain Security in Focus",
+   "link": "https://www.darkreading.com/ics-ot-security/fresh-european-fridge-attacks-cold-chain-security",
+   "published": "2026-11-03T22:16:49+00:00",
+   "summary": "Beyond food storage, the same combination of Internet connectivity, remote access, and inadequate security practices can put temperature-controlled infrastructure across other critical sectors at risk.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt3c1ba20d1eb5be7f/6aea51a7937e6faad50e3a84/cold_Adisa_shutterstock.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-03T23:08:37.927300+00:00",
    "instructions": [],
    "instructions_checked": true
   },

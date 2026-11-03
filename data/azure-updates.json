@@ -1,6 +1,27 @@
 {
  "items": [
   {
+   "id": "4e13c50a4432",
+   "title": "[In preview] Public Preview: JWT validation for Application Gateway for Containers",
+   "link": "https://azure.microsoft.com/updates?id=576382",
+   "summary": "Application Gateway for Containers now supports centralized JSON Web Token validation through the AuthPolicy custom resource. Teams can validate a token signature, issuer, lifetime, and configured audience by using signing keys retrieved from a trusted HT",
+   "published": "2026-11-03T21:17:08+00:00"
+  },
+  {
+   "id": "fcc5a7b5533c",
+   "title": "[In preview] Public Preview: MCP gateway for Application Gateway for Containers",
+   "link": "https://azure.microsoft.com/updates?id=576388",
+   "summary": "Application Gateway for Containers now supports Model Context Protocol routing through the new MCPRoute custom resource. Platform teams can publish MCP servers behind a stable hostname and path while centralizing TLS, JWT validation, Web Application Firew",
+   "published": "2026-11-03T21:16:36+00:00"
+  },
+  {
+   "id": "f5c330c988a0",
+   "title": "[In preview] Public Preview: Private ingress for Application Gateway for Containers",
+   "link": "https://azure.microsoft.com/updates?id=576393",
+   "summary": "Application Gateway for Containers now supports private frontends that are reachable only through approved Azure Private Link private endpoints. This enables organizations to keep internal applications, shared services, and cross-cluster traffic on privat",
+   "published": "2026-11-03T21:15:46+00:00"
+  },
+  {
    "id": "26172c4a5999",
    "title": "[In preview] Public Preview: Advanced capacity insights are now available in Azure Storage Discovery",
    "link": "https://azure.microsoft.com/updates?id=578655",
@@ -153,27 +174,6 @@
    "link": "https://azure.microsoft.com/updates?id=577782",
    "summary": "Azure Network Watcher VNet flow logs filtering is now generally available, enabling you to control which network traffic flows are logged based on specific criteria such as IP addresses, ports, protocols, encryption state, flow state, and traffic directio",
    "published": "2026-10-26T16:02:05+00:00"
-  },
-  {
-   "id": "7d5ebbd3d28a",
-   "title": "[Launched] Generally Available: Item Level Recovery for Azure VMs with Premium SSDv2 and Ultra Disks in Azure Backup",
-   "link": "https://azure.microsoft.com/updates?id=577963",
-   "summary": "Azure Backup now supports Item-Level Recovery (ILR) for Azure virtual machines using Premium SSD v2 and Ultra disks with both 512 byte and 4KB logical sector sizes. You can now recover individual files and folders from your Azure VMs with Premium SSDv2 an",
-   "published": "2026-10-23T19:21:07+00:00"
-  },
-  {
-   "id": "636d43ecb476",
-   "title": "[Launched] Generally Available: ABFS Vectored Read for Azure Data Lake Storage",
-   "link": "https://azure.microsoft.com/updates?id=577618",
-   "summary": "ABFS Vectored Read helps compatible analytics engines reduce request overhead for selective reads in Azure Data Lake Storage. By combining nearby file ranges into fewer storage requests and executing reads asynchronously, it can reduce network round trips",
-   "published": "2026-10-22T18:01:00+00:00"
-  },
-  {
-   "id": "f8e40965b890",
-   "title": "Announcing: Choose Your Own Telephony (CYOT) for Microsoft Entra",
-   "link": "https://azure.microsoft.com/updates?id=577273",
-   "summary": "What and whyStarting October 30, 2026, Microsoft Entra ID will make the Choose Your Own Telephony Provider experience available. This feature enables organizations to use a supported third-party telecommunications provider for SMS and voice authentication",
-   "published": "2026-10-21T17:38:32+00:00"
   }
  ]
 }
