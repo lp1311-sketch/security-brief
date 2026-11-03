@@ -1,6 +1,20 @@
 {
  "items": [
   {
+   "id": "d65b6567228b",
+   "title": "[In preview] Public Preview: Extend immutability for PITR backups for Azure SQL Database and Azure SQL Managed Instance",
+   "link": "https://azure.microsoft.com/updates?id=579305",
+   "summary": "With this enhancement, you have the ability to lock your retention to the configured PITR retention, beyond the default 7 days of immutable backups that are already available. This is especially useful for financial customers who typically have 35 days of",
+   "published": "2026-11-03T18:36:12+00:00"
+  },
+  {
+   "id": "b525f903e876",
+   "title": "[Launched] Generally Available: Enhanced Azure Site Recovery support for VMSS Flex",
+   "link": "https://azure.microsoft.com/updates?id=578926",
+   "summary": "Azure Site Recovery now offers an enhanced disaster recovery experience for virtual machines in Virtual Machine Scale Sets with flexible orchestration. The update improves target configuration and end-to-end recovery workflows, including failover, reprote",
+   "published": "2026-11-03T18:32:01+00:00"
+  },
+  {
    "id": "5d0267a03a19",
    "title": "[In preview] Public Preview: On-prem NAS share discovery and assessment are now available using Azure Migrate",
    "link": "https://azure.microsoft.com/updates?id=577975",
@@ -160,20 +174,6 @@
    "link": "https://azure.microsoft.com/updates?id=576716",
    "summary": "Safe Key Rotation for Azure Cosmos DB is now generally available. You can view timestamp metadata showing when each account key was last used, helping you identify active keys before rotating or retiring credentials.This visibility helps reduce the risk o",
    "published": "2026-10-21T17:13:16+00:00"
-  },
-  {
-   "id": "a1faefaaecca",
-   "title": "[In preview] Public Preview: Disable VNet peering route",
-   "link": "https://azure.microsoft.com/updates?id=576242",
-   "summary": "Announcing the public preview of disable VNet peering route, a route-table capability that gives you more control over traffic between peered virtual networks. DPR suppresses system-generated peering routes on subnets associated with the route table while",
-   "published": "2026-10-20T18:55:47+00:00"
-  },
-  {
-   "id": "f2cd9207df36",
-   "title": "[Launched] Generally Available: Service tag match condition for Azure Front Door Premium WAF",
-   "link": "https://azure.microsoft.com/updates?id=577156",
-   "summary": "Announcing the general availability of the service tag match condition for Azure Web Application Firewall (WAF) custom rules on Azure Front Door Premium. Service tags represent groups of IP address prefixes used by Azure services, and Microsoft updates th",
-   "published": "2026-10-20T16:57:35+00:00"
   }
  ]
 }
