@@ -2516,25 +2516,6 @@
    "instructions_checked": true
   },
   {
-   "id": "ea5496feaca5",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "OpenAI Compaction Flaw Let Researchers Bypass Hidden Reasoning Protections",
-   "link": "https://thehackernews.com/2026/10/openai-compaction-flaw-let-researchers.html",
-   "published": "2026-10-27T08:22:43+00:00",
-   "summary": "OpenAI's compaction feature, which shrinks a long conversation to save space, could be turned into a way to copy a model's hidden reasoning out in plain text, security firm Xint has shown. OpenAI's reasoning models work through a problem before answering, and the service normally returns only the raw reasoning as an…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNsIWTk2-hgeO3hAG2ohh1yrK20QoX_O0WDYRc83Q9qg-Igk4mEbzap014Pya2lSNiYEvbRIzilTYToybQVVtR3sQH84nJj-kd8tGWOqW3D-ylLpwcxOfvONGVSzjNuu5piwltyECtuezAw4Q8R7S3lvH_g2z3EpDT_EuOOEJg1-FRrChaADA4S6scQkU/s1600/chatgpt-compact.jpg",
-   "cves": [],
-   "first_seen": "2026-10-27T09:52:37.329500+00:00",
-   "instructions": [
-    "Anthropic and a joint U.S. government advisory have each reported China-based labs targeting the hidden reasoning of American models.",
-    "Compaction got past that block, Xint said, because the compaction step runs on the same model that made the reasoning, so it never triggers the cross-model check."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "eb73651e36ee",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -4276,27 +4257,6 @@
    "instructions": [
     "Users should uninstall the extensions listed in Socket's report from their web browsers, run a full AV scan on their systems, and avoid downloading unnecessary tools and browser add-ons from unknown publishers.",
     "Malware bypasses browser checks to force install Chrome, Edge extensions"
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "77d8f32442c0",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "CISA confirms PHP2Shell vulnerabilities now exploited in attacks",
-   "link": "https://www.bleepingcomputer.com/news/security/cisa-confirms-php2shell-vulnerabilities-now-exploited-in-attacks/",
-   "published": "2026-10-27T08:20:54+00:00",
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added the PHP2Shell vulnerabilities to its catalog of actively exploited security flaws and ordered federal agencies to patch their systems by Thursday.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/26/PHP.jpg",
-   "cves": [],
-   "first_seen": "2026-10-27T08:23:39.364927+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Although details on the PHP2Shell security flaws (including the CVE IDs and mitigation measures shared with critical infrastructure providers) leaked and some proof-of-concept (PoC) exploits were published online before patches went live, the PHP security team said that none were functional.",
-    "On Friday, the PHP security team also shared mitigation for a new RCE flaw (CVE-2026-115560) with no patch, exploitable when targeting systems \"with an unusual combination of configuration and application code.\"",
-    "​ The PHP security team patched the two flaws on Wednesday, October 21, one day after urging security teams to install the security updates as soon as they became available."
    ],
    "instructions_checked": true
   },
@@ -6477,6 +6437,26 @@
    "instructions_checked": true
   },
   {
+   "id": "0658f100b664",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "NATO’s Crossed Swords Exercise Brings AI Agents Into Cyber Operations Training",
+   "link": "https://www.securityweek.com/natos-crossed-swords-exercise-brings-ai-agents-into-cyber-operations-training/",
+   "published": "2026-11-03T08:49:03+00:00",
+   "summary": "The NATO CCDCOE exercise in Estonia introduces AI agents and OpenAI Daybreak into joint cyber and kinetic operations training. The post NATO’s Crossed Swords Exercise Brings AI Agents Into Cyber Operations Training appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2023/01/Cybersecurity_News-SecurityWeek.jpg",
+   "cves": [],
+   "first_seen": "2026-11-03T08:56:52.327527+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Cyber effects must hit at the right moment to support a kinetic or special operations action – not in parallel, but in sequence, with timing measured in minutes, not hours.",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "085573e20d77",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -6898,22 +6878,6 @@
     "Risk management is more than recommending a set of analytical frameworks.",
     "The parallel with cyber governance should be handled carefully, but it is useful."
    ],
-   "instructions_checked": true
-  },
-  {
-   "id": "ac4461527126",
-   "source": "troyhunt",
-   "source_name": "Troy Hunt",
-   "official": false,
-   "source_type": "news",
-   "title": "Weekly Update 527: Cybergeddon News v. Reality",
-   "link": "https://www.troyhunt.com/weekly-update-527/",
-   "published": "2026-10-27T07:59:09+00:00",
-   "summary": "As the news from last week has settled down, it would seem this headline was pretty spot on. The foretold apocalypse didn't eventuate, and there were no internet-destroying outages. In fact, it took days before I could find a single story of PHP2Shell being reliably attributed back to a breach. And I don't think we…",
-   "image": "https://storage.ghost.io/c/fb/33/fb3391dc-723d-4e74-b95a-d641b5feb38e/content/images/2026/10/maxresdefault-1.jpg",
-   "cves": [],
-   "first_seen": "2026-10-27T08:19:45.663745+00:00",
-   "instructions": [],
    "instructions_checked": true
   },
   {
