@@ -111,16 +111,6 @@
    "url": "story/ef44306c2f44.html"
   },
   {
-   "id": "0afa3606f14e",
-   "title": "Apple Backports Fix for Exploited CoreGraphics Flaw to Older iPhones and iPads",
-   "summary": "Apple on Monday backported fixes for a high-severity security flaw that was exploited in real-world cyber attacks to older devices. The vulnerability, tracked as…",
-   "priority": "Critical",
-   "category": "Patch Radar",
-   "date": "27 Oct 2026, 13:59 UTC",
-   "sources": "The Hacker News, SecurityWeek",
-   "url": "story/0afa3606f14e.html"
-  },
-  {
    "id": "5e74da19f3eb",
    "title": "UK Cyber Chief Says the UK Will Face AI Cyberattacks on Critical Infrastructure by 2028",
    "summary": "The U.K. will likely face AI cyberattacks on its critical infrastructure by 2028 as criminals and states, including China and Russia, increasingly use AI in their cyber…",
@@ -151,16 +141,6 @@
    "url": "story/fd515affb539.html"
   },
   {
-   "id": "ad2df65419af",
-   "title": "Critical Langflow Flaws Could Let Unauthenticated Attackers Run Code on Servers",
-   "summary": "Two critical flaws in Langflow could let a remote attacker with no account bypass authentication or run arbitrary code, IBM said last week. Langflow is an open-source…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "02 Nov 2026, 11:50 UTC",
-   "sources": "The Hacker News",
-   "url": "story/ad2df65419af.html"
-  },
-  {
    "id": "219f99ac76bf",
    "title": "Even after PHP2Shell, blast radius matters more than a CVSS score",
    "summary": "PHP2Shell shows how quickly attackers can exploit critical vulnerabilities, often before organizations have time to patch. Token Security explains why limiting the…",
@@ -179,6 +159,16 @@
    "date": "27 Oct 2026, 23:35 UTC",
    "sources": "BleepingComputer",
    "url": "story/5246b1272668.html"
+  },
+  {
+   "id": "0afa3606f14e",
+   "title": "Apple Backports Fix for Exploited CoreGraphics Flaw to Older iPhones and iPads",
+   "summary": "Apple on Monday backported fixes for a high-severity security flaw that was exploited in real-world cyber attacks to older devices. The vulnerability, tracked as…",
+   "priority": "Critical",
+   "category": "Patch Radar",
+   "date": "27 Oct 2026, 13:59 UTC",
+   "sources": "The Hacker News",
+   "url": "story/0afa3606f14e.html"
   },
   {
    "id": "8491f2b2e054",
@@ -321,24 +311,14 @@
    "url": "story/adcc13fa97b8.html"
   },
   {
-   "id": "e52f7534557d",
-   "title": "Synology warns of C3RB3R ransomware attacks targeting NAS devices",
-   "summary": "Taiwanese network-attached storage (NAS) appliance maker Synology warned customers to update their devices immediately due to a surge in C3RB3r ransomware attacks.",
+   "id": "ad2df65419af",
+   "title": "Critical Langflow Flaws Could Let Unauthenticated Attackers Run Code on Servers",
+   "summary": "Two critical flaws in Langflow could let a remote attacker with no account bypass authentication or run arbitrary code, IBM said last week. Langflow is an open-source…",
    "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "02 Nov 2026, 11:28 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/e52f7534557d.html"
-  },
-  {
-   "id": "d596e3f2bace",
-   "title": "Attackers Pose as IT Support on Microsoft Teams, Abuse AD CS to Steal Company Data",
-   "summary": "Attackers posing as IT support on Microsoft Teams talked employees into giving them remote control of their PCs. They then used insecure Active Directory Certificate…",
-   "priority": "Standard",
-   "category": "Microsoft",
-   "date": "02 Nov 2026, 11:08 UTC",
+   "category": "Patch Radar",
+   "date": "02 Nov 2026, 11:50 UTC",
    "sources": "The Hacker News",
-   "url": "story/d596e3f2bace.html"
+   "url": "story/ad2df65419af.html"
   },
   {
    "id": "2e0eed251125",
@@ -461,14 +441,24 @@
    "url": "story/afbf72609830.html"
   },
   {
-   "id": "c477f1812588",
-   "title": "Is Your SOC Ready for AI Agents? A Maturity Check Before You Deploy",
-   "summary": "Forty percent of security teams now use AI every day, and another 56% are testing it. Only 4% have no plans to adopt it, according to Prophet Security's State of AI in…",
+   "id": "e52f7534557d",
+   "title": "Synology warns of C3RB3R ransomware attacks targeting NAS devices",
+   "summary": "Taiwanese network-attached storage (NAS) appliance maker Synology warned customers to update their devices immediately due to a surge in C3RB3r ransomware attacks.",
    "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "02 Nov 2026, 11:30 UTC",
+   "category": "Attacks & Breaches",
+   "date": "02 Nov 2026, 11:28 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/e52f7534557d.html"
+  },
+  {
+   "id": "d596e3f2bace",
+   "title": "Attackers Pose as IT Support on Microsoft Teams, Abuse AD CS to Steal Company Data",
+   "summary": "Attackers posing as IT support on Microsoft Teams talked employees into giving them remote control of their PCs. They then used insecure Active Directory Certificate…",
+   "priority": "Standard",
+   "category": "Microsoft",
+   "date": "02 Nov 2026, 11:08 UTC",
    "sources": "The Hacker News",
-   "url": "story/c477f1812588.html"
+   "url": "story/d596e3f2bace.html"
   },
   {
    "id": "af6ffe74845e",
@@ -861,14 +851,14 @@
    "url": "story/00a3b1e54d1b.html"
   },
   {
-   "id": "fe787079c468",
-   "title": "Malicious Claude Code Extension Served in Cursor Supply Chain Attack",
-   "summary": "The extension performed host reconnaissance and attempted to create a reverse SSH tunnel. The post Malicious Claude Code Extension Served in Cursor Supply Chain Attack…",
+   "id": "c477f1812588",
+   "title": "Is Your SOC Ready for AI Agents? A Maturity Check Before You Deploy",
+   "summary": "Forty percent of security teams now use AI every day, and another 56% are testing it. Only 4% have no plans to adopt it, according to Prophet Security's State of AI in…",
    "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "02 Nov 2026, 11:29 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/fe787079c468.html"
+   "category": "AI Risk Lab",
+   "date": "02 Nov 2026, 11:30 UTC",
+   "sources": "The Hacker News",
+   "url": "story/c477f1812588.html"
   },
   {
    "id": "87a25e1b557b",
@@ -889,16 +879,6 @@
    "date": "01 Nov 2026, 19:57 UTC",
    "sources": "BleepingComputer, The Hacker News",
    "url": "story/8cfea8890b08.html"
-  },
-  {
-   "id": "1d293ae9cead",
-   "title": "Northstar Security Exits Stealth With $7M to Expose Toxic Risk Combinations",
-   "summary": "The startup maps how identities, assets and vulnerabilities connect, and uses AI agents to find and fix risky combinations of issues. The post Northstar Security Exits…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "01 Nov 2026, 11:15 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/1d293ae9cead.html"
   },
   {
    "id": "be08e34bf976",
@@ -1361,6 +1341,16 @@
    "url": "story/243406f675bd.html"
   },
   {
+   "id": "fe787079c468",
+   "title": "Malicious Claude Code Extension Served in Cursor Supply Chain Attack",
+   "summary": "The extension performed host reconnaissance and attempted to create a reverse SSH tunnel. The post Malicious Claude Code Extension Served in Cursor Supply Chain Attack…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "02 Nov 2026, 11:29 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/fe787079c468.html"
+  },
+  {
    "id": "ff9c9693b43d",
    "title": "Polymarket Returns $3.9 Million to Traders as DebugBear Cites DNS Hijack",
    "summary": "DebugBear says its DNS records were compromised via its domain registrar, and early findings show a single customer was targeted. The post Polymarket Returns $3.9…",
@@ -1399,6 +1389,16 @@
    "date": "01 Nov 2026, 13:53 UTC",
    "sources": "BleepingComputer",
    "url": "story/d15dc155427a.html"
+  },
+  {
+   "id": "1d293ae9cead",
+   "title": "Northstar Security Exits Stealth With $7M to Expose Toxic Risk Combinations",
+   "summary": "The startup maps how identities, assets and vulnerabilities connect, and uses AI agents to find and fix risky combinations of issues. The post Northstar Security Exits…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "01 Nov 2026, 11:15 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/1d293ae9cead.html"
   },
   {
    "id": "78371aadf257",
@@ -1739,26 +1739,6 @@
    "date": "27 Oct 2026, 14:00 UTC",
    "sources": "Microsoft Security Response Center",
    "url": "story/308133db32ac.html"
-  },
-  {
-   "id": "1ce9ccf10a03",
-   "title": "AI-Generated Fake Login Pages Are Making Account Takeovers Easier",
-   "summary": "Fake login pages are nothing new, but generative AI is making them easier to build and more convincing. Attackers can recreate familiar login screens, impersonate…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "27 Oct 2026, 11:32 UTC",
-   "sources": "The Hacker News",
-   "url": "story/1ce9ccf10a03.html"
-  },
-  {
-   "id": "6c05e107bb76",
-   "title": "Hiding Capabilities in AI Models",
-   "summary": "Interesting research: “ AI Models Can Provably Hide Arbitrary Capabilities ” Abstract: Capability evaluations aim to surface dangerous model behaviors before deployment…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "27 Oct 2026, 11:01 UTC",
-   "sources": "Schneier on Security",
-   "url": "story/6c05e107bb76.html"
   },
   {
    "id": "2a3e4a8e199c",
@@ -2649,26 +2629,6 @@
    "date": "27 Oct 2026, 12:02 UTC",
    "sources": "SecurityWeek",
    "url": "story/928eba252ebe.html"
-  },
-  {
-   "id": "3fba9192c925",
-   "title": "Keystone to Destroy 18,835 Hardware Wallets After Hackers Steal Device Verification Key",
-   "summary": "An attacker who gained access to Keystone's website obtained the key that its hardware wallets use to prove they are genuine, the company said in a statement on October…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "27 Oct 2026, 11:46 UTC",
-   "sources": "The Hacker News",
-   "url": "story/3fba9192c925.html"
-  },
-  {
-   "id": "cf5c346fcefd",
-   "title": "Lazarus Abuses South Korean Security Software to Deploy Malware Using Post-Quantum Encryption",
-   "summary": "The North Korea-linked Lazarus Group has been attributed to a cyber espionage campaign dubbed Operation FlashHole targeting at least three organizations in South Korea…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "27 Oct 2026, 11:32 UTC",
-   "sources": "The Hacker News",
-   "url": "story/cf5c346fcefd.html"
   }
  ]
 }
