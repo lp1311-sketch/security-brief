@@ -250,6 +250,28 @@
    "instructions_checked": true
   },
   {
+   "id": "8333d33e3875",
+   "source": "borncity",
+   "source_name": "Born's IT and Windows Blog",
+   "official": false,
+   "source_type": "news",
+   "title": "php2shell: Webseiten von Gemeinden als Sorgenkind?",
+   "link": "https://borncity.com/blog/2026/11/03/php2shell-webseiten-von-gemeinden-als-sorgenkind/",
+   "published": "2026-11-02T23:42:17+00:00",
+   "summary": "Seit dem 21. Oktober 2026 hat das PHP-Projekt ja Patches zum Schließen zweier kritischer, php2shell genannter, Schwachstellen in PHP veröffentlicht. Während große Provider zeitnah patchten und Kunden absicherten, sieht die Situation bei \"Selbst-Hostern\" möglicherweise nicht so gut aus. Speziell Webseiten … Weiterlesen…",
+   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
+   "cves": [],
+   "first_seen": "2026-11-03T00:17:07.952982+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Im Beitrag php2shell: PHP-Updates und Nachlese sind die verfügbaren PHP-Updates genannt und ich verweise auf eine Mitigations-Lösung eines belgischen Hosters für ältere PHP-Versionen.",
+    "Rund 33 Stunden nach dem PHP2Shell-Update wurden die Startseiten von 54.743 Websites in Deutschland, Österreich und der Schweiz abgerufen und seitdem täglich nachgemessen.",
+    "Wo die PHP-Version sichtbar ist, zeigt die Messung ein schnelles Patch-Tempo: 73 Prozent der Gemeinde-Websites meldeten gut einen Tag nach dem Update bereits eine Version mit Fix.",
+    "Oktober, sechs Tage nach dem Update, waren 34 der 57 abgeschalteten Websites wieder online, 19 zeigten weiter ihren Hinweis."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "6f421f1330c7",
    "source": "google-threat-intel",
    "source_name": "Google Threat Intelligence",
@@ -3666,6 +3688,25 @@
     "Although the pledge occupies just one bullet point in the 166-page document, it marks the first formal pledge by a British government to examine where liability for cyber breaches should sit.",
     "A separate overhaul of the bloc’s product liability rules, which member states must adopt by December, extends strict liability to software, including defects caused by missing security updates.",
     "The NCSC urged organizations to patch affected systems or consider taking them offline."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "266b3df3272b",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "UK faces ‘unprecedented rise’ in cyberattacks in coming months, warns cyber chief",
+   "link": "https://therecord.media/uk-ncsc-predicts-rise-cyberattacks-coming-months",
+   "published": "2026-11-03T00:01:00+00:00",
+   "summary": "\"[V]ulnerabilities that have been tolerated for far too long can now be discovered and exploited at a scale that was once unimaginable,\" the NCSC's chief will warn in releasing the agency's annual report.",
+   "image": "https://cms.therecord.media/uploads/london_pexels_jesujoba_isaac_adedeji_917783_15431749_f35414183e.jpg",
+   "cves": [],
+   "first_seen": "2026-11-03T00:17:07.952982+00:00",
+   "image_checked": true,
+   "instructions": [
+    "“Major technology providers are now fixing hundreds of vulnerabilities in a single update … and the Linux kernel project alone patched more than a thousand vulnerabilities last month,” Horne will say, adding that AI “is enabling vulnerabilities to be found and fixed faster than ever.”"
    ],
    "instructions_checked": true
   },
