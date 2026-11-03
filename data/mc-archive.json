@@ -1,6 +1,111 @@
 {
  "items": [
   {
+   "id": "e32e5462cdcc",
+   "title": "MC1536101: Power Platform - Newer GPT models replace Anthropic, Grok, and earlier GPT models",
+   "link": "https://mc.merill.net/message/MC1536101",
+   "summary": "We are updating the models available in prompts in Copilot Studio, Power Automate and Power Apps to bring newer OpenAI GPT models to the Basic, Standard, and Premium tiers, with no change to tier pricing. As part of this update, we’re retiring the Anthropic and Grok models and earlier GPT models listed below. Existing…",
+   "published": "2026-11-03T01:03:19+00:00"
+  },
+  {
+   "id": "11785f4ed9bf",
+   "title": "MC1536065: Microsoft 365 Copilot: Suggestions to continue in another Copilot experience",
+   "link": "https://mc.merill.net/message/MC1536065",
+   "summary": "Microsoft 365 Copilot Chat will suggest switching to a better-fit Copilot mode (e.g., Cowork) after a prompt, maintaining conversation context. This feature rolls out worldwide mid to late November 2026, affects users with access to supported modes, requires no admin action, and has no identified compliance issues.",
+   "published": "2026-11-03T00:14:24+00:00"
+  },
+  {
+   "id": "2e0b01f15af1",
+   "title": "MC1536062: Changes to Word, Excel, and PowerPoint agents in Microsoft Copilot",
+   "link": "https://mc.merill.net/message/MC1536062",
+   "summary": "Microsoft 365 Copilot will replace standalone Word, Excel, and PowerPoint agents with integrated document creation and editing in Copilot Chat. Rollout starts mid-November 2026, completing by late December. Users must start new chats for edits; no admin action is needed, and existing files and permissions remain…",
+   "published": "2026-11-03T00:13:51+00:00"
+  },
+  {
+   "id": "4f449f8271e9",
+   "title": "MC1536059: Microsoft 365 Copilot: Conversation orchestration expands routing and overflow capabilities",
+   "link": "https://mc.merill.net/message/MC1536059",
+   "summary": "Microsoft 365 Copilot enhances Dynamics 365 Contact Center with conversation orchestration, enabling dynamic priority escalation, overflow handling, preferred representative assignment, and bullseye routing. Administrators configure natural-language playbooks. Rollout begins late October 2026. Existing users need no…",
+   "published": "2026-11-03T00:12:45+00:00"
+  },
+  {
+   "id": "669f04e024c4",
+   "title": "MC1536058: Microsoft Teams: What's happening across your organization in Activity notifications",
+   "link": "https://mc.merill.net/message/MC1536058",
+   "summary": "Microsoft Teams is adding a \"What's happening across your organization\" section in the Activity feed to highlight relevant posts from leaders and communities. Rolling out worldwide from November to December 2026, it allows users to join communities and follow colleagues directly from notifications. Admins should…",
+   "published": "2026-11-03T00:12:04+00:00"
+  },
+  {
+   "id": "25b789569f23",
+   "title": "MC1536057: Increasing user exception limit to 10,000 for Standard-Deferred release preferences",
+   "link": "https://mc.merill.net/message/MC1536057",
+   "summary": "The user exception limit for Standard-Deferred release preferences is increasing from 100 to 10,000 users per tenant to support larger pilot groups. This change rolls out worldwide from late October to mid-November 2026, allowing more flexible audience management using Microsoft Entra ID groups. No action is required…",
+   "published": "2026-11-03T00:11:07+00:00"
+  },
+  {
+   "id": "f8d3a755eb02",
+   "title": "MC1536056: Microsoft Teams: Facilitator Protection skill helps identify suspected social-engineering attempts",
+   "link": "https://mc.merill.net/message/MC1536056",
+   "summary": "Microsoft Teams' Facilitator Protection skill uses AI to detect suspected social-engineering attempts in meetings with external participants by analyzing transcripts. If detected, users receive warnings with options to end the meeting or restrict sharing. It rolls out worldwide from late January to mid-February 2027…",
+   "published": "2026-11-03T00:10:19+00:00"
+  },
+  {
+   "id": "206af7ad60ba",
+   "title": "MC1536053: Microsoft 365 Copilot: New accounting capabilities in Excel and Cowork",
+   "link": "https://mc.merill.net/message/MC1536053",
+   "summary": "Microsoft 365 Copilot introduces new accounting features in Excel and Cowork for finance professionals to reconcile accounts, prepare journal entries, analyze performance, and support budgeting and compliance. Available from late October 2026 (preview) and November 13, 2026 (general availability), it requires Copilot…",
+   "published": "2026-11-03T00:08:36+00:00"
+  },
+  {
+   "id": "92bffa32511d",
+   "title": "MC1536049: Microsoft Entra ID: Microsoft-provided SMS and voice authentication to retire for self-service password reset (SSPR)",
+   "link": "https://mc.merill.net/message/MC1536049",
+   "summary": "Microsoft Entra ID will retire Microsoft-provided SMS and voice authentication for self-service password reset (SSPR) starting February 2027, with a 50-day transition per user group. Organizations must prepare alternative recovery methods, as SMS/voice will no longer be available for SSPR after the transition.",
+   "published": "2026-11-03T00:07:14+00:00"
+  },
+  {
+   "id": "e01544d01ec8",
+   "title": "MC1536045: Microsoft Defender: Expanded URBAC permission support for email content access",
+   "link": "https://mc.merill.net/message/MC1536045",
+   "summary": "Microsoft Defender has expanded Unified role-based access control (URBAC) permissions for email content access to include alerts related to potentially malicious URL clicks. Security analysts with the appropriate permission can now preview and download emails from four alert types, ensuring consistent access across…",
+   "published": "2026-11-03T00:04:26+00:00"
+  },
+  {
+   "id": "585621571716",
+   "title": "MC1474458: Microsoft Copilot (Microsoft 365): Power BI reports as references in Copilot Notebooks",
+   "link": "https://mc.merill.net/message/MC1474458",
+   "summary": "Microsoft Copilot Notebooks now support adding Power BI reports as references, enhancing summaries with real business data. Public preview began late September 2026; general availability is delayed to late November through mid-December 2026. No extra setup is needed if Power BI and Copilot are enabled.",
+   "published": "2026-11-02T23:04:13+00:00"
+  },
+  {
+   "id": "a2db15518ab9",
+   "title": "MC1183013: Microsoft Viva Engage: Flexible targeting of Storyline Announcements",
+   "link": "https://mc.merill.net/message/MC1183013",
+   "summary": "Microsoft Viva Engage introduces My Team audiences and flexible targeting for Storyline Announcements, allowing leaders to tailor communications by organizational attributes, groups, or individuals. Public preview starts mid-November 2025; general availability begins mid-January 2027. No admin action required, but…",
+   "published": "2026-11-02T23:00:23+00:00"
+  },
+  {
+   "id": "6e900c818ba0",
+   "title": "MC1257999: Microsoft Purview DLP: Unmanaged cloud app discovery and protection with Microsoft Purview and Palo Alto Prisma Access",
+   "link": "https://mc.merill.net/message/MC1257999",
+   "summary": "Microsoft Purview now integrates with Palo Alto Prisma Access to extend data loss prevention to network traffic, enabling discovery and protection of sensitive data in unmanaged cloud apps. The feature rolls out from mid-April 2026 (preview) to June 2027 (general availability) and requires admin activation.",
+   "published": "2026-11-02T22:20:09+00:00"
+  },
+  {
+   "id": "21ade0fec1aa",
+   "title": "MC1217640: Microsoft Purview | Information Protection - Content Explorer: Unscanned data and Classification History summary metrics",
+   "link": "https://mc.merill.net/message/MC1217640",
+   "summary": "Microsoft Purview planned new summary metrics in Content Explorer to show unscanned files and classification history, aiding admins in data governance. Public preview was set for late July 2026, but general availability was canceled. No action is required; the feature would have been enabled by default.",
+   "published": "2026-11-02T20:46:45+00:00"
+  },
+  {
+   "id": "a4dd881bc4d1",
+   "title": "MC1488847: Microsoft Teams: Breakout room support for Teams Rooms on Android",
+   "link": "https://mc.merill.net/message/MC1488847",
+   "summary": "Microsoft Teams Rooms on Android will support breakout rooms starting early December 2026, allowing meeting organizers to assign and move these devices between breakout and main rooms. This update enhances meeting coordination and aligns Android features with Windows, requiring no action but recommending communication…",
+   "published": "2026-11-02T18:38:04+00:00"
+  },
+  {
    "id": "0f349091fe87",
    "title": "MC1535667: Building a risk-based patching response for Windows Server",
    "link": "https://mc.merill.net/message/MC1535667",
@@ -314,111 +419,6 @@
    "link": "https://mc.merill.net/message/MC1450126",
    "summary": "Microsoft is transitioning Teams Android device management from the Teams admin center to the Teams Rooms Pro Management Portal by late 2026/early 2027. Devices must run a supported Admin Agent version, with automatic updates for online devices. Offline devices require manual updates to maintain management…",
    "published": "2026-10-29T18:41:36+00:00"
-  },
-  {
-   "id": "cb1f8b01eb5b",
-   "title": "MC1530615: Microsoft Teams: Report guest invitations for security concerns",
-   "link": "https://mc.merill.net/message/MC1530615",
-   "summary": "Microsoft Teams will let users report suspicious guest invitations for security concerns starting November 2026. Reports go to IT admins via the Teams admin center and Microsoft. No action is needed if \"Report a security concern\" is already enabled in messaging policies, which control this feature.",
-   "published": "2026-10-29T18:35:20+00:00"
-  },
-  {
-   "id": "368e471db020",
-   "title": "MC1530613: Microsoft Teams: Impersonation protection for Teams meetings",
-   "link": "https://mc.merill.net/message/MC1530613",
-   "summary": "Microsoft Teams will roll out impersonation protection for meetings in December 2026, displaying warnings and risk indicators to help users identify deceptive participants. No admin action is needed, but admins should inform users and security teams. This feature enhances security by highlighting potential…",
-   "published": "2026-10-29T18:34:41+00:00"
-  },
-  {
-   "id": "c4d5edc1ff0c",
-   "title": "MC1519843: New Outlook for Windows: All Accounts view brings email into a single inbox view",
-   "link": "https://mc.merill.net/message/MC1519843",
-   "summary": "The new Outlook for Windows introduces an All Accounts view, allowing users to see and manage emails from multiple accounts in a single inbox without merging mailboxes. It supports AI-assisted workflows with Copilot. Rollout began in September 2026, completing by November. No admin action is currently needed.",
-   "published": "2026-10-29T18:34:28+00:00"
-  },
-  {
-   "id": "5f5f94414e0f",
-   "title": "MC1530612: Microsoft 365 admin center: Pin Microsoft Copilot app setting for users with a paid Microsoft 365 Copilot license",
-   "link": "https://mc.merill.net/message/MC1530612",
-   "summary": "Microsoft 365 admin center updates the Copilot taskbar pinning setting to allow pinning only for users with a paid Copilot license, removing the default \"Do not pin\" selection. Rollout starts December 2026. Admins must have Microsoft Entra group creation permissions to use the new option.",
-   "published": "2026-10-29T18:33:59+00:00"
-  },
-  {
-   "id": "187337d64f4d",
-   "title": "MC1530611: Office in Copilot brings the full power of Office into the Microsoft Copilot app",
-   "link": "https://mc.merill.net/message/MC1530611",
-   "summary": "Office in Copilot integrates Word, Excel, and PowerPoint into the Microsoft Copilot app, enabling users to create, edit, and collaborate on files without leaving the app. Rolling out worldwide in mid-November 2026, it requires no admin action but is managed via existing Copilot policies and Entra ID controls.",
-   "published": "2026-10-29T18:33:16+00:00"
-  },
-  {
-   "id": "b46665d63292",
-   "title": "MC1530610: SharePoint Lists: Refreshed user experience",
-   "link": "https://mc.merill.net/message/MC1530610",
-   "summary": "Microsoft is updating SharePoint Lists with a refreshed user experience to simplify actions, improve navigation, and enhance visibility of views and filters. The rollout starts mid-December 2026. No action is needed, but organizations using custom command bar formatters should review changes. No compliance issues…",
-   "published": "2026-10-29T18:32:35+00:00"
-  },
-  {
-   "id": "0d315151a5aa",
-   "title": "MC1526712: Power Platform – Information about the 2026 time zone changes in Canada",
-   "link": "https://mc.merill.net/message/MC1526712",
-   "summary": "What and why Power Platform services are being updated to support the 2026 time zone changes in Manitoba, Alberta, and British Columbia. This is a general awareness message to support the changes and complements MC1510951 — Windows updates are available for 2026 time zone changes in Canada. Rollout schedule Updates…",
-   "published": "2026-10-29T18:31:15+00:00"
-  },
-  {
-   "id": "c565d391c377",
-   "title": "MC1530609: Engage plugin for Copilot Cowork and Autopilot: General availability",
-   "link": "https://mc.merill.net/message/MC1530609",
-   "summary": "The Engage plugin for Copilot Cowork and Autopilot will be generally available worldwide by mid-November 2026. It integrates Engage conversations into Copilot workflows, enabling users to access, summarize, and interact with community content without switching apps. The plugin is off by default and controlled by…",
-   "published": "2026-10-29T18:31:02+00:00"
-  },
-  {
-   "id": "1a5f0e717586",
-   "title": "MC1448373: Teams device management transition from Teams admin center to Teams Rooms Pro management portal",
-   "link": "https://mc.merill.net/message/MC1448373",
-   "summary": "Teams device management in the Teams Admin Center (TAC) will be deprecated from November 2026, transitioning to the Teams Rooms Pro Management Portal (PMP). Admins must complete migration steps, update devices, and verify PMP connectivity to avoid management disruptions. The rollout varies by device type and cloud…",
-   "published": "2026-10-29T18:25:08+00:00"
-  },
-  {
-   "id": "95d41b5aec85",
-   "title": "MC1530595: Microsoft Copilot Feedback UX update",
-   "link": "https://mc.merill.net/message/MC1530595",
-   "summary": "Microsoft Copilot is updating the thumbs-down feedback to include selectable issue categories and optional comments for more actionable input. Rolling out worldwide in late October 2026, it applies to organizational, consumer, and education accounts on supported platforms, with no admin action required. New data is…",
-   "published": "2026-10-29T18:13:56+00:00"
-  },
-  {
-   "id": "6ae7ceac90af",
-   "title": "MC1528011: Microsoft Teams: External presenter support for event group chat",
-   "link": "https://mc.merill.net/message/MC1528011",
-   "summary": "Microsoft Teams will support external presenters in event group chat starting early December 2026, enabling cross-tenant coordination during events with the \"Enable Green room\" option. External user collaboration must be enabled, allowing external presenters to read and post messages while maintaining compliance with…",
-   "published": "2026-10-29T17:26:28+00:00"
-  },
-  {
-   "id": "1113020c5d44",
-   "title": "MC1530443: Policy-based in-box app removal extended to multi-session environments",
-   "link": "https://mc.merill.net/message/MC1530443",
-   "summary": "What and why: Policy-based app removal now supports multi-session environments. Use it to manage the removal of supported in-box apps on devices running Windows 11 Enterprise and Education, version 24H2 and later. This capability applies to preinstalled Microsoft Store apps and other MSIX/APPX-packaged apps. Rollout…",
-   "published": "2026-10-29T17:10:50+00:00"
-  },
-  {
-   "id": "949b94b1d1e1",
-   "title": "MC1518029: Microsoft Entra ID: Risk-based anti-bot verification (CAPTCHA) for SMS and voice authentication",
-   "link": "https://mc.merill.net/message/MC1518029",
-   "summary": "Microsoft Entra ID is adding risk-based CAPTCHA verification for SMS and voice first-factor sign-ins to reduce automated abuse. Rollout began mid-October 2026. Some users may encounter this step based on behavior. Organizations should prepare help desks, review network requirements, and encourage phishing-resistant…",
-   "published": "2026-10-29T16:27:01+00:00"
-  },
-  {
-   "id": "0e9725bca988",
-   "title": "MC1530368: Microsoft Copilot Studio cost controls are expanding to Cost Management in the Microsoft 365 admin center",
-   "link": "https://mc.merill.net/message/MC1530368",
-   "summary": "We are announcing the ability to use the expanded cost controls for Cost Management for Copilot Studio into the Microsoft 365 admin center in Power Platform. This feature will reach general availability by November 20, 2026. How does this affect me? This update gives administrators a centralized way to manage Copilot…",
-   "published": "2026-10-29T15:16:27+00:00"
-  },
-  {
-   "id": "ecbc034b8a54",
-   "title": "MC1529501: Updates available for Microsoft 365 Apps for Current Channel",
-   "link": "https://mc.merill.net/message/MC1529501",
-   "summary": "We've released updates to the following update channel for Microsoft 365 Apps: Current Channel When this will happen: We'll be gradually rolling out this update of Microsoft 365 Apps to users on that update channel starting October 28th, 2026 (PST). How this will affect your organization: If your Microsoft 365 Apps…",
-   "published": "2026-10-28T23:45:44+00:00"
   }
  ]
 }
