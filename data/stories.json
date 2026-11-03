@@ -2136,28 +2136,6 @@
    "instructions_checked": true
   },
   {
-   "id": "968629f0ead3",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "CISA Confirms Active Exploitation of Two PHP2Shell Flaws Enabling Remote Code Execution",
-   "link": "https://thehackernews.com/2026/10/cisa-confirms-active-exploitation-of.html",
-   "published": "2026-10-27T04:37:59+00:00",
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday confirmed active exploitation of the recently patched PHP2Shell flaws by adding them to its Known Exploited Vulnerabilities (KEV) catalog. The PHP vulnerabilities, both rated 9.2 on the CVSS scoring system, facilitate unauthenticated remote…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-vxKiggBxnuXu0fenkg0gfce0iuuA3OxeVzvWAdc0zaDPDayQgY8y_miqnvHJrpYvw61AhvGHEOW4EIKIYZ4QkRGjGEhqiU-3R0o6m0fgHJYDtszsoXyqse7WDGMh4rvEuTf1T-17KOVkyJKgEcaw5yBXFi6ElwIFyU9TjudvJrHz4fz6VNro8bjUZcnD/s1600/cisa-php.jpg",
-   "cves": [
-    "CVE-2026-109618"
-   ],
-   "first_seen": "2026-10-27T05:58:16.974317+00:00",
-   "instructions": [
-    "Federal agencies have time until October 29, 2026, to apply the necessary fixes.",
-    "The severity of the vulnerabilities has prompted numerous advisories from software and security vendors and government agencies across the world, including -",
-    "\"This is disabled by default in cURL, but applications and HTTP client libraries can enable it.\""
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "083a1ea7d205",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2836,6 +2814,26 @@
    "instructions_checked": true
   },
   {
+   "id": "3e6bc640da57",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Attackers Exploit Critical Siemens IoT2050 Flaw to Plant Remote Command Backdoors",
+   "link": "https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html",
+   "published": "2026-11-03T05:34:41+00:00",
+   "summary": "A maximum-severity security flaw impacting Siemens SIMATIC IoT2050 Advanced devices has come under active exploitation, VulnCheck has revealed. The vulnerability, tracked as CVE-2026-58115 (CVSS score: 10.0), is a case of missing authentication for a critical function that could be exploited by an unauthenticated…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLg0QvfH0SD_sz2pFnyrG6Zcs-ltrKaf42ZY7PYKTsA26Nu4alNeqarZZ9HGEjO0UJFr5Wfsb7WBSDYoRnGi6X1jXZ8_4xx1VJtYshtPXYX9DVJYu4lln_IqEhf-NQJC7MKWI1JVzzR5heu6O_OnWezfKsj3AnBs5NKVp5dOVgR-7XuKMIAiyiKflPlT9E/s1600/siemens-hack.jpg",
+   "cves": [
+    "CVE-2026-58115"
+   ],
+   "first_seen": "2026-11-03T05:35:52.311451+00:00",
+   "instructions": [
+    "As mitigations, Siemens recommends that users uninstall Node-RED or harden the installation by following the steps below -"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "d596e3f2bace",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2853,6 +2851,26 @@
     "Microsoft said such a certificate continues to work even after the account's password is reset or the first machine is wiped, so neither step ends the attacker's access.",
     "There is no patch, because nothing here was a software flaw.",
     "Review sign-in certificate templates for ones that let the requester name the account, or that too many users can enroll in, and remove enrollment rights that are not needed."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "d4042f8de11d",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Attackers Target Unpatched CryptoPayment Gateway Flaw That Can Expose Wallet Credentials",
+   "link": "https://thehackernews.com/2026/11/attackers-target-unpatched.html",
+   "published": "2026-11-03T05:34:37+00:00",
+   "summary": "Threat actors are attempting to exploit an unpatched maximum-severity security vulnerability in the CryptoPayment Gateway WordPress plugin, according to findings from Defused Cyber. The vulnerability in question is CVE-2026-81648, which carries a CVSS score of 10.0. Successful exploitation of the flaw could permit…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1tflB6yfzJv3UijqJlfCikzOQx0NHz9AVTh13vDvWu-LfAfFfBDjGbKI79Cb3dd2Ca_ck2KNP46WwYKcuweVD9Wc1srFpRkBimsG-EQS567tR92Yyg1DKPWqhhZHc1sP71qHWQoUxndY2VzDlqVsd2gx2GPcMx7pjVG8ws13bfMKXDtqz5q7EiJ22Mmr_/s1600/wp.jpg",
+   "cves": [
+    "CVE-2026-81648"
+   ],
+   "first_seen": "2026-11-03T05:35:52.311451+00:00",
+   "instructions": [
+    "In the absence of a fix, site owners are advised to remove the plugin, rotate wallet keys, and audit for any suspicious changes."
    ],
    "instructions_checked": true
   },
