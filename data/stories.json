@@ -84,6 +84,27 @@
    "instructions_checked": true
   },
   {
+   "id": "6e52bc4c45b1",
+   "source": "ars",
+   "source_name": "Ars Technica Security",
+   "official": false,
+   "source_type": "news",
+   "title": "UEFI bootkit infected fully patched Windows machines. Is Microsoft to blame?",
+   "link": "https://arstechnica.com/security/2026/11/uefi-bootkit-infected-fully-patched-windows-machines-is-microsoft-to-blame/",
+   "published": "2026-11-03T16:03:13+00:00",
+   "summary": "In 2023, malware tracked as BlackLotus became the first publicly documented in-the-wild UEFI bootkit capable of bypassing Secure Boot on fully updated Windows 11 systems. With the industry-wide chain-of-trust mechanism subverted, the malware was able to run malicious code before Windows was fully loaded and many…",
+   "image": "https://cdn.arstechnica.net/wp-content/uploads/2020/10/malware-1000x648.jpg",
+   "cves": [],
+   "first_seen": "2026-11-03T16:18:42.092142+00:00",
+   "instructions": [
+    "One item that must be digitally signed is the boot manager, a component stored on a small dedicated partition on a drive.",
+    "The mitigation process included adding a new signing certificate, Windows UEFI CA 2023, to Secure Boot’s database of trusted certificates.",
+    "In 2024, Microsoft introduced a broader mitigation that provided a way to add the old certificate, Windows Production PCA 2011, to Secure Boot’s forbidden-signatures database.",
+    "A Microsoft representative said in an email that the company is advising customers to follow guidance in this Knowledge Base post published two weeks ago."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "865fa666afda",
    "source": "windows-blog",
    "source_name": "Windows Experience Blog",
@@ -2548,6 +2569,27 @@
    "instructions_checked": true
   },
   {
+   "id": "63d055e30b47",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "cPGuard Update Channel Hijacked to Backdoor Linux Servers and Collect Password Hashes",
+   "link": "https://thehackernews.com/2026/11/cpguard-update-channel-hijacked-to.html",
+   "published": "2026-11-03T15:16:32+00:00",
+   "summary": "An attacker broke into the update system of the cPGuard security tool on November 2 and used it to send a malicious script to customers' Linux servers. The script installed a backdoor and collected password hashes and other sensitive files from servers that ran it, cPGuard maker OPSSHIELD said in an advisory. The…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtc3HOtWwxZPk7V8yva9o6Oe5lWAPX8KZsWHG27ohycqrb04wAKSDSSdk6ta6y284N9gT6Ab6QKIWwTPss2bBK4PtS3Fm7gSI9QG5kec2AvEgQPjQnc0YlhlUQx0uZKt2ygn576BQ3aburL-IhrMRFVm1vEpTR5ol06R0BtjySvifD05Q_dQGUPvyPLxs/s1600/cpgaurd.png",
+   "cves": [],
+   "first_seen": "2026-11-03T16:18:42.092142+00:00",
+   "instructions": [
+    "The script installed a backdoor and collected password hashes and other sensitive files from servers that ran it, cPGuard maker OPSSHIELD said in an advisory .",
+    "The server should still be treated as potentially compromised, even if it now runs 5.88.25 or later.",
+    "Admins should also take these steps for any server where the script ran or may have run:",
+    "OPSSHIELD is not recommending a full reset or operating system rebuild as a routine step, and says that view could change as the investigation continues."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "ad2df65419af",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2639,6 +2681,25 @@
     "TrendAI advises companies with remote staff to treat unmanaged consumer devices on home networks as part of their attack surface, and to keep corporate access behind managed devices.",
     "The backdoor is still on the boxes, and owners cannot remove it themselves.",
     "To install software silently, it first turns off the app checks in Google Play Protect, Android's built-in security feature."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "310fe7a6e4c3",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Google Warns LLMjacking Attacks Are Costing Some Enterprises Up to $1 Million in Cloud Charges",
+   "link": "https://thehackernews.com/2026/11/google-warns-llmjacking-attacks-are.html",
+   "published": "2026-11-03T15:41:53+00:00",
+   "summary": "Google on Monday warned that threat actors are hijacking enterprise access to Large Language Models (LLMs) to fraudulently leverage expensive computing resources and AI services. The tactic is called LLMjacking, a form of resource hijacking adapted for the LLM era, where an attacker obtains an API key through…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjvqwPJPXsflyvqykVK3Pd1lLXLzEJ6vpLudxQUyYbWkS4nQ0dr9dhcSlMCPwgqfAkyadPSj28XReqkeiymKG5RAZMWpx5Hqhg_XI0HNp3jRMRpaO-wVIRbyJyS8MaaqDNOxXvk8aUENx_aiNMqrqm9SWjtJVpXR2uaP-LNp5deG4U_4YvSxpPKtdJLRNoh/s1600/llmjacking.png",
+   "cves": [],
+   "first_seen": "2026-11-03T16:18:42.092142+00:00",
+   "instructions": [
+    "Some threat actors attempt to bypass rate limits by adopting a \"burn and rotate\" strategy that involves continuously creating and deleting short-lived service accounts",
+    "Shortly after the legitimate install of the Codex or Claude Code CLI through npm, users are likely instructed to run a one-line command to fetch fileless PowerShell or bash setup script from a lookalike domain (\"vibe.aiok[.]me\") that's used to override the configuration."
    ],
    "instructions_checked": true
   },
@@ -4818,26 +4879,6 @@
    "instructions_checked": true
   },
   {
-   "id": "db852607b136",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Warp discloses breach exposing AI agent logs, user telemetry data",
-   "link": "https://www.bleepingcomputer.com/news/security/warp-discloses-breach-exposing-ai-agent-logs-user-telemetry-data/",
-   "published": "2026-10-27T16:15:39+00:00",
-   "summary": "Agent decision logs and telemetry data belonging to Warp agentic development environment users were exposed in an attack on a third-party vendor in the project's infrastructure.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/27/warp.jpg",
-   "cves": [],
-   "first_seen": "2026-10-27T16:29:08.596210+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Warp users are advised to remain vigilant, monitor account activity, and treat unsolicited communications with increased caution.",
-    "“We detected the operation within hours and were able to remediate and mitigate the impact,” the CEO added."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "5ea1d647d005",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4915,6 +4956,22 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt634b295db59f5c55/6ae0fd3853ec236cfd97d242/Email_flood-juststock-GettyImages-2156140935.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-10-27T21:16:50.047660+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "a32b51d8e118",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "LLMJacking Emerges as Thriving Cybercriminal Enterprise",
+   "link": "https://www.darkreading.com/cloud-security/llmjacking-thriving-cybercriminal-enterprise",
+   "published": "2026-11-03T15:35:50+00:00",
+   "summary": "Cybercriminals have turned reselling cloud access to LLMs into a lucrative business model, with some victims paying as much as $1 million in resource consumption before access was revoked.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltbc06310368e21110/6a4bdbe6a6d4757864059ce1/llm-Boy_Wirat-Getty-2149059417.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-03T16:18:42.092142+00:00",
    "instructions": [],
    "instructions_checked": true
   },
@@ -6442,28 +6499,6 @@
    "image_checked": true,
    "instructions": [
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "820476dc1929",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Tailscale Rushes Patches After Uncoordinated Disclosure of ‘Tailworm’ Flaws",
-   "link": "https://www.securityweek.com/tailscale-rushes-patches-after-uncoordinated-disclosure-of-tailworm-flaws/",
-   "published": "2026-10-27T15:26:12+00:00",
-   "summary": "Tailscale is preparing a patch for Tailscale SSH flaws whose details went public over the weekend, before any fixes had been released. The post Tailscale Rushes Patches After Uncoordinated Disclosure of ‘Tailworm’ Flaws appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2024/04/vulnerability.jpeg",
-   "cves": [],
-   "first_seen": "2026-10-27T15:29:29.929217+00:00",
-   "image_checked": true,
-   "instructions": [
-    "In some cases, a session may be able to do more than the configured local user should be allowed to do,” Shaver said. “While it’s a serious concern, it isn’t the same as an unauthenticated attacker being able to connect to arbitrary machines, but the potential impact depends on how SSH access is configured,” he added.",
-    "A security advisory and a technical write-up will follow once the update is out.",
-    "None had made it into a numbered release at that point. “Based on our current assessment, we’re not recommending that everyone disable Tailscale SSH,” the vendor said.",
-    "Until the patch arrives, Tailscale advises organizations to review their SSH access policies and disable SSH forwarding where it isn’t needed, which it says mitigates several of the more serious findings."
    ],
    "instructions_checked": true
   },
