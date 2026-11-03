@@ -1,6 +1,27 @@
 {
  "items": [
   {
+   "id": "4e5242d6436d",
+   "source": "ars",
+   "source_name": "Ars Technica Security",
+   "official": false,
+   "source_type": "news",
+   "title": "Google dismantles botnet secretly running on 1.3 million Android TV boxes",
+   "link": "https://arstechnica.com/google/2026/11/google-dismantles-botnet-secretly-running-on-1-3-million-android-tv-boxes/",
+   "published": "2026-11-03T17:08:21+00:00",
+   "summary": "Google's Threat Intelligence Group says it has shut down a massive botnet called x.cpe. At its height, x.cpe ran on more than 1.3 million Android TV devices, and unusually, these were Google-certified boxes. Google says its screening process missed the malware due to \"obfuscation techniques\" employed by Shenzhen-based…",
+   "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/mecool-malware.jpg",
+   "cves": [],
+   "first_seen": "2026-11-03T17:20:53.929523+00:00",
+   "instructions": [
+    "This action should make the affected devices safe to use, but probably not as safe as they should be.",
+    "Manufacturers must have their devices certified if they want access to Google apps and branding, a process that is supposed to catch threats like this.",
+    "Anyone who has purchased a MECOOL or white label Android TV box of unknown origin should check it.",
+    "However, Videostrong’s compromised boxes, mostly sold under the MECOOL brand, evaded detection by using a backdoor to remotely install the malware after the devices were set up and online."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "ce0cce9f3bc5",
    "source": "ars",
    "source_name": "Ars Technica Security",
@@ -2569,6 +2590,46 @@
    "instructions_checked": true
   },
   {
+   "id": "bc96c130a163",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Barracuda Flaws Could Be Chained to Bypass Authorization and Gain Root Access",
+   "link": "https://thehackernews.com/2026/11/barracuda-flaws-could-be-chained-to.html",
+   "published": "2026-11-03T15:59:19+00:00",
+   "summary": "Barracuda has disclosed details of two vulnerabilities affecting its products that, if chained together, could allow an attacker to bypass authorization controls and gain root access to a susceptible device. The vulnerabilities, a pre-authentication authorization bypass vulnerability and a command injection…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCvGJCkYjldhAvsjMo47UqxGOTfVY1zCcjZQzgebkO8j1__fa0cFOn3CAV1jPTUpzwDDISQKPQP5eVGOl9BzRLBX7KlWuU2HMpzuHRWV2wyaItDwYgPu0X7m3qE5V1kgFzKZ1QYcRBcZyDqkUTFberiOWXBfV_-suYC1QQWq_TwBMeyme4F0FsOZnpijhC/s1600/barracuda.png",
+   "cves": [
+    "CVE-2026-116606"
+   ],
+   "first_seen": "2026-11-03T17:20:53.929523+00:00",
+   "instructions": [
+    "\"Customers using these products should verify that their systems are running the latest firmware versions and have received all security patches,\" it added.",
+    "Restrict access to administrative interfaces to trusted internal networks",
+    "\"If firmware on a device is multiple versions out of date, customers may need to perform more than one update.\""
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "19a35a6714f9",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Binance Reveals How Fake Job Interviews and AI Tool Abuse Led to $6.43 Billion Theft",
+   "link": "https://thehackernews.com/2026/11/binance-reveals-how-fake-job-interviews.html",
+   "published": "2026-11-03T16:55:58+00:00",
+   "summary": "Binance on Tuesday said the record-setting theft of $6.43 billion in assets from the world's largest cryptocurrency exchange was the culmination of a \"sophisticated, multi-stage campaign\" that involved the use of a tampered Homebrew installation and recruitment-themed social engineering attack targeting two of its…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZCMCR8h3YCPcfY8Fbe54ckYKh_YUt_Yd7v82dAHobZtMNlQl_JVKWUX4OUPwR0dEmYsLNfeKsW6rUthk8pYRVhIddbPXx86sHCcNBRL9E-9LJTPrYSYwJ_V66EwGJNFeoWgDPbjcGfeJ4w2qn_gfTjXBoNAnfWq4GZ8rq7VOhnqt4QlItYEBr3Zar7XL1/s1600/bin.jpg",
+   "cves": [],
+   "first_seen": "2026-11-03T17:20:53.929523+00:00",
+   "instructions": [
+    "The starting point has been traced back to a supply chain attack targeting one of its engineers from the Wallet DevOps team (named \"Engineer A\"), who downloaded a trojanized Homebrew installer to install a popular artificial intelligence (AI) tool after searching for it on a search engine."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "63d055e30b47",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2978,6 +3039,28 @@
    "first_seen": "2026-10-28T15:33:38.447482+00:00",
    "image_checked": true,
    "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "848edcd7f637",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Binance CEO says ‘months-long campaign’ led to $6.3 billion theft as N. Korea denies responsibility",
+   "link": "https://therecord.media/binance-cryptocurrency-theft-months-long-campaign-nkorea",
+   "published": "2026-11-03T16:42:00+00:00",
+   "summary": "North Korean attackers \"combined a range of techniques, including social engineering by fake recruitment interviews,\" Binance said about the multibillion-dollar crypto heist it discovered in October.",
+   "image": "https://cms.therecord.media/uploads/binance_logo_f4cdb044bb.jpg",
+   "cves": [],
+   "first_seen": "2026-11-03T17:20:53.929523+00:00",
+   "image_checked": true,
+   "instructions": [
+    "It has also hired a security company to conduct a review of the incident to validate its findings and recommend additional actions.",
+    "Investigators said the breach started in June, when an engineer downloaded malicious software to install a popular AI coding tool.",
+    "The company said it lost valuable time in stopping the attack because it had to develop specialized procedures in the moment to revoke access and authorizations.",
+    "Binance said it has taken several other actions to enable quicker responses to security incidents."
+   ],
    "instructions_checked": true
   },
   {
@@ -4992,6 +5075,22 @@
    "instructions_checked": true
   },
   {
+   "id": "47887f1443ad",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "9 Cyber Awareness Tips That Actually Match Today’s Maze of Threats",
+   "link": "https://www.darkreading.com/cyber-risk/9-cyber-awareness-tips-todays-maze-threats",
+   "published": "2026-11-03T15:38:20+00:00",
+   "summary": "Practical guidance on safer search, stronger login security, better executive protection, and other habits that help reduce enterprise risk.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt73242ae0d40b68c0/6aea0c8226a0725a0631618d/maze-mikkelwilliam-GettyImages-1420679447.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-03T17:20:53.929523+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "70a17c1d3a5b",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -5276,22 +5375,6 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blta280e1d9bd26c729/6ae8fcfdb20def7a8ae983ea/school_front-YinYang-GettyImages-157476686.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-03T14:13:04.962203+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "c64d4188c21b",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "'Aokigahara' Stealer Targets 'Developer Keyrings' & AI Assistants",
-   "link": "https://www.darkreading.com/endpoint-security/aokigahara-stealer-developer-keyrings-ai-assistants",
-   "published": "2026-10-27T16:47:20+00:00",
-   "summary": "The malware's focus on AI tools expands the traditional infostealer playbook to expose a forest of AI sessions, sensitive business data, and developer infrastructure from a single compromised endpoint.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt951105ce06efe522/6ae0c30979732c23e08f3f0c/aokigahara-Carl_Court-GettyImages-931736204jpg..jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-10-27T17:30:04.642910+00:00",
    "instructions": [],
    "instructions_checked": true
   },
