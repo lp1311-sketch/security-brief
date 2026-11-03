@@ -2398,29 +2398,6 @@
    "instructions_checked": true
   },
   {
-   "id": "a6006728be28",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Microsoft Authenticator Flaw Let Permissionless Android Apps Steal Work Account Tokens",
-   "link": "https://thehackernews.com/2026/10/microsoft-authenticator-flaw-let.html",
-   "published": "2026-10-27T12:09:50+00:00",
-   "summary": "Microsoft has fixed a flaw in its Authenticator app for Android that let a malicious app with no permissions pose as a trusted Microsoft app, such as Teams, and collect sign-in tokens for a victim's work account. Microsoft tracks the flaw as CVE-2026-80097 and fixed it in Authenticator for Android version 6.2606.4246…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqk63DF3MJCMgQqpg91UsWY7mjACbBgPl50GfKwDPi7v3md6sP5l8a2BUqHABjgMN_6BzgcMx4vVKW4hR9B9pz8_XHqp5ctKqQQLw-RJwuKmVWm2MaSzEMkHIsV-Yi0V6Mq_gUYYuzTpi-BzV2-8dRVYBjtuW4nb9TbobkPwvOGTkIFTpr334JB_LZIkw/s1600/msms.jpg",
-   "cves": [
-    "CVE-2026-80097"
-   ],
-   "first_seen": "2026-10-27T12:44:30.927471+00:00",
-   "instructions": [
-    "Microsoft tracks the flaw as CVE-2026-80097 and fixed it in Authenticator for Android version 6.2606.4246, so anyone using the app should update.",
-    "The fix is to update Microsoft Authenticator for Android to version 6.2606.4246 or later, as linked in Microsoft's advisory.",
-    "Because the broker controls access to the entire account, it should be careful about which app it grants a token to.",
-    "The tokens apply to the work account signed into Authenticator on that device, not to other accounts."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "ad2cc061f552",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2996,6 +2973,45 @@
    "instructions_checked": true
   },
   {
+   "id": "77f64f32faf5",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Red Hat Patches 9.8-Rated Linux TCP RCE Flaw While Ubuntu Releases Fixes for Testing",
+   "link": "https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html",
+   "published": "2026-11-03T11:23:53+00:00",
+   "summary": "Fixed kernels for a use-after-free vulnerability in the Linux kernel's IPv4 TCP code are now available for Red Hat Enterprise Linux 8, 9, and 10, while Ubuntu's fixes for its three newest long-term-support releases remain in its opt-in testing channel with no date for a regular update. The flaw, tracked as…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdf8UfDHsjH9VaJGtYT5WgjtJ1G5YRMkjPWNeKn-hw05sM9ny0kW9L2eIc3UCiIQ7qmc_TmfrenS1WH8KiRBjln2hQS0X7DUlykxdHrzDgg4uoiHpiOf3fVTOnUuOt4618z3PN7hw1AfUch_y0Tot3ubTga5LEfyWnATkzegfQBSWxMbzNzJaGY18QqC8/s1600/linux-rce.jpg",
+   "cves": [
+    "CVE-2026-98432"
+   ],
+   "first_seen": "2026-11-03T12:59:11.349315+00:00",
+   "instructions": [
+    "Several sources have recommended disabling Multipath TCP (MPTCP) as a workaround.",
+    "\"The Ubuntu Security Team believes that security updates are the only appropriate mitigation.\"",
+    "Fixed kernels for a use-after-free vulnerability in the Linux kernel's IPv4 TCP code are now available for Red Hat Enterprise Linux 8, 9, and 10, while Ubuntu's fixes for its three newest long-term-support releases remain in its opt-in testing channel with no date for a regular update.",
+    "Canonical tests kernel updates across more than 2,000 certified servers and devices before releasing them to the regular update channel, and no release date has been given."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "3ce297811edf",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Russia-Aligned Gorbag Hackers Exploit WinRAR Flaw to Deploy Data-Stealing Malware",
+   "link": "https://thehackernews.com/2026/11/russia-aligned-gorbag-hackers-exploit.html",
+   "published": "2026-11-03T11:00:45+00:00",
+   "summary": "A Russia-aligned threat actor known as Gorbag has been observed using simple information stealer malware in attacks targeting Ukrainian organizations. \"Active since at least February 2025, the group has focused exclusively on Ukrainian targets, with a clear preference for law enforcement and justice entities, local…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqyPfrBB7GYTnYsvVj2TxCv0pPwFh_PkVpdQcxuspKgQfbsX1p2kDSdokIyPqLsxSfBCkFPiTATfZxZRbouqkoqfEESL7CgA-MyXD61eQFluiQtdFZDyXQc_3EUAg71JWIHxq9MPVLrwwegvUVuiViE8AxsKH6iBVypWazO0wmCoaC3-D1Ih9Yw3vwN1FJ/s1600/russia-hackers.jpg",
+   "cves": [],
+   "first_seen": "2026-11-03T12:59:11.349315+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "36d509a3e525",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -3034,6 +3050,27 @@
     "\"Synology also recommends enabling automatic updates to keep DSM up to date at all times.\"",
     "Synology is urging customers to update the DiskStation Manager (DSM) software powering its Network Attached Storage (NAS) devices following ransomware attacks.",
     "CVE-2024-10445 (CVSS score: 4.3) - An improper certificate validation vulnerability in the update functionality in DSM that could allow remote attackers to write limited files via unspecified vectors."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "20c9c9965d29",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "The 4 Elements of Exposure Prioritization and How to Operationalize Them",
+   "link": "https://thehackernews.com/2026/11/the-4-elements-of-exposure.html",
+   "published": "2026-11-03T11:18:20+00:00",
+   "summary": "Your team is remediating more vulnerabilities than ever, yet your breach risk has barely changed. You’re spending too much time and effort on exposures attackers may never exploit, while higher-risk exposures sit, waiting in the queue. Gartner®’s report on exposure prioritization states that fewer than 10% of…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiK5J_qkmStJVdWJYvNtd4lb2cRfPMaSvu1dEKp8tXOjw71kt_fRGGfdPr60HL5agJ8NMBYO5sH7jVvzMWXlLW1fq0xilaF0GyLQHCznSjHeos7sdP_Xwmd6OWyzKv8Yq8m-Z0Hn3x15GBU8AySu2A27OlIWiuAW9ch0iZuXxTpELRSQ6uRdW9nLK4uXQg/s1600/picus-main.png",
+   "cves": [],
+   "first_seen": "2026-11-03T12:59:11.349315+00:00",
+   "instructions": [
+    "Gartner’s full report goes deeper into how EPSS, KEV and similar models should be weighted against threat intelligence and control validation.",
+    "Picus Exposure Validation breaks each CVE into the techniques an attacker must use and tests every step against your existing controls on that asset, with no exploit fired, so even assets you can never test live get an evidence-backed verdict.",
+    "If prioritization is working, you should be able to see it in three places: your controls hold up better , you respond faster , and your team spends its time on the exposures that matter, rather than wasting it on the ones that don’t.",
+    "The Picus Platform runs all four in one continuous loop, so every exposure ends in a decision you can defend to your board and your auditors: so you can fix it, mitigate it, or accept it with proof."
    ],
    "instructions_checked": true
   },
@@ -3890,6 +3927,26 @@
    "first_seen": "2026-10-27T23:13:55.612410+00:00",
    "image_checked": true,
    "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "8ede56d402c1",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Google adds new $250,000 Cloud VRP reward for Root-in-Cloud bugs",
+   "link": "https://www.bleepingcomputer.com/news/google/google-adds-new-250-000-cloud-vrp-reward-for-root-in-cloud-bugs/",
+   "published": "2026-11-03T12:05:52+00:00",
+   "summary": "Google has expanded its Cloud Vulnerability Reward Program (VRP) with a new top-tier reward for high-impact architectural security flaws.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/03/Google-headpic.jpg",
+   "cves": [],
+   "first_seen": "2026-11-03T12:59:11.349315+00:00",
+   "image_checked": true,
+   "instructions": [
+    "\"To earn this premier reward, you must demonstrate full administrative control, the equivalent of 'roles/owner' or complete IAM control, over arbitrary Google Cloud organizations or projects with no prior access or special project setup,\" said Chris Betz , Google Cloud's Chief Information Security Officer (CISO).",
+    "Additionally, security researchers who achieve execution on Google's production infrastructure must stop probing since escalating, obtaining production credentials, or lateral movement are not allowed and will result in disqualification."
+   ],
    "instructions_checked": true
   },
   {
@@ -5664,6 +5721,23 @@
    "instructions_checked": true
   },
   {
+   "id": "dcae8bed3d42",
+   "source": "schneier",
+   "source_name": "Schneier on Security",
+   "official": false,
+   "source_type": "news",
+   "title": "AIs Hacking the Law",
+   "link": "https://www.schneier.com/blog/archives/2026/11/ais-hacking-the-law.html",
+   "published": "2026-11-03T12:01:00+00:00",
+   "summary": "In both a 2021 essay and my 2022 book, A Hacker’s Mind, I talk about AIs finding vulnerabilities and exploits—hacking—the legal system. Here’s some demonstrations of this from Germany: Legal systems encode the foundations of social order in natural language. Similar to computer systems, the written law can contain…",
+   "image": null,
+   "cves": [],
+   "first_seen": "2026-11-03T12:59:11.349315+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "aedf51642ecf",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -5723,6 +5797,28 @@
     "In a separate advisory covering the PHP2Shell vulnerabilities, the company noted that CVE-2026-109618 affects Junos OS, but not in an exploitable way.",
     "The Campaign Classic update resolves eight critical-severity bugs, including code/command injection, incorrect authorization, and XSS issues.",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "14152597814e",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Android’s November 2026 Updates Patch Over 200 Vulnerabilities",
+   "link": "https://www.securityweek.com/androids-november-2026-updates-patch-over-200-vulnerabilities/",
+   "published": "2026-11-03T12:21:49+00:00",
+   "summary": "The most severe is a critical flaw in Framework leading to remote code execution without user interaction. The post Android’s November 2026 Updates Patch Over 200 Vulnerabilities appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/02/Android-update.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-03T12:59:11.349315+00:00",
+   "image_checked": true,
+   "instructions": [
+    "The first part of the patches arrives on devices as the 2026-11-01 security patch level and resolves 119 security defects across Android runtime, Framework, and System.",
+    "The second part of Android’s November 2026 security updates arrives on devices as the 2026-11-05 security patch level and fixes 97 bugs in Kernel, Arm, Imagination Technologies, MediaTek, Unisoc, and Qualcomm components.",
+    "While most of the fixes target high-severity issues, more than a dozen of them resolve critical-severity weaknesses in subcomponents such as Bluetooth, pKVM, HID, MediaTek modem, and a Qualcomm closed-source component. “Security patch levels of 2026-11-05 or later address all of these issues,” Google notes.",
+    "In addition to the bugs described in the November 2026 Android bulletin, the Android XR update resolves a high-severity flaw in Framework, while the Wear OS patch addresses two high-severity issues in Framework and System."
    ],
    "instructions_checked": true
   },
@@ -5933,6 +6029,27 @@
    "image_checked": true,
    "instructions": [
     "iOS, macOS 27.2 Patch 286 Bugs; Fix for Exploited Flaw Backported to iOS 18",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "5c6c31b6a9d3",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Critical Node-RED Flaw Exploited in Attacks",
+   "link": "https://www.securityweek.com/critical-node-red-flaw-exploited-in-attacks/",
+   "published": "2026-11-03T12:10:19+00:00",
+   "summary": "Multiple attacks from the same IP address attempted to deploy various payloads, including a Linux bot and webshells. The post Critical Node-RED Flaw Exploited in Attacks appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/12/industrial-AI-OT-security.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-03T12:59:11.349315+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Tracked as CVE-2026-58115 (CVSS score of 10/10), the bug is described as a missing authentication issue on the Node-RED HTTP interface that could enable attackers to access programming nodes that can execute system commands.",
+    "Android’s November 2026 Updates Patch Over 200 Vulnerabilities",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
@@ -6650,28 +6767,6 @@
    "image_checked": true,
    "instructions": [
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "928eba252ebe",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Unexplained DreamHost Incident Prompts Email, FTP Password Resets",
-   "link": "https://www.securityweek.com/unexplained-dreamhost-incident-prompts-email-ftp-password-resets/",
-   "published": "2026-10-27T12:02:06+00:00",
-   "summary": "The company says it reacted to an issue affecting some of its systems, including DreamHost webmail. The post Unexplained DreamHost Incident Prompts Email, FTP Password Resets appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2025/08/password-manager.jpeg",
-   "cves": [],
-   "first_seen": "2026-10-27T12:44:30.927471+00:00",
-   "image_checked": true,
-   "instructions": [
-    "DreamHost is unable to contact individual mailbox or FTP users directly, so they may not know about this until you tell them,” the company said. “If they used the old password anywhere else, they should change it there too,” DreamHost told account owners.",
-    "Preparing for disruption must become part of day-to-day operations.",
-    "Over the weekend, web hosting provider DreamHost suspended its File Manager service and reset some user passwords.",
-    "SecurityWeek has emailed DreamHost for information on the number of affected users and the root cause of the incident and will update this article if the company responds."
    ],
    "instructions_checked": true
   },
