@@ -43,29 +43,6 @@
    "instructions_checked": true
   },
   {
-   "id": "71d9cb2bf3e5",
-   "source": "ars",
-   "source_name": "Ars Technica Security",
-   "official": false,
-   "source_type": "news",
-   "title": "Code-execution flaw in UEFI firmware affects most servers on planet Earth",
-   "link": "https://arstechnica.com/security/2026/10/code-execution-flaw-in-uefi-firmware-threatens-most-servers-on-planet-earth/",
-   "published": "2026-10-27T20:25:55+00:00",
-   "summary": "Defenders across the world face the burden of responding to yet another botched code-execution vulnerability, this time in boot-time firmware used by most of the world’s server vendors and data centers. The vulnerability, with a severity rating of 9.5 out of 10, resides in the TianoCore EDK II, an open source codebase…",
-   "image": "https://cdn.arstechnica.net/wp-content/uploads/2024/04/malware.jpg",
-   "cves": [
-    "CVE-2026-97631"
-   ],
-   "first_seen": "2026-10-27T20:38:35.028966+00:00",
-   "instructions": [
-    "Once the post came to the attention of the discovering parties, TianoCore Project members published a public advisory last week.",
-    "Even then, the targeted firmware must rely on EDK2, as opposed to a different reference implementation, and use the PXE functionality (which is turned on by default).",
-    "It advised customers to check with their system manufacturer for specific guidance.",
-    "Without concrete answers to questions about the use of EDK2 by organizations like these, it’s impossible to say what or how devices are affected and what actions, if any, these organizations, or their users, should take."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "ff5ccffe8e2c",
    "source": "ars",
    "source_name": "Ars Technica Security",
@@ -3443,23 +3420,6 @@
    "instructions_checked": true
   },
   {
-   "id": "2f6663d0ce96",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Nefilim, Hive ransomware operator given five-year-plus sentence after guilty plea",
-   "link": "https://therecord.media/nefilim-hive-ransomware-operator-70-months-prison",
-   "published": "2026-10-27T20:40:00+00:00",
-   "summary": "Ukrainian national Artem Stryzhak, 36, had pleaded guilty last year to charges related to participating in at least two well-known ransomware groups.",
-   "image": "https://cms.therecord.media/uploads/pexels_kevin_ku_577585_4e8f7d9fdf.jpg",
-   "cves": [],
-   "first_seen": "2026-10-27T21:16:50.047660+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "56ef05760e8e",
    "source": "therecord",
    "source_name": "The Record",
@@ -4515,27 +4475,6 @@
    "instructions_checked": true
   },
   {
-   "id": "7477a331e67f",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Hackers hijack Convertr analytics script to steal payment card data",
-   "link": "https://www.bleepingcomputer.com/news/security/hackers-hijack-convertr-analytics-script-to-steal-payment-card-data/",
-   "published": "2026-10-27T20:57:25+00:00",
-   "summary": "A credit card skimming group reportedly compromised a shared analytics script used by e-commerce platform Convertr to steal shoppers' payment data during checkout.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/27/cart.jpg",
-   "cves": [],
-   "first_seen": "2026-10-27T21:16:50.047660+00:00",
-   "image_checked": true,
-   "instructions": [
-    "The researchers suggest that those who paid by card on a Brazilian store that contained the ‘checkout.convertr’ string in the checkout address page since October 24 should contact their bank immediately and ask to block their card.",
-    "In an update today, Sansec confirmed that Convertr \"removed the skimmer and upgraded Plausible to a patched version,\" noting that the company announced it was notifying affected merchants and payment providers.",
-    "Sansec researchers warned that browser caching could keep the malicious script active on impacted sites for up to 24 hours after cleanup, so customers should clear their cache before placing new orders, even after the threat has been eliminated."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "09382f93624b",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -5104,22 +5043,6 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltd40811c92b905082/6ae3b49914ffedf86f1c84cc/zombies-in-graveyard-zef_art-shutterstock.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-10-30T14:56:06.914594+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "e77674105596",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "External Teams Chats Anchor 15-Minute Malware Delivery",
-   "link": "https://www.darkreading.com/cloud-security/email-bombing-external-teams-chats-repeatable-access-path",
-   "published": "2026-10-27T20:42:40+00:00",
-   "summary": "Mail bombing is getting a new look with a wide-scale, ongoing social engineering campaign that might be tied to the Black Basta ransomware gang.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt634b295db59f5c55/6ae0fd3853ec236cfd97d242/Email_flood-juststock-GettyImages-2156140935.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-10-27T21:16:50.047660+00:00",
    "instructions": [],
    "instructions_checked": true
   },
