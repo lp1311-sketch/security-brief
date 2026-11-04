@@ -1777,6 +1777,24 @@
    "instructions_checked": true
   },
   {
+   "id": "5e99d13bfbb2",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "APT29-Linked Hackers Hijack Web Analytics Script to Deliver iOS and Android Exploits",
+   "link": "https://thehackernews.com/2026/11/apt29-linked-hackers-hijack-web.html",
+   "published": "2026-11-04T14:27:52+00:00",
+   "summary": "The Russia-linked threat actor known as APT29 is said to be behind a large-scale watering hole campaign targeting iOS and Android users through compromised websites, fake domains, and a supply chain attack involving a Ukrainian web analytics service called Plerdy SEO Tracker. \"The injected JavaScript code collects…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhx1cus2o8fkYGLhQu9BfPgGtAUwnmTAMucLagfAodBuRoYnyxGIJKgpqtKFyCSV-WSG3pDqmPujhj-iwoOZB-zF8JjbQMrLzDHYtdTPA3hD3Kc3rqYQM4CQwkICwZkh8K6O8ZSt-WAA_PBoUA6lHwh_55dbDlKizsjzcTN847c9BSHsWHmrAP42JHRHIYS/s1600/ios-exploit.jpg",
+   "cves": [],
+   "first_seen": "2026-11-04T15:14:33.228079+00:00",
+   "instructions": [
+    "There's nothing to tap, you don't need to click any link, nothing to install and no warning."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "3e6bc640da57",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -3318,28 +3336,6 @@
    "instructions_checked": true
   },
   {
-   "id": "7f47388e611d",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Microsoft urges Entra ID admins to migrate users to passkeys",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-reminds-entra-id-admins-to-migrate-users-to-passkeys/",
-   "published": "2026-10-28T14:48:32+00:00",
-   "summary": "Microsoft again asked Entra ID administrators to migrate users to phishing-resistant methods to avoid sign-in disruptions before it retires SMS and voice authentication in February 2027.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/28/Microsoft-logo.jpg",
-   "cves": [],
-   "first_seen": "2026-10-28T15:33:38.447482+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Before Microsoft retires SMS and voice authentication, admins should ensure all users in their organizations use a phishing-resistant method, since they will no longer be able to use them to complete multifactor authentication and log in to their accounts.",
-    "Microsoft recommends passkeys for stronger, phishing-resistant protection.",
-    "Organizations that must use phone-based authentication have to configure third-party telecom providers through the Microsoft Security Store.",
-    "Microsoft urges Entra ID admins to migrate users to passkeys"
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "15f712f3175d",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -3797,6 +3793,27 @@
    "instructions_checked": true
   },
   {
+   "id": "d6dd46466a93",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Google Calendar phishing campaign hijacks sessions, bypasses MFA",
+   "link": "https://www.bleepingcomputer.com/news/security/google-calendar-phishing-campaign-hijacks-sessions-bypasses-mfa/",
+   "published": "2026-11-04T15:00:10+00:00",
+   "summary": "A phishing campaign used Google Calendar invites, trusted redirects, and fake login pages to hijack corporate Google sessions and bypass MFA protections. Material Security examines how Operation CloudFire tracked the attacks, blocked malicious messages, and helped take down nearly 900 domains used by the attackers.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/09/22/google-workspace-breach.jpg",
+   "cves": [],
+   "first_seen": "2026-11-04T15:14:33.228079+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Defenders should ask two questions: who is reviewing those logs, and how quickly can they be acted on?",
+    "Teams hunting for this activity in their own environments should start there.",
+    "Equally important is whether the team can revoke sessions, contain OAuth grants, and reset the affected account within an hour."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "f8e64d371b0e",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4203,6 +4220,28 @@
    "instructions_checked": true
   },
   {
+   "id": "63cdf286f06a",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "SonicWall warns of unpatched flaws in end-of-life GMS software",
+   "link": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-unpatched-flaws-in-end-of-life-gms-software/",
+   "published": "2026-11-04T14:42:25+00:00",
+   "summary": "SonicWall warned customers of two security flaws affecting end-of-life Global Management System (GMS) systems that will not be patched.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/04/SonicWall.jpg",
+   "cves": [],
+   "first_seen": "2026-11-04T15:14:33.228079+00:00",
+   "image_checked": true,
+   "instructions": [
+    "\"Organizations using the product should be aware of the associated security risks and are strongly encouraged to upgrade to the SonicWall Network Security Manager (NSM).\"",
+    "On Tuesday, SonicWall also urged customers to upgrade to NMS, as it will not release security patches because the vulnerable systems have now reached end of life.",
+    "As a result, no remediation or security update will be released for these vulnerabilities,\" SonicWall warned on Tuesday.",
+    "In February, SonicWall asked customers to patch two SMA1000 zero-days (CVE-2026-15409 and CVE-2026-15410) and two more (CVE-2026-15409 and CVE-2026-15410) in July."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "516ab6192d20",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4453,22 +4492,6 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt73242ae0d40b68c0/6aea0c8226a0725a0631618d/maze-mikkelwilliam-GettyImages-1420679447.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-03T17:20:53.929523+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "70a17c1d3a5b",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "Attacker Relentlessly Scans for Credentials by Impersonating AI Bots",
-   "link": "https://www.darkreading.com/cyber-risk/attacker-impersonates-ai-bots-scans-credentials",
-   "published": "2026-10-28T14:37:52+00:00",
-   "summary": "The threat actor lurked behind bots posing as agents from OpenAI, Anthropic, Meta, and others to find exposed data.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltf851053137fec653/6ae1e3cca1e4219344f6a136/credentials-NicoElNino-AdobeStock.png?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-10-28T15:33:38.447482+00:00",
    "instructions": [],
    "instructions_checked": true
   },
@@ -5211,6 +5234,28 @@
     "iOS, macOS 27.2 Patch 286 Bugs; Fix for Exploited Flaw Backported to iOS 18",
     "Adobe, Veeam, Juniper Networks Patch Critical Vulnerabilities",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "e17a54acdaac",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Barracuda ESG Authentication Bypass Flaw Opens Path to Root",
+   "link": "https://www.securityweek.com/barracuda-email-security-gateway-authentication-bypass-opens-path-to-root/",
+   "published": "2026-11-04T14:24:54+00:00",
+   "summary": "An authentication bypass and a command injection flaw can be chained for root access on Barracuda’s Email Security Gateway appliances. The post Barracuda ESG Authentication Bypass Flaw Opens Path to Root appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2023/08/Email-Security.jpg",
+   "cves": [],
+   "first_seen": "2026-11-04T15:14:33.228079+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Customers are advised to update to the newest firmware and confirm that every available patch is installed.",
+    "Barracuda says any patch not applied automatically should be manually installed, and that devices with automatic patching disabled should have it switched back on.",
+    "According to Barracuda, attackers must be able to reach an appliance’s admin interface to exploit the flaws.",
+    "The company advises organizations to keep these interfaces reachable only from trusted internal networks."
    ],
    "instructions_checked": true
   },
@@ -6011,6 +6056,25 @@
    "instructions_checked": true
   },
   {
+   "id": "6b6d8b64e2bf",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Sysdig Adds Runtime Security and Governance for AI Agents",
+   "link": "https://www.securityweek.com/sysdig-adds-runtime-security-and-governance-for-ai-agents/",
+   "published": "2026-11-04T14:34:44+00:00",
+   "summary": "Sysdig’s platform uses runtime visibility to track AI agent actions and block risky behavior before it reaches production systems. The post Sysdig Adds Runtime Security and Governance for AI Agents appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2023/01/Cybersecurity_News-SecurityWeek.jpg",
+   "cves": [],
+   "first_seen": "2026-11-04T15:14:33.228079+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "d0d43ed2d289",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -6047,25 +6111,6 @@
    "image": "https://www.securityweek.com/wp-content/uploads/2025/06/UK_Cyberwarfare.jpg",
    "cves": [],
    "first_seen": "2026-11-03T09:55:33.212980+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "f424b83a0c00",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Ukrainian Hive and Nefilim Ransomware Affiliate Gets 70 Months in US Prison",
-   "link": "https://www.securityweek.com/ukrainian-hive-and-nefilim-ransomware-affiliate-gets-70-months-in-us-prison/",
-   "published": "2026-10-28T15:05:06+00:00",
-   "summary": "Artem Stryzhak was sentenced to 70 months in prison after pleading guilty to using Nefilim ransomware in attacks. The post Ukrainian Hive and Nefilim Ransomware Affiliate Gets 70 Months in US Prison appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2024/10/hacker-prison-sentence.jpeg",
-   "cves": [],
-   "first_seen": "2026-10-28T15:33:38.447482+00:00",
    "image_checked": true,
    "instructions": [
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
