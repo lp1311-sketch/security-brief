@@ -1262,24 +1262,6 @@
    "instructions_checked": true
   },
   {
-   "id": "169a3a02ba4a",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "American Organizations Under Attack: Skyw4lker Device Code Phishing Campaign Exposed",
-   "link": "https://thehackernews.com/2026/10/american-organizations-under-attack.html",
-   "published": "2026-10-28T10:30:00+00:00",
-   "summary": "Modern phishing campaigns can compromise American businesses without relying on traditional credential theft. Attackers can abuse legitimate cloud services, authentication mechanisms, and trusted business workflows to gain access to corporate accounts while leaving fewer obvious signs behind. ANY.RUN's analysis of…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgf2g4rsWnZ5eQP03cr-4e99MQStvJmuaTTi91WESG3ua1ddAW73T6X22gyaspj2SirqH-1bSAU9VkOg2F1Kh9TLmPc4jYsNAlD72S2XzCeTTRHSiN3B7is7roWwIMcIm__yRu8SkUBbyeWxAEBo5Fe-bbACZWRuoxZqv_pysQ9iMsZRHPCD_clJZsNIDs/s1600/anyrun-main.jpg",
-   "cves": [],
-   "first_seen": "2026-10-28T11:24:37.516064+00:00",
-   "instructions": [
-    "A successful investigation should improve an organization's ability to detect the next attack."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "9ac8296dadd7",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -3630,28 +3612,6 @@
    "instructions_checked": true
   },
   {
-   "id": "aa5619127529",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "CISA warns of hackers now exploiting critical Node2Shell flaw",
-   "link": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-now-exploiting-critical-node2shell-flaw/",
-   "published": "2026-10-28T10:46:23+00:00",
-   "summary": "On Tuesday, the US Cybersecurity and Infrastructure Security Agency (CISA) confirmed that hackers have begun exploiting a critical Brotli vulnerability known as Node2Shell, Broccoli2Shell, and HTTP2Shell.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/28/CISA.jpg",
-   "cves": [],
-   "first_seen": "2026-10-28T11:24:37.516064+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Security teams that can't apply the updates immediately should block incoming Brotli-compressed requests at the proxy or firewall level, or disable the Brotli decoding feature until they can update.",
-    "After patching, administrators must also restart affected processes and rebuild and redeploy affected container images.",
-    "On Sunday, Microsoft also pushed an emergency .NET security update , warning that attackers could exploit it to escalate privileges on systems with a vulnerable .NET version.",
-    "CISA added the flaw to its Known Exploited Vulnerabilities (KEV) Catalog on Tuesday and ordered US government agencies to patch their systems within two weeks, by November 10, as mandated by its Binding Operational Directive (BOD) 26-04."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "409f0b0486b7",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4011,6 +3971,25 @@
    "instructions_checked": true
   },
   {
+   "id": "955f969e9dae",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Hackers use n-day exploits in zero-click attacks on iOS, Android devices",
+   "link": "https://www.bleepingcomputer.com/news/security/hackers-use-n-day-exploits-in-zero-click-attacks-on-ios-android-devices/",
+   "published": "2026-11-04T09:39:54+00:00",
+   "summary": "A large-scale watering hole attack associated with Russian hackers has been targeting iOS and Android users visiting compromised sites or fake ones impersonating legitimate portals.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/07/13/Russian_hacker.jpg",
+   "cves": [],
+   "first_seen": "2026-11-04T10:50:03.838163+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Apple and Google have patched all flaws targeted in this campaign, with fixes even reaching older iOS releases , so users are recommended to apply the latest available security updates for their devices."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "8491f2b2e054",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4150,23 +4129,6 @@
     "A malicious version of Anthropic's Claude Code VS Code extension was distributed through Cursor's extension marketplace for approximately 11 hours on October 29, exposing up to 5,000 developers to malware designed to install persistent SSH backdoors.",
     "\"The extension runs malicious code that attempts to install a persistent SSH backdoor.\""
    ],
-   "instructions_checked": true
-  },
-  {
-   "id": "965a65e0d849",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Nefilim and Hive ransomware affiliate gets 70 months in prison",
-   "link": "https://www.bleepingcomputer.com/news/security/nefilim-and-hive-ransomware-affiliate-gets-70-months-in-prison/",
-   "published": "2026-10-28T09:43:15+00:00",
-   "summary": "A Ukrainian national was sentenced to 70 months in prison for his role in ransomware attacks targeting hospitals, government entities, and high-revenue businesses worldwide between 2018 and 2021.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/08/Hacker_prison.jpg",
-   "cves": [],
-   "first_seen": "2026-10-28T09:43:27.542491+00:00",
-   "image_checked": true,
-   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -5351,6 +5313,28 @@
    "instructions_checked": true
   },
   {
+   "id": "493913be8a05",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Chrome 157 Rolls Out With 213 Security Fixes, Seven Rated Critical",
+   "link": "https://www.securityweek.com/chrome-157-rolls-out-with-213-security-fixes-seven-rated-critical/",
+   "published": "2026-11-04T10:38:46+00:00",
+   "summary": "The browser update resolves dozens of memory safety bugs and incorrect/missing authorization issues. The post Chrome 157 Rolls Out With 213 Security Fixes, Seven Rated Critical appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2023/01/Cybersecurity_News-SecurityWeek.jpg",
+   "cves": [],
+   "first_seen": "2026-11-04T10:50:03.838163+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Per Google’s advisory , the company handed out $31,000 in rewards to the reporting researchers, but it has not determined the bug bounties to be paid for 39 of the flaws.",
+    "Google makes no mention of any of these security defects being exploited in the wild, but users should update their browsers as soon as possible.",
+    "The most common types of vulnerabilities the fresh browser update resolves include incorrect/missing authorization (51), use-after-free (45), UI misrepresentation (19), type confusion (13), information leak (13), out-of-bounds read/write (11), improper input validation (9), and uninitialized resource (9).",
+    "Android’s November 2026 Updates Patch Over 200 Vulnerabilities"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "04dad7bd605d",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -5747,28 +5731,6 @@
    "instructions_checked": true
   },
   {
-   "id": "9ebc7f16e54c",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Long-Hidden Flaws Patched in EPICS Research Facility Control Software",
-   "link": "https://www.securityweek.com/long-hidden-flaws-patched-in-epics-research-facility-control-software/",
-   "published": "2026-10-28T10:48:00+00:00",
-   "summary": "Four EPICS Base flaws found by an autonomous system could let attackers crash processes at particle accelerators and fusion labs. The post Long-Hidden Flaws Patched in EPICS Research Facility Control Software appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/10/research-laboratory-physics-laser.jpeg",
-   "cves": [],
-   "first_seen": "2026-10-28T11:24:37.516064+00:00",
-   "image_checked": true,
-   "instructions": [
-    "CISA disclosed the issues in an advisory published on Tuesday, saying they impact EPICS Base 7.0.10 and earlier.",
-    "According to CISA, it can lead to a wrongly sized memory allocation, and processing attacker-supplied data afterwards could corrupt memory, trigger DoS, or possibly enable remote code execution.",
-    "iOS, macOS 27.2 Patch 286 Bugs; Fix for Exploited Flaw Backported to iOS 18",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "fe787079c468",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -5852,28 +5814,6 @@
    "image_checked": true,
    "instructions": [
     "Cyber effects must hit at the right moment to support a kinetic or special operations action – not in parallel, but in sequence, with timing measured in minutes, not hours.",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "085573e20d77",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Nobody Trusts the Security Questionnaire. We Rely on It Anyway.",
-   "link": "https://www.securityweek.com/nobody-trusts-the-security-questionnaire-we-rely-on-it-anyway/",
-   "published": "2026-10-28T10:30:00+00:00",
-   "summary": "The process that gates nearly every B2B deal is a self-assessment the sender distrusts and the receiver accepts. There is finally a better basis for trust between companies. The post Nobody Trusts the Security Questionnaire. We Rely on It Anyway. appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2025/10/AI_Trust-Governance.jpg",
-   "cves": [],
-   "first_seen": "2026-10-28T10:45:56.141079+00:00",
-   "image_checked": true,
-   "instructions": [
-    "If this model were working, third-party breaches should be getting rarer.",
-    "What trust between two companies should rest on The questionnaire made sense when there was no other way to size up a vendor you couldn’t see inside.",
-    "Preparing for disruption must become part of day-to-day operations.",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
@@ -6044,22 +5984,22 @@
    "instructions_checked": true
   },
   {
-   "id": "56f1c438e294",
+   "id": "76f398aa937f",
    "source": "securityweek",
    "source_name": "SecurityWeek",
    "official": false,
    "source_type": "news",
-   "title": "Secrets Management Firm Infisical Valued at $600 Million After $40 Million Raise",
-   "link": "https://www.securityweek.com/secrets-management-firm-infisical-valued-at-600-million-after-40-million-raise/",
-   "published": "2026-10-28T09:48:24+00:00",
-   "summary": "The company will use the Series B funds to expand its platform for securing AI agents’ access to sensitive systems. The post Secrets Management Firm Infisical Valued at $600 Million After $40 Million Raise appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2025/12/funding-round.jpeg",
+   "title": "Rigged Coding Assignment, Abused AI Tool Opened Path to $6 Billion Binance Heist",
+   "link": "https://www.securityweek.com/rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist/",
+   "published": "2026-11-04T10:36:32+00:00",
+   "summary": "Binance’s first incident report traces the record theft to a months-long campaign that compromised three engineers’ computers. The post Rigged Coding Assignment, Abused AI Tool Opened Path to $6 Billion Binance Heist appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/10/Binance-hacked.jpeg",
    "cves": [],
-   "first_seen": "2026-10-28T10:31:01.494687+00:00",
+   "first_seen": "2026-11-04T10:50:03.838163+00:00",
    "image_checked": true,
    "instructions": [
-    "Preparing for disruption must become part of day-to-day operations.",
-    "iOS, macOS 27.2 Patch 286 Bugs; Fix for Exploited Flaw Backported to iOS 18",
+    "Roughly $2.85 billion of the stolen assets has been frozen or intercepted. “This should not have happened, and we apologise for the concern, disruption and uncertainty it caused our users, partners and the wider industry,” Binance said.",
+    "Android’s November 2026 Updates Patch Over 200 Vulnerabilities",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
