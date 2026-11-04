@@ -1555,29 +1555,6 @@
    "instructions_checked": true
   },
   {
-   "id": "29d08fa787d9",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Hackers Target Critical Oracle E-Business Suite RCE Flaw Days After Security Patch",
-   "link": "https://thehackernews.com/2026/10/hackers-target-critical-oracle-e.html",
-   "published": "2026-10-28T12:48:03+00:00",
-   "summary": "Threat actors are beginning to probe for a newly patched critical vulnerability in Oracle E-Business Suite (EBS), according to threat intelligence firm Defused Cyber. The vulnerability in question is CVE-2026-101767 (CVSS score: 9.8), a case of improper authentication in the Oracle Application Object Library of Oracle…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBB03AGS7veiAqQ7-xPeadzhhaRvDmhOlLgQcDN0y-r1na_us5yomWjBEXCbwbw8OW_o8SSGjjqk4VZFQ4ZxLiWKQPZxlcBkzJ5lv3OlEV0rOETUKyQzWoZ74LGpSjOjrScmk1rVf0OhRmDACHG3jwSDfBnnta75I_3s_nuoWGZmcfg7NZfHBp_PEIl8aj/s1600/oracle-hack.jpg",
-   "cves": [
-    "CVE-2026-101767"
-   ],
-   "first_seen": "2026-10-28T14:34:38.042181+00:00",
-   "instructions": [
-    "Users are advised to update to the latest version as soon as possible.",
-    "In an advisory for the vulnerability, Horizon3.ai described it as an unauthenticated SQL injection vulnerability that could be chained to achieve remote code execution.",
-    "It was patched by Oracle last week as part of its Critical Patch Update .",
-    "Specifically, an attacker can issue a crafted request to the vulnerable TCF servlet at \"/OA_HTML/AppsTCFServer\" to run SQL with the privileges of the APPS database user and ultimately enable system command execution with the privileges of the EBS application account."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "649ecf4a57aa",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1958,6 +1935,22 @@
    "instructions_checked": true
   },
   {
+   "id": "8384c224e801",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "China-Aligned Hackers Hijack Sogou Input Method DNS Requests to Deploy DarkVigil Backdoor",
+   "link": "https://thehackernews.com/2026/11/china-aligned-hackers-hijack-sogou.html",
+   "published": "2026-11-04T11:24:31+00:00",
+   "summary": "A China-aligned threat actor known as SlippyNunchucks has been attributed to a Domain Name System (DNS) hijacking operation abusing insecure HTTP communications in Windows versions of Sogou Input Method as part of a surveillance campaign designed to deploy an implant called DarkVigil (aka FDMTP). The campaign…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMawvNNOvRYRm-k7ii9yDdw214v4kwQ7h5fAfOaUVkvMetNwArral8qumlObtaftjOcBsibL9vkqM1UT0-9l9jYPjj3M3C9NcPfg5pdIuENUfdKlK7lyseCS30AVhgLLs6a-2fdXlSDymSVeyIziO7IC13HFCaOf1v4sjbgmkeKfewWNsbTJCJ0WR2zLBZ/s1600/key.jpg",
+   "cves": [],
+   "first_seen": "2026-11-04T13:01:36.600423+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "349817163ae5",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2039,6 +2032,27 @@
     "Incus users should move to 7.6.0 , which fixed this flaw along with 17 other security issues.",
     "On a snap install, run sudo snap refresh lxd and sudo snap refresh microcloud.",
     "Because the attack requires network access to the API, limiting who can reach it reduces risk until you update."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "d013e25bf406",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Critical Rails Flaw Lets Attackers Write Server Files via Crafted ImageMagick Uploads",
+   "link": "https://thehackernews.com/2026/11/critical-rails-flaw-lets-attackers.html",
+   "published": "2026-11-04T12:07:04+00:00",
+   "summary": "A critical flaw in Ruby on Rails could allow an unauthenticated attacker to write arbitrary files on an app's server by uploading a crafted file if the app processes uploads using ImageMagick. The Rails project disclosed the flaw in an advisory and fixed it in versions 8.1.4.1 and 8.0.5.2. The flaw is in Active…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaJWnScdkMx0R5_Zt00NtYVNjNavBR7IMrLzJM_tZGMTpZtAvV7uNWt6BQbBrlUzH-aBoj_ZmMEOG__aTA8VmfTeiHUR9gfqNe2eYf9fSM-sYQkmCOg10qZ3ZaKyM_RS1QUQhm8s5NMw-xnYaWMDgDakmFyp9tbJgQ4hOZTf0cxe9E6x7uWt3JeN6bS3k/s1600/ruby-rails.jpg",
+   "cves": [],
+   "first_seen": "2026-11-04T13:01:36.600423+00:00",
+   "instructions": [
+    "Apps on release series older than 8.0 can use that workaround or upgrade to 8.0 or later.",
+    "The Rails project disclosed the flaw in an advisory and fixed it in versions 8.1.4.1 and 8.0.5.2.",
+    "Rails said one attack chain was reported to it, but it does \"not assume it is the only one that exists.\" The advisory does not say whether the flaw has been exploited.",
+    "Such an app must put the rules in ImageMagick's system policy."
    ],
    "instructions_checked": true
   },
@@ -2274,6 +2288,26 @@
    "instructions_checked": true
   },
   {
+   "id": "ecf2013fdfbb",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Radio With No Radar: Why Agent Runtime Security Fails Without the Layers Beneath It",
+   "link": "https://thehackernews.com/2026/11/radio-with-no-radar-why-agent-runtime.html",
+   "published": "2026-11-04T11:34:20+00:00",
+   "summary": "Nearly every agent security pitch now ends on the same promise: the product stops the bad action in real time. The promise holds for one kind of agent, the kind whose traffic passes through a gateway the enterprise owns. Most agents never touch one. One recent case shows what that gap looks like in practice. An…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQqFIm3V3DsL6rHtjhkN8qVT2sU-caHUEuPgeepdZ6lLsIJ-09GFg_HVVBgeHP36W0abqUeCuaNuAOIheSGYB9hxmHbQGcgREBBxStEFLijgx-Cd8C8Z8wLuxgFFu75O8hAAOcdjAxgCZ-iYoBvYS09AcITdqMnmLZOn2JdGaEp04SPrgYkgQ14dl1S0JS/s1600/reco.gif",
+   "cves": [],
+   "first_seen": "2026-11-04T13:01:36.600423+00:00",
+   "instructions": [
+    "Knowing where to apply a rule like that depends on seeing which agents exist, what they are connected to and what normal looks like for each.",
+    "Irregular's Dan Lahav calls the mistake the end-state fallacy: assuming the properties of the eventual equilibrium apply to the transition actually underway.",
+    "It runs on a read-only API with no software to install and returns a written security summary and a prioritized remediation plan in five business days."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "77f64f32faf5",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2409,6 +2443,27 @@
     "We are currently unable to receive emails sent to our domain,\" DebugBear said in an update shared on October 31, 2026.",
     "Official Claude Code Extension on Cursor Marketplace with SSH Backdoor — Two versions of the Claude Code extension distributed through Cursor Marketplace were tampered with to install a persistent SSH backdoor on affected systems.",
     "Victims install repackaged copies of legitimate applications disturbed through sideloading or social engineering flows."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "de8bbdd0e39a",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Xen Hypervisor Flaws Let One Malicious VM Read and Write Any Other VM's Memory",
+   "link": "https://thehackernews.com/2026/11/xen-hypervisor-flaws-let-one-malicious.html",
+   "published": "2026-11-04T11:46:27+00:00",
+   "summary": "Two flaws in the Xen hypervisor allow a malicious guest virtual machine (VM) to read and write the memory of other VMs on the same host, including dom0. Dom0 is the VM that, by default, has full permissions and manages the others. Patches are out, and there is no known mitigation, the Xen Project said in an advisory…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAVPXiuTBfhBnpwaZHMfSDWymKJrXbS88kOEO1Xuh5t11qAnwSKeFTHGQy6ZG9Sr2N-wRYrJg58x3lKFbybvU9p1a85lxaCHfBa61vO1DfjEhUi5Yzf6bQS1eN7Mu-s_sUwkE-JGc-UznJ1p0qfmwMDusXFzWawXKXMt6jj-vENxyQG12uAUDUe0p0gtg/s1600/xen.jpg",
+   "cves": [],
+   "first_seen": "2026-11-04T13:01:36.600423+00:00",
+   "instructions": [
+    "Patches are out, and there is no known mitigation, the Xen Project said in an advisory on November 3.",
+    "Dom0 must be restarted, and Anti Evil Maid users must reseal their secret passphrase because the new Xen binaries change PCR18 and PCR19.",
+    "The flaws are tracked as CVE-2026-102703 and CVE-2026-102704 , under Xen advisory XSA-523.",
+    "Xen's advisory does not mention any attacks that exploit the flaws or specify what access within the VM an attacker needs."
    ],
    "instructions_checked": true
   },
@@ -2583,25 +2638,6 @@
    "image_checked": true,
    "instructions": [
     "The FBI, Secret Service and IRS specifically called out exchanges, decentralized finance companies and several other technical operators within the cryptocurrency industry — urging them to “block transactions with or derived from addresses TraderTraitor actors are using to launder these stolen assets.”"
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "12185b0bd2c8",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "FBI seizes ‘bulletproof’ hosting site accused of facilitating child abuse, money laundering",
-   "link": "https://therecord.media/fbi-seizure-csam-virtualine",
-   "published": "2026-10-28T12:00:00+00:00",
-   "summary": "The FBI seized the domain of a “bulletproof” hosting provider accused of facilitating a range of cybercrimes, including money laundering and the distribution of child sexual abuse material.",
-   "image": "https://cms.therecord.media/uploads/Virtualine_splash_page_810cc20a2e.jpg",
-   "cves": [],
-   "first_seen": "2026-10-28T12:09:10.082543+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Although the provider claimed to prohibit customers involved in terrorism or child abuse material, prosecutors allege it did not enforce those restrictions."
    ],
    "instructions_checked": true
   },
@@ -3529,6 +3565,28 @@
    "instructions_checked": true
   },
   {
+   "id": "62ad9c2a6bdd",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "CISA flags WordPress RCE flaw as actively exploited in attacks",
+   "link": "https://www.bleepingcomputer.com/news/security/cisa-flags-wordpress-rce-flaw-as-actively-exploited-in-attacks/",
+   "published": "2026-11-04T12:11:05+00:00",
+   "summary": "The US Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies that attackers have started exploiting a recently patched high-severity WordPress vulnerability in the wild.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/04/WordPress.jpg",
+   "cves": [],
+   "first_seen": "2026-11-04T13:01:36.600423+00:00",
+   "image_checked": true,
+   "instructions": [
+    "\"Because this is a security release, it is recommended that you update your sites immediately.\"",
+    "While CISA didn't provide more details on attackers exploiting CVE-2026-119977 in the wild, WordPress security firm Wordfence says in an advisory update over the weekend that it \"blocked 13,095 attacks targeting this vulnerability in the past 24 hours.\"",
+    "\"A weakness in the WordPress upgrade process which can lead to remote code execution during the upgrade window,\" the WordPress security team said on October 28 when it released WordPress 7.1.4 with patches to address this security issue.",
+    "Public wp2shell exploits were released one day after the patches went live, and attackers began breaching unpatched servers a few days later to deploy persistent webshells and install malicious plugins."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "748d67ab1d92",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -3883,28 +3941,6 @@
    "instructions": [
     "GitLab addressed the security issue in GitLab Community Edition (CE) and Enterprise Edition (EE) versions 19.4.2, 19.3.5, and 19.2.8 and urged admins to patch their servers immediately.",
     "Microsoft urges Entra ID admins to migrate users to passkeys"
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "7c22489c81a5",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Hackers now scanning systems for recently-patched Oracle flaw",
-   "link": "https://www.bleepingcomputer.com/news/security/hackers-now-scanning-systems-for-recently-patched-oracle-flaw/",
-   "published": "2026-10-28T12:19:57+00:00",
-   "summary": "Attackers have begun probing the Internet for systems unpatched against a recently disclosed critical Oracle E-Business Suite (EBS) vulnerability.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/28/Oracle-headpic.jpg",
-   "cves": [],
-   "first_seen": "2026-10-28T13:27:16.564804+00:00",
-   "image_checked": true,
-   "instructions": [
-    "\"Oracle therefore strongly recommends that customers remain on actively-supported versions and apply security patches without delay.\"",
-    "\"In some instances, it has been reported that attackers have been successful because targeted customers had failed to apply available Oracle patches,\" it said.",
-    "More recently, in June, Oracle released emergency mitigations for a critical PeopleSoft Suite zero-day (CVE-2026-35273) that the ShinyHunters extortion gang exploited between May 27 and June 9 .",
-    "Oracle released security updates to address the issue in its October 2026 Critical Security Patch Update on October 20 and urged customers to patch their systems immediately."
    ],
    "instructions_checked": true
   },
@@ -5085,6 +5121,27 @@
    "instructions_checked": true
   },
   {
+   "id": "2f5877591bfd",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "AI-Linked Breaches Mount as WorkOS, Northflank, Trigger.dev Disclose Hacks",
+   "link": "https://www.securityweek.com/ai-linked-breaches-mount-as-workos-northflank-trigger-dev-disclose-hacks/",
+   "published": "2026-11-04T12:43:20+00:00",
+   "summary": "Hackers have been harvesting AI access tokens and have been using AI-assisted offensive tools to automate attacks. The post AI-Linked Breaches Mount as WorkOS, Northflank, Trigger.dev Disclose Hacks appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/09/AI-artificial-intelligence.webp",
+   "cves": [],
+   "first_seen": "2026-11-04T13:01:36.600423+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Node credentials might have been exposed as well, as the attackers had access to systems storing them, and Chainstack prompted customers to rotate those credentials.",
+    "Android’s November 2026 Updates Patch Over 200 Vulnerabilities",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "14152597814e",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -5170,6 +5227,25 @@
    "instructions_checked": true
   },
   {
+   "id": "9c2441032957",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Canadian Extradited to US Over Cryptomining Hacks on University Supercomputers",
+   "link": "https://www.securityweek.com/canadian-extradited-to-us-over-cryptomining-hacks-on-university-supercomputers/",
+   "published": "2026-11-04T12:27:58+00:00",
+   "summary": "A federal grand jury indicted two Canadian men for hijacking university supercomputers to secretly mine Electroneum cryptocurrency. The post Canadian Extradited to US Over Cryptomining Hacks on University Supercomputers appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2024/01/cryptocurrency.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-04T13:01:36.600423+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "2e0eed251125",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -5187,25 +5263,6 @@
     "Because names and email addresses were compromised, it recommends that users watch for unexpected authentication prompts and password reset requests, and make sure they have MFA enabled.",
     "Scroll to continue reading. “Our teams have been working around the clock to investigate unauthorized activity, patch vulnerabilities, and harden our systems,” it said.",
     "Adobe, Veeam, Juniper Networks Patch Critical Vulnerabilities",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "0d8d39d2f11b",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "China-Linked Hackers Exploit PHP2Shell to Root Firewalls",
-   "link": "https://www.securityweek.com/china-linked-hackers-exploit-php2shell-to-root-firewalls/",
-   "published": "2026-10-28T12:00:59+00:00",
-   "summary": "The attackers chained PHP2Shell and Fragnesia exploits and hacked two servers of a US government-affiliated organization. The post China-Linked Hackers Exploit PHP2Shell to Root Firewalls appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2023/01/Cybersecurity_News-SecurityWeek.jpg",
-   "cves": [],
-   "first_seen": "2026-10-28T12:09:10.082543+00:00",
-   "image_checked": true,
-   "instructions": [
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
