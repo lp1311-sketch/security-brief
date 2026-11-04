@@ -1682,25 +1682,6 @@
    "instructions_checked": true
   },
   {
-   "id": "10e92bd49867",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Volt Typhoon Used Covert Silent Train Network in Four Zero-Day Exploitation Campaigns",
-   "link": "https://thehackernews.com/2026/10/volt-typhoon-used-covert-silent-train.html",
-   "published": "2026-10-28T18:08:33+00:00",
-   "summary": "The China-nexus cyber espionage group known as Volt Typhoon has been attributed to a now-disrupted covert access network dubbed Silent Train that has been put to use for zero-day exploitation and strategic access. \"First identified in late 2023, Silent Train uses rotating chains of compromised SOHO, IoT, and…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXuRyHXVM1n6S9Z49nYkM2dmJjKwuZx2RAre0CQSpB202GteLj8keMogqzR7ZVIv7YRc9udBHU7-oCpnpzL6nLaez3ypbVr9cVmiH9zFwJVApy5cev84W725y38auaUdkCQGN3zvngCivMUl-SYV1jnJu9eHduaYeBzro4cdmFHIQJfBQN4RvcC-fUTrs1/s1600/si.jpg",
-   "cves": [],
-   "first_seen": "2026-10-28T19:19:01.936957+00:00",
-   "instructions": [
-    "Known to be active since at least 2021, the threat actor was previously observed exploiting a file upload vulnerability in Versa Director as a zero-day (CVE-2024-39717) to deliver a bespoke web shell called VersaMem designed to harvest credentials and enable access to downstream customers.",
-    "\"To construct these sessions, its operators exploit exposed web interfaces on SOHO, IoT, and other relay devices, then deploy only the tooling needed to enable chained SSH access through the compromised node.\""
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "0e3774900031",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1927,7 +1908,7 @@
    "title": "cPGuard Update Channel Hijacked to Backdoor Linux Servers and Collect Password Hashes",
    "link": "https://thehackernews.com/2026/11/cpguard-update-channel-hijacked-to.html",
    "published": "2026-11-03T15:16:32+00:00",
-   "summary": "An attacker broke into the update system of the cPGuard security tool on November 2 and used it to send a malicious script to customers' Linux servers. The script installed a backdoor and collected password hashes and other sensitive files from servers that ran it, cPGuard maker OPSSHIELD said in an advisory. The…",
+   "summary": "An attacker broke into the update system of the cPGuard security tool on November 2 and used it to send a malicious script to customers' Linux servers. The script installed a backdoor and collected password hashes and other sensitive files from servers that ran it, cPGuard maker OPSSHIELD said in an advisory. In a…",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtc3HOtWwxZPk7V8yva9o6Oe5lWAPX8KZsWHG27ohycqrb04wAKSDSSdk6ta6y284N9gT6Ab6QKIWwTPss2bBK4PtS3Fm7gSI9QG5kec2AvEgQPjQnc0YlhlUQx0uZKt2ygn576BQ3aburL-IhrMRFVm1vEpTR5ol06R0BtjySvifD05Q_dQGUPvyPLxs/s1600/cpgaurd.png",
    "cves": [],
    "first_seen": "2026-11-03T16:18:42.092142+00:00",
@@ -2016,6 +1997,25 @@
    "cves": [],
    "first_seen": "2026-11-02T14:57:52.156121+00:00",
    "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "3632eace057e",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Debian and Ubuntu APT Flaw Lets MitM Attackers Swap Verified Packages and Run Code as Root",
+   "link": "https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html",
+   "published": "2026-11-04T17:00:46+00:00",
+   "summary": "A flaw in APT, the package manager for Debian and Ubuntu, allows an attacker who can modify package downloads to swap a checked package for their own. The attacker's code then runs as root, according to advisories that Debian, Ubuntu, and APT's developers published on November 4. The attack needs APT to retry failed…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUPaNgRQEg3TU6-9BBgKse77CGVpbBFbn48cBnN1aanKvaMzk_mT74RxyWZA3_NbcrYe0UnRAQlELRYKGiGNrLUDcBMSKXFgRNxaND7RoaVFOs1Q7rkFFtlpoAzYQ7C8i6RAY4bNNTarEMUI-iFR4A_IfjIkFE9vpyQjG-0QFngy5cRE8f2GhGfTltkaI/s1600/linux-apt.jpg",
+   "cves": [],
+   "first_seen": "2026-11-04T18:13:41.010046+00:00",
+   "instructions": [
+    "None of the three advisory reports describe attacks exploiting the flaw or offer a workaround for systems that cannot update yet.",
+    "The attacker's code then runs as root, according to advisories that Debian , Ubuntu , and APT's developers published on November 4."
+   ],
    "instructions_checked": true
   },
   {
@@ -2277,6 +2277,22 @@
    "instructions_checked": true
   },
   {
+   "id": "78de6ffe4e2d",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Researchers Uncover Prompt Adware Hidden in OpenAI Codex Jailbreak Toolkit",
+   "link": "https://thehackernews.com/2026/11/researchers-uncover-prompt-adware.html",
+   "published": "2026-11-04T16:06:43+00:00",
+   "summary": "Cybersecurity researchers have disclosed details of an OpenAI Codex jailbreak bundle that's designed to modify an artificial intelligence (AI) agent's trusted instructions to insert advertisements for a third-party AI gateway. The phenomenon has been codenamed prompt adware by Check Point Research. Called Haiou…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiO7-xs-0dO1uqFLbfphgPbe8T7cbCLkrab6XhAjlNPVo-bLQOFw4mkcArqglQOvhuIYif4ohTAub-TNWlket6iguifshMRo3zBrYvM4G_IwFTtbh8ifIqh1Vuf8GuNmqDg_PB2Roy7yzYuTFhRrFM8wxOo8HVwfG9Y2eqJnq82LGYHnAKI5S6TuvZ_Q95A/s1600/ai-adware.jpg",
+   "cves": [],
+   "first_seen": "2026-11-04T18:13:41.010046+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "3ce297811edf",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2326,6 +2342,27 @@
     "Sabcobel had advised stores to secure their internet connections, and many but not all had done so.",
     "In an emergency, you can filter the contractors' IP addresses at a firewall, but this should not be a lasting fix.",
     "Danfoss advised Dutch customers on October 13 to disconnect their systems from the internet and reconnect them only through a secure network."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "1b9b96d402ef",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "SonicWall Won't Patch EoL GMS Flaws That Could Expose Files, Alter Database Records",
+   "link": "https://thehackernews.com/2026/11/sonicwall-wont-patch-eol-gms-flaws-that.html",
+   "published": "2026-11-04T17:00:38+00:00",
+   "summary": "SonicWall has warned of two vulnerabilities impacting end-of-life Global Management System (GMS) systems that it said will not be patched. Details of the security flaws, which affect SonicWall GMS 9.5.2 and earlier versions, are below - CVE-2026-109593 (CVSS score: 9.1) - An unauthenticated file read vulnerability…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgME1T4MkjI8UEzzSmlLgbPG6a__VNQNoKkhuxiaW5zF5fnHLPmsTdkGoIL06JTeER1jcOMH-WLuNYyva_sSW_8DnZojbMC8ikgNME3ZPUAdkij-9nVm8joHHdaZRoLNbVgcSVLNSc6Tt7UJ3YPhQmea3OtQwg-H2UzUPIgWq7nFwoEQcMsGCKf-0fImEvd/s1600/sonic.jpg",
+   "cves": [
+    "CVE-2026-109593"
+   ],
+   "first_seen": "2026-11-04T18:13:41.010046+00:00",
+   "instructions": [
+    "Organizations using the product should be aware of the associated security risks and are strongly encouraged to upgrade to the SonicWall Network Security Manager (NSM).\"",
+    "\"As a result, no remediation or security update will be released for these vulnerabilities."
    ],
    "instructions_checked": true
   },
@@ -2810,43 +2847,6 @@
    "instructions": [
     "Patients, students, employees and community members should not respond to or otherwise engage with anyone claiming responsibility for this incident,” HSC said.",
     "In addition to offering basic cyber guidance, HSC said anyone contacted by the hackers should keep the message and reach out to the FBI's Internet Crime Complaint Center."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "22278c0bc249",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "US sanctions Russians, North Koreans for laundering IT worker earnings",
-   "link": "https://therecord.media/north-korea-russia-sanctions",
-   "published": "2026-10-28T17:45:00+00:00",
-   "summary": "The U.S. Treasury Department sanctioned Russian and North Korean nationals for allegedly laundering the earnings of illicit IT workers on behalf of Pyongyang.",
-   "image": "https://cms.therecord.media/uploads/north_korea_flags_roman_harak_d05b7549c5.jpg",
-   "cves": [],
-   "first_seen": "2026-10-28T18:21:54.978668+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "d949b1e38983",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "European digital rights nonprofit noyb sues Scale AI for ‘invasive’ worker surveillance",
-   "link": "https://therecord.media/noyb-sues-scale-ai-for-worker-surveillance",
-   "published": "2026-10-28T18:02:00+00:00",
-   "summary": "Noyb alleges the platform in some cases records freelancers’ mouse clicks and keystrokes every few seconds and claims the collected information can be used to generate video documenting freelancers’ entire workday.",
-   "image": "https://cms.therecord.media/uploads/lawyer_computer_5dfad16e42.jpg",
-   "cves": [],
-   "first_seen": "2026-10-28T18:21:54.978668+00:00",
-   "image_checked": true,
-   "instructions": [
-    "They must give identity verifier Persona face video and identification documents, according to noyb.",
-    "“Such constant and extensive tracking while working really goes against all reasonable expectations,” Lisa Steinfeld Leiser, a data protection lawyer at noyb, said in the press release . “Why should LinkedIn or Facebook know which tasks you're working on?”"
    ],
    "instructions_checked": true
   },
@@ -3553,6 +3553,26 @@
     "According to the Linux kernel advisory , the vulnerability stems from a race condition in how the kernel handles TCP connection requests, potentially causing a use-after-free condition.",
     "\"tcp_v4_syn_recv_sock() transfers ownership of ireq->ireq_opt to the child socket (newinet->inet_opt) without copying it,\" reads the advisory.",
     "In mitigation guidance , Rocky Linux support provider CIQ confirms Rocky Linux 8, 9, and 10 are also affected and shared temporary firewall protections for affected systems."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "801b944f5621",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Cyberattack disrupts blood storage refrigeration systems in France",
+   "link": "https://www.bleepingcomputer.com/news/security/cyberattack-disrupts-blood-storage-refrigeration-systems-in-france/",
+   "published": "2026-11-04T18:02:56+00:00",
+   "summary": "France's national blood service has confirmed that a cyberattack targeting a refrigeration equipment provider raised temperature and defrost settings at three of its facilities, threatening stored blood products.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/04/blood-bags.jpg",
+   "cves": [],
+   "first_seen": "2026-11-04T18:13:41.010046+00:00",
+   "image_checked": true,
+   "instructions": [
+    "The incident follows a wave of cyberattacks targeting refrigeration systems across Europe, where attackers remotely manipulate temperature settings or activate defrost functions that turn off cooling.",
+    "mSecure password manager hack prompts password reset warnings"
    ],
    "instructions_checked": true
   },
@@ -4672,7 +4692,7 @@
    "source_name": "Dark Reading",
    "official": false,
    "source_type": "news",
-   "title": "Google, Partners Disrupts 1.3 Million-Device-Strong XCPE Botnet",
+   "title": "Google, Partners Disrupt 1.3 Million-Device-Strong XCPE Botnet",
    "link": "https://www.darkreading.com/endpoint-security/google-13-million-device-strong-xcpe-botnet",
    "published": "2026-11-04T16:24:08+00:00",
    "summary": "Google alleges that Android device manufacturer Videostrong ran the operation, which infected set-top boxes and IoT devices with a backdoor to create infrastructure for criminal activity.",
