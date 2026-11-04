@@ -22,6 +22,27 @@
    "instructions_checked": true
   },
   {
+   "id": "868b661c5e46",
+   "source": "ars",
+   "source_name": "Ars Technica Security",
+   "official": false,
+   "source_type": "news",
+   "title": "Binance says hackers who stole billions in crypto spent months planning heist",
+   "link": "https://arstechnica.com/information-technology/2026/11/binance-says-hackers-who-stole-billions-in-crypto-spent-months-planning-heist/",
+   "published": "2026-11-04T16:06:03+00:00",
+   "summary": "The hackers who stole billions of dollars in cryptocurrency from the Binance exchange spent months working on the theft and used both social engineering and novel malware in the process, the company said Tuesday. The heist, which both the FBI and the TRM Security firm attributed to North Korean actors, initially…",
+   "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/binance-1024x648.jpg",
+   "cves": [],
+   "first_seen": "2026-11-04T16:17:08.100235+00:00",
+   "instructions": [
+    "The attacker also took steps to conceal the malicious activity and remove traces of the compromise, making detection and subsequent investigation more challenging.”",
+    "Binance immediately initiated multiple containment measures, including suspending withdrawals to restrict further outflows, coordinating with partners to freeze affected tokens, and taking steps to revoke unauthorized permissions.",
+    "Binance needed additional transactions to revoke these on-chain authorizations.",
+    "Because the hot wallet used Multi-Party Computation (MPC), there was no single private key that could be used to immediately revoke the malicious EIP-7702 authorizations."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "ce0cce9f3bc5",
    "source": "ars",
    "source_name": "Ars Technica Security",
@@ -1561,22 +1582,6 @@
    "instructions_checked": true
   },
   {
-   "id": "eb73651e36ee",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "PHP2Shell Attack Roots 25 Servers, Breaches U.S. Government-Affiliated Network",
-   "link": "https://thehackernews.com/2026/10/php2shell-attack-roots-25-servers.html",
-   "published": "2026-10-28T16:02:45+00:00",
-   "summary": "Cybersecurity researchers have disclosed details of what appears to be an artificial intelligence (AI)-assisted attack orchestrated by a suspected China-nexus threat actor that has leveraged the PHP2Shell vulnerabilities to breach exposed systems. The activity, which was observed on October 25, 2026, involved an…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgl3PPkqzXf7YyMcnwdBu5XWlOwWtUonf15z0n79qMtIOVTb4LNfKdnl7tUK-45_2boP9r2ZKuHmX6e1BZLmo-LYF-rUwH8gtNrynFuaX4rlNh20UXPvtIfC85BcKcHXK1qei6uOJyImSjTfO537yljJve0Y_zMlfFfhBl0mKPfppWhkfojtGlYgxLjdSO0/s1600/php-united.jpg",
-   "cves": [],
-   "first_seen": "2026-10-28T16:32:39.539260+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "bce30872ee07",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2467,23 +2472,6 @@
    "instructions_checked": true
   },
   {
-   "id": "b96777239849",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Belarusian hackers increasingly acting as proxies for Russia amid war in Ukraine",
-   "link": "https://therecord.media/belarus-russia-hackers-ukraine-war",
-   "published": "2026-10-28T15:15:00+00:00",
-   "summary": "Belarus-linked hackers are increasingly aligning their cyber operations with Russia's interests in Ukraine, researchers said Wednesday.",
-   "image": "https://cms.therecord.media/uploads/Lukashenko_Putin_ad14ed228c.jpg",
-   "cves": [],
-   "first_seen": "2026-10-28T15:33:38.447482+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "848edcd7f637",
    "source": "therecord",
    "source_name": "The Record",
@@ -3086,28 +3074,6 @@
    "instructions_checked": true
   },
   {
-   "id": "bfd6a8fefd0e",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "UK to look at making software companies liable for cyber breaches",
-   "link": "https://therecord.media/uk-budget-proposal-software-companies-liable-cyber-breaches",
-   "published": "2026-10-28T15:37:00+00:00",
-   "summary": "The new U.K. budget says the government will \"consider where liability for cyber breaches should sit,\" potentially a landmark shift for a country that has relied on voluntary codes to encourage software vendors to improve security.",
-   "image": "https://cms.therecord.media/uploads/55617410424_5ed596a9f2_o_819ef85e39.jpg",
-   "cves": [],
-   "first_seen": "2026-10-28T16:32:39.539260+00:00",
-   "image_checked": true,
-   "instructions": [
-    "According to the budget, the government “will consult next year on how to tackle insecure technology at source and consider where liability for cyber breaches should sit.” The work will build on an ongoing review of product liability law by the Law Commission of England and Wales.",
-    "Although the pledge occupies just one bullet point in the 166-page document, it marks the first formal pledge by a British government to examine where liability for cyber breaches should sit.",
-    "A separate overhaul of the bloc’s product liability rules, which member states must adopt by December, extends strict liability to software, including defects caused by missing security updates.",
-    "The NCSC urged organizations to patch affected systems or consider taking them offline."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "266b3df3272b",
    "source": "therecord",
    "source_name": "The Record",
@@ -3139,6 +3105,23 @@
    "image": "https://cms.therecord.media/uploads/Air_raid_alert_Kyiv_3a0cc42cea.jpg",
    "cves": [],
    "first_seen": "2026-11-02T14:57:52.156121+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "7881f7cab76d",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Ukrainian news outlet Kyiv Independent hit by suspected Russian cyberattack",
+   "link": "https://therecord.media/ukraine-kyiv-independent-cyberattack",
+   "published": "2026-11-04T16:15:00+00:00",
+   "summary": "A suspected Russian cyberattack disrupted the website of The Kyiv Independent, one of Ukraine’s leading English-language news outlets.",
+   "image": "https://cms.therecord.media/uploads/Kyiv_statue_7e36f4756a.jpg",
+   "cves": [],
+   "first_seen": "2026-11-04T16:17:08.100235+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -3190,23 +3173,6 @@
    "image": "https://blogapp.bitdefender.com/hotforsecurity/content/images/2026/10/dhs-leak.jpeg",
    "cves": [],
    "first_seen": "2026-10-30T11:19:00.626898+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "2f52955775c1",
-   "source": "grahamcluley",
-   "source_name": "Graham Cluley",
-   "official": false,
-   "source_type": "news",
-   "title": "Hive ransomware affiliate jailed, years after FBI infiltrated the gang’s systems",
-   "link": "https://www.bitdefender.com/en-us/blog/hotforsecurity/hive-ransomware-jailed-fbi-infiltrated",
-   "published": "2026-10-28T15:27:15+00:00",
-   "summary": "A Ukrainian man who carried out ransomware attacks for both the Nefilim and Hive gangs, including attacks on law firms and a healthcare provider during the COVID-19 pandemic, has been sentenced to 70 months in a US prison. Read more in my article on the Hot for Security blog.",
-   "image": "https://blogapp.bitdefender.com/hotforsecurity/content/images/2026/10/hive.jpeg",
-   "cves": [],
-   "first_seen": "2026-10-28T16:32:39.539260+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -4078,6 +4044,28 @@
    "instructions_checked": true
   },
   {
+   "id": "4ba7cadb265a",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "mSecure password manager hack prompts password reset warnings",
+   "link": "https://www.bleepingcomputer.com/news/security/msecure-password-manager-hack-prompts-password-reset-warnings/",
+   "published": "2026-11-04T16:00:18+00:00",
+   "summary": "mSeven Software is warning current and former mSecure password manager customers to change passwords, reset two-factor authentication, and remove passkeys following a cyberattack that reportedly exposed an encrypted customer database.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/04/hacker-password-manager-redlock.jpg",
+   "cves": [],
+   "first_seen": "2026-11-04T16:17:08.100235+00:00",
+   "image_checked": true,
+   "instructions": [
+    "These security protections have led to confusion among customers about why they are being advised to change all their stored passwords and authentication if their data was encrypted before being uploaded to the company's servers.",
+    "mSecure password manager hack prompts password reset warnings",
+    "mSeven Software is warning current and former mSecure password manager customers to change passwords, reset two-factor authentication, and remove passkeys following a cyberattack in which a hacker reportedly stole an encrypted customer database..",
+    "\"In response, mSeven quickly launched an investigation, took steps to mitigate the issue, and engaged external cybersecurity experts to assist."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "845cf24b8961",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4360,28 +4348,6 @@
    "instructions_checked": true
   },
   {
-   "id": "6e5b341998e9",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Volt Typhoon hides zero-day attacks using 'Silent Train' framework",
-   "link": "https://www.bleepingcomputer.com/news/security/volt-typhoon-hides-zero-day-attacks-using-silent-train-framework/",
-   "published": "2026-10-28T16:00:00+00:00",
-   "summary": "Chinese state-sponsored hacking group Volt Typhoon has been using a framework that relies on rotating chains of connected devices compromised on demand, including for zero-day attacks targeting high-value systems.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/28/silenttrain.jpg",
-   "cves": [],
-   "first_seen": "2026-10-28T16:32:39.539260+00:00",
-   "image_checked": true,
-   "instructions": [
-    "The researchers recommend strengthening security around centralized management systems, restricting internet access to administrative interfaces, rapidly patching vulnerabilities, and centralizing logs with longer retention.",
-    "They also advise monitoring for unusual administrative activity, reviewing trusted connections that could expose customer or partner networks, and following CISA and NCSC guidance on Volt Typhoon.",
-    "“To construct these sessions, its operators exploit exposed web interfaces on SOHO, IoT, and other relay devices, then deploy only the tooling needed to enable chained SSH access through the compromised node,” Black Lotus Labs explains in a report today.",
-    "After the session ends, typically in under 8 hours, the threat actors remove all their tooling, keys, and configuration files from the disposable relays."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "27b11b637919",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4656,22 +4622,6 @@
    "instructions_checked": true
   },
   {
-   "id": "c5cb56f9b754",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "AI Takes Root in Hospital Corridors, Raises Security Stakes",
-   "link": "https://www.darkreading.com/cybersecurity-operations/ai-root-hospital-corridors-raised-security-stakes",
-   "published": "2026-10-28T15:29:06+00:00",
-   "summary": "Artificial intelligence is everywhere in healthcare, from doctors' intake forms to cancer screenings. But in some cases, life-and-death uses are outpacing cybersecurity.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt27f5645084863935/6ae21761f2adb985c612d4c7/GettyImages-1415423396.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-10-29T14:36:14.704007+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "983cd7433fe6",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -4700,6 +4650,22 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt2ae3fcc30ff2f999/6aea3f3225b8d120f9a7b718/investment_on_computer-ilkercelik-GettyImages-2239174783.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-03T23:08:37.927300+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "c09f6d942d38",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "Incidents Move Too Fast for Pen & Paper",
+   "link": "https://www.darkreading.com/cybersecurity-operations/incidents-move-fast-pen-paper",
+   "published": "2026-11-04T14:17:00+00:00",
+   "summary": "Organizations may not be ready for completely autonomous communication processes, but there are places where automating information updates would alleviate pressure.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt550d9c2a9b884c0d/6aeb41c425092d7e7e6bf3f7/GettyImages-1436333087.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-04T16:17:08.100235+00:00",
    "instructions": [],
    "instructions_checked": true
   },
@@ -4833,25 +4799,6 @@
     "The lessons for other organizations should be all too familiar: minimize privileged accounts and enforce phishing-resistant multi-factor authentication wherever possible, segment your network, and monitor for unusual outbound transfers of data.",
     "According to media reports , staff were told to turn off their desktop computers and disconnect their mobile devices from the hospital's Wi-Fi.",
     "In its latest update on the incident, UNM said that it \"did not make concessions with any group behind the threat,\" and warned patients, students, employees and community members to not respond or engage with anyone claiming responsibility for the attack."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "02f39348974c",
-   "source": "msblog",
-   "source_name": "Microsoft Security Blog",
-   "official": false,
-   "source_type": "vendor_blog",
-   "title": "The CISO’s evolving role: Protecting and defending in the agentic era",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/10/28/the-cisos-evolving-role-protecting-and-defending-in-the-agentic-era/",
-   "published": "2026-10-28T16:00:00+00:00",
-   "summary": "October is Cybersecurity Awareness Month, and it’s a good time to think about how much the world has changed for chief information security officers (CISOs) in the last 12 months. A year ago, we thought we were already in the thick of AI and starting to understand it. Since then, agents have spread across the…",
-   "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/10/CISOs-protect-defend-2.jpg",
-   "cves": [],
-   "first_seen": "2026-10-28T17:29:17.347907+00:00",
-   "image_checked": true,
-   "instructions": [
-    "We need to enable innovation without introducing unmanaged risk, and we need to modernize defense without losing the security fundamentals that still matter."
    ],
    "instructions_checked": true
   },
