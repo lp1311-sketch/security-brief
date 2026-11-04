@@ -1312,7 +1312,8 @@
    ],
    "first_seen": "2026-11-04T21:14:03.901689+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "9cbdbfbc8a08",
@@ -1330,7 +1331,8 @@
    ],
    "first_seen": "2026-11-04T21:14:03.901689+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "5250e7dde8e2",
@@ -1348,7 +1350,8 @@
    ],
    "first_seen": "2026-11-04T21:14:03.901689+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "15f7ac3bee40",
@@ -1366,7 +1369,8 @@
    ],
    "first_seen": "2026-11-04T21:14:03.901689+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "17250d13793f",
@@ -1384,7 +1388,8 @@
    ],
    "first_seen": "2026-11-04T21:14:03.901689+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "80b10f6bb26e",
@@ -1459,7 +1464,8 @@
    ],
    "first_seen": "2026-11-04T21:14:03.901689+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "205d9b96d96d",
@@ -1477,7 +1483,8 @@
    ],
    "first_seen": "2026-11-04T21:14:03.901689+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "647847d3a3ff",
@@ -1495,7 +1502,8 @@
    ],
    "first_seen": "2026-11-04T21:14:03.901689+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "858a3f718c10",
@@ -1511,7 +1519,10 @@
    "cves": [
     "CVE-2026-76027"
    ],
-   "first_seen": "2026-11-04T21:14:03.901689+00:00"
+   "first_seen": "2026-11-04T21:14:03.901689+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "464510ed5cae",
@@ -1527,7 +1538,10 @@
    "cves": [
     "CVE-2026-76028"
    ],
-   "first_seen": "2026-11-04T21:14:03.901689+00:00"
+   "first_seen": "2026-11-04T21:14:03.901689+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "324b6e398ca8",
@@ -1543,7 +1557,9 @@
    "cves": [
     "CVE-2026-76029"
    ],
-   "first_seen": "2026-11-04T21:14:03.901689+00:00"
+   "first_seen": "2026-11-04T21:14:03.901689+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "df5e6180019d",
@@ -1559,7 +1575,9 @@
    "cves": [
     "CVE-2026-76030"
    ],
-   "first_seen": "2026-11-04T21:14:03.901689+00:00"
+   "first_seen": "2026-11-04T21:14:03.901689+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "b194d7e6df01",
@@ -1575,7 +1593,9 @@
    "cves": [
     "CVE-2026-76031"
    ],
-   "first_seen": "2026-11-04T21:14:03.901689+00:00"
+   "first_seen": "2026-11-04T21:14:03.901689+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "c39c60375371",
@@ -2900,6 +2920,23 @@
    "instructions": [
     "The notification advises victims that alerts were sent to targeted users in 99 countries, according to a screenshot posted to X by threat researcher Costin Raiu, who said he verified the accuracy of several victims’ notifications."
    ],
+   "instructions_checked": true
+  },
+  {
+   "id": "71b12d48491a",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "More Asian airlines announce data breaches after attack on Spanish IT provider Amadeus",
+   "link": "https://therecord.media/asian-airlines-announce-data-breach-it-provider-incident",
+   "published": "2026-11-04T21:30:00+00:00",
+   "summary": "Japan Airlines, Cathay Pacific, Korean Air, Asiana Airlines, Singapore Airlines and Malaysia Airlines have all come forward over the last week to report data breaches traced back to Amadeus IT Group — a company that builds and maintains platforms for flight reservation, ticketing and check-in platforms.",
+   "image": "https://cms.therecord.media/uploads/airplane_airport_d009f47cb4.jpg",
+   "cves": [],
+   "first_seen": "2026-11-04T22:10:20.631939+00:00",
+   "image_checked": true,
+   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -4729,6 +4766,23 @@
    "instructions_checked": true
   },
   {
+   "id": "de7887560061",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Vercel rolls out new protection against stolen session cookie attacks",
+   "link": "https://www.bleepingcomputer.com/news/security/vercel-rolls-out-new-protection-against-stolen-session-cookie-attacks/",
+   "published": "2026-11-04T21:31:18+00:00",
+   "summary": "Vercel is gradually rolling out Device Bound Session Credentials (DBSC) on its platform as a key defense against information stealer malware.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/04/vercel.jpg",
+   "cves": [],
+   "first_seen": "2026-11-04T22:10:20.631939+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "27b11b637919",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4796,6 +4850,22 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt626614753803fdf0/6ae260b6848b397b5d1859e3/anthropic_Algi_Febri_Sugita_shutterstock.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-10-29T19:22:47.775217+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "1b4641ca3728",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "Critical Rails Bug Threatens to Derail Vulnerable Servers",
+   "link": "https://www.darkreading.com/application-security/critical-rails-bug-derail-vulnerable-servers",
+   "published": "2026-11-04T21:48:18+00:00",
+   "summary": "An attacker could write arbitrary files and read sensitive files via images uploaded to the Rails Active Storage ImageMagick integration, possibly positioning a threat actor for lateral movement.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt1200a12331479a63/6aeb910a69108565761c02f3/metal_guardrails-viti-GettyImages-897806150.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-04T22:10:20.631939+00:00",
    "instructions": [],
    "instructions_checked": true
   },
