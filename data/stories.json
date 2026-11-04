@@ -1241,27 +1241,6 @@
    "instructions_checked": true
   },
   {
-   "id": "42a9e60af11b",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Adobe Fixes 8 Critical Campaign Classic Flaws Allowing Code Execution and Security Bypass",
-   "link": "https://thehackernews.com/2026/10/adobe-fixes-8-critical-campaign-classic.html",
-   "published": "2026-10-28T11:15:51+00:00",
-   "summary": "Adobe has released patches to address multiple critical security flaws in Campaign Classic that, if successfully exploited, could result in arbitrary code execution, security feature bypass, and privilege escalation. The list of eight vulnerabilities is as follows - CVE-2026-104351 (CVSS score: 9.9) - A code injection…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3z7SDPF49VtrfeTS8qZD9-Rv1ne3ZUL2KLJZklOlASYXMnjBQXmmIYZ-wAC9PR248ntUBTyZLq2G6TPVYLZ-aEN7fDFc4pcEhSbt_vj36JTbujGJ2UHTbxFDUOiDvYDyKl7NpCvSMlySdqWjPhyphenhyphenFUNTkC38Ej0biyWHeF1u4kFHCe4tkJjgCW6RCHttx_/s1600/adobe-main.jpg",
-   "cves": [
-    "CVE-2026-104351"
-   ],
-   "first_seen": "2026-10-28T11:24:37.516064+00:00",
-   "instructions": [
-    "Users are advised to update to the latest version for optimal protection.",
-    "Adobe said it's not \"aware of any exploits in the wild for any of the issues\" addressed in the update."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "9ac8296dadd7",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1456,27 +1435,6 @@
    "first_seen": "2026-10-31T06:02:03.283555+00:00",
    "instructions": [
     "The web infrastructure and security company said it autonomously mitigated 18.2 million network-layer (L3) DDoS attacks and 14.4 trillion HTTP DDoS requests in the third quarter of 2026."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "eb93de238d98",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Critical 16-Year-Old UEFI Flaw Can Run Code Before Secure Boot on Network-Booting Servers",
-   "link": "https://thehackernews.com/2026/10/critical-16-year-old-uefi-flaw-can-run.html",
-   "published": "2026-10-28T11:50:00+00:00",
-   "summary": "A critical 16-year-old flaw in EDK II, the open-source code that most hardware makers use to build UEFI firmware, can allow an attacker to run code on a machine before its operating system loads, but only while the machine is booting over the network. UEFI firmware is the software that runs first when a computer is…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoVVx2e6mg8LPbhDYmtubHewVD_9BI7UcctCMSwwG-h4SuOyZJOvIyTre_g9Ggo6sLw6Bjrse_1FsqKKThyiIvc5CbuYqq4caYCtUciHGg33wReFQgOjJuTX5FrnSS3OZTd_yjXt03l_kxwIX-NshU9A8wpANSdQwOWkDKzy31QdXkCD6UP21dOpfbjhg/s1600/server-bios.jpg",
-   "cves": [],
-   "first_seen": "2026-10-28T14:34:38.042181+00:00",
-   "instructions": [
-    "Until that update arrives, the advisory lists no workaround.",
-    "TianoCore, the project behind EDK II, published an advisory on October 22 and rated the flaw, tracked as CVE-2026-97631 , 9.5 out of 10.",
-    "A code fix exists, but no stable release of EDK II contains it yet, and the advisory still lists no patched version, so most users have nothing to install today.",
-    "The advisory says that an attacker who knows the exact firmware build can plant a \"counterfeit event\" that causes the firmware to run the attacker's own code, so an exploit has to be built for a specific build."
    ],
    "instructions_checked": true
   },
@@ -1834,26 +1792,6 @@
    "instructions": [
     "Known to be active since at least 2021, the threat actor was previously observed exploiting a file upload vulnerability in Versa Director as a zero-day (CVE-2024-39717) to deliver a bespoke web shell called VersaMem designed to harvest credentials and enable access to downstream customers.",
     "\"To construct these sessions, its operators exploit exposed web interfaces on SOHO, IoT, and other relay devices, then deploy only the tooling needed to enable chained SSH access through the compromised node.\""
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "ce5fe177d9da",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Wazuh and AI for Enhanced SOC Workflows",
-   "link": "https://thehackernews.com/2026/10/wazuh-and-ai-for-enhanced-soc-workflows.html",
-   "published": "2026-10-28T11:30:00+00:00",
-   "summary": "Artificial Intelligence (AI) has become one of this decade's defining technologies. From healthcare and finance to manufacturing and education, organizations increasingly rely on AI to automate repetitive tasks, uncover patterns hidden within large datasets, and support faster decision-making. Cybersecurity has…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo5_lgjV0zvHt5XW8CcCjQnBc_cvxOxrGxsrliXv3s9c6RD-Aw7eXOlNrp78QHxSnVO5yBgphx7KqCjkjje3YbwCFUtXUdLN4xA-sW_zVoFsK7au37XZxUPyoDRlhCIGsxc2at70I_FexwVKgdyub-XuuvwIZCy1o6hoCU50o7lhHWDSgktrcsrXkN9p8/s1600/wazuh.png",
-   "cves": [],
-   "first_seen": "2026-10-28T14:34:38.042181+00:00",
-   "instructions": [
-    "As with any AI output, the recommendations are advisory and should be validated against your own policies before you act.",
-    "AI offers a practical way to augment analysts by providing contextual explanations, summarizing findings, and recommending remediation actions, rather than replacing human expertise.",
-    "The assistant can provide useful guidance on many common tasks, including what to do about a finding and how to configure certain settings."
    ],
    "instructions_checked": true
   },
@@ -5050,23 +4988,6 @@
    "instructions_checked": true
   },
   {
-   "id": "5ad5314f8c50",
-   "source": "schneier",
-   "source_name": "Schneier on Security",
-   "official": false,
-   "source_type": "news",
-   "title": "Studying Fraudulent North Korean IT Workers",
-   "link": "https://www.schneier.com/blog/archives/2026/10/studying-fraudulent-north-korean-it-workers.html",
-   "published": "2026-10-28T11:05:00+00:00",
-   "summary": "Researchers set up a fake start-up company to study fraudulent North Korean IT workers.",
-   "image": null,
-   "cves": [],
-   "first_seen": "2026-10-28T11:24:37.516064+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "fd515affb539",
    "source": "schneier",
    "source_name": "Schneier on Security",
@@ -5749,6 +5670,28 @@
     "Remove the unauthorized SSH key, persistence mechanisms, and running tunnel processes, and assess whether the host should be rebuilt.",
     "It then attempts to install an SSH key, enable SSH, create a reverse tunnel, and configure persistence.",
     "Adobe, Veeam, Juniper Networks Patch Critical Vulnerabilities"
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "9726794b0c18",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Malicious cPGuard Updates Served in OpsShield Supply Chain Attack",
+   "link": "https://www.securityweek.com/malicious-cpguard-updates-served-in-opsshield-supply-chain-attack/",
+   "published": "2026-11-04T10:54:48+00:00",
+   "summary": "Using compromised credentials, the attackers accessed OpsShield’s update servers and poisoned multiple cPGuard versions. The post Malicious cPGuard Updates Served in OpsShield Supply Chain Attack appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/06/supply-chain-threat.webp",
+   "cves": [],
+   "first_seen": "2026-11-04T11:56:28.087134+00:00",
+   "image_checked": true,
+   "instructions": [
+    "All password hashes, root SSH keys, and MySQL root passwords, as well as shell history on the infected customer servers, should be considered compromised and rotated. “If cPGuard was not online during that window, your server did not receive the fake update.",
+    "You should still reset your billing portal password,” OpsShield says.",
+    "OpsShield also released cPGuard updates (version 5.88.25 and later) that remove the hidden root shell and the additional files left behind by the script, and published indicators of compromise (IoCs). “Attacks like this one are getting faster and cheaper to run.",
+    "According to the company’s incident notice , the attackers used compromised credentials to access its update distribution infrastructure (CDN) and distribute a malicious script via cPGuard’s update channel. cPGuard versions 5.88.12–5.88.19 contained the malicious code."
    ],
    "instructions_checked": true
   },
