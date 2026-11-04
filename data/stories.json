@@ -311,6 +311,28 @@
    "instructions_checked": true
   },
   {
+   "id": "42b1ec161f14",
+   "source": "borncity",
+   "source_name": "Born's IT and Windows Blog",
+   "official": false,
+   "source_type": "news",
+   "title": "cPGuard gehackt, verteilte Backdoor (Nov. 2026)",
+   "link": "https://borncity.com/blog/2026/11/04/cpguard-gehackt-verteilte-backdoor-nov-2026/",
+   "published": "2026-11-04T09:17:56+00:00",
+   "summary": "Unschöne Sache für Leute, die die Sicherheits- und Anti-Malware-Suite für Linux-Webserver, cPGuard von Opsshield verwenden. Die Nacht ist mir die Information untergekommen, dass die Suite von Hackern gekapert wurde, die dann eine Backdoor über Updates auf die geschützten Server verteilt … Weiterlesen → Quelle",
+   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
+   "cves": [],
+   "first_seen": "2026-11-04T09:39:20.020945+00:00",
+   "image_checked": true,
+   "instructions": [
+    "November 2026 die Sicherheitswarnung cPGuard security advisory: Update channel compromise veröffentlicht.",
+    "November 2026 ist mir nachfolgender Tweet von International Cyber Digest untergekommen, der von einem \"Hijacked Update für cPGuard\" schrieb.",
+    "November 2026 um 02:06 Uhr UTC mithilfe kompromittierter Anmeldedaten unbefugten Zugriff auf die Update-Verteilungsinfrastruktur (CDN) von OPSSHIELD.",
+    "Der Angreifer nutzte diesen Zugriff, um über den cPGuard-Update-Kanal das oben erwähnte schädliche Script zu verbreiten."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "dbaea48d64c6",
    "source": "borncity",
    "source_name": "Born's IT and Windows Blog",
@@ -1135,519 +1157,6 @@
     "CVE-2026-70125"
    ],
    "first_seen": "2026-10-30T21:58:38.759385+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "f351d9201c1f",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium: CVE-2026-78891 Buffer overflow in WebRTC",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78891",
-   "published": "2026-10-28T08:41:43+00:00",
-   "summary": "Information published.",
-   "image": null,
-   "cves": [
-    "CVE-2026-78891"
-   ],
-   "first_seen": "2026-10-28T20:07:12.739870+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "ecab62689dbc",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium: CVE-2026-78892 Incorrect authorization in Chromoting",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78892",
-   "published": "2026-10-28T08:41:48+00:00",
-   "summary": "Information published.",
-   "image": null,
-   "cves": [
-    "CVE-2026-78892"
-   ],
-   "first_seen": "2026-10-28T20:07:12.739870+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "59e10a43dc01",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium: CVE-2026-78893 Information leak in QUIC",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78893",
-   "published": "2026-10-28T08:41:53+00:00",
-   "summary": "Information published.",
-   "image": null,
-   "cves": [
-    "CVE-2026-78893"
-   ],
-   "first_seen": "2026-10-28T20:07:12.739870+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "b93cac1e6481",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium: CVE-2026-78894 Race condition in Payments",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78894",
-   "published": "2026-10-28T08:41:58+00:00",
-   "summary": "Information published.",
-   "image": null,
-   "cves": [
-    "CVE-2026-78894"
-   ],
-   "first_seen": "2026-10-28T20:07:12.739870+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "f1cbf24ea5be",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium: CVE-2026-78895 Information leak in Paint",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78895",
-   "published": "2026-10-28T08:42:03+00:00",
-   "summary": "Information published.",
-   "image": null,
-   "cves": [
-    "CVE-2026-78895"
-   ],
-   "first_seen": "2026-10-28T20:07:12.739870+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "1d5783965207",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium: CVE-2026-78896 Information leak in StorageAccessAPI",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78896",
-   "published": "2026-10-28T08:42:08+00:00",
-   "summary": "Information published.",
-   "image": null,
-   "cves": [
-    "CVE-2026-78896"
-   ],
-   "first_seen": "2026-10-28T20:07:12.739870+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "315b1a5aacf4",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium: CVE-2026-78897 Missing authorization in BrowserTag",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78897",
-   "published": "2026-10-28T08:42:12+00:00",
-   "summary": "Information published.",
-   "image": null,
-   "cves": [
-    "CVE-2026-78897"
-   ],
-   "first_seen": "2026-10-28T20:07:12.739870+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "2a82439e29c0",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium: CVE-2026-78898 Incorrect authorization in Downloads",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78898",
-   "published": "2026-10-28T08:42:18+00:00",
-   "summary": "Information published.",
-   "image": null,
-   "cves": [
-    "CVE-2026-78898"
-   ],
-   "first_seen": "2026-10-28T20:07:12.739870+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "17f07d76c524",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium: CVE-2026-78899 Use after free in V8",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78899",
-   "published": "2026-10-28T08:42:23+00:00",
-   "summary": "Information published.",
-   "image": null,
-   "cves": [
-    "CVE-2026-78899"
-   ],
-   "first_seen": "2026-10-28T20:07:12.739870+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "3bafcdb099fa",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium: CVE-2026-78900 Improper input validation in Media",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78900",
-   "published": "2026-10-28T08:42:28+00:00",
-   "summary": "Information published.",
-   "image": null,
-   "cves": [
-    "CVE-2026-78900"
-   ],
-   "first_seen": "2026-10-28T20:07:12.739870+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "f0b31feefa4b",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium: CVE-2026-78901 Race condition in V8",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78901",
-   "published": "2026-10-28T08:42:32+00:00",
-   "summary": "Information published.",
-   "image": null,
-   "cves": [
-    "CVE-2026-78901"
-   ],
-   "first_seen": "2026-10-28T20:07:12.739870+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "61f7ef8092fd",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium: CVE-2026-78903 Incomplete cleanup in SiteIsolation",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78903",
-   "published": "2026-10-28T08:42:37+00:00",
-   "summary": "Information published.",
-   "image": null,
-   "cves": [
-    "CVE-2026-78903"
-   ],
-   "first_seen": "2026-10-28T20:07:12.739870+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "ca0bde1e7e60",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium: CVE-2026-78904 Type confusion in ANGLE",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78904",
-   "published": "2026-10-28T08:42:41+00:00",
-   "summary": "Information published.",
-   "image": null,
-   "cves": [
-    "CVE-2026-78904"
-   ],
-   "first_seen": "2026-10-28T20:07:12.739870+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "7a7698d0244c",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium: CVE-2026-78905 Type confusion in ANGLE",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78905",
-   "published": "2026-10-28T08:42:46+00:00",
-   "summary": "Information published.",
-   "image": null,
-   "cves": [
-    "CVE-2026-78905"
-   ],
-   "first_seen": "2026-10-28T20:07:12.739870+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "cbfee0b618fd",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium: CVE-2026-78906 Race condition in ANGLE",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78906",
-   "published": "2026-10-28T08:42:51+00:00",
-   "summary": "Information published.",
-   "image": null,
-   "cves": [
-    "CVE-2026-78906"
-   ],
-   "first_seen": "2026-10-28T20:07:12.739870+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "2529c0b41b91",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium: CVE-2026-78907 Incorrect authorization in WebProtect",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78907",
-   "published": "2026-10-28T08:42:56+00:00",
-   "summary": "Information published.",
-   "image": null,
-   "cves": [
-    "CVE-2026-78907"
-   ],
-   "first_seen": "2026-10-28T20:07:12.739870+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "a50f70ee25fe",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium: CVE-2026-78908 Information leak in Canvas",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78908",
-   "published": "2026-10-28T08:43:01+00:00",
-   "summary": "Information published.",
-   "image": null,
-   "cves": [
-    "CVE-2026-78908"
-   ],
-   "first_seen": "2026-10-28T20:07:12.739870+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "a59fb33bfb53",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium: CVE-2026-78909 Use after free in Views",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78909",
-   "published": "2026-10-28T08:43:05+00:00",
-   "summary": "Information published.",
-   "image": null,
-   "cves": [
-    "CVE-2026-78909"
-   ],
-   "first_seen": "2026-10-28T20:07:12.739870+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "8d428b5fe5e8",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium: CVE-2026-78910 Buffer overflow in V8",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78910",
-   "published": "2026-10-28T08:43:10+00:00",
-   "summary": "Information published.",
-   "image": null,
-   "cves": [
-    "CVE-2026-78910"
-   ],
-   "first_seen": "2026-10-28T20:07:12.739870+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "545cd74f319c",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium: CVE-2026-78911 Incorrect authorization in USB",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78911",
-   "published": "2026-10-28T08:43:15+00:00",
-   "summary": "Information published.",
-   "image": null,
-   "cves": [
-    "CVE-2026-78911"
-   ],
-   "first_seen": "2026-10-28T20:07:12.739870+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "2ba5534213be",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium: CVE-2026-78912 UI misrepresentation in Browser",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78912",
-   "published": "2026-10-28T08:43:19+00:00",
-   "summary": "Information published.",
-   "image": null,
-   "cves": [
-    "CVE-2026-78912"
-   ],
-   "first_seen": "2026-10-28T20:07:12.739870+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "93faa0bd5cf4",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium: CVE-2026-78913 Use after free in Chromoting",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78913",
-   "published": "2026-10-28T08:43:24+00:00",
-   "summary": "Information published.",
-   "image": null,
-   "cves": [
-    "CVE-2026-78913"
-   ],
-   "first_seen": "2026-10-28T20:07:12.739870+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "1b5f5991cb92",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium: CVE-2026-78914 Uninitialized resource in Skia",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78914",
-   "published": "2026-10-28T08:43:29+00:00",
-   "summary": "Information published.",
-   "image": null,
-   "cves": [
-    "CVE-2026-78914"
-   ],
-   "first_seen": "2026-10-28T20:07:12.739870+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "72c1f54e5577",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium: CVE-2026-78915 Race condition in Enterprise",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78915",
-   "published": "2026-10-28T08:43:33+00:00",
-   "summary": "Information published.",
-   "image": null,
-   "cves": [
-    "CVE-2026-78915"
-   ],
-   "first_seen": "2026-10-28T20:07:12.739870+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "e3ca670c1e6f",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium: CVE-2026-78934 Race condition in ReadAloud",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78934",
-   "published": "2026-10-28T08:43:38+00:00",
-   "summary": "Information published.",
-   "image": null,
-   "cves": [
-    "CVE-2026-78934"
-   ],
-   "first_seen": "2026-10-28T20:07:12.739870+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "d935e3959b68",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium: CVE-2026-78938 Type confusion in V8",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78938",
-   "published": "2026-10-28T08:43:44+00:00",
-   "summary": "Information published.",
-   "image": null,
-   "cves": [
-    "CVE-2026-78938"
-   ],
-   "first_seen": "2026-10-28T20:07:12.739870+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "87cc334f725d",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium: CVE-2026-78939 Use after free in Chromecast",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78939",
-   "published": "2026-10-28T08:43:49+00:00",
-   "summary": "Information published.",
-   "image": null,
-   "cves": [
-    "CVE-2026-78939"
-   ],
-   "first_seen": "2026-10-28T20:07:12.739870+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -2667,6 +2176,29 @@
    "instructions_checked": true
   },
   {
+   "id": "32c90d2f0958",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Google Issues Patches for Critical Android Flaw That Could Allow RCE Without User Interaction",
+   "link": "https://thehackernews.com/2026/11/google-patches-critical-android-flaw.html",
+   "published": "2026-11-04T07:46:15+00:00",
+   "summary": "A critical Android flaw could allow an attacker to run code on a phone without any user action remotely, Google said in its November security bulletin. The flaw, CVE-2026-58868, affects Android 14 through 17. Phones get the fix with security patch level 2026-11-01 or later, which phone makers and carriers send on…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgm9fDI_lHL64S1r-eoB5-99WagZJBIjKDF-bEJ9egJw_EiLUomXSakGnV0vdq9Fqu2j6KVWM4upLmOwweDCKQ32f21W8CTsQHnoGMhFm-ISPNQEg1Jq5WbDujqLHVkGSEsox0Xd3Yc5Dd-v4-6rdzU4akd97y7cBhRYFO2ofmxpf3HYspJ6MkJs2RtfC4/s1600/android-patch.jpg",
+   "cves": [
+    "CVE-2026-58868"
+   ],
+   "first_seen": "2026-11-04T09:39:20.020945+00:00",
+   "instructions": [
+    "The bulletin gives no workaround for phones that cannot install the update yet.",
+    "Phones get the fix with security patch level 2026-11-01 or later, which phone makers and carriers send on their own schedules.",
+    "Cybersecurity and Infrastructure Security Agency, as of its November 3 update.",
+    "Find the dates for the Android security update and the Google Play system update."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "310fe7a6e4c3",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2857,6 +2389,22 @@
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqyPfrBB7GYTnYsvVj2TxCv0pPwFh_PkVpdQcxuspKgQfbsX1p2kDSdokIyPqLsxSfBCkFPiTATfZxZRbouqkoqfEESL7CgA-MyXD61eQFluiQtdFZDyXQc_3EUAg71JWIHxq9MPVLrwwegvUVuiViE8AxsKH6iBVypWazO0wmCoaC3-D1Ih9Yw3vwN1FJ/s1600/russia-hackers.jpg",
    "cves": [],
    "first_seen": "2026-11-03T12:59:11.349315+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "40a5a2749a72",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Russian Police Arrest 3 Suspected VasyGrek Hackers, Dismantle Criminal Infrastructure",
+   "link": "https://thehackernews.com/2026/11/russian-police-arrest-3-suspected.html",
+   "published": "2026-11-04T08:17:11+00:00",
+   "summary": "Russian authorities have arrested three suspected members of a threat group known as VasyGrek and dismantled its criminal infrastructure. Also known as Fluffy Wolf, the threat actor has a history of targeting Russian and international companies since 2016. The Ministry of Internal Affairs of the Russian Federation…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvVXRk9XWLvV5V7-gF-fqxa3YEEGpquE2Q8rML0rLK7ieZAbLJLqsHS6Sk012cwUslyYApJRP4b8SvmPCyATY2SbWpuhWILK0MRglNFqH5l5rVhTjSaJunpjWvbt8O9_UUnZnuxMJ26k5S4aQNj6pMBJLhY0gfn4zIY0Ot6m-gkntqxJiU4qgoAL3641pw/s1600/russia-hackerss.jpg",
+   "cves": [],
+   "first_seen": "2026-11-04T09:39:20.020945+00:00",
    "instructions": [],
    "instructions_checked": true
   },
@@ -5824,27 +5372,6 @@
    "instructions_checked": true
   },
   {
-   "id": "21dec5f03b58",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "CISA Warns of Node2Shell Exploitation as Honeypots Log Attack Attempts",
-   "link": "https://www.securityweek.com/cisa-warns-of-node2shell-exploitation-as-honeypots-log-attack-attempts/",
-   "published": "2026-10-28T08:37:24+00:00",
-   "summary": "CISA added the Brotli flaw to its KEV catalog, and two honeypot operators logged attempts, including one that used a broken exploit. The post CISA Warns of Node2Shell Exploitation as Honeypots Log Attack Attempts appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/10/cyberattack-vulnerability-exploited.jpeg",
-   "cves": [],
-   "first_seen": "2026-10-28T08:52:03.360416+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Preparing for disruption must become part of day-to-day operations.",
-    "iOS, macOS 27.2 Patch 286 Bugs; Fix for Exploited Flaw Backported to iOS 18",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "67386231cf52",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -6114,29 +5641,6 @@
    "instructions_checked": true
   },
   {
-   "id": "3f9c6dce420c",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Hackers Start Probing Fresh Oracle EBS Vulnerability",
-   "link": "https://www.securityweek.com/hackers-start-probing-fresh-oracle-ebs-vulnerability/",
-   "published": "2026-10-28T09:14:23+00:00",
-   "summary": "CVE-2026-101767 is an unauthenticated SQL injection that can be exploited for remote code execution. The post Hackers Start Probing Fresh Oracle EBS Vulnerability appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2025/10/Oracle-E-Business-Suite.jpeg",
-   "cves": [
-    "CVE-2026-101767"
-   ],
-   "first_seen": "2026-10-28T09:42:23.763917+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Preparing for disruption must become part of day-to-day operations.",
-    "iOS, macOS 27.2 Patch 286 Bugs; Fix for Exploited Flaw Backported to iOS 18",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "dac38c362139",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -6311,6 +5815,28 @@
    "instructions_checked": true
   },
   {
+   "id": "1f8acdc5d8c6",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Meta Shares Top Muse Bug Bounty Findings as Payouts Reach $1.2 Million",
+   "link": "https://www.securityweek.com/meta-shares-top-muse-bug-bounty-findings-as-payouts-reach-1-2-million/",
+   "published": "2026-11-04T08:27:05+00:00",
+   "summary": "A $300,000 award went to a pre-launch flaw that exposed conversations and tokens on internal Muse test VMs used by Meta staff. The post Meta Shares Top Muse Bug Bounty Findings as Payouts Reach $1.2 Million appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/11/Meta-Muse.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-04T09:39:20.020945+00:00",
+   "image_checked": true,
+   "instructions": [
+    "A $90,000 bounty was paid for a report involving a malicious web page that, when Muse was asked to summarize it, mimicked status messages from the agent’s browsing tool. “It got the agent to execute some actions which should have been caught,” Singleton noted.",
+    "A $1,000 bounty covered a Mac app flaw that let an attacker with access to the computer hijack the auto-update feature to execute code with the app’s permissions.",
+    "Android’s November 2026 Updates Patch Over 200 Vulnerabilities",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "0658f100b664",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -6348,6 +5874,26 @@
     "If this model were working, third-party breaches should be getting rarer.",
     "What trust between two companies should rest on The questionnaire made sense when there was no other way to size up a vendor you couldn’t see inside.",
     "Preparing for disruption must become part of day-to-day operations.",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "68960d2138eb",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "North Korea Launches Missiles Toward the Sea as Pyongyang Protests Against US Claims on Binance Hack",
+   "link": "https://www.securityweek.com/north-korea-launches-missiles-toward-the-sea-as-pyongyang-protests-against-us-claims-on-binance-hack/",
+   "published": "2026-11-04T09:23:22+00:00",
+   "summary": "In recent months, North Korea has accelerated its weapons tests in a likely bid to increase its leverage in potential diplomacy with the US. The post North Korea Launches Missiles Toward the Sea as Pyongyang Protests Against US Claims on Binance Hack appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2023/01/North-Korea-Hackers.jpg",
+   "cves": [],
+   "first_seen": "2026-11-04T09:39:20.020945+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Android’s November 2026 Updates Patch Over 200 Vulnerabilities",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true

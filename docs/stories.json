@@ -1,16 +1,6 @@
 {
  "stories": [
   {
-   "id": "357136bfe66d",
-   "title": "Ivanti patches two more Connect Secure zero-days chained in attacks",
-   "summary": "Ivanti released security updates to patch two more Connect Secure (ICS) remote access gateway flaws that have been chained in zero-day attacks since at least October 1.",
-   "priority": "Critical",
-   "category": "Patch Radar",
-   "date": "02 Nov 2026, 09:33 UTC",
-   "sources": "BleepingComputer, SecurityWeek, The Hacker News",
-   "url": "story/357136bfe66d.html"
-  },
-  {
    "id": "4bea3ce24866",
    "title": "Max-Severity GitLab Vulnerability Exploited Against Alpine Linux",
    "summary": "Tracked as CVE-2026-97229, the bug allows unauthenticated attackers to execute arbitrary code on the server. The post Max-Severity GitLab Vulnerability Exploited Against…",
@@ -19,6 +9,16 @@
    "date": "30 Oct 2026, 09:32 UTC",
    "sources": "SecurityWeek, The Hacker News",
    "url": "story/4bea3ce24866.html"
+  },
+  {
+   "id": "357136bfe66d",
+   "title": "Ivanti patches two more Connect Secure zero-days chained in attacks",
+   "summary": "Ivanti released security updates to patch two more Connect Secure (ICS) remote access gateway flaws that have been chained in zero-day attacks since at least October 1.",
+   "priority": "Critical",
+   "category": "Patch Radar",
+   "date": "02 Nov 2026, 09:33 UTC",
+   "sources": "BleepingComputer, SecurityWeek, The Hacker News",
+   "url": "story/357136bfe66d.html"
   },
   {
    "id": "409f0b0486b7",
@@ -209,6 +209,16 @@
    "date": "28 Oct 2026, 13:50 UTC",
    "sources": "BleepingComputer",
    "url": "story/219f99ac76bf.html"
+  },
+  {
+   "id": "32c90d2f0958",
+   "title": "Google Issues Patches for Critical Android Flaw That Could Allow RCE Without User Interaction",
+   "summary": "A critical Android flaw could allow an attacker to run code on a phone without any user action remotely, Google said in its November security bulletin. The flaw…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "04 Nov 2026, 07:46 UTC",
+   "sources": "The Hacker News",
+   "url": "story/32c90d2f0958.html"
   },
   {
    "id": "ed421e39d30b",
@@ -459,16 +469,6 @@
    "date": "03 Nov 2026, 14:12 UTC",
    "sources": "SecurityWeek",
    "url": "story/b981c2f988c9.html"
-  },
-  {
-   "id": "0658f100b664",
-   "title": "NATO’s Crossed Swords Exercise Brings AI Agents Into Cyber Operations Training",
-   "summary": "The NATO CCDCOE exercise in Estonia introduces AI agents and OpenAI Daybreak into joint cyber and kinetic operations training. The post NATO’s Crossed Swords Exercise…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "03 Nov 2026, 08:49 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/0658f100b664.html"
   },
   {
    "id": "d108c8cad61e",
@@ -731,14 +731,44 @@
    "url": "story/911f226c7d66.html"
   },
   {
-   "id": "29d08fa787d9",
-   "title": "Hackers Target Critical Oracle E-Business Suite RCE Flaw Days After Security Patch",
-   "summary": "Threat actors are beginning to probe for a newly patched critical vulnerability in Oracle E-Business Suite (EBS), according to threat intelligence firm Defused Cyber…",
+   "id": "68960d2138eb",
+   "title": "North Korea Launches Missiles Toward the Sea as Pyongyang Protests Against US Claims on Binance Hack",
+   "summary": "In recent months, North Korea has accelerated its weapons tests in a likely bid to increase its leverage in potential diplomacy with the US. The post North Korea…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "04 Nov 2026, 09:23 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/68960d2138eb.html"
+  },
+  {
+   "id": "42b1ec161f14",
+   "title": "cPGuard gehackt, verteilte Backdoor (Nov. 2026)",
+   "summary": "Unschöne Sache für Leute, die die Sicherheits- und Anti-Malware-Suite für Linux-Webserver, cPGuard von Opsshield verwenden. Die Nacht ist mir die Information…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "04 Nov 2026, 09:17 UTC",
+   "sources": "Born's IT and Windows Blog",
+   "url": "story/42b1ec161f14.html"
+  },
+  {
+   "id": "1f8acdc5d8c6",
+   "title": "Meta Shares Top Muse Bug Bounty Findings as Payouts Reach $1.2 Million",
+   "summary": "A $300,000 award went to a pre-launch flaw that exposed conversations and tokens on internal Muse test VMs used by Meta staff. The post Meta Shares Top Muse Bug Bounty…",
    "priority": "Standard",
    "category": "Patch Radar",
-   "date": "28 Oct 2026, 12:48 UTC",
-   "sources": "The Hacker News, SecurityWeek",
-   "url": "story/29d08fa787d9.html"
+   "date": "04 Nov 2026, 08:27 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/1f8acdc5d8c6.html"
+  },
+  {
+   "id": "40a5a2749a72",
+   "title": "Russian Police Arrest 3 Suspected VasyGrek Hackers, Dismantle Criminal Infrastructure",
+   "summary": "Russian authorities have arrested three suspected members of a threat group known as VasyGrek and dismantled its criminal infrastructure. Also known as Fluffy Wolf, the…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "04 Nov 2026, 08:17 UTC",
+   "sources": "The Hacker News",
+   "url": "story/40a5a2749a72.html"
   },
   {
    "id": "dbaea48d64c6",
@@ -891,24 +921,14 @@
    "url": "story/3ce297811edf.html"
   },
   {
-   "id": "402458e4dacc",
-   "title": "Google Dismantles XCPE Botnet of 1.3 Million Android Devices",
-   "summary": "The botnet was created and operated for financial gain by Android OEM/ODM Videostrong Technology. The post Google Dismantles XCPE Botnet of 1.3 Million Android Devices…",
+   "id": "0658f100b664",
+   "title": "NATO’s Crossed Swords Exercise Brings AI Agents Into Cyber Operations Training",
+   "summary": "The NATO CCDCOE exercise in Estonia introduces AI agents and OpenAI Daybreak into joint cyber and kinetic operations training. The post NATO’s Crossed Swords Exercise…",
    "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "03 Nov 2026, 09:22 UTC",
+   "category": "AI Risk Lab",
+   "date": "03 Nov 2026, 08:49 UTC",
    "sources": "SecurityWeek",
-   "url": "story/402458e4dacc.html"
-  },
-  {
-   "id": "07d9937fab38",
-   "title": "Hackers Exploit BTCPay Server Flaw to Steal Bitcoin and Litecoin From Hot Wallets",
-   "summary": "BTCPay Server, a self-hosted, open-source cryptocurrency payment processor, has urged users to install the latest version of its software in response to reports of…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "03 Nov 2026, 08:31 UTC",
-   "sources": "The Hacker News",
-   "url": "story/07d9937fab38.html"
+   "url": "story/0658f100b664.html"
   },
   {
    "id": "f6edbcaffade",
@@ -1321,6 +1341,16 @@
    "url": "story/60ccb0bbd830.html"
   },
   {
+   "id": "29d08fa787d9",
+   "title": "Hackers Target Critical Oracle E-Business Suite RCE Flaw Days After Security Patch",
+   "summary": "Threat actors are beginning to probe for a newly patched critical vulnerability in Oracle E-Business Suite (EBS), according to threat intelligence firm Defused Cyber…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "28 Oct 2026, 12:48 UTC",
+   "sources": "The Hacker News",
+   "url": "story/29d08fa787d9.html"
+  },
+  {
    "id": "7c22489c81a5",
    "title": "Hackers now scanning systems for recently-patched Oracle flaw",
    "summary": "Attackers have begun probing the Internet for systems unpatched against a recently disclosed critical Oracle E-Business Suite (EBS) vulnerability.",
@@ -1359,6 +1389,26 @@
    "date": "28 Oct 2026, 10:46 UTC",
    "sources": "BleepingComputer",
    "url": "story/aa5619127529.html"
+  },
+  {
+   "id": "402458e4dacc",
+   "title": "Google Dismantles XCPE Botnet of 1.3 Million Android Devices",
+   "summary": "The botnet was created and operated for financial gain by Android OEM/ODM Videostrong Technology. The post Google Dismantles XCPE Botnet of 1.3 Million Android Devices…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "03 Nov 2026, 09:22 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/402458e4dacc.html"
+  },
+  {
+   "id": "07d9937fab38",
+   "title": "Hackers Exploit BTCPay Server Flaw to Steal Bitcoin and Litecoin From Hot Wallets",
+   "summary": "BTCPay Server, a self-hosted, open-source cryptocurrency payment processor, has urged users to install the latest version of its software in response to reports of…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "03 Nov 2026, 08:31 UTC",
+   "sources": "The Hacker News",
+   "url": "story/07d9937fab38.html"
   },
   {
    "id": "f9c39fb133ac",
@@ -1559,26 +1609,6 @@
    "date": "02 Nov 2026, 11:29 UTC",
    "sources": "SecurityWeek",
    "url": "story/fe787079c468.html"
-  },
-  {
-   "id": "ff9c9693b43d",
-   "title": "Polymarket Returns $3.9 Million to Traders as DebugBear Cites DNS Hijack",
-   "summary": "DebugBear says its DNS records were compromised via its domain registrar, and early findings show a single customer was targeted. The post Polymarket Returns $3.9…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "02 Nov 2026, 09:33 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/ff9c9693b43d.html"
-  },
-  {
-   "id": "1befc30403b6",
-   "title": "FBI Flags Over 600 Addresses Tied to North Korea’s Binance Heist",
-   "summary": "The FBI has officially pinned the $6 billion Binance hack on North Korea’s TraderTraitor as the attackers launder the stolen crypto. The post FBI Flags Over 600…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "02 Nov 2026, 08:40 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/1befc30403b6.html"
   },
   {
    "id": "8cfea8890b08",
@@ -1889,6 +1919,26 @@
    "date": "28 Oct 2026, 09:48 UTC",
    "sources": "SecurityWeek",
    "url": "story/56f1c438e294.html"
+  },
+  {
+   "id": "ff9c9693b43d",
+   "title": "Polymarket Returns $3.9 Million to Traders as DebugBear Cites DNS Hijack",
+   "summary": "DebugBear says its DNS records were compromised via its domain registrar, and early findings show a single customer was targeted. The post Polymarket Returns $3.9…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "02 Nov 2026, 09:33 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/ff9c9693b43d.html"
+  },
+  {
+   "id": "1befc30403b6",
+   "title": "FBI Flags Over 600 Addresses Tied to North Korea’s Binance Heist",
+   "summary": "The FBI has officially pinned the $6 billion Binance hack on North Korea’s TraderTraitor as the attackers launder the stolen crypto. The post FBI Flags Over 600…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "02 Nov 2026, 08:40 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/1befc30403b6.html"
   },
   {
    "id": "e9672a016fa4",
@@ -2619,16 +2669,6 @@
    "date": "28 Oct 2026, 10:30 UTC",
    "sources": "SecurityWeek",
    "url": "story/085573e20d77.html"
-  },
-  {
-   "id": "21dec5f03b58",
-   "title": "CISA Warns of Node2Shell Exploitation as Honeypots Log Attack Attempts",
-   "summary": "CISA added the Brotli flaw to its KEV catalog, and two honeypot operators logged attempts, including one that used a broken exploit. The post CISA Warns of Node2Shell…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "28 Oct 2026, 08:37 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/21dec5f03b58.html"
   }
  ]
 }
