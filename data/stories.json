@@ -1771,25 +1771,6 @@
    "instructions_checked": true
   },
   {
-   "id": "d75560f4cad5",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Anthropic's Unreleased AI Model Chains Flaws Into Working Chrome, Safari, Windows and Linux Exploits",
-   "link": "https://thehackernews.com/2026/10/anthropics-unreleased-ai-model-chains.html",
-   "published": "2026-10-28T08:15:07+00:00",
-   "summary": "An unreleased Anthropic AI model found security flaws in Chrome, Safari, Android, Windows, and Linux and chained them into working proof-of-concept exploits, the company said in its latest report. The exploits were built in the lab after the model was prompted, not seen in any real attack, and Anthropic reported every…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSMl2C6S6mb-smamI35fLYotcPaercI_2PIgtuF78Q7PtQcFvFUKXkModTW4nRCh6FC7Xht2BltSGImRS2QNR4Lnc22S7UBU9V_0UDcZi2iDNXSlCJDqD4ApmJPqA_boFokj_9dTWKdzhjIgNt_Y47zumx_c5vrcJn5Vd-Xaowafv4HGCzCcqgDV4GGpo/s1600/hacker-chain.jpg",
-   "cves": [],
-   "first_seen": "2026-10-28T08:52:03.360416+00:00",
-   "instructions": [
-    "A race condition in a feature called CacheStorage then let that code read memory it should not reach and learn the layout of the more privileged browser process.",
-    "It chains flaws to obtain full read and write access to the browser's memory, then changes a single value to turn off the same-origin policy, the rule that prevents one website from reading another's data."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "9ac8296dadd7",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2025,24 +2006,6 @@
    "instructions_checked": true
   },
   {
-   "id": "6fcf621f852d",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "FBI Seizes Virtualine Domain Over Alleged Criminal Hosting and Bitcoin Money Laundering",
-   "link": "https://thehackernews.com/2026/10/fbi-seizes-virtualine-domain-over.html",
-   "published": "2026-10-28T07:37:50+00:00",
-   "summary": "The U.S. Department of Justice (DoJ) on Tuesday announced the seizure of a domain associated with a bulletproof hosting provider (BPH) named Virtualine. The move was in response to the service being used to commit and facilitate prolific criminal activity, including \"the advertisement of sexually explicit images of…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAdfKblTUCEDUoHzYpHPcEPzHO6qKTr01uG2-x7YyIT5t_-xeFc27zuZ3yOK76rkhz-J8y_Z4MqmydEQUtiCEvry_2H43qaSJXDrWRbM1gs8wDVTBgi_NzxIXsGBMoX8zlzISFlvcJ8NdNSyeMIZh8z-aHkXCyBDPJ2l195Ji1XgnVu_A0Yhh3H2QvEyiA/s1600/servers.jpg",
-   "cves": [],
-   "first_seen": "2026-10-28T08:52:03.360416+00:00",
-   "instructions": [
-    "\"The speed of acquiring a new ASN is a crucial part of the problem, and we believe the process for registering an ASN should be tougher.\""
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "cf3544e85171",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2162,24 +2125,6 @@
     "In an advisory for the vulnerability, Horizon3.ai described it as an unauthenticated SQL injection vulnerability that could be chained to achieve remote code execution.",
     "It was patched by Oracle last week as part of its Critical Patch Update .",
     "Specifically, an attacker can issue a crafted request to the vulnerable TCF servlet at \"/OA_HTML/AppsTCFServer\" to run SQL with the privileges of the APPS database user and ultimately enable system command execution with the privileges of the EBS application account."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "697aeb2243e0",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Japan's GMO Offers $1 Million Bounty to Catch Hackers Behind FX Trading Cloud Breach",
-   "link": "https://thehackernews.com/2026/10/japans-gmo-offers-1-million-bounty-to.html",
-   "published": "2026-10-28T07:13:21+00:00",
-   "summary": "Japan's GMO Internet Group is offering up to $1 million in total for tips that help catch the attackers who breached its Onamae.com Desktop Cloud service, after refusing to pay an extortion demand. The reward program opened on October 28 and pays only if a tip helps lead to an arrest or an international wanted notice…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEguDDZZalFBPLgf4YxDU_9FK46XXVkU3x0GKHeZHFd2WTdJ0cK5n1KCWDEOIvSgzHP4R14xmwLygLnnmyuBEVcHRVO7b9nIUZVcp5ehxIgFGrPyXZ3hZGwNa2bg8k4e_kkSHa2tyo05yPortQqRR_9g3yr-T0k0Tga9_26Pr0rs_MNIU8RndHMeq9r5Rr0/s1600/gmo.jpg",
-   "cves": [],
-   "first_seen": "2026-10-28T07:58:08.405714+00:00",
-   "instructions": [
-    "Tipsters must prove their identity before payment, and if no tip qualifies, no payment is made."
    ],
    "instructions_checked": true
   },
@@ -2580,6 +2525,28 @@
    "instructions": [
     "Besides rotating the node credentials, customers are advised to regenerate their platform API keys, update passwords -- including other services where the same password has been reused -- and remain alert to potential phishing attempts.",
     "\"We have no evidence they were read, but we are treating them as exposed and ask customers to rotate them.\""
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "349817163ae5",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "CISA Confirms Hackers Exploiting WordPress Core Flaw During Software Upgrades",
+   "link": "https://thehackernews.com/2026/11/cisa-confirms-hackers-exploiting.html",
+   "published": "2026-11-04T05:43:11+00:00",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a security flaw in WordPress Core to the Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The high-severity vulnerability, tracked as CVE-2026-119977 (CVSS score: 8.1), is a case of Time-of-check…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9IgE0BWDAvYzjY8wFSMADIRn69AMLYxUa-oPoOISNBOpPbxwBNoWrbXWzI6P0deiU6WDqitiIZx1gFXSAlR8xX9rj56BuU48veMEPJAGSsmQTbVPirFOCuyMc_KQxtbPfc841GZGZ-3HSYYHCGbHnzrihtwQUaMlXrT3leLzI2USh00hc9OBw4k1SCJt4/s1600/wp-exploit.jpg",
+   "cves": [
+    "CVE-2026-119977"
+   ],
+   "first_seen": "2026-11-04T08:30:27.059975+00:00",
+   "instructions": [
+    "With exploitation now officially confirmed by CISA, Federal Civilian Executive Branch (FCEB) agencies have time until November 6, 2026, to apply the fixes.",
+    "\"WordPress Core contains a time-of-check time-of-use (TOCTOU) race condition vulnerability that could allow unauthenticated attackers to execute code on the server during the upgrade window,\" CISA said.",
+    "That said, it does require an attacker to exploit a brief window during a complete Core update that could allow unauthenticated code execution."
    ],
    "instructions_checked": true
   },
