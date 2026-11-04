@@ -1086,44 +1086,6 @@
    "instructions_checked": true
   },
   {
-   "id": "a514565027a9",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-62740 Windows Imaging Component Information Disclosure Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62740",
-   "published": "2026-10-28T14:00:00+00:00",
-   "summary": "Added supported editions of Microsoft Office to the Security Updates table because they are affected by this vulnerability. Microsoft recommends that customers running any of these editions of Office install the latest security updates to be fully protected from this vulnerability.",
-   "image": null,
-   "cves": [
-    "CVE-2026-62740"
-   ],
-   "first_seen": "2026-10-28T20:07:12.739870+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "911f226c7d66",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-62877 Windows Win32k Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62877",
-   "published": "2026-10-28T14:00:00+00:00",
-   "summary": "Added supported editions of Microsoft Office to the Security Updates table because they are affected by this vulnerability. Microsoft recommends that customers running any of these editions of Office install the latest security updates to be fully protected from this vulnerability.",
-   "image": null,
-   "cves": [
-    "CVE-2026-62877"
-   ],
-   "first_seen": "2026-10-28T20:07:12.739870+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "6ea5871e5b09",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -2659,6 +2621,23 @@
    "instructions_checked": true
   },
   {
+   "id": "3d23258051aa",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "French blood service hit by Europe-wide cyberattacks on refrigeration",
+   "link": "https://therecord.media/france-cyberattack-blood-refrigeration",
+   "published": "2026-11-04T13:45:00+00:00",
+   "summary": "Temperature controls were altered at three of France’s national blood service sites this week amid a wave of cyberattacks affecting refrigeration systems across Europe.",
+   "image": "https://cms.therecord.media/uploads/Blood_PP_17fdea2031.jpg",
+   "cves": [],
+   "first_seen": "2026-11-04T14:17:44.270771+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "147d29214849",
    "source": "therecord",
    "source_name": "The Record",
@@ -2995,6 +2974,26 @@
    "first_seen": "2026-10-30T19:13:56.754027+00:00",
    "image_checked": true,
    "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "4448a4360ec1",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Cyberattack wipes cloud data at major Russian hosting provider Beget",
+   "link": "https://therecord.media/russia-cyberattack-beget-cloud",
+   "published": "2026-11-04T14:00:00+00:00",
+   "summary": "A major Russian web hosting provider is struggling to restore its services after a cyberattack destroyed data across its cloud infrastructure and disrupted hundreds of websites.",
+   "image": "https://cms.therecord.media/uploads/Beget_de93fe90b7.jpg",
+   "cves": [],
+   "first_seen": "2026-11-04T14:17:44.270771+00:00",
+   "image_checked": true,
+   "instructions": [
+    "\"Restoring all services will take a considerable amount of time, as more than 1,000 servers must be manually inspected,\" the company said.",
+    "However, restoring services would be a slow process because each server must be checked individually before being brought back online."
+   ],
    "instructions_checked": true
   },
   {
@@ -3695,28 +3694,6 @@
    "instructions_checked": true
   },
   {
-   "id": "219f99ac76bf",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Even after PHP2Shell, blast radius matters more than a CVSS score",
-   "link": "https://www.bleepingcomputer.com/news/security/even-after-php2shell-blast-radius-matters-more-than-a-cvss-score/",
-   "published": "2026-10-28T13:50:59+00:00",
-   "summary": "PHP2Shell shows how quickly attackers can exploit critical vulnerabilities, often before organizations have time to patch. Token Security explains why limiting the access of service accounts, API keys, and AI agents is just as important as fixing vulnerabilities to reduce the damage from a breach.",
-   "image": "https://www.bleepstatic.com/content/posts/2026/10/27/green-pumpkin.jpg",
-   "cves": [],
-   "first_seen": "2026-10-28T14:34:38.042181+00:00",
-   "image_checked": true,
-   "instructions": [
-    "So with limited resources, it's tempting to stay vulnerability-first: catalog what the advisories and scanners found, triage it, work down from the top.",
-    "AI helped researchers find two remote code execution vulnerabilities in the language behind 69% of the web , attackers targeted it before the patch shipped, and the pitch writes itself: find more bugs and fix them faster.",
-    "Security teams cannot patch at machine speed, but they can reduce what an attacker can reach after exploitation by focusing on identity as the control plane.",
-    "PHP shipped the patch on October 21, and watchTowr saw exploitation attempts in the wild the same day."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "e692538b686e",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -3997,28 +3974,6 @@
    "instructions": [
     "Anyone who loaded these models with trust_remote_code enabled should treat the machine as compromised, check it against the indicators in Pluto's report, and rotate any credentials it could reach.",
     "The Windows-only command assembles a URL on developer-update[.]app from fragments, then fetches and runs a script from it in memory."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "60ccb0bbd830",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "InfraTrust report warns of exploited flaws in critical network infrastructure",
-   "link": "https://www.bleepingcomputer.com/news/security/infratrust-report-warns-of-exploited-flaws-in-critical-network-infrastructure/",
-   "published": "2026-10-28T14:00:00+00:00",
-   "summary": "Attackers are actively exploiting vulnerabilities across critical network infrastructure, and PHP flaws known as \"PHP2Shell\" put the web management interfaces of firewalls, VPNs, application delivery controllers, and other appliances at risk.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/07/21/infratrust.jpg",
-   "cves": [],
-   "first_seen": "2026-10-28T14:34:38.042181+00:00",
-   "image_checked": true,
-   "instructions": [
-    "CVE-2026-31431, a Linux kernel privilege escalation flaw known as Copy Fail , has now appeared in 29 advisories across eight vendors, up from 19 advisories from six vendors last month.",
-    "The findings come from Eclypsium's October InfraTrust Pulse , a monthly report tracking security advisories affecting network devices, servers, firmware, chips, and other infrastructure.",
-    "Between September 18 and October 14, InfraTrust tracked 133 new security advisories across 18 vendors, covering 2,813 vulnerabilities.",
-    "Of those advisories, 37 were rated critical, five had a maximum CVSS score of 10.0, and 58 could be exploited remotely without authentication."
    ],
    "instructions_checked": true
   },
@@ -4349,6 +4304,23 @@
    "instructions_checked": true
   },
   {
+   "id": "1aedc3ffafe5",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "US charges two Canadians accused of hacking US universities",
+   "link": "https://www.bleepingcomputer.com/news/security/us-charges-two-canadians-accused-of-hacking-us-universities/",
+   "published": "2026-11-04T13:13:20+00:00",
+   "summary": "A federal grand jury indicted two Canadians suspected of hacking multiple US universities and using the compromised systems to mine for cryptocurrency.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/04/Hackers-room.jpg",
+   "cves": [],
+   "first_seen": "2026-11-04T14:17:44.270771+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "6e5b341998e9",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4477,7 +4449,7 @@
    "title": "9 Cyber Awareness Tips That Actually Match Today's Maze of Threats",
    "link": "https://www.darkreading.com/cyber-risk/9-cyber-awareness-tips-todays-maze-threats",
    "published": "2026-11-03T15:38:20+00:00",
-   "summary": "Practical guidance on safer search, stronger login security, better executive protection, and other habits that help reduce enterprise risk.",
+   "summary": "Practical guidance on safer search, stronger login security, better executive protection, and other habits can reduce enterprise risk.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt73242ae0d40b68c0/6aea0c8226a0725a0631618d/maze-mikkelwilliam-GettyImages-1420679447.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-03T17:20:53.929523+00:00",
@@ -4701,7 +4673,7 @@
    "title": "Germany Busts 'Crime-as-a-Service' Investment Fraud Outfit",
    "link": "https://www.darkreading.com/cybersecurity-operations/germany-crime-service-investment-fraud",
    "published": "2026-11-03T21:57:12+00:00",
-   "summary": "German police led a multinational probe that exposed an alleged crime-as-a-service provider supplying fraudulent trading platforms to investment scammers.",
+   "summary": "Authorities seized more than 100 servers and arrested seven as part of a crackdown on a fraud network spanning more than 50 countries.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt2ae3fcc30ff2f999/6aea3f3225b8d120f9a7b718/investment_on_computer-ilkercelik-GettyImages-2239174783.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-03T23:08:37.927300+00:00",
@@ -4769,6 +4741,22 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt3c1ba20d1eb5be7f/6aea51a7937e6faad50e3a84/cold_Adisa_shutterstock.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-03T23:08:37.927300+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "5ce5c8d2c37f",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "Phishing-Resistant Isn't Enough; Yubico Takes Aim at Identity-Verification Gap",
+   "link": "https://www.darkreading.com/identity-access-management-security/beyond-phishing-resistant-yubico-identity-verification-gap",
+   "published": "2026-11-04T01:05:40+00:00",
+   "summary": "The new YubiID service bridges identity verification with credential enrollment and recovery across existing identity platforms, closing a phishing-resistant authentication gap. Plus: post-quantum YubiKey beta.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt004492645b5f1d7e/6aeb2df8c949f4112a250228/yubikey-Formatoriginal-alamy.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-04T14:17:44.270771+00:00",
    "instructions": [],
    "instructions_checked": true
   },
@@ -5121,6 +5109,26 @@
    "instructions_checked": true
   },
   {
+   "id": "1cb3088dd861",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Agentic Data Security Firm Sentra Raises $150 Million",
+   "link": "https://www.securityweek.com/agentic-data-security-firm-sentra-raises-150-million/",
+   "published": "2026-11-04T14:09:20+00:00",
+   "summary": "The company will invest in agentic data security capabilities and expand its go-to-market organization. The post Agentic Data Security Firm Sentra Raises $150 Million appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2023/01/Cybersecurity_News-SecurityWeek.jpg",
+   "cves": [],
+   "first_seen": "2026-11-04T14:17:44.270771+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Sentra finds and classifies data across environments, maps assets reachable by users, AI agents, and service accounts, and enforces least privilege policies while eliminating the high-risk data agents should not find.",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "2f5877591bfd",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -5309,27 +5317,6 @@
     "Google makes no mention of any of these security defects being exploited in the wild, but users should update their browsers as soon as possible.",
     "The most common types of vulnerabilities the fresh browser update resolves include incorrect/missing authorization (51), use-after-free (45), UI misrepresentation (19), type confusion (13), information leak (13), out-of-bounds read/write (11), improper input validation (9), and uninitialized resource (9).",
     "Android’s November 2026 Updates Patch Over 200 Vulnerabilities"
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "04dad7bd605d",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Chrome and Firefox Updates Patch Over 200 Vulnerabilities",
-   "link": "https://www.securityweek.com/chrome-and-firefox-updates-patch-over-200-vulnerabilities/",
-   "published": "2026-10-28T13:39:35+00:00",
-   "summary": "The Chrome 156 update fixes 52 bugs, while Firefox 159 was rolled out with 167 security patches. The post Chrome and Firefox Updates Patch Over 200 Vulnerabilities appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2025/01/Chrome-Firefox.jpeg",
-   "cves": [],
-   "first_seen": "2026-10-28T14:34:38.042181+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Google and Mozilla make no mention of any of these security bugs being exploited in the wild, but users are advised to update their browsers as soon as possible.",
-    "The Chrome 156 update arrives with patches for 52 security defects, including four critical-severity flaws: memory corruption in FileSystem, improper input validation in FileAPI and Skia, and use-after-free in Layout.",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
   },
@@ -6048,28 +6035,6 @@
    "instructions_checked": true
   },
   {
-   "id": "84fd85017893",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "TLS Flaws Found in GoAhead Web Server Used in Hundreds of Millions of Devices",
-   "link": "https://www.securityweek.com/tls-flaws-found-in-goahead-web-server-used-in-hundreds-of-millions-of-devices/",
-   "published": "2026-10-28T13:10:34+00:00",
-   "summary": "FoxIO disclosed three GoAhead TLS bugs that can let revoked certificates through or expose some encrypted sessions to eavesdroppers. The post TLS Flaws Found in GoAhead Web Server Used in Hundreds of Millions of Devices appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2024/09/internet-routing-bgp.jpeg",
-   "cves": [],
-   "first_seen": "2026-10-28T13:27:16.564804+00:00",
-   "image_checked": true,
-   "instructions": [
-    "GoAhead 6.1.1, released on Aug 2, resolves the OpenSSL and Mbed TLS issues, and advisories for all three flaws were published on Oct 12.",
-    "For the LibreSSL issue, FoxIO recommends enabling issuer verification with a trusted CA bundle, or switching to OpenSSL or LibreSSL 4.x.",
-    "iOS, macOS 27.2 Patch 286 Bugs; Fix for Exploited Flaw Backported to iOS 18",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "5e74da19f3eb",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -6103,26 +6068,6 @@
    "first_seen": "2026-10-28T15:33:38.447482+00:00",
    "image_checked": true,
    "instructions": [
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "943e231b105b",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Upwind Security Raises $400 Million at $3.8 Billion Valuation",
-   "link": "https://www.securityweek.com/upwind-security-raises-400-million-at-3-8-billion-valuation/",
-   "published": "2026-10-28T13:56:50+00:00",
-   "summary": "The massive funding round comes just days after reports emerged that Upwind had attracted acquisition interest from several companies, including Datadog The post Upwind Security Raises $400 Million at $3.8 Billion Valuation appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2023/01/Cybersecurity_News-SecurityWeek.jpg",
-   "cves": [],
-   "first_seen": "2026-10-28T14:34:38.042181+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Former NSA Director Paul Nakasone Launches National Security Advisory Firm",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
