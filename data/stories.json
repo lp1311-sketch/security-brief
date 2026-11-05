@@ -1556,6 +1556,27 @@
    "image_checked": true
   },
   {
+   "id": "ccc66eb25631",
+   "source": "msblog",
+   "source_name": "Microsoft Security Blog",
+   "official": false,
+   "source_type": "vendor_blog",
+   "title": "New investments to reduce on-premises security risk",
+   "link": "https://techcommunity.microsoft.com/blog/microsoft-security-blog/new-investments-to-reduce-on-premises-security-risk/4570381",
+   "published": "2026-11-05T17:10:14+00:00",
+   "summary": "On-premises servers can be essential to business operations, but they are increasingly attractive targets to attackers. AI can help less-skilled actors analyze software, develop malicious tools, and repeat attack workflows at greater speed and scale, shortening the window between exposure and exploitation…",
+   "image": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTcwMzgxLTA2NDVTRQ?image-dimensions=796x530&amp;revision=13",
+   "cves": [],
+   "first_seen": "2026-11-05T18:27:35.353020+00:00",
+   "instructions": [
+    "Emergency Mitigation Service can automatically apply interim mitigations for certain emerging vulnerabilities, helping reduce exposure while a permanent security update is prepared and deployed.",
+    "In December 2026, we plan to introduce Emergency Mitigation Service 2.0 for Exchange Server and Skype for Business Server, enabling it by default and expanding the security mitigations it can apply.",
+    "On-Premises Baseline Security Mode is designed to make the default security posture stronger—reducing the number of recommended security settings administrators must configure and maintain manually.",
+    "Building on protections available today, it progressively establishes and maintains more of the recommended security posture through the products themselves, adapting the baseline as threats and Microsoft security guidance evolve."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "e8eb82345a00",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -4341,6 +4362,28 @@
    "instructions_checked": true
   },
   {
+   "id": "671b07a9ce2d",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "OpenSSH flaw lets attackers log into password-disabled Linux accounts",
+   "link": "https://www.bleepingcomputer.com/news/security/openssh-flaw-lets-attackers-log-into-password-disabled-linux-accounts/",
+   "published": "2026-11-05T17:45:29+00:00",
+   "summary": "A newly disclosed OpenSSH vulnerability dubbed \"*sshole\" allows attackers to log in to certain Alpine Linux and other musl-based Linux accounts that are configured to block password authentication, simply by entering an oversized password.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/05/ssh-header-image.jpg",
+   "cves": [],
+   "first_seen": "2026-11-05T18:27:35.353020+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Because this is not a valid password hash, no password should allow access to those accounts.",
+    "The vulnerability has been fixed in OpenSSH 10.6p2, and Alpine Linux administrators are advised to update their OpenSSH packages using apk upgrade openssh.",
+    "Kultekin says admins can also check for signs of exploitation by examining SSH authentication logs for password-based logins for accounts that should not allow them.",
+    "A newly disclosed flaw involving OpenSSH and musl, dubbed \"*sshole,\" allows attackers to log in to certain Alpine Linux and other musl-based Linux accounts configured to block password authentication simply by entering an oversized password."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "7398c8fe0a0b",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4610,22 +4653,6 @@
     "Administrators of affected Zyxel GS1900 switches are advised to install the latest firmware updates to protect against CVE-2026-107441.",
     "The researchers determined that the earlier security update added checks to prevent a buffer overflow, but attackers could bypass them by corrupting a parameter counter before it was validated."
    ],
-   "instructions_checked": true
-  },
-  {
-   "id": "2c3bc9054593",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "Claude Model Builds Exploits Across Major Browsers & OSes",
-   "link": "https://www.darkreading.com/application-security/claude-model-exploits-major-browsers-oses",
-   "published": "2026-10-29T18:15:59+00:00",
-   "summary": "An unreleased version of the AI model has found and chained multiple vulnerabilities in Chrome, Safari, Android, Windows, and Linux, Anthropic says.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt626614753803fdf0/6ae260b6848b397b5d1859e3/anthropic_Algi_Febri_Sugita_shutterstock.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-10-29T19:22:47.775217+00:00",
-   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -5119,6 +5146,26 @@
     "Check the recommendations card for the deployment status of monitored mitigations.",
     "Together with recommendations, Microsoft Defender detections, and hunting queries, these findings can help defenders assess where existing protections may be weakened and investigate activity across email and collaboration platforms.",
     "Attemps should not be interpreted as successful attacker interactions."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "1a39a444dba6",
+   "source": "msblog",
+   "source_name": "Microsoft Security Blog",
+   "official": false,
+   "source_type": "vendor_blog",
+   "title": "​​​​What’s new in Microsoft Security: November 2026",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/05/whats-new-in-microsoft-security-november-2026/",
+   "published": "2026-11-05T17:00:00+00:00",
+   "summary": "Endpoint administrators need to keep elevated access accountable at scale. Security teams also need a clearer view of expert-led protection and a simpler way to deploy SQL Server protection in Azure Government. As AI agents gain access to business data and tools, organizations need ways to limit their authority and…",
+   "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/10/Picture1-1.jpg",
+   "cves": [],
+   "first_seen": "2026-11-05T18:27:35.353020+00:00",
+   "instructions": [
+    "Security teams can use that context to identify foundational controls that need attention, review the recommended actions, and prioritize work intended to reduce exposure.",
+    "A recent Secure Now update in Microsoft Security Exposure Management also connects information on recent threats to focused initiatives for reducing exposure.",
+    "The update helps connect information about observed attack patterns with security improvements teams can consider in their own environments."
    ],
    "instructions_checked": true
   },
