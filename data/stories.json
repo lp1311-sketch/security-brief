@@ -1789,27 +1789,6 @@
    "instructions_checked": true
   },
   {
-   "id": "7325900e53d9",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "ThreatsDay: Critical Firewall Flaws, Banking Trojans Rented, Weaponized PDF, Token Theft + 26 More Stories",
-   "link": "https://thehackernews.com/2026/10/threatsday-critical-firewall-flaws.html",
-   "published": "2026-10-29T19:11:58+00:00",
-   "summary": "Some attacks take real skill. Others just need someone to leave a door open. This week has both. Exposed passwords, old bugs still getting exploited, and trusted software doing things it shouldn't. There's a strange mix of clever tricks and careless mistakes. Hackers are borrowing trust from familiar apps, websites…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoNTh5CKLvFJeeXzWn1LVT-e9435oFtUz4jT-4TmZaWkRUY_RY8EAtijUWxQztoK3K_tU_csSw54MuVeX8UzeT6ZWNLtTMex5pMS4z4Npz-aYAN9qIfWk2bUsei5nswh3UkzycVlKznVjK7n1I_knJ-p1I59RoX_TECTfr-NPej9LWoDt2UuwvLY4heSip/s1600/t-day.jpg",
-   "cves": [],
-   "first_seen": "2026-10-29T20:09:38.856424+00:00",
-   "instructions": [
-    "With Fortinet devices becoming a favorite target for attackers, it's essential that users move quickly to apply the fixes.",
-    "The changes apply only to Discoverable Servers and do not extend to private servers and direct messages.",
-    "MDM platforms abused for remote access Attackers Abuse Hexnode and Rippling MDM to Deploy Persistent Remote Access Threat actors are abusing legitimate mobile device management (MDM) platforms, like Hexnode and Rippling, by using social engineering to enroll devices or install management agents, per Huntress.",
-    "In addition to the features that enable theft, an actor can also deploy desktop screen-locking ransomware via the NIK C2 implant onto the victim machine, leading to a ransom demand in Bitcoin or USDT cryptocurrencies.\" Three different versions of the malware have been identified to date since August 12, 2026."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "4eafb481bfd9",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2913,6 +2892,25 @@
    "instructions_checked": true
   },
   {
+   "id": "dd3956422471",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Harden cooling systems now, feds warn critical infrastructure operators amid attacks",
+   "link": "https://therecord.media/cyberattacks-refrigeration-cisa-fbi",
+   "published": "2026-11-05T19:15:00+00:00",
+   "summary": "The U.S. government on Thursday called on critical infrastructure operators to safeguard their cooling systems following hacks that have caused chaos in European supermarkets in recent weeks.",
+   "image": "https://cms.therecord.media/uploads/Trucks_34d1614b26.jpg",
+   "cves": [],
+   "first_seen": "2026-11-05T19:37:24.443304+00:00",
+   "image_checked": true,
+   "instructions": [
+    "In their advisory, federal agencies noted that organizations in the healthcare, transportation, food and chemicals sectors “widely” use cooling systems that rely on “automated and remote monitoring of temperatures, continuous temperature logging, defrost cycle management, and energy optimization.”"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "ce4d8aef3066",
    "source": "therecord",
    "source_name": "The Record",
@@ -3842,25 +3840,6 @@
    "instructions_checked": true
   },
   {
-   "id": "e692538b686e",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Fake crypto app on Apple App Store linked to $23K wallet theft",
-   "link": "https://www.bleepingcomputer.com/news/security/fake-crypto-app-on-apple-app-store-linked-to-23k-wallet-theft/",
-   "published": "2026-10-29T19:23:41+00:00",
-   "summary": "A fake cryptocurrency trading app called Padre Terminal, previously available on the Apple App Store for iOS devices, has been linked to the theft of approximately $23,000 from 27 Solana wallets.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2023/12/01/Hackers_cryptocurrency_red.jpg",
-   "cves": [],
-   "first_seen": "2026-10-29T20:09:38.856424+00:00",
-   "image_checked": true,
-   "instructions": [
-    "According to Iris, the two wallets held a combined 229.66 SOL, with no funds cashed out at the time of the researcher's update."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "8cfea8890b08",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4065,28 +4044,6 @@
    "image_checked": true,
    "instructions": [
     "Although the company tried to protect customer's systems, a simple software update is not enough, as refrigerators also require physical modifications."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "7c2b70bd7e3e",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Hackers exploit Cisco SD-WAN flaw to deploy custom KeyDrift malware",
-   "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-cisco-sd-wan-flaw-to-deploy-custom-keydrift-malware/",
-   "published": "2026-10-29T18:38:26+00:00",
-   "summary": "A newly identified advanced persistent threat (APT) group tracked as UAT-11473 was observed exploiting CVE-2026-20127, an authentication-bypass flaw in Cisco Catalyst SD-WAN Controllers, to deploy a custom malware framework called KeyDrift.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/14/Cisco.jpg",
-   "cves": [
-    "CVE-2026-20127"
-   ],
-   "first_seen": "2026-10-29T19:22:47.775217+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Cisco recommends that system administrators apply the available security updates for CVE-2026-20127 and also consult the vendor’s dedicated hardening guide for Catalyst SD-WAN deployments.",
-    "CISA warns feds to fully patch actively exploited Cisco flaws"
    ],
    "instructions_checked": true
   },
@@ -4359,6 +4316,23 @@
     "Cloud application hosting platform Northflank is warning customers to rotate all credentials and secrets stored on its platform after a security breach led to unauthorized use of customers' AI API keys.",
     "The company disclosed a security incident on October 30, warning customers to immediately rotate their environment variables and API keys after receiving a threat alert from cloud security company Wiz."
    ],
+   "instructions_checked": true
+  },
+  {
+   "id": "7e637a2f9fd7",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "OpenAI’s GPT-6 Astra silently obstructed safety research tasks",
+   "link": "https://www.bleepingcomputer.com/news/security/openais-gpt-6-astra-silently-obstructed-safety-research-tasks/",
+   "published": "2026-11-05T19:24:26+00:00",
+   "summary": "OpenAI has disclosed another AI alignment incident where GPT-6 Astra was found to sometimes quietly withhold help on safety research.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/09/17/OpenAI.jpg",
+   "cves": [],
+   "first_seen": "2026-11-05T19:37:24.443304+00:00",
+   "image_checked": true,
+   "instructions": [],
    "instructions_checked": true
   },
   {
