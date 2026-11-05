@@ -1,6 +1,94 @@
 {
  "items": [
   {
+   "id": "138eb418bd9d",
+   "title": "Microsoft Teams: Multiple screen shares in Teams Rooms on Windows",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=579184",
+   "summary": "You can now view up to two shared screens side by side during meetings, reducing interruptions from screen hand-offs. Participants can switch between side-by-side and expanded views, identify presenters for each screen, and benefit from layouts optimized for single or dual displays. Available with Teams Rooms Pro. GA…",
+   "published": "2026-11-04T23:59:50+00:00",
+   "products": [
+    "Teams"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "fcce7ddc1b02",
+   "title": "Microsoft Purview: Information Protection-Auto-labeling for legacy Office files",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=578872",
+   "summary": "Microsoft Purview server-side auto-labeling will support legacy Microsoft Office file formats, including Word (.doc), Excel (.xls), and PowerPoint (.ppt). Organizations can automatically evaluate and apply sensitivity labels to these files in SharePoint and OneDrive. GA date: December CY2026",
+   "published": "2026-11-04T23:59:50+00:00",
+   "products": [
+    "SharePoint",
+    "OneDrive",
+    "Purview",
+    "Microsoft 365 Apps"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "d69a8799ae9e",
+   "title": "Dynamics 365 Supply Chain Management: Reimagine creation Phase In/Out rules to make it easier for users to enter in large volumes",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577884",
+   "summary": "Reimagine creation Phase In/Out rules. Allow users to pre-select Tables and Fields at Group level that will be populated on every rules. If a Table key field like Product ID is included in the rules, then auto fill related fields with values like Product Name, Product Group etc. Support for Phase In a new Product with…",
+   "published": "2026-11-04T23:59:50+00:00",
+   "products": [
+    "Microsoft 365"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "fe046fe47f99",
+   "title": "Dynamics 365 Project Operations: Optimize Project Operations: Support cost commitments in project budgets",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577874",
+   "summary": "Enable project managers to view and track Committed Costs directly within Project Operations budgets, providing a complete picture of budget consumption beyond actual costs. This enhancement allows project managers to make more informed budgeting, forecasting, and project control decisions by incorporating costs that…",
+   "published": "2026-11-04T23:59:50+00:00",
+   "products": [
+    "Microsoft 365"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "6803724fab5c",
+   "title": "Dynamics 365 Project Operations: Enhance contract management insights and usability",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577425",
+   "summary": "This release expands the contract management experience in Dynamics 365 Project Operations with: Enhanced analytics and insights on the contract form to improve visibility into contract performance. Context-based pricing information that provides additional business context for pricing-related decisions. Improved…",
+   "published": "2026-11-04T23:59:50+00:00",
+   "products": [
+    "Microsoft 365"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "5b974ffe898a",
+   "title": "Power Apps: New view layout in model-driven apps",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=575294",
+   "summary": "Makers can now choose to display their data as a calendar or a stack of cards instead of the default grid layout. Makers can configure these layouts directly in the model driven app designer, giving users more intuitive ways to visualize and work with their data. Availability Field Value Release Channel Weekly Version…",
+   "published": "2026-11-04T23:59:50+00:00",
+   "products": [
+    "Microsoft 365"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "baaf479adaa7",
+   "title": "Microsoft 365: Expiration for access on sharing main links",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=571399",
+   "summary": "People can set expiration dates for “Anyone” and “People in your organization” access on the main link to files and folders in OneDrive and SharePoint. New administrator policies can Administrators can set policies to require expiration and enforce a maximum access duration, with separate settings for OneDrive and…",
+   "published": "2026-11-04T23:59:50+00:00",
+   "products": [
+    "SharePoint",
+    "OneDrive"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
    "id": "feec841da689",
    "title": "Microsoft Viva: Engage - Improved shared messages end-user experience",
    "link": "https://www.microsoft.com/microsoft-365/roadmap?id=578870",
@@ -279,11 +367,11 @@
    "feature_id": null
   },
   {
-   "id": "c6724f380c04",
-   "title": "Dynamics 365 Business Central: Finance - Use complex calculation methods for excise duties",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=573614",
-   "summary": "Simplify excise duty calculations with flexible methods that better reflect your organization’s tax scenarios. Configure excise duties using specific, ad valorem, or hybrid calculation methods, including calculations based on different tax bases, thresholds, quantities, percentages, or combinations of these factors…",
-   "published": "2026-11-04T00:02:09+00:00",
+   "id": "2140d9db42ba",
+   "title": "Dynamics 365 Field Service: Improve mobile offline reliability across network conditions",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=573242",
+   "summary": "Business value Field service work often happens in environments where network quality changes throughout the day. Technicians may move between connected, low-connectivity, intermittent, and offline conditions while still needing the mobile app to remain dependable. Mobile offline is being improved to better detect and…",
+   "published": "2026-10-06T22:56:31+00:00",
    "products": [
     "Microsoft 365"
    ],
@@ -291,59 +379,11 @@
    "feature_id": null
   },
   {
-   "id": "4e1c9a0c21bb",
-   "title": "Dynamics 365 Business Central: Finance - Cross-environment Master Data Management",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=573613",
-   "summary": "Keep critical business data consistent across environments with cross-environment master data management. Centrally manage and govern master data—including customers, vendors, products, and reference data—and keep it synchronized wherever it is used, reducing duplicate maintenance and simplifying administration…",
-   "published": "2026-11-04T00:02:09+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "fcb20d5f3cf7",
-   "title": "Dynamics 365 Business Central: Expense Agent - Use tags to mark processed emails",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=573610",
-   "summary": "Quickly see which expense-related emails have already been processed by Expense Agent, helping you distinguish processed from unprocessed messages with confidence. Expense Agent adds a **Processed by Expense Agent **tag in Outlook after a relevant email has been successfully processed. Benefits • Automatically marks…",
-   "published": "2026-11-04T00:02:09+00:00",
-   "products": [
-    "Outlook"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "2f6d96e784bb",
-   "title": "Dynamics 365 Business Central: Expense Agent - Adding invited guests from calendar as participants to your expense",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=573609",
-   "summary": "Spend less time manually adding attendees to meal-related business expenses. Expense Agent can match the expense to the relevant Outlook calendar event and add invited guests as expense participants, helping keep participant information aligned with the meeting invitation. Benefits • Automatically identifies relevant…",
-   "published": "2026-11-04T00:02:09+00:00",
-   "products": [
-    "Outlook"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "a9ceedd37ddb",
-   "title": "Dynamics 365 Business Central: Expense Agent - Change companies and environments in the web app",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=573608",
-   "summary": "Manage expenses across multiple Business Central companies and environments more efficiently with the Expense Agent web app. Switch between the companies and environments you’re authorized to access within a single session, without restarting the app or signing in again. Benefits • Access multiple authorized Business…",
-   "published": "2026-11-04T00:02:09+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "2a1c02979593",
-   "title": "Dynamics 365 Business Central: Expense Agent - Set expense spend limits in Expense Management",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=573607",
-   "summary": "Take control of employee spending earlier in the expense process with configurable spend limits. Define thresholds that reflect your organization’s expense policies and apply them by time period for individual employees, teams, or the whole company. Expenses that exceed predefined limits can be prevented or flagged…",
-   "published": "2026-11-04T00:02:09+00:00",
+   "id": "ecc9c3f557b9",
+   "title": "Dynamics 365 Field Service: Enhance mobile offline up-sync",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=573241",
+   "summary": "Business value Technicians often complete work in the field while connectivity is limited or intermittent. When offline changes still need to sync, users and back-office teams can be uncertain whether work details, status updates, and other field changes have reached business systems. Mobile offline up-sync is being…",
+   "published": "2026-10-06T22:56:31+00:00",
    "products": [
     "Teams"
    ],
@@ -351,11 +391,11 @@
    "feature_id": null
   },
   {
-   "id": "f277964e6e1e",
-   "title": "Dynamics 365 Business Central: Expense Agent - Add tags for expenses as submitter",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=573606",
-   "summary": "Make expenses easier to organize and categorize by adding relevant tags when you create or edit expenses in the web application. Add one or more custom tags to capture business, project, event, or other dimensional context beyond standard expense fields. Benefits • Add one or more custom tags while creating or editing…",
-   "published": "2026-11-04T00:02:09+00:00",
+   "id": "602b362bf40c",
+   "title": "Dynamics 365 Field Service: Modernize the mobile offline foundation",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=573240",
+   "summary": "Business value Field service organizations often depend on mobile offline so technicians can keep working when connectivity is limited or unavailable. As offline profiles grow larger and apps include more related data, first sync, resource loading, and repeated sync work can affect technician productivity and…",
+   "published": "2026-10-06T22:56:31+00:00",
    "products": [
     "Microsoft 365"
    ],
@@ -363,85 +403,23 @@
    "feature_id": null
   },
   {
-   "id": "ad7c9eaf2f21",
-   "title": "Dynamics 365 Business Central: Expense Agent - Enable approving limits and alternate approvers when primary is not available",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=573605",
-   "summary": "Keep expense approvals moving when primary approvers are unavailable or when requests exceed their approval limits. Organizations can set a maximum approval amount—or unlimited approval authority—for each approver, designate a next approver for requests above that limit, and assign alternate approvers as temporary or…",
-   "published": "2026-11-04T00:02:09+00:00",
+   "id": "9890fe2a0f20",
+   "title": "Microsoft Copilot (Microsoft 365): Chat: Access to UBB models via the model selector",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=571400",
+   "summary": "Users will be able to access models that require usage-based billing (UBB) from the model selector in Chat. Tenant admins will need to allocate credits so that users can interact with these models. If users consume their allotted credits, they will be able to request credits from their tenant admins. GA date: December…",
+   "published": "2026-10-02T22:01:21+00:00",
    "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "62af9f8bbb91",
-   "title": "Dynamics 365 Business Central: Expense Agent - Create expense with no attachment",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=573604",
-   "summary": "Save time when recording lower-value expenses by creating them in Expense Agent without an attachment when the amount is below the limit you set on the Expense Agent Setup page. This gives you the flexibility to record qualifying expenses even when a receipt or supporting document isn’t available. Benefits • Create…",
-   "published": "2026-11-04T00:02:09+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "5d3e74408b31",
-   "title": "Dynamics 365 Business Central: Expense Agent - Log the expense in a case of lost receipt",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=573603",
-   "summary": "Expense Agent helps employees keep expense submissions moving when an original receipt is unavailable. It guides employees through providing the information needed to support the expense, generates supporting documentation from those details, and enables them to continue the reimbursement process without manually…",
-   "published": "2026-11-04T00:02:09+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "2ea085fe3df4",
-   "title": "Dynamics 365 Business Central: Expense Agent - Split your expenses",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=573602",
-   "summary": "Split a single expense across multiple allocations so costs are accurately assigned to the appropriate expense user, project, department, customer, or expense category. Expense Agent helps you define the split and ensures the allocations add up to the original expense amount. Each allocation is recorded separately for…",
-   "published": "2026-11-04T00:02:09+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "fc430c32998c",
-   "title": "Microsoft Teams: Turn meeting discussions into PowerPoint presentations with Facilitator",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=571296",
-   "summary": "When it's time to present what your team decided, you can ask Facilitator to create a PowerPoint presentation from what was said, chats, and shared files in the meeting. It turns the conversation into the slides, whether that's a project update, a proposal, or a readout for leadership. Facilitator can already draft…",
-   "published": "2026-11-04T00:02:09+00:00",
-   "products": [
-    "Teams",
-    "Microsoft 365 Apps"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "e246021bb0e3",
-   "title": "Microsoft Teams: Enhanced Copilot and AI controls for meetings",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577399",
-   "summary": "Teams Meetings offer enhanced AI controls for Copilot and AI experiences. Organizers manage who can enable and access AI, while IT admins get a simpler policy model for governing AI across meetings and post-meeting experiences. These updates provide more predictable administration and greater flexibility for…",
-   "published": "2026-10-22T22:58:40+00:00",
-   "products": [
-    "Teams",
     "Copilot"
    ],
    "stage": null,
    "feature_id": null
   },
   {
-   "id": "366a408fe9b1",
-   "title": "Microsoft Teams: Invite attendees to register",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=573250",
-   "summary": "For an event that needs registration, send email invites to the selected people and groups who will be invited to register to the event GA date: November CY2026",
-   "published": "2026-10-08T23:04:12+00:00",
+   "id": "e9be2afcae5e",
+   "title": "Microsoft Teams: Admins can control profanity filtering in meeting transcripts",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=570467",
+   "summary": "Teams administrators will be able to use a meeting policy to control whether profane words are masked in live transcription and saved meeting transcripts. Filtering remains on by default. When an organizer is assigned a policy that turns filtering off, profane words can appear without masking in both the live and…",
+   "published": "2026-09-02T22:56:59+00:00",
    "products": [
     "Teams"
    ],
@@ -449,39 +427,62 @@
    "feature_id": null
   },
   {
-   "id": "96d731ea5fb3",
-   "title": "Microsoft Teams: Ask Copilot from Search on Mobile",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=571299",
-   "summary": "Get answers without leaving search. As you type in the Teams search bar, you'll see an option to ask Copilot alongside search results. You can also select Ask Copilot from the search results page to turn your query into a Copilot conversation, helping you quickly find information, get answers, and ask follow-up…",
-   "published": "2026-09-15T23:00:36+00:00",
+   "id": "94524afe7b38",
+   "title": "Microsoft Teams: Personal message reminders for chat and channels",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=565869",
+   "summary": "Teams now lets you set and manage reminders directly on chat and channel messages, helping you keep track of important items. Create, update, complete, and delete reminders, track them in a dedicated Reminders view, and receive timely notifications when they become due. Reminders are private to each user and include…",
+   "published": "2026-06-15T23:00:45+00:00",
    "products": [
-    "Teams",
-    "Copilot"
+    "Teams"
    ],
    "stage": null,
    "feature_id": null
   },
   {
-   "id": "f7c55c4b8fce",
-   "title": "Microsoft Purview: Auto-labeling scalability, policy management, and reporting enhancements",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=570445",
-   "summary": "Microsoft Purview is improving auto-labeling capabilities to help organizations manage and validate labeling policies at enterprise scale. These enhancements expand support for larger SharePoint scopes, improve policy management flexibility, and provide richer visibility into auto-labeling activity. GA date: November…",
-   "published": "2026-09-03T22:50:06+00:00",
+   "id": "fb259a08c67a",
+   "title": "Microsoft Purview: eDiscovery - In-product diagnostics to troubleshoot common challenges",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=565222",
+   "summary": "Self-service diagnostics help identify common issues with case permissions, security filters, and policy status. The experience highlights potential misconfigurations and provides simple guidance to help customers understand and resolve them. This brings basic troubleshooting into the product and helps eDiscovery…",
+   "published": "2026-06-05T22:00:28+00:00",
    "products": [
-    "SharePoint",
     "Purview"
    ],
    "stage": null,
    "feature_id": null
   },
   {
-   "id": "f2d869e053ca",
-   "title": "Microsoft Teams: Breakout room support on Teams Rooms on Android",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=569447",
-   "summary": "With breakout room support, Teams Rooms on Android can be added to a breakout room and moved in and out of the main room making it easy for breakout session coordination. GA date: December CY2026",
-   "published": "2026-08-20T22:38:45+00:00",
+   "id": "e375c689821c",
+   "title": "Outlook: Share Word, Excel, and PowerPoint local files via the new Outlook for Windows",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=557675",
+   "summary": "When working in an open Word, Excel, or PowerPoint file, users will now be able to send a copy of the locally stored file by email through the new Outlook for Windows. #newoutlookforwindows GA date: January CY2027",
+   "published": "2026-02-20T23:15:06+00:00",
    "products": [
-    "Teams"
+    "Outlook",
+    "Microsoft 365 Apps"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "f98eae4bc5e4",
+   "title": "Microsoft 365 admin center: Usage reports – Microsoft 365 Copilot Connectors",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=519571",
+   "summary": "A new usage report will be available in the Microsoft 365 admin center for Copilot Connectors in Microsoft 365 Copilot, designed to give organizations a detailed view of how connectors are being used within Microsoft 365 Copilot. This report provides insights into overall connector activity, and connector powered…",
+   "published": "2025-10-27T23:15:26+00:00",
+   "products": [
+    "Copilot"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "8cd6a936ad2d",
+   "title": "Outlook: Insert signature into calendar events",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=422817",
+   "summary": "Users can manually insert a signature into a calendar event like they can in the classic outlook. #newoutlookforwindows GA date: April CY2026",
+   "published": "2024-10-17T23:15:03+00:00",
+   "products": [
+    "Outlook"
    ],
    "stage": null,
    "feature_id": null
