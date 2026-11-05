@@ -31,16 +31,6 @@
    "url": "story/2a5b7d5a686a.html"
   },
   {
-   "id": "5c6c31b6a9d3",
-   "title": "Critical Node-RED Flaw Exploited in Attacks",
-   "summary": "Multiple attacks from the same IP address attempted to deploy various payloads, including a Linux bot and webshells. The post Critical Node-RED Flaw Exploited in Attacks…",
-   "priority": "High",
-   "category": "Patch Radar",
-   "date": "03 Nov 2026, 12:10 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/5c6c31b6a9d3.html"
-  },
-  {
    "id": "4749795f0d08",
    "title": "HTTP2Shell: Brotli-Sicherheitslücke CVE-2026-111497 über Node.js hinaus prüfen",
    "summary": "Seit einigen Tagen ist ja eine Schwachstelle (CVE-2026-111497) im Brotli-Decoder von Node.js bekannt geworden. Es gibt zwar Updates, aber inzwischen ist klar, dass die…",
@@ -61,16 +51,6 @@
    "url": "story/a665869d02d2.html"
   },
   {
-   "id": "62ad9c2a6bdd",
-   "title": "CISA flags WordPress RCE flaw as actively exploited in attacks",
-   "summary": "The US Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies that attackers have started exploiting a recently patched high-severity WordPress…",
-   "priority": "High",
-   "category": "Patch Radar",
-   "date": "04 Nov 2026, 12:11 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/62ad9c2a6bdd.html"
-  },
-  {
    "id": "349817163ae5",
    "title": "CISA Confirms Hackers Exploiting WordPress Core Flaw During Software Upgrades",
    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a security flaw in WordPress Core to the Known Exploited Vulnerabilities (KEV) catalog, citing…",
@@ -79,6 +59,16 @@
    "date": "04 Nov 2026, 05:43 UTC",
    "sources": "The Hacker News",
    "url": "story/349817163ae5.html"
+  },
+  {
+   "id": "5c6c31b6a9d3",
+   "title": "Critical Node-RED Flaw Exploited in Attacks",
+   "summary": "Multiple attacks from the same IP address attempted to deploy various payloads, including a Linux bot and webshells. The post Critical Node-RED Flaw Exploited in Attacks…",
+   "priority": "High",
+   "category": "Patch Radar",
+   "date": "03 Nov 2026, 12:10 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/5c6c31b6a9d3.html"
   },
   {
    "id": "35fc634a28d1",
@@ -99,6 +89,16 @@
    "date": "30 Oct 2026, 10:16 UTC",
    "sources": "BleepingComputer",
    "url": "story/eaaaa83e33fa.html"
+  },
+  {
+   "id": "1779cfdf0141",
+   "title": "Cisco, WatchGuard Release Patches; SonicWall Won’t Fix GMS Flaws",
+   "summary": "Cisco patched an RCE in UCS Central Software; WatchGuard fixed authentication and MitM flaws. The post Cisco, WatchGuard Release Patches; SonicWall Won’t Fix GMS Flaws…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "05 Nov 2026, 12:33 UTC",
+   "sources": "SecurityWeek, The Hacker News",
+   "url": "story/1779cfdf0141.html"
   },
   {
    "id": "68af6446b07c",
@@ -141,14 +141,14 @@
    "url": "story/02b7f3513306.html"
   },
   {
-   "id": "2f5877591bfd",
-   "title": "AI-Linked Breaches Mount as WorkOS, Northflank, Trigger.dev Disclose Hacks",
-   "summary": "Hackers have been harvesting AI access tokens and have been using AI-assisted offensive tools to automate attacks. The post AI-Linked Breaches Mount as WorkOS…",
+   "id": "62ad9c2a6bdd",
+   "title": "CISA flags WordPress RCE flaw as actively exploited in attacks",
+   "summary": "The US Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies that attackers have started exploiting a recently patched high-severity WordPress…",
    "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "04 Nov 2026, 12:43 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/2f5877591bfd.html"
+   "category": "Patch Radar",
+   "date": "04 Nov 2026, 12:11 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/62ad9c2a6bdd.html"
   },
   {
    "id": "9068a344a035",
@@ -169,6 +169,16 @@
    "date": "29 Oct 2026, 18:38 UTC",
    "sources": "BleepingComputer",
    "url": "story/7c2b70bd7e3e.html"
+  },
+  {
+   "id": "bcd0f8e51ff4",
+   "title": "The Agent Smith Dilemma: Governing Agentic Identities",
+   "summary": "Every autonomous AI agent deployed across your enterprise today is a new proxy identity operating inside your perimeter. The post The Agent Smith Dilemma: Governing…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "05 Nov 2026, 11:15 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/bcd0f8e51ff4.html"
   },
   {
    "id": "350327fdd7cd",
@@ -231,14 +241,14 @@
    "url": "story/1cb3088dd861.html"
   },
   {
-   "id": "d013e25bf406",
-   "title": "Critical Rails Flaw Lets Attackers Write Server Files via Crafted ImageMagick Uploads",
-   "summary": "A critical flaw in Ruby on Rails could allow an unauthenticated attacker to write arbitrary files on an app's server by uploading a crafted file if the app processes…",
+   "id": "2f5877591bfd",
+   "title": "AI-Linked Breaches Mount as WorkOS, Northflank, Trigger.dev Disclose Hacks",
+   "summary": "Hackers have been harvesting AI access tokens and have been using AI-assisted offensive tools to automate attacks. The post AI-Linked Breaches Mount as WorkOS…",
    "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "04 Nov 2026, 12:07 UTC",
-   "sources": "The Hacker News",
-   "url": "story/d013e25bf406.html"
+   "category": "Attacks & Breaches",
+   "date": "04 Nov 2026, 12:43 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/2f5877591bfd.html"
   },
   {
    "id": "27b11b637919",
@@ -371,6 +381,16 @@
    "url": "story/7d9fa054e5fe.html"
   },
   {
+   "id": "25c3eda20cfe",
+   "title": "OpenAI AI Pipeline Generates 948 Linux Root Escalation Exploits in 30-Hour Run",
+   "summary": "OpenAI on Wednesday detailed a pipeline that employed an upcoming cyber-focused artificial intelligence (AI) model to validate and patch 948 local privilege escalation…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "05 Nov 2026, 12:08 UTC",
+   "sources": "The Hacker News",
+   "url": "story/25c3eda20cfe.html"
+  },
+  {
    "id": "a190c692796e",
    "title": "CISO Conversations: Ryan Davis – The Unknown Is Where Security Meets Reality",
    "summary": "Ryan Davis went from hacking his school’s network to running security at New Charter Technologies. What worries him now is shadow AI. The post CISO Conversations: Ryan…",
@@ -411,16 +431,6 @@
    "url": "story/4f9bb7c1ff8e.html"
   },
   {
-   "id": "25c3eda20cfe",
-   "title": "OpenAI AI Pipeline Generates 948 Linux Root Escalation Exploits in 30-Hour Run",
-   "summary": "OpenAI on Wednesday detailed a pipeline that employed an upcoming cyber-focused artificial intelligence (AI) model to validate and patch 948 local privilege escalation…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "05 Nov 2026, 04:31 UTC",
-   "sources": "The Hacker News",
-   "url": "story/25c3eda20cfe.html"
-  },
-  {
    "id": "78de6ffe4e2d",
    "title": "Researchers Uncover Prompt Adware Hidden in OpenAI Codex Jailbreak Toolkit",
    "summary": "Cybersecurity researchers have disclosed details of an OpenAI Codex jailbreak bundle that's designed to modify an artificial intelligence (AI) agent's trusted…",
@@ -459,6 +469,16 @@
    "date": "04 Nov 2026, 14:00 UTC",
    "sources": "The Record",
    "url": "story/4448a4360ec1.html"
+  },
+  {
+   "id": "d013e25bf406",
+   "title": "Critical Rails Flaw Lets Attackers Write Server Files via Crafted ImageMagick Uploads",
+   "summary": "A critical flaw in Ruby on Rails could allow an unauthenticated attacker to write arbitrary files on an app's server by uploading a crafted file if the app processes…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "04 Nov 2026, 12:07 UTC",
+   "sources": "The Hacker News",
+   "url": "story/d013e25bf406.html"
   },
   {
    "id": "8384c224e801",
@@ -591,26 +611,6 @@
    "url": "story/ed61802f64c7.html"
   },
   {
-   "id": "14152597814e",
-   "title": "Android’s November 2026 Updates Patch Over 200 Vulnerabilities",
-   "summary": "The most severe is a critical flaw in Framework leading to remote code execution without user interaction. The post Android’s November 2026 Updates Patch Over 200…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "03 Nov 2026, 12:21 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/14152597814e.html"
-  },
-  {
-   "id": "8ede56d402c1",
-   "title": "Google adds new $250,000 Cloud VRP reward for Root-in-Cloud bugs",
-   "summary": "Google has expanded its Cloud Vulnerability Reward Program (VRP) with a new top-tier reward for high-impact architectural security flaws.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "03 Nov 2026, 12:05 UTC",
-   "sources": "BleepingComputer, SecurityWeek",
-   "url": "story/8ede56d402c1.html"
-  },
-  {
    "id": "5e74da19f3eb",
    "title": "UK Cyber Chief Says the UK Will Face AI Cyberattacks on Critical Infrastructure by 2028",
    "summary": "The U.K. will likely face AI cyberattacks on its critical infrastructure by 2028 as criminals and states, including China and Russia, increasingly use AI in their cyber…",
@@ -711,14 +711,14 @@
    "url": "story/2e0675284202.html"
   },
   {
-   "id": "15f712f3175d",
-   "title": "Windows 11 KB5127936 update released with 41 changes and fixes",
-   "summary": "Microsoft released the KB5127936 preview cumulative update for Windows 11 versions 25H2 and 26H2, with 41 changes, including File Explorer and Cloud rebuild improvements.",
+   "id": "8384bfde04a0",
+   "title": "Cyberattack Hits French Blood Bank Site but No Blood Products Are Compromised",
+   "summary": "The incident comes after supermarkets in a number of European countries reported this week that their fridges and freezers warmed up after they were remotely hacked. The…",
    "priority": "Standard",
-   "category": "Microsoft",
-   "date": "29 Oct 2026, 12:00 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/15f712f3175d.html"
+   "category": "Attacks & Breaches",
+   "date": "05 Nov 2026, 12:58 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/8384bfde04a0.html"
   },
   {
    "id": "1981b067cd83",
@@ -811,16 +811,6 @@
    "url": "story/3632eace057e.html"
   },
   {
-   "id": "1b9b96d402ef",
-   "title": "SonicWall Won't Patch EoL GMS Flaws That Could Expose Files, Alter Database Records",
-   "summary": "SonicWall has warned of two vulnerabilities impacting end-of-life Global Management System (GMS) systems that it said will not be patched. Details of the security flaws…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "04 Nov 2026, 17:00 UTC",
-   "sources": "The Hacker News",
-   "url": "story/1b9b96d402ef.html"
-  },
-  {
    "id": "9c8bdd95a7d5",
    "title": "NIKKE PC game launcher hacked to spread remote access, data-stealing malware",
    "summary": "The developers of Goddess of Victory: NIKKE have confirmed that hackers tampered with the game's PC launcher scripts in a supply-chain attack, distributing malware…",
@@ -911,16 +901,6 @@
    "url": "story/1aedc3ffafe5.html"
   },
   {
-   "id": "9c2441032957",
-   "title": "Canadian Extradited to US Over Cryptomining Hacks on University Supercomputers",
-   "summary": "A federal grand jury indicted two Canadian men for hijacking university supercomputers to secretly mine Electroneum cryptocurrency. The post Canadian Extradited to US…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "04 Nov 2026, 12:27 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/9c2441032957.html"
-  },
-  {
    "id": "76f398aa937f",
    "title": "Rigged Coding Assignment, Abused AI Tool Opened Path to $6 Billion Binance Heist",
    "summary": "Binance’s first incident report traces the record theft to a months-long campaign that compromised three engineers’ computers. The post Rigged Coding Assignment, Abused…",
@@ -959,6 +939,26 @@
    "date": "03 Nov 2026, 14:12 UTC",
    "sources": "SecurityWeek",
    "url": "story/b981c2f988c9.html"
+  },
+  {
+   "id": "14152597814e",
+   "title": "Android’s November 2026 Updates Patch Over 200 Vulnerabilities",
+   "summary": "The most severe is a critical flaw in Framework leading to remote code execution without user interaction. The post Android’s November 2026 Updates Patch Over 200…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "03 Nov 2026, 12:21 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/14152597814e.html"
+  },
+  {
+   "id": "8ede56d402c1",
+   "title": "Google adds new $250,000 Cloud VRP reward for Root-in-Cloud bugs",
+   "summary": "Google has expanded its Cloud Vulnerability Reward Program (VRP) with a new top-tier reward for high-impact architectural security flaws.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "03 Nov 2026, 12:05 UTC",
+   "sources": "BleepingComputer, SecurityWeek",
+   "url": "story/8ede56d402c1.html"
   },
   {
    "id": "20c9c9965d29",
@@ -1401,6 +1401,16 @@
    "url": "story/1b4f07400fac.html"
   },
   {
+   "id": "9c2441032957",
+   "title": "Canadian Extradited to US Over Cryptomining Hacks on University Supercomputers",
+   "summary": "A federal grand jury indicted two Canadian men for hijacking university supercomputers to secretly mine Electroneum cryptocurrency. The post Canadian Extradited to US…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "04 Nov 2026, 12:27 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/9c2441032957.html"
+  },
+  {
    "id": "de8bbdd0e39a",
    "title": "Xen Hypervisor Flaws Let One Malicious VM Read and Write Any Other VM's Memory",
    "summary": "Two flaws in the Xen hypervisor allow a malicious guest virtual machine (VM) to read and write the memory of other VMs on the same host, including dom0. Dom0 is the VM…",
@@ -1599,16 +1609,6 @@
    "date": "03 Nov 2026, 13:33 UTC",
    "sources": "BleepingComputer",
    "url": "story/06b26e44f1d6.html"
-  },
-  {
-   "id": "dcae8bed3d42",
-   "title": "AIs Hacking the Law",
-   "summary": "In both a 2021 essay and my 2022 book, A Hacker’s Mind, I talk about AIs finding vulnerabilities and exploits—hacking—the legal system. Here’s some demonstrations of…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "03 Nov 2026, 12:01 UTC",
-   "sources": "Schneier on Security",
-   "url": "story/dcae8bed3d42.html"
   },
   {
    "id": "0658f100b664",
@@ -1831,14 +1831,14 @@
    "url": "story/d340597c608d.html"
   },
   {
-   "id": "9ca4865974e2",
-   "title": "Over 41,000 DHS Employee Records Leaked Online",
-   "summary": "The personal and work information was allegedly stolen from an Okta single sign-on system earlier this year. The post Over 41,000 DHS Employee Records Leaked Online…",
+   "id": "dcae8bed3d42",
+   "title": "AIs Hacking the Law",
+   "summary": "In both a 2021 essay and my 2022 book, A Hacker’s Mind, I talk about AIs finding vulnerabilities and exploits—hacking—the legal system. Here’s some demonstrations of…",
    "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "29 Oct 2026, 12:54 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/9ca4865974e2.html"
+   "category": "Patch Radar",
+   "date": "03 Nov 2026, 12:01 UTC",
+   "sources": "Schneier on Security",
+   "url": "story/dcae8bed3d42.html"
   },
   {
    "id": "3ce297811edf",
@@ -2589,16 +2589,6 @@
    "date": "29 Oct 2026, 13:30 UTC",
    "sources": "The Record",
    "url": "story/56ef05760e8e.html"
-  },
-  {
-   "id": "ec59d102565d",
-   "title": "Massive leak exposes 41,000 DHS workers and undercover ICE agents",
-   "summary": "An unprecedented leak of Department of Homeland Security records has exposed details of more than 41,000 employees or contractors who work for the department and its…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "29 Oct 2026, 12:58 UTC",
-   "sources": "Ars Technica Security",
-   "url": "story/ec59d102565d.html"
   }
  ]
 }
