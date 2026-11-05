@@ -1676,29 +1676,6 @@
    "instructions_checked": true
   },
   {
-   "id": "9ac8296dadd7",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Attacker Tried to Exploit Alpine Linux’s GitLab via CVSS 10.0 Flaw Its Ruby Left Open",
-   "link": "https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html",
-   "published": "2026-10-29T09:05:39+00:00",
-   "summary": "An attacker tried to exploit a critical GitLab vulnerability on the Alpine Linux project's own GitLab server a week after GitLab released a fix, Alpine Linux said on 28 October. The flaw, CVE-2026-97229 (CVSS score: 10.0), can let an attacker run code on a GitLab server through a crafted regular expression in a CI…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh65eroK1pQacKJwqeGmgp2sDta1mgCrPuNMXiwAgTi-FVZNc1V4D7qooFFc-V-XNOJzYpjYk28Y_kIkoHMNJfnQ5h2gI0-bOWlVOt9VJ9oZUpRsBzYLsSMe3oNRTfZe53dtpezOOq1MHmWhEhAigbyOMLx4jWAbcvvImY39jY1h4FMS4_OUqSDF-kZJvQ/s1600/linux-gitlab.jpg",
-   "cves": [
-    "CVE-2026-97229"
-   ],
-   "first_seen": "2026-10-29T11:43:24.190225+00:00",
-   "instructions": [
-    "On 26 October, Alpine found that the server was still vulnerable after its 22 October upgrade to 19.3.6.",
-    "GitLab's advisory says that, \"under certain conditions,\" the flaw could have allowed an unauthenticated user to run code on the server.",
-    "That exploit needs write access first: the attacker must commit a malicious .gitlab-ci.yml file and a file path with UTF-8 characters to a branch of a public project.",
-    "That requirement does not apply on servers where new users can register themselves and create projects."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "4a3beb5aa5ff",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2113,6 +2090,22 @@
    "instructions_checked": true
   },
   {
+   "id": "96a1ace9f58c",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Apple to Start Scanning Publicly Shared iCloud Photos and Files for Harmful Content",
+   "link": "https://thehackernews.com/2026/11/apple-to-start-scanning-publicly-shared.html",
+   "published": "2026-11-05T09:13:28+00:00",
+   "summary": "Apple has revealed that it plans to start checking public iCloud links for harmful content starting with iOS 27.3, iPadOS 27.3, macOS 27.3, and visionOS 27.3. The change specifically applies to scenarios where users share iCloud content, such as photos in iCloud Photos or files in iCloud Drive, by sharing a link and…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCN85K3W5zv5BioRQjCRpIAYT4K8MjZxx0bP0wNETp_eeBQ8Rj_iScHZ0PVnak7dJnJB_tZs06nxCn3YB70aQrULSZVbcn_gLqAsRoN08bSj__9UGZ38PzHTeSqe1IdqZEvdY8fogrjg3xPvg4Kohb2lFGdIveD4jIZQYKugtN5dIc0nTDjlVZJeQBzASx/s1600/icloud.jpg",
+   "cves": [],
+   "first_seen": "2026-11-05T10:01:27.340850+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "5e99d13bfbb2",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2188,6 +2181,25 @@
    "first_seen": "2026-11-03T05:35:52.311451+00:00",
    "instructions": [
     "In the absence of a fix, site owners are advised to remove the plugin, rotate wallet keys, and audit for any suspicious changes."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "4f9bb7c1ff8e",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "CERT-In Flags AI-Driven Attacks as Backdoored ARTEX Exposes 62 Consoles to Root Access",
+   "link": "https://thehackernews.com/2026/11/backdoored-docker-image-for-artex-ai.html",
+   "published": "2026-11-05T08:42:03+00:00",
+   "summary": "The Indian Computer Emergency Response Team (CERT-In) has disclosed that an artificial intelligence (AI)-assisted threat actor it tracks as Crafty Falcon is targeting organizations in the Banking, Financial Services, and Insurance (BFSI) sectors in the country. Describing the threat as active and ongoing, the activity…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiA5xlxteigxw9PDEVogRmGjD3vyPuJRyKCuIAOmURy0CY-OLXfYOjC93BPb_gvifLUiVoUk9JcjmxtsGpkT-cYhlrTwXS6yodTv-WwHnPUKvahU67tc5R841Sb_hkIIsUkzNzne5Fzo0h6BUpzEW1770YFBayYksyjSc9pKOV3VsHfoHcPfu3mYAFOQW4K/s1600/docker-ai.jpg",
+   "cves": [],
+   "first_seen": "2026-11-05T10:01:27.340850+00:00",
+   "instructions": [
+    "The update follows an October 2026 alert issued by CERT-In, which warned of multiple cyber attack campaigns targeting non-banking financial companies (NBFCs), digital lending platforms, fintech entities, payment service providers, and cryptocurrency wallet operators.",
+    "\"That's an unauthenticated root shell on every install, and it never shows up in a code review.\""
    ],
    "instructions_checked": true
   },
@@ -4189,6 +4201,28 @@
    "instructions_checked": true
   },
   {
+   "id": "da77af0f435f",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "GhostMap Android flaw lets malicious app trigger persistent boot loop",
+   "link": "https://www.bleepingcomputer.com/news/security/ghostmap-android-flaw-lets-malicious-app-trigger-persistent-boot-loop/",
+   "published": "2026-11-05T09:18:29+00:00",
+   "summary": "Attackers can force Android devices into a continuous boot loop using a specially crafted app that requires no permissions and only needs to be installed.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/14/android.jpg",
+   "cves": [],
+   "first_seen": "2026-11-05T10:01:27.340850+00:00",
+   "image_checked": true,
+   "instructions": [
+    "According to the company, Google has been aware of GhostMap since August but closed the issue without releasing a patch, classifying it as \"not reproducible.\"",
+    "During the tests, the researchers used a Pixel 10 device running Android 17 with the August 5 security patch.",
+    "Stopping the crashes is possible in two ways: a factory reset, which erases all locally stored data, and by deleting the malformed file via ADB.",
+    "The tech giant still deemed it out of scope for a security update, though it reserved it for consideration in a future update."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "d6dd46466a93",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -5220,22 +5254,6 @@
    "instructions_checked": true
   },
   {
-   "id": "196b1e60527b",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "Shadowy AI Relay Disables OpenAI Codex, Claude Code Sandboxes",
-   "link": "https://www.darkreading.com/threat-intelligence/ai-relay-service-openai-codex-claude-code-sandboxes",
-   "published": "2026-10-29T10:00:00+00:00",
-   "summary": "The enigmatic service is providing popular AI coding tools to mainland China and other regions where OpenAI and Anthropic products are not officially for sale — but with key security features turned off.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt036489a36358dea1/6a971529de036c92b216129d/aicoding-AreeSarak-Getty-2252848921.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-10-29T10:48:10.806652+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "63b84b48fd3c",
    "source": "grahamcluley",
    "source_name": "Graham Cluley",
@@ -5592,28 +5610,6 @@
     "The second part of Android’s November 2026 security updates arrives on devices as the 2026-11-05 security patch level and fixes 97 bugs in Kernel, Arm, Imagination Technologies, MediaTek, Unisoc, and Qualcomm components.",
     "While most of the fixes target high-severity issues, more than a dozen of them resolve critical-severity weaknesses in subcomponents such as Bluetooth, pKVM, HID, MediaTek modem, and a Qualcomm closed-source component. “Security patch levels of 2026-11-05 or later address all of these issues,” Google notes.",
     "In addition to the bugs described in the November 2026 Android bulletin, the Android XR update resolves a high-severity flaw in Framework, while the Wear OS patch addresses two high-severity issues in Framework and System."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "77d976efa8e0",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Attackers Exploit Second Cisco Firewall VPN Zero-Day Since August",
-   "link": "https://www.securityweek.com/attackers-exploit-second-cisco-firewall-vpn-zero-day-since-august/",
-   "published": "2026-10-29T09:47:10+00:00",
-   "summary": "An exploited flaw in the Remote Access SSL VPN service lets unauthenticated attackers remotely force ASA and FTD firewalls to reload. The post Attackers Exploit Second Cisco Firewall VPN Zero-Day Since August appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2023/04/Cisco_router_hack-e1793267161770.jpg",
-   "cves": [],
-   "first_seen": "2026-10-29T10:48:10.806652+00:00",
-   "image_checked": true,
-   "instructions": [
-    "For an attack to work, the firewall must be running an unpatched release, have its SSL VPN login service reachable, and use secondary authentication in an affected tunnel group.",
-    "Cisco cautioned that dropping secondary authentication makes remote access VPN less secure, and it recommends upgrading instead.",
-    "iOS, macOS 27.2 Patch 286 Bugs; Fix for Exploited Flaw Backported to iOS 18",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
   },

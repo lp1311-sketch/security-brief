@@ -1,16 +1,6 @@
 {
  "stories": [
   {
-   "id": "4bea3ce24866",
-   "title": "Max-Severity GitLab Vulnerability Exploited Against Alpine Linux",
-   "summary": "Tracked as CVE-2026-97229, the bug allows unauthenticated attackers to execute arbitrary code on the server. The post Max-Severity GitLab Vulnerability Exploited Against…",
-   "priority": "Critical",
-   "category": "Patch Radar",
-   "date": "30 Oct 2026, 09:32 UTC",
-   "sources": "SecurityWeek, The Hacker News",
-   "url": "story/4bea3ce24866.html"
-  },
-  {
    "id": "357136bfe66d",
    "title": "Ivanti patches two more Connect Secure zero-days chained in attacks",
    "summary": "Ivanti released security updates to patch two more Connect Secure (ICS) remote access gateway flaws that have been chained in zero-day attacks since at least October 1.",
@@ -21,13 +11,23 @@
    "url": "story/357136bfe66d.html"
   },
   {
+   "id": "4bea3ce24866",
+   "title": "Max-Severity GitLab Vulnerability Exploited Against Alpine Linux",
+   "summary": "Tracked as CVE-2026-97229, the bug allows unauthenticated attackers to execute arbitrary code on the server. The post Max-Severity GitLab Vulnerability Exploited Against…",
+   "priority": "Critical",
+   "category": "Patch Radar",
+   "date": "30 Oct 2026, 09:32 UTC",
+   "sources": "SecurityWeek, The Hacker News",
+   "url": "story/4bea3ce24866.html"
+  },
+  {
    "id": "409f0b0486b7",
    "title": "New Cisco firewall zero-day exploited to crash SSL VPN devices",
    "summary": "Cisco released security updates to patch a denial-of-service zero-day in Adaptive Security Appliance (ASA) and Threat Defense (FTD) software that attackers are…",
    "priority": "Critical",
    "category": "Patch Radar",
    "date": "29 Oct 2026, 11:10 UTC",
-   "sources": "BleepingComputer, The Hacker News, SecurityWeek",
+   "sources": "BleepingComputer, The Hacker News",
    "url": "story/409f0b0486b7.html"
   },
   {
@@ -321,16 +321,6 @@
    "url": "story/ccddb3cec5c8.html"
   },
   {
-   "id": "5e74da19f3eb",
-   "title": "UK Cyber Chief Says the UK Will Face AI Cyberattacks on Critical Infrastructure by 2028",
-   "summary": "The U.K. will likely face AI cyberattacks on its critical infrastructure by 2028 as criminals and states, including China and Russia, increasingly use AI in their cyber…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "03 Nov 2026, 09:49 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/5e74da19f3eb.html"
-  },
-  {
    "id": "7398c8fe0a0b",
    "title": "Over 1,000 GitLab servers vulnerable to ongoing RCE attacks",
    "summary": "Over 1,000 Internet-exposed GitLab servers are still unpatched against a maximum-severity flaw actively exploited in remote code execution attacks.",
@@ -389,6 +379,26 @@
    "date": "29 Oct 2026, 22:45 UTC",
    "sources": "BleepingComputer",
    "url": "story/7d9fa054e5fe.html"
+  },
+  {
+   "id": "96a1ace9f58c",
+   "title": "Apple to Start Scanning Publicly Shared iCloud Photos and Files for Harmful Content",
+   "summary": "Apple has revealed that it plans to start checking public iCloud links for harmful content starting with iOS 27.3, iPadOS 27.3, macOS 27.3, and visionOS 27.3. The change…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "05 Nov 2026, 09:13 UTC",
+   "sources": "The Hacker News",
+   "url": "story/96a1ace9f58c.html"
+  },
+  {
+   "id": "4f9bb7c1ff8e",
+   "title": "CERT-In Flags AI-Driven Attacks as Backdoored ARTEX Exposes 62 Consoles to Root Access",
+   "summary": "The Indian Computer Emergency Response Team (CERT-In) has disclosed that an artificial intelligence (AI)-assisted threat actor it tracks as Crafty Falcon is targeting…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "05 Nov 2026, 08:42 UTC",
+   "sources": "The Hacker News",
+   "url": "story/4f9bb7c1ff8e.html"
   },
   {
    "id": "25c3eda20cfe",
@@ -601,6 +611,16 @@
    "url": "story/8491f2b2e054.html"
   },
   {
+   "id": "5e74da19f3eb",
+   "title": "UK Cyber Chief Says the UK Will Face AI Cyberattacks on Critical Infrastructure by 2028",
+   "summary": "The U.K. will likely face AI cyberattacks on its critical infrastructure by 2028 as criminals and states, including China and Russia, increasingly use AI in their cyber…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "03 Nov 2026, 09:49 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/5e74da19f3eb.html"
+  },
+  {
    "id": "6c5cf422a94b",
    "title": "Microsoft's AI Risk Report Misses This Key Detail",
    "summary": "The latest \"Digital Defense Report\" identifies government agencies as prime targets for AI attacks but doesn't mention that they are broadly being targeted through…",
@@ -699,6 +719,16 @@
    "date": "29 Oct 2026, 12:00 UTC",
    "sources": "BleepingComputer",
    "url": "story/15f712f3175d.html"
+  },
+  {
+   "id": "da77af0f435f",
+   "title": "GhostMap Android flaw lets malicious app trigger persistent boot loop",
+   "summary": "Attackers can force Android devices into a continuous boot loop using a specially crafted app that requires no permissions and only needs to be installed.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "05 Nov 2026, 09:18 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/da77af0f435f.html"
   },
   {
    "id": "49bf8b366c47",
@@ -909,26 +939,6 @@
    "date": "04 Nov 2026, 10:54 UTC",
    "sources": "SecurityWeek",
    "url": "story/9726794b0c18.html"
-  },
-  {
-   "id": "68960d2138eb",
-   "title": "North Korea Launches Missiles Toward the Sea as Pyongyang Protests Against US Claims on Binance Hack",
-   "summary": "In recent months, North Korea has accelerated its weapons tests in a likely bid to increase its leverage in potential diplomacy with the US. The post North Korea…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "04 Nov 2026, 09:23 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/68960d2138eb.html"
-  },
-  {
-   "id": "42b1ec161f14",
-   "title": "cPGuard gehackt, verteilte Backdoor (Nov. 2026)",
-   "summary": "Unschöne Sache für Leute, die die Sicherheits- und Anti-Malware-Suite für Linux-Webserver, cPGuard von Opsshield verwenden. Die Nacht ist mir die Information…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "04 Nov 2026, 09:17 UTC",
-   "sources": "Born's IT and Windows Blog",
-   "url": "story/42b1ec161f14.html"
   },
   {
    "id": "2698ecd844a4",
@@ -1391,6 +1401,26 @@
    "url": "story/c9e7c513e143.html"
   },
   {
+   "id": "68960d2138eb",
+   "title": "North Korea Launches Missiles Toward the Sea as Pyongyang Protests Against US Claims on Binance Hack",
+   "summary": "In recent months, North Korea has accelerated its weapons tests in a likely bid to increase its leverage in potential diplomacy with the US. The post North Korea…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "04 Nov 2026, 09:23 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/68960d2138eb.html"
+  },
+  {
+   "id": "42b1ec161f14",
+   "title": "cPGuard gehackt, verteilte Backdoor (Nov. 2026)",
+   "summary": "Unschöne Sache für Leute, die die Sicherheits- und Anti-Malware-Suite für Linux-Webserver, cPGuard von Opsshield verwenden. Die Nacht ist mir die Information…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "04 Nov 2026, 09:17 UTC",
+   "sources": "Born's IT and Windows Blog",
+   "url": "story/42b1ec161f14.html"
+  },
+  {
    "id": "1f8acdc5d8c6",
    "title": "Meta Shares Top Muse Bug Bounty Findings as Payouts Reach $1.2 Million",
    "summary": "A $300,000 award went to a pre-launch flaw that exposed conversations and tokens on internal Muse test VMs used by Meta staff. The post Meta Shares Top Muse Bug Bounty…",
@@ -1559,16 +1589,6 @@
    "date": "03 Nov 2026, 11:00 UTC",
    "sources": "The Hacker News",
    "url": "story/3ce297811edf.html"
-  },
-  {
-   "id": "402458e4dacc",
-   "title": "Google Dismantles XCPE Botnet of 1.3 Million Android Devices",
-   "summary": "The botnet was created and operated for financial gain by Android OEM/ODM Videostrong Technology. The post Google Dismantles XCPE Botnet of 1.3 Million Android Devices…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "03 Nov 2026, 09:22 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/402458e4dacc.html"
   },
   {
    "id": "0658f100b664",
@@ -1821,14 +1841,14 @@
    "url": "story/e6aa25e9694d.html"
   },
   {
-   "id": "196b1e60527b",
-   "title": "Shadowy AI Relay Disables OpenAI Codex, Claude Code Sandboxes",
-   "summary": "The enigmatic service is providing popular AI coding tools to mainland China and other regions where OpenAI and Anthropic products are not officially for sale — but with…",
+   "id": "402458e4dacc",
+   "title": "Google Dismantles XCPE Botnet of 1.3 Million Android Devices",
+   "summary": "The botnet was created and operated for financial gain by Android OEM/ODM Videostrong Technology. The post Google Dismantles XCPE Botnet of 1.3 Million Android Devices…",
    "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "29 Oct 2026, 10:00 UTC",
-   "sources": "Dark Reading",
-   "url": "story/196b1e60527b.html"
+   "category": "Attacks & Breaches",
+   "date": "03 Nov 2026, 09:22 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/402458e4dacc.html"
   },
   {
    "id": "07d9937fab38",
