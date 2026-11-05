@@ -2478,6 +2478,27 @@
    "instructions_checked": true
   },
   {
+   "id": "3fe484f436f5",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "OpenSSH Issues Emergency Fix for Flaw Letting Long Passwords Bypass SSH Auth on Alpine Linux",
+   "link": "https://thehackernews.com/2026/11/openssh-issues-emergency-fix-for-flaw.html",
+   "published": "2026-11-05T16:42:46+00:00",
+   "summary": "Attackers can log in to accounts that have no password, such as SSH key-only accounts, on some Alpine Linux servers running the standard openssh-server package. They need network access to the server, an account name, and a password between 257 and 1,024 bytes long. OpenSSH, which rates the flaw critical, released…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEieaHvS5baW_XG1eAsBsoSp9qRzV179f0WwXoj9k6rUeX4Qa4sxpi3hvpGkgkYNMPzZQH0mvvVAoTooEAgl1G3SyFksmhqNEbDEIEWM83RH47u8qvNyIYclA7z7GUdPJGx8WfJd556iCvvtvsitAYp9M-T46OvuwkaSWwnyhlynEpYax2qyTCACsPbtQLw/s1600/ssh-linux.jpg",
+   "cves": [],
+   "first_seen": "2026-11-05T22:16:50.878981+00:00",
+   "instructions": [
+    "OpenSSH, which rates the flaw critical, released version 10.6p2 today to block it.",
+    "The attack succeeds on every try with a single connection, according to the advisory.",
+    "The advisory gives commands that add the setting in a drop-in file in /etc/ssh/sshd_config.d , which Alpine's default configuration reads from 3.19 onward.",
+    "Afterward, sshd -T | grep -i passwordauthentication should print passwordauthentication no ."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "ecf2013fdfbb",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2517,6 +2538,27 @@
     "\"The Ubuntu Security Team believes that security updates are the only appropriate mitigation.\"",
     "Fixed kernels for a use-after-free vulnerability in the Linux kernel's IPv4 TCP code are now available for Red Hat Enterprise Linux 8, 9, and 10, while Ubuntu's fixes for its three newest long-term-support releases remain in its opt-in testing channel with no date for a regular update.",
     "Canonical tests kernel updates across more than 2,000 certified servers and devices before releasing them to the regular update channel, and no release date has been given."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "306be99284dc",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Researchers Bypass ChatGPT Lockdown Mode to Exfiltrate Chats Without User Interaction",
+   "link": "https://thehackernews.com/2026/11/researchers-bypass-chatgpt-lockdown.html",
+   "published": "2026-11-05T16:42:32+00:00",
+   "summary": "Cybersecurity researchers have disclosed details of a now-patched vulnerability that could be exploited to bypass Lockdown Mode protections in OpenAI ChatGPT. Lockdown Mode was introduced by the artificial intelligence (AI) company in June 2026 as an optional setting to minimize data exfiltration risks arising from…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrZkGDnavpYu1VmQZCorYSw9PnFNh3tGXQ7YWWrZ3g6sURYj4RiS7za99akV3poXhW7GLoJw3j-baYvwyor0f_8iI3t5zk3NeXj1V1eVDMFUklqlYz629h88oYzxk3aIQPPwQF3xaw10DZTE-lEKyaojqzlLHC_DGtF91AVhXkaFNfY6Mh-qVqn86LCfQz/s1600/chat.gif",
+   "cves": [],
+   "first_seen": "2026-11-05T22:16:50.878981+00:00",
+   "instructions": [
+    "\"The flaw could enable silent chat data theft, phishing, and malware delivery, including zero-click data exfiltration in the ChatGPT desktop application,\" Eli Smadja, head of research at Check Point, said in a report shared with The Hacker News.",
+    "Lockdown Mode acts as a security barrier, mitigating data exfiltration risk by limiting outbound network requests that could be used to transfer sensitive information to an attacker-controlled infrastructure.",
+    "What's more, as the attacker is in complete control of the content displayed in the popup window, it could be used to render convincing social-engineering lures, such as a fake ChatGPT update, and trick the victim into downloading malware by persuading them to click on a link.",
+    "If the HTML block is marked as previewable, it's opened automatically."
    ],
    "instructions_checked": true
   },
@@ -3171,6 +3213,23 @@
    "instructions": [
     "The New York-based company said it removed the vendor’s compromised script, paused trading, and reset all active login sessions."
    ],
+   "instructions_checked": true
+  },
+  {
+   "id": "3189ce2b4e22",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Queens Public Library says ransomware attack disrupted Wi-Fi, on-site computers",
+   "link": "https://therecord.media/queens-library-ransomware-causes-disruptions",
+   "published": "2026-11-05T22:08:00+00:00",
+   "summary": "The library system, which has 66 branches serving the borough’s 2.3 million residents, published multiple alerts on Wednesday confirming that the disruption was caused by a ransomware attack.",
+   "image": "https://cms.therecord.media/uploads/queens_library_5e385910af.jpg",
+   "cves": [],
+   "first_seen": "2026-11-05T22:16:50.878981+00:00",
+   "image_checked": true,
+   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -3839,6 +3898,26 @@
    "instructions_checked": true
   },
   {
+   "id": "886e9406677f",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Fake OpenAI, SpaceX events used to steal Microsoft, Google accounts",
+   "link": "https://www.bleepingcomputer.com/news/security/fake-openai-spacex-events-used-to-steal-microsoft-google-accounts/",
+   "published": "2026-11-05T21:30:30+00:00",
+   "summary": "Hackers are using fake OpenAI, SpaceX, and Anthropic event invitations to lure employees into phishing attacks, using two different phishing-as-a-service platforms to steal Microsoft and Google account credentials and authentication sessions.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2022/08/23/phishing-hook.jpg",
+   "cves": [],
+   "first_seen": "2026-11-05T22:16:50.878981+00:00",
+   "image_checked": true,
+   "instructions": [
+    "To protect against these attacks, employees should avoid entering Microsoft device authentication codes provided by unfamiliar websites and be cautious of event invitations that require signing in with corporate accounts to claim rewards.",
+    "Organizations can also restrict device code authentication where it is not needed and use phishing-resistant MFA, such as FIDO2 security keys, to help prevent session hijacking."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "8cfea8890b08",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4125,26 +4204,6 @@
    "instructions_checked": true
   },
   {
-   "id": "a6d0e88b749c",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Hugging Face malware campaign returns to hijack GPUs for crypto mining",
-   "link": "https://www.bleepingcomputer.com/news/security/hugging-face-malware-campaign-returns-to-hijack-gpus-for-crypto-mining/",
-   "published": "2026-10-29T22:09:24+00:00",
-   "summary": "A crypto-mining campaign abusing Hugging Face models returned days after takedown, hijacking GPU servers and planting backdoors, with one model downloaded over 28,000 times. Separately, a fake Solana starter kit on GitHub is positioned to trick AI coding agents into installing a NetSupport RAT.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/07/20/Hugging-Face.jpg",
-   "cves": [],
-   "first_seen": "2026-10-29T22:45:37.049463+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Anyone who loaded these models with trust_remote_code enabled should treat the machine as compromised, check it against the indicators in Pluto's report, and rotate any credentials it could reach.",
-    "The Windows-only command assembles a URL on developer-update[.]app from fragments, then fetches and runs a script from it in memory."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "357136bfe66d",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4164,23 +4223,6 @@
     "When it released patches for CVE-2026-104935 in October, Ivanti urged admins to upgrade as soon as possible since it was aware of \"limited exploitation in the wild.\"",
     "On Tuesday, the US Cybersecurity and Infrastructure Security Agency (CISA) added CVE-2026-104935 to its catalog of actively exploited vulnerabilities and ordered federal agencies to patch their systems by Friday,"
    ],
-   "instructions_checked": true
-  },
-  {
-   "id": "17e71a11c730",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Japan Airlines suffers third-party data breach exposing passenger info",
-   "link": "https://www.bleepingcomputer.com/news/security/japan-airlines-suffers-third-party-data-breach-exposing-passenger-info/",
-   "published": "2026-10-29T22:08:04+00:00",
-   "summary": "Japan Airlines (JAL) has announced that a data breach at Amadeus's Passenger Service System exposed the data of about 92,000 customers.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/29/aircraft.jpg",
-   "cves": [],
-   "first_seen": "2026-10-29T22:45:37.049463+00:00",
-   "image_checked": true,
-   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -4390,28 +4432,6 @@
    "first_seen": "2026-11-03T14:13:04.962203+00:00",
    "image_checked": true,
    "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "fe7730fa4068",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Polymarket halts trading after crypto-draining script breach, $2.5M traced",
-   "link": "https://www.bleepingcomputer.com/news/security/polymarket-halts-trading-after-crypto-draining-script-breach-25m-traced/",
-   "published": "2026-10-29T21:47:25+00:00",
-   "summary": "Prediction market platform Polymarket temporarily suspended trading on Thursday after hackers compromised a third-party service to distribute cryptocurrency-draining JavaScript, with approximately $2.5 million in assets traced to a suspected attacker wallet.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/29/polymarket-crypto.jpg",
-   "cves": [],
-   "first_seen": "2026-10-29T22:05:28.323280+00:00",
-   "image_checked": true,
-   "instructions": [
-    "DebugBear has since confirmed that it is investigating an ongoing security incident and warned customers to remove its monitoring JavaScript from their websites.",
-    "\"If you use our RUM product, please remove the embed code from your website.\"",
-    "Hudson Rock's researchers also discovered Polymarket production build metadata containing the commit message, \" chore(polymarket): remove debugbear rum script (#15337) ,\" indicating that the platform had removed the DebugBear monitoring integration.",
-    "BleepingComputer has contacted Polymarket and DebugBear with questions about the incident and will update this article if we receive a response."
-   ],
    "instructions_checked": true
   },
   {
@@ -4903,6 +4923,22 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt850556f866500627/654a5a8e05eb4d040a046894/325351_DR23_Graphics_General_Large_Text_v1.png?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-05T17:41:52.623426+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "c5d8bcb2d057",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "US Government Email Systems Open to Abuse Thanks to Typos",
+   "link": "https://www.darkreading.com/cybersecurity-operations/us-government-email-systems-abuse-typos",
+   "published": "2026-11-05T21:35:05+00:00",
+   "summary": "Erroneous or outdated DNS records can give attackers surprising powers over organizations' email systems.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltd6ea448209c5a17d/6aece801ba5b3c3c708d8893/_gov-PashalIgnatov-Getty.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-05T22:16:50.878981+00:00",
    "instructions": [],
    "instructions_checked": true
   },
