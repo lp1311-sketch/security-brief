@@ -513,6 +513,24 @@
    "instructions_checked": true
   },
   {
+   "id": "49bf8b366c47",
+   "source": "krebs",
+   "source_name": "KrebsOnSecurity",
+   "official": false,
+   "source_type": "news",
+   "title": "Want to Rent an Internet Address at the White House?",
+   "link": "https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/",
+   "published": "2026-11-05T04:36:17+00:00",
+   "summary": "Several staffers at the White House are using computers or mobile devices equipped with residential proxy services that render their internet address available for others to rent, security experts warned today. One of the proxy services is a Russian company whose founder’s web hosting business was ground zero for…",
+   "image": "https://krebsonsecurity.com/wp-content/uploads/2026/11/synthient-whitehouse.png",
+   "cves": [],
+   "first_seen": "2026-11-05T05:24:36.629126+00:00",
+   "instructions": [
+    "In January 2026, dozens of proxy services were forced to patch their networks after Synthient Founder Ben Brundage showed how cybercriminals were abusing a vulnerability in these residential proxy services to seize control over devices inside the local networks of unsuspecting users."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "c84faf9461ad",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -2183,7 +2201,7 @@
    "title": "APT29-Linked Hackers Hijack Web Analytics Script to Deliver iOS and Android Exploits",
    "link": "https://thehackernews.com/2026/11/apt29-linked-hackers-hijack-web.html",
    "published": "2026-11-04T14:27:52+00:00",
-   "summary": "The Russia-linked threat actor known as APT29 is said to be behind a large-scale watering hole campaign targeting iOS and Android users through compromised websites, fake domains, and a supply chain attack involving a Ukrainian web analytics service called Plerdy SEO Tracker. \"The injected JavaScript code collects…",
+   "summary": "The Russia-linked threat actor known as APT29 is presumed to be behind a large-scale watering hole campaign targeting iOS and Android users through compromised websites, fake domains, and a supply chain attack involving a Ukrainian web analytics service called Plerdy SEO Tracker. \"The injected JavaScript code collects…",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhx1cus2o8fkYGLhQu9BfPgGtAUwnmTAMucLagfAodBuRoYnyxGIJKgpqtKFyCSV-WSG3pDqmPujhj-iwoOZB-zF8JjbQMrLzDHYtdTPA3hD3Kc3rqYQM4CQwkICwZkh8K6O8ZSt-WAA_PBoUA6lHwh_55dbDlKizsjzcTN847c9BSHsWHmrAP42JHRHIYS/s1600/ios-exploit.jpg",
    "cves": [],
    "first_seen": "2026-11-04T15:14:33.228079+00:00",
@@ -2681,6 +2699,27 @@
    "first_seen": "2026-11-02T07:23:10.547789+00:00",
    "instructions": [
     "\"The bundle is the ONLY permissible source of facts; your training knowledge must never supply a fact about the subject,\" reads a line from the prompt."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "25c3eda20cfe",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "OpenAI AI Pipeline Generates 948 Linux Root Escalation Exploits in 30-Hour Run",
+   "link": "https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html",
+   "published": "2026-11-05T04:31:16+00:00",
+   "summary": "OpenAI on Wednesday detailed a pipeline that employed an upcoming cyber-focused artificial intelligence (AI) model to validate and patch 948 local privilege escalation vulnerabilities in Linux for $1.2 million in API costs. \"Our prototype identified and analyzed 2,308 candidate Linux kernel findings, dynamically…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEje4ZiJMrWCzkoOXuOcWQkB02TmQLM81NWPvzQ8yw9iComqPyLIP0_TAzy8AHMkNfzyXw2Fw-8kBhWIohuXc_dGl39AI4Kw_n4Tll0DImNrRfcPrk1eZNQCP9QtOich_dhNW-ly5DIuZSzmWspWsWXU9QiGwnS5W7qzVDiIBVc4oggC__f6tsL1AOIP8opc/s1600/linux-lpe.jpg",
+   "cves": [],
+   "first_seen": "2026-11-05T05:24:36.629126+00:00",
+   "instructions": [
+    "\"For the near and medium term, having access to a low-privileged account on an operating system that isn't up-to-date on its latest available patches should be considered functionally equivalent to root access for a well-resourced threat actor.\"",
+    "OpenAI on Wednesday detailed a pipeline that employed an upcoming cyber-focused artificial intelligence (AI) model to validate and patch 948 local privilege escalation vulnerabilities in Linux for $1.2 million in API costs.",
+    "Patch generation, where agents generate patches for the identified vulnerability",
+    "Human review, where security researchers review the exploit, patch, and proposed severity before it's reported to the maintainers"
    ],
    "instructions_checked": true
   },
