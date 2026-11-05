@@ -1768,29 +1768,6 @@
    "instructions_checked": true
   },
   {
-   "id": "083a1ea7d205",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Cisco Patches Actively Exploited ASA and FTD VPN Flaw That Can Crash Firewalls",
-   "link": "https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html",
-   "published": "2026-10-29T10:44:46+00:00",
-   "summary": "Cisco has released patches to address a high-severity security flaw in Secure Firewall Adaptive Security Appliance (ASA) Software and Secure Firewall Threat Defense (FTD) Software that it said has been exploited in the wild. The vulnerability, tracked as CVE-2026-76418, is rated 8.6 on the CVSS scoring system…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKqTkl_DfXdrvaLinBOu5OU0NISVo_mPJfqRmnHL-m8efFXEijbxOVsFgrSPparCspKfoUtxDtfA7gu8myFTfvWCFJfse3BQakKGOZCA54pWh371KyXdluHyqjckIBFjZ36Ogv1EI42yDCO2dt02noigEyL2RKJ8lEivH3PCWJURryc1JtNO9djpeW88tJ/s1600/cisco-flaws.jpg",
-   "cves": [
-    "CVE-2026-76418"
-   ],
-   "first_seen": "2026-10-29T11:43:24.190225+00:00",
-   "instructions": [
-    "As a temporary mitigation, the company is recommending that customers turn off the tunnel group list if DefaultWEBVPNGroup does not use secondary authentication, or disable secondary authentication on any user-configured tunnel group list or on the default tunnel group, DefaultWEBVPNGroup.",
-    "\"This vulnerability is due to logic errors when secondary authentication is configured on a tunnel group,\" it said in a Wednesday advisory.",
-    "\"If tunnel-group-list enable is configured, check all tunnel groups, including the default tunnel group, DefaultWEBVPNGroup, for secondary-authentication-server-group,\" Cisco said.",
-    "\"If tunnel-group-list enable is absent or has been removed using the no tunnel-group-list enable command, check the default tunnel group, DefaultWEBVPNGroup, for secondary-authentication-server-group because disabling the group list does not remove exposure when that default group uses secondary authentication.\""
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "21ad2182a136",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1822,27 +1799,6 @@
    "cves": [],
    "first_seen": "2026-10-29T16:34:44.710577+00:00",
    "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "cf3544e85171",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "GitHub Launches npm Firewall to Block Malicious Packages Before Installation",
-   "link": "https://thehackernews.com/2026/10/github-launches-npm-firewall-to-block.html",
-   "published": "2026-10-29T10:26:33+00:00",
-   "summary": "GitHub has announced that it's introducing a new package firewall as a preview to block installation of suspicious npm packages during installation time. \"The firewall inspects both metadata requests and package downloads for signs of malicious activity, acting as an install-time policy gate,\" GitHub said. The…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJ7hXo0MoiQiXCSLnOj0h2YUqDhIHl13Le4XxOU3UxV7X2mm4_YGJKOT6akyW58uRaMhslGN6NY9B_1u7V-y_fy0kYJHKoVA-yBWVt53xqBk06_syRpASgWezvnVIZs9goRlwNrp_HMVj_Pu8rzXmIsfJBV1YzhJ8IAd-1g7FFVhFWqc9HegTk4Jok5kR9/s1600/github.gif",
-   "cves": [],
-   "first_seen": "2026-10-29T11:43:24.190225+00:00",
-   "instructions": [
-    "Block known malware by checking against the GitHub Advisory Database for active malware advisories",
-    "The firewall then checks package downloads against policy controls such as minimum package age and malware advisories, and blocks downloads that do not meet those policies.",
-    "Block packages based on the severity of vulnerabilities by checking the GitHub Advisory Database for flaws that affect the requested package version.",
-    "GitHub has announced that it's introducing a new package firewall as a preview to block installation of suspicious npm packages during installation time."
-   ],
    "instructions_checked": true
   },
   {
@@ -2086,6 +2042,27 @@
     "\"This makes it possible for unauthenticated attackers to execute code on the server during the upgrade window.\"",
     "The WordPress security company noted that successful exploitation requires an \"attacker to hit a very narrow window while WordPress is unpacking a complete Core update.\"",
     "The issue boils down to the fact that affected versions unpack new files part of a full-package Core update into a predictable directory under \"wp-content/upgrade.\" This copy also includes the WordPress installer."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "1981b067cd83",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "5 Active Cyber Threats That Put US Enterprises at Risk in October 2026",
+   "link": "https://thehackernews.com/2026/11/5-active-cyber-threats-that-put-us.html",
+   "published": "2026-11-05T10:06:19+00:00",
+   "summary": "October 2026 brought another wave of cyber threats targeting US businesses, with attackers exploiting trusted platforms, legitimate authentication processes, and everyday business workflows. For enterprises, these campaigns raise the stakes beyond individual security incidents, increasing the risk of financial losses…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZC8n70grf1uGE8ms7f_4uuZv5h_YLLS1M8CGyqXzMyfCTbNbBCwOC4IF715IzuXyE7dY2Sslf1v77Ka15CPZvgY15pcZrZPZRK5xk5pFnyotvxHAXeyD39vG7JedceJz97Z1y0LCwaWgRLVnO6Uo-YbgJJ3o1n_Hh7k1rJWaQ-X7FTTMxr0U-LFuwx0M/s1600/cyberattacks.jpg",
+   "cves": [],
+   "first_seen": "2026-11-05T11:03:22.867396+00:00",
+   "instructions": [
+    "Use ANY.RUN's Interactive Sandbox to uncover hidden malware behavior and auto-generate a detailed Tier 1 report with clear evidence and response recommendations, helping teams contain threats faster and reduce costly incident recovery.",
+    "To protect your organization: Restrict unnecessary device-code authentication through Microsoft Entra Conditional Access and investigate suspicious indicators beyond the initial alert.",
+    "To protect your organization: Approve trusted AI applications, restrict unauthorized installations, and verify unexpected event invitations.",
+    "To protect your organization: Enable Microsoft Defender Tamper Protection and monitor unauthorized security exclusions, suspicious PowerShell activity, and firewall changes."
    ],
    "instructions_checked": true
   },
@@ -3025,6 +3002,28 @@
    "first_seen": "2026-11-04T20:17:10.617243+00:00",
    "image_checked": true,
    "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "350327fdd7cd",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Chainalysis warns all users hit in cyber breach involving ‘agentic’ techniques",
+   "link": "https://therecord.media/chainalysis-all-users-hit-by-agentic-cyberattack",
+   "published": "2026-11-05T00:00:00+00:00",
+   "summary": "Chainalysis, the blockchain analytics company, said Wednesday night that some information belonging to all its users — which its website says include those in the law enforcement and national security sectors — had been exposed in a cyberattack.",
+   "image": "https://cms.therecord.media/uploads/Chainalysis_logo_on_laptop_file_photo_by_Alexander_Martin_2d4097e7d9.png",
+   "cves": [],
+   "first_seen": "2026-11-05T11:03:22.867396+00:00",
+   "image_checked": true,
+   "instructions": [
+    "In its latest update , posted Wednesday night, the company said it had discovered “certain customer information including names, usernames, password hashes and live tokens for all Chainalysis users were exposed to a malicious actor.”",
+    "All users will have to reset their passwords and rotate API keys as appropriate, the company said, also urging affected customers to visit its login page directly rather than follow links in password-reset emails.",
+    "Customers who had just been instructed to reset their passwords were told doing so was not immediately possible.",
+    "Customers would then be able to reset passwords and rotate API keys."
+   ],
    "instructions_checked": true
   },
   {
@@ -5762,26 +5761,6 @@
    "instructions_checked": true
   },
   {
-   "id": "13fcb9283069",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Cisco SD-WAN Zero-Day Exploitation Tied to Volt Typhoon’s ‘Silent Train’ Network",
-   "link": "https://www.securityweek.com/cisco-sd-wan-zero-day-exploitation-tied-to-volt-typhoons-silent-train-network/",
-   "published": "2026-10-29T10:29:25+00:00",
-   "summary": "Cisco Talos linked SD-WAN key-stealing malware to infrastructure overlapping Volt Typhoon’s Silent Train network, which Lumen detailed. The post Cisco SD-WAN Zero-Day Exploitation Tied to Volt Typhoon’s ‘Silent Train’ Network appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/06/Cisco-network-switch-exploit.webp",
-   "cves": [],
-   "first_seen": "2026-10-29T10:48:10.806652+00:00",
-   "image_checked": true,
-   "instructions": [
-    "iOS, macOS 27.2 Patch 286 Bugs; Fix for Exploited Flaw Backported to iOS 18",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "5c6c31b6a9d3",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -6009,26 +5988,6 @@
    "instructions_checked": true
   },
   {
-   "id": "dac38c362139",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Hackers Steal 2.6 Million Records From Sony’s Japanese ISP So-net",
-   "link": "https://www.securityweek.com/hackers-steal-2-6-million-records-from-sonys-japanese-isp-so-net/",
-   "published": "2026-10-29T11:00:00+00:00",
-   "summary": "The data of So-net and Plala customers in Japan was exposed, along with 54,401 email account passwords and 16 bank account records. The post Hackers Steal 2.6 Million Records From Sony’s Japanese ISP So-net appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/10/Sony-So-net.jpeg",
-   "cves": [],
-   "first_seen": "2026-10-29T11:43:24.190225+00:00",
-   "image_checked": true,
-   "instructions": [
-    "iOS, macOS 27.2 Patch 286 Bugs; Fix for Exploited Flaw Backported to iOS 18",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "fcadd0dd5cf0",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -6245,6 +6204,25 @@
    "instructions_checked": true
   },
   {
+   "id": "89af0224359d",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "OpenAI Finds GPT-6 Astra Quietly Holding Back on Internal Red-Teaming, Exploit Tasks",
+   "link": "https://www.securityweek.com/openai-finds-gpt-6-astra-quietly-holding-back-on-internal-red-teaming-exploit-tasks/",
+   "published": "2026-11-05T10:02:00+00:00",
+   "summary": "OpenAI says its Critical-rated cyber model met fewer hidden task goals when work was framed as AI safety research, often silently. The post OpenAI Finds GPT-6 Astra Quietly Holding Back on Internal Red-Teaming, Exploit Tasks appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/11/OpenAI.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-05T11:03:22.867396+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "f9c39fb133ac",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -6392,6 +6370,28 @@
    "instructions_checked": true
   },
   {
+   "id": "68af6446b07c",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Russia-Linked Hackers Hit iOS, Android Devices With Exploit Chains via Watering Holes",
+   "link": "https://www.securityweek.com/russia-linked-hackers-hit-ios-android-devices-with-exploit-chains-via-watering-holes/",
+   "published": "2026-11-05T10:37:13+00:00",
+   "summary": "The large-scale watering hole campaign has been targeting entities in the US and Europe, mainly in Ukraine. The post Russia-Linked Hackers Hit iOS, Android Devices With Exploit Chains via Watering Holes appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2024/10/Midnight-Blizzard-Russia-1024x576.png",
+   "cves": [],
+   "first_seen": "2026-11-05T11:03:22.867396+00:00",
+   "image_checked": true,
+   "instructions": [
+    "On Wednesday, CISA added the flaw to its KEV catalog , telling federal agencies to patch it within two weeks.",
+    "Midnight Blizzard’s last exploit chain targets Android users via CVE-2026-3910, a Chrome vulnerability patched in March as a zero-day, and CVE-2025-27038, a Qualcomm bug patched with Android’s August 2025 security update.",
+    "Android’s November 2026 Updates Patch Over 200 Vulnerabilities",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "f0c80b908a88",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -6491,6 +6491,30 @@
     "Risk management leaders educate people on measuring exposure, testing assumptions and advising on how best to prepare for incidents they hope won’t occur.",
     "Risk management is more than recommending a set of analytical frameworks.",
     "The parallel with cyber governance should be handled carefully, but it is useful."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "806a92e4d68b",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Zyxel Switch Hacks Blamed on Patched Flaw Actually Exploited a Zero-Day",
+   "link": "https://www.securityweek.com/zyxel-switch-hacks-blamed-on-patched-flaw-actually-exploited-a-zero-day/",
+   "published": "2026-11-05T10:56:41+00:00",
+   "summary": "Tracked as CVE-2026-107441, the out-of-bounds write flaw could allow attackers to execute OS commands via crafted HTTP requests. The post Zyxel Switch Hacks Blamed on Patched Flaw Actually Exploited a Zero-Day appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/09/switch-router.webp",
+   "cves": [
+    "CVE-2026-107441"
+   ],
+   "first_seen": "2026-11-05T11:03:22.867396+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Zyxel rolled out fixes for it on October 23 and published an advisory on November 3.",
+    "Advisories and version numbers certainly help, but they cannot be blindly trusted.",
+    "Android’s November 2026 Updates Patch Over 200 Vulnerabilities",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
   },
