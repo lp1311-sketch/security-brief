@@ -1616,45 +1616,6 @@
    "instructions_checked": true
   },
   {
-   "id": "5a570ea1e7c2",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Webinar: How to Build AI Threat Readiness Into Your Security Operations",
-   "link": "https://thehackernews.com/2026/08/learn-how-to-build-security-operations.html",
-   "published": "2026-10-29T11:39:41+00:00",
-   "summary": "Security teams have spent years trying to detect threats faster. AI is changing the harder part: how much time defenders have left to act. Advanced AI models can now help attackers discover vulnerabilities, generate exploit code, and move through weaknesses faster than traditional security processes were built to…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRqwLeHISYWaiVNUxkANuqw6ob8Exu7_9CIEt6uHbsNa7mcNUkSWZqNZHEL3_kqPPHXVq4RGTxqZZhMdybwcVVT28qCihLUi0I5ghW9Xk5sVDB2u2kJqULx-_FEcsEHuTCU5vIwReQZghbj8HjQD4zq8H1yiGSYNlmNC25YkViZxlqndOhIp1CD2s_sLlc/s1600/wiz-webinar.jpg",
-   "cves": [],
-   "first_seen": "2026-10-29T12:21:56.545939+00:00",
-   "instructions": [
-    "It is to remove delays caused by fragmented tools, repetitive investigation, and unclear ownership."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "c9e7c513e143",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "26,400 Valid Cloud and AI Credentials Found Exposed in Public Gitee Repositories",
-   "link": "https://thehackernews.com/2026/10/26400-valid-cloud-and-ai-credentials.html",
-   "published": "2026-10-29T11:33:15+00:00",
-   "summary": "26,400 credentials that developers left in public code on Gitee, a Chinese code-hosting service, still worked when a researcher tested them. Anyone who copied one from that code could have used it. Independent researcher Ben Zimmermann found them by scanning 7.25 million public Gitee repositories and reported the…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwVszv5076OudfiraNA4yh_XuzZZof-jYaklwUgiY700oPMvBHQfKHx-8yLNwhF9NVXahFRvWwU7c0mPCsIG-GUo45Fi_LT6ecZMsaRUfaLIL6eK16qeku1PO5aMTQRV0VKJh-pjKG4rC-RyajCGjL4R_A5W6YPsps4B4-GhEbstuAN7AnelVJPwIFK5W-/s1600/gite.jpg",
-   "cves": [],
-   "first_seen": "2026-10-29T12:21:56.545939+00:00",
-   "instructions": [
-    "OpenAI: rotate the key immediately from the API Keys page, as OpenAI advises , and set spend limits to help limit charges from a leaked key.",
-    "Teams that rely on a single scanner should verify its detectors against the services they use.",
-    "Treat any key that has ever been in a public Gitee repository as exposed, and revoke it at the provider.",
-    "Deleting a key from the code or rewriting the repository's history does not revoke it , as noted by TruffleHog's maker, Truffle Security."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "e8eb82345a00",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1918,48 +1879,6 @@
     "The only fix TeamViewer offers is to update, and it lists no workaround.",
     "The flaw affects all versions before 15.83, including 15.82, the security update TeamViewer released in September .",
     "The same 15.83 update also fixes two other high-severity flaws in the same bulletin, including a separate code-execution flaw affecting Linux and macOS."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "dd1c518d70f0",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Telegram Android Flaw Lets Attackers Run Code When Users Answer Voice Calls",
-   "link": "https://thehackernews.com/2026/10/telegram-android-flaw-lets-attackers.html",
-   "published": "2026-10-29T11:39:18+00:00",
-   "summary": "A flaw in Telegram for Android could be chained with two other bugs to take full control of a victim's phone through a voice call, once the victim answered, according to security startup NebuSec. The attacker needed only an ordinary Telegram account. Telegram fixed the flaw in version 12.10.4 of the app, released in…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEguzUg6G-A4KdRvBuhj9LZ93cFfXfvMNkg3dJO0H9sfNJ3MTlecsgLEMIk5TnIrdl2N6UGB8D9rlqLduGEZVm7X-XrWZr6Xh5ZrVp38x5uTd1vHyHGcjRR2N3gctNen-CBSz8JihnNL57galBoeOVKwG5w3qsOZnqmGYdkxzjurrI3QWolmS1Qfz_E_Wog/s1600/telegram.jpg",
-   "cves": [],
-   "first_seen": "2026-10-29T12:21:56.545939+00:00",
-   "instructions": [
-    "Anyone using Telegram for Android should make sure the app is on version 12.10.4 or later.",
-    "That code did not handle missing fields correctly and accessed memory it should not, according to NebuSec.",
-    "Separately, the Zero Day Initiative (ZDI) published an advisory on October 15 about an unpatched flaw in rlottie, the library Telegram apps have used to draw animated stickers.",
-    "Telegram had told ZDI in March that checks on its servers mitigated the flaw, and in April asked ZDI for a full remote code execution chain."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "e6aa25e9694d",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "The Rise of the Threat Operator: How AI Will Redefine Security Operations and Careers",
-   "link": "https://thehackernews.com/2026/10/the-rise-of-threat-operator-how-ai-will.html",
-   "published": "2026-10-29T11:33:41+00:00",
-   "summary": "AI is beginning to take over much of the work that has traditionally defined the security analyst's job. Investigating alerts, collecting evidence, correlating activity across tools, and executing response actions are becoming tasks that AI systems can perform on their own. As these capabilities mature, security…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDZvKBLpFrPhWNRvVvRjmTtgwdpGykJjCmzNWNaytIUO2C9VadEDZjeY35hq6H33jHDxV7kAOMTyOV7RO_YUG2caQ75nA_NstH_GxfRJo57n970u4ACXwZXoKl8mizESwgP9wulusqUmSnZwjFNHIJZ2hk_VzrlCJ5HBD9_8zs8Fj1WZULiZoZMD9G9D8/s1600/conf.jpg",
-   "cves": [],
-   "first_seen": "2026-10-29T12:21:56.545939+00:00",
-   "instructions": [
-    "They determine which risks deserve attention, what the defense should accomplish, how much autonomy AI should have, and when a decision requires human intervention.",
-    "A Threat Operator must understand those dependencies and determine how the response should proceed, balancing containment requirements with operational risk.",
-    "AI agents could assess the institution's exposure, hunt for relevant activity, identify gaps in existing detections, and recommend defensive actions.",
-    "They must understand the organization's architecture, critical assets, operational dependencies, and relevant adversaries, and know how to communicate that context to AI agents."
    ],
    "instructions_checked": true
   },
@@ -3531,6 +3450,25 @@
    "instructions_checked": true
   },
   {
+   "id": "260025e601bb",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Ukraine fires two senior security officials amid corruption probe into scam call centers",
+   "link": "https://therecord.media/ukraine-fires-senior-security-officials-amid-scam-center-corruption-investigation",
+   "published": "2026-11-05T00:00:00+00:00",
+   "summary": "Ukraine's security service has fired two senior officials amid a corruption investigation into an alleged criminal network that bribed law enforcement officers to protect fraudulent call centers and other illegal operations.",
+   "image": "https://cms.therecord.media/uploads/File_photo_of_Ukraine_s_SBU_608eb01175.png",
+   "cves": [],
+   "first_seen": "2026-11-05T11:57:44.737948+00:00",
+   "image_checked": true,
+   "instructions": [
+    "According to Ukraine's National Police, scammers frequently impersonate bank employees, law enforcement officers or financial advisers."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "7bca49cdf4ec",
    "source": "therecord",
    "source_name": "The Record",
@@ -3986,28 +3924,6 @@
     "Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies to patch a high-severity Linux kernel privilege escalation bug that attackers are chaining with the PHP2Shell flaws in the wild.",
     "CISA added CVE-2026-46300 to its Known Exploited Vulnerabilities (KEV) Catalog on Wednesday and ordered federal agencies to patch their systems by Saturday 10, as mandated by its Binding Operational Directive (BOD) 26-04.",
     "CISA warns feds to fully patch actively exploited Cisco flaws"
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "409f0b0486b7",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "New Cisco firewall zero-day exploited to crash SSL VPN devices",
-   "link": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-firewall-zero-day-exploited-to-crash-ssl-vpn-devices/",
-   "published": "2026-10-29T11:10:13+00:00",
-   "summary": "Cisco released security updates to patch a denial-of-service zero-day in Adaptive Security Appliance (ASA) and Threat Defense (FTD) software that attackers are exploiting to remotely crash vulnerable firewall devices.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/29/Cisco-headpic.jpg",
-   "cves": [],
-   "first_seen": "2026-10-29T11:43:24.190225+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Cisco strongly recommends that customers upgrade to a fixed software release to remediate this vulnerability.\"",
-    "Cisco advised customers to patch vulnerable firewalls after its Product Security Incident Response Team (PSIRT) discovered evidence that the flaw was being exploited in the wild earlier this month.",
-    "While Cisco provided no workarounds that address this security issue, admins who can't immediately patch CVE-2026-76418 can mitigate it by disabling secondary authentication on the default DefaultWEBVPNGroup tunnel group or on any user-configured tunnel group list.",
-    "Cisco released security updates to patch a denial-of-service zero-day in Adaptive Security Appliance (ASA) and Threat Defense (FTD) software that attackers are exploiting to remotely crash vulnerable firewall devices."
    ],
    "instructions_checked": true
   },
@@ -5756,6 +5672,27 @@
     "So, whenever a new attack technique is recognized, defenders must respond immediately by writing a new Quarry rule that can be used by all organizations everywhere.",
     "A rule that passes in a coding agent should behave the same way at runtime.",
     "Adobe, Veeam, Juniper Networks Patch Critical Vulnerabilities",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "a190c692796e",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "CISO Conversations: Ryan Davis – The Unknown Is Where Security Meets Reality",
+   "link": "https://www.securityweek.com/ciso-conversations-ryan-davis-the-unknown-is-where-security-meets-reality/",
+   "published": "2026-11-05T11:00:00+00:00",
+   "summary": "Ryan Davis went from hacking his school’s network to running security at New Charter Technologies. What worries him now is shadow AI. The post CISO Conversations: Ryan Davis – The Unknown Is Where Security Meets Reality appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/11/CISO-Ryan-Davis.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-05T11:57:44.737948+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Its core purpose is to apply advanced technology to solve critical national security problems, and cybersecurity is one of its focuses.",
+    "CISOs must be technicians to know how to protect data, and businesspeople to know what data to protect most heavily.",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
