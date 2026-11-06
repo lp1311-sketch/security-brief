@@ -1635,27 +1635,6 @@
    "instructions_checked": true
   },
   {
-   "id": "bfec2004bdb1",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "TeamViewer Flaw Lets Remote Computers Attack Users Who Connect to Control Them",
-   "link": "https://thehackernews.com/2026/10/teamviewer-flaw-lets-remote-computers.html",
-   "published": "2026-10-30T15:17:28+00:00",
-   "summary": "TeamViewer has fixed a flaw that lets the machine being controlled in a remote session attack the computer that connected to control it. In a TeamViewer session, the computer that connects and takes control is the viewer, and the machine it controls is the host. A malicious or compromised host can exploit the flaw to…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEge-ZayNgwlu4fhpD2BSyGgkMYehkV0atRJINisISPLpiubkgyXopa4NWVnxOZs9gi-DEYTNEQ5G2pu-X5iSHyMp8pguzp-Q6g-1-mGwcy3so4AkeuYFuYoaotOcmF5A-2oVDvnxd0B_FaZ7JJt8W3zrNFot6kBlJp7WffHkb7m92C9bNQnwFLwnNgXpDk/s1600/teamviewer-flaw.jpg",
-   "cves": [],
-   "first_seen": "2026-10-30T16:48:15.418520+00:00",
-   "instructions": [
-    "The same 15.83 update fixes two other flaws in that bulletin that do affect the Host, so people running the Host should update as well.",
-    "The only fix TeamViewer offers is to update, and it lists no workaround.",
-    "The flaw affects all versions before 15.83, including 15.82, the security update TeamViewer released in September .",
-    "The same 15.83 update also fixes two other high-severity flaws in the same bulletin, including a separate code-execution flaw affecting Linux and macOS."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "1981b067cd83",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2813,7 +2792,7 @@
    "source_name": "The Record",
    "official": false,
    "source_type": "news",
-   "title": "CEO-spoofing scammers indicted for using AI to help steal more than $100 million",
+   "title": "CEO-spoofing scammers used AI to help steal more than $100 million, feds say",
    "link": "https://therecord.media/ceo-spoofing-scammers-charged",
    "published": "2026-11-06T14:30:00+00:00",
    "summary": "The U.S. is working on extraditing three suspects from Europe in a case involving more than $100 million in fraud from CEO impersonations.",
@@ -3989,6 +3968,26 @@
    "instructions_checked": true
   },
   {
+   "id": "3647bbef0072",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "IMSI vs IMEI: What Your Phone Broadcasts and Who Can Read It",
+   "link": "https://www.bleepingcomputer.com/news/security/imsi-vs-imei-what-your-phone-broadcasts-and-who-can-read-it/",
+   "published": "2026-11-06T15:00:10+00:00",
+   "summary": "IMSI and IMEI are IDs your phone shares with networks. Learn how they differ, how attackers get them, and why rotating your IMSI blunts tracking.",
+   "image": "https://www.bleepstatic.com/content/posts/2026/11/04/cell-tower-header.jpg",
+   "cves": [],
+   "first_seen": "2026-11-06T15:50:25.426237+00:00",
+   "image_checked": true,
+   "instructions": [
+    "The Wi-Fi and Bluetooth radios share hardware addresses, which modern phones randomize or rotate to reduce tracking.",
+    "A fake tower hijacks your paging channel to block the network’s pages, and a single silent call then makes the carrier send your IMSI over the air where the attacker captures it."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "357136bfe66d",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4360,6 +4359,28 @@
    "instructions_checked": true
   },
   {
+   "id": "af6d1b8b9d25",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Veeam warns of Software Appliance boot failures on AMD EPYC hosts",
+   "link": "https://www.bleepingcomputer.com/news/security/veeam-software-appliance-vms-fail-to-boot-on-amd-epyc-hosts/",
+   "published": "2026-11-06T15:25:31+00:00",
+   "summary": "​Veeam warned customers about boot failures affecting Software Appliance virtual machines (VMs) on hosts with AMD EPYC processors.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/06/Veeam.jpg",
+   "cves": [],
+   "first_seen": "2026-11-06T15:50:25.426237+00:00",
+   "image_checked": true,
+   "instructions": [
+    "However, as the company explained in a Wednesday advisory, these VMs will fail to boot and will crash with a kernel panic after failing an early-boot FIPS-mode jitterentropy check on some AMD EPYC processors.",
+    "If the appliance cannot be redeployed on a system with an unaffected processor, IT admins are advised to disable automatic updates for the appliance and install updates manually (while monitoring the VM as it reboots).",
+    "\"A Veeam Software Appliance (Linux-based Veeam Backup & Replication) virtual machine running on a host with an AMD EPYC processor intermittently fails to boot after a reboot, including a reboot that follows an update that installs a new kernel,\" it said .",
+    "To mitigate this issue, Veeam told IT administrators to redeploy the appliance to a Linux host with a different processor."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "de7887560061",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4683,22 +4704,6 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt61b6b950560b6729/6a974efda0ff3877b64d75b3/philippines-south-china-sea-map-AustralianCamera-shutterstock.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-04T02:51:07.827141+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "47e04300a373",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "L’Italia è afflitta da vulnerabilità informatiche, senza una causa chiara",
-   "link": "https://www.darkreading.com/cybersecurity-analytics/cyber-vulnerabilities-besiege-italy-italian",
-   "published": "2026-10-30T15:39:54+00:00",
-   "summary": "I ricercatori non riescono a spiegare del tutto perché le minacce informatiche in Italia siano così diverse rispetto a quelle di qualsiasi altro Paese.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt0dafcf0847efff9a/6ae24fff8ec8cff4371f87c5/rome-Sean_Gallup-GettyImages-623337092jpg.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-10-30T15:50:54.232772+00:00",
    "instructions": [],
    "instructions_checked": true
   },
@@ -5078,23 +5083,6 @@
    "instructions_checked": true
   },
   {
-   "id": "7b310c119f82",
-   "source": "schneier",
-   "source_name": "Schneier on Security",
-   "official": false,
-   "source_type": "news",
-   "title": "Bloatware in Aftermarket Auto Parts",
-   "link": "https://www.schneier.com/blog/archives/2026/10/bloatware-in-aftermarket-auto-parts.html",
-   "published": "2026-10-30T15:20:02+00:00",
-   "summary": "This story is interesting: One Civic owner purchased a cheap aftermarket head unit off Amazon, and decided to have Claude work its magic on it, like it would a smart TV. What was reportedly discovered isn’t surprising, but is worth knowing about. Among the pre-installed bloatware—­or spyware, if you’re being less…",
-   "image": null,
-   "cves": [],
-   "first_seen": "2026-10-30T15:50:54.232772+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "0a89691e7bed",
    "source": "schneier",
    "source_name": "Schneier on Security",
@@ -5141,6 +5129,23 @@
    "image": null,
    "cves": [],
    "first_seen": "2026-11-03T12:59:11.349315+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "a5d2f46564bf",
+   "source": "schneier",
+   "source_name": "Schneier on Security",
+   "official": false,
+   "source_type": "news",
+   "title": "Pinpointing Location of Videos from Background Airplane Sounds",
+   "link": "https://www.schneier.com/blog/archives/2026/11/pinpointing-location-of-videos-from-background-airplane-sounds.html",
+   "published": "2026-11-06T14:57:48+00:00",
+   "summary": "This is fascinating: The video describes a technique that can reveal where an otherwise unidentifiable recording was made by analyzing its audio for the faint sounds of passing aircraft. The technique is both fascinating and frightening. It works by looking at Doppler curves, which plot the way a plane’s sound changes…",
+   "image": null,
+   "cves": [],
+   "first_seen": "2026-11-06T15:50:25.426237+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -5884,27 +5889,6 @@
    "instructions": [
     "According to Moelans, a software update is not enough to fully resolve the weakness, and the affected equipment also needs to be physically modified.",
     "According to Beaumont, many of the devices are end-of-life and have no available patch.",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "5ec9d44a0613",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "PHP2Shell Attacks Root Palo Alto Firewalls but Fail Against WordPress",
-   "link": "https://www.securityweek.com/php2shell-attacks-root-palo-alto-firewalls-but-fail-against-wordpress/",
-   "published": "2026-10-30T15:09:25+00:00",
-   "summary": "Over 22.6 million exposed instances are potentially affected by the critical PHP flaws that have been targeted for over a week. The post PHP2Shell Attacks Root Palo Alto Firewalls but Fail Against WordPress appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/10/php-exploit-code.webp",
-   "cves": [],
-   "first_seen": "2026-10-30T15:50:54.232772+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Active exploitation has been observed targeting the Palo Alto Networks management interface exposed to the internet,” the company notes in its advisory .",
-    "Adobe, Veeam, Juniper Networks Patch Critical Vulnerabilities",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
