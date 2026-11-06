@@ -121,6 +121,27 @@
    "instructions_checked": true
   },
   {
+   "id": "9ed3b44bda29",
+   "source": "ars",
+   "source_name": "Ars Technica Security",
+   "official": false,
+   "source_type": "news",
+   "title": "Meet *sshole, the vulnerability that lets hackers SSH into Linux devices",
+   "link": "https://arstechnica.com/security/2026/11/vulnerability-allows-attackers-to-log-into-some-linux-devices-sans-password/",
+   "published": "2026-11-05T23:09:36+00:00",
+   "summary": "Devices running some configurations of Alpine Linux, and possibly other distributions, are affected by a decade-old vulnerability that allows attackers to log into devices with no password. The vulnerability exists in the interaction between OpenSSH, the code library implementing SSH connections, and musl, a…",
+   "image": "https://cdn.arstechnica.net/wp-content/uploads/2017/05/getty-hacking-1152x648.jpg",
+   "cves": [],
+   "first_seen": "2026-11-06T00:01:55.469077+00:00",
+   "instructions": [
+    "Further, OpenSSH using musl (pronounced muscle) must not use PAM (pluggable authentication modules), a framework that handles user authentication and account-access checks.",
+    "First, a system must have at least one user account that’s accessible using a password that is hashed using the SHA256 or SHA512 functions.",
+    "Second, the target system account must be configured to be passwordless, by way of specifying a “*” in the password field in /etc/shadow, the Linux file where password hashes are stored.",
+    "Without it, the attack fails.” Company researchers said their testing also showed that the account must be active, not just hold a hash."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "865fa666afda",
    "source": "windows-blog",
    "source_name": "Windows Experience Blog",
@@ -2859,25 +2880,6 @@
    "instructions_checked": true
   },
   {
-   "id": "2b8459f0048f",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Binance hit by record $6.3 billion crypto hack, scrambles to freeze funds",
-   "link": "https://therecord.media/binance-hit-by-record-6-billion-crypto-hack",
-   "published": "2026-10-30T00:00:00+00:00",
-   "summary": "Binance, the world's largest cryptocurrency exchange, confirmed that it had been hacked in a $6.3 billion heist that blockchain investigators are blaming on North Korea.",
-   "image": "https://cms.therecord.media/uploads/vadim_artyukhin_92_Bit_C3_QEU_unsplash_c14e5f899e.jpg",
-   "cves": [],
-   "first_seen": "2026-10-30T10:20:24.097567+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Its most recent snapshot showed reserves of more than 100% across the listed assets, meaning customers should be fully backed."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "c12f1b8dac80",
    "source": "therecord",
    "source_name": "The Record",
@@ -3502,23 +3504,6 @@
    "image": "https://blogapp.bitdefender.com/hotforsecurity/content/images/2026/10/dhs-leak.jpeg",
    "cves": [],
    "first_seen": "2026-10-30T11:19:00.626898+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "7363e725b55a",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "OpenAI doubles ChatGPT Pro usage limits after backlash over planned 50% cut",
-   "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-doubles-chatgpt-pro-usage-limits-after-backlash-over-planned-50-percent-cut/",
-   "published": "2026-10-29T23:35:52+00:00",
-   "summary": "OpenAI says it won't reduce usage limits for the $100, $200, and $500 ChatGPT Pro plans, as well as Business Premium, and it also promised to keep Dots usage independent.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2023/11/08/ChatGPT.jpg",
-   "cves": [],
-   "first_seen": "2026-10-29T23:57:29.779952+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
