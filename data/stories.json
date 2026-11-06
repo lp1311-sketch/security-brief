@@ -396,6 +396,27 @@
    "instructions_checked": true
   },
   {
+   "id": "dda1288f7519",
+   "source": "borncity",
+   "source_name": "Born's IT and Windows Blog",
+   "official": false,
+   "source_type": "news",
+   "title": "Sicherheits-Gau: SSHHole (CVE-2026-123158) ermöglicht Root-Zugriff durch lange Zeichenkette",
+   "link": "https://borncity.com/blog/2026/11/06/sicherheits-gau-sshhole-ermoeglicht-root-zugriff-durch-lange-zeichenkette/",
+   "published": "2026-11-06T07:37:17+00:00",
+   "summary": "Gerade glaubst Du, php2shell & Co. sowie die Angriffe auf die Kühlketten / IoT-Systemen hinter dir gelassen zu haben, schießt eine neue Sicherheitslücke um die nächste Ecke. Bei OpenSSH reicht es, eine lange Zeichenkette einzugeben, um Root-Zugriff zu bekommen. Trifft … Weiterlesen → Quelle",
+   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
+   "cves": [
+    "CVE-2026-123158"
+   ],
+   "first_seen": "2026-11-06T10:43:04.674605+00:00",
+   "image_checked": true,
+   "instructions": [
+    "November 2026 um 11:22 Uhr Das grep über den message log hilft aber nur bedingt, wenn der Eindringling nicht längst das Log gelöscht hat und sich einen zweiten (oder dritten Weg) zur Persistenz nach dem Patch eingerichtet hat."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "6f421f1330c7",
    "source": "google-threat-intel",
    "source_name": "Google Threat Intelligence",
@@ -1709,24 +1730,6 @@
    "first_seen": "2026-10-31T06:02:03.283555+00:00",
    "instructions": [
     "The web infrastructure and security company said it autonomously mitigated 18.2 million network-layer (L3) DDoS attacks and 14.4 trillion HTTP DDoS requests in the third quarter of 2026."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "6734aa3aec6c",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Syrian Hacker Behind Fake Tweet That Triggered $136 Billion Market Drop Gets 42 Months in Prison",
-   "link": "https://thehackernews.com/2026/10/syrian-hacker-behind-fake-tweet-that.html",
-   "published": "2026-10-30T10:40:45+00:00",
-   "summary": "Ahmad Umar Agha, a Syrian Electronic Army hacker known online as \"Th3Pr0,\" has been sentenced by a U.S. federal court to 42 months in prison for his role in a hacking conspiracy that targeted Western news outlets. The conspiracy was organized and led by members of former Syrian President Bashar al-Assad's inner…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxhyw9NKYcR8Nkb28O8I-MA0sr3NhXC_Xr7gjpFqZKFd-29F8pGa5TCuIL2GTBPLAPzQ9iW5DsU_2zK-pUWIar_TdJdKiQMsptNjA-XxvVwMACBSQR9tW_qAC8d7I21YdqraYoY5LdWCRE8vKXjrxYCEW8X7ZbPulwCzdTdxODqnMuJbqQUZStRMRiKHc/s1600/tweets.jpg",
-   "cves": [],
-   "first_seen": "2026-10-30T12:57:02.135868+00:00",
-   "instructions": [
-    "Twitter's message confirming a password reset for that account was sent to a Gmail account used primarily by Agha, the affidavit says."
    ],
    "instructions_checked": true
   },
@@ -3476,23 +3479,6 @@
    "instructions_checked": true
   },
   {
-   "id": "1f8f175397bf",
-   "source": "grahamcluley",
-   "source_name": "Graham Cluley",
-   "official": false,
-   "source_type": "news",
-   "title": "Hackers leak personnel data of 41,000+ Homeland Security staff, including ICE and border agents",
-   "link": "https://www.bitdefender.com/en-us/blog/hotforsecurity/hackers-leak-41-000-dhs-staff-data",
-   "published": "2026-10-30T10:33:50+00:00",
-   "summary": "The US Department of Homeland Security has had the details of more than 41,000 staff, including ICE and CBP agents, published online. Not ideal for an organisation with \"Security\" in its name. Read more in my article on the Hot for Security blog.",
-   "image": "https://blogapp.bitdefender.com/hotforsecurity/content/images/2026/10/dhs-leak.jpeg",
-   "cves": [],
-   "first_seen": "2026-10-30T11:19:00.626898+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "d15dc155427a",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -3824,28 +3810,6 @@
     "Recipients of the notifications are advised to check website files for unauthorized changes, review webmail forwarding rules and filters, and change passwords on any other accounts where they may be using the same credentials.",
     "This follows the American web hosting provider and domain registrar's announcement that it suffered a cybersecurity incident requiring users to reset their email and FTP/SFTP passwords.",
     "To mitigate the risks from this exposure, DreamHost offers impacted individuals one year of credit monitoring and identity theft protection through Equifax."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "eaaaa83e33fa",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Drupal warns of critical Commerce Core flaw exploited in attacks",
-   "link": "https://www.bleepingcomputer.com/news/security/drupal-warns-of-critical-commerce-core-flaw-exploited-in-attacks/",
-   "published": "2026-10-30T10:16:07+00:00",
-   "summary": "Drupal warned admins to patch a critical access bypass vulnerability in the Commerce Core module that attackers are exploiting in the wild.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/15/Drupal.jpg",
-   "cves": [],
-   "first_seen": "2026-10-30T10:20:24.097567+00:00",
-   "image_checked": true,
-   "instructions": [
-    "\"This module enables you to sell goods and services to customers through an included shopping cart and checkout form or through decoupled applications via APIs,\" Drupal said in a Wednesday advisory tagged as highly critical.",
-    "Two weeks ago, Drupal patched two more remote code execution security issues (CVE-2026-108097 and CVE-2026-108099) that could allow threat actors to execute code remotely, and urged admins to apply updates as soon as possible because attackers could develop exploits \"within hours or days.\"",
-    "Drupal warned admins to patch a critical access bypass vulnerability in the Commerce Core module that attackers are exploiting in the wild.",
-    "The Drupal security team asked admins on the 3.x branch to upgrade immediately to Commerce Core 3.3.13 (or Commerce Core 8.x-2.41 for earlier versions) and audit orders for inconsistencies, since threat actors are exploiting this vulnerability in attacks."
    ],
    "instructions_checked": true
   },
@@ -5946,6 +5910,25 @@
    "image": "https://www.securityweek.com/wp-content/uploads/2025/11/OpenAI.jpeg",
    "cves": [],
    "first_seen": "2026-11-05T11:03:22.867396+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "3a73b8fccf35",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "OpenAI Model Wrote Its Own Network Code to Get Around Sandbox Restrictions",
+   "link": "https://www.securityweek.com/openai-model-wrote-its-own-network-code-to-get-around-sandbox-restrictions/",
+   "published": "2026-11-06T09:33:51+00:00",
+   "summary": "After its sandbox proxy failed, an internal OpenAI model crafted raw packets and probed AWS services trying to reach the internet. The post OpenAI Model Wrote Its Own Network Code to Get Around Sandbox Restrictions appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2023/01/Cybersecurity_News-SecurityWeek.jpg",
+   "cves": [],
+   "first_seen": "2026-11-06T10:43:04.674605+00:00",
    "image_checked": true,
    "instructions": [
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
