@@ -5174,6 +5174,27 @@
    "instructions_checked": true
   },
   {
+   "id": "e2845eccbac1",
+   "source": "msblog",
+   "source_name": "Microsoft Security Blog",
+   "official": false,
+   "source_type": "vendor_blog",
+   "title": "Threat actors use agentic AI tooling to find and abuse exposed secrets",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/05/threat-actors-use-agentic-ai-tooling-to-find-and-abuse-exposed-secrets/",
+   "published": "2026-11-05T23:46:50+00:00",
+   "summary": "Microsoft Threat Intelligence has observed threat actors using an agentic AI offensive framework to search public GitHub repositories for exposed secrets, including credentials, application credentials, and AI inference-related API keys across multiple applications and cloud services. These threat actors can then use…",
+   "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/11/AI-tooling-scanning-secrets-attack-chain.webp",
+   "cves": [],
+   "first_seen": "2026-11-06T03:14:24.231642+00:00",
+   "instructions": [
+    "Microsoft recommends the following mitigation steps to contain, detect, and investigate this threat.",
+    "Microsoft recommends the following mitigations to reduce the impact of this threat.",
+    "In addition to removing the secrets from the code base, affected organizations should immediately rotate any exposed keys or credentials.",
+    "Microsoft recommends that developers migrate OAuth applications away from secret-based authentication ."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "1a39a444dba6",
    "source": "msblog",
    "source_name": "Microsoft Security Blog",
@@ -5277,6 +5298,25 @@
    "image_checked": true,
    "instructions": [
     "Adobe, Veeam, Juniper Networks Patch Critical Vulnerabilities",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "5d7c1511e0dd",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "3 Charged in Scheme to Use AI to Impersonate CEOs and Attorneys to Steal $129 Million",
+   "link": "https://www.securityweek.com/3-charged-in-scheme-to-use-ai-to-impersonate-ceos-and-attorneys-to-steal-129-million/",
+   "published": "2026-11-06T03:03:29+00:00",
+   "summary": "The trio, who have nicknames that include “Rocky Balboa,” “Superman Cash” and “Fat Boy,” often targeted the companies’ accounting departments. The post 3 Charged in Scheme to Use AI to Impersonate CEOs and Attorneys to Steal $129 Million appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2023/01/Cybersecurity_News-SecurityWeek.jpg",
+   "cves": [],
+   "first_seen": "2026-11-06T03:14:24.231642+00:00",
+   "image_checked": true,
+   "instructions": [
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
