@@ -1599,24 +1599,6 @@
    "instructions_checked": true
   },
   {
-   "id": "46d8d781bead",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Chinese Hackers Use AI-Powered ARTEX to Target Over 200 Organizations Worldwide",
-   "link": "https://thehackernews.com/2026/10/chinese-hackers-use-ai-powered-artex-to.html",
-   "published": "2026-10-30T16:58:44+00:00",
-   "summary": "Chinese state-sponsored threat actors have been observed using a Go-based artificial intelligence (AI)-powered penetration testing framework called ARTEX in attacks aimed at high-value targets simultaneously. The activity has been attributed by CrowdStrike to a China-based \"targeted intrusion adversary\" it tracks…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiP1M46Z4Xs0qNHz9xzhTea14XsqTHvNhAfnGb4Ni9goHQR2ypz3BLKRgu-WxWD8VSUNMB3YAP7UhcCAK1AweCc3lC-7VlJ-OqNniD4FvZdE_R-XJkkRadhl2tp3-PqbKPWmQTeJ3a3gvd1kHH_zaW06tCf9cH-7k5feNqHrqbChMAsc5K3hruiX9BDROAe/s1600/CS.jpg",
-   "cves": [],
-   "first_seen": "2026-10-30T18:20:54.181137+00:00",
-   "instructions": [
-    "This breadth likely enables a single operator to apply a wider range of techniques against more targets at once than would be feasible through manual operations.\""
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "21ad2182a136",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2167,6 +2149,29 @@
    "instructions_checked": true
   },
   {
+   "id": "a40dff3d749a",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Hackers Target OpenSSH SSHole Flaw Within Hours of Disclosure, Gain Root on Honeypot",
+   "link": "https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html",
+   "published": "2026-11-06T15:21:49+00:00",
+   "summary": "Threat actors are attempting to exploit a recently disclosed security flaw impacting OpenSSH that can enable sign-ins to accounts that have no password set, according to Previdian. The vulnerability, tracked as CVE-2026-123158 (CVSS score: 8.1) and codenamed SSHole (or *sshole), impacts Linux systems that run OpenSSH…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHbl1TAGj_ZHZDF3oQ8AfebRDiovg_d8Wk4huY5VJkSa0csE45G7k5jwdG1De-W-7l2RjnyH_ZvT3vcioykVeOooifwvViM8RiuTu0gSt2t-XgOefyYKyM5_zbsI5WFNubkIT0hOUr4inPIQMvXs6GDTLa6j7XWL3etRJYvOcDLJxa3IDXv-KtuCma5JsG/s1600/ssh.jpg",
+   "cves": [
+    "CVE-2026-123158"
+   ],
+   "first_seen": "2026-11-06T17:49:20.026994+00:00",
+   "instructions": [
+    "Alpine is also recommending that users investigate \"Accepted password for\" log entries involving accounts that should not accept password logins.",
+    "Affected users are advised to install OpenSSH 10.6p2 or their distribution's patched package, and then restart sshd.",
+    "Threat actors are attempting to exploit a recently disclosed security flaw impacting OpenSSH that can enable sign-ins to accounts that have no password set, according to Previdian .",
+    "The underlying issue dates back to a patch introduced in 2016 to fix a username enumeration vulnerability tracked as CVE-2016-6210 ."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "ed60ea7fa412",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2205,6 +2210,27 @@
     "Polymarket's status page links a form for anyone who thinks their amount is wrong or that they should have received a payment.",
     "Polymarket posted its first status update about unauthorized activity in user wallets at 17:38 UTC.",
     "The company said it removed the script \"within the hour.\" It also cleared every cache, reset all active login sessions and paused trading until the site was clean."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "9fe769e3c933",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Installing the Fix for an Exploited WordPress Flaw Can Expose Some Sites One Last Time",
+   "link": "https://thehackernews.com/2026/11/installing-fix-for-exploited-wordpress.html",
+   "published": "2026-11-06T16:08:38+00:00",
+   "summary": "Some WordPress sites can still be attacked while they install the fix for an actively exploited flaw, according to Umut Bayram, the Picus Security researcher who found it. The update that installs the fix still unpacks its files using the site's old, unpatched code, so an attacker who strikes at the right moment can…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4gwg9bgmxLj_anXtQvOZdeKYWN-aAZxZqlOrI7wXwZ_qW_lUZrzwYufexnbDLcC20eXBkh7TgA-dAQHm6EEmEc80i9A6GOBGkiOb8NhcR1d1CFLKDLc7VJzyC4Bv-5Ye2AEE_ApPcKmAWqJJFfbQ2AOGffKhCPNznyYyz5s0Jro-mxcTxfxPoqRe-ZoY/s1600/wp-update.jpg",
+   "cves": [],
+   "first_seen": "2026-11-06T17:49:20.026994+00:00",
+   "instructions": [
+    "WordPress released the fix last week in version 7.1.4 and in matching updates for older branches back to 4.7, all listed in its security advisory .",
+    "The researcher advises blocking web access to the site's wp-content/upgrade folder before updating.",
+    "The researcher's first recommendation is to stop the web server from serving wp-content/upgrade at all.",
+    "The researcher says the flaw goes back to WordPress 2.7, released in 2008, and that those sites should move to a supported version."
    ],
    "instructions_checked": true
   },
@@ -2366,6 +2392,24 @@
     "OpenAI on Wednesday detailed a pipeline that employed an upcoming cyber-focused artificial intelligence (AI) model to validate and patch 948 local privilege escalation vulnerabilities in Linux for $1.2 million in API costs.",
     "Patch generation, where agents generate patches for the identified vulnerability",
     "Human review, where security researchers review the exploit, patch, and proposed severity before it's reported to the maintainers"
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "17e04fbcf2b3",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "OpenAI Launches GPT-6 Cyber After AI Helps Find 81 Firefox Flaws, 948 Linux Exploits",
+   "link": "https://thehackernews.com/2026/11/openai-launches-gpt-6-cyber-after-ai.html",
+   "published": "2026-11-06T14:58:32+00:00",
+   "summary": "OpenAI on Thursday unveiled GPT‑6 Cyber, which it described as a major step forward in security research that brings together stronger cybersecurity capabilities with a step-change improvement in model alignment. The new model is \"more capable at finding and fixing vulnerabilities, and far more reliable staying within…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXR9F1Fu-E50zYby7QnTXAX324GHruNgN0_-95ygoUQV94WlkKSNHt1n8Af8HANmBe6GYgt_1-jGJzGNdg6NnoWY_Jrfbxjyv8mSQzOCa_t7e-e5S8DEB32YavCpthT2pB3jQsFRNJ69bgOgph9qyCBppvb93YSsYSzBM1P9CdeO_rhMcF4LgCj-kQvY2C/s1600/gpt-cyber.jpg",
+   "cves": [],
+   "first_seen": "2026-11-06T17:49:20.026994+00:00",
+   "instructions": [
+    "Google, for its part, has introduced new capabilities to CodeMender, its autonomous code-security agent, to facilitate secure isolation and flexible scanning, while adding human-in-the-loop checks for local write and command execution to mitigate the risks of malicious exploits."
    ],
    "instructions_checked": true
   },
@@ -2905,6 +2949,23 @@
     "“The more a user interacts with a certain type of content, the more TikTok’s ‘For You’ feed algorithm recommends similar content.",
     "In particular, the Commission said it wants TikTok to base its algorithmic recommendations on what users explicitly say they want rather than on implicit signals such as how long they view videos for."
    ],
+   "instructions_checked": true
+  },
+  {
+   "id": "88525575b645",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "FBI agent pleads guilty to stealing $2.4 million in crypto from nation-state hackers",
+   "link": "https://therecord.media/fbi-agent-pleads-guilty-to-stealing-from-nation-state-hackers",
+   "published": "2026-11-06T16:53:00+00:00",
+   "summary": "Patrick Steven Yaroch, 37, is facing up to 20 years in prison on wire fraud and money laundering charges after admitting to using his position on an FBI investigative squad to steal more than $2.4 million in cryptocurrency to cover his debts.",
+   "image": "https://cms.therecord.media/uploads/fbi_613c45ceeb.jpg",
+   "cves": [],
+   "first_seen": "2026-11-06T17:49:20.026994+00:00",
+   "image_checked": true,
+   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -4197,6 +4258,28 @@
    "first_seen": "2026-11-03T14:13:04.962203+00:00",
    "image_checked": true,
    "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "c4daeac5c98c",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "QNAP says hackers breaching NAS devices in Plex2Shell attacks",
+   "link": "https://www.bleepingcomputer.com/news/security/qnap-says-hackers-breaching-nas-devices-in-plex2shell-attacks/",
+   "published": "2026-11-06T17:04:23+00:00",
+   "summary": "QNAP urges users to update Plex Media Server to the latest version available in the QNAP App Center, as hackers are exploiting the Plex2Shell vulnerability chain.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/06/QNAP.jpg",
+   "cves": [],
+   "first_seen": "2026-11-06T17:49:20.026994+00:00",
+   "image_checked": true,
+   "instructions": [
+    "\"QNAP has received reports from some users that Plex Media Server on their NAS appears to have been compromised through [Plex2Shell] vulnerabilities, and QNAP Technical Support is assisting the affected users,” the company says in an advisory today.",
+    "CISA added all four flaws to its Known Exploited Vulnerabilities catalog on October 20, 2026, urging federal agencies to upgrade to Plex 1.43.3.10861 or later within three days, giving it maximum priority.",
+    "QNAP advises users to update Plex Media Server to the latest version available through the QNAP App Center, currently 1.43.3.10861, to protect against Plex2Shell attacks.",
+    "QNAP says that users should treat their NAS devices and all personal content as compromised if they're running a vulnerable Plex server that is exposed on the public web."
+   ],
    "instructions_checked": true
   },
   {
