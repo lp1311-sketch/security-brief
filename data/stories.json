@@ -1713,27 +1713,6 @@
    "instructions_checked": true
   },
   {
-   "id": "6d2a0802c49f",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Hackers Actively Exploit Highly Critical Drupal Commerce Core Authorization Bypass Flaw",
-   "link": "https://thehackernews.com/2026/10/hackers-actively-exploit-highly.html",
-   "published": "2026-10-30T07:45:30+00:00",
-   "summary": "Drupal has warned that threat actors are exploiting a \"highly critical\" security flaw in its Commerce Core component. The vulnerability, tracked as CVE-2026-118539 (CVSS score: N/A), is a case of missing authorization affecting Commerce Core versions from 0.0.0 to 2.41 and from 3.0.0 to 3.3.13. \"This module enables…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitgPkf4uToEgXwcfmDEKipEveRL2l0PEz6WIegAc2uWyf5_khO7Scgu6MpWHRovED7S-4sKJb4o88JsJT8NI8zB8WCBo04Q9TrEVNJa-08EbxP_zdPkaA7wsBEPIjXbApW1StdY8JunSewAi9TNrAcMwYZjqSsVktddqQ0uIi8-rUzXq1LMMLBHBdccapz/s1600/drupal-rce.jpg",
-   "cves": [
-    "CVE-2026-118539"
-   ],
-   "first_seen": "2026-10-30T08:55:40.801665+00:00",
-   "instructions": [
-    "Users are being recommended to update to the latest version -",
-    "\"This module enables you to sell goods and services to customers through an included shopping cart and checkout form or through decoupled applications via APIs,\" Drupal said in an advisory."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "ad2cc061f552",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2026,6 +2005,27 @@
    "first_seen": "2026-11-03T17:20:53.929523+00:00",
    "instructions": [
     "The starting point has been traced back to a supply chain attack targeting one of its engineers from the Wallet DevOps team (named \"Engineer A\"), who downloaded a trojanized Homebrew installer to install a popular artificial intelligence (AI) tool after searching for it on a search engine."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "6facdf5f94df",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Chainalysis Breach Exposes All Users' Credentials, Forces Shutdown of Key Services",
+   "link": "https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html",
+   "published": "2026-11-06T08:04:49+00:00",
+   "summary": "Blockchain analysis firm Chainalysis has revealed that its ongoing investigation into the agentic cyber attack targeting its systems also exposed names, usernames, password hashes and live tokens for all users. \"While we investigated, we removed access to Reactor and Data Solutions,\" the company said. \"At this time we…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoSpb8lu1ytakNne4rJ58nWfLFrYtdR7MCyZ2prSaLKiAb2Bt_upvfAHl-slDTt_3h7zxFdhbPcLwzAkcHDjnvu2TNcVp6JsgJU6GI5GMvZrrmzZTUZDyeOhS0GnFV-YtazzzcgMFnUvkqKmpSr9FBrCXQhlyPZM9E8c7LPSxACwPhfJ4nFzIANqdaVXUd/s1600/chain-breach.jpg",
+   "cves": [],
+   "first_seen": "2026-11-06T08:39:40.238443+00:00",
+   "instructions": [
+    "\"For customers who just received an email from us instructing you to reset your Chainalysis password, resetting this password won't be possible right now,\" it noted.",
+    "\"We still encourage you, where necessary, to reset your password on other systems where you may be reusing credentials.\"",
+    "From there, users can reset their passwords and rotate API keys to register transactions.",
+    "\"We will require additional protections to access accounts, including that every user will have to reset passwords and rotate API keys as appropriate."
    ],
    "instructions_checked": true
   },
@@ -5037,22 +5037,6 @@
    "instructions_checked": true
   },
   {
-   "id": "f6a72b86d81b",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "As Russia's Cyberwar Evolves, Belarus Steps Forward",
-   "link": "https://www.darkreading.com/physical-security/russia-cyber-war-belarus-steps-forward",
-   "published": "2026-10-30T08:00:00+00:00",
-   "summary": "The \"FrostyNeighbor\" advanced persistent threat (APT) launched a destructive attack in Ukraine and is raising concerns about deeper alignment with Russian cyber objectives.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltd600d33b7bbbc448/6ae39a9b20628a26ab67c66f/Belarus_Russia_flags-Oleksii_Liskonih-GettyImages-1089909770.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-10-30T08:32:58.716169+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "ad4296e15ebc",
    "source": "msblog",
    "source_name": "Microsoft Security Blog",
@@ -5322,27 +5306,6 @@
    "first_seen": "2026-11-06T03:14:24.231642+00:00",
    "image_checked": true,
    "instructions": [
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "3bb9ba7c2b0a",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "$6 Billion Binance Hack Bears Hallmarks of North Korea’s TraderTraitor",
-   "link": "https://www.securityweek.com/6-billion-binance-hack-bears-hallmarks-of-north-koreas-tradertraitor/",
-   "published": "2026-10-30T08:16:26+00:00",
-   "summary": "Blockchain analysts link the record crypto theft to North Korean hackers, as Binance probes a possibly compromised engineer laptop. The post $6 Billion Binance Hack Bears Hallmarks of North Korea’s TraderTraitor appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/10/Binance-hacked.jpeg",
-   "cves": [],
-   "first_seen": "2026-10-30T08:32:58.716169+00:00",
-   "image_checked": true,
-   "instructions": [
-    "iOS, macOS 27.2 Patch 286 Bugs; Fix for Exploited Flaw Backported to iOS 18",
-    "Adobe, Veeam, Juniper Networks Patch Critical Vulnerabilities",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
