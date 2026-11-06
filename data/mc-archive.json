@@ -1,6 +1,104 @@
 {
  "items": [
   {
+   "id": "275dd0dcc05e",
+   "title": "MC1540526: Microsoft Online Services Subprocessor Disclosure Update",
+   "link": "https://mc.merill.net/message/MC1540526",
+   "summary": "A Data Privacy message regarding your organization is available within Message Center. The contents of this message can be accessed within Message Center by a Global Administrator or someone designated as a Message Center Privacy Reader. Please sign in to Admin Center to view the details of this message in the M365…",
+   "published": "2026-11-05T23:58:55+00:00"
+  },
+  {
+   "id": "e215c23e9326",
+   "title": "MC1540513: Microsoft SharePoint Online and OneDrive for the web: Updated search experience with Copilot Search",
+   "link": "https://mc.merill.net/message/MC1540513",
+   "summary": "SharePoint Online and OneDrive on the web are updating to a unified Copilot Search experience with natural-language prompts, AI summaries, and filters. Rollout starts mid-October 2026 (preview) and mid-January 2027 (general). Users can opt out during preview; minimal action required from organizations.",
+   "published": "2026-11-05T23:11:29+00:00"
+  },
+  {
+   "id": "db9430f1bd95",
+   "title": "MC1269864: Microsoft Teams: New chat sections for muted and meeting chats",
+   "link": "https://mc.merill.net/message/MC1269864",
+   "summary": "Microsoft Teams will introduce two new chat sections—Muted chats (enabled by default) and Meeting chats (disabled by default)—to organize conversations. Rollout begins January 2027. Users can enable/disable and reorder these sections; no admin action is needed. Muted chats move automatically to their section unless…",
+   "published": "2026-11-05T21:51:00+00:00"
+  },
+  {
+   "id": "21fb541c67f7",
+   "title": "MC1540351: Microsoft Teams: Automatically add tag members to channels with Workflows",
+   "link": "https://mc.merill.net/message/MC1540351",
+   "summary": "Microsoft Teams will introduce a Workflows app template to automatically add users to channels when they are added to a team tag. This optional feature, rolling out worldwide in mid-December 2026, helps streamline access for location- or project-based groups without default changes.",
+   "published": "2026-11-05T21:23:22+00:00"
+  },
+  {
+   "id": "8f6a39de0e05",
+   "title": "MC1540349: Microsoft Teams: Decline incoming mobile calls with a message",
+   "link": "https://mc.merill.net/message/MC1540349",
+   "summary": "Microsoft Teams mobile users will soon be able to decline incoming calls with a predefined or custom message sent via Teams chat. This feature, rolling out worldwide in December 2026, enhances communication without answering calls. It applies only to Teams-to-Teams calls with available chat and requires no admin…",
+   "published": "2026-11-05T21:22:21+00:00"
+  },
+  {
+   "id": "70e3c7c1c84a",
+   "title": "MC1540348: Microsoft SharePoint: Data access governance report for group permissions",
+   "link": "https://mc.merill.net/message/MC1540348",
+   "summary": "Microsoft SharePoint is introducing a Data access governance report in the admin center to help administrators identify sites accessible to specific groups and assess access levels. Rolling out worldwide from late November to early December 2026, it aids in managing permissions and preventing unintended content…",
+   "published": "2026-11-05T21:21:40+00:00"
+  },
+  {
+   "id": "5a39cb8ddc47",
+   "title": "MC1540345: Action required: Update permissions for Exchange Online Admin API",
+   "link": "https://mc.merill.net/message/MC1540345",
+   "summary": "Microsoft is updating Exchange Online Admin API v2.0 permissions, replacing Exchange.ManageV2 and Exchange.ManageAsAppV2 with new permissions by November 2026. Affected applications must transition, obtain admin consent, verify RBAC roles, test, and remove old permissions to maintain access. No endpoint changes occur.",
+   "published": "2026-11-05T21:20:57+00:00"
+  },
+  {
+   "id": "d4826f35d01e",
+   "title": "MC1540342: Action required: Exchange Online Admin API MailboxFolderPermission response update",
+   "link": "https://mc.merill.net/message/MC1540342",
+   "summary": "Microsoft will update the Exchange Online Admin API v2.0 MailboxFolderPermission endpoint to return the User property as a structured object with DisplayName, Name, and PrimarySmtpAddress by early November 2026. Organizations must update applications to handle this change to avoid errors.",
+   "published": "2026-11-05T21:18:24+00:00"
+  },
+  {
+   "id": "e1c07b1ec731",
+   "title": "MC1540339: Microsoft Planner: Planner capabilities in Copilot Cowork through the Planner Plugin",
+   "link": "https://mc.merill.net/message/MC1540339",
+   "summary": "The Planner Plugin integrates Microsoft Planner with Copilot Cowork, enabling task prioritization, completion assistance, plan creation, visual reporting, and cross-Microsoft 365 work using Planner data. It rolls out worldwide by November 2026, requires appropriate licenses, and offers admin and user controls for…",
+   "published": "2026-11-05T21:16:48+00:00"
+  },
+  {
+   "id": "ef979aa52ec8",
+   "title": "MC1540330: Opal (Frontier) - UBB Notification",
+   "link": "https://mc.merill.net/message/MC1540330",
+   "summary": "Opal (Frontier) is a Microsoft 365 Computer Use Agent requiring admin-controlled access and usage-based billing for Copilot Credits. Rolling out November 9, 2026, it affects tenant admins and users. Admins must configure billing, assign spending policies, and review cost controls before rollout. No compliance issues…",
+   "published": "2026-11-05T21:12:57+00:00"
+  },
+  {
+   "id": "57abbdc75050",
+   "title": "MC1540327: Action required: Prepare users who can’t use passkeys for SMS and voice retirement",
+   "link": "https://mc.merill.net/message/MC1540327",
+   "summary": "Prepare users relying solely on Microsoft-provided SMS/voice MFA for sign-ins that don’t support passkeys by February 1, 2027 (non-admins) and July 1, 2027 (admins/external). Register compatible alternatives or configure customer-managed telephony to avoid sign-in blocks during phased retirement.",
+   "published": "2026-11-05T21:11:47+00:00"
+  },
+  {
+   "id": "acc261f6f769",
+   "title": "MC1540293: Sales agent in Microsoft 365 Copilot - Semantic model in Sales Agent",
+   "link": "https://mc.merill.net/message/MC1540293",
+   "summary": "We are announcing the ability to enable semantic model support for Sales Agent. This feature will reach general availability on November 17, 2026. How does this affect me? The semantic model signals help Sales Agent better understand CRM data structure, views, relationships, forms, and business terminology…",
+   "published": "2026-11-05T20:38:44+00:00"
+  },
+  {
+   "id": "43bdf6689e73",
+   "title": "MC1485169: Dynamics 365 Contact Center - Use role-based enforcement for recording and transcription downloads",
+   "link": "https://mc.merill.net/message/MC1485169",
+   "summary": "Update: Release of this feature has been postponed; we will announce a new date in the future. We are announcing the ability to use role-based enforcement for recording and transcription downloads in Dynamics 365 Contact Center. How does this affect me? This feature helps organizations better protect sensitive…",
+   "published": "2026-11-05T20:31:33+00:00"
+  },
+  {
+   "id": "2540dfe5529f",
+   "title": "MC1540258: Power Automate - Information regarding the end of support for Copilot in the designer for cloud flows or agent flows.",
+   "link": "https://mc.merill.net/message/MC1540258",
+   "summary": "On November 30, 2026, Copilot in the designer for cloud flows or agent flows will have reached end of support. How does this affect me? Makers will no longer be able to use Copilot in the designer for cloud flows or agent flows. This deprecation doesn't delete, move, or change existing cloud flows or agent flows…",
+   "published": "2026-11-05T19:58:32+00:00"
+  },
+  {
    "id": "7f5b62137939",
    "title": "MC1540110: Power Apps - Information regarding the end of support for AI-generated descriptions for model driven apps",
    "link": "https://mc.merill.net/message/MC1540110",
@@ -321,104 +419,6 @@
    "link": "https://mc.merill.net/message/MC1470887",
    "summary": "Microsoft Teams will introduce personal message reminders for chat and channel messages starting mid-November 2026, enabling users to create, manage, and receive notifications for reminders privately. The feature is enabled by default, requires no admin action, and supports desktop and mobile platforms.",
    "published": "2026-11-03T17:32:11+00:00"
-  },
-  {
-   "id": "e790c30c80d6",
-   "title": "MC1486293: Microsoft Defender for Office 365: Changes to Unified RBAC permission mapping for Microsoft Entra Security Operator role",
-   "link": "https://mc.merill.net/message/MC1486293",
-   "summary": "Microsoft is updating the Microsoft Defender for Office 365 Unified RBAC mapping for the Microsoft Entra Security Operator role, removing default access to email threat policies and Tenant Allow/Block List. Rollout starts December 2026. Organizations must manually assign permissions if continued access is needed.",
-   "published": "2026-11-03T17:23:50+00:00"
-  },
-  {
-   "id": "15cadee8efbf",
-   "title": "MC1529481: Microsoft PowerPoint: Prepare internal sales review Copilot skill",
-   "link": "https://mc.merill.net/message/MC1529481",
-   "summary": "Microsoft PowerPoint is introducing a new Copilot skill, Prepare internal sales review, to help users create executive sales summary presentations. The rollout began in late October 2026 and will complete by late November 2026, affecting PowerPoint on Windows, Mac, and web with no admin action required.",
-   "published": "2026-11-03T17:20:30+00:00"
-  },
-  {
-   "id": "05dc98743952",
-   "title": "MC1529477: Microsoft PowerPoint: Review sales pipeline Copilot skill",
-   "link": "https://mc.merill.net/message/MC1529477",
-   "summary": "Microsoft PowerPoint is introducing a new Copilot skill, Review sales pipeline, to help users create or update sales pipeline and forecast presentations. The feature is rolling out worldwide from late October to late November 2026 on Windows, Mac, and web, requiring no admin action or changes to data handling.",
-   "published": "2026-11-03T17:16:59+00:00"
-  },
-  {
-   "id": "90a32e91823a",
-   "title": "MC1529476: Microsoft PowerPoint: Draft proposal response Copilot skill",
-   "link": "https://mc.merill.net/message/MC1529476",
-   "summary": "Microsoft PowerPoint is introducing a new Copilot skill, Draft proposal response, to help users create customer-specific proposal drafts. The rollout began in late October 2026 and will complete by late November 2026. No admin action is needed, and it does not change data processing or AI interaction methods.",
-   "published": "2026-11-03T17:15:10+00:00"
-  },
-  {
-   "id": "7d1728b71655",
-   "title": "MC1529480: Microsoft PowerPoint: Prepare customer review deck Copilot skill",
-   "link": "https://mc.merill.net/message/MC1529480",
-   "summary": "Microsoft PowerPoint is introducing a new Copilot skill, Prepare customer review deck, to help users create QBR presentations focused on customer goals and outcomes. The rollout began in late October 2026 and will complete by late November 2026, with no admin action required or changes to data handling.",
-   "published": "2026-11-03T17:12:33+00:00"
-  },
-  {
-   "id": "95d41b5aec85",
-   "title": "MC1530595: Microsoft Copilot Feedback UX update",
-   "link": "https://mc.merill.net/message/MC1530595",
-   "summary": "Microsoft Copilot is updating the thumbs-down feedback to include selectable categories and optional comments for more actionable input. The rollout begins mid-November 2026 worldwide, affecting organizational, consumer, and education accounts on web, Windows, and macOS. No admin action is needed; data is stored per…",
-   "published": "2026-11-03T17:09:47+00:00"
-  },
-  {
-   "id": "f4b6a0bbe108",
-   "title": "MC1455014: Microsoft Teams: Teams Events Attendance and Engagement Report Policy",
-   "link": "https://mc.merill.net/message/MC1455014",
-   "summary": "Microsoft is introducing a new policy separating Teams Events attendance and engagement report controls from Teams Meetings, managed via CsTeamsEventsPolicy. Rollout starts mid-December 2026. Administrators can independently configure report access with multiple policy options. Review and update settings and…",
-   "published": "2026-11-03T17:05:43+00:00"
-  },
-  {
-   "id": "10b950ea59d4",
-   "title": "MC1521609: Create sales pitches with Copilot in PowerPoint",
-   "link": "https://mc.merill.net/message/MC1521609",
-   "summary": "A new Copilot skill in PowerPoint helps users create structured sales pitch presentations for various customer scenarios. It rolls out worldwide from late October to late November 2026 on Win32, Mac, and Web. No admin action or compliance concerns are required.",
-   "published": "2026-11-03T16:59:28+00:00"
-  },
-  {
-   "id": "b2297b33aae8",
-   "title": "MC1506318: Copilot Studio - Information regarding the end of support for selected AI models",
-   "link": "https://mc.merill.net/message/MC1506318",
-   "summary": "We are announcing the end of support for selected AI models on the Standard and GitHub Copilot harnesses in Copilot Studio. Beginning on each models' applicable migration date, the selected models will no longer be available in Copilot Studio, and agents will automatically migrate to a replacement model. How does this…",
-   "published": "2026-11-03T04:43:43+00:00"
-  },
-  {
-   "id": "a2e288600811",
-   "title": "MC1536158: Limits in Copilot Chat",
-   "link": "https://mc.merill.net/message/MC1536158",
-   "summary": "Microsoft is applying fair use limits to Copilot Chat features for users without a Microsoft 365 Copilot license, restricting access variably throughout the day. Limits affect web, desktop, and mobile apps, with notifications in-product. Admins cannot adjust limits but should inform help desk staff; no action is…",
-   "published": "2026-11-03T02:27:32+00:00"
-  },
-  {
-   "id": "78bd2f7c86d1",
-   "title": "MC1536163: Limits in Copilot Chat",
-   "link": "https://mc.merill.net/message/MC1536163",
-   "summary": "Microsoft is implementing fair use limits on Copilot Chat features for users without a Microsoft 365 Copilot license, starting November 9. Limits apply across platforms, vary daily, and cannot be adjusted by admins. Users will be notified in-product, and no action is required from organizations.",
-   "published": "2026-11-03T02:26:28+00:00"
-  },
-  {
-   "id": "e32e5462cdcc",
-   "title": "MC1536101: Power Platform - Newer GPT models replace Anthropic, Grok, and earlier GPT models",
-   "link": "https://mc.merill.net/message/MC1536101",
-   "summary": "We are updating the models available in prompts in Copilot Studio, Power Automate and Power Apps to bring newer OpenAI GPT models to the Basic, Standard, and Premium tiers, with no change to tier pricing. As part of this update, we’re retiring the Anthropic and Grok models and earlier GPT models listed below. Existing…",
-   "published": "2026-11-03T01:03:19+00:00"
-  },
-  {
-   "id": "11785f4ed9bf",
-   "title": "MC1536065: Microsoft 365 Copilot: Suggestions to continue in another Copilot experience",
-   "link": "https://mc.merill.net/message/MC1536065",
-   "summary": "Microsoft 365 Copilot Chat will suggest switching to a better-fit Copilot mode (e.g., Cowork) after a prompt, maintaining conversation context. This feature rolls out worldwide mid to late November 2026, affects users with access to supported modes, requires no admin action, and has no identified compliance issues.",
-   "published": "2026-11-03T00:14:24+00:00"
-  },
-  {
-   "id": "2e0b01f15af1",
-   "title": "MC1536062: Changes to Word, Excel, and PowerPoint agents in Microsoft Copilot",
-   "link": "https://mc.merill.net/message/MC1536062",
-   "summary": "Microsoft 365 Copilot will replace standalone Word, Excel, and PowerPoint agents with integrated document creation and editing in Copilot Chat. Rollout starts mid-November 2026, completing by late December. Users must start new chats for edits; no admin action is needed, and existing files and permissions remain…",
-   "published": "2026-11-03T00:13:51+00:00"
   }
  ]
 }
