@@ -64,26 +64,6 @@
    "instructions_checked": true
   },
   {
-   "id": "ff5ccffe8e2c",
-   "source": "ars",
-   "source_name": "Ars Technica Security",
-   "official": false,
-   "source_type": "news",
-   "title": "Hackers steal $6.3 billion from Binance in record crypto heist",
-   "link": "https://arstechnica.com/security/2026/10/hackers-steal-6-3-billion-from-binance-in-record-crypto-heist/",
-   "published": "2026-10-30T13:46:39+00:00",
-   "summary": "Binance has suspended all withdrawals after the world’s largest cryptocurrency exchange fell victim to what appears to be the biggest heist in history. The exchange put the “estimated total impact” of the hack at about $6.3 billion and said around $3 billion of affected assets, mainly stablecoins that act as cash for…",
-   "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/binance-1024x648.jpg",
-   "cves": [],
-   "first_seen": "2026-10-30T13:59:24.441115+00:00",
-   "instructions": [
-    "Richard Teng, co-chief executive of Binance, told customers that their “money is safe, and we’re covering every loss” from a reserve fund as well as “company funds.” Binance’s reserve fund holds about $1 billion worth of bitcoin, according to a company update from mid-October.",
-    "Some institutional investors in recent years have sought third-party custody arrangements in order to keep their funds elsewhere and mitigate the risks of their assets being stolen directly off the exchange.",
-    "The exchange, which became regulated in Abu Dhabi in December 2025, had already agreed to block UK customers from signing up for the exchange after being barred by Britain’s financial watchdog in 2021."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "bc594cd9fbf9",
    "source": "ars",
    "source_name": "Ars Technica Security",
@@ -2390,6 +2370,49 @@
    "instructions_checked": true
   },
   {
+   "id": "cea41b0360f6",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Malicious Browser Extensions Could Use Claude Dispatch to Run Code on Users' Computers",
+   "link": "https://thehackernews.com/2026/11/malicious-browser-extensions-could-use.html",
+   "published": "2026-11-06T12:06:35+00:00",
+   "summary": "A browser extension that can run scripts on claude.ai could make Claude Desktop run code on a person's computer, researchers at Forever Security, an endpoint security company, showed in a test. The attack needs Dispatch, a Claude feature that lets people send tasks from their phone to Claude Desktop. The flaw that…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEil2RWGFxPYdzFDr1Tl0G6604dLCacXJDMaR-i0nSdrR7vBGgK-lUkZbE5eZYMbWO0Geqw_rDbN2qUkWpEadukl6gccv-xuUWJfEOx2_FWFiZxjVs4uNPiRK3JYOBo0QI1Lx08xd9Iz3-8TFN_kf-njbCQ-AFDcLNNRy6JcwsZyoM12qLt99OzNQNhmaGs/s1600/claude-dispatch.jpg",
+   "cves": [],
+   "first_seen": "2026-11-06T13:54:07.503835+00:00",
+   "instructions": [
+    "The Dispatch help page says users should know how to quickly disconnect or revoke access before turning the feature on, but it does not explain how.",
+    "The extension could be malicious, a legitimate one that received a compromised update, or a legitimate one with a security flaw.",
+    "Claude then ran a global npm install, and the package's install script opened the Calculator app."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "649e0d8b078e",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Microsoft Paint RCE Fix Now Available, but Windows Update Won't Deliver It",
+   "link": "https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html",
+   "published": "2026-11-06T12:06:43+00:00",
+   "summary": "A fix for CVE-2026-83844, a remote code execution flaw in Windows Paint, is now in the Microsoft Store. Paint gets this fix only through a Store update, not through Windows updates. The fixed build, 11.2609.401.0, was the newest Paint build in all ten countries The Hacker News checked today. The flaw is an…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFEFFUv1MUNRoFx03Jcw0k5NZCU0EOf5qEpbvAEQoTSTzoxHWPk1rc7XgQeG1USPP9vVB0ePI_lzQLqBU5bHdQ7-YrwEXFo8gJwayqwCvCtcDrw1JYMxKYxieV3bcQeCRAJAxt8CRfifzMzL22_ab0Z0OxwWrNckC36gPEOnubZnzagv6DkV7iY4AQJfA/s1600/paint-rce.jpg",
+   "cves": [
+    "CVE-2026-83844"
+   ],
+   "first_seen": "2026-11-06T13:54:07.503835+00:00",
+   "instructions": [
+    "Microsoft's security advisory names 11.2609.401.0 as the fixed build.",
+    "As recently as last week, the advisory gave 11.2605.91.0 as the fixed build, according to a forum question on Microsoft Q&A.",
+    "The advisory's revision history still shows only its October 13 entry, with no note about the change.",
+    "An attacker could exploit the flaw by sending \"a specially crafted packet to an affected service over the network,\" the advisory says, but it does not name the service."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "9ca07b46843b",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -3056,26 +3079,6 @@
    "first_seen": "2026-11-04T19:25:24.028032+00:00",
    "image_checked": true,
    "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "bb609cd39a09",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "British spy agency cannot account for thousands of data storage devices, watchdog says",
-   "link": "https://therecord.media/gchq-cannot-account-for-thousands-of-data-devices",
-   "published": "2026-10-30T12:52:00+00:00",
-   "summary": "The Investigatory Powers Commissioner’s Office (IPCO) in its annual report for 2025, published Thursday, said it was “very concerned” and “disappointed with the time it has taken GCHQ to investigate” the issue.",
-   "image": "https://cms.therecord.media/uploads/MOSHED_2025_4_10_8_54_27_771c4518b9.jpg",
-   "cves": [],
-   "first_seen": "2026-10-30T13:59:24.441115+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Framing the issue as a record-keeping problem, rather than one of lost items, the spokesperson said IPCO was “right to note the flaws in the data the system produced, and we have taken action against all their recommendations.”",
-    "“We recognise the importance of security of removable media in our systems, and have a range of measures to mitigate the risks posed by these items,” they added. “The findings in the report have been addressed comprehensively and all necessary steps to correct this issue have been taken.”"
-   ],
    "instructions_checked": true
   },
   {
@@ -4027,26 +4030,6 @@
     "The company also advises customers to follow the instructions and update cPGuard to version 5.88.25 or later, and reset or rotate credentials that may have been exposed on potentially compromised servers.",
     "OpsShield notes that updating to the latest cPGuard version removes the backdoor and staged files; however, stolen credentials must be invalidated as soon as possible.",
     "The vendor also said that, as an extra precaution, it would release an update to remove previously installed OpsShield support-access keys."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "09382f93624b",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "CISA says max severity GitLab flaw now exploited in the wild",
-   "link": "https://www.bleepingcomputer.com/news/security/hackers-now-exploiting-max-severity-gitlab-flaw-in-attacks/",
-   "published": "2026-10-30T13:00:32+00:00",
-   "summary": "Attackers have started exploiting a maximum-severity GitLab vulnerability patched earlier this month, according to the US Cybersecurity and Infrastructure Security Agency (CISA).",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/12/GitLab.jpg",
-   "cves": [],
-   "first_seen": "2026-10-30T13:59:24.441115+00:00",
-   "image_checked": true,
-   "instructions": [
-    "GitLab addressed the security issue in GitLab Community Edition (CE) and Enterprise Edition (EE) versions 19.4.2, 19.3.5, and 19.2.8 and urged admins to patch their servers immediately.",
-    "Microsoft urges Entra ID admins to migrate users to passkeys"
    ],
    "instructions_checked": true
   },
@@ -5321,26 +5304,6 @@
    "instructions_checked": true
   },
   {
-   "id": "4119054fab74",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Bulletproof Host Virtualine Loses Its Domain to FBI Seizure",
-   "link": "https://www.securityweek.com/bulletproof-host-virtualine-loses-its-domain-to-fbi-seizure/",
-   "published": "2026-10-30T13:36:12+00:00",
-   "summary": "It allowed customers to host hack-for-hire services, supported ransomware and infostealer operators, and accepted crypto payments. The post Bulletproof Host Virtualine Loses Its Domain to FBI Seizure appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/10/Virtualine-seized.jpg",
-   "cves": [],
-   "first_seen": "2026-10-30T13:59:24.441115+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Adobe, Veeam, Juniper Networks Patch Critical Vulnerabilities",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "9c2441032957",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -5629,6 +5592,26 @@
    "instructions_checked": true
   },
   {
+   "id": "8694430c3bcd",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Grocery Giant Ahold Delhaize Estimates Financial Toll of October Cyberattack",
+   "link": "https://www.securityweek.com/grocery-giant-ahold-delhaize-estimates-financial-toll-of-october-cyberattack/",
+   "published": "2026-11-06T12:47:55+00:00",
+   "summary": "The October incident will cut fourth-quarter sales by up to €250 million and has led Ahold Delhaize to lower its 2026 outlook. The post Grocery Giant Ahold Delhaize Estimates Financial Toll of October Cyberattack appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2024/11/Ahold-Delhaize-cyberattack.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-06T13:54:07.503835+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Scroll to continue reading. “As part of our protocols to assess and mitigate cybersecurity incidents, we took some systems offline to help protect our IT environment.",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "5e82c4f3b3cc",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -5830,6 +5813,25 @@
    "image": "https://www.securityweek.com/wp-content/uploads/2023/01/Cybersecurity_News-SecurityWeek.jpg",
    "cves": [],
    "first_seen": "2026-11-06T10:43:04.674605+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "3ae40aec285b",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "OpenAI Says New GPT-6 Cyber Model Hunts Flaws Without Crossing the Line",
+   "link": "https://www.securityweek.com/openai-says-new-gpt-6-cyber-model-hunts-flaws-without-crossing-the-line/",
+   "published": "2026-11-06T13:19:52+00:00",
+   "summary": "Rated Critical for cybersecurity, OpenAI’s new model beats GPT-5.6 Cyber at exploitation while staying in scope more reliably. The post OpenAI Says New GPT-6 Cyber Model Hunts Flaws Without Crossing the Line appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/11/OpenAI-GPT.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-06T13:54:07.503835+00:00",
    "image_checked": true,
    "instructions": [
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
@@ -6102,6 +6104,28 @@
    "first_seen": "2026-11-03T09:55:33.212980+00:00",
    "image_checked": true,
    "instructions": [
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "3450626e3180",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "US Agencies Urge Organizations to Harden Refrigeration Controllers",
+   "link": "https://www.securityweek.com/us-agencies-urge-organizations-to-harden-refrigeration-controllers/",
+   "published": "2026-11-06T13:02:26+00:00",
+   "summary": "The recommendations come amid attacks targeting fridges and freezers in supermarkets and blood banks in Europe. The post US Agencies Urge Organizations to Harden Refrigeration Controllers appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/11/freezer-refrigeration.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-06T13:54:07.503835+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Per the US government’s recommendations, taking the control systems off the internet is the best action organizations can take to prevent attacks.",
+    "If web access is necessary, these systems should be protected by a firewall or edge device.",
+    "Organizations should also isolate OT devices, restrict access to trusted identities, enforce strong password policies and phishing-resistant multifactor authentication, keep systems updated, maintain backups offsite, and enable logging and monitoring.",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
