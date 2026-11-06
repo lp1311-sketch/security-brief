@@ -43,23 +43,23 @@
    "instructions_checked": true
   },
   {
-   "id": "ce0cce9f3bc5",
+   "id": "a5eef3cf57a4",
    "source": "ars",
    "source_name": "Ars Technica Security",
    "official": false,
    "source_type": "news",
-   "title": "Anthropic VS code extension on Cursor backdoored for nearly 12 hours",
-   "link": "https://arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours/",
-   "published": "2026-10-30T21:09:54+00:00",
-   "summary": "An official extension for Anthropic’s Claude model was backdoored and threatened as many as 5,000 developers' machines, multiple sources reported Friday. Anthropic so far has yet to warn customers of the incident. The compromised package was a VS Code extension available in the marketplace of Cursor, a maker of…",
-   "image": "https://cdn.arstechnica.net/wp-content/uploads/2022/05/caution-tape-1000x648.jpeg",
+   "title": "Chainalysis says hackers stole credentials and tokens for all of its customers",
+   "link": "https://arstechnica.com/security/2026/11/chainalysis-says-hackers-stole-credentials-and-tokens-for-all-of-its-customers/",
+   "published": "2026-11-06T20:56:41+00:00",
+   "summary": "Blockchain analysis firm Chainalysis said that hackers have obtained sensitive personal information—including names, usernames, password hashes, and live tokens—for all of its users following a breach of its network security. The accomplishment could be a major coup for the attackers. Both Chainalysis and public…",
+   "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/chainalysis-1152x648.png",
    "cves": [],
-   "first_seen": "2026-10-30T21:18:38.782659+00:00",
+   "first_seen": "2026-11-06T21:40:46.672672+00:00",
    "instructions": [
-    "Anyone who installed or updated Anthropic’s VS Code extension from Cursor between 5:27 am ET and 4:35 pm on Thursday should consider themselves affected, although it may be wise for anyone who has recently done so to also consider themselves potentially infected.",
-    "Extensions auto-update in Cursor by default, but users can configure this in settings.” Phorian has more details here .",
-    "Cursor said that the malicious extension attempts to install a persistent SSH backdoor using an added attacker-controlled SSH key, enabling the local SSH service, and opening a reverse SSH tunnel.",
-    "Attempting to add an attacker-controlled SSH key to authorized_keys , enable the local SSH service, and open a reverse SSH tunnel."
+    "In a Wednesday update, the company said that part of the “ongoing multifront cyberattack” involved an “on-path attack” that exposed a subset of customer passwords, and that the attack vector had been identified and fixed.",
+    "In an update on Friday, Chainalysis said it had begun phasing in customer access to KYT and Address Screening and expected more customers to follow.",
+    "It asked customers to submit their trusted IP addresses so they can be added to an allow list and to prepare to reset credentials once they regain access.",
+    "Kalshi court losses pile up as judges refuse to block state gambling laws"
    ],
    "instructions_checked": true
   },
@@ -3593,28 +3593,6 @@
    "instructions_checked": true
   },
   {
-   "id": "f167e37bde6d",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Critical Linux kernel flaw allows remote root attacks on MPTCP servers",
-   "link": "https://www.bleepingcomputer.com/news/security/critical-linux-kernel-flaw-allows-remote-root-attacks-on-mptcp-servers/",
-   "published": "2026-10-30T21:09:46+00:00",
-   "summary": "Security researchers at Anthropic have developed an exploit for a critical Linux kernel vulnerability that allows unauthenticated attackers to remotely execute commands as root on servers running Multipath TCP (MPTCP) listeners.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/29/Linux.jpg",
-   "cves": [],
-   "first_seen": "2026-10-30T21:58:38.759385+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Administrators are advised to check their distribution's security advisories and install updated kernel packages as they become available.",
-    "According to the Linux kernel advisory , the vulnerability stems from a race condition in how the kernel handles TCP connection requests, potentially causing a use-after-free condition.",
-    "\"tcp_v4_syn_recv_sock() transfers ownership of ireq->ireq_opt to the child socket (newinet->inet_opt) without copying it,\" reads the advisory.",
-    "In mitigation guidance , Rocky Linux support provider CIQ confirms Rocky Linux 8, 9, and 10 are also affected and shared temporary firewall protections for affected systems."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "801b944f5621",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4066,28 +4044,6 @@
     "Threat actors exploited these two flaws (tracked as CVE-2026-111357 and CVE-2026-118527 ) alongside an authentication bypass vulnerability (CVE-2026-104935), which Ivanti patched last month to remove the main attack surface.",
     "When it released patches for CVE-2026-104935 in October, Ivanti urged admins to upgrade as soon as possible since it was aware of \"limited exploitation in the wild.\"",
     "On Tuesday, the US Cybersecurity and Infrastructure Security Agency (CISA) added CVE-2026-104935 to its catalog of actively exploited vulnerabilities and ordered federal agencies to patch their systems by Friday,"
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "204b171c6486",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Linux kernel exploit enables remote root attacks on MPTCP servers",
-   "link": "https://www.bleepingcomputer.com/news/security/linux-kernel-exploit-enables-remote-root-attacks-on-mptcp-servers/",
-   "published": "2026-10-30T21:09:46+00:00",
-   "summary": "Security researchers at Anthropic have developed an exploit for a critical Linux kernel vulnerability that allows unauthenticated attackers to remotely execute commands as root on servers running Multipath TCP (MPTCP) listeners.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/29/Linux.jpg",
-   "cves": [],
-   "first_seen": "2026-10-30T21:18:38.782659+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Administrators are advised to check their distribution's security advisories and install updated kernel packages as they become available.",
-    "According to the Linux kernel advisory , the vulnerability stems from a race condition in how the kernel handles TCP connection requests, potentially causing a use-after-free condition.",
-    "\"tcp_v4_syn_recv_sock() transfers ownership of ireq->ireq_opt to the child socket (newinet->inet_opt) without copying it,\" reads the advisory.",
-    "In mitigation guidance , Rocky Linux support provider CIQ confirms Rocky Linux 8, 9, and 10 are also affected and shared temporary firewall protections for affected systems."
    ],
    "instructions_checked": true
   },
@@ -4820,22 +4776,6 @@
    "instructions_checked": true
   },
   {
-   "id": "6e318dd1d1a3",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "Investors Dish on New Startups & What They'd Back Next",
-   "link": "https://www.darkreading.com/cybersecurity-operations/investors-dish-new-startsup-what-back-next",
-   "published": "2026-10-30T21:08:25+00:00",
-   "summary": "The cybersecurity market is difficult to predict, but a glimpse into the annual DataTribe Challenge shows what's trending and what's not.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt7bfb23bb01b12a77/6ae89a88a47bac182d509a42/DataTribe_Challenge.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-02T14:57:52.156121+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "d5adbe76452f",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -5123,23 +5063,6 @@
     "A recent Secure Now update in Microsoft Security Exposure Management also connects information on recent threats to focused initiatives for reducing exposure.",
     "The update helps connect information about observed attack patterns with security improvements teams can consider in their own environments."
    ],
-   "instructions_checked": true
-  },
-  {
-   "id": "0a89691e7bed",
-   "source": "schneier",
-   "source_name": "Schneier on Security",
-   "official": false,
-   "source_type": "news",
-   "title": "Friday Squid Blogging: Bigfin Squid Off California Coast",
-   "link": "https://www.schneier.com/blog/archives/2026/10/friday-squid-blogging-bigfin-squid-off-california-coast.html",
-   "published": "2026-10-30T21:04:36+00:00",
-   "summary": "Neat video: The sighting, announced September 2, marks the first time anyone has spotted a live bigfin squid, which belongs to the Magnapinna genus, in the northeastern Pacific Ocean. As usual, you can also use this squid post to talk about the security stories in the news that I haven’t covered. Blog moderation…",
-   "image": null,
-   "cves": [],
-   "first_seen": "2026-10-30T21:18:38.782659+00:00",
-   "image_checked": true,
-   "instructions": [],
    "instructions_checked": true
   },
   {
