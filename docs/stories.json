@@ -11,16 +11,6 @@
    "url": "story/357136bfe66d.html"
   },
   {
-   "id": "4bea3ce24866",
-   "title": "Max-Severity GitLab Vulnerability Exploited Against Alpine Linux",
-   "summary": "Tracked as CVE-2026-97229, the bug allows unauthenticated attackers to execute arbitrary code on the server. The post Max-Severity GitLab Vulnerability Exploited Against…",
-   "priority": "Critical",
-   "category": "Patch Radar",
-   "date": "30 Oct 2026, 09:32 UTC",
-   "sources": "SecurityWeek, The Hacker News",
-   "url": "story/4bea3ce24866.html"
-  },
-  {
    "id": "4749795f0d08",
    "title": "HTTP2Shell: Brotli-Sicherheitslücke CVE-2026-111497 über Node.js hinaus prüfen",
    "summary": "Seit einigen Tagen ist ja eine Schwachstelle (CVE-2026-111497) im Brotli-Decoder von Node.js bekannt geworden. Es gibt zwar Updates, aber inzwischen ist klar, dass die…",
@@ -39,16 +29,6 @@
    "date": "05 Nov 2026, 23:46 UTC",
    "sources": "Microsoft Security Blog",
    "url": "story/e2845eccbac1.html"
-  },
-  {
-   "id": "a665869d02d2",
-   "title": "Zyxel GS1900 Patch Fails to Block Zero-Day Exploit Allowing Root Command Execution",
-   "summary": "Zyxel GS1900 network switches that received the vendor's earlier fix for an actively exploited flaw are still open to the exploit attackers used, researchers at Binarly…",
-   "priority": "High",
-   "category": "Patch Radar",
-   "date": "05 Nov 2026, 07:06 UTC",
-   "sources": "The Hacker News",
-   "url": "story/a665869d02d2.html"
   },
   {
    "id": "2a5b7d5a686a",
@@ -151,6 +131,16 @@
    "url": "story/89af0224359d.html"
   },
   {
+   "id": "a665869d02d2",
+   "title": "Zyxel GS1900 Patch Fails to Block Zero-Day Exploit Allowing Root Command Execution",
+   "summary": "Zyxel GS1900 network switches that received the vendor's earlier fix for an actively exploited flaw are still open to the exploit attackers used, researchers at Binarly…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "05 Nov 2026, 07:06 UTC",
+   "sources": "The Hacker News",
+   "url": "story/a665869d02d2.html"
+  },
+  {
    "id": "62ad9c2a6bdd",
    "title": "CISA flags WordPress RCE flaw as actively exploited in attacks",
    "summary": "The US Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies that attackers have started exploiting a recently patched high-severity WordPress…",
@@ -179,6 +169,16 @@
    "date": "02 Nov 2026, 05:51 UTC",
    "sources": "The Hacker News",
    "url": "story/9068a344a035.html"
+  },
+  {
+   "id": "4bea3ce24866",
+   "title": "Max-Severity GitLab Vulnerability Exploited Against Alpine Linux",
+   "summary": "Tracked as CVE-2026-97229, the bug allows unauthenticated attackers to execute arbitrary code on the server. The post Max-Severity GitLab Vulnerability Exploited Against…",
+   "priority": "Critical",
+   "category": "Patch Radar",
+   "date": "30 Oct 2026, 09:32 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/4bea3ce24866.html"
   },
   {
    "id": "3189ce2b4e22",
@@ -699,6 +699,26 @@
    "date": "30 Oct 2026, 14:00 UTC",
    "sources": "Microsoft Security Response Center",
    "url": "story/48f1365d2800.html"
+  },
+  {
+   "id": "ed60ea7fa412",
+   "title": "Hackers Hide Linux Backdoor in Control Web Panel Server to Execute Commands Without Logs",
+   "summary": "A backdoor has been found hiding in the web server that runs Control Web Panel (CWP), a free panel for managing Linux hosting servers, researchers at QiAnXin's XLab said…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "06 Nov 2026, 05:58 UTC",
+   "sources": "The Hacker News",
+   "url": "story/ed60ea7fa412.html"
+  },
+  {
+   "id": "a382c3d13c65",
+   "title": "Experts Demonstrate Barracuda Email Security Gateway Chain Enabling Root Access Without Login",
+   "summary": "Two flaws in Barracuda's Email Security Gateway, an email-filtering appliance, can be chained to run commands on it as root, its highest level of access, with no login…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "06 Nov 2026, 05:39 UTC",
+   "sources": "The Hacker News",
+   "url": "story/a382c3d13c65.html"
   },
   {
    "id": "97d7db0e7e4a",
@@ -1839,16 +1859,6 @@
    "date": "03 Nov 2026, 16:42 UTC",
    "sources": "The Record",
    "url": "story/848edcd7f637.html"
-  },
-  {
-   "id": "bc96c130a163",
-   "title": "Barracuda Flaws Could Be Chained to Bypass Authorization and Gain Root Access",
-   "summary": "Barracuda has disclosed details of two vulnerabilities affecting its products that, if chained together, could allow an attacker to bypass authorization controls and…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "03 Nov 2026, 15:59 UTC",
-   "sources": "The Hacker News",
-   "url": "story/bc96c130a163.html"
   },
   {
    "id": "47887f1443ad",

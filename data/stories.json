@@ -1695,26 +1695,6 @@
    "instructions_checked": true
   },
   {
-   "id": "5100bc6323f0",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV",
-   "link": "https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html",
-   "published": "2026-10-30T07:27:05+00:00",
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added two security flaws impacting Cisco and GitLab software to its Known Exploited Vulnerabilities (KEV), citing evidence of active exploitation. The vulnerabilities are listed below - CVE-2026-97229 (CVSS score: 10.0) - An integer overflow…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw1Ms9mKdtALczFoDaNy5Bm0HVMfxu0ps0ykDUXuLn3BeOEqUCDnzUiCP2lU_7xbC2kYuIAGCuOiQCGIlkR6wYBfCfb7g0wRESfIFaMtSltOjWphyswldC4LJxFf0RnCB9FzEVc-euJGtGbUvpJr7FOE0QefC3_rn8xLSFTij_yJn1MNP6bJVu8VgrcLaV/s1600/github-cisco.jpg",
-   "cves": [
-    "CVE-2026-97229"
-   ],
-   "first_seen": "2026-10-30T08:32:58.716169+00:00",
-   "instructions": [
-    "In light of active exploitation, Federal Civilian Executive Branch (FCEB) agencies are recommended to apply the fixes by November 1, 2026."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "21ad2182a136",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2226,6 +2206,28 @@
    "instructions_checked": true
   },
   {
+   "id": "a382c3d13c65",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Experts Demonstrate Barracuda Email Security Gateway Chain Enabling Root Access Without Login",
+   "link": "https://thehackernews.com/2026/11/experts-demonstrate-barracuda-email.html",
+   "published": "2026-11-06T05:39:10+00:00",
+   "summary": "Two flaws in Barracuda's Email Security Gateway, an email-filtering appliance, can be chained to run commands on it as root, its highest level of access, with no login required. The company released patches on Monday, and the security firm watchTowr detailed the attack chain on Thursday. One flaw, CVE-2026-116606, is…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh59LXthjD6N50867w2v7T4JyVUCOlVAmz1MJcZHKBFFaSnKDabB0FmdedrbvWRkp9XONe9Pz2RV1MQ-9QpJ8d85XE3w54EmMLKgaf1ygKD2e0y2X9mA7VsfyyB-8l1KFi-F5Gj9Q2vdsusmAl2khvXHNyOzWB_l7bj6NkOHkUgDYW-vENOowt0L8qM4kM/s1600/bar.jpg",
+   "cves": [
+    "CVE-2026-116606"
+   ],
+   "first_seen": "2026-11-06T07:45:14.462637+00:00",
+   "instructions": [
+    "Apply the patch for each affected product, or upgrade to the fixed firmware listed above.",
+    "Barracuda has released a patch for each affected product and lists the fixed firmware in its security advisory .",
+    "If you cannot patch at once, limit the appliance's administration interface to trusted internal networks."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "6e20a9798345",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2360,6 +2362,27 @@
    "first_seen": "2026-11-05T06:25:55.581723+00:00",
    "instructions": [
     "In light of active exploitation, Federal Civilian Executive Branch (FCEB) agencies are recommended to apply the necessary patches by November 18, 2026."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "ed60ea7fa412",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Hackers Hide Linux Backdoor in Control Web Panel Server to Execute Commands Without Logs",
+   "link": "https://thehackernews.com/2026/11/hackers-hide-linux-backdoor-in-control.html",
+   "published": "2026-11-06T05:58:54+00:00",
+   "summary": "A backdoor has been found hiding in the web server that runs Control Web Panel (CWP), a free panel for managing Linux hosting servers, researchers at QiAnXin's XLab said this week. The backdoored web server executes commands that attackers send via web requests, and those requests never appear in its access logs…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsAMxBevh2cmz1buKWukyP6JgUHrIPcr9zrJjAs1OwDoP1wMjn_s_WKHeUAdSwVzTImUsDE0C3SLGEpciaLk9H8CGvqiYugQWASsflB1a5zA9Wyr4RbroT3Z3JlOeak1AEinAy7Brf9N0BRDuGFWdZC23nCrOq4VuSMQQuDFYBYC6YCEm2ncPhHOv3KXs/s1600/cwp.jpg",
+   "cves": [],
+   "first_seen": "2026-11-06T07:45:14.462637+00:00",
+   "instructions": [
+    "Installing it takes root access, so the attackers must already control the server.",
+    "If a server is infected, the researchers recommend three steps:",
+    "Upgrade to the latest version, then confirm that ss -axp | grep integrity returns nothing.",
+    "The researchers, who named the backdoor cwpdoor , captured its installer, a shell script posing as a version update, on June 29."
    ],
    "instructions_checked": true
   },
