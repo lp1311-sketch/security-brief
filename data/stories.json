@@ -1755,46 +1755,6 @@
    "instructions_checked": true
   },
   {
-   "id": "4eafb481bfd9",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Trezor Warns of Suspected Hardware Implant in One of Its Wallets Sold by CryptoBilis",
-   "link": "https://thehackernews.com/2026/10/trezor-warns-of-suspected-hardware.html",
-   "published": "2026-10-30T12:21:56+00:00",
-   "summary": "A Trezor Safe 5 hardware wallet bought from the reseller CryptoBilis has an extra circuit board that sends out the recovery phrase over a mobile network, a customer has reported. Trezor has not yet examined the device. It is telling everyone who bought a Trezor from CryptoBilis since March 2026 to move their funds to…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEih5QxhFnBw6d40ollOAoolmZedxywTm7DeBQpEqydVG5Pqg0v5iDVFT1hhbsW7Thqg00oI8MACNXC9FX6MCp_qMRkBRiqdxb9D4CDKfTWTZwI5eyY3V2IOa8ODSg24kX7Ni_C968r2X89tUXwPbDnHPV9xX-ydhytwerqMI1ru7tqdIK-cqA0p9oM5Ppxr/s1600/trezor-wallet.jpg",
-   "cves": [],
-   "first_seen": "2026-10-30T12:57:02.135868+00:00",
-   "instructions": [
-    "Owners cannot reliably check a device themselves and should not weigh or open it to try it, according to Trezor.",
-    "The Singapore Police Force said in an advisory on October 28 that Ledger hardware wallets bought from some retail stores in Singapore contained malicious hardware components."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "0e3774900031",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Why Urgent Security Fixes Aren't Fixed. Observe, Prove, Act, Confirm Gets Them Moving",
-   "link": "https://thehackernews.com/2026/10/why-urgent-security-fixes-arent-fixed.html",
-   "published": "2026-10-30T11:58:53+00:00",
-   "summary": "The alert is critical. The fix is known. And the ticket sits in a queue for days. Security teams understand the risk, but the people who keep applications available need proof that the change won’t break anything. Their concerns are practical. An IPS protection could block legitimate traffic. A configuration change…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitJWSYL167QzDoyvN2y9DAuXmFFe0en34dEHp-I2sSVLEPIfljdlRfeIthyMQUgSvf9AfwW4p-solbE5zH3cKpfeLKWg-IqPnVdHbKQ99Bw91fDAoqHx3E9mlpNmXYA5i3RnaTYxZYkZcwbeY31O4CljtFQYp2JPLTmJo1BI09Al9Kh-CDtzFubVly7hM/s1600/cp.jpg",
-   "cves": [],
-   "first_seen": "2026-10-30T12:57:02.135868+00:00",
-   "instructions": [
-    "The remediation record should distinguish interim protection from a permanent fix.",
-    "Success should include evidence that the intended protection is active after execution.",
-    "Many organizations already own protection they don’t enforce.",
-    "Testing, coordination, and deployment schedules can extend the time before a patch reaches production, creating a period when additional protection may be needed."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "6473fc7702e5",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2725,6 +2685,27 @@
    "instructions_checked": true
   },
   {
+   "id": "6625b8a777d1",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "The Flood is Coming And The Pipes Were Already Full",
+   "link": "https://thehackernews.com/2026/11/the-flood-is-coming-and-pipes-were.html",
+   "published": "2026-11-06T11:30:00+00:00",
+   "summary": "An update on Athena, and some unsolicited predictions on what's coming next On Saturday, Dario Amodei published We Must Pace the Frontier. I agree with him. Go read it if you haven't. I've spent the summer looking at what these models find, and the gap he describes between what they can do and what the rest of us are…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhRlCxdfW4sb5-1zEBHpFyJfxetSva89fr67wc8zSfvidW5W4KQKckoTrRxOAUbjM94U2ydFjiXybLJPrp6pm1V-WUuC4IpkJjhIT56OG8go8E_8fR8cK-llV0UtXdRIxZS5XxuVwEbRj1G_zAErMjpkMHVdzkGBQrB46VErPyE7MBaW6sj0N64pRd3_A/s1600/FLOOD.jpg",
+   "cves": [],
+   "first_seen": "2026-11-06T12:37:43.134961+00:00",
+   "instructions": [
+    "On Saturday, Dario Amodei published We Must Pace the Frontier .",
+    "And the advisory layer has nothing to work with, because CVEs don't get filed for things already fixed at head.",
+    "Patched versions land in Chainguard Libraries for every Chainguard customer the moment the advisory goes live.",
+    "They already deal with more noise than anyone should, and we don't want to add to it, least of all for bugs they fixed years ago."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "59043a855535",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -3132,27 +3113,6 @@
     "Google said it took legal action to take down the domains Videostrong used to control the botnet and install the malware while also suing to destroy the domains used by other malware families loaded onto the devices.",
     "But they noted that even if a user tried to uninstall the malware, it would automatically reinstall, according to cybersecurity researchers.",
     "Google did not explain if customers with infected devices will be notified or if there is any effort to forcibly remove malware from compromised devices as U.S. law enforcement agencies have done in other similar botnet cases ."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "21c20d4b759a",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Hackers target government Windows systems in Asia with new malware",
-   "link": "https://therecord.media/hackers-target-government-windows-systems-asia-new-malware",
-   "published": "2026-10-30T12:36:00+00:00",
-   "summary": "The previously unknown malware, dubbed NetamLoader, uses legitimate Microsoft software components to execute malicious code, evade security tools and download additional programs onto infected computers.",
-   "image": "https://cms.therecord.media/uploads/japan_asia_ffd5c2ef19.png",
-   "cves": [],
-   "first_seen": "2026-10-30T12:57:02.135868+00:00",
-   "image_checked": true,
-   "instructions": [
-    "On the other hand, it also means that each country must protect this entire vast ecosystem on its own,\" Kaspersky said.",
-    "The package contained legitimate software components, including files belonging to the third-party update management tool Patch My PC and programs digitally signed by Microsoft.",
-    "They also could not confirm how the malware reached the computer or whether the software update infrastructure itself had been compromised."
    ],
    "instructions_checked": true
   },
@@ -3731,6 +3691,28 @@
    "instructions": [
     "The incident follows a wave of cyberattacks targeting refrigeration systems across Europe, where attackers remotely manipulate temperature settings or activate defrost functions that turn off cooling.",
     "mSecure password manager hack prompts password reset warnings"
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "d0b8b49f25ce",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "D-Link warns of multiple zero-days in DGS-3130 Series switches",
+   "link": "https://www.bleepingcomputer.com/news/security/d-link-warns-of-multiple-zero-days-in-dgs-3130-series-switches/",
+   "published": "2026-11-06T12:37:22+00:00",
+   "summary": "D-Link shared mitigation measures for multiple unpatched security flaws affecting DGS-3130 series managed Gigabit stackable switches.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/06/D-Link-logo.jpg",
+   "cves": [],
+   "first_seen": "2026-11-06T12:37:43.134961+00:00",
+   "image_checked": true,
+   "instructions": [
+    "D-Link shared mitigation measures for multiple unpatched security flaws affecting DGS-3130 series managed Gigabit stackable switches.",
+    "D-Link also advised admins to maintain offline switch configuration backups and track device logs for unexpected configuration changes, unprompted reboots, or factory resets.",
+    "Until it releases new firmware to address these flaws, D-Link asked admins to disable DDP to remove the primary known attack vector, remove unnecessary or default SNMP community strings, and restrict SSH, web UI, and SNMP accessibility solely to isolated management networks and designated admin hosts.",
+    "In September, D-Link warned customers of a maximum-severity zero-day (tracked as CVE-2026-86296 ) with a public proof-of-concept (PoC) exploit and no patch, affecting legacy DIR-822A dual-band Wi-Fi routers."
    ],
    "instructions_checked": true
   },
@@ -5585,28 +5567,6 @@
    "instructions_checked": true
   },
   {
-   "id": "3556a8b02424",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Fresh WordPress Vulnerability in Attackers’ Crosshairs",
-   "link": "https://www.securityweek.com/fresh-wordpress-vulnerability-in-attackers-crosshairs/",
-   "published": "2026-10-30T12:04:13+00:00",
-   "summary": "Threat actors are attempting to exploit a high-severity unauthenticated race condition leading to remote code execution. The post Fresh WordPress Vulnerability in Attackers’ Crosshairs appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2024/08/WordPress.jpeg",
-   "cves": [],
-   "first_seen": "2026-10-30T12:57:02.135868+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Patched on October 28 in WordPress 7.1.4 , the security defect impacts the WordPress update process and can be exploited for remote code execution.",
-    "According to Defiant, it is a race condition in WordPress’s Core update process that can be exploited without authentication.",
-    "While an attacker does not need an account on the site to exploit the flaw, they do need “to hit a very narrow window while WordPress is unpacking a complete Core update,” Defiant says.",
-    "Adobe, Veeam, Juniper Networks Patch Critical Vulnerabilities"
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "ed61802f64c7",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -5877,6 +5837,28 @@
    "instructions_checked": true
   },
   {
+   "id": "222613d43ca7",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "OpenSSH Rushes Patches for ‘SSHole’ Authentication Bypass",
+   "link": "https://www.securityweek.com/openssh-rushes-patches-for-sshole-authentication-bypass/",
+   "published": "2026-11-06T12:07:42+00:00",
+   "summary": "On Linux distributions using musl libc without PAM, some accounts accept any password between 257 and 1024 characters. The post OpenSSH Rushes Patches for ‘SSHole’ Authentication Bypass appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/11/SSH.webp",
+   "cves": [],
+   "first_seen": "2026-11-06T12:37:43.134961+00:00",
+   "image_checked": true,
+   "instructions": [
+    "If your organization is affected, update to the latest version where possible, and disable password-based authentication as a temporary mitigation if you can’t,” WatchTowr head of threat intelligence Jake Knott said.",
+    "Some accounts, such as root, should never accept a password, but in Linux distributions such as Alpine, OpenWrt, Buildroot, Yocto, and others, they do, Wakefield security researcher Özgün Kültekin says.",
+    "Android’s November 2026 Updates Patch Over 200 Vulnerabilities",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "f9c39fb133ac",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -5957,6 +5939,26 @@
    "instructions": [
     "In an October 30 update, Polymarket said 726 wallets were affected.",
     "DebugBear, whose real user monitoring (RUM) script lets websites measure page load performance for visitors, initially told customers to remove the embed code and has now shared its initial findings . “Our DNS server records were compromised through our domain registrar.",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "cc8d32ac462d",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Researchers Find Residential Proxies on White House Network",
+   "link": "https://www.securityweek.com/researchers-find-residential-proxies-on-white-house-network/",
+   "published": "2026-11-06T12:16:13+00:00",
+   "summary": "In a month, 28 residential proxy services used 6 addresses, mainly between 5 p.m. and midnight, Eastern Time. The post Researchers Find Residential Proxies on White House Network appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/01/Whitehouse-Cybersecurity.jpg",
+   "cves": [],
+   "first_seen": "2026-11-06T12:37:43.134961+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Android’s November 2026 Updates Patch Over 200 Vulnerabilities",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
