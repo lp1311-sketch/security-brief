@@ -1713,27 +1713,6 @@
    "instructions_checked": true
   },
   {
-   "id": "ad2cc061f552",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Official Claude Code Extension on Cursor Marketplace Trojanized with Persistent SSH Backdoor",
-   "link": "https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html",
-   "published": "2026-10-30T08:55:47+00:00",
-   "summary": "Cybersecurity researchers have disclosed that a trojanized version of Anthropic's official Claude Code extension was distributed through the Cursor Marketplace as a legitimate update, attempting to install a persistent SSH backdoor on affected systems. The malicious update, version 2.1.313, was distributed under the…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMAV00lkxu7R724ItLdgrRsnEYHR_d2eUSdcen_KymGeBY1tCo8SRVz6w_XiNzzYgwpcl0Me3JCJz8DeieRM_0jb8aL4VkHAAIeXrqNf8oQkmzKahqMHOGvhkFK32HOasHZht8BwtI1NxEZ-_nIwmQY_8fxpGbbl3csC6oZKCVnIRk3iYTRhH975dyxsWS/s1600/cursor-vscode.jpg",
-   "cves": [],
-   "first_seen": "2026-10-30T10:28:56.243259+00:00",
-   "instructions": [
-    "Users who have installed the compromised extension during the window are advised to isolate the hosts, remove the unauthorized SSH key and persistence mechanisms, and rotate credentials and sessions.",
-    "Cybersecurity researchers have disclosed that the official Anthropic Claude Code extension was compromised on the Open VSX registry to install a persistent SSH backdoor on infected hosts.",
-    "The issue has since been traced to the compromise of the Cursor Marketplace, prompting the AI coding platform Cursor to briefly take down the service to remove the malware.",
-    "\"It was pulled very quickly, but anyone who has their Claude Code instance set to auto-update could have consumed the malware,\" Gile said."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "6734aa3aec6c",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -3641,25 +3620,6 @@
    "instructions_checked": true
   },
   {
-   "id": "93a6b87fe425",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Binance links $6.3 billion crypto theft to compromised DevOps laptop",
-   "link": "https://www.bleepingcomputer.com/news/security/binance-links-63-billion-crypto-theft-to-compromised-devops-laptop/",
-   "published": "2026-10-30T09:18:13+00:00",
-   "summary": "Binance, the world's largest crypto exchange, has linked the theft of about $6.3 billion in cryptocurrency to a DevOps engineer's compromised laptop.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/30/Binance.jpg",
-   "cves": [],
-   "first_seen": "2026-10-30T09:32:32.744179+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Microsoft urges Entra ID admins to migrate users to passkeys"
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "317e8557e095",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4280,6 +4240,26 @@
     "For impacted machines, it is recommended to isolate them, rotate accessible secrets, invalidate sessions, and rebuild the affected environment from safe backups.",
     "A malicious version of Anthropic's Claude Code VS Code extension was distributed through Cursor's extension marketplace for approximately 11 hours on October 29, exposing up to 5,000 developers to malware designed to install persistent SSH backdoors.",
     "\"The extension runs malicious code that attempts to install a persistent SSH backdoor.\""
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "3a8f9a3bb5fd",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "MetaMask says recent attack didn't affect wallet infrastructure",
+   "link": "https://www.bleepingcomputer.com/news/security/metamask-says-recent-attack-didnt-affect-wallet-infrastructure/",
+   "published": "2026-11-06T09:22:28+00:00",
+   "summary": "Cryptocurrency wallet provider MetaMask said a recent security incident has not affected MetaMask wallets or its wallet infrastructure.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/06/Metamask.jpg",
+   "cves": [],
+   "first_seen": "2026-11-06T09:42:44.269873+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Customers whose staking arrangements were affected should follow any guidance provided directly by MetaMask or their staking provider.\"",
+    "Last month, Ledger also asked Asian resellers and distributors to halt wallet sales and remove products from shelves while it was investigating multiple hardware implant incidents."
    ],
    "instructions_checked": true
   },
@@ -4941,6 +4921,22 @@
    "instructions_checked": true
   },
   {
+   "id": "67dcad135390",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "UK Warns Its Critical Infrastructure Faces Grave Risk",
+   "link": "https://www.darkreading.com/cybersecurity-operations/uk-warns-critical-infrastructure-grave-risk",
+   "published": "2026-11-06T09:00:00+00:00",
+   "summary": "Britain's new Labour-led government is making a concerted push to get ahead of the AI risks to its national networks and the industrial complex.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltd1a5d5b4d8cd4518/6aeca4d40d4c553177f0d3a4/UK_parliament-georgeclerk-Getty.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-06T09:42:44.269873+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "c5d8bcb2d057",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -5269,26 +5265,6 @@
    "first_seen": "2026-11-03T12:59:11.349315+00:00",
    "image_checked": true,
    "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "aedf51642ecf",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "$2 Million+ Drained From Polymarket Traders in New Supply Chain Attack",
-   "link": "https://www.securityweek.com/2-million-drained-from-polymarket-traders-in-new-supply-chain-attack/",
-   "published": "2026-10-30T09:41:36+00:00",
-   "summary": "Malicious code linked to a website monitoring tool was designed to hijack logged-in Polymarket sessions and siphon user funds. The post $2 Million+ Drained From Polymarket Traders in New Supply Chain Attack appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/06/Polymarket.webp",
-   "cves": [],
-   "first_seen": "2026-10-30T10:20:24.097567+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Adobe, Veeam, Juniper Networks Patch Critical Vulnerabilities",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
    "instructions_checked": true
   },
   {
@@ -5877,30 +5853,6 @@
    "instructions_checked": true
   },
   {
-   "id": "4bea3ce24866",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Max-Severity GitLab Vulnerability Exploited Against Alpine Linux",
-   "link": "https://www.securityweek.com/max-severity-gitlab-vulnerability-exploited-against-alpine-linux/",
-   "published": "2026-10-30T09:32:27+00:00",
-   "summary": "Tracked as CVE-2026-97229, the bug allows unauthenticated attackers to execute arbitrary code on the server. The post Max-Severity GitLab Vulnerability Exploited Against Alpine Linux appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/06/GitLab.jpeg",
-   "cves": [
-    "CVE-2026-97229"
-   ],
-   "first_seen": "2026-10-30T10:20:24.097567+00:00",
-   "image_checked": true,
-   "instructions": [
-    "The bug “could have allowed an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regular expression in a CI/CD configuration,” GitLab noted in an October 12 advisory .",
-    "It is still testing the GitLab instance before public release, and has reset all passwords, warning of observed automated login attempts using passwords compromised in other leaks.",
-    "On Thursday, the US cybersecurity agency CISA added CVE-2026-97229 to its Known Exploited Vulnerabilities ( KEV ) catalog, urging federal agencies to patch it within three days, as mandated by BOD 26-04.",
-    "Adobe, Veeam, Juniper Networks Patch Critical Vulnerabilities"
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "1f8acdc5d8c6",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -6184,30 +6136,6 @@
    "image_checked": true,
    "instructions": [
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "d0d43ed2d289",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "TeamViewer Flaw Could Let Malicious Hosts Take Over Support Technicians’ Machines",
-   "link": "https://www.securityweek.com/teamviewer-flaw-could-let-malicious-hosts-take-over-support-technicians-machines/",
-   "published": "2026-10-30T08:44:49+00:00",
-   "summary": "An integer overflow tracked as CVE-2026-111585 could be used to execute arbitrary code on the viewer’s system. The post TeamViewer Flaw Could Let Malicious Hosts Take Over Support Technicians’ Machines appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2024/06/Teamviewer.jpeg",
-   "cves": [
-    "CVE-2026-111585"
-   ],
-   "first_seen": "2026-10-30T08:55:40.801665+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Successful exploitation of the security defect could allow attackers to crash the viewer’s TeamViewer or execute arbitrary code on their system. “Exploitation requires a user to establish a remote-control session to an attacker-controlled or compromised host,” TeamViewer notes in its advisory .",
-    "On macOS, the updates also resolve CVE-2026-92374, a time-of-check-to-time-of-use (TOCTOU) race condition with improper symbolic link handling flaw that could allow a low-privileged local attacker to install a malicious package and gain root privileges.",
-    "Additionally, TeamViewer patched six high-severity local privilege escalation vulnerabilities in the TeamViewer Remote Management add-ons, urging users to update both the clients and the components to the latest versions.",
-    "Adobe, Veeam, Juniper Networks Patch Critical Vulnerabilities"
    ],
    "instructions_checked": true
   },
