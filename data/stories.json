@@ -397,28 +397,6 @@
    "instructions_checked": true
   },
   {
-   "id": "6f421f1330c7",
-   "source": "google-threat-intel",
-   "source_name": "Google Threat Intelligence",
-   "official": false,
-   "source_type": "vendor_blog",
-   "title": "ARTEX and Friends: Enter Agentic Offensive Frameworks",
-   "link": "https://cloud.google.com/blog/topics/threat-intelligence/artex-and-friends-enter-agentic-offensive-frameworks/",
-   "published": "2026-10-30T14:00:00+00:00",
-   "summary": "Written by: Aurora Blum, David Mainor, Rohit Nambiar, Omar ElAhdan, Matthew McWhirt, Will Silverstone, Bhavesh Dhake, Chris Busse Introduction Recent intrusions in which threat actors have been observed weaponizing agentic frameworks to execute highly-automated intrusions has put a spotlight on evolving adversarial…",
-   "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/03_ThreatIntelligenceWebsiteBannerIdeas_BA.max-2600x2600.png",
-   "cves": [],
-   "first_seen": "2026-11-01T19:58:18.242629+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Unrestricted autonomous execution generates forensic traffic, relies on recognizable identifiers, and leaves behind distinct code-level traces, increasing the likelihood of detection and mitigation.",
-    "Mandiant recommends structuring enterprise defenses across five foundational layers designed to restrict lateral movement and limit the speed advantage of autonomous tooling:",
-    "Apply Similar Controls to Programmatic Administration : Where supported, restrict administrative service principals and automation identities to expected networks, workloads, or private connectivity.",
-    "Prioritize Workload and Programmatic Identities : Apply the same rigor used for privileged human identities to service principals, service accounts, API keys, cloud access keys, application credentials, deployment tokens, and Personal Access Tokens."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "2e54985e0758",
    "source": "google-threat-intel",
    "source_name": "Google Threat Intelligence",
@@ -531,25 +509,6 @@
     "CVE-2026-111497"
    ],
    "first_seen": "2026-10-25T17:09:52.460830+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "c01a972af817",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-118147 Visual Studio Spoofing Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118147",
-   "published": "2026-10-30T14:00:00+00:00",
-   "summary": "Improper certificate validation in Visual Studio allows an unauthorized attacker to perform spoofing over a network.",
-   "image": null,
-   "cves": [
-    "CVE-2026-118147"
-   ],
-   "first_seen": "2026-10-30T19:13:56.754027+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -1410,44 +1369,6 @@
    "image_checked": true
   },
   {
-   "id": "6ea5871e5b09",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-69446 Microsoft Edge (Chromium-based) Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69446",
-   "published": "2026-10-30T14:00:00+00:00",
-   "summary": "Corrected CVE by adding the assigning CNA. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-69446"
-   ],
-   "first_seen": "2026-10-30T17:42:45.015148+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "48f1365d2800",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-70125 Microsoft Office Outlook Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70125",
-   "published": "2026-10-30T14:00:00+00:00",
-   "summary": "Updated one or more CVSS scores for the affected products. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-70125"
-   ],
-   "first_seen": "2026-10-30T21:58:38.759385+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "7c7d0982a3a9",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -1731,27 +1652,6 @@
     "The only fix TeamViewer offers is to update, and it lists no workaround.",
     "The flaw affects all versions before 15.83, including 15.82, the security update TeamViewer released in September .",
     "The same 15.83 update also fixes two other high-severity flaws in the same bulletin, including a separate code-execution flaw affecting Linux and macOS."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "6473fc7702e5",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "WordPress RCE Flaw Draws Nearly 63,000 Attack Attempts in Just 24 Hours",
-   "link": "https://thehackernews.com/2026/10/wordpress-rce-flaw-draws-nearly-63000.html",
-   "published": "2026-10-30T14:08:14+00:00",
-   "summary": "Threat actors have been observed attempting to exploit a high-severity security flaw in WordPress Core shortly after patches were released. The vulnerability, which does not have a CVE identifier, relates to a case of remote code execution impacting WordPress Core versions 4.7 through 7.1.3. It carries a CVSS score of…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhf-pzflJO9HQoCdvBvYNtS12gwwEjAbM4dQ30ak7UYaIPzsVPN9MlFwvIDEFkbe9cWg4wQRFPbGfJ0YXjzGcBS6mUTwttwkQ8IR7OoHyTz3owZkVzYQOAObyJUqfjsC-PqMw2pv41_m68hb6ZkwJb56kGx-Ypv7GWZBtDzjyTTQ8L8i9NxA8_MDVoJSEba/s1600/wp-hack.jpg",
-   "cves": [],
-   "first_seen": "2026-10-30T16:48:15.418520+00:00",
-   "instructions": [
-    "With active exploitation attempts already underway, WordPress site owners are advised to update to version 7.1.4 as soon as possible and look for suspicious requests to PHP files located under \"wp-content/upgrade,\" as well as unfamiliar administrator accounts, plugins, or PHP files.",
-    "\"This makes it possible for unauthenticated attackers to execute code on the server during the upgrade window.\"",
-    "The WordPress security company noted that successful exploitation requires an \"attacker to hit a very narrow window while WordPress is unpacking a complete Core update.\"",
-    "The issue boils down to the fact that affected versions unpack new files part of a full-package Core update into a predictable directory under \"wp-content/upgrade.\" This copy also includes the WordPress installer."
    ],
    "instructions_checked": true
   },
@@ -2908,6 +2808,23 @@
    "instructions_checked": true
   },
   {
+   "id": "e34ca10a5a26",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "CEO-spoofing scammers indicted for using AI to help steal more than $100 million",
+   "link": "https://therecord.media/ceo-spoofing-scammers-charged",
+   "published": "2026-11-06T14:30:00+00:00",
+   "summary": "The U.S. is working on extraditing three suspects from Europe in a case involving more than $100 million in fraud from CEO impersonations.",
+   "image": "https://cms.therecord.media/uploads/man_suit_benjamin_r_unsplash_53f6376f90.jpg",
+   "cves": [],
+   "first_seen": "2026-11-06T14:55:05.279628+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "350327fdd7cd",
    "source": "therecord",
    "source_name": "The Record",
@@ -3316,26 +3233,6 @@
    "instructions_checked": true
   },
   {
-   "id": "b44d4a56a6fc",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Syrian Electronic Army hacker gets prison time for attacks on Western targets",
-   "link": "https://therecord.media/syrian-electronic-army-hacker-sentenced-three-years",
-   "published": "2026-10-30T14:24:00+00:00",
-   "summary": "Ahmad Umar Agha, known online as “Th3Pr0,” was sentenced Thursday in federal court in Virginia to 42 months behind bars for his role in a conspiracy that was organized by former Syrian President Bashar al-Assad's closest advisers.",
-   "image": "https://cms.therecord.media/uploads/ahmed_al_agha_7fa8b4c586.jpg",
-   "cves": [],
-   "first_seen": "2026-10-30T14:56:06.914594+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Ahmad Umar Agha, known online as “Th3Pr0,” was sentenced Thursday in federal court in Virginia to 42 months behind bars for his role in a conspiracy that was organized by former Syrian President Bashar al-Assad's closest advisers.",
-    "A 2014 FBI affidavit said that Twitter's message confirming a password reset for the account was sent to an email address used by Agha."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "266b3df3272b",
    "source": "therecord",
    "source_name": "The Record",
@@ -3589,6 +3486,28 @@
    "instructions": [
     "Customers are advised to enable two-factor authentication (2FA) and watch for unexpected password reset requests, authentication prompts, and scammers impersonating Chainalysis, particularly those offering fund recovery or recruiting services.",
     "Microsoft urges Entra ID admins to migrate users to passkeys"
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "f8e9629a67be",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Chainalysis says breach exposed credentials for all customers",
+   "link": "https://www.bleepingcomputer.com/news/security/chainalysis-says-breach-exposed-credentials-for-all-customers/",
+   "published": "2026-11-06T14:17:07+00:00",
+   "summary": "Blockchain intelligence firm Chainalysis says a recent attack on its systems and internal tools has exposed credentials and live tokens for all customers.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/06/0_Chainalysis.jpg",
+   "cves": [],
+   "first_seen": "2026-11-06T14:55:05.279628+00:00",
+   "image_checked": true,
+   "instructions": [
+    "\"On Monday, we discovered certain customer information including names, usernames, password hashes and live tokens for all Chainalysis users were exposed to a malicious actor,\" it said in a Wednesday update.",
+    "To ensure threat actors don't access affected accounts, Chainalysis asked customers to provide trusted IP addresses so they can regain access to the login portal once it is brought back online and reset their credentials.",
+    "We will then grant access for users to reset their passwords and rotate API keys to register transactions.",
+    "We will require additional protections to access accounts, including that every user will have to reset passwords and rotate API keys as appropriate,\" it added ."
    ],
    "instructions_checked": true
   },
@@ -4114,28 +4033,6 @@
    "instructions_checked": true
   },
   {
-   "id": "96a0f026f2e0",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Malicious Claude Code extension on Cursor planted SSH backdoors",
-   "link": "https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/",
-   "published": "2026-10-30T14:36:54+00:00",
-   "summary": "A malicious version of Anthropic's Claude Code VS Code extension was distributed through Cursor's extension marketplace for approximately 11 hours on October 29, exposing up to 5,000 developers to malware designed to install persistent SSH backdoors.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/30/claude-code-attack.jpg",
-   "cves": [],
-   "first_seen": "2026-10-30T14:56:06.914594+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Those who have downloaded the package during the exposure window should check for the presence of an 'svc-telemetry' SSH key on their machines, and follow Cursor’s remediation instructions if impact is confirmed.",
-    "For impacted machines, it is recommended to isolate them, rotate accessible secrets, invalidate sessions, and rebuild the affected environment from safe backups.",
-    "A malicious version of Anthropic's Claude Code VS Code extension was distributed through Cursor's extension marketplace for approximately 11 hours on October 29, exposing up to 5,000 developers to malware designed to install persistent SSH backdoors.",
-    "\"The extension runs malicious code that attempts to install a persistent SSH backdoor.\""
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "3a8f9a3bb5fd",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4362,28 +4259,6 @@
    "instructions_checked": true
   },
   {
-   "id": "27c3e9ac8130",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "SS7 and Diameter Attacks: How Signaling Flaws Expose Your Phone",
-   "link": "https://www.bleepingcomputer.com/news/security/ss7-and-diameter-attacks-how-signaling-flaws-expose-your-phone/",
-   "published": "2026-10-30T14:00:10+00:00",
-   "summary": "Flaws in SS7 and Diameter signaling protocols can allow attackers to track phone locations, intercept calls and SMS verification codes, and impersonate subscribers without compromising their devices. Cape explains how these attacks exploit trust between networks and how its security-focused mobile service helps defend…",
-   "image": "https://www.bleepstatic.com/content/posts/2026/10/29/cell-tower-header.jpg",
-   "cves": [],
-   "first_seen": "2026-10-30T14:56:06.914594+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Most signaling firewalls are compliance tools tuned to GSMA baseline recommendations.",
-    "Those recommendations are distributed to more than 1,200 member providers, so the same guidance is available to attackers who can send signaling messages.",
-    "Carrier signaling firewalls reliably block messages sent to or from the wrong place.",
-    "Microsoft urges Entra ID admins to migrate users to passkeys"
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "e52f7534557d",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4557,6 +4432,117 @@
    "instructions_checked": true
   },
   {
+   "id": "496fbffc6e4d",
+   "source": "cisa",
+   "source_name": "CISA Cybersecurity Advisories",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+   "link": "https://www.cisa.gov/news-events/alerts/2026/11/03/cisa-adds-one-known-exploited-vulnerability-catalog",
+   "published": "2026-11-03T12:00:00+00:00",
+   "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-119977 WordPress Core Time-of-check Time-of-use (TOCTOU) Race Condition Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses…",
+   "image": null,
+   "cves": [
+    "CVE-2026-119977"
+   ],
+   "first_seen": "2026-11-06T14:55:05.279628+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
+    "BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "eb87294c0988",
+   "source": "cisa",
+   "source_name": "CISA Cybersecurity Advisories",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+   "link": "https://www.cisa.gov/news-events/alerts/2026/11/04/cisa-adds-one-known-exploited-vulnerability-catalog",
+   "published": "2026-11-04T12:00:00+00:00",
+   "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2024-27834 Apple Multiple Products Improper Authentication Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks…",
+   "image": null,
+   "cves": [
+    "CVE-2024-27834"
+   ],
+   "first_seen": "2026-11-06T14:55:05.279628+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
+    "BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "4ee243d9c309",
+   "source": "cisa",
+   "source_name": "CISA Cybersecurity Advisories",
+   "official": true,
+   "source_type": "advisory",
+   "title": "Subnet Solutions PowerSYSTEM Center",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-307-01",
+   "published": "2026-11-03T12:00:00+00:00",
+   "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to execute unauthorized SQL commands and gain access to unauthorized resources. The following versions of Subnet Solutions PowerSYSTEM Center are affected: PowerSYSTEM Center 2020 <=5.29.x (CVE-2026-63017) PowerSYSTEM Center…",
+   "image": null,
+   "cves": [
+    "CVE-2026-63017",
+    "CVE-2026-63774"
+   ],
+   "first_seen": "2026-11-06T14:55:05.279628+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Mitigation For users who are currently using PowerSYSTEM Center 2024, Subnet Solutions recommends users upgrade to PowerSYSTEM Center 2026 Update 1.1.",
+    "Mitigation Subnet Solutions recommends users update to PowerSYSTEM Center 2020 Update 30.",
+    "Mitigation Subnet Solutions recommends users update to PowerSYSTEM Center 2026 Update 1.1.",
+    "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies ."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "780955fd1e41",
+   "source": "cisa",
+   "source_name": "CISA Cybersecurity Advisories",
+   "official": true,
+   "source_type": "advisory",
+   "title": "Post-Quantum Questions to Ask Your Vendors",
+   "link": "https://www.cisa.gov/resources-tools/resources/post-quantum-questions-ask-your-vendors",
+   "published": "2026-11-05T12:00:00+00:00",
+   "summary": "CISA, the Australian Signals Directorate’s Australian Cyber Security Centre (ASD’s ACSC) and the National Security Agency (NSA) released joint guidance and an accompanying quick-reference list to help organizations assess vendor readiness for transitioning to post-quantum cryptography (PQC). As quantum computing…",
+   "image": null,
+   "cves": [],
+   "first_seen": "2026-11-06T14:55:05.279628+00:00",
+   "image_checked": true,
+   "instructions": [
+    "To protect their systems and data, organizations must plan for and transition to PQC—which includes algorithms capable of withstanding both classical computing and quantum-enabled threats—before CRQCs become available.",
+    "Cryptography is also embedded in systems and devices that are difficult to update, tied to long asset lifecycles, and require vendor support or replacement—such as industrial control systems and Internet of Things (IoT) devices."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "09b518162789",
+   "source": "cisa",
+   "source_name": "CISA Cybersecurity Advisories",
+   "official": true,
+   "source_type": "advisory",
+   "title": "US Government Partners Urge Hardening Industrial Refrigeration and Cold Chain Monitoring Systems",
+   "link": "https://www.cisa.gov/resources-tools/resources/us-government-partners-urge-hardening-industrial-refrigeration-and-cold-chain-monitoring-systems",
+   "published": "2026-11-05T12:00:00+00:00",
+   "summary": "Overview The Cybersecurity and Infrastructure Security Agency (CISA), Federal Bureau of Investigation (FBI), Health and Human Services (HHS), U.S. Department of Agriculture (USDA), and the Department of Transportation (DoT)—hereafter referred to as “the authoring organizations”—are aware of malicious cyber activity…",
+   "image": null,
+   "cves": [],
+   "first_seen": "2026-11-06T14:55:05.279628+00:00",
+   "image_checked": true,
+   "instructions": [
+    "To strengthen system security, owners and operators should review the following resources and implement recommended mitigations:",
+    "These mitigations align with the Cross-Sector Cybersecurity Performance Goals (CPGs) , developed by CISA and the National Institute of Standards and Technology (NIST).",
+    "The CPGs provide a minimum set of practices and protections that CISA and NIST recommend all organizations implement:",
+    "Should remote access be necessary, protect it by using a firewall or edge device and updating it to the latest version to reduce security vulnerabilities."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "1b4641ca3728",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -4569,22 +4555,6 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt1200a12331479a63/6aeb910a69108565761c02f3/metal_guardrails-viti-GettyImages-897806150.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-04T22:10:20.631939+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "c5d4f7a3fa54",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "Undead Software Projects Continue to Raise Security Risks",
-   "link": "https://www.darkreading.com/application-security/undead-software-projects-raise-security-risks",
-   "published": "2026-10-30T14:10:37+00:00",
-   "summary": "A security firm patched a decade-old app to prevent the takeover of millions of machines, highlighting that abandoned domains remain a boon to attackers.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltd40811c92b905082/6ae3b49914ffedf86f1c84cc/zombies-in-graveyard-zef_art-shutterstock.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-10-30T14:56:06.914594+00:00",
    "instructions": [],
    "instructions_checked": true
   },
@@ -4873,6 +4843,22 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt40a50320ed3d3a77/6aeb310312acd3feff711f6e/rogue_AO_bot_Chris_Light_Alamy.png?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-04T17:19:01.179483+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "5c794c08b581",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "Why Europe's Freezer Hacks Spread So Far, So Fast",
+   "link": "https://www.darkreading.com/ics-ot-security/europes-freezer-hacks-spread-so-far-so-fast",
+   "published": "2026-11-06T14:00:00+00:00",
+   "summary": "Europe's supermarket freezer hacks show how security issues can cascade across an industry, disrupting supply chains at scale.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt888d802e435faf7a/6aecff1baf87734cefe9fe4c/Supermarket_freezer_aise-bernardbodo-GettyImages-1393629140.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-06T14:55:05.279628+00:00",
    "instructions": [],
    "instructions_checked": true
   },
@@ -5492,6 +5478,26 @@
    "instructions_checked": true
   },
   {
+   "id": "28001d41675b",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "DigiCert Data Breach Impacts Business Customer Information",
+   "link": "https://www.securityweek.com/digicert-data-breach-impacts-business-customer-information/",
+   "published": "2026-11-06T14:00:07+00:00",
+   "summary": "Hackers created an account on an internal system and accessed names, email addresses, phone numbers, and business addresses. The post DigiCert Data Breach Impacts Business Customer Information appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/05/DigiCert.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-06T14:55:05.279628+00:00",
+   "image_checked": true,
+   "instructions": [
+    "SecurityWeek has emailed the company for information on the matter and will update this article if it responds.",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "1befc30403b6",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -5612,22 +5618,23 @@
    "instructions_checked": true
   },
   {
-   "id": "5e82c4f3b3cc",
+   "id": "3819f6707361",
    "source": "securityweek",
    "source_name": "SecurityWeek",
    "official": false,
    "source_type": "news",
-   "title": "In Other News: Anthropic Breach Dispute, UEFI Flaw Hits Most Servers, Cloudflare AI Data Leak",
-   "link": "https://www.securityweek.com/in-other-news-anthropic-breach-dispute-uefi-flaw-hits-most-servers-cloudflare-ai-data-leak/",
-   "published": "2026-10-30T14:41:35+00:00",
-   "summary": "Noteworthy stories that might have slipped under the radar: Iran eyed in military freezer hacks, Copenhagen University breach, AI-powered malware. The post In Other News: Anthropic Breach Dispute, UEFI Flaw Hits Most Servers, Cloudflare AI Data Leak appeared first on SecurityWeek.",
+   "title": "In Other News: Trezor Implant, LLMJacking Bills Hit $1M, SAP Flaws Weaponized Within Days",
+   "link": "https://www.securityweek.com/in-other-news-trezor-implant-llmjacking-bills-hit-1m-sap-flaws-weaponized-within-days/",
+   "published": "2026-11-06T14:40:09+00:00",
+   "summary": "Noteworthy stories that might have slipped under the radar: Synology warns about NAS ransomware attacks, Flowise ‘hello’ attacks, Chainalysis breach impact expands. The post In Other News: Trezor Implant, LLMJacking Bills Hit $1M, SAP Flaws Weaponized Within Days appeared first on SecurityWeek.",
    "image": "https://www.securityweek.com/wp-content/uploads/2023/10/cybersecurity-news.jpg",
    "cves": [],
-   "first_seen": "2026-10-30T14:56:06.914594+00:00",
+   "first_seen": "2026-11-06T14:55:05.279628+00:00",
    "image_checked": true,
    "instructions": [
-    "Cloudflare fixed the issue after Knostic researcher Gadi Evron reported it via HackerOne, found no evidence of deliberate exploitation, and recommends that SGLang operators update to version 0.5.22 or later.",
-    "Rockwell is also offering assessments and advisory services to help OEMs find gaps, set up governance processes, and align with standards such as IEC 62443.",
+    "The company has not identified the specific flaw beyond pointing to its Synology-SA-24:20 advisory.",
+    "Synology recommends that anyone on a vulnerable release update DSM right away and turn on automatic updates.",
+    "Initial access mainly came from stolen or exposed cloud credentials and API keys, and in one intrusion the attackers exploited a LiteLLM vulnerability (CVE-2026-40217) to upgrade ordinary keys to full admin credentials.",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
@@ -5878,28 +5885,6 @@
     "According to Moelans, a software update is not enough to fully resolve the weakness, and the affected equipment also needs to be physically modified.",
     "According to Beaumont, many of the devices are end-of-life and have no available patch.",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "8258efe8a7ee",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Passkeys Are Better Than Passwords. But They Are Not Enough.",
-   "link": "https://www.securityweek.com/passkeys-are-better-than-passwords-but-they-are-not-enough/",
-   "published": "2026-10-30T14:00:00+00:00",
-   "summary": "As organizations eliminate passwords, attackers will adapt. Instead of attacking the authenticator directly, they will look for opportunities around it. The post Passkeys Are Better Than Passwords. But They Are Not Enough. appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/10/Passkey-Password-Authentication.jpg",
-   "cves": [],
-   "first_seen": "2026-10-30T14:56:06.914594+00:00",
-   "image_checked": true,
-   "instructions": [
-    "But it does not answer a more fundamental question: Just because someone successfully authenticated, should we continue to trust that identity ?",
-    "A perfectly functioning authentication mechanism cannot compensate for an identity that should never have been trusted.",
-    "The question cannot simply be, “Did this user authenticate successfully?” It must also be, “Do we still have sufficient evidence to trust this identity and its activity?” Layer Identity Threat Detection on Top This is where identity threat detection complements passkeys.",
-    "The Future of Identity Security Must Go Beyond Authentication Passkeys and identity threat detection address distinct parts of the identity attack surface."
    ],
    "instructions_checked": true
   },
