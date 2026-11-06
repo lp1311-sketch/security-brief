@@ -3724,6 +3724,27 @@
    "instructions_checked": true
   },
   {
+   "id": "a97be9095b72",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Fake security tools on GitHub push backdoors and infostealers",
+   "link": "https://www.bleepingcomputer.com/news/security/fake-security-tools-on-github-push-backdoors-and-infostealers/",
+   "published": "2026-11-06T18:46:52+00:00",
+   "summary": "Cybersecurity professionals are being targeted with infected security projects on GitHub that deploy a backdoor and information stealer malware.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/06/github.jpg",
+   "cves": [],
+   "first_seen": "2026-11-06T18:51:36.584313+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Changes a Windows registry value to disable Smart App Control",
+    "Restores original ntdll.dll code from disk to remove hooks added by security software",
+    "Web, the malware also attempts to remove ESET, McAfee, and Malwarebytes antivirus tools from the infected computer, tries to disconnect them from their update servers, and also interferes with Windows backups."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "97d7db0e7e4a",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4653,6 +4674,22 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt73242ae0d40b68c0/6aea0c8226a0725a0631618d/maze-mikkelwilliam-GettyImages-1420679447.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-03T17:20:53.929523+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "3c3dad9eec40",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "AI Gave Your Incident Archive a Second Job",
+   "link": "https://www.darkreading.com/cyber-risk/ai-gave-your-incident-archive-second-job",
+   "published": "2026-11-06T18:27:30+00:00",
+   "summary": "Security records are increasingly being used by vendors to train their models, creating new risks for enterprises.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltfb0f3465591962e4/6aee1cd77073b469ffb052f4/archive_-3alexd-Getty-95769788.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-06T18:51:36.584313+00:00",
    "instructions": [],
    "instructions_checked": true
   },
@@ -5688,6 +5725,25 @@
    "instructions": [
     "Ivanti added them on Thursday to its October 13 advisory describing CVE-2026-104935, an authentication bypass in the VPN product.",
     "Organizations that installed them in response to the initial advisory will need to upgrade again. “The latest release addresses all vulnerabilities which were chained and exploited in the wild,” Ivanti said.",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "d9a0f8bfa397",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Japan Announces Emergency Cybersecurity Package Following a Wave of Attacks",
+   "link": "https://www.securityweek.com/japan-announces-emergency-cybersecurity-package-following-a-wave-of-attacks/",
+   "published": "2026-11-06T18:28:41+00:00",
+   "summary": "The emergency package comes after dozens of companies and government agencies were hit by unauthorized access to their systems and leaks of client data, prompting uneasiness across Japan. The post Japan Announces Emergency Cybersecurity Package Following a Wave of Attacks appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/11/Geopolitics-Cybersecurity.jpg",
+   "cves": [],
+   "first_seen": "2026-11-06T18:51:36.584313+00:00",
+   "image_checked": true,
+   "instructions": [
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
