@@ -1,6 +1,48 @@
 {
  "items": [
   {
+   "id": "2e6b2a2a900e",
+   "title": "MC1193692: Microsoft 365: Enrich profile cards with custom properties from third-party systems",
+   "link": "https://mc.merill.net/message/MC1193692",
+   "summary": "Starting January 2027, Microsoft 365 admins can add up to 10 custom properties from external systems to profile cards via Microsoft Graph People connectors. This feature is off by default, requires admin setup, and enhances user profiles for better collaboration. Future updates will support SAP SuccessFactors and…",
+   "published": "2026-11-06T18:23:42+00:00"
+  },
+  {
+   "id": "e1f03b804b7c",
+   "title": "MC1230889: Outlook for Windows report retirement in the Exchange admin center",
+   "link": "https://mc.merill.net/message/MC1230889",
+   "summary": "The Outlook for Windows Usage Report in the Exchange admin center will retire in early April 2027. Admins must use the Microsoft 365 admin center for Outlook usage data. No user impact or admin action is needed, but update any documentation referencing the retired report.",
+   "published": "2026-11-06T17:17:16+00:00"
+  },
+  {
+   "id": "b6fa8a70fa65",
+   "title": "MC1405506: Microsoft OneNote: Multimodal recording in Copilot Notebooks on Windows",
+   "link": "https://mc.merill.net/message/MC1405506",
+   "summary": "Microsoft is introducing multimodal capture in Copilot Notebooks on Windows, enabling users to record audio, images, and notes together. Microsoft 365 Copilot then generates structured insights like summaries and action items. The feature rolls out worldwide by end of November 2026, requires a Copilot license, and can…",
+   "published": "2026-11-06T17:12:04+00:00"
+  },
+  {
+   "id": "6742a5bccaca",
+   "title": "MC1307979: Microsoft 365 Copilot: Copilot chat pane and Summary feature in OneNote Mobile (iPhone)",
+   "link": "https://mc.merill.net/message/MC1307979",
+   "summary": "Microsoft 365 Copilot introduces a new chat pane and Summary feature in OneNote Mobile (iPhone) for users with Copilot (Premium) licenses, enabling AI-generated summaries and note interaction. Rollout begins end of November 2026, with existing Copilot policies applying and no admin action required before deployment.",
+   "published": "2026-11-06T17:09:16+00:00"
+  },
+  {
+   "id": "586766a64863",
+   "title": "MC1309746: Microsoft 365 Copilot: Copilot chat pane and Summary feature in OneNote Mobile (Android)",
+   "link": "https://mc.merill.net/message/MC1309746",
+   "summary": "Microsoft 365 Copilot introduces a new Copilot chat pane and Summary feature in OneNote Mobile (Android) for users with Premium licenses, enabling AI-generated summaries and Q&A on notes. Rollout begins end of November 2026, with existing Copilot policies applying and no admin action required before deployment.",
+   "published": "2026-11-06T17:06:43+00:00"
+  },
+  {
+   "id": "10b950ea59d4",
+   "title": "MC1521609: Create sales pitches with Copilot in PowerPoint",
+   "link": "https://mc.merill.net/message/MC1521609",
+   "summary": "A new Copilot skill in PowerPoint helps users create structured sales pitch presentations for various customer scenarios. It rolls out worldwide from late October to late November 2026 on Win32, Mac, and Web. No admin action or compliance concerns are required.",
+   "published": "2026-11-06T16:54:35+00:00"
+  },
+  {
    "id": "275dd0dcc05e",
    "title": "MC1540526: Microsoft Online Services Subprocessor Disclosure Update",
    "link": "https://mc.merill.net/message/MC1540526",
@@ -204,13 +246,6 @@
    "published": "2026-11-04T22:06:47+00:00"
   },
   {
-   "id": "21ade0fec1aa",
-   "title": "MC1217640: Microsoft Purview | Information Protection - Content Explorer: Unscanned data and Classification History summary metrics",
-   "link": "https://mc.merill.net/message/MC1217640",
-   "summary": "Microsoft Purview planned new summary metrics in Content Explorer to show unscanned files and classification history, aiding admins in data governance. Public preview was set for late July 2026, but general availability was canceled. No action is required; the feature would have been enabled by default.",
-   "published": "2026-11-04T20:12:11+00:00"
-  },
-  {
    "id": "f968cba4120d",
    "title": "MC1519122: Microsoft Copilot: UBB models in Chat and Word, Excel, and PowerPoint via the model selector",
    "link": "https://mc.merill.net/message/MC1519122",
@@ -384,41 +419,6 @@
    "link": "https://mc.merill.net/message/MC1266027",
    "summary": "Microsoft Teams will introduce a new minimized meeting experience by late November 2026, allowing users to raise hands and send reactions without restoring the full window. Two minimized views—expanded (shows up to four videos) and compact (no videos)—are enabled by default, with no impact on screen sharing.",
    "published": "2026-11-03T17:42:33+00:00"
-  },
-  {
-   "id": "1e8cfe1f105b",
-   "title": "MC1521613: Microsoft Teams: Streaming switchboard for NDI sources in meetings and events",
-   "link": "https://mc.merill.net/message/MC1521613",
-   "summary": "Microsoft Teams will introduce a streaming switchboard allowing event producers to select and stream up to eight NDI sources in meetings and events, available worldwide by mid-November 2026. Admins must enable NDI streaming via policy, and users must activate production capabilities in Teams to use this feature.",
-   "published": "2026-11-03T17:40:52+00:00"
-  },
-  {
-   "id": "70fb5053478b",
-   "title": "MC1528014: Microsoft Teams: Two presenters can share their screens or windows simultaneously in meetings",
-   "link": "https://mc.merill.net/message/MC1528014",
-   "summary": "Microsoft Teams will allow two presenters to share screens or windows simultaneously in meetings starting early December 2026. This feature, enabled by default, lets participants view both shared contents at once. Admins can control this setting at the tenant level and organizers can manage it per meeting.",
-   "published": "2026-11-03T17:39:13+00:00"
-  },
-  {
-   "id": "cb1f8b01eb5b",
-   "title": "MC1530615: Microsoft Teams: Report guest invitations for security concerns",
-   "link": "https://mc.merill.net/message/MC1530615",
-   "summary": "Microsoft Teams will let users report suspicious guest invitations for security concerns starting mid-November 2026. Reports go to IT admins via the Teams admin center. No action is needed if \"Report a security concern\" is already enabled in messaging policies, which control this feature.",
-   "published": "2026-11-03T17:37:27+00:00"
-  },
-  {
-   "id": "db4b6103171b",
-   "title": "MC1518033: Microsoft Teams: Onboarding workflow for new team members",
-   "link": "https://mc.merill.net/message/MC1518033",
-   "summary": "Microsoft Teams will introduce an onboarding workflow to automatically connect new members to relevant channels, improving engagement and onboarding speed. Rollout starts mid-November 2026 for Targeted Release and early December 2026 for General Availability. No admin action is required.",
-   "published": "2026-11-03T17:35:48+00:00"
-  },
-  {
-   "id": "69adda83cbb8",
-   "title": "MC1470887: Microsoft Teams: Personal message reminders for chat and channels",
-   "link": "https://mc.merill.net/message/MC1470887",
-   "summary": "Microsoft Teams will introduce personal message reminders for chat and channel messages starting mid-November 2026, enabling users to create, manage, and receive notifications for reminders privately. The feature is enabled by default, requires no admin action, and supports desktop and mobile platforms.",
-   "published": "2026-11-03T17:32:11+00:00"
   }
  ]
 }
