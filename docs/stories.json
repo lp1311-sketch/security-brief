@@ -1,14 +1,24 @@
 {
  "stories": [
   {
-   "id": "ca1a9396bb65",
-   "title": "SonicWall warns of new SSL-VPN MFA bypass flaw exploited in attacks",
-   "summary": "SonicWall has released security updates to fix seven vulnerabilities in SonicOS firewalls, including an SSL-VPN authentication bypass flaw exploited in attacks.",
-   "priority": "High",
+   "id": "986edfc864db",
+   "title": "SonicWall Patches Exploited SonicOS Vulnerability That Weakens VPN Logins",
+   "summary": "CVE-2026-19868 can let attackers holding credentials for a different login method get past SAML checks, including SAML-enforced MFA. The post SonicWall Patches Exploited…",
+   "priority": "Critical",
    "category": "Patch Radar",
-   "date": "07 Nov 2026, 00:00 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/ca1a9396bb65.html"
+   "date": "07 Nov 2026, 10:16 UTC",
+   "sources": "SecurityWeek, BleepingComputer",
+   "url": "story/986edfc864db.html"
+  },
+  {
+   "id": "717f80da6fa4",
+   "title": "WordPress Schwachstellen CVE-2026-119977 u. CVE-2026-100109",
+   "summary": "Es gibt derzeit wohl zwei Schwachstellen im Umfeld von WordPress, die man als Administrator kennen sollte. Einmal kann WordPress beim Core-Update in bestimmten…",
+   "priority": "Critical",
+   "category": "Patch Radar",
+   "date": "07 Nov 2026, 10:45 UTC",
+   "sources": "Born's IT and Windows Blog, The Hacker News, CISA Cybersecurity Advisories",
+   "url": "story/717f80da6fa4.html"
   },
   {
    "id": "3819f6707361",
@@ -29,16 +39,6 @@
    "date": "05 Nov 2026, 05:17 UTC",
    "sources": "The Hacker News, CISA Cybersecurity Advisories",
    "url": "story/2a5b7d5a686a.html"
-  },
-  {
-   "id": "349817163ae5",
-   "title": "CISA Confirms Hackers Exploiting WordPress Core Flaw During Software Upgrades",
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a security flaw in WordPress Core to the Known Exploited Vulnerabilities (KEV) catalog, citing…",
-   "priority": "Critical",
-   "category": "Patch Radar",
-   "date": "04 Nov 2026, 05:43 UTC",
-   "sources": "The Hacker News, CISA Cybersecurity Advisories",
-   "url": "story/349817163ae5.html"
   },
   {
    "id": "9fe769e3c933",
@@ -231,16 +231,6 @@
    "url": "story/1779cfdf0141.html"
   },
   {
-   "id": "68af6446b07c",
-   "title": "Russia-Linked Hackers Hit iOS, Android Devices With Exploit Chains via Watering Holes",
-   "summary": "The large-scale watering hole campaign has been targeting entities in the US and Europe, mainly in Ukraine. The post Russia-Linked Hackers Hit iOS, Android Devices With…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "05 Nov 2026, 10:37 UTC",
-   "sources": "SecurityWeek, Ars Technica Security, The Hacker News, BleepingComputer",
-   "url": "story/68af6446b07c.html"
-  },
-  {
    "id": "a665869d02d2",
    "title": "Zyxel GS1900 Patch Fails to Block Zero-Day Exploit Allowing Root Command Execution",
    "summary": "Zyxel GS1900 network switches that received the vendor's earlier fix for an actively exploited flaw are still open to the exploit attackers used, researchers at Binarly…",
@@ -431,6 +421,16 @@
    "url": "story/bcd0f8e51ff4.html"
   },
   {
+   "id": "68af6446b07c",
+   "title": "Russia-Linked Hackers Hit iOS, Android Devices With Exploit Chains via Watering Holes",
+   "summary": "The large-scale watering hole campaign has been targeting entities in the US and Europe, mainly in Ukraine. The post Russia-Linked Hackers Hit iOS, Android Devices With…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "05 Nov 2026, 10:37 UTC",
+   "sources": "SecurityWeek, Ars Technica Security, The Hacker News, BleepingComputer",
+   "url": "story/68af6446b07c.html"
+  },
+  {
    "id": "89af0224359d",
    "title": "OpenAI Finds GPT-6 Astra Quietly Holding Back on Internal Red-Teaming, Exploit Tasks",
    "summary": "OpenAI says its Critical-rated cyber model met fewer hidden task goals when work was framed as AI safety research, often silently. The post OpenAI Finds GPT-6 Astra…",
@@ -609,6 +609,16 @@
    "date": "31 Oct 2026, 12:01 UTC",
    "sources": "The Hacker News",
    "url": "story/1f2870fb86df.html"
+  },
+  {
+   "id": "130145bcfb89",
+   "title": "British soldier ignored order to pull his SIM card, then got blackmailed",
+   "summary": "An Estonian newspaper recently revealed that a British soldier disobeyed a direct order to remove the SIM card from his cellphone before being deployed to a part of…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "07 Nov 2026, 11:00 UTC",
+   "sources": "Ars Technica Security",
+   "url": "story/130145bcfb89.html"
   },
   {
    "id": "46c76064dfeb",
@@ -859,26 +869,6 @@
    "date": "05 Nov 2026, 12:00 UTC",
    "sources": "CISA Cybersecurity Advisories",
    "url": "story/09b518162789.html"
-  },
-  {
-   "id": "a190c692796e",
-   "title": "CISO Conversations: Ryan Davis – The Unknown Is Where Security Meets Reality",
-   "summary": "Ryan Davis went from hacking his school’s network to running security at New Charter Technologies. What worries him now is shadow AI. The post CISO Conversations: Ryan…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "05 Nov 2026, 11:00 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/a190c692796e.html"
-  },
-  {
-   "id": "806a92e4d68b",
-   "title": "Zyxel Switch Hacks Blamed on Patched Flaw Actually Exploited a Zero-Day",
-   "summary": "Tracked as CVE-2026-107441, the out-of-bounds write flaw could allow attackers to execute OS commands via crafted HTTP requests. The post Zyxel Switch Hacks Blamed on…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "05 Nov 2026, 10:56 UTC",
-   "sources": "SecurityWeek, BleepingComputer",
-   "url": "story/806a92e4d68b.html"
   },
   {
    "id": "350327fdd7cd",
@@ -1479,6 +1469,26 @@
    "date": "05 Nov 2026, 12:58 UTC",
    "sources": "SecurityWeek",
    "url": "story/8384bfde04a0.html"
+  },
+  {
+   "id": "a190c692796e",
+   "title": "CISO Conversations: Ryan Davis – The Unknown Is Where Security Meets Reality",
+   "summary": "Ryan Davis went from hacking his school’s network to running security at New Charter Technologies. What worries him now is shadow AI. The post CISO Conversations: Ryan…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "05 Nov 2026, 11:00 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/a190c692796e.html"
+  },
+  {
+   "id": "806a92e4d68b",
+   "title": "Zyxel Switch Hacks Blamed on Patched Flaw Actually Exploited a Zero-Day",
+   "summary": "Tracked as CVE-2026-107441, the out-of-bounds write flaw could allow attackers to execute OS commands via crafted HTTP requests. The post Zyxel Switch Hacks Blamed on…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "05 Nov 2026, 10:56 UTC",
+   "sources": "SecurityWeek, BleepingComputer",
+   "url": "story/806a92e4d68b.html"
   },
   {
    "id": "96a1ace9f58c",
@@ -2399,16 +2409,6 @@
    "date": "31 Oct 2026, 14:05 UTC",
    "sources": "BleepingComputer",
    "url": "story/b35f9e575d4b.html"
-  },
-  {
-   "id": "f0c80b908a88",
-   "title": "Syrian Hacker Gets Prison Time in US After Over a Decade on the Run",
-   "summary": "A US court sentenced Syrian hacker Ahmad Umar Agha to 42 months for pro-Assad attacks on media, businesses, and government entities. The post Syrian Hacker Gets Prison…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "31 Oct 2026, 11:00 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/f0c80b908a88.html"
   }
  ]
 }
