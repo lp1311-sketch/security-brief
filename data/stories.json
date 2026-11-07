@@ -187,30 +187,6 @@
    "instructions_checked": true
   },
   {
-   "id": "a3e72f4c8da9",
-   "source": "borncity",
-   "source_name": "Born's IT and Windows Blog",
-   "official": false,
-   "source_type": "news",
-   "title": "Sicherheitslücke: Network Agent für Kaspersky Security Center",
-   "link": "https://borncity.com/blog/2026/10/31/sicherheitsluecke-network-agent-fuer-kaspersky-security-center/",
-   "published": "2026-10-31T06:34:09+00:00",
-   "summary": "Sicherheitsanbieter Kaspersky hat zum 29. Oktober 2026 einen Fix für eine Sicherheitslücke im Network Agent für das Windows Kaspersky Security Center veröffentlicht. Die Sicherheitslücke (CVE-2026-88941. CVSSv40: 6.2) in diesem Unternehmensprodukt kann zwar per Update geschlossen werden, erfolgt aber manuellen…",
-   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
-   "cves": [
-    "CVE-2026-88941"
-   ],
-   "first_seen": "2026-10-31T06:50:01.922788+00:00",
-   "image_checked": true,
-   "instructions": [
-    "WhatsApp Web: Pakistan warnt mit Advisory 22 vor Phishing und Schadsoftware News 31.",
-    "CVSSv40: 6.2) in diesem Unternehmensprodukt kann zwar per Update geschlossen werden, erfolgt aber manuellen Eingriffe.",
-    "Heiko merkte dazu an, dass ein Patch zwar vorhanden sei, dieser aber \"manuell\" via Management Server ausgerollt werden muss (Produktupgrade).",
-    "Gleichzeitig sei ein Upgrade des Kaspersky Security Centers notwendig."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "00b815fcf491",
    "source": "borncity",
    "source_name": "Born's IT and Windows Blog",
@@ -1825,6 +1801,25 @@
     "With exploitation now officially confirmed by CISA, Federal Civilian Executive Branch (FCEB) agencies have time until November 6, 2026, to apply the fixes.",
     "\"WordPress Core contains a time-of-check time-of-use (TOCTOU) race condition vulnerability that could allow unauthenticated attackers to execute code on the server during the upgrade window,\" CISA said.",
     "That said, it does require an attacker to exploit a brief window during a complete Core update that could allow unauthenticated code execution."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "804a43c3361e",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Claude Code's “Don't Ask Again” File Exposes Passwords and Keys in 1,122 Public Copies on GitHub",
+   "link": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html",
+   "published": "2026-11-07T06:44:17+00:00",
+   "summary": "Passwords and API keys that developers typed into commands they approved in Claude Code are sitting in public GitHub repositories, where anyone can read them. When a user selects \"Yes, and don't ask again,\" Anthropic's AI coding assistant can save the command, word-for-word, including the secret, in a project settings…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZH3vYLZb9lP7mDLqy2h-upzdComeWIfjDX5siFUO3FM2HlUs03OTwirA1R2uzOZq_clptIVBsoaJNXIuf8LlTbXHFvzBJLRl1l3mqGVesHjgdmD86S_c-k2JY_t56xZqI0bnN6jXRDr92KlMw6X5BHzm5hqogpWflsERi9zrsMHSS_abAcvZMcUGovd8/s1600/claude-code.jpg",
+   "cves": [],
+   "first_seen": "2026-11-07T07:42:46.319909+00:00",
+   "instructions": [
+    "The researchers' advice is to rotate first: change every password, token, and key the file has ever held, then clean up.",
+    "Rotate every password, token and key the files have ever held, before cleaning up."
    ],
    "instructions_checked": true
   },
