@@ -5136,6 +5136,27 @@
    "instructions_checked": true
   },
   {
+   "id": "e115b44724e2",
+   "source": "msblog",
+   "source_name": "Microsoft Security Blog",
+   "official": false,
+   "source_type": "vendor_blog",
+   "title": "ARTEX abuse expands as cybercriminals target financial sector",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/06/artex-abuse-expands-as-cybercriminals-target-financial-sector/",
+   "published": "2026-11-07T02:44:34+00:00",
+   "summary": "In October 2026, the financially motivated threat actor Storm-3358 began targeting organizations in the financial sector using the agentic AI offensive framework ARTEX. The threat actor that Microsoft Threat Intelligence tracks as Storm-3358 is a Cambodia-based intrusion cluster that primarily targets financial…",
+   "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/11/Fig1-ARTEX-commands-1024x180.webp",
+   "cves": [],
+   "first_seen": "2026-11-07T04:31:33.611089+00:00",
+   "instructions": [
+    "As these capabilities evolve, defenders must similarly use AI to investigate and respond across large environments.",
+    "These reports provide intelligence, protection information, and recommended actions to prevent, mitigate, or respond to associated threats found in customer environments.",
+    "This query looks for new files being downloaded using curl. curl also has legitimate uses, so files and hosts should be reviewed to identify potentially malicious activity.",
+    "Microsoft has observed Storm-3358 use ARTEX in combination with conventional automated tools to scan systems connected to the public internet, exploit security flaws including anonymous file upload and server-side request forgery (SSRF), and install open-source remote access trojans (RATs)."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "fd515affb539",
    "source": "schneier",
    "source_name": "Schneier on Security",
