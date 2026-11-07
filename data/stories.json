@@ -3342,6 +3342,26 @@
    "instructions_checked": true
   },
   {
+   "id": "ded94754be20",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Hackers pull off $133 million French bank heist via service provider",
+   "link": "https://www.bleepingcomputer.com/news/security/hackers-pull-off-133-million-french-bank-heist-via-service-provider/",
+   "published": "2026-11-07T15:25:35+00:00",
+   "summary": "French cooperative bank Crédit Mutuel Arkéa was targeted in a cyberattack that enabled fraudulent transactions of up to $133 million, forcing it to respond by suspending certain systems.v",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/06/financial-theft.jpg",
+   "cves": [],
+   "first_seen": "2026-11-07T15:59:34.891878+00:00",
+   "image_checked": true,
+   "instructions": [
+    "All suspicious messages should be verified by calling the bank adviser directly.",
+    "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "955f969e9dae",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -3458,30 +3478,6 @@
     "mSecure password manager hack prompts password reset warnings",
     "mSeven Software is warning current and former mSecure password manager customers to change passwords, reset two-factor authentication, and remove passkeys following a cyberattack in which a hacker reportedly stole an encrypted customer database..",
     "\"In response, mSeven quickly launched an investigation, took steps to mitigate the issue, and engaged external cybersecurity experts to assist."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "845cf24b8961",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "New Android SMS of Death exploit can remotely crash unpatched phones",
-   "link": "https://www.bleepingcomputer.com/news/security/new-android-sms-of-death-exploit-can-remotely-crash-unpatched-phones/",
-   "published": "2026-10-31T15:35:11+00:00",
-   "summary": "A security researcher has released a proof-of-concept exploit for a recently patched Android vulnerability, dubbed \"SMS of Death\" and tracked as CVE-2026-58882, that lets attackers remotely disrupt cellular service or crash phones by sending a specially crafted text message.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2024/01/31/image_(2).jpg",
-   "cves": [
-    "CVE-2026-58882"
-   ],
-   "first_seen": "2026-10-31T15:35:41.153544+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Now that a working proof-of-concept exploit has been released, Android users are strongly advised to install the latest security updates to protect their devices.",
-    "On one Android 12 device, the phone rebooted into recovery mode approximately every 90 seconds, requiring the user to perform a factory reset to recover.",
-    "A GitHub contributor named Sakis discovered a way to remove the malicious messages using Android Debug Bridge (ADB), but the process requires more advanced technical knowledge and access to a computer.",
-    "The patch also deletes malicious messages from the SMS database to prevent them from triggering repeated crashes."
    ],
    "instructions_checked": true
   },
