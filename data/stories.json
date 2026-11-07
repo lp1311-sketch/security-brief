@@ -185,28 +185,6 @@
    "instructions_checked": true
   },
   {
-   "id": "4749795f0d08",
-   "source": "borncity",
-   "source_name": "Born's IT and Windows Blog",
-   "official": false,
-   "source_type": "news",
-   "title": "HTTP2Shell: Brotli-Sicherheitslücke CVE-2026-111497 über Node.js hinaus prüfen",
-   "link": "https://borncity.com/blog/2026/10/31/http2shell-brotli-sicherheitsluecke-ueber-node-js-hinaus-pruefen/",
-   "published": "2026-10-31T17:14:04+00:00",
-   "summary": "Seit einigen Tagen ist ja eine Schwachstelle (CVE-2026-111497) im Brotli-Decoder von Node.js bekannt geworden. Es gibt zwar Updates, aber inzwischen ist klar, dass die Brotli-Bibliotheken in mehr Software-Paketen als Node.js verwendet werden. Verantwortliche sollten also überprüfen, wo Brotli überall eingesetzt ……",
-   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
-   "cves": [
-    "CVE-2026-111497"
-   ],
-   "first_seen": "2026-10-31T19:11:53.129728+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Nach Anbieter und Komponente patchen: Sicherheitsverantwortliche sollten das entsprechende Hersteller-Update anwenden, die betroffenen Container-Images neu ein- und laufende Workloads erneut bereitstellen.",
-    "Von Microsoft gibt es den Supportbeitrag Patch now: PHP2Shell, Brotli, and eMudhra guidance for customers , der etwas breiter greift und Hinweise auf Windows-Umgebungen enthält."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "00b815fcf491",
    "source": "borncity",
    "source_name": "Born's IT and Windows Blog",
