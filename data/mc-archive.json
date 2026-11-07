@@ -1,6 +1,55 @@
 {
  "items": [
   {
+   "id": "c50ba634e5d1",
+   "title": "MC1480869: Microsoft 365 settings enabled by default for newly created Engage communities",
+   "link": "https://mc.merill.net/message/MC1480869",
+   "summary": "Newly created Microsoft Viva Engage communities will have Microsoft 365 group settings enabled by default, subscribing members to community emails and calendar invites. Rollout completes by November 2026. Community owners can adjust settings via the My Account portal. No admin action is required. Existing communities…",
+   "published": "2026-11-07T00:00:59+00:00"
+  },
+  {
+   "id": "a3622169cbb5",
+   "title": "MC1492166: Microsoft Outlook: New event duplication capability",
+   "link": "https://mc.merill.net/message/MC1492166",
+   "summary": "Microsoft Outlook is adding a \"Duplicate event\" feature, allowing users to quickly create new events based on existing ones without re-entering details. The rollout began in late September 2026 and will complete by early December 2026. No action or compliance changes are required.",
+   "published": "2026-11-06T22:11:03+00:00"
+  },
+  {
+   "id": "211b7a595a4c",
+   "title": "MC1301714: Microsoft Purview | Data Loss Prevention- DLP to restrict processing external emails in M365 Copilot and Copilot Chat",
+   "link": "https://mc.merill.net/message/MC1301714",
+   "summary": "Microsoft Purview is expanding Data Loss Prevention (DLP) to restrict Microsoft 365 Copilot and Copilot Chat from processing emails from external or untrusted domains. This new admin-configurable DLP control, rolling out in public preview June 2026 and general availability June 2027, excludes external emails from…",
+   "published": "2026-11-06T22:04:35+00:00"
+  },
+  {
+   "id": "a838b33ba1a5",
+   "title": "MC1542066: Microsoft 365 Copilot: Changes to custom organizational data in MODS for Workforce Insights",
+   "link": "https://mc.merill.net/message/MC1542066",
+   "summary": "Microsoft 365 is retiring the Workforce Insights endpoint in MODS by November 18, 2026. Custom organizational data will now be ingested via the Microsoft 365 profile endpoint. Organizations using non-public attributes must join a private preview and switch before the deadline to continue data uploads.",
+   "published": "2026-11-06T21:34:19+00:00"
+  },
+  {
+   "id": "1523ce2d96a9",
+   "title": "MC1542062: Copilot Cowork: Power Platform connectors now follow Microsoft 365 admin center settings",
+   "link": "https://mc.merill.net/message/MC1542062",
+   "summary": "Microsoft Copilot Cowork now supports Power Platform connectors managed via the Microsoft 365 admin center, allowing centralized control over connector use with third-party apps. Rollout completes by mid-November 2026. Admins should review and configure connector availability, noting that Power Platform DLP policies…",
+   "published": "2026-11-06T21:32:47+00:00"
+  },
+  {
+   "id": "1762c213bd05",
+   "title": "MC1486291: Microsoft 365 Copilot: new guided Copilot onboarding experience",
+   "link": "https://mc.merill.net/message/MC1486291",
+   "summary": "Microsoft 365 Copilot introduces an optional, admin-led guided onboarding experience for Frontier participants, rolling out late October to November 2026. It personalizes training based on user roles and licenses, requires admin enablement, and supports reporting via Viva Learning to boost adoption and confidence.",
+   "published": "2026-11-06T21:20:50+00:00"
+  },
+  {
+   "id": "c4d5edc1ff0c",
+   "title": "MC1519843: New Outlook for Windows: All Accounts view brings email into a single inbox view",
+   "link": "https://mc.merill.net/message/MC1519843",
+   "summary": "The new Outlook for Windows offers an All Accounts (Unified Inbox) view, letting users see and manage emails from multiple accounts in one inbox without merging mailboxes. Admins can control this feature via a policy in the Microsoft 365 Apps admin center, enabling or disabling it and user override options.",
+   "published": "2026-11-06T21:05:46+00:00"
+  },
+  {
    "id": "2e6b2a2a900e",
    "title": "MC1193692: Microsoft 365: Enrich profile cards with custom properties from third-party systems",
    "link": "https://mc.merill.net/message/MC1193692",
@@ -370,55 +419,6 @@
    "link": "https://mc.merill.net/message/MC1459141",
    "summary": "Microsoft Teams will introduce a new admin policy allowing automatic blocking of identified external meeting bots from joining meetings. Rolling out from mid-September to November 2026, this optional setting enhances meeting security by giving admins control over bot participation without affecting current detection…",
    "published": "2026-11-03T17:56:18+00:00"
-  },
-  {
-   "id": "751c1caf4b92",
-   "title": "MC1447682: Microsoft Teams: Enhanced live captions settings and right-side panel view",
-   "link": "https://mc.merill.net/message/MC1447682",
-   "summary": "Microsoft Teams is enhancing live captions with a new right-side panel view and a consolidated settings menu for easier configuration. Users can auto-enable captions, manage languages, styles, and profanity filtering, and submit feedback. Rollout begins mid-August 2026, completing by November 2026 worldwide, with no…",
-   "published": "2026-11-03T17:54:45+00:00"
-  },
-  {
-   "id": "f6ceb1be645b",
-   "title": "MC1443518: Microsoft Teams: Expanded presenter visibility in Manage what attendees see",
-   "link": "https://mc.merill.net/message/MC1443518",
-   "summary": "Microsoft Teams is enhancing presenter visibility in \"Manage what attendees see\" by allowing event organizers and producers to drag and resize the presenter panel, displaying more presenters simultaneously. This improves monitoring, transitions, and management of large events. The update rolls out from mid-August to…",
-   "published": "2026-11-03T17:52:50+00:00"
-  },
-  {
-   "id": "1c9cbc50495b",
-   "title": "MC1466307: Microsoft Teams: Centralized notification settings for channels",
-   "link": "https://mc.merill.net/message/MC1466307",
-   "summary": "Microsoft Teams will introduce centralized channel notification settings by early October 2026, allowing users to manage all channel notifications from one location. This feature, enabled by default, preserves existing settings and requires no admin action. Users should be informed and internal guidance updated…",
-   "published": "2026-11-03T17:50:37+00:00"
-  },
-  {
-   "id": "4abca9069440",
-   "title": "MC1317836: Microsoft Teams: Unblock users to send message while file is uploading in the background",
-   "link": "https://mc.merill.net/message/MC1317836",
-   "summary": "Microsoft Teams will allow users to send messages while files upload asynchronously in the background, improving real-time collaboration. The rollout starts August 2026 and affects all platforms. No action is required, and existing compliance and security policies remain unchanged.",
-   "published": "2026-11-03T17:46:50+00:00"
-  },
-  {
-   "id": "434e50a2c2c7",
-   "title": "MC1330891: Microsoft Teams: Breakout rooms now supported in meetings with up to 1,000 attendees",
-   "link": "https://mc.merill.net/message/MC1330891",
-   "summary": "Microsoft Teams now supports breakout rooms in meetings with up to 1,000 attendees, allowing up to 100 breakout rooms per meeting. This feature, enabled by default, removes previous meeting size limits for breakout rooms. Rollout begins July 2026, completing by November 2026. No action is required.",
-   "published": "2026-11-03T17:45:38+00:00"
-  },
-  {
-   "id": "3dbe88a2ccdb",
-   "title": "MC1323270: Microsoft Teams: Secure Reliable Transport (SRT) support for Teams meetings and events",
-   "link": "https://mc.merill.net/message/MC1323270",
-   "summary": "Microsoft Teams will support Secure Reliable Transport (SRT) for town halls and live events starting June 2026, offering improved video streaming reliability and backup streams with automatic failover alongside existing RTMP. No user impact; admins must enable SRT via policy settings.",
-   "published": "2026-11-03T17:43:58+00:00"
-  },
-  {
-   "id": "74718284f0bf",
-   "title": "MC1266027: Microsoft Teams: New experience when users minimize the meeting window",
-   "link": "https://mc.merill.net/message/MC1266027",
-   "summary": "Microsoft Teams will introduce a new minimized meeting experience by late November 2026, allowing users to raise hands and send reactions without restoring the full window. Two minimized views—expanded (shows up to four videos) and compact (no videos)—are enabled by default, with no impact on screen sharing.",
-   "published": "2026-11-03T17:42:33+00:00"
   }
  ]
 }
