@@ -1263,27 +1263,6 @@
    "instructions_checked": true
   },
   {
-   "id": "c1c20131973a",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "CVSS 10.0 LXD, MicroCloud Flaw Lets Attackers Impersonate Trusted Clients Without a Private Key",
-   "link": "https://thehackernews.com/2026/11/critical-lxd-and-microcloud-flaw-cvss.html",
-   "published": "2026-11-01T08:51:31+00:00",
-   "summary": "A critical flaw in Canonical's LXD and MicroCloud let an attacker log in as a trusted client without holding that client's private key. To do it, the attacker had to reach their HTTPS API over the network and have the trusted client's public certificate. Once in, the attacker would act as that client, with access to…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4Vibbj3miGalyf0avn_Z2WlLhFh5cC5ImXGFlOL0cisgxikHCcLzHjOVM3qO5B47V3uw62rWH6m6fP1svsH3TCG6i9sS19BIXn1CsDjKK3gnG6VQxkFwghemdeBlV4_AM5Ah-_TJ3T_5Gv-D5Pygrm-B5yzQnDqvIXmI2FyAeuzk57_l6esdhNrTMBj0/s1600/linux-vm.jpg",
-   "cves": [],
-   "first_seen": "2026-11-01T10:09:46.589538+00:00",
-   "instructions": [
-    "Canonical said the fixed LXD point releases were still rolling out from the candidate channel to stable at the time of its advisory, so check the version you actually have after the refresh rather than assume the fix arrived.",
-    "Incus users should move to 7.6.0 , which fixed this flaw along with 17 other security issues.",
-    "On a snap install, run sudo snap refresh lxd and sudo snap refresh microcloud.",
-    "Because the attack requires network access to the API, limiting who can reach it reduces risk until you update."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "d013e25bf406",
    "source": "thehackernews",
    "source_name": "The Hacker News",
