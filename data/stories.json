@@ -179,27 +179,6 @@
    "instructions_checked": true
   },
   {
-   "id": "865fa666afda",
-   "source": "windows-blog",
-   "source_name": "Windows Experience Blog",
-   "official": false,
-   "source_type": "vendor_blog",
-   "title": "Client-side threat detection: how Scareware blocker uncovered malicious notification abuse",
-   "link": "https://blogs.windows.com/msedgedev/2026/11/02/client-side-threat-detection-how-scareware-blocker-uncovered-malicious-notification-abuse/",
-   "published": "2026-11-02T22:05:53+00:00",
-   "summary": "Website notifications were designed to help us stay informed. They can alert you to a new message, remind you of an upcoming event, or share an important update from a service you trust. But scammers are turning this useful browser feature into a persistent channel for fake virus warnings, security alerts, and other…",
-   "image": "https://winblogs.thesourcemediaassets.com/sites/33/2026/11/Picture1.png",
-   "cves": [],
-   "first_seen": "2026-11-02T22:12:00.507525+00:00",
-   "instructions": [
-    "They can alert you to a new message, remind you of an upcoming event, or share an important update from a service you trust.",
-    "As of last month’s rollout of Edge 156, when Microsoft Defender SmartScreen or Scareware blocker detect a scam that was pushed through a notification, Edge will automatically disable notifications from the site that sent it.",
-    "Edge now includes a “Block and report” option for notification permission requests to disrupt the threat at its root.",
-    "Now from the notification permission prompt, you can open the menu next to “Block” and select “Block and report”."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "cc8a3b50b532",
    "source": "windows-blog",
    "source_name": "Windows Experience Blog",
@@ -2428,23 +2407,6 @@
    "instructions_checked": true
   },
   {
-   "id": "d32892baf1f5",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Largest crypto exchange in Brazil confirms cyberattack as millions flow out of platform",
-   "link": "https://therecord.media/mercado-bitcoin-brazil-cryptocurrency-heist",
-   "published": "2026-11-02T21:42:00+00:00",
-   "summary": "Blockchain security companies said more than $46 million left the Mercado Bitcoin platform.",
-   "image": "https://cms.therecord.media/uploads/mercado_bitcoin_92ae590f6f.jpg",
-   "cves": [],
-   "first_seen": "2026-11-02T22:12:00.507525+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "3189ce2b4e22",
    "source": "therecord",
    "source_name": "The Record",
@@ -2762,25 +2724,6 @@
     "To ensure threat actors don't access affected accounts, Chainalysis asked customers to provide trusted IP addresses so they can regain access to the login portal once it is brought back online and reset their credentials.",
     "We will then grant access for users to reset their passwords and rotate API keys to register transactions.",
     "We will require additional protections to access accounts, including that every user will have to reset passwords and rotate API keys as appropriate,\" it added ."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "f6edbcaffade",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Chinese hackers use ARTEX AI in automated attacks against 200 orgs",
-   "link": "https://www.bleepingcomputer.com/news/security/chinese-hackers-use-artex-ai-in-automated-attacks-against-200-orgs/",
-   "published": "2026-11-02T21:40:14+00:00",
-   "summary": "Chinese hackers used ARTEX, an open-source, multi-agent AI penetration-testing framework, in attacks against more than 200 organizations across 14 countries.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/02/pandabot.jpg",
-   "cves": [],
-   "first_seen": "2026-11-02T22:12:00.507525+00:00",
-   "image_checked": true,
-   "instructions": [
-    "According to its latest update, the tool used in the attack on its network was ARTEX AI, which acted autonomously."
    ],
    "instructions_checked": true
   },
@@ -3325,6 +3268,28 @@
    "instructions_checked": true
   },
   {
+   "id": "8d206c962ee8",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "N-able takes cloud platform offline after 30+ \"zero-days\" published",
+   "link": "https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published/",
+   "published": "2026-11-09T21:26:25+00:00",
+   "summary": "N-able has taken its hosted N-central environments offline and urged on-premises customers to shut down their servers after a security researcher publicly disclosed more than 30 alleged zero-day vulnerabilities, including exploits that could let attackers take over vulnerable systems.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2025/08/18/N-able.jpg",
+   "cves": [],
+   "first_seen": "2026-11-09T22:08:37.808384+00:00",
+   "image_checked": true,
+   "instructions": [
+    "One of the most critical exploit chains abuses an unauthenticated XXE vulnerability in N-central's service-import functionality to steal a trusted local session, reset an account password, and execute commands on the server as the nable user.",
+    "Other disclosed exploits include a stored XSS that can execute commands as root when an administrator views malicious patch metadata, and a privilege-escalation flaw that allows code running under the nable account to execute commands as root.",
+    "In a subsequent status update , N-able said it was continuing to develop and validate a hotfix and had found no evidence of active exploitation or unauthorized data access.",
+    "Bales confirmed that N-able executives, including the company's CEO and CTO, contacted him following the disclosure and asked him to remove the GitHub repository and work with the company."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "9c8bdd95a7d5",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -3697,6 +3662,25 @@
    "instructions_checked": true
   },
   {
+   "id": "b9b072a1ed15",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "York University breach exposed personal information dating to 2007",
+   "link": "https://www.bleepingcomputer.com/news/security/york-university-breach-exposed-personal-information-dating-to-2007/",
+   "published": "2026-11-09T21:22:31+00:00",
+   "summary": "York University has announced it suffered a cybersecurity incident in which a threat actor stole personal information people submitted through online forms.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/09/york.jpg",
+   "cves": [],
+   "first_seen": "2026-11-09T22:08:37.808384+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "0fd87eaf33b4",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -3845,6 +3829,22 @@
    "instructions_checked": true
   },
   {
+   "id": "eae4ff98ab3e",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "Microsoft Fixes RCE Bug in Windows Paint After Weeks of Confusion",
+   "link": "https://www.darkreading.com/application-security/microsoft-rce-bug-windows-paint-confusion",
+   "published": "2026-11-09T21:12:24+00:00",
+   "summary": "Last month, Microsoft disclosed a vulnerability in Microsoft Paint, but messaging regarding a patch was unclear.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt8b872cbcbcd2dcf7/6af22bc90de73971ce9d3cd2/pink_paint-Olga_Yastremska-GettyImages-2289198696.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-09T22:08:37.808384+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "a32b51d8e118",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -3921,6 +3921,22 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt5a6c898e92d21e63/6ae8ffda91cb5739c41bd1e1/binance_creativetan_shutterstock.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-02T23:02:12.422188+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "907718f8d430",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "CISA Announces Enhanced Reporting Form for Cyber Incidents",
+   "link": "https://www.darkreading.com/cyberattacks-data-breaches/cisa-announces-enhanced-reporting-form-cyber-incidents",
+   "published": "2026-11-09T21:38:20+00:00",
+   "summary": "New questionnaire captures critical data and information that improves the agency’s ability to assess incidents, identify trends and prioritize response actions.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt850556f866500627/654a5a8e05eb4d040a046894/325351_DR23_Graphics_General_Large_Text_v1.png?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-09T22:08:37.808384+00:00",
    "instructions": [],
    "instructions_checked": true
   },
