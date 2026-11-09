@@ -377,50 +377,6 @@
    "instructions_checked": true
   },
   {
-   "id": "2e54985e0758",
-   "source": "google-threat-intel",
-   "source_name": "Google Threat Intelligence",
-   "official": false,
-   "source_type": "vendor_blog",
-   "title": "The Rise of LLMJacking: How Threat Actors Monetize Compromised Cloud and Model Resources",
-   "link": "https://cloud.google.com/blog/topics/threat-intelligence/llmjacking-monetizing-compromised-cloud-models/",
-   "published": "2026-11-02T14:00:00+00:00",
-   "summary": "Written by: Christopher Romano, Codi Starks, Garrett Mahoney, John Wolfram, Josh Murchie, K Singh, Mathew Potaczek, Mike Lombardi, Rik Dolfing Introduction Mandiant responded to multiple incidents in 2026 in which threat actors hijacked enterprise access to Large Language Models (LLMs), a tactic known as \"LLMJacking.\"…",
-   "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/Figure_1_Usage_chart_showing_LLMJacking_ge.max-1000x1000_IcanCpV.png",
-   "cves": [
-    "CVE-2026-40217"
-   ],
-   "first_seen": "2026-11-02T17:02:01.019874+00:00",
-   "instructions": [
-    "Defenders should prioritize detection of modifications to LLM accounts and services and treat any unauthorized enablement as a critical security event.",
-    "To prevent attackers from abusing Cloud LLM services, defenders should prioritize Identity and Access Management (IAM) and supply chain security, two of the most common pathways for gaining access to and abusing Cloud services.",
-    "Any calls to disable logging by non-IaC (Infrastructure as Code) principals should be treated as high severity.",
-    "You must manually configure your IAM audit policies to track these."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "045ebd27a612",
-   "source": "google-threat-intel",
-   "source_name": "Google Threat Intelligence",
-   "official": false,
-   "source_type": "vendor_blog",
-   "title": "Shutting the Door on the XCPE Botnet",
-   "link": "https://cloud.google.com/blog/topics/threat-intelligence/shutting-the-door-on-the-xcpe-botnet/",
-   "published": "2026-11-02T14:00:00+00:00",
-   "summary": "Introduction Last week, Google and industry partners dismantled the XCPE backdoor which enrolled more than 1.3 million set-top boxes into a botnet. We assess with high confidence that the backdoor and botnet were intentionally developed, deployed, and operated for financial gain by Videostrong Technology Co., an…",
-   "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/Figure_1_XCPE_malware_overview.max-1000x1000.png",
-   "cves": [],
-   "first_seen": "2026-11-02T13:52:43.666569+00:00",
-   "instructions": [
-    "Retailers and distributors should require independent security audits from Original Design Manufacturers (ODMs) and swiftly delist manufacturers implicated in supply-chain abuse.",
-    "While some providers may claim to behave ethically and only enroll devices with the clear consent of consumers, any claims of \"ethical sourcing\" must be backed by transparent, auditable proof of user consent.",
-    "Consumers should be extremely wary of applications that offer payment in exchange for \"unused bandwidth\" or \"sharing your internet.\" These applications are primary ways for illicit proxy networks to grow, and could open security vulnerabilities on the device’s home network.",
-    "Consumers should only purchase connected devices, such as set-top boxes, from reputable manufacturers."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "31063f2ef695",
    "source": "grahamcluley",
    "source_name": "Graham Cluley",
@@ -1287,22 +1243,6 @@
    "instructions_checked": true
   },
   {
-   "id": "39749d757eb1",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "DarkBlinders Compromises Israeli Target and Iraqi Kurdish Government Cloud Environment",
-   "link": "https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html",
-   "published": "2026-11-02T14:46:05+00:00",
-   "summary": "Cybersecurity researchers have disclosed details of a cyber espionage campaign targeting Israel and the Kurdistan Region of Iraq by an Iran state-aligned threat actor between August and October 2026. According to a report published by Dream Research Labs, the campaign has led to the compromise of a high-profile…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7nIwDn7LIoF8OUZdj0NRjq4ZMu-xjzcOPQJDwouwkwqwVe618e77am9iyAIez63Q8jVqZi7OtU43gJlhbZT-_4l_4pUq3tYpDUe4ErouPlkNi8YTNZiPQ6KmX2Ci028oT24DRcPtCdKv_zZ33_ZHOodARrbmcwxYWCAx4r45Qc0qVOQNmCCoWZmAWJnzt/s1600/shelby-hacker.png",
-   "cves": [],
-   "first_seen": "2026-11-02T14:57:52.156121+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "3632eace057e",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2021,6 +1961,27 @@
    "instructions_checked": true
   },
   {
+   "id": "2c42fb617031",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "⚡ Weekly Recap: SSHole Exploited, APT Root RCE, Robot Takeovers, 15K Hacked Sites, and More",
+   "link": "https://thehackernews.com/2026/11/weekly-recap-sshole-exploited-apt-root.html",
+   "published": "2026-11-09T13:28:25+00:00",
+   "summary": "A system doesn't always need a complicated bug to let someone in. Sometimes, a blank password is enough. That's one of the bigger stories this week. And it gets worse when the tools meant to keep systems updated or running safely become part of the attack. Elsewhere, attackers are hiding inside normal web traffic…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLQ4v79OUmrbGdf2uJWMlUUmpCSu70Pr6v7oyodgSjFMfLU6JIe6Mr7xpp7AnqIX_vmKca44ImxEkczL88e_4sr2oBw0NL3Zh_JVEOb4cYmYg5pjbrITVv6KgPsv13-RrlBjq6bu7inR7w5-seDsUZvoqn6q7idkElfWysH1itsfgI5-NmFZ-BybjG0gR0/s1600/rr.jpg",
+   "cves": [],
+   "first_seen": "2026-11-09T14:55:43.306627+00:00",
+   "instructions": [
+    "\"Under specific conditions, when APT is configured to use HTTP package sources with retry settings enabled, a third-party with a network position between the host and the package mirror can cause APT to install a package that did not pass verification,\" Amazon said in an advisory.",
+    "A setting nobody checked, an update nobody questioned, or a system left online longer than it should have been.",
+    "OpenSSH Flaw Sees Exploitation Attempts — Threat actors are attempting to exploit a recently disclosed security flaw impacting OpenSSH that can enable sign-ins to accounts that have no password set.",
+    "Debian and Ubuntu APT Flaw Allows Code Execution as Root — A vulnerability in the APT package manager (CVE-2026-109518, CVSS score: 7.7) can be exploited to install a package under certain conditions and achieve code execution with elevated privileges."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "de8bbdd0e39a",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2059,25 +2020,6 @@
     "The earlier fix is the 2.90 Patch 2 firmware, named in a June 16 advisory for a flaw tracked as CVE-2026-7273 .",
     "It was posted on October 23, and the vendor announced it in an advisory earlier this week.",
     "Neither GreyNoise nor Binarly says the attacked switches were running the earlier fix, and the vendor's advisory does not say whether the new flaw has been exploited."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "9b847cec7f35",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Apple warns users in 99 countries of mercenary spyware",
-   "link": "https://therecord.media/apple-warns-users-99-countries-mercenary-spyware",
-   "published": "2026-11-02T14:42:00+00:00",
-   "summary": "Apple does not attribute attacks or the notices to specific malicious actors or geographical regions, the notification said, due to the “extreme cost, sophistication, and worldwide nature of mercenary spyware attacks [which] make them some of the most advanced digital threats in existence today.”",
-   "image": "https://cms.therecord.media/uploads/apple_iphone_93dc66938c.jpg",
-   "cves": [],
-   "first_seen": "2026-11-02T14:57:52.156121+00:00",
-   "image_checked": true,
-   "instructions": [
-    "The notification advises victims that alerts were sent to targeted users in 99 countries, according to a screenshot posted to X by threat researcher Costin Raiu, who said he verified the accuracy of several victims’ notifications."
    ],
    "instructions_checked": true
   },
@@ -2193,6 +2135,25 @@
     "All users will have to reset their passwords and rotate API keys as appropriate, the company said, also urging affected customers to visit its login page directly rather than follow links in password-reset emails.",
     "Customers who had just been instructed to reset their passwords were told doing so was not immediately possible.",
     "Customers would then be able to reset passwords and rotate API keys."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "e9e255b08220",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Alleged AI-aided cyberattack exploits assistant interface to breach German web host",
+   "link": "https://therecord.media/cyberattack-germany-ai-mittwald",
+   "published": "2026-11-09T14:15:00+00:00",
+   "summary": "Hackers allegedly assisted by AI breached a German web hosting company through a tool designed to allow customers to connect AI assistants to their accounts, the company disclosed.",
+   "image": "https://cms.therecord.media/uploads/Mittwald_CM_Service_c430f4d1f0.jpg",
+   "cves": [],
+   "first_seen": "2026-11-09T14:55:43.306627+00:00",
+   "image_checked": true,
+   "instructions": [
+    "According to Mittwald’s own timeline, the attacker first tested the MCP flaw amid a global scramble in October to apply patches for PHP2Shell."
    ],
    "instructions_checked": true
   },
@@ -2595,23 +2556,6 @@
    "instructions_checked": true
   },
   {
-   "id": "7bca49cdf4ec",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Russian and Ukrainian hackers hijack emergency apps to spread fake nuclear attack warnings",
-   "link": "https://therecord.media/ukraine-hackers-russia-alert-system",
-   "published": "2026-11-02T14:30:00+00:00",
-   "summary": "A popular Ukrainian air raid alert system was hacked over the weekend, prompting a cyber group to breach a similar Russian system in retaliation.",
-   "image": "https://cms.therecord.media/uploads/Air_raid_alert_Kyiv_3a0cc42cea.jpg",
-   "cves": [],
-   "first_seen": "2026-11-02T14:57:52.156121+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "7881f7cab76d",
    "source": "therecord",
    "source_name": "The Record",
@@ -2664,28 +2608,6 @@
    "instructions": [
     "\"To earn this premier reward, you must demonstrate full administrative control, the equivalent of 'roles/owner' or complete IAM control, over arbitrary Google Cloud organizations or projects with no prior access or special project setup,\" said Chris Betz , Google Cloud's Chief Information Security Officer (CISO).",
     "Additionally, security researchers who achieve execution on Google's production infrastructure must stop probing since escalating, obtaining production credentials, or lateral movement are not allowed and will result in disqualification."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "5e44eebabf29",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Microsoft fixes Smart App Control broken by October Windows update",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-smart-app-control-broken-by-october-windows-update/",
-   "published": "2026-11-02T13:57:29+00:00",
-   "summary": "Microsoft has resolved a known issue that prevented some users from activating the Smart App Control security feature after installing the October 2026 KB5127648 Windows 11 security update.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/02/Windows-11.jpg",
-   "cves": [],
-   "first_seen": "2026-11-02T14:57:52.156121+00:00",
-   "image_checked": true,
-   "instructions": [
-    "On affected devices, the option to turn on Smart App Control might be grayed out,\" Microsoft said in the KB5127648 advisory .",
-    "The Group Policy settings are under Computer Configuration > Administrative Templates > {Group Policy name} > Windows 11, version 24H2, 25H2, and must be set to Enabled after installation .",
-    "Admins must also restart affected devices to apply the Group Policy settings.",
-    "Microsoft has resolved a known issue that prevented some users from activating the Smart App Control security feature after installing the October 2026 KB5127648 Windows 11 security update."
    ],
    "instructions_checked": true
   },
@@ -2982,6 +2904,25 @@
    "instructions_checked": true
   },
   {
+   "id": "47fb58a628fd",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "FBI agent stole $2.5 million in crypto from hackers under investigation",
+   "link": "https://www.bleepingcomputer.com/news/security/fbi-agent-stole-25-million-in-crypto-from-hackers-fraud-victims/",
+   "published": "2026-11-09T14:34:03+00:00",
+   "summary": "A former FBI agent has pleaded guilty to stealing nearly $2.5 million from the wallets of fraud victims and nation-state hackers under investigation.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/09/Cryptocurrency_headpic.jpg",
+   "cves": [],
+   "first_seen": "2026-11-09T14:55:43.306627+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "97d7db0e7e4a",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -3147,25 +3088,6 @@
    "instructions": [
     "The researchers recommend that administrators check for the ngx_http_integrity_helper Unix socket, suspicious cwpsrv helper processes, and X-Ngx-Integrity strings in the server binary.",
     "If a compromise is confirmed, replace the backdoored binary with a legitimate copy, upgrade to the latest version, rotate all control panel credentials, and investigate the host for additional malware."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "cab04cab3c66",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Hackers disrupt refrigeration systems at European supermarkets",
-   "link": "https://www.bleepingcomputer.com/news/security/hackers-disrupt-refrigeration-systems-at-european-supermarkets/",
-   "published": "2026-11-02T14:28:39+00:00",
-   "summary": "A cyberattack on refrigeration systems has disrupted stores run by multiple supermarket chains across several European countries after hackers remotely changed temperature settings on freezers and cooling systems.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/02/freezers.jpg",
-   "cves": [],
-   "first_seen": "2026-11-02T14:57:52.156121+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Although the company tried to protect customer's systems, a simple software update is not enough, as refrigerators also require physical modifications."
    ],
    "instructions_checked": true
   },
@@ -3936,22 +3858,6 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt12c8556d05b7b46d/6ace9426639c8743112b0213/peru-bolivia-on-map-hyotographics-shutterstock.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-06T22:23:17.218839+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "96515b09df3b",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "PapRAT Cyber-Espionage Campaign Leaves a 'Bitter' Taste in South Asia",
-   "link": "https://www.darkreading.com/cyberattacks-data-breaches/paprat-cyberespionage-campaign-bitter-south-asia",
-   "published": "2026-11-02T14:00:00+00:00",
-   "summary": "Organizations in the region face growing cyberattacks from the known India-linked threat group, which leverages legitimate Windows functionality in three distinct attack chains.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt5084e1dd5e7db648/6ae882291b7efb363cec70fb/rat-David_Chapman-Alamy.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-02T14:57:52.156121+00:00",
    "instructions": [],
    "instructions_checked": true
   },
@@ -4766,25 +4672,6 @@
    "instructions_checked": true
   },
   {
-   "id": "36bb83401e5a",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Florida Student Aid Website Hack Puts Data of 4.9 Million People at Risk",
-   "link": "https://www.securityweek.com/florida-student-aid-website-hack-puts-data-of-4-9-million-people-at-risk/",
-   "published": "2026-11-02T14:44:18+00:00",
-   "summary": "The Florida Department of Education says SSNs and other personal data may have been exposed in a breach of its financial aid website. The post Florida Student Aid Website Hack Puts Data of 4.9 Million People at Risk appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2025/03/school-education.jpeg",
-   "cves": [],
-   "first_seen": "2026-11-02T14:57:52.156121+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "ed61802f64c7",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -5189,6 +5076,25 @@
    "image_checked": true,
    "instructions": [
     "Android’s November 2026 Updates Patch Over 200 Vulnerabilities",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "7cf7e23f8890",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Revolve Puts Data Breach Victim Count at 1.5 Million",
+   "link": "https://www.securityweek.com/revolve-puts-data-breach-victim-count-at-1-5-million/",
+   "published": "2026-11-09T14:08:08+00:00",
+   "summary": "Online fashion retailer Revolve has told regulators that the September cyberattack affected more than 1.5 million individuals. The post Revolve Puts Data Breach Victim Count at 1.5 Million appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/07/data-breach-healthcare-medical.jpg",
+   "cves": [],
+   "first_seen": "2026-11-09T14:55:43.306627+00:00",
+   "image_checked": true,
+   "instructions": [
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
