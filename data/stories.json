@@ -3296,28 +3296,6 @@
    "instructions_checked": true
   },
   {
-   "id": "357136bfe66d",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Ivanti patches two more Connect Secure zero-days chained in attacks",
-   "link": "https://www.bleepingcomputer.com/news/security/ivanti-patches-two-more-connect-secure-zero-days-chained-in-attacks/",
-   "published": "2026-11-02T09:33:26+00:00",
-   "summary": "Ivanti released security updates to patch two more Connect Secure (ICS) remote access gateway flaws that have been chained in zero-day attacks since at least October 1.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/02/Ivanti-headpic.jpg",
-   "cves": [],
-   "first_seen": "2026-11-02T09:40:04.459394+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Ivanti released security updates to patch two more Connect Secure (ICS) remote access gateway flaws that have been chained in zero-day attacks since at least October 1.",
-    "Threat actors exploited these two flaws (tracked as CVE-2026-111357 and CVE-2026-118527 ) alongside an authentication bypass vulnerability (CVE-2026-104935), which Ivanti patched last month to remove the main attack surface.",
-    "When it released patches for CVE-2026-104935 in October, Ivanti urged admins to upgrade as soon as possible since it was aware of \"limited exploitation in the wild.\"",
-    "On Tuesday, the US Cybersecurity and Infrastructure Security Agency (CISA) added CVE-2026-104935 to its catalog of actively exploited vulnerabilities and ordered federal agencies to patch their systems by Friday,"
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "3a8f9a3bb5fd",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4782,25 +4760,6 @@
    "instructions_checked": true
   },
   {
-   "id": "1befc30403b6",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "FBI Flags Over 600 Addresses Tied to North Korea’s Binance Heist",
-   "link": "https://www.securityweek.com/fbi-flags-over-600-addresses-tied-to-north-koreas-binance-heist/",
-   "published": "2026-11-02T08:40:36+00:00",
-   "summary": "The FBI has officially pinned the $6 billion Binance hack on North Korea’s TraderTraitor as the attackers launder the stolen crypto. The post FBI Flags Over 600 Addresses Tied to North Korea’s Binance Heist appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/10/Binance-hacked.jpeg",
-   "cves": [],
-   "first_seen": "2026-11-02T09:40:04.459394+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "36bb83401e5a",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -4836,6 +4795,28 @@
    "instructions": [
     "SecurityWeek has emailed Frontline for additional information on the data breach and will update this article if the company responds.",
     "Android’s November 2026 Updates Patch Over 200 Vulnerabilities",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "33c824e20702",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Google DeepMind’s AI Agents Make 1024-Bit RSA Keys Cheaper to Attack",
+   "link": "https://www.securityweek.com/google-deepminds-ai-agents-make-1024-bit-rsa-keys-cheaper-to-attack/",
+   "published": "2026-11-09T08:35:50+00:00",
+   "summary": "Working with cryptographers, DeepMind’s AI agents cut the cost of forging RSA-1024 signatures and found a cheaper way to factor keys. The post Google DeepMind’s AI Agents Make 1024-Bit RSA Keys Cheaper to Attack appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/07/Encryption-Chaos-Theory.jpg",
+   "cves": [],
+   "first_seen": "2026-11-09T09:42:58.590773+00:00",
+   "image_checked": true,
+   "instructions": [
+    "The first finding involves digital signatures and padding, the preset data that many signature standards add to a message to bring it to a fixed block size.",
+    "DeepMind determined that it depends on the share of the signed block the attacker controls. “Once they control roughly half of the block or more, padding adds no protection at all,” Kohli explained .",
+    "Forgery is harder when the attacker controls less of the block, such as a 32-byte hash.",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
@@ -5144,27 +5125,6 @@
    "instructions": [
     "According to Moelans, a software update is not enough to fully resolve the weakness, and the affected equipment also needs to be physically modified.",
     "According to Beaumont, many of the devices are end-of-life and have no available patch.",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "ff9c9693b43d",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Polymarket Returns $3.9 Million to Traders as DebugBear Cites DNS Hijack",
-   "link": "https://www.securityweek.com/polymarket-returns-3-9-million-to-traders-as-debugbear-cites-dns-hijack/",
-   "published": "2026-11-02T09:33:15+00:00",
-   "summary": "DebugBear says its DNS records were compromised via its domain registrar, and early findings show a single customer was targeted. The post Polymarket Returns $3.9 Million to Traders as DebugBear Cites DNS Hijack appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/06/Polymarket.webp",
-   "cves": [],
-   "first_seen": "2026-11-02T09:40:04.459394+00:00",
-   "image_checked": true,
-   "instructions": [
-    "In an October 30 update, Polymarket said 726 wallets were affected.",
-    "DebugBear, whose real user monitoring (RUM) script lets websites measure page load performance for visitors, initially told customers to remove the embed code and has now shared its initial findings . “Our DNS server records were compromised through our domain registrar.",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
