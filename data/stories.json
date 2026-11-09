@@ -221,28 +221,6 @@
    "instructions_checked": true
   },
   {
-   "id": "8333d33e3875",
-   "source": "borncity",
-   "source_name": "Born's IT and Windows Blog",
-   "official": false,
-   "source_type": "news",
-   "title": "php2shell: Webseiten von Gemeinden als Sorgenkind?",
-   "link": "https://borncity.com/blog/2026/11/03/php2shell-webseiten-von-gemeinden-als-sorgenkind/",
-   "published": "2026-11-02T23:42:17+00:00",
-   "summary": "Seit dem 21. Oktober 2026 hat das PHP-Projekt ja Patches zum Schließen zweier kritischer, php2shell genannter, Schwachstellen in PHP veröffentlicht. Während große Provider zeitnah patchten und Kunden absicherten, sieht die Situation bei \"Selbst-Hostern\" möglicherweise nicht so gut aus. Speziell Webseiten … Weiterlesen…",
-   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
-   "cves": [],
-   "first_seen": "2026-11-03T00:17:07.952982+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Im Beitrag php2shell: PHP-Updates und Nachlese sind die verfügbaren PHP-Updates genannt und ich verweise auf eine Mitigations-Lösung eines belgischen Hosters für ältere PHP-Versionen.",
-    "Rund 33 Stunden nach dem PHP2Shell-Update wurden die Startseiten von 54.743 Websites in Deutschland, Österreich und der Schweiz abgerufen und seitdem täglich nachgemessen.",
-    "Wo die PHP-Version sichtbar ist, zeigt die Messung ein schnelles Patch-Tempo: 73 Prozent der Gemeinde-Websites meldeten gut einen Tag nach dem Update bereits eine Version mit Fix.",
-    "Oktober, sechs Tage nach dem Update, waren 34 der 57 abgeschalteten Websites wieder online, 19 zeigten weiter ihren Hinweis."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "42b1ec161f14",
    "source": "borncity",
    "source_name": "Born's IT and Windows Blog",
@@ -371,6 +349,23 @@
     "Da der Hotfix noch nicht für alle Firewall-Versionen verfügbar ist, müssen Administratoren ein Upgrade auf eine der oben aufgeführten Versionen durchführen, um den Hotfix zu erhalten.",
     "Ähnliche Artikel: Sicherheits-Meldungen: Schwachstellen und Angriffe (30.10.2026) Sicherheitskatastrophen 5.11.2026: Digicert, Fake RVTools, Barracuda 0-Day und mehr Securepoint zur Linux IPv4-TCP-Schwachstelle CVE-2026-98432 Ubuntu-Patch für IPv4-TCP-Schwachstelle CVE-2026-98432 kommt"
    ],
+   "instructions_checked": true
+  },
+  {
+   "id": "a876e139f448",
+   "source": "borncity",
+   "source_name": "Born's IT and Windows Blog",
+   "official": false,
+   "source_type": "news",
+   "title": "N-Able wohl Opfer von Able2Shell-Schwachstellen (Nov. 2026)",
+   "link": "https://borncity.com/blog/2026/11/10/n-able-wohl-opfer-eines-schwachstelle-nov-2026/",
+   "published": "2026-11-09T23:00:06+00:00",
+   "summary": "Setzt jemand aus dem Leserkreis die Endpoint-Managementlösung N-able N-central ein? Mir ist gerade ein Leserhinweis zugegangen, dass es Probleme bei diesem Anbieter gebe. Die haben die Cloud-Dienste heruntergefahren, weil Schwachstellen offen gelegt wurden. Jetzt patcht man und will die Dienste … Weiterlesen → Quelle",
+   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
+   "cves": [],
+   "first_seen": "2026-11-09T23:58:34.924657+00:00",
+   "image_checked": true,
+   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -3637,6 +3632,25 @@
    "first_seen": "2026-11-04T14:17:44.270771+00:00",
    "image_checked": true,
    "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "48d9ef3d98d6",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Vanderbilt University hit in BYOD ransomware attack, data theft claimed",
+   "link": "https://www.bleepingcomputer.com/news/security/vanderbilt-university-hit-in-byod-ransomware-attack-data-theft-claimed/",
+   "published": "2026-11-09T23:52:12+00:00",
+   "summary": "Vanderbilt University warns it is responding to a cyberattack claimed by the BYOD ransomware gang, which claims to have encrypted the university's databases and stolen sensitive student, employee, and research data.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/09/vanderbilt-skyline.jpg",
+   "cves": [],
+   "first_seen": "2026-11-09T23:58:34.924657+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
+   ],
    "instructions_checked": true
   },
   {
