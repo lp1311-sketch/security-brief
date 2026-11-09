@@ -1,6 +1,24 @@
 {
  "items": [
   {
+   "id": "4065836ff3f5",
+   "source": "ars",
+   "source_name": "Ars Technica Security",
+   "official": false,
+   "source_type": "news",
+   "title": "Claude Code is accidentally exposing secrets all over GitHub",
+   "link": "https://arstechnica.com/ai/2026/11/claude-code-settings-files-expose-thousands-of-secrets-on-github/",
+   "published": "2026-11-09T17:24:26+00:00",
+   "summary": "Claude Code is leaking sensitive information on public GitHub instances thanks to a partial oversight in the way its settings files are handled. That's the finding of AI security researchers at Apiiro, who discovered thousands of secrets, including database passwords, API tokens, and root logins, amid Claude Code…",
+   "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/claude-github-leaks-1152x648.jpg",
+   "cves": [],
+   "first_seen": "2026-11-09T19:23:29.204678+00:00",
+   "instructions": [
+    "Cherny also recommends Claude Code users make use of secret scanners—which can trawl files for sensitive information and scrub it out—and said that the team was considering building this kind of secret scanning into Claude Code itself in the future."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "4e5242d6436d",
    "source": "ars",
    "source_name": "Ars Technica Security",
@@ -1381,6 +1399,27 @@
    "instructions_checked": true
   },
   {
+   "id": "7cd796fba406",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Hackers Compromise Ethersphere's bee-js and Swarm Desktop to Deliver Wallet-Stealing Malware",
+   "link": "https://thehackernews.com/2026/11/hackers-compromise-etherspheres-bee-js.html",
+   "published": "2026-11-09T17:36:28+00:00",
+   "summary": "Attackers used the Ethersphere project's own release automation to publish malicious versions of two of its tools for the Swarm decentralized storage network: bee-js 13.3.0 and Swarm Desktop 0.56.2. Both releases download and run code built to steal the wallet key that Swarm Desktop keeps for its node, along with the…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4ZFiesBwDTk8fRRfKfNIw0lLkhqF6ZAExRxuuRtfRCWrxs6Rg7M5UdSIcJqH2zstViFreL30JMmdebYTlMOKvg4D6GvaS70XPdembzyIZoX2KBj_S3kxKWmBjJll4exWUYXrap9IDW_ugXHOux5jZXk44_v5xac1mxFouywezDcsGeMdLrGd1sJStMoo/s1600/bees.jpg",
+   "cves": [],
+   "first_seen": "2026-11-09T19:23:29.204678+00:00",
+   "instructions": [
+    "The GitHub advisory for bee-js 13.3.0 says: \"Any computer that has this package installed or running should be considered fully compromised.\" SafeDep, a software supply chain security company, offers the same advice for any computer on which Swarm Desktop 0.56.2 was installed.",
+    "Both malicious releases have been taken down, and the project's maintainers released a clean Swarm Desktop update today.",
+    "The code is also built to install a backdoor on Windows, macOS, and Linux machines.",
+    "Intel Macs were never offered it, and Linux installs do not update automatically."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "07d9937fab38",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1416,6 +1455,27 @@
    "first_seen": "2026-11-05T06:25:55.581723+00:00",
    "instructions": [
     "In light of active exploitation, Federal Civilian Executive Branch (FCEB) agencies are recommended to apply the necessary patches by November 18, 2026."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "bd73ebc7b854",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Hackers Exploit Qubole's Trusted AWS Access to Breach Customer Accounts and Steal Data",
+   "link": "https://thehackernews.com/2026/11/hackers-exploit-quboles-trusted-aws.html",
+   "published": "2026-11-09T17:51:21+00:00",
+   "summary": "An attacker broke into AWS accounts belonging to multiple Qubole customers between October 14 and October 26 and stole stored secrets and data, cloud security company Wiz said today. The attacker used credentials for an AWS account that Qubole's platform uses to reach those customers. How the attacker got those…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjj3p_1P-Ko_l_HuUr2Doq9kJOQa3Y5dCrkiVWqjJXzvQfYgKvgJXyvdBqLH2hp7s_ZY2kk-hhaCQhjf_v9SdjSbNpaDV2Eohk6-NEFUZp_ROjMJf_Q1xUSKcrqNj-Dd5ZrfjV6uP1blo579IaZ6hgHxOFAUhyJVgdGop-KVIWCjWQIYOKku3iN1N1EIUk/s1600/aws-hacked.jpg",
+   "cves": [],
+   "first_seen": "2026-11-09T19:23:29.204678+00:00",
+   "instructions": [
+    "Each request to do this, called AssumeRole , must include a matching code from Qubole known as an External ID.",
+    "Any organization that has connected Qubole to AWS, even one that no longer uses it, should check its CloudTrail logs from October 1 onward.",
+    "Any activity from this IAM user should be investigated, because only the attacker used it in the accounts the researchers examined.",
+    "If the attacker assumed one of your Qubole roles, rotate all secrets, parameters, and Lambda environment variables that role had access to, and revoke the role's active sessions."
    ],
    "instructions_checked": true
   },
@@ -2209,6 +2269,23 @@
    "instructions_checked": true
   },
   {
+   "id": "4ca261bf7f30",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "France blames Iran for fridge cyberattacks, says some caused fires",
+   "link": "https://therecord.media/france-blames-iran-for-fridge-cyberattacks",
+   "published": "2026-11-09T18:45:00+00:00",
+   "summary": "In the first attribution since the October attacks, the French authorities identified the perpetrators as part of Shahid Kaveh, an IRGC cyber unit previously linked to attacks on industrial controllers at U.S. water utilities.",
+   "image": "https://cms.therecord.media/uploads/fridge_eeb57556f3.jpg",
+   "cves": [],
+   "first_seen": "2026-11-09T19:23:29.204678+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "3d23258051aa",
    "source": "therecord",
    "source_name": "The Record",
@@ -2547,6 +2624,25 @@
    "image_checked": true,
    "instructions": [
     "Treasury Secretary Scott Bessent said they are aiming to dismantle “every layer of these organizations — from their leadership to the corporate structures and financial facilitators that enable them to operate with impunity.”"
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "2fdab4abb5f3",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Vanderbilt cybersecurity incident impacting campus devices and systems",
+   "link": "https://therecord.media/vanderbilt-cyberattack-ransomware-alert",
+   "published": "2026-11-09T18:30:00+00:00",
+   "summary": "Vanderbilt University announced a cyberattack, warning students and employees that campus devices and systems may be impacted by the incident.",
+   "image": "https://cms.therecord.media/uploads/Vanderbilt_University_56a944465a.jpg",
+   "cves": [],
+   "first_seen": "2026-11-09T19:23:29.204678+00:00",
+   "image_checked": true,
+   "instructions": [
+    "They warned that anyone who notices suspicious activity on their devices — like pop-ups, security warnings, changes to files and password requests — should turn the device off and report it to campus IT officials."
    ],
    "instructions_checked": true
   },
@@ -2902,22 +2998,21 @@
    "instructions_checked": true
   },
   {
-   "id": "b9a8fe94cb9b",
+   "id": "e89c57c6d564",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
    "official": false,
    "source_type": "news",
-   "title": "Fintech platform Sageworks taken offline after suspected cyberattack",
-   "link": "https://www.bleepingcomputer.com/news/security/fintech-platform-sageworks-taken-offline-after-suspected-cyberattack/",
-   "published": "2026-11-02T19:00:45+00:00",
-   "summary": "Financial technology company Abrigo has restored its Sageworks risk management application, except for borrower-facing capabilities, following an outage triggered by \"irregular activity\" in its environment.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/02/abrigo.jpg",
+   "title": "France blames Iranian hackers for supermarket attacks that sparked fires",
+   "link": "https://www.bleepingcomputer.com/news/security/france-blames-iranian-hackers-for-supermarket-attacks-that-sparked-fires/",
+   "published": "2026-11-09T18:32:42+00:00",
+   "summary": "France has linked October cyberattacks that disrupted refrigeration systems at more than 700 supermarkets and other retail locations to Iranian state-backed hackers, saying the attacks caused food losses and sparked at least 15 fires.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2024/04/23/Iranian_hacker.jpg",
    "cves": [],
-   "first_seen": "2026-11-02T19:53:08.309357+00:00",
+   "first_seen": "2026-11-09T19:23:29.204678+00:00",
    "image_checked": true,
    "instructions": [
-    "In its latest update today, the company said that most of the Sageworks functionality had been restored, with the exception of borrower-facing features.",
-    "Although a data breach has not been confirmed, some cybersecurity researchers advised banks and credit unions using Abrigo's solutions to rotate the API keys for the Sageworks platform."
+    "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
    ],
    "instructions_checked": true
   },
@@ -2983,26 +3078,6 @@
     "Defenders should ask two questions: who is reviewing those logs, and how quickly can they be acted on?",
     "Teams hunting for this activity in their own environments should start there.",
     "Equally important is whether the team can revoke sessions, contain OAuth grants, and reset the affected account within an hour."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "f8e64d371b0e",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Google disrupts million-device XCPE Android malware botnet, bans TV box maker",
-   "link": "https://www.bleepingcomputer.com/news/security/google-disrupts-million-device-xcpe-android-malware-botnet-bans-tv-box-maker/",
-   "published": "2026-11-02T18:16:34+00:00",
-   "summary": "Google and industry partners have dismantled the XCPE malware botnet consisting of more than 1.3 million Android TV streaming TV boxes that Google says its manufacturer intentionally infected with malware to generate revenue through cybercrime activities.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2024/09/12/android-tv-malware.jpg",
-   "cves": [],
-   "first_seen": "2026-11-02T18:55:26.470666+00:00",
-   "image_checked": true,
-   "instructions": [
-    "As a result, users would need to install clean firmware to remove the infection or disconnect the affected device from the internet to prevent further malicious activity.",
-    "BleepingComputer has contacted Google with additional questions about the botnet and will update the story if we get a response."
    ],
    "instructions_checked": true
   },
@@ -3367,6 +3442,25 @@
    "image_checked": true,
    "instructions": [
     "However, in a new security update published Friday, WorkOS founder Michael Grinich revealed that the person responsible had come forward and claimed the incident was accidental."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "073e03d22dae",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Russian cloud firm Beget rebuilds from scratch after data wiper attack",
+   "link": "https://www.bleepingcomputer.com/news/security/russian-cloud-firm-beget-rebuilds-from-scratch-after-data-wiper-attack/",
+   "published": "2026-11-09T17:50:32+00:00",
+   "summary": "A data-wiping malware attack has forced Russian cloud services provider Beget to rebuild its cloud infrastructure from scratch, the company said.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/09/beget.jpg",
+   "cves": [],
+   "first_seen": "2026-11-09T19:23:29.204678+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
    ],
    "instructions_checked": true
   },
@@ -3894,6 +3988,22 @@
    "instructions_checked": true
   },
   {
+   "id": "85970b304532",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "PwC's CISO on AI, Robots & What's Next for Security",
+   "link": "https://www.darkreading.com/cybersecurity-operations/pwc-ciso-ai-robots-security",
+   "published": "2026-11-09T17:17:23+00:00",
+   "summary": "As AI accelerates change across the enterprise, PwC's James Shira explains why security teams must rethink their approach to risk and adapt their strategies.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt6ace2e1a111df3c2/6aee5059d31a318d0d477246/robots1800_kevin_winters_GettyImages-512935278.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-09T19:23:29.204678+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "d5adbe76452f",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -3970,6 +4080,22 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blta280e1d9bd26c729/6ae8fcfdb20def7a8ae983ea/school_front-YinYang-GettyImages-157476686.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-03T14:13:04.962203+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "adccb074fbff",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "Attackers Crash Claude's 'Office Party' Flaw to Run Malicious Code on Linux",
+   "link": "https://www.darkreading.com/endpoint-security/attackers-claude-office-party-flaw-malicious-code-linux",
+   "published": "2026-11-09T18:08:30+00:00",
+   "summary": "Attackers can exploit a flaw in Claude's document-processing tool by creating a temporary file that Anthropic's AI assistant can access and run on a user's machine.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt51641f3329337b62/6af209f8c974042ad49c3fce/office-Portra-GettyImages-1691188392_REVISED_FOR_16_BY_9.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-09T19:23:29.204678+00:00",
    "instructions": [],
    "instructions_checked": true
   },
