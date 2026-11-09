@@ -363,7 +363,7 @@
    "title": "Sophos Firewall: Hotfix für Schwachstelle (CVE-2026-98432)",
    "link": "https://borncity.com/blog/2026/11/09/sophos-firewall-hotfix-fuer-schwachstelle-cve-2026-98432/",
    "published": "2026-11-09T00:53:29+00:00",
-   "summary": "Auch die Firewalls von Sophos sind von der kritischen Schwachstelle CVE-2026-98432 im Linux-Kernel betroffen. Über diese kritische (CVSS Score of 9.8) Schwachstelle im Linux Kernel IPv4 TCP-Networking Stack hatte ich berichtet. Sophos hat Ende letzter Woche dazu einen Hotfix herausgebrach. … Weiterlesen → Quelle",
+   "summary": "Auch die Firewalls von Sophos sind von der kritischen Schwachstelle CVE-2026-98432 im Linux-Kernel betroffen. Über diese kritische (CVSS Score of 9.8) Schwachstelle im Linux Kernel IPv4 TCP-Networking Stack hatte ich berichtet. Sophos hat Ende letzter Woche dazu einen Hotfix herausgebracht. … Weiterlesen → Quelle",
    "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
    "cves": [
     "CVE-2026-98432"
@@ -1046,27 +1046,6 @@
    "instructions_checked": true
   },
   {
-   "id": "d596e3f2bace",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Attackers Pose as IT Support on Microsoft Teams, Abuse AD CS to Steal Company Data",
-   "link": "https://thehackernews.com/2026/11/attackers-pose-as-it-support-on.html",
-   "published": "2026-11-02T11:08:45+00:00",
-   "summary": "Attackers posing as IT support on Microsoft Teams talked employees into giving them remote control of their PCs. They then used insecure Active Directory Certificate Services (AD CS) settings to obtain login certificates for privileged accounts, including one for a domain controller. Microsoft said in a report that it…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLv88EM1ZSjaeI7bH9DVpg2mGdkwXWUuir0S_p9IfiWG49_TgRalFdK4oQ6e7UE_JYOnNH70Z6wcftnjhcYHRY-Xc0o8GYp9r1uNzxdC_1bnXZgvon74cXkWgKpHZtwJg3IKLsqGC2HS2tcMfQS8BZu7kfrW1vAaaIA316LRzgCOn8zeGZ1WvALgJmyM4/s1600/ms-ad.jpg",
-   "cves": [],
-   "first_seen": "2026-11-02T11:34:27.451640+00:00",
-   "instructions": [
-    "From there, the attacker dropped an archive into the Downloads folder, unpacked it into a new folder named to resemble a Windows update, and ran its contents with a portable Python, Bun, or Java runtime.",
-    "Microsoft said such a certificate continues to work even after the account's password is reset or the first machine is wiped, so neither step ends the attacker's access.",
-    "There is no patch, because nothing here was a software flaw.",
-    "Review sign-in certificate templates for ones that let the requester name the account, or that too many users can enroll in, and remove enrollment rights that are not needed."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "d4042f8de11d",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1465,26 +1444,6 @@
    "instructions_checked": true
   },
   {
-   "id": "87a25e1b557b",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Government Linux Servers Targeted With SysGoRAT and Suspected AI-Generated Scripts",
-   "link": "https://thehackernews.com/2026/11/government-linux-servers-targeted-with.html",
-   "published": "2026-11-02T10:49:59+00:00",
-   "summary": "Cybersecurity researchers have disclosed details of a cyber espionage campaign specifically targeting Linux infrastructure associated with government entities and state-affiliated infrastructure. The activity, observed by Palo Alto Networks Unit 42 between October 2025 and April 2026, has been tracked under the…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYHKbP_7yOsvpwAldBMCL3QkCJ9SbUVrJz1Tr_RB6m3O99Gj73H0fX20hIbzKujRWB-1qkBCWv1UEJEbrTe1NFYpPkTm0OoNqJe7OdJoZa1HcZDT2On3mUT0igQeCOsMnWw_ZfT-HsLx6B8R84XYHHg4mUI2hPzM15ggddQCFAAmzChzC5Of90LInW8RB8/s1600/artex.jpg",
-   "cves": [],
-   "first_seen": "2026-11-02T11:34:27.451640+00:00",
-   "instructions": [
-    "Unrestricted autonomous execution generates forensic traffic, relies on recognizable identifiers, and leaves behind distinct code-level traces, increasing the likelihood of detection and mitigation.\"",
-    "Another hallmark involves attempts to disable endpoint protections, wipe system logs, and plant deceptive red-team markers so as to disguise the activity as a legitimate security assessment.",
-    "control, to spawn via sub-commands an interactive shell (shell_start), screenshots (screenshot), exfiltrate files to the C2 server (download), and install persistence (persist)"
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "07d9937fab38",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1610,21 +1569,22 @@
    "instructions_checked": true
   },
   {
-   "id": "c477f1812588",
+   "id": "62af4291e17c",
    "source": "thehackernews",
    "source_name": "The Hacker News",
    "official": false,
    "source_type": "news",
-   "title": "Is Your SOC Ready for AI Agents? A Maturity Check Before You Deploy",
-   "link": "https://thehackernews.com/2026/11/is-your-soc-ready-for-ai-agents.html",
-   "published": "2026-11-02T11:30:00+00:00",
-   "summary": "Forty percent of security teams now use AI every day, and another 56% are testing it. Only 4% have no plans to adopt it, according to Prophet Security's State of AI in Security Operations 2026 survey of more than 250 CISOs, SOC leaders and practitioners. For the teams still testing, the next decision is whether their…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZbG_0dst_8ctvKrGx37rAninLXS6SIcKT4YjziNbu7bPmTPAsYvWo-Jkwj0UqT493VwmYVtvkthnEGLqTusFvJFo9fPth_VWjI2XNev9SKY-sePLY12rM5yWoQOzrvEXG0DWOWBb7N8GcdHNPqv6skeqGx2r2zGVlDeWkPnt5drMe_R2yh8TB8-kOCug/s1600/pro.jpg",
+   "title": "LNbits Urges All Operators to Shut Down Their Bitcoin Lightning Wallet Servers Amid Attacks",
+   "link": "https://thehackernews.com/2026/11/lnbits-urges-all-operators-to-shut-down.html",
+   "published": "2026-11-09T10:01:21+00:00",
+   "summary": "Everyone running LNbits, a free, open-source Bitcoin Lightning wallet system, should shut down their servers now because of a wave of attacks, the project said yesterday. It has several security fixes to release and asked operators to be careful until they are out. One operator said new accounts used an exploit to…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPZfiSS8v6cUfSW1R2sbPNNfjluB-GvnXCxcAW_G6pKRNzYU2Be89Qyu9Zx0mnY7voaGpLXFtsajKS9tqYp74Qo05wPzzELg9ZpbVcoWa5l9AKhf4SmmNbnIvjOUrm4LsB9V-tGBxU-V0NxHzAoV2Cnlz6tHlcPewPh2ir8ipqn6Kj-phVDm5zraXs9ss/s1600/crypto-bits.jpg",
    "cves": [],
-   "first_seen": "2026-11-02T13:52:43.666569+00:00",
+   "first_seen": "2026-11-09T11:37:15.447767+00:00",
    "instructions": [
-    "On response, 44% have AI recommend actions that people carry out, 30% let it handle low-risk remediation on its own, and no respondent gives it full, unsupervised autonomy.",
-    "Agent findings should appear in the case management or ticketing tools analysts already use, so nobody has to watch another console."
+    "Everyone running LNbits , a free, open-source Bitcoin Lightning wallet system, should shut down their servers now because of a wave of attacks, the project said yesterday.",
+    "Ben Arc, an LNbits developer, said in a patch estimate yesterday that patches \"should be merged and available within 24-48hrs.\" Counted from his post, that means between about 14:00 UTC today and 14:00 UTC tomorrow.",
+    "That warning asked operators to disable Paywall, an add-on that makes people pay to view content, while the project looked into a possible bug."
    ],
    "instructions_checked": true
   },
@@ -3554,28 +3514,6 @@
    "instructions_checked": true
   },
   {
-   "id": "e52f7534557d",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Synology warns of C3RB3R ransomware attacks targeting NAS devices",
-   "link": "https://www.bleepingcomputer.com/news/security/synology-warns-customers-of-ongoing-c3rb3r-ransomware-attacks/",
-   "published": "2026-11-02T11:28:42+00:00",
-   "summary": "Taiwanese network-attached storage (NAS) appliance maker Synology warned customers to update their devices immediately due to a surge in C3RB3r ransomware attacks.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/02/Synology_headpic.jpg",
-   "cves": [],
-   "first_seen": "2026-11-02T11:34:27.451640+00:00",
-   "image_checked": true,
-   "instructions": [
-    "These attacks aim to encrypt data and extort ransom,\" it said in a Thursday advisory .",
-    "Synology also recommends enabling automatic updates to keep DSM up to date at all times.\"",
-    "Synology users are advised to immediately block access to the management web interface from the Internet and update their DSM software to block attackers' attempts to hack and encrypt their devices.",
-    "Synology rarely issues security advisories warning of attacks targeting its customers' devices, with the last such alert published in August 2019 following large-scale brute-force attacks that led to eCh0raix ransomware infections ."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "58f4053a1bb9",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4504,6 +4442,26 @@
    "instructions_checked": true
   },
   {
+   "id": "156a0344f330",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Amplifon Americas Data Breach Impacts 1.3 Million",
+   "link": "https://www.securityweek.com/amplifon-americas-data-breach-impacts-1-3-million/",
+   "published": "2026-11-09T11:20:09+00:00",
+   "summary": "Hackers stole personal, health, and insurance information, including Social Security numbers, from the company’s internal systems. The post Amplifon Americas Data Breach Impacts 1.3 Million appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/10/bank-finance-lender-credit-union-hack.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-09T11:37:15.447767+00:00",
+   "image_checked": true,
+   "instructions": [
+    "SecurityWeek has emailed Amplifon for additional information on the data breach and confirmation on impact and will update this article if the company responds.",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "14152597814e",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -4933,28 +4891,6 @@
    "image_checked": true,
    "instructions": [
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "fe787079c468",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Malicious Claude Code Extension Served in Cursor Supply Chain Attack",
-   "link": "https://www.securityweek.com/malicious-claude-code-extension-served-in-cursor-supply-chain-attack/",
-   "published": "2026-11-02T11:29:39+00:00",
-   "summary": "The extension performed host reconnaissance and attempted to create a reverse SSH tunnel. The post Malicious Claude Code Extension Served in Cursor Supply Chain Attack appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/10/supply-chain-attack.jpeg",
-   "cves": [],
-   "first_seen": "2026-11-02T11:34:27.451640+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Users should remove the malicious extension versions as soon as possible.",
-    "Remove the unauthorized SSH key, persistence mechanisms, and running tunnel processes, and assess whether the host should be rebuilt.",
-    "It then attempts to install an SSH key, enable SSH, create a reverse tunnel, and configure persistence.",
-    "Adobe, Veeam, Juniper Networks Patch Critical Vulnerabilities"
    ],
    "instructions_checked": true
   },
