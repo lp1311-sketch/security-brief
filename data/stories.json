@@ -355,6 +355,28 @@
    "instructions_checked": true
   },
   {
+   "id": "5eb8586a8493",
+   "source": "borncity",
+   "source_name": "Born's IT and Windows Blog",
+   "official": false,
+   "source_type": "news",
+   "title": "Sophos Firewall: Hotfix für Schwachstelle (CVE-2026-98432)",
+   "link": "https://borncity.com/blog/2026/11/09/sophos-firewall-hotfix-fuer-schwachstelle-cve-2026-98432/",
+   "published": "2026-11-09T00:53:29+00:00",
+   "summary": "Auch die Firewalls von Sophos sind von der kritischen Schwachstelle CVE-2026-98432 im Linux-Kernel betroffen. Über diese kritische (CVSS Score of 9.8) Schwachstelle im Linux Kernel IPv4 TCP-Networking Stack hatte ich berichtet. Sophos hat Ende letzter Woche dazu einen Hotfix herausgebrach. … Weiterlesen → Quelle",
+   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
+   "cves": [
+    "CVE-2026-98432"
+   ],
+   "first_seen": "2026-11-09T08:27:52.608438+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Da der Hotfix noch nicht für alle Firewall-Versionen verfügbar ist, müssen Administratoren ein Upgrade auf eine der oben aufgeführten Versionen durchführen, um den Hotfix zu erhalten.",
+    "Ähnliche Artikel: Sicherheits-Meldungen: Schwachstellen und Angriffe (30.10.2026) Sicherheitskatastrophen 5.11.2026: Digicert, Fake RVTools, Barracuda 0-Day und mehr Securepoint zur Linux IPv4-TCP-Schwachstelle CVE-2026-98432 Ubuntu-Patch für IPv4-TCP-Schwachstelle CVE-2026-98432 kommt"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "2e54985e0758",
    "source": "google-threat-intel",
    "source_name": "Google Threat Intelligence",
@@ -1364,6 +1386,22 @@
    "instructions_checked": true
   },
   {
+   "id": "a2c922a06d73",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Former OpenAI Engineer Pleads Not Guilty to Planting Covert Device in Executive Meeting Room",
+   "link": "https://thehackernews.com/2026/11/former-openai-engineer-pleads-not.html",
+   "published": "2026-11-09T07:05:48+00:00",
+   "summary": "The OpenAI engineer who was arrested and charged last month for planting a covert audio recording device in the company's office has pleaded not guilty. According to reports from Bloomberg and CNBC, Saudi national Abdulrahman Alfozan made an appearance in San Francisco federal court on Friday, where he entered the…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9MuMJQQRaLilGnzYMqgighbIcm726E965P9JqACVPbah4ID7WePGRjwdlaYG3BUIUPB3vkX9Xzs7sXIEuU9ZoEcPo-2N__SwxcCk_IhbrH-9IhJjeW0Go2d9TGw2ZJcqMLquHLOfQVn0JCQhDrKsZujSFFsenYB28oTBnFyUWBQNmS_DVmjaxUWxXxgjT/s1600/openai.jpg",
+   "cves": [],
+   "first_seen": "2026-11-09T08:27:52.608438+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "948be6f589a7",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1946,6 +1984,24 @@
     "Critical Systems Face Prolonged Exposure Network Appliances Go More Than a Year Without Patches An analysis of roughly 383,000 CVEs disclosed from 1999 through September 2026 has found that the median time to patch a vulnerability exceeds a year for network appliances.",
     "That gap is the threat actor's window, widest on the critical systems that stay exposed the longest.\" The tech giant also said threat actors disproportionately target flaws that maximize impact and exposure and enable system takeover, particularly remote code execution, privilege escalation, and authentication bypass.",
     "The operators resorted to delaying tactics to block payments when they attempted to withdraw their funds."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "df6a1e5a88d8",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "U.S. Agencies Warn Refrigeration Controller Attacks Could Cause Fires and Inventory Losses",
+   "link": "https://thehackernews.com/2026/11/us-agencies-warn-refrigeration.html",
+   "published": "2026-11-09T06:15:10+00:00",
+   "summary": "U.S. government agencies have warned that threat actors are actively targeting industrial refrigeration and cold-chain monitoring systems globally with an aim to cause service disruptions, fire hazards, and loss of inventory. \"The actors may exploit vulnerabilities or weaknesses in unpatched or internet-accessible…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKryTkTZPSm_Pvf-PEvYRFle3Bp0jQaXScE21oOsMfwir63sr355bqHInvPRm5zynq2sYfLswRNEeywDHo7p2snw5sQmlIrWIONBq4AoYFEGXvdgy5gNLMESgjL5zwnhbqYIwdKLRaolb18pKz1sqFynmSjWn2IT_BxlEb-0av9vDfp-oEzp23_cwOIoik/s1600/ref.jpg",
+   "cves": [],
+   "first_seen": "2026-11-09T08:27:52.608438+00:00",
+   "instructions": [
+    "\"The actors may exploit vulnerabilities or weaknesses in unpatched or internet-accessible controllers to remotely alter settings and force units into continuous heating and defrost cycles, which can cause widespread inventory loss and equipment hazards,\" according to a joint advisory."
    ],
    "instructions_checked": true
   },
@@ -4863,30 +4919,6 @@
     "The company has not identified the specific flaw beyond pointing to its Synology-SA-24:20 advisory.",
     "Synology recommends that anyone on a vulnerable release update DSM right away and turn on automatic updates.",
     "Initial access mainly came from stolen or exposed cloud credentials and API keys, and in one intrusion the attackers exploited a LiteLLM vulnerability (CVE-2026-40217) to upgrade ordinary keys to full admin credentials.",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "0bc09b42359c",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Ivanti Patches Two More Zero-Days Exploited in Connect Secure Attack Chain",
-   "link": "https://www.securityweek.com/ivanti-patches-two-more-zero-days-exploited-in-connect-secure-attack-chain/",
-   "published": "2026-11-02T07:57:49+00:00",
-   "summary": "CISA has added CVE-2026-111357 and CVE-2026-118527 to its KEV catalog after the Ivanti VPN flaws were chained in zero-day attacks. The post Ivanti Patches Two More Zero-Days Exploited in Connect Secure Attack Chain appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2024/02/Ivanti-Risks-Exploits.jpg",
-   "cves": [
-    "CVE-2026-111357",
-    "CVE-2026-118527"
-   ],
-   "first_seen": "2026-11-02T08:36:51.265712+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Ivanti added them on Thursday to its October 13 advisory describing CVE-2026-104935, an authentication bypass in the VPN product.",
-    "Organizations that installed them in response to the initial advisory will need to upgrade again. “The latest release addresses all vulnerabilities which were chained and exploited in the wild,” Ivanti said.",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
