@@ -1266,27 +1266,6 @@
    "instructions_checked": true
   },
   {
-   "id": "ad2df65419af",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Critical Langflow Flaws Could Let Unauthenticated Attackers Run Code on Servers",
-   "link": "https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html",
-   "published": "2026-11-02T11:50:00+00:00",
-   "summary": "Two critical flaws in Langflow could let a remote attacker with no account bypass authentication or run arbitrary code, IBM said last week. Langflow is an open-source tool for building AI agents and workflows, and its vulnerability reports go to IBM. Every release from 1.0.0 through 1.12.8 has the flaws, and the only…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_FF2_yXQrxnB1ymo-GsohY6t0INslV7mps2DVMnYa_dD_RpZu7uz9HwNrux1gxieMF4hnc_84KMpOyhroj0EDx0Vwv0QljdhTehvJINIsr-Sjyw4CaMiLO3fFWGl-8LhLWgOtC4DRU2X5e46s3Rxghu3KLUMsyHfpxFyKogIs34Q2fm2RYpAMI_Jt_9A/s1600/langflow-rce.jpg",
-   "cves": [],
-   "first_seen": "2026-11-02T13:52:43.666569+00:00",
-   "instructions": [
-    "Its code description warns that it \"bypasses authentication and should only be used in development environments.\"",
-    "IBM offers no workaround for servers that cannot upgrade yet.",
-    "Neither flaw is in CISA's Known Exploited Vulnerabilities catalog, as of the catalog's October 30 update.",
-    "If the server uses automatic login, prepare the existing account for password sign-in, as Langflow's upgrade guidance describes."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "d013e25bf406",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1339,6 +1318,27 @@
    "instructions": [
     "None of the three advisory reports describe attacks exploiting the flaw or offer a workaround for systems that cannot update yet.",
     "The attacker's code then runs as root, according to advisories that Debian , Ubuntu , and APT's developers published on November 4."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "c5154d08fadf",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Default 'admin:admin' Server Password Helps Researchers Hack Two Automakers, Unlock and Start Cars",
+   "link": "https://thehackernews.com/2026/11/default-adminadmin-server-password.html",
+   "published": "2026-11-09T11:27:53+00:00",
+   "summary": "The login systems behind two car brands' mobile apps could be taken over completely, two security researchers found, allowing them to access any customer's account and, for an owner with a connected car, unlock the doors and start the engine. Both apps signed customers in through ForgeRock, an identity platform now…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiI85M0pHHPiXe5ar2VpaGsBVRzxoYfZhpQTKgWqd8YGjK9Nyaca-z6XrGT3jT0lqh41qe-cAjb33_r7JErd7rB1CfuWkgTP_z-_IJkpQPWebz1GeEvSu9QpE5XYWRMOfhYTHmzhbkFB07hzSuV1FYARdaIWjfB_mUoX1_eMjl_3dOaSUFpTQvjt-34eQo/s1600/login-car.jpg",
+   "cves": [],
+   "first_seen": "2026-11-09T12:42:07.180566+00:00",
+   "instructions": [
+    "The brands' mistake was in how they ran ForgeRock, not a new bug in the product, so there is no CVE, the public ID that tracks a flaw, and no vendor advisory to follow.",
+    "ForgeRock's own hardening guide tells operators to remove this console or protect it before going live because it stores its own password separately from the rest of the system.",
+    "The records sat behind the same block as the console, but the researchers' code reached them from inside the server.",
+    "The console and its default password have been documented for years, and the maker's production hardening guide already tells operators to remove the console or change its password before going live."
    ],
    "instructions_checked": true
   },
@@ -1978,6 +1978,24 @@
    "first_seen": "2026-11-09T08:27:52.608438+00:00",
    "instructions": [
     "\"The actors may exploit vulnerabilities or weaknesses in unpatched or internet-accessible controllers to remotely alter settings and force units into continuous heating and defrost cycles, which can cause widespread inventory loss and equipment hazards,\" according to a joint advisory."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "a02fb0af2916",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Web3Auth Flaw Exploited to Steal Keplr Crypto, Provider Empties Other Wallets for Safety",
+   "link": "https://thehackernews.com/2026/11/web3auth-flaw-exploited-to-steal-keplr.html",
+   "published": "2026-11-09T10:56:25+00:00",
+   "summary": "Some people who set up a Keplr crypto wallet with their Google or Apple account have had money stolen by an attacker. Keplr uses a company called Web3Auth to run that Google and Apple sign-in. The attacker used a security flaw at that company to reach the wallets, both companies said late last week. Web3Auth then used…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJtevfYXrRQrcU5FKn33bfyWpqN9O6FlI2b1eWOTjNWWslLIM1wwUfpzedZdMvdw6BXqmYqM1PwO-8GH3_IpKOGa15uoiXx5yDTkAal7JOFSKisSYOAHBdRk9XImTowXaCyJlTwX-chPd7uJFCDEq8u9sKY7jW6UYxorQKUSyuH9pF3szdwejvN_HGhno/s1600/kep.jpg",
+   "cves": [],
+   "first_seen": "2026-11-09T12:42:07.180566+00:00",
+   "instructions": [
+    "In an incident update , Web3Auth said a security issue in its own infrastructure affected certain wallets it provides inside the Keplr app."
    ],
    "instructions_checked": true
   },
@@ -3555,6 +3573,25 @@
    "instructions_checked": true
   },
   {
+   "id": "53877e7ba1bf",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Ukraine dismantles crypto scam network that stole €4.3 million",
+   "link": "https://www.bleepingcomputer.com/news/security/ukraine-dismantles-crypto-scam-network-that-stole-43-million/",
+   "published": "2026-11-09T12:16:13+00:00",
+   "summary": "Ukrainian law enforcement arrested four suspects in a case involving the theft of more than €4.3 million using a network of cryptocurrency investment scam call centers.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/04/29/Law_enforcement_arrest.jpg",
+   "cves": [],
+   "first_seen": "2026-11-09T12:42:07.180566+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "1aedc3ffafe5",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4275,18 +4312,18 @@
    "instructions_checked": true
   },
   {
-   "id": "fd515affb539",
+   "id": "e0f360ec1ac8",
    "source": "schneier",
    "source_name": "Schneier on Security",
    "official": false,
    "source_type": "news",
-   "title": "AI Vulnerability Finding",
-   "link": "https://www.schneier.com/blog/archives/2026/11/ai-vulnerability-finding-2.html",
-   "published": "2026-11-02T12:02:34+00:00",
-   "summary": "A comment: 3% of ‘critical’ software security bugs, in all of recorded history, have been found in the last month. This is on pace to find another ~100,000 bugs this year alone, adding ~26% more vulnerabilities to the all time total Do you realize how fucking insane that is? Yes. It is a new world out there.",
+   "title": "AI Security",
+   "link": "https://www.schneier.com/blog/archives/2026/11/ai-security.html",
+   "published": "2026-11-09T12:05:39+00:00",
+   "summary": "Two weeks ago, I attended the [un]prompted AI security conference in San Francisco. It was an excellent event: three days of very dense talks about all aspects of AI security. (My talk was about integrous AI, and I will post it when it is online.) AI security can be divided into three broad topics. It’s important for…",
    "image": null,
    "cves": [],
-   "first_seen": "2026-11-02T12:37:32.265331+00:00",
+   "first_seen": "2026-11-09T12:42:07.180566+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -4854,6 +4891,28 @@
    "instructions_checked": true
   },
   {
+   "id": "de9719511839",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Hackers Exploiting ‘SSHole’ Authentication Bypass in OpenSSH",
+   "link": "https://www.securityweek.com/hackers-exploiting-sshole-authentication-bypass-in-openssh/",
+   "published": "2026-11-09T12:13:32+00:00",
+   "summary": "The initial exploitation attempts are attributed to botnets and crypto miners, but other threat actors are expected to follow suit. The post Hackers Exploiting ‘SSHole’ Authentication Bypass in OpenSSH appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/11/SSH.webp",
+   "cves": [],
+   "first_seen": "2026-11-09T12:42:07.180566+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Users are advised to update to OpenSSH version 10.6p2 as soon as possible.",
+    "Successful exploitation could allow attackers to access accounts such as root, which should never accept a password.",
+    "Last week, OpenSSH rushed patches for the bug, and Alpine urged users to apply them and restart sshd as soon as possible.",
+    "As a mitigation, they can disable password authentication (on by default in OpenSSH) or disable SSH."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "3819f6707361",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -4871,6 +4930,25 @@
     "The company has not identified the specific flaw beyond pointing to its Synology-SA-24:20 advisory.",
     "Synology recommends that anyone on a vulnerable release update DSM right away and turn on automatic updates.",
     "Initial access mainly came from stolen or exposed cloud credentials and API keys, and in one intrusion the attackers exploited a LiteLLM vulnerability (CVE-2026-40217) to upgrade ordinary keys to full admin credentials.",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "a3066db4d12b",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Italy’s Meloni Blames Pro-Russian Hackers for Leak of Foreign Minister’s Data on the Dark Web",
+   "link": "https://www.securityweek.com/italys-meloni-blames-pro-russian-hackers-for-leak-of-foreign-ministers-data-on-the-dark-web/",
+   "published": "2026-11-09T12:22:12+00:00",
+   "summary": "Italian Foreign Minister Antonio Tajani said Saturday that his personal data had been disseminated on the dark web. The post Italy’s Meloni Blames Pro-Russian Hackers for Leak of Foreign Minister’s Data on the Dark Web appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/09/data-leak.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-09T12:42:07.180566+00:00",
+   "image_checked": true,
+   "instructions": [
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
