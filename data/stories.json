@@ -160,6 +160,25 @@
    "instructions_checked": true
   },
   {
+   "id": "8abde1ce00be",
+   "source": "ars",
+   "source_name": "Ars Technica Security",
+   "official": false,
+   "source_type": "news",
+   "title": "Vulnerability that lets hackers SSH into Linux devices is under active exploitation",
+   "link": "https://arstechnica.com/security/2026/11/vulnerability-that-lets-hackers-ssh-into-linux-devices-is-under-active-exploitation/",
+   "published": "2026-11-09T19:41:34+00:00",
+   "summary": "Hackers are actively exploiting a recently discovered critical vulnerability that allows them to log in to privileged accounts on many Linux systems, multiple researchers are reporting. The vulnerability, tracked under the name *sshole, arises from the interaction between OpenSSH and a code library known as musl…",
+   "image": "https://cdn.arstechnica.net/wp-content/uploads/2023/07/exploit-vulnerability-security.jpg",
+   "cves": [],
+   "first_seen": "2026-11-09T20:19:29.887916+00:00",
+   "instructions": [
+    "Further, OpenSSH must not use PAM (pluggable authentication modules), a framework that handles user authentication and account access checks.",
+    "Additionally, SSH configurations must (1) have at least one account that’s accessible using a password that is hashed using the SHA256 or SHA512 function and (2) also be set to use passwordless accounts by way of specifying a “*” in the password field in the /etc/shadow file."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "865fa666afda",
    "source": "windows-blog",
    "source_name": "Windows Experience Blog",
@@ -2406,25 +2425,6 @@
    "first_seen": "2026-11-02T22:12:00.507525+00:00",
    "image_checked": true,
    "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "18836a2757c3",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Michigan State cyber incident claimed by ransomware gang behind recent hospital attack",
-   "link": "https://therecord.media/michigan-state-university-byod-gang-cyber-incident",
-   "published": "2026-11-02T19:54:00+00:00",
-   "summary": "A recent post by the BYOD gang appears to line up with a security incident that prompted campus-wide action at Michigan State University. BYOD drew attention in October for an attack on the University of New Mexico.",
-   "image": "https://cms.therecord.media/uploads/51827676980_7c7e7edcf5_o_24c477828d.jpg",
-   "cves": [],
-   "first_seen": "2026-11-02T20:44:55.104181+00:00",
-   "image_checked": true,
-   "instructions": [
-    "To protect university accounts and systems, the school’s IT team required anyone with an MSU NetID to reset their passwords and create a new password that is at least 15 characters long."
-   ],
    "instructions_checked": true
   },
   {
