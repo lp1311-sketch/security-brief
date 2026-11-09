@@ -1081,6 +1081,24 @@
    "instructions_checked": true
   },
   {
+   "id": "7bdf0c6dc5dc",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Bitter Hackers Deploy New PapRAT Backdoor in Cyberespionage Campaign Targeting South Asia",
+   "link": "https://thehackernews.com/2026/11/bitter-hackers-deploy-new-paprat.html",
+   "published": "2026-11-09T14:31:29+00:00",
+   "summary": "The South Asian cyber espionage group known as Bitter (aka APT-C-08, APT-Q-37, Hazy Tiger, Orange Yali, T-APT-17, and TA397) has been observed targeting South Asian organizations with a previously unreported remote access trojan called PapRAT. \"PapRAT has both C++ and Rust implementations,\" Fortinet FortiGuard Labs…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQwQpjbb2oT57o807l7YmQ31V2RbyxqqO4hENkKlfikKKH-LeqSUiYz5AaPCCFWml-l_RaN1JMiwbJa9lJe7z7Ijzdk66icRP70eETLZ7lLomkSa3JjezoxbRNeDEkTv0K-26dSzHKxAjc7xyLA9RbIiERPLqyRu5QzfyrPeyIA4dfLzMil5wDkYN9n4sG/s1600/command.jpg",
+   "cves": [],
+   "first_seen": "2026-11-09T16:00:28.722071+00:00",
+   "instructions": [
+    "\"Organizations should treat unexpected LNK files, URL shortcuts, disk images, and MSI packages with caution, particularly when delivered through unsolicited messages.\""
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "6facdf5f94df",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1318,27 +1336,6 @@
    "cves": [],
    "first_seen": "2026-11-09T08:27:52.608438+00:00",
    "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "948be6f589a7",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Google Disrupts 1.3 Million-Device Android Botnet, Says TV Box Maker Sold Criminal Access",
-   "link": "https://thehackernews.com/2026/11/google-disrupts-13-million-device.html",
-   "published": "2026-11-02T15:50:26+00:00",
-   "summary": "A botnet of more than 1.3 million Android devices, mostly TV set-top boxes, lost control of its servers in late October in a takedown led by Google. Google says it is highly confident that device maker Videostrong intentionally put a backdoor in the boxes and sold access to criminals. They used the boxes for ad fraud…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkbU6vLZjF0nlz7vqN6UVf3kN1IcdUfIpAmVWlh2II4gGbMMmSuiE1S8HLzP4JV-ImeCa64hU-cEaa-yGXWqUO_XHOurKtEw61DFvjGOJhM7gHpRPpegBcCFYrXkd59wGX-PoV6zm7z7uq6PpXjc4GLhDRzcinR5IIjcOVZEVl8FMQ0v0Dt3CV9sRxZNk/s1600/android-tv-botnet.jpg",
-   "cves": [],
-   "first_seen": "2026-11-02T17:02:01.019874+00:00",
-   "instructions": [
-    "Plume recommends a full factory reset, because the modules may have installed more backdoors, but it does not say whether a reset removes x.cpe itself.",
-    "TrendAI advises companies with remote staff to treat unmanaged consumer devices on home networks as part of their attack surface, and to keep corporate access behind managed devices.",
-    "The backdoor is still on the boxes, and owners cannot remove it themselves.",
-    "To install software silently, it first turns off the app checks in Google Play Protect, Android's built-in security feature."
-   ],
    "instructions_checked": true
   },
   {
@@ -2537,6 +2534,25 @@
    "instructions_checked": true
   },
   {
+   "id": "b5262f310e47",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Ukraine arrests four in $5 million crypto scam targeting Germans",
+   "link": "https://therecord.media/ukraine-arrests-scam-call-centers-germany",
+   "published": "2026-11-09T15:24:00+00:00",
+   "summary": "Ukraine's cyber police said the four arrested men included the alleged leader of the scam call centers.",
+   "image": "https://cms.therecord.media/uploads/ukraine_police_scam_call_center_crackdow_47917126a9.jpg",
+   "cves": [],
+   "first_seen": "2026-11-09T16:00:28.722071+00:00",
+   "image_checked": true,
+   "instructions": [
+    "In a statement Friday, Ukraine's cyber police said the suspects operated call centers across the country, posing as financial advisers and persuading people in the European Union, particularly Germany, to invest in cryptocurrencies and stocks through fraudulent online platforms."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "260025e601bb",
    "source": "therecord",
    "source_name": "The Record",
@@ -2648,28 +2664,6 @@
    "image_checked": true,
    "instructions": [
     "The attacker also took steps to conceal the malicious activity and remove traces of the compromise, making detection and subsequent investigation more challenging.\""
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "be1d39eaf1aa",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "BTCPay Server warns of hot wallet crypto thefts on outdated instances",
-   "link": "https://www.bleepingcomputer.com/news/security/btcpay-server-warns-of-hot-wallet-thefts-targeting-outdated-instances/",
-   "published": "2026-11-02T15:03:07+00:00",
-   "summary": "The maintainer of BTCPay Server, an open-source cryptocurrency payment processor, has urged users to install the latest version as hackers have been draining \"hot wallets\" on instances running older versions.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/08/Bitcoin-cryptocurrency.jpg",
-   "cves": [],
-   "first_seen": "2026-11-02T15:59:39.061522+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Early Monday, the maintainer said it had “identified an attack vector targeting instances running version 2.4.1 (July 23, 2026) or earlier” and strongly urged users to update to version 2.4.7.",
-    "Impacted users should update to version 2.4.7 through Server Settings → Maintenance → Update.",
-    "Operators were initially advised to shut down their servers pending a full investigation into the unauthorized payments.",
-    "On October 29, the company disclosed a critical vulnerability discovered via Anthropic’s Frontier OSS scanner, which prompted the release of version 2.4.7 as an emergency security update ."
    ],
    "instructions_checked": true
   },
@@ -3433,6 +3427,26 @@
    "instructions_checked": true
   },
   {
+   "id": "82ab336fed5a",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "The Biggest Threat to Your GRC Job Isn’t AI. It’s Ignoring AI.",
+   "link": "https://www.bleepingcomputer.com/news/security/the-biggest-threat-to-your-grc-job-isnt-ai-its-ignoring-ai/",
+   "published": "2026-11-09T15:05:15+00:00",
+   "summary": "AI agents are taking over routine governance, risk, and compliance tasks, forcing GRC professionals to rethink the skills needed to stay relevant. Anecdotes examines three essential skills for the AI-driven GRC workplace: data literacy, agent governance, and communication.",
+   "image": "https://www.bleepstatic.com/content/posts/2026/11/09/dont-dumb-down-your-ai.jpg",
+   "cves": [],
+   "first_seen": "2026-11-09T16:00:28.722071+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Yair is a CEO on a mission to remove the frustration that typically accompanies enterprise GRC.",
+    "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "58f4053a1bb9",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -3580,23 +3594,6 @@
    "image": "https://www.bleepstatic.com/content/hl-images/2026/11/03/workos.jpg",
    "cves": [],
    "first_seen": "2026-11-03T22:10:24.347252+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "5ea1d647d005",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Your Mobile Carrier Stores Your Call Logs for Years",
-   "link": "https://www.bleepingcomputer.com/news/security/your-mobile-carrier-stores-your-call-logs-for-years/",
-   "published": "2026-11-02T15:01:11+00:00",
-   "summary": "Mobile carriers can retain years of call and text metadata, exposing sensitive details about customers' relationships, locations, and daily routines if breached. Cape examines the privacy risks of long-term telecom data retention and how its mobile service reduces exposure by automatically deleting call records.",
-   "image": "https://www.bleepstatic.com/content/posts/2026/10/30/cape-walking-across-street.jpg",
-   "cves": [],
-   "first_seen": "2026-11-02T15:59:39.061522+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -3826,22 +3823,6 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt5a6c898e92d21e63/6ae8ffda91cb5739c41bd1e1/binance_creativetan_shutterstock.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-02T23:02:12.422188+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "6c5cf422a94b",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "Microsoft's AI Risk Report Misses This Key Detail",
-   "link": "https://www.darkreading.com/cyberattacks-data-breaches/microsoft-ai-cyber-risk-report-miss",
-   "published": "2026-11-02T15:00:00+00:00",
-   "summary": "The latest \"Digital Defense Report\" identifies government agencies as prime targets for AI attacks, but it doesn't mention that they are broadly being targeted through Microsoft bugs.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt569484121108a889/6ae4e02ada596cc80722963c/AI-Saksit_Sangtong-Getty-2225595754.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-02T15:59:39.061522+00:00",
    "instructions": [],
    "instructions_checked": true
   },
@@ -4627,26 +4608,6 @@
    "image_checked": true,
    "instructions": [
     "French weekly newspaper Le Canard Enchaîné, which first reported the cyberattack, said that the attack had attempted to reset temperatures that normally are at minus 30 Celsius (minus 22 Fahrenheit) to as high as 110 C (230 F).",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "c0b0ac944847",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Cybersecurity M&A Roundup: 37 Deals Announced in October 2026",
-   "link": "https://www.securityweek.com/cybersecurity-ma-roundup-37-deals-announced-in-october-2026/",
-   "published": "2026-11-02T15:01:11+00:00",
-   "summary": "Significant cybersecurity deals were announced by Absolute Security, Aikido, Anthropic, Cohere, Hex-Rays, and Proofpoint. The post Cybersecurity M&A Roundup: 37 Deals Announced in October 2026 appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/02/MA-mergers-and-acquisitions.jpeg",
-   "cves": [],
-   "first_seen": "2026-11-02T15:59:39.061522+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Cohere to acquire AISLE Canadian AI developer Cohere has signed a letter of intent to acquire AISLE, a startup whose autonomous AI systems find and help patch vulnerabilities in critical software.",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
