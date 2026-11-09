@@ -1202,6 +1202,29 @@
    "instructions_checked": true
   },
   {
+   "id": "3d5dfb277e1d",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "CISA Flags SonicWall SonicOS MFA Bypass Flaw Amid Reports of Possible Exploitation",
+   "link": "https://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html",
+   "published": "2026-11-09T06:05:24+00:00",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a high-severity vulnerability impacting SonicWall SonicOS to its Known Exploited Vulnerabilities (KEV) catalog, following reports that it said may have been exploited in real-world attacks. The vulnerability, tracked as CVE-2026-19868 (CVSS…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjILYvlBWd-cPdnYJiX5gpFUBvDeq0nZYHWard5V4B8oEx7r_-4lUxcIan0_5l4EHxun-KbEHOJTj1p8qTuORzAaKalwqmlz1ajVuBmS-KTBJB0-rBSrhHGgHUkY0I3GTMSEbIy5fkP4vDyITtkZvbkqreMTACQjDS3OBRmnZE4U7pVZLjgId53L259b5Qj/s1600/sonicss.jpg",
+   "cves": [
+    "CVE-2026-19868"
+   ],
+   "first_seen": "2026-11-09T06:47:50.301606+00:00",
+   "instructions": [
+    "Federal Civilian Executive Branch (FCEB) agencies are recommended to apply the patches by November 20, 2026, to secure their networks against the threat.",
+    "Successful exploitation may also bypass SAML-enforced multi-factor authentication (MFA),\" SonicWall said in a Friday advisory.",
+    "The company also acknowledged that it \"investigated a report indicating potential exploitation of this vulnerability,\" urging customers to update to the latest version as soon as possible.",
+    "The development comes days after SonicWall detailed two unpatched vulnerabilities impacting end-of-life Global Management System (GMS) systems (CVE-2026-109593 and CVE-2026-109594), urging customers to upgrade to Network Security Manager (NSM)."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "804a43c3361e",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1625,24 +1648,6 @@
    "first_seen": "2026-11-03T19:21:10.215457+00:00",
    "instructions": [
     "It also does not say whether customers should keep using mSecure, including to store their new passwords."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "9068a344a035",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "New VOLTA Infostealer Uses Claude, Gemini, and Kimi AI to Rank Victims by Financial Value",
-   "link": "https://thehackernews.com/2026/11/new-volta-infostealer-uses-claude.html",
-   "published": "2026-11-02T05:51:07+00:00",
-   "summary": "Cybersecurity researchers have discovered a new Windows infostealer malware called VOLTA-AUTODOXER (aka VOLTA) that makes use of a large language model (LLM) to rank a victim's stolen data by their monetization value. Like other typical stealer families, VOLTA is equipped to harvest passwords and cookies from…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhd5V8QVweKn56_SnTCKZkhmOip6paz9noBrJn7znyZqUtFbOEaLuALQUNlmjcSAb7RIUW8GDETB6J0kFpQQe6vq7wAjk3ogxKUeQ0-2rKeO6TveLdqHNs9KnTN6zC6rwPzWE2IBWMokqQOUzAA0XPM2BWHTUTE7_U7XDfUGKTDIC1PYttxHGnAq_Kr_hMq/s1600/hacker-ai.jpg",
-   "cves": [],
-   "first_seen": "2026-11-02T07:23:10.547789+00:00",
-   "instructions": [
-    "\"The bundle is the ONLY permissible source of facts; your training knowledge must never supply a fact about the subject,\" reads a line from the prompt."
    ],
    "instructions_checked": true
   },
