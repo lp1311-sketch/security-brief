@@ -2079,6 +2079,23 @@
    "instructions_checked": true
   },
   {
+   "id": "cd41a3a65bdc",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Data breach at hearing aid giant Amplifon impacts thousands",
+   "link": "https://therecord.media/amplifon-hearing-aid-company-data-breach",
+   "published": "2026-11-09T20:44:00+00:00",
+   "summary": "The U.S arm of international hearing aid company Amplifon has been notifying customers about a data breach early this year that included medical information.",
+   "image": "https://cms.therecord.media/uploads/amplifon_sign_0b2aa19c9e.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-09T21:15:06.503707+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "71b12d48491a",
    "source": "therecord",
    "source_name": "The Record",
@@ -3940,6 +3957,22 @@
    "instructions_checked": true
   },
   {
+   "id": "527a69512361",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "Black Hat India 2026 Makes a Landmark Debut in Bengaluru, Bringing the Global Cybersecurity Community to India",
+   "link": "https://www.darkreading.com/cybersecurity-operations/black-hat-india-2026-landmark-debut",
+   "published": "2026-11-09T20:19:56+00:00",
+   "summary": "Inaugural edition by Informa Markets in India brings together leading researchers, security practitioners and industry decision makers for four days of cutting-edge research, technical exchange and strategic dialogue.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt850556f866500627/654a5a8e05eb4d040a046894/325351_DR23_Graphics_General_Large_Text_v1.png?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-09T21:15:06.503707+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "699d6dc9b64e",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -4180,27 +4213,6 @@
    "instructions_checked": true
   },
   {
-   "id": "73b73a473518",
-   "source": "msblog",
-   "source_name": "Microsoft Security Blog",
-   "official": false,
-   "source_type": "vendor_blog",
-   "title": "What exploited vulnerabilities have in common: A data-driven analysis of real-world attacks",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/02/exploited-vulnerabilities-common-data-driven-analysis-real-world-attacks/",
-   "published": "2026-11-02T20:20:59+00:00",
-   "summary": "The vulnerability landscape continues to expand. From 1999 through September 2026, approximately 383,000 software vulnerabilities had been disclosed across platforms and technologies, yet only about 2,000 CVEs (roughly 0.5%) have been linked to real-world exploitation. Those vulnerabilities follow clear patterns…",
-   "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/11/image.webp",
-   "cves": [],
-   "first_seen": "2026-11-02T22:12:00.507525+00:00",
-   "instructions": [
-    "Microsoft Defender Vulnerability Management addresses this challenge through Exposure Score and prioritized security recommendations .",
-    "Microsoft Defender Vulnerability Management security recommendations",
-    "Threat actors disproportionately target flaws that enable system takeover, particularly remote code execution, privilege escalation, and authentication bypass.",
-    "For example, when a vulnerability can bypass authentication and directly enable remote code execution (RCE), we classify it as RCE."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "86c38c1e82c9",
    "source": "msblog",
    "source_name": "Microsoft Security Blog",
@@ -4322,6 +4334,30 @@
     "These reports provide intelligence, protection information, and recommended actions to prevent, mitigate, or respond to associated threats found in customer environments.",
     "This query looks for new files being downloaded using curl. curl also has legitimate uses, so files and hosts should be reviewed to identify potentially malicious activity.",
     "Microsoft has observed Storm-3358 use ARTEX in combination with conventional automated tools to scan systems connected to the public internet, exploit security flaws including anonymous file upload and server-side request forgery (SSRF), and install open-source remote access trojans (RATs)."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "5bce94b89cfb",
+   "source": "msblog",
+   "source_name": "Microsoft Security Blog",
+   "official": false,
+   "source_type": "vendor_blog",
+   "title": "FORGE Lab uses agentic tools to identify memory safety issues in Rust",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/09/forge-lab-uses-agentic-tools-to-identify-memory-safety-issues-in-rust/",
+   "published": "2026-11-09T20:17:31+00:00",
+   "summary": "Microsoft’s FORGE Lab found several memory safety issues in Rust’s standard library (std and core), including cases where code written entirely in safe Rust can trigger undefined behavior. The research used Hyenas, FORGE’s frontier research version of codename MDASH, an AI-powered vulnerability-scanning system. The…",
+   "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/11/image-17.webp",
+   "cves": [
+    "CVE-2015-20001",
+    "CVE-2020-36323"
+   ],
+   "first_seen": "2026-11-09T21:15:06.503707+00:00",
+   "instructions": [
+    "That API must be sound : no matter how safe code uses it, it must be impossible to trigger undefined behavior.",
+    "Unsafe code must be careful with every call it makes, and the bugs we found fall into three patterns of misplaced trust: trusting code not to panic, trusting user-provided implementations to be correct, and trusting the underlying system.",
+    "The comparator is safe code supplied by the caller, so the unsafe code inside the sort must stay sound no matter what it returns.",
+    "The CharPattern branch checks that the character is ASCII, but the StringPattern branch assumes a one-byte string pattern must be ASCII."
    ],
    "instructions_checked": true
   },
