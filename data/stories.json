@@ -1085,6 +1085,27 @@
    "instructions_checked": true
   },
   {
+   "id": "4271579ddeba",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Binance Warns of iOS Sandbox Escape That Could Expose Crypto Wallet Keys, No Fix Confirmed",
+   "link": "https://thehackernews.com/2026/11/binance-warns-of-ios-sandbox-escape.html",
+   "published": "2026-11-10T12:15:31+00:00",
+   "summary": "An iOS sandbox escape published on GitHub lets an app read other apps' files on iPhones running iOS 26 and 27. That puts seed phrases, private keys, and login credentials at risk of exposure to malicious apps, Binance warned today. Apple's updates for iOS 26 and 27, released yesterday, do not list a fix. A researcher…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikVWFDhEAWo-q-_JsRneE91hAsf7Ho4XXGI51_q0V6XaCrBl7COWgs81b8KLYtdO0XaRMjP5JbJs80iC103U16Mr7GU05znwtx3CvvMnJMR1ywArpKJj4AdVd9HaLv0U65k59BBY706XjRtU8bx9q-fnLlozVb63XJ43QDKm3FbJUmrSwcB9TvwJpyP64/s1600/ios-jail.jpg",
+   "cves": [],
+   "first_seen": "2026-11-10T13:19:58.015679+00:00",
+   "instructions": [
+    "For anyone who suspects a breach, the exchange's security warning advises moving funds to a new wallet created on a clean device and resetting all active login sessions.",
+    "The exchange told users to delete apps installed from untrusted sources, such as sideloaded or manually signed apps, and to update iOS and all their apps.",
+    "He says the code is for developers and \"isn't useful by itself.\" Other developers have built apps on it that people can install.",
+    "Apple does not disclose, discuss, or confirm security issues until it has investigated and a patch or release is available, the notes say."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "7bdf0c6dc5dc",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2444,6 +2465,25 @@
    "first_seen": "2026-11-03T14:13:04.962203+00:00",
    "image_checked": true,
    "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "633b52d3362d",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Russian hackers compromised government email servers to steal NATO, EU correspondence",
+   "link": "https://therecord.media/russia-hackers-espionage-romania-kazakhstan",
+   "published": "2026-11-10T13:00:00+00:00",
+   "summary": "Russian state-linked hackers have compromised government email servers in Romania and Kazakhstan to secretly intercept messages exchanged with NATO and European Union officials, researchers said.",
+   "image": "https://cms.therecord.media/uploads/Email_55c6595c21.jpg",
+   "cves": [],
+   "first_seen": "2026-11-10T13:19:58.015679+00:00",
+   "image_checked": true,
+   "instructions": [
+    "This allowed the hackers to operate without relying on external servers that security researchers could detect, block or shut down."
+   ],
    "instructions_checked": true
   },
   {
@@ -3840,6 +3880,22 @@
    "instructions_checked": true
   },
   {
+   "id": "b18e440d8eb0",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "AI Makes Reverse Engineering Mainstream Software & Malware Far Easier",
+   "link": "https://www.darkreading.com/application-security/ai-reverse-engineering-apps",
+   "published": "2026-11-10T13:00:00+00:00",
+   "summary": "Researchers unpacked, mapped, and recreated complex software and the Turla malware, raising fresh concerns for defenders.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt50398014b3f8049d/6aee2b328988653fd1de4aef/Binary-PashaIgnatov-Getty.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-10T13:19:58.015679+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "1b4641ca3728",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -4578,24 +4634,23 @@
    "instructions_checked": true
   },
   {
-   "id": "14152597814e",
+   "id": "037628398b09",
    "source": "securityweek",
    "source_name": "SecurityWeek",
    "official": false,
    "source_type": "news",
-   "title": "Android’s November 2026 Updates Patch Over 200 Vulnerabilities",
-   "link": "https://www.securityweek.com/androids-november-2026-updates-patch-over-200-vulnerabilities/",
-   "published": "2026-11-03T12:21:49+00:00",
-   "summary": "The most severe is a critical flaw in Framework leading to remote code execution without user interaction. The post Android’s November 2026 Updates Patch Over 200 Vulnerabilities appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2025/02/Android-update.jpeg",
+   "title": "Anthropic Rolls Out Mythos 5.2 With Improved Bug Hunting, Fewer Sandbox Escapes",
+   "link": "https://www.securityweek.com/anthropic-rolls-out-mythos-5-2-with-improved-bug-hunting-fewer-sandbox-escapes/",
+   "published": "2026-11-10T12:17:13+00:00",
+   "summary": "Anthropic says Mythos 5.2 improves vulnerability discovery while showing a lower tendency to escape sandboxes in controlled tests. The post Anthropic Rolls Out Mythos 5.2 With Improved Bug Hunting, Fewer Sandbox Escapes appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/05/Anthropic-Claude.jpeg",
    "cves": [],
-   "first_seen": "2026-11-03T12:59:11.349315+00:00",
+   "first_seen": "2026-11-10T13:19:58.015679+00:00",
    "image_checked": true,
    "instructions": [
-    "The first part of the patches arrives on devices as the 2026-11-01 security patch level and resolves 119 security defects across Android runtime, Framework, and System.",
-    "The second part of Android’s November 2026 security updates arrives on devices as the 2026-11-05 security patch level and fixes 97 bugs in Kernel, Arm, Imagination Technologies, MediaTek, Unisoc, and Qualcomm components.",
-    "While most of the fixes target high-severity issues, more than a dozen of them resolve critical-severity weaknesses in subcomponents such as Bluetooth, pKVM, HID, MediaTek modem, and a Qualcomm closed-source component. “Security patch levels of 2026-11-05 or later address all of these issues,” Google notes.",
-    "In addition to the bugs described in the November 2026 Android bulletin, the Android XR update resolves a high-severity flaw in Framework, while the Wear OS patch addresses two high-severity issues in Framework and System."
+    "Direct access to Mythos is reserved for vetted organizations, which can apply through Anthropic’s Cyber and Life Sciences Verification Programs. “We’ve worked closely with the Anthropic team all year to harden Firefox with successive generations of Claude models, and each round has left fewer, subtler bugs to find.",
+    "Chrome Update Patches Exploited XML Zero-Day, Eighth This Year",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
   },
