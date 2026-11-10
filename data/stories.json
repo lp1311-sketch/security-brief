@@ -1265,27 +1265,6 @@
    "instructions_checked": true
   },
   {
-   "id": "63d055e30b47",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "cPGuard Update Channel Hijacked to Backdoor Linux Servers and Collect Password Hashes",
-   "link": "https://thehackernews.com/2026/11/cpguard-update-channel-hijacked-to.html",
-   "published": "2026-11-03T15:16:32+00:00",
-   "summary": "An attacker broke into the update system of the cPGuard security tool on November 2 and used it to send a malicious script to customers' Linux servers. The script installed a backdoor and collected password hashes and other sensitive files from servers that ran it, cPGuard maker OPSSHIELD said in an advisory. In a…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtc3HOtWwxZPk7V8yva9o6Oe5lWAPX8KZsWHG27ohycqrb04wAKSDSSdk6ta6y284N9gT6Ab6QKIWwTPss2bBK4PtS3Fm7gSI9QG5kec2AvEgQPjQnc0YlhlUQx0uZKt2ygn576BQ3aburL-IhrMRFVm1vEpTR5ol06R0BtjySvifD05Q_dQGUPvyPLxs/s1600/cpgaurd.png",
-   "cves": [],
-   "first_seen": "2026-11-03T16:18:42.092142+00:00",
-   "instructions": [
-    "The script installed a backdoor and collected password hashes and other sensitive files from servers that ran it, cPGuard maker OPSSHIELD said in an advisory .",
-    "The server should still be treated as potentially compromised, even if it now runs 5.88.25 or later.",
-    "Admins should also take these steps for any server where the script ran or may have run:",
-    "OPSSHIELD is not recommending a full reset or operating system rebuild as a routine step, and says that view could change as the investigation continues."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "d013e25bf406",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2414,6 +2393,26 @@
    "instructions_checked": true
   },
   {
+   "id": "f00273d9e0a7",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Palantir exec nominated to lead CISA; lame-duck Senate vote is uncertain",
+   "link": "https://therecord.media/michael-losapio-cisa-director-nomination",
+   "published": "2026-11-10T14:31:00+00:00",
+   "summary": "Michael LoSapio, Palantir's chief information officer, is officially President Donald Trump's pick to lead the Cybersecurity and Infrastructure Security Agency.",
+   "image": "https://cms.therecord.media/uploads/palantir_logo_2d26163873.jpg",
+   "cves": [],
+   "first_seen": "2026-11-10T15:28:37.836678+00:00",
+   "image_checked": true,
+   "instructions": [
+    "It is unclear if the Senate will take up LoSapio’s nomination during the already jam-packed lame duck session of Congress, with lawmakers looking to approve a must-pass government funding measure and the annual defense policy bill, among other priorities.",
+    "Should lawmakers adjourn next month without approving his nomination, Trump would have to nominate LoSapio again next year for consideration by the incoming Democratic majority."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "3189ce2b4e22",
    "source": "therecord",
    "source_name": "The Record",
@@ -2595,27 +2594,6 @@
    "image_checked": true,
    "instructions": [
     "They warned that anyone who notices suspicious activity on their devices — like pop-ups, security warnings, changes to files and password requests — should turn the device off and report it to campus IT officials."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "36b3d0baf9aa",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Barracuda warns of critical flaws allowing root access to devices",
-   "link": "https://www.bleepingcomputer.com/news/security/barracuda-warns-of-critical-flaws-allowing-root-access-to-devices/",
-   "published": "2026-11-03T15:06:16+00:00",
-   "summary": "Cybersecurity company Barracuda Networks warned customers to patch two vulnerabilities that can let attackers run commands with root privileges.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/03/Barracuda.jpg",
-   "cves": [],
-   "first_seen": "2026-11-03T15:12:33.092029+00:00",
-   "image_checked": true,
-   "instructions": [
-    "However, Barracuda said successful exploitation also requires access to the administrative interfaces of targeted devices and advised customers to use appropriate network access controls and restrict access to trusted internal networks to limit exposure.",
-    "Customers should review the affected products and remediation guidance [..], ensure their systems are running the latest firmware version, and have all security patches applied.\"",
-    "Cybersecurity company Barracuda Networks warned customers to patch two vulnerabilities that can let attackers run commands with root privileges."
    ],
    "instructions_checked": true
   },
@@ -2947,28 +2925,6 @@
    "image_checked": true,
    "instructions": [
     "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "f6282e8c323a",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Gartner Predicts SOCs Will Have 50% More Engineers Than Analysts by 2028",
-   "link": "https://www.bleepingcomputer.com/news/security/gartner-predicts-socs-will-have-50-percent-more-engineers-than-analysts-by-2028/",
-   "published": "2026-11-03T15:00:10+00:00",
-   "summary": "Gartner predicts that security operations centers will have 50% more engineers than analysts by 2028 as AI agents take over routine alert handling. Prophet Security examines how AI is reshaping SOC roles, from analyst responsibilities and detection engineering to threat hunting and exposure management.",
-   "image": "https://www.bleepstatic.com/content/posts/2026/10/28/future-soc-roles-header.jpg",
-   "cves": [],
-   "first_seen": "2026-11-03T15:12:33.092029+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Gartner's recommendation for analysts is direct: \"Human analysts must transition from alert triage roles to end-to-end case ownership and effective response option communication.\" In practice, the agent investigates the alert, and the analyst owns what happens next.",
-    "Gartner's report addresses how L1 and L2 roles change and the training and staffing changes SOC leaders should make now.",
-    "The report tells SOC leaders to \"redefine detection engineering role descriptions and hiring requirements.\" The new descriptions should go beyond rule writing to include prompt design, workflow testing, and AI output validation.",
-    "The report's recommendations translate into decisions that are easier to make before an AI SOC rollout than after it:"
    ],
    "instructions_checked": true
   },
@@ -3389,6 +3345,27 @@
     "CISA added all four flaws to its Known Exploited Vulnerabilities catalog on October 20, 2026, urging federal agencies to upgrade to Plex 1.43.3.10861 or later within three days, giving it maximum priority.",
     "QNAP advises users to update Plex Media Server to the latest version available through the QNAP App Center, currently 1.43.3.10861, to protect against Plex2Shell attacks.",
     "QNAP says that users should treat their NAS devices and all personal content as compromised if they're running a vulnerable Plex server that is exposed on the public web."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "74f31cae8a39",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Ransomware recovery is now a client retention metric",
+   "link": "https://www.bleepingcomputer.com/news/security/ransomware-recovery-is-now-a-client-retention-metric/",
+   "published": "2026-11-10T15:01:11+00:00",
+   "summary": "Recovering from ransomware doesn't guarantee an MSP will retain its clients, especially when delays, poor communication, and unexpected costs undermine trust. Kaseya examines how disconnected recovery tools create these problems and how integrated workflows can improve response times, transparency, and client…",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/09/30/secure-backup-vault.jpg",
+   "cves": [],
+   "first_seen": "2026-11-10T15:28:37.836678+00:00",
+   "image_checked": true,
+   "instructions": [
+    "When those expectations go unmet, a technically successful recovery may still leave clients questioning whether they should renew their contracts.",
+    "Time to first client update: How long after detection does the client hear from you?",
+    "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
    ],
    "instructions_checked": true
   },
@@ -5251,6 +5228,27 @@
    "instructions_checked": true
   },
   {
+   "id": "c1d47a910d2a",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "SAP Patches Critical ICM2SHELL, ProxyGate Vulnerabilities",
+   "link": "https://www.securityweek.com/sap-patches-critical-icm2shell-proxygate-vulnerabilities/",
+   "published": "2026-11-10T14:46:28+00:00",
+   "summary": "SAP has published 42 new and updated security advisories, including nine that address critical-severity vulnerabilities. The post SAP Patches Critical ICM2SHELL, ProxyGate Vulnerabilities appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/09/SAP_vulnerability-patches.jpg",
+   "cves": [],
+   "first_seen": "2026-11-10T15:28:37.836678+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Since the scheduled October 2026 security patches, SAP released new notes dealing with the recently disclosed PHP2Shell and Node2Shell vulnerabilities in its Business AI Platform and updated several other notes and advisories.",
+    "Chrome Update Patches Exploited XML Zero-Day, Eighth This Year",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "986edfc864db",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -5316,6 +5314,27 @@
    "instructions_checked": true
   },
   {
+   "id": "f9a315b08895",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Today: CISO Forum Virtual Summit 2026 – Join Global Cybersecurity Leaders",
+   "link": "https://www.securityweek.com/today-ciso-forum-virtual-summit-2026-join-global-cybersecurity-leaders/",
+   "published": "2026-11-10T15:00:00+00:00",
+   "summary": "Designed for cybersecurity leaders, this immersive two-day virtual event is your premier destination to discuss, share, and learn innovative risk management and defense strategies defining the modern enterprise. The post Today: CISO Forum Virtual Summit 2026 – Join Global Cybersecurity Leaders appeared first on…",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/11/CISO-Virtual-Conference.jpg",
+   "cves": [],
+   "first_seen": "2026-11-10T15:28:37.836678+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Burnout Is a Security Risk (2:00 PM ET) – Patrick Kelley, CISO & Founder of Critical Path Security, will provide a vital playbook for measuring and mitigating team fatigue before it leads to a security incident.",
+    "Chrome Update Patches Exploited XML Zero-Day, Eighth This Year",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "3450626e3180",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -5333,6 +5352,26 @@
     "Per the US government’s recommendations, taking the control systems off the internet is the best action organizations can take to prevent attacks.",
     "If web access is necessary, these systems should be protected by a firewall or edge device.",
     "Organizations should also isolate OT devices, restrict access to trusted identities, enforce strong password policies and phishing-resistant multifactor authentication, keep systems updated, maintain backups offsite, and enable logging and monitoring.",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "77e18dcd7482",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "WhiteMatter Raises $20 Million in Series A Funding",
+   "link": "https://www.securityweek.com/whitematter-raises-20-million-in-series-a-funding/",
+   "published": "2026-11-10T14:58:19+00:00",
+   "summary": "The cybersecurity startup deploys a dedicated guardian agent for every AI agent in an organization’s environment. The post WhiteMatter Raises $20 Million in Series A Funding appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/01/funding-investment.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-10T15:28:37.836678+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Chrome Update Patches Exploited XML Zero-Day, Eighth This Year",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
