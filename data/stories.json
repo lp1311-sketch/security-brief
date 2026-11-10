@@ -376,6 +376,471 @@
    "instructions_checked": true
   },
   {
+   "id": "1df64432304f",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-100204 HEIF Image Extensions Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-100204",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Use after free in HEIF Image Extensions allows an unauthorized attacker to execute code locally.",
+   "image": null,
+   "cves": [
+    "CVE-2026-100204"
+   ],
+   "first_seen": "2026-11-10T18:25:23.300263+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "ff3e2a189d50",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-102868 Windows Shell Information Disclosure Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102868",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Exposure of sensitive system information to an unauthorized control sphere in Windows Shell allows an authorized attacker to disclose information locally.",
+   "image": null,
+   "cves": [
+    "CVE-2026-102868"
+   ],
+   "first_seen": "2026-11-10T18:25:23.300263+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "c5a7aee1fe72",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-105544 .NET Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105544",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Improper access control in.NET allows an authorized attacker to elevate privileges locally.",
+   "image": null,
+   "cves": [
+    "CVE-2026-105544"
+   ],
+   "first_seen": "2026-11-10T18:25:23.300263+00:00"
+  },
+  {
+   "id": "6a2e9d577a80",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-105582 Windows DWM Core Library Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105582",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Release of invalid pointer or reference in Windows DWM Core Library allows an authorized attacker to elevate privileges locally.",
+   "image": null,
+   "cves": [
+    "CVE-2026-105582"
+   ],
+   "first_seen": "2026-11-10T18:25:23.300263+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "a50ae7fac549",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-105583 Windows DWM Core Library Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105583",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Release of invalid pointer or reference in Windows DWM Core Library allows an authorized attacker to elevate privileges locally.",
+   "image": null,
+   "cves": [
+    "CVE-2026-105583"
+   ],
+   "first_seen": "2026-11-10T18:25:23.300263+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "9c7f489322a3",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-105584 Windows Inventory Backup Information Disclosure Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105584",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Use of externally-controlled format string in Windows Inventory Backup allows an authorized attacker to disclose information locally.",
+   "image": null,
+   "cves": [
+    "CVE-2026-105584"
+   ],
+   "first_seen": "2026-11-10T18:25:23.300263+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "780fc64ae721",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-105586 Microsoft Windows SCSI Class System File Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105586",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Null pointer dereference in Microsoft Windows SCSI Class System File allows an authorized attacker to elevate privileges locally.",
+   "image": null,
+   "cves": [
+    "CVE-2026-105586"
+   ],
+   "first_seen": "2026-11-10T18:25:23.300263+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "36972463bc87",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-105587 Windows OLE DB Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105587",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Heap-based buffer overflow in Windows OLE DB allows an authorized attacker to elevate privileges locally.",
+   "image": null,
+   "cves": [
+    "CVE-2026-105587"
+   ],
+   "first_seen": "2026-11-10T18:25:23.300263+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "489ff1bcb336",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-105588 Windows DHCP Server Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105588",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Missing authentication for critical function in Windows DHCP Server allows an authorized attacker to elevate privileges locally.",
+   "image": null,
+   "cves": [
+    "CVE-2026-105588"
+   ],
+   "first_seen": "2026-11-10T18:25:23.300263+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "103a8c0e0968",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-105589 Windows Wireless Networking Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105589",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Use after free in Windows Wireless Networking allows an authorized attacker to elevate privileges locally.",
+   "image": null,
+   "cves": [
+    "CVE-2026-105589"
+   ],
+   "first_seen": "2026-11-10T18:25:23.300263+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "7e25e120e172",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-105590 Windows Active Directory Certificate Services Security Feature Bypass",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105590",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Improper certificate validation in Windows Active Directory Certificate Services allows an authorized attacker to bypass a security feature over a network.",
+   "image": null,
+   "cves": [
+    "CVE-2026-105590"
+   ],
+   "first_seen": "2026-11-10T18:25:23.300263+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "a8961c8495a7",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-108403 Windows Kernel Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108403",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Use after free in Windows Kernel allows an authorized attacker to elevate privileges locally.",
+   "image": null,
+   "cves": [
+    "CVE-2026-108403"
+   ],
+   "first_seen": "2026-11-10T18:25:23.300263+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "9a35a4d9a570",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-108409 Windows Overlay Filter Information Disclosure Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108409",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Exposure of sensitive system information to an unauthorized control sphere in Windows Overlay Filter allows an authorized attacker to disclose information locally.",
+   "image": null,
+   "cves": [
+    "CVE-2026-108409"
+   ],
+   "first_seen": "2026-11-10T18:25:23.300263+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "9ba2c99a6c7d",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-108411 Microsoft ODBC Driver Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108411",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Heap-based buffer overflow in Windows ODBC Driver allows an unauthorized attacker to execute code over a network.",
+   "image": null,
+   "cves": [
+    "CVE-2026-108411"
+   ],
+   "first_seen": "2026-11-10T18:25:23.300263+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "3909203a2a90",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-108415 Windows File Server Resource Management Service Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108415",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Untrusted pointer dereference in Windows File Server Resource Management Service allows an unauthorized attacker to elevate privileges with a physical attack.",
+   "image": null,
+   "cves": [
+    "CVE-2026-108415"
+   ],
+   "first_seen": "2026-11-10T18:25:23.300263+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "58b8bcc7f1eb",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-108416 Windows File Server Resource Management Service Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108416",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Untrusted pointer dereference in Windows File Server Resource Management Service allows an unauthorized attacker to elevate privileges with a physical attack.",
+   "image": null,
+   "cves": [
+    "CVE-2026-108416"
+   ],
+   "first_seen": "2026-11-10T18:25:23.300263+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "d1444b50cec7",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-108417 Windows Remote Desktop Client Information Disclosure Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108417",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Out-of-bounds read in Remote Desktop Client allows an unauthorized attacker to disclose information over a network.",
+   "image": null,
+   "cves": [
+    "CVE-2026-108417"
+   ],
+   "first_seen": "2026-11-10T18:25:23.300263+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "058ac757c6ac",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-108424 Windows GDI Information Disclosure Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108424",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Out-of-bounds read in Windows GDI allows an unauthorized attacker to disclose information over a network.",
+   "image": null,
+   "cves": [
+    "CVE-2026-108424"
+   ],
+   "first_seen": "2026-11-10T18:25:23.300263+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "cbc80a77570b",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-109463 Windows DNS Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109463",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Deserialization of untrusted data in Windows DNS allows an unauthorized attacker to execute code over a network.",
+   "image": null,
+   "cves": [
+    "CVE-2026-109463"
+   ],
+   "first_seen": "2026-11-10T18:25:23.300263+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "61b69f1deec0",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-109467 Azure DevOps Server Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109467",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Improper authentication in Azure DevOps allows an authorized attacker to execute code over a network.",
+   "image": null,
+   "cves": [
+    "CVE-2026-109467"
+   ],
+   "first_seen": "2026-11-10T18:25:23.300263+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "996a08168399",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-114164 HEVC Video Extensions Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114164",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Integer underflow (wrap or wraparound) in Microsoft Windows Codecs Library allows an unauthorized attacker to execute code over a network.",
+   "image": null,
+   "cves": [
+    "CVE-2026-114164"
+   ],
+   "first_seen": "2026-11-10T18:25:23.300263+00:00"
+  },
+  {
+   "id": "effd5055a310",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-114165 HEVC Video Extensions Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114165",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Heap-based buffer overflow in Microsoft Windows Codecs Library allows an unauthorized attacker to execute code locally.",
+   "image": null,
+   "cves": [
+    "CVE-2026-114165"
+   ],
+   "first_seen": "2026-11-10T18:25:23.300263+00:00"
+  },
+  {
+   "id": "1328adc53dd3",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-114166 Microsoft Raw Image Extension Information Disclosure Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114166",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Buffer over-read in Windows Raw Image Extension allows an unauthorized attacker to disclose information locally.",
+   "image": null,
+   "cves": [
+    "CVE-2026-114166"
+   ],
+   "first_seen": "2026-11-10T18:25:23.300263+00:00"
+  },
+  {
+   "id": "715925e8e865",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-114167 HEVC Video Extensions Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114167",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Heap-based buffer overflow in Microsoft Windows Codecs Library allows an unauthorized attacker to execute code locally.",
+   "image": null,
+   "cves": [
+    "CVE-2026-114167"
+   ],
+   "first_seen": "2026-11-10T18:25:23.300263+00:00"
+  },
+  {
+   "id": "9f0de78c83e1",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-114169 Windows Raw Image Extension Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114169",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Heap-based buffer overflow in Windows Raw Image Extension allows an unauthorized attacker to execute code over a network.",
+   "image": null,
+   "cves": [
+    "CVE-2026-114169"
+   ],
+   "first_seen": "2026-11-10T18:25:23.300263+00:00"
+  },
+  {
+   "id": "232b2c32bbc1",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-114170 Windows Kernel Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114170",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Use after free in Windows Kernel allows an authorized attacker to elevate privileges locally.",
+   "image": null,
+   "cves": [
+    "CVE-2026-114170"
+   ],
+   "first_seen": "2026-11-10T18:25:23.300263+00:00"
+  },
+  {
    "id": "02b7f3513306",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -680,6 +1145,22 @@
    "image_checked": true
   },
   {
+   "id": "3934bb4842ca",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-66801 Microsoft Xbox Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-66801",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Heap-based buffer overflow in Xbox allows an unauthorized attacker to execute code over a network.",
+   "image": null,
+   "cves": [
+    "CVE-2026-66801"
+   ],
+   "first_seen": "2026-11-10T18:25:23.300263+00:00"
+  },
+  {
    "id": "7c7d0982a3a9",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -849,6 +1330,54 @@
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
+  },
+  {
+   "id": "db9ef08d13bf",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-83894 RPC Runtime Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83894",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Use after free in RPC Runtime allows an authorized attacker to elevate privileges locally.",
+   "image": null,
+   "cves": [
+    "CVE-2026-83894"
+   ],
+   "first_seen": "2026-11-10T18:25:23.300263+00:00"
+  },
+  {
+   "id": "4f0ae400eaf2",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-84004 AMD Zen Information Disclosure Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-84004",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Processor optimization removal or modification of security-critical code in AMD Zen allows an authorized attacker to disclose information locally.",
+   "image": null,
+   "cves": [
+    "CVE-2026-84004"
+   ],
+   "first_seen": "2026-11-10T18:25:23.300263+00:00"
+  },
+  {
+   "id": "7523997ea4d0",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-84005 AMD Zen Information Disclosure Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-84005",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Processor optimization removal or modification of security-critical code in AMD Zen allows an authorized attacker to disclose information locally.",
+   "image": null,
+   "cves": [
+    "CVE-2026-84005"
+   ],
+   "first_seen": "2026-11-10T18:25:23.300263+00:00"
   },
   {
    "id": "ccc66eb25631",
@@ -1096,25 +1625,6 @@
     "\"We still encourage you, where necessary, to reset your password on other systems where you may be reusing credentials.\"",
     "From there, users can reset their passwords and rotate API keys to register transactions.",
     "\"We will require additional protections to access accounts, including that every user will have to reset passwords and rotate API keys as appropriate."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "8afc2fab5966",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Chainstack Reports Production Systems Breach Exposing Customer Data and Password Hashes",
-   "link": "https://thehackernews.com/2026/11/chainstack-reports-production-systems.html",
-   "published": "2026-11-03T18:16:19+00:00",
-   "summary": "Blockchain infrastructure provider Chainstack on Tuesday disclosed that it was targeted in a cyber attack that allowed an unauthorized party to gain access to some parts of its infrastructure. The incident is assessed to be part of a large-scale, artificial intelligence (AI)-powered attack campaign that came to light…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMgLc61q6cTompbBY4lS-pqinmS1_3vYBYH7OVnnFTmOZfMk8R7houuqUmnMhUs-gTI-55HwieAaPuCI_zhc0XNw74PhfZVbCjWexPUUugMc1crPvP6uQsic7o3GDy5KXbYJE8LtXqdban8cTcfnn9AxRgOkR0w5_bQx-pHTR1A5-ttEHcpqGkgYajjSiA/s1600/chainstack.png",
-   "cves": [],
-   "first_seen": "2026-11-03T19:21:10.215457+00:00",
-   "instructions": [
-    "Besides rotating the node credentials, customers are advised to regenerate their platform API keys, update passwords -- including other services where the same password has been reused -- and remain alert to potential phishing attempts.",
-    "\"We have no evidence they were read, but we are treating them as exposed and ask customers to rotate them.\""
    ],
    "instructions_checked": true
   },
@@ -2047,26 +2557,6 @@
    "instructions_checked": true
   },
   {
-   "id": "c12f1b8dac80",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "British businesses caught in Europe-wide supermarket fridge attacks",
-   "link": "https://therecord.media/british-businesses-caught-in-europe-wide-supermarket-fridge-attacks",
-   "published": "2026-11-03T17:43:00+00:00",
-   "summary": "Supermarket and grocery store refrigerator controls across Europe were hacked in the early hours of Monday in the second such wave of attacks in recent weeks — following a first wave in France — with unidentified perpetrators defrosting fridges and causing stock to spoil.",
-   "image": "https://cms.therecord.media/uploads/meat_40e30a68b3.jpg",
-   "cves": [],
-   "first_seen": "2026-11-03T18:11:53.246220+00:00",
-   "image_checked": true,
-   "instructions": [
-    "None of the affected members lost meat, he said, but the incident “must act as a reminder to all in the food industry, at whatever point in the supply chain they are, that their businesses may be seen by some as targets.”",
-    "All of the British suppliers were reportedly using vulnerable temperature controllers for which a firmware update had been available since August."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "ede1220cf0eb",
    "source": "therecord",
    "source_name": "The Record",
@@ -2348,7 +2838,7 @@
    "title": "Palantir exec nominated to lead CISA; lame-duck Senate vote is uncertain",
    "link": "https://therecord.media/michael-losapio-cisa-director-nomination",
    "published": "2026-11-10T14:31:00+00:00",
-   "summary": "Michael LoSapio, Palantir's chief information officer, is officially President Donald Trump's pick to lead the Cybersecurity and Infrastructure Security Agency.",
+   "summary": "Michael LoSapio, Palantir's chief information security officer, is officially President Donald Trump's pick to lead the Cybersecurity and Infrastructure Security Agency.",
    "image": "https://cms.therecord.media/uploads/palantir_logo_2d26163873.jpg",
    "cves": [],
    "first_seen": "2026-11-10T15:28:37.836678+00:00",
@@ -4182,27 +4672,6 @@
    "instructions_checked": true
   },
   {
-   "id": "86c38c1e82c9",
-   "source": "msblog",
-   "source_name": "Microsoft Security Blog",
-   "official": false,
-   "source_type": "vendor_blog",
-   "title": "Fake-download campaign uses trojanized installers to deliver monetization payloads",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/03/fake-download-campaign-uses-trojanized-installers-deliver-monetization-payloads/",
-   "published": "2026-11-03T17:32:47+00:00",
-   "summary": "Microsoft Threat Intelligence has identified an evolving fake-download campaign targeting users searching for cracked commercial software, free games, activators, plugins, and unofficial utilities. The campaign uses trojanized Inno Setup-style installers to distribute multiple monetized software payloads, referred to…",
-   "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/11/image-4.webp",
-   "cves": [],
-   "first_seen": "2026-11-03T18:11:53.246220+00:00",
-   "instructions": [
-    "WorldProxyPoolAgent configured sdk-agent.exe to run at system startup with highest privileges; WorldProxyPoolWatchdog configured a hidden, noninteractive PowerShell watchdog script to run every five minutes; and WorldProxyPoolUpdater configured sdk-agent.updater.exe update to run hourly.",
-    "It also provides investigation context, protection guidance, relevant indicators, and recommended response actions.",
-    "Configure reputation-based protection to help block known malicious and untrusted applications and downloads.",
-    "Evaluate ASR rules, including rules that block executable files unless they meet prevalence, age, or trusted-list criteria."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "302fe04b9508",
    "source": "msblog",
    "source_name": "Microsoft Security Blog",
@@ -4413,6 +4882,27 @@
    "first_seen": "2026-11-09T10:36:08.277872+00:00",
    "image_checked": true,
    "instructions": [
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "4893b7f6453d",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Adobe Patches 110 Vulnerabilities Across 9 Products",
+   "link": "https://www.securityweek.com/adobe-patches-110-vulnerabilities-across-9-products/",
+   "published": "2026-11-10T18:11:54+00:00",
+   "summary": "Adobe has fixed vulnerabilities in AEM, Premiere, Photoshop, After Effects, Connect, Audition, Dimension, Content Credentials SDK, and Media Encoder. The post Adobe Patches 110 Vulnerabilities Across 9 Products appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2023/07/Adobe.jpg",
+   "cves": [],
+   "first_seen": "2026-11-10T18:25:23.300263+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Adobe’s November 2026 Patch Tuesday updates fix roughly 110 vulnerabilities across nine products.",
+    "Chrome Update Patches Exploited XML Zero-Day, Eighth This Year",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true

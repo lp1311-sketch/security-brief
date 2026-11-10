@@ -61,6 +61,16 @@
    "url": "story/0eb55bf1598e.html"
   },
   {
+   "id": "489ff1bcb336",
+   "title": "CVE-2026-105588 Windows DHCP Server Elevation of Privilege Vulnerability",
+   "summary": "Missing authentication for critical function in Windows DHCP Server allows an authorized attacker to elevate privileges locally.",
+   "priority": "High",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/489ff1bcb336.html"
+  },
+  {
    "id": "2a5b7d5a686a",
    "title": "Hackers Exploit Patched Apple Flaw to Deliver Info-Stealing Malware, CISA Says",
    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a medium-severity security flaw impacting multiple Apple operating systems to its…",
@@ -69,6 +79,16 @@
    "date": "05 Nov 2026, 05:17 UTC",
    "sources": "The Hacker News, CISA Cybersecurity Advisories",
    "url": "story/2a5b7d5a686a.html"
+  },
+  {
+   "id": "cbc80a77570b",
+   "title": "CVE-2026-109463 Windows DNS Remote Code Execution Vulnerability",
+   "summary": "Deserialization of untrusted data in Windows DNS allows an unauthorized attacker to execute code over a network.",
+   "priority": "High",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center, The Hacker News",
+   "url": "story/cbc80a77570b.html"
   },
   {
    "id": "1f6bc1af5305",
@@ -109,6 +129,96 @@
    "date": "10 Nov 2026, 16:08 UTC",
    "sources": "The Record",
    "url": "story/4a9230aea75f.html"
+  },
+  {
+   "id": "ff3e2a189d50",
+   "title": "CVE-2026-102868 Windows Shell Information Disclosure Vulnerability",
+   "summary": "Exposure of sensitive system information to an unauthorized control sphere in Windows Shell allows an authorized attacker to disclose information locally.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/ff3e2a189d50.html"
+  },
+  {
+   "id": "6a2e9d577a80",
+   "title": "CVE-2026-105582 Windows DWM Core Library Elevation of Privilege Vulnerability",
+   "summary": "Release of invalid pointer or reference in Windows DWM Core Library allows an authorized attacker to elevate privileges locally.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/6a2e9d577a80.html"
+  },
+  {
+   "id": "780fc64ae721",
+   "title": "CVE-2026-105586 Microsoft Windows SCSI Class System File Elevation of Privilege Vulnerability",
+   "summary": "Null pointer dereference in Microsoft Windows SCSI Class System File allows an authorized attacker to elevate privileges locally.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/780fc64ae721.html"
+  },
+  {
+   "id": "7e25e120e172",
+   "title": "CVE-2026-105590 Windows Active Directory Certificate Services Security Feature Bypass",
+   "summary": "Improper certificate validation in Windows Active Directory Certificate Services allows an authorized attacker to bypass a security feature over a network.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/7e25e120e172.html"
+  },
+  {
+   "id": "1df64432304f",
+   "title": "CVE-2026-100204 HEIF Image Extensions Remote Code Execution Vulnerability",
+   "summary": "Use after free in HEIF Image Extensions allows an unauthorized attacker to execute code locally.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/1df64432304f.html"
+  },
+  {
+   "id": "9ba2c99a6c7d",
+   "title": "CVE-2026-108411 Microsoft ODBC Driver Remote Code Execution Vulnerability",
+   "summary": "Heap-based buffer overflow in Windows ODBC Driver allows an unauthorized attacker to execute code over a network.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/9ba2c99a6c7d.html"
+  },
+  {
+   "id": "61b69f1deec0",
+   "title": "CVE-2026-109467 Azure DevOps Server Remote Code Execution Vulnerability",
+   "summary": "Improper authentication in Azure DevOps allows an authorized attacker to execute code over a network.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/61b69f1deec0.html"
+  },
+  {
+   "id": "1328adc53dd3",
+   "title": "CVE-2026-114166 Microsoft Raw Image Extension Information Disclosure Vulnerability",
+   "summary": "Buffer over-read in Windows Raw Image Extension allows an unauthorized attacker to disclose information locally.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/1328adc53dd3.html"
+  },
+  {
+   "id": "7523997ea4d0",
+   "title": "CVE-2026-84005 AMD Zen Information Disclosure Vulnerability",
+   "summary": "Processor optimization removal or modification of security-critical code in AMD Zen allows an authorized attacker to disclose information locally.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/7523997ea4d0.html"
   },
   {
    "id": "7646e96e2e7b",
@@ -169,16 +279,6 @@
    "date": "09 Nov 2026, 20:17 UTC",
    "sources": "Microsoft Security Blog",
    "url": "story/5bce94b89cfb.html"
-  },
-  {
-   "id": "bd73ebc7b854",
-   "title": "Hackers Exploit Qubole's Trusted AWS Access to Breach Customer Accounts and Steal Data",
-   "summary": "An attacker broke into AWS accounts belonging to multiple Qubole customers between October 14 and October 26 and stole stored secrets and data, cloud security company…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "09 Nov 2026, 17:51 UTC",
-   "sources": "The Hacker News",
-   "url": "story/bd73ebc7b854.html"
   },
   {
    "id": "094609239735",
@@ -331,14 +431,14 @@
    "url": "story/8abde1ce00be.html"
   },
   {
-   "id": "7cd796fba406",
-   "title": "Hackers Compromise Ethersphere's bee-js and Swarm Desktop to Deliver Wallet-Stealing Malware",
-   "summary": "Attackers used the Ethersphere project's own release automation to publish malicious versions of two of its tools for the Swarm decentralized storage network: bee-js…",
+   "id": "bd73ebc7b854",
+   "title": "Hackers Exploit Qubole's Trusted AWS Access to Breach Customer Accounts and Steal Data",
+   "summary": "An attacker broke into AWS accounts belonging to multiple Qubole customers between October 14 and October 26 and stole stored secrets and data, cloud security company…",
    "priority": "Standard",
    "category": "Attacks & Breaches",
-   "date": "09 Nov 2026, 17:36 UTC",
+   "date": "09 Nov 2026, 17:51 UTC",
    "sources": "The Hacker News",
-   "url": "story/7cd796fba406.html"
+   "url": "story/bd73ebc7b854.html"
   },
   {
    "id": "e9e255b08220",
@@ -369,16 +469,6 @@
    "date": "06 Nov 2026, 16:08 UTC",
    "sources": "The Hacker News",
    "url": "story/9fe769e3c933.html"
-  },
-  {
-   "id": "13fd69411f6b",
-   "title": "CVE-2026-83844 Windows Paint Remote Code Execution Vulnerability",
-   "summary": "To comprehensively address the vulnerability identified by this CVE, Microsoft has released a new version of Paint with build version number 11.2609.401.0. Microsoft…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "06 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center, The Hacker News",
-   "url": "story/13fd69411f6b.html"
   },
   {
    "id": "28001d41675b",
@@ -441,6 +531,16 @@
    "url": "story/38532208b5af.html"
   },
   {
+   "id": "c5a7aee1fe72",
+   "title": "CVE-2026-105544 .NET Elevation of Privilege Vulnerability",
+   "summary": "Improper access control in.NET allows an authorized attacker to elevate privileges locally.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/c5a7aee1fe72.html"
+  },
+  {
    "id": "89d6f6254d42",
    "title": "Binance warns of iOS flaw that could leak crypto wallet secrets",
    "summary": "Binance is warning about a vulnerability in Apple's iOS 26.7.1, 27.0.1, and 27.2 that could allow third-party apps to read private files stored by other apps, including…",
@@ -481,24 +581,14 @@
    "url": "story/0e6f77f0820c.html"
   },
   {
-   "id": "adccb074fbff",
-   "title": "Attackers Crash Claude's 'Office Party' Flaw to Run Malicious Code on Linux",
-   "summary": "Attackers can exploit a flaw in Claude's document-processing tool by creating a temporary file that Anthropic's AI assistant can access and run on a user's machine.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "09 Nov 2026, 18:08 UTC",
-   "sources": "Dark Reading",
-   "url": "story/adccb074fbff.html"
-  },
-  {
-   "id": "073e03d22dae",
-   "title": "Russian cloud firm Beget rebuilds from scratch after data wiper attack",
-   "summary": "A data-wiping malware attack has forced Russian cloud services provider Beget to rebuild its cloud infrastructure from scratch, the company said.",
+   "id": "7cd796fba406",
+   "title": "Hackers Compromise Ethersphere's bee-js and Swarm Desktop to Deliver Wallet-Stealing Malware",
+   "summary": "Attackers used the Ethersphere project's own release automation to publish malicious versions of two of its tools for the Swarm decentralized storage network: bee-js…",
    "priority": "Standard",
    "category": "Attacks & Breaches",
-   "date": "09 Nov 2026, 17:50 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/073e03d22dae.html"
+   "date": "09 Nov 2026, 17:36 UTC",
+   "sources": "The Hacker News",
+   "url": "story/7cd796fba406.html"
   },
   {
    "id": "7cf7e23f8890",
@@ -681,14 +771,14 @@
    "url": "story/27b11b637919.html"
   },
   {
-   "id": "8afc2fab5966",
-   "title": "Chainstack Reports Production Systems Breach Exposing Customer Data and Password Hashes",
-   "summary": "Blockchain infrastructure provider Chainstack on Tuesday disclosed that it was targeted in a cyber attack that allowed an unauthorized party to gain access to some parts…",
+   "id": "4893b7f6453d",
+   "title": "Adobe Patches 110 Vulnerabilities Across 9 Products",
+   "summary": "Adobe has fixed vulnerabilities in AEM, Premiere, Photoshop, After Effects, Connect, Audition, Dimension, Content Credentials SDK, and Media Encoder. The post Adobe…",
    "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "03 Nov 2026, 18:16 UTC",
-   "sources": "The Hacker News",
-   "url": "story/8afc2fab5966.html"
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 18:11 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/4893b7f6453d.html"
   },
   {
    "id": "a726f2ce6dd2",
@@ -733,7 +823,7 @@
   {
    "id": "f00273d9e0a7",
    "title": "Palantir exec nominated to lead CISA; lame-duck Senate vote is uncertain",
-   "summary": "Michael LoSapio, Palantir's chief information officer, is officially President Donald Trump's pick to lead the Cybersecurity and Infrastructure Security Agency.",
+   "summary": "Michael LoSapio, Palantir's chief information security officer, is officially President Donald Trump's pick to lead the Cybersecurity and Infrastructure Security Agency.",
    "priority": "Standard",
    "category": "Industry & Research",
    "date": "10 Nov 2026, 14:31 UTC",
@@ -869,6 +959,26 @@
    "date": "09 Nov 2026, 18:30 UTC",
    "sources": "The Record",
    "url": "story/2fdab4abb5f3.html"
+  },
+  {
+   "id": "adccb074fbff",
+   "title": "Attackers Crash Claude's 'Office Party' Flaw to Run Malicious Code on Linux",
+   "summary": "Attackers can exploit a flaw in Claude's document-processing tool by creating a temporary file that Anthropic's AI assistant can access and run on a user's machine.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "09 Nov 2026, 18:08 UTC",
+   "sources": "Dark Reading",
+   "url": "story/adccb074fbff.html"
+  },
+  {
+   "id": "073e03d22dae",
+   "title": "Russian cloud firm Beget rebuilds from scratch after data wiper attack",
+   "summary": "A data-wiping malware attack has forced Russian cloud services provider Beget to rebuild its cloud infrastructure from scratch, the company said.",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "09 Nov 2026, 17:50 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/073e03d22dae.html"
   },
   {
    "id": "4065836ff3f5",
@@ -1219,16 +1329,6 @@
    "date": "03 Nov 2026, 18:51 UTC",
    "sources": "BleepingComputer",
    "url": "story/77eef035ebfc.html"
-  },
-  {
-   "id": "86c38c1e82c9",
-   "title": "Fake-download campaign uses trojanized installers to deliver monetization payloads",
-   "summary": "Microsoft Threat Intelligence has identified an evolving fake-download campaign targeting users searching for cracked commercial software, free games, activators…",
-   "priority": "Standard",
-   "category": "Microsoft",
-   "date": "03 Nov 2026, 17:32 UTC",
-   "sources": "Microsoft Security Blog",
-   "url": "story/86c38c1e82c9.html"
   },
   {
    "id": "32fa2d4c90f6",
@@ -2289,16 +2389,6 @@
    "date": "03 Nov 2026, 18:44 UTC",
    "sources": "The Record",
    "url": "story/96de8a8fe0e6.html"
-  },
-  {
-   "id": "c12f1b8dac80",
-   "title": "British businesses caught in Europe-wide supermarket fridge attacks",
-   "summary": "Supermarket and grocery store refrigerator controls across Europe were hacked in the early hours of Monday in the second such wave of attacks in recent weeks — following…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "03 Nov 2026, 17:43 UTC",
-   "sources": "The Record",
-   "url": "story/c12f1b8dac80.html"
   }
  ]
 }
