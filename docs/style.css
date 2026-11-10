@@ -538,3 +538,15 @@ h2,h3{font-family:var(--display);letter-spacing:-.02em}
 
 @media (max-width:860px){.bar{min-height:0;padding-top:12px;padding-bottom:6px}.intro h1{font-size:2rem}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.card:hover,.card:hover .card-media img{transform:none}}
+
+
+.search-btn{display:inline-flex;align-items:center;gap:8px;font-size:.85rem;font-weight:550;color:var(--ink);text-decoration:none;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:7px 12px;white-space:nowrap}
+.search-btn:hover{border-color:var(--accent)}
+.search-btn kbd,kbd{font:inherit;font-size:.72rem;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;border:1px solid var(--line);border-bottom-width:2px;border-radius:6px;padding:0 6px;color:var(--muted)}
+.search-list{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:12px}
+.search-item{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 18px}
+.search-item a{font-weight:650;font-size:1.02rem;color:var(--ink);text-decoration:none}
+.search-item a:hover,.search-item a:focus-visible{text-decoration:underline}
+.search-item .summary{margin:6px 0 0;color:var(--muted);font-size:.92rem}
+.search-kind{font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);font-weight:650}
+.search-list .empty{border:0;background:transparent}
