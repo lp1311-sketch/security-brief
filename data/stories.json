@@ -118,27 +118,6 @@
    "instructions_checked": true
   },
   {
-   "id": "6e52bc4c45b1",
-   "source": "ars",
-   "source_name": "Ars Technica Security",
-   "official": false,
-   "source_type": "news",
-   "title": "UEFI bootkit infected fully patched Windows machines. Is Microsoft to blame?",
-   "link": "https://arstechnica.com/security/2026/11/uefi-bootkit-infected-fully-patched-windows-machines-is-microsoft-to-blame/",
-   "published": "2026-11-03T16:03:13+00:00",
-   "summary": "In 2023, malware tracked as BlackLotus became the first publicly documented in-the-wild UEFI bootkit capable of bypassing Secure Boot on fully updated Windows 11 systems. With the industry-wide chain-of-trust mechanism subverted, the malware was able to run malicious code before Windows was fully loaded and many…",
-   "image": "https://cdn.arstechnica.net/wp-content/uploads/2020/10/malware-1000x648.jpg",
-   "cves": [],
-   "first_seen": "2026-11-03T16:18:42.092142+00:00",
-   "instructions": [
-    "One item that must be digitally signed is the boot manager, a component stored on a small dedicated partition on a drive.",
-    "The mitigation process included adding a new signing certificate, Windows UEFI CA 2023, to Secure Boot’s database of trusted certificates.",
-    "In 2024, Microsoft introduced a broader mitigation that provided a way to add the old certificate, Windows Production PCA 2011, to Secure Boot’s forbidden-signatures database.",
-    "A Microsoft representative said in an email that the company is advising customers to follow guidance in this Knowledge Base post published two weeks ago."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "9ed3b44bda29",
    "source": "ars",
    "source_name": "Ars Technica Security",
@@ -1008,6 +987,27 @@
    "instructions_checked": true
   },
   {
+   "id": "0eb55bf1598e",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Attackers Exploit AhsayCBS Flaws to Deploy Sandbox-Evading Python Backdoor",
+   "link": "https://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html",
+   "published": "2026-11-10T16:00:55+00:00",
+   "summary": "Cybersecurity researchers have disclosed details of an attack that exploited two now-patched vulnerabilities in AhsayCBS to deliver a Python-based implant. The activity, observed by Huntress in October 2026, involves the exploitation of a chain comprising CVE-2026-105133 and CVE-2026-105134 to bypass authentication…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgT-Z8hFA8uMe4HXLf_4QRk4Z4VLuUCDRL89LcgpXfsj9YAwLsLHIZL46pn2SLz0BBhCKPUKBhChDRRsKYPSkZPwmsDIhozGQ-4YemxOSol0AiwBEgtGX9OSZ_L3SQZVoebBX1fWGkh8TQ_hNVYHho0eCrBQzLlhnjPhhymXqcWePyuhdQDCMb6KJi6pmIe/s1600/cbs.jpg",
+   "cves": [
+    "CVE-2026-105133",
+    "CVE-2026-105134"
+   ],
+   "first_seen": "2026-11-10T16:31:18.268744+00:00",
+   "instructions": [
+    "\"[AhsayCBS.jsp's] disguise as an internal image preview service even extended down to a comment block describing a watermark endpoint,\" Huntress explained."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "4f9bb7c1ff8e",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1023,28 +1023,6 @@
    "instructions": [
     "The update follows an October 2026 alert issued by CERT-In, which warned of multiple cyber attack campaigns targeting non-banking financial companies (NBFCs), digital lending platforms, fintech entities, payment service providers, and cryptocurrency wallet operators.",
     "\"That's an unauthenticated root shell on every install, and it never shows up in a code review.\""
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "bc96c130a163",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Barracuda Flaws Could Be Chained to Bypass Authorization and Gain Root Access",
-   "link": "https://thehackernews.com/2026/11/barracuda-flaws-could-be-chained-to.html",
-   "published": "2026-11-03T15:59:19+00:00",
-   "summary": "Barracuda has disclosed details of two vulnerabilities affecting its products that, if chained together, could allow an attacker to bypass authorization controls and gain root access to a susceptible device. The vulnerabilities, a pre-authentication authorization bypass vulnerability and a command injection…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCvGJCkYjldhAvsjMo47UqxGOTfVY1zCcjZQzgebkO8j1__fa0cFOn3CAV1jPTUpzwDDISQKPQP5eVGOl9BzRLBX7KlWuU2HMpzuHRWV2wyaItDwYgPu0X7m3qE5V1kgFzKZ1QYcRBcZyDqkUTFberiOWXBfV_-suYC1QQWq_TwBMeyme4F0FsOZnpijhC/s1600/barracuda.png",
-   "cves": [
-    "CVE-2026-116606"
-   ],
-   "first_seen": "2026-11-03T17:20:53.929523+00:00",
-   "instructions": [
-    "\"Customers using these products should verify that their systems are running the latest firmware versions and have received all security patches,\" it added.",
-    "Restrict access to administrative interfaces to trusted internal networks",
-    "\"If firmware on a device is multiple versions out of date, customers may need to perform more than one update.\""
    ],
    "instructions_checked": true
   },
@@ -1121,6 +1099,22 @@
    "instructions": [
     "\"Organizations should treat unexpected LNK files, URL shortcuts, disk images, and MSI packages with caution, particularly when delivered through unsolicited messages.\""
    ],
+   "instructions_checked": true
+  },
+  {
+   "id": "7e413807cc2f",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Blind Eagle Uses Fake Court Notices to Deliver Remote Access Trojan Across Latin America",
+   "link": "https://thehackernews.com/2026/11/blind-eagle-uses-fake-court-notices-to.html",
+   "published": "2026-11-10T15:58:44+00:00",
+   "summary": "The threat actor known as Blind Eagle has resurfaced with a new campaign targeting organizations in Latin America through judicial and administrative-themed phishing lures to deliver a remote access trojan (RAT) that shares its lineage with AsyncRAT and DCRat. \"The campaign uses Portuguese and Spanish lures that…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhs4UHnKTj_NJCPa7Jqdntj8tEvZ2PgaY7s9kKK8_X2bxehTUcJeZPFfguJzvW_D0H9XD_q-qLZV2Qq6hqRYDQRYMXpyAzw-6T2yDjFjIY7zhGRLPDPjOalASUgX_Z-M2cEsNqiuys_4QjQ8vY_xl0fnWi2Y_9tT9aAH0WQOAB3D6uDf8yZY8VuphL4TRFG/s1600/court-phish.jpg",
+   "cves": [],
+   "first_seen": "2026-11-10T16:31:18.268744+00:00",
+   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -1348,6 +1342,22 @@
    "instructions_checked": true
   },
   {
+   "id": "7646e96e2e7b",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Fireworks AI Breach Widens to Expose Customer Billing Data and Incomplete Model Weights",
+   "link": "https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html",
+   "published": "2026-11-10T15:33:59+00:00",
+   "summary": "Fireworks AI disclosed on Monday that its investigation into a security incident first reported early last month uncovered further malicious activity, affecting account and billing information, alongside secrets, datasets, and incomplete models for a \"limited set of accounts.\" In a notice published on October 10…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-mBJN_E4CjW3MXyjYYdeCGcyR052aVnG3uUWjaEfafvPAdatcJhn9LbtngqXBb5JsVwJVoorc8i41nTbYR9UcwVrwWNzU-WAfVk2yL32hYW1elVMJtwauW53nhRG37EwbovnFCW8InensI8tKoR9pqcWnZx54t6xOU_HsjjR9KWTLwVr_MBcknFeGShZU/s1600/fire.jpg",
+   "cves": [],
+   "first_seen": "2026-11-10T16:31:18.268744+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "a2c922a06d73",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1426,25 +1436,6 @@
     "Phones get the fix with security patch level 2026-11-01 or later, which phone makers and carriers send on their own schedules.",
     "Cybersecurity and Infrastructure Security Agency, as of its November 3 update.",
     "Find the dates for the Android security update and the Google Play system update."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "310fe7a6e4c3",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Google Warns LLMjacking Attacks Are Costing Some Enterprises Up to $1 Million in Cloud Charges",
-   "link": "https://thehackernews.com/2026/11/google-warns-llmjacking-attacks-are.html",
-   "published": "2026-11-03T15:41:53+00:00",
-   "summary": "Google on Monday warned that threat actors are hijacking enterprise access to Large Language Models (LLMs) to fraudulently leverage expensive computing resources and AI services. The tactic is called LLMjacking, a form of resource hijacking adapted for the LLM era, where an attacker obtains an API key through…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjvqwPJPXsflyvqykVK3Pd1lLXLzEJ6vpLudxQUyYbWkS4nQ0dr9dhcSlMCPwgqfAkyadPSj28XReqkeiymKG5RAZMWpx5Hqhg_XI0HNp3jRMRpaO-wVIRbyJyS8MaaqDNOxXvk8aUENx_aiNMqrqm9SWjtJVpXR2uaP-LNp5deG4U_4YvSxpPKtdJLRNoh/s1600/llmjacking.png",
-   "cves": [],
-   "first_seen": "2026-11-03T16:18:42.092142+00:00",
-   "instructions": [
-    "Some threat actors attempt to bypass rate limits by adopting a \"burn and rotate\" strategy that involves continuously creating and deleting short-lived service accounts",
-    "Shortly after the legitimate install of the Codex or Claude Code CLI through npm, users are likely instructed to run a one-line command to fetch fileless PowerShell or bash setup script from a lookalike domain (\"vibe.aiok[.]me\") that's used to override the configuration."
    ],
    "instructions_checked": true
   },
@@ -2044,6 +2035,23 @@
    "instructions_checked": true
   },
   {
+   "id": "4a9230aea75f",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "AI company Fireworks says hackers stole data, billing info during October breaches",
+   "link": "https://therecord.media/ai-company-fireworks-says-hackers-stole-data-in-oct-attacks",
+   "published": "2026-11-10T16:08:00+00:00",
+   "summary": "Fireworks said the incident affected a “limited number of customer accounts” — all of whom were notified of the attack.",
+   "image": "https://cms.therecord.media/uploads/fireworks_1_9c80b2da5e.jpg",
+   "cves": [],
+   "first_seen": "2026-11-10T16:31:18.268744+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "cd41a3a65bdc",
    "source": "therecord",
    "source_name": "The Record",
@@ -2505,6 +2513,25 @@
    "instructions_checked": true
   },
   {
+   "id": "cb71d2bd129f",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Cybercriminals are increasingly infecting regular people with spyware",
+   "link": "https://therecord.media/spyware-cyber-crime-iverify",
+   "published": "2026-11-10T15:45:00+00:00",
+   "summary": "Cybercriminals are infecting devices on a large scale with spyware, increasingly compromising systems belonging to average people, according to a new report.",
+   "image": "https://cms.therecord.media/uploads/iphone_8675e4e6f4.jpg",
+   "cves": [],
+   "first_seen": "2026-11-10T16:31:18.268744+00:00",
+   "image_checked": true,
+   "instructions": [
+    "“Businesses need to update their threat models to stop focusing on VIPs and just assume this is a problem that everyone in the organization has to tackle,” Cole said."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "b5262f310e47",
    "source": "therecord",
    "source_name": "The Record",
@@ -2637,6 +2664,28 @@
    "instructions_checked": true
   },
   {
+   "id": "89d6f6254d42",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Binance warns of iOS flaw that could leak crypto wallet secrets",
+   "link": "https://www.bleepingcomputer.com/news/security/binance-warns-of-ios-flaw-that-could-leak-crypto-wallet-secrets/",
+   "published": "2026-11-10T15:59:19+00:00",
+   "summary": "Binance is warning about a vulnerability in Apple's iOS 26.7.1, 27.0.1, and 27.2 that could allow third-party apps to read private files stored by other apps, including cryptocurrency seed phrases, secret keys, and login credentials.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/09/Binance.jpg",
+   "cves": [],
+   "first_seen": "2026-11-10T16:31:18.268744+00:00",
+   "image_checked": true,
+   "instructions": [
+    "The company recommends that users delete any unnecessary and untrusted apps and apply the latest versions for iOS and other apps.",
+    "Where compromise is suspected, Binance advises users to transfer funds to a new wallet created on a clean device and reset all active login sessions.",
+    "The tool must be installed on an iPhone for the attack to work, but an attacker could distribute it through untrusted sources as a sideloaded app, bypassing Apple's App Store.",
+    "At this time, no cryptocurrency losses have been confirmed, but Binance urges users to install the update immediately as a precaution."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "f8e9629a67be",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -2699,6 +2748,28 @@
     "Verification should be a required step, not a judgment call based on how convincing someone sounds.",
     "When an employee needs to regain access to their account, it’s often the service desk that provides the password reset or account recovery.",
     "This becomes particularly dangerous when passing these checks is enough to authorize a password reset or recover an account."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "82b5e1a648c0",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Critical Xen Orchestra auth bypass flaw exploited to hijack VM servers",
+   "link": "https://www.bleepingcomputer.com/news/security/critical-xen-orchestra-auth-bypass-flaw-exploited-to-hijack-vm-servers/",
+   "published": "2026-11-10T16:17:16+00:00",
+   "summary": "A critical authentication bypass vulnerability in Xen Orchestra is being actively exploited in attacks that could grant administrator privileges and allow takeover of XCP-ng virtualization hosts.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/10/xen-orchestrator-logo.jpg",
+   "cves": [],
+   "first_seen": "2026-11-10T16:31:18.268744+00:00",
+   "image_checked": true,
+   "instructions": [
+    "According to a Vates security advisory , the flaw stems from how Xen Orchestra processes authentication tokens sent through REST API requests.",
+    "Administrators should install the update immediately, and if not possible, restrict Xen Orchestra access to dedicated management networks and block known malicious IP addresses.",
+    "Companies that believe they are compromised should rotate passwords and secrets used by their virtualization environments.",
+    "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
    ],
    "instructions_checked": true
   },
@@ -3831,38 +3902,6 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt8b872cbcbcd2dcf7/6af22bc90de73971ce9d3cd2/pink_paint-Olga_Yastremska-GettyImages-2289198696.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-09T22:08:37.808384+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "a32b51d8e118",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "LLMjacking Emerges as Thriving Cybercriminal Enterprise",
-   "link": "https://www.darkreading.com/cloud-security/llmjacking-thriving-cybercriminal-enterprise",
-   "published": "2026-11-03T15:35:50+00:00",
-   "summary": "Cybercriminals have turned reselling cloud access to LLMs into a lucrative business model, with some victims paying as much as $1 million in resource consumption before access was revoked.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltbc06310368e21110/6a4bdbe6a6d4757864059ce1/llm-Boy_Wirat-Getty-2149059417.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-03T16:18:42.092142+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "47887f1443ad",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "9 Cyber Awareness Tips That Actually Match Today's Maze of Threats",
-   "link": "https://www.darkreading.com/cyber-risk/9-cyber-awareness-tips-todays-maze-threats",
-   "published": "2026-11-03T15:38:20+00:00",
-   "summary": "Practical guidance on safer search, stronger login security, better executive protection, and other habits can reduce enterprise risk.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt73242ae0d40b68c0/6aea0c8226a0725a0631618d/maze-mikkelwilliam-GettyImages-1420679447.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-03T17:20:53.929523+00:00",
    "instructions": [],
    "instructions_checked": true
   },
