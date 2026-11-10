@@ -201,26 +201,6 @@
    "instructions_checked": true
   },
   {
-   "id": "3c40c26b85cd",
-   "source": "borncity",
-   "source_name": "Born's IT and Windows Blog",
-   "official": false,
-   "source_type": "news",
-   "title": "Datenleck bei notebooksbilliger.de und Phishing bei DIRS21 und topcamping.de",
-   "link": "https://borncity.com/blog/2026/11/03/datenleck-bei-notebooksbilliger-de-und-phishing-bei-dirs21-und-topcamping-de/",
-   "published": "2026-11-03T06:20:22+00:00",
-   "summary": "Der Hack bei notebooksbilliger.de scheint mehr Kunden als befürchtet zu betreffen. Zum 1. November 2026 gab es eine neue Welle Benachrichtigungen an Betroffene. Und es gab die Tage wieder zwei Phishing-Vorfälle mit abgezogenen Daten bei Reise-/Unterkunftsbuchungsportalen (DIRS21 und topcamping.de). Hier … Weiterlesen…",
-   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
-   "cves": [],
-   "first_seen": "2026-11-03T07:55:17.726879+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Matthew zu Windows 11 Update KB5127648: \"Gerät hinzufügen\" bei Druckern kaputt?",
-    "Smartphone nach Update heiß: Sony nennt bis zu zwei Tage Indexierung News 3."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "42b1ec161f14",
    "source": "borncity",
    "source_name": "Born's IT and Windows Blog",
@@ -1163,6 +1143,27 @@
     "Successful exploitation may also bypass SAML-enforced multi-factor authentication (MFA),\" SonicWall said in a Friday advisory.",
     "The company also acknowledged that it \"investigated a report indicating potential exploitation of this vulnerability,\" urging customers to update to the latest version as soon as possible.",
     "The development comes days after SonicWall detailed two unpatched vulnerabilities impacting end-of-life Global Management System (GMS) systems (CVE-2026-109593 and CVE-2026-109594), urging customers to upgrade to Network Security Manager (NSM)."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "b579a343e6b6",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "CISA Warns of Active Exploitation of OpenSSH, GPUStack, FreeSWITCH, and IBM Flaws",
+   "link": "https://thehackernews.com/2026/11/cisa-warns-of-active-exploitation-of.html",
+   "published": "2026-11-10T06:31:42+00:00",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added four security flaws impacting GPUStack, SignalWire FreeSwitch, OpenBSD OpenSSH, and IBM Aspera Faspex to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The vulnerabilities are listed below -…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVAsrcYxVs8sJe7IiSD6WkTC4yPv0eLfup7dwcsS0NLcAAgoY__wyC3UFCR90PL2ziKCEW-vMNIEQXES-8uAG-MxuXlyIDdQGeNREm8yFv3tbvsCVXXRyRGT4ORirvcVKP_uD62XHYy9w3x_P0o7XzkguJPwq_1vV2jPxxnZWbhAHHUJ3YJ6HbTlXb0shyphenhyphen/s1600/openssh.png",
+   "cves": [
+    "CVE-2026-123218"
+   ],
+   "first_seen": "2026-11-10T07:05:43.008496+00:00",
+   "instructions": [
+    "Federal Civilian Executive Branch (FCEB) agencies are recommended to apply the fixes by November 12, 2026.",
+    "In an advisory for CVE-2026-102895 published on July 31, 2026, the maintainers of the GPUStack Python package credited Nikko Enggaliano, Wei Yunzhou, Rui Yang, and Haoyu Wang for independently reporting the flaw, adding that \"active in-the-wild exploitation\" was reported by Ulex Innovative Systems' Javier Sixto."
    ],
    "instructions_checked": true
   },
@@ -4639,6 +4640,27 @@
     "Google makes no mention of any of these security defects being exploited in the wild, but users should update their browsers as soon as possible.",
     "The most common types of vulnerabilities the fresh browser update resolves include incorrect/missing authorization (51), use-after-free (45), UI misrepresentation (19), type confusion (13), information leak (13), out-of-bounds read/write (11), improper input validation (9), and uninitialized resource (9).",
     "Android’s November 2026 Updates Patch Over 200 Vulnerabilities"
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "61f253ac4386",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Chrome Update Patches Exploited XML Zero-Day, Eighth This Year",
+   "link": "https://www.securityweek.com/chrome-update-patches-exploited-xml-zero-day-eighth-this-year/",
+   "published": "2026-11-10T06:12:24+00:00",
+   "summary": "The high-severity use-after-free in Chrome’s XML component was reported anonymously on November 6 and is already exploited in attacks. The post Chrome Update Patches Exploited XML Zero-Day, Eighth This Year appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2024/06/Chrome.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-10T07:05:43.008496+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Google on Monday informed Chrome users of new security updates that patch nine vulnerabilities, including a zero-day exploited in the wild.",
+    "In addition to the zero-day, the latest Chrome updates patch six high-severity vulnerabilities in the WebGL, FileSystem, Compositing, GPU, V8, and XML components.",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
   },
