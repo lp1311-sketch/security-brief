@@ -771,7 +771,8 @@
    ],
    "first_seen": "2026-11-10T18:25:23.300263+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "effd5055a310",
@@ -789,7 +790,8 @@
    ],
    "first_seen": "2026-11-10T18:25:23.300263+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "1328adc53dd3",
@@ -807,7 +809,8 @@
    ],
    "first_seen": "2026-11-10T18:25:23.300263+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "715925e8e865",
@@ -825,7 +828,8 @@
    ],
    "first_seen": "2026-11-10T18:25:23.300263+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "9f0de78c83e1",
@@ -843,7 +847,8 @@
    ],
    "first_seen": "2026-11-10T18:25:23.300263+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "232b2c32bbc1",
@@ -861,7 +866,8 @@
    ],
    "first_seen": "2026-11-10T18:25:23.300263+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "02b7f3513306",
@@ -1183,7 +1189,8 @@
    ],
    "first_seen": "2026-11-10T18:25:23.300263+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "7c7d0982a3a9",
@@ -1372,7 +1379,8 @@
    ],
    "first_seen": "2026-11-10T18:25:23.300263+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "4f0ae400eaf2",
@@ -1390,7 +1398,8 @@
    ],
    "first_seen": "2026-11-10T18:25:23.300263+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "7523997ea4d0",
@@ -1408,7 +1417,8 @@
    ],
    "first_seen": "2026-11-10T18:25:23.300263+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "ccc66eb25631",
@@ -1534,7 +1544,7 @@
    "title": "Attackers Exploit AhsayCBS Flaws to Deploy Sandbox-Evading Python Backdoor",
    "link": "https://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html",
    "published": "2026-11-10T16:00:55+00:00",
-   "summary": "Cybersecurity researchers have disclosed details of an attack that exploited two now-patched vulnerabilities in AhsayCBS to deliver a Python-based implant. The activity, observed by Huntress in October 2026, involves the exploitation of a chain comprising CVE-2026-105133 and CVE-2026-105134 to bypass authentication…",
+   "summary": "Cybersecurity researchers have disclosed details of an attack that exploited two now-patched vulnerabilities in AhsayCBS to deliver a Python-based implant. The activity, observed by Huntress in early October 2026, involves the exploitation of a chain comprising CVE-2026-105133 and CVE-2026-105134 to bypass…",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgT-Z8hFA8uMe4HXLf_4QRk4Z4VLuUCDRL89LcgpXfsj9YAwLsLHIZL46pn2SLz0BBhCKPUKBhChDRRsKYPSkZPwmsDIhozGQ-4YemxOSol0AiwBEgtGX9OSZ_L3SQZVoebBX1fWGkh8TQ_hNVYHho0eCrBQzLlhnjPhhymXqcWePyuhdQDCMb6KJi6pmIe/s1600/cbs.jpg",
    "cves": [
     "CVE-2026-105133",
@@ -1849,7 +1859,7 @@
    "source_name": "The Hacker News",
    "official": false,
    "source_type": "news",
-   "title": "Fireworks AI Breach Widens to Expose Customer Billing Data and Incomplete Model Weights",
+   "title": "Fireworks AI Confirms Wider Breach Affecting Customer Datasets, Model Weights and Notion AI Chats",
    "link": "https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html",
    "published": "2026-11-10T15:33:59+00:00",
    "summary": "Fireworks AI disclosed on Monday that its investigation into a security incident first reported early last month uncovered further malicious activity, affecting account and billing information, alongside secrets, datasets, and incomplete models for a \"limited set of accounts.\" In a notice published on October 10…",
@@ -1893,6 +1903,29 @@
     "Reconfigure the device before putting it back into service, then follow the maker's recommended practices.",
     "Remove internet exposure from these units and from any unit reachable at a public IP address.",
     "Remove internet exposure and check insurance terms, as above."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "b86930e18372",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Git Patches Flaw That Lets Malicious Repositories Execute Code During Recursive Clones",
+   "link": "https://thehackernews.com/2026/11/git-patches-flaw-that-lets-malicious.html",
+   "published": "2026-11-10T19:23:10+00:00",
+   "summary": "A flaw in Git can let a malicious repository run an attacker's code on a computer that clones it recursively, together with its submodules. The Git project fixed it this week in Git 2.56.1, with matching fixes for the 2.50 through 2.55 series in 2.50.2, 2.51.3, 2.52.1, 2.53.1, 2.54.1 and 2.55.1. The flaw, tracked as…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipoPlLYj_xfJ8bsfRTONwa3estE9I2un_9OBx2fVuxEp-zoiADgipn-gGOeU4TqqyjqjrCpoGXC4jmuF7o1e_PUMbr-QoHDdPZEDWavb4VbjtWbOxMfmz-E9fIPT2DHEXYCN53l2jtiJGVfEFjHsR8gaHeyF59Yii0oTnP73vaslLWPzuideEGxTy6S9U/s1600/gits.jpg",
+   "cves": [
+    "CVE-2026-111760"
+   ],
+   "first_seen": "2026-11-10T20:15:59.967236+00:00",
+   "instructions": [
+    "It advises installing a fixed version from your operating system or Git distributor, and updating any app that ships its own copy of Git.",
+    "With the files reference backend, a later update to that branch can then write outside Git's reference folder.",
+    "As a workaround for this flaw, servers that cannot upgrade yet can add conflict-marker-size=7 to each repository's info/attributes file, or turn off those merge checks for untrusted repositories.",
+    "CVE-2026-114469: A binary patch that expands to a very large size can get past Git's patch size limit of about 1 GiB and crash Git with an out-of-bounds read."
    ],
    "instructions_checked": true
   },
@@ -1959,6 +1992,27 @@
     "Both malicious releases have been taken down, and the project's maintainers released a clean Swarm Desktop update today.",
     "The code is also built to install a backdoor on Windows, macOS, and Linux machines.",
     "Intel Macs were never offered it, and Linux installs do not update automatically."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "9398616ade4d",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Hackers Exploit Critical Xen Orchestra Auth Bypass Flaw to Gain Admin Access",
+   "link": "https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html",
+   "published": "2026-11-10T18:12:21+00:00",
+   "summary": "French software company Vates VMS has warned of a critical security vulnerability in Xen Orchestra that it said is being actively exploited in the wild. The authentication bypass flaw, which does not yet have a CVE identifier, is tracked as VSA-2026-062. \"REST cookie parsing turns authenticationToken=j:%7B%7D into…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMH_u7t-U3KIejAItsfC_js20xJgxT2ITYLsR0DAxzfcwDvPrzBHkpZlDuALWPnACOoknX2IALwHIUxIzfhbA24M7e8cGWTZpBMWqpX-wn6xqe8_U3fAtnR-9RsRdFHMCjvNnBsMXrEUKhVYS5bbTGL3B50UMO0aydtHIomY89s2iDAQMq0jXJJ3vh4Nvi/s1600/XEN-attack.jpg",
+   "cves": [],
+   "first_seen": "2026-11-10T20:15:59.967236+00:00",
+   "instructions": [
+    "If immediate patching is not an option, the following mitigations are advised -",
+    "Block the IP address and domain associated with malicious activity",
+    "Block the empty token in a web application firewall (WAF) or a reverse proxy",
+    "Rotate all passwords and secrets in Vates VMS if indicators of compromise are detected"
    ],
    "instructions_checked": true
   },
@@ -2341,6 +2395,24 @@
    "instructions_checked": true
   },
   {
+   "id": "b958c2272095",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "SGLang RCE Exploit Breaches NEAR AI, Steals Data From 18 Agents and About 100 Users",
+   "link": "https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html",
+   "published": "2026-11-10T19:19:39+00:00",
+   "summary": "An attacker exploited a remote code execution flaw in SGLang, an open-source inference engine, and ran code on one of NEAR AI's inference servers last Sunday. The attacker could also have seen requests being processed on that server that day, including requests sent in confidential mode, the company said earlier this…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifQOwa1ngLZRATbbZyg_iud4SNx-9ugjo2iOG6crnJzatc_uS9FjGScBnNUy-uNIuOEE3Y6kJTpUVMVtOR1bW5sse_pRNJA1SQALCGjshDx6-CF1t8HXlUI2CCb6yp7Uepz6uk3ctMLUlSx4Q36Q7pZcx1nb9wPgbYAZqvd6CnSJ6WM6Kn_ZENtHpESoM/s1600/nearai.jpg",
+   "cves": [],
+   "first_seen": "2026-11-10T20:15:59.967236+00:00",
+   "instructions": [
+    "Affected users heard directly from security@near.ai, with the steps that apply to them."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "1b9b96d402ef",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2416,6 +2488,25 @@
     "Critical Systems Face Prolonged Exposure Network Appliances Go More Than a Year Without Patches An analysis of roughly 383,000 CVEs disclosed from 1999 through September 2026 has found that the median time to patch a vulnerability exceeds a year for network appliances.",
     "That gap is the threat actor's window, widest on the critical systems that stay exposed the longest.\" The tech giant also said threat actors disproportionately target flaws that maximize impact and exposure and enable system takeover, particularly remote code execution, privilege escalation, and authentication bypass.",
     "The operators resorted to delaying tactics to block payments when they attempted to withdraw their funds."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "3ac35ff64736",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Three China-Nexus Espionage Campaigns Linked Through Sparrow Malware Ecosystem",
+   "link": "https://thehackernews.com/2026/11/three-china-nexus-espionage-campaigns.html",
+   "published": "2026-11-10T17:43:23+00:00",
+   "summary": "Three distinct threat activity clusters with shared infrastructure and malware code similarities have been observed targeting telecommunications providers, government organizations, military entities, research institutions, and critical infrastructure across Latin America, Asia, and Europe over the past year. Check…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJzh3KQXtsNe_Hb53sMmMSiGIRHL-ybly73FQY1F-RNeFR181cAeiYkvBDi80Upvlea0WqHLNW6ydto2DhfeD3PlISviNhaTUtVBdQMziXOtKybeWLKj7O3UmmeKP0vGX5ufVBkf1dbShyphenhyphenXgawm2sMttXPfbTTDtmYxbXo7Lw0jkGXtt-E-X7W7PtNxfD-/s1600/chinese-telecom.jpg",
+   "cves": [],
+   "first_seen": "2026-11-10T20:15:59.967236+00:00",
+   "instructions": [
+    "Visitors to the sites are greeted by a Google Chrome SSL certificate warning that instructs users to install a \"Certificate Fix\" utility to restore access.",
+    "It establishes persistence by means of a Windows Registry Run key that masquerades as a Windows update assistant."
    ],
    "instructions_checked": true
   },
@@ -2771,27 +2862,6 @@
    "instructions_checked": true
   },
   {
-   "id": "2698ecd844a4",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Google dismantles massive botnet hidden in Android TV boxes",
-   "link": "https://therecord.media/google-dismantles-botnet-hidden-android-tv-boxes",
-   "published": "2026-11-03T19:48:00+00:00",
-   "summary": "The overwhelming majority of the infected devices in the X.CPE botnet are Android TV set-top boxes, Google said, adding that they observed a number of other infected Android-based IoT devices, including telehealth devices, karaoke machines and digital signage devices.",
-   "image": "https://cms.therecord.media/uploads/tv_1_8b7fd51044.jpg",
-   "cves": [],
-   "first_seen": "2026-11-03T20:14:53.157417+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Google said it took legal action to take down the domains Videostrong used to control the botnet and install the malware while also suing to destroy the domains used by other malware families loaded onto the devices.",
-    "But they noted that even if a user tried to uninstall the malware, it would automatically reinstall, according to cybersecurity researchers.",
-    "Google did not explain if customers with infected devices will be notified or if there is any effort to forcibly remove malware from compromised devices as U.S. law enforcement agencies have done in other similar botnet cases ."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "5c31e462e855",
    "source": "therecord",
    "source_name": "The Record",
@@ -3089,6 +3159,28 @@
    "instructions_checked": true
   },
   {
+   "id": "9814f0299437",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Microsoft releases Windows 10 KB5131096 extended security update",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-10-kb5131096-extended-security-update/",
+   "published": "2026-11-10T20:04:36+00:00",
+   "summary": "Microsoft released the Windows 10 KB5131096 extended security update, which includes this month's November 2026 Patch Tuesday fixes and a few bug fixes and changes.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2024/09/10/windows-10-gradient.jpg",
+   "cves": [],
+   "first_seen": "2026-11-10T20:15:59.967236+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Microsoft releases Windows 10 KB5131096 extended security update",
+    "Microsoft released the Windows 10 KB5131096 extended security update, which includes this month's November 2026 Patch Tuesday fixes and a few bug fixes and changes.",
+    "Microsoft no longer releases new features for Windows 10, and the KB5131096 update mainly includes security updates and bug fixes.",
+    "Microsoft releases Windows 10 KB5126657 extended security update"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "33bc3cf0f92e",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -3127,25 +3219,6 @@
    "instructions": [
     "While Binance denied these breach claims, it advises customers never to share passwords, 2FA codes, seed phrases, or private keys, and to stay wary of phishing attempts.",
     "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "317e8557e095",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Binance says fake job interview led to $6.3 billion crypto heist",
-   "link": "https://www.bleepingcomputer.com/news/security/binance-says-fake-job-interview-led-to-63-billion-crypto-heist/",
-   "published": "2026-11-03T20:05:50+00:00",
-   "summary": "Cryptocurrency exchange Binance says North Korean hackers used a fake job interview to trick an employee into installing malware that ultimately let them compromise the company's wallet infrastructure and steal about $6.34 billion in digital assets.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/30/Binance.jpg",
-   "cves": [],
-   "first_seen": "2026-11-03T20:14:53.157417+00:00",
-   "image_checked": true,
-   "instructions": [
-    "The attacker also took steps to conceal the malicious activity and remove traces of the compromise, making detection and subsequent investigation more challenging.\""
    ],
    "instructions_checked": true
   },
@@ -3612,6 +3685,27 @@
     "System administrators should update OpenSSH as soon as possible, or disable SSH password authentication on systems affected by SSHole.",
     "It is also recommended to check for unexpected successful password logins to accounts whose /etc/shadow password field is *, unauthorized SSH keys, and TAC Agent files or startup services.",
     "Analysis of the TAC Agent payload shows that the implant supports shell command execution, extensive system reconnaissance, file upload/download operations, and can update itself.",
+    "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "09de80ae0aa4",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Hackers exploit trusted AWS access to breach multiple cloud environments",
+   "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-trusted-aws-access-to-breach-multiple-cloud-environments/",
+   "published": "2026-11-10T19:31:11+00:00",
+   "summary": "A threat actor used compromised identity and access management (IAM) credentials for a Qubole big data platform's AWS account to access and exfiltrate data from multiple customers' AWS environments.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/08/21/awskey.jpg",
+   "cves": [],
+   "first_seen": "2026-11-10T20:15:59.967236+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Potentially impacted administrators are advised to review CloudTrail from October 1 onward for suspicious access from Qubole’s AWS account, investigate subsequent secret and S3 access, rotate exposed credentials, and revoke active role sessions.",
+    "It is also recommended to remove unused integrations and restrict remaining roles’ permissions, trusted identities, and permitted source networks.",
     "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
    ],
    "instructions_checked": true
@@ -4330,7 +4424,7 @@
    "title": "AI Makes Reverse Engineering Mainstream Software & Malware Far Easier",
    "link": "https://www.darkreading.com/application-security/ai-reverse-engineering-apps",
    "published": "2026-11-10T13:00:00+00:00",
-   "summary": "Researchers unpacked, mapped, and recreated complex software and the Turla malware, raising fresh concerns for defenders.",
+   "summary": "Researchers unpacked, mapped, and recreated complex software and the Turla malware, raising opportunities and concerns for organizations and cybersecurity analysts.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt50398014b3f8049d/6aee2b328988653fd1de4aef/Binary-PashaIgnatov-Getty.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-10T13:19:58.015679+00:00",
@@ -4398,6 +4492,22 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltfb0f3465591962e4/6aee1cd77073b469ffb052f4/archive_-3alexd-Getty-95769788.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-06T18:51:36.584313+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "ccc69e15df6f",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "People Are Getting Weird About AI",
+   "link": "https://www.darkreading.com/cyber-risk/people-are-getting-weird-about-ai",
+   "published": "2026-11-09T23:06:22+00:00",
+   "summary": "Dark Reading Confidential Episode 22: You can love AI without being blind to cybersecurity being sacrificed for utility.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt0469f94bd17817ff/6642699959fdc64aa5f9c5fa/dark-reading-confidential-logo-sq.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-10T20:15:59.967236+00:00",
    "instructions": [],
    "instructions_checked": true
   },
