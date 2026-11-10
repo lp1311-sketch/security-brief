@@ -308,6 +308,26 @@
    "instructions_checked": true
   },
   {
+   "id": "ffa56d89e25e",
+   "source": "borncity",
+   "source_name": "Born's IT and Windows Blog",
+   "official": false,
+   "source_type": "news",
+   "title": "Microsoft Security Update Summary (10. November 2026)",
+   "link": "https://borncity.com/blog/2026/11/10/microsoft-security-update-summary-10-november-2026/",
+   "published": "2026-11-10T21:45:13+00:00",
+   "summary": "Microsoft hat am 10. November 2026 Sicherheitsupdates für Windows-Clients und -Server, sowie für weitere Produkte veröffentlicht. Die Sicherheitsupdates beseitigen 1093 Schwachstellen (CVEs), davon sind 63 kritisch, 1029 wichtig, und eine moderat. Nachfolgend findet sich ein kompakter Überblick über diese Updates, ……",
+   "image": "https://borncity.com/blog/wp-content/uploads/2021/06/Update-01.jpg",
+   "cves": [],
+   "first_seen": "2026-11-10T22:45:40.406649+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Details zu den Update-Paketen für Windows etc. sind in separaten Blogbeiträgen verfügbar.",
+    "Das monatliche Patchday-Update enthält alle Sicherheitsfixes für diese Windows-Versionen – sowie alle nicht sicherheitsbezogenen Fixes bis zum Patchday."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "a876e139f448",
    "source": "borncity",
    "source_name": "Born's IT and Windows Blog",
@@ -1273,6 +1293,54 @@
    "image_checked": true
   },
   {
+   "id": "21e9c172b942",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-50423 Windows Kernel Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50423",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-50423"
+   ],
+   "first_seen": "2026-11-10T22:45:40.406649+00:00"
+  },
+  {
+   "id": "6c2dd8b1bb89",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-55043 Microsoft PowerPoint Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55043",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-55043"
+   ],
+   "first_seen": "2026-11-10T22:45:40.406649+00:00"
+  },
+  {
+   "id": "a72a327e5410",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-55123 Microsoft PowerPoint Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55123",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-55123"
+   ],
+   "first_seen": "2026-11-10T22:45:40.406649+00:00"
+  },
+  {
    "id": "236aa0388888",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -1286,7 +1354,10 @@
    "cves": [
     "CVE-2026-56172"
    ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+   "first_seen": "2026-11-10T22:04:27.113869+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "ea093da17d00",
@@ -1302,7 +1373,10 @@
    "cves": [
     "CVE-2026-62694"
    ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+   "first_seen": "2026-11-10T22:04:27.113869+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "b595e98fa95b",
@@ -1318,7 +1392,10 @@
    "cves": [
     "CVE-2026-62784"
    ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+   "first_seen": "2026-11-10T22:04:27.113869+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "3934bb4842ca",
@@ -1353,7 +1430,10 @@
    "cves": [
     "CVE-2026-66810"
    ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+   "first_seen": "2026-11-10T22:04:27.113869+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "70cf78401ca9",
@@ -1369,7 +1449,10 @@
    "cves": [
     "CVE-2026-68794"
    ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+   "first_seen": "2026-11-10T22:04:27.113869+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "8a2303909a27",
@@ -1385,7 +1468,10 @@
    "cves": [
     "CVE-2026-68833"
    ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+   "first_seen": "2026-11-10T22:04:27.113869+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "da0b74c3ba02",
@@ -1401,7 +1487,10 @@
    "cves": [
     "CVE-2026-68839"
    ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+   "first_seen": "2026-11-10T22:04:27.113869+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "aff1d988c68e",
@@ -1417,7 +1506,10 @@
    "cves": [
     "CVE-2026-68880"
    ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+   "first_seen": "2026-11-10T22:04:27.113869+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "3b7c833d1d67",
@@ -1433,7 +1525,10 @@
    "cves": [
     "CVE-2026-68884"
    ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+   "first_seen": "2026-11-10T22:04:27.113869+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "6ade1aedb459",
@@ -1449,7 +1544,10 @@
    "cves": [
     "CVE-2026-69277"
    ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+   "first_seen": "2026-11-10T22:04:27.113869+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "24c7319e784b",
@@ -1465,7 +1563,9 @@
    "cves": [
     "CVE-2026-69280"
    ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+   "first_seen": "2026-11-10T22:04:27.113869+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "a7b3d1646f01",
@@ -1481,7 +1581,9 @@
    "cves": [
     "CVE-2026-69407"
    ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+   "first_seen": "2026-11-10T22:04:27.113869+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "9ee79e1fe940",
@@ -1497,7 +1599,9 @@
    "cves": [
     "CVE-2026-69409"
    ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+   "first_seen": "2026-11-10T22:04:27.113869+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "d482469a796c",
@@ -1513,7 +1617,9 @@
    "cves": [
     "CVE-2026-69453"
    ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+   "first_seen": "2026-11-10T22:04:27.113869+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "715ec65d4e32",
@@ -1529,7 +1635,9 @@
    "cves": [
     "CVE-2026-69465"
    ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+   "first_seen": "2026-11-10T22:04:27.113869+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "6a366b064094",
@@ -1545,7 +1653,9 @@
    "cves": [
     "CVE-2026-69467"
    ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+   "first_seen": "2026-11-10T22:04:27.113869+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "05df760559dc",
@@ -1561,7 +1671,9 @@
    "cves": [
     "CVE-2026-69492"
    ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+   "first_seen": "2026-11-10T22:04:27.113869+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "90015026e728",
@@ -4259,6 +4371,27 @@
    "instructions_checked": true
   },
   {
+   "id": "16367edd00b6",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Railway breach leads to $740,000 in fraudulent AI charges",
+   "link": "https://www.bleepingcomputer.com/news/apple/railway-breach-leads-to-740-000-in-fraudulent-ai-charges/",
+   "published": "2026-11-10T22:20:19+00:00",
+   "summary": "Cloud hosting provider Railway says hackers exploited vulnerabilities in its infrastructure to steal customer authentication secrets and generate approximately $740,000 in fraudulent AI usage, potentially exposing credentials for up to 100,000 workspaces.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/22/railway.jpg",
+   "cves": [],
+   "first_seen": "2026-11-10T22:45:40.406649+00:00",
+   "image_checked": true,
+   "instructions": [
+    "The company disclosed the incident on October 22, warning customers to rotate their secrets after detecting unauthorized access to systems storing environment variables.",
+    "Railway says it reset those tokens and notified affected users.",
+    "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "50eb1dccf495",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4829,28 +4962,6 @@
     "Potentially impacted administrators are advised to review CloudTrail from October 1 onward for suspicious access from Qubole’s AWS account, investigate subsequent secret and S3 access, rotate exposed credentials, and revoke active role sessions.",
     "It is also recommended to remove unused integrations and restrict remaining roles’ permissions, trusted identities, and permitted source networks.",
     "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "b0a8ea5b6986",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Hackers hijack cPGuard autoupdate to deploy backdoor, steal data",
-   "link": "https://www.bleepingcomputer.com/news/security/hackers-hijack-cpguard-autoupdate-to-deploy-backdoor-steal-data/",
-   "published": "2026-11-03T22:18:50+00:00",
-   "summary": "Attackers have compromised the update infrastructure for the cPGuard web security suite to distribute a backdoor and a data-stealing script.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/09/hacker-box.jpg",
-   "cves": [],
-   "first_seen": "2026-11-03T23:08:37.927300+00:00",
-   "image_checked": true,
-   "instructions": [
-    "System administrators are advised to update every cPGuard server to version 5.88.25 or later, reset passwords, and rotate database credentials, cloud secrets, and SSH keys.",
-    "The company also advises customers to follow the instructions and update cPGuard to version 5.88.25 or later, and reset or rotate credentials that may have been exposed on potentially compromised servers.",
-    "OpsShield notes that updating to the latest cPGuard version removes the backdoor and staged files; however, stolen credentials must be invalidated as soon as possible.",
-    "The vendor also said that, as an extra precaution, it would release an update to remove previously installed OpsShield support-access keys."
    ],
    "instructions_checked": true
   },
@@ -5997,22 +6108,6 @@
    "instructions_checked": true
   },
   {
-   "id": "df7c4721e4f5",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "Fresh European Fridge Attacks Put Cold-Chain Security in Focus",
-   "link": "https://www.darkreading.com/ics-ot-security/fresh-european-fridge-attacks-cold-chain-security",
-   "published": "2026-11-03T22:16:49+00:00",
-   "summary": "Beyond food storage, the same combination of Internet connectivity, remote access, and inadequate security practices can put temperature-controlled infrastructure across other critical sectors at risk.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt3c1ba20d1eb5be7f/6aea51a7937e6faad50e3a84/cold_Adisa_shutterstock.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-03T23:08:37.927300+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "5ce5c8d2c37f",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -6041,6 +6136,22 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt601f7aa888c1b14c/6aecc62cf0c14cb22547f05a/phone_tete_escape_shutterstock.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-05T20:29:37.952605+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "95f883361cdc",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "November Patch Tuesday: An Overflowing Cornucopia of CVEs",
+   "link": "https://www.darkreading.com/vulnerabilities-threats/november-patch-tuesday-cornucopia-cves",
+   "published": "2026-11-10T22:26:51+00:00",
+   "summary": "Microsoft serves up an actively exploited Outlook zero-day, and a wave of critical Exchange, SharePoint, Windows Search, and LDAP bugs that exhausted defenders need to prioritize fast.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt033b67685e64cff8/6af3980e4e01486fb09958c1/thanksgiving-Gurol_Tuna-GettyImages-2248720649.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-10T22:45:40.406649+00:00",
    "instructions": [],
    "instructions_checked": true
   },
