@@ -19,27 +19,6 @@
    "instructions_checked": true
   },
   {
-   "id": "4e5242d6436d",
-   "source": "ars",
-   "source_name": "Ars Technica Security",
-   "official": false,
-   "source_type": "news",
-   "title": "Google dismantles botnet secretly running on 1.3 million Android TV boxes",
-   "link": "https://arstechnica.com/google/2026/11/google-dismantles-botnet-secretly-running-on-1-3-million-android-tv-boxes/",
-   "published": "2026-11-03T17:08:21+00:00",
-   "summary": "Google's Threat Intelligence Group says it has shut down a massive botnet called x.cpe. At its height, x.cpe ran on more than 1.3 million Android TV devices, and unusually, these were Google-certified boxes. Google says its screening process missed the malware due to \"obfuscation techniques\" employed by Shenzhen-based…",
-   "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/mecool-malware.jpg",
-   "cves": [],
-   "first_seen": "2026-11-03T17:20:53.929523+00:00",
-   "instructions": [
-    "This action should make the affected devices safe to use, but probably not as safe as they should be.",
-    "Manufacturers must have their devices certified if they want access to Google apps and branding, a process that is supposed to catch threats like this.",
-    "Anyone who has purchased a MECOOL or white label Android TV box of unknown origin should check it.",
-    "However, Videostrong’s compromised boxes, mostly sold under the MECOOL brand, evaded detection by using a backdoor to remotely install the malware after the devices were set up and online."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "868b661c5e46",
    "source": "ars",
    "source_name": "Ars Technica Security",
@@ -1041,24 +1020,6 @@
    "first_seen": "2026-11-10T12:10:45.844226+00:00",
    "instructions": [
     "Corelight network detection and response (NDR) delivers data that’s open, transparent, and explainable—helping detect evasive threats, reduce triage time, and enable agentic AI throughout the SOC."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "19a35a6714f9",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Binance Reveals How Fake Job Interviews and AI Tool Abuse Led to $6.43 Billion Theft",
-   "link": "https://thehackernews.com/2026/11/binance-reveals-how-fake-job-interviews.html",
-   "published": "2026-11-03T16:55:58+00:00",
-   "summary": "Binance on Tuesday said the record-setting theft of $6.43 billion in assets from the world's largest cryptocurrency exchange was the culmination of a \"sophisticated, multi-stage campaign\" that involved the use of a tampered Homebrew installation and recruitment-themed social engineering attack targeting two of its…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZCMCR8h3YCPcfY8Fbe54ckYKh_YUt_Yd7v82dAHobZtMNlQl_JVKWUX4OUPwR0dEmYsLNfeKsW6rUthk8pYRVhIddbPXx86sHCcNBRL9E-9LJTPrYSYwJ_V66EwGJNFeoWgDPbjcGfeJ4w2qn_gfTjXBoNAnfWq4GZ8rq7VOhnqt4QlItYEBr3Zar7XL1/s1600/bin.jpg",
-   "cves": [],
-   "first_seen": "2026-11-03T17:20:53.929523+00:00",
-   "instructions": [
-    "The starting point has been traced back to a supply chain attack targeting one of its engineers from the Wallet DevOps team (named \"Engineer A\"), who downloaded a trojanized Homebrew installer to install a popular artificial intelligence (AI) tool after searching for it on a search engine."
    ],
    "instructions_checked": true
   },
@@ -2086,28 +2047,6 @@
    "instructions_checked": true
   },
   {
-   "id": "848edcd7f637",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Binance CEO says ‘months-long campaign’ led to $6.3 billion theft as N. Korea denies responsibility",
-   "link": "https://therecord.media/binance-cryptocurrency-theft-months-long-campaign-nkorea",
-   "published": "2026-11-03T16:42:00+00:00",
-   "summary": "North Korean attackers \"combined a range of techniques, including social engineering by fake recruitment interviews,\" Binance said about the multibillion-dollar crypto heist it discovered in October.",
-   "image": "https://cms.therecord.media/uploads/binance_logo_f4cdb044bb.jpg",
-   "cves": [],
-   "first_seen": "2026-11-03T17:20:53.929523+00:00",
-   "image_checked": true,
-   "instructions": [
-    "It has also hired a security company to conduct a review of the incident to validate its findings and recommend additional actions.",
-    "Investigators said the breach started in June, when an engineer downloaded malicious software to install a popular AI coding tool.",
-    "The company said it lost valuable time in stopping the attack because it had to develop specialized procedures in the moment to revoke access and authorizations.",
-    "Binance said it has taken several other actions to enable quicker responses to security incidents."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "c12f1b8dac80",
    "source": "therecord",
    "source_name": "The Record",
@@ -2622,6 +2561,23 @@
    "instructions": [
     "They warned that anyone who notices suspicious activity on their devices — like pop-ups, security warnings, changes to files and password requests — should turn the device off and report it to campus IT officials."
    ],
+   "instructions_checked": true
+  },
+  {
+   "id": "a726f2ce6dd2",
+   "source": "grahamcluley",
+   "source_name": "Graham Cluley",
+   "official": false,
+   "source_type": "news",
+   "title": "Iranian hackers turned up the heat on French supermarket freezers, says France",
+   "link": "https://www.bitdefender.com/en-us/blog/hotforsecurity/iranian-hackers-supermarket-freezers-france",
+   "published": "2026-11-10T16:05:50+00:00",
+   "summary": "Iran has been officially accused by France of being responsible for cyber attacks last month that meddled with supermarket freezers, causing some to catch fire. Read more in my article on the Hot for Security blog.",
+   "image": "https://blogapp.bitdefender.com/hotforsecurity/content/images/2026/11/fridge.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-10T17:31:22.719330+00:00",
+   "image_checked": true,
+   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -4247,27 +4203,6 @@
    "instructions_checked": true
   },
   {
-   "id": "263a6ac2e13a",
-   "source": "msblog",
-   "source_name": "Microsoft Security Blog",
-   "official": false,
-   "source_type": "vendor_blog",
-   "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for AI Agent Management Platforms",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/03/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-ai-agent-management-platforms/",
-   "published": "2026-11-03T17:00:00+00:00",
-   "summary": "Microsoft has been named a Leader in the inaugural 2026 Gartner® Magic Quadrant™ for AI Agent Management Platforms. We believe this recognition reflects Microsoft’s approach to helping organizations manage, secure, and scale their AI investments through Microsoft Agent 365. Figure 1: Gartner, Magic Quadrant for AI…",
-   "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/11/MQ-scaled.webp",
-   "cves": [],
-   "first_seen": "2026-11-03T18:11:53.246220+00:00",
-   "instructions": [
-    "When we introduced Agent 365, we started with a simple concept: agents should be managed with the same rigor you already apply to users, apps, and devices, using the infrastructure and protections that already run your business.",
-    "This enables organizations to apply established identity and access policies to both people and agents.",
-    "Gartner does not endorse any company, vendor, product or service depicted in its publications, and does not advise technology users to select only those vendors with the highest ratings or other designation.",
-    "Gartner publications consist of the opinions of Gartner’s business and technology insights organization and should not be construed as statements of fact."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "302fe04b9508",
    "source": "msblog",
    "source_name": "Microsoft Security Blog",
@@ -4833,6 +4768,27 @@
    "instructions_checked": true
   },
   {
+   "id": "38532208b5af",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Google Widens Gemini 4 Carbon Access After AI Agents Verify Signal Code",
+   "link": "https://www.securityweek.com/google-widens-gemini-4-carbon-access-after-ai-agents-verify-signal-code/",
+   "published": "2026-11-10T16:42:02+00:00",
+   "summary": "Google opened Carbon to paying developers and businesses as DeepMind used agents built on it to prove libsignal security guarantees. The post Google Widens Gemini 4 Carbon Access After AI Agents Verify Signal Code appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/10/Signal-telegram-messaging.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-10T17:31:22.719330+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Introductory rates of $2/$10 per million input/output tokens apply until November 30, then double.",
+    "Chrome Update Patches Exploited XML Zero-Day, Eighth This Year",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "8694430c3bcd",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -5284,6 +5240,28 @@
     "Since the scheduled October 2026 security patches, SAP released new notes dealing with the recently disclosed PHP2Shell and Node2Shell vulnerabilities in its Business AI Platform and updated several other notes and advisories.",
     "Chrome Update Patches Exploited XML Zero-Day, Eighth This Year",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "cc845d87e813",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Software Transparency Is Changing: Allan Friedman on SBOM, AI BOMs and What Comes Next",
+   "link": "https://www.securityweek.com/software-transparency-is-changing-allan-friedman-on-sbom-ai-boms-and-what-comes-next/",
+   "published": "2026-11-10T16:45:00+00:00",
+   "summary": "SBOM pioneer Allan Friedman joined the SecurityWeek Podcast to discuss why knowing what is inside software is only the beginning, how AI is complicating software supply chain visibility, and what organizations should be doing with SBOM data once they have it. The post Software Transparency Is Changing: Allan Friedman…",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/11/Allan-Friedman_SBOM-Podcast.jpg",
+   "cves": [],
+   "first_seen": "2026-11-10T17:31:22.719330+00:00",
+   "image_checked": true,
+   "instructions": [
+    "SBOM Is About Response, Not Just Inventory Much of the early SBOM conversation focused on whether vendors could generate the documents and whether customers should require them.",
+    "The objective, however, should ultimately be deeper integration.",
+    "Transparency Should Favor the Defender Resistance to SBOM adoption has often centered on concerns about intellectual property and the possibility that providing detailed information about software components could benefit attackers.",
+    "Organizations should be able to understand what their systems depend on, correlate that information with emerging threats and vulnerabilities, determine where actual exposure exists and make risk decisions quickly enough to matter."
    ],
    "instructions_checked": true
   },
