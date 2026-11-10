@@ -1030,6 +1030,8 @@ function set(on){document.documentElement.classList.toggle('less-motion',on);
   try{if(on)localStorage.setItem(KEY,'1');else localStorage.removeItem(KEY);}catch(e){}}
 try{set(localStorage.getItem(KEY)==='1');}catch(e){set(false);}
 if(btn){btn.addEventListener('click',function(){set(!document.documentElement.classList.contains('less-motion'));});}
+document.addEventListener('keydown',function(e){var t=(document.activeElement&&document.activeElement.tagName)||'';
+  if(e.key==='/'&&!e.ctrlKey&&!e.metaKey&&!/INPUT|TEXTAREA|SELECT/.test(t)){var sb=document.getElementById('search-btn');if(sb){e.preventDefault();location.href=sb.href;}}});
 })();"""
 
 
@@ -1040,6 +1042,14 @@ def _cookie_script(base: str) -> str:
 def _social_links() -> str:
     return (f'<a href="{LINKEDIN_URL}" rel="me noopener noreferrer" target="_blank">LinkedIn</a> &middot; '
             f'<a href="{XING_URL}" rel="me noopener noreferrer" target="_blank">XING</a>')
+
+
+def _footer_donate(base: str) -> str:
+    links = donation_links(ACTIVE_SITE)
+    if not links:
+        return ""
+    items = "".join(f'<a href="{esc(u)}" rel="noopener" target="_blank">{esc(l)}</a>' for l, u in links)
+    return f'<p class="foot-support"><span>Support the site (voluntary):</span> {items}</p>'
 
 
 def _site_footer(base: str, year: int) -> str:
@@ -1056,12 +1066,17 @@ def _site_footer(base: str, year: int) -> str:
         f'<a href="{base}accessibility.html">Accessibility</a>'
         f'<a href="{base}responsible-disclosure.html">Responsible disclosure</a>'
         f'<a href="{base}corrections.html">Corrections</a>'
+        f'<a href="{base}about.html">About</a>'
+        f'<a href="{base}resources/index.html">Resources</a>'
+        f'<a href="{base}top10/index.html">Top 10</a>'
+        f'<a href="{base}tools/ca-checklist/index.html">CA checklist tool</a>'
         f'<a href="{base}saved/index.html">Saved</a>'
         f'<a href="{base}feed.xml">RSS</a>'
         f'<a href="{base}contact.html">Contact</a>'
         '<button type="button" class="foot-link" id="motion-toggle" aria-pressed="false">Less motion</button>'
         '</nav>'
         f'<p class="foot-social"><span>Connect:</span> {_social_links()}</p>'
+        + _footer_donate(base) +
         '</div></footer>')
 
 
@@ -1202,7 +1217,7 @@ def _layout(cfg: dict, title: str, desc: str, body: str, base: str, image: str |
 <header class="site-header"><div class="wrap bar">
 <a class="brand" href="{base}index.html"><img class="logo-img" src="{base}favicon.svg" width="30" height="30" alt="" aria-hidden="true">{site}</a>
 <nav class="nav" aria-label="Categories">{nav}</nav>
-<button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false">Dark mode</button>
+<a id="search-btn" class="search-btn" href="{base}search/index.html" aria-label="Search the site">Search <kbd aria-hidden="true">/</kbd></a><button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false">Dark mode</button>
 </div></header>
 <div class="banner" role="region" aria-label="Site highlights"><div class="wrap banner-in"><span class="banner-tag"><i class="led g" aria-hidden="true"></i>Live feed</span><p class="banner-text" id="banner-text" aria-live="off">Feeds are checked every 15 minutes.</p><a class="banner-action" href="{base}today/index.html"><i class="led r" aria-hidden="true"></i>Action today</a><button type="button" class="banner-pause" id="banner-pause" aria-pressed="false" aria-label="Pause banner">Pause</button></div></div>
 <main id="main" class="wrap">
@@ -1952,14 +1967,14 @@ GUIDES = [
 ]
 
 
-def _guides_section() -> str:
+def _guides_section(pre: str = "") -> str:
     cards = "".join(
         f'<article class="card resource-card"><div class="card-body">'
         f'<p class="card-kicker">PRINTABLE WORKSHEET &middot; VERSION 1.0</p>'
         f'<h3>{esc(g["title"])}</h3>'
         f'<p class="summary">{esc(g["summary"])}</p>'
         f'<p class="meta">{esc(g["meta"])}</p>'
-        f'<a class="btn" href="{esc(g["file"])}" download>Download the free PDF &rarr;</a>'
+        f'<a class="btn" href="{pre}{esc(g["file"])}" download>Download the free PDF &rarr;</a>'
         f'</div></article>' for g in GUIDES)
     return ('<section class="section" id="free-downloads" aria-labelledby="free-download-title">'
             '<h2 id="free-download-title">Free field guides</h2><div class="grid">' + cards + '</div></section>')
@@ -1985,7 +2000,6 @@ def index_page(stories: list[dict], cfg: dict, now: datetime, status: dict,
         f'<div class="stat"><b>{status.get("sources_total", 0)}</b><span>sources monitored</span></div>'
         "</div>",
     ]
-    parts.append(_donate(site_cfg))
     if articles:
         parts.append(
             '<section class="section" id="analysis"><h2>From the analysis desk</h2><div class="grid">'
@@ -1993,8 +2007,6 @@ def index_page(stories: list[dict], cfg: dict, now: datetime, status: dict,
             + '</div><p class="analysis-links meta"><a href="briefings/index.html">All analysis</a> &middot; '
             '<a href="patch-tuesday/index.html">All Patch Tuesday notes</a></p></section>'
         )
-    parts.append(_radar_home(radar))
-    parts.append(_guides_section())
     newsletter = _newsletter(site_cfg, "")
     if newsletter:
         parts.append(newsletter)
@@ -2129,7 +2141,9 @@ def sitemap_xml(stories: list[dict], cfg: dict, articles: list[dict] | None = No
     site = cfg["site_url"].rstrip("/")
     urls = [f"{site}/", f"{site}/briefings/index.html", f"{site}/patch-tuesday/index.html", f"{site}/change-radar/index.html",
             f"{site}/impressum.html", f"{site}/datenschutz.html", f"{site}/corrections.html",
-            f"{site}/m365-identity-incident-triage-checklist.pdf"]
+            f"{site}/m365-identity-incident-triage-checklist.pdf",
+            f"{site}/about.html", f"{site}/resources/index.html", f"{site}/top10/index.html",
+            f"{site}/tools/ca-checklist/index.html", f"{site}/search/index.html"]
     urls += [f"{site}/{a['section']}/{a['slug']}.html" for a in (articles or [])]
     urls += [f"{site}/story/{s['id']}.html" for s in stories]
     urls += [f"{site}/stories/index.html"] + [f"{site}/category/{c}/index.html" for c in CATEGORY_ORDER]
@@ -3288,6 +3302,275 @@ def _radar_home(radar: dict) -> str:
 
 
 
+def search_index(stories: list[dict], articles: list[dict]) -> list[dict]:
+    """Client-side search index: stories in the current window plus published analysis. No third-party service."""
+    rows = []
+    for a in articles:
+        rows.append({"t": a["title"], "s": _short(a["summary"] or "", 220), "d": fmt_day(a["date"]),
+                     "k": SECTIONS[a["section"]], "u": f"{a['section']}/{a['slug']}.html"})
+    for s in stories:
+        rows.append({"t": s["title"], "s": _short(s["summary"] or "", 220), "d": fmt_day(s["published"]),
+                     "k": CATEGORIES[s["category"]][0], "u": f"story/{s['id']}.html"})
+    return rows
+
+
+def search_page(cfg: dict) -> str:
+    base = "../"
+    body = (
+        '<section class="intro"><p class="kicker">Search</p><h1>Search the site</h1>'
+        '<p class="lede">Stories in the current window, analysis and guides. Use the keyboard: press <kbd>/</kbd> anywhere to open this page.</p></section>'
+        '<div class="toolbar"><label class="visually-hidden" for="q">Search</label>'
+        '<input id="q" class="search" type="search" placeholder="Try: Exchange, token, KEV, Patch Tuesday" autocomplete="off" spellcheck="false"></div>'
+        '<p class="meta" id="sc" aria-live="polite">Loading the index…</p>'
+        '<ul class="search-list" id="res"></ul>'
+        "<script>" + SEARCH_JS + "</script>")
+    return _layout(cfg, "Search", "Search stories, analysis and guides on this site.", body, base)
+
+
+SEARCH_JS = """(function(){
+var q=document.getElementById('q'),res=document.getElementById('res'),sc=document.getElementById('sc');
+var data=[];
+function render(){
+  var terms=(q.value||'').trim().toLowerCase().split(/\\s+/).filter(Boolean);
+  res.textContent='';
+  if(!data.length){return;}
+  var hits=data.filter(function(r){var h=(r.t+' '+r.s+' '+r.k).toLowerCase();return terms.every(function(t){return h.indexOf(t)>-1;});});
+  hits.sort(function(a,b){var ta=a.t.toLowerCase(),tb=b.t.toLowerCase();var sa=terms.some(function(t){return ta.indexOf(t)>-1;}),sb=terms.some(function(t){return tb.indexOf(t)>-1;});return (sb-sa);});
+  sc.textContent=terms.length?(hits.length+' result'+(hits.length===1?'':'s')):(data.length+' items in the index');
+  hits.slice(0,60).forEach(function(r){
+    var li=document.createElement('li');li.className='search-item';
+    var k=document.createElement('span');k.className='search-kind';k.textContent=r.k+(r.d?' · '+r.d:'');
+    var a=document.createElement('a');a.href='../'+r.u;a.textContent=r.t;
+    var p=document.createElement('p');p.className='summary';p.textContent=r.s;
+    li.appendChild(k);li.appendChild(a);li.appendChild(p);res.appendChild(li);
+  });
+  if(terms.length&&!hits.length){var e=document.createElement('li');e.className='empty';e.textContent='No matches. Try a shorter word or a product name.';res.appendChild(e);}
+}
+q.addEventListener('input',render);
+var preset=new URLSearchParams(location.search).get('q');if(preset){q.value=preset;}
+q.focus();
+fetch('../search.json').then(function(r){return r.json();}).then(function(j){data=j;render();})
+  .catch(function(){sc.textContent='The search index could not be loaded. Try again later.';});
+})();"""
+
+
+def not_found_page(cfg: dict) -> str:
+    site = cfg["site_url"].rstrip("/") + "/"
+    body = (
+        '<section class="intro"><p class="kicker">404</p><h1>This page is not here</h1>'
+        '<p class="lede">The link may be old, or the page was moved. Try one of these instead.</p></section>'
+        '<ul class="search-list">'
+        f'<li class="search-item"><a href="{site}index.html">Home: the latest security news</a></li>'
+        f'<li class="search-item"><a href="{site}briefings/index.html">Analysis</a></li>'
+        f'<li class="search-item"><a href="{site}change-radar/index.html">Change Radar</a></li>'
+        f'<li class="search-item"><a href="{site}search/index.html">Search the site</a></li>'
+        '</ul>')
+    return _layout(cfg, "Page not found", "This page does not exist on Security Brief.", body, site)
+
+
+SEARCH_CSS = """
+.search-btn{display:inline-flex;align-items:center;gap:8px;font-size:.85rem;font-weight:550;color:var(--ink);text-decoration:none;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:7px 12px;white-space:nowrap}
+.search-btn:hover{border-color:var(--accent)}
+.search-btn kbd,kbd{font:inherit;font-size:.72rem;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;border:1px solid var(--line);border-bottom-width:2px;border-radius:6px;padding:0 6px;color:var(--muted)}
+.search-list{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:12px}
+.search-item{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 18px}
+.search-item a{font-weight:650;font-size:1.02rem;color:var(--ink);text-decoration:none}
+.search-item a:hover,.search-item a:focus-visible{text-decoration:underline}
+.search-item .summary{margin:6px 0 0;color:var(--muted);font-size:.92rem}
+.search-kind{font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);font-weight:650}
+.search-list .empty{border:0;background:transparent}
+"""
+
+
+# ---------- v16 pages: about, resources, top 10, CA checklist tool ----------
+
+def _page_wrap(cfg: dict, title: str, desc: str, body: str, base: str) -> str:
+    return _layout(cfg, title, desc, body, base)
+
+
+def about_page(cfg: dict, site_cfg: dict) -> str:
+    pub = site_cfg.get("publisher") or {}
+    name = esc(str(pub.get("name") or "the author") if isinstance(pub, dict) else "the author")
+    body = (
+        '<section class="intro"><p class="kicker">About</p><h1>About Security Brief</h1>'
+        f'<p class="summary">Security Brief is run by {name}, an IT operations and security professional '
+        'based in Germany. It is a free, independent news and analysis site for people who run '
+        'Microsoft 365, Entra ID and Defender environments.</p></section>'
+        '<section class="section" aria-labelledby="about-what"><h2 id="about-what">What the site does</h2>'
+        '<ul>'
+        '<li>It collects public feeds from vendors, Microsoft mirrors and security publishers and ranks '
+        'the items by priority and by whether they are actively exploited.</li>'
+        '<li>Every story links to its original source. Headlines and short excerpts belong to their publishers.</li>'
+        '<li>Analysis articles are written by hand. Each important claim is labelled '
+        '<strong>Confirmed</strong> (backed by a primary source), <strong>Likely</strong> (plausible, '
+        'not yet fully proven) or <strong>Unclear</strong> (no reliable evidence yet).</li>'
+        '</ul></section>'
+        '<section class="section" aria-labelledby="about-not"><h2 id="about-not">What the site is not</h2>'
+        '<ul>'
+        '<li>It is not affiliated with Microsoft or with any other source it links to.</li>'
+        '<li>It does not accept sponsored articles or paid placements.</li>'
+        '<li>It does not see or analyse your tenant data. Nothing here replaces your own logs or your incident process.</li>'
+        '<li>It is not a substitute for official Microsoft guidance. Always check the current Microsoft Learn documentation before you change a production setting.</li>'
+        '</ul></section>'
+        '<section class="section" aria-labelledby="about-funding"><h2 id="about-funding">Funding</h2>'
+        '<p>The site is free to read. It is funded voluntarily. Donation links are listed in the footer, '
+        'and nothing is required to read the site.</p></section>'
+        '<section class="section" aria-labelledby="about-contact"><h2 id="about-contact">Contact and corrections</h2>'
+        '<p>Found an error? See the <a href="corrections.html">corrections policy</a> or use the '
+        '<a href="contact.html">contact page</a>.</p></section>'
+    )
+    return _page_wrap(cfg, "About", "About Security Brief: who runs it, how analysis is labelled, and what the site is not.", body, "")
+
+
+def resources_page(cfg: dict) -> str:
+    body = (
+        '<section class="intro"><p class="kicker">Resources</p><h1>Free field guides</h1>'
+        '<p class="summary">Printable checklists for Microsoft 365 identity and Conditional Access work. '
+        'Each PDF is free to download and to use inside your own organisation.</p></section>'
+        + _guides_section(pre="../")
+    )
+    return _page_wrap(cfg, "Resources", "Free printable checklists for Microsoft 365 identity and Conditional Access.", body, "../")
+
+
+def top10_page(cfg: dict, stories: list[dict], now: datetime) -> str:
+    top = sorted(stories, key=lambda s: -(s.get("score") or 0))[:10]
+    items = []
+    for i, s in enumerate(top, 1):
+        srcs = ", ".join(dict.fromkeys(x["name"] for x in s["sources"][:3]))
+        items.append(
+            f'<li class="top10-item"><span class="top10-rank">{i}</span>'
+            f'<div><h3><a href="../story/{esc(s["id"])}.html">{esc(s["title"])}</a></h3>'
+            f'<p class="meta">{esc(s.get("priority", ""))} &middot; {esc(fmt_date(s["published"]))} &middot; {esc(srcs)}</p></div></li>'
+        )
+    print_css = (
+        '<style>@media print{.site-header,.site-footer,.no-print,.skip,.search-btn,.ck-banner{display:none!important}body{background:#fff;color:#000}'
+        '.top10-item{break-inside:avoid}a{color:#000;text-decoration:none}}'
+        '.top10-list{list-style:none;padding:0;margin:1.5rem 0}'
+        '.top10-item{display:flex;gap:1rem;padding:.9rem 0;border-bottom:1px solid #ddd}'
+        '.top10-rank{font-size:1.6rem;font-weight:700;min-width:2.2rem;color:#0b5394}</style>'
+    )
+    body = print_css + (
+        '<section class="intro no-print"><p class="kicker">Top 10</p><h1>Top 10 this week</h1>'
+        '<p class="summary">The ten highest-ranked stories in the current window, ready to print or share.</p>'
+        f'<p class="meta">Generated {esc(now.strftime("%d %b %Y, %H:%M UTC"))}</p>'
+        '<p><button type="button" class="btn" id="top10-print">Save as PDF / Print</button></p></section>'
+        '<ol class="top10-list">' + "".join(items) + '</ol>'
+        '<p class="meta">Each entry links to the story page, which links to the original source.</p>'
+        '<script>document.getElementById("top10-print").addEventListener("click",function(){window.print();});</script>'
+    )
+    if not top:
+        body = body.replace('<ol class="top10-list"></ol>', "")
+        body = ('<section class="intro"><p class="kicker">Top 10</p><h1>Top 10 this week</h1>'
+                '<div class="empty">No stories in the current window yet.</div></section>')
+    return _page_wrap(cfg, "Top 10 this week", "The ten highest-ranked security stories this week, printable.", body, "../")
+
+
+CA_TOOL_JS = """
+(function(){
+  var goal=document.getElementById('ca-goal'), out=document.getElementById('ca-out'),
+      btn=document.getElementById('ca-copy'), status=document.getElementById('ca-status');
+  var GOALS={
+    admins:'Require MFA for privileged (admin) roles',
+    allusers:'Require MFA for all users (except emergency access accounts)',
+    legacy:'Block legacy authentication',
+    devicecode:'Block device code flow for users who do not need it',
+    compliant:'Require a compliant or hybrid joined device for admin portals'
+  };
+  var SCOPE={
+    admins:'Scope: privileged directory roles. Confirm the role list and the named admin accounts.',
+    allusers:'Scope: all users. Start with a named pilot group, not the whole tenant.',
+    legacy:'Scope: legacy authentication client apps. Check sign-in logs for legacy protocols first.',
+    devicecode:'Scope: device code flow. Check sign-in logs for device code sign-ins before blocking.',
+    compliant:'Scope: admin portals. Confirm your device management covers these devices first.'
+  };
+  function render(){
+    var g=goal.value, lines=[], ck=function(id){return document.getElementById(id).checked;};
+    lines.push('Conditional Access checklist: '+GOALS[g]);
+    lines.push('');
+    lines.push(SCOPE[g]);
+    lines.push('');
+    var n=0, warn=[];
+    if(!ck('ca-emergency')) warn.push('STOP: Exclude emergency access accounts first and test that they can still sign in.');
+    if(!ck('ca-owner')) warn.push('STOP: Name an owner for this policy before you enable it.');
+    if(!ck('ca-helpdesk')) warn.push('Inform the helpdesk before you enforce the policy.');
+    if(ck('ca-service')) warn.push('List service accounts and app-only identities. Exclude or test them explicitly.');
+    if(!ck('ca-reportonly')) warn.push('Report-only is the default path. Use a separate test group if you cannot use it.');
+    if(warn.length){ lines.push('Before you start:'); warn.forEach(function(w){lines.push('- '+w);}); lines.push(''); }
+    lines.push('Steps:');
+    var steps=[
+      'Write the goal and the business reason in one sentence.',
+      'Confirm the scope (users, apps, locations) and list each exclusion with an owner.',
+      'Check the sign-in logs for the last 14 to 30 days for the affected users and apps.',
+      'Entra admin center > Protection > Conditional Access > Policies > New policy. Set Enable policy to Report-only.',
+      'Review the report-only results for at least one full working cycle.',
+      'Pilot with a small, named group.',
+      'Enforce for the wider scope and tell users and the helpdesk.',
+      'Monitor sign-in logs and helpdesk tickets during the first week.',
+      'Rollback: set the policy back to Report-only or Off, and name who approves that.'
+    ];
+    steps.forEach(function(s){ n++; lines.push(n+'. '+s); });
+    lines.push('');
+    lines.push('General checklist. Verify each step against current Microsoft Learn documentation and your own sign-in logs.');
+    out.textContent=lines.join('\\n');
+  }
+  [goal].concat([].slice.call(document.querySelectorAll('#ca-form input'))).forEach(function(el){
+    el.addEventListener('change',render);
+  });
+  goal.addEventListener('change',render);
+  btn.addEventListener('click',function(){
+    var t=out.textContent;
+    var done=function(ok){status.textContent=ok?'Copied to clipboard.':'Copy failed. Select the text and copy it manually.';};
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(t).then(function(){done(true);},function(){done(false);});
+    } else {
+      var ta=document.createElement('textarea'); ta.value=t; document.body.appendChild(ta); ta.select();
+      try{ done(document.execCommand('copy')); }catch(e){ done(false); }
+      document.body.removeChild(ta);
+    }
+  });
+  render();
+})();
+"""
+
+
+def ca_tool_page(cfg: dict) -> str:
+    body = (
+        '<section class="intro"><p class="kicker">Tool</p><h1>Conditional Access checklist generator</h1>'
+        '<p class="summary">Pick a goal and tick what applies to your tenant. The tool builds a numbered rollout checklist '
+        'you can copy. Everything runs in your browser; nothing is sent anywhere.</p></section>'
+        '<form id="ca-form" class="ca-form" onsubmit="return false;">'
+        '<fieldset><legend>Goal</legend>'
+        '<label for="ca-goal">What should this policy do?</label>'
+        '<select id="ca-goal" name="goal">'
+        '<option value="admins">Require MFA for privileged (admin) roles</option>'
+        '<option value="allusers">Require MFA for all users</option>'
+        '<option value="legacy">Block legacy authentication</option>'
+        '<option value="devicecode">Block device code flow</option>'
+        '<option value="compliant">Require a compliant device for admin portals</option>'
+        '</select></fieldset>'
+        '<fieldset><legend>Your context</legend>'
+        '<label><input type="checkbox" id="ca-emergency" checked> Emergency access accounts exist and are excluded</label>'
+        '<label><input type="checkbox" id="ca-reportonly" checked> I can run the policy in report-only mode first</label>'
+        '<label><input type="checkbox" id="ca-owner" checked> A named owner is responsible for the policy</label>'
+        '<label><input type="checkbox" id="ca-helpdesk" checked> The helpdesk is informed before enforcement</label>'
+        '<label><input type="checkbox" id="ca-service"> Service accounts or app-only identities are affected</label>'
+        '</fieldset>'
+        '</form>'
+        '<section class="section" aria-labelledby="ca-out-title"><h2 id="ca-out-title">Your checklist</h2>'
+        '<pre class="ca-out" id="ca-out" tabindex="0" aria-live="polite"></pre>'
+        '<p><button type="button" class="btn" id="ca-copy">Copy checklist</button> '
+        '<span id="ca-status" class="meta" role="status"></span></p></section>'
+        '<section class="section"><p class="meta">Based on the Conditional Access rollout steps in our free guide. '
+        'Policy names and portal paths can change; check Microsoft Learn before you act. '
+        'The tool does not connect to Microsoft 365 and does not change any setting.</p>'
+        '<p><a href="../../resources/index.html">Download the free Conditional Access rollout checklist</a></p></section>'
+        f'<script>{CA_TOOL_JS}</script>'
+    )
+    return _page_wrap(cfg, "Conditional Access checklist generator", "Build a copyable Conditional Access rollout checklist in your browser.", body, "../../")
+
+
+
+
 def write_site(out: Path, stories: list[dict], cfg: dict, now: datetime, status: dict,
                articles: list[dict] | None = None, site_cfg: dict | None = None,
                radar: dict | None = None) -> None:
@@ -3296,7 +3579,7 @@ def write_site(out: Path, stories: list[dict], cfg: dict, now: datetime, status:
     site_cfg = site_cfg or {}
     (out / "story").mkdir(parents=True, exist_ok=True)
     # Story pages are kept even after a story leaves the 7-day window, so old links never 404.
-    (out / "style.css").write_text(CSS.strip() + "\n" + EXTRA_CSS + "\n" + DESIGN_CSS + "\n" + RADAR_CSS + "\n" + ANALYSIS_CSS + "\n" + SITE_CSS + "\n" + LESS_MOTION_CSS + "\n" + FUTURE_CSS, encoding="utf-8")
+    (out / "style.css").write_text(CSS.strip() + "\n" + EXTRA_CSS + "\n" + DESIGN_CSS + "\n" + RADAR_CSS + "\n" + ANALYSIS_CSS + "\n" + SITE_CSS + "\n" + LESS_MOTION_CSS + "\n" + FUTURE_CSS + "\n" + SEARCH_CSS, encoding="utf-8")
     (out / "favicon.svg").write_text(FAVICON_SVG, encoding="utf-8")
     # Optional root-level QR image: keep deployment simple for repository web uploads.
     import shutil
@@ -3352,6 +3635,17 @@ def write_site(out: Path, stories: list[dict], cfg: dict, now: datetime, status:
     for name, page in legal_pages(site_cfg, cfg).items():
         (out / name).write_text(page, encoding="utf-8")
     (out / "feed.xml").write_text(feed_xml(stories, cfg, now, articles), encoding="utf-8")
+    (out / "search.json").write_text(json.dumps(search_index(stories, articles), ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    (out / "search").mkdir(parents=True, exist_ok=True)
+    (out / "search" / "index.html").write_text(search_page(cfg), encoding="utf-8")
+    (out / "404.html").write_text(not_found_page(cfg), encoding="utf-8")
+    (out / "about.html").write_text(about_page(cfg, site_cfg), encoding="utf-8")
+    (out / "resources").mkdir(parents=True, exist_ok=True)
+    (out / "resources" / "index.html").write_text(resources_page(cfg), encoding="utf-8")
+    (out / "top10").mkdir(parents=True, exist_ok=True)
+    (out / "top10" / "index.html").write_text(top10_page(cfg, stories, now), encoding="utf-8")
+    (out / "tools" / "ca-checklist").mkdir(parents=True, exist_ok=True)
+    (out / "tools" / "ca-checklist" / "index.html").write_text(ca_tool_page(cfg), encoding="utf-8")
     (out / "sitemap.xml").write_text(sitemap_xml(stories, cfg, articles), encoding="utf-8")
     (out / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {cfg['site_url'].rstrip('/')}/sitemap.xml\n", encoding="utf-8")
     (out / "status.json").write_text(json.dumps(status, indent=2, ensure_ascii=False), encoding="utf-8")
