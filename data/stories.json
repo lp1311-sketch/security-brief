@@ -81,6 +81,24 @@
    "instructions_checked": true
   },
   {
+   "id": "b686da68349e",
+   "source": "ars",
+   "source_name": "Ars Technica Security",
+   "official": false,
+   "source_type": "news",
+   "title": "Grok Build coding agent leaks oodles of confidential info, some belonging to SpaceXSI",
+   "link": "https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/",
+   "published": "2026-11-10T21:12:59+00:00",
+   "summary": "Grok Build, the vibe-coding agent from SpaceXSI, is leaking data—some of it proprietary business information and other sensitive secrets—from thousands of its users, including the very same Elon Musk-owned company that offers the platform, new research shows. The information is revealed through links allowing Grok…",
+   "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/grok-plugin-marketplace-1152x648.webp",
+   "cves": [],
+   "first_seen": "2026-11-10T22:04:27.113869+00:00",
+   "instructions": [
+    "Anyone using shareable links with Grok Build should choose the “invite others” option unless they intend to make an app widely available."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "bc594cd9fbf9",
    "source": "ars",
    "source_name": "Ars Technica Security",
@@ -355,6 +373,30 @@
    "first_seen": "2026-11-05T01:00:41.123656+00:00",
    "image_checked": true,
    "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "9364f9baac68",
+   "source": "krebs",
+   "source_name": "KrebsOnSecurity",
+   "official": false,
+   "source_type": "news",
+   "title": "Microsoft Fixes Nearly 1,100 Security Vulnerabilities",
+   "link": "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/",
+   "published": "2026-11-10T21:55:03+00:00",
+   "summary": "Microsoft did another four-digit patch drop today, releasing updates to fix almost 1,100 security vulnerabilities in its Windows operating systems and supported software. This month’s Patch Tuesday addresses 63 critical flaws — including a zero-day in Microsoft Outlook — and comes amid important security updates from…",
+   "image": "https://krebsonsecurity.com/wp-content/uploads/2026/11/ss-orangemencomputer.png",
+   "cves": [
+    "CVE-2026-124194",
+    "CVE-2026-125350"
+   ],
+   "first_seen": "2026-11-10T22:04:27.113869+00:00",
+   "instructions": [
+    "The advisory for CVE-2026-124194 says it affects Microsoft 365 Apps for Enterprise and editions of Microsoft Office .",
+    "Microsoft did another four-digit patch drop today, releasing updates to fix almost 1,100 security vulnerabilities in its Windows operating systems and supported software.",
+    "This month’s Patch Tuesday addresses 63 critical flaws — including a zero-day in Microsoft Outlook — and comes amid important security updates from other software makers, including Adobe , Apple , Google and Mozilla .",
+    "November’s patch release from Redmond tackles 1,093 vulnerabilities, fixing 63 “critical” flaws that can be exploited to seize control over a Windows system with little or no help from users."
+   ],
    "instructions_checked": true
   },
   {
@@ -1231,6 +1273,54 @@
    "image_checked": true
   },
   {
+   "id": "236aa0388888",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-56172 Windows VHD miniport driver Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56172",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-56172"
+   ],
+   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+  },
+  {
+   "id": "ea093da17d00",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-62694 Windows Installer Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62694",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-62694"
+   ],
+   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+  },
+  {
+   "id": "b595e98fa95b",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-62784 Microsoft Local Security Authority Server (lsasrv) Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62784",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-62784"
+   ],
+   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+  },
+  {
    "id": "3934bb4842ca",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -1248,6 +1338,262 @@
    "instructions": [],
    "instructions_checked": true,
    "image_checked": true
+  },
+  {
+   "id": "dcc59bfbf42f",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-66810 Microsoft Office Word Information Disclosure Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-66810",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-66810"
+   ],
+   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+  },
+  {
+   "id": "70cf78401ca9",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-68794 Microsoft Excel Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68794",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-68794"
+   ],
+   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+  },
+  {
+   "id": "8a2303909a27",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-68833 Windows NTFS Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68833",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-68833"
+   ],
+   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+  },
+  {
+   "id": "da0b74c3ba02",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-68839 Windows USB Mass Storage Class Driver Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68839",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-68839"
+   ],
+   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+  },
+  {
+   "id": "aff1d988c68e",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-68880 Windows Win32k Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68880",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-68880"
+   ],
+   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+  },
+  {
+   "id": "3b7c833d1d67",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-68884 Windows Kernel Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68884",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-68884"
+   ],
+   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+  },
+  {
+   "id": "6ade1aedb459",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-69277 Microsoft Local Security Authority (LSA) Server Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69277",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-69277"
+   ],
+   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+  },
+  {
+   "id": "24c7319e784b",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-69280 Windows Push Notifications Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69280",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-69280"
+   ],
+   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+  },
+  {
+   "id": "a7b3d1646f01",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-69407 Volume Manager Driver Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69407",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-69407"
+   ],
+   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+  },
+  {
+   "id": "9ee79e1fe940",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-69409 Microsoft Office SharePoint Information Disclosure Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69409",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-69409"
+   ],
+   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+  },
+  {
+   "id": "d482469a796c",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-69453 Microsoft Windows Search Component Tampering Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69453",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-69453"
+   ],
+   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+  },
+  {
+   "id": "715ec65d4e32",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-69465 Microsoft Office SharePoint Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69465",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-69465"
+   ],
+   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+  },
+  {
+   "id": "6a366b064094",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-69467 Microsoft Graphics Component Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69467",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-69467"
+   ],
+   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+  },
+  {
+   "id": "05df760559dc",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-69492 Windows Partition Management Driver Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69492",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-69492"
+   ],
+   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+  },
+  {
+   "id": "90015026e728",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-69548 Windows RNDIS Information Disclosure Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69548",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-69548"
+   ],
+   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+  },
+  {
+   "id": "0212e0e16bfb",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-69767 Microsoft Office PowerPoint Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69767",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-69767"
+   ],
+   "first_seen": "2026-11-10T22:04:27.113869+00:00"
   },
   {
    "id": "d2f9b477c20b",
@@ -1282,7 +1628,10 @@
    "cves": [
     "CVE-2026-69940"
    ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00"
+   "first_seen": "2026-11-10T21:10:58.117182+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "2530593de021",
@@ -1317,7 +1666,10 @@
    "cves": [
     "CVE-2026-70052"
    ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00"
+   "first_seen": "2026-11-10T21:10:58.117182+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "8a340b8f6af6",
@@ -1352,7 +1704,10 @@
    "cves": [
     "CVE-2026-70275"
    ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00"
+   "first_seen": "2026-11-10T21:10:58.117182+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "f53e70f68be5",
@@ -1368,7 +1723,74 @@
    "cves": [
     "CVE-2026-70291"
    ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00"
+   "first_seen": "2026-11-10T21:10:58.117182+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "6299dfc08e6d",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-70583 Windows Core Messaging Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70583",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-70583"
+   ],
+   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+  },
+  {
+   "id": "77a374692109",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-71339 Windows Installer Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-71339",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-71339"
+   ],
+   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+  },
+  {
+   "id": "7c11bebd212c",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-72974 Microsoft Office Excel Information Disclosure Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-72974",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-72974"
+   ],
+   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+  },
+  {
+   "id": "a3287abb00d1",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-73016 DirectWrite Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-73016",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-73016"
+   ],
+   "first_seen": "2026-11-10T22:04:27.113869+00:00"
   },
   {
    "id": "7c7d0982a3a9",
@@ -1523,6 +1945,86 @@
    "image_checked": true
   },
   {
+   "id": "0c13f68d8253",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-77911 Microsoft Office Word Information Disclosure Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-77911",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-77911"
+   ],
+   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+  },
+  {
+   "id": "6ca084450e35",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-81394 Microsoft Excel Information Disclosure Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-81394",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-81394"
+   ],
+   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+  },
+  {
+   "id": "30d6f4cdafee",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-81398 Microsoft Excel Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-81398",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-81398"
+   ],
+   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+  },
+  {
+   "id": "5b0bf5c53585",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-81954 Microsoft Excel Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-81954",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-81954"
+   ],
+   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+  },
+  {
+   "id": "dc6c73fb4d18",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-81957 Microsoft Excel Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-81957",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-81957"
+   ],
+   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+  },
+  {
    "id": "9d0000ef041e",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -1614,7 +2116,8 @@
    ],
    "first_seen": "2026-11-10T21:10:58.117182+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "d4b1ff72ceb3",
@@ -1632,7 +2135,8 @@
    ],
    "first_seen": "2026-11-10T21:10:58.117182+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "6f1e4fb8b204",
@@ -1650,7 +2154,8 @@
    ],
    "first_seen": "2026-11-10T21:10:58.117182+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "13fd69411f6b",
@@ -1687,7 +2192,8 @@
    ],
    "first_seen": "2026-11-10T21:10:58.117182+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "db9ef08d13bf",
@@ -1724,7 +2230,8 @@
    ],
    "first_seen": "2026-11-10T21:10:58.117182+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "d4fbb0a31215",
@@ -1740,7 +2247,10 @@
    "cves": [
     "CVE-2026-83911"
    ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00"
+   "first_seen": "2026-11-10T21:10:58.117182+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "ca9b46c69a71",
@@ -1756,7 +2266,10 @@
    "cves": [
     "CVE-2026-83919"
    ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00"
+   "first_seen": "2026-11-10T21:10:58.117182+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "32d9054c55c6",
@@ -1772,7 +2285,25 @@
    "cves": [
     "CVE-2026-83926"
    ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00"
+   "first_seen": "2026-11-10T21:10:58.117182+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "680e271bbc04",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-83952 Windows Resilient File System (ReFS) Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83952",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-83952"
+   ],
+   "first_seen": "2026-11-10T22:04:27.113869+00:00"
   },
   {
    "id": "4f0ae400eaf2",
@@ -1826,7 +2357,25 @@
    "cves": [
     "CVE-2026-84018"
    ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00"
+   "first_seen": "2026-11-10T21:10:58.117182+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "7147b7969602",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-85360 Windows Kernel Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85360",
+   "published": "2026-11-10T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-85360"
+   ],
+   "first_seen": "2026-11-10T22:04:27.113869+00:00"
   },
   {
    "id": "92c4d25f1f91",
@@ -1842,7 +2391,9 @@
    "cves": [
     "CVE-2026-85927"
    ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00"
+   "first_seen": "2026-11-10T21:10:58.117182+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "251acc6e20ce",
@@ -1858,7 +2409,9 @@
    "cves": [
     "CVE-2026-88151"
    ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00"
+   "first_seen": "2026-11-10T21:10:58.117182+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "647505185714",
@@ -1874,7 +2427,9 @@
    "cves": [
     "CVE-2026-88202"
    ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00"
+   "first_seen": "2026-11-10T21:10:58.117182+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "81c7c252855e",
@@ -1890,7 +2445,9 @@
    "cves": [
     "CVE-2026-96223"
    ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00"
+   "first_seen": "2026-11-10T21:10:58.117182+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "173f37e989f0",
@@ -1906,7 +2463,9 @@
    "cves": [
     "CVE-2026-96311"
    ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00"
+   "first_seen": "2026-11-10T21:10:58.117182+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "e6d739c7b69a",
@@ -1922,7 +2481,9 @@
    "cves": [
     "CVE-2026-96314"
    ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00"
+   "first_seen": "2026-11-10T21:10:58.117182+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "ee4270815294",
@@ -1938,7 +2499,9 @@
    "cves": [
     "CVE-2026-97749"
    ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00"
+   "first_seen": "2026-11-10T21:10:58.117182+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "ccc66eb25631",
@@ -3624,6 +4187,23 @@
    "instructions_checked": true
   },
   {
+   "id": "15da1f8e31d6",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "US Army member arrested in UK over allegations of spying for Russia",
+   "link": "https://therecord.media/us-army-member-arrested-in-uk-spying-for-russia",
+   "published": "2026-11-10T21:13:00+00:00",
+   "summary": "The unnamed soldier was arrested by British counterterrorism police “working closely” with U.S. authorities, including the FBI and the military, the Metropolitan Police said in a statement.",
+   "image": "https://cms.therecord.media/uploads/police_1_373641f263.jpg",
+   "cves": [],
+   "first_seen": "2026-11-10T22:04:27.113869+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "8b7832becd89",
    "source": "therecord",
    "source_name": "The Record",
@@ -4857,23 +5437,6 @@
    "instructions_checked": true
   },
   {
-   "id": "27b11b637919",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "WorkOS says attacker used ARTEX AI to breach internal sales app",
-   "link": "https://www.bleepingcomputer.com/news/security/workos-says-attacker-used-artex-ai-to-breach-internal-sales-app/",
-   "published": "2026-11-03T21:28:44+00:00",
-   "summary": "Developer platform WorkOS suffered a data breach after a threat actor accessed business contact records and summaries of customer communications.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/03/workos.jpg",
-   "cves": [],
-   "first_seen": "2026-11-03T22:10:24.347252+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "b9b072a1ed15",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -5066,6 +5629,22 @@
    "instructions_checked": true
   },
   {
+   "id": "6922144e7a8d",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "F-Secure Identifies 26 Ways AI Can Harm Consumers, and Where to Stop Them",
+   "link": "https://www.darkreading.com/application-security/f-secure-26-ways-ai-harm-consumers-where-to-stop-them",
+   "published": "2026-11-10T20:41:45+00:00",
+   "summary": "New AI Harms Taxonomy traces how harm moves through AI systems, from misleading chatbot answers to compromised autonomous agents, and identifies where defenses can intervene.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt850556f866500627/654a5a8e05eb4d040a046894/325351_DR23_Graphics_General_Large_Text_v1.png?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-10T22:04:27.113869+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "eae4ff98ab3e",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -5146,6 +5725,22 @@
    "instructions_checked": true
   },
   {
+   "id": "c9d200a425c2",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "Artex: The AI Pen-Test Tool Hackers Turned Into a Weapon",
+   "link": "https://www.darkreading.com/cyberattacks-data-breaches/artex-ai-pen-test-tool-hackers-weapon",
+   "published": "2026-11-10T21:01:14+00:00",
+   "summary": "Forks of the open source Artex framework, along with 45 similar pen-testing tools, remain capable of executing credential attacks and cloud breaches at machine speed across multiple industries.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blte1b65168e9679e0a/6af379bdf986ff173e0a7def/Lock_with_target-Alena_Butusava-GettyImages-2263307877.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-10T22:04:27.113869+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "907718f8d430",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -5222,22 +5817,6 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt850556f866500627/654a5a8e05eb4d040a046894/325351_DR23_Graphics_General_Large_Text_v1.png?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-09T21:15:06.503707+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "699d6dc9b64e",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "Germany Busts 'Crime-as-a-Service' Investment Fraud Outfit",
-   "link": "https://www.darkreading.com/cybersecurity-operations/germany-crime-service-investment-fraud",
-   "published": "2026-11-03T21:57:12+00:00",
-   "summary": "Authorities seized more than 100 servers and arrested seven as part of a crackdown on a fraud network spanning more than 50 countries.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt2ae3fcc30ff2f999/6aea3f3225b8d120f9a7b718/investment_on_computer-ilkercelik-GettyImages-2239174783.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-03T23:08:37.927300+00:00",
    "instructions": [],
    "instructions_checked": true
   },

@@ -1,14 +1,14 @@
 {
  "stories": [
   {
-   "id": "008f66d06450",
-   "title": "Exploited Outlook Zero-Day Among 1,094 Flaws Patched by Microsoft",
-   "summary": "CVE-2026-124194 is the Outlook zero-day for which Microsoft says it’s aware of active exploitation. The post Exploited Outlook Zero-Day Among 1,094 Flaws Patched by…",
+   "id": "9364f9baac68",
+   "title": "Microsoft Fixes Nearly 1,100 Security Vulnerabilities",
+   "summary": "Microsoft did another four-digit patch drop today, releasing updates to fix almost 1,100 security vulnerabilities in its Windows operating systems and supported…",
    "priority": "Critical",
    "category": "Patch Radar",
-   "date": "10 Nov 2026, 19:19 UTC",
-   "sources": "SecurityWeek, CISA Cybersecurity Advisories, The Hacker News",
-   "url": "story/008f66d06450.html"
+   "date": "10 Nov 2026, 21:55 UTC",
+   "sources": "KrebsOnSecurity, SecurityWeek, CISA Cybersecurity Advisories, The Hacker News",
+   "url": "story/9364f9baac68.html"
   },
   {
    "id": "e61330c97785",
@@ -91,6 +91,16 @@
    "url": "story/489ff1bcb336.html"
   },
   {
+   "id": "7e1f9b33c691",
+   "title": "Google patches eighth Chrome zero-day exploited in attacks this year",
+   "summary": "Google has released emergency security updates to patch a new Chrome vulnerability exploited in zero-day attacks, the eighth such flaw since the start of the year.",
+   "priority": "High",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 08:51 UTC",
+   "sources": "BleepingComputer, SecurityWeek",
+   "url": "story/7e1f9b33c691.html"
+  },
+  {
    "id": "2a5b7d5a686a",
    "title": "Hackers Exploit Patched Apple Flaw to Deliver Info-Stealing Malware, CISA Says",
    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a medium-severity security flaw impacting multiple Apple operating systems to its…",
@@ -101,14 +111,24 @@
    "url": "story/2a5b7d5a686a.html"
   },
   {
-   "id": "cbc80a77570b",
-   "title": "CVE-2026-109463 Windows DNS Remote Code Execution Vulnerability",
-   "summary": "Deserialization of untrusted data in Windows DNS allows an unauthorized attacker to execute code over a network.",
+   "id": "c9d200a425c2",
+   "title": "Artex: The AI Pen-Test Tool Hackers Turned Into a Weapon",
+   "summary": "Forks of the open source Artex framework, along with 45 similar pen-testing tools, remain capable of executing credential attacks and cloud breaches at machine speed…",
+   "priority": "High",
+   "category": "Attacks & Breaches",
+   "date": "10 Nov 2026, 21:01 UTC",
+   "sources": "Dark Reading",
+   "url": "story/c9d200a425c2.html"
+  },
+  {
+   "id": "749621e2cdd4",
+   "title": "CVE-2026-102227 Windows Resilient File System (ReFS) Remote Code Execution Vulnerability",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
    "priority": "High",
    "category": "Patch Radar",
    "date": "10 Nov 2026, 16:00 UTC",
    "sources": "Microsoft Security Response Center, The Hacker News",
-   "url": "story/cbc80a77570b.html"
+   "url": "story/749621e2cdd4.html"
   },
   {
    "id": "1f6bc1af5305",
@@ -119,16 +139,6 @@
    "date": "10 Nov 2026, 09:56 UTC",
    "sources": "SecurityWeek, The Hacker News",
    "url": "story/1f6bc1af5305.html"
-  },
-  {
-   "id": "7e1f9b33c691",
-   "title": "Google patches eighth Chrome zero-day exploited in attacks this year",
-   "summary": "Google has released emergency security updates to patch a new Chrome vulnerability exploited in zero-day attacks, the eighth such flaw since the start of the year.",
-   "priority": "High",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 08:51 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/7e1f9b33c691.html"
   },
   {
    "id": "7d2482c88528",
@@ -241,6 +251,16 @@
    "url": "story/7e25e120e172.html"
   },
   {
+   "id": "128f965277c6",
+   "title": "CVE-2026-105726 Microsoft Defender Information Disclosure Vulnerability",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/128f965277c6.html"
+  },
+  {
    "id": "9ba2c99a6c7d",
    "title": "CVE-2026-108411 Microsoft ODBC Driver Remote Code Execution Vulnerability",
    "summary": "Heap-based buffer overflow in Windows ODBC Driver allows an unauthorized attacker to execute code over a network.",
@@ -261,26 +281,6 @@
    "url": "story/61b69f1deec0.html"
   },
   {
-   "id": "1328adc53dd3",
-   "title": "CVE-2026-114166 Microsoft Raw Image Extension Information Disclosure Vulnerability",
-   "summary": "Buffer over-read in Windows Raw Image Extension allows an unauthorized attacker to disclose information locally.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/1328adc53dd3.html"
-  },
-  {
-   "id": "4f0ae400eaf2",
-   "title": "CVE-2026-84004 AMD Zen Information Disclosure Vulnerability",
-   "summary": "Processor optimization removal or modification of security-critical code in AMD Zen allows an authorized attacker to disclose information locally.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/4f0ae400eaf2.html"
-  },
-  {
    "id": "21d5aea40d42",
    "title": "CVE-2026-83681 Microsoft PowerToys Tampering Vulnerability",
    "summary": "Updated an acknowledgement. This is an informational change only.",
@@ -289,6 +289,16 @@
    "date": "10 Nov 2026, 16:00 UTC",
    "sources": "Microsoft Security Response Center",
    "url": "story/21d5aea40d42.html"
+  },
+  {
+   "id": "ecf4389fb80f",
+   "title": "CVE-2026-83758 Windows Error Reporting Remote Code Execution Vulnerability",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/ecf4389fb80f.html"
   },
   {
    "id": "6f1e4fb8b204",
@@ -311,6 +321,16 @@
    "url": "story/32d9054c55c6.html"
   },
   {
+   "id": "4f0ae400eaf2",
+   "title": "CVE-2026-84004 AMD Zen Information Disclosure Vulnerability",
+   "summary": "Processor optimization removal or modification of security-critical code in AMD Zen allows an authorized attacker to disclose information locally.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/4f0ae400eaf2.html"
+  },
+  {
    "id": "47d706c7db5c",
    "title": "CVE-2026-84018 Windows Print Spooler Components Elevation of Privilege Vulnerability",
    "summary": "Updated an acknowledgement. This is an informational change only.",
@@ -331,16 +351,6 @@
    "url": "story/92c4d25f1f91.html"
   },
   {
-   "id": "251acc6e20ce",
-   "title": "CVE-2026-88151 Microsoft Office Excel Information Disclosure Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/251acc6e20ce.html"
-  },
-  {
    "id": "173f37e989f0",
    "title": "CVE-2026-96311 Windows Network List Service Tampering Vulnerability",
    "summary": "Updated an acknowledgement. This is an informational change only.",
@@ -349,6 +359,66 @@
    "date": "10 Nov 2026, 16:00 UTC",
    "sources": "Microsoft Security Response Center",
    "url": "story/173f37e989f0.html"
+  },
+  {
+   "id": "b595e98fa95b",
+   "title": "CVE-2026-62784 Microsoft Local Security Authority Server (lsasrv) Remote Code Execution Vulnerability",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/b595e98fa95b.html"
+  },
+  {
+   "id": "05df760559dc",
+   "title": "CVE-2026-69492 Windows Partition Management Driver Elevation of Privilege Vulnerability",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/05df760559dc.html"
+  },
+  {
+   "id": "da0b74c3ba02",
+   "title": "CVE-2026-68839 Windows USB Mass Storage Class Driver Remote Code Execution Vulnerability",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/da0b74c3ba02.html"
+  },
+  {
+   "id": "6ade1aedb459",
+   "title": "CVE-2026-69277 Microsoft Local Security Authority (LSA) Server Elevation of Privilege Vulnerability",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/6ade1aedb459.html"
+  },
+  {
+   "id": "d482469a796c",
+   "title": "CVE-2026-69453 Microsoft Windows Search Component Tampering Vulnerability",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/d482469a796c.html"
+  },
+  {
+   "id": "6a366b064094",
+   "title": "CVE-2026-69467 Microsoft Graphics Component Elevation of Privilege Vulnerability",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/6a366b064094.html"
   },
   {
    "id": "7646e96e2e7b",
@@ -389,16 +459,6 @@
    "date": "09 Nov 2026, 23:00 UTC",
    "sources": "Born's IT and Windows Blog",
    "url": "story/a876e139f448.html"
-  },
-  {
-   "id": "8d206c962ee8",
-   "title": "N-able takes cloud platform offline after 30+ \"zero-days\" published",
-   "summary": "N-able has taken its hosted N-central environments offline and urged on-premises customers to shut down their servers after a security researcher publicly disclosed more…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "09 Nov 2026, 21:26 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/8d206c962ee8.html"
   },
   {
    "id": "094609239735",
@@ -531,34 +591,14 @@
    "url": "story/fb65eccd7583.html"
   },
   {
-   "id": "907718f8d430",
-   "title": "CISA Announces Enhanced Reporting Form for Cyber Incidents",
-   "summary": "New questionnaire captures critical data and information that improves the agency’s ability to assess incidents, identify trends and prioritize response actions.",
+   "id": "8d206c962ee8",
+   "title": "N-able takes cloud platform offline after 30+ \"zero-days\" published",
+   "summary": "N-able has taken its hosted N-central environments offline and urged on-premises customers to shut down their servers after a security researcher publicly disclosed more…",
    "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "09 Nov 2026, 21:38 UTC",
-   "sources": "Dark Reading",
-   "url": "story/907718f8d430.html"
-  },
-  {
-   "id": "b9b072a1ed15",
-   "title": "York University breach exposed personal information dating to 2007",
-   "summary": "York University has announced it suffered a cybersecurity incident in which a threat actor stole personal information people submitted through online forms.",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "09 Nov 2026, 21:22 UTC",
+   "category": "Patch Radar",
+   "date": "09 Nov 2026, 21:26 UTC",
    "sources": "BleepingComputer",
-   "url": "story/b9b072a1ed15.html"
-  },
-  {
-   "id": "eae4ff98ab3e",
-   "title": "Microsoft Fixes RCE Bug in Windows Paint After Weeks of Confusion",
-   "summary": "Last month, Microsoft disclosed a vulnerability in Microsoft Paint, but messaging regarding a patch was unclear.",
-   "priority": "Standard",
-   "category": "Microsoft",
-   "date": "09 Nov 2026, 21:12 UTC",
-   "sources": "Dark Reading",
-   "url": "story/eae4ff98ab3e.html"
+   "url": "story/8d206c962ee8.html"
   },
   {
    "id": "5bce94b89cfb",
@@ -651,6 +691,16 @@
    "url": "story/62ad9c2a6bdd.html"
   },
   {
+   "id": "6922144e7a8d",
+   "title": "F-Secure Identifies 26 Ways AI Can Harm Consumers, and Where to Stop Them",
+   "summary": "New AI Harms Taxonomy traces how harm moves through AI systems, from misleading chatbot answers to compromised autonomous agents, and identifies where defenses can…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "10 Nov 2026, 20:41 UTC",
+   "sources": "Dark Reading",
+   "url": "story/6922144e7a8d.html"
+  },
+  {
    "id": "8ec6ef10a10a",
    "title": "Checkmarx Appoints Kobi Sivilya as Chief Information Security Officer",
    "summary": "Sivilya brings deep cybersecurity and technology leadership to Checkmarx as AI transforms software development.",
@@ -711,6 +761,16 @@
    "url": "story/91dd8667fa3b.html"
   },
   {
+   "id": "a7b3d1646f01",
+   "title": "CVE-2026-69407 Volume Manager Driver Elevation of Privilege Vulnerability",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/a7b3d1646f01.html"
+  },
+  {
    "id": "89d6f6254d42",
    "title": "Binance warns of iOS flaw that could leak crypto wallet secrets",
    "summary": "Binance is warning about a vulnerability in Apple's iOS 26.7.1, 27.0.1, and 27.2 that could allow third-party apps to read private files stored by other apps, including…",
@@ -759,6 +819,36 @@
    "date": "09 Nov 2026, 23:06 UTC",
    "sources": "Dark Reading",
    "url": "story/ccc69e15df6f.html"
+  },
+  {
+   "id": "907718f8d430",
+   "title": "CISA Announces Enhanced Reporting Form for Cyber Incidents",
+   "summary": "New questionnaire captures critical data and information that improves the agency’s ability to assess incidents, identify trends and prioritize response actions.",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "09 Nov 2026, 21:38 UTC",
+   "sources": "Dark Reading",
+   "url": "story/907718f8d430.html"
+  },
+  {
+   "id": "b9b072a1ed15",
+   "title": "York University breach exposed personal information dating to 2007",
+   "summary": "York University has announced it suffered a cybersecurity incident in which a threat actor stole personal information people submitted through online forms.",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "09 Nov 2026, 21:22 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/b9b072a1ed15.html"
+  },
+  {
+   "id": "eae4ff98ab3e",
+   "title": "Microsoft Fixes RCE Bug in Windows Paint After Weeks of Confusion",
+   "summary": "Last month, Microsoft disclosed a vulnerability in Microsoft Paint, but messaging regarding a patch was unclear.",
+   "priority": "Standard",
+   "category": "Microsoft",
+   "date": "09 Nov 2026, 21:12 UTC",
+   "sources": "Dark Reading",
+   "url": "story/eae4ff98ab3e.html"
   },
   {
    "id": "cd41a3a65bdc",
@@ -971,14 +1061,24 @@
    "url": "story/2f5877591bfd.html"
   },
   {
-   "id": "27b11b637919",
-   "title": "WorkOS says attacker used ARTEX AI to breach internal sales app",
-   "summary": "Developer platform WorkOS suffered a data breach after a threat actor accessed business contact records and summaries of customer communications.",
+   "id": "15da1f8e31d6",
+   "title": "US Army member arrested in UK over allegations of spying for Russia",
+   "summary": "The unnamed soldier was arrested by British counterterrorism police “working closely” with U.S. authorities, including the FBI and the military, the Metropolitan Police…",
    "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "03 Nov 2026, 21:28 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/27b11b637919.html"
+   "category": "Industry & Research",
+   "date": "10 Nov 2026, 21:13 UTC",
+   "sources": "The Record",
+   "url": "story/15da1f8e31d6.html"
+  },
+  {
+   "id": "b686da68349e",
+   "title": "Grok Build coding agent leaks oodles of confidential info, some belonging to SpaceXSI",
+   "summary": "Grok Build, the vibe-coding agent from SpaceXSI, is leaking data—some of it proprietary business information and other sensitive secrets—from thousands of its users…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "10 Nov 2026, 21:12 UTC",
+   "sources": "Ars Technica Security",
+   "url": "story/b686da68349e.html"
   },
   {
    "id": "230bcad0faf3",
@@ -2559,16 +2659,6 @@
    "date": "03 Nov 2026, 22:18 UTC",
    "sources": "BleepingComputer",
    "url": "story/b0a8ea5b6986.html"
-  },
-  {
-   "id": "699d6dc9b64e",
-   "title": "Germany Busts 'Crime-as-a-Service' Investment Fraud Outfit",
-   "summary": "Authorities seized more than 100 servers and arrested seven as part of a crackdown on a fraud network spanning more than 50 countries.",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "03 Nov 2026, 21:57 UTC",
-   "sources": "Dark Reading",
-   "url": "story/699d6dc9b64e.html"
   }
  ]
 }
