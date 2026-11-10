@@ -961,9 +961,11 @@ ACTIVE_SITE: dict = {}  # filled from site.json in main()
 
 
 def _ga4_id() -> str:
-    """Optional Google Analytics 4 id from site.json. Empty means no analytics is loaded at all."""
-    raw = str((ACTIVE_SITE.get("analytics") or {}).get("ga4_id") or "").strip()
-    return raw if re.fullmatch(r"G-[A-Z0-9]{4,20}", raw) else ""
+    """Optional analytics id from site.json: a GA4 id (G-...) or a Google Tag Manager container id (GTM-...).
+    Empty means no analytics is loaded at all. Both load only after the visitor accepts."""
+    an = ACTIVE_SITE.get("analytics") or {}
+    raw = str(an.get("gtm_id") or an.get("ga4_id") or "").strip()
+    return raw if re.fullmatch(r"(G|GTM)-[A-Z0-9]{4,20}", raw) else ""
 
 
 def _consent_head() -> str:
@@ -973,8 +975,11 @@ def _consent_head() -> str:
     return ("<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}"
             "gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});"
             "window.sbLoadGA=function(){if(window.sbGALoaded)return;window.sbGALoaded=true;"
-            "var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=" + ga + "';"
-            "document.head.appendChild(s);gtag('js',new Date());gtag('config','" + ga + "');};"
+            + (("var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtm.js?id=" + ga + "';"
+                "dataLayer.push({'gtm.start':new Date().getTime(),event:'gtm.js'});document.head.appendChild(s);};")
+               if ga.startswith("GTM-") else
+               ("var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=" + ga + "';"
+                "document.head.appendChild(s);gtag('js',new Date());gtag('config','" + ga + "');};")) +
             "try{var c=JSON.parse(localStorage.getItem('sb-consent')||'null');"
             "if(c&&c.analytics){gtag('consent','update',{analytics_storage:'granted'});window.sbLoadGA();}}catch(e){}</script>")
 
