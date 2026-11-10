@@ -935,6 +935,24 @@
    "instructions_checked": true
   },
   {
+   "id": "0e6f77f0820c",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Anthropic's Claude Fable 5.2 Beats GPT-6 Cyber in Multi-Stage Cyberattack Benchmark",
+   "link": "https://thehackernews.com/2026/11/anthropics-claude-fable-52-beats-gpt-6.html",
+   "published": "2026-11-10T08:16:14+00:00",
+   "summary": "Anthropic on Monday released Claude Fable 5.2 and Claude Mythos 5.2 models, which it said exhibit improvements in coding, reasoning, and vision. During pre-release training, the large language models (LLMs) helped its engineers \"complete otherwise-infeasible software migrations, designed three working electronic…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgogipF_6VgFSzsnZ_UFUM5FfzGyk1MOv5SRi3PSivRHjxs6IsO0fmOdDjQsDJHiKcnxJ8T89NMMYiqo_NEEtv0EoQsafjOFuZ-Te6famJBJKegqDnf1b63Hdzkls7IO1JOtSNjb5Hatb4Ny8Zu46mggCXYKvHf3Ne9Qc4ZRfLBmLnZ7omPEHAjDfJRQEKu/s1600/fable.jpg",
+   "cves": [],
+   "first_seen": "2026-11-10T09:14:53.743680+00:00",
+   "instructions": [
+    "The assessment includes 1,829 advisories for open-source projects published in October 2026."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "96a1ace9f58c",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1307,6 +1325,27 @@
    "instructions_checked": true
   },
   {
+   "id": "e56a3763b149",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "France Blames Iran for Sabotage Attack on Refrigeration Controllers at About 700 Retail Sites",
+   "link": "https://thehackernews.com/2026/11/france-blames-iran-for-sabotage-attack.html",
+   "published": "2026-11-10T09:08:20+00:00",
+   "summary": "An October cyberattack on refrigeration controllers at about 700 French retail sites was carried out by a cyber unit of Iran's Islamic Revolutionary Guard Corps (IRGC), the French government said yesterday. The attackers broke into controllers on the night of October 11 and changed their defrost settings to high…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQkt0P-pw4g1CSZvboG35E5WMLU_vea9rR2DLZ4X0lK5NyipbooRyXkRXcRb7X-ddRbVCygF1OkhW6a3j_8sCsBA_GhHAtOF8dISlx4Q2H74fnLJTm5ZOoEBlsbES0hPZutw60wjcAcMZEZcmx4NCLAM-pqVJCfw9yLhoQV2U_QFRX5h1k0zKPzgioICw/s1600/iran-france.jpg",
+   "cves": [],
+   "first_seen": "2026-11-10T09:14:53.743680+00:00",
+   "instructions": [
+    "They started abnormal defrost cycles with no time limit and switched off the temperature probes' safety alerts, which should go off above a certain temperature.",
+    "Reconfigure the device before putting it back into service, then follow the maker's recommended practices.",
+    "Remove internet exposure from these units and from any unit reachable at a public IP address.",
+    "Remove internet exposure and check insurance terms, as above."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "9844bc61915e",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1388,25 +1427,6 @@
     "Both malicious releases have been taken down, and the project's maintainers released a clean Swarm Desktop update today.",
     "The code is also built to install a backdoor on Windows, macOS, and Linux machines.",
     "Intel Macs were never offered it, and Linux installs do not update automatically."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "07d9937fab38",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Hackers Exploit BTCPay Server Flaw to Steal Bitcoin and Litecoin From Hot Wallets",
-   "link": "https://thehackernews.com/2026/11/hackers-exploit-btcpay-server-flaw-to.html",
-   "published": "2026-11-03T08:31:48+00:00",
-   "summary": "BTCPay Server, a self-hosted, open-source cryptocurrency payment processor, has urged users to install the latest version of its software in response to reports of Bitcoin and Litecoin being stolen from hot wallets on instances running older versions. \"Our investigation found that these attacks targeted servers…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrr1rJlr2nztz8jEunAWtVXHyOHkJY2_KdeweNWBqwF18rmhPiFItEQ-yCex1vVsps856ArIDl7unaWJNiribZ9DgkmQ3o4pLa1BKQrjKEeFR63z4csXnBHah5wIp7H5xuUB7b1UIp06nk6BzLuxFW5aWh2g-PoLoZ74RjMOEUX7XdrDsHM1yFbjGHBzK8/s1600/btcpay.jpg",
-   "cves": [],
-   "first_seen": "2026-11-03T09:55:33.212980+00:00",
-   "instructions": [
-    "Users who are running versions 2.4.1 or earlier are recommended to move to a fresh server with a new wallet, even in scenarios where users have not noticed a theft.",
-    "BTCPay Server, a self-hosted, open-source cryptocurrency payment processor, has urged users to install the latest version of its software in response to reports of Bitcoin and Litecoin being stolen from hot wallets on instances running older versions."
    ],
    "instructions_checked": true
   },
@@ -3012,6 +3032,28 @@
     "Companies should use centralized secrets platforms to enable the rotation and management of sensitive keys and secrets.",
     "Users should not have extended privileges unless required by their role and tasks.",
     "\"Deny all permissions that are not explicitly required, including access to Cloud LLM services,\" Google recommends."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "7e1f9b33c691",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Google patches eighth Chrome zero-day exploited in attacks this year",
+   "link": "https://www.bleepingcomputer.com/news/security/google-patches-eighth-chrome-zero-day-exploited-in-attacks-this-year/",
+   "published": "2026-11-10T08:51:25+00:00",
+   "summary": "Google has released emergency security updates to patch a new Chrome vulnerability exploited in zero-day attacks, the eighth such flaw since the start of the year.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/10/Chrome.jpg",
+   "cves": [],
+   "first_seen": "2026-11-10T09:14:53.743680+00:00",
+   "image_checked": true,
+   "instructions": [
+    "\"Google is aware that an exploit for CVE-2026-125350 exists in the wild,\" the company said in a Monday security advisory .",
+    "Google has released emergency security updates to patch a new Chrome vulnerability exploited in zero-day attacks, the eighth such flaw since the start of the year.",
+    "Although Google says the security update could take days or weeks to reach all Chrome users, it was available immediately when BleepingComputer checked for updates today.",
+    "If you don't want to update the web browser manually, you can also let Chrome check for updates on its own, as it will automatically install them after the next launch."
    ],
    "instructions_checked": true
   },
@@ -5052,26 +5094,6 @@
     "A $90,000 bounty was paid for a report involving a malicious web page that, when Muse was asked to summarize it, mimicked status messages from the agent’s browsing tool. “It got the agent to execute some actions which should have been caught,” Singleton noted.",
     "A $1,000 bounty covered a Mac app flaw that let an attacker with access to the computer hijack the auto-update feature to execute code with the app’s permissions.",
     "Android’s November 2026 Updates Patch Over 200 Vulnerabilities",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "0658f100b664",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "NATO’s Crossed Swords Exercise Brings AI Agents Into Cyber Operations Training",
-   "link": "https://www.securityweek.com/natos-crossed-swords-exercise-brings-ai-agents-into-cyber-operations-training/",
-   "published": "2026-11-03T08:49:03+00:00",
-   "summary": "The NATO CCDCOE exercise in Estonia introduces AI agents and OpenAI Daybreak into joint cyber and kinetic operations training. The post NATO’s Crossed Swords Exercise Brings AI Agents Into Cyber Operations Training appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2023/01/Cybersecurity_News-SecurityWeek.jpg",
-   "cves": [],
-   "first_seen": "2026-11-03T08:56:52.327527+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Cyber effects must hit at the right moment to support a kinetic or special operations action – not in parallel, but in sequence, with timing measured in minutes, not hours.",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
