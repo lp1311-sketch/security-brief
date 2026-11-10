@@ -221,25 +221,6 @@
    "instructions_checked": true
   },
   {
-   "id": "2c56f9351f70",
-   "source": "borncity",
-   "source_name": "Born's IT and Windows Blog",
-   "official": false,
-   "source_type": "news",
-   "title": "Ubuntu-Patch für IPv4-TCP-Schwachstelle CVE-2026-98432 kommt",
-   "link": "https://borncity.com/blog/2026/11/04/ubuntu-patch-fuer-ipv4-tcp-schwachstelle-cve-2026-98432/",
-   "published": "2026-11-03T23:01:54+00:00",
-   "summary": "In Linux wurde kürzlich die Schwachstelle CVE-2026-98432 in der IPv4-TCP-Verarbeitung öffentlich bekannt. Nun haben die Entwickler von Canonical entsprechende Sicherheitsupdates für Ubuntu zur Absicherung gegen diese Schwachstelle angekündigt. Die Fixes befinden sich bereits im Test. Die IPv4-TCP-Schwachstelle…",
-   "image": "https://borncity.com/blog/wp-content/uploads/2015/11/Linux.jpg",
-   "cves": [
-    "CVE-2026-98432"
-   ],
-   "first_seen": "2026-11-03T23:08:37.927300+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "dda1288f7519",
    "source": "borncity",
    "source_name": "Born's IT and Windows Blog",
@@ -376,6 +357,50 @@
    "first_seen": "2026-11-09T23:07:53.347644+00:00",
    "image_checked": true,
    "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "b8fa5d77ef9f",
+   "source": "borncity",
+   "source_name": "Born's IT and Windows Blog",
+   "official": false,
+   "source_type": "news",
+   "title": "Patchday: Windows 10/11 Updates (10. November 2026)",
+   "link": "https://borncity.com/blog/2026/11/11/patchday-windows-10-11-updates-10-november-2026/",
+   "published": "2026-11-10T23:01:35+00:00",
+   "summary": "Am 10. November 2026 (zweiter Dienstag im Monat, Patchday bei Microsoft) hat Microsoft kumulative Updates für die noch unterstützten Client-Betriebssystem-Versionen von Windows 10 (mit ESU-Lizenz) und Windows 11 veröffentlicht. Hier einige Details zu diesen Updates, die Schwachstellen sowie Probleme beheben ……",
+   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Windows-klein.jpg",
+   "cves": [],
+   "first_seen": "2026-11-10T23:20:59.545357+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Das kumulative Update KB513206 für Windows 11 24H2-26H2 beinhaltet Qualitätsverbesserungen aus dem Preview-Update Windows 11 25H2 – 26H2: Preview Update KB5127936 (28.",
+    "Das kumulative Update KB5131087 für Windows 11 23H2 Enterprise und Education beinhaltet Qualitätsverbesserungen sowie Sicherheitspatches.",
+    "Das kumulative Update KB5131096 enthält diverse Sicherheitsfixes und ist für Windows 10 21H2 Enterprise LTSC sowie ESU-Maschinen mit 22H2 verfügbar.",
+    "Das kumulative Update KB5131085 (wird unter Windows 10 v1809 einsortiert, bezieht sich aber auf Windows 10 2019 Enterprise LTSC und IoT Enterprise LTSC) und beinhaltet Sicherheitsfixes sowie folgende Korrekturen."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "3a27872e1b8c",
+   "source": "borncity",
+   "source_name": "Born's IT and Windows Blog",
+   "official": false,
+   "source_type": "news",
+   "title": "Patchday: Windows Server-Updates (10. November 2026)",
+   "link": "https://borncity.com/blog/2026/11/11/patchday-windows-server-updates-10-november-2026/",
+   "published": "2026-11-10T23:03:13+00:00",
+   "summary": "Zum 10. November 2026 (zweiter Dienstag im Monat, Patchday bei Microsoft) wurden verschiedene kumulative Updates für die unterstützten Versionen von Windows Server freigegeben. Nachfolgend habe ich die bereitgestellten Updates samt einigen Details für diese Windows Server-Versionen herausgezogen. Die nachfolgend…",
+   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Windows-klein.jpg",
+   "cves": [],
+   "first_seen": "2026-11-10T23:20:59.545357+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Für Windows Server 2025 wurde das kumulative Update KB5131080 freigegeben, welches Sicherheitspatches und diverse Fixes beinhaltet.",
+    "Für Windows Server 2022 wurde das kumulative Update KB5131090 freigegeben, welches Sicherheitspatches und diverse Bug-Fixes beinhaltet.",
+    "Das kumulative Update KB5131085 steht nicht nur für Windows 10 2019 Enterprise LTSC etc. bereit, sondern auch für Windows Server 2019.",
+    "Das kumulative Update KB5131291 steht nicht nur für Windows 10 2016 Enterprise LTSC, sondern auch für Windows Server 2016, bereit."
+   ],
    "instructions_checked": true
   },
   {
@@ -1306,7 +1331,10 @@
    "cves": [
     "CVE-2026-50423"
    ],
-   "first_seen": "2026-11-10T22:45:40.406649+00:00"
+   "first_seen": "2026-11-10T22:45:40.406649+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "6c2dd8b1bb89",
@@ -1322,7 +1350,10 @@
    "cves": [
     "CVE-2026-55043"
    ],
-   "first_seen": "2026-11-10T22:45:40.406649+00:00"
+   "first_seen": "2026-11-10T22:45:40.406649+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "a72a327e5410",
@@ -1338,7 +1369,10 @@
    "cves": [
     "CVE-2026-55123"
    ],
-   "first_seen": "2026-11-10T22:45:40.406649+00:00"
+   "first_seen": "2026-11-10T22:45:40.406649+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "236aa0388888",
@@ -1565,7 +1599,8 @@
    ],
    "first_seen": "2026-11-10T22:04:27.113869+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "a7b3d1646f01",
@@ -1583,7 +1618,8 @@
    ],
    "first_seen": "2026-11-10T22:04:27.113869+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "9ee79e1fe940",
@@ -1601,7 +1637,8 @@
    ],
    "first_seen": "2026-11-10T22:04:27.113869+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "d482469a796c",
@@ -1619,7 +1656,8 @@
    ],
    "first_seen": "2026-11-10T22:04:27.113869+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "715ec65d4e32",
@@ -1637,7 +1675,8 @@
    ],
    "first_seen": "2026-11-10T22:04:27.113869+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "6a366b064094",
@@ -1655,7 +1694,8 @@
    ],
    "first_seen": "2026-11-10T22:04:27.113869+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "05df760559dc",
@@ -1673,7 +1713,8 @@
    ],
    "first_seen": "2026-11-10T22:04:27.113869+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "90015026e728",
@@ -1689,7 +1730,9 @@
    "cves": [
     "CVE-2026-69548"
    ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+   "first_seen": "2026-11-10T22:04:27.113869+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "0212e0e16bfb",
@@ -1705,7 +1748,9 @@
    "cves": [
     "CVE-2026-69767"
    ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+   "first_seen": "2026-11-10T22:04:27.113869+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "d2f9b477c20b",
@@ -1854,7 +1899,9 @@
    "cves": [
     "CVE-2026-70583"
    ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+   "first_seen": "2026-11-10T22:04:27.113869+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "77a374692109",
@@ -1870,7 +1917,9 @@
    "cves": [
     "CVE-2026-71339"
    ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+   "first_seen": "2026-11-10T22:04:27.113869+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "7c11bebd212c",
@@ -1886,7 +1935,9 @@
    "cves": [
     "CVE-2026-72974"
    ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+   "first_seen": "2026-11-10T22:04:27.113869+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "a3287abb00d1",
@@ -1902,7 +1953,9 @@
    "cves": [
     "CVE-2026-73016"
    ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+   "first_seen": "2026-11-10T22:04:27.113869+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "7c7d0982a3a9",
@@ -2070,7 +2123,9 @@
    "cves": [
     "CVE-2026-77911"
    ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+   "first_seen": "2026-11-10T22:04:27.113869+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "6ca084450e35",
@@ -2086,7 +2141,9 @@
    "cves": [
     "CVE-2026-81394"
    ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+   "first_seen": "2026-11-10T22:04:27.113869+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "30d6f4cdafee",
@@ -2102,7 +2159,9 @@
    "cves": [
     "CVE-2026-81398"
    ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+   "first_seen": "2026-11-10T22:04:27.113869+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "5b0bf5c53585",
@@ -2118,7 +2177,9 @@
    "cves": [
     "CVE-2026-81954"
    ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+   "first_seen": "2026-11-10T22:04:27.113869+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "dc6c73fb4d18",
@@ -2134,7 +2195,9 @@
    "cves": [
     "CVE-2026-81957"
    ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+   "first_seen": "2026-11-10T22:04:27.113869+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "9d0000ef041e",
@@ -2415,7 +2478,9 @@
    "cves": [
     "CVE-2026-83952"
    ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+   "first_seen": "2026-11-10T22:04:27.113869+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "4f0ae400eaf2",
@@ -2487,7 +2552,9 @@
    "cves": [
     "CVE-2026-85360"
    ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00"
+   "first_seen": "2026-11-10T22:04:27.113869+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "92c4d25f1f91",
@@ -5642,7 +5709,12 @@
     "CVE-2026-123158",
     "CVE-2026-123218"
    ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00"
+   "first_seen": "2026-11-10T21:10:58.117182+00:00",
+   "instructions": [
+    "Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
+    "BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "193a689f6d04",
@@ -5663,7 +5735,12 @@
     "CVE-2026-125350",
     "CVE-2026-20320"
    ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00"
+   "first_seen": "2026-11-10T21:10:58.117182+00:00",
+   "instructions": [
+    "Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
+    "BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "780955fd1e41",
