@@ -1,6 +1,16 @@
 {
  "stories": [
   {
+   "id": "7e1f9b33c691",
+   "title": "Google patches eighth Chrome zero-day exploited in attacks this year",
+   "summary": "Google has released emergency security updates to patch a new Chrome vulnerability exploited in zero-day attacks, the eighth such flaw since the start of the year.",
+   "priority": "Critical",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 08:51 UTC",
+   "sources": "BleepingComputer, The Hacker News, SecurityWeek",
+   "url": "story/7e1f9b33c691.html"
+  },
+  {
    "id": "3d5dfb277e1d",
    "title": "CISA Flags SonicWall SonicOS MFA Bypass Flaw Amid Reports of Possible Exploitation",
    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a high-severity vulnerability impacting SonicWall SonicOS to its Known Exploited…",
@@ -31,6 +41,26 @@
    "url": "story/d7669d6db99e.html"
   },
   {
+   "id": "008f66d06450",
+   "title": "Exploited Outlook Zero-Day Among 1,094 Flaws Patched by Microsoft",
+   "summary": "CVE-2026-124194 is the Outlook zero-day for which Microsoft says it’s aware of active exploitation. The post Exploited Outlook Zero-Day Among 1,094 Flaws Patched by…",
+   "priority": "Critical",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 19:19 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/008f66d06450.html"
+  },
+  {
+   "id": "50eb1dccf495",
+   "title": "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day",
+   "summary": "Today is Microsoft's November 2026 Patch Tuesday, with security updates addressing a record-breaking 1,235 flaws, including one actively exploited Microsoft Outlook…",
+   "priority": "High",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 19:07 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/50eb1dccf495.html"
+  },
+  {
    "id": "82b5e1a648c0",
    "title": "Critical Xen Orchestra auth bypass flaw exploited to hijack VM servers",
    "summary": "A critical authentication bypass vulnerability in Xen Orchestra is being actively exploited in attacks that could grant administrator privileges and allow takeover of…",
@@ -39,16 +69,6 @@
    "date": "10 Nov 2026, 16:17 UTC",
    "sources": "BleepingComputer",
    "url": "story/82b5e1a648c0.html"
-  },
-  {
-   "id": "7e1f9b33c691",
-   "title": "Google patches eighth Chrome zero-day exploited in attacks this year",
-   "summary": "Google has released emergency security updates to patch a new Chrome vulnerability exploited in zero-day attacks, the eighth such flaw since the start of the year.",
-   "priority": "High",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 08:51 UTC",
-   "sources": "BleepingComputer, The Hacker News, SecurityWeek",
-   "url": "story/7e1f9b33c691.html"
   },
   {
    "id": "0eb55bf1598e",
@@ -131,6 +151,16 @@
    "url": "story/4a9230aea75f.html"
   },
   {
+   "id": "1df64432304f",
+   "title": "CVE-2026-100204 HEIF Image Extensions Remote Code Execution Vulnerability",
+   "summary": "Use after free in HEIF Image Extensions allows an unauthorized attacker to execute code locally.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/1df64432304f.html"
+  },
+  {
    "id": "ff3e2a189d50",
    "title": "CVE-2026-102868 Windows Shell Information Disclosure Vulnerability",
    "summary": "Exposure of sensitive system information to an unauthorized control sphere in Windows Shell allows an authorized attacker to disclose information locally.",
@@ -139,6 +169,16 @@
    "date": "10 Nov 2026, 16:00 UTC",
    "sources": "Microsoft Security Response Center",
    "url": "story/ff3e2a189d50.html"
+  },
+  {
+   "id": "c5a7aee1fe72",
+   "title": "CVE-2026-105544 .NET Elevation of Privilege Vulnerability",
+   "summary": "Improper access control in.NET allows an authorized attacker to elevate privileges locally.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/c5a7aee1fe72.html"
   },
   {
    "id": "6a2e9d577a80",
@@ -171,16 +211,6 @@
    "url": "story/7e25e120e172.html"
   },
   {
-   "id": "1df64432304f",
-   "title": "CVE-2026-100204 HEIF Image Extensions Remote Code Execution Vulnerability",
-   "summary": "Use after free in HEIF Image Extensions allows an unauthorized attacker to execute code locally.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/1df64432304f.html"
-  },
-  {
    "id": "9ba2c99a6c7d",
    "title": "CVE-2026-108411 Microsoft ODBC Driver Remote Code Execution Vulnerability",
    "summary": "Heap-based buffer overflow in Windows ODBC Driver allows an unauthorized attacker to execute code over a network.",
@@ -211,14 +241,14 @@
    "url": "story/1328adc53dd3.html"
   },
   {
-   "id": "7523997ea4d0",
-   "title": "CVE-2026-84005 AMD Zen Information Disclosure Vulnerability",
+   "id": "4f0ae400eaf2",
+   "title": "CVE-2026-84004 AMD Zen Information Disclosure Vulnerability",
    "summary": "Processor optimization removal or modification of security-critical code in AMD Zen allows an authorized attacker to disclose information locally.",
    "priority": "Standard",
    "category": "Patch Radar",
    "date": "10 Nov 2026, 16:00 UTC",
    "sources": "Microsoft Security Response Center",
-   "url": "story/7523997ea4d0.html"
+   "url": "story/4f0ae400eaf2.html"
   },
   {
    "id": "7646e96e2e7b",
@@ -309,6 +339,26 @@
    "date": "06 Nov 2026, 14:40 UTC",
    "sources": "SecurityWeek",
    "url": "story/3819f6707361.html"
+  },
+  {
+   "id": "a382c3d13c65",
+   "title": "Experts Demonstrate Barracuda Email Security Gateway Chain Enabling Root Access Without Login",
+   "summary": "Two flaws in Barracuda's Email Security Gateway, an email-filtering appliance, can be chained to run commands on it as root, its highest level of access, with no login…",
+   "priority": "Critical",
+   "category": "Patch Radar",
+   "date": "06 Nov 2026, 05:39 UTC",
+   "sources": "The Hacker News",
+   "url": "story/a382c3d13c65.html"
+  },
+  {
+   "id": "33bc3cf0f92e",
+   "title": "Windows 11 KB5132061 & KB5131087 cumulative updates released",
+   "summary": "Microsoft has released the Patch Tuesday Windows 11 and cumulative updates for versions 26H2/25H2/24H2 and 23H2 to fix security vulnerabilities and bugs, and add new…",
+   "priority": "Standard",
+   "category": "Microsoft",
+   "date": "10 Nov 2026, 18:33 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/33bc3cf0f92e.html"
   },
   {
    "id": "74f31cae8a39",
@@ -511,6 +561,16 @@
    "url": "story/62ad9c2a6bdd.html"
   },
   {
+   "id": "80496ac2144f",
+   "title": "AI Coding Agents Leak Thousands of Secrets to GitHub",
+   "summary": "A command in Claude Code inadvertently saves files with credentials and other sensitive data to public Git repositories, creating security gaps for organizations.",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "10 Nov 2026, 18:46 UTC",
+   "sources": "Dark Reading",
+   "url": "story/80496ac2144f.html"
+  },
+  {
    "id": "cc845d87e813",
    "title": "Software Transparency Is Changing: Allan Friedman on SBOM, AI BOMs and What Comes Next",
    "summary": "SBOM pioneer Allan Friedman joined the SecurityWeek Podcast to discuss why knowing what is inside software is only the beginning, how AI is complicating software supply…",
@@ -529,16 +589,6 @@
    "date": "10 Nov 2026, 16:42 UTC",
    "sources": "SecurityWeek",
    "url": "story/38532208b5af.html"
-  },
-  {
-   "id": "c5a7aee1fe72",
-   "title": "CVE-2026-105544 .NET Elevation of Privilege Vulnerability",
-   "summary": "Improper access control in.NET allows an authorized attacker to elevate privileges locally.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/c5a7aee1fe72.html"
   },
   {
    "id": "89d6f6254d42",
@@ -931,36 +981,6 @@
    "url": "story/6a07c7d8da11.html"
   },
   {
-   "id": "4ca261bf7f30",
-   "title": "France blames Iran for fridge cyberattacks, says some caused fires",
-   "summary": "In the first attribution since the October attacks, the French authorities identified the perpetrators as part of Shahid Kaveh, an IRGC cyber unit previously linked to…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "09 Nov 2026, 18:45 UTC",
-   "sources": "The Record",
-   "url": "story/4ca261bf7f30.html"
-  },
-  {
-   "id": "e89c57c6d564",
-   "title": "France blames Iranian hackers for supermarket attacks that sparked fires",
-   "summary": "France has linked October cyberattacks that disrupted refrigeration systems at more than 700 supermarkets and other retail locations to Iranian state-backed hackers…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "09 Nov 2026, 18:32 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/e89c57c6d564.html"
-  },
-  {
-   "id": "2fdab4abb5f3",
-   "title": "Vanderbilt cybersecurity incident impacting campus devices and systems",
-   "summary": "Vanderbilt University announced a cyberattack, warning students and employees that campus devices and systems may be impacted by the incident.",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "09 Nov 2026, 18:30 UTC",
-   "sources": "The Record",
-   "url": "story/2fdab4abb5f3.html"
-  },
-  {
    "id": "adccb074fbff",
    "title": "Attackers Crash Claude's 'Office Party' Flaw to Run Malicious Code on Linux",
    "summary": "Attackers can exploit a flaw in Claude's document-processing tool by creating a temporary file that Anthropic's AI assistant can access and run on a user's machine.",
@@ -1321,14 +1341,34 @@
    "url": "story/317e8557e095.html"
   },
   {
-   "id": "77eef035ebfc",
-   "title": "Google: LLMjacking attacks rack up $1 million in cloud AI charges",
-   "summary": "Large language model hijacking attacks, also known as LLMjacking, are generating large fraudulent cloud charges, with some organizations losing more than $100,000 per…",
+   "id": "4ca261bf7f30",
+   "title": "France blames Iran for fridge cyberattacks, says some caused fires",
+   "summary": "In the first attribution since the October attacks, the French authorities identified the perpetrators as part of Shahid Kaveh, an IRGC cyber unit previously linked to…",
    "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "03 Nov 2026, 18:51 UTC",
+   "category": "Attacks & Breaches",
+   "date": "09 Nov 2026, 18:45 UTC",
+   "sources": "The Record",
+   "url": "story/4ca261bf7f30.html"
+  },
+  {
+   "id": "e89c57c6d564",
+   "title": "France blames Iranian hackers for supermarket attacks that sparked fires",
+   "summary": "France has linked October cyberattacks that disrupted refrigeration systems at more than 700 supermarkets and other retail locations to Iranian state-backed hackers…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "09 Nov 2026, 18:32 UTC",
    "sources": "BleepingComputer",
-   "url": "story/77eef035ebfc.html"
+   "url": "story/e89c57c6d564.html"
+  },
+  {
+   "id": "2fdab4abb5f3",
+   "title": "Vanderbilt cybersecurity incident impacting campus devices and systems",
+   "summary": "Vanderbilt University announced a cyberattack, warning students and employees that campus devices and systems may be impacted by the incident.",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "09 Nov 2026, 18:30 UTC",
+   "sources": "The Record",
+   "url": "story/2fdab4abb5f3.html"
   },
   {
    "id": "32fa2d4c90f6",
@@ -1921,16 +1961,6 @@
    "url": "story/ed60ea7fa412.html"
   },
   {
-   "id": "a382c3d13c65",
-   "title": "Experts Demonstrate Barracuda Email Security Gateway Chain Enabling Root Access Without Login",
-   "summary": "Two flaws in Barracuda's Email Security Gateway, an email-filtering appliance, can be chained to run commands on it as root, its highest level of access, with no login…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "06 Nov 2026, 05:39 UTC",
-   "sources": "The Hacker News",
-   "url": "story/a382c3d13c65.html"
-  },
-  {
    "id": "97d7db0e7e4a",
    "title": "FBI, CISA warn of cyberattacks targeting refrigeration systems",
    "summary": "The FBI and CISA warn that hackers are actively targeting industrial refrigeration and cold-chain monitoring systems worldwide, potentially causing food spoilage…",
@@ -2369,26 +2399,6 @@
    "date": "03 Nov 2026, 19:48 UTC",
    "sources": "The Record",
    "url": "story/2698ecd844a4.html"
-  },
-  {
-   "id": "9ca07b46843b",
-   "title": "mSecure Warns Users to Change Passwords, Reset 2FA and Passkeys After Suspicious Activity",
-   "summary": "Customers of the mSecure password manager are being urged to act now to protect the confidential information they store in it, possibly by changing passwords, resetting…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "03 Nov 2026, 18:46 UTC",
-   "sources": "The Hacker News",
-   "url": "story/9ca07b46843b.html"
-  },
-  {
-   "id": "96de8a8fe0e6",
-   "title": "Several German lawmakers and foreign policy staff received Apple warnings on spyware",
-   "summary": "Members of Germany's political elite were among the spyware targets in 99 countries that Apple personally warned recently.",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "03 Nov 2026, 18:44 UTC",
-   "sources": "The Record",
-   "url": "story/96de8a8fe0e6.html"
   }
  ]
 }
