@@ -1,24 +1,14 @@
 {
  "stories": [
   {
-   "id": "7e1f9b33c691",
-   "title": "Google patches eighth Chrome zero-day exploited in attacks this year",
-   "summary": "Google has released emergency security updates to patch a new Chrome vulnerability exploited in zero-day attacks, the eighth such flaw since the start of the year.",
+   "id": "008f66d06450",
+   "title": "Exploited Outlook Zero-Day Among 1,094 Flaws Patched by Microsoft",
+   "summary": "CVE-2026-124194 is the Outlook zero-day for which Microsoft says it’s aware of active exploitation. The post Exploited Outlook Zero-Day Among 1,094 Flaws Patched by…",
    "priority": "Critical",
    "category": "Patch Radar",
-   "date": "10 Nov 2026, 08:51 UTC",
-   "sources": "BleepingComputer, The Hacker News, SecurityWeek",
-   "url": "story/7e1f9b33c691.html"
-  },
-  {
-   "id": "3d5dfb277e1d",
-   "title": "CISA Flags SonicWall SonicOS MFA Bypass Flaw Amid Reports of Possible Exploitation",
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a high-severity vulnerability impacting SonicWall SonicOS to its Known Exploited…",
-   "priority": "Critical",
-   "category": "Patch Radar",
-   "date": "09 Nov 2026, 06:05 UTC",
-   "sources": "The Hacker News, SecurityWeek, BleepingComputer",
-   "url": "story/3d5dfb277e1d.html"
+   "date": "10 Nov 2026, 19:19 UTC",
+   "sources": "SecurityWeek, CISA Cybersecurity Advisories, The Hacker News",
+   "url": "story/008f66d06450.html"
   },
   {
    "id": "e61330c97785",
@@ -27,28 +17,18 @@
    "priority": "Critical",
    "category": "Patch Radar",
    "date": "10 Nov 2026, 09:42 UTC",
-   "sources": "SecurityWeek, The Hacker News",
+   "sources": "SecurityWeek, The Hacker News, CISA Cybersecurity Advisories, Born's IT and Windows Blog",
    "url": "story/e61330c97785.html"
   },
   {
-   "id": "d7669d6db99e",
-   "title": "Hackers exploit SSHole OpenSSH flaw to breach Linux systems",
-   "summary": "Hackers are actively exploiting the \"SSHole\" vulnerability (CVE-2026-123158) in OpenSSH to execute commands, steal credentials, and establish persistent access.",
+   "id": "3d5dfb277e1d",
+   "title": "CISA Flags SonicWall SonicOS MFA Bypass Flaw Amid Reports of Possible Exploitation",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a high-severity vulnerability impacting SonicWall SonicOS to its Known Exploited…",
    "priority": "Critical",
    "category": "Patch Radar",
-   "date": "09 Nov 2026, 16:04 UTC",
-   "sources": "BleepingComputer, The Hacker News, Born's IT and Windows Blog",
-   "url": "story/d7669d6db99e.html"
-  },
-  {
-   "id": "008f66d06450",
-   "title": "Exploited Outlook Zero-Day Among 1,094 Flaws Patched by Microsoft",
-   "summary": "CVE-2026-124194 is the Outlook zero-day for which Microsoft says it’s aware of active exploitation. The post Exploited Outlook Zero-Day Among 1,094 Flaws Patched by…",
-   "priority": "Critical",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 19:19 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/008f66d06450.html"
+   "date": "09 Nov 2026, 06:05 UTC",
+   "sources": "The Hacker News, SecurityWeek, BleepingComputer, CISA Cybersecurity Advisories",
+   "url": "story/3d5dfb277e1d.html"
   },
   {
    "id": "50eb1dccf495",
@@ -79,6 +59,16 @@
    "date": "10 Nov 2026, 16:17 UTC",
    "sources": "BleepingComputer",
    "url": "story/82b5e1a648c0.html"
+  },
+  {
+   "id": "d7669d6db99e",
+   "title": "Hackers exploit SSHole OpenSSH flaw to breach Linux systems",
+   "summary": "Hackers are actively exploiting the \"SSHole\" vulnerability (CVE-2026-123158) in OpenSSH to execute commands, steal credentials, and establish persistent access.",
+   "priority": "Critical",
+   "category": "Patch Radar",
+   "date": "09 Nov 2026, 16:04 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/d7669d6db99e.html"
   },
   {
    "id": "0eb55bf1598e",
@@ -129,6 +119,16 @@
    "date": "10 Nov 2026, 09:56 UTC",
    "sources": "SecurityWeek, The Hacker News",
    "url": "story/1f6bc1af5305.html"
+  },
+  {
+   "id": "7e1f9b33c691",
+   "title": "Google patches eighth Chrome zero-day exploited in attacks this year",
+   "summary": "Google has released emergency security updates to patch a new Chrome vulnerability exploited in zero-day attacks, the eighth such flaw since the start of the year.",
+   "priority": "High",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 08:51 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/7e1f9b33c691.html"
   },
   {
    "id": "7d2482c88528",
@@ -281,6 +281,76 @@
    "url": "story/4f0ae400eaf2.html"
   },
   {
+   "id": "21d5aea40d42",
+   "title": "CVE-2026-83681 Microsoft PowerToys Tampering Vulnerability",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/21d5aea40d42.html"
+  },
+  {
+   "id": "6f1e4fb8b204",
+   "title": "CVE-2026-83828 Windows MIDI Service Module Elevation of Privileges Vulnerability",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/6f1e4fb8b204.html"
+  },
+  {
+   "id": "32d9054c55c6",
+   "title": "CVE-2026-83926 Windows Hello Security Feature Bypass Vulnerability",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/32d9054c55c6.html"
+  },
+  {
+   "id": "47d706c7db5c",
+   "title": "CVE-2026-84018 Windows Print Spooler Components Elevation of Privilege Vulnerability",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/47d706c7db5c.html"
+  },
+  {
+   "id": "92c4d25f1f91",
+   "title": "CVE-2026-85927 Windows Universal Plug and Play (UPnP) Device Host Elevation of Privilege Vulnerability",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/92c4d25f1f91.html"
+  },
+  {
+   "id": "251acc6e20ce",
+   "title": "CVE-2026-88151 Microsoft Office Excel Information Disclosure Vulnerability",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/251acc6e20ce.html"
+  },
+  {
+   "id": "173f37e989f0",
+   "title": "CVE-2026-96311 Windows Network List Service Tampering Vulnerability",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/173f37e989f0.html"
+  },
+  {
    "id": "7646e96e2e7b",
    "title": "Fireworks AI Confirms Wider Breach Affecting Customer Datasets, Model Weights and Notion AI Chats",
    "summary": "Fireworks AI disclosed on Monday that its investigation into a security incident first reported early last month uncovered further malicious activity, affecting account…",
@@ -331,16 +401,6 @@
    "url": "story/8d206c962ee8.html"
   },
   {
-   "id": "5bce94b89cfb",
-   "title": "FORGE Lab uses agentic tools to identify memory safety issues in Rust",
-   "summary": "Microsoft’s FORGE Lab found several memory safety issues in Rust’s standard library (std and core), including cases where code written entirely in safe Rust can trigger…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "09 Nov 2026, 20:17 UTC",
-   "sources": "Microsoft Security Blog",
-   "url": "story/5bce94b89cfb.html"
-  },
-  {
    "id": "094609239735",
    "title": "Binance denies data breach after alleged ShinyHunters claims",
    "summary": "Binance, the world's largest crypto exchange, has denied claims of a new security breach made by a threat actor using the 'ShinyHunters' handle on a newly emerged…",
@@ -371,14 +431,14 @@
    "url": "story/3819f6707361.html"
   },
   {
-   "id": "a382c3d13c65",
-   "title": "Experts Demonstrate Barracuda Email Security Gateway Chain Enabling Root Access Without Login",
-   "summary": "Two flaws in Barracuda's Email Security Gateway, an email-filtering appliance, can be chained to run commands on it as root, its highest level of access, with no login…",
-   "priority": "Critical",
+   "id": "612ae5f08dba",
+   "title": "Microsoft’s Patch Tuesday surpasses 1,000 bugs for second month in a row",
+   "summary": "An exploited Outlook vulnerability drew most of the attention in Microsoft's latest Patch Tuesday, which listed 1,093 bugs total.",
+   "priority": "Standard",
    "category": "Patch Radar",
-   "date": "06 Nov 2026, 05:39 UTC",
-   "sources": "The Hacker News",
-   "url": "story/a382c3d13c65.html"
+   "date": "10 Nov 2026, 20:55 UTC",
+   "sources": "The Record",
+   "url": "story/612ae5f08dba.html"
   },
   {
    "id": "9814f0299437",
@@ -501,24 +561,14 @@
    "url": "story/eae4ff98ab3e.html"
   },
   {
-   "id": "cd41a3a65bdc",
-   "title": "Data breach at hearing aid giant Amplifon impacts thousands",
-   "summary": "The U.S arm of international hearing aid company Amplifon has been notifying customers about a data breach early this year that included medical information.",
+   "id": "5bce94b89cfb",
+   "title": "FORGE Lab uses agentic tools to identify memory safety issues in Rust",
+   "summary": "Microsoft’s FORGE Lab found several memory safety issues in Rust’s standard library (std and core), including cases where code written entirely in safe Rust can trigger…",
    "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "09 Nov 2026, 20:44 UTC",
-   "sources": "The Record",
-   "url": "story/cd41a3a65bdc.html"
-  },
-  {
-   "id": "527a69512361",
-   "title": "Black Hat India 2026 Makes a Landmark Debut in Bengaluru, Bringing the Global Cybersecurity Community to India",
-   "summary": "Inaugural edition by Informa Markets in India brings together leading researchers, security practitioners and industry decision makers for four days of cutting-edge…",
-   "priority": "Standard",
-   "category": "Microsoft",
-   "date": "09 Nov 2026, 20:19 UTC",
-   "sources": "Dark Reading",
-   "url": "story/527a69512361.html"
+   "category": "Patch Radar",
+   "date": "09 Nov 2026, 20:17 UTC",
+   "sources": "Microsoft Security Blog",
+   "url": "story/5bce94b89cfb.html"
   },
   {
    "id": "bd73ebc7b854",
@@ -601,6 +651,26 @@
    "url": "story/62ad9c2a6bdd.html"
   },
   {
+   "id": "8ec6ef10a10a",
+   "title": "Checkmarx Appoints Kobi Sivilya as Chief Information Security Officer",
+   "summary": "Sivilya brings deep cybersecurity and technology leadership to Checkmarx as AI transforms software development.",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "10 Nov 2026, 20:35 UTC",
+   "sources": "Dark Reading",
+   "url": "story/8ec6ef10a10a.html"
+  },
+  {
+   "id": "d6fe2bb7d331",
+   "title": "How to Assess OT Incident Response Preparedness",
+   "summary": "Cloud Range's free 28-question OT Cyber Readiness Assessment helps organizations identify gaps in operational technology (OT) incident response.",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "10 Nov 2026, 20:18 UTC",
+   "sources": "Dark Reading",
+   "url": "story/d6fe2bb7d331.html"
+  },
+  {
    "id": "80496ac2144f",
    "title": "AI Coding Agents Leak Thousands of Secrets to GitHub",
    "summary": "A command in Claude Code inadvertently saves files with credentials and other sensitive data to public Git repositories, creating security gaps for organizations.",
@@ -629,6 +699,16 @@
    "date": "10 Nov 2026, 16:42 UTC",
    "sources": "SecurityWeek",
    "url": "story/38532208b5af.html"
+  },
+  {
+   "id": "91dd8667fa3b",
+   "title": "CVE-2026-83846 Connected Devices Platform Service (Cdpsvc) Elevation of Privilege Vulnerability",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/91dd8667fa3b.html"
   },
   {
    "id": "89d6f6254d42",
@@ -679,6 +759,26 @@
    "date": "09 Nov 2026, 23:06 UTC",
    "sources": "Dark Reading",
    "url": "story/ccc69e15df6f.html"
+  },
+  {
+   "id": "cd41a3a65bdc",
+   "title": "Data breach at hearing aid giant Amplifon impacts thousands",
+   "summary": "The U.S arm of international hearing aid company Amplifon has been notifying customers about a data breach early this year that included medical information.",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "09 Nov 2026, 20:44 UTC",
+   "sources": "The Record",
+   "url": "story/cd41a3a65bdc.html"
+  },
+  {
+   "id": "527a69512361",
+   "title": "Black Hat India 2026 Makes a Landmark Debut in Bengaluru, Bringing the Global Cybersecurity Community to India",
+   "summary": "Inaugural edition by Informa Markets in India brings together leading researchers, security practitioners and industry decision makers for four days of cutting-edge…",
+   "priority": "Standard",
+   "category": "Microsoft",
+   "date": "09 Nov 2026, 20:19 UTC",
+   "sources": "Dark Reading",
+   "url": "story/527a69512361.html"
   },
   {
    "id": "8abde1ce00be",
@@ -879,6 +979,26 @@
    "date": "03 Nov 2026, 21:28 UTC",
    "sources": "BleepingComputer",
    "url": "story/27b11b637919.html"
+  },
+  {
+   "id": "230bcad0faf3",
+   "title": "Japanese furniture giant Nitori says hackers stole 37.6M customer records",
+   "summary": "Nitori, a major Japanese furniture and home accessories retailer, discovered that an attacker accessed a system on its network and may have stolen 37.62 million customer…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "10 Nov 2026, 20:54 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/230bcad0faf3.html"
+  },
+  {
+   "id": "7b115936c314",
+   "title": "Finally, Payment by Bank Transfer Comes to Have I Been Pwned",
+   "summary": "This is simultaneously the most boring yet exciting blog title I've written in a long time. How you pay for services isn't exactly a sexy topic, but it solves a problem…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "10 Nov 2026, 20:26 UTC",
+   "sources": "Troy Hunt",
+   "url": "story/7b115936c314.html"
   },
   {
    "id": "b86930e18372",
