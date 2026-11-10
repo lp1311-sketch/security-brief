@@ -1829,6 +1829,27 @@
    "instructions_checked": true
   },
   {
+   "id": "ce0b470d4dea",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "SAP Patches Four CVSS 10.0 Flaws, Including Two Enabling Remote Code Execution",
+   "link": "https://thehackernews.com/2026/11/sap-patches-four-cvss-100-flaws.html",
+   "published": "2026-11-10T10:02:40+00:00",
+   "summary": "Four flaws that attackers could exploit without logging in were fixed today as part of SAP's monthly Security Patch Day—the vendor rates all four 10.0, the maximum CVSS score. Three are in the SAP NetWeaver application server, the software SAP systems run on, and one is in the Web Dispatcher, which receives web…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgo4snqwJ4uD_sRDyI8zs23mcfFTWfZoSrn9n1hbUrsHbyWy-1VFL8amxqQnLb7LSTPkuSwnsPofUJT6anObg-nU4Q5e01WBb3IixN_PdL-1MJ2nOip4qSTEoVDmePRlOgjSVjvtbH8vFlQgxtGuKuqmuHWLyzIavw2Sj4VtZBlTYhUqeySbQcDMEr4Wns/s1600/sap-flaws.jpg",
+   "cves": [],
+   "first_seen": "2026-11-10T10:17:29.418077+00:00",
+   "instructions": [
+    "The notes are in SAP for Me, which requires a sign-in, and the vendor strongly recommends applying them as a priority.",
+    "In its Patch Day analysis , RedRays, a company that reviewed the notes in SAP for Me today, advises updating the kernel and all Web Dispatchers in a single rollout.",
+    "That rollout should reach levels that cover all 17 of this month's kernel and Web Dispatcher fixes.",
+    "There is no workaround, so the correction instructions or the listed support package are the only fix."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "1b9b96d402ef",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -3078,6 +3099,28 @@
    "instructions_checked": true
   },
   {
+   "id": "0e899e1e6c12",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Hackers now exploit critical Barracuda ESG flaws to gain root access",
+   "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-barracuda-email-security-gateway-flaws-to-get-root-access/",
+   "published": "2026-11-10T10:10:20+00:00",
+   "summary": "Cybersecurity company Barracuda Networks warned that attackers have begun exploiting two recently patched Email Security Gateway (ESG) vulnerabilities that let them run commands with root privileges.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/10/Barracuda.jpg",
+   "cves": [],
+   "first_seen": "2026-11-10T10:17:29.418077+00:00",
+   "image_checked": true,
+   "instructions": [
+    "\"If a patch has not been automatically applied, customers should manually apply the appropriate patch as soon as possible.",
+    "Barracuda also said that successful attacks require access to the administrative user interface (Admin UI) of targeted devices and advised customers to restrict access to trusted internal networks and use appropriate network access controls to limit exposure.",
+    "On Monday evening, Barracuda updated the initial advisory to warn admins that the two flaws are being exploited in attacks targeting a limited number of customers.",
+    "If customers have turned off automatic patching, Barracuda recommends setting devices to automatically receive patches.\""
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "d7669d6db99e",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -3541,6 +3584,25 @@
     "Truffle Security has launched the Secrets Revocation Program, a free initiative that helps API key issuers revoke 1.4 million publicly exposed secrets that remain valid.",
     "Truffle says it can either use a revocation endpoint provided by those entities, or supply them with the verified keys through a webhook and revoke them within 14 days.",
     "mSecure password manager hack prompts password reset warnings"
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "8791ad63d4b7",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Turla hackers use new Cereal malware to spy on govt Exchange servers",
+   "link": "https://www.bleepingcomputer.com/news/security/turla-hackers-use-new-ceral-malware-to-spy-on-govt-exchange-servers/",
+   "published": "2026-11-10T10:04:32+00:00",
+   "summary": "The Russian state-backed threat group Turla has been using a new malicious toolset called 'Cereal' to intercept emails on Microsoft Exchange servers at government organizations.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/05/15/Russia.jpg",
+   "cves": [],
+   "first_seen": "2026-11-10T10:17:29.418077+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
    ],
    "instructions_checked": true
   },
@@ -4914,26 +4976,6 @@
    "instructions_checked": true
   },
   {
-   "id": "402458e4dacc",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Google Dismantles XCPE Botnet of 1.3 Million Android Devices",
-   "link": "https://www.securityweek.com/google-dismantles-xcpe-botnet-of-1-3-million-android-devices/",
-   "published": "2026-11-03T09:22:09+00:00",
-   "summary": "The botnet was created and operated for financial gain by Android OEM/ODM Videostrong Technology. The post Google Dismantles XCPE Botnet of 1.3 Million Android Devices appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2024/09/botnet.jpeg",
-   "cves": [],
-   "first_seen": "2026-11-03T09:55:33.212980+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Adobe, Veeam, Juniper Networks Patch Critical Vulnerabilities",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "8694430c3bcd",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -4972,6 +5014,31 @@
     "Successful exploitation could allow attackers to access accounts such as root, which should never accept a password.",
     "Last week, OpenSSH rushed patches for the bug, and Alpine urged users to apply them and restart sshd as soon as possible.",
     "As a mitigation, they can disable password authentication (on by default in OpenSSH) or disable SSH."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "e61330c97785",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "IBM Aspera Faspex, SignalWire FreeSwitch Vulnerabilities Exploited in Attacks",
+   "link": "https://www.securityweek.com/ibm-aspera-faspex-signalwire-freeswitch-vulnerabilities-exploited-in-attacks/",
+   "published": "2026-11-10T09:42:27+00:00",
+   "summary": "CISA has added CVE-2026-123218 and CVE-2026-116779 to KEV, urging federal agencies to patch them within three days. The post IBM Aspera Faspex, SignalWire FreeSwitch Vulnerabilities Exploited in Attacks appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/07/CISA-KEV.jpg",
+   "cves": [
+    "CVE-2026-116779",
+    "CVE-2026-123218"
+   ],
+   "first_seen": "2026-11-10T10:17:29.418077+00:00",
+   "image_checked": true,
+   "instructions": [
+    "IBM patched the security defect on Friday in Aspera Faspex version 5.0.19 PL1, urging customers to update their deployments as soon as possible.",
+    "Scroll to continue reading. “Inbound chat is enabled on the stock internal and external profiles, and any authenticated profile account is sufficient; stock directory users without password material can also remove that barrier in affected configurations,” reads a NIST advisory .",
+    "SignalWire’s advisory, published October 28, notes that exploitation of the flaw ‘has been observed in the wild,’ but provides no details on the attacks.",
+    "IBM’s advisory makes no mention of exploitation, and no details on the attacks appear to be public."
    ],
    "instructions_checked": true
   },
@@ -5094,6 +5161,28 @@
     "A $90,000 bounty was paid for a report involving a malicious web page that, when Muse was asked to summarize it, mimicked status messages from the agent’s browsing tool. “It got the agent to execute some actions which should have been caught,” Singleton noted.",
     "A $1,000 bounty covered a Mac app flaw that let an attacker with access to the computer hijack the auto-update feature to execute code with the app’s permissions.",
     "Android’s November 2026 Updates Patch Over 200 Vulnerabilities",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "1f6bc1af5305",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "N-able Takes N-central Offline as Researcher Drops Over 30 Zero-Days",
+   "link": "https://www.securityweek.com/n-able-takes-n-central-offline-as-researcher-drops-over-30-zero-days/",
+   "published": "2026-11-10T09:56:28+00:00",
+   "summary": "Attackers could exploit the flaws for remote code execution, credential theft, and administrator account creation. The post N-able Takes N-central Offline as Researcher Drops Over 30 Zero-Days appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/08/N-Able.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-10T10:17:29.418077+00:00",
+   "image_checked": true,
+   "instructions": [
+    "On-premises N-central deployments should also be kept offline until patches are released, the company says. “N-able Engineering continues to make progress on the N-central hotfix and associated validation activities.",
+    "The security researcher released proof-of-concept (PoC) code targeting every flaw and reportedly explained that the zero-days were dropped after N-able failed to patch security defects he previously reported in another product.",
+    "Chrome Update Patches Exploited XML Zero-Day, Eighth This Year",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
@@ -5362,25 +5451,6 @@
     "Implement the “Rule of Two”: Under Meta’s Agents Rule of Two , an agent should combine no more than two of three properties: processing untrusted input, accessing sensitive data, and changing systems or communicating externally.",
     "Outbound traffic, including DNS, should be denied by default.",
     "In August, researchers documented a malicious MCP server that passed install-time review, then directed connected agents to collect SSH keys and cloud credentials after its third call."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "5e74da19f3eb",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "UK Cyber Chief Says the UK Will Face AI Cyberattacks on Critical Infrastructure by 2028",
-   "link": "https://www.securityweek.com/uk-cyber-chief-says-the-uk-will-face-ai-cyberattacks-on-critical-infrastructure-by-2028/",
-   "published": "2026-11-03T09:49:12+00:00",
-   "summary": "The U.K. will likely face AI cyberattacks on its critical infrastructure by 2028 as criminals and states, including China and Russia, increasingly use AI in their cyber activity. The post UK Cyber Chief Says the UK Will Face AI Cyberattacks on Critical Infrastructure by 2028 appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2025/06/UK_Cyberwarfare.jpg",
-   "cves": [],
-   "first_seen": "2026-11-03T09:55:33.212980+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
   },
