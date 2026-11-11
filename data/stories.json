@@ -287,10 +287,10 @@
    "source_name": "Born's IT and Windows Blog",
    "official": false,
    "source_type": "news",
-   "title": "Phishing im Namen von Dienstrad-Leasing (Nov. 2026)",
+   "title": "Phishing unter dem Namen Dienstrad-Leasing (Nov. 2026)",
    "link": "https://borncity.com/blog/2026/11/10/phishing-im-namen-von-dienstrad-leasing-nov-2026/",
    "published": "2026-11-09T23:01:17+00:00",
-   "summary": "Ein Blog-Leser hat mich darüber informiert, dass gerade eine Phishing-Kampagne läuft, die den Namen von Dienstrad-Leasing missbraucht. Das Unternehmen informiert und warnt Kunden vor Phishing-Mails in seinem Namen, die derzeit wohl breit verschickt werden und Kunden in eine Falle locken … Weiterlesen → Quelle",
+   "summary": "Ein Blog-Leser hat mich darüber informiert, dass gerade eine Phishing-Kampagne läuft, die den Namen Dienstrad-Leasing missbraucht. Das Unternehmen informiert und warnt Kunden vor Phishing-Mails in seinem Namen, die derzeit verschickt werden und Kunden in eine Falle locken sollen. Was ist … Weiterlesen → Quelle",
    "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
    "cves": [],
    "first_seen": "2026-11-09T23:07:53.347644+00:00",
@@ -2930,22 +2930,6 @@
    "instructions_checked": true
   },
   {
-   "id": "8384c224e801",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "China-Aligned Hackers Hijack Sogou Input Method DNS Requests to Deploy DarkVigil Backdoor",
-   "link": "https://thehackernews.com/2026/11/china-aligned-hackers-hijack-sogou.html",
-   "published": "2026-11-04T11:24:31+00:00",
-   "summary": "A China-aligned threat actor known as SlippyNunchucks has been attributed to a Domain Name System (DNS) hijacking operation abusing insecure HTTP communications in Windows versions of Sogou Input Method as part of a surveillance campaign designed to deploy an implant called DarkVigil (aka FDMTP). The campaign…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMawvNNOvRYRm-k7ii9yDdw214v4kwQ7h5fAfOaUVkvMetNwArral8qumlObtaftjOcBsibL9vkqM1UT0-9l9jYPjj3M3C9NcPfg5pdIuENUfdKlK7lyseCS30AVhgLLs6a-2fdXlSDymSVeyIziO7IC13HFCaOf1v4sjbgmkeKfewWNsbTJCJ0WR2zLBZ/s1600/key.jpg",
-   "cves": [],
-   "first_seen": "2026-11-04T13:01:36.600423+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "3d5dfb277e1d",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -3557,26 +3541,6 @@
     "The attack succeeds on every try with a single connection, according to the advisory.",
     "The advisory gives commands that add the setting in a drop-in file in /etc/ssh/sshd_config.d , which Alpine's default configuration reads from 3.19 onward.",
     "Afterward, sshd -T | grep -i passwordauthentication should print passwordauthentication no ."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "ecf2013fdfbb",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Radio With No Radar: Why Agent Runtime Security Fails Without the Layers Beneath It",
-   "link": "https://thehackernews.com/2026/11/radio-with-no-radar-why-agent-runtime.html",
-   "published": "2026-11-04T11:34:20+00:00",
-   "summary": "Nearly every agent security pitch now ends on the same promise: the product stops the bad action in real time. The promise holds for one kind of agent, the kind whose traffic passes through a gateway the enterprise owns. Most agents never touch one. One recent case shows what that gap looks like in practice. An…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQqFIm3V3DsL6rHtjhkN8qVT2sU-caHUEuPgeepdZ6lLsIJ-09GFg_HVVBgeHP36W0abqUeCuaNuAOIheSGYB9hxmHbQGcgREBBxStEFLijgx-Cd8C8Z8wLuxgFFu75O8hAAOcdjAxgCZ-iYoBvYS09AcITdqMnmLZOn2JdGaEp04SPrgYkgQ14dl1S0JS/s1600/reco.gif",
-   "cves": [],
-   "first_seen": "2026-11-04T13:01:36.600423+00:00",
-   "instructions": [
-    "Knowing where to apply a rule like that depends on seeing which agents exist, what they are connected to and what normal looks like for each.",
-    "Irregular's Dan Lahav calls the mistake the end-state fallacy: assuming the properties of the eventual equilibrium apply to the transition actually underway.",
-    "It runs on a read-only API with no software to install and returns a written security summary and a prioritized remediation plan in five business days."
    ],
    "instructions_checked": true
   },
@@ -4496,6 +4460,28 @@
     "Microsoft also shared a temporary workaround that should resolve these issues for those who can't immediately deploy this month's cumulative updates, which requires modifying a registry key on affected Exchange Server systems.",
     "After the system reboots, the admins should monitor the Exchange environment and raise the Endpoint Mapper memory limit if it recurs.",
     "\"After installing the October 2026 Windows security update [..], some on-premises Exchange servers might experience issues accessing or sending email."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "15c0b59087ed",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Microsoft fixes audio issues caused by September security updates",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-usb-audio-issues-caused-by-september-security-updates/",
+   "published": "2026-11-11T11:18:36+00:00",
+   "summary": "Microsoft says the November 2026 cumulative updates resolve USB audio issues plaguing Windows users who have installed security updates released since September.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/29/Windows_headpic.jpg",
+   "cves": [],
+   "first_seen": "2026-11-11T11:38:03.243549+00:00",
+   "image_checked": true,
+   "instructions": [
+    "\"The symptoms are resolved in the Windows security update released on November 10, 2026 (KB5132061) and later updates,\" Microsoft said in a Windows release health dashboard update.",
+    "\"We recommend you install the latest security update for your device as it contains important improvements and issue resolutions, including this one.\"",
+    "While Microsoft has yet to provide an official workaround for those who can't immediately install the November 2026 security updates, some users have restored audio on affected Windows PCs by switching to 2-channel mode.",
+    "In January 2025, Microsoft addressed a similar issue triggered by the KB5050094 optional preview cumulative update, which caused audio playback issues and Code 10 errors on Windows 11 24H2 systems with USB audio device drivers."
    ],
    "instructions_checked": true
   },
@@ -6839,6 +6825,27 @@
    "instructions_checked": true
   },
   {
+   "id": "3d74aba68f12",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Dreeze Emerges From Stealth With $33M to Rebuild Cloud Apps After Cyberattacks",
+   "link": "https://www.securityweek.com/dreeze-emerges-from-stealth-with-33m-to-rebuild-cloud-apps-after-cyberattacks/",
+   "published": "2026-11-11T11:16:40+00:00",
+   "summary": "Created by Zerto and Kashya veterans, the startup has launched a platform designed to recover whole cloud applications. The post Dreeze Emerges From Stealth With $33M to Rebuild Cloud Apps After Cyberattacks appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/12/cyber-funding.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-11T11:38:03.243549+00:00",
+   "image_checked": true,
+   "instructions": [
+    "ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure",
+    "Chipmaker Patch Tuesday: Over 200 Vulnerabilities Addressed by Intel, AMD",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "008f66d06450",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -6993,6 +7000,28 @@
    "instructions_checked": true
   },
   {
+   "id": "3dfcf9840f4a",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure",
+   "link": "https://www.securityweek.com/ics-patch-tuesday-siemens-flags-high-severity-flaws-node2shell-exposure/",
+   "published": "2026-11-11T10:35:15+00:00",
+   "summary": "Pre-Patch Tuesday advisories were published by VDE CERT, Phoenix Contact, Johnson Controls, and Hitachi Energy. The post ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2023/11/ICS_Patches.jpg",
+   "cves": [],
+   "first_seen": "2026-11-11T11:38:03.243549+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Siemens, Schneider Electric, and several other industrial technology vendors have published new security advisories describing vulnerabilities that could expose affected systems to serious attacks.",
+    "Siemens has published nine new advisories covering 10 vulnerabilities.",
+    "Two advisories describe the impact of the recent Node2Shell vulnerability on the company’s products.",
+    "Siemens has also published advisories informing customers about high-severity vulnerabilities in ROS#, Simcenter Femap, Mendix Studio Pro MCP Server, Simatic SCADA and PCS 7, Meta-iot2050, and Simatic WinCC Graphics Designer."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "3819f6707361",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -7068,28 +7097,6 @@
    "image_checked": true,
    "instructions": [
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "9726794b0c18",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Malicious cPGuard Updates Served in OpsShield Supply Chain Attack",
-   "link": "https://www.securityweek.com/malicious-cpguard-updates-served-in-opsshield-supply-chain-attack/",
-   "published": "2026-11-04T10:54:48+00:00",
-   "summary": "Using compromised credentials, the attackers accessed OpsShield’s update servers and poisoned multiple cPGuard versions. The post Malicious cPGuard Updates Served in OpsShield Supply Chain Attack appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/06/supply-chain-threat.webp",
-   "cves": [],
-   "first_seen": "2026-11-04T11:56:28.087134+00:00",
-   "image_checked": true,
-   "instructions": [
-    "All password hashes, root SSH keys, and MySQL root passwords, as well as shell history on the infected customer servers, should be considered compromised and rotated. “If cPGuard was not online during that window, your server did not receive the fake update.",
-    "You should still reset your billing portal password,” OpsShield says.",
-    "OpsShield also released cPGuard updates (version 5.88.25 and later) that remove the hidden root shell and the additional files left behind by the script, and published indicators of compromise (IoCs). “Attacks like this one are getting faster and cheaper to run.",
-    "According to the company’s incident notice , the attackers used compromised credentials to access its update distribution infrastructure (CDN) and distribute a malicious script via cPGuard’s update channel. cPGuard versions 5.88.12–5.88.19 contained the malicious code."
    ],
    "instructions_checked": true
   },
