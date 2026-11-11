@@ -1,6 +1,55 @@
 {
  "items": [
   {
+   "id": "5f69915578a3",
+   "title": "MC1548054: Updates available for Microsoft 365 Apps for all channels",
+   "link": "https://mc.merill.net/message/MC1548054",
+   "summary": "We've released updates to the following update channels for Microsoft 365 Apps: Current ChannelMonthly Enterprise ChannelSemi-Annual Enterprise Channel When this will happen: We'll be gradually rolling out these updates of Microsoft 365 Apps to users on those update channels starting November 10th, 2026 (PST). How…",
+   "published": "2026-11-11T01:00:21+00:00"
+  },
+  {
+   "id": "fd7ccb0afd1f",
+   "title": "MC1548047: Microsoft Copilot Chat: New Study and Learn-only mode for Education",
+   "link": "https://mc.merill.net/message/MC1548047",
+   "summary": "Microsoft is introducing an IT-admin-controlled Study and Learn-only mode for Copilot Chat in education, launching mid-November 2026. This mode limits students to the Study and Learn agent, preserving productive struggle. It affects Starter Education license students and requires no action but can be enabled by admins…",
+   "published": "2026-11-11T00:54:53+00:00"
+  },
+  {
+   "id": "9358e3aba5cf",
+   "title": "MC1492151: New Dynamics 365 Sales and Customer Service experiences across Teams, Copilot, and Outlook",
+   "link": "https://mc.merill.net/message/MC1492151",
+   "summary": "Microsoft is releasing new Dynamics 365 Sales and Customer Service experiences integrated into Teams, Copilot, and Outlook to enhance collaboration and customer data access. Key features include Sales and Service skills, Teams Channel Agent, and Sales Development Agent, with phased rollouts starting October 2026 and…",
+   "published": "2026-11-11T00:40:55+00:00"
+  },
+  {
+   "id": "3c9d519f9489",
+   "title": "MC1548034: Copilot Studio - Set up third-party agent connections in conversations",
+   "link": "https://mc.merill.net/message/MC1548034",
+   "summary": "We are announcing improvements to the experience of setting up connections in chats with Copilot Studio agents. These improvements will reach general availability by December 31, 2026. How does this affect me? Previously, users needed to leave their conversation, go to a separate connection-management experience…",
+   "published": "2026-11-11T00:35:25+00:00"
+  },
+  {
+   "id": "8e12986541e0",
+   "title": "MC1509782: Microsoft Entra ID: Updates to SMS and voice verification experiences in MFA flows",
+   "link": "https://mc.merill.net/message/MC1509782",
+   "summary": "Microsoft Entra ID updates MFA flows to prioritize more secure non-telephony methods over SMS and voice, which remain available under \"Show more verification methods.\" The rollout occurs in October 2026, with no configuration changes required. Users should prepare for a resend waiting period and plan for SMS/voice…",
+   "published": "2026-11-11T00:28:38+00:00"
+  },
+  {
+   "id": "03244470e88a",
+   "title": "MC1548004: Microsoft 365 Copilot Chat: Filter responses by content source",
+   "link": "https://mc.merill.net/message/MC1548004",
+   "summary": "Microsoft 365 Copilot Chat now lets users filter responses by selecting specific content sources, ensuring answers are grounded only in chosen data while respecting permissions. This feature, enabled by default for licensed users, rolls out worldwide in mid-November 2026 with no required action but recommends…",
+   "published": "2026-11-10T23:58:34+00:00"
+  },
+  {
+   "id": "0fdf81d710af",
+   "title": "MC1547994: Plan for Change: Update your iOS/iPadOS Company Portal minimum version to v5.2608.0",
+   "link": "https://mc.merill.net/message/MC1547994",
+   "summary": "Starting early December, the minimum iOS/iPadOS Company Portal version will be v5.2608.0 to support new Apple OS releases. Most users update automatically; others will be prompted. If app installation is blocked via device restrictions, manual updates may be needed. Prepare helpdesk for update prompts.",
+   "published": "2026-11-10T23:54:32+00:00"
+  },
+  {
    "id": "e107cf4e6c4e",
    "title": "MC1488841: Microsoft Outlook: Update to default blocked file types in OwaMailboxPolicy",
    "link": "https://mc.merill.net/message/MC1488841",
@@ -370,55 +419,6 @@
    "link": "https://mc.merill.net/message/MC1540345",
    "summary": "Microsoft is updating Exchange Online Admin API v2.0 permissions, replacing Exchange.ManageV2 and Exchange.ManageAsAppV2 with new permissions by November 2026. Affected applications must transition, obtain admin consent, verify RBAC roles, test, and remove old permissions to maintain access. No endpoint changes occur.",
    "published": "2026-11-05T21:20:57+00:00"
-  },
-  {
-   "id": "d4826f35d01e",
-   "title": "MC1540342: Action required: Exchange Online Admin API MailboxFolderPermission response update",
-   "link": "https://mc.merill.net/message/MC1540342",
-   "summary": "Microsoft will update the Exchange Online Admin API v2.0 MailboxFolderPermission endpoint to return the User property as a structured object with DisplayName, Name, and PrimarySmtpAddress by early November 2026. Organizations must update applications to handle this change to avoid errors.",
-   "published": "2026-11-05T21:18:24+00:00"
-  },
-  {
-   "id": "e1c07b1ec731",
-   "title": "MC1540339: Microsoft Planner: Planner capabilities in Copilot Cowork through the Planner Plugin",
-   "link": "https://mc.merill.net/message/MC1540339",
-   "summary": "The Planner Plugin integrates Microsoft Planner with Copilot Cowork, enabling task prioritization, completion assistance, plan creation, visual reporting, and cross-Microsoft 365 work using Planner data. It rolls out worldwide by November 2026, requires appropriate licenses, and offers admin and user controls for…",
-   "published": "2026-11-05T21:16:48+00:00"
-  },
-  {
-   "id": "ef979aa52ec8",
-   "title": "MC1540330: Opal (Frontier) - UBB Notification",
-   "link": "https://mc.merill.net/message/MC1540330",
-   "summary": "Opal (Frontier) is a Microsoft 365 Computer Use Agent requiring admin-controlled access and usage-based billing for Copilot Credits. Rolling out November 9, 2026, it affects tenant admins and users. Admins must configure billing, assign spending policies, and review cost controls before rollout. No compliance issues…",
-   "published": "2026-11-05T21:12:57+00:00"
-  },
-  {
-   "id": "57abbdc75050",
-   "title": "MC1540327: Action required: Prepare users who can’t use passkeys for SMS and voice retirement",
-   "link": "https://mc.merill.net/message/MC1540327",
-   "summary": "Prepare users relying solely on Microsoft-provided SMS/voice MFA for sign-ins that don’t support passkeys by February 1, 2027 (non-admins) and July 1, 2027 (admins/external). Register compatible alternatives or configure customer-managed telephony to avoid sign-in blocks during phased retirement.",
-   "published": "2026-11-05T21:11:47+00:00"
-  },
-  {
-   "id": "acc261f6f769",
-   "title": "MC1540293: Sales agent in Microsoft 365 Copilot - Semantic model in Sales Agent",
-   "link": "https://mc.merill.net/message/MC1540293",
-   "summary": "We are announcing the ability to enable semantic model support for Sales Agent. This feature will reach general availability on November 17, 2026. How does this affect me? The semantic model signals help Sales Agent better understand CRM data structure, views, relationships, forms, and business terminology…",
-   "published": "2026-11-05T20:38:44+00:00"
-  },
-  {
-   "id": "43bdf6689e73",
-   "title": "MC1485169: Dynamics 365 Contact Center - Use role-based enforcement for recording and transcription downloads",
-   "link": "https://mc.merill.net/message/MC1485169",
-   "summary": "Update: Release of this feature has been postponed; we will announce a new date in the future. We are announcing the ability to use role-based enforcement for recording and transcription downloads in Dynamics 365 Contact Center. How does this affect me? This feature helps organizations better protect sensitive…",
-   "published": "2026-11-05T20:31:33+00:00"
-  },
-  {
-   "id": "2540dfe5529f",
-   "title": "MC1540258: Power Automate - Information regarding the end of support for Copilot in the designer for cloud flows or agent flows.",
-   "link": "https://mc.merill.net/message/MC1540258",
-   "summary": "On November 30, 2026, Copilot in the designer for cloud flows or agent flows will have reached end of support. How does this affect me? Makers will no longer be able to use Copilot in the designer for cloud flows or agent flows. This deprecation doesn't delete, move, or change existing cloud flows or agent flows…",
-   "published": "2026-11-05T19:58:32+00:00"
   }
  ]
 }
