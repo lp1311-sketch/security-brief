@@ -3996,23 +3996,6 @@
    "instructions_checked": true
   },
   {
-   "id": "71b12d48491a",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "More Asian airlines announce data breaches after attack on Spanish IT provider Amadeus",
-   "link": "https://therecord.media/asian-airlines-announce-data-breach-it-provider-incident",
-   "published": "2026-11-04T21:30:00+00:00",
-   "summary": "Japan Airlines, Cathay Pacific, Korean Air, Asiana Airlines, Singapore Airlines and Malaysia Airlines have all come forward over the last week to report data breaches traced back to Amadeus IT Group — a company that builds and maintains platforms for flight reservation, ticketing and check-in platforms.",
-   "image": "https://cms.therecord.media/uploads/airplane_airport_d009f47cb4.jpg",
-   "cves": [],
-   "first_seen": "2026-11-04T22:10:20.631939+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "424f8e5ef5ac",
    "source": "therecord",
    "source_name": "The Record",
@@ -4839,6 +4822,28 @@
    "instructions_checked": true
   },
   {
+   "id": "a4a34375ee4e",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "eMudhra revokes 8 more CA certificates after private key mishap",
+   "link": "https://www.bleepingcomputer.com/news/security/emudhra-revokes-8-more-ca-certificates-after-private-key-mishap/",
+   "published": "2026-11-11T21:27:40+00:00",
+   "summary": "Certificate authority eMudhra has revoked eight additional intermediate CA certificates after an investigation into its recent certificate security incident found improper handling of private keys during the certificate-generation process.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/20/certificate.jpg",
+   "cves": [],
+   "first_seen": "2026-11-11T21:35:52.932632+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Mozilla, Google, Apple, and other software vendors subsequently released protections to block the compromised certificates.",
+    "Microsoft also released out-of-band Windows updates on October 26 to remove trust in affected eMudhra certificate trust chains on systems that could not receive automatic certificate trust updates.",
+    "Mozilla, Google, Apple block compromised eMudhra CA certificates",
+    "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "886e9406677f",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -5279,6 +5284,28 @@
    "instructions_checked": true
   },
   {
+   "id": "4555dea14647",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Notion says Fireworks breach exposed customer AI chat transcripts",
+   "link": "https://www.bleepingcomputer.com/news/security/notion-says-fireworks-breach-exposed-customer-ai-chat-transcripts/",
+   "published": "2026-11-11T20:54:20+00:00",
+   "summary": "Notion, the digital workspace platform, disclosed that a security breach at its AI infrastructure provider, Fireworks AI, exposed Notion AI chat transcripts in a small number of workspaces.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/11/Notion.jpg",
+   "cves": [],
+   "first_seen": "2026-11-11T21:35:52.932632+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Potentially affected workspace owners should review the data through Security incident review in Notion’s desktop web interface and share a link with members that lets them download their own transcripts.",
+    "Notion advises affected users to rotate any passwords, API keys, or other credentials entered into affected chats.",
+    "“Upon analysis of the dataset Fireworks AI gave us on November 8, we discovered that it included Notion AI chat transcripts used for the Insights feature, which for the vast majority of impacted workspaces were unattributable,” Notion stated in an update .",
+    "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "7e637a2f9fd7",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -5620,23 +5647,6 @@
    "instructions_checked": true
   },
   {
-   "id": "de7887560061",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Vercel rolls out new protection against stolen session cookie attacks",
-   "link": "https://www.bleepingcomputer.com/news/security/vercel-rolls-out-new-protection-against-stolen-session-cookie-attacks/",
-   "published": "2026-11-04T21:31:18+00:00",
-   "summary": "Vercel is gradually rolling out Device Bound Session Credentials (DBSC) on its platform as a key defense against information stealer malware.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/04/vercel.jpg",
-   "cves": [],
-   "first_seen": "2026-11-04T22:10:20.631939+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "b9b072a1ed15",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -5652,27 +5662,6 @@
    "image_checked": true,
    "instructions": [
     "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "0fd87eaf33b4",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Zyxel fixes zero-day exploited to hack nearly 1,000 network switches",
-   "link": "https://www.bleepingcomputer.com/news/security/zyxel-fixes-zero-day-exploited-to-hack-nearly-1-000-network-switches/",
-   "published": "2026-11-04T20:58:19+00:00",
-   "summary": "Zyxel has patched a zero-day vulnerability in its GS1900 series network switches that hackers exploited to compromise nearly 1,000 devices worldwide and steal configuration files and credentials.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/04/zyxel-gs1900.jpg",
-   "cves": [],
-   "first_seen": "2026-11-04T21:14:03.901689+00:00",
-   "image_checked": true,
-   "instructions": [
-    "The flaw affects ten GS1900 switch models, and Zyxel released security updates on October 22 and published a security advisory on November 3.",
-    "Administrators of affected Zyxel GS1900 switches are advised to install the latest firmware updates to protect against CVE-2026-107441.",
-    "The researchers determined that the earlier security update added checks to prevent a buffer overflow, but attackers could bypass them by corrupting a parameter counter before it was validated."
    ],
    "instructions_checked": true
   },
@@ -5853,6 +5842,22 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt8b872cbcbcd2dcf7/6af22bc90de73971ce9d3cd2/pink_paint-Olga_Yastremska-GettyImages-2289198696.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-09T22:08:37.808384+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "bcbd3a3cc803",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "Attackers Say 'Hello' to a Different Scale of Cloud Attack",
+   "link": "https://www.darkreading.com/cloud-security/attackers-hello-scale-cloud-attack",
+   "published": "2026-11-09T20:38:36+00:00",
+   "summary": "Researchers dubbed an attack chain \"Greeter\" after discovering that attackers deliberately covered their trail by leaving \"hello\" messages in logs.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt10d089cc23c19918/6af23c18ddd4d34d271f90a5/GettyImages-511970077.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-11T21:35:52.932632+00:00",
    "instructions": [],
    "instructions_checked": true
   },
@@ -6113,6 +6118,22 @@
    "instructions_checked": true
   },
   {
+   "id": "e2b7ebdc245e",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "N-able Takes N-central Platform Offline After Discovery of 33 Flaws",
+   "link": "https://www.darkreading.com/endpoint-security/n-able-n-central-offline-33-flaws",
+   "published": "2026-11-11T20:05:18+00:00",
+   "summary": "The RMM provider also released a hotfix as one of recommended mitigations to address public exploits for the alleged zero-days that allow for attacker takeover.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt1eb3a07d69de328b/6af4605e4c33022b5dec789d/RMM_panthermedia_Alamy.png?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-11T21:35:52.932632+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "d6fe2bb7d331",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -6302,6 +6323,29 @@
     "Apply network egress controls to agent and inference hosts so that a triggered model cannot open arbitrary outbound connections.",
     "Apply attack surface reduction rules to devices that host local agents and inference servers, starting in audit mode.",
     "Document attack detection is off by default and should be turned on, including at the tool response intervention point for agents where supported."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "3c5e2d75ed5c",
+   "source": "msblog",
+   "source_name": "Microsoft Security Blog",
+   "official": false,
+   "source_type": "vendor_blog",
+   "title": "The global socket: how threat actors are weaponizing GSocket for stealthy C2",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/11/global-socket-how-threat-actors-weaponizing-gsocket-stealthy-c2/",
+   "published": "2026-11-11T19:49:57+00:00",
+   "summary": "Microsoft observed multiple incidents in which threat actors deployed GSocket, an open source remote access tool, on compromised Linux servers. Threat actors used Gsocket to maintain access even after the vulnerabilities used for initial compromise were remediated. This turned a single web application compromise into…",
+   "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/11/image-21.webp",
+   "cves": [
+    "CVE-2026-43284"
+   ],
+   "first_seen": "2026-11-11T21:35:52.932632+00:00",
+   "instructions": [
+    "Defenders investigating affected hosts should look for evidence of GSocket deployment, persistence, privilege escalation, and outbound connections, rather than treating application patching alone as complete remediation.",
+    "The same trade-offs apply when initial access comes through remote access services or cloud shell sessions.",
+    "For an affected Linux server, remediation should address both the initial compromise and the GSocket deployment.",
+    "Apply deny-by-default egress rules, allow only required destinations, and monitor connections to relay infrastructure."
    ],
    "instructions_checked": true
   },
