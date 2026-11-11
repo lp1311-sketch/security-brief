@@ -3014,27 +3014,6 @@
    "instructions_checked": true
   },
   {
-   "id": "d013e25bf406",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Critical Rails Flaw Lets Attackers Write Server Files via Crafted ImageMagick Uploads",
-   "link": "https://thehackernews.com/2026/11/critical-rails-flaw-lets-attackers.html",
-   "published": "2026-11-04T12:07:04+00:00",
-   "summary": "A critical flaw in Ruby on Rails could allow an unauthenticated attacker to write arbitrary files on an app's server by uploading a crafted file if the app processes uploads using ImageMagick. The Rails project disclosed the flaw in an advisory and fixed it in versions 8.1.4.1 and 8.0.5.2. The flaw is in Active…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaJWnScdkMx0R5_Zt00NtYVNjNavBR7IMrLzJM_tZGMTpZtAvV7uNWt6BQbBrlUzH-aBoj_ZmMEOG__aTA8VmfTeiHUR9gfqNe2eYf9fSM-sYQkmCOg10qZ3ZaKyM_RS1QUQhm8s5NMw-xnYaWMDgDakmFyp9tbJgQ4hOZTf0cxe9E6x7uWt3JeN6bS3k/s1600/ruby-rails.jpg",
-   "cves": [],
-   "first_seen": "2026-11-04T13:01:36.600423+00:00",
-   "instructions": [
-    "Apps on release series older than 8.0 can use that workaround or upgrade to 8.0 or later.",
-    "The Rails project disclosed the flaw in an advisory and fixed it in versions 8.1.4.1 and 8.0.5.2.",
-    "Rails said one attack chain was reported to it, but it does \"not assume it is the only one that exists.\" The advisory does not say whether the flaw has been exploited.",
-    "Such an app must put the rules in ImageMagick's system policy."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "3632eace057e",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -3071,6 +3050,25 @@
     "ForgeRock's own hardening guide tells operators to remove this console or protect it before going live because it stores its own password separately from the rest of the system.",
     "The records sat behind the same block as the console, but the researchers' code reached them from inside the server.",
     "The console and its default password have been documented for years, and the maker's production hardening guide already tells operators to remove the console or change its password before going live."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "b80a24c89312",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "eMudhra Revokes 8 More CAs It Previously Declared Unaffected by Key Compromise",
+   "link": "https://thehackernews.com/2026/11/emudhra-revokes-8-more-cas-it.html",
+   "published": "2026-11-11T12:00:53+00:00",
+   "summary": "The in-house Python script behind eMudhra's October key compromise has now cost the company 8 more of its intermediate certificate authorities (CAs), even though it did not weaken their keys. Each intermediate CA has its own private key, which the company uses to sign the certificates it issues. The 8 intermediate CAs…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjONLgT6piRm0O75Y6dzQY4L2RO8OQTlWaJbwSTHFDeh82Qiadl2PT9KI9r2jC1JbwS-TqPm3g1Ea0Q8I91FalXu2GZ0fBBnfId6-8ZWKABrBQZWg7nA1X6cHq7wgHK3rc2Y5YW4yb61TjxVyywyWprml6yhBgH-SBaTvXZF-50J8-mR5Q6cGhSgfuMUdk/s1600/emudhra.jpg",
+   "cves": [],
+   "first_seen": "2026-11-11T12:40:42.987688+00:00",
+   "instructions": [
+    "Microsoft will start removing the 10 remaining eMudhra roots, including emSign Root CA - G1, on November 16, according to an update to its security response post earlier this week.",
+    "Browsers that enforce Certificate Transparency could not have been fooled."
    ],
    "instructions_checked": true
   },
@@ -3774,6 +3772,27 @@
    "instructions_checked": true
   },
   {
+   "id": "de18400249b3",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "We Built An Agent That Broke All of Our Security Rules. Here's What We Learned.",
+   "link": "https://thehackernews.com/2026/11/we-built-agent-that-broke-all-of-our.html",
+   "published": "2026-11-11T12:01:59+00:00",
+   "summary": "We tell customers three things about securing AI agents: they need their own identities, access that fits the job they’re given, and traceability that’s separate from any human’s. That was true for us at Token as well. Then, we built an agent that broke all three by default. This helped us think through how such…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhB22NtEOE6ioVcc92S5bLfFX3tbKyjNkx0j8OmHekqWq6Od4h9DtFmbmdd74VzwHCh5h6NbWnBgHgKzC49DwS7QAgA0uH3eL7BvBnN9QJu3U5-oiy5ZFMN7PvaJTBqjP7TR5VMjzrGxjfOfjgBqs3lecFZnWGEYNDp_BJgklco1L_acBqGm1M_CvtfLaY/s1600/AI-AGENT.png",
+   "cves": [],
+   "first_seen": "2026-11-11T12:40:42.987688+00:00",
+   "instructions": [
+    "Until browsers and applications can carry agent identity, human delegation, and task scope together, companies should treat every agent using a human session as delegated access that must be discovered, constrained, and audited.",
+    "This helped us think through how such agents should be defended.",
+    "By creating an agent that breaks all the security rules, Token learned how companies should be using identity to gain control, especially as agent use scales.",
+    "We learned that there are multiple best practices that you can apply when you control the AI agent itself:"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "a02fb0af2916",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -3809,27 +3828,6 @@
     "A setting nobody checked, an update nobody questioned, or a system left online longer than it should have been.",
     "OpenSSH Flaw Sees Exploitation Attempts — Threat actors are attempting to exploit a recently disclosed security flaw impacting OpenSSH that can enable sign-ins to accounts that have no password set.",
     "Debian and Ubuntu APT Flaw Allows Code Execution as Root — A vulnerability in the APT package manager (CVE-2026-109518, CVSS score: 7.7) can be exploited to install a package under certain conditions and achieve code execution with elevated privileges."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "de8bbdd0e39a",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Xen Hypervisor Flaws Let One Malicious VM Read and Write Any Other VM's Memory",
-   "link": "https://thehackernews.com/2026/11/xen-hypervisor-flaws-let-one-malicious.html",
-   "published": "2026-11-04T11:46:27+00:00",
-   "summary": "Two flaws in the Xen hypervisor allow a malicious guest virtual machine (VM) to read and write the memory of other VMs on the same host, including dom0. Dom0 is the VM that, by default, has full permissions and manages the others. Patches are out, and there is no known mitigation, the Xen Project said in an advisory…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAVPXiuTBfhBnpwaZHMfSDWymKJrXbS88kOEO1Xuh5t11qAnwSKeFTHGQy6ZG9Sr2N-wRYrJg58x3lKFbybvU9p1a85lxaCHfBa61vO1DfjEhUi5Yzf6bQS1eN7Mu-s_sUwkE-JGc-UznJ1p0qfmwMDusXFzWawXKXMt6jj-vENxyQG12uAUDUe0p0gtg/s1600/xen.jpg",
-   "cves": [],
-   "first_seen": "2026-11-04T13:01:36.600423+00:00",
-   "instructions": [
-    "Patches are out, and there is no known mitigation, the Xen Project said in an advisory on November 3.",
-    "Dom0 must be restarted, and Anti Evil Maid users must reseal their secret passphrase because the new Xen binaries change PCR18 and PCR19.",
-    "The flaws are tracked as CVE-2026-102703 and CVE-2026-102704 , under Xen advisory XSA-523.",
-    "Xen's advisory does not mention any attacks that exploit the flaws or specify what access within the VM an attacker needs."
    ],
    "instructions_checked": true
   },
@@ -4637,28 +4635,6 @@
    "instructions_checked": true
   },
   {
-   "id": "62ad9c2a6bdd",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "CISA flags WordPress RCE flaw as actively exploited in attacks",
-   "link": "https://www.bleepingcomputer.com/news/security/cisa-flags-wordpress-rce-flaw-as-actively-exploited-in-attacks/",
-   "published": "2026-11-04T12:11:05+00:00",
-   "summary": "The US Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies that attackers have started exploiting a recently patched high-severity WordPress vulnerability in the wild.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/04/WordPress.jpg",
-   "cves": [],
-   "first_seen": "2026-11-04T13:01:36.600423+00:00",
-   "image_checked": true,
-   "instructions": [
-    "\"Because this is a security release, it is recommended that you update your sites immediately.\"",
-    "While CISA didn't provide more details on attackers exploiting CVE-2026-119977 in the wild, WordPress security firm Wordfence says in an advisory update over the weekend that it \"blocked 13,095 attacks targeting this vulnerability in the past 24 hours.\"",
-    "\"A weakness in the WordPress upgrade process which can lead to remote code execution during the upgrade window,\" the WordPress security team said on October 28 when it released WordPress 7.1.4 with patches to address this security issue.",
-    "Public wp2shell exploits were released one day after the patches went live, and attackers began breaching unpatched servers a few days later to deploy persistent webshells and install malicious plugins."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "dad53d7e3ed5",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -5203,6 +5179,28 @@
    "instructions_checked": true
   },
   {
+   "id": "693679885746",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "N-able releases security hotfixes for zero-day vulnerabilities",
+   "link": "https://www.bleepingcomputer.com/news/security/n-able-releases-security-hotfixes-for-zero-day-vulnerabilities/",
+   "published": "2026-11-11T12:32:27+00:00",
+   "summary": "N-able released hotfixes to address zero-day bugs affecting its N-central remote monitoring and management (RMM) platform, which were publicly disclosed over the weekend and forced it to take vulnerable hosted environments offline.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/10/N-able.jpg",
+   "cves": [],
+   "first_seen": "2026-11-11T12:40:42.987688+00:00",
+   "image_checked": true,
+   "instructions": [
+    "In a Tuesday update , N-able said that all hosted N-central servers (NCODs) across all regions have now been successfully upgraded and advised and \"strongly\" recommended that all N-central On-Premises customers upgrade their installations to the newly released version \"as soon as possible.\"",
+    "\"Customers should follow the published upgrade guidance carefully before restoring normal access to their N-central environment.",
+    "Earlier incident guidance advised On-Premises customers to keep their N-central servers offline while remediation was being developed,\" it said.",
+    "This follows N-able's decision to take all hosted N-central environments offline across the Americas, Europe, and Asia-Pacific regions until it could patch them against potential attacks targeting the zero-day flaws in the wild."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "8d206c962ee8",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -5680,28 +5678,6 @@
     "The flaw affects ten GS1900 switch models, and Zyxel released security updates on October 22 and published a security advisory on November 3.",
     "Administrators of affected Zyxel GS1900 switches are advised to install the latest firmware updates to protect against CVE-2026-107441.",
     "The researchers determined that the earlier security update added checks to prevent a buffer overflow, but attackers could bypass them by corrupting a parameter counter before it was validated."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "eb87294c0988",
-   "source": "cisa",
-   "source_name": "CISA Cybersecurity Advisories",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
-   "link": "https://www.cisa.gov/news-events/alerts/2026/11/04/cisa-adds-one-known-exploited-vulnerability-catalog",
-   "published": "2026-11-04T12:00:00+00:00",
-   "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2024-27834 Apple Multiple Products Improper Authentication Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks…",
-   "image": null,
-   "cves": [
-    "CVE-2024-27834"
-   ],
-   "first_seen": "2026-11-06T14:55:05.279628+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
-    "BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied."
    ],
    "instructions_checked": true
   },
@@ -6437,6 +6413,25 @@
    "instructions_checked": true
   },
   {
+   "id": "38d7075a7968",
+   "source": "schneier",
+   "source_name": "Schneier on Security",
+   "official": false,
+   "source_type": "news",
+   "title": "Three People Arrested for AI-Enhanced Impersonation Fraud",
+   "link": "https://www.schneier.com/blog/archives/2026/11/three-people-arrested-for-ai-enhanced-impersonation-fraud.html",
+   "published": "2026-11-11T12:05:34+00:00",
+   "summary": "It’s hard to believe how lucrative this crime can be: According to a press release from the United States attorney’s office for the southern district of New York, three men ­ Jacob Soall, Sharon Hazan, and Guy Sheetrit ­ were arrested for using AI to alter and impersonate the voices and images of executives and…",
+   "image": null,
+   "cves": [],
+   "first_seen": "2026-11-11T12:40:42.987688+00:00",
+   "image_checked": true,
+   "instructions": [
+    "For those that do not know there are fairly strict rules and regulations about pushing things, but… If you interact first through the comments then they mostly don’t apply in the US."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "5d7c1511e0dd",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -6640,6 +6635,28 @@
    "instructions_checked": true
   },
   {
+   "id": "21b7ddf6e1b0",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Bay Raises $50 Million to Control What Enterprise AI Agents Can Do",
+   "link": "https://www.securityweek.com/bay-raises-50-million-to-control-what-enterprise-ai-agents-can-do/",
+   "published": "2026-11-11T11:30:00+00:00",
+   "summary": "Founded by three ex-IDF Unit 8200 intelligence officers, Bay is launched to provide a control plane for AI agents. The post Bay Raises $50 Million to Control What Enterprise AI Agents Can Do appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/11/Yuval_Zachari_Bay.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-11T12:40:42.987688+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Bay is designed to allow companies to install and employ AI agents confident that they will not run amok with unintended actions.",
+    "ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure",
+    "Chipmaker Patch Tuesday: Over 200 Vulnerabilities Addressed by Intel, AMD",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "ddf3562d4ef5",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -6673,25 +6690,6 @@
    "image": "https://www.securityweek.com/wp-content/uploads/2023/01/Cybersecurity_News-SecurityWeek.jpg",
    "cves": [],
    "first_seen": "2026-11-08T12:49:05.039061+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "9c2441032957",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Canadian Extradited to US Over Cryptomining Hacks on University Supercomputers",
-   "link": "https://www.securityweek.com/canadian-extradited-to-us-over-cryptomining-hacks-on-university-supercomputers/",
-   "published": "2026-11-04T12:27:58+00:00",
-   "summary": "A federal grand jury indicted two Canadian men for hijacking university supercomputers to secretly mine Electroneum cryptocurrency. The post Canadian Extradited to US Over Cryptomining Hacks on University Supercomputers appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2024/01/cryptocurrency.jpeg",
-   "cves": [],
-   "first_seen": "2026-11-04T13:01:36.600423+00:00",
    "image_checked": true,
    "instructions": [
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
@@ -6866,6 +6864,49 @@
     "Microsoft’s advisory credits a researcher using the moniker ‘nono’ and Benoît Sevens with the discovery.",
     "Microsoft’s November 2026 Patch Tuesday updates fix 1,094 vulnerabilities across its products, including an Outlook bug that the company says has been exploited.",
     "Adobe’s latest Patch Tuesday updates fix roughly 110 vulnerabilities across nine products."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "6ef677aa3015",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Finite State Raises $27 Million to Secure Software and Firmware in Connected Devices",
+   "link": "https://www.securityweek.com/finite-state-raises-27-million-to-secure-software-and-firmware-in-connected-devices/",
+   "published": "2026-11-11T12:24:33+00:00",
+   "summary": "The Series C round will fund international expansion and more autonomous features for the firm’s device security platform. The post Finite State Raises $27 Million to Secure Software and Firmware in Connected Devices appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/12/funding-round.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-11T12:40:42.987688+00:00",
+   "image_checked": true,
+   "instructions": [
+    "ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure",
+    "Chipmaker Patch Tuesday: Over 200 Vulnerabilities Addressed by Intel, AMD",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "6efa2d9b4d0b",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Fortinet Patches Nearly 100 Vulnerabilities",
+   "link": "https://www.securityweek.com/fortinet-patches-nearly-100-vulnerabilities/",
+   "published": "2026-11-11T12:10:14+00:00",
+   "summary": "The massive drop comes after the company integrated frontier AI models into its product security testing. The post Fortinet Patches Nearly 100 Vulnerabilities appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2023/06/fortinet-e1737023333411.jpg",
+   "cves": [],
+   "first_seen": "2026-11-11T12:40:42.987688+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Fortinet on Tuesday dropped 89 new security advisories that address nearly 100 vulnerabilities across its products.",
+    "ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure",
+    "Chipmaker Patch Tuesday: Over 200 Vulnerabilities Addressed by Intel, AMD",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
   },
