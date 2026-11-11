@@ -2470,7 +2470,8 @@
    ],
    "first_seen": "2026-11-10T22:04:27.113869+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "4f0ae400eaf2",
@@ -2526,7 +2527,8 @@
    ],
    "first_seen": "2026-11-10T21:10:58.117182+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "7147b7969602",
@@ -2544,7 +2546,8 @@
    ],
    "first_seen": "2026-11-10T22:04:27.113869+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "92c4d25f1f91",
@@ -2562,7 +2565,8 @@
    ],
    "first_seen": "2026-11-10T21:10:58.117182+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "251acc6e20ce",
@@ -2580,7 +2584,8 @@
    ],
    "first_seen": "2026-11-10T21:10:58.117182+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "647505185714",
@@ -2598,7 +2603,8 @@
    ],
    "first_seen": "2026-11-10T21:10:58.117182+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "81c7c252855e",
@@ -2616,7 +2622,8 @@
    ],
    "first_seen": "2026-11-10T21:10:58.117182+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "173f37e989f0",
@@ -2634,7 +2641,8 @@
    ],
    "first_seen": "2026-11-10T21:10:58.117182+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "e6d739c7b69a",
@@ -2652,7 +2660,8 @@
    ],
    "first_seen": "2026-11-10T21:10:58.117182+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "ee4270815294",
@@ -2670,7 +2679,8 @@
    ],
    "first_seen": "2026-11-10T21:10:58.117182+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "ccc66eb25631",
@@ -5735,7 +5745,8 @@
     "Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
     "BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied."
    ],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "780955fd1e41",
@@ -6331,6 +6342,28 @@
     "Unsafe code must be careful with every call it makes, and the bugs we found fall into three patterns of misplaced trust: trusting code not to panic, trusting user-provided implementations to be correct, and trusting the underlying system.",
     "The comparator is safe code supplied by the caller, so the unsafe code inside the sort must stay sound no matter what it returns.",
     "The CharPattern branch checks that the character is ASCII, but the StringPattern branch assumes a one-byte string pattern must be ASCII."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "f91527c7bf88",
+   "source": "msblog",
+   "source_name": "Microsoft Security Blog",
+   "official": false,
+   "source_type": "vendor_blog",
+   "title": "Detecting sleeper agents hiding in AI model neurons",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/10/detecting-sleeper-agents-hiding-in-ai-model-neurons/",
+   "published": "2026-11-10T23:00:00+00:00",
+   "summary": "Microsoft Research has released new threat research detailing how a capable agent model could be turned into a sleeper agent by editing fewer than 10 neurons to inject a short payload. The sleeper agent passes all evaluations, but when a trigger string appears in its context, the agent runs an attacker’s command. And…",
+   "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/11/backdoor-AI-agents.png",
+   "cves": [],
+   "first_seen": "2026-11-11T01:00:41.154086+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Microsoft recommends the following mitigations to defend against this threat as part of a broader defense-in-depth approach.",
+    "Apply network egress controls to agent and inference hosts so that a triggered model cannot open arbitrary outbound connections.",
+    "Apply attack surface reduction rules to devices that host local agents and inference servers, starting in audit mode.",
+    "Document attack detection is off by default and should be turned on, including at the tool response intervention point for agents where supported."
    ],
    "instructions_checked": true
   },
