@@ -4840,6 +4840,28 @@
    "instructions_checked": true
   },
   {
+   "id": "a9021fd43362",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "eBPF Rootkits: Why Underground Actors Are Taking Notice",
+   "link": "https://www.bleepingcomputer.com/news/security/ebpf-rootkits-why-underground-actors-are-taking-notice/",
+   "published": "2026-11-11T15:01:11+00:00",
+   "summary": "Linux eBPF rootkits can hide malicious activity and evade traditional detection methods without loading kernel modules. Flare reveals how these techniques are spreading through underground forums, where threat actors are sharing rootkit source code, tutorials, and exploits targeting Linux systems.",
+   "image": "https://www.bleepstatic.com/content/posts/2026/11/08/ebpf-header-image.jpg",
+   "cves": [],
+   "first_seen": "2026-11-11T15:52:53.787322+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Organizations running Linux infrastructure should take eBPF threats seriously:",
+    "Investigators could still see associated BPF maps and links, illustrating why defenders should compare multiple sources of host telemetry.",
+    "Restrict eBPF access via kernel.unprivileged_bpf_disabled=1 and limit CAP_BPF / CAP_NET_ADMIN.",
+    "Patch aggressively — BPF verifier bugs are a recurring vulnerability class, and weaponized exploits appear fast."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "886e9406677f",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4984,27 +5006,6 @@
    "instructions_checked": true
   },
   {
-   "id": "d6dd46466a93",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Google Calendar phishing campaign hijacks sessions, bypasses MFA",
-   "link": "https://www.bleepingcomputer.com/news/security/google-calendar-phishing-campaign-hijacks-sessions-bypasses-mfa/",
-   "published": "2026-11-04T15:00:10+00:00",
-   "summary": "A phishing campaign used Google Calendar invites, trusted redirects, and fake login pages to hijack corporate Google sessions and bypass MFA protections. Material Security examines how Operation CloudFire tracked the attacks, blocked malicious messages, and helped take down nearly 900 domains used by the attackers.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/09/22/google-workspace-breach.jpg",
-   "cves": [],
-   "first_seen": "2026-11-04T15:14:33.228079+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Defenders should ask two questions: who is reviewing those logs, and how quickly can they be acted on?",
-    "Teams hunting for this activity in their own environments should start there.",
-    "Equally important is whether the team can revoke sessions, contain OAuth grants, and reset the affected account within an hour."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "7e1f9b33c691",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -5130,6 +5131,28 @@
    "instructions": [
     "All suspicious messages should be verified by calling the bank adviser directly.",
     "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "9c9df925add3",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Hackers use AntiFox AI agents in AWS credential-theft attacks",
+   "link": "https://www.bleepingcomputer.com/news/security/hackers-use-antifox-ai-agents-in-aws-credential-theft-attacks/",
+   "published": "2026-11-11T15:12:59+00:00",
+   "summary": "Attackers are using Alibaba Cloud to host self-managed instances of AntiFox, an open-source agentic penetration testing platform, to target web services and AWS environments.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/09/robot-hacker.jpg",
+   "cves": [],
+   "first_seen": "2026-11-11T15:52:53.787322+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Arctic Wolf's report includes hunting guidance and recommendations for defenders that include correlating IIS webshell activity with unusual AWS access and reviewing successful API calls within bursts of denials.",
+    "The researchers also recommend revoking affected AWS sessions and keys and rotating credentials exposed through application files.",
+    "Its publishers prohibit using the tool against live systems, in real-world penetration tests or security exercises, or for destructive or illegal activity, but they do not describe any technical controls that enforce those restrictions.",
+    "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day"
    ],
    "instructions_checked": true
   },
@@ -6761,6 +6784,27 @@
     "Additionally, Citrix released XenServer updates that mitigate several AMD CPU vulnerabilities that could allow guest VMs to compromise the host or infer the active memory content of another VM.",
     "ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure",
     "Chipmaker Patch Tuesday: Over 200 Vulnerabilities Addressed by Intel, AMD",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "d62ab9694fcc",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Critical Xen Orchestra Flaws Exploited in Attacks",
+   "link": "https://www.securityweek.com/critical-xen-orchestra-flaws-exploited-in-attacks/",
+   "published": "2026-11-11T15:42:47+00:00",
+   "summary": "The authentication bypass allows attackers to execute arbitrary code as admin and take over XCP-ng nodes. The post Critical Xen Orchestra Flaws Exploited in Attacks appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/01/Veeam-backup-cloud-storage.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-11T15:52:53.787322+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Citrix, Ivanti Patch Critical and High-Severity Vulnerabilities",
+    "ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
