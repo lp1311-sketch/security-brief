@@ -1,11 +1,23 @@
 {
  "items": [
   {
-   "id": "04a65df98a9b",
-   "title": "Dynamics 365 Project Operations: Set invoice limits for time and material billing",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=578904",
-   "summary": "Customers often issue a purchase order that sets how much they'll accept on each invoice for a time and material engagement. Until now, Dynamics 365 Project Operations had no place to record that amount, so project managers and billing teams tracked it in spreadsheets and checked invoices by hand, adding…",
-   "published": "2026-11-06T23:04:41+00:00",
+   "id": "d4f32f4ebd6d",
+   "title": "Microsoft Edge: Expanded enforcement controls for Data Loss Prevention connectors",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=579894",
+   "summary": "Microsoft Edge for Business is expanding its existing Data Loss Prevention Enterprise Connector capabilities. Administrators will be able to configure more consistent enforcement across download, upload, paste, and print workflows. Additional controls include required bypass justification and administrator-defined…",
+   "published": "2026-11-11T00:56:01+00:00",
+   "products": [
+    "Microsoft 365"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "37e6fbf40297",
+   "title": "Microsoft Teams: Tenant policy controls who can record and transcribe",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=579860",
+   "summary": "Teams administrators can use meeting policies to control who can start recording and transcription, helping organizations apply consistent meeting settings. Administrators can restrict these permissions to organizers and co-organizers or extend them to presenters. They can also determine whether meeting organizers can…",
+   "published": "2026-11-11T00:56:01+00:00",
    "products": [
     "Teams"
    ],
@@ -13,35 +25,11 @@
    "feature_id": null
   },
   {
-   "id": "ebb843bbf492",
-   "title": "Dynamics 365 Contact Center: Segmentation of recordings and transcripts in Contact Center",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=578901",
-   "summary": "Enterprise customers, particularly in regulated industries and large distributed contact center environments operating across multiple business units, geographies, vendors, and service providers, require strict controls to ensure users can access only the recordings and transcripts relevant to their operational scope…",
-   "published": "2026-11-06T23:04:41+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "9d6203f23cad",
-   "title": "Dynamics 365 Project Operations: Deprecate transaction origins",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=578900",
-   "summary": "Dynamics 365 Project Operations streamlines transaction processing by replacing separate transaction origin records with direct source document references on transaction records, including journal lines, actuals, and invoice line details. This approach reduces the database operations required to maintain links to…",
-   "published": "2026-11-06T23:04:41+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "2c25a259dee7",
-   "title": "Dynamics 365 Human Resources: Streamline the preboarding experience",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=578897",
-   "summary": "Business value Preboarding gives candidates a clear, consistent way to complete requirements before their first day. HR teams can reduce manual follow-ups, repeated data entry, and delays caused by incomplete information by using a structured process with configured validation and document requirements. A guided…",
-   "published": "2026-11-06T23:04:41+00:00",
+   "id": "992c06586f86",
+   "title": "Microsoft Teams: Real-time queue metrics in the Queues app on Mobile",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=579859",
+   "summary": "Calling representative and Supervisor leads can view real-time call queue metrics directly from the Queues app on Mobile, giving them greater visibility into current queue activity and performance while on the go. Users can quickly understand the state of their queues, monitor key operational metrics, and make more…",
+   "published": "2026-11-11T00:56:01+00:00",
    "products": [
     "Teams"
    ],
@@ -49,135 +37,83 @@
    "feature_id": null
   },
   {
-   "id": "b7db7096bebd",
-   "title": "Dynamics 365 Finance: Merge bank account financial dimensions when generating vouchers from bank reconciliation rules",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577856",
-   "summary": "When vouchers are generated through bank reconciliation rules, financial dimensions from the selected bank account are merged with the financial dimensions defined on the reconciliation rule. Dimensions specified on the reconciliation rule take precedence, while any dimensions that aren't specified on the rule…",
-   "published": "2026-11-06T23:04:41+00:00",
+   "id": "01366d0a2e38",
+   "title": "Outlook: More visibility into usage for recoverable items storage",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=579190",
+   "summary": "You'll be able to see how much storage your recoverable items are using in Outlook. This gives you a clearer picture of your storage usage before you reach a limit. You can use this information to make more informed decisions about managing your mailbox. #newoutlookforwindows GA date: February CY2027",
+   "published": "2026-11-11T00:56:01+00:00",
    "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "ea3ca4bd6902",
-   "title": "Dynamics 365 Commerce: Release commerce orders from POS to the warehouse",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=576302",
-   "summary": "Business Value For trade counter and call center operations, orders often need to reach the warehouse quickly so that picking and fulfillment activities can begin without delay. Without a direct path from Commerce to the warehouse management system, staff must manually intervene on every order, which slows fulfillment…",
-   "published": "2026-11-06T23:04:41+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "12981db1485d",
-   "title": "Dynamics 365 Commerce: Improve order capture workflows in Store Commerce",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=576301",
-   "summary": "Business value Every friction point in order capture adds time to each transaction and increases the risk of downstream errors. Context that has no field is lost. A customer order converts to a cash-and-carry sale when all lines are marked as carryout, which removes flexibility that trade counter staff depend on…",
-   "published": "2026-11-06T23:04:41+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "edcf8229ef52",
-   "title": "Dynamics 365 Commerce: Label printing in Store Commerce",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=576300",
-   "summary": "This feature provides label printing in Store Commerce. Store associates print labels in the store, either on demand or from a label print request sent by Commerce headquarters when prices or promotions change. Headquarters is where administrators configure label formats and the printers available to each store, and…",
-   "published": "2026-11-06T23:04:41+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "53d11e7d4034",
-   "title": "Dynamics 365 Commerce: Commerce MCP Tools for POS Shift and Cash Management",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=576299",
-   "summary": "This feature provides reusable Model Context Protocol (MCP) tools for Store Commerce shift and cash management, exposing Commerce capabilities as structured actions that customers, partners, and developers can compose into agentic experiences. The tools enable agentic experiences to list a store's registers and…",
-   "published": "2026-11-06T23:04:41+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "eb4b512dda8d",
-   "title": "Work IQ: Execute (Recipes)",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=570866",
-   "summary": "Enable agents to execute reusable Work IQ recipes that coordinate supported tools and actions. GA date: November CY2026 Preview date: October CY2026",
-   "published": "2026-11-06T23:04:41+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "0c88548b78c0",
-   "title": "Work IQ: Federated connectors",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=570670",
-   "summary": "Enable Work IQ to use federated connectors for governed access to additional enterprise data sources. GA date: November CY2026 Preview date: October CY2026",
-   "published": "2026-11-06T23:04:41+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "b9c8a9ceea21",
-   "title": "Microsoft Teams: Facilitator follow-up mode",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=566523",
-   "summary": "Chat naturally with Facilitator without tagging it each time. GA date: December CY2026",
-   "published": "2026-11-06T23:04:41+00:00",
-   "products": [
-    "Teams"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "138eb418bd9d",
-   "title": "Microsoft Teams: Multiple screen shares in Teams Rooms on Windows",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=579184",
-   "summary": "You can now view up to two shared screens side by side during meetings, reducing interruptions from screen hand-offs. Participants can switch between side-by-side and expanded views, identify presenters for each screen, and benefit from layouts optimized for single or dual displays. Available with Teams Rooms Pro. GA…",
-   "published": "2026-11-04T23:59:50+00:00",
-   "products": [
-    "Teams"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "89000ef995b9",
-   "title": "Microsoft 365: Frontier expands to public previews in Teams, Outlook, OneDrive, and SharePoint",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=578225",
-   "summary": "Frontier is expanding to bring eligible public preview features across Microsoft 365 into one program. Users enrolled in Frontier can get eligible previews for new Outlook for Windows, OneDrive, SharePoint, Microsoft Teams, and Copilot, managed through a single admin-controlled enrollment experience. Frontier…",
-   "published": "2026-10-30T22:08:34+00:00",
-   "products": [
-    "Teams",
-    "SharePoint",
-    "OneDrive",
-    "Copilot",
     "Outlook"
    ],
-   "stage": "Preview",
+   "stage": null,
    "feature_id": null
   },
   {
-   "id": "c5fab9391adf",
-   "title": "Dynamics 365 Contact Center: Use bullseye routing with user groups to orchestrate conversations",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=576606",
-   "summary": "Bullseye routing with user groups enables a tiered assignment strategy that automatically expands the pool of eligible representatives as conversation wait time increases. Rather than assigning from a fixed pool or waiting for overflow rules to trigger, this approach progressively widens availability in concentric…",
-   "published": "2026-10-28T23:04:31+00:00",
+   "id": "eceba11035b8",
+   "title": "Outlook: Expand or collapse all accounts at once",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=579189",
+   "summary": "You'll be able to expand or collapse all accounts at once in Outlook's folder pane. You won't need to expand or collapse each account individually. This makes it easier to navigate multiple accounts or keep your folder pane compact. #newoutlookforwindows GA date: February CY2027",
+   "published": "2026-11-11T00:56:01+00:00",
+   "products": [
+    "Outlook"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "44858f7348cd",
+   "title": "Outlook: Remember your online archive folder pane state",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=579188",
+   "summary": "Outlook will remember whether your online archive is expanded or collapsed when you return. Outlook on the web and the new Outlook for Windows will each keep their own saved state. This saves you from repeatedly expanding or collapsing your archive as you navigate your mailbox. #newoutlookforwindows GA date: February…",
+   "published": "2026-11-11T00:56:01+00:00",
+   "products": [
+    "Outlook"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "79289f279c99",
+   "title": "Outlook: Keep folders expanded when you restart Outlook",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=579187",
+   "summary": "Outlook will remember which folders and shared mailboxes you have expanded or collapsed when you restart the app. You can pick up where you left off without opening the same folder branches again. This makes returning to your usual folders easier. #newoutlookforwindows GA date: February CY2027",
+   "published": "2026-11-11T00:56:01+00:00",
+   "products": [
+    "Outlook"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "edf89f6a5b05",
+   "title": "Outlook: Sort your subfolders from A to Z",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=579186",
+   "summary": "You'll be able to sort a folder's subfolders alphabetically from the parent folder. This makes it easier to find the folder you need without rearranging subfolders one by one. It's a simple way to keep long folder lists organized. #newoutlookforwindows GA date: February CY2027",
+   "published": "2026-11-11T00:56:01+00:00",
+   "products": [
+    "Outlook"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "1b5d25454269",
+   "title": "Outlook: Keep folder sharing within your organization's policies",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=579185",
+   "summary": "Folder sharing in Outlook will respect your organization's restrictions for Default and Anonymous permissions. When these restrictions are enabled, you won't be able to change either setting. Permissions granted directly to individual users will remain unaffected. This helps keep folder sharing aligned with your…",
+   "published": "2026-11-11T00:56:01+00:00",
+   "products": [
+    "Outlook"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "90e478ce30c2",
+   "title": "Dynamics 365 Contact Center: Quality Evaluation Agent - Review historical quality metrics in a unified dashboard",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577895",
+   "summary": "The quality evaluation historical dashboard provides aggregated insights from completed evaluations, helping organizations track quality trends over time. Users can view quality scores and trends across selected date ranges, with up to two years of historical data available. More info…",
+   "published": "2026-11-11T00:56:01+00:00",
    "products": [
     "Microsoft 365"
    ],
@@ -185,11 +121,47 @@
    "feature_id": null
   },
   {
-   "id": "764acc000ef3",
-   "title": "Microsoft Copilot (Microsoft 365): App Blocks",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577743",
-   "summary": "App Blocks enables M365 Copilot Chat users to turn their requests and data into rich, interactive experiences directly within the conversation, including calculators, dashboards, forms, planners, visualizations, simulations, comparison tools, and other interactive apps. It helps users move beyond static responses to…",
-   "published": "2026-10-26T23:15:50+00:00",
+   "id": "9db54184c108",
+   "title": "Microsoft Power Platform governance and administration: Secure Dataverse record with column-based filtering",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577860",
+   "summary": "This enhancement introduces column-based security filtering, enabling records to be secured using attribute values rather than traditional ownership. This allows security admins to define access based on business dimensions such as region or department, making it ideal for scenarios where record ownership does not…",
+   "published": "2026-11-11T00:56:01+00:00",
+   "products": [
+    "Microsoft 365"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "6e369858b329",
+   "title": "Dynamics 365 Commerce: Design receipts using a modern, web-based designer in headquarters and print them on A4 paper or thermal printers from Store Commerce, supporting B2B scenarios",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=573703",
+   "summary": "Applies to: Point of Sale (Store Commerce app and web), Commerce headquarters receipt format designer, Hardware Station, and Commerce Scale Unit. The modern receipt designer introduces a React-based designer in headquarters at Retail and Commerce > Channel setup > POS setup > POS > Receipt formats > Designer. Users…",
+   "published": "2026-11-11T00:56:01+00:00",
+   "products": [
+    "Microsoft 365"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "8652d777d818",
+   "title": "Dynamics 365 Business Central: E-Documents - Self-billing enablement",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=573612",
+   "summary": "Streamline self-billing by automatically creating, managing, and exchanging electronic documents for self-billed invoices as part of the invoice lifecycle. This reduces manual document handling while helping ensure self-billed transactions include the appropriate electronic documents in standardized formats used by…",
+   "published": "2026-11-11T00:56:01+00:00",
+   "products": [
+    "Microsoft 365"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "4bed18c3f61f",
+   "title": "Microsoft Copilot (Microsoft 365): Copilot Cowork: Access Business Applications with Work IQ",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=573293",
+   "summary": "Users can access Business Applications through Work IQ in Copilot Cowork and use Business Skills to complete end-to-end business processes grounded in their enterprise data and apps. This helps users move from finding the right business application to taking action across key workflows with less context switching. GA…",
+   "published": "2026-11-11T00:53:34+00:00",
    "products": [
     "Copilot"
    ],
@@ -197,24 +169,11 @@
    "feature_id": null
   },
   {
-   "id": "9701e4eb82ce",
-   "title": "Excel: Edit with Copilot in Excel on iPhone",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577177",
-   "summary": "Edit with Copilot makes it easier to edit and transform your Excel workbooks on your phone using natural language. Copilot can continue working on your task even when you move away from the app, so you can come back when the work is ready. Chat mode also remains available when you want to ask questions and get…",
-   "published": "2026-10-26T23:15:50+00:00",
-   "products": [
-    "Copilot",
-    "Microsoft 365 Apps"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "2683a5dceabd",
-   "title": "Dynamics 365 Contact Center: Unified routing - Use overflow actions to protect customer experience for direct inward calls",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=576607",
-   "summary": "Overflow for direct inward dialing leverages conversation orchestration to detect key direct inward dialing-related events—such as the representative being busy, offline, rejecting the call, or failing to answer—and apply administrator-defined fallback actions. Administrators configure natural language playbooks using…",
-   "published": "2026-10-23T23:10:36+00:00",
+   "id": "493f27041a75",
+   "title": "Work IQ: Business Skills to manage your business processes in Work IQ MCP",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=573290",
+   "summary": "Business skills are natural-language instructions that capture how your organization gets work done. They represent your business processes, policies, and domain knowledge in a format that agents can understand and follow. Each skill describes how to complete a specific type of work—the steps involved, the information…",
+   "published": "2026-11-11T00:53:34+00:00",
    "products": [
     "Microsoft 365"
    ],
@@ -222,83 +181,11 @@
    "feature_id": null
   },
   {
-   "id": "e0b28eecb4a8",
-   "title": "Dynamics 365 Contact Center: Unified routing - Orchestrate conversation distribution with natural language playbooks",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577788",
-   "summary": "Conversation orchestration in Dynamics 365 Contact Center keeps every conversation actively managed throughout its lifecycle, from initiation through resolution. Instead of applying fixed rules at different stages of a conversation journey, conversation orchestration monitors each conversation as conditions evolve…",
-   "published": "2026-10-22T23:45:24+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "ad8eb20131b1",
-   "title": "Power Pages: SDK (Software Development Kit)",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577419",
-   "summary": "Build native mobile applications or kiosks using Power Pages as the backend foundation with support for authentication, authorization, APIs, data access, and reusable mobile capabilities. GA date: March CY2027 Preview date: January CY2027",
-   "published": "2026-10-22T22:58:40+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "455ef7255631",
-   "title": "Microsoft 365 app: Inventory - Update Repair",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=576286",
-   "summary": "Update Repair helps admins identify Windows devices with Microsoft 365 Apps that are out of date or experiencing update issues. In the Microsoft 365 Apps admin center, admins can review device status and recommended actions, remotely start Online Repair for eligible devices, and follow manual remediation guidance for…",
-   "published": "2026-10-19T23:15:15+00:00",
-   "products": [
-    "Microsoft 365 Apps"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "3b6278fc567c",
-   "title": "Dynamics 365 Contact Center: Workforce engagement management - Analyze adherence history to optimize workforce planning",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=576831",
-   "summary": "The Adherence History Report provides a complete view of customer service representatives’ historical adherence to scheduled tasks and activities. It helps supervisors analyze patterns, identify gaps, and improve workforce efficiency. Key capabilities Trend chart: Visualize adherence patterns for individual service…",
-   "published": "2026-10-16T19:09:36+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "93f4b539a99c",
-   "title": "Dynamics 365 Contact Center: Unified routing - Handle waiting conversations when queues close or become unstaffed",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=576759",
-   "summary": "This capability enhances queue handling by intelligently detecting two key scenarios where conversations would otherwise remain unserved: Queue transitions to out-of-operating hours: The system continuously monitors active conversations that entered a queue before closing time. If the queue transitions to…",
-   "published": "2026-10-16T19:08:43+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "51ed52bd629e",
-   "title": "Dynamics 365 Contact Center: Unified routing - Assign conversation to expert who engaged with the customer previously",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=576746",
-   "summary": "Assign to a previously engaged or preferred expert leverages historical interaction context, queue membership alignment, and expert availability, to ensure customers are reconnected with experts who already understand their issue. When the previous or preferred expert is unavailable, assignments seamlessly fall back…",
-   "published": "2026-10-16T19:08:30+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "a1778cceed72",
-   "title": "Microsoft Teams: Facilitator's enhanced protection skill can alert you to potential scams",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=573450",
-   "summary": "Facilitator can help you spot suspected attempts by people outside your organization to trick you into sharing sensitive information during a meeting. When Facilitator is in your meeting, its Protection skill uses AI to check the meeting transcript for signs of possible social engineering. If it detects a suspected…",
-   "published": "2026-10-15T22:47:30+00:00",
+   "id": "007fe8eef280",
+   "title": "Microsoft Teams: Granular Conditional Access for Teams meetings",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=571879",
+   "summary": "Granular Conditional Access for Teams meetings gives organizations greater control over access to sensitive meetings. Administrators can apply Conditional Access policies to selected meetings, helping ensure participants meet organizational security requirements before joining. GA date: November CY2026",
+   "published": "2026-09-21T23:04:49+00:00",
    "products": [
     "Teams"
    ],
@@ -306,49 +193,13 @@
    "feature_id": null
   },
   {
-   "id": "ac7c8db8411c",
-   "title": "OneDrive: Prompt gallery for Copilot",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=571308",
-   "summary": "Discover easier ways to use Copilot in OneDrive The new Prompt Gallery offers ready-to-use prompts for common file tasks, helping you get started quickly, discover what Copilot can do, and customize prompts to fit your needs. Access the Prompt Gallery from: The Copilot button in the bottom-right corner of OneDrive The…",
-   "published": "2026-09-28T22:58:08+00:00",
-   "products": [
-    "OneDrive",
-    "Copilot"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "f30b0f62a8e7",
-   "title": "Microsoft Teams: Events in Meet app in Teams in GCC High and DoD",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=571390",
-   "summary": "Users can now use the Teams Meet app to discover events across their organization, track what important events are upcoming, and plan and organize their own professional events. With this release, Meet app will be renamed to Events app. GA date: November CY2026",
-   "published": "2026-09-18T22:00:04+00:00",
-   "products": [
-    "Teams"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "a998a6be989f",
-   "title": "Microsoft Purview: Data Loss Prevention-Expanded inline protection for unmanaged apps in Edge for Business",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=571396",
-   "summary": "Microsoft Purview collection and data loss prevention (DLP) policies will support browser inline protection for a significantly broader set of unmanaged generative AI apps in Edge for Business. Admins can use existing Purview policy experiences to detect and protect sensitive data shared through supported browser…",
+   "id": "3336db34c3a8",
+   "title": "Microsoft Purview: DSPM-Copilot Readiness and Data Explorer",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=571157",
+   "summary": "We’re introducing the new readiness for Microsoft Copilot and data explorer experiences in Microsoft Purview Data Security Posture Management (DSPM). These new capabilities provide data security teams with greater visibility into their organization’s data security posture and help them assess risks, investigate…",
    "published": "2026-09-15T23:00:36+00:00",
    "products": [
-    "Purview"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "800e57b5a5fb",
-   "title": "Microsoft Purview: Data Loss Prevention for Microsoft Cowork",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=570845",
-   "summary": "Microsoft Purview Data Loss Prevention (DLP) is expanding to Microsoft Cowork, enabling data security admins to use a single policy across Microsoft 365 Copilot and Cowork. The integration helps protect sensitive AI interactions by preventing the use of labeled knowledge sources, blocking prompts that contain…",
-   "published": "2026-09-08T22:57:21+00:00",
-   "products": [
+    "Teams",
     "Purview",
     "Copilot"
    ],
@@ -356,47 +207,24 @@
    "feature_id": null
   },
   {
-   "id": "c658e9107e64",
-   "title": "Planner: AI-generated Status Reports in Planner Agent",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=567886",
-   "summary": "AI-powered Status Report in Planner Agent turns your plan data into a polished, stakeholder-ready update in minutes. Just ask Planner Agent for a status report and it pulls your task data and transforms it into a clear narrative covering overall status, progress, risks, and what's next. You can easily customize the…",
-   "published": "2026-07-28T22:43:45+00:00",
+   "id": "f7c55c4b8fce",
+   "title": "Microsoft Purview: Auto-labeling scalability, policy management, and reporting enhancements",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=570445",
+   "summary": "Microsoft Purview is improving auto-labeling capabilities to help organizations manage and validate labeling policies at enterprise scale. These enhancements expand support for larger SharePoint scopes, improve policy management flexibility, and provide richer visibility into auto-labeling activity. GA date: November…",
+   "published": "2026-09-03T22:50:06+00:00",
    "products": [
-    "Microsoft 365"
+    "SharePoint",
+    "Purview"
    ],
    "stage": null,
    "feature_id": null
   },
   {
-   "id": "c04a28098a95",
-   "title": "Planner: Planner Agent chat in Basic Plans",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=567671",
-   "summary": "Introducing built-in Planner Agent chat with natural language Q&A, smart task discovery, and in-plan task management. GA date: September CY2026",
-   "published": "2026-07-14T22:41:38+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "721c7cdfe2eb",
-   "title": "Planner: Local Custom Fields/Columns",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=566867",
-   "summary": "Custom Fields let you tailor your plans to match the way your team works. Add Text, Number, Date, Yes/No, and Choice fields to capture the information that matters most. View and update custom fields across Board, Grid, and Task details, with support for sorting, filtering, grouping, and bulk editing to keep your work…",
-   "published": "2026-07-01T23:03:18+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "aba745891ac8",
-   "title": "OneNote: Multimodal capture in Copilot Notebooks (Windows)",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=566322",
-   "summary": "Capture on Windows helps you bring conversations and ideas from meetings, brainstorming sessions, and everyday work into Copilot Notebooks. Capture audio, images, and notes in one experience, then let Copilot turn them into structured notes with key insights, decisions, and action items, in a Copilot Notebook of your…",
-   "published": "2026-06-18T23:00:06+00:00",
+   "id": "16ca6e1c4b12",
+   "title": "Microsoft Copilot (Microsoft 365): Federated Copilot Connectors in Microsoft 365 Copilot",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=569212",
+   "summary": "Federated Copilot connectors enable users to securely connect Microsoft Copilot to their favorite third party sources, retrieving data in real-time using the Model Context Protocol (MCP). Federated Copilot connectors do not store or index customer data in Microsoft - access happens in real time using the user’s own…",
+   "published": "2026-08-18T23:05:00+00:00",
    "products": [
     "Copilot"
    ],
@@ -404,11 +232,36 @@
    "feature_id": null
   },
   {
-   "id": "b00673988d13",
-   "title": "Microsoft Purview: Endpoint Data Loss Prevention - Protect sensitive data over FTP and SFTP with Endpoint DLP",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=565868",
-   "summary": "Endpoint DLP support for FTP and SFTP enables organizations to monitor and protect sensitive data transferred from managed endpoints using FTP and SFTP, helping prevent unauthorized data exfiltration while maintaining visibility and control. GA date: October CY2026 Preview date: September CY2026",
-   "published": "2026-06-15T23:00:45+00:00",
+   "id": "3fbeb7ecc1fd",
+   "title": "Microsoft Teams: Pop out calls into a new browser window",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=569206",
+   "summary": "Microsoft Teams browser app users will be able to pop out calls into a simplified call window that stays available while they navigate away from, hide, or minimize the tab or progressive web app (PWA) hosting the call. This helps users multitask and collaborate more easily during calls. GA date: October CY2026",
+   "published": "2026-08-13T22:42:07+00:00",
+   "products": [
+    "Teams"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "9e6b60601e0f",
+   "title": "SharePoint: HTML pages",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=569208",
+   "summary": "Create HTML with Copilot in SharePoint or upload your own HTML from another source. Once stored in the pages library, you can render HTML as a page in SharePoint, make additional edits, and share with your audience. HTML gives you new ways to present your content beautifully alongside our existing ASPX pages. GA date…",
+   "published": "2026-08-11T22:53:53+00:00",
+   "products": [
+    "SharePoint",
+    "Copilot"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "f522000501e7",
+   "title": "Microsoft Purview: Information Protection-Auto-labeling per-policy coverage report",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=568935",
+   "summary": "For each enforced auto-labeling policy, admins can view how files processed during enforcement correlate to the latest simulation run. The per-policy coverage report shows volumes of files that have been labeled or are not yet labeled, and whether those files were included in the last simulation snapshot. This helps…",
+   "published": "2026-08-07T21:45:15+00:00",
    "products": [
     "Purview"
    ],
@@ -416,11 +269,35 @@
    "feature_id": null
   },
   {
-   "id": "2d3c0f7b60c9",
-   "title": "Microsoft Copilot (Microsoft 365): Multiple Voice Styles in M365 Copilot voice chats",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=564804",
-   "summary": "Users can select from multiple voice style options for their voice experience in M365 Copilot. GA date: December CY2026",
-   "published": "2026-06-01T23:15:29+00:00",
+   "id": "f5d951919bb4",
+   "title": "Microsoft Teams: Additional health signals available for Teams Rooms on Android on Pro Management Portal",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=566856",
+   "summary": "Expanded Pro Management Portal (PMP) health monitoring for Teams Rooms on Android by surfacing device health signals including storage health, Teams meeting app, calendar sync, secondary display health and network. When issues are detected, PMP will automatically generate actionable alerts and support ticket creation…",
+   "published": "2026-08-04T22:45:42+00:00",
+   "products": [
+    "Teams"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "44acfebbbec7",
+   "title": "Microsoft Teams: See more messages on mobile",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=568067",
+   "summary": "We are introducing a more streamlined messaging experience that displays more content on screen while improving readability when using Teams on mobile. These updates make it easier to scan conversations and follow the discussion flow, helping users stay productive and engaged wherever they work. GA date: February…",
+   "published": "2026-08-03T22:55:03+00:00",
+   "products": [
+    "Teams"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "7fa60042a540",
+   "title": "Microsoft Edge: Upgraded Copilot new tab page",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=566703",
+   "summary": "Search, chat, and explore the web from one search box with Copilot-suggested actions and curated work content to help your users get things done faster on the Copilot new tab page. Users will see upgraded Copilot new tab page functionality and features. GA date: November CY2026 Preview date: September CY2026",
+   "published": "2026-06-26T22:01:51+00:00",
    "products": [
     "Copilot"
    ],
@@ -428,36 +305,11 @@
    "feature_id": null
   },
   {
-   "id": "e2174dbda9fd",
-   "title": "Microsoft Purview: Data Loss Prevention to restrict processing external emails in Microsoft 365 Copilot and Copilot Chat",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=561552",
-   "summary": "We are expanding Microsoft Purview DLP for Microsoft 365 Copilot and Copilot Chat to safeguard risks from external emails. This real-time control helps organizations mitigate data risks by preventing Microsoft 365 Copilot and Chat from processing emails from senders external to your organization. GA date: June CY2027…",
-   "published": "2026-05-12T23:00:33+00:00",
-   "products": [
-    "Purview",
-    "Copilot"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "64fe9e6d6bcd",
-   "title": "Microsoft Copilot (Microsoft 365): [Copilot Extensibility] Admins can govern and manage federated copilot connectors in Microsoft 365 admin center",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=501584",
-   "summary": "Admins can govern and manage federated copilot connectors in Microsoft 365 admin center. #copilotcontrolsystem GA date: February CY2026",
-   "published": "2026-02-06T00:00:51+00:00",
-   "products": [
-    "Copilot"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "23b087cfedf2",
-   "title": "Outlook: Enriching profile cards with custom, organization-specific properties",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=529851",
-   "summary": "Customers can now customize their M365 profile cards by adding custom properties unique to their organization. These properties can be sourced from external systems like HR platforms, enriching user profiles with relevant organizational details. Tenant admins can configure these properties with a display name and…",
-   "published": "2025-11-18T00:00:20+00:00",
+   "id": "b87a40505cf7",
+   "title": "Outlook: Block External Images Settings Update",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=565862",
+   "summary": "Outlook on the web and the new Outlook for Windows now support will support new settings for loading external images. New settings will allow customers to block all external content, or to load all content by default if the customer admin allows. Existing default behavior will not be changed (load external content…",
+   "published": "2026-06-17T23:15:06+00:00",
    "products": [
     "Outlook"
    ],
@@ -465,11 +317,11 @@
    "feature_id": null
   },
   {
-   "id": "9e5cc53e2179",
-   "title": "Microsoft Copilot (Microsoft 365): Streamlined Authentication process with OAuth for Connector Admins",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=502530",
-   "summary": "Effortless authentication, unified through OAuth — empowering Connector Admins to connect in just a few clicks. #copilotcontrolsystem GA date: December CY2025",
-   "published": "2025-11-08T00:00:04+00:00",
+   "id": "8f9c52b678e8",
+   "title": "Microsoft Copilot (Microsoft 365): Copilot People Connectors introduces people data ingestions with differentiated access control",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=561326",
+   "summary": "Copilot People Connector now supports importing people data with access controls into Microsoft 365. This release enables organizations to bring people data from external systems into Microsoft 365 along with associated access control lists (ACLs), ensuring Copilot respects existing permissions defined in source…",
+   "published": "2026-05-15T22:00:42+00:00",
    "products": [
     "Copilot"
    ],
@@ -477,12 +329,158 @@
    "feature_id": null
   },
   {
-   "id": "e23d27f77de5",
-   "title": "Microsoft Copilot (Microsoft 365): [Copilot Extensibility] Users can explore third-party content in Copilot chat with deep citations and side-by-side previews",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=502543",
-   "summary": "Drive Copilot chat engagement for 3P content via deep citations, inline citations, side by side preview experiences. Note: This roadmap item is no longer accurate and will be removed from the roadmap. We apologize for any inconvenience. GA date: March CY2026",
-   "published": "2025-10-15T22:45:29+00:00",
+   "id": "da83c91a80f4",
+   "title": "Microsoft Purview: Endpoint Data Loss Prevention - Policy Sync & Device Health AI-Powered Investigation",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=562016",
+   "summary": "AI agent skill to detect and alert unhealthy policy sync and device configuration. GA date: July CY2027 Preview date: June CY2027",
+   "published": "2026-05-12T23:00:33+00:00",
    "products": [
+    "Purview"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "9b0351cd41cd",
+   "title": "Microsoft Purview: Data Loss Prevention – New Guided Experience to Diagnose and Resolve DLP Issues",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=561032",
+   "summary": "We’re introducing a new guided diagnostics experience to help users understand why their DLP policies may not be behaving as expected. This experience provides a clear summary of why a DLP action was taken on a document, including which policies were triggered, the order of evaluation, and detailed insights into which…",
+   "published": "2026-04-24T22:00:04+00:00",
+   "products": [
+    "Purview"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "1e0130f5218b",
+   "title": "Microsoft Purview: Data Lifecycle Management – Increase in expansion limit for auto expanding archive beyond 1.5TB",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=560820",
+   "summary": "Previously, auto expanding archive mailbox expansion was supported only up to 1.5 TB, after which mailboxes would become inoperative. Archive mailboxes can now automatically expand beyond the 1.5 TB limit, ensuring uninterrupted retention and enabling scalable archive growth as storage thresholds are reached. This…",
+   "published": "2026-04-23T23:15:05+00:00",
+   "products": [
+    "Purview"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "0777efd854cd",
+   "title": "Microsoft Viva: Viva Glint - Copilot assisted commenting in Glint survey taking",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=560595",
+   "summary": "Viva Glint survey takers will be able to use a streamlined version of Microsoft Copilot in the Glint survey taking experience to help them rewrite their comments, helping survey takers feel more confident about the feedback they’re providing. By increasing perceived security through reducing identifiable writing…",
+   "published": "2026-04-17T22:15:50+00:00",
+   "products": [
+    "Copilot"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "49ac5fb1d6a6",
+   "title": "Microsoft Teams: Chat for organizers and presenters in structured meetings and webinars on Teams Rooms on Windows",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=557165",
+   "summary": "When a Teams Rooms on Windows acts as an organizer, co-organizer or presenter in a structured meeting or webinar, you have access to the private chat for event management known as the Event Group. You can also switch to a separate chat with attendees enabling smooth event experiences for all. Available in Teams Rooms…",
+   "published": "2026-02-19T00:15:25+00:00",
+   "products": [
+    "Teams"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "a02baef447c4",
+   "title": "Microsoft Copilot (Microsoft 365): [Copilot Extensibility] Users in GCC-H will be able to use custom engine agents",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=503771",
+   "summary": "Users in GCC-H will be able to use custom engine agents. GA date: August CY2026",
+   "published": "2025-10-17T22:00:54+00:00",
+   "products": [
+    "Copilot"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "44d491617f78",
+   "title": "OneNote: Copilot Notebooks available in OneNote on Web",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=511797",
+   "summary": "Users will now have access to their Copilot Notebooks on the web version of OneNote. GA date: March CY2026",
+   "published": "2025-10-16T23:15:52+00:00",
+   "products": [
+    "Copilot"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "db1db983fa4d",
+   "title": "Microsoft Copilot (Microsoft 365): [Copilot Extensibility] Users will be able to upload files stored locally or in one drive to custom engine agents",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=503767",
+   "summary": "Users will be able to upload files stored locally or in one drive to custom engine agents. GA date: January CY2027",
+   "published": "2025-10-16T23:15:52+00:00",
+   "products": [
+    "Copilot"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "9d0b355b12da",
+   "title": "Microsoft 365 app: Add Search results as references to your Copilot Notebooks in the M365 Copilot app",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=510100",
+   "summary": "Users can quickly add a Search result as a reference to a Copilot Notebook within the M365 Copilot app. GA date: April CY2026",
+   "published": "2025-10-03T22:00:02+00:00",
+   "products": [
+    "Copilot"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "545c8c085d6e",
+   "title": "Microsoft Copilot (Microsoft 365): Copilot in SharePoint",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=501451",
+   "summary": "Simplifies SharePoint content management and ensures content is Copilot-ready by automating metadata, fixing stale content, enabling fast page creation, improving compliance, and enriching content so Copilot can deliver more accurate, grounded answers. Updated April 16: We are still in development for GA and have…",
+   "published": "2025-09-18T16:15:27+00:00",
+   "products": [
+    "SharePoint",
+    "Copilot"
+   ],
+   "stage": "In development",
+   "feature_id": null
+  },
+  {
+   "id": "340174791dc4",
+   "title": "Microsoft Teams: Intelligent recap for DoD",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=500242",
+   "summary": "Intelligent meeting recap uses AI to provide a quick summary of your meeting, highlighting key discussion points, identifying follow-up actions, and offering quick access to significant points such as name mentions, when a screen was shared, individualized speaker markers, topics, and chapters. GA date: November CY2026",
+   "published": "2025-08-08T22:15:46+00:00",
+   "products": [
+    "Teams"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "4fdd5ca34538",
+   "title": "Microsoft Purview compliance portal: Data Loss Prevention – Restrict access action support for sematic models and lakehouses in Fabric",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=422501",
+   "summary": "Your organization can now control who can access your data depending on the sensitive information detected in Fabric semantic models and lakehouses. DLP restrict access action allows you to block access to guest users or all users depending on what labels or sensitive information types matches your semantic models or…",
+   "published": "2024-11-19T18:30:19+00:00",
+   "products": [
+    "Purview"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "ca3f3b4fc51d",
+   "title": "Microsoft Edge: Rewrite by Copilot in Edge is being upgraded to include enterprise data protection compliance standards",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=420335",
+   "summary": "Rewrite by Copilot in Edge, which lets users edit typed text for tone, format, and length within an open page in Microsoft Edge, is being updated to include enterprise data protection for commercial customers. Once Rewrite is available, users signed in with a Microsoft Entra ID will have enterprise data protection…",
+   "published": "2024-10-03T23:30:37+00:00",
+   "products": [
+    "Entra",
     "Copilot"
    ],
    "stage": null,
