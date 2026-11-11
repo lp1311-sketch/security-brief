@@ -1,16 +1,6 @@
 {
  "stories": [
   {
-   "id": "9364f9baac68",
-   "title": "Microsoft Fixes Nearly 1,100 Security Vulnerabilities",
-   "summary": "Microsoft did another four-digit patch drop today, releasing updates to fix almost 1,100 security vulnerabilities in its Windows operating systems and supported…",
-   "priority": "Critical",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 21:55 UTC",
-   "sources": "KrebsOnSecurity, SecurityWeek, CISA Cybersecurity Advisories, The Hacker News",
-   "url": "story/9364f9baac68.html"
-  },
-  {
    "id": "e61330c97785",
    "title": "IBM Aspera Faspex, SignalWire FreeSwitch Vulnerabilities Exploited in Attacks",
    "summary": "CISA has added CVE-2026-123218 and CVE-2026-116779 to KEV, urging federal agencies to patch them within three days. The post IBM Aspera Faspex, SignalWire FreeSwitch…",
@@ -21,6 +11,16 @@
    "url": "story/e61330c97785.html"
   },
   {
+   "id": "ac77bc3897e8",
+   "title": "Barracuda Email Security Gateway (ESG) im Nov. 2026 gehackt",
+   "summary": "Anbieter Barracuda hat zum 2. November 2026 die beiden Schwachstellen CVE-2026-116606 und CVE-2026-111560 gepatcht. Beides sind Pre-Authentication Authorization Bypass…",
+   "priority": "Critical",
+   "category": "Patch Radar",
+   "date": "11 Nov 2026, 06:23 UTC",
+   "sources": "Born's IT and Windows Blog, CISA Cybersecurity Advisories, The Hacker News",
+   "url": "story/ac77bc3897e8.html"
+  },
+  {
    "id": "3d5dfb277e1d",
    "title": "CISA Flags SonicWall SonicOS MFA Bypass Flaw Amid Reports of Possible Exploitation",
    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a high-severity vulnerability impacting SonicWall SonicOS to its Known Exploited…",
@@ -29,6 +29,26 @@
    "date": "09 Nov 2026, 06:05 UTC",
    "sources": "The Hacker News, SecurityWeek, BleepingComputer, CISA Cybersecurity Advisories",
    "url": "story/3d5dfb277e1d.html"
+  },
+  {
+   "id": "9364f9baac68",
+   "title": "Microsoft Fixes Nearly 1,100 Security Vulnerabilities",
+   "summary": "Microsoft did another four-digit patch drop today, releasing updates to fix almost 1,100 security vulnerabilities in its Windows operating systems and supported…",
+   "priority": "Critical",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 21:55 UTC",
+   "sources": "KrebsOnSecurity, SecurityWeek",
+   "url": "story/9364f9baac68.html"
+  },
+  {
+   "id": "cd6455aacef5",
+   "title": "Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) Tuesday added two security flaws impacting Cisco BroadWorks and Openwave Messaging Webtop Media…",
+   "priority": "Critical",
+   "category": "Patch Radar",
+   "date": "11 Nov 2026, 06:04 UTC",
+   "sources": "The Hacker News",
+   "url": "story/cd6455aacef5.html"
   },
   {
    "id": "95f883361cdc",
@@ -711,6 +731,16 @@
    "url": "story/62ad9c2a6bdd.html"
   },
   {
+   "id": "ddf3562d4ef5",
+   "title": "Bluetooth, AirPlay Pairing Vulnerabilities Patched Across Apple Platforms",
+   "summary": "Apple has patched Bluetooth and AirPlay pairing flaws, iMessage vulnerabilities, and an exploited Brotli bug across its platforms. The post Bluetooth, AirPlay Pairing…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "11 Nov 2026, 07:00 UTC",
+   "sources": "SecurityWeek, The Hacker News",
+   "url": "story/ddf3562d4ef5.html"
+  },
+  {
    "id": "6922144e7a8d",
    "title": "F-Secure Identifies 26 Ways AI Can Harm Consumers, and Where to Stop Them",
    "summary": "New AI Harms Taxonomy traces how harm moves through AI systems, from misleading chatbot answers to compromised autonomous agents, and identifies where defenses can…",
@@ -1241,16 +1271,6 @@
    "url": "story/3badf33b9e63.html"
   },
   {
-   "id": "ba7507c6f20e",
-   "title": "Apple Patches iMessage Group Chat Privacy Flaws and Bluetooth Pairing Vulnerabilities",
-   "summary": "An iMessage flaw could let a remote attacker join a group chat and receive its messages, Apple said yesterday, and it released updates to fix it. The updates also fix a…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 10:16 UTC",
-   "sources": "The Hacker News",
-   "url": "story/ba7507c6f20e.html"
-  },
-  {
    "id": "ce0b470d4dea",
    "title": "SAP Patches Four CVSS 10.0 Flaws, Including Two Enabling Remote Code Execution",
    "summary": "Four flaws that attackers could exploit without logging in were fixed today as part of SAP's monthly Security Patch Day—the vendor rates all four 10.0, the maximum CVSS…",
@@ -1771,26 +1791,6 @@
    "url": "story/62af4291e17c.html"
   },
   {
-   "id": "a2c922a06d73",
-   "title": "Former OpenAI Engineer Pleads Not Guilty to Planting Covert Device in Executive Meeting Room",
-   "summary": "The OpenAI engineer who was arrested and charged last month for planting a covert audio recording device in the company's office has pleaded not guilty. According to…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "09 Nov 2026, 07:05 UTC",
-   "sources": "The Hacker News",
-   "url": "story/a2c922a06d73.html"
-  },
-  {
-   "id": "df6a1e5a88d8",
-   "title": "U.S. Agencies Warn Refrigeration Controller Attacks Could Cause Fires and Inventory Losses",
-   "summary": "U.S. government agencies have warned that threat actors are actively targeting industrial refrigeration and cold-chain monitoring systems globally with an aim to cause…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "09 Nov 2026, 06:15 UTC",
-   "sources": "The Hacker News",
-   "url": "story/df6a1e5a88d8.html"
-  },
-  {
    "id": "9c037607d0d5",
    "title": "Brava Security Emerges From Stealth With $15 Million in Funding",
    "summary": "Its multi-agent AI platform generates the telemetry an attack would produce to fix gaps in enterprise defenses. The post Brava Security Emerges From Stealth With $15…",
@@ -2039,6 +2039,26 @@
    "date": "04 Nov 2026, 10:36 UTC",
    "sources": "SecurityWeek",
    "url": "story/76f398aa937f.html"
+  },
+  {
+   "id": "a2c922a06d73",
+   "title": "Former OpenAI Engineer Pleads Not Guilty to Planting Covert Device in Executive Meeting Room",
+   "summary": "The OpenAI engineer who was arrested and charged last month for planting a covert audio recording device in the company's office has pleaded not guilty. According to…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "09 Nov 2026, 07:05 UTC",
+   "sources": "The Hacker News",
+   "url": "story/a2c922a06d73.html"
+  },
+  {
+   "id": "df6a1e5a88d8",
+   "title": "U.S. Agencies Warn Refrigeration Controller Attacks Could Cause Fires and Inventory Losses",
+   "summary": "U.S. government agencies have warned that threat actors are actively targeting industrial refrigeration and cold-chain monitoring systems globally with an aim to cause…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "09 Nov 2026, 06:15 UTC",
+   "sources": "The Hacker News",
+   "url": "story/df6a1e5a88d8.html"
   },
   {
    "id": "5eb8586a8493",

@@ -338,6 +338,26 @@
    "instructions_checked": true
   },
   {
+   "id": "ac77bc3897e8",
+   "source": "borncity",
+   "source_name": "Born's IT and Windows Blog",
+   "official": false,
+   "source_type": "news",
+   "title": "Barracuda Email Security Gateway (ESG) im Nov. 2026 gehackt",
+   "link": "https://borncity.com/blog/2026/11/11/barracuda-email-security-gateways-im-nov-2026-gehackt/",
+   "published": "2026-11-11T06:23:25+00:00",
+   "summary": "Anbieter Barracuda hat zum 2. November 2026 die beiden Schwachstellen CVE-2026-116606 und CVE-2026-111560 gepatcht. Beides sind Pre-Authentication Authorization Bypass and Command Injection-Schwachstellen in diversen Produkten. Nun hat Barracuda bestätigt, dass eine kleine Zahl an Email Security Gateway (ESG)…",
+   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
+   "cves": [
+    "CVE-2026-111560",
+    "CVE-2026-116606"
+   ],
+   "first_seen": "2026-11-11T07:12:01.296935+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "b8fa5d77ef9f",
    "source": "borncity",
    "source_name": "Born's IT and Windows Blog",
@@ -2988,6 +3008,27 @@
    "instructions": [
     "Federal Civilian Executive Branch (FCEB) agencies are recommended to apply the fixes by November 12, 2026.",
     "In an advisory for CVE-2026-102895 published on July 31, 2026, the maintainers of the GPUStack Python package credited Nikko Enggaliano, Wei Yunzhou, Rui Yang, and Haoyu Wang for independently reporting the flaw, adding that \"active in-the-wild exploitation\" was reported by Ulex Innovative Systems' Javier Sixto."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "cd6455aacef5",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches",
+   "link": "https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html",
+   "published": "2026-11-11T06:04:02+00:00",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) Tuesday added two security flaws impacting Cisco BroadWorks and Openwave Messaging Webtop Media Transcoder to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. Details of the vulnerabilities are below -…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4aXykaOroazGO_7IuXugse9ynGpt1PkKJDM8lKL4by93ixX28cs23KAZZRF2dCN2cogu1ti8q5kmqfqSBLmOXWkVi7ZGWmwYMkeCOUXsOXwLoF07FbzmVnlr9DoeqtCboI_9LKWgohgWi2jIB1TzGO6uEkp5lsMnq5fSVqrN-NZGJjAQE2kIUyHsdkw6J/s1600/cisa-cisco.jpg",
+   "cves": [
+    "CVE-2026-20320"
+   ],
+   "first_seen": "2026-11-11T07:12:01.296935+00:00",
+   "instructions": [
+    "In light of active exploitation, Federal Civilian Executive Branch (FCEB) agencies are recommended to apply the patches by November 24, 2026, to secure their networks.",
+    "Cisco's advisory also makes no mention of the flaw being maliciously used."
    ],
    "instructions_checked": true
   },
@@ -6585,6 +6626,27 @@
     "Barracuda says any patch not applied automatically should be manually installed, and that devices with automatic patching disabled should have it switched back on.",
     "According to Barracuda, attackers must be able to reach an appliance’s admin interface to exploit the flaws.",
     "The company advises organizations to keep these interfaces reachable only from trusted internal networks."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "ddf3562d4ef5",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Bluetooth, AirPlay Pairing Vulnerabilities Patched Across Apple Platforms",
+   "link": "https://www.securityweek.com/bluetooth-airplay-pairing-vulnerabilities-patched-across-apple-platforms/",
+   "published": "2026-11-11T07:00:17+00:00",
+   "summary": "Apple has patched Bluetooth and AirPlay pairing flaws, iMessage vulnerabilities, and an exploited Brotli bug across its platforms. The post Bluetooth, AirPlay Pairing Vulnerabilities Patched Across Apple Platforms appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/11/Apple-iphone-bluetooth-airplay.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-11T07:12:01.296935+00:00",
+   "image_checked": true,
+   "instructions": [
+    "CVE-2026-113971 appears only in the iOS and iPadOS 18.7.12 advisory, which covers iPhone XS, XS Max, XR and the seventh-generation iPad. “An attacker with physical access may be able to pair a device with an AirPlay receiver from the lock screen,” Apple explains.",
+    "Chrome Update Patches Exploited XML Zero-Day, Eighth This Year",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
   },
