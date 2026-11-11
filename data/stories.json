@@ -275,7 +275,7 @@
    "title": "Microsoft Security Update Summary (10. November 2026)",
    "link": "https://borncity.com/blog/2026/11/10/microsoft-security-update-summary-10-november-2026/",
    "published": "2026-11-10T21:45:13+00:00",
-   "summary": "Microsoft hat am 10. November 2026 Sicherheitsupdates für Windows-Clients und -Server, sowie für weitere Produkte veröffentlicht. Die Sicherheitsupdates beseitigen 1093 Schwachstellen (CVEs), davon sind 63 kritisch, 1029 wichtig, und eine moderat. Nachfolgend findet sich ein kompakter Überblick über diese Updates, ……",
+   "summary": "Microsoft hat am 10. November 2026 Sicherheitsupdates für Windows-Clients und -Server, sowie für weitere Produkte veröffentlicht. Die Sicherheitsupdates beseitigen 1093 (Bleeping Computer nennt 1.235) Schwachstellen (CVEs), davon sind 63 kritisch, 1029 wichtig, und eine moderat. Nachfolgend findet sich ein kompakter ……",
    "image": "https://borncity.com/blog/wp-content/uploads/2021/06/Update-01.jpg",
    "cves": [],
    "first_seen": "2026-11-10T22:45:40.406649+00:00",
@@ -2948,28 +2948,6 @@
    "instructions_checked": true
   },
   {
-   "id": "349817163ae5",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "CISA Confirms Hackers Exploiting WordPress Core Flaw During Software Upgrades",
-   "link": "https://thehackernews.com/2026/11/cisa-confirms-hackers-exploiting.html",
-   "published": "2026-11-04T05:43:11+00:00",
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a security flaw in WordPress Core to the Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The high-severity vulnerability, tracked as CVE-2026-119977 (CVSS score: 8.1), is a case of Time-of-check…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9IgE0BWDAvYzjY8wFSMADIRn69AMLYxUa-oPoOISNBOpPbxwBNoWrbXWzI6P0deiU6WDqitiIZx1gFXSAlR8xX9rj56BuU48veMEPJAGSsmQTbVPirFOCuyMc_KQxtbPfc841GZGZ-3HSYYHCGbHnzrihtwQUaMlXrT3leLzI2USh00hc9OBw4k1SCJt4/s1600/wp-exploit.jpg",
-   "cves": [
-    "CVE-2026-119977"
-   ],
-   "first_seen": "2026-11-04T08:30:27.059975+00:00",
-   "instructions": [
-    "With exploitation now officially confirmed by CISA, Federal Civilian Executive Branch (FCEB) agencies have time until November 6, 2026, to apply the fixes.",
-    "\"WordPress Core contains a time-of-check time-of-use (TOCTOU) race condition vulnerability that could allow unauthenticated attackers to execute code on the server during the upgrade window,\" CISA said.",
-    "That said, it does require an attacker to exploit a brief window during a complete Core update that could allow unauthenticated code execution."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "3d5dfb277e1d",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -3200,7 +3178,7 @@
    "title": "Google Issues Chrome Security Update for Eighth Actively Exploited Zero-Day of 2026",
    "link": "https://thehackernews.com/2026/11/google-issues-chrome-security-update.html",
    "published": "2026-11-10T06:52:54+00:00",
-   "summary": "Google on Monday released updates to patch nine security vulnerabilities, including one that has come under active exploitation in the wild. The high-severity vulnerability, assigned the CVE identifier CVE-2026-125350 (CVSS score: N/A), has been described as a use-after-free bug in the XML component. Use-after-free…",
+   "summary": "Google on Monday released updates to patch nine security vulnerabilities, including one that has come under active exploitation in the wild. The high-severity vulnerability, assigned the CVE identifier CVE-2026-125350 (CVSS score: 8.8), has been described as a use-after-free bug in the XML component. \"Use-after-free…",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjk5S9J891bQS8W6TgyoiEPQ7geGia8FqqWjckFlo9qMH2wXIXv-7gyod1XKUpI9BfgcliN2Re8A85rJ121jxqgfnw1LsjYBvAYtX7694GVgMF7B94G0n5MzqMaKqLAbr-No1nqrN0gyF8MFR_bYQIYlqiTh_FzobmWrq4NOCLbcW_78uEMMW5FE4eqJoo/s1600/chrome-0day.jpg",
    "cves": [
     "CVE-2026-125350"
