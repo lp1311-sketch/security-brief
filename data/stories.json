@@ -19,6 +19,22 @@
    "instructions_checked": true
   },
   {
+   "id": "ef892408bebc",
+   "source": "ars",
+   "source_name": "Ars Technica Security",
+   "official": false,
+   "source_type": "news",
+   "title": "Google DeepMind just mathematically verified key parts of Signal",
+   "link": "https://arstechnica.com/ai/2026/11/signals-encryption-just-passed-an-ai-powered-mathematical-checkup/",
+   "published": "2026-11-11T14:08:57+00:00",
+   "summary": "Google DeepMind researchers used agentic AI to mathematically prove, or “formally verify,” a number of the Signal protocol’s key cryptographic guarantees—a landmark development for the widely used cryptography and AI itself. Conducted as a sort of proof-of-concept project in just four weeks, the work is significant in…",
+   "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/signal_icon-1024x648.jpg",
+   "cves": [],
+   "first_seen": "2026-11-11T14:54:28.707849+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "868b661c5e46",
    "source": "ars",
    "source_name": "Ars Technica Security",
@@ -2800,24 +2816,6 @@
    "instructions_checked": true
   },
   {
-   "id": "5e99d13bfbb2",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "APT29-Linked Hackers Hijack Web Analytics Script to Deliver iOS and Android Exploits",
-   "link": "https://thehackernews.com/2026/11/apt29-linked-hackers-hijack-web.html",
-   "published": "2026-11-04T14:27:52+00:00",
-   "summary": "The Russia-linked threat actor known as APT29 is presumed to be behind a large-scale watering hole campaign targeting iOS and Android users through compromised websites, fake domains, and a supply chain attack involving a Ukrainian web analytics service called Plerdy SEO Tracker. \"The injected JavaScript code collects…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhx1cus2o8fkYGLhQu9BfPgGtAUwnmTAMucLagfAodBuRoYnyxGIJKgpqtKFyCSV-WSG3pDqmPujhj-iwoOZB-zF8JjbQMrLzDHYtdTPA3hD3Kc3rqYQM4CQwkICwZkh8K6O8ZSt-WAA_PBoUA6lHwh_55dbDlKizsjzcTN847c9BSHsWHmrAP42JHRHIYS/s1600/ios-exploit.jpg",
-   "cves": [],
-   "first_seen": "2026-11-04T15:14:33.228079+00:00",
-   "instructions": [
-    "There's nothing to tap, you don't need to click any link, nothing to install and no warning."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "0eb55bf1598e",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -3338,6 +3336,25 @@
     "If a server is infected, the researchers recommend three steps:",
     "Upgrade to the latest version, then confirm that ss -axp | grep integrity returns nothing.",
     "The researchers, who named the backdoor cwpdoor , captured its installer, a shell script posing as a version update, on June 29."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "7fc0ff6aee2a",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Hackers Target Qlik Sense Servers With Reverse Shells, Stage ActiveMQ and Veeam Exploits",
+   "link": "https://thehackernews.com/2026/11/hackers-target-qlik-sense-servers-with.html",
+   "published": "2026-11-11T14:01:00+00:00",
+   "summary": "Threat actors have been observed targeting Qlik Sense servers to unsuccessfully deliver PowerShell reverse shell commands against multiple environments in October 2026. Cynet's CyOps and Research teams said they identified the suspicious activity in October 2026 against several E.U.-based customers within a narrow…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg5L1m-CqPOrgk9otByC4blBWuqDylovaSyHYhirRHQvzjjSUB0DBWbxnF_8cNIsONC6yoL3h-ydX61vmnsctKr_IbcnvmwRLAMqch16Ru5oMVuDWy1bilEt6EAgEerB7mUxICRgck1NkoJeA7Y2lvV0oqLkw12-f1xMhC7Dw5F1aK35NhVf3oZwj4WbfOT/s1600/qliksense.jpg",
+   "cves": [],
+   "first_seen": "2026-11-11T14:54:28.707849+00:00",
+   "instructions": [
+    "A second variant of the PowerShell script attempts to install OpenSSH and creates a scheduled task named \"WinUpdCheck\" that launches a PowerShell reverse shell written to \"C:\\ProgramData\\ssh\\winc.ps1\" at five-minute intervals.",
+    "\"If sshd remained unavailable, it downloaded OpenSSH-Win64.zip from the staging server, extracted it, and ran install-sshd.ps1,\" Cynet said."
    ],
    "instructions_checked": true
   },
@@ -4255,26 +4272,6 @@
    "first_seen": "2026-11-05T22:16:50.878981+00:00",
    "image_checked": true,
    "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "4448a4360ec1",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Cyberattack wipes cloud data at major Russian hosting provider Beget",
-   "link": "https://therecord.media/russia-cyberattack-beget-cloud",
-   "published": "2026-11-04T14:00:00+00:00",
-   "summary": "A major Russian web hosting provider is struggling to restore its services after a cyberattack destroyed data across its cloud infrastructure and disrupted hundreds of websites.",
-   "image": "https://cms.therecord.media/uploads/Beget_de93fe90b7.jpg",
-   "cves": [],
-   "first_seen": "2026-11-04T14:17:44.270771+00:00",
-   "image_checked": true,
-   "instructions": [
-    "\"Restoring all services will take a considerable amount of time, as more than 1,000 servers must be manually inspected,\" the company said.",
-    "However, restoring services would be a slow process because each server must be checked individually before being brought back online."
-   ],
    "instructions_checked": true
   },
   {
@@ -5506,28 +5503,6 @@
    "instructions_checked": true
   },
   {
-   "id": "63cdf286f06a",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "SonicWall warns of unpatched flaws in end-of-life GMS software",
-   "link": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-unpatched-flaws-in-end-of-life-gms-software/",
-   "published": "2026-11-04T14:42:25+00:00",
-   "summary": "SonicWall warned customers of two security flaws affecting end-of-life Global Management System (GMS) systems that will not be patched.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/04/SonicWall.jpg",
-   "cves": [],
-   "first_seen": "2026-11-04T15:14:33.228079+00:00",
-   "image_checked": true,
-   "instructions": [
-    "\"Organizations using the product should be aware of the associated security risks and are strongly encouraged to upgrade to the SonicWall Network Security Manager (NSM).\"",
-    "On Tuesday, SonicWall also urged customers to upgrade to NMS, as it will not release security patches because the vulnerable systems have now reached end of life.",
-    "As a result, no remediation or security update will be released for these vulnerabilities,\" SonicWall warned on Tuesday.",
-    "In February, SonicWall asked customers to patch two SMA1000 zero-days (CVE-2026-15409 and CVE-2026-15410) and two more (CVE-2026-15409 and CVE-2026-15410) in July."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "82ab336fed5a",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -6049,22 +6024,6 @@
    "instructions_checked": true
   },
   {
-   "id": "c09f6d942d38",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "Incidents Move Too Fast for Pen & Paper",
-   "link": "https://www.darkreading.com/cybersecurity-operations/incidents-move-fast-pen-paper",
-   "published": "2026-11-04T14:17:00+00:00",
-   "summary": "Organizations may not be ready for completely autonomous communication processes, but there are places where automating information updates would alleviate pressure.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt550d9c2a9b884c0d/6aeb41c425092d7e7e6bf3f7/GettyImages-1436333087.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-04T16:17:08.100235+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "32fa2d4c90f6",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -6534,26 +6493,6 @@
    "instructions_checked": true
   },
   {
-   "id": "1cb3088dd861",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Agentic Data Security Firm Sentra Raises $150 Million",
-   "link": "https://www.securityweek.com/agentic-data-security-firm-sentra-raises-150-million/",
-   "published": "2026-11-04T14:09:20+00:00",
-   "summary": "The company will invest in agentic data security capabilities and expand its go-to-market organization. The post Agentic Data Security Firm Sentra Raises $150 Million appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2023/01/Cybersecurity_News-SecurityWeek.jpg",
-   "cves": [],
-   "first_seen": "2026-11-04T14:17:44.270771+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Sentra finds and classifies data across environments, maps assets reachable by users, AI agents, and service accounts, and enforces least privilege policies while eliminating the high-risk data agents should not find.",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "3347a00667c5",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -6615,6 +6554,28 @@
    "instructions_checked": true
   },
   {
+   "id": "7ba871700f25",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Asus, Zoom Release Security Patches",
+   "link": "https://www.securityweek.com/asus-zoom-release-security-patches/",
+   "published": "2026-11-11T13:58:38+00:00",
+   "summary": "Attackers could exploit them for command execution, memory overwrites, and privilege escalation. The post Asus, Zoom Release Security Patches appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2023/06/ASUS-Vulnerabillities.jpg",
+   "cves": [],
+   "first_seen": "2026-11-11T14:54:28.707849+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Computer maker Asus published an advisory describing four high- and medium-severity vulnerabilities in certain router firmware releases.",
+    "Additionally, Cisco updated several advisories: it added fresh information on Node2Shell ’s impact and on an authorization bypass’s impact on ISE and ISE-PIC, and added new details on the availability of fixes for seven critical- and high-severity CVEs in Meraki products.",
+    "Citrix, Ivanti Patch Critical and High-Severity Vulnerabilities",
+    "ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "2dacffdc48c8",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -6631,28 +6592,6 @@
    "instructions": [
     "Android’s November 2026 Updates Patch Over 200 Vulnerabilities",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "e17a54acdaac",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Barracuda ESG Authentication Bypass Flaw Opens Path to Root",
-   "link": "https://www.securityweek.com/barracuda-email-security-gateway-authentication-bypass-opens-path-to-root/",
-   "published": "2026-11-04T14:24:54+00:00",
-   "summary": "An authentication bypass and a command injection flaw can be chained for root access on Barracuda’s Email Security Gateway appliances. The post Barracuda ESG Authentication Bypass Flaw Opens Path to Root appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2023/08/Email-Security.jpg",
-   "cves": [],
-   "first_seen": "2026-11-04T15:14:33.228079+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Customers are advised to update to the newest firmware and confirm that every available patch is installed.",
-    "Barracuda says any patch not applied automatically should be manually installed, and that devices with automatic patching disabled should have it switched back on.",
-    "According to Barracuda, attackers must be able to reach an appliance’s admin interface to exploit the flaws.",
-    "The company advises organizations to keep these interfaces reachable only from trusted internal networks."
    ],
    "instructions_checked": true
   },
@@ -7474,25 +7413,6 @@
     "It’s one of seven vulnerabilities described in an advisory published on November 6. “An authentication enforcement vulnerability in SonicOS SSLVPN service may allow a user with valid credentials for an alternate authentication method to bypass SAML authentication controls.",
     "Under Binding Operational Directive 26-04, federal agencies must address it by November 20.",
     "SonicWall’s advisory doesn’t mark any of the other six flaws as exploited."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "6b6d8b64e2bf",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Sysdig Adds Runtime Security and Governance for AI Agents",
-   "link": "https://www.securityweek.com/sysdig-adds-runtime-security-and-governance-for-ai-agents/",
-   "published": "2026-11-04T14:34:44+00:00",
-   "summary": "Sysdig’s platform uses runtime visibility to track AI agent actions and block risky behavior before it reaches production systems. The post Sysdig Adds Runtime Security and Governance for AI Agents appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2023/01/Cybersecurity_News-SecurityWeek.jpg",
-   "cves": [],
-   "first_seen": "2026-11-04T15:14:33.228079+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
   },
