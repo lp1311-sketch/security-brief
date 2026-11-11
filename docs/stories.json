@@ -1,6 +1,16 @@
 {
  "stories": [
   {
+   "id": "474586429e7c",
+   "title": "CISA flags Cisco BroadWorks flaw as actively exploited in attacks",
+   "summary": "The US Cybersecurity and Infrastructure Security Agency (CISA) warned on Tuesday that hackers are now exploiting a high-severity Cisco BroadWorks vulnerability in…",
+   "priority": "Critical",
+   "category": "Patch Radar",
+   "date": "11 Nov 2026, 10:12 UTC",
+   "sources": "BleepingComputer, The Hacker News, CISA Cybersecurity Advisories",
+   "url": "story/474586429e7c.html"
+  },
+  {
    "id": "e61330c97785",
    "title": "IBM Aspera Faspex, SignalWire FreeSwitch Vulnerabilities Exploited in Attacks",
    "summary": "CISA has added CVE-2026-123218 and CVE-2026-116779 to KEV, urging federal agencies to patch them within three days. The post IBM Aspera Faspex, SignalWire FreeSwitch…",
@@ -9,16 +19,6 @@
    "date": "10 Nov 2026, 09:42 UTC",
    "sources": "SecurityWeek, The Hacker News, CISA Cybersecurity Advisories, Born's IT and Windows Blog",
    "url": "story/e61330c97785.html"
-  },
-  {
-   "id": "c5080c64e3d8",
-   "title": "Threat Actors Exploit Openwave, Cisco BroadWorks Vulnerabilities",
-   "summary": "The flaws, CVE-2026-111793 and CVE-2026-20320, let attackers leak sensitive information, including configuration data. The post Threat Actors Exploit Openwave, Cisco…",
-   "priority": "Critical",
-   "category": "Patch Radar",
-   "date": "11 Nov 2026, 09:01 UTC",
-   "sources": "SecurityWeek, The Hacker News, CISA Cybersecurity Advisories",
-   "url": "story/c5080c64e3d8.html"
   },
   {
    "id": "3d5dfb277e1d",
@@ -89,6 +89,16 @@
    "date": "09 Nov 2026, 16:04 UTC",
    "sources": "BleepingComputer",
    "url": "story/d7669d6db99e.html"
+  },
+  {
+   "id": "c5080c64e3d8",
+   "title": "Threat Actors Exploit Openwave, Cisco BroadWorks Vulnerabilities",
+   "summary": "The flaws, CVE-2026-111793 and CVE-2026-20320, let attackers leak sensitive information, including configuration data. The post Threat Actors Exploit Openwave, Cisco…",
+   "priority": "Critical",
+   "category": "Patch Radar",
+   "date": "11 Nov 2026, 09:01 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/c5080c64e3d8.html"
   },
   {
    "id": "ac77bc3897e8",
@@ -179,16 +189,6 @@
    "date": "10 Nov 2026, 16:00 UTC",
    "sources": "Microsoft Security Response Center, The Hacker News",
    "url": "story/749621e2cdd4.html"
-  },
-  {
-   "id": "1f6bc1af5305",
-   "title": "N-able Takes N-central Offline as Researcher Drops Over 30 Zero-Days",
-   "summary": "Attackers could exploit the flaws for remote code execution, credential theft, and administrator account creation. The post N-able Takes N-central Offline as Researcher…",
-   "priority": "High",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 09:56 UTC",
-   "sources": "SecurityWeek, The Hacker News",
-   "url": "story/1f6bc1af5305.html"
   },
   {
    "id": "7e1f9b33c691",
@@ -511,14 +511,14 @@
    "url": "story/c1d47a910d2a.html"
   },
   {
-   "id": "7d35c70e6708",
-   "title": "Russian Turla Hackers Use New Cereal Malware to Steal Emails From Government Exchange Servers",
-   "summary": "The Russia-aligned state-sponsored threat actor known as Turla (aka Snake) is wielding a previously undocumented cyber espionage toolset called Cereal that's used to…",
+   "id": "1f6bc1af5305",
+   "title": "N-able Takes N-central Offline as Researcher Drops Over 30 Zero-Days",
+   "summary": "Attackers could exploit the flaws for remote code execution, credential theft, and administrator account creation. The post N-able Takes N-central Offline as Researcher…",
    "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "10 Nov 2026, 10:07 UTC",
-   "sources": "The Hacker News, BleepingComputer",
-   "url": "story/7d35c70e6708.html"
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 09:56 UTC",
+   "sources": "SecurityWeek, The Hacker News",
+   "url": "story/1f6bc1af5305.html"
   },
   {
    "id": "7d2482c88528",
@@ -671,14 +671,14 @@
    "url": "story/633b52d3362d.html"
   },
   {
-   "id": "0e899e1e6c12",
-   "title": "Hackers now exploit critical Barracuda ESG flaws to gain root access",
-   "summary": "Cybersecurity company Barracuda Networks warned that attackers have begun exploiting two recently patched Email Security Gateway (ESG) vulnerabilities that let them run…",
+   "id": "7d35c70e6708",
+   "title": "Russian Turla Hackers Use New Cereal Malware to Steal Emails From Government Exchange Servers",
+   "summary": "The Russia-aligned state-sponsored threat actor known as Turla (aka Snake) is wielding a previously undocumented cyber espionage toolset called Cereal that's used to…",
    "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 10:10 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/0e899e1e6c12.html"
+   "category": "Attacks & Breaches",
+   "date": "10 Nov 2026, 10:07 UTC",
+   "sources": "The Hacker News, BleepingComputer",
+   "url": "story/7d35c70e6708.html"
   },
   {
    "id": "a876e139f448",
@@ -779,16 +779,6 @@
    "date": "05 Nov 2026, 07:06 UTC",
    "sources": "The Hacker News",
    "url": "story/a665869d02d2.html"
-  },
-  {
-   "id": "62ad9c2a6bdd",
-   "title": "CISA flags WordPress RCE flaw as actively exploited in attacks",
-   "summary": "The US Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies that attackers have started exploiting a recently patched high-severity WordPress…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "04 Nov 2026, 12:11 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/62ad9c2a6bdd.html"
   },
   {
    "id": "ddf3562d4ef5",
@@ -909,6 +899,16 @@
    "date": "10 Nov 2026, 13:00 UTC",
    "sources": "Dark Reading",
    "url": "story/b18e440d8eb0.html"
+  },
+  {
+   "id": "0e899e1e6c12",
+   "title": "Hackers now exploit critical Barracuda ESG flaws to gain root access",
+   "summary": "Cybersecurity company Barracuda Networks warned that attackers have begun exploiting two recently patched Email Security Gateway (ESG) vulnerabilities that let them run…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 10:10 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/0e899e1e6c12.html"
   },
   {
    "id": "48d9ef3d98d6",
@@ -1041,16 +1041,6 @@
    "url": "story/156a0344f330.html"
   },
   {
-   "id": "3c0c651efea8",
-   "title": "Over 3 Million People Hit by Frontline Education Data Breach",
-   "summary": "Frontline Education told Indiana regulators that its August data breach affected over 3 million school district staff and students. The post Over 3 Million People Hit by…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "09 Nov 2026, 10:09 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/3c0c651efea8.html"
-  },
-  {
    "id": "840fc9184c68",
    "title": "Iris Ohyama data cloud breach exposes info of 7.7 million customers",
    "summary": "Japanese manufacturer Iris Ohyama, the operator of the Iris Plaza shopping platform, disclosed that personal information belonging to about 7.7 million people may have…",
@@ -1119,16 +1109,6 @@
    "date": "05 Nov 2026, 12:33 UTC",
    "sources": "SecurityWeek, The Hacker News",
    "url": "story/1779cfdf0141.html"
-  },
-  {
-   "id": "68af6446b07c",
-   "title": "Russia-Linked Hackers Hit iOS, Android Devices With Exploit Chains via Watering Holes",
-   "summary": "The large-scale watering hole campaign has been targeting entities in the US and Europe, mainly in Ukraine. The post Russia-Linked Hackers Hit iOS, Android Devices With…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "05 Nov 2026, 10:37 UTC",
-   "sources": "SecurityWeek, Ars Technica Security, The Hacker News, BleepingComputer",
-   "url": "story/68af6446b07c.html"
   },
   {
    "id": "89af0224359d",
@@ -1321,16 +1301,6 @@
    "url": "story/3badf33b9e63.html"
   },
   {
-   "id": "ce0b470d4dea",
-   "title": "SAP Patches Four CVSS 10.0 Flaws, Including Two Enabling Remote Code Execution",
-   "summary": "Four flaws that attackers could exploit without logging in were fixed today as part of SAP's monthly Security Patch Day—the vendor rates all four 10.0, the maximum CVSS…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 10:02 UTC",
-   "sources": "The Hacker News",
-   "url": "story/ce0b470d4dea.html"
-  },
-  {
    "id": "0e6f77f0820c",
    "title": "Anthropic's Claude Fable 5.2 Beats GPT-6 Cyber in Multi-Stage Cyberattack Benchmark",
    "summary": "Anthropic on Monday released Claude Fable 5.2 and Claude Mythos 5.2 models, which it said exhibit improvements in coding, reasoning, and vision. During pre-release…",
@@ -1419,6 +1389,16 @@
    "date": "09 Nov 2026, 11:27 UTC",
    "sources": "The Hacker News",
    "url": "story/c5154d08fadf.html"
+  },
+  {
+   "id": "3c0c651efea8",
+   "title": "Over 3 Million People Hit by Frontline Education Data Breach",
+   "summary": "Frontline Education told Indiana regulators that its August data breach affected over 3 million school district staff and students. The post Over 3 Million People Hit by…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "09 Nov 2026, 10:09 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/3c0c651efea8.html"
   },
   {
    "id": "ba147c5fc5c9",
@@ -1551,6 +1531,16 @@
    "url": "story/bcd0f8e51ff4.html"
   },
   {
+   "id": "68af6446b07c",
+   "title": "Russia-Linked Hackers Hit iOS, Android Devices With Exploit Chains via Watering Holes",
+   "summary": "The large-scale watering hole campaign has been targeting entities in the US and Europe, mainly in Ukraine. The post Russia-Linked Hackers Hit iOS, Android Devices With…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "05 Nov 2026, 10:37 UTC",
+   "sources": "SecurityWeek, Ars Technica Security, The Hacker News",
+   "url": "story/68af6446b07c.html"
+  },
+  {
    "id": "350327fdd7cd",
    "title": "Chainalysis warns all users hit in cyber breach involving ‘agentic’ techniques",
    "summary": "Chainalysis, the blockchain analytics company, said Wednesday night that some information belonging to all its users — which its website says include those in the law…",
@@ -1631,14 +1621,14 @@
    "url": "story/8384c224e801.html"
   },
   {
-   "id": "493913be8a05",
-   "title": "Chrome 157 Rolls Out With 213 Security Fixes, Seven Rated Critical",
-   "summary": "The browser update resolves dozens of memory safety bugs and incorrect/missing authorization issues. The post Chrome 157 Rolls Out With 213 Security Fixes, Seven Rated…",
+   "id": "ce0b470d4dea",
+   "title": "SAP Patches Four CVSS 10.0 Flaws, Including Two Enabling Remote Code Execution",
+   "summary": "Four flaws that attackers could exploit without logging in were fixed today as part of SAP's monthly Security Patch Day—the vendor rates all four 10.0, the maximum CVSS…",
    "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "04 Nov 2026, 10:38 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/493913be8a05.html"
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 10:02 UTC",
+   "sources": "The Hacker News",
+   "url": "story/ce0b470d4dea.html"
   },
   {
    "id": "e56a3763b149",
@@ -1809,16 +1799,6 @@
    "date": "09 Nov 2026, 10:56 UTC",
    "sources": "The Hacker News",
    "url": "story/a02fb0af2916.html"
-  },
-  {
-   "id": "62af4291e17c",
-   "title": "LNbits Urges All Operators to Shut Down Their Bitcoin Lightning Wallet Servers Amid Attacks",
-   "summary": "Everyone running LNbits, a free, open-source Bitcoin Lightning wallet system, should shut down their servers now because of a wave of attacks, the project said…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "09 Nov 2026, 10:01 UTC",
-   "sources": "The Hacker News",
-   "url": "story/62af4291e17c.html"
   },
   {
    "id": "e8082cc54dfb",
@@ -2081,14 +2061,14 @@
    "url": "story/4448a4360ec1.html"
   },
   {
-   "id": "76f398aa937f",
-   "title": "Rigged Coding Assignment, Abused AI Tool Opened Path to $6 Billion Binance Heist",
-   "summary": "Binance’s first incident report traces the record theft to a months-long campaign that compromised three engineers’ computers. The post Rigged Coding Assignment, Abused…",
+   "id": "62af4291e17c",
+   "title": "LNbits Urges All Operators to Shut Down Their Bitcoin Lightning Wallet Servers Amid Attacks",
+   "summary": "Everyone running LNbits, a free, open-source Bitcoin Lightning wallet system, should shut down their servers now because of a wave of attacks, the project said…",
    "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "04 Nov 2026, 10:36 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/76f398aa937f.html"
+   "category": "Patch Radar",
+   "date": "09 Nov 2026, 10:01 UTC",
+   "sources": "The Hacker News",
+   "url": "story/62af4291e17c.html"
   },
   {
    "id": "a2c922a06d73",
