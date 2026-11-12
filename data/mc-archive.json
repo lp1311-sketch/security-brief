@@ -1,6 +1,62 @@
 {
  "items": [
   {
+   "id": "5ad4038f47d5",
+   "title": "MC1550797: 60-day reminder: Hardening changes for ReFS volumes on removable media",
+   "link": "https://mc.merill.net/message/MC1550797",
+   "summary": "What and why:Microsoft is making hardening changes to the Resilient File System (ReFS). The changes improve the security posture of Windows by adding visibility into unsupported external ReFS configurations and by providing controls to block affected volumes. The changes apply to all supported Windows platforms in…",
+   "published": "2026-11-12T18:01:41+00:00"
+  },
+  {
+   "id": "1b06c1b3578e",
+   "title": "MC1550796: Windows Office Hours: November 19, 2026",
+   "link": "https://mc.merill.net/message/MC1550796",
+   "summary": "If you are an IT admin with questions about managing and updating Windows, we want to help. Every third Thursday of the month, we host a live chat-based event on the Tech Community called Windows Office Hours. Members of the Windows, Microsoft Intune, Windows Autopilot, Windows Autopatch, and Windows 365 engineering…",
+   "published": "2026-11-12T18:01:37+00:00"
+  },
+  {
+   "id": "0eded9d018dc",
+   "title": "MC1387578: Microsoft Defender for Office 365: Localized default mark and notify email template",
+   "link": "https://mc.merill.net/message/MC1387578",
+   "summary": "Microsoft Defender for Office 365 will localize the default \"Mark and notify\" email template based on users' Outlook language settings, improving clarity in user-reported message notifications. Rollout starts June 2026 globally, with no changes to message classification or custom templates. No action is required.",
+   "published": "2026-11-12T17:30:22+00:00"
+  },
+  {
+   "id": "e8028c3d85ba",
+   "title": "MC1509796: Microsoft Teams: Enhanced channel meeting experience",
+   "link": "https://mc.merill.net/message/MC1509796",
+   "summary": "Microsoft Teams will enhance channel meetings, allowing scheduling from Teams calendar and Outlook, easier discovery for channel members, and delegate scheduling. Rollout starts November 2026, completing by September 2027 across environments. No admin action needed; informing users is recommended. No compliance issues…",
+   "published": "2026-11-12T17:25:11+00:00"
+  },
+  {
+   "id": "4002906a947c",
+   "title": "MC1409304: Microsoft Teams: Facilitator proactively detects and resolves knowledge gaps in meetings",
+   "link": "https://mc.merill.net/message/MC1409304",
+   "summary": "Microsoft Teams introduces Facilitator, an AI feature that detects and resolves knowledge gaps in meetings by providing relevant answers via web search in the chat. Available from February 2027, it requires Microsoft 365 Copilot (Premium) and must be manually enabled. Admin controls and user opt-out are supported.",
+   "published": "2026-11-12T17:21:11+00:00"
+  },
+  {
+   "id": "3e2a04c3e811",
+   "title": "MC1550540: Microsoft 365 Copilot: Copilot Workspaces is replacing standalone agent selection with agentic chat",
+   "link": "https://mc.merill.net/message/MC1550540",
+   "summary": "Microsoft 365 Copilot Workspaces will replace standalone agent selection (Researcher, Analyst, Designer) with an agentic chat that applies skills based on user requests. This simplifies workflows without losing capabilities. The change begins December 2026 in Frontier preview, with no admin action required. Separate…",
+   "published": "2026-11-12T16:19:36+00:00"
+  },
+  {
+   "id": "62e3fdf3a1c0",
+   "title": "MC1550542: Microsoft Teams: Updated recording and transcript access setting behavior for town halls and webinars",
+   "link": "https://mc.merill.net/message/MC1550542",
+   "summary": "Microsoft Teams is updating the \"Who has access to the recording or transcript\" option for Events App town halls and webinars. It will depend on the RecordingForTownhall or RecordingForWebinar settings instead of AllowCloudRecording. The change rolls out worldwide in early to mid-November 2026 with no action required.",
+   "published": "2026-11-12T16:19:15+00:00"
+  },
+  {
+   "id": "05408795bccf",
+   "title": "MC1550533: Scheduled prompts in Microsoft 365 Copilot are moving to native Copilot scheduling and the Tasks view",
+   "link": "https://mc.merill.net/message/MC1550533",
+   "summary": "Microsoft 365 Copilot is moving scheduled prompts from Power Platform to native Copilot scheduling, enabling automatic execution of one-time or recurring tasks within Microsoft 365 compliance boundaries. The Power Platform-based experience retires December 31, 2026. Users manage tasks via the Copilot app's Tasks >…",
+   "published": "2026-11-12T16:15:07+00:00"
+  },
+  {
    "id": "f93b3ba4c8e4",
    "title": "MC1535647: Microsoft Copilot app: Updates to Home and navigation",
    "link": "https://mc.merill.net/message/MC1535647",
@@ -363,62 +419,6 @@
    "link": "https://mc.merill.net/message/MC1193692",
    "summary": "Starting January 2027, Microsoft 365 admins can add up to 10 custom properties from external systems to profile cards via Microsoft Graph People connectors. This feature is off by default, requires admin setup, and enhances user profiles for better collaboration. Future updates will support SAP SuccessFactors and…",
    "published": "2026-11-06T18:23:42+00:00"
-  },
-  {
-   "id": "e1f03b804b7c",
-   "title": "MC1230889: Outlook for Windows report retirement in the Exchange admin center",
-   "link": "https://mc.merill.net/message/MC1230889",
-   "summary": "The Outlook for Windows Usage Report in the Exchange admin center will retire in early April 2027. Admins must use the Microsoft 365 admin center for Outlook usage data. No user impact or admin action is needed, but update any documentation referencing the retired report.",
-   "published": "2026-11-06T17:17:16+00:00"
-  },
-  {
-   "id": "b6fa8a70fa65",
-   "title": "MC1405506: Microsoft OneNote: Multimodal recording in Copilot Notebooks on Windows",
-   "link": "https://mc.merill.net/message/MC1405506",
-   "summary": "Microsoft is introducing multimodal capture in Copilot Notebooks on Windows, enabling users to record audio, images, and notes together. Microsoft 365 Copilot then generates structured insights like summaries and action items. The feature rolls out worldwide by end of November 2026, requires a Copilot license, and can…",
-   "published": "2026-11-06T17:12:04+00:00"
-  },
-  {
-   "id": "6742a5bccaca",
-   "title": "MC1307979: Microsoft 365 Copilot: Copilot chat pane and Summary feature in OneNote Mobile (iPhone)",
-   "link": "https://mc.merill.net/message/MC1307979",
-   "summary": "Microsoft 365 Copilot introduces a new chat pane and Summary feature in OneNote Mobile (iPhone) for users with Copilot (Premium) licenses, enabling AI-generated summaries and note interaction. Rollout begins end of November 2026, with existing Copilot policies applying and no admin action required before deployment.",
-   "published": "2026-11-06T17:09:16+00:00"
-  },
-  {
-   "id": "586766a64863",
-   "title": "MC1309746: Microsoft 365 Copilot: Copilot chat pane and Summary feature in OneNote Mobile (Android)",
-   "link": "https://mc.merill.net/message/MC1309746",
-   "summary": "Microsoft 365 Copilot introduces a new Copilot chat pane and Summary feature in OneNote Mobile (Android) for users with Premium licenses, enabling AI-generated summaries and Q&A on notes. Rollout begins end of November 2026, with existing Copilot policies applying and no admin action required before deployment.",
-   "published": "2026-11-06T17:06:43+00:00"
-  },
-  {
-   "id": "10b950ea59d4",
-   "title": "MC1521609: Create sales pitches with Copilot in PowerPoint",
-   "link": "https://mc.merill.net/message/MC1521609",
-   "summary": "A new Copilot skill in PowerPoint helps users create structured sales pitch presentations for various customer scenarios. It rolls out worldwide from late October to late November 2026 on Win32, Mac, and Web. No admin action or compliance concerns are required.",
-   "published": "2026-11-06T16:54:35+00:00"
-  },
-  {
-   "id": "275dd0dcc05e",
-   "title": "MC1540526: Microsoft Online Services Subprocessor Disclosure Update",
-   "link": "https://mc.merill.net/message/MC1540526",
-   "summary": "A Data Privacy message regarding your organization is available within Message Center. The contents of this message can be accessed within Message Center by a Global Administrator or someone designated as a Message Center Privacy Reader. Please sign in to Admin Center to view the details of this message in the M365…",
-   "published": "2026-11-06T02:59:24+00:00"
-  },
-  {
-   "id": "e215c23e9326",
-   "title": "MC1540513: Microsoft SharePoint Online and OneDrive for the web: Updated search experience with Copilot Search",
-   "link": "https://mc.merill.net/message/MC1540513",
-   "summary": "SharePoint Online and OneDrive on the web are updating to a unified Copilot Search experience with natural-language prompts, AI summaries, and filters. Rollout starts mid-October 2026 (preview) and mid-January 2027 (general). Users can opt out during preview; minimal action required from organizations.",
-   "published": "2026-11-05T23:11:29+00:00"
-  },
-  {
-   "id": "db9430f1bd95",
-   "title": "MC1269864: Microsoft Teams: New chat sections for muted and meeting chats",
-   "link": "https://mc.merill.net/message/MC1269864",
-   "summary": "Microsoft Teams will introduce two new chat sections—Muted chats (enabled by default) and Meeting chats (disabled by default)—to organize conversations. Rollout begins January 2027. Users can enable/disable and reorder these sections; no admin action is needed. Muted chats move automatically to their section unless…",
-   "published": "2026-11-05T21:51:00+00:00"
   }
  ]
 }
