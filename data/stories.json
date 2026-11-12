@@ -134,28 +134,6 @@
    "instructions_checked": true
   },
   {
-   "id": "cc8a3b50b532",
-   "source": "windows-blog",
-   "source_name": "Windows Experience Blog",
-   "official": false,
-   "source_type": "vendor_blog",
-   "title": "A new standard for vulnerability management in the AI era",
-   "link": "https://blogs.windows.com/windowsexperience/2026/11/05/a-new-standard-for-vulnerability-management-in-the-ai-era/",
-   "published": "2026-11-05T17:00:49+00:00",
-   "summary": "Windows is evolving vulnerability management as advances in AI make it possible to discover and analyze security vulnerabilities faster and at greater scale. AI is accelerating vulnerability discovery on both sides. It can help defenders find and fix vulnerabilities earlier. It can also help attackers search for…",
-   "image": "https://blogs.windows.com/wp-content/uploads/sites/2/2026/11/tn_a-new-standard.png",
-   "cves": [],
-   "first_seen": "2026-11-05T23:08:32.402804+00:00",
-   "image_checked": true,
-   "instructions": [
-    "We also make this data available in machine-readable formats, including Common Security Advisory Framework (CSAF) advisories, Vulnerability Exploitability eXchange (VEX) documents, and API, so it can flow straight into your vulnerability management and compliance tools.",
-    "Maintain endpoint detection and apply available mitigations.",
-    "We also apply AI-assisted capabilities to areas including test selection, test creation, triage, analysis, and reporting.",
-    "Because Windows security updates are cumulative, prioritization should decide which devices update first, not which fixes get deployed."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "dda1288f7519",
    "source": "borncity",
    "source_name": "Born's IT and Windows Blog",
@@ -968,6 +946,25 @@
     "CVE-2026-109481"
    ],
    "first_seen": "2026-11-11T17:55:40.517702+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "c84faf9461ad",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-111497 Google: CVE-2026-111497 Buffer overflow vulnerability in the Brotli decoder",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-111497",
+   "published": "2026-11-12T16:00:00+00:00",
+   "summary": "Updated the Security Updates table to include affected Windows versions and the applicable November 2026 security updates. Microsoft recommends that customers install the applicable updates to be protected from this vulnerability.",
+   "image": null,
+   "cves": [
+    "CVE-2026-111497"
+   ],
+   "first_seen": "2026-11-12T17:02:02.285764+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -2799,6 +2796,26 @@
    "instructions_checked": true
   },
   {
+   "id": "50b7d482cfd7",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "186 Fake AI Domains Redirect Users to ClickFix Lures, Browser Malware, and Search Hijackers",
+   "link": "https://thehackernews.com/2026/11/186-fake-ai-domains-redirect-users-to.html",
+   "published": "2026-11-12T15:15:40+00:00",
+   "summary": "Cybersecurity researchers have found that lookalike domains masquerading as artificial intelligence (AI) tools are being used to serve ClickFix-style lures, browser-hijacking malware, and a set of extensions that hijack user searches. This delivery pattern has been codenamed TypoPrompting by Island. \"AI-app lookalikes…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirJnc36Fxj4oKOmKhcPvspB_xQpv3VgpXjYnu29SOv8NbVJHeaGNKT26851QIPQbHozxeF5vmq5otdRbJBKEaN9557MtuxLwp5fxX-pQVDVKwvZJtPR9ayT2Njx83svW7TVsVkVpFUOt5JHqhdSkSI7uV0d4dxlf5pWAmHISttTHWjURyOpuuy0CzVCSmK/s1600/lauce.jpg",
+   "cves": [],
+   "first_seen": "2026-11-12T17:02:02.285764+00:00",
+   "instructions": [
+    "\"As these services become part of everyday work, reaching the right one should be a managed path, not a test of typing accuracy.\"",
+    "\"AI-app lookalikes that turn an attempt to reach a familiar tool into a prompt to verify, install or run something else,\" the cybersecurity company said in a report shared with The Hacker News.",
+    "While the app purports to be a Wi-Fi and DNS safety scanner and matches the MSIX hash for a legitimate app of the same name , it contains capabilities to run attacker-controlled JavaScript, change the default search engine while the user is idle, edit browser profiles, and install arbitrary Chrome extensions."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "417b99b8248b",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -3074,6 +3091,26 @@
    "instructions_checked": true
   },
   {
+   "id": "c398aa3e9226",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Citrix Patches 12 NetScaler and Secure Access Client Flaws, Including Authentication Bypass",
+   "link": "https://thehackernews.com/2026/11/citrix-patches-12-netscaler-and-secure.html",
+   "published": "2026-11-12T15:38:49+00:00",
+   "summary": "Citrix has released patches for multiple critical security flaws impacting NetScaler ADC, Citrix NetScaler Gateway, and NetScaler Console that could lead to denial-of-service (DoS) or an authentication bypass. The critical vulnerabilities that impact NetScaler ADC and NetScaler Gateway are listed below -…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDDv_B4B-cVtvwKyLiGQsL804yGC7_xHF7y3yD5_C284fRXBVRAn5Ashy2apgJr-jaoBHRa3ujgXv1jskM53EvP_pFt41CTazYqFT-tQdcukNBeOTzVIpZXVDsdgtup4MJOEdNNZP9SP0FAdIpG1Cnfgo0YgBXzmI_boLV4qSAsVrmYn5wA3GxnPuj21JO/s1600/citrix.jpg",
+   "cves": [
+    "CVE-2026-120868"
+   ],
+   "first_seen": "2026-11-12T17:02:02.285764+00:00",
+   "instructions": [
+    "The company said it's not aware of any exploits for any of the announced vulnerabilities, but urged customers to apply the updates as they are designed to \"enhance the security posture of NetScaler.\""
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "804a43c3361e",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -3133,6 +3170,26 @@
     "Customers who defer maintenance should apply the upgrade as soon as possible.",
     "Until a member can be upgraded, the researchers advise restricting network access to the database to only the systems that need it.",
     "Its reliable mode requires a test-only setting that a remote attacker cannot enable."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "093b008afb96",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Critical Red Hat Quay Flaw Lets Attackers Read and Overwrite All Private Container Images in a Registry",
+   "link": "https://thehackernews.com/2026/11/critical-red-hat-quay-flaw-lets.html",
+   "published": "2026-11-12T16:27:01+00:00",
+   "summary": "A critical flaw in Red Hat Quay allows an attacker who can access a Quay registry to read and overwrite private container images in every repository. Quay enables anonymous access by default, and while it is enabled, the attacker needs no account. When it is off, anyone with a valid account can still exploit the flaw…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtLHm05FB2LmoHZMLAD5nDmfo_G2tdIqO4URdUwukuooBCVwIJhKC2rUDbDNtsGB8_lwium1MEUD1CxYcix4WMVpCoS58DJivMBSmb9LcIGswQu0nKUNE_sbfH8EsgFfhPrKEgEY7MJHWKyhFqX61ne-AOFKnTNuqIkWez1bec-kq-3Cz8BFbPLrgiV8k/s1600/redhat.jpg",
+   "cves": [],
+   "first_seen": "2026-11-12T17:02:02.285764+00:00",
+   "instructions": [
+    "When checked today, the CVE entry for CVE-2026-123710 still showed every Quay package as affected, with no fix, even though each advisory lists the flaw.",
+    "At the proxy or load balancer, block the /keys endpoint for everything except trusted internal components.",
+    "Until an update is in place, the company suggests limiting who can create organizations or namespaces containing an underscore, rotating robot tokens for any namespace that matches an underscore namespace, and watching for pulls or pushes that do not fit normal robot use."
    ],
    "instructions_checked": true
   },
@@ -3666,27 +3723,6 @@
    "instructions_checked": true
   },
   {
-   "id": "3fe484f436f5",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "OpenSSH Issues Emergency Fix for Flaw Letting Long Passwords Bypass SSH Auth on Alpine Linux",
-   "link": "https://thehackernews.com/2026/11/openssh-issues-emergency-fix-for-flaw.html",
-   "published": "2026-11-05T16:42:46+00:00",
-   "summary": "Attackers can log in to accounts that have no password, such as SSH key-only accounts, on some Alpine Linux servers running the standard openssh-server package. They need network access to the server, an account name, and a password between 257 and 1,024 bytes long. OpenSSH, which rates the flaw critical, released…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEieaHvS5baW_XG1eAsBsoSp9qRzV179f0WwXoj9k6rUeX4Qa4sxpi3hvpGkgkYNMPzZQH0mvvVAoTooEAgl1G3SyFksmhqNEbDEIEWM83RH47u8qvNyIYclA7z7GUdPJGx8WfJd556iCvvtvsitAYp9M-T46OvuwkaSWwnyhlynEpYax2qyTCACsPbtQLw/s1600/ssh-linux.jpg",
-   "cves": [],
-   "first_seen": "2026-11-05T22:16:50.878981+00:00",
-   "instructions": [
-    "OpenSSH, which rates the flaw critical, released version 10.6p2 today to block it.",
-    "The attack succeeds on every try with a single connection, according to the advisory.",
-    "The advisory gives commands that add the setting in a drop-in file in /etc/ssh/sshd_config.d , which Alpine's default configuration reads from 3.19 onward.",
-    "Afterward, sshd -T | grep -i passwordauthentication should print passwordauthentication no ."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "14caa111eec6",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -3748,27 +3784,6 @@
    "instructions_checked": true
   },
   {
-   "id": "306be99284dc",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Researchers Bypass ChatGPT Lockdown Mode to Exfiltrate Chats Without User Interaction",
-   "link": "https://thehackernews.com/2026/11/researchers-bypass-chatgpt-lockdown.html",
-   "published": "2026-11-05T16:42:32+00:00",
-   "summary": "Cybersecurity researchers have disclosed details of a now-patched vulnerability that could be exploited to bypass Lockdown Mode protections in OpenAI ChatGPT. Lockdown Mode was introduced by the artificial intelligence (AI) company in June 2026 as an optional setting to minimize data exfiltration risks arising from…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrZkGDnavpYu1VmQZCorYSw9PnFNh3tGXQ7YWWrZ3g6sURYj4RiS7za99akV3poXhW7GLoJw3j-baYvwyor0f_8iI3t5zk3NeXj1V1eVDMFUklqlYz629h88oYzxk3aIQPPwQF3xaw10DZTE-lEKyaojqzlLHC_DGtF91AVhXkaFNfY6Mh-qVqn86LCfQz/s1600/chat.gif",
-   "cves": [],
-   "first_seen": "2026-11-05T22:16:50.878981+00:00",
-   "instructions": [
-    "\"The flaw could enable silent chat data theft, phishing, and malware delivery, including zero-click data exfiltration in the ChatGPT desktop application,\" Eli Smadja, head of research at Check Point, said in a report shared with The Hacker News.",
-    "Lockdown Mode acts as a security barrier, mitigating data exfiltration risk by limiting outbound network requests that could be used to transfer sensitive information to an attacker-controlled infrastructure.",
-    "What's more, as the attacker is in complete control of the content displayed in the popup window, it could be used to render convincing social-engineering lures, such as a fake ChatGPT update, and trick the victim into downloading malware by persuading them to click on a link.",
-    "If the HTML block is marked as previewable, it's opened automatically."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "7d35c70e6708",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -3802,6 +3817,29 @@
     "In its Patch Day analysis , RedRays, a company that reviewed the notes in SAP for Me today, advises updating the kernel and all Web Dispatchers in a single rollout.",
     "That rollout should reach levels that cover all 17 of this month's kernel and Web Dispatcher fixes.",
     "There is no workaround, so the correction instructions or the listed support package are the only fix."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "daa356fef18a",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "SCKit Malware Turns ScreenConnect Support Sessions Into Potential MSP Attack Paths",
+   "link": "https://thehackernews.com/2026/11/sckit-malware-targets-screenconnect.html",
+   "published": "2026-11-12T13:08:28+00:00",
+   "summary": "The ongoing campaign targeting ConnectWise ScreenConnect deployments involves the exploitation of a now-patched critical security flaw in the remote access software, and not a new vulnerability, it has emerged. Blackpoint Cyber's Adversary Pursuit Group (APG), which shared the details with The Hacker News, said the…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4r5n0I6Rd7yb3jS6hfXTyM5foZU5uEiCD1I2Kgth1qgf_pzohrD9jPeDesEopB6Gjo0VaQZF2XesdqU6W32eFADzI3_xhBF4026h6uGqn6eExdfS_A29SvYA3cdIJkhWmPG-k15_DdsGGcqFfWS-E3cgyKkdEQ3Sxa9gayFkkMXggVJpkeH7DoLNLZxm9/s1600/screen.jpg",
+   "cves": [
+    "CVE-2026-84869"
+   ],
+   "first_seen": "2026-11-12T17:02:02.285764+00:00",
+   "instructions": [
+    "Cybersecurity and Infrastructure Security Agency (CISA) to its Known Exploited Vulnerabilities (KEV) catalog on September 11, 2026, requiring federal agencies to apply the fixes by September 14, 2026.",
+    "\"We have disabled the identified extensions where we can take action as a precaution and are advising on-premises partners to disable them immediately.",
+    "\"Our testing confirmed that the exploit targets CVE-2026-84869 and that the existing patch successfully blocks it,\" APG researchers Sam Decker and Nevan Beal said.",
+    "The Hacker News has contacted ConnectWise for comment, and we will update the story if we hear back."
    ],
    "instructions_checked": true
   },
@@ -4066,6 +4104,28 @@
    "instructions_checked": true
   },
   {
+   "id": "7968b43f44c2",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "ConnectWise investigates ScreenConnect breaches after reports of incidents at nearly 50 organizations",
+   "link": "https://therecord.media/connectwise-screenconnect-breaches-third-party-tool",
+   "published": "2026-11-12T16:16:00+00:00",
+   "summary": "Abuse of an independent third-party tool led to breaches at ScreenConnect customers, confirmed the software's maker, ConnectWise. Cybersecurity researchers had spotted intrusions at nearly 50.",
+   "image": "https://cms.therecord.media/uploads/connectwise_logo_df3804ab18.jpg",
+   "cves": [],
+   "first_seen": "2026-11-12T17:02:02.285764+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Customers should also be wary of any ScreenConnect connections to suspected compromised devices, ConnectWise added.",
+    "The advisories that prompted ConnectWise to act came after cybersecurity firm Huntress said it saw 288 affected endpoints across 48 organizations targeted within 90 minutes.",
+    "The company disabled RMM+ in the 400 customer environments and urged customers with on-premises systems to disable it themselves because ConnectWise cannot do it for them.",
+    "“Disabling extensions and resetting credentials alone may not remove unauthorized software, persistence mechanisms, or access already established on endpoints,” the company said, warning of unusual sign-ins and repeated login failures."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "e9e255b08220",
    "source": "therecord",
    "source_name": "The Record",
@@ -4158,6 +4218,25 @@
    "image_checked": true,
    "instructions": [
     "The Irish police force, An Garda Síochána, said it also assessed the threats sent to schools as “not credible” and stressed that it was “not advising any educational establishment to evacuate.”"
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "023264eb01e1",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "European authorities take down SteaIC malware servers for second time this year",
+   "link": "https://therecord.media/european-authorities-take-down-stealic-malware-second-time",
+   "published": "2026-11-12T16:21:00+00:00",
+   "summary": "German authorities on Thursday said investigators traced the rebuilt network to the Virtualine bulletproof hosting provider, seized by the FBI in October, with the assistance of police in Frankfurt and the Dutch National High Tech Crime Unit.",
+   "image": "https://cms.therecord.media/uploads/polizei_9dea82a5d6.jpg",
+   "cves": [],
+   "first_seen": "2026-11-12T17:02:02.285764+00:00",
+   "image_checked": true,
+   "instructions": [
+    "“Even technically skilled and well-organized cybercriminals must expect coordinated international investigations,” said Meywirth."
    ],
    "instructions_checked": true
   },
@@ -4373,23 +4452,6 @@
    "instructions": [
     "This allowed the hackers to operate without relying on external servers that security researchers could detect, block or shut down."
    ],
-   "instructions_checked": true
-  },
-  {
-   "id": "44c256844f1e",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Russian state-linked hackers target iPhone, Android devices in zero-click espionage campaign",
-   "link": "https://therecord.media/russia-hackers-smartphone-cyberattacks",
-   "published": "2026-11-05T17:00:00+00:00",
-   "summary": "Russian state-linked hackers targeted users in Ukraine, the United States and Europe in a campaign to steal sensitive information from iPhone and Android devices, researchers found.",
-   "image": "https://cms.therecord.media/uploads/Smartphones_79e20f7fb1.jpg",
-   "cves": [],
-   "first_seen": "2026-11-05T17:41:52.623426+00:00",
-   "image_checked": true,
-   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -4931,27 +4993,6 @@
    "instructions_checked": true
   },
   {
-   "id": "6b1d9cd5a096",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "DigiCert data breach exposes customer information, identity documents",
-   "link": "https://www.bleepingcomputer.com/news/security/digicert-data-breach-exposes-customer-information-identity-documents/",
-   "published": "2026-11-05T16:12:46+00:00",
-   "summary": "DigiCert warns it suffered a data breach after a server migration mistakenly exposed an internal business system to the internet, allowing unauthorized access to customer information and identity documents.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/05/digicert-header.jpg",
-   "cves": [],
-   "first_seen": "2026-11-05T16:45:47.572106+00:00",
-   "image_checked": true,
-   "instructions": [
-    "DigiCert deployed security fixes to restrict access to the system and address the authorization flaw, but did not realize at the time that archived data had been accessed.",
-    "BleepingComputer has contacted DigiCert to ask further questions about the incident, including how many people were impacted, and will update the story if we get a response.",
-    "mSecure password manager hack prompts password reset warnings"
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "a9021fd43362",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -5136,26 +5177,6 @@
     "Google has released emergency security updates to patch a new Chrome vulnerability exploited in zero-day attacks, the eighth such flaw since the start of the year.",
     "Although Google says the security update could take days or weeks to reach all Chrome users, it was available immediately when BleepingComputer checked for updates today.",
     "If you don't want to update the web browser manually, you can also let Chrome check for updates on its own, as it will automatically install them after the next launch."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "5263a8e99f87",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Hackers backdoor Linux servers using trojanized CWP web server",
-   "link": "https://www.bleepingcomputer.com/news/security/hackers-backdoor-linux-servers-using-trojanized-cwp-web-server/",
-   "published": "2026-11-05T16:24:26+00:00",
-   "summary": "A new Linux malware called CWPdoor is being distributed through a trojanized version of cwpsrv, the web server behind the Control Web Panel (CWP) management interface.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/29/Linux.jpg",
-   "cves": [],
-   "first_seen": "2026-11-05T16:45:47.572106+00:00",
-   "image_checked": true,
-   "instructions": [
-    "The researchers recommend that administrators check for the ngx_http_integrity_helper Unix socket, suspicious cwpsrv helper processes, and X-Ngx-Integrity strings in the server binary.",
-    "If a compromise is confirmed, replace the backdoored binary with a legitimate copy, upgrade to the latest version, rotate all control panel credentials, and investigate the host for additional malware."
    ],
    "instructions_checked": true
   },
@@ -5432,6 +5453,28 @@
     "Other disclosed exploits include a stored XSS that can execute commands as root when an administrator views malicious patch metadata, and a privilege-escalation flaw that allows code running under the nable account to execute commands as root.",
     "In a subsequent status update , N-able said it was continuing to develop and validate a hotfix and had found no evidence of active exploitation or unauthorized data access.",
     "Bales confirmed that N-able executives, including the company's CEO and CTO, contacted him following the disclosure and asked him to remove the GitHub repository and work with the company."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "ad9757975fce",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "New Windows SignDrop zero-day gives hackers SYSTEM privileges",
+   "link": "https://www.bleepingcomputer.com/news/security/new-windows-signdrop-zero-day-gives-hackers-system-privileges/",
+   "published": "2026-11-12T16:04:00+00:00",
+   "summary": "Security researcher Abdelhamid Naceri (also known as Nightmare Eclipse) has released a new Windows zero-day exploit that can let attackers gain SYSTEM privileges.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/12/0_Windows-headpic.jpg",
+   "cves": [],
+   "first_seen": "2026-11-12T17:02:02.285764+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Naceri added that attacks exploiting CLFS vulnerabilities dropped sharply after the mitigation, but that Microsoft's mitigation itself introduced this new vulnerability.",
+    "Named SignDrop , it exploits mitigations Microsoft introduced in October 2025 to defend against authentication attacks targeting vulnerabilities in the Common Log File System (CLFS) driver.",
+    "Naceri noted that Microsoft implemented the mitigation properly but that \"the logic allows abuse\" and said the technique works against any antimalware engine's self-defense (tamper protection), because the file-creation request appears to come from the engine's own legitimate process.",
+    "\"If everything is chained correctly, funnily, this legit security mitigation can be used against itself and allow an elevation of privileges."
    ],
    "instructions_checked": true
   },
@@ -6224,22 +6267,6 @@
    "instructions_checked": true
   },
   {
-   "id": "d5adbe76452f",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "SecurityDataPipeline.com Launches as a New Educational Resource for the AI Era",
-   "link": "https://www.darkreading.com/cybersecurity-operations/securitydatapipeline-com-launches-as-a-new-educational-resource-for-the-ai-era",
-   "published": "2026-11-05T16:48:36+00:00",
-   "summary": "The ungated resource explains how security data pipelines reduce SIEM ingestion costs, preserve detection coverage, and prepare the data layer for AI-driven security operations.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt850556f866500627/654a5a8e05eb4d040a046894/325351_DR23_Graphics_General_Large_Text_v1.png?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-05T17:41:52.623426+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "b63212099f3b",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -6417,26 +6444,6 @@
     "Microsoft recommends the following mitigations to reduce the impact of this threat.",
     "In addition to removing the secrets from the code base, affected organizations should immediately rotate any exposed keys or credentials.",
     "Microsoft recommends that developers migrate OAuth applications away from secret-based authentication ."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "1a39a444dba6",
-   "source": "msblog",
-   "source_name": "Microsoft Security Blog",
-   "official": false,
-   "source_type": "vendor_blog",
-   "title": "​​​​What’s new in Microsoft Security: November 2026",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/05/whats-new-in-microsoft-security-november-2026/",
-   "published": "2026-11-05T17:00:00+00:00",
-   "summary": "Endpoint administrators need to keep elevated access accountable at scale. Security teams also need a clearer view of expert-led protection and a simpler way to deploy SQL Server protection in Azure Government. As AI agents gain access to business data and tools, organizations need ways to limit their authority and…",
-   "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/10/Picture1-1.jpg",
-   "cves": [],
-   "first_seen": "2026-11-05T18:27:35.353020+00:00",
-   "instructions": [
-    "Security teams can use that context to identify foundational controls that need attention, review the recommended actions, and prioritize work intended to reduce exposure.",
-    "A recent Secure Now update in Microsoft Security Exposure Management also connects information on recent threats to focused initiatives for reducing exposure.",
-    "The update helps connect information about observed attack patterns with security improvements teams can consider in their own environments."
    ],
    "instructions_checked": true
   },
