@@ -4232,6 +4232,23 @@
    "instructions_checked": true
   },
   {
+   "id": "e447c2de7d90",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Kazakhstan-linked hackers used AI agent to spy on Central Asian governments",
+   "link": "https://therecord.media/kazakhstan-hackers-central-asia",
+   "published": "2026-11-12T13:00:00+00:00",
+   "summary": "Suspected Kazakhstan-linked hackers used an artificial intelligence agent to help spy on Central Asian governments, steal sensitive documents and infiltrate critical infrastructure networks, according to new research.",
+   "image": "https://cms.therecord.media/uploads/Central_Asia_7feabe2c24.jpg",
+   "cves": [],
+   "first_seen": "2026-11-12T13:56:54.338734+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "ea6b9d64cfe5",
    "source": "therecord",
    "source_name": "The Record",
@@ -4320,6 +4337,23 @@
    "image": "https://cms.therecord.media/uploads/queens_library_5e385910af.jpg",
    "cves": [],
    "first_seen": "2026-11-05T22:16:50.878981+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "5209bb0904e3",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Romania says it stopped Russian cyberattack targeting government emails",
+   "link": "https://therecord.media/romania-russia-cyberattack-emails",
+   "published": "2026-11-12T13:30:00+00:00",
+   "summary": "Romania's intelligence agency said it stopped a cyber-espionage campaign by Russian state-linked hackers before the group exfiltrated sensitive data.",
+   "image": "https://cms.therecord.media/uploads/Romania_European_Commission_8f0c949789.jpg",
+   "cves": [],
+   "first_seen": "2026-11-12T13:56:54.338734+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -6217,7 +6251,7 @@
    "title": "N-able Takes N-central Platform Offline After Discovery of 33 Flaws",
    "link": "https://www.darkreading.com/endpoint-security/n-able-n-central-offline-33-flaws",
    "published": "2026-11-11T20:05:18+00:00",
-   "summary": "The RMM provider also released a hotfix as one of recommended mitigations to address public exploits for the alleged zero-days that allow for attacker takeover.",
+   "summary": "The RMM provider also released a hotfix as a recommended mitigation to address public exploits for the alleged zero-days, which allow for attacker takeover.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt1eb3a07d69de328b/6af4605e4c33022b5dec789d/RMM_panthermedia_Alamy.png?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-11T21:35:52.932632+00:00",
@@ -6738,22 +6772,24 @@
    "instructions_checked": true
   },
   {
-   "id": "2dacffdc48c8",
+   "id": "7139bcf40a7d",
    "source": "securityweek",
    "source_name": "SecurityWeek",
    "official": false,
    "source_type": "news",
-   "title": "Bank Phishing Sites Show Fake ‘Suspended’ Pages to Evade Takedowns",
-   "link": "https://www.securityweek.com/bank-phishing-sites-show-fake-suspended-pages-to-evade-takedowns/",
-   "published": "2026-11-05T13:22:12+00:00",
-   "summary": "More than 200 sites were seen serving phishing content to first-time visitors but not to those who revisit. The post Bank Phishing Sites Show Fake ‘Suspended’ Pages to Evade Takedowns appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/07/corporate-bank-fraud.jpeg",
+   "title": "Attacker Targets 60,000 GitHub Repositories in Credential Theft Campaign",
+   "link": "https://www.securityweek.com/attacker-targets-60000-github-repositories-in-credential-theft-campaign/",
+   "published": "2026-11-12T13:39:03+00:00",
+   "summary": "Using thousands of hijacked accounts, the wfx-loot campaign planted a CI secret stealer that ran in over 1,800 GitHub repositories. The post Attacker Targets 60,000 GitHub Repositories in Credential Theft Campaign appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2023/04/Low-Code-No-Code-Security.jpg",
    "cves": [],
-   "first_seen": "2026-11-05T14:29:52.766193+00:00",
+   "first_seen": "2026-11-12T13:56:54.338734+00:00",
    "image_checked": true,
    "instructions": [
-    "Android’s November 2026 Updates Patch Over 200 Vulnerabilities",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+    "The security firm warned that organizations should assume all accessible secrets were compromised if the malware executed.",
+    "Organizations have been advised to revoke compromised tokens, rotate exposed secrets, and check for unauthorized cloud changes.",
+    "The npm method also poses a risk to developers who install dependencies while the malicious changes are present.",
+    "ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure"
    ],
    "instructions_checked": true
   },
@@ -6838,6 +6874,26 @@
     "Intel and AMD have published more than 50 new security advisories that describe over 200 vulnerabilities affecting their products.",
     "Some AMD mitigations were released months or even years ago, others are still in the works, and Intel has discontinued one of the impacted products.",
     "The largest advisory covers 30 security holes in the TDX Migration Trust Domain (MigTD) reference software."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "116311b70214",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Chrome, Firefox Updates Patch Over 180 Vulnerabilities",
+   "link": "https://www.securityweek.com/chrome-firefox-updates-patch-180-vulnerabilities/",
+   "published": "2026-11-12T13:42:09+00:00",
+   "summary": "Google fixed 83 flaws with a new Chrome 157 release, and Mozilla addressed 99 bugs in Firefox 160. The post Chrome, Firefox Updates Patch Over 180 Vulnerabilities appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/01/Chrome-Firefox.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-12T13:56:54.338734+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Citrix, Ivanti Patch Critical and High-Severity Vulnerabilities",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
   },
@@ -6928,21 +6984,21 @@
    "instructions_checked": true
   },
   {
-   "id": "8384bfde04a0",
+   "id": "0ea3d75301ac",
    "source": "securityweek",
    "source_name": "SecurityWeek",
    "official": false,
    "source_type": "news",
-   "title": "Cyberattack Hits French Blood Bank Site but No Blood Products Are Compromised",
-   "link": "https://www.securityweek.com/cyberattack-hits-french-blood-bank-site-but-no-blood-products-are-compromised/",
-   "published": "2026-11-05T12:58:32+00:00",
-   "summary": "The incident comes after supermarkets in a number of European countries reported this week that their fridges and freezers warmed up after they were remotely hacked. The post Cyberattack Hits French Blood Bank Site but No Blood Products Are Compromised appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/11/blood.jpeg",
+   "title": "Daylight Lands $80 Million for AI-Powered Security Operations",
+   "link": "https://www.securityweek.com/daylight-lands-80-million-for-ai-powered-security-operations/",
+   "published": "2026-11-12T13:12:11+00:00",
+   "summary": "The company plans to accelerate product development, hire new talent, expand its US presence, and enter new markets. The post Daylight Lands $80 Million for AI-Powered Security Operations appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/11/funding-investment-market-3.jpeg",
    "cves": [],
-   "first_seen": "2026-11-05T13:07:29.357858+00:00",
+   "first_seen": "2026-11-12T13:56:54.338734+00:00",
    "image_checked": true,
    "instructions": [
-    "French weekly newspaper Le Canard Enchaîné, which first reported the cyberattack, said that the attack had attempted to reset temperatures that normally are at minus 30 Celsius (minus 22 Fahrenheit) to as high as 110 C (230 F).",
+    "Citrix, Ivanti Patch Critical and High-Severity Vulnerabilities",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
