@@ -31,6 +31,16 @@
    "url": "story/e61330c97785.html"
   },
   {
+   "id": "3b8d7732462b",
+   "title": "New worm-like 'SCKit' malware targets MSPs in ScreenConnect attacks",
+   "summary": "A new worm-like malware toolkit named SCKit was deployed in the recent ScreenConnect attacks targeting managed service providers (MSPs), designed to spread from infected…",
+   "priority": "Critical",
+   "category": "Attacks & Breaches",
+   "date": "12 Nov 2026, 22:53 UTC",
+   "sources": "BleepingComputer, The Hacker News",
+   "url": "story/3b8d7732462b.html"
+  },
+  {
    "id": "c84faf9461ad",
    "title": "CVE-2026-111497 Google: CVE-2026-111497 Buffer overflow vulnerability in the Brotli decoder",
    "summary": "Updated the Security Updates table to include affected Windows versions and the applicable November 2026 security updates. Microsoft recommends that customers install…",
@@ -49,16 +59,6 @@
    "date": "10 Nov 2026, 21:55 UTC",
    "sources": "KrebsOnSecurity, SecurityWeek",
    "url": "story/9364f9baac68.html"
-  },
-  {
-   "id": "daa356fef18a",
-   "title": "SCKit Malware Turns ScreenConnect Support Sessions Into Potential MSP Attack Paths",
-   "summary": "The ongoing campaign targeting ConnectWise ScreenConnect deployments involves the exploitation of a now-patched critical security flaw in the remote access software, and…",
-   "priority": "Critical",
-   "category": "Patch Radar",
-   "date": "12 Nov 2026, 13:08 UTC",
-   "sources": "The Hacker News",
-   "url": "story/daa356fef18a.html"
   },
   {
    "id": "95f883361cdc",
@@ -201,16 +201,6 @@
    "url": "story/9b952a7f4c5d.html"
   },
   {
-   "id": "f1a5b4bff7b5",
-   "title": "ScreenConnect Attacks Target at Least 288 Endpoints Across 48 Organizations With Rogue Clients",
-   "summary": "ConnectWise has taken the precautionary step of disabling five third-party extensions in partner environments following reports of unauthorized access. In an advisory…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "12 Nov 2026, 04:39 UTC",
-   "sources": "The Hacker News, BleepingComputer",
-   "url": "story/f1a5b4bff7b5.html"
-  },
-  {
    "id": "09ebecc42123",
    "title": "Japan Pushes Emergency Funding for Cybersecurity as AI-Assisted Breaches Rise",
    "summary": "The package adds public-private cyber responders, an AI-focused team run by the economic ministry, and more leeway to use the government's new active cyber-defense…",
@@ -309,6 +299,16 @@
    "date": "06 Nov 2026, 14:40 UTC",
    "sources": "SecurityWeek",
    "url": "story/3819f6707361.html"
+  },
+  {
+   "id": "87359d547fe5",
+   "title": "Windows-Aktivierungs- und Lizenzierungs-Error 0x80041008 bestätigt (Nov. 2026)",
+   "summary": "Am 10. November 2026 (Patchday) hat Microsoft kumulative Updates für die Clients und Serverversionen seiner Windows Betriebssysteme veröffentlicht. Diese…",
+   "priority": "Standard",
+   "category": "Microsoft",
+   "date": "12 Nov 2026, 23:07 UTC",
+   "sources": "Born's IT and Windows Blog",
+   "url": "story/87359d547fe5.html"
   },
   {
    "id": "43b2bb31ce77",
@@ -491,26 +491,6 @@
    "url": "story/2f643c57e2d5.html"
   },
   {
-   "id": "10da2048e255",
-   "title": "Patchday: Microsoft Office Updates (10. November 2026)",
-   "summary": "Am 10. November 2026 (zweiter Dienstag im Monat, Microsoft Patchday) hat Microsoft mehrere sicherheitsrelevante Updates für Microsoft Office veröffentlicht. Microsoft…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "11 Nov 2026, 23:02 UTC",
-   "sources": "Born's IT and Windows Blog",
-   "url": "story/10da2048e255.html"
-  },
-  {
-   "id": "7f241c94ac84",
-   "title": "Baker Tilly notifies clients of data breach at third-party provider",
-   "summary": "The Baker Tilly Advisory Group is notifying clients that a data breach has compromised certain personal information about them and their dependents.",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "11 Nov 2026, 23:01 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/7f241c94ac84.html"
-  },
-  {
    "id": "4555dea14647",
    "title": "Notion says Fireworks breach exposed customer AI chat transcripts",
    "summary": "Notion, the digital workspace platform, disclosed that a security breach at its AI infrastructure provider, Fireworks AI, exposed Notion AI chat transcripts in a small…",
@@ -549,16 +529,6 @@
    "date": "11 Nov 2026, 07:21 UTC",
    "sources": "The Hacker News",
    "url": "story/e23f07d99f92.html"
-  },
-  {
-   "id": "f91527c7bf88",
-   "title": "Detecting sleeper agents hiding in AI model neurons",
-   "summary": "Microsoft Research has released new threat research detailing how a capable agent model could be turned into a sleeper agent by editing fewer than 10 neurons to inject a…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "10 Nov 2026, 23:00 UTC",
-   "sources": "Microsoft Security Blog",
-   "url": "story/f91527c7bf88.html"
   },
   {
    "id": "16367edd00b6",
@@ -741,6 +711,26 @@
    "url": "story/d9fc7bca781a.html"
   },
   {
+   "id": "10da2048e255",
+   "title": "Patchday: Microsoft Office Updates (10. November 2026)",
+   "summary": "Am 10. November 2026 (zweiter Dienstag im Monat, Microsoft Patchday) hat Microsoft mehrere sicherheitsrelevante Updates für Microsoft Office veröffentlicht. Microsoft…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "11 Nov 2026, 23:02 UTC",
+   "sources": "Born's IT and Windows Blog",
+   "url": "story/10da2048e255.html"
+  },
+  {
+   "id": "7f241c94ac84",
+   "title": "Baker Tilly notifies clients of data breach at third-party provider",
+   "summary": "The Baker Tilly Advisory Group is notifying clients that a data breach has compromised certain personal information about them and their dependents.",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "11 Nov 2026, 23:01 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/7f241c94ac84.html"
+  },
+  {
    "id": "e2b7ebdc245e",
    "title": "N-able Takes N-central Platform Offline After Discovery of 33 Flaws",
    "summary": "The RMM provider also released a hotfix as a recommended mitigation to address public exploits for the alleged zero-days, which allow for attacker takeover.",
@@ -869,6 +859,16 @@
    "date": "11 Nov 2026, 08:17 UTC",
    "sources": "The Hacker News",
    "url": "story/44096b209ce3.html"
+  },
+  {
+   "id": "f91527c7bf88",
+   "title": "Detecting sleeper agents hiding in AI model neurons",
+   "summary": "Microsoft Research has released new threat research detailing how a capable agent model could be turned into a sleeper agent by editing fewer than 10 neurons to inject a…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "10 Nov 2026, 23:00 UTC",
+   "sources": "Microsoft Security Blog",
+   "url": "story/f91527c7bf88.html"
   },
   {
    "id": "09de80ae0aa4",
@@ -1449,6 +1449,16 @@
    "date": "12 Nov 2026, 08:20 UTC",
    "sources": "The Hacker News",
    "url": "story/c2d283cd7530.html"
+  },
+  {
+   "id": "f1a5b4bff7b5",
+   "title": "ScreenConnect Attacks Target at Least 288 Endpoints Across 48 Organizations With Rogue Clients",
+   "summary": "ConnectWise has taken the precautionary step of disabling five third-party extensions in partner environments following reports of unauthorized access. In an advisory…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "12 Nov 2026, 04:39 UTC",
+   "sources": "The Hacker News",
+   "url": "story/f1a5b4bff7b5.html"
   },
   {
    "id": "453a571c3295",

@@ -94,27 +94,6 @@
    "instructions_checked": true
   },
   {
-   "id": "9ed3b44bda29",
-   "source": "ars",
-   "source_name": "Ars Technica Security",
-   "official": false,
-   "source_type": "news",
-   "title": "Meet *sshole, the vulnerability that lets hackers SSH into Linux devices",
-   "link": "https://arstechnica.com/security/2026/11/vulnerability-allows-attackers-to-log-into-some-linux-devices-sans-password/",
-   "published": "2026-11-05T23:09:36+00:00",
-   "summary": "Devices running some configurations of Alpine Linux, and possibly other distributions, are affected by a decade-old vulnerability that allows attackers to log into devices with no password. The vulnerability exists in the interaction between OpenSSH, the code library implementing SSH connections, and musl, a…",
-   "image": "https://cdn.arstechnica.net/wp-content/uploads/2017/05/getty-hacking-1152x648.jpg",
-   "cves": [],
-   "first_seen": "2026-11-06T00:01:55.469077+00:00",
-   "instructions": [
-    "Further, OpenSSH using musl (pronounced muscle) must not use PAM (pluggable authentication modules), a framework that handles user authentication and account-access checks.",
-    "First, a system must have at least one user account that’s accessible using a password that is hashed using the SHA256 or SHA512 functions.",
-    "Second, the target system account must be configured to be passwordless, by way of specifying a “*” in the password field in /etc/shadow, the Linux file where password hashes are stored.",
-    "Without it, the attack fails.” Company researchers said their testing also showed that the account must be active, not just hold a hash."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "8abde1ce00be",
    "source": "ars",
    "source_name": "Ars Technica Security",
@@ -391,6 +370,28 @@
    "image_checked": true,
    "instructions": [
     "November 2026) Windows 11 25H2 – 26H2: Preview Update KB5127936 (28."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "87359d547fe5",
+   "source": "borncity",
+   "source_name": "Born's IT and Windows Blog",
+   "official": false,
+   "source_type": "news",
+   "title": "Windows-Aktivierungs- und Lizenzierungs-Error 0x80041008 bestätigt (Nov. 2026)",
+   "link": "https://borncity.com/blog/2026/11/13/windows-aktivierungs-und-lizenzierungs-error-0x80041008-bestaetigt-nov-2026/",
+   "published": "2026-11-12T23:07:41+00:00",
+   "summary": "Am 10. November 2026 (Patchday) hat Microsoft kumulative Updates für die Clients und Serverversionen seiner Windows Betriebssysteme veröffentlicht. Diese Sicherheitsupdates für Microsoft Windows führen aber in einigen Fällen dazu, dass die Aktivierungs- und Lizenzzuweisungsfunktionen kaputt sind und mit dem Fehler…",
+   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Windows-klein.jpg",
+   "cves": [],
+   "first_seen": "2026-11-12T23:26:05.442870+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Für das Windows Server 2024 Update KB5131080 findet sich im Known Issues-Abschnitt der Hinweis:",
+    "November 2026) Windows 11 25H2 – 26H2: Preview Update KB5127936 (28.",
+    "November 2026) mehrere Administratoren gemeldet, die von Problemen bei der Lizenz-Reaktivierung in Server-Umgebungen, nach Installation des November 2026-Update, berichten.",
+    "hat noch jemand von euch Probleme mit der Reaktivierung der Windows-Lizenz nach dem Update?"
    ],
    "instructions_checked": true
   },
@@ -5557,6 +5558,28 @@
     "Named SignDrop , it exploits mitigations Microsoft introduced in October 2025 to defend against authentication attacks targeting vulnerabilities in the Common Log File System (CLFS) driver.",
     "Naceri noted that Microsoft implemented the mitigation properly but that \"the logic allows abuse\" and said the technique works against any antimalware engine's self-defense (tamper protection), because the file-creation request appears to come from the engine's own legitimate process.",
     "\"If everything is chained correctly, funnily, this legit security mitigation can be used against itself and allow an elevation of privileges."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "3b8d7732462b",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "New worm-like 'SCKit' malware targets MSPs in ScreenConnect attacks",
+   "link": "https://www.bleepingcomputer.com/news/security/new-worm-like-sckit-malware-targets-msps-in-screenconnect-attacks/",
+   "published": "2026-11-12T22:53:10+00:00",
+   "summary": "A new worm-like malware toolkit named SCKit was deployed in the recent ScreenConnect attacks targeting managed service providers (MSPs), designed to spread from infected customer devices to MSP technicians' computers and compromise additional managed networks.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/09/16/ScreenConnect-headpic.jpg",
+   "cves": [],
+   "first_seen": "2026-11-12T23:26:05.442870+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Both research teams also recommend avoiding interactive ScreenConnect sessions with potentially infected endpoints and instead using separate security tools to investigate systems.",
+    "The findings follow yesterday's widespread ScreenConnect attacks , in which attackers gained unauthorized access to cloud-hosted ScreenConnect environments and used the platform's Run Command feature to install rogue ScreenConnect remote-access clients on customer endpoints.",
+    "MSPs are urged to disable the affected third-party extensions, update ScreenConnect clients, investigate unauthorized remote-access installations, and review Run Command and Toolbox activity for signs of compromise.",
+    "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day"
    ],
    "instructions_checked": true
   },
