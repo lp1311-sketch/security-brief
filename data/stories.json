@@ -367,7 +367,7 @@
    "title": "Netscaler Apocalypse? Security Bulletin CTX697305",
    "link": "https://borncity.com/blog/2026/11/12/netscaler-apocalypse-security-bulletin-ctx697305/",
    "published": "2026-11-12T18:29:58+00:00",
-   "summary": "Am heutigen 12. November 2026, hat Netscaler eine Sicherheitsmeldung für den Citrix NetScaler ADC und Citrix NetScaler Gateway veröffentlicht. Beide Produkte haben Sicherheitslücken, die dringend gepatcht gehören. Zudem gibt es ein \"Security Release Programm\" für Kunden. Security Bulletin CTX697305 In … Weiterlesen →…",
+   "summary": "Am heutigen 12. November 2026, hat Citrix eine Sicherheitsmeldung für den Citrix NetScaler ADC und Citrix NetScaler Gateway veröffentlicht. Beide Produkte haben Sicherheitslücken, die dringend gepatcht gehören. Zudem gibt es ein \"Security Release Programm\" für Kunden. Security Bulletin CTX697305 In … Weiterlesen →…",
    "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
    "cves": [],
    "first_seen": "2026-11-12T21:47:21.765103+00:00",
@@ -4419,23 +4419,6 @@
    "instructions_checked": true
   },
   {
-   "id": "3189ce2b4e22",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Queens Public Library says ransomware attack disrupted Wi-Fi, on-site computers",
-   "link": "https://therecord.media/queens-library-ransomware-causes-disruptions",
-   "published": "2026-11-05T22:08:00+00:00",
-   "summary": "The library system, which has 66 branches serving the borough’s 2.3 million residents, published multiple alerts on Wednesday confirming that the disruption was caused by a ransomware attack.",
-   "image": "https://cms.therecord.media/uploads/queens_library_5e385910af.jpg",
-   "cves": [],
-   "first_seen": "2026-11-05T22:16:50.878981+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "5209bb0904e3",
    "source": "therecord",
    "source_name": "The Record",
@@ -4505,6 +4488,23 @@
    "instructions": [
     "“Businesses need to update their threat models to stop focusing on VIPs and just assume this is a problem that everyone in the organization has to tackle,” Cole said."
    ],
+   "instructions_checked": true
+  },
+  {
+   "id": "e52fb1952d02",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Feds announce seizure of $1.2 billion from Binance theft; also takedown of ‘FaceStealer’ tools",
+   "link": "https://therecord.media/stolen-binance-crypto-recovered-doj-facestealer-disrupted",
+   "published": "2026-11-12T21:42:00+00:00",
+   "summary": "The Department of Justice and FBI announced two separate actions in response to North Korea-linked cryptocurrency theft operations.",
+   "image": "https://cms.therecord.media/uploads/doj_logo_green_code_f20ed46844.jpg",
+   "cves": [],
+   "first_seen": "2026-11-12T22:46:50.252554+00:00",
+   "image_checked": true,
+   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -5215,6 +5215,28 @@
     "Google has released emergency security updates to patch a new Chrome vulnerability exploited in zero-day attacks, the eighth such flaw since the start of the year.",
     "Although Google says the security update could take days or weeks to reach all Chrome users, it was available immediately when BleepingComputer checked for updates today.",
     "If you don't want to update the web browser manually, you can also let Chrome check for updates on its own, as it will automatically install them after the next launch."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "674c4b85088a",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Hackers compromise 4,800 GitHub accounts to steal cloud credentials",
+   "link": "https://www.bleepingcomputer.com/news/security/hackers-compromise-4-800-github-accounts-to-steal-cloud-credentials/",
+   "published": "2026-11-12T22:25:30+00:00",
+   "summary": "A new campaign dubbed 'wfx-loot' has unfolded on GitHub where threat actors used 4,837 compromised accounts to probe 61,764 repositories, open pull requests, and push secrets-stealing malware.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/08/github.jpg",
+   "cves": [],
+   "first_seen": "2026-11-12T22:46:50.252554+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Repository owners are advised to look for the ‘wfx-docs’ branch, the probe pull request, and gaps in workflow run numbers.",
+    "Where payload execution is confirmed, all secrets and cloud roles available to the affected workflows should be considered compromised and rotated immediately.",
+    "They then delivered a 1,500-line credential-stealing shell script by modifying an existing GitHub Actions workflow, adding a new workflow on a short-lived branch, or planting an npm install hook.",
+    "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day"
    ],
    "instructions_checked": true
   },
@@ -6154,22 +6176,6 @@
    "instructions_checked": true
   },
   {
-   "id": "7bee44827e17",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "Operação de influência russa tem como alvo generalizado a América Latina",
-   "link": "https://www.darkreading.com/cyberattacks-data-breaches/opera-o-de-influ-ncia-russa-tem-como-alvo-generalizado-a-am-rica-latina",
-   "published": "2026-11-05T22:13:23+00:00",
-   "summary": "A operação, que contou com o uso de inteligência artificial, utilizou e-mails falsos, documentos governamentais falsificados e a criação de uma organização local para atacar escolas no Peru e no Equador, entre outras ações.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt12c8556d05b7b46d/6ace9426639c8743112b0213/peru-bolivia-on-map-hyotographics-shutterstock.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-06T22:23:17.218839+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "8ec6ef10a10a",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -6230,6 +6236,22 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltc3d52fd595b74813/6af39e0cb6c48b43d1f3dedb/musashi-kojiro-attack-defense-statues-GARAGE38-shutterstock.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-12T00:35:50.563973+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "b8f3cb130e06",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "AIを活用したサイバー攻撃の増加を受け、日本がサイバーセキュリティへの緊急資金拠出を推進",
+   "link": "https://www.darkreading.com/cybersecurity-operations/japan-emergency-funding-cybersecurity-ai-assisted-breaches-japanese",
+   "published": "2026-11-11T22:14:44+00:00",
+   "summary": "この対策パッケージには、官民合同のサイバー対応チーム、経済省が主導するAI専門チーム、および政府の新たな能動的サイバー防衛権限の行使に関する裁量の拡大が含まれている。",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltc3d52fd595b74813/6af39e0cb6c48b43d1f3dedb/musashi-kojiro-attack-defense-statues-GARAGE38-shutterstock.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-12T22:46:50.252554+00:00",
    "instructions": [],
    "instructions_checked": true
   },
