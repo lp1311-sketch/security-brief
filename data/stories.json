@@ -2799,6 +2799,27 @@
    "instructions_checked": true
   },
   {
+   "id": "417b99b8248b",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Attacker Used 4,837 Hijacked GitHub Accounts to Run a CI Secret Stealer in 1,806+ Repositories",
+   "link": "https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html",
+   "published": "2026-11-12T06:42:47+00:00",
+   "summary": "Starting Tuesday, an attacker used stolen credentials for 4,837 GitHub accounts to plant a secret stealer in repositories those accounts could write to, according to Aikido Security, a security software company. The stealer is built to take the secrets and cloud credentials that a repository's CI workflows can reach…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1-4OiOkGLcK3fAr2HdhALOfc_BqR21440TsjUIuCNzv4YL0lWRC3lvUjE1vu2RdVfjunxi80gMQyGpjvUdWzMRtthW8_-hFOJ79YhFzJrNGgoKDPYXm2OaWOsN8kgBELqOPs5s9QKL4qzQzu_3NEEqHygpfQzKYxDRIQeFgMHj24oyPyaslUemke-loU/s1600/github.jpg",
+   "cves": [],
+   "first_seen": "2026-11-12T08:32:01.896473+00:00",
+   "instructions": [
+    "Version 3.14.3 of the Packagist package digitalelvis/neuronai-studio is malicious, and the company advises treating any machine that installed or opened it as compromised.",
+    "In those repositories, every secret and cloud role available to the workflows should be treated as compromised.",
+    "SafeDep's researchers advise owners of affected repositories to revoke the commit author's tokens, OAuth app grants, SSH keys, and sessions, and to turn on 2FA.",
+    "Owners should also rotate every secret and variable the repository can read."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "1981b067cd83",
    "source": "thehackernews",
    "source_name": "The Hacker News",
