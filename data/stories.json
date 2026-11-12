@@ -4522,6 +4522,25 @@
    "instructions_checked": true
   },
   {
+   "id": "b6cd1d92c2ad",
+   "source": "grahamcluley",
+   "source_name": "Graham Cluley",
+   "official": false,
+   "source_type": "news",
+   "title": "WhiteArmor gang claims responsibility for latest cyber attack on shipping giant Maersk",
+   "link": "https://www.bitdefender.com/en-us/blog/hotforsecurity/whitearmor-gang-cyberattack-maersk",
+   "published": "2026-11-12T15:12:29+00:00",
+   "summary": "Shipping giant Maersk has confirmed that one of its systems was broken into by hackers who have stolen data. The WhiteArmor gang has claimed responsbility for the attack. Read more in my article on the Hot for Security blog.",
+   "image": "https://blogapp.bitdefender.com/hotforsecurity/content/images/2026/11/maersk-container-crane.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-12T16:00:05.487312+00:00",
+   "image_checked": true,
+   "instructions": [
+    "While Maersk has not confirmed the veracity of the hackers' claims, it is advising customers and partners to treat unexpected messages about the security breach with caution, and to always verify with a trusted contact at the company before taking any action."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "16367edd00b6",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4844,28 +4863,6 @@
     "CISA warns feds to fully patch actively exploited Cisco flaws",
     "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day",
     "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "dad53d7e3ed5",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Closing the Identity Gap at the Service Desk",
-   "link": "https://www.bleepingcomputer.com/news/security/closing-the-identity-gap-at-the-service-desk/",
-   "published": "2026-11-05T15:00:10+00:00",
-   "summary": "Attackers target IT service desks to bypass MFA by impersonating employees and convincing staff to reset passwords or register new authentication devices. Specops Software explains why traditional identity verification methods are no longer sufficient and how organizations can secure account recovery against social…",
-   "image": "https://www.bleepstatic.com/content/posts/2026/11/02/specops-lockscreen.jpg",
-   "cves": [],
-   "first_seen": "2026-11-05T15:39:35.408855+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Training is still crucial, and agents should feel confident in refusing requests or escalating when something doesn’t sound right.",
-    "Verification should be a required step, not a judgment call based on how convincing someone sounds.",
-    "When an employee needs to regain access to their account, it’s often the service desk that provides the password reset or account recovery.",
-    "This becomes particularly dangerous when passing these checks is enough to authorize a password reset or recover an account."
    ],
    "instructions_checked": true
   },
@@ -5519,6 +5516,28 @@
    "instructions_checked": true
   },
   {
+   "id": "62ff99ae778b",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Police dismantle Gootloader, CastleRAT, StealC malware infrastructure",
+   "link": "https://www.bleepingcomputer.com/news/security/police-dismantles-gootloader-castlerat-stealc-malware-infrastructure/",
+   "published": "2026-11-12T15:07:20+00:00",
+   "summary": "Europol and law enforcement partners from nine countries have seized hundreds of servers and domains used by the Gootloader, CastleRAT, and StealC malware operations.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/12/Operation-Endgame.jpg",
+   "cves": [],
+   "first_seen": "2026-11-12T16:00:05.487312+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Together with private partners who helped identify, take down, seize, and block infrastructure tied to the three malware operations, the authorities seized 257 domains and 235 servers.",
+    "WordPress users are urged to update credentials, enable multi-factor authentication, and patch vulnerabilities.\"",
+    "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day",
+    "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "c4daeac5c98c",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -5817,6 +5836,28 @@
    "image_checked": true,
    "instructions": [
     "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "28ab9a11f837",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Your Endpoint Management Platform Could Be Your Biggest Security Risk",
+   "link": "https://www.bleepingcomputer.com/news/security/your-endpoint-management-platform-could-be-your-biggest-security-risk/",
+   "published": "2026-11-12T15:00:10+00:00",
+   "summary": "Endpoint management platforms can become powerful attack tools when compromised, allowing hackers to deploy malware, execute commands, and disrupt thousands of devices. Action1 explains how customer-controlled cryptographic authorization can prevent attackers from abusing sensitive endpoint operations.",
+   "image": "https://www.bleepstatic.com/content/posts/2026/11/11/action1-security-alert.jpg",
+   "cves": [],
+   "first_seen": "2026-11-12T16:00:05.487312+00:00",
+   "image_checked": true,
+   "instructions": [
+    "This security implication is: high-risk endpoint operations should have authorization that remains verifiable independently of the management platform delivering them!",
+    "Organizations should re-evaluate how these platforms are secured, how suspicious activity is monitored, and which protections remain effective if management infrastructure is compromised.",
+    "They allow administrators to deploy patches, install software, execute scripts, enforce configurations, and remotely manage thousands of devices from a centralized system.",
+    "Any attacker who gains control of that infrastructure will be able to use those existing capabilities to distribute malware, execute malicious commands, disable security controls, or disrupt operations across an entire organization."
    ],
    "instructions_checked": true
   },
@@ -6359,27 +6400,6 @@
    "instructions_checked": true
   },
   {
-   "id": "302fe04b9508",
-   "source": "msblog",
-   "source_name": "Microsoft Security Blog",
-   "official": false,
-   "source_type": "vendor_blog",
-   "title": "Email threat landscape: Q3 2026 trends and insights",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/05/email-threat-landscape-q3-2026-trends-and-insights/",
-   "published": "2026-11-05T16:00:00+00:00",
-   "summary": "Microsoft Threat Intelligence detected approximately 7.3 billion email-based phishing threats from July through September, including a sharp increase to nearly 3 billion in September alone, up 41% from August. Yet the increase did not extend across the techniques that had driven threat actor activity earlier in the…",
-   "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/11/image-9.webp",
-   "cves": [],
-   "first_seen": "2026-11-05T16:45:47.572106+00:00",
-   "instructions": [
-    "Microsoft recommends the following mitigations to reduce the impact of this threat.",
-    "Check the recommendations card for the deployment status of monitored mitigations.",
-    "Together with recommendations, Microsoft Defender detections, and hunting queries, these findings can help defenders assess where existing protections may be weakened and investigate activity across email and collaboration platforms.",
-    "Attemps should not be interpreted as successful attacker interactions."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "e2845eccbac1",
    "source": "msblog",
    "source_name": "Microsoft Security Blog",
@@ -6766,6 +6786,30 @@
     "Direct access to Mythos is reserved for vetted organizations, which can apply through Anthropic’s Cyber and Life Sciences Verification Programs. “We’ve worked closely with the Anthropic team all year to harden Firefox with successive generations of Claude models, and each round has left fewer, subtler bugs to find.",
     "Chrome Update Patches Exploited XML Zero-Day, Eighth This Year",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "16b72427cf58",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Apache Patches Critical HTTP Server RCE Found by Anthropic, Google",
+   "link": "https://www.securityweek.com/apache-patches-critical-http-server-rce-found-by-anthropic-google/",
+   "published": "2026-11-12T15:38:31+00:00",
+   "summary": "The mod_http2 race condition, CVE-2026-119618, could let unauthenticated attackers execute code on servers with HTTP/2 enabled. The post Apache Patches Critical HTTP Server RCE Found by Anthropic, Google appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2023/12/Apache-exploit-scaled-e1724835583910.jpeg",
+   "cves": [
+    "CVE-2026-119618"
+   ],
+   "first_seen": "2026-11-12T16:00:05.487312+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Red Hat says public research has demonstrated a reliable exploit against a server with mod_http2 enabled, but its advisory does not identify the research.",
+    "Organizations are advised to install Apache HTTP Server 2.4.71 or vendor-supplied packages.",
+    "ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure",
+    "Chipmaker Patch Tuesday: Over 200 Vulnerabilities Addressed by Intel, AMD"
    ],
    "instructions_checked": true
   },
