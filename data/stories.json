@@ -5980,6 +5980,22 @@
    "instructions_checked": true
   },
   {
+   "id": "9b952a7f4c5d",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "Inside an AI Attack Against a US Retailer",
+   "link": "https://www.darkreading.com/cyberattacks-data-breaches/inside-ai-attack-us-retailer",
+   "published": "2026-11-12T11:00:00+00:00",
+   "summary": "When hand-typed commands failed to breach a US retailer, the attacker turned to AI-generated scripts, achieving lateral movement in minutes.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blte38664ed1dd3c978/6af4c35c1e561a1b3aa196c5/broken_lock-TU_IS-GettyImages-1369792495.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-12T11:39:19.915532+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "7bee44827e17",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -6813,27 +6829,6 @@
    "instructions_checked": true
   },
   {
-   "id": "a190c692796e",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "CISO Conversations: Ryan Davis – The Unknown Is Where Security Meets Reality",
-   "link": "https://www.securityweek.com/ciso-conversations-ryan-davis-the-unknown-is-where-security-meets-reality/",
-   "published": "2026-11-05T11:00:00+00:00",
-   "summary": "Ryan Davis went from hacking his school’s network to running security at New Charter Technologies. What worries him now is shadow AI. The post CISO Conversations: Ryan Davis – The Unknown Is Where Security Meets Reality appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/11/CISO-Ryan-Davis.jpeg",
-   "cves": [],
-   "first_seen": "2026-11-05T11:57:44.737948+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Its core purpose is to apply advanced technology to solve critical national security problems, and cybersecurity is one of its focuses.",
-    "CISOs must be technicians to know how to protect data, and businesspeople to know what data to protect most heavily.",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "60ccd3ca4d45",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -7345,6 +7340,28 @@
    "instructions_checked": true
   },
   {
+   "id": "0fd5862fb594",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Notion Customer Data Compromised in Fireworks AI Hack",
+   "link": "https://www.securityweek.com/notion-customer-data-compromised-in-fireworks-ai-hack/",
+   "published": "2026-11-12T11:08:52+00:00",
+   "summary": "The attackers accessed chat transcripts for fewer than 1% of Notion workspaces. Most transcripts were unattributable. The post Notion Customer Data Compromised in Fireworks AI Hack appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/10/bank-finance-lender-credit-union-hack.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-12T11:39:19.915532+00:00",
+   "image_checked": true,
+   "instructions": [
+    "The company has contacted the affected customers with instructions on how to securely retrieve and review the data in their workspaces, but did not disclose how many customers were affected. “We recommend treating this data as exposed.",
+    "If you pasted sensitive information, passwords, API keys, or other credentials into Notion AI during the incident, rotate any exposed credentials,” Notion tells customers.",
+    "SecurityWeek has emailed Notion for additional information on the data breach and will update this article if the company responds.",
+    "Citrix, Ivanti Patch Critical and High-Severity Vulnerabilities"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "3a73b8fccf35",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -7574,28 +7591,6 @@
    "instructions_checked": true
   },
   {
-   "id": "bcd0f8e51ff4",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "The Agent Smith Dilemma: Governing Agentic Identities",
-   "link": "https://www.securityweek.com/the-agent-smith-dilemma-governing-agentic-identities/",
-   "published": "2026-11-05T11:15:00+00:00",
-   "summary": "Every autonomous AI agent deployed across your enterprise today is a new proxy identity operating inside your perimeter. The post The Agent Smith Dilemma: Governing Agentic Identities appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2023/01/Cybersecurity_News-SecurityWeek.jpg",
-   "cves": [],
-   "first_seen": "2026-11-05T13:07:29.357858+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Demand Provenance via an AIBOM: Before an agent is granted access, security teams must verify its code lineage, system prompt integrity, and underlying permissions.",
-    "Implement the “Rule of Two”: Under Meta’s Agents Rule of Two , an agent should combine no more than two of three properties: processing untrusted input, accessing sensitive data, and changing systems or communicating externally.",
-    "Outbound traffic, including DNS, should be denied by default.",
-    "In August, researchers documented a malicious MCP server that passed install-time review, then directed connected agents to collect SSH keys and cloud credentials after its third call."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "c5080c64e3d8",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -7679,30 +7674,6 @@
    "image_checked": true,
    "instructions": [
     "Chrome Update Patches Exploited XML Zero-Day, Eighth This Year",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "806a92e4d68b",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Zyxel Switch Hacks Blamed on Patched Flaw Actually Exploited a Zero-Day",
-   "link": "https://www.securityweek.com/zyxel-switch-hacks-blamed-on-patched-flaw-actually-exploited-a-zero-day/",
-   "published": "2026-11-05T10:56:41+00:00",
-   "summary": "Tracked as CVE-2026-107441, the out-of-bounds write flaw could allow attackers to execute OS commands via crafted HTTP requests. The post Zyxel Switch Hacks Blamed on Patched Flaw Actually Exploited a Zero-Day appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/09/switch-router.webp",
-   "cves": [
-    "CVE-2026-107441"
-   ],
-   "first_seen": "2026-11-05T11:03:22.867396+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Zyxel rolled out fixes for it on October 23 and published an advisory on November 3.",
-    "Advisories and version numbers certainly help, but they cannot be blindly trusted.",
-    "Android’s November 2026 Updates Patch Over 200 Vulnerabilities",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
