@@ -4164,25 +4164,6 @@
    "instructions_checked": true
   },
   {
-   "id": "dd3956422471",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Harden cooling systems now, feds warn critical infrastructure operators amid attacks",
-   "link": "https://therecord.media/cyberattacks-refrigeration-cisa-fbi",
-   "published": "2026-11-05T19:15:00+00:00",
-   "summary": "The U.S. government on Thursday called on critical infrastructure operators to safeguard their cooling systems following hacks that have caused chaos in European supermarkets in recent weeks.",
-   "image": "https://cms.therecord.media/uploads/Trucks_34d1614b26.jpg",
-   "cves": [],
-   "first_seen": "2026-11-05T19:37:24.443304+00:00",
-   "image_checked": true,
-   "instructions": [
-    "In their advisory, federal agencies noted that organizations in the healthcare, transportation, food and chemicals sectors “widely” use cooling systems that rely on “automated and remote monitoring of temperatures, continuous temperature logging, defrost cycle management, and energy optimization.”"
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "c5532d0fb1f0",
    "source": "therecord",
    "source_name": "The Record",
@@ -4548,6 +4529,25 @@
    "instructions_checked": true
   },
   {
+   "id": "bb48d6f8868d",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "United to block customers from using AI agents, citing cyber threats",
+   "link": "https://therecord.media/united-airlines-to-block-customers-using-ai-agents",
+   "published": "2026-11-12T19:20:00+00:00",
+   "summary": "“Sharing account credentials with personal, third-party, AI assistants can expose sensitive information, and actions taken by these tools may result in unintended purchases\" and more, United Airlines said.",
+   "image": "https://cms.therecord.media/uploads/united_airlineslukas_souza_unsplash_b9dd803335.jpg",
+   "cves": [],
+   "first_seen": "2026-11-12T19:54:43.350113+00:00",
+   "image_checked": true,
+   "instructions": [
+    "United Airlines will block AI agents from managing customers’ reservations and flight purchases, warning of significant cybersecurity and privacy risks, as well as potential legal violations."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "15da1f8e31d6",
    "source": "therecord",
    "source_name": "The Record",
@@ -4832,6 +4832,27 @@
     "Partners should also review account activity, revoke active sessions, reset credentials from a trusted device, and verify multifactor authentication.\"",
     "“Sequential attacker-assigned tags suggest other MSPs may have been compromised earlier, so ScreenConnect users should check their Run Command history even if they haven’t received alerts,” Huntress told BleepingComputer.",
     "BleepingComputer reached out to Huntress with additional questions about the attacks and will update the post if we receive a response."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "fac8887887ba",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Apache HTTP Server patches critical HTTP/2 remote code execution flaw",
+   "link": "https://www.bleepingcomputer.com/news/security/apache-http-server-patches-critical-http-2-remote-code-execution-flaw/",
+   "published": "2026-11-12T19:12:55+00:00",
+   "summary": "A critical vulnerability in the HTTP/2 module of Apache HTTP Server could be exploited by an unauthenticated attacker to obtain remote code execution (RCE).",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/12/Apache.jpg",
+   "cves": [],
+   "first_seen": "2026-11-12T19:54:43.350113+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Researchers at cybersecurity company watchTowr confirmed this condition and recommend technicians to \"patch now or drop h2 until you can.\"",
+    "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day",
+    "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
    ],
    "instructions_checked": true
   },
@@ -5493,6 +5514,28 @@
    "instructions_checked": true
   },
   {
+   "id": "5e7c3d53ea73",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "New N-able \"4EverAble2Shell\" zero-day exploited hours after PoC released",
+   "link": "https://www.bleepingcomputer.com/news/security/new-n-able-4everable2shell-zero-day-exploited-hours-after-poc-released/",
+   "published": "2026-11-12T19:51:16+00:00",
+   "summary": "Hackers are actively exploiting a newly disclosed N-able N-central zero-day vulnerability dubbed \"4EverAble2Shell\" to compromise servers and deploy cryptocurrency miners, with researchers reporting at least 21 affected systems, including 19 running the company's latest security update.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2025/08/18/N-able.jpg",
+   "cves": [],
+   "first_seen": "2026-11-12T19:54:43.350113+00:00",
+   "image_checked": true,
+   "instructions": [
+    "In a November 12 security advisory , N-able said it was implementing additional protections in response to the new disclosures, including restricting certain N-central features and integrations while it develops further fixes.",
+    "The protections have already been applied to hosted environments, but customers are also advised to continue upgrading their Agents and Probes under the previous Hotfix 2 guidance .",
+    "In its advisory, N-able said it had seen no signs of compromise using the new flaws, although security researchers have since reported successful exploitation of the vulnerability against production N-central servers.",
+    "Organizations running N-central should ensure that Legacy APIs are disabled and investigate suspicious requests to /dms/services/ServerUI , especially those referencing jline.internal.TerminalLineSettings."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "ad9757975fce",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -5534,23 +5577,6 @@
     "“Upon analysis of the dataset Fireworks AI gave us on November 8, we discovered that it included Notion AI chat transcripts used for the Insights feature, which for the vast majority of impacted workspaces were unattributable,” Notion stated in an update .",
     "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day"
    ],
-   "instructions_checked": true
-  },
-  {
-   "id": "7e637a2f9fd7",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "OpenAI’s GPT-6 Astra silently obstructed safety research tasks",
-   "link": "https://www.bleepingcomputer.com/news/security/openais-gpt-6-astra-silently-obstructed-safety-research-tasks/",
-   "published": "2026-11-05T19:24:26+00:00",
-   "summary": "OpenAI has disclosed another AI alignment incident where GPT-6 Astra was found to sometimes quietly withhold help on safety research.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/09/17/OpenAI.jpg",
-   "cves": [],
-   "first_seen": "2026-11-05T19:37:24.443304+00:00",
-   "image_checked": true,
-   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -6579,6 +6605,27 @@
     "Below are eight CVEs for which we confirmed local root privilege-escalation exploits in controlled laboratory environments, with some cases requiring non-default settings or disabled exploit mitigations:",
     "266 (42.8%) shared a root cause with another case, so one patch could fix them together.",
     "Upstream Linux typically requires vulnerability reports to come with a working patch."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "a9b2747b83a3",
+   "source": "msblog",
+   "source_name": "Microsoft Security Blog",
+   "official": false,
+   "source_type": "vendor_blog",
+   "title": "Trained to betray: How post-training supply chain attacks hijack coding agents",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/12/trained-to-betray-how-post-training-supply-chain-attacks-hijack-coding-agents/",
+   "published": "2026-11-12T17:00:00+00:00",
+   "summary": "As organizations increasingly deploy specialized AI agents, trust cannot depend solely on a model behaving as expected during evaluation or normal use. As Satya Nadella has argued in Models as Insider Risks in the Super Intelligence Era, trustworthy enterprise AI requires independent observability and controls that…",
+   "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/11/image-30.webp",
+   "cves": [],
+   "first_seen": "2026-11-12T19:54:43.350113+00:00",
+   "instructions": [
+    "The implanted behavior must remain latent and activate when the appropriate condition appears.",
+    "Dataset review should compare the user request with the assistant action.",
+    "Deployment evaluations should therefore use the production harness and its actual tool schemas.",
+    "Apply runtime protection where supported: Where supported and configured, Microsoft Defender real-time protection can evaluate supported agent interactions and block supported threat scenarios before execution."
    ],
    "instructions_checked": true
   },
