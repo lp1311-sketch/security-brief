@@ -3109,6 +3109,28 @@
    "instructions_checked": true
   },
   {
+   "id": "8b748363b7cc",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely",
+   "link": "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html",
+   "published": "2026-11-12T05:12:26+00:00",
+   "summary": "A critical flaw in Apache HTTP Server's HTTP/2 module, mod_http2, can let a remote attacker run code on the server. Tracked as CVE-2026-119618, it affects versions 2.4.55 through 2.4.70 and is fixed in version 2.4.71, released yesterday. Only servers with HTTP/2 enabled are affected, according to Red Hat, which ships…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLpi_uN6PmG2Gn1agNMsOrsCp324eH-utKkDl_SPe32ggjcWFPjxZSyeA1KvAtvI9SQ4VAN_zssvdJLJ59IXE8_-MatPOyFXY-FcwtL7HtfKyW3MtsKwglIe2X62WBOcUkPMv-klM1h8T2EBMWFOWyPG89bfbAHS5byyfXATXN_lUUJWmUGWChekyWxTQ/s1600/apache-http.jpg",
+   "cves": [
+    "CVE-2026-119618"
+   ],
+   "first_seen": "2026-11-12T06:02:03.935884+00:00",
+   "instructions": [
+    "Admins who run the Apache HTTP Server project's own releases should move to version 2.4.71, the fixed release named in its security advisory .",
+    "It can be set for the whole server or for a single virtual host, so admins should check the server-wide setting and every virtual host.",
+    "In its vulnerability analysis , Wiz advises admins who cannot update yet to remove h2 and h2c from the Protocols directive, leaving Protocols http/1.1."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "8b35f69eac70",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -3328,26 +3350,6 @@
     "Block the IP address and domain associated with malicious activity",
     "Block the empty token in a web application firewall (WAF) or a reverse proxy",
     "Rotate all passwords and secrets in Vates VMS if indicators of compromise are detected"
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "2a5b7d5a686a",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Hackers Exploit Patched Apple Flaw to Deliver Info-Stealing Malware, CISA Says",
-   "link": "https://thehackernews.com/2026/11/hackers-exploit-patched-apple-flaw-to.html",
-   "published": "2026-11-05T05:17:04+00:00",
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a medium-severity security flaw impacting multiple Apple operating systems to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation. The vulnerability in question is CVE-2024-27834 (CVSS score…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkv0B0acGnMDLnCJQYXNCkpzSeKKr_1m4-a10Q2Iy6DZOorGLb35YDD9vw3iQQA9fZTi7QGIZYlSsvTSmxc8w0UbgN_Xtl-QPyTngA9qhOuoryee3Z8X8CZRnHiUAY3wuIXG_UIO1DyDnjnfS5cOilt3WPzRnYYqFDZ1NHbXS0OVAsrVYHSeFuc7zglZw5/s1600/apple-0day.jpg",
-   "cves": [
-    "CVE-2024-27834"
-   ],
-   "first_seen": "2026-11-05T06:25:55.581723+00:00",
-   "instructions": [
-    "In light of active exploitation, Federal Civilian Executive Branch (FCEB) agencies are recommended to apply the necessary patches by November 18, 2026."
    ],
    "instructions_checked": true
   },
@@ -3752,6 +3754,27 @@
     "In its Patch Day analysis , RedRays, a company that reviewed the notes in SAP for Me today, advises updating the kernel and all Web Dispatchers in a single rollout.",
     "That rollout should reach levels that cover all 17 of this month's kernel and Web Dispatcher fixes.",
     "There is no workaround, so the correction instructions or the listed support package are the only fix."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "f1a5b4bff7b5",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "ScreenConnect Attacks Target at Least 288 Endpoints Across 48 Organizations With Rogue Clients",
+   "link": "https://thehackernews.com/2026/11/screenconnect-attacks-target-at-least.html",
+   "published": "2026-11-12T04:39:48+00:00",
+   "summary": "ConnectWise has taken the precautionary step of disabling five third-party extensions in partner environments following reports of unauthorized access. In an advisory posted on its site, the company said there is no evidence that the incident involves a compromise of its infrastructure or a vulnerability in the…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEfz7InYm8UO-p35K6B4j009BxA-MO7DdZ2x1d-xhyphenhyphenPxNnVs848IlgAGelmuW-sPbEZbE8-L9_KWEYNH_M5HaTMy14MFd87A7YkqHAzDKaamKOdpZKR9owL3nK3gbqAngvWa6A4NC1KK1l0ie9FK731LfKPI0lguiGQ1b71sHIZj2kR2H3I-GJjSPY4kJU/s1600/screenconnect-hack.jpg",
+   "cves": [],
+   "first_seen": "2026-11-12T06:02:03.935884+00:00",
+   "instructions": [
+    "In an advisory posted on its site, the company said there is no evidence that the incident involves a compromise of its infrastructure or a vulnerability in the ScreenConnect software.",
+    "ConnectWise also said it has urged on-premises partners to disable the extensions, and is recommending all partners to ensure security controls are running, preserve suspicious activity logs, and stay vigilant for -",
+    "ScreenConnect users are advised to check their Run Command history even if they haven't received alerts.",
+    "Unexpected support requests, password-reset messages, and software downloads through a trusted channel"
    ],
    "instructions_checked": true
   },
