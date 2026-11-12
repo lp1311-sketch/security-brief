@@ -1,6 +1,16 @@
 {
  "stories": [
   {
+   "id": "3d5dfb277e1d",
+   "title": "CISA Flags SonicWall SonicOS MFA Bypass Flaw Amid Reports of Possible Exploitation",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a high-severity vulnerability impacting SonicWall SonicOS to its Known Exploited…",
+   "priority": "Critical",
+   "category": "Patch Radar",
+   "date": "09 Nov 2026, 06:05 UTC",
+   "sources": "The Hacker News, SecurityWeek, BleepingComputer, CISA Cybersecurity Advisories",
+   "url": "story/3d5dfb277e1d.html"
+  },
+  {
    "id": "474586429e7c",
    "title": "CISA flags Cisco BroadWorks flaw as actively exploited in attacks",
    "summary": "The US Cybersecurity and Infrastructure Security Agency (CISA) warned on Tuesday that hackers are now exploiting a high-severity Cisco BroadWorks vulnerability in…",
@@ -19,16 +29,6 @@
    "date": "10 Nov 2026, 09:42 UTC",
    "sources": "SecurityWeek, The Hacker News, CISA Cybersecurity Advisories, Born's IT and Windows Blog",
    "url": "story/e61330c97785.html"
-  },
-  {
-   "id": "3d5dfb277e1d",
-   "title": "CISA Flags SonicWall SonicOS MFA Bypass Flaw Amid Reports of Possible Exploitation",
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a high-severity vulnerability impacting SonicWall SonicOS to its Known Exploited…",
-   "priority": "Critical",
-   "category": "Patch Radar",
-   "date": "09 Nov 2026, 06:05 UTC",
-   "sources": "The Hacker News, SecurityWeek, BleepingComputer, CISA Cybersecurity Advisories",
-   "url": "story/3d5dfb277e1d.html"
   },
   {
    "id": "9364f9baac68",
@@ -261,16 +261,6 @@
    "url": "story/c9d200a425c2.html"
   },
   {
-   "id": "1f6bc1af5305",
-   "title": "N-able Takes N-central Offline as Researcher Drops Over 30 Zero-Days",
-   "summary": "Attackers could exploit the flaws for remote code execution, credential theft, and administrator account creation. The post N-able Takes N-central Offline as Researcher…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 09:56 UTC",
-   "sources": "SecurityWeek, The Hacker News",
-   "url": "story/1f6bc1af5305.html"
-  },
-  {
    "id": "7e1f9b33c691",
    "title": "Google patches eighth Chrome zero-day exploited in attacks this year",
    "summary": "Google has released emergency security updates to patch a new Chrome vulnerability exploited in zero-day attacks, the eighth such flaw since the start of the year.",
@@ -299,6 +289,36 @@
    "date": "06 Nov 2026, 14:40 UTC",
    "sources": "SecurityWeek",
    "url": "story/3819f6707361.html"
+  },
+  {
+   "id": "a3551b4d4049",
+   "title": "Microsoft confirms Windows security updates installation issues",
+   "summary": "Microsoft has confirmed reports that the November 2026 security updates are failing to install on Windows 11 systems with the October preview update.",
+   "priority": "Standard",
+   "category": "Microsoft",
+   "date": "12 Nov 2026, 10:24 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/a3551b4d4049.html"
+  },
+  {
+   "id": "2bb5c2ca8fb9",
+   "title": "Hackers Target N-central Zero-Days as N-able Rushes Patches",
+   "summary": "The malicious activity started shortly after a researcher dropped over 30 zero-days. N-able patched the unauthenticated ones. The post Hackers Target N-central Zero-Days…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "12 Nov 2026, 09:39 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/2bb5c2ca8fb9.html"
+  },
+  {
+   "id": "26d811aac83d",
+   "title": "Critical Pre-Auth MongoDB Flaw (CVE-2026-118383) Can Crash Lagging Servers on Failover",
+   "summary": "A critical flaw in MongoDB Server allows an unauthenticated attacker to send two requests that trigger a crash on the database server. The crash occurs only if that…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "12 Nov 2026, 09:25 UTC",
+   "sources": "The Hacker News",
+   "url": "story/26d811aac83d.html"
   },
   {
    "id": "3773dc5512fb",
@@ -781,14 +801,14 @@
    "url": "story/c1d47a910d2a.html"
   },
   {
-   "id": "7d35c70e6708",
-   "title": "Russian Turla Hackers Use New Cereal Malware to Steal Emails From Government Exchange Servers",
-   "summary": "The Russia-aligned state-sponsored threat actor known as Turla (aka Snake) is wielding a previously undocumented cyber espionage toolset called Cereal that's used to…",
+   "id": "1f6bc1af5305",
+   "title": "N-able Takes N-central Offline as Researcher Drops Over 30 Zero-Days",
+   "summary": "Attackers could exploit the flaws for remote code execution, credential theft, and administrator account creation. The post N-able Takes N-central Offline as Researcher…",
    "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "10 Nov 2026, 10:07 UTC",
-   "sources": "The Hacker News, BleepingComputer",
-   "url": "story/7d35c70e6708.html"
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 09:56 UTC",
+   "sources": "SecurityWeek, The Hacker News",
+   "url": "story/1f6bc1af5305.html"
   },
   {
    "id": "7d2482c88528",
@@ -1081,14 +1101,14 @@
    "url": "story/633b52d3362d.html"
   },
   {
-   "id": "0e899e1e6c12",
-   "title": "Hackers now exploit critical Barracuda ESG flaws to gain root access",
-   "summary": "Cybersecurity company Barracuda Networks warned that attackers have begun exploiting two recently patched Email Security Gateway (ESG) vulnerabilities that let them run…",
+   "id": "7d35c70e6708",
+   "title": "Russian Turla Hackers Use New Cereal Malware to Steal Emails From Government Exchange Servers",
+   "summary": "The Russia-aligned state-sponsored threat actor known as Turla (aka Snake) is wielding a previously undocumented cyber espionage toolset called Cereal that's used to…",
    "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 10:10 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/0e899e1e6c12.html"
+   "category": "Attacks & Breaches",
+   "date": "10 Nov 2026, 10:07 UTC",
+   "sources": "The Hacker News, BleepingComputer",
+   "url": "story/7d35c70e6708.html"
   },
   {
    "id": "a876e139f448",
@@ -1211,14 +1231,14 @@
    "url": "story/cc8a3b50b532.html"
   },
   {
-   "id": "89af0224359d",
-   "title": "OpenAI Finds GPT-6 Astra Quietly Holding Back on Internal Red-Teaming, Exploit Tasks",
-   "summary": "OpenAI says its Critical-rated cyber model met fewer hidden task goals when work was framed as AI safety research, often silently. The post OpenAI Finds GPT-6 Astra…",
+   "id": "b8a4eb8ff314",
+   "title": "Hackers Deploy Malware in Fresh ScreenConnect Campaign",
+   "summary": "The attackers exploited a vulnerability in a legitimate extension to bypass ScreenConnect authentication. The post Hackers Deploy Malware in Fresh ScreenConnect Campaign…",
    "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "05 Nov 2026, 10:02 UTC",
+   "category": "Attacks & Breaches",
+   "date": "12 Nov 2026, 10:39 UTC",
    "sources": "SecurityWeek",
-   "url": "story/89af0224359d.html"
+   "url": "story/b8a4eb8ff314.html"
   },
   {
    "id": "3ca0085eba4f",
@@ -1351,16 +1371,6 @@
    "url": "story/b80a24c89312.html"
   },
   {
-   "id": "3dfcf9840f4a",
-   "title": "ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure",
-   "summary": "Pre-Patch Tuesday advisories were published by VDE CERT, Phoenix Contact, Johnson Controls, and Hitachi Energy. The post ICS Patch Tuesday: Siemens Flags High-Severity…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "11 Nov 2026, 10:35 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/3dfcf9840f4a.html"
-  },
-  {
    "id": "ddf3562d4ef5",
    "title": "Bluetooth, AirPlay Pairing Vulnerabilities Patched Across Apple Platforms",
    "summary": "Apple has patched Bluetooth and AirPlay pairing flaws, iMessage vulnerabilities, and an exploited Brotli bug across its platforms. The post Bluetooth, AirPlay Pairing…",
@@ -1479,6 +1489,16 @@
    "date": "10 Nov 2026, 13:00 UTC",
    "sources": "Dark Reading",
    "url": "story/b18e440d8eb0.html"
+  },
+  {
+   "id": "0e899e1e6c12",
+   "title": "Hackers now exploit critical Barracuda ESG flaws to gain root access",
+   "summary": "Cybersecurity company Barracuda Networks warned that attackers have begun exploiting two recently patched Email Security Gateway (ESG) vulnerabilities that let them run…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 10:10 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/0e899e1e6c12.html"
   },
   {
    "id": "48d9ef3d98d6",
@@ -1761,6 +1781,16 @@
    "url": "story/bcd0f8e51ff4.html"
   },
   {
+   "id": "3dfcf9840f4a",
+   "title": "ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure",
+   "summary": "Pre-Patch Tuesday advisories were published by VDE CERT, Phoenix Contact, Johnson Controls, and Hitachi Energy. The post ICS Patch Tuesday: Siemens Flags High-Severity…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "11 Nov 2026, 10:35 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/3dfcf9840f4a.html"
+  },
+  {
    "id": "15da1f8e31d6",
    "title": "US Army member arrested in UK over allegations of spying for Russia",
    "summary": "The unnamed soldier was arrested by British counterterrorism police “working closely” with U.S. authorities, including the FBI and the military, the Metropolitan Police…",
@@ -1899,16 +1929,6 @@
    "date": "10 Nov 2026, 11:38 UTC",
    "sources": "The Hacker News",
    "url": "story/3badf33b9e63.html"
-  },
-  {
-   "id": "ce0b470d4dea",
-   "title": "SAP Patches Four CVSS 10.0 Flaws, Including Two Enabling Remote Code Execution",
-   "summary": "Four flaws that attackers could exploit without logging in were fixed today as part of SAP's monthly Security Patch Day—the vendor rates all four 10.0, the maximum CVSS…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 10:02 UTC",
-   "sources": "The Hacker News",
-   "url": "story/ce0b470d4dea.html"
   },
   {
    "id": "0e6f77f0820c",
@@ -2189,6 +2209,16 @@
    "date": "05 Nov 2026, 11:00 UTC",
    "sources": "SecurityWeek",
    "url": "story/a190c692796e.html"
+  },
+  {
+   "id": "ce0b470d4dea",
+   "title": "SAP Patches Four CVSS 10.0 Flaws, Including Two Enabling Remote Code Execution",
+   "summary": "Four flaws that attackers could exploit without logging in were fixed today as part of SAP's monthly Security Patch Day—the vendor rates all four 10.0, the maximum CVSS…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 10:02 UTC",
+   "sources": "The Hacker News",
+   "url": "story/ce0b470d4dea.html"
   },
   {
    "id": "e56a3763b149",
@@ -2749,26 +2779,6 @@
    "date": "05 Nov 2026, 10:56 UTC",
    "sources": "SecurityWeek",
    "url": "story/806a92e4d68b.html"
-  },
-  {
-   "id": "68af6446b07c",
-   "title": "Russia-Linked Hackers Hit iOS, Android Devices With Exploit Chains via Watering Holes",
-   "summary": "The large-scale watering hole campaign has been targeting entities in the US and Europe, mainly in Ukraine. The post Russia-Linked Hackers Hit iOS, Android Devices With…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "05 Nov 2026, 10:37 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/68af6446b07c.html"
-  },
-  {
-   "id": "1981b067cd83",
-   "title": "5 Active Cyber Threats That Put US Enterprises at Risk in October 2026",
-   "summary": "October 2026 brought another wave of cyber threats targeting US businesses, with attackers exploiting trusted platforms, legitimate authentication processes, and…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "05 Nov 2026, 10:06 UTC",
-   "sources": "The Hacker News",
-   "url": "story/1981b067cd83.html"
   }
  ]
 }
