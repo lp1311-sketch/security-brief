@@ -2896,22 +2896,6 @@
    "instructions_checked": true
   },
   {
-   "id": "96a1ace9f58c",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Apple to Start Scanning Publicly Shared iCloud Photos and Files for Harmful Content",
-   "link": "https://thehackernews.com/2026/11/apple-to-start-scanning-publicly-shared.html",
-   "published": "2026-11-05T09:13:28+00:00",
-   "summary": "Apple has revealed that it plans to start checking public iCloud links for harmful content starting with iOS 27.3, iPadOS 27.3, macOS 27.3, and visionOS 27.3. The change specifically applies to scenarios where users share iCloud content, such as photos in iCloud Photos or files in iCloud Drive, by sharing a link and…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCN85K3W5zv5BioRQjCRpIAYT4K8MjZxx0bP0wNETp_eeBQ8Rj_iScHZ0PVnak7dJnJB_tZs06nxCn3YB70aQrULSZVbcn_gLqAsRoN08bSj__9UGZ38PzHTeSqe1IdqZEvdY8fogrjg3xPvg4Kohb2lFGdIveD4jIZQYKugtN5dIc0nTDjlVZJeQBzASx/s1600/icloud.jpg",
-   "cves": [],
-   "first_seen": "2026-11-05T10:01:27.340850+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "0eb55bf1598e",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2929,25 +2913,6 @@
    "first_seen": "2026-11-10T16:31:18.268744+00:00",
    "instructions": [
     "\"[AhsayCBS.jsp's] disguise as an internal image preview service even extended down to a comment block describing a watermark endpoint,\" Huntress explained."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "4f9bb7c1ff8e",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "CERT-In Flags AI-Driven Attacks as Backdoored ARTEX Exposes 62 Consoles to Root Access",
-   "link": "https://thehackernews.com/2026/11/backdoored-docker-image-for-artex-ai.html",
-   "published": "2026-11-05T08:42:03+00:00",
-   "summary": "The Indian Computer Emergency Response Team (CERT-In) has disclosed that an artificial intelligence (AI)-assisted threat actor it tracks as Crafty Falcon is targeting organizations in the Banking, Financial Services, and Insurance (BFSI) sectors in the country. Describing the threat as active and ongoing, the activity…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiA5xlxteigxw9PDEVogRmGjD3vyPuJRyKCuIAOmURy0CY-OLXfYOjC93BPb_gvifLUiVoUk9JcjmxtsGpkT-cYhlrTwXS6yodTv-WwHnPUKvahU67tc5R841Sb_hkIIsUkzNzne5Fzo0h6BUpzEW1770YFBayYksyjSc9pKOV3VsHfoHcPfu3mYAFOQW4K/s1600/docker-ai.jpg",
-   "cves": [],
-   "first_seen": "2026-11-05T10:01:27.340850+00:00",
-   "instructions": [
-    "The update follows an October 2026 alert issued by CERT-In, which warned of multiple cyber attack campaigns targeting non-banking financial companies (NBFCs), digital lending platforms, fintech entities, payment service providers, and cryptocurrency wallet operators.",
-    "\"That's an unauthenticated root shell on every install, and it never shows up in a code review.\""
    ],
    "instructions_checked": true
   },
@@ -3618,6 +3583,26 @@
    "first_seen": "2026-11-10T08:19:37.503691+00:00",
    "instructions": [
     "Multiple N-central zero-days enable anonymous credential theft, administrator creation, and nable/root RCE."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "c2d283cd7530",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Node.js Fixes 16 Flaws, Including HTTP/2 Bugs That Crash Servers and Leak Other Connections' Data",
+   "link": "https://thehackernews.com/2026/11/nodejs-fixes-16-flaws-including-http2.html",
+   "published": "2026-11-12T08:20:37+00:00",
+   "summary": "A flaw fixed in Node.js this week lets unauthenticated clients crash servers that use the runtime's built-in HTTP/2 support on the 24.x and 26.x release lines. A second HTTP/2 flaw can cause a server to send a client pieces of its memory, including responses intended for other connections. Fixed versions were released…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhD-9bYYTxb5WmvOmftwsTAe5hDcHyjm12YlQj320OhT6WqICBOe0D6nQf-PPslE-I0c0r8xvZdTAXfyPwGQxHWRiQ5HSIPEZGEiNrE15ygDNZCRzzVvGugdRlIq6IARQf38iJG-MN-uo7MvdXXcA0wXIGDm0-olouPSw_SbBm2-2CYGHb4uHgtREv2ycI/s1600/nodeks.jpg",
+   "cves": [],
+   "first_seen": "2026-11-12T09:39:12.051987+00:00",
+   "instructions": [
+    "Updating to the fixed version for each line is the only fix in the project's security advisory .",
+    "It also does not say whether servers that met the conditions for the HTTPS flaw should replace their TLS keys or other secrets after updating.",
+    "Five of the flaws, including CVE-2026-123863 and CVE-2026-123864, were reported by Chris Rohlf in collaboration with Claude and Anthropic Research, according to the advisory."
    ],
    "instructions_checked": true
   },
@@ -4980,28 +4965,6 @@
    "instructions_checked": true
   },
   {
-   "id": "da77af0f435f",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "GhostMap Android flaw lets malicious app trigger persistent boot loop",
-   "link": "https://www.bleepingcomputer.com/news/security/ghostmap-android-flaw-lets-malicious-app-trigger-persistent-boot-loop/",
-   "published": "2026-11-05T09:18:29+00:00",
-   "summary": "Attackers can force Android devices into a continuous boot loop using a specially crafted app that requires no permissions and only needs to be installed.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/14/android.jpg",
-   "cves": [],
-   "first_seen": "2026-11-05T10:01:27.340850+00:00",
-   "image_checked": true,
-   "instructions": [
-    "According to the company, Google has been aware of GhostMap since August but closed the issue without releasing a patch, classifying it as \"not reproducible.\"",
-    "During the tests, the researchers used a Pixel 10 device running Android 17 with the August 5 security patch.",
-    "Stopping the crashes is possible in two ways: a factory reset, which erases all locally stored data, and by deleting the malformed file via ADB.",
-    "The tech giant still deemed it out of scope for a security update, though it reserved it for consideration in a future update."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "7e1f9b33c691",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -5106,6 +5069,28 @@
    "instructions": [
     "Potentially impacted administrators are advised to review CloudTrail from October 1 onward for suspicious access from Qubole’s AWS account, investigate subsequent secret and S3 access, rotate exposed credentials, and revoke active role sessions.",
     "It is also recommended to remove unused integrations and restrict remaining roles’ permissions, trusted identities, and permitted source networks.",
+    "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "3ca0085eba4f",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Hackers plant GSocket on Linux servers for persistent access",
+   "link": "https://www.bleepingcomputer.com/news/security/hackers-plant-gsocket-on-linux-servers-for-persistent-access/",
+   "published": "2026-11-12T09:38:00+00:00",
+   "summary": "Multiple threat actors are abusing GSocket, a legitimate open-source remote access tool, to maintain access to Linux servers even after patching the vulnerabilities exploited to gain initial access.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2024/03/05/hand.jpg",
+   "cves": [],
+   "first_seen": "2026-11-12T09:39:12.051987+00:00",
+   "image_checked": true,
+   "instructions": [
+    "The researchers recommend that system administrators remove GSocket and associated files from potentially impacted servers, and verify that outbound connections to its relay network have stopped.",
+    "They also advise restricting outbound traffic to predetermined destinations and auditing cron jobs, systemd services, and shell startup files for rogue additions.",
+    "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day",
     "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
    ],
    "instructions_checked": true
@@ -6848,6 +6833,28 @@
    "instructions_checked": true
   },
   {
+   "id": "3773dc5512fb",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Critical Red Hat Quay Vulnerability Could Expose Private Container Images",
+   "link": "https://www.securityweek.com/critical-red-hat-quay-vulnerability-could-expose-private-container-images/",
+   "published": "2026-11-12T09:23:21+00:00",
+   "summary": "Attackers could exploit a critical Red Hat Quay flaw to steal private container images, overwrite repositories and maintain persistent access. The post Critical Red Hat Quay Vulnerability Could Expose Private Container Images appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/10/Red-Hat.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-12T09:39:12.051987+00:00",
+   "image_checked": true,
+   "instructions": [
+    "It affects deployments where the service responsible for managing signing keys is accessible to untrusted clients. “This Critical flaw in Red Hat Quay’s service key server allows an unauthenticated attacker to take over registry token signing,” Red Hat said in its advisory .",
+    "Red Hat recommends restricting access to the key-management service, reviewing logs for suspicious key changes, and removing unauthorized keys.",
+    "Neither the advisory nor the Bugzilla report identifies a fixed version.",
+    "When anonymous access is enabled, an attacker without an account can obtain a registry token and exploit weaknesses in the key rotation mechanism to install their own trusted signing key."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "d62ab9694fcc",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -7224,6 +7231,28 @@
    "image_checked": true,
    "instructions": [
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "2f643c57e2d5",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Maersk Confirms Data Theft Amid $5 Million Extortion Attempt",
+   "link": "https://www.securityweek.com/maersk-confirms-data-theft-amid-5-million-extortion-attempt/",
+   "published": "2026-11-12T08:38:47+00:00",
+   "summary": "The WhiteArmor ransomware group claims it stole 100GB of data from the shipping giant’s systems. The post Maersk Confirms Data Theft Amid $5 Million Extortion Attempt appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/11/Maersk.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-12T09:39:12.051987+00:00",
+   "image_checked": true,
+   "instructions": [
+    "ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure",
+    "Chipmaker Patch Tuesday: Over 200 Vulnerabilities Addressed by Intel, AMD",
+    "Chrome Update Patches Exploited XML Zero-Day, Eighth This Year",
+    "Citrix, Ivanti Patch Critical and High-Severity Vulnerabilities"
    ],
    "instructions_checked": true
   },
