@@ -3882,27 +3882,6 @@
    "instructions_checked": true
   },
   {
-   "id": "59043a855535",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "ThreatsDay: Apache OFBiz RCE, DreamHost Breach, DeFi Site Hijacks + 17 More Stories",
-   "link": "https://thehackernews.com/2026/11/threatsday-apache-ofbiz-rce-dreamhost.html",
-   "published": "2026-11-05T14:41:10+00:00",
-   "summary": "How much damage can someone do without breaking much? Quite a lot, it seems. A stolen login can open doors across several systems. A trusted setting can be used to lock people out. Even a simple file copy can reach places it shouldn't. And while new tools are helping find security holes faster, some important systems…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj37A8QMI4tUKrluDLCSgawVjQQeZ6c6NrfWLMLUjrI6vRhpt8Tlw4PNnfF49ZlOTtW28Cfb035jo-j22auCrWauuE-JpHfKMFSVfIQtUZjn1eETLFhQEev0FFafFlGz8W6r-96FPmTWlFGTR3RhV869PbcYkO4YPi5nD-zQVGHSZ8d39OmhecF693dj4-x/s1600/tds.jpg",
-   "cves": [],
-   "first_seen": "2026-11-05T15:39:35.408855+00:00",
-   "instructions": [
-    "\"To earn this premier reward, you must demonstrate full administrative control, the equivalent of 'roles/owner' or complete IAM control, over arbitrary Google Cloud organizations or projects with no prior access or special project setup,\" Google said .",
-    "Critical Systems Face Prolonged Exposure Network Appliances Go More Than a Year Without Patches An analysis of roughly 383,000 CVEs disclosed from 1999 through September 2026 has found that the median time to patch a vulnerability exceeds a year for network appliances.",
-    "That gap is the threat actor's window, widest on the critical systems that stay exposed the longest.\" The tech giant also said threat actors disproportionately target flaws that maximize impact and exposure and enable system takeover, particularly remote code execution, privilege escalation, and authentication bypass.",
-    "The operators resorted to delaying tactics to block payments when they attempted to withdraw their funds."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "3ac35ff64736",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -4160,6 +4139,25 @@
     "European officials said their findings were the first time EU regulators have directly challenged the engagement-based recommendation system of a major social media platform, and, to their knowledge, was the first enforcement action of its kind worldwide.",
     "“The more a user interacts with a certain type of content, the more TikTok’s ‘For You’ feed algorithm recommends similar content.",
     "In particular, the Commission said it wants TikTok to base its algorithmic recommendations on what users explicitly say they want rather than on implicit signals such as how long they view videos for."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "504c4dbc535b",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Hijacked email accounts complicate investigations into European bomb hoaxes",
+   "link": "https://therecord.media/europe-hoax-email-threats",
+   "published": "2026-11-12T14:45:00+00:00",
+   "summary": "Bomb threats sent to thousands of schools across Europe this week came from a compromised email account at a Taiwanese university, the latest incident in a series of hoax threats that have targeted airports and newsrooms using messages sent from legitimate institutions.",
+   "image": "https://cms.therecord.media/uploads/Garda_6ee6f55714.jpg",
+   "cves": [],
+   "first_seen": "2026-11-12T14:55:12.654277+00:00",
+   "image_checked": true,
+   "instructions": [
+    "The Irish police force, An Garda Síochána, said it also assessed the threats sent to schools as “not credible” and stressed that it was “not advising any educational establishment to evacuate.”"
    ],
    "instructions_checked": true
   },
@@ -4717,6 +4715,28 @@
     "Partners should also review account activity, revoke active sessions, reset credentials from a trusted device, and verify multifactor authentication.\"",
     "“Sequential attacker-assigned tags suggest other MSPs may have been compromised earlier, so ScreenConnect users should check their Run Command history even if they haven’t received alerts,” Huntress told BleepingComputer.",
     "BleepingComputer reached out to Huntress with additional questions about the attacks and will update the post if we receive a response."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "7927f7b9de97",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Apify rotates API tokens, prompts 2FA resets after breach",
+   "link": "https://www.bleepingcomputer.com/news/security/apify-rotates-api-tokens-prompts-2fa-resets-after-breach/",
+   "published": "2026-11-12T14:36:47+00:00",
+   "summary": "Apify has rotated critical internal secrets and revoked some third-party OAuth connections after detecting unauthorized access to its internal systems.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/12/Apify.jpg",
+   "cves": [],
+   "first_seen": "2026-11-12T14:55:12.654277+00:00",
+   "image_checked": true,
+   "instructions": [
+    "In another letter sent to affected customers, the company advises recipients to reset their two-factor authentication (2FA) through the Apify Console, warning that their 2FA codes may have been exposed while assuring them that their passwords remain safe.",
+    "“On 9 and 10 November 2026, an unauthorized third party gained access to parts of Apify’s internal systems,” Apify said in an update on the incident.",
+    "mSecure password manager hack prompts password reset warnings",
+    "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day"
    ],
    "instructions_checked": true
   },
@@ -5995,7 +6015,7 @@
    "title": "People Are Getting Weird About AI",
    "link": "https://www.darkreading.com/cyber-risk/people-are-getting-weird-about-ai",
    "published": "2026-11-09T23:06:22+00:00",
-   "summary": "Dark Reading Confidential Episode 22: You can love AI without being blind to cybersecurity being sacrificed for utility.",
+   "summary": "Dark Reading Confidential Episode 22: You can love AI without being blind to cybersecurity being sacrificed for utility. The tendency for humans to anthropomorphize the conversations and interactions we're having with AI is growing into potential delusion.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt0469f94bd17817ff/6642699959fdc64aa5f9c5fa/dark-reading-confidential-logo-sq.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-10T20:15:59.967236+00:00",

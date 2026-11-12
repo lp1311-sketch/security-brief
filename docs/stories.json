@@ -121,6 +121,16 @@
    "url": "story/d7669d6db99e.html"
   },
   {
+   "id": "7927f7b9de97",
+   "title": "Apify rotates API tokens, prompts 2FA resets after breach",
+   "summary": "Apify has rotated critical internal secrets and revoked some third-party OAuth connections after detecting unauthorized access to its internal systems.",
+   "priority": "High",
+   "category": "Attacks & Breaches",
+   "date": "12 Nov 2026, 14:36 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/7927f7b9de97.html"
+  },
+  {
    "id": "4c32248b415f",
    "title": "Maersk confirms data breach as WhiteArmor ransomware demands $5 million",
    "summary": "Maersk announced that a threat actor gained unauthorized access to a local legacy system inherited through an earlier acquisition and extracted data from it.",
@@ -801,16 +811,6 @@
    "url": "story/7646e96e2e7b.html"
   },
   {
-   "id": "c1d47a910d2a",
-   "title": "SAP Patches Critical ICM2SHELL, ProxyGate Vulnerabilities",
-   "summary": "SAP has published 42 new and updated security advisories, including nine that address critical-severity vulnerabilities. The post SAP Patches Critical ICM2SHELL…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 14:46 UTC",
-   "sources": "SecurityWeek, BleepingComputer",
-   "url": "story/c1d47a910d2a.html"
-  },
-  {
    "id": "1f6bc1af5305",
    "title": "N-able Takes N-central Offline as Researcher Drops Over 30 Zero-Days",
    "summary": "Attackers could exploit the flaws for remote code execution, credential theft, and administrator account creation. The post N-able Takes N-central Offline as Researcher…",
@@ -991,16 +991,6 @@
    "url": "story/030e72a271ce.html"
   },
   {
-   "id": "ef892408bebc",
-   "title": "Google DeepMind just mathematically verified key parts of Signal",
-   "summary": "Google DeepMind researchers used agentic AI to mathematically prove, or “formally verify,” a number of the Signal protocol’s key cryptographic guarantees—a landmark…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "11 Nov 2026, 14:08 UTC",
-   "sources": "Ars Technica Security",
-   "url": "story/ef892408bebc.html"
-  },
-  {
    "id": "60ccd3ca4d45",
    "title": "Citrix, Ivanti Patch Critical and High-Severity Vulnerabilities",
    "summary": "Attackers could exploit the bugs to tamper with certificate entries, achieve remote code execution, and compromise hosts. The post Citrix, Ivanti Patch Critical and…",
@@ -1119,6 +1109,16 @@
    "date": "10 Nov 2026, 15:01 UTC",
    "sources": "BleepingComputer",
    "url": "story/74f31cae8a39.html"
+  },
+  {
+   "id": "c1d47a910d2a",
+   "title": "SAP Patches Critical ICM2SHELL, ProxyGate Vulnerabilities",
+   "summary": "SAP has published 42 new and updated security advisories, including nine that address critical-severity vulnerabilities. The post SAP Patches Critical ICM2SHELL…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 14:46 UTC",
+   "sources": "SecurityWeek, BleepingComputer",
+   "url": "story/c1d47a910d2a.html"
   },
   {
    "id": "7d35c70e6708",
@@ -1251,6 +1251,16 @@
    "url": "story/cc8a3b50b532.html"
   },
   {
+   "id": "504c4dbc535b",
+   "title": "Hijacked email accounts complicate investigations into European bomb hoaxes",
+   "summary": "Bomb threats sent to thousands of schools across Europe this week came from a compromised email account at a Taiwanese university, the latest incident in a series of…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "12 Nov 2026, 14:45 UTC",
+   "sources": "The Record",
+   "url": "story/504c4dbc535b.html"
+  },
+  {
    "id": "116311b70214",
    "title": "Chrome, Firefox Updates Patch Over 180 Vulnerabilities",
    "summary": "Google fixed 83 flaws with a new Chrome 157 release, and Mozilla addressed 99 bugs in Firefox 160. The post Chrome, Firefox Updates Patch Over 180 Vulnerabilities…",
@@ -1381,24 +1391,14 @@
    "url": "story/a9021fd43362.html"
   },
   {
-   "id": "7fc0ff6aee2a",
-   "title": "Hackers Target Qlik Sense Servers With Reverse Shells, Stage ActiveMQ and Veeam Exploits",
-   "summary": "Threat actors have been observed targeting Qlik Sense servers to unsuccessfully deliver PowerShell reverse shell commands against multiple environments in October 2026…",
+   "id": "ef892408bebc",
+   "title": "Google DeepMind just mathematically verified key parts of Signal",
+   "summary": "Google DeepMind researchers used agentic AI to mathematically prove, or “formally verify,” a number of the Signal protocol’s key cryptographic guarantees—a landmark…",
    "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "11 Nov 2026, 14:01 UTC",
-   "sources": "The Hacker News",
-   "url": "story/7fc0ff6aee2a.html"
-  },
-  {
-   "id": "7ba871700f25",
-   "title": "Asus, Zoom Release Security Patches",
-   "summary": "Attackers could exploit them for command execution, memory overwrites, and privilege escalation. The post Asus, Zoom Release Security Patches appeared first on…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "11 Nov 2026, 13:58 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/7ba871700f25.html"
+   "category": "AI Risk Lab",
+   "date": "11 Nov 2026, 14:08 UTC",
+   "sources": "Ars Technica Security",
+   "url": "story/ef892408bebc.html"
   },
   {
    "id": "14caa111eec6",
@@ -1831,14 +1831,24 @@
    "url": "story/302fe04b9508.html"
   },
   {
-   "id": "59043a855535",
-   "title": "ThreatsDay: Apache OFBiz RCE, DreamHost Breach, DeFi Site Hijacks + 17 More Stories",
-   "summary": "How much damage can someone do without breaking much? Quite a lot, it seems. A stolen login can open doors across several systems. A trusted setting can be used to lock…",
+   "id": "7fc0ff6aee2a",
+   "title": "Hackers Target Qlik Sense Servers With Reverse Shells, Stage ActiveMQ and Veeam Exploits",
+   "summary": "Threat actors have been observed targeting Qlik Sense servers to unsuccessfully deliver PowerShell reverse shell commands against multiple environments in October 2026…",
    "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "05 Nov 2026, 14:41 UTC",
+   "category": "Patch Radar",
+   "date": "11 Nov 2026, 14:01 UTC",
    "sources": "The Hacker News",
-   "url": "story/59043a855535.html"
+   "url": "story/7fc0ff6aee2a.html"
+  },
+  {
+   "id": "7ba871700f25",
+   "title": "Asus, Zoom Release Security Patches",
+   "summary": "Attackers could exploit them for command execution, memory overwrites, and privilege escalation. The post Asus, Zoom Release Security Patches appeared first on…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "11 Nov 2026, 13:58 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/7ba871700f25.html"
   },
   {
    "id": "2b63f8aad1bf",
@@ -1981,16 +1991,6 @@
    "url": "story/cb71d2bd129f.html"
   },
   {
-   "id": "f00273d9e0a7",
-   "title": "Palantir exec nominated to lead CISA; lame-duck Senate vote is uncertain",
-   "summary": "Michael LoSapio, Palantir's chief information security officer, is officially President Donald Trump's pick to lead the Cybersecurity and Infrastructure Security Agency.",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "10 Nov 2026, 14:31 UTC",
-   "sources": "The Record",
-   "url": "story/f00273d9e0a7.html"
-  },
-  {
    "id": "b18e440d8eb0",
    "title": "AI Makes Reverse Engineering Mainstream Software & Malware Far Easier",
    "summary": "Researchers unpacked, mapped, and recreated complex software and the Turla malware, raising opportunities and concerns for organizations and cybersecurity analysts.",
@@ -2013,7 +2013,7 @@
   {
    "id": "ccc69e15df6f",
    "title": "People Are Getting Weird About AI",
-   "summary": "Dark Reading Confidential Episode 22: You can love AI without being blind to cybersecurity being sacrificed for utility.",
+   "summary": "Dark Reading Confidential Episode 22: You can love AI without being blind to cybersecurity being sacrificed for utility. The tendency for humans to anthropomorphize the…",
    "priority": "Standard",
    "category": "AI Risk Lab",
    "date": "09 Nov 2026, 23:06 UTC",
@@ -2239,6 +2239,16 @@
    "date": "05 Nov 2026, 15:00 UTC",
    "sources": "BleepingComputer",
    "url": "story/dad53d7e3ed5.html"
+  },
+  {
+   "id": "f00273d9e0a7",
+   "title": "Palantir exec nominated to lead CISA; lame-duck Senate vote is uncertain",
+   "summary": "Michael LoSapio, Palantir's chief information security officer, is officially President Donald Trump's pick to lead the Cybersecurity and Infrastructure Security Agency.",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "10 Nov 2026, 14:31 UTC",
+   "sources": "The Record",
+   "url": "story/f00273d9e0a7.html"
   },
   {
    "id": "e7a8a4d2bbbe",
