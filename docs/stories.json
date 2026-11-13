@@ -211,16 +211,6 @@
    "url": "story/7927f7b9de97.html"
   },
   {
-   "id": "4c32248b415f",
-   "title": "Maersk confirms data breach as WhiteArmor ransomware demands $5 million",
-   "summary": "Maersk announced that a threat actor gained unauthorized access to a local legacy system inherited through an earlier acquisition and extracted data from it.",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "11 Nov 2026, 16:24 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/4c32248b415f.html"
-  },
-  {
    "id": "df2e304a7245",
    "title": "CVE-2026-120792 Aspire Information Disclosure Vulnerability",
    "summary": "Updated the products listed in the Security Updates table. This is an informational change only.",
@@ -289,6 +279,16 @@
    "date": "07 Nov 2026, 10:45 UTC",
    "sources": "Born's IT and Windows Blog",
    "url": "story/717f80da6fa4.html"
+  },
+  {
+   "id": "fcdcf30ed87c",
+   "title": "Windows 0-day dropped by disgruntled researcher hands hackers System rights",
+   "summary": "Nightmare Eclipse, the pseudonym of a researcher with an ongoing, very public beef with Microsoft, has dropped yet another Windows zero-day. On Tuesday, Nightmare…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "13 Nov 2026, 16:26 UTC",
+   "sources": "Ars Technica Security",
+   "url": "story/fcdcf30ed87c.html"
   },
   {
    "id": "e4e9606f466d",
@@ -451,16 +451,6 @@
    "url": "story/1acaa8e77a2e.html"
   },
   {
-   "id": "093b008afb96",
-   "title": "Critical Red Hat Quay Flaw Lets Attackers Read and Overwrite All Private Container Images in a Registry",
-   "summary": "A critical flaw in Red Hat Quay allows an attacker who can access a Quay registry to read and overwrite private container images in every repository. Quay enables…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "12 Nov 2026, 16:27 UTC",
-   "sources": "The Hacker News",
-   "url": "story/093b008afb96.html"
-  },
-  {
    "id": "16b72427cf58",
    "title": "Apache Patches Critical HTTP Server RCE Found by Anthropic, Google",
    "summary": "The mod_http2 race condition, CVE-2026-119618, could let unauthenticated attackers execute code on servers with HTTP/2 enabled. The post Apache Patches Critical HTTP…",
@@ -499,6 +489,16 @@
    "date": "11 Nov 2026, 20:54 UTC",
    "sources": "BleepingComputer",
    "url": "story/4555dea14647.html"
+  },
+  {
+   "id": "4c32248b415f",
+   "title": "Maersk confirms data breach as WhiteArmor ransomware demands $5 million",
+   "summary": "Maersk announced that a threat actor gained unauthorized access to a local legacy system inherited through an earlier acquisition and extracted data from it.",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "11 Nov 2026, 16:24 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/4c32248b415f.html"
   },
   {
    "id": "8b35f69eac70",
@@ -581,6 +581,16 @@
    "url": "story/de9719511839.html"
   },
   {
+   "id": "b297d876237e",
+   "title": "Check Point gateways hacked via PHP2Shell to deploy VMware ESXi wiper",
+   "summary": "Vulnerable Check Point Security Gateway instances have been targeted in PHP2Shell attacks that deployed data-wiping malware on VMware ESXi hosts.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "13 Nov 2026, 16:21 UTC",
+   "sources": "BleepingComputer, The Hacker News",
+   "url": "story/b297d876237e.html"
+  },
+  {
    "id": "fb5ac890be2a",
    "title": "New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs",
    "summary": "Two attacks made public this week allow a malicious host to read data inside AMD SEV-SNP-protected virtual machines (VMs), which are built to keep the server's operator…",
@@ -641,14 +651,14 @@
    "url": "story/950205e16691.html"
   },
   {
-   "id": "a9b2747b83a3",
-   "title": "Trained to betray: How post-training supply chain attacks hijack coding agents",
-   "summary": "As organizations increasingly deploy specialized AI agents, trust cannot depend solely on a model behaving as expected during evaluation or normal use. As Satya Nadella…",
+   "id": "093b008afb96",
+   "title": "Critical Red Hat Quay Flaw Lets Attackers Read and Overwrite All Private Container Images in a Registry",
+   "summary": "A critical flaw in Red Hat Quay allows an attacker who can access a Quay registry to read and overwrite private container images in every repository. Quay enables…",
    "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "12 Nov 2026, 17:00 UTC",
-   "sources": "Microsoft Security Blog",
-   "url": "story/a9b2747b83a3.html"
+   "category": "Patch Radar",
+   "date": "12 Nov 2026, 16:27 UTC",
+   "sources": "The Hacker News",
+   "url": "story/093b008afb96.html"
   },
   {
    "id": "7968b43f44c2",
@@ -809,16 +819,6 @@
    "date": "11 Nov 2026, 18:06 UTC",
    "sources": "KrebsOnSecurity",
    "url": "story/8cdc4a0f74c8.html"
-  },
-  {
-   "id": "e564f8c52313",
-   "title": "Lessons from 59 Linux Kernel Bug Reports",
-   "summary": "At Microsoft’s FORGE Lab, we used codename MDASH to scan a subset of Linux kernel subsystems from late May to mid-June 2026. One full-time researcher and one intern led…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "11 Nov 2026, 16:55 UTC",
-   "sources": "Microsoft Security Blog",
-   "url": "story/e564f8c52313.html"
   },
   {
    "id": "c5a7aee1fe72",
@@ -1271,6 +1271,16 @@
    "url": "story/b99b441690fc.html"
   },
   {
+   "id": "f6d06bee472c",
+   "title": "German parliament passes law giving spy agencies hacking, sabotage powers",
+   "summary": "In the biggest overhaul of the country’s spy laws of the postwar era, the Bundestag approved the bill by 308 votes to 190 — with 71 abstentions — months after Chancellor…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "13 Nov 2026, 16:32 UTC",
+   "sources": "The Record",
+   "url": "story/f6d06bee472c.html"
+  },
+  {
    "id": "c6e1d6a77271",
    "title": "FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
    "summary": "The U.S. Federal Bureau of Investigation (FBI) has established that threat actors tied to the Democratic People's Republic of Korea (DPRK aka North Korea) have stolen…",
@@ -1371,16 +1381,6 @@
    "url": "story/3ff055feac94.html"
   },
   {
-   "id": "c0eea237828e",
-   "title": "Hackers Exploit PHP2Shell Flaws in Check Point Gateways to Deploy TSGA Backdoor and Wipe ESXi Files",
-   "summary": "An unknown threat actor has been observed targeting unpatched Check Point Security Gateways to obtain initial access via the PHP2Shell vulnerabilities and then a…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "13 Nov 2026, 08:05 UTC",
-   "sources": "The Hacker News",
-   "url": "story/c0eea237828e.html"
-  },
-  {
    "id": "d9f7469060c3",
    "title": "PHP2Shell Exploited in Destructive Check Point Gateway Attacks",
    "summary": "PHP2Shell enabled initial compromise, while CVE-2026-123039 allowed attackers to elevate privileges to root. The post PHP2Shell Exploited in Destructive Check Point…",
@@ -1451,14 +1451,14 @@
    "url": "story/0215fb6873ae.html"
   },
   {
-   "id": "023264eb01e1",
-   "title": "European authorities take down SteaIC malware servers for second time this year",
-   "summary": "German authorities on Thursday said investigators traced the rebuilt network to the Virtualine bulletproof hosting provider, seized by the FBI in October, with the…",
+   "id": "a9b2747b83a3",
+   "title": "Trained to betray: How post-training supply chain attacks hijack coding agents",
+   "summary": "As organizations increasingly deploy specialized AI agents, trust cannot depend solely on a model behaving as expected during evaluation or normal use. As Satya Nadella…",
    "priority": "Standard",
    "category": "Attacks & Breaches",
-   "date": "12 Nov 2026, 16:21 UTC",
-   "sources": "The Record",
-   "url": "story/023264eb01e1.html"
+   "date": "12 Nov 2026, 17:00 UTC",
+   "sources": "Microsoft Security Blog",
+   "url": "story/a9b2747b83a3.html"
   },
   {
    "id": "50b7d482cfd7",
@@ -1549,6 +1549,16 @@
    "date": "11 Nov 2026, 20:27 UTC",
    "sources": "Dark Reading",
    "url": "story/2cf87a19124d.html"
+  },
+  {
+   "id": "e564f8c52313",
+   "title": "Lessons from 59 Linux Kernel Bug Reports",
+   "summary": "At Microsoft’s FORGE Lab, we used codename MDASH to scan a subset of Linux kernel subsystems from late May to mid-June 2026. One full-time researcher and one intern led…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "11 Nov 2026, 16:55 UTC",
+   "sources": "Microsoft Security Blog",
+   "url": "story/e564f8c52313.html"
   },
   {
    "id": "63cbf25606a5",
@@ -1881,14 +1891,14 @@
    "url": "story/c5532d0fb1f0.html"
   },
   {
-   "id": "c4daeac5c98c",
-   "title": "QNAP says hackers breaching NAS devices in Plex2Shell attacks",
-   "summary": "QNAP urges users to update Plex Media Server to the latest version available in the QNAP App Center, as hackers are exploiting the Plex2Shell vulnerability chain.",
+   "id": "023264eb01e1",
+   "title": "European authorities take down SteaIC malware servers for second time this year",
+   "summary": "German authorities on Thursday said investigators traced the rebuilt network to the Virtualine bulletproof hosting provider, seized by the FBI in October, with the…",
    "priority": "Standard",
    "category": "Attacks & Breaches",
-   "date": "06 Nov 2026, 17:04 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/c4daeac5c98c.html"
+   "date": "12 Nov 2026, 16:21 UTC",
+   "sources": "The Record",
+   "url": "story/023264eb01e1.html"
   },
   {
    "id": "62ff99ae778b",
@@ -2039,26 +2049,6 @@
    "date": "11 Nov 2026, 21:27 UTC",
    "sources": "BleepingComputer",
    "url": "story/a4a34375ee4e.html"
-  },
-  {
-   "id": "d62040292e65",
-   "title": "Iran-backed network directed London attacks over FaceTime, US prosecutors say",
-   "summary": "An indictment unsealed Tuesday says the broader campaign, targeting Jewish and American sites, included attacks on synagogues in Belgium, the Netherlands and London, and…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "11 Nov 2026, 16:57 UTC",
-   "sources": "The Record",
-   "url": "story/d62040292e65.html"
-  },
-  {
-   "id": "f9a315b08895",
-   "title": "Today: CISO Forum Virtual Summit 2026 Day 2 – Join Cybersecurity Leaders Online",
-   "summary": "Designed for cybersecurity leaders, this immersive two-day virtual event is your premier destination to discuss, share, and learn innovative risk management and defense…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "11 Nov 2026, 16:29 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/f9a315b08895.html"
   },
   {
    "id": "cdc2cd16c5c3",
@@ -2439,6 +2429,26 @@
    "date": "06 Nov 2026, 18:27 UTC",
    "sources": "Dark Reading",
    "url": "story/3c3dad9eec40.html"
+  },
+  {
+   "id": "d62040292e65",
+   "title": "Iran-backed network directed London attacks over FaceTime, US prosecutors say",
+   "summary": "An indictment unsealed Tuesday says the broader campaign, targeting Jewish and American sites, included attacks on synagogues in Belgium, the Netherlands and London, and…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "11 Nov 2026, 16:57 UTC",
+   "sources": "The Record",
+   "url": "story/d62040292e65.html"
+  },
+  {
+   "id": "f9a315b08895",
+   "title": "Today: CISO Forum Virtual Summit 2026 Day 2 – Join Cybersecurity Leaders Online",
+   "summary": "Designed for cybersecurity leaders, this immersive two-day virtual event is your premier destination to discuss, share, and learn innovative risk management and defense…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "11 Nov 2026, 16:29 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/f9a315b08895.html"
   },
   {
    "id": "a9021fd43362",
@@ -2949,16 +2959,6 @@
    "date": "06 Nov 2026, 18:28 UTC",
    "sources": "SecurityWeek",
    "url": "story/d9a0f8bfa397.html"
-  },
-  {
-   "id": "88525575b645",
-   "title": "FBI agent pleads guilty to stealing $2.4 million in crypto from nation-state hackers",
-   "summary": "Patrick Steven Yaroch, 37, is facing up to 20 years in prison on wire fraud and money laundering charges after admitting to using his position on an FBI investigative…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "06 Nov 2026, 16:53 UTC",
-   "sources": "The Record",
-   "url": "story/88525575b645.html"
   }
  ]
 }

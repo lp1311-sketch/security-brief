@@ -113,6 +113,27 @@
    "instructions_checked": true
   },
   {
+   "id": "fcdcf30ed87c",
+   "source": "ars",
+   "source_name": "Ars Technica Security",
+   "official": false,
+   "source_type": "news",
+   "title": "Windows 0-day dropped by disgruntled researcher hands hackers System rights",
+   "link": "https://arstechnica.com/security/2026/11/windows-0-day-dropped-by-disgruntled-researcher-hands-hackers-system-rights/",
+   "published": "2026-11-13T16:26:32+00:00",
+   "summary": "Nightmare Eclipse, the pseudonym of a researcher with an ongoing, very public beef with Microsoft, has dropped yet another Windows zero-day. On Tuesday, Nightmare Eclipse disclosed SignDrop, a vulnerability that gives local users full System rights on some versions of Windows. The vulnerability resides in the Common…",
+   "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-1237693734-1152x648-1783631068.jpg",
+   "cves": [],
+   "first_seen": "2026-11-13T17:19:54.176696+00:00",
+   "instructions": [
+    "“If everything is chained correctly, funnily this legit security mitigation can be used against itself and allow an elevation [of] privileges,” Nightmare Eclipse wrote . “Everything is done properly by Microsoft here but the logic allows abuse.”",
+    "If it’s in learning mode or enforcement mode, the system is vulnerable, and the PoC supplied in the post should spawn a SYSTEM shell.",
+    "For a system to be vulnerable, Dormann said, the HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\CLFS\\Authentication\\Mode value must be 0 or 1.” Out of the many machines Dormann uses, only a single one met this requirement.",
+    "“The requirements are important in that it seems to require Windows 26H2, and one that has existed for more than 90 days, it seems,” he explained. “That is, you can’t just take a new 26H2 system and install updates and have it work.”"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "717f80da6fa4",
    "source": "borncity",
    "source_name": "Born's IT and Windows Blog",
@@ -4213,23 +4234,6 @@
    "instructions_checked": true
   },
   {
-   "id": "88525575b645",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "FBI agent pleads guilty to stealing $2.4 million in crypto from nation-state hackers",
-   "link": "https://therecord.media/fbi-agent-pleads-guilty-to-stealing-from-nation-state-hackers",
-   "published": "2026-11-06T16:53:00+00:00",
-   "summary": "Patrick Steven Yaroch, 37, is facing up to 20 years in prison on wire fraud and money laundering charges after admitting to using his position on an FBI investigative squad to steal more than $2.4 million in cryptocurrency to cover his debts.",
-   "image": "https://cms.therecord.media/uploads/fbi_613c45ceeb.jpg",
-   "cves": [],
-   "first_seen": "2026-11-06T17:49:20.026994+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "4ca261bf7f30",
    "source": "therecord",
    "source_name": "The Record",
@@ -4244,6 +4248,25 @@
    "first_seen": "2026-11-09T19:23:29.204678+00:00",
    "image_checked": true,
    "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "f6d06bee472c",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "German parliament passes law giving spy agencies hacking, sabotage powers",
+   "link": "https://therecord.media/german-parliament-passes-law-giving-spy-agencies-hacking-power",
+   "published": "2026-11-13T16:32:00+00:00",
+   "summary": "In the biggest overhaul of the country’s spy laws of the postwar era, the Bundestag approved the bill by 308 votes to 190 — with 71 abstentions — months after Chancellor Friedrich Merz’s cabinet signed off on the draft.",
+   "image": "https://cms.therecord.media/uploads/rasmus_gundorff_saederup_k_C_Dr4i_Pax7c_unsplash_cf20643196.jpg",
+   "cves": [],
+   "first_seen": "2026-11-13T17:19:54.176696+00:00",
+   "image_checked": true,
+   "instructions": [
+    "One amendment drew fire from the far right, as it allows the BfV to restrict information-sharing with individual state intelligence offices if there are concrete indications that federal or state security interests are at risk."
+   ],
    "instructions_checked": true
   },
   {
@@ -5015,6 +5038,28 @@
    "instructions_checked": true
   },
   {
+   "id": "b297d876237e",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Check Point gateways hacked via PHP2Shell to deploy VMware ESXi wiper",
+   "link": "https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/",
+   "published": "2026-11-13T16:21:43+00:00",
+   "summary": "Vulnerable Check Point Security Gateway instances have been targeted in PHP2Shell attacks that deployed data-wiping malware on VMware ESXi hosts.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/26/PHP.jpg",
+   "cves": [],
+   "first_seen": "2026-11-13T17:19:54.176696+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Check Point recommends that customers install the November Jumbo Hotfix on all Management Servers and Security Gateways, prioritizing those with internet-facing Mobile Access portals.",
+    "Administrators should also check for signs of compromise on previously exposed gateways, including session files containing upload_progress_pwn, unexpected CPconfigdaemon processes or binaries, and unexplained gaps in firewall logs.",
+    "Then they abused the privileges to install PHP webshells and the TSGA backdoor, which embeds a networking component called TSProxy to listen for attacker commands concealed within regular traffic.",
+    "The update addresses both PHP2Shell and the DynamicCLI privilege escalation flaw used in the attacks."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "e49e186a5eab",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -5671,28 +5716,6 @@
     "WordPress users are urged to update credentials, enable multi-factor authentication, and patch vulnerabilities.\"",
     "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day",
     "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "c4daeac5c98c",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "QNAP says hackers breaching NAS devices in Plex2Shell attacks",
-   "link": "https://www.bleepingcomputer.com/news/security/qnap-says-hackers-breaching-nas-devices-in-plex2shell-attacks/",
-   "published": "2026-11-06T17:04:23+00:00",
-   "summary": "QNAP urges users to update Plex Media Server to the latest version available in the QNAP App Center, as hackers are exploiting the Plex2Shell vulnerability chain.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/06/QNAP.jpg",
-   "cves": [],
-   "first_seen": "2026-11-06T17:49:20.026994+00:00",
-   "image_checked": true,
-   "instructions": [
-    "\"QNAP has received reports from some users that Plex Media Server on their NAS appears to have been compromised through [Plex2Shell] vulnerabilities, and QNAP Technical Support is assisting the affected users,” the company says in an advisory today.",
-    "CISA added all four flaws to its Known Exploited Vulnerabilities catalog on October 20, 2026, urging federal agencies to upgrade to Plex 1.43.3.10861 or later within three days, giving it maximum priority.",
-    "QNAP advises users to update Plex Media Server to the latest version available through the QNAP App Center, currently 1.43.3.10861, to protect against Plex2Shell attacks.",
-    "QNAP says that users should treat their NAS devices and all personal content as compromised if they're running a vulnerable Plex server that is exposed on the public web."
    ],
    "instructions_checked": true
   },
