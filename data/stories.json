@@ -374,6 +374,28 @@
    "instructions_checked": true
   },
   {
+   "id": "78b8360a8962",
+   "source": "borncity",
+   "source_name": "Born's IT and Windows Blog",
+   "official": false,
+   "source_type": "news",
+   "title": "Patchday: Windows-Druckerprobleme mit Nov. 2026-Update bestätigt",
+   "link": "https://borncity.com/blog/2026/11/13/patchday-windows-druckerprobleme-mit-nov-2026-update-bestaetigt/",
+   "published": "2026-11-13T06:01:02+00:00",
+   "summary": "Am 10. November 2026 (Patchday) wurden von Microsoft kumulative Updates für die Clients und Serverversionen seiner Windows Betriebssysteme veröffentlicht. Nutzer, die diese Windows Sicherheitsupdates installiert haben, berichten aber von Druckerproblemen. Microsoft hat diese Probleme inzwischen bestätigt. November…",
+   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Windows-klein.jpg",
+   "cves": [],
+   "first_seen": "2026-11-13T06:42:43.760817+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Das kumulative Update KB5132061 für Windows 11 24H2-26H2 beinhaltet Qualitätsverbesserungen aus dem Preview-Update Windows 11 25H2 – 26H2: Preview Update KB5127936 (28.",
+    "November 2026) Windows 11 25H2 – 26H2: Preview Update KB5127936 (28.",
+    "[Printing] Fixed: Adding a printer published in Active Directory through Settings > Bluetooth & devices > Printers & scanners > Add device might fail with error 87, \"The parameter is incorrect.\" This issue was introduced by the October 2026 update and does not generally affect existing printers or printing.",
+    "Das sei seit Installation des November 2026-Update auf Windows Server 2019."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "87c81e4666ca",
    "source": "borncity",
    "source_name": "Born's IT and Windows Blog",
@@ -3435,6 +3457,27 @@
    "instructions_checked": true
   },
   {
+   "id": "9e0cc84d062d",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Hackers Exploit N-central Flaws to Infect 21 Servers, Including 19 Running Hotfix 2",
+   "link": "https://thehackernews.com/2026/11/hackers-exploit-n-central-flaws-to.html",
+   "published": "2026-11-13T05:43:28+00:00",
+   "summary": "N-able on Thursday said it's taking additional precautions in the wake of public disclosure of a new set of flaws tracked as 4EverAble2Shell and Agent2Shell. \"We are restricting certain N-central features and integrations,\" the company said in a Thursday update. \"These measures may affect some functionality, but we…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA4jxlXpPBPhD5o3IHy80Fn7fSHUtcqH3iXQlU-jDUL5C3zJcf1_Zb-GAYxuW6P6q647p9JAT_opImlj-v-USDNhZ_z83mYC3ISKtN72pe_3XLwf5EyMRuK4OdXCFnYxGMhOAvN_i4UFqk5vJLriRnkbRRwILuT5JUpExx9Tm74sXSCQ0g7jjsOzWV1cqk/s1600/nable-hacks.jpg",
+   "cves": [],
+   "first_seen": "2026-11-13T06:42:43.760817+00:00",
+   "instructions": [
+    "Hosted customers are also being recommended to follow N-able's previous guidance to upgrade Agents and Probes on N-central version 2026.4 HF1 and above, as the update introduces changes in how the Probe and Agent communicate.",
+    "\"As such, upgrading both Agents and Probes in your N-central server is a MUST to ensure all managed devices are communicating and patched.\"",
+    "\"We are restricting certain N-central features and integrations,\" the company said in a Thursday update.",
+    "On-premises customers are being urged to upgrade Agents and Probes and ensure Legacy API access is disabled in the environment, if it has been previously turned on."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "bd73ebc7b854",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -3475,27 +3518,6 @@
     "Affected users are advised to install OpenSSH 10.6p2 or their distribution's patched package, and then restart sshd.",
     "Threat actors are attempting to exploit a recently disclosed security flaw impacting OpenSSH that can enable sign-ins to accounts that have no password set, according to Previdian .",
     "The underlying issue dates back to a patch introduced in 2016 to fix a username enumeration vulnerability tracked as CVE-2016-6210 ."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "ed60ea7fa412",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Hackers Hide Linux Backdoor in Control Web Panel Server to Execute Commands Without Logs",
-   "link": "https://thehackernews.com/2026/11/hackers-hide-linux-backdoor-in-control.html",
-   "published": "2026-11-06T05:58:54+00:00",
-   "summary": "A backdoor has been found hiding in the web server that runs Control Web Panel (CWP), a free panel for managing Linux hosting servers, researchers at QiAnXin's XLab said this week. The backdoored web server executes commands that attackers send via web requests, and those requests never appear in its access logs…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsAMxBevh2cmz1buKWukyP6JgUHrIPcr9zrJjAs1OwDoP1wMjn_s_WKHeUAdSwVzTImUsDE0C3SLGEpciaLk9H8CGvqiYugQWASsflB1a5zA9Wyr4RbroT3Z3JlOeak1AEinAy7Brf9N0BRDuGFWdZC23nCrOq4VuSMQQuDFYBYC6YCEm2ncPhHOv3KXs/s1600/cwp.jpg",
-   "cves": [],
-   "first_seen": "2026-11-06T07:45:14.462637+00:00",
-   "instructions": [
-    "Installing it takes root access, so the attackers must already control the server.",
-    "If a server is infected, the researchers recommend three steps:",
-    "Upgrade to the latest version, then confirm that ss -axp | grep integrity returns nothing.",
-    "The researchers, who named the backdoor cwpdoor , captured its installer, a shell script posing as a version update, on June 29."
    ],
    "instructions_checked": true
   },
