@@ -113,27 +113,6 @@
    "instructions_checked": true
   },
   {
-   "id": "dda1288f7519",
-   "source": "borncity",
-   "source_name": "Born's IT and Windows Blog",
-   "official": false,
-   "source_type": "news",
-   "title": "Sicherheits-Gau: SSHHole (CVE-2026-123158) ermöglicht Root-Zugriff durch lange Zeichenkette",
-   "link": "https://borncity.com/blog/2026/11/06/sicherheits-gau-sshhole-ermoeglicht-root-zugriff-durch-lange-zeichenkette/",
-   "published": "2026-11-06T07:37:17+00:00",
-   "summary": "Gerade glaubst Du, php2shell & Co. sowie die Angriffe auf die Kühlketten / IoT-Systemen hinter dir gelassen zu haben, schießt eine neue Sicherheitslücke um die nächste Ecke. Bei OpenSSH reicht es, eine lange Zeichenkette einzugeben, um Root-Zugriff zu bekommen. Trifft … Weiterlesen → Quelle",
-   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
-   "cves": [
-    "CVE-2026-123158"
-   ],
-   "first_seen": "2026-11-06T10:43:04.674605+00:00",
-   "image_checked": true,
-   "instructions": [
-    "November 2026 um 11:22 Uhr Das grep über den message log hilft aber nur bedingt, wenn der Eindringling nicht längst das Log gelöscht hat und sich einen zweiten (oder dritten Weg) zur Persistenz nach dem Patch eingerichtet hat."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "717f80da6fa4",
    "source": "borncity",
    "source_name": "Born's IT and Windows Blog",
@@ -7289,6 +7268,26 @@
    "instructions_checked": true
   },
   {
+   "id": "f1ba5df7cf65",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Hackers Exploit New N-central Zero-Day Hours After PoC Publication",
+   "link": "https://www.securityweek.com/hackers-exploit-new-n-central-zero-day-hours-after-poc-publication/",
+   "published": "2026-11-13T07:20:50+00:00",
+   "summary": "Dubbed 4EverAble2Shell, the flaw could allow remote, unauthenticated attackers to execute code with root privileges. The post Hackers Exploit New N-central Zero-Day Hours After PoC Publication appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/06/vulnerability-software-bug.webp",
+   "cves": [],
+   "first_seen": "2026-11-13T07:58:41.712624+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Citrix, Ivanti Patch Critical and High-Severity Vulnerabilities",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "de9719511839",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -7622,6 +7621,28 @@
    "image_checked": true,
    "instructions": [
     "Chrome Update Patches Exploited XML Zero-Day, Eighth This Year",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "d9f7469060c3",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "PHP2Shell Exploited in Destructive Check Point Gateway Attacks",
+   "link": "https://www.securityweek.com/php2shell-exploited-in-destructive-check-point-gateway-attacks/",
+   "published": "2026-11-13T07:39:04+00:00",
+   "summary": "PHP2Shell enabled initial compromise, while CVE-2026-123039 allowed attackers to elevate privileges to root. The post PHP2Shell Exploited in Destructive Check Point Gateway Attacks appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2024/08/Check-Point-Software.jpg",
+   "cves": [
+    "CVE-2026-123039"
+   ],
+   "first_seen": "2026-11-13T07:58:41.712624+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Citrix, Ivanti Patch Critical and High-Severity Vulnerabilities",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true

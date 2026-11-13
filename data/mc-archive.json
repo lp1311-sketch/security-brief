@@ -1,6 +1,34 @@
 {
  "items": [
   {
+   "id": "223dc4a647e3",
+   "title": "MC1551151: Microsoft Entra ID: Risk-based anti-bot verification (CAPTCHA) for SMS and voice multi-factor authentication",
+   "link": "https://mc.merill.net/message/MC1551151",
+   "summary": "Starting mid-November 2026, Microsoft Entra ID will add risk-based CAPTCHA verification for SMS and voice MFA to prevent automated fraud. Some users may need to complete CAPTCHA before receiving codes or calls. Administrators should prepare users, ensure network readiness, and promote phishing-resistant methods.",
+   "published": "2026-11-13T01:42:38+00:00"
+  },
+  {
+   "id": "3fb08c1b030f",
+   "title": "MC1551148: [Outlook for iOS and Android] Copilot Chat in Outlook UX improvements",
+   "link": "https://mc.merill.net/message/MC1551148",
+   "summary": "Copilot Chat in Outlook for iOS and Android is being updated with a refreshed, consistent design across Microsoft 365 apps, improved chat interface, prompts, and navigation. Rollout starts mid-December 2026, completing by late January 2027. No admin action or compliance concerns are required.",
+   "published": "2026-11-13T01:39:03+00:00"
+  },
+  {
+   "id": "41d0633e2c4c",
+   "title": "MC1551147: Microsoft Word: Retirement of legacy compatibility settings",
+   "link": "https://mc.merill.net/message/MC1551147",
+   "summary": "Microsoft Word will retire legacy compatibility settings for documents in Compatibility Mode starting December 2026 (Windows) and early 2027 (Mac). This may cause layout changes in older documents. No action is required, but review important documents if exact layout is critical.",
+   "published": "2026-11-13T01:38:10+00:00"
+  },
+  {
+   "id": "7ae538ae04dc",
+   "title": "MC1551122: Power Platform - Information regarding the end of support for SharePoint temporary authentication URLs",
+   "link": "https://mc.merill.net/message/MC1551122",
+   "summary": "Starting April 1, 2027, SharePoint temporary authentication URLs will be retired. Power Apps and Automate functionality that relies on these URLs will break when they are retired. How does this affect me? Any Power Apps app or Power Automate cloud flow that relies upon the temporary authentication URLs will stop…",
+   "published": "2026-11-13T01:01:33+00:00"
+  },
+  {
    "id": "fadabe4369a5",
    "title": "MC1551001: Prevent issues with NetApp SMB shares: Learn about new Windows Server security requirements",
    "link": "https://mc.merill.net/message/MC1551001",
@@ -391,34 +419,6 @@
    "link": "https://mc.merill.net/message/MC1492166",
    "summary": "Microsoft Outlook is adding a \"Duplicate event\" feature, allowing users to quickly create new events based on existing ones without re-entering details. The rollout began in late September 2026 and will complete by early December 2026. No action or compliance changes are required.",
    "published": "2026-11-06T22:11:03+00:00"
-  },
-  {
-   "id": "211b7a595a4c",
-   "title": "MC1301714: Microsoft Purview | Data Loss Prevention- DLP to restrict processing external emails in M365 Copilot and Copilot Chat",
-   "link": "https://mc.merill.net/message/MC1301714",
-   "summary": "Microsoft Purview is expanding Data Loss Prevention (DLP) to restrict Microsoft 365 Copilot and Copilot Chat from processing emails from external or untrusted domains. This new admin-configurable DLP control, rolling out in public preview June 2026 and general availability June 2027, excludes external emails from…",
-   "published": "2026-11-06T22:04:35+00:00"
-  },
-  {
-   "id": "a838b33ba1a5",
-   "title": "MC1542066: Microsoft 365 Copilot: Changes to custom organizational data in MODS for Workforce Insights",
-   "link": "https://mc.merill.net/message/MC1542066",
-   "summary": "Microsoft 365 is retiring the Workforce Insights endpoint in MODS by November 18, 2026. Custom organizational data will now be ingested via the Microsoft 365 profile endpoint. Organizations using non-public attributes must join a private preview and switch before the deadline to continue data uploads.",
-   "published": "2026-11-06T21:34:19+00:00"
-  },
-  {
-   "id": "1523ce2d96a9",
-   "title": "MC1542062: Copilot Cowork: Power Platform connectors now follow Microsoft 365 admin center settings",
-   "link": "https://mc.merill.net/message/MC1542062",
-   "summary": "Microsoft Copilot Cowork now supports Power Platform connectors managed via the Microsoft 365 admin center, allowing centralized control over connector use with third-party apps. Rollout completes by mid-November 2026. Admins should review and configure connector availability, noting that Power Platform DLP policies…",
-   "published": "2026-11-06T21:32:47+00:00"
-  },
-  {
-   "id": "1762c213bd05",
-   "title": "MC1486291: Microsoft 365 Copilot: new guided Copilot onboarding experience",
-   "link": "https://mc.merill.net/message/MC1486291",
-   "summary": "Microsoft 365 Copilot introduces an optional, admin-led guided onboarding experience for Frontier participants, rolling out late October to November 2026. It personalizes training based on user roles and licenses, requires admin enablement, and supports reporting via Viva Learning to boost adoption and confidence.",
-   "published": "2026-11-06T21:20:50+00:00"
   }
  ]
 }
