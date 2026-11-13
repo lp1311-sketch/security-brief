@@ -3254,6 +3254,27 @@
    "instructions_checked": true
   },
   {
+   "id": "c6e1d6a77271",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
+   "link": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
+   "published": "2026-11-13T14:28:58+00:00",
+   "summary": "The U.S. Federal Bureau of Investigation (FBI) has established that threat actors tied to the Democratic People's Republic of Korea (DPRK aka North Korea) have stolen more than $400 million worth of cryptocurrency as part of a social engineering scheme codenamed FaceStealer in the last 18 months. As part of a…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDmjJA-t4vvigohRIfUR6JExYEPR0Dohh29eooVagQOvRyRDgdisxAy3wSWni5iFHjf2Dk8X2BavSeGO8hJ-wCTbDuffsdtamOuqj1PVTb75EWNF5vNe3tCsS6pyS_pSzNhEELOVU0DxHdmGx4Kt8KNqwz8YheAM9kEoVmpnHeVV1qsofLCBYDEt0E2IqX/s1600/flash.jpg",
+   "cves": [],
+   "first_seen": "2026-11-13T15:12:20.611857+00:00",
+   "instructions": [
+    "Trick the target into infecting themselves: The attacker sends a message to the target, claiming there is an audio issue or some other technical error (e.g., a deprecated Zoom SDK), and urges them to click on a link to apply an update to address the problem.",
+    "Set up the meeting: Should the target express interest, the attacker sends a Calendly invite via Telegram to schedule the video meeting.",
+    "According to a joint cybersecurity advisory published by cybersecurity and intelligence agencies from Japan, the U.S., Australia, and Germany in late September 2026, the long-running campaign is estimated to have compromised at least 30,000 devices located in 100 countries.",
+    "Interview assignments with downloads should only ever run in a disposable virtual machine, never on a work laptop."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "7646e96e2e7b",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -3678,24 +3699,6 @@
    "instructions_checked": true
   },
   {
-   "id": "17e04fbcf2b3",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "OpenAI Launches GPT-6 Cyber After AI Helps Find 81 Firefox Flaws, 948 Linux Exploits",
-   "link": "https://thehackernews.com/2026/11/openai-launches-gpt-6-cyber-after-ai.html",
-   "published": "2026-11-06T14:58:32+00:00",
-   "summary": "OpenAI on Thursday unveiled GPT‑6 Cyber, which it described as a major step forward in security research that brings together stronger cybersecurity capabilities with a step-change improvement in model alignment. The new model is \"more capable at finding and fixing vulnerabilities, and far more reliable staying within…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXR9F1Fu-E50zYby7QnTXAX324GHruNgN0_-95ygoUQV94WlkKSNHt1n8Af8HANmBe6GYgt_1-jGJzGNdg6NnoWY_Jrfbxjyv8mSQzOCa_t7e-e5S8DEB32YavCpthT2pB3jQsFRNJ69bgOgph9qyCBppvb93YSsYSzBM1P9CdeO_rhMcF4LgCj-kQvY2C/s1600/gpt-cyber.jpg",
-   "cves": [],
-   "first_seen": "2026-11-06T17:49:20.026994+00:00",
-   "instructions": [
-    "Google, for its part, has introduced new capabilities to CodeMender, its autonomous code-security agent, to facilitate secure isolation and flexible scanning, while adding human-in-the-loop checks for local write and command execution to mitigate the risks of malicious exploits."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "5df4bf07aed5",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -3950,6 +3953,26 @@
    "instructions_checked": true
   },
   {
+   "id": "79815295aaa3",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Trezor Confirms Hidden Implants in CryptoBilis-Sold Wallets That Can Steal Recovery Phrases",
+   "link": "https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html",
+   "published": "2026-11-13T13:54:20+00:00",
+   "summary": "Three Trezor Safe 5 wallets bought from the reseller CryptoBilis contain an implant, an extra circuit board that can copy their recovery phrases, hardware wallet maker Trezor said yesterday. The implant reads the phrase from the wallet's screen and sends it over the mobile network to a server controlled by the…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivDE4uIn_bV4GUrsw0LjzqBnnNaQM_0lzJhrSy89nrShmwNlFcsVucCFpzzZ2LMkkSMF-XMb8rp0e7_Maemyj5sypkVIf4s2Wx5pbJXkOwf0vMkG9ThBQAHhvJ_mKWHq78f_iJYhAM2l1Hp_Zk3VtB_bVvYFmZTX4WakIpC_Zib0rlFnDG-H674JSP5Mg/s1600/implant.jpg",
+   "cves": [],
+   "first_seen": "2026-11-13T15:12:20.611857+00:00",
+   "instructions": [
+    "A firmware update released earlier this week, version 2.13.1, stops the implants found so far from capturing anything on wallets that run it, the company said, but “the update can’t protect a wallet backup that was captured before it.”",
+    "The company will not publish technical details that could help attackers or put customers at risk, it said in an investigation update .",
+    "It will post an update if it confirms an implant outside the reseller's wallets or the Safe 5, receives a report of lost funds linked to the implants, or releases new protections."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "df6a1e5a88d8",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -4099,6 +4122,23 @@
    "instructions_checked": true
   },
   {
+   "id": "e71bf5215ff1",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Ransomware attack on Belarusian cloud firm disrupts businesses for days",
+   "link": "https://therecord.media/belarus-cloud-provider-activecloud-ransomware-attack",
+   "published": "2026-11-13T14:28:00+00:00",
+   "summary": "ActiveCloud said hackers had breached its systems and encrypted parts of its cloud infrastructure, leaving customers unable to access key services for several days.",
+   "image": "https://cms.therecord.media/uploads/server_getty_images_unsplash_bba164f23e.jpg",
+   "cves": [],
+   "first_seen": "2026-11-13T15:12:20.611857+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "424f8e5ef5ac",
    "source": "therecord",
    "source_name": "The Record",
@@ -4116,23 +4156,6 @@
     "Companies should halt sales and support when serious misuse is a credible risk, according to the text, and are asked to “consider” remedies for victims of human rights abuses.",
     "Some noted that Britain and France were seeking to restrict other states’ access to these tools while championing their own spyware industries."
    ],
-   "instructions_checked": true
-  },
-  {
-   "id": "e34ca10a5a26",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "CEO-spoofing scammers used AI to help steal more than $100 million, feds say",
-   "link": "https://therecord.media/ceo-spoofing-scammers-charged",
-   "published": "2026-11-06T14:30:00+00:00",
-   "summary": "The U.S. is working on extraditing three suspects from Europe in a case involving more than $100 million in fraud from CEO impersonations.",
-   "image": "https://cms.therecord.media/uploads/man_suit_benjamin_r_unsplash_53f6376f90.jpg",
-   "cves": [],
-   "first_seen": "2026-11-06T14:55:05.279628+00:00",
-   "image_checked": true,
-   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -4515,6 +4538,23 @@
    "image": "https://cms.therecord.media/uploads/doj_logo_green_code_f20ed46844.jpg",
    "cves": [],
    "first_seen": "2026-11-12T22:46:50.252554+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "e8d212e2e33e",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "TSMC confirms employee data breach tied to cloud service provider",
+   "link": "https://therecord.media/tsmc-confirms-employee-data-breach-cloud-provider",
+   "published": "2026-11-13T15:06:00+00:00",
+   "summary": "An investigation into the breach found that no TSMC systems were compromised but the information was “verified to match data stored in the system services of a cloud service provider, but is unrelated to the company’s operations or customer-related data.”",
+   "image": "https://cms.therecord.media/uploads/TSMC_logo_on_Taichung_factory_building_4ac5558127.jpg",
+   "cves": [],
+   "first_seen": "2026-11-13T15:12:20.611857+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -5384,22 +5424,24 @@
    "instructions_checked": true
   },
   {
-   "id": "3647bbef0072",
+   "id": "db3fd3a5adb8",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
    "official": false,
    "source_type": "news",
-   "title": "IMSI vs IMEI: What Your Phone Broadcasts and Who Can Read It",
-   "link": "https://www.bleepingcomputer.com/news/security/imsi-vs-imei-what-your-phone-broadcasts-and-who-can-read-it/",
-   "published": "2026-11-06T15:00:10+00:00",
-   "summary": "IMSI and IMEI are IDs your phone shares with networks. Learn how they differ, how attackers get them, and why rotating your IMSI blunts tracking.",
-   "image": "https://www.bleepstatic.com/content/posts/2026/11/04/cell-tower-header.jpg",
+   "title": "How one AI agent exposed five critical enterprise security gaps",
+   "link": "https://www.bleepingcomputer.com/news/security/how-one-ai-agent-exposed-five-critical-enterprise-security-gaps/",
+   "published": "2026-11-13T15:01:11+00:00",
+   "summary": "An AI agent built to automate invoice processing could be manipulated into changing vendor bank details through a malicious email, without triggering traditional security alerts. Token Security examines five critical AI agent security gaps and shares practical guidance from industry security leaders on preventing them.",
+   "image": "https://www.bleepstatic.com/content/posts/2026/11/12/agentic-universe.jpg",
    "cves": [],
-   "first_seen": "2026-11-06T15:50:25.426237+00:00",
+   "first_seen": "2026-11-13T15:12:20.611857+00:00",
    "image_checked": true,
    "instructions": [
-    "The Wi-Fi and Bluetooth radios share hardware addresses, which modern phones randomize or rotate to reduce tracking.",
-    "A fake tower hijacks your paging channel to block the network’s pages, and a single silent call then makes the carrier send your IMSI over the air where the attacker captures it."
+    "Until prompt injection can be reliably detected and refused, an agent should have no more than two of these in a single session:",
+    "Inside the attachment, in white text on a white background, is a note requesting an update to the ERP as the vendor changed its bank.",
+    "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day",
+    "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
    ],
    "instructions_checked": true
   },
@@ -6332,6 +6374,22 @@
    "instructions_checked": true
   },
   {
+   "id": "2cf87a19124d",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "As Test Takers Turn to AI for Answers, Exam Security Must Catch Up",
+   "link": "https://www.darkreading.com/cybersecurity-operations/test-takers-ai-exam-security-catch-up",
+   "published": "2026-11-11T20:27:00+00:00",
+   "summary": "It's hard to detect whether someone is using artificial intelligence (AI) to cheat on IT certification exams, but new tools and processes are emerging to boost trust.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltccdd6137653ede6b/6af4d346ef03ab8c2a6901d5/GettyImages-2228505019.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-13T15:12:20.611857+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "b63212099f3b",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -6677,23 +6735,6 @@
    "instructions": [
     "A newly disclosed flaw involving OpenSSH and musl, dubbed “*sshole,” allows attackers to log in to certain Alpine Linux and other musl-based Linux accounts configured to block password authentication simply by entering an oversized password."
    ],
-   "instructions_checked": true
-  },
-  {
-   "id": "a5d2f46564bf",
-   "source": "schneier",
-   "source_name": "Schneier on Security",
-   "official": false,
-   "source_type": "news",
-   "title": "Pinpointing Location of Videos from Background Airplane Sounds",
-   "link": "https://www.schneier.com/blog/archives/2026/11/pinpointing-location-of-videos-from-background-airplane-sounds.html",
-   "published": "2026-11-06T14:57:48+00:00",
-   "summary": "This is fascinating: The video describes a technique that can reveal where an otherwise unidentifiable recording was made by analyzing its audio for the faint sounds of passing aircraft. The technique is both fascinating and frightening. It works by looking at Doppler curves, which plot the way a plane’s sound changes…",
-   "image": null,
-   "cves": [],
-   "first_seen": "2026-11-06T15:50:25.426237+00:00",
-   "image_checked": true,
-   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -7415,28 +7456,6 @@
     "Siemens has published nine new advisories covering 10 vulnerabilities.",
     "Two advisories describe the impact of the recent Node2Shell vulnerability on the company’s products.",
     "Siemens has also published advisories informing customers about high-severity vulnerabilities in ROS#, Simcenter Femap, Mendix Studio Pro MCP Server, Simatic SCADA and PCS 7, Meta-iot2050, and Simatic WinCC Graphics Designer."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "3819f6707361",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "In Other News: Trezor Implant, LLMJacking Bills Hit $1M, SAP Flaws Weaponized Within Days",
-   "link": "https://www.securityweek.com/in-other-news-trezor-implant-llmjacking-bills-hit-1m-sap-flaws-weaponized-within-days/",
-   "published": "2026-11-06T14:40:09+00:00",
-   "summary": "Noteworthy stories that might have slipped under the radar: Synology warns about NAS ransomware attacks, Flowise ‘hello’ attacks, Chainalysis breach impact expands. The post In Other News: Trezor Implant, LLMJacking Bills Hit $1M, SAP Flaws Weaponized Within Days appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2023/10/cybersecurity-news.jpg",
-   "cves": [],
-   "first_seen": "2026-11-06T14:55:05.279628+00:00",
-   "image_checked": true,
-   "instructions": [
-    "The company has not identified the specific flaw beyond pointing to its Synology-SA-24:20 advisory.",
-    "Synology recommends that anyone on a vulnerable release update DSM right away and turn on automatic updates.",
-    "Initial access mainly came from stolen or exposed cloud credentials and API keys, and in one intrusion the attackers exploited a LiteLLM vulnerability (CVE-2026-40217) to upgrade ordinary keys to full admin credentials.",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
   },
