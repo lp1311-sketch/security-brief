@@ -41,16 +41,6 @@
    "url": "story/3d5dfb277e1d.html"
   },
   {
-   "id": "c84faf9461ad",
-   "title": "CVE-2026-111497 Google: CVE-2026-111497 Buffer overflow vulnerability in the Brotli decoder",
-   "summary": "Updated the Security Updates table to include affected Windows versions and the applicable November 2026 security updates. Microsoft recommends that customers install…",
-   "priority": "Critical",
-   "category": "Patch Radar",
-   "date": "12 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/c84faf9461ad.html"
-  },
-  {
    "id": "9364f9baac68",
    "title": "Microsoft Fixes Nearly 1,100 Security Vulnerabilities",
    "summary": "Microsoft did another four-digit patch drop today, releasing updates to fix almost 1,100 security vulnerabilities in its Windows operating systems and supported…",
@@ -59,6 +49,16 @@
    "date": "10 Nov 2026, 21:55 UTC",
    "sources": "KrebsOnSecurity, SecurityWeek",
    "url": "story/9364f9baac68.html"
+  },
+  {
+   "id": "c84faf9461ad",
+   "title": "CVE-2026-111497 Google: CVE-2026-111497 Buffer overflow vulnerability in the Brotli decoder",
+   "summary": "Updated the Security Updates table to include affected Windows versions and the applicable November 2026 security updates. Microsoft recommends that customers install…",
+   "priority": "Critical",
+   "category": "Patch Radar",
+   "date": "12 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/c84faf9461ad.html"
   },
   {
    "id": "95f883361cdc",
@@ -81,16 +81,6 @@
    "url": "story/e71bf5215ff1.html"
   },
   {
-   "id": "d62ab9694fcc",
-   "title": "Critical Xen Orchestra Flaws Exploited in Attacks",
-   "summary": "A critical authentication bypass allows attackers to execute arbitrary code as admin and take over XCP-ng nodes. The post Critical Xen Orchestra Flaws Exploited in…",
-   "priority": "High",
-   "category": "Patch Radar",
-   "date": "11 Nov 2026, 15:42 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/d62ab9694fcc.html"
-  },
-  {
    "id": "d7669d6db99e",
    "title": "Hackers exploit SSHole OpenSSH flaw to breach Linux systems",
    "summary": "Hackers are actively exploiting the \"SSHole\" vulnerability (CVE-2026-123158) in OpenSSH to execute commands, steal credentials, and establish persistent access.",
@@ -99,6 +89,16 @@
    "date": "09 Nov 2026, 16:04 UTC",
    "sources": "BleepingComputer",
    "url": "story/d7669d6db99e.html"
+  },
+  {
+   "id": "c3cb9f990617",
+   "title": "In Other News: New CISA Director Nominee, Connected Car Hacking, Baker Tilly Data Breach",
+   "summary": "Noteworthy stories that might have slipped under the radar: Siemens details security advisory policy, OpenAI Codex backdoor risk, Microsoft warns of model weight…",
+   "priority": "High",
+   "category": "Attacks & Breaches",
+   "date": "13 Nov 2026, 15:20 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/c3cb9f990617.html"
   },
   {
    "id": "fff233faf327",
@@ -131,14 +131,14 @@
    "url": "story/e447c2de7d90.html"
   },
   {
-   "id": "df2e304a7245",
-   "title": "CVE-2026-120792 Aspire Information Disclosure Vulnerability",
-   "summary": "Updated the products listed in the Security Updates table. This is an informational change only.",
+   "id": "d62ab9694fcc",
+   "title": "Critical Xen Orchestra Flaws Exploited in Attacks",
+   "summary": "A critical authentication bypass allows attackers to execute arbitrary code as admin and take over XCP-ng nodes. The post Critical Xen Orchestra Flaws Exploited in…",
    "priority": "High",
    "category": "Patch Radar",
-   "date": "11 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/df2e304a7245.html"
+   "date": "11 Nov 2026, 15:42 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/d62ab9694fcc.html"
   },
   {
    "id": "50eb1dccf495",
@@ -201,16 +201,6 @@
    "url": "story/d20b2da13e92.html"
   },
   {
-   "id": "16b72427cf58",
-   "title": "Apache Patches Critical HTTP Server RCE Found by Anthropic, Google",
-   "summary": "The mod_http2 race condition, CVE-2026-119618, could let unauthenticated attackers execute code on servers with HTTP/2 enabled. The post Apache Patches Critical HTTP…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "12 Nov 2026, 15:38 UTC",
-   "sources": "SecurityWeek, The Hacker News",
-   "url": "story/16b72427cf58.html"
-  },
-  {
    "id": "7927f7b9de97",
    "title": "Apify rotates API tokens, prompts 2FA resets after breach",
    "summary": "Apify has rotated critical internal secrets and revoked some third-party OAuth connections after detecting unauthorized access to its internal systems.",
@@ -231,14 +221,14 @@
    "url": "story/4c32248b415f.html"
   },
   {
-   "id": "8b35f69eac70",
-   "title": "Critical Zoom Workplace Flaw Could Allow Unauthenticated Remote Privilege Escalation",
-   "summary": "Zoom has released software updates to address two security flaws impacting Zoom Workplace for Windows, including a critical bug that could result in privilege escalation…",
+   "id": "df2e304a7245",
+   "title": "CVE-2026-120792 Aspire Information Disclosure Vulnerability",
+   "summary": "Updated the products listed in the Security Updates table. This is an informational change only.",
    "priority": "Standard",
    "category": "Patch Radar",
-   "date": "11 Nov 2026, 16:12 UTC",
-   "sources": "The Hacker News",
-   "url": "story/8b35f69eac70.html"
+   "date": "11 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/df2e304a7245.html"
   },
   {
    "id": "c5080c64e3d8",
@@ -299,6 +289,16 @@
    "date": "07 Nov 2026, 10:45 UTC",
    "sources": "Born's IT and Windows Blog",
    "url": "story/717f80da6fa4.html"
+  },
+  {
+   "id": "e4e9606f466d",
+   "title": "DOJ: Gootloader used in at least 44 ransomware attacks costing $29 million since 2018",
+   "summary": "In a briefing adjacent to European announcements about an international anti-malware operation, U.S. officials detailed the history and impact of the Gootloader…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "13 Nov 2026, 15:59 UTC",
+   "sources": "The Record",
+   "url": "story/e4e9606f466d.html"
   },
   {
    "id": "70883ad50925",
@@ -461,34 +461,14 @@
    "url": "story/093b008afb96.html"
   },
   {
-   "id": "7968b43f44c2",
-   "title": "ConnectWise investigates ScreenConnect breaches after reports of incidents at nearly 50 organizations",
-   "summary": "Abuse of an independent third-party tool led to breaches at ScreenConnect customers, confirmed the software's maker, ConnectWise. Cybersecurity researchers had spotted…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "12 Nov 2026, 16:16 UTC",
-   "sources": "The Record",
-   "url": "story/7968b43f44c2.html"
-  },
-  {
-   "id": "ad9757975fce",
-   "title": "New Windows SignDrop zero-day gives hackers SYSTEM privileges",
-   "summary": "Security researcher Abdelhamid Naceri (also known as Nightmare Eclipse) has released a new Windows zero-day exploit that can let attackers gain SYSTEM privileges.",
+   "id": "16b72427cf58",
+   "title": "Apache Patches Critical HTTP Server RCE Found by Anthropic, Google",
+   "summary": "The mod_http2 race condition, CVE-2026-119618, could let unauthenticated attackers execute code on servers with HTTP/2 enabled. The post Apache Patches Critical HTTP…",
    "priority": "Standard",
    "category": "Patch Radar",
-   "date": "12 Nov 2026, 16:04 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/ad9757975fce.html"
-  },
-  {
-   "id": "b6cd1d92c2ad",
-   "title": "WhiteArmor gang claims responsibility for latest cyber attack on shipping giant Maersk",
-   "summary": "Shipping giant Maersk has confirmed that one of its systems was broken into by hackers who have stolen data. The WhiteArmor gang has claimed responsbility for the…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "12 Nov 2026, 15:12 UTC",
-   "sources": "Graham Cluley",
-   "url": "story/b6cd1d92c2ad.html"
+   "date": "12 Nov 2026, 15:38 UTC",
+   "sources": "SecurityWeek, The Hacker News",
+   "url": "story/16b72427cf58.html"
   },
   {
    "id": "9b952a7f4c5d",
@@ -521,24 +501,14 @@
    "url": "story/4555dea14647.html"
   },
   {
-   "id": "c5a7aee1fe72",
-   "title": "CVE-2026-105544 .NET Elevation of Privilege Vulnerability",
-   "summary": "Changes made to the security updates links and information. This is an informational change only.",
+   "id": "8b35f69eac70",
+   "title": "Critical Zoom Workplace Flaw Could Allow Unauthenticated Remote Privilege Escalation",
+   "summary": "Zoom has released software updates to address two security flaws impacting Zoom Workplace for Windows, including a critical bug that could result in privilege escalation…",
    "priority": "Standard",
    "category": "Patch Radar",
-   "date": "11 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/c5a7aee1fe72.html"
-  },
-  {
-   "id": "14242fd48964",
-   "title": "CVE-2026-114151 Visual Studio Remote Code Execution Vulnerability",
-   "summary": "Updated the products listed in the Security Updates table. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "11 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/14242fd48964.html"
+   "date": "11 Nov 2026, 16:12 UTC",
+   "sources": "The Hacker News",
+   "url": "story/8b35f69eac70.html"
   },
   {
    "id": "34f63dbdf416",
@@ -611,14 +581,14 @@
    "url": "story/de9719511839.html"
   },
   {
-   "id": "9fe769e3c933",
-   "title": "Installing the Fix for an Exploited WordPress Flaw Can Expose Some Sites One Last Time",
-   "summary": "Some WordPress sites can still be attacked while they install the fix for an actively exploited flaw, according to Umut Bayram, the Picus Security researcher who found…",
+   "id": "fb5ac890be2a",
+   "title": "New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs",
+   "summary": "Two attacks made public this week allow a malicious host to read data inside AMD SEV-SNP-protected virtual machines (VMs), which are built to keep the server's operator…",
    "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "06 Nov 2026, 16:08 UTC",
+   "category": "Industry & Research",
+   "date": "13 Nov 2026, 15:27 UTC",
    "sources": "The Hacker News",
-   "url": "story/9fe769e3c933.html"
+   "url": "story/fb5ac890be2a.html"
   },
   {
    "id": "f5b71ee6de0e",
@@ -681,14 +651,34 @@
    "url": "story/a9b2747b83a3.html"
   },
   {
-   "id": "50b7d482cfd7",
-   "title": "186 Fake AI Domains Redirect Users to ClickFix Lures, Browser Malware, and Search Hijackers",
-   "summary": "Cybersecurity researchers have found that lookalike domains masquerading as artificial intelligence (AI) tools are being used to serve ClickFix-style lures…",
+   "id": "7968b43f44c2",
+   "title": "ConnectWise investigates ScreenConnect breaches after reports of incidents at nearly 50 organizations",
+   "summary": "Abuse of an independent third-party tool led to breaches at ScreenConnect customers, confirmed the software's maker, ConnectWise. Cybersecurity researchers had spotted…",
    "priority": "Standard",
    "category": "Attacks & Breaches",
-   "date": "12 Nov 2026, 15:15 UTC",
-   "sources": "The Hacker News",
-   "url": "story/50b7d482cfd7.html"
+   "date": "12 Nov 2026, 16:16 UTC",
+   "sources": "The Record",
+   "url": "story/7968b43f44c2.html"
+  },
+  {
+   "id": "ad9757975fce",
+   "title": "New Windows SignDrop zero-day gives hackers SYSTEM privileges",
+   "summary": "Security researcher Abdelhamid Naceri (also known as Nightmare Eclipse) has released a new Windows zero-day exploit that can let attackers gain SYSTEM privileges.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "12 Nov 2026, 16:04 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/ad9757975fce.html"
+  },
+  {
+   "id": "b6cd1d92c2ad",
+   "title": "WhiteArmor gang claims responsibility for latest cyber attack on shipping giant Maersk",
+   "summary": "Shipping giant Maersk has confirmed that one of its systems was broken into by hackers who have stolen data. The WhiteArmor gang has claimed responsbility for the…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "12 Nov 2026, 15:12 UTC",
+   "sources": "Graham Cluley",
+   "url": "story/b6cd1d92c2ad.html"
   },
   {
    "id": "00c8c05e542b",
@@ -831,24 +821,24 @@
    "url": "story/e564f8c52313.html"
   },
   {
-   "id": "63cbf25606a5",
-   "title": "AntiFox AI Pentesting Platform Linked to Attacks That Accessed AWS Production Secrets",
-   "summary": "Cybersecurity researchers have disclosed details of a campaign in which an emerging agentic penetration testing platform called AntiFox has been used to steal Amazon Web…",
+   "id": "c5a7aee1fe72",
+   "title": "CVE-2026-105544 .NET Elevation of Privilege Vulnerability",
+   "summary": "Changes made to the security updates links and information. This is an informational change only.",
    "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "11 Nov 2026, 15:34 UTC",
-   "sources": "The Hacker News",
-   "url": "story/63cbf25606a5.html"
+   "category": "Patch Radar",
+   "date": "11 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/c5a7aee1fe72.html"
   },
   {
-   "id": "9c9df925add3",
-   "title": "Hackers use AntiFox AI agents in AWS credential-theft attacks",
-   "summary": "Attackers are using Alibaba Cloud to host self-managed instances of AntiFox, an open-source agentic penetration testing platform, to target web services and AWS…",
+   "id": "14242fd48964",
+   "title": "CVE-2026-114151 Visual Studio Remote Code Execution Vulnerability",
+   "summary": "Updated the products listed in the Security Updates table. This is an informational change only.",
    "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "11 Nov 2026, 15:12 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/9c9df925add3.html"
+   "category": "Patch Radar",
+   "date": "11 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/14242fd48964.html"
   },
   {
    "id": "890bd5d68a0a",
@@ -1471,6 +1461,16 @@
    "url": "story/023264eb01e1.html"
   },
   {
+   "id": "50b7d482cfd7",
+   "title": "186 Fake AI Domains Redirect Users to ClickFix Lures, Browser Malware, and Search Hijackers",
+   "summary": "Cybersecurity researchers have found that lookalike domains masquerading as artificial intelligence (AI) tools are being used to serve ClickFix-style lures…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "12 Nov 2026, 15:15 UTC",
+   "sources": "The Hacker News",
+   "url": "story/50b7d482cfd7.html"
+  },
+  {
    "id": "0ea3d75301ac",
    "title": "Daylight Lands $80 Million for AI-Powered Security Operations",
    "summary": "The company plans to accelerate product development, hire new talent, expand its US presence, and enter new markets. The post Daylight Lands $80 Million for AI-Powered…",
@@ -1551,34 +1551,24 @@
    "url": "story/2cf87a19124d.html"
   },
   {
-   "id": "cdc2cd16c5c3",
-   "title": "CVE-2026-109475 .NET Denial of Service Vulnerability",
-   "summary": "Changes made to the security updates links and information. This is an informational change only.",
+   "id": "63cbf25606a5",
+   "title": "AntiFox AI Pentesting Platform Linked to Attacks That Accessed AWS Production Secrets",
+   "summary": "Cybersecurity researchers have disclosed details of a campaign in which an emerging agentic penetration testing platform called AntiFox has been used to steal Amazon Web…",
    "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "11 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/cdc2cd16c5c3.html"
+   "category": "AI Risk Lab",
+   "date": "11 Nov 2026, 15:34 UTC",
+   "sources": "The Hacker News",
+   "url": "story/63cbf25606a5.html"
   },
   {
-   "id": "8f801ab2f586",
-   "title": "CVE-2026-109476 ASP.NET Core Information Disclosure Vulnerability",
-   "summary": "Changes made to the security updates links and information. This is an informational change only.",
+   "id": "9c9df925add3",
+   "title": "Hackers use AntiFox AI agents in AWS credential-theft attacks",
+   "summary": "Attackers are using Alibaba Cloud to host self-managed instances of AntiFox, an open-source agentic penetration testing platform, to target web services and AWS…",
    "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "11 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/8f801ab2f586.html"
-  },
-  {
-   "id": "030e72a271ce",
-   "title": "CVE-2026-114156 ASP.NET Core Security Feature Bypass Vulnerability",
-   "summary": "Changes made to the security updates links and information. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "11 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/030e72a271ce.html"
+   "category": "Attacks & Breaches",
+   "date": "11 Nov 2026, 15:12 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/9c9df925add3.html"
   },
   {
    "id": "60ccd3ca4d45",
@@ -2069,6 +2059,36 @@
    "date": "11 Nov 2026, 16:29 UTC",
    "sources": "SecurityWeek",
    "url": "story/f9a315b08895.html"
+  },
+  {
+   "id": "cdc2cd16c5c3",
+   "title": "CVE-2026-109475 .NET Denial of Service Vulnerability",
+   "summary": "Changes made to the security updates links and information. This is an informational change only.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "11 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/cdc2cd16c5c3.html"
+  },
+  {
+   "id": "8f801ab2f586",
+   "title": "CVE-2026-109476 ASP.NET Core Information Disclosure Vulnerability",
+   "summary": "Changes made to the security updates links and information. This is an informational change only.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "11 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/8f801ab2f586.html"
+  },
+  {
+   "id": "030e72a271ce",
+   "title": "CVE-2026-114156 ASP.NET Core Security Feature Bypass Vulnerability",
+   "summary": "Changes made to the security updates links and information. This is an informational change only.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "11 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/030e72a271ce.html"
   },
   {
    "id": "ef892408bebc",
@@ -2939,16 +2959,6 @@
    "date": "06 Nov 2026, 16:53 UTC",
    "sources": "The Record",
    "url": "story/88525575b645.html"
-  },
-  {
-   "id": "af6d1b8b9d25",
-   "title": "Veeam warns of Software Appliance boot failures on AMD EPYC hosts",
-   "summary": "​Veeam warned customers about boot failures affecting Software Appliance virtual machines (VMs) on hosts with AMD EPYC processors.",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "06 Nov 2026, 15:25 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/af6d1b8b9d25.html"
   }
  ]
 }

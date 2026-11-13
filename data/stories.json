@@ -2455,25 +2455,6 @@
    "image_checked": true
   },
   {
-   "id": "13fd69411f6b",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-83844 Windows Paint Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83844",
-   "published": "2026-11-06T16:00:00+00:00",
-   "summary": "To comprehensively address the vulnerability identified by this CVE, Microsoft has released a new version of Paint with build version number 11.2609.401.0. Microsoft recommends installing this new version or ensuring that it was automatically updated.",
-   "image": null,
-   "cves": [
-    "CVE-2026-83844"
-   ],
-   "first_seen": "2026-11-06T22:23:17.218839+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "91dd8667fa3b",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -3496,29 +3477,6 @@
    "instructions_checked": true
   },
   {
-   "id": "a40dff3d749a",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Hackers Target OpenSSH SSHole Flaw Within Hours of Disclosure, Gain Root on Honeypot",
-   "link": "https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html",
-   "published": "2026-11-06T15:21:49+00:00",
-   "summary": "Threat actors are attempting to exploit a recently disclosed security flaw impacting OpenSSH that can enable sign-ins to accounts that have no password set, according to Previdian. The vulnerability, tracked as CVE-2026-123158 (CVSS score: 8.1) and codenamed SSHole (or *sshole), impacts Linux systems that run OpenSSH…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHbl1TAGj_ZHZDF3oQ8AfebRDiovg_d8Wk4huY5VJkSa0csE45G7k5jwdG1De-W-7l2RjnyH_ZvT3vcioykVeOooifwvViM8RiuTu0gSt2t-XgOefyYKyM5_zbsI5WFNubkIT0hOUr4inPIQMvXs6GDTLa6j7XWL3etRJYvOcDLJxa3IDXv-KtuCma5JsG/s1600/ssh.jpg",
-   "cves": [
-    "CVE-2026-123158"
-   ],
-   "first_seen": "2026-11-06T17:49:20.026994+00:00",
-   "instructions": [
-    "Alpine is also recommending that users investigate \"Accepted password for\" log entries involving accounts that should not accept password logins.",
-    "Affected users are advised to install OpenSSH 10.6p2 or their distribution's patched package, and then restart sshd.",
-    "Threat actors are attempting to exploit a recently disclosed security flaw impacting OpenSSH that can enable sign-ins to accounts that have no password set, according to Previdian .",
-    "The underlying issue dates back to a patch introduced in 2016 to fix a username enumeration vulnerability tracked as CVE-2016-6210 ."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "7fc0ff6aee2a",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -3534,27 +3492,6 @@
    "instructions": [
     "A second variant of the PowerShell script attempts to install OpenSSH and creates a scheduled task named \"WinUpdCheck\" that launches a PowerShell reverse shell written to \"C:\\ProgramData\\ssh\\winc.ps1\" at five-minute intervals.",
     "\"If sshd remained unavailable, it downloaded OpenSSH-Win64.zip from the staging server, extracted it, and ran install-sshd.ps1,\" Cynet said."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "9fe769e3c933",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Installing the Fix for an Exploited WordPress Flaw Can Expose Some Sites One Last Time",
-   "link": "https://thehackernews.com/2026/11/installing-fix-for-exploited-wordpress.html",
-   "published": "2026-11-06T16:08:38+00:00",
-   "summary": "Some WordPress sites can still be attacked while they install the fix for an actively exploited flaw, according to Umut Bayram, the Picus Security researcher who found it. The update that installs the fix still unpacks its files using the site's old, unpatched code, so an attacker who strikes at the right moment can…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4gwg9bgmxLj_anXtQvOZdeKYWN-aAZxZqlOrI7wXwZ_qW_lUZrzwYufexnbDLcC20eXBkh7TgA-dAQHm6EEmEc80i9A6GOBGkiOb8NhcR1d1CFLKDLc7VJzyC4Bv-5Ye2AEE_ApPcKmAWqJJFfbQ2AOGffKhCPNznyYyz5s0Jro-mxcTxfxPoqRe-ZoY/s1600/wp-update.jpg",
-   "cves": [],
-   "first_seen": "2026-11-06T17:49:20.026994+00:00",
-   "instructions": [
-    "WordPress released the fix last week in version 7.1.4 and in matching updates for older branches back to 4.7, all listed in its security advisory .",
-    "The researcher advises blocking web access to the site's wp-content/upgrade folder before updating.",
-    "The researcher's first recommendation is to stop the web server from serving wp-content/upgrade at all.",
-    "The researcher says the flaw goes back to WordPress 2.7, released in 2008, and that those sites should move to a supported version."
    ],
    "instructions_checked": true
   },
@@ -3633,6 +3570,27 @@
    "first_seen": "2026-11-10T08:19:37.503691+00:00",
    "instructions": [
     "Multiple N-central zero-days enable anonymous credential theft, administrator creation, and nable/root RCE."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "fb5ac890be2a",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs",
+   "link": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
+   "published": "2026-11-13T15:27:05+00:00",
+   "summary": "Two attacks made public this week allow a malicious host to read data inside AMD SEV-SNP-protected virtual machines (VMs), which are built to keep the server's operator out. One of them, Mior, can also modify a VM's memory and fake the signed report confirming which software it runs. Both need control of the server's…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi28SrA-dW0l0kreAg1vMHHOgBRMM7lzxv5qg2FT2HzRxReJ96pxZP4Fjpm15fYWDDgWpbBI8iC119aE37t_kmQ4guoA70NUlJsdiA4hFvTg8fflx9fsKqUsGuoB-S9VS5pPd38EBVYRGmvKIT5EylE3IwEK8bBCp5CkLrdTwhbyUA2xWN_0iOynP33yE8/s1600/amd-flaws.jpg",
+   "cves": [],
+   "first_seen": "2026-11-13T16:16:35.671151+00:00",
+   "instructions": [
+    "The advisories do not say whether those updates work on their own or only as part of the BIOS updates, and they list no workaround.",
+    "The bulletin lists EPYC and Ryzen chips, including embedded models, and recommends the company's earlier TSA mitigations plus an EDK II patch when one is available.",
+    "AMD tracks Mior as CVE-2026-0462 and rates it 5.9 on the CVSS 4.0 scale in a security advisory .",
+    "It tracks Skyfall's VM leak as CVE-2026-40671, rated 4.9, in a second advisory that describes the flaw as exposing VM register data."
    ],
    "instructions_checked": true
   },
@@ -4284,6 +4242,23 @@
    "image": "https://cms.therecord.media/uploads/fridge_eeb57556f3.jpg",
    "cves": [],
    "first_seen": "2026-11-09T19:23:29.204678+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "e4e9606f466d",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "DOJ: Gootloader used in at least 44 ransomware attacks costing $29 million since 2018",
+   "link": "https://therecord.media/gootloader-ransomware-doj-details",
+   "published": "2026-11-13T15:59:00+00:00",
+   "summary": "In a briefing adjacent to European announcements about an international anti-malware operation, U.S. officials detailed the history and impact of the Gootloader ransomware.",
+   "image": "https://cms.therecord.media/uploads/gootloader_page_operation_endgame_d490d02942.png",
+   "cves": [],
+   "first_seen": "2026-11-13T16:16:35.671151+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -5939,28 +5914,6 @@
    "instructions_checked": true
   },
   {
-   "id": "af6d1b8b9d25",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Veeam warns of Software Appliance boot failures on AMD EPYC hosts",
-   "link": "https://www.bleepingcomputer.com/news/security/veeam-software-appliance-vms-fail-to-boot-on-amd-epyc-hosts/",
-   "published": "2026-11-06T15:25:31+00:00",
-   "summary": "​Veeam warned customers about boot failures affecting Software Appliance virtual machines (VMs) on hosts with AMD EPYC processors.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/06/Veeam.jpg",
-   "cves": [],
-   "first_seen": "2026-11-06T15:50:25.426237+00:00",
-   "image_checked": true,
-   "instructions": [
-    "However, as the company explained in a Wednesday advisory, these VMs will fail to boot and will crash with a kernel panic after failing an early-boot FIPS-mode jitterentropy check on some AMD EPYC processors.",
-    "If the appliance cannot be redeployed on a system with an unaffected processor, IT admins are advised to disable automatic updates for the appliance and install updates manually (while monitoring the VM as it reboots).",
-    "\"A Veeam Software Appliance (Linux-based Veeam Backup & Replication) virtual machine running on a host with an AMD EPYC processor intermittently fails to boot after a reboot, including a reboot that follows an update that installs a new kernel,\" it said .",
-    "To mitigate this issue, Veeam told IT administrators to redeploy the appliance to a Linux host with a different processor."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "b9b072a1ed15",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -7456,6 +7409,28 @@
     "Siemens has published nine new advisories covering 10 vulnerabilities.",
     "Two advisories describe the impact of the recent Node2Shell vulnerability on the company’s products.",
     "Siemens has also published advisories informing customers about high-severity vulnerabilities in ROS#, Simcenter Femap, Mendix Studio Pro MCP Server, Simatic SCADA and PCS 7, Meta-iot2050, and Simatic WinCC Graphics Designer."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "c3cb9f990617",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "In Other News: New CISA Director Nominee, Connected Car Hacking, Baker Tilly Data Breach",
+   "link": "https://www.securityweek.com/in-other-news-new-cisa-director-nominee-connected-car-hacking-baker-tilly-data-breach/",
+   "published": "2026-11-13T15:20:00+00:00",
+   "summary": "Noteworthy stories that might have slipped under the radar: Siemens details security advisory policy, OpenAI Codex backdoor risk, Microsoft warns of model weight backdoors. The post In Other News: New CISA Director Nominee, Connected Car Hacking, Baker Tilly Data Breach appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2023/10/cybersecurity-news.jpg",
+   "cves": [],
+   "first_seen": "2026-11-13T16:16:35.671151+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Siemens details security advisory policy and planned improvements Siemens has published a policy document that sets out how its PSIRT deals with product vulnerabilities and what its security advisories contain.",
+    "Planned improvements include an API for automated lookups of product and vulnerability data, wider coverage of flaws in third-party components, more explicit “not affected” declarations, and getting advisory data into commonly used third-party vulnerability databases.",
+    "Because the attack needs write access to the weights and can only be reliably detected by comparing them with the originals, Microsoft recommends verifying model provenance and auditing weights the way code is audited.",
+    "Should the Senate fail to act before this Congress adjourns, Trump would need to renominate him under an incoming Democratic majority whose members have questioned Palantir’s government work."
    ],
    "instructions_checked": true
   },
