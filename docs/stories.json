@@ -1,16 +1,6 @@
 {
  "stories": [
   {
-   "id": "3d5dfb277e1d",
-   "title": "CISA Flags SonicWall SonicOS MFA Bypass Flaw Amid Reports of Possible Exploitation",
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a high-severity vulnerability impacting SonicWall SonicOS to its Known Exploited…",
-   "priority": "Critical",
-   "category": "Patch Radar",
-   "date": "09 Nov 2026, 06:05 UTC",
-   "sources": "The Hacker News, SecurityWeek, BleepingComputer, CISA Cybersecurity Advisories",
-   "url": "story/3d5dfb277e1d.html"
-  },
-  {
    "id": "3b8d7732462b",
    "title": "New worm-like 'SCKit' malware targets MSPs in ScreenConnect attacks",
    "summary": "A new worm-like malware toolkit named SCKit was deployed in the recent ScreenConnect attacks targeting managed service providers (MSPs), designed to spread from infected…",
@@ -39,6 +29,16 @@
    "date": "10 Nov 2026, 09:42 UTC",
    "sources": "SecurityWeek, The Hacker News, CISA Cybersecurity Advisories",
    "url": "story/e61330c97785.html"
+  },
+  {
+   "id": "3d5dfb277e1d",
+   "title": "CISA Flags SonicWall SonicOS MFA Bypass Flaw Amid Reports of Possible Exploitation",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a high-severity vulnerability impacting SonicWall SonicOS to its Known Exploited…",
+   "priority": "Critical",
+   "category": "Patch Radar",
+   "date": "09 Nov 2026, 06:05 UTC",
+   "sources": "The Hacker News, SecurityWeek, BleepingComputer",
+   "url": "story/3d5dfb277e1d.html"
   },
   {
    "id": "c84faf9461ad",
@@ -71,16 +71,6 @@
    "url": "story/95f883361cdc.html"
   },
   {
-   "id": "e447c2de7d90",
-   "title": "Kazakhstan-linked hackers used AI agent to spy on Central Asian governments",
-   "summary": "Suspected Kazakhstan-linked hackers used an artificial intelligence agent to help spy on Central Asian governments, steal sensitive documents and infiltrate critical…",
-   "priority": "High",
-   "category": "Attacks & Breaches",
-   "date": "12 Nov 2026, 13:00 UTC",
-   "sources": "The Record",
-   "url": "story/e447c2de7d90.html"
-  },
-  {
    "id": "d62ab9694fcc",
    "title": "Critical Xen Orchestra Flaws Exploited in Attacks",
    "summary": "A critical authentication bypass allows attackers to execute arbitrary code as admin and take over XCP-ng nodes. The post Critical Xen Orchestra Flaws Exploited in…",
@@ -101,6 +91,16 @@
    "url": "story/d7669d6db99e.html"
   },
   {
+   "id": "fff233faf327",
+   "title": "Attackers in Binance Breach Targeted Known Weakness, Missing Controls",
+   "summary": "Blockchain complexities (such as attacker-deployed sweepers) hobble security controls designed to limit the damage of an exchange compromise.",
+   "priority": "High",
+   "category": "Attacks & Breaches",
+   "date": "13 Nov 2026, 13:00 UTC",
+   "sources": "Dark Reading",
+   "url": "story/fff233faf327.html"
+  },
+  {
    "id": "f394da5f2166",
    "title": "Microsoft 365 Outage Disrupts Outlook, Exchange Online and Teams",
    "summary": "Microsoft says failed server health checks disrupted Outlook and other Microsoft 365 services. The company is still investigating the cause and has disclosed no evidence…",
@@ -119,6 +119,16 @@
    "date": "12 Nov 2026, 14:36 UTC",
    "sources": "BleepingComputer",
    "url": "story/7927f7b9de97.html"
+  },
+  {
+   "id": "e447c2de7d90",
+   "title": "Kazakhstan-linked hackers used AI agent to spy on Central Asian governments",
+   "summary": "Suspected Kazakhstan-linked hackers used an artificial intelligence agent to help spy on Central Asian governments, steal sensitive documents and infiltrate critical…",
+   "priority": "High",
+   "category": "Attacks & Breaches",
+   "date": "12 Nov 2026, 13:00 UTC",
+   "sources": "The Record",
+   "url": "story/e447c2de7d90.html"
   },
   {
    "id": "df2e304a7245",
@@ -201,16 +211,6 @@
    "url": "story/8b35f69eac70.html"
   },
   {
-   "id": "14242fd48964",
-   "title": "CVE-2026-114151 Visual Studio Remote Code Execution Vulnerability",
-   "summary": "Updated the products listed in the Security Updates table. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "11 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center, The Hacker News",
-   "url": "story/14242fd48964.html"
-  },
-  {
    "id": "c5080c64e3d8",
    "title": "Threat Actors Exploit Openwave, Cisco BroadWorks Vulnerabilities",
    "summary": "The flaws, CVE-2026-111793 and CVE-2026-20320, let attackers leak sensitive information, including configuration data. The post Threat Actors Exploit Openwave, Cisco…",
@@ -279,6 +279,36 @@
    "date": "06 Nov 2026, 14:40 UTC",
    "sources": "SecurityWeek",
    "url": "story/3819f6707361.html"
+  },
+  {
+   "id": "293c69c9ee5b",
+   "title": "Microsoft says November security updates cause printing issues",
+   "summary": "Microsoft warned customers earlier this week that the November 2026 security updates may break printing for documents with complex formatting.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "13 Nov 2026, 12:27 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/293c69c9ee5b.html"
+  },
+  {
+   "id": "fe3ab0485c82",
+   "title": "When an AI Agent Goes Wrong, Can You Stop It?",
+   "summary": "Suppose an AI agent is asked to sort support tickets and look up account details. A ticket contains instructions that lead the agent to export records to an unfamiliar…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "13 Nov 2026, 11:52 UTC",
+   "sources": "The Hacker News",
+   "url": "story/fe3ab0485c82.html"
+  },
+  {
+   "id": "5df4bf07aed5",
+   "title": "Operation Endgame Takes Down Gootloader, CastleRAT and StealC Servers, Seizes 6.4M Stolen Logins",
+   "summary": "An international police operation took down servers behind Gootloader, CastleRAT and StealC this week. Criminals used the three malware tools to gain access to…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "13 Nov 2026, 10:55 UTC",
+   "sources": "The Hacker News",
+   "url": "story/5df4bf07aed5.html"
   },
   {
    "id": "8762a201a24f",
@@ -431,16 +461,6 @@
    "url": "story/b6cd1d92c2ad.html"
   },
   {
-   "id": "00c8c05e542b",
-   "title": "Microsoft: Recent Windows updates cause SQL Server performance issues",
-   "summary": "Microsoft has confirmed that Windows updates released since the October 2026 Patch Tuesday are causing SQL Server performance and stability issues.",
-   "priority": "Standard",
-   "category": "Microsoft",
-   "date": "12 Nov 2026, 12:11 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/00c8c05e542b.html"
-  },
-  {
    "id": "9b952a7f4c5d",
    "title": "Inside an AI Attack Against a US Retailer",
    "summary": "When hand-typed commands failed to breach a US retailer, the attacker turned to AI-generated scripts, achieving lateral movement in minutes.",
@@ -479,6 +499,16 @@
    "date": "11 Nov 2026, 16:00 UTC",
    "sources": "Microsoft Security Response Center",
    "url": "story/c5a7aee1fe72.html"
+  },
+  {
+   "id": "14242fd48964",
+   "title": "CVE-2026-114151 Visual Studio Remote Code Execution Vulnerability",
+   "summary": "Updated the products listed in the Security Updates table. This is an informational change only.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "11 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/14242fd48964.html"
   },
   {
    "id": "34f63dbdf416",
@@ -561,6 +591,16 @@
    "url": "story/9fe769e3c933.html"
   },
   {
+   "id": "f5b71ee6de0e",
+   "title": "AI Doesn’t Have to Go Rogue to Break the World",
+   "summary": "This essay is adapted from a keynote speech delivered at the DEF CON 34 conference in Las Vegas on August 7, 2026. The essay originally appeared in CyberScoop. I want to…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "13 Nov 2026, 12:03 UTC",
+   "sources": "Schneier on Security",
+   "url": "story/f5b71ee6de0e.html"
+  },
+  {
    "id": "e4b47e3b9b3e",
    "title": "OpenAI Unveils Daybreak Red Team, Defense Factory Security Tools",
    "summary": "Daybreak Red Team pentests web applications with AI agents, while Defense Factory investigates security findings and prepares patches. The post OpenAI Unveils Daybreak…",
@@ -631,14 +671,14 @@
    "url": "story/0ea3d75301ac.html"
   },
   {
-   "id": "5af74d5ce665",
-   "title": "Google Cloud Warns Three AMD Turin CPU Flaws Could Leak Data Across Processes in VMs",
-   "summary": "Google Cloud VMs on AMD Turin chips need a guest OS patch and a stop-and-start to protect against three CPU side-channel flaws, Google said this week. The company has…",
+   "id": "00c8c05e542b",
+   "title": "Microsoft: Recent Windows updates cause SQL Server performance issues",
+   "summary": "Microsoft has confirmed that Windows updates released since the October 2026 Patch Tuesday are causing SQL Server performance and stability issues.",
    "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "12 Nov 2026, 12:09 UTC",
-   "sources": "The Hacker News",
-   "url": "story/5af74d5ce665.html"
+   "category": "Microsoft",
+   "date": "12 Nov 2026, 12:11 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/00c8c05e542b.html"
   },
   {
    "id": "4fb3f4a554eb",
@@ -799,26 +839,6 @@
    "date": "11 Nov 2026, 13:37 UTC",
    "sources": "SecurityWeek",
    "url": "story/60ccd3ca4d45.html"
-  },
-  {
-   "id": "833af69e5de2",
-   "title": "Windows: November 2026 Patchday-Probleme?",
-   "summary": "Am 10. November 2026 (Patchday bei Microsoft) hat Microsoft kumulative Updates für die unterstützten Windows Client- und Server-Betriebssysteme veröffentlicht. Mir sind…",
-   "priority": "Standard",
-   "category": "Microsoft",
-   "date": "11 Nov 2026, 12:48 UTC",
-   "sources": "Born's IT and Windows Blog",
-   "url": "story/833af69e5de2.html"
-  },
-  {
-   "id": "693679885746",
-   "title": "N-able releases security hotfixes for zero-day vulnerabilities",
-   "summary": "N-able released hotfixes to address zero-day bugs affecting its N-central remote monitoring and management (RMM) platform, which were publicly disclosed over the weekend…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "11 Nov 2026, 12:32 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/693679885746.html"
   },
   {
    "id": "890bd5d68a0a",
@@ -1261,6 +1281,36 @@
    "url": "story/a5eef3cf57a4.html"
   },
   {
+   "id": "4084f96e5a59",
+   "title": "Apify Confirms Customer Data Accessed in Cyberattack",
+   "summary": "The web scraping company says an intruder accessed customer accounts and obtained personal information or stored data. The post Apify Confirms Customer Data Accessed in…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "13 Nov 2026, 12:41 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/4084f96e5a59.html"
+  },
+  {
+   "id": "527326996071",
+   "title": "SilentAir Hackers Intercept Calls, SMS From Inside Mobile Networks",
+   "summary": "Enea says SilentAir hijacked mobile network nodes to intercept calls and messages, with Taiwanese subscribers the primary targets. The post SilentAir Hackers Intercept…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "13 Nov 2026, 12:20 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/527326996071.html"
+  },
+  {
+   "id": "d030547d1ad3",
+   "title": "SilentAir Hijacks Asian Telecom Networks to Intercept SMS 2FA Codes and Spy on Taiwanese Users",
+   "summary": "A newly identified spying group used hacked equipment inside Asian mobile operators to intercept the calls and texts of selected people, mostly in Taiwan. Enea, a…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "13 Nov 2026, 11:10 UTC",
+   "sources": "The Hacker News",
+   "url": "story/d030547d1ad3.html"
+  },
+  {
    "id": "e4df5d0ce341",
    "title": "Law Enforcement Disrupts Gootloader, CastleRAT, and StealC Infrastructure",
    "summary": "Investigators seized 235 servers and 257 domains, along with 6.4 million victim credentials as part of Operation Endgame. The post Law Enforcement Disrupts Gootloader…",
@@ -1329,6 +1379,16 @@
    "date": "13 Nov 2026, 00:00 UTC",
    "sources": "The Record",
    "url": "story/2be753d1df50.html"
+  },
+  {
+   "id": "f88082b89135",
+   "title": "Record number of cyber incidents reported to UK privacy regulator",
+   "summary": "British organizations have reported a record number of cyber incidents to the country’s data protection regulator this year, as cybersecurity firms blame data extortion…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "13 Nov 2026, 00:00 UTC",
+   "sources": "The Record",
+   "url": "story/f88082b89135.html"
   },
   {
    "id": "e9f16b1caffc",
@@ -1451,14 +1511,14 @@
    "url": "story/5209bb0904e3.html"
   },
   {
-   "id": "8e79d9a04839",
-   "title": "Another Way Police Are Locating People from Their Smartphones",
-   "summary": "Penlink’s Webloc is an application that locates people using information from the weather, gaming, email, and religious apps on their phone. It’s sold to the police. The…",
+   "id": "5af74d5ce665",
+   "title": "Google Cloud Warns Three AMD Turin CPU Flaws Could Leak Data Across Processes in VMs",
+   "summary": "Google Cloud VMs on AMD Turin chips need a guest OS patch and a stop-and-start to protect against three CPU side-channel flaws, Google said this week. The company has…",
    "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "12 Nov 2026, 12:02 UTC",
-   "sources": "Schneier on Security",
-   "url": "story/8e79d9a04839.html"
+   "category": "Patch Radar",
+   "date": "12 Nov 2026, 12:09 UTC",
+   "sources": "The Hacker News",
+   "url": "story/5af74d5ce665.html"
   },
   {
    "id": "0fd5862fb594",
@@ -1551,44 +1611,24 @@
    "url": "story/ef892408bebc.html"
   },
   {
-   "id": "14caa111eec6",
-   "title": "Over 35,000 Grok-Built Apps Exposed Online, Some Leaking Confidential Data and Passwords",
-   "summary": "Of the 37,571 Grok-built apps that security company Claroc found online, 35,578 were open to anyone without a sign-in, the researchers said yesterday. They included 24…",
+   "id": "833af69e5de2",
+   "title": "Windows: November 2026 Patchday-Probleme?",
+   "summary": "Am 10. November 2026 (Patchday bei Microsoft) hat Microsoft kumulative Updates für die unterstützten Windows Client- und Server-Betriebssysteme veröffentlicht. Mir sind…",
    "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "11 Nov 2026, 12:19 UTC",
-   "sources": "The Hacker News",
-   "url": "story/14caa111eec6.html"
+   "category": "Microsoft",
+   "date": "11 Nov 2026, 12:48 UTC",
+   "sources": "Born's IT and Windows Blog",
+   "url": "story/833af69e5de2.html"
   },
   {
-   "id": "6efa2d9b4d0b",
-   "title": "Fortinet Patches Nearly 100 Vulnerabilities",
-   "summary": "The massive drop comes after the company integrated frontier AI models into its product security testing. The post Fortinet Patches Nearly 100 Vulnerabilities appeared…",
+   "id": "693679885746",
+   "title": "N-able releases security hotfixes for zero-day vulnerabilities",
+   "summary": "N-able released hotfixes to address zero-day bugs affecting its N-central remote monitoring and management (RMM) platform, which were publicly disclosed over the weekend…",
    "priority": "Standard",
    "category": "Patch Radar",
-   "date": "11 Nov 2026, 12:10 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/6efa2d9b4d0b.html"
-  },
-  {
-   "id": "38d7075a7968",
-   "title": "Three People Arrested for AI-Enhanced Impersonation Fraud",
-   "summary": "It’s hard to believe how lucrative this crime can be: According to a press release from the United States attorney’s office for the southern district of New York, three…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "11 Nov 2026, 12:05 UTC",
-   "sources": "Schneier on Security",
-   "url": "story/38d7075a7968.html"
-  },
-  {
-   "id": "de18400249b3",
-   "title": "We Built An Agent That Broke All of Our Security Rules. Here's What We Learned.",
-   "summary": "We tell customers three things about securing AI agents: they need their own identities, access that fits the job they’re given, and traceability that’s separate from…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "11 Nov 2026, 12:01 UTC",
-   "sources": "The Hacker News",
-   "url": "story/de18400249b3.html"
+   "date": "11 Nov 2026, 12:32 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/693679885746.html"
   },
   {
    "id": "15c0b59087ed",
@@ -1901,6 +1941,16 @@
    "url": "story/3ae40aec285b.html"
   },
   {
+   "id": "8e79d9a04839",
+   "title": "Another Way Police Are Locating People from Their Smartphones",
+   "summary": "Penlink’s Webloc is an application that locates people using information from the weather, gaming, email, and religious apps on their phone. It’s sold to the police. The…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "12 Nov 2026, 12:02 UTC",
+   "sources": "Schneier on Security",
+   "url": "story/8e79d9a04839.html"
+  },
+  {
    "id": "f7cf57082e20",
    "title": "Calendar Invites and Live Proxies: Inside a Google Session Hijacking Campaign",
    "summary": "Since mid-August 2026, a phishing operation has been stealing live Google sessions from corporate users. Every check defenders normally lean on to judge a link came back…",
@@ -2051,24 +2101,44 @@
    "url": "story/424f8e5ef5ac.html"
   },
   {
-   "id": "6ef677aa3015",
-   "title": "Finite State Raises $27 Million to Secure Software and Firmware in Connected Devices",
-   "summary": "The Series C round will fund international expansion and more autonomous features for the firm’s device security platform. The post Finite State Raises $27 Million to…",
+   "id": "14caa111eec6",
+   "title": "Over 35,000 Grok-Built Apps Exposed Online, Some Leaking Confidential Data and Passwords",
+   "summary": "Of the 37,571 Grok-built apps that security company Claroc found online, 35,578 were open to anyone without a sign-in, the researchers said yesterday. They included 24…",
    "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "11 Nov 2026, 12:24 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/6ef677aa3015.html"
+   "category": "AI Risk Lab",
+   "date": "11 Nov 2026, 12:19 UTC",
+   "sources": "The Hacker News",
+   "url": "story/14caa111eec6.html"
   },
   {
-   "id": "b80a24c89312",
-   "title": "eMudhra Revokes 8 More CAs It Previously Declared Unaffected by Key Compromise",
-   "summary": "The in-house Python script behind eMudhra's October key compromise has now cost the company 8 more of its intermediate certificate authorities (CAs), even though it did…",
+   "id": "6efa2d9b4d0b",
+   "title": "Fortinet Patches Nearly 100 Vulnerabilities",
+   "summary": "The massive drop comes after the company integrated frontier AI models into its product security testing. The post Fortinet Patches Nearly 100 Vulnerabilities appeared…",
    "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "11 Nov 2026, 12:00 UTC",
+   "category": "Patch Radar",
+   "date": "11 Nov 2026, 12:10 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/6efa2d9b4d0b.html"
+  },
+  {
+   "id": "38d7075a7968",
+   "title": "Three People Arrested for AI-Enhanced Impersonation Fraud",
+   "summary": "It’s hard to believe how lucrative this crime can be: According to a press release from the United States attorney’s office for the southern district of New York, three…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "11 Nov 2026, 12:05 UTC",
+   "sources": "Schneier on Security",
+   "url": "story/38d7075a7968.html"
+  },
+  {
+   "id": "de18400249b3",
+   "title": "We Built An Agent That Broke All of Our Security Rules. Here's What We Learned.",
+   "summary": "We tell customers three things about securing AI agents: they need their own identities, access that fits the job they’re given, and traceability that’s separate from…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "11 Nov 2026, 12:01 UTC",
    "sources": "The Hacker News",
-   "url": "story/b80a24c89312.html"
+   "url": "story/de18400249b3.html"
   },
   {
    "id": "21b7ddf6e1b0",
@@ -2371,14 +2441,24 @@
    "url": "story/e34ca10a5a26.html"
   },
   {
-   "id": "cea41b0360f6",
-   "title": "Malicious Browser Extensions Could Use Claude Dispatch to Run Code on Users' Computers",
-   "summary": "A browser extension that can run scripts on claude.ai could make Claude Desktop run code on a person's computer, researchers at Forever Security, an endpoint security…",
+   "id": "6ef677aa3015",
+   "title": "Finite State Raises $27 Million to Secure Software and Firmware in Connected Devices",
+   "summary": "The Series C round will fund international expansion and more autonomous features for the firm’s device security platform. The post Finite State Raises $27 Million to…",
    "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "06 Nov 2026, 12:06 UTC",
+   "category": "Industry & Research",
+   "date": "11 Nov 2026, 12:24 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/6ef677aa3015.html"
+  },
+  {
+   "id": "b80a24c89312",
+   "title": "eMudhra Revokes 8 More CAs It Previously Declared Unaffected by Key Compromise",
+   "summary": "The in-house Python script behind eMudhra's October key compromise has now cost the company 8 more of its intermediate certificate authorities (CAs), even though it did…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "11 Nov 2026, 12:00 UTC",
    "sources": "The Hacker News",
-   "url": "story/cea41b0360f6.html"
+   "url": "story/b80a24c89312.html"
   },
   {
    "id": "3dfcf9840f4a",
@@ -2869,46 +2949,6 @@
    "date": "06 Nov 2026, 14:00 UTC",
    "sources": "Dark Reading",
    "url": "story/5c794c08b581.html"
-  },
-  {
-   "id": "3450626e3180",
-   "title": "US Agencies Urge Organizations to Harden Refrigeration Controllers",
-   "summary": "The recommendations come amid attacks targeting fridges and freezers in supermarkets and blood banks in Europe. The post US Agencies Urge Organizations to Harden…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "06 Nov 2026, 13:02 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/3450626e3180.html"
-  },
-  {
-   "id": "8694430c3bcd",
-   "title": "Grocery Giant Ahold Delhaize Estimates Financial Toll of October Cyberattack",
-   "summary": "The October incident will cut fourth-quarter sales by up to €250 million and has led Ahold Delhaize to lower its 2026 outlook. The post Grocery Giant Ahold Delhaize…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "06 Nov 2026, 12:47 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/8694430c3bcd.html"
-  },
-  {
-   "id": "d0b8b49f25ce",
-   "title": "D-Link warns of multiple zero-days in DGS-3130 Series switches",
-   "summary": "D-Link shared mitigation measures for multiple unpatched security flaws affecting DGS-3130 series managed Gigabit stackable switches.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "06 Nov 2026, 12:37 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/d0b8b49f25ce.html"
-  },
-  {
-   "id": "cc8d32ac462d",
-   "title": "Researchers Find Residential Proxies on White House Network",
-   "summary": "In a month, 28 residential proxy services used 6 addresses, mainly between 5 p.m. and midnight, Eastern Time. The post Researchers Find Residential Proxies on White…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "06 Nov 2026, 12:16 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/cc8d32ac462d.html"
   }
  ]
 }

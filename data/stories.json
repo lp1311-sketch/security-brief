@@ -3558,49 +3558,6 @@
    "instructions_checked": true
   },
   {
-   "id": "cea41b0360f6",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Malicious Browser Extensions Could Use Claude Dispatch to Run Code on Users' Computers",
-   "link": "https://thehackernews.com/2026/11/malicious-browser-extensions-could-use.html",
-   "published": "2026-11-06T12:06:35+00:00",
-   "summary": "A browser extension that can run scripts on claude.ai could make Claude Desktop run code on a person's computer, researchers at Forever Security, an endpoint security company, showed in a test. The attack needs Dispatch, a Claude feature that lets people send tasks from their phone to Claude Desktop. The flaw that…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEil2RWGFxPYdzFDr1Tl0G6604dLCacXJDMaR-i0nSdrR7vBGgK-lUkZbE5eZYMbWO0Geqw_rDbN2qUkWpEadukl6gccv-xuUWJfEOx2_FWFiZxjVs4uNPiRK3JYOBo0QI1Lx08xd9Iz3-8TFN_kf-njbCQ-AFDcLNNRy6JcwsZyoM12qLt99OzNQNhmaGs/s1600/claude-dispatch.jpg",
-   "cves": [],
-   "first_seen": "2026-11-06T13:54:07.503835+00:00",
-   "instructions": [
-    "The Dispatch help page says users should know how to quickly disconnect or revoke access before turning the feature on, but it does not explain how.",
-    "The extension could be malicious, a legitimate one that received a compromised update, or a legitimate one with a security flaw.",
-    "Claude then ran a global npm install, and the package's install script opened the Calculator app."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "649e0d8b078e",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Microsoft Paint RCE Fix Now Available, but Windows Update Won't Deliver It",
-   "link": "https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html",
-   "published": "2026-11-06T12:06:43+00:00",
-   "summary": "A fix for CVE-2026-83844, a remote code execution flaw in Windows Paint, is now in the Microsoft Store. Paint gets this fix only through a Store update, not through Windows updates. The fixed build, 11.2609.401.0, was the newest Paint build in all ten countries The Hacker News checked today. The flaw is an…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFEFFUv1MUNRoFx03Jcw0k5NZCU0EOf5qEpbvAEQoTSTzoxHWPk1rc7XgQeG1USPP9vVB0ePI_lzQLqBU5bHdQ7-YrwEXFo8gJwayqwCvCtcDrw1JYMxKYxieV3bcQeCRAJAxt8CRfifzMzL22_ab0Z0OxwWrNckC36gPEOnubZnzagv6DkV7iY4AQJfA/s1600/paint-rce.jpg",
-   "cves": [
-    "CVE-2026-83844"
-   ],
-   "first_seen": "2026-11-06T13:54:07.503835+00:00",
-   "instructions": [
-    "Microsoft's security advisory names 11.2609.401.0 as the fixed build.",
-    "As recently as last week, the advisory gave 11.2605.91.0 as the fixed build, according to a forum question on Microsoft Q&A.",
-    "The advisory's revision history still shows only its October 13 entry, with no note about the change.",
-    "An attacker could exploit the flaw by sending \"a specially crafted packet to an affected service over the network,\" the advisory says, but it does not name the service."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "44096b209ce3",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -3735,6 +3692,25 @@
    "first_seen": "2026-11-06T17:49:20.026994+00:00",
    "instructions": [
     "Google, for its part, has introduced new capabilities to CodeMender, its autonomous code-security agent, to facilitate secure isolation and flexible scanning, while adding human-in-the-loop checks for local write and command execution to mitigate the risks of malicious exploits."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "5df4bf07aed5",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Operation Endgame Takes Down Gootloader, CastleRAT and StealC Servers, Seizes 6.4M Stolen Logins",
+   "link": "https://thehackernews.com/2026/11/operation-endgame-takes-down-gootloader.html",
+   "published": "2026-11-13T10:55:03+00:00",
+   "summary": "An international police operation took down servers behind Gootloader, CastleRAT and StealC this week. Criminals used the three malware tools to gain access to computers, steal passwords, and launch ransomware attacks. Police also seized about 6.4 million stolen logins belonging to more than 40,000 victims, according…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsu6ZFyYFr1dxp2XHIaG_pyTwkoH58ICgyXLuTthkuYSJVcqAwX_O_bEJYfheyxpYmI7nnok1xrj97q7s-9l8JHFt1ogBAOJAEUqM8_vf6H3a8eYPKzB34d6XrvnkRu8zGaoKMgSJqWsE6u2zYXLdJKTtcDvk3beN6_o40ygJ4MVSMomS3Q1aEFV_jSq8/s1600/gootloader.jpg",
+   "cves": [],
+   "first_seen": "2026-11-13T13:05:18.402714+00:00",
+   "instructions": [
+    "Police in Denmark and the Netherlands advise WordPress site owners to take these steps, several of which are set out in a Dutch advice sheet :",
+    "If the address is in the data, the police send an email within a few minutes with steps to remove the malware."
    ],
    "instructions_checked": true
   },
@@ -3899,6 +3875,27 @@
    "instructions_checked": true
   },
   {
+   "id": "d030547d1ad3",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "SilentAir Hijacks Asian Telecom Networks to Intercept SMS 2FA Codes and Spy on Taiwanese Users",
+   "link": "https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html",
+   "published": "2026-11-13T11:10:40+00:00",
+   "summary": "A newly identified spying group used hacked equipment inside Asian mobile operators to intercept the calls and texts of selected people, mostly in Taiwan. Enea, a telecom and cybersecurity software company based in Stockholm, found the group's attack sources in at least six Asian countries and named it SilentAir this…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjskRPNlV_kYE1N2eF2J_J0fBvF_nQxnvtaS78Grj04KqkEauvr-R5jO-ynD9nm51SgF2XtCCAsWUbJrHU0wGRnXC9yHmblhNCF8Jt9NdVahMju3voR2z9xb2uqoSi7Nc085UqDBelqg4XDRdjJ2lsF7EeN28rjq7oBc_NpBUWRqLWXiOh9FBRIH28teHM/s1600/telecom-hack.jpg",
+   "cves": [],
+   "first_seen": "2026-11-13T13:05:18.402714+00:00",
+   "instructions": [
+    "Singapore's Infocomm Media Development Authority (IMDA) has described the same tool in a government advisory .",
+    "Go beyond the industry's basic recommendations for signaling security.",
+    "The report does not advise people whose calls and texts may be targeted.",
+    "Mobile operators use the SS7 and Diameter protocols to exchange signaling messages that route calls and texts and enable roaming."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "e8082cc54dfb",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -4027,6 +4024,27 @@
     "A setting nobody checked, an update nobody questioned, or a system left online longer than it should have been.",
     "OpenSSH Flaw Sees Exploitation Attempts — Threat actors are attempting to exploit a recently disclosed security flaw impacting OpenSSH that can enable sign-ins to accounts that have no password set.",
     "Debian and Ubuntu APT Flaw Allows Code Execution as Root — A vulnerability in the APT package manager (CVE-2026-109518, CVSS score: 7.7) can be exploited to install a package under certain conditions and achieve code execution with elevated privileges."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "fe3ab0485c82",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "When an AI Agent Goes Wrong, Can You Stop It?",
+   "link": "https://thehackernews.com/2026/11/when-ai-agent-goes-wrong-can-you-stop-it.html",
+   "published": "2026-11-13T11:52:31+00:00",
+   "summary": "Suppose an AI agent is asked to sort support tickets and look up account details. A ticket contains instructions that lead the agent to export records to an unfamiliar destination. The agent can make the request because its identity has access to the records and its connected tools allow the action. That kind of…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXkpxeEuWVGmGvK8wGnGdzjVbMHRyNOYd3GFjgzJZZN7TL2yyLt5Jof4gsujMYS9WfZnxUjFFs3mxFaejShy46vuXK38l_5R3RvospJ6J8IunrLPSDnI0sJgGtvNiNkc89XMR_KDDHWEOxAk800C2fKhwiOLMy433M3ASErPk_jMwoexS_5-1kpdJ8emE/s1600/Keeper.jpg",
+   "cves": [],
+   "first_seen": "2026-11-13T13:05:18.402714+00:00",
+   "instructions": [
+    "An October 2026 roundup from the OWASP GenAI Security Project describes evaluation agents reaching beyond their intended scope and recommends testing whether containment can revoke both credentials and network access.",
+    "Security teams should compare them with identity-provider, API, application and network records.",
+    "The response should act through the system that runs the workflow.",
+    "Teams should confirm that the affected access is no longer usable instead of assuming that disabling the agent handled it."
    ],
    "instructions_checked": true
   },
@@ -4391,6 +4409,23 @@
    "image": "https://cms.therecord.media/uploads/poland_1_e70a3806d1.jpg",
    "cves": [],
    "first_seen": "2026-11-11T13:56:06.283853+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "f88082b89135",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Record number of cyber incidents reported to UK privacy regulator",
+   "link": "https://therecord.media/record-number-of-cyber-incidents-reported-to-uk-regulator",
+   "published": "2026-11-13T00:00:00+00:00",
+   "summary": "British organizations have reported a record number of cyber incidents to the country’s data protection regulator this year, as cybersecurity firms blame data extortion and artificial intelligence for a surge in attacks.",
+   "image": "https://cms.therecord.media/uploads/ico_wycliffe_house_landscape_95e18c7b55.jpg",
+   "cves": [],
+   "first_seen": "2026-11-13T13:05:18.402714+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -4792,6 +4827,28 @@
    "instructions_checked": true
   },
   {
+   "id": "293c69c9ee5b",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Microsoft says November security updates cause printing issues",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-november-security-updates-cause-printing-issues/",
+   "published": "2026-11-13T12:27:40+00:00",
+   "summary": "Microsoft warned customers earlier this week that the November 2026 security updates may break printing for documents with complex formatting.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/28/Microsoft.jpg",
+   "cves": [],
+   "first_seen": "2026-11-13T13:05:18.402714+00:00",
+   "image_checked": true,
+   "instructions": [
+    "\"After installing the November 2026 Windows security update (the Originating KBs listed above), or later updates, printing might fail for documents containing images rendered with a height or width value of zero at the selected printing resolution,\" Microsoft said.",
+    "This week, Microsoft also confirmed that this month's Patch Tuesday security updates trigger Windows activation and licensing failures with 0x80041008 error codes and that Windows updates released since the October Patch Tuesday cause SQL Server performance and stability issues .",
+    "Additionally, the company warned that the November 2026 Windows 11 security updates fail to install on systems with the October 2026 preview update.",
+    "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "33bc3cf0f92e",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -5046,28 +5103,6 @@
    "instructions": [
     "Detect Cyber Threats 24/7 with CTM360: Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360.",
     "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "d0b8b49f25ce",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "D-Link warns of multiple zero-days in DGS-3130 Series switches",
-   "link": "https://www.bleepingcomputer.com/news/security/d-link-warns-of-multiple-zero-days-in-dgs-3130-series-switches/",
-   "published": "2026-11-06T12:37:22+00:00",
-   "summary": "D-Link shared mitigation measures for multiple unpatched security flaws affecting DGS-3130 series managed Gigabit stackable switches.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/06/D-Link-logo.jpg",
-   "cves": [],
-   "first_seen": "2026-11-06T12:37:43.134961+00:00",
-   "image_checked": true,
-   "instructions": [
-    "D-Link shared mitigation measures for multiple unpatched security flaws affecting DGS-3130 series managed Gigabit stackable switches.",
-    "D-Link also advised admins to maintain offline switch configuration backups and track device logs for unexpected configuration changes, unprompted reboots, or factory resets.",
-    "Until it releases new firmware to address these flaws, D-Link asked admins to disable DDP to remove the primary known attack vector, remove unnecessary or default SNMP community strings, and restrict SSH, web UI, and SNMP accessibility solely to isolated management networks and designated admin hosts.",
-    "In September, D-Link warned customers of a maximum-severity zero-day (tracked as CVE-2026-86296 ) with a public proof-of-concept (PoC) exploit and no patch, affecting legacy DIR-822A dual-band Wi-Fi routers."
    ],
    "instructions_checked": true
   },
@@ -5947,28 +5982,6 @@
    "instructions_checked": true
   },
   {
-   "id": "c776d35c062b",
-   "source": "cisa",
-   "source_name": "CISA Cybersecurity Advisories",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
-   "link": "https://www.cisa.gov/news-events/alerts/2026/11/06/cisa-adds-one-known-exploited-vulnerability-catalog",
-   "published": "2026-11-06T12:00:00+00:00",
-   "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-19868 SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses…",
-   "image": null,
-   "cves": [
-    "CVE-2026-19868"
-   ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00",
-   "instructions": [
-    "Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
-    "BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied."
-   ],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
    "id": "8f6133c5e5ae",
    "source": "cisa",
    "source_name": "CISA Cybersecurity Advisories",
@@ -6209,6 +6222,22 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt850556f866500627/654a5a8e05eb4d040a046894/325351_DR23_Graphics_General_Large_Text_v1.png?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-10T21:10:58.117182+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "fff233faf327",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "Attackers in Binance Breach Targeted Known Weakness, Missing Controls",
+   "link": "https://www.darkreading.com/cybersecurity-operations/attackers-binance-breach-targeted-weakness-missing-controls",
+   "published": "2026-11-13T13:00:00+00:00",
+   "summary": "Blockchain complexities (such as attacker-deployed sweepers) hobble security controls designed to limit the damage of an exchange compromise.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt3c2322c93d29d2a7/6aed04e63037c1017f2823d8/binance-logo-on-black-bkgrd-Zulfugar_Graphics-shutterstockjpg.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-13T13:05:18.402714+00:00",
    "instructions": [],
    "instructions_checked": true
   },
@@ -6595,6 +6624,28 @@
    "instructions_checked": true
   },
   {
+   "id": "f5b71ee6de0e",
+   "source": "schneier",
+   "source_name": "Schneier on Security",
+   "official": false,
+   "source_type": "news",
+   "title": "AI Doesn’t Have to Go Rogue to Break the World",
+   "link": "https://www.schneier.com/blog/archives/2026/11/ai-doesnt-have-to-go-rogue-to-break-the-world.html",
+   "published": "2026-11-13T12:03:30+00:00",
+   "summary": "This essay is adapted from a keynote speech delivered at the DEF CON 34 conference in Las Vegas on August 7, 2026. The essay originally appeared in CyberScoop. I want to talk about AI hacking. There are three aspects: people hacking AI systems, people using AI to hack other systems, and AIs hacking systems on their…",
+   "image": null,
+   "cves": [],
+   "first_seen": "2026-11-13T13:05:18.402714+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Unless programmers specify that the system must not behave differently during testing, an AI might come up with the same hack.",
+    "In a stacking simulation, an AI learned to flip a block upside down rather than stack it.",
+    "Vulnerabilities can be patched, removing them permanently, or turned into signatures that security systems use to detect and block attacks.",
+    "In theory, AI could identify and patch every automatically discoverable vulnerability before a product ships."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "e0f360ec1ac8",
    "source": "schneier",
    "source_name": "Schneier on Security",
@@ -6804,6 +6855,27 @@
     "Organizations are advised to install Apache HTTP Server 2.4.71 or vendor-supplied packages.",
     "ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure",
     "Chipmaker Patch Tuesday: Over 200 Vulnerabilities Addressed by Intel, AMD"
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "4084f96e5a59",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Apify Confirms Customer Data Accessed in Cyberattack",
+   "link": "https://www.securityweek.com/apify-confirms-customer-data-accessed-in-cyberattack/",
+   "published": "2026-11-13T12:41:01+00:00",
+   "summary": "The web scraping company says an intruder accessed customer accounts and obtained personal information or stored data. The post Apify Confirms Customer Data Accessed in Cyberattack appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/02/data_breach.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-13T13:05:18.402714+00:00",
+   "image_checked": true,
+   "instructions": [
+    "ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure",
+    "Chipmaker Patch Tuesday: Over 200 Vulnerabilities Addressed by Intel, AMD",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
   },
@@ -7273,26 +7345,6 @@
    "instructions_checked": true
   },
   {
-   "id": "8694430c3bcd",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Grocery Giant Ahold Delhaize Estimates Financial Toll of October Cyberattack",
-   "link": "https://www.securityweek.com/grocery-giant-ahold-delhaize-estimates-financial-toll-of-october-cyberattack/",
-   "published": "2026-11-06T12:47:55+00:00",
-   "summary": "The October incident will cut fourth-quarter sales by up to €250 million and has led Ahold Delhaize to lower its 2026 outlook. The post Grocery Giant Ahold Delhaize Estimates Financial Toll of October Cyberattack appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2024/11/Ahold-Delhaize-cyberattack.jpeg",
-   "cves": [],
-   "first_seen": "2026-11-06T13:54:07.503835+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Scroll to continue reading. “As part of our protocols to assess and mitigate cybersecurity incidents, we took some systems offline to help protect our IT environment.",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "b8a4eb8ff314",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -7674,28 +7726,6 @@
    "instructions_checked": true
   },
   {
-   "id": "222613d43ca7",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "OpenSSH Rushes Patches for ‘SSHole’ Authentication Bypass",
-   "link": "https://www.securityweek.com/openssh-rushes-patches-for-sshole-authentication-bypass/",
-   "published": "2026-11-06T12:07:42+00:00",
-   "summary": "On Linux distributions using musl libc without PAM, some accounts accept any password between 257 and 1024 characters. The post OpenSSH Rushes Patches for ‘SSHole’ Authentication Bypass appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/11/SSH.webp",
-   "cves": [],
-   "first_seen": "2026-11-06T12:37:43.134961+00:00",
-   "image_checked": true,
-   "instructions": [
-    "If your organization is affected, update to the latest version where possible, and disable password-based authentication as a temporary mitigation if you can’t,” WatchTowr head of threat intelligence Jake Knott said.",
-    "Some accounts, such as root, should never accept a password, but in Linux distributions such as Alpine, OpenWrt, Buildroot, Yocto, and others, they do, Wakefield security researcher Özgün Kültekin says.",
-    "Android’s November 2026 Updates Patch Over 200 Vulnerabilities",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "e7a8a4d2bbbe",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -7781,26 +7811,6 @@
    "instructions_checked": true
   },
   {
-   "id": "cc8d32ac462d",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Researchers Find Residential Proxies on White House Network",
-   "link": "https://www.securityweek.com/researchers-find-residential-proxies-on-white-house-network/",
-   "published": "2026-11-06T12:16:13+00:00",
-   "summary": "In a month, 28 residential proxy services used 6 addresses, mainly between 5 p.m. and midnight, Eastern Time. The post Researchers Find Residential Proxies on White House Network appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2025/01/Whitehouse-Cybersecurity.jpg",
-   "cves": [],
-   "first_seen": "2026-11-06T12:37:43.134961+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Android’s November 2026 Updates Patch Over 200 Vulnerabilities",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "7cf7e23f8890",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -7836,6 +7846,27 @@
    "instructions": [
     "Since the scheduled October 2026 security patches, SAP released new notes dealing with the recently disclosed PHP2Shell and Node2Shell vulnerabilities in its Business AI Platform and updated several other notes and advisories.",
     "Chrome Update Patches Exploited XML Zero-Day, Eighth This Year",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "527326996071",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "SilentAir Hackers Intercept Calls, SMS From Inside Mobile Networks",
+   "link": "https://www.securityweek.com/silentair-hackers-intercept-calls-sms-from-inside-mobile-networks/",
+   "published": "2026-11-13T12:20:28+00:00",
+   "summary": "Enea says SilentAir hijacked mobile network nodes to intercept calls and messages, with Taiwanese subscribers the primary targets. The post SilentAir Hackers Intercept Calls, SMS From Inside Mobile Networks appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2024/12/telecoms-communications.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-13T13:05:18.402714+00:00",
+   "image_checked": true,
+   "instructions": [
+    "ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure",
+    "Chipmaker Patch Tuesday: Over 200 Vulnerabilities Addressed by Intel, AMD",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
@@ -7928,28 +7959,6 @@
    "instructions": [
     "Burnout Is a Security Risk (2:00 PM ET) – Patrick Kelley, CISO & Founder of Critical Path Security, will provide a vital playbook for measuring and mitigating team fatigue before it leads to a security incident.",
     "Chrome Update Patches Exploited XML Zero-Day, Eighth This Year",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "3450626e3180",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "US Agencies Urge Organizations to Harden Refrigeration Controllers",
-   "link": "https://www.securityweek.com/us-agencies-urge-organizations-to-harden-refrigeration-controllers/",
-   "published": "2026-11-06T13:02:26+00:00",
-   "summary": "The recommendations come amid attacks targeting fridges and freezers in supermarkets and blood banks in Europe. The post US Agencies Urge Organizations to Harden Refrigeration Controllers appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/11/freezer-refrigeration.jpeg",
-   "cves": [],
-   "first_seen": "2026-11-06T13:54:07.503835+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Per the US government’s recommendations, taking the control systems off the internet is the best action organizations can take to prevent attacks.",
-    "If web access is necessary, these systems should be protected by a firewall or edge device.",
-    "Organizations should also isolate OT devices, restrict access to trusted identities, enforce strong password policies and phishing-resistant multifactor authentication, keep systems updated, maintain backups offsite, and enable logging and monitoring.",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
