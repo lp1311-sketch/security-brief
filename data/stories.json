@@ -4255,6 +4255,26 @@
    "instructions_checked": true
   },
   {
+   "id": "f0f23fdb08d7",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "FBI flash alert says Artex tool automating cyberattacks at ‘machine speed’",
+   "link": "https://therecord.media/artex-ai-tool-fbi-flash-alert",
+   "published": "2026-11-13T21:32:00+00:00",
+   "summary": "Open source hacking tool Artex \"significantly reduces the time required to chain attack techniques, with some intrusions progressing from initial targeting to privileged access in under three hours,\" the FBI said.",
+   "image": "https://cms.therecord.media/uploads/fbi_1_c4c06390db.jpg",
+   "cves": [],
+   "first_seen": "2026-11-13T22:08:27.509684+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Open-source AI platform Artex is being used prolifically by cybercriminals and nation-states to breach government agencies and dozens of critical sectors worldwide, according to a new FBI advisory.",
+    "The advisory cites recent research from cybersecurity firm Censys showing over 1,600 publicly exposed Artex console instances, with total deployments likely significantly higher when including systems behind firewalls or in private networks."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "e71bf5215ff1",
    "source": "therecord",
    "source_name": "The Record",
@@ -6525,22 +6545,6 @@
    "instructions_checked": true
   },
   {
-   "id": "b63212099f3b",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "UK Wades Into Tech Sovereignty Amid AI Policy Changes",
-   "link": "https://www.darkreading.com/cybersecurity-operations/uk-tech-sovereignty-ai-policy",
-   "published": "2026-11-06T21:27:36+00:00",
-   "summary": "The UK is betting on domestic AI and cyber investment to reduce reliance on US tech — but security leaders question whether the funding is too fragmented and too late.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt657a1273b2714e2a/6aee1af430222a6f81ad8ea8/ukmap-da-kuk-Getty-1368022904.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-06T22:23:17.218839+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "43b2bb31ce77",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -6779,6 +6783,29 @@
    "instructions_checked": true
   },
   {
+   "id": "78498214505c",
+   "source": "msblog",
+   "source_name": "Microsoft Security Blog",
+   "official": false,
+   "source_type": "vendor_blog",
+   "title": "SCKit abuses ScreenConnect to deploy remote access and target technician sessions",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/13/sckit-abuses-screenconnect-deploy-remote-access-target-technician-sessions/",
+   "published": "2026-11-13T21:31:44+00:00",
+   "summary": "Beginning on November 11, 2026, ConnectWise reported an active campaign of a threat actor gaining unauthorized access to cloud-hosted ConnectWise ScreenConnect instances belonging to managed service providers (MSPs). Microsoft Threat Intelligence has confirmed ConnectWise’s reported activity and we have also observed…",
+   "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/11/image-38.webp",
+   "cves": [
+    "CVE-2026-84869"
+   ],
+   "first_seen": "2026-11-13T22:08:27.509684+00:00",
+   "instructions": [
+    "Defenders should investigate technician workstations and downstream affected endpoints.",
+    "In this blog, we examine SCKit’s attack chain and payload components and provide mitigation guidance, indicators of compromise, and Microsoft Defender XDR advanced hunting queries to help organizations identify and disrupt this activity.",
+    "ConnectWise’s advisory describes a reported authentication flaw in RMM+ versions 1.0.31 and 1.0.32: when no access key was configured, the extension accepted an empty key.",
+    "Follow the vendor advisory for Labtech Plus, RMM Plus, RMM+, RMM Plus Password Link, and RMM+ Password Link."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "f5b71ee6de0e",
    "source": "schneier",
    "source_name": "Schneier on Security",
@@ -6837,18 +6864,18 @@
    "instructions_checked": true
   },
   {
-   "id": "46c76064dfeb",
+   "id": "26bc7212e5d9",
    "source": "schneier",
    "source_name": "Schneier on Security",
    "official": false,
    "source_type": "news",
-   "title": "Friday Squid Blogging: New Jurassic Squid Predecessors",
-   "link": "https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-new-jurassic-squid-predecessors.html",
-   "published": "2026-11-06T22:05:12+00:00",
-   "summary": "News story: “ Scientists discover a bizarre Jurassic ‘squid’ unlike anything ever seen.” Scientists have identified the “fattest” belemnite ever discovered, a bizarre, barrel-shaped squid relative that lived in Wyoming’s ancient seas 160 million years ago. The exceptionally rare fossils reveal a creature unlike…",
+   "title": "Friday Squid Blogging: Pacific Flying Squid Populations Dropping in Korean Waters",
+   "link": "https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-pacific-flying-squid-populations-dropping-in-korean-waters.html",
+   "published": "2026-11-13T22:00:46+00:00",
+   "summary": "Climate change is the issue. As usual, you can also use this squid post to talk about the security stories in the news that I haven’t covered. Blog moderation policy.",
    "image": null,
    "cves": [],
-   "first_seen": "2026-11-06T22:23:17.218839+00:00",
+   "first_seen": "2026-11-13T22:08:27.509684+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -7334,6 +7361,25 @@
     "Microsoft’s advisory credits a researcher using the moniker ‘nono’ and Benoît Sevens with the discovery.",
     "Microsoft’s November 2026 Patch Tuesday updates fix 1,094 vulnerabilities across its products, including an Outlook bug that the company says has been exploited.",
     "Adobe’s latest Patch Tuesday updates fix roughly 110 vulnerabilities across nine products."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "11d7cc16194d",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "FAA Ground Stop Issued Due to ‘Extraordinary Circumstances’",
+   "link": "https://www.securityweek.com/faa-ground-stop-issued-due-to-extraordinary-circumstances/",
+   "published": "2026-11-13T21:33:27+00:00",
+   "summary": "Federal officials have yet to say what caused the communications disruption or whether they are investigating a possible cyberattack. The post FAA Ground Stop Issued Due to ‘Extraordinary Circumstances’ appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/11/FAA_Cyberattack-Ground-Stop.jpg",
+   "cves": [],
+   "first_seen": "2026-11-13T22:08:27.509684+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
   },
