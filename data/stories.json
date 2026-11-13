@@ -419,6 +419,27 @@
    "instructions_checked": true
   },
   {
+   "id": "5a3a63c1bcb3",
+   "source": "borncity",
+   "source_name": "Born's IT and Windows Blog",
+   "official": false,
+   "source_type": "news",
+   "title": "SQL Server-Connection bleibt nach Windows (Okt. 2026) Update offen",
+   "link": "https://borncity.com/blog/2026/11/14/sql-server-connection-bleibt-nach-windows-okt-2026-update-offen/",
+   "published": "2026-11-13T23:02:01+00:00",
+   "summary": "Die ab Oktober 2026 (Patchday) von Microsoft veröffentlichten Windows-Updates bewirken, dass SQL Server-Verbindungen nicht mehr beendet werden, wie Microsoft bestätigt hat. SQL Server-Verbindungen bleiben offen Microsoft hat im Support-Beitrag SQL Server linked server connections might remain open bestätigt, dass…",
+   "image": "https://borncity.com/blog/wp-content/uploads/2025/10/bug05.jpg",
+   "cves": [],
+   "first_seen": "2026-11-13T23:05:37.437281+00:00",
+   "image_checked": true,
+   "instructions": [
+    "November 2026) Windows 11 25H2 – 26H2: Preview Update KB5127936 (28.",
+    "Microsoft will dieses Problem in den nächsten Tagen mit einem außerplanmäßigen Update beheben.",
+    "Aus dem DNV-Netzwerk iPhone-Netzwerk-Reset: WLAN-Passwörter weg, MDM-Profile bleiben erhalten News 13."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "453a571c3295",
    "source": "grahamcluley",
    "source_name": "Graham Cluley",
@@ -1068,6 +1089,25 @@
    "instructions_checked": true
   },
   {
+   "id": "bc4f0e4f288a",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-113749 Microsoft Windows Codecs Library Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-113749",
+   "published": "2026-11-13T16:00:00+00:00",
+   "summary": "Added Microsoft Office software to the Security Updates table. Customers that are running supported version of Microsoft Office are encouraged to update to the indicated version to be protected from this vulnerability.",
+   "image": null,
+   "cves": [
+    "CVE-2026-113749"
+   ],
+   "first_seen": "2026-11-13T23:05:37.437281+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "ebc44fed255b",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -1712,6 +1752,279 @@
    "instructions": [],
    "instructions_checked": true,
    "image_checked": true
+  },
+  {
+   "id": "f9ccc4bbd374",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "Chromium CVE-2026-125342: Uninitialized resource",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-125342",
+   "published": "2026-11-13T16:00:00+00:00",
+   "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+   "image": null,
+   "cves": [
+    "CVE-2026-125342"
+   ],
+   "first_seen": "2026-11-13T23:05:37.437281+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "4e9c644242c4",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "Chromium CVE-2026-125344: Type confusion",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-125344",
+   "published": "2026-11-13T16:00:00+00:00",
+   "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+   "image": null,
+   "cves": [
+    "CVE-2026-125344"
+   ],
+   "first_seen": "2026-11-13T23:05:37.437281+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "ff5c8c8f194a",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "Chromium CVE-2026-125348: Out of bounds write",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-125348",
+   "published": "2026-11-13T16:00:00+00:00",
+   "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+   "image": null,
+   "cves": [
+    "CVE-2026-125348"
+   ],
+   "first_seen": "2026-11-13T23:05:37.437281+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "f145d755f815",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "Chromium CVE-2026-126840: Out of bounds write",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126840",
+   "published": "2026-11-13T16:00:00+00:00",
+   "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+   "image": null,
+   "cves": [
+    "CVE-2026-126840"
+   ],
+   "first_seen": "2026-11-13T23:05:37.437281+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "bc3657d8b9a0",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "Chromium CVE-2026-126841: Out of bounds read",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126841",
+   "published": "2026-11-13T16:00:00+00:00",
+   "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+   "image": null,
+   "cves": [
+    "CVE-2026-126841"
+   ],
+   "first_seen": "2026-11-13T23:05:37.437281+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "f589090c5856",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "Chromium CVE-2026-126843: Type confusion",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126843",
+   "published": "2026-11-13T16:00:00+00:00",
+   "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+   "image": null,
+   "cves": [
+    "CVE-2026-126843"
+   ],
+   "first_seen": "2026-11-13T23:05:37.437281+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "a6d4478f08e6",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "Chromium CVE-2026-126844: Uninitialized resource",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126844",
+   "published": "2026-11-13T16:00:00+00:00",
+   "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+   "image": null,
+   "cves": [
+    "CVE-2026-126844"
+   ],
+   "first_seen": "2026-11-13T23:05:37.437281+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "1336803df047",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "Chromium CVE-2026-126845: Uninitialized resource",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126845",
+   "published": "2026-11-13T16:00:00+00:00",
+   "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+   "image": null,
+   "cves": [
+    "CVE-2026-126845"
+   ],
+   "first_seen": "2026-11-13T23:05:37.437281+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "a8225629afd4",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "Chromium CVE-2026-126847: Type confusion",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126847",
+   "published": "2026-11-13T16:00:00+00:00",
+   "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+   "image": null,
+   "cves": [
+    "CVE-2026-126847"
+   ],
+   "first_seen": "2026-11-13T23:05:37.437281+00:00"
+  },
+  {
+   "id": "f09cf9a98434",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "Chromium CVE-2026-126848: Uninitialized resource",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126848",
+   "published": "2026-11-13T16:00:00+00:00",
+   "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+   "image": null,
+   "cves": [
+    "CVE-2026-126848"
+   ],
+   "first_seen": "2026-11-13T23:05:37.437281+00:00"
+  },
+  {
+   "id": "aa1fcb3a6520",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "Chromium CVE-2026-126849: Type confusion",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126849",
+   "published": "2026-11-13T16:00:00+00:00",
+   "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+   "image": null,
+   "cves": [
+    "CVE-2026-126849"
+   ],
+   "first_seen": "2026-11-13T23:05:37.437281+00:00"
+  },
+  {
+   "id": "673fdfd632ff",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "Chromium CVE-2026-126851: Use after free",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126851",
+   "published": "2026-11-13T16:00:00+00:00",
+   "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+   "image": null,
+   "cves": [
+    "CVE-2026-126851"
+   ],
+   "first_seen": "2026-11-13T23:05:37.437281+00:00"
+  },
+  {
+   "id": "b0619e1b336a",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "Chromium CVE-2026-126852: Use after free",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126852",
+   "published": "2026-11-13T16:00:00+00:00",
+   "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+   "image": null,
+   "cves": [
+    "CVE-2026-126852"
+   ],
+   "first_seen": "2026-11-13T23:05:37.437281+00:00"
+  },
+  {
+   "id": "c3db5c38e582",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "Chromium CVE-2026-126853: Uninitialized resource",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126853",
+   "published": "2026-11-13T16:00:00+00:00",
+   "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+   "image": null,
+   "cves": [
+    "CVE-2026-126853"
+   ],
+   "first_seen": "2026-11-13T23:05:37.437281+00:00"
+  },
+  {
+   "id": "d13a63a624c8",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "Chromium CVE-2026-126854: Incorrect authorization",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126854",
+   "published": "2026-11-13T16:00:00+00:00",
+   "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+   "image": null,
+   "cves": [
+    "CVE-2026-126854"
+   ],
+   "first_seen": "2026-11-13T23:05:37.437281+00:00"
+  },
+  {
+   "id": "d1313a6ee7cd",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "Chromium CVE-2026-126856: Incomplete cleanup",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126856",
+   "published": "2026-11-13T16:00:00+00:00",
+   "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+   "image": null,
+   "cves": [
+    "CVE-2026-126856"
+   ],
+   "first_seen": "2026-11-13T23:05:37.437281+00:00"
   },
   {
    "id": "21e9c172b942",
@@ -2854,6 +3167,25 @@
    "image_checked": true
   },
   {
+   "id": "20b9366d21f0",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-88217 Windows Graphics Kernel Information Disclosure Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88217",
+   "published": "2026-11-13T16:00:00+00:00",
+   "summary": "Added Microsoft Office software to the Security Updates table. Customers that are running supported version of Microsoft Office are encouraged to update to the indicated version to be protected from this vulnerability.",
+   "image": null,
+   "cves": [
+    "CVE-2026-88217"
+   ],
+   "first_seen": "2026-11-13T23:05:37.437281+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "60dbfcb238d0",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -2868,6 +3200,158 @@
     "CVE-2026-94522"
    ],
    "first_seen": "2026-11-13T18:11:27.621519+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "4a36f44bc13a",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-95922 Windows Graphics Kernel Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95922",
+   "published": "2026-11-13T16:00:00+00:00",
+   "summary": "Added Microsoft Office software to the Security Updates table. Customers that are running supported version of Microsoft Office are encouraged to update to the indicated version to be protected from this vulnerability.",
+   "image": null,
+   "cves": [
+    "CVE-2026-95922"
+   ],
+   "first_seen": "2026-11-13T23:05:37.437281+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "36273c8a5b43",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-95932 Windows Graphics Kernel Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95932",
+   "published": "2026-11-13T16:00:00+00:00",
+   "summary": "Added Microsoft Office software to the Security Updates table. Customers that are running supported version of Microsoft Office are encouraged to update to the indicated version to be protected from this vulnerability.",
+   "image": null,
+   "cves": [
+    "CVE-2026-95932"
+   ],
+   "first_seen": "2026-11-13T23:05:37.437281+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "c290f64ed407",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-95942 Windows Graphics Kernel Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95942",
+   "published": "2026-11-13T16:00:00+00:00",
+   "summary": "Added Microsoft Office software to the Security Updates table. Customers that are running supported version of Microsoft Office are encouraged to update to the indicated version to be protected from this vulnerability.",
+   "image": null,
+   "cves": [
+    "CVE-2026-95942"
+   ],
+   "first_seen": "2026-11-13T23:05:37.437281+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "56270f5b6a13",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-95948 Windows Graphics Kernel Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95948",
+   "published": "2026-11-13T16:00:00+00:00",
+   "summary": "Added Microsoft Office software to the Security Updates table. Customers that are running supported version of Microsoft Office are encouraged to update to the indicated version to be protected from this vulnerability.",
+   "image": null,
+   "cves": [
+    "CVE-2026-95948"
+   ],
+   "first_seen": "2026-11-13T23:05:37.437281+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "0e799fe46691",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-95953 Windows Graphics Kernel Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95953",
+   "published": "2026-11-13T16:00:00+00:00",
+   "summary": "Added Microsoft Office software to the Security Updates table. Customers that are running supported version of Microsoft Office are encouraged to update to the indicated version to be protected from this vulnerability.",
+   "image": null,
+   "cves": [
+    "CVE-2026-95953"
+   ],
+   "first_seen": "2026-11-13T23:05:37.437281+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "fc10a8e15ebc",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-96126 Windows Graphics Kernel Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96126",
+   "published": "2026-11-13T16:00:00+00:00",
+   "summary": "Added Microsoft Office software to the Security Updates table. Customers that are running supported version of Microsoft Office are encouraged to update to the indicated version to be protected from this vulnerability.",
+   "image": null,
+   "cves": [
+    "CVE-2026-96126"
+   ],
+   "first_seen": "2026-11-13T23:05:37.437281+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "85f0b97d9050",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-96144 Windows Graphics Kernel Information Disclosure Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96144",
+   "published": "2026-11-13T16:00:00+00:00",
+   "summary": "Added Microsoft Office software to the Security Updates table. Customers that are running supported version of Microsoft Office are encouraged to update to the indicated version to be protected from this vulnerability.",
+   "image": null,
+   "cves": [
+    "CVE-2026-96144"
+   ],
+   "first_seen": "2026-11-13T23:05:37.437281+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "78e2b428b487",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-96150 Microsoft Windows Codecs Library Information Disclosure Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96150",
+   "published": "2026-11-13T16:00:00+00:00",
+   "summary": "Added Microsoft Office software to the Security Updates table. Customers that are running supported version of Microsoft Office are encouraged to update to the indicated version to be protected from this vulnerability.",
+   "image": null,
+   "cves": [
+    "CVE-2026-96150"
+   ],
+   "first_seen": "2026-11-13T23:05:37.437281+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -5936,25 +6420,6 @@
    "instructions_checked": true
   },
   {
-   "id": "b99b441690fc",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Runaway AI hacking agent behind WorkOS breach after escaping sandbox",
-   "link": "https://www.bleepingcomputer.com/news/security/runaway-ai-hacking-agent-behind-workos-breach-after-escaping-sandbox/",
-   "published": "2026-11-06T22:27:25+00:00",
-   "summary": "WorkOS says an AI-powered hacking agent that breached its internal sales application and accessed customer information was operated by a security researcher who claims the tool escaped its testing environment and unintentionally attacked the company.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/03/workos.jpg",
-   "cves": [],
-   "first_seen": "2026-11-06T23:06:12.108138+00:00",
-   "image_checked": true,
-   "instructions": [
-    "However, in a new security update published Friday, WorkOS founder Michael Grinich revealed that the person responsible had come forward and claimed the incident was accidental."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "073e03d22dae",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -6605,6 +7070,22 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt850556f866500627/654a5a8e05eb4d040a046894/325351_DR23_Graphics_General_Large_Text_v1.png?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-10T21:10:58.117182+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "e12779d5806a",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "ArcticRAT Cybercrime Gang Profiles Victim Finances With AI",
+   "link": "https://www.darkreading.com/mobile-security/arcticrat-cybercrime-gang-profiles-victim-finances-ai",
+   "published": "2026-11-13T20:20:27+00:00",
+   "summary": "The Android malware has expanded from focusing on crypto theft to full device control, and the attackers have added advanced analysis of stolen information.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt876ae2249da592eb/6af77117471ce44823395b3f/smartphone_Ao_Zaa_Studio_shutterstock.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-13T23:05:37.437281+00:00",
    "instructions": [],
    "instructions_checked": true
   },
