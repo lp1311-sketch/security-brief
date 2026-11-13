@@ -1,6 +1,20 @@
 {
  "items": [
   {
+   "id": "fadabe4369a5",
+   "title": "MC1551001: Prevent issues with NetApp SMB shares: Learn about new Windows Server security requirements",
+   "link": "https://mc.merill.net/message/MC1551001",
+   "summary": "What and why:Microsoft introduced additional security requirements for LDAP authentication on Active Directory domain controllers starting with the October 13, 2026, Windows security updates. These changes require Kerberos service tickets used for LDAP authentication to match the LDAP service principal name SPNSPN…",
+   "published": "2026-11-12T22:55:55+00:00"
+  },
+  {
+   "id": "fc9384f4ebef",
+   "title": "MC1491832: (UPDATED) Take action to prevent RD Web Access rendering failures",
+   "link": "https://mc.merill.net/message/MC1491832",
+   "summary": "Updated November 12, 2026: We are informing regarding November updates for Windows Server which address this change. What and why:The Remote Desktop Web Access (RD Web Access) experience included with Windows Server relies on Extensible Stylesheet Language Transformations (XSLT) to render its web interface. Across the…",
+   "published": "2026-11-12T22:55:53+00:00"
+  },
+  {
    "id": "5ad4038f47d5",
    "title": "MC1550797: 60-day reminder: Hardening changes for ReFS volumes on removable media",
    "link": "https://mc.merill.net/message/MC1550797",
@@ -405,20 +419,6 @@
    "link": "https://mc.merill.net/message/MC1486291",
    "summary": "Microsoft 365 Copilot introduces an optional, admin-led guided onboarding experience for Frontier participants, rolling out late October to November 2026. It personalizes training based on user roles and licenses, requires admin enablement, and supports reporting via Viva Learning to boost adoption and confidence.",
    "published": "2026-11-06T21:20:50+00:00"
-  },
-  {
-   "id": "c4d5edc1ff0c",
-   "title": "MC1519843: New Outlook for Windows: All Accounts view brings email into a single inbox view",
-   "link": "https://mc.merill.net/message/MC1519843",
-   "summary": "The new Outlook for Windows offers an All Accounts (Unified Inbox) view, letting users see and manage emails from multiple accounts in one inbox without merging mailboxes. Admins can control this feature via a policy in the Microsoft 365 Apps admin center, enabling or disabling it and user override options.",
-   "published": "2026-11-06T21:05:46+00:00"
-  },
-  {
-   "id": "2e6b2a2a900e",
-   "title": "MC1193692: Microsoft 365: Enrich profile cards with custom properties from third-party systems",
-   "link": "https://mc.merill.net/message/MC1193692",
-   "summary": "Starting January 2027, Microsoft 365 admins can add up to 10 custom properties from external systems to profile cards via Microsoft Graph People connectors. This feature is off by default, requires admin setup, and enhances user profiles for better collaboration. Future updates will support SAP SuccessFactors and…",
-   "published": "2026-11-06T18:23:42+00:00"
   }
  ]
 }

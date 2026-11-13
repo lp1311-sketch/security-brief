@@ -4199,28 +4199,6 @@
    "instructions_checked": true
   },
   {
-   "id": "0da6cf00fb54",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "EU accuses TikTok of trapping users in harmful ‘rabbit holes’",
-   "link": "https://therecord.media/eu-accuses-tiktok-of-rabbit-hole-DSA-violation",
-   "published": "2026-11-06T00:00:00+00:00",
-   "summary": "The European Commission accused TikTok on Friday of failing to prevent its recommendation algorithm from drawing users into “rabbit holes” of content about sadness, self-harm and body image.",
-   "image": "https://cms.therecord.media/uploads/Tik_Tok_15cf1b61e9.jpg",
-   "cves": [],
-   "first_seen": "2026-11-06T11:34:48.239740+00:00",
-   "image_checked": true,
-   "instructions": [
-    "The European Commission accused TikTok on Friday of failing to prevent its recommendation algorithm from drawing users into “rabbit holes” of content about sadness, self-harm and body image.",
-    "European officials said their findings were the first time EU regulators have directly challenged the engagement-based recommendation system of a major social media platform, and, to their knowledge, was the first enforcement action of its kind worldwide.",
-    "“The more a user interacts with a certain type of content, the more TikTok’s ‘For You’ feed algorithm recommends similar content.",
-    "In particular, the Commission said it wants TikTok to base its algorithmic recommendations on what users explicitly say they want rather than on implicit signals such as how long they view videos for."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "504c4dbc535b",
    "source": "therecord",
    "source_name": "The Record",
@@ -6452,27 +6430,6 @@
    "cves": [],
    "first_seen": "2026-11-10T22:45:40.406649+00:00",
    "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "e2845eccbac1",
-   "source": "msblog",
-   "source_name": "Microsoft Security Blog",
-   "official": false,
-   "source_type": "vendor_blog",
-   "title": "Threat actors use agentic AI tooling to find and abuse exposed secrets",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/05/threat-actors-use-agentic-ai-tooling-to-find-and-abuse-exposed-secrets/",
-   "published": "2026-11-05T23:46:50+00:00",
-   "summary": "Microsoft Threat Intelligence has observed threat actors using an agentic AI offensive framework to search public GitHub repositories for exposed secrets, including credentials, application credentials, and AI inference-related API keys across multiple applications and cloud services. These threat actors can then use…",
-   "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/11/AI-tooling-scanning-secrets-attack-chain.webp",
-   "cves": [],
-   "first_seen": "2026-11-06T03:14:24.231642+00:00",
-   "instructions": [
-    "Microsoft recommends the following mitigation steps to contain, detect, and investigate this threat.",
-    "Microsoft recommends the following mitigations to reduce the impact of this threat.",
-    "In addition to removing the secrets from the code base, affected organizations should immediately rotate any exposed keys or credentials.",
-    "Microsoft recommends that developers migrate OAuth applications away from secret-based authentication ."
-   ],
    "instructions_checked": true
   },
   {
