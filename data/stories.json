@@ -3444,7 +3444,7 @@
    "title": "Hackers Exploit PHP2Shell Flaws in Check Point Gateways to Deploy TSGA Backdoor and Wipe ESXi Files",
    "link": "https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html",
    "published": "2026-11-13T08:05:49+00:00",
-   "summary": "An unknown threat actor has been observed targeting unpatched Check Point Security Gateways to obtain initial access via the PHP2Shell vulnerabilities and then a previously reported local privilege escalation flaw in Gaia OS to deploy a backdoor called TSGA. The activity, detailed by Check Point, began on October 30…",
+   "summary": "An unknown threat actor has been observed targeting unpatched Check Point Security Gateways to obtain initial access via the PHP2Shell vulnerabilities and then a previously unreported local privilege escalation flaw in Gaia OS to deploy a backdoor called TSGA. The activity, detailed by Check Point, began on October…",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjP3B9ZQG1BXlSPUWzwVJ5qgwh899Ngm9u2GAbWiX5HDqhhT6q6gsmva9-TR2upR0fepas2i0k53VUxh1CH21LeUUv1Ipczl9huExytcqNdlqIoHP64CRYJuGyHe-OgLoov-JR6GziUT4JDJ92Ne83CshfWn9pr9Bt2HPKkv4phQJ2esJHcV6eZqzRretVu/s1600/php.jpg",
    "cves": [],
    "first_seen": "2026-11-13T08:57:41.471516+00:00",
@@ -4660,6 +4660,28 @@
    "instructions_checked": true
   },
   {
+   "id": "8762a201a24f",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Microsoft confirms Windows activation failures after November updates",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-windows-activation-failures-after-november-updates/",
+   "published": "2026-11-13T09:36:18+00:00",
+   "summary": "Microsoft has confirmed that this month's Patch Tuesday security updates are causing Windows activation and licensing failures with 0x80041008 error codes.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/12/0_Windows.jpg",
+   "cves": [],
+   "first_seen": "2026-11-13T09:58:44.953778+00:00",
+   "image_checked": true,
+   "instructions": [
+    "While a fix will be available over the coming days, Microsoft advised affected organizations that need immediate mitigation to reach out to Microsoft Support for business .",
+    "Microsoft has confirmed that this month's Patch Tuesday security updates are causing Windows activation and licensing failures with 0x80041008 error codes.",
+    "\"Affected devices might encounter error 0x80041008, Invalid parameter (SWbemObjectEx), when running commands to activate Windows, configure Key Management Service (KMS), or manage product keys,\" Microsoft said.",
+    "This week, it also confirmed that the November 2026 Windows 11 security updates fail to install on systems with the October 2026 preview update and that Windows updates released since the October Patch Tuesday are triggering SQL Server performance and stability issues ."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "6cc651115394",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -5404,26 +5426,6 @@
     "\"As always, please treat any unexpected communications claiming to relate to this matter with caution and verify them through your usual Maersk contact,\" the company advises.",
     "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day",
     "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "3a8f9a3bb5fd",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "MetaMask says recent attack didn't affect wallet infrastructure",
-   "link": "https://www.bleepingcomputer.com/news/security/metamask-says-recent-attack-didnt-affect-wallet-infrastructure/",
-   "published": "2026-11-06T09:22:28+00:00",
-   "summary": "Cryptocurrency wallet provider MetaMask said a recent security incident has not affected MetaMask wallets or its wallet infrastructure.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/06/Metamask.jpg",
-   "cves": [],
-   "first_seen": "2026-11-06T09:42:44.269873+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Customers whose staking arrangements were affected should follow any guidance provided directly by MetaMask or their staking provider.\"",
-    "Last month, Ledger also asked Asian resellers and distributors to halt wallet sales and remove products from shelves while it was investigating multiple hardware implant incidents."
    ],
    "instructions_checked": true
   },
@@ -6317,22 +6319,6 @@
    "instructions_checked": true
   },
   {
-   "id": "67dcad135390",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "UK Warns Its Critical Infrastructure Faces Grave Risk",
-   "link": "https://www.darkreading.com/cybersecurity-operations/uk-warns-critical-infrastructure-grave-risk",
-   "published": "2026-11-06T09:00:00+00:00",
-   "summary": "Britain's new Labour-led government is making a concerted push to get ahead of the AI risks to its national networks and the industrial complex.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltd1a5d5b4d8cd4518/6aeca4d40d4c553177f0d3a4/UK_parliament-georgeclerk-Getty.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-06T09:42:44.269873+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "43b2bb31ce77",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -6991,6 +6977,27 @@
    "instructions_checked": true
   },
   {
+   "id": "d20b2da13e92",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Citrix Patches 10 Critical NetScaler Vulnerabilities",
+   "link": "https://www.securityweek.com/citrix-patches-10-critical-netscaler-vulnerabilities/",
+   "published": "2026-11-13T09:36:56+00:00",
+   "summary": "Successful exploitation could lead to unexpected behavior or denial-of-service (DoS) conditions. The post Citrix Patches 10 Critical NetScaler Vulnerabilities appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/08/Citrix-vulnerability.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-13T09:58:44.953778+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Citrix urges customers to update their instances as soon as possible, and details CVE preconditions associated with some of the vulnerabilities.",
+    "Citrix, Ivanti Patch Critical and High-Severity Vulnerabilities",
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "3773dc5512fb",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -7585,25 +7592,6 @@
    "instructions_checked": true
   },
   {
-   "id": "3a73b8fccf35",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "OpenAI Model Wrote Its Own Network Code to Get Around Sandbox Restrictions",
-   "link": "https://www.securityweek.com/openai-model-wrote-its-own-network-code-to-get-around-sandbox-restrictions/",
-   "published": "2026-11-06T09:33:51+00:00",
-   "summary": "After its sandbox proxy failed, an internal OpenAI model crafted raw packets and probed AWS services trying to reach the internet. The post OpenAI Model Wrote Its Own Network Code to Get Around Sandbox Restrictions appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2023/01/Cybersecurity_News-SecurityWeek.jpg",
-   "cves": [],
-   "first_seen": "2026-11-06T10:43:04.674605+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "3ae40aec285b",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -7618,6 +7606,27 @@
    "first_seen": "2026-11-06T13:54:07.503835+00:00",
    "image_checked": true,
    "instructions": [
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "e4b47e3b9b3e",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "OpenAI Unveils Daybreak Red Team, Defense Factory Security Tools",
+   "link": "https://www.securityweek.com/openai-unveils-daybreak-red-team-defense-factory-security-tools/",
+   "published": "2026-11-13T09:21:01+00:00",
+   "summary": "Daybreak Red Team pentests web applications with AI agents, while Defense Factory investigates security findings and prepares patches. The post OpenAI Unveils Daybreak Red Team, Defense Factory Security Tools appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/11/OpenAI.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-13T09:58:44.953778+00:00",
+   "image_checked": true,
+   "instructions": [
+    "ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure",
+    "Chipmaker Patch Tuesday: Over 200 Vulnerabilities Addressed by Intel, AMD",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
