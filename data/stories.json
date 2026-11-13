@@ -374,12 +374,34 @@
    "instructions_checked": true
   },
   {
+   "id": "87c81e4666ca",
+   "source": "borncity",
+   "source_name": "Born's IT and Windows Blog",
+   "official": false,
+   "source_type": "news",
+   "title": "Patchday: Windows Error 0x80070306, 0x800f0989, 0x800f0993 bestätigt (Nov. 2026)",
+   "link": "https://borncity.com/blog/2026/11/13/patchday-windows-error-0x80070306-0x800f0989-0x800f0993-bestaetigt-nov-2026/",
+   "published": "2026-11-13T05:26:54+00:00",
+   "summary": "Am 10. November 2026 (Patchday) wurden von Microsoft kumulative Updates für die Clients und Serverversionen seiner Windows Betriebssysteme veröffentlicht. Diese Sicherheitsupdates für Microsoft Windows führen aber in einigen Fällen bei der Installation zu den Fehlern 0x80070306, 0x800f0989, 0x800f0993, und Microsoft ……",
+   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Windows-klein.jpg",
+   "cves": [],
+   "first_seen": "2026-11-13T05:41:52.314639+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Für das Windows 11 Update KB5132061 findet sich im Known Issues-Abschnitt der Hinweis:",
+    "Es heißt, dass beim Versuch, das Windows-Sicherheitsupdate vom November 2026 zu installieren, verlinkt ist dort aber das Vorschau-Update KB5127936 von Oktober 2026, einige Geräte die Installation möglicherweise nicht abschließen können.",
+    "November 2026) Windows 11 25H2 – 26H2: Preview Update KB5127936 (28.",
+    "Blog-Leser Volker hat es in diesem Kommentar die Fehler 0x800f0993 und 0x80070306 bei der Update-Installation angesprochen und schreibt \"Das Update hängt bei 14% – 17% Installation, dann bricht es ab\"."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "87359d547fe5",
    "source": "borncity",
    "source_name": "Born's IT and Windows Blog",
    "official": false,
    "source_type": "news",
-   "title": "Windows-Aktivierungs- und Lizenzierungs-Error 0x80041008 bestätigt (Nov. 2026)",
+   "title": "Patchday: Windows-Aktivierungs- und Lizenzierungs-Error 0x80041008 bestätigt (Nov. 2026)",
    "link": "https://borncity.com/blog/2026/11/13/windows-aktivierungs-und-lizenzierungs-error-0x80041008-bestaetigt-nov-2026/",
    "published": "2026-11-12T23:07:41+00:00",
    "summary": "Am 10. November 2026 (Patchday) hat Microsoft kumulative Updates für die Clients und Serverversionen seiner Windows Betriebssysteme veröffentlicht. Diese Sicherheitsupdates für Microsoft Windows führen aber in einigen Fällen dazu, dass die Aktivierungs- und Lizenzzuweisungsfunktionen kaputt sind und mit dem Fehler…",
@@ -3248,28 +3270,6 @@
    "instructions": [
     "Microsoft will start removing the 10 remaining eMudhra roots, including emSign Root CA - G1, on November 16, according to an update to its security response post earlier this week.",
     "Browsers that enforce Certificate Transparency could not have been fooled."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "a382c3d13c65",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Experts Demonstrate Barracuda Email Security Gateway Chain Enabling Root Access Without Login",
-   "link": "https://thehackernews.com/2026/11/experts-demonstrate-barracuda-email.html",
-   "published": "2026-11-06T05:39:10+00:00",
-   "summary": "Two flaws in Barracuda's Email Security Gateway, an email-filtering appliance, can be chained to run commands on it as root, its highest level of access, with no login required. The company released patches on Monday, and the security firm watchTowr detailed the attack chain on Thursday. One flaw, CVE-2026-116606, is…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh59LXthjD6N50867w2v7T4JyVUCOlVAmz1MJcZHKBFFaSnKDabB0FmdedrbvWRkp9XONe9Pz2RV1MQ-9QpJ8d85XE3w54EmMLKgaf1ygKD2e0y2X9mA7VsfyyB-8l1KFi-F5Gj9Q2vdsusmAl2khvXHNyOzWB_l7bj6NkOHkUgDYW-vENOowt0L8qM4kM/s1600/bar.jpg",
-   "cves": [
-    "CVE-2026-116606"
-   ],
-   "first_seen": "2026-11-06T07:45:14.462637+00:00",
-   "instructions": [
-    "Apply the patch for each affected product, or upgrade to the fixed firmware listed above.",
-    "Barracuda has released a patch for each affected product and lists the fixed firmware in its security advisory .",
-    "If you cannot patch at once, limit the appliance's administration interface to trusted internal networks."
    ],
    "instructions_checked": true
   },
