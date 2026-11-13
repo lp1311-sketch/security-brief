@@ -3025,27 +3025,6 @@
    "instructions_checked": true
   },
   {
-   "id": "6facdf5f94df",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Chainalysis Breach Exposes All Users' Credentials, Forces Shutdown of Key Services",
-   "link": "https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html",
-   "published": "2026-11-06T08:04:49+00:00",
-   "summary": "Blockchain analysis firm Chainalysis has revealed that its ongoing investigation into the agentic cyber attack targeting its systems also exposed names, usernames, password hashes and live tokens for all users. \"While we investigated, we removed access to Reactor and Data Solutions,\" the company said. \"At this time we…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoSpb8lu1ytakNne4rJ58nWfLFrYtdR7MCyZ2prSaLKiAb2Bt_upvfAHl-slDTt_3h7zxFdhbPcLwzAkcHDjnvu2TNcVp6JsgJU6GI5GMvZrrmzZTUZDyeOhS0GnFV-YtazzzcgMFnUvkqKmpSr9FBrCXQhlyPZM9E8c7LPSxACwPhfJ4nFzIANqdaVXUd/s1600/chain-breach.jpg",
-   "cves": [],
-   "first_seen": "2026-11-06T08:39:40.238443+00:00",
-   "instructions": [
-    "\"For customers who just received an email from us instructing you to reset your Chainalysis password, resetting this password won't be possible right now,\" it noted.",
-    "\"We still encourage you, where necessary, to reset your password on other systems where you may be reusing credentials.\"",
-    "From there, users can reset their passwords and rotate API keys to register transactions.",
-    "\"We will require additional protections to access accounts, including that every user will have to reset passwords and rotate API keys as appropriate."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "3d5dfb277e1d",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -3453,6 +3432,24 @@
     "\"As such, upgrading both Agents and Probes in your N-central server is a MUST to ensure all managed devices are communicating and patched.\"",
     "\"We are restricting certain N-central features and integrations,\" the company said in a Thursday update.",
     "On-premises customers are being urged to upgrade Agents and Probes and ensure Legacy API access is disabled in the environment, if it has been previously turned on."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "c0eea237828e",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Hackers Exploit PHP2Shell Flaws in Check Point Gateways to Deploy TSGA Backdoor and Wipe ESXi Files",
+   "link": "https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html",
+   "published": "2026-11-13T08:05:49+00:00",
+   "summary": "An unknown threat actor has been observed targeting unpatched Check Point Security Gateways to obtain initial access via the PHP2Shell vulnerabilities and then a previously reported local privilege escalation flaw in Gaia OS to deploy a backdoor called TSGA. The activity, detailed by Check Point, began on October 30…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjP3B9ZQG1BXlSPUWzwVJ5qgwh899Ngm9u2GAbWiX5HDqhhT6q6gsmva9-TR2upR0fepas2i0k53VUxh1CH21LeUUv1Ipczl9huExytcqNdlqIoHP64CRYJuGyHe-OgLoov-JR6GziUT4JDJ92Ne83CshfWn9pr9Bt2HPKkv4phQJ2esJHcV6eZqzRretVu/s1600/php.jpg",
+   "cves": [],
+   "first_seen": "2026-11-13T08:57:41.471516+00:00",
+   "instructions": [
+    "CVE-2026-123039 (CVSS score: 7.8) is a missing authorization flaw that could enable privilege escalation to root in the DynamicCLI process, enabling any authenticated local user to run arbitrary commands by writing a single request to the socket."
    ],
    "instructions_checked": true
   },
@@ -5582,6 +5579,26 @@
    "instructions_checked": true
   },
   {
+   "id": "3ff055feac94",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Police arrest 354 suspects in dark web cybercrime crackdown",
+   "link": "https://www.bleepingcomputer.com/news/security/police-arrest-354-vendors-buyers-in-global-cybercrime-crackdown/",
+   "published": "2026-11-13T08:34:20+00:00",
+   "summary": "Authorities arrested 354 suspects in a joint international operation targeting vendors and buyers on the Archetyp, Nemesis, Tor2Door, Bohemia, and Kingdom dark web marketplaces.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/15/Arrest.jpg",
+   "cves": [],
+   "first_seen": "2026-11-13T08:57:41.471516+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day",
+    "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "62ff99ae778b",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -7520,6 +7537,28 @@
     "The security researcher released proof-of-concept (PoC) code targeting every flaw and reportedly explained that the zero-days were dropped after N-able failed to patch security defects he previously reported in another product.",
     "Chrome Update Patches Exploited XML Zero-Day, Eighth This Year",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "0b5efb819342",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Nightmare Eclipse Drops Windows Zero-Day Exploit ‘SignDrop’",
+   "link": "https://www.securityweek.com/nightmare-eclipse-drops-windows-zero-day-exploit-signdrop/",
+   "published": "2026-11-13T08:50:36+00:00",
+   "summary": "It abuses CLFS and Windows Defender to trigger arbitrary file creation in the context of the antimalware process. The post Nightmare Eclipse Drops Windows Zero-Day Exploit ‘SignDrop’ appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/11/Nightmare-Eclipse.webp",
+   "cves": [],
+   "first_seen": "2026-11-13T08:57:41.471516+00:00",
+   "image_checked": true,
+   "instructions": [
+    "According to the security researcher, SignDrop has been tested on Windows 11 26H2, Windows 11 26H2 Experimental, and Windows Server 2025 Experimental, and should work on 80% of the world’s Windows installations. “You’re generally vulnerable if your Windows installation is older than 90 days,” Naceri says.",
+    "Last year, Microsoft introduced CLFS logfile authentication to mitigate exploitation, which relies on authentication codes to check file integrity.",
+    "A standard user can create a log file and specify a path to an associated container in it, and then coerce Windows Defender to open the file in the context of the antimalware engine by calling the signature update RPC interface.",
+    "SecurityWeek has emailed Microsoft for a statement on SignDrop and will update this article if the company responds."
    ],
    "instructions_checked": true
   },
