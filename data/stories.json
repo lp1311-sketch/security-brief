@@ -4357,6 +4357,27 @@
    "instructions_checked": true
   },
   {
+   "id": "2be753d1df50",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "NATO issues and then withdraws Russian taxi app travel advice for defense industry conference",
+   "link": "https://therecord.media/nato-issues-and-withdraws-guidance-over-russian-taxi-app",
+   "published": "2026-11-13T00:00:00+00:00",
+   "summary": "Despite longstanding concerns about the Kremlin’s access to the app’s data, NATO on Thursday issued guidance suggesting attendees of its flagship defense industry conference use the Russian-owned Yandex Go to reach the venue.",
+   "image": "https://cms.therecord.media/uploads/NATO_file_photo_Image_NATO_307ccd5ceb.png",
+   "cves": [],
+   "first_seen": "2026-11-13T10:59:09.768085+00:00",
+   "image_checked": true,
+   "instructions": [
+    "“Recommending Yandex to people attending NATO’s biggest industry conference is a serious mistake,” said Erik Kursetgjerde, an attendee and doctoral research fellow studying critical digital infrastructure at the University of Inland Norway.",
+    "A NATO official told Recorded Future News: “In an oversight, the event team responsible for NATO Edge 26 sent an email to conference participants that recommended the use of Yandex Go for local transport.",
+    "Kursetgjerde credited the organizers for acting quickly. “But it should never have been sent,” he said. “Where NATO staff and defense suppliers stay and how they move is exactly what an adversary wants to know.”"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "612ae5f08dba",
    "source": "therecord",
    "source_name": "The Record",
@@ -4961,6 +4982,28 @@
     "To ensure threat actors don't access affected accounts, Chainalysis asked customers to provide trusted IP addresses so they can regain access to the login portal once it is brought back online and reset their credentials.",
     "We will then grant access for users to reset their passwords and rotate API keys to register transactions.",
     "We will require additional protections to access accounts, including that every user will have to reset passwords and rotate API keys as appropriate,\" it added ."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "e49e186a5eab",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Check Point warns of zero-day flaw exploited for root access",
+   "link": "https://www.bleepingcomputer.com/news/security/check-point-patches-zero-day-that-lets-hackers-get-root-access/",
+   "published": "2026-11-13T10:44:22+00:00",
+   "summary": "Check Point Software has released emergency hotfixes to address a high-severity flaw that hackers have been exploiting to gain root privileges and establish persistence on vulnerable devices since late October.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/09/18/Check-Point-headpic.jpg",
+   "cves": [],
+   "first_seen": "2026-11-13T10:59:09.768085+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Check Point advised security teams who can't immediately deploy the CVE-2026-123039 hotfixes to stop the dynamic_server process and prevent it from restarting as a temporary mitigation measure.",
+    "\"Check Point observed an active exploit of this vulnerability against a couple of dozen customers,\" the company warned in a Thursday security advisory.",
+    "TeamViewer urges users to patch severe flaws “as soon as possible”",
+    "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day"
    ],
    "instructions_checked": true
   },
@@ -7477,6 +7520,26 @@
    "first_seen": "2026-11-06T18:51:36.584313+00:00",
    "image_checked": true,
    "instructions": [
+    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "e4df5d0ce341",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Law Enforcement Disrupts Gootloader, CastleRAT, and StealC Infrastructure",
+   "link": "https://www.securityweek.com/law-enforcement-disrupts-gootloader-castlerat-and-stealc-infrastructure/",
+   "published": "2026-11-13T10:48:40+00:00",
+   "summary": "Investigators seized 235 servers and 257 domains, along with 6.4 million victim credentials as part of Operation Endgame. The post Law Enforcement Disrupts Gootloader, CastleRAT, and StealC Infrastructure appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/11/Gootloader-seized.webp",
+   "cves": [],
+   "first_seen": "2026-11-13T10:59:09.768085+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Citrix, Ivanti Patch Critical and High-Severity Vulnerabilities",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
