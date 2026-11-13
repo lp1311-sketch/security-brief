@@ -71,6 +71,16 @@
    "url": "story/95f883361cdc.html"
   },
   {
+   "id": "3b2c5ccdae53",
+   "title": "CVE-2026-109473 Windows Kernel Elevation of Privilege Vulnerability",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "priority": "High",
+   "category": "Patch Radar",
+   "date": "13 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/3b2c5ccdae53.html"
+  },
+  {
    "id": "e71bf5215ff1",
    "title": "Ransomware attack on Belarusian cloud firm disrupts businesses for days",
    "summary": "ActiveCloud said hackers had breached its systems and encrypted parts of its cloud infrastructure, leaving customers unable to access key services for several days.",
@@ -79,6 +89,16 @@
    "date": "13 Nov 2026, 14:28 UTC",
    "sources": "The Record",
    "url": "story/e71bf5215ff1.html"
+  },
+  {
+   "id": "d9f7469060c3",
+   "title": "PHP2Shell Exploited in Destructive Check Point Gateway Attacks",
+   "summary": "PHP2Shell enabled initial compromise, while CVE-2026-123039 allowed attackers to elevate privileges to root. The post PHP2Shell Exploited in Destructive Check Point…",
+   "priority": "Critical",
+   "category": "Patch Radar",
+   "date": "13 Nov 2026, 07:39 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/d9f7469060c3.html"
   },
   {
    "id": "d7669d6db99e",
@@ -169,26 +189,6 @@
    "date": "10 Nov 2026, 16:17 UTC",
    "sources": "BleepingComputer",
    "url": "story/82b5e1a648c0.html"
-  },
-  {
-   "id": "60dbfcb238d0",
-   "title": "CVE-2026-94522 Windows Kernel Transaction Manager Elevation of Privilege Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "13 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/60dbfcb238d0.html"
-  },
-  {
-   "id": "8ac7c5dbeb42",
-   "title": "CVE-2026-112765 Windows Print Spooler Components Elevation of Privilege Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "13 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/8ac7c5dbeb42.html"
   },
   {
    "id": "ea376f0b6ca4",
@@ -299,16 +299,6 @@
    "date": "10 Nov 2026, 16:00 UTC",
    "sources": "The Hacker News",
    "url": "story/0eb55bf1598e.html"
-  },
-  {
-   "id": "489ff1bcb336",
-   "title": "CVE-2026-105588 Windows DHCP Server Elevation of Privilege Vulnerability",
-   "summary": "Missing authentication for critical function in Windows DHCP Server allows an authorized attacker to elevate privileges locally.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/489ff1bcb336.html"
   },
   {
    "id": "7e1f9b33c691",
@@ -479,26 +469,6 @@
    "date": "12 Nov 2026, 19:51 UTC",
    "sources": "BleepingComputer",
    "url": "story/5e7c3d53ea73.html"
-  },
-  {
-   "id": "fac8887887ba",
-   "title": "Apache HTTP Server patches critical HTTP/2 remote code execution flaw",
-   "summary": "A critical vulnerability in the HTTP/2 module of Apache HTTP Server could be exploited by an unauthenticated attacker to obtain remote code execution (RCE).",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "12 Nov 2026, 19:12 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/fac8887887ba.html"
-  },
-  {
-   "id": "2559f2095350",
-   "title": "Shipping giant Maersk says recent cyber incident affected legacy system",
-   "summary": "The incident is the latest in a string of attacks on ports and other shipping organizations worldwide, with Brazil’s largest port hit with ransomware last week.",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "12 Nov 2026, 18:28 UTC",
-   "sources": "The Record",
-   "url": "story/2559f2095350.html"
   },
   {
    "id": "16b72427cf58",
@@ -681,14 +651,24 @@
    "url": "story/674c4b85088a.html"
   },
   {
-   "id": "bb48d6f8868d",
-   "title": "United to block customers from using AI agents, citing cyber threats",
-   "summary": "“Sharing account credentials with personal, third-party, AI assistants can expose sensitive information, and actions taken by these tools may result in unintended…",
+   "id": "fac8887887ba",
+   "title": "Apache HTTP Server patches critical HTTP/2 remote code execution flaw",
+   "summary": "A critical vulnerability in the HTTP/2 module of Apache HTTP Server could be exploited by an unauthenticated attacker to obtain remote code execution (RCE).",
    "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "12 Nov 2026, 19:20 UTC",
+   "category": "Patch Radar",
+   "date": "12 Nov 2026, 19:12 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/fac8887887ba.html"
+  },
+  {
+   "id": "2559f2095350",
+   "title": "Shipping giant Maersk says recent cyber incident affected legacy system",
+   "summary": "The incident is the latest in a string of attacks on ports and other shipping organizations worldwide, with Brazil’s largest port hit with ransomware last week.",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "12 Nov 2026, 18:28 UTC",
    "sources": "The Record",
-   "url": "story/bb48d6f8868d.html"
+   "url": "story/2559f2095350.html"
   },
   {
    "id": "1acaa8e77a2e",
@@ -941,16 +921,6 @@
    "url": "story/749621e2cdd4.html"
   },
   {
-   "id": "6a2e9d577a80",
-   "title": "CVE-2026-105582 Windows DWM Core Library Elevation of Privilege Vulnerability",
-   "summary": "Release of invalid pointer or reference in Windows DWM Core Library allows an authorized attacker to elevate privileges locally.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/6a2e9d577a80.html"
-  },
-  {
    "id": "9c7f489322a3",
    "title": "CVE-2026-105584 Windows Inventory Backup Information Disclosure Vulnerability",
    "summary": "Use of externally-controlled format string in Windows Inventory Backup allows an authorized attacker to disclose information locally.",
@@ -991,6 +961,16 @@
    "url": "story/9ba2c99a6c7d.html"
   },
   {
+   "id": "3909203a2a90",
+   "title": "CVE-2026-108415 Windows File Server Resource Management Service Elevation of Privilege Vulnerability",
+   "summary": "Untrusted pointer dereference in Windows File Server Resource Management Service allows an unauthorized attacker to elevate privileges with a physical attack.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/3909203a2a90.html"
+  },
+  {
    "id": "d1444b50cec7",
    "title": "CVE-2026-108417 Windows Remote Desktop Client Information Disclosure Vulnerability",
    "summary": "Out-of-bounds read in Remote Desktop Client allows an unauthorized attacker to disclose information over a network.",
@@ -1019,16 +999,6 @@
    "date": "10 Nov 2026, 16:00 UTC",
    "sources": "Microsoft Security Response Center",
    "url": "story/1328adc53dd3.html"
-  },
-  {
-   "id": "236aa0388888",
-   "title": "CVE-2026-56172 Windows VHD miniport driver Elevation of Privilege Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/236aa0388888.html"
   },
   {
    "id": "b595e98fa95b",
@@ -1281,6 +1251,16 @@
    "url": "story/b99b441690fc.html"
   },
   {
+   "id": "cf42b36aeb3f",
+   "title": "NYC to bar surveillance pricing as momentum for bans grows nationwide",
+   "summary": "The New York City government will be able to fine companies $1,000 for each verified instance of surveillance pricing.",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "13 Nov 2026, 18:35 UTC",
+   "sources": "The Record",
+   "url": "story/cf42b36aeb3f.html"
+  },
+  {
    "id": "f6f4a6d64aa8",
    "title": "German military drone operations disrupted by cyberattack",
    "summary": "German defense technology company Quantum Systems confirmed that it detected an incident in late October that was part of an active cyberattack by \"hostile actors.\"",
@@ -1411,16 +1391,6 @@
    "url": "story/3ff055feac94.html"
   },
   {
-   "id": "d9f7469060c3",
-   "title": "PHP2Shell Exploited in Destructive Check Point Gateway Attacks",
-   "summary": "PHP2Shell enabled initial compromise, while CVE-2026-123039 allowed attackers to elevate privileges to root. The post PHP2Shell Exploited in Destructive Check Point…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "13 Nov 2026, 07:39 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/d9f7469060c3.html"
-  },
-  {
    "id": "589fccee67c2",
    "title": "FBI Says US Seized $1.2 Billion Worth of Cryptocurrency Stolen From Binance",
    "summary": "Also Thursday, the FBI blamed North Korea for a separate social engineering scheme that officials say resulted in the theft of $400 million worth of cryptocurrency. The…",
@@ -1461,14 +1431,14 @@
    "url": "story/39360acccba0.html"
   },
   {
-   "id": "8b7c2d0211a6",
-   "title": "Netscaler Apocalypse? Security Bulletin CTX697305",
-   "summary": "Am heutigen 12. November 2026, hat Citrix eine Sicherheitsmeldung für den Citrix NetScaler ADC und Citrix NetScaler Gateway veröffentlicht. Beide Produkte haben…",
+   "id": "bb48d6f8868d",
+   "title": "United to block customers from using AI agents, citing cyber threats",
+   "summary": "“Sharing account credentials with personal, third-party, AI assistants can expose sensitive information, and actions taken by these tools may result in unintended…",
    "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "12 Nov 2026, 18:29 UTC",
-   "sources": "Born's IT and Windows Blog",
-   "url": "story/8b7c2d0211a6.html"
+   "category": "AI Risk Lab",
+   "date": "12 Nov 2026, 19:20 UTC",
+   "sources": "The Record",
+   "url": "story/bb48d6f8868d.html"
   },
   {
    "id": "950205e16691",
@@ -1921,14 +1891,14 @@
    "url": "story/a5eef3cf57a4.html"
   },
   {
-   "id": "c5532d0fb1f0",
-   "title": "Certificate authority DigiCert reports data breach involving business customer info",
-   "summary": "DigiCert explained that over the summer, an internal business system was \"externally accessible when that was not intended,\" and someone had created an unauthorized…",
+   "id": "8b7c2d0211a6",
+   "title": "Netscaler Apocalypse? Security Bulletin CTX697305",
+   "summary": "Am heutigen 12. November 2026, hat Citrix eine Sicherheitsmeldung für den Citrix NetScaler ADC und Citrix NetScaler Gateway veröffentlicht. Beide Produkte haben…",
    "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "06 Nov 2026, 18:56 UTC",
-   "sources": "The Record",
-   "url": "story/c5532d0fb1f0.html"
+   "category": "Patch Radar",
+   "date": "12 Nov 2026, 18:29 UTC",
+   "sources": "Born's IT and Windows Blog",
+   "url": "story/8b7c2d0211a6.html"
   },
   {
    "id": "0215fb6873ae",
@@ -2099,16 +2069,6 @@
    "date": "11 Nov 2026, 21:27 UTC",
    "sources": "BleepingComputer",
    "url": "story/a4a34375ee4e.html"
-  },
-  {
-   "id": "c5a7aee1fe72",
-   "title": "CVE-2026-105544 .NET Elevation of Privilege Vulnerability",
-   "summary": "Changes made to the security updates links and information. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "11 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/c5a7aee1fe72.html"
   },
   {
    "id": "cdc2cd16c5c3",
@@ -2301,6 +2261,16 @@
    "url": "story/91dd8667fa3b.html"
   },
   {
+   "id": "db9ef08d13bf",
+   "title": "CVE-2026-83894 RPC Runtime Elevation of Privilege Vulnerability",
+   "summary": "Use after free in RPC Runtime allows an authorized attacker to elevate privileges locally.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/db9ef08d13bf.html"
+  },
+  {
    "id": "89d6f6254d42",
    "title": "Binance warns of iOS flaw that could leak crypto wallet secrets",
    "summary": "Binance is warning about a vulnerability in Apple's iOS 26.7.1, 27.0.1, and 27.2 that could allow third-party apps to read private files stored by other apps, including…",
@@ -2479,16 +2449,6 @@
    "date": "06 Nov 2026, 20:24 UTC",
    "sources": "BleepingComputer",
    "url": "story/ba147c5fc5c9.html"
-  },
-  {
-   "id": "3c3dad9eec40",
-   "title": "AI Gave Your Incident Archive a Second Job",
-   "summary": "Security records are increasingly being used by vendors to train their models, creating new risks for enterprises.",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "06 Nov 2026, 18:27 UTC",
-   "sources": "Dark Reading",
-   "url": "story/3c3dad9eec40.html"
   },
   {
    "id": "d62040292e65",
@@ -2989,36 +2949,6 @@
    "date": "06 Nov 2026, 22:05 UTC",
    "sources": "Schneier on Security",
    "url": "story/46c76064dfeb.html"
-  },
-  {
-   "id": "ea6b9d64cfe5",
-   "title": "Medical services company settles with 4 states over 2023 hack of sensitive patient records",
-   "summary": "The case, brought by AGs in Connecticut, New Jersey, New York and Michigan, targeted the medical transcription, coding and imaging subsidiaries of the Nevada-based Perry…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "06 Nov 2026, 19:06 UTC",
-   "sources": "The Record",
-   "url": "story/ea6b9d64cfe5.html"
-  },
-  {
-   "id": "a97be9095b72",
-   "title": "Fake security tools on GitHub push backdoors and infostealers",
-   "summary": "Cybersecurity professionals are being targeted with infected security projects on GitHub that deploy a backdoor and information stealer malware.",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "06 Nov 2026, 18:46 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/a97be9095b72.html"
-  },
-  {
-   "id": "d9a0f8bfa397",
-   "title": "Japan Announces Emergency Cybersecurity Package Following a Wave of Attacks",
-   "summary": "The emergency package comes after dozens of companies and government agencies were hit by unauthorized access to their systems and leaks of client data, prompting…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "06 Nov 2026, 18:28 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/d9a0f8bfa397.html"
   }
  ]
 }
