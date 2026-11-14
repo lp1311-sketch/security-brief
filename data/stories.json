@@ -8514,30 +8514,6 @@
    "instructions_checked": true
   },
   {
-   "id": "986edfc864db",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "SonicWall Patches Exploited SonicOS Vulnerability That Weakens VPN Logins",
-   "link": "https://www.securityweek.com/sonicwall-patches-exploited-sonicos-bug-that-weakens-vpn-logins/",
-   "published": "2026-11-07T10:16:23+00:00",
-   "summary": "CVE-2026-19868 can let attackers holding credentials for a different login method get past SAML checks, including SAML-enforced MFA. The post SonicWall Patches Exploited SonicOS Vulnerability That Weakens VPN Logins appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2025/08/SonicWall.jpg",
-   "cves": [
-    "CVE-2026-19868"
-   ],
-   "first_seen": "2026-11-07T11:08:28.752467+00:00",
-   "image_checked": true,
-   "instructions": [
-    "SonicOS versions 7.3.4-7013 and 8.2.3-8015 resolve the issue, and there are no workarounds. “Customers are strongly urged to upgrade to the latest release as soon as possible to mitigate the associated risks,” SonicWall said.",
-    "It’s one of seven vulnerabilities described in an advisory published on November 6. “An authentication enforcement vulnerability in SonicOS SSLVPN service may allow a user with valid credentials for an alternate authentication method to bypass SAML authentication controls.",
-    "Under Binding Operational Directive 26-04, federal agencies must address it by November 20.",
-    "SonicWall’s advisory doesn’t mark any of the other six flaws as exploited."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "c5080c64e3d8",
    "source": "securityweek",
    "source_name": "SecurityWeek",

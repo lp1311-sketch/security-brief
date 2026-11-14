@@ -91,16 +91,6 @@
    "url": "story/d7669d6db99e.html"
   },
   {
-   "id": "3d5dfb277e1d",
-   "title": "CISA Flags SonicWall SonicOS MFA Bypass Flaw Amid Reports of Possible Exploitation",
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a high-severity vulnerability impacting SonicWall SonicOS to its Known Exploited…",
-   "priority": "Critical",
-   "category": "Patch Radar",
-   "date": "09 Nov 2026, 06:05 UTC",
-   "sources": "The Hacker News, SecurityWeek",
-   "url": "story/3d5dfb277e1d.html"
-  },
-  {
    "id": "c3cb9f990617",
    "title": "In Other News: New CISA Director Nominee, Connected Car Hacking, Baker Tilly Data Breach",
    "summary": "Noteworthy stories that might have slipped under the radar: Siemens details security advisory policy, OpenAI Codex backdoor risk, Microsoft warns of model weight…",
@@ -181,6 +171,16 @@
    "url": "story/82b5e1a648c0.html"
   },
   {
+   "id": "3d5dfb277e1d",
+   "title": "CISA Flags SonicWall SonicOS MFA Bypass Flaw Amid Reports of Possible Exploitation",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a high-severity vulnerability impacting SonicWall SonicOS to its Known Exploited…",
+   "priority": "Critical",
+   "category": "Patch Radar",
+   "date": "09 Nov 2026, 06:05 UTC",
+   "sources": "The Hacker News",
+   "url": "story/3d5dfb277e1d.html"
+  },
+  {
    "id": "ea376f0b6ca4",
    "title": "CVE-2026-108401 Remote Desktop Services Remote Code Execution Vulnerability",
    "summary": "Updated an acknowledgement. This is an informational change only.",
@@ -259,16 +259,6 @@
    "date": "13 Nov 2026, 15:01 UTC",
    "sources": "BleepingComputer",
    "url": "story/db3fd3a5adb8.html"
-  },
-  {
-   "id": "d20b2da13e92",
-   "title": "Citrix Patches 10 Critical NetScaler Vulnerabilities",
-   "summary": "Successful exploitation could lead to unexpected behavior or denial-of-service (DoS) conditions. The post Citrix Patches 10 Critical NetScaler Vulnerabilities appeared…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "13 Nov 2026, 09:36 UTC",
-   "sources": "SecurityWeek, The Hacker News",
-   "url": "story/d20b2da13e92.html"
   },
   {
    "id": "f394da5f2166",
@@ -441,14 +431,14 @@
    "url": "story/5df4bf07aed5.html"
   },
   {
-   "id": "8762a201a24f",
-   "title": "Microsoft confirms Windows activation failures after November updates",
-   "summary": "Microsoft has confirmed that this month's Patch Tuesday security updates are causing Windows activation and licensing failures with 0x80041008 error codes.",
+   "id": "d20b2da13e92",
+   "title": "Citrix Patches 10 Critical NetScaler Vulnerabilities",
+   "summary": "Successful exploitation could lead to unexpected behavior or denial-of-service (DoS) conditions. The post Citrix Patches 10 Critical NetScaler Vulnerabilities appeared…",
    "priority": "Standard",
-   "category": "Microsoft",
+   "category": "Patch Radar",
    "date": "13 Nov 2026, 09:36 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/8762a201a24f.html"
+   "sources": "SecurityWeek, The Hacker News",
+   "url": "story/d20b2da13e92.html"
   },
   {
    "id": "16b72427cf58",
@@ -599,6 +589,16 @@
    "date": "13 Nov 2026, 12:03 UTC",
    "sources": "Schneier on Security",
    "url": "story/f5b71ee6de0e.html"
+  },
+  {
+   "id": "8762a201a24f",
+   "title": "Microsoft confirms Windows activation failures after November updates",
+   "summary": "Microsoft has confirmed that this month's Patch Tuesday security updates are causing Windows activation and licensing failures with 0x80041008 error codes.",
+   "priority": "Standard",
+   "category": "Microsoft",
+   "date": "13 Nov 2026, 09:36 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/8762a201a24f.html"
   },
   {
    "id": "0b5efb819342",
@@ -779,26 +779,6 @@
    "date": "12 Nov 2026, 11:33 UTC",
    "sources": "The Hacker News",
    "url": "story/988b46d175c6.html"
-  },
-  {
-   "id": "a3551b4d4049",
-   "title": "Microsoft confirms Windows security updates installation issues",
-   "summary": "Microsoft has confirmed reports that the November 2026 security updates are failing to install on Windows 11 systems with the October preview update.",
-   "priority": "Standard",
-   "category": "Microsoft",
-   "date": "12 Nov 2026, 10:24 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/a3551b4d4049.html"
-  },
-  {
-   "id": "2bb5c2ca8fb9",
-   "title": "Hackers Target N-central Zero-Days as N-able Rushes Patches",
-   "summary": "The malicious activity started shortly after a researcher dropped over 30 zero-days. N-able patched the unauthenticated ones. The post Hackers Target N-central Zero-Days…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "12 Nov 2026, 09:39 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/2bb5c2ca8fb9.html"
   },
   {
    "id": "09ebecc42123",
@@ -1451,6 +1431,26 @@
    "url": "story/0fd5862fb594.html"
   },
   {
+   "id": "a3551b4d4049",
+   "title": "Microsoft confirms Windows security updates installation issues",
+   "summary": "Microsoft has confirmed reports that the November 2026 security updates are failing to install on Windows 11 systems with the October preview update.",
+   "priority": "Standard",
+   "category": "Microsoft",
+   "date": "12 Nov 2026, 10:24 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/a3551b4d4049.html"
+  },
+  {
+   "id": "2bb5c2ca8fb9",
+   "title": "Hackers Target N-central Zero-Days as N-able Rushes Patches",
+   "summary": "The malicious activity started shortly after a researcher dropped over 30 zero-days. N-able patched the unauthenticated ones. The post Hackers Target N-central Zero-Days…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "12 Nov 2026, 09:39 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/2bb5c2ca8fb9.html"
+  },
+  {
    "id": "26d811aac83d",
    "title": "Critical Pre-Auth MongoDB Flaw (CVE-2026-118383) Can Crash Lagging Servers on Failover",
    "summary": "A critical flaw in MongoDB Server allows an unauthenticated attacker to send two requests that trigger a crash on the database server. The crash occurs only if that…",
@@ -2021,16 +2021,6 @@
    "url": "story/b8a4eb8ff314.html"
   },
   {
-   "id": "3ca0085eba4f",
-   "title": "Hackers plant GSocket on Linux servers for persistent access",
-   "summary": "Multiple threat actors are abusing GSocket, a legitimate open-source remote access tool, to maintain access to Linux servers even after patching the vulnerabilities…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "12 Nov 2026, 09:38 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/3ca0085eba4f.html"
-  },
-  {
    "id": "417b99b8248b",
    "title": "Attacker Used 4,837 Hijacked GitHub Accounts to Run a CI Secret Stealer in 1,806+ Repositories",
    "summary": "Starting Tuesday, an attacker used stolen credentials for 4,837 GitHub accounts to plant a secret stealer in repositories those accounts could write to, according to…",
@@ -2429,6 +2419,16 @@
    "date": "08 Nov 2026, 12:14 UTC",
    "sources": "SecurityWeek",
    "url": "story/9c037607d0d5.html"
+  },
+  {
+   "id": "3ca0085eba4f",
+   "title": "Hackers plant GSocket on Linux servers for persistent access",
+   "summary": "Multiple threat actors are abusing GSocket, a legitimate open-source remote access tool, to maintain access to Linux servers even after patching the vulnerabilities…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "12 Nov 2026, 09:38 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/3ca0085eba4f.html"
   },
   {
    "id": "c2d283cd7530",
