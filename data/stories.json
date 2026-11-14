@@ -35,26 +35,6 @@
    "instructions_checked": true
   },
   {
-   "id": "130145bcfb89",
-   "source": "ars",
-   "source_name": "Ars Technica Security",
-   "official": false,
-   "source_type": "news",
-   "title": "British soldier ignored order to pull his SIM card, then got blackmailed",
-   "link": "https://arstechnica.com/security/2026/11/british-soldier-ignored-order-to-pull-his-sim-card-then-got-blackmailed/",
-   "published": "2026-11-07T11:00:34+00:00",
-   "summary": "An Estonian newspaper recently revealed that a British soldier disobeyed a direct order to remove the SIM card from his cellphone before being deployed to a part of Estonia, approximately 90 miles west of the Russian border. As a result of his refusal to engage in this element of operational security (opsec), the…",
-   "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/GettyImages-2290156853-1024x648.jpg",
-   "cves": [],
-   "first_seen": "2026-11-07T11:08:28.752467+00:00",
-   "instructions": [
-    "An Estonian newspaper recently revealed that a British soldier disobeyed a direct order to remove the SIM card from his cellphone before being deployed to a part of Estonia, approximately 90 miles west of the Russian border.",
-    "While in the United Kingdom, on January 7, Barton-Kennedy, along with other members of his unit, were briefed on their orders and given specific instructions to “remove SIM cards and switch off location settings and to use a trusted virtual private network on all personal electronic devices.”",
-    "Kalshi court losses pile up as judges refuse to block state gambling laws"
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "b686da68349e",
    "source": "ars",
    "source_name": "Ars Technica Security",
@@ -109,31 +89,6 @@
     "If it’s in learning mode or enforcement mode, the system is vulnerable, and the PoC supplied in the post should spawn a SYSTEM shell.",
     "For a system to be vulnerable, Dormann said, the HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\CLFS\\Authentication\\Mode value must be 0 or 1.” Out of the many machines Dormann uses, only a single one met this requirement.",
     "“The requirements are important in that it seems to require Windows 26H2, and one that has existed for more than 90 days, it seems,” he explained. “That is, you can’t just take a new 26H2 system and install updates and have it work.”"
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "717f80da6fa4",
-   "source": "borncity",
-   "source_name": "Born's IT and Windows Blog",
-   "official": false,
-   "source_type": "news",
-   "title": "WordPress Schwachstellen CVE-2026-119977 u. CVE-2026-100109",
-   "link": "https://borncity.com/blog/2026/11/07/wordpress-schwachstellen-u-a-cve-2026-100109/",
-   "published": "2026-11-07T10:45:59+00:00",
-   "summary": "Es gibt derzeit wohl zwei Schwachstellen im Umfeld von WordPress, die man als Administrator kennen sollte. Einmal kann WordPress beim Core-Update in bestimmten Konstellationen angreifbar sein (CVE-2026-119977). Zudem gibt es die kritische Schwachstelle CVE-2026-100109 in Security For WooCommerce. Plugin Security ……",
-   "image": "https://borncity.com/blog/wp-content/uploads/2014/07/wp_thumb.jpg",
-   "cves": [
-    "CVE-2026-100109",
-    "CVE-2026-119977"
-   ],
-   "first_seen": "2026-11-07T11:08:28.752467+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Einmal kann WordPress beim Core-Update in bestimmten Konstellationen angreifbar sein (CVE-2026-119977).",
-    "Windows-faq.de hat es hier detaillierter aufbereitet, weil wohl Angriffsversuche beim Update möglich waren.",
-    "Ralle zu Ubuntu-Patch für IPv4-TCP-Schwachstelle CVE-2026-98432 kommt",
-    "Wolf789 zu Ubuntu-Patch für IPv4-TCP-Schwachstelle CVE-2026-98432 kommt"
    ],
    "instructions_checked": true
   },
@@ -7492,6 +7447,28 @@
     "ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure",
     "Chipmaker Patch Tuesday: Over 200 Vulnerabilities Addressed by Intel, AMD",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "f694138aff43",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Apple Reveals How Secure Exclaves Shield Camera and Microphone Data",
+   "link": "https://www.securityweek.com/apple-reveals-how-secure-exclaves-shield-camera-and-microphone-data/",
+   "published": "2026-11-14T11:00:00+00:00",
+   "summary": "The tech giant has detailed the architecture designed to isolate ambient sensor data from the main OS on HomeView and new iPhones. The post Apple Reveals How Secure Exclaves Shield Camera and Microphone Data appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2024/12/Apple.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-14T11:09:02.247843+00:00",
+   "image_checked": true,
+   "instructions": [
+    "The main OS must not be able to pull out or alter data handled in an exclave, and only a narrowly defined set of information may cross over to it.",
+    "Users must also be able to tell when a sensor session is active, without the main OS interfering.",
+    "ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure",
+    "Chipmaker Patch Tuesday: Over 200 Vulnerabilities Addressed by Intel, AMD"
    ],
    "instructions_checked": true
   },
