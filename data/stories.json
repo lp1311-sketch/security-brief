@@ -5810,6 +5810,28 @@
    "instructions_checked": true
   },
   {
+   "id": "403e4bdfaeb6",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Cursor confirms security breach led to malicious Claude Code extension",
+   "link": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/",
+   "published": "2026-11-14T17:27:25+00:00",
+   "summary": "Cursor confirmed it suffered a security breach that let hackers distribute a malicious Claude Code extension through its marketplace after stealing credentials from AI infrastructure provider Fireworks AI.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2025/07/13/cursor-header.jpg",
+   "cves": [],
+   "first_seen": "2026-11-14T17:57:35.380684+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Customers who installed or updated to the affected Claude Code extension during the attack are advised to follow Cursor's remediation guidance .",
+    "Cursor says its monitoring systems detected the unauthorized activity, leading the company to revoke the Fireworks access key, rotate exposed credentials, and investigate additional unauthorized access.",
+    "As BleepingComputer previously reported , the attackers modified the legitimate Claude Code extension to execute malicious JavaScript that attempted to install persistent SSH backdoors on developers' computers.",
+    "The malware collected system information, installed an attacker-controlled SSH key, attempted to enable SSH access, and configured persistence mechanisms to maintain remote access."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "a9021fd43362",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
