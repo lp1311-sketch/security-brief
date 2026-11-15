@@ -71,6 +71,16 @@
    "url": "story/d7669d6db99e.html"
   },
   {
+   "id": "bbb8a6727085",
+   "title": "TSMC employee data breach linked to cloud provider",
+   "summary": "Taiwan Semiconductor Manufacturing Company (TSMC) confirmed that personal employee data has been leaked online after a threat actor put 6.9GB of information allegedly…",
+   "priority": "High",
+   "category": "Attacks & Breaches",
+   "date": "15 Nov 2026, 15:23 UTC",
+   "sources": "BleepingComputer, The Record",
+   "url": "story/bbb8a6727085.html"
+  },
+  {
    "id": "b58e8e6c37ed",
    "title": "Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection",
    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added a high-severity security flaw impacting UnrealIRCd, an open-source Internet Relay Chat…",
@@ -79,16 +89,6 @@
    "date": "14 Nov 2026, 12:38 UTC",
    "sources": "The Hacker News",
    "url": "story/b58e8e6c37ed.html"
-  },
-  {
-   "id": "3b2c5ccdae53",
-   "title": "CVE-2026-109473 Windows Kernel Elevation of Privilege Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "priority": "High",
-   "category": "Patch Radar",
-   "date": "13 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/3b2c5ccdae53.html"
   },
   {
    "id": "d62ab9694fcc",
@@ -169,6 +169,16 @@
    "date": "14 Nov 2026, 17:27 UTC",
    "sources": "BleepingComputer",
    "url": "story/403e4bdfaeb6.html"
+  },
+  {
+   "id": "3b2c5ccdae53",
+   "title": "CVE-2026-109473 Windows Kernel Elevation of Privilege Vulnerability",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "13 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/3b2c5ccdae53.html"
   },
   {
    "id": "e71bf5215ff1",
@@ -259,66 +269,6 @@
    "date": "14 Nov 2026, 14:00 UTC",
    "sources": "SecurityWeek",
    "url": "story/3772cdf174b0.html"
-  },
-  {
-   "id": "ea376f0b6ca4",
-   "title": "CVE-2026-108401 Remote Desktop Services Remote Code Execution Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "13 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/ea376f0b6ca4.html"
-  },
-  {
-   "id": "bc4f0e4f288a",
-   "title": "CVE-2026-113749 Microsoft Windows Codecs Library Remote Code Execution Vulnerability",
-   "summary": "Added Microsoft Office software to the Security Updates table. Customers that are running supported version of Microsoft Office are encouraged to update to the indicated…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "13 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/bc4f0e4f288a.html"
-  },
-  {
-   "id": "78c9d1b1c186",
-   "title": "CVE-2026-119396 Windows Remote Access API Tampering Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "13 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/78c9d1b1c186.html"
-  },
-  {
-   "id": "92d0eff03038",
-   "title": "CVE-2026-119861 Windows Internet Connection Sharing (ICS) Elevation of Privilege Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "13 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/92d0eff03038.html"
-  },
-  {
-   "id": "f9ccc4bbd374",
-   "title": "Chromium CVE-2026-125342: Uninitialized resource",
-   "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "13 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/f9ccc4bbd374.html"
-  },
-  {
-   "id": "20b9366d21f0",
-   "title": "CVE-2026-88217 Windows Graphics Kernel Information Disclosure Vulnerability",
-   "summary": "Added Microsoft Office software to the Security Updates table. Customers that are running supported version of Microsoft Office are encouraged to update to the indicated…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "13 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/20b9366d21f0.html"
   },
   {
    "id": "c3cb9f990617",
@@ -491,24 +441,64 @@
    "url": "story/fcdcf30ed87c.html"
   },
   {
-   "id": "e4e9606f466d",
-   "title": "DOJ: Gootloader used in at least 44 ransomware attacks costing $29 million since 2018",
-   "summary": "In a briefing adjacent to European announcements about an international anti-malware operation, U.S. officials detailed the history and impact of the Gootloader…",
+   "id": "ea376f0b6ca4",
+   "title": "CVE-2026-108401 Remote Desktop Services Remote Code Execution Vulnerability",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
    "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "13 Nov 2026, 15:59 UTC",
-   "sources": "The Record",
-   "url": "story/e4e9606f466d.html"
+   "category": "Patch Radar",
+   "date": "13 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/ea376f0b6ca4.html"
   },
   {
-   "id": "e8d212e2e33e",
-   "title": "TSMC confirms employee data breach tied to cloud service provider",
-   "summary": "An investigation into the breach found that no TSMC systems were compromised but the information was “verified to match data stored in the system services of a cloud…",
+   "id": "bc4f0e4f288a",
+   "title": "CVE-2026-113749 Microsoft Windows Codecs Library Remote Code Execution Vulnerability",
+   "summary": "Added Microsoft Office software to the Security Updates table. Customers that are running supported version of Microsoft Office are encouraged to update to the indicated…",
    "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "13 Nov 2026, 15:06 UTC",
-   "sources": "The Record",
-   "url": "story/e8d212e2e33e.html"
+   "category": "Patch Radar",
+   "date": "13 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/bc4f0e4f288a.html"
+  },
+  {
+   "id": "78c9d1b1c186",
+   "title": "CVE-2026-119396 Windows Remote Access API Tampering Vulnerability",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "13 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/78c9d1b1c186.html"
+  },
+  {
+   "id": "92d0eff03038",
+   "title": "CVE-2026-119861 Windows Internet Connection Sharing (ICS) Elevation of Privilege Vulnerability",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "13 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/92d0eff03038.html"
+  },
+  {
+   "id": "f9ccc4bbd374",
+   "title": "Chromium CVE-2026-125342: Uninitialized resource",
+   "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "13 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/f9ccc4bbd374.html"
+  },
+  {
+   "id": "20b9366d21f0",
+   "title": "CVE-2026-88217 Windows Graphics Kernel Information Disclosure Vulnerability",
+   "summary": "Added Microsoft Office software to the Security Updates table. Customers that are running supported version of Microsoft Office are encouraged to update to the indicated…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "13 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/20b9366d21f0.html"
   },
   {
    "id": "db3fd3a5adb8",
@@ -921,16 +911,6 @@
    "url": "story/a278123ac0f5.html"
   },
   {
-   "id": "840fc9184c68",
-   "title": "Iris Ohyama data cloud breach exposes info of 7.7 million customers",
-   "summary": "Japanese manufacturer Iris Ohyama, the operator of the Iris Plaza shopping platform, disclosed that personal information belonging to about 7.7 million people may have…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "08 Nov 2026, 15:43 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/840fc9184c68.html"
-  },
-  {
    "id": "c8b26857299e",
    "title": "Pentagon Renames CDAO ‘Super Intelligence Office’",
    "summary": "The move follows President Trump’s order to replace “artificial intelligence” with “super intelligence” in executive branch communications. The post Pentagon Renames…",
@@ -1011,14 +991,14 @@
    "url": "story/b297d876237e.html"
   },
   {
-   "id": "fb5ac890be2a",
-   "title": "New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs",
-   "summary": "Two attacks made public this week allow a malicious host to read data inside AMD SEV-SNP-protected virtual machines (VMs), which are built to keep the server's operator…",
+   "id": "e4e9606f466d",
+   "title": "DOJ: Gootloader used in at least 44 ransomware attacks costing $29 million since 2018",
+   "summary": "In a briefing adjacent to European announcements about an international anti-malware operation, U.S. officials detailed the history and impact of the Gootloader…",
    "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "13 Nov 2026, 15:27 UTC",
-   "sources": "The Hacker News",
-   "url": "story/fb5ac890be2a.html"
+   "category": "Attacks & Breaches",
+   "date": "13 Nov 2026, 15:59 UTC",
+   "sources": "The Record",
+   "url": "story/e4e9606f466d.html"
   },
   {
    "id": "70883ad50925",
@@ -1769,6 +1749,16 @@
    "date": "13 Nov 2026, 16:32 UTC",
    "sources": "The Record",
    "url": "story/f6d06bee472c.html"
+  },
+  {
+   "id": "fb5ac890be2a",
+   "title": "New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs",
+   "summary": "Two attacks made public this week allow a malicious host to read data inside AMD SEV-SNP-protected virtual machines (VMs), which are built to keep the server's operator…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "13 Nov 2026, 15:27 UTC",
+   "sources": "The Hacker News",
+   "url": "story/fb5ac890be2a.html"
   },
   {
    "id": "f5b71ee6de0e",
