@@ -440,7 +440,7 @@
    "source_name": "Born's IT and Windows Blog",
    "official": false,
    "source_type": "news",
-   "title": "Windows 0-day Signdrop von Nightmare Eclipse",
+   "title": "Windows 0-day SignDrop von Nightmare Eclipse",
    "link": "https://borncity.com/blog/2026/11/15/windows-0-day-signdrop-von-nightmare-eclipse/",
    "published": "2026-11-15T01:32:50+00:00",
    "summary": "Die Woche ist der nächte Windows 0-day bekannt geworden. Die unter dem Alias Nightmare Eclipse operierende Person hat mit \"Signdrop\" erneut gezeigt, wie man über eine nicht gepatchte Schwachstelle in Windows seine Systemrechte ausweiten und das System übernehmen kann. Mir … Weiterlesen → Quelle",
@@ -4559,6 +4559,27 @@
     "Go beyond the industry's basic recommendations for signaling security.",
     "The report does not advise people whose calls and texts may be targeted.",
     "Mobile operators use the SS7 and Diameter protocols to exchange signaling messages that route calls and texts and enable roaming."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "960f41318ea9",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Stolen Fireworks AI Key Led to Cursor Data Breach and Trojanized Claude Code Extension",
+   "link": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html",
+   "published": "2026-11-15T08:22:04+00:00",
+   "summary": "The compromise of Anthropic's official Claude Code extension on Cursor's extension marketplace was the result of the theft of an access key that was exposed in the wake of a breach targeting Fireworks AI. \"An attacker obtained an access key we had issued to Fireworks,\" Cursor said in a Friday update. \"The key was…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg16ACawbG7rP_kT-8Boo4xdTje3BeTWyFSnNXwHhr5cvy2-1X3Ljhrc1IuZlseWd55tN8E1yjQ9ldhTnjWTU-GJBpX_Zen36YiLQGsRSRAoteqHyxx7mn_w0QgLfMKDLItA4p_jpHajucbglLnCR_zWBY_t82YvFkLa9dQFBfjP1BrTlrNdYufsGMSZiGn/s1600/cursor.jpg",
+   "cves": [],
+   "first_seen": "2026-11-15T09:47:13.095916+00:00",
+   "instructions": [
+    "\"An attacker obtained an access key we had issued to Fireworks,\" Cursor said in a Friday update.",
+    "The disclosure comes nearly two weeks after a trojanized version of Anthropic's official Claude Code extension was distributed through Cursor Marketplace as a legitimate update, attempting to install a persistent SSH backdoor on affected systems.",
+    "Cursor said it took steps to deactivate the vendor's key, revoke and rotate credentials, and hunt for signs of deeper access, and contain it after \"we identified further access.\" The company also said it temporarily disabled internal and product services, disrupting access to some Cursor features.",
+    "The company said it notified affected users who installed versions 2.1.312 or 2.1.313 from the marketplace during the exposure window and helped revoke exposed credentials."
    ],
    "instructions_checked": true
   },
