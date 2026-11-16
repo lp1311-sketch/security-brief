@@ -449,6 +449,25 @@
    "instructions_checked": true
   },
   {
+   "id": "5ce42556c67d",
+   "source": "borncity",
+   "source_name": "Born's IT and Windows Blog",
+   "official": false,
+   "source_type": "news",
+   "title": "Cyberangriffe in Frankreich: Post-Dienstleister, Kliniken, Optikanbieter etc.",
+   "link": "https://borncity.com/blog/2026/11/16/cyberangriffe-in-frankreich-post-dienstleister-kliniken-optikanbieter-etc/",
+   "published": "2026-11-16T12:47:58+00:00",
+   "summary": "Derzeit wird der IT-Sektor in Frankreich per Cyberangriffen faktisch \"sturmreif\" geschossen. Über den Kanal \"French Breaches\" bekomme ich das auf X mit. Ein Dienstleister der Post (Maileva, arbeitet für Le Poste) ist gehackt worden, Daten von 22 Millionen Franzosen sind … Weiterlesen → Quelle",
+   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
+   "cves": [],
+   "first_seen": "2026-11-16T13:07:37.883172+00:00",
+   "image_checked": true,
+   "instructions": [
+    "A.F. zu Windows 11: AMD-Treiber-Update gegen permanentes SSD-Schreiben"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "453a571c3295",
    "source": "grahamcluley",
    "source_name": "Graham Cluley",
@@ -3888,27 +3907,6 @@
    "instructions_checked": true
   },
   {
-   "id": "c5154d08fadf",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Default 'admin:admin' Server Password Helps Researchers Hack Two Automakers, Unlock and Start Cars",
-   "link": "https://thehackernews.com/2026/11/default-adminadmin-server-password.html",
-   "published": "2026-11-09T11:27:53+00:00",
-   "summary": "The login systems behind two car brands' mobile apps could be taken over completely, two security researchers found, allowing them to access any customer's account and, for an owner with a connected car, unlock the doors and start the engine. Both apps signed customers in through ForgeRock, an identity platform now…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiI85M0pHHPiXe5ar2VpaGsBVRzxoYfZhpQTKgWqd8YGjK9Nyaca-z6XrGT3jT0lqh41qe-cAjb33_r7JErd7rB1CfuWkgTP_z-_IJkpQPWebz1GeEvSu9QpE5XYWRMOfhYTHmzhbkFB07hzSuV1FYARdaIWjfB_mUoX1_eMjl_3dOaSUFpTQvjt-34eQo/s1600/login-car.jpg",
-   "cves": [],
-   "first_seen": "2026-11-09T12:42:07.180566+00:00",
-   "instructions": [
-    "The brands' mistake was in how they ran ForgeRock, not a new bug in the product, so there is no CVE, the public ID that tracks a flaw, and no vendor advisory to follow.",
-    "ForgeRock's own hardening guide tells operators to remove this console or protect it before going live because it stores its own password separately from the rest of the system.",
-    "The records sat behind the same block as the console, but the researchers' code reached them from inside the server.",
-    "The console and its default password have been documented for years, and the maker's production hardening guide already tells operators to remove the console or change its password before going live."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "b80a24c89312",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -4436,6 +4434,24 @@
    "instructions_checked": true
   },
   {
+   "id": "8c37ef3c2776",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Retadup Worm Resurfaces 7 Years After Takedown to Spread CoffeeLoader Malware",
+   "link": "https://thehackernews.com/2026/11/retadup-worm-resurfaces-7-years-after.html",
+   "published": "2026-11-16T12:33:18+00:00",
+   "summary": "Cybersecurity researchers have disclosed details of a new variant of CoffeeLoader, a malware designed to deliver additional payloads to infected machines. \"On launch, the NSIS-based installer executable dropped a file named '7z.dll' into a temporary directory and ran it through rundll32.exe,\" Kaspersky said in an…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxRuwbdQU-KyBsSrFlIZp4oczr_tJu53WrfB3nM6QYrO7kFgGAZO1NMSi7mziUOUaTrzq5C4KzCJqvYOf0Ry19ypJac-9mBYzYiqiTNl462i1uYo7DF9aAHxiVU_IOaByH3NtNlrF0hUhZtpItADKJauPVzWrz8r6YOQEHQrt_YiAmPba4CIOsSjZA2Wy_/s1600/hacker-code.jpg",
+   "cves": [],
+   "first_seen": "2026-11-16T13:07:37.883172+00:00",
+   "instructions": [
+    "The end goal is to install CoffeeLoader, establish persistence, and execute it by injecting it into a newly created \"dllhost.exe\" process."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "7d35c70e6708",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -4570,6 +4586,27 @@
     "Go beyond the industry's basic recommendations for signaling security.",
     "The report does not advise people whose calls and texts may be targeted.",
     "Mobile operators use the SS7 and Diameter protocols to exchange signaling messages that route calls and texts and enable roaming."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "119c79e2a817",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Six Unpatched Danfoss Refrigeration Controller Flaws Could Allow Remote Takeover Without Login",
+   "link": "https://thehackernews.com/2026/11/six-unpatched-danfoss-refrigeration.html",
+   "published": "2026-11-16T12:34:21+00:00",
+   "summary": "Six flaws in Danfoss AK-SM800A refrigeration controllers could let a remote attacker take over a controller without logging in, Dutch security consultancy Midnight Blue said earlier this week. No patch is available, and the researchers say the newest firmware, version 5.4.0, does not fix the flaws. Government…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_1GngZ38pRRizZTrhUgdWx49U1Dk8N_Y1Wkfll2kXIjAeYMmX2R69d6OBvA9k-zb6rnYbNOZyouN9yj59QIlT8XxiTzmmhLTmwmEdU2bqiGc_XoSMlvKKN1qZtH3o73YN1miGEhR4vkDniji2WkWOHjSPPIn69ysWKPkFzr504FsViG2NQYxPDkD7sgw/s1600/flaws.jpg",
+   "cves": [],
+   "first_seen": "2026-11-16T13:07:37.883172+00:00",
+   "instructions": [
+    "The Belgian advisory and a similar Irish advisory recommend these steps:",
+    "The vendor's advisory page lists no advisory for the six flaws as of today, and no date for a fix has been published.",
+    "Before cutting off the data a controller sends to its refrigeration service company, operators should check contract and insurance terms, the Belgian advisory says.",
+    "Danfoss's own update guide says the AK-SM800A should not be directly reachable from the public internet, adding: “This recommendation applies to all software versions, including those with Strict Mode enabled.”"
    ],
    "instructions_checked": true
   },
@@ -5673,6 +5710,28 @@
    "instructions_checked": true
   },
   {
+   "id": "a1dd8f56b81d",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Microsoft: Windows Server 2016 reaches end of support in 60 days",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2016-reaches-end-of-support-in-60-days/",
+   "published": "2026-11-16T12:53:18+00:00",
+   "summary": "Microsoft has reminded customers again that Windows Server 2016 will stop receiving security updates after it reaches the end of support in two months.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/15/Windows_Server.jpg",
+   "cves": [],
+   "first_seen": "2026-11-16T13:07:37.883172+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Last month, Microsoft announced that devices running Windows 11 24H2 Home and Pro editions stopped receiving security and non-security preview updates and advised customers to upgrade to Windows 11 26H2 by installing the Windows 11 2026 Update.",
+    "This follows another warning issued in October, announcing the end of extended support for Windows Server 2016 and encouraging users to upgrade to Windows Server 2025.",
+    "Before Windows Server 2016 stops receiving security updates, Microsoft advised IT administrators to switch to Windows Server 2025 , which started rolling out to Windows Insiders in January 2024 and reached general availability in November 2024 .",
+    "On Friday, it also reminded customers that they can enroll in the Extended Security Updates (ESU) program after Windows 10 Enterprise LTSC 2021 (a stripped-down Windows 10 edition for mission-critical devices) reaches the end of mainstream support in January, until they can upgrade to Windows 11 Enterprise LTSC 2024 ."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "33bc3cf0f92e",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -6630,25 +6689,6 @@
    "instructions_checked": true
   },
   {
-   "id": "53877e7ba1bf",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Ukraine dismantles crypto scam network that stole €4.3 million",
-   "link": "https://www.bleepingcomputer.com/news/security/ukraine-dismantles-crypto-scam-network-that-stole-43-million/",
-   "published": "2026-11-09T12:16:13+00:00",
-   "summary": "Ukrainian law enforcement arrested four suspects in a case involving the theft of more than €4.3 million using a network of cryptocurrency investment scam call centers.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/04/29/Law_enforcement_arrest.jpg",
-   "cves": [],
-   "first_seen": "2026-11-09T12:42:07.180566+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "7ef80ee6e03a",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -6746,31 +6786,6 @@
     "Any attacker who gains control of that infrastructure will be able to use those existing capabilities to distribute malware, execute malicious commands, disable security controls, or disrupt operations across an entire organization."
    ],
    "instructions_checked": true
-  },
-  {
-   "id": "8f6133c5e5ae",
-   "source": "cisa",
-   "source_name": "CISA Cybersecurity Advisories",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
-   "link": "https://www.cisa.gov/news-events/alerts/2026/11/09/cisa-adds-four-known-exploited-vulnerabilities-catalog",
-   "published": "2026-11-09T12:00:00+00:00",
-   "summary": "CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-102895 GPUStack Improper Authentication Vulnerability CVE-2026-116779 SignalWire FreeSwitch Code Injection Vulnerability CVE-2026-123158 OpenBSD OpenSSH Unexpected Status…",
-   "image": null,
-   "cves": [
-    "CVE-2026-102895",
-    "CVE-2026-116779",
-    "CVE-2026-123158",
-    "CVE-2026-123218"
-   ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00",
-   "instructions": [
-    "Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
-    "BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied."
-   ],
-   "instructions_checked": true,
-   "image_checked": true
   },
   {
    "id": "193a689f6d04",
@@ -7398,23 +7413,6 @@
    "instructions_checked": true
   },
   {
-   "id": "e0f360ec1ac8",
-   "source": "schneier",
-   "source_name": "Schneier on Security",
-   "official": false,
-   "source_type": "news",
-   "title": "AI Security",
-   "link": "https://www.schneier.com/blog/archives/2026/11/ai-security.html",
-   "published": "2026-11-09T12:05:39+00:00",
-   "summary": "Two weeks ago, I attended the [un]prompted AI security conference in San Francisco. It was an excellent event: three days of very dense talks about all aspects of AI security. (My talk was about integrous AI, and I will post it when it is online.) AI security can be divided into three broad topics. It’s important for…",
-   "image": null,
-   "cves": [],
-   "first_seen": "2026-11-09T12:42:07.180566+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "8e79d9a04839",
    "source": "schneier",
    "source_name": "Schneier on Security",
@@ -7501,6 +7499,23 @@
    "image": null,
    "cves": [],
    "first_seen": "2026-11-14T17:19:55.120410+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "78086d8dacc9",
+   "source": "schneier",
+   "source_name": "Schneier on Security",
+   "official": false,
+   "source_type": "news",
+   "title": "Usable Security at Luxury Hotels",
+   "link": "https://www.schneier.com/blog/archives/2026/11/usable-security-at-luxury-hotels.html",
+   "published": "2026-11-16T12:04:42+00:00",
+   "summary": "Interesting case study from luxury hotels. Attackers used a fake booking request to gain access to a reservations inbox, where they copied genuine refund requests and got fraudulent ones approved. This is a good illustration why “just don’t click on links” is bad advice. It can’t work when answering strangers’ emails…",
+   "image": null,
+   "cves": [],
+   "first_seen": "2026-11-16T13:07:37.883172+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -8079,28 +8094,6 @@
    "instructions_checked": true
   },
   {
-   "id": "de9719511839",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Hackers Exploiting ‘SSHole’ Authentication Bypass in OpenSSH",
-   "link": "https://www.securityweek.com/hackers-exploiting-sshole-authentication-bypass-in-openssh/",
-   "published": "2026-11-09T12:13:32+00:00",
-   "summary": "The initial exploitation attempts are attributed to botnets and crypto miners, but other threat actors are expected to follow suit. The post Hackers Exploiting ‘SSHole’ Authentication Bypass in OpenSSH appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/11/SSH.webp",
-   "cves": [],
-   "first_seen": "2026-11-09T12:42:07.180566+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Users are advised to update to OpenSSH version 10.6p2 as soon as possible.",
-    "Successful exploitation could allow attackers to access accounts such as root, which should never accept a password.",
-    "Last week, OpenSSH rushed patches for the bug, and Alpine urged users to apply them and restart sshd as soon as possible.",
-    "As a mitigation, they can disable password authentication (on by default in OpenSSH) or disable SSH."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "2b1b80c8b882",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -8214,25 +8207,6 @@
    "instructions_checked": true
   },
   {
-   "id": "a278123ac0f5",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Iris Plaza Breach May Have Exposed Data of 7.7 Million Customers",
-   "link": "https://www.securityweek.com/iris-plaza-breach-may-have-exposed-data-of-7-7-million-customers/",
-   "published": "2026-11-09T12:41:27+00:00",
-   "summary": "Hackers compromised an external cloud service used by the shopping platform and may have stolen personal information from it. The post Iris Plaza Breach May Have Exposed Data of 7.7 Million Customers appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/11/Iris-Plaza.webp",
-   "cves": [],
-   "first_seen": "2026-11-09T13:57:02.206848+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "3772cdf174b0",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -8250,25 +8224,6 @@
     "I think that security professionals should resist the temptation that is AI for certain things – we will all benefit from it in the long run.",
     "He has consulted and advised numerous clients in both the public and private sectors at strategic and tactical levels.",
     "Frontier AI: Six Questions Every Enterprise Should Ask Security Vendors",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "a3066db4d12b",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Italy’s Meloni Blames Pro-Russian Hackers for Leak of Foreign Minister’s Data on the Dark Web",
-   "link": "https://www.securityweek.com/italys-meloni-blames-pro-russian-hackers-for-leak-of-foreign-ministers-data-on-the-dark-web/",
-   "published": "2026-11-09T12:22:12+00:00",
-   "summary": "Italian Foreign Minister Antonio Tajani said Saturday that his personal data had been disseminated on the dark web. The post Italy’s Meloni Blames Pro-Russian Hackers for Leak of Foreign Minister’s Data on the Dark Web appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/09/data-leak.jpeg",
-   "cves": [],
-   "first_seen": "2026-11-09T12:42:07.180566+00:00",
-   "image_checked": true,
-   "instructions": [
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
@@ -8717,6 +8672,27 @@
     "The objective, however, should ultimately be deeper integration.",
     "Transparency Should Favor the Defender Resistance to SBOM adoption has often centered on concerns about intellectual property and the possibility that providing detailed information about software components could benefit attackers.",
     "Organizations should be able to understand what their systems depend on, correlate that information with emerging threats and vulnerabilities, determine where actual exposure exists and make risk decisions quickly enough to matter."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "79abf73e84bb",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Telegram Widgets Hit by RCE Demos, Malware Warning Days After Launch",
+   "link": "https://www.securityweek.com/telegram-widgets-hit-by-rce-demos-malware-warning-days-after-launch/",
+   "published": "2026-11-16T12:48:03+00:00",
+   "summary": "Kaspersky suspects exploitation of Telegram’s new widgets to deliver WebRAT, as researchers demo RCE and Pavel Durov disputes the claims. The post Telegram Widgets Hit by RCE Demos, Malware Warning Days After Launch appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2024/08/Telegram-legal-e1794833200840.jpg",
+   "cves": [],
+   "first_seen": "2026-11-16T13:07:37.883172+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Its main recommendation was “do not launch widgets in Telegram until a fix is released.” Telegram CEO Pavel Durov promoted the widgets feature on X on November 10, saying that any message on the platform can now become an app.",
+    "SecurityWeek has reached out to Telegram for comment and will update this article if the company responds.",
+    "No Signs of Hacking in FAA Ground Stop as FBI Reportedly Probes Software Update"
    ],
    "instructions_checked": true
   },
