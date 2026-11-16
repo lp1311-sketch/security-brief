@@ -1,6 +1,55 @@
 {
  "items": [
   {
+   "id": "0fdf81d710af",
+   "title": "MC1547994: Plan for Change: Update your iOS/iPadOS and macOS Company Portal minimum version to v5.2608.0",
+   "link": "https://mc.merill.net/message/MC1547994",
+   "summary": "Starting February 2027, the minimum iOS/iPadOS and macOS Company Portal version will be v5.2608.0. Most users update automatically; those with app installation blocked may need manual updates. Prepare by informing helpdesk and pushing updates if device restrictions are enabled.",
+   "published": "2026-11-16T19:09:37+00:00"
+  },
+  {
+   "id": "d89f5eb65718",
+   "title": "MC1474106: Microsoft Defender for Office 365: New MessageContents table in Advanced Hunting for Microsoft Teams messages",
+   "link": "https://mc.merill.net/message/MC1474106",
+   "summary": "Microsoft Defender for Office 365 introduces a new MessageContents table in Advanced Hunting for Teams messages, enabling authorized security analysts to access Teams message snippets and metadata for improved threat investigations. Rollout is from late September to late November 2026, with access controlled by…",
+   "published": "2026-11-16T17:16:29+00:00"
+  },
+  {
+   "id": "957d8d5d6e08",
+   "title": "MC1489942: Microsoft Viva Insights: New Power BI report publishing capabilities for leaders",
+   "link": "https://mc.merill.net/message/MC1489942",
+   "summary": "Microsoft Viva Insights is expanding Power BI report publishing to leaders, allowing them to publish and distribute reports directly. The \"Analyst report publish\" setting is renamed \"Report publish,\" managed by admins and on by default. Rollout begins mid-December 2026, enabling enhanced report sharing and management…",
+   "published": "2026-11-16T17:14:21+00:00"
+  },
+  {
+   "id": "41b678b30855",
+   "title": "MC1449182: Microsoft 365 Copilot: Copilot Pages and Notebooks Creation in OneDrive",
+   "link": "https://mc.merill.net/message/MC1449182",
+   "summary": "Starting mid-October 2026, newly created Microsoft 365 Copilot Pages and Notebooks will be stored in OneDrive for Business, enabling existing governance, compliance, data protection, retention, and lifecycle management. Existing Copilot content remains unchanged; no user action is required.",
+   "published": "2026-11-16T17:10:38+00:00"
+  },
+  {
+   "id": "ffe9ad20912f",
+   "title": "MC1009930: Microsoft Teams: Distinguish invites among Attendee, Presenter, and Co-organizer emails",
+   "link": "https://mc.merill.net/message/MC1009930",
+   "summary": "Microsoft Teams will send separate event invites based on participant roles (Attendee, Presenter, Co-organizer) starting early January 2027, allowing organizers to manage distinct invites for town halls. The rollout is automatic, with no admin action needed, but user notification is recommended.",
+   "published": "2026-11-16T17:06:30+00:00"
+  },
+  {
+   "id": "1471190c0102",
+   "title": "MC1483529: Dynamics 365 and Power Platform– Information about storage validation for Dataverse-only tenants",
+   "link": "https://mc.merill.net/message/MC1483529",
+   "summary": "We plan to introduce staged storage validation for supported Dynamics 365 applications no earlier than January 2027, with finalized rollout timing expected to be shared by early December 2026. This change will give administrators clearer visibility into storage usage and advance notice of potential restrictions. To…",
+   "published": "2026-11-16T13:31:05+00:00"
+  },
+  {
+   "id": "c13e16186c56",
+   "title": "MC1483519: Dynamics 365 and Power Platform– Information about storage validation for Dataverse-only tenants",
+   "link": "https://mc.merill.net/message/MC1483519",
+   "summary": "We plan to introduce staged storage validation for supported Dynamics 365 applications no earlier than January 2027, with finalized rollout timing expected to be shared by early December 2026. This change will give administrators clearer visibility into storage usage and advance notice of potential restrictions. To…",
+   "published": "2026-11-16T13:22:49+00:00"
+  },
+  {
    "id": "4052c5e5baad",
    "title": "MC1552365: Dynamics 365 Field Service - Preserve actual booking End Time when completion is recorded later",
    "link": "https://mc.merill.net/message/MC1552365",
@@ -34,13 +83,6 @@
    "link": "https://mc.merill.net/message/MC1508238",
    "summary": "Microsoft Purview will enable sensitivity labels for Microsoft Entra cloud security groups starting mid-January 2027. This allows applying label-based governance and access policies to these groups, enhancing protection and compliance. Admins must enable this feature separately and ensure proper licensing; labels…",
    "published": "2026-11-14T00:20:47+00:00"
-  },
-  {
-   "id": "41b678b30855",
-   "title": "MC1449182: Microsoft 365 Copilot: Copilot Pages and Notebooks Creation in OneDrive",
-   "link": "https://mc.merill.net/message/MC1449182",
-   "summary": "Starting mid-October 2026, newly created Microsoft 365 Copilot Pages and Notebooks will be stored in OneDrive for Business, enabling existing governance, compliance, data protection, retention, and lifecycle management features to apply. Existing files remain unchanged; no user action is required.",
-   "published": "2026-11-14T00:17:07+00:00"
   },
   {
    "id": "ca84f3d52358",
@@ -309,13 +351,6 @@
    "published": "2026-11-10T23:58:34+00:00"
   },
   {
-   "id": "0fdf81d710af",
-   "title": "MC1547994: Plan for Change: Update your iOS/iPadOS Company Portal minimum version to v5.2608.0",
-   "link": "https://mc.merill.net/message/MC1547994",
-   "summary": "Starting early December, the minimum iOS/iPadOS Company Portal version will be v5.2608.0 to support new Apple OS releases. Most users update automatically; others will be prompted. If app installation is blocked via device restrictions, manual updates may be needed. Prepare helpdesk for update prompts.",
-   "published": "2026-11-10T23:54:32+00:00"
-  },
-  {
    "id": "e107cf4e6c4e",
    "title": "MC1488841: Microsoft Outlook: Update to default blocked file types in OwaMailboxPolicy",
    "link": "https://mc.merill.net/message/MC1488841",
@@ -384,41 +419,6 @@
    "link": "https://mc.merill.net/message/MC1546438",
    "summary": "Starting December 9, 2026, Claude models in Microsoft Copilot will be enabled by default for eligible EU and EFTA tenants, with data processing moved into the EU Data Boundary. Admins can opt out or limit access before that date via the Microsoft 365 admin center.",
    "published": "2026-11-10T01:07:53+00:00"
-  },
-  {
-   "id": "459561823df8",
-   "title": "MC1546447: Microsoft Defender for Office 365: Updated recipient inclusion logic for threat protection policies",
-   "link": "https://mc.merill.net/message/MC1546447",
-   "summary": "Microsoft Defender for Office 365 will change recipient inclusion logic in threat protection policies from Match all (AND) to Match any (OR) when multiple recipient types are specified. This update, rolling out in December 2026, expands policy scope upon modification but does not auto-convert existing policies.",
-   "published": "2026-11-10T00:50:32+00:00"
-  },
-  {
-   "id": "0e72f4882fa8",
-   "title": "MC1546429: Power BI retiring standalone Copilot experiences (preview)",
-   "link": "https://mc.merill.net/message/MC1546429",
-   "summary": "Power BI will retire the standalone Copilot preview in January 2027, replacing it with Microsoft 365 Copilot enabled by default from December 8, 2026. Standalone Copilot access and settings will be removed; organizations should prepare for this transition and notify users accordingly.",
-   "published": "2026-11-10T00:22:19+00:00"
-  },
-  {
-   "id": "d5e1eda7fe2d",
-   "title": "MC1489971: Microsoft Purview DLP: Improved setup and Intune multi-admin approval support for unmanaged apps in Edge for Business",
-   "link": "https://mc.merill.net/message/MC1489971",
-   "summary": "Microsoft Purview DLP will improve setup and activation for unmanaged apps in Edge for Business starting late November 2026, adding support for Intune multi-admin approval. Enhancements include clearer status, detailed errors, and task coordination between Purview and Intune admins, with no policy migration needed.",
-   "published": "2026-11-10T00:12:37+00:00"
-  },
-  {
-   "id": "e11207858655",
-   "title": "MC1546411: Retirement of Viva Insights (personal insights) and Viva Learning usage reports",
-   "link": "https://mc.merill.net/message/MC1546411",
-   "summary": "Viva Insights personal insights and Viva Learning usage reports will be retired from the Microsoft 365 admin center by mid-November 2026. Viva Learning analytics remain accessible within the Viva Learning app. Admins should update documentation and inform reporting administrators of this change.",
-   "published": "2026-11-10T00:04:10+00:00"
-  },
-  {
-   "id": "bd232a4994a0",
-   "title": "MC1546409: Microsoft Teams: Retirement of off-network invitations to Teams Free",
-   "link": "https://mc.merill.net/message/MC1546409",
-   "summary": "Microsoft Teams will retire off-network invitations for Teams Free accounts starting December 2026. Users can no longer invite external people via email or chat links to create Teams Free accounts. Existing Teams Free collaboration and federation remain unchanged. No admin action is needed, but user guidance should be…",
-   "published": "2026-11-10T00:03:36+00:00"
   }
  ]
 }
