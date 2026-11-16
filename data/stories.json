@@ -468,6 +468,28 @@
    "instructions_checked": true
   },
   {
+   "id": "6db60cdc6268",
+   "source": "borncity",
+   "source_name": "Born's IT and Windows Blog",
+   "official": false,
+   "source_type": "news",
+   "title": "Microsofts Cloud- und E-Mail-Ausfall am 12.11.2026 durch Juli-Update",
+   "link": "https://borncity.com/blog/2026/11/16/microsofts-cloud-und-e-mail-ausfall-am-12-11-2026-durch-juli-update/",
+   "published": "2026-11-16T15:13:54+00:00",
+   "summary": "Nutzer von Microsofts E-Mail- und Cloude-Diensten (outlook.com, Exchange Online, Teams etc.) erlebten ja zum 12. und 13. November 2026 ein Desaster. Die Funktionen waren beeinträchtigt und weltweit ließen sich keine E-Mails über Microsoft austauschen. Nun hat Microsoft einen ersten Post-Incident-Report … Weiterlesen →…",
+   "image": "https://borncity.com/blog/wp-content/uploads/2026/03/Mail.jpg",
+   "cves": [],
+   "first_seen": "2026-11-16T15:56:24.971181+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Nun hat Microsoft einen ersten Post-Incident-Report vorgelegt: Ein Update von Juli 2026 war schuld.",
+    "Dieser Fehler war das Ergebnis einer Korrektur (Update), die speziell für Microsoft 365-Netzwerk-Gateway-Server vorbereitet worden war.",
+    "Das Update durchlief \"eine sichere Bereitstellung\" und wurde über mehrere Wochen hinweg weltweit flächendeckend ausgerollt.",
+    "Nachdem die Entwickler den Fehler als Ursache bestätigt hatten, entwickelten diese ein Update, das den Codepfad in den zuvor als fehlerfrei bekannten Zustand zurückversetzte."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "453a571c3295",
    "source": "grahamcluley",
    "source_name": "Graham Cluley",
@@ -3689,24 +3711,6 @@
    "instructions_checked": true
   },
   {
-   "id": "7bdf0c6dc5dc",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Bitter Hackers Deploy New PapRAT Backdoor in Cyberespionage Campaign Targeting South Asia",
-   "link": "https://thehackernews.com/2026/11/bitter-hackers-deploy-new-paprat.html",
-   "published": "2026-11-09T14:31:29+00:00",
-   "summary": "The South Asian cyber espionage group known as Bitter (aka APT-C-08, APT-Q-37, Hazy Tiger, Orange Yali, T-APT-17, and TA397) has been observed targeting South Asian organizations with a previously unreported remote access trojan called PapRAT. \"PapRAT has both C++ and Rust implementations,\" Fortinet FortiGuard Labs…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQwQpjbb2oT57o807l7YmQ31V2RbyxqqO4hENkKlfikKKH-LeqSUiYz5AaPCCFWml-l_RaN1JMiwbJa9lJe7z7Ijzdk66icRP70eETLZ7lLomkSa3JjezoxbRNeDEkTv0K-26dSzHKxAjc7xyLA9RbIiERPLqyRu5QzfyrPeyIA4dfLzMil5wDkYN9n4sG/s1600/command.jpg",
-   "cves": [],
-   "first_seen": "2026-11-09T16:00:28.722071+00:00",
-   "instructions": [
-    "\"Organizations should treat unexpected LNK files, URL shortcuts, disk images, and MSI packages with caution, particularly when delivered through unsolicited messages.\""
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "7e413807cc2f",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -4711,27 +4715,6 @@
    "instructions_checked": true
   },
   {
-   "id": "2c42fb617031",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "⚡ Weekly Recap: SSHole Exploited, APT Root RCE, Robot Takeovers, 15K Hacked Sites, and More",
-   "link": "https://thehackernews.com/2026/11/weekly-recap-sshole-exploited-apt-root.html",
-   "published": "2026-11-09T13:28:25+00:00",
-   "summary": "A system doesn't always need a complicated bug to let someone in. Sometimes, a blank password is enough. That's one of the bigger stories this week. And it gets worse when the tools meant to keep systems updated or running safely become part of the attack. Elsewhere, attackers are hiding inside normal web traffic…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLQ4v79OUmrbGdf2uJWMlUUmpCSu70Pr6v7oyodgSjFMfLU6JIe6Mr7xpp7AnqIX_vmKca44ImxEkczL88e_4sr2oBw0NL3Zh_JVEOb4cYmYg5pjbrITVv6KgPsv13-RrlBjq6bu7inR7w5-seDsUZvoqn6q7idkElfWysH1itsfgI5-NmFZ-BybjG0gR0/s1600/rr.jpg",
-   "cves": [],
-   "first_seen": "2026-11-09T14:55:43.306627+00:00",
-   "instructions": [
-    "\"Under specific conditions, when APT is configured to use HTTP package sources with retry settings enabled, a third-party with a network position between the host and the package mirror can cause APT to install a package that did not pass verification,\" Amazon said in an advisory.",
-    "A setting nobody checked, an update nobody questioned, or a system left online longer than it should have been.",
-    "OpenSSH Flaw Sees Exploitation Attempts — Threat actors are attempting to exploit a recently disclosed security flaw impacting OpenSSH that can enable sign-ins to accounts that have no password set.",
-    "Debian and Ubuntu APT Flaw Allows Code Execution as Root — A vulnerability in the APT package manager (CVE-2026-109518, CVSS score: 7.7) can be exploited to install a package under certain conditions and achieve code execution with elevated privileges."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "fe3ab0485c82",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -4860,6 +4843,27 @@
    "instructions_checked": true
   },
   {
+   "id": "96e4cedac8bf",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "British government ‘complacent’ on cyber threats from hostile states, peers warn",
+   "link": "https://therecord.media/british-government-complacent-foreign-cyber-threats",
+   "published": "2026-11-16T14:21:00+00:00",
+   "summary": "The National Resilience Committee’s report, published eight days before a major vote on Britain’s landmark Cyber Security and Resilience Bill, warns that the legislation falls short of introducing the necessary security standards needed to protect the country.",
+   "image": "https://cms.therecord.media/uploads/uk_parliament_1_bc27c77ca2.jpg",
+   "cves": [],
+   "first_seen": "2026-11-16T15:56:24.971181+00:00",
+   "image_checked": true,
+   "instructions": [
+    "The influential committee said the government “should stop being squeamish about telling it straight to the public about the kind of threats we face.”",
+    "Paddy McGuinness, a former British deputy national security adviser, was asked during a witness session whether the government’s plans matched the threat. “The answer to your core question about whether it is adequate to the severity of the cyber threat is no,” he said.",
+    "It urged ministers to “widen the scope of cyber security regulation… ensuring that regulators have sufficient resources and capacity to enforce requirements effectively.”"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "810ecd44c3ac",
    "source": "therecord",
    "source_name": "The Record",
@@ -4895,25 +4899,6 @@
     "The advisories that prompted ConnectWise to act came after cybersecurity firm Huntress said it saw 288 affected endpoints across 48 organizations targeted within 90 minutes.",
     "The company disabled RMM+ in the 400 customer environments and urged customers with on-premises systems to disable it themselves because ConnectWise cannot do it for them.",
     "“Disabling extensions and resetting credentials alone may not remove unauthorized software, persistence mechanisms, or access already established on endpoints,” the company said, warning of unusual sign-ins and repeated login failures."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "e9e255b08220",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Alleged AI-aided cyberattack exploits assistant interface to breach German web host",
-   "link": "https://therecord.media/cyberattack-germany-ai-mittwald",
-   "published": "2026-11-09T14:15:00+00:00",
-   "summary": "Hackers allegedly assisted by AI breached a German web hosting company through a tool designed to allow customers to connect AI assistants to their accounts, the company disclosed.",
-   "image": "https://cms.therecord.media/uploads/Mittwald_CM_Service_c430f4d1f0.jpg",
-   "cves": [],
-   "first_seen": "2026-11-09T14:55:43.306627+00:00",
-   "image_checked": true,
-   "instructions": [
-    "According to Mittwald’s own timeline, the attacker first tested the MCP flaw amid a global scramble in October to apply patches for PHP2Shell."
    ],
    "instructions_checked": true
   },
@@ -5009,23 +4994,6 @@
    "instructions_checked": true
   },
   {
-   "id": "5c31e462e855",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Pro-Russian hackers target European officials, offer rewards for personal information",
-   "link": "https://therecord.media/hackers-russia-italy-noname",
-   "published": "2026-11-09T13:15:00+00:00",
-   "summary": "Pro-Russian hackers published the personal information of Italian Foreign Minister Antonio Tajani and other senior European officials on the dark web, offering cryptocurrency rewards for additional details about them and their families.",
-   "image": "https://cms.therecord.media/uploads/Tajani_d10cebe681.jpg",
-   "cves": [],
-   "first_seen": "2026-11-09T13:57:02.206848+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "d62040292e65",
    "source": "therecord",
    "source_name": "The Record",
@@ -5055,6 +5023,23 @@
    "image": "https://cms.therecord.media/uploads/Central_Asia_7feabe2c24.jpg",
    "cves": [],
    "first_seen": "2026-11-12T13:56:54.338734+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "81c7c458d757",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Lithuanian customs agency restores services after cyberattack, possible data breach",
+   "link": "https://therecord.media/lithuania-customs-agency-cyberattack",
+   "published": "2026-11-16T14:06:00+00:00",
+   "summary": "A November 10 attack prompted Lithuanian Customs to temporarily shut down its main user management portal. It made progress on fixing the problem over the weekend.",
+   "image": "https://cms.therecord.media/uploads/lithuanian_customs_vehicle_a3900e01a6.jpg",
+   "cves": [],
+   "first_seen": "2026-11-16T15:56:24.971181+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -5191,6 +5176,23 @@
    "instructions_checked": true
   },
   {
+   "id": "b360f2c4a357",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "EU sanctions pro-Russia hackers, two dozen staff at Kremlin disinformation contractor",
+   "link": "https://therecord.media/russia-europe-sanctions-doppelganger",
+   "published": "2026-11-16T14:15:00+00:00",
+   "summary": "The European Union sanctioned a pro-Russian hacktivist group and two dozen employees of the Moscow firm behind the Doppelgänger disinformation campaign.",
+   "image": "https://cms.therecord.media/uploads/Kremlin_2_2438a45fec.jpg",
+   "cves": [],
+   "first_seen": "2026-11-16T15:56:24.971181+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "633b52d3362d",
    "source": "therecord",
    "source_name": "The Record",
@@ -5277,25 +5279,6 @@
    "first_seen": "2026-11-13T15:12:20.611857+00:00",
    "image_checked": true,
    "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "b5262f310e47",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Ukraine arrests four in $5 million crypto scam targeting Germans",
-   "link": "https://therecord.media/ukraine-arrests-scam-call-centers-germany",
-   "published": "2026-11-09T15:24:00+00:00",
-   "summary": "Ukraine's cyber police said the four arrested men included the alleged leader of the scam call centers.",
-   "image": "https://cms.therecord.media/uploads/ukraine_police_scam_call_center_crackdow_47917126a9.jpg",
-   "cves": [],
-   "first_seen": "2026-11-09T16:00:28.722071+00:00",
-   "image_checked": true,
-   "instructions": [
-    "In a statement Friday, Ukraine's cyber police said the suspects operated call centers across the country, posing as financial advisers and persuading people in the European Union, particularly Germany, to invest in cryptocurrencies and stocks through fraudulent online platforms."
-   ],
    "instructions_checked": true
   },
   {
@@ -5754,6 +5737,28 @@
    "instructions_checked": true
   },
   {
+   "id": "1cea14202697",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "7 Tips For Complying with CJIS Password and MFA Requirements",
+   "link": "https://www.bleepingcomputer.com/news/security/7-tips-for-complying-with-cjis-password-and-mfa-requirements/",
+   "published": "2026-11-16T15:01:11+00:00",
+   "summary": "The FBI's latest CJIS Security Policy requires law enforcement agencies to strengthen password protections and enforce MFA across privileged and non-privileged accounts. Specops Software outlines seven practical steps to meet these requirements, block compromised passwords, and maintain compliance.",
+   "image": "https://www.bleepstatic.com/content/posts/2026/11/12/specops-password-security.jpg",
+   "cves": [],
+   "first_seen": "2026-11-16T15:56:24.971181+00:00",
+   "image_checked": true,
+   "instructions": [
+    "The FBI's latest CJIS Security Policy sets clear requirements for password management and MFA. these are Priority 1 (P1) controls, so must be implemented immediately to comply.",
+    "However, we recommend going beyond these minimums and encouraging passphrases of at least 15 characters.",
+    "Agencies must maintain a list of commonly used, predictable, and compromised passwords.",
+    "This should include passwords exposed in previous breaches, dictionary words, sequential characters, and context-specific terms such as usernames or agency names."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "ccdd6c7f3ffe",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -6057,21 +6062,22 @@
    "instructions_checked": true
   },
   {
-   "id": "47fb58a628fd",
+   "id": "d29e040f4044",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
    "official": false,
    "source_type": "news",
-   "title": "FBI agent stole $2.5 million in crypto from hackers under investigation",
-   "link": "https://www.bleepingcomputer.com/news/security/fbi-agent-stole-25-million-in-crypto-from-hackers-fraud-victims/",
-   "published": "2026-11-09T14:34:03+00:00",
-   "summary": "A former FBI agent has pleaded guilty to stealing nearly $2.5 million from the wallets of fraud victims and nation-state hackers under investigation.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/09/Cryptocurrency_headpic.jpg",
+   "title": "Fandango says hackers stole payment card details from checkout pages",
+   "link": "https://www.bleepingcomputer.com/news/security/fandango-says-hackers-stole-payment-card-details-from-checkout-pages/",
+   "published": "2026-11-16T15:44:21+00:00",
+   "summary": "Ticket seller Fandango Media is notifying customers about a data breach that exposed payment card details entered on its checkout pages.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/16/fandango.jpg",
    "cves": [],
-   "first_seen": "2026-11-09T14:55:43.306627+00:00",
+   "first_seen": "2026-11-16T15:56:24.971181+00:00",
    "image_checked": true,
    "instructions": [
-    "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
+    "Users who bought movie tickets from Fandango during the exposure window should monitor their statements and account activity closely, and report any unauthorized purchases to their card issuer.",
+    "BleepingComputer has contacted Fandango to learn more, and we will update this post with their response once received."
    ],
    "instructions_checked": true
   },
@@ -6178,6 +6184,26 @@
     "Google has released emergency security updates to patch a new Chrome vulnerability exploited in zero-day attacks, the eighth such flaw since the start of the year.",
     "Although Google says the security update could take days or weeks to reach all Chrome users, it was available immediately when BleepingComputer checked for updates today.",
     "If you don't want to update the web browser manually, you can also let Chrome check for updates on its own, as it will automatically install them after the next launch."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "2e40619c86da",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Google warns that fully-automated AI attacks are coming soon",
+   "link": "https://www.bleepingcomputer.com/news/security/google-warns-that-fully-automated-ai-attacks-are-coming-soon/",
+   "published": "2026-11-16T14:00:00+00:00",
+   "summary": "Threat actors are now relying on agentic workflows powered by AI-based offensive frameworks to automate vulnerability discovery and exploitation, accelerating attacks to machine speed.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/09/robot-hacker.jpg",
+   "cves": [],
+   "first_seen": "2026-11-16T15:56:24.971181+00:00",
+   "image_checked": true,
+   "instructions": [
+    "In an advisory last week, the FBI warned that multiple threat actors started weaponizing the ARTEX AI pentesting framework since August and launched attacks against organizations in the financial, government, technology, defense, healthcare, and other sectors.",
+    "Google warns that the deployment of such frameworks in attacks has dramatically decreased the time defenders have to patch their systems, while it also produces false leads."
    ],
    "instructions_checked": true
   },
@@ -6633,26 +6659,6 @@
    "instructions_checked": true
   },
   {
-   "id": "82ab336fed5a",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "The Biggest Threat to Your GRC Job Isn’t AI. It’s Ignoring AI.",
-   "link": "https://www.bleepingcomputer.com/news/security/the-biggest-threat-to-your-grc-job-isnt-ai-its-ignoring-ai/",
-   "published": "2026-11-09T15:05:15+00:00",
-   "summary": "AI agents are taking over routine governance, risk, and compliance tasks, forcing GRC professionals to rethink the skills needed to stay relevant. Anecdotes examines three essential skills for the AI-driven GRC workplace: data literacy, agent governance, and communication.",
-   "image": "https://www.bleepstatic.com/content/posts/2026/11/09/dont-dumb-down-your-ai.jpg",
-   "cves": [],
-   "first_seen": "2026-11-09T16:00:28.722071+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Yair is a CEO on a mission to remove the frustration that typically accompanies enterprise GRC.",
-    "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "bbb8a6727085",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -6682,25 +6688,6 @@
    "image": "https://www.bleepstatic.com/content/hl-images/2026/05/15/Russia.jpg",
    "cves": [],
    "first_seen": "2026-11-10T10:17:29.418077+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "7ef80ee6e03a",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "US bans MEXC crypto exchange over sanctions evasion, cybercrime links",
-   "link": "https://www.bleepingcomputer.com/news/security/us-bans-mexc-crypto-exchange-over-sanctions-evasion-cybercrime-links/",
-   "published": "2026-11-09T13:28:56+00:00",
-   "summary": "The US Department of the Treasury has cut off the MEXC Global crypto exchange from the US financial system over sanctions evasion and links with cybercrime gangs.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/09/US_Treasury_Department.jpg",
-   "cves": [],
-   "first_seen": "2026-11-09T13:57:02.206848+00:00",
    "image_checked": true,
    "instructions": [
     "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
@@ -6919,7 +6906,7 @@
    "title": "People Are Getting Weird About AI",
    "link": "https://www.darkreading.com/cyber-risk/people-are-getting-weird-about-ai",
    "published": "2026-11-09T23:06:22+00:00",
-   "summary": "Dark Reading Confidential Episode 22: You can love AI without being blind to cybersecurity being sacrificed for utility. The tendency for humans to anthropomorphize the conversations and interactions we're having with AI is growing into potential delusion.",
+   "summary": "Dark Reading Confidential Episode 22: You can love AI without being blind to the cybersecurity risks. The tendency for humans to anthropomorphize the conversations and interactions we're having with AI is growing into potential delusion.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt0469f94bd17817ff/6642699959fdc64aa5f9c5fa/dark-reading-confidential-logo-sq.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-10T20:15:59.967236+00:00",
@@ -7087,22 +7074,6 @@
    "instructions_checked": true
   },
   {
-   "id": "32fa2d4c90f6",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "NIST: Solo Shouldn't Mean Less Secure",
-   "link": "https://www.darkreading.com/cybersecurity-operations/nist-solo-shouldnt-mean-less-secure",
-   "published": "2026-11-09T15:46:10+00:00",
-   "summary": "New guidance provides a basic framework for less-technical solo business owners, but it may miss the mark on how to secure technology that requires no human oversight.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt5f2e2db3c0b05540/6af1ece3b6c48b8bfef3da2f/GettyImages-2282783540.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-09T17:08:40.722078+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "85970b304532",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -7207,7 +7178,7 @@
    "title": "ArcticRAT Cybercrime Gang Profiles Victim Finances With AI",
    "link": "https://www.darkreading.com/mobile-security/arcticrat-cybercrime-gang-profiles-victim-finances-ai",
    "published": "2026-11-13T20:20:27+00:00",
-   "summary": "The Android malware has expanded from focusing on crypto theft to full device control, and the attackers have added advanced analysis of stolen information.",
+   "summary": "The Android malware has expanded from focusing on cryptocurrency theft to full device control, and the attackers have added advanced analysis of stolen information.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt876ae2249da592eb/6af77117471ce44823395b3f/smartphone_Ao_Zaa_Studio_shutterstock.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-13T23:05:37.437281+00:00",
@@ -7674,6 +7645,23 @@
    "instructions_checked": true
   },
   {
+   "id": "0f4c5e346584",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Barracuda Hacked Amid Surge in Artex-Powered Cyberattacks",
+   "link": "https://www.securityweek.com/barracuda-hacked-amid-surge-in-artex-powered-cyberattacks/",
+   "published": "2026-11-16T15:07:32+00:00",
+   "summary": "Chinese threat actors are broadly adopting the agentic AI penetration testing framework to accelerate their attacks. The post Barracuda Hacked Amid Surge in Artex-Powered Cyberattacks appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2023/05/Barracuda-zero-day-e1794841590191.jpg",
+   "cves": [],
+   "first_seen": "2026-11-16T15:56:24.971181+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "21b7ddf6e1b0",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -7866,6 +7854,23 @@
    "instructions_checked": true
   },
   {
+   "id": "67c2edf75728",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Cursor Supply Chain Attack Started at Fireworks AI",
+   "link": "https://www.securityweek.com/cursor-supply-chain-attack-started-at-fireworks/",
+   "published": "2026-11-16T15:45:43+00:00",
+   "summary": "The attacker stole an access key from Fireworks and used it to exfiltrate credentials that enabled them to push malicious Claude Code extension copies. The post Cursor Supply Chain Attack Started at Fireworks AI appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2023/01/Cybersecurity_News-SecurityWeek.jpg",
+   "cves": [],
+   "first_seen": "2026-11-16T15:56:24.971181+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "0ea3d75301ac",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -8028,6 +8033,25 @@
    "instructions": [
     "Chrome Update Patches Exploited XML Zero-Day, Eighth This Year",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "eea617c7ce17",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Google Project Zero Sets Course for 30-Day Disclosure Deadline",
+   "link": "https://www.securityweek.com/google-project-zero-sets-course-for-30-day-disclosure-deadline/",
+   "published": "2026-11-16T15:31:25+00:00",
+   "summary": "It will move to a 60-day vulnerability disclosure window in February 2027 and to a 30-day window in January 2028. The post Google Project Zero Sets Course for 30-Day Disclosure Deadline appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2024/07/Google.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-16T15:56:24.971181+00:00",
+   "image_checked": true,
+   "instructions": [
+    "So far, Project Zero’s policy has been a well-known one: vendors were given 90 days to patch vulnerabilities before public disclosure and granted a 30-day grace period for patch roll-out."
    ],
    "instructions_checked": true
   },
@@ -8526,27 +8550,6 @@
    "instructions_checked": true
   },
   {
-   "id": "ca8912a2e710",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Plex2Shell Exploited Against QNAP NAS Users",
-   "link": "https://www.securityweek.com/plex2shell-exploited-against-qnap-nas-users/",
-   "published": "2026-11-09T13:13:28+00:00",
-   "summary": "Threat actors are exploiting the four-flaw chain to hack the Plex Media Server application on QNAP NAS devices. The post Plex2Shell Exploited Against QNAP NAS Users appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2024/12/QNAP.jpeg",
-   "cves": [],
-   "first_seen": "2026-11-09T13:57:02.206848+00:00",
-   "image_checked": true,
-   "instructions": [
-    "QNAP NAS users are advised to update to Plex Media Server version 1.43.3 or later as soon as possible.",
-    "Devices accessible from the internet should be considered potentially compromised and Plex should be reinstalled, QNAP says, adding that the passwords for both Plex and the NAS should be immediately rotated. “If you do not need remote access to Plex, disable Plex Remote Access and do not forward port 32400.",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "f67825a82ae8",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -8589,25 +8592,6 @@
     "All organizations are advised to update their Barracuda products as soon as possible and ensure that their administrative interfaces are not exposed to the internet.",
     "Access to them should be restricted only to trusted internal networks.",
     "On Tuesday, the US cybersecurity agency CISA added CVE-2026-116606 and CVE-2026-111560 to its Known Exploited Vulnerabilities ( KEV ) catalog, urging federal agencies to patch them within three days, as mandated by BOD 26-04."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "7cf7e23f8890",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Revolve Puts Data Breach Victim Count at 1.5 Million",
-   "link": "https://www.securityweek.com/revolve-puts-data-breach-victim-count-at-1-5-million/",
-   "published": "2026-11-09T14:08:08+00:00",
-   "summary": "Online fashion retailer Revolve has told regulators that the September cyberattack affected more than 1.5 million individuals. The post Revolve Puts Data Breach Victim Count at 1.5 Million appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2025/07/data-breach-healthcare-medical.jpg",
-   "cves": [],
-   "first_seen": "2026-11-09T14:55:43.306627+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
   },
