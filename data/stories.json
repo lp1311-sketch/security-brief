@@ -3514,6 +3514,26 @@
    "instructions_checked": true
   },
   {
+   "id": "f159cf23a7b2",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Amazon Uncovers AI Agent Campaign Targeting LiteLLM, Dify, and Other Apps for API Keys",
+   "link": "https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html",
+   "published": "2026-11-16T07:34:21+00:00",
+   "summary": "Attackers' AI agents have been hunting for weak spots in internet-exposed AI apps such as LiteLLM, One API, and Dify to steal the AI provider keys stored inside, according to the agents' own records. The records, which Amazon's threat intelligence team captured with decoy servers, describe stolen keys being used to…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigoyCtEKcD7TM_5vDkKiZYFdk_l4-js7HNuvMXzZbVqUbEgq1nnD2vEZgZ0kL9CdmOkITC0Rbd-ebTkSX-R4NPKwWZXzUD6zS0g9nEfnlXw3njm3oW2Se97qbT7lIfZEL56X3IIaZAildTni9-zQJu5sa4Lhvi_mVlbTeZFyFtezOMHJ_bDhJWfG7KQ8eh/s1600/amazon.jpg",
+   "cves": [],
+   "first_seen": "2026-11-16T09:59:34.215483+00:00",
+   "instructions": [
+    "The team recommends treating AI apps, model gateways, and inference endpoints like other production systems, assuming that exposed secrets will be found quickly, and watching for misuse through unexpected spending or unusual usage.",
+    "Search configuration files, environment variables, deployment scripts, CI/CD pipelines and databases for embedded secrets, keep scanning repositories and container images for exposed ones, and rotate exposed credentials quickly, as the FBI advises.",
+    "Change default administrator credentials, such as LiteLLM's default master key, and do not leave a new install unfinished where an outsider could take it over."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "0e6f77f0820c",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -3681,6 +3701,24 @@
    "cves": [],
    "first_seen": "2026-11-10T16:31:18.268744+00:00",
    "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "1a13d7025b37",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "BO Team Exploits Log4Shell in VMware vCenter, Compromises Russian Firm's Code-Signing Server",
+   "link": "https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html",
+   "published": "2026-11-16T06:53:34+00:00",
+   "summary": "An investigation into suspicious activity within a Russian software developer's network has uncovered a months-long compromise of its development infrastructure and a software code-signing server. The activity, documented by Kaspersky's ICS CERT team after it was contacted by the affected developer in June 2025, has…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAvzoKykaMIpa6xx92YudipfUoEQnSkrE6p2CiWEVra5izr5GfuNQGOnfRuF0XV99v1IPRFe2Q6BF27UEq3BnWFS5onw97dt3hvszilQDANdtRdYi0_hTDOrKQvuwGn1mY_m-QTabV3jwWCNwXs_OizK2GLF3Eks5HJj5I7kbmA2IztruSBVjq5WOcxEM-/s1600/log4shell.jpg",
+   "cves": [],
+   "first_seen": "2026-11-16T09:59:34.215483+00:00",
+   "instructions": [
+    "It's suspected that the attackers likely attempted to execute a malicious WMI script and install a backdoor similar to the Linux variant in the temporary files directory."
+   ],
    "instructions_checked": true
   },
   {
@@ -4559,22 +4597,6 @@
    "instructions_checked": true
   },
   {
-   "id": "e8082cc54dfb",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Taiwan-Based Hacker Used BOSSAI AI Agents to Steal Taipei Emergency Dispatch Records",
-   "link": "https://thehackernews.com/2026/11/taiwan-based-hacker-used-bossai-ai.html",
-   "published": "2026-11-09T09:01:50+00:00",
-   "summary": "A single attacker using AI agents pulled emergency dispatch records covering seven Taipei districts, researchers at Acronis's Threat Research Unit said last week. The agents also found a Taipei fire department platform exposing patient data from 2018, including ECG readings and ambulance video footage, without a…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhd53Ql49F0iuQEtdvfoxOLNTuQnYM5oGQkqnQ3ym4aIW-HVZuHtOqzyi0IdwUxpFj5qU_jbUEKzPXG4Wx7Uj7g2-UKDotvOh0_AlNlkEIpgLbEBDuQxDkuxDFlukNKKbWXXZv1xCeHEtoOQ_Z1XQUshkJmlBaOmGQzMbryg6KHbOdt8IR7MNQ5oADM-GM/s1600/CYBER-AI.jpg",
-   "cves": [],
-   "first_seen": "2026-11-09T10:36:08.277872+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "0215fb6873ae",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -5411,6 +5433,25 @@
    "instructions_checked": true
   },
   {
+   "id": "7d4f6584a3c9",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "New NoisyTCP vulnerability lets attackers crash Linux servers",
+   "link": "https://www.bleepingcomputer.com/news/linux/new-noisytcp-linux-kernel-flaw-lets-attackers-crash-servers/",
+   "published": "2026-11-16T09:30:04+00:00",
+   "summary": "An 11-year-old Linux kernel vulnerability, dubbed NoisyTCP, affects almost all Linux distributions and lets attackers crash systems running Nginx, Apache, and SSH servers with default configurations.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/29/Linux_tux.jpg",
+   "cves": [],
+   "first_seen": "2026-11-16T09:59:34.215483+00:00",
+   "image_checked": true,
+   "instructions": [
+    "\"To trigger this vulnerability, a stale ehash lookup and the freeing and reallocation of an existing request socket must proceed concurrently in different RX contexts."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "fd416d58448a",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -5517,6 +5558,28 @@
     "\"We recommend you install the latest security update for your device as it contains important improvements and issue resolutions, including this one.\"",
     "While Microsoft has yet to provide an official workaround for those who can't immediately install the November 2026 security updates, some users have restored audio on affected Windows PCs by switching to 2-channel mode.",
     "In January 2025, Microsoft addressed a similar issue triggered by the KB5050094 optional preview cumulative update, which caused audio playback issues and Code 10 errors on Windows 11 24H2 systems with USB audio device drivers."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "a60b8a453d05",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Microsoft pushes Windows emergency updates to fix activation failures",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-new-windows-emergency-updates-fix-activation-licensing-failures/",
+   "published": "2026-11-16T08:26:52+00:00",
+   "summary": "Microsoft has released emergency out-of-band updates to fix Windows activation and licensing failures caused by this month's security updates.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/16/Windows.jpg",
+   "cves": [],
+   "first_seen": "2026-11-16T09:59:34.215483+00:00",
+   "image_checked": true,
+   "instructions": [
+    "The Windows 11, version 23H2 optional OOB update is available through Windows Update and the Microsoft Update Catalog and can be installed from Settings > Windows Update > Advanced options > Optional updates to download.",
+    "For Windows Server 2025, Windows Server 2022, Windows Server 2019, and Windows 10, the out-of-band updates are available only through the Microsoft Update Catalog.",
+    "\"This cumulative update includes the improvements from the November 2026 Windows security update,\" Microsoft added .",
+    "Last week, it also acknowledged that Windows updates released since the October Patch Tuesday are triggering SQL Server performance and stability issues and that the November 2026 Windows 11 security updates fail to install on systems with the October 2026 preview update."
    ],
    "instructions_checked": true
   },
@@ -7971,28 +8034,6 @@
    "instructions_checked": true
   },
   {
-   "id": "33c824e20702",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Google DeepMind’s AI Agents Make 1024-Bit RSA Keys Cheaper to Attack",
-   "link": "https://www.securityweek.com/google-deepminds-ai-agents-make-1024-bit-rsa-keys-cheaper-to-attack/",
-   "published": "2026-11-09T08:35:50+00:00",
-   "summary": "Working with cryptographers, DeepMind’s AI agents cut the cost of forging RSA-1024 signatures and found a cheaper way to factor keys. The post Google DeepMind’s AI Agents Make 1024-Bit RSA Keys Cheaper to Attack appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2025/07/Encryption-Chaos-Theory.jpg",
-   "cves": [],
-   "first_seen": "2026-11-09T09:42:58.590773+00:00",
-   "image_checked": true,
-   "instructions": [
-    "The first finding involves digital signatures and padding, the preset data that many signature standards add to a message to bring it to a fixed block size.",
-    "DeepMind determined that it depends on the share of the signed block the attacker controls. “Once they control roughly half of the block or more, padding adds no protection at all,” Kohli explained .",
-    "Forgery is harder when the attacker controls less of the block, such as a 32-byte hash.",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "38532208b5af",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -8308,6 +8349,28 @@
     "Its service advisories did not report evidence of malicious activity.",
     "Microsoft’s service advisories have not linked the vulnerability to the Exchange Online outage.",
     "The disruption came two days after Microsoft released its November Patch Tuesday updates, which addressed 1,094 vulnerabilities across its products."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "47ca43e224a0",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Microsoft Rules Out Cyberattack in Outage, Warns of Phishing Campaign",
+   "link": "https://www.securityweek.com/microsoft-rules-out-cyberattack-in-outage-warns-of-phishing-campaign/",
+   "published": "2026-11-16T08:15:12+00:00",
+   "summary": "Phishing emails posing as Microsoft 365 service notices referenced the real outage incident and threatened to delete held messages. The post Microsoft Rules Out Cyberattack in Outage, Warns of Phishing Campaign appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/11/AI-phishing.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-16T09:59:34.215483+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Microsoft recommended that security teams examine suspicious emails and links, investigate user clicks, and review their Safe Links policies.",
+    "It also advised organizations to verify service incidents directly through the Microsoft 365 admin center.",
+    "The company traced the failure to an earlier network capacity upgrade, with a subsequent network change exposing the problem.",
+    "ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure"
    ],
    "instructions_checked": true
   },
@@ -8671,6 +8734,28 @@
     "Burnout Is a Security Risk (2:00 PM ET) – Patrick Kelley, CISO & Founder of Critical Path Security, will provide a vital playbook for measuring and mitigating team fatigue before it leads to a security incident.",
     "Chrome Update Patches Exploited XML Zero-Day, Eighth This Year",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "aaca3d274aab",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Tor Updates DoS Defenses Again as Relay Attacks Continue",
+   "link": "https://www.securityweek.com/tor-updates-dos-defenses-again-as-relay-attacks-continue/",
+   "published": "2026-11-16T08:55:32+00:00",
+   "summary": "Tor 0.4.9.17 patches several security issues, including one related to how built-in DoS protections deal with IPv6. The post Tor Updates DoS Defenses Again as Relay Attacks Continue appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2024/01/Tor-Network-1.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-16T09:59:34.215483+00:00",
+   "image_checked": true,
+   "instructions": [
+    "According to the project, more defenses are under consideration, and new versions should follow shortly.",
+    "Anyone running a relay has been urged to update without delay.",
+    "Reports from relay operators suggest the latest update hasn’t ended the disruption.",
+    "In a forum post on November 14, one operator said two of their relays had lost HSDir status due to attacks before the update, and that another was being targeted when 0.4.9.17 was released and installed."
    ],
    "instructions_checked": true
   },
