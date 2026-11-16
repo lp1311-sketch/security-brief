@@ -35,25 +35,6 @@
    "instructions_checked": true
   },
   {
-   "id": "8abde1ce00be",
-   "source": "ars",
-   "source_name": "Ars Technica Security",
-   "official": false,
-   "source_type": "news",
-   "title": "Vulnerability that lets hackers SSH into Linux devices is under active exploitation",
-   "link": "https://arstechnica.com/security/2026/11/vulnerability-that-lets-hackers-ssh-into-linux-devices-is-under-active-exploitation/",
-   "published": "2026-11-09T19:41:34+00:00",
-   "summary": "Hackers are actively exploiting a recently discovered critical vulnerability that allows them to log in to privileged accounts on many Linux systems, multiple researchers are reporting. The vulnerability, tracked under the name *sshole, arises from the interaction between OpenSSH and a code library known as musl…",
-   "image": "https://cdn.arstechnica.net/wp-content/uploads/2023/07/exploit-vulnerability-security.jpg",
-   "cves": [],
-   "first_seen": "2026-11-09T20:19:29.887916+00:00",
-   "instructions": [
-    "Further, OpenSSH must not use PAM (pluggable authentication modules), a framework that handles user authentication and account access checks.",
-    "Additionally, SSH configurations must (1) have at least one account that’s accessible using a password that is hashed using the SHA256 or SHA512 function and (2) also be set to use passwordless accounts by way of specifying a “*” in the password field in the /etc/shadow file."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "fcdcf30ed87c",
    "source": "ars",
    "source_name": "Ars Technica Security",
@@ -5994,6 +5975,25 @@
     "Baker Tilly is a major accounting firm in the U.S., providing auditing, tax planning, compliance, advisory, and business operations services.",
     "To mitigate the risks arising from the incident, the firm offers affected individuals 24 months of credit and identity monitoring through Experian.",
     "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day"
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "f66e964ba9d3",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Barracuda links cloud breach to ARTEX AI-powered cyberattack",
+   "link": "https://www.bleepingcomputer.com/news/security/barracuda-links-cloud-breach-to-artex-ai-powered-cyberattack/",
+   "published": "2026-11-16T19:57:13+00:00",
+   "summary": "Hackers who breached the cloud environment of network and email security company Barracuda earlier this month used a stolen cloud access key and the ARTEX AI penetration testing framework.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/16/robot.jpg",
+   "cves": [],
+   "first_seen": "2026-11-16T20:16:48.978700+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Because of the uncertainty surrounding this scenario, Barracuda asked potentially affected Managed XDR Cloud or Monitored Endpoint customers to revoke and recreate their integration credentials."
    ],
    "instructions_checked": true
   },
