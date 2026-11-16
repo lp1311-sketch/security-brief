@@ -1,24 +1,6 @@
 {
  "items": [
   {
-   "id": "4065836ff3f5",
-   "source": "ars",
-   "source_name": "Ars Technica Security",
-   "official": false,
-   "source_type": "news",
-   "title": "Claude Code is accidentally exposing secrets all over GitHub",
-   "link": "https://arstechnica.com/ai/2026/11/claude-code-settings-files-expose-thousands-of-secrets-on-github/",
-   "published": "2026-11-09T17:24:26+00:00",
-   "summary": "Claude Code is leaking sensitive information on public GitHub instances thanks to a partial oversight in the way its settings files are handled. That's the finding of AI security researchers at Apiiro, who discovered thousands of secrets, including database passwords, API tokens, and root logins, amid Claude Code…",
-   "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/claude-github-leaks-1152x648.jpg",
-   "cves": [],
-   "first_seen": "2026-11-09T19:23:29.204678+00:00",
-   "instructions": [
-    "Cherny also recommends Claude Code users make use of secret scanners—which can trawl files for sensitive information and scrub it out—and said that the team was considering building this kind of secret scanning into Claude Code itself in the future."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "ef892408bebc",
    "source": "ars",
    "source_name": "Ars Technica Security",
@@ -486,6 +468,33 @@
     "Dieser Fehler war das Ergebnis einer Korrektur (Update), die speziell für Microsoft 365-Netzwerk-Gateway-Server vorbereitet worden war.",
     "Das Update durchlief \"eine sichere Bereitstellung\" und wurde über mehrere Wochen hinweg weltweit flächendeckend ausgerollt.",
     "Nachdem die Entwickler den Fehler als Ursache bestätigt hatten, entwickelten diese ein Update, das den Codepfad in den zuvor als fehlerfrei bekannten Zustand zurückversetzte."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "b5e1ece521f3",
+   "source": "google-threat-intel",
+   "source_name": "Google Threat Intelligence",
+   "official": false,
+   "source_type": "vendor_blog",
+   "title": "GTIG AI Threat Tracker: Agentic Threat Activity Crosses a Significant Threshold",
+   "link": "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold/",
+   "published": "2026-11-16T14:00:00+00:00",
+   "summary": "Written by: Aurora Blum, Kelli Vanderlee, Jess Xia, David Mainor Executive Summary As threat actors increasingly move beyond basic prompting to deploying autonomous multi-agent frameworks, automated vulnerability exploitation pipelines, and alternative monetization schemes like LLMJacking, the adversarial AI landscape…",
+   "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/Figure_1_Multi-agent_LLM_offensive_framewo.max-1000x1000.jpg",
+   "cves": [
+    "CVE-2026-109618",
+    "CVE-2026-109619",
+    "CVE-2026-40217",
+    "CVE-2026-81578",
+    "CVE-2026-82078"
+   ],
+   "first_seen": "2026-11-16T18:17:01.164288+00:00",
+   "instructions": [
+    "Unrestricted autonomous execution generates forensic traffic, relies on recognizable identifiers, and leaves behind distinct code-level traces; while these artifacts increase the likelihood of detection and mitigation, these tools remain highly capable of achieving operational objectives.",
+    "For hardening and mitigation guidance for defending against LLMJacking intrusions, please see our blog .",
+    "In addition, LLMs can reduce operational reliability, as adversaries must contend with model limitations, including the hallucination of non-existent details or even targets.",
+    "In this update, Google Threat Intelligence Group (GTIG) and Mandiant examine how adversaries across the cyber crime, espionage, and information operations spectrum are operationalizing generative AI to compress attack timelines, scale operations, and execute multi-stage intrusions at machine speed."
    ],
    "instructions_checked": true
   },
@@ -4073,27 +4082,6 @@
    "instructions_checked": true
   },
   {
-   "id": "7cd796fba406",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Hackers Compromise Ethersphere's bee-js and Swarm Desktop to Deliver Wallet-Stealing Malware",
-   "link": "https://thehackernews.com/2026/11/hackers-compromise-etherspheres-bee-js.html",
-   "published": "2026-11-09T17:36:28+00:00",
-   "summary": "Attackers used the Ethersphere project's own release automation to publish malicious versions of two of its tools for the Swarm decentralized storage network: bee-js 13.3.0 and Swarm Desktop 0.56.2. Both releases download and run code built to steal the wallet key that Swarm Desktop keeps for its node, along with the…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4ZFiesBwDTk8fRRfKfNIw0lLkhqF6ZAExRxuuRtfRCWrxs6Rg7M5UdSIcJqH2zstViFreL30JMmdebYTlMOKvg4D6GvaS70XPdembzyIZoX2KBj_S3kxKWmBjJll4exWUYXrap9IDW_ugXHOux5jZXk44_v5xac1mxFouywezDcsGeMdLrGd1sJStMoo/s1600/bees.jpg",
-   "cves": [],
-   "first_seen": "2026-11-09T19:23:29.204678+00:00",
-   "instructions": [
-    "The GitHub advisory for bee-js 13.3.0 says: \"Any computer that has this package installed or running should be considered fully compromised.\" SafeDep, a software supply chain security company, offers the same advice for any computer on which Swarm Desktop 0.56.2 was installed.",
-    "Both malicious releases have been taken down, and the project's maintainers released a clean Swarm Desktop update today.",
-    "The code is also built to install a backdoor on Windows, macOS, and Linux machines.",
-    "Intel Macs were never offered it, and Linux installs do not update automatically."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "9398616ade4d",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -4150,27 +4138,6 @@
    "first_seen": "2026-11-13T08:57:41.471516+00:00",
    "instructions": [
     "CVE-2026-123039 (CVSS score: 7.8) is a missing authorization flaw that could enable privilege escalation to root in the DynamicCLI process, enabling any authenticated local user to run arbitrary commands by writing a single request to the socket."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "bd73ebc7b854",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Hackers Exploit Qubole's Trusted AWS Access to Breach Customer Accounts and Steal Data",
-   "link": "https://thehackernews.com/2026/11/hackers-exploit-quboles-trusted-aws.html",
-   "published": "2026-11-09T17:51:21+00:00",
-   "summary": "An attacker broke into AWS accounts belonging to multiple Qubole customers between October 14 and October 26 and stole stored secrets and data, cloud security company Wiz said today. The attacker used credentials for an AWS account that Qubole's platform uses to reach those customers. How the attacker got those…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjj3p_1P-Ko_l_HuUr2Doq9kJOQa3Y5dCrkiVWqjJXzvQfYgKvgJXyvdBqLH2hp7s_ZY2kk-hhaCQhjf_v9SdjSbNpaDV2Eohk6-NEFUZp_ROjMJf_Q1xUSKcrqNj-Dd5ZrfjV6uP1blo579IaZ6hgHxOFAUhyJVgdGop-KVIWCjWQIYOKku3iN1N1EIUk/s1600/aws-hacked.jpg",
-   "cves": [],
-   "first_seen": "2026-11-09T19:23:29.204678+00:00",
-   "instructions": [
-    "Each request to do this, called AssumeRole , must include a matching code from Qubole known as an External ID.",
-    "Any organization that has connected Qubole to AWS, even one that no longer uses it, should check its CloudTrail logs from October 1 onward.",
-    "Any activity from this IAM user should be investigated, because only the attacker used it in the accounts the researchers examined.",
-    "If the attacker assumed one of your Qubole roles, rotate all secrets, parameters, and Lambda environment variables that role had access to, and revoke the role's active sessions."
    ],
    "instructions_checked": true
   },
@@ -5051,6 +5018,26 @@
    "instructions_checked": true
   },
   {
+   "id": "4b4b8357bb66",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Italian regulator fines Meta $886 million for violating data privacy law",
+   "link": "https://therecord.media/italian-regulator-fines-meta-886-million-privacy",
+   "published": "2026-11-16T18:05:00+00:00",
+   "summary": "The crackdown on Meta’s Facebook platform involved the company’s alleged use of its “camera roll” suggestions option, launched in 2023, to browse Android users’ photo galleries to recommend posts they could enhance with personal photos and videos.",
+   "image": "https://cms.therecord.media/uploads/facebook_1_5c66890d8b.jpg",
+   "cves": [],
+   "first_seen": "2026-11-16T18:17:01.164288+00:00",
+   "image_checked": true,
+   "instructions": [
+    "The crackdown on Meta’s Facebook platform involved the company’s alleged use of its “camera roll” suggestions option, launched in 2023, to browse Android users’ photo galleries to recommend posts they could enhance with personal photos and videos.",
+    "The permission is preceded by a “non-specific notice” to enable other features, the press release said, failing to make clear to users that they are consenting to suggestions from the camera roll, the regulator said."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "e447c2de7d90",
    "source": "therecord",
    "source_name": "The Record",
@@ -5336,6 +5323,25 @@
    "first_seen": "2026-11-13T15:12:20.611857+00:00",
    "image_checked": true,
    "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "2ebc983e1e5f",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "King Charles opens new HQ for National Cyber Force, UK’s offensive hacking unit",
+   "link": "https://therecord.media/uk-national-cyber-force-headquarters-opens",
+   "published": "2026-11-16T17:22:00+00:00",
+   "summary": "A building near the Lancashire village of Samlesbury in northwest England is officially the headquarters for the secretive unit that runs the Britain's offensive cyber operations.",
+   "image": "https://cms.therecord.media/uploads/king_charles_iii_anne_keast_butler_national_cyber_force_hq_cecae718f7.JPG",
+   "cves": [],
+   "first_seen": "2026-11-16T18:17:01.164288+00:00",
+   "image_checked": true,
+   "instructions": [
+    "“We must be ready to confront, deter and prevail in the cyber domain, taking the initiative against those who threaten our national security."
+   ],
    "instructions_checked": true
   },
   {
@@ -6656,25 +6662,6 @@
    "instructions_checked": true
   },
   {
-   "id": "073e03d22dae",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Russian cloud firm Beget rebuilds from scratch after data wiper attack",
-   "link": "https://www.bleepingcomputer.com/news/security/russian-cloud-firm-beget-rebuilds-from-scratch-after-data-wiper-attack/",
-   "published": "2026-11-09T17:50:32+00:00",
-   "summary": "A data-wiping malware attack has forced Russian cloud services provider Beget to rebuild its cloud infrastructure from scratch, the company said.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/09/beget.jpg",
-   "cves": [],
-   "first_seen": "2026-11-09T19:23:29.204678+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "9af5f29020c4",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -7147,22 +7134,6 @@
    "instructions_checked": true
   },
   {
-   "id": "85970b304532",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "PwC's CISO on AI, Robots & What's Next for Security",
-   "link": "https://www.darkreading.com/cybersecurity-operations/pwc-ciso-ai-robots-security",
-   "published": "2026-11-09T17:17:23+00:00",
-   "summary": "As AI accelerates change across the enterprise, PwC's James Shira explains why security teams must rethink their approach to risk and adapt their strategies.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt6ace2e1a111df3c2/6aee5059d31a318d0d477246/robots1800_kevin_winters_GettyImages-512935278.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-09T19:23:29.204678+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "2cf87a19124d",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -7191,22 +7162,6 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltd72cfa843f157710/6af61e08fa93fcee56324598/black_and_white_moth-powerofforever-GettyImages-1920014051.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-12T20:50:16.965486+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "adccb074fbff",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "Attackers Crash Claude's 'Office Party' Flaw to Run Malicious Code on Linux",
-   "link": "https://www.darkreading.com/endpoint-security/attackers-claude-office-party-flaw-malicious-code-linux",
-   "published": "2026-11-09T18:08:30+00:00",
-   "summary": "Attackers can exploit a flaw in Claude's document-processing tool by creating a temporary file that Anthropic's AI assistant can access and run on a user's machine.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt51641f3329337b62/6af209f8c974042ad49c3fce/office-Portra-GettyImages-1691188392_REVISED_FOR_16_BY_9.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-09T19:23:29.204678+00:00",
    "instructions": [],
    "instructions_checked": true
   },
