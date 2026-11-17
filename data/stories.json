@@ -3968,27 +3968,6 @@
    "instructions_checked": true
   },
   {
-   "id": "e56a3763b149",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "France Blames Iran for Sabotage Attack on Refrigeration Controllers at About 700 Retail Sites",
-   "link": "https://thehackernews.com/2026/11/france-blames-iran-for-sabotage-attack.html",
-   "published": "2026-11-10T09:08:20+00:00",
-   "summary": "An October cyberattack on refrigeration controllers at about 700 French retail sites was carried out by a cyber unit of Iran's Islamic Revolutionary Guard Corps (IRGC), the French government said yesterday. The attackers broke into controllers on the night of October 11 and changed their defrost settings to high…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQkt0P-pw4g1CSZvboG35E5WMLU_vea9rR2DLZ4X0lK5NyipbooRyXkRXcRb7X-ddRbVCygF1OkhW6a3j_8sCsBA_GhHAtOF8dISlx4Q2H74fnLJTm5ZOoEBlsbES0hPZutw60wjcAcMZEZcmx4NCLAM-pqVJCfw9yLhoQV2U_QFRX5h1k0zKPzgioICw/s1600/iran-france.jpg",
-   "cves": [],
-   "first_seen": "2026-11-10T09:14:53.743680+00:00",
-   "instructions": [
-    "They started abnormal defrost cycles with no time limit and switched off the temperature probes' safety alerts, which should go off above a certain temperature.",
-    "Reconfigure the device before putting it back into service, then follow the maker's recommended practices.",
-    "Remove internet exposure from these units and from any unit reachable at a public IP address.",
-    "Remove internet exposure and check insurance terms, as above."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "b86930e18372",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -4466,27 +4445,6 @@
    "first_seen": "2026-11-16T11:25:04.493627+00:00",
    "instructions": [
     "\"Organizations expanding GPU infrastructure for AI and LLM workloads should check who can submit jobs and whether GPU monitoring libraries have been modified, as cryptojacking can divert compute capacity from legitimate workloads and increase operating costs,\" Elastic said."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "ce0b470d4dea",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "SAP Patches Four CVSS 10.0 Flaws, Including Two Enabling Remote Code Execution",
-   "link": "https://thehackernews.com/2026/11/sap-patches-four-cvss-100-flaws.html",
-   "published": "2026-11-10T10:02:40+00:00",
-   "summary": "Four flaws that attackers could exploit without logging in were fixed today as part of SAP's monthly Security Patch Day—the vendor rates all four 10.0, the maximum CVSS score. Three are in the SAP NetWeaver application server, the software SAP systems run on, and one is in the Web Dispatcher, which receives web…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgo4snqwJ4uD_sRDyI8zs23mcfFTWfZoSrn9n1hbUrsHbyWy-1VFL8amxqQnLb7LSTPkuSwnsPofUJT6anObg-nU4Q5e01WBb3IixN_PdL-1MJ2nOip4qSTEoVDmePRlOgjSVjvtbH8vFlQgxtGuKuqmuHWLyzIavw2Sj4VtZBlTYhUqeySbQcDMEr4Wns/s1600/sap-flaws.jpg",
-   "cves": [],
-   "first_seen": "2026-11-10T10:17:29.418077+00:00",
-   "instructions": [
-    "The notes are in SAP for Me, which requires a sign-in, and the vendor strongly recommends applying them as a priority.",
-    "In its Patch Day analysis , RedRays, a company that reviewed the notes in SAP for Me today, advises updating the kernel and all Web Dispatchers in a single rollout.",
-    "That rollout should reach levels that cover all 17 of this month's kernel and Web Dispatcher fixes.",
-    "There is no workaround, so the correction instructions or the listed support package are the only fix."
    ],
    "instructions_checked": true
   },
@@ -6111,6 +6069,25 @@
     "CISA warns feds to fully patch actively exploited Cisco flaws",
     "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day",
     "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "10eb36112f40",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Court clears brothers of $25 million Ethereum crypto heist charges",
+   "link": "https://www.bleepingcomputer.com/news/security/court-clears-brothers-of-25-million-ethereum-crypto-heist-charges/",
+   "published": "2026-11-17T09:44:22+00:00",
+   "summary": "US District Judge Jessica Clarke has acquitted two brothers accused of stealing $25 million in cryptocurrency in about 12 seconds through a scheme that exploited a bug in the Ethereum blockchain.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/17/Ethereum-coin.jpg",
+   "cves": [],
+   "first_seen": "2026-11-17T10:04:26.562141+00:00",
+   "image_checked": true,
+   "instructions": [
+    "In the next stage of the scheme, they allegedly reordered the block on the Ethereum blockchain, which resulted in the theft of approximately $25 million in cryptocurrency from the victim traders."
    ],
    "instructions_checked": true
   },
@@ -8144,31 +8121,6 @@
    "instructions_checked": true
   },
   {
-   "id": "e61330c97785",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "IBM Aspera Faspex, SignalWire FreeSwitch Vulnerabilities Exploited in Attacks",
-   "link": "https://www.securityweek.com/ibm-aspera-faspex-signalwire-freeswitch-vulnerabilities-exploited-in-attacks/",
-   "published": "2026-11-10T09:42:27+00:00",
-   "summary": "CISA has added CVE-2026-123218 and CVE-2026-116779 to KEV, urging federal agencies to patch them within three days. The post IBM Aspera Faspex, SignalWire FreeSwitch Vulnerabilities Exploited in Attacks appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2025/07/CISA-KEV.jpg",
-   "cves": [
-    "CVE-2026-116779",
-    "CVE-2026-123218"
-   ],
-   "first_seen": "2026-11-10T10:17:29.418077+00:00",
-   "image_checked": true,
-   "instructions": [
-    "IBM patched the security defect on Friday in Aspera Faspex version 5.0.19 PL1, urging customers to update their deployments as soon as possible.",
-    "Scroll to continue reading. “Inbound chat is enabled on the stock internal and external profiles, and any authenticated profile account is sufficient; stock directory users without password material can also remove that barrier in affected configurations,” reads a NIST advisory .",
-    "SignalWire’s advisory, published October 28, notes that exploitation of the flaw ‘has been observed in the wild,’ but provides no details on the attacks.",
-    "IBM’s advisory makes no mention of exploitation, and no details on the attacks appear to be public."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "3dfcf9840f4a",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -8357,28 +8309,6 @@
    "instructions": [
     "In Australia, Home Affairs Minister Tony Burke said Friday that Microsoft had likened the widespread disruption to the 2024 CrowdStrike outage, which stemmed from a faulty update to computers running Microsoft Windows.",
     "They believe that they are dealing in some ways (with something) similar to what we saw with respect to CrowdStrike where there is an update that has gone awry,” Burke told reporters in Sydney.",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "1f6bc1af5305",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "N-able Takes N-central Offline as Researcher Drops Over 30 Zero-Days",
-   "link": "https://www.securityweek.com/n-able-takes-n-central-offline-as-researcher-drops-over-30-zero-days/",
-   "published": "2026-11-10T09:56:28+00:00",
-   "summary": "Attackers could exploit the flaws for remote code execution, credential theft, and administrator account creation. The post N-able Takes N-central Offline as Researcher Drops Over 30 Zero-Days appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/08/N-Able.jpeg",
-   "cves": [],
-   "first_seen": "2026-11-10T10:17:29.418077+00:00",
-   "image_checked": true,
-   "instructions": [
-    "On-premises N-central deployments should also be kept offline until patches are released, the company says. “N-able Engineering continues to make progress on the N-central hotfix and associated validation activities.",
-    "The security researcher released proof-of-concept (PoC) code targeting every flaw and reportedly explained that the zero-days were dropped after N-able failed to patch security defects he previously reported in another product.",
-    "Chrome Update Patches Exploited XML Zero-Day, Eighth This Year",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
