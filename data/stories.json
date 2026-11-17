@@ -568,63 +568,6 @@
    "instructions_checked": true
   },
   {
-   "id": "1df64432304f",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-100204 HEIF Image Extensions Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-100204",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Use after free in HEIF Image Extensions allows an unauthorized attacker to execute code locally.",
-   "image": null,
-   "cves": [
-    "CVE-2026-100204"
-   ],
-   "first_seen": "2026-11-10T18:25:23.300263+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "749621e2cdd4",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-102227 Windows Resilient File System (ReFS) Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102227",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-102227"
-   ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "ff3e2a189d50",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-102868 Windows Shell Information Disclosure Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102868",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Exposure of sensitive system information to an unauthorized control sphere in Windows Shell allows an authorized attacker to disclose information locally.",
-   "image": null,
-   "cves": [
-    "CVE-2026-102868"
-   ],
-   "first_seen": "2026-11-10T18:25:23.300263+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "c5a7aee1fe72",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -639,177 +582,6 @@
     "CVE-2026-105544"
    ],
    "first_seen": "2026-11-10T18:25:23.300263+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "6a2e9d577a80",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-105582 Windows DWM Core Library Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105582",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Release of invalid pointer or reference in Windows DWM Core Library allows an authorized attacker to elevate privileges locally.",
-   "image": null,
-   "cves": [
-    "CVE-2026-105582"
-   ],
-   "first_seen": "2026-11-10T18:25:23.300263+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "a50ae7fac549",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-105583 Windows DWM Core Library Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105583",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Release of invalid pointer or reference in Windows DWM Core Library allows an authorized attacker to elevate privileges locally.",
-   "image": null,
-   "cves": [
-    "CVE-2026-105583"
-   ],
-   "first_seen": "2026-11-10T18:25:23.300263+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "9c7f489322a3",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-105584 Windows Inventory Backup Information Disclosure Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105584",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Use of externally-controlled format string in Windows Inventory Backup allows an authorized attacker to disclose information locally.",
-   "image": null,
-   "cves": [
-    "CVE-2026-105584"
-   ],
-   "first_seen": "2026-11-10T18:25:23.300263+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "780fc64ae721",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-105586 Microsoft Windows SCSI Class System File Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105586",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Null pointer dereference in Microsoft Windows SCSI Class System File allows an authorized attacker to elevate privileges locally.",
-   "image": null,
-   "cves": [
-    "CVE-2026-105586"
-   ],
-   "first_seen": "2026-11-10T18:25:23.300263+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "36972463bc87",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-105587 Windows OLE DB Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105587",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Heap-based buffer overflow in Windows OLE DB allows an authorized attacker to elevate privileges locally.",
-   "image": null,
-   "cves": [
-    "CVE-2026-105587"
-   ],
-   "first_seen": "2026-11-10T18:25:23.300263+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "489ff1bcb336",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-105588 Windows DHCP Server Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105588",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Missing authentication for critical function in Windows DHCP Server allows an authorized attacker to elevate privileges locally.",
-   "image": null,
-   "cves": [
-    "CVE-2026-105588"
-   ],
-   "first_seen": "2026-11-10T18:25:23.300263+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "103a8c0e0968",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-105589 Windows Wireless Networking Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105589",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Use after free in Windows Wireless Networking allows an authorized attacker to elevate privileges locally.",
-   "image": null,
-   "cves": [
-    "CVE-2026-105589"
-   ],
-   "first_seen": "2026-11-10T18:25:23.300263+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "7e25e120e172",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-105590 Windows Active Directory Certificate Services Security Feature Bypass",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105590",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Improper certificate validation in Windows Active Directory Certificate Services allows an authorized attacker to bypass a security feature over a network.",
-   "image": null,
-   "cves": [
-    "CVE-2026-105590"
-   ],
-   "first_seen": "2026-11-10T18:25:23.300263+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "128f965277c6",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-105726 Microsoft Defender Information Disclosure Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105726",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-105726"
-   ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -832,196 +604,6 @@
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
-  },
-  {
-   "id": "a8961c8495a7",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-108403 Windows Kernel Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108403",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Use after free in Windows Kernel allows an authorized attacker to elevate privileges locally.",
-   "image": null,
-   "cves": [
-    "CVE-2026-108403"
-   ],
-   "first_seen": "2026-11-10T18:25:23.300263+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "9a35a4d9a570",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-108409 Windows Overlay Filter Information Disclosure Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108409",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Exposure of sensitive system information to an unauthorized control sphere in Windows Overlay Filter allows an authorized attacker to disclose information locally.",
-   "image": null,
-   "cves": [
-    "CVE-2026-108409"
-   ],
-   "first_seen": "2026-11-10T18:25:23.300263+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "9ba2c99a6c7d",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-108411 Microsoft ODBC Driver Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108411",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Heap-based buffer overflow in Windows ODBC Driver allows an unauthorized attacker to execute code over a network.",
-   "image": null,
-   "cves": [
-    "CVE-2026-108411"
-   ],
-   "first_seen": "2026-11-10T18:25:23.300263+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "3909203a2a90",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-108415 Windows File Server Resource Management Service Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108415",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Untrusted pointer dereference in Windows File Server Resource Management Service allows an unauthorized attacker to elevate privileges with a physical attack.",
-   "image": null,
-   "cves": [
-    "CVE-2026-108415"
-   ],
-   "first_seen": "2026-11-10T18:25:23.300263+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "58b8bcc7f1eb",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-108416 Windows File Server Resource Management Service Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108416",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Untrusted pointer dereference in Windows File Server Resource Management Service allows an unauthorized attacker to elevate privileges with a physical attack.",
-   "image": null,
-   "cves": [
-    "CVE-2026-108416"
-   ],
-   "first_seen": "2026-11-10T18:25:23.300263+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "d1444b50cec7",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-108417 Windows Remote Desktop Client Information Disclosure Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108417",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Out-of-bounds read in Remote Desktop Client allows an unauthorized attacker to disclose information over a network.",
-   "image": null,
-   "cves": [
-    "CVE-2026-108417"
-   ],
-   "first_seen": "2026-11-10T18:25:23.300263+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "058ac757c6ac",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-108424 Windows GDI Information Disclosure Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108424",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Out-of-bounds read in Windows GDI allows an unauthorized attacker to disclose information over a network.",
-   "image": null,
-   "cves": [
-    "CVE-2026-108424"
-   ],
-   "first_seen": "2026-11-10T18:25:23.300263+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "c50e03f53a51",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-108447 Microsoft Office Word Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108447",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-108447"
-   ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "cbc80a77570b",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-109463 Windows DNS Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109463",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Deserialization of untrusted data in Windows DNS allows an unauthorized attacker to execute code over a network.",
-   "image": null,
-   "cves": [
-    "CVE-2026-109463"
-   ],
-   "first_seen": "2026-11-10T18:25:23.300263+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "61b69f1deec0",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-109467 Azure DevOps Server Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109467",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Improper authentication in Azure DevOps allows an authorized attacker to execute code over a network.",
-   "image": null,
-   "cves": [
-    "CVE-2026-109467"
-   ],
-   "first_seen": "2026-11-10T18:25:23.300263+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
   },
   {
    "id": "3b2c5ccdae53",
@@ -1399,120 +981,6 @@
     "CVE-2026-114159"
    ],
    "first_seen": "2026-11-11T17:55:40.517702+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "996a08168399",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-114164 HEVC Video Extensions Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114164",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Integer underflow (wrap or wraparound) in Microsoft Windows Codecs Library allows an unauthorized attacker to execute code over a network.",
-   "image": null,
-   "cves": [
-    "CVE-2026-114164"
-   ],
-   "first_seen": "2026-11-10T18:25:23.300263+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "effd5055a310",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-114165 HEVC Video Extensions Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114165",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Heap-based buffer overflow in Microsoft Windows Codecs Library allows an unauthorized attacker to execute code locally.",
-   "image": null,
-   "cves": [
-    "CVE-2026-114165"
-   ],
-   "first_seen": "2026-11-10T18:25:23.300263+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "1328adc53dd3",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-114166 Microsoft Raw Image Extension Information Disclosure Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114166",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Buffer over-read in Windows Raw Image Extension allows an unauthorized attacker to disclose information locally.",
-   "image": null,
-   "cves": [
-    "CVE-2026-114166"
-   ],
-   "first_seen": "2026-11-10T18:25:23.300263+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "715925e8e865",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-114167 HEVC Video Extensions Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114167",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Heap-based buffer overflow in Microsoft Windows Codecs Library allows an unauthorized attacker to execute code locally.",
-   "image": null,
-   "cves": [
-    "CVE-2026-114167"
-   ],
-   "first_seen": "2026-11-10T18:25:23.300263+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "9f0de78c83e1",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-114169 Windows Raw Image Extension Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114169",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Heap-based buffer overflow in Windows Raw Image Extension allows an unauthorized attacker to execute code over a network.",
-   "image": null,
-   "cves": [
-    "CVE-2026-114169"
-   ],
-   "first_seen": "2026-11-10T18:25:23.300263+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "232b2c32bbc1",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-114170 Windows Kernel Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114170",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Use after free in Windows Kernel allows an authorized attacker to elevate privileges locally.",
-   "image": null,
-   "cves": [
-    "CVE-2026-114170"
-   ],
-   "first_seen": "2026-11-10T18:25:23.300263+00:00",
    "instructions": [],
    "instructions_checked": true,
    "image_checked": true
@@ -2164,1146 +1632,6 @@
    "image_checked": true
   },
   {
-   "id": "21e9c172b942",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-50423 Windows Kernel Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50423",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-50423"
-   ],
-   "first_seen": "2026-11-10T22:45:40.406649+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "6c2dd8b1bb89",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-55043 Microsoft PowerPoint Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55043",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-55043"
-   ],
-   "first_seen": "2026-11-10T22:45:40.406649+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "a72a327e5410",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-55123 Microsoft PowerPoint Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55123",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-55123"
-   ],
-   "first_seen": "2026-11-10T22:45:40.406649+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "236aa0388888",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-56172 Windows VHD miniport driver Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56172",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-56172"
-   ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "ea093da17d00",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-62694 Windows Installer Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62694",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-62694"
-   ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "b595e98fa95b",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-62784 Microsoft Local Security Authority Server (lsasrv) Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62784",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-62784"
-   ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "3934bb4842ca",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-66801 Microsoft Xbox Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-66801",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Heap-based buffer overflow in Xbox allows an unauthorized attacker to execute code over a network.",
-   "image": null,
-   "cves": [
-    "CVE-2026-66801"
-   ],
-   "first_seen": "2026-11-10T18:25:23.300263+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "dcc59bfbf42f",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-66810 Microsoft Office Word Information Disclosure Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-66810",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-66810"
-   ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "70cf78401ca9",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-68794 Microsoft Excel Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68794",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-68794"
-   ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "8a2303909a27",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-68833 Windows NTFS Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68833",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-68833"
-   ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "da0b74c3ba02",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-68839 Windows USB Mass Storage Class Driver Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68839",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-68839"
-   ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "aff1d988c68e",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-68880 Windows Win32k Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68880",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-68880"
-   ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "3b7c833d1d67",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-68884 Windows Kernel Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68884",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-68884"
-   ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "6ade1aedb459",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-69277 Microsoft Local Security Authority (LSA) Server Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69277",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-69277"
-   ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "24c7319e784b",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-69280 Windows Push Notifications Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69280",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-69280"
-   ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "a7b3d1646f01",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-69407 Volume Manager Driver Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69407",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-69407"
-   ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "9ee79e1fe940",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-69409 Microsoft Office SharePoint Information Disclosure Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69409",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-69409"
-   ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "d482469a796c",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-69453 Microsoft Windows Search Component Tampering Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69453",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-69453"
-   ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "715ec65d4e32",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-69465 Microsoft Office SharePoint Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69465",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-69465"
-   ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "6a366b064094",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-69467 Microsoft Graphics Component Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69467",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-69467"
-   ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "05df760559dc",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-69492 Windows Partition Management Driver Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69492",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-69492"
-   ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "90015026e728",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-69548 Windows RNDIS Information Disclosure Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69548",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-69548"
-   ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "0212e0e16bfb",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-69767 Microsoft Office PowerPoint Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69767",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-69767"
-   ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "d2f9b477c20b",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-69898 Windows Kernel Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69898",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-69898"
-   ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "6fd02e551104",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-69940 Windows Client for NFS Information Disclosure Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69940",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-69940"
-   ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "2530593de021",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-70017 Windows Secure Kernel Mode Information Disclosure Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70017",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-70017"
-   ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "501b96385b78",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-70052 Microsoft PowerShell Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70052",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-70052"
-   ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "8a340b8f6af6",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-70271 Windows Win32k Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70271",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-70271"
-   ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "f7d01df7d6db",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-70275 Windows CD-ROM File System Driver Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70275",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-70275"
-   ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "f53e70f68be5",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-70291 Microsoft Office Outlook Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70291",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-70291"
-   ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "6299dfc08e6d",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-70583 Windows Core Messaging Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70583",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-70583"
-   ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "77a374692109",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-71339 Windows Installer Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-71339",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-71339"
-   ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "7c11bebd212c",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-72974 Microsoft Office Excel Information Disclosure Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-72974",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-72974"
-   ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "a3287abb00d1",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-73016 DirectWrite Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-73016",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-73016"
-   ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "0c13f68d8253",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-77911 Microsoft Office Word Information Disclosure Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-77911",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-77911"
-   ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "6ca084450e35",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-81394 Microsoft Excel Information Disclosure Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-81394",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-81394"
-   ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "30d6f4cdafee",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-81398 Microsoft Excel Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-81398",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-81398"
-   ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "5b0bf5c53585",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-81954 Microsoft Excel Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-81954",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-81954"
-   ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "dc6c73fb4d18",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-81957 Microsoft Excel Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-81957",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-81957"
-   ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "9d0000ef041e",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-83650 Windows Media Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83650",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-83650"
-   ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "06549e78e3e8",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-83678 Windows TCP/IP Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83678",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-83678"
-   ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "21d5aea40d42",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-83681 Microsoft PowerToys Tampering Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83681",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-83681"
-   ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "ecf4389fb80f",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-83758 Windows Error Reporting Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83758",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-83758"
-   ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "c3a09d093c66",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-83768 Windows Kernel Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83768",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-83768"
-   ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "d4b1ff72ceb3",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-83775 Windows Installer Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83775",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-83775"
-   ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "6f1e4fb8b204",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-83828 Windows MIDI Service Module Elevation of Privileges Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83828",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-83828"
-   ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "91dd8667fa3b",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-83846 Connected Devices Platform Service (Cdpsvc) Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83846",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-83846"
-   ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "db9ef08d13bf",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-83894 RPC Runtime Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83894",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Use after free in RPC Runtime allows an authorized attacker to elevate privileges locally.",
-   "image": null,
-   "cves": [
-    "CVE-2026-83894"
-   ],
-   "first_seen": "2026-11-10T18:25:23.300263+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "885cb7f09cd9",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-83902 Windows Direct Composition Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83902",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-83902"
-   ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "d4fbb0a31215",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-83911 Windows Storage Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83911",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-83911"
-   ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "ca9b46c69a71",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-83919 Microsoft Internet Messaging API Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83919",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-83919"
-   ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "32d9054c55c6",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-83926 Windows Hello Security Feature Bypass Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83926",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-83926"
-   ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "680e271bbc04",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-83952 Windows Resilient File System (ReFS) Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83952",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-83952"
-   ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "4f0ae400eaf2",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-84004 AMD Zen Information Disclosure Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-84004",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Processor optimization removal or modification of security-critical code in AMD Zen allows an authorized attacker to disclose information locally.",
-   "image": null,
-   "cves": [
-    "CVE-2026-84004"
-   ],
-   "first_seen": "2026-11-10T18:25:23.300263+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "7523997ea4d0",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-84005 AMD Zen Information Disclosure Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-84005",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Processor optimization removal or modification of security-critical code in AMD Zen allows an authorized attacker to disclose information locally.",
-   "image": null,
-   "cves": [
-    "CVE-2026-84005"
-   ],
-   "first_seen": "2026-11-10T18:25:23.300263+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "47d706c7db5c",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-84018 Windows Print Spooler Components Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-84018",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-84018"
-   ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "7147b7969602",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-85360 Windows Kernel Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85360",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-85360"
-   ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "92c4d25f1f91",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-85927 Windows Universal Plug and Play (UPnP) Device Host Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85927",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-85927"
-   ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "251acc6e20ce",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-88151 Microsoft Office Excel Information Disclosure Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88151",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-88151"
-   ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "647505185714",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-88202 Microsoft Office Word Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88202",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-88202"
-   ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
    "id": "20b9366d21f0",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -3494,82 +1822,6 @@
    "instructions_checked": true
   },
   {
-   "id": "81c7c252855e",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-96223 Windows Hyper-V Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96223",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-96223"
-   ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "173f37e989f0",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-96311 Windows Network List Service Tampering Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96311",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-96311"
-   ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "e6d739c7b69a",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-96314 Windows Audio Service Information Disclosure Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96314",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-96314"
-   ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "ee4270815294",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-97749 Microsoft Office Outlook Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97749",
-   "published": "2026-11-10T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-97749"
-   ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
    "id": "50b7d482cfd7",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -3667,27 +1919,6 @@
    "instructions_checked": true
   },
   {
-   "id": "0eb55bf1598e",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Attackers Exploit AhsayCBS Flaws to Deploy Sandbox-Evading Python Backdoor",
-   "link": "https://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html",
-   "published": "2026-11-10T16:00:55+00:00",
-   "summary": "Cybersecurity researchers have disclosed details of an attack that exploited two now-patched vulnerabilities in AhsayCBS to deliver a Python-based implant. The activity, observed by Huntress in early October 2026, involves the exploitation of a chain comprising CVE-2026-105133 and CVE-2026-105134 to bypass…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgT-Z8hFA8uMe4HXLf_4QRk4Z4VLuUCDRL89LcgpXfsj9YAwLsLHIZL46pn2SLz0BBhCKPUKBhChDRRsKYPSkZPwmsDIhozGQ-4YemxOSol0AiwBEgtGX9OSZ_L3SQZVoebBX1fWGkh8TQ_hNVYHho0eCrBQzLlhnjPhhymXqcWePyuhdQDCMb6KJi6pmIe/s1600/cbs.jpg",
-   "cves": [
-    "CVE-2026-105133",
-    "CVE-2026-105134"
-   ],
-   "first_seen": "2026-11-10T16:31:18.268744+00:00",
-   "instructions": [
-    "\"[AhsayCBS.jsp's] disguise as an internal image preview service even extended down to a comment block describing a watermark endpoint,\" Huntress explained."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "b58e8e6c37ed",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -3706,22 +1937,6 @@
     "\"Hopefully everyone has hot-patched or updated their server, or at the very least has the spamfilter workaround deployed.",
     "Federal Civilian Executive Branch (FCEB) agencies have time until November 16, 2026, to apply the fixes under Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk."
    ],
-   "instructions_checked": true
-  },
-  {
-   "id": "7e413807cc2f",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Blind Eagle Uses Fake Court Notices to Deliver Remote Access Trojan Across Latin America",
-   "link": "https://thehackernews.com/2026/11/blind-eagle-uses-fake-court-notices-to.html",
-   "published": "2026-11-10T15:58:44+00:00",
-   "summary": "The threat actor known as Blind Eagle has resurfaced with a new campaign targeting organizations in Latin America through judicial and administrative-themed phishing lures to deliver a remote access trojan (RAT) that shares its lineage with AsyncRAT and DCRat. \"The campaign uses Portuguese and Spanish lures that…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhs4UHnKTj_NJCPa7Jqdntj8tEvZ2PgaY7s9kKK8_X2bxehTUcJeZPFfguJzvW_D0H9XD_q-qLZV2Qq6hqRYDQRYMXpyAzw-6T2yDjFjIY7zhGRLPDPjOalASUgX_Z-M2cEsNqiuys_4QjQ8vY_xl0fnWi2Y_9tT9aAH0WQOAB3D6uDf8yZY8VuphL4TRFG/s1600/court-phish.jpg",
-   "cves": [],
-   "first_seen": "2026-11-10T16:31:18.268744+00:00",
-   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -3946,22 +2161,6 @@
     "According to a joint cybersecurity advisory published by cybersecurity and intelligence agencies from Japan, the U.S., Australia, and Germany in late September 2026, the long-running campaign is estimated to have compromised at least 30,000 devices located in 100 countries.",
     "Interview assignments with downloads should only ever run in a disposable virtual machine, never on a work laptop."
    ],
-   "instructions_checked": true
-  },
-  {
-   "id": "7646e96e2e7b",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Fireworks AI Confirms Wider Breach Affecting Customer Datasets, Model Weights and Notion AI Chats",
-   "link": "https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html",
-   "published": "2026-11-10T15:33:59+00:00",
-   "summary": "Fireworks AI disclosed on Monday that its investigation into a security incident first reported early last month uncovered further malicious activity, affecting account and billing information, alongside secrets, datasets, and incomplete models for a \"limited set of accounts.\" In a notice published on October 10…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-mBJN_E4CjW3MXyjYYdeCGcyR052aVnG3uUWjaEfafvPAdatcJhn9LbtngqXBb5JsVwJVoorc8i41nTbYR9UcwVrwWNzU-WAfVk2yL32hYW1elVMJtwauW53nhRG37EwbovnFCW8InensI8tKoR9pqcWnZx54t6xOU_HsjjR9KWTLwVr_MBcknFeGShZU/s1600/fire.jpg",
-   "cves": [],
-   "first_seen": "2026-11-10T16:31:18.268744+00:00",
-   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -4747,23 +2946,6 @@
    "instructions_checked": true
   },
   {
-   "id": "4a9230aea75f",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "AI company Fireworks says hackers stole data, billing info during October breaches",
-   "link": "https://therecord.media/ai-company-fireworks-says-hackers-stole-data-in-oct-attacks",
-   "published": "2026-11-10T16:08:00+00:00",
-   "summary": "Fireworks said the incident affected a “limited number of customer accounts” — all of whom were notified of the attack.",
-   "image": "https://cms.therecord.media/uploads/fireworks_1_9c80b2da5e.jpg",
-   "cves": [],
-   "first_seen": "2026-11-10T16:31:18.268744+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "f0f23fdb08d7",
    "source": "therecord",
    "source_name": "The Record",
@@ -5243,25 +3425,6 @@
    "instructions_checked": true
   },
   {
-   "id": "cb71d2bd129f",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Cybercriminals are increasingly infecting regular people with spyware",
-   "link": "https://therecord.media/spyware-cyber-crime-iverify",
-   "published": "2026-11-10T15:45:00+00:00",
-   "summary": "Cybercriminals are infecting devices on a large scale with spyware, increasingly compromising systems belonging to average people, according to a new report.",
-   "image": "https://cms.therecord.media/uploads/iphone_8675e4e6f4.jpg",
-   "cves": [],
-   "first_seen": "2026-11-10T16:31:18.268744+00:00",
-   "image_checked": true,
-   "instructions": [
-    "“Businesses need to update their threat models to stop focusing on VIPs and just assume this is a problem that everyone in the organization has to tackle,” Cole said."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "e52fb1952d02",
    "source": "therecord",
    "source_name": "The Record",
@@ -5410,23 +3573,6 @@
    "instructions_checked": true
   },
   {
-   "id": "a726f2ce6dd2",
-   "source": "grahamcluley",
-   "source_name": "Graham Cluley",
-   "official": false,
-   "source_type": "news",
-   "title": "Iranian hackers turned up the heat on French supermarket freezers, says France",
-   "link": "https://www.bitdefender.com/en-us/blog/hotforsecurity/iranian-hackers-supermarket-freezers-france",
-   "published": "2026-11-10T16:05:50+00:00",
-   "summary": "Iran has been officially accused by France of being responsible for cyber attacks last month that meddled with supermarket freezers, causing some to catch fire. Read more in my article on the Hot for Security blog.",
-   "image": "https://blogapp.bitdefender.com/hotforsecurity/content/images/2026/11/fridge.jpeg",
-   "cves": [],
-   "first_seen": "2026-11-10T17:31:22.719330+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "b6cd1d92c2ad",
    "source": "grahamcluley",
    "source_name": "Graham Cluley",
@@ -5507,6 +3653,23 @@
     "In a new investigation update , the company says it has now examined the original device in its laboratory and identified two additional compromised wallets using photographs submitted by their owners.",
     "\"Our latest firmware update 2.13.1, released on November 11th, includes a protection that stops the implants we’ve found from capturing anything on devices that run it, making the current batch of implants useless,\" Trezor said."
    ],
+   "instructions_checked": true
+  },
+  {
+   "id": "3241c5d0e909",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Flipper Devices launches $399 ‘Flipper One’ Linux-based multi-tool",
+   "link": "https://www.bleepingcomputer.com/news/hardware/flipper-devices-launches-399-flipper-one-linux-based-multi-tool/",
+   "published": "2026-11-17T16:00:00+00:00",
+   "summary": "Flipper Devices, the company behind the popular Flipper Zero pentesting device, has launched a crowdfunding campaign for Flipper One, a portable Linux computer and networking multi-tool.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/17/network_menu.jpg",
+   "cves": [],
+   "first_seen": "2026-11-17T16:21:38.437445+00:00",
+   "image_checked": true,
+   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -6002,28 +4165,6 @@
    "instructions_checked": true
   },
   {
-   "id": "89d6f6254d42",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Binance warns of iOS flaw that could leak crypto wallet secrets",
-   "link": "https://www.bleepingcomputer.com/news/security/binance-warns-of-ios-flaw-that-could-leak-crypto-wallet-secrets/",
-   "published": "2026-11-10T15:59:19+00:00",
-   "summary": "Binance is warning about a vulnerability in Apple's iOS 26.7.1, 27.0.1, and 27.2 that could allow third-party apps to read private files stored by other apps, including cryptocurrency seed phrases, secret keys, and login credentials.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/09/Binance.jpg",
-   "cves": [],
-   "first_seen": "2026-11-10T16:31:18.268744+00:00",
-   "image_checked": true,
-   "instructions": [
-    "The company recommends that users delete any unnecessary and untrusted apps and apply the latest versions for iOS and other apps.",
-    "Where compromise is suspected, Binance advises users to transfer funds to a new wallet created on a clean device and reset all active login sessions.",
-    "The tool must be installed on an iPhone for the attack to work, but an attacker could distribute it through untrusted sources as a sideloaded app, bypassing Apple's App Store.",
-    "At this time, no cryptocurrency losses have been confirmed, but Binance urges users to install the update immediately as a precaution."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "f7229d91014f",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -6123,28 +4264,6 @@
    "image_checked": true,
    "instructions": [
     "In the next stage of the scheme, they allegedly reordered the block on the Ethereum blockchain, which resulted in the theft of approximately $25 million in cryptocurrency from the victim traders."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "82b5e1a648c0",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Critical Xen Orchestra auth bypass flaw exploited to hijack VM servers",
-   "link": "https://www.bleepingcomputer.com/news/security/critical-xen-orchestra-auth-bypass-flaw-exploited-to-hijack-vm-servers/",
-   "published": "2026-11-10T16:17:16+00:00",
-   "summary": "A critical authentication bypass vulnerability in Xen Orchestra is being actively exploited in attacks that could grant administrator privileges and allow takeover of XCP-ng virtualization hosts.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/10/xen-orchestrator-logo.jpg",
-   "cves": [],
-   "first_seen": "2026-11-10T16:31:18.268744+00:00",
-   "image_checked": true,
-   "instructions": [
-    "According to a Vates security advisory , the flaw stems from how Xen Orchestra processes authentication tokens sent through REST API requests.",
-    "Administrators should install the update immediately, and if not possible, restrict Xen Orchestra access to dedicated management networks and block known malicious IP addresses.",
-    "Companies that believe they are compromised should rotate passwords and secrets used by their virtualization environments.",
-    "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
    ],
    "instructions_checked": true
   },
@@ -6782,6 +4901,416 @@
    "instructions_checked": true
   },
   {
+   "id": "1671c4ae2d79",
+   "source": "cisa",
+   "source_name": "CISA Cybersecurity Advisories",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+   "link": "https://www.cisa.gov/news-events/alerts/2026/11/13/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+   "published": "2026-11-13T12:00:00+00:00",
+   "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-114713 UnrealIRCd Improper Neutralization of Delimiters Vulnerability CVE-2026-123039 Check Point Multiple Products Incorrect Permission Assignment for Critical Resource…",
+   "image": null,
+   "cves": [
+    "CVE-2026-114713",
+    "CVE-2026-123039"
+   ],
+   "first_seen": "2026-11-17T16:21:38.437445+00:00",
+   "instructions": [
+    "Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
+    "BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "0b6d9bcd8811",
+   "source": "cisa",
+   "source_name": "CISA Cybersecurity Advisories",
+   "official": true,
+   "source_type": "advisory",
+   "title": "Siemens Building Automation and Energy Products",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-01",
+   "published": "2026-11-12T12:00:00+00:00",
+   "summary": "View CSAF Summary On October 21, 2026, the PHP project and security researchers disclosed two critical, unauthenticated remote code execution vulnerabilities in the core PHP language runtime known as \"php2shell\" (tracked as CVE-2026-109618 and CVE-2026-109619). This advisory covers the status of impact of various…",
+   "image": null,
+   "cves": [
+    "CVE-2026-109618",
+    "CVE-2026-109619"
+   ],
+   "first_seen": "2026-11-17T16:21:38.437445+00:00",
+   "instructions": [
+    "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies .",
+    "In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines, and to follow the recommendations in the product manuals.",
+    "Siemens has released new versions for several affected products and recommends to update to the latest versions.",
+    "Siemens is preparing further fixes and recommends mitigations for products where fixes are not or not yet available."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "3fc70062a296",
+   "source": "cisa",
+   "source_name": "CISA Cybersecurity Advisories",
+   "official": true,
+   "source_type": "advisory",
+   "title": "Siemens Desigo, Gridscale",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-02",
+   "published": "2026-11-12T12:00:00+00:00",
+   "summary": "View CSAF Summary On October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, commonly referred to as \"Node2Shell\" (tracked as CVE-2026-111497). The vulnerability is an out-of-bounds write that could allow a remote attacker to cause…",
+   "image": null,
+   "cves": [
+    "CVE-2026-111497"
+   ],
+   "first_seen": "2026-11-17T16:21:38.437445+00:00",
+   "instructions": [
+    "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies .",
+    "Siemens has released new versions for the affected products and recommends to update to the latest versions.",
+    "Siemens strongly recommends applying the provided security updates using the corresponding tooling and documented procedures made available with the product.",
+    "This ICSA is a verbatim republication of Siemens ProductCERT SSA-045512 from a direct conversion of the vendor's Common Security Advisory Framework (CSAF) advisory."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "0326dcbca7c7",
+   "source": "cisa",
+   "source_name": "CISA Cybersecurity Advisories",
+   "official": true,
+   "source_type": "advisory",
+   "title": "Siemens Industrial Edge Management",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-03",
+   "published": "2026-11-12T12:00:00+00:00",
+   "summary": "View CSAF Summary Siemens is currently assessing the impact of Node2Shell (CVE-2026-111497) on Industrial Edge. Please check your Industrial Edge Management (IEM) setup: - No Management Applications installed: No action is required. Although the affected Brotli library is included in the IEM software stack, the…",
+   "image": null,
+   "cves": [
+    "CVE-2026-111497"
+   ],
+   "first_seen": "2026-11-17T16:21:38.437445+00:00",
+   "instructions": [
+    "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies .",
+    "The same applies to IEDK. - Management Applications installed: Follow the specific mitigations until a fix is available. - Device Applications installed: Follow the specific mitigations until a fix is available.",
+    "Siemens has released new versions for several affected products and recommends to update to the latest versions.",
+    "Siemens is preparing further fixes and recommends specific mitigations for products where fixes are not or not yet available."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "3fea90422b4e",
+   "source": "cisa",
+   "source_name": "CISA Cybersecurity Advisories",
+   "official": true,
+   "source_type": "advisory",
+   "title": "Siemens RUGGEDCOM APE1808",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-04",
+   "published": "2026-11-12T12:00:00+00:00",
+   "summary": "View CSAF Summary Palo Alto Networks has published information on a vulnerability in PAN-OS related to the Node2Shell vulnerability. This advisory lists the related Siemens Industrial products affected by this vulnerability. Customers are advised to consult and implement the workarounds provided in Palo Alto Networks'…",
+   "image": null,
+   "cves": [
+    "CVE-2026-111497"
+   ],
+   "first_seen": "2026-11-17T16:21:38.437445+00:00",
+   "instructions": [
+    "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies .",
+    "Customers are advised to consult and implement the workarounds provided in Palo Alto Networks' upstream security notifications.",
+    "In order to operate the devices in a protected IT environment, Siemens recommends configuring the environment according to Siemens' operational guidelines for Industrial Security ( https://www.siemens.com/cert/operational-guidelines-industrial-security ), and to follow the recommendations in the product manuals.",
+    "This ICSA is a verbatim republication of Siemens ProductCERT SSA-898633 from a direct conversion of the vendor's Common Security Advisory Framework (CSAF) advisory."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "d1b92d164acb",
+   "source": "cisa",
+   "source_name": "CISA Cybersecurity Advisories",
+   "official": true,
+   "source_type": "advisory",
+   "title": "Siemens RUGGEDCOM APE1808",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-05",
+   "published": "2026-11-12T12:00:00+00:00",
+   "summary": "View CSAF Summary Palo Alto Networks has published information on vulnerabilities in PAN-OS related to PHP2Shell vulnerabilities. This advisory lists the related Siemens Industrial products affected by these vulnerabilities. Customers are advised to consult and implement the workarounds provided in Palo Alto Networks'…",
+   "image": null,
+   "cves": [
+    "CVE-2026-109618",
+    "CVE-2026-109619"
+   ],
+   "first_seen": "2026-11-17T16:21:38.437445+00:00",
+   "instructions": [
+    "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies .",
+    "Customers are advised to consult and implement the workarounds provided in Palo Alto Networks' upstream security notifications.",
+    "In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security ( https://www.siemens.com/cert/operational-guidelines-industrial-security ), and to follow the recommendations in the product manuals.",
+    "This ICSA is a verbatim republication of Siemens ProductCERT SSA-566512 from a direct conversion of the vendor's Common Security Advisory Framework (CSAF) advisory."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "2662cf713828",
+   "source": "cisa",
+   "source_name": "CISA Cybersecurity Advisories",
+   "official": true,
+   "source_type": "advisory",
+   "title": "Dorsett Controls InfoScan",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-01",
+   "published": "2026-11-17T12:00:00+00:00",
+   "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to retrieve sensitive system information, access application data without authorization, recover stored credentials, or intercept and manipulate network communications. The following versions of Dorsett Controls InfoScan are…",
+   "image": null,
+   "cves": [
+    "CVE-2026-117659",
+    "CVE-2026-120157",
+    "CVE-2026-120255",
+    "CVE-2026-120260",
+    "CVE-2026-120271",
+    "CVE-2026-120298"
+   ],
+   "first_seen": "2026-11-17T16:21:38.437445+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies .",
+    "Vendor fix Dorsett Controls recommends updating affected versions of InfoScan to v1.46 or higher.",
+    "CISA recommends users take defensive measures to minimize the risk of exploitation of these vulnerabilities.",
+    "When remote access is required, use more secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most current version available."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "dc2d43865fd4",
+   "source": "cisa",
+   "source_name": "CISA Cybersecurity Advisories",
+   "official": true,
+   "source_type": "advisory",
+   "title": "Siemens .NET Client Library for SIMATIC S7 Webserver API",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-02",
+   "published": "2026-11-17T12:00:00+00:00",
+   "summary": "View CSAF Summary.NET Client Library for SIMATIC S7 Webserver API contains multiple vulnerabilities that could allow an attacker to obtain sensitive information or write arbitrary files outside the intended download directory. Siemens has released a new version for.NET Client Library for SIMATIC S7 Webserver API and…",
+   "image": null,
+   "cves": [
+    "CVE-2026-85114",
+    "CVE-2026-85115"
+   ],
+   "first_seen": "2026-11-17T16:21:38.437445+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies .",
+    "Siemens has released a new version for .NET Client Library for SIMATIC S7 Webserver API and recommends to update to the latest version.",
+    "This ICSA is a verbatim republication of Siemens ProductCERT SSA-390352 from a direct conversion of the vendor's Common Security Advisory Framework (CSAF) advisory.",
+    "CISA is not responsible for the editorial or technical accuracy of republished advisories and provides no warranties of any kind regarding any information contained within this advisory."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "72572082204e",
+   "source": "cisa",
+   "source_name": "CISA Cybersecurity Advisories",
+   "official": true,
+   "source_type": "advisory",
+   "title": "Siemens Industrial Automation Software Products",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-03",
+   "published": "2026-11-17T12:00:00+00:00",
+   "summary": "View CSAF Summary On October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, commonly referred to as \"Node2Shell\" (tracked as CVE-2026-111497). The vulnerability is an out-of-bounds write that could allow a remote attacker to cause…",
+   "image": null,
+   "cves": [
+    "CVE-2026-111497"
+   ],
+   "first_seen": "2026-11-17T16:21:38.437445+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies .",
+    "Siemens has released new versions for several affected products and recommends to update to the latest versions.",
+    "Siemens is preparing further fixes and recommends specific mitigations for products where fixes are not or not yet available.",
+    "This ICSA is a verbatim republication of Siemens ProductCERT SSA-242944 from a direct conversion of the vendor's Common Security Advisory Framework (CSAF) advisory."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "877e907402b9",
+   "source": "cisa",
+   "source_name": "CISA Cybersecurity Advisories",
+   "official": true,
+   "source_type": "advisory",
+   "title": "Siemens Industrial Software Products",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-04",
+   "published": "2026-11-17T12:00:00+00:00",
+   "summary": "View CSAF Summary On October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, commonly referred to as \"Node2Shell\" (tracked as CVE-2026-111497). The vulnerability is an out-of-bounds write that could allow a remote attacker to cause…",
+   "image": null,
+   "cves": [
+    "CVE-2026-111497"
+   ],
+   "first_seen": "2026-11-17T16:21:38.437445+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies .",
+    "Mitigation For Teamcenter manual mitigation instructions can be found here: https://support.sw.siemens.com/en-US/knowledge-base/PL8869204",
+    "This ICSA is a verbatim republication of Siemens ProductCERT SSA-678870 from a direct conversion of the vendor's Common Security Advisory Framework (CSAF) advisory.",
+    "CISA is not responsible for the editorial or technical accuracy of republished advisories and provides no warranties of any kind regarding any information contained within this advisory."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "91c22df4b393",
+   "source": "cisa",
+   "source_name": "CISA Cybersecurity Advisories",
+   "official": true,
+   "source_type": "advisory",
+   "title": "Siemens Mendix Studio Pro",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-05",
+   "published": "2026-11-17T12:00:00+00:00",
+   "summary": "View CSAF Summary Mendix Studio Pro contains multiple vulnerabilities in the MCP Server, that could allow an attacker with network access to interact with the server remotely or trick a user's browser into sending unauthorized requests, potentially leading to unauthorized data access, tool execution, or system…",
+   "image": null,
+   "cves": [
+    "CVE-2026-112136",
+    "CVE-2026-112137"
+   ],
+   "first_seen": "2026-11-17T16:21:38.437445+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies .",
+    "Siemens has released new versions for the affected products and recommends to update to the latest versions.",
+    "This ICSA is a verbatim republication of Siemens ProductCERT SSA-710379 from a direct conversion of the vendor's Common Security Advisory Framework (CSAF) advisory.",
+    "CISA is not responsible for the editorial or technical accuracy of republished advisories and provides no warranties of any kind regarding any information contained within this advisory."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "a0f483dd422a",
+   "source": "cisa",
+   "source_name": "CISA Cybersecurity Advisories",
+   "official": true,
+   "source_type": "advisory",
+   "title": "Siemens ROS#",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-06",
+   "published": "2026-11-17T12:00:00+00:00",
+   "summary": "View CSAF Summary ROS# before version 2.3.1 contains a code injection vulnerability that could allow an attacker that is able to pass a crafted message definition file to the user to inject arbitrary code into the generated program. Siemens has released a new version for ROS# and recommends to update to the latest…",
+   "image": null,
+   "cves": [
+    "CVE-2026-109097"
+   ],
+   "first_seen": "2026-11-17T16:21:38.437445+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies .",
+    "Siemens has released a new version for ROS# and recommends to update to the latest version.",
+    "This ICSA is a verbatim republication of Siemens ProductCERT SSA-435267 from a direct conversion of the vendor's Common Security Advisory Framework (CSAF) advisory.",
+    "CISA is not responsible for the editorial or technical accuracy of republished advisories and provides no warranties of any kind regarding any information contained within this advisory."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "d08071d08cf1",
+   "source": "cisa",
+   "source_name": "CISA Cybersecurity Advisories",
+   "official": true,
+   "source_type": "advisory",
+   "title": "Siemens RUGGEDCOM APE1808",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-07",
+   "published": "2026-11-17T12:00:00+00:00",
+   "summary": "View CSAF Summary Fortinet has published information on a Double Free vulnerability in FortiOS. This advisory lists the related Siemens Industrial products. Siemens recommends to update Fortigate NGFW to V7.6.9 or later following the secure update recommendation procedure. Contact customer support to receive detailed…",
+   "image": null,
+   "cves": [
+    "CVE-2026-106175"
+   ],
+   "first_seen": "2026-11-17T16:21:38.437445+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies .",
+    "Siemens recommends to update Fortigate NGFW to V7.6.9 or later following the secure update recommendation procedure.",
+    "This ICSA is a verbatim republication of Siemens ProductCERT SSA-651988 from a direct conversion of the vendor's Common Security Advisory Framework (CSAF) advisory.",
+    "CISA is not responsible for the editorial or technical accuracy of republished advisories and provides no warranties of any kind regarding any information contained within this advisory."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "9c3818e954e8",
+   "source": "cisa",
+   "source_name": "CISA Cybersecurity Advisories",
+   "official": true,
+   "source_type": "advisory",
+   "title": "Siemens SIMATIC",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-08",
+   "published": "2026-11-17T12:00:00+00:00",
+   "summary": "View CSAF Summary The products listed below contain an authentication bypass vulnerability that could allow an on-path attacker to take over the session of a legitimate user and execute arbitrary code with the privileges of the victim user. Siemens is preparing fixes and recommends specific mitigations for products…",
+   "image": null,
+   "cves": [
+    "CVE-2026-58114"
+   ],
+   "first_seen": "2026-11-17T16:21:38.437445+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies .",
+    "Siemens is preparing fixes and recommends specific mitigations for products where fixes are not or not yet available.",
+    "This ICSA is a verbatim republication of Siemens ProductCERT SSA-970803 from a direct conversion of the vendor's Common Security Advisory Framework (CSAF) advisory.",
+    "CISA is not responsible for the editorial or technical accuracy of republished advisories and provides no warranties of any kind regarding any information contained within this advisory."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "d4620a114430",
+   "source": "cisa",
+   "source_name": "CISA Cybersecurity Advisories",
+   "official": true,
+   "source_type": "advisory",
+   "title": "Siemens SIMATIC WinCC",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-09",
+   "published": "2026-11-17T12:00:00+00:00",
+   "summary": "View CSAF Summary Graphics Designer of SIMATIC WinCC before V8.2 contains an implicit active content execution vulnerability upon opening files, which could allow an attacker to cause arbitrary code execution on the device. Siemens is preparing fixes and recommends specific mitigations for products where fixes are not…",
+   "image": null,
+   "cves": [
+    "CVE-2026-59082"
+   ],
+   "first_seen": "2026-11-17T16:21:38.437445+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies .",
+    "Siemens is preparing fixes and recommends specific mitigations for products where fixes are not or not yet available.",
+    "This ICSA is a verbatim republication of Siemens ProductCERT SSA-979641 from a direct conversion of the vendor's Common Security Advisory Framework (CSAF) advisory.",
+    "CISA is not responsible for the editorial or technical accuracy of republished advisories and provides no warranties of any kind regarding any information contained within this advisory."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "51d812581aa5",
+   "source": "cisa",
+   "source_name": "CISA Cybersecurity Advisories",
+   "official": true,
+   "source_type": "advisory",
+   "title": "Siemens Simcenter Femap",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-10",
+   "published": "2026-11-17T12:00:00+00:00",
+   "summary": "View CSAF Summary Simcenter Femap is affected by an out of bounds read vulnerability that could be triggered when the application reads files in X_T format. This could allow an attacker to crash the application or execute arbitrary code. Siemens has released a new version for Simcenter Femap and recommends to update…",
+   "image": null,
+   "cves": [
+    "CVE-2026-64629"
+   ],
+   "first_seen": "2026-11-17T16:21:38.437445+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies .",
+    "Siemens has released a new version for Simcenter Femap and recommends to update to the latest version.",
+    "This ICSA is a verbatim republication of Siemens ProductCERT SSA-105852 from a direct conversion of the vendor's Common Security Advisory Framework (CSAF) advisory.",
+    "CISA is not responsible for the editorial or technical accuracy of republished advisories and provides no warranties of any kind regarding any information contained within this advisory."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "21dc163c1f75",
+   "source": "cisa",
+   "source_name": "CISA Cybersecurity Advisories",
+   "official": true,
+   "source_type": "advisory",
+   "title": "Siemens meta-iot2050",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-11",
+   "published": "2026-11-17T12:00:00+00:00",
+   "summary": "View CSAF Summary meta-iot2050 (https://github.com/siemens/meta-iot2050) from V01.03.01 contains a Command Injection vulnerability in the firmware update tool that could allow an attacker which is able to manipulate a configuration file to have arbitrary commands run as root. Siemens is preparing fixes and recommends…",
+   "image": null,
+   "cves": [
+    "CVE-2026-109830"
+   ],
+   "first_seen": "2026-11-17T16:21:38.437445+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies .",
+    "Siemens is preparing fixes and recommends mitigations for products where fixes are not or not yet available.",
+    "This ICSA is a verbatim republication of Siemens ProductCERT SSA-724261 from a direct conversion of the vendor's Common Security Advisory Framework (CSAF) advisory.",
+    "CISA is not responsible for the editorial or technical accuracy of republished advisories and provides no warranties of any kind regarding any information contained within this advisory."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "6922144e7a8d",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -7319,6 +5848,27 @@
     "The following defanged indicators were observed in the campaign and should be validated in the context of each environment before blocking.",
     "Quarantine matching messages and remove delivered copies in accordance with organizational response procedures.",
     "Reset credentials and investigate potentially compromised accounts For any user who may have entered credentials, reset the password, revoke active sessions and refresh tokens, and verify multifactor authentication registrations."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "2a3576b7db96",
+   "source": "msblog",
+   "source_name": "Microsoft Security Blog",
+   "official": false,
+   "source_type": "vendor_blog",
+   "title": "The risks of device code authentication for AI coding agents",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/17/the-risks-of-device-code-authentication-for-ai-coding-agents/",
+   "published": "2026-11-17T15:00:00+00:00",
+   "summary": "Device code phishing has become a recurring route to account takeover. Instead of stealing a password, an attacker persuades someone to approve a sign-in on a legitimate site simply by entering a code. The resulting access often can reach email, files, or other cloud services, depending on the account and the…",
+   "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/11/image-46.webp",
+   "cves": [],
+   "first_seen": "2026-11-17T16:21:38.437445+00:00",
+   "instructions": [
+    "This demonstrates misuse of an authorized remote-session capability working as designed; it is not unauthenticated remote code execution and does not apply when remote control is disabled, the session is not running, or the machine is offline.",
+    "Responders should also review and revoke unexpected OAuth authorizations, verify that access is blocked, and investigate potentially affected sessions, repositories, and saved memory.",
+    "An unexpected request to “verify” GitHub or activate Copilot should be treated as a phishing attempt, even if the page is hosted on github.com.",
+    "Users should approve only device-code requests they initiated."
    ],
    "instructions_checked": true
   },

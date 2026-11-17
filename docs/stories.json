@@ -1,6 +1,16 @@
 {
  "stories": [
   {
+   "id": "f67825a82ae8",
+   "title": "Recent UnrealIRCd Vulnerability Exploited in Attacks",
+   "summary": "Tracked as CVE-2026-114713, the high-severity flaw allows attackers to execute commands with server/IRCOp privileges. The post Recent UnrealIRCd Vulnerability Exploited…",
+   "priority": "Critical",
+   "category": "Patch Radar",
+   "date": "16 Nov 2026, 11:15 UTC",
+   "sources": "SecurityWeek, The Hacker News, CISA Cybersecurity Advisories",
+   "url": "story/f67825a82ae8.html"
+  },
+  {
    "id": "6ad116b5c12b",
    "title": "MSP ScreenConnect Servers Targeted in Month-Long Campaign",
    "summary": "More than 40 servers received over 688,000 requests exploiting CVE-2026-84869 to execute guest-pushed files. The post MSP ScreenConnect Servers Targeted in Month-Long…",
@@ -11,14 +21,24 @@
    "url": "story/6ad116b5c12b.html"
   },
   {
-   "id": "f67825a82ae8",
-   "title": "Recent UnrealIRCd Vulnerability Exploited in Attacks",
-   "summary": "Tracked as CVE-2026-114713, the high-severity flaw allows attackers to execute commands with server/IRCOp privileges. The post Recent UnrealIRCd Vulnerability Exploited…",
+   "id": "877e907402b9",
+   "title": "Siemens Industrial Software Products",
+   "summary": "View CSAF Summary On October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js…",
    "priority": "Critical",
    "category": "Patch Radar",
-   "date": "16 Nov 2026, 11:15 UTC",
-   "sources": "SecurityWeek, The Hacker News",
-   "url": "story/f67825a82ae8.html"
+   "date": "17 Nov 2026, 12:00 UTC",
+   "sources": "CISA Cybersecurity Advisories, Microsoft Security Response Center",
+   "url": "story/877e907402b9.html"
+  },
+  {
+   "id": "b5e1ece521f3",
+   "title": "GTIG AI Threat Tracker: Agentic Threat Activity Crosses a Significant Threshold",
+   "summary": "Written by: Aurora Blum, Kelli Vanderlee, Jess Xia, David Mainor Executive Summary As threat actors increasingly move beyond basic prompting to deploying autonomous…",
+   "priority": "Critical",
+   "category": "AI Risk Lab",
+   "date": "16 Nov 2026, 14:00 UTC",
+   "sources": "Google Threat Intelligence, CISA Cybersecurity Advisories",
+   "url": "story/b5e1ece521f3.html"
   },
   {
    "id": "474586429e7c",
@@ -51,16 +71,6 @@
    "url": "story/7d141681ccc2.html"
   },
   {
-   "id": "c84faf9461ad",
-   "title": "CVE-2026-111497 Google: CVE-2026-111497 Buffer overflow vulnerability in the Brotli decoder",
-   "summary": "Updated the Security Updates table to include affected Windows versions and the applicable November 2026 security updates. Microsoft recommends that customers install…",
-   "priority": "Critical",
-   "category": "Patch Radar",
-   "date": "12 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/c84faf9461ad.html"
-  },
-  {
    "id": "95f883361cdc",
    "title": "November Patch Tuesday: An Overflowing Cornucopia of CVEs",
    "summary": "Microsoft serves up an actively exploited Outlook zero-day, and a wave of critical Exchange, SharePoint, Windows Search, and LDAP bugs that exhausted defenders need to…",
@@ -69,16 +79,6 @@
    "date": "10 Nov 2026, 22:26 UTC",
    "sources": "Dark Reading",
    "url": "story/95f883361cdc.html"
-  },
-  {
-   "id": "b5e1ece521f3",
-   "title": "GTIG AI Threat Tracker: Agentic Threat Activity Crosses a Significant Threshold",
-   "summary": "Written by: Aurora Blum, Kelli Vanderlee, Jess Xia, David Mainor Executive Summary As threat actors increasingly move beyond basic prompting to deploying autonomous…",
-   "priority": "Critical",
-   "category": "AI Risk Lab",
-   "date": "16 Nov 2026, 14:00 UTC",
-   "sources": "Google Threat Intelligence",
-   "url": "story/b5e1ece521f3.html"
   },
   {
    "id": "3ad387c63ed5",
@@ -151,16 +151,6 @@
    "url": "story/9398616ade4d.html"
   },
   {
-   "id": "82b5e1a648c0",
-   "title": "Critical Xen Orchestra auth bypass flaw exploited to hijack VM servers",
-   "summary": "A critical authentication bypass vulnerability in Xen Orchestra is being actively exploited in attacks that could grant administrator privileges and allow takeover of…",
-   "priority": "High",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 16:17 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/82b5e1a648c0.html"
-  },
-  {
    "id": "5e43b1695ab6",
    "title": "New GitDoor and GraphDoor Backdoors Turn GitHub and SharePoint Into Covert C2 Channels",
    "summary": "Government sectors in Asia and Africa have been targeted by an active cyber intrusion campaign that delivers to previously undocumented backdoors that leverage…",
@@ -191,46 +181,6 @@
    "url": "story/10d373a62ac2.html"
   },
   {
-   "id": "b51465391ef6",
-   "title": "CVE-2026-124222 Microsoft Office SharePoint Elevation of Privilege Vulnerability",
-   "summary": "Information published. This CVE was addressed by updates that were released in November 2026, but the CVE was inadvertently omitted from the November 2026 Security…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "16 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/b51465391ef6.html"
-  },
-  {
-   "id": "1b83f65e29fd",
-   "title": "CVE-2026-124223 Microsoft Office SharePoint Remote Code Execution Vulnerability",
-   "summary": "Information published. This CVE was addressed by updates that were released in November 2026, but the CVE was inadvertently omitted from the November 2026 Security…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "16 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/1b83f65e29fd.html"
-  },
-  {
-   "id": "bbb8a6727085",
-   "title": "TSMC employee data breach linked to cloud provider",
-   "summary": "Taiwan Semiconductor Manufacturing Company (TSMC) confirmed that personal employee data has been leaked online after a threat actor put 6.9GB of information allegedly…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "15 Nov 2026, 15:23 UTC",
-   "sources": "BleepingComputer, The Record",
-   "url": "story/bbb8a6727085.html"
-  },
-  {
-   "id": "3b2c5ccdae53",
-   "title": "CVE-2026-109473 Windows Kernel Elevation of Privilege Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "13 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/3b2c5ccdae53.html"
-  },
-  {
    "id": "e71bf5215ff1",
    "title": "Ransomware attack on Belarusian cloud firm disrupts businesses for days",
    "summary": "ActiveCloud said hackers had breached its systems and encrypted parts of its cloud infrastructure, leaving customers unable to access key services for several days.",
@@ -239,16 +189,6 @@
    "date": "13 Nov 2026, 14:28 UTC",
    "sources": "The Record",
    "url": "story/e71bf5215ff1.html"
-  },
-  {
-   "id": "d9f7469060c3",
-   "title": "PHP2Shell Exploited in Destructive Check Point Gateway Attacks",
-   "summary": "PHP2Shell enabled initial compromise, while CVE-2026-123039 allowed attackers to elevate privileges to root. The post PHP2Shell Exploited in Destructive Check Point…",
-   "priority": "Critical",
-   "category": "Patch Radar",
-   "date": "13 Nov 2026, 07:39 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/d9f7469060c3.html"
   },
   {
    "id": "e447c2de7d90",
@@ -281,16 +221,6 @@
    "url": "story/ac77bc3897e8.html"
   },
   {
-   "id": "0eb55bf1598e",
-   "title": "Attackers Exploit AhsayCBS Flaws to Deploy Sandbox-Evading Python Backdoor",
-   "summary": "Cybersecurity researchers have disclosed details of an attack that exploited two now-patched vulnerabilities in AhsayCBS to deliver a Python-based implant. The activity…",
-   "priority": "Critical",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 16:00 UTC",
-   "sources": "The Hacker News",
-   "url": "story/0eb55bf1598e.html"
-  },
-  {
    "id": "9409189d8358",
    "title": "Uber says nearly 150,000 impacted by third-party breach",
    "summary": "In breach notification letters, the rideshare company said it was notified by a third party service provider on October 9 that internal credentials were stolen and used…",
@@ -309,6 +239,16 @@
    "date": "17 Nov 2026, 15:01 UTC",
    "sources": "BleepingComputer",
    "url": "story/148f7e8fc320.html"
+  },
+  {
+   "id": "2a3576b7db96",
+   "title": "The risks of device code authentication for AI coding agents",
+   "summary": "Device code phishing has become a recurring route to account takeover. Instead of stealing a password, an attacker persuades someone to approve a sign-in on a legitimate…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "17 Nov 2026, 15:00 UTC",
+   "sources": "Microsoft Security Blog",
+   "url": "story/2a3576b7db96.html"
   },
   {
    "id": "76496683beb3",
@@ -391,14 +331,24 @@
    "url": "story/18b00fe2b40c.html"
   },
   {
-   "id": "d29e040f4044",
-   "title": "Fandango says hackers stole payment card details from checkout pages",
-   "summary": "Ticket seller Fandango Media is notifying customers about a data breach that exposed payment card details entered on its checkout pages.",
+   "id": "b51465391ef6",
+   "title": "CVE-2026-124222 Microsoft Office SharePoint Elevation of Privilege Vulnerability",
+   "summary": "Information published. This CVE was addressed by updates that were released in November 2026, but the CVE was inadvertently omitted from the November 2026 Security…",
    "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "16 Nov 2026, 15:44 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/d29e040f4044.html"
+   "category": "Patch Radar",
+   "date": "16 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/b51465391ef6.html"
+  },
+  {
+   "id": "1b83f65e29fd",
+   "title": "CVE-2026-124223 Microsoft Office SharePoint Remote Code Execution Vulnerability",
+   "summary": "Information published. This CVE was addressed by updates that were released in November 2026, but the CVE was inadvertently omitted from the November 2026 Security…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "16 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/1b83f65e29fd.html"
   },
   {
    "id": "6db60cdc6268",
@@ -419,6 +369,16 @@
    "date": "16 Nov 2026, 13:27 UTC",
    "sources": "The Hacker News",
    "url": "story/f9828b77234b.html"
+  },
+  {
+   "id": "bbb8a6727085",
+   "title": "TSMC employee data breach linked to cloud provider",
+   "summary": "Taiwan Semiconductor Manufacturing Company (TSMC) confirmed that personal employee data has been leaked online after a threat actor put 6.9GB of information allegedly…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "15 Nov 2026, 15:23 UTC",
+   "sources": "BleepingComputer, The Record",
+   "url": "story/bbb8a6727085.html"
   },
   {
    "id": "c3cb9f990617",
@@ -561,6 +521,86 @@
    "url": "story/eb1264c3eeab.html"
   },
   {
+   "id": "91c22df4b393",
+   "title": "Siemens Mendix Studio Pro",
+   "summary": "View CSAF Summary Mendix Studio Pro contains multiple vulnerabilities in the MCP Server, that could allow an attacker with network access to interact with the server…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "17 Nov 2026, 12:00 UTC",
+   "sources": "CISA Cybersecurity Advisories",
+   "url": "story/91c22df4b393.html"
+  },
+  {
+   "id": "dc2d43865fd4",
+   "title": "Siemens .NET Client Library for SIMATIC S7 Webserver API",
+   "summary": "View CSAF Summary.NET Client Library for SIMATIC S7 Webserver API contains multiple vulnerabilities that could allow an attacker to obtain sensitive information or write…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "17 Nov 2026, 12:00 UTC",
+   "sources": "CISA Cybersecurity Advisories",
+   "url": "story/dc2d43865fd4.html"
+  },
+  {
+   "id": "21dc163c1f75",
+   "title": "Siemens meta-iot2050",
+   "summary": "View CSAF Summary meta-iot2050 (https://github.com/siemens/meta-iot2050) from V01.03.01 contains a Command Injection vulnerability in the firmware update tool that could…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "17 Nov 2026, 12:00 UTC",
+   "sources": "CISA Cybersecurity Advisories",
+   "url": "story/21dc163c1f75.html"
+  },
+  {
+   "id": "d4620a114430",
+   "title": "Siemens SIMATIC WinCC",
+   "summary": "View CSAF Summary Graphics Designer of SIMATIC WinCC before V8.2 contains an implicit active content execution vulnerability upon opening files, which could allow an…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "17 Nov 2026, 12:00 UTC",
+   "sources": "CISA Cybersecurity Advisories",
+   "url": "story/d4620a114430.html"
+  },
+  {
+   "id": "d08071d08cf1",
+   "title": "Siemens RUGGEDCOM APE1808",
+   "summary": "View CSAF Summary Fortinet has published information on a Double Free vulnerability in FortiOS. This advisory lists the related Siemens Industrial products. Siemens…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "17 Nov 2026, 12:00 UTC",
+   "sources": "CISA Cybersecurity Advisories",
+   "url": "story/d08071d08cf1.html"
+  },
+  {
+   "id": "2662cf713828",
+   "title": "Dorsett Controls InfoScan",
+   "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to retrieve sensitive system information, access application data without…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "17 Nov 2026, 12:00 UTC",
+   "sources": "CISA Cybersecurity Advisories",
+   "url": "story/2662cf713828.html"
+  },
+  {
+   "id": "a0f483dd422a",
+   "title": "Siemens ROS#",
+   "summary": "View CSAF Summary ROS# before version 2.3.1 contains a code injection vulnerability that could allow an attacker that is able to pass a crafted message definition file…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "17 Nov 2026, 12:00 UTC",
+   "sources": "CISA Cybersecurity Advisories",
+   "url": "story/a0f483dd422a.html"
+  },
+  {
+   "id": "51d812581aa5",
+   "title": "Siemens Simcenter Femap",
+   "summary": "View CSAF Summary Simcenter Femap is affected by an out of bounds read vulnerability that could be triggered when the application reads files in X_T format. This could…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "17 Nov 2026, 12:00 UTC",
+   "sources": "CISA Cybersecurity Advisories",
+   "url": "story/51d812581aa5.html"
+  },
+  {
    "id": "cb74b2746cc6",
    "title": "Apple Tightens macOS App Permissions to Limit Data Access Amid AI Agent Security Risks",
    "summary": "Apple on Monday introduced new controls that allow Mac users to give more granular access to data they give to apps, including those that use artificial intelligence…",
@@ -631,24 +671,14 @@
    "url": "story/9c11c754eaec.html"
   },
   {
-   "id": "c5a7aee1fe72",
-   "title": "CVE-2026-105544 .NET VSTest Elevation of Privilege Vulnerability",
-   "summary": "Corrected the CVE description and title. This is an informational change only.",
+   "id": "d29e040f4044",
+   "title": "Fandango says hackers stole payment card details from checkout pages",
+   "summary": "Ticket seller Fandango Media is notifying customers about a data breach that exposed payment card details entered on its checkout pages.",
    "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "16 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/c5a7aee1fe72.html"
-  },
-  {
-   "id": "67c2edf75728",
-   "title": "Cursor Supply Chain Attack Started at Fireworks AI",
-   "summary": "The attacker stole an access key from Fireworks and used it to exfiltrate credentials that enabled them to push malicious Claude Code extension copies. The post Cursor…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "16 Nov 2026, 15:45 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/67c2edf75728.html"
+   "category": "Attacks & Breaches",
+   "date": "16 Nov 2026, 15:44 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/d29e040f4044.html"
   },
   {
    "id": "81c7c458d757",
@@ -771,6 +801,16 @@
    "url": "story/ea376f0b6ca4.html"
   },
   {
+   "id": "3b2c5ccdae53",
+   "title": "CVE-2026-109473 Windows Kernel Elevation of Privilege Vulnerability",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "13 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/3b2c5ccdae53.html"
+  },
+  {
    "id": "78c9d1b1c186",
    "title": "CVE-2026-119396 Windows Remote Access API Tampering Vulnerability",
    "summary": "Updated an acknowledgement. This is an informational change only.",
@@ -891,16 +931,6 @@
    "url": "story/4555dea14647.html"
   },
   {
-   "id": "df2e304a7245",
-   "title": "CVE-2026-120792 Aspire Information Disclosure Vulnerability",
-   "summary": "Updated the products listed in the Security Updates table. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "11 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/df2e304a7245.html"
-  },
-  {
    "id": "890bd5d68a0a",
    "title": "Railway Says Stolen Customer AI Keys Led to $740,000 in Estimated Unauthorized Usage Charges",
    "summary": "AI provider keys that customers stored on Railway were stolen in an October breach and used to commit an estimated $740,000 in unauthorized spending, the…",
@@ -951,214 +981,14 @@
    "url": "story/b958c2272095.html"
   },
   {
-   "id": "4a9230aea75f",
-   "title": "AI company Fireworks says hackers stole data, billing info during October breaches",
-   "summary": "Fireworks said the incident affected a “limited number of customer accounts” — all of whom were notified of the attack.",
+   "id": "3241c5d0e909",
+   "title": "Flipper Devices launches $399 ‘Flipper One’ Linux-based multi-tool",
+   "summary": "Flipper Devices, the company behind the popular Flipper Zero pentesting device, has launched a crowdfunding campaign for Flipper One, a portable Linux computer and…",
    "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "10 Nov 2026, 16:08 UTC",
-   "sources": "The Record",
-   "url": "story/4a9230aea75f.html"
-  },
-  {
-   "id": "1df64432304f",
-   "title": "CVE-2026-100204 HEIF Image Extensions Remote Code Execution Vulnerability",
-   "summary": "Use after free in HEIF Image Extensions allows an unauthorized attacker to execute code locally.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/1df64432304f.html"
-  },
-  {
-   "id": "749621e2cdd4",
-   "title": "CVE-2026-102227 Windows Resilient File System (ReFS) Remote Code Execution Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/749621e2cdd4.html"
-  },
-  {
-   "id": "780fc64ae721",
-   "title": "CVE-2026-105586 Microsoft Windows SCSI Class System File Elevation of Privilege Vulnerability",
-   "summary": "Null pointer dereference in Microsoft Windows SCSI Class System File allows an authorized attacker to elevate privileges locally.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/780fc64ae721.html"
-  },
-  {
-   "id": "7e25e120e172",
-   "title": "CVE-2026-105590 Windows Active Directory Certificate Services Security Feature Bypass",
-   "summary": "Improper certificate validation in Windows Active Directory Certificate Services allows an authorized attacker to bypass a security feature over a network.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/7e25e120e172.html"
-  },
-  {
-   "id": "3909203a2a90",
-   "title": "CVE-2026-108415 Windows File Server Resource Management Service Elevation of Privilege Vulnerability",
-   "summary": "Untrusted pointer dereference in Windows File Server Resource Management Service allows an unauthorized attacker to elevate privileges with a physical attack.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/3909203a2a90.html"
-  },
-  {
-   "id": "d1444b50cec7",
-   "title": "CVE-2026-108417 Windows Remote Desktop Client Information Disclosure Vulnerability",
-   "summary": "Out-of-bounds read in Remote Desktop Client allows an unauthorized attacker to disclose information over a network.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/d1444b50cec7.html"
-  },
-  {
-   "id": "61b69f1deec0",
-   "title": "CVE-2026-109467 Azure DevOps Server Remote Code Execution Vulnerability",
-   "summary": "Improper authentication in Azure DevOps allows an authorized attacker to execute code over a network.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/61b69f1deec0.html"
-  },
-  {
-   "id": "1328adc53dd3",
-   "title": "CVE-2026-114166 Microsoft Raw Image Extension Information Disclosure Vulnerability",
-   "summary": "Buffer over-read in Windows Raw Image Extension allows an unauthorized attacker to disclose information locally.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/1328adc53dd3.html"
-  },
-  {
-   "id": "b595e98fa95b",
-   "title": "CVE-2026-62784 Microsoft Local Security Authority Server (lsasrv) Remote Code Execution Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/b595e98fa95b.html"
-  },
-  {
-   "id": "dcc59bfbf42f",
-   "title": "CVE-2026-66810 Microsoft Office Word Information Disclosure Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/dcc59bfbf42f.html"
-  },
-  {
-   "id": "da0b74c3ba02",
-   "title": "CVE-2026-68839 Windows USB Mass Storage Class Driver Remote Code Execution Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/da0b74c3ba02.html"
-  },
-  {
-   "id": "6ade1aedb459",
-   "title": "CVE-2026-69277 Microsoft Local Security Authority (LSA) Server Elevation of Privilege Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/6ade1aedb459.html"
-  },
-  {
-   "id": "d482469a796c",
-   "title": "CVE-2026-69453 Microsoft Windows Search Component Tampering Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/d482469a796c.html"
-  },
-  {
-   "id": "21d5aea40d42",
-   "title": "CVE-2026-83681 Microsoft PowerToys Tampering Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/21d5aea40d42.html"
-  },
-  {
-   "id": "ecf4389fb80f",
-   "title": "CVE-2026-83758 Windows Error Reporting Remote Code Execution Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/ecf4389fb80f.html"
-  },
-  {
-   "id": "6f1e4fb8b204",
-   "title": "CVE-2026-83828 Windows MIDI Service Module Elevation of Privileges Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/6f1e4fb8b204.html"
-  },
-  {
-   "id": "32d9054c55c6",
-   "title": "CVE-2026-83926 Windows Hello Security Feature Bypass Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/32d9054c55c6.html"
-  },
-  {
-   "id": "92c4d25f1f91",
-   "title": "CVE-2026-85927 Windows Universal Plug and Play (UPnP) Device Host Elevation of Privilege Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/92c4d25f1f91.html"
-  },
-  {
-   "id": "173f37e989f0",
-   "title": "CVE-2026-96311 Windows Network List Service Tampering Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/173f37e989f0.html"
-  },
-  {
-   "id": "7646e96e2e7b",
-   "title": "Fireworks AI Confirms Wider Breach Affecting Customer Datasets, Model Weights and Notion AI Chats",
-   "summary": "Fireworks AI disclosed on Monday that its investigation into a security incident first reported early last month uncovered further malicious activity, affecting account…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "10 Nov 2026, 15:33 UTC",
-   "sources": "The Hacker News",
-   "url": "story/7646e96e2e7b.html"
+   "category": "Industry & Research",
+   "date": "17 Nov 2026, 16:00 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/3241c5d0e909.html"
   },
   {
    "id": "ff4ecbca8eac",
@@ -1331,24 +1161,24 @@
    "url": "story/2ebc983e1e5f.html"
   },
   {
-   "id": "cb085db9c014",
-   "title": "UK leaves client-side scanning out of new child safety rules",
-   "summary": "The regulator Ofcom said it does not have the power to make technology companies scan people’s personal devices for child abuse images.",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "16 Nov 2026, 15:56 UTC",
-   "sources": "The Record",
-   "url": "story/cb085db9c014.html"
-  },
-  {
-   "id": "eea617c7ce17",
-   "title": "Google Project Zero Sets Course for 30-Day Disclosure Deadline",
-   "summary": "It will move to a 60-day vulnerability disclosure window in February 2027 and to a 30-day window in January 2028. The post Google Project Zero Sets Course for 30-Day…",
+   "id": "c5a7aee1fe72",
+   "title": "CVE-2026-105544 .NET VSTest Elevation of Privilege Vulnerability",
+   "summary": "Corrected the CVE description and title. This is an informational change only.",
    "priority": "Standard",
    "category": "Patch Radar",
-   "date": "16 Nov 2026, 15:31 UTC",
+   "date": "16 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/c5a7aee1fe72.html"
+  },
+  {
+   "id": "67c2edf75728",
+   "title": "Cursor Supply Chain Attack Started at Fireworks AI",
+   "summary": "The attacker stole an access key from Fireworks and used it to exfiltrate credentials that enabled them to push malicious Claude Code extension copies. The post Cursor…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "16 Nov 2026, 15:45 UTC",
    "sources": "SecurityWeek",
-   "url": "story/eea617c7ce17.html"
+   "url": "story/67c2edf75728.html"
   },
   {
    "id": "0f4c5e346584",
@@ -1901,6 +1731,26 @@
    "url": "story/3ac35ff64736.html"
   },
   {
+   "id": "cb085db9c014",
+   "title": "UK leaves client-side scanning out of new child safety rules",
+   "summary": "The regulator Ofcom said it does not have the power to make technology companies scan people’s personal devices for child abuse images.",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "16 Nov 2026, 15:56 UTC",
+   "sources": "The Record",
+   "url": "story/cb085db9c014.html"
+  },
+  {
+   "id": "eea617c7ce17",
+   "title": "Google Project Zero Sets Course for 30-Day Disclosure Deadline",
+   "summary": "It will move to a 60-day vulnerability disclosure window in February 2027 and to a 30-day window in January 2028. The post Google Project Zero Sets Course for 30-Day…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "16 Nov 2026, 15:31 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/eea617c7ce17.html"
+  },
+  {
    "id": "69b76f0fd14e",
    "title": "NIST Finalizes Post-Quantum Cryptography Guidance, GAO Offers a Reality Check",
    "summary": "The emerging technology will soon break the \"lock and key\" encryption currently protecting sensitive data. A new GAO report shows agencies are behind on building their…",
@@ -2241,6 +2091,16 @@
    "url": "story/030e72a271ce.html"
   },
   {
+   "id": "df2e304a7245",
+   "title": "CVE-2026-120792 Aspire Information Disclosure Vulnerability",
+   "summary": "Updated the products listed in the Security Updates table. This is an informational change only.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "11 Nov 2026, 16:00 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/df2e304a7245.html"
+  },
+  {
    "id": "ef892408bebc",
    "title": "Google DeepMind just mathematically verified key parts of Signal",
    "summary": "Google DeepMind researchers used agentic AI to mathematically prove, or “formally verify,” a number of the Signal protocol’s key cryptographic guarantees—a landmark…",
@@ -2369,36 +2229,6 @@
    "date": "10 Nov 2026, 16:42 UTC",
    "sources": "SecurityWeek",
    "url": "story/38532208b5af.html"
-  },
-  {
-   "id": "a7b3d1646f01",
-   "title": "CVE-2026-69407 Volume Manager Driver Elevation of Privilege Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/a7b3d1646f01.html"
-  },
-  {
-   "id": "91dd8667fa3b",
-   "title": "CVE-2026-83846 Connected Devices Platform Service (Cdpsvc) Elevation of Privilege Vulnerability",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/91dd8667fa3b.html"
-  },
-  {
-   "id": "db9ef08d13bf",
-   "title": "CVE-2026-83894 RPC Runtime Elevation of Privilege Vulnerability",
-   "summary": "Use after free in RPC Runtime allows an authorized attacker to elevate privileges locally.",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 16:00 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/db9ef08d13bf.html"
   },
   {
    "id": "c8b26857299e",
@@ -3059,46 +2889,6 @@
    "date": "10 Nov 2026, 18:11 UTC",
    "sources": "SecurityWeek",
    "url": "story/4893b7f6453d.html"
-  },
-  {
-   "id": "a726f2ce6dd2",
-   "title": "Iranian hackers turned up the heat on French supermarket freezers, says France",
-   "summary": "Iran has been officially accused by France of being responsible for cyber attacks last month that meddled with supermarket freezers, causing some to catch fire. Read…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "10 Nov 2026, 16:05 UTC",
-   "sources": "Graham Cluley",
-   "url": "story/a726f2ce6dd2.html"
-  },
-  {
-   "id": "89d6f6254d42",
-   "title": "Binance warns of iOS flaw that could leak crypto wallet secrets",
-   "summary": "Binance is warning about a vulnerability in Apple's iOS 26.7.1, 27.0.1, and 27.2 that could allow third-party apps to read private files stored by other apps, including…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 15:59 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/89d6f6254d42.html"
-  },
-  {
-   "id": "7e413807cc2f",
-   "title": "Blind Eagle Uses Fake Court Notices to Deliver Remote Access Trojan Across Latin America",
-   "summary": "The threat actor known as Blind Eagle has resurfaced with a new campaign targeting organizations in Latin America through judicial and administrative-themed phishing…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "10 Nov 2026, 15:58 UTC",
-   "sources": "The Hacker News",
-   "url": "story/7e413807cc2f.html"
-  },
-  {
-   "id": "cb71d2bd129f",
-   "title": "Cybercriminals are increasingly infecting regular people with spyware",
-   "summary": "Cybercriminals are infecting devices on a large scale with spyware, increasingly compromising systems belonging to average people, according to a new report.",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "10 Nov 2026, 15:45 UTC",
-   "sources": "The Record",
-   "url": "story/cb71d2bd129f.html"
   }
  ]
 }
