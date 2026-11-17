@@ -37,6 +37,22 @@
    "instructions_checked": true
   },
   {
+   "id": "58043437b94b",
+   "source": "ars",
+   "source_name": "Ars Technica Security",
+   "official": false,
+   "source_type": "news",
+   "title": "Hundreds of websites deliver potent malware cocktail to unsuspecting visitors",
+   "link": "https://arstechnica.com/security/2026/11/malicious-code-delivered-through-optimizely-hits-visitors-to-hundreds-of-sites/",
+   "published": "2026-11-17T22:32:16+00:00",
+   "summary": "Hundreds of websites using the Optimizely website personalization platform served unsuspecting visitors a potent malware cocktail that targeted cryptocurrency wallets, stole payment card data, cookies, and screenshots, and delivered exploit kits for infecting iPhones and iPads, researchers said Tuesday. ReportURI said…",
+   "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/malicious-website-1152x648.jpg",
+   "cves": [],
+   "first_seen": "2026-11-17T22:55:23.196013+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "fcdcf30ed87c",
    "source": "ars",
    "source_name": "Ars Technica Security",
@@ -612,30 +628,6 @@
    "instructions": [
     "Cyber thieves Remotely block Luxury Chinese cars for Ransom – Известия.",
     "Russian dealer threatens to block multimedia in cars imported via gray schemes – Kursiv Media Kazakhstan."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "9364f9baac68",
-   "source": "krebs",
-   "source_name": "KrebsOnSecurity",
-   "official": false,
-   "source_type": "news",
-   "title": "Microsoft Fixes Nearly 1,100 Security Vulnerabilities",
-   "link": "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/",
-   "published": "2026-11-10T21:55:03+00:00",
-   "summary": "Microsoft did another four-digit patch drop today, releasing updates to fix almost 1,100 security vulnerabilities in its Windows operating systems and supported software. This month’s Patch Tuesday addresses 63 critical flaws — including a zero-day in Microsoft Outlook — and comes amid important security updates from…",
-   "image": "https://krebsonsecurity.com/wp-content/uploads/2026/11/ss-orangemencomputer.png",
-   "cves": [
-    "CVE-2026-124194",
-    "CVE-2026-125350"
-   ],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00",
-   "instructions": [
-    "The advisory for CVE-2026-124194 says it affects Microsoft 365 Apps for Enterprise and editions of Microsoft Office .",
-    "Microsoft did another four-digit patch drop today, releasing updates to fix almost 1,100 security vulnerabilities in its Windows operating systems and supported software.",
-    "This month’s Patch Tuesday addresses 63 critical flaws — including a zero-day in Microsoft Outlook — and comes amid important security updates from other software makers, including Adobe , Apple , Google and Mozilla .",
-    "November’s patch release from Redmond tackles 1,093 vulnerabilities, fixing 63 “critical” flaws that can be exploited to seize control over a Windows system with little or no help from users."
    ],
    "instructions_checked": true
   },
@@ -3903,27 +3895,6 @@
    "instructions_checked": true
   },
   {
-   "id": "16367edd00b6",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Railway breach leads to $740,000 in fraudulent AI charges",
-   "link": "https://www.bleepingcomputer.com/news/apple/railway-breach-leads-to-740-000-in-fraudulent-ai-charges/",
-   "published": "2026-11-10T22:20:19+00:00",
-   "summary": "Cloud hosting provider Railway says hackers exploited vulnerabilities in its infrastructure to steal customer authentication secrets and generate approximately $740,000 in fraudulent AI usage, potentially exposing credentials for up to 100,000 workspaces.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/22/railway.jpg",
-   "cves": [],
-   "first_seen": "2026-11-10T22:45:40.406649+00:00",
-   "image_checked": true,
-   "instructions": [
-    "The company disclosed the incident on October 22, warning customers to rotate their secrets after detecting unauthorized access to systems storing environment variables.",
-    "Railway says it reset those tokens and notified affected users.",
-    "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "b9812e4ced01",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -5233,6 +5204,30 @@
    "instructions_checked": true
   },
   {
+   "id": "04fced3604e3",
+   "source": "cisa",
+   "source_name": "CISA Cybersecurity Advisories",
+   "official": true,
+   "source_type": "advisory",
+   "title": "Critical Java Vulnerability Requires Immediate Patching",
+   "link": "https://www.cisa.gov/news-events/alerts/2026/11/17/critical-java-vulnerability-requires-immediate-patching",
+   "published": "2026-11-17T12:00:00+00:00",
+   "summary": "Purpose CISA strongly urges organizations to immediately patch the recently disclosed Oracle Java vulnerability CVE-2026-114938. This critical memory-corruption vulnerability, known as “Java4Shell,” affects the Base64 decoder of the x86-64 HotSpot Java Virtual Machine (JVM), which is part of the Java Development Kit…",
+   "image": null,
+   "cves": [
+    "CVE-2026-114938"
+   ],
+   "first_seen": "2026-11-17T22:55:23.196013+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Apply relevant Java and vendor patches as soon as they are available, prioritizing internet-facing systems.",
+    "Review Oracle’s security advisory for guidance on patching and affected products and versions.",
+    "CISA urges network defenders to review the following resource and apply necessary updates:",
+    "Oracle’s Security Advisory: Critical Security Patch Update – November 2026"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "0b6d9bcd8811",
    "source": "cisa",
    "source_name": "CISA Cybersecurity Advisories",
@@ -5706,6 +5701,22 @@
    "instructions_checked": true
   },
   {
+   "id": "46a6b0b05c4e",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "Optimizely Malware Attacks Highlight Third-Party Vendor Risks",
+   "link": "https://www.darkreading.com/cyber-risk/optimizely-malware-attacks-third-party-vendor-risks",
+   "published": "2026-11-17T22:34:22+00:00",
+   "summary": "At least 178 organizations, including several major brands, unwittingly exposed website visitors to hydra-like malware via a third-party platform.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt0c54a284942546cd/6afccec91ecf5c62546c1c34/hydra_Daniel_Eskridge_shutterstock.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-17T22:55:23.196013+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "10d373a62ac2",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -5942,22 +5953,6 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt9eb0a69ea15c3e0c/6afb7143ea20de309e24d604/zero_day_over_text-JUN_LI-GettyImages-2179992195.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-16T23:09:30.038388+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "95f883361cdc",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "November Patch Tuesday: An Overflowing Cornucopia of CVEs",
-   "link": "https://www.darkreading.com/vulnerabilities-threats/november-patch-tuesday-cornucopia-cves",
-   "published": "2026-11-10T22:26:51+00:00",
-   "summary": "Microsoft serves up an actively exploited Outlook zero-day, and a wave of critical Exchange, SharePoint, Windows Search, and LDAP bugs that exhausted defenders need to prioritize fast.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt033b67685e64cff8/6af3980e4e01486fb09958c1/thanksgiving-Gurol_Tuna-GettyImages-2248720649.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-10T22:45:40.406649+00:00",
    "instructions": [],
    "instructions_checked": true
   },

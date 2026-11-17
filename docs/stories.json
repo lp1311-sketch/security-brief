@@ -61,16 +61,6 @@
    "url": "story/474586429e7c.html"
   },
   {
-   "id": "9364f9baac68",
-   "title": "Microsoft Fixes Nearly 1,100 Security Vulnerabilities",
-   "summary": "Microsoft did another four-digit patch drop today, releasing updates to fix almost 1,100 security vulnerabilities in its Windows operating systems and supported…",
-   "priority": "Critical",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 21:55 UTC",
-   "sources": "KrebsOnSecurity",
-   "url": "story/9364f9baac68.html"
-  },
-  {
    "id": "7d141681ccc2",
    "title": "N-able Kills Legacy APIs, Patches 17 N-central Zero-Days",
    "summary": "The patches target recently disclosed zero-days, as well as vulnerabilities already exploited in the wild. The post N-able Kills Legacy APIs, Patches 17 N-central…",
@@ -81,14 +71,14 @@
    "url": "story/7d141681ccc2.html"
   },
   {
-   "id": "95f883361cdc",
-   "title": "November Patch Tuesday: An Overflowing Cornucopia of CVEs",
-   "summary": "Microsoft serves up an actively exploited Outlook zero-day, and a wave of critical Exchange, SharePoint, Windows Search, and LDAP bugs that exhausted defenders need to…",
+   "id": "0975c072af9b",
+   "title": "Kritische Schwachstelle Java4Shell (CVE-2026-114938)",
+   "summary": "Gerade ist eine kritische Schwachstelle (CVE-2026-114938) in JAVA (CVSS 4.0 Base Score 9.2, critical) vorzeitig bekannt geworden. Die Java4Shell genannte Schwachstelle…",
    "priority": "High",
-   "category": "Microsoft",
-   "date": "10 Nov 2026, 22:26 UTC",
-   "sources": "Dark Reading",
-   "url": "story/95f883361cdc.html"
+   "category": "Patch Radar",
+   "date": "17 Nov 2026, 21:06 UTC",
+   "sources": "Born's IT and Windows Blog, The Hacker News, CISA Cybersecurity Advisories",
+   "url": "story/0975c072af9b.html"
   },
   {
    "id": "e7c273fee4ff",
@@ -139,16 +129,6 @@
    "date": "11 Nov 2026, 15:42 UTC",
    "sources": "SecurityWeek",
    "url": "story/d62ab9694fcc.html"
-  },
-  {
-   "id": "0975c072af9b",
-   "title": "Kritische Schwachstelle Java4Shell (CVE-2026-114938)",
-   "summary": "Gerade ist eine kritische Schwachstelle (CVE-2026-114938) in JAVA (CVSS 4.0 Base Score 9.2, critical) vorzeitig bekannt geworden. Die Java4Shell genannte Schwachstelle…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "17 Nov 2026, 21:06 UTC",
-   "sources": "Born's IT and Windows Blog, The Hacker News",
-   "url": "story/0975c072af9b.html"
   },
   {
    "id": "32a8bc53e2b0",
@@ -541,16 +521,6 @@
    "url": "story/34f63dbdf416.html"
   },
   {
-   "id": "16367edd00b6",
-   "title": "Railway breach leads to $740,000 in fraudulent AI charges",
-   "summary": "Cloud hosting provider Railway says hackers exploited vulnerabilities in its infrastructure to steal customer authentication secrets and generate approximately $740,000…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "10 Nov 2026, 22:20 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/16367edd00b6.html"
-  },
-  {
    "id": "ddec81ba80b1",
    "title": "Cloud keys leaked in Docker Hub images are stolen within seconds",
    "summary": "Credentials and access secrets exposed in public Docker Hub images are being extracted and exploited by attackers within as little as eight seconds of publication.",
@@ -769,16 +739,6 @@
    "date": "17 Nov 2026, 06:29 UTC",
    "sources": "The Hacker News, BleepingComputer",
    "url": "story/e5f38235f326.html"
-  },
-  {
-   "id": "60f99194645f",
-   "title": "Gemini AI agents repeatedly bypassed safeguards to attack real website",
-   "summary": "Google's Gemini AI agents repeatedly attempted to hack a real organization's website during AI model safety testing, finding ways to circumvent increasingly restrictive…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "16 Nov 2026, 22:54 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/60f99194645f.html"
   },
   {
    "id": "dd3df9bd6c46",
@@ -1091,6 +1051,26 @@
    "url": "story/f91527c7bf88.html"
   },
   {
+   "id": "46a6b0b05c4e",
+   "title": "Optimizely Malware Attacks Highlight Third-Party Vendor Risks",
+   "summary": "At least 178 organizations, including several major brands, unwittingly exposed website visitors to hydra-like malware via a third-party platform.",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "17 Nov 2026, 22:34 UTC",
+   "sources": "Dark Reading",
+   "url": "story/46a6b0b05c4e.html"
+  },
+  {
+   "id": "58043437b94b",
+   "title": "Hundreds of websites deliver potent malware cocktail to unsuspecting visitors",
+   "summary": "Hundreds of websites using the Optimizely website personalization platform served unsuspecting visitors a potent malware cocktail that targeted cryptocurrency wallets…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "17 Nov 2026, 22:32 UTC",
+   "sources": "Ars Technica Security",
+   "url": "story/58043437b94b.html"
+  },
+  {
    "id": "6b530aaeb2ca",
    "title": "Researchers Claim Two RCE Exploits That Bypass Telegram’s New Android Defenses",
    "summary": "A malicious widget can bypass the security filter that Telegram added to its Android app last week and run code outside it, according to NebuSec, a security company…",
@@ -1281,14 +1261,14 @@
    "url": "story/05b6417e274f.html"
   },
   {
-   "id": "99636bab8a5a",
-   "title": "Google Project Zero Slashes Bug Disclosure Deadlines, Splitting Experts",
-   "summary": "One of the oldest running bug disclosure programs announced it would shorten public disclosure timelines to vendors from 120 days to 30 over the next 14 months.",
+   "id": "60f99194645f",
+   "title": "Gemini AI agents repeatedly bypassed safeguards to attack real website",
+   "summary": "Google's Gemini AI agents repeatedly attempted to hack a real organization's website during AI model safety testing, finding ways to circumvent increasingly restrictive…",
    "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "16 Nov 2026, 22:08 UTC",
-   "sources": "Dark Reading",
-   "url": "story/99636bab8a5a.html"
+   "category": "AI Risk Lab",
+   "date": "16 Nov 2026, 22:54 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/60f99194645f.html"
   },
   {
    "id": "6cd4bc50c4fa",
@@ -1849,6 +1829,16 @@
    "date": "11 Nov 2026, 08:17 UTC",
    "sources": "The Hacker News",
    "url": "story/44096b209ce3.html"
+  },
+  {
+   "id": "99636bab8a5a",
+   "title": "Google Project Zero Slashes Bug Disclosure Deadlines, Splitting Experts",
+   "summary": "One of the oldest running bug disclosure programs announced it would shorten public disclosure timelines to vendors from 120 days to 30 over the next 14 months.",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "16 Nov 2026, 22:08 UTC",
+   "sources": "Dark Reading",
+   "url": "story/99636bab8a5a.html"
   },
   {
    "id": "a9e375444363",

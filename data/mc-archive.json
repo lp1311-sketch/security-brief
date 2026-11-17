@@ -1,6 +1,174 @@
 {
  "items": [
   {
+   "id": "309bc03cda19",
+   "title": "MC1557973: New and upcoming Windows security and management capabilities",
+   "link": "https://mc.merill.net/message/MC1557973",
+   "summary": "What and whyAt Microsoft Ignite 2026, Microsoft announced new and upcoming Windows capabilities across security, device and application management, recovery, and agent management. The announcements include developments in four key areas: Windows management: Updates to Windows Autopatch, application management, device…",
+   "published": "2026-11-17T22:10:07+00:00"
+  },
+  {
+   "id": "1f0226565e19",
+   "title": "MC1392563: OneDrive transitions to the cloud.microsoft domain",
+   "link": "https://mc.merill.net/message/MC1392563",
+   "summary": "OneDrive is transitioning its URLs from contoso-my.sharepoint.com to onedrive.cloud.microsoft, starting September 2026 and completing by September 2027. Both domains will coexist indefinitely, with no changes to file access or APIs. Admins should review custom solutions and update documentation; no immediate action is…",
+   "published": "2026-11-17T21:51:20+00:00"
+  },
+  {
+   "id": "6077b445eef8",
+   "title": "MC1519871: Copilot Code is rolling out in Frontier",
+   "link": "https://mc.merill.net/message/MC1519871",
+   "summary": "Copilot Code is expanding in the Frontier program to mobile (iOS/Android) and Mac, with local Sandbox now available on Windows. It supports cloud and optional local coding sessions, usage-based billing, and GitHub Copilot CLI sign-in via Microsoft 365 accounts. Admins must configure licenses, spending policies, and…",
+   "published": "2026-11-17T20:17:06+00:00"
+  },
+  {
+   "id": "5a8239a83f4c",
+   "title": "MC1557766: Microsoft Viva: Introducing Interactive Insights in the A365 Business Analytics app",
+   "link": "https://mc.merill.net/message/MC1557766",
+   "summary": "Microsoft Viva introduces Interactive Insights in Agent 365 Business Analytics, enabling eligible users to explore AI adoption and usage via natural-language queries without manual reporting. Rolling out from November 2026 to April 2027, it respects existing data permissions and offers AI-powered summaries and…",
+   "published": "2026-11-17T19:15:23+00:00"
+  },
+  {
+   "id": "b0b1441e19f0",
+   "title": "MC1557764: Microsoft Agent 365 Business Analytics: Introducing Access Management",
+   "link": "https://mc.merill.net/message/MC1557764",
+   "summary": "Access Management for Agent 365 Business Analytics centralizes role and permission assignments for admins, combining permission sets and data partitions into access policies. It simplifies management, supports existing roles, and syncs delegation access. Rollout begins January 2027. Admins should review current…",
+   "published": "2026-11-17T19:14:43+00:00"
+  },
+  {
+   "id": "bf7a2b8310a0",
+   "title": "MC1557760: Microsoft Teams: Registration capacity for town halls and webinars increases to 20,000",
+   "link": "https://mc.merill.net/message/MC1557760",
+   "summary": "Starting December 2026, Microsoft Teams town halls and webinars registration capacity increases up to 20,000, scaling with attendee capacity. Teams Enterprise allows 3,000 registrations; Attendee Capacity Packs enable up to 20,000. No new policies needed; organizers should ensure proper licensing and update training…",
+   "published": "2026-11-17T19:13:35+00:00"
+  },
+  {
+   "id": "408233d6cd4d",
+   "title": "MC1557759: Microsoft 365 Copilot: Use case classification for agent sessions and Copilot Cowork (Frontier public preview)",
+   "link": "https://mc.merill.net/message/MC1557759",
+   "summary": "Microsoft 365 Copilot introduces use case classification for agent sessions and Copilot Cowork activity in public preview starting mid-November 2026. Enabled by default for eligible Frontier tenants, it helps analyze AI usage and optimize investments. Admins can manage classification and AI value settings, with user…",
+   "published": "2026-11-17T19:12:58+00:00"
+  },
+  {
+   "id": "42b09d38a502",
+   "title": "MC1557754: Microsoft Copilot: Continue using models after reaching usage limits with Copilot Credits",
+   "link": "https://mc.merill.net/message/MC1557754",
+   "summary": "Microsoft Copilot now allows continued use of models after license usage limits via usage-based billing with Copilot Credits. New UI credit indicators and spending policies give users and admins control. Models appear in a picker with access restrictions. Rollout begins now, general availability in December 2026.",
+   "published": "2026-11-17T19:05:21+00:00"
+  },
+  {
+   "id": "5e95185548d4",
+   "title": "MC1557730: Autopilot availability in Frontier",
+   "link": "https://mc.merill.net/message/MC1557730",
+   "summary": "Autopilot will roll out in Frontier Public starting November 17, 2026, as an always-on cloud agent requiring admin enablement and Microsoft 365 Copilot licensing. It features its own identity, security controls, and compliance considerations. Admins must configure access and billing; users create Autopilots via…",
+   "published": "2026-11-17T18:38:43+00:00"
+  },
+  {
+   "id": "95374a340078",
+   "title": "MC1557727: Agent 365 Business Analytics app experience",
+   "link": "https://mc.merill.net/message/MC1557727",
+   "summary": "Agent 365 Business Analytics, launching November 17, 2026, offers AI spend, usage, and value insights in Microsoft 365 admin center. Features include cost forecasting, use case classification, optimization recommendations, multi-tenant management, and export options. Access and privacy controls integrate with Viva…",
+   "published": "2026-11-17T18:36:21+00:00"
+  },
+  {
+   "id": "aeff56373213",
+   "title": "MC791110: Microsoft Purview | Data Lifecycle Management: New integration with Adaptive protection",
+   "link": "https://mc.merill.net/message/MC791110",
+   "summary": "Microsoft Purview is introducing a public preview of Adaptive protection integration with Data Lifecycle Management, rolling out June-July 2024, with general availability in early 2027. It auto-applies retention labels to content deleted by elevated risk users for 120 days, requiring minimal admin setup.",
+   "published": "2026-11-17T18:09:20+00:00"
+  },
+  {
+   "id": "51de1ee714df",
+   "title": "MC1455013: Microsoft Purview: Data Lifecycle Management- Azure PST Import",
+   "link": "https://mc.merill.net/message/MC1455013",
+   "summary": "Azure PST Import enables Microsoft 365 admins to import PST files from Azure Blob Storage into Exchange Online mailboxes using PowerShell. The process includes readiness analysis, import batching, and compliance with existing retention and audit policies. Rollout begins April 2027, requiring specific Azure permissions…",
+   "published": "2026-11-17T18:02:14+00:00"
+  },
+  {
+   "id": "92d862570460",
+   "title": "MC1281505: Microsoft Purview: Data Lifecycle Management- Azure PST Import",
+   "link": "https://mc.merill.net/message/MC1281505",
+   "summary": "Azure PST Import enables Microsoft 365 admins to import PST files from Azure Blob Storage into Exchange Online mailboxes using PowerShell. It includes readiness analysis, reporting, and post-import cleanup. Rollout is delayed to early 2027. Imported data follows existing retention, compliance, and audit policies, with…",
+   "published": "2026-11-17T17:58:01+00:00"
+  },
+  {
+   "id": "ebc368d90447",
+   "title": "MC1557671: Dynamics 365 Apps - Upgrade in-queue overflow to Conversation orchestration",
+   "link": "https://mc.merill.net/message/MC1557671",
+   "summary": "We are announcing the ability to upgrade in-queue overflow to Conversation orchestration in Dynamics 365 Apps. This feature reached general availability on November 13, 2026. How does this affect me? This feature enables you to upgrade your existing in-queue overflow settings to a Conversation orchestration (CO)…",
+   "published": "2026-11-17T17:47:02+00:00"
+  },
+  {
+   "id": "2ad1aaefef65",
+   "title": "MC1443517: Microsoft Teams: External presenters can manage event production controls",
+   "link": "https://mc.merill.net/message/MC1443517",
+   "summary": "Microsoft Teams now allows event organizers to grant trusted external presenters (federated B2B and guest users) production control during events, enabling them to manage attendee viewing. This feature, rolling out August to November 2026, requires explicit organizer assignment and supports collaboration with external…",
+   "published": "2026-11-17T17:39:27+00:00"
+  },
+  {
+   "id": "5b536a4e9fc2",
+   "title": "MC1307982: Microsoft Teams Town halls: Upload custom backgrounds in Manage what attendees see",
+   "link": "https://mc.merill.net/message/MC1307982",
+   "summary": "Microsoft Teams will allow organizers and presenters of town hall events with Teams Premium licenses to upload custom background images in the \"Manage what attendees see\" feature. Rollout begins early June 2026, enabling branded visuals behind presenters and shared content in supported layouts, with no admin action…",
+   "published": "2026-11-17T17:37:19+00:00"
+  },
+  {
+   "id": "cb1f8b01eb5b",
+   "title": "MC1530615: Microsoft Teams: Report guest invitations for security concerns",
+   "link": "https://mc.merill.net/message/MC1530615",
+   "summary": "Microsoft Teams will let users report suspicious guest invitations for security concerns starting late November 2026. Reports go to IT admins via the Teams admin center. No action is needed if \"Report a security concern\" is already enabled in messaging policies, which control this feature.",
+   "published": "2026-11-17T17:34:34+00:00"
+  },
+  {
+   "id": "6cdaccc07bd7",
+   "title": "MC1509787: Microsoft Teams: Third-party synthetic audio and video detection in meetings",
+   "link": "https://mc.merill.net/message/MC1509787",
+   "summary": "Microsoft Teams will support certified third-party synthetic audio and video detection in meetings starting late November 2026. Organizations can integrate these solutions to enhance security against AI-generated media threats. Admins must deploy provider apps, grant permissions, and configure meeting policies…",
+   "published": "2026-11-17T17:34:21+00:00"
+  },
+  {
+   "id": "db4b6103171b",
+   "title": "MC1518033: Microsoft Teams: Onboarding workflow for new team members",
+   "link": "https://mc.merill.net/message/MC1518033",
+   "summary": "Microsoft Teams will introduce an onboarding workflow to automatically connect new members to relevant channels, improving engagement and onboarding speed. Rollout starts late November 2026 for Targeted Release and early December 2026 for General Availability. No admin action is required.",
+   "published": "2026-11-17T17:29:22+00:00"
+  },
+  {
+   "id": "d5e1eda7fe2d",
+   "title": "MC1489971: Microsoft Purview DLP: Improved setup and Intune multi-admin approval support for unmanaged apps in Edge for Business",
+   "link": "https://mc.merill.net/message/MC1489971",
+   "summary": "Microsoft Purview DLP will enhance setup and activation for unmanaged apps in Edge for Business, supporting Intune multi-admin approval with clearer status, error reporting, and task coordination. Rollout starts January 2027, requiring no prior action; existing policies remain unchanged and Intune approvals continue…",
+   "published": "2026-11-17T17:21:44+00:00"
+  },
+  {
+   "id": "082704f906e8",
+   "title": "MC1279093: Microsoft Defender for Office 365: Enhancing how we handle promotional mail",
+   "link": "https://mc.merill.net/message/MC1279093",
+   "summary": "Microsoft Defender for Office 365 will tag promotional emails as “promotions” and can auto-move them to a Promotions folder, learning from user actions. Public preview starts mid-April 2026; general rollout begins late July 2026. Admins control settings; users can train the system by moving messages.",
+   "published": "2026-11-17T17:19:09+00:00"
+  },
+  {
+   "id": "59c1775badbe",
+   "title": "MC1557570: Dynamics 365 Contact Center - Set wait times as short as 5 seconds in Orchestration playbooks",
+   "link": "https://mc.merill.net/message/MC1557570",
+   "summary": "We are increasing the maximum frequency of orchestration playbook re-evaluations by reducing the wait time from 30 seconds down to 5 seconds in Dynamics 365 Contact Center. This change reached general availability today, November 17, 2026. How does this affect me? With this shorter interval, you get finer control over…",
+   "published": "2026-11-17T17:13:12+00:00"
+  },
+  {
+   "id": "18e2305555d1",
+   "title": "MC1239927: Microsoft Teams: Consecutive interpretation in Interpreter agent will be generally available",
+   "link": "https://mc.merill.net/message/MC1239927",
+   "summary": "Consecutive interpretation in Microsoft Teams Interpreter, currently in public preview, will roll out to general availability by late 2026. It offers turn-by-turn AI-generated spoken translation using usage-based billing with Copilot Credits. Organizations must set spending policies and have eligible meeting…",
+   "published": "2026-11-17T17:06:18+00:00"
+  },
+  {
+   "id": "deec7367ad8a",
+   "title": "MC1557509: Copilot Studio - Service principal authentication for workflows",
+   "link": "https://mc.merill.net/message/MC1557509",
+   "summary": "We are announcing service principal authentication for workflows in Copilot Studio. This feature will reach general availability by December 17, 2026. How does this affect me? With this feature, workflows will be able to be owned under a service principle (a Microsoft Entra app registration) instead of a named user…",
+   "published": "2026-11-17T16:04:22+00:00"
+  },
+  {
    "id": "7b0abcf1231a",
    "title": "MC1479513: Outlook: Insert Symbols",
    "link": "https://mc.merill.net/message/MC1479513",
@@ -251,174 +419,6 @@
    "link": "https://mc.merill.net/message/MC1552386",
    "summary": "Microsoft 365 Copilot desktop app will use content from open tabs in its built-in browser as page context for answering questions and summaries, scoped to the current conversation. Rolling out worldwide mid to late November 2026. No action required; verify browser enablement and governance settings.",
    "published": "2026-11-13T23:43:26+00:00"
-  },
-  {
-   "id": "11785f4ed9bf",
-   "title": "MC1536065: Microsoft 365 Copilot: Suggestions to continue in another Copilot experience",
-   "link": "https://mc.merill.net/message/MC1536065",
-   "summary": "Microsoft 365 Copilot will suggest switching to a better-fit Copilot mode (e.g., Cowork) after a user’s chat prompt, maintaining conversation context. Rollout starts mid-November 2026 for Standard and mid-December 2026 for Deferred audiences. No admin action is required; inform users accordingly.",
-   "published": "2026-11-13T18:30:38+00:00"
-  },
-  {
-   "id": "64b3daa6884e",
-   "title": "MC1551898: Out-of-band update released to address Windows licensing and activation errors",
-   "link": "https://mc.merill.net/message/MC1551898",
-   "summary": "Microsoft has released a new Windows out-of-band (OOB) update today, November 13, 2026, to address an issue that affects a limited number of enterprise devices after installing the November 2026 Windows security update. Certain Windows licensing and activation operations using the Software Licensing Management Tool…",
-   "published": "2026-11-13T18:08:01+00:00"
-  },
-  {
-   "id": "f5c3b75d75eb",
-   "title": "MC1551897: 60-Day Reminder: Windows 10 Enterprise LTSC 2021 will reach end of updates on January 13, 2027",
-   "link": "https://mc.merill.net/message/MC1551897",
-   "summary": "On January 13, 2027, Windows 10 Enterprise LTSC 2021 will reach the end of mainstream support. The January 2027 Windows security update will be the last update provided during mainstream support. After that date, monthly security updates will continue only for Windows 10 Enterprise LTSC 2021 devices enrolled in…",
-   "published": "2026-11-13T18:07:58+00:00"
-  },
-  {
-   "id": "85b592aa76e4",
-   "title": "MC1551896: 60-Day Reminder: Windows Server 2016 reaches the end of extended support on January 13, 2027",
-   "link": "https://mc.merill.net/message/MC1551896",
-   "summary": "On January 13, 2027, all editions of Windows Server 2016 will reach the end of extended support. The January 2027 Windows security update will be the last update provided during extended support. After that date, monthly security updates will continue only for Windows Server 2016 devices enrolled in Extended Security…",
-   "published": "2026-11-13T18:07:54+00:00"
-  },
-  {
-   "id": "6033f3f6b21e",
-   "title": "MC1486295: Microsoft OneDrive and SharePoint: Generate smart tables of contents for PDFs on the web with Copilot",
-   "link": "https://mc.merill.net/message/MC1486295",
-   "summary": "The announcement that Microsoft 365 Copilot users can generate AI-created, hierarchical, clickable tables of contents for PDFs in OneDrive and SharePoint on the web, is now canceled. The feature is user-initiated, respects permissions, supports saving by editors, and may have inaccuracies, especially with scanned PDFs.",
-   "published": "2026-11-13T17:19:46+00:00"
-  },
-  {
-   "id": "3fb08c1b030f",
-   "title": "MC1551148: [Outlook for iOS and Android] Copilot Chat in Outlook UX improvements",
-   "link": "https://mc.merill.net/message/MC1551148",
-   "summary": "Copilot Chat in Outlook for iOS and Android is being updated with a refreshed, consistent design across Microsoft 365 apps, improved chat interface, prompts, and navigation. Rollout starts mid-December 2026, completing by late January 2027. No admin action or compliance concerns are required.",
-   "published": "2026-11-13T01:39:03+00:00"
-  },
-  {
-   "id": "41d0633e2c4c",
-   "title": "MC1551147: Microsoft Word: Retirement of legacy compatibility settings",
-   "link": "https://mc.merill.net/message/MC1551147",
-   "summary": "Microsoft Word will retire legacy compatibility settings for documents in Compatibility Mode starting December 2026 (Windows) and early 2027 (Mac). This may cause layout changes in older documents. No action is required, but review important documents if exact layout is critical.",
-   "published": "2026-11-13T01:38:10+00:00"
-  },
-  {
-   "id": "7ae538ae04dc",
-   "title": "MC1551122: Power Platform - Information regarding the end of support for SharePoint temporary authentication URLs",
-   "link": "https://mc.merill.net/message/MC1551122",
-   "summary": "Starting April 1, 2027, SharePoint temporary authentication URLs will be retired. Power Apps and Automate functionality that relies on these URLs will break when they are retired. How does this affect me? Any Power Apps app or Power Automate cloud flow that relies upon the temporary authentication URLs will stop…",
-   "published": "2026-11-13T01:01:33+00:00"
-  },
-  {
-   "id": "fadabe4369a5",
-   "title": "MC1551001: Prevent issues with NetApp SMB shares: Learn about new Windows Server security requirements",
-   "link": "https://mc.merill.net/message/MC1551001",
-   "summary": "What and why:Microsoft introduced additional security requirements for LDAP authentication on Active Directory domain controllers starting with the October 13, 2026, Windows security updates. These changes require Kerberos service tickets used for LDAP authentication to match the LDAP service principal name SPNSPN…",
-   "published": "2026-11-12T22:55:55+00:00"
-  },
-  {
-   "id": "fc9384f4ebef",
-   "title": "MC1491832: (UPDATED) Take action to prevent RD Web Access rendering failures",
-   "link": "https://mc.merill.net/message/MC1491832",
-   "summary": "Updated November 12, 2026: We are informing regarding November updates for Windows Server which address this change. What and why:The Remote Desktop Web Access (RD Web Access) experience included with Windows Server relies on Extensible Stylesheet Language Transformations (XSLT) to render its web interface. Across the…",
-   "published": "2026-11-12T22:55:53+00:00"
-  },
-  {
-   "id": "5ad4038f47d5",
-   "title": "MC1550797: 60-day reminder: Hardening changes for ReFS volumes on removable media",
-   "link": "https://mc.merill.net/message/MC1550797",
-   "summary": "What and why:Microsoft is making hardening changes to the Resilient File System (ReFS). The changes improve the security posture of Windows by adding visibility into unsupported external ReFS configurations and by providing controls to block affected volumes. The changes apply to all supported Windows platforms in…",
-   "published": "2026-11-12T18:01:41+00:00"
-  },
-  {
-   "id": "1b06c1b3578e",
-   "title": "MC1550796: Windows Office Hours: November 19, 2026",
-   "link": "https://mc.merill.net/message/MC1550796",
-   "summary": "If you are an IT admin with questions about managing and updating Windows, we want to help. Every third Thursday of the month, we host a live chat-based event on the Tech Community called Windows Office Hours. Members of the Windows, Microsoft Intune, Windows Autopilot, Windows Autopatch, and Windows 365 engineering…",
-   "published": "2026-11-12T18:01:37+00:00"
-  },
-  {
-   "id": "0eded9d018dc",
-   "title": "MC1387578: Microsoft Defender for Office 365: Localized default mark and notify email template",
-   "link": "https://mc.merill.net/message/MC1387578",
-   "summary": "Microsoft Defender for Office 365 will localize the default \"Mark and notify\" email template based on users' Outlook language settings, improving clarity in user-reported message notifications. Rollout starts June 2026 globally, with no changes to message classification or custom templates. No action is required.",
-   "published": "2026-11-12T17:30:22+00:00"
-  },
-  {
-   "id": "e8028c3d85ba",
-   "title": "MC1509796: Microsoft Teams: Enhanced channel meeting experience",
-   "link": "https://mc.merill.net/message/MC1509796",
-   "summary": "Microsoft Teams will enhance channel meetings, allowing scheduling from Teams calendar and Outlook, easier discovery for channel members, and delegate scheduling. Rollout starts November 2026, completing by September 2027 across environments. No admin action needed; informing users is recommended. No compliance issues…",
-   "published": "2026-11-12T17:25:11+00:00"
-  },
-  {
-   "id": "4002906a947c",
-   "title": "MC1409304: Microsoft Teams: Facilitator proactively detects and resolves knowledge gaps in meetings",
-   "link": "https://mc.merill.net/message/MC1409304",
-   "summary": "Microsoft Teams introduces Facilitator, an AI feature that detects and resolves knowledge gaps in meetings by providing relevant answers via web search in the chat. Available from February 2027, it requires Microsoft 365 Copilot (Premium) and must be manually enabled. Admin controls and user opt-out are supported.",
-   "published": "2026-11-12T17:21:11+00:00"
-  },
-  {
-   "id": "3e2a04c3e811",
-   "title": "MC1550540: Microsoft 365 Copilot: Copilot Workspaces is replacing standalone agent selection with agentic chat",
-   "link": "https://mc.merill.net/message/MC1550540",
-   "summary": "Microsoft 365 Copilot Workspaces will replace standalone agent selection (Researcher, Analyst, Designer) with an agentic chat that applies skills based on user requests. This simplifies workflows without losing capabilities. The change begins December 2026 in Frontier preview, with no admin action required. Separate…",
-   "published": "2026-11-12T16:19:36+00:00"
-  },
-  {
-   "id": "62e3fdf3a1c0",
-   "title": "MC1550542: Microsoft Teams: Updated recording and transcript access setting behavior for town halls and webinars",
-   "link": "https://mc.merill.net/message/MC1550542",
-   "summary": "Microsoft Teams is updating the \"Who has access to the recording or transcript\" option for Events App town halls and webinars. It will depend on the RecordingForTownhall or RecordingForWebinar settings instead of AllowCloudRecording. The change rolls out worldwide in early to mid-November 2026 with no action required.",
-   "published": "2026-11-12T16:19:15+00:00"
-  },
-  {
-   "id": "05408795bccf",
-   "title": "MC1550533: Scheduled prompts in Microsoft 365 Copilot are moving to native Copilot scheduling and the Tasks view",
-   "link": "https://mc.merill.net/message/MC1550533",
-   "summary": "Microsoft 365 Copilot is moving scheduled prompts from Power Platform to native Copilot scheduling, enabling automatic execution of one-time or recurring tasks within Microsoft 365 compliance boundaries. The Power Platform-based experience retires December 31, 2026. Users manage tasks via the Copilot app's Tasks >…",
-   "published": "2026-11-12T16:15:07+00:00"
-  },
-  {
-   "id": "f93b3ba4c8e4",
-   "title": "MC1535647: Microsoft Copilot app: Updates to Home and navigation",
-   "link": "https://mc.merill.net/message/MC1535647",
-   "summary": "Microsoft Copilot app updates include a new Home with integrated Chat, Cowork, Projects, and Workspaces. Projects organize related tasks and files without storing content, available on major platforms. Workspaces replace Notebooks for team collaboration. Rollout starts late October 2026; licensing and billing…",
-   "published": "2026-11-11T22:15:05+00:00"
-  },
-  {
-   "id": "48fe514f4d6c",
-   "title": "MC1470885: M365 Copilot: Tell Copilot what you need directly from the Copilot button in Word, Excel, and PowerPoint",
-   "link": "https://mc.merill.net/message/MC1470885",
-   "summary": "Microsoft 365 Copilot now features a prompt input directly on the Copilot button in Word, Excel, and PowerPoint, enabling faster, contextual content creation without leaving the workflow. Rolling out worldwide from September to December 2026 on Windows, macOS, and web, it requires no admin action but updates to…",
-   "published": "2026-11-11T21:51:22+00:00"
-  },
-  {
-   "id": "800a660f23f0",
-   "title": "MC1529467: Microsoft Windows: Updates to address compromised eMudhra certificate authority keys",
-   "link": "https://mc.merill.net/message/MC1529467",
-   "summary": "Microsoft will release updates by November 16, 2026, to remove trust for compromised eMudhra certificate authorities in Windows, Edge, and WebView2. Organizations must allow automatic updates, manage disconnected devices, and replace affected certificates to maintain security. Updates block affected CAs and remove…",
-   "published": "2026-11-11T18:41:32+00:00"
-  },
-  {
-   "id": "57edb09e8d14",
-   "title": "MC1546430: 'Add explainer video' Skill in PPT Copilot",
-   "link": "https://mc.merill.net/message/MC1546430",
-   "summary": "The rollout of the \"Add explainer video\" skill in PowerPoint Copilot is paused. This feature converts static slides into animated explainer videos for Frontier users on desktop, Mac, and web. No admin action or compliance concerns are required. Updates will be shared via Message center.",
-   "published": "2026-11-11T18:37:46+00:00"
-  },
-  {
-   "id": "255c122375a1",
-   "title": "MC1549242: NTLM signing security improvements in Windows",
-   "link": "https://mc.merill.net/message/MC1549242",
-   "summary": "What and why:New NTLM signing security improvements address CVE-2026-118737. Starting November 2026, Windows updates enable clients to offer NTLM message signing by default for non-anonymous connections. This change helps reduce exposure to NTLM relay attacks and provides auditing to identify connections that aren’t…",
-   "published": "2026-11-11T18:03:18+00:00"
-  },
-  {
-   "id": "5f69915578a3",
-   "title": "MC1548054: Updates available for Microsoft 365 Apps for all channels",
-   "link": "https://mc.merill.net/message/MC1548054",
-   "summary": "We've released updates to the following update channels for Microsoft 365 Apps: Current ChannelMonthly Enterprise ChannelSemi-Annual Enterprise Channel When this will happen: We'll be gradually rolling out these updates of Microsoft 365 Apps to users on those update channels starting November 10th, 2026 (PST). How…",
-   "published": "2026-11-11T01:00:21+00:00"
   }
  ]
 }

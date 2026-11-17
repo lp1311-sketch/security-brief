@@ -1,6 +1,13 @@
 {
  "items": [
   {
+   "id": "5861e2b2d57f",
+   "title": "[Launched] Generally Available: Near-instant provisioning for Azure DocumentDB clusters",
+   "link": "https://azure.microsoft.com/updates?id=579349",
+   "summary": "Now the M10 to M30 computer tiers are available for near-instant provisioning. Historically, the free tier in Azure DocumentDB was made available for instant provisioning. The goal was to help you get started without having to wait for 10-15 minutes for",
+   "published": "2026-11-17T21:57:41+00:00"
+  },
+  {
    "id": "2d55219ab355",
    "title": "[Launched] Generally Available: Confidential VMs with Intel TDX support on AKS",
    "link": "https://azure.microsoft.com/updates?id=581130",
@@ -141,39 +148,32 @@
    "published": "2026-11-17T20:00:32+00:00"
   },
   {
-   "id": "4b2830355b2b",
-   "title": "[Launched] Generally Available: Azure Policy support for Azure HorizonDB",
-   "link": "https://azure.microsoft.com/updates?id=581180",
-   "summary": "Azure Policy support for Azure HorizonDB is now available in preview, helping you apply governance and observability standards consistently across your HorizonDB deployments. With the new built-in policy, you can automatically deploy diagnostic settings f",
-   "published": "2026-11-17T20:00:32+00:00"
+   "id": "15ffc96d3bd7",
+   "title": "[Launched] Generally Available: Network egress controls for hosted agents in Microsoft Foundry",
+   "link": "https://azure.microsoft.com/updates?id=571821",
+   "summary": "Network egress controls govern the outbound connections a Foundry hosted agent can make, is generally available. Ordered rules match on destination host (FQDN, with wildcards such as *.contoso.com) and apply an Allow, Deny, or Rewrite (redirect to another",
+   "published": "2026-09-18T17:23:21+00:00"
   },
   {
-   "id": "d8a2b0600258",
-   "title": "[In preview] Public Preview: Azure DDoS Protection peacetime telemetry",
-   "link": "https://azure.microsoft.com/updates?id=581175",
-   "summary": "Azure DDoS Protection peacetime telemetry is now in public preview. Customers can now see the traffic reaching their protected public IP addresses during normal operation, not only while a DDoS mitigation is active. Previously, outside an active mitigatio",
-   "published": "2026-11-17T20:00:32+00:00"
+   "id": "1e73161b99e4",
+   "title": "[Launched] Generally Available: Semantic chunking and AI-generated image descriptions with Azure Content Understanding in Azure AI Search",
+   "link": "https://azure.microsoft.com/updates?id=563661",
+   "summary": "The Azure Content Understanding skill in Azure AI Search is generally available for semantic chunking and AI-generated image descriptions, for use with Foundry IQ and Azure AI Search. The skill produces semantically coherent chunks with structured Markdow",
+   "published": "2026-06-04T19:00:34+00:00"
   },
   {
-   "id": "ddcfe90f13a3",
-   "title": "[Launched] Generally Available: Azure HorizonDB System Managed Maintenance Window",
-   "link": "https://azure.microsoft.com/updates?id=581170",
-   "summary": "Azure HorizonDB supports system-managed maintenance for planned service upgrades.With system-managed maintenance, Azure HorizonDB automatically performs planned upgrades on your cluster without requiring you to configure or manage a maintenance schedule.",
-   "published": "2026-11-17T20:00:32+00:00"
+   "id": "551cdeeab208",
+   "title": "[Launched] Generally Available: MCP server knowledge sources in Foundry IQ",
+   "link": "https://azure.microsoft.com/updates?id=563411",
+   "summary": "Foundry IQ supported Model Context Protocol (MCP) servers as federated knowledge sources, is generally available. Customers register an MCP server as a read-only knowledge source in Foundry IQ. MCP knowledge sources participate in Foundry IQ cross-source",
+   "published": "2026-06-02T19:00:47+00:00"
   },
   {
-   "id": "e9ff9bf29c00",
-   "title": "[Launched] Generally Available: Azure Linux 4.0",
-   "link": "https://azure.microsoft.com/updates?id=581165",
-   "summary": "Azure Linux 4.0 is being introduced as part of Microsoft Ignite. The general availability of Azure Linux 4.0 for Azure Virtual Machines and VM Scale Sets is Microsoft's first-party open-source Linux distribution purpose-built for Azure. It brings a modern",
-   "published": "2026-11-17T20:00:32+00:00"
-  },
-  {
-   "id": "d5d52c301f2b",
-   "title": "[Launched] Generally Available: Azure Ebsv6 and Ebdsv6",
-   "link": "https://azure.microsoft.com/updates?id=581160",
-   "summary": "We’re excited to announce the general availability of Azure Ebsv6 and Ebdsv6 VMs, powered by 5th Gen Intel® Xeon® processors and Azure Boost, delivering enhanced storage performance for I/O-intensive workloads.Designed for relational databases, in-memory",
-   "published": "2026-11-17T20:00:32+00:00"
+   "id": "d2414524e323",
+   "title": "[Launched] Generally Available: Snapshot backup for SQL Server in Azure VMs",
+   "link": "https://azure.microsoft.com/updates?id=564668",
+   "summary": "Azure Backup now supports snapshot-based backup for SQL Server running on Azure Virtual Machines. This new capability uses Azure disk snapshots combined with native SQL transaction log backups to deliver near-instant, low-impact full backups for large SQL",
+   "published": "2026-06-02T15:15:36+00:00"
   }
  ]
 }
