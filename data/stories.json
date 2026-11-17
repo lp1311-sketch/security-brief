@@ -6632,6 +6632,28 @@
    "instructions_checked": true
   },
   {
+   "id": "50204565d4ff",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Optimizely hack infected CNN, Fox News, BBC, Salesforce sites with malware",
+   "link": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-delivers-malware-to-cnn-fox-news-bbc-salesforce-sites/",
+   "published": "2026-11-17T02:12:17+00:00",
+   "summary": "A suspected supply chain attack targeting Optimizely has led to malicious JavaScript being loaded on numerous popular websites, including Zoom, CNN, Fox News, BBC, Salesforce, and GitLab, exposing visitors to scripts designed to steal cryptocurrency and payment information and exploit vulnerabilities in iOS devices.",
+   "image": "https://www.bleepstatic.com/content/posts/2026/11/16/supply-chain-attack.jpg",
+   "cves": [],
+   "first_seen": "2026-11-17T04:41:09.963275+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Visitors who accessed affected websites on November 16 should review any cryptocurrency transfers made during that time to ensure the destination wallet addresses were not replaced by the malware.",
+    "Anyone who entered payment card information should monitor their credit card accounts for unauthorized transactions and contact their card issuer if they notice suspicious activity.",
+    "iPhone and iPad users who visited affected websites should ensure their devices are running the latest available iOS or iPadOS updates, as the attack also delivered exploit kits targeting vulnerabilities in older versions.",
+    "Overall, users should also watch for suspicious account activity, particularly if they were logged into sensitive services while visiting affected websites."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "05b6417e274f",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
