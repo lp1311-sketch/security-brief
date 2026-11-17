@@ -37,24 +37,6 @@
    "instructions_checked": true
   },
   {
-   "id": "b686da68349e",
-   "source": "ars",
-   "source_name": "Ars Technica Security",
-   "official": false,
-   "source_type": "news",
-   "title": "Grok Build coding agent leaks oodles of confidential info, some belonging to SpaceXSI",
-   "link": "https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/",
-   "published": "2026-11-10T21:12:59+00:00",
-   "summary": "Grok Build, the vibe-coding agent from SpaceXSI, is leaking data—some of it proprietary business information and other sensitive secrets—from thousands of its users, including the very same Elon Musk-owned company that offers the platform, new research shows. The information is revealed through links allowing Grok…",
-   "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/grok-plugin-marketplace-1152x648.webp",
-   "cves": [],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00",
-   "instructions": [
-    "Anyone using shareable links with Grok Build should choose the “invite others” option unless they intend to make an app widely available."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "fcdcf30ed87c",
    "source": "ars",
    "source_name": "Ars Technica Security",
@@ -135,26 +117,6 @@
     "A trusted foundation must also prepare for threats that emerge before they become practical at scale.",
     "Organizations must remain confident in their IT security as technology evolves.",
     "Windows can help enforce identity and security controls on the devices where people, apps, and data intersect."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "ffa56d89e25e",
-   "source": "borncity",
-   "source_name": "Born's IT and Windows Blog",
-   "official": false,
-   "source_type": "news",
-   "title": "Microsoft Security Update Summary (10. November 2026)",
-   "link": "https://borncity.com/blog/2026/11/10/microsoft-security-update-summary-10-november-2026/",
-   "published": "2026-11-10T21:45:13+00:00",
-   "summary": "Microsoft hat am 10. November 2026 Sicherheitsupdates für Windows-Clients und -Server, sowie für weitere Produkte veröffentlicht. Die Sicherheitsupdates beseitigen 1093 (Bleeping Computer nennt 1.235) Schwachstellen (CVEs), davon sind 63 kritisch, 1029 wichtig, und eine moderat. Nachfolgend findet sich ein kompakter ……",
-   "image": "https://borncity.com/blog/wp-content/uploads/2021/06/Update-01.jpg",
-   "cves": [],
-   "first_seen": "2026-11-10T22:45:40.406649+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Details zu den Update-Paketen für Windows etc. sind in separaten Blogbeiträgen verfügbar.",
-    "Das monatliche Patchday-Update enthält alle Sicherheitsfixes für diese Windows-Versionen – sowie alle nicht sicherheitsbezogenen Fixes bis zum Patchday."
    ],
    "instructions_checked": true
   },
@@ -541,6 +503,28 @@
    "first_seen": "2026-11-17T11:05:21.159596+00:00",
    "image_checked": true,
    "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "0975c072af9b",
+   "source": "borncity",
+   "source_name": "Born's IT and Windows Blog",
+   "official": false,
+   "source_type": "news",
+   "title": "Kritische Schwachstelle Java4Shell (CVE-2026-114938)",
+   "link": "https://borncity.com/blog/2026/11/17/kritische-schwachstelle-java4shell-cve-2026-114938/",
+   "published": "2026-11-17T21:06:33+00:00",
+   "summary": "Gerade ist eine kritische Schwachstelle (CVE-2026-114938) in JAVA (CVSS 4.0 Base Score 9.2, critical) vorzeitig bekannt geworden. Die Java4Shell genannte Schwachstelle steckt im OpenJDK 17.0.6 und Folgeversionen. Sie ermöglicht Server zu übernehmen. Oracle soll einen Patch veröffentlicht haben…",
+   "image": "https://borncity.com/blog/wp-content/uploads/2013/10/java_thumb.jpg",
+   "cves": [
+    "CVE-2026-114938"
+   ],
+   "first_seen": "2026-11-17T21:54:48.603180+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Ergänzung: Beim Schreiben der ersten Fassung dieses Texts war noch nichts von Oracle bekannt. Über heise bin ich dann auf das Oracle OpenJDK Vulnerability Advisory: 2026/11/17 gestoßen.",
+    "Oracle hat den Vorab-Sicherheits-Hinweis Oracle Critical Security Patch Update Pre-Release Announcement – November 2026 zu kommenden Sicherheitsupdates veröffentlicht."
+   ],
    "instructions_checked": true
   },
   {
@@ -3630,6 +3614,26 @@
    "instructions_checked": true
   },
   {
+   "id": "8f75784be3f3",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Website management platform Optimizely confirms hackers put malicious code into customer sites",
+   "link": "https://therecord.media/optimizely-malicious-code-customer-sites",
+   "published": "2026-11-17T21:20:00+00:00",
+   "summary": "Researchers said they found malicious JavaScript code on 178 different widely visited websites run through the Optimizely Web experimentation platform. The company confirmed the breach.",
+   "image": "https://cms.therecord.media/uploads/optimizely_logo_a558e0b619.png",
+   "cves": [],
+   "first_seen": "2026-11-17T21:54:48.603180+00:00",
+   "image_checked": true,
+   "instructions": [
+    "In a technical advisory, Optimizely confirmed Report URI’s findings that a vulnerability in its Experimentation platform allowed threat actors to inject malicious JavaScript into some customers’ websites.",
+    "A breach at a popular website management company exposed customers’ visitors to malicious code that stole cryptocurrency and attempted to skim payment cards or install malware."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "2b63f8aad1bf",
    "source": "therecord",
    "source_name": "The Record",
@@ -3858,23 +3862,6 @@
    "image": "https://cms.therecord.media/uploads/University_of_Texas_at_Arlington_March_2021_103_Gateway_Tower_1_1b860ea19f.jpg",
    "cves": [],
    "first_seen": "2026-11-13T18:11:27.621519+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "15da1f8e31d6",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "US Army member arrested in UK over allegations of spying for Russia",
-   "link": "https://therecord.media/us-army-member-arrested-in-uk-spying-for-russia",
-   "published": "2026-11-10T21:13:00+00:00",
-   "summary": "The unnamed soldier was arrested by British counterterrorism police “working closely” with U.S. authorities, including the FBI and the military, the Metropolitan Police said in a statement.",
-   "image": "https://cms.therecord.media/uploads/police_1_373641f263.jpg",
-   "cves": [],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -4503,6 +4490,25 @@
     "CISA warns feds to fully patch actively exploited Cisco flaws",
     "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day",
     "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "ddec81ba80b1",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Cloud keys leaked in Docker Hub images are stolen within seconds",
+   "link": "https://www.bleepingcomputer.com/news/security/cloud-keys-leaked-in-docker-hub-images-are-stolen-within-seconds/",
+   "published": "2026-11-17T21:27:17+00:00",
+   "summary": "Credentials and access secrets exposed in public Docker Hub images are being extracted and exploited by attackers within as little as eight seconds of publication.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/17/Docker.jpg",
+   "cves": [],
+   "first_seen": "2026-11-17T21:54:48.603180+00:00",
+   "image_checked": true,
+   "instructions": [
+    "The researchers recommend that Docker Hub scans images for secrets before pushing them live, and warn publishers if they appear to embed any secrets."
    ],
    "instructions_checked": true
   },
@@ -5700,22 +5706,6 @@
    "instructions_checked": true
   },
   {
-   "id": "c9d200a425c2",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "Artex: The AI Pen-Test Tool Hackers Turned Into a Weapon",
-   "link": "https://www.darkreading.com/cyberattacks-data-breaches/artex-ai-pen-test-tool-hackers-weapon",
-   "published": "2026-11-10T21:01:14+00:00",
-   "summary": "Forks of the open source Artex framework, along with 45 similar pen-testing tools, remain capable of executing credential attacks and cloud breaches at machine speed across multiple industries.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blte1b65168e9679e0a/6af379bdf986ff173e0a7def/Lock_with_target-Alena_Butusava-GettyImages-2263307877.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "10d373a62ac2",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -5888,6 +5878,22 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt876ae2249da592eb/6af77117471ce44823395b3f/smartphone_Ao_Zaa_Studio_shutterstock.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-13T23:05:37.437281+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "ba36bcaaae49",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "'TheMailer' Phishing Kit Puts AI in the Driver's Seat",
+   "link": "https://www.darkreading.com/perimeter/themailer-phishing-kit-ai-drivers-seat",
+   "published": "2026-11-17T20:58:13+00:00",
+   "summary": "The commercial kit uses attacker-supplied AI models to personalize lures, evade spam filters, and scale campaigns to tens of thousands of targets.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt6f7643977746699c/6afcac2049ae9b70b9695c91/red_mailbox_white_brick_wall-Liudmila_Chernetska-GettyImages-1477282383.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-17T21:54:48.603180+00:00",
    "instructions": [],
    "instructions_checked": true
   },

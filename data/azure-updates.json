@@ -1,179 +1,179 @@
 {
  "items": [
   {
-   "id": "aacb89328c39",
-   "title": "Retirement: Azure Data Share will be retired on November 12, 2029",
-   "link": "https://azure.microsoft.com/updates?id=578818",
-   "summary": "Azure Data Share will retire on November 12, 2029. Before that date, transition your data sharing workloads to Microsoft Fabric, which offers External data sharing, Cross tenant delegated shortcuts and IQ share or an appropriate data-source-specific shari",
-   "published": "2026-11-13T19:54:45+00:00"
+   "id": "2d55219ab355",
+   "title": "[Launched] Generally Available: Confidential VMs with Intel TDX support on AKS",
+   "link": "https://azure.microsoft.com/updates?id=581130",
+   "summary": "Customers standardized on Intel Trust Domain Extensions (TDX) for attestation and hardware confidentiality can't run those workloads on AKS Confidential VM node pools today, because CVM node images only support AMD SEV-SNP. AKS Confidential VM node pools",
+   "published": "2026-11-17T21:00:05+00:00"
   },
   {
-   "id": "86151f421928",
-   "title": "[In preview] Public Preview: JWT validation with Azure Front Door Auth Policy",
-   "link": "https://azure.microsoft.com/updates?id=577673",
-   "summary": "JSON Web Token (JWT) validation through Azure Front Door Auth Policy is now in public preview on Azure Front Door Premium. Validate bearer tokens issued by Microsoft Entra ID at the edge before requests reach your APIs or web applications, helping you cen",
-   "published": "2026-11-12T22:36:37+00:00"
+   "id": "06af9fb6a248",
+   "title": "[In preview] Public Preview: Confidential VMs with OS Disk Encryption support on AKS",
+   "link": "https://azure.microsoft.com/updates?id=581125",
+   "summary": "Regulated customers running AKS Confidential VM node pools protect workloads in memory today, but the OS disk isn't encrypted at rest, so they have to close the data-at-rest gap outside the platform. In Preview, Ubuntu 26.04 Confidential VM node pools ena",
+   "published": "2026-11-17T21:00:05+00:00"
   },
   {
-   "id": "a9cb0c224091",
-   "title": "[Launched] Generally Available: Azure Front Door mutual TLS authentication",
-   "link": "https://azure.microsoft.com/updates?id=577678",
-   "summary": "Mutual TLS (mTLS), also known as client certificate authentication, is now generally available on Azure Front Door Premium. Use X.509 client certificates to help protect sensitive applications and APIs in business-to-business, Internet of Things, financia",
-   "published": "2026-11-12T22:27:35+00:00"
+   "id": "52433adfe38e",
+   "title": "[In preview] Generally Available: Private endpoint support for Azure HorizonDB clusters",
+   "link": "https://azure.microsoft.com/updates?id=574153",
+   "summary": "You can now connect to Azure HorizonDB clusters privately through Azure Private Link, using a private IP address from your virtual network. Private DNS integration makes connection setup easier, while the option to disable public access keeps database tra",
+   "published": "2026-11-17T20:56:06+00:00"
   },
   {
-   "id": "b0041657013f",
-   "title": "[In preview] Public Preview: Auto scaling of ingestion limits in Azure Monitor workspace",
-   "link": "https://azure.microsoft.com/updates?id=578207",
-   "summary": "Auto scaling introduces a per-workspace capability in Azure Monitor Workspace (AMW) to automatically scale ingestion limits based on observed usage patterns. When enabled, the system dynamically adjusts ingestion limits (quota ceiling) to maintain healthy",
-   "published": "2026-11-12T18:23:52+00:00"
+   "id": "5221e832ccd5",
+   "title": "[In preview] Public Preview: Service tags for inbound rules in network security perimeter",
+   "link": "https://azure.microsoft.com/updates?id=579201",
+   "summary": "Announcing the public preview of 'service tags as inbound rules' support for third-party customers in network security perimeter. This new capability simplifies how customers manage access to in network security perimeter-protected resources by allowing t",
+   "published": "2026-11-17T20:52:28+00:00"
   },
   {
-   "id": "3fd2469796c2",
-   "title": "[In preview] Public Preview: SQL performance monitoring for Azure SQL Managed Instance",
-   "link": "https://azure.microsoft.com/updates?id=574158",
-   "summary": "The public preview of Microsoft-managed performance monitoring for Azure SQL Managed Instance is now available. Customers monitoring business-critical SQL Managed Instance workloads often rely on custom scripts and disconnected monitoring tools. This requ",
-   "published": "2026-11-12T16:59:40+00:00"
+   "id": "fc16aa4ba5cc",
+   "title": "[In preview] Public Preview: Perimeter link (cross perimeter) in network security perimeter",
+   "link": "https://azure.microsoft.com/updates?id=579206",
+   "summary": "This capability enables secure connectivity between resources protected by different network security perimeters, while maintaining strong perimeter-based access controls. With this release, customers can confidently adopt network security perimeter acros",
+   "published": "2026-11-17T20:51:13+00:00"
   },
   {
-   "id": "a31563fa109c",
-   "title": "[In preview] Public Preview: Rate limit grouping for Azure Front Door Premium WAF",
-   "link": "https://azure.microsoft.com/updates?id=580155",
-   "summary": "Announcing the public preview of rate limit grouping for Azure Web Application Firewall (WAF) on Azure Front Door Premium. By default, a rate limit rule counts requests separately for each client IP address. Distributed attacks get around this by spreadin",
-   "published": "2026-11-11T18:18:27+00:00"
+   "id": "c53433655f1d",
+   "title": "[In preview] Public Preview: Agent Grid helping secure AI agent communications",
+   "link": "https://azure.microsoft.com/updates?id=580684",
+   "summary": "Agent Grid is now in public preview, bringing identity-based Zero Trust network security to AI agents on supported Azure environments. Security teams can govern communications among agents, models, tools, and external services through centrally managed po",
+   "published": "2026-11-17T20:47:31+00:00"
   },
   {
-   "id": "d2881754b139",
-   "title": "[In preview] Public Preview: Distributed accelerator for cloud storage on AKS",
-   "link": "https://azure.microsoft.com/updates?id=578454",
-   "summary": "Distributed accelerator for cloud storage (DACS) is now in public preview for AI workloads running on Azure Kubernetes Service (AKS). DACS is a distributed read-through cache that runs within your AKS cluster and uses local NVMe disks across nodes to keep",
-   "published": "2026-11-10T20:08:32+00:00"
+   "id": "a3365353e90a",
+   "title": "[In preview] Public Preview: Azure Adaptive Virtual Patching",
+   "link": "https://azure.microsoft.com/updates?id=580689",
+   "summary": "Azure Adaptive Virtual Patching introduces an AI-orchestrated Adaptive Shield designed to reduce exposure to new, emerging, and newly disclosed zero-day vulnerabilities while customers test and deploy software patches. The initial workload focus is Linux",
+   "published": "2026-11-17T20:29:13+00:00"
   },
   {
-   "id": "8f1285269ebf",
-   "title": "[Launched] Generally Available: Azure Functions support for .NET 11",
-   "link": "https://azure.microsoft.com/updates?id=578773",
-   "summary": "Azure Functions support for.NET 11 is now generally available.You can now build Azure Functions apps targeting.NET 11 using the isolated worker model, while continuing to use the Azure Functions programming model and host integration. Your serverless ap",
-   "published": "2026-11-10T20:07:45+00:00"
+   "id": "bde4d1d7c548",
+   "title": "[In preview] Public Preview: AI Security add-on for Azure Firewall Premium",
+   "link": "https://azure.microsoft.com/updates?id=580694",
+   "summary": "AI Security, a new add-on for Azure Firewall Premium, is now in public preview. Announced at Microsoft Ignite, it introduces five capabilities to help you protect AI applications, safeguard sensitive data, strengthen malware and application defenses, and",
+   "published": "2026-11-17T20:27:29+00:00"
   },
   {
-   "id": "ac66b2519c41",
-   "title": "[In preview] Public Preview: Azure Front Door adds native gRPC support",
-   "link": "https://azure.microsoft.com/updates?id=579383",
-   "summary": "Announcing the public preview of gRPC support in Azure Front Door. Build and deliver gRPC applications through Azure Front Door Standard and Premium. Now in preview, gRPC support lets you route calls to specific services and methods, distribute traffic ac",
-   "published": "2026-11-10T18:55:53+00:00"
+   "id": "69879e8e7b82",
+   "title": "[In preview] Public Preview: Azure Bastion RDP and SSH vision",
+   "link": "https://azure.microsoft.com/updates?id=580699",
+   "summary": "Azure Bastion RDP and SSH vision is now in public preview, bringing AI-assisted review to recorded privileged sessions. Security and operations teams can use session summaries and insights into noteworthy and risky activity to understand administrative ac",
+   "published": "2026-11-17T20:25:18+00:00"
   },
   {
-   "id": "426f6f822f47",
-   "title": "[Launched] Generally Available: Azure Front Door edge actions",
-   "link": "https://azure.microsoft.com/updates?id=579310",
-   "summary": "Announcing the general availability of Azure Front Door edge actions (serverless compute at the edge). With edge actions, customers can execute lightweight JavaScript functions during Azure Front Door client request/response processing to make real-time d",
-   "published": "2026-11-10T18:55:09+00:00"
+   "id": "6e3f46bf6560",
+   "title": "[In preview] Public Preview: Azure API Management Application",
+   "link": "https://azure.microsoft.com/updates?id=581277",
+   "summary": "The Applications feature in Azure API Management is now available in public preview to all customers, with no sign-up or registration required.Applications provide a streamlined way to organize APIs around consuming applications and manage application-lev",
+   "published": "2026-11-17T20:15:03+00:00"
   },
   {
-   "id": "f86e1e31ff7d",
-   "title": "Public Preview: Azure Route Server dual-stack IPv4/IPv6 support",
-   "link": "https://azure.microsoft.com/updates?id=579746",
-   "summary": "Azure Route Server now supports IPv4/IPv6 dual-stack mode in public preview, enabling route exchange for both address families across supported hybrid networking connections. Existing IPv4 connections remain unchanged, so organizations can adopt IPv6 rout",
-   "published": "2026-11-10T18:21:41+00:00"
+   "id": "36e14769e2db",
+   "title": "[In preview] Public Preview: Scale ExpressRoute Direct connectivity with link groups",
+   "link": "https://azure.microsoft.com/updates?id=580926",
+   "summary": "Azure ExpressRoute is introducing link groups for ExpressRoute Direct, enabling high-throughput workloads to scale network connectivity while reducing operational complexity. Instead of managing multiple independent ExpressRoute connections, you can aggre",
+   "published": "2026-11-17T20:15:03+00:00"
   },
   {
-   "id": "6c13d0a75f1c",
-   "title": "Retirement: Support for .NET 8 and .NET 9 on Static Web Apps is ending November 10, 2026",
-   "link": "https://azure.microsoft.com/updates?id=575106",
-   "summary": "Support for.NET 8 and.NET 9 will end on November 10, 2026. Please transition your managed Functions APIs to.NET 10 by that date. Your apps will continue to operate, but security updates will no longer be provided and support for.NET 8 and.NET 9 on Az",
-   "published": "2026-11-09T22:50:01+00:00"
+   "id": "80df68443bc9",
+   "title": "[In preview] Public Preview: Agent Sandbox cluster extension",
+   "link": "https://azure.microsoft.com/updates?id=580916",
+   "summary": "Running AI agents that execute untrusted, model-generated code requires isolated environments for each session. Today, teams building on Kubernetes assemble their own sandbox lifecycle, storage, and warm-up logic, adding operational overhead and making us",
+   "published": "2026-11-17T20:15:03+00:00"
   },
   {
-   "id": "8acbceff94a3",
-   "title": "[In preview] Public Preview: Modernize Arc-enabled Windows Servers with Azure File Sync",
-   "link": "https://azure.microsoft.com/updates?id=579854",
-   "summary": "Azure File Sync provides hybrid access or seamless migration of data from Windows Server to Azure Files while preserving the familiar local file server experience for users and applications. Now in preview, users have a guided Azure portal experience to s",
-   "published": "2026-11-09T17:20:57+00:00"
+   "id": "b82bd08479d6",
+   "title": "[Launched] Generally Available: IBM Spectrum LSF integration with Azure Compute Fleet",
+   "link": "https://azure.microsoft.com/updates?id=581259",
+   "summary": "IBM Spectrum LSF integrates with Azure Compute Fleet for elastic, cost-efficient HPC workload orchestration.The IBM LSF Resource Connector for Azure Compute Fleet provisions and releases compute capacity based on workload demand. Extend on-premises LSF en",
+   "published": "2026-11-17T20:00:32+00:00"
   },
   {
-   "id": "0a1279cf12a2",
-   "title": "[Launched] Generally Available: Azure Front Door TLS key exchange policy with post-quantum support",
-   "link": "https://azure.microsoft.com/updates?id=577668",
-   "summary": "Azure Front Door now supports configurable TLS key exchange policies, including hybrid post-quantum key exchange, to help you prepare for evolving cryptographic threats while meeting your security and client compatibility requirements. Choose a predefined",
-   "published": "2026-11-05T23:19:48+00:00"
+   "id": "2fb7d339ecdb",
+   "title": "[In preview] Public Preview: Azure Artifact Validation for VM images",
+   "link": "https://azure.microsoft.com/updates?id=581249",
+   "summary": "Azure Artifact Validation, in public preview, lets VM image publishers and enterprise platform teams run Azure's certification-grade quality and security checks on their images in their own Azure subscriptions, at any point in the build process.Previously",
+   "published": "2026-11-17T20:00:32+00:00"
   },
   {
-   "id": "425144f0727d",
-   "title": "[Launched] Generally Available: Azure Database for PostgreSQL stable REST API version 2026-10-01",
-   "link": "https://azure.microsoft.com/updates?id=579300",
-   "summary": "The Azure Database for PostgreSQL Flexible Server REST API version 2026-10-01 is now generally available. This stable API release introduces expanded capabilities for maintenance management, immutable backups, multi-tenant encryption (cross-tenant custome",
-   "published": "2026-11-04T18:42:12+00:00"
+   "id": "e2de02532ccf",
+   "title": "[In preview] Public Preview: VM adaptive placement",
+   "link": "https://azure.microsoft.com/updates?id=581244",
+   "summary": "VM adaptive placement, now in public preview, helps increase Azure VM deployment success when capacity is constrained.With a standard VM create, you specify one exact size, and the deployment fails if that size isn't available. With adaptive placement, yo",
+   "published": "2026-11-17T20:00:32+00:00"
   },
   {
-   "id": "e28418fdba71",
-   "title": "Generally Available: Route maps for Azure Route Server",
-   "link": "https://azure.microsoft.com/updates?id=578966",
-   "summary": "Route maps for Azure Route Server are now generally available in the Azure public cloud. Route maps provide fine-grained control over inbound and outbound routing across hybrid connections. Customers can manage routes advertised to and from Azure Route Se",
-   "published": "2026-11-04T18:39:41+00:00"
+   "id": "66e74404a632",
+   "title": "[Launched] Generally Available: Discover Data Guardian from Sovereign Control Panel",
+   "link": "https://azure.microsoft.com/updates?id=581226",
+   "summary": "Customers can now discover Data Guardian directly from the Sovereign Control Panel, now in Public Preview. Data Guardian provides enhanced operational oversight of qualifying remote access by Microsoft engineers to in-scope production systems in the EU da",
+   "published": "2026-11-17T20:00:32+00:00"
   },
   {
-   "id": "5c282d217d7c",
-   "title": "[In preview] Public Preview: Azure Firewall IPv6 now supports application rules",
-   "link": "https://azure.microsoft.com/updates?id=579507",
-   "summary": "Azure Firewall now supports application rules in IPv6 Public Preview, enabling layer 7 filtering for IPv6 HTTP and HTTPS traffic. The enhancement extends application-level controls to IPv6 and dual-stack deployments, helping customers maintain consistent",
-   "published": "2026-11-04T18:09:43+00:00"
+   "id": "87b467eb3b40",
+   "title": "Announcing: Production Touch Ledger (PTL) Assessment Report",
+   "link": "https://azure.microsoft.com/updates?id=581221",
+   "summary": "The Production Touch Ledger (PTL) Assessment Report is now available. Capgemini, an independent third party, has validated the design of PTL for its ability to preserve the completeness, tamper-evidence, and non-repudiation of production-access records. T",
+   "published": "2026-11-17T20:00:32+00:00"
   },
   {
-   "id": "b3ff26388734",
-   "title": "[In preview] Public Preview: Multi-disk crash-consistent VM restore points for Premium SSD v2 and Ultra Disks on VMs with SCSI disk controller",
-   "link": "https://azure.microsoft.com/updates?id=579162",
-   "summary": "Multi-disk crash-consistent restore points for Azure virtual machines with Premium SSD v2 and Ultra data disks are now available in public preview on VMs with SCSI disk controllers. You can use this to capture the agent-less crash consistent restore point",
-   "published": "2026-11-04T17:13:51+00:00"
+   "id": "8a1e0bc6a5eb",
+   "title": "[In preview] Public Preview: Sovereign Control Panel",
+   "link": "https://azure.microsoft.com/updates?id=581220",
+   "summary": "Sovereign Control Panel is now available in Public Preview. Sovereign Control Panel is an Azure portal experience designed to help organizations assess and continuously monitor their sovereignty posture, understand the evidence behind identified gaps, and",
+   "published": "2026-11-17T20:00:32+00:00"
   },
   {
-   "id": "4e13c50a4432",
-   "title": "[In preview] Public Preview: JWT validation for Application Gateway for Containers",
-   "link": "https://azure.microsoft.com/updates?id=576382",
-   "summary": "Application Gateway for Containers now supports centralized JSON Web Token validation through the AuthPolicy custom resource. Teams can validate a token signature, issuer, lifetime, and configured audience by using signing keys retrieved from a trusted HT",
-   "published": "2026-11-03T21:17:08+00:00"
+   "id": "1e1f0f98f213",
+   "title": "[In development] Private Preview: Azure confidential VMs on 5th Gen AMD EPYC processors (DCasv7 and ECasv7 series)",
+   "link": "https://azure.microsoft.com/updates?id=581199",
+   "summary": "Azure's next-generation confidential VMs, the DCasv7, DCadsv7, DCalsv7, DCaldsv7, ECasv7 and ECadsv7 series, are now in private preview. Built on 5th Gen AMD EPYC processors with AMD SEV-SNP, they protect data while it's being processed by isolating each",
+   "published": "2026-11-17T20:00:32+00:00"
   },
   {
-   "id": "fcc5a7b5533c",
-   "title": "[In preview] Public Preview: MCP gateway for Application Gateway for Containers",
-   "link": "https://azure.microsoft.com/updates?id=576388",
-   "summary": "Application Gateway for Containers now supports Model Context Protocol routing through the new MCPRoute custom resource. Platform teams can publish MCP servers behind a stable hostname and path while centralizing TLS, JWT validation, Web Application Firew",
-   "published": "2026-11-03T21:16:36+00:00"
+   "id": "3acbfe097c67",
+   "title": "[In development] Private Preview: Project Nova",
+   "link": "https://azure.microsoft.com/updates?id=581193",
+   "summary": "Project NOVA enables independent verification of specific claims without revealing the underlying data. Across regulated industries, organizations need to establish trust while protecting confidential information. Project Nova explores how zero-knowledge",
+   "published": "2026-11-17T20:00:32+00:00"
   },
   {
-   "id": "f5c330c988a0",
-   "title": "[In preview] Public Preview: Private ingress for Application Gateway for Containers",
-   "link": "https://azure.microsoft.com/updates?id=576393",
-   "summary": "Application Gateway for Containers now supports private frontends that are reachable only through approved Azure Private Link private endpoints. This enables organizations to keep internal applications, shared services, and cross-cluster traffic on privat",
-   "published": "2026-11-03T21:15:46+00:00"
+   "id": "4b2830355b2b",
+   "title": "[Launched] Generally Available: Azure Policy support for Azure HorizonDB",
+   "link": "https://azure.microsoft.com/updates?id=581180",
+   "summary": "Azure Policy support for Azure HorizonDB is now available in preview, helping you apply governance and observability standards consistently across your HorizonDB deployments. With the new built-in policy, you can automatically deploy diagnostic settings f",
+   "published": "2026-11-17T20:00:32+00:00"
   },
   {
-   "id": "26172c4a5999",
-   "title": "[In preview] Public Preview: Advanced capacity insights are now available in Azure Storage Discovery",
-   "link": "https://azure.microsoft.com/updates?id=578655",
-   "summary": "Advanced capacity insights are now available for preview in Azure Storage Discovery. Storage Discovery now provides greater visibility into storage usage through insights such as access patterns, data age, storage tiers, object size distribution, retentio",
-   "published": "2026-11-03T20:20:29+00:00"
+   "id": "d8a2b0600258",
+   "title": "[In preview] Public Preview: Azure DDoS Protection peacetime telemetry",
+   "link": "https://azure.microsoft.com/updates?id=581175",
+   "summary": "Azure DDoS Protection peacetime telemetry is now in public preview. Customers can now see the traffic reaching their protected public IP addresses during normal operation, not only while a DDoS mitigation is active. Previously, outside an active mitigatio",
+   "published": "2026-11-17T20:00:32+00:00"
   },
   {
-   "id": "d65b6567228b",
-   "title": "[In preview] Public Preview: Extend immutability for PITR backups for Azure SQL Database and Azure SQL Managed Instance",
-   "link": "https://azure.microsoft.com/updates?id=579305",
-   "summary": "With this enhancement, you have the ability to lock your retention to the configured PITR retention, beyond the default 7 days of immutable backups that are already available. This is especially useful for financial customers who typically have 35 days of",
-   "published": "2026-11-03T18:36:12+00:00"
+   "id": "ddcfe90f13a3",
+   "title": "[Launched] Generally Available: Azure HorizonDB System Managed Maintenance Window",
+   "link": "https://azure.microsoft.com/updates?id=581170",
+   "summary": "Azure HorizonDB supports system-managed maintenance for planned service upgrades.With system-managed maintenance, Azure HorizonDB automatically performs planned upgrades on your cluster without requiring you to configure or manage a maintenance schedule.",
+   "published": "2026-11-17T20:00:32+00:00"
   },
   {
-   "id": "b525f903e876",
-   "title": "[Launched] Generally Available: Enhanced Azure Site Recovery support for VMSS Flex",
-   "link": "https://azure.microsoft.com/updates?id=578926",
-   "summary": "Azure Site Recovery now offers an enhanced disaster recovery experience for virtual machines in Virtual Machine Scale Sets with flexible orchestration. The update improves target configuration and end-to-end recovery workflows, including failover, reprote",
-   "published": "2026-11-03T18:32:01+00:00"
+   "id": "e9ff9bf29c00",
+   "title": "[Launched] Generally Available: Azure Linux 4.0",
+   "link": "https://azure.microsoft.com/updates?id=581165",
+   "summary": "Azure Linux 4.0 is being introduced as part of Microsoft Ignite. The general availability of Azure Linux 4.0 for Azure Virtual Machines and VM Scale Sets is Microsoft's first-party open-source Linux distribution purpose-built for Azure. It brings a modern",
+   "published": "2026-11-17T20:00:32+00:00"
   },
   {
-   "id": "0d3e70313485",
-   "title": "Retirement: Transition to Entra ID (formerly known as Azure AD) to query data from Azure Monitor application insights by March 31, 2027",
-   "link": "https://azure.microsoft.com/updates?id=transition-to-azure-ad-to-query-data-from-azure-monitor-application-insights-by-31-march-2026",
-   "summary": "*Note: We have extended the retirement date to March 31, 2027.On March 31, 2027 API keys used query application insights will be retired. You'll need to transition to Microsoft Entra ID (formerly known as Azure AD) which provides all the functionality of",
-   "published": "2023-05-15T19:51:58+00:00"
+   "id": "d5d52c301f2b",
+   "title": "[Launched] Generally Available: Azure Ebsv6 and Ebdsv6",
+   "link": "https://azure.microsoft.com/updates?id=581160",
+   "summary": "We’re excited to announce the general availability of Azure Ebsv6 and Ebdsv6 VMs, powered by 5th Gen Intel® Xeon® processors and Azure Boost, delivering enhanced storage performance for I/O-intensive workloads.Designed for relational databases, in-memory",
+   "published": "2026-11-17T20:00:32+00:00"
   }
  ]
 }
