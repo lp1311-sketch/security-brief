@@ -5320,6 +5320,26 @@
    "instructions_checked": true
   },
   {
+   "id": "9409189d8358",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Uber says nearly 150,000 impacted by third-party breach",
+   "link": "https://therecord.media/uber-says-150000-impacted-third-party-breach",
+   "published": "2026-11-18T01:20:00+00:00",
+   "summary": "In breach notification letters, the rideshare company said it was notified by a third party service provider on October 9 that internal credentials were stolen and used to access Uber’s account.",
+   "image": "https://cms.therecord.media/uploads/uber_2_dfaed63c24.jpg",
+   "cves": [],
+   "first_seen": "2026-11-17T02:28:09.960642+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Fireworks warned in an advisory last week that cybercriminals stole billing information and AI-specific data during two breaches last month .",
+    "The impacted data was in a cloud storage environment created by Uber specifically to enable the service provider’s work."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "2ebc983e1e5f",
    "source": "therecord",
    "source_name": "The Record",
@@ -6612,6 +6632,25 @@
    "instructions_checked": true
   },
   {
+   "id": "05b6417e274f",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Optimizely supply chain attack infects major brands' sites with malware",
+   "link": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-infects-major-brands-sites-with-malware/",
+   "published": "2026-11-17T02:12:17+00:00",
+   "summary": "A suspected supply chain attack targeting Optimizely has led to malicious JavaScript being loaded on numerous popular websites, including Zoom, CNN, Fox News, BBC, Salesforce, and GitLab, exposing visitors to scripts designed to steal cryptocurrency and payment information and exploit vulnerabilities in iOS devices.",
+   "image": "https://www.bleepstatic.com/content/posts/2026/11/16/supply-chain-attack.jpg",
+   "cves": [],
+   "first_seen": "2026-11-17T02:28:09.960642+00:00",
+   "image_checked": true,
+   "instructions": [
+    "BleepingComputer contacted Optimizely for more information about the attack and will update this story if we receive a response."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "3ff055feac94",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -7302,6 +7341,27 @@
     "In this blog, we examine SCKit’s attack chain and payload components and provide mitigation guidance, indicators of compromise, and Microsoft Defender XDR advanced hunting queries to help organizations identify and disrupt this activity.",
     "ConnectWise’s advisory describes a reported authentication flaw in RMM+ versions 1.0.31 and 1.0.32: when no access key was configured, the extension accepted an empty key.",
     "Follow the vendor advisory for Labtech Plus, RMM Plus, RMM+, RMM Plus Password Link, and RMM+ Password Link."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "3099ffeb8eda",
+   "source": "msblog",
+   "source_name": "Microsoft Security Blog",
+   "official": false,
+   "source_type": "vendor_blog",
+   "title": "High volume phishing campaign uses Microsoft 365 outage lures to target multiple industry sectors",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/16/high-volume-phishing-campaign-uses-microsoft-365-outage-lures-target-multiple-industry-sectors-2/",
+   "published": "2026-11-17T00:08:41+00:00",
+   "summary": "On November 13, 2026, Microsoft Threat Intelligence observed a coordinated, high-volume phishing campaign targeting organizations across multiple sectors worldwide. The threat actors used phishing emails disguised as legitimate Microsoft 365 service-health notifications to lure recipients into clicking a malicious…",
+   "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/11/image-55.webp",
+   "cves": [],
+   "first_seen": "2026-11-17T02:28:09.960642+00:00",
+   "instructions": [
+    "If credentials were entered, organizations should consider the risk of account compromise, mailbox access, business email compromise, internal phishing, inbox-rule manipulation, and access to cloud collaboration data.",
+    "The following defanged indicators were observed in the campaign and should be validated in the context of each environment before blocking.",
+    "Quarantine matching messages and remove delivered copies in accordance with organizational response procedures.",
+    "Reset credentials and investigate potentially compromised accounts For any user who may have entered credentials, reset the password, revoke active sessions and refresh tokens, and verify multifactor authentication registrations."
    ],
    "instructions_checked": true
   },
