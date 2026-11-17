@@ -424,6 +424,26 @@
    "instructions_checked": true
   },
   {
+   "id": "81170557a8c1",
+   "source": "borncity",
+   "source_name": "Born's IT and Windows Blog",
+   "official": false,
+   "source_type": "news",
+   "title": "Mindestens 178 große Webseiten über Optimizely mit Malware infiziert",
+   "link": "https://borncity.com/blog/2026/11/17/mindestens-178-grosse-webseiten-ueber-optimizely-mit-malware-infiziert/",
+   "published": "2026-11-17T03:37:56+00:00",
+   "summary": "Der nächste mächtige Schlag gegen alle Webseiten, die den Dienst von Optimizely einsetzen. Der Dienstleister wurde kompromittiert und an Kunden wurde am 16. November 2026 ein schädliches JavaScript ausgeliefert. Dieses versucht Kreditkartendaten zu stehlen und nimmt Apples iPhones ins Visier. … Weiterlesen → Quelle",
+   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
+   "cves": [],
+   "first_seen": "2026-11-17T06:46:24.647507+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Neueste Kommentare mw zu Microsofts Cloud- und E-Mail-Ausfall am 12.11.2026 durch Juli-Update",
+    "mw zu Microsofts Cloud- und E-Mail-Ausfall am 12.11.2026 durch Juli-Update"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "b5e1ece521f3",
    "source": "google-threat-intel",
    "source_name": "Google Threat Intelligence",
@@ -3763,27 +3783,6 @@
    "instructions_checked": true
   },
   {
-   "id": "b579a343e6b6",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "CISA Warns of Active Exploitation of OpenSSH, GPUStack, FreeSWITCH, and IBM Flaws",
-   "link": "https://thehackernews.com/2026/11/cisa-warns-of-active-exploitation-of.html",
-   "published": "2026-11-10T06:31:42+00:00",
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added four security flaws impacting GPUStack, SignalWire FreeSwitch, OpenBSD OpenSSH, and IBM Aspera Faspex to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The vulnerabilities are listed below -…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVAsrcYxVs8sJe7IiSD6WkTC4yPv0eLfup7dwcsS0NLcAAgoY__wyC3UFCR90PL2ziKCEW-vMNIEQXES-8uAG-MxuXlyIDdQGeNREm8yFv3tbvsCVXXRyRGT4ORirvcVKP_uD62XHYy9w3x_P0o7XzkguJPwq_1vV2jPxxnZWbhAHHUJ3YJ6HbTlXb0shyphenhyphen/s1600/openssh.png",
-   "cves": [
-    "CVE-2026-123218"
-   ],
-   "first_seen": "2026-11-10T07:05:43.008496+00:00",
-   "instructions": [
-    "Federal Civilian Executive Branch (FCEB) agencies are recommended to apply the fixes by November 12, 2026.",
-    "In an advisory for CVE-2026-102895 published on July 31, 2026, the maintainers of the GPUStack Python package credited Nikko Enggaliano, Wei Yunzhou, Rui Yang, and Haoyu Wang for independently reporting the flaw, adding that \"active in-the-wild exploitation\" was reported by Ulex Innovative Systems' Javier Sixto."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "cd6455aacef5",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -3821,6 +3820,27 @@
    "first_seen": "2026-11-12T17:02:02.285764+00:00",
    "instructions": [
     "The company said it's not aware of any exploits for any of the announced vulnerabilities, but urged customers to apply the updates as they are designed to \"enhance the security posture of NetScaler.\""
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "e5f38235f326",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "ConnectWise Warns ScreenConnect Attacks Continue as SCKit Targets Unpatched Systems",
+   "link": "https://thehackernews.com/2026/11/connectwise-warns-screenconnect-attacks.html",
+   "published": "2026-11-17T06:29:27+00:00",
+   "summary": "ConnectWise on Monday said it completed its investigation into unauthorized access targeting partner ScreenConnect environments, and recommended customers to ensure that the technician client is running version 26.6.5 or later. The company said additional activity targeting on-premises environments continues to be…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjErwt0frcFKiESffCoP1OtYh0j23goqdMN0nz-RT02biCz30WlLG4PD5gTyGgbumOWB3Zh1PJfENQoRtOwQVm3Nbg8VsiRhvNk662qVFNGqO8DQ4bFrroSzWgsvfCYGLWFzD1A-f6fcTu_E_dm4o1iUJz96scWy7skw49vzD9hfIfVEILTVPKsvbsEpGca/s1600/screenconnect-flaws.jpg",
+   "cves": [],
+   "first_seen": "2026-11-17T06:46:24.647507+00:00",
+   "instructions": [
+    "ConnectWise on Monday said it completed its investigation into unauthorized access targeting partner ScreenConnect environments, and recommended customers to ensure that the technician client is running version 26.6.5 or later.",
+    "\"On-premises partners must immediately disable the identified extensions and update ScreenConnect to the latest supported version,\" the company said .",
+    "\"In one of the incidents, we saw a rogue ScreenConnect client establish persistence via a service called Windows Update Agent, posing as a legitimate system component.",
+    "The service executable (UpdateConnect.ClientService.exe) was placed in C:\\ProgramData\\Windows Update Agent (de362a425905bcc4)\\ and configured to run under the LocalSystem account.\""
    ],
    "instructions_checked": true
   },
@@ -4227,24 +4247,6 @@
     "Customers running on-premise N-central deployments should upgrade their servers as soon as possible to keep their environments protected.",
     "\"All customers, hosted and on-premise, must upgrade all of their Agents and Probes to the latest version to be fully protected,\" N-able cautioned.",
     "Independent security researcher Sean Bales, who disclosed the flaws, has published additional details for 24 CVEs , stating \"these are patched vulnerabilities and should not work on the latest patch.\""
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "329980cc6fad",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "N-able Takes N-central Cloud Offline After Researcher Discloses 33 Zero-Days with PoC Exploits",
-   "link": "https://thehackernews.com/2026/11/n-able-takes-hosted-n-central-offline.html",
-   "published": "2026-11-10T06:44:36+00:00",
-   "summary": "N-able said it has taken N-central Hosted Environments offline and is urging on-premises customers to shut down their servers until further notice following the public disclosure of over 30 vulnerabilities collectively tracked as Able2Shell. \"As a precautionary measure, we are temporarily taking our Hosted N-central…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-DkzHcZpJVVEU3e3wmGB2DiyRsnWXkf_2bfT1fiDJG4Wn92cartbhyphenhyphenqZHOjXGasigHqJAyXM0kjOlYipgEkahrCi9KGa1s8gpINVT-oFldgOc1bZMUQ-nmFqsSMNwIe6463fXOxSqX1dNroXgwn9MwsmCx41jvPdtdygITxfKyTRDUWKS19YVTFTZY8sr/s1600/n-able.jpg",
-   "cves": [],
-   "first_seen": "2026-11-10T08:19:37.503691+00:00",
-   "instructions": [
-    "Multiple N-central zero-days enable anonymous credential theft, administrator creation, and nable/root RCE."
    ],
    "instructions_checked": true
   },
@@ -7789,27 +7791,6 @@
    "image_checked": true,
    "instructions": [
     "Citrix, Ivanti Patch Critical and High-Severity Vulnerabilities",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "61f253ac4386",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Chrome Update Patches Exploited XML Zero-Day, Eighth This Year",
-   "link": "https://www.securityweek.com/chrome-update-patches-exploited-xml-zero-day-eighth-this-year/",
-   "published": "2026-11-10T06:12:24+00:00",
-   "summary": "The high-severity use-after-free in Chrome’s XML component was reported anonymously on November 6 and is already exploited in attacks. The post Chrome Update Patches Exploited XML Zero-Day, Eighth This Year appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2024/06/Chrome.jpeg",
-   "cves": [],
-   "first_seen": "2026-11-10T07:05:43.008496+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Google on Monday informed Chrome users of new security updates that patch nine vulnerabilities, including a zero-day exploited in the wild.",
-    "In addition to the zero-day, the latest Chrome updates patch six high-severity vulnerabilities in the WebGL, FileSystem, Compositing, GPU, V8, and XML components.",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
