@@ -432,7 +432,7 @@
    "title": "Mindestens 178 große Webseiten über Optimizely mit Malware infiziert",
    "link": "https://borncity.com/blog/2026/11/17/mindestens-178-grosse-webseiten-ueber-optimizely-mit-malware-infiziert/",
    "published": "2026-11-17T03:37:56+00:00",
-   "summary": "Der nächste mächtige Schlag gegen alle Webseiten, die den Dienst von Optimizely einsetzen. Der Dienstleister wurde kompromittiert und an Kunden wurde am 16. November 2026 ein schädliches JavaScript ausgeliefert. Dieses versucht Kreditkartendaten zu stehlen und nimmt Apples iPhones ins Visier. … Weiterlesen → Quelle",
+   "summary": "Der nächste mächtige Schlag gegen alle Webseiten, die den Dienst von Optimizely einsetzen. Der Dienstleister wurde kompromittiert und hat an Kunden wurde am 16. November 2026 ein schädliches JavaScript ausgeliefert. Dieses versucht Kreditkartendaten zu stehlen und nimmt Apples iPhones und … Weiterlesen → Quelle",
    "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
    "cves": [],
    "first_seen": "2026-11-17T06:46:24.647507+00:00",
@@ -4070,28 +4070,6 @@
    "instructions_checked": true
   },
   {
-   "id": "9844bc61915e",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Google Issues Chrome Security Update for Eighth Actively Exploited Zero-Day of 2026",
-   "link": "https://thehackernews.com/2026/11/google-issues-chrome-security-update.html",
-   "published": "2026-11-10T06:52:54+00:00",
-   "summary": "Google on Monday released updates to patch nine security vulnerabilities, including one that has come under active exploitation in the wild. The high-severity vulnerability, assigned the CVE identifier CVE-2026-125350 (CVSS score: 8.8), has been described as a use-after-free bug in the XML component. \"Use-after-free…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjk5S9J891bQS8W6TgyoiEPQ7geGia8FqqWjckFlo9qMH2wXIXv-7gyod1XKUpI9BfgcliN2Re8A85rJ121jxqgfnw1LsjYBvAYtX7694GVgMF7B94G0n5MzqMaKqLAbr-No1nqrN0gyF8MFR_bYQIYlqiTh_FzobmWrq4NOCLbcW_78uEMMW5FE4eqJoo/s1600/chrome-0day.jpg",
-   "cves": [
-    "CVE-2026-125350"
-   ],
-   "first_seen": "2026-11-10T08:19:37.503691+00:00",
-   "instructions": [
-    "Users of other Chromium-based browsers, such as Microsoft Edge, Brave, Opera, and Vivaldi, are also advised to apply the fixes as and when they become available.",
-    "For optimal protection, users are advised to update their Chrome browser to versions 157.0.8103.50/.51 for Windows and Apple macOS, and 157.0.8103.50 for Linux.",
-    "Google on Monday released updates to patch nine security vulnerabilities, including one that has come under active exploitation in the wild."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "9398616ade4d",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -4167,6 +4145,27 @@
    "instructions": [
     "A second variant of the PowerShell script attempts to install OpenSSH and creates a scheduled task named \"WinUpdCheck\" that launches a PowerShell reverse shell written to \"C:\\ProgramData\\ssh\\winc.ps1\" at five-minute intervals.",
     "\"If sshd remained unavailable, it downloaded OpenSSH-Win64.zip from the staging server, extracted it, and ran install-sshd.ps1,\" Cynet said."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "50868e3a64c2",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Hijacked Optimizely Scripts Served Card Skimmer and iOS Exploit Kits to CNN, BBC and Zoom Visitors",
+   "link": "https://thehackernews.com/2026/11/hijacked-optimizely-scripts-served-card.html",
+   "published": "2026-11-17T07:12:13+00:00",
+   "summary": "An attacker exploited a flaw in Optimizely Web Experimentation to plant malicious code in some of the scripts that customers' websites load from the service, Optimizely said early today. Visitors to sites run by at least 178 organizations, including CNN, the BBC and Zoom, received the code yesterday, according to…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCKDXT71QJSnAqaPKmcBticVRjN0Q1diDWoOGKhoZ-wL5WIgLAPHX6dmetOkddYjLcZGIfxDAfLLN1LwbOV4zHqzONN7i8cIyMJLR-rc2t6LF7MnTzJAAoN54aIPEYoWPBf01znenuq43oDLwcVksxZbvP5xPnFsC-G-sDSjpzDegalBNU87YIe7z0YcI/s1600/Optimizely-hacked.jpg",
+   "cves": [],
+   "first_seen": "2026-11-17T08:02:17.560834+00:00",
+   "instructions": [
+    "The notice does not say how the flaw worked, how many projects were changed, when the fix went in, whether the attacker still has any access, or what customers should do.",
+    "Report URI recommends these checks for sites that use Optimizely Web Experimentation:",
+    "For anyone who visited an affected site on Monday, the firm advises:",
+    "Cynet treats cdn.optimizely.com as a legitimate delivery host rather than an indicator, and it advises against broad blocks of that host or of the affected news sites."
    ],
    "instructions_checked": true
   },
@@ -5906,6 +5905,23 @@
    "instructions_checked": true
   },
   {
+   "id": "d51a92f2bc9a",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Ransomware affiliate suspect extradited to US, faces 27 years in prison",
+   "link": "https://www.bleepingcomputer.com/news/security/alleged-inc-lynx-ransomware-affiliate-extradited-to-us-faces-27-years-in-prison/",
+   "published": "2026-11-17T07:25:44+00:00",
+   "summary": "A Kazakh national has been extradited from Italy to face charges alleging he targeted US schools, hospitals, and healthcare entities in ransomware attacks.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/01/28/Hacker-typing.jpg",
+   "cves": [],
+   "first_seen": "2026-11-17T08:02:17.560834+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "fac8887887ba",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -6243,27 +6259,6 @@
     "\"ARTEX significantly reduces the time required to chain attack techniques, with some intrusions progressing from initial targeting to privileged access in under three hours,\" reads the FBI advisory.",
     "The FBI's 13-page advisory includes indicators of compromise associated with known ARTEX campaigns, including IP addresses, command-and-control infrastructure, and suspicious network activity.",
     "The bureau also recommends monitoring for unusual bursts of automated requests, suspicious cloud activity, unexpected credential or privilege changes, and large data transfers."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "7d2482c88528",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Fireworks AI discloses new breach after cloud provider hack",
-   "link": "https://www.bleepingcomputer.com/news/security/fireworks-ai-discloses-new-breach-after-cloud-provider-hack/",
-   "published": "2026-11-10T07:49:58+00:00",
-   "summary": "AI infrastructure startup Fireworks has disclosed a new security breach in which attackers accessed its development machines after breaching a third-party cloud provider.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/10/Fireworks-headpic.jpg",
-   "cves": [],
-   "first_seen": "2026-11-10T08:19:37.503691+00:00",
-   "image_checked": true,
-   "instructions": [
-    "On October 24, the unauthorized third party used it to reach Fireworks development machines and then run an unauthorized workload that led to additional customer data impact,\" Fireworks noted in a Monday advisory.",
-    "Since the attack, Fireworks revoked and replaced credentials and service accounts, restricted unauthorized network pathways, isolated affected systems, and tightened access to data storage and analytics systems to block public or unauthorized access to stored data.",
-    "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
    ],
    "instructions_checked": true
   },
@@ -8040,26 +8035,6 @@
     "Fortinet on Tuesday dropped 89 new security advisories that address nearly 100 vulnerabilities across its products.",
     "ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure",
     "Chipmaker Patch Tuesday: Over 200 Vulnerabilities Addressed by Intel, AMD",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "694928bcf42d",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "France Blames Iran for a Cyberattack That Heated Supermarket Refrigerators",
-   "link": "https://www.securityweek.com/france-blames-iran-for-a-cyberattack-that-heated-supermarket-refrigerators/",
-   "published": "2026-11-10T07:35:05+00:00",
-   "summary": "France summoned the Iranian ambassador and said it would seek European sanctions against those responsible for the attack The post France Blames Iran for a Cyberattack That Heated Supermarket Refrigerators appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/03/Irianian-cyberattacks-hacks.jpg",
-   "cves": [],
-   "first_seen": "2026-11-10T08:19:37.503691+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Chrome Update Patches Exploited XML Zero-Day, Eighth This Year",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
