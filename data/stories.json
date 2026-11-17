@@ -508,6 +508,27 @@
    "instructions_checked": true
   },
   {
+   "id": "f2cd3341b495",
+   "source": "google-threat-intel",
+   "source_name": "Google Threat Intelligence",
+   "official": false,
+   "source_type": "vendor_blog",
+   "title": "COLD RELIC: A Case Study in Impersonation and Compromise",
+   "link": "https://cloud.google.com/blog/topics/threat-intelligence/cold-relic-a-case-study-in-impersonation-and-compromise/",
+   "published": "2026-11-17T14:00:00+00:00",
+   "summary": "Written by: Josh Murchie, John Wolfram, Joseph Spero, Peter Ukhanov, Fernando Tomlinson, Jr., Wesley Shields Introduction Over the past year, Mandiant has responded to a series of linked intrusions demonstrating how Russian cyber espionage group COLD RELIC (formerly tracked as COLDRIVER and UNC4057; also known as Star…",
+   "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/Figure_2_Redacted_LLM-generated_depiction_.max-1000x1000.png",
+   "cves": [],
+   "first_seen": "2026-11-17T17:27:15.638658+00:00",
+   "instructions": [
+    "GTIG recommends enriching authentication logs with residential proxy and VPN IP reputation feeds, alerting on sudden residential ASN shifts for privileged accounts, and applying conditional access policies to block or detect logons from known proxy networks.",
+    "Organizations should implement the following recommendations:",
+    "This provides COLD RELIC with a layer of misdirection and hides their phishing domains, while also giving them a chance to fingerprint anyone visiting the link to determine if they should be redirected or not.",
+    "Their ability to navigate across multiple cloud ecosystems highlights that organizations must defend their entire identity estate holistically."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "453a571c3295",
    "source": "grahamcluley",
    "source_name": "Graham Cluley",
@@ -601,6 +622,25 @@
     "CVE-2026-108401"
    ],
    "first_seen": "2026-11-13T18:11:27.621519+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "7ae1f997bee0",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-108440 Microsoft Office Word Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108440",
+   "published": "2026-11-17T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-108440"
+   ],
+   "first_seen": "2026-11-17T17:27:15.638658+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -1195,6 +1235,44 @@
    "instructions_checked": true
   },
   {
+   "id": "8412ea96e2ce",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-119914 Windows Setup and Deployment Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119914",
+   "published": "2026-11-17T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-119914"
+   ],
+   "first_seen": "2026-11-17T17:27:15.638658+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "48c8134ead4a",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-119961 Windows Internet Information Services Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119961",
+   "published": "2026-11-17T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-119961"
+   ],
+   "first_seen": "2026-11-17T17:27:15.638658+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "0874ef4142ee",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -1288,6 +1366,25 @@
    "instructions": [],
    "instructions_checked": true,
    "image_checked": true
+  },
+  {
+   "id": "a003f891fd75",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-121680 Windows NTLM Spoofing Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-121680",
+   "published": "2026-11-17T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-121680"
+   ],
+   "first_seen": "2026-11-17T17:27:15.638658+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "b51465391ef6",
@@ -1632,6 +1729,82 @@
    "image_checked": true
   },
   {
+   "id": "baf7646f34f2",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-40400 Windows PowerShell Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40400",
+   "published": "2026-11-17T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-40400"
+   ],
+   "first_seen": "2026-11-17T17:27:15.638658+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "f8bab8d195b5",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-70278 Microsoft Windows Media Foundation Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70278",
+   "published": "2026-11-17T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-70278"
+   ],
+   "first_seen": "2026-11-17T17:27:15.638658+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "424351e23120",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-78524 Microsoft Office Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78524",
+   "published": "2026-11-17T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-78524"
+   ],
+   "first_seen": "2026-11-17T17:27:15.638658+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "112cf26ea63a",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-88208 Microsoft Office SharePoint Spoofing Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88208",
+   "published": "2026-11-17T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-88208"
+   ],
+   "first_seen": "2026-11-17T17:27:15.638658+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "20b9366d21f0",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -1817,6 +1990,25 @@
     "CVE-2026-96150"
    ],
    "first_seen": "2026-11-13T23:05:37.437281+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "97009cc4e26d",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-96251 Microsoft PowerShell Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96251",
+   "published": "2026-11-17T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-96251"
+   ],
+   "first_seen": "2026-11-17T17:27:15.638658+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -3041,6 +3233,23 @@
    "instructions_checked": true
   },
   {
+   "id": "7e0cfef95a8a",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "California fines Hertz $1.5 million for breaking state data privacy law",
+   "link": "https://therecord.media/california-fines-hertz-state-data-privacy-law",
+   "published": "2026-11-17T17:13:00+00:00",
+   "summary": "Hertz agreed to the fine and said it would change its business practices, according to a court filing shared by the regulator, the California Privacy Protection Agency (CPPA).",
+   "image": "https://cms.therecord.media/uploads/hertz_5598ef5477.jpg",
+   "cves": [],
+   "first_seen": "2026-11-17T17:27:15.638658+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "a9e375444363",
    "source": "therecord",
    "source_name": "The Record",
@@ -3280,6 +3489,25 @@
     "“Recommending Yandex to people attending NATO’s biggest industry conference is a serious mistake,” said Erik Kursetgjerde, an attendee and doctoral research fellow studying critical digital infrastructure at the University of Inland Norway.",
     "A NATO official told Recorded Future News: “In an oversight, the event team responsible for NATO Edge 26 sent an email to conference participants that recommended the use of Yandex Go for local transport.",
     "Kursetgjerde credited the organizers for acting quickly. “But it should never have been sent,” he said. “Where NATO staff and defense suppliers stay and how they move is exactly what an adversary wants to know.”"
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "bb59c1759a0e",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "NSA Net, agency’s classified internal network, faces unspecified disruptions",
+   "link": "https://therecord.media/nsa-net-disruptions",
+   "published": "2026-11-17T16:21:00+00:00",
+   "summary": "The NSA has ordered staggered arrivals at its headquarters at Fort Meade, Maryland, as technicians work to fully restore the classified internal network NSA Net.",
+   "image": "https://cms.therecord.media/uploads/ave_calvar_8_8xu_Jp8_M_unsplash_6f3e8537f6.jpg",
+   "cves": [],
+   "first_seen": "2026-11-17T17:27:15.638658+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Though some hackers claimed they had crashed the site with a denial of service attack, officials said it was the result of a scheduled update."
    ],
    "instructions_checked": true
   },
@@ -4920,7 +5148,8 @@
     "Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
     "BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied."
    ],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "0b6d9bcd8811",
@@ -6584,27 +6813,6 @@
    "instructions_checked": true
   },
   {
-   "id": "38532208b5af",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Google Widens Gemini 4 Carbon Access After AI Agents Verify Signal Code",
-   "link": "https://www.securityweek.com/google-widens-gemini-4-carbon-access-after-ai-agents-verify-signal-code/",
-   "published": "2026-11-10T16:42:02+00:00",
-   "summary": "Google opened Carbon to paying developers and businesses as DeepMind used agents built on it to prove libsignal security guarantees. The post Google Widens Gemini 4 Carbon Access After AI Agents Verify Signal Code appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/10/Signal-telegram-messaging.jpeg",
-   "cves": [],
-   "first_seen": "2026-11-10T17:31:22.719330+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Introductory rates of $2/$10 per million input/output tokens apply until November 30, then double.",
-    "Chrome Update Patches Exploited XML Zero-Day, Eighth This Year",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "b8a4eb8ff314",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -7179,28 +7387,6 @@
     "ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure",
     "Chipmaker Patch Tuesday: Over 200 Vulnerabilities Addressed by Intel, AMD",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "cc845d87e813",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Software Transparency Is Changing: Allan Friedman on SBOM, AI BOMs and What Comes Next",
-   "link": "https://www.securityweek.com/software-transparency-is-changing-allan-friedman-on-sbom-ai-boms-and-what-comes-next/",
-   "published": "2026-11-10T16:45:00+00:00",
-   "summary": "SBOM pioneer Allan Friedman joined the SecurityWeek Podcast to discuss why knowing what is inside software is only the beginning, how AI is complicating software supply chain visibility, and what organizations should be doing with SBOM data once they have it. The post Software Transparency Is Changing: Allan Friedman…",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/11/Allan-Friedman_SBOM-Podcast.jpg",
-   "cves": [],
-   "first_seen": "2026-11-10T17:31:22.719330+00:00",
-   "image_checked": true,
-   "instructions": [
-    "SBOM Is About Response, Not Just Inventory Much of the early SBOM conversation focused on whether vendors could generate the documents and whether customers should require them.",
-    "The objective, however, should ultimately be deeper integration.",
-    "Transparency Should Favor the Defender Resistance to SBOM adoption has often centered on concerns about intellectual property and the possibility that providing detailed information about software components could benefit attackers.",
-    "Organizations should be able to understand what their systems depend on, correlate that information with emerging threats and vulnerabilities, determine where actual exposure exists and make risk decisions quickly enough to matter."
    ],
    "instructions_checked": true
   },
