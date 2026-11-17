@@ -1,6 +1,16 @@
 {
  "stories": [
   {
+   "id": "6ad116b5c12b",
+   "title": "MSP ScreenConnect Servers Targeted in Month-Long Campaign",
+   "summary": "More than 40 servers received over 688,000 requests exploiting CVE-2026-84869 to execute guest-pushed files. The post MSP ScreenConnect Servers Targeted in Month-Long…",
+   "priority": "Critical",
+   "category": "Patch Radar",
+   "date": "17 Nov 2026, 13:24 UTC",
+   "sources": "SecurityWeek, Microsoft Security Blog, The Hacker News",
+   "url": "story/6ad116b5c12b.html"
+  },
+  {
    "id": "f67825a82ae8",
    "title": "Recent UnrealIRCd Vulnerability Exploited in Attacks",
    "summary": "Tracked as CVE-2026-114713, the high-severity flaw allows attackers to execute commands with server/IRCOp privileges. The post Recent UnrealIRCd Vulnerability Exploited…",
@@ -9,16 +19,6 @@
    "date": "16 Nov 2026, 11:15 UTC",
    "sources": "SecurityWeek, The Hacker News",
    "url": "story/f67825a82ae8.html"
-  },
-  {
-   "id": "78498214505c",
-   "title": "SCKit abuses ScreenConnect to deploy remote access and target technician sessions",
-   "summary": "Beginning on November 11, 2026, ConnectWise reported an active campaign of a threat actor gaining unauthorized access to cloud-hosted ConnectWise ScreenConnect instances…",
-   "priority": "Critical",
-   "category": "Patch Radar",
-   "date": "13 Nov 2026, 21:31 UTC",
-   "sources": "Microsoft Security Blog, The Hacker News",
-   "url": "story/78498214505c.html"
   },
   {
    "id": "474586429e7c",
@@ -51,16 +51,6 @@
    "url": "story/7d141681ccc2.html"
   },
   {
-   "id": "b5e1ece521f3",
-   "title": "GTIG AI Threat Tracker: Agentic Threat Activity Crosses a Significant Threshold",
-   "summary": "Written by: Aurora Blum, Kelli Vanderlee, Jess Xia, David Mainor Executive Summary As threat actors increasingly move beyond basic prompting to deploying autonomous…",
-   "priority": "Critical",
-   "category": "AI Risk Lab",
-   "date": "16 Nov 2026, 14:00 UTC",
-   "sources": "Google Threat Intelligence",
-   "url": "story/b5e1ece521f3.html"
-  },
-  {
    "id": "c84faf9461ad",
    "title": "CVE-2026-111497 Google: CVE-2026-111497 Buffer overflow vulnerability in the Brotli decoder",
    "summary": "Updated the Security Updates table to include affected Windows versions and the applicable November 2026 security updates. Microsoft recommends that customers install…",
@@ -79,6 +69,16 @@
    "date": "10 Nov 2026, 22:26 UTC",
    "sources": "Dark Reading",
    "url": "story/95f883361cdc.html"
+  },
+  {
+   "id": "b5e1ece521f3",
+   "title": "GTIG AI Threat Tracker: Agentic Threat Activity Crosses a Significant Threshold",
+   "summary": "Written by: Aurora Blum, Kelli Vanderlee, Jess Xia, David Mainor Executive Summary As threat actors increasingly move beyond basic prompting to deploying autonomous…",
+   "priority": "Critical",
+   "category": "AI Risk Lab",
+   "date": "16 Nov 2026, 14:00 UTC",
+   "sources": "Google Threat Intelligence",
+   "url": "story/b5e1ece521f3.html"
   },
   {
    "id": "3ad387c63ed5",
@@ -219,16 +219,6 @@
    "date": "16 Nov 2026, 15:13 UTC",
    "sources": "Born's IT and Windows Blog",
    "url": "story/6db60cdc6268.html"
-  },
-  {
-   "id": "f9828b77234b",
-   "title": "⚡ Weekly Recap: N-able 0-Days, Windows 0-Days, Chrome 0-Days, Fridge 0-Days, and More Bad Days",
-   "summary": "A default password opened doors it never should have. A trusted update delivered malware. Even a security feature became a way to break in. Different stories, same…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "16 Nov 2026, 13:27 UTC",
-   "sources": "The Hacker News",
-   "url": "story/f9828b77234b.html"
   },
   {
    "id": "bbb8a6727085",
@@ -401,14 +391,14 @@
    "url": "story/d29e040f4044.html"
   },
   {
-   "id": "81c7c458d757",
-   "title": "Lithuanian customs agency restores services after cyberattack, possible data breach",
-   "summary": "A November 10 attack prompted Lithuanian Customs to temporarily shut down its main user management portal. It made progress on fixing the problem over the weekend.",
+   "id": "f9828b77234b",
+   "title": "⚡ Weekly Recap: N-able 0-Days, Windows 0-Days, Chrome 0-Days, Fridge 0-Days, and More Bad Days",
+   "summary": "A default password opened doors it never should have. A trusted update delivered malware. Even a security feature became a way to break in. Different stories, same…",
    "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "16 Nov 2026, 14:06 UTC",
-   "sources": "The Record",
-   "url": "story/81c7c458d757.html"
+   "category": "Patch Radar",
+   "date": "16 Nov 2026, 13:27 UTC",
+   "sources": "The Hacker News",
+   "url": "story/f9828b77234b.html"
   },
   {
    "id": "c3cb9f990617",
@@ -499,6 +489,26 @@
    "date": "10 Nov 2026, 21:01 UTC",
    "sources": "Dark Reading",
    "url": "story/c9d200a425c2.html"
+  },
+  {
+   "id": "0e789c02d673",
+   "title": "Grok Bot took unapproved actions, ignored orders to stop, and then denied it",
+   "summary": "Researchers recently discovered unexpected behavior from Grok Bot, the AI agent platform from Elon Musk’s SpaceXSI. Over five days, Grok bots installed on two separate…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "17 Nov 2026, 14:00 UTC",
+   "sources": "Ars Technica Security",
+   "url": "story/0e789c02d673.html"
+  },
+  {
+   "id": "867dfe7c9cd6",
+   "title": "PreTxt Emerges Stealth with $5M Seed and an AI Supervision Tool",
+   "summary": "PreTxt provides technology to prevent AI agents escaping their guardrails and causing unintended harm. The post PreTxt Emerges Stealth with $5M Seed and an AI…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "17 Nov 2026, 14:00 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/867dfe7c9cd6.html"
   },
   {
    "id": "f61744a14eda",
@@ -631,24 +641,14 @@
    "url": "story/1cea14202697.html"
   },
   {
-   "id": "5adf36e942de",
-   "title": "Google Finds Hackers Using AI Agents to Build and Run Exploits From Software Patches",
-   "summary": "Google on Monday revealed that adversarial use of artificial intelligence (AI) by threat actors has gone beyond manual prompting to deploying autonomous multi-agent…",
+   "id": "81c7c458d757",
+   "title": "Lithuanian customs agency restores services after cyberattack, possible data breach",
+   "summary": "A November 10 attack prompted Lithuanian Customs to temporarily shut down its main user management portal. It made progress on fixing the problem over the weekend.",
    "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "16 Nov 2026, 14:00 UTC",
-   "sources": "The Hacker News",
-   "url": "story/5adf36e942de.html"
-  },
-  {
-   "id": "2e40619c86da",
-   "title": "Google warns that fully-automated AI attacks are coming soon",
-   "summary": "Threat actors are now relying on agentic workflows powered by AI-based offensive frameworks to automate vulnerability discovery and exploitation, accelerating attacks to…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "16 Nov 2026, 14:00 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/2e40619c86da.html"
+   "category": "Attacks & Breaches",
+   "date": "16 Nov 2026, 14:06 UTC",
+   "sources": "The Record",
+   "url": "story/81c7c458d757.html"
   },
   {
    "id": "a1dd8f56b81d",
@@ -1151,6 +1151,36 @@
    "url": "story/7646e96e2e7b.html"
   },
   {
+   "id": "ff4ecbca8eac",
+   "title": "Fandango Warns Ticket Buyers of Payment Card Data Exposure",
+   "summary": "Card numbers, CVVs, expiration dates, and email addresses used at Fandango’s ticketing checkout over four days in October may have been exposed. The post Fandango Warns…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "17 Nov 2026, 14:14 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/ff4ecbca8eac.html"
+  },
+  {
+   "id": "3dd23ca798a1",
+   "title": "Autistic teen hacker pleads guilty to leak of Grand Theft Auto VI footage",
+   "summary": "Now 21, Artion Kurtaj pleaded guilty to a 2022 spree that included leaking clips of Grand Theft Auto VI while it was still years away from release.",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "17 Nov 2026, 14:09 UTC",
+   "sources": "The Record",
+   "url": "story/3dd23ca798a1.html"
+  },
+  {
+   "id": "69b76f0fd14e",
+   "title": "NIST Finalizes Post-Quantum Cryptography Guidance, GAO Offers a Reality Check",
+   "summary": "The emerging technology will soon break the \"lock and key\" encryption currently protecting sensitive data. A new GAO report shows agencies are behind on building their…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "17 Nov 2026, 13:22 UTC",
+   "sources": "Dark Reading",
+   "url": "story/69b76f0fd14e.html"
+  },
+  {
    "id": "d8ca9cff94be",
    "title": "Corma Receives $125 Million to Train Foundation Models for Defensive Cybersecurity",
    "summary": "Led by NEA and supported by existing investors, the funding brings the company’s valuation to $1 billion. The post Corma Receives $125 Million to Train Foundation Models…",
@@ -1321,24 +1351,24 @@
    "url": "story/eea617c7ce17.html"
   },
   {
-   "id": "96e4cedac8bf",
-   "title": "British government ‘complacent’ on cyber threats from hostile states, peers warn",
-   "summary": "The National Resilience Committee’s report, published eight days before a major vote on Britain’s landmark Cyber Security and Resilience Bill, warns that the legislation…",
+   "id": "5adf36e942de",
+   "title": "Google Finds Hackers Using AI Agents to Build and Run Exploits From Software Patches",
+   "summary": "Google on Monday revealed that adversarial use of artificial intelligence (AI) by threat actors has gone beyond manual prompting to deploying autonomous multi-agent…",
    "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "16 Nov 2026, 14:21 UTC",
-   "sources": "The Record",
-   "url": "story/96e4cedac8bf.html"
+   "category": "Patch Radar",
+   "date": "16 Nov 2026, 14:00 UTC",
+   "sources": "The Hacker News",
+   "url": "story/5adf36e942de.html"
   },
   {
-   "id": "b360f2c4a357",
-   "title": "EU sanctions pro-Russia hackers, two dozen staff at Kremlin disinformation contractor",
-   "summary": "The European Union sanctioned a pro-Russian hacktivist group and two dozen employees of the Moscow firm behind the Doppelgänger disinformation campaign.",
+   "id": "2e40619c86da",
+   "title": "Google warns that fully-automated AI attacks are coming soon",
+   "summary": "Threat actors are now relying on agentic workflows powered by AI-based offensive frameworks to automate vulnerability discovery and exploitation, accelerating attacks to…",
    "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "16 Nov 2026, 14:15 UTC",
-   "sources": "The Record",
-   "url": "story/b360f2c4a357.html"
+   "category": "AI Risk Lab",
+   "date": "16 Nov 2026, 14:00 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/2e40619c86da.html"
   },
   {
    "id": "f159cf23a7b2",
@@ -1871,6 +1901,26 @@
    "url": "story/c1d47a910d2a.html"
   },
   {
+   "id": "96e4cedac8bf",
+   "title": "British government ‘complacent’ on cyber threats from hostile states, peers warn",
+   "summary": "The National Resilience Committee’s report, published eight days before a major vote on Britain’s landmark Cyber Security and Resilience Bill, warns that the legislation…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "16 Nov 2026, 14:21 UTC",
+   "sources": "The Record",
+   "url": "story/96e4cedac8bf.html"
+  },
+  {
+   "id": "b360f2c4a357",
+   "title": "EU sanctions pro-Russia hackers, two dozen staff at Kremlin disinformation contractor",
+   "summary": "The European Union sanctioned a pro-Russian hacktivist group and two dozen employees of the Moscow firm behind the Doppelgänger disinformation campaign.",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "16 Nov 2026, 14:15 UTC",
+   "sources": "The Record",
+   "url": "story/b360f2c4a357.html"
+  },
+  {
    "id": "79abf73e84bb",
    "title": "Telegram Widgets Hit by RCE Demos, Malware Warning Days After Launch",
    "summary": "Kaspersky suspects exploitation of Telegram’s new widgets to deliver WebRAT, as researchers demo RCE and Pavel Durov disputes the claims. The post Telegram Widgets Hit…",
@@ -1969,6 +2019,16 @@
    "date": "16 Nov 2026, 06:53 UTC",
    "sources": "The Hacker News",
    "url": "story/1a13d7025b37.html"
+  },
+  {
+   "id": "2cf87a19124d",
+   "title": "As Test Takers Turn to AI, Exam Security Plays Catch-Up",
+   "summary": "It's hard to detect whether someone is using artificial intelligence (AI) to cheat on IT certification exams, but new tools and processes are emerging to boost trust.",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "13 Nov 2026, 22:27 UTC",
+   "sources": "Dark Reading",
+   "url": "story/2cf87a19124d.html"
   },
   {
    "id": "e12779d5806a",
@@ -2139,16 +2199,6 @@
    "date": "11 Nov 2026, 21:20 UTC",
    "sources": "Dark Reading",
    "url": "story/c5c797f8dc87.html"
-  },
-  {
-   "id": "2cf87a19124d",
-   "title": "As Test Takers Turn to AI for Answers, Exam Security Must Catch Up",
-   "summary": "It's hard to detect whether someone is using artificial intelligence (AI) to cheat on IT certification exams, but new tools and processes are emerging to boost trust.",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "11 Nov 2026, 20:27 UTC",
-   "sources": "Dark Reading",
-   "url": "story/2cf87a19124d.html"
   },
   {
    "id": "cdc2cd16c5c3",
@@ -3059,16 +3109,6 @@
    "date": "10 Nov 2026, 14:31 UTC",
    "sources": "The Record",
    "url": "story/f00273d9e0a7.html"
-  },
-  {
-   "id": "e7a8a4d2bbbe",
-   "title": "Over a Dozen Organizations Hit in Qubole Supply Chain Attack",
-   "summary": "Hackers used compromised Qubole IAM credentials to steal customer files, secrets, keys, environment variables, and credentials. The post Over a Dozen Organizations Hit…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "10 Nov 2026, 13:27 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/e7a8a4d2bbbe.html"
   }
  ]
 }
