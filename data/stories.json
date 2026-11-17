@@ -3627,6 +3627,26 @@
    "instructions_checked": true
   },
   {
+   "id": "cb74b2746cc6",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Apple Tightens macOS App Permissions to Limit Data Access Amid AI Agent Security Risks",
+   "link": "https://thehackernews.com/2026/11/apple-tightens-macos-app-permissions-to.html",
+   "published": "2026-11-17T11:07:31+00:00",
+   "summary": "Apple on Monday introduced new controls that allow Mac users to give more granular access to data they give to apps, including those that use artificial intelligence (AI) agents. The changes, currently previewed in macOS 27.3 beta 2, relate to increased transparency and more options for two of its APIs: Device Control…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpfVz_pnzHGcrDTsga77xG6yDhi_sMihXsGCjULyapjweerWHdHByPuWqWYmWQsDAAV37EfmctWtSZgYCHJ-2FMGEE6K94YRDVFjHVO0i1jZxn-TIewKbDqIn3y-pNMH7pqJ9SA1X2Sk_r_vn_SfRdxbPB2kH9-hHkNrigumGuQKXaA6xlHqCdWu4ZDAFH/s1600/apple-macos.jpg",
+   "cves": [],
+   "first_seen": "2026-11-17T11:54:35.382479+00:00",
+   "instructions": [
+    "\"Before granting an app such extraordinary access, users should understand that it puts all of the data on their Mac at risk,\" Apple said in a statement.",
+    "Apple stressed that app permissions previously granted by users will remain intact, adding that developers should be prepared to make changes to their onboarding workflows to ensure their apps can handle scenarios where access is granted to only a limited set of folders or apps via these APIs.",
+    "An option for users to configure apps to ask every time they require access"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "0eb55bf1598e",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -3665,24 +3685,6 @@
    "instructions": [
     "\"Hopefully everyone has hot-patched or updated their server, or at the very least has the spamfilter workaround deployed.",
     "Federal Civilian Executive Branch (FCEB) agencies have time until November 16, 2026, to apply the fixes under Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "3badf33b9e63",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Beyond the Alert: The Case for Rich Network Data",
-   "link": "https://thehackernews.com/2026/11/beyond-alert-case-for-rich-network-data.html",
-   "published": "2026-11-10T11:38:13+00:00",
-   "summary": "At some point your security will fail. This isn’t pessimism. It’s not because your team and tools aren’t sophisticated enough. It’s the reason we have detections in the first place. And, it’s why once we accept that prevention has its limits, we arrive at an interdiction strategy: finding and disrupting what got in…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2keP-LKMaj66fcb6TF9mNwdN01ndHv16r6WcnXbXwTwCNvUJXDxuyG_WacuYRt2DNFA7Fy_Hb4cyDvXeRsWrUWrql4RyMK4dD9s2adlVOnPWyR04wDmPu5jUlZL3-kGiDgPY2NU8yptKV1o21Wsuyu6IOSxico18zjLqDNLoA1bkl_DheKZevChrO6ZE/s1600/Corelights.jpg",
-   "cves": [],
-   "first_seen": "2026-11-10T12:10:45.844226+00:00",
-   "instructions": [
-    "Corelight network detection and response (NDR) delivers data that’s open, transparent, and explainable—helping detect evasive threats, reduce triage time, and enable agentic AI throughout the SOC."
    ],
    "instructions_checked": true
   },
@@ -4203,6 +4205,24 @@
     "Customers running on-premise N-central deployments should upgrade their servers as soon as possible to keep their environments protected.",
     "\"All customers, hosted and on-premise, must upgrade all of their Agents and Probes to the latest version to be fully protected,\" N-able cautioned.",
     "Independent security researcher Sean Bales, who disclosed the flaws, has published additional details for 24 CVEs , stating \"these are patched vulnerabilities and should not work on the latest patch.\""
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "5e43b1695ab6",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "New GitDoor and GraphDoor Backdoors Turn GitHub and SharePoint Into Covert C2 Channels",
+   "link": "https://thehackernews.com/2026/11/new-gitdoor-and-graphdoor-backdoors.html",
+   "published": "2026-11-17T11:20:18+00:00",
+   "summary": "Government sectors in Asia and Africa have been targeted by an active cyber intrusion campaign that delivers to previously undocumented backdoors that leverage legitimate services like Microsoft SharePoint and GitHub for command‑and‑control (C2). The activity has been codenamed Operation ShadowCloud by Kaspersky. The…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhGYnRRqAfAZ2q0dS56dC5lC86Kx69VT0moHy1Pxt67C0ic8RbLOL9LR68b4atQmvb7O6Gq3Btm1axv2aCRaNkhagPKbFHvThWlye3QPpK1xnEj4kovoJn8dsbTlCmAjXOIb8EHV3RJuhNQdVNKRxc4uwiuIfws_a63koiBaCQvs5jwbnTFG8EUwuA0RiA/s1600/git-share.jpg",
+   "cves": [],
+   "first_seen": "2026-11-17T11:54:35.382479+00:00",
+   "instructions": [
+    "The modular backdoors, dubbed GraphDoor and GitDoor for their choice of the cloud platform used for C2, enable the download of additional plugins on demand and the execution of shellcode directly in memory to extend their functionality."
    ],
    "instructions_checked": true
   },
@@ -5733,6 +5753,27 @@
     "This week, Microsoft also confirmed that this month's Patch Tuesday security updates trigger Windows activation and licensing failures with 0x80041008 error codes and that Windows updates released since the October Patch Tuesday cause SQL Server performance and stability issues .",
     "Additionally, the company warned that the November 2026 Windows 11 security updates fail to install on systems with the October 2026 preview update.",
     "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day"
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "1dc4676c8263",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Microsoft testing Remote Lock for lost or stolen Windows devices",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-testing-remote-lock-for-lost-or-stolen-windows-devices/",
+   "published": "2026-11-17T11:19:51+00:00",
+   "summary": "Microsoft is testing a new feature that lets enterprise IT administrators remotely lock stolen or lost Windows devices without wiping them.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/17/Windows-Remote_Lock.jpg",
+   "cves": [],
+   "first_seen": "2026-11-17T11:54:35.382479+00:00",
+   "image_checked": true,
+   "instructions": [
+    "To do that, admins must use the device isolation and wipe controls in Intune.",
+    "However, users must keep BitLocker enabled to protect their data if the device is reimaged or the drive is removed because the Windows Recovery Environment, Safe Mode, and booting from USB or other media are not blocked.",
+    "These new features allow admins to configure enterprise settings such as always-required user verification, minimum PIN length, and enterprise attestation."
    ],
    "instructions_checked": true
   },

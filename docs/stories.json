@@ -1,16 +1,6 @@
 {
  "stories": [
   {
-   "id": "f67825a82ae8",
-   "title": "Recent UnrealIRCd Vulnerability Exploited in Attacks",
-   "summary": "Tracked as CVE-2026-114713, the high-severity flaw allows attackers to execute commands with server/IRCOp privileges. The post Recent UnrealIRCd Vulnerability Exploited…",
-   "priority": "Critical",
-   "category": "Patch Radar",
-   "date": "16 Nov 2026, 11:15 UTC",
-   "sources": "SecurityWeek, The Hacker News",
-   "url": "story/f67825a82ae8.html"
-  },
-  {
    "id": "474586429e7c",
    "title": "CISA flags Cisco BroadWorks flaw as actively exploited in attacks",
    "summary": "The US Cybersecurity and Infrastructure Security Agency (CISA) warned on Tuesday that hackers are now exploiting a high-severity Cisco BroadWorks vulnerability in…",
@@ -19,6 +9,16 @@
    "date": "11 Nov 2026, 10:12 UTC",
    "sources": "BleepingComputer, The Hacker News, CISA Cybersecurity Advisories",
    "url": "story/474586429e7c.html"
+  },
+  {
+   "id": "f67825a82ae8",
+   "title": "Recent UnrealIRCd Vulnerability Exploited in Attacks",
+   "summary": "Tracked as CVE-2026-114713, the high-severity flaw allows attackers to execute commands with server/IRCOp privileges. The post Recent UnrealIRCd Vulnerability Exploited…",
+   "priority": "Critical",
+   "category": "Patch Radar",
+   "date": "16 Nov 2026, 11:15 UTC",
+   "sources": "SecurityWeek, The Hacker News",
+   "url": "story/f67825a82ae8.html"
   },
   {
    "id": "78498214505c",
@@ -149,6 +149,16 @@
    "date": "10 Nov 2026, 16:17 UTC",
    "sources": "BleepingComputer",
    "url": "story/82b5e1a648c0.html"
+  },
+  {
+   "id": "5e43b1695ab6",
+   "title": "New GitDoor and GraphDoor Backdoors Turn GitHub and SharePoint Into Covert C2 Channels",
+   "summary": "Government sectors in Asia and Africa have been targeted by an active cyber intrusion campaign that delivers to previously undocumented backdoors that leverage…",
+   "priority": "Standard",
+   "category": "Microsoft",
+   "date": "17 Nov 2026, 11:20 UTC",
+   "sources": "The Hacker News",
+   "url": "story/5e43b1695ab6.html"
   },
   {
    "id": "9899fc2c80e3",
@@ -299,6 +309,16 @@
    "date": "18 Nov 2026, 01:20 UTC",
    "sources": "The Record",
    "url": "story/9409189d8358.html"
+  },
+  {
+   "id": "1dc4676c8263",
+   "title": "Microsoft testing Remote Lock for lost or stolen Windows devices",
+   "summary": "Microsoft is testing a new feature that lets enterprise IT administrators remotely lock stolen or lost Windows devices without wiping them.",
+   "priority": "Standard",
+   "category": "Microsoft",
+   "date": "17 Nov 2026, 11:19 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/1dc4676c8263.html"
   },
   {
    "id": "d51a92f2bc9a",
@@ -479,6 +499,16 @@
    "date": "10 Nov 2026, 21:01 UTC",
    "sources": "Dark Reading",
    "url": "story/c9d200a425c2.html"
+  },
+  {
+   "id": "cb74b2746cc6",
+   "title": "Apple Tightens macOS App Permissions to Limit Data Access Amid AI Agent Security Risks",
+   "summary": "Apple on Monday introduced new controls that allow Mac users to give more granular access to data they give to apps, including those that use artificial intelligence…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "17 Nov 2026, 11:07 UTC",
+   "sources": "The Hacker News",
+   "url": "story/cb74b2746cc6.html"
   },
   {
    "id": "e5f38235f326",
@@ -1291,26 +1321,6 @@
    "url": "story/78086d8dacc9.html"
   },
   {
-   "id": "7a50b6f63907",
-   "title": "Australian retail giant Coles investigates cybersecurity incident",
-   "summary": "Coles Group Limited, Australia's second-largest retailer, is investigating what it described as a \"cyber security incident\" that has not impacted the company's stores.",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "16 Nov 2026, 11:18 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/7a50b6f63907.html"
-  },
-  {
-   "id": "2b1b80c8b882",
-   "title": "Hackers Probe Newly Disclosed Flaws in Copeland Refrigeration Controllers",
-   "summary": "Vulncheck disclosed 14 vulnerabilities affecting Copeland XWEB EVO controllers, including two that threat actors quickly targeted. The post Hackers Probe Newly Disclosed…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "16 Nov 2026, 11:05 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/2b1b80c8b882.html"
-  },
-  {
    "id": "f159cf23a7b2",
    "title": "Amazon Uncovers AI Agent Campaign Targeting LiteLLM, Dify, and Other Apps for API Keys",
    "summary": "Attackers' AI agents have been hunting for weak spots in internet-exposed AI apps such as LiteLLM, One API, and Dify to steal the AI provider keys stored inside…",
@@ -1841,6 +1851,26 @@
    "url": "story/633b52d3362d.html"
   },
   {
+   "id": "7a50b6f63907",
+   "title": "Australian retail giant Coles investigates cybersecurity incident",
+   "summary": "Coles Group Limited, Australia's second-largest retailer, is investigating what it described as a \"cyber security incident\" that has not impacted the company's stores.",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "16 Nov 2026, 11:18 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/7a50b6f63907.html"
+  },
+  {
+   "id": "2b1b80c8b882",
+   "title": "Hackers Probe Newly Disclosed Flaws in Copeland Refrigeration Controllers",
+   "summary": "Vulncheck disclosed 14 vulnerabilities affecting Copeland XWEB EVO controllers, including two that threat actors quickly targeted. The post Hackers Probe Newly Disclosed…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "16 Nov 2026, 11:05 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/2b1b80c8b882.html"
+  },
+  {
    "id": "b9812e4ced01",
    "title": "Anthropic’s Claude Fable 5.2 blocks fewer security tasks, while Mythos gets better at finding bugs",
    "summary": "Anthropic recently rolled out Claude Mythos 5.2 to selected partners and Fable 5.2 to regular users, with improvements to coding and reasoning. But we also noticed some…",
@@ -1889,16 +1919,6 @@
    "date": "15 Nov 2026, 12:51 UTC",
    "sources": "SecurityWeek",
    "url": "story/c8b26857299e.html"
-  },
-  {
-   "id": "04c1c102f5a7",
-   "title": "Italy Fines Meta €805 Million Over Facebook's Android Gallery Access Without Explicit Consent",
-   "summary": "Meta was fined €805 million in Italy yesterday over a Facebook for Android feature that suggests photos and videos from users' phone galleries for them to post. The…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "15 Nov 2026, 11:27 UTC",
-   "sources": "The Hacker News",
-   "url": "story/04c1c102f5a7.html"
   },
   {
    "id": "e12779d5806a",
@@ -2299,6 +2319,16 @@
    "date": "10 Nov 2026, 13:00 UTC",
    "sources": "Dark Reading",
    "url": "story/b18e440d8eb0.html"
+  },
+  {
+   "id": "04c1c102f5a7",
+   "title": "Italy Fines Meta €805 Million Over Facebook's Android Gallery Access Without Explicit Consent",
+   "summary": "Meta was fined €805 million in Italy yesterday over a Facebook for Android feature that suggests photos and videos from users' phone galleries for them to post. The…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "15 Nov 2026, 11:27 UTC",
+   "sources": "The Hacker News",
+   "url": "story/04c1c102f5a7.html"
   },
   {
    "id": "4a2be9d5c47d",
@@ -3009,16 +3039,6 @@
    "date": "10 Nov 2026, 12:02 UTC",
    "sources": "Schneier on Security",
    "url": "story/903ec867ebe5.html"
-  },
-  {
-   "id": "3badf33b9e63",
-   "title": "Beyond the Alert: The Case for Rich Network Data",
-   "summary": "At some point your security will fail. This isn’t pessimism. It’s not because your team and tools aren’t sophisticated enough. It’s the reason we have detections in the…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "10 Nov 2026, 11:38 UTC",
-   "sources": "The Hacker News",
-   "url": "story/3badf33b9e63.html"
   }
  ]
 }
