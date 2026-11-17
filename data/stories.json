@@ -5081,26 +5081,6 @@
    "instructions_checked": true
   },
   {
-   "id": "f00273d9e0a7",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Palantir exec nominated to lead CISA; lame-duck Senate vote is uncertain",
-   "link": "https://therecord.media/michael-losapio-cisa-director-nomination",
-   "published": "2026-11-10T14:31:00+00:00",
-   "summary": "Michael LoSapio, Palantir's chief information security officer, is officially President Donald Trump's pick to lead the Cybersecurity and Infrastructure Security Agency.",
-   "image": "https://cms.therecord.media/uploads/palantir_logo_2d26163873.jpg",
-   "cves": [],
-   "first_seen": "2026-11-10T15:28:37.836678+00:00",
-   "image_checked": true,
-   "instructions": [
-    "It is unclear if the Senate will take up LoSapio’s nomination during the already jam-packed lame duck session of Congress, with lawmakers looking to approve a must-pass government funding measure and the annual defense policy bill, among other priorities.",
-    "Should lawmakers adjourn next month without approving his nomination, Trump would have to nominate LoSapio again next year for consideration by the incoming Democratic majority."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "2be753d1df50",
    "source": "therecord",
    "source_name": "The Record",
@@ -6469,6 +6449,27 @@
    "instructions_checked": true
   },
   {
+   "id": "148f7e8fc320",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Inside Modern Phishing Kits Built to Steal Microsoft 365 Sessions",
+   "link": "https://www.bleepingcomputer.com/news/security/inside-modern-phishing-kits-built-to-steal-microsoft-365-sessions/",
+   "published": "2026-11-17T15:01:11+00:00",
+   "summary": "Huntress researchers break down how EvilTokens, Knight Office, and Kali365 capture and replay M365 tokens, plus how defenders can detect and contain them.",
+   "image": "https://www.bleepstatic.com/content/posts/2026/11/15/huntress-microsoft-365-phishing.jpg",
+   "cves": [],
+   "first_seen": "2026-11-17T15:17:36.609279+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Containment must address identity artifacts, not just the original lure.",
+    "Revoke refresh tokens, then remove unauthorized devices and Windows Hello credentials.",
+    "Restrict or block device code authentication where you can, and investigate mailbox access, forwarding rules, and outbound phishing."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "230bcad0faf3",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -6703,27 +6704,6 @@
    "instructions_checked": true
   },
   {
-   "id": "74f31cae8a39",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Ransomware recovery is now a client retention metric",
-   "link": "https://www.bleepingcomputer.com/news/security/ransomware-recovery-is-now-a-client-retention-metric/",
-   "published": "2026-11-10T15:01:11+00:00",
-   "summary": "Recovering from ransomware doesn't guarantee an MSP will retain its clients, especially when delays, poor communication, and unexpected costs undermine trust. Kaseya examines how disconnected recovery tools create these problems and how integrated workflows can improve response times, transparency, and client…",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/09/30/secure-backup-vault.jpg",
-   "cves": [],
-   "first_seen": "2026-11-10T15:28:37.836678+00:00",
-   "image_checked": true,
-   "instructions": [
-    "When those expectations go unmet, a technically successful recovery may still leave clients questioning whether they should renew their contracts.",
-    "Time to first client update: How long after detection does the client hear from you?",
-    "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "bbb8a6727085",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -6818,6 +6798,22 @@
    "instructions_checked": true
   },
   {
+   "id": "46f2978c7d8e",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "Grok Bots Attempt to Access Corporate Data Without User Approval",
+   "link": "https://www.darkreading.com/application-security/grok-bots-corporate-data-without-user-approval",
+   "published": "2026-11-17T13:12:56+00:00",
+   "summary": "Two AI agents, separately over a five-day period, autonomously tried to access connected applications, including Google Calendar, Gmail, Slack, and GitHub, without account owner approval.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blte89802188fbf7517/6afc5ddc05f01c312ef66082/rogue_AO_bot_Chris_Light_Alamy.png?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-17T15:17:36.609279+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "bcbd3a3cc803",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -6873,7 +6869,7 @@
    "source_type": "news",
    "title": "NIST Finalizes Post-Quantum Cryptography Guidance, GAO Offers a Reality Check",
    "link": "https://www.darkreading.com/cyber-risk/nist-finalizes-post-quantum-cryptography-guidance-gao-offers-a-reality-check",
-   "published": "2026-11-17T13:22:15+00:00",
+   "published": "2026-11-16T14:22:15+00:00",
    "summary": "The emerging technology will soon break the \"lock and key\" encryption currently protecting sensitive data. A new GAO report shows agencies are behind on building their defenses.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltfe572d94baa464a0/67bf001706ed6e9954636f2b/pqc-quantum-adam121AdobeStock.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
@@ -8252,6 +8248,26 @@
    "instructions_checked": true
   },
   {
+   "id": "76496683beb3",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Market Research Giant Ipsos Investigating Breach of Internal System",
+   "link": "https://www.securityweek.com/market-research-giant-ipsos-investigating-breach-of-internal-system/",
+   "published": "2026-11-17T14:55:30+00:00",
+   "summary": "The company made the incident public on Monday, November 16, five days after filing a complaint with authorities. The post Market Research Giant Ipsos Investigating Breach of Internal System appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/11/Ipsos.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-17T15:17:36.609279+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Should the investigation establish that information relating to clients, projects or business partners has been affected, we will contact those concerned directly,” Ipsos said.",
+    "No Signs of Hacking in FAA Ground Stop as FBI Reportedly Probes Software Update"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "f316d41a09fe",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -8535,10 +8551,10 @@
    "source_name": "SecurityWeek",
    "official": false,
    "source_type": "news",
-   "title": "PreTxt Emerges Stealth with $5M Seed and an AI Supervision Tool",
+   "title": "Pretxt Emerges Stealth With $5M Seed and an AI Supervision Tool",
    "link": "https://www.securityweek.com/pretxt-emerges-stealth-with-5m-seed-and-an-ai-supervision-tool/",
    "published": "2026-11-17T14:00:00+00:00",
-   "summary": "PreTxt provides technology to prevent AI agents escaping their guardrails and causing unintended harm. The post PreTxt Emerges Stealth with $5M Seed and an AI Supervision Tool appeared first on SecurityWeek.",
+   "summary": "Pretxt provides technology to prevent AI agents escaping their guardrails and causing unintended harm. The post Pretxt Emerges Stealth With $5M Seed and an AI Supervision Tool appeared first on SecurityWeek.",
    "image": "https://www.securityweek.com/wp-content/uploads/2023/01/Cybersecurity_News-SecurityWeek.jpg",
    "cves": [],
    "first_seen": "2026-11-17T14:23:23.336405+00:00",
@@ -8592,27 +8608,6 @@
     "All organizations are advised to update their Barracuda products as soon as possible and ensure that their administrative interfaces are not exposed to the internet.",
     "Access to them should be restricted only to trusted internal networks.",
     "On Tuesday, the US cybersecurity agency CISA added CVE-2026-116606 and CVE-2026-111560 to its Known Exploited Vulnerabilities ( KEV ) catalog, urging federal agencies to patch them within three days, as mandated by BOD 26-04."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "c1d47a910d2a",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "SAP Patches Critical ICM2SHELL, ProxyGate Vulnerabilities",
-   "link": "https://www.securityweek.com/sap-patches-critical-icm2shell-proxygate-vulnerabilities/",
-   "published": "2026-11-10T14:46:28+00:00",
-   "summary": "SAP has published 42 new and updated security advisories, including nine that address critical-severity vulnerabilities. The post SAP Patches Critical ICM2SHELL, ProxyGate Vulnerabilities appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/09/SAP_vulnerability-patches.jpg",
-   "cves": [],
-   "first_seen": "2026-11-10T15:28:37.836678+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Since the scheduled October 2026 security patches, SAP released new notes dealing with the recently disclosed PHP2Shell and Node2Shell vulnerabilities in its Business AI Platform and updated several other notes and advisories.",
-    "Chrome Update Patches Exploited XML Zero-Day, Eighth This Year",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
   },
@@ -8786,26 +8781,6 @@
     "However, in a November 9 update , the company acknowledged that the breach also affected account and billing information, as well as some customer datasets and incomplete models.",
     "SecurityWeek has emailed Uber for additional information on the data breach and will update this article if the company responds.",
     "No Signs of Hacking in FAA Ground Stop as FBI Reportedly Probes Software Update"
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "77e18dcd7482",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "WhiteMatter Raises $20 Million in Series A Funding",
-   "link": "https://www.securityweek.com/whitematter-raises-20-million-in-series-a-funding/",
-   "published": "2026-11-10T14:58:19+00:00",
-   "summary": "The cybersecurity startup deploys a dedicated guardian agent for every AI agent in an organization’s environment. The post WhiteMatter Raises $20 Million in Series A Funding appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2025/01/funding-investment.jpeg",
-   "cves": [],
-   "first_seen": "2026-11-10T15:28:37.836678+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Chrome Update Patches Exploited XML Zero-Day, Eighth This Year",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
   },
