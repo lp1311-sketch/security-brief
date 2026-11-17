@@ -429,7 +429,7 @@
    "source_name": "Born's IT and Windows Blog",
    "official": false,
    "source_type": "news",
-   "title": "Cybersecurity-Anbieter Infobox Opfer eines Cyberangriffs (16. Nov. 2026)",
+   "title": "Cybersecurity-Anbieter Infoblox Opfer eines Cyberangriffs (16. Nov. 2026)",
    "link": "https://borncity.com/blog/2026/11/17/cybersecurity-anbieter-infobox-opfer-eines-cyberangriffs/",
    "published": "2026-11-17T10:38:18+00:00",
    "summary": "Wenn dir Cybersicherheit wichtig ist, hole dir Leute, die was davon verstehen. Infoblox ist als Anbieter auf dem Gebiet der IT-Automatisierung und Cybersicherheit vertreten. Leider musste Infoblox gerade eingestehen, dass man am 16. November 2026 Opfer eines Cyberangriffs geworden ist. … Weiterlesen → Quelle",
@@ -3689,27 +3689,6 @@
    "instructions_checked": true
   },
   {
-   "id": "4271579ddeba",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Binance Warns of iOS Sandbox Escape That Could Expose Crypto Wallet Keys, No Fix Confirmed",
-   "link": "https://thehackernews.com/2026/11/binance-warns-of-ios-sandbox-escape.html",
-   "published": "2026-11-10T12:15:31+00:00",
-   "summary": "An iOS sandbox escape published on GitHub lets an app read other apps' files on iPhones running iOS 26 and 27. That puts seed phrases, private keys, and login credentials at risk of exposure to malicious apps, Binance warned today. Apple's updates for iOS 26 and 27, released yesterday, do not list a fix. A researcher…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikVWFDhEAWo-q-_JsRneE91hAsf7Ho4XXGI51_q0V6XaCrBl7COWgs81b8KLYtdO0XaRMjP5JbJs80iC103U16Mr7GU05znwtx3CvvMnJMR1ywArpKJj4AdVd9HaLv0U65k59BBY706XjRtU8bx9q-fnLlozVb63XJ43QDKm3FbJUmrSwcB9TvwJpyP64/s1600/ios-jail.jpg",
-   "cves": [],
-   "first_seen": "2026-11-10T13:19:58.015679+00:00",
-   "instructions": [
-    "For anyone who suspects a breach, the exchange's security warning advises moving funds to a new wallet created on a clean device and resetting all active login sessions.",
-    "The exchange told users to delete apps installed from untrusted sources, such as sideloaded or manually signed apps, and to update iOS and all their apps.",
-    "He says the code is for developers and \"isn't useful by itself.\" Other developers have built apps on it that people can install.",
-    "Apple does not disclose, discuss, or confirm security issues until it has investigated and a patch or release is available, the notes say."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "7e413807cc2f",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -4089,6 +4068,25 @@
    "instructions_checked": true
   },
   {
+   "id": "6085ef54790f",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap",
+   "link": "https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html",
+   "published": "2026-11-17T12:25:06+00:00",
+   "summary": "Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. Attackers have already found a way around it. In March 2026, the hackers who hijacked Trivy, a widely used open-source security scanner, planted malicious code that looked…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYUhfLA6wixTr6AiVmOSa8uxO2mHxPqG7rHalDaUtYlOaTwUSIzi3JAP78cfEUhwwaoijNe8vJ0ZFiBqDmfrG9LVOzItxMxCYcTCbEc4f7W8iWgKSvzR6DrT0XtK_cM4eTKQ2Edvz-QG5P8iXF_GV_-k6CXMN_-D_QAJags-LpeuXmJ5C6DDz7mDRSBMY/s1600/git-actions.jpg",
+   "cves": [],
+   "first_seen": "2026-11-17T13:06:03.865659+00:00",
+   "instructions": [
+    "Locked commits must exist on a branch of the source repository, which blunts fork-only impostors.",
+    "GitHub now lets administrators enforce pinning as an organization-wide policy, and few security teams argue against it."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "7fc0ff6aee2a",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -4409,6 +4407,24 @@
     "The company advises customers to revoke and replace any sensitive variable stored on the platform before October 21.",
     "Keys should be revoked or rotated with the provider that issued them, since filing a charge report does not revoke a key.",
     "It also advises removing public network access to databases, checking GitHub audit logs and which apps can access the account, and checking audit logs in registries such as Docker Hub."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "b69860df4218",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Researchers Detail iPhone Flaw That Let Apps Record Audio Despite Denied Microphone Permission",
+   "link": "https://thehackernews.com/2026/11/researchers-detail-iphone-flaw-that-let.html",
+   "published": "2026-11-17T12:14:36+00:00",
+   "summary": "A now-patched flaw in Apple's audio service let apps on iPhones and iPads record audio even after the user tapped \"Don't Allow\" on the microphone prompt. The first security updates with the fix came out on August 17. Neither Apple nor the two researchers who found the flaw report that it was used in attacks. Nik…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoRknesoqi26EwwYMrgBhBudDMiej0sO7-228OvrBIj2ivaPcOUo7GJgoIHAd9fI_VFlK4su0xn1L_BqUgFsldNJgAkQwE4wAvAZzUao-wHUHSoq8NQUo_UdyILYYFoshEgONLhibaGHRQ_cKFVo0Psl1kehyphenhyphenNjlCrkECk16huiU6WecKlpBr0YDN3nus/s1600/iphone-recording.jpg",
+   "cves": [],
+   "first_seen": "2026-11-17T13:06:03.865659+00:00",
+   "instructions": [
+    "The agency's catalog of known exploited vulnerabilities does not list it, as of the catalog's update late last week."
    ],
    "instructions_checked": true
   },
@@ -5190,25 +5206,6 @@
    "first_seen": "2026-11-16T15:56:24.971181+00:00",
    "image_checked": true,
    "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "633b52d3362d",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Russian hackers compromised government email servers to steal NATO, EU correspondence",
-   "link": "https://therecord.media/russia-hackers-espionage-romania-kazakhstan",
-   "published": "2026-11-10T13:00:00+00:00",
-   "summary": "Russian state-linked hackers have compromised government email servers in Romania and Kazakhstan to secretly intercept messages exchanged with NATO and European Union officials, researchers said.",
-   "image": "https://cms.therecord.media/uploads/Email_55c6595c21.jpg",
-   "cves": [],
-   "first_seen": "2026-11-10T13:19:58.015679+00:00",
-   "image_checked": true,
-   "instructions": [
-    "This allowed the hackers to operate without relying on external servers that security researchers could detect, block or shut down."
-   ],
    "instructions_checked": true
   },
   {
@@ -6690,28 +6687,6 @@
    "instructions_checked": true
   },
   {
-   "id": "9af5f29020c4",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "SAP patches ICM2SHELL and PROXYGATE maximum severity flaws",
-   "link": "https://www.bleepingcomputer.com/news/security/sap-patches-four-maximum-severity-security-vulnerabilities/",
-   "published": "2026-11-10T12:07:03+00:00",
-   "summary": "SAP patched 35 vulnerabilities in its November 2026 security updates, including four maximum-severity issues affecting its NetWeaver, Web Dispatcher, and Gateway software.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/10/SAP.jpg",
-   "cves": [],
-   "first_seen": "2026-11-10T12:10:45.844226+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Microsoft releases Windows 10 KB5126657 extended security update",
-    "For instance, it patched CVE-2026-58231 in the Commerce Cloud cloud-based e-commerce platform in August, which threat intelligence firm Defused flagged as actively exploited in attacks days after the patch.",
-    "Microsoft October 2026 Patch Tuesday fixes 1,411 flaws, 3 zero-days",
-    "Dell asks admins to patch max severity CSM flaws as soon as possible"
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "bbb8a6727085",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -6787,49 +6762,6 @@
     "They allow administrators to deploy patches, install software, execute scripts, enforce configurations, and remotely manage thousands of devices from a centralized system.",
     "Any attacker who gains control of that infrastructure will be able to use those existing capabilities to distribute malware, execute malicious commands, disable security controls, or disrupt operations across an entire organization."
    ],
-   "instructions_checked": true
-  },
-  {
-   "id": "193a689f6d04",
-   "source": "cisa",
-   "source_name": "CISA Cybersecurity Advisories",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
-   "link": "https://www.cisa.gov/news-events/alerts/2026/11/10/cisa-adds-six-known-exploited-vulnerabilities-catalog",
-   "published": "2026-11-10T12:00:00+00:00",
-   "summary": "CISA has added six new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-20320 Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability CVE-2026-111560 Barracuda Networks Multiple Products OS Command Injection…",
-   "image": null,
-   "cves": [
-    "CVE-2026-111560",
-    "CVE-2026-111793",
-    "CVE-2026-116606",
-    "CVE-2026-124194",
-    "CVE-2026-125350",
-    "CVE-2026-20320"
-   ],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00",
-   "instructions": [
-    "Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
-    "BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied."
-   ],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "b18e440d8eb0",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "AI Makes Reverse Engineering Mainstream Software & Malware Far Easier",
-   "link": "https://www.darkreading.com/application-security/ai-reverse-engineering-apps",
-   "published": "2026-11-10T13:00:00+00:00",
-   "summary": "Researchers unpacked, mapped, and recreated complex software and the Turla malware, raising opportunities and concerns for organizations and cybersecurity analysts.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt50398014b3f8049d/6aee2b328988653fd1de4aef/Binary-PashaIgnatov-Getty.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-10T13:19:58.015679+00:00",
-   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -7383,6 +7315,25 @@
    "instructions_checked": true
   },
   {
+   "id": "f61744a14eda",
+   "source": "schneier",
+   "source_name": "Schneier on Security",
+   "official": false,
+   "source_type": "news",
+   "title": "Formal Verification of the Signal Protocol Using AI",
+   "link": "https://www.schneier.com/blog/archives/2026/11/formal-verification-of-the-signal-protocol-using-ai.html",
+   "published": "2026-11-17T12:05:43+00:00",
+   "summary": "This seems like a good thing: Google Deepmind researchers used agentic AI to mathematically prove, or “formally verify,” a number of the Signal protocol’s key cryptographic guarantees­a landmark development for the widely used cryptography and AI itself. Conducted as a sort of proof-of-concept project in just four…",
+   "image": null,
+   "cves": [],
+   "first_seen": "2026-11-17T13:06:03.865659+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Many programs are fairly simple finite-state machines, which should be easy to verify."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "26bc7212e5d9",
    "source": "schneier",
    "source_name": "Schneier on Security",
@@ -7397,25 +7348,6 @@
    "first_seen": "2026-11-13T22:08:27.509684+00:00",
    "image_checked": true,
    "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "903ec867ebe5",
-   "source": "schneier",
-   "source_name": "Schneier on Security",
-   "official": false,
-   "source_type": "news",
-   "title": "New OpenSSH Vulnerability",
-   "link": "https://www.schneier.com/blog/archives/2026/11/new-openssh-vulnerability.html",
-   "published": "2026-11-10T12:02:38+00:00",
-   "summary": "It’s a bad one, and it’s been in the code for a decade: A newly disclosed flaw involving OpenSSH and musl, dubbed “*sshole,” allows attackers to log in to certain Alpine Linux and other musl-based Linux accounts configured to block password authentication simply by entering an oversized password. “Oversized” means…",
-   "image": null,
-   "cves": [],
-   "first_seen": "2026-11-10T12:10:45.844226+00:00",
-   "image_checked": true,
-   "instructions": [
-    "A newly disclosed flaw involving OpenSSH and musl, dubbed “*sshole,” allows attackers to log in to certain Alpine Linux and other musl-based Linux accounts configured to block password authentication simply by entering an oversized password."
-   ],
    "instructions_checked": true
   },
   {
@@ -7472,6 +7404,26 @@
    "instructions_checked": true
   },
   {
+   "id": "389f46b9e9d9",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Access Dental Management Data Breach Impacts Over 340,000",
+   "link": "https://www.securityweek.com/access-dental-management-data-breach-impacts-over-340000/",
+   "published": "2026-11-17T12:59:04+00:00",
+   "summary": "Hackers breached Access Dental’s network and stole personal, health, and insurance information. The post Access Dental Management Data Breach Impacts Over 340,000 appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/07/data-breach-healthcare-medical.jpg",
+   "cves": [],
+   "first_seen": "2026-11-17T13:06:03.865659+00:00",
+   "image_checked": true,
+   "instructions": [
+    "SecurityWeek has emailed ADM’s parent platform Surge Private Equity for additional information on the incident and will update this article if it responds.",
+    "Trump Administration Moves to Block China From Indirect Access to American AI Technology"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "4893b7f6453d",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -7487,27 +7439,6 @@
    "image_checked": true,
    "instructions": [
     "Adobe’s November 2026 Patch Tuesday updates fix roughly 110 vulnerabilities across nine products.",
-    "Chrome Update Patches Exploited XML Zero-Day, Eighth This Year",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "037628398b09",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Anthropic Rolls Out Mythos 5.2 With Improved Bug Hunting, Fewer Sandbox Escapes",
-   "link": "https://www.securityweek.com/anthropic-rolls-out-mythos-5-2-with-improved-bug-hunting-fewer-sandbox-escapes/",
-   "published": "2026-11-10T12:17:13+00:00",
-   "summary": "Anthropic says Mythos 5.2 improves vulnerability discovery while showing a lower tendency to escape sandboxes in controlled tests. The post Anthropic Rolls Out Mythos 5.2 With Improved Bug Hunting, Fewer Sandbox Escapes appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/05/Anthropic-Claude.jpeg",
-   "cves": [],
-   "first_seen": "2026-11-10T13:19:58.015679+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Direct access to Mythos is reserved for vetted organizations, which can apply through Anthropic’s Cyber and Life Sciences Verification Programs. “We’ve worked closely with the Anthropic team all year to harden Firefox with successive generations of Claude models, and each round has left fewer, subtler bugs to find.",
     "Chrome Update Patches Exploited XML Zero-Day, Eighth This Year",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
@@ -7685,6 +7616,26 @@
    "instructions_checked": true
   },
   {
+   "id": "eb1264c3eeab",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "California Sues OpenAI, Seeking Court-Ordered Changes After the Hugging Face Hack",
+   "link": "https://www.securityweek.com/california-sues-openai-seeking-court-ordered-changes-after-the-hugging-face-hack/",
+   "published": "2026-11-17T12:00:00+00:00",
+   "summary": "The lawsuit alleges that OpenAI misled and endangered the public and users by knowingly developing advanced AI models without necessary safeguards. The post California Sues OpenAI, Seeking Court-Ordered Changes After the Hugging Face Hack appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/06/OpenAI.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-17T13:06:03.865659+00:00",
+   "image_checked": true,
+   "instructions": [
+    "He also noted that early last month, OpenAI reported that it had discovered that internally deployed agents were able to suppress monitoring alerts and disable monitoring.",
+    "Trump Administration Moves to Block China From Indirect Access to American AI Technology"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "6c321513c19e",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -7766,6 +7717,25 @@
     "Citrix urges customers to update their instances as soon as possible, and details CVE preconditions associated with some of the vulnerabilities.",
     "Citrix, Ivanti Patch Critical and High-Severity Vulnerabilities",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "d8ca9cff94be",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Corma Receives $125 Million to Train Foundation Models for Defensive Cybersecurity",
+   "link": "https://www.securityweek.com/corma-receives-125-million-to-train-foundation-models-for-defensive-cybersecurity/",
+   "published": "2026-11-17T12:51:54+00:00",
+   "summary": "Led by NEA and supported by existing investors, the funding brings the company’s valuation to $1 billion. The post Corma Receives $125 Million to Train Foundation Models for Defensive Cybersecurity appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/12/cyber-funding.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-17T13:06:03.865659+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Trump Administration Moves to Block China From Indirect Access to American AI Technology"
    ],
    "instructions_checked": true
   },
@@ -8290,6 +8260,28 @@
     "In Australia, Home Affairs Minister Tony Burke said Friday that Microsoft had likened the widespread disruption to the 2024 CrowdStrike outage, which stemmed from a faulty update to computers running Microsoft Windows.",
     "They believe that they are dealing in some ways (with something) similar to what we saw with respect to CrowdStrike where there is an update that has gone awry,” Burke told reporters in Sydney.",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "7d141681ccc2",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "N-able Kills Legacy APIs, Patches 17 N-central Zero-Days",
+   "link": "https://www.securityweek.com/n-able-kills-legacy-apis-patches-17-n-central-zero-days/",
+   "published": "2026-11-17T12:28:45+00:00",
+   "summary": "The patches target recently disclosed zero-days, as well as vulnerabilities already exploited in the wild. The post N-able Kills Legacy APIs, Patches 17 N-central Zero-Days appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/08/N-Able.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-17T13:06:03.865659+00:00",
+   "image_checked": true,
+   "instructions": [
+    "N-able says it has already applied the patches to hosted environments and urges users to update their on-premises deployments as soon as possible. “To keep your environment protected, customers running on-premises N-central deployments should upgrade their servers as soon as possible.",
+    "All customers, hosted and on-premises, must upgrade all of their Agents and Probes to the latest version to be fully protected.",
+    "Shortly after N-able announced the fixes, Bales published technical information on 24 more N-central vulnerabilities, noting that they have been patched and should not be exploitable against deployments running the latest patches.",
+    "Described as a critical update, N-central 2026.4 Hotfix 3 builds on the previously released Hotfix 2 and also brings several security hardenings across authentication, Agent and Probe communication, file and XML import handling, request and outbound connection handling, and user management."
    ],
    "instructions_checked": true
   },

@@ -1,16 +1,6 @@
 {
  "stories": [
   {
-   "id": "474586429e7c",
-   "title": "CISA flags Cisco BroadWorks flaw as actively exploited in attacks",
-   "summary": "The US Cybersecurity and Infrastructure Security Agency (CISA) warned on Tuesday that hackers are now exploiting a high-severity Cisco BroadWorks vulnerability in…",
-   "priority": "Critical",
-   "category": "Patch Radar",
-   "date": "11 Nov 2026, 10:12 UTC",
-   "sources": "BleepingComputer, The Hacker News, CISA Cybersecurity Advisories",
-   "url": "story/474586429e7c.html"
-  },
-  {
    "id": "f67825a82ae8",
    "title": "Recent UnrealIRCd Vulnerability Exploited in Attacks",
    "summary": "Tracked as CVE-2026-114713, the high-severity flaw allows attackers to execute commands with server/IRCOp privileges. The post Recent UnrealIRCd Vulnerability Exploited…",
@@ -31,6 +21,16 @@
    "url": "story/78498214505c.html"
   },
   {
+   "id": "474586429e7c",
+   "title": "CISA flags Cisco BroadWorks flaw as actively exploited in attacks",
+   "summary": "The US Cybersecurity and Infrastructure Security Agency (CISA) warned on Tuesday that hackers are now exploiting a high-severity Cisco BroadWorks vulnerability in…",
+   "priority": "Critical",
+   "category": "Patch Radar",
+   "date": "11 Nov 2026, 10:12 UTC",
+   "sources": "BleepingComputer, The Hacker News",
+   "url": "story/474586429e7c.html"
+  },
+  {
    "id": "9364f9baac68",
    "title": "Microsoft Fixes Nearly 1,100 Security Vulnerabilities",
    "summary": "Microsoft did another four-digit patch drop today, releasing updates to fix almost 1,100 security vulnerabilities in its Windows operating systems and supported…",
@@ -39,6 +39,16 @@
    "date": "10 Nov 2026, 21:55 UTC",
    "sources": "KrebsOnSecurity, SecurityWeek",
    "url": "story/9364f9baac68.html"
+  },
+  {
+   "id": "7d141681ccc2",
+   "title": "N-able Kills Legacy APIs, Patches 17 N-central Zero-Days",
+   "summary": "The patches target recently disclosed zero-days, as well as vulnerabilities already exploited in the wild. The post N-able Kills Legacy APIs, Patches 17 N-central…",
+   "priority": "High",
+   "category": "Patch Radar",
+   "date": "17 Nov 2026, 12:28 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/7d141681ccc2.html"
   },
   {
    "id": "b5e1ece521f3",
@@ -311,6 +321,16 @@
    "url": "story/9409189d8358.html"
   },
   {
+   "id": "389f46b9e9d9",
+   "title": "Access Dental Management Data Breach Impacts Over 340,000",
+   "summary": "Hackers breached Access Dental’s network and stole personal, health, and insurance information. The post Access Dental Management Data Breach Impacts Over 340,000…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "17 Nov 2026, 12:59 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/389f46b9e9d9.html"
+  },
+  {
    "id": "1dc4676c8263",
    "title": "Microsoft testing Remote Lock for lost or stolen Windows devices",
    "summary": "Microsoft is testing a new feature that lets enterprise IT administrators remotely lock stolen or lost Windows devices without wiping them.",
@@ -389,26 +409,6 @@
    "date": "16 Nov 2026, 14:06 UTC",
    "sources": "The Record",
    "url": "story/81c7c458d757.html"
-  },
-  {
-   "id": "a1dd8f56b81d",
-   "title": "Microsoft: Windows Server 2016 reaches end of support in 60 days",
-   "summary": "Microsoft has reminded customers again that Windows Server 2016 will stop receiving security updates after it reaches the end of support in two months.",
-   "priority": "Standard",
-   "category": "Microsoft",
-   "date": "16 Nov 2026, 12:53 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/a1dd8f56b81d.html"
-  },
-  {
-   "id": "5ce42556c67d",
-   "title": "Cyberangriffe in Frankreich: Post-Dienstleister, Kliniken, Optikanbieter etc.",
-   "summary": "Derzeit wird der IT-Sektor in Frankreich per Cyberangriffen faktisch \"sturmreif\" geschossen. Über den Kanal \"French Breaches\" bekomme ich das auf X mit. Ein…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "16 Nov 2026, 12:47 UTC",
-   "sources": "Born's IT and Windows Blog",
-   "url": "story/5ce42556c67d.html"
   },
   {
    "id": "c3cb9f990617",
@@ -499,6 +499,26 @@
    "date": "10 Nov 2026, 21:01 UTC",
    "sources": "Dark Reading",
    "url": "story/c9d200a425c2.html"
+  },
+  {
+   "id": "f61744a14eda",
+   "title": "Formal Verification of the Signal Protocol Using AI",
+   "summary": "This seems like a good thing: Google Deepmind researchers used agentic AI to mathematically prove, or “formally verify,” a number of the Signal protocol’s key…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "17 Nov 2026, 12:05 UTC",
+   "sources": "Schneier on Security",
+   "url": "story/f61744a14eda.html"
+  },
+  {
+   "id": "eb1264c3eeab",
+   "title": "California Sues OpenAI, Seeking Court-Ordered Changes After the Hugging Face Hack",
+   "summary": "The lawsuit alleges that OpenAI misled and endangered the public and users by knowingly developing advanced AI models without necessary safeguards. The post California…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "17 Nov 2026, 12:00 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/eb1264c3eeab.html"
   },
   {
    "id": "cb74b2746cc6",
@@ -629,6 +649,26 @@
    "date": "16 Nov 2026, 14:00 UTC",
    "sources": "BleepingComputer",
    "url": "story/2e40619c86da.html"
+  },
+  {
+   "id": "a1dd8f56b81d",
+   "title": "Microsoft: Windows Server 2016 reaches end of support in 60 days",
+   "summary": "Microsoft has reminded customers again that Windows Server 2016 will stop receiving security updates after it reaches the end of support in two months.",
+   "priority": "Standard",
+   "category": "Microsoft",
+   "date": "16 Nov 2026, 12:53 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/a1dd8f56b81d.html"
+  },
+  {
+   "id": "5ce42556c67d",
+   "title": "Cyberangriffe in Frankreich: Post-Dienstleister, Kliniken, Optikanbieter etc.",
+   "summary": "Derzeit wird der IT-Sektor in Frankreich per Cyberangriffen faktisch \"sturmreif\" geschossen. Über den Kanal \"French Breaches\" bekomme ich das auf X mit. Ein…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "16 Nov 2026, 12:47 UTC",
+   "sources": "Born's IT and Windows Blog",
+   "url": "story/5ce42556c67d.html"
   },
   {
    "id": "f0b3319bef62",
@@ -1111,18 +1151,38 @@
    "url": "story/7646e96e2e7b.html"
   },
   {
-   "id": "c1d47a910d2a",
-   "title": "SAP Patches Critical ICM2SHELL, ProxyGate Vulnerabilities",
-   "summary": "SAP has published 42 new and updated security advisories, including nine that address critical-severity vulnerabilities. The post SAP Patches Critical ICM2SHELL…",
+   "id": "d8ca9cff94be",
+   "title": "Corma Receives $125 Million to Train Foundation Models for Defensive Cybersecurity",
+   "summary": "Led by NEA and supported by existing investors, the funding brings the company’s valuation to $1 billion. The post Corma Receives $125 Million to Train Foundation Models…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "17 Nov 2026, 12:51 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/d8ca9cff94be.html"
+  },
+  {
+   "id": "6085ef54790f",
+   "title": "Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap",
+   "summary": "Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. Attackers have…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "17 Nov 2026, 12:25 UTC",
+   "sources": "The Hacker News",
+   "url": "story/6085ef54790f.html"
+  },
+  {
+   "id": "b69860df4218",
+   "title": "Researchers Detail iPhone Flaw That Let Apps Record Audio Despite Denied Microphone Permission",
+   "summary": "A now-patched flaw in Apple's audio service let apps on iPhones and iPads record audio even after the user tapped \"Don't Allow\" on the microphone prompt. The first…",
    "priority": "Standard",
    "category": "Patch Radar",
-   "date": "10 Nov 2026, 14:46 UTC",
-   "sources": "SecurityWeek, BleepingComputer",
-   "url": "story/c1d47a910d2a.html"
+   "date": "17 Nov 2026, 12:14 UTC",
+   "sources": "The Hacker News",
+   "url": "story/b69860df4218.html"
   },
   {
    "id": "568217cfb12f",
-   "title": "Cybersecurity-Anbieter Infobox Opfer eines Cyberangriffs (16. Nov. 2026)",
+   "title": "Cybersecurity-Anbieter Infoblox Opfer eines Cyberangriffs (16. Nov. 2026)",
    "summary": "Wenn dir Cybersicherheit wichtig ist, hole dir Leute, die was davon verstehen. Infoblox ist als Anbieter auf dem Gebiet der IT-Automatisierung und Cybersicherheit…",
    "priority": "Standard",
    "category": "Industry & Research",
@@ -1279,46 +1339,6 @@
    "date": "16 Nov 2026, 14:15 UTC",
    "sources": "The Record",
    "url": "story/b360f2c4a357.html"
-  },
-  {
-   "id": "79abf73e84bb",
-   "title": "Telegram Widgets Hit by RCE Demos, Malware Warning Days After Launch",
-   "summary": "Kaspersky suspects exploitation of Telegram’s new widgets to deliver WebRAT, as researchers demo RCE and Pavel Durov disputes the claims. The post Telegram Widgets Hit…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "16 Nov 2026, 12:48 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/79abf73e84bb.html"
-  },
-  {
-   "id": "119c79e2a817",
-   "title": "Six Unpatched Danfoss Refrigeration Controller Flaws Could Allow Remote Takeover Without Login",
-   "summary": "Six flaws in Danfoss AK-SM800A refrigeration controllers could let a remote attacker take over a controller without logging in, Dutch security consultancy Midnight Blue…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "16 Nov 2026, 12:34 UTC",
-   "sources": "The Hacker News",
-   "url": "story/119c79e2a817.html"
-  },
-  {
-   "id": "8c37ef3c2776",
-   "title": "Retadup Worm Resurfaces 7 Years After Takedown to Spread CoffeeLoader Malware",
-   "summary": "Cybersecurity researchers have disclosed details of a new variant of CoffeeLoader, a malware designed to deliver additional payloads to infected machines. \"On launch…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "16 Nov 2026, 12:33 UTC",
-   "sources": "The Hacker News",
-   "url": "story/8c37ef3c2776.html"
-  },
-  {
-   "id": "78086d8dacc9",
-   "title": "Usable Security at Luxury Hotels",
-   "summary": "Interesting case study from luxury hotels. Attackers used a fake booking request to gain access to a reservations inbox, where they copied genuine refund requests and…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "16 Nov 2026, 12:04 UTC",
-   "sources": "Schneier on Security",
-   "url": "story/78086d8dacc9.html"
   },
   {
    "id": "f159cf23a7b2",
@@ -1841,14 +1861,54 @@
    "url": "story/74f31cae8a39.html"
   },
   {
-   "id": "633b52d3362d",
-   "title": "Russian hackers compromised government email servers to steal NATO, EU correspondence",
-   "summary": "Russian state-linked hackers have compromised government email servers in Romania and Kazakhstan to secretly intercept messages exchanged with NATO and European Union…",
+   "id": "c1d47a910d2a",
+   "title": "SAP Patches Critical ICM2SHELL, ProxyGate Vulnerabilities",
+   "summary": "SAP has published 42 new and updated security advisories, including nine that address critical-severity vulnerabilities. The post SAP Patches Critical ICM2SHELL…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 14:46 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/c1d47a910d2a.html"
+  },
+  {
+   "id": "79abf73e84bb",
+   "title": "Telegram Widgets Hit by RCE Demos, Malware Warning Days After Launch",
+   "summary": "Kaspersky suspects exploitation of Telegram’s new widgets to deliver WebRAT, as researchers demo RCE and Pavel Durov disputes the claims. The post Telegram Widgets Hit…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "16 Nov 2026, 12:48 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/79abf73e84bb.html"
+  },
+  {
+   "id": "119c79e2a817",
+   "title": "Six Unpatched Danfoss Refrigeration Controller Flaws Could Allow Remote Takeover Without Login",
+   "summary": "Six flaws in Danfoss AK-SM800A refrigeration controllers could let a remote attacker take over a controller without logging in, Dutch security consultancy Midnight Blue…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "16 Nov 2026, 12:34 UTC",
+   "sources": "The Hacker News",
+   "url": "story/119c79e2a817.html"
+  },
+  {
+   "id": "8c37ef3c2776",
+   "title": "Retadup Worm Resurfaces 7 Years After Takedown to Spread CoffeeLoader Malware",
+   "summary": "Cybersecurity researchers have disclosed details of a new variant of CoffeeLoader, a malware designed to deliver additional payloads to infected machines. \"On launch…",
    "priority": "Standard",
    "category": "Attacks & Breaches",
-   "date": "10 Nov 2026, 13:00 UTC",
-   "sources": "The Record",
-   "url": "story/633b52d3362d.html"
+   "date": "16 Nov 2026, 12:33 UTC",
+   "sources": "The Hacker News",
+   "url": "story/8c37ef3c2776.html"
+  },
+  {
+   "id": "78086d8dacc9",
+   "title": "Usable Security at Luxury Hotels",
+   "summary": "Interesting case study from luxury hotels. Attackers used a fake booking request to gain access to a reservations inbox, where they copied genuine refund requests and…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "16 Nov 2026, 12:04 UTC",
+   "sources": "Schneier on Security",
+   "url": "story/78086d8dacc9.html"
   },
   {
    "id": "7a50b6f63907",
@@ -1909,16 +1969,6 @@
    "date": "16 Nov 2026, 06:53 UTC",
    "sources": "The Hacker News",
    "url": "story/1a13d7025b37.html"
-  },
-  {
-   "id": "c8b26857299e",
-   "title": "Pentagon Renames CDAO ‘Super Intelligence Office’",
-   "summary": "The move follows President Trump’s order to replace “artificial intelligence” with “super intelligence” in executive branch communications. The post Pentagon Renames…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "15 Nov 2026, 12:51 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/c8b26857299e.html"
   },
   {
    "id": "e12779d5806a",
@@ -2291,16 +2341,6 @@
    "url": "story/db9ef08d13bf.html"
   },
   {
-   "id": "89d6f6254d42",
-   "title": "Binance warns of iOS flaw that could leak crypto wallet secrets",
-   "summary": "Binance is warning about a vulnerability in Apple's iOS 26.7.1, 27.0.1, and 27.2 that could allow third-party apps to read private files stored by other apps, including…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 15:59 UTC",
-   "sources": "BleepingComputer, The Hacker News",
-   "url": "story/89d6f6254d42.html"
-  },
-  {
    "id": "77e18dcd7482",
    "title": "WhiteMatter Raises $20 Million in Series A Funding",
    "summary": "The cybersecurity startup deploys a dedicated guardian agent for every AI agent in an organization’s environment. The post WhiteMatter Raises $20 Million in Series A…",
@@ -2311,14 +2351,14 @@
    "url": "story/77e18dcd7482.html"
   },
   {
-   "id": "b18e440d8eb0",
-   "title": "AI Makes Reverse Engineering Mainstream Software & Malware Far Easier",
-   "summary": "Researchers unpacked, mapped, and recreated complex software and the Turla malware, raising opportunities and concerns for organizations and cybersecurity analysts.",
+   "id": "c8b26857299e",
+   "title": "Pentagon Renames CDAO ‘Super Intelligence Office’",
+   "summary": "The move follows President Trump’s order to replace “artificial intelligence” with “super intelligence” in executive branch communications. The post Pentagon Renames…",
    "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "10 Nov 2026, 13:00 UTC",
-   "sources": "Dark Reading",
-   "url": "story/b18e440d8eb0.html"
+   "category": "Industry & Research",
+   "date": "15 Nov 2026, 12:51 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/c8b26857299e.html"
   },
   {
    "id": "04c1c102f5a7",
@@ -2981,6 +3021,16 @@
    "url": "story/a726f2ce6dd2.html"
   },
   {
+   "id": "89d6f6254d42",
+   "title": "Binance warns of iOS flaw that could leak crypto wallet secrets",
+   "summary": "Binance is warning about a vulnerability in Apple's iOS 26.7.1, 27.0.1, and 27.2 that could allow third-party apps to read private files stored by other apps, including…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "10 Nov 2026, 15:59 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/89d6f6254d42.html"
+  },
+  {
    "id": "7e413807cc2f",
    "title": "Blind Eagle Uses Fake Court Notices to Deliver Remote Access Trojan Across Latin America",
    "summary": "The threat actor known as Blind Eagle has resurfaced with a new campaign targeting organizations in Latin America through judicial and administrative-themed phishing…",
@@ -3019,26 +3069,6 @@
    "date": "10 Nov 2026, 13:27 UTC",
    "sources": "SecurityWeek",
    "url": "story/e7a8a4d2bbbe.html"
-  },
-  {
-   "id": "037628398b09",
-   "title": "Anthropic Rolls Out Mythos 5.2 With Improved Bug Hunting, Fewer Sandbox Escapes",
-   "summary": "Anthropic says Mythos 5.2 improves vulnerability discovery while showing a lower tendency to escape sandboxes in controlled tests. The post Anthropic Rolls Out Mythos…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "10 Nov 2026, 12:17 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/037628398b09.html"
-  },
-  {
-   "id": "903ec867ebe5",
-   "title": "New OpenSSH Vulnerability",
-   "summary": "It’s a bad one, and it’s been in the code for a decade: A newly disclosed flaw involving OpenSSH and musl, dubbed “*sshole,” allows attackers to log in to certain Alpine…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 12:02 UTC",
-   "sources": "Schneier on Security",
-   "url": "story/903ec867ebe5.html"
   }
  ]
 }
