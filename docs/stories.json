@@ -1,16 +1,6 @@
 {
  "stories": [
   {
-   "id": "f67825a82ae8",
-   "title": "Recent UnrealIRCd Vulnerability Exploited in Attacks",
-   "summary": "Tracked as CVE-2026-114713, the high-severity flaw allows attackers to execute commands with server/IRCOp privileges. The post Recent UnrealIRCd Vulnerability Exploited…",
-   "priority": "Critical",
-   "category": "Patch Radar",
-   "date": "16 Nov 2026, 11:15 UTC",
-   "sources": "SecurityWeek, The Hacker News, CISA Cybersecurity Advisories",
-   "url": "story/f67825a82ae8.html"
-  },
-  {
    "id": "6ad116b5c12b",
    "title": "MSP ScreenConnect Servers Targeted in Month-Long Campaign",
    "summary": "More than 40 servers received over 688,000 requests exploiting CVE-2026-84869 to execute guest-pushed files. The post MSP ScreenConnect Servers Targeted in Month-Long…",
@@ -31,6 +21,16 @@
    "url": "story/72572082204e.html"
   },
   {
+   "id": "f49e9f798bfe",
+   "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+   "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-115731 Perforce Puppet…",
+   "priority": "Critical",
+   "category": "Patch Radar",
+   "date": "17 Nov 2026, 12:00 UTC",
+   "sources": "CISA Cybersecurity Advisories, SecurityWeek",
+   "url": "story/f49e9f798bfe.html"
+  },
+  {
    "id": "b5e1ece521f3",
    "title": "GTIG AI Threat Tracker: Agentic Threat Activity Crosses a Significant Threshold",
    "summary": "Written by: Aurora Blum, Kelli Vanderlee, Jess Xia, David Mainor Executive Summary As threat actors increasingly move beyond basic prompting to deploying autonomous…",
@@ -39,6 +39,16 @@
    "date": "16 Nov 2026, 14:00 UTC",
    "sources": "Google Threat Intelligence, CISA Cybersecurity Advisories",
    "url": "story/b5e1ece521f3.html"
+  },
+  {
+   "id": "f67825a82ae8",
+   "title": "Recent UnrealIRCd Vulnerability Exploited in Attacks",
+   "summary": "Tracked as CVE-2026-114713, the high-severity flaw allows attackers to execute commands with server/IRCOp privileges. The post Recent UnrealIRCd Vulnerability Exploited…",
+   "priority": "Critical",
+   "category": "Patch Radar",
+   "date": "16 Nov 2026, 11:15 UTC",
+   "sources": "SecurityWeek, The Hacker News",
+   "url": "story/f67825a82ae8.html"
   },
   {
    "id": "474586429e7c",
@@ -119,16 +129,6 @@
    "date": "17 Nov 2026, 05:00 UTC",
    "sources": "The Hacker News",
    "url": "story/1ef65dbe395d.html"
-  },
-  {
-   "id": "f66e964ba9d3",
-   "title": "Barracuda links cloud breach to ARTEX AI-powered cyberattack",
-   "summary": "Hackers who breached the cloud environment of network and email security company Barracuda earlier this month used a stolen cloud access key and the ARTEX AI penetration…",
-   "priority": "High",
-   "category": "Attacks & Breaches",
-   "date": "16 Nov 2026, 19:57 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/f66e964ba9d3.html"
   },
   {
    "id": "d62ab9694fcc",
@@ -231,14 +231,14 @@
    "url": "story/5e43b1695ab6.html"
   },
   {
-   "id": "9899fc2c80e3",
-   "title": "Ransomware Attacks Increase Behind AI, but Payments Decline",
-   "summary": "Large language models and other AI systems allow a growing number of ransomware groups to create convincing phishing emails and identify sensitive data quickly.",
+   "id": "f66e964ba9d3",
+   "title": "Barracuda links cloud breach to ARTEX AI-powered cyberattack",
+   "summary": "Hackers who breached the cloud environment of network and email security company Barracuda earlier this month used a stolen cloud access key and the ARTEX AI penetration…",
    "priority": "Standard",
    "category": "Attacks & Breaches",
-   "date": "16 Nov 2026, 19:56 UTC",
-   "sources": "Dark Reading",
-   "url": "story/9899fc2c80e3.html"
+   "date": "16 Nov 2026, 19:57 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/f66e964ba9d3.html"
   },
   {
    "id": "4201db3ac682",
@@ -299,6 +299,16 @@
    "date": "18 Nov 2026, 01:20 UTC",
    "sources": "The Record",
    "url": "story/9409189d8358.html"
+  },
+  {
+   "id": "1dff6dd6c93a",
+   "title": "Japan takes Fugaku supercomputer offlline after cyberattack",
+   "summary": "The Fugaku supercomputer operated by Japan's RIKEN Center for Computational Science has been taken offline following a security breach.",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "17 Nov 2026, 20:51 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/1dff6dd6c93a.html"
   },
   {
    "id": "1e05409f353f",
@@ -399,6 +409,16 @@
    "date": "17 Nov 2026, 00:08 UTC",
    "sources": "Microsoft Security Blog",
    "url": "story/3099ffeb8eda.html"
+  },
+  {
+   "id": "9899fc2c80e3",
+   "title": "Ransomware Attacks Increase Behind AI, but Payments Decline",
+   "summary": "Large language models and other AI systems allow a growing number of ransomware groups to create convincing phishing emails and identify sensitive data quickly.",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "16 Nov 2026, 19:56 UTC",
+   "sources": "Dark Reading",
+   "url": "story/9899fc2c80e3.html"
   },
   {
    "id": "10d373a62ac2",
@@ -761,16 +781,6 @@
    "url": "story/f7229d91014f.html"
   },
   {
-   "id": "6fd5298e49ba",
-   "title": "Trump Administration Moves to Block China From Indirect Access to American AI Technology",
-   "summary": "Under the new rule, overseas data centers that serve companies in countries including China, Russia, Iran and Cuba are required to identify their end users. The post…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "16 Nov 2026, 20:00 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/6fd5298e49ba.html"
-  },
-  {
    "id": "dd3df9bd6c46",
    "title": "Cyberangriff auf Kreiskrankenhaus Greiz-Ronneburg (Nov. 2026)",
    "summary": "Auf das Kreiskrankenhaus Greiz-Ronneburg gab es einen erfolgreichen Cyberangriff, der die IT betroffen hat. Die Klinik in Thüringen ist von der Notfallversorgung…",
@@ -1081,11 +1091,21 @@
    "url": "story/f91527c7bf88.html"
   },
   {
+   "id": "6b530aaeb2ca",
+   "title": "Researchers Claim Two RCE Exploits That Bypass Telegram’s New Android Defenses",
+   "summary": "A malicious widget can bypass the security filter that Telegram added to its Android app last week and run code outside it, according to NebuSec, a security company…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "17 Nov 2026, 19:34 UTC",
+   "sources": "The Hacker News",
+   "url": "story/6b530aaeb2ca.html"
+  },
+  {
    "id": "6b32b3a76586",
    "title": "Tor releases emergency update amid ongoing DDoS attack",
-   "summary": "",
+   "summary": "The Tor Project has released a security update for its network relay software to increase defenses against an ongoing distributed denial-of-service attack that it says…",
    "priority": "Standard",
-   "category": "Industry & Research",
+   "category": "Patch Radar",
    "date": "17 Nov 2026, 18:04 UTC",
    "sources": "BleepingComputer",
    "url": "story/6b32b3a76586.html"
@@ -1281,14 +1301,14 @@
    "url": "story/a9e375444363.html"
   },
   {
-   "id": "460686b6b1c6",
-   "title": "Match fined $10 million for alleged Tinder privacy violations",
-   "summary": "Ireland’s data protection regulator will fine the Match Group as a result of the dating app Tinder allegedly failing to provide users with their personal data held by…",
+   "id": "6fd5298e49ba",
+   "title": "Trump Administration Moves to Block China From Indirect Access to American AI Technology",
+   "summary": "Under the new rule, overseas data centers that serve companies in countries including China, Russia, Iran and Cuba are required to identify their end users. The post…",
    "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "16 Nov 2026, 20:15 UTC",
-   "sources": "The Record",
-   "url": "story/460686b6b1c6.html"
+   "category": "AI Risk Lab",
+   "date": "16 Nov 2026, 20:00 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/6fd5298e49ba.html"
   },
   {
    "id": "9c11c754eaec",
@@ -1831,24 +1851,14 @@
    "url": "story/ffa56d89e25e.html"
   },
   {
-   "id": "612ae5f08dba",
-   "title": "Microsoft’s Patch Tuesday surpasses 1,000 bugs for second month in a row",
-   "summary": "An exploited Outlook vulnerability drew most of the attention in Microsoft's latest Patch Tuesday, which listed 1,093 bugs total.",
+   "id": "460686b6b1c6",
+   "title": "Match fined $10 million for alleged Tinder privacy violations",
+   "summary": "Ireland’s data protection regulator will fine the Match Group as a result of the dating app Tinder allegedly failing to provide users with their personal data held by…",
    "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "10 Nov 2026, 20:55 UTC",
+   "category": "Industry & Research",
+   "date": "16 Nov 2026, 20:15 UTC",
    "sources": "The Record",
-   "url": "story/612ae5f08dba.html"
-  },
-  {
-   "id": "9814f0299437",
-   "title": "Microsoft releases Windows 10 KB5131096 extended security update",
-   "summary": "Microsoft released the Windows 10 KB5131096 extended security update, which includes this month's November 2026 Patch Tuesday fixes and a few bug fixes and changes.",
-   "priority": "Standard",
-   "category": "Microsoft",
-   "date": "10 Nov 2026, 20:04 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/9814f0299437.html"
+   "url": "story/460686b6b1c6.html"
   },
   {
    "id": "4b4b8357bb66",
@@ -2319,36 +2329,6 @@
    "date": "11 Nov 2026, 11:16 UTC",
    "sources": "SecurityWeek",
    "url": "story/3d74aba68f12.html"
-  },
-  {
-   "id": "6922144e7a8d",
-   "title": "F-Secure Identifies 26 Ways AI Can Harm Consumers, and Where to Stop Them",
-   "summary": "New AI Harms Taxonomy traces how harm moves through AI systems, from misleading chatbot answers to compromised autonomous agents, and identifies where defenses can…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "10 Nov 2026, 20:41 UTC",
-   "sources": "Dark Reading",
-   "url": "story/6922144e7a8d.html"
-  },
-  {
-   "id": "8ec6ef10a10a",
-   "title": "Checkmarx Appoints Kobi Sivilya as Chief Information Security Officer",
-   "summary": "Sivilya brings deep cybersecurity and technology leadership to Checkmarx as AI transforms software development.",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "10 Nov 2026, 20:35 UTC",
-   "sources": "Dark Reading",
-   "url": "story/8ec6ef10a10a.html"
-  },
-  {
-   "id": "d6fe2bb7d331",
-   "title": "How to Assess OT Incident Response Preparedness",
-   "summary": "Cloud Range's free 28-question OT Cyber Readiness Assessment helps organizations identify gaps in operational technology (OT) incident response.",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "10 Nov 2026, 20:18 UTC",
-   "sources": "Dark Reading",
-   "url": "story/d6fe2bb7d331.html"
   },
   {
    "id": "c8b26857299e",
@@ -2969,26 +2949,6 @@
    "date": "10 Nov 2026, 21:12 UTC",
    "sources": "Ars Technica Security",
    "url": "story/b686da68349e.html"
-  },
-  {
-   "id": "230bcad0faf3",
-   "title": "Japanese furniture giant Nitori says hackers stole 37.6M customer records",
-   "summary": "Nitori, a major Japanese furniture and home accessories retailer, discovered that an attacker accessed a system on its network and may have stolen 37.62 million customer…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "10 Nov 2026, 20:54 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/230bcad0faf3.html"
-  },
-  {
-   "id": "7b115936c314",
-   "title": "Finally, Payment by Bank Transfer Comes to Have I Been Pwned",
-   "summary": "This is simultaneously the most boring yet exciting blog title I've written in a long time. How you pay for services isn't exactly a sexy topic, but it solves a problem…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "10 Nov 2026, 20:26 UTC",
-   "sources": "Troy Hunt",
-   "url": "story/7b115936c314.html"
   }
  ]
 }

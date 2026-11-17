@@ -2884,6 +2884,25 @@
    "instructions_checked": true
   },
   {
+   "id": "6b530aaeb2ca",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Researchers Claim Two RCE Exploits That Bypass Telegram’s New Android Defenses",
+   "link": "https://thehackernews.com/2026/11/researchers-claim-two-rce-exploits-that.html",
+   "published": "2026-11-17T19:34:20+00:00",
+   "summary": "A malicious widget can bypass the security filter that Telegram added to its Android app last week and run code outside it, according to NebuSec, a security company. Widgets are small interactive blocks that bots send inside chat messages, and their JavaScript runs on the user's phone. The researchers ran their…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpVlnQrxQ-QDawosxNpQdcPtITzUQKuYeqUtOk0gctwRhi-8P9Qi_9L72cSwkHRdGNS94HaIDHEkqeb0NTPw3mIZyFstN3ZM1FlUoMweKPNz4iTkAkxlxFSNdE92DAFlfLMFe0gTXWE78eOHROSbISVMgdmFOeVhm0SS2-1wXrNxPGknTVMGroQ0pRqYg/s1600/telegram-rce.jpg",
+   "cves": [],
+   "first_seen": "2026-11-17T20:55:05.232897+00:00",
+   "instructions": [
+    "It also added a seccomp filte r, which can block or record the system calls that the process makes.",
+    "A comment above the setting says how long that will last: \"Audit until the logs from the devices say the engine never makes them.\" The published code does not show whether the version people install uses the same setting."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "b69860df4218",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -3611,28 +3630,6 @@
    "instructions_checked": true
   },
   {
-   "id": "612ae5f08dba",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Microsoft’s Patch Tuesday surpasses 1,000 bugs for second month in a row",
-   "link": "https://therecord.media/patch-tuesday-microsoft-1000-bugs-again",
-   "published": "2026-11-10T20:55:00+00:00",
-   "summary": "An exploited Outlook vulnerability drew most of the attention in Microsoft's latest Patch Tuesday, which listed 1,093 bugs total.",
-   "image": "https://cms.therecord.media/uploads/dasharath_sunar_Zgg_U_Qp_H_Ik4_unsplash_8d073f1390.jpg",
-   "cves": [],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00",
-   "image_checked": true,
-   "instructions": [
-    "More than 1,000 vulnerabilities were disclosed by Microsoft in the latest Patch Tuesday release as federal cybersecurity officials ordered civilian agencies to patch exploited bugs from Google, Barracuda and Cisco.",
-    "The Cybersecurity and Infrastructure Security Agency (CISA) added the vulnerability to its Known Exploited Vulnerabilities catalog and gave federal agencies until the end of the month to patch it.",
-    "Several experts said CVE-2026-124194 was the only exploited bug outlined in Microsoft’s Patch Tuesday release but there were 63 vulnerabilities rated critical.",
-    "CISA gave federal agencies until Friday to patch CVE-2026-116606 and CVE-2026-111560 — two bugs affecting Barracuda's email security product."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "2b63f8aad1bf",
    "source": "therecord",
    "source_name": "The Record",
@@ -4169,28 +4166,6 @@
     "While it works to resolve the bug, Microsoft said IT administrators can reach out to Microsoft Support for Business for a mitigation that can address the issue until a fix is available.",
     "In September, Microsoft also shared a temporary workaround for SQL Server crashes on some Windows Server 2025 due to recent memory management changes.",
     "Microsoft has confirmed that Windows updates released since the October 2026 Patch Tuesday are causing SQL Server performance and stability issues."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "9814f0299437",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Microsoft releases Windows 10 KB5131096 extended security update",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-10-kb5131096-extended-security-update/",
-   "published": "2026-11-10T20:04:36+00:00",
-   "summary": "Microsoft released the Windows 10 KB5131096 extended security update, which includes this month's November 2026 Patch Tuesday fixes and a few bug fixes and changes.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2024/09/10/windows-10-gradient.jpg",
-   "cves": [],
-   "first_seen": "2026-11-10T20:15:59.967236+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Microsoft releases Windows 10 KB5131096 extended security update",
-    "Microsoft released the Windows 10 KB5131096 extended security update, which includes this month's November 2026 Patch Tuesday fixes and a few bug fixes and changes.",
-    "Microsoft no longer releases new features for Windows 10, and the KB5131096 update mainly includes security updates and bug fixes.",
-    "Microsoft releases Windows 10 KB5126657 extended security update"
    ],
    "instructions_checked": true
   },
@@ -4851,22 +4826,22 @@
    "instructions_checked": true
   },
   {
-   "id": "230bcad0faf3",
+   "id": "1dff6dd6c93a",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
    "official": false,
    "source_type": "news",
-   "title": "Japanese furniture giant Nitori says hackers stole 37.6M customer records",
-   "link": "https://www.bleepingcomputer.com/news/security/japanese-furniture-giant-nitori-says-hackers-stole-376m-customer-records/",
-   "published": "2026-11-10T20:54:55+00:00",
-   "summary": "Nitori, a major Japanese furniture and home accessories retailer, discovered that an attacker accessed a system on its network and may have stolen 37.62 million customer records.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/10/nitori.jpg",
+   "title": "Japan takes Fugaku supercomputer offlline after cyberattack",
+   "link": "https://www.bleepingcomputer.com/news/security/japan-takes-fugaku-supercomputer-offlline-after-cyberattack/",
+   "published": "2026-11-17T20:51:21+00:00",
+   "summary": "The Fugaku supercomputer operated by Japan's RIKEN Center for Computational Science has been taken offline following a security breach.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/17/RIKEN.jpg",
    "cves": [],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00",
+   "first_seen": "2026-11-17T20:55:05.232897+00:00",
    "image_checked": true,
    "instructions": [
-    "BleepingComputer has contacted Nitori with questions about the incident, and we will update this post when we get a reply.",
-    "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
+    "Users are advised to revoke any SSH keys and other credentials stored on Fugaku, and watch out for suspicious emails impersonating RIKEN.",
+    "In response to the incident, RIKEN shut down Fugaku on November 14, disabled users’ login keys, and asked users to revoke and replace any credentials they had stored on the supercomputer."
    ],
    "instructions_checked": true
   },
@@ -5115,7 +5090,7 @@
    "title": "Tor releases emergency update amid ongoing DDoS attack",
    "link": "https://www.bleepingcomputer.com/news/security/tor-releases-emergency-update-amid-ongoing-ddos-attack/",
    "published": "2026-11-17T18:04:15+00:00",
-   "summary": "",
+   "summary": "The Tor Project has released a security update for its network relay software to increase defenses against an ongoing distributed denial-of-service attack that it says has overwhelmed relays and affected most operators.",
    "image": "https://www.bleepstatic.com/content/hl-images/2020/08/19/Tor-headpic.jpg",
    "cves": [],
    "first_seen": "2026-11-17T18:34:19.414923+00:00",
@@ -5228,6 +5203,28 @@
    ],
    "instructions_checked": true,
    "image_checked": true
+  },
+  {
+   "id": "f49e9f798bfe",
+   "source": "cisa",
+   "source_name": "CISA Cybersecurity Advisories",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+   "link": "https://www.cisa.gov/news-events/alerts/2026/11/17/cisa-adds-one-known-exploited-vulnerability-catalog",
+   "published": "2026-11-17T12:00:00+00:00",
+   "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-115731 Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses…",
+   "image": null,
+   "cves": [
+    "CVE-2026-115731"
+   ],
+   "first_seen": "2026-11-17T20:55:05.232897+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
+    "BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "0b6d9bcd8811",
@@ -5639,22 +5636,6 @@
    "instructions_checked": true
   },
   {
-   "id": "6922144e7a8d",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "F-Secure Identifies 26 Ways AI Can Harm Consumers, and Where to Stop Them",
-   "link": "https://www.darkreading.com/application-security/f-secure-26-ways-ai-harm-consumers-where-to-stop-them",
-   "published": "2026-11-10T20:41:45+00:00",
-   "summary": "New AI Harms Taxonomy traces how harm moves through AI systems, from misleading chatbot answers to compromised autonomous agents, and identifies where defenses can intervene.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt850556f866500627/654a5a8e05eb4d040a046894/325351_DR23_Graphics_General_Large_Text_v1.png?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-10T22:04:27.113869+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "46f2978c7d8e",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -5763,22 +5744,6 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blte38664ed1dd3c978/6af4c35c1e561a1b3aa196c5/broken_lock-TU_IS-GettyImages-1369792495.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-12T11:39:19.915532+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "8ec6ef10a10a",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "Checkmarx Appoints Kobi Sivilya as Chief Information Security Officer",
-   "link": "https://www.darkreading.com/cybersecurity-careers/checkmarx-appoints-kobi-sivilya-chief-information-security-officer",
-   "published": "2026-11-10T20:35:34+00:00",
-   "summary": "Sivilya brings deep cybersecurity and technology leadership to Checkmarx as AI transforms software development.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt850556f866500627/654a5a8e05eb4d040a046894/325351_DR23_Graphics_General_Large_Text_v1.png?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00",
    "instructions": [],
    "instructions_checked": true
   },
@@ -5907,22 +5872,6 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt1eb3a07d69de328b/6af4605e4c33022b5dec789d/RMM_panthermedia_Alamy.png?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-11T21:35:52.932632+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "d6fe2bb7d331",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "How to Assess OT Incident Response Preparedness",
-   "link": "https://www.darkreading.com/ics-ot-security/assess-ot-incident-response-preparedness",
-   "published": "2026-11-10T20:18:43+00:00",
-   "summary": "Cloud Range's free 28-question OT Cyber Readiness Assessment helps organizations identify gaps in operational technology (OT) incident response.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt850556f866500627/654a5a8e05eb4d040a046894/325351_DR23_Graphics_General_Large_Text_v1.png?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00",
    "instructions": [],
    "instructions_checked": true
   },
@@ -7599,22 +7548,6 @@
     "SecurityWeek has emailed Uber for additional information on the data breach and will update this article if the company responds.",
     "No Signs of Hacking in FAA Ground Stop as FBI Reportedly Probes Software Update"
    ],
-   "instructions_checked": true
-  },
-  {
-   "id": "7b115936c314",
-   "source": "troyhunt",
-   "source_name": "Troy Hunt",
-   "official": false,
-   "source_type": "news",
-   "title": "Finally, Payment by Bank Transfer Comes to Have I Been Pwned",
-   "link": "https://www.troyhunt.com/finally-payment-by-bank-transfer-comes-to-have-i-been-pwned/",
-   "published": "2026-11-10T20:26:15+00:00",
-   "summary": "This is simultaneously the most boring yet exciting blog title I've written in a long time. How you pay for services isn't exactly a sexy topic, but it solves a problem that's been a massive bugbear for a long time. Here's a brief history of the issue: many organisations have policies that make it extremely hard to…",
-   "image": "https://storage.ghost.io/c/fb/33/fb3391dc-723d-4e74-b95a-d641b5feb38e/content/images/2026/11/image.jpg",
-   "cves": [],
-   "first_seen": "2026-11-10T21:10:58.117182+00:00",
-   "instructions": [],
    "instructions_checked": true
   },
   {
