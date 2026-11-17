@@ -76,6 +76,48 @@
    "instructions_checked": true
   },
   {
+   "id": "fe7dfa336613",
+   "source": "windows-blog",
+   "source_name": "Windows Experience Blog",
+   "official": false,
+   "source_type": "vendor_blog",
+   "title": "Microsoft Ignite 2026: Building Windows for the next era of work",
+   "link": "https://blogs.windows.com/windowsexperience/2026/11/17/microsoft-ignite-2026-building-windows-for-the-next-era-of-work/",
+   "published": "2026-11-17T18:20:56+00:00",
+   "summary": "Every major shift in computing has changed what people can do at work, and Windows has been at the center. Today, it runs critical work inside your organizations, on over a billion devices across the world. That is a privilege and a responsibility. I t’s why, above all else, we’re moving faster than ever on security…",
+   "image": "https://blogs.windows.com/wp-content/uploads/sites/2/2026/11/Windows-Endpoint-Security-Platform.png",
+   "cves": [],
+   "first_seen": "2026-11-17T18:34:19.414923+00:00",
+   "instructions": [
+    "Policies such as Wi-Fi and VPN apply, within minutes and stay protected from drift, even when a device is offline.",
+    "Test Windows Server 2028 in the Windows Insider Program for Windows Server , or apply to the Windows Server TAP for earlier access.",
+    "With Windows administrator protection, now generally available, IT can enable local administrators to run with standard user privileges by default.",
+    "With Microsoft Intune Enterprise App Management, IT can deploy and manage apps at scale and can now preview automatic updates not just for the applications they deploy, but the applications people install themselves, with the same controls and deadlines they know from Windows Autopatch."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "32a8bc53e2b0",
+   "source": "windows-blog",
+   "source_name": "Windows Experience Blog",
+   "official": false,
+   "source_type": "vendor_blog",
+   "title": "Windows security at Ignite 2026: Start secure, protect what matters, prepare for AI",
+   "link": "https://blogs.windows.com/windowsexperience/2026/11/17/windows-security-at-ignite-2026-start-secure-protect-what-matters-prepare-for-ai/",
+   "published": "2026-11-17T18:15:58+00:00",
+   "summary": "AI is changing the threat landscape as fast as it is changing the way we work. Attackers are using AI to find vulnerabilities, build exploits and scale their campaigns faster than ever, shrinking the time between a weakness being discovered and being used against an organization. In this environment, the fundamentals…",
+   "image": "https://blogs.windows.com/wp-content/uploads/sites/2/2026/11/Ignite-Partners.png",
+   "cves": [],
+   "first_seen": "2026-11-17T18:34:19.414923+00:00",
+   "instructions": [
+    "Devices that are configured securely and patched quickly remain one of the most effective defenses, and the security strategy you have for your users and data must now extend to AI and agents as well.",
+    "A trusted foundation must also prepare for threats that emerge before they become practical at scale.",
+    "Organizations must remain confident in their IT security as technology evolves.",
+    "Windows can help enforce identity and security controls on the devices where people, apps, and data intersect."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "ffa56d89e25e",
    "source": "borncity",
    "source_name": "Born's IT and Windows Blog",
@@ -2419,27 +2461,6 @@
    "instructions_checked": true
   },
   {
-   "id": "9398616ade4d",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Hackers Exploit Critical Xen Orchestra Auth Bypass Flaw to Gain Admin Access",
-   "link": "https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html",
-   "published": "2026-11-10T18:12:21+00:00",
-   "summary": "French software company Vates VMS has warned of a critical security vulnerability in Xen Orchestra that it said is being actively exploited in the wild. The authentication bypass flaw, which does not yet have a CVE identifier, is tracked as VSA-2026-062. \"REST cookie parsing turns authenticationToken=j:%7B%7D into…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMH_u7t-U3KIejAItsfC_js20xJgxT2ITYLsR0DAxzfcwDvPrzBHkpZlDuALWPnACOoknX2IALwHIUxIzfhbA24M7e8cGWTZpBMWqpX-wn6xqe8_U3fAtnR-9RsRdFHMCjvNnBsMXrEUKhVYS5bbTGL3B50UMO0aydtHIomY89s2iDAQMq0jXJJ3vh4Nvi/s1600/XEN-attack.jpg",
-   "cves": [],
-   "first_seen": "2026-11-10T20:15:59.967236+00:00",
-   "instructions": [
-    "If immediate patching is not an option, the following mitigations are advised -",
-    "Block the IP address and domain associated with malicious activity",
-    "Block the empty token in a web application firewall (WAF) or a reverse proxy",
-    "Rotate all passwords and secrets in Vates VMS if indicators of compromise are detected"
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "9e0cc84d062d",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -3016,25 +3037,6 @@
    "instructions": [
     "\"Because GSocket relays traffic through a shared public network, there is no threat actor-owned IP address or domain to block,\" Microsoft said .",
     "\"CVE-2026-64563 is a one-line state-reset bug in rhashtable, the Linux kernel's shared resizable hash table,\" Microsoft said ."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "3ac35ff64736",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Three China-Nexus Espionage Campaigns Linked Through Sparrow Malware Ecosystem",
-   "link": "https://thehackernews.com/2026/11/three-china-nexus-espionage-campaigns.html",
-   "published": "2026-11-10T17:43:23+00:00",
-   "summary": "Three distinct threat activity clusters with shared infrastructure and malware code similarities have been observed targeting telecommunications providers, government organizations, military entities, research institutions, and critical infrastructure across Latin America, Asia, and Europe over the past year. Check…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJzh3KQXtsNe_Hb53sMmMSiGIRHL-ybly73FQY1F-RNeFR181cAeiYkvBDi80Upvlea0WqHLNW6ydto2DhfeD3PlISviNhaTUtVBdQMziXOtKybeWLKj7O3UmmeKP0vGX5ufVBkf1dbShyphenhyphenXgawm2sMttXPfbTTDtmYxbXo7Lw0jkGXtt-E-X7W7PtNxfD-/s1600/chinese-telecom.jpg",
-   "cves": [],
-   "first_seen": "2026-11-10T20:15:59.967236+00:00",
-   "instructions": [
-    "Visitors to the sites are greeted by a Google Chrome SSL certificate warning that instructs users to install a \"Certificate Fix\" utility to restore access.",
-    "It establishes persistence by means of a Windows Registry Run key that masquerades as a Windows update assistant."
    ],
    "instructions_checked": true
   },
@@ -4205,28 +4207,6 @@
    "instructions_checked": true
   },
   {
-   "id": "33bc3cf0f92e",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Windows 11 KB5132061 & KB5131087 cumulative updates released",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5132061-and-kb5131087-cumulative-updates-released/",
-   "published": "2026-11-10T18:33:26+00:00",
-   "summary": "Microsoft has released the Patch Tuesday Windows 11 and cumulative updates for versions 26H2/25H2/24H2 and 23H2 to fix security vulnerabilities and bugs, and add new features.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2024/07/18/Windows11.jpg",
-   "cves": [],
-   "first_seen": "2026-11-10T19:26:22.708651+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Microsoft has released the Patch Tuesday Windows 11 KB513261 and KB5131087 cumulative updates for versions 26H2/25H2/24H2 and 23H2 to fix security vulnerabilities and bugs and add new features.",
-    "The Device Info card on the Settings Home page, first introduced in the March 2026 preview update KB5079391 , is expanding to additional markets.",
-    "Today's updates are mandatory as they contain the November 2026 Patch Tuesday security patches for hundreds of vulnerabilities discovered in previous months.",
-    "You can install today's update by going to Start > Settings > Windows Update and clicking on 'Check for Updates .'"
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "1cea14202697",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -5051,6 +5031,50 @@
    "instructions_checked": true
   },
   {
+   "id": "a2076d4177b9",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Researchers hijack Hugging Face account for popular Kokoro AI model",
+   "link": "https://www.bleepingcomputer.com/news/security/researchers-hijack-hugging-face-account-for-popular-kokoro-ai-model/",
+   "published": "2026-11-17T18:21:24+00:00",
+   "summary": "A Lack of ownership verification on the Hugging Face platform allowed researchers to take control of Kokoro, a text-to-speech model used in projects from Google, NVIDIA, AMD, Intel, and Amazon Web Services.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/07/20/Hugging-Face-headpic.jpg",
+   "cves": [],
+   "first_seen": "2026-11-17T18:34:19.414923+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Although its developer, Hexgrad, has not pushed an update since April 2025, the project continues to be popular, with nearly 13 million monthly downloads on Hugging Face.",
+    "Over the past weekend, the researchers registered the “hexgrad.com” domain listed on Kokoro’s public DONATE.md file and used it to perform a password reset on the publisher’s account.",
+    "The researcher underlines that an update would still carry all the hallmarks of a legitimate release, as tests from another account showed that Hugging Face would not flag anything as suspicious.",
+    "Hertz says even non-hijacked accounts could pose a risk, as anyone can curate an ostensibly legitimate image for a period of time, then push a malicious update at some point."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "6b32b3a76586",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Tor releases emergency update amid ongoing DDoS attack",
+   "link": "https://www.bleepingcomputer.com/news/security/tor-releases-emergency-update-amid-ongoing-ddos-attack/",
+   "published": "2026-11-17T18:04:15+00:00",
+   "summary": "",
+   "image": "https://www.bleepstatic.com/content/hl-images/2020/08/19/Tor-headpic.jpg",
+   "cves": [],
+   "first_seen": "2026-11-17T18:34:19.414923+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Relay operators are urged to upgrade to version 0.4.9.17 as soon as possible.",
+    "Microsoft releases Windows 10 KB5126657 extended security update",
+    "The Tor Project has released a security update for its network relay software to increase defenses against an ongoing distributed denial-of-service attack that it says has overwhelmed relays and affected most operators.",
+    "The project says this update includes a security fix to improve relay defenses against denial-of-service attacks."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "bbb8a6727085",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -5173,7 +5197,8 @@
     "Siemens has released new versions for several affected products and recommends to update to the latest versions.",
     "Siemens is preparing further fixes and recommends mitigations for products where fixes are not or not yet available."
    ],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "3fc70062a296",
@@ -5196,7 +5221,8 @@
     "Siemens strongly recommends applying the provided security updates using the corresponding tooling and documented procedures made available with the product.",
     "This ICSA is a verbatim republication of Siemens ProductCERT SSA-045512 from a direct conversion of the vendor's Common Security Advisory Framework (CSAF) advisory."
    ],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "0326dcbca7c7",
@@ -5219,7 +5245,8 @@
     "Siemens has released new versions for several affected products and recommends to update to the latest versions.",
     "Siemens is preparing further fixes and recommends specific mitigations for products where fixes are not or not yet available."
    ],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "3fea90422b4e",
@@ -5242,7 +5269,8 @@
     "In order to operate the devices in a protected IT environment, Siemens recommends configuring the environment according to Siemens' operational guidelines for Industrial Security ( https://www.siemens.com/cert/operational-guidelines-industrial-security ), and to follow the recommendations in the product manuals.",
     "This ICSA is a verbatim republication of Siemens ProductCERT SSA-898633 from a direct conversion of the vendor's Common Security Advisory Framework (CSAF) advisory."
    ],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "d1b92d164acb",
@@ -5266,7 +5294,8 @@
     "In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security ( https://www.siemens.com/cert/operational-guidelines-industrial-security ), and to follow the recommendations in the product manuals.",
     "This ICSA is a verbatim republication of Siemens ProductCERT SSA-566512 from a direct conversion of the vendor's Common Security Advisory Framework (CSAF) advisory."
    ],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "2662cf713828",
@@ -5881,7 +5910,7 @@
    "source_name": "Dark Reading",
    "official": false,
    "source_type": "news",
-   "title": "Ransomware Attacks Increase Behind AI, But Payments Decline",
+   "title": "Ransomware Attacks Increase Behind AI, but Payments Decline",
    "link": "https://www.darkreading.com/threat-intelligence/ransomware-attacks-increase-ai-payments-decline",
    "published": "2026-11-16T19:56:05+00:00",
    "summary": "Large language models and other AI systems allow a growing number of ransomware groups to create convincing phishing emails and identify sensitive data quickly.",
@@ -6252,23 +6281,23 @@
    "instructions_checked": true
   },
   {
-   "id": "4893b7f6453d",
+   "id": "b420612fe6cb",
    "source": "securityweek",
    "source_name": "SecurityWeek",
    "official": false,
    "source_type": "news",
-   "title": "Adobe Patches 110 Vulnerabilities Across 9 Products",
-   "link": "https://www.securityweek.com/adobe-patches-110-vulnerabilities-across-9-products/",
-   "published": "2026-11-10T18:11:54+00:00",
-   "summary": "Adobe has fixed vulnerabilities in AEM, Premiere, Photoshop, After Effects, Connect, Audition, Dimension, Content Credentials SDK, and Media Encoder. The post Adobe Patches 110 Vulnerabilities Across 9 Products appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2023/07/Adobe.jpg",
+   "title": "AI Framework Autonomously Weaponized Flaws in Real Attacks, Google Says",
+   "link": "https://www.securityweek.com/ai-framework-autonomously-weaponized-flaws-in-real-attacks-google-says/",
+   "published": "2026-11-17T18:16:17+00:00",
+   "summary": "Threat actors are deploying multi-agent offensive frameworks to increase the velocity of multi-stage intrusions. The post AI Framework Autonomously Weaponized Flaws in Real Attacks, Google Says appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/07/AI-Chatbot-GenAI-artificial-intelligence.jpg",
    "cves": [],
-   "first_seen": "2026-11-10T18:25:23.300263+00:00",
+   "first_seen": "2026-11-17T18:34:19.414923+00:00",
    "image_checked": true,
    "instructions": [
-    "Adobe’s November 2026 Patch Tuesday updates fix roughly 110 vulnerabilities across nine products.",
-    "Chrome Update Patches Exploited XML Zero-Day, Eighth This Year",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+    "Defenders must do two things at once: nail the cybersecurity fundamentals today and accelerate the shift toward automated defenses that can detect and respond at machine speed,” Hartman added.",
+    "The Jieyou phishing service, active since March 2026, has a model-agnostic chatbot that allows clients to configure phishing panels and modify templates.",
+    "Water utilities, hospitals, and regional electric utilities that struggle to patch on a monthly cycle can’t win that race manually."
    ],
    "instructions_checked": true
   },
