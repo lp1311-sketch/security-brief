@@ -76,6 +76,27 @@
    "instructions_checked": true
   },
   {
+   "id": "e6f27bb6bf22",
+   "source": "windows-blog",
+   "source_name": "Windows Experience Blog",
+   "official": false,
+   "source_type": "vendor_blog",
+   "title": "Edge for Business becomes the most used enterprise browser and unveils Ignite 2026 innovations",
+   "link": "https://blogs.windows.com/msedgedev/2026/11/17/edge-for-business-ignite-2026-innovations/",
+   "published": "2026-11-17T18:40:43+00:00",
+   "summary": "https://www.youtube.com/watch?v=eK7msluMltY Summary: Edge for Business is the most used enterprise browser in the world. At Microsoft Ignite 2026, we're introducing new ways for users and agents to get more done. Deeper integration with Microsoft 365 security capabilities helps IT protect and manage browser activity…",
+   "image": "https://winblogs.thesourcemediaassets.com/sites/33/2026/11/extension-safety.jpg",
+   "cves": [],
+   "first_seen": "2026-11-17T19:47:33.098459+00:00",
+   "instructions": [
+    "At a glance: Through inforcer, MSPs can apply a recommended Edge for Business security baseline across multiple customer tenants on Windows and macOS.",
+    "Whatever the agent, Microsoft or otherwise, it should do its best work in Edge for Business: faster, with fewer tokens, and more accurate results.",
+    "In the future, see which agents are in use and who’s using them, apply policies, and block or quarantine an agent that isn’t approved or is exhibiting risky behavior.",
+    "The best enterprise browser for humans and agents needs more than agent guardrails: a rock-solid security foundation for today’s enterprise browsing must be in place."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "fe7dfa336613",
    "source": "windows-blog",
    "source_name": "Windows Experience Blog",
@@ -482,6 +503,26 @@
     "Dieser Fehler war das Ergebnis einer Korrektur (Update), die speziell für Microsoft 365-Netzwerk-Gateway-Server vorbereitet worden war.",
     "Das Update durchlief \"eine sichere Bereitstellung\" und wurde über mehrere Wochen hinweg weltweit flächendeckend ausgerollt.",
     "Nachdem die Entwickler den Fehler als Ursache bestätigt hatten, entwickelten diese ein Update, das den Codepfad in den zuvor als fehlerfrei bekannten Zustand zurückversetzte."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "d1b13df63e66",
+   "source": "borncity",
+   "source_name": "Born's IT and Windows Blog",
+   "official": false,
+   "source_type": "news",
+   "title": "Apple-Dienste down; NSA Net ebenfalls down … (17.11.2026)",
+   "link": "https://borncity.com/blog/2026/11/17/apple-dienste-down-nsa-net-ebenfalls-down/",
+   "published": "2026-11-17T18:00:38+00:00",
+   "summary": "Es \"rappelt\" weiterhin in den USA. Das von der National Security Agency (NSA) interne zur Kommunikation genutzte interne, streng klassifizierte Netzwerk, ist ausgefallen. Fax geht nicht, weil die Geräte fehlen sollen. Und dann hakt es bei Apples Diensten. Die Apple-Stores … Weiterlesen → Quelle",
+   "image": "https://borncity.com/blog/wp-content/uploads/2021/06/Stop01.jpg",
+   "cves": [],
+   "first_seen": "2026-11-17T19:47:33.098459+00:00",
+   "image_checked": true,
+   "instructions": [
+    "2026 Microsofts Cloud- und E-Mail-Ausfall am 12.11.2026 durch Juli-Update USA schließen alle Flughäfen (13.11.2026) Anbieter Workday nach \"Test\" am 14.11.2026 für Stunden ausgefallen Ausfälle bei US-Banken (16.11.2026)",
+    "ColorOS 17: Update soll Verzögerungen bei Drittanbieter-Launchern beheben News 17."
    ],
    "instructions_checked": true
   },
@@ -2398,29 +2439,6 @@
    "instructions_checked": true
   },
   {
-   "id": "b86930e18372",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Git Patches Flaw That Lets Malicious Repositories Execute Code During Recursive Clones",
-   "link": "https://thehackernews.com/2026/11/git-patches-flaw-that-lets-malicious.html",
-   "published": "2026-11-10T19:23:10+00:00",
-   "summary": "A flaw in Git can let a malicious repository run an attacker's code on a computer that clones it recursively, together with its submodules. The Git project fixed it this week in Git 2.56.1, with matching fixes for the 2.50 through 2.55 series in 2.50.2, 2.51.3, 2.52.1, 2.53.1, 2.54.1 and 2.55.1. The flaw, tracked as…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipoPlLYj_xfJ8bsfRTONwa3estE9I2un_9OBx2fVuxEp-zoiADgipn-gGOeU4TqqyjqjrCpoGXC4jmuF7o1e_PUMbr-QoHDdPZEDWavb4VbjtWbOxMfmz-E9fIPT2DHEXYCN53l2jtiJGVfEFjHsR8gaHeyF59Yii0oTnP73vaslLWPzuideEGxTy6S9U/s1600/gits.jpg",
-   "cves": [
-    "CVE-2026-111760"
-   ],
-   "first_seen": "2026-11-10T20:15:59.967236+00:00",
-   "instructions": [
-    "It advises installing a fixed version from your operating system or Git distributor, and updating any app that ships its own copy of Git.",
-    "With the files reference backend, a later update to that branch can then write outside Git's reference folder.",
-    "As a workaround for this flaw, servers that cannot upgrade yet can add conflict-marker-size=7 to each repository's info/attributes file, or turn off those merge checks for untrusted repositories.",
-    "CVE-2026-114469: A binary patch that expands to a very large size can get past Git's patch size limit of about 1 GiB and crash Git with an out-of-bounds read."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "5af74d5ce665",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2759,6 +2777,29 @@
    "instructions_checked": true
   },
   {
+   "id": "7a7b2eaa4aa9",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Oracle to Patch 11 Java Flaws Today as Critical OpenJDK RCE (CVE-2026-114938) Report Emerges",
+   "link": "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html",
+   "published": "2026-11-17T15:17:36+00:00",
+   "summary": "Oracle is preparing to release security patches for 11 vulnerabilities in Java SE on Tuesday, November 17, 2026, all of which may be exploited remotely without authentication, as separate reports warn of a potentially critical remote code execution (RCE) flaw affecting OpenJDK. The 11 vulnerabilities carry a maximum…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw1l9jYXUC-XLNjqqVjPvFicpQvkj-fwml16Gl43nsTc5TrBGGzijFoCzpxHpfninWaxrDxoCW4J6FKkgO1rPsnVFgFAcMbm9hl9YxeVO6fM4sBrs_tvUOXG8MnKPqDXRal3qNJ2VY7RzqAlj5vJzYI6xVFOxVGV7TyDliY-AIBqKm2bst1d6rCNl2qkhv/s1600/java4shell.jpg",
+   "cves": [
+    "CVE-2026-114938"
+   ],
+   "first_seen": "2026-11-17T19:47:33.098459+00:00",
+   "instructions": [
+    "No official advisory has specified the vulnerable component, precise exploitation requirements, affected version range, or the availability of a fix.",
+    "Oracle advises customers to stop using its current builds of Java 8, 11, 17, 21, 25, and 27 after the November 17 security update and move to the corresponding replacement releases.",
+    "Oracle also warns that the information may change before the complete security advisory is published.",
+    "However, the public information does not establish whether the flaw affects the Java runtime itself, a particular library, or functionality that applications must expose for exploitation to succeed."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "14caa111eec6",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2941,24 +2982,6 @@
    "instructions_checked": true
   },
   {
-   "id": "b958c2272095",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "SGLang RCE Exploit Breaches NEAR AI, Steals Data From 18 Agents and About 100 Users",
-   "link": "https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html",
-   "published": "2026-11-10T19:19:39+00:00",
-   "summary": "An attacker exploited a remote code execution flaw in SGLang, an open-source inference engine, and ran code on one of NEAR AI's inference servers last Sunday. The attacker could also have seen requests being processed on that server that day, including requests sent in confidential mode, the company said earlier this…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifQOwa1ngLZRATbbZyg_iud4SNx-9ugjo2iOG6crnJzatc_uS9FjGScBnNUy-uNIuOEE3Y6kJTpUVMVtOR1bW5sse_pRNJA1SQALCGjshDx6-CF1t8HXlUI2CCb6yp7Uepz6uk3ctMLUlSx4Q36Q7pZcx1nb9wPgbYAZqvd6CnSJ6WM6Kn_ZENtHpESoM/s1600/nearai.jpg",
-   "cves": [],
-   "first_seen": "2026-11-10T20:15:59.967236+00:00",
-   "instructions": [
-    "Affected users heard directly from security@near.ai, with the steps that apply to them."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "d030547d1ad3",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -3057,6 +3080,26 @@
     "A firmware update released earlier this week, version 2.13.1, stops the implants found so far from capturing anything on wallets that run it, the company said, but “the update can’t protect a wallet backup that was captured before it.”",
     "The company will not publish technical details that could help attackers or put customers at risk, it said in an investigation update .",
     "It will post an update if it confirms an implant outside the reseller's wallets or the Safe 5, receives a report of lost funds linked to the implants, or releases new protections."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "033b7c10af0d",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Trigram Campaign Impersonates About 50 AI and Blockchain Brands to Target Devs with Infostealers",
+   "link": "https://thehackernews.com/2026/11/trigram-campaign-impersonates-about-50.html",
+   "published": "2026-11-17T15:17:28+00:00",
+   "summary": "Artificial intelligence (AI), blockchain, and logistics sectors across Europe and the U.S. have emerged as the target of a large-scale, industrialized campaign dubbed Trigram. \"Trigram is a large-scale campaign that impersonates about 50 brands in the blockchain and AI sectors, to trick developers into executing an…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXvywoP0qreCtUhDgAD1y24HevVHwAH9bGo904BuaQ7-amvdkk6Oi8gz8WjF-Hwiu3SinN266QM0KwUX6lDnayGOtMaSEff_b5vybBsdwvDhiai2uGsAlYfMgCdquPmKqaqM6eY54pG9HsMR7X5Sf7M4nkbIaHmWJMBG1uL3ggpJMMvfQR6FbMagqug2QG/s1600/target.jpg",
+   "cves": [],
+   "first_seen": "2026-11-17T19:47:33.098459+00:00",
+   "instructions": [
+    "If a compatible version (minimum version 18) is not found, it proceeds to download and install Node.js version 20.18.1 based on the infected host's operating system and its architecture.",
+    "On macOS and Linux systems, it also displays a fake dialog asking users to enter their system password so as to \"apply system updates and verify drivers and security settings.\" Interestingly, the same payload is delivered via two other initial access vectors -",
+    "A sideloaded Microsoft Visual Studio Code (VS Code) or Cursor extension named \"google-dev-tools.google-update-support\" that's likely launched via a coding assessment and deleted after it's run"
    ],
    "instructions_checked": true
   },
@@ -3271,6 +3314,26 @@
    "instructions_checked": true
   },
   {
+   "id": "3910748ba894",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Chinese state group developing automated attack tool for cyber espionage, Google says",
+   "link": "https://therecord.media/chinese-state-group-developing-automated-attack-tool-espionage",
+   "published": "2026-11-17T18:50:00+00:00",
+   "summary": "Google released its latest AI Threat Tracker report on Monday, writing that threat actors are rapidly evolving their use of artificial intelligence in attacks — now leaning more heavily on autonomous multi-agent offensive frameworks like Artex, CAIRN, CyberStrikeAI and PentAGI to execute multi-stage intrusions at…",
+   "image": "https://cms.therecord.media/uploads/red_digital_f1b63748b1.jpg",
+   "cves": [],
+   "first_seen": "2026-11-17T19:47:33.098459+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Google found another version of the scheme, with North Korean actors conducting ClickFix attacks and breaching a victim’s device, allowing them to pivot into internal code repositories to install code directly into the large language models the companies use.",
+    "Threat actors are also using LLMs to automate labor- and time-intensive phases of vulnerability analysis, allowing them to quickly analyze patches to find bugs — dramatically reducing the window between patch disclosure and exploitation."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "810ecd44c3ac",
    "source": "therecord",
    "source_name": "The Record",
@@ -3437,6 +3500,23 @@
     "The crackdown on Meta’s Facebook platform involved the company’s alleged use of its “camera roll” suggestions option, launched in 2023, to browse Android users’ photo galleries to recommend posts they could enhance with personal photos and videos.",
     "The permission is preceded by a “non-specific notice” to enable other features, the press release said, failing to make clear to users that they are consenting to suggestions from the camera roll, the regulator said."
    ],
+   "instructions_checked": true
+  },
+  {
+   "id": "1e05409f353f",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Kazakh ransomware hacking suspect extradited from Italy",
+   "link": "https://therecord.media/kazakh-suspected-extradited-charges-8-digits-team-inc-lynx",
+   "published": "2026-11-17T19:09:00+00:00",
+   "summary": "The U.S. accused Roman Khlynovskiy of participating in ransomware attacks against healthcare organizations, schools and companies as part of the \"8 Digits Team\" connected with INC and Lynx.",
+   "image": "https://cms.therecord.media/uploads/emergency_room_sign_pexels_rdne_08178c3cee.jpg",
+   "cves": [],
+   "first_seen": "2026-11-17T19:47:33.098459+00:00",
+   "image_checked": true,
+   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -3822,6 +3902,23 @@
    "instructions_checked": true
   },
   {
+   "id": "6b76a35deee9",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Apple reports outages affecting iCloud Mail, AppleCare and more",
+   "link": "https://www.bleepingcomputer.com/news/apple/apple-reports-outages-affecting-icloud-mail-applecare-and-more/",
+   "published": "2026-11-17T19:24:07+00:00",
+   "summary": "Apple is reporting service disruptions affecting several of its services, including iCloud Mail, iCloud Account & Sign In, Apple School Manager, and Schoolwork.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/27/Apple-red.jpg",
+   "cves": [],
+   "first_seen": "2026-11-17T19:47:33.098459+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "16367edd00b6",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4050,28 +4147,6 @@
     "For Windows Server 2025, Windows Server 2022, Windows Server 2019, and Windows 10, the out-of-band updates are available only through the Microsoft Update Catalog.",
     "\"This cumulative update includes the improvements from the November 2026 Windows security update,\" Microsoft added .",
     "Last week, it also acknowledged that Windows updates released since the October Patch Tuesday are triggering SQL Server performance and stability issues and that the November 2026 Windows 11 security updates fail to install on systems with the October 2026 preview update."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "50eb1dccf495",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/",
-   "published": "2026-11-10T19:07:36+00:00",
-   "summary": "Today is Microsoft's November 2026 Patch Tuesday, with security updates addressing a record-breaking 1,235 flaws, including one actively exploited Microsoft Outlook zero-day vulnerability.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2024/10/08/patch_tuesday_microsoft.jpg",
-   "cves": [],
-   "first_seen": "2026-11-10T19:26:22.708651+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Other vendors who released updates or advisories in November 2026 include:",
-    "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day",
-    "Today is Microsoft's November 2026 Patch Tuesday, with security updates addressing a record-breaking 1,235 flaws, including one actively exploited Microsoft Outlook zero-day vulnerability.",
-    "This Patch Tuesday addresses 66 \"Critical\" vulnerabilities, 48 of which are Remote Code Execution (RCE), 15 are Elevation of Privilege (EoP), and three are Use-After-Free in Microsoft Edge."
    ],
    "instructions_checked": true
   },
@@ -4685,27 +4760,6 @@
     "Where payload execution is confirmed, all secrets and cloud roles available to the affected workflows should be considered compromised and rotated immediately.",
     "They then delivered a 1,500-line credential-stealing shell script by modifying an existing GitHub Actions workflow, adding a new workflow on a short-lived branch, or planting an npm install hook.",
     "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day"
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "09de80ae0aa4",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Hackers exploit trusted AWS access to breach multiple cloud environments",
-   "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-trusted-aws-access-to-breach-multiple-cloud-environments/",
-   "published": "2026-11-10T19:31:11+00:00",
-   "summary": "A threat actor used compromised identity and access management (IAM) credentials for a Qubole big data platform's AWS account to access and exfiltrate data from multiple customers' AWS environments.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/08/21/awskey.jpg",
-   "cves": [],
-   "first_seen": "2026-11-10T20:15:59.967236+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Potentially impacted administrators are advised to review CloudTrail from October 1 onward for suspicious access from Qubole’s AWS account, investigate subsequent secret and S3 access, rotate exposed credentials, and revoke active role sessions.",
-    "It is also recommended to remove unused integrations and restrict remaining roles’ permissions, trusted identities, and permitted source networks.",
-    "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
    ],
    "instructions_checked": true
   },
@@ -5569,6 +5623,22 @@
    "instructions_checked": true
   },
   {
+   "id": "e7c273fee4ff",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "Cursor Traces Malicious Claude Code Extension to Third-Party Breach",
+   "link": "https://www.darkreading.com/application-security/cursor-malicious-claude-code-extension-third-party-breach",
+   "published": "2026-11-17T18:38:37+00:00",
+   "summary": "A compromised key issued to AI infrastructure provider Fireworks was used by threat actors to access Cursor data and credentials.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt0ac2db6d8dd7d25d/6afb79babb3cf32830e383ff/cursor_Erman_Gunes_shutterstock.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-17T19:47:33.098459+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "6922144e7a8d",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -5613,22 +5683,6 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt10d089cc23c19918/6af23c18ddd4d34d271f90a5/GettyImages-511970077.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-11T21:35:52.932632+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "80496ac2144f",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "AI Coding Agents Leak Thousands of Secrets to GitHub",
-   "link": "https://www.darkreading.com/cyber-risk/ai-coding-agents-leak-secrets-github",
-   "published": "2026-11-10T18:46:22+00:00",
-   "summary": "A command in Claude Code inadvertently saves files with credentials and other sensitive data to public Git repositories, creating security gaps for organizations.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt048c697c8a84cb6c/6af31954c9740413639c4243/Gorodenkoff-developer-coding-shutterstock.png?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-10T19:26:22.708651+00:00",
    "instructions": [],
    "instructions_checked": true
   },
@@ -6106,6 +6160,28 @@
     "The following defanged indicators were observed in the campaign and should be validated in the context of each environment before blocking.",
     "Quarantine matching messages and remove delivered copies in accordance with organizational response procedures.",
     "Reset credentials and investigate potentially compromised accounts For any user who may have entered credentials, reset the password, revoke active sessions and refresh tokens, and verify multifactor authentication registrations."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "0c7617c3ded4",
+   "source": "msblog",
+   "source_name": "Microsoft Security Blog",
+   "official": false,
+   "source_type": "vendor_blog",
+   "title": "Security for the agentic era, powered by Microsoft Perception",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/17/security-for-the-agentic-era-powered-by-microsoft-perception/",
+   "published": "2026-11-17T18:14:00+00:00",
+   "summary": "A year ago, finding a serious, exploitable vulnerability was slow and expensive work done by elite security researchers. That’s no longer true. Over the past 12 months, frontier AI models have become remarkably good at discovering and exploiting software vulnerabilities, and similar levels of capability are quickly…",
+   "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/11/Security-Ignite_link-prev.jpg",
+   "cves": [],
+   "first_seen": "2026-11-17T19:47:33.098459+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Vulnerability shielding , available in preview , helps protect vulnerable assets from exploitation by applying targeted, temporary protection to buy defenders time before they can apply a permanent patch.",
+    "To mitigate this risk we must discover agents, onboard them to management, secure and contain them, and do it continuously—even as their behavior and context change.",
+    "We believe every organization should be able to see what its AI accesses and does, independently verify those actions, and control what it is permitted to do, whatever model or provider it runs on.",
+    "The more agency we give AI, the more transparency we should expect in return."
    ],
    "instructions_checked": true
   },
@@ -6694,30 +6770,6 @@
     "ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure",
     "Chipmaker Patch Tuesday: Over 200 Vulnerabilities Addressed by Intel, AMD",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "008f66d06450",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Exploited Outlook Zero-Day Among 1,094 Flaws Patched by Microsoft",
-   "link": "https://www.securityweek.com/exploited-outlook-zero-day-among-1094-flaws-patched-by-microsoft/",
-   "published": "2026-11-10T19:19:46+00:00",
-   "summary": "CVE-2026-124194 is the Outlook zero-day for which Microsoft says it’s aware of active exploitation. The post Exploited Outlook Zero-Day Among 1,094 Flaws Patched by Microsoft appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2023/03/Microsoft-Outlook-CVE-2023-23397.jpg",
-   "cves": [
-    "CVE-2026-124194"
-   ],
-   "first_seen": "2026-11-10T19:26:22.708651+00:00",
-   "image_checked": true,
-   "instructions": [
-    "The company’s advisory provides no information about the observed attacks.",
-    "Microsoft’s advisory credits a researcher using the moniker ‘nono’ and Benoît Sevens with the discovery.",
-    "Microsoft’s November 2026 Patch Tuesday updates fix 1,094 vulnerabilities across its products, including an Outlook bug that the company says has been exploited.",
-    "Adobe’s latest Patch Tuesday updates fix roughly 110 vulnerabilities across nine products."
    ],
    "instructions_checked": true
   },
