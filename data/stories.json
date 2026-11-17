@@ -157,50 +157,6 @@
    "instructions_checked": true
   },
   {
-   "id": "b8fa5d77ef9f",
-   "source": "borncity",
-   "source_name": "Born's IT and Windows Blog",
-   "official": false,
-   "source_type": "news",
-   "title": "Patchday: Windows 10/11 Updates (10. November 2026)",
-   "link": "https://borncity.com/blog/2026/11/11/patchday-windows-10-11-updates-10-november-2026/",
-   "published": "2026-11-10T23:01:35+00:00",
-   "summary": "Am 10. November 2026 (zweiter Dienstag im Monat, Patchday bei Microsoft) hat Microsoft kumulative Updates für die noch unterstützten Client-Betriebssystem-Versionen von Windows 10 (mit ESU-Lizenz) und Windows 11 veröffentlicht. Hier einige Details zu diesen Updates, die Schwachstellen sowie Probleme beheben ……",
-   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Windows-klein.jpg",
-   "cves": [],
-   "first_seen": "2026-11-10T23:20:59.545357+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Das kumulative Update KB513206 für Windows 11 24H2-26H2 beinhaltet Qualitätsverbesserungen aus dem Preview-Update Windows 11 25H2 – 26H2: Preview Update KB5127936 (28.",
-    "Das kumulative Update KB5131087 für Windows 11 23H2 Enterprise und Education beinhaltet Qualitätsverbesserungen sowie Sicherheitspatches.",
-    "Das kumulative Update KB5131096 enthält diverse Sicherheitsfixes und ist für Windows 10 21H2 Enterprise LTSC sowie ESU-Maschinen mit 22H2 verfügbar.",
-    "Das kumulative Update KB5131085 (wird unter Windows 10 v1809 einsortiert, bezieht sich aber auf Windows 10 2019 Enterprise LTSC und IoT Enterprise LTSC) und beinhaltet Sicherheitsfixes sowie folgende Korrekturen."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "3a27872e1b8c",
-   "source": "borncity",
-   "source_name": "Born's IT and Windows Blog",
-   "official": false,
-   "source_type": "news",
-   "title": "Patchday: Windows Server-Updates (10. November 2026)",
-   "link": "https://borncity.com/blog/2026/11/11/patchday-windows-server-updates-10-november-2026/",
-   "published": "2026-11-10T23:03:13+00:00",
-   "summary": "Zum 10. November 2026 (zweiter Dienstag im Monat, Patchday bei Microsoft) wurden verschiedene kumulative Updates für die unterstützten Versionen von Windows Server freigegeben. Nachfolgend habe ich die bereitgestellten Updates samt einigen Details für diese Windows Server-Versionen herausgezogen. Die nachfolgend…",
-   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Windows-klein.jpg",
-   "cves": [],
-   "first_seen": "2026-11-10T23:20:59.545357+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Für Windows Server 2025 wurde das kumulative Update KB5131080 freigegeben, welches Sicherheitspatches und diverse Fixes beinhaltet.",
-    "Für Windows Server 2022 wurde das kumulative Update KB5131090 freigegeben, welches Sicherheitspatches und diverse Bug-Fixes beinhaltet.",
-    "Das kumulative Update KB5131085 steht nicht nur für Windows 10 2019 Enterprise LTSC etc. bereit, sondern auch für Windows Server 2019.",
-    "Das kumulative Update KB5131291 steht nicht nur für Windows 10 2016 Enterprise LTSC, sondern auch für Windows Server 2016, bereit."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "833af69e5de2",
    "source": "borncity",
    "source_name": "Born's IT and Windows Blog",
@@ -4503,6 +4459,28 @@
    "instructions_checked": true
   },
   {
+   "id": "126567e065a7",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Critical Java4Shell flaw allows RCE attacks on major Java applications",
+   "link": "https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications/",
+   "published": "2026-11-17T23:04:21+00:00",
+   "summary": "A critical vulnerability dubbed Java4Shell in OpenJDK, the open-source implementation of Java, can allow unauthenticated attackers to remotely execute code on popular enterprise applications, including Jenkins, Atlassian Jira, Confluence, and Keycloak.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/17/java4shell-header.jpg",
+   "cves": [],
+   "first_seen": "2026-11-17T23:52:03.785728+00:00",
+   "image_checked": true,
+   "instructions": [
+    "However, these workarounds are temporary mitigations, and all developers should update the Java runtimes to the latest version.",
+    "The company recommends that customers apply the available security patches as soon as possible.",
+    "However, the researchers said Java4Shell does not have a universal exploit, and attackers must find an application-dependent way to deliver malicious Base64 data to the vulnerable decoder to achieve code execution.",
+    "For those who cannot immediately update their Java implementations, Calif recommends disabling the vulnerable hardware-accelerated Base64 functionality by launching OpenJDK with the -XX:-UseBASE64Intrinsics option."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "403e4bdfaeb6",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -5970,28 +5948,6 @@
    "cves": [],
    "first_seen": "2026-11-16T19:25:00.023837+00:00",
    "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "f91527c7bf88",
-   "source": "msblog",
-   "source_name": "Microsoft Security Blog",
-   "official": false,
-   "source_type": "vendor_blog",
-   "title": "Detecting sleeper agents hiding in AI model neurons",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/10/detecting-sleeper-agents-hiding-in-ai-model-neurons/",
-   "published": "2026-11-10T23:00:00+00:00",
-   "summary": "Microsoft Research has released new threat research detailing how a capable agent model could be turned into a sleeper agent by editing fewer than 10 neurons to inject a short payload. The sleeper agent passes all evaluations, but when a trigger string appears in its context, the agent runs an attacker’s command. And…",
-   "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/11/backdoor-AI-agents.png",
-   "cves": [],
-   "first_seen": "2026-11-11T01:00:41.154086+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Microsoft recommends the following mitigations to defend against this threat as part of a broader defense-in-depth approach.",
-    "Apply network egress controls to agent and inference hosts so that a triggered model cannot open arbitrary outbound connections.",
-    "Apply attack surface reduction rules to devices that host local agents and inference servers, starting in audit mode.",
-    "Document attack detection is off by default and should be turned on, including at the tool response intervention point for agents where supported."
-   ],
    "instructions_checked": true
   },
   {

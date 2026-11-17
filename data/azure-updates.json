@@ -1,6 +1,55 @@
 {
  "items": [
   {
+   "id": "e516df2ab922",
+   "title": "[In preview] Pulic Preview: Azure Elastic SAN Next Generation",
+   "link": "https://azure.microsoft.com/updates?id=581634",
+   "summary": "Azure Elastic SAN Next Generation is now in public preview. Elastic SAN Next Generation keeps the core benefits customers value in Elastic SAN today: a single SAN resource hierarchy to consolidate block storage workloads and dynamically share performance,",
+   "published": "2026-11-17T22:54:18+00:00"
+  },
+  {
+   "id": "6273cc0bf486",
+   "title": "[In preview] Limited Preview: Azure Workload Center for SAP and Azure Copilot Run SAP Agent",
+   "link": "https://azure.microsoft.com/updates?id=581209",
+   "summary": "Azure Workload Center for SAP, together with the Azure Copilot Run SAP Agent, is a workload-aware experience, powered by Workload Virtual Instance (WVI) for operating SAP workloads on Azure. Azure Workload Center for SAP helps teams understand workload he",
+   "published": "2026-11-17T22:48:10+00:00"
+  },
+  {
+   "id": "9d6ad63167c9",
+   "title": "[In preview] Limited Preview: Azure Workload Center for Oracle and Azure Copilot Run Oracle Agent",
+   "link": "https://azure.microsoft.com/updates?id=581214",
+   "summary": "Azure Workload Center for Oracle, together with the Azure Copilot Run Oracle Agent, is a workload-aware experience, powered by Workload Virtual Instance (WVI) for operating Oracle workloads on Azure. Azure Workload Center for Oracle helps teams understand",
+   "published": "2026-11-17T22:46:30+00:00"
+  },
+  {
+   "id": "ee2e4007fd09",
+   "title": "[In preview] Public Preview: Database Agent for SQL with contextual Copilot",
+   "link": "https://azure.microsoft.com/updates?id=580091",
+   "summary": "Database Agent now gives you AI-generated, evidence-grounded recommendations for detected database issues, including why the issue matters, the likely cause, and the recommended next step. Recommendations draw on available issue evidence and Microsoft-aut",
+   "published": "2026-11-17T22:43:01+00:00"
+  },
+  {
+   "id": "af7d5bd38b90",
+   "title": "[Launched] Generally Available: Database Hub real-time performance dashboards",
+   "link": "https://azure.microsoft.com/updates?id=579644",
+   "summary": "Database Hub in Microsoft Fabric gives you built-in, real-time performance dashboards for Microsoft SQL, Azure Database for PostgreSQL flexible server, and Azure Cosmos DB in one place. From the Performance page, you can track CPU, memory, storage, IO, co",
+   "published": "2026-11-17T22:42:06+00:00"
+  },
+  {
+   "id": "86348c23402d",
+   "title": "[In development] Private Preview: Azure DH/EHasv8 VMs based on 6th Gen AMD EPYC™ (“Venice”) processors",
+   "link": "https://azure.microsoft.com/updates?id=581308",
+   "summary": "We are announcing the preview of the new Azure DHasv8, DHalsv8 and EHasv8-series virtual machines (VMs), powered by 6th Generation AMD EPYC™ (“Venice”) processors. Designed for the next generation of cloud applications, these VMs deliver expanded compute",
+   "published": "2026-11-17T22:40:50+00:00"
+  },
+  {
+   "id": "e1b1cb560812",
+   "title": "[In preview] Public Preview: Azure SQL DB Hyperscale Cross Database Querying",
+   "link": "https://azure.microsoft.com/updates?id=579221",
+   "summary": "Native cross-database queries in Azure SQL Database Hyperscale let applications access and join data across databases in the same Hyperscale elastic pool on a logical server, using familiar T-SQL three-part names such as `database.schema.object`. This ena",
+   "published": "2026-11-17T22:35:29+00:00"
+  },
+  {
    "id": "5861e2b2d57f",
    "title": "[Launched] Generally Available: Near-instant provisioning for Azure DocumentDB clusters",
    "link": "https://azure.microsoft.com/updates?id=579349",
@@ -96,55 +145,6 @@
    "title": "[Launched] Generally Available: IBM Spectrum LSF integration with Azure Compute Fleet",
    "link": "https://azure.microsoft.com/updates?id=581259",
    "summary": "IBM Spectrum LSF integrates with Azure Compute Fleet for elastic, cost-efficient HPC workload orchestration.The IBM LSF Resource Connector for Azure Compute Fleet provisions and releases compute capacity based on workload demand. Extend on-premises LSF en",
-   "published": "2026-11-17T20:00:32+00:00"
-  },
-  {
-   "id": "2fb7d339ecdb",
-   "title": "[In preview] Public Preview: Azure Artifact Validation for VM images",
-   "link": "https://azure.microsoft.com/updates?id=581249",
-   "summary": "Azure Artifact Validation, in public preview, lets VM image publishers and enterprise platform teams run Azure's certification-grade quality and security checks on their images in their own Azure subscriptions, at any point in the build process.Previously",
-   "published": "2026-11-17T20:00:32+00:00"
-  },
-  {
-   "id": "e2de02532ccf",
-   "title": "[In preview] Public Preview: VM adaptive placement",
-   "link": "https://azure.microsoft.com/updates?id=581244",
-   "summary": "VM adaptive placement, now in public preview, helps increase Azure VM deployment success when capacity is constrained.With a standard VM create, you specify one exact size, and the deployment fails if that size isn't available. With adaptive placement, yo",
-   "published": "2026-11-17T20:00:32+00:00"
-  },
-  {
-   "id": "66e74404a632",
-   "title": "[Launched] Generally Available: Discover Data Guardian from Sovereign Control Panel",
-   "link": "https://azure.microsoft.com/updates?id=581226",
-   "summary": "Customers can now discover Data Guardian directly from the Sovereign Control Panel, now in Public Preview. Data Guardian provides enhanced operational oversight of qualifying remote access by Microsoft engineers to in-scope production systems in the EU da",
-   "published": "2026-11-17T20:00:32+00:00"
-  },
-  {
-   "id": "87b467eb3b40",
-   "title": "Announcing: Production Touch Ledger (PTL) Assessment Report",
-   "link": "https://azure.microsoft.com/updates?id=581221",
-   "summary": "The Production Touch Ledger (PTL) Assessment Report is now available. Capgemini, an independent third party, has validated the design of PTL for its ability to preserve the completeness, tamper-evidence, and non-repudiation of production-access records. T",
-   "published": "2026-11-17T20:00:32+00:00"
-  },
-  {
-   "id": "8a1e0bc6a5eb",
-   "title": "[In preview] Public Preview: Sovereign Control Panel",
-   "link": "https://azure.microsoft.com/updates?id=581220",
-   "summary": "Sovereign Control Panel is now available in Public Preview. Sovereign Control Panel is an Azure portal experience designed to help organizations assess and continuously monitor their sovereignty posture, understand the evidence behind identified gaps, and",
-   "published": "2026-11-17T20:00:32+00:00"
-  },
-  {
-   "id": "1e1f0f98f213",
-   "title": "[In development] Private Preview: Azure confidential VMs on 5th Gen AMD EPYC processors (DCasv7 and ECasv7 series)",
-   "link": "https://azure.microsoft.com/updates?id=581199",
-   "summary": "Azure's next-generation confidential VMs, the DCasv7, DCadsv7, DCalsv7, DCaldsv7, ECasv7 and ECadsv7 series, are now in private preview. Built on 5th Gen AMD EPYC processors with AMD SEV-SNP, they protect data while it's being processed by isolating each",
-   "published": "2026-11-17T20:00:32+00:00"
-  },
-  {
-   "id": "3acbfe097c67",
-   "title": "[In development] Private Preview: Project Nova",
-   "link": "https://azure.microsoft.com/updates?id=581193",
-   "summary": "Project NOVA enables independent verification of specific claims without revealing the underlying data. Across regulated industries, organizations need to establish trust while protecting confidential information. Project Nova explores how zero-knowledge",
    "published": "2026-11-17T20:00:32+00:00"
   },
   {
