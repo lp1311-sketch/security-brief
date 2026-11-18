@@ -466,7 +466,7 @@
    "title": "Kritische Schwachstelle Java4Shell (CVE-2026-114938)",
    "link": "https://borncity.com/blog/2026/11/17/kritische-schwachstelle-java4shell-cve-2026-114938/",
    "published": "2026-11-17T21:06:33+00:00",
-   "summary": "Gerade ist eine kritische Schwachstelle (CVE-2026-114938) in JAVA (CVSS 4.0 Base Score 9.2, critical) vorzeitig bekannt geworden. Die Java4Shell genannte Schwachstelle steckt im OpenJDK 17.0.6 und Folgeversionen. Sie ermöglicht Server zu übernehmen. Oracle soll einen Patch veröffentlicht haben. Ergänzung: Die ……",
+   "summary": "Gerade ist eine kritische Schwachstelle (CVE-2026-114938) in JAVA (CVSS 4.0 Base Score 9.2, critical) vorzeitig bekannt geworden. Die Java4Shell genannte Schwachstelle steckt im OpenJDK 17.0.6 und Folgeversionen. Sie ermöglicht Server zu übernehmen. Oracle soll einen Patch veröffentlicht haben. Ergänzung: Es ……",
    "image": "https://borncity.com/blog/wp-content/uploads/2013/10/java_thumb.jpg",
    "cves": [
     "CVE-2026-114938"
@@ -2203,6 +2203,28 @@
    "instructions_checked": true
   },
   {
+   "id": "1db641aaef44",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "CISA Urges Immediate Patching of Java4Shell Flaw That Could Allow Remote Code Execution",
+   "link": "https://thehackernews.com/2026/11/cisa-urges-immediate-patching-of.html",
+   "published": "2026-11-18T08:24:23+00:00",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has urged organizations to immediately patch a newly disclosed critical security flaw impacting Oracle Java. The flaw, tracked as CVE-2026-114938 (CVSS score: 8.1), refers to a case of out-of-bounds write that can lead to denial-of-service (DoS) or…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivmrsz2fViEN49Su385gmuAShCPcxobsMF-FbR9t1sXw6aEbOMzFUT5YktViqASQUXP3bLT13HYMAE1wBQTN0ZRDGXWFJUy_EWOKhOjR7jSz-bhEK8jas_v9wWUYxevCAZt4PzOCaGNLLC96kDwFjtKBuXVW2O3K2BK9AO5nyZutFf_uCaZtvyaQ2qf8gK/s1600/cisa-java.jpg",
+   "cves": [
+    "CVE-2026-114938"
+   ],
+   "first_seen": "2026-11-18T10:05:13.031061+00:00",
+   "instructions": [
+    "CISA is recommending that organizations take the following steps -",
+    "Apply relevant Java and vendor patches as soon as they are available.",
+    "Cybersecurity and Infrastructure Security Agency (CISA) has urged organizations to immediately patch a newly disclosed critical security flaw impacting Oracle Java."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "c398aa3e9226",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2444,6 +2466,26 @@
    "first_seen": "2026-11-13T08:57:41.471516+00:00",
    "instructions": [
     "CVE-2026-123039 (CVSS score: 7.8) is a missing authorization flaw that could enable privilege escalation to root in the DynamicCLI process, enabling any authenticated local user to run arbitrary commands by writing a single request to the socket."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "25f152a1b586",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Hackers Exploiting Critical Puppet RCE Flaw Affecting Enterprise Management Servers",
+   "link": "https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html",
+   "published": "2026-11-18T08:24:31+00:00",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a critical security flaw impacting Perforce Puppet, an enterprise infrastructure-as-code (IaC) and configuration management platform, to its Known Exploited Vulnerabilities (KEV) catalog, citing reports of active exploitation. The…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoFKMFLPbzyM7RGi89XdpVFUfFqLH2C0QnAIyZfTSZIkvQNT8jhFEdMdW3D1qPXE0MjtV-q8fM1Alicz0wEuNJ6fnIjOs3BY8D7ABBRWNqPg6NGz9FjhbSQhapwUDZPDyg3kJEy9CZeUwbcmZ3N5nCU8bH6bkCo4BgLfhlE3R3AdDi9CvLVgjqlMW42Pm2/s1600/puppet.jpg",
+   "cves": [
+    "CVE-2026-115731"
+   ],
+   "first_seen": "2026-11-18T10:05:13.031061+00:00",
+   "instructions": [
+    "Federal Civilian Executive Branch (FCEB) agencies are advised to apply the fixes by December 1, 2026, to secure their networks under Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk."
    ],
    "instructions_checked": true
   },
@@ -3263,6 +3305,28 @@
    "instructions_checked": true
   },
   {
+   "id": "c36817af9a4b",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "CISA warns of ‘Java4Shell,’ an AI-found Java bug touching most of the Fortune 500",
+   "link": "https://therecord.media/cisa-issues-java4shell-alert",
+   "published": "2026-11-18T00:00:00+00:00",
+   "summary": "The federal cybersecurity agency urged organizations to immediately patch a new vulnerability affecting Java — one of the world’s most used programming languages — after experts warned that it could allow an attacker to take over servers without a password.",
+   "image": "https://cms.therecord.media/uploads/Screenshot_2026_11_18_at_09_35_13_7dc6766af8.png",
+   "cves": [],
+   "first_seen": "2026-11-18T10:05:13.031061+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Organizations should prioritize internet-facing systems, CISA added.",
+    "Calif, which also discovered the highly publicized vulnerabilities impacting PHP last month, released its own advisory about CVE-2026-114938.",
+    "Luong provided a longer, in-depth explanation of the bug in the advisory and noted that he discovered it while “developing a 0-click exploit on a certain phone vendor.”",
+    "The federal cybersecurity agency urged organizations to immediately patch a new vulnerability affecting Java — one of the world’s most used programming languages — after experts warned that it could allow an attacker to take over servers without a password."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "810ecd44c3ac",
    "source": "therecord",
    "source_name": "The Record",
@@ -3930,6 +3994,27 @@
    "instructions_checked": true
   },
   {
+   "id": "4ccf67b96d4a",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Microsoft announces Windows Server 2028 with hardened security",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-announces-windows-server-2028-with-hardened-security/",
+   "published": "2026-11-18T09:24:31+00:00",
+   "summary": "Microsoft has announced Windows Server 2028, the next major release of its server operating system, at the Ignite 2026 conference on Tuesday.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/18/Windows__Server.jpg",
+   "cves": [],
+   "first_seen": "2026-11-18T10:05:13.031061+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Admins who want to test Windows Server 2028 can register for the Windows Insider Program for Windows Server or apply to enroll in the Windows Server Technology Adoption Program (TAP) for earlier access.",
+    "Remote access and observability : RDP with NLA and TLS, WinRM without Basic, Digest, or unencrypted traffic, advanced audit with command lines, PowerShell script block logging, and larger event logs.",
+    "Last but not least, it introduces new AI accelerators, including the ability to deploy and configure inference environments, manage accelerated hardware, and support open-weight and custom models (including Windows ML, Foundry Local, vLLM, and Llama.cpp)."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "a3551b4d4049",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -3970,28 +4055,6 @@
     "Microsoft has confirmed that this month's Patch Tuesday security updates are causing Windows activation and licensing failures with 0x80041008 error codes.",
     "\"Affected devices might encounter error 0x80041008, Invalid parameter (SWbemObjectEx), when running commands to activate Windows, configure Key Management Service (KMS), or manage product keys,\" Microsoft said.",
     "This week, it also confirmed that the November 2026 Windows 11 security updates fail to install on systems with the October 2026 preview update and that Windows updates released since the October Patch Tuesday are triggering SQL Server performance and stability issues ."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "6cc651115394",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Microsoft fixes Exchange sign-ins broken by Windows Server updates",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-exchange-sign-ins-broken-by-october-windows-server-updates/",
-   "published": "2026-11-11T09:07:27+00:00",
-   "summary": "Microsoft has fixed Outlook sign-in and mail delivery issues on Exchange Server systems after installing the October 2026 Windows Server security updates.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/22/Exchange_Online.jpg",
-   "cves": [],
-   "first_seen": "2026-11-11T09:39:45.019744+00:00",
-   "image_checked": true,
-   "instructions": [
-    "In a new update to the Windows release health dashboard, Microsoft said the November 2026 Patch Tuesday updates ( KB5131080 and KB5131090 ) address this known issue and advised affected users to install them on all affected systems.",
-    "Microsoft also shared a temporary workaround that should resolve these issues for those who can't immediately deploy this month's cumulative updates, which requires modifying a registry key on affected Exchange Server systems.",
-    "After the system reboots, the admins should monitor the Exchange environment and raise the Endpoint Mapper memory limit if it recurs.",
-    "\"After installing the October 2026 Windows security update [..], some on-premises Exchange servers might experience issues accessing or sending email."
    ],
    "instructions_checked": true
   },
@@ -7251,10 +7314,10 @@
    "source_name": "SecurityWeek",
    "official": false,
    "source_type": "news",
-   "title": "Oracle Patches 640 Vulnerabilities With November 2026 CSPU",
+   "title": "Oracle Patches 950 Vulnerabilities With November 2026 CSPU",
    "link": "https://www.securityweek.com/oracle-patches-640-vulnerabilities-with-november-2026-cspu/",
    "published": "2026-11-18T08:47:18+00:00",
-   "summary": "Over 300 patches address unauthenticated, remotely exploitable flaws, while 62 fix critical-severity flaws. The post Oracle Patches 640 Vulnerabilities With November 2026 CSPU appeared first on SecurityWeek.",
+   "summary": "Over 300 patches address unauthenticated, remotely exploitable flaws, while 62 fix critical-severity flaws. The post Oracle Patches 950 Vulnerabilities With November 2026 CSPU appeared first on SecurityWeek.",
    "image": "https://www.securityweek.com/wp-content/uploads/2026/10/Oracle.jpeg",
    "cves": [],
    "first_seen": "2026-11-18T09:03:52.657472+00:00",
