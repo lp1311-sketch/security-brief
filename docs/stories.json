@@ -1,6 +1,16 @@
 {
  "stories": [
   {
+   "id": "94321d4b37d6",
+   "title": "Critical Perforce Puppet RCE Exploited in Attacks",
+   "summary": "Tracked as CVE-2026-115731, it allows a client that holds any CA-signed agent certificate to execute code on the server. The post Critical Perforce Puppet RCE Exploited…",
+   "priority": "Critical",
+   "category": "Patch Radar",
+   "date": "18 Nov 2026, 10:37 UTC",
+   "sources": "SecurityWeek, The Hacker News, CISA Cybersecurity Advisories",
+   "url": "story/94321d4b37d6.html"
+  },
+  {
    "id": "f67825a82ae8",
    "title": "Recent UnrealIRCd Vulnerability Exploited in Attacks",
    "summary": "Tracked as CVE-2026-114713, the high-severity flaw allows attackers to execute commands with server/IRCOp privileges. The post Recent UnrealIRCd Vulnerability Exploited…",
@@ -31,16 +41,6 @@
    "url": "story/72572082204e.html"
   },
   {
-   "id": "25f152a1b586",
-   "title": "Hackers Exploiting Critical Puppet RCE Flaw Affecting Enterprise Management Servers",
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a critical security flaw impacting Perforce Puppet, an enterprise…",
-   "priority": "Critical",
-   "category": "Patch Radar",
-   "date": "18 Nov 2026, 08:24 UTC",
-   "sources": "The Hacker News, CISA Cybersecurity Advisories",
-   "url": "story/25f152a1b586.html"
-  },
-  {
    "id": "b5e1ece521f3",
    "title": "GTIG AI Threat Tracker: Agentic Threat Activity Crosses a Significant Threshold",
    "summary": "Written by: Aurora Blum, Kelli Vanderlee, Jess Xia, David Mainor Executive Summary As threat actors increasingly move beyond basic prompting to deploying autonomous…",
@@ -49,6 +49,16 @@
    "date": "16 Nov 2026, 14:00 UTC",
    "sources": "Google Threat Intelligence, CISA Cybersecurity Advisories",
    "url": "story/b5e1ece521f3.html"
+  },
+  {
+   "id": "4f4cc6f19074",
+   "title": "Apache warns of Roller RCE vulnerability exploited in attacks",
+   "summary": "Apache has released security updates to address a critical Roller flaw that threat actors are exploiting to gain code execution on vulnerable servers.",
+   "priority": "High",
+   "category": "Patch Radar",
+   "date": "18 Nov 2026, 10:35 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/4f4cc6f19074.html"
   },
   {
    "id": "7d141681ccc2",
@@ -509,16 +519,6 @@
    "date": "11 Nov 2026, 16:12 UTC",
    "sources": "The Hacker News",
    "url": "story/8b35f69eac70.html"
-  },
-  {
-   "id": "474586429e7c",
-   "title": "CISA flags Cisco BroadWorks flaw as actively exploited in attacks",
-   "summary": "The US Cybersecurity and Infrastructure Security Agency (CISA) warned on Tuesday that hackers are now exploiting a high-severity Cisco BroadWorks vulnerability in…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "11 Nov 2026, 10:12 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/474586429e7c.html"
   },
   {
    "id": "c36817af9a4b",
@@ -1181,26 +1181,6 @@
    "url": "story/b69860df4218.html"
   },
   {
-   "id": "568217cfb12f",
-   "title": "Cybersecurity-Anbieter Infoblox Opfer eines Cyberangriffs (16. Nov. 2026)",
-   "summary": "Wenn dir Cybersicherheit wichtig ist, hole dir Leute, die was davon verstehen. Infoblox ist als Anbieter auf dem Gebiet der IT-Automatisierung und Cybersicherheit…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "17 Nov 2026, 10:38 UTC",
-   "sources": "Born's IT and Windows Blog",
-   "url": "story/568217cfb12f.html"
-  },
-  {
-   "id": "d70ba4ae16f0",
-   "title": "Optimizely Vulnerability Exploited to Serve Malware on Major Websites",
-   "summary": "Affected organizations include BBC, CNN, Zoom, GitLab, Salesforce, Equifax, HSBC, and IKEA. The post Optimizely Vulnerability Exploited to Serve Malware on Major…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "17 Nov 2026, 10:22 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/d70ba4ae16f0.html"
-  },
-  {
    "id": "e5f38235f326",
    "title": "ConnectWise Warns ScreenConnect Attacks Continue as SCKit Targets Unpatched Systems",
    "summary": "ConnectWise on Monday said it completed its investigation into unauthorized access targeting partner ScreenConnect environments, and recommended customers to ensure that…",
@@ -1781,6 +1761,26 @@
    "url": "story/15c0b59087ed.html"
   },
   {
+   "id": "568217cfb12f",
+   "title": "Cybersecurity-Anbieter Infoblox Opfer eines Cyberangriffs (16. Nov. 2026)",
+   "summary": "Wenn dir Cybersicherheit wichtig ist, hole dir Leute, die was davon verstehen. Infoblox ist als Anbieter auf dem Gebiet der IT-Automatisierung und Cybersicherheit…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "17 Nov 2026, 10:38 UTC",
+   "sources": "Born's IT and Windows Blog",
+   "url": "story/568217cfb12f.html"
+  },
+  {
+   "id": "d70ba4ae16f0",
+   "title": "Optimizely Vulnerability Exploited to Serve Malware on Major Websites",
+   "summary": "Affected organizations include BBC, CNN, Zoom, GitLab, Salesforce, Equifax, HSBC, and IKEA. The post Optimizely Vulnerability Exploited to Serve Malware on Major…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "17 Nov 2026, 10:22 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/d70ba4ae16f0.html"
+  },
+  {
    "id": "10eb36112f40",
    "title": "Court clears brothers of $25 million Ethereum crypto heist charges",
    "summary": "US District Judge Jessica Clarke has acquitted two brothers accused of stealing $25 million in cryptocurrency in about 12 seconds through a scheme that exploited a bug…",
@@ -1979,26 +1979,6 @@
    "date": "16 Nov 2026, 11:18 UTC",
    "sources": "BleepingComputer",
    "url": "story/7a50b6f63907.html"
-  },
-  {
-   "id": "2b1b80c8b882",
-   "title": "Hackers Probe Newly Disclosed Flaws in Copeland Refrigeration Controllers",
-   "summary": "Vulncheck disclosed 14 vulnerabilities affecting Copeland XWEB EVO controllers, including two that threat actors quickly targeted. The post Hackers Probe Newly Disclosed…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "16 Nov 2026, 11:05 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/2b1b80c8b882.html"
-  },
-  {
-   "id": "b9812e4ced01",
-   "title": "Anthropic’s Claude Fable 5.2 blocks fewer security tasks, while Mythos gets better at finding bugs",
-   "summary": "Anthropic recently rolled out Claude Mythos 5.2 to selected partners and Fable 5.2 to regular users, with improvements to coding and reasoning. But we also noticed some…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "16 Nov 2026, 11:00 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/b9812e4ced01.html"
   },
   {
    "id": "f159cf23a7b2",
@@ -2309,6 +2289,26 @@
    "date": "11 Nov 2026, 11:16 UTC",
    "sources": "SecurityWeek",
    "url": "story/3d74aba68f12.html"
+  },
+  {
+   "id": "2b1b80c8b882",
+   "title": "Hackers Probe Newly Disclosed Flaws in Copeland Refrigeration Controllers",
+   "summary": "Vulncheck disclosed 14 vulnerabilities affecting Copeland XWEB EVO controllers, including two that threat actors quickly targeted. The post Hackers Probe Newly Disclosed…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "16 Nov 2026, 11:05 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/2b1b80c8b882.html"
+  },
+  {
+   "id": "b9812e4ced01",
+   "title": "Anthropic’s Claude Fable 5.2 blocks fewer security tasks, while Mythos gets better at finding bugs",
+   "summary": "Anthropic recently rolled out Claude Mythos 5.2 to selected partners and Fable 5.2 to regular users, with improvements to coding and reasoning. But we also noticed some…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "16 Nov 2026, 11:00 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/b9812e4ced01.html"
   },
   {
    "id": "7d4f6584a3c9",
@@ -2919,16 +2919,6 @@
    "date": "11 Nov 2026, 12:00 UTC",
    "sources": "The Hacker News",
    "url": "story/b80a24c89312.html"
-  },
-  {
-   "id": "3dfcf9840f4a",
-   "title": "ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure",
-   "summary": "Pre-Patch Tuesday advisories were published by VDE CERT, Phoenix Contact, Johnson Controls, and Hitachi Energy. The post ICS Patch Tuesday: Siemens Flags High-Severity…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "11 Nov 2026, 10:35 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/3dfcf9840f4a.html"
   }
  ]
 }

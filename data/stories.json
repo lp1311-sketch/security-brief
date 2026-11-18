@@ -4294,6 +4294,28 @@
    "instructions_checked": true
   },
   {
+   "id": "4f4cc6f19074",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Apache warns of Roller RCE vulnerability exploited in attacks",
+   "link": "https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/",
+   "published": "2026-11-18T10:35:05+00:00",
+   "summary": "Apache has released security updates to address a critical Roller flaw that threat actors are exploiting to gain code execution on vulnerable servers.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/04/17/Apache.jpg",
+   "cves": [],
+   "first_seen": "2026-11-18T11:07:28.694848+00:00",
+   "image_checked": true,
+   "instructions": [
+    "To block ongoing attacks, Roller users should immediately upgrade to Apache Roller 6.1.6 or later , which disables the extension types and rejects malicious XML-RPC requests after turning off the XML-RPC feature.",
+    "The XML-RPC endpoint accepts vendor extension types and deserializes them before authenticating the requester,\" Apache explained in a Tuesday security advisory.",
+    "Admins who can't immediately upgrade can also temporarily mitigate CVE-2026-129448 by setting \"enabledForExtensions\" to \"false\" in WEB-INF/web.xml, removing the \"/roller-services/xmlrpc\" servlet mapping, and restarting Roller.",
+    "According to Apache, disabling XML-RPC in the administration user interface is not enough to block attacks because older versions deserialize the request before checking whether that setting is toggled on."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "7927f7b9de97",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4454,27 +4476,6 @@
     "\"Check Point observed an active exploit of this vulnerability against a couple of dozen customers,\" the company warned in a Thursday security advisory.",
     "TeamViewer urges users to patch severe flaws “as soon as possible”",
     "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day"
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "474586429e7c",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "CISA flags Cisco BroadWorks flaw as actively exploited in attacks",
-   "link": "https://www.bleepingcomputer.com/news/security/cisa-flags-cisco-broadworks-flaw-as-actively-exploited-in-attacks/",
-   "published": "2026-11-11T10:12:08+00:00",
-   "summary": "The US Cybersecurity and Infrastructure Security Agency (CISA) warned on Tuesday that hackers are now exploiting a high-severity Cisco BroadWorks vulnerability in attacks.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/28/CISA.jpg",
-   "cves": [],
-   "first_seen": "2026-11-11T10:42:31.926678+00:00",
-   "image_checked": true,
-   "instructions": [
-    "CISA warns feds to fully patch actively exploited Cisco flaws",
-    "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day",
-    "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
    ],
    "instructions_checked": true
   },
@@ -6616,6 +6617,28 @@
    "instructions_checked": true
   },
   {
+   "id": "94321d4b37d6",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Critical Perforce Puppet RCE Exploited in Attacks",
+   "link": "https://www.securityweek.com/critical-perforce-puppet-rce-exploited-in-attacks/",
+   "published": "2026-11-18T10:37:08+00:00",
+   "summary": "Tracked as CVE-2026-115731, it allows a client that holds any CA-signed agent certificate to execute code on the server. The post Critical Perforce Puppet RCE Exploited in Attacks appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/10/cyberattack-vulnerability-exploited.jpeg",
+   "cves": [
+    "CVE-2026-115731"
+   ],
+   "first_seen": "2026-11-18T11:07:28.694848+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Administrators are advised to turn off auto-signing and enforce strong validation to ensure only trusted systems and authorized users can receive certificates.",
+    "CVE-2026-115731 was flagged as exploited on November 4 and the US cybersecurity agency CISA added it to its Known Exploited Vulnerabilities ( KEV ) catalog on November 17, urging federal agencies to patch it within two weeks, in line with BOD 26-04’s recommendations."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "3773dc5512fb",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -6918,28 +6941,6 @@
     "Additionally, the update resolves CVE-2026-125882 (path traversal to remote code execution, CVSS score of 8.6), which was reported by Nate Fair of Sprocket Security.",
     "Citrix, Ivanti Patch Critical and High-Severity Vulnerabilities",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "3dfcf9840f4a",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure",
-   "link": "https://www.securityweek.com/ics-patch-tuesday-siemens-flags-high-severity-flaws-node2shell-exposure/",
-   "published": "2026-11-11T10:35:15+00:00",
-   "summary": "Pre-Patch Tuesday advisories were published by VDE CERT, Phoenix Contact, Johnson Controls, and Hitachi Energy. The post ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2023/11/ICS_Patches.jpg",
-   "cves": [],
-   "first_seen": "2026-11-11T11:38:03.243549+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Siemens, Schneider Electric, and several other industrial technology vendors have published new security advisories describing vulnerabilities that could expose affected systems to serious attacks.",
-    "Siemens has published nine new advisories covering 10 vulnerabilities.",
-    "Two advisories describe the impact of the recent Node2Shell vulnerability on the company’s products.",
-    "Siemens has also published advisories informing customers about high-severity vulnerabilities in ROS#, Simcenter Femap, Mendix Studio Pro MCP Server, Simatic SCADA and PCS 7, Meta-iot2050, and Simatic WinCC Graphics Designer."
    ],
    "instructions_checked": true
   },
