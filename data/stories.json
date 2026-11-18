@@ -1,22 +1,6 @@
 {
  "items": [
   {
-   "id": "ef892408bebc",
-   "source": "ars",
-   "source_name": "Ars Technica Security",
-   "official": false,
-   "source_type": "news",
-   "title": "Google DeepMind just mathematically verified key parts of Signal",
-   "link": "https://arstechnica.com/ai/2026/11/signals-encryption-just-passed-an-ai-powered-mathematical-checkup/",
-   "published": "2026-11-11T14:08:57+00:00",
-   "summary": "Google DeepMind researchers used agentic AI to mathematically prove, or “formally verify,” a number of the Signal protocol’s key cryptographic guarantees—a landmark development for the widely used cryptography and AI itself. Conducted as a sort of proof-of-concept project in just four weeks, the work is significant in…",
-   "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/signal_icon-1024x648.jpg",
-   "cves": [],
-   "first_seen": "2026-11-11T14:54:28.707849+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "0e789c02d673",
    "source": "ars",
    "source_name": "Ars Technica Security",
@@ -133,28 +117,6 @@
     "A trusted foundation must also prepare for threats that emerge before they become practical at scale.",
     "Organizations must remain confident in their IT security as technology evolves.",
     "Windows can help enforce identity and security controls on the devices where people, apps, and data intersect."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "833af69e5de2",
-   "source": "borncity",
-   "source_name": "Born's IT and Windows Blog",
-   "official": false,
-   "source_type": "news",
-   "title": "Windows: November 2026 Patchday-Probleme?",
-   "link": "https://borncity.com/blog/2026/11/11/windows-november-2026-patchday-probleme/",
-   "published": "2026-11-11T12:48:22+00:00",
-   "summary": "Am 10. November 2026 (Patchday bei Microsoft) hat Microsoft kumulative Updates für die unterstützten Windows Client- und Server-Betriebssysteme veröffentlicht. Mir sind vereinzelt Meldungen zu Problemen im Zusammenhang mit diesen Sicherheitsupdates untergekommen, die ich nachfolgend zusammen ziehe. Die Blog-Beiträge…",
-   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Windows-klein.jpg",
-   "cves": [],
-   "first_seen": "2026-11-11T13:56:06.283853+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Betroffen dürfte das kumulative Update KB5132061 für Windows 11 24H2-26H2 sein.",
-    "November 2026) Windows 11 25H2 – 26H2: Preview Update KB5127936 (28.",
-    "November 2026 um 14:23 Uhr Hat schon jemand Erfahrung ob das November Update die Probleme vom Oktober Update in Verbindung mit Onprem Exchange behebt?",
-    "November 2026 um 14:23 Uhr Wir arbeiten mit Addison und es tritt mit dem Update kein Fehler beim aufruf des Portals auf."
    ],
    "instructions_checked": true
   },
@@ -500,6 +462,26 @@
    "instructions_checked": true
   },
   {
+   "id": "00d571c6c89f",
+   "source": "borncity",
+   "source_name": "Born's IT and Windows Blog",
+   "official": false,
+   "source_type": "news",
+   "title": "NGINX HTTP/2: Kritische nginx2root Schwachstellen CVE-2026-123633 und CVE-2026-123007",
+   "link": "https://borncity.com/blog/2026/11/18/nginx-http-2-kritische-schwachstellen-%f0%9d%97%96%f0%9d%97%a9%f0%9d%97%98-%f0%9d%9f%ae%f0%9d%9f%ac%f0%9d%9f%ae%f0%9d%9f%b2-%f0%9d%9f%ad%f0%9d%9f%ae%f0%9d%9f%af%f0%9d%9f%b2%f0%9d%9f%af%f0%9d%9f%af-un/",
+   "published": "2026-11-18T19:12:03+00:00",
+   "summary": "In der als Web-Server, Reverse-Proxy etc. fungierenden Software NGINX sind zwei kritische Schwachstellen CVE-2026-123633 und CVE-2026-123007, als nginx2root bezeichnet, öffentlich geworden. Für die mit einem CVSS-Score von 9.2 bewerteten Sicherheitslücken stehen ein Exploit und inzwischen auch Updates zur Verfügung…",
+   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
+   "cves": [
+    "CVE-2026-123007",
+    "CVE-2026-123633"
+   ],
+   "first_seen": "2026-11-18T20:45:42.433362+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "b5e1ece521f3",
    "source": "google-threat-intel",
    "source_name": "Google Threat Intelligence",
@@ -588,22 +570,6 @@
    "instructions_checked": true
   },
   {
-   "id": "8cdc4a0f74c8",
-   "source": "krebs",
-   "source_name": "KrebsOnSecurity",
-   "official": false,
-   "source_type": "news",
-   "title": "Who Runs the Ransomware Group Qilin?",
-   "link": "https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin/",
-   "published": "2026-11-11T18:06:01+00:00",
-   "summary": "The cybercrime group Qilin has emerged as the world’s most active ransomware affiliate program, claiming at least 365 victim organizations in the past three months alone. But even top Russian hackers make operational security mistakes, and the administrator of Qilin has made a few key missteps over the last decade…",
-   "image": "https://krebsonsecurity.com/wp-content/uploads/2026/11/haise-ramp-kela.png",
-   "cves": [],
-   "first_seen": "2026-11-11T18:56:23.181274+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "c5a7aee1fe72",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -680,82 +646,6 @@
    "instructions_checked": true
   },
   {
-   "id": "cdc2cd16c5c3",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-109475 .NET Denial of Service Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109475",
-   "published": "2026-11-11T16:00:00+00:00",
-   "summary": "Changes made to the security updates links and information. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-109475"
-   ],
-   "first_seen": "2026-11-11T17:55:40.517702+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "8f801ab2f586",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-109476 ASP.NET Core Information Disclosure Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109476",
-   "published": "2026-11-11T16:00:00+00:00",
-   "summary": "Changes made to the security updates links and information. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-109476"
-   ],
-   "first_seen": "2026-11-11T17:55:40.517702+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "145c4b0316f8",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-109478 ASP.NET Core Denial of Service Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109478",
-   "published": "2026-11-11T16:00:00+00:00",
-   "summary": "Updated the products listed in the Security Updates table. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-109478"
-   ],
-   "first_seen": "2026-11-11T17:55:40.517702+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "faed77650a4f",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-109481 ASP.NET Core Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109481",
-   "published": "2026-11-11T16:00:00+00:00",
-   "summary": "Changes made to the security updates links and information. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-109481"
-   ],
-   "first_seen": "2026-11-11T17:55:40.517702+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "c84faf9461ad",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -813,384 +703,23 @@
    "instructions_checked": true
   },
   {
-   "id": "ebc44fed255b",
+   "id": "8660ee6d4482",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
    "official": true,
    "source_type": "advisory",
-   "title": "CVE-2026-114146 ASP.NET Core Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114146",
-   "published": "2026-11-11T16:00:00+00:00",
-   "summary": "Changes made to the security updates links and information. This is an informational change only.",
+   "title": "CVE-2026-118148 Active Directory Domain Services Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118148",
+   "published": "2026-11-18T16:00:00+00:00",
+   "summary": "Updated the CVSS score and corrected FAQs. This is an informational change only.",
    "image": null,
    "cves": [
-    "CVE-2026-114146"
+    "CVE-2026-118148"
    ],
-   "first_seen": "2026-11-11T17:55:40.517702+00:00",
+   "first_seen": "2026-11-18T20:45:42.433362+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
-  },
-  {
-   "id": "327daffd942c",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-114147 ASP.NET Core Denial of Service Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114147",
-   "published": "2026-11-11T16:00:00+00:00",
-   "summary": "Changes made to the security updates links and information. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-114147"
-   ],
-   "first_seen": "2026-11-11T17:55:40.517702+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "c092d16fdb35",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-114149 ASP.NET Core Denial of Service Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114149",
-   "published": "2026-11-11T16:00:00+00:00",
-   "summary": "Changes made to the security updates links and information. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-114149"
-   ],
-   "first_seen": "2026-11-11T17:55:40.517702+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "c00626dea4d0",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-114150 ASP.NET Core Information Disclosure Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114150",
-   "published": "2026-11-11T16:00:00+00:00",
-   "summary": "Changes made to the security updates links and information. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-114150"
-   ],
-   "first_seen": "2026-11-11T17:55:40.517702+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "14242fd48964",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-114151 Visual Studio Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114151",
-   "published": "2026-11-11T16:00:00+00:00",
-   "summary": "Updated the products listed in the Security Updates table. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-114151"
-   ],
-   "first_seen": "2026-11-11T17:55:40.517702+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "15c947aa5572",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-114152 Visual Studio Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114152",
-   "published": "2026-11-11T16:00:00+00:00",
-   "summary": "Updated the products listed in the Security Updates table. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-114152"
-   ],
-   "first_seen": "2026-11-11T17:55:40.517702+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "fbb91e5bc5d6",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-114154 ASP.NET Core Denial of Service Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114154",
-   "published": "2026-11-11T16:00:00+00:00",
-   "summary": "Updated the products listed in the Security Updates table. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-114154"
-   ],
-   "first_seen": "2026-11-11T17:55:40.517702+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "b84cf89bef1f",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-114155 .NET Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114155",
-   "published": "2026-11-11T16:00:00+00:00",
-   "summary": "Changes made to the security updates links and information. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-114155"
-   ],
-   "first_seen": "2026-11-11T17:55:40.517702+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "030e72a271ce",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-114156 ASP.NET Core Security Feature Bypass Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114156",
-   "published": "2026-11-11T16:00:00+00:00",
-   "summary": "Changes made to the security updates links and information. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-114156"
-   ],
-   "first_seen": "2026-11-11T17:55:40.517702+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "2b4a0051e17b",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-114157 ASP.NET Core Security Feature Bypass Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114157",
-   "published": "2026-11-11T16:00:00+00:00",
-   "summary": "Changes made to the security updates links and information. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-114157"
-   ],
-   "first_seen": "2026-11-11T17:55:40.517702+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "40f3c4ba9be0",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-114158 Visual Studio Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114158",
-   "published": "2026-11-11T16:00:00+00:00",
-   "summary": "Updated the products listed in the Security Updates table. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-114158"
-   ],
-   "first_seen": "2026-11-11T17:55:40.517702+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "b184f1436a20",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-114159 Visual Studio Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114159",
-   "published": "2026-11-11T16:00:00+00:00",
-   "summary": "Updated the products listed in the Security Updates table. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-114159"
-   ],
-   "first_seen": "2026-11-11T17:55:40.517702+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "d6688a6a8e80",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-118740 Aspire Security Feature Bypass Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118740",
-   "published": "2026-11-11T16:00:00+00:00",
-   "summary": "Corrected Download links in the Security Updates table. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-118740"
-   ],
-   "first_seen": "2026-11-11T17:55:40.517702+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "ff3dd8a5ab8c",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-118741 ASP.NET Core Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118741",
-   "published": "2026-11-11T16:00:00+00:00",
-   "summary": "Changes made to the security updates links and information. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-118741"
-   ],
-   "first_seen": "2026-11-11T17:55:40.517702+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "208c82521c2f",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-118745 Visual Studio Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118745",
-   "published": "2026-11-11T16:00:00+00:00",
-   "summary": "Updated the products listed in the Security Updates table. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-118745"
-   ],
-   "first_seen": "2026-11-11T17:55:40.517702+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "356f3a2b7b2a",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-118746 .NET Security Feature Bypass Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118746",
-   "published": "2026-11-11T16:00:00+00:00",
-   "summary": "Changes made to the security updates links and information. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-118746"
-   ],
-   "first_seen": "2026-11-11T17:55:40.517702+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "97a2d821db44",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-118747 .NET Denial of Service Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118747",
-   "published": "2026-11-11T16:00:00+00:00",
-   "summary": "Changes made to the security updates links and information. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-118747"
-   ],
-   "first_seen": "2026-11-11T17:55:40.517702+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "de351fa818d0",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-118748 ASP.NET Core Denial of Service Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118748",
-   "published": "2026-11-11T16:00:00+00:00",
-   "summary": "Changes made to the security updates links and information. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-118748"
-   ],
-   "first_seen": "2026-11-11T17:55:40.517702+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "fa9627f0c906",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-118749 ASP.NET Core Denial of Service Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118749",
-   "published": "2026-11-11T16:00:00+00:00",
-   "summary": "Changes made to the security updates links and information. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-118749"
-   ],
-   "first_seen": "2026-11-11T17:55:40.517702+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "e266c10a68ea",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-118750 ASP.NET Core Denial of Service Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118750",
-   "published": "2026-11-11T16:00:00+00:00",
-   "summary": "Updated the products listed in the Security Updates table. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-118750"
-   ],
-   "first_seen": "2026-11-11T17:55:40.517702+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
   },
   {
    "id": "78c9d1b1c186",
@@ -1305,82 +834,6 @@
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
-  },
-  {
-   "id": "4f4ee24788a2",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-120006 Aspire Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-120006",
-   "published": "2026-11-11T16:00:00+00:00",
-   "summary": "Updated the products listed in the Security Updates table. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-120006"
-   ],
-   "first_seen": "2026-11-11T17:55:40.517702+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "741e45d7bcbd",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-120778 Aspire Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-120778",
-   "published": "2026-11-11T16:00:00+00:00",
-   "summary": "Updated the products listed in the Security Updates table. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-120778"
-   ],
-   "first_seen": "2026-11-11T17:55:40.517702+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "df2e304a7245",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-120792 Aspire Information Disclosure Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-120792",
-   "published": "2026-11-11T16:00:00+00:00",
-   "summary": "Updated the products listed in the Security Updates table. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-120792"
-   ],
-   "first_seen": "2026-11-11T17:55:40.517702+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "0fbfdab41826",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-120796 .NET Denial of Service Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-120796",
-   "published": "2026-11-11T16:00:00+00:00",
-   "summary": "Changes made to the security updates links and information. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-120796"
-   ],
-   "first_seen": "2026-11-11T17:55:40.517702+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
   },
   {
    "id": "a003f891fd75",
@@ -2029,6 +1482,29 @@
    "instructions_checked": true
   },
   {
+   "id": "fb8b318a049e",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "10-Year-Old NGINX HTTP/2 Flaw Lets Unauthenticated Attackers Execute Code on Servers",
+   "link": "https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html",
+   "published": "2026-11-18T18:31:17+00:00",
+   "summary": "A flaw in NGINX's HTTP/2 support can allow an attacker to run code on servers with HTTP/2 enabled, without needing to log in. The decade-old flaw, CVE-2026-123007, dubbed \"nginx2root,\" has been present in NGINX's open-source code since version 1.9.5, released on September 22, 2015. Fixed versions 1.31.9 and 1.30.7…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7_qqPophooIauX16fMWm3KB24tzQ3Fd7rCuseCXfMkDPPGpIgmHqWvZjn_jffDqHwNWKu8Zf57QeKb4qsRFgdgisSAn0sMj59CscimR16RLXI1kspH0w7VYQgrsM_hPcePQOFL8QUyDC2p9W7AV0UjH3sW7oOvdWPWAZW6DITDvqIHaC_696e5kHTieY/s1600/nginx-rce.jpg",
+   "cves": [
+    "CVE-2026-123007"
+   ],
+   "first_seen": "2026-11-18T20:45:42.433362+00:00",
+   "instructions": [
+    "Every open-source release from 1.9.5 through 1.31.8 is vulnerable, according to NGINX's security advisories .",
+    "NGINX Plus is affected too, in 37.x releases before the fixed builds and in R34 to R36, according to the vendor advisory .",
+    "A distribution package can carry a fix without changing the version number that nginx -v reports, so compare the full package version with the distribution's own advisory.",
+    "CIRCL's response guidance lists turning off HTTP/2 as a temporary mitigation until you can upgrade."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "50b7d482cfd7",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2070,6 +1546,20 @@
    "instructions_checked": true
   },
   {
+   "id": "c9f8dc26d8d0",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "AI Pentesting Checklist for Web Apps: 15 Questions to Ask Before Choosing a Vendor",
+   "link": "https://thehackernews.com/2026/11/ai-pentesting-checklist-for-web-apps-15.html",
+   "published": "2026-11-18T12:15:00+00:00",
+   "summary": "TL;DR Attackers move first. On average, exploitation now starts before a patch exists (Mandiant M-Trends 2026). In 1H 2026, 23% of vulnerabilities VulnCheck added to its exploited list were hit on or before disclosure day. AI pentesting vendors aren't interchangeable. Most look convincing in a demo. The gaps show up…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdb3EyKCLHzaa6p3bzrF2EkkcJJQgshTsoaU6kzga1C8NGRBE1rDwlsHwhVKehkmGsOYpf0Dq-VCQpmFDPYLglxQIQjEiv3NrkFDRPTc3wUObe1Kc0km71lwUEXLTtWJGBQ3nO6wFbRqKoOJLcBv2lwpD-ZAYc1caohfkIFkCVlLQdS-YuwmbecgBf-sQ/s1600/reflectiz.jpg",
+   "cves": [],
+   "first_seen": "2026-11-18T20:45:42.433362+00:00"
+  },
+  {
    "id": "f159cf23a7b2",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2087,22 +1577,6 @@
     "Search configuration files, environment variables, deployment scripts, CI/CD pipelines and databases for embedded secrets, keep scanning repositories and container images for exposed ones, and rotate exposed credentials quickly, as the FBI advises.",
     "Change default administrator credentials, such as LiteLLM's default master key, and do not leave a new install unfinished where an outsider could take it over."
    ],
-   "instructions_checked": true
-  },
-  {
-   "id": "63cbf25606a5",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "AntiFox AI Pentesting Platform Linked to Attacks That Accessed AWS Production Secrets",
-   "link": "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html",
-   "published": "2026-11-11T15:34:27+00:00",
-   "summary": "Cybersecurity researchers have disclosed details of a campaign in which an emerging agentic penetration testing platform called AntiFox has been used to steal Amazon Web Services (AWS) credentials and pivot laterally into compromised environments. \"In several recently observed intrusions, Alibaba Cloud systems hosting…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi08pEbJ7-HNwC0kJf517wnB6y8HwgKhMU-vxbhnCEh9KpWk1kmIjp_bb71k7GYfiTZNep3bcejvN7RmriF9_0RJnGGe9T5WB_nihCgxiDYOMl8mgDmI0Pm6ZFmPzf8HulQUxHjX3TncwmvqJIDPLyZBoHZpOahcMl7fehtwvT-oCxLzPec-KRtiScHT7wk/s1600/aws-secrets.jpg",
-   "cves": [],
-   "first_seen": "2026-11-11T16:56:19.986048+00:00",
-   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -2288,6 +1762,27 @@
    "instructions_checked": true
   },
   {
+   "id": "9c40ff9a7698",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required",
+   "link": "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html",
+   "published": "2026-11-18T17:10:45+00:00",
+   "summary": "A critical security flaw in Apache Roller, an open-source, Java-based blogging platform, has come under active exploitation in the wild, according to the Apache Software Foundation (ASF) The vulnerability, tracked as CVE-2026-129448 (CVSS score: 9.8), is a case of unauthenticated deserialization in the XML-RPC…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbiCYJD7nei_TBSnUlQG59idq9moCbsg97fnzsiXNi4KvQaphZYA4hHIzXv08t2OsvVZokzPIdhZPzxTkXoEgzTsFby-rBvQX6CY6yPo1Iv8DPnSmPeOeh3OQXF79Q60Hq3UI7kVdhmEKGL2bUwm42JO-8C_ClLHpTpGkWpnflAQMrDDgjIvMKq09DEskr/s1600/apache.jpg",
+   "cves": [
+    "CVE-2026-129448"
+   ],
+   "first_seen": "2026-11-18T20:45:42.433362+00:00",
+   "instructions": [
+    "Users are advised to upgrade to Apache Roller 6.1.6 or later, which disables the extension types and rejects XML-RPC requests when the XML-RPC feature is disabled.",
+    "If immediate patching is not an option, it's recommended to set \"enabledForExtensions\" to \"false\" in WEB-INF/web.xml, or remove the \"/roller-services/xmlrpc\" servlet mapping, and then restart Roller."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "26d811aac83d",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2330,23 +1825,43 @@
    "instructions_checked": true
   },
   {
-   "id": "8b35f69eac70",
+   "id": "55016e2da81b",
    "source": "thehackernews",
    "source_name": "The Hacker News",
    "official": false,
    "source_type": "news",
-   "title": "Critical Zoom Workplace Flaw Could Allow Unauthenticated Remote Privilege Escalation",
-   "link": "https://thehackernews.com/2026/11/critical-zoom-workplace-flaw-could.html",
-   "published": "2026-11-11T16:12:46+00:00",
-   "summary": "Zoom has released software updates to address two security flaws impacting Zoom Workplace for Windows, including a critical bug that could result in privilege escalation on affected systems. The vulnerabilities are listed below - CVE-2026-108186 (CVSS score: 9.6) - An improper input validation vulnerability that could…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhox0GUms6IXvet2jPVoQ5VlUIZ_V7C3iT4HI3qV-Pi7_KRybDyGKGlb2S0Z4uvih4ERjjnGOn9Prav0HpvqNNR3_HVs7W5o0wM0-XsTdp6ploM2Optp5ls97C0JU5DIqubY-lNcLvLia25Z2c__IZt8Ws1OjX0tGavbyvb_dXrltSKj-HJHijQJ9AdDxEB/s1600/zoom-prv.jpg",
-   "cves": [
-    "CVE-2026-108186"
-   ],
-   "first_seen": "2026-11-11T17:55:40.517702+00:00",
+   "title": "New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks",
+   "link": "https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html",
+   "published": "2026-11-18T14:11:28+00:00",
+   "summary": "The suspected Chinese advanced persistent threat (APT) group behind the sophisticated EggStreme malware has rebuilt its toolkit as it continues to target government organizations in the Philippines. \"When attackers are exposed, the cheap response is to rotate,\" Bitdefender said in a technical report shared with The…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYLKVaRRp02L2STeR4kakGeA1NJokTtxw2aLU4wBLS34vltviR8gV4eUjk0QJ9jDVbiS_2hSeDQCwIR_JoCzPzUt-FSNUNpaKNtHpKiMugkRAMwOIbl4FbcL5iE7KCe1hebNbJRTxqO5xQkEFBuDI6F8FnsnYfreljrQlHHXuKBEN0suJZeuIf8heda5wY/s1600/chinese.jpg",
+   "cves": [],
+   "first_seen": "2026-11-18T20:45:42.433362+00:00",
    "instructions": [
-    "Although Zoom makes no mention of the vulnerabilities being exploited in the wild, users are advised to apply the latest patches to mitigate potential threats.",
-    "Earlier this July, the popular videoconferencing platform shipped fixes for another improper input validation flaw impacting Zoom Workplace for Windows ( CVE-2026-53412 , CVSS score: 9.8) that could enable an unauthenticated user to take control of accounts."
+    "\"When attackers are exposed, the cheap response is to rotate,\" Bitdefender said in a technical report shared with The Hacker News.",
+    "\"The EggStreme operators did more than rotate – the agent we now see uses a different network protocol, has an enhanced command set, and comes in a passive variant that never beacons out.",
+    "The malware supports a number of features that enable the operator to gain remote control of the infected host."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "11aa6bef2bfb",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "F5 Warns 6 Critical BIG-IP Flaws Can Crash Traffic in Specific Setups, May Allow RCE",
+   "link": "https://thehackernews.com/2026/11/f5-warns-6-critical-big-ip-flaws-can.html",
+   "published": "2026-11-18T18:15:39+00:00",
+   "summary": "Six critical vulnerabilities in F5 BIG-IP allow an attacker to crash the Traffic Management Microkernel (TMM) without logging in, disrupting traffic until the TMM restarts. Each flaw needs a specific setup on a virtual server: an iRule that uses a particular command, or an APM policy that includes two particular kinds…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizE3X3tUSPpxIYnNyM91hyphenhyphenzZOS6jjdHnCLmubn4upOYKZn3MdjUqJQGEjIBGtZ2JHK6yggH6RxSQCANhtF7-zIWJ0EfGqA7iY2KQWM7vtoiCsc-_KeFZeHeDm-TOpM_oL_EVzOvPru_cMVzx3wJL8kaLEgXuzPzxm3iYnTiyu57quhgBgMY1Nb7V_sXG4/s1600/f5.png",
+   "cves": [],
+   "first_seen": "2026-11-18T20:45:42.433362+00:00",
+   "instructions": [
+    "No scheduled release is listed as a fix, and the advisories provide no workaround until a hotfix is installed.",
+    "The company has released engineering hotfixes and lists no workaround.",
+    "None of the company's advisories says the flaws have been exploited.",
+    "The company's advisory lists BIG-IP CNF as not vulnerable, but its CVE record, updated today, lists CNF as affected."
    ],
    "instructions_checked": true
   },
@@ -2370,6 +1885,20 @@
     "Interview assignments with downloads should only ever run in a disposable virtual machine, never on a work laptop."
    ],
    "instructions_checked": true
+  },
+  {
+   "id": "74d12e442320",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "New Attack Bypasses TPM Lockout to Crack Windows Hello and BitLocker PINs in Days, Not Years",
+   "link": "https://thehackernews.com/2026/11/flash-chip-attack-bypasses-tpm-lockout.html",
+   "published": "2026-11-18T12:28:30+00:00",
+   "summary": "On AMD-based PCs and some Intel PCs, the TPM lockout for Windows Hello and BitLocker PINs can be reset by someone who opens the PC's case, researchers at Technische Universität Berlin say. That leaves short PINs open to guessing. In lab tests, the researchers found a four-digit Hello PIN on an AMD laptop and a 6-digit…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpsv4GxAUbzCsIV1umrxZs6VxfD1eFwAeCgRHQQG_dNbP1fLiYe48hM-Wbd_8w5IxlacAwoidLqyQgBmG7YD7qKo0_XcqW2GhggfXshuK1uXz8BOma2H0Jjs8fabCO4IxHBfRopEUFDd0xHRRv43gMeog852Usv40sfcTwnO_9coyxtIMmteJxeJI_oPA/s1600/bitlocker.jpg",
+   "cves": [],
+   "first_seen": "2026-11-18T20:45:42.433362+00:00"
   },
   {
    "id": "5af74d5ce665",
@@ -2490,25 +2019,6 @@
    "instructions_checked": true
   },
   {
-   "id": "7fc0ff6aee2a",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Hackers Target Qlik Sense Servers With Reverse Shells, Stage ActiveMQ and Veeam Exploits",
-   "link": "https://thehackernews.com/2026/11/hackers-target-qlik-sense-servers-with.html",
-   "published": "2026-11-11T14:01:00+00:00",
-   "summary": "Threat actors have been observed targeting Qlik Sense servers to unsuccessfully deliver PowerShell reverse shell commands against multiple environments in October 2026. Cynet's CyOps and Research teams said they identified the suspicious activity in October 2026 against several E.U.-based customers within a narrow…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg5L1m-CqPOrgk9otByC4blBWuqDylovaSyHYhirRHQvzjjSUB0DBWbxnF_8cNIsONC6yoL3h-ydX61vmnsctKr_IbcnvmwRLAMqch16Ru5oMVuDWy1bilEt6EAgEerB7mUxICRgck1NkoJeA7Y2lvV0oqLkw12-f1xMhC7Dw5F1aK35NhVf3oZwj4WbfOT/s1600/qliksense.jpg",
-   "cves": [],
-   "first_seen": "2026-11-11T14:54:28.707849+00:00",
-   "instructions": [
-    "A second variant of the PowerShell script attempts to install OpenSSH and creates a scheduled task named \"WinUpdCheck\" that launches a PowerShell reverse shell written to \"C:\\ProgramData\\ssh\\winc.ps1\" at five-minute intervals.",
-    "\"If sshd remained unavailable, it downloaded OpenSSH-Win64.zip from the staging server, extracted it, and ran install-sshd.ps1,\" Cynet said."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "50868e3a64c2",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2556,7 +2066,7 @@
    "source_type": "news",
    "title": "Java4Shell Flaw (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak and More",
    "link": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html",
-   "published": "2026-11-18T04:27:41+00:00",
+   "published": "2026-11-18T11:55:49+00:00",
    "summary": "A Java flaw called Java4Shell can let attackers without an account run their own code on Jira, Jenkins, Keycloak, and three other widely used applications, says Calif, the security research firm that disclosed it this week. The flaw is present in Java 17.0.6 and later, and the vulnerable code runs only on x86-64 Intel…",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEis8B-Vf6puS0vOs9mEVup755KXy8y59KD72B5VQb8SyhO1JDHkYcvg42Y1rh1xg3seyml7j2vZn5Dq1OEnFYVzD_97osoZXWkxVVOBxM48InZPbaVgV7Lo64odzPVKNPEtPeLlEAm2AFfShOFVGtypVUJAJdt07qqik_Yde9X6BxLECPH7Gekbkzl2GBDK/s1600/java4shell-flaw.jpg",
    "cves": [
@@ -2736,24 +2246,6 @@
    "instructions_checked": true
   },
   {
-   "id": "14caa111eec6",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Over 35,000 Grok-Built Apps Exposed Online, Some Leaking Confidential Data and Passwords",
-   "link": "https://thehackernews.com/2026/11/over-35000-grok-built-apps-exposed.html",
-   "published": "2026-11-11T12:19:40+00:00",
-   "summary": "Of the 37,571 Grok-built apps that security company Claroc found online, 35,578 were open to anyone without a sign-in, the researchers said yesterday. They included 24 apps built by staff at the social network X and at SpaceXSI, the company that makes the Grok AI assistant. Most of the open apps were games, landing…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh54t26Pk-bNbcIXgu8KrKpT_zN1KxEov16xTFlJ8kiPJ3-btXjGUE1lb0ZpamQU5jUHwmxzxHpYLsAQfiaHQUu3gxCIUw2gsEYNwMjL6nRm_jWm6t_VdHJkz6xj3fAsmTZKP8Bbax1qdT98a_PY4ynv81njiDyPXvIIihl4dqXxxC9pMMf8-Mn9dziy_A/s1600/grokai.jpg",
-   "cves": [],
-   "first_seen": "2026-11-11T13:56:06.283853+00:00",
-   "instructions": [
-    "Claroc, which sells tools to find and secure apps built with AI, recommends these checks:"
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "e05f7a78ce38",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2797,6 +2289,20 @@
     "If patching is not an immediate option, it's essential to apply network restrictions to limit the risk of compromise."
    ],
    "instructions_checked": true
+  },
+  {
+   "id": "63ab0fd18797",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Quality Isn’t The Main Worry About AI Pentesting — Data Privacy and Production Safety Are",
+   "link": "https://thehackernews.com/2026/11/quality-isnt-main-worry-about-ai.html",
+   "published": "2026-11-18T11:03:57+00:00",
+   "summary": "AI is speeding up how software is built, which means more code, more changes, and more chances for vulnerabilities to reach production. It's speeding up how attackers find and exploit them too, with time-to-exploit now down to a single day. Security testing has to keep up with both. AI pentesting has emerged as a way…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj276QET-ma2-edrAgsOdbZltmoW58d_kJT8C-g8DXQfDQAzPlmCcQYv-tWcX-DXcSipQpu_oFY_pPunvn-eXoog3H0BYPLkb4uY3B4Ax9T7LmtVBgVDwZZInLbj5QgnjVMI5d1za8bgR1a2TvGaJzZUK2UuSAEk3gSY-erKiddYAYTkNE9kxEp0zcx5x8/s1600/intruder.jpg",
+   "cves": [],
+   "first_seen": "2026-11-18T20:45:42.433362+00:00"
   },
   {
    "id": "6b530aaeb2ca",
@@ -3114,6 +2620,28 @@
    "instructions_checked": true
   },
   {
+   "id": "1336631baf90",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Lawmakers call on White House to develop defensive AI cyber systems",
+   "link": "https://therecord.media/ai-cyber-white-house",
+   "published": "2026-11-18T19:00:00+00:00",
+   "summary": "A bipartisan Senate duo urged the White House to launch a national effort to more robustly confront AI-enabled cyber threats in light of recent security incidents involving artificial intelligence.",
+   "image": "https://cms.therecord.media/uploads/Maria_Cantwell_b590a127c1.jpg",
+   "cves": [],
+   "first_seen": "2026-11-18T20:45:42.433362+00:00",
+   "image_checked": true,
+   "instructions": [
+    "The defense tools should be able to “continuously identify vulnerabilities, develop and test fixes and and block attacks before they spread,” they wrote, and CISA should be in charge of accelerating the adoption of the tools across banks, hospitals, utilities and government agencies.",
+    "Clayton has not commented on the letter but has spoken publicly in recent days about the need to use AI to discover and patch vulnerabilities.",
+    "He said a recent spate of technology outages impacting major banks , tech companies and airlines are tied to efforts to patch vulnerabilities discovered at a faster pace than ever before by defenders using AI scanners.",
+    "They’re taking their systems down, they’re upgrading them, they’re putting patches in place… This is being done on a much larger scale because everybody recognizes it’s time to upgrade their systems,” Clayton told Fox Business on Tuesday."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "f0f23fdb08d7",
    "source": "therecord",
    "source_name": "The Record",
@@ -3168,26 +2696,6 @@
    "instructions_checked": true
   },
   {
-   "id": "424f8e5ef5ac",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Britain, France set out first guidelines for commercial hacking firms",
-   "link": "https://therecord.media/britain-france-set-out-guidelines-for-commercial-hacking-firms",
-   "published": "2026-11-11T13:11:00+00:00",
-   "summary": "The guidelines call on businesses that develop, sell or finance CCICs to vet their customers, establish technical safeguards against misuse and to maintain systems for monitoring and reporting abuses.",
-   "image": "https://cms.therecord.media/uploads/digital_city_cb3009f983.jpg",
-   "cves": [],
-   "first_seen": "2026-11-11T13:56:06.283853+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Companies should halt sales and support when serious misuse is a credible risk, according to the text, and are asked to “consider” remedies for victims of human rights abuses.",
-    "Some noted that Britain and France were seeking to restrict other states’ access to these tools while championing their own spyware industries."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "96e4cedac8bf",
    "source": "therecord",
    "source_name": "The Record",
@@ -3206,6 +2714,23 @@
     "Paddy McGuinness, a former British deputy national security adviser, was asked during a witness session whether the government’s plans matched the threat. “The answer to your core question about whether it is adequate to the severity of the cyber threat is no,” he said.",
     "It urged ministers to “widen the scope of cyber security regulation… ensuring that regulators have sufficient resources and capacity to enforce requirements effectively.”"
    ],
+   "instructions_checked": true
+  },
+  {
+   "id": "69958fa42ac4",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "British hacker gets 6 year sentence for $11.6M crypto theft scheme",
+   "link": "https://therecord.media/british-hacker-gets-six-year-sentence-scattered-spider",
+   "published": "2026-11-18T14:48:00+00:00",
+   "summary": "Tyler Robert Buchanan, 24, of Dundee, Scotland, was previously described as the suspected ringleader of the hacking collective, which Microsoft called “one of the most dangerous financial criminal groups” around.",
+   "image": "https://cms.therecord.media/uploads/jail_aa9e09fa90.jpg",
+   "cves": [],
+   "first_seen": "2026-11-18T20:45:42.433362+00:00",
+   "image_checked": true,
+   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -3400,23 +2925,6 @@
    "instructions_checked": true
   },
   {
-   "id": "d62040292e65",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Iran-backed network directed London attacks over FaceTime, US prosecutors say",
-   "link": "https://therecord.media/iran-backed-network-directed-london-attacks-over-facetime",
-   "published": "2026-11-11T16:57:00+00:00",
-   "summary": "An indictment unsealed Tuesday says the broader campaign, targeting Jewish and American sites, included attacks on synagogues in Belgium, the Netherlands and London, and U.S. bank buildings in Amsterdam and Paris.",
-   "image": "https://cms.therecord.media/uploads/doj_computer_9bebfbd8b8.jpg",
-   "cves": [],
-   "first_seen": "2026-11-11T17:55:40.517702+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "460686b6b1c6",
    "source": "therecord",
    "source_name": "The Record",
@@ -3528,6 +3036,25 @@
    "instructions_checked": true
   },
   {
+   "id": "e798ab68d19f",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "NSA continues response to interruptions in classified internal network",
+   "link": "https://therecord.media/nsa-continues-response-to-nsa-net-problems",
+   "published": "2026-11-18T16:19:00+00:00",
+   "summary": "Day 2 of the NSA Net's disruptions included staggered arrivals and logins at Fort Meade, while a source said classified national security work continued unimpeded.",
+   "image": "https://cms.therecord.media/uploads/nsa_seal_fort_meade_conference_room_c314a0a4cd.jpg",
+   "cves": [],
+   "first_seen": "2026-11-18T20:45:42.433362+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Testifying on Wednesday before the House Homeland Security Committee, Clayton said he understands that the “timing of these incidents can raise questions and it should.”"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "bb59c1759a0e",
    "source": "therecord",
    "source_name": "The Record",
@@ -3584,23 +3111,6 @@
    "instructions_checked": true
   },
   {
-   "id": "2b63f8aad1bf",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Poland shuts down government services platform ePUAP following cyberattack",
-   "link": "https://therecord.media/poland-shuts-down-government-services-platform-cyberattack",
-   "published": "2026-11-11T13:18:00+00:00",
-   "summary": "The attack targeted a nationwide system that allows users to submit official documents, communicate with government agencies and complete administrative procedures online.",
-   "image": "https://cms.therecord.media/uploads/poland_1_e70a3806d1.jpg",
-   "cves": [],
-   "first_seen": "2026-11-11T13:56:06.283853+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "f88082b89135",
    "source": "therecord",
    "source_name": "The Record",
@@ -3652,6 +3162,25 @@
    "instructions_checked": true
   },
   {
+   "id": "96111808951c",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Russian cyber-espionage group used stolen cloud data to hack into organizations, Google says",
+   "link": "https://therecord.media/russia-cyber-espionage-google",
+   "published": "2026-11-18T15:15:00+00:00",
+   "summary": "Russian state-backed hackers are using information stolen from cloud accounts to impersonate trusted contacts and launch new espionage attacks against people in their victims' professional networks, according to new research.",
+   "image": "https://cms.therecord.media/uploads/sajad_nori_21m_Jd5_NUGZU_unsplash_45dc9b8a8b.jpg",
+   "cves": [],
+   "first_seen": "2026-11-18T20:45:42.433362+00:00",
+   "image_checked": true,
+   "instructions": [
+    "They continued reading emails through third-party applications and found ways to regain access after the organization changed passwords and reset user sessions."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "b360f2c4a357",
    "source": "therecord",
    "source_name": "The Record",
@@ -3700,6 +3229,27 @@
    "first_seen": "2026-11-12T22:46:50.252554+00:00",
    "image_checked": true,
    "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "db1d82795c0b",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Trump administration officials size-up a bad stretch for tech",
+   "link": "https://therecord.media/tech-disruptions-house-homeland-committee-testimony",
+   "published": "2026-11-18T20:00:00+00:00",
+   "summary": "Homeland Security Secretary Markwayne Mullin said the administration will reach out to industry to get companies to share more information about big patches before they take effect.",
+   "image": "https://cms.therecord.media/uploads/markwayne_millin_worthwide_threats_11_18_2026_76960be5f3.png",
+   "cves": [],
+   "first_seen": "2026-11-18T20:45:42.433362+00:00",
+   "image_checked": true,
+   "instructions": [
+    "We just want to have a conversation and say maybe we should start communicating because what happens online is a tremendous amount of fear,” he said. “I think all of us can understand it but there's no cause for it.”",
+    "“We are in an environment where the rate of patching, the rate of upgrading of systems, is increasing,” he told the panel. “That is the result of advancements in compute and in applications, we should expect that as people are patching, and as people are upgrading systems.”",
+    "Mullin added that the administration would hold a phone call with representatives from the private sector about informing their customers when an upgrade is coming so they can adequately prepare."
+   ],
    "instructions_checked": true
   },
   {
@@ -4500,6 +4050,26 @@
    "instructions_checked": true
   },
   {
+   "id": "9f639cd35360",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Data breach impacts 40 Irish credit unions in reported IT provider hack",
+   "link": "https://www.bleepingcomputer.com/news/security/data-breach-impacts-40-irish-credit-unions-in-reported-it-provider-hack/",
+   "published": "2026-11-18T19:39:33+00:00",
+   "summary": "A reported cyberattack on Wellington IT has exposed sensitive information belonging to members of 50 credit unions, the majority of which are located in Ireland.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/18/ireland.jpg",
+   "cves": [],
+   "first_seen": "2026-11-18T20:45:42.433362+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Account passwords, PINs, payment card details, and online banking credentials were unaffected, but union members are advised to remain vigilant for phishing and impersonation attempts.",
+    "BleepingComputer has contacted Wellington IT to learn more about the incident, and we will update this post with their response once we receive it."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "57cf485fa921",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4514,28 +4084,6 @@
    "first_seen": "2026-11-18T12:18:19.814067+00:00",
    "image_checked": true,
    "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "a9021fd43362",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "eBPF Rootkits: Why Underground Actors Are Taking Notice",
-   "link": "https://www.bleepingcomputer.com/news/security/ebpf-rootkits-why-underground-actors-are-taking-notice/",
-   "published": "2026-11-11T15:01:11+00:00",
-   "summary": "Linux eBPF rootkits can hide malicious activity and evade traditional detection methods without loading kernel modules. Flare reveals how these techniques are spreading through underground forums, where threat actors are sharing rootkit source code, tutorials, and exploits targeting Linux systems.",
-   "image": "https://www.bleepstatic.com/content/posts/2026/11/08/ebpf-header-image.jpg",
-   "cves": [],
-   "first_seen": "2026-11-11T15:52:53.787322+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Organizations running Linux infrastructure should take eBPF threats seriously:",
-    "Investigators could still see associated BPF maps and links, illustrating why defenders should compare multiple sources of host telemetry.",
-    "Restrict eBPF access via kernel.unprivileged_bpf_disabled=1 and limit CAP_BPF / CAP_NET_ADMIN.",
-    "Patch aggressively — BPF verifier bugs are a recurring vulnerability class, and weaponized exploits appear fast."
-   ],
    "instructions_checked": true
   },
   {
@@ -4599,6 +4147,28 @@
     "\"ARTEX significantly reduces the time required to chain attack techniques, with some intrusions progressing from initial targeting to privileged access in under three hours,\" reads the FBI advisory.",
     "The FBI's 13-page advisory includes indicators of compromise associated with known ARTEX campaigns, including IP addresses, command-and-control infrastructure, and suspicious network activity.",
     "The bureau also recommends monitoring for unusual bursts of automated requests, suspicious cloud activity, unexpected credential or privilege changes, and large data transfers."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "8e8debc4b233",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "From Deepfakes to Helpdesk Impersonation: Why Stronger Verification Matters",
+   "link": "https://www.bleepingcomputer.com/news/security/from-deepfakes-to-helpdesk-impersonation-why-stronger-verification-matters/",
+   "published": "2026-11-18T15:00:10+00:00",
+   "summary": "Attackers are using deepfakes, helpdesk impersonation, and fake IT support requests to deceive employees and gain unauthorized access to corporate systems. Specops Software examines real-world attacks and explains how stronger identity verification can help organizations prevent social engineering threats.",
+   "image": "https://www.bleepstatic.com/content/posts/2026/11/16/specops-hacker.jpg",
+   "cves": [],
+   "first_seen": "2026-11-18T20:45:42.433362+00:00",
+   "image_checked": true,
+   "instructions": [
+    "M&S initially estimated the incident would reduce its 2025/26 operating profit by around £300 million before mitigation.",
+    "Rather than relying on security questions or personal information that attackers may have obtained, service desk teams should use trusted authentication methods to confirm callers' identities.",
+    "A password reset request made through an internal chatbot , for example, should still require strong identity verification before the request is processed.",
+    "By integrating verification directly into these processes, organizations can apply consistent security checks at critical points without relying entirely on manual intervention."
    ],
    "instructions_checked": true
   },
@@ -4730,28 +4300,6 @@
    "instructions_checked": true
   },
   {
-   "id": "9c9df925add3",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Hackers use AntiFox AI agents in AWS credential-theft attacks",
-   "link": "https://www.bleepingcomputer.com/news/security/hackers-use-antifox-ai-agents-in-aws-credential-theft-attacks/",
-   "published": "2026-11-11T15:12:59+00:00",
-   "summary": "Attackers are using Alibaba Cloud to host self-managed instances of AntiFox, an open-source agentic penetration testing platform, to target web services and AWS environments.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/09/robot-hacker.jpg",
-   "cves": [],
-   "first_seen": "2026-11-11T15:52:53.787322+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Arctic Wolf's report includes hunting guidance and recommendations for defenders that include correlating IIS webshell activity with unusual AWS access and reviewing successful API calls within bursts of denials.",
-    "The researchers also recommend revoking affected AWS sessions and keys and rotating credentials exposed through application files.",
-    "Its publishers prohibit using the tool against live systems, in real-world penetration tests or security exercises, or for destructive or illegal activity, but they do not describe any technical controls that enforce those restrictions.",
-    "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day"
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "db3fd3a5adb8",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4815,45 +4363,24 @@
    "instructions_checked": true
   },
   {
-   "id": "4c32248b415f",
+   "id": "4d21e756021a",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
    "official": false,
    "source_type": "news",
-   "title": "Maersk confirms data breach as WhiteArmor ransomware demands $5 million",
-   "link": "https://www.bleepingcomputer.com/news/security/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million/",
-   "published": "2026-11-11T16:24:18+00:00",
-   "summary": "Maersk announced that a threat actor gained unauthorized access to a local legacy system inherited through an earlier acquisition and extracted data from it.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/11/maersk.jpg",
+   "title": "Microsoft’s Agent Framework PyPI package compromised to steal credentials",
+   "link": "https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials/",
+   "published": "2026-11-18T16:58:42+00:00",
+   "summary": "Hackers compromised Microsoft's official Agent Framework Python package on PyPI, publishing two malicious versions designed to steal cloud credentials and other sensitive information from developers' systems.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2025/03/12/Microsoft-headpic.jpg",
    "cves": [],
-   "first_seen": "2026-11-11T16:56:19.986048+00:00",
+   "first_seen": "2026-11-18T20:45:42.433362+00:00",
    "image_checked": true,
    "instructions": [
-    "\"As always, please treat any unexpected communications claiming to relate to this matter with caution and verify them through your usual Maersk contact,\" the company advises.",
-    "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day",
-    "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "693679885746",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "N-able releases security hotfixes for zero-day vulnerabilities",
-   "link": "https://www.bleepingcomputer.com/news/security/n-able-releases-security-hotfixes-for-zero-day-vulnerabilities/",
-   "published": "2026-11-11T12:32:27+00:00",
-   "summary": "N-able released hotfixes to address zero-day bugs affecting its N-central remote monitoring and management (RMM) platform, which were publicly disclosed over the weekend and forced it to take vulnerable hosted environments offline.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/10/N-able.jpg",
-   "cves": [],
-   "first_seen": "2026-11-11T12:40:42.987688+00:00",
-   "image_checked": true,
-   "instructions": [
-    "In a Tuesday update , N-able said that all hosted N-central servers (NCODs) across all regions have now been successfully upgraded and advised and \"strongly\" recommended that all N-central On-Premises customers upgrade their installations to the newly released version \"as soon as possible.\"",
-    "\"Customers should follow the published upgrade guidance carefully before restoring normal access to their N-central environment.",
-    "Earlier incident guidance advised On-Premises customers to keep their N-central servers offline while remediation was being developed,\" it said.",
-    "This follows N-able's decision to take all hosted N-central environments offline across the Americas, Europe, and Asia-Pacific regions until it could patch them against potential attacks targeting the zero-day flaws in the wild."
+    "Developers who installed either malicious version should isolate affected environments, avoid running Python or pip until they are secured, and rebuild from a known-clean environment using the safe 1.26.0 release.",
+    "Any potentially exposed credentials that were within the reach of the compromised environment should be rotated immediately.",
+    "To determine the exact level of compromise, investigators should look for the specific webhook URL path in egress logs and distinguish blocked requests from completed transfers.",
+    "Hackers hijack AOMEI update servers to secretly spread malware"
    ],
    "instructions_checked": true
   },
@@ -5218,6 +4745,25 @@
     "Oracle’s Security Advisory: Critical Security Patch Update – November 2026"
    ],
    "instructions_checked": true
+  },
+  {
+   "id": "122413bd849f",
+   "source": "cisa",
+   "source_name": "CISA Cybersecurity Advisories",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+   "link": "https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+   "published": "2026-11-18T12:00:00+00:00",
+   "summary": "CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2024-10441 Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability CVE-2026-40217 BerriAI LiteLLM Unprotected Alternate Channel Vulnerability…",
+   "image": null,
+   "cves": [
+    "CVE-2024-10441",
+    "CVE-2026-40217",
+    "CVE-2026-90436",
+    "CVE-2026-90817"
+   ],
+   "first_seen": "2026-11-18T20:45:42.433362+00:00"
   },
   {
    "id": "0b6d9bcd8811",
@@ -5618,7 +5164,7 @@
    "source_name": "Dark Reading",
    "official": false,
    "source_type": "news",
-   "title": "Cursor Traces Malicious Claude Code Extension to Third-Party Breach",
+   "title": "Cursor Traces Malicious Claude Code Extensions to Third-Party Breach",
    "link": "https://www.darkreading.com/application-security/cursor-malicious-claude-code-extension-third-party-breach",
    "published": "2026-11-17T18:38:37+00:00",
    "summary": "A compromised key issued to AI infrastructure provider Fireworks was used by threat actors to access Cursor data and credentials.",
@@ -5637,7 +5183,7 @@
    "title": "Grok Bots Attempt to Access Corporate Data Without User Approval",
    "link": "https://www.darkreading.com/application-security/grok-bots-corporate-data-without-user-approval",
    "published": "2026-11-17T13:12:56+00:00",
-   "summary": "Two AI agents, separately over a five-day period, autonomously tried to access connected applications, including Google Calendar, Gmail, Slack, and GitHub, without account owner approval.",
+   "summary": "Two AI agents, separately over a five-day period, autonomously tried to access connected applications, including Google Calendar, Gmail, Slack, and GitHub, without account owner permission.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blte89802188fbf7517/6afc5ddc05f01c312ef66082/rogue_AO_bot_Chris_Light_Alamy.png?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-17T15:17:36.609279+00:00",
@@ -5829,7 +5375,7 @@
    "title": "As Test Takers Turn to AI, Exam Security Plays Catch-Up",
    "link": "https://www.darkreading.com/cybersecurity-operations/test-takers-ai-exam-security-catch-up",
    "published": "2026-11-13T22:27:00+00:00",
-   "summary": "It's hard to detect whether someone is using artificial intelligence (AI) to cheat on IT certification exams, but new tools and processes are emerging to boost trust.",
+   "summary": "It's hard to detect whether someone is using artificial intelligence to cheat on IT certification exams, but new tools and processes are emerging to boost trust.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltccdd6137653ede6b/6af4d346ef03ab8c2a6901d5/GettyImages-2228505019.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-13T15:12:20.611857+00:00",
@@ -5849,22 +5395,6 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltd72cfa843f157710/6af61e08fa93fcee56324598/black_and_white_moth-powerofforever-GettyImages-1920014051.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-12T20:50:16.965486+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "e2b7ebdc245e",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "N-able Takes N-central Platform Offline After Discovery of 33 Flaws",
-   "link": "https://www.darkreading.com/endpoint-security/n-able-n-central-offline-33-flaws",
-   "published": "2026-11-11T20:05:18+00:00",
-   "summary": "The RMM provider also released a hotfix as a recommended mitigation to address public exploits for the alleged zero-days, which allow for attacker takeover.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt1eb3a07d69de328b/6af4605e4c33022b5dec789d/RMM_panthermedia_Alamy.png?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-11T21:35:52.932632+00:00",
    "instructions": [],
    "instructions_checked": true
   },
@@ -5897,6 +5427,22 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt6f7643977746699c/6afcac2049ae9b70b9695c91/red_mailbox_white_brick_wall-Liudmila_Chernetska-GettyImages-1477282383.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-17T21:54:48.603180+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "27e5f548c7a1",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "AttackIQ Research Reveals How Iranian Cyber Groups Hand Off Network Access to Enable Destructive Attacks",
+   "link": "https://www.darkreading.com/threat-intelligence/attackiq-research-reveals-iranian-cyber-groups",
+   "published": "2026-11-18T20:38:42+00:00",
+   "summary": "Analysis of 20 Iranian state-sponsored threat groups details how espionage, ransomware, and hacktivism intersect in state-backed cyber campaigns.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt850556f866500627/654a5a8e05eb4d040a046894/325351_DR23_Graphics_General_Large_Text_v1.png?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-18T20:45:42.433362+00:00",
    "instructions": [],
    "instructions_checked": true
   },
@@ -5949,6 +5495,38 @@
    "instructions_checked": true
   },
   {
+   "id": "03bfba8ed46b",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "Java4Shell Flaw Threatens Global Enterprises, Java Application Ecosystem",
+   "link": "https://www.darkreading.com/vulnerabilities-threats/java4shell-flaw-threatens-global-java-application-ecosystem",
+   "published": "2026-11-18T16:54:52+00:00",
+   "summary": "Discovered using AI, the memory corruption vulnerability affects the OpenJDK runtime and could allow unauthenticated attackers to take over systems.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt99cd31a80daa3833/6afdaa35fe696e77159c89b6/dangerous_coffee_cup_Nikreats_Alamy.png?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-18T20:45:42.433362+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "8368f9805644",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "Major Brazilian Signature Apps Enable RCE & Fraud",
+   "link": "https://www.darkreading.com/vulnerabilities-threats/major-brazilian-signature-app-rce-fraud",
+   "published": "2026-11-18T14:00:00+00:00",
+   "summary": "Government-sanctioned authentication middleware is used for exceptionally important legal documents, yet it's often rife with RCE bugs.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltd3d76d438281428b/6afb51c99f6beb04c5e535c4/Brazil_CNH-RafaPress-Getty.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-18T20:45:42.433362+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "9c11c754eaec",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -5962,60 +5540,6 @@
    "cves": [],
    "first_seen": "2026-11-16T19:25:00.023837+00:00",
    "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "3c5e2d75ed5c",
-   "source": "msblog",
-   "source_name": "Microsoft Security Blog",
-   "official": false,
-   "source_type": "vendor_blog",
-   "title": "The global socket: how threat actors are weaponizing GSocket for stealthy C2",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/11/global-socket-how-threat-actors-weaponizing-gsocket-stealthy-c2/",
-   "published": "2026-11-11T19:49:57+00:00",
-   "summary": "Microsoft observed multiple incidents in which threat actors deployed GSocket, an open source remote access tool, on compromised Linux servers. Threat actors used Gsocket to maintain access even after the vulnerabilities used for initial compromise were remediated. This turned a single web application compromise into…",
-   "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/11/image-21.webp",
-   "cves": [
-    "CVE-2026-43284"
-   ],
-   "first_seen": "2026-11-11T21:35:52.932632+00:00",
-   "instructions": [
-    "Defenders investigating affected hosts should look for evidence of GSocket deployment, persistence, privilege escalation, and outbound connections, rather than treating application patching alone as complete remediation.",
-    "The same trade-offs apply when initial access comes through remote access services or cloud shell sessions.",
-    "For an affected Linux server, remediation should address both the initial compromise and the GSocket deployment.",
-    "Apply deny-by-default egress rules, allow only required destinations, and monitor connections to relay infrastructure."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "e564f8c52313",
-   "source": "msblog",
-   "source_name": "Microsoft Security Blog",
-   "official": false,
-   "source_type": "vendor_blog",
-   "title": "Lessons from 59 Linux Kernel Bug Reports",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/11/lessons-from-59-linux-kernel-bug-reports/",
-   "published": "2026-11-11T16:55:00+00:00",
-   "summary": "At Microsoft’s FORGE Lab, we used codename MDASH to scan a subset of Linux kernel subsystems from late May to mid-June 2026. One full-time researcher and one intern led this three-month effort, which has so far produced 59 public upstream reports and 33 assigned CVEs. We confirmed working root privilege-escalation…",
-   "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/11/image-19.webp",
-   "cves": [
-    "CVE-2026-64554",
-    "CVE-2026-64563",
-    "CVE-2026-64580",
-    "CVE-2026-74544",
-    "CVE-2026-74561",
-    "CVE-2026-74562",
-    "CVE-2026-89789",
-    "CVE-2026-98222",
-    "CVE-2026-98364"
-   ],
-   "first_seen": "2026-11-11T18:56:23.181274+00:00",
-   "instructions": [
-    "Triggering it requires three conditions to line up in the same walk: the caller must pause and resume the same iterator across walk_stop() and walk_start(), a table resize must free the old bucket table during that pause, and the entry at iter->p must also be removed and freed before the walk resumes.",
-    "Below are eight CVEs for which we confirmed local root privilege-escalation exploits in controlled laboratory environments, with some cases requiring non-default settings or disabled exploit mitigations:",
-    "266 (42.8%) shared a root cause with another case, so one patch could fix them together.",
-    "Upstream Linux typically requires vulnerability reports to come with a working patch."
-   ],
    "instructions_checked": true
   },
   {
@@ -6363,28 +5887,6 @@
    "instructions_checked": true
   },
   {
-   "id": "7ba871700f25",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Asus, Zoom Release Security Patches",
-   "link": "https://www.securityweek.com/asus-zoom-release-security-patches/",
-   "published": "2026-11-11T13:58:38+00:00",
-   "summary": "Attackers could exploit them for command execution, memory overwrites, and privilege escalation. The post Asus, Zoom Release Security Patches appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2023/06/ASUS-Vulnerabillities.jpg",
-   "cves": [],
-   "first_seen": "2026-11-11T14:54:28.707849+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Computer maker Asus published an advisory describing four high- and medium-severity vulnerabilities in certain router firmware releases.",
-    "Additionally, Cisco updated several advisories: it added fresh information on Node2Shell ’s impact and on an authorization bypass’s impact on ISE and ISE-PIC, and added new details on the availability of fixes for seven critical- and high-severity CVEs in Meraki products.",
-    "Citrix, Ivanti Patch Critical and High-Severity Vulnerabilities",
-    "ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure"
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "7139bcf40a7d",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -6505,28 +6007,6 @@
    "instructions_checked": true
   },
   {
-   "id": "60ccd3ca4d45",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Citrix, Ivanti Patch Critical and High-Severity Vulnerabilities",
-   "link": "https://www.securityweek.com/citrix-ivanti-patch-critical-and-high-severity-vulnerabilities/",
-   "published": "2026-11-11T13:37:19+00:00",
-   "summary": "Attackers could exploit the bugs to tamper with certificate entries, achieve remote code execution, and compromise hosts. The post Citrix, Ivanti Patch Critical and High-Severity Vulnerabilities appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/08/Citrix-vulnerability.jpeg",
-   "cves": [],
-   "first_seen": "2026-11-11T13:56:06.283853+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Additionally, Citrix released XenServer updates that mitigate several AMD CPU vulnerabilities that could allow guest VMs to compromise the host or infer the active memory content of another VM.",
-    "ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure",
-    "Chipmaker Patch Tuesday: Over 200 Vulnerabilities Addressed by Intel, AMD",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "d20b2da13e92",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -6633,27 +6113,6 @@
    "instructions_checked": true
   },
   {
-   "id": "d62ab9694fcc",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Critical Xen Orchestra Flaws Exploited in Attacks",
-   "link": "https://www.securityweek.com/critical-xen-orchestra-flaws-exploited-in-attacks/",
-   "published": "2026-11-11T15:42:47+00:00",
-   "summary": "A critical authentication bypass allows attackers to execute arbitrary code as admin and take over XCP-ng nodes. The post Critical Xen Orchestra Flaws Exploited in Attacks appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/01/Veeam-backup-cloud-storage.jpeg",
-   "cves": [],
-   "first_seen": "2026-11-11T15:52:53.787322+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Citrix, Ivanti Patch Critical and High-Severity Vulnerabilities",
-    "ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "67c2edf75728",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -6744,27 +6203,6 @@
    "first_seen": "2026-11-13T03:33:34.052269+00:00",
    "image_checked": true,
    "instructions": [
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "6ef677aa3015",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Finite State Raises $27 Million to Secure Software and Firmware in Connected Devices",
-   "link": "https://www.securityweek.com/finite-state-raises-27-million-to-secure-software-and-firmware-in-connected-devices/",
-   "published": "2026-11-11T12:24:33+00:00",
-   "summary": "The Series C round will fund international expansion and more autonomous features for the firm’s device security platform. The post Finite State Raises $27 Million to Secure Software and Firmware in Connected Devices appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2025/12/funding-round.jpeg",
-   "cves": [],
-   "first_seen": "2026-11-11T12:40:42.987688+00:00",
-   "image_checked": true,
-   "instructions": [
-    "ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure",
-    "Chipmaker Patch Tuesday: Over 200 Vulnerabilities Addressed by Intel, AMD",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
@@ -6923,10 +6361,10 @@
    "source_name": "SecurityWeek",
    "official": false,
    "source_type": "news",
-   "title": "Java4Shell Vulnerability Puts Many Enterprise Applications at Risk of Takeover",
+   "title": "Java4Shell Vulnerability Puts Enterprise Applications at Risk of Takeover",
    "link": "https://www.securityweek.com/java4shell-vulnerability-puts-many-enterprise-applications-at-risk-of-takeover/",
    "published": "2026-11-18T07:43:34+00:00",
-   "summary": "Calif demonstrated remote code execution in Jira, Jenkins and Keycloak, while VulnCheck says real-world RCE requires per-target work The post Java4Shell Vulnerability Puts Many Enterprise Applications at Risk of Takeover appeared first on SecurityWeek.",
+   "summary": "Calif demonstrated remote code execution in Jira, Jenkins and Keycloak, while VulnCheck says real-world RCE requires per-target work The post Java4Shell Vulnerability Puts Enterprise Applications at Risk of Takeover appeared first on SecurityWeek.",
    "image": "https://www.securityweek.com/wp-content/uploads/2026/11/Java4Shell.jpg",
    "cves": [],
    "first_seen": "2026-11-18T08:00:02.487812+00:00",
@@ -6937,6 +6375,22 @@
     "The agency also advises hunting for Java installations embedded in third-party software, containers and appliances, warning that these may not be listed separately in asset inventories.",
     "The proof-of-concept (PoC) code published by Calif demonstrates the memory corruption but does not achieve code execution. “The weaponized chains for individual products stay private until everyone has had a chance to upgrade."
    ],
+   "instructions_checked": true
+  },
+  {
+   "id": "2c1ddb51a4dc",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Last of Five Defendants Sentenced in US Scattered Spider Hacking Case",
+   "link": "https://www.securityweek.com/last-of-five-defendants-sentenced-in-us-scattered-spider-hacking-case/",
+   "published": "2026-11-18T13:19:32+00:00",
+   "summary": "British national Tyler Robert Buchanan has been sentenced to 6 years in prison in the United States, the DOJ announced. The post Last of Five Defendants Sentenced in US Scattered Spider Hacking Case appeared first on SecurityWeek.",
+   "image": null,
+   "cves": [],
+   "first_seen": "2026-11-18T20:45:42.433362+00:00",
+   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -7384,6 +6838,25 @@
    "instructions_checked": true
   },
   {
+   "id": "dfcd48a830ee",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Russian APT Poses as Employee of Hacked Firm to Breach Another US Organization",
+   "link": "https://www.securityweek.com/russian-apt-poses-as-employee-of-hacked-firm-to-breach-another-us-organization/",
+   "published": "2026-11-18T13:33:47+00:00",
+   "summary": "Star Blizzard weaponized data and identities stolen in late 2025 to phish and compromise a US organization. The post Russian APT Poses as Employee of Hacked Firm to Breach Another US Organization appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2024/09/Russian-hacking.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-18T20:45:42.433362+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Next, the group downloaded the organization’s entire cloud storage drive, accessed the admin console to fingerprint defenses and remove evidence of the initial intrusion, exported full employee lists, and launched a domain-wide export."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "527326996071",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -7422,27 +6895,6 @@
     "Its main recommendation was “do not launch widgets in Telegram until a fix is released.” Telegram CEO Pavel Durov promoted the widgets feature on X on November 10, saying that any message on the platform can now become an app.",
     "SecurityWeek has reached out to Telegram for comment and will update this article if the company responds.",
     "No Signs of Hacking in FAA Ground Stop as FBI Reportedly Probes Software Update"
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "f9a315b08895",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Today: CISO Forum Virtual Summit 2026 Day 2 – Join Cybersecurity Leaders Online",
-   "link": "https://www.securityweek.com/today-ciso-forum-virtual-summit-2026-join-global-cybersecurity-leaders/",
-   "published": "2026-11-11T16:29:42+00:00",
-   "summary": "Designed for cybersecurity leaders, this immersive two-day virtual event is your premier destination to discuss, share, and learn innovative risk management and defense strategies defining the modern enterprise. The post Today: CISO Forum Virtual Summit 2026 Day 2 – Join Cybersecurity Leaders Online appeared first on…",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/11/CISO-Virtual-Conference.jpg",
-   "cves": [],
-   "first_seen": "2026-11-10T15:28:37.836678+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Burnout Is a Security Risk (2:00 PM ET) – Patrick Kelley, CISO & Founder of Critical Path Security, will provide a vital playbook for measuring and mitigating team fatigue before it leads to a security incident.",
-    "Chrome Update Patches Exploited XML Zero-Day, Eighth This Year",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
   },
@@ -7506,6 +6958,25 @@
     "However, in a November 9 update , the company acknowledged that the breach also affected account and billing information, as well as some customer datasets and incomplete models.",
     "SecurityWeek has emailed Uber for additional information on the data breach and will update this article if the company responds.",
     "No Signs of Hacking in FAA Ground Stop as FBI Reportedly Probes Software Update"
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "4007647799e1",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "VeroSecurity Raises $11 Million for AI Security Engineering Platform",
+   "link": "https://www.securityweek.com/verosecurity-raises-11-million-for-ai-security-engineering-platform/",
+   "published": "2026-11-18T15:30:42+00:00",
+   "summary": "AI Security Engineering is a new and essential security discipline now being brought into focus by VeroSecurity. The post VeroSecurity Raises $11 Million for AI Security Engineering Platform appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2023/01/Cybersecurity_News-SecurityWeek.jpg",
+   "cves": [],
+   "first_seen": "2026-11-18T20:45:42.433362+00:00",
+   "image_checked": true,
+   "instructions": [
+    "If a change requires a new risk decision, Vero brings the analysis and recommended action to the responsible security professional."
    ],
    "instructions_checked": true
   },

@@ -1,6 +1,34 @@
 {
  "items": [
   {
+   "id": "2bde3308d445",
+   "title": "[In preview] Public Preview: AI bot ruleset for Azure Front Door Premium WAF",
+   "link": "https://azure.microsoft.com/updates?id=581604",
+   "summary": "Announcing the public preview of the AI bot ruleset for Azure Web Application Firewall (WAF) on Azure Front Door Premium. AI crawlers and agents visit your site for different reasons, and you may want to allow some but not others. Robots.txt only works wh",
+   "published": "2026-11-18T18:27:29+00:00"
+  },
+  {
+   "id": "daf6f8c9f3e0",
+   "title": "Announcing: The new Azure Databricks on Azure Government is now in Beta",
+   "link": "https://azure.microsoft.com/updates?id=581645",
+   "summary": "A new Azure Databricks environment is now available in Beta on Microsoft Azure Government. It brings the modern data and AI platform from global Azure to U.S. public sector agencies and their partners, delivered as a first-party Azure service. The Beta in",
+   "published": "2026-11-18T18:01:03+00:00"
+  },
+  {
+   "id": "525ebe3b9195",
+   "title": "[Launched] Generally Available: Cross-subscription backup for Azure Virtual Machines in Azure Backup",
+   "link": "https://azure.microsoft.com/updates?id=581048",
+   "summary": "Azure Backup now supports cross-subscription backup for Azure Virtual Machines, enabling customers to protect VMs using a Recovery Services vault located in a different Azure subscription within the same tenant.This capability allows organizations to cent",
+   "published": "2026-11-18T18:00:04+00:00"
+  },
+  {
+   "id": "16e0375d9583",
+   "title": "[In preview] Public Preview: AI-powered application and database modernization with Modernize CLI",
+   "link": "https://azure.microsoft.com/updates?id=579943",
+   "summary": "Modernize CLI brings application and database modernization together as one connected, agentic journey. It assesses application architecture, dependencies, and cloud readiness while discovering the databases the application relies on and invoking speciali",
+   "published": "2026-11-18T17:58:45+00:00"
+  },
+  {
    "id": "f55eb3d5199e",
    "title": "[In preview] Public Preview: Immutable snapshots for Azure Disk Storage",
    "link": "https://azure.microsoft.com/updates?id=581503",
@@ -141,39 +169,11 @@
    "published": "2026-11-17T21:57:41+00:00"
   },
   {
-   "id": "2d55219ab355",
-   "title": "[Launched] Generally Available: Confidential VMs with Intel TDX support on AKS",
-   "link": "https://azure.microsoft.com/updates?id=581130",
-   "summary": "Customers standardized on Intel Trust Domain Extensions (TDX) for attestation and hardware confidentiality can't run those workloads on AKS Confidential VM node pools today, because CVM node images only support AMD SEV-SNP. AKS Confidential VM node pools",
-   "published": "2026-11-17T21:00:05+00:00"
-  },
-  {
    "id": "15ffc96d3bd7",
    "title": "[Launched] Generally Available: Network egress controls for hosted agents in Microsoft Foundry",
    "link": "https://azure.microsoft.com/updates?id=571821",
    "summary": "Network egress controls govern the outbound connections a Foundry hosted agent can make, is generally available. Ordered rules match on destination host (FQDN, with wildcards such as *.contoso.com) and apply an Allow, Deny, or Rewrite (redirect to another",
    "published": "2026-09-18T17:23:21+00:00"
-  },
-  {
-   "id": "1e73161b99e4",
-   "title": "[Launched] Generally Available: Semantic chunking and AI-generated image descriptions with Azure Content Understanding in Azure AI Search",
-   "link": "https://azure.microsoft.com/updates?id=563661",
-   "summary": "The Azure Content Understanding skill in Azure AI Search is generally available for semantic chunking and AI-generated image descriptions, for use with Foundry IQ and Azure AI Search. The skill produces semantically coherent chunks with structured Markdow",
-   "published": "2026-06-04T19:00:34+00:00"
-  },
-  {
-   "id": "551cdeeab208",
-   "title": "[Launched] Generally Available: MCP server knowledge sources in Foundry IQ",
-   "link": "https://azure.microsoft.com/updates?id=563411",
-   "summary": "Foundry IQ supported Model Context Protocol (MCP) servers as federated knowledge sources, is generally available. Customers register an MCP server as a read-only knowledge source in Foundry IQ. MCP knowledge sources participate in Foundry IQ cross-source",
-   "published": "2026-06-02T19:00:47+00:00"
-  },
-  {
-   "id": "d2414524e323",
-   "title": "[Launched] Generally Available: Snapshot backup for SQL Server in Azure VMs",
-   "link": "https://azure.microsoft.com/updates?id=564668",
-   "summary": "Azure Backup now supports snapshot-based backup for SQL Server running on Azure Virtual Machines. This new capability uses Azure disk snapshots combined with native SQL transaction log backups to deliver near-instant, low-impact full backups for large SQL",
-   "published": "2026-06-02T15:15:36+00:00"
   }
  ]
 }
