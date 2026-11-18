@@ -11,16 +11,6 @@
    "url": "story/94321d4b37d6.html"
   },
   {
-   "id": "f67825a82ae8",
-   "title": "Recent UnrealIRCd Vulnerability Exploited in Attacks",
-   "summary": "Tracked as CVE-2026-114713, the high-severity flaw allows attackers to execute commands with server/IRCOp privileges. The post Recent UnrealIRCd Vulnerability Exploited…",
-   "priority": "Critical",
-   "category": "Patch Radar",
-   "date": "16 Nov 2026, 11:15 UTC",
-   "sources": "SecurityWeek, The Hacker News, CISA Cybersecurity Advisories",
-   "url": "story/f67825a82ae8.html"
-  },
-  {
    "id": "6ad116b5c12b",
    "title": "MSP ScreenConnect Servers Targeted in Month-Long Campaign",
    "summary": "More than 40 servers received over 688,000 requests exploiting CVE-2026-84869 to execute guest-pushed files. The post MSP ScreenConnect Servers Targeted in Month-Long…",
@@ -29,6 +19,16 @@
    "date": "17 Nov 2026, 13:24 UTC",
    "sources": "SecurityWeek, Microsoft Security Blog, The Hacker News",
    "url": "story/6ad116b5c12b.html"
+  },
+  {
+   "id": "f67825a82ae8",
+   "title": "Recent UnrealIRCd Vulnerability Exploited in Attacks",
+   "summary": "Tracked as CVE-2026-114713, the high-severity flaw allows attackers to execute commands with server/IRCOp privileges. The post Recent UnrealIRCd Vulnerability Exploited…",
+   "priority": "Critical",
+   "category": "Patch Radar",
+   "date": "16 Nov 2026, 11:15 UTC",
+   "sources": "SecurityWeek, The Hacker News, CISA Cybersecurity Advisories",
+   "url": "story/f67825a82ae8.html"
   },
   {
    "id": "72572082204e",
@@ -211,16 +211,6 @@
    "url": "story/112cf26ea63a.html"
   },
   {
-   "id": "5e43b1695ab6",
-   "title": "New GitDoor and GraphDoor Backdoors Turn GitHub and SharePoint Into Covert C2 Channels",
-   "summary": "Government sectors in Asia and Africa have been targeted by an active cyber intrusion campaign that delivers to previously undocumented backdoors that leverage…",
-   "priority": "Standard",
-   "category": "Microsoft",
-   "date": "17 Nov 2026, 11:20 UTC",
-   "sources": "The Hacker News",
-   "url": "story/5e43b1695ab6.html"
-  },
-  {
    "id": "3ad387c63ed5",
    "title": "Uber notifies drivers of data breach affecting nearly 150,000 people",
    "summary": "Ride-hailing company Uber is notifying nearly 150,000 drivers that attackers stole their data after breaching AI infrastructure provider Fireworks in early October.",
@@ -279,6 +269,26 @@
    "date": "12 Nov 2026, 13:00 UTC",
    "sources": "The Record",
    "url": "story/e447c2de7d90.html"
+  },
+  {
+   "id": "ddb3ea43dd74",
+   "title": "Microsoft Takes Perception Agentic Security Platform Out of Preview",
+   "summary": "Four blue team agents and the Recon Agent are now generally available, while integrations and vulnerability shielding are in preview. The post Microsoft Takes Perception…",
+   "priority": "Standard",
+   "category": "Microsoft",
+   "date": "18 Nov 2026, 12:14 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/ddb3ea43dd74.html"
+  },
+  {
+   "id": "aa9ca93e66e2",
+   "title": "Microsoft Agent Framework Releases Poisoned With Credential Stealer",
+   "summary": "Versions 1.26.1 and 1.26.2 of agent-framework on PyPI steal Azure, Azure DevOps, and GitHub Actions credentials when Python starts. The post Microsoft Agent Framework…",
+   "priority": "Standard",
+   "category": "Microsoft",
+   "date": "18 Nov 2026, 11:05 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/aa9ca93e66e2.html"
   },
   {
    "id": "4ccf67b96d4a",
@@ -401,14 +411,14 @@
    "url": "story/389f46b9e9d9.html"
   },
   {
-   "id": "1dc4676c8263",
-   "title": "Microsoft testing Remote Lock for lost or stolen Windows devices",
-   "summary": "Microsoft is testing a new feature that lets enterprise IT administrators remotely lock stolen or lost Windows devices without wiping them.",
+   "id": "5e43b1695ab6",
+   "title": "New GitDoor and GraphDoor Backdoors Turn GitHub and SharePoint Into Covert C2 Channels",
+   "summary": "Government sectors in Asia and Africa have been targeted by an active cyber intrusion campaign that delivers to previously undocumented backdoors that leverage…",
    "priority": "Standard",
    "category": "Microsoft",
-   "date": "17 Nov 2026, 11:19 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/1dc4676c8263.html"
+   "date": "17 Nov 2026, 11:20 UTC",
+   "sources": "The Hacker News",
+   "url": "story/5e43b1695ab6.html"
   },
   {
    "id": "9899fc2c80e3",
@@ -521,6 +531,16 @@
    "url": "story/8b35f69eac70.html"
   },
   {
+   "id": "2df0fcea5ad6",
+   "title": "CISO Conversations: Patti Degnan – Part of the Job Is Deciding What Not to Do",
+   "summary": "Patti Degnan’s identity was stolen in 2006. It set her on a path to the CISO seat at endpoint security firm Glow. The post CISO Conversations: Patti Degnan – Part of the…",
+   "priority": "Standard",
+   "category": "Microsoft",
+   "date": "18 Nov 2026, 12:00 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/2df0fcea5ad6.html"
+  },
+  {
    "id": "c36817af9a4b",
    "title": "CISA warns of ‘Java4Shell,’ an AI-found Java bug touching most of the Fortune 500",
    "summary": "The federal cybersecurity agency urged organizations to immediately patch a new vulnerability affecting Java — one of the world’s most used programming languages — after…",
@@ -631,114 +651,14 @@
    "url": "story/46f2978c7d8e.html"
   },
   {
-   "id": "f61744a14eda",
-   "title": "Formal Verification of the Signal Protocol Using AI",
-   "summary": "This seems like a good thing: Google Deepmind researchers used agentic AI to mathematically prove, or “formally verify,” a number of the Signal protocol’s key…",
+   "id": "1dc4676c8263",
+   "title": "Microsoft testing Remote Lock for lost or stolen Windows devices",
+   "summary": "Microsoft is testing a new feature that lets enterprise IT administrators remotely lock stolen or lost Windows devices without wiping them.",
    "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "17 Nov 2026, 12:05 UTC",
-   "sources": "Schneier on Security",
-   "url": "story/f61744a14eda.html"
-  },
-  {
-   "id": "2662cf713828",
-   "title": "Dorsett Controls InfoScan",
-   "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to retrieve sensitive system information, access application data without…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "17 Nov 2026, 12:00 UTC",
-   "sources": "CISA Cybersecurity Advisories",
-   "url": "story/2662cf713828.html"
-  },
-  {
-   "id": "dc2d43865fd4",
-   "title": "Siemens .NET Client Library for SIMATIC S7 Webserver API",
-   "summary": "View CSAF Summary.NET Client Library for SIMATIC S7 Webserver API contains multiple vulnerabilities that could allow an attacker to obtain sensitive information or write…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "17 Nov 2026, 12:00 UTC",
-   "sources": "CISA Cybersecurity Advisories",
-   "url": "story/dc2d43865fd4.html"
-  },
-  {
-   "id": "91c22df4b393",
-   "title": "Siemens Mendix Studio Pro",
-   "summary": "View CSAF Summary Mendix Studio Pro contains multiple vulnerabilities in the MCP Server, that could allow an attacker with network access to interact with the server…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "17 Nov 2026, 12:00 UTC",
-   "sources": "CISA Cybersecurity Advisories",
-   "url": "story/91c22df4b393.html"
-  },
-  {
-   "id": "a0f483dd422a",
-   "title": "Siemens ROS#",
-   "summary": "View CSAF Summary ROS# before version 2.3.1 contains a code injection vulnerability that could allow an attacker that is able to pass a crafted message definition file…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "17 Nov 2026, 12:00 UTC",
-   "sources": "CISA Cybersecurity Advisories",
-   "url": "story/a0f483dd422a.html"
-  },
-  {
-   "id": "d08071d08cf1",
-   "title": "Siemens RUGGEDCOM APE1808",
-   "summary": "View CSAF Summary Fortinet has published information on a Double Free vulnerability in FortiOS. This advisory lists the related Siemens Industrial products. Siemens…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "17 Nov 2026, 12:00 UTC",
-   "sources": "CISA Cybersecurity Advisories",
-   "url": "story/d08071d08cf1.html"
-  },
-  {
-   "id": "9c3818e954e8",
-   "title": "Siemens SIMATIC",
-   "summary": "View CSAF Summary The products listed below contain an authentication bypass vulnerability that could allow an on-path attacker to take over the session of a legitimate…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "17 Nov 2026, 12:00 UTC",
-   "sources": "CISA Cybersecurity Advisories",
-   "url": "story/9c3818e954e8.html"
-  },
-  {
-   "id": "51d812581aa5",
-   "title": "Siemens Simcenter Femap",
-   "summary": "View CSAF Summary Simcenter Femap is affected by an out of bounds read vulnerability that could be triggered when the application reads files in X_T format. This could…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "17 Nov 2026, 12:00 UTC",
-   "sources": "CISA Cybersecurity Advisories",
-   "url": "story/51d812581aa5.html"
-  },
-  {
-   "id": "21dc163c1f75",
-   "title": "Siemens meta-iot2050",
-   "summary": "View CSAF Summary meta-iot2050 (https://github.com/siemens/meta-iot2050) from V01.03.01 contains a Command Injection vulnerability in the firmware update tool that could…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "17 Nov 2026, 12:00 UTC",
-   "sources": "CISA Cybersecurity Advisories",
-   "url": "story/21dc163c1f75.html"
-  },
-  {
-   "id": "eb1264c3eeab",
-   "title": "California Sues OpenAI, Seeking Court-Ordered Changes After the Hugging Face Hack",
-   "summary": "The lawsuit alleges that OpenAI misled and endangered the public and users by knowingly developing advanced AI models without necessary safeguards. The post California…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "17 Nov 2026, 12:00 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/eb1264c3eeab.html"
-  },
-  {
-   "id": "cb74b2746cc6",
-   "title": "Apple Tightens macOS App Permissions to Limit Data Access Amid AI Agent Security Risks",
-   "summary": "Apple on Monday introduced new controls that allow Mac users to give more granular access to data they give to apps, including those that use artificial intelligence…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "17 Nov 2026, 11:07 UTC",
-   "sources": "The Hacker News",
-   "url": "story/cb74b2746cc6.html"
+   "category": "Microsoft",
+   "date": "17 Nov 2026, 11:19 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/1dc4676c8263.html"
   },
   {
    "id": "d51a92f2bc9a",
@@ -1001,6 +921,36 @@
    "url": "story/4555dea14647.html"
   },
   {
+   "id": "6352ff872275",
+   "title": "France Is Blaming Iran for the Fridge Cyberattack",
+   "summary": "Interesting: U.S. intelligence agencies have recently reached a “”ow confidence” assessment that Iran was responsible for the attacks in France, according to three U.S…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "18 Nov 2026, 12:05 UTC",
+   "sources": "Schneier on Security",
+   "url": "story/6352ff872275.html"
+  },
+  {
+   "id": "57cf485fa921",
+   "title": "Dizigom illegal streaming service with 21M monthly visits shuts down",
+   "summary": "The Alliance for Creativity and Entertainment (ACE) has announced the shutdown of Dizigom, one of Turkey's largest piracy sites, after a settlement agreement with the…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "18 Nov 2026, 11:50 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/57cf485fa921.html"
+  },
+  {
+   "id": "ac7a12437b59",
+   "title": "Chrome 158 Patches 204 Vulnerabilities",
+   "summary": "Google handed out $11,000 for five externally reported flaws but has yet to determine the amounts to be paid for 36 bugs. The post Chrome 158 Patches 204 Vulnerabilities…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "18 Nov 2026, 11:43 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/ac7a12437b59.html"
+  },
+  {
    "id": "0ad69605a849",
    "title": "British Scattered Spider hacker sentenced to 6 years in prison",
    "summary": "A leader of the Scattered Spider cybercrime collective has been sentenced to six years in prison in the United States for stealing millions in cryptocurrency and…",
@@ -1171,14 +1121,114 @@
    "url": "story/6085ef54790f.html"
   },
   {
-   "id": "b69860df4218",
-   "title": "Researchers Detail iPhone Flaw That Let Apps Record Audio Despite Denied Microphone Permission",
-   "summary": "A now-patched flaw in Apple's audio service let apps on iPhones and iPads record audio even after the user tapped \"Don't Allow\" on the microphone prompt. The first…",
+   "id": "f61744a14eda",
+   "title": "Formal Verification of the Signal Protocol Using AI",
+   "summary": "This seems like a good thing: Google Deepmind researchers used agentic AI to mathematically prove, or “formally verify,” a number of the Signal protocol’s key…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "17 Nov 2026, 12:05 UTC",
+   "sources": "Schneier on Security",
+   "url": "story/f61744a14eda.html"
+  },
+  {
+   "id": "2662cf713828",
+   "title": "Dorsett Controls InfoScan",
+   "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to retrieve sensitive system information, access application data without…",
    "priority": "Standard",
    "category": "Patch Radar",
-   "date": "17 Nov 2026, 12:14 UTC",
+   "date": "17 Nov 2026, 12:00 UTC",
+   "sources": "CISA Cybersecurity Advisories",
+   "url": "story/2662cf713828.html"
+  },
+  {
+   "id": "dc2d43865fd4",
+   "title": "Siemens .NET Client Library for SIMATIC S7 Webserver API",
+   "summary": "View CSAF Summary.NET Client Library for SIMATIC S7 Webserver API contains multiple vulnerabilities that could allow an attacker to obtain sensitive information or write…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "17 Nov 2026, 12:00 UTC",
+   "sources": "CISA Cybersecurity Advisories",
+   "url": "story/dc2d43865fd4.html"
+  },
+  {
+   "id": "91c22df4b393",
+   "title": "Siemens Mendix Studio Pro",
+   "summary": "View CSAF Summary Mendix Studio Pro contains multiple vulnerabilities in the MCP Server, that could allow an attacker with network access to interact with the server…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "17 Nov 2026, 12:00 UTC",
+   "sources": "CISA Cybersecurity Advisories",
+   "url": "story/91c22df4b393.html"
+  },
+  {
+   "id": "a0f483dd422a",
+   "title": "Siemens ROS#",
+   "summary": "View CSAF Summary ROS# before version 2.3.1 contains a code injection vulnerability that could allow an attacker that is able to pass a crafted message definition file…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "17 Nov 2026, 12:00 UTC",
+   "sources": "CISA Cybersecurity Advisories",
+   "url": "story/a0f483dd422a.html"
+  },
+  {
+   "id": "d08071d08cf1",
+   "title": "Siemens RUGGEDCOM APE1808",
+   "summary": "View CSAF Summary Fortinet has published information on a Double Free vulnerability in FortiOS. This advisory lists the related Siemens Industrial products. Siemens…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "17 Nov 2026, 12:00 UTC",
+   "sources": "CISA Cybersecurity Advisories",
+   "url": "story/d08071d08cf1.html"
+  },
+  {
+   "id": "9c3818e954e8",
+   "title": "Siemens SIMATIC",
+   "summary": "View CSAF Summary The products listed below contain an authentication bypass vulnerability that could allow an on-path attacker to take over the session of a legitimate…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "17 Nov 2026, 12:00 UTC",
+   "sources": "CISA Cybersecurity Advisories",
+   "url": "story/9c3818e954e8.html"
+  },
+  {
+   "id": "51d812581aa5",
+   "title": "Siemens Simcenter Femap",
+   "summary": "View CSAF Summary Simcenter Femap is affected by an out of bounds read vulnerability that could be triggered when the application reads files in X_T format. This could…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "17 Nov 2026, 12:00 UTC",
+   "sources": "CISA Cybersecurity Advisories",
+   "url": "story/51d812581aa5.html"
+  },
+  {
+   "id": "21dc163c1f75",
+   "title": "Siemens meta-iot2050",
+   "summary": "View CSAF Summary meta-iot2050 (https://github.com/siemens/meta-iot2050) from V01.03.01 contains a Command Injection vulnerability in the firmware update tool that could…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "17 Nov 2026, 12:00 UTC",
+   "sources": "CISA Cybersecurity Advisories",
+   "url": "story/21dc163c1f75.html"
+  },
+  {
+   "id": "eb1264c3eeab",
+   "title": "California Sues OpenAI, Seeking Court-Ordered Changes After the Hugging Face Hack",
+   "summary": "The lawsuit alleges that OpenAI misled and endangered the public and users by knowingly developing advanced AI models without necessary safeguards. The post California…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "17 Nov 2026, 12:00 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/eb1264c3eeab.html"
+  },
+  {
+   "id": "cb74b2746cc6",
+   "title": "Apple Tightens macOS App Permissions to Limit Data Access Amid AI Agent Security Risks",
+   "summary": "Apple on Monday introduced new controls that allow Mac users to give more granular access to data they give to apps, including those that use artificial intelligence…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "17 Nov 2026, 11:07 UTC",
    "sources": "The Hacker News",
-   "url": "story/b69860df4218.html"
+   "url": "story/cb74b2746cc6.html"
   },
   {
    "id": "e5f38235f326",
@@ -1751,14 +1801,14 @@
    "url": "story/693679885746.html"
   },
   {
-   "id": "15c0b59087ed",
-   "title": "Microsoft fixes audio issues caused by September security updates",
-   "summary": "Microsoft says the November 2026 cumulative updates resolve USB audio issues plaguing Windows users who have installed security updates released since September.",
+   "id": "b69860df4218",
+   "title": "Researchers Detail iPhone Flaw That Let Apps Record Audio Despite Denied Microphone Permission",
+   "summary": "A now-patched flaw in Apple's audio service let apps on iPhones and iPads record audio even after the user tapped \"Don't Allow\" on the microphone prompt. The first…",
    "priority": "Standard",
-   "category": "Microsoft",
-   "date": "11 Nov 2026, 11:18 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/15c0b59087ed.html"
+   "category": "Patch Radar",
+   "date": "17 Nov 2026, 12:14 UTC",
+   "sources": "The Hacker News",
+   "url": "story/b69860df4218.html"
   },
   {
    "id": "568217cfb12f",
@@ -1959,26 +2009,6 @@
    "date": "16 Nov 2026, 12:33 UTC",
    "sources": "The Hacker News",
    "url": "story/8c37ef3c2776.html"
-  },
-  {
-   "id": "78086d8dacc9",
-   "title": "Usable Security at Luxury Hotels",
-   "summary": "Interesting case study from luxury hotels. Attackers used a fake booking request to gain access to a reservations inbox, where they copied genuine refund requests and…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "16 Nov 2026, 12:04 UTC",
-   "sources": "Schneier on Security",
-   "url": "story/78086d8dacc9.html"
-  },
-  {
-   "id": "7a50b6f63907",
-   "title": "Australian retail giant Coles investigates cybersecurity incident",
-   "summary": "Coles Group Limited, Australia's second-largest retailer, is investigating what it described as a \"cyber security incident\" that has not impacted the company's stores.",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "16 Nov 2026, 11:18 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/7a50b6f63907.html"
   },
   {
    "id": "f159cf23a7b2",
@@ -2241,54 +2271,24 @@
    "url": "story/14caa111eec6.html"
   },
   {
-   "id": "6efa2d9b4d0b",
-   "title": "Fortinet Patches Nearly 100 Vulnerabilities",
-   "summary": "The massive drop comes after the company integrated frontier AI models into its product security testing. The post Fortinet Patches Nearly 100 Vulnerabilities appeared…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "11 Nov 2026, 12:10 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/6efa2d9b4d0b.html"
-  },
-  {
-   "id": "38d7075a7968",
-   "title": "Three People Arrested for AI-Enhanced Impersonation Fraud",
-   "summary": "It’s hard to believe how lucrative this crime can be: According to a press release from the United States attorney’s office for the southern district of New York, three…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "11 Nov 2026, 12:05 UTC",
-   "sources": "Schneier on Security",
-   "url": "story/38d7075a7968.html"
-  },
-  {
-   "id": "de18400249b3",
-   "title": "We Built An Agent That Broke All of Our Security Rules. Here's What We Learned.",
-   "summary": "We tell customers three things about securing AI agents: they need their own identities, access that fits the job they’re given, and traceability that’s separate from…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "11 Nov 2026, 12:01 UTC",
-   "sources": "The Hacker News",
-   "url": "story/de18400249b3.html"
-  },
-  {
-   "id": "21b7ddf6e1b0",
-   "title": "Bay Raises $50 Million to Control What Enterprise AI Agents Can Do",
-   "summary": "Founded by three ex-IDF Unit 8200 intelligence officers, Bay is launched to provide a control plane for AI agents. The post Bay Raises $50 Million to Control What…",
-   "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "11 Nov 2026, 11:30 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/21b7ddf6e1b0.html"
-  },
-  {
-   "id": "3d74aba68f12",
-   "title": "Dreeze Emerges From Stealth With $33M to Rebuild Cloud Apps After Cyberattacks",
-   "summary": "Created by Zerto and Kashya veterans, the startup has launched a platform designed to recover whole cloud applications. The post Dreeze Emerges From Stealth With $33M to…",
+   "id": "78086d8dacc9",
+   "title": "Usable Security at Luxury Hotels",
+   "summary": "Interesting case study from luxury hotels. Attackers used a fake booking request to gain access to a reservations inbox, where they copied genuine refund requests and…",
    "priority": "Standard",
    "category": "Attacks & Breaches",
-   "date": "11 Nov 2026, 11:16 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/3d74aba68f12.html"
+   "date": "16 Nov 2026, 12:04 UTC",
+   "sources": "Schneier on Security",
+   "url": "story/78086d8dacc9.html"
+  },
+  {
+   "id": "7a50b6f63907",
+   "title": "Australian retail giant Coles investigates cybersecurity incident",
+   "summary": "Coles Group Limited, Australia's second-largest retailer, is investigating what it described as a \"cyber security incident\" that has not impacted the company's stores.",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "16 Nov 2026, 11:18 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/7a50b6f63907.html"
   },
   {
    "id": "2b1b80c8b882",
@@ -2909,16 +2909,6 @@
    "date": "11 Nov 2026, 12:24 UTC",
    "sources": "SecurityWeek",
    "url": "story/6ef677aa3015.html"
-  },
-  {
-   "id": "b80a24c89312",
-   "title": "eMudhra Revokes 8 More CAs It Previously Declared Unaffected by Key Compromise",
-   "summary": "The in-house Python script behind eMudhra's October key compromise has now cost the company 8 more of its intermediate certificate authorities (CAs), even though it did…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "11 Nov 2026, 12:00 UTC",
-   "sources": "The Hacker News",
-   "url": "story/b80a24c89312.html"
   }
  ]
 }

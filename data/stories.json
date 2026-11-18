@@ -2351,25 +2351,6 @@
    "instructions_checked": true
   },
   {
-   "id": "b80a24c89312",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "eMudhra Revokes 8 More CAs It Previously Declared Unaffected by Key Compromise",
-   "link": "https://thehackernews.com/2026/11/emudhra-revokes-8-more-cas-it.html",
-   "published": "2026-11-11T12:00:53+00:00",
-   "summary": "The in-house Python script behind eMudhra's October key compromise has now cost the company 8 more of its intermediate certificate authorities (CAs), even though it did not weaken their keys. Each intermediate CA has its own private key, which the company uses to sign the certificates it issues. The 8 intermediate CAs…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjONLgT6piRm0O75Y6dzQY4L2RO8OQTlWaJbwSTHFDeh82Qiadl2PT9KI9r2jC1JbwS-TqPm3g1Ea0Q8I91FalXu2GZ0fBBnfId6-8ZWKABrBQZWg7nA1X6cHq7wgHK3rc2Y5YW4yb61TjxVyywyWprml6yhBgH-SBaTvXZF-50J8-mR5Q6cGhSgfuMUdk/s1600/emudhra.jpg",
-   "cves": [],
-   "first_seen": "2026-11-11T12:40:42.987688+00:00",
-   "instructions": [
-    "Microsoft will start removing the 10 remaining eMudhra roots, including emSign Root CA - G1, on November 16, according to an update to its security response post earlier this week.",
-    "Browsers that enforce Certificate Transparency could not have been fooled."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "c6e1d6a77271",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -3071,27 +3052,6 @@
     "If a compatible version (minimum version 18) is not found, it proceeds to download and install Node.js version 20.18.1 based on the infected host's operating system and its architecture.",
     "On macOS and Linux systems, it also displays a fake dialog asking users to enter their system password so as to \"apply system updates and verify drivers and security settings.\" Interestingly, the same payload is delivered via two other initial access vectors -",
     "A sideloaded Microsoft Visual Studio Code (VS Code) or Cursor extension named \"google-dev-tools.google-update-support\" that's likely launched via a coding assessment and deleted after it's run"
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "de18400249b3",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "We Built An Agent That Broke All of Our Security Rules. Here's What We Learned.",
-   "link": "https://thehackernews.com/2026/11/we-built-agent-that-broke-all-of-our.html",
-   "published": "2026-11-11T12:01:59+00:00",
-   "summary": "We tell customers three things about securing AI agents: they need their own identities, access that fits the job they’re given, and traceability that’s separate from any human’s. That was true for us at Token as well. Then, we built an agent that broke all three by default. This helped us think through how such…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhB22NtEOE6ioVcc92S5bLfFX3tbKyjNkx0j8OmHekqWq6Od4h9DtFmbmdd74VzwHCh5h6NbWnBgHgKzC49DwS7QAgA0uH3eL7BvBnN9QJu3U5-oiy5ZFMN7PvaJTBqjP7TR5VMjzrGxjfOfjgBqs3lecFZnWGEYNDp_BJgklco1L_acBqGm1M_CvtfLaY/s1600/AI-AGENT.png",
-   "cves": [],
-   "first_seen": "2026-11-11T12:40:42.987688+00:00",
-   "instructions": [
-    "Until browsers and applications can carry agent identity, human delegation, and task scope together, companies should treat every agent using a human session as delegated access that must be discovered, constrained, and audited.",
-    "This helped us think through how such agents should be defended.",
-    "By creating an agent that breaks all the security rules, Token learned how companies should be using identity to gain control, especially as agent use scales.",
-    "We learned that there are multiple best practices that you can apply when you control the AI agent itself:"
    ],
    "instructions_checked": true
   },
@@ -4059,28 +4019,6 @@
    "instructions_checked": true
   },
   {
-   "id": "15c0b59087ed",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Microsoft fixes audio issues caused by September security updates",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-usb-audio-issues-caused-by-september-security-updates/",
-   "published": "2026-11-11T11:18:36+00:00",
-   "summary": "Microsoft says the November 2026 cumulative updates resolve USB audio issues plaguing Windows users who have installed security updates released since September.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/29/Windows_headpic.jpg",
-   "cves": [],
-   "first_seen": "2026-11-11T11:38:03.243549+00:00",
-   "image_checked": true,
-   "instructions": [
-    "\"The symptoms are resolved in the Windows security update released on November 10, 2026 (KB5132061) and later updates,\" Microsoft said in a Windows release health dashboard update.",
-    "\"We recommend you install the latest security update for your device as it contains important improvements and issue resolutions, including this one.\"",
-    "While Microsoft has yet to provide an official workaround for those who can't immediately install the November 2026 security updates, some users have restored audio on affected Windows PCs by switching to 2-channel mode.",
-    "In January 2025, Microsoft addressed a similar issue triggered by the KB5050094 optional preview cumulative update, which caused audio playback issues and Code 10 errors on Windows 11 24H2 systems with USB audio device drivers."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "a60b8a453d05",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4559,6 +4497,23 @@
     "As BleepingComputer previously reported , the attackers modified the legitimate Claude Code extension to execute malicious JavaScript that attempted to install persistent SSH backdoors on developers' computers.",
     "The malware collected system information, installed an attacker-controlled SSH key, attempted to enable SSH access, and configured persistence mechanisms to maintain remote access."
    ],
+   "instructions_checked": true
+  },
+  {
+   "id": "57cf485fa921",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Dizigom illegal streaming service with 21M monthly visits shuts down",
+   "link": "https://www.bleepingcomputer.com/news/security/dizigom-illegal-streaming-service-with-21m-monthly-visits-shuts-down/",
+   "published": "2026-11-18T11:50:25+00:00",
+   "summary": "The Alliance for Creativity and Entertainment (ACE) has announced the shutdown of Dizigom, one of Turkey's largest piracy sites, after a settlement agreement with the site's operators.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/18/Pirate-DizigoM.jpg",
+   "cves": [],
+   "first_seen": "2026-11-18T12:18:19.814067+00:00",
+   "image_checked": true,
+   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -6232,6 +6187,23 @@
    "instructions_checked": true
   },
   {
+   "id": "6352ff872275",
+   "source": "schneier",
+   "source_name": "Schneier on Security",
+   "official": false,
+   "source_type": "news",
+   "title": "France Is Blaming Iran for the Fridge Cyberattack",
+   "link": "https://www.schneier.com/blog/archives/2026/11/france-is-blaming-iran-for-the-fridge-cyberattack.html",
+   "published": "2026-11-18T12:05:35+00:00",
+   "summary": "Interesting: U.S. intelligence agencies have recently reached a “”ow confidence” assessment that Iran was responsible for the attacks in France, according to three U.S. officials who spoke on the condition of anonymity to discuss sensitive intelligence. A “low confidence” assessment generally means that there is some…",
+   "image": null,
+   "cves": [],
+   "first_seen": "2026-11-18T12:18:19.814067+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "26bc7212e5d9",
    "source": "schneier",
    "source_name": "Schneier on Security",
@@ -6246,25 +6218,6 @@
    "first_seen": "2026-11-13T22:08:27.509684+00:00",
    "image_checked": true,
    "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "38d7075a7968",
-   "source": "schneier",
-   "source_name": "Schneier on Security",
-   "official": false,
-   "source_type": "news",
-   "title": "Three People Arrested for AI-Enhanced Impersonation Fraud",
-   "link": "https://www.schneier.com/blog/archives/2026/11/three-people-arrested-for-ai-enhanced-impersonation-fraud.html",
-   "published": "2026-11-11T12:05:34+00:00",
-   "summary": "It’s hard to believe how lucrative this crime can be: According to a press release from the United States attorney’s office for the southern district of New York, three men ­ Jacob Soall, Sharon Hazan, and Guy Sheetrit ­ were arrested for using AI to alter and impersonate the voices and images of executives and…",
-   "image": null,
-   "cves": [],
-   "first_seen": "2026-11-11T12:40:42.987688+00:00",
-   "image_checked": true,
-   "instructions": [
-    "For those that do not know there are fairly strict rules and regulations about pushing things, but… If you interact first through the comments then they mostly don’t apply in the US."
-   ],
    "instructions_checked": true
   },
   {
@@ -6471,28 +6424,6 @@
    "instructions_checked": true
   },
   {
-   "id": "21b7ddf6e1b0",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Bay Raises $50 Million to Control What Enterprise AI Agents Can Do",
-   "link": "https://www.securityweek.com/bay-raises-50-million-to-control-what-enterprise-ai-agents-can-do/",
-   "published": "2026-11-11T11:30:00+00:00",
-   "summary": "Founded by three ex-IDF Unit 8200 intelligence officers, Bay is launched to provide a control plane for AI agents. The post Bay Raises $50 Million to Control What Enterprise AI Agents Can Do appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/11/Yuval_Zachari_Bay.jpeg",
-   "cves": [],
-   "first_seen": "2026-11-11T12:40:42.987688+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Bay is designed to allow companies to install and employ AI agents confident that they will not run amok with unintended actions.",
-    "ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure",
-    "Chipmaker Patch Tuesday: Over 200 Vulnerabilities Addressed by Intel, AMD",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "eb1264c3eeab",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -6513,6 +6444,25 @@
    "instructions_checked": true
   },
   {
+   "id": "ac7a12437b59",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Chrome 158 Patches 204 Vulnerabilities",
+   "link": "https://www.securityweek.com/chrome-158-patches-204-vulnerabilities/",
+   "published": "2026-11-18T11:43:22+00:00",
+   "summary": "Google handed out $11,000 for five externally reported flaws but has yet to determine the amounts to be paid for 36 bugs. The post Chrome 158 Patches 204 Vulnerabilities appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2023/04/Chrome-Zero-Day-exploits.jpg",
+   "cves": [],
+   "first_seen": "2026-11-18T12:18:19.814067+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Google makes no mention of any of these vulnerabilities being exploited in the wild, but users are advised to update their browsers as soon as possible."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "116311b70214",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -6529,6 +6479,28 @@
    "instructions": [
     "Citrix, Ivanti Patch Critical and High-Severity Vulnerabilities",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "2df0fcea5ad6",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "CISO Conversations: Patti Degnan – Part of the Job Is Deciding What Not to Do",
+   "link": "https://www.securityweek.com/ciso-conversations-patti-degnan-part-of-the-job-is-deciding-what-not-to-do/",
+   "published": "2026-11-18T12:00:00+00:00",
+   "summary": "Patti Degnan’s identity was stolen in 2006. It set her on a path to the CISO seat at endpoint security firm Glow. The post CISO Conversations: Patti Degnan – Part of the Job Is Deciding What Not to Do appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/11/CISO-Patti-Degnan.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-18T12:18:19.814067+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Not everyone can be a leader, but you must be a leader to be a CISO.",
+    "As this threat has widened, so have CISO responsibilities also widened – CISOs must now have increased business understanding to protect the business.",
+    "So, today, can a CISO be purely a businessperson without a background of technical expertise? “I think you can,” she says, “although you must at least have some understanding of how technology works.",
+    "If you’re in a tech company, you should understand how technology works because you have to translate across different stakeholder groups."
    ],
    "instructions_checked": true
   },
@@ -6719,27 +6691,6 @@
    "instructions_checked": true
   },
   {
-   "id": "3d74aba68f12",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Dreeze Emerges From Stealth With $33M to Rebuild Cloud Apps After Cyberattacks",
-   "link": "https://www.securityweek.com/dreeze-emerges-from-stealth-with-33m-to-rebuild-cloud-apps-after-cyberattacks/",
-   "published": "2026-11-11T11:16:40+00:00",
-   "summary": "Created by Zerto and Kashya veterans, the startup has launched a platform designed to recover whole cloud applications. The post Dreeze Emerges From Stealth With $33M to Rebuild Cloud Apps After Cyberattacks appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2025/12/cyber-funding.jpeg",
-   "cves": [],
-   "first_seen": "2026-11-11T11:38:03.243549+00:00",
-   "image_checked": true,
-   "instructions": [
-    "ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure",
-    "Chipmaker Patch Tuesday: Over 200 Vulnerabilities Addressed by Intel, AMD",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "11d7cc16194d",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -6812,28 +6763,6 @@
    "first_seen": "2026-11-11T12:40:42.987688+00:00",
    "image_checked": true,
    "instructions": [
-    "ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure",
-    "Chipmaker Patch Tuesday: Over 200 Vulnerabilities Addressed by Intel, AMD",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "6efa2d9b4d0b",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Fortinet Patches Nearly 100 Vulnerabilities",
-   "link": "https://www.securityweek.com/fortinet-patches-nearly-100-vulnerabilities/",
-   "published": "2026-11-11T12:10:14+00:00",
-   "summary": "The massive drop comes after the company integrated frontier AI models into its product security testing. The post Fortinet Patches Nearly 100 Vulnerabilities appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2023/06/fortinet-e1737023333411.jpg",
-   "cves": [],
-   "first_seen": "2026-11-11T12:40:42.987688+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Fortinet on Tuesday dropped 89 new security advisories that address nearly 100 vulnerabilities across its products.",
     "ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure",
     "Chipmaker Patch Tuesday: Over 200 Vulnerabilities Addressed by Intel, AMD",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
@@ -7115,6 +7044,26 @@
    "instructions_checked": true
   },
   {
+   "id": "aa9ca93e66e2",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Microsoft Agent Framework Releases Poisoned With Credential Stealer",
+   "link": "https://www.securityweek.com/microsoft-agent-framework-releases-poisoned-with-credential-stealer/",
+   "published": "2026-11-18T11:05:39+00:00",
+   "summary": "Versions 1.26.1 and 1.26.2 of agent-framework on PyPI steal Azure, Azure DevOps, and GitHub Actions credentials when Python starts. The post Microsoft Agent Framework Releases Poisoned With Credential Stealer appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/10/supply-chain-attack.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-18T12:18:19.814067+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Organizations are advised to check developer environments, CI/CD pipelines, and container images for the compromised versions, and replace affected installations with verified packages.",
+    "They should also rotate potentially exposed credentials, investigate suspicious cloud activity, and rebuild affected environments."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "47ca43e224a0",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -7154,6 +7103,25 @@
     "In Australia, Home Affairs Minister Tony Burke said Friday that Microsoft had likened the widespread disruption to the 2024 CrowdStrike outage, which stemmed from a faulty update to computers running Microsoft Windows.",
     "They believe that they are dealing in some ways (with something) similar to what we saw with respect to CrowdStrike where there is an update that has gone awry,” Burke told reporters in Sydney.",
     "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "ddb3ea43dd74",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Microsoft Takes Perception Agentic Security Platform Out of Preview",
+   "link": "https://www.securityweek.com/microsoft-takes-perception-agentic-security-platform-out-of-preview/",
+   "published": "2026-11-18T12:14:23+00:00",
+   "summary": "Four blue team agents and the Recon Agent are now generally available, while integrations and vulnerability shielding are in preview. The post Microsoft Takes Perception Agentic Security Platform Out of Preview appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/06/Agent-AI-Security.jpg",
+   "cves": [],
+   "first_seen": "2026-11-18T12:18:19.814067+00:00",
+   "image_checked": true,
+   "instructions": [
+    "The Risk Reduction Agent can recommend vulnerability shielding when a fix isn’t immediately available."
    ],
    "instructions_checked": true
   },
