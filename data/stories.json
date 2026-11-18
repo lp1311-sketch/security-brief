@@ -2126,6 +2126,25 @@
    "instructions_checked": true
   },
   {
+   "id": "1df53018af16",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Attackers Compromise Microsoft's Agent Framework PyPI Package to Steal Cloud Credentials",
+   "link": "https://thehackernews.com/2026/11/attackers-compromise-microsofts-agent.html",
+   "published": "2026-11-18T06:45:26+00:00",
+   "summary": "Threat actors have compromised Microsoft's agent-framework package to push a credential stealer, according to reports from Aikido, Endor Labs, OX Security, SafeDep, Socket, StepSecurity, and Google-owned Wiz. The malicious versions, 1.26.1 and 1.26.2, were published 33 minutes apart on November 17, 2026, and are…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_LozO7RAz13Jr3eqWHIjlAF6M0Cs-mJXX2mKUqU0TxVS02piD1na92TAZjICmeySD4z0zS-Y_BFvceERBdk-UZvV1DUh1LGN6wK-T-yt_TROJ5fcuvROu807jqESQo93CFP3faBbReKMZQxvgYOAGl_vS2VzfO67O24NdAgh6d9jMO2mTSy2jaNJMPD9T/s1600/ms-python.jpg",
+   "cves": [],
+   "first_seen": "2026-11-18T08:00:02.487812+00:00",
+   "instructions": [
+    "Given that the package attracts about 190,000 downloads a month, users are advised to perform the following steps -",
+    "\"Both versions install Python startup hooks that silently collect credentials, environment data, and cloud identity tokens, then exfiltrate them to a webhook[.]site endpoint,\" Socket said in a report."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "b58e8e6c37ed",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2512,7 +2531,7 @@
    "source_name": "The Hacker News",
    "official": false,
    "source_type": "news",
-   "title": "Java4Shell (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak on Java 17+ AVX-512 VBMI Servers",
+   "title": "Critical Java4Shell Flaw (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak and More",
    "link": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html",
    "published": "2026-11-18T04:27:41+00:00",
    "summary": "A Java flaw called Java4Shell can let attackers without an account run their own code on Jira, Jenkins, Keycloak, and three other widely used applications, says Calif, the security research firm that disclosed it this week. The flaw is present in Java 17.0.6 and later, and the vulnerable code runs only on x86-64 Intel…",
@@ -2547,25 +2566,6 @@
     "The advisory also doesn't spell out whether the discovery came before or after attackers began exploiting the flaw.",
     "Cybersecurity and Infrastructure Security Agency (CISA) to add the flaw to its Known Exploited Vulnerabilities ( KEV ) catalog, requiring federal agencies to apply the fix by November 24, 2026.",
     "Microsoft on Tuesday released patches for a total of 1,259 vulnerabilities spanning its software portfolio, the second consecutive month where the patch volume has exceeded 1,000 flaws."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "e23f07d99f92",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Microsoft Researchers Show AI Agents Can Be Backdoored by Editing Fewer Than 10 Neurons",
-   "link": "https://thehackernews.com/2026/11/microsoft-researchers-show-ai-agents.html",
-   "published": "2026-11-11T07:21:05+00:00",
-   "summary": "An AI model can be given a hidden backdoor by editing fewer than 10 of its rarely used neurons, without retraining the model, Microsoft researchers have shown. When a chosen trigger appears, the model outputs an attacker's command, which an agent using that model would run with the agent's own permissions. The…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3GT7PJRzHrU1jqZ7Qt0MYIOeL97NYpY4E-aY-Jh9WrLRSLpjaLEIjeAdOagTcUfo7MU9yXmk7HPgPHuGKkEidZkw-2Ojtty9z1PX2Qmmj-h0Kk3X-3VsIg6Lggpoblf-1SE5GHU9LB-P6WeOrfNVgIl1e7q0FxS6obF07BEd8HVcXgSyd_7ZSV8hB01E/s1600/ms-ai-backdoor.jpg",
-   "cves": [],
-   "first_seen": "2026-11-11T09:39:45.019744+00:00",
-   "instructions": [
-    "Compare every checkpoint with its declared base model before deployment and after each update, and reject models whose base cannot be checked.",
-    "Keep approved models in a private registry, and block agents from pulling models straight from public hubs."
    ],
    "instructions_checked": true
   },
@@ -2793,27 +2793,6 @@
     "\"If your Windchill or FlexPLM environment is not hosted by PTC, we urge you to apply the patch as soon as possible to help protect your systems.\"",
     "Organizations running PTC Windchill and FlexPLM products are recommended to patch exposed systems as soon as possible and monitor for signs of code execution, backdoor access, or web shells on the host.",
     "If patching is not an immediate option, it's essential to apply network restrictions to limit the risk of compromise."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "890bd5d68a0a",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Railway Says Stolen Customer AI Keys Led to $740,000 in Estimated Unauthorized Usage Charges",
-   "link": "https://thehackernews.com/2026/11/railway-says-stolen-customer-ai-keys.html",
-   "published": "2026-11-11T07:49:04+00:00",
-   "summary": "AI provider keys that customers stored on Railway were stolen in an October breach and used to commit an estimated $740,000 in unauthorized spending, the platform-as-a-service provider said yesterday. It has promised to pay those charges itself when an AI provider will not refund them. The company builds and runs apps…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEheDP-YSdactqjEqKJOJEJulSVt5fmo134ko3-hE9dbQrLkrcIuhIkAOQDPe4eGS8WR6mLJs3urGqLpdi9erHsuLMAQ1t2saYXZAhnIRNqzliU3reOp2uPoKCRlpWBj8JQcyRIwo9eqK4AuSFcsB5XhIdLFzNYudzLlW_eHiZ094cCzg_gjihMTAZufcCc/s1600/railway-ai.jpg",
-   "cves": [],
-   "first_seen": "2026-11-11T09:39:45.019744+00:00",
-   "instructions": [
-    "Neither it nor the form sets a cap or a deadline for claims, or states whether customers must pay disputed charges while a claim is under review.",
-    "The company advises customers to revoke and replace any sensitive variable stored on the platform before October 21.",
-    "Keys should be revoked or rotated with the provider that issued them, since filing a charge report does not revoke a key.",
-    "It also advises removing public network access to databases, checking GitHub audit logs and which apps can access the account, and checking audit logs in registries such as Docker Hub."
    ],
    "instructions_checked": true
   },
@@ -6454,27 +6433,6 @@
    "instructions_checked": true
   },
   {
-   "id": "ddf3562d4ef5",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Bluetooth, AirPlay Pairing Vulnerabilities Patched Across Apple Platforms",
-   "link": "https://www.securityweek.com/bluetooth-airplay-pairing-vulnerabilities-patched-across-apple-platforms/",
-   "published": "2026-11-11T07:00:17+00:00",
-   "summary": "Apple has patched Bluetooth and AirPlay pairing flaws, iMessage vulnerabilities, and an exploited Brotli bug across its platforms. The post Bluetooth, AirPlay Pairing Vulnerabilities Patched Across Apple Platforms appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/11/Apple-iphone-bluetooth-airplay.jpeg",
-   "cves": [],
-   "first_seen": "2026-11-11T07:12:01.296935+00:00",
-   "image_checked": true,
-   "instructions": [
-    "CVE-2026-113971 appears only in the iOS and iPadOS 18.7.12 advisory, which covers iPhone XS, XS Max, XR and the seventh-generation iPad. “An attacker with physical access may be able to pair a device with an AirPlay receiver from the lock screen,” Apple explains.",
-    "Chrome Update Patches Exploited XML Zero-Day, Eighth This Year",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "eb1264c3eeab",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -6993,6 +6951,28 @@
    "instructions_checked": true
   },
   {
+   "id": "c5f6c87fa0f7",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Java4Shell Vulnerability Puts Many Enterprise Applications at Risk of Takeover",
+   "link": "https://www.securityweek.com/java4shell-vulnerability-puts-many-enterprise-applications-at-risk-of-takeover/",
+   "published": "2026-11-18T07:43:34+00:00",
+   "summary": "Calif demonstrated remote code execution in Jira, Jenkins and Keycloak, while VulnCheck says real-world RCE requires per-target work The post Java4Shell Vulnerability Puts Many Enterprise Applications at Risk of Takeover appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/11/Java4Shell.jpg",
+   "cves": [],
+   "first_seen": "2026-11-18T08:00:02.487812+00:00",
+   "image_checked": true,
+   "instructions": [
+    "The OpenJDK advisory lists Java 17, 21, 25 and 27 as affected by CVE-2026-114938.",
+    "Oracle’s advisory gives it a CVSS 3.1 score of 8.1 and lists it as remotely exploitable without authentication, but with high attack complexity.",
+    "The agency also advises hunting for Java installations embedded in third-party software, containers and appliances, warning that these may not be listed separately in asset inventories.",
+    "The proof-of-concept (PoC) code published by Calif demonstrates the memory corruption but does not achieve code execution. “The weaponized chains for individual products stay private until everyone has had a chance to upgrade."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "e4df5d0ce341",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -7373,28 +7353,6 @@
     "The issue exists because the labeled-response module “does not escape the IRCv3 ‘label’ message tag when echoing it into replies, which allows any user on a network with two or more linked servers to inject server-to-server commands that are executed with server authority,” according to a NIST advisory .",
     "Hopefully everyone has hot-patched or updated their server, or at the very least has the spamfilter workaround deployed.",
     "On November 13, the US cybersecurity agency CISA added CVE-2026-114713 to its Known Exploited Vulnerabilities ( KEV ) list, giving federal agencies only three days to patch it, in line with BOD 26-04 requirements."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "34f63dbdf416",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Recently Patched Barracuda Vulnerabilities Exploited in Attacks",
-   "link": "https://www.securityweek.com/recently-patched-barracuda-vulnerabilities-exploited-in-attacks/",
-   "published": "2026-11-11T07:53:51+00:00",
-   "summary": "The security defects could allow attackers to bypass authorization and gain root access to devices. The post Recently Patched Barracuda Vulnerabilities Exploited in Attacks appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/11/Barracuda.webp",
-   "cves": [],
-   "first_seen": "2026-11-11T08:28:44.579076+00:00",
-   "image_checked": true,
-   "instructions": [
-    "A week later, the company updated its advisory to warn that threat actors have been exploiting the two security defects against a small number of organizations.",
-    "All organizations are advised to update their Barracuda products as soon as possible and ensure that their administrative interfaces are not exposed to the internet.",
-    "Access to them should be restricted only to trusted internal networks.",
-    "On Tuesday, the US cybersecurity agency CISA added CVE-2026-116606 and CVE-2026-111560 to its Known Exploited Vulnerabilities ( KEV ) catalog, urging federal agencies to patch them within three days, as mandated by BOD 26-04."
    ],
    "instructions_checked": true
   },
