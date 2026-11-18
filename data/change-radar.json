@@ -1,6 +1,66 @@
 {
  "items": [
   {
+   "id": "f1c3d312c36e",
+   "title": "Dynamics 365 Commerce: Unified pricing management - manage procurement charges with attribute-based pricing",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577850",
+   "summary": "Procurement teams can apply supplier charges, such as freight, handling or surcharges, consistently, without setting them up manually on each purchase order. With this feature, pricing managers can use unified pricing management to define procurement charges based on attributes. Purchase orders then pick up the right…",
+   "published": "2026-11-18T00:49:47+00:00",
+   "products": [
+    "Teams"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "abb05946fd56",
+   "title": "Dynamics 365 Supply Chain Management: Unified Pricing Management Manage purchase prices and discounts with attribute-based pricing",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577848",
+   "summary": "Procurement teams can manage supplier pricing with the same flexible, attribute-based model already used for sales, instead of maintaining large numbers of separate trade agreement lines. With this feature, Unified Pricing Management attributes extend to vendors and purchase orders. Pricing managers can create…",
+   "published": "2026-11-18T00:49:47+00:00",
+   "products": [
+    "Teams"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "73b9b727868c",
+   "title": "Dynamics 365 Supply Chain Management: Unified pricing management - Rental Management - retrieve rental prices through an API",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577847",
+   "summary": "The rental pricing API runs on the commerce scale unit and supports headless experiences such as rental e-commerce price queries. It calculates prices from your rental pricing rules with better performance, so every channel can get fast, more consistent results. GA date: June CY2027 Preview date: April CY2027",
+   "published": "2026-11-18T00:49:47+00:00",
+   "products": [
+    "Microsoft 365"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "ef0364eba868",
+   "title": "Dynamics 365 Supply Chain Management: Unified Pricing Management: Require approval for price overrides and manual discounts that exceed margin limits on sales orders",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577844",
+   "summary": "Businesses can protect their profitability on sales orders created in the back office sale, while still letting sales teams adjust prices to win deals. Any change that would push an item below the allowed margin goes for review, so discounting decisions stay controlled and consistent across channels. With this…",
+   "published": "2026-11-18T00:49:47+00:00",
+   "products": [
+    "Teams"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "86f4efd31484",
+   "title": "Dynamics 365 Commerce: Enable Margin Check at Price Override in Commerce Scale Unit & POS in Unified Pricing Management",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577840",
+   "summary": "Overview Price override is a capability that allows sales representatives and retail associates to adjust the pre-set price of a product during a transaction, typically for business purposes such as customer negotiations and retention. Previously, price override validation only enforced amount-based thresholds…",
+   "published": "2026-11-18T00:49:47+00:00",
+   "products": [
+    "Microsoft 365"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
    "id": "2082f7b6897b",
    "title": "Microsoft Copilot (Microsoft 365): Use Copilot to make on canvas edits on Pages",
    "link": "https://www.microsoft.com/microsoft-365/roadmap?id=580449",
@@ -416,66 +476,6 @@
    "published": "2026-11-17T18:36:41+00:00",
    "products": [
     "Copilot"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "eb25a391efde",
-   "title": "Dynamics 365 Project Operations: Optimize Project Operations: Enhanced proforma invoice",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=580480",
-   "summary": "The modern invoice form brings contract information, invoice lines and billable transactions into one workspace, making proforma invoices easier to prepare and review. Billing teams can edit supported transaction details individually or in bulk, review pending charges and track adjustments alongside key financial…",
-   "published": "2026-11-17T18:36:41+00:00",
-   "products": [
-    "Teams"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "60b738db0cfc",
-   "title": "Dynamics 365 Project Operations: Optimize Project Operations: TZ Independent Milestone Date",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=580479",
-   "summary": "Keeps project billing milestone dates consistent regardless of the signed-in user's local time zone. Using time zone independent milestone dates on quote and contract records helps globally distributed teams work from the same billing date and reduces date discrepancies when exchanging milestone information with…",
-   "published": "2026-11-17T18:36:41+00:00",
-   "products": [
-    "Teams"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "1d56f3e9c3f6",
-   "title": "Dynamics 365 Project Operations: Optimize Project Operations - TZ Independent Accounting date",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=580478",
-   "summary": "Provides a time zone independent accounting date for invoiced project transactions in resource-based deployments. Keeping the intended accounting date consistent across users helps prevent local time zone conversions from shifting the voucher date when transactions are posted in finance and operations. GA date…",
-   "published": "2026-11-17T18:36:41+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "19ee39e33600",
-   "title": "Dynamics 365 Project Operations: Optimize Project Operations - Refund retainers feature",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=580477",
-   "summary": "Supports returning unused retainer balances through the project invoice rather than correcting previously confirmed invoices solely to release the remaining amount. Billing teams can choose whether to retain or refund the balance, simplifying project closeout even when there are no new chargeable transactions. GA…",
-   "published": "2026-11-17T18:36:41+00:00",
-   "products": [
-    "Teams"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "6458304add74",
-   "title": "Dynamics 365 Project Operations: Optimize Project Operations: Billing hub updates",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=580475",
-   "summary": "Extends Billing Hub with clearer visibility into transactions that are not ready for invoicing and additional billing views. Billing users gain a more complete picture of the backlog and can manage invoice preparation with fewer manual steps, helping them distinguish work that can be billed from items that still need…",
-   "published": "2026-11-17T18:36:41+00:00",
-   "products": [
-    "Microsoft 365"
    ],
    "stage": null,
    "feature_id": null

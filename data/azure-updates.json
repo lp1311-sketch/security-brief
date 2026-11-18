@@ -1,6 +1,90 @@
 {
  "items": [
   {
+   "id": "f55eb3d5199e",
+   "title": "[In preview] Public Preview: Immutable snapshots for Azure Disk Storage",
+   "link": "https://azure.microsoft.com/updates?id=581503",
+   "summary": "Immutable snapshots for Azure Disk Storage are now available in public preview. Immutable snapshots complement Azure Backup immutable vaults. Use vaults for cost-efficient long-term retention, and immutable snapshots for short-term backups that need faste",
+   "published": "2026-11-18T00:00:09+00:00"
+  },
+  {
+   "id": "4a212ab87407",
+   "title": "Announcing: Azure Boost observability for NVMe disks",
+   "link": "https://azure.microsoft.com/updates?id=581227",
+   "summary": "Azure Boost observability for NVMe disks is an open-source command-line tool that you run inside compatible Azure VMs. Backed by Azure Boost, the tool provides remote disk I/O and latency metrics and maps each disk inside your VM to the corresponding disk",
+   "published": "2026-11-18T00:00:09+00:00"
+  },
+  {
+   "id": "9e3ab5b85d33",
+   "title": "Generally Available: Cobalt 200 Arm-based Dplsv7, Dpsv7, Epsv7, Mpsv4, and Lpsv5-series Virtual Machines",
+   "link": "https://azure.microsoft.com/updates?id=581298",
+   "summary": "The general purpose Dpsv7 and Dplsv7, memory-optimized Epsv7, high-memory Mpsv4, and dense storage Lpsv5 VMs are now generally available. These virtual machines deliver significant enhancements over the previous generation Cobalt 100 VMs, offering improve",
+   "published": "2026-11-17T23:55:53+00:00"
+  },
+  {
+   "id": "a30237933749",
+   "title": "[Launched] Generally Available: Intel and AMD v6 with temp disk for Azure Database for PostgreSQL",
+   "link": "https://azure.microsoft.com/updates?id=579590",
+   "summary": "Azure Database for PostgreSQL Flexible Server is announcing the general availability of Intel and AMD v6 compute tiers with local temporary disk. The new v6 generation expands the Flexible Server compute portfolio with higher performance, larger scale, an",
+   "published": "2026-11-17T23:52:49+00:00"
+  },
+  {
+   "id": "a7808747ff34",
+   "title": "[Launched] Generally Available: Intel and AMD v5 diskless tier for Azure Database for PostgreSQL",
+   "link": "https://azure.microsoft.com/updates?id=579595",
+   "summary": "Azure Database for PostgreSQL Flexible Server is announcing the general availability of Intel and AMD V5 diskless compute. These new options expand the v5 compute portfolio with General Purpose and Memory Optimized SKUs that do not include local temporary",
+   "published": "2026-11-17T23:51:44+00:00"
+  },
+  {
+   "id": "e33f13e95cdc",
+   "title": "[Launched] Generally Available: Cobalt 200 compute for Azure Database for PostgreSQL",
+   "link": "https://azure.microsoft.com/updates?id=579585",
+   "summary": "Azure Database for PostgreSQL Flexible Server is announcing the general availability of Cobalt 200 ARM-based compute. Cobalt 200 expands the Flexible Server compute portfolio with Microsoft-designed ARM64-based compute, giving you an additional architectu",
+   "published": "2026-11-17T23:50:40+00:00"
+  },
+  {
+   "id": "a8f17b412eb7",
+   "title": "[Launched] Generally Available: Geo-redundant backup and restore for Azure HorizonDB",
+   "link": "https://azure.microsoft.com/updates?id=574168",
+   "summary": "Geo-redundant backup and restore for Azure HorizonDB is now available. You can use geo-redundant backups to strengthen data protection and restore your HorizonDB deployment in another Azure region when needed. With this capability, you have an additional",
+   "published": "2026-11-17T23:47:55+00:00"
+  },
+  {
+   "id": "b708d7efea2e",
+   "title": "[In preview] Generally Available: Customize backup retention from 1 to 35 days in Azure HorizonDB",
+   "link": "https://azure.microsoft.com/updates?id=574163",
+   "summary": "You can now configure backup retention for your Azure HorizonDB deployments from 1 to 35 days, giving you greater flexibility to align backup retention with your application and data protection requirements. Choose the retention period that best fits you",
+   "published": "2026-11-17T23:46:26+00:00"
+  },
+  {
+   "id": "7300f9d43bd0",
+   "title": "[Launched] Generally Available: Throughput buckets in Azure Cosmos DB",
+   "link": "https://azure.microsoft.com/updates?id=571488",
+   "summary": "We're excited to announce the general availability of throughput buckets in Azure Cosmos DB. You can manage the resource consumption of multiple workloads using the same container by limiting the maximum throughput a workload can consume. You may need to",
+   "published": "2026-11-17T23:44:26+00:00"
+  },
+  {
+   "id": "0976c6d95e5b",
+   "title": "[In preview] Limited Preview: AI model management in Azure HorizonDB",
+   "link": "https://azure.microsoft.com/updates?id=563097",
+   "summary": "AI model management in Azure HorizonDB is now in limited preview, designed to simplify how you bring AI into your database. With just a single step, you can provision fully managed AI models for embeddings, semantic ranking, and generation through Microso",
+   "published": "2026-11-17T23:42:10+00:00"
+  },
+  {
+   "id": "a17e25a77b11",
+   "title": "[Launched] Generally Available: Semantic Reranker in Azure Cosmos DB",
+   "link": "https://azure.microsoft.com/updates?id=577520",
+   "summary": "Semantic Reranker in Azure Cosmos DB improves search relevance by reordering candidate results based on the meaning of the search text and surrounding context. It uses an AI model to evaluate candidate documents and promote the ones that best match the in",
+   "published": "2026-11-17T23:07:42+00:00"
+  },
+  {
+   "id": "9d149f8e346c",
+   "title": "[In preview] Public Preview: Pod Sandboxing kata-vm-isolation-v2 runtime class",
+   "link": "https://azure.microsoft.com/updates?id=581120",
+   "summary": "Isolated pods should not force a tradeoff between security and startup performance. With classic sandboxed pod flows, every pod boots a new Kata VM, which adds cold-start latency and extra memory overhead before your app begins work.The new kata-vm-isolat",
+   "published": "2026-11-17T23:00:02+00:00"
+  },
+  {
    "id": "e516df2ab922",
    "title": "[In preview] Pulic Preview: Azure Elastic SAN Next Generation",
    "link": "https://azure.microsoft.com/updates?id=581634",
@@ -62,90 +146,6 @@
    "link": "https://azure.microsoft.com/updates?id=581130",
    "summary": "Customers standardized on Intel Trust Domain Extensions (TDX) for attestation and hardware confidentiality can't run those workloads on AKS Confidential VM node pools today, because CVM node images only support AMD SEV-SNP. AKS Confidential VM node pools",
    "published": "2026-11-17T21:00:05+00:00"
-  },
-  {
-   "id": "06af9fb6a248",
-   "title": "[In preview] Public Preview: Confidential VMs with OS Disk Encryption support on AKS",
-   "link": "https://azure.microsoft.com/updates?id=581125",
-   "summary": "Regulated customers running AKS Confidential VM node pools protect workloads in memory today, but the OS disk isn't encrypted at rest, so they have to close the data-at-rest gap outside the platform. In Preview, Ubuntu 26.04 Confidential VM node pools ena",
-   "published": "2026-11-17T21:00:05+00:00"
-  },
-  {
-   "id": "52433adfe38e",
-   "title": "[In preview] Generally Available: Private endpoint support for Azure HorizonDB clusters",
-   "link": "https://azure.microsoft.com/updates?id=574153",
-   "summary": "You can now connect to Azure HorizonDB clusters privately through Azure Private Link, using a private IP address from your virtual network. Private DNS integration makes connection setup easier, while the option to disable public access keeps database tra",
-   "published": "2026-11-17T20:56:06+00:00"
-  },
-  {
-   "id": "5221e832ccd5",
-   "title": "[In preview] Public Preview: Service tags for inbound rules in network security perimeter",
-   "link": "https://azure.microsoft.com/updates?id=579201",
-   "summary": "Announcing the public preview of 'service tags as inbound rules' support for third-party customers in network security perimeter. This new capability simplifies how customers manage access to in network security perimeter-protected resources by allowing t",
-   "published": "2026-11-17T20:52:28+00:00"
-  },
-  {
-   "id": "fc16aa4ba5cc",
-   "title": "[In preview] Public Preview: Perimeter link (cross perimeter) in network security perimeter",
-   "link": "https://azure.microsoft.com/updates?id=579206",
-   "summary": "This capability enables secure connectivity between resources protected by different network security perimeters, while maintaining strong perimeter-based access controls. With this release, customers can confidently adopt network security perimeter acros",
-   "published": "2026-11-17T20:51:13+00:00"
-  },
-  {
-   "id": "c53433655f1d",
-   "title": "[In preview] Public Preview: Agent Grid helping secure AI agent communications",
-   "link": "https://azure.microsoft.com/updates?id=580684",
-   "summary": "Agent Grid is now in public preview, bringing identity-based Zero Trust network security to AI agents on supported Azure environments. Security teams can govern communications among agents, models, tools, and external services through centrally managed po",
-   "published": "2026-11-17T20:47:31+00:00"
-  },
-  {
-   "id": "a3365353e90a",
-   "title": "[In preview] Public Preview: Azure Adaptive Virtual Patching",
-   "link": "https://azure.microsoft.com/updates?id=580689",
-   "summary": "Azure Adaptive Virtual Patching introduces an AI-orchestrated Adaptive Shield designed to reduce exposure to new, emerging, and newly disclosed zero-day vulnerabilities while customers test and deploy software patches. The initial workload focus is Linux",
-   "published": "2026-11-17T20:29:13+00:00"
-  },
-  {
-   "id": "bde4d1d7c548",
-   "title": "[In preview] Public Preview: AI Security add-on for Azure Firewall Premium",
-   "link": "https://azure.microsoft.com/updates?id=580694",
-   "summary": "AI Security, a new add-on for Azure Firewall Premium, is now in public preview. Announced at Microsoft Ignite, it introduces five capabilities to help you protect AI applications, safeguard sensitive data, strengthen malware and application defenses, and",
-   "published": "2026-11-17T20:27:29+00:00"
-  },
-  {
-   "id": "69879e8e7b82",
-   "title": "[In preview] Public Preview: Azure Bastion RDP and SSH vision",
-   "link": "https://azure.microsoft.com/updates?id=580699",
-   "summary": "Azure Bastion RDP and SSH vision is now in public preview, bringing AI-assisted review to recorded privileged sessions. Security and operations teams can use session summaries and insights into noteworthy and risky activity to understand administrative ac",
-   "published": "2026-11-17T20:25:18+00:00"
-  },
-  {
-   "id": "6e3f46bf6560",
-   "title": "[In preview] Public Preview: Azure API Management Application",
-   "link": "https://azure.microsoft.com/updates?id=581277",
-   "summary": "The Applications feature in Azure API Management is now available in public preview to all customers, with no sign-up or registration required.Applications provide a streamlined way to organize APIs around consuming applications and manage application-lev",
-   "published": "2026-11-17T20:15:03+00:00"
-  },
-  {
-   "id": "36e14769e2db",
-   "title": "[In preview] Public Preview: Scale ExpressRoute Direct connectivity with link groups",
-   "link": "https://azure.microsoft.com/updates?id=580926",
-   "summary": "Azure ExpressRoute is introducing link groups for ExpressRoute Direct, enabling high-throughput workloads to scale network connectivity while reducing operational complexity. Instead of managing multiple independent ExpressRoute connections, you can aggre",
-   "published": "2026-11-17T20:15:03+00:00"
-  },
-  {
-   "id": "80df68443bc9",
-   "title": "[In preview] Public Preview: Agent Sandbox cluster extension",
-   "link": "https://azure.microsoft.com/updates?id=580916",
-   "summary": "Running AI agents that execute untrusted, model-generated code requires isolated environments for each session. Today, teams building on Kubernetes assemble their own sandbox lifecycle, storage, and warm-up logic, adding operational overhead and making us",
-   "published": "2026-11-17T20:15:03+00:00"
-  },
-  {
-   "id": "b82bd08479d6",
-   "title": "[Launched] Generally Available: IBM Spectrum LSF integration with Azure Compute Fleet",
-   "link": "https://azure.microsoft.com/updates?id=581259",
-   "summary": "IBM Spectrum LSF integrates with Azure Compute Fleet for elastic, cost-efficient HPC workload orchestration.The IBM LSF Resource Connector for Azure Compute Fleet provisions and releases compute capacity based on workload demand. Extend on-premises LSF en",
-   "published": "2026-11-17T20:00:32+00:00"
   },
   {
    "id": "15ffc96d3bd7",
