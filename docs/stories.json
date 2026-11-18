@@ -51,16 +51,6 @@
    "url": "story/f67825a82ae8.html"
   },
   {
-   "id": "223101d57350",
-   "title": "Critical Java4Shell Flaw (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak and More",
-   "summary": "A Java flaw called Java4Shell can let attackers without an account run their own code on Jira, Jenkins, Keycloak, and three other widely used applications, says Calif…",
-   "priority": "High",
-   "category": "Patch Radar",
-   "date": "18 Nov 2026, 04:27 UTC",
-   "sources": "The Hacker News, BleepingComputer, Born's IT and Windows Blog, CISA Cybersecurity Advisories",
-   "url": "story/223101d57350.html"
-  },
-  {
    "id": "7d141681ccc2",
    "title": "N-able Kills Legacy APIs, Patches 17 N-central Zero-Days",
    "summary": "The patches target recently disclosed zero-days, as well as vulnerabilities already exploited in the wild. The post N-able Kills Legacy APIs, Patches 17 N-central…",
@@ -69,6 +59,16 @@
    "date": "17 Nov 2026, 12:28 UTC",
    "sources": "SecurityWeek",
    "url": "story/7d141681ccc2.html"
+  },
+  {
+   "id": "223101d57350",
+   "title": "Java4Shell Flaw (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak and More",
+   "summary": "A Java flaw called Java4Shell can let attackers without an account run their own code on Jira, Jenkins, Keycloak, and three other widely used applications, says Calif…",
+   "priority": "High",
+   "category": "Patch Radar",
+   "date": "18 Nov 2026, 04:27 UTC",
+   "sources": "The Hacker News, Born's IT and Windows Blog, CISA Cybersecurity Advisories",
+   "url": "story/223101d57350.html"
   },
   {
    "id": "e7c273fee4ff",
@@ -91,16 +91,6 @@
    "url": "story/fe7dfa336613.html"
   },
   {
-   "id": "3ad387c63ed5",
-   "title": "Uber notifies drivers of data breach affecting nearly 150,000 people",
-   "summary": "Ride-hailing company Uber is notifying nearly 150,000 drivers that attackers stole their data after breaching AI infrastructure provider Fireworks in early October.",
-   "priority": "High",
-   "category": "Attacks & Breaches",
-   "date": "17 Nov 2026, 08:35 UTC",
-   "sources": "BleepingComputer, SecurityWeek",
-   "url": "story/3ad387c63ed5.html"
-  },
-  {
    "id": "d62ab9694fcc",
    "title": "Critical Xen Orchestra Flaws Exploited in Attacks",
    "summary": "A critical authentication bypass allows attackers to execute arbitrary code as admin and take over XCP-ng nodes. The post Critical Xen Orchestra Flaws Exploited in…",
@@ -113,7 +103,7 @@
   {
    "id": "1df53018af16",
    "title": "Attackers Compromise Microsoft's Agent Framework PyPI Package to Steal Cloud Credentials",
-   "summary": "Threat actors have compromised Microsoft's agent-framework package to push a credential stealer, according to reports from Aikido, Endor Labs, OX Security, SafeDep…",
+   "summary": "Threat actors have compromised Microsoft's agent-framework package to push a credential stealer, according to reports from Aikido, Chainguard, Endor Labs, OX Security…",
    "priority": "Standard",
    "category": "Attacks & Breaches",
    "date": "18 Nov 2026, 06:45 UTC",
@@ -221,6 +211,16 @@
    "url": "story/5e43b1695ab6.html"
   },
   {
+   "id": "3ad387c63ed5",
+   "title": "Uber notifies drivers of data breach affecting nearly 150,000 people",
+   "summary": "Ride-hailing company Uber is notifying nearly 150,000 drivers that attackers stole their data after breaching AI infrastructure provider Fireworks in early October.",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "17 Nov 2026, 08:35 UTC",
+   "sources": "BleepingComputer, SecurityWeek",
+   "url": "story/3ad387c63ed5.html"
+  },
+  {
    "id": "1ef65dbe395d",
    "title": "N-able Patches 17 N-central Flaws as Attackers Exploit Earlier Bugs to Deploy Crypto Miners",
    "summary": "N-able has released a new security update to address additional critical security flaws impacting N-central. Describing N-central 2026.4 Hotfix 3 as a critical security…",
@@ -271,14 +271,14 @@
    "url": "story/e447c2de7d90.html"
   },
   {
-   "id": "c5080c64e3d8",
-   "title": "Threat Actors Exploit Openwave, Cisco BroadWorks Vulnerabilities",
-   "summary": "The flaws, CVE-2026-111793 and CVE-2026-20320, let attackers leak sensitive information, including configuration data. The post Threat Actors Exploit Openwave, Cisco…",
-   "priority": "Critical",
+   "id": "0dd01d7b3913",
+   "title": "Oracle Patches 640 Vulnerabilities With November 2026 CSPU",
+   "summary": "Over 300 patches address unauthenticated, remotely exploitable flaws, while 62 fix critical-severity flaws. The post Oracle Patches 640 Vulnerabilities With November…",
+   "priority": "Standard",
    "category": "Patch Radar",
-   "date": "11 Nov 2026, 09:01 UTC",
+   "date": "18 Nov 2026, 08:47 UTC",
    "sources": "SecurityWeek",
-   "url": "story/c5080c64e3d8.html"
+   "url": "story/0dd01d7b3913.html"
   },
   {
    "id": "9409189d8358",
@@ -289,6 +289,16 @@
    "date": "18 Nov 2026, 01:20 UTC",
    "sources": "The Record",
    "url": "story/9409189d8358.html"
+  },
+  {
+   "id": "126567e065a7",
+   "title": "Critical Java4Shell flaw allows RCE attacks on major Java applications",
+   "summary": "A critical vulnerability dubbed Java4Shell in OpenJDK, the open-source implementation of Java, can allow unauthenticated attackers to remotely execute code on popular…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "17 Nov 2026, 23:04 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/126567e065a7.html"
   },
   {
    "id": "8f75784be3f3",
@@ -811,26 +821,6 @@
    "url": "story/f0b3319bef62.html"
   },
   {
-   "id": "a60b8a453d05",
-   "title": "Microsoft pushes Windows emergency updates to fix activation failures",
-   "summary": "Microsoft has released emergency out-of-band updates to fix Windows activation and licensing failures caused by this month's security updates.",
-   "priority": "Standard",
-   "category": "Microsoft",
-   "date": "16 Nov 2026, 08:26 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/a60b8a453d05.html"
-  },
-  {
-   "id": "47ca43e224a0",
-   "title": "Microsoft Rules Out Cyberattack in Outage, Warns of Phishing Campaign",
-   "summary": "Phishing emails posing as Microsoft 365 service notices referenced the real outage incident and threatened to delete held messages. The post Microsoft Rules Out…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "16 Nov 2026, 08:15 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/47ca43e224a0.html"
-  },
-  {
    "id": "960f41318ea9",
    "title": "Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident",
    "summary": "The compromise of Anthropic's official Claude Code extension on Cursor's extension marketplace was the result of the theft of an access key that was exposed in the wake…",
@@ -999,6 +989,16 @@
    "date": "11 Nov 2026, 20:54 UTC",
    "sources": "BleepingComputer",
    "url": "story/4555dea14647.html"
+  },
+  {
+   "id": "0ad69605a849",
+   "title": "British Scattered Spider hacker sentenced to 6 years in prison",
+   "summary": "A leader of the Scattered Spider cybercrime collective has been sentenced to six years in prison in the United States for stealing millions in cryptocurrency and…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "18 Nov 2026, 08:24 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/0ad69605a849.html"
   },
   {
    "id": "c5f6c87fa0f7",
@@ -1319,6 +1319,26 @@
    "date": "16 Nov 2026, 14:00 UTC",
    "sources": "BleepingComputer",
    "url": "story/2e40619c86da.html"
+  },
+  {
+   "id": "a60b8a453d05",
+   "title": "Microsoft pushes Windows emergency updates to fix activation failures",
+   "summary": "Microsoft has released emergency out-of-band updates to fix Windows activation and licensing failures caused by this month's security updates.",
+   "priority": "Standard",
+   "category": "Microsoft",
+   "date": "16 Nov 2026, 08:26 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/a60b8a453d05.html"
+  },
+  {
+   "id": "47ca43e224a0",
+   "title": "Microsoft Rules Out Cyberattack in Outage, Warns of Phishing Campaign",
+   "summary": "Phishing emails posing as Microsoft 365 service notices referenced the real outage incident and threatened to delete held messages. The post Microsoft Rules Out…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "16 Nov 2026, 08:15 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/47ca43e224a0.html"
   },
   {
    "id": "f40bccb5d841",
@@ -1761,26 +1781,6 @@
    "url": "story/6cc651115394.html"
   },
   {
-   "id": "6c321513c19e",
-   "title": "Chipmaker Patch Tuesday: Over 200 Vulnerabilities Addressed by Intel, AMD",
-   "summary": "Intel and AMD disclose more than 200 vulnerabilities, including critical flaws in Intel TDX software and numerous AMD graphics bugs. The post Chipmaker Patch Tuesday…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "11 Nov 2026, 08:42 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/6c321513c19e.html"
-  },
-  {
-   "id": "44096b209ce3",
-   "title": "Microsoft Patches 1,259 Flaws, Including Exploited Outlook Bug That May Expose NTLMv2 Hashes",
-   "summary": "Microsoft on Tuesday released patches for a total of 1,259 vulnerabilities spanning its software portfolio, the second consecutive month where the patch volume has…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "11 Nov 2026, 08:17 UTC",
-   "sources": "The Hacker News",
-   "url": "story/44096b209ce3.html"
-  },
-  {
    "id": "50868e3a64c2",
    "title": "Hijacked Optimizely Scripts Served Card Skimmer and iOS Exploit Kits to CNN, BBC and Zoom Visitors",
    "summary": "An attacker exploited a flaw in Optimizely Web Experimentation to plant malicious code in some of the scripts that customers' websites load from the service, Optimizely…",
@@ -1999,16 +1999,6 @@
    "date": "16 Nov 2026, 09:30 UTC",
    "sources": "BleepingComputer",
    "url": "story/7d4f6584a3c9.html"
-  },
-  {
-   "id": "aaca3d274aab",
-   "title": "Tor Updates DoS Defenses Again as Relay Attacks Continue",
-   "summary": "Tor 0.4.9.17 patches several security issues, including one related to how built-in DoS protections deal with IPv6. The post Tor Updates DoS Defenses Again as Relay…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "16 Nov 2026, 08:55 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/aaca3d274aab.html"
   },
   {
    "id": "f159cf23a7b2",
@@ -2319,6 +2309,16 @@
    "date": "11 Nov 2026, 11:16 UTC",
    "sources": "SecurityWeek",
    "url": "story/3d74aba68f12.html"
+  },
+  {
+   "id": "aaca3d274aab",
+   "title": "Tor Updates DoS Defenses Again as Relay Attacks Continue",
+   "summary": "Tor 0.4.9.17 patches several security issues, including one related to how built-in DoS protections deal with IPv6. The post Tor Updates DoS Defenses Again as Relay…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "16 Nov 2026, 08:55 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/aaca3d274aab.html"
   },
   {
    "id": "1a13d7025b37",

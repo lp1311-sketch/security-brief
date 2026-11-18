@@ -2134,7 +2134,7 @@
    "title": "Attackers Compromise Microsoft's Agent Framework PyPI Package to Steal Cloud Credentials",
    "link": "https://thehackernews.com/2026/11/attackers-compromise-microsofts-agent.html",
    "published": "2026-11-18T06:45:26+00:00",
-   "summary": "Threat actors have compromised Microsoft's agent-framework package to push a credential stealer, according to reports from Aikido, Endor Labs, OX Security, SafeDep, Socket, StepSecurity, and Google-owned Wiz. The malicious versions, 1.26.1 and 1.26.2, were published 33 minutes apart on November 17, 2026, and are…",
+   "summary": "Threat actors have compromised Microsoft's agent-framework package to push a credential stealer, according to reports from Aikido, Chainguard, Endor Labs, OX Security, SafeDep, Socket, StepSecurity, and Google-owned Wiz. The malicious versions, 1.26.1 and 1.26.2, were published 33 minutes apart on November 17, 2026…",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_LozO7RAz13Jr3eqWHIjlAF6M0Cs-mJXX2mKUqU0TxVS02piD1na92TAZjICmeySD4z0zS-Y_BFvceERBdk-UZvV1DUh1LGN6wK-T-yt_TROJ5fcuvROu807jqESQo93CFP3faBbReKMZQxvgYOAGl_vS2VzfO67O24NdAgh6d9jMO2mTSy2jaNJMPD9T/s1600/ms-python.jpg",
    "cves": [],
    "first_seen": "2026-11-18T08:00:02.487812+00:00",
@@ -2531,11 +2531,11 @@
    "source_name": "The Hacker News",
    "official": false,
    "source_type": "news",
-   "title": "Critical Java4Shell Flaw (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak and More",
+   "title": "Java4Shell Flaw (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak and More",
    "link": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html",
    "published": "2026-11-18T04:27:41+00:00",
    "summary": "A Java flaw called Java4Shell can let attackers without an account run their own code on Jira, Jenkins, Keycloak, and three other widely used applications, says Calif, the security research firm that disclosed it this week. The flaw is present in Java 17.0.6 and later, and the vulnerable code runs only on x86-64 Intel…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTrbBEjGUxldrJAnxC5ilrZqnNHyexGDTR-zS3vAX-Qw_ZNtNNEsomeDRYT40hQkUZt3G4T6y9oKi7G88dN0gatwvi03ItVtDmFCA8V7Zrb2lh5l4oGf8BUVF0UUbvybU0XuGpBnynGfvsCS_y4aWYtzvD_eNyqtids_c8w1auCGMWMYlxrReU-iS0FWc/s1600/java.jpg",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEis8B-Vf6puS0vOs9mEVup755KXy8y59KD72B5VQb8SyhO1JDHkYcvg42Y1rh1xg3seyml7j2vZn5Dq1OEnFYVzD_97osoZXWkxVVOBxM48InZPbaVgV7Lo64odzPVKNPEtPeLlEAm2AFfShOFVGtypVUJAJdt07qqik_Yde9X6BxLECPH7Gekbkzl2GBDK/s1600/java4shell-flaw.jpg",
    "cves": [
     "CVE-2026-114938"
    ],
@@ -2545,27 +2545,6 @@
     "On Linux, this command shows whether a server's chip has the four features the vulnerable code needs, and all four must appear in its output:",
     "The release notes for 17.0.21.1 say it includes the update's security fixes, and the notes for 21.0.13.1, 25.0.5.1 and 27.0.1.1 say the same.",
     "Azul's November update fixes the flaw in Zulu 17, 21, 25 and 27, according to its Zulu release notes ."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "44096b209ce3",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Microsoft Patches 1,259 Flaws, Including Exploited Outlook Bug That May Expose NTLMv2 Hashes",
-   "link": "https://thehackernews.com/2026/11/microsoft-patches-1259-flaws-including.html",
-   "published": "2026-11-11T08:17:53+00:00",
-   "summary": "Microsoft on Tuesday released patches for a total of 1,259 vulnerabilities spanning its software portfolio, the second consecutive month where the patch volume has exceeded 1,000 flaws. These cover 726 flaws in Windows, 174 in Office, 61 in Developer Tools, 59 in SQL Server, 53 in Developer Tools, and 27 in SharePoint…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_nfFO2Zf-R2XyVzQHP43rc0OLAtUtRKWYV0VIaoHZW8EeH78h2Id9FmfJQVfzFdmBD6ugVGeCehX1Nq6jlmXlMG4AmnV3Tib3YvClKGaplVg5Ngk_KlpqwHx6Pd_oYQTCj2O3HfOpt_MoSGQD-4Nv-pju5sqS7U9-rAJdpKTn-xnhA1QSmmTiQWnAFjGp/s1600/patch-ms.jpg",
-   "cves": [],
-   "first_seen": "2026-11-11T09:39:45.019744+00:00",
-   "instructions": [
-    "\"Product UI does not warn users of unsafe actions in Microsoft Office Outlook allows an unauthorized attacker to perform spoofing over a network,\" Microsoft said in an advisory.",
-    "The advisory also doesn't spell out whether the discovery came before or after attackers began exploiting the flaw.",
-    "Cybersecurity and Infrastructure Security Agency (CISA) to add the flaw to its Known Exploited Vulnerabilities ( KEV ) catalog, requiring federal agencies to apply the fix by November 24, 2026.",
-    "Microsoft on Tuesday released patches for a total of 1,259 vulnerabilities spanning its software portfolio, the second consecutive month where the patch volume has exceeded 1,000 flaws."
    ],
    "instructions_checked": true
   },
@@ -4333,6 +4312,23 @@
    "instructions": [
     "Because of the uncertainty surrounding this scenario, Barracuda asked potentially affected Managed XDR Cloud or Monitored Endpoint customers to revoke and recreate their integration credentials."
    ],
+   "instructions_checked": true
+  },
+  {
+   "id": "0ad69605a849",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "British Scattered Spider hacker sentenced to 6 years in prison",
+   "link": "https://www.bleepingcomputer.com/news/security/british-scattered-spider-hacker-sentenced-to-6-years-in-prison/",
+   "published": "2026-11-18T08:24:18+00:00",
+   "summary": "A leader of the Scattered Spider cybercrime collective has been sentenced to six years in prison in the United States for stealing millions in cryptocurrency and conspiring to hack a dozen companies.",
+   "image": "https://www.bleepstatic.com/content/posts/2026/11/18/Scattered-Spider-hacker-prison.jpg",
+   "cves": [],
+   "first_seen": "2026-11-18T09:03:52.657472+00:00",
+   "image_checked": true,
+   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -6453,28 +6449,6 @@
    "instructions_checked": true
   },
   {
-   "id": "6c321513c19e",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Chipmaker Patch Tuesday: Over 200 Vulnerabilities Addressed by Intel, AMD",
-   "link": "https://www.securityweek.com/chipmaker-patch-tuesday-over-200-vulnerabilities-addressed-by-intel-amd/",
-   "published": "2026-11-11T08:42:44+00:00",
-   "summary": "Intel and AMD disclose more than 200 vulnerabilities, including critical flaws in Intel TDX software and numerous AMD graphics bugs. The post Chipmaker Patch Tuesday: Over 200 Vulnerabilities Addressed by Intel, AMD appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2024/11/chipmaker-patch-tuesday.jpeg",
-   "cves": [],
-   "first_seen": "2026-11-11T09:39:45.019744+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Intel publishes 24 advisories covering more than 100 flaws Intel’s 24 new advisories describe just over 100 vulnerabilities.",
-    "Intel and AMD have published more than 50 new security advisories that describe over 200 vulnerabilities affecting their products.",
-    "Some AMD mitigations were released months or even years ago, others are still in the works, and Intel has discontinued one of the impacted products.",
-    "The largest advisory covers 30 security holes in the TDX Migration Trust Domain (MigTD) reference software."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "116311b70214",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -7272,6 +7246,27 @@
    "instructions_checked": true
   },
   {
+   "id": "0dd01d7b3913",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Oracle Patches 640 Vulnerabilities With November 2026 CSPU",
+   "link": "https://www.securityweek.com/oracle-patches-640-vulnerabilities-with-november-2026-cspu/",
+   "published": "2026-11-18T08:47:18+00:00",
+   "summary": "Over 300 patches address unauthenticated, remotely exploitable flaws, while 62 fix critical-severity flaws. The post Oracle Patches 640 Vulnerabilities With November 2026 CSPU appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/10/Oracle.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-18T09:03:52.657472+00:00",
+   "image_checked": true,
+   "instructions": [
+    "While Oracle makes no mention of any of these vulnerabilities being exploited in the wild, organizations are advised to apply the patches as soon as possible, as security defects in the company’s products are an attractive target to threat actors.",
+    "Oracle on Tuesday announced the release of 655 new security patches as part of its November 2026 Critical Security Patch Update (CSPU).",
+    "The Supply Chain update contains 74 new security patches, including 36 for unauthenticated, remotely exploitable flaws."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "c8b26857299e",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -7395,31 +7390,6 @@
     "Its main recommendation was “do not launch widgets in Telegram until a fix is released.” Telegram CEO Pavel Durov promoted the widgets feature on X on November 10, saying that any message on the platform can now become an app.",
     "SecurityWeek has reached out to Telegram for comment and will update this article if the company responds.",
     "No Signs of Hacking in FAA Ground Stop as FBI Reportedly Probes Software Update"
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "c5080c64e3d8",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Threat Actors Exploit Openwave, Cisco BroadWorks Vulnerabilities",
-   "link": "https://www.securityweek.com/threat-actors-exploit-openwave-cisco-broadworks-vulnerabilities/",
-   "published": "2026-11-11T09:01:07+00:00",
-   "summary": "The flaws, CVE-2026-111793 and CVE-2026-20320, let attackers leak sensitive information, including configuration data. The post Threat Actors Exploit Openwave, Cisco BroadWorks Vulnerabilities appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2024/07/Cisco-switches-network.jpeg",
-   "cves": [
-    "CVE-2026-111793",
-    "CVE-2026-20320"
-   ],
-   "first_seen": "2026-11-11T09:39:45.019744+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Webtop Media Transcoder handles document conversion, and Openwave’s advisory ties it to the company’s webmail.",
-    "An attacker could exploit this vulnerability by sending a crafted XML message to the Open Client Interface – Provisioning (OCI-P) service,” Cisco notes in its advisory.",
-    "The US cybersecurity agency CISA added the Openwave and Cisco security defects to its Known Exploited Vulnerabilities ( KEV ) catalog on November 10, urging federal agencies to patch both by November 24.",
-    "Chipmaker Patch Tuesday: Over 200 Vulnerabilities Addressed by Intel, AMD"
    ],
    "instructions_checked": true
   },
