@@ -2548,6 +2548,29 @@
    "instructions_checked": true
   },
   {
+   "id": "223101d57350",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Java4Shell (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak on Java 17+ AVX-512 VBMI Servers",
+   "link": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html",
+   "published": "2026-11-18T04:27:41+00:00",
+   "summary": "A Java flaw called Java4Shell can let attackers without an account run their own code on Jira, Jenkins, Keycloak, and three other widely used applications, says Calif, the security research firm that disclosed it this week. The flaw is present in Java 17.0.6 and later, and the vulnerable code runs only on x86-64 Intel…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTrbBEjGUxldrJAnxC5ilrZqnNHyexGDTR-zS3vAX-Qw_ZNtNNEsomeDRYT40hQkUZt3G4T6y9oKi7G88dN0gatwvi03ItVtDmFCA8V7Zrb2lh5l4oGf8BUVF0UUbvybU0XuGpBnynGfvsCS_y4aWYtzvD_eNyqtids_c8w1auCGMWMYlxrReU-iS0FWc/s1600/java.jpg",
+   "cves": [
+    "CVE-2026-114938"
+   ],
+   "first_seen": "2026-11-18T05:44:39.975986+00:00",
+   "instructions": [
+    "The OpenJDK project's vulnerability advisory lists the flaw as fixed in this week's releases, and Oracle's security advisory lists the affected versions of its builds.",
+    "On Linux, this command shows whether a server's chip has the four features the vulnerable code needs, and all four must appear in its output:",
+    "The release notes for 17.0.21.1 say it includes the update's security fixes, and the notes for 21.0.13.1, 25.0.5.1 and 27.0.1.1 say the same.",
+    "Azul's November update fixes the flaw in Zulu 17, 21, 25 and 27, according to its Zulu release notes ."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "44096b209ce3",
    "source": "thehackernews",
    "source_name": "The Hacker News",
