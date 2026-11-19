@@ -138,25 +138,6 @@
    "instructions_checked": true
   },
   {
-   "id": "10da2048e255",
-   "source": "borncity",
-   "source_name": "Born's IT and Windows Blog",
-   "official": false,
-   "source_type": "news",
-   "title": "Patchday: Microsoft Office Updates (10. November 2026)",
-   "link": "https://borncity.com/blog/2026/11/12/patchday-microsoft-office-updates-10-november-2026/",
-   "published": "2026-11-11T23:02:00+00:00",
-   "summary": "Am 10. November 2026 (zweiter Dienstag im Monat, Microsoft Patchday) hat Microsoft mehrere sicherheitsrelevante Updates für Microsoft Office veröffentlicht. Microsoft Office 2016 und die MSI-Versionen sind ja schon länger aus dem Support Hier eine Kurzübersicht, was ich gefunden habe. Office … Weiterlesen → Quelle",
-   "image": "https://borncity.com/blog/wp-content/uploads/2021/06/Update-01.jpg",
-   "cves": [],
-   "first_seen": "2026-11-11T23:33:18.285624+00:00",
-   "image_checked": true,
-   "instructions": [
-    "November 2026) Windows 11 25H2 – 26H2: Preview Update KB5127936 (28."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "78b8360a8962",
    "source": "borncity",
    "source_name": "Born's IT and Windows Blog",
@@ -462,6 +443,26 @@
    "instructions_checked": true
   },
   {
+   "id": "71033c4e6688",
+   "source": "borncity",
+   "source_name": "Born's IT and Windows Blog",
+   "official": false,
+   "source_type": "news",
+   "title": "NGINX HTTP/2: Kritische nginx2root Schwachstellen CVE-2026-123633 und CVE-2026-123007",
+   "link": "https://borncity.com/blog/2026/11/18/https-borncity-com-blog-2026-11-18-nginx-http-2-kritische-schwachstellen/",
+   "published": "2026-11-18T19:12:03+00:00",
+   "summary": "In der als Web-Server, Reverse-Proxy etc. fungierenden Software NGINX sind zwei kritische Schwachstellen CVE-2026-123633 und CVE-2026-123007, als nginx2root bezeichnet, öffentlich geworden. Für die mit einem CVSS-Score von 9.2 bewerteten Sicherheitslücken stehen ein Exploit und inzwischen auch Updates zur Verfügung…",
+   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
+   "cves": [
+    "CVE-2026-123007",
+    "CVE-2026-123633"
+   ],
+   "first_seen": "2026-11-19T02:03:38.515836+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "00d571c6c89f",
    "source": "borncity",
    "source_name": "Born's IT and Windows Blog",
@@ -479,6 +480,28 @@
    "first_seen": "2026-11-18T20:45:42.433362+00:00",
    "image_checked": true,
    "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "8338de42e863",
+   "source": "borncity",
+   "source_name": "Born's IT and Windows Blog",
+   "official": false,
+   "source_type": "news",
+   "title": "Kritisches PHP-Sicherheitsupdate für den 19. November 2026 angekündigt",
+   "link": "https://borncity.com/blog/2026/11/19/kritisches-php-sicherheitsupdate-fuer-den-19-november-2026-angekuendigt/",
+   "published": "2026-11-19T00:03:14+00:00",
+   "summary": "Nach dem Patch ist vor dem nächsten Sicherheitsupdate, zumindest was die Sprache PHP betrifft. Leser haben mir am Abend des 18. November 2026 darauf hingewiesen, dass das nächste kritische PHP-Sicherheitsupdate für den 19. November 2026 (ca. 15:00-15:30 Uhr MEZ) angekündigt … Weiterlesen → Quelle",
+   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
+   "cves": [],
+   "first_seen": "2026-11-19T02:03:38.515836+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Nach dem Patch ist vor dem nächsten Sicherheitsupdate, zumindest was die Sprache PHP betrifft.",
+    "Users are strongly encouraged to prepare to upgrade promptly once the releases become available.",
+    "November 2026 wollen die PHP-Entwickler ein kritisches Sicherheits-Update zwischen 15:00 und 15:30 Uhr deutscher Zeit veröffentlichen.",
+    "Dieses Mal ist das PHP-Update aber Teil des regulären vierwöchigen Release-Zyklus von PHP und behebt Sicherheitslücken, die alle unterstützten PHP-Versionen betreffen."
+   ],
    "instructions_checked": true
   },
   {
@@ -530,22 +553,21 @@
    "instructions_checked": true
   },
   {
-   "id": "453a571c3295",
+   "id": "c39fbe2f26b9",
    "source": "grahamcluley",
    "source_name": "Graham Cluley",
    "official": false,
    "source_type": "news",
-   "title": "Smashing Security podcast #492: How hackers turned Russian cars into pumpkins",
-   "link": "https://grahamcluley.com/smashing-security-podcast-492/",
-   "published": "2026-11-12T00:32:55+00:00",
-   "summary": "You're driving your new Chinese SUV when the dashboard goes dark. Ten minutes later, your phone rings. A stranger says they've got the digital key to your car, and would you like it back? Of course you would. That'll be $550. Meanwhile, three men have been charged over a scheme that used deepfakes of company bosses to…",
-   "image": "https://grahamcluley.com/wp-content/uploads/2026/11/ss-episode-492.webp",
+   "title": "Smashing Security podcast #493: Why your AI model could be a sleeper agent",
+   "link": "https://grahamcluley.com/smashing-security-podcast-493/",
+   "published": "2026-11-19T00:14:52+00:00",
+   "summary": "You join a video call, and your contact and a few colleagues are already there, waiting patiently. But they can't hear you, and a pop-up says you need to install an update to fix your microphone. What could possibly go wrong? Meanwhile, we explain how changing just a handful of numbers can turn an AI model into a…",
+   "image": "https://grahamcluley.com/wp-content/uploads/2026/11/ss-episode-493.webp",
    "cves": [],
-   "first_seen": "2026-11-12T01:58:41.434614+00:00",
+   "first_seen": "2026-11-19T02:03:38.515836+00:00",
    "image_checked": true,
    "instructions": [
-    "Cyber thieves Remotely block Luxury Chinese cars for Ransom – Известия.",
-    "Russian dealer threatens to block multimedia in cars imported via gray schemes – Kursiv Media Kazakhstan."
+    "But they can’t hear you, and a pop-up says you need to install an update to fix your microphone."
    ],
    "instructions_checked": true
   },
@@ -1557,7 +1579,11 @@
    "summary": "TL;DR Attackers move first. On average, exploitation now starts before a patch exists (Mandiant M-Trends 2026). In 1H 2026, 23% of vulnerabilities VulnCheck added to its exploited list were hit on or before disclosure day. AI pentesting vendors aren't interchangeable. Most look convincing in a demo. The gaps show up…",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdb3EyKCLHzaa6p3bzrF2EkkcJJQgshTsoaU6kzga1C8NGRBE1rDwlsHwhVKehkmGsOYpf0Dq-VCQpmFDPYLglxQIQjEiv3NrkFDRPTc3wUObe1Kc0km71lwUEXLTtWJGBQ3nO6wFbRqKoOJLcBv2lwpD-ZAYc1caohfkIFkCVlLQdS-YuwmbecgBf-sQ/s1600/reflectiz.jpg",
    "cves": [],
-   "first_seen": "2026-11-18T20:45:42.433362+00:00"
+   "first_seen": "2026-11-18T20:45:42.433362+00:00",
+   "instructions": [
+    "On average, exploitation now starts before a patch exists (Mandiant M-Trends 2026)."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "f159cf23a7b2",
@@ -1898,7 +1924,14 @@
    "summary": "On AMD-based PCs and some Intel PCs, the TPM lockout for Windows Hello and BitLocker PINs can be reset by someone who opens the PC's case, researchers at Technische Universität Berlin say. That leaves short PINs open to guessing. In lab tests, the researchers found a four-digit Hello PIN on an AMD laptop and a 6-digit…",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpsv4GxAUbzCsIV1umrxZs6VxfD1eFwAeCgRHQQG_dNbP1fLiYe48hM-Wbd_8w5IxlacAwoidLqyQgBmG7YD7qKo0_XcqW2GhggfXshuK1uXz8BOma2H0Jjs8fabCO4IxHBfRopEUFDd0xHRRv43gMeog852Usv40sfcTwnO_9coyxtIMmteJxeJI_oPA/s1600/bitlocker.jpg",
    "cves": [],
-   "first_seen": "2026-11-18T20:45:42.433362+00:00"
+   "first_seen": "2026-11-18T20:45:42.433362+00:00",
+   "instructions": [
+    "In May, Microsoft advised moving BitLocker from TPM-only to TPM+PIN to block the YellowKey bypass, as part of its YellowKey mitigation .",
+    "For now, the researchers advise adding at least two digits to Hello and BitLocker PINs.",
+    "It also does not say whether the update will prevent an attacker from installing older, unfixed firmware on the PC, which the researchers say a fix must prevent.",
+    "According to them, the company rated the Windows Hello report as \"moderate severity\" and below its bar for an immediate fix, issued no CVE or bounty, and committed to raising its recommended minimum Hello PIN length to six digits."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "5af74d5ce665",
@@ -2302,7 +2335,9 @@
    "summary": "AI is speeding up how software is built, which means more code, more changes, and more chances for vulnerabilities to reach production. It's speeding up how attackers find and exploit them too, with time-to-exploit now down to a single day. Security testing has to keep up with both. AI pentesting has emerged as a way…",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj276QET-ma2-edrAgsOdbZltmoW58d_kJT8C-g8DXQfDQAzPlmCcQYv-tWcX-DXcSipQpu_oFY_pPunvn-eXoog3H0BYPLkb4uY3B4Ax9T7LmtVBgVDwZZInLbj5QgnjVMI5d1za8bgR1a2TvGaJzZUK2UuSAEk3gSY-erKiddYAYTkNE9kxEp0zcx5x8/s1600/intruder.jpg",
    "cves": [],
-   "first_seen": "2026-11-18T20:45:42.433362+00:00"
+   "first_seen": "2026-11-18T20:45:42.433362+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "6b530aaeb2ca",
@@ -2961,6 +2996,23 @@
     "The crackdown on Meta’s Facebook platform involved the company’s alleged use of its “camera roll” suggestions option, launched in 2023, to browse Android users’ photo galleries to recommend posts they could enhance with personal photos and videos.",
     "The permission is preceded by a “non-specific notice” to enable other features, the press release said, failing to make clear to users that they are consenting to suggestions from the camera roll, the regulator said."
    ],
+   "instructions_checked": true
+  },
+  {
+   "id": "33f8f6aa43e2",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Judge signs off on sale of Spirit Airlines’ data to Google",
+   "link": "https://therecord.media/judge-signs-off-google-purchase-spirit-airlines-data",
+   "published": "2026-11-18T20:39:00+00:00",
+   "summary": "Google can take possession of defunct Spirit Airlines' data for $10 million, a federal bankruptcy judge has ruled. The tech giant agreed to protections as it plans to use the data in AI projects.",
+   "image": "https://cms.therecord.media/uploads/spirit_airlines_pexels_ant_armada_5803bb2701.jpg",
+   "cves": [],
+   "first_seen": "2026-11-19T02:03:38.515836+00:00",
+   "image_checked": true,
+   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -3722,28 +3774,6 @@
    "instructions_checked": true
   },
   {
-   "id": "ccdd6c7f3ffe",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Active ScreenConnect attacks breach MSPs, impact dozens of organizations",
-   "link": "https://www.bleepingcomputer.com/news/security/active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations/",
-   "published": "2026-11-11T22:56:21+00:00",
-   "summary": "ConnectWise is investigating an active malware campaign targeting managed service providers (MSPs) that uses compromised ScreenConnect environments to deploy rogue remote-access clients to customer devices.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/09/16/ScreenConnect.jpg",
-   "cves": [],
-   "first_seen": "2026-11-11T23:33:18.285624+00:00",
-   "image_checked": true,
-   "instructions": [
-    "\"As a precaution, partners should avoid opening interactive ScreenConnect sessions to suspected compromised devices and use separate security tooling to investigate.",
-    "Partners should also review account activity, revoke active sessions, reset credentials from a trusted device, and verify multifactor authentication.\"",
-    "“Sequential attacker-assigned tags suggest other MSPs may have been compromised earlier, so ScreenConnect users should check their Run Command history even if they haven’t received alerts,” Huntress told BleepingComputer.",
-    "BleepingComputer reached out to Huntress with additional questions about the attacks and will update the post if we receive a response."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "d51a92f2bc9a",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -3843,28 +3873,6 @@
     "While it didn't link this to the incident, the company advised customers to be suspicious of any messages requesting personal data and recommended using unique passwords.",
     "\"We advise everyone to take basic online precautions and recommend remaining vigilant to suspicious links, attempts to solicit personal information from you (including by email, phone, text, or post) and potential scam activity,\" it added.",
     "\"We recommend you regularly update your password with a strong, unique password for your account and not reusing the same password across multiple services.\""
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "7f241c94ac84",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Baker Tilly notifies clients of data breach at third-party provider",
-   "link": "https://www.bleepingcomputer.com/news/security/baker-tilly-notifies-clients-of-data-breach-at-third-party-provider/",
-   "published": "2026-11-11T23:01:31+00:00",
-   "summary": "The Baker Tilly Advisory Group is notifying clients that a data breach has compromised certain personal information about them and their dependents.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/11/bakertilly.jpg",
-   "cves": [],
-   "first_seen": "2026-11-11T23:33:18.285624+00:00",
-   "image_checked": true,
-   "instructions": [
-    "The Baker Tilly Advisory Group is notifying clients that a data breach has compromised certain personal information about them and their dependents.",
-    "Baker Tilly is a major accounting firm in the U.S., providing auditing, tax planning, compliance, advisory, and business operations services.",
-    "To mitigate the risks arising from the incident, the firm offers affected individuals 24 months of credit and identity monitoring through Experian.",
-    "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day"
    ],
    "instructions_checked": true
   },
@@ -3987,6 +3995,25 @@
    "instructions_checked": true
   },
   {
+   "id": "ede0adf4c578",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Coinbase blocks $4.7 million in transfers to Elon Musk deepfake scam",
+   "link": "https://www.bleepingcomputer.com/news/security/coinbase-blocks-47-million-in-transfers-to-elon-musk-deepfake-scam/",
+   "published": "2026-11-18T20:49:32+00:00",
+   "summary": "Coinbase says it blocked $4.7 million in cryptocurrency transfers to scammers promoting a fake giveaway using an AI-generated deepfake of Elon Musk during a Tesla livestream that attracted more than 500,000 viewers.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2022/05/22/elon-musk-space-bright.jpg",
+   "cves": [],
+   "first_seen": "2026-11-19T02:03:38.515836+00:00",
+   "image_checked": true,
+   "instructions": [
+    "To avoid falling victim to these types of scam campaigns, users should independently verify cryptocurrency promotions through official websites and social media accounts rather than trusting livestreams or QR codes displayed in videos."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "10eb36112f40",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4084,28 +4111,6 @@
    "first_seen": "2026-11-18T12:18:19.814067+00:00",
    "image_checked": true,
    "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "a4a34375ee4e",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "eMudhra revokes 8 more CA certificates after private key mishap",
-   "link": "https://www.bleepingcomputer.com/news/security/emudhra-revokes-8-more-ca-certificates-after-private-key-mishap/",
-   "published": "2026-11-11T21:27:40+00:00",
-   "summary": "Certificate authority eMudhra has revoked eight additional intermediate CA certificates after an investigation into its recent certificate security incident found improper handling of private keys during the certificate-generation process.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/20/certificate.jpg",
-   "cves": [],
-   "first_seen": "2026-11-11T21:35:52.932632+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Mozilla, Google, Apple, and other software vendors subsequently released protections to block the compromised certificates.",
-    "Microsoft also released out-of-band Windows updates on October 26 to remove trust in affected eMudhra certificate trust chains on systems that could not receive automatic certificate trust updates.",
-    "Mozilla, Google, Apple block compromised eMudhra CA certificates",
-    "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day"
-   ],
    "instructions_checked": true
   },
   {
@@ -4451,28 +4456,6 @@
    "instructions_checked": true
   },
   {
-   "id": "4555dea14647",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Notion says Fireworks breach exposed customer AI chat transcripts",
-   "link": "https://www.bleepingcomputer.com/news/security/notion-says-fireworks-breach-exposed-customer-ai-chat-transcripts/",
-   "published": "2026-11-11T20:54:20+00:00",
-   "summary": "Notion, the digital workspace platform, disclosed that a security breach at its AI infrastructure provider, Fireworks AI, exposed Notion AI chat transcripts in a small number of workspaces.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/11/Notion.jpg",
-   "cves": [],
-   "first_seen": "2026-11-11T21:35:52.932632+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Potentially affected workspace owners should review the data through Security incident review in Notion’s desktop web interface and share a link with members that lets them download their own transcripts.",
-    "Notion advises affected users to rotate any passwords, API keys, or other credentials entered into affected chats.",
-    "“Upon analysis of the dataset Fireworks AI gave us on November 8, we discovered that it included Notion AI chat transcripts used for the Insights feature, which for the vast majority of impacted workspaces were unattributable,” Notion stated in an update .",
-    "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day"
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "50204565d4ff",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4636,6 +4619,25 @@
    "instructions_checked": true
   },
   {
+   "id": "b326b8531a92",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Ukraine, FBI arrest ransomware gang members tied to $40M in ransoms",
+   "link": "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/",
+   "published": "2026-11-18T23:08:33+00:00",
+   "summary": "Ukrainian authorities, working with the FBI, have arrested four suspected members of an international ransomware organization linked to more than $40.5 million in ransom payments from at least 28 companies worldwide.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2022/03/15/Ukraine-hacker.jpg",
+   "cves": [],
+   "first_seen": "2026-11-19T02:03:38.515836+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Under the pretext of providing technical assistance, they persuaded employees to disclose their login credentials or install remote access software."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "e253199b5be0",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4763,7 +4765,13 @@
     "CVE-2026-90436",
     "CVE-2026-90817"
    ],
-   "first_seen": "2026-11-18T20:45:42.433362+00:00"
+   "first_seen": "2026-11-18T20:45:42.433362+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
+    "BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "0b6d9bcd8811",
@@ -5191,38 +5199,6 @@
    "instructions_checked": true
   },
   {
-   "id": "bcbd3a3cc803",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "Attackers Say 'Hello' to a Different Scale of Cloud Attack",
-   "link": "https://www.darkreading.com/cloud-security/attackers-hello-scale-cloud-attack",
-   "published": "2026-11-11T21:44:04+00:00",
-   "summary": "Researchers dubbed an attack chain \"Greeter\" after discovering that attackers deliberately covered their trail by leaving \"hello\" messages in logs.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt10d089cc23c19918/6af23c18ddd4d34d271f90a5/GettyImages-511970077.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-11T21:35:52.932632+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "c5c797f8dc87",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "AI Raises the Stakes for Cyber Resilience",
-   "link": "https://www.darkreading.com/cyber-risk/ai-raises-stakes-cyber-resilience",
-   "published": "2026-11-11T21:20:41+00:00",
-   "summary": "An organization's ability to quickly recover from a business disruption will be a competitive advantage in an era of AI-driven threats and business enablement.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltcc4e8093ca09a7aa/6af4d41325a88f7635e2ef35/resops_Sohan_stock_shutterstock.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-11T22:36:46.660632+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "69b76f0fd14e",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -5255,6 +5231,23 @@
    "instructions_checked": true
   },
   {
+   "id": "cebfa689962e",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "Strike Graph Launches Integration AI to Automate Continuous Compliance Evidence Using Any Existing Tool",
+   "link": "https://www.darkreading.com/cyber-risk/strike-graph-launches-integration-ai-to-automate-continuous-compliance-evidence-using-any-existing-tool",
+   "published": "2026-11-18T20:45:49+00:00",
+   "summary": "New agentic AI solution leverages APIs to collect compliance evidence from systems and applies it to over 30 frameworks with no duplicate work.",
+   "image": null,
+   "cves": [],
+   "first_seen": "2026-11-19T02:03:38.515836+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "10d373a62ac2",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -5267,6 +5260,22 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt98c5fdb26a9d6d01/669a8451220787d9a293b79f/China(1800)_Rokas_Tenys_Alamy.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-16T17:13:25.383774+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "84415312a0a7",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "Russia's Cold Relic APT Turns One Cloud Breach Into Another",
+   "link": "https://www.darkreading.com/cyberattacks-data-breaches/cold-relic-turns-one-cloud-breach-into-another",
+   "published": "2026-11-18T21:59:46+00:00",
+   "summary": "The Russia-linked threat group is using data stolen from one victim to target others via convincing impersonations and social engineering attacks.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt0cf0a0b934852050/6afe1492ac3412795c5370fe/russia_Skorzewiak_shutterstoc.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-19T02:03:38.515836+00:00",
    "instructions": [],
    "instructions_checked": true
   },
@@ -5331,38 +5340,6 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt3f96ce16a435deca/6a3d55be62f12d27e415ed3c/quantum_computer-Peter_Hansen-getty-2214879776.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-13T03:33:34.052269+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "09ebecc42123",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "Japan Pushes Emergency Funding for Cybersecurity as AI-Assisted Breaches Rise",
-   "link": "https://www.darkreading.com/cybersecurity-operations/japan-emergency-funding-cybersecurity-ai-assisted-breaches",
-   "published": "2026-11-12T00:00:00+00:00",
-   "summary": "The package adds public-private cyber responders, an AI-focused team run by the economic ministry, and more leeway to use the government's new active cyber-defense powers.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltc3d52fd595b74813/6af39e0cb6c48b43d1f3dedb/musashi-kojiro-attack-defense-statues-GARAGE38-shutterstock.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-12T00:35:50.563973+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "b8f3cb130e06",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "AIを活用したサイバー攻撃の増加を受け、日本がサイバーセキュリティへの緊急資金拠出を推進",
-   "link": "https://www.darkreading.com/cybersecurity-operations/japan-emergency-funding-cybersecurity-ai-assisted-breaches-japanese",
-   "published": "2026-11-11T22:14:44+00:00",
-   "summary": "この対策パッケージには、官民合同のサイバー対応チーム、経済省が主導するAI専門チーム、および政府の新たな能動的サイバー防衛権限の行使に関する裁量の拡大が含まれている。",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltc3d52fd595b74813/6af39e0cb6c48b43d1f3dedb/musashi-kojiro-attack-defense-statues-GARAGE38-shutterstock.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-12T22:46:50.252554+00:00",
    "instructions": [],
    "instructions_checked": true
   },
@@ -5443,22 +5420,6 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt850556f866500627/654a5a8e05eb4d040a046894/325351_DR23_Graphics_General_Large_Text_v1.png?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-18T20:45:42.433362+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "d9fc7bca781a",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "Chinese AI Project Scouts Spies in Taiwan Chip Industry",
-   "link": "https://www.darkreading.com/threat-intelligence/chinese-ai-project-scouts-spies-taiwan-chip-industry",
-   "published": "2026-11-12T01:00:00+00:00",
-   "summary": "The CCP built a Big Data system to scrape reams of information and learn about individuals abroad, to potentially target and exploit them. Think Alice Huang Lite.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt6aad3115d0b39df8/6af3b700f317a18a4957378c/Jinan_University-TkKurikawa-Getty.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-12T01:58:41.434614+00:00",
    "instructions": [],
    "instructions_checked": true
   },
@@ -6387,11 +6348,12 @@
    "link": "https://www.securityweek.com/last-of-five-defendants-sentenced-in-us-scattered-spider-hacking-case/",
    "published": "2026-11-18T13:19:32+00:00",
    "summary": "British national Tyler Robert Buchanan has been sentenced to 6 years in prison in the United States, the DOJ announced. The post Last of Five Defendants Sentenced in US Scattered Spider Hacking Case appeared first on SecurityWeek.",
-   "image": null,
+   "image": "https://www.securityweek.com/wp-content/uploads/2024/03/hacker-prison-sentenced.jpeg",
    "cves": [],
    "first_seen": "2026-11-18T20:45:42.433362+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "e4df5d0ce341",

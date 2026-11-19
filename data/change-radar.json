@@ -1,6 +1,55 @@
 {
  "items": [
   {
+   "id": "0ec404015617",
+   "title": "Microsoft Purview: Information Protection-Sensitivity label inheritance for Teams meeting artifacts",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=581739",
+   "summary": "Teams meeting artifacts, including recordings, transcripts, and Loop notes, can now be configured to automatically inherit the sensitivity label from the meeting. This ensures content generated during meetings is consistently protected without requiring manual labeling, reducing risk and simplifying protection at…",
+   "published": "2026-11-19T00:35:27+00:00",
+   "products": [
+    "Teams",
+    "Purview"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "e2bddeda0612",
+   "title": "Microsoft Teams: Focus on the conversation while Facilitator in Teams mobile takes the notes, now with speaker attribution",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=579864",
+   "summary": "Use Facilitator in Teams mobile to turn in-person conversations into useful notes and follow-ups with speaker attribution. Start note-taking from your phone and let Facilitator capture and transcribe the ad hoc discussion, with speaker attribution helping distinguish who said what. Facilitator uses the conversation to…",
+   "published": "2026-11-19T00:35:27+00:00",
+   "products": [
+    "Teams"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "b6f863c90dfe",
+   "title": "Dynamics 365 Contact Center: Bullseye routing with dynamic user groups and skill relaxation",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577885",
+   "summary": "Bullseye routing now supports dynamic user groups and skill relaxation. Administrators can define dynamic groups using representatives’ skills and proficiency levels, and use them at different expansion levels. If work remains unassigned, required skills can be progressively relaxed to broaden the eligible…",
+   "published": "2026-11-19T00:35:27+00:00",
+   "products": [
+    "Microsoft 365"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "4b07f90b273b",
+   "title": "Microsoft Contact Center Intelligence: D365 Contact Center Admin Center users can create CCI agents",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=575277",
+   "summary": "Use the customer conversation harness agent builder to create, test, and refine AI-powered customer service agents. Accelerate agent development with built-in tools for conversation design, orchestration, evaluation, and deployment across customer engagement channels. GA date: November CY2026 Preview date: October…",
+   "published": "2026-11-19T00:35:27+00:00",
+   "products": [
+    "Microsoft 365"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
    "id": "564dfc80794a",
    "title": "Planner: Sprints and backlogs in unified plans",
    "link": "https://www.microsoft.com/microsoft-365/roadmap?id=581629",
@@ -169,47 +218,11 @@
    "feature_id": null
   },
   {
-   "id": "cd8405268019",
-   "title": "Dynamics 365 Contact Center: Use after conversation presence status for wrap-up activities",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577396",
-   "summary": "After conversation work presence is a system-generated status that's automatically set when a customer service representative is finishing tasks after a customer interaction, such as writing notes, updating records, selecting dispositions, or completing follow-up actions. Instead of showing the representative as Busy…",
-   "published": "2026-11-17T22:45:29+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "010c256ad36b",
-   "title": "Dynamics 365 Project Operations: Enhance intercompany invoicing filters and details",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=576292",
-   "summary": "This feature contains several related enhancements. New functionality includes: • When you create project intercompany customer invoices, you can choose Both, Invoices, or Credit notes to control whether charges and credits are processed together or separately. • Transaction date and transaction balance criteria help…",
-   "published": "2026-11-17T22:45:29+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "50cf2e3e123f",
-   "title": "Microsoft Contact Center Intelligence: connecting to Genesys.",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=575279",
-   "summary": "Microsoft now supports out-of-the-box integration with Genesys Cloud through the publicly available connectors and APIs exposed by Genesys. Customers can quickly connect Microsoft AI-powered voice and chat experiences to their existing Genesys environment without custom integration work. This streamlined approach…",
-   "published": "2026-11-17T20:22:25+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "29926a330b2b",
-   "title": "Dynamics 365 Sales: Plan accounts from Microsoft 365 Copilot Cowork with Sales Research Agent",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=580440",
-   "summary": "Sellers can draft, review, and work their Dynamics 365 Sales account plans from Cowork. Sales Research Agent brings the same account-planning experience - objectives, targets, actions, and gaps grounded in CRM data - into the place sellers already work, and changes are saved to the plan in Dynamics 365 Sales. GA date…",
-   "published": "2026-11-17T20:22:13+00:00",
+   "id": "855edc15e69c",
+   "title": "Microsoft Copilot (Microsoft 365): Copilot Workspaces updates",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=579889",
+   "summary": "With new Copilot Workspaces updates, Work IQ can suggest relevant workspaces based on current workstreams to help people get started quickly. Once in a workspace, team members can work together on shared documents while Copilot connects the dots across the work, surfacing what changed, what remains unresolved, and…",
+   "published": "2026-11-17T18:36:41+00:00",
    "products": [
     "Copilot"
    ],
@@ -217,265 +230,260 @@
    "feature_id": null
   },
   {
-   "id": "f3e206770ad5",
-   "title": "Dynamics 365 Sales: Plan your sales portfolio with Sales Research Agent",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=580438",
-   "summary": "Portfolio planning is an AI-first capability in Sales Research Agent that turns CRM data, lakehouse signals (such as budgets, targets, usage, billing, and adoption), and web context into a continuously updated plan across accounts, segments, and partners. What's new You can run scenario-driven planning for the most…",
-   "published": "2026-11-17T20:22:13+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "8dcd36cc4ab3",
-   "title": "Dynamics 365 Sales: Create custom blueprints in Sales Research Agent",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=580437",
-   "summary": "Blueprint Builder lets makers define a reusable, AI-driven planning experience in Sales Research Agent - the starter prompt, sections, data sources, narratives, and visualizations - and save it as a custom blueprint that runs across every account, portfolio, and territory. What's new Author a blueprint as an ordered…",
-   "published": "2026-11-17T20:22:13+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "bbb50803fe45",
-   "title": "Dynamics 365 Sales: Build business functions for Sales Research Agent",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=580436",
-   "summary": "A business function gives Sales Research Agent the context and instructions it needs for a specific use case, such as account planning, territory planning, pipeline review, or engagement analysis. Business Function Builder creates that configuration from your data, schema metadata, and optional reference content, so…",
-   "published": "2026-11-17T20:22:13+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "433585e29f3f",
-   "title": "Dynamics 365 Sales: Plan Accounts with Sales Research Agent",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=580434",
-   "summary": "Account planning gives sellers one place in Dynamics 365 Sales to decide what they want to achieve with an account, how they'll get there, and how they're tracking against it. The plan lives next to the account, reads live from CRM data, and moves through review and approval before it becomes the active plan for the…",
-   "published": "2026-11-17T20:22:13+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "e239c0c59387",
-   "title": "Microsoft Contact Center Intelligence: usage-based billing for agents and features",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=575276",
-   "summary": "Microsoft Contact Center Intelligence uses consumption-based billing for AI-powered interactions. Usage generated by voice and digital agents is metered and billed based on actual consumption, including AI model processing, tool usage, orchestration, and related AI services. Usage is attributed to your organization…",
-   "published": "2026-11-17T20:22:13+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "c08fb0edc8c6",
-   "title": "Work IQ: Dynamic skills",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=570869",
-   "summary": "Enable agents to select and use the most relevant skills dynamically for each request. GA date: November CY2026 Preview date: October CY2026",
-   "published": "2026-11-17T20:22:13+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "a76f3c4cbf37",
-   "title": "Dynamics 365 Project Operations: Enable handling of multiple eliminations in investment projects",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=580872",
-   "summary": "When you enable the Enable Handling of Multiple Eliminations in Investment Projects setting, you activate this feature. Multiple eliminations: The system lets you configure project groups to allow you to eliminate the investment project multiple times when required. It helps acquire multiple assets for an investment…",
-   "published": "2026-11-17T19:53:11+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "a260a0cbefe7",
-   "title": "Dynamics 365 Sales: Plan and rebalance territories with Sales Research Agent",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=580439",
-   "summary": "Territory planning in Sales Research Agent helps sales leaders and sales operations decide where to focus coverage. It combines CRM pipeline and activity with signals such as targets, account potential, and capacity to show how each territory is performing and where to rebalance. What's new See territory performance…",
-   "published": "2026-11-17T19:53:11+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "0d5ec0b21a37",
-   "title": "Work IQ: Granular MCP policies",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=570671",
-   "summary": "Provide granular policies that restrict MCP access to trusted platforms, workloads, and supported operations. GA date: January CY2027 Preview date: November CY2026",
-   "published": "2026-11-17T19:53:11+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "7ac2bd37f816",
-   "title": "Power Apps: Start SharePoint-connected canvas apps with a modern, responsive template (preview)",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=580458",
-   "summary": "During public preview in early-release environments, the updated SharePoint/Microsoft Lists app-from-data experience gives makers responsive record browsing with grid and list views, plus separate screens for creating and editing records. It creates a standalone canvas app, not an embedded SharePoint customized form…",
-   "published": "2026-11-17T19:37:19+00:00",
-   "products": [
-    "SharePoint"
-   ],
-   "stage": "Preview",
-   "feature_id": null
-  },
-  {
-   "id": "f6e1f3f498d6",
-   "title": "Dynamics 365 Commerce: Payments-as-a-Service for Dynamics 365",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577896",
-   "summary": "This feature provides a shared payment service on Microsoft Dataverse that organisations can integrate into Dynamics 365 business workflows. Scenarios include collecting payments for invoices, sales orders, and work orders in supported applications. Applications can use common payment APIs to authorize, capture, void…",
-   "published": "2026-11-17T19:37:19+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "e11c0b7e33aa",
-   "title": "Dynamics 365 Contact Center: Biometric authentication and fraud detection",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=575281",
-   "summary": "Together, voice biometric authentication and fraud detection deliver business value by reducing fraud and agent operating costs in contact centers (note: these two capabilities can be used independently or together). Voice biometric authentication allows organisations to authenticate callers from their voice during…",
-   "published": "2026-11-17T19:37:19+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "8d4787ad49d9",
-   "title": "Dynamics 365 Project Operations: Track task- and project-level staffing as a team member",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=580891",
-   "summary": "Team member license holders of Project Operations can now use new views to track project-level staffing (including bookings) and weekly task-level assignments. These views provide real-time visibility into planned work and allow users to break task assignments into subtasks (personal milestones) to better manage…",
-   "published": "2026-11-17T19:05:12+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "3b541f347d7f",
-   "title": "Power Apps: Create responsive, multi-column forms for SharePoint lists (preview)",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=580457",
-   "summary": "The public preview of SharePoint Customize Forms introduces a responsive, multi-column starting layout for new forms in eligible commercial SharePoint tenants. Makers can customize these forms while preserving their connection to SharePoint list actions. Existing customized forms retain their current layouts. More…",
-   "published": "2026-11-17T19:05:12+00:00",
-   "products": [
-    "SharePoint"
-   ],
-   "stage": "Preview",
-   "feature_id": null
-  },
-  {
-   "id": "7b54d080e1b6",
-   "title": "Power Apps: New canvas controls - Card gallery, Persona, Avatar group, and Metrics card",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=580456",
-   "summary": "The following controls for canvas apps are reaching general availability: • Card gallery • Persona • Avatar group • Metrics card These controls provide reusable patterns for responsive record cards, individual and grouped identities, and key metrics. Makers supply data, presence values, and metric calculations through…",
-   "published": "2026-11-17T19:05:12+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": "Generally available",
-   "feature_id": null
-  },
-  {
-   "id": "8fc5812a154f",
-   "title": "Power Apps: Browse data with automatic loading and numbered pages in Data Grid",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=580454",
-   "summary": "Makers can configure the modern Data Grid in canvas apps to load more records automatically as users scroll or display numbered pages with a configurable page size. Existing apps retain their current behavior unless makers enable pagination. Connector and formula delegation limits still apply. More info…",
-   "published": "2026-11-17T19:05:12+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "ded9229a03ae",
-   "title": "Microsoft Purview: Information Protection - Improved sensitive information types",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=579195",
-   "summary": "Improved Microsoft out-of-the-box sensitive information types (SITs) to identify sensitive data more precisely and reliably. GA date: March CY2027 Preview date: January CY2027",
-   "published": "2026-11-17T19:05:12+00:00",
-   "products": [
-    "Purview"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "fbda3e24b711",
-   "title": "Microsoft Purview: recurring classifier refresh",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=579194",
-   "summary": "Evolve On-Demand Classification into recurring classification refreshes that help keep existing content classification current as data and context change. GA date: April CY2027 Preview date: February CY2027",
-   "published": "2026-11-17T19:05:12+00:00",
-   "products": [
-    "Purview"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "76f4c995de67",
-   "title": "Microsoft Purview: Endpoint Data Loss Prevention-Protect sensitive data across agent-to-human and agent-to-tool interactions with expanded DLP controls across local agents",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577862",
-   "summary": "Microsoft Purview Data Loss Prevention (DLP) now expands inline protection to supported local AI agents, helping safeguard sensitive data across human-to-agent and agent-to-tool interactions. Organizations can apply DLP policies to prompts, files, and tool interactions to block policy-violating data movement at…",
-   "published": "2026-11-17T19:05:12+00:00",
-   "products": [
-    "Purview"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "db76fdd61b36",
-   "title": "Microsoft Viva: Interactive Insights in the A365 Business Analytics app",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577181",
-   "summary": "Interactive Insights is an AI-powered feature in A365 Business Analytics that lets users ask natural-language questions to explore AI adoption, engagement and consumption data. It produces summaries, visualizations and reports that breakout patterns, highlight trends, explain usage and cost drivers, and support…",
-   "published": "2026-11-17T19:05:12+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "32cb0784df8b",
-   "title": "Dynamics 365 Customer Service: Dynamics 365 Activate - CRM Migrate",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=581155",
-   "summary": "Dynamics 365 Activate - CRM Migrate, is an AI-powered migration solution that simplifies and accelerates the transition from legacy CRMs (currently supporting migrations from Salesforce) to Microsoft Dynamics 365. It helps organizations assess their existing legacy CRM environments, understand data structures and…",
-   "published": "2026-11-17T18:36:41+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "143c4bbc52a8",
-   "title": "Dynamics 365 Project Operations: Availability aware sales estimation",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=580888",
-   "summary": "Sales and account teams can now see whether delivery capacity is available while they build project quote estimates. They can spot staffing shortfalls before the deal closes, which helps them make delivery commitments they can meet, avoid staffing conflicts after the award and line up sales with delivery earlier…",
-   "published": "2026-11-17T18:36:41+00:00",
+   "id": "b9c8a9ceea21",
+   "title": "Microsoft Teams: Facilitator follow-up mode",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=566523",
+   "summary": "Chat naturally with Facilitator without tagging it each time. GA date: January CY2027",
+   "published": "2026-11-06T23:04:41+00:00",
    "products": [
     "Teams"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "73348aa1de42",
+   "title": "Microsoft Teams: Workflow to automatically add tag members to relevant channels",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577174",
+   "summary": "Associate channels with a tag so members are automatically added to those channels when they join the tag. This helps teams keep channel membership in sync with evolving groups, reduces manual management, and ensures members have access to the conversations and content most relevant to their role. GA date: March…",
+   "published": "2026-10-26T23:15:50+00:00",
+   "products": [
+    "Teams"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "e246021bb0e3",
+   "title": "Microsoft Teams: Enhanced Copilot and AI controls for meetings",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577399",
+   "summary": "Teams Meetings offer enhanced AI controls for Copilot and AI experiences. Organizers manage who can enable and access AI, while IT admins get a simpler policy model for governing AI across meetings and post-meeting experiences. These updates provide more predictable administration and greater flexibility for…",
+   "published": "2026-10-22T22:58:40+00:00",
+   "products": [
+    "Teams",
+    "Copilot"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "f6f20f62387c",
+   "title": "Microsoft 365: [Education] Provide a Copilot starter prompt in Teams and LMS Assignments",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577173",
+   "summary": "Educators can provide a Copilot starter prompt from Student AI Guidelines in Teams and LMS Assignments. Students open Copilot with the educator's prompt ready in their chat, helping them begin with instructions tailored to the assignment. GA date: November CY2026 Preview date: October CY2026",
+   "published": "2026-10-22T22:58:40+00:00",
+   "products": [
+    "Teams",
+    "Copilot"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "39068dfdbaec",
+   "title": "Microsoft 365: [Education] Assign Study and Learn in Teams and LMS Assignments",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577172",
+   "summary": "Educators can assign Study and Learn from Student AI Guidelines in Teams and LMS Assignments. Students open guided learning support grounded in the assignment's title, instructions, and supported files and resources, helping them work through concepts and practice their understanding. GA date: November CY2026 Preview…",
+   "published": "2026-10-22T22:58:40+00:00",
+   "products": [
+    "Teams"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "d9c9b4ccd96c",
+   "title": "Microsoft Purview: Introducing IRM Alert classification",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=576710",
+   "summary": "Insider risk management will be introducing the ability to classify alerts as True positive, Benign (operational), and False positive. This will be available on all alerts where authorized analysts with the appropriate permissions can choose from a list of predefined classification reasons. Alert classification will…",
+   "published": "2026-10-22T22:58:40+00:00",
+   "products": [
+    "Purview"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "a9e9a59bcfd4",
+   "title": "Microsoft Teams: AI Interpreter for Teams Events",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=576711",
+   "summary": "AI Interpreter for Events brings real-time, AI-powered audio interpretation to Teams Town Halls and Webinars, helping global audiences follow events in their preferred language. Organizers can configure supported languages for their event, giving attendees a more natural and engaging multilingual experience beyond…",
+   "published": "2026-10-19T23:15:15+00:00",
+   "products": [
+    "Teams"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "d0805548f09b",
+   "title": "Dynamics 365 Sales: Seller experiences - Copy opportunities for repeat deals",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=576806",
+   "summary": "Administrators can control whether the Copy Opportunity feature is available. When enabled, sellers can duplicate an existing opportunity to quickly create a new one. The new opportunity retains key customer, deal, product, stakeholder, and custom-field information from the source opportunity, including hidden custom…",
+   "published": "2026-10-16T19:09:18+00:00",
+   "products": [
+    "Microsoft 365"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "16c7a5b74439",
+   "title": "Dynamics 365 Sales: Seller experiences - Streamline Quick Campaigns for confident, one-time bulk email outreach",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=576745",
+   "summary": "Quick Campaigns support multiple bulk activity types (email, tasks, appointments, phone calls). This release focuses on improving the end-to-end experience for bulk email creation, with foundational improvements that benefit the overall Quick Campaigns flow. Key capabilities include: Streamlined quick campaign flow…",
+   "published": "2026-10-16T19:08:29+00:00",
+   "products": [
+    "Microsoft 365"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "cf9fd1b920f4",
+   "title": "Microsoft Teams: External presenter support for event group chat",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=573706",
+   "summary": "Event group chat, the private chat for organizers, co-organizers, and presenters in an event or structured meeting, will support external presenters. GA date: March CY2027",
+   "published": "2026-10-08T23:04:12+00:00",
+   "products": [
+    "Teams"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "9af3bd9d0c09",
+   "title": "Microsoft Teams: Onboarding workflow for new team members",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=573452",
+   "summary": "Help people get started faster by automatically connecting new team members to relevant channels when they join a team. Improve engagement, accelerate onboarding, and make it easier to discover important information from day one. GA date: March CY2027 Preview date: November CY2026",
+   "published": "2026-10-02T22:01:21+00:00",
+   "products": [
+    "Teams"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "cf83602840d7",
+   "title": "Microsoft Teams: Third-party synthetic audio and video detection in Microsoft Teams",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=573451",
+   "summary": "Organizations can enhance meeting security with synthetic audio and video detection solutions provided by certified third-party providers. Third-party detection solutions analyze meeting media for signs of synthetic or manipulated audio and video and send detection signals to Teams, enabling integrated in-meeting…",
+   "published": "2026-10-02T22:01:21+00:00",
+   "products": [
+    "Teams"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "e495e4bce3fd",
+   "title": "Microsoft Teams: Pop out sign language interpreter meeting video for continuous visibility",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=571387",
+   "summary": "Keep communication more accessible throughout your meeting. You can now pop out a sign language interpreter into a separate, resizable window that stays visible across monitors and apps. Designed to support Deaf and Hard of Hearing users, the sign language interpreter's popout video will persist while viewers are…",
+   "published": "2026-09-18T22:00:04+00:00",
+   "products": [
+    "Teams"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "0c1e42decbf3",
+   "title": "Microsoft Viva: Campaigns Hub in Engage and Engage in Teams mobile",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=570157",
+   "summary": "The Campaigns Hub in Viva Engage provides a centralized mobile destination where employees can discover and participate in organizational campaigns. Available in the Viva Engage app and Viva Engage in Teams mobile, the hub highlights top and sponsored campaigns, enables users to browse active and completed campaigns…",
+   "published": "2026-08-27T22:38:48+00:00",
+   "products": [
+    "Teams"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "f14704df2282",
+   "title": "Microsoft Viva: Campaigns in SharePoint",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=568073",
+   "summary": "Campaigns in SharePoint (site campaigns) is a new capability that brings Viva Amplify’ s campaign management natively into SharePoint. Corporate communications teams now have a unified place to create, distribute, and measure their news without leaving the platform where their news content already lives. This feature…",
+   "published": "2026-07-23T23:27:16+00:00",
+   "products": [
+    "Teams",
+    "SharePoint"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "6ae7e90a0f3b",
+   "title": "Microsoft Purview: Data Loss Prevention - Data Security for non-Microsoft connected apps",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=568075",
+   "summary": "Microsoft Purview Data Loss Prevention and Information Protection Auto-labeling capabilities now extend to non-Microsoft connected apps (e.g., Google Workspace, Box, Dropbox, Salesforce, ServiceNow, Amazon Web Services, and Cisco Webex). The conditions and actions supported for each of these applications vary. GA…",
+   "published": "2026-07-21T22:37:32+00:00",
+   "products": [
+    "Purview"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "56ac319dfb54",
+   "title": "Microsoft Teams: Emoji shortcuts with autocomplete on mobile",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=565370",
+   "summary": "Teams brings desktop-style emoji shortcuts to mobile (iOS and Android), allowing you to insert emojis by typing colon-based commands like:smile:. Real-time autocomplete suggestions help you quickly find the right emoji as you type, while support for custom emojis enables more personalized and expressive communication…",
+   "published": "2026-06-10T23:00:02+00:00",
+   "products": [
+    "Teams"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "545c8c085d6e",
+   "title": "Microsoft Copilot (Microsoft 365): Copilot in SharePoint",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=501451",
+   "summary": "Simplifies SharePoint content management and ensures content is Copilot-ready by automating metadata, fixing stale content, enabling fast page creation, improving compliance, and enriching content so Copilot can deliver more accurate, grounded answers. Updated April 16: We are still in development for GA and have…",
+   "published": "2025-09-18T16:15:27+00:00",
+   "products": [
+    "SharePoint",
+    "Copilot"
+   ],
+   "stage": "In development",
+   "feature_id": null
+  },
+  {
+   "id": "36291bd2dba9",
+   "title": "Microsoft 365: Create full-workload backup policies for Microsoft 365 Backup",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=464990",
+   "summary": "Automatically backup all Exchange or OneDrive users and/or SharePoint sites in the tenant and have the tool automatically add new users/sites to the backup policy. GA date: January CY2027 Preview date: July CY2026",
+   "published": "2024-10-29T23:15:28+00:00",
+   "products": [
+    "Exchange",
+    "SharePoint",
+    "OneDrive"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "ca3f3b4fc51d",
+   "title": "Microsoft Edge: Writing Assistance with Copilot in Edge is being upgraded to include enterprise data protection compliance standards",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=420335",
+   "summary": "Writing Assistance with Copilot in Edge, which lets users edit typed text for tone, format, and length within an open page in Microsoft Edge, is being updated to include enterprise data protection for commercial customers. Once Writing Assistance is available, users signed in with a Microsoft Entra ID will have…",
+   "published": "2024-10-03T23:30:37+00:00",
+   "products": [
+    "Entra",
+    "Copilot"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "daadd7ad5466",
+   "title": "Microsoft Viva: Search in Viva Connections on iOS and Android tablet",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=382643",
+   "summary": "This adds a search entry point and a new tailored experience for Viva Connection users on iOS and Android tablets. GA date: April CY2024",
+   "published": "2024-02-14T00:45:01+00:00",
+   "products": [
+    "Microsoft 365"
    ],
    "stage": null,
    "feature_id": null

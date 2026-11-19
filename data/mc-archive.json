@@ -1,6 +1,48 @@
 {
  "items": [
   {
+   "id": "6ae7ceac90af",
+   "title": "MC1528011: Microsoft Teams: External presenter support for event group chat",
+   "link": "https://mc.merill.net/message/MC1528011",
+   "summary": "Microsoft Teams will support external presenters in event group chat starting late March 2027. This allows external presenters to join and coordinate in event chats if \"Enable Green room\" and external collaboration are enabled. The change introduces cross-tenant chat without storing new customer data.",
+   "published": "2026-11-18T18:57:04+00:00"
+  },
+  {
+   "id": "9194f67c4d03",
+   "title": "MC1488488: Microsoft Dataverse - Bulk generate prompt column values for existing records (backfill)",
+   "link": "https://mc.merill.net/message/MC1488488",
+   "summary": "We are introducing bulk generation of prompt column values for existing Dataverse records. Now, you can have AI-generated values across existing data without requiring record updates to trigger execution. This feature will reach general availability on November 16, 2026. How does this affect me? When selected, this…",
+   "published": "2026-11-18T18:01:05+00:00"
+  },
+  {
+   "id": "7f0eae5f3d20",
+   "title": "MC1449180: Microsoft Purview: Data Loss Prevention and auto-labeling support for non-Microsoft applications",
+   "link": "https://mc.merill.net/message/MC1449180",
+   "summary": "Microsoft Purview will support Data Loss Prevention and auto-labeling for non-Microsoft apps like Google Workspace, Box, and Salesforce via Microsoft Defender for Cloud Apps connectors. Administrators can manage policies directly in Purview starting mid-March 2027, expanding compliance and data protection capabilities.",
+   "published": "2026-11-18T17:31:36+00:00"
+  },
+  {
+   "id": "1762c213bd05",
+   "title": "MC1486291: Microsoft 365 Copilot: new guided Copilot onboarding experience",
+   "link": "https://mc.merill.net/message/MC1486291",
+   "summary": "Microsoft 365 Copilot introduces an optional, admin-led guided onboarding experience for Frontier participants, rolling out late October to November 2026. It personalizes training based on user roles and licenses, requires admin enablement, and supports reporting via Viva Learning to boost adoption and confidence.",
+   "published": "2026-11-18T17:18:44+00:00"
+  },
+  {
+   "id": "6077b445eef8",
+   "title": "MC1519871: Copilot Code is rolling out in Frontier",
+   "link": "https://mc.merill.net/message/MC1519871",
+   "summary": "Copilot Code is expanding in the Frontier program to mobile (iOS/Android) and Mac, with local Sandbox on Windows for secure local execution. It supports GitHub Copilot CLI sign-in via Microsoft 365 accounts. Admins control access via licenses, spending policies, and execution location settings. Usage-based billing…",
+   "published": "2026-11-18T17:11:58+00:00"
+  },
+  {
+   "id": "9374bbc89a89",
+   "title": "MC1556088: Microsoft Teams: End of support for iOS 17 and iPadOS 17",
+   "link": "https://mc.merill.net/message/MC1556088",
+   "summary": "Microsoft Teams will end support for iOS 17 and iPadOS 17 starting mid-December 2026, requiring iOS/iPadOS 18 or later for new releases. Existing versions will keep working without support. Organizations should notify users, encourage OS upgrades, update policies, and revise support documentation accordingly.",
+   "published": "2026-11-18T15:58:01+00:00"
+  },
+  {
    "id": "558ba6791582",
    "title": "MC1558817: Dataverse - Dataverse Data Available in Agent Builder Declarative Agents",
    "link": "https://mc.merill.net/message/MC1558817",
@@ -104,13 +146,6 @@
    "link": "https://mc.merill.net/message/MC1392563",
    "summary": "OneDrive is transitioning its URLs from contoso-my.sharepoint.com to onedrive.cloud.microsoft, starting September 2026 and completing by September 2027. Both domains will coexist indefinitely, with no changes to file access or APIs. Admins should review custom solutions and update documentation; no immediate action is…",
    "published": "2026-11-17T21:51:20+00:00"
-  },
-  {
-   "id": "6077b445eef8",
-   "title": "MC1519871: Copilot Code is rolling out in Frontier",
-   "link": "https://mc.merill.net/message/MC1519871",
-   "summary": "Copilot Code is expanding in the Frontier program to mobile (iOS/Android) and Mac, with local Sandbox now available on Windows. It supports cloud and optional local coding sessions, usage-based billing, and GitHub Copilot CLI sign-in via Microsoft 365 accounts. Admins must configure licenses, spending policies, and…",
-   "published": "2026-11-17T20:17:06+00:00"
   },
   {
    "id": "5a8239a83f4c",
@@ -344,13 +379,6 @@
    "published": "2026-11-16T22:21:35+00:00"
   },
   {
-   "id": "9374bbc89a89",
-   "title": "MC1556088: Microsoft Teams: End of support for iOS 17 and iPadOS 17",
-   "link": "https://mc.merill.net/message/MC1556088",
-   "summary": "Microsoft Teams will end support for iOS 17 and iPadOS 17 starting mid-December 2026, requiring iOS/iPadOS 18 or later for new releases. Existing versions will keep working without support. Organizations should notify users, encourage OS upgrades, update policies, and revise support documentation accordingly.",
-   "published": "2026-11-16T22:20:58+00:00"
-  },
-  {
    "id": "f7f1fab1da81",
    "title": "MC1556082: Microsoft 365 admin center: Unified release preferences for Standard, Deferred, and Frontier",
    "link": "https://mc.merill.net/message/MC1556082",
@@ -391,34 +419,6 @@
    "link": "https://mc.merill.net/message/MC1449182",
    "summary": "Starting mid-October 2026, newly created Microsoft 365 Copilot Pages and Notebooks will be stored in OneDrive for Business, enabling existing governance, compliance, data protection, retention, and lifecycle management. Existing Copilot content remains unchanged; no user action is required.",
    "published": "2026-11-16T17:10:38+00:00"
-  },
-  {
-   "id": "ffe9ad20912f",
-   "title": "MC1009930: Microsoft Teams: Distinguish invites among Attendee, Presenter, and Co-organizer emails",
-   "link": "https://mc.merill.net/message/MC1009930",
-   "summary": "Microsoft Teams will send separate event invites based on participant roles (Attendee, Presenter, Co-organizer) starting early January 2027, allowing organizers to manage distinct invites for town halls. The rollout is automatic, with no admin action needed, but user notification is recommended.",
-   "published": "2026-11-16T17:06:30+00:00"
-  },
-  {
-   "id": "1471190c0102",
-   "title": "MC1483529: Dynamics 365 and Power Platform– Information about storage validation for Dataverse-only tenants",
-   "link": "https://mc.merill.net/message/MC1483529",
-   "summary": "We plan to introduce staged storage validation for supported Dynamics 365 applications no earlier than January 2027, with finalized rollout timing expected to be shared by early December 2026. This change will give administrators clearer visibility into storage usage and advance notice of potential restrictions. To…",
-   "published": "2026-11-16T13:31:05+00:00"
-  },
-  {
-   "id": "c13e16186c56",
-   "title": "MC1483519: Dynamics 365 and Power Platform– Information about storage validation for Dataverse-only tenants",
-   "link": "https://mc.merill.net/message/MC1483519",
-   "summary": "We plan to introduce staged storage validation for supported Dynamics 365 applications no earlier than January 2027, with finalized rollout timing expected to be shared by early December 2026. This change will give administrators clearer visibility into storage usage and advance notice of potential restrictions. To…",
-   "published": "2026-11-16T13:22:49+00:00"
-  },
-  {
-   "id": "4052c5e5baad",
-   "title": "MC1552365: Dynamics 365 Field Service - Preserve actual booking End Time when completion is recorded later",
-   "link": "https://mc.merill.net/message/MC1552365",
-   "summary": "We are announcing the ability to Preserve actual booking End Time when completion is recorded later in Dynamics 365 Field Service. This feature will reach public preview on November 22, 2026. How does this affect me? This feature allows Field Service administrators to choose whether completion by the booked resource…",
-   "published": "2026-11-14T03:40:17+00:00"
   }
  ]
 }
