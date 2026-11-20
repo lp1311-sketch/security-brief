@@ -151,50 +151,6 @@
    "instructions_checked": true
   },
   {
-   "id": "78b8360a8962",
-   "source": "borncity",
-   "source_name": "Born's IT and Windows Blog",
-   "official": false,
-   "source_type": "news",
-   "title": "Patchday: Windows-Druckerprobleme mit Nov. 2026-Update bestätigt",
-   "link": "https://borncity.com/blog/2026/11/13/patchday-windows-druckerprobleme-mit-nov-2026-update-bestaetigt/",
-   "published": "2026-11-13T06:01:02+00:00",
-   "summary": "Am 10. November 2026 (Patchday) wurden von Microsoft kumulative Updates für die Clients und Serverversionen seiner Windows Betriebssysteme veröffentlicht. Nutzer, die diese Windows Sicherheitsupdates installiert haben, berichten aber von Druckerproblemen. Microsoft hat diese Probleme inzwischen bestätigt. November…",
-   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Windows-klein.jpg",
-   "cves": [],
-   "first_seen": "2026-11-13T06:42:43.760817+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Das kumulative Update KB5132061 für Windows 11 24H2-26H2 beinhaltet Qualitätsverbesserungen aus dem Preview-Update Windows 11 25H2 – 26H2: Preview Update KB5127936 (28.",
-    "November 2026) Windows 11 25H2 – 26H2: Preview Update KB5127936 (28.",
-    "[Printing] Fixed: Adding a printer published in Active Directory through Settings > Bluetooth & devices > Printers & scanners > Add device might fail with error 87, \"The parameter is incorrect.\" This issue was introduced by the October 2026 update and does not generally affect existing printers or printing.",
-    "Das sei seit Installation des November 2026-Update auf Windows Server 2019."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "87c81e4666ca",
-   "source": "borncity",
-   "source_name": "Born's IT and Windows Blog",
-   "official": false,
-   "source_type": "news",
-   "title": "Patchday: Windows Error 0x80070306, 0x800f0989, 0x800f0993 bestätigt (Nov. 2026)",
-   "link": "https://borncity.com/blog/2026/11/13/patchday-windows-error-0x80070306-0x800f0989-0x800f0993-bestaetigt-nov-2026/",
-   "published": "2026-11-13T05:26:54+00:00",
-   "summary": "Am 10. November 2026 (Patchday) wurden von Microsoft kumulative Updates für die Clients und Serverversionen seiner Windows Betriebssysteme veröffentlicht. Diese Sicherheitsupdates für Microsoft Windows führen aber in einigen Fällen bei der Installation zu den Fehlern 0x80070306, 0x800f0989, 0x800f0993, und Microsoft ……",
-   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Windows-klein.jpg",
-   "cves": [],
-   "first_seen": "2026-11-13T05:41:52.314639+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Für das Windows 11 Update KB5132061 findet sich im Known Issues-Abschnitt der Hinweis:",
-    "Es heißt, dass beim Versuch, das Windows-Sicherheitsupdate vom November 2026 zu installieren, verlinkt ist dort aber das Vorschau-Update KB5127936 von Oktober 2026, einige Geräte die Installation möglicherweise nicht abschließen können.",
-    "November 2026) Windows 11 25H2 – 26H2: Preview Update KB5127936 (28.",
-    "Blog-Leser Volker hat es in diesem Kommentar die Fehler 0x800f0993 und 0x80070306 bei der Update-Installation angesprochen und schreibt \"Das Update hängt bei 14% – 17% Installation, dann bricht es ab\"."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "4f5cefaaec55",
    "source": "borncity",
    "source_name": "Born's IT and Windows Blog",
@@ -515,6 +471,55 @@
    "instructions_checked": true
   },
   {
+   "id": "9173cce6ca95",
+   "source": "borncity",
+   "source_name": "Born's IT and Windows Blog",
+   "official": false,
+   "source_type": "news",
+   "title": "Ubiquiti UniFi Access Application mit 5 kritischen Schwachstellen",
+   "link": "https://borncity.com/blog/2026/11/20/ubiquiti-unifi-access-application-mit-5-kritischen-schwachstellen/",
+   "published": "2026-11-19T23:46:28+00:00",
+   "summary": "Kleiner Hinweis für Besitzer und Administratoren von Ubiquiti UniFi Access Application-Instanzen. Es gibt 5 neue, teilweise als kritisch eingestufte Schwachstellen ( CVE-2026-132803, CVE-2026-132804, CVE-2026-132808, CVE-2026-132807), die durch Angreifer ausgenutzt werden. Der Hersteller hat diese in UniFi Access…",
+   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
+   "cves": [
+    "CVE-2026-132803",
+    "CVE-2026-132804",
+    "CVE-2026-132807",
+    "CVE-2026-132808"
+   ],
+   "first_seen": "2026-11-20T08:45:49.404266+00:00",
+   "image_checked": true,
+   "instructions": [
+    "November 2026 das Security Advisory Bulletin 073 dazu veröffentlicht.",
+    "Das Security Advisory Bulletin beschreibt weitere Schwachstellen samt den Details zur Ausnutzung.",
+    "Neueste Kommentare Nico zu PHP-Update 8.x vom 19.11.2026; aber Schwachstellen weiter ausnutzbar?",
+    "Fapsi zu PHP-Update 8.x vom 19.11.2026; aber Schwachstellen weiter ausnutzbar?"
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "ba460e7804cb",
+   "source": "borncity",
+   "source_name": "Born's IT and Windows Blog",
+   "official": false,
+   "source_type": "news",
+   "title": "Windows 11 24H2-26H2: Hotpatch Update KB5132043 löst Error 0xC0000099 aus",
+   "link": "https://borncity.com/blog/2026/11/20/windows-11-24h2-26h2-hotpatch-update-kb5132043-loest-error-0xc0000099-aus/",
+   "published": "2026-11-19T23:07:18+00:00",
+   "summary": "Microsoft hat zum 10. November 2026 das Hotpatch Update KB5132043 für Windows 11 24H2 – 26H2 veröffentlicht. Dürfte nur in Unternehmensumgebungen zum Einsatz kommen. Nun hat Redmond bestätigt, dass dieses Update zu Problemen in Verbindung mit einigen Anwendungen führen kann. … Weiterlesen → Quelle",
+   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Windows-klein.jpg",
+   "cves": [],
+   "first_seen": "2026-11-20T08:45:49.404266+00:00",
+   "image_checked": true,
+   "instructions": [
+    "November 2026 das Hotpatch Update KB5132043 für Windows 11 24H2 – 26H2 veröffentlicht.",
+    "November 2026 hat Microsoft im Administrator-Bereich für IT-Professionals (erfordert eine Anmeldung) dann darauf hingewiesen, dass es unter Windows 11 in den Versionen 24H2 bis 26H2 in Verbindung mit dem Hotpatch Update KB5132043 vom 10.",
+    "Systeme mit Windows 11 24H2 – 26H2, auf denen das Hotpatch-Update KB5132043 vom 10.",
+    "November 2026) Windows 11 25H2 – 26H2: Preview Update KB5127936 (28."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "b5e1ece521f3",
    "source": "google-threat-intel",
    "source_name": "Google Threat Intelligence",
@@ -625,6 +630,44 @@
     "Happily, modern ad blocking software can handily block most third-party JavaScript requests.",
     "Ten years ago, the standard security advice for end users was to install antivirus and enable a firewall."
    ],
+   "instructions_checked": true
+  },
+  {
+   "id": "ca429aa527bf",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "Chromium: CVE-2023-1531 Use after free in ANGLE",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-1531",
+   "published": "2026-11-20T09:05:37+00:00",
+   "summary": "Information published.",
+   "image": null,
+   "cves": [
+    "CVE-2023-1531"
+   ],
+   "first_seen": "2026-11-20T08:45:49.404266+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "c7433b924f3c",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "Chromium: CVE-2024-7533 Use after free in Sharing",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-7532",
+   "published": "2026-11-20T09:06:50+00:00",
+   "summary": "Information published.",
+   "image": null,
+   "cves": [
+    "CVE-2024-7533"
+   ],
+   "first_seen": "2026-11-20T08:45:49.404266+00:00",
+   "image_checked": true,
+   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -1346,7 +1389,8 @@
    ],
    "first_seen": "2026-11-20T01:13:40.105404+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "15ca7dbd84e9",
@@ -1364,7 +1408,8 @@
    ],
    "first_seen": "2026-11-20T01:13:40.105404+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "308133db32ac",
@@ -1380,7 +1425,10 @@
    "cves": [
     "CVE-2026-70007"
    ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00"
+   "first_seen": "2026-11-20T01:13:40.105404+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "9f56e73c0cde",
@@ -1396,7 +1444,10 @@
    "cves": [
     "CVE-2026-70174"
    ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00"
+   "first_seen": "2026-11-20T01:13:40.105404+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "e72d5c760107",
@@ -1412,7 +1463,10 @@
    "cves": [
     "CVE-2026-70197"
    ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00"
+   "first_seen": "2026-11-20T01:13:40.105404+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "53c40b5af5cd",
@@ -1428,7 +1482,10 @@
    "cves": [
     "CVE-2026-70223"
    ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00"
+   "first_seen": "2026-11-20T01:13:40.105404+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "f8bab8d195b5",
@@ -1482,7 +1539,10 @@
    "cves": [
     "CVE-2026-83722"
    ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00"
+   "first_seen": "2026-11-20T01:13:40.105404+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "19b732758cee",
@@ -1498,7 +1558,9 @@
    "cves": [
     "CVE-2026-83753"
    ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00"
+   "first_seen": "2026-11-20T01:13:40.105404+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "d2fc2acba31d",
@@ -1514,7 +1576,9 @@
    "cves": [
     "CVE-2026-83760"
    ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00"
+   "first_seen": "2026-11-20T01:13:40.105404+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "69863ac92790",
@@ -1530,7 +1594,9 @@
    "cves": [
     "CVE-2026-84015"
    ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00"
+   "first_seen": "2026-11-20T01:13:40.105404+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "b299b25eb9a0",
@@ -1546,7 +1612,9 @@
    "cves": [
     "CVE-2026-84016"
    ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00"
+   "first_seen": "2026-11-20T01:13:40.105404+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "87fc79b83ef7",
@@ -1562,7 +1630,9 @@
    "cves": [
     "CVE-2026-84020"
    ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00"
+   "first_seen": "2026-11-20T01:13:40.105404+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "d630bd7fb0e4",
@@ -1578,7 +1648,9 @@
    "cves": [
     "CVE-2026-85794"
    ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00"
+   "first_seen": "2026-11-20T01:13:40.105404+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "7d254293effc",
@@ -1594,7 +1666,9 @@
    "cves": [
     "CVE-2026-85846"
    ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00"
+   "first_seen": "2026-11-20T01:13:40.105404+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "7db79033d356",
@@ -2165,6 +2239,24 @@
    "instructions_checked": true
   },
   {
+   "id": "dc6901c8a6d8",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data",
+   "link": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html",
+   "published": "2026-11-20T06:33:31+00:00",
+   "summary": "The suspected China-nexus cyber espionage group known as Armory Castle (formerly UNC5221) has been attributed to the zero-day exploitation of a critical security flaw in VMware vCenter Server in early September 2026. The vulnerability, tracked as CVE-2026-123890 (CVSS score: 9.8), is a case of authentication bypass in…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTSAI-N-DRII1YA3I98ZVnKnG0SMgm97oEAqyiSXZB23DPwzvTk3figFLsTCKsMJRxRhjKEPFblxfcOuB_UXc_OAXJRiVI07Jxjn-CebJVHiRQ5sc43AifBpUPNfU5-LRD6QEGbX7Vnt_HAmJZiLojS32PtNWwIWeideJZnIpgjrstJ0Iy84lYd47bePk/s1600/chinese-vmware.jpg",
+   "cves": [
+    "CVE-2026-123890"
+   ],
+   "first_seen": "2026-11-20T08:45:49.404266+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "1db641aaef44",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2254,7 +2346,7 @@
    "source_name": "The Hacker News",
    "official": false,
    "source_type": "news",
-   "title": "Critical VMware vCenter Flaw (CVSS 9.8) Lets Network Attackers Bypass Authentication",
+   "title": "Critical VMware vCenter Zero-Day Flaw Lets Network Attackers Bypass Authentication",
    "link": "https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html",
    "published": "2026-11-19T15:11:06+00:00",
    "summary": "A critical flaw in VMware vCenter lets an attacker with network access bypass authentication and gain unauthorized access to the system, Broadcom, which owns VMware, said in an advisory published today. Fixed versions are out for all supported branches, and the company lists no workaround. vCenter is the central…",
@@ -2406,45 +2498,6 @@
    "instructions": [
     "Another key area of misuse revolves around automating labor-intensive tasks like vulnerability analysis and proof-of-concept (POC) weaponization using LLM-driven pipelines, allowing threat actors to collapse the window between patch disclosure and active exploitation.",
     "This includes a Chinese-language phishing platform called Jieyou that has integrated an LLM chatbot assistant to allow customers to configure phishing panels and modify existing templates using natural language commands without necessarily having the technical expertise to do so."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "9e0cc84d062d",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Hackers Exploit N-central Flaws to Infect 21 Servers, Including 19 Running Hotfix 2",
-   "link": "https://thehackernews.com/2026/11/hackers-exploit-n-central-flaws-to.html",
-   "published": "2026-11-13T05:43:28+00:00",
-   "summary": "N-able on Thursday said it's taking additional precautions in the wake of public disclosure of a new set of flaws tracked as 4EverAble2Shell and Agent2Shell. \"We are restricting certain N-central features and integrations,\" the company said in a Thursday update. \"These measures may affect some functionality, but we…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA4jxlXpPBPhD5o3IHy80Fn7fSHUtcqH3iXQlU-jDUL5C3zJcf1_Zb-GAYxuW6P6q647p9JAT_opImlj-v-USDNhZ_z83mYC3ISKtN72pe_3XLwf5EyMRuK4OdXCFnYxGMhOAvN_i4UFqk5vJLriRnkbRRwILuT5JUpExx9Tm74sXSCQ0g7jjsOzWV1cqk/s1600/nable-hacks.jpg",
-   "cves": [],
-   "first_seen": "2026-11-13T06:42:43.760817+00:00",
-   "instructions": [
-    "Hosted customers are also being recommended to follow N-able's previous guidance to upgrade Agents and Probes on N-central version 2026.4 HF1 and above, as the update introduces changes in how the Probe and Agent communicate.",
-    "\"As such, upgrading both Agents and Probes in your N-central server is a MUST to ensure all managed devices are communicating and patched.\"",
-    "\"We are restricting certain N-central features and integrations,\" the company said in a Thursday update.",
-    "On-premises customers are being urged to upgrade Agents and Probes and ensure Legacy API access is disabled in the environment, if it has been previously turned on."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "c0eea237828e",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Hackers Exploit PHP2Shell Flaws in Check Point Gateways to Deploy TSGA Backdoor and Wipe ESXi Files",
-   "link": "https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html",
-   "published": "2026-11-13T08:05:49+00:00",
-   "summary": "An unknown threat actor has been observed targeting unpatched Check Point Security Gateways to obtain initial access via the PHP2Shell vulnerabilities and then a previously unreported local privilege escalation flaw in Gaia OS to deploy a backdoor called TSGA. The activity, detailed by Check Point, began on October…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjP3B9ZQG1BXlSPUWzwVJ5qgwh899Ngm9u2GAbWiX5HDqhhT6q6gsmva9-TR2upR0fepas2i0k53VUxh1CH21LeUUv1Ipczl9huExytcqNdlqIoHP64CRYJuGyHe-OgLoov-JR6GziUT4JDJ92Ne83CshfWn9pr9Bt2HPKkv4phQJ2esJHcV6eZqzRretVu/s1600/php.jpg",
-   "cves": [],
-   "first_seen": "2026-11-13T08:57:41.471516+00:00",
-   "instructions": [
-    "CVE-2026-123039 (CVSS score: 7.8) is a missing authorization flaw that could enable privilege escalation to root in the DynamicCLI process, enabling any authenticated local user to run arbitrary commands by writing a single request to the socket."
    ],
    "instructions_checked": true
   },
@@ -2626,6 +2679,26 @@
     "The bulletin lists EPYC and Ryzen chips, including embedded models, and recommends the company's earlier TSA mitigations plus an EDK II patch when one is available.",
     "AMD tracks Mior as CVE-2026-0462 and rates it 5.9 on the CVSS 4.0 scale in a security advisory .",
     "It tracks Skyfall's VM leak as CVE-2026-40671, rated 4.9, in a second advisory that describes the flaw as exposing VM register data."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "fa700a4eb8ce",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "New Unpatched Windows 0-Day FastUnlock Lets Someone Holding a Locked PC Run Programs on It",
+   "link": "https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html",
+   "published": "2026-11-20T05:30:01+00:00",
+   "summary": "A newly disclosed unpatched zero-day technique called FastUnlock lets someone with physical access to a locked Windows computer start programs without signing in. Whoever uses it gets only a limited account, not administrator control of the machine. The method was posted yesterday by a researcher who uses the handles…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRnUdcazdCteyaE1EC_aLit8CioDaJ5yvsWnawFVWQrJvYFktNRJXlW9MOJLimG_-aS1IZChVHJbjPI4CXjIbNFLjn5W686xynepfC0oWyEG81NX5CxdS-9ayumfRljgy32e2bYXDD72T6VpIFFzeCcPKwG48RDKiZExwNdF-4XDFicISSaaRtT3W2dt0/s1600/windows-lockscreen.jpg",
+   "cves": [],
+   "first_seen": "2026-11-20T08:45:49.404266+00:00",
+   "instructions": [
+    "Until an official fix or advisory appears, watch for one and apply it when it comes.",
+    "Microsoft's countermeasures guidance recommends using a startup PIN, along with shutting down or hibernating machines when faced with determined, hands-on attackers.",
+    "With no patch available, the useful steps are about physical control and startup protection."
    ],
    "instructions_checked": true
   },
@@ -2854,12 +2927,30 @@
    "instructions_checked": true
   },
   {
+   "id": "ba74506a96ac",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "ROMULUS ClickFix Attacks Deliver RAT That Can Spy on Users and Control PCs",
+   "link": "https://thehackernews.com/2026/11/romulus-clickfix-attacks-deliver-rat.html",
+   "published": "2026-11-20T07:11:39+00:00",
+   "summary": "Threat actors have been observed using the ROMULUS ClickFix malware delivery platform to deliver a previously undocumented remote access trojan (RAT) that shares similarities with CNCMachineRMS. \"ROMULUS likely operates as a delivery service, distributing CNCMachineRMS and Legion Loader through separate chains while…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjugg63OPJwZuh94vDIg7MkA4YoeLKr5sjiqI6CEgjvDjUvJ-pBJOfUrUBxPUTbartqVwdldczbKSYo6lpkcVic1EDQYIDyWq12zMdMONjpDtK4NKCgkppAWvnOJpXe7prfmRG8WNpH0RrQ0bhX2nZKGpRy33y0OMZraBjEPoDorp9h3kNJSa-IQrJC7Nl5/s1600/cf.jpg",
+   "cves": [],
+   "first_seen": "2026-11-20T08:45:49.404266+00:00",
+   "instructions": [
+    "Use fake Zillow apartment-review pages that serve a fake verification prompt to install NetSupport RAT on visitors' Windows computers."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "ef3cecb6fd50",
    "source": "thehackernews",
    "source_name": "The Hacker News",
    "official": false,
    "source_type": "news",
-   "title": "Ruby Releases Fixes for 7 Regex and String Flaws, Warns 5 Have Proof-of-Concept RCE",
+   "title": "Ruby Ships Fixes for 7 Flaws, Including Critical Ruby2Shell, Said to Hit Default Rails Apps Pre-Auth",
    "link": "https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html",
    "published": "2026-11-19T08:42:11+00:00",
    "summary": "Ruby contains seven memory-safety flaws in its regular expression engine and its string case-conversion code. For five of them, its maintainers say, proof-of-concept exploits, or PoCs, have shown that crafted input can run code on the machine. \"We are aware of PoCs that prove some of them can be used to trigger remote…",
@@ -4812,26 +4903,6 @@
    "instructions_checked": true
   },
   {
-   "id": "3ff055feac94",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Police arrest 354 suspects in dark web cybercrime crackdown",
-   "link": "https://www.bleepingcomputer.com/news/security/police-arrest-354-vendors-buyers-in-global-cybercrime-crackdown/",
-   "published": "2026-11-13T08:34:20+00:00",
-   "summary": "Authorities arrested 354 suspects in a joint international operation targeting vendors and buyers on the Archetyp, Nemesis, Tor2Door, Bohemia, and Kingdom dark web marketplaces.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/15/Arrest.jpg",
-   "cves": [],
-   "first_seen": "2026-11-13T08:57:41.471516+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day",
-    "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "a2076d4177b9",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -6324,25 +6395,6 @@
    "instructions_checked": true
   },
   {
-   "id": "589fccee67c2",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "FBI Says US Seized $1.2 Billion Worth of Cryptocurrency Stolen From Binance",
-   "link": "https://www.securityweek.com/fbi-says-us-seized-1-2-billion-worth-of-cryptocurrency-stolen-from-binance/",
-   "published": "2026-11-13T02:28:21+00:00",
-   "summary": "Also Thursday, the FBI blamed North Korea for a separate social engineering scheme that officials say resulted in the theft of $400 million worth of cryptocurrency. The post FBI Says US Seized $1.2 Billion Worth of Cryptocurrency Stolen From Binance appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/10/Binance-hacked.jpeg",
-   "cves": [],
-   "first_seen": "2026-11-13T03:33:34.052269+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "eea617c7ce17",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -6379,26 +6431,6 @@
     "The advisory has not been revised since its initial release and still states that Cisco is unaware of public announcements or malicious use of the flaw.",
     "Java4Shell Exploitation Attempts Begin as Vendors Rush Out Advisories",
     "SecurityWeek has reached out to Cisco for comment on F6’s findings and will update this article if the company responds."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "f1ba5df7cf65",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Hackers Exploit New N-central Zero-Day Hours After PoC Publication",
-   "link": "https://www.securityweek.com/hackers-exploit-new-n-central-zero-day-hours-after-poc-publication/",
-   "published": "2026-11-13T07:20:50+00:00",
-   "summary": "Dubbed 4EverAble2Shell, the flaw could allow remote, unauthenticated attackers to execute code with root privileges. The post Hackers Exploit New N-central Zero-Day Hours After PoC Publication appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/06/vulnerability-software-bug.webp",
-   "cves": [],
-   "first_seen": "2026-11-13T07:58:41.712624+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Citrix, Ivanti Patch Critical and High-Severity Vulnerabilities",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
   },
@@ -6509,6 +6541,25 @@
     "Oracle’s advisory gives it a CVSS 3.1 score of 8.1 and lists it as remotely exploitable without authentication, but with high attack complexity.",
     "The agency also advises hunting for Java installations embedded in third-party software, containers and appliances, warning that these may not be listed separately in asset inventories.",
     "The proof-of-concept (PoC) code published by Calif demonstrates the memory corruption but does not achieve code execution. “The weaponized chains for individual products stay private until everyone has had a chance to upgrade."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "009f6643a854",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "JPMorgan, Visa, Mastercard Cite Third-Party Incidents Amid Data Leak",
+   "link": "https://www.securityweek.com/jpmorgan-visa-mastercard-cite-third-party-incidents-amid-data-leak/",
+   "published": "2026-11-20T07:35:46+00:00",
+   "summary": "The companies point to third-party providers after the N0n extortion group leaked data allegedly tied to their customers. The post JPMorgan, Visa, Mastercard Cite Third-Party Incidents Amid Data Leak appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/11/visa-mastercard.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-20T08:45:49.404266+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Java4Shell Exploitation Attempts Begin as Vendors Rush Out Advisories"
    ],
    "instructions_checked": true
   },
@@ -6943,28 +6994,6 @@
    "instructions": [
     "Session upload progress must also still be enabled,” PHP said last month.",
     "Java4Shell Exploitation Attempts Begin as Vendors Rush Out Advisories"
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "d9f7469060c3",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "PHP2Shell Exploited in Destructive Check Point Gateway Attacks",
-   "link": "https://www.securityweek.com/php2shell-exploited-in-destructive-check-point-gateway-attacks/",
-   "published": "2026-11-13T07:39:04+00:00",
-   "summary": "PHP2Shell enabled initial compromise, while CVE-2026-123039 allowed attackers to elevate privileges to root. The post PHP2Shell Exploited in Destructive Check Point Gateway Attacks appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2024/08/Check-Point-Software.jpg",
-   "cves": [
-    "CVE-2026-123039"
-   ],
-   "first_seen": "2026-11-13T07:58:41.712624+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Citrix, Ivanti Patch Critical and High-Severity Vulnerabilities",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
   },

@@ -1,6 +1,90 @@
 {
  "items": [
   {
+   "id": "0b665ed06aec",
+   "title": "MC1560996: Copilot Studio - Create Dataverse agent users with Microsoft Entra agent 's user account",
+   "link": "https://mc.merill.net/message/MC1560996",
+   "summary": "We are announcing the ability to create Dataverse agent users with Microsoft Entra agent's user account in Copilot Studio. This feature will reach general availability on December 8th, 2026. How does this affect me? This feature enables you to securely deploy agents to access and interact with Dataverse data by using…",
+   "published": "2026-11-20T01:57:14+00:00"
+  },
+  {
+   "id": "c61b92c36100",
+   "title": "MC1560951: Low-latency alerts and metrics in Monitor",
+   "link": "https://mc.merill.net/message/MC1560951",
+   "summary": "We are announcing the ability to evaluate alert rules and review supported metrics for business-critical resources every hour in Monitor, helping admins identify potential issues sooner. This feature will enter public preview on November 23, 2026. How does this affect me? When creating or editing an alert rule for a…",
+   "published": "2026-11-20T01:06:39+00:00"
+  },
+  {
+   "id": "f00543f9842d",
+   "title": "MC1560957: Power Platform Monitor - Route alert notifications to connector-backed destinations",
+   "link": "https://mc.merill.net/message/MC1560957",
+   "summary": "We are announcing the ability to route Power Platform Monitor alert notifications to Microsoft Teams, SMS, work item tracking systems, and other connector-backed destinations in Power Platform. This feature will reach public preview on November 20, 2026. How does this affect me? Tenant admins can use the new When an…",
+   "published": "2026-11-20T00:57:54+00:00"
+  },
+  {
+   "id": "5118975ef9d5",
+   "title": "MC1518034: Clipchamp/ Copilot 'Create a video' experience is going to have an admin control available",
+   "link": "https://mc.merill.net/message/MC1518034",
+   "summary": "Microsoft Clipchamp is adding an admin policy control to manage user access to the AI video creation feature, defaulting to disabled. The feature is now only available from Clipchamp Home. Rollout begins late November 2026, with no action needed to keep the feature disabled.",
+   "published": "2026-11-20T00:50:19+00:00"
+  },
+  {
+   "id": "797e87c091ab",
+   "title": "MC1560929: Updates to Workforce Insights Agent (Frontier) for Admins in Microsoft 365 Copilot",
+   "link": "https://mc.merill.net/message/MC1560929",
+   "summary": "Microsoft 365 Copilot's Workforce Insights Agent (Frontier) adds a workspace for admins to configure organizational data and context, improving AI-driven responses. Rolling out mid-November 2026 for Frontier tenants, it requires specific admin roles and licensing, with controls for data access, configuration, and…",
+   "published": "2026-11-20T00:13:14+00:00"
+  },
+  {
+   "id": "89d70cea9852",
+   "title": "MC1560924: Microsoft Teams: Tenant policy controls who can record and transcribe",
+   "link": "https://mc.merill.net/message/MC1560924",
+   "summary": "Microsoft Teams will introduce a tenant policy controlling who can record and transcribe meetings, allowing admins to set permissions for organizers, co-organizers, and presenters with options to lock or allow changes. Rollout begins December 2026, with no action required unless restricting presenter recording is…",
+   "published": "2026-11-20T00:04:57+00:00"
+  },
+  {
+   "id": "a60e47ab4899",
+   "title": "MC1560923: Enhanced prompt categories for Microsoft 365 Copilot in Microsoft Copilot Dashboard and Agent 365 Business Analytics",
+   "link": "https://mc.merill.net/message/MC1560923",
+   "summary": "Microsoft 365 Copilot introduces 13 enhanced prompt categories replacing four legacy ones in the Copilot Dashboard and Agent 365 Business Analytics. This update, rolling out worldwide in December 2026, offers detailed insights into Copilot Chat usage by licensed users, with no admin action needed.",
+   "published": "2026-11-20T00:04:07+00:00"
+  },
+  {
+   "id": "1c4725487b17",
+   "title": "MC1560922: Microsoft Copilot: In-app browsing will be enabled by default in the desktop app",
+   "link": "https://mc.merill.net/message/MC1560922",
+   "summary": "Microsoft Copilot desktop app will enable in-app browsing by default starting January 2027, allowing users to open websites shared in chat within the app alongside conversations. No action is needed unless organizations want to disable or manage this feature via policies.",
+   "published": "2026-11-20T00:03:31+00:00"
+  },
+  {
+   "id": "87f0a23a5819",
+   "title": "MC1560920: Copilot video creation in Clipchamp Video Hub is now live in Frontier Public",
+   "link": "https://mc.merill.net/message/MC1560920",
+   "summary": "Copilot video creation in Clipchamp Video Hub is now in public preview, enabling users to create and refine videos from documents and prompts using Copilot Credits. Admins must enable Anthropic models and configure spending policies. Videos export as MP4 with an AI watermark, and some preview limitations apply.",
+   "published": "2026-11-20T00:01:12+00:00"
+  },
+  {
+   "id": "d6e4ec483070",
+   "title": "MC1560919: Microsoft Teams mobile: Updated app bar and More menu on iOS and iPadOS",
+   "link": "https://mc.merill.net/message/MC1560919",
+   "summary": "Microsoft Teams for iOS/iPadOS will update the app bar and More menu to align with iOS 26 design, showing four apps plus a categorized More menu. Rollout is from December 10-16, 2026. Users can reorder and pin apps; no apps are removed. No action required.",
+   "published": "2026-11-20T00:00:19+00:00"
+  },
+  {
+   "id": "7835384c6ee2",
+   "title": "MC1560916: Microsoft Copilot: GPT-6.2 Sol and Astra rolling out",
+   "link": "https://mc.merill.net/message/MC1560916",
+   "summary": "Microsoft Copilot is expanding AI model options with GPT-6.2 Sol and Astra, rolling out across Cowork, Copilot Studio, Word, Excel, PowerPoint, and Chat. Astra requires enabling the OpenAI subprocessor. Users with appropriate licenses and configurations get default access; no action is needed but reviewing settings…",
+   "published": "2026-11-19T23:58:17+00:00"
+  },
+  {
+   "id": "abcde14921f4",
+   "title": "MC1532253: Enhanced Copilot and AI controls for meetings",
+   "link": "https://mc.merill.net/message/MC1532253",
+   "summary": "Microsoft Teams is replacing the Copilot meeting policy with two policies—MeetingAI and TranscriptionWithMeetingAI—for clearer control over AI and transcription in meetings. New meeting options provide granular management of AI use. Rollout begins December 2026; existing settings will be automatically mapped with no…",
+   "published": "2026-11-19T22:31:02+00:00"
+  },
+  {
    "id": "223dc4a647e3",
    "title": "MC1551151: Microsoft Entra ID: Risk-based anti-bot verification (CAPTCHA) for SMS and voice multi-factor authentication",
    "link": "https://mc.merill.net/message/MC1551151",
@@ -335,90 +419,6 @@
    "link": "https://mc.merill.net/message/MC791110",
    "summary": "Microsoft Purview is introducing a public preview of Adaptive protection integration with Data Lifecycle Management, rolling out June-July 2024, with general availability in early 2027. It auto-applies retention labels to content deleted by elevated risk users for 120 days, requiring minimal admin setup.",
    "published": "2026-11-17T18:09:20+00:00"
-  },
-  {
-   "id": "51de1ee714df",
-   "title": "MC1455013: Microsoft Purview: Data Lifecycle Management- Azure PST Import",
-   "link": "https://mc.merill.net/message/MC1455013",
-   "summary": "Azure PST Import enables Microsoft 365 admins to import PST files from Azure Blob Storage into Exchange Online mailboxes using PowerShell. The process includes readiness analysis, import batching, and compliance with existing retention and audit policies. Rollout begins April 2027, requiring specific Azure permissions…",
-   "published": "2026-11-17T18:02:14+00:00"
-  },
-  {
-   "id": "92d862570460",
-   "title": "MC1281505: Microsoft Purview: Data Lifecycle Management- Azure PST Import",
-   "link": "https://mc.merill.net/message/MC1281505",
-   "summary": "Azure PST Import enables Microsoft 365 admins to import PST files from Azure Blob Storage into Exchange Online mailboxes using PowerShell. It includes readiness analysis, reporting, and post-import cleanup. Rollout is delayed to early 2027. Imported data follows existing retention, compliance, and audit policies, with…",
-   "published": "2026-11-17T17:58:01+00:00"
-  },
-  {
-   "id": "ebc368d90447",
-   "title": "MC1557671: Dynamics 365 Apps - Upgrade in-queue overflow to Conversation orchestration",
-   "link": "https://mc.merill.net/message/MC1557671",
-   "summary": "We are announcing the ability to upgrade in-queue overflow to Conversation orchestration in Dynamics 365 Apps. This feature reached general availability on November 13, 2026. How does this affect me? This feature enables you to upgrade your existing in-queue overflow settings to a Conversation orchestration (CO)…",
-   "published": "2026-11-17T17:47:02+00:00"
-  },
-  {
-   "id": "2ad1aaefef65",
-   "title": "MC1443517: Microsoft Teams: External presenters can manage event production controls",
-   "link": "https://mc.merill.net/message/MC1443517",
-   "summary": "Microsoft Teams now allows event organizers to grant trusted external presenters (federated B2B and guest users) production control during events, enabling them to manage attendee viewing. This feature, rolling out August to November 2026, requires explicit organizer assignment and supports collaboration with external…",
-   "published": "2026-11-17T17:39:27+00:00"
-  },
-  {
-   "id": "5b536a4e9fc2",
-   "title": "MC1307982: Microsoft Teams Town halls: Upload custom backgrounds in Manage what attendees see",
-   "link": "https://mc.merill.net/message/MC1307982",
-   "summary": "Microsoft Teams will allow organizers and presenters of town hall events with Teams Premium licenses to upload custom background images in the \"Manage what attendees see\" feature. Rollout begins early June 2026, enabling branded visuals behind presenters and shared content in supported layouts, with no admin action…",
-   "published": "2026-11-17T17:37:19+00:00"
-  },
-  {
-   "id": "cb1f8b01eb5b",
-   "title": "MC1530615: Microsoft Teams: Report guest invitations for security concerns",
-   "link": "https://mc.merill.net/message/MC1530615",
-   "summary": "Microsoft Teams will let users report suspicious guest invitations for security concerns starting late November 2026. Reports go to IT admins via the Teams admin center. No action is needed if \"Report a security concern\" is already enabled in messaging policies, which control this feature.",
-   "published": "2026-11-17T17:34:34+00:00"
-  },
-  {
-   "id": "6cdaccc07bd7",
-   "title": "MC1509787: Microsoft Teams: Third-party synthetic audio and video detection in meetings",
-   "link": "https://mc.merill.net/message/MC1509787",
-   "summary": "Microsoft Teams will support certified third-party synthetic audio and video detection in meetings starting late November 2026. Organizations can integrate these solutions to enhance security against AI-generated media threats. Admins must deploy provider apps, grant permissions, and configure meeting policies…",
-   "published": "2026-11-17T17:34:21+00:00"
-  },
-  {
-   "id": "d5e1eda7fe2d",
-   "title": "MC1489971: Microsoft Purview DLP: Improved setup and Intune multi-admin approval support for unmanaged apps in Edge for Business",
-   "link": "https://mc.merill.net/message/MC1489971",
-   "summary": "Microsoft Purview DLP will enhance setup and activation for unmanaged apps in Edge for Business, supporting Intune multi-admin approval with clearer status, error reporting, and task coordination. Rollout starts January 2027, requiring no prior action; existing policies remain unchanged and Intune approvals continue…",
-   "published": "2026-11-17T17:21:44+00:00"
-  },
-  {
-   "id": "082704f906e8",
-   "title": "MC1279093: Microsoft Defender for Office 365: Enhancing how we handle promotional mail",
-   "link": "https://mc.merill.net/message/MC1279093",
-   "summary": "Microsoft Defender for Office 365 will tag promotional emails as “promotions” and can auto-move them to a Promotions folder, learning from user actions. Public preview starts mid-April 2026; general rollout begins late July 2026. Admins control settings; users can train the system by moving messages.",
-   "published": "2026-11-17T17:19:09+00:00"
-  },
-  {
-   "id": "59c1775badbe",
-   "title": "MC1557570: Dynamics 365 Contact Center - Set wait times as short as 5 seconds in Orchestration playbooks",
-   "link": "https://mc.merill.net/message/MC1557570",
-   "summary": "We are increasing the maximum frequency of orchestration playbook re-evaluations by reducing the wait time from 30 seconds down to 5 seconds in Dynamics 365 Contact Center. This change reached general availability today, November 17, 2026. How does this affect me? With this shorter interval, you get finer control over…",
-   "published": "2026-11-17T17:13:12+00:00"
-  },
-  {
-   "id": "18e2305555d1",
-   "title": "MC1239927: Microsoft Teams: Consecutive interpretation in Interpreter agent will be generally available",
-   "link": "https://mc.merill.net/message/MC1239927",
-   "summary": "Consecutive interpretation in Microsoft Teams Interpreter, currently in public preview, will roll out to general availability by late 2026. It offers turn-by-turn AI-generated spoken translation using usage-based billing with Copilot Credits. Organizations must set spending policies and have eligible meeting…",
-   "published": "2026-11-17T17:06:18+00:00"
-  },
-  {
-   "id": "deec7367ad8a",
-   "title": "MC1557509: Copilot Studio - Service principal authentication for workflows",
-   "link": "https://mc.merill.net/message/MC1557509",
-   "summary": "We are announcing service principal authentication for workflows in Copilot Studio. This feature will reach general availability by December 17, 2026. How does this affect me? With this feature, workflows will be able to be owned under a service principle (a Microsoft Entra app registration) instead of a named user…",
-   "published": "2026-11-17T16:04:22+00:00"
   }
  ]
 }
