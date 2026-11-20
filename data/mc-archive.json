@@ -1,6 +1,48 @@
 {
  "items": [
   {
+   "id": "7b35a26939f9",
+   "title": "MC1545694: Microsoft Entra: Updated passkey registration experience in My Sign-ins",
+   "link": "https://mc.merill.net/message/MC1545694",
+   "summary": "Microsoft Entra is updating the passkey registration in My Sign-ins for Microsoft Authenticator users, adding a checkbox, updated link text, and guided steps to start registration. Rollout begins early December 2026, completing by end of December. Organizations should inform users and update guidance accordingly.",
+   "published": "2026-11-20T17:59:47+00:00"
+  },
+  {
+   "id": "57abbdc75050",
+   "title": "MC1540327: Action required: Prepare users who can’t use passkeys for SMS and voice retirement",
+   "link": "https://mc.merill.net/message/MC1540327",
+   "summary": "Users relying solely on Microsoft-provided SMS/voice for MFA in sessions that don’t support passkeys must register alternative methods or configure customer-managed telephony before SMS/voice retirement begins February 1, 2027 (July 1 for admins/external users). Prepare early to avoid sign-in blocks.",
+   "published": "2026-11-20T17:56:15+00:00"
+  },
+  {
+   "id": "42b09d38a502",
+   "title": "MC1557754: Microsoft Copilot: Continue using models after reaching usage limits with Copilot Credits",
+   "link": "https://mc.merill.net/message/MC1557754",
+   "summary": "Microsoft Copilot now allows continued use of models after license usage limits via usage-based billing (UBB) with Copilot Credits. Users see credit indicators and can choose between Auto mode or credit-consuming models. Admins manage access and spending through updated policies and controls. Rollout begins December…",
+   "published": "2026-11-20T17:47:55+00:00"
+  },
+  {
+   "id": "f93b3ba4c8e4",
+   "title": "MC1535647: Microsoft Copilot app: Updates to Home and navigation",
+   "link": "https://mc.merill.net/message/MC1535647",
+   "summary": "Microsoft Copilot app updates include a new Home with integrated Chat, Cowork, Projects, and Workspaces. Projects organize related tasks and files without storing content, available on major platforms. Workspaces replace Notebooks for team collaboration. Rollout starts late October 2026; licensing and billing…",
+   "published": "2026-11-20T17:11:31+00:00"
+  },
+  {
+   "id": "8ea22ef10045",
+   "title": "MC1561862: Run Python code as a workflow step",
+   "link": "https://mc.merill.net/message/MC1561862",
+   "summary": "We are announcing the ability to use the Code node to run Python as a step in a workflow for logic that expressions and connectors cannot handle in Copilot Studio. This feature will reach general availability on December 1, 2026. How does this affect me? Makers can add Python steps to workflows for data transforms…",
+   "published": "2026-11-20T15:26:54+00:00"
+  },
+  {
+   "id": "0b954a7dcdc0",
+   "title": "MC1561859: Generate documents from the Agent node in workflows",
+   "link": "https://mc.merill.net/message/MC1561859",
+   "summary": "We are announcing the ability to generate documents from the Agent node in workflows within Copilot Studio. This feature will reach general availability on December 3, 2026. How does this affect me? With this feature, the Agent node can now return files that the agent generates, such as PDF, Word, Excel, PowerPoint…",
+   "published": "2026-11-20T15:22:06+00:00"
+  },
+  {
    "id": "7ae538ae04dc",
    "title": "MC1551122: Power Platform - Information regarding the end of support for SharePoint temporary authentication URLs",
    "link": "https://mc.merill.net/message/MC1551122",
@@ -97,13 +139,6 @@
    "link": "https://mc.merill.net/message/MC1551151",
    "summary": "Starting mid-November 2026, Microsoft Entra ID will add risk-based CAPTCHA verification for SMS and voice MFA to prevent automated fraud. Some users may need to complete CAPTCHA before receiving codes or calls. Organizations should prepare help desks, notify users, and ensure network readiness, while continuing to…",
    "published": "2026-11-19T21:12:52+00:00"
-  },
-  {
-   "id": "f93b3ba4c8e4",
-   "title": "MC1535647: Microsoft Copilot app: Updates to Home and navigation",
-   "link": "https://mc.merill.net/message/MC1535647",
-   "summary": "Microsoft Copilot app updates include a new Home with integrated Chat, Cowork, Projects, and Workspaces. Projects organize related tasks and files without storing content, available on major platforms. Workspaces replace Notebooks for team collaboration. Rollout starts late October 2026; licensing and billing…",
-   "published": "2026-11-19T19:35:11+00:00"
   },
   {
    "id": "28a6b3baa3ea",
@@ -384,41 +419,6 @@
    "link": "https://mc.merill.net/message/MC1557764",
    "summary": "Access Management for Agent 365 Business Analytics centralizes role and permission assignments for admins, combining permission sets and data partitions into access policies. It simplifies management, supports existing roles, and syncs delegation access. Rollout begins January 2027. Admins should review current…",
    "published": "2026-11-17T19:14:43+00:00"
-  },
-  {
-   "id": "bf7a2b8310a0",
-   "title": "MC1557760: Microsoft Teams: Registration capacity for town halls and webinars increases to 20,000",
-   "link": "https://mc.merill.net/message/MC1557760",
-   "summary": "Starting December 2026, Microsoft Teams town halls and webinars registration capacity increases up to 20,000, scaling with attendee capacity. Teams Enterprise allows 3,000 registrations; Attendee Capacity Packs enable up to 20,000. No new policies needed; organizers should ensure proper licensing and update training…",
-   "published": "2026-11-17T19:13:35+00:00"
-  },
-  {
-   "id": "408233d6cd4d",
-   "title": "MC1557759: Microsoft 365 Copilot: Use case classification for agent sessions and Copilot Cowork (Frontier public preview)",
-   "link": "https://mc.merill.net/message/MC1557759",
-   "summary": "Microsoft 365 Copilot introduces use case classification for agent sessions and Copilot Cowork activity in public preview starting mid-November 2026. Enabled by default for eligible Frontier tenants, it helps analyze AI usage and optimize investments. Admins can manage classification and AI value settings, with user…",
-   "published": "2026-11-17T19:12:58+00:00"
-  },
-  {
-   "id": "42b09d38a502",
-   "title": "MC1557754: Microsoft Copilot: Continue using models after reaching usage limits with Copilot Credits",
-   "link": "https://mc.merill.net/message/MC1557754",
-   "summary": "Microsoft Copilot now allows continued use of models after license usage limits via usage-based billing with Copilot Credits. New UI credit indicators and spending policies give users and admins control. Models appear in a picker with access restrictions. Rollout begins now, general availability in December 2026.",
-   "published": "2026-11-17T19:05:21+00:00"
-  },
-  {
-   "id": "5e95185548d4",
-   "title": "MC1557730: Autopilot availability in Frontier",
-   "link": "https://mc.merill.net/message/MC1557730",
-   "summary": "Autopilot will roll out in Frontier Public starting November 17, 2026, as an always-on cloud agent requiring admin enablement and Microsoft 365 Copilot licensing. It features its own identity, security controls, and compliance considerations. Admins must configure access and billing; users create Autopilots via…",
-   "published": "2026-11-17T18:38:43+00:00"
-  },
-  {
-   "id": "95374a340078",
-   "title": "MC1557727: Agent 365 Business Analytics app experience",
-   "link": "https://mc.merill.net/message/MC1557727",
-   "summary": "Agent 365 Business Analytics, launching November 17, 2026, offers AI spend, usage, and value insights in Microsoft 365 admin center. Features include cost forecasting, use case classification, optimization recommendations, multi-tenant management, and export options. Access and privacy controls integrate with Viva…",
-   "published": "2026-11-17T18:36:21+00:00"
   }
  ]
 }
