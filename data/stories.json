@@ -51,6 +51,22 @@
    "instructions_checked": true
   },
   {
+   "id": "545852a9591f",
+   "source": "ars",
+   "source_name": "Ars Technica Security",
+   "official": false,
+   "source_type": "news",
+   "title": "Man hired by Russia spied on Silicon Valley tech and defense company, feds say",
+   "link": "https://arstechnica.com/security/2026/11/man-charged-with-spying-on-silicon-valley-tech-and-defense-company-for-russia/",
+   "published": "2026-11-19T20:29:46+00:00",
+   "summary": "A Russian national has been indicted on suspicions he was a Russian spy who stalked and surveilled employees of a Silicon Valley company that was assisting Ukraine in its ongoing war with its eastern neighbor. Igor D’iu, 25, allegedly photographed the employees and their computer screens as they worked at a coffee…",
+   "image": "https://cdn.arstechnica.net/wp-content/uploads/2023/05/getty-digital-gavel-1152x648.jpg",
+   "cves": [],
+   "first_seen": "2026-11-20T01:13:40.105404+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "fcdcf30ed87c",
    "source": "ars",
    "source_name": "Ars Technica Security",
@@ -175,28 +191,6 @@
     "Es heißt, dass beim Versuch, das Windows-Sicherheitsupdate vom November 2026 zu installieren, verlinkt ist dort aber das Vorschau-Update KB5127936 von Oktober 2026, einige Geräte die Installation möglicherweise nicht abschließen können.",
     "November 2026) Windows 11 25H2 – 26H2: Preview Update KB5127936 (28.",
     "Blog-Leser Volker hat es in diesem Kommentar die Fehler 0x800f0993 und 0x80070306 bei der Update-Installation angesprochen und schreibt \"Das Update hängt bei 14% – 17% Installation, dann bricht es ab\"."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "87359d547fe5",
-   "source": "borncity",
-   "source_name": "Born's IT and Windows Blog",
-   "official": false,
-   "source_type": "news",
-   "title": "Patchday: Windows-Aktivierungs- und Lizenzierungs-Error 0x80041008 bestätigt (Nov. 2026)",
-   "link": "https://borncity.com/blog/2026/11/13/windows-aktivierungs-und-lizenzierungs-error-0x80041008-bestaetigt-nov-2026/",
-   "published": "2026-11-12T23:07:41+00:00",
-   "summary": "Am 10. November 2026 (Patchday) hat Microsoft kumulative Updates für die Clients und Serverversionen seiner Windows Betriebssysteme veröffentlicht. Diese Sicherheitsupdates für Microsoft Windows führen aber in einigen Fällen dazu, dass die Aktivierungs- und Lizenzzuweisungsfunktionen kaputt sind und mit dem Fehler…",
-   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Windows-klein.jpg",
-   "cves": [],
-   "first_seen": "2026-11-12T23:26:05.442870+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Für das Windows Server 2024 Update KB5131080 findet sich im Known Issues-Abschnitt der Hinweis:",
-    "November 2026) Windows 11 25H2 – 26H2: Preview Update KB5127936 (28.",
-    "November 2026) mehrere Administratoren gemeldet, die von Problemen bei der Lizenz-Reaktivierung in Server-Umgebungen, nach Installation des November 2026-Update, berichten.",
-    "hat noch jemand von euch Probleme mit der Reaktivierung der Windows-Lizenz nach dem Update?"
    ],
    "instructions_checked": true
   },
@@ -653,6 +647,25 @@
    "instructions_checked": true
   },
   {
+   "id": "9c7f489322a3",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-105584 Windows Inventory Backup Information Disclosure Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105584",
+   "published": "2026-11-19T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-105584"
+   ],
+   "first_seen": "2026-11-20T01:13:40.105404+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "ea376f0b6ca4",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -748,6 +761,25 @@
    "instructions_checked": true
   },
   {
+   "id": "f24b40bd501c",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-113817 Windows Devices Human Interface Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-113817",
+   "published": "2026-11-19T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-113817"
+   ],
+   "first_seen": "2026-11-20T01:13:40.105404+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "8660ee6d4482",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -762,6 +794,25 @@
     "CVE-2026-118148"
    ],
    "first_seen": "2026-11-18T20:45:42.433362+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "6b511f53eef7",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-118302 Microsoft Office Excel Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118302",
+   "published": "2026-11-19T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-118302"
+   ],
+   "first_seen": "2026-11-20T01:13:40.105404+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -876,6 +927,25 @@
     "CVE-2026-119988"
    ],
    "first_seen": "2026-11-13T18:11:27.621519+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "3f05595e8ffc",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-121669 PowerShell Information Disclosure Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-121669",
+   "published": "2026-11-19T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-121669"
+   ],
+   "first_seen": "2026-11-20T01:13:40.105404+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -1261,6 +1331,106 @@
    "instructions_checked": true
   },
   {
+   "id": "c991a1b77fe7",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-69370 Visual Studio Code Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69370",
+   "published": "2026-11-19T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-69370"
+   ],
+   "first_seen": "2026-11-20T01:13:40.105404+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "15ca7dbd84e9",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-69918 Windows Core Messaging Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69918",
+   "published": "2026-11-19T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-69918"
+   ],
+   "first_seen": "2026-11-20T01:13:40.105404+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "308133db32ac",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-70007 .NET Framework Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70007",
+   "published": "2026-11-19T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-70007"
+   ],
+   "first_seen": "2026-11-20T01:13:40.105404+00:00"
+  },
+  {
+   "id": "9f56e73c0cde",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-70174 .NET Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70174",
+   "published": "2026-11-19T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-70174"
+   ],
+   "first_seen": "2026-11-20T01:13:40.105404+00:00"
+  },
+  {
+   "id": "e72d5c760107",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-70197 .NET and Visual Studio Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70197",
+   "published": "2026-11-19T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-70197"
+   ],
+   "first_seen": "2026-11-20T01:13:40.105404+00:00"
+  },
+  {
+   "id": "53c40b5af5cd",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-70223 Windows Console Driver Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70223",
+   "published": "2026-11-19T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-70223"
+   ],
+   "first_seen": "2026-11-20T01:13:40.105404+00:00"
+  },
+  {
    "id": "f8bab8d195b5",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -1297,6 +1467,214 @@
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
+  },
+  {
+   "id": "b39326c71105",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-83722 Microsoft Local Security Authority (LSA) Server Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83722",
+   "published": "2026-11-19T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-83722"
+   ],
+   "first_seen": "2026-11-20T01:13:40.105404+00:00"
+  },
+  {
+   "id": "19b732758cee",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-83753 Windows Camera Frame Server Monitor Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83753",
+   "published": "2026-11-19T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-83753"
+   ],
+   "first_seen": "2026-11-20T01:13:40.105404+00:00"
+  },
+  {
+   "id": "d2fc2acba31d",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-83760 Microsoft Bluetooth Driver Information Disclosure Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83760",
+   "published": "2026-11-19T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-83760"
+   ],
+   "first_seen": "2026-11-20T01:13:40.105404+00:00"
+  },
+  {
+   "id": "69863ac92790",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-84015 Remote Access Point-to-Point Protocol (PPP) EAP-TLS Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-84015",
+   "published": "2026-11-19T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-84015"
+   ],
+   "first_seen": "2026-11-20T01:13:40.105404+00:00"
+  },
+  {
+   "id": "b299b25eb9a0",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-84016 Windows EAPHost Service Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-84016",
+   "published": "2026-11-19T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-84016"
+   ],
+   "first_seen": "2026-11-20T01:13:40.105404+00:00"
+  },
+  {
+   "id": "87fc79b83ef7",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-84020 Windows Routing and Remote Access Service (RRAS) Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-84020",
+   "published": "2026-11-19T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-84020"
+   ],
+   "first_seen": "2026-11-20T01:13:40.105404+00:00"
+  },
+  {
+   "id": "d630bd7fb0e4",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-85794 Windows Routing and Remote Access Service (RRAS) Information Disclosure Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85794",
+   "published": "2026-11-19T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-85794"
+   ],
+   "first_seen": "2026-11-20T01:13:40.105404+00:00"
+  },
+  {
+   "id": "7d254293effc",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-85846 Web Account Manager Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85846",
+   "published": "2026-11-19T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-85846"
+   ],
+   "first_seen": "2026-11-20T01:13:40.105404+00:00"
+  },
+  {
+   "id": "7db79033d356",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-85910 Windows StateRepository API Information Disclosure Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85910",
+   "published": "2026-11-19T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-85910"
+   ],
+   "first_seen": "2026-11-20T01:13:40.105404+00:00"
+  },
+  {
+   "id": "31815a8068bf",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-87698 Windows Remote Access Service Infrastructure Information Disclosure Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87698",
+   "published": "2026-11-19T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-87698"
+   ],
+   "first_seen": "2026-11-20T01:13:40.105404+00:00"
+  },
+  {
+   "id": "62e2b762d2a4",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-88130 Role: DNS Server Denial of Service Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88130",
+   "published": "2026-11-19T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-88130"
+   ],
+   "first_seen": "2026-11-20T01:13:40.105404+00:00"
+  },
+  {
+   "id": "251acc6e20ce",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-88151 Microsoft Office Excel Information Disclosure Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88151",
+   "published": "2026-11-19T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-88151"
+   ],
+   "first_seen": "2026-11-20T01:13:40.105404+00:00"
+  },
+  {
+   "id": "d290b129ac4e",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-88207 Microsoft Office PowerPoint Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88207",
+   "published": "2026-11-19T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-88207"
+   ],
+   "first_seen": "2026-11-20T01:13:40.105404+00:00"
   },
   {
    "id": "112cf26ea63a",
@@ -1351,6 +1729,25 @@
     "CVE-2026-94522"
    ],
    "first_seen": "2026-11-13T18:11:27.621519+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "d59df8950f3e",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-95874 Xbox Gaming Services Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95874",
+   "published": "2026-11-19T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-95874"
+   ],
+   "first_seen": "2026-11-20T01:13:40.105404+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -1451,6 +1848,44 @@
    "instructions_checked": true
   },
   {
+   "id": "7dcb2d1fdf6f",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-95989 vhdmp.sys Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95989",
+   "published": "2026-11-19T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-95989"
+   ],
+   "first_seen": "2026-11-20T01:13:40.105404+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "fd25b2dc30d6",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-96082 Windows Kerberos Denial of Service Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96082",
+   "published": "2026-11-19T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-96082"
+   ],
+   "first_seen": "2026-11-20T01:13:40.105404+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "fc10a8e15ebc",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -1525,6 +1960,70 @@
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
+  },
+  {
+   "id": "ee4270815294",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-97749 Microsoft Office Outlook Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97749",
+   "published": "2026-11-19T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-97749"
+   ],
+   "first_seen": "2026-11-20T01:13:40.105404+00:00"
+  },
+  {
+   "id": "fca0dca96ac6",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-97761 Microsoft Office Excel Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97761",
+   "published": "2026-11-19T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-97761"
+   ],
+   "first_seen": "2026-11-20T01:13:40.105404+00:00"
+  },
+  {
+   "id": "34dcee7234d7",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-97767 Microsoft Office Excel Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97767",
+   "published": "2026-11-19T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-97767"
+   ],
+   "first_seen": "2026-11-20T01:13:40.105404+00:00"
+  },
+  {
+   "id": "fe3e82d658d4",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-97780 Microsoft Office Excel Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97780",
+   "published": "2026-11-19T16:00:00+00:00",
+   "summary": "Updated an acknowledgement. This is an informational change only.",
+   "image": null,
+   "cves": [
+    "CVE-2026-97780"
+   ],
+   "first_seen": "2026-11-20T01:13:40.105404+00:00"
   },
   {
    "id": "fb8b318a049e",
@@ -2475,6 +2974,27 @@
    "instructions_checked": true
   },
   {
+   "id": "53e4a59238e8",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "ThreatsDay: GPT-6.2 Jailbreak Flaws, BubbleLoader PNG Malware, $500M Ransom Demands + 17 More Stories",
+   "link": "https://thehackernews.com/2026/11/threatsday-gpt-62-jailbreak-flaws.html",
+   "published": "2026-11-19T18:47:58+00:00",
+   "summary": "The easiest way to fool someone is to give them something they already expect. A job offer. A message about a service outage. A familiar app. Nothing looks strange at first. And that's the problem. This week's stories show how ordinary things are being used to steal data, spread malware, and get people to hand over…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgTqUIWPjGeycl6xafh8Hx8n2UN3UCUgjhTpxUul68DHi7Y_IoHVYBvjDd5DpFg15sKI767hVEq-8CbGhK69JNusMh0OBBXfVMwJlZiKT2gNnTPAL9DyvTY85SB68WkvBxFCMF2_rNS9rUgYkQN8sKssDMBS8gO6YpMudQohf_JWnPztX_h8TdbSX6Vtfi/s1600/td.jpg",
+   "cves": [],
+   "first_seen": "2026-11-20T01:13:40.105404+00:00",
+   "instructions": [
+    "\"Because this is a security release, it is recommended that you update your sites immediately,\" WordPress said .",
+    "Urgent WordPress security update WordPress Releases WordPress 7.1.5 WordPress has released WordPress 7.1.5 with fixes for multiple security issues.",
+    "\"Even if Gemini History is turned off, future chats will still be saved for around 2 months and used to respond to you, process your feedback, and protect Google, its users, and the public, with help from human reviewers,\" Google said in a revised policy update on November 17, 2026.",
+    "The patch is a series of instructions that are applied at the exact address of the host PE’s entry point."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "79815295aaa3",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2948,6 +3468,23 @@
    "instructions_checked": true
   },
   {
+   "id": "8dfce1d63ad4",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Lawmakers launch new AI safety caucus amid rising security concerns",
+   "link": "https://therecord.media/lawmakers-launch-new-ai-safety-caucus",
+   "published": "2026-11-19T21:19:00+00:00",
+   "summary": "Seven of 26 founding members of the caucus are Republicans, a notable number given the White House’s steadfast opposition to regulating AI.",
+   "image": "https://cms.therecord.media/uploads/Congress_6ac7a14ca7.jpg",
+   "cves": [],
+   "first_seen": "2026-11-20T01:13:40.105404+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "81c7c458d757",
    "source": "therecord",
    "source_name": "The Record",
@@ -3131,23 +3668,6 @@
    "instructions_checked": true
   },
   {
-   "id": "e52fb1952d02",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Feds announce seizure of $1.2 billion from Binance theft; also takedown of ‘FaceStealer’ tools",
-   "link": "https://therecord.media/stolen-binance-crypto-recovered-doj-facestealer-disrupted",
-   "published": "2026-11-12T21:42:00+00:00",
-   "summary": "The Department of Justice and FBI announced two separate actions in response to North Korea-linked cryptocurrency theft operations.",
-   "image": "https://cms.therecord.media/uploads/doj_logo_green_code_f20ed46844.jpg",
-   "cves": [],
-   "first_seen": "2026-11-12T22:46:50.252554+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "db1d82795c0b",
    "source": "therecord",
    "source_name": "The Record",
@@ -3266,25 +3786,6 @@
    "instructions_checked": true
   },
   {
-   "id": "bb48d6f8868d",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "United to block customers from using AI agents, citing cyber threats",
-   "link": "https://therecord.media/united-airlines-to-block-customers-using-ai-agents",
-   "published": "2026-11-12T19:20:00+00:00",
-   "summary": "“Sharing account credentials with personal, third-party, AI assistants can expose sensitive information, and actions taken by these tools may result in unintended purchases\" and more, United Airlines said.",
-   "image": "https://cms.therecord.media/uploads/united_airlineslukas_souza_unsplash_b9dd803335.jpg",
-   "cves": [],
-   "first_seen": "2026-11-12T19:54:43.350113+00:00",
-   "image_checked": true,
-   "instructions": [
-    "United Airlines will block AI agents from managing customers’ reservations and flight purchases, warning of significant cybersecurity and privacy risks, as well as potential legal violations."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "4c8fe02bd04c",
    "source": "therecord",
    "source_name": "The Record",
@@ -3394,28 +3895,6 @@
    "image_checked": true,
    "instructions": [
     "\"To trigger this vulnerability, a stale ehash lookup and the freeing and reallocation of an existing request socket must proceed concurrently in different RX contexts."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "fd416d58448a",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Massive Microsoft 365 outage disrupts Outlook, Teams, Copilot worldwide",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/massive-microsoft-365-outage-disrupts-outlook-teams-copilot-worldwide/",
-   "published": "2026-11-12T20:15:16+00:00",
-   "summary": "Microsoft is investigating a widespread outage affecting multiple Microsoft 365 services, including Outlook, Microsoft Teams, and Copilot, as users report connectivity problems worldwide.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2025/07/25/Microsoft-365.jpg",
-   "cves": [],
-   "first_seen": "2026-11-12T20:50:16.965486+00:00",
-   "image_checked": true,
-   "instructions": [
-    "In a Microsoft 365 admin center advisory tracked as MO1550821, Microsoft confirmed that customers may be unable to connect to multiple services, including Exchange Online, Microsoft Teams, SharePoint Online, Microsoft 365 Copilot, and Microsoft Defender XDR.",
-    "Microsoft pauses KB5002907 update after Office license deactivations",
-    "We're working to safely return them to service,\" Microsoft said in an update on X .",
-    "BleepingComputer contacted Microsoft with questions about the outage and will update our story if we receive a response."
    ],
    "instructions_checked": true
   },
@@ -3639,27 +4118,6 @@
    "instructions_checked": true
   },
   {
-   "id": "fac8887887ba",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Apache HTTP Server patches critical HTTP/2 remote code execution flaw",
-   "link": "https://www.bleepingcomputer.com/news/security/apache-http-server-patches-critical-http-2-remote-code-execution-flaw/",
-   "published": "2026-11-12T19:12:55+00:00",
-   "summary": "A critical vulnerability in the HTTP/2 module of Apache HTTP Server could be exploited by an unauthenticated attacker to obtain remote code execution (RCE).",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/12/Apache.jpg",
-   "cves": [],
-   "first_seen": "2026-11-12T19:54:43.350113+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Researchers at cybersecurity company watchTowr confirmed this condition and recommend technicians to \"patch now or drop h2 until you can.\"",
-    "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day",
-    "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "4f4cc6f19074",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -3678,6 +4136,26 @@
     "The XML-RPC endpoint accepts vendor extension types and deserializes them before authenticating the requester,\" Apache explained in a Tuesday security advisory.",
     "Admins who can't immediately upgrade can also temporarily mitigate CVE-2026-129448 by setting \"enabledForExtensions\" to \"false\" in WEB-INF/web.xml, removing the \"/roller-services/xmlrpc\" servlet mapping, and restarting Roller.",
     "According to Apache, disabling XML-RPC in the administration user interface is not enough to block attacks because older versions deserialize the request before checking whether that setting is toggled on."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "3797ecb529a5",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "ASUS warns of critical hard-coded key flaw in Control Center Express",
+   "link": "https://www.bleepingcomputer.com/news/security/asus-warns-of-critical-hard-coded-key-flaw-in-control-center-express/",
+   "published": "2026-11-19T21:15:59+00:00",
+   "summary": "ASUS released Control Center Express v1.7.29 to fix three critical vulnerabilities that could let remote attackers gain administrative control of the management console and the devices it manages.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2025/11/26/Asus.jpg",
+   "cves": [],
+   "first_seen": "2026-11-20T01:13:40.105404+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Impacted users are advised to install v1.7.29, then update the agents on managed devices through Select Function → Client Agent Updater , and verify their versions.",
+    "The Armoury Crate update addressed CVE-2026-112115 , a high-severity privilege escalation flaw."
    ],
    "instructions_checked": true
   },
@@ -4152,25 +4630,20 @@
    "instructions_checked": true
   },
   {
-   "id": "674c4b85088a",
+   "id": "df29d71aedcb",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
    "official": false,
    "source_type": "news",
-   "title": "Hackers compromise 4,800 GitHub accounts to steal cloud credentials",
-   "link": "https://www.bleepingcomputer.com/news/security/hackers-compromise-4-800-github-accounts-to-steal-cloud-credentials/",
-   "published": "2026-11-12T22:25:30+00:00",
-   "summary": "A new campaign dubbed 'wfx-loot' has unfolded on GitHub where threat actors used 4,837 compromised accounts to probe 61,764 repositories, open pull requests, and push secrets-stealing malware.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/08/github.jpg",
+   "title": "Hackers steal data of 1.6 million SBC Medical Group customers",
+   "link": "https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers/",
+   "published": "2026-11-19T22:25:42+00:00",
+   "summary": "SBC Medical Group has warned in a filing with the U.S. Securities and Exchange Commission (SEC) that two cybersecurity incidents exposed sensitive customer and employee information, including personal data belonging to 1.6 million people.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2022/08/22/healthcare-cyber.jpg",
    "cves": [],
-   "first_seen": "2026-11-12T22:46:50.252554+00:00",
+   "first_seen": "2026-11-20T01:13:40.105404+00:00",
    "image_checked": true,
-   "instructions": [
-    "Repository owners are advised to look for the ‘wfx-docs’ branch, the probe pull request, and gaps in workflow run numbers.",
-    "Where payload execution is confirmed, all secrets and cloud roles available to the affected workflows should be considered compromised and rotated immediately.",
-    "They then delivered a 1,500-line credential-stealing shell script by modifying an existing GitHub Actions workflow, adding a new workflow on a short-lived branch, or planting an npm install hook.",
-    "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day"
-   ],
+   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -4255,50 +4728,6 @@
     "Any potentially exposed credentials that were within the reach of the compromised environment should be rotated immediately.",
     "To determine the exact level of compromise, investigators should look for the specific webhook URL path in egress logs and distinguish blocked requests from completed transfers.",
     "Hackers hijack AOMEI update servers to secretly spread malware"
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "5e7c3d53ea73",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "New N-able \"4EverAble2Shell\" zero-day exploited hours after PoC released",
-   "link": "https://www.bleepingcomputer.com/news/security/new-n-able-4everable2shell-zero-day-exploited-hours-after-poc-released/",
-   "published": "2026-11-12T19:51:16+00:00",
-   "summary": "Hackers are actively exploiting a newly disclosed N-able N-central zero-day vulnerability dubbed \"4EverAble2Shell\" to compromise servers and deploy cryptocurrency miners, with researchers reporting at least 21 affected systems, including 19 running the company's latest security update.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2025/08/18/N-able.jpg",
-   "cves": [],
-   "first_seen": "2026-11-12T19:54:43.350113+00:00",
-   "image_checked": true,
-   "instructions": [
-    "In a November 12 security advisory , N-able said it was implementing additional protections in response to the new disclosures, including restricting certain N-central features and integrations while it develops further fixes.",
-    "The protections have already been applied to hosted environments, but customers are also advised to continue upgrading their Agents and Probes under the previous Hotfix 2 guidance .",
-    "In its advisory, N-able said it had seen no signs of compromise using the new flaws, although security researchers have since reported successful exploitation of the vulnerability against production N-central servers.",
-    "Organizations running N-central should ensure that Legacy APIs are disabled and investigate suspicious requests to /dms/services/ServerUI , especially those referencing jline.internal.TerminalLineSettings."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "3b8d7732462b",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "New worm-like 'SCKit' malware targets MSPs in ScreenConnect attacks",
-   "link": "https://www.bleepingcomputer.com/news/security/new-worm-like-sckit-malware-targets-msps-in-screenconnect-attacks/",
-   "published": "2026-11-12T22:53:10+00:00",
-   "summary": "A new worm-like malware toolkit named SCKit was deployed in the recent ScreenConnect attacks targeting managed service providers (MSPs), designed to spread from infected customer devices to MSP technicians' computers and compromise additional managed networks.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/09/16/ScreenConnect-headpic.jpg",
-   "cves": [],
-   "first_seen": "2026-11-12T23:26:05.442870+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Both research teams also recommend avoiding interactive ScreenConnect sessions with potentially infected endpoints and instead using separate security tools to investigate systems.",
-    "The findings follow yesterday's widespread ScreenConnect attacks , in which attackers gained unauthorized access to cloud-hosted ScreenConnect environments and used the platform's Run Command feature to install rogue ScreenConnect remote-access clients on customer endpoints.",
-    "MSPs are urged to disable the affected third-party extensions, update ScreenConnect clients, investigate unauthorized remote-access installations, and review Run Command and Toolbox activity for signs of compromise.",
-    "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day"
    ],
    "instructions_checked": true
   },
@@ -4540,6 +4969,27 @@
    "instructions": [
     "To defend against these attacks, users are recommended to join meetings only through official apps using an invite code, verify unexpected invitations independently, and keep the webcam off unless explicitly needed.",
     "The target was then prompted to follow a link that purported to offer a fix, such as an update or installer, which infected their computer with malware that steals crypto data and account credentials for video meeting platforms such as Zoom, Google Meet, and Microsoft Teams."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "c5e24a06d395",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "VMware patches vCenter zero-day exploited in attacks since September",
+   "link": "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/",
+   "published": "2026-11-20T00:26:25+00:00",
+   "summary": "Broadcom has released security updates to fix a critical VMware vCenter Server authentication bypass vulnerability that Chinese-linked hackers have exploited in zero-day attacks since September 2026.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2023/10/25/VMware_red.jpg",
+   "cves": [],
+   "first_seen": "2026-11-20T01:13:40.105404+00:00",
+   "image_checked": true,
+   "instructions": [
+    "\"You are affected if you are running any version of VMware vCenter, SDDC Manager, or VMware Tools for Windows prior to the versions listed as \"fixed\" in the VMSA,\" Broadcom's security advisory reads .",
+    "The researchers urge admins to apply the VMware security updates as soon as possible and configure additional security controls to protect their virtualization infrastructure against future attacks.",
+    "The company considers the vCenter vulnerability as an emergency update, urging organizations to install the patches as soon as possible."
    ],
    "instructions_checked": true
   },
@@ -4959,6 +5409,22 @@
    "first_seen": "2026-11-19T19:04:24.147057+00:00"
   },
   {
+   "id": "7cf301393d67",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "Critical PHP Flaws Allow Code Execution, But Don't Panic 'PHP2Shell'-Style",
+   "link": "https://www.darkreading.com/application-security/critical-php-flaws-code-execution-panic-php2shell",
+   "published": "2026-11-19T19:57:31+00:00",
+   "summary": "November's monthly security release patches seven critical PHP flaws that should be addressed ASAP, though experts say exploitability varies and depends heavily on configuration.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt63f30aa2e4f7a5b8/6aff560d615b4f7719adda8c/source_code_background-scanrail-GettyImages-832282452.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-20T01:13:40.105404+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "e7c273fee4ff",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -5023,6 +5489,22 @@
    "instructions_checked": true
   },
   {
+   "id": "5e65458c080e",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "Qwen Incidents Show Self-Hosted AI Models Need Stronger Steering",
+   "link": "https://www.darkreading.com/cyber-risk/qwen-incidents-self-hosted-ai-models-stronger-steering",
+   "published": "2026-11-19T22:40:03+00:00",
+   "summary": "Companies deploying AI agents have the illusion of control, but several incidents demonstrate that businesses need to be ready to enforce directions.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltdca0689384b67fb8/6aff731dfef3359545395d0a/old-ship-steering-wheel-DmitriiElj-shutterstock.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-20T01:13:40.105404+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "cebfa689962e",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -5072,6 +5554,22 @@
    "instructions_checked": true
   },
   {
+   "id": "150f8fb55446",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "Second Norwegian Energy Company Breached in Two Days",
+   "link": "https://www.darkreading.com/cyberattacks-data-breaches/second-norwegian-energy-company-breached",
+   "published": "2026-11-19T20:14:15+00:00",
+   "summary": "No specific link has been drawn between the two incidents, though they certainly sing the same notes.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blte4910babc7878a94/6aff5ad57ab982a4c314744c/Equinor-makasana-Getty.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-20T01:13:40.105404+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "fff233faf327",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -5084,38 +5582,6 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt3c2322c93d29d2a7/6aed04e63037c1017f2823d8/binance-logo-on-black-bkgrd-Zulfugar_Graphics-shutterstockjpg.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-13T13:05:18.402714+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "39360acccba0",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "Cyber Experts Weigh In: How to Fight Artex & AntiFox",
-   "link": "https://www.darkreading.com/cybersecurity-operations/cyber-experts-fight-artex-antifox",
-   "published": "2026-11-12T21:18:52+00:00",
-   "summary": "Cybercriminals using agentic pen-testing tools is a proverbial genie out of the bottle at this point, so enterprises need to get a defense plan in place right away.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt131056a0513594b5/6af623f4a8a90fde9d0b34ee/Artex-ShaunWilkinson-Getty.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-12T21:47:21.765103+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "e9f16b1caffc",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "Getting Past the Post-Quantum Cryptography Discovery Phase",
-   "link": "https://www.darkreading.com/cybersecurity-operations/getting-past-post-quantum-cryptography-discovery",
-   "published": "2026-11-12T22:46:05+00:00",
-   "summary": "Most organizations haven't sorted out their cryptographic estate enough to even know where they'd start with post-quantum cryptography (PQC).",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt3f96ce16a435deca/6a3d55be62f12d27e415ed3c/quantum_computer-Peter_Hansen-getty-2214879776.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-13T03:33:34.052269+00:00",
    "instructions": [],
    "instructions_checked": true
   },
@@ -5148,22 +5614,6 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt3a97d098a9dd9e12/6afe0f2eb91ada7c366c492c/Holiday_shopping_tap_to_pay-Nastasic-GettyImages-2235710285.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-19T19:04:24.147057+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "43b2bb31ce77",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "Extortion Group Luna Moth Flits Into Law Firms a Second Time",
-   "link": "https://www.darkreading.com/data-privacy/extortion-luna-moth-law-firms-second-time",
-   "published": "2026-11-12T20:09:41+00:00",
-   "summary": "The cybercriminals are retargeting law firms that refused to pay its first ransom, with a social engineering con aimed at stealing Microsoft access tokens.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltd72cfa843f157710/6af61e08fa93fcee56324598/black_and_white_moth-powerofforever-GettyImages-1920014051.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-12T20:50:16.965486+00:00",
    "instructions": [],
    "instructions_checked": true
   },
@@ -5292,6 +5742,22 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltd3d76d438281428b/6afb51c99f6beb04c5e535c4/Brazil_CNH-RafaPress-Getty.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-18T20:45:42.433362+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "dfb731a44487",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "Navigating Vulnerability Hysteria in the AI Era",
+   "link": "https://www.darkreading.com/vulnerabilities-threats/navigating-vulnerability-hysteria-ai-era",
+   "published": "2026-11-19T19:46:44+00:00",
+   "summary": "This installment of the Reporters' Notebook video series examines the fallout from recent high-severity flaw disclosures, exploring how fears of AI-assisted exploits trigger widespread panic, operational disruptions, and growing warning fatigue.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt7d04c37959ab5304/6aff50a7d42cb182cb40c79e/panic_Kzenon_Alamy_REWORKED_FOR_16_BY_9_FORMAT.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-20T01:13:40.105404+00:00",
    "instructions": [],
    "instructions_checked": true
   },
@@ -6124,28 +6590,6 @@
    "instructions_checked": true
   },
   {
-   "id": "f394da5f2166",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Microsoft 365 Outage Disrupts Outlook, Exchange Online and Teams",
-   "link": "https://www.securityweek.com/microsoft-365-outage-disrupts-outlook-exchange-online-and-teams/",
-   "published": "2026-11-12T20:55:30+00:00",
-   "summary": "Microsoft says failed server health checks disrupted Outlook and other Microsoft 365 services. The company is still investigating the cause and has disclosed no evidence of a cyberattack. The post Microsoft 365 Outage Disrupts Outlook, Exchange Online and Teams appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2023/06/Microsoft-DDoS-Attack.jpg",
-   "cves": [],
-   "first_seen": "2026-11-12T21:47:21.765103+00:00",
-   "image_checked": true,
-   "instructions": [
-    "ET, Microsoft said affected servers were failing automated health checks and that it was testing a workaround that bypasses the component responsible for processing those checks.",
-    "Its service advisories did not report evidence of malicious activity.",
-    "Microsoft’s service advisories have not linked the vulnerability to the Exchange Online outage.",
-    "The disruption came two days after Microsoft released its November Patch Tuesday updates, which addressed 1,094 vulnerabilities across its products."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "aa9ca93e66e2",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -6269,6 +6713,28 @@
     "All customers, hosted and on-premises, must upgrade all of their Agents and Probes to the latest version to be fully protected.",
     "Shortly after N-able announced the fixes, Bales published technical information on 24 more N-central vulnerabilities, noting that they have been patched and should not be exploitable against deployments running the latest patches.",
     "Described as a critical update, N-central 2026.4 Hotfix 3 builds on the previously released Hotfix 2 and also brings several security hardenings across authentication, Agent and Probe communication, file and XML import handling, request and outbound connection handling, and user management."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "bd2996802132",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Newly Patched VMware vCenter Flaw Exploited as Zero-Day by Chinese APT",
+   "link": "https://www.securityweek.com/newly-patched-vmware-vcenter-flaw-exploited-as-zero-day-by-chinese-apt/",
+   "published": "2026-11-19T19:21:06+00:00",
+   "summary": "Google says a China-linked espionage group exploited a critical VMware vCenter authentication bypass before Broadcom released a patch. The post Newly Patched VMware vCenter Flaw Exploited as Zero-Day by Chinese APT appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2022/08/VMWare.jpg",
+   "cves": [],
+   "first_seen": "2026-11-20T01:13:40.105404+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Broadcom’s advisory, which also resolves four SDDC Manager and VMware Tools flaws, does not mention in-the-wild exploitation. “Organizations should both apply the patches and examine their systems for evidence of compromise,” Carmakal said.",
+    "However, there is no public patch for version 7.0, which reached end of general support in October 2025.",
+    "Java4Shell Exploitation Attempts Begin as Vendors Rush Out Advisories",
+    "A China-linked espionage group exploited a VMware vCenter zero-day vulnerability for more than two months before Broadcom released a patch on Thursday, according to Google."
    ],
    "instructions_checked": true
   },

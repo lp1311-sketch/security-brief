@@ -1,36 +1,11 @@
 {
  "items": [
   {
-   "id": "0ec404015617",
-   "title": "Microsoft Purview: Information Protection-Sensitivity label inheritance for Teams meeting artifacts",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=581739",
-   "summary": "Teams meeting artifacts, including recordings, transcripts, and Loop notes, can now be configured to automatically inherit the sensitivity label from the meeting. This ensures content generated during meetings is consistently protected without requiring manual labeling, reducing risk and simplifying protection at…",
-   "published": "2026-11-19T00:35:27+00:00",
-   "products": [
-    "Teams",
-    "Purview"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "e2bddeda0612",
-   "title": "Microsoft Teams: Focus on the conversation while Facilitator in Teams mobile takes the notes, now with speaker attribution",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=579864",
-   "summary": "Use Facilitator in Teams mobile to turn in-person conversations into useful notes and follow-ups with speaker attribution. Start note-taking from your phone and let Facilitator capture and transcribe the ad hoc discussion, with speaker attribution helping distinguish who said what. Facilitator uses the conversation to…",
-   "published": "2026-11-19T00:35:27+00:00",
-   "products": [
-    "Teams"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "b6f863c90dfe",
-   "title": "Dynamics 365 Contact Center: Bullseye routing with dynamic user groups and skill relaxation",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577885",
-   "summary": "Bullseye routing now supports dynamic user groups and skill relaxation. Administrators can define dynamic groups using representatives’ skills and proficiency levels, and use them at different expansion levels. If work remains unassigned, required skills can be progressively relaxed to broaden the eligible…",
-   "published": "2026-11-19T00:35:27+00:00",
+   "id": "6d3ebee31410",
+   "title": "Microsoft Edge: Smarter and faster update application",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=581801",
+   "summary": "Microsoft Edge can now apply pending updates when your browser is idle. We've updated the Relaunch Notification policy to allow you to manage idle restarts for your organization. More info: https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies/relaunchnotification GA date: January CY2027",
+   "published": "2026-11-19T23:37:54+00:00",
    "products": [
     "Microsoft 365"
    ],
@@ -38,23 +13,11 @@
    "feature_id": null
   },
   {
-   "id": "4b07f90b273b",
-   "title": "Microsoft Contact Center Intelligence: D365 Contact Center Admin Center users can create CCI agents",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=575277",
-   "summary": "Use the customer conversation harness agent builder to create, test, and refine AI-powered customer service agents. Accelerate agent development with built-in tools for conversation design, orchestration, evaluation, and deployment across customer engagement channels. GA date: November CY2026 Preview date: October…",
-   "published": "2026-11-19T00:35:27+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "564dfc80794a",
-   "title": "Planner: Sprints and backlogs in unified plans",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=581629",
-   "summary": "Sprints and backlogs in unified plans let users organize and prioritize work in a product backlog, plan time-boxed sprints, and focus on the current sprint. Sprint planning stays separate from buckets, so teams can continue using buckets to organize work. GA date: January CY2027",
-   "published": "2026-11-18T18:32:08+00:00",
+   "id": "b052ee3ec492",
+   "title": "Microsoft Teams: Configure a list of allowed external meeting notetaker bots for your Teams meetings",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=580451",
+   "summary": "Admins will be able to configure more granular and advanced controls for managing external bots and their access to meetings hosted in their organization. Admins will be able to configure a list of external meeting bots which are allowed to join meetings hosted in their organization. Admins can also opt to block all…",
+   "published": "2026-11-19T23:37:54+00:00",
    "products": [
     "Teams"
    ],
@@ -62,11 +25,11 @@
    "feature_id": null
   },
   {
-   "id": "9b827ee833e9",
-   "title": "Microsoft Copilot Studio: PPAC Reporting API",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=579968",
-   "summary": "The PPAC Reporting API gives customers scalable, programmatic access to Copilot Studio usage data from our lakehouse, replacing older unsupported methods for pulling consumption data. Daily JSON data by environment, user, agent and feature powers dashboards, FinOps reporting and automated cost controls. GA date…",
-   "published": "2026-11-18T18:32:08+00:00",
+   "id": "952a07e1b3bd",
+   "title": "Microsoft Copilot Studio: Run Python code as a step in workflows",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=580866",
+   "summary": "The new Code node lets makers run Python as a step in a workflow for logic that expressions and connectors can't handle. Data transforms, calculations, regex, and advanced parsing. File conversion and parsing (for example PDF → text, CSV, XML). Generate the code from natural language with AI, or write and edit it by…",
+   "published": "2026-11-19T21:30:10+00:00",
    "products": [
     "Copilot"
    ],
@@ -74,73 +37,51 @@
    "feature_id": null
   },
   {
-   "id": "bccc975584ae",
-   "title": "Dynamics 365 Supply Chain Management: Track price changes in Unified pricing management",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577853",
-   "summary": "Multiple factors (including seasonal adjustments, promotions, and market dynamics) can influence a product's active sales price, causing it to fluctuate over time. Businesses need a reliable way to detect and act on these changes. For example: Retail stores must update shelf labels promptly to reflect the latest…",
-   "published": "2026-11-18T18:32:08+00:00",
+   "id": "8db8d8aa770c",
+   "title": "Microsoft Copilot Studio: Generate documents from the Agent node in workflows",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=580865",
+   "summary": "The Agent node can now return files that the agent generates, such as PDF, Word, Excel, PowerPoint, and CSV, as workflow outputs. Works with both inline agents and existing (published) agents. Generated files appear as an ordered files output (name, content type, content) that's available to downstream steps. Pass…",
+   "published": "2026-11-19T21:30:10+00:00",
    "products": [
-    "Microsoft 365"
+    "Copilot",
+    "Microsoft 365 Apps"
    ],
    "stage": null,
    "feature_id": null
   },
   {
-   "id": "521b110a0664",
-   "title": "Dynamics 365 Commerce: Enable price change tracking in Unified pricing management",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577852",
-   "summary": "Multiple factors, such as seasonal adjustments, promotions, and market dynamics, influence a product’s active sales price and cause it to fluctuate over time. Businesses need a reliable way to detect and act on these changes: Retail stores must update shelf labels promptly to reflect the latest prices. E-commerce…",
-   "published": "2026-11-18T18:32:08+00:00",
+   "id": "61efa9a798d6",
+   "title": "Microsoft Copilot Studio: Share workflows with co-owners for collaborative editing",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=580864",
+   "summary": "Makers can share a workflow with other users as co-owners so they can view, edit, and manage it. Share from the workflows page or the designer. Review the connections the workflow uses and their permissions before sharing. See who the workflow is shared with when reopening Share. Co-owners can edit and run the…",
+   "published": "2026-11-19T21:30:10+00:00",
    "products": [
-    "Microsoft 365"
+    "Copilot"
    ],
    "stage": null,
    "feature_id": null
   },
   {
-   "id": "41eb3abe36cb",
-   "title": "Dynamics 365 Commerce: Unified Pricing Management - Manage purchase prices and discounts with attribute-based pricing",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577416",
-   "summary": "Procurement teams can manage supplier pricing with the same flexible, attribute-based model already used for sales, instead of maintaining large numbers of separate trade agreement lines. With this feature, Unified Pricing Management attributes extend to vendors and purchase orders. Pricing managers can create…",
-   "published": "2026-11-18T18:32:08+00:00",
+   "id": "efeec0dc0482",
+   "title": "Microsoft Copilot Studio: Service principal owner for workflows",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=580863",
+   "summary": "Workflows can now be owned under a service principal (a Microsoft Entra app registration) instead of a named user account. GA date: December CY2026",
+   "published": "2026-11-19T21:30:10+00:00",
+   "products": [
+    "Entra",
+    "Copilot"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "3352aae2e07d",
+   "title": "Microsoft Teams: Voice phishing detection for external calls",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=580443",
+   "summary": "Voice phishing detection helps protect Microsoft Teams users from potential scams during one-to-one calls with people outside their organization. Using AI, Teams analyzes conversations for signs of social engineering and alerts recipients when suspicious activity is detected, helping them recognize potential threats…",
+   "published": "2026-11-19T21:30:10+00:00",
    "products": [
     "Teams"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "f1c3d312c36e",
-   "title": "Dynamics 365 Commerce: Unified pricing management - manage procurement charges with attribute-based pricing",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577850",
-   "summary": "Procurement teams can apply supplier charges, such as freight, handling or surcharges, consistently, without setting them up manually on each purchase order. With this feature, pricing managers can use unified pricing management to define procurement charges based on attributes. Purchase orders then pick up the right…",
-   "published": "2026-11-18T00:49:47+00:00",
-   "products": [
-    "Teams"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "abb05946fd56",
-   "title": "Dynamics 365 Supply Chain Management: Unified Pricing Management Manage purchase prices and discounts with attribute-based pricing",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577848",
-   "summary": "Procurement teams can manage supplier pricing with the same flexible, attribute-based model already used for sales, instead of maintaining large numbers of separate trade agreement lines. With this feature, Unified Pricing Management attributes extend to vendors and purchase orders. Pricing managers can create…",
-   "published": "2026-11-18T00:49:47+00:00",
-   "products": [
-    "Teams"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "73b9b727868c",
-   "title": "Dynamics 365 Supply Chain Management: Unified pricing management - Rental Management - retrieve rental prices through an API",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577847",
-   "summary": "The rental pricing API runs on the commerce scale unit and supports headless experiences such as rental e-commerce price queries. It calculates prices from your rental pricing rules with better performance, so every channel can get fast, more consistent results. GA date: June CY2027 Preview date: April CY2027",
-   "published": "2026-11-18T00:49:47+00:00",
-   "products": [
-    "Microsoft 365"
    ],
    "stage": null,
    "feature_id": null
@@ -153,6 +94,18 @@
    "published": "2026-11-17T18:36:41+00:00",
    "products": [
     "Copilot"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "a9ff21950d3d",
+   "title": "Power Apps: Use the modernized Personal settings experience",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=579899",
+   "summary": "The Personal settings experience in model-driven apps has been modernized with clearer organization, updated navigation, and a more consistent design. Users can select a button to return to the classic Personal settings experience if needed. Availability Field Value Release Channel Weekly Version 2612.1 Applies to…",
+   "published": "2026-11-13T23:01:18+00:00",
+   "products": [
+    "Microsoft 365"
    ],
    "stage": null,
    "feature_id": null
@@ -177,6 +130,30 @@
    "published": "2026-10-26T23:15:50+00:00",
    "products": [
     "Teams"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "7c9bd28de9c5",
+   "title": "Power Apps: Model-driven apps - Use row summaries in US Government clouds",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=576279",
+   "summary": "Row summaries are expanding to supported US Government clouds, giving users in regulated environments access to AI-generated insights that help them understand model-driven app records at a glance. This release brings the row summary experience available to commercial customers to supported government environments…",
+   "published": "2026-10-23T23:10:38+00:00",
+   "products": [
+    "Microsoft 365"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "54a77957658a",
+   "title": "Power Apps: Expand model access and Maker Studio availability for generative pages via GitHub",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=576285",
+   "summary": "Connect your GitHub account to access additional model options for the built-in gen page coding agent directly in the generative page designer in Maker Studio. Makers can use the agent to create and refine generative pages without leaving the Power Apps authoring experience. This integration also brings Maker Studio…",
+   "published": "2026-10-23T21:59:27+00:00",
+   "products": [
+    "Microsoft 365"
    ],
    "stage": null,
    "feature_id": null
@@ -232,6 +209,18 @@
    "feature_id": null
   },
   {
+   "id": "c406e70eecb1",
+   "title": "Microsoft Edge: Simplified Energy Saver",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=573291",
+   "summary": "Energy saver, formerly known as efficiency mode, will have new defaults and different setting options. Edge will now support and recommend users to use the BatterySaverModeAvailability policy to manage the energy saver feature. The energy saver feature has been simplified to become enabled under two conditions: on low…",
+   "published": "2026-10-21T23:02:10+00:00",
+   "products": [
+    "Microsoft 365"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
    "id": "a9e9a59bcfd4",
    "title": "Microsoft Teams: AI Interpreter for Teams Events",
    "link": "https://www.microsoft.com/microsoft-365/roadmap?id=576711",
@@ -263,6 +252,19 @@
    "published": "2026-10-16T19:08:29+00:00",
    "products": [
     "Microsoft 365"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "7e25f790c5d8",
+   "title": "Microsoft Purview: Information Protection - Apply default SharePoint library labels to data at rest",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=575283",
+   "summary": "Enables auto‑labeling of existing SharePoint files to match the default sensitivity label configured on their document library. This helps organizations close labeling gaps for data at rest and ensure consistent, secure‑by‑default protection across SharePoint libraries—without relying on manual user labeling. GA date…",
+   "published": "2026-10-12T23:01:05+00:00",
+   "products": [
+    "SharePoint",
+    "Purview"
    ],
    "stage": null,
    "feature_id": null
@@ -304,10 +306,10 @@
    "feature_id": null
   },
   {
-   "id": "e495e4bce3fd",
-   "title": "Microsoft Teams: Pop out sign language interpreter meeting video for continuous visibility",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=571387",
-   "summary": "Keep communication more accessible throughout your meeting. You can now pop out a sign language interpreter into a separate, resizable window that stays visible across monitors and apps. Designed to support Deaf and Hard of Hearing users, the sign language interpreter's popout video will persist while viewers are…",
+   "id": "4396486b3c61",
+   "title": "Planner: Expiration of plans from meetings due to inactivity",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=571392",
+   "summary": "Planner plans created from Teams meetings (via Meeting Notes or Loop) often remain unused long after the meeting ends. These inactive plans accumulate and clutter over time. This feature automatically expires and deletes meeting-created plans that have had no task activity for 180 days. Only the Planner plan is…",
    "published": "2026-09-18T22:00:04+00:00",
    "products": [
     "Teams"
@@ -316,11 +318,11 @@
    "feature_id": null
   },
   {
-   "id": "0c1e42decbf3",
-   "title": "Microsoft Viva: Campaigns Hub in Engage and Engage in Teams mobile",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=570157",
-   "summary": "The Campaigns Hub in Viva Engage provides a centralized mobile destination where employees can discover and participate in organizational campaigns. Available in the Viva Engage app and Viva Engage in Teams mobile, the hub highlights top and sponsored campaigns, enables users to browse active and completed campaigns…",
-   "published": "2026-08-27T22:38:48+00:00",
+   "id": "18c658fc9c06",
+   "title": "Microsoft Teams: Report suspicious guest invitations",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=571297",
+   "summary": "Microsoft Teams will enable users to report suspicious guest invitations directly from Teams. When users receive an unexpected or potentially malicious guest invitation, they can report it to their IT admin for review, helping identify and mitigate phishing and other abuse through guest invitations. GA date: November…",
+   "published": "2026-09-14T23:03:47+00:00",
    "products": [
     "Teams"
    ],
@@ -328,36 +330,49 @@
    "feature_id": null
   },
   {
-   "id": "f14704df2282",
-   "title": "Microsoft Viva: Campaigns in SharePoint",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=568073",
-   "summary": "Campaigns in SharePoint (site campaigns) is a new capability that brings Viva Amplify’ s campaign management natively into SharePoint. Corporate communications teams now have a unified place to create, distribute, and measure their news without leaving the platform where their news content already lives. This feature…",
-   "published": "2026-07-23T23:27:16+00:00",
+   "id": "9c3be5021a7d",
+   "title": "Microsoft Teams: Enable agents for existing applications in your organization",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=569608",
+   "summary": "For third-party applications already being used in your organization, admins can now discover and enable the corresponding Teams agents from within the Teams Admin Center. Admins receive recommendations for high-value agents and gain visibility into any required configuration changes during the enablement workflow…",
+   "published": "2026-08-28T21:59:29+00:00",
+   "products": [
+    "Teams"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "85e08a25bd18",
+   "title": "Microsoft Copilot (Microsoft 365): Self-serve sync connectors",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=568788",
+   "summary": "Self-serve sync connectors enable users to securely connect their own external data sources, such as Jira and Confluence Cloud, to Microsoft 365 Copilot. Using their own credentials and permissions, users can synchronize content they already have access to, making it discoverable in Copilot Chat and Microsoft Search…",
+   "published": "2026-08-20T22:38:45+00:00",
+   "products": [
+    "Copilot"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "6bac0ef83cbe",
+   "title": "SharePoint: Cross-post SharePoint News to Engage",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=568074",
+   "summary": "This feature allows SharePoint News authors to distribute posts to an Engage community or storyline while preserving full fidelity rendering and a unified conversation experience. SharePoint News post will appear consistently in Engage across feeds, digests, Outlook, Teams, desktop, web and mobile apps. When…",
+   "published": "2026-07-22T22:41:54+00:00",
    "products": [
     "Teams",
-    "SharePoint"
+    "SharePoint",
+    "Outlook"
    ],
    "stage": null,
    "feature_id": null
   },
   {
-   "id": "6ae7e90a0f3b",
-   "title": "Microsoft Purview: Data Loss Prevention - Data Security for non-Microsoft connected apps",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=568075",
-   "summary": "Microsoft Purview Data Loss Prevention and Information Protection Auto-labeling capabilities now extend to non-Microsoft connected apps (e.g., Google Workspace, Box, Dropbox, Salesforce, ServiceNow, Amazon Web Services, and Cisco Webex). The conditions and actions supported for each of these applications vary. GA…",
-   "published": "2026-07-21T22:37:32+00:00",
-   "products": [
-    "Purview"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "56ac319dfb54",
-   "title": "Microsoft Teams: Emoji shortcuts with autocomplete on mobile",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=565370",
-   "summary": "Teams brings desktop-style emoji shortcuts to mobile (iOS and Android), allowing you to insert emojis by typing colon-based commands like:smile:. Real-time autocomplete suggestions help you quickly find the right emoji as you type, while support for custom emojis enables more personalized and expressive communication…",
-   "published": "2026-06-10T23:00:02+00:00",
+   "id": "b7176c45267f",
+   "title": "Microsoft Teams: Recently used emojis sync across devices",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=554927",
+   "summary": "Recently used emojis and reactions sync across Teams on desktop and mobile, making it easier to express yourself wherever you work. GA date: July CY2026",
+   "published": "2026-02-05T00:15:27+00:00",
    "products": [
     "Teams"
    ],
@@ -365,27 +380,24 @@
    "feature_id": null
   },
   {
-   "id": "36291bd2dba9",
-   "title": "Microsoft 365: Create full-workload backup policies for Microsoft 365 Backup",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=464990",
-   "summary": "Automatically backup all Exchange or OneDrive users and/or SharePoint sites in the tenant and have the tool automatically add new users/sites to the backup policy. GA date: January CY2027 Preview date: July CY2026",
-   "published": "2024-10-29T23:15:28+00:00",
+   "id": "8ac3d4ea8565",
+   "title": "Microsoft Copilot (Microsoft 365): Improved content freshness using Copilot connectors with webhooks-led notifications",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=505442",
+   "summary": "Copilot connectors will offer improved content freshness with more frequent sync of updates using webhook event notifications. The following connectors are in scope - Azure DevOps, Jira cloud, Confluence cloud, Trello, Asana, Bitbucket, GitHub and Gitlab. GA date: August CY2026 Preview date: March CY2026",
+   "published": "2025-10-31T22:00:11+00:00",
    "products": [
-    "Exchange",
-    "SharePoint",
-    "OneDrive"
+    "Copilot"
    ],
    "stage": null,
    "feature_id": null
   },
   {
-   "id": "ca3f3b4fc51d",
-   "title": "Microsoft Edge: Writing Assistance with Copilot in Edge is being upgraded to include enterprise data protection compliance standards",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=420335",
-   "summary": "Writing Assistance with Copilot in Edge, which lets users edit typed text for tone, format, and length within an open page in Microsoft Edge, is being updated to include enterprise data protection for commercial customers. Once Writing Assistance is available, users signed in with a Microsoft Entra ID will have…",
-   "published": "2024-10-03T23:30:37+00:00",
+   "id": "82c84578304b",
+   "title": "Microsoft Copilot (Microsoft 365): Improved content freshness using Copilot connectors with webhooks-led notifications",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=505441",
+   "summary": "Copilot connectors will offer improved content freshness with more frequent sync of updates using webhook event notifications. The following connectors are in scope - Azure DevOps, Jira cloud, Confluence cloud, Trello, Asana, Bitbucket, GitHub and Gitlab. GA date: October CY2026 Preview date: August CY2025",
+   "published": "2025-10-31T22:00:11+00:00",
    "products": [
-    "Entra",
     "Copilot"
    ],
    "stage": null,
@@ -436,18 +448,6 @@
    "products": [
     "Teams",
     "Outlook"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "daadd7ad5466",
-   "title": "Microsoft Viva: Search in Viva Connections on iOS and Android tablet",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=382643",
-   "summary": "This adds a search entry point and a new tailored experience for Viva Connection users on iOS and Android tablets. GA date: April CY2024",
-   "published": "2024-02-14T00:45:01+00:00",
-   "products": [
-    "Microsoft 365"
    ],
    "stage": null,
    "feature_id": null
