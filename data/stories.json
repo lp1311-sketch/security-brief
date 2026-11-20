@@ -67,27 +67,6 @@
    "instructions_checked": true
   },
   {
-   "id": "fcdcf30ed87c",
-   "source": "ars",
-   "source_name": "Ars Technica Security",
-   "official": false,
-   "source_type": "news",
-   "title": "Windows 0-day dropped by disgruntled researcher hands hackers System rights",
-   "link": "https://arstechnica.com/security/2026/11/windows-0-day-dropped-by-disgruntled-researcher-hands-hackers-system-rights/",
-   "published": "2026-11-13T16:26:32+00:00",
-   "summary": "Nightmare Eclipse, the pseudonym of a researcher with an ongoing, very public beef with Microsoft, has dropped yet another Windows zero-day. On Tuesday, Nightmare Eclipse disclosed SignDrop, a vulnerability that gives local users full System rights on some versions of Windows. The vulnerability resides in the Common…",
-   "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-1237693734-1152x648-1783631068.jpg",
-   "cves": [],
-   "first_seen": "2026-11-13T17:19:54.176696+00:00",
-   "instructions": [
-    "“If everything is chained correctly, funnily this legit security mitigation can be used against itself and allow an elevation [of] privileges,” Nightmare Eclipse wrote . “Everything is done properly by Microsoft here but the logic allows abuse.”",
-    "If it’s in learning mode or enforcement mode, the system is vulnerable, and the PoC supplied in the post should spawn a SYSTEM shell.",
-    "For a system to be vulnerable, Dormann said, the HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\CLFS\\Authentication\\Mode value must be 0 or 1.” Out of the many machines Dormann uses, only a single one met this requirement.",
-    "“The requirements are important in that it seems to require Windows 26H2, and one that has existed for more than 90 days, it seems,” he explained. “That is, you can’t just take a new 26H2 system and install updates and have it work.”"
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "e6f27bb6bf22",
    "source": "windows-blog",
    "source_name": "Windows Experience Blog",
@@ -471,6 +450,53 @@
    "instructions_checked": true
   },
   {
+   "id": "731521743606",
+   "source": "borncity",
+   "source_name": "Born's IT and Windows Blog",
+   "official": false,
+   "source_type": "news",
+   "title": "Kritische Schwachstelle CVE-2026-123890 in vCenter 8.0, 9.0 und 9.1",
+   "link": "https://borncity.com/blog/2026/11/20/kritische-schwachstelle-cve-2026-123890-in-vcenter-8-0-9-0-und-9-1/",
+   "published": "2026-11-20T11:33:40+00:00",
+   "summary": "In VMware vCenter gibt es in den Versionen 8.0, 9.0 und 9.1 eine kritische Schwachstelle CVE-2026-123890. Diese ermöglicht es einem Angreifer mit Netzwerkzugriff, die Authentifizierung zu umgehen und sich unbefugten Zugriff auf das System zu verschaffen. Die Schwachstelle scheint ausgenutzt … Weiterlesen → Quelle",
+   "image": null,
+   "cves": [
+    "CVE-2026-123890"
+   ],
+   "first_seen": "2026-11-20T17:21:09.204406+00:00",
+   "instructions": [
+    "Neueste Kommentare Herr P. zu Windows 11 25H2 – 26H2: Preview Update KB5132057 (19.",
+    "Hobbyadmin zu Windows 11 25H2 – 26H2: Preview Update KB5132057 (19.",
+    "Herr P. zu Windows 11 25H2 – 26H2: Preview Update KB5132057 (19.",
+    "https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/release-notes/vcenter-server-update-and-patch-release-notes/vsphere-vcenter-server-80u3m-release-notes.html"
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "332040abbcf8",
+   "source": "borncity",
+   "source_name": "Born's IT and Windows Blog",
+   "official": false,
+   "source_type": "news",
+   "title": "OpenSSL-Schwachstelle CVE-2026-121481",
+   "link": "https://borncity.com/blog/2026/11/20/openssl-schwachstelle-cve-2026-121481/",
+   "published": "2026-11-20T17:05:36+00:00",
+   "summary": "Am 18. November 2026 ist eine kritische Schwachstelle in der Base64 Encoding Function der Software OpenSSL publik geworden. Die Schwachstelle CVE-2026-121481 besitzt einen CVSS 3.1-Score von 9.8 und ist als kritisch eingestuft. Ein Heap-Overflow kann zu einer Speicherbeschädigung führen. Mir … Weiterlesen → Quelle",
+   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
+   "cves": [
+    "CVE-2026-121481"
+   ],
+   "first_seen": "2026-11-20T17:21:09.204406+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Neueste Kommentare Herr P. zu Windows 11 25H2 – 26H2: Preview Update KB5132057 (19.",
+    "Hobbyadmin zu Windows 11 25H2 – 26H2: Preview Update KB5132057 (19.",
+    "Herr P. zu Windows 11 25H2 – 26H2: Preview Update KB5132057 (19.",
+    "Tommy zu PHP-Update 8.x vom 19.11.2026; aber Schwachstellen weiter ausnutzbar?"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "9173cce6ca95",
    "source": "borncity",
    "source_name": "Born's IT and Windows Blog",
@@ -709,25 +735,6 @@
    "instructions_checked": true
   },
   {
-   "id": "ea376f0b6ca4",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-108401 Remote Desktop Services Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108401",
-   "published": "2026-11-13T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-108401"
-   ],
-   "first_seen": "2026-11-13T18:11:27.621519+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "7ae1f997bee0",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -742,63 +749,6 @@
     "CVE-2026-108440"
    ],
    "first_seen": "2026-11-17T17:27:15.638658+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "3b2c5ccdae53",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-109473 Windows Kernel Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109473",
-   "published": "2026-11-13T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-109473"
-   ],
-   "first_seen": "2026-11-13T18:11:27.621519+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "8ac7c5dbeb42",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-112765 Windows Print Spooler Components Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-112765",
-   "published": "2026-11-13T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-112765"
-   ],
-   "first_seen": "2026-11-13T18:11:27.621519+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "bc4f0e4f288a",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-113749 Microsoft Windows Codecs Library Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-113749",
-   "published": "2026-11-13T16:00:00+00:00",
-   "summary": "Added Microsoft Office software to the Security Updates table. Customers that are running supported version of Microsoft Office are encouraged to update to the indicated version to be protected from this vulnerability.",
-   "image": null,
-   "cves": [
-    "CVE-2026-113749"
-   ],
-   "first_seen": "2026-11-13T23:05:37.437281+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -861,63 +811,6 @@
    "instructions_checked": true
   },
   {
-   "id": "78c9d1b1c186",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-119396 Windows Remote Access API Tampering Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119396",
-   "published": "2026-11-13T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-119396"
-   ],
-   "first_seen": "2026-11-13T18:11:27.621519+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "c4fccd48f22d",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-119853 Remote Access API Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119853",
-   "published": "2026-11-13T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-119853"
-   ],
-   "first_seen": "2026-11-13T18:11:27.621519+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "92d0eff03038",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-119861 Windows Internet Connection Sharing (ICS) Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119861",
-   "published": "2026-11-13T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-119861"
-   ],
-   "first_seen": "2026-11-13T18:11:27.621519+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "8412ea96e2ce",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -951,25 +844,6 @@
     "CVE-2026-119961"
    ],
    "first_seen": "2026-11-17T17:27:15.638658+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "0874ef4142ee",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-119988 Windows SMB Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119988",
-   "published": "2026-11-13T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-119988"
-   ],
-   "first_seen": "2026-11-13T18:11:27.621519+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -1049,310 +923,6 @@
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
-  },
-  {
-   "id": "f9ccc4bbd374",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium CVE-2026-125342: Uninitialized resource",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-125342",
-   "published": "2026-11-13T16:00:00+00:00",
-   "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-   "image": null,
-   "cves": [
-    "CVE-2026-125342"
-   ],
-   "first_seen": "2026-11-13T23:05:37.437281+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "4e9c644242c4",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium CVE-2026-125344: Type confusion",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-125344",
-   "published": "2026-11-13T16:00:00+00:00",
-   "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-   "image": null,
-   "cves": [
-    "CVE-2026-125344"
-   ],
-   "first_seen": "2026-11-13T23:05:37.437281+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "ff5c8c8f194a",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium CVE-2026-125348: Out of bounds write",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-125348",
-   "published": "2026-11-13T16:00:00+00:00",
-   "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-   "image": null,
-   "cves": [
-    "CVE-2026-125348"
-   ],
-   "first_seen": "2026-11-13T23:05:37.437281+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "f145d755f815",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium CVE-2026-126840: Out of bounds write",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126840",
-   "published": "2026-11-13T16:00:00+00:00",
-   "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-   "image": null,
-   "cves": [
-    "CVE-2026-126840"
-   ],
-   "first_seen": "2026-11-13T23:05:37.437281+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "bc3657d8b9a0",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium CVE-2026-126841: Out of bounds read",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126841",
-   "published": "2026-11-13T16:00:00+00:00",
-   "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-   "image": null,
-   "cves": [
-    "CVE-2026-126841"
-   ],
-   "first_seen": "2026-11-13T23:05:37.437281+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "f589090c5856",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium CVE-2026-126843: Type confusion",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126843",
-   "published": "2026-11-13T16:00:00+00:00",
-   "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-   "image": null,
-   "cves": [
-    "CVE-2026-126843"
-   ],
-   "first_seen": "2026-11-13T23:05:37.437281+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "a6d4478f08e6",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium CVE-2026-126844: Uninitialized resource",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126844",
-   "published": "2026-11-13T16:00:00+00:00",
-   "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-   "image": null,
-   "cves": [
-    "CVE-2026-126844"
-   ],
-   "first_seen": "2026-11-13T23:05:37.437281+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "1336803df047",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium CVE-2026-126845: Uninitialized resource",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126845",
-   "published": "2026-11-13T16:00:00+00:00",
-   "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-   "image": null,
-   "cves": [
-    "CVE-2026-126845"
-   ],
-   "first_seen": "2026-11-13T23:05:37.437281+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "a8225629afd4",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium CVE-2026-126847: Type confusion",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126847",
-   "published": "2026-11-13T16:00:00+00:00",
-   "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-   "image": null,
-   "cves": [
-    "CVE-2026-126847"
-   ],
-   "first_seen": "2026-11-13T23:05:37.437281+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "f09cf9a98434",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium CVE-2026-126848: Uninitialized resource",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126848",
-   "published": "2026-11-13T16:00:00+00:00",
-   "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-   "image": null,
-   "cves": [
-    "CVE-2026-126848"
-   ],
-   "first_seen": "2026-11-13T23:05:37.437281+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "aa1fcb3a6520",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium CVE-2026-126849: Type confusion",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126849",
-   "published": "2026-11-13T16:00:00+00:00",
-   "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-   "image": null,
-   "cves": [
-    "CVE-2026-126849"
-   ],
-   "first_seen": "2026-11-13T23:05:37.437281+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "673fdfd632ff",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium CVE-2026-126851: Use after free",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126851",
-   "published": "2026-11-13T16:00:00+00:00",
-   "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-   "image": null,
-   "cves": [
-    "CVE-2026-126851"
-   ],
-   "first_seen": "2026-11-13T23:05:37.437281+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "b0619e1b336a",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium CVE-2026-126852: Use after free",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126852",
-   "published": "2026-11-13T16:00:00+00:00",
-   "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-   "image": null,
-   "cves": [
-    "CVE-2026-126852"
-   ],
-   "first_seen": "2026-11-13T23:05:37.437281+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "c3db5c38e582",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium CVE-2026-126853: Uninitialized resource",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126853",
-   "published": "2026-11-13T16:00:00+00:00",
-   "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-   "image": null,
-   "cves": [
-    "CVE-2026-126853"
-   ],
-   "first_seen": "2026-11-13T23:05:37.437281+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "d13a63a624c8",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium CVE-2026-126854: Incorrect authorization",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126854",
-   "published": "2026-11-13T16:00:00+00:00",
-   "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-   "image": null,
-   "cves": [
-    "CVE-2026-126854"
-   ],
-   "first_seen": "2026-11-13T23:05:37.437281+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "d1313a6ee7cd",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium CVE-2026-126856: Incomplete cleanup",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126856",
-   "published": "2026-11-13T16:00:00+00:00",
-   "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-   "image": null,
-   "cves": [
-    "CVE-2026-126856"
-   ],
-   "first_seen": "2026-11-13T23:05:37.437281+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
   },
   {
    "id": "baf7646f34f2",
@@ -1770,44 +1340,6 @@
    "instructions_checked": true
   },
   {
-   "id": "20b9366d21f0",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-88217 Windows Graphics Kernel Information Disclosure Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88217",
-   "published": "2026-11-13T16:00:00+00:00",
-   "summary": "Added Microsoft Office software to the Security Updates table. Customers that are running supported version of Microsoft Office are encouraged to update to the indicated version to be protected from this vulnerability.",
-   "image": null,
-   "cves": [
-    "CVE-2026-88217"
-   ],
-   "first_seen": "2026-11-13T23:05:37.437281+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "60dbfcb238d0",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-94522 Windows Kernel Transaction Manager Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-94522",
-   "published": "2026-11-13T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-94522"
-   ],
-   "first_seen": "2026-11-13T18:11:27.621519+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "d59df8950f3e",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -1822,101 +1354,6 @@
     "CVE-2026-95874"
    ],
    "first_seen": "2026-11-20T01:13:40.105404+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "4a36f44bc13a",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-95922 Windows Graphics Kernel Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95922",
-   "published": "2026-11-13T16:00:00+00:00",
-   "summary": "Added Microsoft Office software to the Security Updates table. Customers that are running supported version of Microsoft Office are encouraged to update to the indicated version to be protected from this vulnerability.",
-   "image": null,
-   "cves": [
-    "CVE-2026-95922"
-   ],
-   "first_seen": "2026-11-13T23:05:37.437281+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "36273c8a5b43",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-95932 Windows Graphics Kernel Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95932",
-   "published": "2026-11-13T16:00:00+00:00",
-   "summary": "Added Microsoft Office software to the Security Updates table. Customers that are running supported version of Microsoft Office are encouraged to update to the indicated version to be protected from this vulnerability.",
-   "image": null,
-   "cves": [
-    "CVE-2026-95932"
-   ],
-   "first_seen": "2026-11-13T23:05:37.437281+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "c290f64ed407",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-95942 Windows Graphics Kernel Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95942",
-   "published": "2026-11-13T16:00:00+00:00",
-   "summary": "Added Microsoft Office software to the Security Updates table. Customers that are running supported version of Microsoft Office are encouraged to update to the indicated version to be protected from this vulnerability.",
-   "image": null,
-   "cves": [
-    "CVE-2026-95942"
-   ],
-   "first_seen": "2026-11-13T23:05:37.437281+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "56270f5b6a13",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-95948 Windows Graphics Kernel Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95948",
-   "published": "2026-11-13T16:00:00+00:00",
-   "summary": "Added Microsoft Office software to the Security Updates table. Customers that are running supported version of Microsoft Office are encouraged to update to the indicated version to be protected from this vulnerability.",
-   "image": null,
-   "cves": [
-    "CVE-2026-95948"
-   ],
-   "first_seen": "2026-11-13T23:05:37.437281+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "0e799fe46691",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-95953 Windows Graphics Kernel Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95953",
-   "published": "2026-11-13T16:00:00+00:00",
-   "summary": "Added Microsoft Office software to the Security Updates table. Customers that are running supported version of Microsoft Office are encouraged to update to the indicated version to be protected from this vulnerability.",
-   "image": null,
-   "cves": [
-    "CVE-2026-95953"
-   ],
-   "first_seen": "2026-11-13T23:05:37.437281+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -1955,63 +1392,6 @@
     "CVE-2026-96082"
    ],
    "first_seen": "2026-11-20T01:13:40.105404+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "fc10a8e15ebc",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-96126 Windows Graphics Kernel Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96126",
-   "published": "2026-11-13T16:00:00+00:00",
-   "summary": "Added Microsoft Office software to the Security Updates table. Customers that are running supported version of Microsoft Office are encouraged to update to the indicated version to be protected from this vulnerability.",
-   "image": null,
-   "cves": [
-    "CVE-2026-96126"
-   ],
-   "first_seen": "2026-11-13T23:05:37.437281+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "85f0b97d9050",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-96144 Windows Graphics Kernel Information Disclosure Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96144",
-   "published": "2026-11-13T16:00:00+00:00",
-   "summary": "Added Microsoft Office software to the Security Updates table. Customers that are running supported version of Microsoft Office are encouraged to update to the indicated version to be protected from this vulnerability.",
-   "image": null,
-   "cves": [
-    "CVE-2026-96144"
-   ],
-   "first_seen": "2026-11-13T23:05:37.437281+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "78e2b428b487",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-96150 Microsoft Windows Codecs Library Information Disclosure Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96150",
-   "published": "2026-11-13T16:00:00+00:00",
-   "summary": "Added Microsoft Office software to the Security Updates table. Customers that are running supported version of Microsoft Office are encouraged to update to the indicated version to be protected from this vulnerability.",
-   "image": null,
-   "cves": [
-    "CVE-2026-96150"
-   ],
-   "first_seen": "2026-11-13T23:05:37.437281+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -2221,6 +1601,27 @@
    "instructions_checked": true
   },
   {
+   "id": "9dbbebdeb6a3",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control",
+   "link": "https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html",
+   "published": "2026-11-20T16:58:16+00:00",
+   "summary": "Cybersecurity researchers have disclosed details of a previously unknown Android malware framework called Bazuka that offers large language model (LLM) integration for victim management and control at scale. Dutch mobile security company ThreatFabric said it discovered the threat in late October 2026 during an…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMs4vBdivbF3Y-4yd3PWqjSTuG2PPDvCemM211pzVl2Jhkus9d14_2MzRgdrlNhRxaHa_2rlIN34kUGHAlV_Y2dMnfmYGlUEzUcab0c_s3N8Zoe8P3rcJ-RJmo2luVci9bVqmwtFhpL4rfR2Uo-ZwvqfqFMwRb_3WwoOvFIaunPd7WMOJ4yW9rjbHEKDwf/s1600/android-malware.jpg",
+   "cves": [],
+   "first_seen": "2026-11-20T17:21:09.204406+00:00",
+   "instructions": [
+    "A dropper, which asks the victim for permissions to install applications from third-party sources and then proceeds to download a standalone APK (\"com.tiktok.premium.pro\") that serves as the stager",
+    "\"The core can open the system settings screen, find the relevant menu, enable Developer options, and then enable Wireless Debugging.\"",
+    "Bazuka supports 23 modules that enable comprehensive data and cryptocurrency theft -",
+    "uninstall_shield , to counter attempts to uninstall or force-stop the application"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "1a13d7025b37",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2246,7 +1647,7 @@
    "source_type": "news",
    "title": "China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data",
    "link": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html",
-   "published": "2026-11-20T06:33:31+00:00",
+   "published": "2026-11-20T09:38:15+00:00",
    "summary": "The suspected China-nexus cyber espionage group known as Armory Castle (formerly UNC5221) has been attributed to the zero-day exploitation of a critical security flaw in VMware vCenter Server in early September 2026. The vulnerability, tracked as CVE-2026-123890 (CVSS score: 9.8), is a case of authentication bypass in…",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTSAI-N-DRII1YA3I98ZVnKnG0SMgm97oEAqyiSXZB23DPwzvTk3figFLsTCKsMJRxRhjKEPFblxfcOuB_UXc_OAXJRiVI07Jxjn-CebJVHiRQ5sc43AifBpUPNfU5-LRD6QEGbX7Vnt_HAmJZiLojS32PtNWwIWeideJZnIpgjrstJ0Iy84lYd47bePk/s1600/chinese-vmware.jpg",
    "cves": [
@@ -2441,27 +1842,6 @@
    "instructions_checked": true
   },
   {
-   "id": "c6e1d6a77271",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
-   "link": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
-   "published": "2026-11-13T14:28:58+00:00",
-   "summary": "The U.S. Federal Bureau of Investigation (FBI) has established that threat actors tied to the Democratic People's Republic of Korea (DPRK aka North Korea) have stolen more than $400 million worth of cryptocurrency as part of a social engineering scheme codenamed FaceStealer in the last 18 months. As part of a…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDmjJA-t4vvigohRIfUR6JExYEPR0Dohh29eooVagQOvRyRDgdisxAy3wSWni5iFHjf2Dk8X2BavSeGO8hJ-wCTbDuffsdtamOuqj1PVTb75EWNF5vNe3tCsS6pyS_pSzNhEELOVU0DxHdmGx4Kt8KNqwz8YheAM9kEoVmpnHeVV1qsofLCBYDEt0E2IqX/s1600/flash.jpg",
-   "cves": [],
-   "first_seen": "2026-11-13T15:12:20.611857+00:00",
-   "instructions": [
-    "Trick the target into infecting themselves: The attacker sends a message to the target, claiming there is an audio issue or some other technical error (e.g., a deprecated Zoom SDK), and urges them to click on a link to apply an update to address the problem.",
-    "Set up the meeting: Should the target express interest, the attacker sends a Calendly invite via Telegram to schedule the video meeting.",
-    "According to a joint cybersecurity advisory published by cybersecurity and intelligence agencies from Japan, the U.S., Australia, and Germany in late September 2026, the long-running campaign is estimated to have compromised at least 30,000 devices located in 100 countries.",
-    "Interview assignments with downloads should only ever run in a disposable virtual machine, never on a work laptop."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "74d12e442320",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2500,6 +1880,22 @@
     "This includes a Chinese-language phishing platform called Jieyou that has integrated an LLM chatbot assistant to allow customers to configure phishing panels and modify existing templates using natural language commands without necessarily having the technical expertise to do so."
    ],
    "instructions_checked": true
+  },
+  {
+   "id": "c9ddefa65f50",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Hackers Exploit Critical Cisco Expressway Flaw, Breach Four Devices and Reach Internal Network",
+   "link": "https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html",
+   "published": "2026-11-20T10:32:50+00:00",
+   "summary": "Threat actors have been observed exploiting a recently disclosed critical security flaw in Cisco Expressway to breach a Russian organization shortly after the public release of a proof-of-concept (PoC) exploit. The activity involves the exploitation of CVE-2026-76466 (CVSS score: 9.8), a vulnerability that could allow…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrMm7M_HyuVDt9NknngHSgyfGKu0DR8VTc_GYL-tr_hMhTmi3EAZnM8x5byJQRYEqcUAZlDTR_Xi4RcMm4lidmk9UR_iyTWpDa5Mn6xRBoNwAf3auen2u6guKxnvoIrcQOfq7Mm1clmsyBMYVcjaOqVFYiN4mXgYSyR5_DUSrmVOLDK5mQeAS8BBB3X5-5/s1600/cisco-cyberattacks.jpg",
+   "cves": [
+    "CVE-2026-76466"
+   ],
+   "first_seen": "2026-11-20T17:21:09.204406+00:00"
   },
   {
    "id": "25f152a1b586",
@@ -2662,23 +2058,25 @@
    "instructions_checked": true
   },
   {
-   "id": "fb5ac890be2a",
+   "id": "f80afcc47857",
    "source": "thehackernews",
    "source_name": "The Hacker News",
    "official": false,
    "source_type": "news",
-   "title": "New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs",
-   "link": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
-   "published": "2026-11-13T15:27:05+00:00",
-   "summary": "Two attacks made public this week allow a malicious host to read data inside AMD SEV-SNP-protected virtual machines (VMs), which are built to keep the server's operator out. One of them, Mior, can also modify a VM's memory and fake the signed report confirming which software it runs. Both need control of the server's…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi28SrA-dW0l0kreAg1vMHHOgBRMM7lzxv5qg2FT2HzRxReJ96pxZP4Fjpm15fYWDDgWpbBI8iC119aE37t_kmQ4guoA70NUlJsdiA4hFvTg8fflx9fsKqUsGuoB-S9VS5pPd38EBVYRGmvKIT5EylE3IwEK8bBCp5CkLrdTwhbyUA2xWN_0iOynP33yE8/s1600/amd-flaws.jpg",
-   "cves": [],
-   "first_seen": "2026-11-13T16:16:35.671151+00:00",
+   "title": "Linux KVM Flaw CVE-2026-99312 Lets Guest VMs Access Host Memory on AMD Hosts",
+   "link": "https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html",
+   "published": "2026-11-20T12:20:00+00:00",
+   "summary": "A flaw in KVM, the hypervisor built into the Linux kernel, let researchers read about 127 GB of a cloud server's memory from inside a virtual machine of their own on DigitalOcean. On a shared server, that memory can include other customers' virtual machines. The flaw, tracked as CVE-2026-99312, affects only hosts with…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjg-jisyf4SWwWYA_RUtOoVqBviv2uNAUl6vEeGjsuBA0aOhfLYw7yHitbRBxAoWcf5ZP0UcGovNmyk-u-320fLFYIyUz7jtR77GiveyLdqsZWJ0DohwBfEFyN0KlNAIpIcpS9B6jHEZJybmTu7nuKM-PhSNPco-Z1QmacaSfwWyOWLXzT2WqaEdbZ810M/s1600/vms.jpg",
+   "cves": [
+    "CVE-2026-99312"
+   ],
+   "first_seen": "2026-11-20T17:21:09.204406+00:00",
    "instructions": [
-    "The advisories do not say whether those updates work on their own or only as part of the BIOS updates, and they list no workaround.",
-    "The bulletin lists EPYC and Ryzen chips, including embedded models, and recommends the company's earlier TSA mitigations plus an EDK II patch when one is available.",
-    "AMD tracks Mior as CVE-2026-0462 and rates it 5.9 on the CVSS 4.0 scale in a security advisory .",
-    "It tracks Skyfall's VM leak as CVE-2026-40671, rated 4.9, in a second advisory that describes the flaw as exposing VM register data."
+    "The provider patched its own fleet with a live patch, telling Droplet customers: \"No action needed on your part.\" Operators who run their own KVM hosts on AMD hardware need to update the host kernel or turn nested virtualization off.",
+    "When a reset signal called INIT stops the nested VM, KVM skips restoring the outer VM's pointer, leaving it pointing to a page of memory the kernel has already freed.",
+    "The fix makes KVM reset that memory-management state on every INIT.",
+    "A 2022 patch for a different nested-virtualization bug, CVE-2022-3344, switched a reset path back to the outer VM's control block but missed the page-table pointer, the researchers say, and the error then sat in the kernel for just under four years."
    ],
    "instructions_checked": true
   },
@@ -2699,25 +2097,6 @@
     "Until an official fix or advisory appears, watch for one and apply it when it comes.",
     "Microsoft's countermeasures guidance recommends using a startup PIN, along with shutting down or hibernating machines when faced with determined, hands-on attackers.",
     "With no patch available, the useful steps are about physical control and startup protection."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "5df4bf07aed5",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Operation Endgame Takes Down Gootloader, CastleRAT and StealC Servers, Seizes 6.4M Stolen Logins",
-   "link": "https://thehackernews.com/2026/11/operation-endgame-takes-down-gootloader.html",
-   "published": "2026-11-13T10:55:03+00:00",
-   "summary": "An international police operation took down servers behind Gootloader, CastleRAT and StealC this week. Criminals used the three malware tools to gain access to computers, steal passwords, and launch ransomware attacks. Police also seized about 6.4 million stolen logins belonging to more than 40,000 victims, according…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsu6ZFyYFr1dxp2XHIaG_pyTwkoH58ICgyXLuTthkuYSJVcqAwX_O_bEJYfheyxpYmI7nnok1xrj97q7s-9l8JHFt1ogBAOJAEUqM8_vf6H3a8eYPKzB34d6XrvnkRu8zGaoKMgSJqWsE6u2zYXLdJKTtcDvk3beN6_o40ygJ4MVSMomS3Q1aEFV_jSq8/s1600/gootloader.jpg",
-   "cves": [],
-   "first_seen": "2026-11-13T13:05:18.402714+00:00",
-   "instructions": [
-    "Police in Denmark and the Netherlands advise WordPress site owners to take these steps, several of which are set out in a Dutch advice sheet :",
-    "If the address is in the data, the police send an email within a few minutes with steps to remove the malware."
    ],
    "instructions_checked": true
   },
@@ -2808,29 +2187,6 @@
     "The official end-of-life mitigation branches for 7.4, 8.0, and 8.1 are not affected, but older unpatched builds of those versions are, according to the company.",
     "The update is still the recommended fix for sites that keep the files handler.",
     "Servers updated then remain affected until they install today's releases."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "e05f7a78ce38",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE",
-   "link": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
-   "published": "2026-11-13T16:53:08+00:00",
-   "summary": "A type confusion flaw in PostgreSQL lets a database user who can create objects run code on the server. Updates released yesterday fix it, along with 51 other security flaws. Full protection from this flaw also requires rebuilding any C-language extensions installed on the server. The flaw, tracked as CVE-2026-6460…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhj8XOS7IKEt2ZhrwwdlDSpQ5hAyI46wHZpPkTQ3_hA6yUtMQpzaM50fm2v9x0O7NCt5z9vdrTsYM3iPOmu9fmmMTQDViu-rQjCfSxfCQhwZQazr4ZYayvEn5MQfUdTBVODtAay6RIaTqJGUj-HVzbtMqNPdNFiQHExhO9sitJX0GrvTx_EhWmslA-87ds/s1600/postgresql.jpg",
-   "cves": [
-    "CVE-2026-6460"
-   ],
-   "first_seen": "2026-11-13T18:11:27.621519+00:00",
-   "instructions": [
-    "The project's advisory and release notes offer no workaround for servers that cannot be updated yet.",
-    "He wrote that he could \"trigger this crash as a lowest-privileged login role.\" The project's security advisory describes the attacker only as someone who can create objects, without saying which privileges that takes.",
-    "The writeup does not give each service's current patch status.",
-    "Update the server to 18.7, 17.12, 16.16, 15.20, or 14.25, matching your major version."
    ],
    "instructions_checked": true
   },
@@ -3002,27 +2358,6 @@
    "instructions_checked": true
   },
   {
-   "id": "d030547d1ad3",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "SilentAir Hijacks Asian Telecom Networks to Intercept SMS 2FA Codes and Spy on Taiwanese Users",
-   "link": "https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html",
-   "published": "2026-11-13T11:10:40+00:00",
-   "summary": "A newly identified spying group used hacked equipment inside Asian mobile operators to intercept the calls and texts of selected people, mostly in Taiwan. Enea, a telecom and cybersecurity software company based in Stockholm, found the group's attack sources in at least six Asian countries and named it SilentAir this…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjskRPNlV_kYE1N2eF2J_J0fBvF_nQxnvtaS78Grj04KqkEauvr-R5jO-ynD9nm51SgF2XtCCAsWUbJrHU0wGRnXC9yHmblhNCF8Jt9NdVahMju3voR2z9xb2uqoSi7Nc085UqDBelqg4XDRdjJ2lsF7EeN28rjq7oBc_NpBUWRqLWXiOh9FBRIH28teHM/s1600/telecom-hack.jpg",
-   "cves": [],
-   "first_seen": "2026-11-13T13:05:18.402714+00:00",
-   "instructions": [
-    "Singapore's Infocomm Media Development Authority (IMDA) has described the same tool in a government advisory .",
-    "Go beyond the industry's basic recommendations for signaling security.",
-    "The report does not advise people whose calls and texts may be targeted.",
-    "Mobile operators use the SS7 and Diameter protocols to exchange signaling messages that route calls and texts and enable roaming."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "119c79e2a817",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -3040,6 +2375,27 @@
     "The vendor's advisory page lists no advisory for the six flaws as of today, and no date for a fix has been published.",
     "Before cutting off the data a controller sends to its refrigeration service company, operators should check contract and insurance terms, the Belgian advisory says.",
     "Danfoss's own update guide says the AK-SM800A should not be directly reachable from the public internet, adding: “This recommendation applies to all software versions, including those with Strict Mode enabled.”"
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "b6dced9e8be0",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "SonicWall Warns Gen 6 Firewalls Won't Get Security Patches, Even for Critical Flaws",
+   "link": "https://thehackernews.com/2026/11/sonicwall-warns-gen-6-firewalls-wont.html",
+   "published": "2026-11-20T10:38:22+00:00",
+   "summary": "SonicWall has urged all customers still running Generation 6 firewalls to retire and replace them immediately and stop exposing the devices on the internet edge, citing security risks fueled by AI-assisted attacks. \"Attackers now use automation and AI to find and exploit unsupported edge devices faster than ever,\"…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGn5oji8gd4l_d6wKemSflqTX-q-eiuu4CbbV2ROvzK6Gzpeq8zPsQyGb-UO80f_M8L2pDNNyNqF1ZIdyMPGReyW0KmPb7uuAuRu1M-ZVyNu-GJvx1CRaBsaEOVjV-asFG0P__0MK0Jp3WPJmcNxATiSd6NeBzcCmy-6dLvS5yvpen0cRrwLZvgVpYAvn0/s1600/sonicwall.jpg",
+   "cves": [],
+   "first_seen": "2026-11-20T17:21:09.204406+00:00",
+   "instructions": [
+    "With Gen 6 no longer being actively supported and receiving patches, even for critical flaws, users are recommended to follow the steps below without any delay -",
+    "Until the firewall is replaced, it's advised to take the below actions to minimize exposure -",
+    "Treat any Gen 6 firewall still in service as a high-risk exposure, and migrate to a supported Gen 8 firewall running SonicOS 8.\"",
+    "According to Google Mandiant's M-Trends report published in March 2026, the mean time to exploit vulnerabilities has turned negative, reaching an estimated -7 days, meaning exploitation, on average, begins before a patch is available, down from 63 days in 2018 and -1 day in 2024."
    ],
    "instructions_checked": true
   },
@@ -3065,6 +2421,27 @@
    "instructions_checked": true
   },
   {
+   "id": "d9e0b261f408",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "The Path to AI Autonomy in the SOC",
+   "link": "https://thehackernews.com/2026/11/the-path-to-ai-autonomy-in-soc.html",
+   "published": "2026-11-20T12:00:00+00:00",
+   "summary": "Security leaders are about to hand AI agents a lot more authority. In a recent a16z survey of CISOs at organizations with more than 1,000 employees, 36% said they are comfortable today letting AI agents act autonomously on low-risk security actions. In 12 months from now, 60% expect to be comfortable at that level…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGn0ym0Vqfakc2h3h2W6AT6gf5qd6RPkfrgV-Z2UgwDErad91v-nJoIu3OYwEC3IvLQ6rVGm6FIQypMcoTahAgL5_62ipKE1aQsZvqGsdJzu_4ZGaiFlCYKEpg1N5z3FRSk7O5n4uRlfDuNz7i99Ls9z1Ysee3iV4OCMTxG2rF8YLgCtfTOL2KA-hSQXY/s1600/INT.png",
+   "cves": [],
+   "first_seen": "2026-11-20T17:21:09.204406+00:00",
+   "instructions": [
+    "Proposing what should happen next, such as containing a host, resetting credentials or closing the case.",
+    "The authors make a point every SOC leader should take to heart.",
+    "Enterprises evaluating AI SOC vendors should make sure that both models can be applied as appropriate, across their entire operations.",
+    "In practice that means every approval request should show three things."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "53e4a59238e8",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -3082,26 +2459,6 @@
     "Urgent WordPress security update WordPress Releases WordPress 7.1.5 WordPress has released WordPress 7.1.5 with fixes for multiple security issues.",
     "\"Even if Gemini History is turned off, future chats will still be saved for around 2 months and used to respond to you, process your feedback, and protect Google, its users, and the public, with help from human reviewers,\" Google said in a revised policy update on November 17, 2026.",
     "The patch is a series of instructions that are applied at the exact address of the host PE’s entry point."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "79815295aaa3",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Trezor Confirms Hidden Implants in CryptoBilis-Sold Wallets That Can Steal Recovery Phrases",
-   "link": "https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html",
-   "published": "2026-11-13T13:54:20+00:00",
-   "summary": "Three Trezor Safe 5 wallets bought from the reseller CryptoBilis contain an implant, an extra circuit board that can copy their recovery phrases, hardware wallet maker Trezor said yesterday. The implant reads the phrase from the wallet's screen and sends it over the mobile network to a server controlled by the…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivDE4uIn_bV4GUrsw0LjzqBnnNaQM_0lzJhrSy89nrShmwNlFcsVucCFpzzZ2LMkkSMF-XMb8rp0e7_Maemyj5sypkVIf4s2Wx5pbJXkOwf0vMkG9ThBQAHhvJ_mKWHq78f_iJYhAM2l1Hp_Zk3VtB_bVvYFmZTX4WakIpC_Zib0rlFnDG-H674JSP5Mg/s1600/implant.jpg",
-   "cves": [],
-   "first_seen": "2026-11-13T15:12:20.611857+00:00",
-   "instructions": [
-    "A firmware update released earlier this week, version 2.13.1, stops the implants found so far from capturing anything on wallets that run it, the company said, but “the update can’t protect a wallet backup that was captured before it.”",
-    "The company will not publish technical details that could help attackers or put customers at risk, it said in an investigation update .",
-    "It will post an update if it confirms an implant outside the reseller's wallets or the Safe 5, receives a report of lost funds linked to the implants, or releases new protections."
    ],
    "instructions_checked": true
   },
@@ -3143,27 +2500,6 @@
     "As of March 2026, Copeland ended software support for the XWEB EVO family, and has advised customers to move to XWEB Pro models.",
     "\"Microsoft added HMAC-based authentication codes to CLFS log files specifically to block the class of logic bugs caused by improper validation of CLFS data structures, which accounted for 19 of 24 CLFS CVEs over five years.",
     "Google Patches Actively Exploited Chrome 0-Day — Google released updates to patch a high-severity vulnerability in Chrome has come under active exploitation in the wild."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "fe3ab0485c82",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "When an AI Agent Goes Wrong, Can You Stop It?",
-   "link": "https://thehackernews.com/2026/11/when-ai-agent-goes-wrong-can-you-stop-it.html",
-   "published": "2026-11-13T11:52:31+00:00",
-   "summary": "Suppose an AI agent is asked to sort support tickets and look up account details. A ticket contains instructions that lead the agent to export records to an unfamiliar destination. The agent can make the request because its identity has access to the records and its connected tools allow the action. That kind of…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXkpxeEuWVGmGvK8wGnGdzjVbMHRyNOYd3GFjgzJZZN7TL2yyLt5Jof4gsujMYS9WfZnxUjFFs3mxFaejShy46vuXK38l_5R3RvospJ6J8IunrLPSDnI0sJgGtvNiNkc89XMR_KDDHWEOxAk800C2fKhwiOLMy433M3ASErPk_jMwoexS_5-1kpdJ8emE/s1600/Keeper.jpg",
-   "cves": [],
-   "first_seen": "2026-11-13T13:05:18.402714+00:00",
-   "instructions": [
-    "An October 2026 roundup from the OWASP GenAI Security Project describes evaluation agents reaching beyond their intended scope and recommends testing whether containment can revoke both credentials and network access.",
-    "Security teams should compare them with identity-provider, API, application and network records.",
-    "The response should act through the system that runs the workflow.",
-    "Teams should confirm that the affected access is no longer usable instead of assuming that disabling the agent handled it."
    ],
    "instructions_checked": true
   },
@@ -3242,23 +2578,6 @@
    "image": "https://cms.therecord.media/uploads/Vice_City_01_gta6_6ae79bc4d0.jpg",
    "cves": [],
    "first_seen": "2026-11-17T14:23:23.336405+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "e71bf5215ff1",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Ransomware attack on Belarusian cloud firm disrupts businesses for days",
-   "link": "https://therecord.media/belarus-cloud-provider-activecloud-ransomware-attack",
-   "published": "2026-11-13T14:28:00+00:00",
-   "summary": "ActiveCloud said hackers had breached its systems and encrypted parts of its cloud infrastructure, leaving customers unable to access key services for several days.",
-   "image": "https://cms.therecord.media/uploads/server_getty_images_unsplash_bba164f23e.jpg",
-   "cves": [],
-   "first_seen": "2026-11-13T15:12:20.611857+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -3433,6 +2752,25 @@
    "instructions_checked": true
   },
   {
+   "id": "c21f2f095f9f",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Dozens of credit unions hit by supplier breach that went unnoticed for six weeks",
+   "link": "https://therecord.media/dozens-of-credit-unions-hit-by-supplier-breach",
+   "published": "2026-11-20T14:24:00+00:00",
+   "summary": "Ireland’s Data Protection Commission told Recorded Future News on Thursday it had received more than 40 breach notifications from credit unions that used the Belfast-based company as a data processor.",
+   "image": "https://cms.therecord.media/uploads/bank_safe_33ac6c970a.jpg",
+   "cves": [],
+   "first_seen": "2026-11-20T17:21:09.204406+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Robert Troy had previously described the delay as “simply not acceptable.” On Thursday, he said Wellington had brought in outside experts to determine “the exact number of accounts and users affected,” stressing that any information the company released publicly must be “accurate and verified.”"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "5f26a746749a",
    "source": "therecord",
    "source_name": "The Record",
@@ -3445,42 +2783,6 @@
    "image": "https://cms.therecord.media/uploads/30917367864_8dc9286dcf_o_dc03237cec.jpg",
    "cves": [],
    "first_seen": "2026-11-19T19:04:24.147057+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "f6d06bee472c",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "German parliament passes law giving spy agencies hacking, sabotage powers",
-   "link": "https://therecord.media/german-parliament-passes-law-giving-spy-agencies-hacking-power",
-   "published": "2026-11-13T16:32:00+00:00",
-   "summary": "In the biggest overhaul of the country’s spy laws of the postwar era, the Bundestag approved the bill by 308 votes to 190 — with 71 abstentions — months after Chancellor Friedrich Merz’s cabinet signed off on the draft.",
-   "image": "https://cms.therecord.media/uploads/rasmus_gundorff_saederup_k_C_Dr4i_Pax7c_unsplash_cf20643196.jpg",
-   "cves": [],
-   "first_seen": "2026-11-13T17:19:54.176696+00:00",
-   "image_checked": true,
-   "instructions": [
-    "One amendment drew fire from the far right, as it allows the BfV to restrict information-sharing with individual state intelligence offices if there are concrete indications that federal or state security interests are at risk."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "e4e9606f466d",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "DOJ: Gootloader used in at least 44 ransomware attacks costing $29 million since 2018",
-   "link": "https://therecord.media/gootloader-ransomware-doj-details",
-   "published": "2026-11-13T15:59:00+00:00",
-   "summary": "In a briefing adjacent to European announcements about an international anti-malware operation, U.S. officials detailed the history and impact of the Gootloader ransomware.",
-   "image": "https://cms.therecord.media/uploads/gootloader_page_operation_endgame_d490d02942.png",
-   "cves": [],
-   "first_seen": "2026-11-13T16:16:35.671151+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -3593,27 +2895,6 @@
    "instructions_checked": true
   },
   {
-   "id": "2be753d1df50",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "NATO issues and then withdraws Russian taxi app travel advice for defense industry conference",
-   "link": "https://therecord.media/nato-issues-and-withdraws-guidance-over-russian-taxi-app",
-   "published": "2026-11-13T10:52:00+00:00",
-   "summary": "Despite longstanding concerns about the Kremlin’s access to the app’s data, NATO on Thursday issued guidance suggesting attendees of its flagship defense industry conference use the Russian-owned Yandex Go to reach the venue.",
-   "image": "https://cms.therecord.media/uploads/NATO_file_photo_Image_NATO_307ccd5ceb.png",
-   "cves": [],
-   "first_seen": "2026-11-13T10:59:09.768085+00:00",
-   "image_checked": true,
-   "instructions": [
-    "“Recommending Yandex to people attending NATO’s biggest industry conference is a serious mistake,” said Erik Kursetgjerde, an attendee and doctoral research fellow studying critical digital infrastructure at the University of Inland Norway.",
-    "A NATO official told Recorded Future News: “In an oversight, the event team responsible for NATO Edge 26 sent an email to conference participants that recommended the use of Yandex Go for local transport.",
-    "Kursetgjerde credited the organizers for acting quickly. “But it should never have been sent,” he said. “Where NATO staff and defense suppliers stay and how they move is exactly what an adversary wants to know.”"
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "e798ab68d19f",
    "source": "therecord",
    "source_name": "The Record",
@@ -3652,6 +2933,26 @@
    "instructions_checked": true
   },
   {
+   "id": "f67114676f56",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "NSA resumes normal operations following internal network disruptions",
+   "link": "https://therecord.media/nsa-resumes-normal-operations-following-internal-disruptions",
+   "published": "2026-11-20T16:06:00+00:00",
+   "summary": "Certain facilities remain under “Code Orange” for non-essential employees, meaning delayed openings and some must check in with their supervisors.",
+   "image": "https://cms.therecord.media/uploads/8815949_9b41fe9ed1.jpg",
+   "cves": [],
+   "first_seen": "2026-11-20T17:21:09.204406+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Certain facilities remain under “Code Orange” for non-essential employees, meaning delayed openings and some must check in with their supervisors.",
+    "“The patching that has gone on following that has caused some of these systems to not come back up when you patch them as expected,” Director of National Intelligence Jay Clayton said in a television interview earlier this week."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "cf42b36aeb3f",
    "source": "therecord",
    "source_name": "The Record",
@@ -3686,23 +2987,6 @@
     "In a technical advisory, Optimizely confirmed Report URI’s findings that a vulnerability in its Experimentation platform allowed threat actors to inject malicious JavaScript into some customers’ websites.",
     "A breach at a popular website management company exposed customers’ visitors to malicious code that stole cryptocurrency and attempted to skim payment cards or install malware."
    ],
-   "instructions_checked": true
-  },
-  {
-   "id": "f88082b89135",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Record number of cyber incidents reported to UK privacy regulator",
-   "link": "https://therecord.media/record-number-of-cyber-incidents-reported-to-uk-regulator",
-   "published": "2026-11-13T12:47:00+00:00",
-   "summary": "British organizations have reported a record number of cyber incidents to the country’s data protection regulator this year, as cybersecurity firms blame data extortion and artificial intelligence for a surge in attacks.",
-   "image": "https://cms.therecord.media/uploads/ico_wycliffe_house_landscape_95e18c7b55.jpg",
-   "cves": [],
-   "first_seen": "2026-11-13T13:05:18.402714+00:00",
-   "image_checked": true,
-   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -3759,6 +3043,26 @@
    "instructions_checked": true
   },
   {
+   "id": "57375f482cd6",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Cyber Director Cairncross out as White House resets cyber leadership",
+   "link": "https://therecord.media/sean-cairncross-out-as-national-cyber-director",
+   "published": "2026-11-20T14:30:00+00:00",
+   "summary": "Sean Cairncross is leaving the White House as Kirsten Davies, the Pentagon’s chief information officer, has been named the acting cyber czar.",
+   "image": "https://cms.therecord.media/uploads/cairncross_billington_2025_d9233ef5de.jpg",
+   "cves": [],
+   "first_seen": "2026-11-20T17:21:09.204406+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Kirsten Davies, the Pentagon’s chief information officer, has been named the acting cyber czar, which advises the president on cybersecurity matters and coordinates digital policy across the federal government.",
+    "The brief document vowed to \"detect, confront, and defeat cyber adversaries before they breach our networks and systems,” maintain an advantage in artificial intelligence and update federal networks."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "db1d82795c0b",
    "source": "therecord",
    "source_name": "The Record",
@@ -3777,23 +3081,6 @@
     "“We are in an environment where the rate of patching, the rate of upgrading of systems, is increasing,” he told the panel. “That is the result of advancements in compute and in applications, we should expect that as people are patching, and as people are upgrading systems.”",
     "Mullin added that the administration would hold a phone call with representatives from the private sector about informing their customers when an upgrade is coming so they can adequately prepare."
    ],
-   "instructions_checked": true
-  },
-  {
-   "id": "e8d212e2e33e",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "TSMC confirms employee data breach tied to cloud service provider",
-   "link": "https://therecord.media/tsmc-confirms-employee-data-breach-cloud-provider",
-   "published": "2026-11-13T15:06:00+00:00",
-   "summary": "An investigation into the breach found that no TSMC systems were compromised but the information was “verified to match data stored in the system services of a cloud service provider, but is unrelated to the company’s operations or customer-related data.”",
-   "image": "https://cms.therecord.media/uploads/TSMC_logo_on_Taichung_factory_building_4ac5558127.jpg",
-   "cves": [],
-   "first_seen": "2026-11-13T15:12:20.611857+00:00",
-   "image_checked": true,
-   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -4025,28 +3312,6 @@
    "first_seen": "2026-11-19T19:04:24.147057+00:00"
   },
   {
-   "id": "8762a201a24f",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Microsoft confirms Windows activation failures after November updates",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-windows-activation-failures-after-november-updates/",
-   "published": "2026-11-13T09:36:18+00:00",
-   "summary": "Microsoft has confirmed that this month's Patch Tuesday security updates are causing Windows activation and licensing failures with 0x80041008 error codes.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/12/0_Windows.jpg",
-   "cves": [],
-   "first_seen": "2026-11-13T09:58:44.953778+00:00",
-   "image_checked": true,
-   "instructions": [
-    "While a fix will be available over the coming days, Microsoft advised affected organizations that need immediate mitigation to reach out to Microsoft Support for business .",
-    "Microsoft has confirmed that this month's Patch Tuesday security updates are causing Windows activation and licensing failures with 0x80041008 error codes.",
-    "\"Affected devices might encounter error 0x80041008, Invalid parameter (SWbemObjectEx), when running commands to activate Windows, configure Key Management Service (KMS), or manage product keys,\" Microsoft said.",
-    "This week, it also confirmed that the November 2026 Windows 11 security updates fail to install on systems with the October 2026 preview update and that Windows updates released since the October Patch Tuesday are triggering SQL Server performance and stability issues ."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "a60b8a453d05",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4069,6 +3334,28 @@
    "instructions_checked": true
   },
   {
+   "id": "fc7b1a32d55e",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Microsoft now automatically installs Windows 11 26H2 on unmanaged devices",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-now-automatically-installs-windows-11-26h2-on-personal-and-unmanaged-pcs/",
+   "published": "2026-11-20T12:14:28+00:00",
+   "summary": "Starting this week, Microsoft has begun automatically upgrading eligible devices that aren't managed by an IT department to Windows 11 26H2.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/12/Windows-11-blue.jpg",
+   "cves": [],
+   "first_seen": "2026-11-20T17:21:09.204406+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Starting November 18, we are taking the next step in version 26H2's phased rollout to make it easier to get the update,\" Microsoft said in a release health dashboard update.",
+    "Windows 11 KB5132057 update released with 28 changes and fixes",
+    "As the rollout progresses, more Windows 11 devices will upgrade automatically, without users having to check for updates manually.",
+    "The automatic upgrade depends on each device's Windows Update settings and is available for personal and non-managed business devices running Windows 11 24H2 and 25H2."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "18b00fe2b40c",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4087,28 +3374,6 @@
     "While the update had been deployed for more than three months without issues, it contained a bug that could overwhelm servers under certain traffic conditions, causing them to stop responding.",
     "Microsoft says its tests of the update did not detect the bug as it used less powerful testing hardware than the production servers.",
     "Microsoft Teams will let admins block custom file extensions"
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "293c69c9ee5b",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Microsoft says November security updates cause printing issues",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-november-security-updates-cause-printing-issues/",
-   "published": "2026-11-13T12:27:40+00:00",
-   "summary": "Microsoft warned customers earlier this week that the November 2026 security updates may break printing for documents with complex formatting.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/28/Microsoft.jpg",
-   "cves": [],
-   "first_seen": "2026-11-13T13:05:18.402714+00:00",
-   "image_checked": true,
-   "instructions": [
-    "\"After installing the November 2026 Windows security update (the Originating KBs listed above), or later updates, printing might fail for documents containing images rendered with a height or width value of zero at the selected printing resolution,\" Microsoft said.",
-    "This week, Microsoft also confirmed that this month's Patch Tuesday security updates trigger Windows activation and licensing failures with 0x80041008 error codes and that Windows updates released since the October Patch Tuesday cause SQL Server performance and stability issues .",
-    "Additionally, the company warned that the November 2026 Windows 11 security updates fail to install on systems with the October 2026 preview update.",
-    "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day"
    ],
    "instructions_checked": true
   },
@@ -4168,6 +3433,40 @@
     "On Friday, it also reminded customers that they can enroll in the Extended Security Updates (ESU) program after Windows 10 Enterprise LTSC 2021 (a stripped-down Windows 10 edition for mission-critical devices) reaches the end of mainstream support in January, until they can upgrade to Windows 11 Enterprise LTSC 2024 ."
    ],
    "instructions_checked": true
+  },
+  {
+   "id": "d9a325150570",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "N-able says recent security breach led to major service outage",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/n-able-says-recent-security-breach-led-to-major-service-outage/",
+   "published": "2026-11-20T13:18:36+00:00",
+   "summary": "N-able says attackers who breached one of its servers have caused a major outage affecting Mail Assure and SpamExperts Hosted Cloud services worldwide.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/20/N-able.jpg",
+   "cves": [],
+   "first_seen": "2026-11-20T17:21:09.204406+00:00",
+   "image_checked": true,
+   "instructions": [
+    "\"Our earlier update said the disruption came from platform configuration and service dependencies and we believed we had remediated the issue.",
+    "We have taken steps to mitigate the threat and are continuing to harden our services to reduce the risk of recurrence."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "09d3f14eaae7",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Windows 11 KB5132057 update released with 28 changes and fixes",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5132057-update-released-with-28-changes-and-fixes/",
+   "published": "2026-11-20T09:25:35+00:00",
+   "summary": "Microsoft released the KB5132057 November Windows 11 preview update, which comes with 28 changes, including improvements to Windows Search, Windows Hello, and the Run dialog.",
+   "image": null,
+   "cves": [],
+   "first_seen": "2026-11-20T17:21:09.204406+00:00"
   },
   {
    "id": "1cea14202697",
@@ -4323,50 +3622,6 @@
    "image_checked": true,
    "instructions": [
     "This led Anthropic to remove internet access from all internal AI model evaluations following additional incidents involving unauthorized activity against government websites and other external systems."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "b297d876237e",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Check Point gateways hacked via PHP2Shell to deploy VMware ESXi wiper",
-   "link": "https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/",
-   "published": "2026-11-13T16:21:43+00:00",
-   "summary": "Vulnerable Check Point Security Gateway instances have been targeted in PHP2Shell attacks that deployed data-wiping malware on VMware ESXi hosts.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/26/PHP.jpg",
-   "cves": [],
-   "first_seen": "2026-11-13T17:19:54.176696+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Check Point recommends that customers install the November Jumbo Hotfix on all Management Servers and Security Gateways, prioritizing those with internet-facing Mobile Access portals.",
-    "Administrators should also check for signs of compromise on previously exposed gateways, including session files containing upload_progress_pwn, unexpected CPconfigdaemon processes or binaries, and unexplained gaps in firewall logs.",
-    "Then they abused the privileges to install PHP webshells and the TSGA backdoor, which embeds a networking component called TSProxy to listen for attacker commands concealed within regular traffic.",
-    "The update addresses both PHP2Shell and the DynamicCLI privilege escalation flaw used in the attacks."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "e49e186a5eab",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Check Point warns of zero-day flaw exploited for root access",
-   "link": "https://www.bleepingcomputer.com/news/security/check-point-patches-zero-day-that-lets-hackers-get-root-access/",
-   "published": "2026-11-13T10:44:22+00:00",
-   "summary": "Check Point Software has released emergency hotfixes to address a high-severity flaw that hackers have been exploiting to gain root privileges and establish persistence on vulnerable devices since late October.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/09/18/Check-Point-headpic.jpg",
-   "cves": [],
-   "first_seen": "2026-11-13T10:59:09.768085+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Check Point advised security teams who can't immediately deploy the CVE-2026-123039 hotfixes to stop the dynamic_server process and prevent it from restarting as a temporary mitigation measure.",
-    "\"Check Point observed an active exploit of this vulnerability against a couple of dozen customers,\" the company warned in a Thursday security advisory.",
-    "TeamViewer urges users to patch severe flaws “as soon as possible”",
-    "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day"
    ],
    "instructions_checked": true
   },
@@ -4548,6 +3803,27 @@
     "This can lead to a site takeover or remote code execution,\" the Drupal Security Team warned in a Wednesday advisory.",
     "Those who can't immediately upgrade should secure the Drupal installer by blocking access to /core/install.php in the web server configuration or the .htaccess file in the web root.",
     "\"Drupal core ships with an install.php file for installing Drupal core."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "6a744f24eada",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "F5 releases emergency patches for critical BIG-IP RCE flaws",
+   "link": "https://www.bleepingcomputer.com/news/security/f5-releases-emergency-patches-for-critical-big-ip-rce-flaws/",
+   "published": "2026-11-20T10:57:43+00:00",
+   "summary": "US cybersecurity company F5 warned customers to patch five critical BIG-IP vulnerabilities that attackers can exploit to trigger denial-of-service (DoS) or gain remote code execution.",
+   "image": null,
+   "cves": [],
+   "first_seen": "2026-11-20T17:21:09.204406+00:00",
+   "instructions": [
+    "F5 said it has no mitigation measures for these flaws and advised security teams to install the out-of-band hotfixes released on Wednesday to address them on vulnerable devices.",
+    "Although the company hasn't flagged any of these issues as exploited in attacks, admins should upgrade systems to the latest version as soon as possible, since cybercrime and nation-state threat groups have often abused F5 vulnerabilities in the wild.",
+    "US cybersecurity company F5 warned customers to patch five BIG-IP vulnerabilities that attackers can exploit to trigger denial-of-service (DoS) or gain remote code execution.",
+    "Citrix warns admins to patch new NetScaler RCE flaw immediately"
    ],
    "instructions_checked": true
   },
@@ -4738,28 +4014,6 @@
    "instructions_checked": true
   },
   {
-   "id": "db3fd3a5adb8",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "How one AI agent exposed five critical enterprise security gaps",
-   "link": "https://www.bleepingcomputer.com/news/security/how-one-ai-agent-exposed-five-critical-enterprise-security-gaps/",
-   "published": "2026-11-13T15:01:11+00:00",
-   "summary": "An AI agent built to automate invoice processing could be manipulated into changing vendor bank details through a malicious email, without triggering traditional security alerts. Token Security examines five critical AI agent security gaps and shares practical guidance from industry security leaders on preventing them.",
-   "image": "https://www.bleepstatic.com/content/posts/2026/11/12/agentic-universe.jpg",
-   "cves": [],
-   "first_seen": "2026-11-13T15:12:20.611857+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Until prompt injection can be reliably detected and refused, an agent should have no more than two of these in a single session:",
-    "Inside the attachment, in white text on a white background, is a note requesting an update to the ERP as the vendor changed its bank.",
-    "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day",
-    "Monitor, analyze, and promptly mitigate risks across your external digital landscape with the CTM360."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "148f7e8fc320",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4925,6 +4179,28 @@
    "instructions_checked": true
   },
   {
+   "id": "19cca4f1450a",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Still tracking company passwords in spreadsheets? You’re flying blind.",
+   "link": "https://www.bleepingcomputer.com/news/security/still-tracking-company-passwords-in-spreadsheets-youre-flying-blind/",
+   "published": "2026-11-20T15:00:10+00:00",
+   "summary": "Tracking company passwords in spreadsheets can leave IT administrators unaware of weak, reused, or compromised credentials stored and shared outside approved systems. NordPass explains how centralized password management can improve credential visibility, identify security risks, and simplify secure password sharing.",
+   "image": "https://www.bleepstatic.com/content/posts/2026/11/19/nordpass-header.jpg",
+   "cves": [],
+   "first_seen": "2026-11-20T17:21:09.204406+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Your IT team should decide who is responsible for each login, who needs access, and when that access should be removed.",
+    "To keep company accounts protected, admins should be able to answer a few questions about each company password: Is it strong?",
+    "Some employees may continue saving passwords in browsers or personal vaults, so adoption depends on making the approved option easy to use and setting clear expectations about how company logins should be handled.",
+    "That’s why a process that relies on employees to manually report every new password, update, and shared credential is nearly impossible to sustain."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "6b32b3a76586",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -5044,6 +4320,23 @@
    "instructions_checked": true
   },
   {
+   "id": "bbc19bb6f991",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Vendor data breach exposes Chase, Visa, Mastercard customer info",
+   "link": "https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/",
+   "published": "2026-11-20T15:58:06+00:00",
+   "summary": "J.P. Morgan Chase warned it suffered a data breach after a cyberattack at a third-party service provider exposed customers' personal information and marketing data.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2022/10/28/hand-sifting-data.jpg",
+   "cves": [],
+   "first_seen": "2026-11-20T17:21:09.204406+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "c5e24a06d395",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -5063,29 +4356,6 @@
     "The company considers the vCenter vulnerability as an emergency update, urging organizations to install the patches as soon as possible."
    ],
    "instructions_checked": true
-  },
-  {
-   "id": "1671c4ae2d79",
-   "source": "cisa",
-   "source_name": "CISA Cybersecurity Advisories",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-   "link": "https://www.cisa.gov/news-events/alerts/2026/11/13/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-   "published": "2026-11-13T12:00:00+00:00",
-   "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-114713 UnrealIRCd Improper Neutralization of Delimiters Vulnerability CVE-2026-123039 Check Point Multiple Products Incorrect Permission Assignment for Critical Resource…",
-   "image": null,
-   "cves": [
-    "CVE-2026-114713",
-    "CVE-2026-123039"
-   ],
-   "first_seen": "2026-11-17T16:21:38.437445+00:00",
-   "instructions": [
-    "Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
-    "BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied."
-   ],
-   "instructions_checked": true,
-   "image_checked": true
   },
   {
    "id": "f49e9f798bfe",
@@ -5641,22 +4911,6 @@
    "instructions_checked": true
   },
   {
-   "id": "fff233faf327",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "Attackers in Binance Breach Targeted Known Weakness, Missing Controls",
-   "link": "https://www.darkreading.com/cybersecurity-operations/attackers-binance-breach-targeted-weakness-missing-controls",
-   "published": "2026-11-13T13:00:00+00:00",
-   "summary": "Blockchain complexities, such as attacker-deployed sweepers, hobble security controls designed to limit the damage of an exchange compromise.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt3c2322c93d29d2a7/6aed04e63037c1017f2823d8/binance-logo-on-black-bkgrd-Zulfugar_Graphics-shutterstockjpg.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-13T13:05:18.402714+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "2cf87a19124d",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -5956,28 +5210,6 @@
    "instructions_checked": true
   },
   {
-   "id": "f5b71ee6de0e",
-   "source": "schneier",
-   "source_name": "Schneier on Security",
-   "official": false,
-   "source_type": "news",
-   "title": "AI Doesn’t Have to Go Rogue to Break the World",
-   "link": "https://www.schneier.com/blog/archives/2026/11/ai-doesnt-have-to-go-rogue-to-break-the-world.html",
-   "published": "2026-11-13T12:03:30+00:00",
-   "summary": "This essay is adapted from a keynote speech delivered at the DEF CON 34 conference in Las Vegas on August 7, 2026. The essay originally appeared in CyberScoop. I want to talk about AI hacking. There are three aspects: people hacking AI systems, people using AI to hack other systems, and AIs hacking systems on their…",
-   "image": null,
-   "cves": [],
-   "first_seen": "2026-11-13T13:05:18.402714+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Unless programmers specify that the system must not behave differently during testing, an AI might come up with the same hack.",
-    "In a stacking simulation, an AI learned to flip a block upside down rather than stack it.",
-    "Vulnerabilities can be patched, removing them permanently, or turned into signatures that security systems use to detect and block attacks.",
-    "In theory, AI could identify and patch every automatically discoverable vulnerability before a product ships."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "f61744a14eda",
    "source": "schneier",
    "source_name": "Schneier on Security",
@@ -6026,6 +5258,23 @@
    "image": null,
    "cves": [],
    "first_seen": "2026-11-13T22:08:27.509684+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "b4d165a3ec28",
+   "source": "schneier",
+   "source_name": "Schneier on Security",
+   "official": false,
+   "source_type": "news",
+   "title": "Opening a 400-Year-Old Cryptex",
+   "link": "https://www.schneier.com/blog/archives/2026/11/opening-a-400-year-old-cryptex.html",
+   "published": "2026-11-20T12:04:46+00:00",
+   "summary": "Researchers used CT scanning technology to recover the code and open a 400-year-old cryptex padlock. You can buy a USB-drive cryptex.",
+   "image": null,
+   "cves": [],
+   "first_seen": "2026-11-20T17:21:09.204406+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -6102,27 +5351,6 @@
     "Defenders must do two things at once: nail the cybersecurity fundamentals today and accelerate the shift toward automated defenses that can detect and respond at machine speed,” Hartman added.",
     "The Jieyou phishing service, active since March 2026, has a model-agnostic chatbot that allows clients to configure phishing panels and modify templates.",
     "Water utilities, hospitals, and regional electric utilities that struggle to patch on a monthly cycle can’t win that race manually."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "4084f96e5a59",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Apify Confirms Customer Data Accessed in Cyberattack",
-   "link": "https://www.securityweek.com/apify-confirms-customer-data-accessed-in-cyberattack/",
-   "published": "2026-11-13T12:41:01+00:00",
-   "summary": "The web scraping company says an intruder accessed customer accounts and obtained personal information or stored data. The post Apify Confirms Customer Data Accessed in Cyberattack appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2025/02/data_breach.jpeg",
-   "cves": [],
-   "first_seen": "2026-11-13T13:05:18.402714+00:00",
-   "image_checked": true,
-   "instructions": [
-    "ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure",
-    "Chipmaker Patch Tuesday: Over 200 Vulnerabilities Addressed by Intel, AMD",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
   },
@@ -6227,27 +5455,6 @@
    "instructions_checked": true
   },
   {
-   "id": "d20b2da13e92",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Citrix Patches 10 Critical NetScaler Vulnerabilities",
-   "link": "https://www.securityweek.com/citrix-patches-10-critical-netscaler-vulnerabilities/",
-   "published": "2026-11-13T09:36:56+00:00",
-   "summary": "Successful exploitation could lead to unexpected behavior or denial-of-service (DoS) conditions. The post Citrix Patches 10 Critical NetScaler Vulnerabilities appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/08/Citrix-vulnerability.jpeg",
-   "cves": [],
-   "first_seen": "2026-11-13T09:58:44.953778+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Citrix urges customers to update their instances as soon as possible, and details CVE preconditions associated with some of the vulnerabilities.",
-    "Citrix, Ivanti Patch Critical and High-Severity Vulnerabilities",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "19347567d0aa",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -6339,6 +5546,24 @@
    "first_seen": "2026-11-16T15:56:24.971181+00:00",
    "image_checked": true,
    "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "2be32b97a1a6",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "European Commission Confirms AI-Assisted Cyberattack Disrupted Services",
+   "link": "https://www.securityweek.com/european-commission-confirms-ai-assisted-cyberattack-disrupted-services/",
+   "published": "2026-11-20T10:51:42+00:00",
+   "summary": "The Commission took certain services offline to contain the incident, but it has no evidence of a data breach. The post European Commission Confirms AI-Assisted Cyberattack Disrupted Services appeared first on SecurityWeek.",
+   "image": null,
+   "cves": [],
+   "first_seen": "2026-11-20T17:21:09.204406+00:00",
+   "instructions": [
+    "PHP Readies Critical Security Updates to Patch Another RCE Flaw"
+   ],
    "instructions_checked": true
   },
   {
@@ -6457,24 +5682,41 @@
    "instructions_checked": true
   },
   {
-   "id": "c3cb9f990617",
+   "id": "1722752aee2d",
    "source": "securityweek",
    "source_name": "SecurityWeek",
    "official": false,
    "source_type": "news",
-   "title": "In Other News: New CISA Director Nominee, Connected Car Hacking, Baker Tilly Data Breach",
-   "link": "https://www.securityweek.com/in-other-news-new-cisa-director-nominee-connected-car-hacking-baker-tilly-data-breach/",
-   "published": "2026-11-13T15:20:00+00:00",
-   "summary": "Noteworthy stories that might have slipped under the radar: Siemens details security advisory policy, OpenAI Codex backdoor risk, Microsoft warns of model weight backdoors. The post In Other News: New CISA Director Nominee, Connected Car Hacking, Baker Tilly Data Breach appeared first on SecurityWeek.",
+   "title": "In Other News: Norwegian Energy Firm Cyberattacks, Supercomputer Hack, New Nightmare Eclipse Exploit",
+   "link": "https://www.securityweek.com/in-other-news-norwegian-energy-firm-cyberattacks-supercomputer-hack-new-nightmare-eclipse-exploit/",
+   "published": "2026-11-20T14:56:23+00:00",
+   "summary": "Noteworthy stories that might have slipped under the radar: EU adds NoName057(16) to cyber sanctions list, malware targets CACs left in personal computers, Gemini agents targeted Epoch AI. The post In Other News: Norwegian Energy Firm Cyberattacks, Supercomputer Hack, New Nightmare Eclipse Exploit appeared first on…",
    "image": "https://www.securityweek.com/wp-content/uploads/2023/10/cybersecurity-news.jpg",
    "cves": [],
-   "first_seen": "2026-11-13T16:16:35.671151+00:00",
+   "first_seen": "2026-11-20T17:21:09.204406+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "5b364ed36dab",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Industry Reactions to Major Outages and AI Patching Debate: Feedback Friday",
+   "link": "https://www.securityweek.com/industry-reactions-to-major-outages-and-ai-patching-questions-feedback-friday/",
+   "published": "2026-11-20T12:38:55+00:00",
+   "summary": "Experts commented on whether AI-accelerated patching played a role, the need for tested rollback plans, and the fragility of interconnected systems. The post Industry Reactions to Major Outages and AI Patching Debate: Feedback Friday appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/06/Feedback-Friday.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-20T17:21:09.204406+00:00",
    "image_checked": true,
    "instructions": [
-    "Siemens details security advisory policy and planned improvements Siemens has published a policy document that sets out how its PSIRT deals with product vulnerabilities and what its security advisories contain.",
-    "Planned improvements include an API for automated lookups of product and vulnerability data, wider coverage of flaws in third-party components, more explicit “not affected” declarations, and getting advisory data into commonly used third-party vulnerability databases.",
-    "Because the attack needs write access to the weights and can only be reliably detected by comparing them with the originals, Microsoft recommends verifying model provenance and auditing weights the way code is audited.",
-    "Should the Senate fail to act before this Congress adjourns, Trump would need to renominate him under an incoming Democratic majority whose members have questioned Palantir’s government work."
+    "Organizations should know before the next incident which services must come back first, what each one depends on, and how long the full sequence takes.",
+    "These rollouts sometimes fail and have to be reverted, leaving organizations exposed and delaying the remediation of the very vulnerabilities they are meant to address until teams find a workaround they can roll out without compromising stability.",
+    "When a critical Java vulnerability lands, teams must push OpenJDK updates into production within hours, often with less testing than they would normally do and with far more urgency to get the change rolled out before attackers can exploit it.",
+    "A recovery time that has never been tested is only an estimate, and boards should treat it as one.” Brian Contos, Field CISO, Mitiga: “Faster patching isn’t the problem by itself."
    ],
    "instructions_checked": true
   },
@@ -6581,26 +5823,6 @@
    "image_checked": true
   },
   {
-   "id": "e4df5d0ce341",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Law Enforcement Disrupts Gootloader, CastleRAT, and StealC Infrastructure",
-   "link": "https://www.securityweek.com/law-enforcement-disrupts-gootloader-castlerat-and-stealc-infrastructure/",
-   "published": "2026-11-13T10:48:40+00:00",
-   "summary": "Investigators seized 235 servers and 257 domains, along with 6.4 million victim credentials as part of Operation Endgame. The post Law Enforcement Disrupts Gootloader, CastleRAT, and StealC Infrastructure appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/11/Gootloader-seized.webp",
-   "cves": [],
-   "first_seen": "2026-11-13T10:59:09.768085+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Citrix, Ivanti Patch Critical and High-Severity Vulnerabilities",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "76496683beb3",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -6683,27 +5905,6 @@
    "instructions_checked": true
   },
   {
-   "id": "70883ad50925",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Microsoft Struggles to Restore Email and Other Services in a Global Outage",
-   "link": "https://www.securityweek.com/microsoft-struggles-to-restore-email-and-other-services-in-a-global-outage/",
-   "published": "2026-11-13T13:47:42+00:00",
-   "summary": "Microsoft is trying different ways to identify the cause of the problem and get its servers back online, using “a measured approach to identify and repair affected infrastructure.” The post Microsoft Struggles to Restore Email and Other Services in a Global Outage appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/06/Android-Microsoft_Apps-Flaw.jpg",
-   "cves": [],
-   "first_seen": "2026-11-13T14:18:33.721139+00:00",
-   "image_checked": true,
-   "instructions": [
-    "In Australia, Home Affairs Minister Tony Burke said Friday that Microsoft had likened the widespread disruption to the 2024 CrowdStrike outage, which stemmed from a faulty update to computers running Microsoft Windows.",
-    "They believe that they are dealing in some ways (with something) similar to what we saw with respect to CrowdStrike where there is an update that has gone awry,” Burke told reporters in Sydney.",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "ddb3ea43dd74",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -6744,6 +5945,20 @@
     "Trump Administration Moves to Block China From Indirect Access to American AI Technology"
    ],
    "instructions_checked": true
+  },
+  {
+   "id": "1842d6db44a6",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "N-able Blames Service Disruption on Cyberattack",
+   "link": "https://www.securityweek.com/n-able-blames-service-disruption-on-cyberattack/",
+   "published": "2026-11-20T09:08:35+00:00",
+   "summary": "The incident affected Mail Assure and SpamExperts Hosted Cloud and could have led to credential theft. The post N-able Blames Service Disruption on Cyberattack appeared first on SecurityWeek.",
+   "image": null,
+   "cves": [],
+   "first_seen": "2026-11-20T17:21:09.204406+00:00"
   },
   {
    "id": "7d141681ccc2",
@@ -6790,28 +6005,6 @@
    "instructions_checked": true
   },
   {
-   "id": "0b5efb819342",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Nightmare Eclipse Drops Windows Zero-Day Exploit ‘SignDrop’",
-   "link": "https://www.securityweek.com/nightmare-eclipse-drops-windows-zero-day-exploit-signdrop/",
-   "published": "2026-11-13T08:50:36+00:00",
-   "summary": "It abuses CLFS and Windows Defender to trigger arbitrary file creation in the context of the antimalware process. The post Nightmare Eclipse Drops Windows Zero-Day Exploit ‘SignDrop’ appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/11/Nightmare-Eclipse.webp",
-   "cves": [],
-   "first_seen": "2026-11-13T08:57:41.471516+00:00",
-   "image_checked": true,
-   "instructions": [
-    "According to the security researcher, SignDrop has been tested on Windows 11 26H2, Windows 11 26H2 Experimental, and Windows Server 2025 Experimental, and should work on 80% of the world’s Windows installations. “You’re generally vulnerable if your Windows installation is older than 90 days,” Naceri says.",
-    "Last year, Microsoft introduced CLFS logfile authentication to mitigate exploitation, which relies on authentication codes to check file integrity.",
-    "A standard user can create a log file and specify a path to an associated container in it, and then coerce Windows Defender to open the file in the context of the antimalware engine by calling the signature update RPC interface.",
-    "SecurityWeek has emailed Microsoft for a statement on SignDrop and will update this article if the company responds."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "9cdb1de4d486",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -6849,27 +6042,6 @@
    "image_checked": true,
    "instructions": [
     "Java4Shell Exploitation Attempts Begin as Vendors Rush Out Advisories"
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "e4b47e3b9b3e",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "OpenAI Unveils Daybreak Red Team, Defense Factory Security Tools",
-   "link": "https://www.securityweek.com/openai-unveils-daybreak-red-team-defense-factory-security-tools/",
-   "published": "2026-11-13T09:21:01+00:00",
-   "summary": "Daybreak Red Team pentests web applications with AI agents, while Defense Factory investigates security findings and prepares patches. The post OpenAI Unveils Daybreak Red Team, Defense Factory Security Tools appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2025/11/OpenAI.jpeg",
-   "cves": [],
-   "first_seen": "2026-11-13T09:58:44.953778+00:00",
-   "image_checked": true,
-   "instructions": [
-    "ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure",
-    "Chipmaker Patch Tuesday: Over 200 Vulnerabilities Addressed by Intel, AMD",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
    ],
    "instructions_checked": true
   },
@@ -7042,6 +6214,22 @@
    "instructions_checked": true
   },
   {
+   "id": "f5b6ed0f978c",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Ruby Patches Ruby2Shell Vulnerability That Could Lead to RCE",
+   "link": "https://www.securityweek.com/ruby-patches-ruby2shell-vulnerability-that-could-lead-to-rce/",
+   "published": "2026-11-20T10:34:10+00:00",
+   "summary": "Tracked as CVE-2026-132825, the bug is a heap-based buffer overflow that could lead to remote code execution (RCE). The post Ruby Patches Ruby2Shell Vulnerability That Could Lead to RCE appeared first on SecurityWeek.",
+   "image": null,
+   "cves": [
+    "CVE-2026-132825"
+   ],
+   "first_seen": "2026-11-20T17:21:09.204406+00:00"
+  },
+  {
    "id": "dfcd48a830ee",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -7061,23 +6249,20 @@
    "instructions_checked": true
   },
   {
-   "id": "527326996071",
+   "id": "3827cbac510e",
    "source": "securityweek",
    "source_name": "SecurityWeek",
    "official": false,
    "source_type": "news",
-   "title": "SilentAir Hackers Intercept Calls, SMS From Inside Mobile Networks",
-   "link": "https://www.securityweek.com/silentair-hackers-intercept-calls-sms-from-inside-mobile-networks/",
-   "published": "2026-11-13T12:20:28+00:00",
-   "summary": "Enea says SilentAir hijacked mobile network nodes to intercept calls and messages, with Taiwanese subscribers the primary targets. The post SilentAir Hackers Intercept Calls, SMS From Inside Mobile Networks appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2024/12/telecoms-communications.jpeg",
+   "title": "SBC Medical Group Data Breach Impacts Over 2 Million",
+   "link": "https://www.securityweek.com/sbc-medical-group-data-breach-impacts-over-2-million/",
+   "published": "2026-11-20T11:36:51+00:00",
+   "summary": "Threat actors accessed databases containing customer information associated with clinics in Japan. The post SBC Medical Group Data Breach Impacts Over 2 Million appeared first on SecurityWeek.",
+   "image": null,
    "cves": [],
-   "first_seen": "2026-11-13T13:05:18.402714+00:00",
-   "image_checked": true,
+   "first_seen": "2026-11-20T17:21:09.204406+00:00",
    "instructions": [
-    "ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure",
-    "Chipmaker Patch Tuesday: Over 200 Vulnerabilities Addressed by Intel, AMD",
-    "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon."
+    "PHP Readies Critical Security Updates to Patch Another RCE Flaw"
    ],
    "instructions_checked": true
   },
@@ -7223,6 +6408,27 @@
    "image_checked": true,
    "instructions": [
     "If a change requires a new risk decision, Vero brings the analysis and recommended action to the responsible security professional."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "b3099b7219af",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "WhatsApp Fixes Flaw Uncovered While Disrupting Scam Campaign",
+   "link": "https://www.securityweek.com/whatsapp-fixes-flaw-uncovered-while-disrupting-scam-campaign/",
+   "published": "2026-11-20T16:01:02+00:00",
+   "summary": "Tracked as CVE-2026-23871, the vulnerability was found by WhatsApp’s security team, and it may have been used to make scam messages more credible. The post WhatsApp Fixes Flaw Uncovered While Disrupting Scam Campaign appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/06/WhatsApp-Vulnerability-attack-e1761292707809.jpg",
+   "cves": [
+    "CVE-2026-23871"
+   ],
+   "first_seen": "2026-11-20T17:21:09.204406+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Java4Shell Exploitation Attempts Begin as Vendors Rush Out Advisories"
    ],
    "instructions_checked": true
   },
