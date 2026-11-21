@@ -1,11 +1,23 @@
 {
  "items": [
   {
-   "id": "9e2b947418bd",
-   "title": "Microsoft Teams: Pick up where you left off in channels on desktop",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=579890",
-   "summary": "Stay on top of channel conversations by picking up right where you left off. Choose to open Teams channels at your last read message instead of the most recent message, making it easier to catch up on conversations and follow discussions without losing your place. GA date: February CY2027",
-   "published": "2026-11-20T01:24:53+00:00",
+   "id": "5dcd0ccf6608",
+   "title": "Manage workforce requests in Microsoft 365 Copilot",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=581992",
+   "summary": "Dynamics 365 Workforce Engagement Management (WEM) integrates with Microsoft 365 Copilot through Model Context Protocol (MCP) tools. These tools connect Microsoft 365 Copilot with Dynamics 365 and Dataverse so supervisors and customer service representatives can use natural language to work with workforce requests…",
+   "published": "2026-11-21T02:55:45+00:00",
+   "products": [
+    "Copilot"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "286b502eb313",
+   "title": "Trigger quality evaluations when a support case is resolved",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=581987",
+   "summary": "Quality evaluation plans can now run automatically when a support case is resolved. This helps organizations evaluate customer interactions at the right point in the service lifecycle, without relying only on scheduled or manual review processes. By triggering evaluations from the case resolution event, teams can…",
+   "published": "2026-11-21T02:55:45+00:00",
    "products": [
     "Teams"
    ],
@@ -13,13 +25,133 @@
    "feature_id": null
   },
   {
-   "id": "6d3ebee31410",
-   "title": "Microsoft Edge: Smarter and faster update application",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=581801",
-   "summary": "Microsoft Edge can now apply pending updates when your browser is idle. We've updated the Relaunch Notification policy to allow you to manage idle restarts for your organization. More info: https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies/relaunchnotification GA date: January CY2027",
-   "published": "2026-11-19T23:37:54+00:00",
+   "id": "d9ab191cc6ea",
+   "title": "Sampling bulk records for quality evaluation equally by representatives",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=581993",
+   "summary": "Quality evaluaton allows quality managers to create bulk record samples with equal distribution across representatives. This helps ensure sampling is balanced and avoids over- or under-representing any individual representative in review sets. When generating a bulk sample via evaluation plans, the sampling process…",
+   "published": "2026-11-21T02:54:56+00:00",
    "products": [
     "Microsoft 365"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "ccd1a3989fbd",
+   "title": "Microsoft Teams: Set and manage meeting timers in Teams Rooms on Windows",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=581893",
+   "summary": "Keep meetings on track with a shared countdown timer in Microsoft Teams Rooms on Windows. Start, pause, resume, or cancel a timer from the room’s touch console, with the countdown visible on the front-of-room display and in participants’ meeting views. Available with a Teams Rooms Pro license. GA date: January CY2027",
+   "published": "2026-11-21T00:14:55+00:00",
+   "products": [
+    "Teams"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "4b18758d2a9c",
+   "title": "Planner: Tab support for shared and private channels in Microsoft Teams in GCC, GCC-H and DoD",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=581866",
+   "summary": "Now you can add Microsoft Planner as a tab in shared and private channels in Microsoft Teams, which allows to create and manage tasks directly within the channel. GA date: January CY2027",
+   "published": "2026-11-20T23:20:27+00:00",
+   "products": [
+    "Teams"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "7b93cf438853",
+   "title": "Dynamics 365 Finance: B2B electronic invoicing in Spain",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=581800",
+   "summary": "To support Spain's upcoming mandatory B2B electronic invoicing requirements under the Crea y Crece legislation, Microsoft Dynamics 365 Finance will introduce capabilities for domestic B2B electronic invoicing through a phased rollout. The planned rollout includes: Prerequisite data and invoice formats: Support the…",
+   "published": "2026-11-20T23:20:27+00:00",
+   "products": [
+    "Microsoft 365"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "a6f1b540ea93",
+   "title": "Dynamics 365 Commerce: Update e-commerce integration with Adyen and introduce ACH and Pay by Bank payment methods",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=581780",
+   "summary": "This feature applies to Dynamics 365 Commerce e-commerce. It updates the Adyen API integration to address co-branded card processing requirements and adds support for ACH and Pay by Bank, both directly at checkout and through Pay by Link. Administrators enable the payment methods available to shoppers through…",
+   "published": "2026-11-20T23:20:27+00:00",
+   "products": [
+    "Microsoft 365"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "b732a623aa9d",
+   "title": "Dynamics 365 Finance: Collection Coordinator Skill",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=581779",
+   "summary": "Start every collections day with one prioritized view of your receivables portfolio that explains each recommendation. The skill shows which customers need attention, why, and what to do next. It helps collectors, collection managers and accounts receivable (AR) leaders act consistently, close periods with fewer…",
+   "published": "2026-11-20T23:20:27+00:00",
+   "products": [
+    "Microsoft 365"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "6117e4ebeca7",
+   "title": "Exchange: Enable High Volume Email (HVE) for External Recipients",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=581778",
+   "summary": "High Volume Email (HVE) External Sending extends HVE in Exchange Online, which today sends only to recipients inside your organization, so it can also deliver bulk email to external recipients such as customers and partners. It is designed for operational and transactional messages, like notifications, alerts…",
+   "published": "2026-11-20T23:20:27+00:00",
+   "products": [
+    "Exchange"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "d16c0ce45dcf",
+   "title": "Dynamics 365 Human Resources: Ask HR - conversational HR self-service grounded in your own worker record",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=581776",
+   "summary": "Business value Employees and managers routinely contact HR for answers their HR system already holds — how much leave they have, what their policy allows in their location, where a request has reached. The information exists, but it is spread across separate records, so a generic answer is often wrong for the…",
+   "published": "2026-11-20T23:20:27+00:00",
+   "products": [
+    "Microsoft 365"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "04d34232c542",
+   "title": "Dynamics 365 Human Resources: Streamline the employee offboarding experience",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=581773",
+   "summary": "Business value When an employee leaves, HR, managers, IT, facilities and payroll all have work to do, but the termination hasn't been connected to the request that starts the exit or the work that follows. Manual coordination can leave access open, property unreturned and final pay incomplete. This feature connects…",
+   "published": "2026-11-20T23:20:27+00:00",
+   "products": [
+    "Microsoft 365"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "10dca0c56cbf",
+   "title": "Work IQ: Listen",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=570867",
+   "summary": "Enable agents to listen for supported Work IQ events and respond as relevant changes occur. GA date: January CY2027 Preview date: November CY2026",
+   "published": "2026-11-20T23:20:27+00:00",
+   "products": [
+    "Microsoft 365"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "9e2b947418bd",
+   "title": "Microsoft Teams: Pick up where you left off in channels on desktop",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=579890",
+   "summary": "Stay on top of channel conversations by picking up right where you left off. Choose to open Teams channels at your last read message instead of the most recent message, making it easier to catch up on conversations and follow discussions without losing your place. GA date: February CY2027",
+   "published": "2026-11-20T01:24:53+00:00",
+   "products": [
+    "Teams"
    ],
    "stage": null,
    "feature_id": null
@@ -37,51 +169,13 @@
    "feature_id": null
   },
   {
-   "id": "952a07e1b3bd",
-   "title": "Microsoft Copilot Studio: Run Python code as a step in workflows",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=580866",
-   "summary": "The new Code node lets makers run Python as a step in a workflow for logic that expressions and connectors can't handle. Data transforms, calculations, regex, and advanced parsing. File conversion and parsing (for example PDF → text, CSV, XML). Generate the code from natural language with AI, or write and edit it by…",
-   "published": "2026-11-19T21:30:10+00:00",
+   "id": "6d3ebee31410",
+   "title": "Microsoft Edge: Smarter and faster update application",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=581801",
+   "summary": "Microsoft Edge can now apply pending updates when your browser is idle. We've updated the Relaunch Notification policy to allow you to manage idle restarts for your organization. More info: https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies/relaunchnotification GA date: January CY2027",
+   "published": "2026-11-19T23:37:54+00:00",
    "products": [
-    "Copilot"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "8db8d8aa770c",
-   "title": "Microsoft Copilot Studio: Generate documents from the Agent node in workflows",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=580865",
-   "summary": "The Agent node can now return files that the agent generates, such as PDF, Word, Excel, PowerPoint, and CSV, as workflow outputs. Works with both inline agents and existing (published) agents. Generated files appear as an ordered files output (name, content type, content) that's available to downstream steps. Pass…",
-   "published": "2026-11-19T21:30:10+00:00",
-   "products": [
-    "Copilot",
-    "Microsoft 365 Apps"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "61efa9a798d6",
-   "title": "Microsoft Copilot Studio: Share workflows with co-owners for collaborative editing",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=580864",
-   "summary": "Makers can share a workflow with other users as co-owners so they can view, edit, and manage it. Share from the workflows page or the designer. Review the connections the workflow uses and their permissions before sharing. See who the workflow is shared with when reopening Share. Co-owners can edit and run the…",
-   "published": "2026-11-19T21:30:10+00:00",
-   "products": [
-    "Copilot"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "efeec0dc0482",
-   "title": "Microsoft Copilot Studio: Service principal owner for workflows",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=580863",
-   "summary": "Workflows can now be owned under a service principal (a Microsoft Entra app registration) instead of a named user account. GA date: December CY2026",
-   "published": "2026-11-19T21:30:10+00:00",
-   "products": [
-    "Entra",
-    "Copilot"
+    "Microsoft 365"
    ],
    "stage": null,
    "feature_id": null
@@ -111,18 +205,6 @@
    "feature_id": null
   },
   {
-   "id": "855edc15e69c",
-   "title": "Microsoft Copilot (Microsoft 365): Copilot Workspaces updates",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=579889",
-   "summary": "With new Copilot Workspaces updates, Work IQ can suggest relevant workspaces based on current workstreams to help people get started quickly. Once in a workspace, team members can work together on shared documents while Copilot connects the dots across the work, surfacing what changed, what remains unresolved, and…",
-   "published": "2026-11-17T18:36:41+00:00",
-   "products": [
-    "Copilot"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
    "id": "a9ff21950d3d",
    "title": "Power Apps: Use the modernized Personal settings experience",
    "link": "https://www.microsoft.com/microsoft-365/roadmap?id=579899",
@@ -138,7 +220,7 @@
    "id": "b9c8a9ceea21",
    "title": "Microsoft Teams: Facilitator follow-up mode",
    "link": "https://www.microsoft.com/microsoft-365/roadmap?id=566523",
-   "summary": "Chat naturally with Facilitator without tagging it each time. GA date: January CY2027",
+   "summary": "Chat naturally with Facilitator without tagging it each time. GA date: January CY2027 Preview date: December CY2026",
    "published": "2026-11-06T23:04:41+00:00",
    "products": [
     "Teams"
@@ -147,13 +229,13 @@
    "feature_id": null
   },
   {
-   "id": "73348aa1de42",
-   "title": "Microsoft Teams: Workflow to automatically add tag members to relevant channels",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577174",
-   "summary": "Associate channels with a tag so members are automatically added to those channels when they join the tag. This helps teams keep channel membership in sync with evolving groups, reduces manual management, and ensures members have access to the conversations and content most relevant to their role. GA date: March…",
-   "published": "2026-10-26T23:15:50+00:00",
+   "id": "c1e6e6a2099d",
+   "title": "Microsoft Edge: Select Password from the context menu",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=570662",
+   "summary": "Users can now manually access saved credentials when password suggestions don't appear automatically. When a user right-clicks a recognized username or password field, a new Select Password option appears in the context menu. This provides a reliable fallback path for sign-in scenarios where autofill suggestions are…",
+   "published": "2026-10-30T22:08:34+00:00",
    "products": [
-    "Teams"
+    "Microsoft 365"
    ],
    "stage": null,
    "feature_id": null
@@ -178,19 +260,6 @@
    "published": "2026-10-23T21:59:27+00:00",
    "products": [
     "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "e246021bb0e3",
-   "title": "Microsoft Teams: Enhanced Copilot and AI controls for meetings",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577399",
-   "summary": "Teams Meetings offer enhanced AI controls for Copilot and AI experiences. Organizers manage who can enable and access AI, while IT admins get a simpler policy model for governing AI across meetings and post-meeting experiences. These updates provide more predictable administration and greater flexibility for…",
-   "published": "2026-10-22T22:58:40+00:00",
-   "products": [
-    "Teams",
-    "Copilot"
    ],
    "stage": null,
    "feature_id": null
@@ -221,18 +290,6 @@
    "feature_id": null
   },
   {
-   "id": "d9c9b4ccd96c",
-   "title": "Microsoft Purview: Introducing IRM Alert classification",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=576710",
-   "summary": "Insider risk management will be introducing the ability to classify alerts as True positive, Benign (operational), and False positive. This will be available on all alerts where authorized analysts with the appropriate permissions can choose from a list of predefined classification reasons. Alert classification will…",
-   "published": "2026-10-22T22:58:40+00:00",
-   "products": [
-    "Purview"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
    "id": "c406e70eecb1",
    "title": "Microsoft Edge: Simplified Energy Saver",
    "link": "https://www.microsoft.com/microsoft-365/roadmap?id=573291",
@@ -245,37 +302,14 @@
    "feature_id": null
   },
   {
-   "id": "a9e9a59bcfd4",
-   "title": "Microsoft Teams: AI Interpreter for Teams Events",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=576711",
-   "summary": "AI Interpreter for Events brings real-time, AI-powered audio interpretation to Teams Town Halls and Webinars, helping global audiences follow events in their preferred language. Organizers can configure supported languages for their event, giving attendees a more natural and engaging multilingual experience beyond…",
-   "published": "2026-10-19T23:15:15+00:00",
+   "id": "5af54ca4a0c7",
+   "title": "Microsoft Teams: PowerPoint Live support for webinars and structured meetings on Teams Rooms on Android",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=576195",
+   "summary": "Participants joining webinars and structured meetings from Teams Rooms on Android can view and interact with PowerPoint Live presentations. This provides greater flexibility and accessibility while keeping room participants aligned with the active presentation. GA date: November CY2026",
+   "published": "2026-10-14T23:01:02+00:00",
    "products": [
-    "Teams"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "d0805548f09b",
-   "title": "Dynamics 365 Sales: Seller experiences - Copy opportunities for repeat deals",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=576806",
-   "summary": "Administrators can control whether the Copy Opportunity feature is available. When enabled, sellers can duplicate an existing opportunity to quickly create a new one. The new opportunity retains key customer, deal, product, stakeholder, and custom-field information from the source opportunity, including hidden custom…",
-   "published": "2026-10-16T19:09:18+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "16c7a5b74439",
-   "title": "Dynamics 365 Sales: Seller experiences - Streamline Quick Campaigns for confident, one-time bulk email outreach",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=576745",
-   "summary": "Quick Campaigns support multiple bulk activity types (email, tasks, appointments, phone calls). This release focuses on improving the end-to-end experience for bulk email creation, with foundational improvements that benefit the overall Quick Campaigns flow. Key capabilities include: Streamlined quick campaign flow…",
-   "published": "2026-10-16T19:08:29+00:00",
-   "products": [
-    "Microsoft 365"
+    "Teams",
+    "Microsoft 365 Apps"
    ],
    "stage": null,
    "feature_id": null
@@ -289,6 +323,54 @@
    "products": [
     "SharePoint",
     "Purview"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "2c2dbabea76e",
+   "title": "Microsoft Teams: Chat for organizers and presenters in structured meetings and webinars on Teams Rooms on Android",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=574107",
+   "summary": "When a Teams Rooms on Android device acts as an organizer, co-organizer, or presenter in a structured meeting or webinar, you have access to the private chat for event management known as the Event Group. You can also switch to a separate chat with attendees, enabling smooth event experiences for all. Available in…",
+   "published": "2026-10-08T23:04:12+00:00",
+   "products": [
+    "Teams"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "366a408fe9b1",
+   "title": "Microsoft Teams: Invite attendees to register",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=573250",
+   "summary": "For an event that needs registration, send email invites to the selected people and groups who will be invited to register to the event GA date: November CY2026",
+   "published": "2026-10-08T23:04:12+00:00",
+   "products": [
+    "Teams"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "e495e4bce3fd",
+   "title": "Microsoft Teams: Pop out sign language interpreter meeting video for continuous visibility",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=571387",
+   "summary": "Keep communication more accessible throughout your meeting. You can now pop out a sign language interpreter into a separate, resizable window that stays visible across monitors and apps. Designed to support Deaf and Hard of Hearing users, the sign language interpreter's popout video will persist while viewers are…",
+   "published": "2026-09-18T22:00:04+00:00",
+   "products": [
+    "Teams"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "46f4d6663bb4",
+   "title": "Microsoft Edge: Autolaunch opt-in experience for managed devices",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=571307",
+   "summary": "Microsoft Edge will introduce an opt-in experience that allows users on managed devices to choose whether Edge launches automatically when Windows starts. Administrators can also manage this behavior through the LaunchEdgeOnWindowsStartupEnabled policy with opt-in, opt-out, and user-choice configurations. GA date…",
+   "published": "2026-09-18T22:00:04+00:00",
+   "products": [
+    "Microsoft 365"
    ],
    "stage": null,
    "feature_id": null
@@ -318,39 +400,50 @@
    "feature_id": null
   },
   {
-   "id": "9c3be5021a7d",
-   "title": "Microsoft Teams: Enable agents for existing applications in your organization",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=569608",
-   "summary": "For third-party applications already being used in your organization, admins can now discover and enable the corresponding Teams agents from within the Teams Admin Center. Admins receive recommendations for high-value agents and gain visibility into any required configuration changes during the enablement workflow…",
-   "published": "2026-08-28T21:59:29+00:00",
+   "id": "2d568e1f5578",
+   "title": "Microsoft Edge: v.158 - Inline Switching for Workspaces",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=568786",
+   "summary": "Workspaces Inline Switching manages multiple Workspaces in a single window. Selecting a Workspace swaps in its tabs, theme, and context, with an easy return to the default space. GA date: November CY2026",
+   "published": "2026-08-26T22:50:58+00:00",
    "products": [
-    "Teams"
+    "Microsoft 365"
    ],
    "stage": null,
    "feature_id": null
   },
   {
-   "id": "85e08a25bd18",
-   "title": "Microsoft Copilot (Microsoft 365): Self-serve sync connectors",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=568788",
-   "summary": "Self-serve sync connectors enable users to securely connect their own external data sources, such as Jira and Confluence Cloud, to Microsoft 365 Copilot. Using their own credentials and permissions, users can synchronize content they already have access to, making it discoverable in Copilot Chat and Microsoft Search…",
-   "published": "2026-08-20T22:38:45+00:00",
+   "id": "cf68be698b90",
+   "title": "Microsoft Edge: v.158 - Automatically unsubscribe users from notifications sent by scam and malicious sites",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=568366",
+   "summary": "Microsoft Edge now helps further protect users from malicious web notifications. When a notification leads users to a site that Microsoft Defender SmartScreen blocks as a scam, phishing, or malware page, Edge automatically stops that source from sending users further notifications and lets users know. Users can review…",
+   "published": "2026-08-03T22:55:03+00:00",
    "products": [
-    "Copilot"
+    "Defender"
    ],
    "stage": null,
    "feature_id": null
   },
   {
-   "id": "6bac0ef83cbe",
-   "title": "SharePoint: Cross-post SharePoint News to Engage",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=568074",
-   "summary": "This feature allows SharePoint News authors to distribute posts to an Engage community or storyline while preserving full fidelity rendering and a unified conversation experience. SharePoint News post will appear consistently in Engage across feeds, digests, Outlook, Teams, desktop, web and mobile apps. When…",
-   "published": "2026-07-22T22:41:54+00:00",
+   "id": "f8f1a8e488eb",
+   "title": "Microsoft Edge: v.158 - Import Google account data anytime from Settings",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=568365",
+   "summary": "Microsoft Edge now lets users import their Google account data - including passwords, bookmarks, history, and autofill data - directly from Edge Settings, at any time after setup. Previously, users had no way to import this data from a Google account outside the first-run experience. With this update, the import flow…",
+   "published": "2026-07-29T23:07:26+00:00",
    "products": [
-    "Teams",
-    "SharePoint",
-    "Outlook"
+    "Microsoft 365"
+   ],
+   "stage": null,
+   "feature_id": null
+  },
+  {
+   "id": "f053e2f21022",
+   "title": "OneNote: Suggested Artifact Creation in Copilot Notebooks",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=566870",
+   "summary": "Copilot Notebooks in OneNote now suggests artifacts to create, such as Word documents, Excel workbooks, and PowerPoint presentations, based on Microsoft 365 knowledge and the content in your notebook. Select the suggestion and Copilot will generate the artifact. GA date: August CY2026 Preview date: July CY2026",
+   "published": "2026-06-30T22:57:58+00:00",
+   "products": [
+    "Copilot",
+    "Microsoft 365 Apps"
    ],
    "stage": null,
    "feature_id": null
@@ -370,11 +463,11 @@
    "feature_id": null
   },
   {
-   "id": "b7176c45267f",
-   "title": "Microsoft Teams: Recently used emojis sync across devices",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=554927",
-   "summary": "Recently used emojis and reactions sync across Teams on desktop and mobile, making it easier to express yourself wherever you work. GA date: July CY2026",
-   "published": "2026-02-05T00:15:27+00:00",
+   "id": "e4f23b170a9d",
+   "title": "Microsoft Teams: AI-powered notes for in-person meetings with Facilitator in Teams Rooms on Android",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=560700",
+   "summary": "In addition to capturing real-time notes and meeting outcomes during scheduled or hybrid meetings, the Facilitator agent assists you with notes, decisions and actions for in-person meetings in Teams Rooms on Android. Simply invite Facilitator with one tap of the room console. Meeting notes appear on the front of room…",
+   "published": "2026-04-27T23:15:13+00:00",
    "products": [
     "Teams"
    ],
@@ -382,110 +475,13 @@
    "feature_id": null
   },
   {
-   "id": "8ac3d4ea8565",
-   "title": "Microsoft Copilot (Microsoft 365): Improved content freshness using Copilot connectors with webhooks-led notifications",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=505442",
-   "summary": "Copilot connectors will offer improved content freshness with more frequent sync of updates using webhook event notifications. The following connectors are in scope - Azure DevOps, Jira cloud, Confluence cloud, Trello, Asana, Bitbucket, GitHub and Gitlab. GA date: August CY2026 Preview date: March CY2026",
-   "published": "2025-10-31T22:00:11+00:00",
-   "products": [
-    "Copilot"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "82c84578304b",
-   "title": "Microsoft Copilot (Microsoft 365): Improved content freshness using Copilot connectors with webhooks-led notifications",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=505441",
-   "summary": "Copilot connectors will offer improved content freshness with more frequent sync of updates using webhook event notifications. The following connectors are in scope - Azure DevOps, Jira cloud, Confluence cloud, Trello, Asana, Bitbucket, GitHub and Gitlab. GA date: October CY2026 Preview date: August CY2025",
-   "published": "2025-10-31T22:00:11+00:00",
-   "products": [
-    "Copilot"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "5f321d45e982",
-   "title": "Microsoft Teams: EDU tenant type selection in policy wizard",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=402185",
-   "summary": "Admins can now select tenant type for their institution from the policy wizard. This setting can be changed anytime from the wizard. GA date: November CY2024",
-   "published": "2024-07-03T00:00:28+00:00",
+   "id": "c897fc09f6fa",
+   "title": "Microsoft Teams: Call quality feedback surveys for Teams Rooms on Android",
+   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=543713",
+   "summary": "Users can now rate the quality of their calls and meetings and provide additional feedback on calling, video, and screen-sharing experiences to help organizations ensure consistent, high-quality experiences. GA date: November CY2026",
+   "published": "2026-01-08T00:15:46+00:00",
    "products": [
     "Teams"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "036b39a25893",
-   "title": "Microsoft Teams: School Connection – Providing access to parents via their phone number",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=398447",
-   "summary": "The School Connection app in Microsoft Teams (mobile) empowers parents and guardians to engage, support, and monitor their student's learning at school. This release enables a parent/guardian to get access to their child’s profile in School Connection if they login to Teams (mobile) with their phone number and the…",
-   "published": "2024-06-04T23:15:18+00:00",
-   "products": [
-    "Teams"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "99f6033df5c1",
-   "title": "Microsoft Viva: Viva Engage - Topic Subscription notification",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=395940",
-   "summary": "This feature allows users to subscribe to notifications for Viva Engage topics they follow. Users will receive a Viva Engage bell notification when a new post is tagged with a topic they are subscribed to or when the topic is added to an existing post. GA date: September CY2024",
-   "published": "2024-05-06T23:45:36+00:00",
-   "products": [
-    "Microsoft 365"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "54c3b6c51d23",
-   "title": "Microsoft Teams: Microsoft 365 admin centers – Manage Teams apps that work on Outlook and Microsoft 365 App",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=393931",
-   "summary": "Administrators using the Microsoft 365 admin center and Teams admin center who manage Teams apps that work on Outlook and the Microsoft 365 App will be able to apply their changes across all three clients (Teams, Outlook and Microsoft 365 App). Before this update, changes made through the Integrated Apps section in…",
-   "published": "2024-04-18T23:15:11+00:00",
-   "products": [
-    "Teams",
-    "Outlook"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "b5c78b3939ad",
-   "title": "Microsoft Teams: Change background while recording on phone",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=380852",
-   "summary": "You can record a video clip with your phone camera and switch your background to any picture you want or make it blurry. With this feature, you can record yourself anywhere and share it with coworkers in your Teams chat or channel. GA date: May CY2024",
-   "published": "2024-02-06T02:15:52+00:00",
-   "products": [
-    "Teams"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "3359bcedbda9",
-   "title": "Microsoft Teams: Latest meeting experiences with performance improvements on web for Safari and Firefox (for anonymous join only)",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=329253",
-   "summary": "The latest Teams meeting experiences will be available for Teams on the web in Safari and Firefox browsers - including performance improvements, refreshed pre-join, updated meeting stage, and the updated meeting toolbar. (for anonymous join only) GA date: September CY2024",
-   "published": "2023-12-15T23:30:25+00:00",
-   "products": [
-    "Teams"
-   ],
-   "stage": null,
-   "feature_id": null
-  },
-  {
-   "id": "dd2cf6e3b797",
-   "title": "Microsoft Defender for Office 365: False positive email release from Quarantine through threat explorer, email summary panel, advanced hunting, and custom detection email entity page take action",
-   "link": "https://www.microsoft.com/microsoft-365/roadmap?id=184915",
-   "summary": "SecOps can now mange False positives and take move to inbox (i.e. release) quarantined messages from Threat explorer, advanced hunting, custom detection and Email entity page without the need to tab out to the Quarantine portal to take the action. More info…",
-   "published": "2023-11-10T00:18:04+00:00",
-   "products": [
-    "Defender"
    ],
    "stage": null,
    "feature_id": null

@@ -51,7 +51,14 @@
    "summary": "Over the past week, anyone could be forgiven for wondering whether a Diehard IV –style cyberwar had finally arrived in the US. Across just four consecutive business days, a mass Microsoft exchange outage broke IT services for thousands of companies, a Federal Aviation Administration tech screw-up grounded airplanes…",
    "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/GettyImages-2201630098-1152x648.jpg",
    "cves": [],
-   "first_seen": "2026-11-19T19:04:24.147057+00:00"
+   "first_seen": "2026-11-19T19:04:24.147057+00:00",
+   "instructions": [
+    "The process of determining the cause of an IT service outage should begin with the assumption that it was an accident, says cybersecurity researcher Doug Madory.",
+    "Only around “one in a thousand,” he says, turns out to have been caused by hackers. “One’s default position should be that it isn’t a cyberattack,” he says, “unless there is some concrete evidence to the contrary.”",
+    "Even with those network clues, however, Meng advises returning to step two: Once an affected service is identified, its actual owners are often the best source to monitor for updates. “Usually the operators have the most information about what’s actually going on,” she says.",
+    "Even these statements, however, should be taken as just another significant data point: Hacker groups exaggerate, misdirect, or lie when it serves their purposes."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "58043437b94b",
@@ -457,7 +464,7 @@
    "link": "https://borncity.com/blog/2026/11/20/kritische-schwachstelle-cve-2026-123890-in-vcenter-8-0-9-0-und-9-1/",
    "published": "2026-11-20T11:33:40+00:00",
    "summary": "In VMware vCenter gibt es in den Versionen 8.0, 9.0 und 9.1 eine kritische Schwachstelle CVE-2026-123890. Diese ermöglicht es einem Angreifer mit Netzwerkzugriff, die Authentifizierung zu umgehen und sich unbefugten Zugriff auf das System zu verschaffen. Die Schwachstelle scheint ausgenutzt … Weiterlesen → Quelle",
-   "image": null,
+   "image": "https://borncity.com/blog/wp-content/uploads/2025/03/image-9.png",
    "cves": [
     "CVE-2026-123890"
    ],
@@ -468,7 +475,8 @@
     "Herr P. zu Windows 11 25H2 – 26H2: Preview Update KB5132057 (19.",
     "https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/release-notes/vcenter-server-update-and-patch-release-notes/vsphere-vcenter-server-80u3m-release-notes.html"
    ],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "4baa07f08d94",
@@ -696,6 +704,25 @@
     "Experts say the incident, which saw data-stealing malicious software silently injected into sites like the BBC , CNN , Equifax , Ledger and Zoom , was exacerbated by the reality that few popular websites enforce strict rules on the sources of third-party content.",
     "Happily, modern ad blocking software can handily block most third-party JavaScript requests.",
     "Ten years ago, the standard security advice for end users was to install antivirus and enable a firewall."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "93138fbb4db2",
+   "source": "krebs",
+   "source_name": "KrebsOnSecurity",
+   "official": false,
+   "source_type": "news",
+   "title": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
+   "link": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
+   "published": "2026-11-21T00:36:39+00:00",
+   "summary": "The chief technology officer and co-founder of ransomwarehelp.com, a six year old Florida business that claimed to use “advanced cryptographic tools” to restore data locked by ransomware, has been charged with wire fraud after an FBI sting operation found the company was simply paying the attackers for a decryption…",
+   "image": "https://krebsonsecurity.com/wp-content/uploads/2026/11/ransomwarehelp.png",
+   "cves": [],
+   "first_seen": "2026-11-21T04:06:18.763077+00:00",
+   "instructions": [
+    "“If it were really true these guys could decrypt any ransomware out there, this guy would be a billionaire,” Ihme said. “They were going after people who don’t have any technical knowledge, are desperate, and don’t have anyone advising them about how any of this stuff works.”",
+    "According to the DoJ, Martino was paid by BlackCat attackers to provide confidential information about the negotiating position and strategy of his employer’s clients and enable the ransomware actors to maximize the ransoms paid by the victims."
    ],
    "instructions_checked": true
   },
@@ -1171,7 +1198,8 @@
    ],
    "first_seen": "2026-11-20T01:13:40.105404+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "d2fc2acba31d",
@@ -1189,7 +1217,8 @@
    ],
    "first_seen": "2026-11-20T01:13:40.105404+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "69863ac92790",
@@ -1207,7 +1236,8 @@
    ],
    "first_seen": "2026-11-20T01:13:40.105404+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "b299b25eb9a0",
@@ -1225,7 +1255,8 @@
    ],
    "first_seen": "2026-11-20T01:13:40.105404+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "87fc79b83ef7",
@@ -1243,7 +1274,8 @@
    ],
    "first_seen": "2026-11-20T01:13:40.105404+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "d630bd7fb0e4",
@@ -1295,7 +1327,9 @@
    "cves": [
     "CVE-2026-85910"
    ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00"
+   "first_seen": "2026-11-20T01:13:40.105404+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "31815a8068bf",
@@ -1311,7 +1345,9 @@
    "cves": [
     "CVE-2026-87698"
    ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00"
+   "first_seen": "2026-11-20T01:13:40.105404+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "62e2b762d2a4",
@@ -1327,7 +1363,9 @@
    "cves": [
     "CVE-2026-88130"
    ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00"
+   "first_seen": "2026-11-20T01:13:40.105404+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "251acc6e20ce",
@@ -1343,7 +1381,9 @@
    "cves": [
     "CVE-2026-88151"
    ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00"
+   "first_seen": "2026-11-20T01:13:40.105404+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "d290b129ac4e",
@@ -1359,7 +1399,9 @@
    "cves": [
     "CVE-2026-88207"
    ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00"
+   "first_seen": "2026-11-20T01:13:40.105404+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "112cf26ea63a",
@@ -1470,7 +1512,9 @@
    "cves": [
     "CVE-2026-97749"
    ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00"
+   "first_seen": "2026-11-20T01:13:40.105404+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "fca0dca96ac6",
@@ -1486,7 +1530,9 @@
    "cves": [
     "CVE-2026-97761"
    ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00"
+   "first_seen": "2026-11-20T01:13:40.105404+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "34dcee7234d7",
@@ -1502,7 +1548,9 @@
    "cves": [
     "CVE-2026-97767"
    ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00"
+   "first_seen": "2026-11-20T01:13:40.105404+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "fe3e82d658d4",
@@ -1518,7 +1566,9 @@
    "cves": [
     "CVE-2026-97780"
    ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00"
+   "first_seen": "2026-11-20T01:13:40.105404+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "fb8b318a049e",
@@ -1859,7 +1909,14 @@
     "CVE-2026-109618",
     "CVE-2026-109619"
    ],
-   "first_seen": "2026-11-19T19:04:24.147057+00:00"
+   "first_seen": "2026-11-19T19:04:24.147057+00:00",
+   "instructions": [
+    "Web application security has traditionally been treated as a developer issue, yet anyone protecting a network must understand how web applications work to properly defend them.",
+    "Defenders must understand the protocol to know what these vulnerabilities look like, for example to write signatures that detect the exploits.",
+    "Palo Alto initially scored the issue 8.7 for its own products and listed it at moderate urgency , raised it to 9.2 Critical with the highest urgency on October 27, and confirmed exploitation a week after its advisory went out.",
+    "And PHP core developer Gina Peter Banyard warned that one early workaround, turning off session upload progress, was not enough on its own."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "11aa6bef2bfb",
@@ -3475,7 +3532,13 @@
    "summary": "Microsoft is developing a new Edge security feature to reduce the attack surface by disabling the WebGL, WebGL2, and WebGPU APIs.",
    "image": null,
    "cves": [],
-   "first_seen": "2026-11-19T19:04:24.147057+00:00"
+   "first_seen": "2026-11-19T19:04:24.147057+00:00",
+   "instructions": [
+    "It may also apply to devices operating within highly restricted environments.\"",
+    "\"The initial set of Lockdown Mode mitigations focus is the GPU process, a more privileged component that handles complex graphics workloads across browser code, third-party libraries, and device drivers,\" Evans added.",
+    "Windows 11 KB5132057 update released with 28 changes and fixes"
+   ],
+   "instructions_checked": true
   },
   {
    "id": "a1dd8f56b81d",
@@ -3529,7 +3592,7 @@
    "link": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5132057-update-released-with-28-changes-and-fixes/",
    "published": "2026-11-20T09:25:35+00:00",
    "summary": "Microsoft released the KB5132057 November Windows 11 preview update, which comes with 28 changes, including improvements to Windows Search, Windows Hello, and the Run dialog.",
-   "image": null,
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/17/windows_11_haedpic.jpg",
    "cves": [],
    "first_seen": "2026-11-20T17:21:09.204406+00:00",
    "instructions": [
@@ -3538,7 +3601,8 @@
     "KB5132057 is a preview update that allows IT administrators to test Windows improvements, bug fixes, and new features before they become generally available in next month's Patch Tuesday release.",
     "The KB5132057 update includes the new Windows Search Box experience that was built on WinUI 3 and removes promotional content from web results for better resource efficiency and a streamlined design."
    ],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "1cea14202697",
@@ -3905,7 +3969,7 @@
    "link": "https://www.bleepingcomputer.com/news/security/f5-releases-emergency-patches-for-critical-big-ip-rce-flaws/",
    "published": "2026-11-20T10:57:43+00:00",
    "summary": "US cybersecurity company F5 warned customers to patch five critical BIG-IP vulnerabilities that attackers can exploit to trigger denial-of-service (DoS) or gain remote code execution.",
-   "image": null,
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/19/F5-headpic.jpg",
    "cves": [],
    "first_seen": "2026-11-20T17:21:09.204406+00:00",
    "instructions": [
@@ -3914,7 +3978,8 @@
     "US cybersecurity company F5 warned customers to patch five BIG-IP vulnerabilities that attackers can exploit to trigger denial-of-service (DoS) or gain remote code execution.",
     "Citrix warns admins to patch new NetScaler RCE flaw immediately"
    ],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "d29e040f4044",
@@ -4824,7 +4889,14 @@
    "cves": [
     "CVE-2026-126088"
    ],
-   "first_seen": "2026-11-19T19:04:24.147057+00:00"
+   "first_seen": "2026-11-19T19:04:24.147057+00:00",
+   "instructions": [
+    "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies .",
+    "Vendor fix Update to OpenPLC Runtime version 4.3.0 or later.",
+    "CISA recommends users take defensive measures to minimize the risk of exploitation of these vulnerabilities.",
+    "When remote access is required, use more secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most current version available."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "73e981a44821",
@@ -4842,7 +4914,14 @@
     "CVE-2026-125273",
     "CVE-2026-96805"
    ],
-   "first_seen": "2026-11-19T19:04:24.147057+00:00"
+   "first_seen": "2026-11-19T19:04:24.147057+00:00",
+   "instructions": [
+    "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies .",
+    "Users should open the Elecbrakes app and install the firmware update.",
+    "CISA recommends users take defensive measures to minimize the risk of exploitation of these vulnerabilities.",
+    "When remote access is required, use more secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most current version available."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "3f6682cf9442",
@@ -4858,7 +4937,14 @@
    "cves": [
     "CVE-2026-125132"
    ],
-   "first_seen": "2026-11-19T19:04:24.147057+00:00"
+   "first_seen": "2026-11-19T19:04:24.147057+00:00",
+   "instructions": [
+    "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies .",
+    "CISA recommends users take defensive measures to minimize the risk of exploitation of these vulnerabilities.",
+    "When remote access is required, use more secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most current version available.",
+    "CISA also provides a section for control systems security recommended practices on the ICS webpage on cisa.gov/ics ."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "7cf301393d67",
@@ -5632,7 +5718,14 @@
    "summary": "Attackers are targeting Confluence Data Center through an Axis flaw and Apache is warning of attacks against Roller. The post Critical Apache Roller, Axis Vulnerabilities Exploited in Attacks appeared first on SecurityWeek.",
    "image": null,
    "cves": [],
-   "first_seen": "2026-11-19T19:04:24.147057+00:00"
+   "first_seen": "2026-11-19T19:04:24.147057+00:00",
+   "instructions": [
+    "Apache does not plan to release a fixed Axis 1.x version and recommends migrating to another SOAP engine or applying its published patch.",
+    "Confluence Data Center users can upgrade to version 9.2.28 or an unaffected 10.x release.",
+    "The flaw allows unauthenticated remote code execution. “This issue is being actively exploited,” Apache said in its November 17 advisory, without providing further information about the attacks.",
+    "Java4Shell Exploitation Attempts Begin as Vendors Rush Out Advisories"
+   ],
+   "instructions_checked": true
   },
   {
    "id": "94321d4b37d6",
@@ -5683,13 +5776,14 @@
    "link": "https://www.securityweek.com/european-commission-confirms-ai-assisted-cyberattack-disrupted-services/",
    "published": "2026-11-20T10:51:42+00:00",
    "summary": "The Commission took certain services offline to contain the incident, but it has no evidence of a data breach. The post European Commission Confirms AI-Assisted Cyberattack Disrupted Services appeared first on SecurityWeek.",
-   "image": null,
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/06/EU-Europe-European-Union-.jpeg",
    "cves": [],
    "first_seen": "2026-11-20T17:21:09.204406+00:00",
    "instructions": [
     "PHP Readies Critical Security Updates to Patch Another RCE Flaw"
    ],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "e45c5124b0ac",
@@ -6062,9 +6156,15 @@
    "link": "https://www.securityweek.com/n-able-blames-service-disruption-on-cyberattack/",
    "published": "2026-11-20T09:08:35+00:00",
    "summary": "The incident affected Mail Assure and SpamExperts Hosted Cloud and could have led to credential theft. The post N-able Blames Service Disruption on Cyberattack appeared first on SecurityWeek.",
-   "image": null,
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/08/N-Able.jpeg",
    "cves": [],
-   "first_seen": "2026-11-20T17:21:09.204406+00:00"
+   "first_seen": "2026-11-20T17:21:09.204406+00:00",
+   "image_checked": true,
+   "instructions": [
+    "The company says its investigation into the incident remains ongoing while it scrambles to securely restore its dashboard and API access. “We have provided customers with specific guidance based on how they access and configure Mail Assure or SpamExperts Hosted Cloud and will continue to provide updates,” N-able said.",
+    "PHP Readies Critical Security Updates to Patch Another RCE Flaw"
+   ],
+   "instructions_checked": true
   },
   {
    "id": "7d141681ccc2",
@@ -6329,7 +6429,7 @@
    "link": "https://www.securityweek.com/ruby-patches-ruby2shell-vulnerability-that-could-lead-to-rce/",
    "published": "2026-11-20T10:34:10+00:00",
    "summary": "Tracked as CVE-2026-132825, the bug is a heap-based buffer overflow that could lead to remote code execution (RCE). The post Ruby Patches Ruby2Shell Vulnerability That Could Lead to RCE appeared first on SecurityWeek.",
-   "image": null,
+   "image": "https://www.securityweek.com/wp-content/uploads/2024/04/Vulnerability-Databases.jpg",
    "cves": [
     "CVE-2026-132825"
    ],
@@ -6337,7 +6437,8 @@
    "instructions": [
     "PHP Readies Critical Security Updates to Patch Another RCE Flaw"
    ],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "dfcd48a830ee",
@@ -6368,13 +6469,14 @@
    "link": "https://www.securityweek.com/sbc-medical-group-data-breach-impacts-over-2-million/",
    "published": "2026-11-20T11:36:51+00:00",
    "summary": "Threat actors accessed databases containing customer information associated with clinics in Japan. The post SBC Medical Group Data Breach Impacts Over 2 Million appeared first on SecurityWeek.",
-   "image": null,
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/03/healthcare-medical.jpeg",
    "cves": [],
    "first_seen": "2026-11-20T17:21:09.204406+00:00",
    "instructions": [
     "PHP Readies Critical Security Updates to Patch Another RCE Flaw"
    ],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "2aa6fa29c77a",
@@ -6402,7 +6504,13 @@
    "summary": "The company will use the funds to accelerate the development and distribution of its security platform. The post StepSecurity Secures $20 Million to Expand Supply Chain Protection appeared first on SecurityWeek.",
    "image": null,
    "cves": [],
-   "first_seen": "2026-11-19T19:04:24.147057+00:00"
+   "first_seen": "2026-11-19T19:04:24.147057+00:00",
+   "instructions": [
+    "Founded in 2021, Seattle-based StepSecurity has built a platform that combines developer-machine protection, repository checks, a hosted upstream proxy and policy gate, and a CI/CD security agent to identify and block malicious components.",
+    "The startup offers a free community tier of its CI/CD runtime security agent Harden-Runner, already used by over 20,000 open source projects, which now also integrates a free Secure Registry proxy and policy gate tier to help open source maintainers block compromised packages.",
+    "PHP Readies Critical Security Updates to Patch Another RCE Flaw"
+   ],
+   "instructions_checked": true
   },
   {
    "id": "79abf73e84bb",
@@ -6437,7 +6545,14 @@
    "summary": "Lower costs, data privacy, and greater control are driving open-weight AI adoption, but many organizations are not addressing the risks that come with it. The post The Governance Gap in Open-Weight AI and What to Do About It appeared first on SecurityWeek.",
    "image": null,
    "cves": [],
-   "first_seen": "2026-11-19T19:04:24.147057+00:00"
+   "first_seen": "2026-11-19T19:04:24.147057+00:00",
+   "instructions": [
+    "The bank can apply its own access controls to the model and the data.",
+    "Your team must track updates, test them, and decide when to switch.",
+    "Controls to Address Risks If an open-weight AI model makes sense for your organization, governance should walk in lockstep with deployment: Set a regular review schedule for updates and security notices.",
+    "The rule of thumb should be: ‘trust after testing.’ Test the model as an attacker might."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "aaca3d274aab",
