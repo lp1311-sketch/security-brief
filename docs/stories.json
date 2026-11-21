@@ -1,23 +1,23 @@
 {
  "stories": [
   {
-   "id": "925f615d5741",
-   "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
-   "summary": "CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2025-42884 SAP NetWeaver…",
+   "id": "a3eac34b29cf",
+   "title": "Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added four flaws impacting Apache Roller, Cisco Expressway, SAP NetWeaver, and Broadcom VMware…",
    "priority": "Critical",
    "category": "Patch Radar",
-   "date": "20 Nov 2026, 12:00 UTC",
-   "sources": "CISA Cybersecurity Advisories, Born's IT and Windows Blog, The Hacker News, Google Threat Intelligence",
-   "url": "story/925f615d5741.html"
+   "date": "21 Nov 2026, 08:49 UTC",
+   "sources": "The Hacker News, CISA Cybersecurity Advisories, Born's IT and Windows Blog, Google Threat Intelligence, SecurityWeek",
+   "url": "story/a3eac34b29cf.html"
   },
   {
    "id": "a9aa37ceddf1",
    "title": "China's 'Armory Castle' Lays Siege to VMware vCenter Zero-Day",
    "summary": "During the last wave of major VMware vCenter security updates, a China-nexus threat group likely already had its next zero-day up its sleeve.",
-   "priority": "Critical",
+   "priority": "High",
    "category": "Patch Radar",
    "date": "20 Nov 2026, 21:03 UTC",
-   "sources": "Dark Reading, The Hacker News, BleepingComputer, SecurityWeek, Google Threat Intelligence",
+   "sources": "Dark Reading, BleepingComputer, SecurityWeek, The Hacker News",
    "url": "story/a9aa37ceddf1.html"
   },
   {
@@ -51,16 +51,6 @@
    "url": "story/72572082204e.html"
   },
   {
-   "id": "3827cbac510e",
-   "title": "SBC Medical Group Data Breach Impacts Over 2 Million",
-   "summary": "Threat actors accessed databases containing customer information associated with clinics in Japan. The post SBC Medical Group Data Breach Impacts Over 2 Million appeared…",
-   "priority": "High",
-   "category": "Attacks & Breaches",
-   "date": "20 Nov 2026, 11:36 UTC",
-   "sources": "SecurityWeek, BleepingComputer",
-   "url": "story/3827cbac510e.html"
-  },
-  {
    "id": "75044bab3e73",
    "title": "Five warning signs of ransomware breach before encryption or data theft",
    "summary": "Ransomware attacks often involve credential theft, lateral movement, and attempts to disable security controls long before encryption begins. Acronis examines five…",
@@ -71,14 +61,24 @@
    "url": "story/75044bab3e73.html"
   },
   {
-   "id": "d02f8572d5f1",
-   "title": "Critical Apache Roller, Axis Vulnerabilities Exploited in Attacks",
-   "summary": "Attackers are targeting Confluence Data Center through an Axis flaw and Apache is warning of attacks against Roller. The post Critical Apache Roller, Axis…",
-   "priority": "High",
+   "id": "193208e89084",
+   "title": "Everything Is a Web Application, Including Your Firewall",
+   "summary": "One of the early targets of PHP2Shell exploitation was the firewall. On October 28, Palo Alto Networks confirmed that attackers were exploiting the two PHP…",
+   "priority": "Critical",
    "category": "Patch Radar",
-   "date": "19 Nov 2026, 12:13 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/d02f8572d5f1.html"
+   "date": "19 Nov 2026, 11:52 UTC",
+   "sources": "The Hacker News, Google Threat Intelligence",
+   "url": "story/193208e89084.html"
+  },
+  {
+   "id": "122413bd849f",
+   "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+   "summary": "CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2024-10441 Synology…",
+   "priority": "Critical",
+   "category": "Patch Radar",
+   "date": "18 Nov 2026, 12:00 UTC",
+   "sources": "CISA Cybersecurity Advisories",
+   "url": "story/122413bd849f.html"
   },
   {
    "id": "35aed7f27fbb",
@@ -91,34 +91,24 @@
    "url": "story/35aed7f27fbb.html"
   },
   {
-   "id": "6a744f24eada",
-   "title": "F5 releases emergency patches for critical BIG-IP RCE flaws",
-   "summary": "US cybersecurity company F5 warned customers to patch five critical BIG-IP vulnerabilities that attackers can exploit to trigger denial-of-service (DoS) or gain remote…",
+   "id": "3827cbac510e",
+   "title": "SBC Medical Group Data Breach Impacts Over 2 Million",
+   "summary": "Threat actors accessed databases containing customer information associated with clinics in Japan. The post SBC Medical Group Data Breach Impacts Over 2 Million appeared…",
    "priority": "High",
-   "category": "Patch Radar",
-   "date": "20 Nov 2026, 10:57 UTC",
-   "sources": "BleepingComputer, SecurityWeek, The Hacker News",
-   "url": "story/6a744f24eada.html"
+   "category": "Attacks & Breaches",
+   "date": "20 Nov 2026, 11:36 UTC",
+   "sources": "SecurityWeek, BleepingComputer",
+   "url": "story/3827cbac510e.html"
   },
   {
-   "id": "193208e89084",
-   "title": "Everything Is a Web Application, Including Your Firewall",
-   "summary": "One of the early targets of PHP2Shell exploitation was the firewall. On October 28, Palo Alto Networks confirmed that attackers were exploiting the two PHP…",
-   "priority": "Critical",
-   "category": "Patch Radar",
-   "date": "19 Nov 2026, 11:52 UTC",
-   "sources": "The Hacker News",
-   "url": "story/193208e89084.html"
-  },
-  {
-   "id": "ce554e89b404",
-   "title": "Java4Shell Exploitation Attempts Begin as Vendors Rush Out Advisories",
-   "summary": "GreyNoise, WatchTowr and Cloudflare report probing and exploit attempts, while Cisco, Elastic, Red Hat and Siemens detail impact. The post Java4Shell Exploitation…",
+   "id": "d02f8572d5f1",
+   "title": "Critical Apache Roller, Axis Vulnerabilities Exploited in Attacks",
+   "summary": "Attackers are targeting Confluence Data Center through an Axis flaw and Apache is warning of attacks against Roller. The post Critical Apache Roller, Axis…",
    "priority": "High",
    "category": "Patch Radar",
-   "date": "19 Nov 2026, 09:10 UTC",
+   "date": "19 Nov 2026, 12:13 UTC",
    "sources": "SecurityWeek",
-   "url": "story/ce554e89b404.html"
+   "url": "story/d02f8572d5f1.html"
   },
   {
    "id": "4f4cc6f19074",
@@ -141,6 +131,16 @@
    "url": "story/7d141681ccc2.html"
   },
   {
+   "id": "6231e48f3bee",
+   "title": "Amazon: China-Linked Hackers’ AI Agents Exploited Medical Software Zero-Day",
+   "summary": "A threat actor used autonomous Cairn AI agents to discover and exploit a critical MONAI Label vulnerability. The post Amazon: China-Linked Hackers’ AI Agents Exploited…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "21 Nov 2026, 12:08 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/6231e48f3bee.html"
+  },
+  {
    "id": "4baa07f08d94",
    "title": "Microsofts AI-Agent Framework PyPI mit Malware verseucht",
    "summary": "Das offizielle Python-Paket \"Microsoft Agent Framework\", veröffentlicht auf PyPI, war kürzlich kompromittiert. Betroffen waren die beiden, am 17. November 2026…",
@@ -161,34 +161,24 @@
    "url": "story/d9a325150570.html"
   },
   {
-   "id": "2be32b97a1a6",
-   "title": "European Commission Confirms AI-Assisted Cyberattack Disrupted Services",
-   "summary": "The Commission took certain services offline to contain the incident, but it has no evidence of a data breach. The post European Commission Confirms AI-Assisted…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "20 Nov 2026, 10:51 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/2be32b97a1a6.html"
-  },
-  {
-   "id": "b6dced9e8be0",
-   "title": "SonicWall Warns Gen 6 Firewalls Won't Get Security Patches, Even for Critical Flaws",
-   "summary": "SonicWall has urged all customers still running Generation 6 firewalls to retire and replace them immediately and stop exposing the devices on the internet edge, citing…",
+   "id": "6a744f24eada",
+   "title": "F5 releases emergency patches for critical BIG-IP RCE flaws",
+   "summary": "US cybersecurity company F5 warned customers to patch five critical BIG-IP vulnerabilities that attackers can exploit to trigger denial-of-service (DoS) or gain remote…",
    "priority": "Standard",
    "category": "Patch Radar",
-   "date": "20 Nov 2026, 10:38 UTC",
-   "sources": "The Hacker News",
-   "url": "story/b6dced9e8be0.html"
+   "date": "20 Nov 2026, 10:57 UTC",
+   "sources": "BleepingComputer, SecurityWeek, The Hacker News",
+   "url": "story/6a744f24eada.html"
   },
   {
-   "id": "7aba46b2e297",
-   "title": "NVIDIA investigating Gentlemen ransomware breach claims",
-   "summary": "NVIDIA is investigating claims of a security breach after the Gentlemen ransomware group has added the company to its dark web data leak site.",
+   "id": "ce554e89b404",
+   "title": "Java4Shell Exploitation Attempts Begin as Vendors Rush Out Advisories",
+   "summary": "GreyNoise, WatchTowr and Cloudflare report probing and exploit attempts, while Cisco, Elastic, Red Hat and Siemens detail impact. The post Java4Shell Exploitation…",
    "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "19 Nov 2026, 09:23 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/7aba46b2e297.html"
+   "category": "Patch Radar",
+   "date": "19 Nov 2026, 09:10 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/ce554e89b404.html"
   },
   {
    "id": "223101d57350",
@@ -219,6 +209,16 @@
    "date": "15 Nov 2026, 18:29 UTC",
    "sources": "BleepingComputer",
    "url": "story/4201db3ac682.html"
+  },
+  {
+   "id": "761885e6c02d",
+   "title": "GnuPG Warns Critical GPGME Flaw Could Expose App Data via Malicious OpenPGP Keys",
+   "summary": "A malicious OpenPGP key with an unusually long user ID can trigger a critical memory bug in GPGME, the standard library that programs use to work with GnuPG. The GnuPG…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "21 Nov 2026, 11:05 UTC",
+   "sources": "The Hacker News",
+   "url": "story/761885e6c02d.html"
   },
   {
    "id": "93138fbb4db2",
@@ -301,44 +301,24 @@
    "url": "story/c21f2f095f9f.html"
   },
   {
-   "id": "fc7b1a32d55e",
-   "title": "Microsoft now automatically installs Windows 11 26H2 on unmanaged devices",
-   "summary": "Starting this week, Microsoft has begun automatically upgrading eligible devices that aren't managed by an IT department to Windows 11 26H2.",
-   "priority": "Standard",
-   "category": "Microsoft",
-   "date": "20 Nov 2026, 12:14 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/fc7b1a32d55e.html"
-  },
-  {
-   "id": "09d3f14eaae7",
-   "title": "Windows 11 KB5132057 update released with 28 changes and fixes",
-   "summary": "Microsoft released the KB5132057 November Windows 11 preview update, which comes with 28 changes, including improvements to Windows Search, Windows Hello, and the Run…",
-   "priority": "Standard",
-   "category": "Microsoft",
-   "date": "20 Nov 2026, 09:25 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/09d3f14eaae7.html"
-  },
-  {
-   "id": "009f6643a854",
-   "title": "JPMorgan, Visa, Mastercard Cite Third-Party Incidents Amid Data Leak",
-   "summary": "The companies point to third-party providers after the N0n extortion group leaked data allegedly tied to their customers. The post JPMorgan, Visa, Mastercard Cite…",
+   "id": "2be32b97a1a6",
+   "title": "European Commission Confirms AI-Assisted Cyberattack Disrupted Services",
+   "summary": "The Commission took certain services offline to contain the incident, but it has no evidence of a data breach. The post European Commission Confirms AI-Assisted…",
    "priority": "Standard",
    "category": "Attacks & Breaches",
-   "date": "20 Nov 2026, 07:35 UTC",
+   "date": "20 Nov 2026, 10:51 UTC",
    "sources": "SecurityWeek",
-   "url": "story/009f6643a854.html"
+   "url": "story/2be32b97a1a6.html"
   },
   {
-   "id": "fa700a4eb8ce",
-   "title": "New Unpatched Windows 0-Day FastUnlock Lets Someone Holding a Locked PC Run Programs on It",
-   "summary": "A newly disclosed unpatched zero-day technique called FastUnlock lets someone with physical access to a locked Windows computer start programs without signing in…",
+   "id": "b6dced9e8be0",
+   "title": "SonicWall Warns Gen 6 Firewalls Won't Get Security Patches, Even for Critical Flaws",
+   "summary": "SonicWall has urged all customers still running Generation 6 firewalls to retire and replace them immediately and stop exposing the devices on the internet edge, citing…",
    "priority": "Standard",
    "category": "Patch Radar",
-   "date": "20 Nov 2026, 05:30 UTC",
+   "date": "20 Nov 2026, 10:38 UTC",
    "sources": "The Hacker News",
-   "url": "story/fa700a4eb8ce.html"
+   "url": "story/b6dced9e8be0.html"
   },
   {
    "id": "9c7f489322a3",
@@ -461,34 +441,14 @@
    "url": "story/f92f66411a81.html"
   },
   {
-   "id": "73e981a44821",
-   "title": "Elecbrakes EB2, VM1, ELBC2000",
-   "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to gain control of the brakes of a trailer, modify the firmware, disable the…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "19 Nov 2026, 12:00 UTC",
-   "sources": "CISA Cybersecurity Advisories",
-   "url": "story/73e981a44821.html"
-  },
-  {
-   "id": "67401cc888fc",
-   "title": "Hackers Breach N-able Cloud Server, Disrupting Email Security Management Across 3 Regions",
-   "summary": "N-able on Wednesday disclosed that unknown threat actors gained unauthorized access to one of the servers in the Mail Assure and Spam Experts Hosted Cloud, causing it to…",
+   "id": "7aba46b2e297",
+   "title": "NVIDIA investigating Gentlemen ransomware breach claims",
+   "summary": "NVIDIA is investigating claims of a security breach after the Gentlemen ransomware group has added the company to its dark web data leak site.",
    "priority": "Standard",
    "category": "Attacks & Breaches",
-   "date": "19 Nov 2026, 09:31 UTC",
-   "sources": "The Hacker News",
-   "url": "story/67401cc888fc.html"
-  },
-  {
-   "id": "7b2c191d7530",
-   "title": "CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks",
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added four vulnerabilities impacting Synology DiskStation Manager (DSM), BerriAI LiteLLM…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "19 Nov 2026, 08:00 UTC",
-   "sources": "The Hacker News",
-   "url": "story/7b2c191d7530.html"
+   "date": "19 Nov 2026, 09:23 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/7aba46b2e297.html"
   },
   {
    "id": "4d21e756021a",
@@ -539,6 +499,26 @@
    "date": "16 Nov 2026, 19:57 UTC",
    "sources": "BleepingComputer",
    "url": "story/f66e964ba9d3.html"
+  },
+  {
+   "id": "16765aea3bd9",
+   "title": "Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access",
+   "summary": "Suspected China-linked hackers used autonomous AI agents to find a previously unknown flaw in MONAI Label, an open-source medical imaging server, and gain root access to…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "21 Nov 2026, 11:03 UTC",
+   "sources": "The Hacker News",
+   "url": "story/16765aea3bd9.html"
+  },
+  {
+   "id": "9da47b8efcbb",
+   "title": "Signal Blocks AI Agents From Reading Private Chats via Screenshots on Android and iOS",
+   "summary": "Signal has announced that it will restrict screenshots by default to stop artificial intelligence (AI) agents from reading private chats on Android and iOS devices, but…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "21 Nov 2026, 08:49 UTC",
+   "sources": "The Hacker News",
+   "url": "story/9da47b8efcbb.html"
   },
   {
    "id": "99727b65c290",
@@ -621,44 +601,44 @@
    "url": "story/5b364ed36dab.html"
   },
   {
-   "id": "f80afcc47857",
-   "title": "Linux KVM Flaw CVE-2026-99312 Lets Guest VMs Access Host Memory on AMD Hosts",
-   "summary": "A flaw in KVM, the hypervisor built into the Linux kernel, let researchers read about 127 GB of a cloud server's memory from inside a virtual machine of their own on…",
+   "id": "fc7b1a32d55e",
+   "title": "Microsoft now automatically installs Windows 11 26H2 on unmanaged devices",
+   "summary": "Starting this week, Microsoft has begun automatically upgrading eligible devices that aren't managed by an IT department to Windows 11 26H2.",
    "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "20 Nov 2026, 12:20 UTC",
-   "sources": "The Hacker News",
-   "url": "story/f80afcc47857.html"
+   "category": "Microsoft",
+   "date": "20 Nov 2026, 12:14 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/fc7b1a32d55e.html"
   },
   {
-   "id": "d9e0b261f408",
-   "title": "The Path to AI Autonomy in the SOC",
-   "summary": "Security leaders are about to hand AI agents a lot more authority. In a recent a16z survey of CISOs at organizations with more than 1,000 employees, 36% said they are…",
+   "id": "09d3f14eaae7",
+   "title": "Windows 11 KB5132057 update released with 28 changes and fixes",
+   "summary": "Microsoft released the KB5132057 November Windows 11 preview update, which comes with 28 changes, including improvements to Windows Search, Windows Hello, and the Run…",
    "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "20 Nov 2026, 12:00 UTC",
-   "sources": "The Hacker News",
-   "url": "story/d9e0b261f408.html"
+   "category": "Microsoft",
+   "date": "20 Nov 2026, 09:25 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/09d3f14eaae7.html"
   },
   {
-   "id": "1842d6db44a6",
-   "title": "N-able Blames Service Disruption on Cyberattack",
-   "summary": "The incident affected Mail Assure and SpamExperts Hosted Cloud and could have led to credential theft. The post N-able Blames Service Disruption on Cyberattack appeared…",
+   "id": "009f6643a854",
+   "title": "JPMorgan, Visa, Mastercard Cite Third-Party Incidents Amid Data Leak",
+   "summary": "The companies point to third-party providers after the N0n extortion group leaked data allegedly tied to their customers. The post JPMorgan, Visa, Mastercard Cite…",
    "priority": "Standard",
    "category": "Attacks & Breaches",
-   "date": "20 Nov 2026, 09:08 UTC",
+   "date": "20 Nov 2026, 07:35 UTC",
    "sources": "SecurityWeek",
-   "url": "story/1842d6db44a6.html"
+   "url": "story/009f6643a854.html"
   },
   {
-   "id": "c7433b924f3c",
-   "title": "Chromium: CVE-2024-7533 Use after free in Sharing",
-   "summary": "Information published.",
+   "id": "fa700a4eb8ce",
+   "title": "New Unpatched Windows 0-Day FastUnlock Lets Someone Holding a Locked PC Run Programs on It",
+   "summary": "A newly disclosed unpatched zero-day technique called FastUnlock lets someone with physical access to a locked Windows computer start programs without signing in…",
    "priority": "Standard",
    "category": "Patch Radar",
-   "date": "20 Nov 2026, 09:06 UTC",
-   "sources": "Microsoft Security Response Center",
-   "url": "story/c7433b924f3c.html"
+   "date": "20 Nov 2026, 05:30 UTC",
+   "sources": "The Hacker News",
+   "url": "story/fa700a4eb8ce.html"
   },
   {
    "id": "ba460e7804cb",
@@ -781,64 +761,34 @@
    "url": "story/df5a560c1b8f.html"
   },
   {
-   "id": "937f390d6b18",
-   "title": "Microsoft tests new Edge Lockdown Mode that disables GPU APIs",
-   "summary": "Microsoft is developing a new Edge security feature to reduce the attack surface by disabling the WebGL, WebGL2, and WebGPU APIs.",
+   "id": "73e981a44821",
+   "title": "Elecbrakes EB2, VM1, ELBC2000",
+   "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to gain control of the brakes of a trailer, modify the firmware, disable the…",
    "priority": "Standard",
-   "category": "Microsoft",
-   "date": "19 Nov 2026, 11:46 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/937f390d6b18.html"
+   "category": "Patch Radar",
+   "date": "19 Nov 2026, 12:00 UTC",
+   "sources": "CISA Cybersecurity Advisories",
+   "url": "story/73e981a44821.html"
   },
   {
-   "id": "45584a3597b1",
-   "title": "How to tell a cyberattack from a plain old outage",
-   "summary": "Over the past week, anyone could be forgiven for wondering whether a Diehard IV –style cyberwar had finally arrived in the US. Across just four consecutive business…",
+   "id": "67401cc888fc",
+   "title": "Hackers Breach N-able Cloud Server, Disrupting Email Security Management Across 3 Regions",
+   "summary": "N-able on Wednesday disclosed that unknown threat actors gained unauthorized access to one of the servers in the Mail Assure and Spam Experts Hosted Cloud, causing it to…",
    "priority": "Standard",
    "category": "Attacks & Breaches",
-   "date": "19 Nov 2026, 11:13 UTC",
-   "sources": "Ars Technica Security",
-   "url": "story/45584a3597b1.html"
-  },
-  {
-   "id": "2aa6fa29c77a",
-   "title": "Splunk Patches Nearly 140 Flaws Across Three Core Products",
-   "summary": "The security updates resolve critical and high-severity issues leading to authentication bypass, remote code execution, and privilege escalation. The post Splunk Patches…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "19 Nov 2026, 10:41 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/2aa6fa29c77a.html"
-  },
-  {
-   "id": "1fc34cf6486a",
-   "title": "Microsoft confirms app installation, launch issues after hotpatch",
-   "summary": "Microsoft has shared a workaround for installation and launch issues affecting Office and third-party applications after installing this month's Windows 11 hotpatch.",
-   "priority": "Standard",
-   "category": "Microsoft",
-   "date": "19 Nov 2026, 10:35 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/1fc34cf6486a.html"
-  },
-  {
-   "id": "ef3cecb6fd50",
-   "title": "Ruby Ships Fixes for 7 Flaws, Including Critical Ruby2Shell, Said to Hit Default Rails Apps Pre-Auth",
-   "summary": "Ruby contains seven memory-safety flaws in its regular expression engine and its string case-conversion code. For five of them, its maintainers say, proof-of-concept…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "19 Nov 2026, 08:42 UTC",
+   "date": "19 Nov 2026, 09:31 UTC",
    "sources": "The Hacker News",
-   "url": "story/ef3cecb6fd50.html"
+   "url": "story/67401cc888fc.html"
   },
   {
-   "id": "d1202d3392a4",
-   "title": "PHP Warns of Critical Security Flaws Affecting All Supported Versions, Fixes Coming November 19",
-   "summary": "The maintainers of the PHP programming language on Wednesday issued an advisory announcing an upcoming security release that addresses critical flaws. The release is…",
+   "id": "7b2c191d7530",
+   "title": "CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added four vulnerabilities impacting Synology DiskStation Manager (DSM), BerriAI LiteLLM…",
    "priority": "Standard",
    "category": "Patch Radar",
-   "date": "19 Nov 2026, 04:33 UTC",
+   "date": "19 Nov 2026, 08:00 UTC",
    "sources": "The Hacker News",
-   "url": "story/d1202d3392a4.html"
+   "url": "story/7b2c191d7530.html"
   },
   {
    "id": "84415312a0a7",
@@ -1021,6 +971,16 @@
    "url": "story/3772cdf174b0.html"
   },
   {
+   "id": "0ad755f2681c",
+   "title": "A Single Malicious Webpage Let Researchers Hijack Meta Muse and Access Private Chats",
+   "summary": "A malicious webpage could extract a Meta Muse user's private conversations and stored memories from the assistant without triggering any approval prompt, researchers…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "21 Nov 2026, 11:53 UTC",
+   "sources": "The Hacker News",
+   "url": "story/0ad755f2681c.html"
+  },
+  {
    "id": "f7988a82e6a4",
    "title": "Anstieg bei Phishing-Versuchen rund um den Black Friday um 82 Prozent",
    "summary": "Es geht auf den sogenannten Black Friday (Ende November) zu, und es ist \"Alarm-Stimmung\" für Schnäppchen-Jäger. Das wissen auch Cyber-Kriminelle, die diese Zeit…",
@@ -1091,34 +1051,44 @@
    "url": "story/57375f482cd6.html"
   },
   {
-   "id": "b4d165a3ec28",
-   "title": "Opening a 400-Year-Old Cryptex",
-   "summary": "Researchers used CT scanning technology to recover the code and open a 400-year-old cryptex padlock. You can buy a USB-drive cryptex.",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "20 Nov 2026, 12:04 UTC",
-   "sources": "Schneier on Security",
-   "url": "story/b4d165a3ec28.html"
-  },
-  {
-   "id": "f5b6ed0f978c",
-   "title": "Ruby Patches Ruby2Shell Vulnerability That Could Lead to RCE",
-   "summary": "Tracked as CVE-2026-132825, the bug is a heap-based buffer overflow that could lead to remote code execution (RCE). The post Ruby Patches Ruby2Shell Vulnerability That…",
+   "id": "f80afcc47857",
+   "title": "Linux KVM Flaw CVE-2026-99312 Lets Guest VMs Access Host Memory on AMD Hosts",
+   "summary": "A flaw in KVM, the hypervisor built into the Linux kernel, let researchers read about 127 GB of a cloud server's memory from inside a virtual machine of their own on…",
    "priority": "Standard",
    "category": "Patch Radar",
-   "date": "20 Nov 2026, 10:34 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/f5b6ed0f978c.html"
+   "date": "20 Nov 2026, 12:20 UTC",
+   "sources": "The Hacker News",
+   "url": "story/f80afcc47857.html"
   },
   {
-   "id": "ba74506a96ac",
-   "title": "ROMULUS ClickFix Attacks Deliver RAT That Can Spy on Users and Control PCs",
-   "summary": "Threat actors have been observed using the ROMULUS ClickFix malware delivery platform to deliver a previously undocumented remote access trojan (RAT) that shares…",
+   "id": "d9e0b261f408",
+   "title": "The Path to AI Autonomy in the SOC",
+   "summary": "Security leaders are about to hand AI agents a lot more authority. In a recent a16z survey of CISOs at organizations with more than 1,000 employees, 36% said they are…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "20 Nov 2026, 12:00 UTC",
+   "sources": "The Hacker News",
+   "url": "story/d9e0b261f408.html"
+  },
+  {
+   "id": "1842d6db44a6",
+   "title": "N-able Blames Service Disruption on Cyberattack",
+   "summary": "The incident affected Mail Assure and SpamExperts Hosted Cloud and could have led to credential theft. The post N-able Blames Service Disruption on Cyberattack appeared…",
    "priority": "Standard",
    "category": "Attacks & Breaches",
-   "date": "20 Nov 2026, 07:11 UTC",
-   "sources": "The Hacker News",
-   "url": "story/ba74506a96ac.html"
+   "date": "20 Nov 2026, 09:08 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/1842d6db44a6.html"
+  },
+  {
+   "id": "c7433b924f3c",
+   "title": "Chromium: CVE-2024-7533 Use after free in Sharing",
+   "summary": "Information published.",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "20 Nov 2026, 09:06 UTC",
+   "sources": "Microsoft Security Response Center",
+   "url": "story/c7433b924f3c.html"
   },
   {
    "id": "5e65458c080e",
@@ -1231,34 +1201,64 @@
    "url": "story/5f26a746749a.html"
   },
   {
-   "id": "7f8f33872341",
-   "title": "Autonomy Logic OpenPLC Runtime",
-   "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow several unauthenticated admin accounts to be created. The following versions of Autonomy…",
+   "id": "937f390d6b18",
+   "title": "Microsoft tests new Edge Lockdown Mode that disables GPU APIs",
+   "summary": "Microsoft is developing a new Edge security feature to reduce the attack surface by disabling the WebGL, WebGL2, and WebGPU APIs.",
    "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "19 Nov 2026, 12:00 UTC",
-   "sources": "CISA Cybersecurity Advisories",
-   "url": "story/7f8f33872341.html"
+   "category": "Microsoft",
+   "date": "19 Nov 2026, 11:46 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/937f390d6b18.html"
   },
   {
-   "id": "3f6682cf9442",
-   "title": "libumqtt",
-   "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow a remote attacker to cause a denial of service, memory corruption, or information disclosure…",
+   "id": "45584a3597b1",
+   "title": "How to tell a cyberattack from a plain old outage",
+   "summary": "Over the past week, anyone could be forgiven for wondering whether a Diehard IV –style cyberwar had finally arrived in the US. Across just four consecutive business…",
    "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "19 Nov 2026, 12:00 UTC",
-   "sources": "CISA Cybersecurity Advisories",
-   "url": "story/3f6682cf9442.html"
+   "category": "Attacks & Breaches",
+   "date": "19 Nov 2026, 11:13 UTC",
+   "sources": "Ars Technica Security",
+   "url": "story/45584a3597b1.html"
   },
   {
-   "id": "4fc5c33492cc",
-   "title": "The Governance Gap in Open-Weight AI and What to Do About It",
-   "summary": "Lower costs, data privacy, and greater control are driving open-weight AI adoption, but many organizations are not addressing the risks that come with it. The post The…",
+   "id": "2aa6fa29c77a",
+   "title": "Splunk Patches Nearly 140 Flaws Across Three Core Products",
+   "summary": "The security updates resolve critical and high-severity issues leading to authentication bypass, remote code execution, and privilege escalation. The post Splunk Patches…",
    "priority": "Standard",
-   "category": "AI Risk Lab",
-   "date": "19 Nov 2026, 12:00 UTC",
+   "category": "Patch Radar",
+   "date": "19 Nov 2026, 10:41 UTC",
    "sources": "SecurityWeek",
-   "url": "story/4fc5c33492cc.html"
+   "url": "story/2aa6fa29c77a.html"
+  },
+  {
+   "id": "1fc34cf6486a",
+   "title": "Microsoft confirms app installation, launch issues after hotpatch",
+   "summary": "Microsoft has shared a workaround for installation and launch issues affecting Office and third-party applications after installing this month's Windows 11 hotpatch.",
+   "priority": "Standard",
+   "category": "Microsoft",
+   "date": "19 Nov 2026, 10:35 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/1fc34cf6486a.html"
+  },
+  {
+   "id": "ef3cecb6fd50",
+   "title": "Ruby Ships Fixes for 7 Flaws, Including Critical Ruby2Shell, Said to Hit Default Rails Apps Pre-Auth",
+   "summary": "Ruby contains seven memory-safety flaws in its regular expression engine and its string case-conversion code. For five of them, its maintainers say, proof-of-concept…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "19 Nov 2026, 08:42 UTC",
+   "sources": "The Hacker News",
+   "url": "story/ef3cecb6fd50.html"
+  },
+  {
+   "id": "d1202d3392a4",
+   "title": "PHP Warns of Critical Security Flaws Affecting All Supported Versions, Fixes Coming November 19",
+   "summary": "The maintainers of the PHP programming language on Wednesday issued an advisory announcing an upcoming security release that addresses critical flaws. The release is…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "19 Nov 2026, 04:33 UTC",
+   "sources": "The Hacker News",
+   "url": "story/d1202d3392a4.html"
   },
   {
    "id": "5128ef422750",
@@ -1621,6 +1621,36 @@
    "url": "story/f8ffdcbc4b62.html"
   },
   {
+   "id": "b4d165a3ec28",
+   "title": "Opening a 400-Year-Old Cryptex",
+   "summary": "Researchers used CT scanning technology to recover the code and open a 400-year-old cryptex padlock. You can buy a USB-drive cryptex.",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "20 Nov 2026, 12:04 UTC",
+   "sources": "Schneier on Security",
+   "url": "story/b4d165a3ec28.html"
+  },
+  {
+   "id": "f5b6ed0f978c",
+   "title": "Ruby Patches Ruby2Shell Vulnerability That Could Lead to RCE",
+   "summary": "Tracked as CVE-2026-132825, the bug is a heap-based buffer overflow that could lead to remote code execution (RCE). The post Ruby Patches Ruby2Shell Vulnerability That…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "20 Nov 2026, 10:34 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/f5b6ed0f978c.html"
+  },
+  {
+   "id": "ba74506a96ac",
+   "title": "ROMULUS ClickFix Attacks Deliver RAT That Can Spy on Users and Control PCs",
+   "summary": "Threat actors have been observed using the ROMULUS ClickFix malware delivery platform to deliver a previously undocumented remote access trojan (RAT) that shares…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "20 Nov 2026, 07:11 UTC",
+   "sources": "The Hacker News",
+   "url": "story/ba74506a96ac.html"
+  },
+  {
    "id": "9173cce6ca95",
    "title": "Ubiquiti UniFi Access Application mit 5 kritischen Schwachstellen",
    "summary": "Kleiner Hinweis für Besitzer und Administratoren von Ubiquiti UniFi Access Application-Instanzen. Es gibt 5 neue, teilweise als kritisch eingestufte Schwachstellen (…",
@@ -1701,54 +1731,34 @@
    "url": "story/4f4f9e0dd0e0.html"
   },
   {
-   "id": "5e668a30271b",
-   "title": "Hackers Exploit Cisco Expressway Vulnerability Soon After PoC Release",
-   "summary": "Attackers hacked clustered Cisco Expressway devices at a Russian organization and prepared tooling for lateral movement. The post Hackers Exploit Cisco Expressway…",
+   "id": "7f8f33872341",
+   "title": "Autonomy Logic OpenPLC Runtime",
+   "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow several unauthenticated admin accounts to be created. The following versions of Autonomy…",
    "priority": "Standard",
    "category": "Patch Radar",
-   "date": "19 Nov 2026, 13:12 UTC",
+   "date": "19 Nov 2026, 12:00 UTC",
+   "sources": "CISA Cybersecurity Advisories",
+   "url": "story/7f8f33872341.html"
+  },
+  {
+   "id": "3f6682cf9442",
+   "title": "libumqtt",
+   "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow a remote attacker to cause a denial of service, memory corruption, or information disclosure…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "19 Nov 2026, 12:00 UTC",
+   "sources": "CISA Cybersecurity Advisories",
+   "url": "story/3f6682cf9442.html"
+  },
+  {
+   "id": "4fc5c33492cc",
+   "title": "The Governance Gap in Open-Weight AI and What to Do About It",
+   "summary": "Lower costs, data privacy, and greater control are driving open-weight AI adoption, but many organizations are not addressing the risks that come with it. The post The…",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "19 Nov 2026, 12:00 UTC",
    "sources": "SecurityWeek",
-   "url": "story/5e668a30271b.html"
-  },
-  {
-   "id": "b7f6d70bce90",
-   "title": "StepSecurity Secures $20 Million to Expand Supply Chain Protection",
-   "summary": "The company will use the funds to accelerate the development and distribution of its security platform. The post StepSecurity Secures $20 Million to Expand Supply Chain…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "19 Nov 2026, 12:23 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/b7f6d70bce90.html"
-  },
-  {
-   "id": "3d3c58459056",
-   "title": "Researcher Demonstrates Database RCE Exploits Affecting PostgreSQL, MySQL and Oracle",
-   "summary": "Low-privilege database accounts that cannot read a single application table can still be used to run code on the database server itself, a researcher has shown, by…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "19 Nov 2026, 08:14 UTC",
-   "sources": "The Hacker News",
-   "url": "story/3d3c58459056.html"
-  },
-  {
-   "id": "59d3b792db48",
-   "title": "Africa Retakes Top Spot as Most Attacked Region, Led by Nigeria Surge",
-   "summary": "Nigeria faced more than double the cyber threats of the previous year, with Angola and Kenya also in the top 5 most-attacked countries globally.",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "19 Nov 2026, 08:00 UTC",
-   "sources": "Dark Reading",
-   "url": "story/59d3b792db48.html"
-  },
-  {
-   "id": "4ec9ed03e1aa",
-   "title": "Vier neue Sicherheitslücken in MySQL (18. Nov. 2026)",
-   "summary": "Oracle hat vier neue Sicherheitslücken, die MySQL Server und MySQL Cluster betreffen, bekannt gegeben. CVE-2026-114952 hat einen CVSS-Score von 9.1 und ist als kritisch…",
-   "priority": "Standard",
-   "category": "Patch Radar",
-   "date": "19 Nov 2026, 07:44 UTC",
-   "sources": "Born's IT and Windows Blog",
-   "url": "story/4ec9ed03e1aa.html"
+   "url": "story/4fc5c33492cc.html"
   },
   {
    "id": "c39fbe2f26b9",
@@ -2229,6 +2239,46 @@
    "date": "16 Nov 2026, 07:34 UTC",
    "sources": "The Hacker News",
    "url": "story/f159cf23a7b2.html"
+  },
+  {
+   "id": "b7f6d70bce90",
+   "title": "StepSecurity Secures $20 Million to Expand Supply Chain Protection",
+   "summary": "The company will use the funds to accelerate the development and distribution of its security platform. The post StepSecurity Secures $20 Million to Expand Supply Chain…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "19 Nov 2026, 12:23 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/b7f6d70bce90.html"
+  },
+  {
+   "id": "3d3c58459056",
+   "title": "Researcher Demonstrates Database RCE Exploits Affecting PostgreSQL, MySQL and Oracle",
+   "summary": "Low-privilege database accounts that cannot read a single application table can still be used to run code on the database server itself, a researcher has shown, by…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "19 Nov 2026, 08:14 UTC",
+   "sources": "The Hacker News",
+   "url": "story/3d3c58459056.html"
+  },
+  {
+   "id": "59d3b792db48",
+   "title": "Africa Retakes Top Spot as Most Attacked Region, Led by Nigeria Surge",
+   "summary": "Nigeria faced more than double the cyber threats of the previous year, with Angola and Kenya also in the top 5 most-attacked countries globally.",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "19 Nov 2026, 08:00 UTC",
+   "sources": "Dark Reading",
+   "url": "story/59d3b792db48.html"
+  },
+  {
+   "id": "4ec9ed03e1aa",
+   "title": "Vier neue Sicherheitslücken in MySQL (18. Nov. 2026)",
+   "summary": "Oracle hat vier neue Sicherheitslücken, die MySQL Server und MySQL Cluster betreffen, bekannt gegeben. CVE-2026-114952 hat einen CVSS-Score von 9.1 und ist als kritisch…",
+   "priority": "Standard",
+   "category": "Patch Radar",
+   "date": "19 Nov 2026, 07:44 UTC",
+   "sources": "Born's IT and Windows Blog",
+   "url": "story/4ec9ed03e1aa.html"
   },
   {
    "id": "8338de42e863",
@@ -2859,26 +2909,6 @@
    "date": "14 Nov 2026, 15:15 UTC",
    "sources": "BleepingComputer",
    "url": "story/e253199b5be0.html"
-  },
-  {
-   "id": "f694138aff43",
-   "title": "Apple Reveals How Secure Exclaves Shield Camera and Microphone Data",
-   "summary": "The tech giant has detailed the architecture designed to isolate ambient sensor data from the main OS on HomeView and new iPhones. The post Apple Reveals How Secure…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "14 Nov 2026, 11:00 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/f694138aff43.html"
-  },
-  {
-   "id": "9cdb1de4d486",
-   "title": "No Signs of Hacking in FAA Ground Stop as FBI Reportedly Probes Software Update",
-   "summary": "Officials say there is no evidence of a cyberattack behind the nationwide FAA outage, which may have been caused by a software update. The post No Signs of Hacking in…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "14 Nov 2026, 08:40 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/9cdb1de4d486.html"
   }
  ]
 }
