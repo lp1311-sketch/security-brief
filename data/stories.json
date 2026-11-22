@@ -538,6 +538,28 @@
    "instructions_checked": true
   },
   {
+   "id": "024a76b249e7",
+   "source": "borncity",
+   "source_name": "Born's IT and Windows Blog",
+   "official": false,
+   "source_type": "news",
+   "title": "GhostScript Schwachstelle Upload2Shell (CVE-2026-125396) gefährdet Apps und Webseiten",
+   "link": "https://borncity.com/blog/2026/11/22/schwachstelle-upload2shell-gefaehrdet-webseiten/",
+   "published": "2026-11-22T10:41:14+00:00",
+   "summary": "Es gibt eine neue Schwachstelle (CVE-2026-125396), die Sicherheitsforscher Paulos Yibelo als Upload2Shell bezeichnet. Diese Pre-Auth-RCE-Schwachstelle gefährdet Anwendungen und Online-Auftritte verschiedener Plattformen, die GhostScript vor 10.08.0 verwenden. Diese können durch manipulierte Uploads gefährdet und…",
+   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
+   "cves": [
+    "CVE-2026-125396"
+   ],
+   "first_seen": "2026-11-22T15:29:22.436414+00:00",
+   "image_checked": true,
+   "instructions": [
+    "B. die MSI mit dem zusätzlichen Parameter \"REMOVE=Ghostscript\", so findet keine separate Installation von Ghostscript statt. Über den Registry Key \"gs.mode\" mit dem Wert \"auto\" kann ich dann festlegen, dass auf das bereits lokal installierte Ghostscript zurückgegriffen wird.",
+    "Singlethreaded zu PHP-Update 8.x vom 19.11.2026; aber Schwachstellen weiter ausnutzbar?"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "b5e1ece521f3",
    "source": "google-threat-intel",
    "source_name": "Google Threat Intelligence",
@@ -2075,25 +2097,6 @@
    "instructions_checked": true
   },
   {
-   "id": "04c1c102f5a7",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Italy Fines Meta €805 Million Over Facebook's Android Gallery Access Without Explicit Consent",
-   "link": "https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html",
-   "published": "2026-11-15T11:27:31+00:00",
-   "summary": "Meta was fined €805 million in Italy yesterday over a Facebook for Android feature that suggests photos and videos from users' phone galleries for them to post. The Garante, Italy's data protection authority, found that the feature was enabled by default and that the app accessed Italian users' photos, videos, and…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdTCjpbsG3Dp62JM1KZqfSvZpuBnxwaCxXsplW3dAt2b4Ym0KAWPfxkHf4DT-02VK3jJESLmgasdE6D36qGegWu7dk9YSLN4DZxRVsgrM9lIEXXHUvQ0VzaZ1_gFqpjtA4cP3rlt82g5WnK2sXNZHJd5F_rEk4VSTGnMKOuXziSM1R85Vqhway3lajwTA/s1600/facebook-fine.jpg",
-   "cves": [],
-   "first_seen": "2026-11-15T12:04:01.263045+00:00",
-   "instructions": [
-    "The company had argued that Ireland's data protection authority should handle the case.",
-    "Changes the company made after the complaint counted in its favor, though the authority judged them late and limited to people who update the app."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "223101d57350",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2570,27 +2573,6 @@
     "Until the firewall is replaced, it's advised to take the below actions to minimize exposure -",
     "Treat any Gen 6 firewall still in service as a high-risk exposure, and migrate to a supported Gen 8 firewall running SonicOS 8.\"",
     "According to Google Mandiant's M-Trends report published in March 2026, the mean time to exploit vulnerabilities has turned negative, reaching an estimated -7 days, meaning exploitation, on average, begins before a patch is available, down from 63 days in 2018 and -1 day in 2024."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "960f41318ea9",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident",
-   "link": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html",
-   "published": "2026-11-15T08:22:04+00:00",
-   "summary": "The compromise of Anthropic's official Claude Code extension on Cursor's extension marketplace was the result of the theft of an access key that was exposed in the wake of a breach targeting Fireworks AI. \"An attacker obtained an access key we had issued to Fireworks,\" Cursor said in a Friday update. \"The key was…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg16ACawbG7rP_kT-8Boo4xdTje3BeTWyFSnNXwHhr5cvy2-1X3Ljhrc1IuZlseWd55tN8E1yjQ9ldhTnjWTU-GJBpX_Zen36YiLQGsRSRAoteqHyxx7mn_w0QgLfMKDLItA4p_jpHajucbglLnCR_zWBY_t82YvFkLa9dQFBfjP1BrTlrNdYufsGMSZiGn/s1600/cursor.jpg",
-   "cves": [],
-   "first_seen": "2026-11-15T09:47:13.095916+00:00",
-   "instructions": [
-    "\"An attacker obtained an access key we had issued to Fireworks,\" Cursor said in a Friday update.",
-    "The disclosure comes nearly two weeks after a trojanized version of Anthropic's official Claude Code extension was distributed through Cursor Marketplace as a legitimate update, attempting to install a persistent SSH backdoor on affected systems.",
-    "Cursor said it took steps to deactivate the vendor's key, revoke and rotate credentials, and hunt for signs of deeper access, and contain it after \"we identified further access.\" The company also said it temporarily disabled internal and product services, disrupting access to some Cursor features.",
-    "The company said it notified affected users who installed versions 2.1.312 or 2.1.313 from the marketplace during the exposure window and helped revoke exposed credentials."
    ],
    "instructions_checked": true
   },
@@ -4468,6 +4450,28 @@
    "instructions_checked": true
   },
   {
+   "id": "2361e0929a29",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Signal to block Siri, Gemini AI from capturing chats on iOS, Android",
+   "link": "https://www.bleepingcomputer.com/news/security/signal-to-block-siri-gemini-ai-from-capturing-chats-on-ios-android/",
+   "published": "2026-11-22T15:15:25+00:00",
+   "summary": "Signal has announced new protections that block screenshots on iOS 27 and prevent AI assistants from capturing conversations on supported Android devices.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2025/09/08/Signal.jpg",
+   "cves": [],
+   "first_seen": "2026-11-22T15:29:22.436414+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Signal recommends that users upgrade to the latest available version and go to Settings > App Security to check that Block Siri AI is enabled on iOS.",
+    "For macOS 27 users, Signal recommends adding the app to the Excluded Apps list under System Settings > Siri to prevent Siri AI from proactively accessing message content.",
+    "Signal to block Siri, Gemini AI from capturing chats on iOS, Android",
+    "Signal has announced new protections that block screenshots on iOS 27 and prevent AI assistants from capturing conversations on supported Android devices."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "19cca4f1450a",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4531,23 +4535,6 @@
     "However, if those same security questions are used at other sites, they should be rotated to new questions and answers.",
     "It is also recommended to change passwords on other services where the same information was used."
    ],
-   "instructions_checked": true
-  },
-  {
-   "id": "bbb8a6727085",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "TSMC employee data breach linked to cloud provider",
-   "link": "https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/",
-   "published": "2026-11-15T15:23:48+00:00",
-   "summary": "Taiwan Semiconductor Manufacturing Company (TSMC) confirmed that personal employee data has been leaked online after a threat actor put 6.9GB of information allegedly stolen from the company up for auction.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/13/TSMC.jpg",
-   "cves": [],
-   "first_seen": "2026-11-15T16:07:32.968421+00:00",
-   "image_checked": true,
-   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -6374,25 +6361,6 @@
    "instructions": [
     "Java4Shell Exploitation Attempts Begin as Vendors Rush Out Advisories",
     "PHP Readies Critical Security Updates to Patch Another RCE Flaw"
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "c8b26857299e",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Pentagon Renames CDAO ‘Super Intelligence Office’",
-   "link": "https://www.securityweek.com/pentagon-renames-cdao-super-intelligence-office/",
-   "published": "2026-11-15T12:51:33+00:00",
-   "summary": "The move follows President Trump’s order to replace “artificial intelligence” with “super intelligence” in executive branch communications. The post Pentagon Renames CDAO ‘Super Intelligence Office’ appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/11/SI_Department-of-War.png",
-   "cves": [],
-   "first_seen": "2026-11-15T12:53:39.113548+00:00",
-   "image_checked": true,
-   "instructions": [
-    "No Signs of Hacking in FAA Ground Stop as FBI Reportedly Probes Software Update"
    ],
    "instructions_checked": true
   },
