@@ -3859,6 +3859,25 @@
    "instructions_checked": true
   },
   {
+   "id": "855a50efe0f3",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Cleverbridge warns hackers stole credit card numbers, CVVs in data breach",
+   "link": "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/",
+   "published": "2026-11-22T15:43:04+00:00",
+   "summary": "E-commerce platform Cleverbridge is warning that hackers breached its systems and stole customers' payment card information, including credit card numbers and CVV security codes.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/22/credit-cards.jpg",
+   "cves": [],
+   "first_seen": "2026-11-22T21:17:16.911335+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Cleverbridge also recommends contacting card issuers about the incident, as banks may decide to replace compromised cards."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "ddec81ba80b1",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4080,28 +4099,6 @@
    "instructions_checked": true
   },
   {
-   "id": "4201db3ac682",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "FBI warns ARTEX AI hacking tool is powering global cyberattacks",
-   "link": "https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/",
-   "published": "2026-11-15T18:29:53+00:00",
-   "summary": "The FBI is warning that hackers are using an AI-powered penetration testing framework called ARTEX to automate cyberattacks against organizations worldwide, including a recent ConnectWise supply-chain breach that compromised Microsoft 365 customer environments.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2025/10/23/AI-2.jpg",
-   "cves": [],
-   "first_seen": "2026-11-15T19:13:10.313907+00:00",
-   "image_checked": true,
-   "instructions": [
-    "In a FLASH advisory released Friday, the agency said multiple threat actors have weaponized the open-source framework since at least August 2026 to target organizations across the financial, government, technology, defense, healthcare, and other sectors.",
-    "\"ARTEX significantly reduces the time required to chain attack techniques, with some intrusions progressing from initial targeting to privileged access in under three hours,\" reads the FBI advisory.",
-    "The FBI's 13-page advisory includes indicators of compromise associated with known ARTEX campaigns, including IP addresses, command-and-control infrastructure, and suspicious network activity.",
-    "The bureau also recommends monitoring for unusual bursts of automated requests, suspicious cloud activity, unexpected credential or privilege changes, and large data transfers."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "75044bab3e73",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4203,6 +4200,28 @@
    "instructions": [
     "In an advisory last week, the FBI warned that multiple threat actors started weaponizing the ARTEX AI pentesting framework since August and launched attacks against organizations in the financial, government, technology, defense, healthcare, and other sectors.",
     "Google warns that the deployment of such frameworks in attacks has dramatically decreased the time defenders have to patch their systems, while it also produces false leads."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "e84afceb005f",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Hackers exploit GL.iNet cloud flaw to infect routers, KVM devices",
+   "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/",
+   "published": "2026-11-22T18:45:37+00:00",
+   "summary": "GL.iNet has confirmed that hackers exploited a vulnerability in its cloud remote management services to install custom malware on customers' routers and KVM devices, with some affected users reporting backdoors and reverse shells giving remote access to infected devices.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/22/routers-kvms.jpg",
+   "cves": [],
+   "first_seen": "2026-11-22T21:17:16.911335+00:00",
+   "image_checked": true,
+   "instructions": [
+    "For KVM devices, customers can follow the company's firmware upgrade guidance , which recommends version 1.10.3 or later for the RM10, RM1, RM1V2, RM1PE, and RM4PE, version 1.10.3 beta or later for the RM10RC, and version 1.8.7 or later for the RMQ1.",
+    "In a security advisory published on November 20, GL.iNet confirmed that an unauthorized party exploited a vulnerability in its cloud remote management services to access devices and install malicious software.",
+    "GL.iNet recommends that customers check their devices for signs of infection and install the latest security firmware, even if no malware is detected.",
+    "Router owners should install the latest security firmware for their specific model as soon as it becomes available."
    ],
    "instructions_checked": true
   },
