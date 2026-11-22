@@ -156,46 +156,6 @@
    "instructions_checked": true
   },
   {
-   "id": "dac85eee278f",
-   "source": "borncity",
-   "source_name": "Born's IT and Windows Blog",
-   "official": false,
-   "source_type": "news",
-   "title": "Nachlese php2shell: Wie ist der Stand? – Teil 1",
-   "link": "https://borncity.com/blog/2026/11/15/nachlese-php2shell-wie-ist-der-stand-teil-1/",
-   "published": "2026-11-14T23:01:12+00:00",
-   "summary": "Mitte Oktober 2026 wurden gravierende, als php2shell bezeichnete Sicherheitslücken in PHP bekannt. Es gab zwar Updates ab 21. Oktober 2026 – aber es blieb die Hektik in der IT, PHP als \"quasi Infrastruktur des WWW\" zeitnah zu patchen. Hier eine … Weiterlesen → Quelle",
-   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
-   "cves": [],
-   "first_seen": "2026-11-14T23:36:42.992970+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Neueste Kommentare robbi zu Windows Out-of-Band-Update fixt Aktivierungs- und Lizenzierungs-Error (13."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "4a2be9d5c47d",
-   "source": "borncity",
-   "source_name": "Born's IT and Windows Blog",
-   "official": false,
-   "source_type": "news",
-   "title": "php2shell-Nachlese: Sich auf die nächste php2shell-Lücke vorbereiten – Teil 2",
-   "link": "https://borncity.com/blog/2026/11/15/nachlese-php2shell-wie-unternehmen-sich-auf-php2shell-next-vorbereiten-koennten-teil-2/",
-   "published": "2026-11-14T23:02:57+00:00",
-   "summary": "In Teil 1 der Nachlese zur gravierenden, als php2shell bezeichneten Sicherheitslücke in PHP hatte ich einen kurzen Blick auf die Hektik nach Bekanntgabe des Problems geworfen und gezeigt, dass noch viele PHP-Instanzen ungepatcht sind. Die nächsten PHP-Schwachstellen könnten im Anflug … Weiterlesen → Quelle",
-   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
-   "cves": [],
-   "first_seen": "2026-11-14T23:36:42.992970+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Nicht immer steht jedoch ein Patch sofort bereit oder kann umgehend ausgerollt werden, schreibt Forcepoint.",
-    "Monitoring und Blocking helfen, unerwünschte Aktivitäten zu erkennen und einzuschränken, bis die Patch-Verteilung anläuft.",
-    "Neueste Kommentare robbi zu Windows Out-of-Band-Update fixt Aktivierungs- und Lizenzierungs-Error (13."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "f8ffdcbc4b62",
    "source": "borncity",
    "source_name": "Born's IT and Windows Blog",
@@ -3520,7 +3480,7 @@
    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-app-installation-launch-issues-after-hotpatch/",
    "published": "2026-11-19T10:35:05+00:00",
    "summary": "Microsoft has shared a workaround for installation and launch issues affecting Office and third-party applications after installing this month's Windows 11 hotpatch.",
-   "image": null,
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/17/Windows-11_headpic.jpg",
    "cves": [],
    "first_seen": "2026-11-19T19:04:24.147057+00:00",
    "instructions": [
@@ -3529,7 +3489,8 @@
     "Until a fix is available, Microsoft has shared a workaround to help IT admins temporarily mitigate the bug on affected systems.",
     "Windows 11 KB5132057 update released with 28 changes and fixes"
    ],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "a60b8a453d05",
@@ -3628,7 +3589,7 @@
    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-new-edge-lockdown-mode-that-disables-gpu-apis/",
    "published": "2026-11-19T11:46:00+00:00",
    "summary": "Microsoft is developing a new Edge security feature to reduce the attack surface by disabling the WebGL, WebGL2, and WebGPU APIs.",
-   "image": null,
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/19/Microsoft_Edge.jpg",
    "cves": [],
    "first_seen": "2026-11-19T19:04:24.147057+00:00",
    "instructions": [
@@ -3636,7 +3597,8 @@
     "\"The initial set of Lockdown Mode mitigations focus is the GPU process, a more privileged component that handles complex graphics workloads across browser code, third-party libraries, and device drivers,\" Evans added.",
     "Windows 11 KB5132057 update released with 28 changes and fixes"
    ],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "a1dd8f56b81d",
@@ -4441,6 +4403,26 @@
     "Aikido warns that these mitigations do not address all vulnerabilities fixed in the November updates and recommends ensuring PHP-FPM and LSAPI listeners are not directly exposed to untrusted networks.",
     "One of the vulnerabilities, CVE-2026-115560, was already disclosed in an October 23 informational advisory and relates to how PHP handles session data under certain configurations, potentially leading to remote code execution.",
     "This setting was also recommended to mitigate the recent PHP2Shell flaws ."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "9f2af01a2aa9",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Rackspace Spot breach let hackers access customer Kubernetes secrets",
+   "link": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/",
+   "published": "2026-11-21T22:59:58+00:00",
+   "summary": "Rackspace warned customers that hackers breached its Rackspace Spot cloud platform using compromised credentials, allowing them to deploy unauthorized workloads and access Kubernetes secrets in customer clusters.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2022/12/09/Rackspace.jpg",
+   "cves": [],
+   "first_seen": "2026-11-22T00:16:44.111931+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Rackspace also advised customers to analyze logs associated with databases, container registries, Git repositories, cloud storage, and third-party services dating back to November 17 to identify possible abuse of exposed credentials.",
+    "Affected customers have been instructed to reissue their Spot API tokens, replace refresh tokens used in automation tools, download fresh Kubernetes configuration files, and rotate credentials stored in their cluster Secrets."
    ],
    "instructions_checked": true
   },
@@ -5897,14 +5879,15 @@
    "link": "https://www.securityweek.com/f5-patches-critical-nginx2root-flaws-as-poc-exploits-go-public/",
    "published": "2026-11-19T10:26:51+00:00",
    "summary": "The five NGINX2Root vulnerabilities could allow remote, unauthenticated attackers to execute arbitrary code. The post F5 Patches Critical NGINX2Root Flaws as PoC Exploits Go Public appeared first on SecurityWeek.",
-   "image": null,
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/05/Nginx.jpeg",
    "cves": [],
    "first_seen": "2026-11-19T19:04:24.147057+00:00",
    "instructions": [
     "On slow connections, NGINX’s default one-hour connection lifetime prevents exploitation. “Additionally, should an HTTP/2 connection be proxied, the precise attacker-controlled HTTP/2 frames being transmitted will likely not be retransmitted in a way that satisfies exploiting the vulnerability,” Rapid7 notes.",
     "PHP Readies Critical Security Updates to Patch Another RCE Flaw"
    ],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "ff4ecbca8eac",
@@ -6532,14 +6515,15 @@
    "link": "https://www.securityweek.com/splunk-patches-nearly-140-flaws-across-three-core-products/",
    "published": "2026-11-19T10:41:05+00:00",
    "summary": "The security updates resolve critical and high-severity issues leading to authentication bypass, remote code execution, and privilege escalation. The post Splunk Patches Nearly 140 Flaws Across Three Core Products appeared first on SecurityWeek.",
-   "image": null,
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/03/Splunk.jpeg",
    "cves": [],
    "first_seen": "2026-11-19T19:04:24.147057+00:00",
    "instructions": [
     "More details are available on Splunk’s security advisories page.",
     "PHP Readies Critical Security Updates to Patch Another RCE Flaw"
    ],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "b7f6d70bce90",
