@@ -111,16 +111,6 @@
    "url": "story/7d141681ccc2.html"
   },
   {
-   "id": "9f2af01a2aa9",
-   "title": "Rackspace Spot breach let hackers access customer Kubernetes secrets",
-   "summary": "Rackspace warned customers that hackers breached its Rackspace Spot cloud platform using compromised credentials, allowing them to deploy unauthorized workloads and…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "21 Nov 2026, 22:59 UTC",
-   "sources": "BleepingComputer",
-   "url": "story/9f2af01a2aa9.html"
-  },
-  {
    "id": "1e1dbef95d66",
    "title": "Microsoft Entra Connect Health flaw exploited to steal tenant data",
    "summary": "Microsoft is warning organizations that it suffered a data breach after attackers exploited a vulnerability in its Entra Connect Health service to gain unauthorized…",
@@ -189,6 +179,16 @@
    "date": "22 Nov 2026, 15:15 UTC",
    "sources": "BleepingComputer, The Hacker News",
    "url": "story/2361e0929a29.html"
+  },
+  {
+   "id": "9f2af01a2aa9",
+   "title": "Rackspace Spot breach let hackers access customer Kubernetes secrets",
+   "summary": "Rackspace warned customers that hackers breached its Rackspace Spot cloud platform using compromised credentials, allowing them to deploy unauthorized workloads and…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "21 Nov 2026, 22:59 UTC",
+   "sources": "BleepingComputer",
+   "url": "story/9f2af01a2aa9.html"
   },
   {
    "id": "6231e48f3bee",
@@ -331,16 +331,6 @@
    "url": "story/761885e6c02d.html"
   },
   {
-   "id": "93138fbb4db2",
-   "title": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
-   "summary": "The chief technology officer and co-founder of ransomwarehelp.com, a six year old Florida business that claimed to use “advanced cryptographic tools” to restore data…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "21 Nov 2026, 00:36 UTC",
-   "sources": "KrebsOnSecurity",
-   "url": "story/93138fbb4db2.html"
-  },
-  {
    "id": "4baa07f08d94",
    "title": "Microsofts AI-Agent Framework PyPI mit Malware verseucht",
    "summary": "Das offizielle Python-Paket \"Microsoft Agent Framework\", veröffentlicht auf PyPI, war kürzlich kompromittiert. Betroffen waren die beiden, am 17. November 2026…",
@@ -349,6 +339,16 @@
    "date": "20 Nov 2026, 18:12 UTC",
    "sources": "Born's IT and Windows Blog",
    "url": "story/4baa07f08d94.html"
+  },
+  {
+   "id": "d5ce378b68b4",
+   "title": "Microsoft Debuts Offensive, Defensive Security Tools for the AI Era",
+   "summary": "Microsoft announces new AI agent security tools and transparency standards to protect enterprise systems at its Ignite technical conference.",
+   "priority": "Standard",
+   "category": "AI Risk Lab",
+   "date": "20 Nov 2026, 13:51 UTC",
+   "sources": "Dark Reading",
+   "url": "story/d5ce378b68b4.html"
   },
   {
    "id": "d9a325150570",
@@ -701,16 +701,6 @@
    "url": "story/0be8ff22df4a.html"
   },
   {
-   "id": "aeb7ef21f8ed",
-   "title": "FBI Investigating Apparent Hack of Its Key National Criminal Justice Database, AP Source Says",
-   "summary": "The FBI is investigating an apparent hack of a national law enforcement database that it maintains. The post FBI Investigating Apparent Hack of Its Key National Criminal…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "22 Nov 2026, 00:53 UTC",
-   "sources": "SecurityWeek",
-   "url": "story/aeb7ef21f8ed.html"
-  },
-  {
    "id": "16765aea3bd9",
    "title": "Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access",
    "summary": "Suspected China-linked hackers used autonomous AI agents to find a previously unknown flaw in MONAI Label, an open-source medical imaging server, and gain root access to…",
@@ -719,6 +709,16 @@
    "date": "21 Nov 2026, 11:03 UTC",
    "sources": "The Hacker News",
    "url": "story/16765aea3bd9.html"
+  },
+  {
+   "id": "93138fbb4db2",
+   "title": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
+   "summary": "The chief technology officer and co-founder of ransomwarehelp.com, a six year old Florida business that claimed to use “advanced cryptographic tools” to restore data…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "21 Nov 2026, 00:36 UTC",
+   "sources": "KrebsOnSecurity",
+   "url": "story/93138fbb4db2.html"
   },
   {
    "id": "688d34085c16",
@@ -1361,6 +1361,16 @@
    "url": "story/f40bccb5d841.html"
   },
   {
+   "id": "aeb7ef21f8ed",
+   "title": "FBI Investigating Apparent Hack of Its Key National Criminal Justice Database, AP Source Says",
+   "summary": "The FBI is investigating an apparent hack of a national law enforcement database that it maintains. The post FBI Investigating Apparent Hack of Its Key National Criminal…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "22 Nov 2026, 00:53 UTC",
+   "sources": "SecurityWeek",
+   "url": "story/aeb7ef21f8ed.html"
+  },
+  {
    "id": "4b6021947b3e",
    "title": "BADBOX botnet returns with record-breaking 40 billion daily ad requests",
    "summary": "The BADBOX malware found in a broad range of generic Android TV boxes has returned to large-scale ad-fraud operations following last year's disruptions.",
@@ -1389,36 +1399,6 @@
    "date": "21 Nov 2026, 11:53 UTC",
    "sources": "The Hacker News",
    "url": "story/0ad755f2681c.html"
-  },
-  {
-   "id": "f7988a82e6a4",
-   "title": "Anstieg bei Phishing-Versuchen rund um den Black Friday um 82 Prozent",
-   "summary": "Es geht auf den sogenannten Black Friday (Ende November) zu, und es ist \"Alarm-Stimmung\" für Schnäppchen-Jäger. Das wissen auch Cyber-Kriminelle, die diese Zeit…",
-   "priority": "Standard",
-   "category": "Attacks & Breaches",
-   "date": "20 Nov 2026, 23:02 UTC",
-   "sources": "Born's IT and Windows Blog",
-   "url": "story/f7988a82e6a4.html"
-  },
-  {
-   "id": "d20cb913632d",
-   "title": "Friday Squid Blogging: The Largest Squid Ever Filmed",
-   "summary": "This is the story of the largest squid ever filmed, in December 2006 near Japan’s Ogasawara Islands. As usual, you can also use this squid post to talk about the…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "20 Nov 2026, 22:04 UTC",
-   "sources": "Schneier on Security",
-   "url": "story/d20cb913632d.html"
-  },
-  {
-   "id": "f0b8696c25c4",
-   "title": "West Virginia Legislature hit with cyber incident affecting IT systems",
-   "summary": "A cybersecurity incident that began Thursday was still ongoing Friday in the West Virginia Legislature. A spokesperson said the disruption did not spread to other…",
-   "priority": "Standard",
-   "category": "Industry & Research",
-   "date": "20 Nov 2026, 21:34 UTC",
-   "sources": "The Record",
-   "url": "story/f0b8696c25c4.html"
   },
   {
    "id": "99727b65c290",
@@ -2159,6 +2139,36 @@
    "date": "16 Nov 2026, 07:34 UTC",
    "sources": "The Hacker News",
    "url": "story/f159cf23a7b2.html"
+  },
+  {
+   "id": "f7988a82e6a4",
+   "title": "Anstieg bei Phishing-Versuchen rund um den Black Friday um 82 Prozent",
+   "summary": "Es geht auf den sogenannten Black Friday (Ende November) zu, und es ist \"Alarm-Stimmung\" für Schnäppchen-Jäger. Das wissen auch Cyber-Kriminelle, die diese Zeit…",
+   "priority": "Standard",
+   "category": "Attacks & Breaches",
+   "date": "20 Nov 2026, 23:02 UTC",
+   "sources": "Born's IT and Windows Blog",
+   "url": "story/f7988a82e6a4.html"
+  },
+  {
+   "id": "d20cb913632d",
+   "title": "Friday Squid Blogging: The Largest Squid Ever Filmed",
+   "summary": "This is the story of the largest squid ever filmed, in December 2006 near Japan’s Ogasawara Islands. As usual, you can also use this squid post to talk about the…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "20 Nov 2026, 22:04 UTC",
+   "sources": "Schneier on Security",
+   "url": "story/d20cb913632d.html"
+  },
+  {
+   "id": "f0b8696c25c4",
+   "title": "West Virginia Legislature hit with cyber incident affecting IT systems",
+   "summary": "A cybersecurity incident that began Thursday was still ongoing Friday in the West Virginia Legislature. A spokesperson said the disruption did not spread to other…",
+   "priority": "Standard",
+   "category": "Industry & Research",
+   "date": "20 Nov 2026, 21:34 UTC",
+   "sources": "The Record",
+   "url": "story/f0b8696c25c4.html"
   },
   {
    "id": "edfeced150c6",
