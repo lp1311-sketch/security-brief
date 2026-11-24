@@ -1,6 +1,55 @@
 {
  "items": [
   {
+   "id": "b255e5ecd1c0",
+   "title": "[In preview] Public Preview: Optimize agents from insights in Foundry Agent Service",
+   "link": "https://azure.microsoft.com/updates?id=581483",
+   "summary": "Optimization from insights is in public preview in Foundry Agent Service. In the Foundry portal, start from an eligible insight in a prompt-agent trace to generate and evaluate candidate changes to the agent's instructions and function-calling tool descri",
+   "published": "2026-11-24T16:52:07+00:00"
+  },
+  {
+   "id": "f2c7084d8f6c",
+   "title": "[In preview] Public Preview: Govern MCP tools with your own gateway in Microsoft Foundry Agent Service",
+   "link": "https://azure.microsoft.com/updates?id=581498",
+   "summary": "In public preview, Microsoft Foundry Agent Service lets you route MCP tool traffic through existing AI Gateway or Azure API Management endpoints that your organization manages. Configure the MCP route in the gateway first, then enter the gateway-routed en",
+   "published": "2026-11-24T16:50:47+00:00"
+  },
+  {
+   "id": "bef9861b49a3",
+   "title": "[Launched] Generally Available: Use Azure Storage permissions in Azure AI Search and Foundry IQ",
+   "link": "https://azure.microsoft.com/updates?id=581303",
+   "summary": "Azure AI Search and Foundry IQ in Microsoft Foundry can use supported Azure Storage permissions to control access to search results.Once configured, search applications and AI agents return content based on each user's access. This reduces the need to cre",
+   "published": "2026-11-24T16:49:39+00:00"
+  },
+  {
+   "id": "1da9bacef677",
+   "title": "[In preview] Public Preview: Native A2A passthrough for hosted agents in Foundry Agent Service",
+   "link": "https://azure.microsoft.com/updates?id=581313",
+   "summary": "Bring your existing Agent2Agent (A2A) agents to Agent Service without a protocol conversion layer.Previously, Agent Service converted incoming A2A requests to the Responses protocol. With A2A passthrough, Agent Service forwards native A2A requests directl",
+   "published": "2026-11-24T16:48:25+00:00"
+  },
+  {
+   "id": "ec8d04f9425a",
+   "title": "[In preview] Public Preview: Azure Developer CLI extension for Azure Document Intelligence and Content Understanding in Foundry Tools",
+   "link": "https://azure.microsoft.com/updates?id=581318",
+   "summary": "Within Microsoft Foundry, use azd ai cu commands to analyze documents with Azure Document Intelligence and Content Understanding in Foundry Tools. The extension for Azure Developer CLI (azd) can save analysis results as Markdown or JSON.You can start with",
+   "published": "2026-11-24T16:45:59+00:00"
+  },
+  {
+   "id": "3f0be4895d33",
+   "title": "[In preview] Public Preview: Cost controls for model and agent spending in Microsoft Foundry",
+   "link": "https://azure.microsoft.com/updates?id=581323",
+   "summary": "Within Microsoft Foundry, cost controls set a spending or token budget for a Foundry resource or project. When usage reaches a threshold that you set, a cost control sends an alert through Azure Event Grid or blocks new requests.You can apply a budget to",
+   "published": "2026-11-24T16:43:40+00:00"
+  },
+  {
+   "id": "b65a1e24461a",
+   "title": "[In preview] Public Preview: Central governance of hosted-agent outbound domains in Foundry Agent Service",
+   "link": "https://azure.microsoft.com/updates?id=581328",
+   "summary": "Administrators can use Azure Policy to govern outbound destinations for hosted agents in Foundry Agent Service. Agent authors configure and attach a compliant egress policy before creating an agent version. The egress policy then controls outbound request",
+   "published": "2026-11-24T16:42:20+00:00"
+  },
+  {
    "id": "8b7c474bc893",
    "title": "[In preview] Public Preview: Enterprise Knowledge Graph in Foundry IQ",
    "link": "https://azure.microsoft.com/updates?id=581333",
@@ -125,55 +174,6 @@
    "link": "https://azure.microsoft.com/updates?id=579285",
    "summary": "WAF Insights is now generally available for Azure Front Door Web Application Firewall (WAF). WAF Insights is a built-in experience in the WAF policy that brings WAF logs and metrics together in interactive dashboards, so you can investigate blocked reques",
    "published": "2026-11-23T18:01:19+00:00"
-  },
-  {
-   "id": "f03764e801e5",
-   "title": "[Launched] Generally Available: Governance policy guidance in Foundry Canvas and VS Code",
-   "link": "https://azure.microsoft.com/updates?id=581463",
-   "summary": "Microsoft Foundry governance guidance is now available in Foundry Canvas and the Foundry Toolkit for Visual Studio Code. As developers build agents, both experiences surface relevant policies for agent types, models, toolboxes, and guardrails, with warnin",
-   "published": "2026-11-21T00:45:13+00:00"
-  },
-  {
-   "id": "a461f9a68ffb",
-   "title": "[In preview] Public Preview: Microsoft Copilot harness support in Foundry Toolkit for VS Code",
-   "link": "https://azure.microsoft.com/updates?id=581468",
-   "summary": "Agent Builder in Microsoft Foundry Toolkit for Visual Studio Code supports prompt agents that use the Microsoft Copilot harness in public preview. Developers can configure tools and skills, edit local YAML definitions, deploy changes to Foundry, and run d",
-   "published": "2026-11-21T00:43:13+00:00"
-  },
-  {
-   "id": "c90bb4f5f48d",
-   "title": "Retirement: Support for Azure Functions OpenAI Extension ends on April 20, 2027",
-   "link": "https://azure.microsoft.com/updates?id=579952",
-   "summary": "Support for Azure Functions OpenAI extension will end on April 20, 2027. Please migrate to OpenAI, Microsoft Foundry, or Azure AI Search SDKs directly, depending on your scenario, by that date. Until you migrate to the appropriate scenario SDK,.NET app",
-   "published": "2026-11-20T23:16:31+00:00"
-  },
-  {
-   "id": "1e7651cd0e9b",
-   "title": "[In preview] Public Preview: Programmed Training in Microsoft Foundry",
-   "link": "https://azure.microsoft.com/updates?id=581713",
-   "summary": "Programmed Training, an API for building your own post-training loop over open-weight models, is available in public preview in Microsoft Foundry. Access is available by request through the preview sign-up form.Managed training jobs work well when you onl",
-   "published": "2026-11-20T22:58:28+00:00"
-  },
-  {
-   "id": "c5b7d92919e2",
-   "title": "[In preview] Public Preview: Multi-turn evaluation in Microsoft Foundry",
-   "link": "https://azure.microsoft.com/updates?id=581746",
-   "summary": "Multi-turn evaluation is now in public preview in Microsoft Foundry. You can assess complete agent conversations against your quality standards, not only individual responses.A response can look correct on its own and still be part of a conversation that",
-   "published": "2026-11-20T22:56:51+00:00"
-  },
-  {
-   "id": "f8841e03938b",
-   "title": "[In preview] Public Preview: Azure Firewall for Containers",
-   "link": "https://azure.microsoft.com/updates?id=581963",
-   "summary": "Azure Firewall for Containers extends Azure Firewall protection to containerized workloads, providing a centralized approach to securing network traffic for container environments. Customers can use Azure Firewall capabilities as part of their container n",
-   "published": "2026-11-20T20:05:17+00:00"
-  },
-  {
-   "id": "942bb85d9aac",
-   "title": "[Launched] Generally Available: Azure Cobalt 200 Arm-based Dpsv7, Dplsv7, Epsv7, Mpsv4, and Lpsv5-series Virtual Machines",
-   "link": "https://azure.microsoft.com/updates?id=564451",
-   "summary": "The general purpose Dpsv7 and Dplsv7, memory-optimized Epsv7, high-memory Mpsv4, and dense storage Lpsv5 VMs are now generally available. These virtual machines deliver significant enhancements over the previous generation Cobalt 100 VMs, offering improve",
-   "published": "2026-06-02T21:00:30+00:00"
   }
  ]
 }
