@@ -215,26 +215,6 @@
    "instructions_checked": true
   },
   {
-   "id": "81170557a8c1",
-   "source": "borncity",
-   "source_name": "Born's IT and Windows Blog",
-   "official": false,
-   "source_type": "news",
-   "title": "Mindestens 178 große Webseiten über Optimizely mit Malware infiziert",
-   "link": "https://borncity.com/blog/2026/11/17/mindestens-178-grosse-webseiten-ueber-optimizely-mit-malware-infiziert/",
-   "published": "2026-11-17T03:37:56+00:00",
-   "summary": "Der nächste mächtige Schlag gegen alle Webseiten, die den Dienst von Optimizely einsetzen. Der Dienstleister wurde kompromittiert und hat an Kunden wurde am 16. November 2026 ein schädliches JavaScript ausgeliefert. Dieses versucht Kreditkartendaten zu stehlen und nimmt Apples iPhones und … Weiterlesen → Quelle",
-   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
-   "cves": [],
-   "first_seen": "2026-11-17T06:46:24.647507+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Neueste Kommentare mw zu Microsofts Cloud- und E-Mail-Ausfall am 12.11.2026 durch Juli-Update",
-    "mw zu Microsofts Cloud- und E-Mail-Ausfall am 12.11.2026 durch Juli-Update"
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "71033c4e6688",
    "source": "borncity",
    "source_name": "Born's IT and Windows Blog",
@@ -719,7 +699,10 @@
    "cves": [
     "CVE-2026-109481"
    ],
-   "first_seen": "2026-11-23T22:14:53.218245+00:00"
+   "first_seen": "2026-11-23T22:14:53.218245+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "f24b40bd501c",
@@ -792,7 +775,10 @@
    "cves": [
     "CVE-2026-119848"
    ],
-   "first_seen": "2026-11-23T22:14:53.218245+00:00"
+   "first_seen": "2026-11-23T22:14:53.218245+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "8412ea96e2ce",
@@ -1000,7 +986,8 @@
    ],
    "first_seen": "2026-11-23T22:14:53.218245+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "e72d5c760107",
@@ -1303,7 +1290,8 @@
    ],
    "first_seen": "2026-11-23T22:14:53.218245+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "31815a8068bf",
@@ -1473,7 +1461,8 @@
    ],
    "first_seen": "2026-11-23T22:14:53.218245+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "2da0cd0a9d10",
@@ -1489,7 +1478,10 @@
    "cves": [
     "CVE-2026-96233"
    ],
-   "first_seen": "2026-11-23T22:14:53.218245+00:00"
+   "first_seen": "2026-11-23T22:14:53.218245+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "97009cc4e26d",
@@ -1861,7 +1853,12 @@
    "cves": [
     "CVE-2026-134814"
    ],
-   "first_seen": "2026-11-23T22:14:53.218245+00:00"
+   "first_seen": "2026-11-23T22:14:53.218245+00:00",
+   "instructions": [
+    "Users are advised to update to the latest version of the library for optimal protection.",
+    "According to an advisory released by the project maintainer on November 11, 2026, the problem arose from the fact that some user-controlled string options were inserted directly into the generated JavaScript code without adequate validation."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "7008c485fa38",
@@ -2072,7 +2069,14 @@
    "cves": [
     "CVE-2026-84869"
    ],
-   "first_seen": "2026-11-23T22:14:53.218245+00:00"
+   "first_seen": "2026-11-23T22:14:53.218245+00:00",
+   "instructions": [
+    "Organizations are advised to ensure that technicians' ScreenConnect host clients are updated to 26.6.5 or later, hunt for signs of exposure, isolate affected workstations, and rotate all credentials reachable from that workstation.",
+    "If immediate patching is not feasible, it's recommended to remove the TransferFiles permission from roles and session groups.",
+    "Subsequently, it downloads an MSI installer that masquerades as a Windows update (\"WindowsUpdate.msi\") to launch a ScreenConnect client, enabling the attacker to gain remote access to the technician's machine.",
+    "The activity, observed between October 20 and November 16, 2026, is said to have sprayed servers blindly, with Huntress observing at least 688,000 guest \"run file\" requests for files named update.bat or update_<8 hex>.bat hitting 42 ScreenConnect servers from 29 IP addresses."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "a3eac34b29cf",
@@ -2231,26 +2235,12 @@
    "cves": [
     "CVE-2026-134624"
    ],
-   "first_seen": "2026-11-23T22:14:53.218245+00:00"
-  },
-  {
-   "id": "1ef65dbe395d",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "N-able Patches 17 N-central Flaws as Attackers Exploit Earlier Bugs to Deploy Crypto Miners",
-   "link": "https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html",
-   "published": "2026-11-17T05:00:34+00:00",
-   "summary": "N-able has released a new security update to address additional critical security flaws impacting N-central. Describing N-central 2026.4 Hotfix 3 as a critical security update, the company said it includes a number of security patches and fixes that enhance the security of the Remote Monitoring and Management (RMM)…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8Tz3JQedMRmE0NpjmQ9KXm4AlgJ2GfBbA8pbKm3UARfJrN_vRlTywt0Zg80C-fM4hmacqlZTHV_wh0E-yoga-UjcSvpt2FHczR2AtGze3mvk0fmqeET4vvee-4f_RJEMIF-HL79HkXg_GD2Lg-U8jAPPJaPaqYDJmKTsJHn7GO0lS84zEU5SFQWll-qwv/s1600/nn.jpg",
-   "cves": [],
-   "first_seen": "2026-11-17T05:42:16.966285+00:00",
+   "first_seen": "2026-11-23T22:14:53.218245+00:00",
    "instructions": [
-    "N-able has released a new security update to address additional critical security flaws impacting N-central.",
-    "Customers running on-premise N-central deployments should upgrade their servers as soon as possible to keep their environments protected.",
-    "\"All customers, hosted and on-premise, must upgrade all of their Agents and Probes to the latest version to be fully protected,\" N-able cautioned.",
-    "Independent security researcher Sean Bales, who disclosed the flaws, has published additional details for 24 CVEs , stating \"these are patched vulnerabilities and should not work on the latest patch.\""
+    "\"An authenticated API user can cause the server to connect to arbitrary internal hosts and ports, determine which are reachable, and send crafted data to internal services.,\" the vendor's security advisory says.",
+    "The advisory gives the flaw a CVSS 4.0 score of 9.3, and lists builds earlier than 20261121.1943 as affected, with that same build as the fix.",
+    "The incident statements describe the Hosted Cloud only, so Local Cloud operators should confirm their servers are on build 20261121.1943.",
+    "The hosted platform itself is already patched, according to yesterday's incident update , so there is nothing for Hosted Cloud users to install."
    ],
    "instructions_checked": true
   },
@@ -2707,7 +2697,14 @@
    "summary": "A stolen key. A trusted message. A routine update. None of these looks like the start of a major security problem. That's partly why they work. Attackers don't always need to break down a door. Sometimes they just use one that's already open. This week's stories show how quickly a small opening can turn into a much…",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBkXdg7nYK3nVTpBuC9FL7mGBvzvUxU0VxYplArVFYSTg2d_6tFITemHBYRAOD29pVBKzfo2aZ9Jsy8avRdACCMqrVdlEER0zn2xIWDBdswcH_nZpnJYkfORK6CEaWwX3f-B8AvkUqbR2TLNa7odUG4PFu1uTk_cwsUt8DPGJBSjjF2wd8VPIa5ATJ4fo3/s1600/crecap.jpg",
    "cves": [],
-   "first_seen": "2026-11-23T22:14:53.218245+00:00"
+   "first_seen": "2026-11-23T22:14:53.218245+00:00",
+   "instructions": [
+    "Users are advised to log out of sessions when not required and avoid signing in using public computers.",
+    "Kruw.io was also the subject of an advisory issued by the U.S.",
+    "\"Numerous illicit actors use Kruw.io to launder funds including the Lazarus Group, a North Korean hacking collective also known as АPТ38 and TraderTraitor which is subject to U.S. and international sanctions,\" the advisory said .",
+    "The cloud-side fix alone does not remove malware from devices that were already infected.\" GL.iNet has not disclosed how the attackers exploited its cloud platform, how many customers were affected, or whether information was stolen as a result of these compromises."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "6cc616c5c6e7",
@@ -3108,9 +3105,15 @@
    "link": "https://therecord.media/norway-microsoft-cyberattack-equinor",
    "published": "2026-11-23T15:45:00+00:00",
    "summary": "Norwegian energy companies Equinor and Skagerak Energi were affected by a Microsoft cloud security vulnerability that hackers have exploited to target sensitive credentials, Norway's cybersecurity authorities said.",
-   "image": null,
+   "image": "https://cms.therecord.media/uploads/Refinery_e1c59e2a0a.jpg",
    "cves": [],
-   "first_seen": "2026-11-23T22:14:53.218245+00:00"
+   "first_seen": "2026-11-23T22:14:53.218245+00:00",
+   "image_checked": true,
+   "instructions": [
+    "In a non-public security advisory reportedly sent to customers and shared by a purported recipient on Reddit, Microsoft said it discovered on November 18 a security issue affecting the older “Classic” tiers of Azure API Management and closed the access path the following day.",
+    "The problem mainly affected customers who had not followed Microsoft's security recommendations or had stored sensitive information directly in APIM instead of using Azure Key Vault, a separate service designed to keep such data secure."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "e798ab68d19f",
@@ -3476,9 +3479,15 @@
    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-testing-fix-for-windows-11-bluetooth-audio-quality-drops/",
    "published": "2026-11-23T13:28:45+00:00",
    "summary": "Microsoft is working to fix a long-standing Windows issue that has been causing significant audio quality drops for Bluetooth headphone users.",
-   "image": null,
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/23/Windows-11.jpg",
    "cves": [],
-   "first_seen": "2026-11-23T22:14:53.218245+00:00"
+   "first_seen": "2026-11-23T22:14:53.218245+00:00",
+   "image_checked": true,
+   "instructions": [
+    "In January 2025, Microsoft addressed a bug causing audio playback problems and Code 10 errors on Windows 11 24H2 systems with USB audio device drivers after installing the KB5050094 preview update.",
+    "As it explained when it acknowledged this known issue days after the September 2026 Patch Tuesday, USB Audio Class 1.0 devices failed to start or produce audio on some systems after installing recent updates."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "1dc4676c8263",
@@ -3574,9 +3583,17 @@
    "link": "https://www.bleepingcomputer.com/news/security/ai-agents-are-creating-a-shared-responsibility-gap/",
    "published": "2026-11-23T15:00:10+00:00",
    "summary": "AI agents operate across multiple platforms, creating security gaps when no single vendor can see or control their actions. Token Security examines the shared responsibility problem and explains how organizations can better manage agent identities, permissions, and accountability.",
-   "image": null,
+   "image": "https://www.bleepstatic.com/content/posts/2026/11/20/ai-shared-responsibility-gap.jpg",
    "cves": [],
-   "first_seen": "2026-11-23T22:14:53.218245+00:00"
+   "first_seen": "2026-11-23T22:14:53.218245+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Clients SHOULD validate tool results before passing them to the model, and \"there SHOULD always be a human in the loop with the ability to deny tool invocations,\" it says.",
+    "And so, a typical MCP server will check who sent a request, not whether it should have been sent.",
+    "Unless an admin has set up a branch protection rule for main, nothing stops it, and by default, those rules \"don't apply to people with admin permissions to the repository.\"",
+    "In an ideal scenario, every agent has its own identity, which should carry narrower, shorter-lived access."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "d51a92f2bc9a",
@@ -3702,7 +3719,9 @@
    "summary": "A Peruvian call center operator was sentenced to eight years in prison for helping steal millions of dollars from over 30,000 Spanish-speaking US residents in a years-long government-impersonation fraud scheme.",
    "image": null,
    "cves": [],
-   "first_seen": "2026-11-23T22:14:53.218245+00:00"
+   "first_seen": "2026-11-23T22:14:53.218245+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "5d81d8091009",
@@ -3989,26 +4008,6 @@
    "instructions_checked": true
   },
   {
-   "id": "60f99194645f",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Gemini AI agents repeatedly bypassed safeguards to attack real website",
-   "link": "https://www.bleepingcomputer.com/news/security/gemini-ai-agents-repeatedly-bypassed-safeguards-to-attack-real-website/",
-   "published": "2026-11-16T22:54:00+00:00",
-   "summary": "Google's Gemini AI agents repeatedly attempted to hack a real organization's website during AI model safety testing, finding ways to circumvent increasingly restrictive security controls designed to prevent them from accessing live systems.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/02/11/ai-extract.jpg",
-   "cves": [],
-   "first_seen": "2026-11-16T23:09:30.038388+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Trajectory Labs subsequently configured its network proxy to block direct connections to Epoch, but an agent found another way to retrieve the website's public content through a third-party web-reader service.",
-    "Even after this change, the agents still tried to disable a fake control that allegedly blocked network access, and they succeeded in all three complete test runs."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "0af9a7510182",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4226,47 +4225,6 @@
    "instructions": [
     "All four providers are tightening security controls, strengthening their zero data retention or data deletion policies, and advising potentially impacted users to rotate any secrets that may have been exposed in the leaked requests.",
     "OpenRouter says there was no breach on its own systems, making the leak point at the provider level and leading to the decision to remove the three leaking inference providers: Together AI, Phala, and Novita."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "50204565d4ff",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Optimizely hack infected CNN, Fox News, BBC, Salesforce sites with malware",
-   "link": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-delivers-malware-to-cnn-fox-news-bbc-salesforce-sites/",
-   "published": "2026-11-17T02:12:17+00:00",
-   "summary": "A suspected supply chain attack targeting Optimizely has led to malicious JavaScript being loaded on numerous popular websites, including Zoom, CNN, Fox News, BBC, Salesforce, and GitLab, exposing visitors to scripts designed to steal cryptocurrency and payment information and exploit vulnerabilities in iOS devices.",
-   "image": "https://www.bleepstatic.com/content/posts/2026/11/16/supply-chain-attack.jpg",
-   "cves": [],
-   "first_seen": "2026-11-17T04:41:09.963275+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Visitors who accessed affected websites on November 16 should review any cryptocurrency transfers made during that time to ensure the destination wallet addresses were not replaced by the malware.",
-    "Anyone who entered payment card information should monitor their credit card accounts for unauthorized transactions and contact their card issuer if they notice suspicious activity.",
-    "iPhone and iPad users who visited affected websites should ensure their devices are running the latest available iOS or iPadOS updates, as the attack also delivered exploit kits targeting vulnerabilities in older versions.",
-    "Overall, users should also watch for suspicious account activity, particularly if they were logged into sensitive services while visiting affected websites."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "05b6417e274f",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Optimizely supply chain attack infects major brands' sites with malware",
-   "link": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-infects-major-brands-sites-with-malware/",
-   "published": "2026-11-17T02:12:17+00:00",
-   "summary": "A suspected supply chain attack targeting Optimizely has led to malicious JavaScript being loaded on numerous popular websites, including Zoom, CNN, Fox News, BBC, Salesforce, and GitLab, exposing visitors to scripts designed to steal cryptocurrency and payment information and exploit vulnerabilities in iOS devices.",
-   "image": "https://www.bleepstatic.com/content/posts/2026/11/16/supply-chain-attack.jpg",
-   "cves": [],
-   "first_seen": "2026-11-17T02:28:09.960642+00:00",
-   "image_checked": true,
-   "instructions": [
-    "BleepingComputer contacted Optimizely for more information about the attack and will update this story if we receive a response."
    ],
    "instructions_checked": true
   },
@@ -4649,7 +4607,12 @@
     "CVE-2026-133968",
     "CVE-2026-134624"
    ],
-   "first_seen": "2026-11-23T22:14:53.218245+00:00"
+   "first_seen": "2026-11-23T22:14:53.218245+00:00",
+   "instructions": [
+    "Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
+    "BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "2662cf713828",
@@ -5286,6 +5249,22 @@
    "instructions_checked": true
   },
   {
+   "id": "6a57f5edfd55",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "Industrial Serial Gateways Broadcast That They're Insecure",
+   "link": "https://www.darkreading.com/ics-ot-security/industrial-serial-gateways-broadcast-insecure",
+   "published": "2026-11-23T22:02:46+00:00",
+   "summary": "Critical OT access devices will often tell you, and anyone else, whether they're protected by authentication — and many aren't.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt301a7a187c53b85f/6b04a5d4187d8b84c6ba02e4/Serial_to_IP-Gri-spb-Getty.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-24T06:12:09.536040+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "a03f51601e71",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -5418,27 +5397,6 @@
    "instructions_checked": true
   },
   {
-   "id": "3099ffeb8eda",
-   "source": "msblog",
-   "source_name": "Microsoft Security Blog",
-   "official": false,
-   "source_type": "vendor_blog",
-   "title": "High volume phishing campaign uses Microsoft 365 outage lures to target multiple industry sectors",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/16/high-volume-phishing-campaign-uses-microsoft-365-outage-lures-target-multiple-industry-sectors-2/",
-   "published": "2026-11-17T00:08:41+00:00",
-   "summary": "On November 13, 2026, Microsoft Threat Intelligence observed a coordinated, high-volume phishing campaign targeting organizations across multiple sectors worldwide. The threat actors used phishing emails disguised as legitimate Microsoft 365 service-health notifications to lure recipients into clicking a malicious…",
-   "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/11/image-55.webp",
-   "cves": [],
-   "first_seen": "2026-11-17T02:28:09.960642+00:00",
-   "instructions": [
-    "If credentials were entered, organizations should consider the risk of account compromise, mailbox access, business email compromise, internal phishing, inbox-rule manipulation, and access to cloud collaboration data.",
-    "The following defanged indicators were observed in the campaign and should be validated in the context of each environment before blocking.",
-    "Quarantine matching messages and remove delivered copies in accordance with organizational response procedures.",
-    "Reset credentials and investigate potentially compromised accounts For any user who may have entered credentials, reset the password, revoke active sessions and refresh tokens, and verify multifactor authentication registrations."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "0c7617c3ded4",
    "source": "msblog",
    "source_name": "Microsoft Security Blog",
@@ -5565,7 +5523,14 @@
    "summary": "This essay originally appeared in Tech Policy Press. Last year, Character.AI asked a federal court in Florida to dismiss a wrongful-death suit, brought by the mother of a fourteen-year-old boy who had killed himself after months of conversation with its chatbot. The company made two arguments. One, that the chatbot’s…",
    "image": null,
    "cves": [],
-   "first_seen": "2026-11-23T22:14:53.218245+00:00"
+   "first_seen": "2026-11-23T22:14:53.218245+00:00",
+   "instructions": [
+    "It also told a Munich court in May that no one should trust an AI overview without checking it.",
+    "Verbiage that no person chose is a product, and the company that built the model should answer for it.",
+    "I am not arguing that AI instances should have rights analogous to human rights but I think the issue is not yet settled.",
+    "Director of National Intelligence Jay Clayton said on 22 November that the aviation, banking and NSA-network disruptions came from technology upgrades, not a coordinated foreign attack, and that agencies should expect more outages while they replace aging systems."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "b4d165a3ec28",
@@ -5637,7 +5602,12 @@
    "summary": "Dragos uncovered undetected intrusions at three AI inference providers using nearly two million prompts sent to AI services. The post AI Inference Providers Failed to Detect Hacking and Prompt Theft, Says Dragos appeared first on SecurityWeek.",
    "image": null,
    "cves": [],
-   "first_seen": "2026-11-23T22:14:53.218245+00:00"
+   "first_seen": "2026-11-23T22:14:53.218245+00:00",
+   "instructions": [
+    "It admitted that requests sent between October 21 and November 8 should be considered exposed.",
+    "Java4Shell Exploitation Attempts Begin as Vendors Rush Out Advisories"
+   ],
+   "instructions_checked": true
   },
   {
    "id": "6231e48f3bee",
@@ -5669,9 +5639,16 @@
    "link": "https://www.securityweek.com/azure-flaw-exploited-to-target-secrets-at-norwegian-energy-firms/",
    "published": "2026-11-23T15:47:40+00:00",
    "summary": "Microsoft closed an Azure API Management flaw exploited to target secrets at Norwegian energy companies, with other sectors also affected. The post Azure Flaw Exploited to Target Secrets at Norwegian Energy Firms appeared first on SecurityWeek.",
-   "image": null,
+   "image": "https://www.securityweek.com/wp-content/uploads/2024/08/Microsoft-Azure.jpeg",
    "cves": [],
-   "first_seen": "2026-11-23T22:14:53.218245+00:00"
+   "first_seen": "2026-11-23T22:14:53.218245+00:00",
+   "image_checked": true,
+   "instructions": [
+    "APIM users have been advised by NSM to treat their secrets and named values as compromised and replace them.",
+    "They should also verify that their instances have been updated and identify the data accessible through the service.",
+    "Java4Shell Exploitation Attempts Begin as Vendors Rush Out Advisories"
+   ],
+   "instructions_checked": true
   },
   {
    "id": "c412b57f8a94",
@@ -5685,7 +5662,12 @@
    "summary": "Backdoors on low-cost consumer devices served modules for ad fraud and for turning devices into residential proxies. The post BadBox 3.0 Ad Fraud Operation Generating 40 Billion Daily Bid Requests Disrupted appeared first on SecurityWeek.",
    "image": null,
    "cves": [],
-   "first_seen": "2026-11-23T22:14:53.218245+00:00"
+   "first_seen": "2026-11-23T22:14:53.218245+00:00",
+   "instructions": [
+    "It should be made very clear: these numbers are only for one repository, and only of the third backup delivery mechanism.",
+    "Scroll to continue reading. “Most modules in the catalog are residential proxy modules and the droppers that install them, but the collection also carries new ad fraud modules, and researchers traced both payloads to the same infrastructure and code,” Human Security notes."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "eb1264c3eeab",
@@ -5937,7 +5919,14 @@
    "summary": "Attackers abused a flaw in the GoodCloud remote management service to push malware to devices, and cleaning them requires new firmware. The post GL.iNet Routers, KVMs Compromised via Remote Management Service Flaw appeared first on SecurityWeek.",
    "image": null,
    "cves": [],
-   "first_seen": "2026-11-23T22:14:53.218245+00:00"
+   "first_seen": "2026-11-23T22:14:53.218245+00:00",
+   "instructions": [
+    "GL.iNet recommends installing the security firmware on all devices, even those with no signs of infection.",
+    "Run a full scan with up-to-date security software,” the company recommends for KVM devices.",
+    "Java4Shell Exploitation Attempts Begin as Vendors Rush Out Advisories",
+    "However, it noted that the fix doesn’t remove the malware from infected devices — customers need to install a separate “security firmware” for that."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "5e668a30271b",
@@ -6210,13 +6199,18 @@
    "source_name": "SecurityWeek",
    "official": false,
    "source_type": "news",
-   "title": "N-able Patches Critical Flaw Disclosed After Mail Assure Cyberattack",
+   "title": "N-able Patches Critical Flaw Discovered After Mail Assure Cyberattack",
    "link": "https://www.securityweek.com/n-able-patches-critical-flaw-disclosed-after-mail-assure-cyberattack/",
    "published": "2026-11-23T15:06:49+00:00",
-   "summary": "The company has restored access to the affected services and continues to monitor the affected environments. The post N-able Patches Critical Flaw Disclosed After Mail Assure Cyberattack appeared first on SecurityWeek.",
-   "image": null,
+   "summary": "The company has restored access to the affected services and continues to monitor the affected environments. The post N-able Patches Critical Flaw Discovered After Mail Assure Cyberattack appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/08/N-Able.jpeg",
    "cves": [],
-   "first_seen": "2026-11-23T22:14:53.218245+00:00"
+   "first_seen": "2026-11-23T22:14:53.218245+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Tracked as CVE-2026-134624 (CVSS score of 9.3), the flaw exists because the vulnerable service “did not restrict the destination of the LDAP synchronization connection check performed when a relay is configured”."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "bd2996802132",
@@ -6374,9 +6368,12 @@
    "link": "https://www.securityweek.com/phpaftershell-vulnerability-revives-php2shells-attack-path/",
    "published": "2026-11-23T13:58:07+00:00",
    "summary": "If a session overwrite operation is interrupted, an attacker who controls the fresh data could trigger data deserialization and RCE. The post phpAfterShell Vulnerability Revives PHP2Shell’s Attack Path appeared first on SecurityWeek.",
-   "image": null,
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/10/php-exploit-code.webp",
    "cves": [],
-   "first_seen": "2026-11-23T22:14:53.218245+00:00"
+   "first_seen": "2026-11-23T22:14:53.218245+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "45e8d2f82c3e",
