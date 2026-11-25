@@ -31,7 +31,13 @@
    "summary": "Amazon said AI agents recently found and exploited a zero-day vulnerability with no human oversight beyond a simple instruction to get root access on an East Asian university server. The agents were running on Cairn, an open source AI penetration-testing framework. The hackers, who provided prompts in simplified…",
    "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/cairn-banner.jpg",
    "cves": [],
-   "first_seen": "2026-11-24T18:01:18.816744+00:00"
+   "first_seen": "2026-11-24T18:01:18.816744+00:00",
+   "instructions": [
+    "“These findings show that agentic offensive operations are already happening, and defenders should prepare for the speed and persistence these tools enable,” Amazon said .",
+    "At the time of discovery, this path traversal vulnerability in the medical imaging application did not correspond to any assigned security advisory and was unpatched.",
+    "Amazon Threat Intelligence assesses with high confidence that it was a zero-day based on the absence of any corresponding fix, issue, advisory, or prior mention in vulnerability databases for the affected open-source project."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "45584a3597b1",
@@ -55,22 +61,6 @@
    "instructions_checked": true
   },
   {
-   "id": "58043437b94b",
-   "source": "ars",
-   "source_name": "Ars Technica Security",
-   "official": false,
-   "source_type": "news",
-   "title": "Hundreds of websites deliver potent malware cocktail to unsuspecting visitors",
-   "link": "https://arstechnica.com/security/2026/11/malicious-code-delivered-through-optimizely-hits-visitors-to-hundreds-of-sites/",
-   "published": "2026-11-17T22:32:16+00:00",
-   "summary": "Hundreds of websites using the Optimizely website personalization platform served unsuspecting visitors a potent malware cocktail that targeted cryptocurrency wallets, stole payment card data, cookies, and screenshots, and delivered exploit kits for infecting iPhones and iPads, researchers said Tuesday. ReportURI said…",
-   "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/malicious-website-1152x648.jpg",
-   "cves": [],
-   "first_seen": "2026-11-17T22:55:23.196013+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "545852a9591f",
    "source": "ars",
    "source_name": "Ars Technica Security",
@@ -84,91 +74,6 @@
    "cves": [],
    "first_seen": "2026-11-20T01:13:40.105404+00:00",
    "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "e6f27bb6bf22",
-   "source": "windows-blog",
-   "source_name": "Windows Experience Blog",
-   "official": false,
-   "source_type": "vendor_blog",
-   "title": "Edge for Business becomes the most used enterprise browser and unveils Ignite 2026 innovations",
-   "link": "https://blogs.windows.com/msedgedev/2026/11/17/edge-for-business-ignite-2026-innovations/",
-   "published": "2026-11-17T18:40:43+00:00",
-   "summary": "https://www.youtube.com/watch?v=eK7msluMltY Summary: Edge for Business is the most used enterprise browser in the world. At Microsoft Ignite 2026, we're introducing new ways for users and agents to get more done. Deeper integration with Microsoft 365 security capabilities helps IT protect and manage browser activity…",
-   "image": "https://winblogs.thesourcemediaassets.com/sites/33/2026/11/extension-safety.jpg",
-   "cves": [],
-   "first_seen": "2026-11-17T19:47:33.098459+00:00",
-   "instructions": [
-    "At a glance: Through inforcer, MSPs can apply a recommended Edge for Business security baseline across multiple customer tenants on Windows and macOS.",
-    "Whatever the agent, Microsoft or otherwise, it should do its best work in Edge for Business: faster, with fewer tokens, and more accurate results.",
-    "In the future, see which agents are in use and who’s using them, apply policies, and block or quarantine an agent that isn’t approved or is exhibiting risky behavior.",
-    "The best enterprise browser for humans and agents needs more than agent guardrails: a rock-solid security foundation for today’s enterprise browsing must be in place."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "fe7dfa336613",
-   "source": "windows-blog",
-   "source_name": "Windows Experience Blog",
-   "official": false,
-   "source_type": "vendor_blog",
-   "title": "Microsoft Ignite 2026: Building Windows for the next era of work",
-   "link": "https://blogs.windows.com/windowsexperience/2026/11/17/microsoft-ignite-2026-building-windows-for-the-next-era-of-work/",
-   "published": "2026-11-17T18:20:56+00:00",
-   "summary": "Every major shift in computing has changed what people can do at work, and Windows has been at the center. Today, it runs critical work inside your organizations, on over a billion devices across the world. That is a privilege and a responsibility. I t’s why, above all else, we’re moving faster than ever on security…",
-   "image": "https://blogs.windows.com/wp-content/uploads/sites/2/2026/11/Windows-Endpoint-Security-Platform.png",
-   "cves": [],
-   "first_seen": "2026-11-17T18:34:19.414923+00:00",
-   "instructions": [
-    "Policies such as Wi-Fi and VPN apply, within minutes and stay protected from drift, even when a device is offline.",
-    "Test Windows Server 2028 in the Windows Insider Program for Windows Server , or apply to the Windows Server TAP for earlier access.",
-    "With Windows administrator protection, now generally available, IT can enable local administrators to run with standard user privileges by default.",
-    "With Microsoft Intune Enterprise App Management, IT can deploy and manage apps at scale and can now preview automatic updates not just for the applications they deploy, but the applications people install themselves, with the same controls and deadlines they know from Windows Autopatch."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "32a8bc53e2b0",
-   "source": "windows-blog",
-   "source_name": "Windows Experience Blog",
-   "official": false,
-   "source_type": "vendor_blog",
-   "title": "Windows security at Ignite 2026: Start secure, protect what matters, prepare for AI",
-   "link": "https://blogs.windows.com/windowsexperience/2026/11/17/windows-security-at-ignite-2026-start-secure-protect-what-matters-prepare-for-ai/",
-   "published": "2026-11-17T18:15:58+00:00",
-   "summary": "AI is changing the threat landscape as fast as it is changing the way we work. Attackers are using AI to find vulnerabilities, build exploits and scale their campaigns faster than ever, shrinking the time between a weakness being discovered and being used against an organization. In this environment, the fundamentals…",
-   "image": "https://blogs.windows.com/wp-content/uploads/sites/2/2026/11/Ignite-Partners.png",
-   "cves": [],
-   "first_seen": "2026-11-17T18:34:19.414923+00:00",
-   "instructions": [
-    "Devices that are configured securely and patched quickly remain one of the most effective defenses, and the security strategy you have for your users and data must now extend to AI and agents as well.",
-    "A trusted foundation must also prepare for threats that emerge before they become practical at scale.",
-    "Organizations must remain confident in their IT security as technology evolves.",
-    "Windows can help enforce identity and security controls on the devices where people, apps, and data intersect."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "0975c072af9b",
-   "source": "borncity",
-   "source_name": "Born's IT and Windows Blog",
-   "official": false,
-   "source_type": "news",
-   "title": "Kritische Schwachstelle Java4Shell (CVE-2026-114938)",
-   "link": "https://borncity.com/blog/2026/11/17/kritische-schwachstelle-java4shell-cve-2026-114938/",
-   "published": "2026-11-17T21:06:33+00:00",
-   "summary": "Gerade ist eine kritische Schwachstelle (CVE-2026-114938) in JAVA (CVSS 4.0 Base Score 9.2, critical) vorzeitig bekannt geworden. Die Java4Shell genannte Schwachstelle steckt im OpenJDK 17.0.6 und Folgeversionen. Sie ermöglicht Server zu übernehmen. Oracle soll einen Patch veröffentlicht haben. Ergänzung: Es ……",
-   "image": "https://borncity.com/blog/wp-content/uploads/2013/10/java_thumb.jpg",
-   "cves": [
-    "CVE-2026-114938"
-   ],
-   "first_seen": "2026-11-17T21:54:48.603180+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Ergänzung: Beim Schreiben der ersten Fassung dieses Texts war noch nichts von Oracle bekannt. Über heise bin ich dann auf das Oracle OpenJDK Vulnerability Advisory: 2026/11/17 gestoßen.",
-    "Oracle hat den Vorab-Sicherheits-Hinweis Oracle Critical Security Patch Update Pre-Release Announcement – November 2026 zu kommenden Sicherheitsupdates veröffentlicht."
-   ],
    "instructions_checked": true
   },
   {
@@ -473,7 +378,14 @@
    "summary": "Noch ein Nachtrag von letzter Woche, ist mir gerade erst untergekommen, der sich an Nutzer von 3CX wendet, die diese Lösung selbst unter Linux oder Windows hosten. 3CX hat zum 18. November 2026 zwei kritische Sicherheitslücken in nginx geschlossen. 3CX-Partner … Weiterlesen → Quelle",
    "image": null,
    "cves": [],
-   "first_seen": "2026-11-24T18:01:18.816744+00:00"
+   "first_seen": "2026-11-24T18:01:18.816744+00:00",
+   "instructions": [
+    "Neueste Kommentare Tibor Simandi Kallay zu Windows 11 Preview Update KB5132057 mit Installationsproblemen",
+    "Tibor Simandi Kallay zu Windows 11 Preview Update KB5132057 mit Installationsproblemen",
+    "Horst Agatha zu Windows 11 Preview Update KB5132057 mit Installationsproblemen",
+    "3CX-Partner scheinen wohl über das Update informiert worden zu sein."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "64c88b8151ed",
@@ -488,6 +400,27 @@
    "image": null,
    "cves": [],
    "first_seen": "2026-11-24T18:01:18.816744+00:00"
+  },
+  {
+   "id": "2d2980315807",
+   "source": "borncity",
+   "source_name": "Born's IT and Windows Blog",
+   "official": false,
+   "source_type": "news",
+   "title": "Testübermittlung von Canary-Anmeldedaten an KI-Router (OpenRouter, Vercel) endet im Security-Desaster",
+   "link": "https://borncity.com/blog/2026/11/25/canary-anmeldedaten-an-ki-router-openrouter-vercel-enden-im-desaster/",
+   "published": "2026-11-24T23:01:00+00:00",
+   "summary": "Sicherheitsforscher haben in einem Test 2 Millionen digitale \"Stolperdrähte\" in Anfragen, die über ein weitverzweigtes Netzwerk von KI-Diensten vermittelt wurden, gestellt. gesendet. Die schickten \"Canary\"-Zugangsdaten in Anfragen an KI-Router wie OpenRouter und Vercel. Selbst unter \"ZDR\"-Richtlinien, wo keine Daten…",
+   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
+   "cves": [],
+   "first_seen": "2026-11-25T02:18:38.088160+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Neueste Kommentare Tibor Simandi Kallay zu Windows 11 Preview Update KB5132057 mit Installationsproblemen",
+    "Tibor Simandi Kallay zu Windows 11 Preview Update KB5132057 mit Installationsproblemen",
+    "Horst Agatha zu Windows 11 Preview Update KB5132057 mit Installationsproblemen"
+   ],
+   "instructions_checked": true
   },
   {
    "id": "fd0ccfc83548",
@@ -645,6 +578,25 @@
     "CVE-2026-109481"
    ],
    "first_seen": "2026-11-23T22:14:53.218245+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "3151827705a8",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-112732 Microsoft Office Visio Remote Code Execution Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-112732",
+   "published": "2026-11-24T16:00:00+00:00",
+   "summary": "Information published. This CVE was addressed by updates that were released in November 2026, but the CVE was inadvertently omitted from the November 2026 Security Updates. This is an informational change only. Customers who have already installed the November 2026 updates do not need to take any further action.",
+   "image": null,
+   "cves": [
+    "CVE-2026-112732"
+   ],
+   "first_seen": "2026-11-25T02:18:38.088160+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -1406,7 +1358,14 @@
    "summary": "What if your biggest SOC budget problem isn't how much you spend, but how much analyst time you lose? According to ANY.RUN's estimates, SOC teams could recover 450 analyst hours per 1,000 investigated alerts through faster threat analysis and IOC research. That's a significant opportunity as manual investigations…",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifgNbpx-KISiy12Rp8KNb5ElWQADJtyC7fLFuLFCc7WzbOjCP5CmU2dPyuwhq5kRSQP5lOuwwFhvZovILCzeMgaSes8APbVabNVpJB71EC56WrojqqLU-tjIr2MFDPK8fMHnu-dx35G-p6btlQb1xU16c8IPrY4cs0k8t1pufSHgp74Y5HtqiAVk4A1QI/s1600/2027.jpg",
    "cves": [],
-   "first_seen": "2026-11-24T18:01:18.816744+00:00"
+   "first_seen": "2026-11-24T18:01:18.816744+00:00",
+   "instructions": [
+    "Pressure to prove ROI: Every investment must demonstrate measurable improvements in security and operational efficiency.",
+    "For 2027, the focus should be on reducing investigation costs, improving analyst productivity, and avoiding unnecessary escalations.",
+    "Reduce investigation and escalation costs: AI-powered Tier 1 reports provide clear summaries of malicious behavior and recommended next steps.",
+    "But before expanding headcount, SOCs should calculate how much capacity they could recover by improving investigation efficiency."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "0ad755f2681c",
@@ -1791,7 +1750,14 @@
    "cves": [
     "CVE-2026-87268"
    ],
-   "first_seen": "2026-11-24T18:01:18.816744+00:00"
+   "first_seen": "2026-11-24T18:01:18.816744+00:00",
+   "instructions": [
+    "Its security advisory says a successful attack can result in the \"takeover of Oracle VM VirtualBox.\"",
+    "The October fix corrects the policy check for UMCI but does not change loading for protected processes, so that PPL route should still work, according to the researcher.",
+    "A quirk in how the .NET Framework loads a program file let a local attacker run untrusted code past two separate protections on Windows built to block it, Google Project Zero researcher James Forshaw showed in a write-up published yesterday.",
+    "On Windows hosts, update VirtualBox to a build that carries the September fixes."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "31afdc96e80b",
@@ -2247,25 +2213,6 @@
    "instructions_checked": true
   },
   {
-   "id": "6b530aaeb2ca",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Researchers Claim Two RCE Exploits That Bypass Telegram’s New Android Defenses",
-   "link": "https://thehackernews.com/2026/11/researchers-claim-two-rce-exploits-that.html",
-   "published": "2026-11-17T19:34:20+00:00",
-   "summary": "A malicious widget can bypass the security filter that Telegram added to its Android app last week and run code outside it, according to NebuSec, a security company. Widgets are small interactive blocks that bots send inside chat messages, and their JavaScript runs on the user's phone. The researchers ran their…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpVlnQrxQ-QDawosxNpQdcPtITzUQKuYeqUtOk0gctwRhi-8P9Qi_9L72cSwkHRdGNS94HaIDHEkqeb0NTPw3mIZyFstN3ZM1FlUoMweKPNz4iTkAkxlxFSNdE92DAFlfLMFe0gTXWE78eOHROSbISVMgdmFOeVhm0SS2-1wXrNxPGknTVMGroQ0pRqYg/s1600/telegram-rce.jpg",
-   "cves": [],
-   "first_seen": "2026-11-17T20:55:05.232897+00:00",
-   "instructions": [
-    "It also added a seccomp filte r, which can block or record the system calls that the process makes.",
-    "A comment above the setting says how long that will last: \"Audit until the logs from the devices say the engine never makes them.\" The published code does not show whether the version people install uses the same setting."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "0be8ff22df4a",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2617,6 +2564,25 @@
    "instructions_checked": true
   },
   {
+   "id": "8a279dc69383",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "California privacy agency director Kemp to leave after two-year tenure",
+   "link": "https://therecord.media/california-privacy-agency-kemp",
+   "published": "2026-11-24T19:30:00+00:00",
+   "summary": "The director of the trailblazing California Privacy Protection Agency announced his departure following implementation of a first-in-the-nation platform allowing consumers to easily opt out of data sharing.",
+   "image": "https://cms.therecord.media/uploads/California_flag_e855acf0cf.jpg",
+   "cves": [],
+   "first_seen": "2026-11-25T02:18:38.088160+00:00",
+   "image_checked": true,
+   "instructions": [
+    "The system is now used by more than 600,000 Californians who can block data sharing and foil data brokers with the push of a button ."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "076062d7e09e",
    "source": "therecord",
    "source_name": "The Record",
@@ -2649,48 +2615,6 @@
    "image_checked": true,
    "instructions": [
     "Andrew Garbarino (R-NY) and John Moolenaar (R-NY) drew the 50-page-long report’s findings from hearings, classified briefings, and agency advisories."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "3910748ba894",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Chinese state group developing automated attack tool for cyber espionage, Google says",
-   "link": "https://therecord.media/chinese-state-group-developing-automated-attack-tool-espionage",
-   "published": "2026-11-17T18:50:00+00:00",
-   "summary": "Google released its latest AI Threat Tracker report on Monday, writing that threat actors are rapidly evolving their use of artificial intelligence in attacks — now leaning more heavily on autonomous multi-agent offensive frameworks like Artex, CAIRN, CyberStrikeAI and PentAGI to execute multi-stage intrusions at…",
-   "image": "https://cms.therecord.media/uploads/red_digital_f1b63748b1.jpg",
-   "cves": [],
-   "first_seen": "2026-11-17T19:47:33.098459+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Google found another version of the scheme, with North Korean actors conducting ClickFix attacks and breaching a victim’s device, allowing them to pivot into internal code repositories to install code directly into the large language models the companies use.",
-    "Threat actors are also using LLMs to automate labor- and time-intensive phases of vulnerability analysis, allowing them to quickly analyze patches to find bugs — dramatically reducing the window between patch disclosure and exploitation."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "c36817af9a4b",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "CISA warns of ‘Java4Shell,’ an AI-found Java bug touching most of the Fortune 500",
-   "link": "https://therecord.media/cisa-issues-java4shell-alert",
-   "published": "2026-11-18T00:00:00+00:00",
-   "summary": "The federal cybersecurity agency urged organizations to immediately patch a new vulnerability affecting Java — one of the world’s most used programming languages — after experts warned that it could allow an attacker to take over servers without a password.",
-   "image": "https://cms.therecord.media/uploads/Screenshot_2026_11_18_at_09_35_13_7dc6766af8.png",
-   "cves": [],
-   "first_seen": "2026-11-18T10:05:13.031061+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Organizations should prioritize internet-facing systems, CISA added.",
-    "Calif, which also discovered the highly publicized vulnerabilities impacting PHP last month, released its own advisory about CVE-2026-114938.",
-    "Luong provided a longer, in-depth explanation of the bug in the advisory and noted that he discovered it while “developing a 0-click exploit on a certain phone vendor.”",
-    "The federal cybersecurity agency urged organizations to immediately patch a new vulnerability affecting Java — one of the world’s most used programming languages — after experts warned that it could allow an attacker to take over servers without a password."
    ],
    "instructions_checked": true
   },
@@ -2779,11 +2703,12 @@
    "link": "https://therecord.media/cyberattacks-uk-artificial-intelligence",
    "published": "2026-11-24T13:45:00+00:00",
    "summary": "Britain’s National Cyber Security Centre said it has observed “a marked rise” since September in cyberattacks assisted by artificial intelligence and warned the technology was increasing attackers’ speed, scale and persistence.",
-   "image": null,
+   "image": "https://cms.therecord.media/uploads/uk_ncsc_cyberuk_twitter_x_fe8e68b06d.jpg",
    "cves": [],
    "first_seen": "2026-11-24T18:01:18.816744+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "4692e0d9ed57",
@@ -2886,7 +2811,9 @@
    "summary": "McDonald’s Japan disclosed a cybersecurity breach that exposed customers’ purchase histories and mobile device location data.",
    "image": null,
    "cves": [],
-   "first_seen": "2026-11-24T18:01:18.816744+00:00"
+   "first_seen": "2026-11-24T18:01:18.816744+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "33f8f6aa43e2",
@@ -2906,23 +2833,6 @@
    "instructions_checked": true
   },
   {
-   "id": "1e05409f353f",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Kazakh ransomware hacking suspect extradited from Italy",
-   "link": "https://therecord.media/kazakh-suspected-extradited-charges-8-digits-team-inc-lynx",
-   "published": "2026-11-17T19:09:00+00:00",
-   "summary": "The U.S. accused Roman Khlynovskiy of participating in ransomware attacks against healthcare organizations, schools and companies as part of the \"8 Digits Team\" connected with INC and Lynx.",
-   "image": "https://cms.therecord.media/uploads/emergency_room_sign_pexels_rdne_08178c3cee.jpg",
-   "cves": [],
-   "first_seen": "2026-11-17T19:47:33.098459+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "8dfce1d63ad4",
    "source": "therecord",
    "source_name": "The Record",
@@ -2935,6 +2845,23 @@
    "image": "https://cms.therecord.media/uploads/Congress_6ac7a14ca7.jpg",
    "cves": [],
    "first_seen": "2026-11-20T01:13:40.105404+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "2f99e3ac2673",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Colorado says cyberattack took down myColorado app, warns 150,000 had data stolen",
+   "link": "https://therecord.media/mycolorado-app-down-data-breach",
+   "published": "2026-11-24T20:52:00+00:00",
+   "summary": "Cybercriminals likely stole data from 150,000 users of myColorado, which residents typically use for digital identification, document storage and accessing state government services.",
+   "image": "https://cms.therecord.media/uploads/my_colorado_app_fb8214e64c.jpg",
+   "cves": [],
+   "first_seen": "2026-11-25T02:18:38.088160+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -2995,26 +2922,6 @@
    "instructions": [
     "Certain facilities remain under “Code Orange” for non-essential employees, meaning delayed openings and some must check in with their supervisors.",
     "“The patching that has gone on following that has caused some of these systems to not come back up when you patch them as expected,” Director of National Intelligence Jay Clayton said in a television interview earlier this week."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "8f75784be3f3",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Website management platform Optimizely confirms hackers put malicious code into customer sites",
-   "link": "https://therecord.media/optimizely-malicious-code-customer-sites",
-   "published": "2026-11-17T21:20:00+00:00",
-   "summary": "Researchers said they found malicious JavaScript code on 178 different widely visited websites run through the Optimizely Web experimentation platform. The company confirmed the breach.",
-   "image": "https://cms.therecord.media/uploads/optimizely_logo_a558e0b619.png",
-   "cves": [],
-   "first_seen": "2026-11-17T21:54:48.603180+00:00",
-   "image_checked": true,
-   "instructions": [
-    "In a technical advisory, Optimizely confirmed Report URI’s findings that a vulnerability in its Experimentation platform allowed threat actors to inject malicious JavaScript into some customers’ websites.",
-    "A breach at a popular website management company exposed customers’ visitors to malicious code that stole cryptocurrency and attempted to skim payment cards or install malware."
    ],
    "instructions_checked": true
   },
@@ -3101,26 +3008,6 @@
    "instructions_checked": true
   },
   {
-   "id": "9409189d8358",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Uber says nearly 150,000 impacted by third-party breach",
-   "link": "https://therecord.media/uber-says-150000-impacted-third-party-breach",
-   "published": "2026-11-18T01:20:00+00:00",
-   "summary": "In breach notification letters, the rideshare company said it was notified by a third party service provider on October 9 that internal credentials were stolen and used to access Uber’s account.",
-   "image": "https://cms.therecord.media/uploads/uber_2_dfaed63c24.jpg",
-   "cves": [],
-   "first_seen": "2026-11-17T02:28:09.960642+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Fireworks warned in an advisory last week that cybercriminals stole billing information and AI-specific data during two breaches last month .",
-    "The impacted data was in a cloud storage environment created by Uber specifically to enable the service provider’s work."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "049017878e9b",
    "source": "therecord",
    "source_name": "The Record",
@@ -3183,31 +3070,15 @@
    "link": "https://www.bitdefender.com/en-us/blog/hotforsecurity/signal-ai-assistants-snooping-encrypted-messages",
    "published": "2026-11-24T14:17:44+00:00",
    "summary": "Signal is blocking Siri and Gemini from reading your encrypted chats off the screen, and warning that AI agents built into operating systems are an \"existential threat\" to privacy. Read more in my article on the Hot for Security blog.",
-   "image": null,
+   "image": "https://blogapp.bitdefender.com/hotforsecurity/content/images/2026/11/signal.jpeg",
    "cves": [],
    "first_seen": "2026-11-24T18:01:18.816744+00:00",
    "instructions": [
     "A new setting called \"Block Siri AI\" allows users to toggle the feature on or off.",
     "There is also no protection yet for Mac users, because Signal says it cannot reliably block the taking of screenshots on macOS."
    ],
-   "instructions_checked": true
-  },
-  {
-   "id": "6b76a35deee9",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Apple reports outages affecting iCloud Mail, AppleCare and more",
-   "link": "https://www.bleepingcomputer.com/news/apple/apple-reports-outages-affecting-icloud-mail-applecare-and-more/",
-   "published": "2026-11-17T19:24:07+00:00",
-   "summary": "Apple is reporting service disruptions affecting several of its services, including iCloud Mail, iCloud Account & Sign In, Apple School Manager, and Schoolwork.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/27/Apple-red.jpg",
-   "cves": [],
-   "first_seen": "2026-11-17T19:47:33.098459+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "4ccf67b96d4a",
@@ -3552,25 +3423,6 @@
    "instructions_checked": true
   },
   {
-   "id": "ddec81ba80b1",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Cloud keys leaked in Docker Hub images are stolen within seconds",
-   "link": "https://www.bleepingcomputer.com/news/security/cloud-keys-leaked-in-docker-hub-images-are-stolen-within-seconds/",
-   "published": "2026-11-17T21:27:17+00:00",
-   "summary": "Credentials and access secrets exposed in public Docker Hub images are being extracted and exploited by attackers within as little as eight seconds of publication.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/17/Docker.jpg",
-   "cves": [],
-   "first_seen": "2026-11-17T21:54:48.603180+00:00",
-   "image_checked": true,
-   "instructions": [
-    "The researchers recommend that Docker Hub scans images for secrets before pushing them live, and warn publishers if they appear to embed any secrets."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "ede0adf4c578",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -3586,28 +3438,6 @@
    "image_checked": true,
    "instructions": [
     "To avoid falling victim to these types of scam campaigns, users should independently verify cryptocurrency promotions through official websites and social media accounts rather than trusting livestreams or QR codes displayed in videos."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "126567e065a7",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Critical Java4Shell flaw allows RCE attacks on major Java applications",
-   "link": "https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications/",
-   "published": "2026-11-17T23:04:21+00:00",
-   "summary": "A critical vulnerability dubbed Java4Shell in OpenJDK, the open-source implementation of Java, can allow unauthenticated attackers to remotely execute code on popular enterprise applications, including Jenkins, Atlassian Jira, Confluence, and Keycloak.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/17/java4shell-header.jpg",
-   "cves": [],
-   "first_seen": "2026-11-17T23:52:03.785728+00:00",
-   "image_checked": true,
-   "instructions": [
-    "However, these workarounds are temporary mitigations, and all developers should update the Java runtimes to the latest version.",
-    "The company recommends that customers apply the available security patches as soon as possible.",
-    "However, the researchers said Java4Shell does not have a universal exploit, and attackers must find an application-dependent way to deliver malicious Base64 data to the vulnerable decoder to achieve code execution.",
-    "For those who cannot immediately update their Java implementations, Calif recommends disabling the vulnerable hardware-accelerated Base64 functionality by launching OpenJDK with the -XX:-UseBASE64Intrinsics option."
    ],
    "instructions_checked": true
   },
@@ -3909,26 +3739,6 @@
    "instructions_checked": true
   },
   {
-   "id": "1dff6dd6c93a",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Japan takes Fugaku supercomputer offlline after cyberattack",
-   "link": "https://www.bleepingcomputer.com/news/security/japan-takes-fugaku-supercomputer-offlline-after-cyberattack/",
-   "published": "2026-11-17T20:51:21+00:00",
-   "summary": "The Fugaku supercomputer operated by Japan's RIKEN Center for Computational Science has been taken offline following a security breach.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/17/RIKEN.jpg",
-   "cves": [],
-   "first_seen": "2026-11-17T20:55:05.232897+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Users are advised to revoke any SSH keys and other credentials stored on Fugaku, and watch out for suspicious emails impersonating RIKEN.",
-    "In response to the incident, RIKEN shut down Fugaku on November 14, disabled users’ login keys, and asked users to revoke and replace any credentials they had stored on the supercomputer."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "230a967c24e6",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -3938,11 +3748,12 @@
    "link": "https://www.bleepingcomputer.com/news/security/mcdonalds-japan-data-breach-exposes-customer-location-information/",
    "published": "2026-11-24T14:09:37+00:00",
    "summary": "McDonald's Japan, the fast-food giant's Japanese subsidiary, has disclosed a data breach after attackers accessed a database containing sensitive information for users of the company's official smartphone app.",
-   "image": null,
+   "image": "https://www.bleepstatic.com/content/hl-images/2024/03/15/mcdonalds-sign.jpg",
    "cves": [],
    "first_seen": "2026-11-24T18:01:18.816744+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "53716c4432ab",
@@ -4011,6 +3822,26 @@
    "instructions_checked": true
   },
   {
+   "id": "0bc0f9692115",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "New Inception extortion gang launches large-scale vishing campaign",
+   "link": "https://www.bleepingcomputer.com/news/security/new-inception-extortion-gang-launches-large-scale-vishing-campaign/",
+   "published": "2026-11-24T20:21:20+00:00",
+   "summary": "A newly formed data extortion group named 'Inception' has been linked to a large-scale campaign that targets single sign-on (SSO) credentials of multiple global brands and firms.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/24/inception.jpg",
+   "cves": [],
+   "first_seen": "2026-11-25T02:18:38.088160+00:00",
+   "image_checked": true,
+   "instructions": [
+    "To defend against the latest Inception campaign, ReversingLabs recommends enforcing phishing-resistant authentication, including FIDO2 security keys and passkeys, and strengthening help desk identity verification procedures.",
+    "DNS, proxy, and identity provider logs dating back to October 21, 2026, should be carefully reviewed for signs of suspicious activity."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "e94ac3e9d520",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4020,11 +3851,12 @@
    "link": "https://www.bleepingcomputer.com/news/security/new-shirudo-tool-uses-ai-to-shield-unpatched-linux-systems-from-exploits/",
    "published": "2026-11-24T13:34:23+00:00",
    "summary": "OpenAI and Cisco launched an open-source Linux security tool named Shirudo that deploys temporary runtime protections to block vulnerability exploitation while administrators prepare and roll out patches, without restarting services.",
-   "image": null,
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/24/Linux-shield.jpg",
    "cves": [],
    "first_seen": "2026-11-24T18:01:18.816744+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "7aba46b2e297",
@@ -4103,6 +3935,28 @@
    "instructions_checked": true
   },
   {
+   "id": "6c270107d398",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Rackspace shuts down Spot cloud platform after security breach",
+   "link": "https://www.bleepingcomputer.com/news/security/rackspace-shuts-down-spot-cloud-platform-after-security-breach/",
+   "published": "2026-11-24T21:37:30+00:00",
+   "summary": "Rackspace is shutting down its Rackspace Spot cloud platform after a security breach allowed hackers to access customer Kubernetes clusters and secrets, giving customers until December 8 to migrate their services and download their data.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2022/12/09/Rackspace.jpg",
+   "cves": [],
+   "first_seen": "2026-11-25T02:18:38.088160+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Customers have also been advised to review access logs dating back to November 16 and search for suspicious Kubernetes objects associated with the attack, including:",
+    "Rackspace is shutting down its Rackspace Spot cloud platform after a security breach allowed hackers to access customer Kubernetes clusters and secrets, giving customers until December 8 to migrate their services and download their data.",
+    "Customers have been instructed to retrieve their data and migrate their workloads to different platforms before the deadline.",
+    "Rackspace has not indicated whether it will reconsider the shutdown decision or offer customers additional time to migrate their workloads."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "9f2af01a2aa9",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4137,28 +3991,6 @@
    "first_seen": "2026-11-24T18:01:18.816744+00:00",
    "image_checked": true,
    "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "a2076d4177b9",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Researchers hijack Hugging Face account for popular Kokoro AI model",
-   "link": "https://www.bleepingcomputer.com/news/security/researchers-hijack-hugging-face-account-for-popular-kokoro-ai-model/",
-   "published": "2026-11-17T18:21:24+00:00",
-   "summary": "A Lack of ownership verification on the Hugging Face platform allowed researchers to take control of Kokoro, a text-to-speech model used in projects from Google, NVIDIA, AMD, Intel, and Amazon Web Services.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/07/20/Hugging-Face-headpic.jpg",
-   "cves": [],
-   "first_seen": "2026-11-17T18:34:19.414923+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Although its developer, Hexgrad, has not pushed an update since April 2025, the project continues to be popular, with nearly 13 million monthly downloads on Hugging Face.",
-    "Over the past weekend, the researchers registered the “hexgrad.com” domain listed on Kokoro’s public DONATE.md file and used it to perform a password reset on the publisher’s account.",
-    "The researcher underlines that an update would still carry all the hallmarks of a legitimate release, as tests from another account showed that Hugging Face would not flag anything as suspicious.",
-    "Hertz says even non-hijacked accounts could pose a risk, as anyone can curate an ostensibly legitimate image for a period of time, then push a malicious update at some point."
-   ],
    "instructions_checked": true
   },
   {
@@ -4265,28 +4097,6 @@
    "instructions_checked": true
   },
   {
-   "id": "6b32b3a76586",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Tor releases emergency update amid ongoing DDoS attack",
-   "link": "https://www.bleepingcomputer.com/news/security/tor-releases-emergency-update-amid-ongoing-ddos-attack/",
-   "published": "2026-11-17T18:04:15+00:00",
-   "summary": "The Tor Project has released a security update for its network relay software to increase defenses against an ongoing distributed denial-of-service attack that it says has overwhelmed relays and affected most operators.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2020/08/19/Tor-headpic.jpg",
-   "cves": [],
-   "first_seen": "2026-11-17T18:34:19.414923+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Relay operators are urged to upgrade to version 0.4.9.17 as soon as possible.",
-    "Microsoft releases Windows 10 KB5126657 extended security update",
-    "The Tor Project has released a security update for its network relay software to increase defenses against an ongoing distributed denial-of-service attack that it says has overwhelmed relays and affected most operators.",
-    "The project says this update includes a security fix to improve relay defenses against denial-of-service attacks."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "1977168802e4",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4306,6 +4116,23 @@
     "However, if those same security questions are used at other sites, they should be rotated to new questions and answers.",
     "It is also recommended to change passwords on other services where the same information was used."
    ],
+   "instructions_checked": true
+  },
+  {
+   "id": "5f76ac4f7ca9",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Turnitin discloses cyberattack affecting customer-facing systems",
+   "link": "https://www.bleepingcomputer.com/news/security/turnitin-discloses-cyberattack-affecting-customer-facing-systems/",
+   "published": "2026-11-24T18:59:52+00:00",
+   "summary": "Turnitin disclosed via a statement from its CEO, Chris Caren, that it recently detected unauthorized activity involving certain customer-facing systems.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/24/turnitin.jpg",
+   "cves": [],
+   "first_seen": "2026-11-25T02:18:38.088160+00:00",
+   "image_checked": true,
+   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -4438,6 +4265,24 @@
    "instructions_checked": true
   },
   {
+   "id": "a0ae3cb09c40",
+   "source": "cisa",
+   "source_name": "CISA Cybersecurity Advisories",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
+   "link": "https://www.cisa.gov/news-events/alerts/2026/11/24/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+   "published": "2026-11-24T12:00:00+00:00",
+   "summary": "CISA has added three new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-131914 Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability CVE-2026-132165 Drupal Core Remote Code Execution Vulnerability CVE-2026-132224 Optimizely Web…",
+   "image": null,
+   "cves": [
+    "CVE-2026-131914",
+    "CVE-2026-132165",
+    "CVE-2026-132224"
+   ],
+   "first_seen": "2026-11-25T02:18:38.088160+00:00"
+  },
+  {
    "id": "7f8f33872341",
    "source": "cisa",
    "source_name": "CISA Cybersecurity Advisories",
@@ -4525,7 +4370,14 @@
    "cves": [
     "CVE-2026-127280"
    ],
-   "first_seen": "2026-11-24T18:01:18.816744+00:00"
+   "first_seen": "2026-11-24T18:01:18.816744+00:00",
+   "instructions": [
+    "Mitigation If you cannot update to the latest software or firmware version right away, apply the following compensating controls to reduce risk until the update can be performed.",
+    "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies .",
+    "Organizations should prioritize applying the vendor-provided update as soon as it can be safely tested and deployed within the operational environment.",
+    "These measures are temporary and do not replace the update, which remains the primary and recommended remediation."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "e1d950e00d28",
@@ -4541,7 +4393,14 @@
    "cves": [
     "CVE-2026-119055"
    ],
-   "first_seen": "2026-11-24T18:01:18.816744+00:00"
+   "first_seen": "2026-11-24T18:01:18.816744+00:00",
+   "instructions": [
+    "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies .",
+    "This ICSA is a verbatim republication of Schneider Electric CPCERT SEVD-2026-314-01 from a direct conversion of the vendor's Common Security Advisory Framework (CSAF) advisory.",
+    "CISA is not responsible for the editorial or technical accuracy of republished advisories and provides no warranties of any kind regarding any information contained within this advisory.",
+    "Failure to apply the remediations provided below may risk memory corruption, heap-based buffer overflow, and/or stack-based buffer overflow, which could result in local attackers being able to exploit these issues to potentially execute arbitrary code."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "153407077dbd",
@@ -4576,38 +4435,6 @@
    "instructions_checked": true
   },
   {
-   "id": "e7c273fee4ff",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "Cursor Traces Malicious Claude Code Extensions to Third-Party Breach",
-   "link": "https://www.darkreading.com/application-security/cursor-malicious-claude-code-extension-third-party-breach",
-   "published": "2026-11-17T18:38:37+00:00",
-   "summary": "A compromised key issued to AI infrastructure provider Fireworks was used by threat actors to access Cursor data and credentials.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt0ac2db6d8dd7d25d/6afb79babb3cf32830e383ff/cursor_Erman_Gunes_shutterstock.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-17T19:47:33.098459+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "46a6b0b05c4e",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "Optimizely Malware Attacks Highlight Third-Party Vendor Risks",
-   "link": "https://www.darkreading.com/cyber-risk/optimizely-malware-attacks-third-party-vendor-risks",
-   "published": "2026-11-17T22:34:22+00:00",
-   "summary": "At least 178 organizations, including several major brands, unwittingly exposed website visitors to hydra-like malware via a third-party platform.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt0c54a284942546cd/6afccec91ecf5c62546c1c34/hydra_Daniel_Eskridge_shutterstock.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-17T22:55:23.196013+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "5e65458c080e",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -4620,6 +4447,22 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltdca0689384b67fb8/6aff731dfef3359545395d0a/old-ship-steering-wheel-DmitriiElj-shutterstock.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-20T01:13:40.105404+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "6a6218931c47",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "Satellites Have a Ground-Level Cybersecurity Problem",
+   "link": "https://www.darkreading.com/cyber-risk/satellites-ground-level-cybersecurity-problem",
+   "published": "2026-11-24T22:05:34+00:00",
+   "summary": "Weaknesses in the ground-based infrastructure supporting satellite services are becoming more consequential as a new space race gathers pace.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt6866e786d2fd0c3c/6b05fc1bdcebc97b86eb1502/satellite_Y_alax_shutterstock.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-25T02:18:38.088160+00:00",
    "instructions": [],
    "instructions_checked": true
   },
@@ -4865,18 +4708,18 @@
    "instructions_checked": true
   },
   {
-   "id": "ba36bcaaae49",
+   "id": "7f8f5938b05b",
    "source": "darkreading",
    "source_name": "Dark Reading",
    "official": false,
    "source_type": "news",
-   "title": "'TheMailer' Phishing Kit Puts AI in the Driver's Seat",
-   "link": "https://www.darkreading.com/perimeter/themailer-phishing-kit-ai-drivers-seat",
-   "published": "2026-11-17T20:58:13+00:00",
-   "summary": "The commercial kit uses attacker-supplied AI models to personalize lures, evade spam filters, and scale campaigns to tens of thousands of targets.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt6f7643977746699c/6afcac2049ae9b70b9695c91/red_mailbox_white_brick_wall-Liudmila_Chernetska-GettyImages-1477282383.jpg?width=720&quality=80&disable=upscale",
+   "title": "Webworm APT Slithers Into Networks With Customized SoftEther VPN",
+   "link": "https://www.darkreading.com/perimeter/webworm-slithers-customized-softether-vpn",
+   "published": "2026-11-24T21:48:06+00:00",
+   "summary": "The China-aligned espionage group rebuilt the open source VPN software from source, stripping out the artifacts that would normally expose it to defenders.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt90d6b1405473fe5b/6b05fadd5bf26ea3ca9d2638/snake_computer-the-lightwriter-GettyImages-530757188.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
-   "first_seen": "2026-11-17T21:54:48.603180+00:00",
+   "first_seen": "2026-11-25T02:18:38.088160+00:00",
    "instructions": [],
    "instructions_checked": true
   },
@@ -4909,6 +4752,22 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt850556f866500627/654a5a8e05eb4d040a046894/325351_DR23_Graphics_General_Large_Text_v1.png?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-18T20:45:42.433362+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "3b8d0a7e0d03",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "'God Mode' Flaws Could Wreak Border-Control Havoc",
+   "link": "https://www.darkreading.com/vulnerabilities-threats/god-mode-flaws-wreak-border-control-havoc",
+   "published": "2026-11-24T21:36:11+00:00",
+   "summary": "Attackers could have disrupted traveler entry into Nigeria, Ethiopia, Zambia, Sri Lanka, Fiji, and Ghana via several vulnerabilities in their online visa and immigration systems.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltf04ed1ecab1b2c42/66cc9d45781c434a1b20ebb3/airport1800_RoadPix_alamy.jpg?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-25T02:18:38.088160+00:00",
    "instructions": [],
    "instructions_checked": true
   },
@@ -4977,28 +4836,6 @@
    "instructions": [
     "Google's report on the incident provides a number of recommendations, including:",
     "Realizing their mistake in allowing the hackers access to the Google Workspace, the victim ensured that passwords and sessions were reset, but overlooked revoking rogue passkeys - which meant that the Cloud Relic hackers were able to continue to access sensitive information for months."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "0c7617c3ded4",
-   "source": "msblog",
-   "source_name": "Microsoft Security Blog",
-   "official": false,
-   "source_type": "vendor_blog",
-   "title": "Security for the agentic era, powered by Microsoft Perception",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/17/security-for-the-agentic-era-powered-by-microsoft-perception/",
-   "published": "2026-11-17T18:14:00+00:00",
-   "summary": "A year ago, finding a serious, exploitable vulnerability was slow and expensive work done by elite security researchers. That’s no longer true. Over the past 12 months, frontier AI models have become remarkably good at discovering and exploiting software vulnerabilities, and similar levels of capability are quickly…",
-   "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/11/Security-Ignite_link-prev.jpg",
-   "cves": [],
-   "first_seen": "2026-11-17T19:47:33.098459+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Vulnerability shielding , available in preview , helps protect vulnerable assets from exploitation by applying targeted, temporary protection to buy defenders time before they can apply a permanent patch.",
-    "To mitigate this risk we must discover agents, onboard them to management, secure and contain them, and do it continuously—even as their behavior and context change.",
-    "We believe every organization should be able to see what its AI accesses and does, independently verify those actions, and control what it is permitted to do, whatever model or provider it runs on.",
-    "The more agency we give AI, the more transparency we should expect in return."
    ],
    "instructions_checked": true
   },
@@ -5105,7 +4942,13 @@
    "summary": "This essay originally appeared as part of a round table in The Free Press entitled “Is America’s Infrastructure Under Attack?” Microsoft, the FAA, banks, United Airlines, the NSA—it’s been a really bad week in cyberspace. But, amazing as it might seem, these are not related. As far as we know, they’re not the result…",
    "image": null,
    "cves": [],
-   "first_seen": "2026-11-24T18:01:18.816744+00:00"
+   "first_seen": "2026-11-24T18:01:18.816744+00:00",
+   "instructions": [
+    "The more we allow unregulated capitalism to privatize gains while socializing risks, the more we should expect these sorts of failures.",
+    "The big focus is on “how do I pay less taxes”, when it should be on “what do we need/want and how do we pay for it”.",
+    "However it should be noted it’s still below what it was during January."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "f3a43b39549f",
@@ -5120,27 +4963,6 @@
    "image": null,
    "cves": [],
    "first_seen": "2026-11-24T18:01:18.816744+00:00"
-  },
-  {
-   "id": "b420612fe6cb",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "AI Framework Autonomously Weaponized Flaws in Real Attacks, Google Says",
-   "link": "https://www.securityweek.com/ai-framework-autonomously-weaponized-flaws-in-real-attacks-google-says/",
-   "published": "2026-11-17T18:16:17+00:00",
-   "summary": "Threat actors are deploying multi-agent offensive frameworks to increase the velocity of multi-stage intrusions. The post AI Framework Autonomously Weaponized Flaws in Real Attacks, Google Says appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2025/07/AI-Chatbot-GenAI-artificial-intelligence.jpg",
-   "cves": [],
-   "first_seen": "2026-11-17T18:34:19.414923+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Defenders must do two things at once: nail the cybersecurity fundamentals today and accelerate the shift toward automated defenses that can detect and respond at machine speed,” Hartman added.",
-    "The Jieyou phishing service, active since March 2026, has a model-agnostic chatbot that allows clients to configure phishing panels and modify templates.",
-    "Water utilities, hospitals, and regional electric utilities that struggle to patch on a monthly cycle can’t win that race manually."
-   ],
-   "instructions_checked": true
   },
   {
    "id": "17e792aba6bb",
@@ -5178,6 +5000,26 @@
    "instructions": [
     "Scroll to continue reading. “Amazon Threat Intelligence assesses with high confidence that it was a zero-day based on the absence of any corresponding fix, issue, advisory, or prior mention in vulnerability databases for the affected open-source project,” the company said.",
     "Java4Shell Exploitation Attempts Begin as Vendors Rush Out Advisories"
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "ae79bb5847a5",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "An Unclassified CIA System Was Breached in a Cyberattack, AP Source Says",
+   "link": "https://www.securityweek.com/an-unclassified-cia-system-was-breached-in-a-cyberattack-ap-source-says/",
+   "published": "2026-11-24T22:41:58+00:00",
+   "summary": "It was not clear what specific information was compromised or who was responsible. The post An Unclassified CIA System Was Breached in a Cyberattack, AP Source Says appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/11/CIA_Hacked.jpg",
+   "cves": [],
+   "first_seen": "2026-11-25T02:18:38.088160+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Clayton said the outages largely stem from the rush to patch and upgrade systems to stay ahead of hackers who are now empowered with sophisticated artificial intelligence tools to attack at an unprecedented scale.",
+    "Trump Administration Moves to Block China From Indirect Access to American AI Technology"
    ],
    "instructions_checked": true
   },
@@ -5294,28 +5136,6 @@
     "As this threat has widened, so have CISO responsibilities also widened – CISOs must now have increased business understanding to protect the business.",
     "So, today, can a CISO be purely a businessperson without a background of technical expertise? “I think you can,” she says, “although you must at least have some understanding of how technology works.",
     "If you’re in a tech company, you should understand how technology works because you have to translate across different stakeholder groups."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "19347567d0aa",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Classified Communications Network at the National Security Agency Goes Down, Defense Official Says",
-   "link": "https://www.securityweek.com/classified-communications-network-at-the-national-security-agency-goes-down-defense-official-says/",
-   "published": "2026-11-18T02:15:07+00:00",
-   "summary": "The problem disrupted the operations of NSANet, a classified internal network used by employees of the agency. The post Classified Communications Network at the National Security Agency Goes Down, Defense Official Says appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2023/09/NSA-Cyber-AI.jpg",
-   "cves": [],
-   "first_seen": "2026-11-18T02:27:33.853995+00:00",
-   "image_checked": true,
-   "instructions": [
-    "On Tuesday , Apple acknowledged on its system status page that its Apple Music, App Store and AppleCare services suffered full outages after an internal update.",
-    "It is time for an upgrade across our digital infrastructure.",
-    "And as you patch and upgrade your systems — taking them down and bringing them back up — there are things like this that happen.” Sen.",
-    "Trump Administration Moves to Block China From Indirect Access to American AI Technology"
    ],
    "instructions_checked": true
   },
@@ -5759,7 +5579,13 @@
    "summary": "OpenAI and Cisco’s Shirudo uses AI-generated shields to block Linux exploits while patches are prepared, but it’s not yet production-ready. The post OpenAI, Cisco Unveil Open Source Tool to Shield Unpatched Linux Systems appeared first on SecurityWeek.",
    "image": null,
    "cves": [],
-   "first_seen": "2026-11-24T18:01:18.816744+00:00"
+   "first_seen": "2026-11-24T18:01:18.816744+00:00",
+   "instructions": [
+    "Tetragon was open-sourced in 2022, and it also powers Cisco’s Live Protect vulnerability mitigation technology.",
+    "It needs to be tested, packaged and automated before anyone should trust it in production,” Shachar added.",
+    "OpenAI and Cisco hope that down the line Shirudo shields can be distributed alongside vulnerability disclosures to give organizations temporary protection until they can install permanent patches."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "0dd01d7b3913",
