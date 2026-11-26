@@ -56,22 +56,6 @@
    "instructions_checked": true
   },
   {
-   "id": "545852a9591f",
-   "source": "ars",
-   "source_name": "Ars Technica Security",
-   "official": false,
-   "source_type": "news",
-   "title": "Man hired by Russia spied on Silicon Valley tech and defense company, feds say",
-   "link": "https://arstechnica.com/security/2026/11/man-charged-with-spying-on-silicon-valley-tech-and-defense-company-for-russia/",
-   "published": "2026-11-19T20:29:46+00:00",
-   "summary": "A Russian national has been indicted on suspicions he was a Russian spy who stalked and surveilled employees of a Silicon Valley company that was assisting Ukraine in its ongoing war with its eastern neighbor. Igor D’iu, 25, allegedly photographed the employees and their computer screens as they worked at a coffee…",
-   "image": "https://cdn.arstechnica.net/wp-content/uploads/2023/05/getty-digital-gavel-1152x648.jpg",
-   "cves": [],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "731521743606",
    "source": "borncity",
    "source_name": "Born's IT and Windows Blog",
@@ -399,6 +383,28 @@
    "instructions_checked": true
   },
   {
+   "id": "12b494d43825",
+   "source": "borncity",
+   "source_name": "Born's IT and Windows Blog",
+   "official": false,
+   "source_type": "news",
+   "title": "Windows Server 2025: Out-of-Band Hotpatch Update KB5138318 (25.11.2026)",
+   "link": "https://borncity.com/blog/2026/11/26/windows-server-2025-out-of-band-hotpatch-update-kb5138318-25-11-2026/",
+   "published": "2026-11-26T11:26:25+00:00",
+   "summary": "Zum 25. November 2026 hat Microsoft das Out-of-Band Hotpatch Update KB5138318 für Windows Server 2025 freigegeben. Mit dem außerplanmäßigen Update soll das Problem, welches durch das Windows-Sicherheits-Hotpatch-Update KB5131077 bei Router-Ankündigungen in Form des KERNEL_SECURITY_CHECK_FAILURE-Fehlers (0x139)…",
+   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Windows-klein.jpg",
+   "cves": [],
+   "first_seen": "2026-11-26T22:14:58.984466+00:00",
+   "image_checked": true,
+   "instructions": [
+    "November 2026 hat Microsoft das Out-of-Band Hotpatch Update KB5138318 für Windows Server 2025 freigegeben.",
+    "Mit dem außerplanmäßigen Update soll das Problem, welches durch das Windows-Sicherheits-Hotpatch-Update KB5131077 bei Router-Ankündigungen in Form des KERNEL_SECURITY_CHECK_FAILURE-Fehlers (0x139) verursacht worden ist, behoben werden.",
+    "Microsoft hat das Out-of-Band Hotpatch Update KB5138318 für Windows Server 2025 in diesem Support-Beitrag vom 25.",
+    "Es wird die nachfolgend aufgeführte Korrektur durch das OOB-Hotpatch-Update vorgenommen."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "609e7edaa3d2",
    "source": "borncity",
    "source_name": "Born's IT and Windows Blog",
@@ -419,32 +425,6 @@
     "Nun gibt es Hinweise, dass Microsoft per Windows Update einen Intel-Treiber für NUC-Kits mit Komponenten ausliefert, die WinRing0-Treiber verwenden.",
     "Umso größer war die Verwunderung, als genau dieses Treiberpaket für den Intel NUC Kit eine Suche nach Treiber-Updates über die Windows Update Agent API unter der Bezeichnung \"Intel Corporation – Extension – 1.0.0.38\" per Windows Update angeboten wurde.",
     "Laut deskmodder.de lieferte auch eine explizite Onlineabfrage des öffentlichen Windows-Update-Dienstes das gleiche Ergebnis."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "fd0ccfc83548",
-   "source": "google-threat-intel",
-   "source_name": "Google Threat Intelligence",
-   "official": false,
-   "source_type": "vendor_blog",
-   "title": "ARMORY CASTLE Exploits vSphere",
-   "link": "https://cloud.google.com/blog/topics/threat-intelligence/armory-castle-exploits-vsphere/",
-   "published": "2026-11-19T14:00:00+00:00",
-   "summary": "Written by: Jayson Frost, Bryce Greathouse, Dhanesh Kizhakkinan, John Palmisano, Steve Rasch, Daniel Sislo, John Wolfram Introduction On Oct. 15, 2026, Mandiant and Google Threat Intelligence Group (GTIG) published a blog post detailing recent activity in which the suspected PRC-nexus threat actor ARMORY CASTLE…",
-   "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/Figure_1_ARMORY_CASTLE_lateral_movement_an.max-1000x1000.png",
-   "cves": [
-    "CVE-2025-22457",
-    "CVE-2026-102764",
-    "CVE-2026-123890",
-    "CVE-2026-59309"
-   ],
-   "first_seen": "2026-11-19T19:04:24.147057+00:00",
-   "instructions": [
-    "We strongly recommend that affected organizations immediately apply the security patches provided by Broadcom to remediate the vulnerability.",
-    "We are publishing this analysis, along with mitigation and hardening guidance, to support defenders in detecting this threat.",
-    "Organizations must adopt a proactive, Zero Trust approach to infrastructure hardening to defend against current and undiscovered zero-day vulnerabilities.",
-    "For a comprehensive framework on securing virtualization platforms against advanced persistent threats, organizations are highly advised to consult the Mandiant guide vSphere and BRICKSTORM Malware: A Defender's Guide ."
    ],
    "instructions_checked": true
   },
@@ -523,25 +503,6 @@
    "instructions_checked": true
   },
   {
-   "id": "9c7f489322a3",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-105584 Windows Inventory Backup Information Disclosure Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105584",
-   "published": "2026-11-19T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-105584"
-   ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "faed77650a4f",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -580,44 +541,6 @@
    "instructions_checked": true
   },
   {
-   "id": "f24b40bd501c",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-113817 Windows Devices Human Interface Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-113817",
-   "published": "2026-11-19T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-113817"
-   ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "6b511f53eef7",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-118302 Microsoft Office Excel Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118302",
-   "published": "2026-11-19T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-118302"
-   ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "d92e9c308417",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -637,25 +560,6 @@
    "instructions_checked": true
   },
   {
-   "id": "3f05595e8ffc",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-121669 PowerShell Information Disclosure Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-121669",
-   "published": "2026-11-19T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-121669"
-   ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "c5ae608dfb71",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -670,82 +574,6 @@
     "CVE-2026-69291"
    ],
    "first_seen": "2026-11-23T22:14:53.218245+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "c991a1b77fe7",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-69370 Visual Studio Code Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69370",
-   "published": "2026-11-19T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-69370"
-   ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "15ca7dbd84e9",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-69918 Windows Core Messaging Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69918",
-   "published": "2026-11-19T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-69918"
-   ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "308133db32ac",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-70007 .NET Framework Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70007",
-   "published": "2026-11-19T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-70007"
-   ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "9f56e73c0cde",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-70174 .NET Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70174",
-   "published": "2026-11-19T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-70174"
-   ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -782,25 +610,6 @@
    "image": null,
    "cves": [
     "CVE-2026-70197"
-   ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "53c40b5af5cd",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-70223 Windows Console Driver Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70223",
-   "published": "2026-11-19T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-70223"
    ],
    "first_seen": "2026-11-20T01:13:40.105404+00:00",
    "image_checked": true,
@@ -846,177 +655,6 @@
    "instructions_checked": true
   },
   {
-   "id": "b39326c71105",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-83722 Microsoft Local Security Authority (LSA) Server Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83722",
-   "published": "2026-11-19T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-83722"
-   ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "19b732758cee",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-83753 Windows Camera Frame Server Monitor Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83753",
-   "published": "2026-11-19T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-83753"
-   ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "d2fc2acba31d",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-83760 Microsoft Bluetooth Driver Information Disclosure Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83760",
-   "published": "2026-11-19T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-83760"
-   ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "69863ac92790",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-84015 Remote Access Point-to-Point Protocol (PPP) EAP-TLS Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-84015",
-   "published": "2026-11-19T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-84015"
-   ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "b299b25eb9a0",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-84016 Windows EAPHost Service Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-84016",
-   "published": "2026-11-19T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-84016"
-   ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "87fc79b83ef7",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-84020 Windows Routing and Remote Access Service (RRAS) Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-84020",
-   "published": "2026-11-19T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-84020"
-   ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "d630bd7fb0e4",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-85794 Windows Routing and Remote Access Service (RRAS) Information Disclosure Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85794",
-   "published": "2026-11-19T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-85794"
-   ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "7d254293effc",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-85846 Web Account Manager Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85846",
-   "published": "2026-11-19T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-85846"
-   ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "7db79033d356",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-85910 Windows StateRepository API Information Disclosure Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85910",
-   "published": "2026-11-19T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-85910"
-   ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
    "id": "21bc710a0cfd",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -1034,139 +672,6 @@
    "instructions": [],
    "instructions_checked": true,
    "image_checked": true
-  },
-  {
-   "id": "31815a8068bf",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-87698 Windows Remote Access Service Infrastructure Information Disclosure Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87698",
-   "published": "2026-11-19T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-87698"
-   ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "62e2b762d2a4",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-88130 Role: DNS Server Denial of Service Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88130",
-   "published": "2026-11-19T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-88130"
-   ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "251acc6e20ce",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-88151 Microsoft Office Excel Information Disclosure Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88151",
-   "published": "2026-11-19T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-88151"
-   ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "d290b129ac4e",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-88207 Microsoft Office PowerPoint Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88207",
-   "published": "2026-11-19T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-88207"
-   ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "d59df8950f3e",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-95874 Xbox Gaming Services Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95874",
-   "published": "2026-11-19T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-95874"
-   ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "7dcb2d1fdf6f",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-95989 vhdmp.sys Elevation of Privilege Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95989",
-   "published": "2026-11-19T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-95989"
-   ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "fd25b2dc30d6",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-96082 Windows Kerberos Denial of Service Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96082",
-   "published": "2026-11-19T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-96082"
-   ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
   },
   {
    "id": "8f4a9c3b9ca9",
@@ -1205,82 +710,6 @@
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
-  },
-  {
-   "id": "ee4270815294",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-97749 Microsoft Office Outlook Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97749",
-   "published": "2026-11-19T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-97749"
-   ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "fca0dca96ac6",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-97761 Microsoft Office Excel Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97761",
-   "published": "2026-11-19T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-97761"
-   ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "34dcee7234d7",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-97767 Microsoft Office Excel Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97767",
-   "published": "2026-11-19T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-97767"
-   ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "fe3e82d658d4",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CVE-2026-97780 Microsoft Office Excel Remote Code Execution Vulnerability",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97780",
-   "published": "2026-11-19T16:00:00+00:00",
-   "summary": "Updated an acknowledgement. This is an informational change only.",
-   "image": null,
-   "cves": [
-    "CVE-2026-97780"
-   ],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00",
-   "instructions": [],
-   "instructions_checked": true,
-   "image_checked": true
   },
   {
    "id": "98bf0c432201",
@@ -1493,27 +922,6 @@
    "instructions_checked": true
   },
   {
-   "id": "7008c485fa38",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Critical VMware vCenter Zero-Day Flaw Lets Network Attackers Bypass Authentication",
-   "link": "https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html",
-   "published": "2026-11-19T15:11:06+00:00",
-   "summary": "A critical flaw in VMware vCenter lets an attacker with network access bypass authentication and gain unauthorized access to the system, Broadcom, which owns VMware, said in an advisory published today. Fixed versions are out for all supported branches, and the company lists no workaround. vCenter is the central…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ5IDT81eb7KUE0LzwGJAzuAETft3pD5sOz2dJxnQin_-zR_hH8tDKFTsLNBNoe35KM4DhFJjP7K-0YwaMoVwz7xUhTiP2vKeNqmN3kenPgwflENu35qx-QlFj-rDFdyXx1HMz6ykegw6nlnPDXppYbotjoRj-ammlyUZ-Cr0JYLS5iyZXkJXkaIO5UAc/s1600/vmware.jpg",
-   "cves": [],
-   "first_seen": "2026-11-19T19:04:24.147057+00:00",
-   "instructions": [
-    "None of the five flaws in the advisory lets code run on an ESX host from inside a virtual machine, and ESX itself is not affected, the advisory FAQ says.",
-    "There is no fallback for systems that cannot be updated yet: asked whether a workaround exists, the FAQ answers \"Not as listed by Broadcom,\" while noting that mitigations may still exist in an organization's own defenses.",
-    "A critical flaw in VMware vCenter lets an attacker with network access bypass authentication and gain unauthorized access to the system, Broadcom, which owns VMware, said in an advisory published today.",
-    "Fixed versions are out for all supported branches, and the company lists no workaround. vCenter is the central console for managing an organization's ESX hosts and virtual machines."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "d52cc031d711",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1532,27 +940,6 @@
     "Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a critical flaw impacting Drupal to its Known Exploited Vulnerabilities ( KEV ) catalog, requiring federal agencies to apply the fixes by November 27, 2026.",
     "\"Under specific conditions, the attacker can use install.php to attempt to reinstall Drupal on the site.\"",
     "This is made possible because the installer doesn't restrict the file name extension."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "6e1cc48f217d",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Drupal Patches Critical Installer Flaw That Could Give Unauthenticated Attackers Control of Sites",
-   "link": "https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html",
-   "published": "2026-11-19T14:33:06+00:00",
-   "summary": "Under specific conditions, a critical vulnerability in Drupal core can allow an attacker without login credentials to use the built-in installer to attempt to reinstall a site. That can lead to a site takeover or remote code execution, and the project rates the vulnerable configurations as uncommon. Fixed releases for…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4kxIzi1B-GPdS7pbaOI823BHxteL-8FbODKnAoDkr8tGhhjGYuRU9KIEAvOQ6kBZFQPCly3BIhQo6vkjxJy13zL7CxlRXsez_G_otFVaja2H5ObmzNMMilbewaweqqO5Paa0H49yaZdWB09xAIqeo7YLG0uyd05qjdbh2aLIRZd73_jwVGH26YexA3l8/s1600/drupal-flaws.jpg",
-   "cves": [],
-   "first_seen": "2026-11-19T19:04:24.147057+00:00",
-   "instructions": [
-    "No attacks are reported in the security advisory , which rates exploitation as complex and records an existing proof-of-concept exploit.",
-    "The team recommends blocking the installer even after updating.",
-    "Sites that cannot update yet should follow the project's installer guidance , updated yesterday, which describes three options: a deny rule in the web server configuration, an .htaccess rule, or removing the file and keeping it removed with Composer scripts.",
-    "Sites that use the Drupal Steward protection service are already protected from known attack vectors, according to the team, and should still update in case new vectors emerge."
    ],
    "instructions_checked": true
   },
@@ -1996,6 +1383,22 @@
    "instructions_checked": true
   },
   {
+   "id": "f5eee8a53f92",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "North Korea-Linked PolinRider Poisons Over 7,600 GitHub Repositories to Spread Malware",
+   "link": "https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html",
+   "published": "2026-11-26T15:13:41+00:00",
+   "summary": "The threat actors behind the PolinRider campaign have been observed planting a Python loader in GitHub repositories, as evidence emerges that the activity may have started as far back as February 2025. \"The loader hides in a small utils package or in conftest.py,\" SafeDep said in a report published this week. \"When…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgquhPuqGJrSE3xNpn5ZUELVAv-Y7qXqkHgpw7nbVqCay4gyraYO5NNE12rAGzuqk_zhreNwcyzjZf3vZZB5C4teohyuppUP-JlP41PQiLu-hGEFCsqMZO0T6MoaVk-uY818yaTaiJaX-d2O0h0RER22knXbUQc7qnwIcVbleLQrEspMQ8btNa4Q9mFrmue/s1600/gitcat.jpg",
+   "cves": [],
+   "first_seen": "2026-11-26T22:14:58.984466+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "0c4445d4ccaf",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -2047,52 +1450,6 @@
    "first_seen": "2026-11-22T07:11:15.030065+00:00",
    "instructions": [
     "Requests to the DeepSeek V4 Flash 0731 model that reached Phala through the gateway between October 21 at 00:00 UTC and November 8 at 05:35 UTC should be treated as exposed, the report says, and every key, token, password, or other secret within them should be rotated."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "f92f66411a81",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "PHP Fixes 7 Critical Flaws, Including Bugs That Could Allow Remote Code Execution",
-   "link": "https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html",
-   "published": "2026-11-19T15:18:07+00:00",
-   "summary": "The PHP Foundation has released security updates to address multiple critical security flaws that could be exploited to achieve remote code execution on affected deployments, including CVE-2026-115560. The release of the patch follows an advance notice in which the project maintainers alerted users to multiple…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjD2D26Hu7r43uUrdDxmsmmbBe2oMxd-L3_DIVLqAPyDrOnSmdvXfkIq1_lNmWqr49gbrIZ0NeTmA2OYgyWgdUjRf_RTRfflyXn3Vgujkb9tiByOPfej1OqEszpQf2FeozeSqmK5L7aSj28GLwzKmzehIp9zJyeJqgRvbVOW91_pVEMhs3KY9_oXjwf5BE/s1600/php-flawss.jpg",
-   "cves": [
-    "CVE-2026-115560"
-   ],
-   "first_seen": "2026-11-19T19:04:24.147057+00:00",
-   "instructions": [
-    "Users who are using existing 8.2.x, 8.3.x, 8.4.x, and 8.5.x versions of PHP are advised to update to the latest version for optimal protection.",
-    "If immediate patching is not possible, it's advised to turn off session upload progress.",
-    "The release of the patch follows an advance notice in which the project maintainers alerted users to multiple critical vulnerabilities affecting all supported PHP versions under specific conditions, including non-default configuration or uncommon setups.",
-    "Depthfirst, which has codenamed CVE-2026-126714 \" phpAfterShell ,\" has described it as a critical flaw that can enable a remote attacker to run arbitrary code on affected servers."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "648f4746253c",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "phpAfterShell Explained: How Hackers Could Turn a PHP Session Flaw Into Code Execution",
-   "link": "https://thehackernews.com/2026/11/phpaftershell-explained-how-hackers.html",
-   "published": "2026-11-19T16:59:56+00:00",
-   "summary": "PHP's default file-based session storage can be made to return objects an attacker chose, by cutting off a session write at the right moment. When combined with a second weakness, such as a suitable gadget chain in the app, those objects can allow the attacker to run code on the server. Today's PHP releases fix the…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEEFyvreIQgAheXoKRJxLcNgyzFh0rlydmiMfaOBIlmM7zGPc_71mCSG6zWGlpFcRQg59gVUw6NbpmFiNKIcDB3AqVA5eKpjYExWhMu-uBD_W5xu1wiYRtX5MklAgxeuHOBJOI8H9LmaIoXv7IrvFMVHvVhor06lj_ljcIDjIDAPYJ8w01X-BTA51EpOU/s1600/php-after-shell.jpg",
-   "cves": [
-    "CVE-2026-126714"
-   ],
-   "first_seen": "2026-11-19T19:04:24.147057+00:00",
-   "instructions": [
-    "These releases are affected, according to the maintainers' security advisory :",
-    "The official end-of-life mitigation branches for 7.4, 8.0, and 8.1 are not affected, but older unpatched builds of those versions are, according to the company.",
-    "The update is still the recommended fix for sites that keep the files handler.",
-    "Servers updated then remain affected until they install today's releases."
    ],
    "instructions_checked": true
   },
@@ -2196,23 +1553,23 @@
    "instructions_checked": true
   },
   {
-   "id": "53e4a59238e8",
+   "id": "2cde4a64c5de",
    "source": "thehackernews",
    "source_name": "The Hacker News",
    "official": false,
    "source_type": "news",
-   "title": "ThreatsDay: GPT-6.2 Jailbreak Flaws, BubbleLoader PNG Malware, $500M Ransom Demands + 17 More Stories",
-   "link": "https://thehackernews.com/2026/11/threatsday-gpt-62-jailbreak-flaws.html",
-   "published": "2026-11-19T18:47:58+00:00",
-   "summary": "The easiest way to fool someone is to give them something they already expect. A job offer. A message about a service outage. A familiar app. Nothing looks strange at first. And that's the problem. This week's stories show how ordinary things are being used to steal data, spread malware, and get people to hand over…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgTqUIWPjGeycl6xafh8Hx8n2UN3UCUgjhTpxUul68DHi7Y_IoHVYBvjDd5DpFg15sKI767hVEq-8CbGhK69JNusMh0OBBXfVMwJlZiKT2gNnTPAL9DyvTY85SB68WkvBxFCMF2_rNS9rUgYkQN8sKssDMBS8gO6YpMudQohf_JWnPztX_h8TdbSX6Vtfi/s1600/td.jpg",
+   "title": "ThreatsDay: 10M NGINX Services at Risk, 250+ Malicious Extensions, AI Server Hijacking + 17 More Stories",
+   "link": "https://thehackernews.com/2026/11/threatsday-250-rogue-extensions-10m.html",
+   "published": "2026-11-26T19:39:57+00:00",
+   "summary": "A website can look perfectly fine to the person running it. Log out, visit the same page, and things might look different. Something similar is happening with browser extensions, where even the way you find and install one can change what it does. Checking whether software works as expected only tells you so much…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlwb4cL2xbF38yynT-hp8rHaGntsYzuQwL4-68g3SxEW4Taw6_Kl4WFfL4CuNRNXGxO_KS9prZaqk0A6SA6fib3k8j9miTymP8PzABv9OA21eSDsRv1j9NEgbIEVMR7u1C7VmFyFxdBf0Zcj2sckIyHDkRSjm76oFMDd10drUHa1ctv6190vdYHhuVuRPk/s1600/thday.jpg",
    "cves": [],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00",
+   "first_seen": "2026-11-26T22:14:58.984466+00:00",
    "instructions": [
-    "\"Because this is a security release, it is recommended that you update your sites immediately,\" WordPress said .",
-    "Urgent WordPress security update WordPress Releases WordPress 7.1.5 WordPress has released WordPress 7.1.5 with fixes for multiple security issues.",
-    "\"Even if Gemini History is turned off, future chats will still be saved for around 2 months and used to respond to you, process your feedback, and protect Google, its users, and the public, with help from human reviewers,\" Google said in a revised policy update on November 17, 2026.",
-    "The patch is a series of instructions that are applied at the exact address of the host PE’s entry point."
+    "\"What this attack shows is that UPS, power-management, and other infrastructure software should be treated like any other potentially dual-use RMM product; used with network restrictions, unique credentials, vigilant patching, and process-level monitoring,\" Symantec said.",
+    "Temenos has since released updates and guidance to configure the service as private and advised customers to restrict internet access to Spotlight and Fabric administrative and authentication services.",
+    "Something similar is happening with browser extensions, where even the way you find and install one can change what it does.",
+    "With Zscaler, we're building cybersecurity's operating system: a single control plane to deploy AI, control AI, and enable any agentic application to run safely."
    ],
    "instructions_checked": true
   },
@@ -2379,26 +1736,6 @@
    "instructions_checked": true
   },
   {
-   "id": "6ddd580a0952",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "UK court confirms British government served Apple with secret encryption notice",
-   "link": "https://therecord.media/apple-uk-encryption-notice",
-   "published": "2026-11-19T16:15:00+00:00",
-   "summary": "The British government served Apple with a secret legal notice targeting the company’s cryptographic protections for iCloud accounts, a tribunal has confirmed, ending almost two years of official refusal to acknowledge what had been widely reported.",
-   "image": "https://cms.therecord.media/uploads/Apple_logo_253a5988c4.jpg",
-   "cves": [],
-   "first_seen": "2026-11-19T19:04:24.147057+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Experts, including from Britain’s own intelligence community, have argued the government’s attempts to access encrypted messaging platforms should be more transparent.",
-    "Andrew Dwyer, a lecturer in information security at Royal Holloway, University of London, argued that a notice capable of removing an encryption service from millions of users is not like a live operation and should not be shielded in the same way."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "b93540ef2a5b",
    "source": "therecord",
    "source_name": "The Record",
@@ -2513,23 +1850,6 @@
    "instructions_checked": true
   },
   {
-   "id": "c0b211086674",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "CISA nominee LoSapio vows to bolster cyber defenses while denying Jan. 6 Capitol attack",
-   "link": "https://therecord.media/cisa-losapio-nomination-trump",
-   "published": "2026-11-19T17:00:00+00:00",
-   "summary": "President Donald Trump’s pick to lead the Cybersecurity and Infrastructure Security Agency pledged to lawmakers to uncover any “gaps” within the organization while also denying the Capitol came under attack on January 6, 2021.",
-   "image": "https://cms.therecord.media/uploads/Lo_Sapio_hearing_5a83421791.jpg",
-   "cves": [],
-   "first_seen": "2026-11-19T19:04:24.147057+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "8476cf372163",
    "source": "therecord",
    "source_name": "The Record",
@@ -2605,25 +1925,6 @@
    "image_checked": true
   },
   {
-   "id": "4692e0d9ed57",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "DOJ, DHS partner on new unit tackling scams and cybercrime",
-   "link": "https://therecord.media/doj-dhs-partner-on-new-unit-tackling-scams-cybercrime",
-   "published": "2026-11-19T17:25:00+00:00",
-   "summary": "The departments are partnering on the Threat Disruption Center to better triage victim complaints, map cybercriminal networks and provide a direct channel to private sector organizations that work with victims.",
-   "image": "https://cms.therecord.media/uploads/doj_dhs_05d4d760e5.jpg",
-   "cves": [],
-   "first_seen": "2026-11-19T19:04:24.147057+00:00",
-   "image_checked": true,
-   "instructions": [
-    "“The Threat Disruption Center builds on those efforts by providing advanced tools and operational capabilities that enable faster action at greater scale, strengthening the work of every agency on the task force,” Janke said."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "c21f2f095f9f",
    "source": "therecord",
    "source_name": "The Record",
@@ -2640,23 +1941,6 @@
    "instructions": [
     "Robert Troy had previously described the delay as “simply not acceptable.” On Thursday, he said Wellington had brought in outside experts to determine “the exact number of accounts and users affected,” stressing that any information the company released publicly must be “accurate and verified.”"
    ],
-   "instructions_checked": true
-  },
-  {
-   "id": "5f26a746749a",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "European Commission confirms cyberattack, says hackers used AI tool",
-   "link": "https://therecord.media/european-commission-confirms-cyberattack-using-ai",
-   "published": "2026-11-19T15:15:00+00:00",
-   "summary": "POLITICO had reported CERT-EU had identified the attackers’ use of ARTEX, an open-source AI hacking platform that the FBI last week warned was being used both by criminals and state-sponsored groups.",
-   "image": "https://cms.therecord.media/uploads/30917367864_8dc9286dcf_o_dc03237cec.jpg",
-   "cves": [],
-   "first_seen": "2026-11-19T19:04:24.147057+00:00",
-   "image_checked": true,
-   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -2743,23 +2027,6 @@
    "instructions": [],
    "instructions_checked": true,
    "image_checked": true
-  },
-  {
-   "id": "8dfce1d63ad4",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Lawmakers launch new AI safety caucus amid rising security concerns",
-   "link": "https://therecord.media/lawmakers-launch-new-ai-safety-caucus",
-   "published": "2026-11-19T21:19:00+00:00",
-   "summary": "Seven of 26 founding members of the caucus are Republicans, a notable number given the White House’s steadfast opposition to regulating AI.",
-   "image": "https://cms.therecord.media/uploads/Congress_6ac7a14ca7.jpg",
-   "cves": [],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
   },
   {
    "id": "17a805c0d69c",
@@ -2917,25 +2184,6 @@
    "instructions_checked": true
   },
   {
-   "id": "049017878e9b",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Ukraine exposes ransomware network extorting US oil, healthcare firms",
-   "link": "https://therecord.media/ukraine-ransomware-arrests-cyber",
-   "published": "2026-11-19T13:30:00+00:00",
-   "summary": "Ukrainian authorities arrested four suspected members of an international ransomware network accused of extorting more than $40 million from companies around the world.",
-   "image": "https://cms.therecord.media/uploads/Ukraine_prosecutor_office_c19ff7d532.jpg",
-   "cves": [],
-   "first_seen": "2026-11-19T19:04:24.147057+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Posing as IT support employees, the attackers persuaded workers to disclose their login credentials or install remote access software, allowing them to enter corporate systems."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "f0b8696c25c4",
    "source": "therecord",
    "source_name": "The Record",
@@ -2970,6 +2218,26 @@
    "instructions_checked": true
   },
   {
+   "id": "8cc63523ba5c",
+   "source": "grahamcluley",
+   "source_name": "Graham Cluley",
+   "official": false,
+   "source_type": "news",
+   "title": "New York bans AI chatbot toys – but not in time for Christmas",
+   "link": "https://www.bitdefender.com/en-us/blog/hotforsecurity/new-york-bans-ai-chatbot-toys",
+   "published": "2026-11-26T15:28:04+00:00",
+   "summary": "Talking teddies that describe massacres and help kids break bedtime rules? New York has had enough, and has banned AI chatbot toys for five years. Just not in time for Christmas. Read more in my article on the Hot for Security blog.",
+   "image": "https://blogapp.bitdefender.com/hotforsecurity/content/images/2026/11/ai-cat-toy.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-26T22:14:58.984466+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Hochul says that parents \"should not have to worry that dangerous chatbots disguised as toys could expose their children to inappropriate conversations, manipulate their feelings or put their privacy at risk.\"",
+    "Common Sense Media advises avoiding AI toys entirely for children aged five and under, and to exercise caution when it comes to older kids."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "bd462ecd28ca",
    "source": "grahamcluley",
    "source_name": "Graham Cluley",
@@ -2988,6 +2256,45 @@
    ],
    "instructions_checked": true,
    "image_checked": true
+  },
+  {
+   "id": "42756c94ced7",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Fake paid expert interviews impersonate brands to steal Google logins",
+   "link": "https://www.bleepingcomputer.com/news/apple/fake-paid-expert-interviews-impersonate-brands-to-steal-google-logins/",
+   "published": "2026-11-26T17:15:27+00:00",
+   "summary": "An ongoing phishing campaign dubbed \"GoodGuys\" impersonates major brands, including Google, Nvidia, Accenture, and SpaceX, to steal corporate Google and Okta credentials using fake invitations to paid expert interviews and webinars.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/06/Phishing.jpg",
+   "cves": [],
+   "first_seen": "2026-11-26T22:14:58.984466+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "e0bf93ab8a32",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "OpenAI warns GPT-6.2 Astra will hit usage limits 40% faster because it fixed a bug",
+   "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-warns-gpt-62-astra-will-hit-usage-limits-40-percent-faster-because-it-fixed-a-bug/",
+   "published": "2026-11-26T21:06:22+00:00",
+   "summary": "OpenAI confirmed that it fixed a 'bug' that incorrectly discounted GPT-6.2 usage, which means you'll now hit GPT usage limits 40% faster than before.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2023/04/11/OpenAI-headpic.jpg",
+   "cves": [],
+   "first_seen": "2026-11-26T22:14:58.984466+00:00",
+   "image_checked": true,
+   "instructions": [
+    "\"As a small token to apologize for the mistake, we'll be adding one banked reset for everyone on Go, Plus, Pro, and Business,\" Sottiaux said.",
+    "I can confirm that a new reset has been added to ChatGPT, and it expires a month later.",
+    "So, if you go to ChatGPT Settings > Usage and click Reset, you can restore your exhausted usage limits.",
+    "As much as I appreciate OpenAI giving its users a free usage reset, it's important to understand that this isn't equivalent to getting 40% less usage."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "00f16364aca5",
@@ -3183,26 +2490,6 @@
    "instructions_checked": true
   },
   {
-   "id": "3797ecb529a5",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "ASUS warns of critical hard-coded key flaw in Control Center Express",
-   "link": "https://www.bleepingcomputer.com/news/security/asus-warns-of-critical-hard-coded-key-flaw-in-control-center-express/",
-   "published": "2026-11-19T21:15:59+00:00",
-   "summary": "ASUS released Control Center Express v1.7.29 to fix three critical vulnerabilities that could let remote attackers gain administrative control of the management console and the devices it manages.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2025/11/26/Asus.jpg",
-   "cves": [],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Impacted users are advised to install v1.7.29, then update the agents on managed devices through Select Function → Client Agent Updater , and verify their versions.",
-    "The Armoury Crate update addressed CVE-2026-112115 , a high-severity privilege escalation flaw."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "4b6021947b3e",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -3248,11 +2535,12 @@
    "link": "https://www.bleepingcomputer.com/news/security/call-center-operator-gets-8-years-for-helping-scam-30-000-americans/",
    "published": "2026-11-23T12:02:23+00:00",
    "summary": "A Peruvian call center operator was sentenced to eight years in prison for helping steal millions of dollars from over 30,000 Spanish-speaking US residents in a years-long government-impersonation fraud scheme.",
-   "image": null,
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/23/Hacker_scammer.jpg",
    "cves": [],
    "first_seen": "2026-11-23T22:14:53.218245+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "5d81d8091009",
@@ -3315,50 +2603,6 @@
    "instructions_checked": true
   },
   {
-   "id": "7cc3b724b66a",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Critical NGINX ‘NGINX2Root’ bugs let attackers hijack servers",
-   "link": "https://www.bleepingcomputer.com/news/security/critical-nginx-nginx2root-bugs-let-attackers-hijack-servers/",
-   "published": "2026-11-19T14:57:24+00:00",
-   "summary": "Two critical NGINX vulnerabilities dubbed \"nginx2root\" allow unauthenticated attackers to execute code remotely on vulnerable web servers, with researchers demonstrating how the flaws can be chained with a Linux kernel bug to gain root access.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/19/nginx.jpg",
-   "cves": [],
-   "first_seen": "2026-11-19T19:04:24.147057+00:00",
-   "image_checked": true,
-   "instructions": [
-    "NGINX Plus users should update to versions 37.0.8.1 or 37.3.0.1.",
-    "For system administrators, it is recommended to upgrade immediately to the latest NGINX release, or temporarily disable HTTP/2 until an upgrade is possible.",
-    "However, this mitigation only covers the two \"nginx2root\" flaws.",
-    "F5’s latest security update also addresses five more vulnerabilities not highlighted in the Wiz or Xint reports."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "df5a560c1b8f",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Drupal patches critical RCE flaw, warns exploits may surface quickly",
-   "link": "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaw-warns-exploits-may-surface-quickly/",
-   "published": "2026-11-19T13:08:08+00:00",
-   "summary": "The Drupal Security Team has patched a critical remote code execution vulnerability that can let attackers take over vulnerable sites.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/19/Drupal-headpic-red.jpg",
-   "cves": [],
-   "first_seen": "2026-11-19T19:04:24.147057+00:00",
-   "instructions": [
-    "Admins whose websites use the paid Drupal Steward Web Application Firewall (WAF) service are already protected from known attack vectors, but should still upgrade to Drupal 10.6.22, 11.3.22, or 11.4.13 in case other attack vectors are discovered.",
-    "This can lead to a site takeover or remote code execution,\" the Drupal Security Team warned in a Wednesday advisory.",
-    "Those who can't immediately upgrade should secure the Drupal installer by blocking access to /core/install.php in the web server configuration or the .htaccess file in the web root.",
-    "\"Drupal core ships with an install.php file for installing Drupal core."
-   ],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
    "id": "cad292c7e46b",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -3413,28 +2657,6 @@
    "image_checked": true,
    "instructions": [
     "mSecure password manager hack prompts password reset warnings"
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "75044bab3e73",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Five warning signs of ransomware breach before encryption or data theft",
-   "link": "https://www.bleepingcomputer.com/news/security/five-warning-signs-of-ransomware-breach-before-encryption-or-data-theft/",
-   "published": "2026-11-19T15:00:10+00:00",
-   "summary": "Ransomware attacks often involve credential theft, lateral movement, and attempts to disable security controls long before encryption begins. Acronis examines five warning signs that can help defenders detect intrusions earlier, contain malicious activity, and protect critical systems and backups.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2021/12/02/system-hacked.jpg",
-   "cves": [],
-   "first_seen": "2026-11-19T19:04:24.147057+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Organizations should reduce unnecessary internet exposure, prioritize patching of high-risk systems, strengthen identity and access controls, and protect email and collaboration channels.",
-    "The article already establishes these pre-encryption stages as important signals defenders should detect.",
-    "Monitor unusual data flows and apply controls appropriate to systems and users, based on least-privilege principle.",
-    "The first actions should limit spread, preserve evidence and create a safe path to recovery."
    ],
    "instructions_checked": true
   },
@@ -3752,6 +2974,26 @@
    "image_checked": true
   },
   {
+   "id": "1c0fdc3979bb",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "NordVPN Black Friday Deal: Get 78% off VPN plans in 2026",
+   "link": "https://www.bleepingcomputer.com/news/security/nordvpn-black-friday-deal-get-78-percent-off-vpn-plans-in-2026/",
+   "published": "2026-11-26T17:58:42+00:00",
+   "summary": "NordVPN's 2026 Black Friday and Cyber Monday deal is now live, offering savings of up to 78% on VPN subscriptions, plus three extra months of protection.",
+   "image": "https://www.bleepstatic.com/content/posts/2026/11/26/nordvpn-blackfriday-2026.jpg",
+   "cves": [],
+   "first_seen": "2026-11-26T22:14:58.984466+00:00",
+   "image_checked": true,
+   "instructions": [
+    "You can also install NordVPN on a compatible router to protect your home network.",
+    "If you've been waiting for Black Friday or Cyber Monday to purchase a VPN or upgrade your online security, NordVPN's 2026 promotion offers substantial savings, with discounts of up to 78% and three extra months of VPN protection."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "ad3d2932dda1",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -3790,28 +3032,6 @@
     "Palo Alto Networks has confirmed in an advisory today that such attacks also target firewalls running PAN-OS.",
     "The networking company says that all exploitation activity it observed involved PAN-OS devices that exposed their management interface to the public internet, which goes against its recommended ‘ best practices .’",
     "Given that the two flaws are exploited together, administrators who applied updates that addressed the PHP2Shell flaw should be safe from these attacks."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "c5e7bc1c4238",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "PHP security updates fix 18 flaws, including critical RCE bugs",
-   "link": "https://www.bleepingcomputer.com/news/security/php-security-updates-fix-18-flaws-including-critical-rce-bugs/",
-   "published": "2026-11-19T16:28:23+00:00",
-   "summary": "The PHP development team released security updates addressing 18 vulnerabilities, including critical flaws that could allow unauthenticated attackers to remotely execute code on vulnerable servers.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/19/php-logo-cyber.jpg",
-   "cves": [],
-   "first_seen": "2026-11-19T19:04:24.147057+00:00",
-   "image_checked": true,
-   "instructions": [
-    "As a temporary mitigation, PHP recommended disabling session upload progress by setting session.upload_progress.enabled=0 and restarting PHP workers.",
-    "Aikido warns that these mitigations do not address all vulnerabilities fixed in the November updates and recommends ensuring PHP-FPM and LSAPI listeners are not directly exposed to untrusted networks.",
-    "One of the vulnerabilities, CVE-2026-115560, was already disclosed in an October 23 informational advisory and relates to how PHP handles session data under certain configurations, potentially leading to remote code execution.",
-    "This setting was also recommended to mitigate the recent PHP2Shell flaws ."
    ],
    "instructions_checked": true
   },
@@ -3889,6 +3109,26 @@
    "first_seen": "2026-11-24T18:01:18.816744+00:00",
    "image_checked": true,
    "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "17ea7e9dd6a3",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Remus malware steals Gmail messages via fake Google Sheets extension",
+   "link": "https://www.bleepingcomputer.com/news/security/remus-malware-steals-gmail-messages-via-fake-google-sheets-extension/",
+   "published": "2026-11-26T15:23:28+00:00",
+   "summary": "The Remus infostealer is stealing Gmail messages through a stealthy malicious Chrome extension, a capability the malware operators marketed as a zero-day exploit in Google's email service.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/25/Gmail.jpg",
+   "cves": [],
+   "first_seen": "2026-11-26T22:14:58.984466+00:00",
+   "image_checked": true,
+   "instructions": [
+    "To defend against this threat, users are advised to download software only from trusted sources and scrutinize “chrome://extensions” for rogue installations or unexpected activation of Developer Mode.",
+    "“In a nutshell, the loaded module is a native DLL whose sole purpose is to install a malicious extension into Google Chrome, which, notably, is the only browser it targets,” GenDigital explains ."
+   ],
    "instructions_checked": true
   },
   {
@@ -4013,28 +3253,6 @@
     "Additionally, an unexpected \"managed by your organization\" message in a browser should be a red flag.",
     "Individuals using a work-managed device should check with their IT team, while such a message on a personal computer warrants further investigation.",
     "The cybersecurity company advises businesses to review who has access to their Meta accounts, remove permissions that are no longer needed, and check for unfamiliar ads, payment changes, or spending."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "1977168802e4",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Transport for London breach exposes 265,000 Oyster card users' data",
-   "link": "https://www.bleepingcomputer.com/news/security/transport-for-london-breach-exposes-265-000-oyster-card-users-data/",
-   "published": "2026-11-19T18:20:01+00:00",
-   "summary": "Transport for London (TfL) has announced that around 265,000 Oyster photocard customers may have had their account details exposed in a data breach.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/19/transportforlondon.jpg",
-   "cves": [],
-   "first_seen": "2026-11-19T19:04:24.147057+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Those who received the previous email urging them to create an account on the platform should ignore it.",
-    "The leak of security questions and answers is particularly concerning, as those may be used in account access restoration, so customers should remain vigilant for suspicious activity and report it to the organization as soon as possible.",
-    "However, if those same security questions are used at other sites, they should be rotated to new questions and answers.",
-    "It is also recommended to change passwords on other services where the same information was used."
    ],
    "instructions_checked": true
   },
@@ -4268,22 +3486,6 @@
    "image_checked": true
   },
   {
-   "id": "7cf301393d67",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "Critical PHP Flaws Allow Code Execution, but Don't Panic 'PHP2Shell'-Style",
-   "link": "https://www.darkreading.com/application-security/critical-php-flaws-code-execution-panic-php2shell",
-   "published": "2026-11-19T19:57:31+00:00",
-   "summary": "November's monthly security release patches seven critical PHP flaws that should be addressed ASAP, though experts say exploitability varies and depends heavily on configuration.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt63f30aa2e4f7a5b8/6aff560d615b4f7719adda8c/source_code_background-scanrail-GettyImages-832282452.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "5265d3f089df",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -4415,22 +3617,6 @@
    "instructions_checked": true
   },
   {
-   "id": "150f8fb55446",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "Second Norwegian Energy Company Breached in 2 Days",
-   "link": "https://www.darkreading.com/cyberattacks-data-breaches/second-norwegian-energy-company-breached",
-   "published": "2026-11-19T20:14:15+00:00",
-   "summary": "No specific link has been drawn between the two incidents, though they certainly sing the same notes.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blte4910babc7878a94/6aff5ad57ab982a4c314744c/Equinor-makasana-Getty.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "fc81bf677b41",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -4530,22 +3716,6 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt9a0966356bb6bbf4/6b048a6e805d232dd3e79e51/white_house-uschools-GettyImages-160196566.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-23T22:14:53.218245+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "4f4f9e0dd0e0",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "Why Holiday Security Can't Wait for Black Friday",
-   "link": "https://www.darkreading.com/cybersecurity-operations/why-holiday-security-cant-wait-black-friday",
-   "published": "2026-11-19T14:00:00+00:00",
-   "summary": "Bot-driven fraud and holiday social engineering attacks stretch across many weeks, straining security teams and small businesses alike.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt3a97d098a9dd9e12/6afe0f2eb91ada7c366c492c/Holiday_shopping_tap_to_pay-Nastasic-GettyImages-2235710285.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-19T19:04:24.147057+00:00",
    "instructions": [],
    "instructions_checked": true
   },
@@ -4659,42 +3829,6 @@
    "cves": [],
    "first_seen": "2026-11-25T02:18:38.088160+00:00",
    "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "dfb731a44487",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "Navigating Vulnerability Hysteria in the AI Era",
-   "link": "https://www.darkreading.com/vulnerabilities-threats/navigating-vulnerability-hysteria-ai-era",
-   "published": "2026-11-19T19:46:44+00:00",
-   "summary": "This installment of the Reporters' Notebook video series examines the fallout from recent high-severity flaw disclosures, exploring how fears of AI-assisted exploits trigger widespread panic, operational disruptions, and growing warning fatigue.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt7d04c37959ab5304/6aff50a7d42cb182cb40c79e/panic_Kzenon_Alamy_REWORKED_FOR_16_BY_9_FORMAT.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "d408505cc55d",
-   "source": "grahamcluley",
-   "source_name": "Graham Cluley",
-   "official": false,
-   "source_type": "news",
-   "title": "Cold Relic: What you need to know",
-   "link": "https://www.fortra.com/blog/cold-relic-what-you-need-know",
-   "published": "2026-11-19T17:10:29+00:00",
-   "summary": "A Russian spy group is breaking into organisations by pretending to be people they already trust. Meet Cold Relic, the hackers formerly known as COLDRIVER. Read more in my article on the Fortra blog.",
-   "image": "https://www.fortra.com/sites/default/files/styles/og_image/public/2026-11/cold-relic.jpeg?itok=G6rvQ-E0",
-   "cves": [],
-   "first_seen": "2026-11-19T19:04:24.147057+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Google's report on the incident provides a number of recommendations, including:",
-    "Realizing their mistake in allowing the hackers access to the Google Workspace, the victim ensured that passwords and sessions were reset, but overlooked revoking rogue passkeys - which meant that the Cloud Relic hackers were able to continue to access sensitive information for months."
-   ],
    "instructions_checked": true
   },
   {
@@ -4898,14 +4032,15 @@
    "link": "https://www.securityweek.com/ai-inference-providers-failed-to-detect-hacking-and-prompt-theft-says-dragos/",
    "published": "2026-11-23T12:16:20+00:00",
    "summary": "Dragos uncovered undetected intrusions at three AI inference providers using nearly two million prompts sent to AI services. The post AI Inference Providers Failed to Detect Hacking and Prompt Theft, Says Dragos appeared first on SecurityWeek.",
-   "image": null,
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/09/data-leak.jpeg",
    "cves": [],
    "first_seen": "2026-11-23T22:14:53.218245+00:00",
    "instructions": [
     "It admitted that requests sent between October 21 and November 8 should be considered exposed.",
     "Java4Shell Exploitation Attempts Begin as Vendors Rush Out Advisories"
    ],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "6231e48f3bee",
@@ -5021,6 +4156,30 @@
    "first_seen": "2026-11-24T18:01:18.816744+00:00",
    "image_checked": true,
    "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "bb9d1e6ae562",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Critical Juniper Session Smart Conductor Flaw Exploited in Attacks",
+   "link": "https://www.securityweek.com/critical-juniper-session-smart-conductor-flaw-exploited-in-attacks/",
+   "published": "2026-11-26T13:04:06+00:00",
+   "summary": "Tracked as CVE-2026-103406, the vulnerability allows remote attackers to execute arbitrary commands as root. The post Critical Juniper Session Smart Conductor Flaw Exploited in Attacks appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/01/Juniper-Networks.jpeg",
+   "cves": [
+    "CVE-2026-103406"
+   ],
+   "first_seen": "2026-11-26T22:14:58.984466+00:00",
+   "image_checked": true,
+   "instructions": [
+    "On Tuesday, Juniper updated its advisory to flag the security defect as exploited. “At least one instance of malicious exploitation of CVE-2026-103406 has been reported to the Juniper SIRT.",
+    "Customers are encouraged to upgrade to a fixed release as soon as possible and in the meantime take steps to mitigate this vulnerability,” reads Juniper’s update.",
+    "Although BOD 26-04 only applies to federal civilian executive branch agencies, all organizations are advised to review CISA’s KEV list and address the relevant security weaknesses as soon as possible.",
+    "On Wednesday, CISA added the bug to its Known Exploited Vulnerabilities ( KEV ) catalog, urging federal agencies to patch it within three days, as mandated by BOD 26-04."
+   ],
    "instructions_checked": true
   },
   {
@@ -5162,6 +4321,26 @@
    "instructions_checked": true
   },
   {
+   "id": "8399c78e0a54",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "FIFA Says It Has Been Victim of a Cyberattack Accessing ‘Personal and Business Information’",
+   "link": "https://www.securityweek.com/fifa-says-it-has-been-victim-of-a-cyberattack-accessing-personal-and-business-information/",
+   "published": "2026-11-26T17:06:55+00:00",
+   "summary": "FIFA didn’t say when the cyberattack took place, or the precise nature of the hacked information. The post FIFA Says It Has Been Victim of a Cyberattack Accessing ‘Personal and Business Information’ appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/11/FIFA-stadium-football-soccer.webp",
+   "cves": [],
+   "first_seen": "2026-11-26T22:14:58.984466+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Trump Administration Moves to Block China From Indirect Access to American AI Technology",
+    "Drupal Installer Patch Left a Gap Attackers Are Already Exploiting"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "851d3d22fd3b",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -5171,7 +4350,7 @@
    "link": "https://www.securityweek.com/gl-inet-routers-kvms-compromised-via-remote-management-service-flaw/",
    "published": "2026-11-23T13:26:22+00:00",
    "summary": "Attackers abused a flaw in the GoodCloud remote management service to push malware to devices, and cleaning them requires new firmware. The post GL.iNet Routers, KVMs Compromised via Remote Management Service Flaw appeared first on SecurityWeek.",
-   "image": null,
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/03/router.jpeg",
    "cves": [],
    "first_seen": "2026-11-23T22:14:53.218245+00:00",
    "instructions": [
@@ -5180,7 +4359,8 @@
     "Java4Shell Exploitation Attempts Begin as Vendors Rush Out Advisories",
     "However, it noted that the fix doesn’t remove the malware from infected devices — customers need to install a separate “security firmware” for that."
    ],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "5aac1dca0d01",
@@ -5203,28 +4383,6 @@
     "What I should have done was go in to learn, listen more than I talked, and document what I found before I tried to solve anything."
    ],
    "instructions_checked": true
-  },
-  {
-   "id": "5e668a30271b",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Hackers Exploit Cisco Expressway Vulnerability Soon After PoC Release",
-   "link": "https://www.securityweek.com/hackers-exploit-cisco-expressway-vulnerability-soon-after-poc-release/",
-   "published": "2026-11-19T13:12:20+00:00",
-   "summary": "Attackers hacked clustered Cisco Expressway devices at a Russian organization and prepared tooling for lateral movement. The post Hackers Exploit Cisco Expressway Vulnerability Soon After PoC Release appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2025/09/Cisco-firewall.jpeg",
-   "cves": [],
-   "first_seen": "2026-11-19T19:04:24.147057+00:00",
-   "instructions": [
-    "Although Cisco lists no workarounds, F6 recommends that organizations unable to patch immediately block connections to TCP ports 4371–4372 at the firewall, except from the IP addresses of trusted cluster nodes.",
-    "The advisory has not been revised since its initial release and still states that Cisco is unaware of public announcements or malicious use of the flaw.",
-    "Java4Shell Exploitation Attempts Begin as Vendors Rush Out Advisories",
-    "SecurityWeek has reached out to Cisco for comment on F6’s findings and will update this article if the company responds."
-   ],
-   "instructions_checked": true,
-   "image_checked": true
   },
   {
    "id": "45c257ac25c8",
@@ -5368,47 +4526,6 @@
    "instructions_checked": true
   },
   {
-   "id": "bd2996802132",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Newly Patched VMware vCenter Flaw Exploited as Zero-Day by Chinese APT",
-   "link": "https://www.securityweek.com/newly-patched-vmware-vcenter-flaw-exploited-as-zero-day-by-chinese-apt/",
-   "published": "2026-11-19T19:21:06+00:00",
-   "summary": "Google says a China-linked espionage group exploited a critical VMware vCenter authentication bypass before Broadcom released a patch. The post Newly Patched VMware vCenter Flaw Exploited as Zero-Day by Chinese APT appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2022/08/VMWare.jpg",
-   "cves": [],
-   "first_seen": "2026-11-20T01:13:40.105404+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Broadcom’s advisory, which also resolves four SDDC Manager and VMware Tools flaws, does not mention in-the-wild exploitation. “Organizations should both apply the patches and examine their systems for evidence of compromise,” Carmakal said.",
-    "However, there is no public patch for version 7.0, which reached end of general support in October 2025.",
-    "Java4Shell Exploitation Attempts Begin as Vendors Rush Out Advisories",
-    "A China-linked espionage group exploited a VMware vCenter zero-day vulnerability for more than two months before Broadcom released a patch on Thursday, according to Google."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "abef5657ebf4",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "Nvidia Responds to Gentlemen Ransomware Claim",
-   "link": "https://www.securityweek.com/nvidia-responds-to-gentlemen-ransomware-claim/",
-   "published": "2026-11-19T14:17:32+00:00",
-   "summary": "Nvidia says it has found no indication that its systems were compromised after the Gentlemen ransomware group listed the company as a victim. The post Nvidia Responds to Gentlemen Ransomware Claim appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2024/07/Nvidia.jpeg",
-   "cves": [],
-   "first_seen": "2026-11-19T19:04:24.147057+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Java4Shell Exploitation Attempts Begin as Vendors Rush Out Advisories"
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "70ffa0cfd81d",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -5461,35 +4578,14 @@
    "link": "https://www.securityweek.com/peninsula-energy-halts-trading-after-cyber-incident-hits-us-uranium-mine/",
    "published": "2026-11-24T10:35:04+00:00",
    "summary": "The company told the ASX that a cybersecurity incident at its Wyoming uranium project would temporarily affect operations. The post Peninsula Energy Halts Trading After Cyber Incident Hits US Uranium Mine appeared first on SecurityWeek.",
-   "image": null,
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/11/mining.jpeg",
    "cves": [],
    "first_seen": "2026-11-24T18:01:18.816744+00:00",
    "instructions": [
     "Update: On November 25, Peninsula provided an update (PDF) on the cyber incident, noting that plant and wellfield operating and control systems at Lance were impacted on November 20. “Based on investigations to date, the incident appears to be confined to the plant and wellfield operating and control systems."
    ],
-   "instructions_checked": true
-  },
-  {
-   "id": "3049d4149a83",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "PHP Patches Seven Critical RCE Vulnerabilities",
-   "link": "https://www.securityweek.com/php-patches-seven-critical-rce-vulnerabilities/",
-   "published": "2026-11-19T15:54:20+00:00",
-   "summary": "Successful exploitation could allow attackers to crash the worker process and execute code with the PHP worker’s privileges. The post PHP Patches Seven Critical RCE Vulnerabilities appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/10/php-exploit-code.webp",
-   "cves": [],
-   "first_seen": "2026-11-19T19:04:24.147057+00:00",
-   "image_checked": true,
-   "instructions": [
-    "An application with a suitable object gadget chain can then execute code with the privileges of the PHP worker,” PHP’s advisory reads.",
-    "Java4Shell Exploitation Attempts Begin as Vendors Rush Out Advisories",
-    "PHP on Thursday rolled out a fresh set of security patches as part of its four-week update schedule, including fixes for seven critical-severity remote code execution (RCE) vulnerabilities.",
-    "PHP Readies Critical Security Updates to Patch Another RCE Flaw"
-   ],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "f88275a520e7",
