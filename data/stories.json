@@ -93,28 +93,6 @@
    "instructions_checked": true
   },
   {
-   "id": "8338de42e863",
-   "source": "borncity",
-   "source_name": "Born's IT and Windows Blog",
-   "official": false,
-   "source_type": "news",
-   "title": "Kritisches PHP-Sicherheitsupdate für den 19. November 2026 angekündigt",
-   "link": "https://borncity.com/blog/2026/11/19/kritisches-php-sicherheitsupdate-fuer-den-19-november-2026-angekuendigt/",
-   "published": "2026-11-19T00:03:14+00:00",
-   "summary": "Nach dem Patch ist vor dem nächsten Sicherheitsupdate, zumindest was die Sprache PHP betrifft. Leser haben mir am Abend des 18. November 2026 darauf hingewiesen, dass das nächste kritische PHP-Sicherheitsupdate für den 19. November 2026 (ca. 15:00-15:30 Uhr MEZ) angekündigt … Weiterlesen → Quelle",
-   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
-   "cves": [],
-   "first_seen": "2026-11-19T02:03:38.515836+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Nach dem Patch ist vor dem nächsten Sicherheitsupdate, zumindest was die Sprache PHP betrifft.",
-    "Users are strongly encouraged to prepare to upgrade promptly once the releases become available.",
-    "November 2026 wollen die PHP-Entwickler ein kritisches Sicherheits-Update zwischen 15:00 und 15:30 Uhr deutscher Zeit veröffentlichen.",
-    "Dieses Mal ist das PHP-Update aber Teil des regulären vierwöchigen Release-Zyklus von PHP und behebt Sicherheitslücken, die alle unterstützten PHP-Versionen betreffen."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "4ec9ed03e1aa",
    "source": "borncity",
    "source_name": "Born's IT and Windows Blog",
@@ -326,7 +304,14 @@
    "summary": "Ein kurzer Hinweis für Leserinnen und Leser, die vielleicht auf die \"Cloud-freie\" Video-Überwachungslösung go1984 setzen. Ein Blog-Leser hat mir eine Herstellerwarnung zu einer Schwachstelle zukommen lassen. Deren integrierter Webserver hat eine Sicherheitslücke und sollte zeitnah aktualisiert werden. Was ist go1984?…",
    "image": null,
    "cves": [],
-   "first_seen": "2026-11-23T22:14:53.218245+00:00"
+   "first_seen": "2026-11-23T22:14:53.218245+00:00",
+   "instructions": [
+    "Das Programm wird per Einmalkauf angeboten, hat aber einen optionalen Update-Service.",
+    "Update auf go1984 16.1.1.0 so bald wie möglich einspielen: *https://download.go1984.de/go1984Setup.exe",
+    "Das Update auf go1984 16.1.1.0 so bald wie möglich einspielen: *https://download.go1984.de/go1984Setup.exe",
+    "Nur so sind die Sicherheitslücken bis zum Update zuverlässig geschlossen."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "4f99579cf490",
@@ -340,7 +325,9 @@
    "summary": "Zum Wochenstart geht es weiter mit Meldungen zu unschönen Sicherheitsvorfällen. Der Übersetzungsdienst Deepl informiert seine Kunden, dass es einen Sicherheitsvorfall gab, dem dem API-Tokens gefährdet sind. Beim Anbieter Cleverbridge hat es einen Sicherheitsvorfall gegeben, bei dem vollständige Kreditkartendaten von…",
    "image": null,
    "cves": [],
-   "first_seen": "2026-11-23T22:14:53.218245+00:00"
+   "first_seen": "2026-11-23T22:14:53.218245+00:00",
+   "instructions": [],
+   "instructions_checked": true
   },
   {
    "id": "9f960f84fa63",
@@ -352,7 +339,7 @@
    "link": "https://borncity.com/blog/2026/11/24/3cx-kritisches-nginx-sicherheitsupdate-dringend-patchen/",
    "published": "2026-11-24T12:56:42+00:00",
    "summary": "Noch ein Nachtrag von letzter Woche, ist mir gerade erst untergekommen, der sich an Nutzer von 3CX wendet, die diese Lösung selbst unter Linux oder Windows hosten. 3CX hat zum 18. November 2026 zwei kritische Sicherheitslücken in nginx geschlossen. 3CX-Partner … Weiterlesen → Quelle",
-   "image": null,
+   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
    "cves": [],
    "first_seen": "2026-11-24T18:01:18.816744+00:00",
    "instructions": [
@@ -361,7 +348,8 @@
     "Horst Agatha zu Windows 11 Preview Update KB5132057 mit Installationsproblemen",
     "3CX-Partner scheinen wohl über das Update informiert worden zu sein."
    ],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "64c88b8151ed",
@@ -426,6 +414,30 @@
    "instructions_checked": true
   },
   {
+   "id": "c1831239247a",
+   "source": "borncity",
+   "source_name": "Born's IT and Windows Blog",
+   "official": false,
+   "source_type": "news",
+   "title": "Windows November 2026-Updates führen zu NTLM-Problemen",
+   "link": "https://borncity.com/blog/2026/11/26/windows-november-2026-updates-fuehren-zu-ntlm-problemen/",
+   "published": "2026-11-25T23:33:03+00:00",
+   "summary": "Mit den Sicherheitsupdates vom November 2026 für Windows wurde die Sicherheitslücke CVE-2026-118737 in der Windows Remote Procedure Call-Laufzeitumgebung geschlossen. Nun hat Microsoft bestätigt, dass bei Kunden nach der Installation der November 2026-Updates Probleme bei der Authentifizierung auftreten können…",
+   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Windows-klein.jpg",
+   "cves": [
+    "CVE-2026-118737"
+   ],
+   "first_seen": "2026-11-26T03:10:22.240907+00:00",
+   "image_checked": true,
+   "instructions": [
+    "November 2026) Windows 11 25H2 – 26H2: Preview Update KB5127936 (28.",
+    "[Security] This update improves NTLM security by enabling clients to offer NTLM message signing by default for non-anonymous connections.",
+    "Und Stefan Bihler berichtet in diesem Kommentar , dass das kumulative Update für Windows 11 26H2 vom November 2026 dazu geführt hat, das unsignierte Verbindungen über NTLM nicht mehr an einen Proxyserver durchgingen.",
+    "2026-Update bestätigt Windows 11 24H2 / Server 2025: Erinnerung an bevorstehende Änderungen an NTLMv1 Microsoft erklärt NTLM als \"deprecated\" – Deaktivierung in nächster Windows-Version"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "fd0ccfc83548",
    "source": "google-threat-intel",
    "source_name": "Google Threat Intelligence",
@@ -452,22 +464,20 @@
    "instructions_checked": true
   },
   {
-   "id": "c39fbe2f26b9",
+   "id": "3b5d7b12b89d",
    "source": "grahamcluley",
    "source_name": "Graham Cluley",
    "official": false,
    "source_type": "news",
-   "title": "Smashing Security podcast #493: Why your AI model could be a sleeper agent",
-   "link": "https://grahamcluley.com/smashing-security-podcast-493/",
-   "published": "2026-11-19T00:14:52+00:00",
-   "summary": "You join a video call, and your contact and a few colleagues are already there, waiting patiently. But they can't hear you, and a pop-up says you need to install an update to fix your microphone. What could possibly go wrong? Meanwhile, we explain how changing just a handful of numbers can turn an AI model into a…",
-   "image": "https://grahamcluley.com/wp-content/uploads/2026/11/ss-episode-493.webp",
+   "title": "Smashing Security podcast #494: The Russian accused of spying on Palantir from Starbucks",
+   "link": "https://grahamcluley.com/smashing-security-podcast-494/",
+   "published": "2026-11-26T00:10:12+00:00",
+   "summary": "A would-be spy is recruited on Telegram for $15,000 and sent halfway around the world to snoop on Palantir. His cover story when he's caught? He wanted to ask a woman out on a date. Meanwhile, Carl Miller investigates a think tank with 300 experts on its books, one of whom is the inconveniently dead Henry Kissinger…",
+   "image": "https://grahamcluley.com/wp-content/uploads/2026/11/ss-episode-494.webp",
    "cves": [],
-   "first_seen": "2026-11-19T02:03:38.515836+00:00",
+   "first_seen": "2026-11-26T03:10:22.240907+00:00",
    "image_checked": true,
-   "instructions": [
-    "But they can’t hear you, and a pop-up says you need to install an update to fix your microphone."
-   ],
+   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -1453,7 +1463,14 @@
    "summary": "TL;DR More than 64% still valid after four years: GitGuardian’s State of Secrets Sprawl 2026 found that most valid secrets discovered in 2022 still worked in January 2026, because teams stall on what a revoke will break. Validity-only triage misses 46% of critical secrets: Prioritize by impact instead, weighing what a…",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEil06YVYkZZwt0a8nA97RyMZvYZEQIoZ7r9_YHMtjx5eWc7RNAB4ol6OWb7NIsJOpC0v4w11xynwGgR1SsTnArvWAF7yJseVMbQfoawpTPEKYDdmH6O5UrbIZgJ2Fz9MGBFC6kF95oLeubdwlrdVKaVTPz4kjrOCH0X1neixvpNSYHhotL5WuzdYM12tUo/s1600/GitGuardian.gif",
    "cves": [],
-   "first_seen": "2026-11-25T20:40:14.417616+00:00"
+   "first_seen": "2026-11-25T20:40:14.417616+00:00",
+   "instructions": [
+    "Remediation requests should let the developer or platform team act immediately, without requiring the team to repeat the investigation that has already taken place.",
+    "Any request to replace a key for a production system should include validity and known exposure locations.",
+    "It should list dependencies too, and where possible show how it connects to business operations.",
+    "Requests should not be ‘thrown over the fence’ and then forgotten about."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "cb673b121b80",
@@ -1511,7 +1528,13 @@
    "cves": [
     "CVE-2026-132165"
    ],
-   "first_seen": "2026-11-25T20:40:14.417616+00:00"
+   "first_seen": "2026-11-25T20:40:14.417616+00:00",
+   "instructions": [
+    "Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a critical flaw impacting Drupal to its Known Exploited Vulnerabilities ( KEV ) catalog, requiring federal agencies to apply the fixes by November 27, 2026.",
+    "\"Under specific conditions, the attacker can use install.php to attempt to reinstall Drupal on the site.\"",
+    "This is made possible because the installer doesn't restrict the file name extension."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "6e1cc48f217d",
@@ -1739,7 +1762,11 @@
    "cves": [
     "CVE-2026-134624"
    ],
-   "first_seen": "2026-11-24T18:01:18.816744+00:00"
+   "first_seen": "2026-11-24T18:01:18.816744+00:00",
+   "instructions": [
+    "In light of active exploitation, Federal Civilian Executive Branch (FCEB) agencies are recommended to apply the latest fixes for the two flaws by November 26, 2026."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "92db407f26f0",
@@ -1854,7 +1881,13 @@
    "summary": "Norway's National Security Authority (NSM) has disclosed that it became aware of a security vulnerability in Microsoft's Azure API Management (APIM) that has affected multiple businesses in the country, including energy companies Equinor and Skagerak Energi. \"An unknown actor has been actively looking for access…",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSM2FAnf9UEb3Do4v-r8AEBpoI8byXOrHgng-eRjEyudSf0hiKMpymmDiK_NLTxYuzXdtrWvMrBzY9qmLqDo31r3JOpVefOQxLE77gdkoOAYMkCK__-Bc-AJoWg-8nEOEVjcY6SswkzLbCfYl6kK9clg6xXw3xginWqIwnMxBUaS6wgPKVVwXZNhZA5G85/s1600/azure-ms.jpg",
    "cves": [],
-   "first_seen": "2026-11-24T18:01:18.816744+00:00"
+   "first_seen": "2026-11-24T18:01:18.816744+00:00",
+   "instructions": [
+    "According to a non-public advisory issued by Microsoft, the issue is said to affect the APIM classic tier.",
+    "\"On 18 November 2026, Microsoft identified a security issue affecting Azure API Management Classic tiers that could allow unauthorized access to certain management functionality if the service was not configured according to documented security best practices,\" Microsoft said in the advisory.",
+    "As of November 21, 2026, the Windows maker has released guidance for customers to help identify and rotate the secrets and credentials configured in their Azure API Management instances."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "67401cc888fc",
@@ -1969,7 +2002,14 @@
    "summary": "OpenAI and Cisco have teamed up to launch Shirudo (meaning \"shield\" in Japanese), an open-source Linux runtime that allows artificial intelligence (AI) agents to defend systems without downtime. \"It lets agents write dynamic eBPF controls to shield systems from exploits, giving defenders more time to test and roll out…",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKBknwzOcmsT5P3Gnyn8-WGRNbttWLAtmWlHkVuS900lrH1Q7Wj_kBCJiASbBvhNUKWEsO8Xt5VKKokGA-M17y8Pj4EtH6564yafSWGebOVgMuTwxUUB5fV4oProNTbg8MeEhcaiy95WbMi6og3q0uSM4SxLCyzVwV3FbCfiSXrVoJtQUrYpJfyeW1AUFm/s1600/openai-linux.jpg",
    "cves": [],
-   "first_seen": "2026-11-24T18:01:18.816744+00:00"
+   "first_seen": "2026-11-24T18:01:18.816744+00:00",
+   "instructions": [
+    "The crucial difference is that it's primarily designed for agents and leverages the capabilities of eBPF to inject code mitigations.",
+    "The AI upstart called the initiative a \"first step\" toward \"self-defending infrastructure\" that can adapt itself to new threats while the services continue to run and enable defenders to test and deploy fixes without any disruption.",
+    "Shirudo is being pitched as a way for defenders to test temporary safeguards (aka shields) and check if they block behavior that exposes a vulnerability, while letting legitimate requests pass through.",
+    "The idea is to avoid a complete service disruption to block a line of attack simply because both an exploit and a legitimate request may rely on the same underlying Linux operation."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "78074d39dfa2",
@@ -2329,7 +2369,14 @@
    "summary": "A flaw in WHMCS's shopping cart, the billing and automation platform many web hosting companies use to run their businesses, could allow anyone on the internet to retrieve customer records and administrator password hashes from an installation's database. No login is needed. The company disclosed the SQL injection…",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK7wXAof6nH7PDC5-3qxXZJgJvZODTjQcrWFOjO8jeb9yGkK6bUkzm27MzMy5n0S_Xywsj0npu_F0FmQ4JcKxPXNEoezLrpKoSStaYK4Ww46QUuzySTeQnnzcIXs_NADunlqeyuMIl5Wm5PKWc3c0JyNmYPxfbInIWx2tfosieI_QS_e4PX-JILlLH-1U/s1600/hosting.jpg",
    "cves": [],
-   "first_seen": "2026-11-24T18:01:18.816744+00:00"
+   "first_seen": "2026-11-24T18:01:18.816744+00:00",
+   "instructions": [
+    "Fixes are available only for supported versions, so installations on the 8.0 to 8.12 series must upgrade to a fixed release.",
+    "The advisory does not explain why existing campaigns must go, leaving open the question of whether updating alone is enough.",
+    "The company patched an authorization flaw in the Client Area on May 12, described in its May advisory , and an unauthenticated remote code execution flaw on September 3, described in its September advisory .",
+    "The records an attacker could pull include clients' personal and support information as well as admin accounts with their hashed passwords, according to the company's advisory."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "d52512d72b3d",
@@ -2651,6 +2698,23 @@
    "instructions_checked": true
   },
   {
+   "id": "dbfa2402c895",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "FIFA says hackers accessed ‘limited set of personal and business information’",
+   "link": "https://therecord.media/fifa-data-breach-limited",
+   "published": "2026-11-25T20:40:00+00:00",
+   "summary": "The Switzerland-based international governing body for soccer says it's working with relevant authorities and law enforcement to investigate a recent breach.",
+   "image": "https://cms.therecord.media/uploads/fifa_sign_wc_final_202655407277531_c63256a9d9_o_77bc61d70a.jpg",
+   "cves": [],
+   "first_seen": "2026-11-26T03:10:22.240907+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "fa1f50764b02",
    "source": "therecord",
    "source_name": "The Record",
@@ -2716,6 +2780,26 @@
    "first_seen": "2026-11-20T01:13:40.105404+00:00",
    "image_checked": true,
    "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "17a805c0d69c",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Microsoft: China’s Salt Typhoon hackers are using Artex",
+   "link": "https://therecord.media/microsoft-china-salt-typhoon-using-artex-ai-tool",
+   "published": "2026-11-25T21:18:00+00:00",
+   "summary": "An AI tool implicated in several high-profile breaches is rapidly being integrated into the hacking suites of groups from China and North Korea, Microsoft said.",
+   "image": "https://cms.therecord.media/uploads/microsoft_sign_pexels_altabena_efbc5ae4db.jpg",
+   "cves": [],
+   "first_seen": "2026-11-26T03:10:22.240907+00:00",
+   "image_checked": true,
+   "instructions": [
+    "The FBI released its own advisory on Artex two weeks ago, warning that it is being used prolifically by cybercriminals and nation-states to breach government agencies and dozens of critical sectors worldwide.",
+    "“In the past few weeks, we’ve reported several distinct campaigns that abused Artex to search public repositories for exposed secrets, enable supply chain compromise, and scan internet-facing systems for exploitation,” Microsoft explained."
+   ],
    "instructions_checked": true
   },
   {
@@ -3120,6 +3204,27 @@
    "image_checked": true
   },
   {
+   "id": "70f66acc3de7",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "1Password customer data stolen after employee GitHub account breach",
+   "link": "https://www.bleepingcomputer.com/news/security/1password-customer-data-stolen-after-employee-github-account-breach/",
+   "published": "2026-11-25T21:33:33+00:00",
+   "summary": "1Password has disclosed a data breach after a an employee's corporate GitHub account was hacked and used to deploy malicious code to the company's backend services to steal customer data.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2023/10/23/1Password_binary.jpg",
+   "cves": [],
+   "first_seen": "2026-11-26T03:10:22.240907+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Customers should be particularly wary of emails claiming they need to secure their accounts in response to the breach, reset their passwords, or verify their account information.",
+    "Rather than clicking on links in these emails, customers should access their accounts directly through the 1Password website or app and never share their passwords, Secret Keys, or verification codes with anyone.",
+    "mSecure password manager hack prompts password reset warnings"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "594a8d6fa697",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -3270,25 +3375,6 @@
    "image_checked": true,
    "instructions": [
     "Cleverbridge also recommends contacting card issuers about the incident, as banks may decide to replace compromised cards."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "ede0adf4c578",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Coinbase blocks $4.7 million in transfers to Elon Musk deepfake scam",
-   "link": "https://www.bleepingcomputer.com/news/security/coinbase-blocks-47-million-in-transfers-to-elon-musk-deepfake-scam/",
-   "published": "2026-11-18T20:49:32+00:00",
-   "summary": "Coinbase says it blocked $4.7 million in cryptocurrency transfers to scammers promoting a fake giveaway using an AI-generated deepfake of Elon Musk during a Tesla livestream that attracted more than 500,000 viewers.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2022/05/22/elon-musk-space-bright.jpg",
-   "cves": [],
-   "first_seen": "2026-11-19T02:03:38.515836+00:00",
-   "image_checked": true,
-   "instructions": [
-    "To avoid falling victim to these types of scam campaigns, users should independently verify cryptocurrency promotions through official websites and social media accounts rather than trusting livestreams or QR codes displayed in videos."
    ],
    "instructions_checked": true
   },
@@ -3767,6 +3853,28 @@
    "instructions_checked": true
   },
   {
+   "id": "50a53afadcff",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Palo Alto Networks warns of Fragnesia flaw exploited in PAN-OS attacks",
+   "link": "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-fragnesia-flaw-exploited-in-pan-os-attacks/",
+   "published": "2026-11-25T22:05:09+00:00",
+   "summary": "Threat actors are chaining exploits for the PHP2Shell and Fragnesia vulnerabilities to target Palo Alto Networks devices with management interfaces exposed to the internet.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/25/paloalto.jpg",
+   "cves": [],
+   "first_seen": "2026-11-26T03:10:22.240907+00:00",
+   "image_checked": true,
+   "instructions": [
+    "In addition to applying the security updates, Palo Alto Networks also recommends that those who need to keep a remote management interface available restrict access to trusted internal IP addresses.",
+    "Palo Alto Networks has confirmed in an advisory today that such attacks also target firewalls running PAN-OS.",
+    "The networking company says that all exploitation activity it observed involved PAN-OS devices that exposed their management interface to the public internet, which goes against its recommended ‘ best practices .’",
+    "Given that the two flaws are exploited together, administrators who applied updates that addressed the PHP2Shell flaw should be safe from these attacks."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "c5e7bc1c4238",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4007,25 +4115,6 @@
    "instructions_checked": true
   },
   {
-   "id": "b326b8531a92",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Ukraine, FBI arrest ransomware gang members tied to $40M in ransoms",
-   "link": "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/",
-   "published": "2026-11-18T23:08:33+00:00",
-   "summary": "Ukrainian authorities, working with the FBI, have arrested four suspected members of an international ransomware organization linked to more than $40.5 million in ransom payments from at least 28 companies worldwide.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2022/03/15/Ukraine-hacker.jpg",
-   "cves": [],
-   "first_seen": "2026-11-19T02:03:38.515836+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Under the pretext of providing technical assistance, they persuaded employees to disclose their login credentials or install remote access software."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "bbc19bb6f991",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -4127,6 +4216,38 @@
     "CVE-2026-132224"
    ],
    "first_seen": "2026-11-25T02:18:38.088160+00:00",
+   "instructions": [
+    "Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
+    "BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied."
+   ],
+   "instructions_checked": true,
+   "image_checked": true
+  },
+  {
+   "id": "b368c84bce94",
+   "source": "cisa",
+   "source_name": "CISA Cybersecurity Advisories",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CISA Adds 10 Known Exploited Vulnerabilities to Catalog",
+   "link": "https://www.cisa.gov/news-events/alerts/2026/11/25/cisa-adds-10-known-exploited-vulnerabilities-catalog",
+   "published": "2026-11-25T12:00:00+00:00",
+   "summary": "CISA has added 10 new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2023-25914 Danfoss AK-SM 800A Series Path Traversal Vulnerability CVE-2023-25915 Danfoss AK-SM 800A Series Improper Input Validation Vulnerability CVE-2025-41450 Danfoss AK-SM 800A…",
+   "image": null,
+   "cves": [
+    "CVE-2023-25914",
+    "CVE-2023-25915",
+    "CVE-2025-41450",
+    "CVE-2026-103406",
+    "CVE-2026-133275",
+    "CVE-2026-133303",
+    "CVE-2026-133311",
+    "CVE-2026-133323",
+    "CVE-2026-133324",
+    "CVE-2026-133469"
+   ],
+   "first_seen": "2026-11-26T03:10:22.240907+00:00",
+   "image_checked": true,
    "instructions": [
     "Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
     "BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied."
@@ -4341,23 +4462,6 @@
    "instructions_checked": true
   },
   {
-   "id": "cebfa689962e",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "Strike Graph Launches Integration AI to Automate Continuous Compliance Evidence Using Any Existing Tool",
-   "link": "https://www.darkreading.com/cyber-risk/strike-graph-launches-integration-ai-to-automate-continuous-compliance-evidence-using-any-existing-tool",
-   "published": "2026-11-18T20:45:49+00:00",
-   "summary": "New agentic AI solution leverages APIs to collect compliance evidence from systems and applies it to over 30 frameworks with no duplicate work.",
-   "image": null,
-   "cves": [],
-   "first_seen": "2026-11-19T02:03:38.515836+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "35aed7f27fbb",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -4402,22 +4506,6 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt911ff7b35a2a2c1d/6b009babdd63b308b3111bc2/Chinese_fortress-Lukas_Bischoff-Getty.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-20T23:13:26.727170+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "84415312a0a7",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "Russia's Cold Relic APT Turns One Cloud Breach Into Another",
-   "link": "https://www.darkreading.com/cyberattacks-data-breaches/cold-relic-turns-one-cloud-breach-into-another",
-   "published": "2026-11-18T21:59:46+00:00",
-   "summary": "The state-sponsored threat group is using data stolen from one victim to target others via convincing impersonations and social engineering attacks.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt0cf0a0b934852050/6afe1492ac3412795c5370fe/russia_Skorzewiak_shutterstoc.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-19T02:03:38.515836+00:00",
    "instructions": [],
    "instructions_checked": true
   },
@@ -4514,7 +4602,14 @@
    "summary": "Data security posture management (DSPM) allowed the university to uncover sensitive information, tighten access controls, and lay the groundwork for safer AI adoption.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt25e178de5cb0409d/6b00d028efff7c214dcd404d/data_Pingingz_shutterstock.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
-   "first_seen": "2026-11-25T20:40:14.417616+00:00"
+   "first_seen": "2026-11-25T20:40:14.417616+00:00",
+   "instructions": [
+    "Universities must be PCI-compliant because they accept and process credit card payments; they must comply with GLBA if they participate in federal student aid programs.",
+    "His team struggled to identify where sensitive information was most exposed, apply consistent safeguards, and meet requirements under regulations such as the Family Educational Rights and Privacy Act (FERPA), PCI DSS standards, and the Gramm-Leach-Bliley Act (GLBA).",
+    "This allowed Rhoden's team to distinguish among different types of sensitive information and apply more appropriate access, retention, and compliance policies.",
+    "\"If files are being shared internally within a department, they should be shared in a designated location,\" Rhoden says, by way of an example."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "95e1986b820d",
@@ -4860,7 +4955,8 @@
    "cves": [],
    "first_seen": "2026-11-25T20:40:14.417616+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "1f5f949117f5",
@@ -4880,7 +4976,8 @@
     "The big focus is on “how do I pay less taxes”, when it should be on “what do we need/want and how do we pay for it”.",
     "However it should be noted it’s still below what it was during January."
    ],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "f3a43b39549f",
@@ -5067,7 +5164,11 @@
    "summary": "CrowdStrike expects the combined company to have more than $10 billion in annual recurring revenue. The post CrowdStrike to Acquire Zscaler in $43.9 Billion Deal appeared first on SecurityWeek.",
    "image": null,
    "cves": [],
-   "first_seen": "2026-11-23T22:14:53.218245+00:00"
+   "first_seen": "2026-11-23T22:14:53.218245+00:00",
+   "instructions": [
+    "In February 2026, it acquired SquareX , whose browser extension helps enterprises enforce security policies on unmanaged devices."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "f44f10d640ae",
@@ -5102,7 +5203,14 @@
    "summary": "Critical Bluetooth flaws in Elecbrakes controllers could let nearby attackers force trailer braking, potentially causing accidents. The post Elecbrakes Bluetooth Vulnerabilities Expose Trailers to Forced Braking appeared first on SecurityWeek.",
    "image": null,
    "cves": [],
-   "first_seen": "2026-11-24T18:01:18.816744+00:00"
+   "first_seen": "2026-11-24T18:01:18.816744+00:00",
+   "instructions": [
+    "In a customer advisory published on Monday, Elecbrakes advised owners of the older ELBC controllers to maintain an active connection between the controller and their smartphone or wireless remote whenever the device is in use.",
+    "According to the cybersecurity agency CISA, which last week published an advisory on the vulnerabilities, the affected brake controllers are mainly used in Australia and New Zealand.",
+    "Unauthorized firmware changes could enable persistent compromise of the controller, allowing an attacker to interfere with braking, brake lights, and other safety functions.",
+    "However, the researchers noted that this risk is theoretical, as they did not demonstrate the full impact or attempt to install malicious firmware during their tests."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "2be32b97a1a6",
@@ -5437,7 +5545,7 @@
    "link": "https://www.securityweek.com/openai-cisco-unveil-open-source-tool-to-shield-unpatched-linux-systems/",
    "published": "2026-11-24T12:20:41+00:00",
    "summary": "OpenAI and Cisco’s Shirudo uses AI-generated shields to block Linux exploits while patches are prepared, but it’s not yet production-ready. The post OpenAI, Cisco Unveil Open Source Tool to Shield Unpatched Linux Systems appeared first on SecurityWeek.",
-   "image": null,
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/02/Agentic-AI-Hacking.jpg",
    "cves": [],
    "first_seen": "2026-11-24T18:01:18.816744+00:00",
    "instructions": [
@@ -5445,7 +5553,8 @@
     "It needs to be tested, packaged and automated before anyone should trust it in production,” Shachar added.",
     "OpenAI and Cisco hope that down the line Shirudo shields can be distributed alongside vulnerability disclosures to give organizations temporary protection until they can install permanent patches."
    ],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "6a20b92f56aa",
@@ -5501,7 +5610,11 @@
    "summary": "The company told the ASX that a cybersecurity incident at its Wyoming uranium project would temporarily affect operations. The post Peninsula Energy Halts Trading After Cyber Incident Hits US Uranium Mine appeared first on SecurityWeek.",
    "image": null,
    "cves": [],
-   "first_seen": "2026-11-24T18:01:18.816744+00:00"
+   "first_seen": "2026-11-24T18:01:18.816744+00:00",
+   "instructions": [
+    "Update: On November 25, Peninsula provided an update (PDF) on the cyber incident, noting that plant and wellfield operating and control systems at Lance were impacted on November 20. “Based on investigations to date, the incident appears to be confined to the plant and wellfield operating and control systems."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "3049d4149a83",
@@ -5633,7 +5746,12 @@
    "summary": "Threat actors could exploit them to leak or modify server information and to execute commands as root. The post SAP NetWeaver, Cisco Expressway Flaws Exploited in Attacks appeared first on SecurityWeek.",
    "image": null,
    "cves": [],
-   "first_seen": "2026-11-23T22:14:53.218245+00:00"
+   "first_seen": "2026-11-23T22:14:53.218245+00:00",
+   "instructions": [
+    "Successful exploitation could allow attackers to “inject JNDI environment properties or pass a URL used during JNDI lookup operations, enabling access to an unintended JNDI provider,” reads a NIST advisory .",
+    "On November 20, CISA added the Expressway security defect to its Known Exploited Vulnerabilities (KEV) catalog, urging federal agencies to patch it within three days."
+   ],
+   "instructions_checked": true
   },
   {
    "id": "3827cbac510e",
