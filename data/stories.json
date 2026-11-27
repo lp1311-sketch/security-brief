@@ -17,25 +17,6 @@
    "instructions_checked": true
   },
   {
-   "id": "99727b65c290",
-   "source": "ars",
-   "source_name": "Ars Technica Security",
-   "official": false,
-   "source_type": "news",
-   "title": "Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced.",
-   "link": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
-   "published": "2026-11-20T20:59:08+00:00",
-   "summary": "Researchers planted 2 million digital tripwires in requests sent through a sprawling network of AI services to find out what happened to sensitive information entrusted to them. What they discovered was an ecosystem that leaked highly sensitive data like a sieve. The exposure was found through an ingenious experiment…",
-   "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/ai-privacy-leakage-1152x648.jpg",
-   "cves": [],
-   "first_seen": "2026-11-20T23:13:26.727170+00:00",
-   "instructions": [
-    "AI users should also avoid accepting default provider or reseller pools and instead pick upstream providers themselves.",
-    "They also tried to enable hosted models in AWS Bedrock and added their own IAM users to maintain access."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "21c67f84759f",
    "source": "ars",
    "source_name": "Ars Technica Security",
@@ -52,51 +33,6 @@
     "“These findings show that agentic offensive operations are already happening, and defenders should prepare for the speed and persistence these tools enable,” Amazon said .",
     "At the time of discovery, this path traversal vulnerability in the medical imaging application did not correspond to any assigned security advisory and was unpatched.",
     "Amazon Threat Intelligence assesses with high confidence that it was a zero-day based on the absence of any corresponding fix, issue, advisory, or prior mention in vulnerability databases for the affected open-source project."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "4baa07f08d94",
-   "source": "borncity",
-   "source_name": "Born's IT and Windows Blog",
-   "official": false,
-   "source_type": "news",
-   "title": "Microsofts AI-Agent Framework PyPI mit Malware verseucht",
-   "link": "https://borncity.com/blog/2026/11/20/microsofts-ai-agent-framework-pypi-mit-malware-verseucht/",
-   "published": "2026-11-20T18:12:38+00:00",
-   "summary": "Das offizielle Python-Paket \"Microsoft Agent Framework\", veröffentlicht auf PyPI, war kürzlich kompromittiert. Betroffen waren die beiden, am 17. November 2026 ausglieferten Versionen 1.26.1 und 1.26.2 des Pakets. Diese enthielten Code zum Diebstahl von Anmeldedaten, der beim normalen Python-Start ausgeführt werden ……",
-   "image": "https://borncity.com/blog/wp-content/uploads/2026/03/Copilot.jpg",
-   "cves": [],
-   "first_seen": "2026-11-20T23:13:26.727170+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Tibor Simandi Kallay zu Windows 11 25H2 – 26H2: Preview Update KB5132057 (19.",
-    "Herr P. zu Windows 11 25H2 – 26H2: Preview Update KB5132057 (19.",
-    "Hobbyadmin zu Windows 11 25H2 – 26H2: Preview Update KB5132057 (19."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "332040abbcf8",
-   "source": "borncity",
-   "source_name": "Born's IT and Windows Blog",
-   "official": false,
-   "source_type": "news",
-   "title": "OpenSSL-Schwachstelle CVE-2026-121481",
-   "link": "https://borncity.com/blog/2026/11/20/openssl-schwachstelle-cve-2026-121481/",
-   "published": "2026-11-20T17:05:36+00:00",
-   "summary": "Am 18. November 2026 ist eine kritische Schwachstelle in der Base64 Encoding Function der Software OpenSSL publik geworden. Die Schwachstelle CVE-2026-121481 besitzt einen CVSS 3.1-Score von 9.8 und ist als kritisch eingestuft. Ein Heap-Overflow kann zu einer Speicherbeschädigung führen. Mir … Weiterlesen → Quelle",
-   "image": "https://borncity.com/blog/wp-content/uploads/2021/04/Sicherheit_klein.jpg",
-   "cves": [
-    "CVE-2026-121481"
-   ],
-   "first_seen": "2026-11-20T17:21:09.204406+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Neueste Kommentare Herr P. zu Windows 11 25H2 – 26H2: Preview Update KB5132057 (19.",
-    "Hobbyadmin zu Windows 11 25H2 – 26H2: Preview Update KB5132057 (19.",
-    "Herr P. zu Windows 11 25H2 – 26H2: Preview Update KB5132057 (19.",
-    "Tommy zu PHP-Update 8.x vom 19.11.2026; aber Schwachstellen weiter ausnutzbar?"
    ],
    "instructions_checked": true
   },
@@ -735,27 +671,6 @@
    "instructions_checked": true
   },
   {
-   "id": "9dbbebdeb6a3",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control",
-   "link": "https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html",
-   "published": "2026-11-20T16:58:16+00:00",
-   "summary": "Cybersecurity researchers have disclosed details of a previously unknown Android malware framework called Bazuka that offers large language model (LLM) integration for victim management and control at scale. Dutch mobile security company ThreatFabric said it discovered the threat in late October 2026 during an…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMs4vBdivbF3Y-4yd3PWqjSTuG2PPDvCemM211pzVl2Jhkus9d14_2MzRgdrlNhRxaHa_2rlIN34kUGHAlV_Y2dMnfmYGlUEzUcab0c_s3N8Zoe8P3rcJ-RJmo2luVci9bVqmwtFhpL4rfR2Uo-ZwvqfqFMwRb_3WwoOvFIaunPd7WMOJ4yW9rjbHEKDwf/s1600/android-malware.jpg",
-   "cves": [],
-   "first_seen": "2026-11-20T17:21:09.204406+00:00",
-   "instructions": [
-    "A dropper, which asks the victim for permissions to install applications from third-party sources and then proceeds to download a standalone APK (\"com.tiktok.premium.pro\") that serves as the stager",
-    "\"The core can open the system settings screen, find the relevant menu, enable Developer options, and then enable Wireless Debugging.\"",
-    "Bazuka supports 23 modules that enable comprehensive data and cryptocurrency theft -",
-    "uninstall_shield , to counter attempts to uninstall or force-stop the application"
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "7a5ea8907df3",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1376,6 +1291,22 @@
    "instructions_checked": true
   },
   {
+   "id": "f01224df1f54",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Suspected Vietnam-Linked Hackers Target Southeast Asia in South China Sea Espionage Campaign",
+   "link": "https://thehackernews.com/2026/11/suspected-vietnam-linked-hackers-target.html",
+   "published": "2026-11-27T16:36:11+00:00",
+   "summary": "A Vietnam-sponsored hacking group has been attributed to attacks targeting Southeast Asian military, government, and legislative organizations with an aim to gather intelligence on South China Sea defense and military agreements. The previously undocumented incursion set, detailed by SOCRadar, has been codenamed…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj19T-kU1dmVfKt2PtUQ2I25MGovj8kmv6lMkk6inlif4yLeezJS4kVRTvsARL5UkpTT66jYru6k2b5bmWfjjlkmG4JznSKmkmd4ldXcyxTw3xsU5nP6_jxfWMw9thW37m5usfr-eWAZBHq6bPuS613CIx9XgWxPcSVFcZVgz_9tWd5Nu8YWAxexuqcVPrN/s1600/data.jpg",
+   "cves": [],
+   "first_seen": "2026-11-27T22:39:15.149877+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "bdba96d745bb",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1518,26 +1449,6 @@
    "instructions_checked": true
   },
   {
-   "id": "6cc616c5c6e7",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams",
-   "link": "https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html",
-   "published": "2026-11-20T17:57:20+00:00",
-   "summary": "Meta-owned WhatsApp has addressed security vulnerabilities, including one impacting its Android app that it suspects may have been exploited in connection with scam messages. The vulnerability, tracked as CVE-2026-23871 (CVSS score: 3.5), has been described as a case of incomplete validation of external ad-reply URLs…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUSbYUJJkBlZsaH90SXIaxYAv5iJN7ZEus7Q24A_Z9fDNNlnOjFnNZ3SnA6er-iuMgQnE6k73nwVwAEPPk1AjRT12N9o8cJft3_dPqMZKeJbpq6QIcGbN1z1UbE_Q3fXTyp1c0XmqynQu2lJPeIYoraqXFcgM-wQH4b1rIBrOKF221CIKLldJIZVJ4g7cr/s1600/whatsapp.jpg",
-   "cves": [
-    "CVE-2026-23871"
-   ],
-   "first_seen": "2026-11-20T23:13:26.727170+00:00",
-   "instructions": [
-    "WhatsApp is advising users to keep their apps and devices up to date to ensure optimal protection."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "06ddd1a68807",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1576,27 +1487,6 @@
     "However, it's essential that site owners check their websites to make sure that they are not running one of the compromised versions and remove them as soon as possible.",
     "\"Unlike a typical vulnerability, this was not a coding mistake, and there is no patch: the malicious code was added deliberately and committed to each plugin's WordPress.org repository,\" Chamberland said.",
     "The disclosure comes as URLscan.io revealed that an unspecified WordPress site had been infected by multiple cybercriminal campaigns, with attackers attempting to disable or remove scripts belonging to competing threat actors."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "cd038ca0a29b",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Amazon says Chinese hackers used Cairn AI tool to discover apparent zero-day during attack on university",
-   "link": "https://therecord.media/amazon-research-cairn-ai-university-attacks-possible-zero-day",
-   "published": "2026-11-20T17:30:00+00:00",
-   "summary": "A China-linked threat actor used the open source AI penetration testing tool Cairn to persistently attack two universities, and in one case, possibly discover a zero-day bug, researchers said.",
-   "image": "https://cms.therecord.media/uploads/ai_planet_volumes_unsplash_79b8f00a24.jpg",
-   "cves": [],
-   "first_seen": "2026-11-20T23:13:26.727170+00:00",
-   "image_checked": true,
-   "instructions": [
-    "“At the time of discovery, this path traversal vulnerability in the medical imaging application did not correspond to any assigned security advisory and was unpatched,” Moses said.",
-    "“Amazon Threat Intelligence assesses with high confidence that it was a zero-day based on the absence of any corresponding fix, issue, advisory, or prior mention in vulnerability databases for the affected open-source project.”",
-    "The FBI published an advisory about AI tool Artex one week ago, writing that it could take any large language model and turn it into a powerful hacking tool that can “automate multiple phases of cyber intrusions at machine speed, from reconnaissance through data exfiltration.”"
    ],
    "instructions_checked": true
   },
@@ -1696,25 +1586,6 @@
    "instructions_checked": true
   },
   {
-   "id": "e010061a1eb7",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "US companies’ use of Chinese open weight AI draws rebuke from House chairmen",
-   "link": "https://therecord.media/chinese-open-weight-AI-use-by-US-companies-house-investigation",
-   "published": "2026-11-20T20:25:00+00:00",
-   "summary": "An investigation led by the House Homeland Security Committee focused on the dangers of U.S. companies using lower-cost open weight AI models for certain projects.",
-   "image": "https://cms.therecord.media/uploads/garbarino_20230423_515e2f0b4a.png",
-   "cves": [],
-   "first_seen": "2026-11-20T23:13:26.727170+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Andrew Garbarino (R-NY) and John Moolenaar (R-NY) drew the 50-page-long report’s findings from hearings, classified briefings, and agency advisories."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "8476cf372163",
    "source": "therecord",
    "source_name": "The Record",
@@ -1733,23 +1604,6 @@
     "All federal agencies were urged to patch CVE-2026-134624 – a bug affecting N-able’s Mail Assure platform.",
     "N-able took all hosted N-central environments offline and ordered customers to turn off their servers."
    ],
-   "instructions_checked": true
-  },
-  {
-   "id": "edfeced150c6",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Container Store restores systems after cyberattack",
-   "link": "https://therecord.media/container-store-restores-systems-cyberattack",
-   "published": "2026-11-20T19:32:00+00:00",
-   "summary": "The firm’s parent company, Neighborhood Intelligence, said in a statement that The Container Store has “restored its website and systems following a cybersecurity incident this past weekend.”",
-   "image": "https://cms.therecord.media/uploads/the_container_store_78204f1ab6.jpg",
-   "cves": [],
-   "first_seen": "2026-11-20T23:13:26.727170+00:00",
-   "image_checked": true,
-   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -1788,25 +1642,6 @@
    "instructions": [],
    "instructions_checked": true,
    "image_checked": true
-  },
-  {
-   "id": "c21f2f095f9f",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Dozens of credit unions hit by supplier breach that went unnoticed for six weeks",
-   "link": "https://therecord.media/dozens-of-credit-unions-hit-by-supplier-breach",
-   "published": "2026-11-20T14:24:00+00:00",
-   "summary": "Ireland’s Data Protection Commission told Recorded Future News on Thursday it had received more than 40 breach notifications from credit unions that used the Belfast-based company as a data processor.",
-   "image": "https://cms.therecord.media/uploads/bank_safe_33ac6c970a.jpg",
-   "cves": [],
-   "first_seen": "2026-11-20T17:21:09.204406+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Robert Troy had previously described the delay as “simply not acceptable.” On Thursday, he said Wellington had brought in outside experts to determine “the exact number of accounts and users affected,” stressing that any information the company released publicly must be “accurate and verified.”"
-   ],
-   "instructions_checked": true
   },
   {
    "id": "4ca5a6cc42e6",
@@ -1852,11 +1687,12 @@
    "link": "https://therecord.media/france-afp-hit-by-cyberattack",
    "published": "2026-11-27T00:00:00+00:00",
    "summary": "French international news agency Agence France-Presse was hit by a cyberattack Thursday, forcing it to take offline one of its main platforms for distributing news content to media organizations worldwide.",
-   "image": null,
+   "image": "https://cms.therecord.media/uploads/paris_france_558ae68906.jpg",
    "cves": [],
    "first_seen": "2026-11-27T14:05:29.785504+00:00",
    "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "fa1f50764b02",
@@ -1888,6 +1724,23 @@
    "image": "https://cms.therecord.media/uploads/brian_schatz_sapprops_20260512_afe849fc45.png",
    "cves": [],
    "first_seen": "2026-11-24T18:01:18.816744+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "4a82d3723014",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Japan’s education ministry discloses breach of government procurement system",
+   "link": "https://therecord.media/japan-education-ministry-cyberattack",
+   "published": "2026-11-27T14:15:00+00:00",
+   "summary": "Japan’s education ministry disclosed earlier this week that hackers breached its government procurement system, potentially exposing records containing business information and email addresses.",
+   "image": "https://cms.therecord.media/uploads/Japan_school_ministry_4ac8c35089.jpg",
+   "cves": [],
+   "first_seen": "2026-11-27T22:39:15.149877+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -1967,26 +1820,6 @@
    "instructions_checked": true
   },
   {
-   "id": "f67114676f56",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "NSA resumes normal operations following internal network disruptions",
-   "link": "https://therecord.media/nsa-resumes-normal-operations-following-internal-disruptions",
-   "published": "2026-11-20T16:06:00+00:00",
-   "summary": "Certain facilities remain under “Code Orange” for non-essential employees, meaning delayed openings and some must check in with their supervisors.",
-   "image": "https://cms.therecord.media/uploads/8815949_9b41fe9ed1.jpg",
-   "cves": [],
-   "first_seen": "2026-11-20T17:21:09.204406+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Certain facilities remain under “Code Orange” for non-essential employees, meaning delayed openings and some must check in with their supervisors.",
-    "“The patching that has gone on following that has caused some of these systems to not come back up when you patch them as expected,” Director of National Intelligence Jay Clayton said in a television interview earlier this week."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "4fcf01c31362",
    "source": "therecord",
    "source_name": "The Record",
@@ -2021,26 +1854,6 @@
    "image_checked": true,
    "instructions": [
     "Employees were advised to assess whether they needed to change their login credentials or take additional security precautions."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "57375f482cd6",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "Cyber Director Cairncross out as White House resets cyber leadership",
-   "link": "https://therecord.media/sean-cairncross-out-as-national-cyber-director",
-   "published": "2026-11-20T14:30:00+00:00",
-   "summary": "Sean Cairncross is leaving the White House as Kirsten Davies, the Pentagon’s chief information officer, has been named the acting cyber czar.",
-   "image": "https://cms.therecord.media/uploads/cairncross_billington_2025_d9233ef5de.jpg",
-   "cves": [],
-   "first_seen": "2026-11-20T17:21:09.204406+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Kirsten Davies, the Pentagon’s chief information officer, has been named the acting cyber czar, which advises the president on cybersecurity matters and coordinates digital policy across the federal government.",
-    "The brief document vowed to \"detect, confront, and defeat cyber adversaries before they breach our networks and systems,” maintain an advantage in artificial intelligence and update federal networks."
    ],
    "instructions_checked": true
   },
@@ -2093,47 +1906,14 @@
    "link": "https://therecord.media/uk-department-work-pensions-cyber-incident",
    "published": "2026-11-27T00:00:00+00:00",
    "summary": "The Department for Work and Pensions said Friday that it had experienced a cyber incident, with several services taken down as a precaution.",
-   "image": null,
+   "image": "https://cms.therecord.media/uploads/Screenshot_2026_11_27_at_10_31_16_df724c9ca7.png",
    "cves": [],
    "first_seen": "2026-11-27T14:05:29.785504+00:00",
    "instructions": [
     "“To protect our critical national infrastructure, defend public institutions and maintain public confidence in essential public services, we must achieve a radical shift in approach and a step change in pace,” it said at the time, warning the public sector faced a “critically high” cyber risk."
    ],
-   "instructions_checked": true
-  },
-  {
-   "id": "f0b8696c25c4",
-   "source": "therecord",
-   "source_name": "The Record",
-   "official": false,
-   "source_type": "news",
-   "title": "West Virginia Legislature hit with cyber incident affecting IT systems",
-   "link": "https://therecord.media/west-virginia-legislature-cyberattack",
-   "published": "2026-11-20T21:34:36+00:00",
-   "summary": "A cybersecurity incident that began Thursday was still ongoing Friday in the West Virginia Legislature. A spokesperson said the disruption did not spread to other government entities.",
-   "image": "https://cms.therecord.media/uploads/wva_state_capitol_blil_dickinson_flickr_a81eb98b4b.jpg",
-   "cves": [],
-   "first_seen": "2026-11-20T23:13:26.727170+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "688d34085c16",
-   "source": "grahamcluley",
-   "source_name": "Graham Cluley",
-   "official": false,
-   "source_type": "news",
-   "title": "n0n extortion gang leaks data of JPMorgan Chase, Visa, and Mastercard customers",
-   "link": "https://www.bitdefender.com/en-us/blog/hotforsecurity/n0n-extortion-leaks-data-jpmorgan-chase-visa-mastercard",
-   "published": "2026-11-20T18:57:38+00:00",
-   "summary": "Data belonging to customers of three of the biggest companies in global finance has been leaked online, after hackers breached third-party service providers working for JPMorgan Chase, Visa, and Mastercard. Read more in my article on the Hot for Security blog.",
-   "image": "https://blogapp.bitdefender.com/hotforsecurity/content/images/2026/11/non-cards.jpeg",
-   "cves": [],
-   "first_seen": "2026-11-20T23:13:26.727170+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
+   "instructions_checked": true,
+   "image_checked": true
   },
   {
    "id": "8cc63523ba5c",
@@ -2407,23 +2187,6 @@
    "instructions_checked": true
   },
   {
-   "id": "6c623452a14a",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Bell Canada says 'agentic' hacker stole enterprise customer data",
-   "link": "https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/",
-   "published": "2026-11-20T18:51:43+00:00",
-   "summary": "Bell Canada has confirmed that an \"agentic\" threat actor breached its systems on November 17, 2026, and stole enterprise customer data, including information from a system used to order and provision telecommunications circuits.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/20/bell-canada.jpg",
-   "cves": [],
-   "first_seen": "2026-11-20T23:13:26.727170+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "f8665cc5b1ef",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -2676,25 +2439,6 @@
    "instructions_checked": true
   },
   {
-   "id": "0abe4221510a",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Hackers use autonomous AI tool Cairn to find zero-day, take over server",
-   "link": "https://www.bleepingcomputer.com/news/security/hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server/",
-   "published": "2026-11-20T17:30:00+00:00",
-   "summary": "Threat actors used the open-source AI penetration-testing framework Cairn to find a previously unknown vulnerability in a medical imaging application.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2022/05/12/evil-hacker-ai.jpg",
-   "cves": [],
-   "first_seen": "2026-11-20T23:13:26.727170+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Amazon reported the flaw to MONAI Label maintainers, and they released a security update to address it on November 18."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "5d8223f882df",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -2735,6 +2479,23 @@
     "The agency also recommends monitoring control plane operations, authentication sources, traffic to internal networks, and outbound server traffic to detect suspicious activity.",
     "The agency recommends that administrators of internet-facing systems patch critical vulnerabilities within 24 hours of release, add multi-factor authentication (MFA) or passkey protection, and enforce least-privilege principles."
    ],
+   "instructions_checked": true
+  },
+  {
+   "id": "814d32c90295",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Malwarebytes Antivirus: Get 50% off during Black Friday 2026",
+   "link": "https://www.bleepingcomputer.com/news/security/malwarebytes-antivirus-get-50-percent-off-during-black-friday-2026/",
+   "published": "2026-11-27T14:22:06+00:00",
+   "summary": "Malwarebytes' 2026 Black Friday and Cyber Monday sale is now live, offering 50% off security subscriptions for individuals, families, and small businesses, including its antivirus software, VPN, identity theft protection, and personal data removal services.",
+   "image": "https://www.bleepstatic.com/content/posts/2026/11/26/malwarebytes_black-friday-2026.jpg",
+   "cves": [],
+   "first_seen": "2026-11-27T22:39:15.149877+00:00",
+   "image_checked": true,
+   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -2814,6 +2575,25 @@
    "image_checked": true,
    "instructions": [
     "That is the requirement we built the AI around, so the model runs wherever a team needs it to, including entirely inside their own network.\" – Luka Šikic, CEO, Secure Block ."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "72cf1a5347d2",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "New Boston Scientific data breach exposes personal, medical info",
+   "link": "https://www.bleepingcomputer.com/news/security/new-boston-scientific-data-breach-exposes-personal-medical-info/",
+   "published": "2026-11-27T18:57:42+00:00",
+   "summary": "Medical technology company Boston Scientific is sending data breach notices to individuals affected by a cyberattack on the firm.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/27/bostonscientific.jpg",
+   "cves": [],
+   "first_seen": "2026-11-27T22:39:15.149877+00:00",
+   "image_checked": true,
+   "instructions": [
+    "The notification does not offer free credit monitoring to impacted individuals but recommends using free credit reports and considering placing fraud alerts and credit freezes."
    ],
    "instructions_checked": true
   },
@@ -2937,6 +2717,25 @@
     "Palo Alto Networks has confirmed in an advisory today that such attacks also target firewalls running PAN-OS.",
     "The networking company says that all exploitation activity it observed involved PAN-OS devices that exposed their management interface to the public internet, which goes against its recommended ‘ best practices .’",
     "Given that the two flaws are exploited together, administrators who applied updates that addressed the PHP2Shell flaw should be safe from these attacks."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "c33ac200edb1",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "pCloud confirms password manager hack after suspicious login alerts",
+   "link": "https://www.bleepingcomputer.com/news/security/pcloud-confirms-password-manager-hack-after-suspicious-login-alerts/",
+   "published": "2026-11-27T19:26:04+00:00",
+   "summary": "The pCloud Pass password manager suffered a cyberattack, with users reporting that unknown devices had connected to their accounts even with two-factor authentication (2FA) enabled.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/27/pcloud-logo.jpg",
+   "cves": [],
+   "first_seen": "2026-11-27T22:39:15.149877+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Earlier in November, mSeven Software warned mSecure customers to change stored passwords, reset two-factor authentication, and remove passkeys after a hacker reportedly stole an encrypted customer database."
    ],
    "instructions_checked": true
   },
@@ -3138,28 +2937,6 @@
    "instructions_checked": true
   },
   {
-   "id": "19cca4f1450a",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Still tracking company passwords in spreadsheets? You’re flying blind.",
-   "link": "https://www.bleepingcomputer.com/news/security/still-tracking-company-passwords-in-spreadsheets-youre-flying-blind/",
-   "published": "2026-11-20T15:00:10+00:00",
-   "summary": "Tracking company passwords in spreadsheets can leave IT administrators unaware of weak, reused, or compromised credentials stored and shared outside approved systems. NordPass explains how centralized password management can improve credential visibility, identify security risks, and simplify secure password sharing.",
-   "image": "https://www.bleepstatic.com/content/posts/2026/11/19/nordpass-header.jpg",
-   "cves": [],
-   "first_seen": "2026-11-20T17:21:09.204406+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Your IT team should decide who is responsible for each login, who needs access, and when that access should be removed.",
-    "To keep company accounts protected, admins should be able to answer a few questions about each company password: Is it strong?",
-    "Some employees may continue saving passwords in browsers or personal vaults, so adoption depends on making the approved option easy to use and setting clear expectations about how company logins should be handled.",
-    "That’s why a process that relies on employees to manually report every new password, update, and shared credential is nearly impossible to sustain."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "23ec231ca044",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -3199,20 +2976,68 @@
    "instructions_checked": true
   },
   {
-   "id": "bbc19bb6f991",
+   "id": "8b62149719af",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
    "official": false,
    "source_type": "news",
-   "title": "Vendor data breach exposes Chase, Visa, Mastercard customer info",
-   "link": "https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/",
-   "published": "2026-11-20T15:58:06+00:00",
-   "summary": "J.P. Morgan Chase warned it suffered a data breach after a cyberattack at a third-party service provider exposed customers' personal information and marketing data.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2022/10/28/hand-sifting-data.jpg",
+   "title": "Unpatched Cacti zero-day with public PoC gives remote code execution",
+   "link": "https://www.bleepingcomputer.com/news/security/unpatched-cacti-zero-day-with-public-poc-gives-remote-code-execution/",
+   "published": "2026-11-27T17:06:13+00:00",
+   "summary": "A zero-day vulnerability in the Cacti network monitoring platform has been publicly disclosed, along with a proof-of-concept exploit that lets unauthenticated attackers execute commands on vulnerable servers.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/27/cacti.jpg",
    "cves": [],
-   "first_seen": "2026-11-20T17:21:09.204406+00:00",
+   "first_seen": "2026-11-27T22:39:15.149877+00:00",
    "image_checked": true,
-   "instructions": [],
+   "instructions": [
+    "Until a patch is released, administrators are advised to deactivate the Cacti guest account and restrict access to the application's web interface to trusted networks.",
+    "Administrators should also review poller configurations for unexpected commands and examine application logs for warnings involving non-numeric values in graph display settings, which could indicate attempted exploitation.",
+    "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day"
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "2778b393e634",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "US Air Force cloud platform reportedly hacked in latest federal breach",
+   "link": "https://www.bleepingcomputer.com/news/security/us-air-force-cloud-platform-reportedly-hacked-in-latest-federal-breach/",
+   "published": "2026-11-27T15:09:40+00:00",
+   "summary": "Hackers have reportedly breached the US Air Force's Cloud One computing platform, adding to a recent wave of cyberattacks affecting US government agencies, including the FBI, CIA, and Treasury Department.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/27/air-force-red-blue-2.jpg",
+   "cves": [],
+   "first_seen": "2026-11-27T22:39:15.149877+00:00",
+   "image_checked": true,
+   "instructions": [
+    "\"The government should worry less about TP-Link routers and more about it's own security.\" It should be able to do both in a general sense.",
+    "In an advisory, the FBI said multiple threat actors had used ARTEX since at least August 2026 in attacks targeting government, defense, healthcare, financial, and technology organizations.",
+    "The government should worry less about TP-Link routers and more about it's own security.",
+    "According to Reuters , the intrusion was discovered within the past month during an upgrade of the cloud platform, disrupting application migrations and software updates."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "96edb4ed0f1c",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Your Firewall Isn't Enough: The Hidden Risk of Unmanaged VMs",
+   "link": "https://www.bleepingcomputer.com/news/security/your-firewall-isnt-enough-the-hidden-risk-of-unmanaged-vms/",
+   "published": "2026-11-27T15:00:10+00:00",
+   "summary": "Forgotten virtual machines, unpatched servers, and excessive access permissions can create security blind spots across IT infrastructure. ISPsystem explains how centralized infrastructure management, access controls, and resource lifecycle automation can help reduce these risks.",
+   "image": "https://www.bleepstatic.com/content/posts/2026/11/23/ispsystem-vm.jpg",
+   "cves": [],
+   "first_seen": "2026-11-27T22:39:15.149877+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Every virtual machine, server, access, and IP address must have an owner, a lifetime, and a controlled path for creation and deletion.",
+    "The platform must delineate the rights of users and administrators and record all operations; otherwise, excessive rights accumulate, allowing attackers to move laterally across the network.",
+    "We should not forget about the isolation of environments — the resources of different customers at a hosting provider, or internal systems, external services, and development environments in corporate IT infrastructure.",
+    "At the foundation, there should be centralized management of the entire environment from a single interface and role-based access control (RBAC)."
+   ],
    "instructions_checked": true
   },
   {
@@ -3286,6 +3111,30 @@
     "CVE-2026-133469"
    ],
    "first_seen": "2026-11-26T03:10:22.240907+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
+    "BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "e66a2e1c8c17",
+   "source": "cisa",
+   "source_name": "CISA Cybersecurity Advisories",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
+   "link": "https://www.cisa.gov/news-events/alerts/2026/11/27/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+   "published": "2026-11-27T12:00:00+00:00",
+   "summary": "CISA has added three new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-120705 OSGeo GeoServer XML Injection Vulnerability CVE-2026-129243 OSGeo GeoServer Incorrect Authorization Vulnerability CVE-2026-136716 Drupal Core Improper Check for…",
+   "image": null,
+   "cves": [
+    "CVE-2026-120705",
+    "CVE-2026-129243",
+    "CVE-2026-136716"
+   ],
+   "first_seen": "2026-11-27T22:39:15.149877+00:00",
    "image_checked": true,
    "instructions": [
     "Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
@@ -3382,6 +3231,22 @@
    "instructions_checked": true
   },
   {
+   "id": "47ba8e3fb16d",
+   "source": "darkreading",
+   "source_name": "Dark Reading",
+   "official": false,
+   "source_type": "news",
+   "title": "Matters.AI Lands India’s Largest Cybersecurity Pre-Series A Round to Fight AI Data Risks",
+   "link": "https://www.darkreading.com/cyber-risk/matters-india-cybersecurity-pre-series-ai-data-risks",
+   "published": "2026-11-27T15:27:20+00:00",
+   "summary": "The security startup consolidates four legacy security tools into an autonomous platform that uses context-aware AI to trace sensitive data lineage, analyze user intent, and automatically remediate threats across enterprise environments.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blte7893676670a76d5/6aa13f3e0a3bef09c363535c/Data_security(1800)_ber1a_Alamy.png?width=720&quality=80&disable=upscale",
+   "cves": [],
+   "first_seen": "2026-11-27T22:39:15.149877+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "6a6218931c47",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -3398,22 +3263,6 @@
    "instructions_checked": true
   },
   {
-   "id": "35aed7f27fbb",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "What We Missed: Nvidia CEO Scandal Rocks AI Industry",
-   "link": "https://www.darkreading.com/cyber-risk/what-we-missed-nvidia-ceo-scandal-rocks-ai-industry",
-   "published": "2026-11-20T17:04:04+00:00",
-   "summary": "In this video, Dark Reading editors discuss some of the news they didn't get a chance to cover, from Jensen Huang's resignation from Nvidia to Microsoft's recent cloud outage.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltafa9df51f75884e4/6b007fead61f59302a23c588/nvidia-Benjamin_Fanjoy_-Getty-2304259055.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-20T23:13:26.727170+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "f1ad34292135",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -3426,22 +3275,6 @@
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt068557e4f1edea18/6b0424213e73ecdcfb851a70/working-with-AI-agents-ImageFlow-shutterstock.png?width=720&quality=80&disable=upscale",
    "cves": [],
    "first_seen": "2026-11-23T22:14:53.218245+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "a9aa37ceddf1",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "China's 'Armory Castle' Lays Siege to VMware vCenter Zero-Day",
-   "link": "https://www.darkreading.com/cyberattacks-data-breaches/china-armory-castle-vmware-vcenter-zero-day",
-   "published": "2026-11-20T21:03:27+00:00",
-   "summary": "During the last wave of major VMware vCenter security updates, a China-nexus threat group likely already had its next zero-day up its sleeve.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt911ff7b35a2a2c1d/6b009babdd63b308b3111bc2/Chinese_fortress-Lukas_Bischoff-Getty.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-20T23:13:26.727170+00:00",
    "instructions": [],
    "instructions_checked": true
   },
@@ -3478,22 +3311,6 @@
     "\"We exclude victims we cannot identify or classify, and we remove victims that were already counted in an earlier quarter,\" he says.",
     "Major Brazilian Signature Apps Enable RCE & Fraud Nov 18, 2026 | 4 Min Read"
    ],
-   "instructions_checked": true
-  },
-  {
-   "id": "fc81bf677b41",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "Nok et norsk energiselskap har blitt utsatt for et datainnbrudd på to dager",
-   "link": "https://www.darkreading.com/cyberattacks-data-breaches/second-norwegian-energy-company-breached-norwegian",
-   "published": "2026-11-20T20:43:45+00:00",
-   "summary": "Det er ikke påvist noen konkret sammenheng mellom de to hendelsene, selv om de helt klart har mange likhetstrekk.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blte4910babc7878a94/6aff5ad57ab982a4c314744c/Equinor-makasana-Getty.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-23T22:14:53.218245+00:00",
-   "instructions": [],
    "instructions_checked": true
   },
   {
@@ -3546,24 +3363,6 @@
     "His team struggled to identify where sensitive information was most exposed, apply consistent safeguards, and meet requirements under regulations such as the Family Educational Rights and Privacy Act (FERPA), PCI DSS standards, and the Gramm-Leach-Bliley Act (GLBA).",
     "This allowed Rhoden's team to distinguish among different types of sensitive information and apply more appropriate access, retention, and compliance policies.",
     "\"If files are being shared internally within a department, they should be shared in a designated location,\" Rhoden says, by way of an example."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "95e1986b820d",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "In Security, Words Matter as Much as Tools — Maybe More",
-   "link": "https://www.darkreading.com/cybersecurity-operations/security-words-matter",
-   "published": "2026-11-20T18:35:40+00:00",
-   "summary": "From talking cloud security to using AI, cyber leaders are finding that clear, disciplined communication is now a front-line defense capability across the enterprise.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt36f1afcfa92ff2c5/6af766db3c02eaba0a4aae0d/cyber_talk_ATHVisions_Getty.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-20T23:13:26.727170+00:00",
-   "instructions": [
-    "Just in time for the new year, Cybersecurity Outlook 2027 will look ahead at some of the newest threats posed by cybercriminals and nation-states, as well as evolving technologies that may help mitigate those threats as AI proliferates."
    ],
    "instructions_checked": true
   },
@@ -3680,25 +3479,6 @@
    "instructions_checked": true
   },
   {
-   "id": "705577b57ecf",
-   "source": "msblog",
-   "source_name": "Microsoft Security Blog",
-   "official": false,
-   "source_type": "vendor_blog",
-   "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for SIEM",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/20/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-siem/",
-   "published": "2026-11-20T17:00:00+00:00",
-   "summary": "We’re honored that Microsoft has once again been recognized as a Leader in the 2026 Gartner® Magic Quadrant™ for Security Information and Event Management (SIEM). As security environments grow more complex and attackers move faster, organizations need more than the ability to collect and analyze data. They need…",
-   "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/11/Garner-SIEM-MQ_FINAL-902x1024.webp",
-   "cves": [],
-   "first_seen": "2026-11-20T23:13:26.727170+00:00",
-   "image_checked": true,
-   "instructions": [
-    "It’s about ensuring your SIEM is a core building block of the agentic SOC, bringing together security data, intelligence, AI, and native protection so people and agents can understand threats sooner, act faster, and stop attacks before they spread."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "2bc53ab48fab",
    "source": "msblog",
    "source_name": "Microsoft Security Blog",
@@ -3741,18 +3521,18 @@
    "instructions_checked": true
   },
   {
-   "id": "d20cb913632d",
+   "id": "9a5641a98b22",
    "source": "schneier",
    "source_name": "Schneier on Security",
    "official": false,
    "source_type": "news",
-   "title": "Friday Squid Blogging: The Largest Squid Ever Filmed",
-   "link": "https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-the-largest-squid-ever-filmed.html",
-   "published": "2026-11-20T22:04:12+00:00",
-   "summary": "This is the story of the largest squid ever filmed, in December 2006 near Japan’s Ogasawara Islands. As usual, you can also use this squid post to talk about the security stories in the news that I haven’t covered. Blog moderation policy.",
+   "title": "Friday Squid Blogging: Giant Squid in Newfoundland",
+   "link": "https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-giant-squid-in-newfoundland.html",
+   "published": "2026-11-27T22:01:25+00:00",
+   "summary": "The two have an interesting history. As usual, you can also use this squid post to talk about the security stories in the news that I haven’t covered. Blog moderation policy.",
    "image": null,
    "cves": [],
-   "first_seen": "2026-11-20T23:13:26.727170+00:00",
+   "first_seen": "2026-11-27T22:39:15.149877+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -4284,23 +4064,6 @@
    "instructions_checked": true
   },
   {
-   "id": "1722752aee2d",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "In Other News: Norwegian Energy Firm Cyberattacks, Supercomputer Hack, New Nightmare Eclipse Exploit",
-   "link": "https://www.securityweek.com/in-other-news-norwegian-energy-firm-cyberattacks-supercomputer-hack-new-nightmare-eclipse-exploit/",
-   "published": "2026-11-20T14:56:23+00:00",
-   "summary": "Noteworthy stories that might have slipped under the radar: EU adds NoName057(16) to cyber sanctions list, malware targets CACs left in personal computers, Gemini agents targeted Epoch AI. The post In Other News: Norwegian Energy Firm Cyberattacks, Supercomputer Hack, New Nightmare Eclipse Exploit appeared first on…",
-   "image": "https://www.securityweek.com/wp-content/uploads/2023/10/cybersecurity-news.jpg",
-   "cves": [],
-   "first_seen": "2026-11-20T17:21:09.204406+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "db4a5f90bd41",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -4589,27 +4352,6 @@
     "On Tuesday, Broadcom also updated its advisory on Node2Shell to add VMware Cloud Foundation version 9.1.2 to the list of fixed releases.",
     "However, this advisory does not mention the SDDC Manager updates from VMSA-2026-0009; please ensure you are handling those,” the company notes .",
     "Broadcom makes no mention of any of these vulnerabilities being exploited in the wild, but it’s not uncommon for the company to not warn about exploitation in its public advisories."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "b3099b7219af",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "WhatsApp Fixes Flaw Uncovered While Disrupting Scam Campaign",
-   "link": "https://www.securityweek.com/whatsapp-fixes-flaw-uncovered-while-disrupting-scam-campaign/",
-   "published": "2026-11-20T16:01:02+00:00",
-   "summary": "Tracked as CVE-2026-23871, the vulnerability was found by WhatsApp’s security team, and it may have been used to make scam messages more credible. The post WhatsApp Fixes Flaw Uncovered While Disrupting Scam Campaign appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2025/06/WhatsApp-Vulnerability-attack-e1761292707809.jpg",
-   "cves": [
-    "CVE-2026-23871"
-   ],
-   "first_seen": "2026-11-20T17:21:09.204406+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Java4Shell Exploitation Attempts Begin as Vendors Rush Out Advisories"
    ],
    "instructions_checked": true
   },
