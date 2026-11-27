@@ -56,30 +56,6 @@
    "instructions_checked": true
   },
   {
-   "id": "731521743606",
-   "source": "borncity",
-   "source_name": "Born's IT and Windows Blog",
-   "official": false,
-   "source_type": "news",
-   "title": "Kritische Schwachstelle CVE-2026-123890 in vCenter 8.0, 9.0 und 9.1",
-   "link": "https://borncity.com/blog/2026/11/20/kritische-schwachstelle-cve-2026-123890-in-vcenter-8-0-9-0-und-9-1/",
-   "published": "2026-11-20T11:33:40+00:00",
-   "summary": "In VMware vCenter gibt es in den Versionen 8.0, 9.0 und 9.1 eine kritische Schwachstelle CVE-2026-123890. Diese ermöglicht es einem Angreifer mit Netzwerkzugriff, die Authentifizierung zu umgehen und sich unbefugten Zugriff auf das System zu verschaffen. Die Schwachstelle scheint ausgenutzt … Weiterlesen → Quelle",
-   "image": "https://borncity.com/blog/wp-content/uploads/2025/03/image-9.png",
-   "cves": [
-    "CVE-2026-123890"
-   ],
-   "first_seen": "2026-11-20T17:21:09.204406+00:00",
-   "instructions": [
-    "Neueste Kommentare Herr P. zu Windows 11 25H2 – 26H2: Preview Update KB5132057 (19.",
-    "Hobbyadmin zu Windows 11 25H2 – 26H2: Preview Update KB5132057 (19.",
-    "Herr P. zu Windows 11 25H2 – 26H2: Preview Update KB5132057 (19.",
-    "https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/release-notes/vcenter-server-update-and-patch-release-notes/vsphere-vcenter-server-80u3m-release-notes.html"
-   ],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
    "id": "4baa07f08d94",
    "source": "borncity",
    "source_name": "Born's IT and Windows Blog",
@@ -418,44 +394,6 @@
    "instructions_checked": true
   },
   {
-   "id": "ca429aa527bf",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium: CVE-2023-1531 Use after free in ANGLE",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-1531",
-   "published": "2026-11-20T09:05:37+00:00",
-   "summary": "Information published.",
-   "image": null,
-   "cves": [
-    "CVE-2023-1531"
-   ],
-   "first_seen": "2026-11-20T08:45:49.404266+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "c7433b924f3c",
-   "source": "msrc",
-   "source_name": "Microsoft Security Response Center",
-   "official": true,
-   "source_type": "advisory",
-   "title": "Chromium: CVE-2024-7533 Use after free in Sharing",
-   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-7532",
-   "published": "2026-11-20T09:06:50+00:00",
-   "summary": "Information published.",
-   "image": null,
-   "cves": [
-    "CVE-2024-7533"
-   ],
-   "first_seen": "2026-11-20T08:45:49.404266+00:00",
-   "image_checked": true,
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "faed77650a4f",
    "source": "msrc",
    "source_name": "Microsoft Security Response Center",
@@ -508,6 +446,25 @@
     "CVE-2026-119848"
    ],
    "first_seen": "2026-11-23T22:14:53.218245+00:00",
+   "image_checked": true,
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "7173b2a97d6c",
+   "source": "msrc",
+   "source_name": "Microsoft Security Response Center",
+   "official": true,
+   "source_type": "advisory",
+   "title": "CVE-2026-62840 Linux Kernel Elevation of Privilege Vulnerability",
+   "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62840",
+   "published": "2026-11-27T09:10:39+00:00",
+   "summary": "Information published.",
+   "image": null,
+   "cves": [
+    "CVE-2026-62840"
+   ],
+   "first_seen": "2026-11-27T14:05:29.785504+00:00",
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
@@ -799,24 +756,6 @@
    "instructions_checked": true
   },
   {
-   "id": "dc6901c8a6d8",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data",
-   "link": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html",
-   "published": "2026-11-20T09:38:15+00:00",
-   "summary": "The suspected China-nexus cyber espionage group known as Armory Castle (formerly UNC5221) has been attributed to the zero-day exploitation of a critical security flaw in VMware vCenter Server in early September 2026. The vulnerability, tracked as CVE-2026-123890 (CVSS score: 9.8), is a case of authentication bypass in…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTSAI-N-DRII1YA3I98ZVnKnG0SMgm97oEAqyiSXZB23DPwzvTk3figFLsTCKsMJRxRhjKEPFblxfcOuB_UXc_OAXJRiVI07Jxjn-CebJVHiRQ5sc43AifBpUPNfU5-LRD6QEGbX7Vnt_HAmJZiLojS32PtNWwIWeideJZnIpgjrstJ0Iy84lYd47bePk/s1600/chinese-vmware.jpg",
-   "cves": [
-    "CVE-2026-123890"
-   ],
-   "first_seen": "2026-11-20T08:45:49.404266+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "7a5ea8907df3",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1045,28 +984,6 @@
    "instructions_checked": true
   },
   {
-   "id": "c9ddefa65f50",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Hackers Exploit Critical Cisco Expressway Flaw, Breach Four Devices and Reach Internal Network",
-   "link": "https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html",
-   "published": "2026-11-20T10:32:50+00:00",
-   "summary": "Threat actors have been observed exploiting a recently disclosed critical security flaw in Cisco Expressway to breach a Russian organization shortly after the public release of a proof-of-concept (PoC) exploit. The activity involves the exploitation of CVE-2026-76466 (CVSS score: 9.8), a vulnerability that could allow…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrMm7M_HyuVDt9NknngHSgyfGKu0DR8VTc_GYL-tr_hMhTmi3EAZnM8x5byJQRYEqcUAZlDTR_Xi4RcMm4lidmk9UR_iyTWpDa5Mn6xRBoNwAf3auen2u6guKxnvoIrcQOfq7Mm1clmsyBMYVcjaOqVFYiN4mXgYSyR5_DUSrmVOLDK5mQeAS8BBB3X5-5/s1600/cisco-cyberattacks.jpg",
-   "cves": [
-    "CVE-2026-76466"
-   ],
-   "first_seen": "2026-11-20T17:21:09.204406+00:00",
-   "instructions": [
-    "Users are advised to update to the latest supported version of Cisco Expressway, audit environments for signs of compromise, isolate affected systems, determine the scope of the attack, and block potential lateral movement vectors.",
-    "\"That means protection should therefore include not only timely vulnerability remediation but also properly configured segmentation and infrastructure monitoring.\"",
-    "Cisco Expressway Series Release X14 and earlier - Migrate to a fixed release"
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "33d65726f50e",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1215,6 +1132,44 @@
    "instructions_checked": true
   },
   {
+   "id": "99bc87f8212c",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Hackers Trojanize Official Q-Dir and DesktopOK Downloads to Deliver Remote Access Malware",
+   "link": "https://thehackernews.com/2026/11/hackers-trojanize-official-q-dir-and.html",
+   "published": "2026-11-27T09:29:30+00:00",
+   "summary": "Cybersecurity researchers have disclosed details of a software supply chain attack that has tampered with Q-Dir and DesktopOK installation files distributed via the official SoftwareOK website. \"Evidence indicates that malicious files were generated not only when users downloaded the programs directly from the…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSXVfewkMqSKHEHRrAVXFHFOsMisOpBVnJ_sWbNNQQXuSWTHU5Y8AZW18gdQq7eI5N4l1dXoeBXVuqGGNClEK0U55LHgLYUxmopN9JHaMrYtrt4QrtWmk3uIvX8FzE2jL7Rf-oOG2fiDzj4g99wYn1Ih9uAOmyD0DtWN7ZqkG5UTd3xRYSRnIurQuT437O/s1600/trojan.jpg",
+   "cves": [],
+   "first_seen": "2026-11-27T14:05:29.785504+00:00",
+   "instructions": [
+    "\"Users who are currently using Q-Dir or DesktopOK, or who have recently installed or updated these programs, should verify the hash values of the downloaded files and check their systems for any traces of RAT installation or execution,\" AhnLab said.",
+    "\"Evidence indicates that malicious files were generated not only when users downloaded the programs directly from the official download page but also during the update process of previously installed legitimate programs,\" South Korean cybersecurity company AhnLab said .",
+    "\"However, simply uninstalling and reinstalling the program may not remove a Python RAT that has already been installed."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "415efee3262b",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "How to Keep Your Security Picture Current When Attackers Move at AI Speed",
+   "link": "https://thehackernews.com/2026/11/how-to-keep-your-security-picture.html",
+   "published": "2026-11-27T10:32:18+00:00",
+   "summary": "Most security metrics are not built to be used. They are built to be shown. Somewhere between the quarterly review and the next status update, a set of numbers gets assembled that looks reassuring in a room and tells almost no one what is actually happening across the environment that week. Someone pulls them together…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivjmF6SycZfBA1Red5jxgerBNr4pe7i8jIwZyZkF20Kxvw__-2oD3cO1hKSCGGQRqncukvouxIx-6KBQdRf5jz9eXb80yFmNyTo2sOsmW2TEXS4irdH7uPvWfZh66zxIa9h0RixfLZtaKO3rSo_riHT9hfbyBGC1m_Y0_FWRu_M0EADEFFZmXFB_NG72Q/s1600/anecdotes.jpg",
+   "cves": [],
+   "first_seen": "2026-11-27T14:05:29.785504+00:00",
+   "instructions": [
+    "Somewhere between the quarterly review and the next status update, a set of numbers gets assembled that looks reassuring in a room and tells almost no one what is actually happening across the environment that week."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "6b48789d1147",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1247,6 +1202,24 @@
     "According to a non-public advisory issued by Microsoft, the issue is said to affect the APIM classic tier.",
     "\"On 18 November 2026, Microsoft identified a security issue affecting Azure API Management Classic tiers that could allow unauthorized access to certain management functionality if the service was not configured according to documented security best practices,\" Microsoft said in the advisory.",
     "As of November 21, 2026, the Windows maker has released guidance for customers to help identify and rotate the secrets and credentials configured in their Azure API Management instances."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "4895aa5a5bc0",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Microsoft Store App Found Delivering Vinci RAT Capable of Remote System Control",
+   "link": "https://thehackernews.com/2026/11/microsoft-store-app-found-delivering.html",
+   "published": "2026-11-27T11:49:34+00:00",
+   "summary": "Cybersecurity researchers have disclosed details of a cyber attack in which a threat actor leveraged a Microsoft Store application to deliver a remote access trojan (RAT) called Vinci RAT. The intrusion, according to eSentire, begins with a redirection to a bogus site for a sniping tool (\"snipp.codes-team[.]com\")…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpD815FTK1v-12AKbFYOz3fplAY5EWVRrb1mh5LOUSmUmG7u7mdgGnppCpL9-ZaG-3CyWm_2KP4icW3UY1Q3AYG6lEe03ezqY9Jx49mW9SC4D0JqiUhT-Rmet7lin7u1bHdyppzeay-bTKDty53IDUI_P9md3iUp5xaY-ko1U2uBRTkNdPhAVTYuW9hDmO/s1600/ms-store.png",
+   "cves": [],
+   "first_seen": "2026-11-27T14:05:29.785504+00:00",
+   "instructions": [
+    "The C2 server initiates an update action via the URL setup-assistant[.]com/api/update-status?device=<victim_id>\""
    ],
    "instructions_checked": true
   },
@@ -1293,49 +1266,6 @@
    "instructions_checked": true
   },
   {
-   "id": "f80afcc47857",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "Linux KVM Flaw CVE-2026-99312 Lets Guest VMs Access Host Memory on AMD Hosts",
-   "link": "https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html",
-   "published": "2026-11-20T12:20:00+00:00",
-   "summary": "A flaw in KVM, the hypervisor built into the Linux kernel, let researchers read about 127 GB of a cloud server's memory from inside a virtual machine of their own on DigitalOcean. On a shared server, that memory can include other customers' virtual machines. The flaw, tracked as CVE-2026-99312, affects only hosts with…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjg-jisyf4SWwWYA_RUtOoVqBviv2uNAUl6vEeGjsuBA0aOhfLYw7yHitbRBxAoWcf5ZP0UcGovNmyk-u-320fLFYIyUz7jtR77GiveyLdqsZWJ0DohwBfEFyN0KlNAIpIcpS9B6jHEZJybmTu7nuKM-PhSNPco-Z1QmacaSfwWyOWLXzT2WqaEdbZ810M/s1600/vms.jpg",
-   "cves": [
-    "CVE-2026-99312"
-   ],
-   "first_seen": "2026-11-20T17:21:09.204406+00:00",
-   "instructions": [
-    "The provider patched its own fleet with a live patch, telling Droplet customers: \"No action needed on your part.\" Operators who run their own KVM hosts on AMD hardware need to update the host kernel or turn nested virtualization off.",
-    "When a reset signal called INIT stops the nested VM, KVM skips restoring the outer VM's pointer, leaving it pointing to a page of memory the kernel has already freed.",
-    "The fix makes KVM reset that memory-management state on every INIT.",
-    "A 2022 patch for a different nested-virtualization bug, CVE-2022-3344, switched a reset path back to the outer VM's control block but missed the page-table pointer, the researchers say, and the error then sat in the kernel for just under four years."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "fa700a4eb8ce",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "New Unpatched Windows 0-Day FastUnlock Lets Someone Holding a Locked PC Run Programs on It",
-   "link": "https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html",
-   "published": "2026-11-20T05:30:01+00:00",
-   "summary": "A newly disclosed unpatched zero-day technique called FastUnlock lets someone with physical access to a locked Windows computer start programs without signing in. Whoever uses it gets only a limited account, not administrator control of the machine. The method was posted yesterday by a researcher who uses the handles…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRnUdcazdCteyaE1EC_aLit8CioDaJ5yvsWnawFVWQrJvYFktNRJXlW9MOJLimG_-aS1IZChVHJbjPI4CXjIbNFLjn5W686xynepfC0oWyEG81NX5CxdS-9ayumfRljgy32e2bYXDD72T6VpIFFzeCcPKwG48RDKiZExwNdF-4XDFicISSaaRtT3W2dt0/s1600/windows-lockscreen.jpg",
-   "cves": [],
-   "first_seen": "2026-11-20T08:45:49.404266+00:00",
-   "instructions": [
-    "Until an official fix or advisory appears, watch for one and apply it when it comes.",
-    "Microsoft's countermeasures guidance recommends using a startup PIN, along with shutting down or hibernating machines when faced with determined, hands-on attackers.",
-    "With no patch available, the useful steps are about physical control and startup protection."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "f5eee8a53f92",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1344,7 +1274,7 @@
    "title": "North Korea-Linked PolinRider Poisons Over 7,600 GitHub Repositories to Spread Malware",
    "link": "https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html",
    "published": "2026-11-26T15:13:41+00:00",
-   "summary": "The threat actors behind the PolinRider campaign have been observed planting a Python loader in GitHub repositories, as evidence emerges that the activity may have started as far back as February 2025. \"The loader hides in a small utils package or in conftest.py,\" SafeDep said in a report published this week. \"When…",
+   "summary": "The threat actors behind the PolinRider campaign have compromised over 7,600 GitHub repositories, in some cases planting a Python loader capable of delivering next-stage payloads, as evidence emerges that the activity may have started as far back as February 2025. \"These are real developers, not throwaway accounts,\"…",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgquhPuqGJrSE3xNpn5ZUELVAv-Y7qXqkHgpw7nbVqCay4gyraYO5NNE12rAGzuqk_zhreNwcyzjZf3vZZB5C4teohyuppUP-JlP41PQiLu-hGEFCsqMZO0T6MoaVk-uY818yaTaiJaX-d2O0h0RER22knXbUQc7qnwIcVbleLQrEspMQ8btNa4Q9mFrmue/s1600/gitcat.jpg",
    "cves": [],
    "first_seen": "2026-11-26T22:14:58.984466+00:00",
@@ -1427,24 +1357,6 @@
    "instructions_checked": true
   },
   {
-   "id": "ba74506a96ac",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "ROMULUS ClickFix Attacks Deliver RAT That Can Spy on Users and Control PCs",
-   "link": "https://thehackernews.com/2026/11/romulus-clickfix-attacks-deliver-rat.html",
-   "published": "2026-11-20T07:11:39+00:00",
-   "summary": "Threat actors have been observed using the ROMULUS ClickFix malware delivery platform to deliver a previously undocumented remote access trojan (RAT) that shares similarities with CNCMachineRMS. \"ROMULUS likely operates as a delivery service, distributing CNCMachineRMS and Legion Loader through separate chains while…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjugg63OPJwZuh94vDIg7MkA4YoeLKr5sjiqI6CEgjvDjUvJ-pBJOfUrUBxPUTbartqVwdldczbKSYo6lpkcVic1EDQYIDyWq12zMdMONjpDtK4NKCgkppAWvnOJpXe7prfmRG8WNpH0RrQ0bhX2nZKGpRy33y0OMZraBjEPoDorp9h3kNJSa-IQrJC7Nl5/s1600/cf.jpg",
-   "cves": [],
-   "first_seen": "2026-11-20T08:45:49.404266+00:00",
-   "instructions": [
-    "Use fake Zillow apartment-review pages that serve a fake verification prompt to install NetSupport RAT on visitors' Windows computers."
-   ],
-   "instructions_checked": true
-  },
-  {
    "id": "9da47b8efcbb",
    "source": "thehackernews",
    "source_name": "The Hacker News",
@@ -1464,44 +1376,23 @@
    "instructions_checked": true
   },
   {
-   "id": "b6dced9e8be0",
+   "id": "bdba96d745bb",
    "source": "thehackernews",
    "source_name": "The Hacker News",
    "official": false,
    "source_type": "news",
-   "title": "SonicWall Warns Gen 6 Firewalls Won't Get Security Patches, Even for Critical Flaws",
-   "link": "https://thehackernews.com/2026/11/sonicwall-warns-gen-6-firewalls-wont.html",
-   "published": "2026-11-20T10:38:22+00:00",
-   "summary": "SonicWall has urged all customers still running Generation 6 firewalls to retire and replace them immediately and stop exposing the devices on the internet edge, citing security risks fueled by AI-assisted attacks. \"Attackers now use automation and AI to find and exploit unsupported edge devices faster than ever,\"…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGn5oji8gd4l_d6wKemSflqTX-q-eiuu4CbbV2ROvzK6Gzpeq8zPsQyGb-UO80f_M8L2pDNNyNqF1ZIdyMPGReyW0KmPb7uuAuRu1M-ZVyNu-GJvx1CRaBsaEOVjV-asFG0P__0MK0Jp3WPJmcNxATiSd6NeBzcCmy-6dLvS5yvpen0cRrwLZvgVpYAvn0/s1600/sonicwall.jpg",
+   "title": "Switzerland Confirms AI-Assisted Cyberattacks Breached Critical Infrastructure Operators",
+   "link": "https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html",
+   "published": "2026-11-27T06:04:20+00:00",
+   "summary": "Attackers using AI agents have broken into computer systems at Swiss organizations in four of five confirmed attacks, the first such cases in the country, the country's cybersecurity agency said yesterday. Three of the attacks targeted critical infrastructure operators, and two of those succeeded, with no major…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjviiPK0v6Kpjxjo_jDNE9vaZ8-JKiq6Oct4uU6qPDfTXq66QnxuV2iExRo2Rx2FyHhyphenhyphenDquMIoxmlfo5GwxfKoEXRG8Pj38FDOzEKitDdhXBNOGN7b6sddsMozMuhI44c-3mimoE4OxU-Xg7h8IzhDiyrXmP6qBO-wW6xmitkIEv_EkU-FJUJBTNtQ8uY/s1600/swiss.jpg",
    "cves": [],
-   "first_seen": "2026-11-20T17:21:09.204406+00:00",
+   "first_seen": "2026-11-27T14:05:29.785504+00:00",
    "instructions": [
-    "With Gen 6 no longer being actively supported and receiving patches, even for critical flaws, users are recommended to follow the steps below without any delay -",
-    "Until the firewall is replaced, it's advised to take the below actions to minimize exposure -",
-    "Treat any Gen 6 firewall still in service as a high-risk exposure, and migrate to a supported Gen 8 firewall running SonicOS 8.\"",
-    "According to Google Mandiant's M-Trends report published in March 2026, the mean time to exploit vulnerabilities has turned negative, reaching an estimated -7 days, meaning exploitation, on average, begins before a patch is available, down from 63 days in 2018 and -1 day in 2024."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "d9e0b261f408",
-   "source": "thehackernews",
-   "source_name": "The Hacker News",
-   "official": false,
-   "source_type": "news",
-   "title": "The Path to AI Autonomy in the SOC",
-   "link": "https://thehackernews.com/2026/11/the-path-to-ai-autonomy-in-soc.html",
-   "published": "2026-11-20T12:00:00+00:00",
-   "summary": "Security leaders are about to hand AI agents a lot more authority. In a recent a16z survey of CISOs at organizations with more than 1,000 employees, 36% said they are comfortable today letting AI agents act autonomously on low-risk security actions. In 12 months from now, 60% expect to be comfortable at that level…",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGn0ym0Vqfakc2h3h2W6AT6gf5qd6RPkfrgV-Z2UgwDErad91v-nJoIu3OYwEC3IvLQ6rVGm6FIQypMcoTahAgL5_62ipKE1aQsZvqGsdJzu_4ZGaiFlCYKEpg1N5z3FRSk7O5n4uRlfDuNz7i99Ls9z1Ysee3iV4OCMTxG2rF8YLgCtfTOL2KA-hSQXY/s1600/INT.png",
-   "cves": [],
-   "first_seen": "2026-11-20T17:21:09.204406+00:00",
-   "instructions": [
-    "Proposing what should happen next, such as containing a host, resetting credentials or closing the case.",
-    "The authors make a point every SOC leader should take to heart.",
-    "Enterprises evaluating AI SOC vendors should make sure that both models can be applied as appropriate, across their entire operations.",
-    "In practice that means every approval request should show three things."
+    "The agency's first notice, a security advisory published on Tuesday, said the agents had compromised the victims' IT systems in every case known at that point.",
+    "\"These cases represent a shift in the cyber threat landscape,\" the advisory said.",
+    "Its advisory named ARTEX and CyberStrikeAI as examples of agents reachable over the internet, not as the tools used in the five cases.",
+    "Install critical security updates on internet-facing systems within 24 hours of release (Switzerland), and patch flaws already being exploited first (Italy)."
    ],
    "instructions_checked": true
   },
@@ -1523,6 +1414,27 @@
     "Temenos has since released updates and guidance to configure the service as private and advised customers to restrict internet access to Spotlight and Fabric administrative and authentication services.",
     "Something similar is happening with browser extensions, where even the way you find and install one can change what it does.",
     "With Zscaler, we're building cybersecurity's operating system: a single control plane to deploy AI, control AI, and enable any agentic application to run safely."
+   ],
+   "instructions_checked": true
+  },
+  {
+   "id": "706168821faa",
+   "source": "thehackernews",
+   "source_name": "The Hacker News",
+   "official": false,
+   "source_type": "news",
+   "title": "Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access",
+   "link": "https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html",
+   "published": "2026-11-27T05:48:20+00:00",
+   "summary": "Details have emerged about a new zero-day vulnerability in Cacti, an open-source network monitoring tool, that could be exploited to achieve remote code execution. The proof-of-concept (PoC) exploit, which has yet to be assigned a CVE identifier, has been tracked as 4HTTP2SHELL and 4HTTP2ROOT. \"I found a path from a…",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgy4kFFGLYGbyvO7M_M1gKBjBUm5TF_eT6dIHtCmXKz_cGyC6orRw9XupBLbcQlJTQEEqjZ3q73Cv_Sn9ncPKxOJYU8Poi8Q54-bWKIro4Sp4JYi9hjUjYy71OR1LOV6B5nX8dHK0jYSRJ1p4O1pdMWomZGhCiTKE7MkvrC-gfeINrM-GOab64Bw_MzxA6Z/s1600/cacti.png",
+   "cves": [],
+   "first_seen": "2026-11-27T14:05:29.785504+00:00",
+   "instructions": [
+    "\"Because Cacti often stores credentials and connection details for routers, switches, servers, and other devices across a network, an attacker who reaches this level of command execution can gain a foothold reaching far beyond the monitoring server itself,\" watchTowr said in an advisory.",
+    "In the absence of a fix, users are advised to disable the guest account and restrict access to the Cacti web interface to mitigate potential risks.",
+    "It's also essential to review poller configuration entries for unexpected command values and apply the fixes as soon as they become available.",
+    "The SQL query demonstrated by \"ek0ms savi0r\" is an UPDATE statement to modify a record in Cacti's poller table ."
    ],
    "instructions_checked": true
   },
@@ -1931,6 +1843,22 @@
    "instructions_checked": true
   },
   {
+   "id": "f9571136225a",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Cyberattack disrupts global news distribution platform at France’s AFP",
+   "link": "https://therecord.media/france-afp-hit-by-cyberattack",
+   "published": "2026-11-27T00:00:00+00:00",
+   "summary": "French international news agency Agence France-Presse was hit by a cyberattack Thursday, forcing it to take offline one of its main platforms for distributing news content to media organizations worldwide.",
+   "image": null,
+   "cves": [],
+   "first_seen": "2026-11-27T14:05:29.785504+00:00",
+   "instructions": [],
+   "instructions_checked": true
+  },
+  {
    "id": "fa1f50764b02",
    "source": "therecord",
    "source_name": "The Record",
@@ -2078,6 +2006,25 @@
    "instructions_checked": true
   },
   {
+   "id": "9a79f6f175db",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "Software giant SAP confirms cyber incident amid reports of source code breach",
+   "link": "https://therecord.media/sap-germany-cyberattack-github",
+   "published": "2026-11-27T13:15:00+00:00",
+   "summary": "German software giant SAP confirmed a cybersecurity incident following reports that hackers infiltrated its software development infrastructure, potentially gaining access to the company’s source code.",
+   "image": "https://cms.therecord.media/uploads/SAP_HQ_d46716f5d4.jpg",
+   "cves": [],
+   "first_seen": "2026-11-27T14:05:29.785504+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Employees were advised to assess whether they needed to change their login credentials or take additional security precautions."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "57375f482cd6",
    "source": "therecord",
    "source_name": "The Record",
@@ -2134,6 +2081,24 @@
    "first_seen": "2026-11-25T11:30:28.736549+00:00",
    "image_checked": true,
    "instructions": [],
+   "instructions_checked": true
+  },
+  {
+   "id": "875b913eba13",
+   "source": "therecord",
+   "source_name": "The Record",
+   "official": false,
+   "source_type": "news",
+   "title": "British government takes services offline following ‘cyber incident’",
+   "link": "https://therecord.media/uk-department-work-pensions-cyber-incident",
+   "published": "2026-11-27T00:00:00+00:00",
+   "summary": "The Department for Work and Pensions said Friday that it had experienced a cyber incident, with several services taken down as a precaution.",
+   "image": null,
+   "cves": [],
+   "first_seen": "2026-11-27T14:05:29.785504+00:00",
+   "instructions": [
+    "“To protect our critical national infrastructure, defend public institutions and maintain public confidence in essential public services, we must achieve a radical shift in approach and a step change in pace,” it said at the time, warning the public sector faced a “critically high” cyber risk."
+   ],
    "instructions_checked": true
   },
   {
@@ -2316,24 +2281,24 @@
    "instructions_checked": true
   },
   {
-   "id": "fc7b1a32d55e",
+   "id": "7b714952d08e",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
    "official": false,
    "source_type": "news",
-   "title": "Microsoft now automatically installs Windows 11 26H2 on unmanaged devices",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-now-automatically-installs-windows-11-26h2-on-personal-and-unmanaged-pcs/",
-   "published": "2026-11-20T12:14:28+00:00",
-   "summary": "Starting this week, Microsoft has begun automatically upgrading eligible devices that aren't managed by an IT department to Windows 11 26H2.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/12/Windows-11-blue.jpg",
+   "title": "Microsoft removes WSUS server role in Windows Server 2028",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-removes-wsus-server-role-in-windows-server-2028/",
+   "published": "2026-11-27T11:18:36+00:00",
+   "summary": "Microsoft will remove the WSUS server role from Windows Server 2028, the next major release of its server operating system.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/27/Windows-Server.jpg",
    "cves": [],
-   "first_seen": "2026-11-20T17:21:09.204406+00:00",
+   "first_seen": "2026-11-27T14:05:29.785504+00:00",
    "image_checked": true,
    "instructions": [
-    "Starting November 18, we are taking the next step in version 26H2's phased rollout to make it easier to get the update,\" Microsoft said in a release health dashboard update.",
-    "Windows 11 KB5132057 update released with 28 changes and fixes",
-    "As the rollout progresses, more Windows 11 devices will upgrade automatically, without users having to check for updates manually.",
-    "The automatic upgrade depends on each device's Windows Update settings and is available for personal and non-managed business devices running Windows 11 24H2 and 25H2."
+    "\"While the WSUS role remains available in Windows Server 2025, we recommend organizations transition to cloud tools, including including Windows Autopatch and Microsoft Intune for client update management and Azure Update Manager for server update management,\" Microsoft's Nir Froimovici said in September 2024.",
+    "Microsoft will remove the WSUS server role from Windows Server 2028, the next major release of its server operating system.",
+    "Introduced in 2005 as Software Update Services (SUS), WSUS (Windows Server Update Services) lets IT administrators manage and distribute updates for Microsoft products across corporate networks with many Windows devices.",
+    "Businesses are now encouraged to adopt cloud-based solutions, such as Windows Autopatch, Microsoft Intune, and Azure Update Manager, for keeping endpoints and servers on their network up to date."
    ],
    "instructions_checked": true
   },
@@ -2358,46 +2323,26 @@
    "instructions_checked": true
   },
   {
-   "id": "d9a325150570",
+   "id": "05f4c13650df",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
    "official": false,
    "source_type": "news",
-   "title": "N-able says recent security breach led to major service outage",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/n-able-says-recent-security-breach-led-to-major-service-outage/",
-   "published": "2026-11-20T13:18:36+00:00",
-   "summary": "N-able says attackers who breached one of its servers have caused a major outage affecting Mail Assure and SpamExperts Hosted Cloud services worldwide.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/20/N-able.jpg",
+   "title": "Microsoft pushes emergency hotpatch to fix Windows Server crashes",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/new-out-of-band-oob-emergency-hotpatch-fixes-windows-server-2025-crashes/",
+   "published": "2026-11-27T09:08:16+00:00",
+   "summary": "Microsoft has released an emergency hotpatch update to address Windows Server 2025 crashes triggered after installing this month's security hotpatch update (KB5131077).",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/18/Windows--Server.jpg",
    "cves": [],
-   "first_seen": "2026-11-20T17:21:09.204406+00:00",
+   "first_seen": "2026-11-27T14:05:29.785504+00:00",
    "image_checked": true,
    "instructions": [
-    "\"Our earlier update said the disruption came from platform configuration and service dependencies and we believed we had remediated the issue.",
-    "We have taken steps to mitigate the threat and are continuing to harden our services to reduce the risk of recurrence."
+    "Microsoft has released an emergency hotpatch update to address Windows Server 2025 crashes triggered after installing this month's security hotpatch update ( KB5131077 ).",
+    "According to Microsoft, the KB5138318 out-of-band update should address stop errors with 0x139 codes triggered on affected servers when IPv6 routes expire.",
+    "KB5138318 will download and install automatically and will take effect without requiring IT administrators or users to restart affected devices.",
+    "This issue affects some Windows Server 2025 devices after installing the November 2026 Windows security hotpatch update.\""
    ],
    "instructions_checked": true
-  },
-  {
-   "id": "09d3f14eaae7",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "Windows 11 KB5132057 update released with 28 changes and fixes",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5132057-update-released-with-28-changes-and-fixes/",
-   "published": "2026-11-20T09:25:35+00:00",
-   "summary": "Microsoft released the KB5132057 November Windows 11 preview update, which comes with 28 changes, including improvements to Windows Search, Windows Hello, and the Run dialog.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/17/windows_11_haedpic.jpg",
-   "cves": [],
-   "first_seen": "2026-11-20T17:21:09.204406+00:00",
-   "instructions": [
-    "Windows 11 KB5132057 update released with 28 changes and fixes",
-    "Microsoft released the KB5132057 November optional cumulative update for Windows 11 versions 25H2 and 26H2, which comes with 28 changes, including improvements to Windows Search, Windows Hello, and the Run dialog.",
-    "KB5132057 is a preview update that allows IT administrators to test Windows improvements, bug fixes, and new features before they become generally available in next month's Patch Tuesday release.",
-    "The KB5132057 update includes the new Windows Search Box experience that was built on WinUI 3 and removes promotional content from web results for better resource efficiency and a streamlined design."
-   ],
-   "instructions_checked": true,
-   "image_checked": true
   },
   {
    "id": "70f66acc3de7",
@@ -2556,6 +2501,28 @@
    "instructions_checked": true
   },
   {
+   "id": "30a43f231a87",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "Drupal warns of new site takeover flaw exploited in attacks",
+   "link": "https://www.bleepingcomputer.com/news/security/drupal-warns-of-new-access-bypass-flaw-exploited-in-attacks/",
+   "published": "2026-11-27T10:10:15+00:00",
+   "summary": "The Drupal security team says attackers are exploiting a second critical vulnerability that lets them breach and hijack unpatched websites.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/27/Drupal_headpic.jpg",
+   "cves": [],
+   "first_seen": "2026-11-27T14:05:29.785504+00:00",
+   "image_checked": true,
+   "instructions": [
+    "While the security issue wasn't initially flagged as being abused in the wild, an update to the original security advisory warned that threat actors began exploiting it one day after patches were released.",
+    "Those who can't immediately upgrade to Drupal 10.6.23 , 11.3.23 , or 11.4.14 should secure the installer on all new and existing sites by blocking access to /core/install.php in the web server configuration or the .htaccess file in the web root.",
+    "\"However, certain sites in unusual or incomplete install states remain vulnerable to site takeover following that advisory, including production sites.",
+    "While it has yet to share further details regarding these attacks, Drupal warned users that any unsecured website may have been compromised and advised admins to ensure the user 1 email address is one they control, and to consider resetting it."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "cad292c7e46b",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -2571,28 +2538,6 @@
    "image_checked": true,
    "instructions": [],
    "instructions_checked": true
-  },
-  {
-   "id": "6a744f24eada",
-   "source": "bleepingcomputer",
-   "source_name": "BleepingComputer",
-   "official": false,
-   "source_type": "news",
-   "title": "F5 releases emergency patches for critical BIG-IP RCE flaws",
-   "link": "https://www.bleepingcomputer.com/news/security/f5-releases-emergency-patches-for-critical-big-ip-rce-flaws/",
-   "published": "2026-11-20T10:57:43+00:00",
-   "summary": "US cybersecurity company F5 warned customers to patch five critical BIG-IP vulnerabilities that attackers can exploit to trigger denial-of-service (DoS) or gain remote code execution.",
-   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/19/F5-headpic.jpg",
-   "cves": [],
-   "first_seen": "2026-11-20T17:21:09.204406+00:00",
-   "instructions": [
-    "F5 said it has no mitigation measures for these flaws and advised security teams to install the out-of-band hotfixes released on Wednesday to address them on vulnerable devices.",
-    "Although the company hasn't flagged any of these issues as exploited in attacks, admins should upgrade systems to the latest version as soon as possible, since cybercrime and nation-state threat groups have often abused F5 vulnerabilities in the wild.",
-    "US cybersecurity company F5 warned customers to patch five BIG-IP vulnerabilities that attackers can exploit to trigger denial-of-service (DoS) or gain remote code execution.",
-    "Citrix warns admins to patch new NetScaler RCE flaw immediately"
-   ],
-   "instructions_checked": true,
-   "image_checked": true
   },
   {
    "id": "efef5bd50b96",
@@ -2893,6 +2838,30 @@
    "instructions_checked": true
   },
   {
+   "id": "15e93fc59e91",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "New NFS2ROOT Linux flaw can let attackers gain root privileges",
+   "link": "https://www.bleepingcomputer.com/news/security/new-nfs2root-linux-flaw-can-let-attackers-gain-root-privileges/",
+   "published": "2026-11-27T08:06:58+00:00",
+   "summary": "​A 12-year-old critical vulnerability in the Linux kernel's Network File System (NFS) server, tracked as CVE-2026-99362, allows remote attackers to gain root privileges.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/10/29/Linux_tux.jpg",
+   "cves": [
+    "CVE-2026-99362"
+   ],
+   "first_seen": "2026-11-27T14:05:29.785504+00:00",
+   "image_checked": true,
+   "instructions": [
+    "​Although there are no reports of CVE-2026-99362 exploitation in the wild, security teams should apply the latest kernel security updates from their Linux distribution vendor immediately to block potential attacks, then reboot the system to ensure the patched kernel is in use.",
+    "Those who can't apply a patch immediately should restrict access to the NFS server over TCP port 2049 to trusted clients or networks.",
+    "Found by ANSSI's Jérémy Jean (who submitted a fix in August ), the flaw has been dubbed NFS2ROOT by cybersecurity firm OpenSec, which shared a full remote-root exploit and a patch with the NFSD maintainers in late September.",
+    "Additionally, if NFS sharing is not required on the system, admins can stop and disable the nfs-server service in /etc/nfs.conf."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "e94ac3e9d520",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -3068,6 +3037,26 @@
    "instructions_checked": true
   },
   {
+   "id": "34ba075e7282",
+   "source": "bleepingcomputer",
+   "source_name": "BleepingComputer",
+   "official": false,
+   "source_type": "news",
+   "title": "SAP confirms security incident after suspicious GitHub activity",
+   "link": "https://www.bleepingcomputer.com/news/security/sap-confirms-security-incident-after-suspicious-github-activity/",
+   "published": "2026-11-27T09:56:36+00:00",
+   "summary": "SAP has confirmed to BleepingComputer that it took urgent action to protect its customers after detecting suspicious activity in its IT environment.",
+   "image": "https://www.bleepstatic.com/content/hl-images/2026/11/27/sap.jpg",
+   "cves": [],
+   "first_seen": "2026-11-27T14:05:29.785504+00:00",
+   "image_checked": true,
+   "instructions": [
+    "SAP did not specify the environments where the suspicious activity was observed, or whether customers downloading code from its GitHub repositories or performing updates that are directly fetched or indirectly fed by those repositories should take any action.",
+    "BSI cautioned organizations in the country to focus on responding to security incidents and ensure they follow all recommended security-strengthening practices."
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "63399c74702a",
    "source": "bleepingcomputer",
    "source_name": "BleepingComputer",
@@ -3224,31 +3213,6 @@
    "first_seen": "2026-11-20T17:21:09.204406+00:00",
    "image_checked": true,
    "instructions": [],
-   "instructions_checked": true
-  },
-  {
-   "id": "925f615d5741",
-   "source": "cisa",
-   "source_name": "CISA Cybersecurity Advisories",
-   "official": true,
-   "source_type": "advisory",
-   "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
-   "link": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog",
-   "published": "2026-11-20T12:00:00+00:00",
-   "summary": "CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2025-42884 SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability CVE-2026-76466 Cisco Expressway Series Use of Hard-coded Credentials…",
-   "image": null,
-   "cves": [
-    "CVE-2025-42884",
-    "CVE-2026-123890",
-    "CVE-2026-129448",
-    "CVE-2026-76466"
-   ],
-   "first_seen": "2026-11-20T23:13:26.727170+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
-    "BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied."
-   ],
    "instructions_checked": true
   },
   {
@@ -3636,22 +3600,6 @@
    "instructions_checked": true
   },
   {
-   "id": "d5ce378b68b4",
-   "source": "darkreading",
-   "source_name": "Dark Reading",
-   "official": false,
-   "source_type": "news",
-   "title": "Microsoft Debuts Offensive, Defensive Security Tools for the AI Era",
-   "link": "https://www.darkreading.com/endpoint-security/microsoft-offense-defense-ai-security-tools",
-   "published": "2026-11-20T13:51:30+00:00",
-   "summary": "At its Ignite technical conference, Microsoft announced AI agent security tools and transparency standards to protect enterprise systems.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt823dceb89b6bf324/6a1dd1f32928e11bac7b2d1a/microsoft_DrewAngerer_Getty.jpg?width=720&quality=80&disable=upscale",
-   "cves": [],
-   "first_seen": "2026-11-23T01:52:47.641027+00:00",
-   "instructions": [],
-   "instructions_checked": true
-  },
-  {
    "id": "6a57f5edfd55",
    "source": "darkreading",
    "source_name": "Dark Reading",
@@ -3723,7 +3671,7 @@
    "source_type": "news",
    "title": "'God Mode' Flaws Could Wreak Border-Control Havoc",
    "link": "https://www.darkreading.com/vulnerabilities-threats/god-mode-flaws-wreak-border-control-havoc",
-   "published": "2026-11-24T21:36:11+00:00",
+   "published": "2026-11-27T14:00:00+00:00",
    "summary": "Attackers could have disrupted traveler entry into Nigeria, Ethiopia, Zambia, Sri Lanka, Fiji, and Ghana via several vulnerabilities in their online visa and immigration systems.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltf04ed1ecab1b2c42/66cc9d45781c434a1b20ebb3/airport1800_RoadPix_alamy.jpg?width=720&quality=80&disable=upscale",
    "cves": [],
@@ -3832,20 +3780,24 @@
    "image_checked": true
   },
   {
-   "id": "b4d165a3ec28",
+   "id": "c50ded1a2a68",
    "source": "schneier",
    "source_name": "Schneier on Security",
    "official": false,
    "source_type": "news",
-   "title": "Opening a 400-Year-Old Cryptex",
-   "link": "https://www.schneier.com/blog/archives/2026/11/opening-a-400-year-old-cryptex.html",
-   "published": "2026-11-20T12:04:46+00:00",
-   "summary": "Researchers used CT scanning technology to recover the code and open a 400-year-old cryptex padlock. You can buy a USB-drive cryptex.",
+   "title": "Recent Outages Have Economic Causes",
+   "link": "https://www.schneier.com/blog/archives/2026/11/recent-outages-have-economic-causes.html",
+   "published": "2026-11-27T12:02:23+00:00",
+   "summary": "This essay originally appeared in The Guardian. It’s an expanded version of the one I posted as “ We Get the Infrastructure We Pay For.” It’s been a bad week for our computerized infrastructure. We’ve seen outages at Microsoft, the FAA, a handful of banks, United Airlines, an unnamed classified NSA network, and Apple…",
    "image": null,
    "cves": [],
-   "first_seen": "2026-11-20T17:21:09.204406+00:00",
+   "first_seen": "2026-11-27T14:05:29.785504+00:00",
    "image_checked": true,
-   "instructions": [],
+   "instructions": [
+    "People should be forgiven for suspecting a coordinated cyberattack, a common cause, or at least a conspiracy.",
+    "The more we allow unregulated capitalism to privatize gains while socializing risks, the more we should expect these sorts of failures.",
+    "Until this changes, we should expect lots more of these sorts of failures in the future."
+   ],
    "instructions_checked": true
   },
   {
@@ -3902,6 +3854,25 @@
    "instructions": [],
    "instructions_checked": true,
    "image_checked": true
+  },
+  {
+   "id": "564b5565654a",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "100,000 Potentially Impacted by Colorado Data Breach",
+   "link": "https://www.securityweek.com/100000-potentially-impacted-by-colorado-data-breach/",
+   "published": "2026-11-27T09:30:54+00:00",
+   "summary": "Hackers breached the digital identification and document storage application myColorado and accessed user-uploaded data. The post 100,000 Potentially Impacted by Colorado Data Breach appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/07/data-tracking-report.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-27T14:05:29.785504+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Drupal Installer Patch Left a Gap Attackers Are Already Exploiting"
+   ],
+   "instructions_checked": true
   },
   {
    "id": "84ce059e91ed",
@@ -4169,25 +4140,6 @@
    "image_checked": true
   },
   {
-   "id": "2be32b97a1a6",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "European Commission Confirms AI-Assisted Cyberattack Disrupted Services",
-   "link": "https://www.securityweek.com/european-commission-confirms-ai-assisted-cyberattack-disrupted-services/",
-   "published": "2026-11-20T10:51:42+00:00",
-   "summary": "The Commission took certain services offline to contain the incident, but it has no evidence of a data breach. The post European Commission Confirms AI-Assisted Cyberattack Disrupted Services appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/06/EU-Europe-European-Union-.jpeg",
-   "cves": [],
-   "first_seen": "2026-11-20T17:21:09.204406+00:00",
-   "instructions": [
-    "PHP Readies Critical Security Updates to Patch Another RCE Flaw"
-   ],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
    "id": "d2294fb10fbb",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -4311,6 +4263,27 @@
    "instructions_checked": true
   },
   {
+   "id": "c51ad7ce4d32",
+   "source": "securityweek",
+   "source_name": "SecurityWeek",
+   "official": false,
+   "source_type": "news",
+   "title": "Hex Package Manager Warns of Potential Data Breach",
+   "link": "https://www.securityweek.com/hex-package-manager-warns-of-potential-data-breach/",
+   "published": "2026-11-27T07:44:49+00:00",
+   "summary": "A vulnerability in hex.pm allowed hackers to run commands on web servers. No evidence of data modification was found, but database reads are not logged. The post Hex Package Manager Warns of Potential Data Breach appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2025/11/NPM-code-software-development.jpeg",
+   "cves": [],
+   "first_seen": "2026-11-27T14:05:29.785504+00:00",
+   "image_checked": true,
+   "instructions": [
+    "Until new Hex client iterations are rolled out, users should avoid fetching packages from third-party mirrors and rely only on repo.hex.pm.",
+    "Hex also recommends that all account holders change their hex.pm passwords and reset their two-factor authentication. “Because email addresses may have been exposed, be careful with emails that claim to come from Hex.",
+    "Drupal Installer Patch Left a Gap Attackers Are Already Exploiting"
+   ],
+   "instructions_checked": true
+  },
+  {
    "id": "1722752aee2d",
    "source": "securityweek",
    "source_name": "SecurityWeek",
@@ -4328,43 +4301,22 @@
    "instructions_checked": true
   },
   {
-   "id": "5b364ed36dab",
+   "id": "db4a5f90bd41",
    "source": "securityweek",
    "source_name": "SecurityWeek",
    "official": false,
    "source_type": "news",
-   "title": "Industry Reactions to Major Outages and AI Patching Debate: Feedback Friday",
-   "link": "https://www.securityweek.com/industry-reactions-to-major-outages-and-ai-patching-questions-feedback-friday/",
-   "published": "2026-11-20T12:38:55+00:00",
-   "summary": "Experts commented on whether AI-accelerated patching played a role, the need for tested rollback plans, and the fragility of interconnected systems. The post Industry Reactions to Major Outages and AI Patching Debate: Feedback Friday appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/06/Feedback-Friday.jpeg",
+   "title": "In Other News: Tanker Cyberattacks, EU Quantum Act, New VirusTotal Capabilities",
+   "link": "https://www.securityweek.com/in-other-news-tanker-cyberattacks-eu-quantum-act-new-virustotal-capabilities/",
+   "published": "2026-11-27T11:00:00+00:00",
+   "summary": "Noteworthy stories that might have slipped under the radar: RansomwareHelp accused of profiting from ransom payments, USDA payment systems breach, cybersecurity firm Radware hacked. The post In Other News: Tanker Cyberattacks, EU Quantum Act, New VirusTotal Capabilities appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2023/10/cybersecurity-news.jpg",
    "cves": [],
-   "first_seen": "2026-11-20T17:21:09.204406+00:00",
+   "first_seen": "2026-11-27T14:05:29.785504+00:00",
    "image_checked": true,
    "instructions": [
-    "Organizations should know before the next incident which services must come back first, what each one depends on, and how long the full sequence takes.",
-    "These rollouts sometimes fail and have to be reverted, leaving organizations exposed and delaying the remediation of the very vulnerabilities they are meant to address until teams find a workaround they can roll out without compromising stability.",
-    "When a critical Java vulnerability lands, teams must push OpenJDK updates into production within hours, often with less testing than they would normally do and with far more urgency to get the change rolled out before attackers can exploit it.",
-    "A recovery time that has never been tested is only an estimate, and boards should treat it as one.” Brian Contos, Field CISO, Mitiga: “Faster patching isn’t the problem by itself."
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "009f6643a854",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "JPMorgan, Visa, Mastercard Cite Third-Party Incidents Amid Data Leak",
-   "link": "https://www.securityweek.com/jpmorgan-visa-mastercard-cite-third-party-incidents-amid-data-leak/",
-   "published": "2026-11-20T07:35:46+00:00",
-   "summary": "The companies point to third-party providers after the N0n extortion group leaked data allegedly tied to their customers. The post JPMorgan, Visa, Mastercard Cite Third-Party Incidents Amid Data Leak appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/11/visa-mastercard.jpeg",
-   "cves": [],
-   "first_seen": "2026-11-20T08:45:49.404266+00:00",
-   "image_checked": true,
-   "instructions": [
-    "Java4Shell Exploitation Attempts Begin as Vendors Rush Out Advisories"
+    "SolarWinds and Adobe patch vulnerabilities SolarWinds has patched several critical vulnerabilities in its Serv-U managed file transfer product, including flaws that can lead to privilege escalation and arbitrary code execution.",
+    "Drupal Installer Patch Left a Gap Attackers Are Already Exploiting"
    ],
    "instructions_checked": true
   },
@@ -4386,26 +4338,6 @@
     "Accenture found evidence that the vulnerabilities were exploited in the wild before Mitel published its advisory.",
     "Mitel has released patches, but its advisory — last updated on November 24 — does not mention in-the-wild exploitation of the vulnerabilities.",
     "Drupal Installer Patch Left a Gap Attackers Are Already Exploiting"
-   ],
-   "instructions_checked": true
-  },
-  {
-   "id": "1842d6db44a6",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "N-able Blames Service Disruption on Cyberattack",
-   "link": "https://www.securityweek.com/n-able-blames-service-disruption-on-cyberattack/",
-   "published": "2026-11-20T09:08:35+00:00",
-   "summary": "The incident affected Mail Assure and SpamExperts Hosted Cloud and could have led to credential theft. The post N-able Blames Service Disruption on Cyberattack appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/08/N-Able.jpeg",
-   "cves": [],
-   "first_seen": "2026-11-20T17:21:09.204406+00:00",
-   "image_checked": true,
-   "instructions": [
-    "The company says its investigation into the incident remains ongoing while it scrambles to securely restore its dashboard and API access. “We have provided customers with specific guidance based on how they access and configure Mail Assure or SpamExperts Hosted Cloud and will continue to provide updates,” N-able said.",
-    "PHP Readies Critical Security Updates to Patch Another RCE Flaw"
    ],
    "instructions_checked": true
   },
@@ -4544,25 +4476,23 @@
    "instructions_checked": true
   },
   {
-   "id": "f5b6ed0f978c",
+   "id": "62ce00fb3a46",
    "source": "securityweek",
    "source_name": "SecurityWeek",
    "official": false,
    "source_type": "news",
-   "title": "Ruby Patches Ruby2Shell Vulnerability That Could Lead to RCE",
-   "link": "https://www.securityweek.com/ruby-patches-ruby2shell-vulnerability-that-could-lead-to-rce/",
-   "published": "2026-11-20T10:34:10+00:00",
-   "summary": "Tracked as CVE-2026-132825, the bug is a heap-based buffer overflow that could lead to remote code execution (RCE). The post Ruby Patches Ruby2Shell Vulnerability That Could Lead to RCE appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2024/04/Vulnerability-Databases.jpg",
-   "cves": [
-    "CVE-2026-132825"
-   ],
-   "first_seen": "2026-11-20T17:21:09.204406+00:00",
+   "title": "SAP Confirms Cyberattack, Source Code Reportedly Compromised",
+   "link": "https://www.securityweek.com/sap-confirms-cyberattack-source-code-reportedly-compromised/",
+   "published": "2026-11-27T07:36:14+00:00",
+   "summary": "SAP has detected suspicious activity on GitHub, where hackers reportedly used stolen employee tokens to copy and alter source code. The post SAP Confirms Cyberattack, Source Code Reportedly Compromised appeared first on SecurityWeek.",
+   "image": "https://www.securityweek.com/wp-content/uploads/2026/09/SAP_vulnerability-patches.jpg",
+   "cves": [],
+   "first_seen": "2026-11-27T14:05:29.785504+00:00",
+   "image_checked": true,
    "instructions": [
-    "PHP Readies Critical Security Updates to Patch Another RCE Flaw"
+    "Drupal Installer Patch Left a Gap Attackers Are Already Exploiting"
    ],
-   "instructions_checked": true,
-   "image_checked": true
+   "instructions_checked": true
   },
   {
    "id": "bc11c30f893a",
@@ -4580,25 +4510,6 @@
    "instructions": [
     "Successful exploitation could allow attackers to “inject JNDI environment properties or pass a URL used during JNDI lookup operations, enabling access to an unintended JNDI provider,” reads a NIST advisory .",
     "On November 20, CISA added the Expressway security defect to its Known Exploited Vulnerabilities (KEV) catalog, urging federal agencies to patch it within three days."
-   ],
-   "instructions_checked": true,
-   "image_checked": true
-  },
-  {
-   "id": "3827cbac510e",
-   "source": "securityweek",
-   "source_name": "SecurityWeek",
-   "official": false,
-   "source_type": "news",
-   "title": "SBC Medical Group Data Breach Impacts Over 2 Million",
-   "link": "https://www.securityweek.com/sbc-medical-group-data-breach-impacts-over-2-million/",
-   "published": "2026-11-20T11:36:51+00:00",
-   "summary": "Threat actors accessed databases containing customer information associated with clinics in Japan. The post SBC Medical Group Data Breach Impacts Over 2 Million appeared first on SecurityWeek.",
-   "image": "https://www.securityweek.com/wp-content/uploads/2026/03/healthcare-medical.jpeg",
-   "cves": [],
-   "first_seen": "2026-11-20T17:21:09.204406+00:00",
-   "instructions": [
-    "PHP Readies Critical Security Updates to Patch Another RCE Flaw"
    ],
    "instructions_checked": true,
    "image_checked": true
